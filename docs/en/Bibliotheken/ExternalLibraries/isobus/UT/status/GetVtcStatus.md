@@ -9,45 +9,31 @@ The function block **GetVtcStatus** is a Service Interface Block (SIFB) that enc
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-
 |----------|-----|---------------|-------------------|
-
 | `INIT` | EInit | Initializes the function block. | `QI`, `u8Instance` |
-
 | `REQ` | Event | Requests the reading of a status value. | `QI`, `u8Instance`, `eVTInfo` |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Data Carried |
-
 |----------|-----|--------------|-------------------|
-
 | `INITO` | EInit | Confirmation of initialization. | `QO`, `STATUS` |
-
 | `CNF` | Event | Confirmation of the read request with result. | `QO`, `STATUS`, `wValue` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | `QI` | BOOL | – | Quality input: TRUE activates the service. |
-
 | `u8Instance` | USINT | – | VT client instance identifier (0–255). |
-
 | `eVTInfo` | UINT | 0 | Type of status information to query (values from the enumeration `ISOVT_STATUS_e`). |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `QO` | BOOL | Quality output: TRUE upon successful execution. |
-
 | `STATUS` | STRING | Service status – contains a textual response. |
-
 | `wValue` | UINT | The value returned by `IsoVtcGetStatusInfo()` (dependent on `eVTInfo`). |
 
 ### **Adapters**
@@ -75,50 +61,28 @@ The event `REQ` initiates a specific query. The desired status value must be sel
 - The possible values for `eVTInfo` (ISOVT_STATUS_e) are:
 
 | Value | Label | Description |
-
 |------|-------------|--------------|
-
 | 0 | VT_SOURCE_ADDRESS | Source address of the VT |
-
 | 2 | VT_HND | CF handle of the VT |
-
 | 3 | CF_SOURCE_ADDRESS | Source address of the VT client |
-
 | 4 | CF_HND | CF handle of the VT client |
-
 6 | ID_VISIBLE_DATA_MASK | Data mask open on the VT |
-
 7 | ID_VISIBLE_SOFTKEY_MASK | Softkey mask open on the VT |
-
 8 | VT_BUSY_CODE | Busy code of the VT status message |
-
 9 | AUXUNITS_TYPE1_ONBUS | TRUE if a Type 1 auxiliary device is on the bus |
-
 11 | VT_ALIVE | VT unreachable for more than 3 seconds |
-
 12 | VT_DOWNLOAD_FINISHED | Full announcement completed |
-
 13 | VT_POOL_ACTIVE_onVT | Pool (selected) active on the VT |
-
 14 | VT_STATEOFANNOUNCING | Announcing status |
 | 15 | WS_VERSION_NR | Working Set version number |
-
 | 16 | VT_NUMBOFVERSIONSTRINGS | Number of VT version strings sent |
-
 | 17 | VT_NAVSOFTKEYS | Navigation softkeys (version 4) |
-
 | 18 | VT_SOFTKEYXDOT | Softkey identifier – pixel X |
-
 | 19 | VT_SOFTKEYYDOT | Softkey identifier – pixel Y |
-
 | 20 | VT_VIRTUALSOFTKEYS | Number of virtual softkeys |
-
 | 21 | VT_PHYSICALSOFTKEYS | Number of physical softkeys |
-
 | 25 | VT_BOOTTIME | VT boot time |
-
 | 26 | VT_GRAPHICTYPE | VT hardware graphics type |
-
 | 29 | VT_VERSIONNR | Version of Working Set VT |
 
 - The function block supports both initialization and repeated calls to read operations, allowing different status values to be queried within a loop.

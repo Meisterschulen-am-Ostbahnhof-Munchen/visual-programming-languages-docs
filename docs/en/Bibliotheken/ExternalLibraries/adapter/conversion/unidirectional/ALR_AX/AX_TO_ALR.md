@@ -9,43 +9,32 @@ The function block **AX_TO_ALR** is used to convert a BOOL adapter signal (AX) i
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `AX_IN.E1` | EVENT | Event from the connected AX adapter; triggers processing. |
 
 ### **Event Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `ALR_OUT.E1` | EVENT | Confirmation event after the converted value has been output to the ALR adapter. |
 
 ### **Data Inputs**
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `AX_IN.D1` | BOOL | Boolean value to be converted to an LREAL value. |
 
 ### **Data Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `ALR_OUT.D1` | LREAL | Conversion result: 0.0 for `FALSE`, 1.0 for `TRUE`. |
 
 ### **Adapters**
 
 | Direction | Label | Type | Description |
-
 |----------|-------------|-----|--------------|
-
 | Socket (Input) | `AX_IN` | `adapter::types::unidirectional::AX` | Receives a BOOL signal via the unidirectional AX adapter. |
-
 | Plug (Output) | `ALR_OUT` | `adapter::types::unidirectional::ALR` | Provides the converted LREAL signal via the unidirectional ALR adapter. |
 
 ## Functionality
@@ -87,13 +76,9 @@ Since this is a composite function block (FB) without its own execution state, t
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Special Feature |
-
 |----------|-------------|-------------|--------------|
-
 | `AX_TO_ALR` | BOOL (Adapter) | LREAL (Adapter) | Adapter-based, fixed values 0.0 / 1.0 |
-
 | `BOOL_TO_REAL` | BOOL (direct) | REAL (direct) | Conventional IEC function block, values freely configurable |
-
 | `SEL` / `F_SEL` | BOOL + 2x ANY | ANY | General selection without adapter, values configurable |
 
 Compared to direct function blocks, `AX_TO_ALR` offers the advantage of clean adapter encapsulation and easy reuse in adapter-oriented projects.

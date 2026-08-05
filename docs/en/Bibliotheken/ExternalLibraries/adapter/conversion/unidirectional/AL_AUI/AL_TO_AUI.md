@@ -21,11 +21,8 @@ No standalone data outputs. The plug **AUI_OUT** provides the converted `UINT` v
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-
 |-----|----------|------|--------------|
-
 | Socket | Input | **AL_IN** | Adapter type `adapter::types::unidirectional::AL` – provides an LWORD data and an event to trigger the conversion. |
-
 | Plug | Output | **AUI_OUT** | Adapter type `adapter::types::unidirectional::AUI` – receives the converted UINT data and forwards the confirmation event. |
 
 ## Functionality
@@ -68,13 +65,9 @@ A detailed state description of the conversion block can be found in the IEC 611
 ## Comparison with Similar Function Blocks
 
 | Function Block | Output Type | Special Feature |
-
 |----------|--------------|--------------|
-
 | `AL_TO_AUI` | UINT | Direct Adapter Converter, Unidirectional, Composite |
-
 | `AL_TO_AUD` | DINT | Converts LWORD to DINT (32-bit) |
-
 | `AUI_TO_AL` | LWORD | Reverse conversion from UINT to LWORD (not included, would need to be implemented separately) |
 
 Compared to directly using `F_LWORD_TO_UINT`, `AL_TO_AUI` offers the advantage of easy integration into adapter interfaces without the need to manually establish event and data connections.

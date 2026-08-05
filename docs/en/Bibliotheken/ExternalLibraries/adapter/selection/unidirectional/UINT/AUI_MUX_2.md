@@ -8,25 +8,19 @@ The function block **AUI_MUX_2** is a generic multiplexer for AUI adapters (unid
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K; takes the value of K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that index K has been set |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selection (0 = IN1, 1 = IN2) |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ The function block **AUI_MUX_2** is a generic multiplexer for AUI adapters (unid
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket | IN1 | `adapter::types::unidirectional::AUI` | First input value |
-
 | Socket | IN2 | `adapter::types::unidirectional::AUI` | Second input value |
-
 | Plug | OUT | `adapter::types::unidirectional::AUI` | Output: IN1 for K = 0, IN2 for K = 1 |
 
 ## Functionality

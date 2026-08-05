@@ -8,11 +8,8 @@ The function block `UDINT_AUI_AX_SEL_AUI` implements a binary selection between 
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `EI0` | Sets the value of `IN0` |
-
 | `EI1` | Sets the value of `IN1` |
 
 ### **Event Outputs**
@@ -21,11 +18,8 @@ No dedicated event outputs. Output is provided via the adapter `OUT` (see Adapte
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------------------|-------------------------------|
-
 | `IN0`| `ANY_ELEMENTARY` | First selectable value |
-
 | `IN1`| `UINT` | Second selectable value |
 
 ### **Data Outputs**
@@ -34,11 +28,8 @@ No dedicated data outputs. The selected value is output via the adapter `OUT` (s
 ### **Adapters**
 
 | Adapter | Type | Direction | Comment |
-
 |---------|--------------------------------------|----------|------------------------------|
-
 | `G` | `adapter::types::unidirectional::AX` | Socket (Input) | Receives the binary selector signal and the trigger event |
-
 | `OUT` | `adapter::types::unidirectional::AUI`| Plug (Output) | Outputs the selected signal and an acknowledgment event |
 
 **Adapter Details:**

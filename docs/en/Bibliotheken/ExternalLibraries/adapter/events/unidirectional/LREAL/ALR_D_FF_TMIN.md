@@ -8,25 +8,19 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-------|----------------------------------------------------|
-
 | INIT | EInit | Initialization Request; Sets the minimum time `Tmin` |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-------|------------------------------------------|
-
 | INITO | EInit | Confirmation of successful initialization |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|---------------------------------------------|
-
 | Tmin | TIME | Minimum wait time between two EO events |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 ### **Adapter**
 
 | Adapter | Direction | Type | Comment |
-
 | Adapter | Direction | Type | Comment |
-
 | Adapter | Direction | Type | Comment |
-
 | Tmin | TIME | Minimum wait time between two EO events |
 
 ### **Data Outputs**
@@ -48,11 +39,8 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 ### **Adapter**
 
 | Adapter | Direction | Type | Comment |
-
 | Adapter | | ... |---------|----------|-------------|-----------------------------------|
-
 | I | Socket | ALR (unidirectional) | Input value (`D1`) and clock (`E1`) |
-
 | Q | Plug | ALR (unidirectional) | Output value (`D1`) and acknowledgement (`E1`) |
 
 The unidirectional adapter `ALR` has an event input `E1` and a data input `D1` (socket side) and an event output `E1` and a data output `D1` (plug side). The exact semantics of `E1` and `D1` are application-specific; here, `E1` serves as the clock signal and `D1` as the data value to be latched.

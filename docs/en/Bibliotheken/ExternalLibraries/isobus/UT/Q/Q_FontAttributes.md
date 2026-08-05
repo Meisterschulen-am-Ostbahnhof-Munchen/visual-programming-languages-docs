@@ -59,33 +59,21 @@ The **Q_FontAttributes** is a standards-compliant function module for modifying 
 ## Attribute Properties
 
 | Feature | Description |
-
 |---------------|----------------------------------|
-
 | Color Palette | 8-bit Color Index (ISO 11783-6 A.3) |
-
 Sizes | Standardized Font Sizes |
-
 Fonts | Predefined Types |
-
 Styles | Bold/Italic/Underline Bit Field |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 ------|-------------------------|------------------------------------|
-
 0 | VT_E_NO_ERR | Successful Change |
-
 -6 | VT_E_OVERFLOW | Buffer Overflow |
-
 -8 | VT_E_NOACT | VT Not Ready |
-
 -21 | VT_E_NO_INSTANCE | No VT Client Available |
-
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT Instance |
-
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -97,15 +85,10 @@ Styles | Bold/Italic/Underline Bit Field |
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_FontAttributes | VtTextStyle | VtFontManager |
-
 ---------------|------------------|-------------|---------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Color Control | ✔ | ✔ | ✖ |
-
 | Size Control | ✔ | ✖ | ✔ |
-
 | Style Control | ✔ | ✔ | ✔ |
 
 ## Conclusion

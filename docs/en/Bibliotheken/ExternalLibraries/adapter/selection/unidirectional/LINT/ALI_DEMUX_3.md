@@ -9,25 +9,19 @@ The function block **ALI_DEMUX_3** is a generic demultiplexer for the ALI (Appli
 ### **Event Inputs**
 
 | Event | Description | Carried |
-
 |----------|---------------|-------------|
-
 | `REQ` | Execution of the demultiplexing operation | `K` |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirmation that the switching process is complete |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Index of the output to be activated (1–3) |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ This function block does not have traditional data outputs. The output data is p
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | `IN` | ALI | Socket | Input data stream to be demultiplexed |
-
 | `OUT1` | ALI | Plug | First output (active with `K = 1`) |
-
 | `OUT2` | ALI | Plug | Second output (active with `K = 2`) |
-
 | `OUT3` | ALI | Plug | Third output (active with `K = 3`) |
 
 ## Functionality

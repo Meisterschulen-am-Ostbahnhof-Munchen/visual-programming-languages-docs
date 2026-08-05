@@ -8,25 +8,19 @@ The function block `SET_TIME_OF_DAY` is used to write a time of day value provid
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Normal execution request (bound to `IN` and `OUT`) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Execution confirmation (bound to `OUT`) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN | TIME_OF_DAY | The time of day value to be written |
 
 ### **Data Outputs**
@@ -53,9 +47,7 @@ The function block has a single state:
 - **REQ**: Activated on the event `REQ`. After the algorithm is executed, `CNF` is sent, and the state remains active (no state change).
 
 | State | Action | Output Event |
-
 |---------|--------|------------------|
-
 | REQ | Algorithm `REQ` | CNF |
 
 ## Application-Specific Scenarios

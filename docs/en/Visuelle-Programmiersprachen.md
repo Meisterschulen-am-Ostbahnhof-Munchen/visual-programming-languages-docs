@@ -30,13 +30,9 @@ Visual programming has been standard practice in industry for decades, as it ori
 This standard defines three essential visual languages for programmable logic controllers (PLCs):
 
 | Abbreviation | Name (DE/EN) | Characteristics | Application |
-
 | :--- | :--- | :--- | :--- |
-
 | **LAD** | Ladder Diagram | Looks like a circuit diagram. | Simple logic, interlocks. |
-
 | **FBD** | Function Block Diagram | Logic gates and function blocks are connected. | Complex control systems, mathematical calculations. |
-
 | **SFC** | Sequential Function Chart | Modeling of steps and transitions. | Machine sequences, batch processes (similar to GRAFCET). |
 
 ### The Evolution: IEC 61499

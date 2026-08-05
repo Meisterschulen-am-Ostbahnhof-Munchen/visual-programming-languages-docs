@@ -8,25 +8,19 @@ The function block `AW_MUX_3` is a generic multiplexer (MUX) with three inputs. 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Sets the index K and triggers the switching. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of successful switching to the input specified by K. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index of the input to be selected (0, 1, or 2). |
 
 ### **Data Outputs**
@@ -39,15 +33,10 @@ No direct data outputs are available. Output is provided via the adapter `OUT`.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 ### **Data Inputs** ... |------|-----|----------|-----------|
-
 | `IN1` | `AW` (unidirectional) | Socket | Input value 1 (selected when K = 0). |
-
 | `IN2` | `AW` (unidirectional) | Socket | Input value 2 (selected when K = 1). |
-
 | `IN3` | `AW` (unidirectional) | Socket | Input value 3 (selected when K = 2). |
-
 | `OUT` | `AW` (unidirectional) | Plug | Output value – connects the internal logic to the selected input. |
 
 ## Functionality

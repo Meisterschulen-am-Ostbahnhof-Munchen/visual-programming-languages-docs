@@ -129,21 +129,15 @@ Transfers the toggling value (0/1) to the output block.
 ### Event Connections (Summary)
 
 | Source | Destination |
-
 |---------------------------|---------------------------|
-
 | `DigitalInput_CLK_I1.IND` | `E_CYCLE.START` |
-
 | `DigitalInput_CLK_I2.IND` | `E_CYCLE.STOP` |
-
 | `E_CYCLE.EO` | `E_SPLIT_4.EI` |
-
 | `E_SPLIT_4.EO1` | `E_MERGE_4.EI1` |
 | `E_SPLIT_4.EO2` | `E_MERGE_4.EI2` |
 | `E_SPLIT_4.EO3` | `E_MERGE_4.EI3` |
 | `E_SPLIT_4.EO4` | `E_MERGE_4.EI4` |
 | `E_MERGE_4.EO` | `E_T_FF.CLK` |
-
 | `E_T_FF.EO` | `DigitalOutput_Q1.REQ` |
 
 --

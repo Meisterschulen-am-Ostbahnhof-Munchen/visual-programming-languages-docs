@@ -9,25 +9,19 @@ The function block **ALR_MUX_5** is a generic multiplexer for the adapter type `
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Sets the index K and accepts the selection |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of execution after REQ |
 
 ### **Data Inputs**
 
 | Name | Type | Value Range | Comment |
-
 |------|-----|--------------|-----------|
-
 | K | UINT | 0 .. 4 | Index of the input to be selected |
 
 ### **Data Outputs**
@@ -39,25 +33,17 @@ The function block **ALR_MUX_5** is a generic multiplexer for the adapter type `
 **Sockets (Inputs)**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN1 | adapter::types::unidirectional::ALR | Input value 1 (K = 0) |
-
 IN2 | adapter::types::unidirectional::ALR | Input value 2 (K = 1) |
-
 IN3 | adapter::types::unidirectional::ALR | Input value 3 (K = 2) |
-
 IN4 | adapter::types::unidirectional::ALR | Input value 4 (K = 3) |
-
 IN5 | adapter::types::unidirectional::ALR | Input value 5 (K = 4) |
 
 **Plug (Output)**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 OUT | adapter::types::unidirectional::ALR | Output: returns the selected input value |
 
 ## Functionality
@@ -83,9 +69,7 @@ Data transmission is **unidirectional** from input to output. The function block
 The function block does not have an explicit state machine. It remains in the **IDLE** state until a REQ arrives. Upon REQ, the selection is made and CNF is immediately sent. There are no waiting or blocking states.
 
 | State | Description |
-
 |---------|--------------|
-
 | IDLE | Waiting for REQ |
 
 ## Application Scenarios
@@ -96,13 +80,9 @@ The function block does not have an explicit state machine. It remains in the **
 ## Comparison with similar function blocks
 
 | Function block | Type | Inputs | Selection control | Remark |
-
 |----------|-----|----------|------------------|-----------|
-
 | ALR_MUX_5 | Adapter (ALR) | 5 | K (UINT) via REQ | Specifically for ALR adapters, generic |
-
 | Standard MUX (e.g., MUX_INT) | Elementary (e.g., INT) | Variable | K via REQ | Works with simple data types, not generic via adapter |
-
 | MUX_E_4 | Adapter (any) | 4 | K (BOOL) | Usually a fixed number, no generic adapter |
 
 The ALR_MUX_5 is characterized by its adapter interface, which can transport complex composite data structures, and by its generic design.

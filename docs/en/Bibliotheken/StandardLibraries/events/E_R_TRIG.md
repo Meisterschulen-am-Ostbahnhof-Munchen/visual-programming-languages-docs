@@ -59,13 +59,9 @@ According to the XML specification, the block consists of:
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_R_TRIG (this one) | E_F_TRIG | E_D_FF |
-
 |---------------|----------|----------|---------|
-
 | Detected Edge | Rising (named), Falling (implemented) | Falling (named), Rising (implemented) | Clock Edge |
-
 | Event Output | Yes | Yes | Yes |
-
 | Memory Behavior | Yes | Yes | Yes |
 
 ## 🛠️ Related Exercises

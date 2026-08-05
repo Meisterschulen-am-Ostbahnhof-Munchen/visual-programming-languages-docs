@@ -30,13 +30,9 @@ Data is also received via the **socket adapter `IN`**:
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AQ` | **Socket** (Input) | Fieldbus signal (event and data) |
-
 | `OUT` | `adapter::types::unidirectional::AQ` | **Plug** (output) | Filtered/mirrored output signal |
-
 | `VALID` | `adapter::types::unidirectional::AX` | **Plug** (output) | Signal validity status |
 
 Note: Adapter types `AQ` and `AX` are unidirectional protocols that typically combine an event and a data field.

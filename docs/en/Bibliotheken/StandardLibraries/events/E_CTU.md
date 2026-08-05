@@ -62,13 +62,9 @@ If `CV >= PV` is the current value, the output `Q` is set to `TRUE`; otherwise, 
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_CTU (Up Counter) | E_CTD (Down Counter) | E_CTUD (Up/Down Counter) |
-
 |------------------|--------------------|----------------------|--------------------------|
-
 | Counting Direction | Up | Down | Both |
-
 | Event-Driven | Yes | Yes | Yes |
-
 | Reset Function | R (Reset to 0) | LD (Set to PV) | R (Reset to 0) |
 
 ## 🛠️ Related exercises

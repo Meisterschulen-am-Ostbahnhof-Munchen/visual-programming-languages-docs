@@ -30,11 +30,8 @@ The **AUS_OUT** adapter provides the data output **D1** (type: USINT), which out
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |-----------|----------------------------------------------|----------|---------------------------------|
-
 | `ALR_IN` | `adapter::types::unidirectional::ALR` | Socket | Unidirectional LREAL input |
-
 | `AUS_OUT` | `adapter::types::unidirectional::AUS` | Plug | Unidirectional USINT output |
 
 ## Functionality

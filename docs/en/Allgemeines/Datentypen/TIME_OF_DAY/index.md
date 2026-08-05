@@ -5,9 +5,7 @@ The **TIME_OF_DAY** data type (abbreviated **TOD**) is used to represent the tim
 According to **DIN EN 61131-3** (Table 10, No. 14a):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | Usually 32 bits (implementation dependent) |
-
 | **Default Value** | `TOD#00:00:00` |
 
 ## Literal Representation

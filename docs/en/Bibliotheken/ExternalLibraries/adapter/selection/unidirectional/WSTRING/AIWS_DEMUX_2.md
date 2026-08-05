@@ -8,25 +8,19 @@ The **AIWS_DEMUX_2** is a generic demultiplexer function block for the AIWS prot
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and starts the forwarding |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirms index processing |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index that determines the destination output (e.g., 0 → OUT1, 1 → OUT2) |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | AIWS (unidirectional) | IN | Socket (Input) | Input data stream to be demultiplexed |
-
 | AIWS (unidirectional) | OUT1 | Plug (Output) | First destination output |
-
 | AIWS (unidirectional) | OUT2 | Plug (Output) | Second destination output |
 
 ## Functionality

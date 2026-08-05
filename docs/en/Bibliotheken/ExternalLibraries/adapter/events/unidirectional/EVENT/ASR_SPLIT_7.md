@@ -25,23 +25,14 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Input (Socket) | **IN** | `adapter::types::unidirectional::ASR` | Source adapter whose data is distributed to all outputs. |
-
 | Output (Plug) | **OUT1** | `adapter::types::unidirectional::ASR` | First output, receives the duplicated data from `IN`. |
-
 | Output (Plug) | **OUT2** | `adapter::types::unidirectional::ASR` | Second output. |
-
 | Output (Plug) | **OUT3** | `adapter::types::unidirectional::ASR` | Third output. |
-
 | Output (Plug) | **OUT4** | `adapter::types::unidirectional::ASR` | Fourth output. |
-
 Output (Plug) | **OUT5** | `adapter::types::unidirectional::ASR` | Fifth output. |
-
 Output (Plug) | **OUT6** | `adapter::types::unidirectional::ASR` | Sixth output. |
-
 Output (Plug) | **OUT7** | `adapter::types::unidirectional::ASR` | Seventh output. |
 
 ## Functionality

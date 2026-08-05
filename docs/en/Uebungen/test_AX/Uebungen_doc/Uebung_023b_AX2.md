@@ -16,35 +16,20 @@ The SubAppType does not have its own input/output interfaces but communicates ex
 ## Function Blocks Used (FBs)
 
 | Block Name | Type | Description |
-
 |--------------|-----|--------------|
-
 | SoftKey_UP_F1 | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F1 – triggered when **key is released** (SK_RELEASED) |
-
 | SoftKey_F2_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F2 – triggered when **key is pressed** (SK_PRESSED) |
-
 | SoftKey_F3_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F3 – triggered when **key is pressed** (SK_PRESSED) |
-
 | SoftKey_F7_UP | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F7 – triggered when **key is pressed** (SK_PRESSED) |
-
 | SoftKey_F8_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F8 – triggered by **pressing a key** (SK_PRESSED) |
-
 | SoftKey_F9_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F9 – triggered by **pressing a key** (SK_PRESSED) |
-
 | AX_SR_Extend_Cyl_1 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for extending cylinder 1 (S: Set, R: Reset) |
-
 | AX_SR_Extend_Cyl_2 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for extending cylinder 2 |
-
 | AX_SR_Retract_Cyl_1 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for retracting cylinder 1 |
-
 | AX_SR_Retract_Cyl_2 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for retracting cylinder 2 |
-
 DigitalOutput_Q1 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q1 (active when AX_SR_Extend_Cyl_1.Q is set) |
-
 DigitalOutput_Q2 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q2 (active when AX_SR_Extend_Cyl_2.Q is set) |
-
 DigitalOutput_Q3 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q3 (active when AX_SR_Retract_Cyl_2.Q is set) |
-
 DigitalOutput_Q4 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q4 (active when AX_SR_Einfahren_Cyl_1.Q is set) |
 
 ### Block Parameters

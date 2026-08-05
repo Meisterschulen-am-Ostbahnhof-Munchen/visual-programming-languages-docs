@@ -8,25 +8,19 @@ The function block **SET_BYTE** is used to easily overwrite a BYTE variable. It 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Normal execution job (start write operation) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of successful assignment |
 
 ### **Data Inputs**
 
 | Name | Type | Value Range | Initial Value | Comment |
-
 |------|-----|--------------|-------------|------------|
-
 | `IN` | BYTE | 0…255 | 0 | Value to be written to the target variable |
 
 ### **Data Outputs**

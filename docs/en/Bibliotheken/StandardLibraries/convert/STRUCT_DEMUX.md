@@ -66,15 +66,10 @@ The `STRUCT_DEMUX` is a stateless function block that operates according to a si
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2020 Johannes Kepler University Linz |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac Package | eclipse4diac::convert |
 
 ## 🛠️ Related exercises

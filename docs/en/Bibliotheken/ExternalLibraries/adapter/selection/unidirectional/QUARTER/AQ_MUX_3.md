@@ -9,9 +9,7 @@ The **AQ_MUX_3** is a generic multiplexer for AQ adapters. It allows the selecti
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Sets the index K and triggers the switching |
 
 **With Variable:** K
@@ -19,17 +17,13 @@ The **AQ_MUX_3** is a generic multiplexer for AQ adapters. It allows the selecti
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that index K has been assigned |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selecting the input (0 → IN1, 1 → IN2, 2 → IN3) |
 
 ### **Data Outputs**
@@ -39,15 +33,10 @@ None – output is exclusively via the adapter output.
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |------|-----|-----|-----------|
-
 | OUT | Plug | `adapter::types::unidirectional::AQ` | Output – returns the value of the selected input (IN1 for K=0, IN2 for K=1, IN3 for K=2) |
-
 | IN1 | Socket | `adapter::types::unidirectional::AQ` | First input (K=0) |
-
 | IN2 | Socket | `adapter::types::unidirectional::AQ` | Second input (K=1) |
-
 | IN3 | Socket | `adapter::types::unidirectional::AQ` | Third input (K=2) |
 
 ## Functionality

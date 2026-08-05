@@ -8,25 +8,19 @@ The **AIS_DEMUX_2** function block is a generic AIS demultiplexer for the 4diac 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Sets the selection index K and triggers the demultiplexing. The IN input is routed to the output determined by K. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirms successful processing of the REQ event. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|------|--------------------|
-
 | K | UINT | Index for selecting the output (1 or 2). |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ This function block has no data outputs. Output is exclusively via the adapter i
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|----------------------------------|------------------------------------------------|
-
 | Socket | IN | adapter::types::unidirectional::AIS | Input AIS signal that is demultiplexed. |
-
 | Plug | OUT1 | adapter::types::unidirectional::AIS | First output for the AIS signal. |
-
 | Plug | OUT2 | adapter::types::unidirectional::AIS | Second output for the AIS signal. |
 
 ## Functionality

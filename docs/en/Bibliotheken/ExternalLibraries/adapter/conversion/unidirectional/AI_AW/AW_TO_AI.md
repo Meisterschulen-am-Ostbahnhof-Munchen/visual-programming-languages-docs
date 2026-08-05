@@ -11,9 +11,7 @@ The **AW_TO_AI** function block is a composite function block that converts a un
 The following events are received via the connected AW socket:
 
 | Name | Description |
-
 |------|--------------|
-
 | E1 (AW_IN.E1) | Trigger for converting the incoming WORD value |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ The following events are received via the connected AW socket:
 The following events are sent via the AI plug:
 
 | Name | Description |
-
 |------|--------------|
-
 | E1 (AI_OUT.E1) | Confirms successful conversion and provides the INT value |
 
 ### **Data Inputs**
@@ -31,9 +27,7 @@ The following events are sent via the AI plug:
 Input via the AW socket:
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | D1 (AW_IN.D1) | WORD | The 16-bit word value to be converted |
 
 ### **Data Outputs**
@@ -41,19 +35,14 @@ Input via the AW socket:
 Output via the AI plug:
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | D1 (AI_OUT.D1) | INT | The converted integer value (16-bit signed) |
 
 ### **Adapter**
 
 | Direction | Adapter | Type | Description |
-
 |----------|---------|-----|--------------|
-
 | Socket (Input) | AW_IN | `adapter::types::unidirectional::AW` | Receives WORD values and associated events |
-
 | Plug (Output) | AI_OUT | `adapter::types::unidirectional::AI` | Sends INT values and associated events |
 
 ## Functionality

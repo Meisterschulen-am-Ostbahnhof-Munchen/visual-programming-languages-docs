@@ -8,24 +8,19 @@ The function block **AB_DEMUX_5** is a generic AB demultiplexer with five output
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Triggers the demultiplex operation; takes the index **K** and forwards the value to the corresponding output adapter. |
 
 ### **Event Outputs**
 
 | Event | Description |
 |----------|--------------|
-
 CNF | Confirms successful completion of the demultiplex operation. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 K | UINT | Index that specifies the destination output (1–5). |
 
 ### **Data Outputs**
@@ -35,25 +30,17 @@ No direct data outputs – output is provided via the adapter plugs.
 **Socket (Input):**
 
 | Name | Adapter Type | Description |
-
 |------|------------|--------------|
-
 IN | adapter::types::unidirectional::AB | Value to be demultiplexed. |
 
 **Plugs (Outputs):**
 
 | Name | Adapter Type | Description |
-
 |------|------------|--------------|
-
 | OUT1 | adapter::types::unidirectional::AB | Target output at K = 1 |
-
 | OUT2 | adapter::types::unidirectional::AB | Target output at K = 2 |
-
 | OUT3 | adapter::types::unidirectional::AB | Target output at K = 3 |
-
 | OUT4 | adapter::types::unidirectional::AB | Target output at K = 4 |
-
 | OUT5 | adapter::types::unidirectional::AB | Target output at K = 5 |
 
 ## Functionality

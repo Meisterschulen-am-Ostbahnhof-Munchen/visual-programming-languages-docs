@@ -9,25 +9,19 @@ The **AW_MUX_4** function block is a generic multiplexer (MUX) for the unidirect
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | `REQ` | Event | Starts the selection of the specified index. The current value at `K` is evaluated. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | `CNF` | Event | Confirms successful selection. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Index for the input to be selected (valid values: 0–3). |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ This function block does not have any independent data outputs. Output is exclus
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug | `OUT` | `adapter::types::unidirectional::AW` | Output channel – contains the value of the selected input. |
-
 | Socket | `IN1` | `adapter::types::unidirectional::AW` | First input – is passed through at `K = 0`. |
-
 | Socket | `IN2` | `adapter::types::unidirectional::AW` | Second input – is passed through at `K = 1`. |
-
 | Socket | `IN3` | `adapter::types::unidirectional::AW` | Third input – is passed through at `K = 2`. |
-
 | Socket | `IN4` | `adapter::types::unidirectional::AW` | Fourth input – is passed through at `K = 3`. |
 
 ## Functionality

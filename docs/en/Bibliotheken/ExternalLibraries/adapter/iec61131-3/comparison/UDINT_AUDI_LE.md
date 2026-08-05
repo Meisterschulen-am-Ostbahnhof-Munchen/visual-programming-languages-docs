@@ -11,23 +11,18 @@ The function block **UDINT_AUDI_LE** compares two values and checks whether the 
 ### **Event Inputs**
 
 | Event | Description |
-
 | `REQ` | Service Request: Triggers the comparison as soon as the event occurs. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `OUT.E1` | Acknowledgement: Sent as soon as the comparison is complete and the result is available at data output `OUT.D1`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------------------|---------------|
-
 | `IN1` | `ANY_ELEMENTARY` | First comparison value (e.g., UDINT by default). |
 
 ### **Data Outputs**
@@ -37,11 +32,8 @@ This function block does not have direct data outputs. The comparison result is 
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | `IN2` | `adapter::types::unidirectional::AUDI` | Provides the second comparison value (e.g., via a sensor or another function block). |
-
 | Plug (Output) | `OUT` | `adapter::types::unidirectional::AX` | Outputs the Boolean result `True` if `IN1 <= IN2` is true. |
 
 * * * * * * * * * *
@@ -84,15 +76,11 @@ This function block does not have an explicit state machine. It behaves like a s
 ## Comparison with Similar Components
 
 | Component | Comparison Operation | Adapter Types |
-
 |------------------|-------------------------------|----------------------------|
-
 | `UDINT_AUDI_LE` | Less than or equal to (≤) | Socket: AUDI – Plug: AX |
-
 | `UDINT_AUDI_LT` | Less than (<)                   | identisch                  |
 | `UDINT_AUDI_EQ`  | Gleich (=)                    | identisch                  |
 | `UDINT_AUDI_GT`  | Größer (>) | Equal |
-
 | `UDINT_AUDI_GE` | Greater than or equal to (≥) | Equal |
 
 The components differ only in their comparison operation, making them structurally interchangeable. The adapter interface remains the same, allowing for easy parameterization of the comparison type.

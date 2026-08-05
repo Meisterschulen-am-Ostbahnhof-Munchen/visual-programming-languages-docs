@@ -7,19 +7,12 @@ This exercise implements a randomly controlled flasher using the function blocks
 ## Function Blocks Used
 
 | Block Name | Type | Parameters | Short Description |
-
 |--------------|-----|-----------|------------------|
-
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | DT = T#1ms | Generates an event every 1 ms at output `EO`. |
-
 | `FB_RANDOM` | `eclipse4diac::utils::FB_RANDOM` | SEED = 0 | Returns a new REAL random value between 0 and 1 at output `VAL` for each `REQ` event. |
-
 | `E_D_FF_ANY_HYS` | `logiBUS::signalprocessing::hysteresis::E_D_FF_ANY_HYS` | HYSTERESIS = REAL#0.95 | Clocked flip-flop with hysteresis: The input `D` is taken over by the event at `CLK`. The output `Q` only switches when the value exceeds the hysteresis. |
-
 | `F_MOVE` | `iec61131::selection::F_MOVE` | DataType = REAL | Copies the input value (`IN`) unchanged to the output (`OUT`). Used here for type conversion from BOOL to REAL. |
-
 | `F_GT` | `iec61131::comparison::F_GT` | IN2 = REAL#0.49 | Compares `IN1` with the constant `IN2` and outputs TRUE at `OUT` if `IN1` is greater than 0.49. |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | QI = TRUE, Output = Output_Q1 | Digital output module that forwards the passed signal (`OUT`) to the physical address `Output_Q1`. |
 
 ## Program Flow and Connections

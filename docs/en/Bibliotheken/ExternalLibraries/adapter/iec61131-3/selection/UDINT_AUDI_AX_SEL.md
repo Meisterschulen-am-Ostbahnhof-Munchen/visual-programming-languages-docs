@@ -9,45 +9,33 @@ The function block **UDINT_AUDI_AX_SEL** implements a binary selection between t
 ### **Event Inputs**
 
 | Event | Comment | With Data |
-
 |------------- |---------------------------|--------------------|
-
 | `EI0` | Set IN0 | `IN0` |
-
 | `EI1` | Set IN1 | `IN1` |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |------------- |-------------------------------------------|
-
 | `CNF` | Confirmation of requested operation |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|------------------|-------------------------------|
-
 | `IN0` | `ANY_ELEMENTARY` | First Selectable Input |
-
 | `IN1` | `UDINT` | Second Selectable Input |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|---------|---------------------------|
-
 | `OUT` | `UDINT` | Selected Input Value |
 
 ### **Adapters**
 
 | Adapter | Type | Comment |
-
 |---------|------------------------------------------|--------------------|
-
 | `G` | `adapter::types::unidirectional::AX` | Selection Control |
 
 The adapter `G` provides the event `E1` and the data value `D1`, which serves as a selection signal.
@@ -91,13 +79,9 @@ The internal logic is purely combinatorial, triggered by the adapter event.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-
 |---------------------|-----------------------------------------------------------------------------|
-
 | `UDINT_AUDI_AX_SEL` | Binary selection, external selection signal via adapter, two inputs + conversion from ANY_ELEMENTARY to UDINT. |
-
 | `F_SEL` | Pure IEC 61131 binary selection without an adapter (control signal as the third input). |
-
 | `MUX` | Selection from more than two channels, typically with an index input. |
 
 This function block extends `F_SEL` with adapter-based control and more flexible typing of the first input.

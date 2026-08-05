@@ -8,25 +8,19 @@ The **AL_MUX_3** is a generic multiplexer (signal switch) for AL data adapters. 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Requests the selection of the input determined by **K**. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirms selection (no data transfer) |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|------|--------------------------------------------|
-
 | K | UINT | Index of the input to be selected (0/1/2) |
 
 ### **Data Outputs**
@@ -36,15 +30,10 @@ The **AL_MUX_3** is a generic multiplexer (signal switch) for AL data adapters. 
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|---------------------------------------|----------------------------------------|
-
 | Plug | OUT | adapter::types::unidirectional::AL | Output that passes on the selected input |
-
 Socket | IN1 | adapter::types::unidirectional::AL | Input 1 (passes through when K = 0) |
-
 Socket | IN2 | adapter::types::unidirectional::AL | Input 2 (passes through when K = 1) |
-
 Socket | IN3 | adapter::types::unidirectional::AL | Input 3 (passes through when K = 2) |
 
 ## Functionality

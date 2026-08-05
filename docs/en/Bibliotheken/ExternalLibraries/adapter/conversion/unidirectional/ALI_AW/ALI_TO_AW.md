@@ -24,11 +24,8 @@ The block has no direct event or data inputs/outputs at the FB level. Communicat
 ### **Adapters**
 
 | Adapter Name | Type | Direction | Comment |
-
 |--------------|-----|-----------|-----------|
-
 | `ALI_IN` | `adapter::types::unidirectional::ALI` | Socket (Input) | LINT adapter input; sends event to `E1` and LINT data to `D1` |
-
 | `AW_OUT` | `adapter::types::unidirectional::AW` | Plug (Output) | WORD adapter output; sends event to `E1` and WORD data to `D1` |
 
 ## Functionality
@@ -58,13 +55,9 @@ Thus, the function block makes the data provided by the input adapter available 
 Since it is a composite function block, `ALI_TO_AW` does not have its own state machine. The internal converter `F_LINT_TO_WORD` typically implements the following implicit states:
 
 | State | Description |
-
 |---------|--------------|
-
 | IDLE | Waiting for an event at the input `ALI_IN.E1`. |
-
 | CONVERT | After receiving `REQ`, the conversion is performed. |
-
 | DONE | After the conversion is complete, `CNF` is activated and the result value is provided at the output. |
 
 The internal function block then returns to the IDLE state.

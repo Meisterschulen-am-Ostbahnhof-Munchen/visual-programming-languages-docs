@@ -27,17 +27,11 @@ The function block has only **adapter interfaces**: There are no direct event or
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |-------------------|-----------------------|----------|-----------------------------|
-
 | `OUT` | adapter::AW | Plug | Word output (4 bytes) |
-
 | `QUARTER_BYTE_00` | adapter::AQ | Socket | Quarter 0 (least significant)|
-
 | `QUARTER_BYTE_01` | adapter::AQ | Socket | Quarter 1 |
-
 | `QUARTER_BYTE_02` | adapter::AQ | Socket | Quarter 2 |
-
 | `QUARTER_BYTE_03` | adapter::AQ | socket | Quarter 3 |
 | `QUARTER_BYTE_04` | adapter::AQ | socket | Quarter 4 |
 | `QUARTER_BYTE_05` | adapter::AQ | socket | Quarter 5 |

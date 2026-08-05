@@ -8,47 +8,34 @@ The function block **NVS_AX2** is used to load and save REAL data to the non-vol
 ### **Event Inputs**
 
 | Event | Type | Comment | Carried Variables |
-
 |----------|--------|----------------------------------|---------------------------|
-
 | `INIT` | EInit | Service Initialization | QI, KEY, DEFAULT_VALUE |
 
 ### **Event Outputs**
 
 | Event | Type | Comment | Carried Variables |
-
 |----------|--------|----------------------------------|---------------------------|
-
 | `INITO` | EInit | Initialization Confirm | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |----------------|--------|---------------------------------------------------------|
-
 | `QI` | BOOL | Event Input Qualifier (Initialization Enabled) |
-
 | `KEY` | STRING | Key name for the NVS entry |
-
 | `DEFAULT_VALUE`| BOOL | Default value if the key does not exist in the NVS (default: FALSE) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |----------|--------|----------------------------------|
-
 | `QO` | BOOL | Event Output Qualifier |
-
 | `STATUS` | STRING | Service status |
 
 ### **Adapters**
 
 | Adapter | Type | Comment |
-
 |---------|-------------------------------------------|----------------|
-
 | `VAL` | `adapter::types::bidirectional::AX2` (Socket) | Value (REAL) |
 
 The **VAL** adapter establishes a bidirectional connection to an external component. The stored REAL value can be read and written via this adapter. The AX2 adapter type defines an event and data protocol for data transfer.

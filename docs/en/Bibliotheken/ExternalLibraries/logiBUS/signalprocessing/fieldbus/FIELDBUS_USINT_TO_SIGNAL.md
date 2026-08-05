@@ -9,35 +9,26 @@ The FIELDBUS_USINT_TO_SIGNAL function block processes a USINT signal from a fiel
 ### **Event Inputs**
 
 | Event | Description | With |
-
 |----------|--------------|-----|
-
 | REQ | Normal Execution Order | IN |
 
 ### **Event Outputs**
 
 | Event | Description | With |
-
 |----------|--------------|-----|
-
 | CNF | Execution Confirmation | OUT, VALID |
 
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-
 |------|-------|-----------|------------|
-
 | IN | USINT | Input Value from Fieldbus | BYTE_TO_USINT(NOT_AVAILABLE_B) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment | Initial Value |
-
 |-------|-------|-----------|-------------|
-
 | OUT | USINT | Filtered Output Value | 16#00 |
-
 | VALID | BOOL | TRUE if signal is valid | FALSE |
 
 ### **Adapter**

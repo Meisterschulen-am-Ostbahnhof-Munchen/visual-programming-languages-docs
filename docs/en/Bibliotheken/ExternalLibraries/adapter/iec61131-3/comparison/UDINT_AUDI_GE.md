@@ -9,9 +9,7 @@ The function block **UDINT_AUDI_GE** performs a greater-or-equals (>=) compariso
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Service Request – triggers the comparison |
 
 ## **Event Outputs**
@@ -21,9 +19,7 @@ No direct event outputs are available. The event signal is transmitted externall
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN1 | ANY_ELEMENTARY | First comparison value |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ No direct data outputs are available. The result value is provided via the **OUT
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug | OUT | adapter::types::unidirectional::AX | Returns the comparison result (true if IN1 >= IN2) as an event and data value |
-
 | Socket | IN2 | adapter::types::unidirectional::AUDI | Receives the second comparison value (IN2) as an event and data value |
 
 ## Functionality
@@ -70,15 +63,10 @@ The function block does not have an explicit state machine. Its functionality is
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------|---------------|
-
 | UDINT_AUDI_GE | Greater than or equal to (>=) with adapter-based second input |
-
 | UDINT_GT (Greater Than) | Only greater than (>), similar adapter structure |
-
 | UDINT_EQ (Equal) | Equality (==) |
-
 | Standard F_GE | Without adapter – both inputs as direct variables |
 
 The key difference is the use of adapters, which allows for looser coupling and easier integration into existing adapter ecosystems.

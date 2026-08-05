@@ -5,9 +5,7 @@ The **DATE** data type is used to represent a calendar date.
 According to **DIN EN 61131-3** (Table 10, No. 13a):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | Usually 32 bits (implementation dependent) |
-
 | **Default Value** | `D#1970-01-01` |
 
 ## Literal Representation

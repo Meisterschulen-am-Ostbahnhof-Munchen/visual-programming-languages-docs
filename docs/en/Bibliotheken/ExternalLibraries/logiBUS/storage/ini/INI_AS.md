@@ -8,50 +8,36 @@ The function block **INI_AS** is used to load and save SINT data from a `setting
 ### **Event Inputs**
 
 | Event | Type | With Vars | Description |
-
 | Event | Type | With Vars | Description | |----------|------|----------|--------------|
-
 | `INIT` | EInit | QI, SECTION, KEY, DEFAULT_VALUE | Service Initialization: Reads the value from the INI file and outputs it via the adapter. |
 
 ### **Event Outputs**
 
 | Event | Type | With Vars | Description |
-
 |----------|------|-----------|--------------|
-
 | `INITO` | EInit | QO, STATUS | Confirmation of initialization. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
 |---------------|----------|--------------|
-
 | `QI` | BOOL | Input qualifier (e.g., enable). |
-
 | `SECTION` | STRING | Name of the section in the INI file. |
-
 | `KEY` | STRING | Name of the key within the section. |
-
 | `DEFAULT_VALUE` | SINT | Value returned if the key is not present in the INI file. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 | |----------|----------|--------------|
-
 | `QO` | BOOL | Output qualifier (indicates successful operation). |
-
 | `STATUS` | STRING | Status message (e.g., error messages). |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|---------------------|----------|--------------|
-
 | `AS_IN` | `adapter::types::unidirectional::AS` | Input (Socket) | Receives a new value to be stored (SET operation). |
-
 | `AS_OUT` | `adapter::types::unidirectional::AS` | Output (Plug) | Outputs the currently read or stored value (GET operation). |
 
 ## Functionality

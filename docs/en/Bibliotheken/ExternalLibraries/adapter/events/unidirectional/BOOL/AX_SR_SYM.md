@@ -8,11 +8,8 @@ The function block **AX_SR_SYM** is an event-driven, bistable flip-flop with sym
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-------|----------------------------|
-
 | S | Event | Sets output Q to TRUE. |
-
 | R | Event | Sets output Q to FALSE. |
 
 ### **Event Outputs**
@@ -27,9 +24,7 @@ None (the output value is provided via an adapter).
 ### **Adapter**
 
 | Name | Type | Description |
-
 |------|----------------------------------------------|---------------------------------------|
-
 | Q | `adapter::types::unidirectional::AX` | Provides the current binary state. The adapter provides an event (`E1`) and a data value (`D1`). After each state change, `Q.E1` is triggered, and the new value is output to `Q.D1`.
 
 ## Functionality
@@ -48,13 +43,9 @@ Transitions occur exclusively through the events `S` and `R`. From the START sta
 ## State Overview
 
 | State | Description |
-
 |---------|------------------------------------------------------|
-
 | START | Waiting for first event; no output value defined. |
-
 | SET | Output value TRUE; set by event `S`. |
-
 | RESET | Output value FALSE; reset by event `R`. |
 
 **Transitions:**

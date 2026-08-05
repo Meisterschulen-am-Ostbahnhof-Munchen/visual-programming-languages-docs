@@ -9,51 +9,34 @@ The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface mod
 ### **Event Inputs**
 
 | Event | Type | Data Carried | Description |
-
 |----------|-----|-------------------|---------------|
-
 | `INIT` | `EInit` | `QI`, `PARAMS`, `u8SAMember`, `Input`, `AnalogInput_hysteresis` | Service Initialization: Hardware Connection Configuration |
-
 | `REQ` | `Event` | `QI` | Service Request: Triggering a Measurement Data Query |
 
 ### **Event Outputs**
 
 | Event | Type | Accompanying Data | Description |
-
 |----------|-----|-------------------|--------------|
-
 | `INITO` | `EInit` | `QO`, `STATUS` | Initialization Confirmation |
-
 | `CNF` | `Event` | `QO`, `STATUS`, `IN` | Measurement Query Confirmation |
-
 | `IND` | `Event` | `QO`, `STATUS`, `IN` | Asynchronous display (e.g., spontaneous measurement update from the resource) |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | `QI` | `BOOL` | – | Input Qualifier (controls execution) |
-
 | `PARAMS` | `STRING` | – | Service Parameter (e.g., communication configuration) |
-
 | `u8SAMember` | `USINT` | `MI::MI_00` | Node SA Address (valid range 224…239) |
-
 | `Input` | `DataPanel::io::MI::AI::DataPanel_MI_AI_S` | `Invalid` | Analog Input Selection (e.g., `AnalogInput_1A` … `AnalogInput_8B`) |
-
 | `AnalogInput_hysteresis` | `WORD` | – | Hysteresis Value for Signal Smoothing |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `QO` | `BOOL` | Output Qualifier (indicates valid processing) |
-
 STATUS` | `STRING` | Service Status (Error/Success Message) |
-
 IN` | `WORD` | Digitized Analog Value (0…10V, raw WORD value) |
 
 ### **Adapter**
@@ -100,13 +83,9 @@ A detailed state machine (ECC) is not present in the XML model; however, the des
 ## Comparison with Similar Function Blocks
 
 | Function Block | Voltage Range | Platform | Features |
-
 |----------|------------------|-----------|----------------|
-
 | `DataPanel_MI_IW_0_10V` | 0-10V | HR DataPanel MI | Hysteresis, SA Addressing |
-
 | `DataPanel_MI_IW_4_20mA` | 4-20mA | HR DataPanel MI | Analog Current Inputs |
-
 | `GenericAnalogInput` | Variable | Standard IEC 61131 | General Input, No Hysteresis |
 
 This function block is specifically optimized for DataPanel-MI hardware and offers tight coupling to device-specific parameters.

@@ -9,49 +9,35 @@ The function block **IA_RHS** (ISOBUS Adapter for Rear Hitch Status) serves as a
 ### **Event Inputs**
 
 | Name | Type | Comment | With Data |
-
 |------|-------|-------------------------|-----------|
-
 | INIT | EInit | Service Initialization | QI |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With Data |
-
 |-------|-------|--------------------------|----------------|
-
 | INITO | EInit | Initialization Confirm | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-------------------------|
-
 | QI | BOOL | Event Input Qualifier |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |--------|--------|--------------------------|
-
 | QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Status Message |
 
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |---------|----------|-------------------------------------------|
-
 | POSITION| OFF | Rear Hitch Position |
-
 | FORCE | OFF | Rear Nominal Lower Link Force |
-
 | DRAFT | AUI | Rear Draft |
-
 | TIMEOUT | AX | Timeout Status |
 
 ## Functionality

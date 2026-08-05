@@ -36,11 +36,8 @@ The function block internally uses the standard function block `E_TP_RETRIG`. An
 The module has two main states:
 
 | State | Q.D1 | Description |
-
 |----------|-------|-------------------------------------------------------------------|
-
 | **IDLE** | FALSE | Idle state, no pulse active. |
-
 | **TIMING** | TRUE | Pulse running, timer counts down the duration PT. |
 
 **Transitions:**

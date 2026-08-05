@@ -8,48 +8,35 @@ The **NVS_AUDI** function block enables the storage and loading of **UDINT** dat
 ### **Event Inputs**
 
 | Name | Type | Data Carried | Comment |
-
 |-------|-------|---------------------------|-------------------------------|
-
 | INIT | EInit | QI, KEY, DEFAULT_VALUE | Initializes the service |
 
 ### **Event Outputs**
 
 | Name | Type | Carried Data | Comment |
-
 |-------|-------|-------------------|----------------------------------|
-
 | INITO | EInit | QO, STATUS | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |---------------|--------|---------------------------------------------------|
-
 | QI | BOOL | Event Input Qualifier |
-
 | KEY | STRING | Key Name for NVS Access |
-
 | DEFAULT_VALUE | UDINT | Default value if no value exists in NVS |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
 |--------|--------|------------------------------|
-
 | QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Service Status (Error/OK) |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |----------|--------------------------------------|------------------------------------|
-
 | AUDI_IN | adapter::types::unidirectional::AUDI | Value to be stored (SET) |
-
 | AUDI_OUT | adapter::types::unidirectional::AUDI | Stored/loaded value (GETO)|
 
 ## Functionality

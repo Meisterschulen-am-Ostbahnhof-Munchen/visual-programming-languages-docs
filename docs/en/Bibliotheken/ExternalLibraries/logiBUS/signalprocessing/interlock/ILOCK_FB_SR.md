@@ -9,45 +9,33 @@ The ILOCK_FB_SR function block implements a bistable set-dominant SR latch, spec
 ### **Event Inputs**
 
 | Event | Description | Accompanying Data |
-
 |----------|---------------|-------------------|
-
 | `REQ` | Execution Request for Processing the Set and Reset Signals | `S1`, `R` |
 
 ### **Event Outputs**
 
 | Event | Description | Carrying Data |
-
 |----------|--------------|-------------------|
-
 | `CNF` | Execution Confirmation, outputs the current output value | `Q1` |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `S1` | `BOOL` | Set Input |
-
 | `R` | `BOOL` | Reset Input |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `Q1` | `BOOL` | Latch Output (set-dominant) |
 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | `ILOCK_IN` | `adapter::types::bidirectional::AX2` | Socket | Receives data and events from an upstream interlock block |
-
 | `ILOCK_OUT` | `adapter::types::bidirectional::AX2` | Plug | Sends data and events to a downstream interlock block |
 
 The adapters enable bidirectional chaining of interlock blocks by allowing both the reception of enable/lock signals and the transmission of states.
@@ -74,23 +62,14 @@ This structure allows multiple interlock blocks to be cascaded: A set signal can
 The internal SR latch has four states based on the (combined) inputs:
 
 | S1 (after logic) | R | Q1 (previous) | Q1 (new) |
-
 |-----------------|---|-----------------|------------|
-
 | 0 | 0 | 0 | 0 |
-
 | 0 | 0 | 1 | 1 |
-
 | 0 | 1 | 0 | 0 |
-
 | 0 | 1 | 1 | 0 |
-
 | 1 | 0 | 0 | 1 |
-
 | 1 | 0 | 1 | 1 |
-
 | 1 | 1 | 0 | 1 |
-
 | 1 | 1 | 1 | 1 |
 
 The effective values for S1 (Set) result from the OR operation of `S1`, `ILOCK_IN.DO1`, and `ILOCK_OUT.DI1`.

@@ -8,43 +8,32 @@ The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-d
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Normal execution command (non-triggering) – starts or updates the timer calculation. The corresponding data input is `PT`. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Execution confirmation – signals the completion of a timer update. The corresponding data output is `ET`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `PT` | `LTIME` | Process Time – The desired shutdown delay duration. |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `ET` | `LTIME` | Elapsed Time – The time elapsed since the delay started. |
 
 ### **Adapter**
 
 | Direction | Adapter Type | Comment |
-
 |----------|------------|-----------|
-
 | **Socket** `IN` | `adapter::types::unidirectional::AX` | Input adapter – receives the binary control signal (e.g., via event `E1` and data `D1`). |
-
 **Plug** `Q` | `adapter::types::unidirectional::AX` | Output adapter – forwards the time-delayed output signal (via event `E1` and data `D1`). |
 
 ## Functionality
@@ -77,13 +66,9 @@ The variable `ET` is taken directly from the timer and displays the currently el
 ## State overview
 
 | State | Input `IN` | Output `Q` | Elapsed time `ET` |
-
 |---------|--------------|--------------|------------------------|
-
 | Inactive / Ready | TRUE | TRUE | 0 (Zero) |
-
 | Delay in progress | FALSE → Return to TRUE possible | TRUE | 0 … PT |
-
 | Delay expired | FALSE | FALSE | PT (constant) |
 
 A change from `IN` to **TRUE** resets the timer and immediately returns it to the "Inactive / Ready" state. A change to **FALSE** restarts the delay.

@@ -66,17 +66,11 @@ After each of these actions, the status flags `QU` and `QD` are updated based on
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_CTUD (Up/Down) | E_CTU (Up) | E_CTD (Down) |
-
 --------------|------------------|-----------------|------------------|
-
 | Counting Direction | Up & Down | Up Only | Down Only |
-
 | Reset (to 0)| Yes (`R`) | Yes (`R`) | No |
-
 | Load (to PV)| Yes (`LD`) | No | Yes (`LD`) |
-
 | Top Status | `QU` (`CV >= PV`) | `Q` (`CV >= PV`) | No |
-
 | Bottom Status | `QD` (`CV = 0`) | No | `Q` (`CV = 0`) |
 
 ## 🛠️ Related Exercises

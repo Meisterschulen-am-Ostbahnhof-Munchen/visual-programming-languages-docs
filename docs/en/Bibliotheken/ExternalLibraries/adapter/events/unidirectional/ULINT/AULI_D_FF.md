@@ -43,11 +43,8 @@ The function block operates as **clocked memory** and is particularly suitable f
 The internal state of the D flip-flop can be logical 0 or 1. Since the data value can be arbitrary, the state corresponds to the last latched value. An explicit state diagram is not required, as the behavior is fully described by the simple edge triggering.
 
 | Clock (I.E1) | Previous Q value | New Q value |
-
 |-------------|-------------------|--------------|
-
 | Event | arbitrary | Value of I.D1|
-
 | no event | unchanged | unchanged |
 
 ## Application Scenarios
@@ -59,15 +56,10 @@ The internal state of the D flip-flop can be logical 0 or 1. Since the data valu
 ## Comparison with Similar Components
 
 | Component | Description | Difference from AULI_D_FF |
-
 |----------|---------------|-----------------------------|
-
 | SR-FF | Set-Reset Flip-Flop | Requires two separate inputs; can have illegal states. |
-
 | JK-FF | Universal Flip-Flop | More complex, with toggle functionality; not needed here. |
-
 | T-FF | Toggle Flip-Flop | Changes the state on each clock cycle; no data input. |
-
 | AULI_D_FF| D Flip-Flop | Simple, no toggle, no illegal states, ideal for storing a value. |
 
 ## Conclusion

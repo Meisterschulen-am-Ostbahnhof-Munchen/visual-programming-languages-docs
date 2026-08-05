@@ -9,25 +9,17 @@ The function block **ILOCK_2_E** is an event-driven bistable toggle block with d
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `SET1` | Sets OUT1 to TRUE and OUT2 to FALSE. |
-
 CLK1` | Toggles OUT1 (upon initial activation after a set/reset) and sets OUT2 to FALSE. |
-
 SET2` | Sets OUT2 to TRUE and OUT1 to FALSE. |
-
 CLK2` | Toggles OUT2 and sets OUT1 to FALSE. |
-
 R` | Resets both outputs to FALSE. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 ----------|-----------|
-
 EO` | Triggered after every output change (SET, TOGGLE, or RESET). Stores the current values of OUT1 and OUT2. |
 
 ### **Data Inputs**
@@ -37,11 +29,8 @@ None (the function block is purely event-driven).
 ### **Data Outputs**
 
 | Output | Type | Comment |
-
 |---------|-------|-----------|
-
 | `OUT1` | BOOL | First output (bistable value). |
-
 | `OUT2` | BOOL | Second output (bistable value). |
 
 ### **Adapters**
@@ -65,19 +54,12 @@ The **toggle function** is edge-triggered: The internal variables `EDGE1` and `E
 ## Status Overview
 
 | Status | Description | Trigger | Algorithm Effect (Simplified) | Output |
-
 |-------------|-----------------------------|----------|---------------------------------------------------------|---------|
-
 | `STOP` | Initial, waits for event | - | – | – |
-
 | `SET1` | Set Output 1 | `SET1` | OUT1=TRUE, OUT2=FALSE, EDGE1=FALSE, EDGE2=FALSE | `EO` |
-
 | `SET2` | Set Output 2 | `SET2` | OUT1=FALSE, OUT2=TRUE, EDGE1=FALSE, EDGE2=FALSE | `EO` |
-
 | `TOGGLE1` | Toggle Output 1 | `CLK1` | If EDGE1=FALSE: OUT1 = NOT OUT1; OUT2=FALSE; EDGE1=TRUE; EDGE2=FALSE | `EO` |
-
 | `TOGGLE2` | Toggle Output 2 | `CLK2` | OUT1=FALSE; if EDGE2=FALSE: OUT2 = NOT OUT2; EDGE1=FALSE; EDGE2=TRUE | `EO` |
-
 | `RESET` | Reset all outputs | `R` | OUT1=FALSE, OUT2=FALSE, EDGE1=FALSE, EDGE2=FALSE | `EO` |
 
 All action states immediately revert to `STOP` after the algorithm is executed.
@@ -91,13 +73,9 @@ All action states immediately revert to `STOP` after the algorithm is executed.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-
 |---------------|-------------------------------------------------------------------------------|
-
 | `E_SR` | Simple set/reset flip-flop, no toggle, no dual locking. |
-
 | `SR-Flipflop` (two outputs) | Often only combinatorial or without edge detection. |
-
 | `ILOCK_2_E` | Offers both: **Set** (exclusive) and **edge-triggered toggle** with automatic locking. Ideal for advanced requirements. |
 
 ## Conclusion

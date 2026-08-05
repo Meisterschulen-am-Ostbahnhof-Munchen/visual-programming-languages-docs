@@ -21,11 +21,8 @@ No direct data outputs. The stored data value is output via the adapter plug **Q
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | I | `adapter::types::unidirectional::AL` | Socket | Value to be latched |
-
 | Q | `adapter::types::unidirectional::AL` | Plug | Latched value |
 
 The adapters are unidirectional and of type `AL`. Each adapter contains an event input/output (E1) and a data input/output (D1). Socket **I** serves as the input interface, and plug **Q** as the output interface.

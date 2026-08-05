@@ -30,11 +30,8 @@ The output data is provided via the AL adapter `AL_OUT.D1` (data type: LWORD).
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |-------------|-----|----------|-----------|
-
 | `ADI_IN` | `adapter::types::unidirectional::ADI` | Socket (Input) | Returns a DINT value and controls processing via event `E1`. |
-
 | `AL_OUT` | `adapter::types::unidirectional::AL` | Plug (Output) | Outputs the converted LWORD value and acknowledges it via event `E1`. |
 
 ## Functionality

@@ -8,35 +8,26 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL** is used for the simple validation
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Normal execution trigger; processes the current value at the IN input. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Confirmation of execution; the outputs OUT and VALID have been updated. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |------|----------|-------------|-----------|
-
 | IN | BYTE | NOT_AVAILABLE_B | Input signal as a byte value. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |------|----------|-------------|-----------|
-
 | OUT | BYTE | 16#00 | Filtered output value; 0 if signal is invalid. |
-
 VALID | BOOL | FALSE | TRUE if the input signal is recognized as valid. |
 
 ### **Adapter**
@@ -79,9 +70,7 @@ After the calculation, the **CNF** event is output. The initial value of **IN** 
 The function block has exactly one execution state:
 
 | State | Action | Output Event |
-
 |---------|--------|-----------------|
-
 | REQ | Executes the **REQ** algorithm (filter logic) | CNF |
 
 There are no further wait or initialization states.

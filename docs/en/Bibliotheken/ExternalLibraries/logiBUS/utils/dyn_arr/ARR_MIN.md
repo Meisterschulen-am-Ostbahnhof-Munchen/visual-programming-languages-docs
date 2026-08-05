@@ -9,33 +9,25 @@ The function block **ARR_MIN** determines the minimum of all elements in a one-d
 ### **Event Inputs**
 
 | Event | With Data |
-
 |---------|-----------|
-
 | `REQ` | `A` |
 
 ### **Event Outputs**
 
 | Event | With Data |
-
 |---------|-----------|
-
 | `CNF` | `A` (and empty data output) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|----------------|-----------|
-
 | `A` | `ARRAY[*] OF INT` | Input Array (Input/Output) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | (Unnamed) | `INT` | Minimum value of the array |
 
 ### **Adapter**

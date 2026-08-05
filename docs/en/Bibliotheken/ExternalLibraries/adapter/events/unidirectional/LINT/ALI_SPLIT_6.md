@@ -21,21 +21,13 @@ The ALI_SPLIT_6 function block is used to distribute an incoming unidirectional 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::ALI` | `IN` | Socket (Input) | An ALI adapter whose signal is distributed to all outputs. |
-
 | `adapter::types::unidirectional::ALI` | `OUT1` | Plug (Output) | First output carrying the input signal. |
-
 | `adapter::types::unidirectional::ALI` | `OUT2` | Plug (Output) | Second output carrying the input signal. |
-
 | `adapter::types::unidirectional::ALI` | `OUT3` | Plug (Output) | Third output carrying the input signal. |
-
 | `adapter::types::unidirectional::ALI` | `OUT4` | Plug (Output) | Fourth output with the input signal. |
-
 | `adapter::types::unidirectional::ALI` | `OUT5` | Plug (Output) | Fifth output with the input signal. |
-
 | `adapter::types::unidirectional::ALI` | `OUT6` | Plug (Output) | Sixth output with the input signal. |
 
 ## Functionality
@@ -60,15 +52,10 @@ The FB does not have its own states or behavior modes, as it only performs struc
 ## Comparison with Similar Function Blocks
 
 | Function Block | Outputs | Special Features |
-
 |----------|----------|--------------|
-
 | ALI_SPLIT_2 | 2 | Dual Distribution |
-
 | ALI_SPLIT_4 | 4 | Quadruple Distribution |
-
 | **ALI_SPLIT_6** | **6** | **Six-Way Distributor, Generic** |
-
 | ALI_SPLIT_8 | 8 | Eight-Way Distributor |
 
 The ALI_SPLIT_6 differs from other split variants only in the number of outputs. All function blocks in this family operate on the same passive distribution principle. The function block described here is implemented as a generic block, while other variants may be implemented as simple function block types without genericity.

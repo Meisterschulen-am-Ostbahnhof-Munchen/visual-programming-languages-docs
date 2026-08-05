@@ -56,29 +56,19 @@ The **Q_SoftKeyMask** is a standards-compliant function block for managing softk
 ## Mask Type Reference
 
 | Value | Type | Description |
-
 |------|-----------|----------------------------|
-
 | 1 | Data | Normal Data Mask |
-
 | 2 | Alarm | Alarm Mask Link |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful switch |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 | -21 | VT_E_NO_INSTANCE | No VT client available |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -90,15 +80,10 @@ The **Q_SoftKeyMask** is a standards-compliant function block for managing softk
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_SoftKeyMask | VtKeyMapping | VtMaskLinker |
-
 |---------------|---------------|---------------|--------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Mask Types | 2 (Data/Alarm)| 1 (Universal)| 1 (Data) |
-
 | Feedback | ✔ | ✖ | ✔ |
-
 | Real-Time Switching | ✔ | ✔ | ✖ |
 
 ## Conclusion

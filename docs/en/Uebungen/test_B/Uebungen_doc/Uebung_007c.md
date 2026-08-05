@@ -16,21 +16,13 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameters | Description |
-
 |-----------------------|-------------------------------|---------------------------------------------|--------------|
-
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#10ms` | Generates an event at its output `EO` every 10 ms. |
-
 | `E_SPLIT_3` | `iec61499::events::E_SPLIT_3` | – | Distributes an incoming event to three identical outputs (`EO1`, `EO2`, `EO3`). |
-
 | `E_MERGE_3` | `iec61499::events::E_MERGE_3` | – | Combines three incoming events (`EI1`, `EI2`, `EI3`) into a single output `EO`. |
-
 | `E_T_FF` | `iec61499::events::E_T_FF` | – | Toggle flip-flop: On each event at input `CLK`, output `Q` toggles its value (0→1 or 1→0). |
-
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` | Converts a key press at I1 into an event at output `IND` (start command). |
-
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` | Converts a key press at I2 into an event at output `IND` (stop command). |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Controls digital output Q1. An event at input `REQ` takes the data value at input `OUT` and outputs it physically. |
 
 ## Program Flow and Connections

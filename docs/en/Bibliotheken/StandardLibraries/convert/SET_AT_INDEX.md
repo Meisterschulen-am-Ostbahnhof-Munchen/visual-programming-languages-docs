@@ -53,15 +53,10 @@ This block is complementary to the `GET_AT_INDEX` block, which would read values
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2014 Profactor GmbH |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-08-05, Matthias Plasch) |
-
 | 4diac Package | eclipse4diac::convert |
 
 ## Conclusion

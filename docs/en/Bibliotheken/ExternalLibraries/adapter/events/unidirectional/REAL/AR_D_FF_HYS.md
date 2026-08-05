@@ -9,25 +9,19 @@ The function block **AR_D_FF_HYS** implements a data latch (D) flip-flop with hy
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INIT | EInit | Initializes the block and sets the hysteresis band. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INITO | EInit | Confirms successful initialization. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | HYSTERESIS | REAL | Hysteresis band size. |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ The function block **AR_D_FF_HYS** implements a data latch (D) flip-flop with hy
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|-----|-----------|--------------|
-
 | I | adapter::types::unidirectional::AR | Socket (Input) | Receives the value to be latched (trigger event on E1, data on D1). |
-
 | Q | adapter::types::unidirectional::AR | Plug (Output) | Outputs the latched value (event on E1, data on D1). |
 
 ## Functionality
@@ -81,13 +72,9 @@ There are no explicit state machines; the component operates purely event-driven
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature |
-
 |----------|-------------|
-
 | **AR_D_FF** (without hysteresis) | Instantly adopts any new value; sensitive to noise. |
-
 | **AR_D_FF_HYS** (this function block) | Uses a hysteresis band to suppress flicker. |
-
 | **Schmitt Trigger** | Implements similar hysteresis, but usually for binary (Boolean) signals. This function block operates with analog (REAL) values. |
 
 ## Conclusion

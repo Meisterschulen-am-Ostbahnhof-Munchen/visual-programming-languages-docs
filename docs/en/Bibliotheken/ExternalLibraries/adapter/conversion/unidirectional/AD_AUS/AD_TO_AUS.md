@@ -20,11 +20,8 @@ The adapter output **AUS_OUT** provides the converted USINT value (8-bit) via th
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | **AD_IN** | `adapter::types::unidirectional::AD` | Input (Socket) | Receives DWORD data and control events. |
-
 | **AUS_OUT** | `adapter::types::unidirectional::AUS` | Output (Plug) | Outputs USINT data and acknowledgment events. |
 
 ## Functionality

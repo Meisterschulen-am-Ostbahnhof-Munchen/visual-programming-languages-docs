@@ -8,27 +8,20 @@ The AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED function block is used for the scalable t
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | INIT | EInit | Initialization Request |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INITO | EInit | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | SCALE | REAL | REAL#1.0 | Scaling Factor |
-
 | OFFSET | DINT | DINT#0 | Offset after Scaling |
 
 ### **Data Outputs**
@@ -38,13 +31,9 @@ The AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED function block is used for the scalable t
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | adapter::types::unidirectional::AUI | IN | Socket | UINT input (fieldbus signal) |
-
 | adapter::types::unidirectional::AR | OUT | Plug | Scaled REAL output |
-
 | adapter::types::unidirectional::AX | VALID | Plug | Validation signal (TRUE = valid) |
 
 ## Functionality

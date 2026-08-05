@@ -27,13 +27,9 @@ No data output available.
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |-------------|----------|-----|--------------|
-
 | `IN` | Socket | `adapter::types::unidirectional::AW` | Input Adapter – the unidirectional adapter to be shared. |
-
 | `OUT1` | Plug | `adapter::types::unidirectional::AW` | First Output – receives an identical copy of the incoming adapter. |
-
 | `OUT2` | Plug | `adapter::types::unidirectional::AW` | Second Output – also receives an identical copy of the incoming adapter. |
 
 ## Functionality

@@ -19,27 +19,20 @@ The **E1** event is sent via the **AULI_OUT** plug (adapter `AULI`) as soon as t
 ### **Data Inputs**
 
 | Name | Adapter Port | Data Type | Description |
-
 |--------|--------------|----------|----------------------------------|
-
 | AL_IN | D1 | LWORD | Input value in LWORD format |
 
 ### **Data Outputs**
 
 | Name | Adapter Port | Data Type | Description |
-
 |---------|--------------|----------|-----------------------------------|
-
 | AULI_OUT| D1 | ULINT | Converted Value in ULINT Format |
 
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-
 |-------------|----------|-----------|----------|--------------------------------------|
-
 | `AL` | Socket | AL_IN | Input adapter with LWORD data |
-
 | `AULI` | Plug | AULI_OUT | Output adapter with ULINT data |
 
 ## Functionality

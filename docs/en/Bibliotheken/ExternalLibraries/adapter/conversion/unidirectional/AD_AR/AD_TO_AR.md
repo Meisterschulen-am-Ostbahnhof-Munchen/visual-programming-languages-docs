@@ -22,11 +22,8 @@ The function block has no direct (individual) event or data inputs/outputs. All 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |--------|--------------------------------------------|----------|----------------------------------------------------------------------------|
-
 | AD_IN | `adapter::types::unidirectional::AD` | Socket | Receives an event (E1) and a DWORD value (D1) for conversion. |
-
 | AR_OUT | `adapter::types::unidirectional::AR` | Plug | Sends an event (E1) with the converted REAL value (D1). |
 
 ## Functionality

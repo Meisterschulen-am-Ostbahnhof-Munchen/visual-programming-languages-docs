@@ -10,23 +10,16 @@ The function block does not have any traditional event or data interfaces. All c
 ### **Adapters (Sockets)**
 
 | Adapter | Type | Comment |
-
 |---------|-----|------------|
-
 | IN | `adapter::types::unidirectional::AD` | DWORD Input (32-bit) |
 
 ### **Adapter (Plugs)**
 
 | Adapter | Type | Comment |
-
 |---------|-----|------------|
-
 | BYTE_00 | `adapter::types::unidirectional::AB` | Byte 0 (least significant byte) |
-
 | BYTE_01 | `adapter::types::unidirectional::AB` | Byte 1 |
-
 | BYTE_02 | `adapter::types::unidirectional::AB` | Byte 2 |
-
 | BYTE_03 | `adapter::types::unidirectional::AB` | Byte 3 (most significant byte) |
 
 Each AB adapter has at least one event output (E1) and one data output (D1) connected to the internal flip-flops.

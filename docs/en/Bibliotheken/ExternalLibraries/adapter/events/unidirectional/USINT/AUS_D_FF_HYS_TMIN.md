@@ -9,27 +9,20 @@ The function block **AUS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (
 ### **Event Inputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-------|-----------------------|---------------------------------------------------|
-
 | `INIT` | EInit | `HYSTERESIS`, `Tmin` | Initialization request; sets hysteresis and minimum time. |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-------|----------------|------------------------------------------------|
-
 | `INITO` | EInit | – | Confirmation of completed initialization. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |--------------|----------|------------------------------------------------------------------|
-
 | `HYSTERESIS` | ANY_NUM | Hysteresis band – Threshold difference that must be exceeded/fallen below for a new value to be latched. |
-
 | `Tmin` | TIME | Minimum time interval between two incoming events (inter-arrival time). |
 
 ### **Data Outputs**
@@ -39,11 +32,8 @@ The function block **AUS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|-------------|--------------------------------------|---------------------------------------------------------------------------|
-
 | `I` | Socket (In) | `adapter::types::unidirectional::AUS`| Receives the event to be latched and the corresponding data value. |
-
 | `Q` | Plug (Out) | `adapter::types::unidirectional::AUS`| Outputs the processed event and the latched data value. |
 
 ## Functionality
@@ -88,15 +78,10 @@ Since the function block does not have its own state diagram (the logic resides 
 ## Comparison with Similar Components
 
 | Component | Properties |
-
 |------------------------------|-------------------------------------------------------------------------------|
-
 | Standard D Flip-Flop | Latches on every rising edge without hysteresis or time limit. |
-
 | `E_D_FF_HYS` (without Tmin) | Hysteresis only, no time debouncing. |
-
 E_D_FF_TMIN` (without Hys) | Minimum time only, no hysteresis. |
-
 AUS_D_FF_HYS_TMIN` | Combines hysteresis **and** minimum time – more robust against noise and bursts. |
 
 This component is therefore particularly suitable when both effects (signal tolerance and time limiting) are required simultaneously.

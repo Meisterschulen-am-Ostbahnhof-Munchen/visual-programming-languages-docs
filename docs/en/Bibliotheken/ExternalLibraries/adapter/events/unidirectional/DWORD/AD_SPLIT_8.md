@@ -25,25 +25,15 @@ None
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|-----|-----|--------------|
-
 | Socket | **IN** | `adapter::types::unidirectional::AD` | Input Adapter – Signal to be Split |
-
 | Plug | **OUT1** | `adapter::types::unidirectional::AD` | First Output |
-
 | Plug | **OUT2** | `adapter::types::unidirectional::AD` | Second Output |
-
 | Plug | **OUT3** | `adapter::types::unidirectional::AD` | Third Output |
-
 | Plug | **OUT4** | `adapter::types::unidirectional::AD` | Fourth Output |
-
 | Plug | **OUT5** | `adapter::types::unidirectional::AD` | Fifth Output |
-
 | Plug | **OUT6** | `adapter::types::unidirectional::AD` | Sixth Output |
-
 | Plug | **OUT7** | `adapter::types::unidirectional::AD` | Seventh Output |
-
 | Plug | **OUT8** | `adapter::types::unidirectional::AD` | Eighth Output |
 
 ## Functionality

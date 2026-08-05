@@ -22,11 +22,8 @@ None (exclusively via adapter).
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AULI` | `AULI_IN` | Socket / Input | Receives a ULINT value via event and data channels (E1, D1) |
-
 | `adapter::types::unidirectional::ADI` | `ADI_OUT` | Plug / Output | Provides the converted DINT value via event and data channels (E1, D1) |
 
 ## Functionality

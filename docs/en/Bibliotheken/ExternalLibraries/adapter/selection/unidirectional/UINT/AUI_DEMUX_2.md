@@ -9,25 +9,19 @@ The function block `AUI_DEMUX_2` implements a generic demultiplexer for two outp
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Sets the index `K` and triggers the demultiplexer operation. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirms successful execution of indexing and data transfer. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------|
-
 | `K` | UINT | Index for selecting the target output (1 = OUT1, 2 = OUT2). |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Label | Type | Comment |
-
 |----------|-------------|----------------------------------|-------------------------------|
-
 | Output | `OUT1` | `adapter::types::unidirectional::AUI` | First demultiplexer output. |
-
 | Output | `OUT2` | `adapter::types::unidirectional::AUI` | Second demultiplexer output. |
-
 | Input | `IN` | `adapter::types::unidirectional::AUI` | Input that is redirected to an output. |
 
 ## Functionality

@@ -9,24 +9,19 @@ The function block **AD_MUX_2** implements a generic multiplexer for adapter int
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0 = IN1, 1 = IN2) |
 
 ### **Data Outputs**
@@ -36,13 +31,9 @@ No dedicated data outputs. Output is provided via the adapter plug OUT.
 ### **Adapter**
 
 | Type | Name | Type | Comment |
-
 |----------|------|------------------------------------------|------------------------------------|
-
 | Plug | OUT | adapter::types::unidirectional::AD | Output: contains IN1 for K=0, IN2 for K=1 |
-
 Socket | IN1 | adapter::types::unidirectional::AD | First Input |
-
 Socket | IN2 | adapter::types::unidirectional::AD | Second Input |
 
 ## Functionality

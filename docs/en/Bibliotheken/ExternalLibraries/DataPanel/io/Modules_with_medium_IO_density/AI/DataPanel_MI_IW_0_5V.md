@@ -9,49 +9,33 @@ The function block **DataPanel_MI_IW_0_5V** is a service interface function bloc
 ### **Event Inputs**
 
 | Event | Type | Description | With Variables |
-
 |----------|-----|--------------|---------------|
-
 | `INIT` | EInit | Initializes the service connection | `QI`, `PARAMS`, `u8SAMember`, `Input`, `AnalogInput_hysteresis` |
-
 | `REQ` | Event | Requests a current measurement value | `QI` |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Variables | ... |----------|-----|--------------|---------------|
-
 | `INITO` | EInit | Initialization Confirmation | `QO`, `STATUS` |
-
 | `CNF` | Event | Confirmation of a Completed Request | `QO`, `STATUS`, `IN` |
-
 | `IND` | Event | Asynchronous Indication of a Measured Value from the Resource | `QO`, `STATUS`, `IN` |
 
 ### **Data Inputs**
 
 | Variable | Type | Description | Initial Value |
-
 |----------|-----|--------------|-------------|
-
 | `QI` | BOOL | Qualifier for Event Inputs | – |
-
 | `PARAMS` | STRING | Service Parameter (e.g., Communication Address) | – |
-
 | `u8SAMember` | USINT | Node SA Address (224 … 239) | `MI::MI_00` |
-
 | `Input` | DataPanel::io::MI::AI::DataPanel_MI_AI_S | Selection of the analog input channel (e.g., AnalogInput_1A … 8B) | `Invalid` |
-
 | `AnalogInput_hysteresis` | WORD | Hysteresis value for signal evaluation | – |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | `QO` | BOOL | Output qualifier (indicates valid status) |
-
 | `STATUS` | STRING | Service status message (e.g., error text) |
-
 | `IN` | WORD | Measured analog value (raw value) from the resource |
 
 ### **Adapter**
@@ -94,19 +78,12 @@ The analog input channel is selected via the ``Input`` parameter. Valid values a
 Since the XML definition does not contain an ECC (Execution Control Chart), the state logic is derived from the typical behavior of a SIFB (Single-Integrated Function Block). An abstract state machine can be described as follows:
 
 | State | Description | Event | Action |
-
 |---------|---------------|----------|---------|
-
 | **IDLE** | Waiting for Initialization | `INIT` (QI=TRUE) | Starting connection |
-
 **INIT** | Initialization in progress | – | Waiting for resource confirmation |
-
 **READY** | Ready for requests | `INITO` | Set QO=TRUE |
-
 **BUSY** | Measurement request in progress | `REQ` | Sending request to resource |
-
 **DONE** | Response received | `CNF` | Loading `IN` and setting QO=TRUE |
-
 **ERROR** | Error status | – | Set QO=FALSE, STATUS=Error text |
 
 Asynchronous `IND` events can occur in the **READY** or **BUSY** states and result in the immediate availability of the value.
@@ -119,15 +96,10 @@ Asynchronous `IND` events can occur in the **READY** or **BUSY** states and resu
 ## Comparison with Similar Function Blocks
 
 | Feature | DataPanel_MI_IW_0_5V | Generic Analog Input (e.g., IEC 61499 standard) |
-
 |---------|----------------------|------------------------------------------------------|
-
 | Voltage Range | 0 – 5V | Usually configurable (0-10V, 4-20mA, etc.) |
-
 | Channel Selection | Specific type `DataPanel_MI_AI_S` | Usually `INT` or `STRING` parameter |
-
 | Hysteresis | Separate Variable (`WORD`) | Often not included |
-
 | Bus connection | Proprietary (DataPanel-MI-IW) | Abstract communication interface |
 
 The function block is highly tailored to the DataPanel hardware and therefore offers less flexibility than a generic analog input, but provides a direct, optimized connection.

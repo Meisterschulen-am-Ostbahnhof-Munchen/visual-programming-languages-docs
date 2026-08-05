@@ -8,47 +8,34 @@ The **IA_MSS** function block represents an ISOBUS adapter for machine-selected 
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | INIT | EInit | Service Initialization; is triggered by the data input `QI`. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INITO | EInit | Initialization confirmation; outputs the data `QO` and `STATUS`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-----|---------------|
-
 | QI | BOOL | Qualifier for the initialization input. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QO | BOOL | Qualifier for the initialization output. |
-
 | STATUS | STRING | Initialization status message. |
 
 ### **Adapter**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | SPEED | adapter::types::unidirectional::AUI | Output for the machine-selected speed (value of type `AUI`). |
-
 | DISTANCE | adapter::types::unidirectional::AUDI | Output for the machine-selected distance (value of type `AUDI`). |
-
 | TIMEOUT | adapter::types::unidirectional::AX | Output for the timeout status (value of type `AX`). |
 
 ## Functionality
@@ -71,13 +58,9 @@ The adapter thus provides a clean separation between ISOBUS communication and th
 Since the function block does not have its own execution state (ECC), the state results from the interaction of input and output events:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Not Initialized** | After system startup or after a failed initialization. `INIT` can be triggered. |
-
 **Initialized** | After successful execution of `INIT` → `INITO` with `QO` set. The adapters deliver valid values. |
-
 **Error/Timeout** | If the internal initialization fails or a timeout is detected, this is signaled via `STATUS` and the `TIMEOUT` adapter. |
 
 ## Application Scenarios

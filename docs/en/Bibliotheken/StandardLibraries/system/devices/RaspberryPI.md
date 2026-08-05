@@ -4,13 +4,9 @@
 This device represents a FORTE runtime environment on a Raspberry Pi.
 ## Metadata
 | Attribute | Value |
-
 | :--- | :--- |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac Package | iec61499::system |
 
 ---

@@ -9,25 +9,19 @@ The function block **AIWS_MUX_4** is a multiplexer for four unidirectional AIWS 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Starts the switching process. The value of **K** is read, and the corresponding input is switched to the output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Acknowledgement: The switchover was completed. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Index of the input to be selected (value range 0 … 3). |
 
 ### **Data Outputs**
@@ -36,17 +30,11 @@ None.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----------------------------------------------|-----------|--------------|
-
 | IN1 | adapter::types::unidirectional::AIWS | Socket | First input (K = 0). |
-
 IN2 | adapter::types::unidirectional::AIWS | Socket | Second input (K = 1). |
-
 IN3 | adapter::types::unidirectional::AIWS | Socket | Third input (K = 2). |
-
 IN4 | adapter::types::unidirectional::AIWS | Socket | Fourth input (K = 3). |
-
 OUT | adapter::types::unidirectional::AIWS | Plug | Output (receives the data from the selected input). |
 
 ## Functionality

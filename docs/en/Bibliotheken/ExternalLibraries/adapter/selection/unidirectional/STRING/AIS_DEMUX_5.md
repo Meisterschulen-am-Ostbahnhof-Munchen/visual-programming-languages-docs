@@ -9,25 +9,19 @@ The function block **AIS_DEMUX_5** is a generic AIS demultiplexer (Generic FB) a
 ### **Event Inputs**
 
 | Event | With Variables | Description |
-
 |----------|----------------|---------------------------------------------------|
-
 | **REQ** | K | Sets the index **K** and starts the demultiplexing action |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|------------------------------------------------|
-
 | **CNF** | Confirmation that the demultiplexing operation is complete |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|-----------------------------------------|
-
 | **K** | UINT | Index of the desired output (1 … 5) |
 
 ### **Data Outputs**
@@ -36,19 +30,12 @@ No data outputs are available. Output is exclusively via the adapter interfaces.
 ### **Adapters**
 
 | Direction | Adapter | Type | Description |
-
 |----------|-------------|--------------------------------------|-------------------------------------------------------|
-
 | Socket | **IN** | adapter::types::unidirectional::AIS | Input AIS signal, which is distributed to the outputs |
-
 | Plug | **OUT1** | adapter::types::unidirectional::AIS | First AIS output |
-
 | Plug | **OUT2** | adapter::types::unidirectional::AIS | Second AIS output |
-
 | Plug | **OUT3** | adapter::types::unidirectional::AIS | Third AIS output |
-
 | Plug | **OUT4** | adapter::types::unidirectional::AIS | Fourth AIS output |
-
 | Plug | **OUT5** | adapter::types::unidirectional::AIS | Fifth AIS output |
 
 ## Functionality
@@ -91,13 +78,9 @@ Bei ungültigem K: sofort CNF, kein Schreiben
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |--------------------|--------------|
-
 **AIS_DEMUX_5** | Demultiplexer for 5-output AIS adapters |
-
 **AIS_SELECT** | Multiplexer (selection of one of several inputs) |
-
 **GEN_DEMUX** (generic) | General demultiplexer for simple data types (e.g., INT, REAL) – without an adapter |
 
 Unlike a simple data demultiplexer, `AIS_DEMUX_5` operates at a more abstract adapter level and encapsulates all signal transmission (including consistency checks) within the adapter protocol.

@@ -42,25 +42,15 @@ These adapters are tested under both Windows 10 and Ubuntu 22.04 LTS to evaluate
 * Works under Ubuntu 22.04 LTS without driver installation
 
 | Type | Link | Windows 10 | Ubuntu 22.04 LTS | CCI.OS-2.0.3 | CCI.OS-3.3.0 |
-
 | --- | --- | --- | --- | --- | --- |
-
 Hama N150 Nano Wi-Fi USB Stick, 2.4 GHz | [link](https://www.amazon.de/gp/product/B004CJ7JC2) | not tested | not tested | not tested | not tested |
-
 Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [link](https://amzn.eu/d/5MxkOMx) | works | works | not working | works |
-
 | Edimax EW-7811UN Super Mini Wi-Fi USB Stick (150 Mbps), Version 1 | [link](https://www.amazon.de/gp/product/B003MTTJOY) | works | works | works | works |
-
 | Cudy WU650S AC 650 Mbps Wireless USB Wi-Fi Stick | [link](https://amzn.eu/d/hnTHa3d) | works | not working | not working | not working |
-
 | ALL-WA1200AC | EOL | works | works | not working | not working |
-
 | ALL-WA0300AC | EOL | works | not working | not working | not working |
-
 | ALL-WA0150N (MTK7601) | EOL | works | works | not working | not working |
-
 | ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0100N-RTL8188EU/119387) | works | works | not tested | not tested |
-
 | ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0150N-MTK7601/111798) | works | works | not tested | not tested |
 
 *EOL = End of Life, product no longer available.

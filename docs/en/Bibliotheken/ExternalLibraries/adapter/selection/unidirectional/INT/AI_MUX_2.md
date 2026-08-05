@@ -9,25 +9,19 @@ The function block **AI_MUX_2** is a generic analog input multiplexer. It select
 ### **Event Inputs**
 
 | Name | Type | Comment | With Data |
-
 |------|-------|-----------------------------------|-----------|
-
 | REQ | Event | Request to select index K | K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------------------|
-
 | CNF | Event | Confirmation of executed index selection |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-------------------|
-
 | K | UINT | Index (0 or 1) |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Direction | Name | Comment | Adapter Type |
-
 |-------|----------|------|----------------------------------------------------|-----------------------------------------------------|
-
 | Plug | Output | OUT | Output signal, dependent on K: IN1 when K=0, IN2 when K=1 | adapter::types::unidirectional::AI |
-
 | Socket| Input | IN1 | First analog input (K=0) | adapter::types::unidirectional::AI |
-
 Socket | Input | IN2 | Second analog input (K=1) | adapter::types::unidirectional::AI |
 
 The adapters used are unidirectional (transmitter/receiver) and specific for analog input signals (type `adapter::types::unidirectional::AI`).
@@ -88,11 +78,8 @@ There are no internal variables that store a state.
 
 | Function Block | Features |
 |----------|----------|
-
 **AI_MUX_2** | Multiplexer for two analog inputs, adapter-based, generic. |
-
 **DEMUX_AI** | Distributes one analog signal to multiple outputs (demultiplexer). |
-
 **SEL** (Standard IEC 61499) | Selection between multiple data inputs via an index, usually for basic data types and without an adapter. |
 
 The **AI_MUX_2** is specifically designed for analog (AI) signals via adapters and is therefore easier to integrate into complex automation systems that rely on adapter communication than a standardized SEL module.

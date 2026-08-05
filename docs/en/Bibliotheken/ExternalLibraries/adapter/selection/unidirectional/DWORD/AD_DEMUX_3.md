@@ -8,25 +8,19 @@ The AD_DEMUX_3 is a generic demultiplexer function block that redirects an input
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Set Index K (with data output K) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | K | UINT | Index for selecting the output (valid values 0, 1, 2) |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No data outputs available.
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-
 |-------------|------|--------------------------------------|-----------|
-
 | Socket (IN) | IN | adapter::types::unidirectional::AD | Input value to be demultiplexed |
-
 | Plug (OUT1) | OUT1 | adapter::types::unidirectional::AD | First Output |
-
 | Plug (OUT2) | OUT2 | adapter::types::unidirectional::AD | Second Output |
-
 | Plug (OUT3) | OUT3 | adapter::types::unidirectional::AD | Third Output |
 
 ## Functionality

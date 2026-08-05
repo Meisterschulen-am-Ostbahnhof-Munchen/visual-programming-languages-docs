@@ -20,15 +20,10 @@ No direct data outputs available. The result is provided via the adapter output.
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket (Input) | ADD input 1 |
-
 | IN2 | `adapter::types::unidirectional::AUDI` | Socket (Input) | ADD input 2 |
-
 | IN3 | `adapter::types::unidirectional::AUDI` | Socket (Input) | ADD input 3 |
-
 | OUT | `adapter::types::unidirectional::AUDI` | Plug (Output) | ADD result |
 
 ## Functionality

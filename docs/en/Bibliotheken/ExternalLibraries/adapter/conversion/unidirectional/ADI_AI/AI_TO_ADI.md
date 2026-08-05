@@ -33,11 +33,8 @@ The function block (FB) does not have its own data outputs. The data is output v
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |---------|----------|-----------------------------|--------------------------------------|
-
 | AI_IN | Socket | adapter::types::unidirectional::AI | Input adapter for integer values (INT) |
-
 | ADI_OUT | Plug | adapter::types::unidirectional::ADI | Output adapter for double integer values (DINT) |
 
 ## Functionality
@@ -62,13 +59,9 @@ The AI_TO_ADI has no internal state machine (ECC). It behaves passively and imme
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type Conversion | Interface | Use Case |
-
 |-----------------|------------------|-------------------------------------|------------------------------------|
-
 AI_TO_ADI | INT -> DINT | Adapter (Socket/Plug) | Bridge between adapter-based components |
-
 INT_TO_DINT | INT -> DINT | Direct inputs/outputs (e.g., DI1, DO1) | Simple data conversion without adapters |
-
 CONV_ANY_TO_ANY | Generic | Flexible inputs/outputs | Universal conversion (often more complex) |
 
 While function blocks like `INT_TO_DINT` offer direct data conversion with their own inputs and outputs, AI_TO_ADI seamlessly integrates the conversion into an adapter-based architecture, thus facilitating the reuse of existing adapter definitions.

@@ -9,33 +9,25 @@ The **GET_DATE_AND_TIME** function block is used to read a value of type `DATE_A
 ### **Event Inputs**
 
 | Event | With | Description |
-
 |----------|-----|--------------|
-
 | REQ | IN | Normal execution request; triggers the reading of the source data. |
 
 ### **Event Outputs**
 
 | Event | With | Description |
-
 |----------|------------------|--------------|
-
 | CNF | OUT, IN | Confirmation of execution; signals that the output has been updated. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|---------------|--------------|
-
 | IN | DATE_AND_TIME | InOut variable as the data source. It is read but not modified. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|---------------|--------------|
-
 | OUT | DATE_AND_TIME | Buffered output value that is taken from the InOut source on every REQ. |
 
 ### **Adapter**
@@ -58,9 +50,7 @@ The event `CNF` is then sent. The value of the InOut variable `IN` is not modifi
 ## State Overview
 
 | State | Action | Output Event |
-
 |---------|--------|-----------------|
-
 | REQ | `OUT := IN;` | CNF |
 
 There is no initial state or other states; the function block waits for the `REQ` event and immediately executes the algorithm.

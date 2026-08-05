@@ -8,43 +8,32 @@ The **ALI_TO_AI** function block is a composite function block (FB) that convert
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |----------|----------|-----------------------------------------------------|
-
 | ALI_IN | Event | Control signal of the ALI adapter, triggers the conversion |
 
 ### **Event Outputs**
 
 | Name | Data Type | Description |
-
 |----------|----------|-------------------------------------------------------|
-
 | AI_OUT | Event | Confirmation signal from the AI adapter after successful conversion |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |----------|----------|------------------------------------|
-
 | ALI_IN.D1| LINT | The LINT value to be converted |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |----------|----------|------------------------------------|
-
 | AI_OUT.D1| INT | The converted INT value |
 
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|---------|--------------|---------------------------------------------|
-
 | Socket | ALI_IN | ALI (unidirectional) | Returns LINT values and control events |
-
 | Plug | AI_OUT | AI (unidirectional) | Outputs converted INT values and events |
 
 ## Functionality
@@ -78,13 +67,9 @@ As a composite function block without its own state diagram, **ALI_TO_AI** does 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-
 |-----------------|------------------------------------------|------------------------------------------------------------------|
-
 | ALI_TO_AI | LINT → INT via adapter | Specifically for unidirectional ALI/AI interfaces |
-
 | LINT_TO_INT | Direct conversion LINT → INT | No adapter integration – pure data conversion |
-
 | AI_TO_ALI | INT → LINT (reverse direction) | Same structure, but opposite data direction |
 
 ## Conclusion

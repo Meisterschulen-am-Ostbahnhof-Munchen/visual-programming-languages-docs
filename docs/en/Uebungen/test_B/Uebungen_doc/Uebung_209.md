@@ -9,18 +9,12 @@ This exercise teaches the use of special interlock blocks, which are used in con
 ## Function Blocks Used (FBs)
 
 | Block Name | Type | Parameters / Connections |
-
 |--------------|-----|------------------------|
-
 | `DigitalInput_S1` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I1` (Power-On Signal 1) |
-
 | `DigitalInput_R1` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I2` (Reset Signal 1) |
 | `DigitalInput_S2` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I3` (Power-on signal 2) |
-
 | `DigitalInput_R2` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I4` (Reset signal 2) |
-
 | `ILOCK_RS_1` | `logiBUS::signalprocessing::interlock::ILOCK_FB_RS` | – |
-
 | `ILOCK_RS_2` | `logiBUS::signalprocessing::interlock::ILOCK_FB_RS` | – |
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI` = TRUE, `Output` = `Output_Q1` (Lamp/Signal 1) |
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QX` | `QI` = TRUE, `Output` = `Output_Q2` (Lamp/Signal 2) |
@@ -54,33 +48,19 @@ The adapter output `ILOCK_RS_1.ILOCK_OUT` is connected to the adapter input `ILO
 **Connection Overview:**
 
 | Source | Destination | Type |
-
 |--------|------|-----|
-
 | `DigitalInput_S1.IND` | `ILOCK_RS_1.REQ` | Event |
-
 | `DigitalInput_R1.IND` | `ILOCK_RS_1.REQ` | Event |
-
 | `DigitalInput_S2.IND` | `ILOCK_RS_2.REQ` | Event |
-
 | `DigitalInput_R2.IND` | `ILOCK_RS_2.REQ` | Event |
-
 | `ILOCK_RS_1.CNF` | `DigitalOutput_Q1.REQ` | Event |
-
 | `ILOCK_RS_2.CNF` | `DigitalOutput_Q2.REQ` | Event |
-
 | `DigitalInput_S1.IN` | `ILOCK_RS_1.S` | Data |
-
 | `DigitalInput_R1.IN` | `ILOCK_RS_1.R1` | Data |
-
 | `DigitalInput_S2.IN` | `ILOCK_RS_2.S` | Data |
-
 | `DigitalInput_R2.IN` | `ILOCK_RS_2.R1` | Data |
-
 | `ILOCK_RS_1.Q1` | `DigitalOutput_Q1.OUT` | Data |
-
 | `ILOCK_RS_2.Q1` | `DigitalOutput_Q2.OUT` | Data |
-
 | `ILOCK_RS_1.ILOCK_OUT` | `ILOCK_RS_2.ILOCK_IN` | **Adapter** (Interlock) |
 
 ## Summary

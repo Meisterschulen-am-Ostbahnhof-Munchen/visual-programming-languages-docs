@@ -11,9 +11,7 @@ The function block `ADI_TO_AB` serves as a composite module for converting a 32-
 The module does not have direct event inputs. Event reception is handled via the **ADI_IN socket adapter**:
 
 | Adapter Port | Type | Description |
-
 |--------------|------------|----------------------------------------|
-
 | ADI_IN.E1 | Event | Starts the conversion at the input. |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ The module does not have direct event inputs. Event reception is handled via the
 Event output is also handled exclusively via the **AB_OUT plug adapter**:
 
 | Adapter Port | Type | Description |
-
 |--------------|------------|--------------------------------------|
-
 | AB_OUT.E1 | Event | Signals that the value has been converted and is ready at the output. |
 
 ### **Data Inputs**
@@ -31,9 +27,7 @@ Event output is also handled exclusively via the **AB_OUT plug adapter**:
 The data is provided via the ADI_IN adapter:
 
 | Adapter Port | Type | Description |
-
 |--------------|------|----------------------------------|
-
 | ADI_IN.D1 | DINT | 32-bit integer input value. |
 
 ### **Data Outputs**
@@ -41,18 +35,14 @@ The data is provided via the ADI_IN adapter:
 The converted data is output via the AB_OUT adapter:
 
 | Adapter Port | Type | Description |
-
 |--------------|------|-------------------------------|
-
 | AB_OUT.D1 | BYTE | 8-bit byte output value. |
 
 ### **Adapters**
 
 | Name | Direction | Adapter Type | Description |
 |---------|----------|------------------------------------------|--------------------------------|
-
 | ADI_IN | Socket | `adapter::types::unidirectional::ADI` | DINT adapter as input. |
-
 | AB_OUT | Plug | `adapter::types::unidirectional::AB` | BYTE adapter as output. |
 
 ## Functionality

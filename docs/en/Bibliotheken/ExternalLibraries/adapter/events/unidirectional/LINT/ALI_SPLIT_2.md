@@ -26,13 +26,9 @@ No dedicated data outputs. The distributed data is provided via the two outgoing
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | **Socket** | `IN` | Input | Unidirectional ALI adapter that receives incoming data/events. |
-
 | **Plug** | `OUT1` | Output | First unidirectional ALI adapter to which the data/events are forwarded. |
-
 | **Plug** | `OUT2` | Output | Second unidirectional ALI adapter to which the data/events are forwarded. |
 
 All adapters are of type `adapter::types::unidirectional::ALI`.
@@ -58,15 +54,10 @@ Since the module has no event inputs/outputs or internal states, there is no sta
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-
 |----------|----------|-------------|
-
 | **ALI_SPLIT_2** | Distributes one ALI input to two ALI outputs. | – |
-
 | **ALI_SPLIT_3** (hypothetical) | Distributes to three outputs. | Higher number of outputs. |
-
 | **ALI_MERGE_2** | Combines two ALI inputs into one ALI output. | Opposite function (Join). |
-
 | **ALI_FILTER** | Passes on only specific data/events. | Contains filter logic. |
 
 ## Conclusion

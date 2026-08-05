@@ -8,36 +8,27 @@ The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Normal execution request – triggers the processing of the input signals. |
 
 #### **Event Outputs**
 
 | Event | Comment |
 |----------|-----------|
-
 | `CNF` | Confirms execution after the output `Q1` has been calculated. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------|
-
 | `S` | BOOL | Set – sets the output `Q1` to `TRUE`, provided `R1` is not active at the same time. |
-
 | `R1` | BOOL | Reset (dominant) – sets the output `Q1` to `FALSE` and takes precedence over `S` and Toggle. |
-
 | `CLK` | BOOL | Clock – clock generator for the Toggle function; on a rising edge, `Q1` is inverted if neither Reset nor Set is active. |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------|
-
 | `Q1` | BOOL | Latch output – displays the current stored state. |
 
 ### **Adapters**
@@ -74,15 +65,10 @@ EDGE := CLK;
 The function block does not have an explicit state machine; the state is implicitly represented by the internal variables `Q1` and `EDGE`. A state table summarizes the behavior:
 
 | Current `Q1` | `R1` | `S` | `CLK` (rising edge) | New `Q1` |
-
 ----------------|------|-----|---------------------------|-------------|
-
 x | TRUE | x | x | FALSE |
-
 x | FALSE| TRUE| x | TRUE |
-
 x | FALSE| FALSE| TRUE (and previously FALSE) | NOT Q1 |
-
 x | FALSE| FALSE| FALSE or no edge | unchanged |
 
 ## Application Scenarios

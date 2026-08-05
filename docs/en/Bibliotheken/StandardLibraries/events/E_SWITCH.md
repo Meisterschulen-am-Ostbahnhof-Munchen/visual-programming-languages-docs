@@ -47,13 +47,9 @@ The event at input `EI` is always routed to exactly one of the two outputs, depe
 ## ⚖️ Comparison with Similar Blocks
 
 | Feature | E_SWITCH | E_SELECT | E_DEMUX |
-
 |---------------|----------|----------|----------|
-
 | Selection Criterion | Boolean (`G`) | Boolean (`G`) | Index (`K`) |
-
 | Direction | 1:2 (Demultiplexer) | 2:1 (Multiplexer) | 1:n (Demultiplexer) |
-
 | State Model | BasicFB | BasicFB | BasicFB/Generic |
 
 ## 🛠️ Related exercises

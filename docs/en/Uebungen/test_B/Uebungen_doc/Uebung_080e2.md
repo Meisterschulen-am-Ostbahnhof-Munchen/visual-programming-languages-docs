@@ -9,27 +9,16 @@ This exercise demonstrates the use of an up counter (E_CTU) in combination with 
 This exercise uses the following predefined function blocks in the network:
 
 | Block Name | Type | Parameters | Short Description |
-
 |--------------|-----|-----------|------------------|
-
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` | Generates an event (`IND`) when a button is pressed on input I1. |
-
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` | Generates an event (`IND`) upon a single key press on input I2. |
-
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` | Cyclic event generator; generates an event (`EO`) every 1 ms after starting, until stopped. |
-
 | `E_CTU` | `iec61499::events::E_CTU` | `PV = UINT#5` | Up counter: Increments with each event at `CU`; outputs the current count (`CV`) and an overflow signal (`Q`). Reset via `R`. |
-
 | `E_SPLIT_4` | `iec61499::events::E_SPLIT_4` | – | Distributes an incoming event to four parallel outputs (`EO1` … `EO4`). |
-
 | `E_MERGE_4` | `iec61499::events::E_MERGE_4` | – | Combines up to four input events (`EI1` … `EI4`) into a single output event (`EO`). |
-
 | `E_D_FF_ANY` | `iec61499::events::E_D_FF_ANY_TMIN` | `Tmin = T#1s` | D flip-flop with minimum dwell time: Receives the data input `D` upon an event at `CLK`, outputs the state at `Q`, but only if the event persists for at least `Tmin`. |
-
 | `E_D_FF` | `iec61499::events::E_D_FF` | – | Standard D flip-flop: Receives the data input `D` upon an event at `CLK` and outputs the state at `Q`. |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Sets the digital output Q1 to the value of the input `OUT`. |
-
 | `Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = OutputNumber_N1` | Outputs a numeric value (32-bit integer) to a visualization component (here: `OutputNumber_N1`). |
 
 ## Program Flow and Connections

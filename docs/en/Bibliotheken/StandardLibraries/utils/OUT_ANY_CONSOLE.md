@@ -19,21 +19,15 @@ The block supports outputting any data type for development and diagnostic purpo
 ### **Data Inputs**
 
 | Parameter | Type | Description |
-
 |-----------|-----|--------------|
-
 | `QI` | BOOL | Enables output when TRUE |
-
 | `LABEL` | STRING | Optional description text |
-
 | `IN` | ANY | Any value to be output |
 
 ### **Data Outputs**
 
 | Parameter | Type | Description |
-
 |-----------|-----|--------------|
-
 | `QO` | BOOL | Confirms successful output |
 
 ## Functionality
@@ -69,27 +63,18 @@ The block supports outputting any data type for development and diagnostic purpo
 ## Example outputs
 
 | LABEL | IN (value) | Console output |
-
 |-------|----------|-----------------|
-
 | "Temperature" | 23.5 | "Temperature: 23.5" |
-
 | "Status" | TRUE | "Status: TRUE" |
-
 | "" | 42 | "42" |
 
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | OUT_ANY_CONSOLE | Standard debugging | Extended logging |
-
 |---------|-----------------|----------------|---------------------|
-
 | Data types | Any | Limited | Limited |
-
 | Labeling | Optional | No | Yes |
-
 | Integration | 4diac-specific | System-dependent | Framework-dependent |
-
 | Real-time capable | Yes | Partially | No |
 
 ## Conclusion

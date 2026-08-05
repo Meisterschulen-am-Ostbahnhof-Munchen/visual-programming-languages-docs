@@ -11,11 +11,8 @@ The structure itself has no inputs in the conventional sense, as it is a data ty
 The structure itself has no outputs. It defines the following internal data fields:
 
 | Name | Data Type | Initial Value | Comment |
-
 | :--- | :--- | :--- | :--- |
-
 | `Picture` | `UINT` | `ID_NULL` | u16ObjId for the image to be displayed. |
-
 | `u8Colour` | `USINT` | `COLOR_WHITE` | Background color of the AUX element. |
 
 ## Functionality

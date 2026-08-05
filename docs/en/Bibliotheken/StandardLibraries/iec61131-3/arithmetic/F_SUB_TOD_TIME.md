@@ -63,13 +63,9 @@ The **F_SUB_TOD_TIME** function block is a standards-compliant function block fo
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_SUB_TOD_TIME | F_ADD_TOD_TIME | F_SUB_DT_TIME |
-
 |---------------|----------------|----------------|---------------|
-
 | Operation | Time of Day - Interval | Time of Day + Interval | Timestamp - Interval |
-
 | Result | TIME_OF_DAY | TIME_OF_DAY | DATE_AND_TIME |
-
 | Overflow | 24-hour Circular | 24-hour Circular | Calendar-based |
 
 ## Conclusion

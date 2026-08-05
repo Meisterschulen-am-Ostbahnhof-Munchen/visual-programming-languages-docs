@@ -8,25 +8,19 @@ The AW_MUX_5 is a generic multiplexer function block that, based on an integer i
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the switching (connected to K) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirms successful switching to the selected input |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Selection Index (Value range 0–4) |
 
 ### **Data Outputs**
@@ -42,17 +36,11 @@ Returns the value of the input selected by K.
 **Sockets (Inputs):**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN1 | AW | Input value for K = 0 |
-
 IN2 | AW | Input value for K = 1 |
-
 IN3 | AW | Input value for K = 2 |
-
 IN4 | AW | Input value for K = 3 |
-
 IN5 | AW | Input value for K = 4 |
 
 ## Functionality
@@ -78,13 +66,9 @@ If the index is outside the valid range (e.g., K > 4), the output remains unchan
 The FB does not have explicit states in its XML definition. The implicit behavior can be described as follows:
 
 | State | Description |
-
 |---------|--------------|
-
 IDLE | Waiting for a REQ event |
-
 SELECT | Evaluate K and switch the corresponding input |
-
 DONE | Send CNF, return to IDLE |
 
 These states are purely internal and not directly controllable by the user.

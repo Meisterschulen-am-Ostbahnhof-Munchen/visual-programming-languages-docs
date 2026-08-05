@@ -11,17 +11,11 @@ This element is a collection of global constants and does not have event- or dat
 The file defines the following constants of type `USINT` (Unsigned Short Integer):
 
 | Name | Type | Initial Value | Comment |
-
 | :------ | :---- | :---------- | :--------------- |
-
 | `NODE1` | USINT | 0 | Identifier for CAN 1 |
-
 | `NODE2` | USINT | 1 | Identifier for CAN 2 |
-
 | `NODE3` | USINT | 2 | Identifier for CAN 3 |
-
 | `NODE4` | USINT | 3 | Identifier for CAN 4 |
-
 | `INVALID` | USINT | USINT#16#FF | Identifier for an invalid or unconfigured CAN node (decimal: 255) |
 
 ## Functionality

@@ -8,43 +8,30 @@ The function block **FIELDBUS_WORD_TO_SIGNAL_SCALED** is used to convert a digit
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|-------------|
-
 | `INIT` | Initialization request; sets the scaling factors (`SCALE`, `OFFSET`). |
-
 | `REQ` | Normal processing request; evaluates the current input `IN`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `INITO` | Initialization confirmation. |
-
 | `CNF` | Processing confirmation; signals that outputs `OUT` and `VALID` have been updated. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Default Value | Description |
-
 |---------|----------|-----------------|-------------|
-
 | `IN` | WORD | `NOT_AVAILABLE_WM` | Raw value from the fieldbus (e.g., 0…65535). The constant `NOT_AVAILABLE_WM` indicates an invalid starting value. |
-
 | `SCALE` | REAL | `1.0` | Scaling factor (multiplied by the read value). |
-
 | `OFFSET` | DINT | `0` | Integer offset added after scaling (converted to REAL). |
 
 ### **Data Outputs**
 
 | Name | Data Type | Default Value | Description |
-
 |---------|----------|-------------|-------------|
-
 | `OUT` | REAL | `0.0` | Scaled signal value. Valid only if `VALID = TRUE`. |
-
 | `VALID` | BOOL | `FALSE` | Validation flag – `TRUE`, if the incoming raw value is recognized as a valid signal. |
 
 ### **Adapter**
@@ -88,11 +75,8 @@ The comparison value `VALID_SIGNAL_W` and the default input value `NOT_AVAILABLE
 ## State Overview
 
 | State | Content | Action | Output Event |
-
 |---------|--------|--------|-----------------|
-
 | `INIT` | Initialization (empty algorithm) | – | `INITO` |
-
 | `REQ` | Signal Processing | Calculation of `OUT` and `VALID` | `CNF` |
 
 The function block (FB) has no further states; after each event, it returns to the corresponding start state. There is no explicit error handling or timeouts.
@@ -105,13 +89,9 @@ The function block (FB) has no further states; after each event, it returns to t
 ## Comparison with Similar Function Blocks
 
 | Function Block | Differences |
-
 |----------|-------------|
-
 | **FIELDBUS_WORD_TO_SIGNAL** (without scaling) | Maps the raw value 1:1, without multiplication/addition. |
-
 | **WORD_TO_REAL** (standard IEC function block) | Pure type conversion without validation or scaling. |
-
 | **SCALING_FB** | Usually with separate validation and scaling branches; this function block combines both in one step. |
 
 The strength of `FIELDBUS_WORD_TO_SIGNAL_SCALED` lies in the **combination of validation, scaling, and offset** in a single, manageable function block.

@@ -8,25 +8,19 @@ The function block `AUI_MUX_3` is a generic multiplexer for the AUI data type (u
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` (Event) | Sets the index `K` and starts the selection of the corresponding input. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` (Event) | Confirms the successful transmission of the selected adapter to `OUT`. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index that determines the active input (0 = IN1, 1 = IN2, 2 = IN3). |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No direct data outputs are available. Output is provided via the adapter output 
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (Output) | `OUT` | `adapter::types::unidirectional::AUI` | Output that forwards the selected input. |
-
 | Socket (Input 1) | `IN1` | `adapter::types::unidirectional::AUI` | First input value (for K = 0). |
-
 | Socket (Input 2) | `IN2` | `adapter::types::unidirectional::AUI` | Second input value (for K = 1). |
-
 Socket (Input 3) | `IN3` | `adapter::types::unidirectional::AUI` | Third input value (for K = 2). |
 
 ## Functionality

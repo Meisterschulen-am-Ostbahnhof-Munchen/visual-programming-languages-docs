@@ -27,17 +27,11 @@ None.
 The function block communicates exclusively via adapters of type `adapter::types::unidirectional::AUS`. This is a unidirectional adapter that transmits a Boolean signal (OFF command).
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket (Input)** | `IN` | `adapter::types::unidirectional::AUS` | Receives the original OFF signal. |
-
 | **Plug (Output)** | `OUT1` | `adapter::types::unidirectional::AUS` | First outgoing OFF path. |
-
 | **Plug (Output)** | `OUT2` | `adapter::types::unidirectional::AUS` | Second outgoing OFF path. |
-
 | **Plug (Output)** | `OUT3` | `adapter::types::unidirectional::AUS` | Third outgoing OFF path. |
-
 | **Plug (Output)** | `OUT4` | `adapter::types::unidirectional::AUS` | Fourth outgoing OFF path. |
 
 ## Functionality
@@ -66,15 +60,10 @@ The module does not have a state machine. The output signals follow the input si
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Special Feature |
-
 |----------|----------|--------------|
-
 | `AUS_SPLIT_2` | Distributes an OFF signal to two outputs | Fewer ports, more compact. |
-
 | `AUS_SPLIT_4` | Distributes to four outputs | This function block. |
-
 | `AUS_SPLIT_N` | Configurable splitter (e.g., via generic adapter lists) | More flexible number, but more complex to configure. |
-
 | `AUS_MERGE` | Combines multiple OFF inputs into one output | Counterpart to the splitter. |
 
 The `AUS_SPLIT_4` sits between a simple 2-way splitter and a fully configurable splitter. It is ideal when exactly four outputs are needed – without any additional configuration.

@@ -54,31 +54,20 @@ The **Q_ListItem** is a standards-compliant function module for managing list en
 ## Index Reference
 
 | Index | Description |
-
 |-------|----------------------------|
-
 | 0 | First list entry |
-
 | ... | |
-
 | 255 | Maximum index (uint8_t) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful change |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 | -21 | VT_E_NO_INSTANCE | No VT client available |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -90,15 +79,10 @@ The **Q_ListItem** is a standards-compliant function module for managing list en
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_ListItem | VtListManager | VtDynamicMenu |
-
 |---------------|-------------|---------------|---------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Real-Time Change | ✔ | ✔ | ✖ |
-
 | Empty Entries | ✔ | ✖ | ✔ |
-
 | Index Return | ✔ | ✖ | ✖ |
 
 ## Conclusion

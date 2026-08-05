@@ -25,11 +25,8 @@ No standalone data outputs. The converted BYTE value is output via the AB_OUT ad
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | `AI_IN` | `adapter::types::unidirectional::AI` | Provides the INT input value (D1) and the triggering event (E1). |
-
 | Plug (Output) | `AB_OUT` | `adapter::types::unidirectional::AB` | Outputs the converted BYTE value (D1) and the associated event (E1). |
 
 ## Functionality

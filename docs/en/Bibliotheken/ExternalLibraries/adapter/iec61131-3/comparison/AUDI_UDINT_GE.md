@@ -9,9 +9,7 @@ The function block **AUDI_UDINT_GE** performs a greater-than-or-equal-to (≥) c
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------|
-
 | REQ | Event | Service Request |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ No direct event outputs. The result is signaled as an event via the output adapt
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|--------|------------------|
-
 | IN2 | UDINT | Input value 2 |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ No direct data outputs. The result value (BOOL) is provided via the output adapt
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|---------------|----------------|----------------------------------|
-
 | IN1 | AUDI (Socket) | Input | Input value 1 (via D1 and E1) |
-
 | OUT | AX (Plug) | Output | Result: Value 1 ≥ Value 2 (D1), Event (E1) |
 
 ## Functionality

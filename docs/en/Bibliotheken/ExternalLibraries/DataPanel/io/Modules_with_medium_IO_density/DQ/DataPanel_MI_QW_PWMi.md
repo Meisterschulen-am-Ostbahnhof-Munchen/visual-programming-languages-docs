@@ -32,7 +32,6 @@ Output service interface function block for Current Controlled PWM output data (
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | QO | BOOL | Event Output Qualifier |
-
 STATUS | STRING | Service Status |
 
 ---

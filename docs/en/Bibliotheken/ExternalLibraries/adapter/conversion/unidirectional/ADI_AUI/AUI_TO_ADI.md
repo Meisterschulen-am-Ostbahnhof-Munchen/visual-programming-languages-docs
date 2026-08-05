@@ -20,11 +20,8 @@ None. Data output is handled via the ADI adapter.
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | AUI_IN | Socket (Input) | `adapter::types::unidirectional::AUI` | UINT adapter for receiving input data and events. |
-
 | ADI_OUT | Plug (Output) | `adapter::types::unidirectional::ADI` | DINT adapter for sending the converted data and events. |
 
 ## Functionality

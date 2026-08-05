@@ -27,11 +27,8 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|------|-------------|
-
 **Sockets** (Inputs) | QUARTER_BYTE_00 … QUARTER_BYTE_15 | `adapter::types::unidirectional::AQ` | 16 identical adapters, each providing an 8-bit data value (quarter/byte) and a corresponding event (`E1`). |
-
 **Plug** (Output) | OUT | `adapter::types::unidirectional::AD` | Output adapter providing the DWORD (`D1`) composed of the 16 quarter values and an event (`E1`). |
 
 ## Functionality
@@ -69,13 +66,9 @@ In the idle state (no event at a quarter socket), the output value of the `OUT` 
 ## Comparison with Similar Components
 
 | Component | Number of Inputs | Output | Synchronization | Properties |
-
 |----------|-----------------|---------|----------------|--------------|
-
 | `ASSEMBLE_AD_FROM_AQ` | 16 (AQ adapter) | 1 (AD adapter) | Yes (flip-flop) | For event-driven byte collection. |
-
 | `ASSEMBLE_DWORD_FROM_QUARTERS` (internal) | 16 data inputs (no adapters) | 1 DWORD output | No | Pure data assembly without event synchronization. |
-
 | Simple `MERGE` component (fictional) | 2 … n data inputs | 1 Data Output | Often no | Data concatenation only, no adapter structure. |
 
 This component is characterized by the encapsulation of the adapter interfaces and integrated synchronization, making it particularly suitable for heterogeneous, event-driven environments.

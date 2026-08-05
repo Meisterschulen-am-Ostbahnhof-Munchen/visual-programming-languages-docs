@@ -13,25 +13,19 @@ It forwards an AE value received at the adapter input `IN` to one of three adapt
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Takes over the index `K` and forwards the adapter input to one of the three outputs |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `CNF` | Acknowledges the completed forwarding |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------|
-
 | `K` | UINT | Index of the selected output (valid values: 1, 2, or 3) |
 
 ### **Data Outputs**
@@ -41,15 +35,10 @@ It forwards an AE value received at the adapter input `IN` to one of three adapt
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|--------------------------------------|--------------|
-
 | `IN` | Socket | `adapter::types::unidirectional::AE` | Input AE Signal |
-
 | `OUT1` | Plug | `adapter::types::unidirectional::AE` | First Output |
-
 | `OUT2` | Plug | `adapter::types::unidirectional::AE` | Second Output |
-
 | `OUT3` | Plug | `adapter::types::unidirectional::AE` | Third Output |
 
 ## Functionality

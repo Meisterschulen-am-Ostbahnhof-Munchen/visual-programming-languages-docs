@@ -27,15 +27,10 @@ This function block does not use any adapters.
 Whenever a `REQ` event occurs, the function block reads the current values at the four Boolean data inputs. It then calculates the logical AND of these four values according to the following truth table:
 
 | IN1 | IN2 | IN3 | IN4 | OUT |
-
 |:---:|:---:|:---:|:---:|:---:|
-
 | 0 | 0 | 0 | 0 | 0 |
-
 | 0 | 0 | 0 | 1 | 0 |
-
 | ... | ... | ... | ... | ... |
-
 | 1 | 1 | 1 | 1 | 1 |
 
 The result is set at the data output `OUT`, and simultaneously the `CNF` event is triggered to signal the completion of the operation.

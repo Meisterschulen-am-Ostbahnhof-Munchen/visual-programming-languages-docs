@@ -46,13 +46,9 @@ If the device is already in one of the active states (SET or RESET), it can be s
 ## State Overview
 
 | State | Meaning | Action on Entry | Trigger for Transitions |
-
 | |---------|-----------|----------------------|---------------------------|
-
 | **START** | Initial state | None (Waiting for first event) | S → SET, R → RESET |
-
 | **SET** | Output \( Q \) is `TRUE` | Execute algorithm SET (\( Q := \text{TRUE} \)), send EO | R → RESET |
-
 | **RESET** | Output \( Q \) is `FALSE` | Execute algorithm RESET (\( Q := \text{FALSE} \)), send EO | S → SET |
 
 Transitions:

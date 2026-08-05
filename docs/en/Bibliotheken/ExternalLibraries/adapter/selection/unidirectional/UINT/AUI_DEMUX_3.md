@@ -8,25 +8,19 @@ The AUI\_DEMUX\_3 function block implements a generic demultiplexer for the AUI 
 ### **Event Inputs**
 
 | Event | Data Type | Description |
-
 | :--- | :--- | :--- |
-
 | REQ | Event | Sets the active output channel K. Triggered by the incoming index signal. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Description |
-
 | :--- | :--- | :--- |
-
 | CNF | Event | Confirmed that index K has been adopted and the multiplex has been switched. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 | :--- | :--- | :--- |
-
 | K | UINT | Index of the desired output channel (value range: 0…2, corresponds to OUT1…OUT3). |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ _No direct data outputs are available. Output is exclusively via the adapter plu
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | Socket | IN | `adapter::types::unidirectional::AUI` | Input interface – receives the data stream to be multiplexed. |
-
 | Plug | OUT1 | `adapter::types::unidirectional::AUI` | First output channel. |
-
 | Plug | OUT2 | `adapter::types::unidirectional::AUI` | Second output channel. |
-
 | Plug | OUT3 | `adapter::types::unidirectional::AUI` | Third output channel. |
 
 ## Functionality

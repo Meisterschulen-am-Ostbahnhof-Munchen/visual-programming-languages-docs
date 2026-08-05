@@ -25,15 +25,10 @@ No direct data outputs. The result is provided via an adapter output.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |-----------|------|--------------------------------------|-----------------|
-
 | Sockets | IN1 | `adapter::types::unidirectional::AR` | ADD input 1 |
-
 | Sockets | IN2 | `adapter::types::unidirectional::AR` | ADD input 2 |
-
 | Sockets | IN3 | `adapter::types::unidirectional::AR` | ADD input 3 |
-
 | Plugs | OUT | `adapter::types::unidirectional::AR` | ADD result |
 
 ## Functionality

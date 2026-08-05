@@ -8,25 +8,19 @@ The function block `AUDI_D_FF_HYS` implements a data-triggered flip-flop (D-latc
 ### **Event Inputs**
 
 | Event | Type | Comment | With Variable |
-
 |----------|-------|-----------------|--------------|
-
 | `INIT` | EInit | Set Hysteresis | `HYSTERESIS` |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-------|--------------------|
-
 | `INITO` | EInit | Init Confirmation |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |---------------|-------|------------------|
-
 | `HYSTERESIS` | UDINT | Hysteresis band |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ No direct data outputs – output data is provided via the `Q` adapter.
 ### **Adapters**
 
 | Role | Name | Type (Adapter) | Comment |
-
 |---------|------|-----------------------------|--------------------|
-
 | Plug | `Q` | `adapter::types::unidirectional::AUDI` | Latched value |
-
 | Socket | `I` | `adapter::types::unidirectional::AUDI` | Value to latch |
 
 The adapter `AUDI` contains one event channel and one data channel:

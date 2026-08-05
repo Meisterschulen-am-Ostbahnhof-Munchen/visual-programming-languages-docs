@@ -9,25 +9,19 @@ The function block **AL_DEMUX_4** implements a generic demultiplexer for the ada
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | REQ | Sets the index K and forwards the input signal to the corresponding output. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | CNF | Confirms successful signal forwarding. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|------|-----------|
-
 | K | UINT | Index of the target output (value range 1 to 4). |
 
 ### **Data Outputs**
@@ -39,23 +33,16 @@ This function block does not have any standalone data outputs. Output is exclusi
 **Input Adapter (Socket):**
 
 | Adapter | Type | Comment |
-
 |---------|--------------------------------------------------------|--------------------------------|
-
 | IN | `adapter::types::unidirectional::AL` | Input signal to be demultiplexed. |
 
 **Output Adapters (Plugs):**
 
 | Adapter | Type | Comment |
-
 |---------|--------------------------------------------------------|-------------------------------|
-
 | OUT1 | `adapter::types::unidirectional::AL` | First output (Index 1). |
-
 | OUT2 | `adapter::types::unidirectional::AL` | Second output (Index 2). |
-
 | OUT3 | `adapter::types::unidirectional::AL` | Third output (Index 3). |
-
 | OUT4 | `adapter::types::unidirectional::AL` | Fourth output (Index 4). |
 
 ## Functionality

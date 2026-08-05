@@ -8,25 +8,19 @@ The **AULI_DEMUX_5** is a unidirectional demultiplexer function block for the AU
 ### **Event Inputs**
 
 | Name | Comment | With Variables |
-
 |------|-----------|---------------|
-
 | REQ | Set Index K | K |
 
 ### **Event Outputs**
 
 | Name | Comment |
-
 |------|-----------|
-
 | CNF | Confirmation of Index Setting |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | K | UINT | Index for Selecting the Output (valid: 1…5) |
 
 ### **Data Outputs**
@@ -62,11 +56,8 @@ Data is passed passively via the adapter interface; the function block itself do
 Since the function block does not have a state machine, its behavior can be described by two implicit phases:
 
 | State | Description |
-
 |---------|--------------|
-
 | IDLE | Waiting for a REQ event; no connection is active. |
-
 | ACTIVE | Upon receiving a REQ, the corresponding connection is established and a CNF is triggered; Then immediately back to IDLE. |
 
 The function block (FB) is not stateful; after each request (REQ), the switchover is executed immediately and without delay.

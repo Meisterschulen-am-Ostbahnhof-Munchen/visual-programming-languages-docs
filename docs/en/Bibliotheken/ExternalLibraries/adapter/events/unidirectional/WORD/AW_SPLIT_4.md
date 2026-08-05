@@ -21,17 +21,11 @@ None (output occurs exclusively via the adapter plugs).
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AW` | `IN` | Socket | Input for the AW data stream to be distributed |
-
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug | First output (copy of the input) |
-
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug | Second output |
-
 | `adapter::types::unidirectional::AW` | `OUT3` | Plug | Third output |
-
 | `adapter::types::unidirectional::AW` | `OUT4` | Plug | Fourth Output |
 
 ## Functionality

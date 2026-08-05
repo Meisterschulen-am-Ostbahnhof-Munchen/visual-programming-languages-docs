@@ -30,17 +30,11 @@ The block does not have separate event or data ports, but rather encapsulates al
 ### Adapter
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | `SET1` | Unidirectional AX | Socket | Set Input |
-
 | `RESET` | Unidirectional AX | Socket | Reset Input |
-
 | `ILOCK_IN` | Bidirectional AX2 | Socket | Interlock Input (from top) |
-
 | `Q1` | Unidirectional AX | Plug | Latch Output |
-
 | `ILOCK_OUT` | Bidirectional AX2 | Plug | Interlock Output (downward) |
 
 ## Functionality
@@ -68,22 +62,14 @@ This creates a cascade in which a reset signal is passed on in both directions (
 The component has only one state, `REQ`, in its ECC, which is always active. The internal latch state is represented by the boolean value `Q1.D1`.The state overview therefore describes the behavior of the internal memory cell:
 
 | Current Q | SET1.D1 | RESET.D1 | Interlock active? | Next Q | Description |
-
 |-------------|----------|----------|------------------|------------|--------------|
-
 | FALSE | FALSE | FALSE | NO | FALSE | Latch remains reset |
-
 | FALSE | TRUE | FALSE | NO | TRUE | Latch is set |
-
 | FALSE | TRUE | TRUE | YES/NO | FALSE | Reset dominates |
-
 | TRUE | FALSE | FALSE | NO | TRUE | Latch remains set (self-latching) |
-
 | TRUE | TRUE | FALSE | NO | TRUE | Latch remains set |
 | TRUE | FALSE | TRUE | YES/NO | FALSE | Reset dominates |
-
 | TRUE | TRUE | TRUE | YES/NO | FALSE | Reset dominates |
-
 | arbitrary | arbitrary | arbitrary | YES (ILOCK) | FALSE | Interlock blockage sets or holds latch |
 
 ## Application Scenarios

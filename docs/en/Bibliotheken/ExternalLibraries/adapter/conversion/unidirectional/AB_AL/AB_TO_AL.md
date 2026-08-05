@@ -17,27 +17,20 @@ This function block does not have direct event outputs. The outgoing event flow 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `AB_IN.D1` | BYTE | 8-bit input value (via the socket adapter) |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `AL_OUT.D1` | LWORD | 64-bit output value (via the plug adapter) |
 
 ### **Adapters**
 
 | Name | Direction | Adapter Type | Description |
-
 |------|----------|--------------|--------------|
-
 | `AB_IN` | Socket | `adapter::types::unidirectional::AB` | Input adapter, returns BYTE data and an event |
-
 | `AL_OUT` | Plug | `adapter::types::unidirectional::AL` | Output adapter, expects LWORD data and passes on an event |
 
 ## Functionality

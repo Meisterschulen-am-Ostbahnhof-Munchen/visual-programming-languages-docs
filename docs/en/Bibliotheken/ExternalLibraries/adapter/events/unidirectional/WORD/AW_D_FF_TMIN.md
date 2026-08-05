@@ -11,25 +11,19 @@ The **AW_D_FF_TMIN** is a composed IEC 61499 function block (a type of data latc
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-------|-----------|
-
 | `INIT` | EInit | Initialization request; sets the minimum inter-event time `Tmin`. |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-------|-----------|
-
 | `INITO` | EInit | Confirmation of successful initialization. |
 
 ### **Data Inputs**
 
 | Data | Type | Comment |
-
 |-------|-------|-----------|
-
 | `Tmin` | TIME | Minimum time (e.g., `T#100ms`) that must elapse between two consecutive output events (`Q.E1`). |
 
 ### **Data Outputs**
@@ -39,11 +33,8 @@ The function block (FB) has no direct data outputs; the latching value is provid
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | `Socket` | `I` | `adapter::types::unidirectional::AW` | Value to be latched (input adapter). Contains the event and data interfaces `I.E1` and `I.D1`. |
-
 | `Plug` | `Q` | `adapter::types::unidirectional::AW` | Latched value (output adapter). Contains the event and data interfaces `Q.E1` and `Q.D1`. |
 
 ## Functionality
@@ -88,13 +79,9 @@ The internal function block `E_D_FF_ANY_TMIN` has an implicit state machine:
 ## Comparison with Similar Components
 
 | Component | Feature | Difference |
-
 |----------|-------------|-------------|
-
 | `E_D_FF` | Simple D flip-flop without a time limit | No control over the maximum output frequency. |
-
 | `SR_FF` | Set-Reset flip-flop | No edge-triggered data transfer. |
-
 | `E_D_FF_ANY_TMIN` (direct) | Like AW_D_FF_TMIN, but a pure event/data function block | Does not have an adapter interface; the variant with an adapter increases interchangeability and encapsulation in pluggable components. |
 
 ## Conclusion

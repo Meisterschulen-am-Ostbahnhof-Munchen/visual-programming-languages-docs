@@ -20,11 +20,8 @@ No separate data outputs are available. The converted data is output via the plu
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | `AUS_IN` | Socket (Input) | `adapter::types::unidirectional::AUS` | Unidirectional adapter input that provides a `USINT` value (and an associated event). |
-
 | `ADI_OUT` | Plug (Output) | `adapter::types::unidirectional::ADI` | Unidirectional adapter output that outputs the converted `DINT` value (and an associated event). |
 
 ## Functionality

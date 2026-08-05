@@ -8,47 +8,34 @@ The IA_RPTO function block is an ISOBUS adapter for the rear power take-off (RPT
 ### **Event Inputs**
 
 | Name | Type | Comment | With Data |
-
 |-------|--------|-------------------------------|-----------|
-
 | INIT | EInit | Service Initialization | QI |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With Data |
-
 |-------|--------|-------------------------------|--------------------|
-
 | INITO | EInit | Initialization Confirm | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|--------|------------------------------|
-
 | QI | BOOL | Event Input Qualifier |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |--------|--------|-------------------------------|
-
 | QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Status Message |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |-----------|----------------------------------------|---------------------------------------------|
-
 | SPEED | adapter::types::unidirectional::AUI | Rear PTO output shaft speed |
-
 | SPEED_SET | adapter::types::unidirectional::AUI | Rear PTO output shaft speed set point |
-
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout Status |
 
 ## Functionality

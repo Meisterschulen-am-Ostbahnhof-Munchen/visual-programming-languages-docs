@@ -9,47 +9,34 @@ The Q_Priority_AUS function block is used to change the priority of an alarm mas
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|-------------|
-
 | INIT | EInit | Service initialization; executed with the data input `u16ObjId`. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|-------------|
-
 | INITO | EInit | Confirmation of successful initialization. |
-
 | CNF | Event | Confirmation of the requested service; output with `STATUS` and `s16result`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description | Initial Value |
-
 |------|-----|--------------|-------------|
-
 | u16ObjId | UINT | Object ID of the alarm mask | ID_NULL |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | STATUS | STRING | Service status (e.g., error or success message) |
-
 | s16result | INT | Return value as described (see Functionality) |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|-------------|
-
 | u8Priority | OFF (unidirectional) | Socket | New priority (sent via the adapter) |
-
 | u8OldPriority | OFF (unidirectional) | Plug | Old priority (received via the adapter) |
 
 ## Functionality

@@ -52,25 +52,17 @@ The **Q_BackgroundColourAux** is a standards-compliant function block for contro
 ## Standard auxiliary colors (excerpt)
 
 | Code | Scope | Typical color |
-
 |------|------------------------|-----------------|
-
 | 16 | Status bar | Blue |
-
 | 32 | Secondary areas | Gray |
-
 | 48 | Guidelines | Light blue |
 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid instance |
 
 ## Application Scenarios
@@ -82,13 +74,9 @@ The **Q_BackgroundColourAux** is a standards-compliant function block for contro
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_BackgroundColourAux | Q_BackgroundColour | VtAuxColour |
-
 |---------------|-----------------------|--------------------|-------------|
-
 | ISO Standard | ✔ | ✔ | ✖ |
-
 | Color range | Auxiliary elements | Primary elements | All |
-
 | Usage | Secondary | Primary | Universal |
 
 ## Conclusion

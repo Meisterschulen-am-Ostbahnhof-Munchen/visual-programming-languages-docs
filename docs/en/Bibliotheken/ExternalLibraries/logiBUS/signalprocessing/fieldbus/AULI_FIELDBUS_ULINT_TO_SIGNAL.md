@@ -10,49 +10,35 @@ The module does not have traditional top-level event or data ports, but communic
 ### **Event Inputs**
 
 | Port | Name | Description |
-
 |------|-------------|--------------|
-
 | `IN.E1` | Event Input (via Socket IN) | Triggers the processing of a new ULINT value. |
 
 ### **Event Outputs**
 
 | Port | Label | Description |
-
 |------|-------------|--------------|
-
 | `OUT.E1` | Event Output (via Plug OUT) | Signals completion of the output of the mirrored value. |
-
 | `VALID.E1` | Event Output (via Plug VALID) | Indicates that the validity signal has been updated. |
 
 ### **Data Inputs**
 
 | Port | Label | Data Type | Description |
-
 |------|-------------|----------|-------------|
-
 | `IN.D1` | Data Input (via Socket IN) | ULINT | The fieldbus value to be processed. |
 
 ### **Data Outputs**
 
 | Port | Label | Data Type | Description |
-
 |------|-------------|-----------|-------------|
-
 | `OUT.D1` | Data Output (via Plug OUT) | ULINT | The mirrored input value (if valid). |
-
 | `VALID.D1` | Data Output (via Plug VALID) | BOOL | Validation signal (TRUE = value is valid). |
 
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `IN` | Socket (Input) | `adapter::types::unidirectional::AULI` | Receives the ULINT value and the associated event. |
-
 | `OUT` | Plug (Output) | `adapter::types::unidirectional::AULI` | Outputs the processed ULINT value and an event. |
-
 | `VALID` | Plug (Output) | `adapter::types::unidirectional::AX` | Provides the validity signal (BOOL) and an event. |
 
 ## Functionality

@@ -9,7 +9,6 @@ The function block `ILOCK_T_FF_AX` is a composite function block that implements
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|--------|-----------------------------------------------|
 | `CLK` | Event | Clock signal that triggers a state change (toggle). |
 
@@ -28,13 +27,9 @@ No direct data outputs. The current state is provided via the AX adapter.
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |--------------|------------------------------------------------------|--------------|------------------------------------------------------------------------------|
-
 | `Q` | `adapter::types::unidirectional::AX` | Plug/Output | Unidirectional output adapter that provides the current state (Boolean value) as data and outputs an event upon a state change. |
-
 | `ILOCK_IN` | `adapter::types::bidirectional::AE2` | Socket | Bidirectional adapter (input) for receiving locking signals. |
-
 | `ILOCK_OUT` | `adapter::types::bidirectional::AE2` | Plug | Bidirectional adapter (output) for forwarding locking events to the higher-level logic. |
 
 The AE2 adapters each have two event pairs (`EI1/EO1`, `EI2/EO2`) and two associated data ports. Only the first two ports (`EI1/EO1`) are used in this module.
@@ -72,11 +67,8 @@ The device thus implements an edge-triggered toggle flip-flop that can be reset 
 The internal state of the flip-flop is binary:
 
 | State | Description |
-
 |---------|----------------------------------------------------------------------|
-
 | `0` (false) | Output `Q` is inactive. The block will be set on the next `CLK` event. |
-
 | `1` (true) | Output `Q` is active. The block will be reset on the next `CLK` event. |
 
 State transitions occur exclusively on a `CLK` event (Toggle) or on a lock reset via `ILOCK_IN.EO1` or `ILOCK_OUT.EI1`. Simultaneous setting and resetting are resolved by the logic of the SR flip-flop (reset takes priority if both events occur).

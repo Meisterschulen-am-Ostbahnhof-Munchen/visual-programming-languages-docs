@@ -8,9 +8,7 @@ The function block `ATM_AX_TOF` implements off-delay timing with a modular adapt
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | R | Event | Resets the timer |
 
 ### **Event Outputs**
@@ -25,13 +23,9 @@ No direct data outputs are available. The output is provided via the `Q` adapter
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |------|----------|------|--------------|
-
 | IN | Socket | AX | Input adapter: Provides the Boolean trigger signal (D1: BOOL) and an event (E1) to trigger the timer function |
-
 | PT | Socket | ATM | Time adapter: Provides the delay time (D1: TIME) |
-
 | Q | Plug | AX | Output adapter: Provides the Boolean output signal (D1: BOOL) and an acknowledgment event (E1) |
 
 ## Functionality
@@ -55,15 +49,10 @@ The trigger is the event `IN.E1` – a new value at `IN.D1` is only applied afte
 The function block goes through the following operating states:
 
 | State | Conditions | Q.D1 | Description |
-
 |-----------------|-----------------------------------|-------|---------------|
-
 | **Idle** | IN.D1 = FALSE, timer is not running | FALSE | Idle state after expiration or reset |
-
 | **Active** | IN.D1 = TRUE | TRUE | Input active, output immediately TRUE |
-
 **Timing** | IN.D1 changes from TRUE to FALSE, timer active | TRUE | Delay phase: Output remains TRUE for the duration of the delay phase |
-
 **Resetting** | Event R during Timing or Active | FALSE | Timer is stopped immediately, output goes to FALSE |
 
 ## Application Scenarios
@@ -75,17 +64,11 @@ The function block goes through the following operating states:
 ## Comparison with Similar Function Blocks
 
 | Property | ATM_AX_TOF | E_TOF (Standard) |
-
 |-------------------------|------------------------------------------|--------------------------------------|
-
 | Interface | Adapter (AX/ATM) | Direct Events/Data |
-
 | Reset Function | Yes (Event R) | Yes (Event R) |
-
 | Triggering | Event-driven via adapter event | Event-driven via REQ |
-
 | Flexibility | Increased through adapter coupling | Simpler, but more rigid |
-
 | Application Area | Modular automation systems | Basic function in IEC 61499 editors |
 
 ## Conclusion

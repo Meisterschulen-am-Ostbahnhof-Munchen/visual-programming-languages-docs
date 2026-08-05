@@ -28,15 +28,10 @@ None.
 
 | Type | Name | Direction | Description |
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AS` | IN | Socket | Incoming AS signal path (input) |
-
 | `adapter::types::unidirectional::AS` | OUT1 | Plug | First output (identical to IN) |
-
 | `adapter::types::unidirectional::AS` | OUT2 | Plug | Second output (identical to IN) |
-
 | `adapter::types::unidirectional::AS` | OUT3 | Plug | Third output (identical to IN) |
-
 | `adapter::types::unidirectional::AS` | OUT4 | Plug | Fourth output (identical to IN) |
 
 ## Functionality

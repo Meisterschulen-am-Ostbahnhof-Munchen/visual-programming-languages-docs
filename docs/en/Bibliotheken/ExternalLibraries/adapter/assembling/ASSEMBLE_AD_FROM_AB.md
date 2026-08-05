@@ -21,17 +21,11 @@ There is no direct data output. The merged DWORD value is output via the **Plug 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (least significant byte) |
-
 | BYTE_01 | `adapter::types::unidirectional::AB` | Socket | Byte 1 |
-
 | BYTE_02 | `adapter::types::unidirectional::AB` | Socket | Byte 2 |
-
 | BYTE_03 | `adapter::types::unidirectional::AB` | Socket | Byte 3 (most significant byte) |
-
 | OUT | `adapter::types::unidirectional::AD` | Plug | 32-bit DWORD output |
 
 ## Functionality

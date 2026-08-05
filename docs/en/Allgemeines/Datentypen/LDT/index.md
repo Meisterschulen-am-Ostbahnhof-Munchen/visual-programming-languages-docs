@@ -5,9 +5,7 @@ The **LDT** (Long Date and Time) data type combines date and high-resolution tim
 According to **DIN EN 61131-3** (Table 10, No. 15b):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 64 Bits |
-
 | **Default Value** | `LDT#1970-01-01-00:00:00` |
 
 ## Literal Representation

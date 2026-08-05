@@ -4,29 +4,21 @@
 ## Interface
 ### Event Inputs
 | Name | Comment | With |
-
 | :--- | :--- | :--- |
-
 | REQ | | IN, ONN, OFF |
 
 ### Event Outputs
 
 | Name | Comment | With |
-
 | :--- | :--- | :--- |
-
 | CNF | | Q, WIN |
 
 ### Input Vars
 
 | Name | Type | Comment |
-
 | :--- | :--- | :--- |
-
 | IN | REAL | |
-
 | ONN | REAL | |
-
 | OFF | REAL | |
 
 ### Output Vars

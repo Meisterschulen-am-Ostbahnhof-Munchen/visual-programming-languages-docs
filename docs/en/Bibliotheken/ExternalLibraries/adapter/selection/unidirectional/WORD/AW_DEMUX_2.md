@@ -9,25 +9,19 @@ The AW_DEMUX_2 function block implements a generic AW demultiplexer. It forwards
 ### **Event Inputs**
 
 | Event | Comment | With |
-
 |----------|-----------|-----|
-
 | `REQ` | Set Index K | `K` |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Index Setting Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | `K` | UINT | index |
 
 ### **Data Outputs**
@@ -39,19 +33,14 @@ The AW_DEMUX_2 function block implements a generic AW demultiplexer. It forwards
 **Input Adapter (Socket)**
 
 | Adapter | Type | Comment |
-
 |---------|-----------------------------------|------------------------------------|
-
 | `IN` | `adapter::types::unidirectional::AW` | Input Value to demultiplex |
 
 **Output Adapters (Plugs)**
 
 | Adapter | Type | Comment |
-
 |---------|-----------------------------------|-----------|
-
 | `OUT1` | `adapter::types::unidirectional::AW` | |
-
 | `OUT2` | `adapter::types::unidirectional::AW` | |
 
 ## Functionality
@@ -74,13 +63,9 @@ After a successful switchover, the confirmation event `CNF` is output.
 The FB does not have an explicit state machine (ECC). Its behavior can be described as follows:
 
 | State (implicit) | Description |
-
 |--------------------|--------------|
-
 | **Idle** | Waiting for a `REQ` event. The last set index remains active. |
-
 **Processing** | After receiving `REQ`, the index `K` is evaluated and the input value is redirected to the corresponding output. |
-
 **Confirm** | After the switchover is complete, `CNF` is sent and the function block returns to idle mode. |
 
 ## Application Scenarios

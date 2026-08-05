@@ -9,43 +9,32 @@ The **AUDI_TO_ALI** function block is a composite module that bridges an **AUDI*
 ### **Event Inputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | *No dedicated event inputs* | Event control is handled via the internal socket AUDI_IN.E1. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | *No custom event outputs* | Event forwarding is handled via the internal plug ALI_OUT.E1. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | *No custom data inputs* | – | The data value is supplied by socket AUDI_IN.D1. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 *No custom data outputs* | – | The converted value is provided via the ALI_OUT.D1 plug. |
 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | **AUDI** (unidirectional) | `AUDI_IN` | Socket (Input) | UDINT data adapter that provides a value based on event E1 and date D1. |
-
 | **ALI** (unidirectional) | `ALI_OUT` | Plug (Output) | LINT data adapter that outputs the converted value based on event E1 and date D1. |
 
 ## Functionality
@@ -80,13 +69,9 @@ As a composite block, `AUDI_TO_ALI` does not have its own states. The state logi
 ## Comparison with similar modules
 
 | Module | Type | Special Feature |
-
 |----------|-----|--------------|
-
 | `F_UDINT_TO_LINT` | Pure converter | No adapters, direct data I/O; no event handling via adapters, requires its own control. |
-
 | `AUDI_TO_ALI` (this one) | Adapter converter | Encapsulates the conversion in an adapter-based interface; events and data are automatically routed via the adapters. |
-
 | `ALI_TO_AUDI` (hypothetical) | Adapter converter | Would convert LINT backwards to UDINT (potentially lossy). |
 
 The **main difference** compared to directly using `F_UDINT_TO_LINT` is the seamless integration into adapter networks and the avoidance of additional lines for event and data connections.

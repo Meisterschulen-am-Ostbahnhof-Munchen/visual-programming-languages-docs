@@ -9,9 +9,7 @@ The **AUDI_MUX_2** is a generic multiplexer function block (FB) according to IEC
 ### **Event Inputs**
 
 | Name | Type | Comment | With Data |
-
 |------|-----|------------|-----------|
-
 | REQ | Event | Set Index K | K |
 
 The event input `REQ` triggers processing. The index passed via `K` determines which of the two input values is forwarded to the output.
@@ -19,9 +17,7 @@ The event input `REQ` triggers processing. The index passed via `K` determines w
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 After successful selection and forwarding of the value, the event `CNF` is output.
@@ -29,9 +25,7 @@ After successful selection and forwarding of the value, the event `CNF` is outpu
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0 or 1) |
 
 The index `K` determines which of the two values provided via the adapter interfaces is selected:
@@ -46,13 +40,9 @@ This function block has no dedicated data outputs. Output is exclusively via the
 ### **Adapter**
 
 | Type | Direction | Identifier | Comment |
-
 |-----|----------|------------|-----------|
-
 | "adapter::types::unidirectional::AUDI" | Plug | OUT | Output: provides the selected value |
-
 | "adapter::types::unidirectional::AUDI" | Socket | IN1 | Input 1: Value for K=0 |
-
 "adapter::types::unidirectional::AUDI" | Socket | IN2 | Input 2: Value for K=1 |
 
 All adapters are of type `adapter::types::unidirectional::AUDI`. This generic adapter defines a unidirectional data connection and can be assigned any data type in the specific project (e.g., Integer, Real, Structure). This makes the function block reusable for a wide variety of applications.

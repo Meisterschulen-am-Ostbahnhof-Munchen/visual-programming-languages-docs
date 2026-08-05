@@ -8,23 +8,16 @@ The function block **ASR_SPLIT_4** is a generic block that distributes an incomi
 ### **Adapter Inputs (Sockets)**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | IN | `adapter::types::unidirectional::ASR` | Input adapter providing the ASR connection to be distributed. |
 
 ### **Adapter Outputs (Plugs)**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | OUT1 | `adapter::types::unidirectional::ASR` | First output adapter (identical copy of the input). |
-
 | OUT2 | `adapter::types::unidirectional::ASR` | Second output adapter. |
-
 | OUT3 | `adapter::types::unidirectional::ASR` | Third output adapter. |
-
 | OUT4 | `adapter::types::unidirectional::ASR` | Fourth output adapter. |
 
 **Note:** The specific structure of the ASR adapter (event/data elements) is not defined within the function block itself, but is determined by the associated adapter type `adapter::types::unidirectional::ASR`. Typically, this includes control and feedback signals for drives.

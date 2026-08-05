@@ -21,11 +21,8 @@ No direct data outputs are available. Output data is provided via the nine plug 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Receives the AUDI signal to be distributed. |
-
 | `OUT1` ... `OUT9` | `adapter::types::unidirectional::AUDI` | Plug (Output) | Nine outputs that replicate the value of `IN`. Each output is identical and independent. |
 
 ## Functionality

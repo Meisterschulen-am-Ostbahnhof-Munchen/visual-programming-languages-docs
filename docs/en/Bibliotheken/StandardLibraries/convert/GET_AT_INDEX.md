@@ -72,15 +72,10 @@ GET_AT_INDEX` thus fills a fundamental gap for direct, indexed read access to ar
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2014 Profactor GmbH |
-
 | License | EPL-2.0 |
-
 | Version | Version 3.0 (April 14, 2025, Patrick Aigner), Version 1.0 (July 11, 2014, Matthias Plasch) |
-
 | 4diac package | eclipse4diac::convert |
 
 ## Conclusion

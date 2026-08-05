@@ -9,9 +9,7 @@ The function block `AUDI_UDINT_LE` performs a less-than-equal-to comparison. It 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Service Request – triggers the comparison operation |
 
 - The event input `REQ` is linked to the data input `IN2` (`With Var="IN2"`), meaning the value of `IN2` is required for processing.
@@ -23,9 +21,7 @@ The function block does not have its own event output on the top-level interface
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `IN2` | UDINT | Input value 2 – the right operand of the comparison |
 
 ### **Data Outputs**
@@ -35,11 +31,8 @@ This function block has no direct data outputs. The comparison result (Boolean v
 ### **Adapters**
 
 | Type | Name | Role | Comment |
-
 |-----|------|-------|-----------|
-
 | `adapter::types::unidirectional::AUDI` | `IN1` | Socket (Input adapter) | Input value 1 – provides the left operand of the comparison |
-
 | `adapter::types::unidirectional::AX` | `OUT` | Plug (Output adapter) | Comparison result: `IN1 <= IN2` (true/false) |
 
 - The adapter `IN1` provides not only the data value but also an event (`E1`) that is connected to the internal comparison block.

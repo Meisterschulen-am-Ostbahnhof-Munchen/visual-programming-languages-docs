@@ -8,27 +8,20 @@ The function block **SET_REAL** is used to write a REAL value from a data input 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | REQ | Event | Normal execution request (connected to IN and OUT) |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | CNF | Event | Execution Confirmation (connected to OUT) |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | IN | REAL | 0.0 | Value to be written |
-
 | OUT | REAL (InOut) | 0.0 | Target variable (InOut – read and write) |
 
 ### **Data Outputs**
@@ -51,7 +44,6 @@ The current value of IN is assigned to the InOut variable OUT. The **CNF** event
 ## State Overview
 
 | State | Description | Action | Output |
-
 |---------|--------------|---------|---------|
 | REQ | Wait for execution request | Execute algorithm REQ → OUT := IN | CNF |
 
@@ -65,15 +57,10 @@ No further state exists; the function block immediately returns to the waiting R
 ## Comparison with similar function blocks
 
 | FB | Type | Difference |
-
 |----|-----|-------------|
-
 | **SET_BOOL** | BOOL | Writes Boolean values, analogous functionality |
-
 | **SET_INT** | INT | Writes integers, identical event control |
-
 **MOVE** (generic) | ANY | Can copy any data type, but requires type matching and often has multiple states |
-
 **SET_REAL** | REAL | Specifically optimized for REAL, minimal states and clear semantics |
 
 Compared to a generic MOVE block, SET_REAL offers a leaner implementation and is tailored to the frequently used REAL type.

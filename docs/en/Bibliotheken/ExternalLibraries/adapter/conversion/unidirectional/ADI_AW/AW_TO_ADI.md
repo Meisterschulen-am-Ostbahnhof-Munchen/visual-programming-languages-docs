@@ -29,11 +29,8 @@ The converted DINT value is output via the plug adapter `ADI_OUT`.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |---------|-----------------------------|----------|--------------|
-
 | `AW_IN` | `adapter::types::unidirectional::AW` | Socket (Input) | WORD adapter as input. Returns the trigger event (E1) and the WORD data value (D1). |
-
 | `ADI_OUT`| `adapter::types::unidirectional::ADI` | Plug (Output) | DINT adapter as output. Returns the acknowledgment event (E1) and the converted DINT value (D1). |
 
 ## Functionality

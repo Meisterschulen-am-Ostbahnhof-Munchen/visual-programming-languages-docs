@@ -9,33 +9,25 @@ The function block **SET_USINT** is used to write a value of type **USINT**, pro
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Normal execution request – takes the value from **IN** to **OUT** and sends **CNF**. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirmation of successful execution (sent after assignment). |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Description |
-
 |------|----------|-------------|-------------|
-
 | **IN** | USINT | 0 | Value to be written to the target variable. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Description |
-
 |------|----------|-------------|--------------|
-
 | **OUT** | USINT (InOut) | 0 | Target variable (declared as InOut, meaning it can be both read and written). After execution, **OUT** contains the value of **IN**. |
 
 ### **Adapter**
@@ -54,9 +46,7 @@ When the **REQ** event is received, the function block executes the **REQ** algo
 ## State Overview
 
 | State | Action | Output Event |
-
 |---------|--------|------------------|
-
 | **REQ** | Execute the **REQ** (`OUT := IN;`) algorithm | **CNF** |
 
 The FB has no explicit start state – it waits for an event in the **REQ** state.

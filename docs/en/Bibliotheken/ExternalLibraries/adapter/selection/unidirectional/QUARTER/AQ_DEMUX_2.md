@@ -8,24 +8,19 @@ The **AQ_DEMUX_2** is a generic function block that acts as a demultiplexer for 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Trigger to set the index K and forward the value. Connected to the data input K. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that index K has been set and the value has been passed on. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selecting the output (1 → OUT1, 2 → OUT2). |
 
 ### **Data Outputs**
@@ -35,13 +30,9 @@ This function block does not have direct data outputs. Output is provided via th
 ### **Adapters**
 
 | Type | Direction | Name | Comment |
-
 |-----|----------|------|-----------|
-
 | adapter::types::unidirectional::AQ | Input (Socket) | IN | Input value to be demultiplexed. |
-
 | adapter::types::unidirectional::AQ | Output (Plug) | OUT1 | First output channel (Index 1). |
-
 | adapter::types::unidirectional::AQ | Output (Plug) | OUT2 | Second output channel (Index 2). |
 
 ## Functionality

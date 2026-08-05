@@ -20,11 +20,8 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 ### **Adapters**
 
 | Adapter Type | Name | Description |
-
 |------------|-----------|-------------------------------------------------------|
-
 | Socket | `AL_IN` | LWORD adapter input (Type: `adapter::types::unidirectional::AL`) |
-
 | Plug | `AUDI_OUT` | UDINT adapter output (Type: `adapter::types::unidirectional::AUDI`) |
 
 ## Functionality

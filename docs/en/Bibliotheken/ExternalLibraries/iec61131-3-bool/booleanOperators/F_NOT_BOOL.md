@@ -27,11 +27,8 @@ The operation is deterministic and simple: Upon each occurrence of a `REQ` event
 The logical operation can be described by the following table:
 
 | Input (IN) | Output (OUT) |
-
 | :----------- | :------------ |
-
 | FALSE (0) | TRUE (1) |
-
 | TRUE (1) | FALSE (0) |
 
 ## Technical Features

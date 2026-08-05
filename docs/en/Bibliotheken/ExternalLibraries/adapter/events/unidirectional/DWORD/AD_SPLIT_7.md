@@ -23,23 +23,14 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 Socket (Input) | `IN` | `adapter::types::unidirectional::AD` | Receives the adapter signal to be distributed. |
-
 Plug (Output) 1 | `OUT1` | `adapter::types::unidirectional::AD` | First output – identical copy of the input signal. |
-
 Plug (Output) 2 | `OUT2` | `adapter::types::unidirectional::AD` | Second output. |
-
 Plug (Output) 3 | `OUT3` | `adapter::types::unidirectional::AD` | Third output. |
-
 | Plug (Output) 4 | `OUT4` | `adapter::types::unidirectional::AD` | Fourth output. |
-
 | Plug (Output) 5 | `OUT5` | `adapter::types::unidirectional::AD` | Fifth output. |
-
 | Plug (Output) 6 | `OUT6` | `adapter::types::unidirectional::AD` | Sixth output. |
-
 | Plug (Output) 7 | `OUT7` | `adapter::types::unidirectional::AD` | Seventh output. |
 
 ---
@@ -74,15 +65,10 @@ The function block has no states or state machines. Its behavior is purely combi
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Special Feature |
-
 ----------|-----------------|--------------|
-
 | `AD_SPLIT_2` | 2 | Simple 1:2 distribution |
-
 | `AD_SPLIT_4` | 4 | Typical for 4-channel systems |
-
 | **`AD_SPLIT_7`** | **7** | Extended distribution for seven parallel paths |
-
 | `AD_MERGE` | – | Combines multiple inputs into one output |
 
 Unlike a merge function block, `AD_SPLIT_7` is used exclusively for duplicating a signal without combining data.

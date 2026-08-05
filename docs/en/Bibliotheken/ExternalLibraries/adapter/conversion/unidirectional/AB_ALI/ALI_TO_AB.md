@@ -12,9 +12,7 @@ The **ALI_TO_AB** function block is a composite function block (FB) according to
 The FB has no direct event inputs. Events are received exclusively via the **ALI_IN** adapter (socket).
 
 | Event | Description |
-
 |----------|--------------|
-
 | *E1 (via ALI_IN)* | Signal to trigger the conversion. |
 
 ### **Event Outputs**
@@ -22,9 +20,7 @@ The FB has no direct event inputs. Events are received exclusively via the **ALI
 The FB has no direct event outputs. Events are sent exclusively via the **AB_OUT** adapter (plug).
 
 | Event | Description |
-
 |----------|--------------|
-
 | *E1 (via AB_OUT)* | Acknowledgement after successful conversion. |
 
 ### **Data Inputs**
@@ -32,9 +28,7 @@ The FB has no direct event outputs. Events are sent exclusively via the **AB_OUT
 The FB has no direct data inputs. Data is provided exclusively via the **ALI_IN** adapter (socket).
 
 | Data | Type | Description |
-
 |-------|-----|--------------|
-
 | *D1 (via ALI_IN)* | LINT | 64-bit integer to be converted. |
 
 ### **Data Outputs**
@@ -42,19 +36,14 @@ The FB has no direct data inputs. Data is provided exclusively via the **ALI_IN*
 The FB has no direct data outputs. Data is output exclusively via the **AB_OUT** adapter (plug).
 
 | Data | Type | Description |
-
 |-------|-----|---------------|
-
 | *D1 (via AB_OUT)* | BYTE | 8-bit converted value. |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **ALI_IN** | Socket (Input) | `adapter::types::unidirectional::ALI` | Receives the LINT value and an associated event. |
-
 | **AB_OUT** | Plug (Output) | `adapter::types::unidirectional::AB` | Outputs the converted BYTE value and an acknowledgment event. |
 
 ## Functionality

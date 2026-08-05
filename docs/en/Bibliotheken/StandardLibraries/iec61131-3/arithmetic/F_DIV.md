@@ -67,25 +67,17 @@ The **F_DIV** is a standards-compliant function block for dividing numeric value
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_DIV | F_MUL | F_ADD |
-
 |---------------|--------|--------|--------|
-
 | Operation | Division | Multiplication | Addition |
-
 | Inputs | 2 | 2 | 2 |
-
 | Type support | ANY_NUM | ANY_NUM | ANY_NUM |
 
 ## Supported Data Types
 
 | Category | Examples |
-
 |----------------|-------------------------|
-
 | Integers | INT, DINT, UDINT |
-
 | Floating Point | REAL, LREAL |
-
 | Type Combinations | INT/REAL, DINT/LREAL |
 
 ## 🛠️ Related Exercises

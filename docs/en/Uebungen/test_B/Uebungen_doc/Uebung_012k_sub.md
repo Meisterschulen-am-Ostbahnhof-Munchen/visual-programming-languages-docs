@@ -21,13 +21,9 @@ Stores a string value in an INI-like data structure under a given key (KEY) in a
 A queue block for string values. It receives the stored string and the object ID and passes it on when requested (e.g., for output to the bus).
 
 | Block Name | Type | Parameters / Remarks |
-
 |-------------------|--------------------------------------------------------|--------------------------------------|
-
 | StringValue_IS | `isobus::UT::io::StringValue::StringValue_IS` | QI = TRUE |
-
 | INI | `eclipse4diac::storage::INI` | QI = TRUE, DEFAULT_VALUE = '' |
-
 | Q_StringValue | `isobus::UT::Q::Q_StringValue` | no additional parameters |
 
 ### Sub-Blocks

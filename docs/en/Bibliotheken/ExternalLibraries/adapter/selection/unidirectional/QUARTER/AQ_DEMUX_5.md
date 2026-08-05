@@ -8,25 +8,19 @@ The function block **AQ_DEMUX_5** implements a 1-to-5 demultiplexer for adapters
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Starts forwarding the current value from input adapter `IN` to the output specified by `K`. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Acknowledges successful execution of the demultiplex operation. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------|
-
 | `K` | `UINT`| Index of the desired output (1..5). |
 
 ### **Data Outputs**
@@ -36,19 +30,12 @@ The function block **AQ_DEMUX_5** implements a 1-to-5 demultiplexer for adapters
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|-------|-----------------------------------|--------------------------------------|
-
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AQ` | Input data to be demultiplexed. |
-
 | Plug (Output) | `OUT1`| `adapter::types::unidirectional::AQ` | First output channel. |
-
 | Plug (Output) | `OUT2`| `adapter::types::unidirectional::AQ` | Second output channel. |
-
 | Plug (Output) | `OUT3` | `adapter::types::unidirectional::AQ` | Third output channel. |
-
 | Plug (Output) | `OUT4` | `adapter::types::unidirectional::AQ` | Fourth output channel. |
-
 | Plug (Output) | `OUT5` | `adapter::types::unidirectional::AQ` | Fifth output channel. |
 
 ## Functionality
@@ -72,13 +59,9 @@ The function block **AQ_DEMUX_5** implements a 1-to-5 demultiplexer for adapters
 The FB internally goes through two main states:
 
 | State | Description |
-
 |-----------|--------------------------------------------------|
-
 | **IDLE** | Waiting for a `REQ` event. |
-
 **BUSY** | Current demultiplex operation is being executed. |
-
 **DONE** | Operation completed; `CNF` is being sent; return to **IDLE**. |
 
 The transition from **IDLE** to **BUSY** occurs via a `REQ` event. After successful forwarding, the function block briefly enters the **DONE** state and sends `CNF` before returning to **IDLE**.

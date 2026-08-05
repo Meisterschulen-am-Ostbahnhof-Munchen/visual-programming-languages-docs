@@ -8,25 +8,19 @@ The function block **ADI_DEMUX_5** is a generic demultiplexer for adapter-based 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Starts the demultiplex operation. The current value of K determines the destination output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Sent as soon as the value is transferred to the selected output. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Index of the target output (1-based: 1 → OUT1, …, 5 → OUT5). |
 
 ### **Data Outputs**
@@ -35,19 +29,12 @@ No direct data outputs are available. Output is exclusively via the adapters.
 ### **Adapters**
 
 | Role | Name | Type (Adapter) | Description |
-
 |-------|-------|---------------|--------------|
-
 Socket | `IN` | ADI (unidirectional) | Input value to be demultiplexed. |
-
 Plug | `OUT1` | ADI (unidirectional) | First output destination adapter. |
-
 Plug | `OUT2` | ADI (unidirectional) | Second output destination adapter. |
-
 Plug | `OUT3` | ADI (unidirectional) | Third output destination adapter. |
-
 Plug | `OUT4` | ADI (unidirectional) | Fourth output destination adapter. |
-
 Plug | `OUT5` | ADI (unidirectional) | Fifth output destination adapter. |
 
 ## Functionality

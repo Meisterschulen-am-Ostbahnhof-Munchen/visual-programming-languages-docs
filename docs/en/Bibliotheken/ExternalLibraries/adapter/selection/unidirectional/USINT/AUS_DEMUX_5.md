@@ -9,25 +9,19 @@ The function block **AUS_DEMUX_5** is a generic OFF demultiplexer. It distribute
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the switching |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of successful switching |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index of the output to be activated (1..5) |
 
 ### **Data Outputs**
@@ -36,19 +30,12 @@ No data outputs defined.
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-
 |-------|------|-----|-----------|
-
 Socket (Input) | IN | adapter::types::unidirectional::OFF | Input signal to be demultiplexed |
-
 | Plug (Output) | OUT1 | adapter::types::unidirectional::OFF | First Output |
-
 | Plug (Output) | OUT2 | adapter::types::unidirectional::OFF | Second Output |
-
 | Plug (Output) | OUT3 | adapter::types::unidirectional::OFF | Third Output |
-
 | Plug (Output) | OUT4 | adapter::types::unidirectional::OFF | Fourth Output |
-
 | Plug (Output) | OUT5 | adapter::types::unidirectional::OFF | Fifth Output |
 
 ## Functionality

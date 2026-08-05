@@ -8,25 +8,19 @@ The function block **AB_MUX_2** is a generic multiplexer that selects two values
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Starts the switching process: The index `K` is evaluated, and the corresponding input signal is passed to `OUT`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms successful execution of the switching process. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Selection index: 0 → IN1, 1 → IN2 (other values are undefined or remain unchanged). |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ No direct data outputs – output is exclusively via the `OUT` adapter.
 ### **Adapters**
 
 | Type | Name | Description |
-
 |-----|------|--------------|
-
 | **Plug** | `OUT` | Adapter type `adapter::types::unidirectional::AB` – provides the selected signal. |
-
 | **Socket** | `IN1` | Adapter type `adapter::types::unidirectional::AB` – first input source. |
-
 | **Socket** | `IN2` | Adapter type `adapter::types::unidirectional::AB` – second input source. |
 
 ## Functionality
@@ -75,13 +65,9 @@ Since the function block does not define a state machine (ECC is missing), only 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-
 |----------|-------------|
-
 | **AB_MUX_2** | Adapter-based, two inputs, event-driven, generic. |
-
 | Standard MUX function blocks (e.g., MUX2) | It typically works with direct data inputs (BOOL, INT) and has its own data outputs. |
-
 **Advantage AB_MUX_2** | Uniform adapter interface, easy interchangeability of data source and sink. |
 
 ## Conclusion

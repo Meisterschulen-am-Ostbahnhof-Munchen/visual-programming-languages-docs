@@ -30,39 +30,22 @@ Whenever the event `REQ` occurs, the function block performs a logical OR operat
 The logical function can be described by the following truth table:
 
 | IN1 | IN2 | IN3 | OUT (IN1 OR IN2 OR IN3) |
-
 |:---:|:---:|:---:|:-----------------------:|
-
 | 0 | 0 | 0 | 0 |
-
 | 0 | 0 | 1 | 1 |
-
 | 0 | 1 | 0 | 1 |
-
 | 0 | 1 | 1 | 1 |
-
 | 1 | 0 | 0 | 1 |
-
 | 1 | 0 | 1 | 1 |
-
 | 1 | 1 | 1 | 1 |
-
 | 1 | 1 | 1 | 1 |
-
 | 1 | 1 | 1 | 1 |
-
 | 1 | 1 | 1 | 1 |
-
 | 1 | 1 | 1 | 1 |
-
 | 0 ...| 0 | 1 | 1 | 1 | 1 |
-
 | 0 | 0 | 1 | 1 | 1 | 1 |
-
 | 0 | 0 | 1 | 1 | 1 | 1 |
-
 | 0 | 0 | 1 | 1 | 1 | 1 |
-
 | The output `OUT` is `TRUE` (1) if and only if at least one of the three inputs is `TRUE`.
 
 ## Technical Features

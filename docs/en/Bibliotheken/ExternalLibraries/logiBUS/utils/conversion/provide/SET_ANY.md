@@ -8,27 +8,20 @@ The function block **SET_ANY** is used to write any value from input `IN` to a v
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Normal execution request – triggers the assignment. Associated with the variables `IN` and `OUT`. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Confirmation of successful execution. Associated with the variable `OUT`. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | IN | ANY | Value written to the target variable. |
-
 OUT | ANY | **InOut Parameter** – used as both an input and an output (see Data Outputs). |
 
 > **Note:** `OUT` is declared as InOut. It functions as a data input (the original variable is read if necessary) and as a data output (overwritten with the value of `IN`).
@@ -36,9 +29,7 @@ OUT | ANY | **InOut Parameter** – used as both an input and an output (see Dat
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 OUT | ANY | **InOut Parameter** – contains the value of the input `IN` after execution. The variable can also be used outside the function block. |
 
 ### **Adapter**
@@ -58,9 +49,7 @@ After assignment, the output event `CNF` is sent. Execution is atomic – no fur
 ## State Overview
 
 | State | Description |
-
 |---------|--------------|
-
 | REQ | Waits for a `REQ` event. Upon occurrence, the algorithm is executed, then `CNF` is sent, and the state remains active. |
 
 There are no other states, no branches, and no time monitoring.
@@ -73,13 +62,9 @@ There are no other states, no branches, and no time monitoring.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-
 |----------|-------------|
-
 | **SET** | Is fixed to a specific data type (e.g., SET_BOOL, SET_INT). `SET_ANY` is generic. |
-
 | **MOVE** | Also copies a value from an input to an output, but uses standard outputs. `SET_ANY` uses an InOut parameter that references a persistent variable. |
-
 | **SELECT** | Selects between two input values and requires a control signal. `SET_ANY` operates without a condition. |
 
 ## Conclusion

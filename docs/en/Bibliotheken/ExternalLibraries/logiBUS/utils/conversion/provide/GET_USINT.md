@@ -9,17 +9,13 @@ The function block `GET_USINT` is used to read a `USINT` value from an InOut var
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Normal execution request. Trigger to read the current value of `IN` and pass it to `OUT`. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Confirmation of successful execution. Sent after reading and buffering. |
 
 ### **Data Inputs**
@@ -27,17 +23,13 @@ The function block `GET_USINT` is used to read a `USINT` value from an InOut var
 This function block does not have traditional data inputs. Instead, the value to be read is provided via the InOut variable `IN`.
 
 | Variable | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | IN | USINT | Source variable (InOut). The current value of this variable is read and buffered upon a `REQ` event. The variable can be written to and read from external sources; within the function block, access is read-only. |
 
 ### **Data Outputs**
 
 | Variable | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | OUT | USINT | Buffered output value. Contains the value read during the last execution of `IN`. Initial value: 0. |
 
 ### **Adapter**
@@ -66,9 +58,7 @@ Since this is a simple function block, there are no branches or timed sequences 
 The block has exactly one state:
 
 | State | Action | Initial Event |
-
 |---------|--------|------------------|
-
 | REQ | Execute algorithm `REQ` (`OUT := IN;`) | CNF |
 
 A start state is not explicitly defined; after initialization, the function block is activated by the first `REQ`.
@@ -83,13 +73,9 @@ A start state is not explicitly defined; after initialization, the function bloc
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Special Feature |
-
 |----------|-----|--------------|
-
 | `GET_USINT` | Custom Function Block | Reads an InOut variable and buffers the value. The output remains stable until the next request. |
-
 | `USINT_TO_*` (e.g., Converter) | Conversion Function Block | Converts a USINT to another type, but does not necessarily read from an InOut. |
-
 | Direct data access | No function block | A value can be read over data connections without buffering, but without decoupling and without event control. |
 
 GET_USINT` is specialized for reading InOut variables with explicit buffering and event control – a task that cannot be accomplished with standard converters or direct connections.

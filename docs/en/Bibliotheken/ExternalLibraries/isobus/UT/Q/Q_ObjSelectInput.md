@@ -53,29 +53,19 @@ The **Q_ObjSelectInput** is a standards-compliant function block for the program
 ## Option Reference
 
 | u8Option | Description | VT Version |
-
 |----------|----------------------------|------------|
-
 | 0xFF | Standard selection | 3+ |
-
 | 0x00 | Extended selection | 4+ |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful execution |
-
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
-
 -8 | VT_E_NOACT | VT Not Ready |
-
 -21 | VT_E_NO_INSTANCE | No VT Client Available |
-
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT Instance |
-
 -130 | VT_E_NOT_ALIVE | VT Not Active |
 
 ## Application Scenarios
@@ -87,14 +77,10 @@ The **Q_ObjSelectInput** is a standards-compliant function block for the program
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_ObjSelectInput | VtFocusControl | VtInputSelector |
-
 |---------------|------------------|----------------|-----------------|
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | VT Version 4+ | ✔ | ✖ | ✔ |
-
 | Option Control | ✔ | ✖ | ✖ |
-
 | Feedback | ✔ | ✖ | ✔ |
 
 ## Conclusion

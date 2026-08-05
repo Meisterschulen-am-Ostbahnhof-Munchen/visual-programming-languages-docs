@@ -21,21 +21,13 @@ No data outputs available.
 The function block uses adapters exclusively for communication:
 
 | Direction | Name | Type | Description |
-
 |----------|-----|-----|--------------|
-
 | Input | **IN** | `adapter::types::unidirectional::AUI` | Incoming AUI adapter being split. |
-
 | Output | **OUT1** | `adapter::types::unidirectional::AUI` | First outgoing AUI adapter. |
-
 | Output | **OUT2** | `adapter::types::unidirectional::AUI` | Second outgoing AUI adapter. |
-
 | Output | **OUT3** | `adapter::types::unidirectional::AUI` | Third outgoing AUI adapter. |
-
 | Output | **OUT4** | `adapter::types::unidirectional::AUI` | Fourth outgoing AUI adapter. |
-
 | Output | **OUT5** | `adapter::types::unidirectional::AUI` | Fifth outgoing AUI adapter. |
-
 | Output | **OUT6** | `adapter::types::unidirectional::AUI` | Sixth outgoing AUI adapter. |
 
 ## Functionality

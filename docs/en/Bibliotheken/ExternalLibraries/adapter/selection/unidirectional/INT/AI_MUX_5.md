@@ -8,25 +8,19 @@ The **AI_MUX_5** is a generic analog input multiplexer that allows you to select
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | REQ | Event | Triggers the input selection. The event takes the current value of **K** and sets the corresponding input to the output. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | CNF | Event | Confirms successful selection. Outputs after the multiplexer has passed through. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | K | UINT | Selection index (0…4). Determines which of the five inputs (IN1 to IN5) is connected to the output OUT. |
 
 ### **Data Outputs**
@@ -35,19 +29,12 @@ The module does not have direct data outputs. Output is provided via the **adapt
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug | OUT | adapter::types::unidirectional::AI | Output adapter that provides the value of the selected analog input. |
-
 | Socket | IN1 | adapter::types::unidirectional::AI | First analog input (K=0). |
-
 | Socket | IN2 | adapter::types::unidirectional::AI | Second analog input (K=1). |
-
 | Socket | IN3 | adapter::types::unidirectional::AI | Third analog input (K=2). |
-
 | Socket | IN4 | adapter::types::unidirectional::AI | Fourth analog input (K=3). |
-
 | Socket | IN5 | adapter::types::unidirectional::AI | Fifth analog input (K=4). |
 
 The adapters use the type `adapter::types::unidirectional::AI`, which is designed for analog input signals.

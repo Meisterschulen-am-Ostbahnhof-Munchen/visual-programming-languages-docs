@@ -9,52 +9,37 @@ The function block **logiBUS_LED_strip_QXA** is a composite function block for c
 ### **Event Inputs**
 
 | Event | Description | With |
-
 |----------|--------------|-----|
-
 | INIT | Service Initialization | QI, PARAMS, Output, Color, FREQ |
 
 ### **Event Outputs**
 
 | Event | Description | With |
 |----------|--------------|-----|
-
 | INITO | Initialization Confirmation | QO, STATUS |
-
 | CNF | Confirmation of Executed Request | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Type | Description | Initial Value |
-
 |--------|--------|--------------|-------------|
-
 | QI | BOOL | Processing Enable (Event Qualifier) | - |
-
 | PARAMS | STRING | Service Parameter (e.g., Bus Configuration) | - |
-
 | Output | USINT | Output Identification (Strip Number) | `LED_strip::Output_strip` |
-
 | Colour | UINT | LED Color Code | `LED_COLOURS::LED_GREEN` |
-
 FREQ | UINT | Frequency/Priority of the LED Display | `LED_FREQ::LED_OFF` |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |--------|--------|--------------|
-
 QO | BOOL | Output Qualifier (Processing Status) |
-
 STATUS | STRING | Status Message (e.g., Error Code) |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 OUT | `adapter::types::unidirectional::AX` | Unidirectional adapter interface for data transfer to the resource (output data to logiBUS) |
 
 ## Functionality

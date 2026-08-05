@@ -9,25 +9,19 @@ The function block `AULI_MUX_3` is a generic multiplexer that allows the selecti
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K. Triggers the multiplexer action. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of index selection (after successful switching). |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selecting the input (0, 1, or 2). |
 
 ### **Data Outputs**

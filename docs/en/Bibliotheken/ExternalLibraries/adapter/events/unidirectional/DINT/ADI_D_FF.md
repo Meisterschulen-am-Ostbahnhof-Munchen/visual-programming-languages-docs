@@ -25,11 +25,8 @@ The FB has no separate data outputs. Data is output via the `Q` adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|-------------|-----------|-------------|
-
 | `adapter::types::unidirectional::ADI` | `I` | Input (Socket) | Outputs the clock signal (`E1`) and the data value to be latched (`D1`). |
-
 | `adapter::types::unidirectional::ADI` | `Q` | Output (Plug) | Outputs the stored data value (`D1`) and an acknowledgment event (`E1`). |
 
 ## Functionality
@@ -59,13 +56,9 @@ The function block does not have explicit states in the sense of a state machine
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Differences |
-
 |----------|----------|--------------|
-
 | `ADI_SR_FF` | Set-Reset Flip-Flop | Stores based on set/reset behavior, not clock-driven. |
-
 | `ADI_T_FF` | T Flip-Flop | Toggles the state on every clock cycle. |
-
 | `ADI_D_FF` | D flip-flop | Stores the incoming data value on the clock edge (as described here). |
 
 ## Conclusion

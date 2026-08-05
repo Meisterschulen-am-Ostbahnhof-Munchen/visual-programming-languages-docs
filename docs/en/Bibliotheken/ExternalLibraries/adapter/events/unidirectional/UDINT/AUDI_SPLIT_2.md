@@ -21,13 +21,9 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** | `IN` | `adapter::types::unidirectional::AUDI` | Incoming unidirectional AUDIO adapter (signal source). |
-
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AUDI` | First output – forwards the input signal. |
-
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AUDI` | Second output – forwards the input signal. |
 
 ## Functionality

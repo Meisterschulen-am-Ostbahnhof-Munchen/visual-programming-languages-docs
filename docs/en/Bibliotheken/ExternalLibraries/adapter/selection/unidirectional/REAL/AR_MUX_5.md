@@ -9,25 +9,19 @@ The **AR_MUX_5** function block is a generic 5-channel multiplexer based on the 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `REQ` | Event | Signals the adoption of the new index K and triggers the switchover. Connected to data input `K`. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `CNF` | Event | Confirmation that the multiplexer has adopted index K and established the corresponding connection. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `K` | UINT | Index of the selected input (0 … 4). K = 0 → IN1, K = 1 → IN2, …, K = 4 → IN5. |
 
 ### **Data Outputs**
@@ -39,27 +33,18 @@ No explicit data outputs. Output is handled entirely via the `OUT` adapter.
 **Plugs (Output Side)**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `OUT` | `adapter::types::unidirectional::AR` | Output adapter that passes on the selected input. |
 
 **Sockets (Input Side)**
 
 | Name | Type | Description |
-
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `IN1` | `adapter::types::unidirectional::AR` | First Input (K = 0) |
-
 | `IN2` | `adapter::types::unidirectional::AR` | Second Input (K = 1) |
-
 | `IN3` | `adapter::types::unidirectional::AR` | Third Input (K = 2) |
-
 | `IN4` | `adapter::types::unidirectional::AR` | Fourth Input (K = 3) |
-
 | `IN5` | `adapter::types::unidirectional::AR` | Fifth Input (K = 4) |
 
 ## Functionality

@@ -9,29 +9,21 @@ The function block **AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** converts a 16-b
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-------|----------------------------|
-
 | INIT | EInit | Initialization Request |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|-----------------------------|
-
 | INITO | EInit | Initial Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------------|------|-------------|-------------------------------------------|
-
 | SCALE_HIGH | REAL | 0.256 | Scaling factor for the upper byte |
-
 | SCALE_LOW | REAL | 0.001 | Scaling factor for the lower byte |
-
 | OFFSET | DINT | 0 | Additive offset after scaling |
 
 ### **Data Outputs**
@@ -41,13 +33,9 @@ The FB does not have its own data outputs. The output data is provided via the a
 ### **Adapters**
 
 | Adapter | Type (Direction) | Description |
-
 |---------|-------------------------------------|---------------------------------------|
-
 | IN | `adapter::types::unidirectional::AW` | Incoming 16-bit word |
-
 | OUT | `adapter::types::unidirectional::AR` | Output signal (scaled) |
-
 | VALID | `adapter::types::unidirectional::AX` | Validation signal (TRUE = valid) |
 
 ## Functionality
@@ -94,11 +82,8 @@ Before first use, the function block (FB) must be initialized with the INIT even
 The FB has an internal state represented by the flip-flop `E_D_FF`:
 
 | State | Description |
-
 |---------|-------------------------------------------------------------------|
-
 | UNVALID | No valid signal. The **VALID** output returns FALSE. |
-
 | VALID | Valid signal detected. The **VALID** output displays TRUE. |
 
 The state changes with each new input event (i.e., with each word transmission) according to the validity information of the internal scaling module.

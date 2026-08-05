@@ -9,9 +9,7 @@ The function block **AS_MUX_4** is a generic multiplexer for unidirectional AS d
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K |
 
 The **REQ** input triggers the multiplexing operation. With each event, the current value of **K** is read, and the corresponding AS input is switched to the output.
@@ -19,9 +17,7 @@ The **REQ** input triggers the multiplexing operation. With each event, the curr
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 After a successful switchover, the **CNF** event is output. It confirms that the connection defined by the index **K** has been established.
@@ -29,9 +25,7 @@ After a successful switchover, the **CNF** event is output. It confirms that the
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0…3) |
 
 The **K** data input defines the path to be selected. Valid values are 0 to 3 for inputs IN1 to IN4.
@@ -43,17 +37,11 @@ No explicit data outputs, as the output is implemented as an AS adapter (plug).
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | OUT | adapter::types::unidirectional::AS | Plug | AS output: provides the data stream of the selected input |
-
 | IN1 | adapter::types::unidirectional::AS | Socket | AS input 1 (Index 0) |
-
 | IN2 | adapter::types::unidirectional::AS | Socket | AS input 2 (Index 1) |
-
 | IN3 | adapter::types::unidirectional::AS | Socket | AS input 3 (Index 2) |
-
 | IN4 | adapter::types::unidirectional::AS | Socket | AS Input 4 (Index 3) |
 
 The adapters are of type `adapter::types::unidirectional::AS`. The **OUT** plug is connected to the selected socket; all unselected sockets remain inactive.

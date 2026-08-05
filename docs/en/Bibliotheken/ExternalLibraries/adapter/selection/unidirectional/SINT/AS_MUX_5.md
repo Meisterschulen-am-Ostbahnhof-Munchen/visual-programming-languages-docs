@@ -9,25 +9,19 @@ The function block **AS_MUX_5** implements a generic multiplexer for the adapter
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------------------|
-
 | REQ | Event | Set Index K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------------------------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | K | UINT | index |
 
 ### **Data Outputs**
@@ -39,7 +33,6 @@ None.
 **Plug (Output):**
 
 | Name | Type | Comment |
-
 |------|-----------------------------------------|----------------------------------------------------------------|
 | OUT | adapter::types::unidirectional::AS | IN1 for K = 0, IN2 for K = 1, IN3 for K = 2, IN4 for K = 3, IN5 for K = 4 |
 
@@ -51,7 +44,6 @@ None.
 | IN2 | adapter::types::unidirectional::AS | Input value 2 |
 | IN3 | adapter::types::unidirectional::AS | Input value 3 |
 | IN4 | adapter::types::unidirectional::AS | Input value 4 |
-
 | IN5 | adapter::types::unidirectional::AS | Input value 5 |
 
 ## Functionality

@@ -5,11 +5,8 @@ Integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 16 |
-
 | **Value Range** | -32,768 to 32,767 |
-
 | **Reference** | Table 10, No. 3 |
 
 ## Use in Programming

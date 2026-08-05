@@ -8,25 +8,19 @@ The function block **AS_D_FF_TMIN** implements a data-locking D flip-flop that t
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-------|-------------------------------------------|
-
 | INIT | EInit | Initialization Request (reads `Tmin`) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-------|-------------------------------------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|---------------------------------------------------------------|
-
 | Tmin | TIME | Minimum time between two consecutive CLK events |
 
 ### **Data Outputs**
@@ -46,11 +40,8 @@ This block has no explicit data outputs; output is exclusively via the **Q** ada
 ### **Adapters**
 
 | Direction | Adapter | Type | Comment |
-
 ### **Data Outputs** ... |----------|---------|-----------------------------------------------------|-------------------------|
-
 | Socket | I | adapter::types::unidirectional::AS | Input data (D1) and clock (E1) |
-
 | Plug | Q | adapter::types::unidirectional::AS | Output data (D1) and event (E1) |
 
 The adapters of type `AS` each provide one event input/output (E1) and one data input/output (D1).
@@ -84,13 +75,9 @@ The block does not have explicit state machines in the sense of a statechart. Ho
 ## Comparison with Similar Function Blocks
 
 | Function Block | Time Filtering | Additional Features |
-
 |------------------|-----------------------------------|-------------------------------------------|
-
 | AS_D_FF | No (immediate transfer) | Simple D flip-flop without time limit |
-
 | AS_D_FF_TMIN (this one) | Yes, configurable via `Tmin` | Suppresses excessively fast clock sequences |
-
 | AS_D_FF_TMAX | Yes, maximum time between clock cycles | Enforces regular takeovers |
 
 ## Conclusion

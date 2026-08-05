@@ -7,37 +7,23 @@ This exercise demonstrates a down counter (FB_CTD_ULINT) standardized according 
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameters / Settings |
-
 |---|---|---|
-
 | **FB_CTD_ULINT** | `iec61131::counters::FB_CTD_ULINT` | `PV = ULINT#10` |
-
 | **Input_CD** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` |
-
 | **Input_LD** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` |
-
 **Output_Q1** | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` |
-
 **F_ULINT_TO_LREAL** | `iec61131::conversion::F_ULINT_TO_LREAL` | – (no parameters) |
-
 **Q_NumericValue_PHYS_LREAL** | `isobus::UT::Q::Q_NumericValue_PHYS_LREAL` | `stObj = OutputNumber_N3` |
 
 **Functionality of the individual function blocks:**
 
 | Function Block | Description |
-
 |---|---|
-
 **FB_CTD_ULINT** | Down counter (CTD) for unsigned long integers (ULINT). At the **REQ** event, depending on the currently active input (CD or LD), either the counter value is decremented or the preset value is loaded. The current counter value is available at the **CV** output, and the zero value is available at the **Q** output. |
-
 | **Input_CD** | Digital input block that reads the physical signal `Input_I1` (pushbutton/switch) and triggers the **IND** event on a rising edge. |
-
 | **Input_LD** | Digital input block that reads the physical signal `Input_I2` and triggers the **IND** event on a rising edge. |
-
 | **Output_Q1** | Digital output block that, at the **REQ** event, transfers the value at the **OUT** data input to the physical output `Output_Q1`. |
-
 | **F_ULINT_TO_LREAL** | Conversion block that converts a ULINT value to the LREAL type (64-bit floating-point number). |
-
 **Q_NumericValue_PHYS_LREAL** | Terminal output block for physical floating-point numbers. It outputs the passed value to the configured object `OutputNumber_N3`. |
 
 ## Program Flow and Connections

@@ -55,25 +55,17 @@ The **Q_ChangePolygonScale** is a standards-compliant function block for scaling
 ## Scaling Behavior
 
 | Parameter | Effect |
-
 |------------|-----------------------------|
-
 | Width | Horizontal scaling |
-
 | Height | Vertical scaling |
-
 | 0xFFFF | Maintain original size |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success | | -6 | VT_E_OVERFLOW | Invalid Dimensions |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid Polygon ID |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid Instance |
 
 ## Application Scenarios
@@ -85,13 +77,9 @@ The **Q_ChangePolygonScale** is a standards-compliant function block for scaling
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_ChangePolygonScale | VtGeometryScaler | VtDynamicResize |
-
 |---------------|----------------------|------------------|-----------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Scaling | Proportional | Free | Width Only |
-
 | Resolution | 16-bit | 8-bit | 16-bit |
 
 ## Conclusion

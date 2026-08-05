@@ -9,33 +9,25 @@ The function block `GET_DWORD` is used to read the current value of a variable o
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `REQ` | `Event` | Request to read the InOut variable and provide the output value |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `CNF` | `Event` | Confirmation that the read operation has completed and the output has been updated |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `IN` | `DWORD` | Source variable (InOut). The current value of this variable is read at `REQ`. Initial value: 0 |
 
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |-------|----------|-----------|
-
 | `OUT` | `DWORD` | Buffered output value. Contains the value read during the last execution. Initial value: 0 |
 
 ### **Adapter**
@@ -58,9 +50,7 @@ The function block buffers the read value; that is, `OUT` retains its value unti
 The function block has a single state, `REQ`:
 
 | State | Description |
-
 |---------|---------------|
-
 | `REQ` | Waits for the event `REQ`. Upon its occurrence, the action `REQ` (OUT := IN) is executed, and then the event `CNF` is sent. After `CNF`, the function block remains in the same state. |
 
 ## Application Scenarios

@@ -9,49 +9,35 @@ The function block `IA_PosDeltaHighPrecRapidUpd` is an ISOBUS adapter module for
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-------|---------------------------------------------------------|
-
 | `INIT` | EInit | Initialize the function block; used with `QI`. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|-------------------------------------------------|
-
 | `INITO` | EInit | Initialization confirmation; returns `QO` and `STATUS`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|--------|-----------------------------|
-
 | `QI` | `BOOL` | Qualifier for INIT event. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |----------|----------|-----------------------------------|
-
 | `QO` | `BOOL` | Output qualifier (Initialization successful?). |
-
 | `STATUS` | `STRING` | Initialization status message. |
 
 ### **Adapters**
 
 | Adapter name | Type (Adapter) | Description |
-
 |--------------------|----------------------------------|-----------------------------------------|
-
 | `TIME_DELTA` | `adapter::types::unidirectional::AUI` | Returns the time delta (unsigned integer). |
-
 LAT_DELTA` | `adapter::types::unidirectional::AI` | Returns the latitude delta (signed integer). |
-
 LON_DELTA` | `adapter::types::unidirectional::AI` | Returns the longitude delta (signed integer). |
-
 TIMEOUT` | `adapter::types::unidirectional::AX` | Indicates whether a timeout occurred (Bool). |
 
 ## Functionality

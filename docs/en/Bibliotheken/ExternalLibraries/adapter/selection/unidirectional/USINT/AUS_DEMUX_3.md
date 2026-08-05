@@ -9,25 +9,19 @@ The function block **AUS_DEMUX_3** implements a generic demultiplexer for OFF si
 ### **Event Inputs**
 
 | Name | Type | With Variables | Comment |
-
 |------|-------|----------------|-------------------------|
-
 | REQ | Event | K | Sets Index K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------------------------------|
-
 | CNF | Event | Acknowledge after setting K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|----------------|
-
 | K | UINT | Selection Index (1..3) |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ No dedicated data outputs; output is handled via the adapters.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----------------------------------------|----------|----------------------------------------|
-
 | IN | `adapter::types::unidirectional::AUS` | Socket | Input value that is demultiplexed |
-
 OUT1 | `adapter::types::unidirectional::AUS` | Plug | First output channel |
-
 OUT2 | `adapter::types::unidirectional::AUS` | Plug | Second output channel |
-
 OUT3 | `adapter::types::unidirectional::AUS` | Plug | Third output channel |
 
 ## Functionality
@@ -75,13 +64,9 @@ The function block does not have an explicit state machine (ECC). Its functional
 ## Comparison with similar modules
 
 | Module | Description | Differences |
-
 ------------------|-----------------------------------------------------------|--------------------------------------------------------|
-
 | **OFF_MUX** | Multiplexer: selects one of several inputs | Reverse data direction, multiple inputs, one output |
-
 | **OFF_DEMUX_2** | Demultiplexer with two outputs | Reduced number of channels, same logic |
-
 | **OFF_SWITCH** | Simple switch (on/off) | No channel selection, only forwarding/switching |
 
 The **AUS_DEMUX_3** offers three dedicated outputs and is suitable for applications requiring a fixed number of channels.

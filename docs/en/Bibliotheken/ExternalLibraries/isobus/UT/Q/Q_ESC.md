@@ -50,27 +50,18 @@ The **Q_ESC** is a standards-compliant function block for termination control in
 ## Typical Use Cases
 
 | Scenario | Effect |
-
 |------------------------|-----------------------------|
-
 | Dialog cancel | Ends current input |
-
 | Exit menu | Return to main screen |
-
 | Alarm acknowledgement | Stops audible signals |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successfully aborted |
-
 | -8 | VT_E_NOACT | No active input to abort |
-
 | -21 | VT_E_NO_INSTANCE | No VT instance available |
-
 | -130 | VT_E_NOT_ALIVE | VT not reachable |
 
 ## Application Scenarios
@@ -82,13 +73,9 @@ The **Q_ESC** is a standards-compliant function block for termination control in
 ## ⚖️ Comparison with similar modules
 
 | Feature | Q_ESC | VtAbortCmd | VtCancelOp |
-
 |---------------|-------------|--------------|-------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Effect | Global | Local | Object-Specific |
-
 | Parameters | None | Configurable | Configurable |
 
 ## Conclusion

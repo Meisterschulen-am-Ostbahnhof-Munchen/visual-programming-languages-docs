@@ -24,11 +24,8 @@ No separate data outputs – the converted value is output via the **AS-OUT adap
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-
 |---------|----------|-----|-----------|
-
 | **ADI_IN** | Socket (Input) | `adapter::types::unidirectional::ADI` | DINT Adapter Input |
-
 | **AS_OUT** | Plug (Output) | `adapter::types::unidirectional::AS` | SINT Adapter Output |
 
 The **ADI-IN Adapter** provides an event interface `E1` and a data interface `D1` (type DINT). The **AS-OUT Adapter** provides `E1` and `D1` (type SINT).

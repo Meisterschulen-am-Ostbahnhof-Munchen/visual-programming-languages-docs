@@ -9,9 +9,7 @@ The function block **ATM_MUX_2** is a generic multiplexer for two ATM data chann
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `REQ` | Event | Sets the index `K` and triggers the switchover |
 
 The `REQ` input initiates the selection process. It takes the value from `K` and switches the corresponding input to the output.
@@ -19,9 +17,7 @@ The `REQ` input initiates the selection process. It takes the value from `K` and
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `CNF` | Event | Confirms the successful switchover |
 
 After the multiplexer has completed the switchover, `CNF` is output. The selected data path is then active.
@@ -29,9 +25,7 @@ After the multiplexer has completed the switchover, `CNF` is output. The selecte
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index of the input to be selected (0 for `IN1`, 1 for `IN2`) |
 
 The value of `K` determines which of the two input adapters is enabled. The data type `UINT` also allows larger values in principle; however, only the values 0 and 1 are used in this function block.
@@ -43,13 +37,9 @@ This function block does not have any independent data outputs. Data is transmit
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | `adapter::types::unidirectional::ATM` | `OUT` | Plug | Output that provides the data of the selected input |
-
 | `adapter::types::unidirectional::ATM` | `IN1` | Socket | First input (index 0) |
-
 | `adapter::types::unidirectional::ATM` | `IN2` | Socket | Second input (index 1) |
 
 All adapters are of the same unidirectional type, `ATM`. The plug, `OUT`, connects the module to the subsequent logic, while the sockets represent the data sources.
@@ -79,13 +69,9 @@ The actual data forwarding occurs continuously (as soon as the path is active) â
 Since the `ATM_MUX_2` does not have an explicit ECC (Execution Control Chart), its behavior can be described as a simple state loop:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Ready (Idle)** | Waiting for a `REQ` event. The last configured path remains active. |
-
 **Switching** | After receiving `REQ`, the value of `K` is read and the corresponding path is activated. |
-
 **Confirmation** | After the switchover is complete, `CNF` is output and the function block returns to the ready state. |
 
 The function block may be in a brief, undefined state during the switchover â€“ typically, data is not passed on during this time.

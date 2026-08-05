@@ -25,21 +25,13 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Identifier | Type | Description |
-
 |----------|------------|-------------------------------|---------------------------------------------------|
-
 | In | IN | adapter::types::unidirectional::AL | Unidirectional AL adapter as input signal. |
-
 | Out | OUT1 | adapter::types::unidirectional::AL | First output channel (identical to IN). |
-
 | Out | OUT2 | adapter::types::unidirectional::AL | Second output channel. |
-
 | Out | OUT3 | adapter::types::unidirectional::AL | Third output channel. |
-
 | Out | OUT4 | adapter::types::unidirectional::AL | Fourth output channel. |
-
 | Out | OUT5 | adapter::types::unidirectional::AL | Fifth output channel. |
-
 | Out | OUT6 | adapter::types::unidirectional::AL | Sixth output channel. |
 
 ## Functionality

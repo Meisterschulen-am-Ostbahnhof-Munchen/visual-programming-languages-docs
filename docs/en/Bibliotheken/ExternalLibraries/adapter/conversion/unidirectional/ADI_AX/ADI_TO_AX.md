@@ -9,43 +9,32 @@ The **ADI_TO_AX** function block is a composite module that performs a simple si
 ### **Event Inputs**
 
 | Name | Description |
-
 |---|---|
-
 | (No explicit event inputs)* | The function block (FB) uses only the events connected via the ADI_IN adapter. In fact, the event `E1` of the ADI_IN adapter is internally forwarded to the function block `F_NE`. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |---|---|
-
 | (No explicit event outputs)* | The output is via the AX_OUT adapter; the event `E1` of the AX_OUT adapter is sent after successful processing of the `F_NE` call. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |---|---|---|
-
 | *(via ADI_IN adapter)* | `DINT` | The DINT value (e.g., measured value or status code) connected via the adapter socket is received as input `D1` of the ADI_IN adapter. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |---|---|---|
-
 | *(via AX_OUT adapter)* | `BOOL` | The output value is provided as `D1` of the AX_OUT adapter. TRUE if the received DINT value is not 0; otherwise FALSE. |
 
 ### **Adapter**
 
 | Adapter | Name | Direction | Type | Description |
-
 |---|---|---|---|---|
-
 | Socket | ADI_IN | Input | `adapter::types::unidirectional::ADI` | Receives a DINT value (with associated event). |
-
 | Plug | AX_OUT | Output | `adapter::types::unidirectional::AX` | Passes on the resulting BOOL value (with associated event). |
 
 ## Functionality
@@ -84,15 +73,10 @@ This function block has no states of its own, as it is entirely based on the int
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Function |
-
 |---|---|---|
-
 | **ADI_TO_AX** (this function block) | Composite | DINT ≠ 0 → BOOL |
-
 | `BOOL_TO_DINT` (Standard Library) | Function | Direct conversion from BOOL to DINT (e.g., TRUE → 1) |
-
 | `F_NE` (IEC 61131) | Function | General Non-Equal Comparison of Arbitrary Data Types |
-
 **Custom Adapter Converter** | – | Can be easily extended with other comparison functions (F_EQ, F_GT, etc.) |
 
 Compared to a pure BOOL-to-DINT conversion, **ADI_TO_AX** offers the advantage that the DINT value is retained exactly (e.g., 42 → TRUE), whereas a Boolean conversion can only distinguish between TRUE/FALSE and 1/0.

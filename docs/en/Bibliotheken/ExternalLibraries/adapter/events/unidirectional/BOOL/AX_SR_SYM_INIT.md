@@ -8,47 +8,34 @@ The function block **AX_SR_SYM_INIT** implements an event-driven, bistable flip-
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INIT | EInit | Initialization request; linked to `QI` and `Q_INIT` |
-
 | S | Event | Sets output `Q` (via adapter) |
-
 | R | Event | Resets output `Q` |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | INITO | EInit | Initialization confirmation; linked to `QO` |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | QI | BOOL | Input qualifier – controls whether actions are executed |
-
 | Q_INIT | BOOL | Desired value of the output `Q` after initialization |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | QO | BOOL | Output qualifier – reflects the value of `QI` at the time of the triggering event |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | Q | adapter::types::unidirectional::AX | Flip-flop value – set/reset via the interface |
 
 ## Functionality

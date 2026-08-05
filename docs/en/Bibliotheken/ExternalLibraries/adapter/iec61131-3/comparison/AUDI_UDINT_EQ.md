@@ -8,9 +8,7 @@ The function block **AUDI_UDINT_EQ** compares two values of type `UDINT` for equ
 ### **Event Inputs**
 
 | Event | Description |
-
 |-------|--------------|
-
 | `REQ` | Service Request: Starts the comparison. The value of `IN2` is compared with the current value of the adapter `IN1`. |
 
 Note: The comparison can also be started by an event from the socket adapter `IN1` (its event `E1`). This is internally wired in the FB network and allows for event-driven updates when the input value changes.
@@ -21,9 +19,7 @@ The FB does not have direct event outputs. The result of the comparison is outpu
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `IN2` | `UDINT` | Second comparison value (direct input). |
 
 Note: The first comparison value is obtained via the socket adapter `IN1` (whose data input is `D1`).
@@ -34,11 +30,8 @@ No direct data outputs. The comparison result (BOOL) is output via the plug adap
 ### **Adapter**
 
 | Type | Direction | Description |
-
 |-----|----------|--------------|
-
 | `IN1` – Socket | Input | Adapter of type `adapter::types::unidirectional::AUDI`. Provides the first comparison value (data input `D1`) and can send an event (`E1`) to start the comparison.
-
 | `OUT` – Plug | Output | Adapter of type `adapter::types::unidirectional::AX`. Outputs the comparison result as a Boolean value (`D1`) and generates an event (`E1`) upon completion. |
 
 ## Functionality

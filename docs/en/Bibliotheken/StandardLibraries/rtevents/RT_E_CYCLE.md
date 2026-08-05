@@ -28,15 +28,10 @@ After the `START` event, the `EO` event is triggered periodically at time `DT`. 
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2008 ACIN |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac Package | eclipse4diac::rtevents |
 
 ---

@@ -9,51 +9,34 @@ The function block **I_TD_TD** is a wrapper around the base block `I_TD` and gen
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INIT | EInit | Service Initialization, controlled by qualifier `QI` |
 
 ### **Event Outputs**
 
 | Name | Type | Carrying Data |
-
 |------|-----|--------------------|
-
 | INITO | EInit | `QO`, `STATUS` |
-
 | IND | Event | `QO`, `timestamp_data`, `STATUS`, `Q_timeout`, `LOCAL_MINUTE_OFFSET`, `LOCAL_HOUR_OFFSET` |
-
 | TIMEOUT | Event | `timestamp_timeout`, `STATUS`, `Q_timeout` |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | QI | BOOL | Input Qualifier (Controls the Initialization Process) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | QO | BOOL | Output Qualifier (Processing Status) |
-
 | STATUS | STRING | Status Message |
-
 | Q_timeout | BOOL | Timeout Flag |
-
 | timestamp_timeout | DINT | Timeout Timestamp |
-
 | timestamp_data | DINT | Timestamp of valid data |
-
 TD | DT | Combined time/date (IEC 61131-3 `DT`) |
-
 LOCAL_MINUTE_OFFSET | SINT | Local minute offset (SPN 1601, Unit: 1 min/bit, Offset -125) |
-
 LOCAL_HOUR_OFFSET | SINT | Local hour offset (SPN 1602, Unit: 1 h/bit, Offset -125) |
 
 ### **Adapter**

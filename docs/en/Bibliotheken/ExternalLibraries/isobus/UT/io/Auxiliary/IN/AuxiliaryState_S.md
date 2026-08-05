@@ -13,11 +13,8 @@ AuxiliaryState_S` is a structured data type (struct) and therefore does not have
 ### **Structured Data Fields**
 
 | Name | Data Type | Initial Value | Comment |
-
 | :--- | :--- | :--- | :--- |
-
 | `value` | `USINT` (0...255) | 255 | Represents the value of the auxiliary input. |
-
 | `bCyclic` | `BOOL` | `TRUE` | Controls the cyclic transfer. When set to `FALSE`, the message is not repeated every 200 ms. |
 
 ## Functionality

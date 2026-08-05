@@ -8,25 +8,19 @@ The **ALI_D_FF_HYS** function block implements a data latch (D flip-flop) with a
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |-----------|--------|-------------------------------------------|
-
 | `INIT` | EInit | Sets the hysteresis value for the switching threshold. |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |-----------|--------|------------------------------------------|
-
 | `INITO` | EInit | Confirmation of successful initialization. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |---------------|------|-----------------------------------------------|
-
 | `HYSTERESIS` | LINT | Hysteresis bandwidth (e.g., as an integer) |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ No direct data outputs – output is via the adapter `Q`.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|--------------------------------------------|-----------------------------|
-
 | Socket | `I` | `adapter::types::unidirectional::ALI` | Input value (data + clock) |
-
 | Plug | `Q` | `adapter::types::unidirectional::ALI` | Output value (latched value) |
 
 The adapter `I` provides two signals:
@@ -94,14 +85,10 @@ Typical applications for this function block include:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature |
-
 |------------------------|------------------------------------------------------|
 | **ALI_D_FF** (without hysteresis) | Simple D flip-flop without noise suppression |
-
 **ALI_D_FF_HYS** (this one) | D flip-flop with configurable hysteresis for noise filtering |
-
 Schmitt trigger function block | Similar function, but often with fixed thresholds |
-
 **E_D_FF_ANY_HYS** | Internal logic, generic type (no adapter format) |
 
 The advantage of **ALI_D_FF_HYS** lies in its direct adapter connection, enabling seamless integration into existing IEC 61499 adapter networks.

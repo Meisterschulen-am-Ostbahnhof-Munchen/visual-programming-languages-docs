@@ -11,25 +11,19 @@ The function block `AD_DEMUX_4` is a generic AD demultiplexer. It distributes an
 ### **Event Inputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | `REQ` | Sets the index `K` and triggers the switchover. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | `CNF` | Confirms successful switching to the output determined by `K`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |--------|--------|--------------|
-
 | `K` | `UINT` | Index that determines the active output (value range depends on the specific parameterization – typically 0 to 3 or 1 to 4). |
 
 ### **Data Outputs**
@@ -41,23 +35,16 @@ No separate data outputs are available.
 #### Socket (Input)
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `IN` | `adapter::types::unidirectional::AD` | Input adapter whose connection is redirected to the selected output. |
 
 #### Plugs (Outputs)
 
 | Name | Type | Description |
-
 |-------|-----|--------------|
-
 | `OUT1` | `adapter::types::unidirectional::AD` | First output. |
-
 | `OUT2` | `adapter::types::unidirectional::AD` | Second output. |
-
 | `OUT3` | `adapter::types::unidirectional::AD` | Third output. |
-
 | `OUT4` | `adapter::types::unidirectional::AD` | Fourth output. |
 
 ## Functionality

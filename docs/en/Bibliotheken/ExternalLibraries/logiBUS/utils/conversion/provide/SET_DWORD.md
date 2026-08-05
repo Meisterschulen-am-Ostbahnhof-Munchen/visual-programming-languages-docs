@@ -8,9 +8,7 @@ The function block `SET_DWORD` is used to write a DWORD value to a target variab
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|---------|
-
 | REQ | Event | Normal Execution Request – triggers the write operation |
 
 The event `REQ` simultaneously provides the data `IN` and `OUT`.
@@ -18,9 +16,7 @@ The event `REQ` simultaneously provides the data `IN` and `OUT`.
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|---------|
-
 | CNF | Event | Execution Confirmation – sent after successful execution |
 
 The output `CNF` references the modified variable `OUT`.
@@ -28,17 +24,13 @@ The output `CNF` references the modified variable `OUT`.
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|---------|
-
 | IN | DWORD | Value to be written to the target variable (initial value: 0) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|---------|
-
 | OUT | DWORD | Target variable (InOut) – the value of `IN` is written here (initial value: 0) |
 
 **Note:** `OUT` is declared as an InOut variable, meaning it can be referenced externally and its memory location is directly modified by the function block. It appears in the function block network as both an output and an input.
@@ -64,9 +56,7 @@ The event `CNF` is then sent. The function block is stateless and executes the a
 The function block consists of a simple state machine with exactly one state:
 
 | State | Triggering Event | Action | Output |
-
 |---------|----------------------|--------|---------|
-
 | `REQ` | `REQ` | `OUT := IN;` | `CNF` |
 
 There are no wait states or branches.

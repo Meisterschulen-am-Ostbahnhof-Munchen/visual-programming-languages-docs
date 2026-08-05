@@ -21,11 +21,8 @@ No direct data outputs are available. The converted data is output via the **ADI
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **ALI_IN** | `adapter::types::unidirectional::ALI` | Socket (Input) | Returns the LINT value and an associated event (E1). |
-
 | **ADI_OUT** | `adapter::types::unidirectional::ADI` | Plug (Output) | Outputs the converted DINT value and an acknowledgment event (E1). |
 
 ## Functionality

@@ -11,51 +11,34 @@ The function block **DataPanel_MI_IW_4_20mA** is a service interface function bl
 ### **Event Inputs**
 
 | Event | Type | Description | Associated Variables |
-
 |----------|-------|------------------------------------------------|---------------------------------------------|
-
 | `INIT` | EInit | Service Block Initialization | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis |
-
 | `REQ` | Event | Request for a Measured Value Update | QI |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Carried Variables |
-
 |----------|-------|----------------------------------------------------|---------------------------|
-
 | `INITO` | EInit | Confirmation of Successful Initialization | QO, STATUS |
-
 | `CNF` | Event | Confirmation of a Requested Measurement | QO, STATUS, IN |
-
 | `IND` | Event | Asynchronous Display of an Incoming Measured Value | QO, STATUS, IN |
 
 ### **Data Inputs**
 
 | Variable | Type | Description | Initial Value |
-
 |------------------------|---------------|-----------------------------------------------------------|-----------------------------------|
-
 | `QI` | BOOL | Qualifier for the Event Input | – |
-
 | `PARAMS` | STRING | Parameter for Service Initialization | – |
-
 | `u8SAMember` | USINT | Node Address (224…239) of the Slave Device | `MI::MI_00` (224) |
-
 | `Input` | *DataPanel::io::MI::AI::DataPanel_MI_AI_S* | Analog input channel identification (e.g., AnalogInput_1A..8B) | `Invalid` |
-
 | `AnalogInput_hysteresis` | WORD | Hysteresis value for signal smoothing | – |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|--------|-------------------------------------------------|
-
 | `QO` | BOOL | Qualifier for event output |
-
 | `STATUS` | STRING | Status message (e.g., error, initialization) |
-
 | `IN` | WORD | Raw value read from analog input |
 
 ### **Adapter**

@@ -9,9 +9,7 @@ The function block **AUDI_UDINT_NE** performs a not-equal comparison between a v
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Serves as a service request to initiate the comparison. The data input `IN2` is also processed. |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ There are no separate event outputs. The comparison result and the corresponding
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | IN2 | UDINT | Second comparison value. |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ There are no direct data outputs. The comparison result (Boolean value) is outpu
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket (Input) | Returns the first comparison value as type UDINT and the start event for processing. |
-
 | OUT | `adapter::types::unidirectional::AX` | Plug (Output) | Returns the result of the inequality check (Boolean) and the confirmation event. |
 
 ## Functionality

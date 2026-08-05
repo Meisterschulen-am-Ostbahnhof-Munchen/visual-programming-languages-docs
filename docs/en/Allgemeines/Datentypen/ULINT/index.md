@@ -5,11 +5,8 @@ Unsigned long integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 64 |
-
 | **Value Range** | 0 to 2^64-1 |
-
 | **Reference** | Table 10, No. 9 |
 
 ## Use in Programming

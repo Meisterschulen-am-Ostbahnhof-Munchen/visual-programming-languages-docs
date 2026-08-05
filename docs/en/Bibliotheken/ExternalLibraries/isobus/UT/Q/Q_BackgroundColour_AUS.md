@@ -11,37 +11,27 @@ The block is supplied with the new color via a socket and returns the previous c
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |--------|-------|------------------------------------|---------------------|
-
 | `INIT` | EInit | Service Initialization | `u16ObjId` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With Variables |
-
 |---------|-------|----------------------------------------|-----------------------------|
-
 | `INITO` | EInit | Initialization Acknowledgement | – |
-
 | `CNF` | Event | Acknowledgement of Requested Service | `STATUS`, `s16result` |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |--------------|----------|-----------------|------------------------------------|
-
 | `u16ObjId` | UINT | `ID_NULL` | Object ID of the object to be modified |
 
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |-------------|----------|---------------------------------------------------------|
-
 | `STATUS` | STRING | Service status (e.g., error message or "OK") |
-
 | `s16result` | INT | Return value (see description – error codes) |
 
 ### **Adapter**

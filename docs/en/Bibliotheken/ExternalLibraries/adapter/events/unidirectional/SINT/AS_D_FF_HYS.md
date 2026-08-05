@@ -10,25 +10,19 @@ The function block **AS_D_FF_HYS** implements a data-triggered flip-flop (D-latc
 ### **Event Inputs**
 
 | Name | Type | Comment | With Data |
-
 |--------|--------|---------------------|-----------|
-
 | `INIT` | EInit | Sets the hysteresis value | `HYSTERESIS` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |---------|--------|----------------------|
-
 | `INITO` | EInit | Confirmation of INIT processing |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |--------------|------|-------------------------------|
-
 | `HYSTERESIS` | SINT | Hysteresis Bandwidth (Integer Value) |
 
 ### **Data Outputs**
@@ -38,11 +32,8 @@ No direct data outputs – the output value is provided via the `Q` adapter.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|---------------------------------------------|------------------------------------|
-
 | Socket | `I` | `adapter::types::unidirectional::AS` | Input Signal (Value and Clock) |
-
 | Plug | `Q` | `adapter::types::unidirectional::AS` | Output signal (latched with hysteresis) |
 
 The `AS` (unidirectional) adapters typically have an event port `E1` and a data port `D1`. The socket `I` provides the clock signal via `I.E1` and the data value to be latched via `I.D1`. The plug `Q` outputs an event via `Q.E1` and the filtered output value via `Q.D1`.
@@ -75,13 +66,9 @@ The function block (FB) has **no explicit state machine** that is externally vis
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property | Difference to AS_D_FF_HYS |
-
 -------------------|-----------------------------------------------------|-----------------------------------------------------|
-
 | `E_D_FF` | Classic D flip-flop without hysteresis | No filtering; output follows each clock cycle. |
-
 | `E_D_FF_HYS` | D flip-flop with hysteresis (same logic) | No dedicated `INIT` input; hysteresis is set via data if necessary. |
-
 | `AS_FF_HYS` | Flip-flop with hysteresis and dedicated adapter interface | Possibly different coupling, similar function. |
 
 ## Conclusion

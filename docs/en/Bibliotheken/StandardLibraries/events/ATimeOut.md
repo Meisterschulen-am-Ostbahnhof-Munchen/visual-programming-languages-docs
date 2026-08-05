@@ -46,13 +46,9 @@ The adapter supports two basic processes:
 ## ⚖️ Comparison with ARTimeOut
 
 | Feature | ATimeOut (this) | ARTimeOut |
-
 |----------------|-------------------|-----------|
-
 | Type | Adapter | Adapter |
-
 | Retriggerable | No | Yes |
-
 | Event START | Start Timer | Start/Reset Timer |
 
 ## Conclusion

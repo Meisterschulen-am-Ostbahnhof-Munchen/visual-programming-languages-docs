@@ -8,41 +8,29 @@ The **NextVT** function block is a service interface block that enables switchin
 ### **Event Inputs**
 
 | Event | Data Type | With Variables | Description |
-
 |----------|-----------|----------------|---------------|
-
 | INIT | EInit | QI | Service Initialization. Triggered to configure the block. |
-
 | REQ | Event | QI | Service request. Starts the process to switch to the next available VT. |
 
 ### **Event Outputs**
 
 | Event | Data Type | With Variables | Description |
-
 |----------|-----------|---------------|---------------|
-
 | INITO | EInit | QO, STATUS | Initialization confirmation. Signals whether the initialization was successful. |
-
 | CNF | Event | QO, STATUS, s16Result | Switchover confirmation. Outputs as soon as the switch to the next VT has been initiated. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|---------------|
-
 | QI | BOOL | Quality input. TRUE activates the service. FALSE means no action is taken. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |-----------|--------|---------------|
-
 | QO | BOOL | Quality output. TRUE if the service was successful. |
-
 | STATUS | STRING | Status message regarding the result of the last operation. |
-
 | s16Result | INT | Return value: 0 = E_NO_ERR (successful), negative value = error code. |
 
 ### **Adapters**

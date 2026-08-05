@@ -9,53 +9,35 @@ The **INI** function block is used for the secure reading and writing of configu
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |--------|---------|----------------------------------------------|
-
 | INIT | EInit | Initializes the function block and opens the INI file |
-
 | SET | Event | Writes the value of `VALUE` for the current key |
-
 GET | Event | Reads the value of the current key |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |--------|---------|----------------------------------------------|
-
 | INITO | EInit | Initialization Confirmation |
-
 | SETO | Event | Write Confirmation |
-
 | GETO | Event | Read Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |---------------|--------|------------------------------------------------|
-
 | QI | BOOL | Event Input Qualifier (controls execution) |
-
 | SECTION | STRING | Section Name in the INI File |
-
 | KEY | STRING | Key name within the section |
-
 | VALUE | ANY | Value to be set (for SET) |
-
 | DEFAULT_VALUE | ANY | Default value if key does not exist (for GET) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |---------|--------|------------------------------------------------|
-
 | QO | BOOL | Event output qualifier (indicates success/failure) |
-
 | STATUS | STRING | Status information (e.g., error message) |
-
 | VALUEO | ANY | Value retrieved (for GET) or confirmed set value |
 
 ### **Adapters**
@@ -98,13 +80,9 @@ State transitions are controlled by the INIT, SET, and GET events and their corr
 ## Comparison with Similar Function Blocks
 
 | Function Block | Data Source | Type Support | Event Interface |
-
 |------------|------------------|-----------------------|-----------------------|
-
 | INI | settings.ini | ANY (generic) | INIT, SET, GET |
-
 | FILE_READ | Text File | STRING | REQ, CNF |
-
 | PARAM_DB | Database | Type-specific | Complex |
 
 The INI function block stands out due to its simplicity and direct connection to INI files, without the need for additional drivers or databases. Other function blocks either offer more flexibility (database) or are limited to simple text input/output.

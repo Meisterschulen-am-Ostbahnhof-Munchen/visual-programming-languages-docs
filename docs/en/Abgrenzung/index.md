@@ -85,15 +85,10 @@ IEC 61131-3 is the globally established standard for programmable logic controll
 ## Summary: Why Program Visually?
 
 | Characteristic | Textual Languages | Visual Languages |
-
 | :--- | :--- | :--- |
-
 **Learning Curve** | Often steeper (memorizing syntax) | Flatter (intuitive symbols) |
-
 **Abstraction** | Very high possible | Good for data and signal flows |
-
 **Error Proneness** | Syntax errors frequent | Syntax errors often impossible with GUI |
-
 **Areas of Application** | Web, Desktop, System-level | Automation, Teaching, Workflow Design |
 
 **Learning Curve**

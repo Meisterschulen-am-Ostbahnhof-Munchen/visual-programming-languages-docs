@@ -8,51 +8,36 @@ The function block **IA_COGSOGRapidUpdate** serves as an ISOBUS adapter for the 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INIT | EInit | Service initialization, triggered by input QI |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INITO | EInit | Initialization acknowledgment, returns QO and STATUS |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | QI | BOOL | Input qualifier for initialization |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | QO | BOOL | Output qualifier (initialization status) |
-
 | STATUS | STRING | Status message (e.g., error text or "OK") |
 
 ### **Adapter**
 
 | Adapter Name | Type | Comment |
-
 |--------------|-----|-----------|
-
 | COG | adapter::types::unidirectional::AUI | Course Over Ground |
-
 | SOG | adapter::types::unidirectional::AUI | Speed Over Ground |
-
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout status (active when no update occurs) |
-
 | SID | adapter::types::unidirectional::AUS | Sequence ID (sequential number of the data record) |
-
 | COG_REF | adapter::types::unidirectional::AB | Course reference (e.g., True/Magnetic) |
 
 ## Functionality
@@ -89,17 +74,11 @@ The **COG**, **SOG**, **SID**, and **COG_REF** adapters are triggered together w
 The function block does not have explicitly modeled states; however, the following operating phases can be derived:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Inactive** | INIT not yet triggered or QI = FALSE |
-
 | **Initializing** | After INIT, until INITO is reported with QO |
-
 | **Active (Data Received)** | Regular reception of PGN 129026, adapter updates |
-
 | **Timeout** | No valid message within the timeout threshold – TIMEOUT adapter active |
-
 | **Error** | Initialization failed (STATUS = error text) |
 
 ## Application Scenarios

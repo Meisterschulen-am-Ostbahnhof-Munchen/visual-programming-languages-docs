@@ -9,27 +9,20 @@ The function block **AULI_D_FF_HYS_TMIN** implements a clock-edge-triggered D fl
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `INIT` | `EInit` | Initialization request. Sets the parameters hysteresis and minimum time. |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `INITO` | `EInit` | Confirmation of successful initialization. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `HYSTERESIS` | `ULINT` | Hysteresis band as an unsigned integer. The output only changes its value when the input exceeds the band. |
-
 | `Tmin` | `TIME` | Minimum time between two triggered events at the output. Prevents excessively fast switching. |
 
 ### **Data Outputs**
@@ -39,11 +32,8 @@ No direct data outputs. The latched information is provided via the `Q` adapter.
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-
 |---------|----------|-----|-----------|
-
 | `I` (Socket) | **Input** | `adapter::types::unidirectional::AULI` | Receiving adapter that provides the signal to be latched. Contains the event and data signals `E1` and `D1`. |
-
 | `Q` (Plug) | **Output** | `adapter::types::unidirectional::AULI` | Output adapter that provides the currently held value. Signal `E1` indicates a value change, `D1` contains the value. |
 
 ## Functionality
@@ -71,15 +61,10 @@ The function block internally uses the function block `E_D_FF_ANY_HYS_TMIN`, whi
 The function block does not have its own explicit states, but delegates to the internal function block. However, the essential behaviors can be described as follows:
 
 | Phase | Description |
-
 |-------|--------------|
-
 | **Initial** | After power-on, `HYSTERESIS` and `Tmin` are not yet applied. A `INIT` event must set the parameters. |
-
 | **Ready** | After successful initialization, the function block waits for clock events at input `I.E1`. |
-
 | **Lock (Tmin active)** | After an output event, any further takeover is blocked for the duration `Tmin`. |
-
 | **Takeover (on valid edge)** | If the hysteresis is exceeded and no lock is present, the current input value is adopted and output. |
 
 ## Application Scenarios
@@ -90,15 +75,10 @@ The function block does not have its own explicit states, but delegates to the i
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-
 |----------|---------------|
-
 | **Simple D-FF** | No hysteresis, no delay – instantly responds to every clock edge. |
-
 **D-FF with Hysteresis** | Contains only the hysteresis band, no time limit between outputs. |
-
 **D-FF with Tmin** | Minimum dwell time only, without hysteresis – can still switch quickly in noisy environments. |
-
 **AULI_D_FF_HYS_TMIN** | Combines hysteresis and minimum dwell time – more robust against noise and protects downstream components from excessively fast switching. |
 
 ## Conclusion

@@ -21,15 +21,10 @@ Not present – the result is output via **Plug OUT** as an adapter.
 ## ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | **IN1** | Socket (Input) | `adapter::types::unidirectional::AUDI` | First multiplication factor. |
-
 | **IN2** | Socket (Input) | `adapter::types::unidirectional::AUDI` | Second multiplication factor. |
-
 | **IN3** | Socket (Input) | `adapter::types::unidirectional::AUDI` | Third multiplication factor. |
-
 | **OUT** | Plug (Output) | `adapter::types::unidirectional::AUDI` | Result of multiplication `IN1 * IN2 * IN3`. |
 
 ## Functionality

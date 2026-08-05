@@ -8,9 +8,7 @@ The **GET_UDINT** function block reads the current value of a variable of type *
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Normal Execution Request |
 
 *Associated Data:*
@@ -20,9 +18,7 @@ The **GET_UDINT** function block reads the current value of a variable of type *
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Execution Confirmation |
 
 *Associated Data:*
@@ -33,17 +29,13 @@ The **GET_UDINT** function block reads the current value of a variable of type *
 ### **Data Inputs**
 
 | Name | Type | Default Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | IN | UDINT (InOut) | 0 | Source Variable to be Read |
 
 ### **Data Outputs**
 
 | Name | Type | Default Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | OUT | UDINT | 0 | Buffered Output Value |
 
 #### **Adapter**

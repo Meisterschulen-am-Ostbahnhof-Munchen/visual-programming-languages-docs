@@ -8,25 +8,19 @@ The function block **Q_ObjHideShow_AB** serves as a wrapper for the function blo
 ### **Event Inputs**
 
 | Event | with variables | Comment |
-
 |---|---|---|
-
 | `INIT` | `u16ObjId` | Service Initialization; Object ID is passed |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |---|---|
-
 | `INITO` | Initialization confirmed |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |---|---|---|
-
 | `u16ObjId` | UINT | Object ID |
 
 ### **Data Outputs**
@@ -35,11 +29,8 @@ No explicit data outputs at the FB level. The output data is provided via the ad
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |---|---|---|---|
-
 Socket (Input) | `qVisible` | `adapter::types::unidirectional::AB` | Target Visibility: 0 = hidden, 1 = displayed |
-
 | Plug (Output) | `qOldVisible` | `adapter::types::unidirectional::AB` | Previous Visibility Value: 0 = hidden, 1 = displayed, 0xFF = undefined |
 
 ## Functionality
@@ -76,13 +67,9 @@ The FB itself does not have its own state machine. Its behavior is entirely dete
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-
 |---|---|
-
 | `Q_ObjHideShow` (direct) | Event/data interface without adapter; direct connection required |
-
 | `Q_ObjHideShow_AB` (this function block) | Uses AB adapters for loose coupling; easier integration into adapter-based networks |
-
 | Other AB-based wrappers | Similar concept for other commands (e.g., `Q_ObjMove_AB`), but specifically designed for visibility |
 
 The main advantage of the wrapper lies in its adaptation to the AB adapter interface without changing the actual functionality.

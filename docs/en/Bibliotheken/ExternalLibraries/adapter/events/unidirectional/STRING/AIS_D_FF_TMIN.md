@@ -9,25 +9,19 @@ The function block **AIS_D_FF_TMIN** implements a data-dependent flip-flop (D fl
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|------|-----------|
-
 | `INIT` | EInit | Initialization Request (with `Tmin`) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|------|-----------|
-
 | `INITO` | EInit | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|------|-----------|
-
 | `Tmin` | TIME | Minimum time interval between two EO events |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ The FB has no data outputs of its own. Output is exclusively via the adapter plu
 ### **Adapter**
 
 | Direction | Label | Adapter Type | Comment |
-
 |----------|-------------|------------|-----------|
-
 | **Plug** (Output) | `Q` | `adapter::types::unidirectional::AIS` | Latched output value |
-
 | **Socket** (Input) | `I` | `adapter::types::unidirectional::AIS` | Input value to be latched |
 
 The adapter `AIS` is unidirectional and delivers the actual signals via the event/data interfaces `E1` and `D1`.

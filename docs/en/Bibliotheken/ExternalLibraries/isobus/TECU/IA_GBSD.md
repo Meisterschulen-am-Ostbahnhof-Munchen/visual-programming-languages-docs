@@ -8,47 +8,34 @@ The function block **IA_GBSD** serves as an adapter wrapper for the ISOBUS-compa
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------|
-
 | INIT | EInit | Service Initialization |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|-------------------------------|
-
 | INITO | EInit | Initialization Confirm |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|----------------------------|
-
 | QI | BOOL | Event Input Qualifier |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |--------|--------|------------------------------|
-
 | QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Status Information |
 
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |----------|-------------------------------|----------------------------------------|
-
 | SPEED | adapter::types::unidirectional::AUI | Ground-based machine speed |
-
 | DISTANCE | adapter::types::unidirectional::AUDI | Ground-based machine distance |
-
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout status |
 
 ## Functionality

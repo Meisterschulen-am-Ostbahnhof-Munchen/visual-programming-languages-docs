@@ -27,11 +27,8 @@ None. Output data is transmitted via the plug adapter `AD_OUT`.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|---------|----------------------------------------|----------------------------------------|
-
 | Socket | ALI_IN | `adapter::types::unidirectional::ALI` | Input adapter of type LINT |
-
 | Plug | AD_OUT | `adapter::types::unidirectional::AD` | Output Adapter of Type DWORD |
 
 ## Functionality

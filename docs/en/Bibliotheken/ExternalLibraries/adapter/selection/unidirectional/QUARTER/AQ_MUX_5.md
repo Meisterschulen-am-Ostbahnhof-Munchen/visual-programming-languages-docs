@@ -9,25 +9,19 @@ The function block `AQ_MUX_5` is a generic multiplexer for analog outputs (AQ). 
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Adoption of index `K` and switching of the corresponding input to the output |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirmation that index `K` has been adopted and the output updated |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | `UINT` | Index for selecting the input (0 = IN1, 1 = IN2, 2 = IN3, 3 = IN4, 4 = IN5) |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ No separate data outputs; the selected analog value is provided via the `OUT` ad
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 Socket (Input) | `IN1` | `adapter::types::unidirectional::AQ` | 1st Analog Input Value |
-
 | Socket (Input) | `IN2` | `adapter::types::unidirectional::AQ` | 2nd Analog Input Value |
-
 | Socket (Input) | `IN3` | `adapter::types::unidirectional::AQ` | 3. Analog Input Value |
-
 Socket (Input) | `IN4` | `adapter::types::unidirectional::AQ` | 4. Analog Input Value |
-
 Socket (Input) | `IN5` | `adapter::types::unidirectional::AQ` | 5. Analog Input Value |
-
 Plug (Output) | `OUT` | `adapter::types::unidirectional::AQ` | Output that provides the value of the selected input |
 
 ## Functionality

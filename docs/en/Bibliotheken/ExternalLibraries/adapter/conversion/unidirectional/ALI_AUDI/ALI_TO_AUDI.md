@@ -27,11 +27,8 @@ No dedicated data outputs are available. The converted data value is output via 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | ALI_IN | `adapter::types::unidirectional::ALI` | Socket (Input) | Returns the LINT value (64-bit signed) and the associated event. |
-
 | AUDI_OUT | `adapter::types::unidirectional::AUDI` | Plug (Output) | Provides the converted UDINT value (32-bit unsigned) and the acknowledgment event. |
 
 ## Functionality

@@ -5,9 +5,7 @@ The **LTOD** (Long Time of Day) data type represents the time of day with a high
 According to **DIN EN 61131-3** (Table 10, No. 14b):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 64 bits |
-
 | **Default Value** | `LTOD#00:00:00` |
 
 ## Literal Representation

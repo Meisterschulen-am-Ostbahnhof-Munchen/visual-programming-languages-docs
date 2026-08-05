@@ -25,17 +25,11 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AL` | **IN** | Socket (Input) | Incoming adapter data stream, distributed to all outputs. |
-
 | `adapter::types::unidirectional::AL` | **OUT1** | Plug (Output) | First output – receives an identical copy of the input data stream. |
-
 | `adapter::types::unidirectional::AL` | **OUT2** | Plug (Output) | Second output – receives an identical copy of the input data stream. |
-
 | `adapter::types::unidirectional::AL` | **OUT3** | Plug (Output) | Third output – receives an identical copy of the input data stream. |
-
 | `adapter::types::unidirectional::AL` | **OUT4** | Plug (Output) | Fourth output – receives an identical copy of the input data stream. |
 
 ## Functionality

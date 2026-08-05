@@ -20,11 +20,8 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | IN | `adapter::types::unidirectional::AIS` | Incoming AIS data stream, distributed to all outputs. |
-
 | Plug (Output) | OUT1 … OUT7 | `adapter::types::unidirectional::AIS` | Seven identical outputs, each forwarding the incoming AIS data stream unchanged. |
 
 ## Functionality

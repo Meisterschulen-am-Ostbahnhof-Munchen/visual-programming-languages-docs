@@ -20,11 +20,8 @@ The **AL_TO_AS** function block is a composite function block that converts a un
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | Socket | AL_IN | Input | Unidirectional AL adapter that provides LWORD data. |
-
 | Plug | AS_OUT | Output | Unidirectional AS adapter that outputs the converted SINT data. |
 
 ## Functionality
@@ -55,15 +52,10 @@ The FB does not have its own state machine. Its behavior is purely combinatorial
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Special Feature |
-
 |----------|-------------|-------------|--------------|
-
 **AL_TO_AS** | LWORD (Adapter) | SINT (Adapter) | Composite; uses `F_LWORD_TO_SINT` |
-
 | `F_LWORD_TO_SINT` | LWORD (Data) | SINT (Data) | Data converter only, no adapter integration |
-
 | `F_LWORD_TO_DINT` | LWORD | DINT | Conversion to 32-bit integer |
-
 | `F_SINT_TO_LWORD` | SINT | LWORD | Reverse direction (if available) |
 
 The **AL_TO_AS** stands out due to its adapter-to-adapter interface, which enables a direct connection between two different adapter types without the need for additional manual wiring of individual events and data.

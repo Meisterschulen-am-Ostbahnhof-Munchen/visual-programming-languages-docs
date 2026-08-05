@@ -64,13 +64,9 @@ The **F_SUB_DATE_DATE** function block is a standards-compliant function block f
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_SUB_DATE_DATE | F_SUB_TIME | F_SUB_DT_DT |
-
 |---------------|-----------------|------------|-------------|
-
 | Input Types | DATE - DATE | TIME - TIME | DT - DT |
-
 | Output Type | TIME | TIME | TIME |
-
 | Accuracy | Day-accurate | Nanosecond | Microsecond |
 
 ## Conclusion

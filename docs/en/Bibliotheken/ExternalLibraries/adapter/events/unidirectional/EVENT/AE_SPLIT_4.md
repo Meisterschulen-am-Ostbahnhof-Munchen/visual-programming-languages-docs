@@ -20,17 +20,11 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | **IN** | `adapter::types::unidirectional::AE` | Receives a unidirectional adapter event (event + associated data). |
-
 | Plug (Output) | **OUT1** | `adapter::types::unidirectional::AE` | First output – receives the same event and data as the input. |
-
 | Plug (Output) | **OUT2** | `adapter::types::unidirectional::AE` | Second output. |
-
 | Plug (Output) | **OUT3** | `adapter::types::unidirectional::AE` | Third output. |
-
 Plug (Output) | **OUT4** | `adapter::types::unidirectional::AE` | Fourth output. |
 
 ## Functionality

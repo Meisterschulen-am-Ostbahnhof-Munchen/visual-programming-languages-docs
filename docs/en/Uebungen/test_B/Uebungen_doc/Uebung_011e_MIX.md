@@ -12,11 +12,8 @@ In this specific example: An input of `10` at input I1 is converted to `F_RAW_TO
 This exercise consists of a linear chain of three function blocks (no sub-blocks):
 
 | Function Block Name | Type | Description |
-
 | `InputNumber_I1` | `isobus::UT::io::NumericValue::NumericValue_ID` | Reads a numeric value (DWORD) from the pool `InputNumber_I1`. The parameter `u16ObjId` is set to `"InputNumber_I1"`, and the qualifier `QI` is `TRUE`. The event output `IND` signals a new value at the input `IN`. |
-
 | `F_DWORD_TO_REAL` | `iec61131::conversion::F_DWORD_TO_REAL` | Converts a `DWORD` value to a `REAL` value (according to IEC 61131-3). The input `REQ` starts the conversion, and upon completion, the output `CNF` is triggered. |
-
 Q_NumericValue_PHYS` | `isobus::UT::Q::Q_NumericValue_PHYS` | Writes a physical `REAL` value to the output object `OutputNumber_N3` (taken from the pool `OutputNumber_N3`). The parameter `stObj` is set to the corresponding string. The function block expects a physical value at input `rPhys` and outputs it to the pool. |
 
 ## Program Flow and Connections

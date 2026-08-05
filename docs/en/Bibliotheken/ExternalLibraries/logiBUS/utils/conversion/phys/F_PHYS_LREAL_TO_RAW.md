@@ -16,39 +16,28 @@ This function block is suitable for applications that need to integrate physical
 ### **Event Inputs**
 
 | Event | Description | Accompanying Variables |
-
 |----------|--------------|-----------------------|
-
 | `REQ` | Starts the conversion | `lrPhys`, `stObj` |
 
 ### **Event Outputs**
 
 | Event | Description | Accompanying Variables |
-
 |----------|--------------|------------------------|
-
 | `CNF` | Confirms the conversion is complete | `xOver`, `xUnder` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |---------|----------------------------------------------------------|-------------|---------------------------------------------------|
-
 | `lrPhys`| `LREAL` | – | Physical Input Value (e.g., Temperature, Pressure) |
-
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | `(u16ObjId := 65535, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0)` | Data Structure with Scaling and Offset Parameters |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |----------|--------|----------------------------------------------|
-
 | *(no name)* | `UDINT` | Calculated ISOBUS raw value (0 … 4294967295) |
-
 | `xOver` | `BOOL` | `TRUE`, if the input exceeds the upper limit (overflow) |
-
 | `xUnder` | `BOOL` | `TRUE`, if the input falls below the lower limit (underflow) |
 
 ### **Adapters**

@@ -8,33 +8,25 @@ The **AVG** (Array Average) function block calculates the arithmetic mean (avera
 ### **Event Inputs**
 
 | Event | With Data |
-
 |---|---|
-
 | `REQ` | `A` |
 
 ### **Event Outputs**
 
 | Event | With Data |
-
 |---|---|
-
 | `CNF` | *(Result Output)*, `A` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |---|---|---|---|
-
 | `A` | `ARRAY[*] OF INT` | – | Array of integers whose average is calculated (InOut variable) |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Comment |
-
 |---|---|---|---|
-
 *(no name)* | `REAL` | – | Result of the average value |
 
 ### **Adapters**
@@ -71,15 +63,10 @@ Since this is a **combinatorial function block**, there are no explicit states. 
 ## Comparison with Similar Function Blocks
 
 | Feature | **AVG** | Typical IEC 61131-3 AVG Function Block |
-
 |---|---|---|
-
 | **Parameterization** | Dynamic via array (no limit) | Often static array size or lists |
-
 **Event-driven** | Yes (REQ/CNF) | No (pure function) |
-
 **Output type** | `REAL` | Usually `REAL` or `LREAL` |
-
 **Overflow protection** | Sum as `DINT` | Dependent on implementation |
 
 This function block combines IEC 61499 event control with the compact logic of an IEC 61131-3 average function block, making it particularly suitable for distributed automation systems.

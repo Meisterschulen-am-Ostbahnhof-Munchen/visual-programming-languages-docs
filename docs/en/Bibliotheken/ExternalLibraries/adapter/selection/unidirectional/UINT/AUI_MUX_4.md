@@ -8,25 +8,19 @@ The function block **AUI_MUX_4** is a generic multiplexer for AUI (Unidirectiona
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Sets the index **K** and enables the switching. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirmation that the selection was made according to **K**. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|------------------------|
-
 | K | UINT | Selection Index (0 … 3) |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ None.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|--------|-------------------------------------------------|
-
 | OUT | Plug | AUI | Output Adapter (multiplexed signal) |
-
 | IN1 | Socket | AUI | Data source for K = 0 |
-
 | IN2 | Socket | AUI | Data source for K = 1 |
-
 | IN3 | Socket | AUI | Data source for K = 2 |
-
 | IN4 | Socket | AUI | Data Source for K = 3 |
 
 ## Functionality

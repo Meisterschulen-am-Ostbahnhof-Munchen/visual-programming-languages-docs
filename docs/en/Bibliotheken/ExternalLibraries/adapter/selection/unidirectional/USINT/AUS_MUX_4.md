@@ -9,24 +9,19 @@ The AUS_MUX_4 is a generic function block (FB) according to IEC 61499, which ser
 ### **Event Inputs**
 
 | Event | Description | With |
-
 |----------|--------------|-----|
-
 | **REQ** | Triggers the switching; evaluates the index K. | K |
 
 ### **Event Outputs**
 
 | Event | Description |
 |----------|--------------|
-
 | **CNF** | Confirms successful switching. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | **K** | UINT | Index for selecting the input (value range 0..3). |
 
 ### **Data Outputs**
@@ -36,17 +31,11 @@ The module does not have separate data outputs; the output data is provided via 
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | **IN1** | adapter::types::unidirectional::OFF | First input, active when K = 0 |
-
 Socket (Input) | **IN2** | adapter::types::unidirectional::OFF | Second input, active when K = 1 |
-
 Socket (Input) | **IN3** | adapter::types::unidirectional::OFF | Third input, active when K = 2 |
-
 Socket (Input) | **IN4** | adapter::types::unidirectional::OFF | Fourth input, active when K = 3 |
-
 Plug (Output) | **OUT** | adapter::types::unidirectional::OFF | Output reflecting the currently selected input |
 
 ## Functionality

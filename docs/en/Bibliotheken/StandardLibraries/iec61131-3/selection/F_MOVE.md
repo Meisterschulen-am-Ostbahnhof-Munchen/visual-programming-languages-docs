@@ -62,13 +62,9 @@ The **F_MOVE** is a universal function block for type-safe data transfer, develo
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_MOVE | F_BLOCK_MOVE | F_CAST |
-
 ----------------|---------|--------------|--------|
-
 | Functionality | Single Value | Memory Block | Type Conversion |
-
 | Type Support | ANY | BYTE Array | ANY |
-
 | Latency | 1 Cycle | Variable | 1 Cycle |
 
 ## 🛠️ Related Exercises

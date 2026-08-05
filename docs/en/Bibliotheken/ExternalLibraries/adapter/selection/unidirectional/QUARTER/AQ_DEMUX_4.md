@@ -9,9 +9,7 @@ The **AQ_DEMUX_4** is a generic demultiplexer for the adapter type `AQ` (Analog 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and passes the value on |
 
 **With Variable:** K
@@ -19,17 +17,13 @@ The **AQ_DEMUX_4** is a generic demultiplexer for the adapter type `AQ` (Analog 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of successful demultiplexing |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index of the destination output (1…4) |
 
 ### **Data Outputs**
@@ -39,17 +33,11 @@ No directly declared data outputs – output is handled via the plugins.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | **Plug** | OUT1 | `adapter::types::unidirectional::AQ` | Destination Output 1 |
-
 | **Plug** | OUT2 | `adapter::types::unidirectional::AQ` | Destination Output 2 |
-
 | **Plug** | OUT3 | `adapter::types::unidirectional::AQ` | Destination Output 3 |
-
 | **Plug** | OUT4 | `adapter::types::unidirectional::AQ` | Destination Output 4 |
-
 | **Socket** | IN | `adapter::types::unidirectional::AQ` | Input value to be demultiplexed |
 
 ## Functionality

@@ -9,41 +9,31 @@ The function block `AR2_REAL_TO_X` is a composite function block (FB) for conver
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Request for processing via the adapter (triggers adapter output) |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirmation after adapter processing is complete |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|------|-----------|
-
 | `OUT` | REAL | Output data sent to the adapter (actually: input value for conversion) |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|------|----------------------------------------------|
-
 | `IN` | REAL | Input data returned by the adapter (actually: converted value) |
 
 ### **Adapter**
 
 | Adapter | Type | Comment |
-
 |---------|-----------------------------------------|-----------------------|
-
 | `AR2_OUT` | `adapter::types::bidirectional::AR2` | Bidirectional interface adapter for AR2 conversion |
 
 ## Functionality

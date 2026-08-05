@@ -11,11 +11,8 @@ The **ALR_TO_AI** function block is a composite block that converts an ALR (LREA
 The function block does not have its own top-level event inputs. Event control is handled via the connected socket `ALR_IN`:
 
 | Input | Type | Description |
-
 | Input | Type | Description |
-
 # |---------|-----|--------------|
-
 | `ALR_IN` | ALR (Socket) | Adapter that triggers the conversion via its event (`E1`) |
 
 ### **Event Outputs**
@@ -23,9 +20,7 @@ The function block does not have its own top-level event inputs. Event control i
 The FB does not have any independent event outputs at the top level. Event feedback is provided via the connected plug `AI_OUT`:
 
 | Output | Type | Description |
-
 |---------|-----|---------------|
-
 | `AI_OUT` | AI (Plug) | Adapter that outputs the converted event (`E1`) after successful conversion |
 
 ### **Data Inputs**
@@ -33,9 +28,7 @@ The FB does not have any independent event outputs at the top level. Event feedb
 The **data input signal** is provided via socket `ALR_IN`:
 
 | Adapter Input | Data Type | Description |
-
 -----------------|----------|--------------|
-
 | `ALR_IN.D1` | LREAL | The floating-point value to be converted |
 
 ### **Data Outputs**
@@ -43,9 +36,7 @@ The **data input signal** is provided via socket `ALR_IN`:
 The **data output signal** is provided via plug `AI_OUT`:
 
 | Adapter Output | Data Type | Description |
-
 -----------------|----------|--------------|
-
 | `AI_OUT.D1` | INT | The converted integer value |
 
 ### **Adapter**
@@ -86,13 +77,9 @@ As a composite FB, **ALR_TO_AI** does not have its own state diagram. The intern
 ## Comparison with Similar Function Blocks
 
 | FB | Function | Difference |
-
 |----|----------|-------------|
-
 | **ALR_TO_AI** | Converts LREAL → INT via adapter | Composite, no dedicated state machine; uses IEC 61131 converter |
-
 | `F_LREAL_TO_INT` | Pure data conversion without adapter | Direct FB, requires separate adapter connection |
-
 | `AI_TO_ALR` | Reverse direction INT → LREAL | Different data type and conversion direction |
 
 The **ALR_TO_AI** function block simplifies reuse by encapsulating the adapter logic and conversion in a single block.

@@ -9,25 +9,19 @@ The **AS_DEMUX_2** (Generic FB) is an application-neutral, event-driven demultip
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-----|------------|---------------|
-
 | REQ | Event | Set Index K | K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | index |
 
 ### **Data Outputs**
@@ -59,9 +53,7 @@ After successful forwarding, the **CNF** event is output.
 Since the function block does not store an internal state (purely combinatorial behavior), only a single implicit state exists:
 
 | State | Description |
-
 |---------|--------------|
-
 | *Idle* | Waiting for the **REQ** event. After **REQ**, the output is immediately selected, the data is forwarded, and **CNF** is sent. Return to *Idle*. |
 
 ## Application Scenarios
@@ -72,15 +64,10 @@ Since the function block does not store an internal state (purely combinatorial 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Outputs | Special Features |
-
 |----------|----------|--------------|
-
 | **AS_DEMUX_2** | 2 | Basic two-channel demultiplexer, generic |
-
 | **AS_DEMUX_4** (hypothetical) | 4 | Extended version with four outputs |
-
 **AS_MUX_2** | – | Multiplexer: multiple inputs to one output |
-
 **AS_SELECT** | – | Direct adapter switch without indexing (hardwired) |
 
 The AS_DEMUX_2 is specifically optimized for the bidirectional (but here used unidirectionally) AS adapter interface and, unlike general data blocks, operates exclusively at the adapter level.

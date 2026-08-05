@@ -9,25 +9,19 @@ The function block **AUDI_DEMUX_3** is a generic demultiplexer for the unidirect
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|-----------------------------------------------|
-
 | REQ | Event | Control signal: Adoption of the index `K` and execution of the demultiplex function |
 
 ### **Event Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------------------------------------------|
-
 | CNF | Event | Acknowledgement after successful demultiplexing |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------------------------------------------------------|
-
 | K | UINT | Index (1, 2, or 3) of the desired output channel. Values outside this range will not result in a valid pass-through. |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ No standalone data outputs are available. Output is exclusively via the followin
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-------|------|----------|----------------------------------------------------------|
-
 | Socket | IN | Input | Unidirectional AUDIO adapter that provides the signal to be multiplexed |
-
 | Plug | OUT1 | Output | First unidirectional AUDIO output (K=1) |
-
 | Plug | OUT2 | Output | Second unidirectional AUDIO output (K=2) |
-
 | Plug | OUT3 | Output | Third unidirectional AUDIO output (K=3) |
 
 ## Functionality

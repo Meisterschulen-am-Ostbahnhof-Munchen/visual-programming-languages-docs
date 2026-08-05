@@ -12,9 +12,7 @@ No dedicated event inputs. Events are received exclusively via the **AX adapters
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Execution Confirmation – triggered with each counter update |
 
 ### **Data Inputs**
@@ -34,15 +32,10 @@ No direct data outputs. The result values (current counter value CV and threshol
 ### **Adapters**
 
 ### **Adapter Name ...**** |----------|--------------|-----|-----------|
-
 **Socket (Input)** | CU | `adapter::types::unidirectional::AX` | Count-Up Pulse (Event + Data) |
-
 **Socket (Input)** | R | `adapter::types::unidirectional::AX` | Reset Pulse (Event + Data) |
-
 **Socket (Input)** | PV | `adapter::types::unidirectional::AULI` | Preset Value (Comparison Value for Q Output) |
-
 **Plug (Output)** | Q | `adapter::types::unidirectional::AX` | Counter Reading ≥ Preset? (Boolean Status) |
-
 | **Plug (Output)** | CV | `adapter::types::unidirectional::AULI` | Current Meter Reading (ULINT) |
 
 ## Functionality

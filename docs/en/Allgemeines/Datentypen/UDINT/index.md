@@ -5,11 +5,8 @@ Unsigned double integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 32 |
-
 | **Value Range** | 0 to 4,294,967,295 |
-
 | **Reference** | Table 10, No. 8 |
 
 ## Use in Programming

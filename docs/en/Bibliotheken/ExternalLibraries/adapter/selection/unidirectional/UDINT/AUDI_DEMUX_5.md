@@ -9,25 +9,19 @@ The function block `AUDI_DEMUX_5` is a generic demultiplexer for the unidirectio
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K (triggers processing) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (1..5) for selecting the output adapter |
 
 ### **Data Outputs**
@@ -39,25 +33,17 @@ No data outputs available.
 **Plugs (Output Adapters)**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | OUT1 | Adapter `AUDI` (unidirectional) | First Output |
-
 | OUT2 | Adapter `AUDI` (unidirectional) | Second Output |
-
 | OUT3 | Adapter `AUDI` (unidirectional) | Third Output |
-
 | OUT4 | Adapter `AUDI` (unidirectional) | Fourth Output |
-
 | OUT5 | Adapter `AUDI` (unidirectional) | Fifth Output |
 
 **Socket (Input Adapter)**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN | Adapter `AUDI` (unidirectional) | Input Value to Demultiplex |
 
 ## Functionality

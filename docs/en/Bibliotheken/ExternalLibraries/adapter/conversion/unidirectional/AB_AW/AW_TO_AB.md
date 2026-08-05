@@ -20,11 +20,8 @@ The function block does not have its own data outputs. The converted BYTE result
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|-------------|
-
 | `AW_IN` | Socket (Input) | `adapter::types::unidirectional::AW` | WORD adapter with one event `E1` and one data value `D1` (WORD) |
-
 | `AB_OUT` | Plug (Output) | `adapter::types::unidirectional::AB` | BYTE adapter with one event `E1` and one data value `D1` (BYTE) |
 
 ## Functionality

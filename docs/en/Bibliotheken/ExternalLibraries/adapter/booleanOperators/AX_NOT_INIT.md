@@ -9,17 +9,13 @@ The function block **AX_NOT_INIT** implements a Boolean negation (NOT function) 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|-------------------------|
-
 | INIT | EInit | Initialization Request |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|---------------------------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
@@ -33,11 +29,8 @@ This function block has no direct data outputs. Output data is provided via the 
 ### **Adapters**
 
 | Name | Type | Comment | Direction |
-
 |------|--------------------------------------------------|----------------------|----------|
-
 | IN | adapter::types::unidirectional::AX | Input Value | Socket |
-
 | OUT | adapter::types::unidirectional::AX | Output Value (Negated) | Plug |
 
 ## Functionality

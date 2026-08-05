@@ -8,25 +8,19 @@ The function block **AIS_MUX_4** is a generic AIS multiplexer with four inputs. 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------------------|
-
 | REQ | Event | Sets the index `K` and activates the selection |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------------------------------------------------|
-
 | CNF | Event | Confirmation of index selection (after switching) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|------------------------------|
-
 | K | UINT | Index (0 = IN1, 1 = IN2, …) |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ _None. The output data is provided via the adapter plugin `OUT`.
 ### **Adapter**
 
 | Name | Use | Type | Comment |
-
 |---------|------------|--------------------------------------|-------------------------------------------------------------|
-
 | IN1 | Socket | adapter::types::unidirectional::AIS | First AIS input (for K = 0) |
-
 | IN2 | Socket | adapter::types::unidirectional::AIS | Second AIS input (for K = 1) |
-
 | IN3 | Socket | adapter::types::unidirectional::AIS | Third AIS input (for K = 2) |
-
 | IN4 | Socket | adapter::types::unidirectional::AIS | Fourth AIS input (for K = 3) |
-
 | OUT | Plug | adapter::types::unidirectional::AIS | Output: provides the data of the input selected by `K` |
 
 ## Functionality

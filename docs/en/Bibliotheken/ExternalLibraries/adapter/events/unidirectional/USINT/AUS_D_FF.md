@@ -20,11 +20,8 @@ No direct data outputs. The stored value is output via the adapter output **Q**.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **I** | Socket | `adapter::types::unidirectional::AUS` | Provides the signal to be latched (event E1 and data D1). |
-
 | **Q** | Plug | `adapter::types::unidirectional::AUS` | Outputs the latched value (event E1 and data D1). |
 
 The internally used module `E_D_FF_ANY` expects an event (inherited from **I.E1**) at its **CLK** input and the corresponding data value (from **I.D1**) at **D**. The output event **EO** is forwarded to **Q.E1**, and the stored data value **Q** to **Q.D1**.

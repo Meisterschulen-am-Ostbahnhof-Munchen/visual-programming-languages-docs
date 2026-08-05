@@ -62,13 +62,9 @@ The block uses a **socket** of type `ARTimeOut`. Since it is a socket, the signa
 ## ⚖️ Comparison with Similar Components
 
 | Feature | E_RTimeOut | E_DELAY | E_TABLE |
-
 |--------------|------------|---------|---------|
-
 Reset Function | ✔️ | ❌ | ❌ |
-
 Interface | Adapter | Direct | Direct |
-
 Standard | 61499-2 | 61499-1 | 61499-1 |
 
 ## 🛠️ Related Exercises

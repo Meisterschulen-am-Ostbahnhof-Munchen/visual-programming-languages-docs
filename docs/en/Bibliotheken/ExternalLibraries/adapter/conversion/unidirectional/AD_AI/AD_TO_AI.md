@@ -25,11 +25,8 @@ These are also provided exclusively via the adapters:
 ### **Adapters**
 
 | Adapter Type | Direction | Type | Description |
-
 |-----------|----------|-----|--------------|
-
 | Socket | Input | `adapter::types::unidirectional::AD` | Receives a DWORD value (via event E1 and data D1). |
-
 | Plug | Output | `adapter::types::unidirectional::AI` | Provides the converted INT value (event E1, data D1). |
 
 ## Functionality

@@ -21,23 +21,14 @@ None
 ### **Adapter**
 
 | Name | Type | Direction |
-
 |--------|--------------------------------|----------|
-
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) |
-
 OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-
 OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-
 OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-
 OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-
 OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-
 OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-
 | `OUT7` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
 All adapters are of the unidirectional type `AUDI` and transmit data exclusively from the socket to the plugs.
@@ -64,13 +55,9 @@ The component does not contain a state machine (ECC). Its behavior is completely
 ## Comparison with Similar Components
 
 | Component | Distribution | Adapter Type |
-
 ------------------|--------------------------|------------------------|
-
 | `AUDI_SPLIT_7` | 1 input → 7 outputs | Unidirectional `AUDI` |
-
 | `SPLIT_1_TO_2` (analog) | 1 → 2 | Any (generic) |
-
 | `AUDI_MERGE` | Multiple Inputs → 1 | Unidirectional `AUDI` |
 
 While `AUDI_SPLIT_7` is designed for the specific AUDI adapter type, generic split modules exist for other data formats. Its limitation to a fixed number of seven outputs distinguishes it from flexible splitters with a configurable number of outputs.

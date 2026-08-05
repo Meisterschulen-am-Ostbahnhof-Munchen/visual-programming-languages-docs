@@ -78,21 +78,13 @@ The following function blocks are used in the SubApp network:
 **Summary of Connections** (from the XML):
 
 | Source | Destination | Type |
-
 |--------|------|-----|
-
 | `DigitalInput_CLK_I1.IND` | `E_SPLIT.EI` | Event |
-
 | `E_SPLIT.EO1` | `E_CTU.CU` | Event |
-
 | `E_SPLIT.EO2` | `E_CTU.CU` | Event |
-
 | `DigitalInput_CLK_I2.IND` | `E_CTU.R` | Event |
-
 | `E_CTU.Q` | `DigitalOutput_Q1.OUT` | Adapter |
-
 | `E_CTU.CV` | `AUI_TO_AUDI.AUI_IN` | Adapter |
-
 | `AUI_TO_AUDI.AUDI_OUT` | `Q_NumericValue_AUDI.u32NewValue` | Adapter |
 
 ## Summary

@@ -11,25 +11,19 @@ This block was defined as a generic type within the Eclipse 4diac IDE and is des
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Set Index K – triggers the multiplexer switching. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Confirmation of Set Index K – acknowledges successful switching. |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | K | UINT | Index (0…4) for selecting the active input adapter (0 → IN1, 1 → IN2, …, 4 → IN5). |
 
 ### **Data Outputs**
@@ -39,19 +33,12 @@ This function block does not have explicit data outputs. The output data is prov
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug | OUT | adapter::types::unidirectional::AULI | Output adapter – provides the value of the input selected via K. |
-
 | Socket | IN1 | adapter::types::unidirectional::AULI | Input value 1 (for K = 0) |
-
 | Socket | IN2 | adapter::types::unidirectional::AULI | Input value 2 (for K = 1) |
-
 | Socket | IN3 | adapter::types::unidirectional::AULI | Input value 3 (for K = 2) |
-
 | Socket | IN4 | adapter::types::unidirectional::AULI | Input value 4 (for K = 3) |
-
 | Socket | IN5 | adapter::types::unidirectional::AULI | Input value 5 (for K = 4) |
 
 ## Functionality
@@ -94,15 +81,10 @@ A more detailed state machine is not required because the function block operate
 ## Comparison with Similar Components
 
 | Component | Number of Inputs | Special Feature |
-
 |----------|----------------|--------------|
-
 | AULI_MUX_2 | 2 | Simple 2-to-1 Multiplexer |
-
 | AULI_MUX_4 | 4 | 4-to-1 Multiplexer |
-
 | **AULI_MUX_5** | **5** | **Extended Version for Five Channels** |
-
 | Standard MUX (Data) | Any (Data-Based) | Works with Simple Data Types Instead of Adapters |
 
 The AULI_MUX_5 is distinguished by its use of AULI adapters, which enables clean, modular encapsulation of data and protocols.

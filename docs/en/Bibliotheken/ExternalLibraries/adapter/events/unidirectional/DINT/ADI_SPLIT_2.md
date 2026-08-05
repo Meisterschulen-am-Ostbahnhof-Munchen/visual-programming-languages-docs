@@ -25,13 +25,9 @@ None – This function block has no separate data outputs. All data is output vi
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::ADI` | `IN` | Socket | Incoming ADI adapter that is distributed to the two outputs. |
-
 | `adapter::types::unidirectional::ADI` | `OUT1` | Plug | First output adapter (duplicate of the input). |
-
 | `adapter::types::unidirectional::ADI` | `OUT2` | Plug | Second output adapter (duplicate of the input). |
 
 ## Functionality

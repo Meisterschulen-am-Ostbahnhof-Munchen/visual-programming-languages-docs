@@ -9,35 +9,26 @@ The function block **E_D_FF_ANY_HYS** implements a data latch flip-flop with adj
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | `CLK` | Event | Clock signal; the latch operation is triggered on a rising edge. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | `EO` | Event | Outputs after successful transfer from `D` to `Q` (i.e., when the hysteresis condition is met). |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | `D` | ANY\_NUM | The value to be latched. |
-
 | `HYSTERESIS` | ANY\_NUM | Hysteresis band; the minimum absolute change between `Q` and `D` that triggers a takeover. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `Q` | ANY\_NUM | The currently latched value. |
 
 ### **Adapters**
@@ -70,11 +61,8 @@ Q := D` is set and the event `EO` is triggered. In each subsequent call to ``CLK
 The function block contains a very simple two-state automatic state machine:
 
 | State | Description |
-
 |---------|--------------|
-
 | `START` | Initial state after the block starts. Waits for the first `CLK` event. |
-
 | `SET` | Operating state. The hysteresis condition is evaluated on each `CLK` event. |
 
 **Transitions:**
@@ -92,13 +80,9 @@ The function block contains a very simple two-state automatic state machine:
 ## Comparison with similar function blocks
 
 | Function block | Function | Difference |
-
 |----------|----------|-------------|
-
 | `E_D_FF` | Standard D flip-flop (Boolean values only) | Takes over each clock cycle immediately, no hysteresis, only `BOOL` type. |
-
 | `E_D_FF_ANY` | D flip-flop for any data type (no hysteresis) | Same function as `E_D_FF`, but generic. Takes over each clock cycle immediately. |
-
 | `E_D_FF_ANY_HYS` (this block) | D flip-flop with hysteresis for any numeric type | Only accepts when there is a sufficient deviation. |
 
 The key advantage of `E_D_FF_ANY_HYS` is the combination of a generic data type (`ANY_NUM`) and configurable hysteresis, enabling flexible and robust signal processing.

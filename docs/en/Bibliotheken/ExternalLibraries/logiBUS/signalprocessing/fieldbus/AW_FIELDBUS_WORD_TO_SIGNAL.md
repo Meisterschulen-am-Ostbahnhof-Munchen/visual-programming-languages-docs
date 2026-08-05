@@ -25,13 +25,9 @@ Data output is via the connected adapters.
 ### **Adapters**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | **IN** | `adapter::types::unidirectional::AW` (Socket) | Input of the word to be filtered. |
-
 | **OUT** | `adapter::types::unidirectional::AW` (Plug) | Output of the filtered word (only with a valid signal). |
-
 | **VALID** | `adapter::types::unidirectional::AX` (Plug) | Outputs the validity status of the output signal (`TRUE` = valid). |
 
 ## Functionality
@@ -56,11 +52,8 @@ The function block consists internally of two sub-function blocks: `FIELDBUS_WOR
 The function block itself does not have an explicit state machine. The internal state is represented by the D flip-flop:
 
 | State | Meaning |
-
 |---------|-----------|
-
 | `VALID = FALSE` | The output value is invalid (old data or initial state). |
-
 VALID = TRUE` | The output value is valid and was recognized as valid during the last processing cycle. |
 
 ## Application Scenarios

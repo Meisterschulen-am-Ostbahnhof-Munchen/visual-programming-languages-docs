@@ -56,23 +56,16 @@ The **Q_ChildLocation** is a standards-compliant function block for changing the
 ## Position Change Range
 
 | Parameter | Range | Description |
-
 |-----------|------------|----------------------------|
-
 | X Change| -128 - +127| Horizontal Displacement |
-
 | Y-Change | -128 - +127 | Vertical Shift |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Invalid Position Values |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid Object ID |
 
 ## Application Scenarios
@@ -84,13 +77,9 @@ The **Q_ChildLocation** is a standards-compliant function block for changing the
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_ChildLocation | VtAbsolutePosition | VtGroupMove |
-
 |---------------|-----------------|--------------------|-------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Movement | Relative | Absolute | Groups |
-
 | Value Range | ±127 pixels | 0-65535 pixels | ±127 pixels |
 
 ## Conclusion

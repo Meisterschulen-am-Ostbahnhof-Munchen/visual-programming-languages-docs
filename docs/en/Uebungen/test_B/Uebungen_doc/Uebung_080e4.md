@@ -7,27 +7,16 @@ This exercise demonstrates the use of an **E_CTU** (event counter) in combinatio
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameter / Remark |
-
 |-------------|------|-----------------------|
-
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` |
-
 DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` |
-
 E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` (Clock generator for counting pulses) |
-
 E_CTU` | `iec61499::events::E_CTU` | `PV = UINT#5` (Counting threshold) |
-
 E_SPLIT_4` | `iec61499::events::E_SPLIT_4` | Distributes one event across four outputs |
-
 E_MERGE_4` | `iec61499::events::E_MERGE_4` | Collects events from four inputs into one output |
-
 E_D_FF_ANY` | `logiBUS::signalprocessing::hysteresis::E_D_FF_ANY_HYS_TMIN` | `HYSTERESIS = UINT#25`, `Tmin = T#1s` (Hysteresis and minimum time to stable state) |
-
 E_D_FF` | `iec61499::events::E_D_FF` | Standard D flip-flop for binary output |
-
 Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = OutputNumber_N1` (Output of a numerical value) |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `Output = Output_Q1` (Digital output) |
 
 ## Program Flow and Connections

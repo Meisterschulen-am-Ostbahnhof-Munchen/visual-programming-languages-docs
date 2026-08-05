@@ -8,42 +8,30 @@ The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flo
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |-------|-----|-----------|
-
 | `INIT` | EInit | Initialization request; evaluated with `QI` and `Q_INIT` |
-
 | `S` | Event | Set output `Q` to `TRUE` (only effective if `QI = TRUE`) |
-
 | `R` | Event | Set output `Q` to `FALSE` (only effective if `QI = TRUE`) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |-------|-----|-----------|
-
 | `INITO` | EInit | Initialization/Deinitialization Confirmation |
-
 | `EO` | Event | Triggered when `Q` has changed (by S or R) |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `QI` | BOOL | Input Qualifier; controls whether the operations (S, R, INIT) affect `Q` |
 | `Q_INIT` | BOOL | Value that `Q` should assume upon successful initialization (`INIT` with `QI = TRUE`) |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `QO` | BOOL | Output qualifier; returns the value of `QI` during the last action (`FALSE` upon deinitialization) |
-
 | `Q` | BOOL | Value of the flip-flop (bistable output) |
 
 ### **Adapter**

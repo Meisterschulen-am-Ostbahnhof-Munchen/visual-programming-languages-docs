@@ -8,39 +8,28 @@ The function block `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` converts a fieldbus sign
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | INIT | EInit | Initialization Request |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|-----------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |--------|-------|--------------|-----------------------------|
-
 | SCALE | LREAL | 1.0 | Scaling Factor |
-
 | OFFSET | DINT | 0 | Offset Added After Scaling |
 
 ### **Adapters**
 
 | Type | Direction | Name | Comment |
-
 |------|----------|-------|--------------------------|
-
 | AL | Socket | IN | Input Signal (LWORD) |
-
 | ALR | Plug | OUT | Output signal (scaled) |
-
 AX | Plug | VALID | Signal valid (TRUE/FALSE) |
 
 ## Functionality

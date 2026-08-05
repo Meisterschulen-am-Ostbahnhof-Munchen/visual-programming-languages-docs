@@ -21,11 +21,8 @@ None. The converted SINT signal is output via the AS adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **ALI_IN** | `adapter::types::unidirectional::ALI` | Socket (Input) | Receives a LINT value (64-bit) via event E1 and date D1. |
-
 | **AS_OUT** | `adapter::types::unidirectional::AS` | Plug (Output) | Provision of the converted SINT value (8-bit) via event E1 and data D1. |
 
 ## Functionality

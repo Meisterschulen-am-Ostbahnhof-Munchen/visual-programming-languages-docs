@@ -9,25 +9,19 @@ The function block **AIWS_MUX_3** is a generic multiplexer for the unidirectiona
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Triggers the selection of index `K`. Linked to variable `K`. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirmation of successful index selection. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | `K` | UINT | Index of the input to be received (0 = IN1, 1 = IN2, 2 = IN3). |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ No separate data outputs – data is transferred via the `OUT` adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|-------------|----------|-----------|
-
 | `AIWS` (unidirectional) | `IN1` | Socket | First input value (index 0). |
-
 | `AIWS` (unidirectional) | `IN2` | Socket | Second input value (index 1). |
-
 | `AIWS` (unidirectional) | `IN3` | Socket | Third input value (index 2). |
-
 | `AIWS` (unidirectional) | `OUT` | Plug | Output value of the selected input. |
 
 ## Functionality
@@ -75,13 +64,9 @@ OUT`:
 The function block has a simple state model implemented in the internal control flow (ECC):
 
 | State | Description |
-
 |---------|--------------|
-
 | `IDLE` | Waiting for a `REQ` event. |
-
 | `SELECT`| Evaluating `K` and switching the corresponding input to `OUT`. |
-
 | `SEND` | Sending `CNF` and returning to `IDLE`. |
 
 After each successful iteration, the system returns to the idle state `IDLE`.

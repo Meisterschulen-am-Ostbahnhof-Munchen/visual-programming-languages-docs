@@ -20,11 +20,8 @@ No data outputs available.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **IN** | `adapter::types::unidirectional::AI` | Socket (Input) | Receives the analog signal, which is distributed to all outputs. |
-
 | **OUT1** – **OUT8** | `adapter::types::unidirectional::AI` | Plug (Output) | Eight identical outputs that provide the signal present at the input. |
 
 ## Functionality

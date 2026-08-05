@@ -9,35 +9,26 @@ The function block `FIELDBUS_DWORD_TO_SIGNAL` mirrors and validates a DWORD inpu
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | REQ | Normal execution trigger; processes the current value of `IN`. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | CNF | Execution confirmation; sent after calculation. |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Comment |
-
 |----------|--------|---------------------|------------------|
-
 | IN | DWORD | `NOT_AVAILABLE_DWM` | Input signal |
 
 ### **Data Outputs**
 
 | Variable | Type | Initial Value | Comment |
-
 |----------|--------|---------------|------------------------------------|
-
 | OUT | DWORD | `16#00000000` | Filtered output value |
-
 | VALID | BOOL | `FALSE` | `TRUE`, if the signal is valid |
 
 ### **Adapter**
@@ -67,9 +58,7 @@ After the calculation is complete, the output event `CNF` is sent.
 ## State Overview
 
 | State | Action | Output Event |
-
 |---------|----------------------|------------------|
-
 | REQ | Execute `REQ` Algorithm | CNF |
 
 There is only one state; after its processing, the function block returns to the IDLE state (implicitly).

@@ -9,25 +9,19 @@ The function block **AUS_MUX_3** is a generic multiplexer for the unidirectional
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `REQ` | Event | Set Index K – triggers multiplexer selection |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of successful index selection |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index for selecting the input (0, 1, or 2) |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ The function block **AUS_MUX_3** is a generic multiplexer for the unidirectional
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-
 |-------|------|-----|-----------|
-
 | Plug | `OUT` | `adapter::types::unidirectional::AUS` | Output adapter that reflects the selected input |
-
 | Socket | `IN1` | `adapter::types::unidirectional::AUS` | First input – passes through at `K = 0` |
-
 | Socket | `IN2` | `adapter::types::unidirectional::AUS` | Second input – passes through at `K = 1` |
-
 | Socket | `IN3` | `adapter::types::unidirectional::AUS` | Third input – is passed through on `K = 2` |
 
 ## Functionality

@@ -9,25 +9,19 @@ The function block **AE_MUX_4** implements a 4-way multiplexer for AE adapters (
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|-------------|
-
 | **REQ** | Request to switch to the input determined by **K** |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|-------------|
-
 | **CNF** | Confirmation that the index **K** has been adopted and the corresponding input has been set to **OUT** |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | **K** | UINT | Index for selecting the active input (values 0…3) |
 
 ### **Data Outputs**
@@ -51,25 +45,15 @@ No data outputs. Values are forwarded exclusively via the adapter interfaces.
 ### **Data Inputs**
 
 ### **Data Output ... |---------|----------|-----|-------------|
-
 **OUT** | Plug | `adapter::types::unidirectional::AE` | Output adapter – provides the signal of the selected input |
-
 **IN1** | Socket | `adapter::types::unidirectional::AE` | Input 1 (K = 0) |
-
 **IN2** | Socket | `adapter::types::unidirectional::AE` | Input 2 (K = 1) |
-
 **IN3** | Socket | `adapter::types::unidirectional::AE` | Input 3 (K = 2) |
-
 **IN4** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
-
 **IN1** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
-
 **IN2** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
-
 **IN3** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
-
 **IN4** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
-
 **IN1** | Socket | `adapter::types::unidirectional::AE` |
 ## Functionality
 

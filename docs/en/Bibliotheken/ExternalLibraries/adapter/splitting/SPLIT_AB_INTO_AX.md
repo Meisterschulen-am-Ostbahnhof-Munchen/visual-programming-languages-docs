@@ -21,25 +21,15 @@ This function block does not have explicit event outputs at the top level. Resul
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|------------------------------|----------|--------------------------------------------|
-
 | IN | adapter::types::unidirectional::AB | Socket (Input) | BYTE value, decomposed into individual bits |
-
 | BIT_00 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 0 (LSB) |
-
 | BIT_01 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 1 |
-
 | BIT_02 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 2 |
-
 | BIT_03 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 3 |
-
 | BIT_04 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 4 |
-
 | BIT_05 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 5 |
-
 | BIT_06 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 6 |
-
 | BIT_07 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 7 (MSB) |
 
 ## Functionality

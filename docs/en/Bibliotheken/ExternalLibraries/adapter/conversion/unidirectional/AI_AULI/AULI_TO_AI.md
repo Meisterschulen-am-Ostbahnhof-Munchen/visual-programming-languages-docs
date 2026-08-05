@@ -23,11 +23,8 @@ There are also no dedicated event outputs at this level; output events are passe
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |-----------|----------|------------------------------------------|--------------------------------------------|
-
 | `AULI_IN` | Socket | `adapter::types::unidirectional::AULI` | ULINT input adapter (analog value) |
-
 | `AI_OUT` | Plug | `adapter::types::unidirectional::AI` | INT Output Adapter (Converted Value) |
 
 ## Functionality
@@ -68,13 +65,9 @@ Internal flow (simplified):
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Description |
-
 ---------------------|------------|------------|------------------------------------------------|
-
 | `AULI_TO_AI` | AULI (ULINT) | AI (INT) | Converts entire adapter interfaces. |
-
 | `F_ULINT_TO_INT` | ULINT | INT | Data conversion only, no adapters. |
-
 | `AI_TO_AULI` (if applicable) | AI (INT) | AULI (ULINT) | Reverse direction (not available). |
 
 The key difference compared to pure data conversion blocks lies in the adapter input/output, which enables complete interface conversion.

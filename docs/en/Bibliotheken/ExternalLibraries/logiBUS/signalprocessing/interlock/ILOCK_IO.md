@@ -9,43 +9,32 @@ The function block **ILOCK_IO** implements a cascadable, momentary (non-resettab
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Execution Request (triggers the processing of the IN input) |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Execution Confirmation (signals that the output OUT has been updated) |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | IN | BOOL | Input Value (Set Request) |
 
 ### **Data Outputs**
 
 | Variable | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | OUT | BOOL | Output Value (Enabled/Disabled) |
 
 ### **Adapters**
 
 | Label | Type | Direction | Description |
-
 |-------------|------------------------------|----------|-------------|
-
 | ILOCK_IN | adapter::types::bidirectional::AX2 | Socket | Input adapter for receiving locking information from the chain (from the predecessor) |
-
 | ILOCK_OUT | adapter::types::bidirectional::AX2 | Plug | Output adapter for sending locking information to the chain (to the successor) |
 
 The adapters of type `AX2` are bidirectional and contain the data points `DI1` (Data Input 1) and `DO1` (Data Output 1). In the chain, `ILOCK_OUT.DO1` and `ILOCK_IN.DI1`, as well as `ILOCK_OUT.DI1` and `ILOCK_IN.DO1`, are connected in pairs to implement the interlock logic.
@@ -77,9 +66,7 @@ The chain is structured so that only one block can be active at a time. If `IN` 
 The block has a single **algorithmic state** `REQ`. Each time `REQ` is called, the algorithm is executed, and the system immediately transitions back to the same state. There is no state storage – the logic is purely combinatorial with feedback via the adapters.
 
 | State | Action | Output |
-
 |---------|--------|---------|
-
 | REQ | Execute algorithm `REQ` | `CNF` is sent after calculation |
 
 ## Application Scenarios

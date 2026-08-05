@@ -9,51 +9,36 @@ The function block **INI_AIS** is used to load and save strings (STRING) from a 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |-------|--------|--------------------------------------|
-
 | INIT | EInit | Service Initialization |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |-------|--------|--------------------------------------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |---------------|--------|----------------------------------------------------------|
-
 | QI | BOOL | Qualifier for the event input |
-
 | SECTION | STRING | Name of the section in the configuration file |
-
 | KEY | STRING | Name of the key in the specified section |
-
 | DEFAULT_VALUE | STRING | Default value if the entry does not exist |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |--------|--------|--------------------------------------|
-
 | QO | BOOL | Qualifier for the event output |
-
 | STATUS | STRING | Status message (e.g., error text) |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |---------|------------------------------|------------|----------------------------------------------------------|
-
 | AIS_OUT | adapter::types::unidirectional::AIS | Plug | Output for the read value (GETO) |
-
 | AIS_IN | adapter::types::unidirectional::AIS | Socket | Input for the value to be stored (SET) |
 
 ## Functionality
@@ -101,11 +86,8 @@ The function block has no explicitly programmed states. The internal INI block h
 ## Comparison with Similar Modules
 
 | Module | Description |
-
 |---------------|--------------------------------------------------------------------------------|
-
 | INI | Direct access to INI files with separate GET and SET events. |
-
 | **INI_AIS** | INI extends the INI function block with an adapter-based interface that simplifies the coupling of other function blocks and integrates the handling of read and write operations. |
 
 - Unlike the basic `INI` function block, INI_AIS provides a unified, event-driven interface for read and write components.

@@ -20,11 +20,8 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AULI` | Incoming AULI adapter, distributed to the eight outputs. |
-
 | Plug (Output) | `OUT1` – `OUT8` | `adapter::types::unidirectional::AULI` | Eight parallel outputs that forward the identical signal of the input. |
 
 ## Functionality

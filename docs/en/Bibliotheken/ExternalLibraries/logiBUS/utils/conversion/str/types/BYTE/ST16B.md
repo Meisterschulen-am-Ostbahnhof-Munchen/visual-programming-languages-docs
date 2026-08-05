@@ -24,39 +24,22 @@ Not applicable, as `ST16B` is a data type and not a function block, and therefor
 ST16B` consists of 16 individual variables of type `BYTE`, arranged sequentially:
 
 | Name | Type | Description |
-
 | :--- | :----- | :----------- |
-
 | B_00 | BYTE | BYTE 00 |
-
 | B_01 | BYTE | BYTE 01 |
-
 | B_02 | BYTE | BYTE 02 |
-
 | B_03 | BYTE | BYTE 03 |
-
 | B_04 | BYTE | BYTE 04 |
-
 | B_05 | BYTE | BYTE 05 |
-
 | B_06 | BYTE | BYTE 06 |
-
 B_07 | BYTE | BYTE 07 |
-
 B_08 | BYTE | BYTE 08 |
-
 B_09 | BYTE | BYTE 09 |
-
 B_10 | BYTE | BYTE 10 |
-
 B_11 | BYTE | BYTE 11 |
-
 B_12 | BYTE | BYTE 12 |
-
 B_13 | BYTE | BYTE 13 |
-
 B_14 | BYTE | BYTE 14 |
-
 B_15 | BYTE | BYTE 15 |
 
 ## Functionality

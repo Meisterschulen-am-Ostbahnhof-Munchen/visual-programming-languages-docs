@@ -8,43 +8,30 @@ The function block `PoolReload` is a service interface block according to ISO 11
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `INIT` | `EInit` | Service initialization (with parameters `QI` and `poolFileName`) |
-
 | `REQ` | `Event` | Service request – performs pool reloading (with `QI`) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `INITO` | `EInit` | Initialization confirmation (outputs `QO` and `STATUS`) |
-
 | `CNF` | `Event` | Confirmation – Pool reload complete (outputs `QO`, `STATUS`, and `s16Result`) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `QI` | `BOOL` | Quality Input: `TRUE` activates the service |
-
 | `poolFileName` | `STRING` | Path to the pool file (e.g., `pools/pool_de.iop`) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `QO` | `BOOL` | Quality Output: `TRUE`, if the reload was successful |
-
 | `STATUS` | `STRING` | Service status (e.g., error message or success message) |
-
 | `s16Result` | `INT` | Return value: `0` = `E_NO_ERR` (success), negative values correspond to error codes |
 
 ### **Adapter**
@@ -75,17 +62,11 @@ This function block encapsulates the ISOBUS function `VTC_PoolReload()`. The pro
 The function block can go through the following basic states:
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | Waiting for an INIT event. |
-
 | **INIT_PENDING** | Initialization is being performed; upon completion, `INITO` is sent. |
-
 | **READY** | Ready for `REQ` after successful initialization. |
-
 | **REQ_PENDING** | Pool reloading is in progress; Upon completion, `CNF` is sent. |
-
 **ERROR** | If initialization or reloading fails, an error status is reported, and the function block remains in the error state until it is re-initialized. |
 
 ## Application Scenarios
@@ -96,13 +77,9 @@ The function block can go through the following basic states:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------|--------------|
-
 PoolLoader` | Loads the pool only at system startup; no reloading at runtime. |
-
 PoolActivate` | Switches between already loaded pools, but requires prior loading. |
-
 PoolReload` | Combines loading and updating in one step and enables dynamic reloading during runtime. |
 
 ## Conclusion

@@ -19,13 +19,9 @@ This exercise demonstrates the basic handling of the `NumericValue` interface an
 Three function blocks are used in the exercise network. No sub-blocks are present.
 
 | Name | Type | Parameters |
-
 |------|-----|-----------|
-
 | `InputNumber_I1` | `isobus::UT::io::NumericValue::NumericValue_ID` | `QI = TRUE`, `u16ObjId = "InputNumber_I1"` |
-
 | `F_DWORD_TO_UDINT` | `iec61131::conversion::F_DWORD_TO_UDINT` | (no parameters) |
-
 | `Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = "OutputNumber_N3"` |
 
 - **`InputNumber_I1`** – Reads a raw numeric value from input I1 as `DWORD` (32-bit) and outputs it to data output `IN`, along with an event `IND` when new data is provided.

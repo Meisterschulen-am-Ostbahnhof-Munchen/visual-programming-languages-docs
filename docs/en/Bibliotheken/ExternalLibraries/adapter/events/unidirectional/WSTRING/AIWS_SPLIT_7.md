@@ -21,23 +21,14 @@ None (the function block has no direct data outputs; data transmission occurs ex
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AIWS` | **IN** | Socket (Input) | Receives the AIWS data stream to be distributed. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT1** | Plug (Output) | First identical output channel. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT2** | Plug (Output) | Second identical output channel. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT3** | Plug (Output) | Third identical output channel. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT4** | Plug (Output) | Fourth identical output channel. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT5** | Plug (Output) | Fifth identical output channel. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT6** | Plug (Output) | Sixth identical output channel. |
-
 | `adapter::types::unidirectional::AIWS` | **OUT7** | Plug (Output) | Seventh identical output channel. |
 
 ## Functionality

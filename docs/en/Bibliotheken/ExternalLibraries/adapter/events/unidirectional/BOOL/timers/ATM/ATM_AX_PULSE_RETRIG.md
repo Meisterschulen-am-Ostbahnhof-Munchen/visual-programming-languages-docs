@@ -8,11 +8,8 @@ The function block **ATM_AX_PULSE_RETRIG** generates a pulse of defined duration
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|--------------------------------------------|
-
 | REQ | Event | Start command – triggers a new pulse and restarts the timer |
-
 | R | Event | Reset – immediately terminates a running pulse |
 
 ### **Event Outputs**
@@ -27,11 +24,8 @@ None. The pulse status (active/inactive) is output via the **Q** adapter (Plug).
 ### **Adapters**
 
 | Role | Name | Type | Direction | Description |
-
 |-------|------|-------|----------|---------|-------------------------------------------------------|
-
 | Input | PT | ATM | Socket | Provides the desired pulse duration <small>(D1 → PT)</small> |
-
 | Output| Q | AX | Plug | Displays the pulse state <small>(D1 = HIGH during the pulse)</small> |
 
 ## Functionality
@@ -58,13 +52,9 @@ The module has two states:
 ## Comparison with Similar Components
 
 | Component | Retriggerable | Interface | Application Area |
-
 |-------------------------|---------------|----------------------|-----------------------------------|
-
 | **ATM_AX_PULSE_RETRIG** | Yes | Adapter (ATM/AX) | Modular Controllers with Adapter Concept |
-
 ATM_AX_PULSE | No | Adapter (ATM/AX) | Single pulses, no retriggering |
-
 Standard E_PULSE_RETRIG | Yes | Direct inputs/outputs | More flexible, but without adapter encapsulation |
 
 This module stands out due to its exclusive use of adapter interfaces, which simplifies integration into existing adapter-based libraries.

@@ -20,17 +20,11 @@ None.
 ### **Adapter**
 
 | Direction | Identifier | Type | Description |
-
 |----------|------------|-----|--------------|
-
 **Socket (Input)** | IN | `adapter::types::unidirectional::A2X` | One incoming A2X signal (unidirectional) |
-
 **Plug (Output 1)** | OUT1 | `adapter::types::unidirectional::A2X` | First outgoing A2X channel |
-
 **Plug (Output 2)** | OUT2 | `adapter::types::unidirectional::A2X` | Second outgoing A2X channel |
-
 **Plug (Output 3)** | OUT3 | `adapter::types::unidirectional::A2X` | Third outgoing A2X channel |
-
 **Plug (Output 4)** | OUT4 | `adapter::types::unidirectional::A2X` | Fourth Outgoing A2X Channel |
 
 ## Functionality

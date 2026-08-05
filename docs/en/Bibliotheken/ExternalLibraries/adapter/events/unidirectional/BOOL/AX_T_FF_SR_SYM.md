@@ -46,13 +46,9 @@ The toggle function is implemented by the `CLK` transitions: regardless of the c
 ## State Overview
 
 | State | Description | Output Q.D1 | Event by Algorithm |
-
 |---------|---------------|--------------|----------------------------|
-
 | START | Initial state, no defined value | undefined | - |
-
 | SET | Output is set to TRUE | TRUE | Q.E1 |
-
 | RESET | Output is set to FALSE | FALSE | Q.E1 |
 
 Transitions (Event → Target State):

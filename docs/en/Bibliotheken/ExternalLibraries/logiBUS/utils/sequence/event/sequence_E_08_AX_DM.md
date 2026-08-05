@@ -8,35 +8,22 @@ The function block `sequence_E_08_AX_DM` implements an event-driven sequence con
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `START_S1` | Transition from start state to state 1 (State_01) |
-
 S1_S2` | Transition from state 1 to state 2 (State_02) |
-
 S2_S3` | Transition from state 2 to state 3 (State_03) |
-
 S3_S4` | Transition from state 3 to state 4 (State_04) |
-
 S4_S5` | Transition from state 4 to state 5 (State_05) |
-
 S5_S6` | Transition from state 5 to state 6 (State_06) |
-
 S6_S7` | Transition from state 6 to state 7 (State_07) |
-
 S7_S8` | Change from state 7 to state 8 (State_08) |
-
 | `S8_START` | Change from state 8 to the start state (State_00) |
-
 | `RESET` | Reset from any state to the start state (State_00) |
 
 ### **Event Outputs**
 
 | Event | With Variable | Description |
-
 |----------|--------------|--------------|
-
 | `CNF` | `STATE_NR` | Confirmation of state change; also returns the current state number |
 
 ### **Data Inputs**
@@ -45,33 +32,21 @@ No data inputs available.
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | `STATE_NR` | SINT | Current state number (0 = State_00, 1 = State_01, …, 8 = State_08) |
 
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug | `DO_S1` | unidirectional::AX | Output for state 1 (State_01 active) |
-
 | Plug | `DO_S2` | unidirectional::AX | Output for State 2 (State_02 active) |
-
 | Plug | `DO_S3` | unidirectional::AX | Output for State 3 (State_03 active) |
-
 | Plug | `DO_S4` | unidirectional::AX | Output for State 4 (State_04 active) |
-
 | Plug | `DO_S5` | unidirectional::AX | Output for State 5 (State_05 active) |
-
 | Plug | `DO_S6` | unidirectional::AX | Output for State 6 (State_06 active) |
-
 | Plug | `DO_S7` | unidirectional::AX | Output for State 7 (State_07 active) |
-
 | Plug | `DO_S8` | unidirectional::AX | Output for state 8 (State_08 active) |
-
 | Socket | `DM` | unidirectional::AX | Deadman switch; returns the event `DM.E1` and the data value `DM.D1` |
 
 ## Functionality
@@ -94,29 +69,17 @@ The function block operates as a finite automaton with the following states: `xS
 ## State Overview
 
 | State | Label | Output Active | Transitions |
-
 |---------|-------------|---------------|--------------|
-
 | `xSTART` | Initial state | none | → `sState_01` at `START_S1`; Self-transition at `DM.E1` |
-
 | `sState_01` | Sequence step 1 | `DO_S1` | → `sState_02` at `S1_S2`; Self-transition at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_02` | Sequence step 2 | `DO_S2` | → `sState_03` at `S2_S3`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_03` | Sequence step 3 | `DO_S3` | → `sState_04` at `S3_S4`; Self-translation at `DM.E1`; →`sRESET` at `RESET` |
-
 | `sState_04` | Sequence step 4 | `DO_S4` | → `sState_05` at `S4_S5`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_05` | Sequence step 5 | `DO_S5` | → `sState_06` at `S5_S6`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_06` | Sequence step 6 | `DO_S6` | → `sState_07` at `S6_S7`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_07` | Sequence step 7 | `DO_S7` | → `sState_08` at `S7_S8`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_08` | Sequence step 8 | `DO_S8` | → `sState_00` at `S8_START`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |
-
 | `sState_00` | Sleep state (after sequence) | None | → `sState_01` at `START_S1`; Self-transaction at `DM.E1` |
-
 | `sRESET` | Reset state | All disabled | Automatic → `sState_00` |
 
 ## Application Scenarios

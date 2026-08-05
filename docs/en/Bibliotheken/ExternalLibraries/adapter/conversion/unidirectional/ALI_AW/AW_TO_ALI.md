@@ -70,13 +70,9 @@ Since this is a composite function block without its own state machine (ECC), th
 ## Comparison with Similar Blocks
 
 | Block | Input (adapter) | Output (adapter) | Conversion | Special Features |
-
 |----------|-------------------|-------------------|---------------|----------------|
-
 | **AW_TO_ALI** | AW (WORD) | ALI (LINT) | WORD → LINT | Unidirectional, Composite |
-
 | `F_WORD_TO_LINT` (IEC 61131) | Single REQ input, IN (WORD) | Single CNF output, OUT (LINT) | WORD → LINT | Standard FB, no adapter |
-
 | `ALI_TO_AW` (hypothetical) | ALI (LINT) | AW (WORD) | LINT → WORD | Reverse direction |
 
 The advantage of AW_TO_ALI lies in its seamless integration into adapter-based systems, whereas the pure IEC component `F_WORD_TO_LINT` would require separate wiring. Components with adapter interfaces simplify control design because they offer standardized plugs/sockets.

@@ -8,25 +8,19 @@ The function block **AI_MUX_3** is a generic analog multiplexer with three adapt
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No dedicated data outputs – output data is provided via the OUT adapter.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (Output) | OUT | adapter::types::unidirectional::AI | IN1 for K=0, IN2 for K=1, IN3 for K=2 |
-
 | Socket (Input) | IN1 | adapter::types::unidirectional::AI | Input value 1 |
-
 | Socket (Input) | IN2 | adapter::types::unidirectional::AI | Input value 2 |
-
 | Socket (Input) | IN3 | adapter::types::unidirectional::AI | Input value 3 |
 
 ## Functionality

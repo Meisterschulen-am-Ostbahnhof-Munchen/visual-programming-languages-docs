@@ -20,11 +20,8 @@ The data output is provided via the plug **AI_OUT**. The output value **AI_OUT.D
 ### **Adapters**
 
 | Label | Direction | Type | Remark |
-
 |-------------|----------|-----|-----------|
-
 | AR_IN | Input | `adapter::types::unidirectional::AR` | REAL Adapter (Input) |
-
 | AI_OUT | Output | `adapter::types::unidirectional::AI` | INT Adapter (Output) |
 
 ## Functionality

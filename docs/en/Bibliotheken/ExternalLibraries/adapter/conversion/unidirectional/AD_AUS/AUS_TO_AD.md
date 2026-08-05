@@ -11,43 +11,32 @@ It encapsulates the conversion of an unsigned 8-bit value (USINT) to a 32-bit DW
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `E1` | Event (from socket `AUS_IN`) | Starts the conversion of the incoming USINT value. The input is provided via socket `AUS_IN`. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `E1` | Event (to plug `AD_OUT`) | Signals successful conversion and the presence of the DWORD value at the output. The output is provided via plug `AD_OUT`. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `D1` | USINT (from socket `AUS_IN`) | The 8-bit value to be converted, in the range 0…255. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `D1` | DWORD (to plug `AD_OUT`) | The converted 32-bit value (direct type conversion of the USINT to DWORD). |
 
 ### **Adapter**
 
 | Role | Name | Type | Direction | Description |
-
 |-------|------|-----|----------|--------------|
-
 | Socket | `AUS_IN` | `adapter::types::unidirectional::AUS` | Input | Receives the USINT value and the associated event. |
-
 | Plug | `AD_OUT` | `adapter::types::unidirectional::AD` | Output | Provides the DWORD value and the acknowledgment event. |
 
 ## Functionality

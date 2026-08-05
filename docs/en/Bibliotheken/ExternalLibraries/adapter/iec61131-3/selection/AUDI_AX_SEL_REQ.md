@@ -8,43 +8,32 @@ The function block **AUDI_AX_SEL_REQ** implements a binary selection between two
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Service Request; triggers the selection |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation; output after selection |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `IN0` | UDINT | First selectable value |
-
 | `IN1` | UDINT | Second selectable value |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `OUT` | UDINT | Selected Value (corresponds to either IN0 or IN1) |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `G` | Socket: `adapter::types::unidirectional::AX` | Selector; provides the selection signal (via data output `D1`) and an event `E1` |
 
 ## Functionality

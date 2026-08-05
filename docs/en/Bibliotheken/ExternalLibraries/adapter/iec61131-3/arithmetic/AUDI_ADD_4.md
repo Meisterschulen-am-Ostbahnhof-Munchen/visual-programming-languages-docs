@@ -25,17 +25,11 @@ The function block has no direct data outputs. The result is passed on via an ad
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |-------------|----------|-----|--------------|
-
 | `IN1` | Socket (Input) | `adapter::types::unidirectional::AUDI` | First Addend |
-
 | `IN2` | Socket (Input) | `adapter::types::unidirectional::AUDI` | Second Addend |
-
 | `IN3` | Socket (Input) | `adapter::types::unidirectional::AUDI` | Third Addend |
-
 | `IN4` | Socket (Input) | `adapter::types::unidirectional::AUDI` | Fourth Addend |
-
 | `OUT` | Plug (Output) | `adapter::types::unidirectional::AUDI` | Result of the Addition |
 
 ## Functionality

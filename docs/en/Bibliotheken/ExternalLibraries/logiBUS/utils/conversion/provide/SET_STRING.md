@@ -9,33 +9,25 @@ The function block `SET_STRING` is used to write a string value (STRING) provide
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-------|-------------------------------|---------------|
-
 | REQ | Event | Normal execution command | IN, OUT |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With variables |
-
 |------|-------|--------------------------------|---------------|
-
 | CNF | Event | Execution confirmation | OUT |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|--------|----------------------|
-
 | IN | STRING | The value to be written |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|--------|---------------------------------|
-
 | OUT | STRING | Target variable (In-Out) – identical to IN after execution |
 
 > **Note:** `OUT` is declared as an In-Out variable. It serves simultaneously as an input (the current value before execution) and as an output (the new value after execution). When `REQ` is received, `OUT := IN` is set, overwriting the previous value.
@@ -68,9 +60,7 @@ The value of the input variable `IN` is copied to the input-output variable `OUT
 The function block has exactly one state:
 
 | State | Action | Output Event | Description |
-
 |---------|----------------------|-----------------|------------------------------------------------|
-
 | ``REQ`` | ``OUT := IN`` | ``CNF`` | Copies the input value to the input-output variable and acknowledges |
 
 A start state is not explicitly defined; The function block expects an external event pulse on `REQ`.

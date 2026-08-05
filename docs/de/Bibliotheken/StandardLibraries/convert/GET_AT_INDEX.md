@@ -70,15 +70,10 @@ Der `GET_AT_INDEX`-Baustein ist ein spezialisierter Baustein für den Array-Zugr
 ## Metadaten
 
 | Attribut | Wert |
-
 | :--- | :--- |
-
 | Copyright | (c) 2014 Profactor GmbH |
-
 | Lizenz | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-07-11, Matthias Plasch) |
-
 | 4diac-Paket | eclipse4diac::convert |
 
 ## Fazit

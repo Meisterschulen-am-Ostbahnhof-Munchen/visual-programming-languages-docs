@@ -10,25 +10,19 @@ The function block **AL_MUX_2** is a generic multiplexer for unidirectional AL (
 ### Event Inputs
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Starts the switch or forwarding according to the current index `K`. |
 
 ### Event Outputs
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirms successful processing of the `REQ` event. |
 
 ### Data Inputs
 
 | Data | Type | Comment |
-
 |-------|------|-----------|
-
 | `K` | UINT | Index for selecting the input (0 = `IN1`, 1 = `IN2`). |
 
 ### Data Outputs
@@ -38,13 +32,9 @@ No dedicated data outputs; output data is provided via the `OUT` adapter.
 ### Adapters
 
 | Adapter | Direction | Type | Comment |
-
 |---------|----------|-----|-----------|
-
 | `OUT` | Plug | `adapter::types::unidirectional::AL` | Output adapter (provides the data of the selected input). |
-
 | `IN1` | Socket | `adapter::types::unidirectional::AL` | First input adapter – active for `K = 0`. |
-
 | `IN2` | Socket | `adapter::types::unidirectional::AL` | Second input adapter – active for `K = 1`. |
 
 ## Functionality

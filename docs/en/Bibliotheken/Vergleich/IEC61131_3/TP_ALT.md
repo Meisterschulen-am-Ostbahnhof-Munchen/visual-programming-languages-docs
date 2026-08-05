@@ -4,11 +4,8 @@ The **TP** (Timer Pulse) function block implements a pulse generator (monoflop).
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
 **Input** | IN | BOOL | Start signal (rising edge triggers pulse) |
-
 **Input** | PT | TIME | Preset Time (pulse duration) |
-
 **Output** | Q | BOOL | Output signal |
-
 **Output** | ET | TIME | Elapsed Time (time elapsed since pulse start) |
 
 ## Function

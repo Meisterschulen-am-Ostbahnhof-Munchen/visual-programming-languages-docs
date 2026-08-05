@@ -5,11 +5,8 @@ The **STRING** data type represents a string consisting of 8-bit characters (usu
 According to **DIN EN 61131-3** (Table 10, No. 16a):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 8 bits per character |
-
 | **Default Value** | '' (empty string) |
-
 | **Maximum Length** | Vendor-specific (standard often 255) |
 
 ## Literal Representation
@@ -19,23 +16,14 @@ String literals are enclosed in **single quotation marks** (`'`).
 Special characters are introduced by a dollar sign (`$`):
 
 | Sequence | Meaning |
-
 | :--- | :--- |
-
 | `$$` | Dollar sign |
-
 | `$'` | Single quotation mark |
-
 | `$L` or `$l` | Line feed |
-
 | `$N` or `$n` | Newline |
-
 | `$P` or `$p` | Page feed |
-
 $R` or `$r` | Carriage Return |
-
 $T` or `$t` | Tab |
-
 $hh` | Character with Hex Code `hh` (e.g., `$41` for 'A') |
 
 ### Examples

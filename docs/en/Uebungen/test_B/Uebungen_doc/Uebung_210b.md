@@ -12,17 +12,11 @@ This exercise demonstrates the basic functionality of an industrial counter, the
 The following function blocks are used in this exercise:
 
 | FB Name | Type | Parameters | Short Description |
-
 |---------|-----|-----------|------------------|
-
 | `FB_CTU` | `iec61131::counters::FB_CTU` | `PV = INT#5` | IEC 61131-3 Upward Counter, Counting Range INT, Preset Value 5. |
-
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` | Digital input, provides the counting pulse (`CU`). |
-
 | `Input_R` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` | Digital input, provides the reset signal (`R`). |
-
 | `Output_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Digital output, activated when the counter reaches its final value (`Q`). |
-
 | `Q_NumericValue_PHYS` | `isobus::UT::Q::Q_NumericValue_PHYS` | `stObj = OutputNumber_N3` | Terminal output: Displays the current counter value (CV) numerically. |
 
 **Notes on the hardware FBs**:

@@ -9,47 +9,32 @@ The **StringValue_IS** function block is an input service interface function blo
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-
 |---------|------|--------------|-------------------|
-
 | `INIT` | EInit | Service Interface Component Initialization | `QI`, `PARAMS`, `u16ObjId` |
-
 | `REQ` | Event | Request for data query or update | `QI` |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Data Carried |
-
 |---------|------|-------------|-------------------|
-
 | `INITO` | EInit | Confirmation of successful initialization | `QO`, `STATUS` |
-
 | `CNF` | Event | Confirmation of executed request | `QO`, `STATUS`, `IN` |
-
 | `IND` | Event | Asynchronous indication – new input data from the resource | `QO`, `STATUS`, `IN` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|-------------|
-
 | `QI` | BOOL | – | Event Qualifier: Controls the execution of the associated events |
-
 | `PARAMS` | STRING | – | Service parameter (e.g., configuration of access to the resource) |
-
 | `u16ObjId` | UINT | `ID_NULL` | Object ID that identifies the string to be read from the resource |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | `QO` | BOOL | Event Qualifier: Indicates whether the output provides valid data |
-
 | `STATUS` | STRING | Service status message (e.g., error codes or success message) |
-
 | `IN` | STRING | Received string from the resource |
 
 ### **Adapter**
@@ -116,15 +101,10 @@ Retrieving string parameters from a central configuration service.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Data Type | Special Feature |
-
 |----------|----------|--------------|
-
 | `BOOL_IS` | BOOL | Simple Boolean inputs (e.g., switches) |
-
 | `INT_IS` | INT | Integer inputs (e.g., counter readings) |
-
 REAL_IS` | REAL | Floating-point inputs (e.g., measured values) |
-
 StringValue_IS` | STRING | Strings – for names, descriptions, irregularly formatted data |
 
 StringValue_IS` expands the family of input SIFBs with the flexible data type `STRING`, which is characterized by variable length and content.

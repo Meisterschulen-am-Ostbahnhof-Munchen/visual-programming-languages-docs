@@ -27,25 +27,15 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|-------|-------------------------------|---------------------------------------------------|
-
 | Socket | IN | `adapter::types::unidirectional::ASR` | Incoming ASR signal distributed to all outputs. |
-
 | Plug | OUT1 | `adapter::types::unidirectional::ASR` | First output with the signal from IN. |
-
 | Plug | OUT2 | `adapter::types::unidirectional::ASR` | Second output with the signal from IN. |
-
 | Plug | OUT3 | `adapter::types::unidirectional::ASR` | Third output with the signal from IN. |
-
 | Plug | OUT4 | `adapter::types::unidirectional::ASR` | Fourth output with the signal from IN. |
-
 | Plug | OUT5 | `adapter::types::unidirectional::ASR` | Fifth output with the signal from IN. |
-
 | Plug | OUT6 | `adapter::types::unidirectional::ASR` | Sixth output with the signal from IN. |
-
 | Plug | OUT7 | `adapter::types::unidirectional::ASR` | Seventh output with the signal from IN. |
-
 | Plug | OUT8 | `adapter::types::unidirectional::ASR` | Eighth output with the signal from IN. |
 
 ## Functionality
@@ -71,13 +61,9 @@ The `ASR_SPLIT_8` has **no internal states**. The output is a direct function of
 ## Comparison with Similar Blocks
 
 | Block | Outputs | Special Features |
-
 |------------------------|----------|------------------------------------------------|
-
 | `ASR_SPLIT_8` | 8 | Provides the maximum possible number of ASR copies in one block. |
-
 | `ASR_SPLIT_4` | 4 | More compact alternative for smaller distribution systems. |
-
 | `ASR_SPLIT_2` | 2 | Minimal splitter for point-to-point transmission. |
 
 The **8-way version** is the most comprehensive and allows the connection of many devices without additional cascading. Compared to cascading multiple 2-way or 4-way splitters, `ASR_SPLIT_8` reduces the number of required blocks and simplifies engineering.

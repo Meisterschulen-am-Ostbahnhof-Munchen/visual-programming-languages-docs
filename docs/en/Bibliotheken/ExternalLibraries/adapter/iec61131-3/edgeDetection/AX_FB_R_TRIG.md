@@ -23,11 +23,8 @@ The goal is to generate a `TRUE` signal at the output when the input signal tran
 ### **Adapters**
 
 | Name | Type | Comment |
-
 | :--- | :--- | :--- |
-
 | **CLK** | `adapter::types::unidirectional::AX` | **Socket (Input):** The clock input being monitored. Contains the data signal (D1) and the associated event (E1). |
-
 | **Q** | `adapter::types::unidirectional::AX` | **Plug (Output):** The pulse output. Provides `TRUE` only on a rising edge at input `CLK`. |
 
 ## Functionality

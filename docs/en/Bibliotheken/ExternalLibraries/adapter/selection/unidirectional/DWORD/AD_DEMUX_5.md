@@ -8,25 +8,19 @@ The function block **AD_DEMUX_5** is a generic demultiplexer for adapter connect
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Sets the index K and triggers the demultiplexer action |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Confirmation that index K has been adopted and the connection activated |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | K | UINT | Target index (range 1..5) for selecting the output adapter |
 
 ### **Data Outputs**
@@ -35,19 +29,12 @@ The function block **AD_DEMUX_5** is a generic demultiplexer for adapter connect
 ### **Adapter**
 
 | Direction | Identifier | Type | Comment |
-
 |----------|------------|----------------------------|------------------------------------|
-
 | Socket | IN | adapter::types::unidirectional::AD | Input adapter (signal to be distributed) |
-
 | Plug | OUT1 | adapter::types::unidirectional::AD | Output 1 |
-
 | Plug | OUT2 | adapter::types::unidirectional::AD | Output 2 |
-
 | Plug | OUT3 | adapter::types::unidirectional::AD | Output 3 |
-
 | Plug | OUT4 | adapter::types::unidirectional::AD | Output 4 |
-
 | Plug | OUT5 | adapter::types::unidirectional::AD | Output 5 |
 
 ## Functionality
@@ -84,15 +71,10 @@ A state machine is not explicitly defined in the XML, but corresponds to the typ
 ## Comparison with Similar Function Blocks
 
 | Function Block | Features |
-
 |------------------------|----------------|
-
 | **AD_DEMUX_5** | Adapter-based, unidirectional, 5 outputs, generic |
-
 | **E_DEMUX** (Standard) | Distributes events to one of several outputs – no adapter data forwarding |
-
 | **F_DEMUX** (Data) | Distributes data values across multiple OUT ports via INDEX – works with elementary data types |
-
 **Adapter-SELECT** | Similar function, but often with bidirectional adapters and multiple sockets |
 
 The **AD_DEMUX_5** stands out due to its purely adapter-based interface, which enables loose coupling and flexible type adaptation via generic adapter definitions.

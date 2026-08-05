@@ -9,50 +9,36 @@ The function block `ILOCK_BLOCK_PROTECT` implements an interlock-protected direc
 ### **Event Inputs**
 
 | Event | with variables | Description |
-
 |----------|---------------|--------------|
-
 | `EI_UP` | `DI_UP`, `DT_PROTECT` | Event to activate forward direction |
-
 | `EI_DOWN`| `DI_DOWN`, `DT_PROTECT` | Event to activate reverse direction |
 
 ### **Event Outputs**
 
 | Event | with variables | Description |
-
 |----------|----------------|--------------|
-
 | `EO_UP` | `DO_UP` | Acknowledge active forward direction |
-
 | `EO_DOWN`| `DO_DOWN` | Acknowledge active reverse direction |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-
 |--------------|---------|-------------|-------------|
-
 | `DI_UP` | BOOL | – | `TRUE` = forward, upward, right, clockwise |
-
 | `DI_DOWN` | BOOL | – | `TRUE` = reverse, downward, left, counterclockwise |
-
 | `DT_PROTECT` | TIME | `T#50ms` | Dead time after resetting a direction |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |-----------|------|--------------|
-
 | `DO_UP` | BOOL | `TRUE` = Forward direction active |
-
 | `DO_DOWN` | BOOL | `TRUE` = Reverse direction active |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
 |-----------|--------------------------------|--------------|
-
 | `timeOut` | `iec61499::events::ATimeOut` | Adapter for the time-based control of dead time |
 
 ## Functionality
@@ -95,19 +81,12 @@ After the dead time has elapsed, the function block leaves the protection phase 
 ## State Overview
 
 | State | Description |
-
 |--------------|---------------|
-
 | `STOP` | Idle state: both outputs `FALSE`, waiting for the first valid event |
-
 | `UP` | Forward direction active: `DO_UP = TRUE`, `DO_DOWN = FALSE` |
-
 | `DOWN` | Reverse direction active: `DO_DOWN = TRUE`, `DO_UP = FALSE` |
-
 | `UP_STOP` | Protection phase after resetting the forward direction: `DO_UP` to `FALSE`, timer running |
-
 | `DOWN_STOP` | Protection phase after resetting the reverse direction: `DO_DOWN` to `FALSE`, timer running |
-
 | `EVAL` | Evaluation state after timer expiration: Decision on next direction or return to `STOP` |
 
 ## Application Scenarios
@@ -119,15 +98,10 @@ After the dead time has elapsed, the function block leaves the protection phase 
 ## Comparison with similar components
 
 | Component | Properties |
-
 |----------|---------------|
-
 | **SR Flip-Flop** | Simple set/reset logic, no dead time, no protection against simultaneous signals |
-
 | **ILOCK_BLOCK_PROTECT** | Prioritizes the first active input, dead time after each direction change, both outputs never active simultaneously `TRUE` |
-
 **Interlock Block without Timer** | Blocking logic only, immediate switching possible, no protection time |
-
 **RS Lock with Time Delay** | Similar, but often less configurable and event-driven |
 
 The `ILOCK_BLOCK_PROTECT`It offers an integrated, configurable dead time and is specifically optimized for event-driven systems according to IEC 61499.

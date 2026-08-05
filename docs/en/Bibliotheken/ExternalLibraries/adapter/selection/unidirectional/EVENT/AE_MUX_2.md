@@ -9,24 +9,19 @@ The **AE_MUX_2** is a generic multiplexer function block for analog value adapte
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | REQ | Event | Controls the updating of the index `K` and the switching of the output |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
 |------|-----|--------------|
-
 | CNF | Event | Acknowledgement after successful output switching |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | K | UINT | Index for selecting the input (0 → IN1, 1 → IN2) |
 
 ### **Data Outputs**
@@ -36,13 +31,9 @@ None
 ### **Adapters**
 
 | Function | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | IN1 | adapter::types::unidirectional::AE | First analog input (for K = 0) |
-
 | Socket | IN2 | adapter::types::unidirectional::AE | Second analog input (for K = 1) |
-
 | Plug | OUT | adapter::types::unidirectional::AE | Analog output (corresponds to IN1 or IN2) |
 
 ## Functionality
@@ -73,15 +64,10 @@ The function block does not have an explicit state machine. Operation is purely 
 ## Comparison with Similar Function Blocks
 
 | Feature | AE_MUX_2 | Standard IEC 61131 MUX | SE_MUX (for Boolean signals) |
-
 |---------|----------|------------------------|--------------------------------|
-
 | **Data Type** | Analog Value (Adapter) | Simple Data Types | Boolean Values |
-
 | **Number of Inputs** | 2 | Multiple (configurable) | 2 |
-
 | **Interface** | Adapter | Data Inputs/Outputs | Event/Data Inputs/Outputs |
-
 | **Event Control** | Yes (REQ/CNF) | No (Cyclic) | Yes |
 
 The AE_MUX_2 is specifically optimized for use with analog value adapters and integrates seamlessly into the event-driven 4diac IDE environment.

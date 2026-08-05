@@ -9,55 +9,38 @@ The **logiBUS_PI_IDA** is a composite function block (FB) for processing double-
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INIT | EInit | Service Initialization – Parameterization and Start |
-
 REQ | Event | Service Request – Triggers processing |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 INIT | EInit | Initialization Confirm – Confirms successful initialization |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 QI | BOOL | – | Event Input Qualifier (Enable/Disable) |
-
 PARAMS | STRING | – | Service Parameters (e.g., bus address, channel configuration) |
-
 Input | logiBUS::io::PI::logiBUS_PI_S | `Invalid` | Identifies the physical input (Input_I1..I8) |
-
 | PulseDelta | DWORD | – | Number of pulses after which an indication (IND) is triggered |
-
 | TimeDelta | DWORD | `250` | Time in ms after which a periodic indication (IND) is triggered |
-
 | TimeRateLimit | DWORD | `100` | Minimum interval in ms between two indications (rate limiting) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | QO | BOOL | Event Output Qualifier – Status of the last processing |
-
 | STATUS | STRING | Service Status – Error or Diagnostic Message |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN | adapter::types::unidirectional::AD | Output data of the function block – delivers the processed events and values to the application |
 
 The adapter `IN` is connected to the events `IND` (indication) and `CNF` (confirmation), as well as the data value `D1` of the internal function block `logiBUS_PI_ID`.
@@ -114,13 +97,9 @@ Transitions are triggered by `INIT`, `REQ`, and internal errors. The internal fu
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-
 |----------|-------------|
-
 | `logiBUS_PI` | Simpler input function block without pulse and time-delta filters; only raw value changes. |
-
 | `logiBUS_PI_ID` | Predecessor without composite structure and without adapter interface; direct event outputs. |
-
 | `logiBUS_PI_IDA` (this function block) | Additionally offers an **adapter** for flexible further processing and combines pulse, time, and rate logic in a composite. |
 
 The `logiBUS_PI_IDA`This represents an extended and more modular variant, particularly suitable for complex automation projects with standardized interfaces.

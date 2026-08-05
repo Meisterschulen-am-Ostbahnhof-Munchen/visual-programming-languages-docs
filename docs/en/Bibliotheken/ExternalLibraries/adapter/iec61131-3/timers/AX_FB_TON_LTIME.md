@@ -9,43 +9,32 @@ The **AX_FB_TON_LTIME** function block implements an on-delay timer according to
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | REQ | `Event` | Normal execution trigger (not edge-triggered); The timer starts when the signal at data input `IN` or at adapter `IN.E1` is active. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | CNF | `Event` | Confirmation of execution. Triggered as soon as the timer expires or the condition is met. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | PT | `LTIME` | Preset time for the power-on delay. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | ET | `LTIME` | Elapsed time since the start of the timer. |
 
 ### **Adapter**
 
 | Type | Direction | Description |
-
 |-----|----------|-------------|
-
 | `IN` | Socket (Input) | Unidirectional AX adapter for input data. Contains an event (`E1`) and a data value (`D1`). The event starts the timer; the data value determines the timer input (`IN`). |
-
 | `Q` | Plug (Output) | Unidirectional AX adapter for output data. Outputs the result of the time check: `1` if the elapsed time has reached the target time, otherwise `0`. |
 
 ## Functionality

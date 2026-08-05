@@ -9,47 +9,32 @@ The function block **StringValue_IWS** is a service interface function block (SI
 ### **Event Inputs**
 
 | Event | Comment | Accompanying Data |
-
 |----------|-----------|-------------------|
-
 | `INIT` | Service Initialization | `QI`, `PARAMS`, `u16ObjId` |
-
 | `REQ` | Service Request | `QI` |
 
 ### **Event Outputs**
 
 | Event | Comment | Accompanying Data |
-
 |----------|-----------|-------------------|
-
 | `INITO` | Initialization Confirmation | `QO`, `STATUS` |
-
 | `CNF` | Confirmation of requested action | `QO`, `STATUS`, `IN` |
-
 | `IND` | Asynchronous indication from the resource | `QO`, `STATUS`, `IN` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |-----------|----------|-------------|------------|
-
 | `QI` | `BOOL` | – | Event input qualifier |
-
 | `PARAMS` | `STRING` | – | Service parameter (e.g., port/device configuration) |
-
 | `u16ObjId`| `UINT` | `ID_NULL` | Object ID for identifying the data source |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |----------|-----------|-----------|
-
 | `QO` | `BOOL` | Event Output Qualifier |
-
 | `STATUS` | `STRING` | Status or Error Message |
-
 | `IN` | `WSTRING` | Received Input Data (Wide String) |
 
 ### **Adapter**
@@ -121,15 +106,10 @@ Captures status messages, warnings, or error texts from a control unit for forwa
 ## Comparison with similar function blocks
 
 | Function block | Type | Difference |
-
 |----------------|-------|-------------|
-
 | `StringValue_IWS` (present) | `WSTRING` | Receives UTF-16 encoded strings. |
-
 | `StringValue_IWS` (standard version) | `STRING` | Receives ASCII/UTF-8 strings, lower character coverage. |
-
 | `AnalogInput_IWS` | `REAL` | Receives analog measured values, not strings. |
-
 | `EventInput_IWS` | – | Event interface only, no data. |
 
 The `StringValue_IWS`is specifically designed for processing Unicode text and is therefore suitable for international or character set-heavy applications.

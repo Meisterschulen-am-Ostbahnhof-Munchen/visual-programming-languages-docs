@@ -8,9 +8,7 @@ The **AR_CALIBRATE_3P** function block enables 3-point calibration of an analog 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | SET | Event | Sets the reference values (MIN_REF, MID_REF, MAX_REF) for the calibration curve. Does not trigger a calculation, but only sets the target output values. |
 
 ### **Event Outputs**
@@ -19,13 +17,9 @@ No explicit event outputs are available. Output is exclusively via the **Y** ada
 ### **Data Inputs**
 
 | Name | Data Type | Default Value | Comment |
-
 |------|----------|-------------|-----------|
-
 | MIN_REF | REAL | 0.0 | Target value for the smallest input value (Min). |
-
 | MID_REF | REAL | 50.0 | Target value for the middle value (Mid). |
-
 | MAX_REF | REAL | 100.0 | Target value for the largest input value (Max). |
 
 ### **Data Outputs**
@@ -35,23 +29,14 @@ No direct data outputs – all outputs are provided via **plugs** (output adapte
 ### **Adapters**
 
 | Direction | Name | Adapter Type | Comment |
-
 |----------|------|------------|-----------|
-
 | **Plug** (Output) | Y | `adapter::types::unidirectional::AR` | Calibrated output value (analog value plus event). |
-
 | **Plug** (Output) | X_MIN | `adapter::types::bidirectional::AR2` | Stored minimum value (from the raw value). |
-
 | **Plug** (Output) | X_MID | `adapter::types::bidirectional::AR2` | Stored average value (from the raw value). |
-
 | **Plug** (Output) | X_MAX | `adapter::types::bidirectional::AR2` | Stored maximum value (from the raw value). |
-
 **Socket** (Input) | X | `adapter::types::unidirectional::AR` | Raw value from the sensor (analog value plus event). |
-
 **Socket** (Input) | C_MIN | `adapter::types::unidirectional::AX` | Event for calibrating the minimum point (reads the current raw value). |
-
 **Socket** (Input) | C_MID | `adapter::types::unidirectional::AX` | Event for calibrating the midpoint. |
-
 **Socket** (Input) | C_MAX | `adapter::types::unidirectional::AX` | Event for calibrating the maximum point. |
 
 ## Functionality
@@ -95,17 +80,11 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 ## State overview
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | Waiting – no event pending. Transitions: For `SET` → IDLE (only set reference values); for `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → IDLE (no action); for `C_MIN.E1[C_MIN.D1]` → CAL_MIN; at `C_MID.E1[C_MID.D1]` → CAL_MID; at `C_MAX.E1[C_MAX.D1]` → CAL_MAX; at `X.E1` → REQ. |
-
 | **REQ** | Calculates the calibrated output value. Returns to IDLE immediately after execution. |
-
 | **CAL_MIN** | Stores the current raw value as the minimum (`X_MIN.DO1 := X.D1`). Returns to IDLE automatically. |
-
 | **CAL_MID** | Stores the current raw value as the average. Returns to IDLE automatically. |
-
 | **CAL_MAX** | Stores the current raw value as the maximum. Returns to IDLE automatically. |
 
 **Transition Conditions:**
@@ -124,15 +103,10 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-
 |----------|-------------|
-
 | **AR_SCALE** | Simple linear scaling (2-point) – without correction of center nonlinearities. |
-
 **AR_CALIBRATE_2P** | Two-point calibration (Min, Max) – cannot address center drift. |
-
 **AR_CALIBRATE_3P** (this block) | Three-point calibration with separate center calibration – ideal for joysticks with center drift. |
-
 **Table-based correction** | More complex, requires many reference points; AR_CALIBRATE_3P is simpler and faster. |
 
 The key advantage lies in the explicit handling of the center point, which is neglected in many simple scaling methods.

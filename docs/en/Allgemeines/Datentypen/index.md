@@ -31,13 +31,9 @@ See also: IEC 61499, Table E.1
 #### 💾 Data Types for Computation
 
 | Type | Abbreviation | BYTE Length | Bit Length | Minimum Value Range | Maximum Value Range |
-
 | --- | --- | --- | --- | --- | --- |
-
 | BOOL | X | 1/8 | 1 Bit | 0 = FALSE | 1 = TRUE |
-
 | SINT | S | 1 | 8 Bit | −128 | 127 |
-
 | INT | I | 2 | 16 bits | −32,768 | 32,767 |
 | DINT | DI | 4 | 32 bits | −2,147,483,648 | 2,147,483,647 |
 | LINT | LI | 8 | 64 bit | −9,223,372,036,854,775,808 | 9,223,372,036,854,775,807 |
@@ -59,15 +55,10 @@ See also: IEC 61499, Table E.1
 -----------------
 
 BOOL | X | 1/8 | 1 Bit | 0 = FALSE | 1 = TRUE |
-
 QUARTER [^1] | Q | 1/4 | 2 Bits | 0 | 3 |
-
 BYTE | B | 1 | 8 Bits | 0 | 255 |
-
 WORD | W | 2 | 16 Bits | 0 | 65,535 |
-
 DWORD | D | 4 | 32 Bits | 0 | 4,294,967,295 |
-
 LWORD | L | 8 | 64 Bits | 0 | 18,446,744,073,709,551,615 |
 
 [^1]: QUARTER is not a standard.
@@ -77,13 +68,9 @@ LWORD | L | 8 | 64 Bits | 0 | 18,446,744,073,709,551,615 |
 The following table lists the corresponding adapters and I/O blocks for each data type:
 
 | Data Type | Abbreviation | Adapter | Input | Output |
-
 | --- | --- | --- | --- | --- |
-
 | BOOL | X | [AX](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BOOL/AX.md) | [IX](../../Bibliotheken/StandardLibraries/io/IX.md) | [QX](../../Bibliotheken/StandardLibraries/io/QX.md) |
-
 | BYTE | B | [AB](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BYTE/AB.md) | [IB](../../Bibliotheken/StandardLibraries/io/IB.md) | [QB](../../Bibliotheken/StandardLibraries/io/QB.md) |
-
 | WORD | W | [AW](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/WORD/AW.md) | [IW](../../Bibliotheken/StandardLibraries/io/IW.md) | [QW](../../Bibliotheken/StandardLibraries/io/QW.md) |
 | DWORD | D | [AD](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DWORD/AD.md) | [ID](../../Bibliotheken/StandardLibraries/io/ID.md) | [QD](../../Bibliotheken/StandardLibraries/io/QD.md) |
 | LWORD | L | [AL](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LWORD/AL.md) | [IL](../../Bibliotheken/StandardLibraries/io/IL.md) | [QL](../../Bibliotheken/StandardLibraries/io/QL.md) |
@@ -100,9 +87,7 @@ The following table lists the corresponding adapters and I/O blocks for each dat
 | DATE | D | — | — | — |
 | TIME | T | — | — | — |
 | TIME_OF_DAY | TOD | — | — | — |
-
 DATE_AND_TIME | DT | — | — | — |
-
 QUARTER | Q | — | — | — |
 
 The following list contains the elementary data types according to DIN EN 61131-3.

@@ -9,9 +9,7 @@ The function block `UDINT_AUDI_AX_SEL_AUDI` implements a binary selection betwee
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | EI0 | Event | Set IN0 – triggers the processing of data input IN0 |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ The function block does not have direct event outputs on the interface. The outp
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN0 | UDINT | Selectable input variable (first source) |
 
 ### **Data Outputs**
@@ -33,13 +29,9 @@ The function block has no direct data outputs on the interface. The selected dat
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|-----|-----------|
-
 | OUT | Plug (Output) | `adapter::types::unidirectional::AUDI` | Selected output (Event E1, Data D1) |
-
 | IN1 | Socket (Input) | `adapter::types::unidirectional::AUDI` | Selectable input variable (second source) |
-
 | G | Socket (Input) | `adapter::types::unidirectional::AX` | Selector (controls the selection) |
 
 ## Functionality
@@ -81,13 +73,9 @@ The block does not have an explicit state machine. It operates purely event-driv
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature |
-
 |----------|---------|
-
 | **SEL (IEC 61131-3)** | Pure function block or ST implementation without adapters; direct data and event ports. |
-
 | **UDINT_AUDI_AX_SEL_AUDI** | Extended version with adapter interfaces that facilitate loose coupling and reusability in complex networks. |
-
 **MUX (Multiplexer)** | Multi-channel selection (often >2 inputs) – this block is limited to two sources. |
 
 ## Conclusion

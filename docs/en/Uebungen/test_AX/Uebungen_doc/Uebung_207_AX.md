@@ -9,19 +9,12 @@ Using the function block `ILOCK_2_E_AX`, a simple two-channel set/reset system i
 ## Function Blocks Used
 
 | FB Name | Type | Description |
-
 |----------|------|----------------|
-
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IE` | Digital input, parameterized with `Input_I1` and event `BUTTON_SINGLE_CLICK` |
-
 | `DigitalInput_I2` | `logiBUS::io::DI::logiBUS_IE` | Digital input, parameterized with `Input_I2` and event `BUTTON_SINGLE_CLICK` |
-
 | `DigitalInput_I3` | `logiBUS::io::DI::logiBUS_IE` | Digital input, parameterized with `Input_I3` and event `BUTTON_SINGLE_CLICK` |
-
 | `ILOCK_AX` | `logiBUS::signalprocessing::interlock::ILOCK_2_E_AX` | Interlock function block with two event-driven set/reset inputs and adapter outputs |
-
 DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output, parameterized with `Output_Q1` |
-
 DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output, parameterized with `Output_Q2` |
 
 ### Sub-function blocks (no custom sub-applications)

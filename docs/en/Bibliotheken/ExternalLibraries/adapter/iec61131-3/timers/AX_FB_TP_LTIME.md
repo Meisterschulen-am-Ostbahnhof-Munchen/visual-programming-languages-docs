@@ -8,33 +8,25 @@ The **AX_FB_TP_LTIME** is a standardized pulse timer function block (timer pulse
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Normal execution request (non-triggering) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Execution Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | PT | LTIME | Pulse Time (Pulse Duration) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | ET | LTIME | Elapsed Time |
 
 ### **Adapters**
@@ -74,13 +66,9 @@ The function block consists of two internal components:
 Since the functional block consists of two parts, the following state behavior results for the complete module:
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | No pulse active. The adapter output `Q.D1` is FALSE. |
-
 | **TIMING** | A pulse is running – the internal timer is counting up. `ET` is increasing, `Q.D1` is TRUE (as soon as the flip-flop was clocked at startup or after the first CNF). |
-
 | **DONE** | The pulse is complete. `CNF` was output, `ET` is equal to `PT`, `Q.D1` will be set to FALSE with the next `CNF`. The cycle starts again with a new `REQ` or `IN.E1`. |
 
 ## Application Scenarios
@@ -91,15 +79,10 @@ Since the functional block consists of two parts, the following state behavior r
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Feature |
-
 |----------|-----|--------------|
-
 | **FB_TP_LTIME** (Standard) | TP Timer | No adapter, only standard events and signals. |
-
 | **AX_FB_TP_LTIME** (this FB) | TP Timer with AX Adapter | Enables integration into adapter-based architectures, includes a D flip-flop for signal stabilization. |
-
 | **FB_TON_LTIME** | Turn-On Delay | Delays the activation of an output. |
-
 | **FB_TOF_LTIME** | Turn-Off Delay | Delays the switching off of an output. |
 
 This module combines the timer function of a twisted pair (TP) with the flexibility of an adapter.

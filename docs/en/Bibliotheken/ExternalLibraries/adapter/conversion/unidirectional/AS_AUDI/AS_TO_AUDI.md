@@ -20,11 +20,8 @@ Not present. Data output is provided via the adapter plug **AUDI_OUT**.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **AS_IN** | `adapter::types::unidirectional::AS` | Socket (Input) | SINT adapter that provides an input value (SINT) and a corresponding event. |
-
 | **AUDI_OUT** | `adapter::types::unidirectional::AUDI` | Plug (Output) | UDINT adapter that outputs the converted value (UDINT) and an event. |
 
 The adapters each contain one data element and one event element:

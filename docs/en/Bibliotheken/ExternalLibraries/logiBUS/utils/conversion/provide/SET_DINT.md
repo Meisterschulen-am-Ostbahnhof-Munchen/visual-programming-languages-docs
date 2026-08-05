@@ -9,25 +9,19 @@ The function block `SET_DINT` is used to write a DINT value from a data input to
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-------|-------------------------------|---------------|
-
 | REQ | Event | Normal Execution Trigger | IN, OUT |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-------|------------------------------|---------------|
-
 | CNF | Event | Execution Confirmation | OUT |
 
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-
 |------|------|----------------------|-------------|
-
 | IN | DINT | Value to be written | 0 |
 
 ### **Data Outputs**
@@ -55,9 +49,7 @@ Execution is atomic: The value is applied immediately and without delay.
 ## State Overview
 
 | State | Action | Output Event |
-
 |---------|--------------------|-----------------|
-
 | REQ | OUT := IN | CNF |
 
 The function block has no other states (no wait loops, no branches). After the action, it immediately returns to standby mode for the next `REQ`.

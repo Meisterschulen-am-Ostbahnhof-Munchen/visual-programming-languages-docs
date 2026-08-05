@@ -9,17 +9,13 @@ The **AX_E_PERMIT** function block implements conditional event propagation (per
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|----------------|
-
 | EI | Event | Event Input |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------------|
-
 | EO | Event | Event Output |
 
 ### **Data Inputs**
@@ -31,9 +27,7 @@ This function block has no data outputs.
 ### **Adapter**
 
 | Role | Name | Type | Comment |
-
 |---------|--------|----------------------------------------|-------------------------------|
-
 | Socket | PERMIT | `adapter::types::unidirectional::AX` | Provides the enable signal (D1) |
 
 The adapter is unidirectional and provides a Boolean value (`D1`) that controls the behavior of the event gate.
@@ -72,15 +66,10 @@ There is no explicit state machine; the block operates purely combinatorially at
 ## Comparison with Similar Blocks
 
 | Block | Special Feature |
-
 |-------------------|-----------------------------------------------------------------------------|
-
 | **E_PERMIT** | Standard block with direct Boolean input. No adapter required. |
-
 | **AX_E_PERMIT** | Same logic, but the enable signal is provided via a unidirectional adapter, which facilitates coupling across subsystems. |
-
 **E_SR** (Set-Reset) | Event-based state storage; not directly suitable as a gate. |
-
 **E_MUX** | Event switch that toggles between two outputs depending on a data input – not a pure blocking function. |
 
 The advantage of `AX_E_PERMIT` lies in the clean separation of the enable logic by an adapter, which promotes the reuse of control modules.

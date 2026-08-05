@@ -8,9 +8,7 @@ The function block **AW_DEMUX_4** is a generic demultiplexer for adapters of typ
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------------------|
-
 | REQ | Event | Sets the index `K` |
 
 The event input `REQ` triggers processing: The current value of `K` is taken, and the input signal is forwarded to the corresponding output.
@@ -18,9 +16,7 @@ The event input `REQ` triggers processing: The current value of `K` is taken, an
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------------------------------------|
-
 | CNF | Event | Confirmation of the takeover of `K` |
 
 After successful switching, the event `CNF` is sent.
@@ -28,9 +24,7 @@ After successful switching, the event `CNF` is sent.
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------|
-
 | K | UINT | Index (typically 1-based) |
 
 The value of `K` determines which output adapter is activated. Valid values are typically 1 to 4.
@@ -41,17 +35,11 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|-------|----------------------------------------|---------------------------------|
-
 | Socket | IN | `adapter::types::unidirectional::AW` | Input Signal (Source) |
-
 | Plug | OUT1 | `adapter::types::unidirectional::AW` | Output 1 |
-
 | Plug | OUT2 | `adapter::types::unidirectional::AW` | Output 2 |
-
 | Plug | OUT3 | `adapter::types::unidirectional::AW` | Output 3 |
-
 | Plug | OUT4 | `adapter::types::unidirectional::AW` | Output 4 |
 
 The adapters are unidirectional and of type `AW` (e.g., for analog or value forwarding).
@@ -89,13 +77,9 @@ An explicit state machine is not defined in the XML, but the described behavior 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Outputs |
-
 |----------------|--------------------------------------------|----------|
-
 | **AW_DEMUX_4** | Demultiplexer for AW adapters (1→4) | 4 |
-
 | AW_MUX_4 | Multiplexer for AW adapters (4→1) | 1 |
-
 | AW_DEMUX_2 | Demultiplexer with two outputs | 2 |
 
 The AW_DEMUX_4 is the extension to four outputs. It offers a higher number of destinations but requires a clearly defined index.

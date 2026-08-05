@@ -23,15 +23,10 @@ None – All data is output via the three output adapters (`OUT1`, `OUT2`, `OUT3
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|-------|----------------------------|-------------------------------------------------|
-
 Socket | `IN` | `adapter::types::unidirectional::AR` | Incoming adapter as the source of the data/events. |
-
 Plug | `OUT1`| `adapter::types::unidirectional::AR` | First outgoing adapter (Destination 1). |
-
 Plug | `OUT2`| `adapter::types::unidirectional::AR` | Second outgoing adapter (Destination 2). |
-
 Plug | `OUT3`| `adapter::types::unidirectional::AR` | Third outgoing adapter (Destination 3). |
 
 ## Functionality
@@ -61,13 +56,9 @@ The function block is **stateless** (combinatorial). There are no internal state
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------------|-----------------------------------------------------------------------------|
-
 | **AR_SPLIT_2** | Distribution to two outputs – more compact for smaller applications. |
-
 **AR_SPLIT_N** | Distribution to a configurable number of outputs (generic). |
-
 **AR_CONNECT** | Simple 1:1 connection (no distribution). |
 
 Unlike dedicated splitters with data or event inputs/outputs, the `AR_SPLIT_3` operates exclusively via adapters, making it particularly flexible and type-independent.

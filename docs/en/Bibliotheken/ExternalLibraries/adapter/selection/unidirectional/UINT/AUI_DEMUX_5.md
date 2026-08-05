@@ -8,25 +8,19 @@ The function block **AUI_DEMUX_5** is a generic demultiplexer for the AUI adapte
 ### **Event Inputs**
 
 | Event | Data Type | Description |
-
 |----------|----------|--------------|
-
 | `REQ` | Event | Trigger to set the index `K` and forward the input signal to the corresponding output. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Description |
-
 |----------|----------|--------------|
-
 | `CNF` | Event | Confirmation that the index switching and forwarding are complete. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|--------------|
-
 | `K` | UINT | Integer index (1 … 5) that specifies the target output. |
 
 ### **Data Outputs**
@@ -35,11 +29,8 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Direction | Quantity | Description |
-
 |----------------|----------|--------|--------------|
-
 | IN | Socket | 1 | Input adapter of type `AUI` (unidirectional). The signal to be distributed arrives here. |
-
 | OUT1 … OUT5 | Plug | 5 | Output adapter of type `AUI`. The currently selected output receives the input signal. |
 
 ## Functionality
@@ -77,13 +68,9 @@ The function block does not have any explicitly modeled states (ECC). Its behavi
 
 | Function Block | Number of Outputs | Special Features |
 |-----------------|-----------------|----------------|
-
 | `AUI_DEMUX_2` | 2 | Simple 2-way demultiplexer. |
-
 | `AUI_DEMUX_5` | 5 | This module. |
-
 | `AUI_DEMUX_10` | 10 | Extended version for ten outputs. |
-
 | `AUI_MUX_5` | 1 (Input) | Multiplexer that combines multiple inputs into one output. |
 
 The `AUI_DEMUX_5` offers a good compromise between flexibility and complexity for systems with up to five participants.

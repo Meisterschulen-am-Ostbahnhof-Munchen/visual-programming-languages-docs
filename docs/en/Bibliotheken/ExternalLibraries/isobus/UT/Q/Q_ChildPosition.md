@@ -56,23 +56,16 @@ The **Q_ChildPosition** is a standards-compliant function block for the absolute
 ## Position Range
 
 | Parameter | Range | Description |
-
 |-----------|----------------|----------------------------|
-
 | X-Position| -32768 - +32767| Horizontal Position |
-
 | Y-Position| -32768 - +32767| Vertical Position |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Position outside the valid range |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
 
 ## Application Scenarios
@@ -84,13 +77,9 @@ The **Q_ChildPosition** is a standards-compliant function block for the absolute
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_ChildPosition | Q_ChildLocation | VtAbsoluteMove |
-
 |---------------|-----------------|-----------------|----------------|
-
 | ISO Standard | ✔ | ✔ | ✖ |
-
 | Position Type | Absolute | Relative | Absolute |
-
 | Value Range | ±32767 pixels | ±127 pixels | ±32767 pixels |
 
 ## Conclusion

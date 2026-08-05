@@ -33,15 +33,10 @@ The following data values are received via the adapters:
 ### **Adapter**
 
 | Adapter | Type | Role | Comment |
-
 |--------|------|-------|-----------|
-
 | `SET` | adapter::types::unidirectional::AX | Input | Set |
-
 | `RESET1` | adapter::types::unidirectional::AX | Input | Reset |
-
 | `CLK` | adapter::types::unidirectional::AX | Input | Clock |
-
 | `Q1` | adapter::types::unidirectional::AX | Output | Output |
 
 All adapters are of type `AX` (unidirectional) and each provides one event channel (`.E1`) and one data channel (`.D1`).
@@ -80,9 +75,7 @@ After the algorithm executes, the event `Q1.E1` is always sent.
 The function block is implemented as a **Basic FB** with the following ECC:
 
 | State | Action | Output |
-
 |---------|--------|---------|
-
 | `REQ` | Execute algorithm `REQ` | `Q1.E1` (after algorithm) |
 
 Transitions:

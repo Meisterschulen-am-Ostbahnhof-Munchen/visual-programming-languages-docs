@@ -27,15 +27,10 @@ None.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|-----|----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::ADI` | Socket (Input) | Incoming ADI data stream that is split. |
-
 | `OUT1` | `adapter::types::unidirectional::ADI` | Plug (Output) | First outgoing ADI data stream (copy of the input). |
-
 | `OUT2` | `adapter::types::unidirectional::ADI` | Plug (Output) | Second outgoing ADI data stream. |
-
 | `OUT3` | `adapter::types::unidirectional::ADI` | Plug (Output) | Third outgoing ADI data stream. |
 
 ## Functionality

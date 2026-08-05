@@ -21,11 +21,8 @@ The adapter plug `AUI_OUT` outputs a data value of type `D1` (equivalent to `UIN
 ### **Adapter**
 
 | Name | Direction | Type |
-
 |----------|----------|----------------------------|
-
 | AULI_IN | Socket | `adapter::types::unidirectional::AULI` |
-
 | AUI_OUT | Plug | `adapter::types::unidirectional::AUI` |
 
 ## Functionality
@@ -60,13 +57,9 @@ The function block does not have its own finite state machine. The internal conv
 ## Comparison with similar components
 
 | Component | Input type | Output type | Special feature |
-
 |---------------|-------------|-------------|-------------|
-
 | `AULI_TO_AUI` | `ULINT` | `UINT` | Adapter Wrapper, Event-Driven |
-
 | `F_ULINT_TO_UINT` | `ULINT` | `UINT` | Pure Function, No Adapter |
-
 | `AUI_TO_AULI` | `UINT` | `ULINT` | Reverse Direction (Not Available) |
 
 Unlike a bare IEC function, this block offers an adapter-compliant input and output interface, thus enabling easy integration into adapter-based architectures.

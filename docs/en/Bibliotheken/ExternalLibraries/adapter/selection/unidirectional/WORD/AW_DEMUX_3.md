@@ -9,9 +9,7 @@ The function block **AW_DEMUX_3** is a generic demultiplexer for the unidirectio
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `REQ` | Event | Set Index K; triggers the distribution. |
 
 The event input `REQ` triggers the demultiplex operation. The current value of the data input `K` determines which output adapter the incoming value is forwarded to.
@@ -19,9 +17,7 @@ The event input `REQ` triggers the demultiplex operation. The current value of t
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of Set Index K. |
 
 After successful distribution, the event `CNF` is triggered. It indicates that the data value is available at the selected output.
@@ -29,9 +25,7 @@ After successful distribution, the event `CNF` is triggered. It indicates that t
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | index (1-based, expected range 1…3) |
 
 The input `K` determines which of the three outputs (`OUT1`, `OUT2`, `OUT3`) is used. Values outside the range 1–3 are ignored or do not result in any forwarding (depending on the specific implementation).
@@ -43,15 +37,10 @@ This function block does not have explicit data outputs. All output data is prov
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | `adapter::types::unidirectional::AW` | `IN` | Socket | Input value to be demultiplexed |
-
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug | 1st Output |
-
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug | 2nd Output |
-
 | `adapter::types::unidirectional::AW` | `OUT3` | Plug | 3rd Output |
 
 All adapters are of the same unidirectional type `AW`. Socket `IN` receives the data value to be distributed. The three plugs `OUT1`…`OUT3` represent the respective outputs.
@@ -92,23 +81,14 @@ There are no hold, error, or special states.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference to AW_DEMUX_3 |
-
 |----------|--------------|---------------------------|
-
 **AW_MUX_3** | Multiplexer – combines three inputs into one output | Reverse data direction: DEMUX distributes, MUX combines |
-
 **AW_DEMUX_2** | Demultiplexer with two outputs | Fewer outputs |
-
 **E_DEMUX** (Event Demux) | Distributes events instead of data values | AW_DEMUX_3 distributes data via adapters, not events |
-
 **GEN_DEMUX** (Generic, non-adapter-specific) | General demultiplexer with an adapter-generic interface | AW_DEMUX_3 is specifically designed for the `AW` type |
-
 **AW_DEMUX_3** (Generic, non-adapter-specific) | General demultiplexer with an adapter-generic interface | AW_DEMUX_3 is specifically designed for the `AW` type |
-
 **AW_DEMUX_2** | Demultiplexer with two outputs | Fewer outputs |
-
 **AW_DEMUX_2** (Event Demux) | Distributes events instead of data values | AW_DEMUX_3 distributes data via adapters, not events |
-
 **AW_DEMUX_3** (Generic, non-adapter-specific) | General demultiplexer with an adapter-generic interface | AW_DEMUX_3 is specifically designed for the `AW` type |
 
 **AW_DEMUX_3** (Generic, non-adapter-specific) | The biggest difference compared to pure data or event demultiplexers is the use of the `AW` adapter type, which encapsulates standardized, unidirectional data transmission within the 4diac IDE.

@@ -9,47 +9,34 @@ The function block `AUDI_UDINT_AX_SEL` implements a binary selection between two
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `EI0` | Event | Sets input `IN0` (value is linked to data input `IN0`) |
-
 | `EI1` | Event | Sets input `IN1` (value is linked to data input `IN1`) |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `CNF` | Event | Confirmation of selection (sent after successful selection) |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 | Name | Type | Description |
-
 | |------|-----|--------------|
-
 | `IN0` | UDINT | First selectable input value (unsigned 32-bit integer) |
-
 | `IN1` | ANY_ELEMENTARY | Second selectable input value (any elementary data type) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `OUT` | UDINT | Result of binary selection (the selected value, as a UDINT) |
 
 ### **Adapters**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `G` | adapter::types::unidirectional::AX | Control adapter: provides the selection criterion (data `G.D1`) and the trigger signal (`G.E1`) for the selection |
 
 ## Functionality
@@ -90,13 +77,9 @@ The function block does not contain an explicit state machine. Its functionality
 ## Comparison with similar components
 
 | Component | Properties |
-
 |----------|---------------|
-
 | `MUX` (IEC 61131) | Multiple inputs, index selection; requires one index input as a scalar value. |
-
 | `SEL` (IEC 61131) | Binary selection with one BOOL input. |
-
 | `AUDI_UDINT_AX_SEL` | Adapter-controlled binary selection with separate input updates, specifically for UDINT output and support for ANY_ELEMENTARY. |
 
 Compared to standard IEC function blocks, this function block offers decoupled communication via adapters and extracted events for data acquisition – advantageous in modular, event-driven systems.

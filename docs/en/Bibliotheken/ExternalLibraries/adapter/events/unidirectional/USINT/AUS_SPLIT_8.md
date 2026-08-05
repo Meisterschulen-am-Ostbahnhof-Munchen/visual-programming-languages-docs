@@ -21,24 +21,15 @@ No data outputs available.
 ### **Adapter**
 
 | Interface | Type | Direction | Description |
-
 |---|---|---|---|
 | **IN** | `adapter::types::unidirectional::AUS` | Socket | Input – receives the OFF signal to be distributed |
-
 | **OUT1** | `adapter::types::unidirectional::AUS` | Plug | Output 1 – forwards the incoming signal |
-
 | **OUT2** | `adapter::types::unidirectional::AUS` | Plug | Output 2 – forwards the incoming signal |
-
 | **OUT3** | `adapter::types::unidirectional::AUS` | Plug | Output 3 – forwards the incoming signal |
-
 | **OUT4** | `adapter::types::unidirectional::AUS` | Plug | Output 4 – forwards the incoming signal |
-
 | **OUT5** | `adapter::types::unidirectional::AUS` | Plug | Output 5 – forwards the incoming signal |
-
 | **OUT6** | `adapter::types::unidirectional::AUS` | Plug | Output 6 – forwards the incoming signal |
-
 | **OUT7** | `adapter::types::unidirectional::AUS` | Plug | Output 7 – forwards the incoming signal |
-
 | **OUT8** | `adapter::types::unidirectional::AUS` | Plug | Output 8 – forwards the incoming signal |
 
 ## Functionality

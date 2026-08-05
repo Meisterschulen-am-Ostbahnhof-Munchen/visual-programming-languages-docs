@@ -8,25 +8,19 @@ The function block `AUDI_DEMUX_2` is a generic 1-to-2 demultiplexer for the unid
 ### **Event Inputs**
 
 | Event | Description | With Data |
-
 |----------|--------------|-----------|
-
 | `REQ` | Request to forward the current input value according to index `K` | `K` |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirmation that the forwarding is complete |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------|
-
 | `K` | `UINT` | Selection index (0 → OUT1, 1 → OUT2) |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ None.
 ### **Adapter**
 
 | Role | Name | Type | Direction | Description |
-
 |--------------|--------|--------------------------|------------|----------------------------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AUDI` | Input | Input value to be demultiplexed |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::AUDI` | Output | First output (Index 0) |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::AUDI` | Output | Second output (Index 1) |
 
 ## Functionality

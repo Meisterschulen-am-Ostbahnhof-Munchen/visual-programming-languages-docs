@@ -20,23 +20,14 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-------------------|-------------|
-
 Socket (Input) | `IN` | `adapter::types::unidirectional::ALI` | Input adapter whose data and events are distributed. |
-
 Plug (Output) | `OUT1` | `adapter::types::unidirectional::ALI` | First output adapter. |
-
 Plug (Output) | `OUT2` | `adapter::types::unidirectional::ALI` | Second output adapter. |
-
 Plug (Output) | `OUT3` | `adapter::types::unidirectional::ALI` | Third output adapter. |
-
 Plug (Output) | `OUT4` | `adapter::types::unidirectional::ALI` | Fourth Output Adapter. |
-
 | Plug (Output) | `OUT5` | `adapter::types::unidirectional::ALI` | Fifth Output Adapter. |
-
 | Plug (Output) | `OUT6` | `adapter::types::unidirectional::ALI` | Sixth Output Adapter. |
-
 | Plug (Output) | `OUT7` | `adapter::types::unidirectional::ALI` | Seventh Output Adapter. |
 ...
 ## Functionality

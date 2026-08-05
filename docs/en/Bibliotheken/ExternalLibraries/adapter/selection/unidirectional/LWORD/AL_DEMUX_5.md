@@ -9,25 +9,19 @@ The function block **AL_DEMUX_5** is a generic demultiplexer for the universal d
 ### **Event Inputs**
 
 | Event | Description |
-
 |---|---|
-
 | `REQ` | Sets the index **K** and triggers the demultiplexing of the current input value. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |---|---|
-
 | `CNF` | Confirms successful index setting and routing to the corresponding output. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |---|---|---|
-
 | `K` | `UINT` | Index (1-based) of the target output: `1`→OUT1, `2`→OUT2, …, `5`→OUT5. Values outside this range are ignored or result in no output signal (depending on the implementation). |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |---|---|---|---|
-
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AL` | Input adapter that provides the data value to be demultiplexed. |
-
 | **Plug** (Output 1) | `OUT1` | `adapter::types::unidirectional::AL` | First output adapter. |
-
 | **Plug** (Output 2) | `OUT2` | `adapter::types::unidirectional::AL` | Second output adapter. |
-
 | **Plug** (Output 3) | `OUT3` | `adapter::types::unidirectional::AL` | Third output adapter. |
-
 **Plug** (Output 4) | `OUT4` | `adapter::types::unidirectional::AL` | Fourth output adapter. |
-
 **Plug** (Output 5) | `OUT5` | `adapter::types::unidirectional::AL` | Fifth output adapter. |
 
 ## Functionality
@@ -81,13 +68,9 @@ The **AL_DEMUX_5** module has no explicit states (ECC diagram). It is a purely c
 ## Comparison with similar modules
 
 | Module | Number of outputs | Data type | Special feature |
-
 |---|---|---|---|
-
 | `AL_DEMUX_5` | 5 | Adapter `AL` | Generic, adapter-based, event-driven |
-
 | `E_DEMUX` (4diac standard) | 2/4/8 | Events | Event forwarding only, no data |
-
 | `MUX` (Multiplexer) | – | Any | Inverted function (multiple inputs to one output) – not available by default in 4diac |
 
 The `AL_DEMUX_5` fills a gap for the demultiplexing of adapter data (e.g., for complex data types such as structures), while pure event demultiplexers like `E_DEMUX` do not transport data.

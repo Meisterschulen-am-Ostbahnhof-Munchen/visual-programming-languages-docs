@@ -22,21 +22,13 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Input (Socket) | IN | `adapter::types::unidirectional::AI` | Single Analog Input Adapter (Source) |
-
 | Output (Plug) | OUT1 | `adapter::types::unidirectional::AI` | First Output (1:1 pass-through from IN) |
-
 | Output (Plug) | OUT2 | `adapter::types::unidirectional::AI` | Second Output |
-
 | Output (Plug) | OUT3 | `adapter::types::unidirectional::AI` | Third Output |
-
 | Output (Plug) | OUT4 | `adapter::types::unidirectional::AI` | Fourth Output |
-
 | Output (Plug) | OUT5 | `adapter::types::unidirectional::AI` | Fifth Output |
-
 Output (Plug) | OUT6 | `adapter::types::unidirectional::AI` | Sixth Output |
 
 ## Functionality

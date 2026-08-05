@@ -8,9 +8,7 @@ The function block `ATM_MUX_4` is a generic multiplexer that switches one of fou
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------------------|
-
 | REQ | Event | Set Index K (Select Input) |
 
 The event input `REQ` triggers the multiplexer function. It is linked to the data input variable `K`.
@@ -18,9 +16,7 @@ The event input `REQ` triggers the multiplexer function. It is linked to the dat
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|----------------------------------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 After successful switching of the output to the input determined by `K`, the event `CNF` is output.
@@ -28,9 +24,7 @@ After successful switching of the output to the input determined by `K`, the eve
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | K | UINT | index |
 
 This integer value determines which of the four ATM adapter inputs is routed to the output. Valid values: 0, 1, 2, 3.
@@ -41,17 +35,11 @@ The module does not have its own data outputs. Data is transmitted exclusively v
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |------|-----------------------------------------|---------------------------------------------|
-
 | IN1 | `adapter::types::unidirectional::ATM` | Input value 1 (K = 0) |
-
 | IN2 | `adapter::types::unidirectional::ATM` | Input value 2 (K = 1) |
-
 | IN3 | `adapter::types::unidirectional::ATM` | Input value 3 (K = 2) |
-
 | IN4 | `adapter::types::unidirectional::ATM` | Input value 4 (K = 3) |
-
 | OUT | `adapter::types::unidirectional::ATM` | IN1 for K=0, IN2 for K=1, IN3 for K=2, IN4 for K=3 |
 
 **Note:** The designation "IN" in the output comment refers to the source adapters – the output forwards the data stream of the corresponding input.

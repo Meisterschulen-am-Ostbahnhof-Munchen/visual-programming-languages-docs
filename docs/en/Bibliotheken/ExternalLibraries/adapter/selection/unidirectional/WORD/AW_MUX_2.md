@@ -9,25 +9,19 @@ The function block **AW_MUX_2** is a generic multiplexer for two adapter inputs.
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Sets the index `K` and triggers the switching of the selected input to the output. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirms the successful execution of the switch according to the current index `K`. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index for selecting the input: `0` → `IN1`, `1` → `IN2`. |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ None.
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|-----|-----------|
-
 | `IN1` | Socket (Input) | `adapter::types::unidirectional::AW` | First adapter input, active at `K = 0`. |
-
 | `IN2` | Socket (Input) | `adapter::types::unidirectional::AW` | Second adapter input, active at `K = 1`. |
-
 | `OUT` | Plug (Output) | `adapter::types::unidirectional::AW` | Output adapter that passes on the selected input. |
 
 ## Functionality
@@ -77,13 +67,9 @@ The function block does not have an internal state machine. Its functionality is
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature |
-
 |----------|---------|
-
 | `MUX` (Standard-4diac) | Switches individual data values (e.g., INT, REAL) based on an index. |
-
 | `AW_MUX_2` | Switches complete adapter connections (type `AW`). Suitable for adapter-based communication, e.g., B. in OPC UA or service interfaces. |
-
 | `SELECT` | Selects between two Boolean inputs; here, adapter selection is done using an integer index. |
 
 The `AW_MUX_2` fills the gap between pure data multiplexers and full protocol switchers.

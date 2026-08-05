@@ -25,23 +25,14 @@ None available.
 #### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | IN | `adapter::types::unidirectional::AB` | Socket (Input) | Incoming adapter that is distributed to the outputs. |
-
 | OUT1 | `adapter::types::unidirectional::AB` | Plug (Output) | First outgoing adapter, identical to the input. |
-
 | OUT2 | `adapter::types::unidirectional::AB` | Plug (Output) | Second outgoing adapter. |
-
 | OUT3 | `adapter::types::unidirectional::AB` | Plug (Output) | Third outgoing adapter. |
-
 | OUT4 | `adapter::types::unidirectional::AB` | Plug (Output) | Fourth outgoing adapter. |
-
 | OUT5 | `adapter::types::unidirectional::AB` | Plug (Output) | Fifth outgoing adapter. |
-
 OUT6 | `adapter::types::unidirectional::AB` | Plug (Output) | Sixth outgoing adapter. |
-
 OUT7 | `adapter::types::unidirectional::AB` | Plug (Output) | Seventh outgoing adapter. |
 
 ## Functionality

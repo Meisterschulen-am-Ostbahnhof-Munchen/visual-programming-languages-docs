@@ -55,13 +55,9 @@ The function block does not have an explicit internal state machine but relies o
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------|--------------|
-
 | **AB_SR_FF** | Set-Reset Flip-Flop, stores two states (Set/Reset) without a data value. |
-
 | **AB_T_FF** | Toggle Flip-Flop, changes the output state with each event. |
-
 | **E_D_FF** | Standard D Flip-Flop without an adapter interface, direct event and data pins. |
 
 The **AB_D_FF** offers type-safe and reusable encapsulation through its adapter interface, whereas comparable devices often rely on fixed data types.

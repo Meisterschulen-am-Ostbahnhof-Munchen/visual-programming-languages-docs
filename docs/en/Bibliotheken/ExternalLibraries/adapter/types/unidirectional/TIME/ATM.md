@@ -13,9 +13,7 @@ The adapter has no event inputs.
 #### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | E1 | Event | Indication (or request) – sent along with the data value D1 |
 
 ### **Data Inputs**
@@ -25,9 +23,7 @@ The adapter has no data inputs.
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | D1 | TIME | Indication/Request Data from the Plug |
 
 ### **Adapter**
@@ -57,15 +53,10 @@ Since the ATM adapter has no internal state machine (stateless adapter), a state
 ## Comparison with similar function blocks
 
 | Feature | ATM (this adapter) | Other unidirectional adapters (e.g., with multiple events/data) |
-
 |---------|----------------------|----------------------------------------------------------------|
-
 | Events | 1 (E1) | Usually multiple (e.g., INIT, REQ, IND, RSP) |
-
 Data | 1 (TIME) | Often multiple data or different types |
-
 Complexity | Low | Medium to high |
-
 Application | Simple time transmission | Complex process scripts |
 
 Compared to more general adapters, ATM is limited to the essentials – ideal when only one event with a single time value needs to be exchanged.

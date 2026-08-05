@@ -9,25 +9,19 @@ The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and redirects the data |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of successful switching |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (1, 2, or 3) for the output to be activated |
 
 ### **Data Outputs**
@@ -36,15 +30,10 @@ The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional 
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug | **OUT1** | adapter::types::unidirectional::AL | First Output Channel |
-
 | Plug | **OUT2** | adapter::types::unidirectional::AL | Second Output Channel |
-
 | Plug | **OUT3** | adapter::types::unidirectional::AL | Third Output Channel |
-
 | Socket | **IN** | adapter::types::unidirectional::AL | Input signal that is demultiplexed |
 
 ## Functionality
@@ -76,9 +65,7 @@ The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional 
 The **AL_DEMUX_3** has a simple internal flow without a persistent state machine. The only action occurs synchronously with the **REQ** event:
 
 | State | Event | Action |
-
 |---------|----------|--------|
-
 | Ready | REQ | Read K, switch connection, send CNF |
 
 After sending **CNF**, the function block immediately returns to the Ready state.
@@ -92,15 +79,10 @@ After sending **CNF**, the function block immediately returns to the Ready state
 ## Comparison with Similar Function Blocks
 
 | FB | Difference |
-
 |----|-------------|
-
 | **AL_DEMUX_2** | Offers only two output adapters instead of three |
-
 | **AL_MUX** | Performs the reverse function (multiplexer: multiple inputs → one output) |
-
 | **E_SWITCH** | Works with individual signals (bit/byte), not with adapters |
-
 **FBD_DEMUX** | Data demultiplexer at the level of elementary data types (e.g., INT, REAL), without adapter support |
 
 The **AL_DEMUX_3** features a direct adapter interface, enabling seamless integration into adapter-based communication paths.

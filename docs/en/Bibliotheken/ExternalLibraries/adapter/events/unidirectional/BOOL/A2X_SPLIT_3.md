@@ -25,15 +25,10 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::A2X` | **IN** | Socket (Input) | Source adapter whose data stream is split. |
-
 | `adapter::types::unidirectional::A2X` | **OUT1** | Plug (Output) | First identical output. |
-
 | `adapter::types::unidirectional::A2X` | **OUT2** | Plug (Output) | Second identical output. |
-
 | `adapter::types::unidirectional::A2X` | **OUT3** | Plug (Output) | Third identical output. |
 
 The adapters are all of type **A2X** (unidirectional) and transmit data in one direction. The device is passive, meaning it does not require event control for data transmission.

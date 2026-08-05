@@ -9,43 +9,32 @@ The block encapsulates the conversion logic and is typically used in automation 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | (via AUDI_IN.E1) | EVENT | Event that triggers the conversion (provided by the connected AUDI adapter) |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | (via AW_OUT.E1) | EVENT | Output event after successful conversion (provided by the AW adapter) |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | (via AUDI_IN.D1) | UDINT | 32-bit unsigned integer to be converted (provided by the AUDI adapter) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | (via AW_OUT.D1) | WORD | 16-bit unsigned integer (result of the conversion, provided by the AW adapter) |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | AUDI_IN | adapter::types::unidirectional::AUDI | Socket (Input) | Receives the UDINT signal and its associated event |
-
 | AW_OUT | adapter::types::unidirectional::AW | Plug (Output) | Passes on the converted WORD signal and its output event |
 
 ## Functionality

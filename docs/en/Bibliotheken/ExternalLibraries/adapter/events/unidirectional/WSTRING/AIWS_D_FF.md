@@ -9,43 +9,32 @@ The AIWS_D_FF function block implements a data latch (D) flip-flop that stores a
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | I.E1 | Event (via adapter) | Event that triggers the transfer of the data value |
 
 ### **Event Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | Q.E1 | Event (via adapter) | Event that displays the stored data value |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | I.D1 | ANY (via adapter) | Data value that is received upon arrival of I.E1 |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | Q.D1 | ANY (via adapter) | Stored data value that is output with Q.E1 |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **I** | `adapter::types::unidirectional::AIWS` | Socket (Input) | Provides the value to be latched and the triggering event |
-
 | **Q** | `adapter::types::unidirectional::AIWS` | Plug (Output) | Outputs the stored value with an event |
 
 ## Functionality

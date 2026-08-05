@@ -55,29 +55,19 @@ The **Q_LockUnlockMask** is a standards-compliant function block for controlling
 ## Command Reference
 
 | u8LockCmd | Function |
-
 |-----------|------------------------------|
-
 | 0 | Unlock mask |
-
 | 1 | Lock mask |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful execution |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 | -21 | VT_E_NO_INSTANCE | No VT client available |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -89,15 +79,10 @@ The **Q_LockUnlockMask** is a standards-compliant function block for controlling
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_LockUnlockMask | VtMaskControl | VtScreenLock |
-
 ---------------|------------------|----------------|--------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Timeout | ✔ | ✖ | ✔ |
-
 | Mask-Specific | ✔ | ✔ | ✖ |
-
 | Bidirectional | ✔ | ✖ | ✔ |
 
 ## Conclusion

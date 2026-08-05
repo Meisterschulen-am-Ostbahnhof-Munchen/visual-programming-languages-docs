@@ -8,25 +8,19 @@ The function block **AIWS_D_FF_TMIN** implements a data latch (D flip-flop) with
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|----------|
-
 | INIT | EInit | Initialization Request (with Tmin parameter) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|----------|
-
 | INITO | EInit | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|----------|
-
 | Tmin | TIME | Minimum time between two output events (inter-disposal time) |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ No dedicated data outputs – the latched value is provided exclusively via the 
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|----------|
-
 | Socket (Input) | I | adapter::types::unidirectional::AIWS | Value to be latched |
-
 | Plug (Output) | Q | adapter::types::unidirectional::AIWS | Latched Value |
 
 ## Functionality

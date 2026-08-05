@@ -27,15 +27,10 @@ None (all data is transmitted via the adapter plugs).
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | UP_IN | `adapter::types::unidirectional::AX` | Socket | Input for forward/upward direction |
-
 | DOWN_IN | `adapter::types::unidirectional::AX` | Socket | Input for reverse/downward direction |
-
 | UP_OUT | `adapter::types::unidirectional::AX` | Plug | Output for forward/upward direction |
-
 | DOWN_OUT | `adapter::types::unidirectional::AX` | Plug | Output for reverse/downward direction |
 
 Each adapter provides an event output `E1` and a data input/output `D1` (of type BOOL). The sockets receive requests, and the plugs pass on the switched states.
@@ -65,17 +60,11 @@ If the active input is lost without the other becoming active, an intermediate s
 ## State Overview
 
 | State | UP_OUT.D1 | DOWN_OUT.D1 | Description |
-
 |---------|-----------|-------------|--------------|
-
 | `STOP` | FALSE | FALSE | Idle state, no direction active |
-
 | `UP` | TRUE | FALSE | Forward/Upward Direction Active |
-
 DOWN` | FALSE | TRUE | Backward/Downward Direction Active |
-
 UP_STOP` | FALSE | FALSE | Intermediate State After Exiting UP |
-
 DOWN_STOP` | FALSE | FALSE | Intermediate State After Exiting DOWN |
 
 ## Application Scenarios

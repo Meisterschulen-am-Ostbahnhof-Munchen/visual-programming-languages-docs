@@ -30,11 +30,8 @@ The latched data value is provided via the output adapter **Q** (see Adapters se
 ### **Adapters**
 
 | Adapter | Direction / Type | Description | Included Elements |
-
 |---------|----------------|--------------|---------------------|
-
 | **I** | Socket (`adapter::types::unidirectional::AR`) | Value to be latched. | **E1** (Event Input) – Clock Signal (CLK) <br>**D1** (Data Input) – Data Value |
-
 | **Q** | Plug (`adapter::types::unidirectional::AR`) | Latched Value. | **E1** (Event Output) – Acknowledgement after Successful Latch <br>**D1** (Data Output) – Latched Data Value |
 
 ## Functionality
@@ -60,9 +57,7 @@ The internal state remains unchanged between two clock edges (memory behavior).
 The component has a single internal memory (the latched data value). State transitions occur exclusively on a rising edge at the clock input **I.E1**:
 
 | Old State | Input D1 (current) | New State | Output D1 | Event Q.E1 |
-
 |---------------|---------------|--------------|-------------|
-
 *any* | *any* | Value of D1 | Value of D1 | is triggered |
 
 There are no other internal states or branches.
@@ -75,13 +70,9 @@ There are no other internal states or branches.
 ## Comparison with similar components
 
 | Component | Property | Difference to AR_D_FF |
-
 |----------|--------------|-------------------------|
-
 | **AR_SR_FF** | Set-Reset Flip-Flop | Does not latch a data value, but is set/reset via Set/Reset. Has two event inputs. |
-
 | **E_D_FF_ANY** | Standard D Flip-Flop without adapter | Same core logic, but direct event/data connections; no adapter encapsulation. |
-
 | **AR_T_FF** | Toggle Flip-Flop | Toggles the output on each clock pulse; no data input. |
 
 ## Conclusion

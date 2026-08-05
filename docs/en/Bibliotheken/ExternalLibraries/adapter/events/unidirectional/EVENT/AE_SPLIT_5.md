@@ -25,19 +25,12 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AE` | A unidirectional adapter event whose content is forwarded to all outputs. |
-
 | Plug (Output 1) | `OUT1` | `adapter::types::unidirectional::AE` | First output that provides the incoming event. |
-
 | Plug (Output 2) | `OUT2` | `adapter::types::unidirectional::AE` | Second output providing the incoming event. |
-
 | Plug (Output 3) | `OUT3` | `adapter::types::unidirectional::AE` | Third output providing the incoming event. |
-
 | Plug (Output 4) | `OUT4` | `adapter::types::unidirectional::AE` | Fourth output providing the incoming event. |
-
 | Plug (Output 5) | `OUT5` | `adapter::types::unidirectional::AE` | Fifth output providing the incoming event. |
 
 ## Functionality

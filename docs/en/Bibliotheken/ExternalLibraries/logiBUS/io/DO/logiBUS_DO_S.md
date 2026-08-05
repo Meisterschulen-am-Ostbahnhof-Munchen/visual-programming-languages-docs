@@ -8,9 +8,7 @@ As a structured data type, `logiBUS_DO_S` does not have event or adapter interfa
 The structure itself contains the following data field, which is populated when the type is instantiated:
 
 | Name | Data Type | Initial Value | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | `Pin` | `USINT` (Unsigned Short Integer) | 255 | Defines the number of the physical output pin to be controlled. The value 255 represents an invalid/undefined state and serves as the default initialization. |
 
 ### **Event Inputs**

@@ -14,19 +14,12 @@ Not applicable, as `ST64B` is a data type and not a function block.
 The structure `ST64B` consists of the following 64 byte variables:
 
 | Name | Type | Description |
-
 | :--- | :--- | :--- |
-
 | B\_00 | BYTE | BYTE 00 |
-
 | B\_01 | BYTE | BYTE 01 |
-
 | B\_02 | BYTE | BYTE 02 |
-
 | B\_03 | BYTE | BYTE 03 |
-
 | B\_04 | BYTE | BYTE 04 |
-
 B\_05 | BYTE | BYTE 05 |
 | B\_06 | BYTE | BYTE 06 |
 | B\_07 | BYTE | BYTE 07 |
@@ -85,7 +78,6 @@ B\_05 | BYTE | BYTE 05 |
 | B\_60 | BYTE | BYTE 60 |
 | B\_61 | BYTE | BYTE 61 |
 | B\_62 | BYTE | BYTE 62 |
-
 | B\_63 | BYTE | BYTE 63 |
 
 ### **Data Outputs**

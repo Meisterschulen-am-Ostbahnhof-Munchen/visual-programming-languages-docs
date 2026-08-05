@@ -25,11 +25,8 @@ No direct data outputs. The data signal (BOOL) is output via the adapter **AX\_O
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|-----|-----------|
-
 | AUS\_IN | Socket | adapter::types::unidirectional::AUS | USINT input value and event |
-
 | AX\_OUT | Plug | adapter::types::unidirectional::AX | BOOL output value and event |
 
 ## Functionality

@@ -10,11 +10,8 @@ The module does not have separate event or data ports at the top level. All comm
 ## **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `AULI_IN` | Socket (Input) | `adapter::types::unidirectional::AULI` | Provides an event `E1` and a data value `D1` of type `ULINT`. |
-
 | `AS_OUT` | Plug (Output) | `adapter::types::unidirectional::AS` | Provides an event `E1` and a data value `D1` of type `SINT`. |
 
 ### **Event Inputs (via adapter)**

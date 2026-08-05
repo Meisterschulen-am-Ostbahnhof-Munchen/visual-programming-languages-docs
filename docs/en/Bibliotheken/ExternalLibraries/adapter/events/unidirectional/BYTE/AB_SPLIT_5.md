@@ -25,19 +25,12 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|-----|-----|--------------|
-
 **Socket** (Input) | `IN` | `adapter::types::unidirectional::AB` | Unidirectional AB adapter providing the input signal. |
-
 **Plug** (Output) | `OUT1` | `adapter::types::unidirectional::AB` | First unidirectional AB adapter output. |
-
 **Plug** (Output) | `OUT2` | `adapter::types::unidirectional::AB` | Second unidirectional AB adapter output. |
-
 **Plug** (Output) | `OUT3` | `adapter::types::unidirectional::AB` | Third unidirectional AB adapter output. |
-
 **Plug** (Output) | `OUT4` | `adapter::types::unidirectional::AB` | Fourth unidirectional AB adapter output. |
-
 **Plug** (Output) | `OUT5` | `adapter::types::unidirectional::AB` | Fifth unidirectional AB adapter output. |
 
 ## Functionality
@@ -63,15 +56,10 @@ There is no state machine. The function block operates continuously and permanen
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Outputs | Special Features |
-
 |----------|-----------------|--------------|
-
 | `AB_SPLIT_2` | 2 | Simple 1:2 distribution |
-
 | `AB_SPLIT_3` | 3 | 1:3 distribution |
-
 | `AB_SPLIT_5` | 5 | 1:5 distribution (this block) |
-
 | `AB_SPLIT_N` (generic) | configurable | Individual number via GenericClassName |
 
 Compared to a configurable split block, `AB_SPLIT_5` offers a fixed, yet simple and type-safe solution without additional configuration effort.

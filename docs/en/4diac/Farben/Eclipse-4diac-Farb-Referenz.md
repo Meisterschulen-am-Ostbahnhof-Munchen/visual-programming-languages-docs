@@ -8,15 +8,10 @@ This reference lists the default colors used in Eclipse 4diac for various elemen
 ## 💾 Data Types
 
 | Data Type | Color (Hex) | RGB | Category |
-
 | :--- | :--- | :--- | :--- |
-
 **BOOL** | `#9FA48A` <span style="color:#9FA48A">■</span> | 159, 164, 138 | Core Types |
-
 | **BYTE** | `#82A3A9` <span style="color:#82A3A9">■</span> | 130, 163, 169 | ANY_BIT (Bit-based Types) |
-
 | **WORD** | `#82A3A9` <span style="color:#82A3A9">■</span> | 130, 163, 169 | ANY_BIT |
-
 | **DWORD** | `#82A3A9` <span style="color:#82A3A9">■</span> | 130, 163, 169 | ANY_BIT |
 | **LWORD** | `#82A3A9` <span style="color:#82A3A9">■</span> | 130, 163, 169 | ANY_BIT |
 | **SINT** | `#18519E` <span style="color:#18519E">■</span> | 24, 81, 158 | ANY_INT (integers) |
@@ -40,19 +35,14 @@ This reference lists the default colors used in Eclipse 4diac for various elemen
 
 | Element | Color (Hex) | RGB | Description |
 | :--- | :--- | :--- | :--- |
-
 **ADAPTER** | `#845DAF` <span style="color:#845DAF">■</span> | 132, 93, 175 | Encapsulated interface (socket/plug). |
 
 ## Other
 
 | Element | Color (Hex) | Description |
-
 | :--- | :--- | :--- |
-
 **Background** | `#FFFFFF` | Default background color for function blocks. |
-
 **Border** | `#000000` | Default border color for function blocks. |
-
 **Selection** | `#0000FF` | Color for selected elements. |
 
 ---

@@ -25,13 +25,9 @@ None. The output data is provided via the adapters `OUT1` and `OUT2`.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AS` | Input adapter whose data is distributed to both outputs. |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::AS` | First output adapter – receives a copy of the incoming data. |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::AS` | Second output adapter – also receives a copy of the incoming data. |
 
 ## Functionality

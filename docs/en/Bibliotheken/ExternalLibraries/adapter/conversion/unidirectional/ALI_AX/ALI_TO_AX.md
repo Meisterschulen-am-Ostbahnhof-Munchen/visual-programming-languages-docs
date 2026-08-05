@@ -31,11 +31,8 @@ The function block serves as a bidirectional bridge between adapters based on di
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **ALI_IN** | Socket (Input) | `adapter::types::unidirectional::ALI` | Input adapter with a LINT value. |
-
 | **AX_OUT** | Plug (Output) | `adapter::types::unidirectional::AX` | Output adapter with a BOOL value. |
 
 ## Functionality

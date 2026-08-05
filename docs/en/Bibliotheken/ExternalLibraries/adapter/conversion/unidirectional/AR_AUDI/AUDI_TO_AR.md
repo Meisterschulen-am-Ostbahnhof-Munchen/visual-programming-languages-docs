@@ -27,11 +27,8 @@ None.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `AUDI_IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Returns a UDINT value and an associated event. The adapter provides an internal event output `E1` and a data output `D1` (UDINT data type). |
-
 | `AR_OUT` | `adapter::types::unidirectional::AR` | Plug (Output) | Outputs the converted REAL value. The adapter has an internal event input `E1` and a data input `D1` (data type REAL).
 
 ## Functionality

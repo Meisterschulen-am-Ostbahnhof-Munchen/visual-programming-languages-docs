@@ -9,19 +9,14 @@ The function block **sequence_E_08_AX_AX** implements a sequential control loop 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `S8_START` | Event | Jumps from `State_08` back to the initial state `START` |
-
 | `RESET` | Event | Resets from any state back to the initial state `START` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of execution (coupled with `STATE_NR`) |
 
 ### **Data Inputs**
@@ -31,9 +26,7 @@ None (state transitions are controlled exclusively via events).
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `STATE_NR` | SINT | Current state number: `START` = 0, `State_01` = 1, …, `State_08` = 8 |
 
 ### **Adapter**
@@ -41,39 +34,24 @@ None (state transitions are controlled exclusively via events).
 **Plugs (Outputs – Unidirectional AX Adapter)**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | `DO_S1` | adapter::types::unidirectional::AX | Output active when `State_01` is active |
-
 | `DO_S2` | adapter::types::unidirectional::AX | Output active when `State_02` is active |
-
 DO_S3` | adapter::types::unidirectional::AX | Output active when `State_03` is active |
-
 DO_S4` | adapter::types::unidirectional::AX | Output active when `State_04` is active |
-
 DO_S5` | adapter::types::unidirectional::AX | Output active when `State_05` is active |
-
 DO_S6` | adapter::types::unidirectional::AX | Output active when `State_06` is active |
-
 | `DO_S7` | adapter::types::unidirectional::AX | Output active when `State_07` is active |
-
 | `DO_S8` | adapter::types::unidirectional::AX | Output active when `State_08` is active |
 
 **Sockets (Inputs – Unidirectional AX Adapter)**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | `DI_S1` | adapter::types::unidirectional::AX | Jumps from `START` to `State_01` |
-
 | `DI_S2` | adapter::types::unidirectional::AX | Jumps from `State_01` to `State_02` |
-
 | `DI_S3` | adapter::types::unidirectional::AX | Jumps from `State_02` to `State_03` |
-
 | `DI_S4` | adapter::types::unidirectional::AX | Jumps from `State_03` to `State_04` |
-
 | `DI_S5` | adapter::types::unidirectional::AX | Jumps from `State_04` to `State_05` |
 | `DI_S6` | adapter::types::unidirectional::AX | Jumps from `State_05` to `State_06` |
 | `DI_S7` | adapter::types::unidirectional::AX | Jumps from `State_06` to `State_07` |
@@ -92,29 +70,17 @@ The function block operates on the principle of an event-driven step sequence. A
 ## State Overview
 
 | State (ECC) | Meaning | Actions |
-
 |---------------|-----------|----------|
-
 | `xSTART` | Initial sleep state after activation | No output, expects `DI_S1` |
-
 | `sState_01` | First step of the sequence | Sets `DO_S1.D1` to `DI_S1.D1`; output `STATE_NR=1` |
-
 | `sState_02` | Second step | Sets `DO_S2.D1` to `DI_S2.D1`; `STATE_NR=2` |
-
 | `sState_03` | Third step | Sets `DO_S3.D1` to `DI_S3.D1`; `STATE_NR=3` |
-
 | `sState_04` | Fourth Step | Sets `DO_S4.D1` to `DI_S4.D1`; `STATE_NR=4` |
-
 | `sState_05` | Fifth Step | Sets `DO_S5.D1` to `DI_S5.D1`; `STATE_NR=5` |
-
 | `sState_06` | Sixth Step | Sets `DO_S6.D1` to `DI_S6.D1`; `STATE_NR=6` |
-
 sState_07` | Seventh Step | Sets `DO_S7.D1` to `DI_S7.D1`; `STATE_NR=7` |
-
 | `sState_08` | Eighth Step | Sets `DO_S8.D1` to `DI_S8.D1`; `STATE_NR=8` |
-
 | `sState_00` | Idle State After Sequence Iteration or Reset | No Output; `STATE_NR=0` |
-
 | `sRESET` | Intermediate State on Reset | Sets **all** `DO_Sx.D1` to`FALSE`; then transition to `sState_00` |
 
 ## Application Scenarios

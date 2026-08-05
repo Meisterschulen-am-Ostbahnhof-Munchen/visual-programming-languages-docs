@@ -20,13 +20,9 @@ None.
 #### **Adapter**
 
 | Type | Direction | Name | Comment |
-
 |-----|----------|------|-----------|
-
 | `adapter::types::unidirectional::AUDI` | Socket (Input) | **IN1** | ADD input 1 |
-
 | `adapter::types::unidirectional::AUDI` | Socket (Input) | **IN2** | ADD input 2 |
-
 | `adapter::types::unidirectional::AUDI` | Plug (Output) | **OUT** | ADD result |
 
 The three adapters are all of the same type, `AUDI`. This adapter type encapsulates the actual data value (e.g., a numerical value) and enables unidirectional data transfer from the socket to the plug. The addition is performed between the values of `IN1` and `IN2`; The result is provided to `OUT`.

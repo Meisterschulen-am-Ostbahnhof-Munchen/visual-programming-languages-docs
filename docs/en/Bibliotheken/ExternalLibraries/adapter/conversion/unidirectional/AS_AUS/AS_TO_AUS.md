@@ -26,11 +26,8 @@ No direct data outputs. Data output is handled exclusively via the `AUS_OUT` ada
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Input) | Receives a SINT value and an event (E1). |
-
 | `AUS_OUT` | `adapter::types::unidirectional::AUS` | Plug (Output) | Outputs the converted USINT value and an event (E1). |
 
 ## Functionality

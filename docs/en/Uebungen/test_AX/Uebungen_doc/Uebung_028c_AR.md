@@ -21,37 +21,21 @@ Reads the data under [missing information] for initialization. The function bloc
 ### Other Function Blocks
 
 | Function Block Name | Type | Parameters | Description |
-
 |--------------|-----|------------|--------------|
-
 | `AnalogInput_I7` | `logiBUS::io::AI::logiBUS_AI_IDA` | QI=TRUE, Input="AnalogInput_I7", AnalogInput_hysteresis=50, TimeDelta=250, TimeRateLimit=100 | Analog input, provides an adapter `AD_IN` (analog/digital value). |
-
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I1" | Digital input I1, controls two outputs (Q1 and SREQ on the analog input) via adapter `AX_SPLIT_2`. |
-
 | `DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I2" | Digital input I2 (Calibrate On/Off). |
-
 | `DigitalInput_I3_CS` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I3" | Digital input I3 (Calibrate Set). |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | QI=TRUE, Output="Output_Q1" | Digital output Q1 (e.g., acknowledgement for I1). |
-
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | QI=TRUE, Output="Output_Q2" | Digital output Q2 (Hysteresis result). |
-
 | `CALIBRATE` | `adapter::Engineering::measurements::AR_CALIBRATE` | Y_Offset=0.0, Y_Scale=100.0 | Calibration adapter: calculates `Y = (X * Y_Scale) + Y_Offset`. Inputs: X (Analog Value), CO (Calibrate On), CS (Calibrate Set). Outputs: Y (Calibrated Value), OFFSET, SCALE. |
-
 | `INI_OFFSET` | `eclipse4diac::storage::INI_AR2` | QI=TRUE, SECTION="'Uebung_028a_AR'", KEY="'OFFSET'", DEFAULT_VALUE=0.0 | Reads/stores the offset value (from the CALIBRATE adapter). |
-
 | `INI_SCALE` | `eclipse4diac::storage::INI_AR2` | QI=TRUE, SECTION="'Uebung_028a_AR'", KEY="'SCALE'", DEFAULT_VALUE=1.0 | Reads/stores the scaling factor. |
-
 | `AX_SPLIT_2` | `adapter::events::unidirectional::AX_SPLIT_2` | - | Distributes a digital adapter (AX) to two outputs. |
-
 | `AR_SPLIT_2` | `adapter::events::unidirectional::AR_SPLIT_2` | - | Distributes an analog adapter (AR) to two outputs. |
-
 | `AD_TO_AUDI` | `adapter::conversion::unidirectional::AD_TO_AUDI` | - | Converts an AD adapter (Analog/Digital) to an AUDI adapter (universal data format). |
-
 | `AUDI_TO_AR` | `adapter::conversion::unidirectional::AUDI_TO_AR` | - | Converts an AUDI adapter back to an AR adapter (analog real value). The double conversion is necessary because direct type conversion is not possible (similar to `reinterpret_cast`). |
-
 | `Hysteresis_AR_AX` | `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX` | QI=TRUE | Hysteresis function on analog values. Inputs: `INPUT` (AR), `THRESHOLD` (AR), `HYSTERESIS` (AR). Output: `OUTPUT` (AX, digital). |
-
 | `Q_NumericValue_PHYSA` | `isobus::UT::Q::Q_NumericValue_PHYSA` | stObj=InputNumber_PWM_DUTY_OUT | Displays an analog value on a display or numeric indicator. |
 
 ## Program Flow and Connections

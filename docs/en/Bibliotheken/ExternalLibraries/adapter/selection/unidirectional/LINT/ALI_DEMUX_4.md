@@ -9,25 +9,19 @@ The function block **ALI_DEMUX_4** is a generic demultiplexer for the ALI protoc
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Sets the index `K` and starts the demultiplexing operation. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|-------------|
-
 | `CNF` | Confirmation that the selected output has been supplied with the input value. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|--------|-------------|
-
 | `K` | UINT | Index of the desired output (1 to 4 for OUT1 to OUT4). Values outside this range have no defined behavior. |
 
 ### **Data Outputs**
@@ -38,15 +32,10 @@ The function block **ALI_DEMUX_4** is a generic demultiplexer for the ALI protoc
 
 | Type | Name | Direction | Description |
 |-----|-------------|----------|-------------|
-
 Socket | `IN` | Input | Incoming ALI values (e.g., measurement data or control commands). |
-
 Plug | `OUT1` | Output | First output (Index 1). |
-
 Plug | `OUT2` | Output | Second output (Index 2). |
-
 Plug | `OUT3` | Output | Third output (Index 3). |
-
 Plug | `OUT4` | Output | Fourth output (Index 4). |
 
 All adapters are of type `adapter::types::unidirectional::ALI` (unidirectional, data-flowing).
@@ -86,15 +75,10 @@ A detailed state machine is not explicitly modeled because the function block op
 ## Comparison with Similar Modules
 
 | Criterion | ALI_DEMUX_4 | Standard Demultiplexer (e.g., DEMUX_4) |
-
 |-----------|-------------|----------------------------------------|
-
 | Interface | Adapter-based (ALI protocol) | Mostly simple data I/O (BOOL, INT) |
-
 | Flexibility | Generic type with hash | Fixed data type |
-
 | Complexity | Low – simple forwarding | Similar, but without adapter coupling |
-
 | Application | Specifically for ALI-enabled systems | General control engineering |
 
 The ALI_DEMUX_4 is specifically optimized for the ALI adapter interface and therefore offers seamless integration into ALI-based applications.

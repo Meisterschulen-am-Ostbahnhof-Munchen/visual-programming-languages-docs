@@ -59,33 +59,21 @@ The **Q_FillAttributes** is a standards-compliant function module for modifying 
 ## Attribute Properties
 
 | Feature | Description |
-
 |---------------|----------------------------------|
-
 | Fill types | According to ISO 11783-6 B.14.4 |
-
 | Color palette | 8-bit color index |
-
 | Patterns | 16-bit pattern references |
-
 | Object range | All fillable VT objects |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful change |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 | -21 | VT_E_NO_INSTANCE | No VT client available |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -97,15 +85,10 @@ The **Q_FillAttributes** is a standards-compliant function module for modifying 
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_FillAttributes | VtSetColor | VtPatternManager |
-
 ---------------|------------------|------------|------------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Color Control | ✔ | ✔ | ✖ |
-
 | Pattern Control | ✔ | ✖ | ✔ |
-
 | Type Control | ✔ | ✖ | ✖ |
 
 ## Conclusion

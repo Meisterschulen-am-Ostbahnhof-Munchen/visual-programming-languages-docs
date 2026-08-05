@@ -22,11 +22,8 @@ The function block `AL_TO_ALI` is a composite function block (FB) for converting
 ### **Adapters**
 
 | Type | Name | Direction | Data Type | Description |
-
 |-----|------|----------|-----------|-------------|
-
 | `adapter::types::unidirectional::AL` | `AL_IN` | Socket (Input) | LWORD | LWORD adapter as input interface. Provides the data to be converted. |
-
 | `adapter::types::unidirectional::ALI` | `ALI_OUT` | Plug (Output) | LINT | LINT adapter as output interface. Delivers the converted data. |
 
 ## Functionality

@@ -8,27 +8,20 @@ The function block **AUS_D_FF_TMIN** implements a clock-controlled D-latch (data
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variable |
-
 |------|-----|------------|--------------|
-
 | INIT | EInit | Init Request | Tmin |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INITO | EInit | Init Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | HYSTERESIS | ANY_NUM | Hysteresis band (currently not connected to the internal network) |
-
 | Tmin | TIME | Minimum time interval between two EO events |
 
 ### **Data Outputs**
@@ -38,11 +31,8 @@ No direct data outputs – output data is provided exclusively via the **Adapter
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 Socket | I | adapter::types::unidirectional::OFF | Value to be transferred (contains event E1 and data D1) |
-
 Plug | Q | adapter::types::unidirectional::OFF | Transferred output value (contains event E1 and data D1) |
 
 ## Functionality
@@ -70,13 +60,9 @@ The internal FB **E_D_FF_ANY_TMIN** has a memory for the last acquired data valu
 ## Comparison with Similar Components
 
 | Component | Properties |
-
 |----------|---------------|
-
 | **E_D_FF** (Simple D Flip-Flop) | Transfers a value immediately at each clock cycle, no time control. |
-
 | **AUS_D_FF_TMIN** | Like **E_D_FF**, but with an additional minimum time between output events. |
-
 | **R_TRIG / F_TRIG** | Detect edges, but do not store a data value. |
 
 The **AUS_D_FF_TMIN** is therefore particularly suitable for time-critical applications where a minimum sampling or update rate must be maintained.

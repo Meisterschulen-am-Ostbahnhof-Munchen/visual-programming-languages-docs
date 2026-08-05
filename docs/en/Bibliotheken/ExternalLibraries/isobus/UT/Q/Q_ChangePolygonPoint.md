@@ -57,23 +57,16 @@ The **Q_ChangePolygonPoint** is a standards-compliant function block for modifyi
 ## Coordinate Range
 
 | Parameter | Range | Description |
-
 |-----------|------------|----------------------------|
-
 | X-value | 0 - 65535 | Horizontal position (px) |
-
 | Y-value | 0 - 65535 | Vertical Position (px) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Invalid Point Index |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid Polygon ID |
 
 ## Application Scenarios
@@ -85,13 +78,9 @@ The **Q_ChangePolygonPoint** is a standards-compliant function block for modifyi
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_ChangePolygonPoint | VtGeometryEditor | VtDynamicShape |
-
 ---------------|----------------------|------------------|----------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Accuracy | 16-bit Coordinates | 8-bit | 16-bit |
-
 | Point Count | Up to 255 | Unlimited | Limited |
 
 ## Conclusion

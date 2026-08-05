@@ -22,11 +22,8 @@ The function block has no direct event or data inputs/outputs. All communication
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |----------|--------------------------|----------|----------------------------------|
-
 | `I` | adapter::types::unidirectional::ALR | Socket (Input) | Returns the clock event and the data value. |
-
 | `Q` | adapter::types::unidirectional::ALR | Plug (Output) | Outputs the output event and the latched value. |
 
 ## Functionality

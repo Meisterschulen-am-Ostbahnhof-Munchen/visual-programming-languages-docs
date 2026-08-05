@@ -22,11 +22,8 @@ The block has **no direct event or data interfaces** at the top level. All input
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |--------|----------------------------------------|----------|----------------------------------|
-
 | AS_IN | adapter::types::unidirectional::AS | Socket | SINT adapter (input) |
-
 | AL_OUT | adapter::types::unidirectional::AL | Plug | LWORD adapter (output) |
 
 ## Functionality

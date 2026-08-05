@@ -21,15 +21,10 @@ None – the data is output via the adapters `OUT1`, `OUT2`, and `OUT3`.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AUS` | Socket (incoming) | Receives an OFF signal. |
-
 | `OUT1` | `adapter::types::unidirectional::AUS` | Plug (outgoing) | First output of the incoming signal. |
-
 | `OUT2` | `adapter::types::unidirectional::AUS` | Plug (outgoing) | Second output of the incoming signal. |
-
 | `OUT3` | `adapter::types::unidirectional::AUS` | Plug (outgoing) | Third output of the incoming signal. |
 
 ## Functionality

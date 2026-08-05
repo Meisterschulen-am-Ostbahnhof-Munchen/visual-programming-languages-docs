@@ -20,11 +20,8 @@ The FB has no explicit top-level data outputs. Data transmission occurs via the 
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AQ` | IN | Input (Socket) | AQ adapter as input interface for quarter-byte data |
-
 | `adapter::types::unidirectional::AB` | OUT | Output (Plug) | AB adapter as output interface for byte data |
 
 ## Functionality

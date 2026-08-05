@@ -8,31 +8,20 @@ The function block `sequence_E_04_AX_SR` implements an event-driven sequencer wi
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `START_S1` | Transition from START/State_00 to State_01 |
-
 | `S1_S2` | Transition from State_01 to State_02 |
-
 S2_S3` | Transition from State_02 to State_03 |
-
 S3_S4` | Transition from State_03 to State_04 |
-
 S4_START` | Transition from State_04 back to State_00 |
-
 STOP` | Immediately interrupts the current state – all outputs are switched off (dead man stop) |
-
 RESUME` | Resumes the sequence from the paused state (outputs are reactivated) |
-
 RESET` | Resets the sequence from any state back to the START state (State_00) |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Execution confirmation. Included output data: `STATE_NR`, `PAUSED` |
 
 ### **Data Inputs**
@@ -42,25 +31,17 @@ No external data inputs.
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `STATE_NR` | SINT | Current state number: START = 0, State_01 = 1, …, State_04 = 4 |
-
 | `PAUSED` | BOOL | `TRUE`, when the sequencer is paused (STOP active) |
 
 ### **Adapter**
 
 | Adapter | Type | Description |
-
 |----------|------------------------------------|--------------|
-
 | `DO_S1` | `adapter::types::unidirectional::AX` | Output active in State_01 (D1 = TRUE) |
-
 | `DO_S2` | `adapter::types::unidirectional::AX` | Output active in State_02 |
-
 | `DO_S3` | `adapter::types::unidirectional::AX` | Output active in State_03 |
-
 DO_S4` | `adapter::types::unidirectional::AX` | Output active in State_04 |
 
 ## Functionality
@@ -91,31 +72,18 @@ The state then changes to one of the paused states (`sPAUSED_S1` to `sPAUSED_S4`
 ## State Overview
 
 | State | Active Output | `STATE_NR` | `PAUSED` |
-
 ------------------|-----------------|------------|----------|
-
 xSTART | none | 0 | FALSE |
-
 sState_00 | none | 0 | FALSE |
-
 sState_01 | DO_S1 | 1 | FALSE |
-
 sState_02 | DO_S2 | 2 | FALSE |
-
 sState_03 | DO_S3 | 3 | FALSE |
-
 sState_04 | DO_S4 | 4 | FALSE |
-
 sPAUSED_S0 | none | saved | TRUE |
-
 sPAUSED_S1 | none | saved | TRUE |
-
 sPAUSED_S2 | none | saved | TRUE |
-
 sPAUSED_S3 | none | saved | TRUE |
-
 sPAUSED_S4 | none | saved | TRUE |
-
 sRESET | none | – | – |
 
 ## Application Scenarios

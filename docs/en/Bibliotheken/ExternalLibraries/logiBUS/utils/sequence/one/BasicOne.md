@@ -8,41 +8,29 @@ The **BasicOne** function block is a basic, event-driven block according to IEC 
 ### **Event Inputs**
 
 | Event | Type | Accompanying Data | Description |
-
 |----------|-----|-------------------|--------------|
-
 | `INIT` | EInit | `QI` | Initialization request; the transition depends on the value of the qualifier `QI`. |
-
 | `REQ` | Event | `QI`, `DI1` | Normal execution request; starts the main operation. |
 
 ### **Event Outputs**
 
 | Event | Type | Accompanying Data | Description |
-
 |----------|-----|-------------------|--------------|
-
 | `INITO` | Initialization | `QO` | Confirmation of successful initialization or deinitialization. |
-
 | `CNF` | Event | `QO`, `DO1` | Confirmation of normal execution; outputs the current state. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `QI` | BOOL | Input qualifier – controls whether initialization is active (`TRUE`) or deinitializing (`FALSE`). Also affects the execution of the main operation. |
-
 | `DI1` | BOOL | First data input; The output is only transferred to `DO1` during normal operation if initialization (`QI = TRUE`) is active. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `QO` | BOOL | Output qualifier – reflects the value of `QI` after an action (except after deinitialization: then `FALSE`). |
-
 | `DO1` | BOOL | First data output; During a normal operation, the value is `DI1` if `QI = TRUE` is present, otherwise `FALSE`. |
 
 ### **Adapter**
@@ -71,17 +59,11 @@ Important: The normal operation is only executed if `QI = TRUE` is present. In t
 ## State Overview
 
 | State | Description | Possible Actions |
-
 |---------|--------------|-------------------|
-
 | `START` | Initial idle state after system startup or deinitialization. | Waits for `INIT` with `QI = TRUE`. |
-
 | `Init` | Initialization phase; sets `QO = QI`. | Executes the *initialize* algorithm, sends `INITO`. |
-
 | `Initialized` | Waiting state after successful initialization. | Can respond to `REQ` (starts NormalOp) or to `INIT` with `QI = FALSE` (starts DeInit). |
-
 | `NormalOp` | Executes the main operation; transfers `DI1` to `DO1` (only if `QI = TRUE`). | Executes the *normalOperation* algorithm, sends `CNF`. |
-
 | `DeInit` | Deinitialization phase; sets `QO = FALSE` and `DO1 = FALSE`. | Executes the *deInitialize* algorithm, sending `INITO`. |
 
 ## Application Scenarios

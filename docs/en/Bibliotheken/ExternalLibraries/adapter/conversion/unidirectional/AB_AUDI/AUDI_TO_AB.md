@@ -9,43 +9,32 @@ The **AUDI_TO_AB** function block is a composite function block (FB) that conver
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `AUDI_IN.E1` | Event (via adapter) | Trigger for data conversion – an incoming event starts the conversion of the current UDINT value to a BYTE value. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `AB_OUT.E1` | Event (via adapter) | Conversion confirmation – after successful conversion, an event is output that signals the new BYTE value to the downstream system. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `AUDI_IN.D1` | UDINT (32-bit) | The 32-bit unsigned integer value to be converted, provided via the AUDI adapter. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `AB_OUT.D1` | BYTE (8-bit) | The converted 8-bit value, output via the AB adapter. |
 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `AUDI_IN` | adapter::types::unidirectional::AUDI | Socket (Input) | Unidirectional adapter that provides events and data of type UDINT. |
-
 | `AB_OUT` | adapter::types::unidirectional::AB | Plug (Output) | Unidirectional adapter that outputs events and data of type BYTE. |
 
 ## Functionality
@@ -81,11 +70,8 @@ This function block does not have an explicit state machine. It operates event-d
 ## Comparison with similar function blocks
 
 | Function block | Description | Difference to AUDI_TO_AB |
-
 |----------|---------------|-----------------------------|
-
 | `F_UDINT_TO_BYTE` | Direct conversion function without adapters | Expects standard event and data interfaces; AUDI_TO_AB encapsulates the conversion in adapter signatures. |
-
 | `UDINT_TO_BYTE` (Composite with standard ports) | Similar logic, but with a SOCKET/PLUG interface | May use different adapter types or bidirectional interfaces; AUDI_TO_AB is specialized for unidirectional adapters. |
 
 ## Conclusion

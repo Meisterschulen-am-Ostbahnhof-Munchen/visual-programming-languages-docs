@@ -9,25 +9,19 @@ The AIWS_DEMUX_5 function block is a generic demultiplexer for the **AIWS** data
 ### **Event Inputs**
 
 | Event | Description |
-
 | :--- | :--- |
-
 | REQ | Starts the demultiplex operation. The current value of `K` determines which output the incoming data value is routed to. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 | :--- | :--- |
-
 | CNF | Confirms that the demultiplex operation is complete and the data value has been sent to the selected output. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 | :--- | :--- | :--- |
-
 | K | UINT | Index of the desired output (range 1–5). |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 | :--- | :--- | :--- | :--- |
-
 Socket (Input) | IN | adapter::types::unidirectional::AIWS | The incoming data value to be demultiplexed. |
-
 | Plug (Output 1) | OUT1 | adapter::types::unidirectional::AIWS | Destination output 1 for the incoming data value (if `K = 1`). |
-
 | Plug (Output 2) | OUT2 | adapter::types::unidirectional::AIWS | Destination output 2 (if `K = 2`). |
-
 | Plug (Output 3) | OUT3 | adapter::types::unidirectional::AIWS | Destination output 3 (if `K = 3`). |
-
 | Plug (Output 4) | OUT4 | adapter::types::unidirectional::AIWS | Destination output 4 (if `K = 4`). |
-
 Plug (Output 5) | OUT5 | adapter::types::unidirectional::AIWS | Target output 5 (if `K = 5`). |
 
 ## Functionality
@@ -83,13 +70,9 @@ The function block does not have an explicit state machine defined in the ECC. T
 ## Comparison with Similar Components
 
 | Component | Type | Selection Criterion |
-
 | :--- | :--- | :--- |
-
 | `AIWS_DEMUX_5` | Demultiplexer (1→5) | Index at Event Input |
-
 | `AIWS_MUX_5` | Multiplexer (5→1) | Index for Source Selection |
-
 | `AIWS_SWITCH` | Switch (1→1) | Binary Decision |
 
 The `AIWS_DEMUX_5` is specifically designed for the simultaneous provision of five unidirectional outputs, whereas a simple switch only offers two paths. Unlike a multiplexer, here an input source is distributed to one of many outputs.

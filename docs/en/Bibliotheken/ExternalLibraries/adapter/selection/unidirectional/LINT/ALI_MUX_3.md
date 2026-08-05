@@ -9,25 +9,19 @@ The function block **ALI_MUX_3** is a generic multiplexer for ALI data streams. 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Sets the index K and starts the multiplexer function. Used with the data input K (With). |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirms that index K has been set and the output updated. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Selection index for the multiplexer. Valid values: 0 (IN1), 1 (IN2), 2 (IN3). |
 
 ### **Data Outputs**
@@ -45,7 +39,6 @@ The function block **ALI_MUX_3** is a generic multiplexer for ALI data streams. 
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-
 ### **Data Inputs ... Name | Type | Comment |
 
 ### **Data Inputs**
@@ -73,13 +66,9 @@ The function block **ALI_MUX_3** is a generic multiplexer for ALI data streams. 
 ### **Data Inputs**
 
 |-----|------|----------|-----------|
-
 | **adapter::types::unidirectional::ALI** | IN1 | Socket | First input (switches on when K = 0) |
-
 | **adapter::types::unidirectional::ALI** | IN2 | Socket | Second input (switches on when K = 1) |
-
 | **adapter::types::unidirectional::ALI** | IN3 | Socket | Third input (switches on when K = 2) |
-
 | **adapter::types::unidirectional::ALI** | OUT | Plug | Output that passes the selected input |
 
 ## Functionality
@@ -105,13 +94,9 @@ The function block is unidirectional – data flows only from the inputs to the 
 The function block does not have an explicit state machine (ECC) in its XML definition. Its behavior is event-driven and follows a simple sequence:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Idle** | Waiting for a REQ event. |
-
 | **Processing** | After REQ: Input is selected based on K, and the output is passed through. |
-
 | **Done** | Output of CNF, return to Idle. |
 
 Since no detailed ECC is available, the implementation is assumed to be a deterministic, non-blocking algorithm.

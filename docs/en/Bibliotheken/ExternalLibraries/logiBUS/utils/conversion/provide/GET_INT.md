@@ -8,17 +8,13 @@ The **GET_INT** function block is used to read the current value of an INT varia
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Normal execution request; triggers the reading of the InOut variable **IN**. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Execution confirmation; indicates that the value of **IN** is buffered and available at output **OUT**. |
 
 ### **Data Inputs**
@@ -30,9 +26,7 @@ The input value is provided via the InOut parameter **IN** (see next section).
 ### **Data Outputs**
 
 | Output | Type | Description |
-
 |---------|-----|--------------|
-
 | **OUT** | INT | Buffered output value containing the last read value from **IN**. Initial value: 0. |
 
 ### **Adapters**
@@ -41,9 +35,7 @@ The input value is provided via the InOut parameter **IN** (see next section).
 ### **InOut Variables (Implicit)**
 
 | Variable | Type | Description |
-
 |----------|-----|---------------|
-
 | **IN** | INT | Source of the value to be read. Can be used as both input and output (read-only here). Initial value: 0. |
 
 ## Functionality
@@ -72,9 +64,7 @@ The function block (FB) has a single state: **REQ**
 - **REQ**: When activated, the algorithm `REQ` is executed, followed by the **CNF** event. The state persists (no transition to another state).
 
 | State | Entry Condition | Action | Output Event |
-
 |---------|-------------------|--------|------------------|
-
 | REQ | Event **REQ** received | `OUT := IN;` | CNF |
 
 ## Application Scenarios
@@ -85,13 +75,9 @@ The function block (FB) has a single state: **REQ**
 ## Comparison with similar function blocks
 
 | Function block | Input type | Buffering | Special feature |
-
 |----------|------------------|-----------|--------------|
-
 | **GET_INT** | InOut (INT) | Yes (one-time read on REQ) | Accesses the original variable, no additional variable required |
-
 | **MOVE** (e.g., IEC 61131-3) | Input (INT) | Yes (on every execution) | Copies the value from an explicit input to an output |
-
 | **F_TRIG / R_TRIG** | Input (BOOL) | No (edge detection only) | Works with Boolean values |
 
 The main difference lies in the elimination of a separate data input through the use of an InOut parameter.

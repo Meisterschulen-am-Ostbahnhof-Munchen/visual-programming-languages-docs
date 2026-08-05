@@ -52,29 +52,19 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 ## State reference
 
 | qVisible | Container state |
-
 |----------|----------------------|
-
 | FALSE (0)| Invisible |
-
 | TRUE (1) | Visible |
 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful execution |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready | | -21 | VT_E_NO_INSTANCE | No VT client available |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid container ID |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -86,15 +76,10 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 ## ⚖️ Comparison with similar components
 
 | Feature | Q_ObjHideShow | VtContainerControl | VtVisibilityManager |
-
 |---------------|---------------|--------------------|---------------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Container Focus | ✔ | ✔ | ✖ |
-
 | Cascading | ✔ | ✖ | ✔ |
-
 | Feedback | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises

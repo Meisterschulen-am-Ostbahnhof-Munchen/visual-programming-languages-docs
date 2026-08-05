@@ -9,37 +9,27 @@ The function block (FB) `GET_STRUCT_VALUE` is a service interface module designe
 ### **Event Inputs**
 
 | Name | Type | Description | Data with |
-
 | :--- | :---- | :------------------------------- | :-------- |
-
 | `REQ`| `Event`| Requests the retrieval of a value from the structure. | `member`, `in_struct` |
 
 ### **Event Outputs**
 
 | Name | Type | Description | Data with |
-
 | :--- | :---- | :------------------------------- | :-------- |
-
 | `CNF`| `Event`| Confirms the completion of the `REQ` event. | `QO`, `output` |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 | :-------- | :------- | :------------------------------------------------------------------------------------------------------- |
-
 | `in_struct`| `ANY` | The data structure from which a value is to be read. |
-
 | `member` | `STRING` | The name of the member of the structure to be retrieved. Inner members are accessed using the dot operator (`.`). |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 | :----- | :---- | :---------------------------------------------------- |
-
 | `QO` | `BOOL` | `TRUE` if no errors occurred, otherwise `FALSE`. |
-
 | `output` | `ANY` | The value of the selected member if `QO = TRUE`. Otherwise, this value remains unchanged. |
 
 ### **Adapters**
@@ -68,15 +58,10 @@ There are no directly comparable function blocks in the 4diac standard library t
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2018 fortiss GmbH |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2018-10-16, Jose Cabral) |
-
 | 4diac Package | eclipse4diac::convert |
 
 ## 🛠️ Related Exercises

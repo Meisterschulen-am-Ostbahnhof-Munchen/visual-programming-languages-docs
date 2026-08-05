@@ -52,31 +52,20 @@ The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/
 ## Status Reference
 
 | qAbility | Object State |
-
 |----------|----------------------|
-
 | FALSE (0)| Disabled (gray) |
-
 | TRUE (1) | Enabled (normal) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful Execution |
-
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 -21 | VT_E_NO_INSTANCE | No VT client available |
-
 -128 | VT_E_HANDLE_INVALID | Invalid object ID |
-
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -88,15 +77,10 @@ The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_ObjEnableDisable | VtInputControl | VtObjectState |
-
 |---------------|--------------------|----------------|---------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Binary Control | ✔ | ✔ | ✖ |
-
 | Feedback | ✔ | ✖ | ✔ |
-
 | Object Type | Input Objects | All | All |
 
 ## Conclusion

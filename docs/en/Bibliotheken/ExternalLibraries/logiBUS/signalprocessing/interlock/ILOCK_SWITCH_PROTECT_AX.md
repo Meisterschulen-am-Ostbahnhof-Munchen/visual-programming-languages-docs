@@ -9,9 +9,7 @@ The function block `ILOCK_SWITCH_PROTECT_AX` is used for interlocked switching b
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `UPDATE` | Parameterization event; The current value of `DT_PROTECT` is assigned to the timer. |
 
 ### **Event Outputs**
@@ -25,9 +23,7 @@ No direct event outputs. Output is implicit via the adapters:
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | `DT_PROTECT` | `TIME` | `T#50ms` | Protection dead time that is activated after a state change. |
 
 ### **Data Outputs**
@@ -40,17 +36,11 @@ No direct data outputs. State output is provided via the adapters:
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `UP_IN` | `adapter::types::unidirectional::AX` | Input for the "Up/Forward" request. Contains event `E1` and Boolean data `D1`. |
-
 Socket | `DOWN_IN` | `adapter::types::unidirectional::AX` | Input for the "Down/Backward" request. |
-
 Plug | `UP_OUT` | `adapter::types::unidirectional::AX` | Output for the Up direction. |
-
 Plug | `DOWN_OUT` | `adapter::types::unidirectional::AX` | Output for the Down direction. |
-
 Plug | `timeOut` | `iec61499::events::ATimeOut` | Timer adapter for implementing dead time. Controls the event `TimeOut` after `DT_PROTECT` has elapsed. |
 
 ## Functionality
@@ -73,17 +63,11 @@ This module implements a **latched two-channel circuit with dead time**:
 ## State Overview
 
 | State | Description |
-
 |---------|--------------|
-
 | `STOP` | Idle state. No output active. Waiting for an input to be activated. |
-
 | `UP` | Output `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE`. Activates when `UP_IN.D1` is present and `DOWN_IN.D1` is inactive. |
-
 | `DOWN` | Output `DOWN_OUT.D1 = TRUE`, `UP_OUT.D1 = FALSE`. Activates when `DOWN_IN.D1` is present and `UP_IN.D1` is inactive. |
-
 | `PROTECT` | Protection phase. Both outputs are immediately set to `FALSE`, and the timer is started. After `DT_PROTECT` expires, the process switches to `EVAL`. |
-
 | `EVAL` | Evaluation status. Based on the current input data, a decision is made as to which final state (STOP, UP, DOWN) or PROTECT (in case of simultaneous requests) will be applied. |
 
 The transitions defined in the ECC are:

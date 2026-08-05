@@ -65,13 +65,9 @@ The **F_SUB_DT_DT** is a standards-compliant function block for the precise calc
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_SUB_DT_DT | F_SUB_DATE_DATE | F_SUB_TIME |
-
 |---------------|----------------|-----------------|------------|
-
 | Accuracy | Microseconds | Days | Nanoseconds |
-
 | Input Type | DATE_AND_TIME | DATE | TIME |
-
 | Typical Application | Process Diagnostics | Scheduling | Cycle Time |
 
 ## Conclusion

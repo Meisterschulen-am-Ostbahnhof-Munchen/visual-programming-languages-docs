@@ -8,33 +8,25 @@ The function block **SET_LWORD** is used to transfer an LWORD value (64-bit inte
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Normal Execution Trigger |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Execution Confirmation |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |------|----------|-------------|-------------------------|
-
 | IN | LWORD | 0 | Value to be written |
 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |------|----------|-------------|------------------------------------|
-
 | OUT | LWORD | 0 | Destination variable (declared as InOut) |
 
 **Note:** OUT is declared in the XML as `<InOutVars>`. It is a combined input/output variable that serves both as a source (read) and a destination (write).

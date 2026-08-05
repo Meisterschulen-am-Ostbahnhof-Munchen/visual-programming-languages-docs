@@ -28,14 +28,10 @@ The `XOR_2_BOOL` block operates in an event-driven manner. Upon the arrival of t
 The truth table of the operation is:
 
 | IN1 | IN2 | OUT |
-
 |-----|-----|-----|
-
 | 0 | 0 | 0 |
-
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
-
 | 1 | 1 | 0 |
 
 ## Technical Features

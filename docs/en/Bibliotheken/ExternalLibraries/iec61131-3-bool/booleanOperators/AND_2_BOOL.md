@@ -41,24 +41,17 @@ The `AND_2_BOOL` block functions deterministically and follows classic Boolean l
 The operation can be described by the following truth table:
 
 | IN1 | IN2 | OUT (IN1 AND IN2) |
-
 |:---:|:---:|:-----------------:|
-
 | 0 | 0 | 0 |
-
 | 0 | 1 | 0 |
-
 | 1 | 0 | 0 |
-
 | 1 | 1 | 1 |
 
 ## Technical Details
 * **Generic Block:** The block is implemented as an instance of a generic AND block (`GEN_AND`), which can be specialized for different data types. In this specific instance, it is defined for the data type `BOOL`.
 
 | IN1 | IN2 | OUT (IN1 AND IN2) |
-
 | 0 | 0 | 0 |
-
 | 1 | 1 | 1 |
 
 ## Technical Details

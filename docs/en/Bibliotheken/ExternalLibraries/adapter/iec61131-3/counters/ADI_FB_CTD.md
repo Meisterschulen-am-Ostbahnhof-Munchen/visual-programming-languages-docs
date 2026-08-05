@@ -13,9 +13,7 @@ The FB does not have direct event inputs. Events are provided via the adapter so
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | CNF | Event | Acknowledgement signal output after each processing of an incoming event. |
 
 ### **Data Inputs**
@@ -29,17 +27,11 @@ No direct data outputs; data is provided via the adapter plugs.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | CD | `adapter::types::unidirectional::AX` | Socket (Input) | Countdown event; the data value (D1) is passed to the internal counter as a CD pulse. |
-
 | LD | `adapter::types::unidirectional::AX` | Socket (Input) | Load the counter with the current value of **PV**; The data value (D1) signals the charging process. |
-
 | PV | `adapter::types::unidirectional::ADI` | Socket (Input) | Preset value as `DINT`; the event (E1) triggers an update of the internal PV register. |
-
 | Q | `adapter::types::unidirectional::AX` | Plug (Output) | Output signal indicating whether the meter reading has reached zero (e.g., `TRUE` for zero). |
-
 | CV | `adapter::types::unidirectional::ADI` | Plug (Output) | Current meter reading as `DINT`; output with each update. |
 
 ## Functionality

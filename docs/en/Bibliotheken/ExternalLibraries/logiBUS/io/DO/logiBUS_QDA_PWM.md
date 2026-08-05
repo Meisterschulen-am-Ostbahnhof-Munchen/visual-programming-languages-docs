@@ -9,51 +9,36 @@ The **logiBUS_QDA_PWM** function block is a composite block for controlling a PW
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INIT | EInit | Service Initialization |
-
 | *no further event input* | | *All triggers are handled via the adapter* |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INITO | EInit | Initialization Acknowledgement |
-
 | CNF | Event | Acknowledgement of a requested service |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | QI | BOOL | Input Qualifier (Enable Initialization) |
-
 | PARAMS | STRING | Service Parameter (e.g., Addressing, Configuration) |
-
 | Output | logiBUS::io::DQ::logiBUS_DO_S | Output Identification (e.g., Output_Q1..Q8); Initial Value: *Invalid* |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | QO | BOOL | Output Qualifier (Initialization Status) |
-
 | STATUS | STRING | Service Status (Failure/Success Message) |
 
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | adapter::types::unidirectional::AD | OUT | Socket | Receives trigger event (E1) and output data (D1) from the resource |
 
 ## Functionality
@@ -106,13 +91,9 @@ The internal function block switches between these states depending on the event
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Special Feature |
-
 |----------|-----|---------------|
-
 | logiBUS_QD_PWM | Composite/Basic | Directly controllable via INIT, REQ, CNF; without an adapter interface. |
-
 | **logiBUS_QDA_PWM** | Composite | Like logiBUS_QD_PWM, but with an adapter for external triggering and data supply. |
-
 | logiBUS_DO (simple) | Basic | Simple digital output, no PWM function. |
 
 The function block described here offers greater flexibility, as the actual output via the adapter can occur asynchronously from initialization. A disadvantage is the dependence on the correct provision of the adapter signals.

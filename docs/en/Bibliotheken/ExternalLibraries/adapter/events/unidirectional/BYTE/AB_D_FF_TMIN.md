@@ -10,23 +10,18 @@ The **AB_D_FF_TMIN** is an adapter-based function block (FB) according to IEC 61
 
 | Name | Type | Comment |
 |--------|--------|-------------------------------------|
-
 | `INIT` | EInit | Initialization Request (sets the minimum time) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |---------|--------|-------------------------------------|
-
 | `INITO` | EInit | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |--------|------|------------------------------------------------|
-
 | `Tmin` | TIME | Minimum time between two output events (EO) |
 
 ### **Data Outputs**
@@ -35,11 +30,8 @@ No direct data outputs; Data output is handled via the adapter plug `Q`.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|----------------------------------|-------------------------------------------------------------|
-
 | Socket | `I` | adapter::types::unidirectional::AB | Input adapter: returns event `E1` and data value `D1` (the value to be latched) |
-
 | Plug | `Q` | adapter::types::unidirectional::AB | Output adapter: outputs the latched data value `D1` and the event `E1` |
 
 *Note:* The adapter `unidirectional::AB` defines an event `E1` and a data value `D1` (typically a Boolean or any generic type). The exact type definition of the adapter is outside this function block.
@@ -108,15 +100,10 @@ When transferring a value from a fast to a slower clock range, the FB can be set
 ## Comparison with similar components
 
 | Component | Properties |
-
 |-------------------|-------------------------------------------------------------------------------|
-
 | **AB_D_FF** | Pure D flip-flop without a minimum output time – events are passed on immediately. |
-
 | **E_D_FF_ANY** | Standard event data flip-flop without a time limit, but with discrete ports (no adapters). |
-
 | **AB_D_FF_TMIN** | Combines adapter encapsulation with a configurable minimum time between output events. |
-
 | **R_TRIG / F_TRIG** | Detects rising/falling edges – no functionality for latching a data value. |
 
 The **AB_D_FF_TMIN** stands out due to the integration of timing control into adapter-based D flip-flop logic and is therefore particularly suitable for applications requiring both data latching and temporal decoupling.

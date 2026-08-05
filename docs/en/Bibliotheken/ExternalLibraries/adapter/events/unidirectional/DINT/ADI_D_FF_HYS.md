@@ -9,25 +9,19 @@ The function block **ADI_D_FF_HYS** implements a data-timed (D) flip-flop with a
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|------|----------------------------------|
-
 | `INIT` | EInit | Sets the hysteresis bandwidth (in conjunction with `HYSTERESIS`). |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|------|----------------------------------|
-
 | `INITO` | EInit | Confirms the execution of `INIT`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------------|-----|----------------------------------|
-
 | `HYSTERESIS` | DINT | Hysteresis bandwidth (integer value). |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ This function block does not have direct data outputs; The latched value is prov
 ### **Adapter**
 
 | Interface | Type | Direction | Description |
-
 |---------------|-----|----------|----------------------------------|
-
 | `I` | `adapter::types::unidirectional::ADI` | Socket | Input value (consisting of Event `E1` and Data `D1`). |
-
 | `Q` | `adapter::types::unidirectional::ADI` | Plug | Latched output value (consisting of Event `E1` and Data `D1`). |
 
 **Note:** The `ADI` (unidirectional) adapter provides one event channel (E1) and one data channel (D1) by default.
@@ -90,13 +81,9 @@ The output only changes when the new input value leaves the hysteresis band.
 ## Comparison with similar function blocks
 
 | Function block | Properties |
-
 |----------------------|----------------------------------------------------|
-
 | **E_D_FF** | Standard D flip-flop without hysteresis (direct transfer). |
-
 | **E_D_FF_ANY_HYS** | Identical function, but with direct data ports instead of adapters. |
-
 | **Schmitt trigger** | Similar behavior, but hysteresis cannot be configured at runtime. |
 
 The **ADI_D_FF_HYS** offers particularly flexible integration into heterogeneous systems thanks to its adapter interface, while the hysteresis can be configured at runtime.

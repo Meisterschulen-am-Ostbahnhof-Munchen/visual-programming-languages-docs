@@ -5,11 +5,8 @@ Unsigned short integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 8 |
-
 | **Value Range** | 0 to 255 |
-
 | **Reference** | Table 10, No. 6 |
 
 ## Use in Programming

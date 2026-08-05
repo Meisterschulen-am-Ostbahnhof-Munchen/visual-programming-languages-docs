@@ -54,13 +54,9 @@ The **E_MERGE** is a fundamental function block of the IEC 61499 standard that c
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_MERGE | E_DEMUX | E_SWITCH |
-
 |---------------|---------|---------|---------|
-
 | Functional principle | OR operation | Distribution | Conditional forwarding |
-
 | Direction | n:1 | 1:n | 1:1 |
-
 | Event flow | Combination | Splitting | Selection |
 
 ## Similar Building Blocks

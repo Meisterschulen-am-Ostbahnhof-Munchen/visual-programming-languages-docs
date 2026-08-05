@@ -25,11 +25,8 @@ The function block has no direct data outputs. The converted LREAL value is outp
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **AL_IN** | Socket (Input) | `adapter::types::unidirectional::AL` | LWORD adapter that provides the input signal (LWORD) and a trigger event. |
-
 | **ALR_OUT** | Plug (Output) | `adapter::types::unidirectional::ALR` | LREAL adapter that outputs the converted signal (LREAL) and an acknowledgment event. |
 
 ## Functionality

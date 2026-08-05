@@ -9,9 +9,7 @@ The function block **GET_LINT** reads a value of type **LINT** from an InOut var
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|--------|----------------------------|
-
 | REQ | Event | Normal Execution Command |
 
 The event input REQ triggers the execution of the function block. The current value of the InOut variable **IN** is read and temporarily stored in the output **OUT**.
@@ -19,9 +17,7 @@ The event input REQ triggers the execution of the function block. The current va
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|--------|----------------------------|
-
 | CNF | Event | Execution Confirmation |
 
 The CNF event is sent after successful processing of the REQ event. It signals that the OUT output contains the current value of the InOut variable IN.
@@ -29,9 +25,7 @@ The CNF event is sent after successful processing of the REQ event. It signals t
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-------------------------------------|
-
 | IN | LINT | Source Variable (InOut) – Initial Value: 0 |
 
 **IN** is declared as an InOut variable. It can be both read and written, but in this function block, it is only read. The passed value is copied to the OUT output with each REQ event.
@@ -39,9 +33,7 @@ The CNF event is sent after successful processing of the REQ event. It signals t
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|------|-------------------------------------|
-
 | OUT | LINT | Buffered Output Value – Initial Value: 0 |
 
 The output **OUT** holds the last value read from the InOut variable **IN**. It is updated with each REQ event.
@@ -67,9 +59,7 @@ The confirmation event **CNF** is then sent. The output **OUT** then contains th
 ## State Overview
 
 | State | Action | Output |
-
 |---------|------------------------------|-------------|
-
 | REQ | Copy from IN to OUT | CNF |
 
 The function block starts in the **REQ** state and returns to the same state after executing the action and sending CNF (endless loop on each event).

@@ -62,15 +62,10 @@ Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktion
 ## Metadaten
 
 | Attribut | Wert |
-
 | :--- | :--- |
-
 | Copyright | (c) 2018 fortiss GmbH |
-
 | Lizenz | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2018-10-16, Jose Cabral) |
-
 | 4diac-Paket | eclipse4diac::convert |
 
 ## 🛠️ Zugehörige Übungen

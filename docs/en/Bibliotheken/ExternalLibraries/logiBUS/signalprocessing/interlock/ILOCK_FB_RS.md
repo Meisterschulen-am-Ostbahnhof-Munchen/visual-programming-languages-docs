@@ -9,47 +9,34 @@ The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Normal execution request (linked to data S and R1) |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Execution Acknowledgement (linked to data output Q1) |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|--------|-----------|
-
 | `S` | BOOL | Set (active high) |
-
 | `R1` | BOOL | Reset (active high) – Reset-dominant |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 | Variable | Type | Comment |
-
 | |----------|--------|-----------|
-
 | `Q1` | BOOL | Flip-flop output |
 
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |-------------|----------|---------------------|--------------|
-
 | `ILOCK_IN` | Socket | bidirectional::AX2 | Receives signals from the previous component in the chain (event EO1, data DO1) |
-
 | `ILOCK_OUT` | Plug | bidirectional::AX2 | Sends signals to the next component in the chain (event EI1, data DI1) |
 
 The adapters of type `AX2` each provide two logic channels:
@@ -81,15 +68,10 @@ Internally, the component consists of an RS flip-flop (`FB_RS`, reset-dominant),
 The internal RS flip-flop has the following state table (reset-dominant):
 
 | S | R1_eff | Q1 (new) | Description |
-
 |---|---|----------|--------------|
-
 | 0 | 0 | Q1_old | Hold |
-
 | 1 | 0 | 1 | Set |
-
 | 0 | 1 | 0 | Reset |
-
 | 1 | 1 | 0 | Reset dominant |
 
 The output `R1_eff` is the result of the OR operation on `R1`, `ILOCK_IN.DO1`, and `ILOCK_OUT.DI1`. The output `Q1` is only set if none of these three reset sources are active.
@@ -103,11 +85,8 @@ The output `R1_eff` is the result of the OR operation on `R1`, `ILOCK_IN.DO1`, a
 ## Comparison with Similar Components
 
 | Component | Properties |
-
 |----------|---------------|
-
 | `FB_RS` (IEC 61131) | Simple reset-dominant RS flip-flop without adapter, no cascading |
-
 | `ILOCK_FB_RS` | Same core function, but with bidirectional adapters for cascading and additional reset signal linking |
 
 The `ILOCK_FB_RS` thus adds the ability to operate multiple such flip-flops in a chain, with a reset signal being passed from one link to the others.

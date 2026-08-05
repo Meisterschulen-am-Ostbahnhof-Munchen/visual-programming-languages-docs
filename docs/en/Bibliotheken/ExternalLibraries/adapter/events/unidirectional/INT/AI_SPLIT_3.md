@@ -27,15 +27,10 @@ No direct data outputs – the three identical AI signals are provided via the p
 ### Adapters
 
 | Direction | Designation | Type | Description |
-
 |----------|-------------|--------------|----------------------------------------------|
-
 | Socket | `IN` | `ADAPTER_AI` | Incoming analog signal (source) |
-
 | Plug | `OUT1` | `ADAPTER_AI` | First output – identical to the input signal |
-
 | Plug | `OUT2` | `ADAPTER_AI` | Second output – identical to the input signal |
-
 | Plug | `OUT3` | `ADAPTER_AI` | Third output – identical to the input signal |
 
 The adapters are of type `adapter::types::unidirectional::AI`. The component is generic, meaning that the specific data structure of the AI signal (e.g., value, unit, status) is only defined during instantiation by the connected adapters.

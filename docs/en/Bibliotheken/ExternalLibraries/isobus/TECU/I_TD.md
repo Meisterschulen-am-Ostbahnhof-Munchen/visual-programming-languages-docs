@@ -9,61 +9,39 @@ The **I_TD** (Time/Date) function block is a special component for ISOBUS that e
 ### **Event Inputs**
 
 | Event | With Variable | Description |
-
 |----------|--------------|--------------|
-
 | `INIT` | `QI` | Initialization of the function block. |
 
 ### **Event Outputs**
 
 | Event | With variables | Description |
-
 |------------|---------------|--------------|
-
 | `INITO` | `QO`, `STATUS` | Confirmation of successful initialization. |
-
 | `IND` | `QO`, `timestamp_data`, `STATUS`, `Q_timeout`, `SECONDS`, `MINUTES`, `HOURS`, `MONTH`, `DAY`, `YEAR`, `LOCAL_MINUTE_OFFSET`, `LOCAL_HOUR_OFFSET` | Display of a received time/date telegram. |
-
 | `TIMEOUT` | `timestamp_timeout`, `STATUS`, `Q_timeout` | Timeout event if no valid telegram arrives within an expected timeframe. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `QI` | BOOL | Qualifier for initialization (TRUE = enable). |
 
 ### **Data Outputs**
 
 | Variable | Type | Description (with ISOBUS attributes) |
-
 |-----------------------|--------|--------------------------------------|
-
 | `QO` | BOOL | Output qualifier (TRUE = Operational). |
-
 | `STATUS` | STRING | Status message (e.g., error or success). |
-
 | `Q_timeout` | BOOL | Indicates whether a timeout occurred. |
-
 | `timestamp_timeout` | DINT | Timestamp of the timeout (if it occurred). |
-
 | `timestamp_data` | DINT | Timestamp of the received data telegram. |
-
 | `SECONDS` | USINT | Seconds (scale 0.25s/bit, offset 0). |
-
 | `MINUTES` | USINT | Minutes (scale 1min/bit, offset 0). |
-
 | `HOURS` | USINT | Hours (Scale 1h/bit, Offset 0). |
-
 | `MONTH` | USINT | Month (Scale 1 month/bit, Offset 0). |
-
 | `DAY` | USINT | Day (Scale 0.25d/bit, Offset 0). |
-
 | `YEAR` | UINT | Year (Scale 1y/bit, Offset 1985, Initial value 0xFFFF = "not available"). |
-
 | `LOCAL_MINUTE_OFFSET` | SINT | Local Minute Offset (Scale 1 min/bit, Offset -125). |
-
 | `LOCAL_HOUR_OFFSET` | SINT | Local hour offset (scaling 1h/bit, offset -125). |
 
 ### **Adapter**

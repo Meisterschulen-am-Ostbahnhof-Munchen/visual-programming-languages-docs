@@ -30,15 +30,10 @@ The FB does not have dedicated data outputs. The selected data value is output v
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-
 |---------|----------|-----|-----------|
-
 | **IN0** | Socket (Input) | `adapter::types::unidirectional::AUDI` | First selectable input |
-
 | **IN1** | Socket (Input) | `adapter::types::unidirectional::AUDI` | Second selectable input |
-
 | **G** | Socket (Input) | `adapter::types::unidirectional::AX` | Selector (Event + Data) |
-
 | **OUT** | Plug (Output) | `adapter::types::unidirectional::AUDI` | Output field with event and data |
 
 ## Functionality
@@ -83,17 +78,11 @@ The use of user-defined adapter types (`AUDI`, `AX`) allows for easy adaptation 
 ## Comparison with Similar Function Blocks
 
 | Criterion | **AUDI_AX_SEL_AUDI** | Simple Boolean MUX (e.g., `F_SEL`) |
-
 |-----------|------------------------|---------------------------------------|
-
 | **Interface** | Pure adapters (event and data encapsulated) | Separate input/output pins |
-
 | **Data Type** | User-defined types (`AUDI`, `AX`) | Arbitrary (configurable) |
-
 **Selector** | Event-driven (via adapter) | Data-driven, without extra events |
-
 **Reusability** | Higher due to type safety and encapsulation | More flexible, but loosely coupled |
-
 **Complexity** | Medium (adapters require prior knowledge) | Low (direct pins) |
 
 The **AUDI_AX_SEL_AUDI** offers higher integration into adapter-based architectures and is particularly suitable for modular, type-bound systems, while a pure `F_SEL` is more universal.

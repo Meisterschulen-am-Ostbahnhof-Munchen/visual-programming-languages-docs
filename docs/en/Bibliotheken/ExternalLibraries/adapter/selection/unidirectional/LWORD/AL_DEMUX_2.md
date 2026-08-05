@@ -8,25 +8,19 @@ The function block **AL_DEMUX_2** is a generic AL demultiplexer. It routes an in
 ### **Event Inputs**
 
 | Event | Data Parameter | Description |
-
 |----------|----------------|--------------|
-
 | `REQ` | `K` | Sets the index `K` and starts forwarding the current value from the input to the corresponding output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms the successful switching and forwarding of the value. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|---------------|
-
 | `K` | `UINT` | Index for selecting the output (0 → OUT1, 1 → OUT2). |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ No dedicated data outputs. Data is transmitted exclusively via the adapter plugs
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AL` | Input adapter providing the value to be demultiplexed. |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::AL` | First output (active when K = 0). |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::AL` | Second output (active when K = 1). |
 
 ## Functionality

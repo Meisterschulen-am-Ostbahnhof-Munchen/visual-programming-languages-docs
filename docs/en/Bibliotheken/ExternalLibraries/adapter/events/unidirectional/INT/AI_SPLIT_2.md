@@ -22,13 +22,9 @@ None
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | IN | adapter::types::unidirectional::AI | Input (Socket) | Receives an analog input signal. |
-
 | OUT1 | adapter::types::unidirectional::AI | Output (Plug) | Passes the signal present at IN unchanged. |
-
 | OUT2 | adapter::types::unidirectional::AI | Output (Plug) | Passes the signal present at IN unchanged. |
 
 ## Functionality

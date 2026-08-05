@@ -8,35 +8,26 @@ The FIELDBUS_WORD_TO_SIGNAL function block is used for simple signal filtering i
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Normal execution command; triggered by the IN input. |
 
 #### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of execution; output after processing is complete. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | IN | WORD | NOT_AVAILABLE_WM | Input value that is checked for validity. |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | OUT | WORD | 16#0000 | Filtered output value (only if the signal is valid). |
-
 | VALID | BOOL | FALSE | TRUE if the input signal is recognized as valid. |
 
 ### **Adapter**
@@ -70,9 +61,7 @@ The initial value of input `IN` is `NOT_AVAILABLE_WM`, so the function block sig
 The function block has exactly one state:
 
 | State | Description |
-
 |---------|--------------|
-
 | **REQ** | Executes the algorithm, sets the outputs accordingly, and sends the confirmation event **CNF**. |
 
 There are no loops or branches in the state machine; each call to REQ is executed only once.

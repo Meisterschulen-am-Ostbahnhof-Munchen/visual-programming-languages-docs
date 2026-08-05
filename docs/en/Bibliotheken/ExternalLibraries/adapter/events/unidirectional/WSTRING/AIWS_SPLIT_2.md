@@ -25,13 +25,9 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | **IN** | `adapter::types::unidirectional::AIWS` | Incoming AIWS signal, which is distributed to both outputs. |
-
 | Plug (Output) | **OUT1** | `adapter::types::unidirectional::AIWS` | First output – identical signal to the input. |
-
 | Plug (Output) | **OUT2** | `adapter::types::unidirectional::AIWS` | Second output – identical signal to the input. |
 
 ## Functionality

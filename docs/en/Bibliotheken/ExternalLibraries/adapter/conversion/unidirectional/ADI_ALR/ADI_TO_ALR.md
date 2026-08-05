@@ -28,11 +28,8 @@ The converted value is output via the **ALR_OUT** adapter (see Adapter section).
 #### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |-------------|--------------------------------------------|----------|------------------------------------|
-
 | **ADI_IN** | `adapter::types::unidirectional::ADI` | Socket | Input: DINT value and event |
-
 | **ALR_OUT** | `adapter::types::unidirectional::ALR` | Plug | Output: LREAL Value and Event |
 
 *Note:* The adapters each imply an event and a data signal (`E1` and `D1`).
@@ -62,13 +59,9 @@ The block has **no state machine**. It is purely combinatorial (event-driven) an
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type Conversion | Event Behavior |
-
 |------------------------|----------------------|-----------------------------------------------------|
-
 | **ADI_TO_ALR** | DINT → LREAL | Direct Pass-Through without Delay |
-
 | `INT_TO_REAL` (4diac) | INT → REAL | Standalone function block with its own event interface |
-
 | Individual converters | Any number of | Often with state machines or parameterization |
 
 This function block is characterized by its **simple, adapter-oriented structure**, which enables direct coupling in adapter networks without having to define separate data and event channels.

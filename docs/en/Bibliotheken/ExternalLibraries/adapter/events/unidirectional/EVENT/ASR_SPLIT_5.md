@@ -27,19 +27,12 @@ None
 ### **Adapter**
 
 | Name | Type | Direction |
-
 |-------------|----------------------------|----------|
-
 | `IN` | `adapter::types::unidirectional::ASR` | Socket (Input) |
-
 | `OUT1` | `adapter::types::unidirectional::ASR` | Plug (Output) |
-
 | `OUT2` | `adapter::types::unidirectional::ASR` | Plug (Output) |
-
 | `OUT3` | `adapter::types::unidirectional::ASR` | Plug (Output) |
-
 | `OUT4` | `adapter::types::unidirectional::ASR` | Plug (Output) |
-
 | `OUT5` | `adapter::types::unidirectional::ASR` | Plug (Output) |
 
 ## Functionality

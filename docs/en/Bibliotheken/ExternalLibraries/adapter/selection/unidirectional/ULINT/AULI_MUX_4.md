@@ -9,25 +9,19 @@ The function block **AULI_MUX_4** is a generic multiplexer for the adapter inter
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | **REQ** | Trigger to set the index **K** and perform the multiplex selection. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirmation that the selection is complete and the output has been updated. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------|
-
 | **K** | UINT | Selection index (value range 0…3). Determines which input is connected to the output. |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ No direct data outputs. Output is via the **adapter output** (plug).
 ### **Adapter**
 
 | Category | Name | Type (Interface) | Description |
-
 |-----------|------|---------------------|--------------|
-
 **Plugs** (Output) | **OUT** | `adapter::types::unidirectional::AULI` | Output adapter that passes on the selected input. |
-
 **Sockets** (Inputs) | **IN1** | `adapter::types::unidirectional::AULI` | First input (selected when K=0). |
-
 **IN2** | `adapter::types::unidirectional::AULI` | Second input (K=1). |
-
 **IN3** | `adapter::types::unidirectional::AULI` | Third input (K=2). |
-
 **IN4** | `adapter::types::unidirectional::AULI` | Fourth input (K=3). |
-
 **IN1** | `adapter::types::unidirectional::AULI` | Fourth input (K=3).
 ## Functionality
 
@@ -76,11 +63,8 @@ No direct data outputs. Output is via the **adapter output** (plug).
 The AULI_MUX_4 does not have an explicit state machine in the XML. Its behavior is event-driven:
 
 | State (implicit) | Description |
-
 |--------------------|--------------|
-
 | **Idle** | Waiting for a REQ event. The adapter inputs are inactive. |
-
 | **Selection** | After REQ, K is evaluated and the corresponding input is switched to the output.
 
 After sending **CNF**, the function block returns to the idle state.

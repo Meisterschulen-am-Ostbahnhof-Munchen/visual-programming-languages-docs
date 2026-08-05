@@ -5,11 +5,8 @@ Short Integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 8 |
-
 | **Value Range** | -128 to 127 |
-
 | **Reference** | Table 10, No. 2 |
 
 ## Use in Programming

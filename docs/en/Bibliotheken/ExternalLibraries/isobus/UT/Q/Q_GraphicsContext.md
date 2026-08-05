@@ -58,33 +58,21 @@ The **Q_GraphicsContext** is a standards-compliant function block for controllin
 
 | ID | Command | Parameter Description |
 |-----|----------------------|---------------------------------|
-
 | 0x01| Line Style | [0]=Weight, [1]=Type |
-
 | 0x02| Fill Pattern | [0]=Pattern ID |
-
 | 0x03| Transparency | [0]=Alpha Value (0-255) |
-
 | 0x04| Clipping Range | [0-3]=X,Y,W,H Coordinates |
-
 | 0x05| Transformation Matrix | [0-4]=Matrix Parameters |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful Execution |
-
 | -6 | VT_E_OVERFLOW | Parameter Buffer Too Small |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 -21 | VT_E_NO_INSTANCE | No VT client available |
-
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios

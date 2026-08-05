@@ -24,15 +24,10 @@ Names of variables, function blocks, programs, and other elements are called **i
 * **SnakeCase:** `Max_Temperatur` (very common in the PLC world)
 
 | Allowed | Forbidden | Reason |
-
 | :--- | :--- | :--- |
-
 | `Maehwerk_An` | `Mähwerk_An` | Special character (ä) |
-
 | `Start_Taster_1` | `1_Start_Taster` | Begins with a digit |
-
 | `Sollwert_Vorgabe` | `Sollwert Vorgabe` | Space |
-
 | `__Internal` | `Internal!` | Special character (!) |
 
 ---

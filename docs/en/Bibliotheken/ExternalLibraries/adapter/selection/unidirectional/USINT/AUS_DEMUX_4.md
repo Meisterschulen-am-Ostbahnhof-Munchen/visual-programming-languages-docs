@@ -9,25 +9,19 @@ The function block **AUS_DEMUX_4** implements a demultiplexer for the adapter ty
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|-------------|
-
 | `REQ` | Starts the demultiplex operation. The index `K` is read, and the value of the `IN` adapter is forwarded to the corresponding output adapter. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirmation that the demultiplexing process is complete and the selected output carries the current value of the `IN` adapter. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|-------------|
-
 | `K` | UINT | Index of the desired output (1 = OUT1, 2 = OUT2, 3 = OUT3, 4 = OUT4). Values outside this range are ignored or do not result in any output change (implementation dependent). |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ No direct data outputs – the values are provided via the adapter outputs.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |----------|----------|-------|-------------|
-
 | `IN` | Input | `adapter::types::unidirectional::AUS` | Value to be demultiplexed. |
-
 OUT1` | Output | `adapter::types::unidirectional::AUS` | First output channel. |
-
 OUT2` | Output | `adapter::types::unidirectional::AUS` | Second output channel. |
-
 OUT3` | Output | `adapter::types::unidirectional::AUS` | Third output channel. |
-
 OUT4` | Output | `adapter::types::unidirectional::AUS` | Fourth output channel. |
 
 All adapters are unidirectional type `AUS` and transmit data in the specified direction.
@@ -76,11 +64,8 @@ The adapters used, of type `AUS`, are unidirectional, meaning data flows only fr
 The component does not have an explicit state machine in the sense of an ECC (Execution Control Chart). Nevertheless, two operating states can be identified:
 
 | State | Description |
-
 |---------|-------------|
-
 | **IDLE** | Waiting for a `REQ` event. No demultiplex operation active. |
-
 **BUSY** | Processing the current `REQ` event. The `IN` adapter is read, the appropriate output adapter is set, and `CNF` is generated. The state immediately returns to IDLE. |
 
 The switchover occurs within the same cycle; the function block is non-blocking.

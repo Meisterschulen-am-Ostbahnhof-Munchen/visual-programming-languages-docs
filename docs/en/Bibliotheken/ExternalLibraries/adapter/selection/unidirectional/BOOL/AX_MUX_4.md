@@ -8,25 +8,19 @@ The function block **AX_MUX_4** is a generic multiplexer for adapters of type `a
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-------|------------------------------------|
-
 | REQ | Event | Triggers the switch to the input defined by K. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-------|-------------------------------------------------|
-
 | CNF | Event | Confirmation that the switchover has occurred. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|----------------------------------|
-
 | K | UINT | Index of the desired input (0 … 3). |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ None.
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-
 |------------------------------------------|----------|------|-----------------------------------------------------------------------------|
-
 | `adapter::types::unidirectional::AX` | Plug | OUT | Output: provides the data of the input selected by K. |
-
 | `adapter::types::unidirectional::AX` | Socket | IN1 | First input (K = 0). |
-
 | `adapter::types::unidirectional::AX` | Socket | IN2 | Second input (K = 1). |
-
 | `adapter::types::unidirectional::AX` | Socket | IN3 | Third input (K = 2). |
-
 | `adapter::types::unidirectional::AX` | Socket | IN4 | Fourth input (K = 3). |
 
 ## Functionality

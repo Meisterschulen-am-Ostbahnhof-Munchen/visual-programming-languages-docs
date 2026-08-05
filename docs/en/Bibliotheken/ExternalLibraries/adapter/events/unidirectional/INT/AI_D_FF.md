@@ -21,11 +21,8 @@ No direct data outputs.
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |-------------|----------|-----|--------------|
-
 | **I** | Socket | `adapter::types::unidirectional::AI` | Returns the input event (E1) and the data value to be latched (D1). |
-
 | **Q** | Plug | `adapter::types::unidirectional::AI` | After the latch is closed, outputs the result event (E1) and the stored data value (D1). |
 
 The `AI` adapter is unidirectional, meaning that data and event flows only in one direction. Socket **I** serves as the input, and Plug **Q** as the output.
@@ -51,13 +48,9 @@ An event at `I.E1` triggers a rising edge at the clock input of the internal fli
 The internal state of the flip-flop is determined by the stored value `Q`. Two stable states exist:
 
 | Clock (CLK) | D (Input) | Q (Output) before | Q (Output) after |
-
 |------------|-------------|---------------------|----------------------|
-
 | No event | - | Q_old | Q_old |
-
 | Event (rising edge) | 0 | X | 0 |
-
 | Event (rising edge) | 1 | X | 1 |
 
 For each event at `I.E1`, the current D value is adopted, regardless of the previous Q value.

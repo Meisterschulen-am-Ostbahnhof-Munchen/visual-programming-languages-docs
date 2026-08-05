@@ -55,14 +55,10 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 ## Supported Data Types
 
 | Category | Examples |
-
 -----------------|--------------------------|
-
 | Integers | INT, DINT, UINT, UDINT |
 | Floating Point | REAL, LREAL |
-
 | Time | TIME, LTIME |
-
 | Mixed | INT + REAL → REAL |
 
 ## Application Examples
@@ -74,13 +70,9 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_ADD | F_SUB | F_MUL |
-
 |--------------|---------|---------|---------|
-
 | Operation | Addition | Subtraction | Multiplication |
-
 | Input Types | ANY_MAGNITUDE | ANY_MAGNITUDE | ANY_NUM |
-
 | Output Type | Equals Input Type | Equals | Equals |
 
 ## Error Handling

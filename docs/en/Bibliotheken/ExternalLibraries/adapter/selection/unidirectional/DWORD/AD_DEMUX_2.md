@@ -8,25 +8,19 @@ The function block `AD_DEMUX_2` is a generic AD demultiplexer. It distributes an
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Sets the index `K` and triggers the forwarding of the AD input to the corresponding output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms successful completion of the demultiplex operation. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|-----------------------------|
-
 | `K` | UINT | Index (0-based) for selecting the output (0 → OUT1, 1 → OUT2) |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----------------------------------|-------------------------------------|
-
 Socket | `IN` | `adapter::types::unidirectional::AD` | Input Adapter (signal to be distributed) |
-
 Plug | `OUT1` | `adapter::types::unidirectional::AD` | First Output Adapter (Index 0) |
-
 Plug | `OUT2` | `adapter::types::unidirectional::AD` | Second Output Adapter (Index 1) |
 
 ## Functionality

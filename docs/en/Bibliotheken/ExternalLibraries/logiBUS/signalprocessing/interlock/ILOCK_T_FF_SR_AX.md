@@ -9,13 +9,9 @@ The function block **ILOCK_T_FF_SR_AX** is a composite function block (FB) for a
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | S | Event | Sets output Q (if not latched) |
-
 | R | Event | Resets output Q |
-
 | CLK | Event | Clock input for toggling the output |
 
 ### **Event Outputs**
@@ -29,21 +25,15 @@ There are no direct data inputs. The interlock information is exchanged via the 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | Q | Adapter AX (unidirectional) | Output signal of the internal SR flip-flop |
 
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket | ILOCK_IN | AE2 (bidirectional) | Receives lock signals from external components |
-
 | Plug | ILOCK_OUT | AE2 (bidirectional) | Sends lock signals to external components |
-
 | Plug | Q | AX (unidirectional) | Outputs the current state of the flip-flop |
 
 ## Functionality
@@ -71,23 +61,14 @@ The latch is implemented using the bidirectional AE2 protocol: The signals from 
 The internal state of the flip-flop can take the values `false` (0) or `true` (1). The possible transitions are:
 
 | Current | Event | New State | Conditions |
-
 |---------|----------|---------------|-------------|
-
 | 0 | S | 1 | No locking via ILOCK |
-
 | 0 | R | 0 | – |
-
 | 0 | CLK | 1 | No locking |
-
 | 0 | ILOCK_IN/ILOCK_OUT | 0 | – |
-
 | 1 | S | 1 | – |
-
 | 1 | R | 0 | No locking (R takes precedence) |
-
 | 1 | CLK | 0 | No Interlock |
-
 | 1 | ILOCK_IN/ILOCK_OUT | 0 | – |
 
 ## Application Scenarios

@@ -8,25 +8,19 @@ The function block `AR_DEMUX_4` is a generic demultiplexer for the AR adapter ty
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K and trigger demultiplexing |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of K processing |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index of the desired output channel (1..4) |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ None.
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|-----|-----------|
-
 | IN | Socket (Input) | `adapter::types::unidirectional::AR` | Input value to be demultiplexed |
-
 | OUT1 | Plug (Output) | `adapter::types::unidirectional::AR` | Output channel 1 |
-
 | OUT2 | Plug (Output) | `adapter::types::unidirectional::AR` | Output channel 2 |
-
 | OUT3 | Plug (Output) | `adapter::types::unidirectional::AR` | Output channel 3 |
-
 | OUT4 | Plug (Output) | `adapter::types::unidirectional::AR` | Output channel 4 |
 
 ## Functionality

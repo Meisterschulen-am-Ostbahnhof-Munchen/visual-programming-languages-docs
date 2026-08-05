@@ -8,49 +8,35 @@ The function block **NVS_AUI** is used to load and store UINT data in non-volati
 ### **Event Inputs**
 
 | Event | Comment | Accompanying Data |
-
 |----------|-----------|-------------------|
-
 | `INIT` | Service Initialization | `QI` (BOOL), `KEY` (STRING), `DEFAULT_VALUE` (UDINT) |
 
 ### **Event Outputs**
 
 | Event | Comment | Carrying Data |
-
 |----------|-----------|-------------------|
-
 | `INITO` | Initialization Acknowledgement | `QO` (BOOL), `STATUS` (STRING) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |-----------------|--------|-----------|
-
 | `QI` | BOOL | Qualifier for the input event |
-
 | `KEY` | STRING | Key name for NVS access |
-
 | `DEFAULT_VALUE` | UDINT | Value to be read if no entry exists in the NVS |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |----------|--------|-----------|
-
 | `QO` | BOOL | Qualifier for the output event |
-
 | `STATUS` | STRING | Service status message |
 
 ### **Adapters**
 
 | Adapter | Type / Direction | Comment |
-
 |------------|----------------------------------------|-----------|
-
 | `AUI_IN` | **Socket** (Input) – Type: `adapter::types::unidirectional::AUI` | Returns the value to be stored (SET) |
-
 | `AUI_OUT` | **Plug** (Output) – Type: `adapter::types::unidirectional::AUI` | Returns the retrieved value (GETO) |
 
 ## Functionality

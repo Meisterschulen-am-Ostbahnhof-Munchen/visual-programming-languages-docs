@@ -8,25 +8,19 @@ The **AE_DEMUX_5** function block is a generic AE demultiplexer that routes an i
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Trigger to set index **K** and select the output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms successful processing of **REQ**. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Index value for selecting the output (valid values: 1 … 5). |
 
 ### **Data Outputs**
@@ -35,19 +29,12 @@ No data outputs available.
 ### **Adapter**
 
 | Role | Name | Type | Description |
-
 |-------|------|----------------------------|--------------|
-
 | Socket| **IN** | `adapter::types::unidirectional::AE` | Input signal that is demultiplexed. |
-
 | Plug | **OUT1** | `adapter::types::unidirectional::AE` | Output 1 |
-
 | Plug | **OUT2** | `adapter::types::unidirectional::AE` | Output 2 |
-
 | Plug | **OUT3** | `adapter::types::unidirectional::AE` | Output 3 |
-
 | Plug | **OUT4** | `adapter::types::unidirectional::AE` | Output 4 |
-
 | Plug | **OUT5** | `adapter::types::unidirectional::AE` | Output 5 |
 
 ## Functionality

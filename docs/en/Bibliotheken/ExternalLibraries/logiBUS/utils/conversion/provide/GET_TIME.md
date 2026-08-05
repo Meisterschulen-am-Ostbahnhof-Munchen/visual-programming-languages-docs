@@ -8,17 +8,13 @@ The function block **GET_TIME** allows you to read a TIME value from an InOut va
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-----|------------|---------------|
-
 | REQ | Event | Normal Execution Request | IN |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-----|-----------|---------------|
-
 | CNF | Event | Execution Confirmation | OUT, IN |
 
 ### **Data Inputs**
@@ -27,9 +23,7 @@ No dedicated data inputs available.
 ### **Data Outputs**
 
 | Name | Type | Comment | Initial Value |
-
 |------|-----|-----------|-------------|
-
 | OUT | TIME | Buffered Output Value | T#0s |
 
 ### **Adapters**
@@ -46,9 +40,7 @@ No adapters available.
 ## State Overview
 
 | State | Description | Action Performed |
-
 |---------|--------------|-------------------|
-
 | REQ | Waits for an event at the **REQ** input. Upon receipt, the algorithm is executed and a **CNF** event is sent. | `OUT := IN;` |
 
 ## Application Scenarios

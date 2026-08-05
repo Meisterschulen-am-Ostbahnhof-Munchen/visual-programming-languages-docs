@@ -93,17 +93,11 @@ Hysteresis is always calculated using the absolute value of the hysteresis, so n
 ## State Overview
 
 | State | Description |
-
 |---------|------------------------------------------------------------------------------|
-
 | `START` | Idle state after reset; waits for first INIT. |
-
 | `Init` | Initialization; sets output to FALSE and confirms with INITO. |
-
 | `sOFF` | Off state; output is FALSE. |
-
 | `sON` | On state; output is TRUE (if QI is active). |
-
 | `DeInit` | Deinitialization; resets outputs and returns to START. |
 
 ## Application Scenarios

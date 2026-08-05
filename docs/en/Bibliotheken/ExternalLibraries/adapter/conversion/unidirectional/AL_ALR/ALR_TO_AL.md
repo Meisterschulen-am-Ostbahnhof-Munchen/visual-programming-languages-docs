@@ -10,36 +10,28 @@ The **ALR_TO_AL** function block is a composite function block according to IEC 
 The function block has **no independent event inputs**. Events are provided via the **socket adapter** `ALR_IN`:
 
 | Adapter | Event / Signal | Description |
-
 | Adapter | Event / Signal | Description | |---------|-------------------|--------------|
-
 | ALR_IN | E1 | Trigger event to initiate the conversion |
 
 ### **Event Outputs**
 This function block has **no independent event outputs**. Events are output via the **plug adapter** `AL_OUT`:
 
 | Adapter | Event / Signal | Description |
-
 |---------|-------------------|--------------|
-
 | AL_OUT | E1 | Confirmation event after conversion is complete |
 
 ### **Data Inputs**
 There are also **no direct data inputs**. Data is supplied via the socket adapter `ALR_IN`:
 
 | Adapter | Data / Signal | Data Type | Description |
-
 | Adapter | Data / Signal | Data Type | Description | |---------|----------------|----------|--------------|
-
 | ALR_IN | D1 | LREAL | Input value in LREAL format |
 
 ### **Data Outputs**
 No direct data outputs. Output data is provided via the plug adapter `AL_OUT`:
 
 | Adapter | Data / Signal | Data Type | Description |
-
 |---------|----------------|----------|--------------|
-
 | AL_OUT | D1 | LWORD | Converted output value in LWORD format |
 
 ### **Adapters**

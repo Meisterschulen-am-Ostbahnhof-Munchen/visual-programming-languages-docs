@@ -14,11 +14,8 @@ Since this is a data type and not a function block, there are no event or adapte
 The following fields form the internal structure of the data type `ButtonActivationCode_S`:
 
 | Name | Data Type | Initial Value | Comment |
-
 | :------- | :------- | :--------- | :-------- |
-
 | `code` | `USINT` | 255 | Defines the specific activation code for the button. |
-
 | `bCyclic`| `BOOL` | TRUE | Controls the cyclic behavior. If set to `FALSE`, activation is not repeated every 200 ms. |
 
 ## Functionality

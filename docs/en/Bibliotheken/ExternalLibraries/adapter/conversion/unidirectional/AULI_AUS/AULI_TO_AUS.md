@@ -22,11 +22,8 @@ The function block has no direct event or data inputs/outputs at the FB level. A
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|------------|-----------|----------------------------------|
-
 | AULI_IN | AULI | Socket | Input adapter for ULINT data |
-
 | AUS_OUT | AUS | Plug | Output adapter for USINT data |
 
 ## Functionality

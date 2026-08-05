@@ -9,17 +9,11 @@ This exercise demonstrates the use of a **reset-dominant toggle flip-flop** (FB_
 The exercise consists of five function blocks that are directly connected in the SubApp network:
 
 | Block Name | Type | Purpose |
-
 | :--- | :--- | :--- |
-
 | `DigitalInput_S` | logiBUS::io::DI::logiBUS_IX | Digital input for the set input (S) |
-
 DigitalInput_R` | logiBUS::io::DI::logiBUS_IX | Digital input for the reset input (R1) |
-
 DigitalInput_CLK` | logiBUS::io::DI::logiBUS_IX | Digital input for the clock input (CLK) |
-
 RS_T_FF` | logiBUS::bistableElements::FB_RS_T_FF | Reset-dominant toggle flip-flop |
-
 DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-flop signal (Q1) |
 
 ### Details of the Function Blocks

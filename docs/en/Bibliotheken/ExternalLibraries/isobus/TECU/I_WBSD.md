@@ -21,39 +21,24 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ### **Data Outputs**
 
 | Parameter | Type | SPN | Bit | Scale | Range | Description |
-
 | |-----------|-----|-----|-----|------------|----------|-------------|
-
 | `QO` | BOOL | - | 1 | - | TRUE/FALSE | Event Qualifier |
-
 | `STATUS` | STRING | - | - | - | - | System Status Message |
-
 | `WHEELBASEDMACHINESPEED` | UINT | 1862 | 16 | 0.001 m/s/bit | 0-65.535 m/s | Wheel-Based Speed |
-
 | `WHEELBASEDMACHINEDISTANCE` | UDINT | 1863 | 32 | 0.001 m/bit | 0-4,294,967 km | Distance traveled |
-
 | `MAXI_TIMEOFTRACPOWER` | USINT | 1866 | 8 | 1 min/bit | 0-255 min | Maximum operating time |
-
 | `WHEELBASEDMACHINEDIRECTION` | BYTE | 1864 | 2 | 4 states | 0-3 | Direction of travel |
-
 | `KEYSWITCHSTATE` | BYTE | 1865 | 2 | 4 states | 0-3 | Ignition switch state |
-
 | `START_STOP_STATE` | BYTE | 5203 | 2 | 4 states | 0-3 | Start/Stop status |
-
 | `OPERATOR_DIREC_REVERSED` | BYTE | 5244 | 2 | 4 States | 0-3 | Reverse |
 
 ## Driving Direction States
 
 | Code | State | Description |
-
 |------|---------|--------------|
-
 | 0 | Stationary | No movement |
-
 | 1 | Forward | Forward travel |
-
 | 2 | Reverse | Reverse travel |
-
 | 3 | Undefined | Direction not determinable |
 
 ## Functionality
@@ -89,36 +74,23 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ## Status Codes
 
 | Parameter | Code | Meaning |
-
 |-----------|------|-----------|
-
 | `KEYSWITCHSTATE` | 0 | Off |
-
 | | 1 | On |
-
 | | 2 | Start |
-
 | | 3 | Undefined |
-
 | `START_STOP_STATE` | 0 | Stop |
-
 | | 1 | Start |
-
 | | 2 | Pause |
 | | 3 | Reserved |
 
 ## ⚖️ Comparison with similar systems
 
 | Feature | I_WBSD | Standard | GPS-based |
-
 |---------|--------|----------|-----------|
-
 | Accuracy | ±0.5% | ±2% | ±5% |
-
 | Low speed | Good | Excellent | Poor |
-
 | Signal stability | High | Medium | Low |
-
 | ISO compliance | Full | Partial | Full |
 
 ## 🛠️ Related exercises

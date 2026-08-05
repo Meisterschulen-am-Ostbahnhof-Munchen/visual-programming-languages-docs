@@ -29,11 +29,8 @@ The converted data is output via the **AUI_OUT** adapter:
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |-------------|-----|----------|--------------|
-
 | **ALR_IN** | `adapter::types::unidirectional::ALR` | Socket (Input) | Returns the LREAL value and the trigger event. |
-
 | **AUI_OUT** | `adapter::types::unidirectional::AUI` | Plug (Output) | Outputs the converted UINT value and the confirmation event. |
 
 ## Functionality
@@ -74,13 +71,9 @@ Since this is a composite function block without its own Execution Control Chart
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Description |
-
 |----------|-------------|-------------|-------------|
-
 | **ALR_TO_AUI** | ALR (LREAL) | AUI (UINT) | Adapter-based conversion LREAL→UINT. |
-
 | `F_LREAL_TO_UINT` | LREAL | UINT | Pure data conversion without an adapter. |
-
 | `LREAL_TO_INT` | LREAL | INT | Conversion to a signed integer. |
 
 Unlike pure data converters, **ALR_TO_AUI** operates at the adapter level, so both the data and the associated events are exchanged via the adapter interfaces. This simplifies integration into adapter-based architectures.

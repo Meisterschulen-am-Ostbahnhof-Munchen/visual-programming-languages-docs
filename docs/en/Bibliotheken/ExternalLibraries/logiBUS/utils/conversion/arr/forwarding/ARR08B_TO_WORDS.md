@@ -8,39 +8,28 @@ The function block **ARR08B_TO_WORDS** is used to divide an 8-byte array into fo
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Trigger the conversion; The function block processes the current value of `IN` and outputs the results. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirmation that the conversion is complete and the output values are valid. |
 
 ### **Data Inputs**
 
 | Name | Type | Array Size | Description |
-
 |------|-------|-------------|--------------|
-
 | IN | BYTE | 0…7 | Input array of 8 bytes, which is split into four words. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |---------|------|--------------|
-
 | OUT_00 | WORD | Word formed from bytes IN[0] and IN[1] (least significant). |
-
 | OUT_01 | WORD | Word formed from bytes IN[2] and IN[3]. |
-
 | OUT_02 | WORD | Word formed from bytes IN[4] and IN[5]. |
-
 | OUT_03 | WORD | Word formed from bytes IN[6] and IN[7] (most significant). |
 
 ### **Adapter**

@@ -9,25 +9,19 @@ The **ALR_MUX_2** is a generic multiplexer function block that allows selection 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Initiates the selection of index `K` and forwards the corresponding ALR data. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms successful processing of the `REQ` event. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Selection index; valid values: `0` (selection of `IN1`) or `1` (selection of `IN2`). |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No data outputs are available. Output is exclusively via the `OUT` adapter.
 ### **Adapters**
 
 | Role | Designation | Type | Description |
-
 |--------|-------------|--------------------------------------------|--------------------------------------------|
-
 | Socket | `IN1` | `adapter::types::unidirectional::ALR` | First ALR input (index `K=0`). |
-
 | Socket | `IN2` | `adapter::types::unidirectional::ALR` | Second ALR input (index `K=1`). |
-
 | Plug | `OUT` | `adapter::types::unidirectional::ALR` | Output that provides the data from the selected input. |
 
 ## Functionality

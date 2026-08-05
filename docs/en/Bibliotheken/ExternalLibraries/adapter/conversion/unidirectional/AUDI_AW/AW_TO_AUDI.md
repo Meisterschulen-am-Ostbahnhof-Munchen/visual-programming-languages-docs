@@ -60,13 +60,9 @@ The overall function block reflects this behavior externally.
 ## Comparison with Similar Modules
 
 | Module | Input Adapter | Output Adapter | Conversion | Note |
-
 |----------|-----------------|-----------------|---------------|-----------|
-
 | `AW_TO_AUDI` | `AW` (WORD) | `AUDI` (UDINT) | WORD → UDINT | Composite, encapsulated `F_WORD_TO_UDINT` |
-
 | Direct use of `F_WORD_TO_UDINT` | No adapters | No adapter | WORD → UDINT | Standard Function Block without Adapter Interfaces |
-
 | `AW_TO_ADINT` (hypothetical) | `AW` (WORD) | `ADINT` (DINT) | WORD → DINT | Signed Analog Conversion |
 
 The `AW_TO_AUDI` differs from directly using the conversion function by integrating adapters, making it immediately usable for adapter-based systems.

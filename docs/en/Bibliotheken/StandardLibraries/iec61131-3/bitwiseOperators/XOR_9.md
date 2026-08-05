@@ -49,13 +49,9 @@ OUT = IN1 XOR IN2 XOR ... XOR IN9`
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | XOR_9 | Standard XOR (2 inputs) |
-
 |---------------|-------------|----------------------------|
-
 | Number of inputs | 9 | 2 |
-
 | Data type | ANY_BIT | Type-dependent (e.g., BOOL) |
-
 | Flexibility | High | Low |
 
 ## Conclusion

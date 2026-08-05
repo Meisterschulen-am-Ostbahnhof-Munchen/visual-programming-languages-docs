@@ -25,13 +25,9 @@ The FB has no direct data outputs. Data output is indirect via the **BYTE_00** a
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **IN** | Socket | `adapter::types::unidirectional::AW` | Receives a 16-bit word (WORD). The adapter provides the data and an associated event. |
-
 | **BYTE_00** | Plug | `adapter::types::unidirectional::AB` | Outputs the least significant byte (byte 0). |
-
 | **BYTE_01** | Plug | `adapter::types::unidirectional::AB` | Outputs the most significant byte (byte 1). |
 
 ## Functionality

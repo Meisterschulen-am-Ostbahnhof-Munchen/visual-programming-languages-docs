@@ -20,11 +20,8 @@ The **ALI_D_FF** function block implements a clock-controlled D flip-flop (data 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |-------------|------------------------------|-----------|------------------------------------|
-
 | I | `adapter::types::unidirectional::ALI` | Socket | Provides event and data input. |
-
 | Q | `adapter::types::unidirectional::ALI` | Plug | Provides event and data output. |
 
 ## Functionality

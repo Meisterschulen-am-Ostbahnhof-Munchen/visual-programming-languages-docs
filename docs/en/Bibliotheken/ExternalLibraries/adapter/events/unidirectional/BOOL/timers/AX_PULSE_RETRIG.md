@@ -9,11 +9,8 @@ The **AX_PULSE_RETRIG** function block is a retriggerable pulse shaper with an A
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | **REQ** | EVENT | Service request to start or restart the timer (connected to PT) |
-
 | **R** | EVENT | Reset Timer (End Pulse Immediately) |
 
 ### **Event Outputs**
@@ -23,9 +20,7 @@ This function block does not have direct event outputs. Output signals are provi
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | **PT** | TIME | Pulse Duration (Pulse Time) |
 
 ### **Data Outputs**
@@ -35,9 +30,7 @@ This function block does not have direct data outputs. Output data is provided v
 ### **Adapter**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | **Q** | `adapter::types::unidirectional::AX` | Adapter interface that outputs the pulse status (event and data) |
 
 ## Functionality
@@ -58,11 +51,8 @@ This function block does not have direct data outputs. Output data is provided v
 This function block maps the states of the internal `E_PULSE_RETRIG`:
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | No pulse active; output Q = FALSE |
-
 | **PULSE** | Pulse running; output Q = TRUE; timer running. A REQ event returns to PULSE with a new timer start. |
 
 - Transition IDLE → PULSE via REQ.
@@ -76,13 +66,9 @@ This function block maps the states of the internal `E_PULSE_RETRIG`:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-
 |----------|-------------|
-
 | **E_PULSE** | Simple pulse without retrigger – one-time timer start, no restart upon subsequent request. |
-
 | **AX_PULSE_RETRIG** | Retriggerable version with AX adapter (event + data). |
-
 **TON / TOF** | Delay blocks (turn-on delay / turn-off delay) – no pulse shaper. |
 
 The AX_PULSE_RETRIG thus offers the flexibility of a retriggerable pulse with a standardized adapter interface for easy integration into larger function block networks.

@@ -63,13 +63,9 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_TABLE | E_CYCLE | E_N_TABLE |
-
 |--------------|-----------|---------|----------|
-
 | Event Interval | Variable (Array `DT`) | Fixed (`DT`) | Variable (Array `DT`) |
-
 | Outputs | One `EO` channel | One `EO` channel | Multiple (`EO0`..`EO3`) |
-
 | Counter Output (`CV`) | Yes | No | No (internal) |
 
 ## 🛠️ Related Exercises

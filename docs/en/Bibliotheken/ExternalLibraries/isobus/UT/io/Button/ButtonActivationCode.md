@@ -32,19 +32,12 @@ The ButtonActivationCode constants define various button activation states as st
 ## State Overview
 
 | Constant | Code | Description |
-
 |-----------|------|--------------|
-
 | BT_RELEASED_UNLATCHED | 0 | Key has been unlocked or released (state change) |
-
 | BT_PRESSED_LATCHED | 1 | Button was "pressed" or locked (state change) |
-
 | BT_STILL_HELD | 2 | Button is still being held (lockable buttons do not repeat) |
-
 | BT_STILL_HELD_START | 2 | Button is still being held (with bCyclic := FALSE) |
-
 | BT_ABORTED | 3 | Button press aborted (applies to VT version 4 and higher) |
-
 | Invalid | 255 | Invalid state |
 
 ## Application Scenarios

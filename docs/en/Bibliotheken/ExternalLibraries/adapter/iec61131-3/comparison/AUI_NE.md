@@ -11,11 +11,8 @@ The function block `AUI_NE` performs a not equal comparison for two input values
 The FB does not have direct event inputs. Events are received via the **socket adapters** `IN1` and `IN2`:
 
 | Adapter | Event | Description |
-
 |---------|----------|--------------|
-
 | `IN1` | Event via adapter input E1 | Starts the comparison when the value is available at `IN1`. |
-
 | `IN2` | Event via adapter input E1 | Starts the comparison when the value is available at `IN2`. |
 
 Both events trigger the activation of the internal `F_NE` module.
@@ -25,9 +22,7 @@ Both events trigger the activation of the internal `F_NE` module.
 The FB has no direct event outputs. The result is output via the **Plug Adapter** `OUT`:
 
 | Adapter | Event | Description |
-
 |---------|----------|--------------|
-
 | `OUT` | Event via Adapter Output E1 | Indicates that the comparison is complete and the result value is valid. |
 
 ### **Data Inputs**
@@ -35,11 +30,8 @@ The FB has no direct event outputs. The result is output via the **Plug Adapter*
 Data is also provided via the socket adapters:
 
 | Adapter | Data Point | Type | Description |
-
 |---------|------------|-----|--------------|
-
 | `IN1` | D1 | ANY (via AUI) | First comparison value |
-
 | `IN2` | D2 | ANY (via AUI) | Second comparison value |
 
 The exact data types are determined by the adapter instance used (`adapter::types::unidirectional::AUI`).
@@ -49,21 +41,15 @@ The exact data types are determined by the adapter instance used (`adapter::type
 The result value is output via the plug adapter:
 
 | Adapter | Data Point | Type | Description |
-
 |---------|------------|-----|--------------|
-
 | `OUT` | D1 | BOOL (via AX) | `TRUE`, if IN1 ≠ IN2; `FALSE` other |
 
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `IN1` | Socket | `adapter::types::unidirectional::AUI` | Receiver adapter for the first input value. |
-
 | `IN2` | Socket | `adapter::types::unidirectional::AUI` | Receiver adapter for the second input value. |
-
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Output adapter for the comparison result. |
 
 ## Functionality
@@ -91,15 +77,10 @@ The FB `AUI_NE` itself does not have its own state machine. Its behavior is enti
 ## Comparison with Similar Blocks
 
 | Block | Comparison Function | Special Feature |
-
 |----------|---------------------|--------------|
-
 | `AUI_EQ` | Equal | Result `TRUE` for equal values |
-
 | `AUI_NE` | Not equal | Result `TRUE` for different values |
-
 | `AUI_GT` | Greater than | Result `TRUE` if IN1 > IN2 |
-
 | `AUI_LT` | Less than | Result `TRUE` if IN1 < IN2 |
 
 All the aforementioned components share the same adapter interface and can therefore be easily exchanged or combined.

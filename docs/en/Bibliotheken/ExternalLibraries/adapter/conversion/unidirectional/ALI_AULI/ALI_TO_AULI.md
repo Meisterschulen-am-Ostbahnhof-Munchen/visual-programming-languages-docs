@@ -22,11 +22,8 @@ The block does not have its own event or data interfaces, but only two adapter c
 ### **Adapter**
 
 | Adapter Type | Direction | Name | Comment |
-
 |------------|----------|------|-----------|
-
 | `adapter::types::unidirectional::ALI` | Socket (Input) | `ALI_IN` | LINT adapter input (provides an event and a LINT value) |
-
 | `adapter::types::unidirectional::AULI` | Plug (output) | `AULI_OUT` | ULINT adapter output (passes on an event and a ULINT value) |
 
 ## Functionality

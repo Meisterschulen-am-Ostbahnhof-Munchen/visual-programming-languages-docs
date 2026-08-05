@@ -27,11 +27,8 @@ Similarly, there are no separate data outputs. The converted LREAL value is outp
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | **Socket** | `ALI_IN` | Input | Adapter type `adapter::types::unidirectional::ALI` (LINT) |
-
 | **Plug** | `ALR_OUT` | Output | Adapter type `adapter::types::unidirectional::ALR` (LREAL) |
 
 ## Functionality

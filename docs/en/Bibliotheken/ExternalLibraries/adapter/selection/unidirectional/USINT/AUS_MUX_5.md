@@ -8,25 +8,19 @@ The function block **AUS_MUX_5** is a generic multiplexer that selects one of fi
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the multiplexer action. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that the index has been adopted and the corresponding input has been assigned to the output. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Selection index: 0 → IN1, 1 → IN2, 2 → IN3, 3 → IN4, 4 → IN5. |
 
 ### **Data Outputs**
@@ -35,19 +29,12 @@ The function block **AUS_MUX_5** is a generic multiplexer that selects one of fi
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|-----|-----------|
-
 | IN1 | Socket | adapter::types::unidirectional::OFF | First input value (for K=0) |
-
 IN2 | Socket | adapter::types::unidirectional::OFF | Second input value (for K=1) |
-
 IN3 | Socket | adapter::types::unidirectional::OFF | Third input value (for K=2) |
-
 IN4 | Socket | adapter::types::unidirectional::OFF | Fourth input value (for K=3) |
-
 IN5 | Socket | adapter::types::unidirectional::OFF | Fifth input value (for K=4) |
-
 OUT | Plug | adapter::types::unidirectional::OFF | Output that reproduces the selected input |
 
 The adapters are of type `adapter::types::unidirectional::AUS`, a unidirectional adapter that enables directional signal transmission.

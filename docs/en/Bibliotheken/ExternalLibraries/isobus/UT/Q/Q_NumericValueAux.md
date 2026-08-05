@@ -52,29 +52,19 @@ The **Q_NumericValueAux** is a standards-compliant function block for numeric va
 ## Value range
 
 | Parameter | Type | Value range |
-
 |-------------|-----------|------------------------|
-
 | u32NewValue | UDINT | 0 to 4,294,967,295 |
 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful change |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 -21 | VT_E_NO_INSTANCE | No VT client available |
-
 -128 | VT_E_HANDLE_INVALID | Invalid object ID |
-
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -86,15 +76,10 @@ The **Q_NumericValueAux** is a standards-compliant function block for numeric va
 ## ⚖️ Comparison with similar modules
 
 | Feature | Q_NumericValueAux | VtNumericUpdate | VtValueManager |
-
 |---------------|--------------------|-----------------|----------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Value Range | 32-bit | 16-bit | 32-bit |
-
 | Feedback | ✔ | ✖ | ✔ |
-
 | Object Type | Numeric Objects | All | All |
 
 ## Conclusion

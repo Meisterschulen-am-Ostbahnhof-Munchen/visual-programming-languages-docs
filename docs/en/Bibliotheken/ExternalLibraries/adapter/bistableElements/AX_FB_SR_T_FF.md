@@ -30,15 +30,10 @@ The output adapter **Q1** outputs the current state of the latch as a BOOL value
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | `SET1` | `adapter::types::unidirectional::AX` | Socket (Input) | Set Input |
-
 | `RESET` | `adapter::types::unidirectional::AX` | Socket (Input) | Reset Input |
-
 | `CLK` | `adapter::types::unidirectional::AX` | Socket (Input) | Clock Input for Toggle |
-
 | `Q1` | `adapter::types::unidirectional::AX` | Plug (Output) | Latch Output |
 
 ## Functionality

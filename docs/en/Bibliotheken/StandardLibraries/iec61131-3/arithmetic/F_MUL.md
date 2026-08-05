@@ -66,13 +66,9 @@ The **F_MUL** is a standards-compliant function block for multiplying numeric va
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_MUL | F_ADD | F_DIV |
-
 |---------------|--------|--------|--------|
-
 | Operation | Multiplication | Addition | Division |
-
 | Inputs | 2 | 2 | 2 |
-
 | Type support | ANY_NUM | ANY_NUM | ANY_NUM |
 
 ## 🛠️ Related Exercises

@@ -21,24 +21,15 @@ None.
 ### **Adapters**
 
 | Adapter | Type | Direction |
-
 |---------|-----|----------|
 | **IN** | `adapter::types::unidirectional::AUI` | Socket (Input) |
-
 | **OUT1** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT2** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT3** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT4** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT5** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT6** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT7** | `adapter::types::unidirectional::AUI` | Plug (Output) |
-
 | **OUT8** | `adapter::types::unidirectional::AUI` | Plug (Output) |
 
 ## Functionality

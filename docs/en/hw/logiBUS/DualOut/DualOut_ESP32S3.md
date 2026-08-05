@@ -4,9 +4,7 @@
 This version is identifiable by its 6-pin SKEDD connector and an additional 4-pin SKEDD connector.
 | Output: | PIN (ESP32S3) |
 |-----------|---------------|
-
 | Output_Q1 | 21 |
-
 | Output_Q2 | 46 |
 
 # DualOut ESP32S3 (old version)
@@ -17,11 +15,8 @@ This version is identifiable by its 6-pin SKEDD connector and an additional 4-pi
 This version is identifiable by its single 6-pin SKEDD connector.
 
 | Output: | PIN (ESP32S3) |
-
 |-----------|----------------|
-
 | Output_Q1 | 20 |
-
 | Output_Q2 | 48 |
 
 ---

@@ -17,9 +17,7 @@ Not applicable for a data type.
 Not applicable for a data type. The elements listed here are the **internal components** of the `ST64X` structure that hold data. When `ST64X` is used as a data input for a function block, these are the available fields:
 
 | Name | Type | Comment |
-
 | :--- | :--- | :-------- |
-
 | `X_00` | `BOOL` | `BIT 00` |
 | `X_01` | `BOOL` | `BIT 01` |
 | `X_02` | `BOOL` | `BIT 02` |
@@ -82,9 +80,7 @@ Not applicable for a data type. The elements listed here are the **internal comp
 | `B_59` | `BOOL` | `BIT 59` |
 | `B_60` | `BOOL` | `BIT 60` |
 | `B_61` | `BOOL` | `BIT 61` |
-
 | `B_62` | `BOOL` | `BIT 62` |
-
 | `B_63` | `BOOL` | `BIT 63` |
 
 ### **Data Outputs**

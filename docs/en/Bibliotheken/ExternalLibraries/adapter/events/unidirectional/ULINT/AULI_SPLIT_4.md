@@ -25,17 +25,11 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AULI` | `IN` | Socket | Input adapter for the AULI signal to be distributed |
-
 | `adapter::types::unidirectional::AULI` | `OUT1` | Plug | First output adapter (identical to the input) |
-
 | `adapter::types::unidirectional::AULI` | `OUT2` | Plug | Second output adapter |
-
 | `adapter::types::unidirectional::AULI` | `OUT3` | Plug | Third output adapter |
-
 | `adapter::types::unidirectional::AULI` | `OUT4` | Plug | Fourth Output Adapter |
 
 ## Functionality

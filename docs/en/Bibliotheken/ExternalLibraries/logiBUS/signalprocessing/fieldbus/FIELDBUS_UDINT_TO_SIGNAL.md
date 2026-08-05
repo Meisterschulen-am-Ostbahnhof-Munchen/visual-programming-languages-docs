@@ -8,35 +8,26 @@ The function block **FIELDBUS_UDINT_TO_SIGNAL** is used to check the validity of
 ### **Event Inputs**
 
 | Event | Description |
-
 |-------|--------------|
-
 | REQ | Normal execution request; triggers the processing of the IN input. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |-------|--------------|
-
 | CNF | Confirms processing is complete. Triggered according to the algorithm. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-------|------------------------------------------------|--------------|
-
 | IN | UDINT | `DWORD_TO_UDINT(NOT_AVAILABLE_DWM)` | The input value to be checked. |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |-------|-------|--------------|--------------|
-
 | OUT | UDINT | `16#00000000` | The filtered output value. With a valid signal, it corresponds to IN; otherwise, it's 0. |
-
 | VALID | BOOL | FALSE | TRUE if the signal is valid, i.e., IN is within the valid range. |
 
 #### **Adapter**
@@ -63,9 +54,7 @@ The limit value `VALID_SIGNAL_DW` and the initial value `NOT_AVAILABLE_DWM` are 
 The function block is implemented as a simple FB (SimpleFB) and has only one state:
 
 | State | Action | Output Event |
-
 |---------|-------------|------------------|
-
 | REQ | Algorithm REQ | CNF |
 
 There is no state machine with multiple steps or branches.

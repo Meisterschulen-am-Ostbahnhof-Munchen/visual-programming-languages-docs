@@ -56,13 +56,9 @@ The **E_SPLIT** is a standards-compliant function block (IEC 61499-1 Annex A) fo
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | E_SPLIT | E_DEMUX | E_MERGE |
-
 |---------------|---------|---------|---------|
-
 | Functional principle | 1:2 sequence | 1:n distribution | n:1 combination |
-
 | Event sequence | Fixed | Address-dependent | Arbitrary |
-
 | State model | BasicFB | Variable | None |
 
 ## 🛠️ Related Exercises

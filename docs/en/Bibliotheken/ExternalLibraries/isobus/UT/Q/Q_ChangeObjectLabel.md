@@ -57,23 +57,16 @@ The **Q_ChangeObjectLabel** is a standards-compliant function block for changing
 ## Standard Parameters
 
 | Parameter | NULL value | Description |
-
 |--------------------|-----------|----------------------------|
-
 | u16ObIdStringVar | 0xFFFF | No text |
-
 | u16ObIdGrafic | 0xFFFF | No graphic |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow (text too long) |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
 
 ## Application Scenarios
@@ -85,13 +78,9 @@ The **Q_ChangeObjectLabel** is a standards-compliant function block for changing
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_ChangeObjectLabel | VtDynamicLabel | VtTextManager |
-
 ---------------|---------------------|----------------|---------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Labeling | Text + Graphics | Text Only | Text Only |
-
 | Font | Controllable | Fixed | Partial |
 
 ## Conclusion

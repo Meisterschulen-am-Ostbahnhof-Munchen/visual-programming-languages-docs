@@ -8,25 +8,19 @@ The function block **AB_MUX_4** is a generic multiplexer for four adapter inputs
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the multiplexer action. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that the index K has been adopted and the selection updated. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0 … 3) for selecting the active input. |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ No dedicated data outputs. The output is provided via the adapter output `OUT`.
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | adapter::types::unidirectional::AB | OUT | Plug | Output reflecting the selected input. |
-
 | adapter::types::unidirectional::AB | IN1 | Socket | First input (Index 0) |
-
 | adapter::types::unidirectional::AB | IN2 | Socket | Second input (Index 1) |
-
 | adapter::types::unidirectional::AB | IN3 | Socket | Third input (Index 2) |
-
 | adapter::types::unidirectional::AB | IN4 | Socket | Fourth input (Index 3) |
 
 ## Functionality

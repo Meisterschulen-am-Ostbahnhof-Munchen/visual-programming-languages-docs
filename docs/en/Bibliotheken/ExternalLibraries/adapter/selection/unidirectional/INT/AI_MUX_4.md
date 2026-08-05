@@ -9,25 +9,19 @@ The function block **AI_MUX_4** implements a generic multiplexer for analog inpu
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------------------|
-
 | REQ | Event | Starts selection based on `K` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------------------------------------|
-
 | CNF | Event | Confirmation that selection has been made |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|----------------|
-
 | K | UINT | Index (0..3) of the input to be selected |
 
 ### **Data Outputs**
@@ -39,23 +33,16 @@ The function block **AI_MUX_4** implements a generic multiplexer for analog inpu
 **Output Adapter (Plug):**
 
 | Name | Type | Comment |
-
 |------|----------------------------------|---------------------------------------------------------------------------|
-
 | OUT | adapter::types::unidirectional::AI | Output signal – corresponds to the input IN1..IN4 selected by `K` |
 
 **Input Adapters (Sockets):**
 
 | Name | Type | Comment |
-
 |------|----------------------------------|------------------------------|
-
 | IN1 | adapter::types::unidirectional::AI | Analog Input 1 (K = 0) |
-
 | IN2 | adapter::types::unidirectional::AI | Analog Input 2 (K = 1) |
-
 | IN3 | adapter::types::unidirectional::AI | Analog Input 3 (K = 2) |
-
 | IN4 | adapter::types::unidirectional::AI | Analog Input 4 (K = 3) |
 
 ## Functionality

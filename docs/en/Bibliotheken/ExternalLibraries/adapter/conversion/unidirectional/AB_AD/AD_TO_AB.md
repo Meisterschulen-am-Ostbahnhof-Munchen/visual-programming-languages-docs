@@ -20,11 +20,8 @@ This function block has no directly visible data outputs. The BYTE value is outp
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | **AD_IN** | `adapter::types::unidirectional::AD` | Socket (Input) | Accepts a DWORD (32-bit) and an associated event (here `E1`). |
-
 | **AB_OUT** | `adapter::types::unidirectional::AB` | Plug (Output) | Outputs a converted byte (8-bit) and an acknowledgment event (here `E1`). |
 
 Both adapters are unidirectional. The exact signature of the adapters (number of event and data channels) corresponds to the types defined in the 4diac library.
@@ -58,13 +55,9 @@ Since this is a pure composite module without its own state machine, there is no
 ## Comparison with Similar Function Blocks
 
 | Function Block | Conversion | Direction | Adapter Type |
-
 |----------|---------------|-----------|------------|
-
 | AD_TO_AB | DWORD → BYTE | Unidirectional | AD ↔ AB |
-
 | AD_TO_AW | DWORD → WORD | Unidirectional | AD ↔ AW |
-
 | AW_TO_AB | WORD → BYTE | Unidirectional | AW ↔ AB |
 
 The **AD_TO_AB** function differs in its specific target data width and the use of the corresponding adapters. It is specifically designed for systems that use standard unidirectional adapters.

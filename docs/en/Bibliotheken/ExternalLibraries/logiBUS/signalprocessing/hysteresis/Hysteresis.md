@@ -9,45 +9,31 @@ The **Hysteresis** function block converts an analog input signal (REAL) into a 
 ### **Event Inputs**
 
 | Event | Type | Description | With Data |
-
 |----------|-------|--------------------------------------------------------|---------------------------|
-
 | INIT | EInit | Initialization request; activates or deactivates the function block. | QI |
-
 | REQ | Event | Normal processing request; Performs the hysteresis calculation. | QI, INPUT, THRESHOLD, HYSTERESIS |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Data |
-
 |----------|-------|------------------------------------------------------------|----------------------------|
-
 | INITO | EInit | Acknowledges the initialization/deinitialization request. | QO |
-
 | CNF | Event | Acknowledges normal processing; outputs the hysteresis result. | OUTPUT |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------------|-------|-------------|---------------------------------------------------------------------------------------------------|
-
 | QI | BOOL | – | Input qualifier; switches the module on (TRUE) or off (FALSE). |
-
 | INPUT | REAL | – | Analog input value being monitored. |
-
 | THRESHOLD | REAL | 0.0 | Midpoint of the hysteresis band. The switch-on threshold is THRESHOLD + (HYSTERESIS / 2). |
-
 | HYSTERESIS | REAL | 0.1 | Width of the hysteresis band. Using ABS(HYSTERESIS) always guarantees a positive margin. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |--------|-------|------------------------------------------------------------------|
-
 | QO | BOOL | Output qualifier; takes the value of QI when processing is active. |
-
 | OUTPUT | BOOL | Hysteresis output; TRUE when the input exceeds the turn-on point, FALSE until it falls below the turn-off point. |
 
 ### **Adapters**
@@ -81,17 +67,11 @@ Initialization (`INIT`) and normal operation (`REQ`) are controlled by the quali
 The function block goes through the following states:
 
 | State | Description |
-
 |---------|-------------------------------------------------------------------------------------------------|
-
 | START | Initial sleep state after power-on. Waits for an INIT event with QI=TRUE. |
-
 | Init | Initialization: Sets `QO = QI` and `OUTPUT = FALSE`. Sends INITO. |
-
 | sOFF | Normal state with output off (OUTPUT=FALSE). Waits for REQ or INIT with QI=FALSE. |
-
 | sON | State with output on (OUTPUT=TRUE). Waits for REQ to check the off point. |
-
 | DeInit | Deinitialization: Sets `QO = FALSE` and `OUTPUT = FALSE`. Sends INITO and returns to START. |
 
 **Transitions:**
@@ -112,15 +92,10 @@ The function block goes through the following states:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-
 |--------------------------------|-------------------------------------------------------------------------------------------------|
-
 | **Hysteresis** (of this FB) | Provides symmetrical hysteresis around a mean value, flexible adjustment of width and switching point, strict switch-off condition. |
-
 | **Simple Threshold Switch** | No hysteresis; switches at the exact threshold, which can lead to oscillation. |
-
 | **Schmitt Trigger** | Has two fixed thresholds (upper and lower); Similar to hysteresis, but often without adjustable width. |
-
 **Comparator with Flip-Flop** | Combines a comparator with a flip-flop; also implements hysteresis, but requires more logic. |
 
 ## Conclusion

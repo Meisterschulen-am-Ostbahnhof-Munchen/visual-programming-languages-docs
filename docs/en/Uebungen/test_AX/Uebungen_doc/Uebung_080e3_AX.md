@@ -9,29 +9,17 @@ This exercise demonstrates the use of the universal up-counter **E_CTU** in comb
 This exercise uses only primitive function blocks (no sub-applications). All blocks used, along with their parameters and connections, are listed below.
 
 | Block Name | Type | Parameters | Short Description |
-
 |:---|:---|:---|:---|
-
 | DigitalInput_CLK_I1 | logiBUS_IXA | QI = TRUE, Input = Input_I1 | Digital input for the clock signal (CLK) |
-
 | DigitalInput_RST_I2 | logiBUS_IXA | QI = TRUE, Input = Input_I2 | Digital input for the reset pulse (RST) |
-
 | X_TO_B_I1 | AX_X_TO_BOOL | – | Converts the adapter input (AX) to a Boolean value |
-
 | X_TO_B_I2 | AX_X_TO_BOOL | – | Same function for the reset input |
-
 | E_CYCLE | E_CYCLE | DT = T#1ms | Cyclic clock (period 1 ms) |
-
 | E_CTU | AUI_CTU | – | Universal Count Up |
-
 | AX_D_FF | AX_D_FF | – | D flip-flop (AX world), stores a Boolean state |
-
 | AUI_D_FF_HYS | AUI_D_FF_HYS | HYSTERESIS = UINT#25 | D flip-flop with hysteresis on the count value |
-
 | UI_TO_UDI_N1 | AUI_TO_AUDI | – | Converts AUI (unsigned integer) to AUDI (adapter universal data interface) |
-
 | Q_NumericValue | Q_NumericValue_AUDI | u16ObjId = OutputNumber_N1 | Output of a numeric value via the fieldbus |
-
 | DigitalOutput_Q1 | logiBUS_QXA | QI = TRUE, Output = Output_Q1 | Digital output |
 
 ## Program Flow and Connections

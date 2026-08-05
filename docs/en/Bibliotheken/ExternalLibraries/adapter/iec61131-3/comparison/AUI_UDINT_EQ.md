@@ -8,47 +8,34 @@ The function block **AUI_UDINT_EQ** performs an equality comparison between two 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Service Request – triggers the comparison. |
-
 | (via adapter IN1.E1) | Event | Event from the adapter input – also triggers the comparison. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | OUT.E1 | Event | Acknowledgement event at the adapter output, signals completion of the comparison. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | IN2 | UDINT | Second operand (unsigned double integer). |
-
 | (via adapter IN1.D1) | (implicit) | First operand, type-dependent (via AUI adapter). |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | OUT.D1 | BOOL | Comparison result: TRUE if the values are equal, otherwise FALSE. |
 
 ### **Adapters**
 
 | Type | Direction | Name | Comment |
-
 |-----|----------|------|-----------|
-
 | `adapter::types::unidirectional::AUI` | Socket (Input) | IN1 | Provides the first operand as a value (D1) and an event (E1). |
-
 | `adapter::types::unidirectional::AX` | Plug (Output) | OUT | Outputs the comparison result as a Boolean value (D1) and a confirmation event (E1). |
 
 ## Functionality

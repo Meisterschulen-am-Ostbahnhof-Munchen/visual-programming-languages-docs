@@ -21,27 +21,16 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** | `IN` | `adapter::types::unidirectional::AIWS` | Incoming AIWS signal, distributed to the nine outputs. |
-
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AIWS` | First AIWS outgoing output. |
-
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AIWS` | Second AIWS outgoing output. |
-
 | **Plug** | `OUT3` | `adapter::types::unidirectional::AIWS` | Third AIWS outgoing output. |
-
 **Plug** | `OUT4` | `adapter::types::unidirectional::AIWS` | Fourth AIWS outgoing output. |
-
 **Plug** | `OUT5` | `adapter::types::unidirectional::AIWS` | Fifth AIWS outgoing output. |
-
 **Plug** | `OUT6` | `adapter::types::unidirectional::AIWS` | Sixth AIWS outgoing output. |
-
 **Plug** | `OUT7` | `adapter::types::unidirectional::AIWS` | Seventh AIWS outgoing output. |
-
 **Plug** | `OUT8` | `adapter::types::unidirectional::AIWS` | Eighth AIWS output. |
-
 **Plug** | `OUT9` | `adapter::types::unidirectional::AIWS` | Ninth AIWS output. |
 
 ## Functionality

@@ -9,37 +9,25 @@ The function block `logiBUS_AI_IDA` is a composite function block (FB) for proce
 ### **Event Inputs**
 
 | Event | Type | With | Description |
-
 |----------|--------|-------|--------------|
-
 | INIT | EInit | QI, PARAMS, Input, AnalogInput_hysteresis, TimeDelta, TimeRateLimit | Service Initialization: Configuration of the analog input and start of data provisioning. |
-
 | REQ | Event | QI | Service Request: Triggers immediate processing or a status update. |
 
 ### **Event Outputs**
 
 | Event | Type | With | Description |
-
 |----------|--------|-------|--------------|
-
 | INITO | EInit | QO, STATUS | Confirmation of initialization with quality and status information. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |-----------------------|--------|-------------|--------------|
-
 | QI | BOOL | – | Qualifier for events (e.g., enabling processing). |
-
 | PARAMS | STRING | – | Service parameters (e.g., configuration strings). |
-
 | Input | logiBUS::io::AI::logiBUS_AI_S | Invalid | Selection of the analog input (e.g., Input_I1…I8). |
-
 | AnalogInput_hysteresis| DWORD | – | Hysteresis for change detection. A value of 0 requires TimeDelta to be non-zero. |
-
 | TimeDelta | DWORD | 250 | Cycle time in ms for cyclic processing (16#FFFFFFFF = only on change). |
-
 | TimeRateLimit | DWORD | 100 | Minimum interval in ms between two events (IND) (< TimeDelta). |
 
 ### **Daten-Ausgänge**

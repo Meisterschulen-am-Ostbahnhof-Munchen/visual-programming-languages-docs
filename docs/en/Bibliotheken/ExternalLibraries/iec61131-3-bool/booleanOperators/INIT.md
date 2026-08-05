@@ -8,21 +8,15 @@ The **INIT** function block serves as a direct event pass-through. It is designe
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|--------|------------------------------|
-
 | INIT | EInit | Initialization Request |
-
 | REQ | Event | Service Request |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|--------|-------------------------------|
-
 | INITO | EInit | Initialization Acknowledgement |
-
 | CNF | Event | Request Acknowledgement |
 
 ### **Data Inputs**

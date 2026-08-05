@@ -9,9 +9,7 @@ The **ATM_AX_TP** is a special timer function block that generates a time-limite
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------------------|
-
 | R | Event | Resets the timer |
 
 ### **Event Outputs**
@@ -29,13 +27,9 @@ No direct data outputs. The output value (Q) is provided via the **Q** adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |-------------|--------|----------|--------------------------------------------------|
-
 | **Q** | AX | Plug | Output: Provides the pulse signal |
-
 | **IN** | AX | Socket | Input: Receives the triggering signal |
-
 | **PT** | ATM | Socket | Input: Provides the pulse duration (pulse time) |
 
 **Note:** The adapters are of type *adapter::types::unidirectional::AX* (or *ATM*) and transmit an event along with a data value.
@@ -82,13 +76,9 @@ After the timer expires, E_TP automatically switches from ACTIVE to IDLE.
 ## Comparison with similar function blocks
 
 | Function block | Properties | Difference from ATM_AX_TP |
-
 -----------------|-------------------------------------------------------------------------------|------|
-
 | **E_TP** (Standard) | Direct event/data connections, no adapter. | ATM_AX_TP encapsulates E_TP and provides adapters. |
-
 | **E_R_TRIG** | Edge detection without pulse extension. | Generates only a very short pulse, no time control. |
-
 **E_CYCLE** | Cyclic timer, repeats pulses. | Single pulse. |
 
 ## Conclusion

@@ -9,39 +9,28 @@ The function block `ARR08B_TO_WORDS_BE` extracts four 16-bit words (WORD) from a
 ### **Event Inputs**
 
 | Event | Description |
-
 |---------|-------------|
-
 | `REQ` | Starts the conversion: The incoming byte array `IN` is converted into the four output words. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |---------|-------------|
-
 | `CNF` | Confirms successful conversion and indicates that the output values are valid. |
 
 ### **Data Inputs**
 
 | Name | Type | Array Size | Description |
-
 |------|-----|--------------|-------------|
-
 | `IN` | `BYTE` | `0..7` (8 bytes) | Input array – the raw data from which the words are extracted. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `OUT_00` | `WORD` | Word from byte 0 (high) and byte 1 (low) |
-
 | `OUT_01` | `WORD` | Word from byte 2 (high) and byte 3 (low) |
-
 | `OUT_02` | `WORD` | Word consisting of byte 4 (high) and byte 5 (low) |
-
 | `OUT_03` | `WORD` | Word consisting of byte 6 (high) and byte 7 (low) |
 
 ### **Adapter**
@@ -70,13 +59,9 @@ The output event is then The event ``CNF`` is triggered, indicating the validity
 The function block does not have its own state machine. It is triggered by the **event `REQ`** and outputs **`CNF`** after data processing. Execution occurs within a single cycle.
 
 | State | Description |
-
 |---------|-------------|
-
 | *Idle* | Waiting for `REQ`; outputs retain the last value. |
-
 | *Processing* | `REQ` received – data is being processed. |
-
 *Completed* | `CNF` is being sent, outputs are valid. The module immediately returns to idle state. |
 
 ## Application Scenarios
@@ -92,13 +77,9 @@ The function block does not have its own state machine. It is triggered by the *
 ## Comparison with Similar Building Blocks
 
 | Building Block | Difference |
-
 |----------|-------------|
-
 | `ARR08B_TO_WORDS_LE` | Uses little-endian order (Byte[0] = low byte). |
-
 | `ARR04B_TO_WORD` | Works with a 4-byte array and creates only one WORD. |
-
 | `BYTE_TO_WORD` | Converts two individual bytes into one WORD; requires separate concatenation. |
 
 ARR08B_TO_WORDS_BE` focuses on the efficient, predefined partitioning of an 8-byte array into four words in big-endian order – ideal for standardized protocols.

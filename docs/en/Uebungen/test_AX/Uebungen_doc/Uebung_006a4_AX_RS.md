@@ -17,15 +17,10 @@ The goal is to understand the behavior of a **reset-dominant** toggle flip-flop 
 ### Parameter
 
 | FB | Parameter | Value |
-
 |----|-----------|------|
-
 | DigitalInput_SET | `QI` | `TRUE` |
-
 | DigitalInput_SET | `Input` | `Input_I1` |
-
 | DigitalInput_RESET | `QI` | `TRUE` |
-
 | DigitalInput_RESET | `Input` | `Input_I2` |
 | DigitalInput_CLK | `QI` | `TRUE` |
 | DigitalInput_CLK | `Input` | `Input_I3` |

@@ -8,43 +8,30 @@ The function block **FIELDBUS_LWORD_TO_SIGNAL_SCALED** converts a raw fieldbus s
 ### **Event Inputs**
 
 | Event | Type | Description | Accompanying Data |
-
 |----------|-----|---------------|-------------------|
-
 | INIT | EInit | Initialization Request: Set Scale Factor (SCALE) and Offset (OFFSET) | SCALE, OFFSET |
-
 | REQ | Event | Normal Execution Request: Process Input Signal (IN) | IN |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Accompanying Data |
-
 |----------|-----|--------------|-------------------|
-
 | INITO | EInit | Initialization Acknowledge | – |
-
 | CNF | Event | Execution Acknowledge | OUT, VALID |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |----------|--------|-----------------------|-----------------------------------------------|
-
 | IN | LWORD | NOT_AVAILABLE_LWM | Fieldbus Raw Signal (LWORD) |
-
 SCALE | LREAL | LREAL#1.0 | Scaling Factor (Multiplication) |
-
 OFFSET | DINT | DINT#0 | Offset added after scaling |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |--------|-------|-------------|--------------------------------------------------------------|
-
 OUT | LREAL | LREAL#0.0 | Scaled Output Value (LREAL) |
-
 VALID | BOOL | FALSE | Indicates whether the input signal is valid (TRUE = valid) |
 
 ### **Adapters**
@@ -90,11 +77,8 @@ The comparison is performed by converting both LWORD values to ULINT, so that ne
 ## State Overview
 
 | State | Triggered by | Output Algorithm | Event Output | Description |
-
 |---------|----------------|--------------------|-----------------|--------------|
-
 | INIT | Event INIT | INIT | INITO | Initialization: Adopt Scaling Parameters |
-
 REQ | Event REQ | REQ | CNF | Signal Processing: Scaling and Validation Check |
 
 The function block switches between these two states only through the corresponding events. There is no explicit transition to a wait state after initialization; the function block remains in the last state until a new event arrives.

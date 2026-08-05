@@ -8,47 +8,34 @@ The function block **NVS_AB2** enables the loading and saving of `REAL` data in 
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | `INIT` | EInit | Initializes the function block. The input data (`QI`, `KEY`, `DEFAULT_VALUE`) are transferred when this event occurs. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | `INITO` | EInit | Confirmation of successful initialization and the first read operation. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |----------------|--------|--------------|
-
 | `QI` | BOOL | Qualifier for the initialization event (e.g., enabling processing). |
-
 KEY` | STRING | Name of the key under which the value is stored in the NVS. |
-
 DEFAULT_VALUE` | REAL | Value returned if no value exists in the NVS for the specified key. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |----------|--------|--------------|
-
 QO` | BOOL | Qualifier for the output event – signals success (`TRUE`) or failure (`FALSE`). |
-
 | `STATUS` | STRING | Detailed status message (e.g., error text or confirmation). |
 
 ### **Adapter**
 
 | Name | Type (AB2 adapter) | Description |
-
 |-------|-------------------|--------------|
-
 | `VAL` | `adapter::types::bidirectional::AB2` | Bidirectional interface for the data value. Reading and writing are performed via the adapter channels (events: `EI1`, `EO1`; data: `DI1`, `DO1`).
 
 ## Functionality

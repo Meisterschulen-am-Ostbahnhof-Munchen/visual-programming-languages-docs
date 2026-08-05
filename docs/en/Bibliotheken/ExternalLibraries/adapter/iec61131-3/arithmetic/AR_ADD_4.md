@@ -23,17 +23,11 @@ The function block **AR_ADD_4** is a generic function block for the arithmetic a
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **IN1** | `adapter::types::unidirectional::AR` | Socket (Input) | First Addend of the Addition |
-
 | **IN2** | `adapter::types::unidirectional::AR` | Socket (Input) | Second Addend |
-
 | **IN3** | `adapter::types::unidirectional::AR` | Socket (Input) | Third Addend |
-
 | **IN4** | `adapter::types::unidirectional::AR` | Socket (Input) | Fourth Addend |
-
 | **OUT** | `adapter::types::unidirectional::AR` | Plug (Output) | Result of the Addition (Sum of Inputs) |
 
 The adapters are of type `unidirectional::AR`, indicating that they provide or process an arithmetic value (e.g., a numerical value) as a directed connection.
@@ -72,15 +66,10 @@ Due to its purely data-driven and eventless operation, the component has **no in
 ## Comparison with similar function blocks
 
 | Function block | Number of inputs | Special feature |
-
 |----------|----------------|--------------|
-
 | **AR_ADD_4** | 4 | Adapter-based, generic, no events |
-
 | **AR_ADD_2** (hypothetical) | 2 | Reduced inputs, same concept |
-
 | **F_ADD** (from IEC 61131) | 2 | Standard data types, event-driven (via ENABLE/ENO) |
-
 | **AR_SUM** (hypothetical) | variable | More flexible number, but more complex |
 
 The **AR_ADD_4** function block stands out from classic IEC 61499 arithmetic function blocks due to its pure adapter communication and generic design. It is particularly suitable for systems that already rely on adapter technology and do not require explicit event control.

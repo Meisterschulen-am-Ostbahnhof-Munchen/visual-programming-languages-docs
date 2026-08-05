@@ -9,47 +9,34 @@ This function block implements the **Change Numeric Value** command according to
 ### **Event Inputs**
 
 | Event | Type | Comment | Carried Variable |
-
 |----------|-------|-------------------------------------|----------------------|
-
 | `INIT` | EInit | Service Initialization | `u16ObjId` |
 
 ### **Event Outputs**
 
 | Event | Type | Comment | Carried Variable |
-
 |----------|--------|-----------------------------------|-----------------------|
-
 | `INITO` | EInit | Initialization Acknowledgement | – |
-
 | `CNF` | Event | Acknowledgement of Requested Service | `STATUS`, `s16result` |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment | Initial Value |
-
 |-------------|-------|------------|-------------|
-
 | `u16ObjId` | UINT | Object ID | `ID_NULL` |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |-------------|--------|----------------------------|
-
 | `STATUS` | STRING | Service Status |
-
 | `s16result` | INT | Return Value (see description) |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-
 |-----------------|----------|--------------------------------------|-----------------------------|
-
 | `u32OldValue` | Plug | `adapter::types::unidirectional::AUDI` | Old Value of ID |
-
 | `u32NewValue` | Socket | `adapter::types::unidirectional::AUDI` | New ID Value |
 
 ## Functionality

@@ -9,17 +9,11 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 ## Function Blocks (FBs) Used
 
 | FB Name | Type | Description |
-
 |---------|-----|---------------|
-
 | `FB_CTD_UDINT` | `iec61131::counters::FB_CTD_UDINT` | IEC 61131-3 reverse counter with inputs `CD`, `LD`, `PV` and outputs `Q` and `CV`. Parameter: `PV = UDINT#10` (start value 10). |
-
 | `Input_CD` | `logiBUS::io::DI::logiBUS_IX` | Digital input for the counting signal (pushbutton I1). Parameters: `QI=TRUE`, `Input=Input_I1`. |
-
 | `Input_LD` | `logiBUS::io::DI::logiBUS_IX` | Digital input for charging the counter (button I2). Parameters: `QI=TRUE`, `Input=Input_I2`. |
-
 | `Output_Q1` | `logiBUS::io::DQ::logiBUS_QX` | Digital output for displaying "counter reading = 0" (lamp Q1). Parameters: `QI=TRUE`, `Output=Output_Q1`. |
-
 | `Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | Terminal output for the current counter reading (`CV`). Parameter: `u16ObjId=OutputNumber_N1`. |
 
 **Note:** There is a comment in the network indicating that explicit type conversion (`F_UDINT_TO_UDINT`) is not necessary, as the data flow is direct.
@@ -42,15 +36,10 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 ### Data Flows
 
 | Source | Destination | Meaning |
-
 |--------|------|-----------|
-
 | `Input_CD.IN` | `FB_CTD_UDINT.CD` | Button I1 as a counting pulse (count down). |
-
 | `Input_LD.IN` | `FB_CTD_UDINT.LD` | Button I2 as a charging signal (set to PV). |
-
 | `FB_CTD_UDINT.Q` | `Output_Q1.OUT` | Output Q1 becomes active as soon as the counter reading is 0. |
-
 | `FB_CTD_UDINT.CV` | `Q_NumericValue.u32NewValue` | Current counter reading (as a 32-bit value) to the terminal. |
 
 ### Functionality

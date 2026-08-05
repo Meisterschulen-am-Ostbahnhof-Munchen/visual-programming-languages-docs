@@ -51,15 +51,10 @@ The **ADD_4** is a powerful function block for summing four values, developed un
 ## Supported Data Types
 
 | Category | Examples |
-
 ----------------|-------------------------|
-
 Integers | INT, DINT, UDINT |
-
 Floating Point | REAL, LREAL |
-
 Time Values | TIME, LTIME |
-
 Special Types | DATE_AND_TIME |
 
 ## Application Scenarios
@@ -71,13 +66,9 @@ Special Types | DATE_AND_TIME |
 ## ⚖️ Comparison with Other Adders
 
 | Function Block | Inputs | Advantages |
-
 |----------|----------|----------|
-
 | ADD_2 | 2 | Simplest Variant |
-
 | ADD_3 | 3 | Compromise |
-
 | ADD_4 | 4 | Maximum Integration |
 
 ## Error Management

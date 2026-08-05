@@ -8,25 +8,19 @@ The AS_MUX_2 is a generic multiplexer function block that allows you to select b
 ### **Event Inputs**
 
 | Event | Data Type | With Variables | Description |
-
 |----------|-----------|---------------|--------------|
-
 | `REQ` | Event | `K` | Starts the input selection. The value of `K` determines which adapter is enabled. |
 
 ### **Event Outputs**
 
 | Event | Data Type | With Variables | Description |
-
 |----------|-----------|---------------|--------------|
-
 | `CNF` | Event | – | Confirms that the switching is complete and the selected adapter is active. |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Description |
-
 |----------|----------|--------------|
-
 | `K` | UINT | Index for selection: `0` → IN1, `1` → IN2. Other values are invalid and will not result in a switch. |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----------|------|-----------|--------------|
-
 | Plug | OUT | Output | Output adapter connected to the selected input. |
-
 | Socket (Input) | IN1 | Input | First input adapter selected for `K = 0`. |
-
 | Socket (Input) | IN2 | Input | Second input adapter selected at `K = 1`. |
 
 All adapters are of type **`adapter::types::unidirectional::AS`**, a unidirectional adapter that transports data in one direction.
@@ -66,13 +56,9 @@ After a successful switch, the event `CNF` is output. No further requests are ac
 The function block has a simple internal state machine:
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | Waiting for a `REQ` event. |
-
 | **SELECT** | Evaluating `K` and switching the corresponding adapter (IN1 or IN2). |
-
 | **DONE** | Sending `CNF` and returning to the IDLE state. |
 
 While the function block is in state `SELECT`, no further `REQ` events are accepted.

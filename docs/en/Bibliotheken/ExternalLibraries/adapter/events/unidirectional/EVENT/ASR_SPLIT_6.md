@@ -21,11 +21,8 @@ None.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `IN` | Socket | `adapter::types::unidirectional::ASR` | Input adapter – the ASR signal to be distributed |
-
 | `OUT1` – `OUT6` | Plug | `adapter::types::unidirectional::ASR` | Six output adapters – identical copies of the input signal |
 
 ## Functionality
@@ -50,15 +47,10 @@ There is no state diagram (ECC) because the component does not execute any seque
 ## Comparison with Similar Components
 
 | Component | Outputs | Special Features |
-
 |----------|----------|--------------|
-
 | `ASR_SPLIT_2` | 2 | Dual Split |
-
 | `ASR_SPLIT_4` | 4 | Quad Split |
-
 | **`ASR_SPLIT_6`** | **6** | **Six-Way Split (this module)** |
-
 | Generic Split (e.g., via template) | Variable | Requires individual parameterization |
 
 The `ASR_SPLIT_6` offers a fixed number of six outputs and is therefore specifically designed for applications that require exactly this number.

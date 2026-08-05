@@ -27,11 +27,8 @@ None.
 #### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `AUS_IN` | Socket | `adapter::types::unidirectional::AUS` | USINT-based adapter input (source of the value to be converted) |
-
 | `AI_OUT` | Plug | `adapter::types::unidirectional::AI` | INT-based adapter output (destination of the converted value) |
 
 The socket `AUS_IN` receives an event signal and a USINT data value. After conversion, the plug `AI_OUT` outputs an event signal and the corresponding INT value.

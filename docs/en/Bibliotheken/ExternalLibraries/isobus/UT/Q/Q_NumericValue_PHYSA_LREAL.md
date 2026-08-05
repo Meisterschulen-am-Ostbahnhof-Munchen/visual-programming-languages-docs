@@ -8,56 +8,41 @@ The function block **Q_NumericValue_PHYSA_LREAL** serves as a command for changi
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|---------------------------------------------|
-
 | INIT | EInit | Initialization of the function block (with stObj). |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|--------------------------------------------------|
-
 | INITO | EInit | Confirmation of successful initialization. |
-
 | CNF | Event | Confirmation of the requested value change (contains STATUS and s16result). |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |-------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-
 | stObj | logiBUS::utils::conversion::phys::NumericObjectPool_S | Properties of the object pool (ObjID, scale, offset, decimal places). Initial: (u16ObjId := ID_NULL, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0). |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |-----------|--------|--------------------------------------------------------------------------|
-
 | STATUS | STRING | Service status message. |
-
 | s16result | INT | Return value – see Q_NumericValue (result of the value change request). |
 
 ### **Adapters**
 **Sockets (Input Adapters)**
 
 | Name | Type | Comment |
-
 |--------|-------------------------|---------------------------------------------------------------|
-
 | lrPhys | ALR (unidirectional) | Input for the physical LREAL value (triggered via E1). |
 
 **Plugs (Output Adapters)**
 
 | Name | Type | Comment |
-
 |--------|-------------------------|---------------------------------------------------------------|
-
 | xOver | AX (unidirectional) | Signals that the physical value exceeds the upper ISOBUS limit. |
-
 | xUnder | AX (unidirectional) | Signals that the physical value falls below the lower ISOBUS limit. |
 
 ## Functionality

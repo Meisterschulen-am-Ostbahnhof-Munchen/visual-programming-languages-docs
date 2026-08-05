@@ -9,47 +9,32 @@ The **ILOCK_CONFLICT_TRIP** function block is used for **prioritized interlockin
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **EI_UP** | Event for processing an "up" request (with data `DI_UP`) |
-
 | **EI_DOWN** | Event for processing a "down" request (with data `DI_DOWN`) |
-
 | **EI_RESET** | Event for resetting the trip state (reads both data inputs) |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | **EO_UP** | Acknowledges the output of the "up" command (when the UP state is active) |
-
 | **EO_DOWN** | Acknowledges the output of the "down" command (when the DOWN state is active) |
-
 | **EO_TRIP** | Indicates that a trip state exists (when TRIP is active) |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |----------|--------|--------------|
-
 | **DI_UP** | BOOL | TRUE = forward, up, right, clockwise |
-
 | **DI_DOWN** | BOOL | TRUE = backward, down, left, counterclockwise |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |-----------|--------|--------------|
-
 | **DO_UP** | BOOL | TRUE = "Up" output active |
-
 | **DO_DOWN** | BOOL | TRUE = Output "Down" active |
-
 | **DO_TRIP** | BOOL | TRUE = Conflict/Trip state active |
 
 #### **Adapters**
@@ -87,15 +72,10 @@ The function block has four operating states: **STOP**, **UP**, **DOWN**, and **
 ## State Overview
 
 | State | DO_UP | DO_DOWN | DO_TRIP | Description |
-
 |---------|-------|---------|---------|-------------|
-
 **STOP** | FALSE | FALSE | FALSE | Idle state, no direction active |
-
 **UP** | TRUE | FALSE | FALSE | Upward direction active |
-
 **DOWN** | FALSE | TRUE | FALSE | Downward direction active |
-
 **TRIP** | FALSE | FALSE | TRUE | Conflict/lock active |
 
 ## Application Scenarios

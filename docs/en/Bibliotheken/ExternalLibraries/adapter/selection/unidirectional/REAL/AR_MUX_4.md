@@ -9,25 +9,19 @@ The **AR_MUX_4** is a generic AR multiplexer that switches one of four input ada
 ### Event Inputs
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Controls the switching based on the index K. |
 
 ## Event Outputs
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms successful switching. |
 
 ### Data Inputs
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Index (0–3) for selecting the active input. |
 
 ### Data Outputs
@@ -36,17 +30,11 @@ No data outputs available.
 ### Adapter
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | Plug (Output) | **OUT** | Output | Returns the signal path of the selected input. |
-
 | Socket (Input) | **IN1** | Input | Input value for K = 0. |
-
 Socket (Input) | **IN2** | Input | Input value for K = 1. |
-
 Socket (Input) | **IN3** | Input | Input value for K = 2. |
-
 Socket (Input) | **IN4** | Input | Input value for K = 3. |
 
 ## Functionality

@@ -17,21 +17,13 @@ This exercise demonstrates the use of adapter interfaces (AUI/AUDI) in 4diac to 
 ### Other Function Blocks Used
 
 | Block Name | Type | Parameters | Short Description |
-
 |--------------|-----|-----------|------------------|
-
 | `IA_WBSD` | `isobus::tecu::IA_WBSD` | `QI` = TRUE | Returns the wheel-based machine speed via an AUI interface. |
-
 | `AUI_SPLIT_2` | `adapter::events::unidirectional::AUI_SPLIT_2` | – | Distributes an incoming AUI signal to two identical outputs. |
-
 | `CONV_AUI_AUDI` | `adapter::conversion::unidirectional::AUI_TO_AUDI` | – | Converts an AUI signal to the AUDI format expected by UT display modules. |
-
 | `Q_NumericValue_WBSD` | `isobus::UT::Q::Q_NumericValue_AUDI` | `u16ObjId` = `NumberVariable_Wheel_based_machine_speed` | Displays the numerical value of the speed on the UT (object ID from the pool configuration). |
-
 | `AX_GT_0` | `MyLib::sys::AX_GT_0_UINT` | – (SubApp) | Checks if the incoming value is > 0 (see above). |
-
 | `AX_D_FF` | `adapter::events::unidirectional::AX_D_FF` | – | Sets a flip-flop that maintains the Boolean state and passes it to the output. |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `QI` = TRUE, `Output` = `Output_Q1` | Switches the digital output Q1 of the logiBUS module according to the incoming signal. |
 
 ## Program Flow and Connections

@@ -9,15 +9,10 @@ This exercise demonstrates the processing of physical measured values (e.g., vol
 The exercise consists of four directly instantiated function blocks. No further sub-blocks (SubApps) are included.
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `NumericValue_PHYSA_I3` | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Reads the physical value from the hardware interface `InputNumber_I3` and provides it as a physical quantity (rPhys). |
-
 | `NumericValue_PHYSA_I4` | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Same function as above, but for the interface `InputNumber_I4`. |
-
 | `AR_ADD_2` | `adapter::iec61131::arithmetic::AR_ADD_2` | Performs an addition of two physical values (IN1 + IN2) and outputs the result as OUT. |
-
 | `Q_NumericValue_PHYSA` | `isobus::UT::Q::Q_NumericValue_PHYSA` | Writes the passed physical value to the hardware interface `OutputNumber_N3`.
 ...
 ### Parameters of Individual Instances

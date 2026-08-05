@@ -5,11 +5,8 @@ The **LTIME** (Long Time) data type is used to represent high-resolution time du
 According to **DIN EN 61131-3** (Table 10, No. 12b):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 64 bits |
-
 | **Default Value** | `LTIME#0s` |
-
 | **Resolution** | Nanoseconds |
 
 ## Literal Representation

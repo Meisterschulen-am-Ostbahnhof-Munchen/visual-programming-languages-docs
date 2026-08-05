@@ -23,58 +23,42 @@ This ensures reliable switching behavior with a reduced switching frequency, typ
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | `INIT` | EInit | Initialization request, accompanied by data input `QI` |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | `INITO` | EInit | Initialization confirmation, accompanied by data output `QO` |
 
 ### **Data Inputs**
 
 | Data | Type | Description |
-
 |-------|-----|--------------|
-
 | `QI` | BOOL | Input qualifier – controls the activation of the function block. At `TRUE`, the hysteresis logic is executed; at `FALSE`, outputs are reset. |
 
 ### **Data Outputs**
 
 | Data | Type | Description |
-
 |-------|-----|---------------|
-
 | `QO` | BOOL | Output qualifier – is set to the value of `QI`, reflects the operating state. |
 
 ### **Adapters**
 **Sockets (Input Adapters):**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | `INPUT` | adapter::types::unidirectional::AR | Analog input value (e.g., 0…1 or other range) |
-
 | `MI` | adapter::types::unidirectional::AR | Center point (e.g., 0.5 for 50%) |
-
 | `DEAD` | adapter::types::unidirectional::AR | Deadband (absolute value) – determines the turn-off points |
-
 | `HYSTERESIS` | adapter::types::unidirectional::AR | Hysteresis (absolute value) – extends the switch-off points to the switch-on points |
 
 **Plugs (Output Adapters):**
 
 | Adapter | Type | Description |
-
 |---------|-----|---------------|
-
 | `DO_UP` | adapter::types::unidirectional::AX | Binary output for the **UP** state (switches on when the upper threshold is exceeded) |
-
 | `DO_DOWN` | adapter::types::unidirectional::AX | Binary output for the **DOWN** state (switches on when the lower threshold is not reached) |
 
 ## Functionality
@@ -102,19 +86,12 @@ If `QI = FALSE` occurs during a `INIT` event, the function block is deinitialize
 ## State Overview
 
 | State | Description |
-
 |-----------|--------------|
-
 | `START` | Initial sleep state after system startup. |
-
 | `Init` | Initialization at `INIT` with `QI = TRUE`. Resets outputs and returns `INITO`. |
-
 | `Neutral` | Normal state: both outputs are `FALSE`. Waiting for a new input value. |
-
 | `UP` | Upper threshold exceeded: `DO_UP = TRUE`, `DO_DOWN = FALSE`. |
-
 | `DOWN` | Lower threshold not reached: `DO_UP = FALSE`, `DO_DOWN = TRUE`. |
-
 | `DeInit` | Deinitialization at `INIT` with `QI = FALSE`. Sets all outputs to `FALSE` and outputs `INITO`. |
 
 **Transitions:**

@@ -9,43 +9,30 @@ The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hy
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-------|------------------------------------------------------|
-
 | `INIT` | EInit | Initialization Request; Parameter `Tmin` is passed |
-
 | `CLK` | Event | Clock signal; takes the current value from `D` and applies hysteresis |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|-----------------------------------------------------------|
-
 | `INITO` | EInit | Initialization confirmation |
-
 | `EO` | Event | Outputs when output `Q` changes **and** the minimum time `Tmin` has elapsed since the last `EO` |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |--------------|----------|---------------------------------------------------------|
-
 | `D` | ANY_NUM | Value to be inherited from `CLK` |
-
 | `HYSTERESIS` | ANY_NUM | Hysteresis band: Changes smaller than this amount are ignored |
-
 | `Tmin` | TIME | Minimum time between two consecutive `EO` events |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 | Name | Type | Description |
-
 | |------|----------|-----------------------------------------------------|
-
 | `Q` | ANY_NUM | Output value – the last valid latched value |
 
 ### **Adapter**
@@ -92,13 +79,9 @@ Since the function block consists of two sub-blocks internally, no separate stat
 ## Comparison with similar modules
 
 | Module | Hysteresis | Minimum event interval | Application area |
-
 |--------------------------------|-----------|----------------------|--------------------------------------|
-
 | `E_D_FF` (simple) | No | No | Pure data acquisition without filtering |
-
 | `E_D_FF_ANY_HYS` | Yes | No | Hysteresis, but no frequency limiting |
-
 | `E_D_FF_ANY_HYS_TMIN` (this one) | Yes | Yes | Complete filtering with noise and frequency limiting |
 
 ## Conclusion

@@ -5,11 +5,8 @@
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 8 |
-
 | **Value Range** | Bit sequence (16#00 to 16#FF) |
-
 | **Reference** | Table 10, No. 18 |
 
 ## Use in Programming

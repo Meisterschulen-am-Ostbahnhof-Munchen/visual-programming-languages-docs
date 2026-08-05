@@ -8,25 +8,19 @@ The function block **SET_WSTRING** is used to transfer a value of data type `WST
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Normal execution call: The assignment of the input value to the InOut variable is triggered. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Execution confirmation. Sent after successful assignment. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `IN` | `WSTRING` | Source value to be written to the target variable. |
 
 ### **Data Outputs**
@@ -52,9 +46,7 @@ The value `WSTRING`, which is present at input `IN`, is copied unchanged to the 
 The function block contains exactly one state:
 
 | State | Description |
-
 |---------|---------------|
-
 | `REQ` | Becomes active after the event `REQ` occurs. Executes the assignment `OUT := IN` and sends `CNF`. The function block then returns to its initial state. |
 
 ## Application Scenarios

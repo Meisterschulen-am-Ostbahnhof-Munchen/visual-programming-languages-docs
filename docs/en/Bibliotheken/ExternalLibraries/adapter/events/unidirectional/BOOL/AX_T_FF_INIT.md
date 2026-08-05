@@ -9,45 +9,33 @@ The function block **AX_T_FF_INIT** implements a triggered toggle flip-flop with
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | INIT | EInit | Initialization request; triggers the initialization of the flip-flop. The corresponding data inputs QI and Q_INIT are evaluated. |
-
 | CLK | Event | Clock input; the internal state toggles between SET and RESET with each event. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INITO | EInit | Initialization confirmation; output after successful initialization or deinitialization. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | QI | BOOL | Input qualifier; controls whether actions are actually executed (TRUE = active). |
-
 | Q_INIT | BOOL | Value assigned to the flip-flop during initialization (TRUE = SET, FALSE = RESET). |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | QO | BOOL | Output qualifier; reflects the value of QI if an action has been performed, otherwise FALSE. |
 
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | Q | Adapter `adapter::types::unidirectional::AX` | Adapter output that passes the current flip-flop state (TRUE or FALSE) to connected function blocks. |
 
 ## Functionality
@@ -90,17 +78,11 @@ The function block remains in the start state until an INIT event with QI = TRUE
 ## State Overview
 
 | State | Meaning |
-
 |---------|-----------|
-
 | START | Waiting for first INIT event. |
-
 | Init | Initialization is in progress; QO is set to QI, then transition to SET or RESET depending on Q_INIT. |
-
 | DeInit | Deinitialization is in progress; QO is set to FALSE, return to START. |
-
 | SET | Flip-flop is in the set state; Adapter output Q.D1 = TRUE (when QI=TRUE). |
-
 | RESET | Flip-flop is in the reset state; adapter output Q.D1 = FALSE (when QI=TRUE). |
 
 The state transitions are controlled by the INIT event (with a corresponding condition on QI) and CLK.
@@ -113,15 +95,10 @@ The state transitions are controlled by the INIT event (with a corresponding con
 ## Comparison with similar devices
 
 | Criterion | AX_T_FF_INIT | Simple Toggle Flip-Flop (without INIT) | SR Flip-Flop |
-
 -----------|--------------|------------------------------|-------------|
-
 Initialization | Yes, via INIT with Q_INIT | No, state undefined after startup | No (set/reset via separate inputs) |
-
 State Change | Clocked by CLK | Clocked by CLK | Asynchronous via S and R |
-
 Output | Via adapter (typed) | Often as a BOOL data output | BOOL data output |
-
 Qualifier QI | Controls whether an action is executed | Not present | Not present |
 
 Compared to a simple toggle flip-flop, the **AX_T_FF_INIT** offers the possibility of defined initialization and uses an adapter for the output, which simplifies configuration in complex systems.

@@ -21,21 +21,13 @@ None.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | IN | Socket (Input) | adapter::types::unidirectional::AULI | Receives the AULI signal to be distributed. |
-
 | OUT1 | Plug (Output) | adapter::types::unidirectional::AULI | First identical output of the distributed signal. |
-
 | OUT2 | Plug (Output) | adapter::types::unidirectional::AULI | Second identical output. |
-
 | OUT3 | Plug (Output) | adapter::types::unidirectional::AULI | Third identical output. |
-
 | OUT4 | Plug (Output) | adapter::types::unidirectional::AULI | Fourth identical output. |
-
 | OUT5 | Plug (Output) | adapter::types::unidirectional::AULI | Fifth identical output. |
-
 | OUT6 | Plug (Output) | adapter::types::unidirectional::AULI | Sixth identical output. |
 
 ## Functionality
@@ -63,13 +55,9 @@ Since the function block has no event control and manages no internal states, th
 ## Comparison with Similar Modules
 
 | Module | Number of Outputs | Special Feature |
-
 |----------|------------------|--------------|
-
 | AULI_SPLIT_6 | 6 | Fixed splitter for AULI adapter |
-
 | AULI_SPLIT_2 | 2 | Smaller version for two outputs |
-
 | AULI_SPLIT_4 | 4 | Medium-sized version for four outputs |
 
 Compared to smaller splitters, the **AULI_SPLIT_6** offers a higher number of outputs, reducing wiring complexity in complex systems while maintaining a clean signal structure.

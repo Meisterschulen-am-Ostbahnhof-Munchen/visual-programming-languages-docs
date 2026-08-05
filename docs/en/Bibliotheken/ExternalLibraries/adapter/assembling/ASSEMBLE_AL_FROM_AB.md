@@ -27,23 +27,14 @@ None. The composite LWORD is output via the adapter `OUT`.
 **Sockets (Input Adapters)**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `BYTE_00` | `adapter::types::unidirectional::AB` | Byte 0 (least significant byte) |
-
 | `BYTE_01` | `adapter::types::unidirectional::AB` | Byte 1 |
-
 | `BYTE_02` | `adapter::types::unidirectional::AB` | Byte 2 |
-
 BYTE_03` | `adapter::types::unidirectional::AB` | Byte 3 |
-
 BYTE_04` | `adapter::types::unidirectional::AB` | Byte 4 |
-
 BYTE_05` | `adapter::types::unidirectional::AB` | Byte 5 |
-
 BYTE_06` | `adapter::types::unidirectional::AB` | Byte 6 |
-
 BYTE_07` | `adapter::types::unidirectional::AD` | Byte 7 (most significant byte) |
 
 Each byte adapter provides one event (`E1`) and one data byte (`D1`).
@@ -51,9 +42,7 @@ Each byte adapter provides one event (`E1`) and one data byte (`D1`).
 **Plugs (Output Adapters)**
 
 | Name | Data Type | Description |
-
 |------|----------|---------------|
-
 | `OUT` | `adapter::types::unidirectional::AL` | Output: composite LWORD; event output via `E1`, data value via `D1` |
 
 ## Functionality

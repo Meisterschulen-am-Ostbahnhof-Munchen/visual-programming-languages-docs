@@ -20,11 +20,8 @@ The FB has no built-in data outputs. The result (BOOL) is output via the plug ad
 ### **Adapters**
 
 | Name | Type | Adapter Type | Direction | Comment |
-
 |------|-----|------------------|----------|-----------|
-
 | `AUDI_IN` | `adapter::types::unidirectional::AUDI` | Socket | Input | Provides the UDINT value (D1) and the associated event (E1) |
-
 | `AX_OUT` | `adapter::types::unidirectional::AX` | Plug | Output | Provides the BOOL value (D1) and the acknowledgment event (E1) |
 
 ## Functionality

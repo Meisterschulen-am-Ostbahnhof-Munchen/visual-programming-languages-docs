@@ -22,11 +22,8 @@ No separate data outputs. Data is output indirectly via the ALI adapter plug.
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `AX_IN` | Socket | `adapter::types::unidirectional::AX` | BOOL adapter input: Receives a BOOL signal via the unidirectional AX adapter. |
-
 | `ALI_OUT` | Plug | `adapter::types::unidirectional::ALI` | LINT adapter output: Outputs the converted LINT value via the unidirectional ALI adapter. |
 
 ## Functionality

@@ -8,25 +8,19 @@ The function block **AE_DEMUX_4** is a generic demultiplexer for adapters of typ
 ### **Event Inputs**
 
 | Event | Description | With Data |
-
 |----------|--------------|-----------|
-
 | `REQ` | Sets the index K and triggers the forwarding | `K` |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms execution of the demultiplexing operation |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------------|
-
 | `K` | UINT | Target output index (1..4) |
 
 ### **Data Outputs**

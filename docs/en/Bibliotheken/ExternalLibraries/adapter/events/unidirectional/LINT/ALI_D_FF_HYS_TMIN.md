@@ -8,27 +8,20 @@ The function block **ALI_D_FF_HYS_TMIN** implements a data-driven D flip-flop wi
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|-----------|
-
 | INIT | EInit | Initialization request – sets the hysteresis width and the minimum time. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|-----------|
-
 | INITO | EInit | Confirmation of successful initialization. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------------|------|-----------|
-
 | HYSTERESIS | LINT | Hysteresis band as an integer value (LINT). |
-
 | Tmin | TIME | Minimum time between two output events (Inter-Disposal Time). |
 
 ### **Data Outputs**
@@ -40,11 +33,8 @@ The function block outputs its status via the adapter **Q** (see Adapters).
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 | Type | Name | Direction | Comment |
-
 | `adapter::types::unidirectional::ALI` | I | Socket | Input adapter – provides the signal to be received (event and data value). |
-
 | `adapter::types::unidirectional::ALI` | Q | Plug | Output adapter – outputs the last valid data value and an event. |
 
 The adapter type `ALI` includes an event (E1) and a data value (D1) and is used for unidirectional communication between function blocks.
@@ -94,13 +84,9 @@ A formal state machine is not visible via the XML interface, but it can be deduc
 ## Comparison with Similar Components
 
 | Component | Hysteresis | Minimum Time | Adapter Interface |
-
 |----------|-----------|-------------|----------------------|
-
 | `E_D_FF` (simple) | No | No | No (direct I/O) |
-
 | `E_D_FF_HYS` | Yes | No | No |
-
 | `ALI_D_FF_HYS_TMIN` | Yes | Yes | Yes (adapter usage) |
 
 The function block described here combines the advantages of hysteresis and minimum time intervals and, thanks to its adapter interface, is particularly well-suited for a modular, event-driven architecture according to IEC 61499.

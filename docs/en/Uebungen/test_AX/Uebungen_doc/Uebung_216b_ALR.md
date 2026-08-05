@@ -61,19 +61,12 @@ Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-
 ### Connection Overview (Adapter Connections)
 
 | From (Source) | To (Destination) | Comment |
-
 |--------------|-------------|------------|
-
 | `Input_CD.IN` | `ADI_FB_CTD.CD` | Counting Pulses |
-
 | `Input_LD.IN` | `ADI_FB_CTD.LD` | Load Signal |
-
 | `ADI_FB_CTD.Q` | `Output_Q1.OUT` | Initial status (CV=0) |
-
 | `ADI_FB_CTD.CV` | `ADI_TO_ALR.ADI_IN` | Current counter reading |
-
 | `ADI_TO_ALR.ALR_OUT` | `Q_NumericValue_PHYSA_LREAL.lrPhys` | Terminal output |
-
 | `ADI_DINT_TO_DI.ADI_OUT` | `ADI_FB_CTD.PV` | Preset value |
 
 **Event connection**:

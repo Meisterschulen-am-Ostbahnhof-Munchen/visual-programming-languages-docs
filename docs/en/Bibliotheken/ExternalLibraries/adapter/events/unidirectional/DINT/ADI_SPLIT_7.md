@@ -25,23 +25,14 @@ None – the data is not output via separate data outputs, but rather via the ad
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | IN | Socket | adi (unidirectional) | Input adapter that receives the data to be distributed. |
-
 | OUT1 | Plug | adi (unidirectional) | First output adapter (identical to IN). |
-
 | OUT2 | Plug | adi (unidirectional) | Second output adapter (identical to IN). |
-
 | OUT3 | Plug | adi (unidirectional) | Third output adapter (identical to IN). |
-
 | OUT4 | Plug | adi (unidirectional) | Fourth output adapter (identical to IN). |
-
 | OUT5 | Plug | ADI (unidirectional) | Fifth output adapter (identical to IN). |
-
 | OUT6 | Plug | ADI (unidirectional) | Sixth output adapter (identical to IN). |
-
 | OUT7 | Plug | ADI (unidirectional) | Seventh output adapter (identical to IN). |
 
 ## Functionality
@@ -67,15 +58,10 @@ The module has **no state machine** (ECC). It is stateless, meaning it does not 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Outputs | Properties |
-
 |----------|-----------------|---------------|
-
 | ADI_SPLIT_2 | 2 | Distributes 1 ADI to 2 outputs |
-
 | ADI_SPLIT_4 | 4 | Distributes 1 ADI to 4 outputs |
-
 | ADI_SPLIT_7 | 7 | Distributes 1 ADI to 7 outputs |
-
 | ADI_MERGE | 1 (Input: multiple) | Combines multiple ADI inputs into one output |
 
 Compared to manually connecting multiple ADI_Split function blocks in parallel, the `ADI_SPLIT_7` reduces configuration effort and improves network clarity.

@@ -8,53 +8,35 @@ The **DataPanel_MI_ID_ENC** function block is an input service interface functio
 ### **Event Inputs**
 
 | Event | Description | Accompanying Data |
-
 |----------|---------------|-------------------|
-
 | INIT | Service Initialization | QI, PARAMS, u8SAMember, Input, ImpulseDelta, TimeDelta |
-
 | REQ | Service Request | QI |
 
 ### **Event Outputs**
 
 | Event | Description | Accompanying Data |
-
 |----------|--------------|-------------------|
-
 | INITO | Initialization Acknowledgement | QO, STATUS |
-
 | CNF | Requested Action Acknowledgement | QO, STATUS, IN |
-
 | IND | Asynchronous Event Display (Pulse or Timeout) | QO, STATUS, IN |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | QI | BOOL | – | Event Input Qualifier |
-
 PARAMS | STRING | – | Service Parameter |
-
 u8SAMember | USINT | MI::MI_00 | Node Address (range 224..239) |
-
 Input | DataPanel::io::MI::DI::DataPanel_MI_DI_S | Invalid | Input Identifier (usually 7A for a 7A+8A pair) |
-
 PulseDelta | DWORD | – | Number of pulses after which an IND is triggered |
-
 TimeDelta | DWORD | – | Time in milliseconds after which an IND is triggered |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Service Status |
-
 | IN | DWORD | Current Encoder Counter Value |
 
 ### **Adapter**
@@ -84,15 +66,10 @@ The output `IN` contains the current 32-bit counter value of the encoder for eac
 ## State Overview
 
 | State | Description |
-
 |---------|--------------|
-
 | IDLE | Waiting for INIT or REQ |
-
 | INIT | Initialization in progress, parameters are being applied |
-
 | ACTIVE | Initialization complete, ready for REQ and IND |
-
 | ERROR | Error state (e.g., failed initialization) |
 
 The actual state machine is not explicitly represented in the code shown; the states depicted are derived from the typical behavior of service interface function blocks.

@@ -73,13 +73,9 @@ The **F_EXPT** function block is a mathematical function module for calculating 
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | F_EXPT | F_LN | F_POWER |
-
 |----------------|---------|---------|---------|
-
 | Function | a^b | ln(a) | a^b |
-
 | Input types | ANY_REAL| ANY_REAL| ANY_NUM |
-
 | Accuracy | High | High | Medium |
 
 ## Conclusion

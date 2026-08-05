@@ -25,11 +25,8 @@ No direct data outputs. The stored data value is output via the **Q** (Plug) ada
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **I** | Socket (Input) | `adapter::types::unidirectional::AS` | Provides the input event (`E1`) and the data value to be latched (`D1`). |
-
 | **Q** | Plug (Output) | `adapter::types::unidirectional::AS` | Outputs an output event (`E1`) and the stored data value (`D1`). |
 
 ## Functionality
@@ -73,13 +70,9 @@ The state is switched to `I.E1` by an event (if the data value has changed) and 
 ## Comparison with Similar Modules
 
 | Module | Property | Difference from AS_D_FF |
-
 |----------|-------------|-------------------------|
-
 | **SR_FF** | Set-Reset Flip-Flop | Has separate set and reset inputs, no clock signal. |
-
 | **E_D_FF_ANY** | Pure D flip-flop with direct I/O | Does not offer an adapter interface; requires direct connections. |
-
 | **AS_FF_RS** (hypothetical) | RS flip-flop with adapters | Uses two adapters for set and reset, no clock signal. |
 
 The **AS_D_FF** combines the clear logic of a D flip-flop with the flexibility of an adapter-based interface. It is particularly suitable for systems that prefer standardized, unidirectional communication.

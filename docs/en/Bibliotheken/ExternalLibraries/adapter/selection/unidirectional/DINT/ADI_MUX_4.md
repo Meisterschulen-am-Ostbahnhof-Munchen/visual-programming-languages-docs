@@ -8,25 +8,19 @@ The function block **ADI_MUX_4** is a generic multiplexer that selects one of fo
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Triggers the selection of index **K**. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that the index **K** has been set and the corresponding input has been switched to the output. |
 
 ### **Data Inputs**
 
 | Name | Type | Value Range | Comment |
-
 |------|-----|--------------|-----------|
-
 | K | UINT | 0 … 3 | Index for selecting the desired input adapter. |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ The function block **ADI_MUX_4** is a generic multiplexer that selects one of fo
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | Adapter (Socket) | IN1 | Input | Value for K = 0 |
-
 Adapter (Socket) | IN2 | Input | Value for K = 1 |
-
 Adapter (Socket) | IN3 | Input | Value for K = 2 |
-
 Adapter (Socket) | IN4 | Input | Value for K = 3 |
-
 Adapter (Plug) | OUT | Output | The selected value is provided here. |
 
 *All adapters are of type `adapter::types::unidirectional::ADI` (unidirectional data connection).*

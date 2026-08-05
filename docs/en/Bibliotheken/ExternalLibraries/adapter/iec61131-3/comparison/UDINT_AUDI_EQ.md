@@ -9,9 +9,7 @@ The function block `UDINT_AUDI_EQ` performs a comparison of two values for equal
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------|
-
 | REQ | Event | Service Request |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ No direct event outputs. The result event is provided via the adapter plugin `OU
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------------------|------------------|
-
 | IN1 | ANY_ELEMENTARY | Input value 1 |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ No direct data outputs. The result is provided as data via the adapter plugin `O
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|--------------------------------------------------------|----------|------------------------------------------------|
-
 | IN2 | adapter::types::unidirectional::AUDI | Socket | Input value 2 |
-
 | OUT | adapter::types::unidirectional::AX | Plug | value 1 = value2 = true |
 
 - **IN2** (Socket): This adapter passes the second comparison value (both event and date) to the function block from an external source. The event `IN2.E1` triggers the comparison, and the date `IN2.D1` contains the value.

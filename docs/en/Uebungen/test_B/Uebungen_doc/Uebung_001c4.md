@@ -38,19 +38,12 @@ The exercise proceeds as follows:
 The following table shows the essential connections in the network:
 
 | From | To | Type |
-
 |-----|------|-----|
-
 | `DigitalInput_I1.INITO` | `DigitalInput_I1.REQ` | Event |
-
 | `DigitalInput_I1.IND` | `NOOP.REQ` | Event |
-
 | `DigitalInput_I1.CNF` | `NOOP.REQ` | Event |
-
 | `NOOP.CNF` | `DigitalOutput_Q1.REQ` | Event |
-
 | `DigitalInput_I1.IN` | `NOOP.IN` | Data |
-
 | `NOOP.OUT` | `DigitalOutput_Q1.OUT` | Data |
 
 ### Learning Objectives

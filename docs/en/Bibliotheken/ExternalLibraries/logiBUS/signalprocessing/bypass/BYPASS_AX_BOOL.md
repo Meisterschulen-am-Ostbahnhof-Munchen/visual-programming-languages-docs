@@ -8,43 +8,32 @@ The function block `BYPASS_AX_BOOL` implements a bypass function for a Boolean s
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | REQ | Event | Normal Execution Trigger |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | CNF | Event | Execution Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | IN | BOOL | Input Signal |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | OUT | BOOL | Pass-Through Input Signal (Identical to IN) |
 
 ### **Adapters**
 
 | Role | Name | Type | Direction | Description |
-
 |-------|------|-----|----------|--------------|
-
 | Plug | BY_OUT | `adapter::types::unidirectional::AX` | Output | Outputs the stored bypass state |
-
 | Socket | BY_IN | `adapter::types::unidirectional::AX` | Input | Receives the bypass input signal (D1) and event (E1) |
 
 ## Functionality

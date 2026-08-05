@@ -25,15 +25,10 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AB` | `IN` | Socket (Input) | Receives a unidirectional AB-type adapter. |
-
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug (Output) | First output of the incoming signal. |
-
 | `adapter::types::unidirectional::AB` | `OUT2` | Plug (Output) | Second output of the incoming signal. |
-
 | `adapter::types::unidirectional::AB` | `OUT3` | Plug (Output) | Third output of the incoming signal. |
 
 ## Functionality
@@ -61,13 +56,9 @@ The function block has **no explicit state machine**. The behavior is purely dat
 ## Comparison with Similar Function Blocks
 
 | Function Block | Behavior | Special Feature |
-
 |----------|------------|--------------|
-
 | `SPLIT_2` | 1-to-2 Distribution | Analog function block with two outputs. |
-
 | `AB_SPLIT_3` | 1-to-3 Distribution | This block. |
-
 | `AB_JOIN` | Combining Multiple Adapters | Counterpart to the splitter. |
 
 While `SPLIT_2` offers only two outputs, `AB_SPLIT_3` covers the need for triple distribution. No additional logic functions such as filtering or delay are implemented.

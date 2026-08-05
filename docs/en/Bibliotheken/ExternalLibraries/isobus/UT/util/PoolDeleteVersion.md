@@ -9,43 +9,30 @@ The service interface block `PoolDeleteVersion` deletes a stored object pool ver
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INIT | EInit | Service Initialization |
-
 | REQ | Event | Service Request – Delete Pool Version |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|------|-----------|
-
 | INITO | EInit | Initialization Confirmation |
-
 | CNF | Event | Confirmation – Deletion complete |
 
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-
 -----------------|--------|---------------------------------------------------|----------------------|
-
 | QI | BOOL | Quality Input – TRUE activates the service | |
-
 | versionString | STRING | Version label to be deleted (space for last saved version) | `'       '` |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |-----------|--------|-------------------------------------------------------|
-
 | QO | BOOL | Quality output – TRUE on successful deletion |
-
 | STATUS | STRING | Service status |
-
 | s16Result | INT | Return value: 0 = E_NO_ERR (success), negative = error code |
 
 ### **Adapter**

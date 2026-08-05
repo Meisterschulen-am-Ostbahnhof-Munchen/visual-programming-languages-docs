@@ -8,24 +8,19 @@ The function block `AL_MUX_4` is a generic multiplexer for adapter interfaces of
 ### **Event Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
 | `REQ` | `Event` | Sets the index `K` and starts the selection. |
 
 ### **Event Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `CNF` | `Event` | Confirmation of successful switching. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `K` | `UINT` | Index of the selected input (0…3). |
 
 ### **Data Outputs**
@@ -35,23 +30,16 @@ None.
 **Plugs (Output):**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `OUT` | `adapter::types::unidirectional::AL` | Output: outputs the selected input adapter. |
 
 **Sockets (Inputs):**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `IN1` | `adapter::types::unidirectional::AL` | Input value 1 (for `K=0`). |
-
 | `IN2` | `adapter::types::unidirectional::AL` | Input value 2 (for `K=1`). |
-
 | `IN3` | `adapter::types::unidirectional::AL` | Input value 3 (for `K=2`). |
-
 | `IN4` | `adapter::types::unidirectional::AL` | Input value 4 (for `K=3`). |
 
 ## Functionality

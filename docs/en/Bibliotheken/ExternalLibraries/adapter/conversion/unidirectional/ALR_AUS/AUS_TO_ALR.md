@@ -21,11 +21,8 @@ No separate data outputs are available. Data is forwarded via the **ALR_OUT** ad
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-
 |-------|------|-----|-----------|
-
 | **Socket (Input)** | AUS_IN | `adapter::types::unidirectional::AUS` | USINT Adapter Input |
-
 | **Plug (Output)** | ALR_OUT | `adapter::types::unidirectional::ALR` | LREAL Adapter Output |
 
 - The **AUS_IN** adapter provides the interface for incoming USINT data, including an associated event.
@@ -59,15 +56,10 @@ The function block has **no internal state machine**. It operates transparently:
 ## Comparison with Similar Function Blocks
 
 | Feature | AUS_TO_ALR | Typical Conversion FBs (e.g., USINT_TO_LREAL) |
-
 |---------|------------|-----------------------------------------------------|
-
 | Input / Output | Adapter Interfaces | Individual Data Inputs/Outputs |
-
 | Event Processing | Pass-Through via Adapter | Custom Event I/C Pairs |
-
 Implementation | Composite (Connections Only) | Executable Algorithms |
-
 Type Conversion | Not Included in the Function Block | Explicit Conversion via Algorithm |
 
 While a classic *USINT_TO_LREAL* function block performs the value conversion itself, **AUS_TO_ALR** only provides adapter adaptation. A separate function block must be interposed for the actual data conversion.

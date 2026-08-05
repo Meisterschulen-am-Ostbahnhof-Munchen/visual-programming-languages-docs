@@ -9,35 +9,26 @@ The function block `FIELDBUS_QUARTER_TO_SIGNAL` serves as a signal validation an
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |--------|-------|------------------------------|---------------|
-
 | `REQ` | Event | Normal Execution Order | `IN` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With Variables |
-
 |-------|-------|-----------------------------|-------------------|
-
 | `CNF` | Event | Execution Confirmation | `OUT`, `VALID` |
 
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-
 |------|--------|--------------------|--------------------------------|
-
 | `IN` | `BYTE` | Input Signal | `NOT_AVAILABLE_2bit` (Imported Constant) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment | Initial Value |
-
 |---------|--------|---------------------------------|-------------|
-
 | `OUT` | `BYTE` | Filtered Output Signal | `16#00` |
-
 | `VALID` | `BOOL` | `TRUE`, if the signal is valid | `FALSE` |
 
 ### **Adapter**
@@ -76,9 +67,7 @@ DONT_CARE_2bit` defines the threshold above which values are considered "irrelev
 Only one state exists:
 
 | State | Description | Output Event | Output Actions |
-
 |---------|--------------------------------------------------|----------------|--------------------------|
-
 | `REQ` | Processes the input and updates outputs | `CNF` | Set `OUT` and `VALID` |
 
 ## Application Scenarios

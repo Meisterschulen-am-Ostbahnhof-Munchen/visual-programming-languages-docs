@@ -10,104 +10,63 @@ The **IA_Lighting** function block serves as an ISOBUS adapter for lighting data
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 | INIT | EInit | Initialization of the function block. Triggered by `QI`. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|-----------------------------|
-
 | INITO | EInit | Confirmation of successful initialization. Output along with `QO` and `STATUS`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-----------------------------|
-
 | QI | BOOL | Qualifier for initialization (enabling). |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-----------------------------|
-
 | QO | BOOL | Output qualifier – indicates whether the block is ready for operation. |
-
 | STATUS | STRING | Status message (e.g., error text or success message). |
 
 ### **Adapters**
 The block has **32 unidirectional adapter plugs** (type `adapter::types::unidirectional::AX`). Each adapter represents a specific lighting function according to ISO 11783-7 and provides an event output (`E1`) and a data output (`D1`) of type `BOOL`:
 
 | Adapter Name | Description |
-
 |--------------|--------------|
-
 | DAYTIME_RUNNING_LIGHTS | Daytime Running Lights |
-
 | ALTERNATE_HEADLIGHTS | Alternative High Beam (e.g., High Beam Assist) |
-
 | LOW_BEAM_HEADLIGHTS | Low Beam |
-
 | HIGH_BEAM_HEADLIGHTS | High Beam |
-
 | TRACTOR_FRONT_FOG_LIGHTS | Front Fog Lights for Tractor |
-
 | ROTATING_BEACON_LIGHT | Rotating Beacon |
-
 | RIGHT_TURN_SIGNAL_LIGHTS | Right Turn Signal |
-
 | LEFT_TURN_SIGNAL_LIGHTS | Left Turn Signal |
-
 | BACK_UP_LIGHTS_AND_ALARM_HORN | Reversing Light and Alarm Horn |
-
 | CENTER_STOP_LIGHTS | Center Brake Light |
-
 | RIGHT STOP LIGHTS | Right Brake Light |
-
 LEFT STOP LIGHTS | Left Brake Light |
-
 IMPLEMENT CLEARANCE LIGHTS | Implement Marker Lights |
-
 TRACTOR CLEARANCE LIGHTS | Tractor Marker Lights |
-
 IMPLEMENT MARKER LIGHTS | Implement Marker Lights |
-
 TRACTOR MARKER LIGHTS | Tractor Marker Lights |
-
 REAR FOG LIGHTS | Rear Fog Lights |
-
 TRACTOR UNDERSIDE MOUNTED WORK LIGHTS | Tractor Work Lights (Underside Mounted) |
-
 TRACTOR REAR LOW MOUNTED WORK LIGHTS | Tractor Work Lights (Rear, Low Mounted) |
-
 TRACTOR REAR HIGH MOUNTED WORK LIGHTS | Tractor Work Lights (Rear, High Mounted) |
-
 TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS | Tractor work lights (side, low) |
-
 TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS | Tractor work lights (side, high) |
-
 TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS | Tractor work lights (front, low) |
-
 TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS | Tractor work lights (front, high) |
-
 IMPLEMENT_OEM_OPTION_2_LIGHT | Attachment OEM Option 2 Light |
-
 IMPLEMENT_OEM_OPTION_1_LIGHT | Attachment OEM Option 1 Light |
-
 IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS | Attachment work lights (front right) |
-
 IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS | Attachment work light (front left) |
-
 | IMPLEMENT_RIGHT_FACING_WORK_LIGHTS | Attachment work light (side right) |
-
 | IMPLEMENT_LEFT_FACING_WORK_LIGHTS | Attachment work light (side left) |
-
 | IMPLEMENT_REAR_WORK_LIGHTS | Attachment work light (rear) |
-
 | TIMEOUT | Timeout status of the internal core (Boolean signal). |
 
 * * * * * * * * * *

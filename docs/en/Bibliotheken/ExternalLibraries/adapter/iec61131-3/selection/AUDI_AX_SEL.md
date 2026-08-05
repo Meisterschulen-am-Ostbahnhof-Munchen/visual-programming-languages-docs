@@ -9,45 +9,33 @@ The function block **AUDI_AX_SEL** implements a binary selection between two dat
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `EI0` | Event | Sets the value for `IN0` |
-
 | `EI1` | Event | Sets the value for `IN1` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of the requested selection (issued after successful processing) |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `IN0` | UDINT | First selectable value |
-
 | `IN1` | UDINT | Second selectable value |
 
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `OUT` | UDINT | Selected value (corresponds to `IN0` or `IN1`) |
 
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `G` | `AX` (unidirectional) | Controls selection via an event (`E1`) and a date (`D1`) |
 
 ## Functionality

@@ -8,25 +8,19 @@ The **GET_REAL** function block is used to read a REAL value from an **InOut var
 ### **Event Inputs**
 
 | Event | Description | With Variables |
-
 |----------|----------------|----------------|
-
 | **REQ** | Normal execution request – triggers reading the InOut variable. | `IN` |
 
 ### **Event Outputs**
 
 | Event | Description | With Variables |
-
 |----------|----------------|----------------|
-
 | **CNF** | Execution Acknowledgement – sent after processing `REQ`. | `OUT`, `IN` |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-
 |----------|------|--------------|--------------|
-
 | **IN** | REAL | 0.0 | InOut variable whose current value is read. |
 
 > **Note:** `IN` is declared as an *InOut variable* – it can be both read and written. However, in this function block, it is only read.
@@ -34,9 +28,7 @@ The **GET_REAL** function block is used to read a REAL value from an **InOut var
 ### **Data Outputs**
 
 | Variable | Type | Initial Value | Description |
-
 |----------|------|-------------|--------------|
-
 | **OUT** | REAL | 0.0 | Buffered output – holds the read value of `IN` until the next update. |
 
 ### **Adapters**
@@ -78,15 +70,10 @@ There are no further states or branches – the function block is deterministic 
 Similar function blocks exist for other data types, e.g., `GET_BOOL`, `GET_INT`, `GET_LREAL`, etc. They all share the same principle: reading an InOut variable and providing it as a buffered output. The difference lies solely in the data type and the associated precision or value range.
 
 | Function Block | Data Type | Application Area |
-
 |------------|----------|----------------|
-
 | GET_BOOL | BOOL | Binary Signals |
-
 | GET_INT | INT | Integers (16 bits) |
-
 | GET_REAL | REAL | Floating-Point Numbers (32 bits) |
-
 | GET_LREAL | LREAL | Precise Floating-Point Numbers (64 bits) |
 
 All these function blocks can be used analogously and offer a uniform interface for accessing InOut variables.

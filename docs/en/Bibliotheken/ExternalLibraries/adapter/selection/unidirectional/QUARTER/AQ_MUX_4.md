@@ -9,25 +9,19 @@ The function block `AQ_MUX_4` acts as a multiplexer for adapters of type `AQ`. I
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------|
-
 | REQ | Event | Sets the index `K` and triggers the switchover. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|----------------------------------------|
-
 | CNF | Event | Confirmation of the switchover (acknowledgment). |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-------------------------------|
-
 | K | UINT | Index of the desired input (0–3). |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ No dedicated data outputs – output is via the adapter output `OUT`.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|----------------------------------------------|---------------------------------------------------------------|
-
 | Plug | OUT | `adapter::types::unidirectional::AQ` | Output: Signal of the selected input (IN1–IN4). |
-
 | Socket | IN1 | `adapter::types::unidirectional::AQ` | First input (becomes active for K=0). |
-
 | Socket | IN2 | `adapter::types::unidirectional::AQ` | Second input (becomes active for K=1). |
-
 | Socket | IN3 | `adapter::types::unidirectional::AQ` | Third input (becomes active for K=2). |
-
 | Socket | IN4 | `adapter::types::unidirectional::AQ` | Fourth input (becomes active for K=3). |
 
 All adapters are of type `adapter::types::unidirectional::AQ` – a unidirectional adapter for analog output values (e.g., voltage or current signals).
@@ -93,13 +81,9 @@ The time interval between `REQ` and `CNF` is determined solely by the execution 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Interface | Number of Inputs | Special Feature |
-
 |-------------|-------------------------------------|-----------------|--------------------------------------------------|
-
 | `AQ_MUX_4` | Adapter (unidirectional, `AQ`) | 4 | Generic, optimized for analog output signals |
-
 | `MUX` | Data types (e.g., `ANY`) | Configurable | Standard multiplexer from IEC 61499 libraries |
-
 | `SEL` | Data types (two inputs) | 2 | Simple selection between two values |
 
 The `AQ_MUX_4` stands out due to its use of adapters, which allow complex signals to be transmitted over a single connection, and its generic basis, which enables easy reuse in various configurations.

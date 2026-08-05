@@ -71,13 +71,9 @@ The **F_DIVTIME** function block is a specialized function module for dividing t
 ## ⚖️ Comparison with Standard F_DIV
 
 | Feature | F_DIVTIME | F_DIV |
-
 |----------------|-----------|-------------|
-
 | Input Type 1 | TIME | ANY_NUM |
-
 | Input Type 2 | ANY_NUM | ANY_NUM |
-
 | Output Type | TIME | ANY_NUM |
 
 ## Conclusion

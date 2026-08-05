@@ -23,11 +23,8 @@ This function block does not have separate data outputs. The output data (WORD) 
 ### **Adapter**
 
 | Direction | Label | Type | Comment |
-
 |----------|-------------|-----|-----------|
-
 | **Socket** | `AX_IN` | `adapter::types::unidirectional::AX` | BOOL adapter input (consisting of event `E1` and data `D1:BOOL`) |
-
 | **Plug** | `AW_OUT` | `adapter::types::unidirectional::AW` | WORD adapter output (consisting of event `E1` and data `D1:WORD`) |
 
 ## Functionality

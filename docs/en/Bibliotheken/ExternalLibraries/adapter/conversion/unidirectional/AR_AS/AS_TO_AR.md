@@ -30,11 +30,8 @@ Data is output exclusively via the adapter **AR_OUT**.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | `adapter::types::unidirectional::AS` | **AS_IN** | Socket | Input adapter for SINT data |
-
 | `adapter::types::unidirectional::AR` | **AR_OUT** | Plug | Output adapter for REAL data |
 
 ## Functionality

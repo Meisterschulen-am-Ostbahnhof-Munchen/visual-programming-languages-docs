@@ -66,13 +66,9 @@ The **F_ADD_DT_TIME** function block is a specialized function module for adding
 ## ⚖️ Comparison with standard F_ADD
 
 | Feature | F_ADD_DT_TIME | F_ADD |
-
 |----------------|---------------|-------------|
-
 | Input type 1 | DATE_AND_TIME | ANY_MAGNITUDE |
-
 | Input type 2 | TIME | ANY_MAGNITUDE |
-
 | Operation | Specialized time addition | Generic addition |
 
 ## Conclusion

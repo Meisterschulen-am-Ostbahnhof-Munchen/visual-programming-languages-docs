@@ -9,25 +9,19 @@ The function block **AIWS_DEMUX_3** is a generic demultiplexer for data of the t
 ### **Event Inputs**
 
 | Event | Comment | with Variable |
-
 |----------|------------|--------------|
-
 | REQ | Set Index K | K |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|---------------------------------|
-
 | CNF | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | K | UINT | Index |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ None (passed via adapter outputs).
 ### **Adapters**
 
 | Type | Name | Direction |
-
 |-------------------|-------|----------|
-
 | AIWS (unidirectional) | IN | Socket |
-
 | AIWS (unidirectional) | OUT1 | Plug |
-
 | AIWS (unidirectional) | OUT2 | Plug |
-
 | AIWS (unidirectional) | OUT3 | Plug |
 
 ## Functionality
@@ -74,13 +63,9 @@ This function block does not have an explicitly modeled state machine. However, 
 ## Comparison with similar modules
 
 | Module | Function | Difference |
-
 |----------|----------|-------------|
-
 | **AIWS_DEMUX_3** | 1-to-3 demultiplexer for AIWS data | Specifically for the AIWS data type, three outputs |
-
 | **Generic DEMUX** (e.g., IEC 61499 standard) | Demultiplexer for any data type | Not limited to AIWS, often multiple outputs freely configurable |
-
 | **AIWS_SELECT** | 1-of-n selector (multiplexer) | Works in reverse: selects one of several inputs |
 
 The **AIWS_DEMUX_3** offers a ready-to-use solution tailored to agricultural technology, requiring no additional configuration.

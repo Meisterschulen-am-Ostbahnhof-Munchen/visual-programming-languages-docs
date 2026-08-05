@@ -25,11 +25,8 @@ No separate data outputs – the output data is provided via the nine outgoing a
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AL` | An incoming adapter that provides the signal or data to be distributed. |
-
 | **Plug** (Output) | `OUT1` … `OUT9` | `adapter::types::unidirectional::AL` | Nine outgoing adapters, each outputting a copy of the input signal. |
 
 ## Functionality

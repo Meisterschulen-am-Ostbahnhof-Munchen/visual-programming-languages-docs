@@ -9,37 +9,27 @@ The function block `AUI_LT` performs a less-than comparison (`<`) between two in
 ### **Event Inputs**
 
 | Name | Description |
-
 |------------|--------------|
-
 | IN1.E1 | Event at socket adapter IN1; triggers the comparison as soon as a new value is present at IN1. |
-
 | IN2.E1 | Event at socket adapter IN2; triggers the comparison as soon as a new value is present at IN2. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------------|--------------|
-
 | OUT.E1 | Event at plug adapter OUT; signals that a valid result is present at OUT.D1 after a comparison. |
 
 ### **Data Inputs**
 
 | Name | Description |
-
 |------------|--------------|
-
 | IN1.D1 | First value of the comparison (ANY_BIT compatible). |
-
 | IN2.D1 | Second value of the comparison (ANY_BIT compatible). |
 
 ### **Data Outputs**
 
 | Name | Description |
-
 |------------|--------------|
-
 | OUT.D1 | Comparison result: `true`, if IN1.D1 < IN2.D1; sonst `false`. |
 
 ### **Adapter**

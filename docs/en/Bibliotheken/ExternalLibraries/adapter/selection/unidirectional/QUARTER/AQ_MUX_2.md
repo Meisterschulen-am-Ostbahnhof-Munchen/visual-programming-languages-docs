@@ -8,25 +8,19 @@ The **AQ_MUX_2** is a generic 2-channel multiplexer for analog outputs, implemen
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | This event triggers the switching of the multiplexer. The current value of `K` determines which input is passed through to the output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms the successful execution of the selection requested by `REQ`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------|
-
 | **K** | UINT | Index for selecting the input. Valid values: `0` → IN1, `1` → IN2. Values outside this range are undefined. |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ This function block does not have its own data outputs; the output data is provi
 ### **Adapters**
 
 | Role | Name | Type (Adapter) | Description |
-
 |-------|------|----------------|--------------|
-
 | Plug | **OUT** | `adapter::types::unidirectional::AQ` | Selected analog output value. |
-
 | Socket | **IN1** | `adapter::types::unidirectional::AQ` | First input (index 0). |
-
 | Socket | **IN2** | `adapter::types::unidirectional::AQ` | Second input (Index 1). |
 
 All adapters are of the same type: a unidirectional analog output adapter.

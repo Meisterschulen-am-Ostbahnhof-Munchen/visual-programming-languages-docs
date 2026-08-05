@@ -8,25 +8,19 @@ The function block **SET_INT** is used to write a value of data type `INT` from 
 ### **Event Inputs**
 
 | Event | Data Type | Description | With Data |
-
 |----------|-----------|---------------|------------|
-
 | `REQ` | Event | Normal Execution Request. Triggers the transfer of the value from `IN` to `OUT`. | `IN`, `OUT` |
 
 ### **Event Outputs**
 
 | Event | Data Type | Description | With Data |
-
 |----------|----------|---------------|------------|
-
 | `CNF` | Event | Execution Confirmation. Sent after the value has been successfully written to `OUT`. | `OUT` |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Description | Initial Value |
-
 |----------|----------|---------------|-------------|
-
 | `IN` | INT | The value to be copied to the InOut variable. | 0 |
 
 ### **Data Outputs**
@@ -38,9 +32,7 @@ None.
 ### **InOut Variable**
 
 | Variable | Data Type | Description | Initial Value |
-
 |----------|-----------|---------------|-------------|
-
 | `OUT` | INT | Target variable into which the value of `IN` is written. This variable is declared as InOut, meaning it is referenced from outside the function block and can be directly manipulated. | 0 |
 
 ## Functionality
@@ -72,9 +64,7 @@ The data inputs and InOut variables are initialized with `0`. This value is used
 The FB has a single ECC state (`REQ`) that executes the action and immediately triggers the output event `CNF`. There are no branches, timers, or error states.
 
 | State | Action | Trigger |
-
 |---------|--------|----------|
-
 | `REQ` | Execution of the algorithm `REQ` (OUT := IN) and sending of `CNF` | Event `REQ` |
 
 ## Application Scenarios

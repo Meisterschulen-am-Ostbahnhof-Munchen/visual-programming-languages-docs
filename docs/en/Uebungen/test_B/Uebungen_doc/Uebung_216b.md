@@ -48,23 +48,14 @@ After the counter processing is complete, the `CNF` event is triggered. This is 
 **Summary of Connections:**
 
 | Sender | Receiver | Type |
-
 |--------|-----------|-----|
-
 | `Input_CD.IND` | `FB_CTD_DINT.REQ` | Event |
-
 | `Input_LD.IND` | `FB_CTD_DINT.REQ` | Event |
-
 | `FB_CTD_DINT.CNF` | `Output_Q1.REQ` | Event |
-
 | `FB_CTD_DINT.CNF` | `Q_NumericValue_PHYS_LREAL.REQ` | Event |
-
 | `Input_CD.IN` | `FB_CTD_DINT.CD` | Data |
-
 | `Input_LD.IN` | `FB_CTD_DINT.LD` | Data |
-
 | `FB_CTD_DINT.Q` | `Output_Q1.OUT` | Data |
-
 | `FB_CTD_DINT.CV` | `Q_NumericValue_PHYS_LREAL.lrPhys` | Data |
 
 ## Summary

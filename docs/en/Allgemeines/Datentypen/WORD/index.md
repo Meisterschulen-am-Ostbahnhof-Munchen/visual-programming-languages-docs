@@ -5,11 +5,8 @@ Bit sequence of length 16
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 16 |
-
 | **Value Range** | Bit sequence (16#0000 to 16#FFFF) |
-
 | **Reference** | Table 10, No. 19 |
 
 ## Use in Programming

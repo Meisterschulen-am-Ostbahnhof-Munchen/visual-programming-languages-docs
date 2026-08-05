@@ -9,25 +9,19 @@ The function block **AS_DEMUX_4** serves as a demultiplexer for a unidirectional
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Request to forward the input adapter. The value of `K` specifies the destination output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirmation of successful switching. Indicates that the adapter is ready on the selected output. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Index of the desired output (expected values 1 … 4). |
 
 ### **Data Outputs**
@@ -39,23 +33,16 @@ No standalone data outputs – output is exclusively via the adapter ports.
 #### Socket (Input)
 
 | Adapter | Type | Description |
-
 |---------|-------------------------------------------|------------------------------------|
-
 | `IN` | `adapter::types::unidirectional::AS` | Input value to be demultiplexed |
 
 #### Plugs (Outputs)
 
 | Adapter | Type | Description |
-
 |---------|-------------------------------------------|----------------------------------------|
-
 | `OUT1` | `adapter::types::unidirectional::AS` | First output (Index 1) |
-
 | `OUT2` | `adapter::types::unidirectional::AS` | Second Output (Index 2) |
-
 | `OUT3` | `adapter::types::unidirectional::AS` | Third Output (Index 3) |
-
 | `OUT4` | `adapter::types::unidirectional::AS` | Fourth Output (Index 4) |
 
 ## Functionality
@@ -80,13 +67,9 @@ The following applies:
 The function block does not have an explicit state machine in the XML model. Its behavior is purely reactive: Every `REQ` event is immediately followed by switching and the output of `CNF`. There is no internal state that persists beyond event execution.
 
 | State / Phase | Description |
-
 |----------------|--------------|
-
 | **Waiting** | The function block is waiting for a `REQ` event. The last index, `K`, remains stored internally, but without effect. |
-
 | **Switching** | Upon receipt of `REQ`, the value of `K` is read and the corresponding output is activated. |
-
 **Confirming** | After the switching, `CNF` is sent, and the function block returns to standby mode. |
 
 ## Application Scenarios

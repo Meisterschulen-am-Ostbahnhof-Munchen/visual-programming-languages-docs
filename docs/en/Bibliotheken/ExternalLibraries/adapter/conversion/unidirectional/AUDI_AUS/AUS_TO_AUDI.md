@@ -25,11 +25,8 @@ This function block does not have its own data outputs. Data is output via the *
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AUS` | `AUS_IN` | Socket (Input) | Unidirectional adapter that provides data in USINT format (8 bits) and an event. |
-
 | `adapter::types::unidirectional::AUDI` | `AUDI_OUT` | Plug (Output) | Unidirectional adapter that expects data in UDINT format (32 bits) and an event. |
 
 The internal network structure connects the event `E1` and the data value `D1` of the input adapter directly to the corresponding interfaces of the output adapter.

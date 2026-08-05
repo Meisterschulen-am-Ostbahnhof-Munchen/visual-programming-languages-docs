@@ -8,10 +8,8 @@ The **AX_RS_SYM** is an event-driven, bistable function block (RS flip-flop) wit
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
 | `R` | Event | Sets output `Q.D1` to `FALSE` and fires `Q.E1` |
-
 | `S` | Event | Sets output `Q.D1` to `TRUE` and fires `Q.E1` |
 
 ### **Event Outputs**
@@ -27,9 +25,7 @@ The FB has no separate data outputs. The current state is provided via the adapt
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `Q` | `adapter::types::unidirectional::AX` | Provides the flip-flop value (D1) and an acknowledgment event (E1) |
 
 ## Functionality
@@ -50,13 +46,9 @@ The special feature is the **symmetrical start-up behavior**: Immediately after 
 The internal state machine consists of the following states and transitions:
 
 | State | Meaning | Action on entry |
-
 |---------|-----------|---------------------|
-
 | START | Initial state after power-on | No action (waits for first event) |
-
 | SET | Output `Q.D1` is `TRUE` | Executes algorithm `SET`: `Q.D1 := TRUE` and fires `Q.E1` |
-
 | RESET | Output `Q.D1` is `FALSE` | Executes algorithm `RESET`: `Q.D1 := FALSE` and fires `Q.E1` |
 
 ` **Transitions:**

@@ -9,27 +9,20 @@ The **AR_D_FF_HYS_TMIN** function block implements a data latch (D flip-flop) wi
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-------|--------------|
-
 | INIT | EInit | Initialization request; passes the parameters HYSTERESIS and Tmin to the internal logic. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|--------------|
-
 | INITO | EInit | Confirmation of successful initialization. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |-------------|------|--------------|
-
 | HYSTERESIS | REAL | Hysteresis band: A change in the input value must exceed this amount for a new value to be latched. |
-
 | Tmin | TIME | Minimum time between two output events (inter-disposal time). Prevents overly rapid switching. |
 
 ### **Data Outputs**
@@ -38,11 +31,8 @@ The FB does not have its own data outputs; the output data is provided via the *
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|-------------------------------------------------|----------|--------------|
-
 | **I** | adapter::types::unidirectional::AR (Socket) | Input | Provides the value to be latched via **I.D1** and the clock signal via **I.E1**. |
-
 | **Q** | adapter::types::unidirectional::AR (Plug) | Output | Provides the latched value via **Q.D1** and signals an update via **Q.E1**. |
 
 ## Functionality

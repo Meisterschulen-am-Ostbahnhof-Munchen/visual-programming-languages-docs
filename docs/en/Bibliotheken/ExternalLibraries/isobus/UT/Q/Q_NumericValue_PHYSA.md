@@ -8,48 +8,35 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `INIT` | `EInit` | Service initialization; executed with data input `stObj` |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `INITO` | `EInit` | Confirmation of successful initialization |
-
 | `CNF` | `Event` | Confirmation of value change performed; Output together with `STATUS` and `s16result` |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | Object pool properties: `u16ObjId` (Object ID), `r32Scale` (Scaling), `i32Offset` (Offset), `u8Decimals` (Decimal places). Default value: `(u16ObjId := ID_NULL, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0)` |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
 |------|-----|--------------|
-
 | `STATUS` | `STRING` | Service status message |
-
 | `s16result` | `INT` | Return value (see documentation for `Q_NumericValue`) |
 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AR` | `rPhys` | Socket (Input) | Receives the physical value `REAL` for processing |
-
 | `adapter::types::unidirectional::AX` | `xOver` | Plug (Output) | Signals that the physical value exceeds the upper ISOBUS limit |
-
 | `adapter::types::unidirectional::AX` | `xUnder` | Plug (Output) | Signals that the physical value falls below the lower ISOBUS limit |
 
 ## Functionality
@@ -81,11 +68,8 @@ The function block itself does not have an explicit state machine. The initializ
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference |
-
 |----------|--------------|-------------|
-
 | `Q_NumericValue_PHYS` | Direct function block for physical values | `Q_NumericValue_PHYSA` wraps this function block and adds explicit adapter outputs (`xOver`, `xUnder`) for limit signals |
-
 | `Q_NumericValue` | Basic Function Block for Numeric Values (No Physical Conversion) | `Q_NumericValue_PHYSA` is specifically designed for real-world physical values and includes scaling/offset functionality.
 
 ## Conclusion

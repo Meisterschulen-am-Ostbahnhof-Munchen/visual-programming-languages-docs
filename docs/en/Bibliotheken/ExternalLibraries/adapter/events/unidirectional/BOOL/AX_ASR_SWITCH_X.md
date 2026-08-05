@@ -22,11 +22,8 @@ The function block interacts primarily via adapter interfaces.
 ### **Adapter**
 
 | Name | Type | Component | Comment |
-
 | :--- | :--- | :--- | :--- |
-
 **G** | `adapter::types::unidirectional::AX` | Socket (Input) | Boolean input adapter (contains event `E1` and data `D1`). |
-
 | **Q** | `adapter::types::unidirectional::ASR` | Plug (Output) | Set/Reset output adapter (contains events `SET` and `RESET`). |
 
 ## Functionality
@@ -54,11 +51,8 @@ The **AX_ASR_SWITCH_X** internally uses a standard `E_SWITCH` block (`iec61499::
 Since this is a Composite Function Block without its own state machine (ECC), its behavior is defined solely by signal passthrough.
 
 | Input G (D1) on Event G (E1) | Triggered Event at Q | Logical Meaning |
-
 | :--- | :--- | :--- |
-
 **TRUE** | **RESET** | Reset / Stop |
-
 **FALSE** | **SET** | Set / Start |
 
 ## Application Scenarios

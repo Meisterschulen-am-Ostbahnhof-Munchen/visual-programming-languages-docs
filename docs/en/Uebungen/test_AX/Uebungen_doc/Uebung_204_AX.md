@@ -18,21 +18,13 @@ The entire exercise is set up as a standalone sub-application. All FBs are used 
 ### Overview of FBs in the Network
 
 | Block Name | Type | Parameters | Event Connections | Adapter/Data Connections |
-
 |---|---|---|---|---|
-
 | **DigitalInput_I1** | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`<br>`Input = Input_I1` | – | Adapter `IN` → ILOCK_AX.UP_IN |
-
 | **DigitalInput_I2** | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`<br>`Input = Input_I2` | – | Adapter `IN` → ILOCK_AX.DOWN_IN |
-
 | **DigitalInput_Reset** | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`<br>`Input = Input_I3`<br>`InputEvent = BUTTON_SINGLE_CLICK` | Event output `IND` → ILOCK_AX.EI_RESET | – |
-
 | **ILOCK_AX** | `logiBUS::signalprocessing::interlock::ILOCK_CONFLICT_TRIP_AX` | *(no parameters set)* | Event input `EI_RESET` from DigitalInput_Reset | Adapter inputs: `UP_IN` (from DigitalInput_I1), `DOWN_IN` (from DigitalInput_I2) <br> | Adapter outputs: `UP_OUT` → DigitalOutput_Q1, `DOWN_OUT` → DigitalOutput_Q2, `TRIP_OUT` → Trip_Display |
-
 | **DigitalOutput_Q1** | `logiBUS::io::DQ::logiBUS_QXA` | `QI = TRUE` | <br> | `Output = Output_Q1` | – | Adapter input `OUT` from ILOCK_AX.UP_OUT |
-
 **DigitalOutput_Q2** | `logiBUS::io::DQ::logiBUS_QXA` | `QI = TRUE`<br>`Output = Output_Q2` | – | Adapter input `OUT` from ILOCK_AX.DOWN_OUT |
-
 **Trip_Display** | `logiBUS::io::DQ::logiBUS_QXA` | `QI = TRUE`<br>`Output = Output_Q4` | – | Adapter input `OUT` from ILOCK_AX.TRIP_OUT |
 
 ## Program Flow and Connections

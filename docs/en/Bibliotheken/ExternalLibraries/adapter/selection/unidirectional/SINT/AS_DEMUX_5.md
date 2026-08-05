@@ -8,25 +8,19 @@ The function block **AS_DEMUX_5** is a generic demultiplexer for the unidirectio
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------------|
-
 | REQ | Event | Set Index K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------|
-
 | K | UINT | Index |
 
 ### **Data Outputs**
@@ -36,7 +30,6 @@ The FB has no direct data outputs. Output is handled via the adapter plugs.
 **Socket (Input)**
 
 | Name | Type | Comment |
-
 |------|------------------------------------------|--------------------------------|
 | IN | `adapter::types::unidirectional::AS` | Input Value to demultiplex |
 

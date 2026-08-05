@@ -8,43 +8,32 @@ The **AS_TO_AX** function block is a composite function block that converts a SI
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | AS_IN.E1 | Event | Receives the trigger signal from the connected AS adapter for data processing. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | AX_OUT.E1 | Event | Sent after successful conversion; indicates that the BOOL value is present at the AX adapter. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | AS_IN.D1 | SINT | Receives the SINT value, which is checked for inequality to zero. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | AX_OUT.D1 | BOOL | Outputs the result of the comparison: `TRUE` if the input value is not zero, otherwise `FALSE`. |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|-------------|
-
 | AS_IN | adapter::types::unidirectional::AS | Socket (Input) | SINT adapter for the input value and its associated event. |
-
 | AX_OUT | adapter::types::unidirectional::AX | Plug (Output) | BOOL adapter for the output value and its associated event. |
 
 ## Functionality

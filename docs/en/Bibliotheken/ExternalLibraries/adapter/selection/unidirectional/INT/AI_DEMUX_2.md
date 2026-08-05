@@ -8,25 +8,19 @@ The function block **AI_DEMUX_2** is a generic demultiplexer for unidirectional 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K (connected to data input **K**) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of index selection (after successful forwarding) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selecting output (1 or 2) |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ No direct data outputs – data is forwarded via downstream adapters.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket | IN | Adapter `adapter::types::unidirectional::AI` | Input value to be demultiplexed |
-
 | Plug | OUT1 | Adapter `adapter::types::unidirectional::AI` | First output (index 1) |
-
 | Plug | OUT2 | Adapter `adapter::types::unidirectional::AI` | Second output (index 2) |
 
 ## Functionality

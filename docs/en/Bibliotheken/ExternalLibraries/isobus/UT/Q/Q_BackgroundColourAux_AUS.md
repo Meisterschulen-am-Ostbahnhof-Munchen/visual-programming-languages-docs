@@ -11,47 +11,34 @@ It enables interaction with the Virtual Terminal (VT) and handles the transmissi
 ### **Event Inputs**
 
 | Event | Type | With Parameter | Description |
-
 |----------|-------|----------------|--------------|
-
 | INIT | EInit | u16ObjId | Service Initialization |
 
 ### **Event Outputs**
 
 | Event | Type | With Parameter | Description |
-
 |----------|--------|----------------|--------------|
-
 | INITO | EInit | – | Initialization confirmed |
-
 | CNF | Event | STATUS, s16result | Confirmation of requested service |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |-----------|-------|-------------|--------------|
-
 | u16ObjId | UINT | ID_NULL | Object ID of the affected object |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |-----------|--------|--------------|
-
 | STATUS | STRING | Service status (e.g., error message) |
-
 | s16result | INT | Return value (see below) |
 
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|-------------|------|--------------|
-
 | Socket | u8Colour | OFF | New background color (according to ISO 11783-6 A.3) |
-
 | Plug | u8OldColour | OFF | Old background color (returned by the VT) |
 
 ## Functionality

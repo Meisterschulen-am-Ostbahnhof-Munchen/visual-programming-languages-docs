@@ -13,43 +13,32 @@ Since the function block does not have direct event or data ports, inputs and ou
 ### **Event Inputs**
 
 | Port | Description |
-
 |------|--------------|
-
 | `AS_IN.E1` | Starts the conversion of a SINT value. |
 
 ### **Event Outputs**
 
 | Port | Description |
-
 |------|--------------|
-
 | `AB_OUT.E1` | Signals the completion of the conversion. |
 
 ### **Data Inputs**
 
 | Port | Data Type | Description |
-
 |------|----------|--------------|
-
 | `AS_IN.D1` | SINT | The value to be converted (Signed Short Integer). |
 
 ### **Data Outputs**
 
 | Port | Data Type | Description |
-
 |------|----------|--------------|
-
 | `AB_OUT.D1` | BYTE | The converted value (byte). |
 
 ### **Adapter**
 
 | Label | Type | Direction | Comment |
-
 |-------------|-----|-----------|-----------|
-
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Input) | SINT Adapter Input |
-
 | `AB_OUT` | `adapter::types::unidirectional::AB` | Plug (Output) | BYTE Adapter Output |
 
 ## Functionality

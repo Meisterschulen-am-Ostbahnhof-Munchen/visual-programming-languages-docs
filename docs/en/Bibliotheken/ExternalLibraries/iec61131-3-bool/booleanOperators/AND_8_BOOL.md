@@ -31,17 +31,11 @@ This function block has no adapter interfaces.
 The operation is deterministic and follows classical Boolean logic. When triggered by the event `REQ`, the block evaluates the states of all eight inputs (`IN1` to `IN8`). The logical operation is performed according to the following truth table:
 
 | IN1 | IN2 | IN3 | IN4 | IN5 | IN6 | IN7 | IN8 | OUT |
-
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-
 | 0 | X | X | X | X | X | X | X | 0 |
-
 | 1 | 0 | X | X | X | X | X | X | 0 |
-
 | 1 | 1 | 0 | X | X | X | X | X | 0 |
-
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
-
 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 
 *(X = Don't-Care / Any Value)*

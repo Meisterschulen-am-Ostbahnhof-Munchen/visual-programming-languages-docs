@@ -8,41 +8,31 @@ The **AR2_X_TO_REAL** function block is a composite module that acts as a bridge
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `REQ` | Starts data transfer to the adapter. The data value `OUT` is sent. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Acknowledges the adapter's response. The converted value is stored as `IN`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `OUT` | REAL | Data value passed to the adapter. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `IN` | REAL | Converted value returned by the adapter. |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-----------|------------------------------------------|----------|-------------|
-
 | `AR2_IN` | `adapter::types::bidirectional::AR2` | Socket | Bidirectional adapter for AR2 communication and conversion. |
 
 ## Functionality

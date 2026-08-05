@@ -8,25 +8,19 @@ The function block **AIS_DEMUX_3** is a generic demultiplexer for AIS adapter da
 ### **Event Inputs**
 
 | Event | Data Type | Description |
-
 |----------|----------|--------------|
-
 | REQ | Event | Starts the forwarding process. The current value of socket `IN` is sent to the output adapter specified by `K`. Input `K` is read simultaneously with this event. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Description |
-
 |----------|----------|--------------|
-
 | CNF | Event | Confirms the successful execution of the demultiplex operation. |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Description |
-
 |----------|----------|--------------|
-
 | K | UINT | Index of the desired output (1, 2, or 3). Values outside this range are ignored or result in no output (depending on the implementation). |
 
 ### **Data Outputs**
@@ -36,15 +30,10 @@ No data outputs are available. Output is exclusively via the adapter outputs.
 ### **Adapters**
 
 | Type | Direction | Identifier | Description |
-
 |-----|----------|-------------|--------------|
-
 | Socket (Input) | input | IN | Receives the AIS value to be demultiplexed. Type: `adapter::types::unidirectional::AIS`. |
-
 | Plug (Output) | output | OUT1 | First possible output for the demultiplexed AIS value. |
-
 | Plug (Output) | output | OUT2 | Second possible output. |
-
 | Plug (Output) | output | OUT3 | Third possible output. |
 
 ## Functionality

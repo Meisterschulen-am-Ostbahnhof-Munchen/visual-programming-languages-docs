@@ -8,25 +8,19 @@ The function block `ALR_DEMUX_3` is a generic demultiplexer for ALR adapter inte
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `REQ` | Event | Set the index `K` and trigger the forwarding |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of successful switching/forwarding |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index of the target output (1..3) |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ The function block `ALR_DEMUX_3` is a generic demultiplexer for ALR adapter inte
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | `IN` | ALR (unidirectional) | Socket | Input adapter (data source) |
-
 | `OUT1` | ALR (unidirectional) | Plug | First output channel |
-
 | `OUT2` | ALR (unidirectional) | Plug | Second output channel |
-
 | `OUT3` | ALR (unidirectional) | Plug | Third output channel |
 
 ## Functionality

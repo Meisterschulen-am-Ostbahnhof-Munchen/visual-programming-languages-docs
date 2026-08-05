@@ -27,11 +27,8 @@ Data outputs are provided via the **`AS_OUT`** plug adapter:
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-----------|-------------------------------------------|----------|----------------------------------|
-
 | `AUDI_IN` | `adapter::types::unidirectional::AUDI` | Socket | Input adapter (UDINT) |
-
 | `AS_OUT` | `adapter::types::unidirectional::AS` | Plug | Output adapter (SINT) |
 
 ## Functionality

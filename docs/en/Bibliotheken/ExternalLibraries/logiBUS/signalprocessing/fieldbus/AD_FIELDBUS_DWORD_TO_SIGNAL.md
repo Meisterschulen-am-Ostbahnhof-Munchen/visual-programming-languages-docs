@@ -9,49 +9,35 @@ The function block `AD_FIELDBUS_DWORD_TO_SIGNAL` is used to forward an incoming 
 The function block has only adapter interfaces; there are no separate event or data ports at the top level. The following adapters define the inputs and outputs:
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AD` | Socket (Input) | Input data word and associated event |
-
 | `OUT` | `adapter::types::unidirectional::AD` | Plug (Output) | Filtered output data word (DWORD) |
-
 | `VALID` | `adapter::types::unidirectional::AX` | Plug (Output) | Validation signal (BOOL) of the current data word |
 
 ### **Event Inputs** (via adapter `IN`)
 
 | Port | Description |
-
 |------|--------------|
-
 | `E1` | Event to start processing a new data word |
 
 ### **Event Outputs** (via adapters `OUT` and `VALID`)
 
 | Adapter | Port | Description |
-
 |---------|------|--------------|
-
 | `OUT` | `E1` | Signals that the filtered data word is present at the output |
-
 | `VALID` | `E1` | Signals that the validity status (TRUE/FALSE) has been updated |
 
 ### **Data Inputs** (via adapter `IN`)
 
 | Port | Type (assumed) | Description |
-
 |------|------------------|--------------|
-
 | `D1` | `DWORD` | The data word to be processed |
 
 ### **Data Outputs** (via adapters `OUT` and `VALID`)
 
 | Adapter | Port | Type (assumed) | Description |
-
 |---------|------|------------------|--------------|
-
 | `OUT` | `D1` | `DWORD` | The filtered – possibly identical – data word |
-
 | `VALID` | `D1` | `BOOL` | `TRUE` if the attached data word is considered valid, otherwise `FALSE` |
 
 ### **Adapters**
@@ -95,11 +81,8 @@ In other words: The function block *mirrors* the input DWORD to the output, prov
 The function block (FB) does not have an explicit state machine, but operates purely on data flow. The internal flip-flop `E_D_FF` has two internal states:
 
 | State | Description |
-
 |---------|---------------|
-
 | `Q = FALSE` | The currently transmitted `VALID` signal is `FALSE` (data word is considered invalid) |
-
 | `Q = TRUE` | The currently transmitted `VALID` signal is `TRUE` (data word is considered valid) |
 
 The state changes only on a rising edge at `CLK` (corresponds to the `CNF` event of the internal fieldbus module).

@@ -11,43 +11,32 @@ The **AUI_TO_AB** function block is a composite block that converts an AUI inter
 ### **Event Inputs**
 
 | Name | Description | Data Type |
-
 |------|---------------|----------|
-
 | `AUI_IN.E1` | Event via the AUI adapter (socket) that triggers the conversion. | Event |
 
 ### **Event Outputs**
 
 | Name | Description | Data Type |
-
 |------|--------------|----------|
-
 | `AB_OUT.E1` | Event via the AB adapter (plug) that is sent after successful conversion. | Event |
 
 ### **Data Inputs**
 
 | Name | Description | Data Type |
-
 |------|--------------|----------|
-
 | `AUI_IN.D1` | UINT value that is received and converted via the AUI adapter. | UINT |
 
 ### **Data Outputs**
 
 | Name | Description | Data Type |
-
 |------|--------------|----------|
-
 | `AB_OUT.D1` | Converted BYTE value output via the AB adapter. | BYTE |
 
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | `adapter::types::unidirectional::AUI` | `AUI_IN` | Socket | UINT adapter input |
-
 | `adapter::types::unidirectional::AB` | `AB_OUT` | Plug | BYTE Adapter Output |
 
 ## Functionality

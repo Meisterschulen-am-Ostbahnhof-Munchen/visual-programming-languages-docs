@@ -9,43 +9,32 @@ The function block `BasicOne_AX` is a basic IEC 61499 block of type *Basic Funct
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|----------------|------------|
-
 | `INIT` | `EInit` | `QI` | Initialization Request |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|---------------|-----------|
-
 | `INITO` | `EInit` | `QO` | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `QI` | `BOOL` | Input Qualifier (Turns initialization on/off) |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `QO` | `BOOL` | Output Qualifier (Reflects the initialization state) |
 
 #### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (Output) | `DO1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for data transmission (AX interface) |
-
 Socket (input) | `DI1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for receiving data (AX interface) |
 
 ## Functionality
@@ -72,17 +61,11 @@ In summary, the function block operates as a *triggered passthrough*: The adapte
 The ECC (Execution Control Chart) of the module comprises five states:
 
 | State | Description |
-
 |---------|--------------|
-
 | `START` | Waiting for the first `INIT` event with `QI=TRUE`. |
-
 | `Init` | Executes initialization algorithm, sets `QO=QI`, and sends `INITO`. |
-
 | `Initialized` | Idle state after successful initialization; waits for `DI1.E1` or another `INIT` (with `QI=FALSE`). |
-
 | `NormalOp` | Performs passthrough (copies `DI1.D1` to `DO1.D1` if `QI=TRUE` is present). |
-
 | `DeInit` | Performs deinitialization (sets `QO` and `DO1.D1` to `FALSE`), sends `INITO`. |
 
 ## Application Scenarios

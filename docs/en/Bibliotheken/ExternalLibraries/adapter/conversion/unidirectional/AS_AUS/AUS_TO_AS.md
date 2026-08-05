@@ -22,11 +22,8 @@ No directly visible data outputs. The data is output via the plug adapter `AS_OU
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |----------|-----------------------------------------------|----------|------------------------------|
-
 | `AUS_IN` | `adapter::types::unidirectional::AUS` (Socket) | Input | USINT Adapter Input |
-
 | `AS_OUT` | `adapter::types::unidirectional::AS` (Plug) | Output | SINT Adapter Output |
 
 The interface of the adapters themselves contains:

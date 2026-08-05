@@ -15,11 +15,8 @@ There are no direct event outputs here either. The output adapter **OUT** provid
 Data is read in via the two socket adapters:
 
 | Adapter | Type | Description |
-
 |---------|-----|---------------|
-
 | `WORD_00` | `adapter::types::unidirectional::AW` | First 16-bit word (lower-order part of the double word) |
-
 WORD_01` | `adapter::types::unidirectional::AW` | Second 16-bit word (higher-order part of the double word) |
 
 Each of these adapters provides a data output (`D1`) containing the actual WORD value.
@@ -28,9 +25,7 @@ Each of these adapters provides a data output (`D1`) containing the actual WORD 
 The output is via a plug adapter:
 
 | Adapter | Type | Description |
-
 |---------|-----|---------------|
-
 OUT` | `adapter::types::unidirectional::AD` | Composite 32-bit Double Word (DWORD) |
 
 The adapter `OUT` has one data input (`D1`) that is internally connected to the stored result.
@@ -64,13 +59,9 @@ The function block provides two incoming adapters (sockets) and one outgoing ada
 The function block itself does not have an explicit state machine. However, its internal process can be characterized by the states of the D flip-flop:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Waiting for Event** | The flip-flop holds the last calculated value; no new input event is pending. |
-
 | **Calculation Active** | An event from WORD_00 or WORD_01 triggers the merge, and the flip-flop is clocked. |
-
 | **Output Active** | After the clock cycle, the new value is passed to `OUT`, and the output event is sent. |
 
 The state transitions occur strictly according to the event chain.

@@ -9,25 +9,19 @@ The function block `AUI_D_FF_HYS` implements a data latch (D flip-flop) with a h
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-------|--------------------------|
-
 | INIT | EInit | Sets the hysteresis width |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-------|--------------------------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Data | Type | Comment |
-
 |--------------|------|----------------------------------|
-
 | HYSTERESIS | UINT | Hysteresis Band Width |
 
 ### **Data Outputs**
@@ -37,10 +31,8 @@ No dedicated data outputs; the latched value is provided via the `Q` adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|--------------------------------------|----------|--------------------------|
 | I | adapter::types::unidirectional::AUI | Socket | Latch Value |
-
 | Q | adapter::types::unidirectional::AUI | Plug | Latched Value |
 
 The adapters `I` and `Q` of type `AUI` (unidirectional) transport both data (e.g., `D1`) and associated events (e.g., `E1`).

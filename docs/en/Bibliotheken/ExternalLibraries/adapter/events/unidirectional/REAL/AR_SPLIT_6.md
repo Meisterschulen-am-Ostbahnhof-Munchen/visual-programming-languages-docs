@@ -25,21 +25,13 @@ No data outputs are available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|-------------|
-
 | `adapter::types::unidirectional::AR` | **IN** | Socket (Input) | An incoming AR adapter that is distributed to all outputs. |
-
 | `adapter::types::unidirectional::AR` | **OUT1** | Plug (Output) | First outgoing AR adapter (identical to IN). |
-
 | `adapter::types::unidirectional::AR` | **OUT2** | Plug (Output) | Second outgoing AR adapter (identical to IN). |
-
 | `adapter::types::unidirectional::AR` | **OUT3** | Plug (Output) | Third outgoing AR adapter (identical to IN). |
-
 | `adapter::types::unidirectional::AR` | **OUT4** | Plug (Output) | Fourth outgoing AR adapter (identical to IN). |
-
 | `adapter::types::unidirectional::AR` | **OUT5** | Plug (Output) | Fifth outgoing AR adapter (identical to IN). |
-
 | `adapter::types::unidirectional::AR` | **OUT6** | Plug (Output) | Sixth outgoing AR adapter (identical to IN). |
 
 ## Functionality

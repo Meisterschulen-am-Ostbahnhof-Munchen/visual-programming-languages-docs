@@ -17,33 +17,23 @@ None
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | (none) | – | – |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | (none) | – | – |
 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AR` | **IN** | Socket (Input) | Incoming AR adapter signal, which is distributed to the four outputs. |
-
 | `adapter::types::unidirectional::AR` | **OUT1** | Plug (Output) | First outgoing AR channel. |
-
 | `adapter::types::unidirectional::AR` | **OUT2** | Plug (Output) | Second outgoing AR channel. |
-
 | `adapter::types::unidirectional::AR` | **OUT3** | Plug (Output) | Third outgoing AR channel. |
-
 | `adapter::types::unidirectional::AR` | **OUT4** | Plug (Output) | Fourth outgoing AR channel. |
 
 ## Functionality

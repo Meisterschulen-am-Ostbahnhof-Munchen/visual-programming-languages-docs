@@ -28,19 +28,12 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 ## Coupling parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-
 |-----------|------|--------------|-----|------------|------------|
-
 | `REAR_HITCH_POSITION` | USINT | Coupling position | 1873 | 8 | 0.4 %/bit |
-
 | `REAR_HITCH_WORK_INDICATION` | BYTE | Operating State | 1877 | 2 | 4 states/2 bits |
-
 REAR_HITCH_POS_LIMIT_STATUS` | BYTE | Position Limitation | 5151 | 3 | 8 states/3 bits |
-
 REAR_HITCH_NOMINAL_LOWER_LINK_FORCE` | USINT | Lower Link Force | 1881 | 8 | 0.8%/bit (-100% Offset) |
-
 REAR_HITCH_DRAFT` | UINT | Tensile Force | 1879 | 16 | 10 N/bit (-320kN Offset) |
-
 REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6 bits |
 
 ## Functionality
@@ -73,29 +66,19 @@ REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6
 ## Coupling characteristics
 
 | Feature | Description |
-
 |---------|--------------|
-
 | Position range | 0-100% (0 = fully down) |
-
 | Force measurement | ±100% of rated load |
-
 | Tensile force range | -320kN to +350kN |
-
 | Update rate | 100ms in normal operation |
 
 ## Return codes (REAR_HITCH_EXIT_REASON_CODE)
 
 | Code range | Meaning |
-
 |------------|-----------|
-
 | 0-15 | System error |
-
 | 16-31 | Position Error |
-
 | 32-47 | Force Measurement Error |
-
 | 48-63 | Reserved |
 
 ## Application Scenarios
@@ -107,15 +90,10 @@ REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6
 ## ⚖️ Comparison with Similar Components
 
 | Feature | I_RHS | Standard | Premium |
-
 |---------|-------|----------|---------|
-
 | Accuracy | ±0.4% | ±2% | ±0.2% |
-
 | Force Measurement | Bidirectional | Traction Only | Triaxial |
-
 | Diagnostic Codes | 64 | 8 | 128 |
-
 | ISO Compliance | Full | Partial | Full |
 
 ## 🛠️ Related Exercises

@@ -11,19 +11,14 @@ The function block has no direct event or data inputs/outputs, but communicates 
 ### **Adapter (Plugs – Output)**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | OUT | `adapter::types::unidirectional::AW` | Plug | WORD output (16-bit) |
 
 ### **Adapter (Sockets – Inputs)**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (low-order byte) |
-
 | BYTE_01 | `adapter::types::unidirectional::AB` | Socket | Byte 1 (higher-order byte) |
 
 **Note:** Adapters of type `AB` and `AW` are unidirectional. Each adapter contains the signals `E1` (socket/plug event output – internally connected) and `D1` (data signal).

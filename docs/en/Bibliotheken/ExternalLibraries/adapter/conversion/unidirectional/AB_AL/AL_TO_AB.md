@@ -8,17 +8,13 @@ The function block **AL_TO_AB** is a composite function block that enables unidi
 ### **Adapter (Input)**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | AL_IN | `adapter::types::unidirectional::AL` | LWORD adapter socket. This adapter receives the LWORD data to be converted. By default, the adapter provides an event output `E1` and a data output `D1` (data type LWORD). |
 
 ### **Adapter (Output)**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | AB_OUT | `adapter::types::unidirectional::AB` | BYTE adapter plug. This adapter outputs the converted BYTE data. The adapter has an event input `E1` and a data input `D1` (data type BYTE). |
 
 **Note:** The function block (FB) has no separate event or data inputs/outputs; all communication takes place via the two adapter interfaces.
@@ -53,13 +49,9 @@ The function block does not have its own state machine. The entire process contr
 ## Comparison with Similar Components
 
 | Component | Function | Difference |
-
 |----------|----------|-------------|
-
 | `LWORD_TO_BYTE` | Pure data type conversion without adapters | No adapter interface; direct data and event ports |
-
 AB_TO_AL` | Reverse conversion (BYTE → LWORD) | Opposite direction; also composite with adapters |
-
 WORD_TO_BYTE` | Conversion from WORD (16-bit) to BYTE | Different data type; similar structure, but different adapter types |
 
 The **AL_TO_AB** is specifically designed for use with the unidirectional adapters `AL` and `AB` and offers clean, reusable encapsulation.

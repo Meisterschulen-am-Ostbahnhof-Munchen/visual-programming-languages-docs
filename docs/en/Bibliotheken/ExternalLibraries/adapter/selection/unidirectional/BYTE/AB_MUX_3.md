@@ -8,25 +8,19 @@ The function block `AB_MUX_3` is a generic multiplexer for adapters of type `ada
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|--------------------------|
-
 | `REQ` | Event | Set Index K (with Var `K`)|
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|----------------------------------|
-
 | `CNF` | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|--------------|
-
 | `K` | UINT | Index (0-2) |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ None.
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|--------------------------------------|-------------------------------|
-
 | `OUT`| Plug | `adapter::types::unidirectional::AB` | Output – connects the selected input |
-
 | `IN1`| Socket | `adapter::types::unidirectional::AB` | Input value 1 (when K=0) |
-
 | `IN2`| Socket | `adapter::types::unidirectional::AB` | Input value 2 (when K=1) |
-
 | `IN3` | Socket | `adapter::types::unidirectional::AB` | Input value 3 (when K=2) |
 
 ## Functionality

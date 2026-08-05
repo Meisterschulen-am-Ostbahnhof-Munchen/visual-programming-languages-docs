@@ -37,15 +37,10 @@ The operation is event-driven and follows a simple request-acknowledgment cycle:
 The truth table of the operation is:
 
 | IN1 | IN2 | OUT (IN1 OR IN2) |
-
 |:---:|:---:|:----------------:|
-
 | 0 | 0 | 0 |
-
 | 0 | 1 | 1 |
-
 | 1 | 0 | 1 |
-
 | 1 | 1 | 1 |
 
 ## Technical Features

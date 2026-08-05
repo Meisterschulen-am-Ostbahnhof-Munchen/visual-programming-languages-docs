@@ -10,13 +10,9 @@ The attribute declaration `TypeHash` defines a fixed type hash for function bloc
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | License | EPL-2.0 |
-
 | Version | 1.0 (2025-06-05, Martin Erich Jobst) |
-
 | 4diac Package | eclipse4diac::core |
 
 ---

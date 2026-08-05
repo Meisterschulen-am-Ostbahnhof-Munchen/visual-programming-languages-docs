@@ -8,36 +8,27 @@ The function block `F_NOT_BOOL_INIT` implements the logical negation (NOT) of a 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-------|----------------|---------------|
 | `INIT` | EInit | `IN` | Initialization request – the function block is initialized once and the input is negated. |
-
 | `REQ` | Event | `IN` | Normal processing request – the logical negation is applied to the current input value. |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-------|---------------|--------------|
-
 | `INITO` | EInit | `OUT` | Initialization confirmation – output after successful initialization. |
-
 | `CNF` | Event | `OUT` | Confirmation of normal processing – sent to `REQ` after each execution. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|--------|--------------|
-
 | `IN` | BOOL | Input value to be negated. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|--------|--------------|
-
 | `OUT` | BOOL | Negated value of the input (`NOT IN`). |
 
 ### **Adapter**
@@ -82,11 +73,8 @@ A repeated triggering of `INIT` (e.g., after a reset) leads to re-initialization
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference to `F_NOT_BOOL_INIT` |
-
 --------------------|-----------------------------------------------|----------------------------------|
-
 | `F_NOT` (Standard) | Pure negation without an initialization event. | The `INIT`/`INITO` pair is missing; the output is undefined after system startup. |
-
 | `F_NOT_BOOL_INIT` | Like `F_NOT`, but with an explicit initialization event. | Offers defined start behavior and outputs a separate acknowledgment event upon initialization. |
 
 The standard `F_NOT` is sufficient if the start behavior is controlled by the higher-level control sequence. The initializable function block is advantageous when the function block itself should have control over its first execution.

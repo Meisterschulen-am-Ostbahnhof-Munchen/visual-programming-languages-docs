@@ -22,9 +22,7 @@ None
 
 | Type | Name | Direction | Description |
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AL` | `IN` | Socket (Input) | Incoming AL signal |
-
 | `adapter::types::unidirectional::AL` | `OUT1` … `OUT8` | Plugs (Output) | Eight outgoing AL signals |
 
 ## Functionality

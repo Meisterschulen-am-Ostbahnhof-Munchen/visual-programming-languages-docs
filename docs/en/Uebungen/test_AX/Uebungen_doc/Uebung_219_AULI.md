@@ -98,21 +98,13 @@ As soon as the counter value reaches 0, the CTD block sets the output `Q` to TRU
 **Summary of Connections (Adapter and Event Connections):**
 
 | Source | Destination | Type |
-
 |--------|------|-----|
-
 | `Input_CD.IN` | `AULI_FB_CTD.CD` | Adapter |
-
 | `Input_LD.IN` | `AULI_FB_CTD.LD` | Adapter |
-
 | `AULI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter |
-
 | `AULI_FB_CTD.CV` | `AULI_TO_AUDI.AULI_IN` | Adapter |
-
 | `AULI_TO_AUDI.AUDI_OUT` | `Q_NumericValue_AUDI.u32NewValue` | Adapter |
-
 | `AULI_ULINT_TO_ULI.AULI_OUT` | `AULI_FB_CTD.PV` | Adapter |
-
 | `Input_LD.INITO` | `AULI_ULINT_TO_ULI.REQ` | Event |
 
 ## Summary

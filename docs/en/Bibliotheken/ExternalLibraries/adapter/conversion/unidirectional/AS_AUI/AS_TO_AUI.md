@@ -9,43 +9,32 @@ The function block `AS_TO_AUI` is a composite function block (FB) that converts 
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `E1` (via `AS_IN`) | EVENT | Starts the conversion of the incoming SINT value. |
 
 ### **Event Outputs**
 
 | Name | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `E1` (via `AUI_OUT`) | EVENT | Confirms the completion of the conversion and output of the UINT value. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `D1` (via `AS_IN`) | SINT | The signed 8-bit value to be converted. |
 
 ### **Data Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `D1` (via `AUI_OUT`) | UINT | The converted unsigned 16-bit value. |
 
 ### **Adapters**
 
 | Label | Type | Direction | Description |
-
 |-------------|-----|----------|--------------|
-
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Input) | Provides the SINT value and the triggering event. |
-
 | `AUI_OUT` | `adapter::types::unidirectional::AUI` | Plug (Output) | Outputs the converted UINT value and the acknowledgment event. |
 
 ## Functionality

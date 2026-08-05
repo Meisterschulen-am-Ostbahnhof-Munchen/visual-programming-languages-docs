@@ -8,17 +8,13 @@ The **GET_BOOL** function block reads a BOOL value from a variable declared as `
 ### **Event Inputs**
 
 | Event | Description | With Variables |
-
 |----------|---------------|---------------|
-
 | REQ | Normal Execution Request | IN |
 
 ### **Event Outputs**
 
 | Event | Description | With Variables |
-
 |----------|--------------|---------------|
-
 | CNF | Execution Confirmation | OUT, IN |
 
 ### **Data Inputs**
@@ -27,9 +23,7 @@ There are no declared data inputs (*InputVars*). Access to the source variable i
 ### **Data Outputs**
 
 | Variable | Type | Initial Value | Description |
-
 |----------|-------|-------------|-----------------------------|
-
 | OUT | BOOL | FALSE | Buffered Output Value |
 
 ### **Adapters**
@@ -56,9 +50,7 @@ The output `OUT` remains at the last read value until a new pulse `REQ` updates 
 The function block has a single state:
 
 | State | Action | Output Event |
-
 |---------|--------|-----------------|
-
 | REQ | `OUT := IN` | CNF |
 
 After the algorithm is executed, the initial state is immediately exited (no hold state). The function block is therefore event-driven and waits for the next request after processing.
@@ -71,15 +63,10 @@ After the algorithm is executed, the initial state is immediately exited (no hol
 ## Comparison with Similar Function Blocks
 
 | Function Block | Purpose | Data Type |
-
 |----------|-------|----------|
-
 | GET_BOOL | Read a BOOL value via InOut | BOOL |
-
 | GET_INT | Read an INT value via InOut | INT |
-
 | GET_REAL | Read a REAL value via InOut | REAL |
-
 | SET_BOOL | Write a BOOL value via InOut (write) | BOOL |
 
 All `GET_*` function blocks share the use of an InOut parameter and event-driven value transfer. The only difference lies in the data type used. Unlike `SET_BOOL`, `GET_BOOL` does not modify the source variable.

@@ -8,25 +8,19 @@ The function block **AB_MUX_5** implements a generic multiplexer for adapter int
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | REQ | Sets the index K and activates the forwarding to the corresponding input connection |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | CNF | Confirmation of successful index setting and output update |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|------|-----------|
-
 | K | UINT | Index of the input to be selected (0 = IN1, 1 = IN2, …, 4 = IN5) |
 
 ### **Data Outputs**
@@ -36,17 +30,11 @@ The function block **AB_MUX_5** implements a generic multiplexer for adapter int
 ### **Adapter**
 
 | Direction | Adapter | Type | Comment |
-
 | Plug | OUT | adapter::types::unidirectional::AB | Output adapter that provides the values of the selected input |
-
 | Socket | IN1 | adapter::types::unidirectional::AB | First input (Index 0) |
-
 | Socket | IN2 | adapter::types::unidirectional::AB | Second input (Index 1) |
-
 | Socket | IN3 | adapter::types::unidirectional::AB | Third input (Index 2) |
-
 | Socket | IN4 | adapter::types::unidirectional::AB | Fourth input (Index 3) |
-
 | Socket | IN5 | adapter::types::unidirectional::AB | Fifth input (Index 4) |
 
 ## Functionality
@@ -80,15 +68,10 @@ This makes the function block deterministic and allows it to operate without del
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Selection Mechanism | Differences |
-
 -----------------|-----------------|---------------------|--------------|
-
 | AB_MUX_5 | 5 | Index K (UINT) | This function block; pure adapter multiplexer |
-
 | AB_MUX_2 | 2 | Index K (BOOL) | Fewer inputs, simpler selection |
-
 | MUX (Data Type) | 2, 4, 8 … | Index (UINT) | Often designed for elementary data types (INT, REAL), not for adapters |
-
 | SELECT | 2 | G (BOOL) | Standard function block according to IEC 61499 for binary selection of data |
 
 The AB_MUX_5 is specifically optimized for adapter connections and offers a clear separation of event control and data path.

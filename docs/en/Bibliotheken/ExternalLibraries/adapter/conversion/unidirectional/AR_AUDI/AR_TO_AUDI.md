@@ -11,9 +11,7 @@ The function block has no dedicated event or data inputs/outputs. All communicat
 ## **Adapter (Socket – Input)**
 
 | Name | Type | Comment |
-
 |---|---|---|
-
 | `AR_IN` | `adapter::types::unidirectional::AR` | Unidirectional REAL adapter as input |
 
 The adapter `AR_IN` provides an event `E1` and a data input `D1` of type `REAL`.
@@ -21,9 +19,7 @@ The adapter `AR_IN` provides an event `E1` and a data input `D1` of type `REAL`.
 ### **Adapter (Plug – Output)**
 
 | Name | Type | Comment |
-
 |---|---|---|
-
 | `AUDI_OUT` | `adapter::types::unidirectional::AUDI` | Unidirectional UDINT adapter as output |
 
 The adapter `AUDI_OUT` expects an event `E1` and a data output `D1` of type `UDINT`.

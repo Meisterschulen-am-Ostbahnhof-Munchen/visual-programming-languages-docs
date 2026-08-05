@@ -25,13 +25,9 @@ None.
 ### **Adapter**
 
 | Role | Name | Type | Description |
-
 |-------|------|-----|--------------|
-
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AE` | Receives a unidirectional event, which is distributed to both outputs. |
-
 | Plug (Output 1) | `OUT1` | `adapter::types::unidirectional::AE` | First output for the duplicated event. |
-
 | Plug (Output 2) | `OUT2` | `adapter::types::unidirectional::AE` | Second output for the duplicated event. |
 
 ## Functionality

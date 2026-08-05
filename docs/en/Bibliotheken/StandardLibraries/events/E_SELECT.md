@@ -60,13 +60,9 @@ The **E_SELECT** is a basic function block according to IEC 61499 (Annex A) that
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_SELECT | E_SWITCH | E_MERGE |
-
 |---------------|----------|----------|----------|
-
 | Selection Criterion | Boolean (`G`) | Boolean (`G`) | None |
-
 | Direction | 2:1 (Multiplexer) | 1:2 (Demultiplexer) | n:1 (OR Gate) |
-
 | State Model | BasicFB | BasicFB | BasicFB/Generic |
 
 ## 🛠️ Related Exercises

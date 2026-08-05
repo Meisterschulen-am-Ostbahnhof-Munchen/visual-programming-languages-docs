@@ -21,11 +21,8 @@ The function block `AW_SPLIT_7` is used to distribute a single incoming AW adapt
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|-----------|--------------|
-
 | `adapter::types::unidirectional::AW` | IN | Socket (Input) | Incoming AW adapter, which is distributed to the outputs. |
-
 | `adapter::types::unidirectional::AW` | OUT1 … OUT7 | Plug (Output) | Seven outgoing adapters, each providing the same data as the input. |
 
 ## Functionality

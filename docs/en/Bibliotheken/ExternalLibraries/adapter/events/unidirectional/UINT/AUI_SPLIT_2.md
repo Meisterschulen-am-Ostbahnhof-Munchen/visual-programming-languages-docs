@@ -20,13 +20,9 @@ No direct data outputs available. Data is transmitted exclusively via the adapte
 ### **Adapters**
 
 | Name | Type | Direction / Role |
-
 |------|-----|------------------|
-
 | `IN` | `adapter::types::unidirectional::AUI` | Socket (Input) |
-
 | `OUT1` | `adapter::types::unidirectional::AUI` | Plug (Output 1) |
-
 | `OUT2` | `adapter::types::unidirectional::AUI` | Plug (Output 2) |
 
 All three adapters are of type **AUI** and operate unidirectionally. Socket `IN` receives data, and plugs `OUT1` and `OUT2` forward the same data.

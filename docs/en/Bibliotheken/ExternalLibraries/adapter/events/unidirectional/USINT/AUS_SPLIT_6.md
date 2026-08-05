@@ -21,21 +21,13 @@ The function block **OFF_SPLIT_6** is a generic block that distributes an incomi
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AUS` | **IN** | Socket | Incoming output signal distributed to all outputs. |
-
 | `adapter::types::unidirectional::AUS` | **OUT1** | Plug | First output – identical to **IN**. |
-
 | `adapter::types::unidirectional::AUS` | **OUT2** | Plug | Second output – identical to **IN**. |
-
 | `adapter::types::unidirectional::AUS` | **OUT3** | Plug | Third output – identical to **IN**. |
-
 | `adapter::types::unidirectional::AUS` | **OUT4** | Plug | Fourth output – identical to **IN**. |
-
 | `adapter::types::unidirectional::AUS** | **OUT5** | Plug | Fifth output – identical to **IN**. |
-
 | `adapter::types::unidirectional::AUS` | **OUT6** | Plug | Sixth output – identical to **IN**. |
 
 *Note: The adapter type "AUS" is a unidirectional adapter that transmits a signal (event + data, if applicable) in one direction.*

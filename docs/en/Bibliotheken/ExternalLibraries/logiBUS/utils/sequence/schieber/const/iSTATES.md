@@ -31,17 +31,11 @@ None.
 The **iSTATES** function block provides five symbolic constants that can be used throughout the application. Each constant represents a discrete state of a slider or similar actuator. The values are defined as `USINT` (unsigned short integer) and are assigned as follows:
 
 | Constant | Value (USINT) | Meaning |
-
 |------------|---------------|------------------|
-
 | Unknown | 0 | Unknown state |
-
 | Closed | 1 | Closed |
-
 | Opening | 2 | Opens |
-
 | Opened | 3 | Opened |
-
 | Closing | 4 | Closes |
 
 These values can be used directly in FB networks for initializing variables or for comparison with status feedback.

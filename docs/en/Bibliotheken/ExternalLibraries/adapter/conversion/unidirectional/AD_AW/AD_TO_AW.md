@@ -23,11 +23,8 @@ The block has no direct input/output events or data ports. All signals are route
 ### **Adapters**
 
 | Role | Name | Type | Direction | Comment |
-
 |-------|-------|-----|----------|-----------|
-
 | Socket | AD_IN | `adapter::types::unidirectional::AD` | Input (DWORD) | Returns DWORD data and event. |
-
 | Plug | AW_OUT| `adapter::types::unidirectional::AW` | Output (WORD) | Provides WORD data and event. |
 
 Both adapters are of type *unidirectional*, i.e., Communication is unidirectional.

@@ -5,11 +5,8 @@ Double Integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 32 |
-
 | **Value Range** | -2,147,483,648 to 2,147,483,647 |
-
 | **Reference** | Table 10, No. 4 |
 
 ## Use in Programming

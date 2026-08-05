@@ -8,25 +8,19 @@ The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Signals a new index request. Evaluated with the data input **K**. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that the selected input has been switched to the output. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0, 1, 2) for selecting the active input. |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input 
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |------|----------|-----|-----------|
-
 | OUT | Plug | adapter::types::unidirectional::ADI | Output signal; IN1 corresponds to K=0, IN2 to K=1, and IN3 to K=2. |
-
 | IN1 | Socket | adapter::types::unidirectional::ADI | First input value (K=0). |
-
 | IN2 | Socket | adapter::types::unidirectional::ADI | Second input value (K=1). |
-
 | IN3 | Socket | adapter::types::unidirectional::ADI | Third input value (K=2). |
 
 ## Functionality
@@ -73,12 +62,9 @@ This sequence repeats with each new **REQ** event.
 ## Comparison with Similar Components
 
 | Component | Number of Inputs | Special Feature |
-
 |----------|-----------------|--------------|
 | ADI_MUX_2 | 2 | Simpler 2-to-1 multiplexer function. |
-
 | ADI_MUX_3 | 3 | The function block described here. |
-
 | ADI_MUX_4 | 4 | Extended version with four inputs. |
 
 Compared to a generic `MUX` function block (with standard data types), the adapter variant offers a clearer interface definition and facilitates the reuse of signal configurations.

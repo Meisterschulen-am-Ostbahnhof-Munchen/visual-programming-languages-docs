@@ -9,43 +9,30 @@ The function block **FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used to convert a raw 
 ### **Event Inputs**
 
 | Event | Type | Description | With Variables |
-
 |----------|-----|--------------|---------------|
-
 **INIT** | EInit | Initialization Request | SCALE, OFFSET |
-
 **REQ** | Event | Normal Execution Request | IN |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Variables |
-
 |----------|-----|---------------|---------------|
-
 **INITO** | EInit | Initialization Acknowledgement | – |
-
 **CNF** | Event | Execution Acknowledgement | OUT, VALID |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-
 |----------|-----|-------------|--------------|
-
 **IN** | ULINT | `LWORD_TO_ULINT(NOT_AVAILABLE_LWM)` | Raw value from the fieldbus |
-
 **SCALE** | LREAL | `1.0` | Scaling factor |
-
 **OFFSET** | DINT | `0` | Offset added after scaling |
 
 ### **Data Outputs**
 
 | Variable | Type | Initial value | Description |
-
 |----------|-----|--------------|--------------|
-
 **OUT** | LREAL | `0.0` | Scaled output value (valid only if VALID = TRUE) |
-
 | **VALID** | BOOL | `FALSE` | Validation signal: TRUE if IN ≤ `VALID_SIGNAL_LW`, otherwise FALSE |
 
 ### **Adapters**
@@ -93,11 +80,8 @@ The constants `NOT_AVAILABLE_LWM` and `VALID_SIGNAL_LW` are taken from the impor
 ## State Overview
 
 | State | Description | Trigger | Output Event |
-
 |---------|--------------|----------|-----------------|
-
 | **INIT** | Initialization (no action) | INIT | INITO |
-
 | **REQ** | Input signal processing (scaling or error handling) | REQ | CNF |
 
 ## Application Scenarios

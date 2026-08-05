@@ -8,43 +8,32 @@ The function block `AD_TO_AUI` is a composite block that converts an AD adapter 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | (none of its own) | - | The function block does not have its own event inputs. Event control is handled via the adapter socket `AD_IN`. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | (none built-in) | - | The function block has no built-in event outputs. Event forwarding is handled via the adapter plug `AUI_OUT`. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | (none built-in) | - | All data is provided via the adapter socket `AD_IN`. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | (No custom) | - | All data is output via the adapter plug `AUI_OUT`. |
 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AD` | `AD_IN` | Socket (Input) | Accepts DWORD values and associated events. |
-
 | `adapter::types::unidirectional::AUI` | `AUI_OUT` | Plug (Output) | Outputs converted UINT values and associated events. |
 
 The adapter `AD_IN` provides an event `E1` and a data element `D1` (type DWORD).

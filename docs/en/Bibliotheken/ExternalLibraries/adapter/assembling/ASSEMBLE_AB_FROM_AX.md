@@ -22,25 +22,15 @@ None. All data is output via the adapter plug.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** (Input) | `BIT_00` | `adapter::types::unidirectional::AX` | Boolean value for bit 0 (least significant bit) |
-
 | | `BIT_01` | `adapter::types::unidirectional::AX` | Boolean value for bit 1 |
-
 | | `BIT_02` | `adapter::types::unidirectional::AX` | Boolean value for bit 2 |
-
 | | `BIT_03` | `adapter::types::unidirectional::AX` | Boolean value for bit 3 |
-
 | | `BIT_04` | `adapter::types::unidirectional::AX` | Boolean value for bit 4 |
-
 | | `BIT_05` | `adapter::types::unidirectional::AX` | Boolean value for bit 5 |
-
 | | `BIT_06` | `adapter::types::unidirectional::AX` | Boolean value for bit 6 |
-
 | | `BIT_07` | `adapter::types::unidirectional::AX` | Boolean value for bit 7 (most significant bit) |
-
 | **Plug** (output) | `OUT` | `adapter::types::unidirectional::AB` | Composite byte (BYTE) |
 
 Each AX adapter provides the Boolean value via its data input `D1` and the corresponding event via its event input `E1`. The AB adapter provides the byte via its data output `D1` and the acknowledgment event via its event output `E1`.
@@ -80,13 +70,9 @@ The functional block does not have its own state machine; It is structured as a 
 ## Comparison with similar modules
 
 | Module | Description | Difference |
-
 |----------|--------------|-------------|
-
 | `ASSEMBLE_BYTE_FROM_BOOLS` | Internal block that generates a byte from 8 Boolean inputs (without adapters) | `ASSEMBLE_AB_FROM_AX` encapsulates this block and uses adapters for connectivity. |
-
 | `eclipse4diac::utils::assembling::ASSEMBLE_BYTE_FROM_BOOLS` | Same function, but with direct event/data ports | `ASSEMBLE_AB_FROM_AX` provides an adapter-based interface and adds a D flip-flop for synchronization. |
-
 | Custom-built byte assembler | Can be implemented as desired, e.g., using the ST algorithm | Adapters `AX`/`AB` are predefined standard types in 4diac that promote reusability and interchangeability. |
 
 ## Conclusion

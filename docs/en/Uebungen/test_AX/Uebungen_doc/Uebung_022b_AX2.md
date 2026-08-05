@@ -97,19 +97,12 @@ The control follows a fixed sequence:
 The connections in detail:
 
 | From | To | Type |
-
 |-----|------|-----|
-
 | `SoftKey_UP_F1.IND` | `AX_SR_Ausfahren_Cyl_1.S` | Event |
-
 | `SoftKey_F2_DOWN.IND` | `AX_SR_Ausfahren_Cyl_1.R` | Event |
-
 | `SoftKey_F2_DOWN.IND` | `AX_SR_Ausfahren_Cyl_2.S` | Event |
-
 | `SoftKey_F3_DOWN.IND` | `AX_SR_Ausfahren_Cyl_2.R` | Event |
-
 | `AX_SR_Ausfahren_Cyl_1.Q` | `DigitalOutput_Q1.OUT` | Adapter |
-
 | `AX_SR_Ausfahren_Cyl_2.Q` | `DigitalOutput_Q2.OUT` | Adapter |
 
 **Simplified Flowchart:**

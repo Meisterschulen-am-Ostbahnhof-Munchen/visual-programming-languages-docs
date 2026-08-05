@@ -21,11 +21,8 @@ The FB has no direct data outputs at the top level. Data is output via the conne
 ### **Adapters**
 
 | Direction | Name | Adapter Type | Description |
-
 |----------|-------|-------------------------------|-------------------------------------------------|
-
 | Socket | AB_IN | `adapter::types::unidirectional::AB` | Input adapter for BYTE data (source adapter) |
-
 | Plug | AUI_OUT| `adapter::types::unidirectional::AUI` | Output adapter for UINT data (destination adapter) |
 
 **Note:** Adapters of type `AB` and `AUI` each have an event input (`E1`), an event output (`E1`), a data input (`D1` of type BYTE or UINT), and a data output (`D1` of type BYTE or UINT). See the corresponding adapter definitions for complete details.

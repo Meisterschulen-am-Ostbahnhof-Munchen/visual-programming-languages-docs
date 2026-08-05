@@ -8,25 +8,19 @@ The function block **ATM_MUX_5** serves as a universal multiplexer for five unid
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|--------------------------|
-
 | REQ | Event | Set Index K and execute |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|----------------------------------|
-
 | CNF | Event | Index switching confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------------|
-
 | K | UINT | Selection index (0..4) |
 
 ### **Data Outputs**
@@ -54,17 +48,11 @@ No data outputs are available. Output is exclusively via the adapter plugin `OUT
 ### **Data Inputs**
 
 ### **Data Output ... |----------|------|---------------------------------------|---------------------------------------------------------|
-
 | Plug | OUT | adapter::types::unidirectional::ATM | Output: for `K=0` = IN1, `K=1` = IN2, …, `K=4` = IN5 |
-
 | Socket | IN1 | adapter::types::unidirectional::ATM | Input 1 |
-
 | Socket | IN2 | adapter::types::unidirectional::ATM | Input 2 |
-
 | Socket | IN3 | adapter::types::unidirectional::ATM | Input 3 |
-
 | Socket | IN4 | adapter::types::unidirectional::ATM | Input 4 |
-
 | Socket | IN5 | adapter::types::unidirectional::ATM | Input 5 |
 
 ## Functionality

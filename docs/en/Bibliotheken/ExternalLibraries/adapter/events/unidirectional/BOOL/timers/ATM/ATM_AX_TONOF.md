@@ -9,9 +9,7 @@ The function block **ATM_AX_TONOF** implements a combined on/off delay timer. It
 ### Event Inputs
 
 | Name | Type | Description |
-
 |------|--------|--------------------------------------------------------------|
-
 | R | Event | Resets the timer. Both running delays are aborted, and output Q is immediately set to FALSE. |
 
 ### Event Outputs
@@ -29,15 +27,10 @@ There are also no dedicated connections for data outputs. The current output sta
 ### Adapters
 
 | Name | Direction | Type | Description |
-
 |--------|----------|------------------|------------------------------------------------------------------------------------------------------|
-
 | IN | Socket | AX (unidirectional) | Input adapter that triggers execution via its event E1 and provides the Boolean input value via its data D1. |
-
 | PT_ON | Socket | ATM (unidirectional) | Adapter for the power-on delay time (TIME). The value is provided via D1. |
-
 | PT_OFF | Socket | ATM (unidirectional) | Adapter for the power-off delay time (TIME). The value is provided via D1. |
-
 | Q | Plug | AX (unidirectional) | Output adapter. Event E1 signals the update of the output value; data D1 contains the Boolean state of Q (TRUE or FALSE). |
 
 ## Functionality

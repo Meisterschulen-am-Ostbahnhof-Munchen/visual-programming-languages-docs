@@ -11,23 +11,18 @@ The block is implemented as a generic function block (Generic FB) and can theref
 ### **Event Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `REQ` | Event | Sets the index `K` and triggers the demultiplexing action. |
 
 ### **Event Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `CNF` | Event | Confirmation of successful index setting and switching. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |--------|----------|-------------|-----------|
 | `K` | UINT | – | Index of the desired output (1..4). |
 
@@ -38,17 +33,11 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | `adapter::types::unidirectional::AUDI` | `IN` | Socket (Input) | Input signal that is passed to the selected output. |
-
 | `adapter::types::unidirectional::AUDI` | `OUT1` | Plug (Output) | First output (Index 1). |
-
 | `adapter::types::unidirectional::AUDI` | `OUT2` | Plug (Output) | Second Output (Index 2). |
-
 | `adapter::types::unidirectional::AUDI` | `OUT3` | Plug (Output) | Third Output (Index 3). |
-
 | `adapter::types::unidirectional::AUDI` | `OUT4` | Plug (Output) | Fourth Output (Index 4). |
 
 ## Functionality
@@ -73,11 +62,8 @@ Unused outputs remain unchanged (e.g., disconnected from the source). The index 
 The function block does not have a defined ECC (Execution Control Chart). Its behavior can be reduced to two phases:
 
 | Phase | Description |
-
 |-------|--------------|
-
 | **Waiting** | The function block (FB) is awaiting an event at `REQ`. |
-
 | **Processing** | Upon receiving `REQ`, the index is updated, the routing is revised, and `CNF` is sent. The FB then immediately returns to the wait state. |
 
 Parallel processing of multiple events is not supported; the FB is designed for strictly sequential operation.

@@ -72,13 +72,9 @@ The **F_MOD** is an arithmetic function block for calculating the remainder of a
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_MOD | F_DIV | F_REM |
-
 |----------------|--------|---------|---------|
-
 | Operation | Modulo | Division | Remainder |
-
 | Input types | ANY_INT| ANY_NUM | ANY_NUM |
-
 | Output type | ANY_NUM| ANY_NUM | ANY_NUM |
 
 ## Conclusion

@@ -8,25 +8,19 @@ The **AB_DEMUX_3** is a generic demultiplexer for the adapter type `unidirection
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Sets the index **K** and triggers demultiplexing. (Linked to **K**) |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms successful setting of index **K**. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Index of the target output (1 = OUT1, 2 = OUT2, 3 = OUT3). |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No data outputs available – output is handled via the adapter plugs.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |-----------|-----------------|-------------------------------|--------------|
-
 | **IN** | Socket (Input) | `adapter::types::unidirectional::AB` | Input value that is demultiplexed. |
-
 **OUT1** | Plug (Output) | `adapter::types::unidirectional::AB` | First output (index 1). |
-
 **OUT2** | Plug (Output) | `adapter::types::unidirectional::AB` | Second output (index 2). |
-
 **OUT3** | Plug (Output) | `adapter::types::unidirectional::AB` | Third output (index 3). |
 
 ## Functionality

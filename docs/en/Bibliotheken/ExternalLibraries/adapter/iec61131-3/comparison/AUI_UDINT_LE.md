@@ -8,9 +8,7 @@ The function block `AUI_UDINT_LE` performs a less-than-equal-to comparison betwe
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Service Request; triggers the comparison. The data value `IN2` is read at this time. |
 
 ### **Event Outputs**
@@ -20,9 +18,7 @@ This function block does not have direct event outputs. Result notification is p
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `IN2` | UDINT | Second input value for comparison. |
 
 ### **Data Outputs**
@@ -32,11 +28,8 @@ This function block does not have direct data outputs. The comparison result is 
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | `IN1` | AUI (adapter::types::unidirectional::AUI) | Socket | Input adapter for the first comparison value (UDINT). |
-
 | `OUT` | AX (adapter::types::unidirectional::AX) | Plug | Output adapter for the comparison result (BOOL). |
 
 ## Functionality

@@ -8,9 +8,7 @@ This is a structured data type (struct) and therefore has no event or adapter in
 Since it is a data type, these elements are used as input data within a higher-level function block.
 
 | Name | Data Type | Initial Value | Comment |
-
 |---|---|---|---|
-
 | `Pin` | `USINT` (Unsigned Short Integer) | 255 | Defines the number of the physical input pin on the logiBUS CAN module. |
 
 ### **Data Outputs**

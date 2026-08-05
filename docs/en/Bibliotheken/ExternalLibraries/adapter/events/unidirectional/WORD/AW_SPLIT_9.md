@@ -25,27 +25,16 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |------|------|----------|-------------|
-
 | `adapter::types::unidirectional::AW` | `IN` | Socket (Input) | Incoming AW adapter that is distributed to all outputs. |
-
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug (Output) | First outgoing AW adapter. |
-
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug (Output) | Second outgoing AW adapter. |
-
 | `adapter::types::unidirectional::AW` | `OUT3` | Plug (Output) | Third outgoing AW adapter. |
-
 adapter::types::unidirectional::AW` | `OUT4` | Plug (Output) | Fourth outgoing AW adapter. |
-
 adapter::types::unidirectional::AW` | `OUT5` | Plug (Output) | Fifth outgoing AW adapter. |
-
 adapter::types::unidirectional::AW` | `OUT6` | Plug (Output) | Sixth outgoing AW adapter. |
-
 adapter::types::unidirectional::AW` | `OUT7` | Plug (Output) | Seventh outgoing AW adapter. |
-
 | `adapter::types::unidirectional::AW` | `OUT8` | Plug (Output) | Eighth outgoing AW adapter. |
-
 | `adapter::types::unidirectional::AW` | `OUT9` | Plug (Output) | Ninth outgoing AW adapter. |
 
 ## Functionality

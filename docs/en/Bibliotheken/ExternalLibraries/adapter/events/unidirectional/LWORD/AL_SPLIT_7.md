@@ -27,11 +27,8 @@ Accordingly, there are no direct data outputs. The data is replicated via the se
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AL` | Adapter input that provides the AL connection to be distributed. |
-
 | Plug | `OUT1` … `OUT7` | `adapter::types::unidirectional::AL` | Seven adapter outputs that provide an identical copy of the input adapter. |
 
 ## Functionality

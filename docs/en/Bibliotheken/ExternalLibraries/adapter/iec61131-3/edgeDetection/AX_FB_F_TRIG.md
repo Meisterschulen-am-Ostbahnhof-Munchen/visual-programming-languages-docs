@@ -25,11 +25,8 @@ The function block does not use traditional separate event and data pins, but in
 ### **Adapter**
 
 | Name | Type | Comment | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | **CLK** | `adapter::types::unidirectional::AX` | Clock | **Socket (Input):** The input adapter that provides the signal to be monitored. Typically contains an event (`E1`) and a Boolean data value (`D1`). |
-
 | **Q** | `adapter::types::unidirectional::AX` | Output | **Plug (Output):** The output adapter that sends the result of the edge detection. |
 
 ## Functionality
@@ -73,13 +70,9 @@ The **AX_FB_F_TRIG** is suitable for various control tasks where "switching off"
 ## ⚖️ Comparison with similar function blocks
 
 | Function Block | Difference |
-
 | :--- | :--- |
-
 | **F_TRIG** (Standard) | Uses separate `CLK` (BOOL) and `Q` (BOOL) pins, as well as separate `REQ`/`CNF` events. Functionally identical, but with a different interface. |
-
 | **AX_FB_R_TRIG** | The counterpart to this function block. It detects the **rising edge (0 to 1). |
-
 | **E_F_TRIG** | Event-based trigger in IEC 61499, often operates purely at the event level without encapsulated data adapters. |
 
 ## Conclusion

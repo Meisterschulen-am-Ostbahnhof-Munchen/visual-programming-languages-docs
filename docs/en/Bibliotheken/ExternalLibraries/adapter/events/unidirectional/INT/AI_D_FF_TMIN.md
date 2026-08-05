@@ -9,25 +9,19 @@ The function block **AI_D_FF_TMIN** implements a D flip-flop (data latch) with a
 ### **Event Inputs**
 
 | Name | Type | With Variable | Comment |
-
 |-------------|-------|--------------|------------------------------------|
-
 | `INIT` | EInit | `Tmin` | Initialization Request |
 
 ### **Event Outputs**
 
 | Label | Type | With Variable | Comment |
-
 |-------------|-------|--------------|-------------|---------------------------------------|
-
 | `INITO` | EInit | – | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Label | Type | Comment |
-
 |-------------|------|----------------------------------------------|
-
 | `Tmin` | TIME | Minimum time interval between two EO events |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ This function block does not have its own data outputs; output is exclusively vi
 ### **Adapter**
 
 | Name | Type (Adapter) | Direction | Comment |
-
 |-------------|------------------------------------|-----------|------------------------------|
-
 | `I` | `adapter::types::unidirectional::AI` | Socket | Input data for latching |
-
 | `Q` | `adapter::types::unidirectional::AI` | Plug | Latched Output Value |
 
 ## Functionality
@@ -85,15 +76,10 @@ The function block does not have an explicitly visible state machine; the timing
 ## Comparison with Similar Modules
 
 | Module | Description | Difference to AI_D_FF_TMIN |
-
 -----------------|------------------------------------------------|-------------------------------------------------|
-
 | `E_D_FF` | Simple D flip-flop without a time limit | No minimum time between output events |
-
 | `E_D_FF_ANY` | D flip-flop for arbitrary data types | Also without time control |
-
 | `AI_D_FF` | D-Flip-Flop with Adapter Interface | Missing `Tmin` Option |
-
 | `E_CYCLE` | Clock Generator with Adjustable Period | Generates Periodic Events, No Latch |
 
 The `AI_D_FF_TMIN` combines the functionality of an adapter-encapsulated flip-flop with a freely configurable output lock – a combination not found in standard flip-flops.

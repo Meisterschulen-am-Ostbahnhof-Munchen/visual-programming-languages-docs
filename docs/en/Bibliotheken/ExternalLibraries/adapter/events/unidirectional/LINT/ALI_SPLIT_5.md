@@ -22,17 +22,11 @@ The function block `ALI_SPLIT_5` is a generic adapter split block. It accepts a 
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-
 Input (Socket) | `IN` | `adapter::types::unidirectional::ALI` | Single input: contains the ALI data to be distributed to the five outputs. |
-
 Output (Plug) | `OUT1` | `adapter::types::unidirectional::ALI` | First output (identical signals as at the input). |
-
 Output (Plug) | `OUT2` | `adapter::types::unidirectional::ALI` | Second output. |
-
 Output (Plug) | `OUT3` | `adapter::types::unidirectional::ALI` | Third output. |
-
 | Output (Plug) | `OUT4` | `adapter::types::unidirectional::ALI` | Fourth output. |
-
 | Output (Plug) | `OUT5` | `adapter::types::unidirectional::ALI` | Fifth output. |
 
 ## Functionality

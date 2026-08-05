@@ -20,15 +20,10 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AL` | IN | Socket | Input adapter that provides the signal to be distributed. |
-
 | `adapter::types::unidirectional::AL` | OUT1 | Plug | First output adapter – identical copy of the input signal. |
-
 | `adapter::types::unidirectional::AL` | OUT2 | Plug | Second output adapter – identical copy of the input signal. |
-
 | `adapter::types::unidirectional::AL` | OUT3 | Plug | Third output adapter – identical copy of the input signal. |
 
 ## Functionality

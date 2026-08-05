@@ -13,79 +13,50 @@ This version of the block ("AX Adapter Version") uses special adapters (`adapter
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 | :--- | :--- | :--- |
-
 | **INIT** | EInit | Initialization request. Sets all values and parameters. |
-
 | **Open** | Event | Command to open the slider. |
-
 | **Close** | Event | Command to close the slider. |
-
 | **RESET** | Event | Resets the function block to an unknown state ("Unknown"). |
-
 | **INPUT_DATA** | Event | Updates the configuration data for UI elements (button, softkey, aux). |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 | :--- | :--- | :--- |
-
 | **INITO** | EInit | Confirmation of initialization. |
-
 | **EO** | EInit | Event upon state change or update of outputs (button, softkey, status). |
-
 | **EO1** | Event | Internal event (often used after initial startup). |
 
 ### **Data Inputs**
 
 | Variable | Data Type | Comment |
-
 | :--- | :--- | :--- |
-
 | **QI** | BOOL | Input Event Qualifier (True = Normal operation, False = De-Init). |
-
 | **BT** | SliderStruct | Configuration structure for button states (depending on slider status). |
-
 | **SK** | SliderStruct | Configuration structure for softkey states. |
-
 | **AUXC** | SliderAuxInStruct | Configuration structure for auxiliary controls (images/colors). |
-
 | **DT_Opening** | TIME | Duration of the opening process. |
-
 | **DT_Closing** | TIME | Duration of the closing process. |
-
 | **START** | UINT | Start configuration (Defines the state in which the function block starts). Default: `STARTUnknown`. |
 
 ### **Data Outputs**
 
 | Variable | Data Type | Comment |
-
 | :--- | :--- | :--- |
-
 | **QO** | BOOL | Output Event Qualifier. |
-
 | **Button** | UINT | Current button status (based on the internal state). |
-
 | **Softkey** | UINT | Current softkey status. |
-
 | **Auxiliary** | SliderAuxOutStruct | Current auxiliary data (e.g., image ID, color) for visualization. |
-
 | **STATE** | STRING | Textual representation of the current state (e.g., "Opened", "Closing"). |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 | :--- | :--- | :--- |
-
 | **POWERED** | AX | Adapter for controlling the "open" valve (pneumatic/main supply). Active during opening and in the open state. |
-
 **OPEN** | AX | Adapter for controlling the "open" signal. |
-
 **CLOSE** | AX | Adapter for controlling the "close" signal. |
-
 **timeOut** | ATimeOut | Adapter for timer functionality (monitors opening/closing times). |
 
 ## Functionality

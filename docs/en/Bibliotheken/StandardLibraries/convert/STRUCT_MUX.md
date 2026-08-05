@@ -66,15 +66,10 @@ The `STRUCT_MUX` is a stateless block that operates according to a simple reques
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2020 Johannes Kepler University Linz |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac Package | eclipse4diac::convert |
 
 ## 🛠️ Related Exercises

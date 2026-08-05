@@ -4,11 +4,8 @@ The rules for allowed data connections are based on the principle:
 ## Central Files in the Codebase
 | File | Purpose |
 |-------|-------|
-
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/data/impl/DataTypeAnnotations.java` | Defines `isAssignableFrom(DataType other)` for each IEC 61131-3 type |
-
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/validation/LinkConstraints.java:200` | Tests connections with `targetType.isAssignableFrom(sourceType)` |
-
 | `tests/.../datatype/helper/ElementaryDataTypeCompatibilityTest.java` | Complete test matrix of all implicit assignments |
 
 ## Basic Principle
@@ -25,29 +22,19 @@ This means: the target type must be equal to or greater than the source type.
 ### Signed
 
 | Source → | SINT | INT | DINT | LINT |
-
 |----------|:----:|:---:|:----:|:----:|
-
 **SINT** | ✓ | ✓ | ✓ | ✓ |
-
 **INT** | ✗ | ✓ | ✓ | ✓ |
-
 **DINT** | ✗ | ✗ | ✓ | ✓ |
-
 **LINT** | ✗ | ✗ | ✗ | ✓ |
 
 ## Unsigned
 
 | Source → | USINT | UINT | UDINT | ULINT |
-
 |----------|:-----:|:----:|:-----:|:-----:|
-
 **USINT** | ✓ | ✓ | ✓ | ✓ |
-
 **UINT** | ✗ | ✓ | ✓ | ✓ |
-
 **UDINT** | ✗ | ✗ | ✓ | ✓ |
-
 **ULINT** | ✗ | ✗ | ✗ | ✓ |
 
 > **Important:** There is **no** implicit conversion between Signed and Unsigned.
@@ -69,17 +56,11 @@ REAL and LREAL also accept certain integer types:
 ## Bit Types
 
 | Source → | BOOL | BYTE | WORD | DWORD | LWORD |
-
 # |----------|:----:|:----:|:----:|:-----:|:-----:|
-
 **BOOL** | ✓ | ✓ | ✓ | ✓ | ✓ |
-
 **BYTE** | ✗ | ✓ | ✓ | ✓ | ✓ |
-
 **WORD** | ✗ | ✗ | ✓ | ✓ | ✓ |
-
 **DWORD**| ✗ | ✗ | ✗ | ✓ | ✓ |
-
 **LWORD**| ✗ | ✗ | ✗ | ✗ | ✓ |
 
 ## Characters and Strings

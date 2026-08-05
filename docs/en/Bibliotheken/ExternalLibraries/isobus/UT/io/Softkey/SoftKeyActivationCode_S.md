@@ -13,11 +13,8 @@ This is a data type and therefore does not have event or adapter interfaces in t
 ### **Data Fields (Structure Components)**
 
 | Name | Data Type | Initial Value | Comment |
-
 | :------- | :------- | :---------- | :-------- |
-
 | `code` | `USINT` | 255 | Defines the numeric code that identifies the specific softkey. |
-
 | `bCyclic`| `BOOL` | TRUE | Controls the cyclic sending of the key code. With `FALSE`, the key is not repeatedly sent every 200ms. |
 
 ## Functionality

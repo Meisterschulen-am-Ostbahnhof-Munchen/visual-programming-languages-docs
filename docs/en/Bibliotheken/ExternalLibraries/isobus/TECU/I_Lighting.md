@@ -8,47 +8,32 @@ The **I_Lighting** function block processes the lighting data of an agricultural
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-
 |----------|-----|---------------|-------------------|
-
 | INIT | EInit | Initializes the block and activates processing. | QI |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Data Carried |
-
 |----------|-----|--------------|-------------------|
-
 | INITO | EInit | Confirms successful initialization. | QO, STATUS |
-
 | IND | Event | Signals new lighting data from the bus. | QO, timestamp_data, STATUS, Q_timeout, and all 32 luminaire status outputs |
-
 | TIMEOUT | Event | Triggered when the expected data is not received (timeout). | timestamp_timeout, STATUS, Q_timeout |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|-------------|
-
 | QI | BOOL | Activation signal for initialization; The function block is started when TRUE. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|-------------|
-
 | QO | BOOL | Acknowledgement signal after successful initialization or data processing. |
-
 | STATUS | STRING | Status message (e.g., error messages or operating instructions). |
-
 | Q_timeout | BOOL | Signals whether a timeout has occurred (TRUE = Timeout active). |
-
 | timestamp_timeout | DINT | Timestamp of the last timeout event. |
-
 | timestamp_data | DINT | Timestamp of the last received lighting data. |
-
 | *32 Lighting Outputs* | BYTE | One 2-bit value (QUARTER) for each lighting function. Initial value: 0xFF. <br> - DAYTIME_RUNNING_LIGHTS <br> - ALTERNATE_HEADLIGHTS <br> - LOW_BEAM_HEADLIGHTS <br> - HIGH_BEAM_HEADLIGHTS <br>– TRACTOR_FRONT_FOG_LIGHTS <br>– ROTATING_BEACON_LIGHT <br>– RIGHT_TURN_SIGNAL_LIGHTS <br>– LEFT_TURN_SIGNAL_LIGHTS <br> – BACK_UP_LIGHTS_AND_ALARM_HORN <br>– CENTER_STOP_LIGHTS <br>– RIGHT_STOP_LIGHTS <br>– LEFT_STOP_LIGHTS <br>– IMPLEMENT_CLEARANCE_LIGHTS <br>– TRACTOR_CLEARANCE_LIGHTS <br>– IMPLEMENT_MARKER_LIGHTS <br>– TRACTOR_MARKER_LIGHTS <br>– REAR_FOG_LIGHTS <br>– TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS <br>– TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS <br>– TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS <br>– TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS <br>– TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS <br>– TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS <br>– TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS <br>– IMPLEMENT_OEM_OPTION_2_LIGHT <br> – IMPLEMENT_OEM_OPTION_1_LIGHT <br> – IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS <br> – IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS <br> – IMPLEMENT_RIGHT_FACING_WORK_LIGHTS <br> – IMPLEMENT_LEFT_FACING_WORK_LIGHTS <br> – IMPLEMENT_REAR_WORK_LIGHTS |
 
 ### **Adapter**

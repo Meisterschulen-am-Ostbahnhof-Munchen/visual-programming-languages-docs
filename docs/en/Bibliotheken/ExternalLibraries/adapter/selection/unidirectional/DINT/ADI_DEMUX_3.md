@@ -8,25 +8,19 @@ The function block **ADI_DEMUX_3** is a generic demultiplexer for adapter data (
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Sets the index **K** and triggers the forwarding of the incoming value to the corresponding output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirmation that the demultiplexing process is complete and the index **K** has been applied. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Index (1-based) for selecting the output. Valid values: 1, 2, 3. Values outside this range do not result in an active output. |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No data outputs are available. Output is exclusively via the adapters.
 ### **Adapters**
 
 | Direction | Label | Type | Description |
-
 |----------|-------------|-----|--------------|
-
 **Socket** (Input) | **IN** | `adapter::types::unidirectional::ADI` | Input adapter that provides the data value to be multiplexed. |
-
 **Plug** (Output) | **OUT1** | `adapter::types::unidirectional::ADI` | First output (selected when K=1). |
-
 **Plug** (Output) | **OUT2** | `adapter::types::unidirectional::ADI` | Second output (selected when K=2). |
-
 **Plug** (Output) | **OUT3** | `adapter::types::unidirectional::ADI` | Third output (selected when K=3). |
 
 ## Functionality
@@ -81,13 +70,9 @@ The function block does not have any explicitly modeled states. The internal log
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Adapter Type | Special Features |
-
 |----------|-----------------|------------|--------------|
-
 | **ADI_DEMUX_3** (this FB) | 3 (OUT1-3) | Unidirectional ADI | Generic, event-driven switching |
-
 | Other demultiplexers (e.g., `MUX` family) | Variable (2, 4, …) | ADI or standard data types | Often with enable input or multiple selection bits |
-
 | Simple adapter splits (e.g., `ADAPTER_SPLIT`) | Usually a fixed number | Bidirectional or unidirectional | No selection option – all outputs receive the same signal |
 
 The **ADI_DEMUX_3** is characterized by its explicit index selection (UINT), which enables flexible programming without the need for additional multiplexing logic. Unlike hard-wired splits, it allows for targeted channel selection at runtime.

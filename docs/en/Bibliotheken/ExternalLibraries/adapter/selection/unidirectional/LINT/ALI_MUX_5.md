@@ -9,25 +9,19 @@ The function block **ALI_MUX_5** implements a generic multiplexer for five ALI a
 ### **Event Inputs**
 
 | Event | Description | With data input |
-
 |----------|--------------|-----------------|
-
 | **REQ** | Starts the selection of index **K** and transmits the values of the selected adapter input to the output | K |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms successful transmission after processing **REQ** |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | **K** | UINT | Index of the input to be multiplexed (0 = IN1, 1 = IN2, …, 4 = IN5) |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ No direct data outputs are available. The output data is provided via the **OUT*
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug (Output) | **OUT** | `adapter::types::unidirectional::ALI` | Enabled output that provides the data of the input selected by **K** |
-
 Socket (Input) | **IN1** | `adapter::types::unidirectional::ALI` | First input value (K = 0) |
-
 Socket (Input) | **IN2** | `adapter::types::unidirectional::ALI` | Second input value (K = 1) |
-
 Socket (Input) | **IN3** | `adapter::types::unidirectional::ALI` | Third input value (K = 2) |
-
 Socket (Input) | **IN4** | `adapter::types::unidirectional::ALI` | Fourth input value (K = 3) |
-
 Socket (Input) | **IN5** | `adapter::types::unidirectional::ALI` | Fifth input value (K = 4) |
 
 ## Functionality

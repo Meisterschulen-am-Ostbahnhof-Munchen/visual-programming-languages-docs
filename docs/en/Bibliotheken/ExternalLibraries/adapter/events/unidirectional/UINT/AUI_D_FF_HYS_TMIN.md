@@ -9,27 +9,20 @@ The function block **AUI_D_FF_HYS_TMIN** is a data storage device (D flip-flop) 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|--------|--------------------------------------|
-
 | INIT | EInit | Initialization Request |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |--------|--------|---------------------------------|
-
 | INITO | EInit | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------------|-------|--------------------------------------------|
-
 | HYSTERESIS | UINT | Hysteresis Band |
-
 | Tmin | TIME | Minimum Intermediate Arrival Time of EI Events |
 
 ### **Data Outputs**
@@ -39,11 +32,8 @@ No standalone data outputs – the output value is transmitted via the `Q` adapt
 ### **Adapter**
 
 | Type | Name | Comment |
-
 |-------------------------------------------------------|-------------|---------------------|
-
 | `adapter::types::unidirectional::AUI` (Socket) | I | Value to be stored |
-
 | `adapter::types::unidirectional::AUI` (Plug) | Q | Stored Value |
 
 The adapter `AUI` is a unidirectional type that bundles an event and a data value (`E1` and `D1`).
@@ -89,13 +79,9 @@ The function block does not have an explicit internal state machine. The behavio
 ## Comparison with Similar Components
 
 | Component | Property |
-
 |----------|-------------|
-
 | `E_D_FF` | Simple D flip-flop without hysteresis or time limit |
-
 | `E_D_FF_HYS` | D flip-flop with hysteresis, but without `Tmin` |
-
 | `E_D_FF_HYS_TMIN` (this FB) | Combines hysteresis *and* minimal time interval → more robust against noise and burst events |
 
 ## Conclusion

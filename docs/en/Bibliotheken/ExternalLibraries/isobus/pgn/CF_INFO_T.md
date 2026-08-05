@@ -16,23 +16,14 @@ Not present, as it is a pure data type.
 The internal structure of type `CF_INFO_T` consists of the following elements:
 
 | Name | Type | Comment / Description | Initial Value |
-
 | :--- | :--- | :--- | :--- |
-
 | `s16Handle` | `INT` | Network member handle of the Control Function (CF) / User. Serves as a unique identifier within the application. | `UNVALID` |
-
 | `u8SourceAddress` | `BYTE` | Source Address (SA) of the Control Function (CF) / User in the ISOBUS network. | `NULL_A` |
-
 | `u8CanIdx` | `BYTE` | CAN bus node / index of the control function (CF) / user. Identifies the physical bus node. | – |
-
 | `au8Name` | `isobus::pgn::CF_NAME_T` | The ISOBUS name of the control function. This is a 64-bit unique identifier according to ISO 11783-5. | – |
-
 | `eIsoUserFunct` | `SINT` | Internally used CF function type (e.g., work device, terminal, task controller). | `undefined` |
-
 | `bExternalCf` | `BOOL` | Indicates whether it is an external CF in the CAN network (`TRUE`) or not. | – |
-
 | `bIsAnnounced` | `BOOL` | `TRUE` if the CF is active and fully announced in the network. | – |
-
 | `bIsActive` | `BOOL` | NIU-specific (Network Interface Unit): `TRUE` if the CF is not in an error state or logged off. | – |
 
 ## Functionality

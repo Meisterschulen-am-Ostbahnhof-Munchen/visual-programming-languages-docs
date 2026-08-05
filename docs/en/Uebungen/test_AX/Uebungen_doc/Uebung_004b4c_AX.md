@@ -8,15 +8,10 @@ This exercise deals with the implementation of a chain of three interlocked togg
 The following table lists the function blocks used in the network:
 
 | Function Block Name | Type | Description |
-
 |----------------------------------|-------------------|--------------|
-
 | `DigitalInput_CLK_I1`, `I2`, `I3` | `logiBUS_IE` | Digital input for pushbuttons (single-click) at the physical inputs `Input_I1`, `Input_I2`, `Input_I3`. |
-
 | `DigitalOutput_Q1`, `Q2`, `Q3` | `logiBUS_QXA` | Digital output for controlling the physical outputs `Output_Q1`, `Output_Q2`, `Output_Q3`. |
-
 | `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` (SubApp) | Sub-component, each containing a toggle flip-flop with latching logic. |
-
 | `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` | ...
 ### Sub-Blocks: `Uebung_004b4c_sub_AE`
 

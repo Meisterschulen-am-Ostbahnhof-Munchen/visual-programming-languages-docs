@@ -8,17 +8,11 @@ The function block **ILOCK_2_E_AX** provides two bistable outputs with mutual in
 ### **Event Inputs**
 
 | Name | Description |
-
 |--------|-----------------------------------------------|
-
 | `SET1` | Sets output `OUT1` to TRUE and `OUT2` to FALSE |
-
 | `CLK1` | Toggles the state of `OUT1` if it is not already toggled |
-
 | `SET2` | Sets output `OUT2` to TRUE and `OUT1` to FALSE |
-
 | `CLK2` | Toggles the state of `OUT2` if it is not already toggled |
-
 | `R` | Sets both outputs to FALSE (Reset) |
 
 ### **Event Outputs**
@@ -34,11 +28,8 @@ No direct data outputs. The current states of the flip-flops can be retrieved vi
 ### **Adapters**
 
 | Name | Type | Description |
-
 |--------|------|--------------------------------------------------|
-
 | `OUT1` | `AX` | Provides the state of the first flip-flop (data output `D1`) and acknowledges changes via event output `E1` |
-
 | `OUT2` | `AX` | Provides the state of the second flip-flop (data output `D1`) and acknowledges changes via event output `E1` |
 
 ## Functionality

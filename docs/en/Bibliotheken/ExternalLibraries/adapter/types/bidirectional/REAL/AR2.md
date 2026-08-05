@@ -9,33 +9,25 @@ The **AR2** adapter type provides a bidirectional interface between two function
 ### **Event Inputs**
 
 | Name | Type | Comment | with data |
-
 |------|-----|-----------|-----------|
-
 | EI1 | Event | Request (or Indication) | DI1 |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | with data |
-
 |------|-----|-----------|-----------|
-
 | EO1 | Event | Indication (or Request) | DO1 |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | DI1 | REAL | Request (or Indication) to Socket |
 
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | DO1 | REAL | Indication (or Request) Data from Plug |
 
 ### **Adapter**

@@ -74,19 +74,12 @@ The function block implements a state machine (ECC) that cycles through four act
 ## State Overview
 
 | State | Description | Exit Logic (Q1-Q4) | Next State (Auto/Manual) |
-
 | :--- | :--- | :--- | :--- |
-
 | **xSTART** | Idle State | Inactive | sState_01 (via `START_S1`) |
-
 | **sState_01** | Step 1 | P_S1 | sState_02 |
-
 | **sState_02** | Step 2 | P_S2 | sState_03 |
-
 | **sState_03** | Step 3 | P_S3 | sState_04 |
-
 **sState_04** | Step 4 | P_S4 | sState_01 (Loop) |
-
 | **sRESET** | Reset Logic | All FALSE | xSTART |
 
 ## Application Scenarios

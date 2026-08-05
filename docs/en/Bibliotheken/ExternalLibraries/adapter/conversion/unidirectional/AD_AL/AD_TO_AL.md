@@ -27,11 +27,8 @@ None.
 ### **Adapter**
 
 | Type | Direction | Name | Comment |
-
 |-----|----------|------|-----------|
-
 | Socket (Input) | Input | `AD_IN` | DWORD adapter input of type `adapter::types::unidirectional::AD` |
-
 | Plug (Output) | Output | `AL_OUT` | LWORD adapter output of type `adapter::types::unidirectional::AL` |
 
 ## Functionality

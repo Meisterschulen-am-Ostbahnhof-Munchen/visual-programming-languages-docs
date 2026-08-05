@@ -5,11 +5,8 @@ Bit sequence of length 32
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 32 |
-
 | **Value Range** | Bit sequence (32 bits) |
-
 | **Reference** | Table 10, No. 20 |
 
 ## Use in Programming

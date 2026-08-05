@@ -25,11 +25,8 @@ The function block does not have separate data outputs. The output data (SINT va
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `ALR_IN` | Socket | `adapter::types::unidirectional::ALR` | LREAL adapter input: provides the LREAL value to be converted and a trigger event (`E1`). |
-
 | `AS_OUT` | Plug | `adapter::types::unidirectional::AS` | SINT adapter output: provides the converted SINT value and an acknowledgment event (`E1`). |
 
 ## Functionality

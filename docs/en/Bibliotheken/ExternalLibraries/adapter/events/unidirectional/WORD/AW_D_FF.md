@@ -22,11 +22,8 @@ No direct data outputs at the FB level. Data output is via the output adapter **
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | **I** (Socket) | `adapter::types::unidirectional::AW` | Input adapter – receives the data to be latched (D1) and the clock signal (E1). |
-
 | **Q** (Plug) | `adapter::types::unidirectional::AW` | Output adapter – outputs the latched data (D1) and an acknowledgment event (E1). |
 
 Both adapters are of the same unidirectional type and each encapsulates one event and one data value.
@@ -40,13 +37,9 @@ On a rising edge of the clock signal (event `E1` at adapter **I**), the current 
 The logic table (D flip-flop) is as follows:
 
 | Clock (E1) | Input D | Output Q (after clock) |
-
 |-----------|-----------|----------------------|
-
 | ↑ | 0 | 0 |
-
 | ↑ | 1 | 1 |
-
 | otherwise | arbitrary | unchanged |
 
 ## Technical Features
@@ -73,15 +66,10 @@ There is no other internal state machine; the functionality is purely storage-ba
 ## Comparison with Similar Components
 
 | Component | Property | Difference to AW_D_FF |
-
 |----------|-------------|------------------------|
-
 | **RS Flip-Flop** | Sets/resets asynchronously | AW_D_FF requires a clock signal, no separate set/reset inputs. |
-
 | **T Flip-Flop** | Toggles on clock signal | AW_D_FF takes the value from D, no toggle function. |
-
 | **JK Flip-Flop** | Universal (Set, Reset, Toggle) | AW_D_FF is simpler (only D input), no toggle mode. |
-
 | **E_D_FF_ANY** | Directly usable with events/data | AW_D_FF encapsulates this function block and provides an adapter interface. |
 
 ## Conclusion

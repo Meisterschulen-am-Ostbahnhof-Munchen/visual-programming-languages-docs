@@ -23,33 +23,21 @@ No separate data outputs. The data is output via the ASR adapters **OUT1** to **
 **Socket (Input):**
 
 | Name | Type | Direction |
-
 |------|-----|----------|
-
 | IN | `adapter::types::unidirectional::ASR` | Socket |
 
 **Plugs (Outputs):**
 
 | Name | Type | Direction |
-
 |-------|-----|----------|
-
 | OUT1 | `adapter::types::unidirectional::ASR` | Plug |
-
 | OUT2 | `adapter::types::unidirectional::ASR` | Plug |
-
 | OUT3 | `adapter::types::unidirectional::ASR` | Plug |
-
 | OUT4 | `adapter::types::unidirectional::ASR` | Plug |
-
 | OUT5 | `adapter::types::unidirectional::ASR` | Plug |
-
 OUT6 | `adapter::types::unidirectional::ASR` | Plug |
-
 OUT7 | `adapter::types::unidirectional::ASR` | Plug |
-
 OUT8 | `adapter::types::unidirectional::ASR` | Plug |
-
 OUT9 | `adapter::types::unidirectional::ASR` | Plug |
 
 ## Functionality

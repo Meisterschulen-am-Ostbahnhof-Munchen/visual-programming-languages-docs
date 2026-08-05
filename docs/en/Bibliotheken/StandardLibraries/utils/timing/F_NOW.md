@@ -17,9 +17,7 @@ The function serves as a wrapper for the ST function NOW().
 ### **Data Outputs**
 
 | Parameter | Type | Description | Format |
-
 |-----------|-----|---------------|--------|
-
 | (implicit) | DATE_AND_TIME | Current timestamp | DT#2025-04-14-15:30:45 |
 
 ## Functionality
@@ -50,25 +48,17 @@ The function serves as a wrapper for the ST function NOW().
 ## Example Values
 
 | Call time | Return value |
-
 |-----------------|--------------|
-
 | 14.04.2025 15:30:45 | DT#2025-04-14-15:30:45 |
-
 | 31.12.2024 23:59:59 | DT#2024-12-31-23:59:59 |
 
 ## ⚖️ Comparison with similar functions
 
 | Feature | F_NOW | NOW | TIME() |
-
 |---------|-------|-----|--------|
-
 | Return type | DATE_AND_TIME | DATE_AND_TIME | TIME |
-
 | Time zone | Local | Local | System |
-
 | Accuracy | Seconds | Seconds | Milliseconds |
-
 | Daylight Saving Time | Yes | Yes | No |
 
 ## Limitations

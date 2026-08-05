@@ -9,43 +9,32 @@ The function block **AUI_AX_SEL_REQ** is a binary selector block controlled by a
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Serves as the trigger for the selection process. The value of adapter G is read, the selection is made, and the result is provided at the output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Triggered as soon as the selection process is complete and the output OUT contains a valid value. |
 
 ### **Data Inputs**
 
 | Input | Data Type | Description |
-
 |---------|----------|--------------|
-
 | IN0 | UINT | First selectable input value. |
-
 | IN1 | UINT | Second selectable input value. |
 
 ### **Data Outputs**
 
 | Output | Data Type | Description |
-
 |---------|----------|--------------|
-
 | OUT | UINT | Selected value – either IN0 or IN1, depending on the selector criterion supplied via adapter G. |
 
 ### **Adapter**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | G | adapter::types::unidirectional::AX | Bidirectional adapter that provides the selector criterion (e.g., a Boolean signal) and an associated event (E1, D1). The value of D1 determines which input (IN0 when D1 = 0, IN1 when D1 = 1) is passed through to OUT. |
 
 ## Functionality

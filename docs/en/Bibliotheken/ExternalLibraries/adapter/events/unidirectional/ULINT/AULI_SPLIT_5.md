@@ -25,19 +25,12 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AULI` | Incoming AULI adapter (source) |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::AULI` | First outgoing AULI adapter |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::AULI` | Second outgoing AULI adapter |
-
 | Plug | `OUT3` | `adapter::types::unidirectional::AULI` | Third outgoing AULI adapter |
-
 | Plug | `OUT4` | `adapter::types::unidirectional::AULI` | Fourth outgoing AULI adapter |
-
 | Plug | `OUT5` | `adapter::types::unidirectional::AULI` | Fifth outgoing AULI adapter |
 
 The interface consists solely of one socket and five plugs of the same type. All adapters are unidirectional.
@@ -64,13 +57,9 @@ The FB has **no internal state machine**. There are no states, no transitions, a
 ## Comparison with Similar Components
 
 | Component | Type | Outputs | Special Feature |
-
 |----------|-----|----------|--------------|
-
 | `AULI_SPLIT_5` | Generic splitter | 5 | Specific to AULI adapters |
-
 | `SPLIT_2` (non-standardized) | Generic splitter | 2 | Mostly for data types such as INT or BOOL |
-
 | `F_SPLIT` (from IEC 61499 libraries) | Functional splitter | Variable | Based on ECC and events |
 
 The `AULI_SPLIT_5`, unlike event-based splitters, is **eventless** and purely adapter-based. It is therefore particularly suitable for use in data flow systems without a clock signal.

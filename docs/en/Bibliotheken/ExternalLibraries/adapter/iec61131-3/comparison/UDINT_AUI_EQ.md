@@ -9,9 +9,7 @@ The function block **UDINT_AUI_EQ** is used to compare two values for equality. 
 ### **Event Inputs**
 
 | Name | Type | With Variables | Comment |
-
 |------|-----|----------------|-----------|
-
 | REQ | Event | IN1 | Serves as the trigger for the comparison. The value of IN1 is processed at the REQ input when an event occurs. |
 
 ### **Event Outputs**
@@ -20,9 +18,7 @@ No direct event outputs are available. The result is signaled via the adapter ou
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN1 | ANY_ELEMENTARY | First value to be compared. The data type can be any elementary type (e.g., BOOL, INT, REAL, UDINT). |
 
 ### **Data Outputs**
@@ -31,11 +27,8 @@ No direct data outputs. The comparison result is provided via the adapter output
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | IN2 | adapter::types::unidirectional::AUI | Socket (Input) | Second value to be compared; provided via the adapter as an event and data value. |
-
 | OUT | adapter::types::unidirectional::AX | Plug (Output) | Outputs the result of the comparison (TRUE if equal, otherwise FALSE) as an event and data value. |
 
 ## Functionality

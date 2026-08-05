@@ -67,13 +67,9 @@ The **F_SUB** is a standards-compliant function block for subtracting numeric va
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_SUB | F_ADD | F_MUL |
-
 |---------------|--------|--------|--------|
-
 | Operation | Subtraction | Addition | Multiplication |
-
 | Inputs | 2 | 2 | 2 |
-
 | Type Support | ANY_MAGNITUDE | ANY_NUM | ANY_NUM |
 
 ## 🛠️ Related Exercises

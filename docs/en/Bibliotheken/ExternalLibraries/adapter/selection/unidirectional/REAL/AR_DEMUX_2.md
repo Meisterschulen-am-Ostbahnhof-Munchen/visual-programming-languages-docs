@@ -9,25 +9,19 @@ The function block **AR_DEMUX_2** is a generic demultiplexer for unidirectional 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Requests the transfer of index `K` and triggers the demultiplex operation. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms the successful execution of the demultiplex operation. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------------------|
-
 | `K` | UINT | Integer index (1-based) for selecting the output (1 → OUT1, 2 → OUT2). |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No dedicated data outputs; output is exclusively via the adapters `OUT1` and `OU
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |--------|-------|----------|-------------------------------------------------|
-
 | Socket | `IN` | Input | Unidirectional AR adapter that is demultiplexed. |
-
 | Plug | `OUT1`| Output | First destination adapter for the demultiplexed value. |
-
 | Plug | `OUT2`| Output | Second destination adapter for the demultiplexed value. |
 
 ## Functionality

@@ -20,11 +20,8 @@ The FB has no explicit data outputs. The converted data is output as an INT via 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|-------------|
-
 | **AL_IN** | Socket (Input) | `adapter::types::unidirectional::AL` | Provides an LWORD (via data port D1) and an event (E1). |
-
 | **AI_OUT** | Plug (Output) | `adapter::types::unidirectional::AI` | Provides an INT (via data port D1) and an event (E1). |
 
 ## Functionality

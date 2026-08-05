@@ -22,11 +22,8 @@ None – see Data Inputs.
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | **IN** | `adapter::types::unidirectional::AQ` | Socket (Input) | Receives the AQ signal to be distributed. |
-
 | **OUT1** – **OUT8** | `adapter::types::unidirectional::AQ` | Plug (Output) | Identical outputs that forward the signal from `IN`. |
 
 ## Functionality

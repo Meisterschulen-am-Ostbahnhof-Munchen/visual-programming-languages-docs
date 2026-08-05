@@ -25,13 +25,9 @@ None.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |-------------|----------------------|----------|-------------------------|
-
 | IN | unidirectional::AX | Socket | Input signal |
-
 | RESET1 | unidirectional::AX | Socket | Reset signal (prioritized) |
-
 | OUT | unidirectional::AX | Plug | Output signal |
 
 The adapters of type `adapter::types::unidirectional::AX` each have an event output `E1` and a data output `D1` (of type BOOL). The adapter's data value is provided via `D1`, and processing is triggered by the event `E1`.
@@ -56,9 +52,7 @@ The event at the output adapter (`OUT.E1`) is triggered with each execution of t
 The function block has exactly one state:
 
 | State | Description |
-
 |---------|--------------|
-
 | REQ | Start and end state. Waits for an event from `IN` or `RESET1`. After the algorithm has finished executing, the state always returns to `REQ` (no other states). |
 
 There are two transitions:

@@ -9,9 +9,7 @@ The function block **AI_DEMUX_5** is a generic analog input demultiplexer for th
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K |
 
 The event input **REQ** triggers the demultiplexing function. This event assigns index K and triggers the forwarding of the current input value to the corresponding output.
@@ -19,9 +17,7 @@ The event input **REQ** triggers the demultiplexing function. This event assigns
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 The **CNF** event is triggered after successful distribution of the value and confirms the execution of the REQ event.
@@ -29,9 +25,7 @@ The **CNF** event is triggered after successful distribution of the value and co
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | index |
 
 The **K** data input determines the target output (1..5) to which the value from the IN adapter is forwarded. Values outside this range are typically ignored or result in error handling (not specified).
@@ -43,21 +37,13 @@ There are no direct data outputs. Output is exclusively via the adapter interfac
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-
 |-------|------|-----|-----------|
-
 Socket | IN | adapter::types::unidirectional::AI | Input Value to demultiplex |
-
 Plug | OUT1 | adapter::types::unidirectional::AI | – |
-
 Plug | OUT2 | adapter::types::unidirectional::AI | – |
-
 Plug | OUT3 | adapter::types::unidirectional::AI | – |
-
 Plug | OUT4 | adapter::types::unidirectional::AI | – |
-
 Plug | OUT5 | adapter::types::unidirectional::AI | – |
-
 Plug | OUT5 | adapter::types::unidirectional::AI | – | The **IN** socket receives the analog value to be distributed. The five plugs **OUT1** to **OUT5** represent the possible destination outputs through which the value is output.
 
 ## Functionality

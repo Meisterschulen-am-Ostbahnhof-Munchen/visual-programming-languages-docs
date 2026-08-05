@@ -27,23 +27,14 @@ None
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | IN | `adapter::types::unidirectional::ALR` | Socket (Input) | Incoming ALR signal, which is distributed to the outputs. |
-
 | OUT1 | `adapter::types::unidirectional::ALR` | Plug (Output) | First output of the split signal. |
-
 | OUT2 | `adapter::types::unidirectional::ALR` | Plug (Output) | Second output of the split signal. |
-
 | OUT3 | `adapter::types::unidirectional::ALR` | Plug (Output) | Third output of the split signal. |
-
 | OUT4 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fourth output of the split signal. |
-
 | OUT5 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fifth output of the split signal. |
-
 OUT6 | `adapter::types::unidirectional::ALR` | Plug (Output) | Sixth output of the split signal. |
-
 OUT7 | `adapter::types::unidirectional::ALR` | Plug (Output) | Seventh output of the split signal. |
 
 ## Functionality
@@ -67,15 +58,10 @@ The function block does not have an internal state machine. There are no states 
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Special Feature |
-
 |----------|------------------|--------------|
-
 | `ALR_SPLIT_2` | 2 | Simple Dual Distribution |
-
 | `ALR_SPLIT_4` | 4 | Quad Distribution |
-
 | `ALR_SPLIT_7` | 7 | Seven-Way Distribution (this module) |
-
 | `ALR_SPLIT_N` (generic) | Configurable | Flexible splitter with adjustable number of paths |
 
 All variations are based on the same principle: unidirectional distribution without signal modification.

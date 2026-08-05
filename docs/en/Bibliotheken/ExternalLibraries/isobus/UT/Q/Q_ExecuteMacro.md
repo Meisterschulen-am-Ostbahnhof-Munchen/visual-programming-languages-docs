@@ -51,29 +51,19 @@ The **Q_ExecuteMacro** is a standards-compliant function block for executing mac
 ## Macro Properties
 
 | Feature | Description |
-
 |---------------|----------------------------------|
-
 | Location | Permanently stored in the VT |
-
 | Size | Up to 255 commands |
-
 | Content | VT command sequences |
-
 | ID Range | 0x01 - 0xFF (8-bit) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful execution |
-
 | -6 | VT_E_OVERFLOW | Macro too complex |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
 
 ## Application Scenarios
@@ -85,13 +75,9 @@ The **Q_ExecuteMacro** is a standards-compliant function block for executing mac
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_ExecuteMacro | Q_ExecuteExtendedMacro | VtMacroRunner |
-
 ---------------|----------------|------------------------|---------------|
-
 | ISO Standard | ✔ | ✔ | ✖ |
-
 | VT Version | 4+ | 5+ | All |
-
 | ID Type | 8-bit | 16-bit | 8-bit |
 
 ## Conclusion

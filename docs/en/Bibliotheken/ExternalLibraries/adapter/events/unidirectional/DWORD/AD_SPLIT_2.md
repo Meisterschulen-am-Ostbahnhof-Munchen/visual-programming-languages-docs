@@ -20,13 +20,9 @@ None
 ### **Adapter**
 
 | Name | Type | Direction |
-
 |------|-----|----------|
-
 | IN | adapter::types::unidirectional::AD | Socket (Input) |
-
 | OUT1 | adapter::types::unidirectional::AD | Plug (Output) |
-
 | OUT2 | adapter::types::unidirectional::AD | Plug (Output) |
 
 ## Functionality

@@ -9,51 +9,36 @@ The function block **INI_ALR** is used to read and write floating-point values o
 ### **Event Inputs**
 
 | Event | Type | Comment | With Variables |
-
 |----------|-------|----------------------------------------------|--------------------------------------|
-
 | INIT | EInit | Initializes the function block and triggers a read operation | QI, SECTION, KEY, DEFAULT_VALUE |
 
 ### **Event Outputs**
 
 | Event | Type | Comment | With variables |
-
 |----------|-------|---------------------------------|---------------|
-
 | INITO | EInit | Confirms initialization | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |----------------|--------|-----------------------------------------------------------|
-
 | QI | BOOL | Event Input Qualifier (Allow) |
-
 SECTION | STRING | Section name in the INI file |
-
 KEY | STRING | Key name within the section |
-
 DEFAULT_VALUE | LREAL | Fallback value if the key is missing in the INI file |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |--------|--------|----------------------------------|
-
 | QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Status message (e.g., error text) |
 
 ### **Adapters**
 
 | Adapter | Type | Comment |
-
 |----------|-----------------------------------|--------------------------------------------------------|
-
 | ALR_IN | adapter::types::unidirectional::ALR| Socket – Value to store (SET) |
-
 | ALR_OUT | adapter::types::unidirectional::ALR| Plug – Read value (GET)/Confirmation |
 
 ## Functionality
@@ -95,11 +80,8 @@ The `INI_ALR` itself does not have its own state machines. State management is f
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Advantage of INI_ALR |
-
 |------------|-------------------------------------------------------------------|-------------------------------------------------|
-
 | `INI` | Direct access to INI files (without ALR) | No adapter interface, manual coupling required |
-
 | `INI_ALR` | Encapsulates `INI` and provides an ALR adapter interface | Easy integration into ALR-based architectures |
 
 The `INI_ALR` combines the proven INI file functionality with a standardized adapter interface, thereby reducing the effort required for integration into a service-oriented control system.

@@ -20,13 +20,9 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AR` | IN | Socket | Input signal (AR) |
-
 | `adapter::types::unidirectional::AR` | OUT1 | Plug | First output (identical to IN) |
-
 | `adapter::types::unidirectional::AR` | OUT2 | Plug | Second output (identical to IN) |
 
 ## Functionality

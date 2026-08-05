@@ -9,46 +9,32 @@ The function block encapsulates the necessary steps of the physical conversion a
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `INIT` | Initializes the function block with the object pool properties (`stObj`). |
-
 | `REQ` | Starts processing: the physical value (`lrPhys`) is sent to the target object. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `INITO` | Acknowledges successful initialization. |
-
 | `CNF` | Acknowledges command execution; the output data is valid. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |--------|-----|---------------|
-
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | Object pool properties (object ID, scale, offset, decimal places). Default value: `(u16ObjId := ID_NULL, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0)`. |
-
 | `lrPhys` | `LREAL` | The physical value (e.g., pressure, temperature) to be sent. Note: Before transmission, the value should be converted using `F_PHYS_LREAL_TO_RAW` if necessary; the function block performs this conversion automatically internally. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
 |------|-----|--------------|
-
 | `STATUS` | `STRING` | Status message of the service performed. |
-
 | `u32OldValue` | `UDINT` | Original raw value of the object before the change. |
-
 | `s16result` | `INT` | Return value (see `Q_NumericValue`). |
-
 | `xOver` | `BOOL` | `TRUE` if the physical value exceeds the upper ISOBUS limit. |
-
 xUnder` | `BOOL` | `TRUE` if the physical value falls below the lower ISOBUS limit. |
 
 ### **Adapter**
@@ -75,13 +61,9 @@ The outputs `STATUS`, `u32OldValue`, and `s16result` originate directly from `Q_
 The function block does not have an explicit state machine in the sense of an ECC, but operates event-driven according to the following logic:
 
 | State / Sequence | Description |
-
 |------------------|--------------|
-
 | **Initialization** | After a `INIT` event, the object properties are stored internally. Then, `INITO` is sent. |
-
 | **Send Command** | After a `REQ` event, the physical value is converted, the command is issued, and upon completion, `CNF` is sent with the result data. |
-
 **Error Handling** | If an overflow/underflow occurs during the conversion, `xOver` or `xUnder`, respectively, are set before the command is issued. An erroneous command is signaled by `s16result` and the status message. |
 
 ## Application Scenarios

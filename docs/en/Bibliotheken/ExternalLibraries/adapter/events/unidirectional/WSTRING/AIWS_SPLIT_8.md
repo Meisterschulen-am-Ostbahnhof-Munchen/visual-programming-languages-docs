@@ -23,25 +23,15 @@ None.
 ### Adapters
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Input (Socket) | IN | adaptor::types::unidirectional::AIWS | Incoming AIWS signal to be split. |
-
 | Output (Plug) | OUT1 | adaptor::types::unidirectional::AIWS | First parallel output of the signal. |
-
 | Output (Plug) | OUT2 | adaptor::types::unidirectional::AIWS | Second parallel output of the signal. |
-
 | Output (Plug) | OUT3 | adaptor::types::unidirectional::AIWS | Third parallel output of the signal. |
-
 | Output (Plug) | OUT4 | adaptor::types::unidirectional::AIWS | Fourth parallel output of the signal. |
-
 | Output (Plug) | OUT5 | adapater::types::unidirectional::AIWS | Fifth parallel output of the signal. |
-
 | Output (Plug) | OUT6 | adapater::types::unidirectional::AIWS | Sixth parallel output of the signal. |
-
 | Output (Plug) | OUT7 | adapater::types::unidirectional::AIWS | Seventh parallel output of the signal. |
-
 | Output (Plug) | OUT8 | adapater::types::unidirectional::AIWS | Eighth parallel output of the signal. |
 
 ## Functionality

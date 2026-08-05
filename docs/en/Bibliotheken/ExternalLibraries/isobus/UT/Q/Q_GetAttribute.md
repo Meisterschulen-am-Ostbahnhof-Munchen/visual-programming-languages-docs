@@ -53,33 +53,21 @@ The **Q_GetAttribute** is a standards-compliant function module for querying obj
 ## Attribute Types
 
 | Category | Example IDs | Description |
-
 |----------------|--------------------------|----------------------------------|
-
 | Basic Attributes | 0x01 - 0x0F | Visibility, Activity |
-
 | Appearance | 0x10 - 0x2F | Colors, Borders, Alignment |
-
 | Content | 0x30 - 0x4F | Text Values, Numeric Values |
-
 | States | 0x50 - 0x6F | Alarm Status, Operating Modes |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Query successful |
-
 | -6 | VT_E_OVERFLOW | Buffer overflow |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 | -21 | VT_E_NO_INSTANCE | No VT client available |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -91,13 +79,9 @@ The **Q_GetAttribute** is a standards-compliant function module for querying obj
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_GetAttribute | VtReadValue | VtObjectQuery |
-
 |---------------|----------------|-------------|---------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | VT Version | 4+ | All | All |
-
 | Attribute Width | Universal | Value-Only | Limited IDs |
 
 ## Conclusion

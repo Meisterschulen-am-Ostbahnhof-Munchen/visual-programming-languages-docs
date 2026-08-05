@@ -9,51 +9,34 @@ The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Blo
 ### **Event Inputs**
 
 | Event | Comment | With |
-
 |-------|-----------|------------|
-
 **INIT** | Service Initialization | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis |
-
 **REQ** | Service Request (Measurement Retrieval) | QI |
 
 ### **Event Outputs**
 
 | Event | Comment | With |
-
 |-------|-----------|------------|
-
 **INITO** | Initialization Acknowledgement | QO, STATUS |
-
 **CNF** | Service Request Acknowledgement | QO, STATUS, IN |
-
 **IND** | Indication of a New Measured Value from the Resource | QO, STATUS, IN |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | **QI** | BOOL | – | Event input qualifier |
-
 | **PARAMS** | STRING | – | Service parameters (e.g., addresses, baud rate) |
-
 | **u8SAMember** | USINT | `MI::MI_00` | Node SA address (224..239) |
-
 | **Input** | DataPanel::io::MI::AI::DataPanel_MI_AI_S | `Invalid` | Analog input selection (AnalogInput_1A … 8B) |
-
 | **AnalogInput_hysteresis** | WORD | – | Analog value hysteresis (configuration) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | **QO** | BOOL | Event Output Qualifier |
-
 | **STATUS** | STRING | Service Status (e.g., error/success messages) |
-
 | **IN** | WORD | Measured Analog Value (0..32V scaled as WORD) |
 
 ### **Adapters**

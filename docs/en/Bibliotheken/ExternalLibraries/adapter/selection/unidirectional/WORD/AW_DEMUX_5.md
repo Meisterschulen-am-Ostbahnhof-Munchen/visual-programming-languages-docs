@@ -9,9 +9,7 @@ The function block **AW_DEMUX_5** is a generic demultiplexer for unidirectional 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Set Index K |
 
 The event input **REQ** triggers the demultiplex operation and uses the current value of the data input `K`.
@@ -19,9 +17,7 @@ The event input **REQ** triggers the demultiplex operation and uses the current 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 After a successful switchover, the **CNF** event is output.
@@ -29,9 +25,7 @@ After a successful switchover, the **CNF** event is output.
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (expected values 1-5) |
 
 The input `K` determines which of the five output adapters is activated.
@@ -45,25 +39,17 @@ None.
 **Plugs (Outputs):**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | OUT1 | adapter::types::unidirectional::AW | Output 1 |
-
 | OUT2 | adapter::types::unidirectional::AW | Output 2 |
-
 | OUT3 | adapter::types::unidirectional::AW | Output 3 |
-
 | OUT4 | adapter::types::unidirectional::AW | Output 4 |
-
 | OUT5 | adapter::types::unidirectional::AW | Output 5 |
 
 **Sockets (Input):**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN | adapter::types::unidirectional::AW | Input signal for demultiplexing |
 
 ## Functionality

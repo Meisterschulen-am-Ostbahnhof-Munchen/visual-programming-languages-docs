@@ -11,13 +11,9 @@ The function block **AULI_FB_CTD** implements a **down counter** based on the da
 The function block has **no direct event inputs**. Triggering occurs exclusively via the **event channels of the socket adapters**:
 
 | Adapter | Event Port | Description |
-
 |-----------|------------|-------------------------------------|
-
 | **CD** | CD.E1 | Count Down Pulse |
-
 | **LD** | LD.E1 | Load Preset Value Pulse |
-
 | **PV** | PV.E1 | Preset Value Update |
 
 > **Note:** Each of these events triggers processing of the internal counter. The counter is always recalculated – regardless of whether the value actually changes.
@@ -25,19 +21,14 @@ The function block has **no direct event inputs**. Triggering occurs exclusively
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|----------------------------------------------------|
-
 | CNF | Confirmation after each processing |
 
 Additionally, the plug adapters provide **two event outputs**:
 
 | Adapter | Event Port | Description |
-
 |---------|------------|--------------------------------------------------|
-
 | **Q** | Q.E1 | Outputs with every processing |
-
 | **CV** | CV.E1 | Outputs with every processing |
 
 > **Note:** Since the events fire with every update (CD, LD, PV), it is recommended to filter a change edge with a `AX_D_FF` if necessary (see Technical Specifications).
@@ -47,13 +38,9 @@ Additionally, the plug adapters provide **two event outputs**:
 Data is also provided via the **socket adapters**:
 
 | Adapter | Data Port | Data Type | Description |
-
 |---------|------------|----------|-------------------------------------------|
-
 | **CD** | CD.D1 | `BOOL` | Count pulse (rising edge) |
-
 | **LD** | LD.D1 | `BOOL` | Load command (rising edge) |
-
 | **PV** | PV.D1 | `ULINT` | Preset value (loaded during LD or PV update) |
 
 ### **Data Outputs**
@@ -61,27 +48,18 @@ Data is also provided via the **socket adapters**:
 Data is output via the **Plug Adapters**:
 
 | Adapter | Data Port | Data Type | Description |
-
 |---------|------------|----------|-------------------------------------------|
-
 | **Q** | Q.D1 | `BOOL` | Counter reading = 0 (output signal) |
-
 | **CV** | CV.D1 | `ULINT` | Current counter reading |
 
 ### **Adapter**
 
 | Direction | Adapter type | Short description |
-
 |----------|-----------------------|--------------------------------------|
-
 | Socket | `AX` (bidirectional) | Countdown control (Event + BOOL) |
-
 | Socket | `AX` (bidirectional) | Load Control (Event + BOOL) |
-
 Socket | `AULI` (bidirectional) | Preset Value (Event + ULINT) |
-
 Plug | `AX` (bidirectional) | Output Q (Event + BOOL) |
-
 Plug | `AULI` (bidirectional) | Counter Value Output (Event + ULINT) |
 
 ## Functionality
@@ -126,13 +104,9 @@ The function block itself does not have its own state machine; the state logic (
 Internally, the function block only manages the **counter value** (CV) and the **current preset value** (PV). There is no explicit state machine. The possible actions are:
 
 | State / Action | Trigger | Result |
-
 |------------------|---------------------------|---------------------------------------------------------|
-
 | Count Down | CD Event & CD.D1=TRUE | CV := CV - 1 (if CV>0) |
-
 | Load | LD event & LD.D1=TRUE | CV := PV (current preset) |
-
 | Preset Update | PV event | PV is overwritten (CV remains unchanged) |
 
 The output `Q` is set to `TRUE` when `CV = 0` is present; otherwise, it is `FALSE`..
@@ -157,13 +131,9 @@ Integration into larger control architectures that rely entirely on adapter comm
 ## Comparison with Similar Components
 
 | Component | Data Type | Interface | Special Feature |
-
 |----------------------|----------|-----------------------|------------------------------------------------|
-
 | `FB_CTD_ULINT` | ULINT | Standard I/O | Basic down counter without adapter |
-
 | **AULI_FB_CTD** | ULINT | Adapter (AX, AULI) | Adapter-encapsulated, all events result in an update|
-
 | `FB_CTD` (Standard) | INT/UINT | Standard I/O | Usually 16-bit or 32-bit, fixed event logic |
 
 The **AULI_FB_CTD** offers more flexible integration into complex networks due to its adapter coupling, but has the "side effect" that output events are sent even if the values remain unchanged. For applications that should only fire upon a value change, the basic function block `FB_CTD_ULINT` or a combination with an edge detector (`AX_D_FF`) is preferable.

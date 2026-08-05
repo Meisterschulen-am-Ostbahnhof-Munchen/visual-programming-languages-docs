@@ -9,69 +9,45 @@ The function block **ILOCK_FB_SR_AX** implements a set-dominant (set-priority) b
 ### **Event Inputs**
 
 | Event | Data Source | Description |
-
 |----------|---------------|--------------|
-
 | `SET1.E1` | Socket SET1 | Sets output Q1 (set-dominant) |
-
 | `RESET.E1` | Socket RESET | Resets output Q1 (only effective if SET1 = 0) |
-
 | `ILOCK_IN.EO1` | Socket ILOCK_IN | Receives the propagation event from the parent interlock stage |
-
 | `ILOCK_OUT.EI1` | Plug ILOCK_OUT | Receives an event from the child interlock stage (e.g., acknowledgment) |
 
 ### **Event Outputs**
 
 | Event | Data Source | Description |
-
 |----------|---------------|--------------|
-
 | `Q1.E1` | Plug Q1 | Output event after each Q1 update |
-
 | `ILOCK_IN.EI1` | Socket ILOCK_IN | Sends propagation event to the parent stage |
-
 | `ILOCK_OUT.EO1` | Plug ILOCK_OUT | Sends propagation event to the child stage |
 
 ### **Data Inputs**
 
 | Data | Type | Description |
-
 |-------|-----|---------------|
-
 | `SET1.D1` | BOOL | Set input (dominant) |
-
 | `RESET.D1` | BOOL | Reset input (active when SET1=0) |
-
 ILOCK_IN.DO1` | BOOL | Data from the parent interlock stage (propagation signal) |
-
 ILOCK_OUT.DI1` | BOOL | Data from the child interlock stage (feedback) |
 
 ### **Data Outputs**
 
 | Data | Type | Description |
-
 |-------|-----|--------------|
-
 Q1.D1` | BOOL | Latch output (set by Set or Interlock) |
-
 ILOCK_IN.DI1` | BOOL | Propagated Set signal to the parent stage |
-
 | `ILOCK_OUT.DO1` | BOOL | Propagated Set signal to the subordinate stage |
 
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | `Q1` | AX (unidirectional) | Plug | Latch output |
-
 | `ILOCK_OUT` | AX2 (bidirectional) | Plug | Interlock interface to the subordinate stage |
-
 | `SET1` | AX (unidirectional) | Socket | Set input |
-
 | ax (unidirectional) | Socket | Reset input |
-
 | `ILOCK_IN` | AX2 (bidirectional) | Socket | Interlock interface to the higher-level interface |
 
 ## Functionality

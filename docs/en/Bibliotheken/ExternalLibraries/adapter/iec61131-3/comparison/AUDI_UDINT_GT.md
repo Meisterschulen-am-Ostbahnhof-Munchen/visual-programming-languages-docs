@@ -9,9 +9,7 @@ The function block `AUDI_UDINT_GT` performs a comparison of two unsigned 32-bit 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-------|----------------------------------------------|
-
 | REQ | Event | Service Request to trigger the comparison. This event reads data input IN2. |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ The FB does not have its own event outputs. However, the result of the compariso
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|-----------------------|
-
 | IN2 | UDINT | Second comparison value (right side of the operator >). |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ The FB does not have its own data outputs. The result value is provided via the 
 ### **Adapters**
 
 | Type | Name | Kind | Description |
-
 |------------|------|-------|------------------------------------------------------------------------------------------|
-
 | Socket (IN1) | AUDI | Socket | Provides the first comparison value. This adapter provides an event input (E1) and a data input (D1). |
-
 | Plug (OUT) | AX | Plug | Outputs the comparison result. This adapter has an event output (E1) and a data output (D1). The result is **TRUE** if IN1 > IN2, otherwise **FALSE**. |
 
 ## Functionality
@@ -76,15 +69,10 @@ The internal execution of `F_GT` is carried out in one step according to its spe
 ## Comparison with Similar Function Blocks
 
 | Function Block | Comparison Operation | Data Type Support |
-
 -------------------|--------------------------------|------------------------------------|
-
 | `AUDI_UDINT_GT` | > (Greater than) | UDINT (32-bit, unsigned) |
-
 | `AUDI_UDINT_GE` | >= (Greater than or equal to) | UDINT |
-
 | `AUDI_UDINT_EQ` | = (Equal to) | UDINT |
-
 | `AUDI_UDINT_LT` | < (Kleiner als)                | UDINT                              |
 | `F_GT` (direkt)   | > (Greater than) | UDINT (and other supported types) |
 

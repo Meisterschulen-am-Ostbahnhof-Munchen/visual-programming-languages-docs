@@ -8,17 +8,13 @@ The function block `GET_TIME_OF_DAY` is used to read a time of day value (type `
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Execution Request; reads the current value of IN |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Confirmation after successful read and buffering |
 
 ### **Data Inputs**
@@ -27,9 +23,7 @@ There are no pure inputs. The source data is provided via the InOut input `IN`.
 ### **Data Outputs**
 
 | Output | Data Type | Comment |
-
 |---------|------------|-------------------------------|
-
 | OUT | TIME_OF_DAY| Buffered time of day value |
 
 ### **Adapters**

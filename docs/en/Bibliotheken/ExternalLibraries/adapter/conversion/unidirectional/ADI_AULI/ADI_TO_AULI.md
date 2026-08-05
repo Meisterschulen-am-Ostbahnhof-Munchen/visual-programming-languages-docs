@@ -8,43 +8,32 @@ The **ADI_TO_AULI** function block is a composite function block (FB) according 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |-------------|-----|--------------|
-
 | ADI_IN.E1 | Event (implicit) | Trigger for conversion; provided by the ADI adapter. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |-------------|-----|--------------|
-
 | AULI_OUT.E1 | Event (implicit) | Signals completion of conversion; passed to the AULI adapter. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |-------------|-------|--------------|
-
 | ADI_IN.D1 | DINT | Input value to be converted to ULINT. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |-------------|--------|-------------|
-
 | AULI_OUT.D1 | ULINT | Converted output value (unsigned). |
 
 ### **Adapter**
 
 | Name | Type (Interface) | Direction | Description |
-
 |-----------|-----------------------|-----------|--------------|
-
 | ADI_IN | ADI (Socket) | Input | Receives the DINT value via a unidirectional ADI adapter. |
-
 | AULI_OUT | AULI (Plug) | Output | Provides the converted ULINT value via a unidirectional AULI adapter. |
 
 ## Functionality

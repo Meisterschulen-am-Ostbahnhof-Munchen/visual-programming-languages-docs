@@ -6,13 +6,9 @@ Real-time variant of the E_R_TRIG function block (rising edge).
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac package | eclipse4diac::rtevents |
 
 ---

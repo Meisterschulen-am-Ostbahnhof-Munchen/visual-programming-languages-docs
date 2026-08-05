@@ -64,13 +64,9 @@ The **E_RESTART** is a special service interface function block according to IEC
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_RESTART | E_CYCLE | E_DELAY |
-
 |---------------|-----------|----------|---------|
-
 | Purpose | System Control | Time Control | Event Delay |
-
 | Event Type | Control Commands | Periodic | One-Time |
-
 | Standard | Annex A | Core | Core |
 
 ## 🛠️ Related Exercises

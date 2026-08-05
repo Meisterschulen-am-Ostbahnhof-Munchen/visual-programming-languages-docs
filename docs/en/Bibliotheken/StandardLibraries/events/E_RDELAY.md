@@ -65,13 +65,9 @@ The **E_RDELAY** (Reloadable Delay) is an extended delay function block accordin
 ## ⚖️ Comparison with E_DELAY
 
 | Feature | E_RDELAY | E_DELAY |
-
 |---------------|----------|---------|
-
 | Reset Function | ✔️ (via START) | ❌ |
-
 | Multiple Triggers | Only 1 EO | Only 1 EO |
-
 | Service Sequences | 3 defined | 1 defined |
 
 ## 🛠️ Related Exercises

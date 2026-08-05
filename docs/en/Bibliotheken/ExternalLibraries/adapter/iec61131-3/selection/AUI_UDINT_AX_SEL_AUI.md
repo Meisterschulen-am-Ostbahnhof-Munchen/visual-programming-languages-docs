@@ -9,11 +9,8 @@ The function block `AUI_UDINT_AX_SEL_AUI` implements a binary selection between 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `EI0` | Event | Sets/receives the value of `IN0` (linked to `IN0`) |
-
 | `EI1` | Event | Sets/receives the value of `IN1` (linked to `IN1`) |
 
 ### **Event Outputs**
@@ -23,11 +20,8 @@ The FB does not have a standalone event output. The output event is provided via
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `IN0` | UINT | First selectable input value |
-
 | `IN1` | ANY_ELEMENTARY | Second selectable input value (polymorphic, any elementary data type) |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ No direct data outputs. The selected value is output via the *AUI* adapter `OUT`
 ### **Adapters**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `G` (Socket) | AX | Control adapter (selector); provides the selection signal `D1` and the trigger event `E1` |
-
 | `OUT` (Plug) | AUI | Result Adapter; outputs the selected value via `D1` and a completion event via `E1` |
 
 ## Functionality

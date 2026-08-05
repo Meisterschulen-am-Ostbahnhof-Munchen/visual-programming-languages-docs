@@ -8,43 +8,32 @@ The **AUDI_TO_ADI** function block is a composite block that converts a unidirec
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | AUDI_IN.E1 | EVENT | Event input via the AUDI adapter; triggers the conversion |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | ADI_OUT.E1 | EVENT | Event output via the ADI adapter; signals completion of conversion |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | AUDI_IN.D1 | UDINT | Unsigned 32-bit value converted to a signed DINT |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | ADI_OUT.D1 | DINT | Converted signed 32-bit value |
 
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | AUDI_IN | adapter::types::unidirectional::AUDI | Socket (Input) | UDINT Adapter Interface |
-
 | ADI_OUT | adapter::types::unidirectional::ADI | Plug (Output) | DINT Adapter Interface |
 
 ## Functionality

@@ -21,11 +21,8 @@ No direct data outputs. The 2-bit data values are output via the outgoing adapte
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AL` | LWORD Input (64-bit) |
-
 | Plug (Output) | `QUARTER_BYTE_00` … `QUARTER_BYTE_31` | `adapter::types::unidirectional::AQ` | 32 outputs, each providing a 2-bit value (quarter) |
 
 Each adapter has one event channel and one data channel (`E1`, `D1`).
@@ -68,13 +65,9 @@ Each flip-flop stores the last loaded 2-bit value. A new input event overwrites 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Output Format | Number of Outputs | Synchronization |
-
 |----------|---------------|----------------|-----------------|
-
 | `SPLIT_AL_INTO_AQ` | 2-bit AQ adapter | 32 | Common event |
-
 | `SPLIT_LWORD_INTO_BYTES` (hypothetical) | 8-bit adapter | 8 | Event |
-
 | `SPLIT_LWORD_INTO_WORDS` (hypothetical) | 16-bit adapter | 4 | Event |
 
 This component is specifically optimized for the fine granularity of 2-bit segments and utilizes event-driven IEC 61499 adapter technology. The main difference compared to simpler split devices lies in the number of outputs (32 instead of the typical 4 or 8) and the use of flip-flops for stable output.

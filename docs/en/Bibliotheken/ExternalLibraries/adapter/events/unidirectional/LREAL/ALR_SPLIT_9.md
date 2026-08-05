@@ -20,11 +20,8 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type |
-
 |----------|------|-----|
-
 | **Socket** | `IN` | `ALR` (unidirectional) – The input that is distributed to the nine outputs. |
-
 | **Plug** | `OUT1` … `OUT9` | `ALR` (unidirectional) – The nine outputs to which the incoming signal is provided. |
 
 ## Functionality

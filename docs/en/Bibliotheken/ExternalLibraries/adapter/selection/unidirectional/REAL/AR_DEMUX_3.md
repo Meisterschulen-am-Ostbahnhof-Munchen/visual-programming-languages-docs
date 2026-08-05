@@ -9,25 +9,19 @@ The function block **AR_DEMUX_3** is a generic demultiplexer for unidirectional 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Starts the demultiplex operation. The data value `K` is evaluated to establish the connection between `IN` and one of the three outputs. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms successful execution of the demultiplexing operation after processing `REQ`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `K` | `UINT` | Index (1–3) that determines which output (`OUT1` to `OUT3`) is connected to the input adapter `IN`. Values outside the valid range result in no connection. |
 
 ### **Data Outputs**
@@ -36,15 +30,10 @@ None.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|------|----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AR` | Socket | Input adapter that provides the data to be distributed. |
-
 | `OUT1` | `adapter::types::unidirectional::AR` | Plug | First output adapter (Index 1). |
-
 | `OUT2` | `adapter::types::unidirectional::AR` | Plug | Second output adapter (Index 2). |
-
 | `OUT3` | `adapter::types::unidirectional::AR` | Plug | Third output adapter (Index 3). |
 
 ## Functionality

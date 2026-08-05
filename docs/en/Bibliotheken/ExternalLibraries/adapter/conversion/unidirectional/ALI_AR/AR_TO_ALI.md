@@ -27,11 +27,8 @@ No dedicated data outputs. The data is sent via the plug `ALI_OUT` (interface `D
 ### **Adapter**
 
 | Direction | Label | Type | Compatible Adapter Type | Description |
-
 |----------|-------------|-----|------------------------|--------------|
-
 | Socket | `AR_IN` | `adapter::types::unidirectional::AR` | AR Adapter (REAL) | Receiving adapter for the REAL value. |
-
 | Plug | `ALI_OUT` | `adapter::types::unidirectional::ALI` | ALI Adapter (LINT) | Providing adapter for the converted LINT value. |
 
 ## Functionality
@@ -59,13 +56,9 @@ The Composite FB itself does not have its own state machine. Its behavior is ent
 ## Comparison with Similar Function Blocks
 
 | FB | Conversion | Interface | Note |
-
 |----|---------------|---------------|-----------|
-
 | `AR_TO_ALI` | REAL → LINT | AR / ALI Adapter | Specifically for Adapter Coupling |
-
 | `F_REAL_TO_LINT` | REAL → LINT | Standalone I/O (REQ/CNF, IN/OUT) | Direct converter without adapters |
-
 The `AR_TO_ALI` encapsulates the `F_REAL_TO_LINT` and adds the adapter connections. The advantage lies in its simple, adapter-network-compatible connection. A direct converter without adapters would not be usable in adapter structures. |
 
 ## Conclusion

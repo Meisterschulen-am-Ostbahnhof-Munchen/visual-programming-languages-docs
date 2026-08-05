@@ -9,9 +9,7 @@ The **AX_TLIM** function block is a time-limiting timer according to IEC 61499-2
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |-------|--------|--------------------------------------------------------------|
-
 | `EIPT` | Event | Resets the time limit `PT` (does not trigger execution) |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ This function block does not have direct event outputs. Instead, the output even
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|--------|-------------------------------------------|
-
 | `PT` | `TIME` | Time limit (Preset Time) for the timer |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ Direct data outputs are not available. The current timer status is output via th
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----------|----------|----------------------------------------------------------------------------|
-
 | `IN` | `AX` | Socket | Input adapter: receives (via event `E1` and date `D1`) the Boolean value to be monitored |
-
 | `Q` | `AX` | Plug | Output adapter: sends (via event `E1` and date `D1`) the timer state (`TRUE` = active, `FALSE` = inactive or timeout) |
 
 > Note: The adapter type `AX` is a unidirectional standard adapter consisting of an event (`E1`) and a Boolean date (`D1`).
@@ -73,15 +66,10 @@ Direct data outputs are not available. The current timer status is output via th
 The function block cycles through the following logical states (not explicitly represented as a state machine in the XML):
 
 | State | Condition `IN.D1` | Output `Q.D1` | Timer running | Description |
-
 -----------------|-------------------|----------------|-------------|-------------------------------------------------------------|
-
 | **Inactive** | `FALSE` | `FALSE` | no | Waiting for activation |
-
 | **Active** | `TRUE` | `TRUE` | yes | Timer counting, output active |
-
 | **Timeout** | `TRUE` | `FALSE` | no | Timeout, timer expired, output inactive |
-
 | **Return** | `FALSE` | `FALSE` | no | Input reverts before timeout, output immediately inactive |
 
 A switch from **Active** to **Timeout** occurs when the remaining timer time reaches zero. A switch from **Active** to **Revert** occurs when `IN.D1` changes to `FALSE` before the timer expires.
@@ -95,13 +83,9 @@ A switch from **Active** to **Timeout** occurs when the remaining timer time rea
 ## Comparison with similar function blocks
 
 | Function block | Description | Difference to AX_TLIM |
-
 |-----------|-------------------------------------------------------------------------------|---------------------------------------------------------------------|
-
 | `E_TLIM` | Standard timer (IEC 61499-2), direct event and data interfaces | AX_TLIM encapsulates `E_TLIM` and provides an adapter-based interface (`AX`) that is easier to integrate into certain architectures. |
-
 | `E_DELAY` | Delay function block (response delay, fallback delay) | `E_DELAY`Delays signal changes, while AX_TLIM enforces a maximum activation duration. |
-
 | `E_SR` | Set-Reset Flip-Flop | AX_TLIM does not reset the output as long as the input is active (except via timeout). `E_SR` responds to separate set/reset events. |
 
 ## Conclusion

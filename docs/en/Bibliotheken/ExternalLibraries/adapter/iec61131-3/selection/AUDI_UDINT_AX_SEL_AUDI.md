@@ -9,9 +9,7 @@ The function block **AUDI_UDINT_AX_SEL_AUDI** implements a binary selection betw
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | EI1 | Event | Sets the value of IN1 (not directly evaluated, used for data provision synchronization) |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ This function block has **no dedicated event outputs**. Event control is handled
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | IN1 | UDINT | Second selectable input variable (direct) |
 
 ### **Data Outputs**
@@ -33,13 +29,9 @@ This function block has **no dedicated data outputs**. Output data is provided v
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket | IN0 | adapter::types::unidirectional::AUDI | First selectable input variable |
-
 | Socket | G | adapter::types::unidirectional::AX | Selector (contains the Boolean selection signal and an event) |
-
 | Plug | OUT | adapter::types::unidirectional::AUDI | Selected output (driven with event and data) |
 
 **Adapter details (according to their type definition):**

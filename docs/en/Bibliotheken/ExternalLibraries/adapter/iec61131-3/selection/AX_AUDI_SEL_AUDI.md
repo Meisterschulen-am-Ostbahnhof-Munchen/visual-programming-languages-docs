@@ -8,11 +8,8 @@ The function block `AX_AUDI_SEL_AUDI` implements a binary selection between two 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `EI0` | Event | Sets the value of `IN0` (passes it on to internal processing) |
-
 | `EI1` | Event | Sets the value of `IN1` (passes it on to internal processing) |
 
 ### **Event Outputs**
@@ -21,11 +18,8 @@ Event output is exclusively via the `OUT` adapter. Once the selection is complet
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `IN0` | UDINT | First selectable value |
-
 | `IN1` | UDINT | Second selectable value |
 
 ### **Data Outputs**
@@ -34,11 +28,8 @@ The output value is provided exclusively via the adapter `OUT` as data element `
 ### **Adapters**
 
 | Name | Type | Role |
-
 |------|-----|-------|
-
 | `G` | `adapter::types::unidirectional::AX` | Returns the selection control value (event `E1` + data `D1`) |
-
 | `OUT` | `adapter::types::unidirectional::AUDI` | Outputs the selected result as event `E1` and data `D1` |
 
 ## Functionality

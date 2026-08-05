@@ -39,15 +39,10 @@ Execution in IEC 61499 is based on **events**.
 ## 3. Function Blocks in Comparison
 
 | Feature | IEC 61131-3 FB | IEC 61499 FB |
-
 | :--- | :--- | :--- |
-
 | **Interface** | Data only (VAR_INPUT, VAR_OUTPUT) | Events and data |
-
 | **Execution** | Triggered by the call in the program (cycle) | Triggered by incoming events |
-
 | **Internal Logic** | Code body (in ST, LAD, FBD, etc.) | Explicit state machine (**ECC**) or interconnected network |
-
 | **Data Synchronization** | Implicit (on call) | Explicit via **WITH qualifier** (connects data with events) |
 
 ## Summary

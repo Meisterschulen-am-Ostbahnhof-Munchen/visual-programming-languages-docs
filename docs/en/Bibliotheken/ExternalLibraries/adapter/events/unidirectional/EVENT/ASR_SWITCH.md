@@ -9,9 +9,7 @@ The **ASR_SWITCH** function block acts as a demultiplexer for **ASR events** (SE
 ### **Event Inputs**
 
 | Event | Data Link | Description |
-
 |----------|--------------|--------------|
-
 | `EIG` | `G` | Sets the switching value `G` to the Boolean value present at input `G`. |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ This function block does not have any independent event outputs. Output is exclu
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `G` | `BOOL` | Switch position: `FALSE` → Events are forwarded to `EO0`, `TRUE` → to `EO1`. |
 
 ### **Data Outputs**
@@ -33,13 +29,9 @@ None.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|---------------------------|--------------|
-
 | `EI` | Socket | `adapter::types::unidirectional::ASR` | Receives incoming ASR events (SET/RESET). |
-
 | `EO0` | Plug | `adapter::types::unidirectional::ASR` | Output for the case `G = FALSE`. |
-
 | `EO1` | Plug | `adapter::types::unidirectional::ASR` | Output for the case `G = TRUE`. |
 
 ## Functionality
@@ -75,17 +67,11 @@ After the action is output, the ECC immediately (condition = `1`) returns to the
 The following table summarizes the ECC states and the actions performed:
 
 | State | Description | Action(s) |
-
 |---------------|----------------------------------------------|-------------------|
-
 | `START` | Waiting for events | – |
-
 | `G0_SET` | `EI.SET` at `G = FALSE` | Output `EO0.SET` |
-
 | `G1_SET` | `EI.SET` at `G = TRUE` | Output `EO1.SET` |
-
 | `G0_RESET` | `EI.RESET` at `G = FALSE` | Output `EO0.RESET` |
-
 | `G1_RESET` | `EI.RESET` at `G = TRUE` | Output `EO1.RESET` |
 
 All states (except `START`) return to `START` with an unconditional transition (`1`).

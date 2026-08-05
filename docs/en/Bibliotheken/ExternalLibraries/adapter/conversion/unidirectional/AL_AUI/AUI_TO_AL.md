@@ -26,11 +26,8 @@ The data output is provided via the plug:
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `AUI` | **AUI_IN** | Input (Socket) | Input adapter for the UINT value and the trigger event. |
-
 | `AL` | **AL_OUT** | Output (Plug) | Output adapter for the converted LWORD value and the acknowledgment event. |
 
 ## Functionality

@@ -27,11 +27,8 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | `AW_IN` | `adapter::types::unidirectional::AW` | Expects a `WORD` value via data port `D1` and an event via `E1`. |
-
 | Plug (Output) | `AUS_OUT` | `adapter::types::unidirectional::AUS` | Returns the converted `USINT` value via data port `D1` and an acknowledgment event via `E1`.
 
 ## Functionality

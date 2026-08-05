@@ -21,25 +21,15 @@ No data outputs available.
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-
 Input (Socket) | `IN` | `adapter::types::unidirectional::AI` | Single analog input distributed to all outputs. |
-
 Output (Plug) | `OUT1` | `adapter::types::unidirectional::AI` | First outgoing AI channel. |
-
 Output (Plug) | `OUT2` | `adapter::types::unidirectional::AI` | Second outgoing AI channel. |
-
 Output (Plug) | `OUT3` | `adapter::types::unidirectional::AI` | Third outgoing AI channel. |
-
 Output (Plug) | `OUT4` | `adapter::types::unidirectional::AI` | Fourth outgoing AI channel. |
-
 Output (Plug) | `OUT5` | `adapter::types::unidirectional::AI` | Fifth outgoing AI channel. |
-
 Output (Plug) | `OUT6` | `adapter::types::unidirectional::AI` | Sixth outgoing AI channel. |
-
 Output (Plug) | `OUT7` | `adapter::types::unidirectional::AI` | Seventh outgoing AI channel. |
-
 Output (Plug) | `OUT8` | `adapter::types::unidirectional::AI` | Eighth outgoing AI channel. |
-
 Output (Plug) | `OUT9` | `adapter::types::unidirectional::AI` | Ninth outgoing AI channel. |
 
 ## Functionality

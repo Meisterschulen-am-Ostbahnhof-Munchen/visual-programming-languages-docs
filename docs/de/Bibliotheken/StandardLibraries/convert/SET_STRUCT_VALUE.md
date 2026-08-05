@@ -55,15 +55,10 @@ Er ergänzt oft Bausteine, die Werte aus Strukturen auslesen (`GET_STRUCT_VALUE`
 ## Metadaten
 
 | Attribut | Wert |
-
 | :--- | :--- |
-
 | Copyright | (c) 2023 Primetals Technologies Austria GmbH |
-
 | Lizenz | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2023-03-06, Alois Zoitl) |
-
 | 4diac-Paket | eclipse4diac::convert |
 
 ## Fazit

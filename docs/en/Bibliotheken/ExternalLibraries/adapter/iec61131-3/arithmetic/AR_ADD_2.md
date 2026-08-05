@@ -21,13 +21,9 @@ None
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-
 |-------------|----------|-----|-----------|
-
 | `IN1` | Socket | `adapter::types::unidirectional::AR` | ADD input 1 |
-
 | `IN2` | Socket | `adapter::types::unidirectional::AR` | ADD input 2 |
-
 | `OUT` | Plug | `adapter::types::unidirectional::AR` | ADD result |
 
 The adapters are of type `unidirectional::AR` and enable type-safe connections with other function blocks that support the same adapter type.

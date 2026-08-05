@@ -85,17 +85,11 @@ The function block does not have an explicit state machine. Processing is strict
 ## Comparison with similar function blocks
 
 | Property | ADI_FB_CTUD | Standard CTUD (IEC 61131-3) |
-
 |-------------|---------------|------------------------------|
-
 | Interface | Adapter-based (AX/ADI) | Direct inputs/outputs (events, data) |
-
 | Event behavior | Output on every update | Mostly edge- or value-dependent |
-
 | Reusability | Easy due to adapter encapsulation | Dependent on the specific controller |
-
 | Compatibility | IEC 61131-3 compliant (internal) | Direct standard implementation |
-
 Filtering | Recommendation: AX_D_FF | Partially integrated |
 
 The ADI_FB_CTUD offers clean, adapter-based encapsulation, but requires additional measures for on-change triggering if needed.

@@ -47,15 +47,10 @@ The **ADD_2** is a generic function block for adding two values, developed under
 ## Supported Data Types
 
 | Type | Example |
-
 |----------|--------------------|
-
 | INT | 123 + 456 = 579 |
-
 | REAL | 1.23 + 4.56 = 5.79 |
-
 | TIME | T#1s + T#2s = T#3s |
-
 LREAL | 1.23e10 + 4.56e10 |
 
 ## Application Scenarios
@@ -67,13 +62,9 @@ LREAL | 1.23e10 + 4.56e10 |
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | ADD_2 | ADD_4 | MUL_2 |
-
 |---------------|--------|--------|--------|
-
 | Operation | Addition | Addition | Multiplication |
-
 | Inputs | 2 | 4 | 2 |
-
 | Type Support | ANY_MAG | ANY_MAG | ANY_MAG |
 
 ## Error Handling

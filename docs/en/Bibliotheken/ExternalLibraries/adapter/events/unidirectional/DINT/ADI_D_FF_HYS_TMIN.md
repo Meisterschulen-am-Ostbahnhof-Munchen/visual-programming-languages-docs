@@ -38,11 +38,8 @@ The function block internally uses the FB `E_D_FF_ANY_HYS_TMIN`. It processes th
 The function block has two stable internal states (e.g., HIGH/LOW or TRUE/FALSE) that represent the latched output value. A state change only occurs if the incoming value (via **I**) exceeds the hysteresis threshold and the time elapsed since the last output event is at least `Tmin`. Otherwise, the event is suppressed.
 
 | State | Description |
-
 |---------|--------------|
-
 | LOW | Output value is logic 0 or low |
-
 | HIGH | Output value is logic 1 or high |
 
 Changes between states occur according to the hysteresis and timing conditions.

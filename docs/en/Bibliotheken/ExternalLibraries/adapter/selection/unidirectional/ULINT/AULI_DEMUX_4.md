@@ -8,25 +8,19 @@ The **AULI_DEMUX_4** is a generic demultiplexer that forwards an incoming AULI a
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the demultiplexing operation. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirms successful forwarding to the selected adapter. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (value range 0–3 for OUT1…OUT4) |
 
 ### **Data Outputs**
@@ -35,17 +29,11 @@ The **AULI_DEMUX_4** is a generic demultiplexer that forwards an incoming AULI a
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | IN | AULI | Socket (Input) | Input adapter containing the data to be distributed |
-
 | OUT1 | AULI | Plug (Output) | First output (when K=0) |
-
 OUT2 | AULI | Plug (output) | Second output (when K=1) |
-
 OUT3 | AULI | Plug (output) | Third output (when K=2) |
-
 OUT4 | AULI | Plug (output) | Fourth output (when K=3) |
 
 ## Functionality
@@ -85,13 +73,9 @@ A detailed state graph is not required because the function block operates atomi
 ## Comparison with Similar Components
 
 | Component | Type | Difference |
-
 |----------|-----|-------------|
-
 | AULI_MUX_4 | Multiplexer | Combines multiple AULI inputs into one output (reverse direction). |
-
 | AULI_DEMUX_2 | Dual Demultiplexer | Same functionality, but only two outputs. |
-
 | AULI_SWITCH | Switch | Enables dynamic connection between multiple inputs and outputs (matrix topology). |
 
 ## Conclusion

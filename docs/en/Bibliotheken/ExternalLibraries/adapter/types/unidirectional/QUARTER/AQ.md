@@ -11,9 +11,7 @@ None.
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | E1 | Event | Indication (or Request) Event from Plug (triggered together with D1) |
 
 ### **Data Inputs**
@@ -22,9 +20,7 @@ None.
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | D1 | BYTE | Indication (or Request) Data from Plug (2 bits used) |
 
 ### **Adapter**
@@ -51,15 +47,10 @@ The adapter itself has no internal state. The sending function block controls th
 ## Comparison with Similar Function Blocks
 
 | Feature | AQ (this adapter) | Other adapters (e.g., with multiple events) |
-
 |---------|---------------------|--------------------------------------------|
-
 | Events | 1 output | Often multiple inputs/outputs |
-
 | Data | 1 byte (2 bits used) | Frequently multiple variables or complex types |
-
 | Alignment | Unidirectional (Plug-side) | Bidirectional or pure socket-side |
-
 Complexity | Very low | Medium to high |
 
 The `AQ` adapter is specifically optimized for the minimal case of "one event + one byte".

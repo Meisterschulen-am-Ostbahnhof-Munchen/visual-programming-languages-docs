@@ -67,13 +67,9 @@ The **F_TRUNC** function block is a standards-compliant function block for round
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_TRUNC | F_ROUND | F_FLOOR |
-
 |---------------|----------|----------|----------|
-
 | Operation | Direction Zero | Mathematical | Round Down |
-
 | Example | 3.9 → 3 | 3.9 → 4 | 3.9 → 3 |
-
 | Example | -2.7 → -2 | -2.7 → -3 | -2.7 → -3 |
 
 ## Conclusion

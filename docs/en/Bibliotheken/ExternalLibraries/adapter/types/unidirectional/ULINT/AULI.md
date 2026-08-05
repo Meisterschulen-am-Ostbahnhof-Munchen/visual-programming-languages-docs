@@ -12,7 +12,6 @@
 ### Events
 
 | Name | Comment | With |
-
 | :--- | :--- | :--- |
 | E1 | Indication (or Request) | D1 |
 

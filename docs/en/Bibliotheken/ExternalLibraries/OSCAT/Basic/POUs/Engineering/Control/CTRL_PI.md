@@ -46,19 +46,14 @@ default values for KP = 1, TN = 1, TV = 1, LIMIT_L = -1000, LIMIT_H = +1000.
 | CP | REAL | 1.0 | Proportional Gain |
 | AI | REAL | 1.0 | Integral Gain |
 | LL | REAL | -1000.0 | Lower Limit |
-
 | LH | REAL | 1000.0 | Upper Limit |
 
 ### Output Variables
 
 | Name | Type | Comment |
-
 | :--- | :--- | :--- |
-
 | Y | REAL | Control Output |
-
 | DIFF | REAL | Difference (Error) |
-
 | LIM | BOOL | Limit Reached Flag |
 
 ## 🛠️ Related Exercises

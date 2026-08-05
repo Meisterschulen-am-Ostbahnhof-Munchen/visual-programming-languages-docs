@@ -8,25 +8,19 @@ The AR_DEMUX_5 function block is a generic demultiplexer for the unidirectional 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Sets the index K and triggers the demultiplexing. (With data input K) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that index K has been processed and the input value has been passed to the corresponding output. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (1 to 5) for selecting the destination output. |
 
 ### **Data Outputs**
@@ -35,11 +29,8 @@ The AR_DEMUX_5 function block is a generic demultiplexer for the unidirectional 
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|------|----------|-----------|
-
 | adapter::types::unidirectional::AR | IN | Socket | Input adapter that provides the data to be demultiplexed. |
-
 | adapter::types::unidirectional::AR | OUT1…OUT5 | Plug | Five output adapters to which the data is forwarded. |
 
 ## Functionality

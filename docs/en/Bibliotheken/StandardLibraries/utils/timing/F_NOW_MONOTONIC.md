@@ -86,13 +86,9 @@ Reliable timers for critical processes.
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Function | `F_NOW_MONOTONIC` | `NOW()` | `NOW_SYSTEM()` |
-
 |---------------------|-----------------------|-----------------------|-----------------------|
-
 | **Time Source** | Monotonous (Hardware) | System Time | System Time (UTC) |
-
 | **Influenceable** | No | Yes (NTP, Time Zone) | Yes (NTP) |
-
 | **Use Case** | Real-time Measurements | General Timestamps | Global Timestamps |
 
 ---

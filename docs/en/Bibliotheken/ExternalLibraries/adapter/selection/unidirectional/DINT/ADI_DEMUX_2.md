@@ -8,25 +8,19 @@ The ADI_DEMUX_2 is a generic demultiplexer function block that switches a data s
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Trigger to set index K; initiates the switching |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirmation of successful index selection and forwarding |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|------|----------------------|
-
 | K | UINT | Index (1 or 2) for selecting the destination output |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ No data outputs – output is exclusively via the adapters.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----------------------------------------------|---------------------------------------------|
-
 | Socket | IN | adapter::types::unidirectional::ADI | Input signal to be demultiplexed |
-
 | Plug | OUT1 | adapter::types::unidirectional::ADI | First output channel |
-
 | Plug | OUT2 | adapter::types::unidirectional::ADI | Second Output Channel |
 
 ## Functionality

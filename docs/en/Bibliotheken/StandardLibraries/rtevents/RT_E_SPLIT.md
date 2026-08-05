@@ -6,13 +6,9 @@ Real-time version of the E_SPLIT block. Splits one event into multiple events.
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac Package | eclipse4diac::rtevents |
 
 ---

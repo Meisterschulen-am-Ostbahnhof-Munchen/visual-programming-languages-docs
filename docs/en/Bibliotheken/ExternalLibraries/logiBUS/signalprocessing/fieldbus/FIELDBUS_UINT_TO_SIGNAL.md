@@ -8,34 +8,26 @@ The FIELDBUS_UINT_TO_SIGNAL function block is used to process fieldbus signals. 
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Normal Execution Trigger (connected to IN) |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
 |----------|----------|-----------|
-
 | CNF | Event | Execution confirmation (connected to OUT and VALID) |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |------|----------|-------------|-----------|
-
 | IN | UINT | WORD_TO_UINT(NOT_AVAILABLE_WM) | Input value (raw fieldbus signal) |
 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Comment |
-
 |------|----------|-------------|-----------|
-
 | OUT | UINT | 16#0000 | Filtered Output Value |
-
 | VALID | BOOL | FALSE | TRUE if the signal is recognized as valid |
 
 ### **Adapter**

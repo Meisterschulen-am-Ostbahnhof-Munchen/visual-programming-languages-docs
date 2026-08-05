@@ -8,25 +8,19 @@ The function block **SET_SINT** is used to write a SINT value from its data inpu
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Normal execution request. Triggers the assignment from **IN** to **OUT**. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Execution confirmation. Sent after successful assignment. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|------|--------------|--------------|
-
 | **IN** | SINT | 0 | The value to be written. |
 
 ### **Data Outputs**
@@ -50,9 +44,7 @@ After the assignment is complete, the **CNF** event is triggered. The InOut vari
 The function block has a single state (ECState) named **REQ**:
 
 | State | Action | Output Event |
-
 |---------|--------|-----------------|
-
 | REQ | `OUT := IN` | CNF |
 
 There is only this one state; after execution, the function block returns to its initial state. It is not an explicit state machine with multiple states.

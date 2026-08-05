@@ -8,9 +8,7 @@ The function block `SPLIT_AB_INTO_AQ` is used to split a data byte received via 
 ### **Event Inputs**
 
 | Name | Description |
-
 |---------|--------------|
-
 | `IN.E1` | An event at the socket triggers the decomposition and output of the quartets. |
 
 ### **Event Outputs**
@@ -20,9 +18,7 @@ No direct event outputs; output is provided via the events of the connected adap
 ### **Data Inputs**
 
 | Name | Description |
-
 |---------|--------------|
-
 | `IN.D1` | The incoming data byte (type: BYTE) that is split into four quartets. |
 
 ### **Data Outputs**
@@ -32,17 +28,11 @@ No direct data outputs; the quartets are provided via the data interfaces of the
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |--------------------|-----|----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AB` | Socket (Input) | Receives the byte to be parsed, including the event. |
-
 | `QUARTER_BYTE_00` | `adapter::types::unidirectional::AQ` | Plug (Output) | Outputs the quartet 0 (least significant 2 bits). |
-
 | `QUARTER_BYTE_01` | `adapter::types::unidirectional::AQ` | Plug (Output) | Outputs the quartet 1. |
-
 | `QUARTER_BYTE_02` | `adapter::types::unidirectional::AQ` | Plug (Output) | Outputs quartet 2. |
-
 | `QUARTER_BYTE_03` | `adapter::types::unidirectional::AQ` | Plug (Output) | Outputs quartet 3 (most significant 2 bits). |
 
 ## Functionality

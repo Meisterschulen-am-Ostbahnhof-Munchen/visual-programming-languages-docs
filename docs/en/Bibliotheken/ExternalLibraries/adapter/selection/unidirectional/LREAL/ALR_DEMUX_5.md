@@ -9,25 +9,19 @@ The function block **ALR_DEMUX_5** is a generic demultiplexer for ALR data (adap
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `REQ` | Event | Trigger the demultiplexing operation with the current index `K` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation that the selected output has been set |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index of the output to be activated (1...5) |
 
 ### **Data Outputs**
@@ -38,11 +32,8 @@ No direct data outputs are available. Data is transmitted via the adapters.
 ## ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket (Input) | `IN` | `adapter::types::unidirectional::ALR` | Input value to be demultiplexed |
-
 | Plug (Output) | `OUT1`...`OUT5` | `adapter::types::unidirectional::ALR` | Outputs for the demultiplexed value |
 
 ## Functionality

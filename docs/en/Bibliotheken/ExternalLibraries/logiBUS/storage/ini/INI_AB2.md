@@ -9,49 +9,35 @@ The function block `INI_AB2` is used to read and write REAL values to or from a 
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | INIT | EInit | Initialization event; starts the read or write operation depending on the connected adapter logic. The data passed specifies the section, key, and a default value. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INITO | EInit | Initialization confirmation. Triggered after the read/write access is complete. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QI | BOOL | Qualifier for the event input; controls its execution. |
-
 | SECTION | STRING | Name of the section in `settings.ini`. |
-
 | KEY | STRING | Name of the key within the section. |
-
 | DEFAULT_VALUE | REAL | The value returned if the key does not exist in `settings.ini`. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QO | BOOL | Output qualifier; indicates successful execution. |
-
 | STATUS | STRING | Service status message (e.g., error messages or "OK"). |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | VAL | adapter::types::bidirectional::AB2 | Bidirectional adapter for exchanging real values. The incoming value (`DO1`) is written to the INI file; the outgoing value (`DI1`) is read from the INI file and passed on. |
 
 ## Functionality

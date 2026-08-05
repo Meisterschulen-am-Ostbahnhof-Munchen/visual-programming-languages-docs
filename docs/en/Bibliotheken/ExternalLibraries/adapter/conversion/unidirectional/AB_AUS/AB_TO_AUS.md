@@ -25,11 +25,8 @@ There are no direct data outputs. The converted data (USINT) is provided via the
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | Socket | **AB_IN** | Input | Unidirectional adapter of type `adapter::types::unidirectional::AB`. Returns a BYTE (`D1`) and an event (`E1`). |
-
 | Plug | **OFF_OUT** | Output | Unidirectional adapter of type `adapter::types::unidirectional::AUS`. Provides a USINT (`D1`) and an event (`E1`). |
 
 ## Functionality
@@ -62,13 +59,9 @@ The **AB_TO_AUS** function block does not have its own state machine. Its operat
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------|--------------|
-
 | **F_BYTE_TO_USINT** | Simple IEC converter without adapter connection. Must be manually wired with event and data connections. |
-
 **AB_TO_AUS** | Composite function block that encapsulates the entire adapter conversion, including event forwarding, thus providing a clean, abstracted interface. |
-
 **AUS_TO_AB** (hypothetical) | Reverse conversion from USINT to BYTE – mirrored functionality for the opposite direction. |
 
 The **AB_TO_AUS** function block stands out due to its ease of use and direct adapter compatibility.

@@ -4,9 +4,7 @@ The function block **RS** is a bistable element (flip-flop) where resetting take
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
 **Input** | S | BOOL | Set Input (Set) |
-
 **Input** | R1 | BOOL | Reset Input (Reset) |
-
 **Output** | Q1 | BOOL | Output State |
 
 ## Function
@@ -16,15 +14,10 @@ The behavior corresponds to **Table 43** (Standard Bistable Function Blocks) of 
 The logic is described by the following truth table:
 
 | S | R1 | Q1 (current) | Description |
-
 | :---: | :---: | :---: | :--- |
-
 | 0 | 0 | Q1 (old) | Hold state |
-
 | 0 | 1 | 0 | Reset |
-
 | 1 | 0 | 1 | Set |
-
 | 1 | 1 | 0 | **Priority Reset** |
 
 *Note: The initial state of the output variable `Q1` is `0` (FALSE) by default.*

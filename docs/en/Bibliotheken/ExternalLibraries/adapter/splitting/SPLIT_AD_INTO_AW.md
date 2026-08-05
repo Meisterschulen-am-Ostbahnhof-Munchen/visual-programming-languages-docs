@@ -10,37 +10,27 @@ The function block **SPLIT_AD_INTO_AW** is used to split a 32-bit DWORD value, r
 ### **Event Inputs**
 
 | Name | Adapter | Event | Description |
-
 |-------------|---------|----------|-----------|
-
 | IN | AD (Socket) | E1 | Starts the partitioning of the incoming DWORD value. |
 
 ### **Event Outputs**
 
 | Name | Adapter | Event | Description |
-
 |-------------|---------|----------|------------|
-
 | WORD_00 | AW (Plug) | E1 | Signals that the lower-order WORD (low word) is valid. |
-
 | WORD_01 | AW (Plug) | E1 | Indicates that the higher-order WORD (High Word) is valid. |
 
 ### **Data Inputs**
 
 | Name | Adapter | Data Type | Description |
-
 |-------------|---------|----------|------------|
-
 | IN | AD (Socket) | D1 (DWORD) | 32-bit input value that is split. |
 
 ### **Data Outputs**
 
 | Name | Adapter | Data Type | Description |
-
 |-------------|---------|----------|-------------|
-
 | WORD_00 | AW (Plug) | D1 (WORD) | Low-order 16-bit word of the input DWORD. |
-
 | WORD_01 | AW (Plug) | D1 (WORD) | High-order 16-bit word of the input DWORD. |
 
 ### **Adapters**
@@ -85,11 +75,8 @@ The function block does not have an explicit state machine. Its behavior is pure
 ## Comparison with Similar Components
 
 | Component | Description | Difference |
-
 |----------|--------------|-------------|
-
 | **SPLIT_DWORD_INTO_WORDS** | Pure data splitting without event output or adapters. | Provides only data outputs, no events, and no adapter connectivity. |
-
 **SPLIT_AD_INTO_AW** | Adapter-based variant with stabilized outputs. | Integrates flip-flops and event output, specifically for AD/AW adapters. |
 
 ## Conclusion

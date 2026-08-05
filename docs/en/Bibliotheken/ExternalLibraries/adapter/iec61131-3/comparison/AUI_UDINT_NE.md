@@ -9,9 +9,7 @@ The function block **AUI_UDINT_NE** performs a not equal comparison between two 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Service Request (trigger for the comparison) |
 
 #### **Event Outputs**
@@ -21,9 +19,7 @@ The function block itself does not have direct event outputs. The result is prov
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN2 | UDINT | Input value 2 (second comparison value) |
 
 ### **Data Outputs**
@@ -53,25 +49,17 @@ This function block does not have direct data outputs. The comparison value is o
 ### **Adapter**
 
 | ...| **Adapter**
-
-| **Adapter**
-
 | **Adapter**
 | **Adapter**
-
-| **Adapter**
-
 | **Adapter**
 | **Adapter**
-
 | **Adapter**
 | **Adapter**
-
+| **Adapter**
+| **Adapter**
 | **Adapter**
 | **Adapt |-----|----------|------|-----------|
-
 | `adapter::types::unidirectional::AUI` | Socket | IN1 | Input value 1 (first comparison value) |
-
 | `adapter::types::unidirectional::AX` | Plug | OUT | value 1 != value2 = true |
 
 ## Functionality

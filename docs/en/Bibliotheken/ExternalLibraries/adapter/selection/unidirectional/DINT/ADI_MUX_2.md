@@ -8,25 +8,19 @@ The function block **ADI_MUX_2** is a generic multiplexer for ADI (Agricultural 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the multiplexer action. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirms successful indexing and selection. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Selection Index (0 → IN1, 1 → IN2) |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ No direct data outputs. Output is via the **OUT** adapter.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (Output) | OUT | `adapter::types::unidirectional::ADI` | Output: Returns the data of the selected input. |
-
 | Socket (Input) | IN1 | `adapter::types::unidirectional::ADI` | First input (K = 0). |
-
 Socket (Input) | IN2 | `adapter::types::unidirectional::ADI` | Second input (K = 1). |
 
 ## Functionality

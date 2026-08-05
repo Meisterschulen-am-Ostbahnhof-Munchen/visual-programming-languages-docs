@@ -9,21 +9,15 @@ The function block `E_T_FF_SR_SYM_STORE` implements an event-driven bistable fli
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `S` | Event | Set output Q to TRUE |
-
 | `R` | Event | Reset output Q to FALSE |
-
 | `CLK` | Event | Toggle – switches Q (TRUE → FALSE or FALSE → TRUE) |
 
 ### **Event Outputs**
 
 | Name | Type | With Data | Comment |
-
 |------|-----|------------|-----------|
-
 | `EO` | Event | Q | Indicates that the value of Q has changed |
 
 ### **Data Inputs**
@@ -33,17 +27,13 @@ None (all inputs are via events).
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `Q` | BOOL | Current value of the flip-flop (TRUE or FALSE) |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `Q_INIT` | `adapter::types::bidirectional::AX2` | Sets the initial value of Q on the INIT event. The adapter provides an event-driven, bidirectional channel: Q_INIT.EI1 triggers the initialization, and Q_INIT.DI1 returns the desired initial value (TRUE or FALSE). Additionally, the function block returns the set value via Q_INIT.DO1.
 
 ## Functionality
@@ -80,15 +70,10 @@ The output `EO` is activated with every state change of Q.
 The state machine (ECC) comprises four states:
 
 | State | Description | Outgoing Transitions |
-
 |---------|--------------|--------------------------|
-
 | `START` | Initial sleep state after power-on | → `Init` at `Q_INIT.EI1` |
-
 | `Init` | Initialization state – determines the start value | → `SET` at `TRUE = Q_INIT.DI1` <br> → `RESET` at `FALSE = Q_INIT.DI1` |
-
 | `SET` | Q = TRUE | → `RESET` at `R` or `CLK` |
-
 | `RESET` | Q = FALSE | → `SET` at `S` or `CLK` |
 
 After exiting `Init`, the state `SET` or `RESET` is reached; the states `START` and `Init` are not traversed during normal operation.
@@ -101,15 +86,10 @@ After exiting `Init`, the state `SET` or `RESET` is reached; the states `START` 
 ## Comparison with Similar Blocks
 
 | Block | Properties | Difference to `E_T_FF_SR_SYM_STORE` |
-
 |----------|--------------|---------------------------------------|
-
 | `E_SR_FF` (Standard SR Flip-Flop) | Set, reset; usually no toggle, no configurable start value | Missing toggle function; start value often fixed at FALSE |
-
 | `E_RS_FF` | Set prioritized | Different prioritization; no toggle |
-
 | `E_D_FF` (D Flip-Flop) | Receives a data input with clock | No set/reset without data; no symmetric start |
-
 | `E_CTU` (Counter) | Counts events | No bistable behavior, but counter value |
 
 The `E_T_FF_SR_SYM_STORE`Combines SR functionality, toggle switching, and an initialized start value in a single component – a rare combination in the IEC 61499 world.

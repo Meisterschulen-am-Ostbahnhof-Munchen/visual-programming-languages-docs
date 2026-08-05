@@ -8,13 +8,9 @@ The function block `AX_T_FF_SR_SYM_STORE` implements an event-driven, bistable f
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------------------|
-
 | S | Event | Sets the output `Q` to TRUE |
-
 | R | Event | Sets output `Q` to FALSE |
-
 | CLK | Event | Toggles output `Q` (TRUE ↔ FALSE) |
 
 ### **Event Outputs**
@@ -29,11 +25,8 @@ No direct data outputs. The current state is made available via the adapters.
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |---------|----------------------------------|---------------------------------------------|
-
 | Q | adapter::types::unidirectional::AX | Returns the current state of the flip-flop (single-wire Boolean value) |
-
 | Q_INIT | adapter::types::bidirectional::AX2 | Bidirectional interface for the initial value of `Q` at INIT (includes three inputs/outputs: e.g., DI1/DO1, EI1/EO1) |
 
 ## Functionality
@@ -78,15 +71,10 @@ This functional reduction simplifies the interface and avoids confusion with the
 ## State Overview
 
 | State | Description | Output on Event |
-
 |---------|------------------------------------------|-----------------------------------------------|
-
 | START | Initial Wait State | Waits for initialization event via Q_INIT.EI1 |
-
 | Init | Initialization | Reads Q_INIT.DI1, sets Q and Q_INIT.DO1 accordingly |
-
 | SET | Output Q = TRUE | Processes S, R, CLK (see Transitions) |
-
 | RESET | Output Q = FALSE | Processes S, R, CLK (see Transitions) |
 
 **State Transitions (Simplified)**

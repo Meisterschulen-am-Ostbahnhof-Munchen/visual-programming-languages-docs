@@ -9,25 +9,19 @@ The **AIS_DEMUX_4** function block is a generic AIS demultiplexer. It receives a
 ### **Event Inputs**
 
 | Event | Description | Accompanying Signal |
-
 |----------|---------------|---------------------|
-
 | REQ | Sets the index K and triggers forwarding | K (UINT) |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirms that the forwarding according to index K has been completed |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|--------|--------------|
-
 | K | UINT | Index of the desired output (1-4) |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ No explicit data outputs. Output is provided via adapters OUT1 … OUT4.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug (Output) | OUT1 | `adapter::types::unidirectional::AIS` | First AIS output channel |
-
 | Plug (Output) | OUT2 | `adapter::types::unidirectional::AIS` | Second AIS output channel |
-
 | Plug (Output) | OUT3 | `adapter::types::unidirectional::AIS` | Third AIS output channel |
-
 | Plug (Output) | OUT4 | `adapter::types::unidirectional::AIS` | Fourth AIS output channel |
-
 | Socket (Input) | IN | `adapter::types::unidirectional::AIS` | AIS input signal that is demultiplexed |
 
 ## Functionality
@@ -87,13 +75,9 @@ The transition from IDLE to ROUTE is performed using REQ, and after the forwardi
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Outputs | Special Features |
-
 |----------|-----|----------|--------------|
-
 | `AIS_DEMUX_4` | Adapter-based | 4 | Specifically for AIS data, generic class |
-
 | `GEN_DEMUX` (generic data demultiplexer) | Direct data | Variable | Works with elementary data types, no adapters |
-
 | `MUX` (multiplexer) | Adapter/data | 1 input → multiple outputs | Reverse direction |
 
 The AIS_DEMUX_4 stands out due to its adapter interface and its specific focus on AIS protocols.

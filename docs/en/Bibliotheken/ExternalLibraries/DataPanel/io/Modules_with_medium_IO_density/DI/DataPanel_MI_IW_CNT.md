@@ -9,53 +9,35 @@ The **DataPanel_MI_IW_CNT** is a service interface function block from the DataP
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |--------|-------|---------------------------------------------------|
-
 | INIT | EInit | Initializes the channel (sets hardware parameters) |
-
 | REQ | Event | Requests a current counter value |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |-------|-------|-----------------------------------------------------------|
-
 | INITO | EInit | Acknowledges successful initialization |
-
 | CNF | Event | Confirmation of a requested REQ operation |
-
 | IND | Event | Asynchronous indication (triggered by pulse or time interval) |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |---------------|----------|-----------------------------------------------------------------------------|
-
 | QI | BOOL | Qualifies the INIT/REQ event |
-
 | PARAMS | STRING | Service parameter (vendor-dependent configuration) |
-
 | u8SAMember | USINT | Node SA (224..239); Default = `MI::MI_00` |
-
 | Input | DataPanel_MI_DI_S | Input identification (must be "7A" or "8A"); Default = `Invalid` |
-
 | ImpulseDelta | WORD | Pulse threshold for asynchronous IND triggering (number of pulses) |
-
 | TimeDelta | DWORD | Time threshold for asynchronous IND triggering (in ms) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |--------|--------|----------------------------------------------|
-
 | QO | BOOL | Qualifies the event outputs |
-
 | STATUS | STRING | Status message (e.g., "OK" or error code) |
-
 | IN | WORD | Current 16-bit counter value (pulse counter) |
 
 ### **Adapters**
@@ -84,19 +66,12 @@ Error handling is provided via the `STATUS` output and the `QO` flag. If an erro
 The FB (Function Block) cycles through classic service interface states:
 
 | State | Description |
-
 |-------------|-----------------------------------------------------------------|
-
 | **IDLE** | Waiting for INIT or REQ. Hardware is not yet assigned. |
-
 | **INIT** | INIT received – Parameterization and hardware reservation are in progress. |
-
 | **ACTIVE** | Initialization successful – Channel is ready for operation. |
-
 | **REQUEST** | REQ received – Querying the current counter value. |
-
 | **INDICATE** | Asynchronous condition met – Sending an IND event. |
-
 | **ERROR** | Error occurred (e.g., incorrect parameter, hardware error). |
 
 After an error, only a new INIT can return the FB to the IDLE state.

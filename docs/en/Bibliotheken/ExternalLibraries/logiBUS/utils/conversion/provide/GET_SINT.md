@@ -9,9 +9,7 @@ The **GET_SINT** function block is used to read a value of the data type `SINT` 
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `REQ` | Event | Normal execution request. Triggers the reading of the InOut variable. |
 
 - **With Link**: The event input `REQ` is linked to the data variable `IN`.
@@ -19,9 +17,7 @@ The **GET_SINT** function block is used to read a value of the data type `SINT` 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `CNF` | Event | Confirmation of execution. Sent after a successful copy operation. |
 
 - **With Link**: The event output `CNF` is linked to the data variables `OUT` and `IN`.
@@ -33,9 +29,7 @@ This function block does not have traditional data inputs. Instead, it uses a va
 ### **Data Outputs**
 
 | Variable | Data Type | Initial Value | Comment |
-
 |----------|----------|-------------|------------|
-
 | `OUT` | SINT | 0 | Buffered output value. Contains the copy of `IN` after a successful `REQ` execution. |
 
 ### **Adapter**
@@ -65,9 +59,7 @@ The InOut variable `IN` allows direct access to an external variable or memory l
 The function block uses a simple ECA state machine with exactly one state:
 
 | State | Action | Outgoing Event |
-
 |---------|--------|----------------------|
-
 | `REQ` | `REQ` Algorithm (OUT := IN) | `CNF` |
 
 - Every incoming `REQ` event triggers an immediate action and sends `CNF`. There are no branches, error states, or timing issues.
@@ -80,15 +72,10 @@ The function block uses a simple ECA state machine with exactly one state:
 ## Comparison with Similar Building Blocks
 
 | Building Block | Data Type | Special Feature |
-
 |----------|----------|--------------|
-
 | `GET_BOOL` | BOOL | Same functionality, but for Boolean values. |
-
 | `GET_INT` | INT | Similar to `GET_SINT`, but with 16-bit integers. |
-
 | `GET_REAL` | REAL | For floating-point numbers. |
-
 | `MOVE` (generic) | Any | A generic MOVE building block can also copy values, but requires separate inputs and outputs. In contrast, `GET_SINT` uses InOut variables, which can be more practical when coupling to peripheral addresses.
 
 All `GET_*` function blocks have in common that they read a value from an InOut source and provide it as a buffered output. In contrast, `SET_*` overwrites the value of the source.

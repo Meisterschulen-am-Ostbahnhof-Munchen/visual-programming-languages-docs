@@ -15,38 +15,23 @@ This exercise demonstrates the calibration of an analog input signal using NVS (
 ### Overview of all used function modules
 
 | Name | Type | Parameters (selection) |
-
 |------|-----|----------------------|
-
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | `Input = Input_I1` |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `Output = Output_Q1` |
-
 | `AnalogInput_I4` | `logiBUS::io::AI::logiBUS_AI_IDA` | `AnalogInput_hysteresis=50`, `TimeDelta=250`, `TimeRateLimit=100` |
 | `CALIBRATE` | `adapter::Engineering::measurements::AR_CALIBRATE` | `Y_Offset=0.0`, `Y_Scale=100.0` |
 | `NVS_OFFSET` | `logiBUS::storage::esp32_nvs::NVS_AR2` | `KEY='OFFSET'`, `DEFAULT_VALUE=0.0` |
 | `NVS_SCALE` | `logiBUS::storage::esp32_nvs::NVS_AR2` | `KEY='SCALE'`, `DEFAULT_VALUE=1.0` |
-
 DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IXA` | `Input = Input_I2` (Calibration Offset Command) |
-
 DigitalInput_I3_CS` | `logiBUS::io::DI::logiBUS_IXA` | `Input = Input_I3` (Calibration Scaling Command) |
-
 AX_SPLIT_2` | `adapter::events::unidirectional::AX_SPLIT_2` | – |
-
 THRESHOLD` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='THRESHOLD'`, `stObj=InputNumber_THRESHOLD` |
-
 | `HYSTERESIS` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='HYSTERESIS'`, `stObj=InputNumber_HYSTERESIS` |
-
 | `Hysteresis_AR_AX` | `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX` | `QI=TRUE` |
-
 | `AR_SPLIT_2` | `adapter::events::unidirectional::AR_SPLIT_2` | – |
-
 | `Q_NumericValue_PHYSA` | `isobus::UT::Q::Q_NumericValue_PHYSA` | `stObj=InputNumber_PWM_DUTY_OUT` (Display) |
-
 | `AD_TO_AUDI` | `adapter::conversion::unidirectional::AD_TO_AUDI` | – |
-
 | `AUDI_TO_AR` | `adapter::conversion::unidirectional::AUDI_TO_AR` | – |
-
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | `Output = Output_Q2` |
 
 ### Brief description of the most important components

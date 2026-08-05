@@ -25,17 +25,11 @@ None available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|--------|----------------------------|--------------------------------------------|
-
 Socket | `IN` | `adapter::types::unidirectional::AUI` | Input signal (AUI) |
-
 Plug | `OUT1` | `adapter::types::unidirectional::AUI` | First output (identical to IN) |
-
 Plug | `OUT2` | `adapter::types::unidirectional::AUI` | Second output (identical to IN) |
-
 Plug | `OUT3` | `adapter::types::unidirectional::AUI` | Third output (identical to IN) |
-
 Plug | `OUT4` | `adapter::types::unidirectional::AUI` | Fourth output (identical to IN) |
 
 ## Functionality

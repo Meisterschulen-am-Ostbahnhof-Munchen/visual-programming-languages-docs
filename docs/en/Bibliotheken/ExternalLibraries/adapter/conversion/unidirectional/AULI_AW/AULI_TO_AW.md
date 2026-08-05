@@ -9,43 +9,32 @@ The function block **AULI_TO_AW** is a composite function block (FB) that conver
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | E1 (via AULI_IN) | Event | Starts the conversion |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | E1 (via AW_OUT) | Event | Signals completion of conversion |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | D1 (via AULI_IN) | ULINT | ULINT input value |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | D1 (via AW_OUT) | WORD | WORD output value |
 
 ### **Adapters**
 
 | Type | Role | Name | Comment |
-
 |-----|-------|------|-----------|
-
 | **adapter::types::unidirectional::AULI** | Socket | AULI_IN | ULINT Adapter Input |
-
 | **adapter::types::unidirectional::AW** | Plug | AW_OUT | WORD Adapter Output |
 
 ## Functionality

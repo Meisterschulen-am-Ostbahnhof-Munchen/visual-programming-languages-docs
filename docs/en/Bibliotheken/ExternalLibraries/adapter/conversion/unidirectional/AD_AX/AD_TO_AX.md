@@ -20,11 +20,8 @@ No standalone data outputs. The output data is provided via the plug adapter `AX
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-
 |---------|----------|-----|-----------|
-
 | `AD_IN` | Socket | `adapter::types::unidirectional::AD` | DWORD input adapter – provides an event and DWORD data. |
-
 | `AX_OUT` | Plug | `adapter::types::unidirectional::AX` | BOOL output adapter – outputs an event and a Boolean result. |
 
 The adapters follow a unidirectional pattern and each provides an event output (`E1`) and a data output (`D1`):

@@ -11,43 +11,32 @@ The module does not have traditional event and data inputs/outputs, but instead 
 ### Event Inputs
 
 | Port | Adapter | Description |
-
 |--------|---------|-------------------------------------------|
-
 | `E1` | `AI_IN` | Starts the conversion of the INT value. |
 
 ### Event Outputs
 
 | Port | Adapter | Description |
-
 |--------|-----------|-------------------------------------------|
-
 | `E1` | `AUDI_OUT`| Signals completion of the conversion. |
 
 ### Data Inputs
 
 | Port | Adapter | Data Type | Description |
-
 |--------|---------|----------|----------------------------------|
-
 | `D1` | `AI_IN` | `INT` | Integer value to be converted. |
 
 ### Data Outputs
 
 | Port | Adapter | Data Type | Description |
-
 |--------|-----------|----------|--------------------------------|
-
 | `D1` | `AUDI_OUT`| `UDINT` | Converted unsigned integer. |
 
 ### Adapter
 
 | Direction | Name | Type | Description |
-
 |----------|------------|------------------------------|-----------------------------|
-
 Socket | `AI_IN` | `adapter::types::unidirectional::AI` | Input adapter (INT). |
-
 Plug | `AUDI_OUT` | `adapter::types::unidirectional::AUDI` | Output adapter (UDINT). |
 
 ## Functionality

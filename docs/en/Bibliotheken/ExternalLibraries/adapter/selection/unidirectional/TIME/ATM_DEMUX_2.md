@@ -9,25 +9,19 @@ The function block `ATM_DEMUX_2` implements a generic demultiplexer for ATM sign
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K, triggers the demultiplex operation. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation that indexing and forwarding are complete. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index indicating which output (1 or 2) should be connected to the input signal. |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No dedicated data outputs; the signals are provided via the adapter outputs.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (Output) | OUT1 | `adapter::types::unidirectional::ATM` | First ATM output channel. |
-
 | Plug (Output) | OUT2 | `adapter::types::unidirectional::ATM` | Second ATM output channel. |
-
 | Socket (Input) | IN | `adapter::types::unidirectional::ATM` | ATM input signal that is demultiplexed. |
 
 ## Functionality
@@ -80,13 +70,9 @@ The component implements a trivial finite state machine, which is represented in
 ## Comparison with Similar Components
 
 | Component | Property |
-
 |----------|-------------|
-
 | `ATM_DEMUX_2` | Specific for 2-output demultiplexing, generically expandable. |
-
 | `ATM_SWITCH_2` | Implements a 2-to-1 multiplex function (selection of one of two inputs). |
-
 | `DEMUX` (general) | Often used as a pure data demultiplexer without an adapter protocol, event-driven. |
 
 The `ATM_DEMUX_2` stands out due to its integration of the ATM adapter protocol and its generic architecture.

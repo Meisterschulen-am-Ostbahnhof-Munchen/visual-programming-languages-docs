@@ -11,47 +11,34 @@ The **IA_FPTO** function block serves as an ISOBUS adapter for the front power t
 ### **Event Inputs**
 
 | Event | Type | Description | With Variables |
-
 |----------|-----|---------------|---------------|
-
 | INIT | EInit | Service Initialization | QI |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Variables |
-
 |----------|-----|---------------|---------------|
-
 | INITO | EInit | Initialization Confirmation | QO, STATUS |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QI | BOOL | Qualifier for the INIT input |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QO | BOOL | Qualifier for the INITO output |
-
 STATUS | STRING | Status message after initialization |
 
 ## **Adapter**
 
 | Adapter | Type | Description |
-
 |---------|-----|---------------|
-
 SPEED | adapter::types::unidirectional::AUI | Front PTO output speed (actual value) |
-
 SPEED_SET | adapter::types::unidirectional::AUI | Front PTO setpoint speed |
-
 TIMEOUT | adapter::types::unidirectional::AX | Communication timeout status |
 
 All adapters are unidirectional: Values are sent by the function block (FB), but not received.

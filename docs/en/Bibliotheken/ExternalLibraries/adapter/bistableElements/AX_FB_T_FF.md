@@ -32,13 +32,9 @@ None (Data is sent via adapter `Q1`).
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** (Input) | `CLK` | `adapter::types::unidirectional::AX` | Clock signal – with each incoming event (E1), the Boolean value (D1) is evaluated as the clock level. |
-
 | **Socket** (Input) | `RST` | `adapter::types::unidirectional::AX` | Reset – with an incoming event (E1), the output is set to FALSE, independent of the clock (asynchronous reset). |
-
 | **Plug** (Output) | `Q1` | `adapter::types::unidirectional::AX` | Output – with each clock change or reset, an event (E1) is triggered and the current Boolean value (D1) is sent. |
 
 The adapters of type `unidirectional::AX` contain internally:
@@ -81,11 +77,8 @@ The ECC consists of a single state, `REQ`.
 Each incoming event pulse (via `CLK.E1` or `RST.E1`) triggers the execution of the algorithm `REQ` and an immediate output event on `Q1.E1`.
 
 | Current State | Incoming Event | Next State | Executed Action |
-
 |-------------------|----------------------|------------------|--------------------|
-
 | REQ | `RST.E1` | REQ | RESET: Q1.D1 = FALSE |
-
 | REQ | `CLK.E1` | REQ | Toggle on rising edge and update EDGE |
 
 No other states or dwell times.

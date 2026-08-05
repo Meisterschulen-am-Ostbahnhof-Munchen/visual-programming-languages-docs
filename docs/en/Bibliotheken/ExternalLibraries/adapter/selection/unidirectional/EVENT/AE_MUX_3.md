@@ -9,25 +9,19 @@ The function block **AE_MUX_3** is a generic multiplexer for the AE adapter type
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|---------------|
-
 | REQ | Event | Starts the switching to the input specified via `K`. |
 
 ### **Event Outputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | CNF | Event | Confirms that the switch to the selected input is complete. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | K | UINT | Index of the input to be selected: 0 → IN1, 1 → IN2, 2 → IN3. |
 
 ### **Data Outputs**
@@ -37,21 +31,15 @@ None.
 **Output (Plug)**
 
 | Name | Type | Description |
-
 |------|----------------------------------|--------------|
-
 | OUT | adapter::types::unidirectional::AE | Output that switches the selected input (IN1/IN2/IN3). |
 
 **Inputs (Sockets)**
 
 | Name | Type | Description |
-
 |------|----------------------------------|--------------|
-
 | IN1 | adapter::types::unidirectional::AE | First AE input – is connected to OUT when K=0. |
-
 | IN2 | adapter::types::unidirectional::AE | Second AE input – is connected to OUT when K=1. |
-
 | IN3 | adapter::types::unidirectional::AE | Third AE input – is connected to OUT when K=2. |
 
 ## Functionality

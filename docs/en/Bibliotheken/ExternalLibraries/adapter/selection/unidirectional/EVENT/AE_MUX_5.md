@@ -83,15 +83,10 @@ The function block (FB) does not have an explicit state machine. Its behavior is
 ## Comparison with Similar Components
 
 | Component | Special Feature |
-
 |----------|--------------|
-
 | **AE_MUX_5** | Fixed 5-input multiplexer, specifically for AE adapters. |
-
 | **MUX** (IEC 61499 Standard) | Mostly works with data inputs/outputs, not adapters. |
-
 **SELECT** | Often more generic, but can also operate at the adapter level; requires additional configuration. |
-
 **E_MUX** (event-based) | Similar principle, but at the data level; AE_MUX_5 is specifically optimized for unidirectional AE interfaces. |
 
 ## Conclusion

@@ -9,43 +9,30 @@ The function block **FIELDBUS_USINT_TO_SIGNAL_SCALED** converts an incoming USIN
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 | :--- | :--- | :--- |
-
 | `INIT` | EInit | Initialization Request; linked to the parameters `SCALE` and `OFFSET`. |
-
 | `REQ` | Event | Normal execution request; linked to the data input `IN`. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 | :--- | :--- | :--- |
-
 | `INITO` | EInit | Initialization confirmation. |
-
 | `CNF` | Event | Execution confirmation; linked to the outputs `OUT` and `VALID`. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | `IN` | USINT | `BYTE_TO_USINT(NOT_AVAILABLE_B)` | Input signal as an unsigned 8-bit value. The initial value corresponds to the "not available" signal. |
-
 | `SCALE` | REAL | `REAL#1.0` | Scaling factor (multiplication). |
-
 | `OFFSET` | DINT | `DINT#0` | Offset added after scaling. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | `OUT` | REAL | `REAL#0.0` | Scaled output value. |
-
 | `VALID` | BOOL | `FALSE` | Validation flag: `TRUE`, if the input signal is valid. |
 
 ### **Adapter**
@@ -78,11 +65,8 @@ This behavior mirrors the input 1:1 to the output, provided the signal is valid 
 The function block has two elementary states as simple FBs:
 
 | State | Action | Output Event |
-
 | :--- | :--- | :--- |
-
 | `INIT` | Execute algorithm `INIT` (empty) | `INITO` |
-
 | `REQ` | Execute algorithm `REQ` | `CNF` |
 
 There are no further wait states – each incoming event immediately triggers the processing of the corresponding algorithm and the output of the associated result.

@@ -8,25 +8,19 @@ The AIWS_MUX_2 is a generic multiplexer for the AIWS adapter. It allows selectio
 ### **Event Inputs**
 
 | Event | Description | With Variables |
-
 |----------|---------------|---------------|
-
 | REQ | Event to Trigger Index Setting | K |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Selection Confirmation |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|------|--------------|
-
 | K | UINT | Selection Index (0 = IN1, 1 = IN2) |
 
 ### **Data Outputs**
@@ -36,13 +30,9 @@ None (signal transmission is exclusively via adapters).
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug (Output) | OUT | AIWS | Output signal, provides the selected AIWS signal |
-
 | Socket (Input) | IN1 | AIWS | First AIWS Input (Selection at K=0) |
-
 Socket (Input) | IN2 | AIWS | Second AIWS Input (Selection at K=1) |
 
 ## Functionality

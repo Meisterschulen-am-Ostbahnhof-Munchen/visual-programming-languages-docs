@@ -8,9 +8,7 @@ The function block **AUI_UDINT_LT** performs a less-than comparison between two 
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Service Request – starts the comparison. The data value **IN2** is read along with this event. |
 
 ### **Event Outputs**
@@ -19,9 +17,7 @@ The function block does not have direct event outputs. The result is signaled vi
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | IN2 | UDINT | Second comparison value (unsigned double integer, 32 bits). |
 
 ### **Data Outputs**
@@ -30,9 +26,7 @@ No direct data outputs. The result is provided via the **OUT adapter** (data val
 ### **Adapters**
 
 | Role | Type | Description |
-
 |-------|-----|---------------|
-
 | IN1 | adapter::types::unidirectional::AUI | First comparison value (value 1). The **E1** event initiates the transfer of the data value **D1** to the internal logic. |
 | OUT | adapter::types::unidirectional::AX | Output of the comparison result: **D1** returns `true` if value 1 (< Wert 2, andernfalls `false`. Das Ereignis **E1** signalisiert die Gültigkeit des Ergebnisses. |
 

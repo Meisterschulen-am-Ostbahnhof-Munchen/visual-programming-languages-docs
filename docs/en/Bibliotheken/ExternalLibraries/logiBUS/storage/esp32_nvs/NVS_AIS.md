@@ -8,48 +8,35 @@ The function block `NVS_AIS` is used to store and load strings (STRING) in the n
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-
 |----------|-------|----------------------------------------------------------|-------------------|
-
 | INIT | EInit | **Service Initialization** – Starts the function block and communication with the NVS. | QI, KEY, DEFAULT_VALUE |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Carrying Data |
-
 |----------|-------|---------------------------------------------------------|-------------------|
-
 | INITO | EInit | **Initialization Confirm** – Confirms successful initialization or signals an error. | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |---------------|----------|--------------------------------------------------------------------------------------------------|
-
 | QI | BOOL | **Event Input Qualifier** – Controls the behavior during the INIT phase (e.g., activation). |
 | KEY | STRING | **Key name** – The key under which the value is stored/retrieved in the NVS. |
-
 | DEFAULT_VALUE | STRING | **Default value** – Value that is read if no entry exists in the NVS for the specified KEY. |
 
 ### **Data Outputs**
 
 | Name | Data type | Description |
-
 |--------|----------|------------------------------------------------------------------------------|
-
 | QO | BOOL | **Event Output Qualifier** – Indicates the success of the last operation. |
-
 | STATUS | STRING | **Service Status** – Feedback on the NVS driver status (e.g., error messages). |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |----------|-----------------------------------------------|------------------------------------------------------------------------------------------------------|
-
 | AIS_IN | `adapter::types::unidirectional::AIS` (Socket) | **Value to store (SET)** – Receives a STRING value to be stored via the AIS protocol. |
-
 | AIS_OUT | `adapter::types::unidirectional::AIS` (Plug) | **Stored value output (GETO)** – Sends the read STRING value from the NVS via the AIS protocol. |
 
 ## Functionality

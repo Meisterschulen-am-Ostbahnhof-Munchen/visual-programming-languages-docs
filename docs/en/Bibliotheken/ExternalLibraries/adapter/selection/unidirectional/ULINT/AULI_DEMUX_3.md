@@ -8,25 +8,19 @@ The function block **AULI_DEMUX_3** implements a generic demultiplexer for unidi
 ### **Event Inputs**
 
 | Name | Type | Description | With Variables |
-
 |------|-------|--------------------------|---------------|
-
 | REQ | Event | Sets the index K and triggers the forwarding | K (UINT) |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-------|-----------------------------------|
-
 | CNF | Event | Confirmation of successful forwarding |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|------------------------------|
-
 | K | UINT | Index of the destination output (1..3) |
 
 ### **Data Outputs**

@@ -8,9 +8,7 @@ The function block **UDINT_AUDI_GT** compares two values and outputs the result,
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-----------|
-
 | REQ | Event | Service Request – triggers the comparison |
 
 ### **Event Outputs**
@@ -20,9 +18,7 @@ This function block does not have its own event outputs. The result event is pro
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|----------------|---------------|
-
 | IN1 | ANY_ELEMENTARY | First comparison value (greater than ?) |
 
 ### **Data Outputs**
@@ -32,11 +28,8 @@ This function block does not have its own data outputs. The comparison result is
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|----------|----------|-----------|
-
 | IN2 | `adapter::types::unidirectional::AUDI` | Socket | Second comparison value (input) |
-
 | OUT | `adapter::types::unidirectional::AX` | Plug | Result output: `IN1 > IN2` |
 
 The adapter `AUDI` provides the second value (`D1`) and a corresponding event (`E1`).

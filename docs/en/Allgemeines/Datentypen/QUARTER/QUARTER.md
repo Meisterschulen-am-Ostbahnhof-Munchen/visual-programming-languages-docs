@@ -8,25 +8,17 @@ The **QUARTER** data type is a 2-bit data type that represents four states. It i
 ## Definition and Value Range
 
 | Property | Value |
-
 | :--- | :--- |
-
 | **Bits** | 2 |
-
 | **Number of States** | 4 |
 
 ### Standard State Definition (based on SAE J1939)
 
 | Binary Value | Decimal | Meaning (Typical) |
-
 | :--- | :--- | :--- |
-
 00` | 0 | **Off** |
-
 01` | 1 | **On** |
-
 10` | 2 | **Error** (or Reserved) |
-
 11` | 3 | **Not Available** (or Don't Care) |
 
 ## Usage

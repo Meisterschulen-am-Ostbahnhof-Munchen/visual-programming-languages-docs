@@ -8,9 +8,7 @@ The function block **UDINT_AUI_LT** performs the "less than" comparison. It chec
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | **REQ** | Event | Service Request – triggers the comparison (connected to IN1) |
 
 ### **Event Outputs**
@@ -20,9 +18,7 @@ The function block **UDINT_AUI_LT** performs the "less than" comparison. It chec
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | **IN1** | ANY_ELEMENTARY | First comparison value |
 
 ### **Data Outputs**
@@ -32,11 +28,8 @@ The function block **UDINT_AUI_LT** performs the "less than" comparison. It chec
 ### **Adapters**
 
 | Direction | Name | Adapter Type | Comment |
-
 |----------|------|------------|-----------|
-
 | Input (Socket) | **IN2** | `adapter::types::unidirectional::AUI` | Second comparison value (triggered via the adapter's event E1) |
-
 | Output (Plug) | **OUT** | `adapter::types::unidirectional::AX` | Result (TRUE if IN1 < IN2, otherwise FALSE) – provided via event E1 and data D1 |
 
 ## Functionality
@@ -68,13 +61,9 @@ The function block does not have its own state machine. Execution is purely even
 ## Comparison with Similar Blocks
 
 | Block | Comparison Type | Special Feature |
-
 |----------|---------------|--------------|
-
 | **F_LT** | less than | Direct inputs/outputs, no adapter |
-
 | **UDINT_AUI_LT** | less than | Adapter for second input and output, modular coupling |
-
 | **F_LE** | less or equal | Comparison ≤ |
 
 This function block differs from **F_LT** in its exclusive use of IEC adapters, which simplifies integration into adapter-based components (e.g., services).

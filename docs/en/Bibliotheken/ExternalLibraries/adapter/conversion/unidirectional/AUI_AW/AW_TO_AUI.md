@@ -25,11 +25,8 @@ The FB does not have any standalone data outputs. The date `D1` of type `UINT` i
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |----------|----------|-----------------------------------------|----------------------------------|
-
 | `AW_IN` | Input | `adapter::types::unidirectional::AW` | WORD Adapter Input (Socket) |
-
 | `AUI_OUT`| Output | `adapter::types::unidirectional::AUI` | UINT Adapter Output (Plug) |
 
 ## Functionality

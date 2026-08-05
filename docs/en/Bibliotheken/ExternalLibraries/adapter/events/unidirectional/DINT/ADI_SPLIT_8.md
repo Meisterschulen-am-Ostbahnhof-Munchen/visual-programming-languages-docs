@@ -25,25 +25,15 @@ No data outputs are available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|-------|------------------|-------------------------------------------------|
-
 | Socket | IN | ADI (unidirectional) | Input interface distributed to eight outputs. |
-
 | Plug | OUT1 | ADI (unidirectional) | First outgoing adapter (identical to IN). |
-
 | Plug | OUT2 | ADI (unidirectional) | Second outgoing adapter. |
-
 | Plug | OUT3 | ADI (unidirectional) | Third outgoing adapter. |
-
 | Plug | OUT4 | ADI (unidirectional) | Fourth outgoing adapter. |
-
 | Plug | OUT5 | ADI (unidirectional) | Fifth outgoing adapter. |
-
 Plug | OUT6 | ADI (unidirectional) | Sixth outgoing adapter. |
-
 Plug | OUT7 | ADI (unidirectional) | Seventh outgoing adapter. |
-
 Plug | OUT8 | ADI (unidirectional) | Eighth outgoing adapter. |
 
 ## Functionality

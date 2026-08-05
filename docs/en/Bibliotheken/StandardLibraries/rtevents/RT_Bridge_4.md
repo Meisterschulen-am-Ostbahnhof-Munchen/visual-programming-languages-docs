@@ -19,15 +19,10 @@ The RT_Bridge_4 function block serves as a decoupling bridge for four data conne
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2023 Johannes Kepler University Linz |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (April 14, 2025, Patrick Aigner) |
-
 | 4diac package | eclipse4diac::rtevents |
 
 ---

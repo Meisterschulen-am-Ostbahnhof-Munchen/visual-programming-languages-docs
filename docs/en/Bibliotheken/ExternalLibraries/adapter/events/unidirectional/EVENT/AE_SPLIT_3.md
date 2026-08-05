@@ -21,15 +21,10 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | IN | `adapter::types::unidirectional::AE` | Incoming adapter data stream, distributed to the three outputs. |
-
 | Connector (Output) | OUT1 | `adapter::types::unidirectional::AE` | First output – receives the same data as the input. |
-
 | Connector (Output) | OUT2 | `adapter::types::unidirectional::AE` | Second output – receives the same data as the input. |
-
 | Connector (Output) | OUT3 | `adapter::types::unidirectional::AE` | Third output – receives the same data as the input. |
 
 ## Functionality
@@ -56,13 +51,9 @@ The function block does not have an internal state diagram (ECC). It operates **
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Outputs | Special Features |
-
 |----------|-----------------|--------------|
-
 | `AE_SPLIT_2` | 2 | Distributed to two outputs. |
-
 | `AE_SPLIT_3` | 3 | Distributed to three outputs (existing FB). |
-
 | `AE_SPLIT_N` (hypothetical) | variable | Flexible number via parameters – requires more configuration effort. |
 
 All variants have in common that they operate solely at the adapter level and do not manipulate any data.

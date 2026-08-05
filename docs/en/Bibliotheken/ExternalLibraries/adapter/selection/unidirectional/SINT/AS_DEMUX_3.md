@@ -8,25 +8,19 @@ The function block **AS_DEMUX_3** is a generic demultiplexer for the AS (adapter
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K – triggers the forwarding |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K – confirms execution |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0-based? or 1-based? typically 0-based) for selecting the target output |
 
 ### **Data Outputs**
@@ -36,15 +30,10 @@ No direct data outputs – data is passed through the adapters.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug | OUT1 | adapter::types::unidirectional::AS | First Output |
-
 | Plug | OUT2 | adapter::types::unidirectional::AS | Second Output |
-
 | Plug | OUT3 | adapter::types::unidirectional::AS | Third Output |
-
 | Socket | IN | adapter::types::unidirectional::AS | Input value to be demultiplexed |
 
 ## Functionality

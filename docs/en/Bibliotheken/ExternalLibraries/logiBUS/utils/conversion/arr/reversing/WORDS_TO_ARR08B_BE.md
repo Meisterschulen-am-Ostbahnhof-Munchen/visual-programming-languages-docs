@@ -9,39 +9,28 @@ The function block **WORDS_TO_ARR08B_BE** combines four 16-bit words (WORD) into
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Starts the conversion of all four input words. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Sent once the output array has been fully calculated. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |---------|-------|-----------|
-
 | `IN_00` | WORD | Word 00 (first word) |
-
 | `IN_01` | WORD | Word 01 (second word) |
-
 | `IN_02` | WORD | Word 02 (third word) |
-
 | `IN_03` | WORD | Word 03 (fourth word) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----------------|-----------|
-
 | `OUT`| ARRAY[0..7] OF BYTE | 8-byte array in big-endian format |
 
 ### **Adapters**
@@ -77,17 +66,11 @@ The function block has no explicit internal state (stateless). It immediately pe
 ## Comparison with Similar Components
 
 | Component | Special Feature |
-
 -----------------------------|---------------|
-
 | WORDS_TO_ARR08B_BE | Big-endian, 4 WORDS → 8 bytes |
-
 | WORDS_TO_ARR08B_LE | Little-endian (low byte first) |
-
 | BYTES_TO_WORDS_BE / LE | Reverse conversion |
-
 | WORDS_TO_ARR16B_BE | Big-Endian, 8 WORDS → 16 Bytes |
-
 | WORDS_TO_ARR08N | Possibly unspecified endianness |
 
 This function block is specifically optimized for big-endian applications and is kept compact.

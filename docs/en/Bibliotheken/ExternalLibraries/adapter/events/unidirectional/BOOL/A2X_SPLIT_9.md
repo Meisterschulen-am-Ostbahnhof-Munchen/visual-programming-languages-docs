@@ -20,11 +20,8 @@ None
 #### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | Socket | IN | Input | Incoming A2X adapter, whose signals are distributed to the nine outputs. |
-
 | Plug | OUT1 … OUT9 | Output | Nine identical A2X output adapters that forward the input data. |
 
 ## Functionality

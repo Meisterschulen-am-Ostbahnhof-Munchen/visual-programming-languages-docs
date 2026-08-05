@@ -54,31 +54,20 @@ The **Q_BackgroundColour** is a standards-compliant function block for controlli
 ## Standard color palette (excerpt)
 
 | Code | Color | RGB equivalent |
-
 |------|-------------|----------------|
-
 | 0 | Black | #000000 |
-
 | 1 | Red | #FF0000 |
-
 | 2 | Green | #00FF00 |
-
 | 3 | Yellow | #FFFF00 |
-
 | 4 | Blue | #0000FF |
 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
-
 -8 | VT_E_NOACT | Invalid State |
-
 -128 | VT_E_HANDLE_INVALID | Invalid Object ID |
 
 ## Application Scenarios
@@ -90,13 +79,9 @@ The **Q_BackgroundColour** is a standards-compliant function block for controlli
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_BackgroundColour | VtColourManager | VtDynamicStyle |
-
 ---------------|-------------------|-----------------|----------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Color Palette | Standard | Extended | User Defined |
-
 | Object Binding | Explicit | Implicit | Stylesheet |
 
 ## 🛠️ Related Exercises

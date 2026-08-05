@@ -85,17 +85,11 @@ The SubApp uses the following (sub)blocks:
 **Summary Connection Table:**
 
 | Source | Destination |
-
 |--------|------|
-
 | `DigitalInput_CLK_I1.IND` | `RT_E_REND.EI1` |
-
 | `DigitalInput_CLK_I2.IND` | `RT_E_REND.EI2` |
-
 | `DigitalInput_CLK_I3.IND` | `RT_E_REND.R` |
-
 | `RT_E_REND.EO` | `AX_T_FF.CLK` |
-
 | `AX_T_FF.Q` (Adapter) | `DigitalOutput_Q1.OUT` (Adapter) |
 
 ## Summary

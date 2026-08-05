@@ -9,9 +9,7 @@ The function block `AUI_DEMUX_4` is a generic AUI demultiplexer for four output 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|----------------------------------------------|
-
 | REQ | Event | Set Index K; triggers forwarding |
 
 The input `REQ` triggers processing: The current value of `K` is read, and the signal present at `IN` is forwarded to the corresponding output adapter.
@@ -19,9 +17,7 @@ The input `REQ` triggers processing: The current value of `K` is read, and the s
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------------------|
-
 | CNF | Event | Index takeover confirmation |
 
 After successful demultiplexing, the event `CNF` is sent.
@@ -29,9 +25,7 @@ After successful demultiplexing, the event `CNF` is sent.
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|--------------------------------|
-
 | K | UINT | Target output index (1..4) |
 
 The value range for `K` is not defined in the XML, but values from 1 to 4 (corresponding to the four outputs) are common. Values outside this range do not result in any defined behavior (they can be ignored or trigger an error, depending on the implementation).
@@ -43,17 +37,11 @@ No data outputs are available. Signal forwarding is handled exclusively via the 
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|----------------------------------------------------------|----------|-------------------------------------|
-
 | IN | `adapter::types::unidirectional::AUI` | Socket | Input signal (source) |
-
 | OUT1 | `adapter::types::unidirectional::AUI` | Plug | Destination Output 1 |
-
 OUT2 | `adapter::types::unidirectional::AUI` | Plug | Destination Output 2 |
-
 OUT3 | `adapter::types::unidirectional::AUI` | Plug | Destination Output 3 |
-
 OUT4 | `adapter::types::unidirectional::AUI` | Plug | Destination Output 4 |
 
 All adapters are of the same type, `AUI` (unidirectional). The input adapter, `IN`, is a socket, and the four output adapters are plugs. This allows the module to be inserted into an adapter connection, typically established between an AUI transmitter and an AUI receiver.

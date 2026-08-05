@@ -9,25 +9,19 @@ The function block `AR_MUX_3` is a generic 3-way multiplexer for the adapter typ
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K – triggers selection |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of successful switching |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selection (0, 1, or 2) |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ None (the output data is provided via the OUT adapter).
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug | OUT | adapter::types::unidirectional::AR | Output that passes the selected input |
-
 Socket | IN1 | adapter::types::unidirectional::AR | Input 1 for index K = 0 |
-
 Socket | IN2 | adapter::types::unidirectional::AR | Input 2 for index K = 1 |
-
 Socket | IN3 | adapter::types::unidirectional::AR | Input 3 for index K = 2 |
 
 ## Functionality
@@ -74,13 +63,9 @@ The adapters are unidirectional; data flows from the selected socket to the plug
 The function block does not have an explicit state machine, as the logic is controlled purely by the event `REQ`. Nevertheless, the process can be described as a simple state machine:
 
 | State | Description |
-
 |---------|-------------|
-
 | IDLE | Waiting for a `REQ` event |
-
 SELECT | Select input according to index `K` |
-
 DONE | Output switched, sending `CNF`, returning to IDLE |
 
 ## Application Scenarios
@@ -91,13 +76,9 @@ DONE | Output switched, sending `CNF`, returning to IDLE |
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Special Feature |
-
 ----------|-----------------|--------------|
-
 AR_MUX_2 | 2 | Simpler Multiplexer for Two Sources |
-
 AR_MUX_3 | 3 | This Module |
-
 AR_MUX_4 | 4 | Extended Version with Four Inputs |
 
 All multiplexers follow the same principle and differ only in the number of adapter sockets.

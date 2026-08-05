@@ -9,47 +9,34 @@ The function block **AX_RS_SYM_INIT** implements an event-driven, bistable flip-
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|---------------------------------------------|
-
 | INIT | EInit | Initialization Request (with QI, Q_INIT) |
-
 | R | Event | Reset Signal (resets Q) |
-
 | S | Event | Set Signal (sets Q) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|---------------------------------------------|
-
 | INITO | EInit | Initialization Acknowledgement (with QO) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |--------|------|-----------------------------------------------|
-
 | QI | BOOL | Event Qualifier – Controls Execution |
-
 | Q_INIT | BOOL | Desired Value of Q at Initialization |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|------|------------------------------------------|
-
 | QO | BOOL | Event Qualifier – passes QI to INITO or on S/R |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |------|------------------------------------|------------------------------------------|
-
 | Q | adapter::types::unidirectional::AX | Adapter for the value of the flip-flop (D1) |
 
 ## Functionality
@@ -79,17 +66,11 @@ The `QI` variable acts as a qualifier: Only if `QI = TRUE` is present are the op
 ## State Overview
 
 | State | Description |
-
 |---------|---------------------------------------------------|
-
 | START | Wait for INIT event |
-
 | INIT | Initialization: Sets QO and selects target state |
-
 | DEINIT | Deinitialization: Sets QO = FALSE |
-
 | SET | Active set state (Q.D1 = TRUE) |
-
 | RESET | Active reset state (Q.D1 = FALSE) |
 
 **Important Transitions:**

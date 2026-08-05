@@ -8,27 +8,20 @@ The function block `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` is used to receive an inc
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | `INIT` | EInit | Initialization request (e.g., for setting parameters) |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | `INITO` | EInit | Confirmation of successful initialization |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | `SCALE` | REAL | 1.0 | Scaling factor applied to the raw value |
-
 | `OFFSET` | DINT | 0 | Integer offset added after scaling |
 
 ### **Data Outputs**
@@ -37,13 +30,9 @@ The module has no independent data inputs or outputs – input/output is handled
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | `IN` | AB (Adapter Type A→B) | Socket | Receives the raw BYTE signal |
-
 | `OUT` | AR (Adapter Type A→R) | Plug | Outputs the scaled signal |
-
 | `VALID` | AX (Adapter Type A→X) | Plug | Signals whether the current output value is valid (TRUE = valid) |
 
 ## Functionality

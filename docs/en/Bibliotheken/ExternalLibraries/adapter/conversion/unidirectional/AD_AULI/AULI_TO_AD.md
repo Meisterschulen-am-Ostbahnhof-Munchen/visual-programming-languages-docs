@@ -11,43 +11,32 @@ The function block does not have its own event or data inputs/outputs, but commu
 ### **Event Inputs**
 
 | Adapter | Event | Description |
-
 |-----------|----------|----------------------------------|
-
 | `AULI_IN` | `E1` | Starts the conversion |
 
 ### **Event Outputs**
 
 | Adapter | Event | Description |
-
 |-----------|----------|----------------------------------|
-
 | `AD_OUT` | `E1` | Signals conversion complete |
 
 ### **Data Inputs**
 
 | Adapter | Variable | Data Type | Description |
-
 |-----------|----------|----------|----------------------------------|
-
 | `AULI_IN` | `D1` | ULINT | Input value for conversion |
 
 ### **Data Outputs**
 
 | Adapter | Variable | Data Type | Description |
-
 |-----------|----------|----------|----------------------------------|
-
 | `AD_OUT` | `D1` | DWORD | Converted Output Value |
 
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |------------|----------|------------------------------------------|------------|----------------------------|
-
 | `AULI_IN` | Socket | `adapter::types::unidirectional::AULI` | Input Adapter (ULINT) |
-
 | `AD_OUT` | Plug | `adapter::types::unidirectional::AD` | Output Adapter (DWORD) |
 
 ## Functionality
@@ -86,13 +75,9 @@ Since this is a composite block without its own algorithms, there is no explicit
 ## Comparison with Similar Modules
 
 | Module | Description |
-
 -----------------|------------------------------------------------------------------------------|
-
 | `F_ULINT_TO_DWORD` | Simple conversion function, but without adapter integration. |
-
 | `AULI_TO_AD` | Same functionality, but as a composite block with adapter interfaces. |
-
 | Other adapter converters | Blocks exist for related types (e.g., LINT, DINT) that operate on the same principle. |
 
 The key difference lies in the interface type: While the pure function uses direct data and event pins, `AULI_TO_AD` encapsulates the conversion in an adapter-based solution.

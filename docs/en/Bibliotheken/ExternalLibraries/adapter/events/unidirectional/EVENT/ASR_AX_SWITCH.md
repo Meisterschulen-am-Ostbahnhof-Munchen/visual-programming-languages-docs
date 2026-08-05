@@ -15,15 +15,10 @@ The function block does not have traditional event inputs via *EventInputs* – 
 The event outputs are provided via the **plug adapters `EO0`** and **`EO1`** (both type `ASR`). Each of these adapters has the outputs `SET` and `RESET`:
 
 | Adapter | Event | Description |
-
 |---------|----------|--------------|
-
 | `EO0.SET` | SET | Triggered when a `EI.SET` event occurs and `G.D1 == 0` |
-
 | `EO0.RESET` | RESET | Triggered when a `EI.RESET` event occurs and `G.D1 == 0` |
-
 | `EO1.SET` | SET | Triggered when a `EI.SET` event occurs and `G.D1 == 1` |
-
 | `EO1.RESET` | RESET | Triggered when a `EI.RESET` event occurs and `G.D1 == 1` |
 
 ### **Data Inputs**
@@ -37,15 +32,10 @@ There are no explicit data outputs. Control information is transmitted exclusive
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | `EI` | Socket (Input) | `adapter::types::unidirectional::ASR` | Receives the SET/RESET events to be distributed |
-
 | `G` | Socket (Input) | `adapter::types::unidirectional::AX` | Provides the binary toggle signal via `D1` (0 → Channel 0, 1 → Channel 1) |
-
 | `EO0` | Plug (Output) | `adapter::types::unidirectional::ASR` | Output for Channel 0 (with `G.D1 = 0`) |
-
 | `EO1` | Plug (Output) | `adapter::types::unidirectional::ASR` | Output for Channel 1 (with `G.D1 = 1`) |
 
 ## Functionality
@@ -72,17 +62,11 @@ Processing is deterministic without intermediate event storage.
 ## Status Overview
 
 | Status | Description | Action |
-
 |---------|--------------|--------|
-
 | **START** | Waiting for incoming SET/RESET event | – |
-
 | **G0_SET** | Receive `EI.SET` at `G.D1=0` | Output `EO0.SET` |
-
 | **G1_SET** | Receive `EI.SET` at `G.D1=1` | Output `EO1.SET` |
-
 | **G0_RESET** | Receive `EI.RESET` at `G.D1=0` | Output `EO0.RESET` |
-
 | **G1_RESET** | Receive `EI.RESET` at `G.D1=1` | Output `EO1.RESET` |
 
 State transitions follow the ECC scheme: A condition leads from START to the action state, and from there, without further conditions, immediately back to START.
@@ -96,16 +80,11 @@ State transitions follow the ECC scheme: A condition leads from START to the act
 ## Comparison with Similar Function Blocks
 
 | Property | ASR_AX_SWITCH | Simple event multiplexer (e.g., SELECT) |
-
 |-------------|----------------|----------------------------------------------|
-
 | Event Type | SET/RESET (ASR Adapter) | Any single event |
-
 | Control | Binary via AX adapter (with `D1`) | Boolean data input |
-
 | Output Type | Two ASR adapters | Depending on the type, single or multiple events |
 | Stateful | No (no storage) | Mostly stateless |
-
 | Adapter interface | Yes | Often directly via event/data ports |
 
 The ASR_AX_SWITCH is specifically optimized for asynchronous set/reset signals and integrates seamlessly into the ASR adapter world of the 4diac library. Compared to generic multiplexers, there is no need to manually extract the adapter events.

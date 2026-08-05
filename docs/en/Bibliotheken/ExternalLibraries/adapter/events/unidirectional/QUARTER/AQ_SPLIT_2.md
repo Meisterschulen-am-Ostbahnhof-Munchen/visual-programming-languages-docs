@@ -20,13 +20,9 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |------|------|----------|--------------|
-
 | `adapter::types::unidirectional::AQ` | `IN` | Socket (Input) | Input adapter for the AQ signal to be split. |
-
 | `adapter::types::unidirectional::AQ` | `OUT1` | Plug (Output) | First output – provides the unaltered input signal. |
-
 | `adapter::types::unidirectional::AQ` | `OUT2` | Plug (Output) | Second output – also provides the unaltered input signal. |
 
 ## Functionality

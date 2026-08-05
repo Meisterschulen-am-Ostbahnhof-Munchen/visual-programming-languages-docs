@@ -21,11 +21,8 @@ The **ALI_TO_AUS** is a composite function block according to IEC 61499, used to
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket (Input)** | ALI_IN | adapter::types::unidirectional::ALI | Receives the LINT data value and the associated event |
-
 | **Plug (Output)** | OFF_OUT | adapter::types::unidirectional::OFF | Provides the converted USINT value and the confirmation event |
 
 ## Functionality

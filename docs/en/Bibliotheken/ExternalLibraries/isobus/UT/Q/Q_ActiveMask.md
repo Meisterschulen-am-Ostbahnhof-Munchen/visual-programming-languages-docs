@@ -61,15 +61,10 @@ Since the working set is a single object and only exists once, this limitation i
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-----------|-----------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
-
 -8 | VT_E_NOACT | Invalid State |
-
 -21 | VT_E_NO_INSTANCE | No VT Instance |
 
 ## Application Scenarios
@@ -81,13 +76,9 @@ Since the working set is a single object and only exists once, this limitation i
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_ActiveMask | VtMaskManager | VtDynamicDisplay |
-
 ---------------|---------------|---------------|------------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 Error Codes | Standard | Manufacturer | Partial |
-
 Condition Management | Full | Basic | Advanced |
 
 ## 🛠️ Related Exercises

@@ -8,9 +8,7 @@ As a structured data type, `logiBUS_DI_S` does not have event or adapter interfa
 The structure itself represents the configurable data inputs. It is passed as a whole to a higher-level function block.
 
 | Name | Data Type | Initial Value | Comment |
-
 | :--- | :--- | :--- | :--- |
-
 | `Pin` | `USINT` (Unsigned Short Integer) | 255 | Defines the number of the input pin or channel to be addressed. |
 
 ### **Data Outputs**

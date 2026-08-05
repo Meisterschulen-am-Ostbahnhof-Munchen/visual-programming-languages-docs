@@ -9,25 +9,19 @@ The function block **AULI_D_FF_TMIN** implements a data latch (D flip-flop) with
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|--------|------------------------------------------------|
-
 | INIT | EInit | Initialization request; synchronized with `Tmin` |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|--------|-----------------------------------------------|
-
 | INITO | EInit | Initialization confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|--------------------------------------------------------|
-
 | Tmin | TIME | Minimum time between two event outputs (EO) at the output adapter |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ None
 ### **Adapters**
 
 | Name | Role | Type | Comment |
-
 |------|-----------|----------|--------------------------------------------|
-
 | I | Socket | AULI | Input: value to latch (event E1, data D1) |
-
 | Q | Plug | AULI | Output: latching value (event E1, data D1) |
 
 ## Functionality

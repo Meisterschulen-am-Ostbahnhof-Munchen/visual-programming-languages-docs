@@ -8,39 +8,28 @@ The function block **F_PHYS_TO_RAW** converts a physical REAL value into an ISOB
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Request to convert the physical value. Executed with the parameters `rPhys` and `stObj`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | CNF | Confirmation that the conversion is complete. Returns the calculated raw value as well as the alarm flags `xOver` and `xUnder`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-----|---------------|
-
 | rPhys | REAL | The physical value to be converted. |
-
 | stObj | NumericObjectPool_S | Structure with the parameters `i32Offset` (DINT) and `r32Scale` (REAL) for the ISOBUS formula. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | * | UDINT | The calculated ISOBUS raw value (function return value). Saturated to the range 0 to 4294967295. |
-
 | xOver | BOOL | TRUE if the physical value exceeds the upper limit. |
-
 | xUnder | BOOL | TRUE if the physical value falls below the lower limit. |
 
 ### **Adapter**

@@ -9,49 +9,35 @@ The function block **NVS_AS** serves as an interface for reading and writing SIN
 ### **Event Inputs**
 
 | Event | Description | Associated Variables |
-
 |----------|---------------|-----------------------|
-
 | INIT | Initializes the NVS and triggers the first loading of a stored value. | QI, KEY, DEFAULT_VALUE |
 
 ### **Event Outputs**
 
 | Event | Description | Associated Variables |
-
 |----------|---------------|-----------------------|
-
 | INITO | Confirmation of initialization and the first loading process. | QO, STATUS |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|--------|--------------|
-
 | QI | BOOL | Enables initialization (TRUE = enable). |
-
 | KEY | STRING | Key under which the value is stored in the NVS. |
-
 | DEFAULT_VALUE | SINT | Default value, read if no value exists under the key. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|--------|--------------|
-
 | QO | BOOL | Confirms successful initialization and operational readiness. |
-
 | STATUS | STRING | Status message (e.g., "Success" or error message). |
 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |-----------|----------|-----------|-------------|
-
 | AS_IN | AS | SOCKET | Receives a SINT value to be stored via a unidirectional adapter protocol (Event + Data). |
-
 | AS_OUT | AS | PLUG | Sends the read SINT value to connected blocks via a unidirectional adapter protocol. |
 
 ## Functionality
@@ -90,15 +76,10 @@ Errors during NVS operations (e.g., invalid key, memory error) are output as an 
 The internal NVS module has its own state machine. The following processes are relevant for the user:
 
 | Phase | State |
-
 |-------|---------|
-
 | 1 | Waiting for INIT event. |
-
 | 2 | INIT executed → NVS initialized → GET started. |
-
 | 3 | GET completed → Value sent via AS_OUT → Ready for write operations via AS_IN. |
-
 | 4 | Event via AS_IN → SET executed → Value saved → Value sent via AS_OUT → Return to Phase 3. |
 
 A new INIT event can force a re-initialization at any time.

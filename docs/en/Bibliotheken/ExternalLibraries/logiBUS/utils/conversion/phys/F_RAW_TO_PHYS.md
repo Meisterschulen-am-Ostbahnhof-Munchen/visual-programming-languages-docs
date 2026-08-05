@@ -13,35 +13,26 @@ It is typically used in agricultural control systems to convert sensor data or a
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-------|---------------|
-
 | REQ | Event | Starts the conversion of a raw value (using `u32Raw` and `stObj`). |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------|
-
 | CNF | Event | Confirms that the calculation is complete and the output value is valid. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |--------|-------|--------------|
-
 | u32Raw | UDINT | The raw integer value (e.g., from an ISOBUS message object). |
-
 | stObj | `NumericObjectPool_S` | Structure containing the offset (`i32Offset : DINT`) and the scaling factor (`r32Scale : REAL`). |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|------|--------------|
-
 | (no explicit name) | REAL | The calculated physical value, output as a floating-point number. |
 
 ### **Adapters**

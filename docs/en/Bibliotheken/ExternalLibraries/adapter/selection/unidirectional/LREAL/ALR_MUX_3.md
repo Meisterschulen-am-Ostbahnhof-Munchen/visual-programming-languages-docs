@@ -8,25 +8,19 @@ The function block **ALR_MUX_3** is a generic multiplexer for ALR adapter connec
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `REQ` | Event | Starts the selection of index `K` and updates the output `OUT`. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `CNF` | Event | Confirms successful index selection. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `K` | `UINT` | Index for selecting the active input (values 0, 1, or 2). |
 
 ### **Data Outputs**
@@ -38,15 +32,10 @@ Output is exclusively via the adapter `OUT`.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | **Plug** | `OUT` | `adapter::types::unidirectional::ALR` | Multiplexer output – contains the data of the selected input. |
-
 | **Socket** | `IN1` | `adapter::types::unidirectional::ALR` | First input (selected at `K = 0`). |
-
 | **Socket** | `IN2` | `adapter::types::unidirectional::ALR` | Second input (selected at `K = 1`). |
-
 | **Socket** | `IN3` | `adapter::types::unidirectional::ALR` | Third input (selected at `K = 2`). |
 
 ## Functionality

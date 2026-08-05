@@ -9,45 +9,33 @@ The function block **UDINT_AUI_AX_SEL** implements a binary selection between tw
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `EI0` | Sets the value of `IN0` |
-
 | `EI1` | Sets the value of `IN1` |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirmation of completed selection |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `IN0` | ANY_ELEMENTARY | First selectable input value |
-
 | `IN1` | UINT | Second selectable input value (fixed type) |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `OUT` | UINT | Selected value (corresponds to `IN0` or `IN1`) |
 
 ### **Adapter**
 
 | Adapter | Type | Comment |
-
 |---------|-----|-----------|
-
 | `G` | `adapter::types::unidirectional::AX` | Returns the binary selection signal (0/1) |
 
 ## Functionality

@@ -13,47 +13,32 @@ The function block encapsulates three sub-functions:
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `INIT` | EInit | Service Initialization – Loads the object parameters (`stObj`) into the function block |
-
 | `REQ` | Event | Service Request – converts `rPhys` and writes the value to the ISOBUS object |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `INITO` | EInit | Initialization Confirmation |
-
 | `CNF` | Event | Confirmation of Value Change – Contains Result Data |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | Structure with object ID, scale, offset, and decimal places (initial value: ID_NULL, 1.0, 0, 0) |
-
 | `rPhys` | REAL | Physical value to be set (e.g., temperature, pressure) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `STATUS` | STRING | Service status message (e.g., error or success message) |
-
 | `u32OldValue` | UDINT | Original raw value of the ISOBUS object before the change |
-
 | `s16result` | INT | Return value of the write operation (see `Q_NumericValue`) |
-
 | `xOver` | BOOL | True if the physical value exceeds the upper limit of the ISOBUS value range |
-
 | `xUnder` | BOOL | True if the physical value falls below the lower limit of the ISOBUS value range |
 
 ### **Adapters**
@@ -107,13 +92,9 @@ During the execution of a run, the function block is not prepared for new events
 ## Comparison with similar modules
 
 | Module | Function | Difference to `Q_NumericValue_PHYS` |
-
 |----------|----------|--------------------------------------|
-
 | `Q_NumericValue` (from `isobus::UT::Q`) | Write a raw (already converted) value | Expects `u32NewValue` directly – without physical conversion and without limit checking |
-
 | `F_PHYS_TO_RAW` | Pure conversion physical → raw | Returns only `xOver`, `xUnder`, and the raw value – no ISOBUS communication |
-
 | `Q_NumericValue_PHYS` | Combined conversion + write access | Provides a complete interface for physical values in one step |
 
 This function block simplifies application, as the user does not need to program a separate conversion step. It is particularly suitable for controllers that process values in common units.

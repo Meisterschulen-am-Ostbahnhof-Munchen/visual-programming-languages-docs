@@ -22,11 +22,8 @@ The function block does not have direct event or data ports. All communication t
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|--------|------------------------------------------|----------------------------------|
-
 | Socket | ALI_IN | `adapter::types::unidirectional::ALI` | LINT Input Adapter (64-bit Integer) |
-
 | Plug | AR_OUT | `adapter::types::unidirectional::AR` | REAL Output Adapter (Floating Point) |
 
 Each adapter contains an event channel (E1) and a data channel (D1), which are connected via the module's internal network.

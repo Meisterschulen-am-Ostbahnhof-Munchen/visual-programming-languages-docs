@@ -8,43 +8,30 @@ The function block **FIELDBUS_DWORD_TO_SIGNAL_SCALED** converts a fieldbus DWORD
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | INIT | EInit | Initialization request; passes scaling parameters |
-
 | REQ | Event | Normal execution request for processing the input |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INITO | EInit | Initialization Acknowledgement |
-
 | CNF | Event | Execution Acknowledgement; returns scaled output and validity flag |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |--------|-------|-----------------------|--------------|
-
 | IN | DWORD | NOT_AVAILABLE_DWM | Input value from the fieldbus |
-
 | SCALE | LREAL | LREAL#1.0 | Scaling factor (multiplier) |
-
 | OFFSET | DINT | DINT#0 | Offset added after scaling |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |-------|-------|--------------|--------------|
-
 | OUT | LREAL | LREAL#0.0 | Scaled output value |
-
 | VALID | BOOL | FALSE | TRUE if the input signal is valid |
 
 ##**Adapters**
@@ -83,11 +70,8 @@ The constants `NOT_AVAILABLE_DWM` and `VALID_SIGNAL_DW` are taken from imported 
 ## State Overview
 
 | State | Trigger | Action | Output |
-
 |---------|----------|---------|---------|
-
 | INIT | INIT Event | INIT Algorithm (empty) | INITO |
-
 | REQ | REQ Event | REQ Algorithm (calculation and validation) | CNF |
 
 The function block does not require state transitions between INIT and REQ – both states are triggered directly by their respective events.

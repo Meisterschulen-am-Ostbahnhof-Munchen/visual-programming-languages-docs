@@ -5,11 +5,8 @@ Unsigned integer
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 16 |
-
 | **Value Range** | 0 to 65,535 |
-
 | **Reference** | Table 10, No. 7 |
 
 ## Use in Programming

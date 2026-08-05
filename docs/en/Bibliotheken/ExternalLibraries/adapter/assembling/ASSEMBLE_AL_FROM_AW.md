@@ -25,21 +25,13 @@ No direct data outputs – the result is output via the OUT adapter.
 ### **Adapters**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | **Sockets** | | |
-
 | `WORD_00` | `adapter::types::unidirectional::AW` | Word 0 (least significant 16-bit word) |
-
 | `WORD_01` | `adapter::types::unidirectional::AW` | Word 1 |
-
 | `WORD_02` | `adapter::types::unidirectional::AW` | Word 2 |
-
 | `WORD_03` | `adapter::types::unidirectional::AW` | Word 3 (highest-order 16-bit word) |
-
 | **Plugs** | | |
-
 | `OUT` | `adapter::types::unidirectional::AL` | LWORD output (64-bit) |
 
 ## Functionality
@@ -71,13 +63,9 @@ The function block does not have its own ECC (Execution Control Chart), but cons
 ## Comparison with Similar Modules
 
 | Module | Description |
-
 |----------|-------------|
-
 | `ASSEMBLE_AL_FROM_BYTES` | Combines multiple 8-bit values into an LWORD |
-
 | `ASSEMBLE_AL_FROM_DWORDS` | Combines two 32-bit double words into a 64-bit word |
-
 | `ASSEMBLE_AL_FROM_AW` (this one) | Combines four 16-bit words into an LWORD |
 
 All these building blocks follow the same principle but differ in the word width of the input data and the number of sockets required.

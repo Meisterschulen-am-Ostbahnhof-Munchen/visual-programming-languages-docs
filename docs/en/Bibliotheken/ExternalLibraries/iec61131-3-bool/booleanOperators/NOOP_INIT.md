@@ -8,37 +8,27 @@ The function block **NOOP_INIT** (No Operation with INIT) serves as a simple pas
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | INIT | EInit | Initialization Request |
-
 | REQ | Event | Normal Execution Request (connected to IN) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INITO | EInit | Initialization Acknowledgement |
-
 | CNF | Event | Execution Acknowledgement (connected to OUT) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN | BOOL | Input Signal |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | OUT | BOOL | Output Signal (corresponds to IN after one iteration) |
 
 ### **Adapters**

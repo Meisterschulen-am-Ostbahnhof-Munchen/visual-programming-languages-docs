@@ -20,15 +20,10 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | IN | `adapter::types::unidirectional::AIWS` | Input adapter that receives the signal to be distributed. |
-
 | Plug (Output) | OUT1 | `adapter::types::unidirectional::AIWS` | First output adapter. |
-
 | Plug (Output) | OUT2 | `adapter::types::unidirectional::AIWS` | Second output adapter. |
-
 | Plug (Output) | OUT3 | `adapter::types::unidirectional::AIWS` | Third output adapter. |
 
 ## Functionality

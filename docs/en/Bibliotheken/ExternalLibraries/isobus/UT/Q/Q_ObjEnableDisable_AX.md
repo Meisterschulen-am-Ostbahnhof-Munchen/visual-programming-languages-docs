@@ -8,25 +8,19 @@ The function block **Q_ObjEnableDisable_AX** is a composite function block that 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `INIT` | EInit | Initialization of the function block; the object ID (u16ObjId) is passed. |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `INITO` | EInit | Confirmation of successful initialization. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `u16ObjId` | UINT | Object ID set during the INIT event. |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ No direct data outputs; the previous state is output via the adapter plug `qOldA
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | `qAbility` | `adapter::types::unidirectional::AX` | Socket | Receives the Enable/Disable command (0 = disable, 1 = enable, 0xFF = undefined). |
-
 | `qOldAbility` | `adapter::types::unidirectional::AB` | Plug | Returns the object's previous state (same encoding). |
 
 ## Functionality
@@ -82,11 +73,8 @@ The FB `Q_ObjEnableDisable_AX` itself does not have its own state machine. The i
 ## Comparison with Similar Function Blocks
 
 | Function Block | Interface | Special Feature |
-
 |----------|----------------|--------------|
-
 | **Q_ObjEnableDisable** | Direct event/data inputs | Requires separate Boolean inputs and events. |
-
 | **Q_ObjEnableDisable_AX** | AX/AB Adapter | Easy integration into adapter-based architectures; reduces wiring effort.
 
 The AX wrapper does not add new functionality but optimizes the connection to existing adapter communication.

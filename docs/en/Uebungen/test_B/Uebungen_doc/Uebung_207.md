@@ -9,13 +9,9 @@ This circuit is typical for safety applications where both outputs must never be
 ## Function Blocks (FBs) Used
 
 | Block | Type | Short Description |
-
 |----------|-----|------------------|
-
 | `DigitalInput_I1`, `DigitalInput_I2`, `DigitalInput_I3` | `logiBUS_IE` (logiBUS Digital Input Event) | Converts a key press (single click) into an event `IND`. The parameter `Input` specifies the physical input (e.g., `Input_I1`). |
-
 | `ILOCK` | `ILOCK_2_E` (logiBUS Interlock, event-driven) | Bistable relay with two outputs `OUT1`/`OUT2`. Events `CLK1` and `CLK2` set the respective output (with mutual interlocking), and `R` resets both. |
-
 | `DigitalOutput_Q1`, `DigitalOutput_Q2` | `logiBUS_QX` (logiBUS Digital Output) | Receives a data value (`OUT`) via event `REQ` and outputs it at the physical output. |
 
 ## Program Flow and Connections

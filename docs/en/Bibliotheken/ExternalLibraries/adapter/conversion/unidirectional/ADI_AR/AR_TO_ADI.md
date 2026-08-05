@@ -26,11 +26,8 @@ Activated after successful conversion.
 ### **Adapters**
 
 | Adapter | Name | Direction | Description |
-
 |---------|------|----------|-------------|
-
 | AR | AR_IN | Socket (Input) | Unidirectional REAL adapter that provides the input signal. |
-
 | ADI | ADI_OUT | Plug (Output) | Unidirectional DINT adapter that forwards the converted signal. |
 
 ## Functionality

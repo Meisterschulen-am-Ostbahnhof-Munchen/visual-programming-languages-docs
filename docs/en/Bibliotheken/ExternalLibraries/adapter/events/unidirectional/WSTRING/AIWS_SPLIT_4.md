@@ -20,17 +20,11 @@ None.
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-
 |-----|----------|------|--------------|
-
 | `adapter::types::unidirectional::AIWS` | Socket | **IN** | Input adapter for the AIWS connection to be distributed |
-
 | `adapter::types::unidirectional::AIWS` | Plug | **OUT1** | First output adapter |
-
 | `adapter::types::unidirectional::AIWS` | Plug | **OUT2** | Second output adapter |
-
 | `adapter::types::unidirectional::AIWS** | Plug | **OUT3** | Third output adapter |
-
 | `adapter::types::unidirectional::AIWS` | Plug | **OUT4** | Fourth output adapter |
 
 ## Functionality

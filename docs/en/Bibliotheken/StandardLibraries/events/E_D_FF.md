@@ -59,15 +59,10 @@ IEC 61499 is an international standard for modeling distributed industrial contr
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_D_FF | E_SR | E_R_TRIG |
-
 |----------------|-------|------|----------|
-
 | Memory Type | D Flip-Flop | SR Latch | Edge Detector |
-
 | Clocking | Required | None | None |
-
 | Data Retention | Yes | Yes | No |
-
 | Event Output | On Change | On Set/Reset | On Edge |
 
 ## 🛠️ Related Exercises

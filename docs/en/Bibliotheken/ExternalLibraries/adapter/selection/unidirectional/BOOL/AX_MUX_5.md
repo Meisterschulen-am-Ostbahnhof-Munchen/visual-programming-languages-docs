@@ -9,25 +9,19 @@ The function block `AX_MUX_5` is a generic multiplexer for adapters of type `AX`
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-------|-------------------|
-
 | REQ | Event | Trigger for selecting index `K` |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-------|---------------------------|
-
 | CNF | Event | Confirmation of successful switching |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|-------------------------------------------------|
-
 | K | UINT | Index (0–4) of the input adapter to be selected |
 
 ### **Data Outputs**
@@ -38,17 +32,11 @@ No independent data outputs – output is via the adapter `OUT`.
 
 | Name | Type | Direction | Description |
 |------|-------------------------------------|----------|------------------------------------------------------------------|
-
 | IN1 | `adapter::types::unidirectional::AX` | SOCKET | 1st input value (activated at `K = 0`) |
-
 | IN2 | `adapter::types::unidirectional::AX` | SOCKET | 2nd input value (activated at `K = 1`) |
-
 | IN3 | `adapter::types::unidirectional::AX` | SOCKET | 3rd input value (activated at `K = 2`) |
-
 | IN4 | `adapter::types::unidirectional::AX` | SOCKET | 4. Input value (activated at `K = 3`) |
-
 | IN5 | `adapter::types::unidirectional::AX` | SOCKET | 5. Input value (activated at `K = 4`) |
-
 | OUT | `adapter::types::unidirectional::AX` | PLUG | Output that provides the data of the input selected by `K` |
 
 ## Functionality
@@ -74,21 +62,13 @@ After the switchover, the confirmation event `CNF` is output. The data from the 
 The function block has no visible states; the logic is limited to event-driven switching. The following table shows the behavior depending on `K`:
 
 | Trigger | Condition | Action | Output |
-
 | Trigger | Condition | Action | Output |
-
 | |----------|-----------|----------------------------|---------|
-
 | `REQ` | `K = 0` | Connect `IN1` → `OUT` | `CNF` |
-
 | `REQ` | `K = 1` | Connect `IN2` → `OUT` | `CNF` |
-
 | `REQ` | `K = 2` | Connect `IN3` → `OUT` | `CNF` |
-
 | `REQ` | `K = 3` | Connect `IN4` → `OUT` | `CNF` |
-
 | `REQ` | `K = 4` | Connect `IN5` → `OUT` | `CNF` |
-
 | Other | `K > 4` | No valid connection | undefined |
 
 ## Application Scenarios
@@ -99,13 +79,9 @@ The function block has no visible states; the logic is limited to event-driven s
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Output | Special Feature |
-
 -------------------|-----------------|------------------|----------------------------------------------|
-
 | AX_MUX_2 | 2 | 1 (AX adapter) | Dual multiplexer |
-
 | AX_MUX_5 | 5 | 1 (AX adapter) | Five-way multiplexer (this module) |
-
 | AX_MUX_N (generic) | any | 1 (AX adapter) | Configurable number (if available) |
 
 Compared to a hard-wired selection module, `AX_MUX_5` offers flexible, event-driven switching and is specifically optimized for use with unidirectional AX adapters.

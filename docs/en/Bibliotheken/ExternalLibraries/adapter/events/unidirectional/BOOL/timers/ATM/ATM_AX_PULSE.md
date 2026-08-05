@@ -9,11 +9,8 @@ The function block **ATM_AX_PULSE** is a standardized timer module for generatin
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | **REQ** | Event | Service request – starts the pulse. |
-
 | **R** | Event | Reset – terminates the pulse prematurely. |
 
 ### **Event Outputs**
@@ -28,11 +25,8 @@ No direct data outputs. The pulse status is queried via the **Q** adapter.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **PT** | Socket | `adapter::types::unidirectional::ATM` | Returns the pulse duration as a time value. |
-
 | **Q** | Plug | `adapter::types::unidirectional::AX` | Outputs the pulse status: **D1** = current value (TRUE during the pulse); **E1** = event at the end or change of the pulse. |
 
 ## Functionality

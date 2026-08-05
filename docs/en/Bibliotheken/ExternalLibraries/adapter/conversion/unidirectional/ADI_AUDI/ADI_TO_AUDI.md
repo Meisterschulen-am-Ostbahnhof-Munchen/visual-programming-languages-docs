@@ -11,9 +11,7 @@ The function block ADI_TO_AUDI converts an ADI (DINT) adapter to an AUDI (UDINT)
 The function block does not have direct event inputs. Events are provided via the incoming adapter **ADI_IN**. The ADI adapter defines an event output E1, which is connected to the event input REQ of the internal conversion block.
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | (via ADI_IN.E1) | EVENT | Trigger for Conversion |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ The function block does not have direct event inputs. Events are provided via th
 This function block does not have direct event outputs. Events are passed on via the outgoing adapter **AUDI_OUT**. The internal conversion function block signals completion via CNF, which is connected to the event input E1 of the AUDI adapter.
 
 | Name | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | (via AUDI_OUT.E1) | EVENT | Confirmation of Completed Conversion |
 
 ### **Data Inputs**
@@ -31,9 +27,7 @@ This function block does not have direct event outputs. Events are passed on via
 This function block has no direct data inputs. The DINT value to be converted is provided via the incoming adapter **ADI_IN** (output D1).
 
 | Name | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | (via ADI_IN.D1) | DINT | The value in DINT format to be converted to UDINT |
 
 ### **Data Outputs**
@@ -41,9 +35,7 @@ This function block has no direct data inputs. The DINT value to be converted is
 This function block has no direct data outputs. The converted UDINT value is output via the outgoing adapter **AUDI_OUT** (input D1).
 
 | Name | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | (via AUDI_OUT.D1) | UDINT | The result of the conversion as UDINT |
 
 ### **Adapters**
@@ -51,11 +43,8 @@ This function block has no direct data outputs. The converted UDINT value is out
 The function block provides two adapter interfaces:
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | ADI_IN | Socket | adi (unidirectional) | Input adapter – provides DINT data and a trigger event |
-
 | AUDI_OUT | Plug | audi (unidirectional) | Output adapter – outputs converted UDINT data and an acknowledgment event |
 
 The adapters are unidirectional, meaning they transmit data and events in only one direction.

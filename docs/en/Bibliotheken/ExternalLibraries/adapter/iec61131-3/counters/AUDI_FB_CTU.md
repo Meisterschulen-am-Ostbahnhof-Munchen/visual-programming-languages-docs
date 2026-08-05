@@ -40,17 +40,11 @@ Data is also provided **via the adapter sockets**:
 ### **Adapters**
 
 | Adapter Type | Direction | Name | Short Description |
-
 |-------------|----------|------|------------------|
-
 | `AX` (unidirectional) | Socket (Input) | CU | Provides the count pulse event and an edge-weighted data value. |
-
 | `AX` (unidirectional) | Socket (Input) | R | Provides the reset event and reset switch. |
-
 | `AUDI` (unidirectional) | Socket (Input) | PV | Provides the preset event and preset numeric value. |
-
 | `AX` (unidirectional) | Plug (Output) | Q | Provides the output binary (Q) as an event and data value. |
-
 | `AUDI` (unidirectional) | Plug (Output) | CV | Provides the current counter reading as an event and data value. |
 
 ## Functionality

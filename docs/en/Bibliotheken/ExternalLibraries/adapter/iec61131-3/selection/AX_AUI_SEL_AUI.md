@@ -9,11 +9,8 @@ The function block **AX_AUI_SEL_AUI** implements binary selection. It selects be
 ### **Event Inputs**
 
 | Name | Type | Comment | With Data |
-
 |------|-------|--------------------|----------------|
-
 | EI0 | Event | Set IN0 | IN0 |
-
 | EI1 | Event | Set IN1 | IN1 |
 
 - **EI0**: Sending an event to `EI0` updates the value of **IN0** (the provided data value is adopted).
@@ -28,11 +25,8 @@ No direct event outputs are available. The results are passed on via the output 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------------------------------|
-
 | IN0 | UINT | First selectable input value |
-
 | IN1 | UINT | Second selectable input value |
 
 Both data values are unsigned 16-bit integers (UINT).
@@ -44,10 +38,8 @@ No direct data outputs. The result is provided via the output adapter **OUT**.
 ### **Adapter**
 
 | Label | Type | Direction | Comment |
-
 |-------------|----------------------------------|----------|--------------------|
 | G | `adapter::types::unidirectional::AX` | Socket | Selector signal |
-
 | OUT | `adapter::types::unidirectional::AUI`| Plug | Selected value |
 
 - **Adapter G (Socket):**
@@ -113,13 +105,9 @@ An explicit state machine is not required because the internal `F_SEL` has no de
 ## Comparison with Similar Modules
 
 | Module | Description |
-
 |---------------------|-------------------------------------------------------------------------------|
-
 | **`F_SEL`** | Pure IEC 61131-3 function, no adapters – direct data/event connections. |
-
 | **`AX_AUI_SEL_AUI`** | Same selection function, but encapsulated with adapters for modular networking. |
-
 | **`MUX` blocks** | Often more than two inputs (e.g., 4-channel multiplexer) – only binary selection here. |
 
 The AX_AUI_SEL_AUI offers, in comparison to a direct `F_SEL`The advantage of standardized, adapter-based input and output increases reusability and interchangeability in complex systems.

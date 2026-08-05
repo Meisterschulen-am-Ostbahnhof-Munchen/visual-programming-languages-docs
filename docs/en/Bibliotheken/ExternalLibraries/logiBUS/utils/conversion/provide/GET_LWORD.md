@@ -9,17 +9,13 @@ The **GET_LWORD** function block is used for the consistent retrieval of an LWOR
 ### **Event Inputs**
 
 | Event | Description |
-
 |---|---|
-
 | `REQ` | Starts the read operation. The current value of `IN` is transferred to `OUT`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |---|---|
-
 | `CNF` | Confirms successful completion of the operation. Triggered after the copy operation. |
 
 ### **Data Inputs**
@@ -29,9 +25,7 @@ This function block does not have traditional data inputs but uses an **InOut pa
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |---|---|---|
-
 | `OUT` | `LWORD` | Buffered output value. Contains the copy of the value of `IN` at the time of the last `REQ`. Initial value = `0`. |
 
 ### **Adapter**
@@ -58,9 +52,7 @@ Buffering ensures that the value of `OUT` remains stable during a run cycle, eve
 ## State Overview
 
 | State | Description |
-
 |---|---|
-
 | `REQ` | Initial and only state. Upon receiving `REQ`, the algorithm is executed and `CNF` is sent. The state is retained, so the process is repeated upon receiving `REQ` again. |
 
 ## Application Scenarios

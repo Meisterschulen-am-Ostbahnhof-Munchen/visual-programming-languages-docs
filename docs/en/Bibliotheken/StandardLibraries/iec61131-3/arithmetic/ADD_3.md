@@ -59,13 +59,9 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 ## ⚖️ Comparison with ADD_2
 
 | Feature | ADD_3 | ADD_2 |
-
 |---------------|--------|--------|
-
 | Inputs | 3 | 2 |
-
 | Calculation | IN1+IN2+IN3 | IN1+IN2 |
-
 | Performance | Higher efficiency with 3 inputs | Lightweight |
 
 ## Error Handling

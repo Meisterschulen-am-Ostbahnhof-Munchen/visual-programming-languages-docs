@@ -11,9 +11,7 @@ The function block is designed for use in IEC 61499-based automation systems and
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **R** | Reset – Sets the pulse time **PT** and immediately terminates a running pulse. |
 
 ### **Event Outputs**
@@ -23,9 +21,7 @@ No dedicated event outputs – output is provided via the **Q** adapter (event *
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------|
-
 | **PT** | TIME | Pulse duration (pulse time). |
 
 ### **Data Outputs**
@@ -35,11 +31,8 @@ No dedicated data outputs – pulse status is output via the **Q** adapter (data
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | **IN** | `adapter::types::unidirectional::AX` | Socket | Input – Receives the start signal (event **E1**) and the logical value (**D1**). A rising edge on **E1** triggers the pulse. |
-
 | **Q** | `adapter::types::unidirectional::AX` | Plug | Output – Outputs the pulse: As long as the pulse is active, **D1** = `TRUE`, otherwise it is FALSE. The event **E1** is sent with every state change. |
 
 ## Functionality
@@ -65,13 +58,9 @@ No dedicated data outputs – pulse status is output via the **Q** adapter (data
 The function block goes through the following states (based on the internal timer function block):
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | No pulse active; **Q.D1** = `FALSE`. |
-
 | **RUNNING** | Pulse active; **Q.D1** = `TRUE`. The timer runs for the duration **PT**. Upon retriggering, the timer is reset (remains in the RUNNING state). |
-
 | **TIMEOUT** | Pulse terminated; transition back to IDLE. |
 
 Note: The reset (event **R**) always immediately returns to the IDLE state.
@@ -85,15 +74,10 @@ Note: The reset (event **R**) always immediately returns to the IDLE state.
 ## Comparison with similar function blocks
 
 | Function block | Property |
-
 |----------|-------------|
-
 | **AX_TP_RETRIG** | Retriggerable pulse timer with AX adapter. |
-
 **E_TP** (Standard IEC 61499) | Simple pulse timer, non-retriggerable – restarting during the pulse is ignored. |
-
 **E_TP_RETRIG** | Retriggerable version without adapter (pure event/data interface). |
-
 **E_DELAY** (Delay) | Delays a signal by a fixed time, but does not generate a pulse of fixed duration. |
 
 The **AX_TP_RETRIG** combines retrigger functionality with a compact adapter interface and is therefore particularly suitable for modular, adapter-based systems.

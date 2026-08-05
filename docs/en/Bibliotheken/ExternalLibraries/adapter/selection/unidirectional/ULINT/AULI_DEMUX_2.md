@@ -9,25 +9,19 @@ The function block **AULI_DEMUX_2** is a generic demultiplexer that receives an 
 ### **Event Inputs**
 
 | Name | Type | Comment | With Vars |
-
 |------|-----|-----------|----------|
-
 | REQ | Event | Set Index K | K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | index |
 
 **Note:** The index K determines the destination output: typically, K = 0 is assigned to output **OUT1** and K = 1 to output **OUT2**.
@@ -39,13 +33,9 @@ No direct data outputs defined.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket (Input) | IN | aULI | Input Value to demultiplex |
-
 | Plug (Output) | OUT1 | aULI | - |
-
 | Plug (Output) | OUT2 | aULI | - |
 
 ## Functionality
@@ -80,13 +70,9 @@ The internal process can be described as a simple state machine:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------|--------------|
-
 | **AULI_MUX_2** | Multiplexer: Selects one of two inputs and routes it to an output. |
-
 | **AULI_SWITCH** | Generic switch, often with multiple outputs and extended index logic. |
-
 | **AULI_DEMUX_2** (this FB) | Demultiplexer: Distributes one input to one of two outputs – simpler and more specific than a generic switch. |
 
 ## Conclusion

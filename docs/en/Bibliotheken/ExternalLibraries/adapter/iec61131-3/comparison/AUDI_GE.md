@@ -28,13 +28,9 @@ The data values to be compared are obtained via the following adapters:
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `IN1` | Socket | `adapter::types::unidirectional::AUDI` | First Input Value |
-
 | `IN2` | Socket | `adapter::types::unidirectional::AUDI` | Second Input Value |
-
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Output: `IN1 >= IN2` (boolean) |
 
 ## Functionality

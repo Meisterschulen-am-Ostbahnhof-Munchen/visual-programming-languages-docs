@@ -9,27 +9,20 @@ The function block `AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED` processes a digital fiel
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | INIT | EInit | Initialization request for the entire function block (forwarded to internal core function block) |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INITO | EInit | Initialization confirmation after successful initialization |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Description |
-
 |------|----------|-------------|--------------|
-
 | SCALE | LREAL | 1.0 | Scaling factor by which the input value is multiplied |
-
 | OFFSET | DINT | 0 | Integer offset that is added after scaling |
 
 ### **Data Outputs**
@@ -39,13 +32,9 @@ This module has no direct data outputs. All output data is provided via the adap
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | IN | AD (unidirectional) | Socket | Input adapter for the DWORD value (fieldbus signal) |
-
 | OUT | ALR (unidirectional) | Plug | Output adapter for the scaled analog value |
-
 | VALID | AX (unidirectional) | Plug | Output adapter for signal validity (TRUE = valid) |
 
 ## Functionality

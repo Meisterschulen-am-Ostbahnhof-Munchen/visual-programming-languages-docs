@@ -9,9 +9,7 @@ The function block **UDINT_AUI_LE** performs a less-than-equal-to comparison of 
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `REQ` | Event | Service Request – triggers the comparison |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ This function block (FB) does not have its own independent event outputs. The re
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `IN1` | ANY_ELEMENTARY | First comparison value (any elementary data type) |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ This function block (FB) does not have its own independent data outputs. The res
 ### **Adapters**
 
 | Adapter | Type | Direction | Comment |
-
 |---------|-----|----------|-----------|
-
 | `IN2` | `adapter::types::unidirectional::AUI` | Socket (Input) | Second comparison value, provided via the adapter as data point `D1` and event `E1` |
-
 | `OUT` | `adapter::types::unidirectional::AX` | Plug (Output) | Outputs the comparison result as a Boolean value (`D1`) and an acknowledgment event (`E1`) |
 
 ## Functionality

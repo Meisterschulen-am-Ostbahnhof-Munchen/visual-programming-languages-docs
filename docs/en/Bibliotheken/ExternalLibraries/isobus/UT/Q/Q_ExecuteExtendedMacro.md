@@ -51,29 +51,19 @@ The **Q_ExecuteExtendedMacro** is a standards-compliant function block for execu
 ## Macro Properties
 
 | Feature | Description |
-
 |---------------|----------------------------------|
-
 | Location | Permanently stored in the VT |
-
 | Size | Up to 255 commands |
-
 | Content | VT command sequences |
-
 | ID Range | 0x0001 - 0xFEFF (reserved) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful execution |
-
 | -6 | VT_E_OVERFLOW | Macro too complex |
-
 | -8 | VT_E_NOACT | VT not ready |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
 
 ## Application Scenarios
@@ -85,13 +75,9 @@ The **Q_ExecuteExtendedMacro** is a standards-compliant function block for execu
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_ExecuteExtendedMacro | VtMacroPlayer | VtCommandSequence |
-
 |---------------|------------------------|---------------|-------------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | VT Version | 5+ | All | All |
-
 | ID Type | 16-bit | 8-bit | 16-bit |
 
 ## Conclusion

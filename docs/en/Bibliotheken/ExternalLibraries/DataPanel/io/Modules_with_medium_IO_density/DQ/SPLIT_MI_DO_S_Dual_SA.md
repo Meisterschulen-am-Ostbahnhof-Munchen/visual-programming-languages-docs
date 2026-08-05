@@ -9,35 +9,26 @@ The function block **SPLIT_MI_DO_S_Dual_SA** is used to split a single data pane
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Service Request: The block processes the current value of the data input IN. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirmation of processing completed. Sent after the algorithm has finished executing. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | IN | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Dual_SA` | Dual input carrying both forward (UP) and backward (DOWN) information. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |-------|-----|--------------|
-
 | UP | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for forward, upward, clockwise, or counterclockwise rotation. |
-
 DOWN | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for reverse, downward, counterclockwise, or counterclockwise rotation. |
 
 ### **Adapter**

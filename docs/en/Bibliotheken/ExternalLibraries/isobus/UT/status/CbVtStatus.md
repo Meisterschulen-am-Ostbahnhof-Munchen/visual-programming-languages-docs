@@ -48,13 +48,9 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 ## Supported Operating Modes
 
 | Mode | Description |
-
 |---------------|----------------------------------|
-
 | Single device | Standard operation with u8Instance=0 |
-
 | Multi-ECU | Parallel Instances (1-255) |
-
 Diagnostics | STATUS Messages for Service |
 
 ## Application Scenarios
@@ -66,13 +62,9 @@ Diagnostics | STATUS Messages for Service |
 ## ⚖️ Comparison with Similar Modules
 
 | Feature | CbVtStatus | VtPageManager | VtEventLogger |
-
 |----------------|-------------|---------------|---------------|
-
 | Page Switch | ✔ | ✔ | ✖ |
-
 | Multi-ECU | ✔ | ✖ | ✖ |
-
 STATUS feedback | ✔ | ✖ | ✔ |
 
 ## Error Handling

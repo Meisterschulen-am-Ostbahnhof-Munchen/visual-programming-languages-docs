@@ -5,11 +5,8 @@ The **LDATE** (Long Date) data type represents a calendar date with a width of 6
 According to **DIN EN 61131-3** (Table 10, No. 13b):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 64 bits |
-
 | **Default Value** | `LD#1970-01-01` |
-
 | **Unit** | Nanoseconds since 1970-01-01 |
 
 ## Literal Representation

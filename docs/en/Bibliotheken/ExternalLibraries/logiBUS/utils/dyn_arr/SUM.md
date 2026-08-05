@@ -9,17 +9,13 @@ The **SUM** function block allows you to calculate the sum of all elements in a 
 ### **Event Inputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | REQ | Starts the sum calculation of array A. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | CNF | Signals the completion of the calculation and the validity of the result. |
 
 ### **Data Inputs**
@@ -29,9 +25,7 @@ There are no pure data inputs. The required array is provided via the **InOut** 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|------|---------------|
-
 | (empty) | DINT | Resultant sum of all array elements (type DINT). |
 
 ### **Adapters**

@@ -8,17 +8,11 @@ The ADI_FB_CTU is an up-counter for DINT integers, whose inputs and outputs are 
 The function block does not have direct event or data interfaces, but only adapters for connection. The following table explains the available adapters, their type, and their function.
 
 | Direction | Name | Adapter Type | Description |
-
 |----------|------|-------------|--------------|
-
 **Input (Socket)** | `CU` | `AX` | Count pulse input (event + data) |
-
 **Input (Socket)** | `R` | `AX` | Reset input (event + data) |
-
 **Input (Socket)** | `PV` | `ADI` | Preset value for comparison |
-
 **Output (Plug)** | `Q` | `AX` | Output signal – active when meter reading ≥ PV |
-
 **Output (Plug)** | `CV` | `ADI` | Current meter reading |
 
 The adapters `AX` (event adapter) and `ADI` (data adapter) are unidirectional. Both events and their associated data values are transmitted via these adapters.
@@ -71,15 +65,10 @@ Internally, a standard function block `FB_CTU_DINT` is used, with its inputs and
 The function block has only one internal state: the current counter value (initial value = 0). Depending on the incoming events, the following state transitions occur:
 
 | Event | Condition | New State (Counter) | Output |
-
 | Event | Condition | New State (Counter) | Output |
-
 ** ... |----------|-----------|------------------------|---------|
-
 | `CU` | – | Counter + 1 | `CNF`, `Q.E1`, `CV` |
-
 | `R` | – | 0 | `CNF`, `Q.E1`, `CV` |
-
 | `PV` | – | unchanged | `CNF`, `Q.E1`, `CV` (PV value is stored internally) |
 
 Output `Q` (via the adapter) is set as soon as `Zähler ≥ PV` is reached. The current value of `Q` is included with every output.
@@ -94,15 +83,10 @@ Output `Q` (via the adapter) is set as soon as `Zähler ≥ PV` is reached. The 
 ## Comparison with similar components
 
 | Component | Properties |
-
 |----------|---------------|
-
 | `CTU` (Standard, without adapter) | Same counting function, but with direct event and data inputs/outputs. Easier to use in classic IEC 61499 networks. |
-
 | `ADI_FB_CTUD` | Up/down counter, also adapter-based. Additionally offers a down count input. |
-
 | `FB_CTU_DINT`(Internal) | Same counting logic, but without adapter encapsulation. The adapter version offers a uniform, modular interface. |
-
 | `CTU` with AX filter | If edge detection is required, pure change detection can be achieved by preceding it with an AX_D_FF. |
 
 The ADI_FB_CTU is designed as a wrapper for the standard counter and facilitates reuse in adapter-based frameworks.

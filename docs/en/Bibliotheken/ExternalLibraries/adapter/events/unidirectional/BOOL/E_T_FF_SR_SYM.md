@@ -9,21 +9,15 @@ The function block **E_T_FF_SR_SYM** is an event-driven, bistable toggle switch 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | S | Event | Set output Q (to TRUE) |
-
 R | Event | Reset output Q (to FALSE) |
-
 CLK | Event | Clock to toggle output Q |
 
 ### **Event Outputs**
 
 | Name | Type | With Variable | Comment |
-
 |------|-----|--------------|-----------|
-
 EO | Event | Q | Output Q has changed |
 
 ### **Data Inputs**
@@ -33,9 +27,7 @@ None.
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 Q | BOOL | Flip-flop value (TRUE = set, FALSE = reset) |
 
 ### **Adapters**
@@ -68,33 +60,21 @@ The **toggle** behavior is implemented by ensuring that a CLK event always toggl
 ## State Overview
 
 | State | Description |
-
 |---------|--------------|
-
 | START | Initial state after activation of the function block |
-
 | SET | Output Q = TRUE |
-
 | RESET | Output Q = FALSE |
 
 **Transitions** (Event → Target State):
 
 | Initial State | Event | Target State |
-
 |-----------------|----------|-------------|
-
 | START | S | SET |
-
 | START | R | RESET |
-
 | START | CLK | SET |
-
 | SET | R | RESET |
-
 | SET | CLK | RESET |
-
 RESET | S | SET |
-
 | RESET | CLK | SET |
 
 Note: S events remaining in the SET state or R events remaining in the RESET state are not explicitly mapped – the state is retained, and no EO output is generated.
@@ -107,15 +87,10 @@ Note: S events remaining in the SET state or R events remaining in the RESET sta
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-
 |----------|-------------|
-
 | E_FF_SR | Pure SR flip-flop without toggle. No clock function. |
-
 | E_FF_Toggle | Pure toggle flip-flop, no set/reset. |
-
 | E_T_FF_SR | Similar, but without symmetric start behavior. Here, CLK in the START state may lead to undefined behavior. |
-
 | E_T_FF_SR_SYM | Combines SR and toggle with defined start behavior for all input signals. |
 
 ## Conclusion

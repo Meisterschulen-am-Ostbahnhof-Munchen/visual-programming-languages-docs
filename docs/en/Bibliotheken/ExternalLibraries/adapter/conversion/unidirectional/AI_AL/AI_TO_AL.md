@@ -21,11 +21,8 @@ No independent data outputs on the block. The converted LWORD value is output vi
 ### **Adapter**
 
 | Label | Type | Direction | Comment |
-
 |-------------|-----|-----------|-----------|
-
 | `AI_IN` | `adapter::types::unidirectional::AI` | Socket (Input) | INT Adapter Input |
-
 | `AL_OUT` | `adapter::types::unidirectional::AL` | Plug (Output) | LWORD Adapter Output |
 
 ## Functionality

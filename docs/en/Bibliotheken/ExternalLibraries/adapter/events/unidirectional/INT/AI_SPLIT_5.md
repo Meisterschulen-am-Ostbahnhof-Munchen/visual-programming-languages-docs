@@ -21,19 +21,12 @@ No direct data outputs available. Signal transmission occurs exclusively via the
 ## ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|--------|------------------------------|-----------------------------------------------------|
-
 | Socket | IN | `adapter::types::unidirectional::AI` | Receives the incoming analog signal. |
-
 | Plug | OUT1 | `adapter::types::unidirectional::AI` | First output, provides the same signal as the input. |
-
 | Plug | OUT2 | `adapter::types::unidirectional::AI` | Second output, provides the same signal as the input. |
-
 | Plug | OUT3 | `adapter::types::unidirectional::AI` | Third output, provides the same signal as the input. |
-
 | Plug | OUT4 | `adapter::types::unidirectional::AI` | Fourth output provides the same signal as IN. |
-
 | Plug | OUT5 | `adapter::types::unidirectional::AI` | Fifth output provides the same signal as IN. |
 
 ## Functionality

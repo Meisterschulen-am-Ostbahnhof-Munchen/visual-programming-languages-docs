@@ -25,21 +25,13 @@ No data outputs available (data transmission occurs exclusively via the adapter)
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-
 |-----|----------|------|--------------|
-
 | `adapter::types::unidirectional::AIS` | Input (Socket) | IN | Incoming AIS signal, which is distributed to all outputs. |
-
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT1 | First output with the split AIS signal. |
-
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT2 | Second output with the split AIS signal. |
-
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT3 | Third output with the split AIS signal. |
-
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT4 | Fourth output with the split AIS signal. |
-
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT5 | Fifth output with the split AIS signal. |
-
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT6 | Sixth output with the split AIS signal. |
 
 ## Functionality

@@ -9,43 +9,32 @@ The function block `AUI_TO_AW` is a composite module that converts an AUI adapte
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `AUI_IN.E1` | Event (via adapter) | Trigger to convert the incoming UINT value |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `AW_OUT.E1` | Event (via adapter) | Confirmation that the converted WORD value has been provided |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `AUI_IN.D1` | UINT (via adapter) | The input value to be converted |
 
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `AW_OUT.D1` | WORD (via adapter) | Converted Output Value |
 
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket (Input) | `AUI_IN` | `adapter::types::unidirectional::AUI` | UINT adapter as source |
-
 | Plug (Output) | `AW_OUT` | `adapter::types::unidirectional::AW` | WORD adapter as sink |
 
 ## Functionality

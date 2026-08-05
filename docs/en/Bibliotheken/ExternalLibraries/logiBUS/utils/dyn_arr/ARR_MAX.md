@@ -11,33 +11,25 @@ The function block `ARR_MAX` calculates the maximum value of a one-dimensional a
 ### **Event Inputs**
 
 | Name | Type | With Var | Description |
-
 |------|-----|---------|--------------|
-
 | `REQ` | Event | `A` | Starts the calculation of the maximum. The array `A` must be valid and contain values at the time of the event. |
 
 ### **Event Outputs**
 
 | Name | Type | With Var | Description |
-
 |------|-----|---------|--------------|
-
 | `CNF` | Event | (empty), `A` | Confirms the end of the calculation. The event is triggered as soon as the maximum value has been determined. The array `A` remains valid during the event. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|-------------|--------------|
-
 | `A` (IN/OUT) | `ARRAY[*] OF INT` | – | One-dimensional integer array whose maximum is to be calculated. The size is determined dynamically at runtime. |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | `MAX` | `INT` | – | The determined maximum value of the array `A`. (The name `MAX` is derived from the function – in the XML definition, the output is unnamed but is treated as a function return value.)
 
 ### **Adapter**
@@ -79,15 +71,10 @@ Therefore, an explicit state graph is not required.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference from ARR_MAX |
-
 |----------|----------|------------------------|
-
 | `ARR_MIN` | Minimum of an Array | Analogous, but minimum instead of maximum. |
-
 | `ARR_SUM` | Sum of Array Elements | Different mathematical operation; no comparison between elements. |
-
 | `ARR_MEAN` | Arithmetic Mean | Requires additional division by the number of elements; not just comparison. |
-
 | `MAX` (IEC 61131-3) | Maximum of two values | Works only with scalars, not arrays. `ARR_MAX` extends this to entire arrays. |
 
 ARR_MAX` combines array traversal capability with simple maximum determination and is therefore a specialized, yet reusable function block for dynamic arrays.

@@ -47,13 +47,9 @@ The functionality of `E_CYCLE` is internally based on a feedback loop with a `E_
 ## ⚖️ Comparison with similar components
 
 | Feature | E_CYCLE | E_DELAY | E_PULSE (hypothetical) |
-
 |--------------|-------------------------|------------------------------|------------------------------|
-
 | Function | Periodic Clock | Single Delay | Single Pulse of Fixed Duration |
-
 | Repetition | Continuous | Once per `START` event | Once per `REQ` event |
-
 | Control | START/STOP | START/STOP | REQ |
 
 ## 🛠️ Related exercises

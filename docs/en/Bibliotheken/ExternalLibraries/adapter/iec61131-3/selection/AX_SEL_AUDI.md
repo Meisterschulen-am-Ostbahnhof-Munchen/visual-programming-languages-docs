@@ -8,11 +8,8 @@ The function block **AX_SEL_AUDI** implements a binary selection function accord
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | **EI0** | Sets input IN0 (connected to IN0). The event is used to update the value of IN0. |
-
 | **EI1** | Sets input IN1 (connected to IN1). The event is used to update the value IN1. |
 
 ### **Event Outputs**
@@ -22,11 +19,8 @@ This function block has no explicit event outputs. Events are output exclusively
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------------------------------|
-
 | **IN0** | UDINT | First selectable input value. |
-
 | **IN1** | UDINT | Second selectable input value. |
 
 ### **Data Outputs**
@@ -36,11 +30,8 @@ This function block has no explicit data outputs. The selected value is output v
 ### **Adapters**
 
 | Adapter | Direction | Type (Packet) | Comment |
-
 |---------|----------|-------------|-----------|
-
 | **G** | Socket | `adapter::types::unidirectional::AX` | Provides the control signal for selection: Event **E1** and Data Value **D1** (e.g., BOOL, 0 = IN0, 1 = IN1). |
-
 | **OUT** | Plug | `adapter::types::unidirectional::AUDI` | Outputs the result of the selection: Event **E1** and Data Value **D1** (UDINT). |
 
 ## Functionality
@@ -84,13 +75,9 @@ The block does not have an explicit state machine. The processes are purely even
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-
 |----------|---------------|
-
 | **F_SEL** (Standard) | Pure function block implementation without adapters; uses classic input/output variables. |
-
 | **AX_SEL_AUDI** | Encapsulates F_SEL and adds adapter interfaces; Suitable for adapter-based architectures. |
-
 **MUX blocks** | Multi-channel selection (e.g., 4-to-1), often with an additional index input. AX_SEL_AUDI is limited to two channels. |
 
 ## Conclusion

@@ -20,11 +20,8 @@ None.
 ### **Adapter**
 
 | Name | Type | Direction |
-
 |-------------|-----|----------|
-
 | **IN** | `adapter::types::unidirectional::AR` | Socket (Input) |
-
 | **OUT1** – **OUT8** | `adapter::types::unidirectional::AR` | Plug (Output) |
 
 ## Functionality

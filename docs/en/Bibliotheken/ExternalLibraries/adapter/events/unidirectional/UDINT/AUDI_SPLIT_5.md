@@ -21,19 +21,12 @@ None available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** | `IN` | `adapter::types::unidirectional::AUDI` | Incoming AUDIO Signal |
-
 **Plug** | `OUT1` | `adapter::types::unidirectional::AUDI` | First Output |
-
 **Plug** | `OUT2` | `adapter::types::unidirectional::AUDI` | Second Output |
-
 **Plug** | `OUT3` | `adapter::types::unidirectional::AUDI` | Third Output |
-
 **Plug** | `OUT4` | `adapter::types::unidirectional::AUDI` | Fourth Output |
-
 **Plug** | `OUT5` | `adapter::types::unidirectional::AUDI` | Fifth Output |
 
 ## Functionality

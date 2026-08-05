@@ -8,35 +8,26 @@ The function block **DWORDS_TO_ARR08B** converts two 32-bit DWORD values into an
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Starts the conversion. The current values of `IN_00` and `IN_01` are read. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Sent as soon as the output `OUT` has been updated. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|--------|-------------------|
-
 | `IN_00` | DWORD | First 32-bit word (lower order). |
-
 | `IN_01` | DWORD | Second 32-bit word (higher order). |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-------------------|-------------------------------------------------------|
-
 | `OUT` | ARRAY[0..7] OF BYTE| Output array with 8 bytes (bytes 0–3 from `IN_00`, bytes 4–7 from `IN_01`). |
 
 ### **Adapters**

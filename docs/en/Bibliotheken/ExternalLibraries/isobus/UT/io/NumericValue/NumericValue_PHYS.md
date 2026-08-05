@@ -9,45 +9,31 @@ The function block **NumericValue_PHYS** is an input service interface block acc
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|----------------|-----------|
-
 | INIT | EInit | QI, PARAMS, stObj | Initialize the block |
-
 REQ | Event | QI | Request a new physical value |
 
 ### **Event Outputs**
 
 | Event | Type | With variables | Comment |
-
 |----------|-----|---------------|------------|
-
 INITO | EInit | QO, STATUS | Confirm initialization |
-
 IND | Event | QO, STATUS, rPhys | Output the calculated physical value |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 QI | BOOL | Input qualifier (enables processing) |
-
 | PARAMS | STRING | Service parameter (e.g., configuration string) |
-
 stObj | logiBUS::utils::conversion::phys::NumericObjectPool_S | Object pool properties: Object ID (16 bits), scaling, offset, decimal places |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 QO | BOOL | Output qualifier (processing status) |
-
 STATUS | STRING | Status message (error or success message) |
-
 rPhys | REAL | Physical value after applying scaling/offset |
 
 ### **Adapters**

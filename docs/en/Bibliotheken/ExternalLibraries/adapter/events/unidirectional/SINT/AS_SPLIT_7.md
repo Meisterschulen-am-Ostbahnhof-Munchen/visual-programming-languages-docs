@@ -25,23 +25,14 @@ None
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | IN | `adapter::types::unidirectional::AS` | Socket | Receives the AS signal to be distributed. |
-
 | OUT1 | `adapter::types::unidirectional::AS` | Plug | First output – same signal as the input. |
-
 | OUT2 | `adapter::types::unidirectional::AS` | Plug | Second output – same signal as the input. |
-
 | OUT3 | `adapter::types::unidirectional::AS` | Plug | Third output – same signal as the input. |
-
 | OUT4 | `adapter::types::unidirectional::AS` | Plug | Fourth output – same signal as the input. |
-
 | OUT5 | `adapter::types::unidirectional::AS` | Plug | Fifth output – same signal as the input. |
-
 OUT6 | `adapter::types::unidirectional::AS` | Plug | Sixth output – same signal as the input. |
-
 OUT7 | `adapter::types::unidirectional::AS` | Plug | Seventh output – same signal as the input. |
 
 ## Functionality

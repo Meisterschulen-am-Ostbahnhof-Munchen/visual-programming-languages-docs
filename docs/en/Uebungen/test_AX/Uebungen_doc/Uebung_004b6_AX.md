@@ -7,15 +7,10 @@ This exercise demonstrates the use of a toggle flip-flop (T-FF) in combination w
 ## Function Blocks (FBs) Used
 
 | FB Instance | Type | Parameters |
-
 |------------|-----|-----------|
-
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`, `Input = "Input_I1"` |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `QI = TRUE`, `Output = "Output_Q1"` |
-
 | `AX_PERMIT` | `adapter::events::unidirectional::AX_PERMIT` | (no parameters set) |
-
 | `AX_T_FF` | `adapter::events::unidirectional::AX_T_FF` | (No parameters set) |
 
 ### Adapter Descriptions

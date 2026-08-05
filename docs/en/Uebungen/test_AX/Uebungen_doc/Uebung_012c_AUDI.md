@@ -12,12 +12,9 @@ This exercise demonstrates the implementation of numeric value input followed by
 #### Sub-module parameters:
 
 | Parameter | Value | Source / Meaning |
-
 |--------------|-----------------------|----------------------------------------------------------|
-
 | `KEY` | `KEY_I1_STORE` | Constant: Key for the NVS entry |
 | `SECTION` | `SECTION_I1_STORE` | Constant: Section in the NVS structure |
-
 | `u16ObjId` | `InputNumber_I1` | Object ID from the DefaultPool that provides the input value |
 
 ## Program Flow and Connections

@@ -28,27 +28,16 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 ## FPTO Parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-
 |-----------|------|--------------|-----|------------|------------|
-
 | `FRONT_PTO_OUTP_SHAFT_SPEED` | UINT | Current FPTO shaft speed | 1882 | 16 | 0.125 rpm/bit |
-
 | `FRONT_PTO_OUTP_SH_SPEED_SET` | UINT | Target speed of FPTO shaft | 1884 | 16 | 0.125 rpm/bit |
-
 | `FRONT_PTO_ENGAGEMENT` | BYTE | FPTO coupling status | 1888 | 2 | 4 states/2 bits |
-
 | `FRONT_PTO_MODE` | BYTE | FPTO operating mode | 1889 | 2 | 4 states/2 bits |
-
 | `FRONT_PTO_ECONOMY_MODE` | BYTE | FPTO economy mode | 1891 | 2 | 4 states/2 bits |
-
 | `FRONT_PTO_ENGAGEMENT_REQ` | BYTE | Coupling request status | 5152 | 2 | 4 states/2 bits |
-
 FRONT_PTO_MODE_REQ_STATUS` | BYTE | Mode Request State | 5153 | 2 | 4 states/2 bits |
-
 FRONT_PTO_ECONOMY_MODE_REQ_STAT` | BYTE | Economy Mode Request State | 5154 | 2 | 4 states/2 bits |
-
 FRONT_PTO_SH_SPEED_LIMIT_STAT` | BYTE | Speed Limit State | 5155 | 3 | 8 states/3 bits |
-
 FRONT_PTO_EXIT_REASON_CODE` | BYTE | FPTO Failure Base Code | 5817 | 6 | 64 states/6 bits |
 
 ## Functionality
@@ -86,15 +75,10 @@ FRONT_PTO_EXIT_REASON_CODE` | BYTE | FPTO Failure Base Code | 5817 | 6 | 64 stat
 ## ⚖️ Comparison with similar components
 
 | Feature | I_FPTO | Standard_PTO | Advanced_PTO |
-
 |---------------|--------|--------------|--------------|
-
 | ISO standard | ✔ (ISO 11783-7) | ✔ | ✖ |
-
 | Front PTO | ✔ | ✖ | ✔ |
-
 Economy Mode | ✔ | ✖ | ✔ |
-
 Diagnostic Codes | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises

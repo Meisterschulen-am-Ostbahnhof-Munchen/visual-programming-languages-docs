@@ -9,25 +9,19 @@ The **AD_MUX_4** is a generic, event-driven adapter multiplexer for unidirection
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Request to evaluate the index *K* and establish the corresponding connection. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirmation of successful switching operation. |
 
 ### **Data Inputs**
 
 | Variable Name | Type | Description |
-
 |---------------|------|--------------|
-
 | **K** | UINT | Index for selecting the input channel (value range 0–3). |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ The function block does not have direct data outputs; output is provided via the
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|-----------|--------------|
-
 | `adapter::types::unidirectional::AD` | **OUT** | Plug | Output adapter that provides the value of the selected input. |
-
 | `adapter::types::unidirectional::AD` | **IN1** | Socket | First input channel (index *K* = 0). |
-
 | `adapter::types::unidirectional::AD` | **IN2** | Socket | Second input channel (index *K* = 1). |
-
 | `adapter::types::unidirectional::AD` | **IN3** | Socket | Third input channel (index *K* = 2). |
-
 | `adapter::types::unidirectional::AD` | **IN4** | Socket | Fourth input channel (index *K* = 3). |
 
 ## Functionality
@@ -75,9 +63,7 @@ Note: In case of an error (e.g., *K* > 3), the connection is not established; th
 Since the function block operates without an ECC, it can be considered a single state:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Idle** | Waiting for **REQ**. No active connection exists, or the connection from the last valid switching operation remains active. |
 
 Upon arrival of **REQ**, the connection is updated, and the transition back to the idle state occurs immediately after output of **CNF**.
@@ -90,15 +76,10 @@ Upon arrival of **REQ**, the connection is updated, and the transition back to t
 ## Comparison with Similar Modules
 
 | Module | Channels | Interface | Special Features |
-
 |----------|--------|---------------|----------------|
-
 | **AD_MUX_4** (this FB) | 4 | Adapter (unidirectional) | Generic, no ECC, simple index event handling |
-
 | **AD_MUX_2** | 2 | Adapter | Corresponding for two channels, identical functionality |
-
 | **MUX** (Standard) | Variable | Data inputs (ANY) | Suitable for values of type ANY, not limited to adapters; usually works with Boolean selection |
-
 | **SELECT** | 2 | Data and event interface | Often with two data inputs and a switching signal, more suitable for single values |
 
 The AD_MUX_4 is characterized by its adapter-based, unidirectional signal routing, which allows for clean encapsulation in modular IEC 61499 applications.

@@ -12,25 +12,19 @@ The block is specified as a generic function block (GenericClassName: `GEN_AULI_
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `REQ` | Event | Sets the index **K** and triggers the selection. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirms the switchover after processing a `REQ` event. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `K` | UINT | Selection index (expected: 0 for IN1, 1 for IN2). |
 
 ### **Data Outputs**
@@ -40,13 +34,9 @@ No direct data outputs – the output value is transmitted via the adapter `OUT`
 ### **Adapters**
 
 | Name | Type (Adapter) | Direction | Comment |
-
 |------|----------------|----------|-----------|
-
 | `OUT` | adapter::types::unidirectional::AULI | Plug | Multiplexer output – provides the value of the selected input. |
-
 | `IN1` | adapter::types::unidirectional::AULI | Socket | First input (selected when K = 0). |
-
 | `IN2` | adapter::types::unidirectional::AULI | Socket | Second input (selected when K = 1). |
 
 ## Functionality

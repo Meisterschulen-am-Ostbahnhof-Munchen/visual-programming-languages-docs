@@ -33,17 +33,11 @@ There are no separate data outputs. The output data is provided via the followin
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-
 |-------------|----------|-----|--------------|
-
 | CD | Socket | AX | Down counter pulse (Event + Bool) |
-
 | LD | Socket | AX | Charge pulse (Event + Bool) |
-
 | PV | Socket | ALI | Preset value (LINT) |
-
 | Q | Plug | AX | Output signal when counter value = 0 |
-
 | CV | Plug | ALI | Current counter value (LINT) |
 
 ## Functionality
@@ -80,13 +74,9 @@ The incoming events from CD, LD, and PV are all combined at the **REQ** input of
 The ALI_FB_CTD does **not have an explicit state machine** in the FB network. Its behavior is purely event-driven and combinatorial:
 
 | Input event | Action |
-
 |------------------|--------|
-
 | LD activated | Counter reading = Preset value |
-
 | CD activated | Decrement counter reading (if > 0) |
-
 | PV activated | No counter change, but a CNF event is sent. The data value from PV is not directly adopted – an LD is required. |
 
 The current counter reading and the Boolean output are updated after each step.
@@ -99,15 +89,10 @@ The current counter reading and the Boolean output are updated after each step.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Special Feature |
-
 |----------|--------------|
-
 | **ALI_FB_CTD** (this function block) | Uses AX and ALI adapters; always triggers; suitable for adapter-based architectures. |
-
 | **FB_CTD_LINT** (Standard) | Pure data/event function block without adapters; event triggering directly via the interfaces. |
-
 | **CTU** (Upward Counter) | Counts upwards instead of downwards; different application logic. |
-
 | **Counter Function Blocks with Edge Suppression** | They have their own filter logic (e.g., AX_D_FF) and only trigger on actual value changes. |
 
 The ALI_FB_CTD is particularly suitable for adapter-based environments where simple, reliable downcounting without additional filters is desired.

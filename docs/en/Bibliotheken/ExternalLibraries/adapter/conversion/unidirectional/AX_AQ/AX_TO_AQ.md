@@ -8,43 +8,32 @@ The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a qu
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `IN.E1` | Starts the conversion of the incoming Boolean value. Interpreted as a command. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `OUT.E1` | Confirms the completion of the conversion and signals the validity of the output quarter-byte value. |
 
 ### **Data Inputs**
 
 | Data | Type | Description |
-
 |-------|-----|---------------|
-
 | `IN.D1` | BOOL (via AX adapter) | Boolean input value to be converted into a quarter byte. |
 
 ### **Data Outputs**
 
 | Data | Type | Description |
-
 |-------|-----|--------------|
-
 | `OUT.D1` | Quarter Byte (via AQ adapter) | Output value – the converted quarter byte (4-bit representation). |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `IN` | Socket | `adapter::types::unidirectional::AX` | Receives the Boolean signal. The AX adapter provides a unidirectional Boolean channel. |
-
 | `OUT` | Plug | `adapter::types::unidirectional::AQ` | Provides the converted quarter-byte signal. The AQ adapter is a unidirectional quarter-byte channel. |
 
 ## Functionality
@@ -79,13 +68,9 @@ The function block does not have an explicit state machine. It operates as pure 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Task | Difference |
-
 |----------|---------|-------------|
-
 | `BOOL_TO_BYTE` | Converts BOOL to a byte (8-bit) | Works with 8-bit output instead of 4-bit. Requires other adapter types (e.g., `AB`). |
-
 | `BOOL_TO_WORD` | Converts BOOL to a word (16-bit) | Provides a wider output, often for analog or digital word signals. |
-
 | `AX_TO_AQ` | Converts BOOL (AX) to a quarter byte (AQ) | Specifically designed for the unidirectional AX↔AQ adapter combination, it generates only 4-bit values. |
 
 ## Conclusion

@@ -23,11 +23,8 @@ The function block has **no direct** event or data inputs/outputs. All communica
 ### Adapters
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | **QI** | `adapter::types::unidirectional::AX` | Socket | Input adapter – provides the Boolean value to be monitored (via channel `D1`) as well as an event (`E1`) for processing. |
-
 | **Q** | `adapter::types::unidirectional::ASR` | Plug | Output adapter – signals the detected edge state via the events `SET` (rising edge) and `RESET` (falling edge). |
 
 ## Functionality
@@ -52,13 +49,9 @@ Thus, the input signal is converted into a set/reset signal without the user hav
 The function block does **not have its own explicit state machine**. The internal `E_RF_TRIG` operates according to the following implicit state logic:
 
 | last value | current value | triggered event |
-
 |--------------|----------------|----------------------|
-
 | FALSE | TRUE | rising edge (SET) |
-
 | TRUE | FALSE | Falling Edge (RESET) |
-
 | else | – | no event |
 
 State storage occurs exclusively within the internal function block.
@@ -71,15 +64,10 @@ State storage occurs exclusively within the internal function block.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Edge Detection | Output Signal | Interface |
-
 |----------|------------------|----------------|---------------|
-
 | `E_RF_TRIG` | Ascending + Falling | Separate Event Outputs | Direct Events |
-
 | `E_TRIG` | Ascending only | One Event | Direct Events |
-
 | `E_F_TRIG` | Falling only | One Event | Direct Events |
-
 | **AX_ASR_RF_TRIG** | Ascending + Falling | Set/Reset Events via Adapter | Pure Adapters |
 
 Unlike pure event blocks, this function block offers an adapter interface, enabling simpler connections in hierarchical or typed adapter networks.

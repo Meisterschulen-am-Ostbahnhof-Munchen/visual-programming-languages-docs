@@ -8,37 +8,27 @@ The function block `FB_SR_T_FF` implements a bistable, set-dominant RS flip-flop
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | REQ | Event | Normal execution command (triggers processing) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Execution Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | S1 | BOOL | - | Set Input (Dominant) |
-
 | R | BOOL | - | Reset Input |
-
 | CLK | BOOL | - | Clock Signal (Rising Edge Triggers Toggle) |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|--------------|-----------|
-
 | Q1 | BOOL | - | Output Signal |
 
 ### **Adapter**
@@ -69,9 +59,7 @@ The algorithm is implemented in Structured Text (ST), and the acknowledgment eve
 The function block has a functional state machine with one state, `REQ`. This state executes the algorithm and then sends `CNF`. There are no other explicit states in the automaton, as the flip-flop behavior is purely data-driven within the algorithm.
 
 | State | Incoming Events | Action | Outgoing Events |
-
 |---------|-----------------------|--------|------------------------|
-
 | REQ | REQ | Execute the algorithm, update `Q1` and `EDGE` | CNF |
 
 ## Application Scenarios

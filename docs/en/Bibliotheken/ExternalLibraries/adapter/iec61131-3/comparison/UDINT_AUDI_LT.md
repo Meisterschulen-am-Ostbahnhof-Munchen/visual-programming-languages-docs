@@ -9,17 +9,13 @@ The function block **UDINT_AUDI_LT** performs a numerical less-than comparison a
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|--------|-----------------------------|
-
 | REQ | Event | Trigger for the comparison process |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|--------|-----------------------------|
-
 | (via adapter OUT.E1) | Event | Acknowledgement after successful comparison |
 
 The event output is implemented via the **OUT** adapter (type `AX`).
@@ -27,11 +23,8 @@ The event output is implemented via the **OUT** adapter (type `AX`).
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------------------|-----------------------------|
-
 | IN1 | ANY_ELEMENTARY | First comparison value |
-
 | IN2 | (via socket adapter) | Second comparison value |
 
 The second comparison value is read via a socket adapter **IN2** (type `AUDI`).
@@ -39,9 +32,7 @@ The second comparison value is read via a socket adapter **IN2** (type `AUDI`).
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-------------------|-----------------------------|
-
 | (via adapter OUT.D1) | (implicit) | Comparison result (TRUE/FALSE) |
 
 The result is output as a logical value via adapter **OUT** (type `AX`).
@@ -49,11 +40,8 @@ The result is output as a logical value via adapter **OUT** (type `AX`).
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------|--------|------------|--------------------------------------|
-
 | OUT | AX | Plug | Output adapter for result and event |
-
 | IN2 | AUDI | Socket | Input adapter for the second comparison value |
 
 ## Functionality
@@ -81,9 +69,7 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Die Verarbeitung erfolgt 
 |----------------|-------------------|------------------------------------|
 | **UDINT_AUDI_LT** | Kleiner (<)       | Adapter-basiert (IN2, OUT)         |
 | **UDINT_AUDI_GT** | Größer (>") | Analog Adapter Structure |
-
 | **UDINT_AUDI_EQ** | Equal (==) | Analog Adapter Structure |
-
 | **F_LT** | Less than (<) | Classic Inputs/Outputs |
 
 Unlike direct comparison blocks such as `F_LT`, this block offers extended coupling via adapters, simplifying integration into modular automation architectures.

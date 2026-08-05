@@ -11,35 +11,26 @@ The **FB_T_FF** (Toggle Flip-Flop) implements an edge-triggered, asynchronously 
 ### **Event Inputs**
 
 | Event | Associated Data | Description |
-
 |----------|-------------------|--------------------------------------------|
-
 | `REQ` | `CLK`, `RST` | Normal execution job; triggers the algorithm |
 
 ### **Event Outputs**
 
 | Event | Associated Data | Description |
-
 |----------|-------------------|--------------------------------------------------|
-
 | `CNF` | `Q` | Confirms execution, returns the current value of `Q` |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|---------------------------------|
-
 | `CLK`| BOOL | Clock signal (edge detection) |
-
 | `RST`| BOOL | Asynchronous reset (active high) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-------|--------------------------------------------|
-
 | `Q` | BOOL | Output – toggles on rising CLK edge, unless reset is active |
 
 ### **Adapters**
@@ -68,9 +59,7 @@ The algorithm is executed in the internal **REQ** state; after the algorithm, th
 The function block is implemented as a **SimpleFB** with a single EC state:
 
 | State | Incoming Events | Outgoing Action | Outgoing Event |
-
 |---------|-----------------------|-------------------|----------------------|
-
 | `REQ` | `REQ` | Execute algorithm `REQ` (Toggle/Reset logic) | `CNF` |
 
 The state is immediately reactivated after processing; there are no wait or follow-up states.
@@ -84,13 +73,9 @@ The state is immediately reactivated after processing; there are no wait or foll
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-
 |----------------|-----------------------------------------------------------------------------|
-
 | **SR Flip-Flop**| Set and reset via separate inputs; no toggle behavior. |
-
 **D-Flip-Flop** | Takes the value of `D` on the clock edge; no toggle, no reset integrated. |
-
 **FB_T_FF** | Inverts the output on each rising edge; asynchronous reset possible. |
 
 The **FB_T_FF** is therefore ideal for simple switching tasks where no set/reset input is required.

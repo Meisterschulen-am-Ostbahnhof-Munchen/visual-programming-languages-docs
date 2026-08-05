@@ -13,9 +13,7 @@ The block is optimized for use in agricultural control systems (ISOBUS) and uses
 ### **Event Inputs**
 
 | Name | Type | With Variables |
-
 |------|------|----------------|
-
 | REQ | Event | u32Raw, stObj |
 
 The function block is triggered by an event at input `REQ`.
@@ -23,9 +21,7 @@ The function block is triggered by an event at input `REQ`.
 ### **Event Outputs**
 
 | Name | Type | With Variables |
-
 |------|------|----------------|
-
 | CNF | Event | (none) |
 
 After successful calculation, the result is acknowledged via event `CNF`.
@@ -33,19 +29,14 @@ After successful calculation, the result is acknowledged via event `CNF`.
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------------|--------------|
-
 | u32Raw | UDINT | Raw value from the ISOBUS bus (0 … 4294967295) |
-
 | stObj | NumericObjectPool_S | Structure with the conversion parameters: `i32Offset` (DINT) and `r32Scale` (REAL) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |-------|-------|--------------|
-
 | (no name) | LREAL | Calculated physical value (IEEE double precision) |
 
 The output signal has no explicit name but represents the directly calculated LREAL value.
@@ -91,15 +82,10 @@ The function block does not have an internal state machine, as it is a pure tran
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Data Type | Output Data Type | Special Features |
-
 |----------|------------------|------------------|--------------|
-
 | `F_RAW_TO_PHYS_LREAL` | UDINT | LREAL | Double precision, LINT intermediate step |
-
 | `F_RAW_TO_PHYS_REAL` | UDINT | REAL | Single precision, reduced computational load |
-
 | `F_RAW_TO_PHYS_LINT` | UDINT | LINT | Output as integer, without scaling |
-
 | `F_RAW_TO_PHYS_INT` | UINT | REAL | Only positive raw values, smaller range |
 
 This function block offers the highest precision and is recommended for applications requiring large ranges or fine increments.

@@ -20,11 +20,8 @@ The FB does not have its own data outputs. The distributed data is output via th
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AD` | Socket (Input) | DWORD input adapter (32 bits). Events and data are received via `E1` and `D1`. |
-
 | `QUARTER_BYTE_00` to `QUARTER_BYTE_15` | `adapter::types::unidirectional::AQ` | Plug (Output) | 16 output adapters, each providing one quarter (2 bits) of the original DWORD. Each adapter has an event output `E1` and a data output `D1`. |
 
 ## Functionality
@@ -56,13 +53,9 @@ As a composite function block (FB), `SPLIT_AD_INTO_AQ` does not have its own sta
 ## Comparison with similar components
 
 | Component | Description | Difference to `SPLIT_AD_INTO_AQ` |
-
 |----------|--------------|-----------------------------------|
-
 | `SPLIT_DWORD_INTO_QUARTERS` | Decomposes a DWORD into 16 quarter values and outputs them as direct data outputs. | `SPLIT_AD_INTO_AQ` additionally encapsulates this decomposition in adapter interfaces and adds flip-flop synchronization. |
-
 | `SPLIT_INT_INTO_BITS` | Splits an integer into individual bits. | Operates at the bit level and not on 2-bit quarters; Output is typically in Boolean form. |
-
 | Manual partitioning with `MUX` or `DEMUX` | Could be used to implement data partitioning without adapters. | `SPLIT_AD_INTO_AQ` is specifically optimized for adapter communication and offers a bundled, synchronized solution. |
 
 ## Conclusion

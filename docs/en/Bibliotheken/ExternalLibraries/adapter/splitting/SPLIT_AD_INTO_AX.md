@@ -14,9 +14,7 @@ None. Output is provided via the adapter plugs, whose internal event behavior is
 ### **Data Inputs**
 
 | Label | Type | Comment |
-
 |-------------|-------|-----------------------|
-
 | IN | AD | DWORD Input (32-bit) |
 
 Data is received via the IN adapter socket. The AD adapter provides a DWORD value and an associated event (E1).
@@ -24,15 +22,10 @@ Data is received via the IN adapter socket. The AD adapter provides a DWORD valu
 ### **Data Outputs**
 
 | Label | Type | Comment |
-
 |-------------|-------|---------------------|
-
 | BIT_00 | AX | Bool Bit 0 |
-
 | BIT_01 | AX | Bool Bit 1 |
-
 | … | … | … |
-
 | BIT_31 | AX | Bool Bit 31 |
 
 All 32 output adapters are of type AX (unidirectional BOOL adapter). Each output returns the state of the corresponding bit of the incoming DWORD.

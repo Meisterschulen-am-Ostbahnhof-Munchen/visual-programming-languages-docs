@@ -9,25 +9,19 @@ The **AD_MUX_5** is a generic multiplexer IC for adapter interfaces. It allows t
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K (triggered by data input K) |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | index (0..4, corresponds to IN1..IN5) |
 
 ### **Data Outputs**

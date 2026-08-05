@@ -28,11 +28,8 @@ The FB does not have an explicit data output. The result is output via the **ALI
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket (Input) | ALR_IN | `adapter::types::unidirectional::ALR` | Unidirectional adapter for LREAL data and events. Includes event port E1 and data port D1 (LREAL). |
-
 | Plug (Output) | ALI_OUT | `adapter::types::unidirectional::ALI` | Unidirectional adapter for LINT data and events. Includes event port E1 and data port D1 (LINT). |
 
 ## Functionality

@@ -20,13 +20,9 @@ No data outputs are available. Outputs are provided via the adapter outputs `OUT
 ### **Adapter**
 
 | Role | Name | Type | Direction |
-
 |--------|------|-----------------------------------|----------|
-
 | Socket | IN | `adapter::types::unidirectional::AB` | Input |
-
 | Plug | OUT1 | `adapter::types::unidirectional::AB` | Output |
-
 | Plug | OUT2 | `adapter::types::unidirectional::AB` | Output |
 
 ## Functionality

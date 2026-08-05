@@ -31,23 +31,16 @@ The FB has no direct data outputs. The output data is provided via the adapter p
 **Sockets (Inputs)**
 
 | Adapter | Type | Description |
-
 |---|---|---|
-
 | `UP_IN` | `adapter::types::unidirectional::AX` | Input for up-direction (event + data) |
-
 | `DOWN_IN` | `adapter::types::unidirectional::AX` | Input for down-direction (event + data) |
 
 **Plugs (Outputs)**
 
 | Adapter | Type | Description |
-
 |---|---|---|
-
 | `UP_OUT` | `adapter::types::unidirectional::AX` | Output for Upward Direction |
-
 | `DOWN_OUT` | `adapter::types::unidirectional::AX` | Output for Downward Direction |
-
 | `TRIP_OUT` | `adapter::types::unidirectional::AX` | Trip State Output |
 
 *Note:* The interface `unidirectional::AX` is interpreted here as an adapter with one event (E1) and one BOOL data element (D1), which carries the activation state.
@@ -86,15 +79,10 @@ Prioritization is implicit: As long as there is no conflict, the first detected 
 ## State overview
 
 | State | UP_OUT.D1 | DOWN_OUT.D1 | TRIP_OUT.D1 | Description |
-
 |---|---|---|---|---|
-
 | `STOP` | FALSE | FALSE | FALSE | Resting position, no direction active |
-
 | `UP` | TRUE | FALSE | FALSE | Upward direction active |
-
 | `DOWN` | FALSE | TRUE | FALSE | Downward direction active |
-
 | `TRIP` | FALSE | FALSE | TRUE | Conflict / Trip, requires reset |
 
 **Important Transitions:**

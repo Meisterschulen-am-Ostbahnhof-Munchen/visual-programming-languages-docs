@@ -9,43 +9,32 @@ The function block **AX_TO_AL** is a composite block for bidirectional coupling 
 ### **Event Inputs**
 
 | Name | Adapter | Description |
-
 |------|---------|---------------|
-
 | AX_IN.E1 | AX (BOOL) | Event input connected via the AX adapter. |
 
 ### **Event Outputs**
 
 | Name | Adapter | Description |
-
 |------|---------|--------------|
-
 | AL_OUT.E1 | AL (LWORD) | Event output that passes the incoming event on unchanged. |
 
 ### **Data Inputs**
 
 | Name | Adapter | Type | Description |
-
 |------|---------|-----|--------------|
-
 | AX_IN.D1 | AX (BOOL) | BOOL | Data input for a Boolean signal. |
 
 ### **Data Outputs**
 
 | Name | Adapter | Type | Description |
-
 |------|---------|-----|--------------|
-
 | AL_OUT.D1 | AL (LWORD) | LWORD | Data output that represents the Boolean signal as an LWORD (64-bit memory). Type conversion is performed outside the function block. |
 
 ### **Adapter**
 
 | Type | Name | Direction |
-
 |-----|------|----------|
-
 | Socket | AX_IN | Input (BOOL) |
-
 | Plug | AL_OUT | Output (LWORD) |
 
 ## Functionality

@@ -9,25 +9,19 @@ The function block AB_DEMUX_4 is a generic demultiplexer for the adapter type `a
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | **REQ** | Sets the index K and triggers the distribution. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | **CNF** | Confirmation of successful indexing and distribution. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | **K** | UINT | Index (value range 1–4), selects the destination output. |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ No separate data outputs are available; the output data is provided via the adap
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket (Input) | **IN** | adapter::types::unidirectional::AB | Input adapter that supplies the data to be distributed. |
-
 | Plug (Output) | **OUT1** | adapter::types::unidirectional::AB | First output adapter (Index 1). |
-
 | Plug (Output) | **OUT2** | adapter::types::unidirectional::AB | Second output adapter (Index 2). |
-
 | Plug (Output) | **OUT3** | adapter::types::unidirectional::AB | Third output adapter (Index 3). |
-
 | Plug (Output) | **OUT4** | adapter::types::unidirectional::AB | Fourth output adapter (Index 4). |
 
 ## Functionality

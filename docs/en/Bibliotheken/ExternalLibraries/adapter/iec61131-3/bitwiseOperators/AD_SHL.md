@@ -8,9 +8,7 @@ The function block **AD_SHL** performs a bitwise left shift of an input value. I
 ### **Event Inputs**
 
 | Event | Description | With Parameters |
-
 |----------|----------------|---------------|
-
 | `UPDATE` | Updates the shift count and starts the calculation. | `N` |
 
 ### **Event Outputs**
@@ -19,9 +17,7 @@ No direct event outputs are available. The event for passing the result is handl
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `N` | `ANY_INT` | Number of bit positions to shift. |
 
 ### **Data Outputs**
@@ -30,11 +26,8 @@ No direct data outputs. The result of the shift is provided via the adapter `OUT
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AD` | Receives the value to be shifted via the adapter channel. |
-
 | Plug | `OUT` | `adapter::types::unidirectional::AD` | Provides the result of the left shift. |
 
 ## Functionality

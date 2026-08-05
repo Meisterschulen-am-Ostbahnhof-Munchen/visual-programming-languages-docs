@@ -9,49 +9,35 @@ The function block **IA_FHS** serves as an ISOBUS adapter for the Front Hitch St
 ### **Event Inputs**
 
 | Event | Type | with variables | Description |
-
 |----------|--------|----------------|---------------------------------|
-
 | `INIT` | EInit | `QI` | Service Initialization |
 
 ### **Event Outputs**
 
 | Event | Type | with Variables | Description |
-
 |----------|--------|--------------------|-----------------------------------|
-
 | `INITO` | EInit | `QO`, `STATUS` | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|--------|-------------------------------|
-
 | `QI` | BOOL | Event Input Qualifier |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|--------|----------------------------|
-
 | `QO` | BOOL | Output Qualifier |
-
 | `STATUS` | STRING | Status Message (e.g., "OK") |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |-----------|-----------------------------|----------------------------------------------|
-
 | `POSITION`| `adapter::types::unidirectional::AUS` | Front Hitch Position (analog, unsigned) |
-
 | `FORCE` | `adapter::types::unidirectional::AUS` | Front Nominal Lower Link Force (analog) |
-
 | `DRAFT` | `adapter::types::unidirectional::AUI` | Front Draft (analog, integer, unsigned) |
-
 | `TIMEOUT` | `adapter::types::unidirectional::AX` | ISOBUS Reception Timeout Status |
 
 ## Functionality

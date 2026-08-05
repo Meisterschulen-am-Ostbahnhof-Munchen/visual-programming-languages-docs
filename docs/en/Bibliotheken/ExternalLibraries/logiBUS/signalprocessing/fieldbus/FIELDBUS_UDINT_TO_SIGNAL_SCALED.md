@@ -9,42 +9,30 @@ The function block `FIELDBUS_UDINT_TO_SIGNAL_SCALED` processes a UDINT value rec
 ### **Event Inputs**
 
 | Event | Type | With Parameters | Description |
-
 |----------|-------|----------------|-----------------------------------------|
-
 | `INIT` | EInit | `SCALE`, `OFFSET` | Initialization – sets scaling factor and offset. |
-
 | `REQ` | Event | `IN` | Normal execution event – processes the current input value. |
 
 ### **Event Outputs**
 
 | Event | Type | With Parameters | Description |
-
 |----------|-------|----------------|-----------------------------------------|
-
 | `INITO` | EInit | – | Confirmation of successful initialization. |
 | `CNF` | Event | `OUT`, `VALID` | Processing confirmation – provides the scaled value and the validity signal. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |----------|--------|------------------------------------------|---------------------------------------|
-
 | `IN` | UDINT | `DWORD_TO_UDINT(NOT_AVAILABLE_DWM)` | Raw value from the fieldbus. |
-
 | `SCALE` | LREAL | `LREAL#1.0` | Multiplicative scaling factor. |
-
 | `OFFSET` | DINT | `DINT#0` | Additive Offset (after scaling). |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |---------|--------|--------------|----------------------------------------------|
-
 | `OUT` | LREAL | `LREAL#0.0` | Scaled output value. |
-
 | `VALID` | BOOL | `FALSE` | `TRUE`, if the input value was recognized as valid. |
 
 ### **Adapter**

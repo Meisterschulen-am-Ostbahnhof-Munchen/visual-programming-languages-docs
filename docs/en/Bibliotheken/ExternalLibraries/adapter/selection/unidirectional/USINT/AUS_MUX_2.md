@@ -9,25 +9,19 @@ The function block **AUS_MUX_2** implements a generic multiplexer for the AUS ad
 ### **Event Inputs**
 
 | Event | With Variables | Comment |
-
 |----------|---------------|---------------------------------|
-
 | REQ | K | Sets the index K and triggers the multiplexer action |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|----------------------------------------|
-
 | CNF | Confirmation of successful switching |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|------|-------------------------|
-
 | K | UINT | Index for selecting the input (0 → IN1, 1 → IN2) |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No separate data outputs are defined; data is transferred via the adapter `OUT`.
 ### **Adapter**
 
 | Type | Name | Direction | Adapter Type | Comment |
-
 |---------|------|------------|---------------------------------------|----------------------------------------|
-
 | Plug | OUT | Output | adapter::types::unidirectional::OFF | Output that provides the selected input |
-
 | Socket | IN1 | Input | adapter::types::unidirectional::OFF | First input (K = 0) |
-
 | Socket | IN2 | Input | adapter::types::unidirectional::OFF | Second input (K = 1) |
 
 ## Functionality

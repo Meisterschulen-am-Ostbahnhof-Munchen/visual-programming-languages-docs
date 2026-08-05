@@ -4,11 +4,8 @@ The function block **TOF** (Timer Off-Delay) implements a timer off. The output 
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
 **Input** | IN | BOOL | Start Signal |
-
 **Input** | PT | TIME | Preset Time (Delay Time) |
-
 **Output** | Q | BOOL | Output Signal |
-
 **Output** | ET | TIME | Elapsed Time (Time Elapsed Since Falling Edge) |
 
 ## Function

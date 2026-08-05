@@ -8,25 +8,19 @@ The function block **AD_MUX_3** serves as a generic 3-channel multiplexer for an
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Set Index K |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of Set Index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index (0, 1, or 2) |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No data outputs defined (data is passed via the adapter `OUT`).
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (Output) | OUT | adapter::types::unidirectional::AD | Output, provides the data of the selected input |
-
 | Socket (Input) | IN1 | adapter::types::unidirectional::AD | Input value 1 (active when K=0) |
-
 | Socket (Input) | IN2 | adapter::types::unidirectional::AD | Input value 2 (active when K=1) |
-
 | Socket (Input) | IN3 | adapter::types::unidirectional::AD | Input value 3 (active when K=2) |
 
 ## Functionality

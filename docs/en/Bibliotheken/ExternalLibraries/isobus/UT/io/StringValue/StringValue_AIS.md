@@ -8,49 +8,35 @@ The **StringValue_AIS** function block is a service interface function block for
 ### **Event Inputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-----|----------------|--------------|
-
 | INIT | EInit | QI, PARAMS, u16ObjId | Initializes the service and passes qualifiers, parameters, and object IDs. |
-
 | REQ | Event | QI | Requests a data query or processing. |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-----|----------------|--------------|
-
 | INITO | EInit | QO, STATUS | Confirms initialization and provides status information. |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-
 |----------|-----|--------------|--------------|
-
 | QI | BOOL | – | Qualifier for events (TRUE = active). |
-
 | PARAMS | STRING | – | Service parameters (e.g., configuration data). |
-
 | u16ObjId | UINT | ID_NULL | Object ID referenced in the log. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QO | BOOL | Output qualifier (service acknowledgment). |
-
 | STATUS | STRING | Service status message (e.g., error message or success message). |
 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|-----------|--------------|
-
 | IN | adapter::types::unidirectional::AIS | Input | Unidirectional adapter for data exchange with an external resource (e.g., a hardware interface).
 
 ## Functionality

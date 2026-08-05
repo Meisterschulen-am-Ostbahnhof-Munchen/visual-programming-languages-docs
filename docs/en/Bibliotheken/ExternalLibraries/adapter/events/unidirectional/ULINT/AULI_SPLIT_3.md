@@ -20,15 +20,10 @@ None.
 ### **Adapter**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | IN | AULI (unidirectional) | Input adapter – receives the signal to be distributed. |
-
 OUT1 | AULI (unidirectional) | First output adapter. |
-
 OUT2 | AULI (unidirectional) | Second output adapter. |
-
 OUT3 | AULI (unidirectional) | Third output adapter. |
 
 ## Functionality

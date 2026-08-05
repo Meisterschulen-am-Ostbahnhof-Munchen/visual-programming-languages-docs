@@ -8,25 +8,19 @@ The function block **AIS_MUX_3** is a generic multiplexer for AIS data. It selec
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Starts the multiplex operation: The value of `K` determines which input is connected to the output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Acknowledges the successful selection of the input according to `K`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|---------------|
-
 | K | UINT | Index for selecting the input (0 = IN1, 1 = IN2, 2 = IN3). |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No direct data outputs are available. Output data is provided via the adapter `O
 ### **Adapters**
 
 | Name | Type | Description |
-
 |------|----------------------------------------|---------------|
-
 | OUT | adapter::types::unidirectional::AIS | Output adapter that reflects the selected input. |
-
 | IN1 | adapter::types::unidirectional::AIS | First input adapter (index 0). |
-
 | IN2 | adapter::types::unidirectional::AIS | Second input adapter (index 1). |
-
 | IN3 | adapter::types::unidirectional::AIS | Third input adapter (index 2). |
 
 ## Functionality
@@ -80,13 +69,9 @@ The function block (FB) does not have documented state machine control. Only a b
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Special Feature |
-
 |----------|-----------------|--------------|
-
 | AIS_MUX_2 | 2 | Simple two-channel multiplexer for AIS adapters. |
-
 | AIS_MUX_3 | 3 | Extended to three channels; ideal for systems with three data sources. |
-
 | AIS_MUX_4 | 4 | Higher channel count, but less specific to three-channel scenarios. |
 
 Compared to a general-purpose MUX function block (e.g., MUX from IEC 61499 standard libraries), AIS_MUX_3 uses only AIS adapters, providing a clear data structure and type safety within an AIS-based framework.

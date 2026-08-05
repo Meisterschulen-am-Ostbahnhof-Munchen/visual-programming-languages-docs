@@ -8,25 +8,19 @@ The function block **ATM_MUX_3** is a generic multiplexer for ATM adapters (Auto
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Sets the index K and triggers the switching. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Confirmation of successful index setting and switching. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | K | UINT | Index for selecting the active input (0 for IN1, 1 for IN2, 2 for IN3). |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Plug (OUT) | OUT | adapter::types::unidirectional::ATM | Output adapter that is connected to one of the three sockets depending on the K value. |
-
 | Socket (IN1) | IN1 | adapter::types::unidirectional::ATM | First input adapter (for K=0). |
-
 | Socket (IN2) | IN2 | adapter::types::unidirectional::ATM | Second input adapter (for K=1). |
-
 | Socket (IN3) | IN3 | adapter::types::unidirectional::ATM | Third input adapter (for K=2). |
 
 ## Functionality

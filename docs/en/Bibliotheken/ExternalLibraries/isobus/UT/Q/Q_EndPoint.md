@@ -59,27 +59,18 @@ The **Q_EndPoint** is a standards-compliant function block for controlling line 
 ## Line directions (B.27)
 
 | Value | Direction | Description |
-
 |------|-------------------|-------------------------| | 0 | Horizontal | From left to right |
-
 | 1 | Vertical | From top to bottom |
-
 | 2 | Diagonal right | Top left → Bottom right |
-
 | 3 | Diagonal left | Top right → Bottom left |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Invalid position values |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid line object ID |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid instance |
 
 ## Application Scenarios
@@ -91,13 +82,9 @@ The **Q_EndPoint** is a standards-compliant function block for controlling line 
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_EndPoint | VtLineEditor | VtDynamicLine |
-
 |----------------|---------------|---------------|---------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Control | Endpoint | Full | Position Only |
-
 | Directions | 4 Options | 8 Options | None |
 
 ## Conclusion

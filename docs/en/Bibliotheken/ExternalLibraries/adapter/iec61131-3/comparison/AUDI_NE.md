@@ -24,13 +24,9 @@ The output adapter **OUT** provides an event output (E1). This signals the compl
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket | Captures the first input value |
-
 | IN2 | `adapter::types::unidirectional::AUDI` | Socket | Receives the second input value |
-
 | OUT | `adapter::types::unidirectional::AX` | Plug | Outputs the comparison result |
 
 ## Functionality

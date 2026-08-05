@@ -21,11 +21,8 @@ Not present – data is transferred via the adapters.
 ### **Adapters**
 
 | Type | Name | Comment |
-
 |------|------|-----------|
-
 | Socket | `ALI_IN` | Input adapter of type `adapter::types::unidirectional::ALI` – provides LINT value and associated event. |
-
 | Plug | `AUI_OUT` | Output adapter of type `adapter::types::unidirectional::AUI` – provides the converted UINT value and associated event. |
 
 ## Functionality

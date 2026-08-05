@@ -10,25 +10,19 @@ The function block `ALR_MUX_4` implements a 4-channel multiplexer for data of ty
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `REQ` | Event | Sets the index `K` and triggers the forwarding of the corresponding input. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `CNF` | Event | Confirmation that the selection according to `K` has been made. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `K` | UINT | Index of the input to be multiplexed (0 … 3). |
 
 ### **Data Outputs**
@@ -38,19 +32,12 @@ This function block does not have its own data outputs – the output data is pr
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Plug (Output) | `OUT` | `adapter::types::unidirectional::ALR` | Adapter that provides the data for the selected input. |
-
 | Socket (Input) | `IN1` | `adapter::types::unidirectional::ALR` | First Data Adapter (Index 0). |
-
 Socket (Input) | `IN2` | `adapter::types::unidirectional::ALR` | Second Data Adapter (Index 1). |
-
 Socket (Input) | `IN3` | `adapter::types::unidirectional::ALR` | Third Data Adapter (Index 2). |
-
 Socket (Input) | `IN4` | `adapter::types::unidirectional::ALR` | Fourth Data Adapter (Index 3). |
-
 Socket (Input) | `IN4` | `adapter::types::unidirectional::ALR` | Fourth Data Adapter (Index 3). |
 
 ## Functionality

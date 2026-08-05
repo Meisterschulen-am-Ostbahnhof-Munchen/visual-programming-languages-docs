@@ -9,25 +9,19 @@ The function block **AI_D_FF_HYS** implements a clock-controlled D flip-flop (da
 ### **Event Inputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-------|----------------|-----------------------------|
-
 | INIT | EInit | HYSTERESIS | Initialization and Hysteresis Band Setting |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|--------------------------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |-------------|------|----------------------------------------|
-
 | HYSTERESIS | INT | Hysteresis Bandwidth (e.g., in digital steps) |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ This function block does not have direct data outputs. The locked value is provi
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|-----|----------|---------------------------------------------------|
-
 | I | AI | Socket | Input adapter: Clock signal (**E1**) and data (**D1**) |
-
 | Q | AI | Plug | Output adapter: Latched value (**D1**) and associated event (**E1**) |
 
 The adapter type used, `adapter::types::unidirectional::AI`, is a unidirectional data and event channel. The clock (E1) and data (D1) values are received via socket **I**; the latched value (D1) is output via plug **Q** along with an acknowledgment event (E1).
@@ -87,13 +78,9 @@ The actual flip-flop with hysteresis is implemented by the internal function blo
 The function block (FB) does not have explicit states in the sense of a finite automaton. After the **INIT** operation, it is in an operating state where it waits for clock events. A subsequent **INIT** call resets the hysteresis and initializes the internal logic.
 
 | State | Description |
-
 |----------------------|-----------------------------------------------|
-
 | Initialized | Ready for processing after a successful **INIT** |
-
 | Waiting for Clock | Expecting an **I.E1** event at the input adapter |
-
 | Data Processing | Upon **I.E1**: Hysteresis comparison and, if necessary, acceptance |
 
 ## Application Scenarios
@@ -116,13 +103,9 @@ This adapter allows the connection of components with different event clocks by 
 ## Comparison with Similar Components
 
 | Component | Hysteresis | Clock Input | Output Type | Special Feature |
-
 -------------------|-----------|-------------|-----------------------|----------------------------------|
-
 **AI_D_FF_HYS** | Yes | Yes | Adapter (AI) | Flexible Adapter Coupling | ... Standard D-FF (61499) | No | Yes | Direct Data Outputs | No Noise Suppression |
-
 SR Flip-Flop | No | No | Direct | Set/Reset, No Clock |
-
 Schmitt Trigger | Yes | No | Analog Threshold | Threshold Only, No Memory |
 
 The AI_D_FF_HYS combines the features of a clocked D flip-flop with adjustable hysteresis and offers platform-independent integration into IEC 61499 systems via its adapter interface.

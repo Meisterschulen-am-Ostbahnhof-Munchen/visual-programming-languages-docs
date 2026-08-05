@@ -11,33 +11,25 @@ The function block only has adapter connections (socket and plug) through which 
 ### **Event Inputs**
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `AI_IN.E1` | EVENT | Input event that triggers the conversion. |
 
 ### **Event Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `AX_OUT.E1` | EVENT | Output event that is sent after the conversion is complete. |
 
 ### **Data Inputs**
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `AI_IN.D1` | INT | Analog integer input value (e.g., 0…32767). |
 
 ### **Data Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `AX_OUT.D1` | BOOL | Boolean output value: `TRUE` if the input value is not equal to 0, otherwise `FALSE`. |
 
 ### **Adapter**
@@ -55,11 +47,8 @@ The function block only has adapter connections (socket and plug) through which 
 ### **Data Outputs**
 
 | Type | Name | Direction |
-
 | |------------|----------|----------|
-
 | `AI` (Input Adapter) | `AI_IN` | Socket |
-
 | `AX` (Output Adapter) | `AX_OUT` | Plug |
 
 ## Functionality

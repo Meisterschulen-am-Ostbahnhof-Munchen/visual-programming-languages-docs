@@ -10,42 +10,32 @@ The FB has **no direct** event or data inputs/outputs. Communication takes place
 ### **Event Inputs**
 
 | Signal | Source | Data Type | Description |
-
 |--------|--------|----------|-------------|
-
 | E1 | via Socket `ALR_IN` | (Event) | Starts the conversion of an incoming LREAL value. |
 
 ### **Event Outputs**
 
 | Signal | Destination | Data Type | Description |
-
 |--------|------|-----------|--------------|
 | E1 | via Plug `AULI_OUT` | (Event) | Signals that the converted ULINT value is present at the output. |
 
 ### **Data Inputs**
 
 | Signal | Source | Data Type | Description |
-
 |--------|--------|----------|-------------|
-
 | D1 | via Socket `ALR_IN` | LREAL | The floating-point value to be converted. |
 
 ### **Data Outputs**
 
 | Signal | Destination | Data Type | Description |
-
 |--------|------|----------|--------------|
-
 | D1 | via Plug `AULI_OUT` | ULINT | The converted unsigned integer value. |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `ALR_IN` | `adapter::types::unidirectional::ALR` | Socket (Input) | Receives the LREAL value and its associated event. |
-
 | `AULI_OUT` | `adapter::types::unidirectional::AULI` | Plug (Output) | Outputs the converted ULINT value with an acknowledgment event. |
 
 ## Functionality

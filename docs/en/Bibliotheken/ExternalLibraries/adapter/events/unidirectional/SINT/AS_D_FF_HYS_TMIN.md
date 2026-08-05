@@ -9,27 +9,20 @@ The function block **AS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (D
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|----------------------------------------------|
-
 | INIT | EInit | Initialization request; sets hysteresis and minimum time |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|---------------------------------------------|
-
 | INITO | EInit | Confirmation of completed initialization |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------------|------|--------------------------------------------------|
-
 | HYSTERESIS | SINT | Hysteresis band (integer value, e.g., 8 bits) |
-
 | Tmin | TIME | Minimum time between two events (e.g., for debouncing) |
 
 ### **Data Outputs**
@@ -39,11 +32,8 @@ No direct data outputs – the output signal is provided via the **Q** adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |-----|-------------|----------|---------------------------------------|
-
 | AS | I (Socket) | Input | Unidirectional adapter for the signal to be latched (e.g., data + event line) |
-
 | AS | Q (Plug) | Output | Unidirectional adapter for the latching output signal |
 
 ## Functionality

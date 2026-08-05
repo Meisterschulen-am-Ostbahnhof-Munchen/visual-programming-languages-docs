@@ -23,25 +23,15 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|-----|-----|--------------|
-
 **Socket** | `IN` | `adapter::types::unidirectional::AE` | Incoming unidirectional AE adapter |
-
 **Plug** | `OUT1` | `adapter::types::unidirectional::AE` | First outgoing AE adapter |
-
 **Plug** | `OUT2` | `adapter::types::unidirectional::AE` | Second outgoing AE adapter |
-
 **Plug** | `OUT3` | `adapter::types::unidirectional::AE` | Third Outgoing AE Adapter |
-
 **Plug** | `OUT4` | `adapter::types::unidirectional::AE` | Fourth Outgoing AE Adapter |
-
 **Plug** | `OUT5` | `adapter::types::unidirectional::AE` | Fifth Outgoing AE Adapter |
-
 **Plug** | `OUT6` | `adapter::types::unidirectional::AE` | Sixth Outgoing AE Adapter |
-
 **Plug** | `OUT7` | `adapter::types::unidirectional::AE` | Seventh Outgoing AE Adapter |
-
 **Plug** | `OUT8` | `adapter::types::unidirectional::AE` | Eighth Outgoing AE Adapter |
 
 ## Functionality

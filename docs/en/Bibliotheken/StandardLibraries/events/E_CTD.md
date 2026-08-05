@@ -63,13 +63,9 @@ The **E_CTD** (Event-Driven Down Counter) is an event-driven down counter accord
 ## ⚖️ Comparison with similar modules
 
 | Feature | E_CTD | E_CTU (Up Counter) | E_CTUD (Up/Down Counter) |
-
 |------------------|-------------------|--------------------|--------------------------|
-
 | Counting Direction | Down | Up | Both |
-
 | Event-Driven | Yes | Yes | Yes |
-
 | Reset Function | LD (Reload) | R (Reset) | R (Reset) |
 
 ## 🛠️ Related Exercises

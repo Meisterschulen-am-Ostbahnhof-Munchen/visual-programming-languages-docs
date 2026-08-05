@@ -9,40 +9,29 @@ The function block **F_MUX_32** is a generic multiplexer (selection function) ac
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------------------------------------------------|
-
 | REQ | Event | Service Request – triggers the selection |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
 |------|-------|-----------------------------------------------------------|
-
 | CNF | Event | Confirmation – confirms the selection has been made |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------------|------------------------------------------------------|
-
 | K | ANY_INT | Selection value (0 … 31), selects one of the 32 inputs |
-
 | IN1 | ANY | Input value 1 |
-
 | IN2 | ANY | Input value 2 |
-
 | … | … | … |
-
 | IN32 | ANY | Input value 32 |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|----------------------------------------------------------|
-
 | OUT | ANY | Output value: IN1 if K=0; IN2 if K=1; …; IN32 if K=31 |
 
 ### **Adapter**

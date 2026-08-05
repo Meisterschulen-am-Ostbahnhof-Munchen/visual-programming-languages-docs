@@ -4,9 +4,7 @@
 ## 🔌 I/O
 ### Analog Inputs
 | Input: | PIN (ESP32) | Wire | Knob |
-
 |----------------|---------------|-------|-------|
-
 | AnalogInput_I2 | 32 | white | Potentiometer |
 
 ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO32 */`
@@ -18,13 +16,9 @@ The voltage divider is NOT in the controller but in the Angle! Caution: If you c
 ### Digital Inputs
 
 | Input: | PIN (ESP32) | Wire | Knob |
-
 |----------|---------------|-------|-------|
-
 | Input_I1 | 26 | yellow | red |
-
 | Input_I2 | 32 | white | blue |
-
 | Input_I3 | 39 | - | gray |
 
 <https://docs.m5stack.com/en/unit/dual_button>
@@ -34,15 +28,10 @@ The voltage divider is NOT in the controller but in the Angle! Caution: If you c
 ### Digital Outputs
 
 | Output: | PIN (ESP32) |
-
 |-----------|---------------|
-
 | Output_Q1 | 19 |
-
 | Output_Q2 | 23 |
-
 | Output_Q3 | 33 |
-
 | Output_Q4 | 25 |
 
 ### LED Strip

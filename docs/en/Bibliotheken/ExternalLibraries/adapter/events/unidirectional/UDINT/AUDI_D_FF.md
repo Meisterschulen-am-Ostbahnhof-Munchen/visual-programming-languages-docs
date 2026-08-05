@@ -21,11 +21,8 @@ None – data output is exclusively via the plug adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------------|-----|----------|--------------|
-
 | **I** | `adapter::types::unidirectional::AUDI` | Socket (Input) | Provides the clock event (E1) and the data value to be received (D1). |
-
 | **Q** | `adapter::types::unidirectional::AUDI` | Plug (Output) | Outputs the output event (E1) and the stored data value (D1). |
 
 Both adapters are of the same unidirectional type **AUDI**, which transports an event and a data value together. The socket **I** serves as the source, the plug **Q** as the sink.

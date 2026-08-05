@@ -21,11 +21,8 @@ The function block **AW_TO_AD** is a composite function block (FB) that converts
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `AW_IN` | `adapter::types::unidirectional::AW` | Socket (Input) | WORD adapter providing event and data inputs |
-
 | `AD_OUT` | `adapter::types::unidirectional::AD` | Plug (Output) | DWORD adapter providing event and data outputs |
 
 ## Functionality
@@ -56,13 +53,9 @@ Since the function block is implemented as a composite without an ECC, there is 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-
 |----------|--------------|
-
 | `WORD_TO_DWORD` | Pure data conversion without an adapter interface |
-
 | `AW_TO_AD` | Converts complete unidirectional adapters (event + data) |
-
 | `AD_TO_AW` (not available) | Theoretical building block for the reverse direction |
 
 Unlike a pure data converter, `AW_TO_AD` also considers event forwarding and can be directly integrated into adapter-based architectures.

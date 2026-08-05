@@ -11,53 +11,35 @@ The function block **DataPanel_MI_IW_FREQ** is a service interface function bloc
 ### **Event Inputs**
 
 | Event | Description | With |
-
 |----------|---------------|-----|
-
 | **INIT** | Service Initialization | `QI`, `PARAMS`, `u8SAMember`, `Input`, `FreqDelta`, `TimeDelta` |
-
 **REQ** | Service Request (Read Current Frequency) | `QI` |
 
 ### **Event Outputs**
 
 | Event | Description | With |
-
 |----------|--------------|-----|
-
 **INITO** | Initialization Confirmation | `QO`, `STATUS` |
-
 **CNF** | Confirmation of a requested query | `QO`, `STATUS`, `IN` |
-
 | **IND** | Asynchronous indication (frequency change or time elapsed) | `QO`, `STATUS`, `IN` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-----|--------------|--------------|
-
 | `QI` | BOOL | – | Event input qualifier (controls processing) |
-
 | `PARAMS` | STRING | – | Service parameter (device-specific configuration) |
-
 | `u8SAMember` | USINT | `MI::MI_00` | Node address (SA) of the data collection module (value range 224…239) |
-
 | `Input` | `DataPanel::io::MI::DI::DataPanel_MI_DI_S` | `Invalid` | Identifies the physical input (must be `7A` or `8A`) |
-
 | `FreqDelta` | WORD | – | Frequency change threshold [Hz] that triggers a `IND` |
-
 | `TimeDelta` | DWORD | – | Time interval [ms] after which a `IND` is sent (even without changes) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `QO` | BOOL | Event output qualifier (indicates successful execution) |
-
 | `STATUS` | STRING | Service status (e.g., error messages or confirmation texts) |
-
 | `IN` | WORD | Current frequency in Hz |
 
 ### **Adapters**
@@ -93,15 +75,10 @@ The events `INIT` and `REQ` are only executed if the corresponding qualifier `QI
 The function block (FB) internally cycles through the following logical states:
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | Waiting for `INIT` – no connection |
-
 | **INIT** | Establish connection to input and apply parameters |
-
 | **RUN** | Ready for operation – waiting for `REQ` or sending `IND` upon change/expiration |
-
 | **ERROR** | Error state (e.g., incorrect `Input`, communication error) – `STATUS` contains an error message |
 
 A transition to the error state occurs when initialization fails. The only way to return from the error state is by sending `INIT` again.
@@ -114,13 +91,9 @@ A transition to the error state occurs when initialization fails. The only way t
 ## Comparison with similar function blocks
 
 | Function block | Type | Special feature |
-
 |----------------|-----|--------------|
-
 | `DataPanel_MI_IW_FREQ` | Frequency input (SIFB) | Event-driven, asynchronous IND, configurable thresholds and time values |
-
 | `DataPanel_MI_DI` | Digital input (SIFB) | Binary states only, no frequency-dependent triggers |
-
 | Generic `SIFB`with INIT/REQ/IND | General | No built-in frequency functions, must be developed in-house |
 
 The **DataPanel_MI_IW_FREQ** is specifically optimized for processing frequency signals, while other modules provide either only discrete states or generic interfaces.

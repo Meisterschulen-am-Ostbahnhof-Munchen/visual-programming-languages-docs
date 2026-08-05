@@ -11,25 +11,19 @@ The function block `AUDI_MUX_3` is a generic multiplexer (MUX) that allows you t
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | This event triggers the switch to the adapter input specified by the index `K`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirmation that the desired adapter connection has been established. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-------|---------------------------------------------------|
-
 | `K` | UINT | Index of the adapter input to be selected (0, 1, or 2). |
 
 ### **Data Outputs**
@@ -39,15 +33,10 @@ No separate data outputs. Output is via the adapter output `OUT`.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|--------------------------------------------|------------------------------------------------------|
-
 | Plug | `OUT`| `adapter::types::unidirectional::AUDI` | Output adapter that provides the selected input. |
-
 | Socket | `IN1`| `adapter::types::unidirectional::AUDI` | First input adapter (switched on at `K=0`). |
-
 Socket | `IN2`| `adapter::types::unidirectional::AUDI` | Second input adapter (switched on at `K=1`). |
-
 Socket | `IN3`| `adapter::types::unidirectional::AUDI` | Third input adapter (switched on at `K=2`). |
 
 ## Functionality

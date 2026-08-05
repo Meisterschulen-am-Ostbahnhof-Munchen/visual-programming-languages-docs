@@ -29,11 +29,8 @@ The converted value is output via the adapter `AUS_OUT` as an unsigned 8-bit int
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|----------|-------------------------------|-----------------------------|
-
 | Socket | `AX_IN` | `adapter::types::unidirectional::AX` | Boolean Input Adapter |
-
 | Plug | `AUS_OUT`| `adapter::types::unidirectional::AUS` | USINT Output Adapter |
 
 ## Functionality

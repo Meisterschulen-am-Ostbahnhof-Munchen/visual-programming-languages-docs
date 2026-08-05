@@ -20,20 +20,13 @@ None.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|-----------|--------------|
 | `adapter::types::unidirectional::AD` | IN | Socket | Input adapter that distributes the signal to the six outputs. |
-
 | `adapter::types::unidirectional::AD` | OUT1 | Plug | First output adapter (identical to IN). |
-
 | `adapter::types::unidirectional::AD` | OUT2 | Plug | Second output adapter. |
-
 | `adapter::types::unidirectional::AD` | OUT3 | Plug | Third output adapter. |
-
 | `adapter::types::unidirectional::AD` | OUT4 | Plug | Fourth output adapter. |
-
 | `adapter::types::unidirectional::AD` | OUT5 | Plug | Fifth output adapter. |
-
 | `adapter::types::unidirectional::AD` | OUT6 | Plug | Sixth output adapter. |
 
 ## Functionality

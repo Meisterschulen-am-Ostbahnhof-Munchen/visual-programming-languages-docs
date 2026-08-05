@@ -30,11 +30,8 @@ There are also **no direct data outputs**. The converted data (data type `SINT`)
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|--------|----------------------------------------|----------------------------------|
-
 | Socket | AUI_IN | `adapter::types::unidirectional::AUI` | Input adapter (UINT data) |
-
 | Plug | AS_OUT | `adapter::types::unidirectional::AS` | Output adapter (SINT data) |
 
 ## Functionality

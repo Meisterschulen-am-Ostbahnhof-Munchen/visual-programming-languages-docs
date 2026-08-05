@@ -27,11 +27,8 @@ None
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AW` | IN | Socket | Input adapter for the AW signal to be distributed |
-
 | `adapter::types::unidirectional::AW` | OUT1 – OUT6 | Plugs | Six output adapters, each providing an identical copy of the input signal |
 
 ## Functionality

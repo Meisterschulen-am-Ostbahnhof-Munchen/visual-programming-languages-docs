@@ -8,25 +8,19 @@ The function block `AIS_MUX_2` implements a generic multiplexer for the adapter 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Sets the index K and triggers the switching. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirms the adoption of the new index K. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index for selecting the active input (0 = IN1, 1 = IN2). |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ No data outputs are available. Adapter signals are forwarded via the adapter int
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 ### **Adapters** |----------|------|-----|-----------|
-
 | Plug (Output) | `OUT` | `adapter::types::unidirectional::AIS` | Output adapter that reflects the selected input. |
-
 | Socket (Input) | `IN1` | `adapter::types::unidirectional::AIS` | First input adapter (switched on when K = 0). |
-
 | Socket (Input) | `IN2` | `adapter::types::unidirectional::AIS` | Second input adapter (switched on when K = 1). |
 
 ## Functionality
@@ -66,11 +56,8 @@ The switchover process takes place within a single execution sequence, so no int
 The function block implicitly has two states, which are traversed by the event `REQ`:
 
 | State | Description |
-
 |---------|--------------|
-
 | **IDLE** | Waiting for a `REQ` event. The output `OUT` is connected to the last selected input. |
-
 | **SWITCH** | Upon arrival of `REQ`, the index `K` is read, a connection to `IN1` or `IN2` is established, and `CNF` is output. The component then returns to the **IDLE** state.
 
 A graphical state machine is not part of the XML definition; its behavior is represented by the event logic of the execution environment.

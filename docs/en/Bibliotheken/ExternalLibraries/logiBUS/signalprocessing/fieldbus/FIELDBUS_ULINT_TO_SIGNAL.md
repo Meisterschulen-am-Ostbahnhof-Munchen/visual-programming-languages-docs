@@ -11,25 +11,19 @@ This block is particularly suitable for use in safety-critical or quality-monito
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Normal execution request – triggers the processing of the input value IN. The event output CNF is sent after the action is completed. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Execution confirmation – sent after the calculation of OUT and VALID. |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |------|-------|------------------------------------------------|--------------|
-
 | IN | ULINT | `LWORD_TO_ULINT(NOT_AVAILABLE_LWM)` | Input signal (raw value from the fieldbus) |
 
 *Note:* `NOT_AVAILABLE_LWM` is a constant imported from the library `FIELDBUS_SIGNAL`, representing an invalid or unavailable signal value.
@@ -37,11 +31,8 @@ This block is particularly suitable for use in safety-critical or quality-monito
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |-------|-------|----------------------------|--------------|
-
 | OUT | ULINT | `16#0000000000000000` | Filtered output value – corresponds to IN if valid, otherwise 0. |
-
 | VALID | BOOL | `FALSE` | Signal validity – `TRUE` if valid input, otherwise `FALSE`. |
 
 ### **Adapter**
@@ -79,9 +70,7 @@ The **CNF** event output is then triggered.
 The function block is implemented as a **SimpleFB** and has only one state:
 
 | State | Description |
-
 |---------|--------------|
-
 | REQ | Input state: Waiting for event REQ. Upon entry, the algorithm `REQ` is executed, and then the output `CNF` is sent. Afterward, the function block remains in the same state.
 
 There are no further states or branches – the functionality is purely process-oriented.

@@ -11,11 +11,8 @@ The function block has no direct event or data inputs/outputs. All communication
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::ADI` | `ADI_IN` | Socket (Input) | DINT adapter providing the value to be converted |
-
 | `adapter::types::unidirectional::AW` | `AW_OUT` | Plug (Output) | WORD adapter outputting the converted value |
 
 The internal event and data connections of the composite function block result from the adapter interfaces used:
@@ -23,33 +20,25 @@ The internal event and data connections of the composite function block result f
 ### **Event Inputs** (via ADI_IN)
 
 | Event | Description |
-
 |----------|--------------|
-
 | `E1` | Trigger for converting the DINT value |
 
 ### **Event Outputs** (via AW_OUT)
 
 | Event | Description |
-
 |----------|--------------|
-
 | `E1` | Confirmation of successful conversion and output of the WORD value |
 
 ### **Data Inputs** (via ADI_IN)
 
 | Identifier | Type | Description |
-
 |------------|-----|--------------|
-
 | `D1` | `DINT` | The integer value to be converted |
 
 ### **Data Outputs** (via AW_OUT)
 
 | Identifier | Type | Description |
-
 |------------|-----|--------------|
-
 | `D1` | `WORD` | The converted bit pattern value (16 bits) |
 
 ## Functionality
@@ -86,13 +75,9 @@ Since this is a purely structured composite FB without its own Execution Control
 ## Comparison with Similar Blocks
 
 | Block | Function | Difference |
-
 |----------|----------|-------------|
-
 | `F_DINT_TO_WORD` | Direct DINT to Word conversion | No adapter encapsulation; must be manually integrated into a network |
-
 ADI_TO_AW` | Adapter-based encapsulation of the same conversion | Provides ready-to-use adapter interfaces; simplifies reuse |
-
 WORD_TO_DINT` | Reverse conversion | Other direction; requires a custom adapter type |
 
 The `ADI_TO_AW` is specifically optimized for environments where adapters are required as standardized interfaces.

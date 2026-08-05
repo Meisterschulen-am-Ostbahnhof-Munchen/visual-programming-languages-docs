@@ -8,25 +8,19 @@ The function block **AIWS_MUX_5** is a generic multiplexer for AIWS adapter data
 ### **Event Inputs**
 
 | Event | With Variable | Description |
-
 |----------|--------------|--------------|
-
 | **REQ** | K | Takes the index K and updates the output OUT. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms the index take and the update of OUT. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Selection index (0…4). |
 
 ### **Data Outputs**
@@ -35,19 +29,12 @@ No direct data outputs; the output data is provided via the **OUT** adapter.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Plug** | OUT | `adapter::types::unidirectional::AIWS` | Output that provides the value of the selected input. |
-
 | **Socket** | IN1 | `adapter::types::unidirectional::AIWS` | Input 1 (Index 0) |
-
 | **Socket** | IN2 | `adapter::types::unidirectional::AIWS` | Input 2 (Index 1) |
-
 | **Socket** | IN3 | `adapter::types::unidirectional::AIWS` | Input 3 (Index 2) |
-
 | **Socket** | IN4 | `adapter::types::unidirectional::AIWS` | Input 4 (Index 3) |
-
 | **Socket** | IN5 | `adapter::types::unidirectional::AIWS` | Input 5 (Index 4) |
 
 ## Functionality

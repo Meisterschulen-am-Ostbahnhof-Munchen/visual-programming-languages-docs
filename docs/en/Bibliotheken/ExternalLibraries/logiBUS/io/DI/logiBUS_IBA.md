@@ -8,51 +8,36 @@ The **logiBUS_IBA** function block is a composite block for processing byte inpu
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-----|---------------|
-
 | INIT | EInit | Service initialization; takes over the configuration parameters (QI, PARAMS, Input, InputEvent) |
-
 | REQ | Event | Service request to execute a function (dependent on QI) |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-----|--------------|
-
 | INITO | EInit | Initialization confirmation; signals successful or failed initialization (QO, STATUS) |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QI | BOOL | Qualifier for event inputs; controls the activation of event processing |
-
 | PARAMS | STRING | Service parameter (e.g., configuration data for the logiBUS driver) |
-
 | Input | logiBUS::io::DI::logiBUS_DI_S | Selection of the physical input (e.g., Input_I1..I8); Default value: `logiBUS_DI::Invalid` |
-
 | InputEvent | logiBUS::io::DI::logiBUS_DI_Events_S | Selection of the event type (currently only `REPEAT` is supported); Default value: `logiBUS_DI_Events::Invalid` |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-----|--------------|
-
 | QO | BOOL | Qualifier for event outputs; indicates the success of the operation |
-
 | STATUS | STRING | Status message (e.g., error or success message) |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |---------|-----|--------------|
-
 | IN | adapter::types::unidirectional::AB | Unidirectional adapter for providing input data to the higher-level resource |
 
 ## Functionality

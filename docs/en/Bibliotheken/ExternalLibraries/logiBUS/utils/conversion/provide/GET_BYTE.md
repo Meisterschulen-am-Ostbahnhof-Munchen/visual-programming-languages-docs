@@ -9,17 +9,13 @@ The **GET_BYTE** function block is used to read a variable `BYTE`, which is prov
 ### **Event Inputs**
 
 | Name | Type | Comment | With Variables |
-
 |------|-------|-------------------------------|---------------|
-
 | REQ | Event | Normal execution trigger | IN |
 
 ### **Event Outputs**
 
 | Name | Type | Comment | With variables |
-
 |------|-------|------------------------------|---------------------|
-
 | CNF | Event | Execution confirmation | OUT, IN |
 
 ### **Data Inputs**
@@ -27,17 +23,13 @@ The **GET_BYTE** function block is used to read a variable `BYTE`, which is prov
 This function block does not have traditional data inputs, but instead uses an **InOut parameter** that can be used as both an input and an output:
 
 | Name | Type | Initial value | Comment |
-
 |------|--------|--------------|------------------------------------|
-
 | IN | BYTE | 0 | Source variable (read via InOut) |
 
 ### **Data Outputs**
 
 | Name | Type | Initial value | Comment |
-
 |------|--------|--------------|-----------------------------------------|
-
 | OUT | BYTE | 0 | Buffered output value |
 
 ### **Adapters**
@@ -61,9 +53,7 @@ Since `IN` is declared as an InOut parameter, the calling application must provi
 The function block has exactly one internal state:
 
 | State | Description | Output Event |
-
 |---------|----------------------------------------------------------|------------------|
-
 | REQ | No waiting; immediate execution of the read operation | CNF |
 
 There are no wait states or branches.
@@ -76,13 +66,9 @@ There are no wait states or branches.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference to GET_BYTE |
-
 |------------|--------------------------------------------------------|--------------------------------------------------------------|
-
 | GET_VALUE | Reads a value from an InOut parameter (type-independent) | GET_BYTE is specific to the data type `BYTE` and is therefore more type-safe. |
-
 | MOVE | Copies a value from an input to an output | MOVE requires separate inputs and does not provide a buffer – GET_BYTE uses InOut. |
-
 | READ_BYTE | Reads a byte via a hardware address | GET_BYTE operates at the variable level, not at hardware addresses. |
 
 ## Conclusion

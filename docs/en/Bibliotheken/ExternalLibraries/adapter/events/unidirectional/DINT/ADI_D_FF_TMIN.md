@@ -9,25 +9,19 @@ The function block **ADI_D_FF_TMIN** implements a data latch (D flip-flop) with 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INIT | EInit | Initialization Request; Passes the parameter Tmin |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | Tmin | TIME | Minimum time between two events at input I.E1 |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ No direct data outputs – the latched value is provided via the adapter output 
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket (Input) | I | adapter::types::unidirectional::ADI | Value and event to latch |
-
 | Plug (Output) | Q | adapter::types::unidirectional::ADI | Latched Value and Associated Output Event |
 
 ## Functionality

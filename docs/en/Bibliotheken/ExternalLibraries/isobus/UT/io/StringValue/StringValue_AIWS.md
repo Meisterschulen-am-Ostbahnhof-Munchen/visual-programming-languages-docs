@@ -9,49 +9,35 @@ The function block **StringValue_AIWS** is an input-service interface block for 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-
 |---|---|---|---|
-
 | `INIT` | EInit | `QI`, `PARAMS`, `u16ObjId` | Service Initialization |
-
 | `REQ` | Event | `QI` | Service Request (Query) |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Comment |
-
 |---|---|---|---|
-
 | `INITO` | Initialization | `QO`, `STATUS` | Initialization Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |---|---|---|---|
-
 | `QI` | BOOL | – | Event Qualifier (Share) |
-
 | `PARAMS` | STRING | – | Service Parameter (e.g., Configuration String) |
-
 | `u16ObjId` | UINT | `ID_NULL` | Object ID (e.g., ISOBUS Object Identifier) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |---|---|---|
-
 | `QO` | BOOL | Output Qualifier (Status of Last Operation) |
-
 | `STATUS` | STRING | Status message (e.g., error message or success message) |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |---|---|---|
-
 | `IN` | `adapter::types::unidirectional::AIWS` | Input of wide-string data from the resource (unidirectional) |
 
 The adapter `IN` receives the actual strings and makes them available to the function block. The connection is established via the event line `E1` and the data channel `D1`.
@@ -90,13 +76,9 @@ The function block does not have an explicit state machine; its behavior is cont
 ## Comparison with Similar Modules
 
 | Module | Interface | Special Feature |
-
 |---|---|---|
-
 | `StringValue_AIWS` | Adapter (Input) | Receives wide-strings via the adapter `AIWS` |
-
 | `StringValue_IWS` | Direct Events/Data | Internal logic, no adapter interface |
-
 | `StringValue` (Standard) | Events/Data | Simple Wide-String Input (without adapter) |
 
 The `StringValue_AIWS` stands out due to its adapter-based interface, which enables loose coupling between resource and service. It is particularly suitable for modular systems where the data source can change dynamically.

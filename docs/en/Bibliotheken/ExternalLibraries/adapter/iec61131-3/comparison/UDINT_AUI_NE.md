@@ -9,9 +9,7 @@ The function block **UDINT_AUI_NE** compares two values for inequality ("not equ
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------|
-
 | REQ | Event | Service Request |
 
 - **REQ**: Starts the comparison. The input **IN1** is compared with the value of **IN2**. The function block expects the corresponding data value to be present at **IN1** and the second value to be present via adapter **IN2** before the event is triggered.
@@ -23,9 +21,7 @@ The function block does not have any independent event outputs. The result is si
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------------------|--------------------------|
-
 | IN1 | ANY_ELEMENTARY | Input value 1 |
 
 - **IN1**: First value to be compared. The data type is generic (`ANY_ELEMENTARY`), so elementary types such as BOOL, INT, REAL, UDINT, etc., can be used.
@@ -37,11 +33,8 @@ The function block does not have any independent data outputs. The comparison re
 ### **Adapter**
 
 | Direction | Name | Adapter Interface Type | Comment |
-
 |----------|------|------------------------------------------------|-------------------------------|
-
 | Socket | IN2 | `adapter::types::unidirectional::AUI` | Input Value 2 |
-
 | Plug | OUT | `adapter::types::unidirectional::AX` | value 1 != value2 = true |
 
 - **IN2** (Socket): Receives the second comparison value via a unidirectional adapter of type `AUI`. The connected adapter must provide an elementary value.

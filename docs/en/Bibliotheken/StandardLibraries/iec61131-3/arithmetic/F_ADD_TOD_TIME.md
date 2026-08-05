@@ -64,13 +64,9 @@ The **F_ADD_TOD_TIME** function block is a specialized function module for addin
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_ADD_TOD_TIME | F_ADD_DT_TIME |
-
 ----------------|----------------|---------------|
-
 | Input Type 1 | TIME_OF_DAY | DATE_AND_TIME |
-
 | Output Type | TIME_OF_DAY | DATE_AND_TIME |
-
 | Range | Daily Cycle | Absolute Date |
 
 ## Conclusion

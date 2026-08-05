@@ -8,25 +8,19 @@ The function block **ALI_MUX_2** is a generic multiplexer for two ALI adapter si
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Sets the index `K` and triggers the multiplexer logic. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirmation that the multiplexer provides the selected value via `OUT`. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------|
-
 | `K` | UINT | Index for selecting the input (0 → `IN1`, 1 → `IN2`). |
 
 ### **Data Outputs**
@@ -35,13 +29,9 @@ No standalone data outputs; output is via the adapter `OUT`.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|---------------------------------------------------|----------------------------------------------|
-
 | Plug | `OUT`| `adapter::types::unidirectional::ALI` | Output signal (corresponds to the selected input) |
-
 | Socket | `IN1`| `adapter::types::unidirectional::ALI` | First input (index 0) |
-
 | Socket | `IN2`| `adapter::types::unidirectional::ALI` | Second Input (Index 1) |
 
 ## Functionality
@@ -70,11 +60,8 @@ For other values of `K` (e.g., >1), the behavior is undefined – the function b
 The function block implicitly has two main states:
 
 | State | Description |
-
 |---------|---------------|
-
 | IDLE | Waiting for a `REQ` event. Outputs: no action. |
-
 | MUX | During processing: Evaluate `K`, transfer the corresponding input to `OUT`, and send `CNF`. Then return to IDLE. |
 
 An effective state machine is not explicitly defined in the XML, as the logic operates purely combinatorially with event triggering.

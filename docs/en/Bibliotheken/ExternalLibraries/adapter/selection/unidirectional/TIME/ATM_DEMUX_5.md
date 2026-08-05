@@ -9,25 +9,19 @@ The **ATM_DEMUX_5** is a generic demultiplexer IC for five output channels. It f
 ### **Event Inputs**
 
 | Event | Description |
-
 | :------- | :----------- |
-
 | `REQ` | Sets the index **K** and triggers the forwarding. The index value is updated at the time of the event. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 | :------- | :----------- |
-
 | `CNF` | Confirms successful forwarding to the selected output. |
 
 ### **Data Inputs**
 
 | Date | Type | Description |
-
 | :---- | :--- | :----------- |
-
 | `K` | UINT | Index of the target output (value range 1…5). |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ No dedicated data outputs; data is passed through the adapter outputs.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 | :------- | :--- | :--- | :----------- |
-
 Socket (Input) | `IN` | `adapter::types::unidirectional::ATM` | Receives the data to be distributed. |
-
 Plug (Output 1) | `OUT1` | `adapter::types::unidirectional::ATM` | First output channel. |
-
 Plug (Output 2) | `OUT2` | `adapter::types::unidirectional::ATM` | Second output channel. |
-
 Plug (Output 3) | `OUT3` | `adapter::types::unidirectional::ATM` | Third output channel. |
-
 Plug (Output 4) | `OUT4` | `adapter::types::unidirectional::ATM` | Fourth output channel. |
-
 | Plug (Output 5) | `OUT5` | `adapter::types::unidirectional::ATM` | Fifth output channel. |
 
 ## Functionality
@@ -94,13 +81,9 @@ There is no persistent memory or internal state.
 ## Comparison with Similar Components
 
 | Component | Function |
-
 | :------- | :------- |
-
 | `ATM_MUX` | Multiplexer: selects one of several inputs and routes it to an output. |
-
 | `ATM_DEMUX_5` | Demultiplexer: distributes one input to one of five outputs. |
-
 | `ATM_DEMUX_X` | Variant with variable channel count (e.g., `ATM_DEMUX_8` for eight outputs). |
 
 Unlike the multiplexer, the `ATM_DEMUX_5` implements the reverse direction – from a common input to multiple outputs. It is therefore suitable for star or bus topologies with one transmitter and multiple receivers.

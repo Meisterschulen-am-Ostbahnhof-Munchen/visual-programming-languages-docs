@@ -9,25 +9,19 @@ The function block **ATM_DEMUX_3** is a generic demultiplexer for unidirectional
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|--------|----------------------------|
-
 | REQ | Event | Sets the index K and triggers the forwarding |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|--------|----------------------------------|
-
 | CNF | Event | Confirmation of index setting and forwarding |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------|
-
 | K | UINT | Index for selecting output (1, 2, or 3) |
 
 ### **Data Outputs**
@@ -37,21 +31,15 @@ No direct data outputs are available; data is passed through the adapters.
 **Plugs (Outputs):**
 
 | Name | Type | Comment |
-
 |------|------------------------------------|-----------|
-
 | OUT1 | adapter::types::unidirectional::ATM | First output |
-
 | OUT2 | adapter::types::unidirectional::ATM | Second Output |
-
 | OUT3 | adapter::types::unidirectional::ATM | Third Output |
 
 **Sockets (Inputs):**
 
 | Name | Type | Comment |
-
 |------|------------------------------------|---------------------------|
-
 | IN | adapter::types::unidirectional::ATM | Input data stream for demultiplexing |
 
 ## Functionality
@@ -81,13 +69,9 @@ The **ATM_DEMUX_3** has no internal states. It reacts directly to each REQ event
 ## Comparison with similar components
 
 | Component | Description | Difference |
-
 |--------------------|--------------|-------------|
-
 | MUX (Multiplexer) | Combines multiple inputs into one output | Opposite function |
-
 | DEMUX_2 / DEMUX_4 | Demultiplexer with 2 or 4 outputs | **ATM_DEMUX_3** offers exactly three outputs and is specialized for unidirectional ATM adapters |
-
 | SELECT | Selects one of several data paths (often without adapters) | Usually works directly with data variables instead of adapters |
 
 ## Conclusion

@@ -9,28 +9,19 @@ The function block **AUI_CTUD** is an event-driven up/down counter in the adapte
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CU** | Increment counter by 1 (Count Up) |
 | **CD** | Decrease counter by 1 (Count Down) |
-
 **R** | Reset counter to 0 (Reset) |
-
 **LD** | Load counter with preset value (PV) (Load) |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 **CUO** | Acknowledgement of successful count-up operation |
-
 **CDO** | Acknowledgement of successful count-down operation |
-
 **RO** | Acknowledgement of successful reset |
-
 **LDO** | Acknowledgement of successful load operation |
 
 ### **Data Inputs**
@@ -38,9 +29,7 @@ The function block **AUI_CTUD** is an event-driven up/down counter in the adapte
 This function block does not have direct data inputs. The preset value (PV) is provided via a **socket adapter**:
 
 | Adapter (Socket) | Type | Description |
-
 |------------------|-----|--------------|
-
 | **PV** | `adapter::types::unidirectional::AUI` | Preset value (preselection) for the counter |
 
 ### **Data Outputs**
@@ -48,13 +37,9 @@ This function block does not have direct data inputs. The preset value (PV) is p
 This function block does not have direct data outputs. The results are output via **Plug Adapters**:
 
 | Adapter (Plug) | Type | Description |
-
 |-----|--------------|
-
 | **QU** | `adapter::types::unidirectional::AX` | True if the current counter value is ≥ PV |
-
 | **QD** | `adapter::types::unidirectional::AX` | True if the current counter value is ≤ 0 |
-
 | **CV** | `adapter::types::unidirectional::AUI` | Current Counter Value (Unsigned Integer) |
 
 ### **Adapters**
@@ -95,27 +80,16 @@ This function block operates as an event-driven counter with a resolution of 0 t
 ## State Overview
 
 | State | Description |
-
 |----------------|--------------|
-
 | **START** | Waiting for an input event (CU, CD, R, LD) or a PV change |
-
 | **CU** | Increment counter and output new value via CV adapter |
-
 | **CD** | Decrement counter and output new value via CV adapter |
-
 | **R** | Reset counter to 0 and output new value via CV adapter |
-
 | **LD** | Load meter with PV and output new value via CV adapter |
-
 **UPDATE_PV** | Recalculate QU and QD after PV change (without meter change) |
-
 **CHECK_QU** | Check if QU has changed (comparison with QU_OLD) |
-
 **FIRE_QU** | If QU has changed: Update QU_OLD and send event to QU adapter |
-
 **CHECK_QD** | Check if QD has changed (comparison with QD_OLD) |
-
 **FIRE_QD** | If QD has changed: Update QD_OLD and send event to QD adapter |
 
 The state transitions are controlled by the events and conditions `[QU.D1 <> QU_OLD]` and `[QD.D1 <> QD_OLD]`. After change detection is complete, the function block returns to the START state.
@@ -132,17 +106,11 @@ The state transitions are controlled by the events and conditions `[QU.D1 <> QU_
 The standard function block **E_CTUD** (from the IEC 61499 library) also offers an up/down counter with event control, but with the following features:
 
 | Feature | **E_CTUD** (Standard) | **AUI_CTUD** (Adapter Version) |
-
 |-----------------------|-----------------------------------------------|-------------------------------------------------|
-
 | Interface | Fixed event and data ports (e.g., CV as BOOL) | Loose coupling via adapter (plug/socket) |
-
 | Output: Counter value | Data port: CV (INT/UDINT) | Adapter CV (Type AUI) |
-
 | Limit output | Bool ports QU, QD | Adapter QU, QD (Type AX) |
-
 | Event on change | No change detection; QU/QD are calculated with each count | On-change triggering: Event only on state change |
-
 | Feedback on actions | No dedicated feedback events | CUO, CDO, RO, LDO as confirmation events |
 
 The AUI_CTUD is therefore more flexible in its interconnection and reduces the event load in distributed systems. For simple applications without adapters, however, the standard E_CTUD may suffice.

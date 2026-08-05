@@ -24,11 +24,8 @@ None – the converted data is output via the `ADI_OUT` adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-
 |---------|---------|----------|----------------------------------|
-
 | Socket | `AB_IN` | Input | BYTE adapter (input) |
-
 | Plug | `ADI_OUT` | Output | DINT adapter (output) |
 
 ## Functionality

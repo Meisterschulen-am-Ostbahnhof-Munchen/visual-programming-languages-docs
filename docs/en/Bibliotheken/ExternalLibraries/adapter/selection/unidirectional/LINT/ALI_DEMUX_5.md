@@ -9,25 +9,19 @@ The function block **ALI_DEMUX_5** is a generic demultiplexer for ALI (Applicati
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `REQ` | This event assigns the index `K` and triggers the demultiplex operation. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms that the index `K` has been set and the input adapter `IN` has been assigned to the selected output adapter. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | `K` | UINT | Selection index (1 … 5). Specifies which output adapter (`OUT1` … `OUT5`) is activated. |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ No standalone data outputs; output is handled via the adapters.
 ### **Adapters**
 
 | Direction | Label | Type | Description |
-
 |----------|-------------|-----|--------------|
-
 | Input (Socket) | `IN` | `adapter::types::unidirectional::ALI` | Unidirectional ALI input that supplies the data stream to be multiplexed. |
-
 | Output (Plug) | `OUT1` … `OUT5` (5 outputs) | `adapter::types::unidirectional::ALI` | Each is a unidirectional ALI output; only the output selected by `K` is connected to the input `IN`. |
 
 ## Functionality
@@ -70,11 +61,8 @@ No standalone data outputs; output is handled via the adapters.
 The function block does not have an explicit state machine. However, its behavior can be described in two phases:
 
 | State | Description |
-
 |---------|---------------|
-
 | Waiting | No `REQ` was received; the current connection remains open. |
-
 | Processing | After `REQ`, the index is evaluated and the connection is switched. Then, `CNF` is sent and the function block (FB) returns to standby mode. |
 
 ## Application Scenarios
@@ -85,13 +73,9 @@ The function block does not have an explicit state machine. However, its behavio
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-
 |----------|-------------|
-
 | **ALI_DEMUX_2, _3, _4** | Same principle, but with two, three, or four outputs. |
-
 **ALI_MUX** (Multiplexer) | A multiplexer selects one of several inputs and passes it to a single output – exactly the opposite direction. |
-
 **Standard-DEMUX** (Data-Demux) | Often works with scalar data types instead of adapters; ALI_DEMUX_5 uses complex adapter interfaces. |
 
 ## Conclusion

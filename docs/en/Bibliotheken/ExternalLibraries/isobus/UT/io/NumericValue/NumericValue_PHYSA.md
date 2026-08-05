@@ -9,48 +9,35 @@ The function block **NumericValue_PHYSA** is an input service interface function
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | INIT | Initializes the block (with parameters and object pool) |
-
 | REQ | Event | Triggers the output of the current physical value |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | INITO | EInit | Confirmation of successful initialization |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | QI | BOOL | Input qualifier (enables/controls processing) |
-
 | PARAMS | STRING | Parameters for the service (e.g., configuration string) |
-
 | stObj | *NumericObjectPool_S* | Object pool properties: Object ID (UINT16), scale, offset, decimal places |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
 |------|-----|-------------|
-
 | QO | BOOL | Output qualifier (indicates successful processing) |
-
 | STATUS| STRING | Status message (OK or error text) |
 
 ### **Adapter**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | rPhys | *adapter::types::unidirectional::AR* | Adapter interface for outputting the physical REAL value (event channel `E1` and data channel `D1`) |
 
 ## Functionality

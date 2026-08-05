@@ -9,23 +9,14 @@ This exercise demonstrates the construction of a **mutual interlock** between tw
 The following function blocks are used in this exercise:
 
 | FB Name | Type | Purpose |
-
 | ---------------------- | ------------------------------- | ----------------------------------------- |
-
 | `DigitalInput_S1` | `logiBUS_IXA` | Read the set signal S1 (input I1) |
-
 | `DigitalInput_R1` | `logiBUS_IXA` | Read the reset signal R1 (I2) |
-
 | `DigitalInput_S2` | `logiBUS_IXA` | Read the set signal S2 (I3) |
-
 | `DigitalInput_R2` | `logiBUS_IXA` | Read the reset signal R2 (I4) |
-
 | `ILOCK_RS_1` | `ILOCK_FB_RS_AX` | First locked RS latch |
-
 | `ILOCK_RS_2` | `ILOCK_FB_RS_AX` | Second locked RS latch |
-
 | `DigitalOutput_Q1` | `logiBUS_QXA` | Output to Q1 |
-
 | `DigitalOutput_Q2` | `logiBUS_QXA` | Output to Q2 |
 
 ### Sub-Blocks: `ILOCK_FB_RS_AX`

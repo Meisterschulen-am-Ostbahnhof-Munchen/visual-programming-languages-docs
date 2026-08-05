@@ -9,9 +9,7 @@ The function block **UDINT_AUI_GT** implements a greater-than comparison functio
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `REQ` | Event | Serves as a service request to trigger the comparison. The data input `IN1` is linked to this event. |
 
 ### **Event Outputs**
@@ -21,9 +19,7 @@ No explicit event outputs are available. Events are output via the adapter `OUT`
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `IN1` | ANY_ELEMENTARY | First value of the comparison (any elementary data type). |
 
 ### **Data Outputs**
@@ -33,11 +29,8 @@ No explicit data outputs are available. Data is output via the adapter `OUT`.
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 |------|----------|-----|--------------|
-
 | `IN2` | Socket (Input) | `adapter::types::unidirectional::AUI` | Provides the second comparison value. The adapter provides an event output `E1` and a data output `D1`. A new value at the adapter triggers the comparison internally. |
-
 | `OUT` | Plug (Output) | `adapter::types::unidirectional::AX` | Outputs the comparison result. The adapter has an event input `E1` and a data input `D1`, which are controlled by the function block. |
 
 ## Functionality

@@ -8,25 +8,19 @@ The function block **ALR_DEMUX_4** acts as a demultiplexer for data stream-orien
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Trigger for switching the data path. The corresponding data input K is evaluated. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirmation that the data path has been set according to K. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|--------|--------------|
-
 | **K** | UINT | Index of the desired output (value range 1-4). |
 
 ### **Data Outputs**
@@ -36,17 +30,11 @@ No direct data outputs are available. Data is transmitted exclusively via the ad
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 Socket (Input) | **IN** | Unidirectional | ALR input to be distributed. |
-
 Plug (Output) | **OUT1** | Unidirectional | First destination output (address 1). |
-
 Plug (Output) | **OUT2** | Unidirectional | Second destination output (address 2). |
-
 Plug (Output) | **OUT3** | Unidirectional | Third destination output (address 3). |
-
 Plug (Output) | **OUT4** | Unidirectional | Fourth destination output (address 4). |
 
 ## Functionality

@@ -9,39 +9,28 @@ The function block **WORDS_TO_ARR08B** is used to concatenate four 16-bit words 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `REQ` | Event | Triggers the conversion; all input variables are read and the result is calculated. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `CNF` | Event | Sent after successful calculation, indicating that valid data is present at output `OUT`. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |--------|------|----------------------------------|
-
 | `IN_00` | WORD | First Word (Bytes 0 and 1) |
-
 | `IN_01` | WORD | Second Word (Bytes 2 and 3) |
-
 | `IN_02` | WORD | Third Word (Bytes 4 and 5) |
-
 | `IN_03` | WORD | Fourth Word (Bytes 6 and 7) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|--------------------|---------------------------------------------------|
-
 | `OUT` | ARRAY[0..7] OF BYTE | Result array, containing the 8 bytes in little-endian order. |
 
 ### **Adapters**
@@ -53,23 +42,14 @@ No adapters defined.
 When a rising edge is detected at the event input `REQ`, the function block performs the following mapping (described in the Structured Text Implementation):
 
 | Index `OUT` | Source | Meaning |
-
 |-------------|-----------------|-------------------------------------|
-
 | `OUT[0]` | `IN_00.%B0` | Low-order byte of word 0 |
-
 | `OUT[1]` | `IN_00.%B1` | High-order byte of word 0 |
-
 | `OUT[2]` | `IN_01.%B0` | Low-order byte of word 1 |
-
 | `OUT[3]` | `IN_01.%B1` | Higher-order byte of word 1 |
-
 | `OUT[4]` | `IN_02.%B0` | Low-order byte of word 2 |
-
 | `OUT[5]` | `IN_02.%B1` | Higher-order byte of word 2 |
-
 | `OUT[6]    | `IN_03.%B0` | Low-order byte of word 3 |
-
 | `OUT[7]` | `IN_03.%B1` | Higher-order byte of word 3 |
 
 After the assignments are complete, the output pulse `CNF` is generated.

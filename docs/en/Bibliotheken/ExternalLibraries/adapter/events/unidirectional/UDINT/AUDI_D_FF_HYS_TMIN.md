@@ -9,25 +9,19 @@ The function block **AUDI_D_FF_HYS_TMIN** implements a clock-edge-triggered data
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 | INIT | EInit | Initialization request, sets hysteresis and minimum time |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-------|---------------------------------------------|
-
 | INITO | EInit | Initialization confirmation |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |--------------|-------|-----------------------------------------------------------|
-
 | HYSTERESIS | UDINT | Hysteresis band (width of the dead zone for noise suppression) |
-
 | Tmin | TIME | Minimum time between two consecutive output events |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ No direct data outputs – the output data is provided via the **Q** adapter.
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |-------------|------------------------------------|----------|----------------------------|
-
 | I | `adapter::types::unidirectional::AUDI` | Input | Data value to be received |
-
 | Q | `adapter::types::unidirectional::AUDI` | Output | Latched value |
 
 ## Functionality

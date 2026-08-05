@@ -11,43 +11,32 @@ The function block does not have its own event or data inputs/outputs, but uses 
 ### **Event Inputs**
 
 | Signal | Description |
-
 |--------|--------------|
-
 | (E1 via AUI_IN) | Event input of the connected AUI adapter (socket). An incoming event is forwarded directly to the AULI adapter. |
 
 ### **Event Outputs**
 
 | Signal | Description |
-
 |--------|--------------|
-
 | (E1 via AULI_OUT) | Event output of the connected AULI adapter (plug). The event received from the AUI adapter is output here. |
 
 ### **Data Inputs**
 
 | Signal | Data Type | Description |
-
 |--------|----------|--------------|
-
 | (D1 via AUI_IN) | `UINT` (16 bits) | Data input of the AUI adapter. The incoming value is interpreted as a 16-bit integer. |
 
 ### **Data Outputs**
 
 | Signal | Data Type | Description |
-
 |--------|----------|--------------|
-
 | (D1 via AULI_OUT) | `ULINT` (64 bits) | Data output of the AULI adapter. The value received from the AUI adapter is output as a 64-bit unsigned integer. |
 
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AUI` | `AUI_IN` | Socket (Input) | Adapter for receiving events and data in the format `UINT`. |
-
 | `adapter::types::unidirectional::AULI` | `AULI_OUT` | Plug (Output) | Adapter for sending events and data in the format `ULINT`. |
 
 ## Functionality

@@ -25,27 +25,16 @@ No data outputs available.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |-------------|----------------------|----------|-----------------------------------------------------|
-
 | **IN** | AIS (unidirectional) | Socket | Input adapter – the AIS signal to be distributed. |
-
 | **OUT1** | AIS (unidirectional) | Plug | First output – identical copy of the input signal. |
-
 | **OUT2** | AIS (unidirectional) | Plug | Second output – identical copy of the input signal. |
-
 | **OUT3** | AIS (unidirectional) | Plug | Third output – identical copy of the input signal. |
-
 | **OUT4** | AIS (unidirectional) | Plug | Fourth output – identical copy of the input signal. |
-
 | **OUT5** | AIS (unidirectional) | Plug | Fifth output – identical copy of the input signal. |
-
 | **OUT6** | AIS (unidirectional) | Plug | Sixth output – identical copy of the input signal. |
-
 | **OUT7** | AIS (unidirectional) | Plug | Seventh output – identical copy of the input signal. |
-
 | **OUT8** | AIS (unidirectional) | Plug | Eighth output – identical copy of the input signal. |
-
 | **OUT9** | AIS (unidirectional) | Plug | Ninth output – identical copy of the input signal. |
 
 ## Functionality

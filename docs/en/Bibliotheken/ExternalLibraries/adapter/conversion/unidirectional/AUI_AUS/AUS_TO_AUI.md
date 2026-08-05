@@ -9,43 +9,32 @@ The **AUS_TO_AUI** function block is a composite component that performs an inte
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | E1 | Event | Event input of the AUS adapter; passed unchanged to the output. |
 
 ### **Event Outputs**
 
 | Name | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | E1 | Event | Event output of the AUI adapter; receives the event from the input. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | D1 | USINT | Data value (8-bit) from the AUS adapter; converted to UINT and passed on. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | D1 | UINT | Data value (16-bit) of the AUI adapter; contains the converted USINT value. |
 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | adapter::types::unidirectional::AUS | AUS_IN | Socket (Input) | Out adapter with USINT data and one event. |
-
 | adapter::types::unidirectional::AUI | AUI_OUT | Plug (Output) | AUI adapter with UINT data and one event. |
 
 ## Functionality

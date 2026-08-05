@@ -13,9 +13,7 @@ The function block **ASSEMBLE_AL_FROM_AX** is used to combine up to 64 Boolean s
 The function block does not have traditional event inputs (EVENT). Event control is handled indirectly via the **AX adapters (sockets)**. Each socket `BIT_00` … `BIT_63` can receive a triggering event (E1).
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `BIT_00` … `BIT_63` | AX adapter | Event from an external Boolean source that triggers the assembly of the LWORD |
 
 ### **Event Outputs**
@@ -23,11 +21,8 @@ The function block does not have traditional event inputs (EVENT). Event control
 No traditional event outputs. The output of the assembled LWORD is event-driven via the **AL adapter (plug)** `OUT`.
 
 | Name | Type | Description |
-
 | Name | Type | Description |
-
 | |------|-----|--------------|
-
 | `OUT` | AL Adapter | Provides the composite LWORD when the internal flip-flop is clocked |
 
 ### **Data Inputs**
@@ -35,9 +30,7 @@ No traditional event outputs. The output of the assembled LWORD is event-driven 
 Each AX adapter carries a Boolean data value (D1). These are used as input bits for the LWORD.
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `BIT_00.D1` … `BIT_63.D1` | BOOL (via adapter) | Boolean signal for bits 0 … 63 |
 
 ### **Data Outputs**
@@ -45,19 +38,14 @@ Each AX adapter carries a Boolean data value (D1). These are used as input bits 
 The combined result is output as a 64-bit word via the AL adapter.
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `OUT.D1` | LWORD (via adapter) | Combined LWORD from the 64 Boolean inputs |
 
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-
 |-----|----------|------|--------------|
-
 | `adapter::types::unidirectional::AX` | Socket (input) | `BIT_00` … `BIT_63` | Boolean Input Adapter |
-
 | `adapter::types::unidirectional::AL` | Plug (Output) | `OUT` | LWORD Output Adapter |
 
 ## Functionality
@@ -100,15 +88,10 @@ Event-driven behavior:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Output Type | Special Feature |
-
 |----------|----------------|-------------|--------------|
-
 | **ASSEMBLE_AL_FROM_AX** | 64 BOOL (AX) | LWORD (AL) | Adapter-based with flip-flop buffering |
-
 | `ASSEMBLE_DWORD_FROM_BOOLS` | 32 BOOL | DWORD | Classic data input/output, without adapter |
-
 | `ASSEMBLE_WORD_FROM_BOOLS` | 16 BOOL | WORD | As above, for 16-bit word |
-
 | `DISASSEMBLE_AL_TO_AX` | 1 LWORD (AL) | 64 AX | Counterpart: Decomposes an LWORD into individual BOOL adapters |
 
 The key difference lies in the **adapter interface** and the **buffer buffering** provided by the flip-flop, which ensures robust behavior in event-driven environments.

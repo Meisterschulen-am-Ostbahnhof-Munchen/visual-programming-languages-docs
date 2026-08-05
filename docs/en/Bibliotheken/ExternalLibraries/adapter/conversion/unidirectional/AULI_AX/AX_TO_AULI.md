@@ -43,11 +43,8 @@ The converted result is provided via the output adapter (see section **Adapters*
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `AX_IN` | `adapter::types::unidirectional::AX` | BOOL adapter input. Provides input data via the event `E1` and the date `D1` (BOOL value). |
-
 | Plug | `AULI_OUT` | `adapter::types::unidirectional::AULI` | ULINT adapter output. Outputs the conversion result via the event `E1` and the date `D1` (ULINT value).
 
 ## Functionality

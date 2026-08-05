@@ -10,13 +10,9 @@ Answer: with a tractor.
 ## Step by step
 
 | Component | Origin | Result |
-
 |---|---|---|
-
 | **6** | Case IH 1455 is a **6-cylinder** tractor | `6 _ _ _ _` |
-
 | **14** | The first two digits of **14**55 | `6 1 4 _ _` |
-
 | **99** | The **55** at the end of 1455 becomes **99** | `6 1 4 9 9` |
 
 Combined, this gives: **6 · 14 · 99 → 61499**

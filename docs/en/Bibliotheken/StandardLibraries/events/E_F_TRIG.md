@@ -49,13 +49,9 @@ The internal logic of the function block (as of `events-3.0.0`) is incorrect and
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_F_TRIG (this) | E_R_TRIG | E_SWITCH |
-
 |---------------|------------------|----------|----------|
-
 | Detected Edge | Falling (named), Rising (implemented) | Rising | - |
-
 | Event Control | Yes | Yes | Yes |
-
 | Principle | Edge Detector | Edge Detector | Event Switch |
 
 ## 🛠️ Related Exercises

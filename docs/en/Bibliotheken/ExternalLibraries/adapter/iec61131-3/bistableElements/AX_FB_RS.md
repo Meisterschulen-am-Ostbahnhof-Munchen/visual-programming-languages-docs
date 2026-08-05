@@ -25,13 +25,9 @@ Since this block is based exclusively on adapters, the classic event and data in
 This component uses the adapter type `adapter::types::unidirectional::AX`. This adapter type typically bundles a Boolean signal (`D1`) and an associated event (`E1`).
 
 | Name | Type | Direction | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | **Q1** | AX | Plug (Output) | The output of the flip-flop (status). |
-
 | **SET** | AX | Socket (Input) | The set input. When active, the output `Q1` is set to TRUE (unless `RESET1` is active). |
-
 **RESET1** | AX | Socket (Input) | The reset input. When active, the output `Q1` is set to FALSE. This input has priority over `SET`. |
 
 ## Functionality
@@ -77,13 +73,9 @@ This means that the function block is always ready to process input signals and 
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | AX_FB_RS | AX_FB_SR | RS (Standard) |
-
 | :--- | :--- | :--- | :--- |
-
 | **Dominance** | **Reset Dominant** (Output FALSE at S=1, R=1) | Set Dominant (Output TRUE at S=1, R=1) | Reset Dominant |
-
 | **Interface** | Adapter (`AX`) | Adapter (`AX`) | Boolean Event/Data Ports |
-
 | **Wiring** | Minimalist (bundled) | Minimalist (bundled) | Classic (separate lines) |
 
 ## Conclusion

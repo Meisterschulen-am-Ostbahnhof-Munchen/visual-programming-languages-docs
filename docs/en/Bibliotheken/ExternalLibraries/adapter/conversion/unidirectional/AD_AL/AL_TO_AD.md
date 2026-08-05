@@ -20,11 +20,8 @@ The **AL_TO_AD** function block is a composite function block that converts a un
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |------|------|----------|--------------|
-
 | Socket | AL_IN | Input | Unidirectional LWORD adapter with one event input (`E1`) and one data input (`D1` of type `LWORD`) |
-
 | Plug | AD_OUT | Output | Unidirectional DWORD adapter with one event output (`E1`) and one data output (`D1` of type `DWORD`) |
 
 ## Functionality

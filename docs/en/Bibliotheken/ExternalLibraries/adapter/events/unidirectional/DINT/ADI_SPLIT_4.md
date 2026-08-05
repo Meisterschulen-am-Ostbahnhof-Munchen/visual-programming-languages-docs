@@ -25,17 +25,11 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-----------|--------|----------|-------------|
-
 | `ADI` (unidirectional) | `IN` | Socket | Receives the ADI data stream to be distributed. |
-
 | `ADI` (unidirectional) | `OUT1` | Plug | First output – identical copy of the input signal. |
-
 | `ADI` (unidirectional) | `OUT2` | Plug | Second output – identical copy of the input signal. |
-
 | `ADI` (unidirectional) | `OUT3` | Plug | Third output – identical copy of the input signal. |
-
 | `ADI` (unidirectional) | `OUT4` | Plug | Fourth output – identical copy of the input signal. |
 
 ## Functionality

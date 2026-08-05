@@ -21,15 +21,10 @@ Not present – output data is provided exclusively via the adapter plugs.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AIS` | IN | Socket (Input) | Receives an AIS data stream. |
-
 | `adapter::types::unidirectional::AIS` | OUT1 | Plug (Output) | First output channel – identical copy of the input. |
-
 | `adapter::types::unidirectional::AIS` | OUT2 | Plug (Output) | Second output channel – identical copy of the input. |
-
 | `adapter::types::unidirectional::AIS` | OUT3 | Plug (Output) | Third output channel – identical copy of the input. |
 
 ## Functionality
@@ -53,13 +48,9 @@ This function block does not have an explicit state machine. Its behavior is tha
 ## Comparison with similar function blocks
 
 | Function block | Number of outputs | Special feature |
-
 |----------|------------------|--------------|
-
 | AIS_SPLIT_2 | 2 | Distributed across two channels. |
-
 | **AIS_SPLIT_3** | **3** | **Standard splitter with three outputs.** |
-
 | AIS_SPLIT_N | variable | Generic version with configurable number of outputs (where available). |
 
 The AIS_SPLIT_3 fills the gap between a simple 2-way splitter and a fully configurable splitter.

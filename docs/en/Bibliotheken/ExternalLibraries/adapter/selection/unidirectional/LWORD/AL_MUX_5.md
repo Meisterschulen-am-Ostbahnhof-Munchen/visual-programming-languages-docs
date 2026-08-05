@@ -9,25 +9,19 @@ The **AL_MUX_5** is a generic multiplexer function block that allows one of five
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|--------|-------------------------------|
-
 | `REQ` | Event | Set Index K – takes the current value of K and switches the corresponding input. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|--------|-----------------------------------------|
-
 | `CNF` | Event | Confirmation of successful channel switching. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|--------|---------------------------------------|
-
 | `K` | UINT | Index of the input to be activated (0..4). |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ No data outputs available. Signal transmission is handled via the adapter.
 ### **Adapter**
 
 | Name | Type | Comment |
-
 |-------|------------------------------------|---------------------------------------------------------------------------|
-
 | `OUT` | `adapter::types::unidirectional::AL` (Plug) | Output – forwards the data of the input selected by K. |
-
 | `IN1` | `adapter::types::unidirectional::AL` (Socket) | Input value 1 (becomes active when K=0). |
-
 | `IN2` | `adapter::types::unidirectional::AL` (Socket) | Input value 2 (becomes active when K=1). |
-
 | `IN3` | `adapter::types::unidirectional::AL` (Socket) | Input value 3 (becomes active when K=2). |
-
 | `IN4` | `adapter::types::unidirectional::AL` (Socket) | Input value 4 (becomes active when K=3). |
-
 | `IN5` | `adapter::types::unidirectional::AL` (Socket) | Input value 5 (becomes active when K=4). |
 
 ## Functionality
@@ -75,13 +62,9 @@ The function block is stateless (combinatory). There is no internal state machin
 ## Comparison with Similar Components
 
 | Component | Inputs | Outputs | Selection Mechanism | Special Features |
-
 ---------------------|----------|----------|---------------------|---------------------------------|
-
 | AL_MUX_5 | 5 | 1 | Index K (UINT) | Adapter-based interface |
-
 | Standard MUX (e.g., SEL) | Variable | 1 | Boolean Select | Based on IEC 61131-3, often elementary |
-
 FB_Alarm_MUX | 4 | 1 | Bitmasks/Selection | Specifically for Alarm Signals |
 
 The AL_MUX_5 is characterized by its addressable index control (0 to 4) and the use of adapters, which enables flexible integration with other 4diac components.

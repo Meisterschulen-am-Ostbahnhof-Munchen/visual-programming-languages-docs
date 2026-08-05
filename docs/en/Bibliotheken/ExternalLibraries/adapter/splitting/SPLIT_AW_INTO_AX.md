@@ -22,11 +22,8 @@ This module does not have any independent data outputs on the interface. The 16 
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AW` | 16-bit word as input, event input `E1`, data input `D1` |
-
 | **Plug** (Output) | `BIT_00` … `BIT_15` | `adapter::types::unidirectional::AX` | One bit of each word, event output `E1`, data output `D1` |
 
 ## Functionality

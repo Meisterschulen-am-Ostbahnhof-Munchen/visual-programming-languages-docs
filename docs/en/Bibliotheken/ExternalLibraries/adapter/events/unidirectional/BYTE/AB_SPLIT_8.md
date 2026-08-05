@@ -25,25 +25,15 @@ No direct data outputs. Outgoing information is provided via the plug adapters.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-
 |-------|---------------------------------------|----------|------------------------------------------------|
-
 | `IN` | `adapter::types::unidirectional::AB` | Socket | Input adapter that receives the signal to be distributed. |
-
 | `OUT1` | `adapter::types::unidirectional::AB` | Plug | First output adapter (identical to the input signal). |
-
 | `OUT2` | `adapter::types::unidirectional::AB` | Plug | Second output adapter. |
-
 OUT3` | `adapter::types::unidirectional::AB` | Plug | Third output adapter. |
-
 OUT4` | `adapter::types::unidirectional::AB` | Plug | Fourth output adapter. |
-
 OUT5` | `adapter::types::unidirectional::AB` | Plug | Fifth output adapter. |
-
 OUT6` | `adapter::types::unidirectional::AB` | Plug | Sixth output adapter. |
-
 OUT7` | `adapter::types::unidirectional::AB` | Plug | Seventh output adapter. |
-
 OUT8` | `adapter::types::unidirectional::AB` | Plug | Eighth Output Adapter. |
 
 ## Functionality

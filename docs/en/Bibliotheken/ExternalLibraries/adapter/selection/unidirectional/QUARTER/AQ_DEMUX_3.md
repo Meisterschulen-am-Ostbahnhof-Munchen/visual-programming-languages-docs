@@ -9,25 +9,19 @@ The function block **AQ_DEMUX_3** implements a generic demultiplexer for analog 
 ### **Event Inputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | `REQ` | Event for setting index K. The newly passed value of K determines which output is active after processing. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | `CNF` | Confirmation event after index K has been successfully applied. Only after this event is the new output ready to forward the input signal. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-
 |------|----------|--------------|
-
 | `K` | `UINT` | Index of the output to be selected (1-based). Allowed values: 1, 2, 3. Values outside this range result in undefined behavior (no output active). |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ No standalone data outputs. The output data is provided via the adapter outputs.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Sockets** (Input) | `IN` | `adapter::types::unidirectional::AQ` | Adapter input that provides the analog signal to be demultiplexed. |
-
 | **Plugs** (Outputs) | `OUT1`, `OUT2`, `OUT3` | `adapter::types::unidirectional::AQ` | Three unidirectional adapter outputs. Only the output selected by `K` passes on the signal from the input adapter; the others remain inactive. |
 
 ## Functionality
@@ -82,15 +73,10 @@ After a valid `REQ`, the **Processing** state is entered, followed immediately b
 ## Comparison with similar components
 
 | Component | Function | Difference |
-
 |----------|----------|-------------|
-
 | `AQ_DEMUX_3` | Analog demultiplexer with 3 outputs | Specifically for AQ adapters, generically expandable. |
-
 | `AQ_MUX_3` | Analog multiplexer (3 inputs → 1 output) | Reverse direction: multiple sources to one output. |
-
 | `E_DEMUX` | Event demultiplexer | Distributes events, not data adapters; uses Boolean selection. |
-
 | `SAMPLE_3` | Example demux with specific data types | No generic adapter approach, therefore less flexible. |
 
 This function block is characterized by its loose adapter coupling and generic design.

@@ -5,11 +5,8 @@ Real Number
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | 32 |
-
 | **Value Range** | Floating point according to IEC 60559 |
-
 | **Reference** | Table 10, No. 10 |
 
 ## Use in Programming

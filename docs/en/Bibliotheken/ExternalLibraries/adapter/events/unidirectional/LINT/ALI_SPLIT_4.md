@@ -25,17 +25,11 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|--------|----------------------------------|----------------------------------------------------|
-
 Socket | IN | adapter::types::unidirectional::ALI | Unidirectional ALI Input (Source) |
-
 Plug | OUT1 | adapter::types::unidirectional::ALI | First ALI Output (Destination) |
-
 Plug | OUT2 | adapter::types::unidirectional::ALI | Second ALI Output (Destination) |
-
 Plug | OUT3 | adapter::types::unidirectional::ALI | Third ALI Output (Destination) |
-
 Plug | OUT4 | adapter::types::unidirectional::ALI | Fourth ALI Output (Destination) |
 
 ## Functionality

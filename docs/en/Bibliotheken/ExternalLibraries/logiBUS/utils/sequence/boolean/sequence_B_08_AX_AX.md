@@ -9,19 +9,14 @@ The function block **sequence_B_08_AX_AX** implements a sequential control syste
 ### **Event Inputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | `S8_START` | Event that triggers a jump from state 8 back to the start state. |
-
 | `RESET` | Event that triggers an immediate reset from any active state. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | `CNF` | Acknowledge event that outputs the current state number after each state change. (With `STATE_NR`) |
 
 ### **Data Inputs**
@@ -31,9 +26,7 @@ The FB has no direct data inputs. The transition conditions are read exclusively
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `STATE_NR` | SINT | Current state number: 0 = Start, 1…8 = State_01…State_08, 9 = State_00 (End). |
 
 ### **Adapter**
@@ -41,45 +34,27 @@ The FB has no direct data inputs. The transition conditions are read exclusively
 **Plugs (Outputs – Type `adapter::types::unidirectional::AX`)**
 
 | Name | Description |
-
 |------|--------------|
-
 | `DO_S1` | Output active when state 1 is active. |
-
 | `DO_S2` | Output active when state 2 is active. |
-
 | `DO_S3` | Output active when state 3 is active. |
-
 | `DO_S4` | Output active when state 4 is active. |
-
 DO_S5` | Output active when state 5 is active. |
-
 DO_S6` | Output active when state 6 is active. |
-
 DO_S7` | Output active when state 7 is active. |
-
 DO_S8` | Output active when state 8 is active. |
 
 **Sockets (Inputs – Type `adapter::types::unidirectional::AX`)**
 
 | Name | Description |
-
 |------|--------------|
-
 DI_S1` | Signal for transition from start state to state 1. |
-
 DI_S2` | Signal for transition from state 1 to state 2. |
-
 | `DI_S3` | Signal for transition from state 2 to state 3. |
-
 DI_S4` | Signal for transition from state 3 to state 4. |
-
 DI_S5` | Signal for transition from state 4 to state 5. |
-
 DI_S6` | Signal for transition from state 5 to state 6. |
-
 DI_S7` | Signal for transition from state 6 to state 7. |
-
 DI_S8` | Signal for transition from state 7 to state 8. |
 
 ## Functionality
@@ -109,11 +84,8 @@ After a reset (`RESET`), the machine briefly enters state `sRESET`, which deacti
 ## State Overview
 
 | State (ECC) | State Number | Output Active | Transition Condition (to the Next State) |
-
 |--------------|----------------|---------------|-------------------------------------------|
-
 | `xSTART` | 0 | – | `DI_S1.D1` → sState_01<br>`DI_S2.D1` → sState_02<br>…<br>`DI_S8.D1` → sState_08<br> otherwise → sState_00 |
-
 | `sState_01` | 1 | `DO_S1` | `DI_S2.D1` → sState_02<br>`RESET` → sState_00 |
 | `sState_02` | 2 | `DO_S2` | `DI_S3.D1` → sState_03<br>`RESET` → sState_00 |
 | `sState_03` | 3 | `DO_S3` | `DI_S4.D1` → sState_04<br>`RESET` → sState_00 |
@@ -121,9 +93,7 @@ After a reset (`RESET`), the machine briefly enters state `sRESET`, which deacti
 | `sState_05` | 5 | `DO_S5` | `DI_S6.D1` → sState_06<br>`RESET` → sState_00 |
 | `sState_06` | 6 | `DO_S6` | `DI_S7.D1` → sState_07<br>`RESET` → sState_00 |
 | `sState_07` | 7 | `DO_S7` | `DI_S8.D1` → sState_08<br>`RESET` → sState_00 |
-
 | `sState_08` | 8 | `DO_S8` | `S8_START` → xSTART<br>`RESET` → sState_00 |
-
 | `sState_00` | 9 | – | `DI_S1.D1` → sState_01 (Sequence restart) |
 
 *Note: The state `sRESET`This function is used solely for clearing all outputs and exits automatically.*

@@ -8,9 +8,7 @@ The function block `AUI_UDINT_GT` performs a comparison of two unsigned 32-bit i
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | `REQ` | Event | Service Request – triggers the comparison operation. Expects a valid value at `IN2`. |
 
 ### **Event Outputs**
@@ -19,9 +17,7 @@ No direct event outputs. The result is output via the `OUT` adapter.
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `IN2` | UDINT | Second input value for comparison (value 2). |
 
 ### **Data Outputs**
@@ -30,11 +26,8 @@ No direct data outputs. The comparison result is output via the `OUT` adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |------|-----|----------|-----------|
-
 | `IN1` | `adapter::types::unidirectional::AUI` | Socket | Receiving adapter – provides the first input value (value 1) and a trigger event. |
-
 | `OUT` | `adapter::types::unidirectional::AX` | Plug | Outputting adapter – outputs the comparison result (Boolean value) and an acknowledgment event. |
 
 ## Functionality
@@ -70,19 +63,12 @@ Input and output data are not cached; the function block operates in pure combin
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Adapter Type |
-
 |----------|----------|------------|
-
 | `AUI_UDINT_GT` | `IN1 > IN2` | AUI (Socket), AX (Plug) |
-
 | `AUI_UDINT_LT` | `IN1 < IN2` | Analog |
-
 | `AUI_UDINT_EQ` | `IN1 = IN2` | analog |
-
 | `AUI_UDINT_GE` | `IN1 >= IN2` | analog |
-
 | `AUI_UDINT_LE` | `IN1 <= IN2` | analog |
-
 | `AUI_UDINT_NE` | `IN1 != IN2` | analog |
 
 This block series represents the complete set of six comparison operators and differs only in the selected comparison function. The interface is identical, allowing for interchangeability without changing the connections.

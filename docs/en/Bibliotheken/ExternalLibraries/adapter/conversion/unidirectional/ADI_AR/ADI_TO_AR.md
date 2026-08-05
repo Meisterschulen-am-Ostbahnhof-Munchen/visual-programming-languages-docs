@@ -20,11 +20,8 @@ The **ADI_TO_AR** function block is a composite module that converts a DINT adap
 ### **Adapters**
 
 | Adapter | Role | Type | Description |
-
 |---------|-------|-----|--------------|
-
 | ADI_IN | Socket | adapter::types::unidirectional::ADI | Unidirectional DINT adapter as input interface. |
-
 | AR_OUT | Plug | adapter::types::unidirectional::AR | Unidirectional REAL adapter as output interface. |
 
 ## Functionality
@@ -53,15 +50,10 @@ The entire process is synchronous and without intermediate storage – each succ
 The function block does not have its own state machine. The process can be described as a simple step:
 
 | Step | Action |
-
 |---------|--------|
-
 | 1 | Wait for event at **ADI_IN.E1** |
-
 | 2 | Convert the data value from DINT to REAL |
-
 | 3 | Output the converted value to **AR_OUT.D1** and event to **AR_OUT.E1** |
-
 | 4 | Return to step 1 |
 
 ## Application Scenarios

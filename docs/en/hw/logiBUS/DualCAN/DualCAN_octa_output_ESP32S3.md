@@ -24,15 +24,10 @@ Voltage divider is located in the controller:
 ### Digital Inputs
 
 | Input: | PIN (ESP32S3) |
-
 |----------|---------------|
-
 | Input_I1 | 5 |
-
 | Input_I2 | 4 |
-
 | Input_I3 | 6 |
-
 | Input_I4 | 16 |
 
 ### Digital Inputs (CAN2)
@@ -45,7 +40,6 @@ These inputs have a voltage divider in the controller: 47/13 --> and a Schmitt t
 ### Digital Outputs
 
 | Output: | PIN (ESP32S3) |
-
 |------------|---------------|
 | Output_Q01 |  2 |
 | Output_Q02 | 10 |

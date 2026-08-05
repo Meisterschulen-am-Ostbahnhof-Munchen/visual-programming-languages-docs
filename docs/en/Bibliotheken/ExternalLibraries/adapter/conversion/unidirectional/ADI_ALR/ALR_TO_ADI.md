@@ -22,11 +22,8 @@ The FB has no direct data outputs. Data is sent via the **ADI_OUT** plug.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | ALR_IN | Socket | adapter::types::unidirectional::ALR | Returns an event (E1) and a data value (D1) of type LREAL. |
-
 | ADI_OUT | Plug | adapter::types::unidirectional::ADI | Expects an event (E1) and outputs a data value (D1) of type DINT. |
 
 ## Functionality

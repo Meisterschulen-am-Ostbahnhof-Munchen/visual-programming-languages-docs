@@ -51,15 +51,10 @@ No user data (SD_x, RD_x) is transmitted during this process.
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2025 Monika Wenger |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-12-05, Monika Wenger) |
-
 | 4diac package | iec61499::net |
 
 ---

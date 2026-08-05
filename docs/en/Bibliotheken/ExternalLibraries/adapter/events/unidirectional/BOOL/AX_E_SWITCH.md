@@ -10,19 +10,14 @@ The **AX_E_SWITCH** function block implements event-driven demultiplexing (switc
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |-------------|--------|-------------------------------|
-
 | **EI** | Event | Event input that is switched |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |-------------|--------|--------------------------------------------|
-
 | **EO0** | Event | Activated when **G** = 0 |
-
 | **EO1** | Event | Activated when **G** = 1 |
 
 ### **Data Inputs**
@@ -34,9 +29,7 @@ No data outputs are available.
 ### **Adapter**
 
 | Name | Type | Description |
-
 |-------------|-----------------------------------|---------------------------------------------------------------------------|
-
 | **G** | `adapter::types::unidirectional::AX` | Boolean interface; provides the value for switching (0 → EO0, 1 → EO1) |
 
 ---

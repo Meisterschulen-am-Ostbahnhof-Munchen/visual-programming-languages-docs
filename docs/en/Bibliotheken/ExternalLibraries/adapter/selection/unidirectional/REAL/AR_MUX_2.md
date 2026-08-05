@@ -9,25 +9,19 @@ The **AR_MUX_2** is a generic 2-to-1 multiplexer (MUX) that operates via adapter
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-------------------------------------------|
-
 | `REQ` | Triggers the selection of index `K` |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-------------------------------------------|
-
 | `CNF` | Confirms successful switching |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|--------|--------------------|
-
 | `K` | `UINT` | Index (0 → IN1, 1 → IN2) |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ The **AR_MUX_2** is a generic 2-to-1 multiplexer (MUX) that operates via adapter
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|---------------------------------------|-----------------------------------|
-
 | **Plug** (Output) | `OUT` | `adapter::types::unidirectional::AR` | Output signal (as selected) |
-
 | **Socket** (Input) | `IN1` | `adapter::types::unidirectional::AR` | Input value for `K = 0` |
-
 | **Socket** (Input) | `IN2` | `adapter::types::unidirectional::AR` | Input value for `K = 1` |
 
 ## Functionality
@@ -80,13 +70,9 @@ The device does not have an explicit ECC algorithm but operates in an event-driv
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Properties |
-
 |------------|-----------------|---------------------------------------------------------|
-
 | `AR_MUX_2` | 2 | Simple 2-to-1 MUX, adapter-based, one index `K` |
-
 | `AR_MUX_4` | 4 | Extended version with four inputs and a 2-bit index |
-
 | `SEL` (Standard) | 2 (Bool) | Standard IEC selector block, operates with Boolean signals |
 
 The `AR_MUX_2` is specifically optimized for use with unidirectional AR adapters and offers a clear, event-driven interface, unlike general selectors.

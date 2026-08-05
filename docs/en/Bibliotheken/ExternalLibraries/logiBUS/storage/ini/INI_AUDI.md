@@ -8,51 +8,36 @@ The **INI_AUDI** function block enables reading and saving UDINT data from a `se
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|-------|-----------------------------------|
-
 | INIT | EInit | Service Initialization |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|-------|----------------------------------|
-
 | INITO | EInit | Initialization Confirm |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |----------------|--------|-----------------------------------------------------|
-
 | QI | BOOL | Event Input Qualifier |
-
 | SECTION | STRING | Section name in settings.ini |
-
 | KEY | STRING | Key name in settings.ini |
-
 | DEFAULT_VALUE | UDINT | Fallback value if the key is not found |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |--------|--------|------------------|
-
 | QO | BOOL | Output Qualifier |
-
 | STATUS | STRING | Service Status |
 
 ## **Adapter**
 
 | Name | Type | Direction | Comment |
-
 |----------|----------|----------------|---------------------------------|
-
 | AUDI_OUT | AUDI | Plug (Output) | Output of the read value |
-
 | AUDI_IN | AUDI | Socket (Input) | Input of the value to be stored |
 
 ## Functionality

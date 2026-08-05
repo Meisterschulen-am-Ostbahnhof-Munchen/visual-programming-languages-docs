@@ -58,13 +58,9 @@ The **E_DELAY** is a key functional block in the IEC 61499 standard for industri
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_DELAY | E_CYCLE | E_PULSE |
-
 |---------------|---------|---------|---------|
-
 | Operating principle | Single delay | Continuous cycle | Single pulse |
-
 | Abort option | Yes | Yes | No |
-
 | Time parameters | DT (Delay) | DT (Cycle time) | PT (Pulse duration) |
 
 ## 🛠️ Related exercises

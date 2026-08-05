@@ -9,19 +9,12 @@ This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` 
 ### Function blocks of the subapplication `Uebung_205`
 
 | Function block name | Type | Parameters | Description |
-
 |--------------|-----|------------|--------------|
-
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` | Reads the first digital input (hardware address `Input_I1`). The event `IND` signals a change in value. |
-
 | `DigitalInput_I2` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` | Reads the second digital input. The event `IND` signals a change in value. |
-
 | `ILOCK` | `logiBUS::signalprocessing::interlock::ILOCK_SWITCH_PROTECT` | `DT_PROTECT = T#1s` | Core component: Implements the switching priority with a 1-second protection time. |
-
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Sets the first digital output (hardware address `Output_Q1`) to the value of the data input `OUT` when the event `REQ` occurs. |
-
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q2` | Sets the second digital output (hardware address `Output_Q2`) to the value of the data input `OUT` when the event `REQ` occurs. |
-
 | `E_TimeOut` | `iec61499::events::E_TimeOut` | – | Timer module connected to `ILOCK` via adapter `timeOut`. It monitors compliance with the protection time. |
 ...
 ## Program Flow and Connections

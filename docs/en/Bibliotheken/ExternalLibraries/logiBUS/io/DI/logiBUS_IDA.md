@@ -8,51 +8,36 @@ The **logiBUS_IDA** is a composite function block (CFB) for digital double-word 
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-------|---------------|
-
 | INIT | EInit | Service initialization; expects valid parameters (QI, PARAMS, Input, InputEvent) |
-
 | REQ | Event | Service request; triggers a new data query at the internal function block |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|--------------|
-
 | INITO | EInit | Initialization confirmation; returns the status (QO, STATUS) |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------------|-----------------------------|--------------|
-
 | QI | BOOL | Qualifier for the event input; controls the execution |
-
 | PARAMS | STRING | Service parameter (e.g., configuration string) |
-
 | Input | logiBUS_DI_S | Selection of the digital input channel (I1…I8); Default value: *Invalid* |
-
 | InputEvent | logiBUS_DI_Events_S | Selection of the event type (currently only *REPEAT* supported); Default value: *Invalid* |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |---------------|--------|--------------|
-
 | QO | BOOL | Qualifier of the output event |
-
 | STATUS | STRING | Service status (e.g., error messages or operating state) |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-
 |---------|------------------------------|--------------|
-
 | IN | adapter::types::unidirectional::AD | Unidirectional input adapter for receiving digital double-word data from the resource |
 
 ## Functionality

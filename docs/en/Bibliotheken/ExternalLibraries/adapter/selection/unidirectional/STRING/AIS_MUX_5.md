@@ -13,25 +13,19 @@ The block is designed generically and can be adapted to specific applications by
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|---------------|
-
 | `REQ` | Sets the index K and triggers the selection of the corresponding input adapter. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirmation that index K has been adopted and the output adapter has been updated. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|----------------------------|
-
 | `K` | UINT | Index of the input to be selected (value range 0 … 4). |
 
 ### **Data Outputs**
@@ -49,19 +43,12 @@ There are no traditional data outputs. Output is exclusively via the adapter plu
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-
 ### **Data Outputs** ... |-----------|----------|--------------------------------------------|---------------------------------------------------|
-
 | `IN1` | Socket | `adapter::types::unidirectional::AIS` | Input value for index K = 0 |
-
 | `IN2` | Socket | `adapter::types::unidirectional::AIS` | Input value for index K = 1 |
-
 | `IN3` | Socket | `adapter::types::unidirectional::AIS` | Input value for index K = 2 |
-
 | `IN4` | Socket | `adapter::types::unidirectional::AIS` | Input value for index K = 3 |
-
 | `IN5` | Socket | `adapter::types::unidirectional::AIS` | Input value for index K = 4 |
-
 | `OUT` | Plug | `adapter::types::unidirectional::AIS` | Output adapter that mirrors the selected input. |
 
 ## Functionality

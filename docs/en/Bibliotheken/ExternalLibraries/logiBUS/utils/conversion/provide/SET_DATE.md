@@ -8,35 +8,26 @@ The **SET_DATE** function block is used to write a date value (data type `DATE`)
 ### **Event Inputs**
 
 | Event | Description | With Variables |
-
 |----------|---------------|---------------|
-
 | REQ | Normal Execution Request | IN, OUT |
 
 ### **Event Outputs**
 
 | Event | Description | With Variables |
-
 |----------|--------------|---------------|
-
 | CNF | Execution Confirmation | OUT |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | IN | DATE | Value to be written to the target variable |
-
 | OUT | DATE | Target variable (InOut) – initial value can be read but will be overwritten |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | OUT | DATE | Target variable (InOut) – contains the value of IN after execution |
 
 ### **Adapter**
@@ -58,9 +49,7 @@ The InOut variable `OUT` serves as both an input and an output. The current valu
 ## State Overview
 
 | State | Description |
-
 |---------|---------------|
-
 | REQ | Executes the value assignment `OUT := IN` and sends CNF |
 
 No other state exists; the function block is immediately ready for execution.

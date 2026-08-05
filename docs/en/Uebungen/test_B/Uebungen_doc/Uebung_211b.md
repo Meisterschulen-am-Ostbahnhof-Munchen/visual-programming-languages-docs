@@ -11,17 +11,11 @@ The goal is to understand the interaction between a counter, digital inputs/outp
 The SubApp network uses five instances of predefined block types. No further sub-blocks are defined.
 
 | Name | Type | Description |
-
 |------|-----|---------------|
-
 | `Input_CU` | `logiBUS_IX` | Digital input (logiBUS) that provides the counting pulse (CU). |
-
 | `Input_R` | `logiBUS_IX` | Digital input that provides the reset signal (R). |
-
 | `FB_CTU_DINT` | `FB_CTU_DINT` | Up counter with `DINT` data type. |
-
 | `Output_Q1` | `logiBUS_QX` | Digital output (logiBUS) that displays the counter output Q. |
-
 | `Q_NumericValue_PHYS_LREAL` | `Q_NumericValue_PHYS_LREAL` | Terminal output block for displaying a physical `LREAL` value. |
 
 ### Detailed Parameters and Connections

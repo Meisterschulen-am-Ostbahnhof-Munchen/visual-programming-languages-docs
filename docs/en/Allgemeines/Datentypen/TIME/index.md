@@ -5,9 +5,7 @@ The **TIME** data type is used to represent durations of time (relative time).
 According to **DIN EN 61131-3** (Table 10, No. 12a):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | Usually 32 bits (implementation-dependent) |
-
 | **Default Value** | `T#0s` |
 
 ## Literal Representation

@@ -58,29 +58,19 @@ The **Q_CtrlAudioSignal** is a standards-compliant function block for controllin
 ## Standard Parameter Ranges
 
 | Parameter | Range | Typical Value |
-
 -----------------|------------|----------------|
-
 | Frequency | 0-65535 Hz | 2000 Hz |
-
 | Duty Cycle | 0-65535 ms | 200 ms |
-
 Shutdown time | 0-65535 ms | 100 ms |
-
 Repetitions | 1-255 | 3 |
 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Success |
-
 | -6 | VT_E_OVERFLOW | Invalid parameter values |
-
 | -8 | VT_E_NOACT | VT in incorrect state |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid audio configuration |
 
 ## Application Scenarios
@@ -92,13 +82,9 @@ Repetitions | 1-255 | 3 |
 ## ⚖️ Comparison with similar modules
 
 | Feature | Q_CtrlAudioSignal | VtSoundManager | VtAudioAlert |
-
 |---------------|-------------------|----------------|--------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Parameterization| Full | Partial | Simple |
-
 | Frequency Control | Yes | No | No |
 
 ## 🛠️ Related Exercises

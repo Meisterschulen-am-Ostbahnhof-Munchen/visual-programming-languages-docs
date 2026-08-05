@@ -9,25 +9,19 @@ The **AS_MUX_3** is a generic multiplexer IC according to IEC 61499-2. It allows
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|----------------------------------|
-
 | REQ | Event | Sets the index K and triggers the forwarding |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-------|---------------------------------------------------|
-
 | CNF | Event | Confirms successful acquisition of index K |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|------|-----------------------------|
-
 | K | UINT | Selection index (0, 1, or 2) |
 
 ### **Data Outputs**
@@ -37,15 +31,10 @@ No direct data outputs are available. Output is exclusively via the **OUT** adap
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----------------------------------|----------------------------------------|
-
 | Plug | OUT | adapter::types::unidirectional::AS | Output for the selected input |
-
 Socket | IN1 | adapter::types::unidirectional::AS | First input (K=0) |
-
 Socket | IN2 | adapter::types::unidirectional::AS | Second input (K=1) |
-
 Socket | IN3 | adapter::types::unidirectional::AS | Third input (K=2) |
 
 ## Functionality
@@ -80,15 +69,10 @@ The function block does not have an explicit state machine in the XML. Its behav
 ## Comparison with Similar Function Blocks
 
 | Function Block | Inputs | Output | Special Feature |
-
 |-------------|----------|------------------------|------------------------------------------|
-
 | AS_MUX_2 | 2 | 1 (unidirectional) | Simpler Multiplexer |
-
 | **AS_MUX_3**| 3 | 1 | This Function Block |
-
 | AS_MUX_4 | 4 | 1 | Extended Selection Options |
-
 | SEL (Standard 61499) | 2 Data Inputs | 1 Data Output | Operates on simple data types, not adapters |
 
 The **AS_MUX_3** distinguishes itself from classic SEL devices, which only process simple variables, through its adapter interface. Adapters enable the exchange of complex data types and provide a type-safe connection.

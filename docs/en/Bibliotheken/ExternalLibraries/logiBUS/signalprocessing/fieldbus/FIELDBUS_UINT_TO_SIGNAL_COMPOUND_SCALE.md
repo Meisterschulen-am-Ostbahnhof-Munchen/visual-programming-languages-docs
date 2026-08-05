@@ -9,45 +9,31 @@ The function block `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to process a
 ### **Event Inputs**
 
 | Event | Type | Description |
-
 |----------|-------|--------------------------------------------------------|
-
 | `INIT` | EInit | Initialization Request (Parameter Transfer) |
-
 | `REQ` | Event | Normal Execution Request (Processing of `IN`) |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-
 |----------|-------|-------------------------------------------|
-
 | `INITO` | EInit | Initialization Confirmation |
-
 | `CNF` | Event | Execution Confirmation (after `REQ`) |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-
 |-------------|--------|---------------------------|----------------------------------------------------------|
-
 | `IN` | UINT | `WORD_TO_UINT(NOT_AVAILABLE_WM)` | Raw value from fieldbus |
-
 | `SCALE_HIGH` | REAL | `0.256` | Scaling factor for the upper byte |
-
 | `SCALE_LOW` | REAL | `0.001` | Scaling factor for the lower byte |
-
 OFFSET` | DINT | `0` | Offset added after scaling (in REAL) |
 
 ### **Data Outputs**
 
 | Variable | Type | Initial Value | Description |
-
 |----------|--------|-------------|---------------------------------------------------|
-
 | `OUT` | REAL | `0.0` | Scaled Output Value |
-
 | `VALID` | BOOL | `FALSE` | `TRUE`, if the input signal is recognized as valid |
 
 ### **Adapter**
@@ -105,13 +91,9 @@ The FB is implemented as a SimpleFB; there are no other states such as IDLE or W
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property | Difference |
-
 |----------|--------------|-------------|
-
 | `SCALE` (e.g., according to IEC 61131) | Linear factor and offset on the entire value | No division into bytes, no validity check |
-
 | `LINEAR` (Fieldbus Standard) | Moving average or simple linear transformation | No compound approach |
-
 | `UINT_TO_REAL` | Direct type conversion | No scaling, no error detection |
 
 This function block is unique in combining byte separation with dual scaling and integrated validation, making it particularly suitable for special fieldbus protocols with compound registers.

@@ -43,9 +43,7 @@ The adapter connection transmits the numeric value, including the associated eve
 The event is only sent via the adapter when the numeric input is acknowledged with "OK"—not simply by pressing a key or changing the input field. This must be taken into account when planning the user interface.
 
 | Connection | From | To |
-
 |------------|-----|------|
-
 | Adapter | `PWM_Value.IN` | `PWMOutput_Q4.OUT` |
 
 ## Summary

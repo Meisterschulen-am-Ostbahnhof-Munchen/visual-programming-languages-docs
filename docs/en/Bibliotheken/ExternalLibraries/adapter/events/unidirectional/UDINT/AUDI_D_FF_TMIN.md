@@ -9,25 +9,19 @@ The function block **AUDI_D_FF_TMIN** implements a D flip-flop (data latch) with
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |-------|-------|---------------------------------------------|
-
 | INIT | EInit | Initializes the function block; sets the minimum time between two EO events. |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |-------|-------|---------------------------------------------|
-
 | INITO | EInit | Confirmation of completed initialization. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|----------------------------------------------------------------|
-
 | Tmin | TIME | Minimum time that must elapse between two consecutive EO events. |
 
 ### **Data Outputs**
@@ -37,11 +31,8 @@ No direct data outputs; the latched value is provided via the **Q** adapter.
 ### **Adapters**
 
 | Name | Type (unidirectional) | Role |
-
 |------|----------------------|--------------------------------------------------|
-
 | I | AUDI | Input adapter: provides the value to be latched (via D1) and the latch event (via E1). |
-
 | Q | AUDI | Output adapter: outputs the latched value (via D1) and an output event (via E1). |
 
 ## Functionality
@@ -99,13 +90,9 @@ Used as a basic building block for implementing delay elements or clock locks in
 ## Comparison with Similar Building Blocks
 
 | Building Block | Special Feature |
-
 ---------------------|-------------------------------------------------------------------|
-
 **AUDI_D_FF** | Pure D flip-flop without a time limit between EO events. |
-
 **E_D_FF_ANY** | Standard D flip-flop with universal data types, but without a minimum delay. |
-
 **AUDI_D_FF_TMIN** | Like AUDI_D_FF, but with the additional `Tmin` parameter to control the minimum pause between output events. |
 
 ## Conclusion

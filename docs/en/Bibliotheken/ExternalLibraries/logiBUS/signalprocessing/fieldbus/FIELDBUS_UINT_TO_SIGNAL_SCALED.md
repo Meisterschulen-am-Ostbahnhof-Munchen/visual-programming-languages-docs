@@ -16,23 +16,16 @@ The function block **FIELDBUS_UINT_TO_SIGNAL_SCALED** processes a UINT value rec
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-
 |--------|-------|----------------------------------|-----------------------------------------------------------|
-
 | IN | UINT | WORD_TO_UINT(NOT_AVAILABLE_WM) | Raw value from the fieldbus to be scaled. |
-
 | SCALE | REAL | REAL#1.0 | Scaling factor (multiplication). |
-
 | OFFSET | DINT | DINT#0 | Additive offset to be added after scaling. |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-
 |--------|-------|--------------|-----------------------------------------------------------|
-
 | OUT | REAL | REAL#0.0 | Scaled output value. 0.0 if the signal is invalid. |
-
 | VALID | BOOL | FALSE | Validation flag: TRUE if the input signal is valid. |
 
 ### **Adapter**
@@ -71,11 +64,8 @@ The validity threshold is provided as part of the imported library and must be d
 The FB has exactly two EC states:
 
 | State | Input | Algorithm | Output Event |
-
 |---------|---------|-------------|------------------|
-
 | INIT | INIT | – (empty) | INITO |
-
 | REQ | REQ | REQ | CNF |
 
 There is no state loop or dwell time. After initialization, the function block (FB) starts in the INIT state and can then be executed any number of times via REQ. A subsequent INIT resets the parameters.

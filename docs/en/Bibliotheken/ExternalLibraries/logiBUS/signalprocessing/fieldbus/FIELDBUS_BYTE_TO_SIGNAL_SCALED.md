@@ -9,42 +9,30 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte 
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-
 |-------|-----|--------------|-------------------|
 | `INIT` | EInit | Initialization request; sets scaling and offset | `SCALE`, `OFFSET` |
-
 | `REQ` | Event | Normal processing request; evaluates input `IN` | `IN` |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Accompanying Data |
-
 |-------|-----|--------------|-------------------|
-
 | `INITO` | EInit | Initialization Acknowledgement | – |
-
 | `CNF` | Event | Confirmation of processing; provides scaled value and validity | `OUT`, `VALID` |
 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Description |
-
 |---------|----------|-------------|--------------|
-
 | `IN` | BYTE | `NOT_AVAILABLE_B` | Raw fieldbus value (byte) |
-
 | `SCALE` | REAL | `1.0` | Scaling factor (multiplier) |
-
 | `OFFSET` | DINT | `0` | Additive Offset (after scaling) |
 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Description |
-
 |---------|----------|-------------|--------------|
-
 | `OUT` | REAL | `0.0` | Scaled Output Value |
-
 | `VALID` | BOOL | `FALSE` | `TRUE`, if the incoming byte value was deemed valid |
 
 ### **Adapter**
@@ -85,11 +73,8 @@ The initial value of `IN` is `NOT_AVAILABLE_B` – another imported constant val
 The function block has two simple states, each activated by the corresponding event:
 
 | State | Triggering Event | Executable Algorithm | Outgoing Events |
-
 |---------|-------------------|--------------------------|-------------------|
-
 | `INIT` | `INIT` | `INIT` (empty) | `INITO` |
-
 | `REQ` | `REQ` | `REQ` (validation check + scaling) | `CNF` |
 
 There are no automatic state transitions; Each state is addressed exclusively through its corresponding event.

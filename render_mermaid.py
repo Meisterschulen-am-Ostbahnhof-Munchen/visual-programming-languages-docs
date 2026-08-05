@@ -20,7 +20,7 @@ def render_language(language):
         nonlocal counter
         counter += 1
         source_path = output_dir / f"mermaid-{counter:04d}.mmd"
-        image_path = output_dir / f"mermaid-{counter:04d}.svg"
+        image_path = output_dir / f"mermaid-{counter:04d}.png"
         source_path.write_text(match.group(1).strip() + "\n", encoding="utf-8")
         subprocess.run(
             [
@@ -36,7 +36,7 @@ def render_language(language):
             check=True,
         )
         source_path.unlink()
-        return f"![Mermaid diagram](img/mermaid/{image_path.stem}.svg)"
+        return f"![Mermaid diagram](img/mermaid/{image_path.name})\n\n"
 
     rendered = MERMAID_BLOCK.sub(replace, source)
     combined.write_text(rendered, encoding="utf-8")

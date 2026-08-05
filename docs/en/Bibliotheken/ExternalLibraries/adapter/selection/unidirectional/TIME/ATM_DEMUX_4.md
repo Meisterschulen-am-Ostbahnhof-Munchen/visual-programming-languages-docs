@@ -9,25 +9,19 @@ The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distribute
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|------------|
-
 | `REQ` | Event | Set Index K – triggers the forwarding |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `CNF` | Event | Confirmation of successful forwarding |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `K` | UINT | Index of the desired output channel (1…4) |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distribute
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-
 |-------|------|-----|-----------|
-
 | Socket | `IN` | `adapter::types::unidirectional::ATM` | Input value to be demultiplexed |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::ATM` | Output channel 1 |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::ATM` | Output channel 2 |
-
 | Plug | `OUT3` | `adapter::types::unidirectional::ATM` | Output channel 3 |
-
 | Plug | `OUT4` | `adapter::types::unidirectional::ATM` | Output channel 4 |
 
 ## Functionality
@@ -86,13 +74,9 @@ An incorrect index can result in a separate **ERROR** state (not defined in the 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-
 |----------|---------------|
-
 | **ATM_DEMUX_4** | Specifically for the adapter type `ATM`, fixed number of four outputs, event-driven. |
-
 **DEMUX (general)** | Often implemented as a data multiplexer/demultiplexer with a variable number of channels and without adapter connectivity. |
-
 **MUX_4** | Multiplexer (multiple inputs → one output) – inverse operation. |
 
 This function block is designed for use in environments where communication occurs via `ATM` adapters and offers a compact solution for 1-out-of-4 selection.

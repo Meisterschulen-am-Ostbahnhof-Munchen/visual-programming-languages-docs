@@ -8,51 +8,36 @@ The function block `logiBUS_LED_PWM_QXA` is a composite block for controlling a 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-----|----------------|--------------|
-
 | `INIT` | EInit | `QI`, `PARAMS`, `Output`, `FREQ` | Service Initialization; starts the function block with the specified parameters |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Description |
-
 |----------|-----|---------------|--------------|
-
 | `INITO` | Initialization | `QO`, `STATUS` | Confirmation of successful initialization |
-
 | `CNF` | Event | `QO`, `STATUS` | Acknowledgement of a requested service (e.g., after a data request via the adapter) |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-
 |------------|--------------|--------------|
-
 | `QI` | BOOL | – | Qualifier for the event input (activation) |
-
 | `PARAMS` | STRING | – | Service parameter for bus configuration |
-
 | `Output` | `logiBUS::io::DQ::logiBUS_DO_S` | `Invalid` | Selection of physical output Q1..Q8 |
-
 | `FREQ` | UINT | `LED_OFF` | Frequency and priority of the LED PWM (e.g., from enumeration `LED_FREQ`) |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |------------|--------|--------------|
-
 | `QO` | BOOL | Qualifier for the event output (activation acknowledgement) |
-
 | `STATUS` | STRING | Service status (error/success message) |
 
 ### **Adapter**
 
 | Adapter | Type | Description |
-
 |---------|-----|---------------|
-
 | `OUT` | `adapter::types::unidirectional::AX` | Output adapter for data transmission to the logiBUS resource (via event `E1` and data `D1`) |
 
 ## Functionality

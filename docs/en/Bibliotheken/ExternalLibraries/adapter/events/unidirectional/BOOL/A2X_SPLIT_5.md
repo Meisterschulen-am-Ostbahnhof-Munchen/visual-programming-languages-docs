@@ -25,19 +25,12 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|----------------|--------------------------------------|
-
 | Socket | IN | A2X (unidirectional) | Input adapter (split) |
-
 | Plug | OUT1 | A2X (unidirectional) | First output adapter |
-
 | Plug | OUT2 | A2X (unidirectional) | Second output adapter |
-
 | Plug | OUT3 | A2X (unidirectional) | Third output adapter |
-
 | Plug | OUT4 | A2X (unidirectional) | Fourth output adapter |
-
 | Plug | OUT5 | A2X (unidirectional) | Fifth output adapter |
 
 ## Functionality

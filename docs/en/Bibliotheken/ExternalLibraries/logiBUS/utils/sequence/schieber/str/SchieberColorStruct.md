@@ -15,17 +15,11 @@ This structure does not have event outputs. The member variables represent the s
 ### **Data Elements (Structure Members)**
 
 | Name | Data Type | Comment | Initial Value |
-
 | :------- | :------- | :--------------------------------- | :---------------- |
-
 | `Unknown`| `USINT` | u8Colour for Unknown State | `COLOR_WHITE` |
-
 | `Closed` | `USINT` | u8Colour for Closed State | `COLOR_WHITE` |
-
 | `Opening`| `USINT` | u8Colour for Opening State | `COLOR_WHITE` |
-
 | `Opened` | `USINT` | u8Colour for Opened State | `COLOR_WHITE` |
-
 | `Closing`| `USINT` | u8Colour for Closing State | `COLOR_WHITE` |
 
 ### **Adapters**

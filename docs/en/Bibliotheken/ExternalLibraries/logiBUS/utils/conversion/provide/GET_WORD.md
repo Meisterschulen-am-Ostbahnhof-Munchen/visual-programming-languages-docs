@@ -9,17 +9,13 @@ The **GET_WORD** function block is used to read a WORD value from an InOut varia
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Normal execution request; clears the read operation and outputs the result at output `OUT`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Execution confirmation; signals that the value from `IN` was successfully transferred to `OUT`. |
 
 ### **Data Inputs**
@@ -27,17 +23,13 @@ The **GET_WORD** function block is used to read a WORD value from an InOut varia
 The function block (FB) does not have explicit data inputs in the traditional sense, but uses an **InOut variable**:
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | IN | WORD | Source variable (InOut) from which the read value originates. The FB accesses it for reading. |
 
 ### **Data Outputs**
 
 | Output | Type | Description |
-
 |---------|-------|------------------------------------------------|
-
 | OUT | WORD | Buffered output value – Copy of `IN` at the time of the last `REQ` execution. |
 
 ### **Adapter**
@@ -66,9 +58,7 @@ Thus, the value read once remains at the output `OUT` until another **REQ** puls
 The function block implements a simple state machine with only one state:
 
 | State | Description |
-
 |---------|--------------|
-
 | REQ | Always active when **REQ** is received; Performs the assignment `OUT := IN` and sends **CNF**. |
 
 There are no other states such as IDLE or WAIT, as the logic is strictly event-driven without branching.
@@ -81,13 +71,9 @@ There are no other states such as IDLE or WAIT, as the logic is strictly event-d
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-
 |----------|-------------|
-
 | **MOVE** | Copies a value from a data input to an output. `GET_WORD`, on the other hand, reads from an InOut variable, which often represents a connection to an external resource. |
-
 **READ** | Often standardized for IEC 61499, reads from a process image. `GET_WORD` is more specific for a buffered WORD takeover from an InOut location. |
-
 **LATCH** | Holds a value after a set pulse. `GET_WORD` only updates on each **REQ**, thus resembling a clocked latch, but is not set/resettable. |
 
 ## Conclusion

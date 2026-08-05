@@ -9,25 +9,19 @@ The function block **AE_DEMUX_2** is a generic adapter demultiplexer. It distrib
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `REQ` | Sets the index `K` and triggers the demultiplex function. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | `CNF` | Confirms successful index setting. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|----------------------------|
-
 | `K` | UINT | Target output index (1 or 2). |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No direct data outputs, as output is handled via the adapter plugs.
 ### **Adapters**
 
 | Direction | Name | Adapter Type | Description |
-
 |----------|-------|---------------------------------|-------------------------------------------------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AE` | Input value that is forwarded depending on the index. |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::AE` | First output channel. |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::AE` | Second output channel. |
 
 ## Functionality

@@ -21,11 +21,8 @@ No direct data outputs. The stored value is output via the plug adapter **Q** (d
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|-----|----------|--------------|
-
 | **I** | `adapter::types::unidirectional::AIS` | Socket | Input adapter: Clock signal (event `E1`) and data input (data `D1`) |
-
 | **Q** | `adapter::types::unidirectional::AIS` | Plug | Output adapter: Acknowledge event (event `E1`) and stored data value (data `D1`) |
 
 ## Functionality
@@ -42,11 +39,8 @@ This component encapsulates the IEC 61499 standard component `E_D_FF_ANY`. On a 
 Since the component implements the behavior of a D flip-flop, two states can be distinguished:
 
 | State | Description |
-
 |---------|--------------|
-
 | **Idle State** | The stored value remains constant. No output event is generated. |
-
 | **Takeover** | Upon the arrival of a clock event, the current input value is taken, the output is updated, and an output event is sent. |
 
 The flip-flop is edge-triggered (rising edge) and not level-triggered.

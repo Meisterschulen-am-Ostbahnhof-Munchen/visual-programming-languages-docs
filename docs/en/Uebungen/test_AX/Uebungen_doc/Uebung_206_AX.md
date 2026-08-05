@@ -11,25 +11,15 @@ This makes the circuit suitable for safety-critical applications, e.g., for the 
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Description |
-
 |---------------------|-----------------------------------------|----------------------------------------------|
-
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | Digital input for push button on channel I1 |
-
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | Digital input for push button on channel I2 |
-
 | `DigitalInput_CLK_I3` | `logiBUS::io::DI::logiBUS_IE` | Digital input for push button on channel I3 |
-
 | `ILOCK_T_FF_1` | `logiBUS::signalprocessing::interlock::ILOCK_T_FF_AX` | Mutually interlocked toggle flip-flop (central component) |
-
 | `ILOCK_T_FF_2` | `logiBUS::signalprocessing::interlock::ILOCK_T_FF_AX` | Same type as ILOCK_T_FF_1 |
-
 ILOCK_T_FF_3` | `logiBUS::signalprocessing::interlock::ILOCK_T_FF_AX` | Same type as ILOCK_T_FF_1 |
-
 DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output on channel Q1 |
-
 DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output on channel Q2 |
-
 DigitalOutput_Q3` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output on channel Q3 |
 
 ### Sub-Block: ILOCK_T_FF_AX

@@ -67,17 +67,11 @@ After the new state is calculated, an event is triggered at the output adapter (
 The following truth table describes the behavior of the function block (where `Q_n` is the old state and `Q_n+1` is the new state):
 
 | SET1.D1 | RESET.D1 | Q_n (Old State) | Q_n+1 (New State) | Description |
-
 | :---: | :---: | :---: | :---: | :--- |
-
 | 0 | 0 | 0 | 0 | Hold State |
-
 | 0 | 0 | 1 | 1 | Hold State |
-
 | 0 | 1 | X | 0 | Reset |
-
 | 1 | 0 | X | 1 | Set |
-
 | 1 | 1 | X | 1 | **Set (Dominant)** |
 
 ## Application Scenarios

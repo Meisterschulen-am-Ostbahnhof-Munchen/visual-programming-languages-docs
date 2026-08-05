@@ -20,21 +20,13 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|-----|-----|--------------|
-
 | **Socket (Input)** | IN | `adapter::types::unidirectional::AE` | Incoming AE adapter, whose signal is duplicated to all outputs. |
-
 | **Plug (Output)** | OUT1 | `adapter::types::unidirectional::AE` | First output, identical copy of the input signal. |
-
 | **Plug (Output)** | OUT2 | `adapter::types::unidirectional::AE` | Second output, identical copy of the input signal. |
-
 | **Plug (Output)** | OUT3 | `adapter::types::unidirectional::AE` | Third output, identical copy of the input signal. |
-
 | **Plug (Output)** | OUT4 | `adapter::types::unidirectional::AE` | Fourth output, identical copy of the input signal. |
-
 | **Plug (Output)** | OUT5 | `adapter::types::unidirectional::AE` | Fifth output, identical copy of the input signal. |
-
 | **Plug (Output)** | OUT6 | `adapter::types::unidirectional::AE` | Sixth output, identical copy of the input signal. |
 
 ## Functionality

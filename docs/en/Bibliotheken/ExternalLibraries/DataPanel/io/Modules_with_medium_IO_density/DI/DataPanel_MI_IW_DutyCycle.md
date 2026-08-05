@@ -11,53 +11,35 @@ The function block `DataPanel_MI_IW_DutyCycle` is a service interface function b
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|----------------|-----------|
-
 | `INIT` | EInit | QI, PARAMS, u8SAMember, Input, FreqDelta, TimeDelta | Service Initialization |
-
 | `REQ` | Event | QI | Service Request |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|---------------|------------|
-
 | `INITO` | EInit | QO, STATUS | Initialization Acknowledgement |
-
 | `CNF` | Event | QO, STATUS, IN | Requested Action Acknowledgement |
-
 | `IND` | Event | QO, STATUS, IN | Resource indication (upon value change/timer) |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `QI` | BOOL | Event input qualifier |
-
 | `PARAMS` | STRING | Service parameter (e.g., configuration string) |
-
 | `u8SAMember` | USINT | Node address (SA 224..239, default: MI::MI_00) |
-
 | `Input` | DataPanel_MI_DI_S | Input identification (must be 7A or 8A, initial value: Invalid) |
-
 | `FreqDelta` | WORD | Required value change in %, to trigger an IND |
-
 | `TimeDelta` | DWORD | Time interval in ms after which an IND is triggered |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | `QO` | BOOL | Event output qualifier |
-
 | `STATUS` | STRING | Service status (failure/success message) |
-
 | `IN` | WORD | Measured duty cycle in percent (0..100) |
 
 ### **Adapter**

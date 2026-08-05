@@ -7,25 +7,15 @@ This exercise implements a standard-compliant IEC 61131-3 up/down counter with t
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameters | Description |
-
 |--------------|-----|-----------|--------------|
-
 | `FB_CTUD_LINT` | `iec61131::counters::FB_CTUD_LINT` | PV = `LINT#10` | Up/down counter (LINT). Counts up on CU events, down on CD events. An R event resets the counter to 0, an LD event loads the preset value PV. |
-
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I1` | Digital input (logiBUS) – signal for counting up. |
-
 | `Input_CD` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I2` | Digital input – countdown signal. |
-
 | `Input_R` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I3` | Digital input – reset signal. |
-
 | `Input_LD` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I4` | Digital input – load signal for preset value. |
-
 | `Output_QU` | `logiBUS::io::DQ::logiBUS_QX` | QI = TRUE, Output = `Output_Q1` | Digital output – becomes active when the meter reading is ≥ PV. |
-
 | `Output_QD` | `logiBUS::io::DQ::logiBUS_QX` | QI = TRUE, Output = `Output_Q2` | Digital output – becomes active when the meter reading is ≤ 0. |
-
 | `F_LINT_TO_LREAL` | `iec61131::conversion::F_LINT_TO_LREAL` | – | Converts the current meter reading (LINT) to the floating-point data type LREAL. |
-
 | `Q_NumericValue_PHYS_LREAL` | `isobus::UT::Q::Q_NumericValue_PHYS_LREAL` | stObj = `OutputNumber_N3` | Outputs the converted value as a physical LREAL value to the terminal (OutputNumber_N3). |
 
 ## Program Flow and Connections

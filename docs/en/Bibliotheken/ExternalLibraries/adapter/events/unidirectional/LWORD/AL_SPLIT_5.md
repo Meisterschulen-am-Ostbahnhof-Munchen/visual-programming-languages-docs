@@ -25,19 +25,12 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-
 |----------|----------|------|-------------------------------------|
-
 | Socket | Input | IN | Unidirectional `AL` adapter input |
-
 | Plug | Output | OUT1 | First output (unidirectional `AL`) |
-
 | Plug | Output | OUT2 | Second output (unidirectional `AL`) |
-
 | Plug | Output | OUT3 | Third output (unidirectional `AL`) |
-
 | Plug | Output | OUT4 | Fourth output (unidirectional `AL`) |
-
 | Plug | Output | OUT5 | Fifth output (unidirectional `AL`) |
 
 ## Functionality

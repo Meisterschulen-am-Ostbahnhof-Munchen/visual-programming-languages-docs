@@ -21,11 +21,8 @@ None available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AUS` | Uniform OFF input signal |
-
 | **Plug** (Output) | `OUT1` – `OUT7` | `adapter::types::unidirectional::AUS` | Seven parallel OFF signals |
 
 ## Functionality

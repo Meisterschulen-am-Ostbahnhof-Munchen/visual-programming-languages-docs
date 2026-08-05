@@ -9,25 +9,19 @@ The function block `SET_BOOL` is used to write a Boolean input value (`IN`) to a
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Normal Execution Trigger |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | CNF | Event | Execution Confirmation |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-
 |------|-----|-------------|-----------|
-
 | IN | BOOL | FALSE | Value to be written to the target variable |
 
 ### **Data Outputs**
@@ -50,9 +44,7 @@ When the event `REQ` is received, the function block executes the assignment `OU
 ## State Overview
 
 | State | Action | Event Output | Description |
-
 |---------|--------|----------------|--------------|
-
 | REQ | `OUT := IN` | CNF | On the REQ event, the input value is written to the InOut variable, and execution is confirmed. |
 
 The function block has only one active state. After execution, it waits for the next `REQ` event.

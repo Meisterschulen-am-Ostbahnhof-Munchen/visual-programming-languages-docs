@@ -5,9 +5,7 @@ The **DATE_AND_TIME** data type (abbreviated **DT**) combines a calendar date an
 According to **DIN EN 61131-3** (Table 10, No. 15a):
 | Property | Value |
 | :--- | :--- |
-
 | **Bits** | Usually 32 bits (implementation dependent) |
-
 | **Default Value** | `DT#1970-01-01-00:00:00` |
 
 ## Literal Representation

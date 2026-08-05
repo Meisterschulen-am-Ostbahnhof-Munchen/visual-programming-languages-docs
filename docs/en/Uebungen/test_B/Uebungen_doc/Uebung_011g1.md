@@ -28,13 +28,9 @@ The SubApp consists directly of the following function blocks:
 The network contains three identical pairs of these building blocks:
 
 | Observer (NumericValue_ID) | Converter (F_DWORD_TO_UDINT) |
-
 |----------------------------|-------------------------------|
-
 | `InputNumber_I1_1` | `F_DWORD_TO_UDINT` |
-
 | `InputNumber_I1_2` | `F_DWORD_TO_UDINT_1` |
-
 | `InputNumber_I1_3` | `F_DWORD_TO_UDINT_2` |
 
 ## Program Flow and Connections

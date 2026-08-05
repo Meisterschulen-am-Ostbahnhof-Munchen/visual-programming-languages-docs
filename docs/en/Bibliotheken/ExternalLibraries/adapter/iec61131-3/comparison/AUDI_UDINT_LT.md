@@ -8,9 +8,7 @@ The function block **AUDI_UDINT_LT** performs a "less than" comparison for two v
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | REQ | Event | Service Request – triggers the comparison |
 
 ## **Event Outputs**
@@ -19,9 +17,7 @@ The block does not have direct event outputs. The result event is provided via t
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | IN2 | UDINT | Input value 2 (second comparison value) |
 
 ### **Data Outputs**
@@ -30,11 +26,8 @@ The function block does not have direct data outputs. The comparison result is p
 ### **Adapter**
 
 | Role | Name | Type | Comment |
-
 |-------|------|-----|-----------|
-
 | Socket | IN1 | adapter::types::unidirectional::AUDI | Input value 1 – provides event (E1) and data (D1) |
-
 | Plug | OUT | adapter::types::unidirectional::AX | Comparison result (D1 = TRUE if IN1 < IN2) and confirmation event (E1) |
 
 *Note:* The adapters of type **AUDI** and **AX** are unidirectional and each contains one event element (E1) and one data element (D1).

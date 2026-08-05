@@ -7,18 +7,12 @@ This exercise demonstrates the generation of a sine wave signal using the functi
 ## Function Blocks Used
 
 | FB Name | Type | Important Parameters | Short Description |
-
 |-------------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-
 | `GEN_SIN` | OSCAT::Basic::POUs::Engineering::signal_generators::GEN_SIN | PT = T#10s, AM = 10.0, OS = 5.0, DL = 0.0 | Generates a sine wave with a period of 10 s, amplitude 10, and offset 5. |
-
 | `F_LREAL_TO_USINT`| iec61131::conversion::F_LREAL_TO_USINT | – | Converts the floating-point value (`LREAL`) to an unsigned 8-bit value (`USINT`). |
 | `F_USINT_TO_BYTE` | iec61131::conversion::F_USINT_TO_BYTE | – | Converts `USINT` to `BYTE`. |
-
 | `BYTES_TO_ARR08B` | logiBUS::utils::conversion::arr::reversing::BYTES_TO_ARR08B | IN_01 … IN_07 = 16#00 (initial values) | Builds an 8-byte array from a `BYTE` value (IN_00) and seven additional bytes (reversing the order). |
-
 | `STRUCT_MUX` | eclipse4diac::convert::STRUCT_MUX | StructuredType = "isobus::pgn::CAN_MSG", u16DaSize = 0, u8Priority = 7 | Assembles the received data into a CAN message structure (`CAN_MSG`). |
-
 | `CallbackFB` | isobus::pgn::tx::CallbackFB | DI1 = (data := [16#FF, 16#FF, …]) (Initial Dummy) | Sends the completed CAN message to the PCAN Explorer via the adapter `PLUG1`. |
 
 ## Program Flow and Connections

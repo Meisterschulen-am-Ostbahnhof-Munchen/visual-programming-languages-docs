@@ -59,13 +59,9 @@ The `NVS_AR` block does not have an explicit state engine in its XML definition.
 ## Comparison with Similar Blocks
 
 | Feature | `NVS_AR` | Direct `NVS` block |
-
 ---------|-----------|-------------------------|
-
 Interface | AR adapter (unidirectional) | Standard event/data inputs |
-
 Intended use | Easy integration into adapter-based networks | Flexible, but more complex wiring |
-
 Data type | REAL | Multiple types (via generic parameter) |
 
 The `NVS_AR` simplifies integration by standardizing the adapter connection, while the pure `NVS` block offers broader type support.

@@ -24,9 +24,7 @@ The module enables millisecond-accurate timing measurements between events in re
 ### **Data Outputs**
 
 | Parameter | Type | Description | Accuracy |
-
 |-----------|-----|---------------|-------------|
-
 | `TD` | TIME | Measured time difference | 1 ms |
 
 ## Functionality
@@ -69,6 +67,7 @@ Trig --> RESET: RESET
 STOP --> START
 RESET --> START
 START --> RESET: RESET
+```
 ## Application Scenarios
 - **Performance Measurement**: Algorithm Runtimes
 - **Process Control**: Time-Critical Processes
@@ -78,30 +77,20 @@ START --> RESET: RESET
 ## Example Values
 
 | Operation | Result (TD) |
-
 |-----------|---------------|
-
 | START -> STOP after 1.5s | T#1s500ms |
-
 | START -> ET after 750ms -> STOP after 1.5s | T#750ms (ETO), T#1s500ms (EO) |
-
 | RESET during measurement | T#0s |
 
 ## ⚖️ Comparison with Similar Components
 
 | Feature | E_STOPWATCH | Standard Timer | High-Res Timer |
-
 |---------|-------------|----------------|----------------|
-
 | Accuracy | 1 ms | 10 ms | 1 µs |
-
 | Trigger during run | Yes | No | Yes |
-
 | Monotonous timer | Yes | No | Yes |
-
 | Reset function | Yes | Partially | Yes |
 
-```
 ## 🛠️ Related Exercises
 
 * [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)]

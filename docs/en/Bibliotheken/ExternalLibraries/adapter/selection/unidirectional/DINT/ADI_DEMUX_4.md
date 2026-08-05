@@ -9,25 +9,19 @@ The function block `ADI_DEMUX_4` is a generic demultiplexer that distributes an 
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | REQ | Event | Event to execute the demultiplex operation; triggers the processing of the index `K` |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | CNF | Event | Confirmation that the demultiplexing operation is complete |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | K | UINT | Index (1-based) for selecting the destination output (1→OUT1, 2→OUT2, 3→OUT3, 4→OUT4) |
 
 ### **Data Outputs**
@@ -36,17 +30,11 @@ _None_
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|-------------|
-
 Socket | IN | ADI (unidirectional) | Input adapter through which the data value to be distributed is present |
-
 Plug | OUT1 | ADI (unidirectional) | First output adapter |
-
 Plug | OUT2 | ADI (unidirectional) | Second output adapter |
-
 Plug | OUT3 | ADI (unidirectional) | Third output adapter |
-
 Plug | OUT4 | ADI (unidirectional) | Fourth output adapter |
 
 ## Functionality
@@ -82,13 +70,9 @@ The function block has no explicit states. Its behavior can be described as a si
 ## Comparison with Similar Components
 
 | Component | Description | Difference |
-
 |----------|---------------|-------------|
-
 | `ADI_MUX_4` | Multiplexer – collects data from four inputs and forwards it via one output | Reverse direction (multiple inputs → one output) |
-
 | `DEMUX_2` / `DEMUX_8` | Demultiplexer with a different number of channels | `ADI_DEMUX_4` offers exactly four outputs; other variants can be adapted using custom adapters or generic parameters |
-
 | `SELECT` (IEC standard) | Selection between two values (Boolean control) | Works with simple data types, not with adapters; less flexible with regard to different data sources |
 
 ## Conclusion

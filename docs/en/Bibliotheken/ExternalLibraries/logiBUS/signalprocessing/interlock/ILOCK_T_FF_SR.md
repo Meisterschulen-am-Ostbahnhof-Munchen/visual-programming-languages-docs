@@ -9,21 +9,15 @@ The function block `ILOCK_T_FF_SR` is a composite function block (FB) that imple
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | `S` | Event | Sets output `Q` to TRUE |
-
 | `R` | Event | Sets output `Q` to FALSE |
-
 | `CLK` | Event | Clock event – triggers a toggle on output `Q` |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | `EO` | Event | Triggered after every change of the internal state (Set, Reset, or Toggle) |
 
 ### **Data Inputs**
@@ -33,19 +27,14 @@ None.
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|-------------|
-
 | `Q` | BOOL | Current state of the flip-flop (TRUE = set, FALSE = reset) |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|-------------|
-
 | `ILOCK_IN` | AE2 (bidirectional) | Socket (input) | Allows the reception of latching signals from upstream devices |
-
 | `ILOCK_OUT` | AE2 (bidirectional) | Plug (output) | Sends interlock signals to downstream components |
 
 The adapters `ILOCK_IN` and `ILOCK_OUT` are of type `AE2` (general, bidirectional adapter). They are used to cascade multiple instances of the component, allowing a set state in one component to reset other components (interlock).
@@ -85,19 +74,12 @@ A set event (`S`) always results in the state TRUE, regardless of the current st
 A reset event (`R`) always results in the state FALSE, regardless of the current state.
 
 | Current State | Event | New State | Output Actions |
-
 |-------------------|----------|---------------|------------------|
-
 | FALSE | `S` | TRUE | `EO` is triggered |
-
 | FALSE | `R` | FALSE | `EO` is triggered |
-
 | FALSE | `CLK` | TRUE | `EO` is triggered |
-
 | TRUE | `S` | TRUE | `EO` is triggered |
-
 | TRUE | `R` | FALSE | `EO` is triggered |
-
 | TRUE | `CLK` | FALSE | `EO` is triggered |
 
 The adapter events act like an external reset and set the state to FALSE.

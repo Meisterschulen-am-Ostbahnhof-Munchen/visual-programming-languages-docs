@@ -52,33 +52,21 @@ The **Q_SetAudioVolume** is a standards-compliant function block for volume cont
 ## Volume Reference
 
 | Value | Meaning |
-
 |------|------------------------|
-
 | 0 | Mute |
-
 | 50 | Medium Volume |
-
 | 100 | Maximum Volume |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-
 |------|-------------------------|------------------------------------|
-
 | 0 | VT_E_NO_ERR | Successful Change |
-
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
-
 | -8 | VT_E_NOACT | VT Not Ready |
-
 | -21 | VT_E_NO_INSTANCE | No VT Client Available |
-
 | -128 | VT_E_HANDLE_INVALID | Invalid Audio Configuration |
-
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
-
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
@@ -90,15 +78,10 @@ The **Q_SetAudioVolume** is a standards-compliant function block for volume cont
 ## ⚖️ Comparison with similar components
 
 | Feature | Q_SetAudioVolume | VtAudioControl | VtSoundManager |
-
 ---------------|------------------|----------------|----------------|
-
 | ISO Standard | ✔ | ✖ | ✖ |
-
 | Value Range | 0-100% | 0-255 | 0-10 steps |
-
 | Global Effect | ✔ | ✔ | ✖ |
-
 Feedback | ✔ | ✖ | ✔ |
 
 ## Conclusion

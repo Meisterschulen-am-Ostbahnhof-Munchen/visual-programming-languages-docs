@@ -9,25 +9,19 @@ The function block **AB_DEMUX_2** is a generic demultiplexer (branch) for a unid
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |-------|--------|--------------------------|
-
 | REQ | Event | Request for switching; requires parameter K. |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-
 |-------|--------|------------------------------------|
-
 | CNF | Event | Confirmation of successful switching. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|-------------------------|
-
 | K | UINT | Index (0 or 1) that determines which output is activated. |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No direct data outputs – output is exclusively via the adapter interfaces.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-
 |-------------|--------------------------------------|----------|------------------------------------------|
-
 | IN | adapter::types::unidirectional::AB | Socket | Receives the data to be distributed. |
-
 OUT1 | adapter::types::unidirectional::AB | Plug | First output for the demultiplexed data stream. |
-
 OUT2 | adapter::types::unidirectional::AB | Plug | Second output for the demultiplexed data stream. |
 
 ## Functionality
@@ -82,15 +72,10 @@ The function block does not have explicit states in the sense of a state machine
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-
 |-------------------------|-------------------------------------------------------------------------------|
-
 | **AB_DEMUX_2** | Specifically for unidirectional AB adapters; two outputs; index-controlled. |
-
 | **AB_DEMUX_4** | Analog demultiplexer with four outputs, expects a larger index range. |
-
 | **AB_SWITCH** | Bidirectional switching (switch) between two paths, usually for data adapters. |
-
 | **E_DEMUX** (Event) | Demultiplexes events, not data adapters – event-only control. |
 
 The **AB_DEMUX_2** is characterized by its ease of use with only two outputs and direct adapter coupling. In contrast to an event-driven demultiplexer, it forwards complete adapter signals (including all embedded data).

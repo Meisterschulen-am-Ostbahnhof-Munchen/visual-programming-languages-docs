@@ -11,35 +11,26 @@ The **ARR08B_TO_DWORDS** is a pure conversion function block that creates two se
 ### **Event Inputs**
 
 | Event | Description | Data Carried |
-
 |----------|---------------|-------------------|
-
 | **REQ** | Starts the conversion of the input array. | IN (8-byte array) |
 
 ### **Event Outputs**
 
 | Event | Description | Data Carried |
-
 |----------|--------------|-------------------|
-
 | **CNF** | Confirms the completed conversion. | OUT_00, OUT_01 |
 
 ### **Data Inputs**
 
 | Name | Data Type | Array Dimension | Description |
-
 |------|----------|-----------------|--------------|
-
 | **IN** | BYTE | [0..7] | 8-byte input array that is split into two DWORDs. |
 
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-
 |---------|----------|--------------|
-
 | **OUT_00** | DWORD | First DWORD (bytes 0–3 of the array). |
-
 | **OUT_01** | DWORD | Second DWORD (bytes 4–7 of the array). |
 
 ### **Adapters**
@@ -83,11 +74,8 @@ The function block has no internal state machine. It operates event-driven and i
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-
 |----------|----------|-------------|
-
 | **BYTE_TO_DWORD** | Converts a single 4-byte array into a DWORD. | Requires separate calls for each 4-byte segment. |
-
 **ARR08B_TO_DWORDS** | Converts an 8-byte array into two DWORDs at once. | Integrated splitting in a single step reduces the number of calls and code. |
 
 This function block thus offers a more compact solution than combining several basic conversion blocks.

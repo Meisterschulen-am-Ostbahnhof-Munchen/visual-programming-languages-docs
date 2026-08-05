@@ -15,9 +15,7 @@ The block does not have traditional event or data inputs/outputs, but only adapt
 The event input is provided via the socket adapter `AI_IN`.
 
 | Name | Adapter | Comment |
-
 |--------|---------|-------------------------------------|
-
 | `E1` | `AI_IN` | Event that triggers the conversion |
 
 ### **Event Outputs**
@@ -25,9 +23,7 @@ The event input is provided via the socket adapter `AI_IN`.
 The event output is provided via the plug adapter `AULI_OUT`.
 
 | Name | Adapter | Comment |
-
 |--------|-----------|----------------------------------------|
-
 | `E1` | `AULI_OUT` | Event after successful conversion |
 
 ### **Data Inputs**
@@ -35,9 +31,7 @@ The event output is provided via the plug adapter `AULI_OUT`.
 Data input is provided via the socket adapter `AI_IN`.
 
 | Name | Adapter | Type | Comment |
-
 |--------|---------|------|------------------------|
-
 | `D1` | `AI_IN` | `INT` | Input data (16-bit integer) |
 
 ### **Data Outputs**
@@ -45,9 +39,7 @@ Data input is provided via the socket adapter `AI_IN`.
 Data output is provided via the plug adapter `AULI_OUT`.
 
 | Name | Adapter | Type | Comment |
-
 |--------|-----------|--------|--------------------------|
-
 | `D1` | `AULI_OUT`| `ULINT`| Output data (64-bit unsigned integer) |
 
 ### **Adapter**
@@ -98,13 +90,9 @@ Since the component is implemented as a pure composite without its own stateful 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Source Type | Target Type | Adapter-Based | Custom States |
-
 |-------------------|----------|---------|----------------|-----------------|
-
 | `F_INT_TO_ULINT` | `INT` | `ULINT` | No (pure function block) | No |
-
 | `AI_TO_AULI` | `AI` | `AULI` | Yes (adapter) | No |
-
 | `ANY_TO_ANY` | variable | variable | possible | depending on implementation |
 
 While the basic function block `F_INT_TO_ULINT` only performs data conversion, `AI_TO_AULI` encapsulates this along with event control in an adapter-compatible interface. This increases reusability in adapter-based systems.

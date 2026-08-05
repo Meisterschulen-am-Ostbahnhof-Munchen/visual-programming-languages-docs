@@ -27,15 +27,10 @@ The RT_E_DELAY function block delays an event by a defined time (DT) while adher
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2008, 2014 ACIN, Profactor GmbH |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
-
 | 4diac Package | eclipse4diac::rtevents |
 
 ---

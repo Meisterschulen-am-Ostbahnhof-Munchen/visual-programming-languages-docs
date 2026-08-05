@@ -31,11 +31,8 @@ Provides the converted SINT value. It becomes valid at the output after the conv
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **AB_IN** | Socket (Input) | `adapter::types::unidirectional::AB` | Receives BYTE data and a trigger event from the source system. |
-
 | **AS_OUT** | Plug (Output) | `adapter::types::unidirectional::AS` | Provides the converted SINT data with an acknowledgment event to the target system. |
 
 ## Functionality

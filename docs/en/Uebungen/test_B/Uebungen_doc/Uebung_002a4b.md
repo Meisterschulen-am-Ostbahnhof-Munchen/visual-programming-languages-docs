@@ -11,15 +11,10 @@ The goal is to understand the configuration and interconnection of input/output 
 The exercise consists of the following function blocks used directly in the network (there are no sub-blocks):
 
 | Block | Type | Parameters |
-
 |----------|-----|-----------|
-
 | **DigitalInput_I1** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` |
-
 | **DigitalInput_I2** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` |
-
 | **AND_2_BOOL** | `iec61131::bitwiseOperators::AND_2_BOOL` | (no parameters) |
-
 | **DigitalOutput_Q1** | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` |
 
 ### Brief description of the function blocks used

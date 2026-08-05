@@ -11,9 +11,7 @@ The function block **UDINT_AUDI_NE** compares two values for inequality ("not eq
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-------|------------------|
-
 | REQ | Event | Service Request |
 
 The event input **REQ** triggers the comparison process.
@@ -25,9 +23,7 @@ No explicit event outputs. The results are output via the **OUT** adapter (see s
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----------------|------------------|
-
 | IN1 | ANY_ELEMENTARY | Input value 1 |
 
 The **IN1** data input receives the first value to be compared. The second value is provided via the **IN2** socket.
@@ -39,11 +35,8 @@ No direct data outputs. The comparison result (Boolean value: TRUE for inequalit
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|------------------------------|------------------------------------|
-
 | Plug | OUT | `adapter::types::unidirectional::AX` | Output: TRUE if IN1 != value of IN2 |
-
 | Socket | IN2 | `adapter::types::unidirectional::AUDI` | Input for the second value |
 
 - **OUT** (Plug) transmits the result as a Boolean value via the data field `D1` and is controlled by the event `E1`.
@@ -90,13 +83,9 @@ The block then returns to the wait state.
 ## Comparison with Similar Blocks
 
 | Block | Function | Difference to UDINT_AUDI_NE |
-
 --------------------|--------------------------------|-----------------------------------------------------------------|
-
 F_EQ` | Equality Comparison | Checks for equality, not inequality |
-
 | `F_LT`, `F_GT` | Less Than/Greater Than Comparison | Perform order comparisons, not inequality checks |
-
 | `UDINT_AUDI_EQ` | Equality with Adapters | Same adapter interface, but compares for equality |
 
 The **UDINT_AUDI_NE** is specifically designed for inequality comparison with adapter interfaces and complements the family of adapter-based comparison blocks.

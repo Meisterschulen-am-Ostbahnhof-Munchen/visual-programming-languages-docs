@@ -15,19 +15,12 @@ This exercise teaches how to use signal scaling and the adapter concept (*AUI*) 
 This exercise consists of six function blocks, all located within the subapp `Uebung_073c_AUI`.
 
 | Block Name | Type | Parameter | Description |
-
 |--------------|-----|------------|--------------|
-
 | `IA_GBSD` | `isobus::tecu::IA_GBSD` | QI = TRUE | ISOBUS interface block for **ground-based speed**. Returns the measured value as a UINT at output `SPEED`. |
-
 | `IA_VDS` | `isobus::tecu::IA_VDS` | QI = TRUE | ISOBUS interface module for **vehicle-related speed** (Vehicle/Drive Speed). Outputs the measured value as a UINT at output `NAV_SPEED`. |
-
 | `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` | `logiBUS::signalprocessing::fieldbus::AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED` | SCALE = 0.001, OFFSET = 0 | Scales the UINT value from `IA_GBSD` to a REAL value (multiplication by 0.001). |
-
 | `FIELDBUS_UINT_TO_SIGNAL_SCALED_VDS` | `logiBUS::signalprocessing::fieldbus::AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED` | SCALE = 0.001, OFFSET = 0 | Scales the UINT value of `IA_VDS` to a REAL value (multiplication by 0.001). |
-
 | `Q_NumericValue_GBSD` | `isobus::UT::Q::Q_NumericValue_PHYSA` | stObj = `NumberVariable_Ground_based_machine_speed` | Displays the scaled ground-related speed on the UT. Uses the physical address (PHYSA) of the object pool. |
-
 | `Q_NumericValue_VDS` | `isobus::UT::Q::Q_NumericValue_PHYSA` | stObj = `NumberVariable_Wheel_based_machine_speed` | Displays the scaled vehicle-related speed on the UT. *(Note: used as a fallback)* |
 
 ---

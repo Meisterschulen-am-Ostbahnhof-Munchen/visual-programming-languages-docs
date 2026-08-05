@@ -60,15 +60,10 @@ This function block is specifically for converting two LREAL values into an LREA
 ## Metadata
 
 | Attribute | Value |
-
 | :--- | :--- |
-
 | Copyright | (c) 2014 Profactor GmbH |
-
 | License | EPL-2.0 |
-
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-07-09, Matthias Plasch) |
-
 | 4diac package | eclipse4diac::convert |
 
 ## Conclusion

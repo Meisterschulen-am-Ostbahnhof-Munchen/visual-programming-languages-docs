@@ -119,19 +119,12 @@ Every rising edge at the logiBUS input I1 (`Input_CU`) increments the counter as
 ### Connection Overview (from the Network)
 
 | Source | Destination | Type |
-
 |--------|------|-----|
-
 | `Input_CU.IN` | `AUDI_FB_CTU.CU` | Adapter (Data) |
-
 | `Input_R.IN` | `AUDI_FB_CTU.R` | Adapter (Data) |
-
 | `Input_R.INITO` | `AUDI_UDINT_TO_UDI.REQ` | Event |
-
 | `AUDI_UDINT_TO_UDI.AUDI_OUT` | `AUDI_FB_CTU.PV` | Adapter (Data) |
-
 | `AUDI_FB_CTU.Q` | `Output_Q1.OUT` | Adapter (Data) |
-
 | `AUDI_FB_CTU.CV` | `Q_NumericValue_AUDI.u32NewValue`| Data |
 
 > **Note**: A comment is stored in the network: *“Insert an AX_D_FF here if necessary to reduce the number of events.”* – This indicates a possible optimization where an edge-triggered flip-flop can be added to reduce the event rate.

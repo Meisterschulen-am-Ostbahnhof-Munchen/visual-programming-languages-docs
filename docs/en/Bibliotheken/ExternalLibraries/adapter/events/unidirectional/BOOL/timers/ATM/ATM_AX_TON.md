@@ -9,9 +9,7 @@ The **ATM_AX_TON** is a function block for on-delay. It implements standard time
 ### **Event Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | EIPT | Event | Sets the lead time (non-triggering) |
 
 ### **Event Outputs**
@@ -29,13 +27,9 @@ The FB has no explicit data outputs. Output data is provided via the **Q** adapt
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | Socket | IN | adapter::types::unidirectional::AX | Timer input (AX adapter) – provides the Boolean input signal and the start pulse |
-
 | Socket | PT | adapter::types::unidirectional::ATM | Lead time (AT adapter) – provides the delay time |
-
 | Plug | Q | adapter::types::unidirectional::AX | Timer output (AX adapter) – outputs the timer status and confirmation |
 
 ## Functionality
@@ -73,17 +67,11 @@ If **IN** goes to FALSE, the timer is immediately reset and **Q.D1** becomes FAL
 The FB itself does not manage its own state machine – the state logic resides in the integrated **E_TON**. Nevertheless, its behavior can be described as follows:
 
 | Input IN State | Behavior | Output Q.D1 |
-
 |-------------------------|-----------|--------------|
-
 | FALSE → TRUE (rising edge) | Timer starts; after the timer expires, Q becomes TRUE | FALSE (until the timer expires) → TRUE |
-
 | TRUE (while the timer is running) | Timer continues running | FALSE |
-
 | TRUE → FALSE (falling edge) | Timer is immediately reset | TRUE → FALSE |
-
 | TRUE (after the timer expires) | Output remains TRUE as long as IN is TRUE | TRUE |
-
 | FALSE (any) | Output remains FALSE | FALSE |
 
 ## Application Scenarios
@@ -95,15 +83,10 @@ The FB itself does not manage its own state machine – the state logic resides 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Special Feature |
-
 |----------|-----|--------------|
-
 | **E_TON** (IEC 61499) | Standard On-Delay | Classic input/output interface; direct event and data ports |
-
 | **ATM_AX_TON** | Adapter-based | Encapsulates E_TON and provides an AX/AT adapter; additional EIPT input (not connected) |
-
 **E_TOF** | Off-Delay | Delay on power-off (opposite behavior) |
-
 **E_CTU** | Up-counter | Counts events, not a timer |
 
 The **ATM_AX_TON** differs in its pure adapter interface and the lack of direct data coupling. It is particularly suitable for modular, hierarchically structured controllers.

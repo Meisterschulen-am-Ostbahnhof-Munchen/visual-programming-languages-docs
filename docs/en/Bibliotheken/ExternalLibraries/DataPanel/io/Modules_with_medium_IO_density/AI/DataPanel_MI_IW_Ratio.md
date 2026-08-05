@@ -9,53 +9,35 @@ The function block **DataPanel_MI_IW_Ratio** is a service interface function blo
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|---------------|-----------|
-
 | INIT | EInit | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis | Service Initialization |
-
 | REQ | Event | QI | Service Request |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Comment |
-
 |----------|-----|---------------|------------|
-
 | INITO | EInit | QO, STATUS | Initialization Confirmation |
-
 | CNF | Event | QO, STATUS, IN | Confirmation of Requested Service |
-
 | IND | Event | QO, STATUS, IN | Indication from Resource |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Comment |
-
 |----------|-----|-------------|-----------|
-
 | QI | BOOL | – | Event Input Qualifier |
-
 | PARAMS | STRING | – | Service Parameters |
-
 | u8SAMember | USINT | MI::MI_00 | Node SA 224..239 |
-
 | Input | DataPanel::io::MI::AI::DataPanel_MI_AI_S | Invalid | Identify the Input AnalogInput_1A..8B |
-
 | AnalogInput_hysteresis | WORD | – | (no value specified) |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-
 | Variable | Type | Comment |
-
 | |----------|-----|-----------|
-
 | QO | BOOL | Event Output Qualifier |
-
 | STATUS | STRING | Service Status |
-
 | IN | WORD | Input data from resource |
 
 ### **Adapter**
@@ -106,13 +88,9 @@ In case of an error, `QO = FALSE` is set and `STATUS` contains a corresponding e
 ## Comparison with Similar Modules
 
 | Module | Feature |
-
 |----------|---------|
-
 | `DataPanel_MI_AI` | Standard analog input without explicit ratiometric design. |
-
 | `DataPanel_MI_IW_Voltage` | Voltage measurement with absolute values (e.g., mV). |
-
 | **DataPanel_MI_IW_Ratio** | Specifically optimized for ratiometric sensors. |
 
 The module described here differs primarily in its use of the ratiometric measurement principle, which is employed in many modern sensors (e.g., Hall effect sensors, potentiometers).

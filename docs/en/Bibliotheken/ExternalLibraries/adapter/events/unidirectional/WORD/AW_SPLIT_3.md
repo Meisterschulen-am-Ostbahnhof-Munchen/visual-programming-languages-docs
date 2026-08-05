@@ -22,15 +22,10 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-----|--------------|
-
 | Socket | `IN` | `adapter::types::unidirectional::AW` | Input adapter – Source of the signal to be distributed. |
-
 | Plug | `OUT1` | `adapter::types::unidirectional::AW` | First output – Identical signal to `IN`. |
-
 | Plug | `OUT2` | `adapter::types::unidirectional::AW` | Second output – identical signal to `IN`. |
-
 | Plug | `OUT3` | `adapter::types::unidirectional::AW` | Third output – identical signal to `IN`. |
 
 ## Functionality

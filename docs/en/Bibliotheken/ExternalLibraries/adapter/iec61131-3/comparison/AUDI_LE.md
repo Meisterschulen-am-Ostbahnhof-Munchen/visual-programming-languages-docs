@@ -9,11 +9,8 @@ The function block **AUDI_LE** performs a less-than-equal-to comparison of two v
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `IN1.E1` | EVENT | Event input of adapter IN1 – triggers processing of the first value. |
-
 | `IN2.E1` | EVENT | Event input of adapter IN2 – triggers processing of the second value. |
 
 *Note: Both events must be received for a comparison to take place (logical AND operation in the internal network).*
@@ -21,39 +18,28 @@ The function block **AUDI_LE** performs a less-than-equal-to comparison of two v
 ### **Event Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `OUT.E1` | EVENT | Event output of adapter OUT – is activated as soon as the comparison result is available. |
 
 ### **Data Inputs**
 
 | Label | Data Type | Description |
-
 |-------------|----------|--------------|
-
 | `IN1.D1` | ANY | First value to be compared (via adapter IN1). |
-
 | `IN2.D1` | ANY | Second value to be compared (via adapter IN2). |
 
 ### **Data Outputs**
 
 | Label | Data Type | Description |
-
 |-------------|-----------|--------------|
-
 | `OUT.D1` | BOOL | Comparison result: `TRUE` if `IN1 ≤ IN2`; otherwise `FALSE`. |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |------|-----|----------|--------------|
-
 | `IN1` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Capture the first value (event + data). |
-
 | `IN2` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Capture the second value (event + data). |
-
 | `OUT` | `adapter::types::unidirectional::AX` | Plug (Output) | Output the comparison result (event + data). |
 
 ## Functionality
@@ -83,15 +69,10 @@ The FB does not have its own directed state machine, as it operates purely combi
 ## Comparison with Similar Function Blocks
 
 | FB | Function | Difference to AUDI_LE |
-
 |----|----------|------------------------|
-
 | `AUDI_LT` | Less than (`<`) | Not including equality. |
-
 | `AUDI_EQ` | Equality (`=`) | Checks for exact matches only. |
-
 | `AUDI_GE` | Greater Than or Equal To (`≥`) | Reverse comparison direction. |
-
 | `AUDI_AND` | Logical AND | Works with Boolean values, not numerical comparisons. |
 
 ## Conclusion

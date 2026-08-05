@@ -8,33 +8,25 @@ The NOOP function block ("No Operation") serves as a simple pass-through block. 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `REQ` | Event | Normal Execution Pulse |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | `CNF` | Event | Execution Acknowledgement |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `IN` | BOOL | Input Signal |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----|-----------|
-
 | `OUT`| BOOL | Output signal (identical to `IN`) |
 
 ### **Adapter**

@@ -9,27 +9,20 @@ The function block **AI_D_FF_HYS_TMIN** implements a data latch (D flip-flop) wi
 ### **Event Inputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INIT | EInit | Initialization Request (sets hysteresis band and Tmin) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INITO | EInit | Initialization Confirmation |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |--------------|-------|-----------|
-
 | HYSTERESIS | INT | Hysteresis Band (value in the same unit as the input signal) |
-
 | Tmin | TIME | Minimum time between two event outputs (E1 on the Q adapter) |
 
 ### **Data Outputs**
@@ -39,11 +32,8 @@ This function block does not have its own data outputs. The latched value is pro
 ### **Adapters**
 
 | Adapter | Type | Comment |
-
 |---------|-----|-----------|
-
 | **I** | adapter::types::unidirectional::AI | Input adapter: provides the signal to be processed (via event E1 and data D1) |
-
 | **Q** | adapter::types::unidirectional::AI | Output adapter: outputs the latched value (via event E1 and data D1) |
 
 ## Functionality
@@ -81,15 +71,10 @@ The component does not have explicitly named states. The internal flip-flop oper
 ## Comparison with similar components
 
 | Component | Key difference |
-
 |----------|--------------------------|
-
 | **E_D_FF** (simple D flip-flop) | No hysteresis band, no minimum time – accepts every change immediately. |
-
 | **AI_D_FF_HYS** (without Tmin) | Includes hysteresis, but no time limit for the output. |
-
 | **AI_D_FF_TMIN** (without hysteresis) | Includes only the minimum time, but no hysteresis. |
-
 | **AI_D_FF_HYS_TMIN** (this one) | Combines both filters: hysteresis and time limiting. |
 
 ## Conclusion

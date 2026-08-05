@@ -8,11 +8,8 @@ This feature is used to permanently freeze factory settings, manufacturer-define
 The ECU distinguishes between two levels of configuration storage:
 
 | File | Purpose | Writable? | Typical Contents |
-
 |---|---|---|---|
-
 | **`settingsReadOnly.ini`** | Factory Settings & System Defaults | ❌ No (Write-protected) | ISOBUS source addresses (Node SAs), hardware pin assignments, fixed boot times |
-
 | **`settings.ini`** | User & Runtime Settings | ✅ Yes (Read & Write) | User preferences, dynamic operating parameters, selectable limit scaling |
 
 ### Functionality & Startup Priority
@@ -108,13 +105,9 @@ OperatorID = 42
 ## Summary & Best Practices
 
 | Goal | Recommended Procedure |
-
 |---|---|
-
 | **Save Factory Settings** | Create all immutable parameters (e.g., bus addresses, security limits) in `settingsReadOnly.ini` and upload them to the control unit. |
-
 | **Allow User Settings** | Keep parameters that the operator is allowed to adjust (e.g., language, operating modes, counter readings) exclusively in `settings.ini`. |
-
 | **Enable Parameters** | To make a parameter writable again, remove the corresponding key from `settingsReadOnly.ini` and restart the control unit. |
 
 ---

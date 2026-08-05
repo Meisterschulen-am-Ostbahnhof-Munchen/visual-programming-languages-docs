@@ -50,13 +50,9 @@ The `E_TRAIN` (Event Train) is a function block according to IEC 61499 that gene
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | E_TRAIN | E_CYCLE | E_TABLE |
-
 |--------------|-----------|----------|----------|
-
 | Event Interval | Fixed (`DT`) | Fixed (`DT`) | Variable (Array `DT`) |
-
 | Event Count | Finite (`N`) | Infinite | Finite (`N`) |
-
 Counter Output (`CV`) | Yes | No | Yes |
 
 ## 🛠️ Related Exercises

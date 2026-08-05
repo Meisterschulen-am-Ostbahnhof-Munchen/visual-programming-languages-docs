@@ -8,25 +8,19 @@ The function block **AI_DEMUX_3** implements a generic demultiplexer for an anal
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Takes the index **K** and redirects the current value of the adapter input **IN** to the corresponding adapter output (**OUT1**, **OUT2**, or **OUT3**). |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirms successful forwarding after processing a **REQ** event. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|------|--------------|
-
 | K | UINT | Index for selecting the output (valid values: 1, 2, 3). |
 
 ### **Data Outputs**
@@ -35,15 +29,10 @@ No data outputs available – output is exclusively via the adapter outputs.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-
 |-------|-------|-----------|--------------|
-
 | AI | IN | Socket | Input adapter for the analog value to be distributed. |
-
 AI | OUT1 | Plug | First output adapter. |
-
 AI | OUT2 | Plug | Second output adapter. |
-
 AI | OUT3 | Plug | Third output adapter. |
 
 ## Functionality

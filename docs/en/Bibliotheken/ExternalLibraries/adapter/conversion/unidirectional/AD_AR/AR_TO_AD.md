@@ -8,33 +8,25 @@ The function block `AR_TO_AD` serves as a composite function block (FB) for conv
 ### **Event Inputs**
 
 | Input | Type | Description |
-
 |---------|-----|---------------|
-
 | `AR_IN.E1` | Adapter Event | Receives the trigger event from the AR adapter, which starts the conversion. |
 
 ### **Event Outputs**
 
 | Output | Type | Description |
-
 |---------|-----|--------------|
-
 | `AD_OUT.E1` | Adapter Event | Sends an event to the AD adapter as soon as the converted DWORD value is available. |
 
 ### **Data Inputs**
 
 | Input | Type | Description |
-
 |---------|-----|--------------|
-
 | `AR_IN.D1` | REAL | The REAL value to be converted, provided by the AR adapter. |
 
 ### **Data Outputs**
 
 | Output | Type | Description |
-
 |---------|-----|---------------|
-
 | `AD_OUT.D1` | DWORD | The converted DWORD value that is passed to the AD adapter. |
 
 ### **Adapters**

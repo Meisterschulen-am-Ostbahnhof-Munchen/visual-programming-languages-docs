@@ -9,25 +9,19 @@ The function block **AIWS_DEMUX_4** is a generic demultiplexer for AIWS data. It
 ### **Event Inputs**
 
 | Event | Data Type | With Var | Comment |
-
 |----------|----------|---------|-----------|
-
 | `REQ` | Event | `K` | Sets the index `K` and triggers demultiplexing. |
 
 ### **Event Outputs**
 
 | Event | Data Type | With Var | Comment |
-
 |----------|----------|----------|----------|
-
 | `CNF` | Event | – | Confirms successful index assignment and selection update. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | `K` | UINT | Index of the desired output (value range typically 1…4). |
 
 ### **Data Outputs**
@@ -37,17 +31,11 @@ This function block does not have its own data outputs. The actual user data is 
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-
 |----------|------|-----|-----------|
-
 | **Plug** (Output) | `OUT1` | `adapter::types::unidirectional::AIWS` | First output adapter for AIWS data. |
-
 | **Plug** (Output) | `OUT2` | `adapter::types::unidirectional::AIWS` | Second output adapter for AIWS data. |
-
 **Plug** (Output) | `OUT3` | `adapter::types::unidirectional::AIWS` | Third output adapter for AIWS data. |
-
 **Plug** (Output) | `OUT4` | `adapter::types::unidirectional::AIWS` | Fourth output adapter for AIWS data. |
-
 **Socket** (Input) | `IN` | `adapter::types::unidirectional::AIWS` | Input adapter for the AIWS data stream to be demultiplexed. |
 
 ## Functionality

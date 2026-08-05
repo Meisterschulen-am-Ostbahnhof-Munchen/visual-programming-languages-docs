@@ -8,47 +8,32 @@ The function block **SPLIT_MI_DO_S_Octal_SA** is used to split a single data val
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Service Request; Processing starts as soon as the event occurs. The user must first validate the data input `IN`. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirmation of completed processing. Indicates that all eight outputs have been updated. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 |------|----------------------------------|------------------------------------|
-
 | `IN` | `DataPanel_MI_DO_S_Octal_SA` | Octal input value (Port 1…8 and common `u8SAMember`) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-
 |------|-----------------------------------|--------------------------|
-
 | `OUT1` | `DataPanel_MI_DO_S_Single_SA` | Single Output 1 |
-
 | `OUT2` | `DataPanel_MI_DO_S_Single_SA` | Single Output 2 |
-
 | `OUT3` | `DataPanel_MI_DO_S_Single_SA` | Single Output 3 |
-
 | `OUT4` | `DataPanel_MI_DO_S_Single_SA` | Single Output 4 |
-
 | `OUT5` | `DataPanel_MI_DO_S_Single_SA` | Single Output 5 |
-
 | `OUT6` | `DataPanel_MI_DO_S_Single_SA` | Single Output 6 |
-
 | `OUT7` | `DataPanel_MI_DO_S_Single_SA` | Single Output 7 |
-
 | `OUT8` | `DataPanel_MI_DO_S_Single_SA` | Single Output 8 |
 
 ### **Adapters**

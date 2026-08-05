@@ -22,11 +22,8 @@ No data outputs available.
 
 | Type | Name | Direction | Description |
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::A2X` | `IN` | Socket | Input adapter that receives the A2X signal to be distributed. |
-
 | `adapter::types::unidirectional::A2X` | `OUT1` | Plug | First output adapter that provides an identical copy of the input signal. |
-
 | `adapter::types::unidirectional::A2X` | `OUT2` | Plug | Second output adapter that provides an identical copy of the input signal. |
 
 ## Functionality

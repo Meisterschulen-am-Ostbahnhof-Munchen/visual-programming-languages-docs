@@ -45,17 +45,11 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 ### Parameter Details of Selected Function Blocks
 
 | Function Block | Parameter | Value |
-
 |----------|-----------|------|
-
 | `ADI_DINT_TO_DI` | `OUT` | `DINT#5` |
-
 | `Input_CU` | `QI` | `TRUE` |
-
 | | `Input` | `Input_I1` |
-
 | `Input_CD` | `QI` | `TRUE` |
-
 | | `Input` | `Input_I2` |
 | `Input_R` | `QI` | `TRUE` |
 | | `Input` | `Input_I3` |

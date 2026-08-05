@@ -13,21 +13,15 @@ This function block fires an event on the output channel `CD`, `LD`, or `PV` wit
 This function block does not have direct event inputs. All events are supplied via the connected **sockets** (adapter inputs).
 
 | Socket (Adapter) | Type | Description |
-
 |------------------|-------|-------------------------------------------|
-
 | `CD` | `AX` | Countdown Event |
-
 LD` | `AX` | Load Event |
-
 PV` | `AUDI` | Preset Value Event |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
-
 |------|--------|----------------------------------------------------|
-
 CNF` | Event | Acknowledge event after each processing step |
 
 ### **Data Inputs**
@@ -35,13 +29,9 @@ CNF` | Event | Acknowledge event after each processing step |
 Data is transmitted via sockets as part of the adapter protocol.
 
 | Socket (Adapter) | Data Type | Meaning |
-
 ------------------|-----------|-----------------------------------------|
-
 | `CD.D1` | BOOL | Countdown command (TRUE = count)|
-
 | `LD.D1` | BOOL | Load preset value command |
-
 | `PV.D1` | UDINT | Preset counter value |
 
 ### **Data Outputs**
@@ -49,27 +39,18 @@ Data is transmitted via sockets as part of the adapter protocol.
 The output data is displayed via the plugs.
 
 | Plug (Adapter) | Data Type | Meaning |
-
 -----------|-------------------------------------|
-
 | `Q.D1` | BOOL | Counter value = 0 (TRUE when reached)|
-
 | `CV.D1` | UDINT | Current Counter Value |
 
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-
 |----------|------|-------|----------------------------------------|
-
 | Socket | `CD` | `AX` | Event-Driven Count Pulse (Down) |
-
 | Socket | `LD` | `AX` | Event-Driven Preset Loading |
-
 | Socket | `PV` | `AUDI` | Event-Driven Preset Selection |
-
 | Plug | `Q` | `AX` | Output signal: Counter reading = 0 |
-
 | Plug | `CV` | `AUDI` | Output signal: Current counter value |
 
 ## Functionality

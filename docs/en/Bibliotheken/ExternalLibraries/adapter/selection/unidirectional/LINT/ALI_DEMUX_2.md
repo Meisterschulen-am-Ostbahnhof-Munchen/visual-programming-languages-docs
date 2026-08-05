@@ -9,25 +9,19 @@ The function block **ALI_DEMUX_2** is a generic demultiplexer for the ALI adapte
 ### **Event Inputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `REQ` | Sets the index `K` and routes the input value to the corresponding output. |
 
 ### **Event Outputs**
 
 | Event | Comment |
-
 |----------|-----------|
-
 | `CNF` | Confirms successful forwarding (without additional data). |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-------|-----------|
-
 | `K` | UINT | Index of the selected output (1 or 2). |
 
 ### **Data Outputs**
@@ -37,13 +31,9 @@ No separate data outputs – output is handled via the adapters.
 ### **Adapters**
 
 | Type | Direction | Label | Comment |
-
 |--------------|-----------|-------------|---------------------------------------|
-
 | ALI | Input | `IN` | The input value to be demultiplexed. |
-
 | ALI | Output | `OUT1` | First output channel (index 1). |
-
 | ALI | Output | `OUT2` | Second output channel (index 2). |
 
 ## Functionality

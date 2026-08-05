@@ -9,25 +9,19 @@ The function block **AQ_D_FF_TMIN** implements a data-locking D flip-flop with a
 ### **Event Inputs**
 
 | Event | Type | With Variable | Comment |
-
 |----------|-----|--------------|-----------|
-
 | INIT | EInit | Tmin | Initialization request, sets the minimum MIT. |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-
 |----------|-----|-----------|
-
 | INITO | EInit | Initialization confirmation. |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-
 |----------|-----|-----------|
-
 | Tmin | TIME | Minimum waiting time between two output events (EO). |
 
 ### **Data Outputs**
@@ -41,11 +35,8 @@ No dedicated data outputs; the latched signal is output via the adapter `Q`.
 ### **Adapters**
 
 | Type | Label | Direction | Comment |
-
 ### |-----|-------------|----------|-----------|
-
 | `adapter::types::unidirectional::AQ` | I | Socket (Input) | Latching value, containing one data signal (D1) and one event signal (E1). |
-
 | `adapter::types::unidirectional::AQ` | Q | Plug (Output) | Latched value, containing one data signal (D1) and one event signal (E1). |
 
 ## Functionality
@@ -66,15 +57,10 @@ The initialization (`INIT`) passes the parameter `Tmin` to the internal function
 The FB does not have an explicit public state machine. Its behavior is determined by the internal FB `E_D_FF_ANY_TMIN`, which has the last latched value as its state and a wait logic. Simplified representation:
 
 | State | Meaning |
-
 |---------|-----------|
-
 | Initialized | Ready after INIT, Tmin is set |
-
 | Ready | Waiting for clock (I.E1) |
-
 | Latched | Data value has been accepted; output event will be released after Tmin has elapsed |
-
 | Waiting | Tmin is running – output event is blocked |
 
 A detailed state representation can be found in the source code of the internal function block.
@@ -88,13 +74,9 @@ A detailed state representation can be found in the source code of the internal 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Special Feature |
-
 |----------|--------------|
-
 | `AQ_D_FF` / `E_D_FF` | Simple D flip-flop without a time limit on the output. |
-
 AQ_D_FF_TMIN` (this FB) | Extended by a minimum delay Tmin between output events. |
-
 AQ_D_FF_TMAX` (hypothetical) | Limits the maximum time between two output events. |
 
 Compared to a standard D flip-flop, `AQ_D_FF_TMIN` offers additional protection against excessively rapid succession of output events, which is often necessary in practice.

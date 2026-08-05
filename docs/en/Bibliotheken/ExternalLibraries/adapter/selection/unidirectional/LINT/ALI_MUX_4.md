@@ -8,25 +8,19 @@ The function block **ALI_MUX_4** is a generic multiplexer for ALI adapters. Depe
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | REQ | Accepts index K and passes the selected input through to the output. Coupled with the data input K. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | CNF | Confirmation that the switchover according to index K has occurred. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | K | UINT | Index for selecting the active input (0 = IN1, 1 = IN2, 2 = IN3, 3 = IN4). |
 
 ### **Data Outputs**
@@ -36,17 +30,11 @@ No data outputs are available; output is exclusively via the OUT adapter.
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-
 |---------|----------------------------------|----------|--------------|
-
 | IN1 | adapter::types::unidirectional::ALI | Input (Socket) | First ALI input (selected when K=0). |
-
 IN2 | adapter::types::unidirectional::ALI | Input (Socket) | Second ALI input (selected when K=1). |
-
 IN3 | adapter::types::unidirectional::ALI | Input (Socket) | Third ALI input (selected when K=2). |
-
 IN4 | adapter::types::unidirectional::ALI | Input (Socket) | Fourth ALI input (selected when K=3). |
-
 OUT | adapter::types::unidirectional::ALI | Output (Plug) | Selected ALI output that provides the data stream of the active input. |
 
 ## Functionality

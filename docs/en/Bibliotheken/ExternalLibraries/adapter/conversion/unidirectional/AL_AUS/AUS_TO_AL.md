@@ -22,11 +22,8 @@ Because it is a composite FB, all I/O signals are provided via the two adapters.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-
 |-------------|-----|-----------|--------------|
-
 | **OFF_IN** | `adapter::types::unidirectional::AUS` | Socket (Input) | Receives the USINT value and the associated event. The adapter provides an internal event input `E1` and a data input `D1` (USINT). |
-
 | **AL_OUT** | `adapter::types::unidirectional::AL` | Plug (Output) | Outputs the converted LWORD value. The adapter also provides an internal event output `E1` and a data output `D1` (LWORD). |
 
 ## Functionality

@@ -21,21 +21,13 @@ None.
 
 | Type | Name | Direction | Description |
 |-----|------|----------|--------------|
-
 | `adapter::types::unidirectional::AE` | **IN** | Socket | Input adapter that receives the event to be distributed. |
-
 | `adapter::types::unidirectional::AE` | **OUT1** | Plug | First output adapter; the received event is forwarded here. |
-
 | `adapter::types::unidirectional::AE` | **OUT2** | Plug | Second output adapter. |
-
 | `adapter::types::unidirectional::AE` | **OUT3** | Plug | Third output adapter. |
-
 | `adapter::types::unidirectional::AE` | **OUT4** | Plug | Fourth output adapter. |
-
 | `adapter::types::unidirectional::AE` | **OUT5** | Plug | Fifth output adapter. |
-
 | `adapter::types::unidirectional::AE` | **OUT6** | Plug | Sixth output adapter. |
-
 | `adapter::types::unidirectional::AE` | **OUT7** | Plug | Seventh output adapter. |
 
 ## Functionality

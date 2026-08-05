@@ -28,41 +28,25 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 ## PTO parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-
 |-----------|------|--------------|-----|------------|------------|
-
 | `REAR_PTO_OUTP_SHAFT_SPEED` | UINT | Current speed | 1883 | 16 | 0.125 rpm/bit |
-
 | `REAR_PTO_OUTP_SH_SPEED_SET` | UINT | Target Speed | 1885 | 16 | 0.125 rpm/bit |
-
 | `REAR_PTO_ENGAGEMENT` | BYTE | Clutch State | 2408 | 2 | 4 states/2 bits |
-
 | `REAR_PTO_MODE` | BYTE | Operating Mode | 1890 | 2 | 4 states/2 bits |
-
 | `REAR_PTO_ECONOMY_MODE` | BYTE | Economy Mode | 1892 | 2 | 4 states/2 bits |
-
 | `REAR_PTO_ENGAGEMENT_REQ` | BYTE | Clutch Request | 5156 | 2 | 4 states/2 bits |
-
 | `REAR_PTO_MODE_REQ_STATUS` | BYTE | Mode Request | 5157 | 2 | 4 states/2 bits |
-
 | `REAR_PTO_ECONOMY_MODE_REQ_STAT` | BYTE | Economy Mode Request | 5158 | 2 | 4 states/2 bits |
-
 | `REAR_PTO_SH_SPEED_LIMIT_STAT` | BYTE | Speed Limit | 5159 | 3 | 8 states/3 bits |
-
 | `REAR_PTO_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5820 | 6 | 64 states/6 bits |
 
 ## Operating Modes
 
 | Code | Mode | Description |
-
 |------|-------|--------------|
-
 | 0 | Standby | Standby Mode |
-
 | 1 | Speed Mode | Constant Speed |
-
 | 2 | Load Mode | Load-Dependent Control |
-
 | 3 | Reserved | Manufacturer-specific |
 ...
 ## Functionality
@@ -99,15 +83,10 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 ## ⚖️ Comparison with Similar Systems
 
 | Feature | I_RPTO | Standard | Premium |
-
 |---------|--------|----------|---------|
-
 Speed Accuracy | ±0.2% | ±1% | ±0.1% |
-
 Operating Modes | 4 | 2 | 6 |
-
 Diagnostic Scope | 64 Codes | 8 Codes | 128 Codes |
-
 Response Time | <100ms | 200ms | 50ms |
 
 ## 🛠️ Related Exercises

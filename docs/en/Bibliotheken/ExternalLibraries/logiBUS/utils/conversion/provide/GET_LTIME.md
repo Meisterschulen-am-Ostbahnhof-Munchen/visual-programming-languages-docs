@@ -8,17 +8,13 @@ The function block **GET_LTIME** is used to read the current value of an LTIME v
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | REQ | Event | Normal execution command. Associated with the input value IN. |
 
 ### **Event Outputs**
 
 | Event | Data Type | Comment |
-
 |----------|----------|-----------|
-
 | CNF | Event | Execution confirmation. Connected to the outputs OUT and IN. |
 
 ### **Data Inputs**
@@ -27,9 +23,7 @@ This function block does not have traditional data inputs. Access to the source 
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-
 |------|----------|-----------|
-
 | OUT | LTIME | Buffered output value (initial value LT#0s). |
 
 ### **Adapter**
@@ -55,9 +49,7 @@ Thus, the value of the external LTIME variable is only read when the REQ event a
 The function block is implemented as a SimpleFB and has exactly one internal state:
 
 | State | Action | Output Event |
-
 |---------|--------|------------------|
-
 | REQ | Algorithm REQ (OUT := IN) | CNF |
 
 After receiving **REQ**, the state is traversed once and the output is generated. There are no further states or branches.

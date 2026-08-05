@@ -23,13 +23,9 @@ The function block `AL_FIELDBUS_LWORD_TO_SIGNAL` filters and passes a fieldbus s
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | `IN` | Socket | `adapter::types::unidirectional::AL` | Receives the event and data signal from an upstream component. |
-
 | `OUT` | Plug | `adapter::types::unidirectional::AL` | Sends the filtered signal and associated event to subsequent function blocks. |
-
 | `VALID` | Plug | `adapter::types::unidirectional::AX` | Sends the validity status as a Boolean value and an acknowledgment event. |
 
 ## Functionality
@@ -62,11 +58,8 @@ This ensures that the validity status is only passed to the Valid output once th
 This function block does not have an explicit ECC, as it is a composite function block. The internal state logic is limited to the flip-flop `E_D_FF`, which has two states:
 
 | State | Q (VALID.D1) | Meaning |
-
 |---------|---------------|------------|
-
 | RESET (Initial) | FALSE | Signal is invalid (initial). |
-
 | SET | TRUE | Signal is valid after a valid value has been detected. |
 
 The state change occurs with each incoming event at `CLK` (from `CNF`) depending on the `D` input (from the internal `VALID` signal). The state is maintained until the next event arrives.

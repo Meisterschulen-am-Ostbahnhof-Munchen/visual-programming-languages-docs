@@ -9,49 +9,35 @@ The function block **NVS_ALR** is used to load and store values of type `LREAL` 
 ### **Event Inputs**
 
 | Event | Description | Associated Variables |
-
 |----------|---------------|-----------------------|
-
 | **INIT** | Initializes the function block and performs an initial read operation from the NVS. | QI, KEY, DEFAULT_VALUE |
 
 ### **Event Outputs**
 
 | Event | Description | Included Variables |
-
 |----------|---------------|-----------------------|
-
 | **INITO** | Confirmation of initialization and feedback of the result. | QO, STATUS |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | QI | BOOL | Control for initialization (TRUE = active). |
-
 | KEY | STRING | Key name for NVS access. |
-
 | DEFAULT_VALUE | LREAL | Value to be read if no entry exists in the NVS under the specified key. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | QO | BOOL | Initialization confirmation (TRUE = successful). |
-
 | STATUS | STRING | Status message (e.g., error message for failed access). |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-
 |---------|----------|-----|--------------|
-
 | **ALR_IN** | Socket | `adapter::types::unidirectional::ALR` | Receives write commands (stores value). |
-
 | **ALR_OUT** | Plug | `adapter::types::unidirectional::ALR` | Sends read values after a read operation. |
 
 ## Functionality

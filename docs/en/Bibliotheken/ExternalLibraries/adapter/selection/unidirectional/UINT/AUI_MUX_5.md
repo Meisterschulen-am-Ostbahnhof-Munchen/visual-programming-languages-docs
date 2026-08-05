@@ -9,25 +9,19 @@ The function block **AUI_MUX_5** is a generic multiplexer for five unidirectiona
 ### **Event Inputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **REQ** | Sets the index **K** and triggers the connection of the corresponding input to the output. |
 
 ### **Event Outputs**
 
 | Event | Description |
-
 |----------|--------------|
-
 | **CNF** | Confirms that the index **K** has been accepted and the connection has been completed. |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-
 |----------|-------|--------------|
-
 | **K** | UINT | Index of the input to be selected (valid values: 0..4). |
 
 ### **Data Outputs**
@@ -37,19 +31,12 @@ The function block **AUI_MUX_5** is a generic multiplexer for five unidirectiona
 ### **Adapter**
 
 | Role | Name | Type | Description |
-
 |---------|------|------------------------------------------|--------------|
-
 | **Plug**| OUT | adapter::types::unidirectional::AUI | Output that switches the selected input. |
-
 **Socket** | IN1 | adapter::types::unidirectional::AUI | First input (activates when K=0). |
-
 **Socket** | IN2 | adapter::types::unidirectional::AUI | Second input (activates when K=1). |
-
 **Socket** | IN3 | adapter::types::unidirectional::AUI | Third input (activates when K=2). |
-
 **Socket** | IN4 | adapter::types::unidirectional::AUI | Fourth input (activates when K=3). |
-
 **Socket** | IN5 | adapter::types::unidirectional::AUI | Fifth input (activates when K=4). |
 
 **Socket**

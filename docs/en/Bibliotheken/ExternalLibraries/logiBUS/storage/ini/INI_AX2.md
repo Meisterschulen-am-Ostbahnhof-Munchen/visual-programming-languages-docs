@@ -9,49 +9,35 @@ The INI_AX2 function block is used to read and write real data from a settings.i
 ### **Event Inputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | INIT | Initialization event to start the read operation. Expects the parameters QI, SECTION, KEY, and DEFAULT_VALUE. |
 
 ### **Event Outputs**
 
 | Name | Description |
-
 |------|--------------|
-
 | INITO | Initialization confirmation. Sent after the read operation is complete. Status information is available via QO and STATUS. |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | QI | BOOL | Input qualifier for controlling processing. |
-
 | SECTION | STRING | Name of the section in the settings.ini file. |
-
 | KEY | STRING | Name of the key within the section. |
-
 | DEFAULT_VALUE | BOOL | Default value read if the key is not present in the file. Default: FALSE. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | QO | BOOL | Output qualifier, indicates successful processing. |
-
 | STATUS | STRING | Service status message (e.g., error messages). |
 
 ### **Adapters**
 
 | Name | Type | Description |
-
 |------|-----|--------------|
-
 | VAL | adapter::types::bidirectional::AX2 | Bidirectional adapter for exchanging values. This adapter provides the read value as an output (DO1) and receives a write value as an input (DI1). |
 
 ## Functionality

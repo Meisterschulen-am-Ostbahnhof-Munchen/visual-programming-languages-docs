@@ -27,21 +27,15 @@ None.
 **Socket (Input)**
 
 | Name | Type | Description |
-
 |-------------|------------------------------------------|--------------|
-
 | `IN` | `adapter::types::unidirectional::AQ` | Input adapter whose signal is distributed to three outputs |
 
 **Plug (Outputs)**
 
 | Name | Type | Description |
-
 |-------------|-------------------------------------------|--------------|
-
 | `OUT1` | `adapter::types::unidirectional::AQ` | First output (copy of the input signal) |
-
 | `OUT2` | `adapter::types::unidirectional::AQ` | Second Output (Copy of Input Signal) |
-
 | `OUT3` | `adapter::types::unidirectional::AQ` | Third Output (Copy of Input Signal) |
 
 ## Functionality

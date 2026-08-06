@@ -1,11 +1,11 @@
 # Exercise_001: DigitalInput_I1 to DigitalOutput_Q1
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the basic logiBUS® exercise `Uebung_001`. It demonstrates the fundamental principle of IEC 61499: the explicit separation of data flow and event flow.
-```
+
 ## 🎧 Podcast
 ![Uebung_001_network](./Uebung_001_network.svg)
 
-* [Analysis of the amendment to the Master Craftsman Examination Regulations in the agricultural and construction machinery mechatronics trade: A detailed comparison of the 2024 and 2001 regulations]
+* [Analysis of the amendment to the Master Craftsman Examination Regulations in the agricultural and construction machinery mechatronics trade: A detailed comparison of the 2024 and 2001 regulations](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Analyse-der-Novellierung-der-Meisterprfungsverordnung-im-Land--und-Baumaschinenmechatroniker-Handwerk-Ein-Detaillierter-Vergleich-der-Verordnungen-von-2024-und-2001-e37aejv)
 
 ----
 
@@ -40,6 +40,7 @@ The logic is implemented using two parallel connections. The structure shown in 
 <DataConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
+```
 
 [cite_start][cite: 1]
 

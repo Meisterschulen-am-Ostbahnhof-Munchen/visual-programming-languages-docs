@@ -1,7 +1,7 @@
 # Exercise_010: SoftKey_F1 on DigitalOutput_Q1
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_010`. It demonstrates how to connect virtual control elements of an ISOBUS terminal (Universal Terminal, UT) to physical outputs.
-```
+
 ## 🎧 Podcast
 ![Uebung_010_network](./Uebung_010_network.svg)
 
@@ -25,8 +25,7 @@ Using a `Softkey` function block to directly control a digital output. This exer
 
 ### Function Blocks (FBs)
 * **`SoftKey_F1`**: Type `isobus::UT::io::Softkey::Softkey_IX`. This function block represents one of the buttons on the edge of the screen or on the touchscreen of the ISOBUS terminal.
-
-# * **`DigitalOutput_Q1`**: The physical output (e.g., a relay or a lamp).
+* **`DigitalOutput_Q1`**: The physical output (e.g., a relay or a lamp).
 
 ### Parameters
 * **`u16ObjId`**: This identifier refers to the corresponding object in the ISOBUS pool (here, `SoftKey_F1`).
@@ -44,6 +43,7 @@ Communication is achieved via the standard separation of trigger and value:
 <DataConnections>
 <Connection Source="SoftKey_F1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
+```
 
 [cite_start][cite: 1]
 

@@ -1,7 +1,7 @@
 # Exercise_011: Numeric Value Input
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_011`. It demonstrates how to read numerical values (data) from an ISOBUS terminal.
-```
+
 ## 🎧 Podcast
 ![Uebung_011_network](./Uebung_011_network.svg)
 
@@ -40,6 +40,7 @@ The logic waits for confirmation of the input at the terminal:
 <DataConnections>
 <Connection Source="InputNumber_I1.IN" Destination="F_DWORD_TO_UDINT.IN"/>
 </DataConnections>
+```
 
 [cite_start][cite: 1]
 

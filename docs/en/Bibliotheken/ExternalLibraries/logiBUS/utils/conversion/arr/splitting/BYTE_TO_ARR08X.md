@@ -39,7 +39,7 @@ After these assignments are complete, the `CNF` event is output along with the p
 
 * `OUT[0]` receives the value of `IN.0`
 * `OUT[1]` receives the value of `IN.1`
-* `OUT[1]` receives the value of qzmsdocs000019 ...
+* `OUT[1]` receives the value of IN.1 ...
 ## Technical Features
 * **Direct Bit Access:** The implementation uses the direct bit addressing common in IEC 61131-3 ST (Structured Text) syntax (e.g., `IN.0`), enabling efficient and readable operation.
 * **Fixed Array Size:** The output array is defined with the fixed size `[0..7]`, which corresponds exactly to the bit length of a byte (8 bits).

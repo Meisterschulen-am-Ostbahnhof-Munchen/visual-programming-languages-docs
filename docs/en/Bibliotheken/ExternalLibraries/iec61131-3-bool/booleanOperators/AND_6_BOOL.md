@@ -7,7 +7,7 @@ The function block `AND_6_BOOL` is a standard function block for calculating the
 ## Interface Structure
 
 ### **Event Inputs**
-* **REQ** (Normal Execution Request): This event triggers the calculation of the AND operation. Upon receiving `REQ`, the values of all six data inputs (qzmsdocs000004 to `IN6`) are read and processed.
+* **REQ** (Normal Execution Request): This event triggers the calculation of the AND operation. Upon receiving `REQ`, the values of all six data inputs (IN1 to `IN6`) are read and processed.
 
 ### **Event Outputs**
 * **CNF** (Execution Confirmation): This event signals the completion of the calculation. It is output along with the calculated result at data output `OUT`.

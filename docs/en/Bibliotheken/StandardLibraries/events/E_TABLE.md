@@ -13,11 +13,11 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 - **STOP**: Stops the sequence prematurely.
 
 ### **Event Outputs**
-- **EO (Event Output)**: The output event that is triggered qzmsdocs000005 times.
-- **Associated Data**: qzmsdocs000006
+- **EO (Event Output)**: The output event that is triggered N times.
+- **Associated Data**: DT, N
 
 ### **Data Inputs**
-- **DT**: An array of durations (data type: `TIME`, size: 4). `DT[i]` defines the delay time *before* the qzmsdocs000009th event.
+- **DT**: An array of durations (data type: `TIME`, size: 4). `DT[i]` defines the delay time *before* the ith event.
 - **N**: The total number of events to be generated (data type: `UINT`, max. 4 for this function block).
 
 ### **Data Outputs**

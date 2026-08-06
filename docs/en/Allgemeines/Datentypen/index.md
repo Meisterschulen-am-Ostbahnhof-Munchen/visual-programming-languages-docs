@@ -16,13 +16,13 @@ According to DIN EN 61131-3, data types are divided into the following groups:
 
 ### 💾 Data Types in the IEC 61131-3
 
-[Data Types qzmsdocs000002 qz
+[Data Types](index.md)
 
 ### Generic Data Types (ANY Types)
 
 The standard defines generic data types for overloaded functions and standard libraries.
 
-Details on the hierarchy and usage can be found here: **[ANY Types qzmsdocs000003 qz**
+Details on the hierarchy and usage can be found here: **[ANY Types](GenerischeDatentypen/ANY-Typen.md)**
 
 ### 💾 Data Types in IEC 61499
 

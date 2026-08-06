@@ -25,7 +25,7 @@ None.
 | Plug (Output) | OUT1 … OUT7 | `adapter::types::unidirectional::AIS` | Seven identical outputs, each forwarding the incoming AIS data stream unchanged. |
 
 ## Functionality
-This module functions as a splitter for AIS adapter connections. Every incoming data or event at socket `IN` is replicated **without delay or processing** to all seven adapter plugs qzmsdocs000004 to `OUT7`. The data is forwarded in parallel, meaning all outputs receive the same information simultaneously. No internal logic or state machine is required, as this is a passive, connection-oriented data transfer.
+This module functions as a splitter for AIS adapter connections. Every incoming data or event at socket `IN` is replicated **without delay or processing** to all seven adapter plugs OUT1 to `OUT7`. The data is forwarded in parallel, meaning all outputs receive the same information simultaneously. No internal logic or state machine is required, as this is a passive, connection-oriented data transfer.
 
 ## Technical Features
 - **Generic Function Block** – The function block is declared as a generic instance (`GEN_AIS_SPLIT`) and can be parameterized for any AIS type.

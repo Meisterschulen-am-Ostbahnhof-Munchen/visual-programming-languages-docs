@@ -22,7 +22,7 @@ The function block `ARR08B_TO_BYTES` is used to decompose an 8-element byte arra
 ### * **OUT_01** (`BYTE`): Contains the value of the array element with index 1 (`IN[1]`).
 * **OUT_02** (`BYTE`): Contains the value of the array element with index 2 (`IN[2]`).
 * **OUT_03** (`BYTE`): Contains the value of the array element with index 3 (`IN[3]`).
-* **OUT_04** (`BYTE`): Contains the value of the array element with index 4 (qzmsdocs000017 ... * **OUT_05** (`BYTE`): Contains the value of the array element with index 5 (`IN[5]`).
+* **OUT_04** (`BYTE`): Contains the value of the array element with index 4 (IN[4]) ... * **OUT_05** (`BYTE`): Contains the value of the array element with index 5 (`IN[5]`).
 * **OUT_06** (`BYTE`): Contains the value of the array element with index 6 (`IN[6]`).
 * **OUT_07** (`BYTE`): Contains the value of the array element with index 7 (`IN[7]`).
 

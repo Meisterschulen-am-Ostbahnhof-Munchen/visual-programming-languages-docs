@@ -7,7 +7,7 @@ The function block `OR_5_BOOL` is a standard function block for calculating the 
 ## Interface Structure
 
 ### **Event Inputs**
-* **REQ (Normal Execution Request):** This event triggers the execution of the function block. Upon receiving `REQ`, the values of all five inputs (qzmsdocs000004 to `IN5`) are read, and the OR operation is calculated.
+* **REQ (Normal Execution Request):** This event triggers the execution of the function block. Upon receiving `REQ`, the values of all five inputs (IN1 to `IN5`) are read, and the OR operation is calculated.
 
 ### **Event Outputs**
 * **CNF (Execution Confirmation):** This event signals the completion of the calculation. It is output along with the calculated result `OUT`.

@@ -22,7 +22,7 @@ Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 ### Generische Datentypen (ANY-Typen)
 
 Für überladene Funktionen und Standard-Bibliotheken definiert die Norm generische Datentypen.
-Details zur Hierarchie und Verwendung finden Sie hier: **[ANY-Typen](GenerischeDatentypen/ANY_Typen.md)**
+Details zur Hierarchie und Verwendung finden Sie hier: **[ANY-Typen](GenerischeDatentypen/ANY-Typen.md)**
 
 ### 💾 Datentypen in der IEC 61499
 

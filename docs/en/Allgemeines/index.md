@@ -45,7 +45,7 @@ The representation of numbers (binary, hexadecimal, decimal) and the use of lite
 Data types define what kind of information a variable can store (e.g., an integer, a floating-point number, or a Boolean value).
 
 * An overview can be found here: **[DataTypes](Datentypen/index.md)**
-* Information on generic data types: **[ANYTypes](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
+* Information on generic data types: **[ANYTypes](Datentypen/GenerischeDatentypen/ANY-Typen.md)**
 * Which types can be combined: **[TypeCompatibility](Datentypen/Typkompatibilität.md)**
 
 ---

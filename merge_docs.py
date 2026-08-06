@@ -200,6 +200,12 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         target_src_md = no_ext + '.md'
         
         target_key = target_src_md if target_src_md in path_to_id else target_src_md.lower()
+        if target_key not in path_to_id:
+            norm_key = target_src_md.replace('_', '-').lower()
+            for k in path_to_id:
+                if k.replace('_', '-').lower() == norm_key:
+                    target_key = k
+                    break
         if target_key in path_to_id:
             target_id = path_to_id[target_key]
             anchor_str = f"-{clean_id(anchor)}" if anchor else ""
@@ -377,6 +383,8 @@ def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
             
             abs_path = item.file.abs_src_path
             src_path = item.file.src_path.replace('\\', '/')
+            if src_path.lower() == 'combined.md' or src_path.lower().endswith('/combined.md'):
+                continue
             page_id = path_to_id.get(src_path, clean_id(src_path))
             
             try:

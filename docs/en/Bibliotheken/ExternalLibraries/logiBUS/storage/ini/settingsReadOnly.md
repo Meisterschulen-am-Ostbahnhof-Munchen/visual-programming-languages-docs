@@ -41,22 +41,20 @@ If an attempt is made to change a read-only key (whether via control functions o
 For users of 4diac FORTE control programs, the INI function blocks (`INI`, `INI_AX`, `INI_AUI`, `INI_AR`, etc.) behave as follows with read-only parameters:
 
 * **Read event (`GET`)**: Signals the confirmation event `GETO` as usual. The protected value is present at output `VALUEO`, and `STATUS` reports `"OK"`.
-* **Read event (`GET`)**: Signals the confirmation event `GETO` as usual. The protected value is present at output `VALUEO`, and `STATUS` reports `"OK"`. * **Write Event (`SET`)**:
-* The **normal success event (`SETO`)** is not triggered, but rather the error event **`SETOE`** (*Set Output Error*).
-* The data output **`STATUS`** provides the understandable message: **`"Key is read-only"`**.
-* The output **`QO`** indicates the error state.
+* **Write Event (`SET`)**:
+  * The **normal success event (`SETO`)** is not triggered, but rather the error event **`SETOE`** (*Set Output Error*).
+  * The data output **`STATUS`** provides the understandable message: **`"Key is read-only"`**.
+  * The output **`QO`** indicates the error state.
 
-!!! Note "Note for Application Developers"
-
-By evaluating the output event `SETOE` or the status string `"Key is read-only"`, the 4diac application can react specifically to read-only parameters (e.g., displaying a note on the visualization).
+!!! note "Note for Application Developers"
+    By evaluating the output event `SETOE` or the status string `"Key is read-only"`, the 4diac application can react specifically to read-only parameters (e.g., displaying a note on the visualization).
 
 ---
 
 ## Importing and Managing Factory Settings
 
 The file `settingsReadOnly.ini` is located on the ECU's memory under:
-
-/data/settingsReadOnly.ini`
+`/data/settingsReadOnly.ini`
 
 ### Transferring to the ECU
 Importing or updating the factory settings is easily done via the ECU's integrated **Web Interface** (File Server):
@@ -85,6 +83,7 @@ bootTimeVT = 90
 
 [System]
 DeviceName = LOGIBUS-NODE-01
+```
 
 ### Example file `settings.ini` (user settings):
 
@@ -94,6 +93,8 @@ UserLanguage = DE
 
 [User]
 OperatorID = 42
+```
+
 **Result in operation:**
 
 * `NODE1_SA` (`128`), `bootTimeVT` (`90`), and `DeviceName` (`"LOGIBUS-NODE-01"`) are protected and cannot be modified.

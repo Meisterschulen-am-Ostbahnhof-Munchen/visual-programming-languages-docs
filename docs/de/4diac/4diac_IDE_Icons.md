@@ -44,7 +44,6 @@ This is the list of icons already redesigned.
 - ![ECC State](figs/icons/ecc_state.png) ECC State
 - ![ECC Add State](figs/icons/ecc_add_state.png) ECC Add State
 - ![ECC Algorithm](figs/icons/ecc_algorithm.png) ECC Algorithm
-```
 
 Dieses Markdown ist sauber formatiert und sollte in jedem Markdown-Viewer korrekt angezeigt werden.
 

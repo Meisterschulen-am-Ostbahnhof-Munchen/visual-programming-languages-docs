@@ -107,10 +107,12 @@ The connections in detail:
 
 **Simplified Flowchart:**
 
-**```
-F1 (loslassen)  → Setze SR1 (Zyl1 aus)
-F2 (drücken)    → Rücksetze SR1 (Zyl1 ein) + Setze SR2 (Zyl2 aus)
-F3 (drücken)    → Rücksetze SR2 (Zyl2 ein)
+```
+F1 (release)  → Set SR1 (Cyl1 retracted)
+F2 (press)    → Reset SR1 (Cyl1 extended) + Set SR2 (Cyl2 retracted)
+F3 (press)    → Reset SR2 (Cyl2 extended)
+```
+
 **Learning Objectives:**
 
 - Using set-reset function blocks (AX_SR) in 4diac.
@@ -135,5 +137,3 @@ Exercise **Exercise_022b_AX2** demonstrates a two-stage sequence control for two
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]

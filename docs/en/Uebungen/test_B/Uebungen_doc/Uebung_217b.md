@@ -48,16 +48,14 @@ The exercise is event-driven:
 - The counter output `Q` (Bool) is assigned to the data input `OUT` of the output block `Output_Q1`.
 - The current counter reading `CV` (LINT) is transferred to the converter `F_LINT_TO_LREAL.IN`.
 - The converted value (LREAL) is sent to the terminal block `Q_NumericValue_PHYS_LREAL.lrPhys`.
-...``
 
-````````` **Counter Functionality**:
+**Counter Functionality**:
 
 - As long as no load signal (`LD` = FALSE) is present, the function block counts down from 10 with each increasing pulse at `CD` (preset value = `PV` = 10).
 - A load signal resets the current counter value to the value of `PV`.
 - The output `Q` is `TRUE` as long as the counter value is greater than 0; upon reaching 0, `Q` becomes `FALSE` (overflow is undefined and remains at 0).
 - The current counter value is output to the terminal as a physical LREAL value.
 
-```
 ## Summary
 
 Exercise **Exercise_217b** implements a standards-compliant reverse counter (`FB_CTD_LINT`) with terminal output. It combines digital inputs (logiBUS) as counting and charging pulses, a digital output as a signal output, and a LINT-to-LREAL conversion for displaying the current counter reading on a terminal. The process is fully event-driven and demonstrates the integration of IEC 61131-3 blocks with logiBUS I/O and terminal outputs in the 4diac IDE.
@@ -65,6 +63,4 @@ Exercise **Exercise_217b** implements a standards-compliant reverse counter (`FB
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]
+* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

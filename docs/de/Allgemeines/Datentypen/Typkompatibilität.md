@@ -198,7 +198,6 @@ Dies betrifft insbesondere:
 
 **Faustregel:** Alle FIELDBUS Signal-Bausteine für DWORD, UDINT, LWORD und ULINT sollten `LREAL` als Ausgabetyp verwenden.
 
-
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

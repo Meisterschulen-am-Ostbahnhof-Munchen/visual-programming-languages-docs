@@ -53,6 +53,16 @@ jobs:
             pip install -r requirements.txt
           fi
 
+      - name: Cache downloaded remote images
+        uses: actions/cache@v4
+        with:
+          path: |
+            docs/de/img/downloaded
+            docs/en/img/downloaded
+          key: downloaded-images-${{ runner.os }}-${{ hashFiles('docs/de/**/*.md', 'docs/en/**/*.md') }}
+          restore-keys: |
+            downloaded-images-${{ runner.os }}-
+
       - name: "Compile PDF (German)"
         run: |
           python merge_docs.py docs/de/mkdocs.yml

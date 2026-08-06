@@ -22,9 +22,9 @@ Special characters are introduced by a dollar sign (`$`):
 | `$L` or `$l` | Line feed |
 | `$N` or `$n` | Newline |
 | `$P` or `$p` | Page feed |
-$R` or `$r` | Carriage Return |
-$T` or `$t` | Tab |
-$hh` | Character with Hex Code `hh` (e.g., `$41` for 'A') |
+| `$R` or `$r` | Carriage Return |
+| `$T` or `$t` | Tab |
+| `$hh` | Character with Hex Code `hh` (e.g., `$41` for 'A') |
 
 ### Examples
 - `'Hallo Welt'` (Plain Text)

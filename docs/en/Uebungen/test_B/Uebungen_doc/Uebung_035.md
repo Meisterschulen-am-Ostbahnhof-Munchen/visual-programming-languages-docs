@@ -4,10 +4,10 @@ This article describes the logiBUS® exercise `Uebung_035`. It demonstrates the 
 ## 🎧 Podcast
 ![Uebung_035_network](./Uebung_035_network.svg)
 
-* [Automation Decoded: Guiding, Controlling, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
-* [Infineon CAN Transceiver TLE9250V versus TLE9351VSJ]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-CAN-Transceiver-TLE9250V-versus-TLE9351VSJ-e3b8nan)
-* [Infineon TLE9351VSJ: The Invisible Auto Bodyguard]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-TLE9351VSJ-der-unsichtbare-Auto-Bodyguard-e3b8nhl)
-* [JBC's Soldering Secret: 350 Degrees in 2 Seconds and Why the Tip Determines Efficiency and Lifespan]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBCs-Lt-Geheimnis-350-Grad-in-2-Sekunden-und-warum-die-Spitze-ber-Effizienz-und-Lebensdauer-entscheidet-e39arff)
+* [Automation Decoded: Guiding, Controlling, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
+* [Infineon CAN Transceiver TLE9250V versus TLE9351VSJ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-CAN-Transceiver-TLE9250V-versus-TLE9351VSJ-e3b8nan)
+* [Infineon TLE9351VSJ: The Invisible Auto Bodyguard](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-TLE9351VSJ-der-unsichtbare-Auto-Bodyguard-e3b8nhl)
+* [JBC's Soldering Secret: 350 Degrees in 2 Seconds and Why the Tip Determines Efficiency and Lifespan](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBCs-Lt-Geheimnis-350-Grad-in-2-Sekunden-und-warum-die-Spitze-ber-Effizienz-und-Lebensdauer-entscheidet-e39arff)
 
 ----
 

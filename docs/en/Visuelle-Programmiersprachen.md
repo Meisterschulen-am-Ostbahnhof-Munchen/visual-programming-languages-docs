@@ -49,14 +49,14 @@ IEC 61499 builds on the concepts of IEC 61131-3, but introduces crucial innovati
 The automation pyramid shows that real-time capability and clear diagnostics are crucial at the lower levels (field and control levels). Visual programs can often be "read" and debugged faster in case of errors than thousands of lines of text code. They bridge the gap between the electrician's circuit diagram and the programmer's logic.
 
 ### Further Resources
-* [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)]
-* [Wikipedia: Visual Programming Language]
-* [M5Stack UIFlow Documentation]
+* [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
+* [Wikipedia: Visual Programming Language](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
+* [M5Stack UIFlow Documentation](https://m5stack.github.io/UIFlow_doc/en/)
 
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de]
-* [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de]
+* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+* [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
 
 *

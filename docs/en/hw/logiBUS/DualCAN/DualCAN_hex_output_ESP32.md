@@ -12,6 +12,7 @@ CAN RX 35
 | AnalogInput_I3 | 34 |
 | AnalogInput_I4 | 33 |
 
+```
 ```c
 ADC1_CHANNEL_0 = 0, /*!< ADC1 channel 0 is GPIO36 */
 ADC1_CHANNEL_3,     /*!< ADC1 channel 3 is GPIO39 */

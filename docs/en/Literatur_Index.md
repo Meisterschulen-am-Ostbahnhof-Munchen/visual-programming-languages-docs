@@ -3,6 +3,6 @@ Here you will find literature and resources on IEC 61499, divided into various c
 ## German
 ## English
 ## 🎧 Podcast
-* [Max Eyth: Engineer, Visionary, Bridge Builder – His Legacy in Technology, Agriculture, and Literature
+* [Max Eyth: Engineer, Visionary, Bridge Builder – His Legacy in Technology, Agriculture, and Literature](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Max-Eyth-Ingenieur--Visionr--Brckenbauer--Sein-Erbe-in-Technik--Landwirtschaft-und-Literatur-e38djbt)
 
 ]

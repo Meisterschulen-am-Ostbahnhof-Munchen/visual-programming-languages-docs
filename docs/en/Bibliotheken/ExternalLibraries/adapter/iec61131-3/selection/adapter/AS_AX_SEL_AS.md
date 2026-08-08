@@ -86,6 +86,7 @@ Inside the function block is a network of standard function blocks that processe
 
 
 
+```
 ``````
        +-------+
 IN0 -->|       |

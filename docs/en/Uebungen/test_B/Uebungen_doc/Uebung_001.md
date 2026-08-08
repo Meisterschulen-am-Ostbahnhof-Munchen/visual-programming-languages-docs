@@ -33,6 +33,7 @@ The objective of this introductory exercise is to route a signal from a physical
 
 The logic is implemented using two parallel connections. The structure shown in `Uebung_001.SUB` illustrates this:
 
+```
 ```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="DigitalOutput_Q1.REQ"/>

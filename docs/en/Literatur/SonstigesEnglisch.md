@@ -1,16 +1,16 @@
 # Other English
 ## Communities and Portals
-* [LinkedIn Group: IEC 61499 Applications]
-* [LinkedIn Group: IEC 61499 FAQ]
-* [Vyatkin.org - Official Site]
-* [IEC61499.com Portal]
+* [LinkedIn Group: IEC 61499 Applications](https://www.linkedin.com/groups/4431365/)
+* [LinkedIn Group: IEC 61499 FAQ](https://www.linkedin.com/groups/4335830/)
+* [Vyatkin.org - Official Site](https://www.vyatkin.org/)
+* [IEC61499.com Portal](https://iec61499.com/)
 
 ---
 
 ## Scientific Articles and Presentations
-* [Monitoring Design Pattern for Distributed Automation (Aalto University)]
-* [Distributed Control Presentation (TU Wien)]
-* [Self-Configurable Automation Systems (Eclipse Insight PDF)]
+* [Monitoring Design Pattern for Distributed Automation (Aalto University)](https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf)
+* [Distributed Control Presentation (TU Wien)](https://web.archive.org/web/20230129204830/https://publik.tuwien.ac.at/files/PubDat_251131.pptx)
+* [Self-Configurable Automation Systems (Eclipse Insight PDF)](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
 * [User Workshop Presentation (Melik)] PDF)](https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf)
 
 ---

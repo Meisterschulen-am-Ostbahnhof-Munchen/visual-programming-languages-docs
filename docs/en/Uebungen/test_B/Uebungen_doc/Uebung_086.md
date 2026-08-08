@@ -8,7 +8,7 @@ This article describes the logiBUS® exercise `Uebung_086`.
 
 ## 🎧 Podcast
 * [The Relay in Detail: Switching Amplifiers, Protection, and the Secrets of A1/A2, 85/86, and Hysteresis ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
-* [The 1863 Technology Panorama: Lanz & Comp. and the revolution of German agriculture through import, innovation, and guano
+* [The 1863 Technology Panorama: Lanz & Comp. and the revolution of German agriculture through import, innovation, and guano](https://www.youtube.com/watch?v=fk7tIjl2pTk)
 
 ----
 

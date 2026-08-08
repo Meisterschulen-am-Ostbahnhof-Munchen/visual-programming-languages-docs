@@ -38,6 +38,7 @@ The block checks the current BYTE input value **IN** against a predefined consta
 
 The logic in the algorithm is:
 
+```
 ```structuredtext
 IF (BYTE_TO_USINT(IN) <= BYTE_TO_USINT(VALID_SIGNAL_B)) THEN
 OUT := IN;

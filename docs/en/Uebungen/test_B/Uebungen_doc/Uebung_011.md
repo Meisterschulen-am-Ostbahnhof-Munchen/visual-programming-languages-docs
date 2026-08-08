@@ -33,6 +33,7 @@ Learning how to process numeric variables in the ISOBUS context. This exercise d
 
 The logic waits for confirmation of the input at the terminal:
 
+```
 ```xml
 <EventConnections>
 <Connection Source="InputNumber_I1.IND" Destination="F_DWORD_TO_UDINT.REQ"/>

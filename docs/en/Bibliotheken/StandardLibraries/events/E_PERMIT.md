@@ -2,8 +2,8 @@
 ## 🎧 Podcast
 ![E_PERMIT_ecc](./E_PERMIT_ecc.svg)
 
-* [The E_PERMIT block: The "gatekeeper" for events in IEC 61499 systems decoded]
-* [Decoding E_PERMIT: The Unsung Hero of Industrial Automation's Safety and Reliability]
+* [The E_PERMIT block: The "gatekeeper" for events in IEC 61499 systems decoded](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_PERMIT-Baustein-Der-Trsteher-fr-Ereignisse-in-IEC-61499-Systemen-entschlsselt-e3681m5)
+* [Decoding E_PERMIT: The Unsung Hero of Industrial Automation's Safety and Reliability](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-E_PERMIT-The-Unsung-Hero-of-Industrial-Automations-Safety-and-Reliability-e3681l1)
 ## Introduction
 The E_PERMIT (Event Permit) is a fundamental function block according to IEC 61499 that acts as a controllable "gate" for events. It allows an input event to pass to the output only if an explicit enable condition is met.
 

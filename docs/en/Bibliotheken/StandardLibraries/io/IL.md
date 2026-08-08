@@ -1,11 +1,11 @@
 # IL
 ## 📺 Video
-* [The silent failure]
+* [The silent failure](https://www.youtube.com/watch?v=KBMog5sdWtA)
 ## 🎧 Podcast
-* [4diac IDE: Your open-source toolkit for distributed industrial automation according to IEC 61499]
-* [Eclipse 4diac 3.0: ST interpreter, FBE, and 7200 commits – The turbocharger for distributed automation]
-* [Eclipse 4diac: Your bicycle for Industry 4.0 – Mastering software complexity and controlling distributed systems]
-* [IEC 61499: The future of industrial automation and distributed systems]
+* [4diac IDE: Your open-source toolkit for distributed industrial automation according to IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
+* [Eclipse 4diac 3.0: ST interpreter, FBE, and 7200 commits – The turbocharger for distributed automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
+* [Eclipse 4diac: Your bicycle for Industry 4.0 – Mastering software complexity and controlling distributed systems](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Ihr-Fahrrad-fr-die-Industrie-4-0--Software-Aufwand-meistern-und-verteilte-Systeme-steuern-e368lq9)
+* [IEC 61499: The future of industrial automation and distributed systems](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/IEC-61499-Die-Zukunft-der-industriellen-Automatisierung-und-verteilten-Systeme-e369739)
 * [Step 2 - 4diac applications] Distribute](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Schritt-2---4diac-Anwendungen-verteilen-e36974b)
 
 ----

@@ -9,6 +9,7 @@ Link to the devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/
 | AnalogInput_I7 | 7 |
 | AnalogInput_I8 | 6 |
 
+```
 ```c
 ADC1_CHANNEL_2,     /*!< ADC1 channel 2 is GPIO3  */
 ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO6  */

@@ -1,10 +1,10 @@
 # INI
 # INI
 ## 🎧 Podcast
-* [The E_CTU in IEC 61499: Event-driven counting and why the minimalist approach is convincing in mechanical engineering
-* [From "Mass Errors" to Masterpiece: Streamlining Industrial Software by Eliminating Mapping
-* [The tracked monster awakens: Lanz Bulldog Caterpillar – The fascinating revival of the 10-liter hot-bulb workhorse after 25 years of inactivity
-* [Masters of change: How the curriculum for agricultural and construction machinery mechatronics technicians redefines lifelong learning
+* [The E_CTU in IEC 61499: Event-driven counting and why the minimalist approach is convincing in mechanical engineering](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
+* [From "Mass Errors" to Masterpiece: Streamlining Industrial Software by Eliminating Mapping](https://podcasters.spotify.com/pod/show/logibus/episodes/From-Mass-Errors-to-Masterpiece-Streamlining-Industrial-Software-by-Eliminating-Mapping-e3759t4)
+* [The tracked monster awakens: Lanz Bulldog Caterpillar – The fascinating revival of the 10-liter hot-bulb workhorse after 25 years of inactivity](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Kettenmonster-erwacht-Lanz-Bulldog-Raupe--Die-faszinierende-Wiederbelebung-des-10-Liter-Glhkopf-Arbeitstiers-nach-25-Jahren-Stillstand-e39arpd)
+* [Masters of change: How the curriculum for agricultural and construction machinery mechatronics technicians redefines lifelong learning](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Meister-des-Wandels-Wie-der-Lehrplan-fr-Land--und-Baumaschinenmechatroniker-lebenslanges-Lernen-neu-definiert-e38di5u)
 * [Miniware TS101: The mobile soldering all-rounder – Strengths, weaknesses, and the USB-C Revolution](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Miniware-TS101-Das-mobile-Lt-Multitalent--Strken--Schwchen-und-die-USB-C-Revolution-e368lka)
 
 ## Introduction

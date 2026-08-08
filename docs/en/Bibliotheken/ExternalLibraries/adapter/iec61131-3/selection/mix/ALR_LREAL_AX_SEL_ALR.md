@@ -76,6 +76,7 @@ The module is internally based on a logic network that buffers events and data a
 
 
 
+```
 ``````
           +-----------------------------------------+
           |           ALR_LREAL_AX_SEL_ALR          |

@@ -9,12 +9,12 @@ This comprehensive textbook is dedicated to the IEC 61499 standard and its appli
 **ISBN:** 978-0-876640-44-9, ISA Publishing
 
 ### Links and Resources
-* [Official Product Page (ISA)]
-* [Amazon]
-* [Preview on Yumpu]
-* [FB61499 Project Page]
-* [Sample Page Preview (PDF)]
-* [Order Directly]
+* [Official Product Page (ISA)](https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing)
+* [Amazon](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
+* [Preview on Yumpu](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
+* [FB61499 Project Page](https://www.fb61499.com/IEC61499German.html)
+* [Sample Page Preview (PDF)](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
+* [Order Directly](https://www.isa.org/IEC61499German)
 
 ---
 

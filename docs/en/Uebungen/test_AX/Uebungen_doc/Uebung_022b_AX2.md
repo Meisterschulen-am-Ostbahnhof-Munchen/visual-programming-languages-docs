@@ -107,10 +107,24 @@ The connections in detail:
 
 **Simplified Flowchart:**
 
+```mermaid
+flowchart TD
+    A["F1 (release)"] --> B["Set SR1<br/>Cylinder 1 extends"]
+    C["F2 (press)"] --> D["Reset SR1<br/>Cylinder 1 retracts"]
+    C --> E["Set SR2<br/>Cylinder 2 extends"]
+    F["F3 (press)"] --> G["Reset SR2<br/>Cylinder 2 retracts"]
+```
 
-F1 (release)  → Set SR1 (Cyl1 retracted)
-F2 (press)    → Reset SR1 (Cyl1 extended) + Set SR2 (Cyl2 retracted)
-F3 (press)    → Reset SR2 (Cyl2 extended)
+As a state diagram, the mirror sequence looks like this:
+
+```mermaid
+stateDiagram-v2
+    state "Cylinder 1 extended" as cyl1_out
+    state "Cylinder 2 extended" as cyl2_out
+    [*] --> cyl1_out: F1 (release)
+    cyl1_out --> cyl2_out: F2 (press)
+    cyl2_out --> [*]: F3 (press)
+```
 
 
 **Learning Objectives:**

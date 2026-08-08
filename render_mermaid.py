@@ -5,7 +5,10 @@ from pathlib import Path
 
 
 FENCE = "```"
-MERMAID_BLOCK = re.compile(r"(?ms)^```mermaid\s*\n(.*?)^```\s*$")
+# Robust against both LF and CRLF line endings.
+MERMAID_BLOCK = re.compile(
+    r"(?ms)^```mermaid\s*$[ \t]*\r?\n(.*?)^```\s*$[ \t]*\r?\n"
+)
 
 
 def render_language(language):

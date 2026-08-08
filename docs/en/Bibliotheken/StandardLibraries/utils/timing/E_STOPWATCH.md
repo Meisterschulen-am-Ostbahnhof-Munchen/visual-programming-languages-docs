@@ -67,6 +67,7 @@ Trig --> RESET: RESET
 STOP --> START
 RESET --> START
 START --> RESET: RESET
+```
 
 ## Application Scenarios
 - **Performance Measurement**: Algorithm Runtimes

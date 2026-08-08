@@ -14,6 +14,7 @@ flowchart TD
     ANY_ELEMENTARY --> ANY_BIT["ANY_BIT (Bit string types)"]
     ANY_ELEMENTARY --> ANY_CHARS["ANY_CHARS (Character types)"]
     ANY_ELEMENTARY --> ANY_DATE["ANY_DATE (Date types)"]
+```
 
 
 ## Group Descriptions
@@ -45,6 +46,7 @@ flowchart TD
     ANY_SIGNED --> LINT
     ANY_MAG_DURATION --> TIME
     ANY_MAG_DURATION --> LTIME
+```
 
 
 * **ANY_NUM**: Numeric types (integers and floating-point numbers).
@@ -60,6 +62,7 @@ flowchart TD
     ANY_BIT --> WORD
     ANY_BIT --> DWORD
     ANY_BIT --> LWORD
+```
 
 
 #### ANY_CHARS (Character Types)
@@ -73,6 +76,7 @@ flowchart TD
     ANY_STRING --> WSTRING
     ANY_CHAR --> CHAR
     ANY_CHAR --> WCHAR
+```
 
 
 #### ANY_DATE (Date Types)
@@ -85,6 +89,7 @@ flowchart TD
     ANY_DATE --> DATE
     ANY_DATE --> TIME_OF_DAY
     ANY_DATE --> LTOD
+```
 
 
 ### ANY_DERIVED

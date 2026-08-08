@@ -11,6 +11,31 @@ MERMAID_BLOCK = re.compile(
 )
 
 
+def _mmdc_cmd(source_path: Path, image_path: Path) -> list[str]:
+    """Return the mermaid-cli command, preferring a global mmdc and
+    falling back to npx (handling the Windows .cmd wrapper)."""
+    import shutil
+    if shutil.which("mmdc"):
+        return [
+            "mmdc",
+            "-i", str(source_path),
+            "-o", str(image_path),
+            "-p", "puppeteer-config.json",
+            "--quiet",
+        ]
+    npx = shutil.which("npx") or shutil.which("npx.cmd") or "npx"
+    cmd = [
+        npx, "@mermaid-js/mermaid-cli",
+        "-i", str(source_path),
+        "-o", str(image_path),
+        "-p", "puppeteer-config.json",
+        "--quiet",
+    ]
+    if npx.lower().endswith(".cmd"):
+        cmd = ["cmd", "/c"] + cmd
+    return cmd
+
+
 def render_language(language):
     root = Path("docs") / language
     combined = root / "combined.md"
@@ -26,16 +51,7 @@ def render_language(language):
         image_path = output_dir / f"mermaid-{counter:04d}.png"
         source_path.write_text(match.group(1).strip() + "\n", encoding="utf-8")
         subprocess.run(
-            [
-                "mmdc",
-                "-i",
-                str(source_path),
-                "-o",
-                str(image_path),
-                "-p",
-                "puppeteer-config.json",
-                "--quiet",
-            ],
+            _mmdc_cmd(source_path, image_path),
             check=True,
         )
         source_path.unlink()

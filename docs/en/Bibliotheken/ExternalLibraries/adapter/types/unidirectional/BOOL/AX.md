@@ -21,7 +21,6 @@
 | :--- | :--- | :--- |
 | D1 | BOOL | Indication (or Request) Data from Plug |
 
-## 🛠️ Related exercises
 * [Uebung_003b2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_AX.md)
 * [Uebung_003b3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_AX.md)
 * [Uebung_003c_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_AX.md)
@@ -46,5 +45,8 @@
 
 ---
 
-### 🌐 Matching topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
+### Data
+## 🛠️ Zugehörige Übungen
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

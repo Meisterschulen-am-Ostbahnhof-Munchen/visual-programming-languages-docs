@@ -42,11 +42,9 @@ The function block has a single execution state (`REQ`). When the event input `R
 
 1. **Read** the current value of the InOut variable `IN`.
 
-### **Adapter**
 
 None.
 
-## Functionality
 
 The function block has a single execution state (`REQ`). 2. **Copy** this value to the output variable `OUT`.
 

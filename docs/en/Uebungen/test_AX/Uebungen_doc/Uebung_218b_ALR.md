@@ -2,13 +2,13 @@
 ![Uebung_218b_ALR_network](./Uebung_218b_ALR_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise implements a **down counter (CTD)** according to IEC 61131-3 using an **AUDI_FB_CTD** (adapter version, data type **UDINT**). The current counter value is output to **PHYSA_LREAL** via a terminal. Additionally, a digital output (**Output_Q1**) is provided, indicating the counter's status (Q).
 The implementation also allows **negative count values** – a corresponding message on the network indicates this. To reduce the event rate during rapid counting pulses, an **AX_D_FF** (flip-flop) could optionally be implemented.
 ---
 
-## Function Blocks (FBs) Used
 
+## Function Blocks Used (FBs)
+## Introduction
 ### Sub-Block: `AUDI_FB_CTD`
 - **Type**: `adapter::iec61131::counters::AUDI_FB_CTD`
 - **Internal FBs Used** (no other internal FBs)
@@ -111,7 +111,6 @@ The block receives the converted LREAL value and outputs it to the terminal (Out
 
 ---
 
-## Program Flow and Connections
 
 1. **Initialization**
 
@@ -143,9 +142,7 @@ After the system starts, the function block `Input_LD` is initialized. This gene
 
 ---
 
-## Summary
 
-# SummaryExercise 218b of the ALR (**Exercise_218b_ALR**) teaches how to use an IEC 61131-3 down counter in the 4diac IDE. The counter is controlled via two digital inputs (counting and loading) and outputs its status and current value. A key feature is the conversion of the UDINT counter value into an LREAL terminal output, allowing negative numbers to be displayed.
 
 `` **Learning Objectives:**
 
@@ -159,7 +156,10 @@ After the system starts, the function block `Input_LD` is initialized. This gene
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

@@ -1,22 +1,22 @@
-# Practice Exercises
-## The exercises build upon each other, so it is recommended to complete them in the given order.
+## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten.
+# Übungsaufgaben
 #### Inputs IX / QX (all momentary)
-#### Exercise Simple Connection I
 Connect input I1 to output Q1 so that pressing I1 activates the actuator at Q1.
-#### Exercise Simple Connection II
 
+#### Aufgabe Einfache Verbindung II
+#### Aufgabe Einfache Verbindung I
 Connect I1 to outputs Q1 and Q3.
 
 ### Logic
 
-#### Exercise
 
+#### Aufgabe
 A rocket launch pad (Q1) should only launch when buttons I1, I2, and I3 are pressed simultaneously.
 
 ### Flip-Flops I
 
-#### Exercise Click
 
+#### Aufgabe Klick
 Build a program that turns on the light at Q1 with one click and off again with another click.
 
 ### Rendezvous and Flip-Flop
@@ -25,18 +25,18 @@ Build a program that turns on the light at Q1 with one click and off again with 
 
 Another rocket launcher should only launch if button I3 is held down, and then I1 and I2 are clicked sequentially. If I3 is released, pressing I3 again should require clicking I1 and I2 once more.
 
-#### Task: Sequence
 
+#### Aufgabe Reihenfolge
 Test the program: If you press I1 and I2 first, and then press and hold I3, the rocket should not launch. Correct the program so that this works.
 
 #### Flip-Flops II
 
-#### Task: A Crazy Designer
 
 A crazy designer wants as few and as small buttons as possible in his apartment. Create a program where the room light (Q1) turns on with a single click and off with a double click.
 
-#### Task: Desk Lamp
 
+#### Aufgabe Schreibtischlampe
+#### Aufgabe Ein verrückter Designer
 The designer has bought a desk lamp but doesn't want a separate switch for it. Extend the program so that the desk lamp (Q4) turns on with a long press. A double-click should turn off both the room light and the desk lamp.
 
 ### Flip-Flops and Equals
@@ -56,14 +56,13 @@ A freight elevator has two functions: Up (Q1) and Down (Q2). Three buttons contr
 #### Task: Flip-Flops and E Functions
 
 Recreate the example "Step
-# - Use 4diac Locally (Blinking Tutorial)"
 
-#### Task: Turn Signals
 
 Turn Signals: Inputs I1 and I2 should be the turn signals for left and right. (Assume the buttons are latching, like on a tractor.)
 
-#### Task: Hazard Warning Lights
 
+#### Aufgabe Warnblinker
+#### Aufgabe Fahrtrichtungsanzeiger
 Turn Signals: Input I3 should also be the hazard warning lights.
 
 ### Flip-Flops and LED Strips
@@ -74,7 +73,8 @@ Build a program where the LED lights up red when you press the red button and bl
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

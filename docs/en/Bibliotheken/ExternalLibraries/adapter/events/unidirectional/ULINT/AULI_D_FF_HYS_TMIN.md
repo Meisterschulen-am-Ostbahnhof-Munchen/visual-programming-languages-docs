@@ -2,33 +2,33 @@
 ![AULI_D_FF_HYS_TMIN](./AULI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block **AULI_D_FF_HYS_TMIN** implements a clock-edge-triggered D flip-flop (data latch) with hysteresis and a minimum dwell time between successive events. It is typically used to smooth noisy or fluctuating input signals and suppress unwanted rapid switching. The block communicates via standardized unidirectional adapters.
-## Interface Structure
 
-### **Event Inputs**
 
 | Event | Type | Comment |
 |----------|-----|-----------|
 | `INIT` | `EInit` | Initialization request. Sets the parameters hysteresis and minimum time. |
 
-### **Event Outputs**
 
 | Event | Type | Comment |
 |----------|-----|-----------|
 | `INITO` | `EInit` | Confirmation of successful initialization. |
 
-### **Data Inputs**
 
 | Variable | Type | Comment |
 |----------|-----|-----------|
 | `HYSTERESIS` | `ULINT` | Hysteresis band as an unsigned integer. The output only changes its value when the input exceeds the band. |
 | `Tmin` | `TIME` | Minimum time between two triggered events at the output. Prevents excessively fast switching. |
 
-### **Data Outputs**
 
 No direct data outputs. The latched information is provided via the `Q` adapter.
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
@@ -42,7 +42,6 @@ The function block internally uses the function block `E_D_FF_ANY_HYS_TMIN`, whi
 
 1. **Initialization:** An event `INIT` transfers the parameters `HYSTERESIS` and `Tmin` into the internal function block.
 
-# Functionality 2. **Clock Edge Control:** The event `I.E1` (clock input) causes the current data value `I.D1` to be adopted – provided the hysteresis and timing conditions are met.
 
 3. **Hysteresis:** The new output value is only adopted if the difference between the current input `D1` and the last valid output exceeds the hysteresis value.
 
@@ -50,13 +49,11 @@ The function block internally uses the function block `E_D_FF_ANY_HYS_TMIN`, whi
 
 5. **Output:** On a valid edge, the new value is output via `Q.D1`, and an event is generated on `Q.E1`.
 
-## Technical Features
 - **Hysteresis:** Suppresses noise or small fluctuations at the input by defining a deadband. The output only changes in the case of significant deviations.
 - **Minimum Dwell Time (`Tmin`):** Enforces a pause between successive output events. This ensures compliance with minimum switching times due to mechanical or system requirements.
 - **Adapter Interface:** The use of a unidirectional adapter type enables loose coupling and reusability in different environments.
 - **Internal Function Block:** The actual logic is outsourced to a typed function block, which improves testability and maintainability.
 
-## State Overview
 
 The function block does not have its own explicit states, but delegates to the internal function block. However, the essential behaviors can be described as follows:
 
@@ -67,12 +64,10 @@ The function block does not have its own explicit states, but delegates to the i
 | **Lock (Tmin active)** | After an output event, any further takeover is blocked for the duration `Tmin`. |
 | **Takeover (on valid edge)** | If the hysteresis is exceeded and no lock is present, the current input value is adopted and output. |
 
-## Application Scenarios
 - **Sensor Signal Debouncing:** A push button or proximity switch delivers a fluctuating signal. Hysteresis and a minimum time ensure a clean switching edge.
 - **Data Logic with Signal Conditioning:** In automation technology, where a digital input value can be acquired but distorted by noise or bounce.
 - **Time-Controlled Actuators:** If an actuator requires a minimum switching time (e.g., valves), `Tmin` prevents excessively fast actuation.
 
-## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
 |----------|---------------|
@@ -81,6 +76,11 @@ The function block does not have its own explicit states, but delegates to the i
 **D-FF with Tmin** | Minimum dwell time only, without hysteresis – can still switch quickly in noisy environments. |
 **AULI_D_FF_HYS_TMIN** | Combines hysteresis and minimum dwell time – more robust against noise and protects downstream components from excessively fast switching. |
 
-## Conclusion
 
 The **AULI_D_FF_HYS_TMIN** offers a reliable combination of hysteresis and time limiting for clock-controlled signal takeovers. It is particularly suitable for industrial control systems where interference must be suppressed and actuators protected. The modular adapter interface facilitates integration into existing IEC 61499 applications.
+
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

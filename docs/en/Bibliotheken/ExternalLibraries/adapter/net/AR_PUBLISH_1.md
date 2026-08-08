@@ -4,7 +4,6 @@
 
 * * * * * * * * * *
 
-## Introduction
 The **AR_PUBLISH_1** function block is a composite function block that encapsulates the network-based `PUBLISH_1` function block from the IEC 61499 standard library and maps its interface to a unidirectional **AR adapter**. A **REAL** value present at the adapter socket `IN` is buffered via an internal D flip-flop (E_D_FF_ANY) and then sent to all associated `SUBSCRIBE_1` receivers via the configured publish channel.
 
 
@@ -13,28 +12,30 @@ The **AR_PUBLISH_1** function block is a composite function block that encapsula
 
 ** ## Interface Structure
 
-### **Event Inputs**
 
 - **INIT** (EInit): Initialization event, associated with `QI` and `ID`
 
-### **Event Outputs**
 
 - **INITO** (EInit): Initialization confirmation, associated with `QO` and `STATUS`
 
 - **CNF** (Event): Confirmation that data has been sent, associated with `QO` and `STATUS`
 
-### **Data Inputs**
 
 - **QI** (BOOL): Qualifier input, activates the publish service
 
 - **ID** (WSTRING): Publish channel identifier
 
-### **Data Outputs**
 
 - **QO** (BOOL): Qualifier output, block execution status
 
 - **STATUS** (WSTRING): Status information as a Unicode string
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
@@ -56,7 +57,6 @@ The **AR_PUBLISH_1** function block is a composite function block that encapsula
 
 5. After successful transmission, the `PUBLISH_1` block confirms with `CNF`, which is then sent out.
 
-## Technical Features
 
 - **Buffering with D-Flip-Flop**: The REAL value to be transmitted is buffered via an internal `iec61499::events::E_D_FF_ANY`. This prevents a changing input value during processing from interfering with the transmission.
 
@@ -65,7 +65,6 @@ The **AR_PUBLISH_1** function block is a composite function block that encapsula
 - **Encapsulation**: The original event/data interface of `PUBLISH_1` (including `REQ`/`SD_1`) is moved internally; only the AR adapter interface is visible externally.
 
 
-## State Overview
 
 1. **Not Initialized**: The block is waiting for the `INIT` event.
 
@@ -73,7 +72,6 @@ The **AR_PUBLISH_1** function block is a composite function block that encapsula
 
 3. **Send Active**: An event arriving at the AR socket buffers the value and triggers transmission via the internal `PUBLISH_1` block.
 
-## Application Scenarios
 
 - **Network Coupling in AR Applications**: Sending REAL signals (e.g., switching commands or status bits) from the adapter-based logic to remote receivers via publish/subscribe.
 
@@ -81,7 +79,6 @@ The **AR_PUBLISH_1** function block is a composite function block that encapsula
 
 - **Modular Control Architectures**: Integration of distributed communication into libraries that consistently rely on AR adapters.
 
-## Comparison with Similar Blocks
 
 - **PUBLISH_1**: The standard block exposes its interface as events/variables (`REQ`, `SD_1`, ...). **AR_PUBLISH_1** encapsulates this block, buffers the value with a D flip-flop (`E_D_FF_ANY`), and only provides the AR adapter – making the interface significantly more compact and integrable into adapter networks.
 
@@ -94,3 +91,8 @@ The **AR_PUBLISH_1** function block is a composite function block that encapsula
 
 
 **AR_PUBLISH_1** combines the publish/subscribe communication of the standard function block `PUBLISH_1` with adapter-based REAL processing.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

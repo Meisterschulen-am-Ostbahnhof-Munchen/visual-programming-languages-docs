@@ -56,7 +56,6 @@ The connections in the FBNetwork are:
 - Event: `AUS_IN.D1` → `Convert.IN`
 - Data: `Convert.OUT` → `AS_OUT.D1`
 
-## Technical Features
 - **Adapter-Based:** The module functions as a pure adapter converter and can be seamlessly integrated into existing adapter-oriented systems.
 - Event: `AUS_IN.E1` → `Convert.IN`
 - Event: `Convert.OUT` → `AS_OUT.D1`

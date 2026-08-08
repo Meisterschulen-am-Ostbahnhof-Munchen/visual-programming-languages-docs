@@ -3,26 +3,26 @@
 ![STRING_AIS_AX_SEL_AIS](./STRING_AIS_AX_SEL_AIS.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block `STRING_AIS_AX_SEL_AIS` serves as a binary selector (multiplexer) for strings (`STRING`). Based on the control signal of a gate adapter, it allows selection between a local string input and a string input fed via an adapter, and forwards the result to an output adapter. The block combines the classic selection logic of IEC 61131-3 with the event-driven, adapter-based architecture of IEC 61499.
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI0**: Triggers the acquisition and processing of the local string input `IN0`.
 
 
-### **Event Outputs**
 
 *(No direct event outputs at the block level are available. Event forwarding is encapsulated via the output adapter `OUT`.)*
 
-### **Data Inputs**
 * **IN0** (STRING): Local, selectable string value.
 
-### **Data Outputs**
 *(No direct data outputs at the block level are available. Data transmission is encapsulated via the output adapter `OUT`.)*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 * **Plugs (Ports / Outputs):**
 
@@ -48,10 +48,8 @@ The module is internally based on a structured network of standard function bloc
 
 3. The selected string is transferred to the output adapter `OUT.D1` via an internal move operation, and the output event `OUT.E1` is triggered simultaneously.
 
-## Technical Features
 * **Event Synchronization**: The use of edge- and event-triggered flip-flops in the internal network ensures that data changes at the asynchronous inputs are always processed consistently and without data loss ("race conditions"). * **Reduced Wiring**: By consistently using adapters (`AIS` and `AX`), the number of visible connection lines in the higher-level system diagram is minimized, significantly improving the readability of complex applications.
 
-## State Overview
 Since this is a composite function block (FBNetwork), its behavior is determined by the internal data and event flow. The following table shows the behavior for various input combinations:
 
 | Triggering Event | State Selector (`G.D1`) | Value Forwarded to `OUT.D1` | Output Event |
@@ -71,7 +69,6 @@ Since this is a composite function block (FBNetwork), its behavior is determined
 | `G.E1` | `TRUE` | Current value of `IN1.D1` | `OUT.E1` |
 
 
-## Application Scenarios
 
 * **Recipe and Parameter Switching**: Selection between a locally defined standard parameter set (string via `IN0`) and a parameter set dynamically loaded via a network or HMI (via adapter `IN1`).
 
@@ -86,5 +83,10 @@ Since this is a composite function block (FBNetwork), its behavior is determined
 
 * **Classic Multiplexers (without adapters)**: These require separate connections for data and events for each channel. This component simplifies integration by bundling signals in the adapters `AIS` and `AX`.
 
-## Conclusion
 The `STRING_AIS_AX_SEL_AIS` is a useful auxiliary component for structured software development in the 4diac IDE. It offers a clean, event-driven way to control string data streams and ensures a tidy and maintainable application design through the use of standardized adapters.
+## Functionality
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

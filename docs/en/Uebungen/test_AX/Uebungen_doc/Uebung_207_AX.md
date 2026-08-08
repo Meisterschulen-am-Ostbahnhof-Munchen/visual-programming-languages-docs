@@ -21,7 +21,6 @@ DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output, parameteriz
 
 This exercise does not use any user-defined sub-function blocks – all function blocks are from the `logiBUS` libraries (Digital Input/Output and Signal Processing).
 
-### Sub-function blocks (no custom sub-applications)
 
 This exercise does not use any user-defined sub-function blocks – all function blocks are from the `logiBUS` libraries (Digital Input/Output and Signal Processing).
 ## Program Flow and Connections

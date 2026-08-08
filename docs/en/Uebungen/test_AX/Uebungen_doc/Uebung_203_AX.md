@@ -2,9 +2,7 @@
 ![Uebung_203_AX_network](./Uebung_203_AX_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the use of an **interlock function block with priority switching** (ILOCK_SWITCH_AX). Two digital inputs (Input_I1, Input_I2) control two digital outputs (Output_Q1, Output_Q2) via an adapter-based interlock block. The interlock ensures that only one output can be active at a time – in the event of simultaneous input signals, a defined priority mechanism takes effect. Communication with the peripherals is via logiBUS adapter interfaces.
-## Function Blocks (FBs) Used
 
 The subapp contains five function blocks from the logiBUS library:
 
@@ -28,7 +26,6 @@ The subapp contains five function blocks from the logiBUS library:
 - Parameters: `QI = TRUE`, `Output = Output_Q2`
 - Outputs the signal to the logiBUS output channel Output_Q2.
 
-## Program Flow and Connections
 
 The following adapter connection structure underlies the flow:
 
@@ -55,12 +52,15 @@ When **Input_I1** is active, **Output_Q1** is set. When **Input_I2** is active, 
 - Prerequisite: A functioning logiBUS project with free input/output channels (Input_I1, Input_I2, Output_Q1, Output_Q2).
 - Start the exercise by integrating the sub-app into your system and wiring the terminals accordingly.
 
-## Summary
 Exercise **Exercise_203_AX** demonstrates the use of a **priority-controlled interlock** via adapter interfaces. Two digital inputs are processed by the function block `ILOCK_SWITCH_AX`, which applies a defined priority (here: UP before DOWN) when signals are received simultaneously and switches the outputs accordingly. The implementation is carried out entirely with logiBUS I/O function blocks and shows a typical interlock circuit frequently required in automation technology.
 
-# Summary ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Introduction
+## Function Blocks Used (FBs)
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

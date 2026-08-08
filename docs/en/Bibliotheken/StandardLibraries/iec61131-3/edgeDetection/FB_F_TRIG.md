@@ -22,10 +22,9 @@ The function block `FB_F_TRIG` is used to detect the falling edge of a Boolean s
 ### **Adapters**
 - No adapters available.
 
-### **Adapters**
 
 #
-## ## Functionality
+## #
 
 The function block stores the previous state of the `CLK` signal in an internal variable `MEM`. On each call via the `REQ` event, it checks whether the current `CLK` signal is `FALSE` and whether the previous state (`MEM`) was `TRUE`. If so, `Q` is set to `TRUE`; otherwise, it is set to `FALSE`. The current state of `CLK` is then stored in `MEM`.
 

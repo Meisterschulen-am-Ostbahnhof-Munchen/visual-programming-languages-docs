@@ -4,3 +4,4 @@ DataPanel Modules with low IO density DO Struct
 | Name | Type | Initial Value |
 | :--- | :--- | :--- |
 | Pin | USINT | 255 |
+## Structure

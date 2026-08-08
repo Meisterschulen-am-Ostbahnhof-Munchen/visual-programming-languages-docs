@@ -15,7 +15,6 @@ The function block `SET_AT_INDEX` is used to set the value of an element in an a
 * **IN_ARRAY** (ANY): The input array whose value is to be modified at a specific index. The data type `ANY` allows its use with various array types.
 * **INDEX** (UINT): The zero-based index of the element in the array whose value is to be set.
 
-### **Data Inputs**
 * **IN_ARRAY** (ANY): The input array whose value is to be modified at a specific index. * **VALUE** (ANY): The value to be set at the specified position in the array. The data type must match the data type of `IN_ARRAY`.
 
 ### **Data Outputs**
@@ -31,7 +30,6 @@ The `SET_AT_INDEX` function block waits for a `REQ` event. As soon as this event
 ## Technical Features
 * **Data Type Flexibility:** By using `ANY` for the array and value parameters, the function block is flexible with respect to the data types it can process. However, it is crucial that the data type of `VALUE` exactly matches the element data type of `IN_ARRAY` to avoid runtime errors.
 
-## Technical Features
 * **Data Type Flexibility:** By using `ANY` for the array and value parameters, the function block is flexible with respect to the data types it can process. However, it is crucial that the data type of `VALUE` exactly matches the element data type of `IN_ARRAY` to avoid runtime errors.
 * **Index Type:** The `INDEX` block is of type `UINT` (Unsigned Integer), meaning that only positive indices are allowed.
 * **Zero-Based Indexing:** The index starts at 0 for the first element of the array.

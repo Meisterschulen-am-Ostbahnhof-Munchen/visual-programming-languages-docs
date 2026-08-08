@@ -34,7 +34,6 @@ No dedicated data outputs.
 
 The converted result is provided via the output adapter (see section **Adapters**).
 
-### **Data Outputs**
 
 No dedicated data outputs.
 

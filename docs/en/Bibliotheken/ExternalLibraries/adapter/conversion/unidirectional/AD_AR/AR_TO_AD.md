@@ -32,12 +32,11 @@ The function block `AR_TO_AD` serves as a composite function block (FB) for conv
 ### **Adapters**
 The FB has a **socket** of type `adapter::types::unidirectional::AR` (labeled `AR_IN`) and a **plug** of type `adapter::types::unidirectional::AD` (labeled `AD_OUT`). The actual input and output signals are accessible via the event and data pins of these adapters.
 
-### **Adapters**
 
 The FB has a **socket** of type `adapter::types::unidirectional::AR` (labeled `AR_IN`) and a **plug** of type `adapter::types::unidirectional::AD` (labeled `AD_OUT`). The actual input and output signals are accessible via the event and data pins of these adapters.
 
 #
-## **Adapters** ## Functionality
+## **Adapters** #
 
 1. The function block (FB) waits for an event at the event input `AR_IN.E1`.
 

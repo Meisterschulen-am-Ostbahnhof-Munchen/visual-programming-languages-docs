@@ -17,7 +17,6 @@ The subapplication `Uebung_020f2_AX.SUB` uses a `E_CYCLE` function block to gene
 
 * **`AX_FB_TP`**: The pulse timer with adapter interfaces. It reacts to the rising edge at the input and holds the output TRUE for the time `PT`.
 
-### Function Blocks (FBs)
 
 ![Uebung_020f2_AX_network](./Uebung_020f2_AX_network.svg)
 

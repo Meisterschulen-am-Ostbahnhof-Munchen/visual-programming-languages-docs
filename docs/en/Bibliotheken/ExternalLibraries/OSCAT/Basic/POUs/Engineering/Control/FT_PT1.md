@@ -2,6 +2,7 @@
 #FT_PT1
 Low pass filter (PT1)
 FT_PT1 is a low pass filter with a programmable time T and factor K.
+# FT_PT1
 ## Interface
 ### Event inputs
 

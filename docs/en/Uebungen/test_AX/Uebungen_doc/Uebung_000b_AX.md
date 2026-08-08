@@ -2,14 +2,14 @@
 ![Uebung_000b_AX_network](./Uebung_000b_AX_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the use of **adapter function blocks** to implement a logical AND operation. Within the sub-app, Boolean values are exchanged between conversion blocks and a logical AND block via adapter connections. You will learn the basic structure of adapters and how they interact within a sub-app.
 The exercise represents a simple AND logic operation where two constant **TRUE** values are combined using the `AX_AND_2` function block. The result is output via another converter.
 
-## Function Blocks Used (FBs)
 
 The sub-app consists of three internal function blocks:
 
+## Function Blocks Used (FBs)
+## Introduction
 ### AX_BOOL_TO_X (instantiated twice)
 - **Type**: `adapter::conversion::unidirectional::AX_BOOL_TO_X`
 - **Parameters**:
@@ -34,7 +34,6 @@ The sub-app consists of three internal function blocks:
 - **Connections**:
 - Input (`AX_IN`) of `AX_AND_2.OUT`
 
-## Program Flow and Connections
 
 The sub-app has no external interfaces (no inputs/outputs at the sub-app level). All logic is hard-wired internally:
 
@@ -60,15 +59,16 @@ Since all input values are `TRUE`, the output of the `AX_X_TO_BOOL` block is alw
 
 **Implementation**: The exercise can be tested in a simulation without external signals – the output remains constant TRUE. To process dynamic values, the constant `AX_BOOL_TO_X` function blocks would need to be replaced with adapter inputs.
 
-## Summary
 
 The exercise `Uebung_000b_AX` demonstrates a simple AND logic function implemented exclusively with adapter function blocks. It illustrates the necessity of data type conversions (`AX_BOOL_TO_X` and `AX_X_TO_BOOL`) and the direct connection of adapter outputs to adapter inputs. By using constant values, the fundamental behavior is demonstrated, which can later be extended to include dynamic signals.
 
-# Summary
 
 The exercise `Uebung_000b_AX` demonstrates a simple AND logic function implemented entirely with adapter function blocks. ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

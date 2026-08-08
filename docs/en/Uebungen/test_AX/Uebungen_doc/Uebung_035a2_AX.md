@@ -3,28 +3,23 @@ Here is the documentation for exercise `Uebung_035a2_AX` based on the provided d
 ![Uebung_035a2_AX_network](./Uebung_035a2_AX_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise implements a **traffic light system based on the Austrian model (AX)** using the IEC 61499 standard. Unlike the German traffic light system (red -> red/yellow -> green -> yellow -> red), the Austrian sequence includes a **flashing green phase** before switching to yellow.
 
 Control is achieved via a timed sequence with 5 steps (`sequence_T_05_loop_AX`), where the different phases are logically linked to the outputs for red, yellow, and green.
 
-## Function Blocks (FBs) Used
 
-### Main Control Block: `Seq`
 
 This block controls the timing of the traffic light phases.
 
 - **Type**: `logiBUS::utils::sequence::timed::sequence_T_05_loop_AX`
 - **Functionality**: It cycles through 5 states (S1 to S5). The duration of each state is defined via parameters.
 
-# - **Configured Parameters**:
 - `DT_S1_S2` = `T#6s` (Phase 1: Red)
 - `DT_S2_S3` = `T#2s` (Phase 2: Red + Yellow)
 - `DT_S3_S4` = `T#6s` (Phase 3: Green)
 - `DT_S4_S5` = `T#4s` (Phase 4: Flashing Green)
 - `DT_S5_S1` = `T#2s` (Phase 5: Yellow)
 
-### Input and Output Blocks
 - **`DigitalInput_CLK_I1`** (`logiBUS::io::DI::logiBUS_IE`):
 - Serves as the start signal for the sequence.
 - Parameter: Responds to `BUTTON_SINGLE_CLICK` at input `Input_I1`.
@@ -32,7 +27,6 @@ This block controls the timing of the traffic light phases.
 - Represent the physical traffic light signals (red, yellow, green).
 - Linked to `Output_Q1`, `Output_Q2`, `Output_Q3`.
 
-### Logic and Auxiliary Blocks
 - **`OR_Red`, `OR_Yellow`, `OR_Green`** (`adapter::booleanOperators::AX_OR_2`):
 - OR gates that combine signals from different sequence steps (e.g., yellow lights up alone in phase 5, but also together with red in phase 2).
 - **`AX_SPLIT_2`** (`adapter::events::unidirectional::AX_SPLIT_2`):
@@ -46,7 +40,6 @@ This block controls the timing of the traffic light phases.
 - Parameter `N` = `4` (number of pulses).
 - **`AX_T_FF`** (`adapter::events::unidirectional::AX_T_FF`): Toggle flip-flop that switches the output (blinking) based on pulses from `E_TRAIN`.
 
-## Program Flow and Connections
 
 The program is started by clicking the button (`Input_I1`), which triggers the event `START_S1` in the sequence function block `Seq`. The sequence is as follows:
 
@@ -81,6 +74,13 @@ The program is started by clicking the button (`Input_I1`), which triggers the e
 
 After Phase 5, a cycle is complete. Depending on the internal implementation of the `sequence_T_05_loop_AX` block, the sequence restarts or waits for a new input signal.
 
-## Summary
 
 The exercise `Uebung_035a2_AX` demonstrates a complex traffic light control system with a specific country variant (Austria). Particular attention is paid to the use of adapter modules (`AX_SPLIT`, `AX_OR`) for signal distribution and the construction of a flasher unit using `E_TRAIN` and `AX_T_FF` to implement the "green flashing" before the yellow phase.
+
+## Introduction
+## Function Blocks Used (FBs)
+### Haupt-Steuerungsbaustein: `Seq`
+### Ein- und Ausgabebausteine
+### Logik- und Hilfsbausteine
+## Program Flow and Connections
+## Summary

@@ -21,7 +21,6 @@ The function block `F_BOOL_TO_DWORD` converts a Boolean value (`BOOL`) into a 32
 ### **Adapters**
 - No adapters are available.
 
-### **Adapters**
 
 **
 ## Functionality

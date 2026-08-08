@@ -49,7 +49,6 @@ If `CV >= PV` is the current value, the output `Q` is set to `TRUE`; otherwise, 
 ## Technical Features
 - **Event-driven**: This function block operates exclusively based on events (`CU`, `R`).
 
-## Technical Features
 - **Event-driven**: This function block operates exclusively based on events (`CU`, `R`).
 - **Overflow Protection**: The counter stops when the maximum value for `UINT` (65535) is reached to prevent an overflow.
 - **PV at Each Count Step**: The limit value `PV` is linked to the `CU` event, meaning it can potentially be changed at each count step.

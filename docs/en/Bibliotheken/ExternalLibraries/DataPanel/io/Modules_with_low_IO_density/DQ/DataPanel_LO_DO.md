@@ -23,11 +23,10 @@ DataPanel_LO_DO is a global constant definition for low I/O density DataPanel mo
 ## Functionality
 The global constant DataPanel_LO_DO defines a collection of structured constants of type `DataPanel_LO_DO_S`, representing digital output channels of a low-I/O-density DataPanel module. Each constant contains a pin assignment for specific output channels.
 
-### **Adapters**
 *Not present - This is a global constant definition*
 
 #
-# Functionality ## Technical Features
+# Functionality #
 - **Data Type**: Uses the structured data type `DataPanel_LO_DO_S`
 - **Pin Mapping**: Defines 8 digital output channels (1A-4B) with consecutive pin numbers 1-8
 - **Error Handling**: Includes a special `Invalid` constant with pin value 255 for invalid states

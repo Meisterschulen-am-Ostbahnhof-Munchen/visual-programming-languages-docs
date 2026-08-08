@@ -49,7 +49,6 @@ Since this is a static, constant definition, there is no state machine or mutabl
 ## Conclusion
 The global constant dataset `CommunicationPartners` is a simple yet useful auxiliary construct for developing ISOBUS-enabled controllers in 4diac. It promotes the principles of "Don't Repeat Yourself" (DRY) and centralized configuration management by defining the frequently used global ISOBUS address in a single, easily visible location. Its use reduces potential sources of error and facilitates future network configuration adjustments.
 
-## Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

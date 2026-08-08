@@ -3,23 +3,23 @@
 ![AR_MUL_4](./AR_MUL_4.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block `AR_MUL_4` is a generic arithmetic block used to multiply four input values. It is based on an adapter interface that enables clean encapsulation and structuring of data and associated events. Due to its generic nature (`GEN_AR_MUL`), the block can flexibly adapt to various numeric data types.
 
-## Interface Structure
 
-### **Event Inputs**
 The block does not have direct, dedicated event inputs. Synchronization and triggering of the calculation are implicit via the connected input adapters.
 
-### **Event Outputs**
 The block does not have direct, dedicated event outputs. Calculation and update events are forwarded via the output adapter.
 
-### **Data Inputs**
 There are no direct data inputs. The values for multiplication are read via the adapter interfaces.
 
-### **Data Outputs**
 There are no direct data outputs. The result of the multiplication is provided via the output adapter.
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 Communication with other function blocks is exclusively via adapters of type `adapter::types::unidirectional::AR`:
 
@@ -45,15 +45,12 @@ $$\text{OUT} = \text{IN1} \times \text{IN2} \times \text{IN3} \times \text{IN4}$
 The result is output via the output adapter `OUT`, along with a corresponding update event.
 
 
-## Technical Features
 * **Generic Behavior:** The attribute `eclipse4diac::core::GenericClassName` with the value `GEN_AR_MUL` makes the function block data type-independent. Depending on the application, it can work with various numeric data types (e.g., `INT`, `REAL`, `LREAL`) supported by the adapter type `AR`.
 
 * **Adapter Coupling:** The use of unidirectional adapters (`AR`) significantly reduces wiring effort in the 4diac IDE, as data and control events are bundled in a single connection.
 
-## State Overview
 Since this is a purely mathematical calculation function block, it is stateless. Each activation directly calculates the current product based on the input adapter values.
 
-## Application Scenarios
 
 * **Signal Scaling:** Calibration or adjustment of sensor values where multiple factors (e.g., base value, gain, correction factor, unit conversion) need to be multiplied.
 
@@ -66,5 +63,9 @@ Since this is a purely mathematical calculation function block, it is stateless.
 
 Compared to conventional IEC 61131-3 `MUL` function blocks, which often only have two inputs and use direct data and event pins, the `AR_MUL_4` offers a significantly cleaner visual representation in the control program by combining four inputs and using adapters. It eliminates the need to cascade multiple multipliers.
 
-## Conclusion
 The `AR_MUL_4` is a practical auxiliary function block for arithmetic operations in the IEC 61499 environment. Through the consistent use of adapters, it significantly contributes to the clarity and modularity of control programs, especially when processing more complex mathematical formulas.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

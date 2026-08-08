@@ -3,29 +3,29 @@
 ![ALR_AX_SEL_ALR](./ALR_AX_SEL_ALR.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block `ALR_AX_SEL_ALR` is used for binary selection between two analog input signals provided by adapters of type `ALR`. This selection is controlled by a selector adapter of type `AX`. The selected signal is passed on to an output adapter of type `ALR`.
 
 The function block is internally based on the IEC 61131-3 selection function `F_SEL` and is optimized for event-driven IEC 61499 architectures.
 
 
-## Interface Structure
 
 Since this component is designed as an adapter coupler, it does not have any classic, direct event or data interfaces at the top level. All communication is handled via sockets (input adapters) and plugs (output adapters).
 
 
-### **Event Inputs**
 *No direct event inputs available.*
 
-### **Event Outputs**
 *No direct event outputs available.*
 
-### **Data Inputs**
 *No direct data inputs available.*
 
-### **Data Outputs**
 *No direct data outputs available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 * **Sockets (Input Interfaces):**
 
@@ -56,14 +56,12 @@ This module implements a software-controlled 1-out-of-2 selection based on adapt
 
 4. **Output Triggering:** Any change to one of the inputs or the selector triggers an update of the output adapter `OUT`, signaled by the event `OUT.E1` and the new data value `OUT.D1`.
 
-## Technical Features
 * **Precise Data Processing (LREAL):** The internal data paths are designed for the data type `LREAL`, enabling lossless transmission of highly accurate analog measurements.
 
 * **Adapter Encapsulation:** The use of standardized adapters (`ALR`, `AX`) eliminates the need for complex individual wiring of data and event pins in the application editor.
 
 * **Event-driven:** The output reacts dynamically and without delay to value changes and triggers at the inputs.
 
-## State Overview
 The behavior of the function block is determined by the data and event flow in the internal network:
 
 | State Selector `G.D1` | Channel Passed | Output Value `OUT.D1` | Output Event `OUT.E1` |
@@ -74,7 +72,6 @@ The behavior of the function block is determined by the data and event flow in t
 
 | `TRUE` | Channel 1 (`IN1`) | Value of `IN1.D1` | Triggered by events on `IN1.E1` or a change in `G` |
 
-## Application Scenarios
 
 * **Sensor Redundancy / Failover:** Switching between a primary sensor (`IN0`) and a backup sensor (`IN1`) in case of failure or signal interference, controlled by a diagnostic signal at `G`.
 
@@ -83,8 +80,12 @@ The behavior of the function block is determined by the data and event flow in t
 
 * **Recipe and Parameter Set Selection:** Dynamic assignment of different analog process parameters based on the current plant state.
 
-## Comparison with Similar Function Blocks
 Compared to a classic IEC 61131-3 `SEL` function block, `ALR_AX_SEL_ALR` completely encapsulates the signal paths in adapter structures. This significantly reduces the visual complexity in 4diac application diagrams, as only structured adapter lines need to be drawn instead of multiple individual connections.
 
-## Conclusion
 The `ALR_AX_SEL_ALR` is a robust and reusable function block for structured signal switching in IEC 61499. Through the consistent use of adapters and the support of high-resolution `LREAL` data, it is ideally suited for modern control concepts in industrial automation.
+## Functionality
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

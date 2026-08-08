@@ -4,13 +4,10 @@ In recent years, there has been a trend in engineering towards using the IEC 614
 ### Interview with Dieter Hess (SPS/IPC/DRIVES 2011)
 Live interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions) at the publish-industry VIP Talk on the RED COUCH.
 
-### Interview with Dieter Hess (SPS/IPC/DRIVES 2011)
 
 Live interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions) at the publish-industry VIP Talk on the RED COUCH.
 
-### Interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions) at the publish-industry VIP Talk on the RED COUCH.
 
-### Interview with Dieter Hess (SPS/IPC/DRIVES 2011)
 ... *Note: Dieter Hess is a critic of IEC 61499.*
 
 * [Trend in Engineering - IEC 61131 versus IEC 61499](https://www.youtube.com/watch?v=Go75w3-HJhw)
@@ -37,13 +34,14 @@ Live interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions)
 ### Alois Zoitl (German)
 * [Alois Zoitl Playlist](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj)
 
-### 4Diac (Other German)
 * [More German-language videos](https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm)
 
+### 4Diac (Andere Deutsch)
 ### MS-MUC Original Productions
 * [Videos from MS-MUC](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW)
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

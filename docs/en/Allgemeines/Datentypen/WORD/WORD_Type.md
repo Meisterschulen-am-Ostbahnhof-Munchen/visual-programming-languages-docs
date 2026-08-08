@@ -1,3 +1,1 @@
 # Data type: WORD
-# Data type: WORD
-# Data type: WORD ...

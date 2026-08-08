@@ -60,7 +60,6 @@ This SubApp checks if the incoming value (of type UINT) is greater than 0. If so
 ## Summary
 Exercise `Uebung_071_AUI` demonstrates a typical agricultural automation task: outputting machine speed to a universal terminal and simultaneously activating a digital output upon movement. All communication connections were implemented using adapters, increasing the reusability and interchangeability of the modules. The use of the sub-app `AX_GT_0_UINT` illustrates how custom, small logic modules can be integrated decentrally into the overall system.
 
-## Summary ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

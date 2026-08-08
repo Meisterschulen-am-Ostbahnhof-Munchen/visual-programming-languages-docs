@@ -4,15 +4,12 @@
 
 * * * * * * * * * *
 
-## Introduction
 
 The function block `E_D_FF_ANY_HYS_TMIN` is a composite function block for IEC 61499-based systems. It implements an edge-triggered D flip-flop (data latch) with integrated threshold hysteresis and a minimum time interval limit (`Tmin`) for outgoing events.
 
 This block is used to filter continuous or high-frequency changes in a numerical input signal. A new output event is only generated if the signal change exceeds the defined hysteresis and a defined minimum time interval has elapsed since the last output event. This effectively prevents so-called "event flooding" in distributed control systems.
 
-## Interface Structure
 
-### **Event Inputs**
 
 | Event | Type | Description | Associated Data |
 
@@ -22,7 +19,6 @@ This block is used to filter continuous or high-frequency changes in a numerical
 
 | **CLK** | Event | Clock signal. When this event occurs, the value at input `D` is evaluated. | `D`, `HYSTERESIS` |
 
-### **Event Outputs**
 
 | Event | Type | Description | Associated Data |
 
@@ -32,7 +28,6 @@ This block is used to filter continuous or high-frequency changes in a numerical
 
 | **EO** | Event | Triggered when a CLK event has caused a valid change to the output value `Q` and the minimum time `Tmin` has elapsed. | `Q` |
 
-### **Data Inputs**
 
 | Variable | Type | Description |
 
@@ -44,7 +39,6 @@ This block is used to filter continuous or high-frequency changes in a numerical
 
 | **Tmin** | TIME | The minimum time interval that must elapse between two consecutive `EO` events. |
 
-### **Data Outputs**
 
 | Variable | Type | Description |
 
@@ -52,6 +46,12 @@ This block is used to filter continuous or high-frequency changes in a numerical
 
 | **Q** | ANY_NUM | The stored and filtered output value (latched value). |
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 This function block does not use any adapters.
@@ -73,13 +73,11 @@ As soon as an event arrives at input `CLK`, the internal module `E_D_FF_ANY_HYS`
 
 The function block `E_TMIN` monitors the forwarding of this event to the output `EO`. It ensures that at least the time interval `Tmin` elapses between two `EO` events. Rapidly successive events are delayed or filtered accordingly to protect the subsequent logic from excessive event load.
 
-## Technical Features
 
 * **Generic Data Types (`ANY_NUM`):** By using the generic data type `ANY_NUM` for `D`, `HYSTERESIS`, and `Q`, the function block is highly reusable and can be used for various numeric types (e.g., `INT`, `REAL`, `LREAL`).
 
 * **Combined Filtering:** The function block combines amplitude filtering (hysteresis) and time filtering (Tmin) in a single component.
 
-## Status Overview
 
 1. **Uninitialized:** The function block is waiting for the event `INIT`.
 
@@ -89,7 +87,6 @@ The function block `E_TMIN` monitors the forwarding of this event to the output 
 
 4. **Value Change Active (Time Delay/Filtering):** A `CLK` event arrives, and the change is large enough. When `Tmin` expires, `Q` is updated and `EO` is immediately output. If `Tmin` is still active, the timer's protection function is activated.
 
-## Application Scenarios
 
 * **Analog Sensor Value Processing:** Attenuation and noise reduction for noisy analog measurements (e.g., temperature, pressure, or fill level).
 
@@ -104,6 +101,10 @@ The function block `E_TMIN` monitors the forwarding of this event to the output 
 
 * **`E_D_FF_ANY_HYS`:** While it does have hysteresis, it offers no protection against rapid, continuous signal changes (e.g., during fast ramps), which would still generate too many events. `E_D_FF_ANY_HYS_TMIN` solves this problem with the integrated `Tmin` component.
 
-## Conclusion
 
 The `E_D_FF_ANY_HYS_TMIN` is an extremely useful component for signal conditioning in industrial environments. It combines value-based filtering with time-based rate limiting. This makes it ideal for stable control architectures where sensor values need to be precisely acquired, but downstream systems must be protected from overload.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

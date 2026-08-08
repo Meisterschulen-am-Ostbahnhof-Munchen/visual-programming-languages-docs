@@ -31,14 +31,12 @@ Not applicable for a data type.
 ## Functionality
 The **ST08X** data type does not have its own inherent "function" in the sense of an algorithm or processing. It merely serves as a container to organize eight Boolean values under a common name. The individual bits can be read and written in other function blocks or program logic using their names (e.g., `ST08X_Variable.X_00`).
 
-### **Adapters**
 Not applicable for a data type.
 
-## Functionality
 The **ST08X** data type does not have an independent "function" in the sense of an algorithm or processing. It merely serves as a container to organize eight Boolean values under a common name. The individual bits can be read and written via their names (e.g., `ST08X_Variable.X_00`).
 
 #
-## ## Technical Features
+## #
 * **Compact Structure**: Combines eight `BOOL` variables into a single logical unit.
 * **Explicit Naming**: Each bit is explicitly named from `X_00` to `X_07`, improving readability and addressing.
 * **No Implicit Conversion**: As a structured data type, it offers type-safe encapsulation of the bits.

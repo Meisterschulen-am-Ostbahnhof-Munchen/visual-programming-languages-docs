@@ -5,7 +5,6 @@ This article describes the basic logiBUS® exercise `Uebung_001_AX`, in which a 
 ![](Uebung_001_AX_Gemini.jpg)
 ![](Uebung_001_AX.png)
 
-## Objective of the Exercise
 
 The main objective of this exercise is to demonstrate the basic principle of direct signal transmission from a physical digital input to a physical digital output. This is achieved using the "Plug and Socket" concept of IEC 61499 via an adapter interface. The logic is quite simple: The state of the output should always correspond to the state of the input.
 
@@ -28,7 +27,6 @@ Two central function blocks are instantiated in the sub-application:
 
 The connection between the two blocks is implemented using the adapter type `AX`. This is a unidirectional interface defined to transmit exactly one event and its corresponding Boolean value.
 
-### Adapter Interface: `AX.adp`
 
 The connection between the two blocks is implemented using the adapter type `AX`. This is a unidirectional interface defined to transmit exactly one event and its corresponding Boolean value. * [cite\_start]**Event `E1`**: An event that signals a change of state[cite: 2].
 
@@ -58,7 +56,6 @@ As a result, the **digital output Q1** reflects the state of the **digital input
 
 -----
 
-## Application Example
 
 This configuration is the simplest form of a control application and often serves as a "Hello World" example for hardware integration in logiBUS®. A practical use case would be a simple **functional test** of the wiring:
 
@@ -66,3 +63,5 @@ This configuration is the simplest form of a control application and often serve
 * A lamp is connected to `Output_Q1`.
 
 When the switch is activated, the lamp must light up immediately. This confirms that both the input and output channels are correctly configured and wired.
+
+## Anwendungsbeispiel

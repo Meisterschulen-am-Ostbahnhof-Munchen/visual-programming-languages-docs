@@ -35,12 +35,10 @@ The following function blocks are used in the SubApp network:
 - **Parameters**: None
 - **Function**: Up counter with two event inputs: CU (Count Up) and R (Reset). The counter value is output as a Boolean value (when CV>0) via the adapter output `Q`, and the current counter value (data adapter) is output via `CV`.
 
-### `E_CTU` (Type: `adapter::events::unidirectional::AUI_CTU`)
 
-### `E_CTU` (Type: `adapter::events::unidirectional::AUI_CTU`)
 
 #
-## `adapter::events::unidirectional::AUI_CTU` ... ### `AUI_TO_AUDI` (Type: `adapter::conversion::unidirectional::AUI_TO_AUDI`)
+## `adapter::events::unidirectional::AUI_CTU` ... ##
 - **Parameters**: None
 - **Function**: Converts an AUI data adapter (here, the counter value CV) into an AUDI data adapter (u32), which can be processed by subsequent function blocks.
 

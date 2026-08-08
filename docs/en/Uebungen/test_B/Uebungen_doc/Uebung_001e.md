@@ -9,7 +9,6 @@ This exercise demonstrates the basic negation of a digital input signal. The dig
 
 ---
 
-## Introduction
 
 This exercise demonstrates the basic negation of a digital input signal. The digital input **Input_I1** (pin I1) is read, logically negated, and output to the digital output **Output_Q1** (pin Q1). This exercise is suitable for beginners in industrial automation with IEC 61499 and serves to develop an understanding of:
 

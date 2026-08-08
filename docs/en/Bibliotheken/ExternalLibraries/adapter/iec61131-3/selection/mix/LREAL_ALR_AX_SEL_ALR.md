@@ -3,29 +3,29 @@
 ![LREAL_ALR_AX_SEL_ALR](./LREAL_ALR_AX_SEL_ALR.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block `LREAL_ALR_AX_SEL_ALR` is a binary selection block for the data type `LREAL`. It is used to select one of two high-precision analog input values (`IN0` or `IN1`) based on the state of a selection signal (gate signal `G`) and forward it to the output (`OUT`). By using IEC 61499 adapters, the block enables clean, modular, and event-driven signal processing.
 
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI0**: Triggers the update and transfer of the directly connected data input `IN0`.
 
-### **Event Outputs**
 
 * *(No direct event outputs are available on the main interface. Event forwarding is encapsulated via the output adapter `OUT`.)*
 
-### **Data Inputs**
 
 * **IN0** (LREAL): The first input value to be selected. This value is passed through to the output when the selection signal `G` is in the state `FALSE`.
 
 
-### **Data Outputs**
 
 * (No direct data outputs are available on the main interface. Data is provided encapsulated via the output adapter `OUT`.)*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 * **IN1** (Socket, Type: `adapter::types::unidirectional::ALR`): A unidirectional adapter input for the second selectable value.
@@ -51,7 +51,6 @@ The module is implemented internally as a network (sub-FB) that ensures reliable
 
 4. **Output Update**: The selected value is passed to the output plug `OUT`. Simultaneously, the output event `OUT.E1` is generated to inform subsequent program components about the presence of a new value.
 
-## Technical Features
 * **Event-driven Data Flow**: Any change to one of the inputs or the selection signal immediately triggers a recalculation and a possible update of the output.
 
 * **Adapter Structure**: The use of unidirectional adapters significantly reduces the complexity of cabling in higher-level systems, as data and events are bundled in a single connection channel.
@@ -70,7 +69,6 @@ Since this is a purely data-flow and event-driven sub-function block, it does no
 
 | `TRUE` | Any input event | The value of `IN1.D1` | `IN1` is actively passed through. Changes to `IN0` do not affect the output. |
 
-## Application Scenarios
 
 * **Setpoint Switching**: Switching between a locally defined setpoint (`IN0` via `LREAL`) and an external setpoint provided via a bus system or another software module (`IN1` via adapter).
 
@@ -84,5 +82,9 @@ Since this is a purely data-flow and event-driven sub-function block, it does no
 
 * **Type Variants**: Analogous function blocks exist for other data types (e.g., `REAL`, `INT`) that use the same internal logic but are adapted to the respective data types of the adapters.
 
-## Conclusion
 The function block `LREAL_ALR_AX_SEL_ALR` offers an efficient, reliable, and standardized way to select precise floating-point values in event-driven systems. By encapsulating the D flip-flops for signal stabilization and using modern adapter structures, he makes a significant contribution to the clarity and determinism of control programs.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

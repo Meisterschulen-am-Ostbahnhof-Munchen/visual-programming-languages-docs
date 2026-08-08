@@ -24,3 +24,4 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | INT | Indication (or Request) Data from Plug |
+### Data

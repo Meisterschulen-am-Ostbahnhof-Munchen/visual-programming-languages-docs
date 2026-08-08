@@ -3,27 +3,27 @@
 ![AUS_MUL_3](./AUS_MUL_3.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block (FB) `AUS_MUL_3` is used for the arithmetic multiplication of three input values. It is a generic function block (`Generic FB`) based on the use of unidirectional adapters of type `AUS`. The block calculates the product of three input values and provides the result at an output adapter.
 
-## Interface Structure
 
 Since this function block is entirely based on adapters, it has no direct, traditional event or data interfaces at the block level. All communication and synchronization takes place via the declared adapters.
 
 
-### **Event Inputs**
 *No direct event inputs available.* (Event control is handled via the adapter sockets).
 
-### **Event Outputs**
 *No direct event outputs available.* (Event control is handled via the adapter plug).
 
-### **Data Inputs**
 *No direct data inputs available.*
 
-### **Data Outputs**
 *No direct data outputs available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 #### **Sockets (Input Adapters)**
@@ -48,7 +48,6 @@ $$\text{Result} = \text{Value of IN1} \times \text{Value of IN2} \times \text{Va
 
 The calculated result, along with a corresponding confirmation event, is passed to subsequent program components via the output plug `OUT`.
 
-## Technical Features
 
 * **Generic Module:** The attribute `GenericClassName` with the value `'GEN_AUS_MUL'` allows for flexible use of the module. Depending on the specific implementation of the adapter type `AUS`, the function block can adapt to various data types (e.g., `INT`, `REAL`, `LREAL`).
 
@@ -65,7 +64,6 @@ The module behaves in a purely stateless manner (i.e., it reacts to incoming ada
 
 3. **Output:** The result is written to plug `OUT`, and the corresponding send event of the plug is triggered.
 
-## Application Scenarios
 
 * **Scaling and Weighting:** Multiplication of a sensor value by two consecutive scaling factors (e.g., physical conversion and calibration factor).
 
@@ -73,12 +71,15 @@ The module behaves in a purely stateless manner (i.e., it reacts to incoming ada
 
 * **Structured Signal Processing:** Used in more complex control loops that require a clean signal architecture using adapters.
 
-## Comparison with Similar Components
 
 * **Standard MUL Component (IEC 61131-3):** The classic `MUL` component uses direct data and event pins. The `AUS_MUL_3`, on the other hand, bundles these signals in adapters, simplifying wiring in large projects.
 
 * **AUS_MUL_2 (Two-Input Variant):** While a hypothetical two-input variant can only multiply two factors, `AUS_MUL_3` eliminates the need for an additional cascading block when multiplying three values.
 
-## Conclusion
 
 The `AUS_MUL_3` is a highly efficient, generic function block for multiplying three values. Its consistent use of unidirectional adapters makes it ideally suited for modern, adapter-based software architectures in the 4diac environment, as it minimizes the visual complexity of control diagrams.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -30,11 +30,9 @@ The operation of the `NetEv2NetEv` block is deterministic and simple:
 
 2. The entire contents of the input data structure `IN` are copied to the output data structure.
 
-### **Adapters**
 
 This function block does not use any adapters.
 
-## Operation
 
 The operation of the `NetEv2NetEv` block is deterministic and simple:
 

@@ -63,7 +63,6 @@ The **AL_TO_AS** stands out due to its adapter-to-adapter interface, which enabl
 ## Conclusion
 The **AL_TO_AS** function block is a practical, standards-compliant converter module for unidirectional adapters. It encapsulates the necessary type conversion from LWORD to SINT and simplifies integration into existing 4diac projects. Thanks to its composite structure and the use of an established conversion function, it is reliable, easy to understand, and extensible. It is particularly suitable for scenarios where data widths need to be reduced or interfaces adapted.
 
-## Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -89,7 +89,6 @@ The function block (FB) does not have an explicitly modeled state machine; howev
 **Done** | `CNF` | Action completed, returning to **Ready** |
 **Error** | Error during initialization or action | `STATUS` contains error description; reinitialization may be necessary |
 
-## Application Scenarios
 - **Agricultural Machinery**: Control of servo drives (e.g., for flaps, valves, actuators) via a logiBUS fieldbus.
 
 ** - **Modular Output Block**: Used in distributed control systems where multiple servo outputs need to be parameterized depending on the machine configuration.

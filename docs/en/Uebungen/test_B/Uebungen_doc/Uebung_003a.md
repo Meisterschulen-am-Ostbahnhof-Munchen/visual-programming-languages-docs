@@ -7,7 +7,6 @@ The main objective is to avoid redundant code. Instead of manually drawing the s
 
 ----
 
-## Objective of the Exercise
 
 The main objective is to avoid redundant code. -----
 

@@ -70,7 +70,6 @@ The result is available at the data output after the **CNF** event.
 
 The result is available at the data output after the **CNF** event.
 
-## Technical Features
 - The function block uses **`LINT`** (64-bit integer) as an intermediate type to reliably prevent overflow when adding `UDINT` and `DINT` (e.g., large positive values with large negative values). - The output variable has no name of its own – in the 4diac IDE, it is automatically displayed as `OUT` or can be referenced via the interface.
 - Offset and scaling are configured via an external structure (`NumericObjectPool_S`), which typically originates from a pool object that bundles all parameters of an ISOBUS object.
 

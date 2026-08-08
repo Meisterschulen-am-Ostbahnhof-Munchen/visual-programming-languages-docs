@@ -37,7 +37,6 @@ In this exercise, various function blocks are interconnected within the network 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Description**: Interface to the first physical output.
 
-### Sub-modules: DigitalOutput_Q1
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Description**: Interface to the first physical output. - **Parameters**:
 - `QI` = `TRUE`

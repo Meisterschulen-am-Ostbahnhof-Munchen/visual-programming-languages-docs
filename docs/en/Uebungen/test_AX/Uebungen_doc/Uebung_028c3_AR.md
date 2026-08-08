@@ -2,11 +2,11 @@
 ![Uebung_028c3_AR_network](./Uebung_028c3_AR_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the calibration of an analog input (AnalogInput_I7) using a calibration adapter (AR_CALIBRATE) that loads an offset and a scaling factor from an INI file. The calibrated signal is passed to a hysteresis controller (Hysteresis_AR_AX), which switches a digital output (Output_Q2). Simultaneously, the calibrated value is displayed on a screen (Q_NumericValue_PHYSA). The exercise uses two inputs (I2, I3) to trigger the calibration and another input (I1) as an enable signal.
 
-## Function Blocks (FBs) Used
 
+## Function Blocks Used (FBs)
+## Introduction
 ### Sub-Blocks: None (all FBs are system-defined)
 - **AnalogInput_I7** (Type: `logiBUS::io::AI::logiBUS_AI_IDA`)
 - **Internal Parameters Used**: `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
@@ -52,7 +52,6 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - **INIT** (Type: `iec61131::bitwiseOperators::INIT`)
 - **Functionality**: Generates a one-time initialization event (INITO) at system startup. This event triggers the two AR_REAL_TO_R blocks to set the constant values.
 
-## Program Flow and Connections
 
 1. **Initialization**: At startup, the INIT block triggers the two AR_REAL_TO_R blocks, which set the constant threshold values (50.5 and 15.3) on the analog bus.
 
@@ -81,8 +80,11 @@ The exercise "Exercise_028c3_AR" implements a complete analog input calibration 
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]
+
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

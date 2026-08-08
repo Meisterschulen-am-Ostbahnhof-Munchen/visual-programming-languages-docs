@@ -2,17 +2,16 @@
 ![Uebung_028c2_AR_network](./Uebung_028c2_AR_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the calibration of an analog input signal using NVS (Non-Volatile Storage) for offset and scaling. The calibrated signal is split into two paths: one for displaying a physical value (e.g., on a display), and the other for a hysteresis controller that drives a digital output. Calibration can be initiated via digital inputs (offset and scaling commands). The hysteresis thresholds are loaded from the NVS using two sub-applications.
 
-## Function Blocks (FBs) Used
 
+## Function Blocks Used (FBs)
+## Introduction
 ### Sub-Blocks: `THRESHOLD` and `HYSTERESIS`
 - **Type**: `MyLib::sys::NVS_IN_AND_STORE_AR`
 - **Internal FBs Used**: Not specified in detail, based on NVS memory access.
 - **Description**: Both sub-applications are used to read (and optionally store) an analog value (AR) from the NVS. The value is addressed via the parameter `KEY` (e.g., `'THRESHOLD'` or `'HYSTERESIS'`). The output `VALUEO` provides the stored value. Additionally, a structure object (`stObj`) is used for data transfer.
 
-### Overview of all used function modules
 
 | Name | Type | Parameters (selection) |
 |------|-----|----------------------|
@@ -34,17 +33,14 @@ THRESHOLD` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='THRESHOLD'`, `stOb
 | `AUDI_TO_AR` | `adapter::conversion::unidirectional::AUDI_TO_AR` | – |
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | `Output = Output_Q2` |
 
-### Brief description of the most important components
 - **AnalogInput_I4**: Reads an analog value (e.g., voltage) and outputs it as an adapter interface (`AD`).
 
-### - **AD_TO_AUDI, AUDI_TO_AR**: Convert the analog adapter interface (AD) to a real analog value (`AR`) via a generic `AUDI` interface. This is a type conversion.
 - **CALIBRATE**: Applies offset and scaling to the incoming analog value: `Y = (X + Offset) * Scale`. The offset and scaling values can be updated via the digital inputs `CO` and `CS` and then stored in the NVS modules.
 - **NVS_OFFSET, NVS_SCALE**: Permanently store the calibration values in the ESP32's flash memory. The output `VAL` provides the currently stored value.
 - **Hysteresis_AR_AX**: Compares the calibrated value with a threshold and a hysteresis value. The output `OUTPUT` switches when the value exceeds the threshold (or falls below it, including the hysteresis).
 - **Q_NumericValue_PHYSA**: Prepares the calibrated value for display on a screen or other output device.
 - **AX_SPLIT_2, AR_SPLIT_2**: Distribute a signal (event or data) to two outputs.
 
-## Program Flow and Connections
 
 1. **Analog Input**: The analog module `AnalogInput_I4` (logiBUS AI) provides an analog measurement value as a `AD` adapter.
 
@@ -68,15 +64,19 @@ THRESHOLD` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='THRESHOLD'`, `stOb
 
 **Important Note**: The double adapter conversion (`AD_TO_AUDI` + `AUDI_TO_AR`) is necessary to ensure correct value transmission (see comment in the network).
 
-## Summary
 
 This exercise demonstrates how to calibrate an analog input signal with offset and scaling correction. The calibration parameters are permanently stored in the NVS and can be updated via digital buttons. The calibrated value is used for both a display and a hysteresis switching function. The circuit illustrates how to handle adapter conversions, NVS memory access, and the distribution of data flows in the 4diac IDE.
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 * [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]
+
+### Übersicht aller verwendeten Funktionsbausteine
+### Kurzbeschreibung der wichtigsten Komponenten
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

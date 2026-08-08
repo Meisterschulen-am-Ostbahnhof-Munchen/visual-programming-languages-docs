@@ -3,10 +3,8 @@
 *No image available.*
 
 * * * * * * * * *
-## Introduction
 This exercise implements an upward counter according to IEC 61131-3 (FB_CTU_LINT) with terminal output of the current counter value. The counter is incremented via a digital input (CU) and reset via another digital input (R). After each increment, the counter value is output to a terminal block (LogiBUS Utility) via a type conversion (LINT → LREAL). Simultaneously, a digital output is set as soon as the counter reaches the preset value (PV = 5).
 
-## Function Blocks (FBs) Used
 - **FB_CTU_LINT**: Type `iec61131::counters::FB_CTU_LINT`
 - Parameter: PV = LINT#5 (default value)
 - Event input: REQ (start of counter operation)
@@ -31,11 +29,9 @@ This exercise implements an upward counter according to IEC 61131-3 (FB_CTU_LINT
 - Data input: lrPhys (physical LREAL value)
 - Event input: REQ (trigger terminal output)
 
-## Program Flow and Connections
 
 Control is achieved via event and data connections:
 
-### Event Connections
 - `Input_CU.IND` → `FB_CTU_LINT.REQ`
 
 On a rising edge of digital input I1, the counter is incremented.
@@ -56,7 +52,6 @@ Simultaneously, the type conversion of the current counter value is initiated.
 
 After conversion, the value is sent to the terminal.
 
-### Data Connections
 - `Input_CU.IN` → `FB_CTU_LINT.CU`
 
 The state of input I1 controls the counting pulse (rising edge).
@@ -75,6 +70,11 @@ The current counter value (LINT) is passed to the converter.
 - `F_LINT_TO_LREAL.OUT` → `Q_NumericValue_PHYS_LREAL.lrPhys`
 The converted LREAL value is passed to the terminal block.
 
+### Datenverbindungen
+### Ereignisverbindungen
+## Program Flow and Connections
+## Function Blocks Used (FBs)
+## Introduction
 ### Functionality
 1. As long as the input CU (I1) shows a rising edge, the counter CV increments by 1.
 
@@ -82,7 +82,6 @@ The converted LREAL value is passed to the terminal block.
 
 3. If the counter value reaches the preset value PV (here 5) or higher, the output Q is set to TRUE. Further counting is then no longer possible until a reset occurs.
 
-### Functionality 4. After each counting or reset operation, the current CV value is output to the terminal (LogiBUS Utility) in physical LREAL representation.
 
 **Learning Objectives:**
 
@@ -94,13 +93,14 @@ The converted LREAL value is passed to the terminal block.
 **Difficulty Level:** Advanced Fundamentals
 **Prerequisites:** Basic understanding of the 4diac IDE, working with digital inputs/outputs, event chaining.
 
-## Summary
 
 Exercise 212b demonstrates the combination of an IEC 61131-3 up counter (FB_CTU_LINT) with a terminal output. The counter is controlled via two digital inputs; the output Q switches when the preset value is reached. The current counter value is output to a LogiBUS terminal block after each action via type conversion. This demonstrates the chaining of events, data flow logic, and the use of utility blocks in 4diac.
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

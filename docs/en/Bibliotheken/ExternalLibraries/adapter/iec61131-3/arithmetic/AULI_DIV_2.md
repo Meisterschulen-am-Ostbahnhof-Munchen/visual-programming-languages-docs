@@ -5,25 +5,25 @@
 *No image available*
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AULI_DIV_2` is a generic function block (Generic FB) designed to perform arithmetic division (DIV). It is based on the IEC 61499 standard and utilizes the concept of adapters to efficiently transfer data and the associated control logic. The block is defined in the namespace `adapter::iec61131::arithmetic` and uses the generic class `GEN_AULI_DIV`.
 
-## Interface Structure
 
-### **Event Inputs**
 This function block does not have direct, dedicated event inputs. Signal flow control and event processing are handled entirely via the connected adapters.
 
 
-### **Event Outputs**
 This function block does not have direct, dedicated event outputs. Event forwarding is handled via the output adapter.
 
-### **Data Inputs**
 There are no direct data inputs. The values for the calculation are provided via the input adapters.
 
-### **Data Outputs**
 There are no direct data outputs. The calculation result is provided via the output adapter.
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 All communication for this function block is implemented via adapters of type `AULI` (unidirectional):
 
@@ -54,7 +54,6 @@ $$\text{OUT} = \frac{\text{IN1}}{\text{IN2}}$$
 Since this is a generic function block (`GEN_AULI_DIV`), it can adapt to various numeric data types at runtime or during instantiation in the 4diac IDE, provided these are supported by type `AULI`. The calculation is typically triggered by an update event on one of the input adapters (`IN1` or `IN2`). The result is then provided at the output adapter `OUT` along with a corresponding output event.
 
 
-## Technical Features
 
 * **Generic Nature**: The attribute `GenericClassName` with the value `'GEN_AULI_DIV'` makes the function block flexible and not rigidly tied to a single data type (such as only `REAL` or `INT`).
 
@@ -77,7 +76,6 @@ Since this function block is a basic arithmetic function block, it typically exh
 
 *Note on Division by Zero:* Depending on the implementation of the runtime environment for the generic type `GEN_AULI_DIV`, mechanisms to prevent division by zero (e.g., outputting `NaN`, infinity, or intercepting via the adapter status) should be considered.
 
-## Application Scenarios
 
 * **Sensor Value Scaling**: Division of raw analog values by a scaling factor for conversion to physical units.
 
@@ -96,6 +94,10 @@ Since this function block is a basic arithmetic function block, it typically exh
 
 * * **Other AULI Arithmetic Blocks** (e.g., `AULI_ADD`, `AULI_SUB`): These use the same interface philosophy with sockets and plugs, but perform different mathematical operations.
 
-## Conclusion
 
 The `AULI_DIV_2` is a modern, modular function block for arithmetic division in Eclipse 4diac. Through the consistent use of unidirectional adapters, it promotes clean and well-organized software design in distributed control systems according to IEC 61499 by elegantly bundling data and control events.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

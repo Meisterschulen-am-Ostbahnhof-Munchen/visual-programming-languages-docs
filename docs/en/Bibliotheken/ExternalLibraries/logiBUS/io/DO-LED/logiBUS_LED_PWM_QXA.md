@@ -84,7 +84,6 @@ Since this is a composite function block, it does not have explicit states of it
 ## Conclusion
 The `logiBUS_LED_PWM_QXA` function block encapsulates the PWM control of an LED via logiBUS in a compact composite block. Its clearly defined interface with initialization, adapter communication, and status feedback makes it easy to integrate into automation projects. The combination of output selection, frequency setting, and error handling makes it a robust component for dimmable lighting applications in industrial environments.
 
-## Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

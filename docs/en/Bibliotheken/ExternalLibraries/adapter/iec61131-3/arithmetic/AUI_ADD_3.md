@@ -62,7 +62,6 @@ As soon as an update event arrives at one of the input adapters (`IN1`, `IN2`, o
 
 ---
 
-## Technical Features
 
 * **Generic Function Block:** * **Unidirectional Communication:** The use of unidirectional adapters (`unidirectional::AUI`) ensures that the data flow is clearly defined from the inputs to the output.
 

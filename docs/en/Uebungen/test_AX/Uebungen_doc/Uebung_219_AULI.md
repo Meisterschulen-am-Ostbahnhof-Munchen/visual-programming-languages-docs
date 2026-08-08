@@ -54,7 +54,6 @@ The subapp contains the following internal function blocks:
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Description**: Function block for displaying a numeric value in the terminal. It receives the current counter value and displays it on the assigned output object.
 
-### FB: Q_NumericValue_AUDI
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Description**: Function block for displaying a numeric value in the terminal. It receives the current counter value and displays it on the assigned output object.
 

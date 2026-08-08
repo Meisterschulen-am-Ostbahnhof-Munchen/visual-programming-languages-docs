@@ -23,7 +23,6 @@ None.
 ## Functionality
 The function block declares the constants at system startup. The values are pre-initialized and remain unchanged throughout runtime. All constants are immediately valid and can be used in other function blocks without additional initialization. The numbering follows the ISOBUS standard, with the first 16 colors (0–15) covering the basic palette and the subsequent colors (16–231) containing more finely graduated shades.
 
-### **Adapters**
 
 #
 ## Technical Features

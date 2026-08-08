@@ -46,7 +46,6 @@ Unlike function blocks such as `E_SR` (memory element) or `E_CTUD` (counter), wh
 ## Conclusion
 The `SchieberStruct` data type is a useful construct for the structured and type-safe handling of state information for slider actuators. By encapsulating the relevant object IDs in a single structure, the configuration and maintenance of applications that control and visualize such actuators is simplified. Its use promotes a clear and consistent programming style.
 
-## Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

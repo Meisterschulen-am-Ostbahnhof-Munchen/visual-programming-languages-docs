@@ -36,12 +36,10 @@ This exercise implements an up/down counter according to IEC 61131-3 (Type CTUD)
 - **Parameters**: `u16ObjId = OutputNumber_N1` (Reference to terminal output object)
 - **Functionality**: Receives the converted counter reading (AUDI) and outputs it as a numeric value to the configured terminal (ISOBUS).
 
-### Sub-Blocks: `Q_NumericValue_AUDI`
 - **Type**: `u16ObjId = OutputNumber_N1` (Reference to terminal output object)
 
 **Functionality**: Receives the converted counter reading (AUDI) and outputs it as a numeric value to the configured terminal (ISOBUS).
 
-### Sub-Blocks: `AULI_TO_AUDI`
 - **Type**: `adapter::conversion::unidirectional::AULI_TO_AUDI`
 - **Internal Function Blocks Used**: None
 

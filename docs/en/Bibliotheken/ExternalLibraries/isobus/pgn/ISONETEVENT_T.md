@@ -31,7 +31,6 @@ The structure `ISONETEVENT_T` functions as a container or message object. When a
 ## Technical Details
 * **Type:** This is a `StructuredType` within the 4diac IDE.
 
-## Technical Details
 * **Type:** This is a `StructuredType` within the 4diac IDE.
 * **Initial Values:** Two elements (`eNetEvent`, `eMemberRefer`) have defined initial values that reference enumerated types (`ISO_NETEVENT_e`, `ISOUSERHOME_e`). This ensures a defined initial state.
 * **ISOBUS Integration:** The structure is specifically designed for the ISOBUS context, as evidenced by the use of the type-specific `CF_NAME_T` and the parameter designations (SA, CF).

@@ -22,7 +22,7 @@ The function block `F_DWORD_TO_UINT` converts a `DWORD` value to a `UINT` value.
 This function block does not use adapters.
 
 #
-## ## Functionality
+## #
 
 The function block performs the conversion from `DWORD` to `UINT` as soon as the event `REQ` is received. The conversion is performed using the function `DWORD_TO_UINT`, which converts the input value `IN` and outputs the result to `OUT`. After successful conversion, the event `CNF` is triggered.
 
@@ -40,7 +40,6 @@ Since it is a simple function block, there are no complex state transitions. The
 ## ⚖️ Comparison with Similar Blocks
 - Compared to other conversion blocks such as ``F_WORD_TO_UINT`` or ``F_BYTE_TO_UINT``, this one is specifically optimized for converting ``DWORD`` to ``UINT``.
 
-## ⚖️ Comparison with Similar Blocks
 - Compared to other conversion blocks like ``F_WORD_TO_UINT`` or ``F_BYTE_TO_UINT``, this one is specifically optimized for converting ``DWORD`` to ``UINT``.
 
 Similar function blocks might offer additional features such as range checks or error handling, which this function block does not.

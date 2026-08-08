@@ -29,7 +29,7 @@ This means: the target type must be equal to or greater than the source type.
 **DINT** | ✗ | ✗ | ✓ | ✓ |
 **LINT** | ✗ | ✗ | ✗ | ✓ |
 
-## Unsigned
+### Unsigned
 
 | Source → | USINT | UINT | UDINT | ULINT |
 |----------|:-----:|:----:|:-----:|:-----:|
@@ -123,7 +123,7 @@ If an assignment (in ST) or a connection (in the FB network) is not implicitly a
 
 In FORTE / 4diac, conversions of bit strings (such as `DWORD`, `WORD`, `BYTE`) to numeric types (`REAL`, `INT`, `DINT`, etc.) are performed at the bit level **`reinterpret_cast`**. This means that the bit patterns are copied directly without adjusting the mathematical value. This applies equally to ST function calls and graphical conversion blocks.
 
-Scenario A: A numeric value (e.g., UDINT) is stored in the DWORD.
+#### Scenario A: A numeric value (e.g., UDINT) is stored in the DWORD.
 
 If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is to be output as a floating-point number (`REAL`):
 
@@ -142,7 +142,7 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
 
   * *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
 
-Scenario B: An IEEE-754 float bit pattern is already stored in the DWORD.
+#### Scenario B: An IEEE-754 float bit pattern is already stored in the DWORD.
 
 If `DWORD` directly contains the raw bit pattern of a floating-point number (e.g., read in via a Modbus register or a network connection):
 

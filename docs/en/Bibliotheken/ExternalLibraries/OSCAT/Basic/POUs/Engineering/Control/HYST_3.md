@@ -4,6 +4,7 @@ this is a double hysteresis function. Out1 follows a hysteresis function defined
 while out 2 follows val2 and hyst.
 if the input signal is between the two hysteresis switches (val1 and val2) then non of the
 outputs is active.
+# HYST_3
 ## Interface
 
 ### Event inputs

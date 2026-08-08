@@ -69,7 +69,6 @@ This function block works in conjunction with the internal `INI` function block.
 - The data is processed as **UDINT (Unsigned Double Integer)**, enabling efficient storage and transmission.
 - The internal `INI` block is from the `eclipse4diac::storage` library and supports standard INI file formats.
 
-## Technical Features
 - The block uses the **adapter `adapter::types::unidirectional::AUDI`**, which is specifically designed for the directed communication of values and events. - The fallback mechanism via `DEFAULT_VALUE` ensures that a defined value is returned even if entries are missing in the INI file.
 
 ## State Overview

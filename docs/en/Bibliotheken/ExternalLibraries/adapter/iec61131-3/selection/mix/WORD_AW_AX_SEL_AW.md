@@ -5,15 +5,12 @@
 *(No image available)*
 
 * * * * * * * * * *
-## Introduction
 
 The function block **WORD_AW_AX_SEL_AW** is an event-driven, binary selector for data of type `WORD`. It implements a selection function (analogous to `SEL` according to IEC 61131-3) using modern, unidirectional adapter interfaces. The block allows for event-based selection between a directly connected `WORD` input and a `WORD` input fed via an adapter, and forwards the result to an output adapter.
 
 
 
- ## Interface Structure
 
-### **Event Inputs**
 
 | Name | Type | Description |
 
@@ -21,11 +18,9 @@ The function block **WORD_AW_AX_SEL_AW** is an event-driven, binary selector for
 
 | **EI0** | Event | Updates and adopts the value of the data input `IN0`. |
 
-### **Event Outputs**
 
 *This function block does not have direct event outputs at the block level. Event output is coupled via the output adapter `OUT`.*
 
-### **Data Inputs**
 
 | Name | Type | Description |
 
@@ -33,10 +28,15 @@ The function block **WORD_AW_AX_SEL_AW** is an event-driven, binary selector for
 
 | **IN0** | WORD | Direct, selectable input value 0. Selected when selector `G` is in state `FALSE`. |
 
-### **Data Outputs**
 
 *This function block does not have direct data outputs at the block level. Data output is coupled via the output adapter `OUT`.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 | Name | Direction | Type | Description |
@@ -70,7 +70,6 @@ The internal selection element `F_SEL` evaluates the state of the selector `G.D1
 
 The selected value is passed to the output adapter `OUT.D1` via the internal function block `F_MOVE_OUT`. Simultaneously, the output event `OUT.E1` is triggered to inform subsequent program components about the data change.
 
-## Technical Features
 
 * **Hybrid Interfaces:** This function block bridges the gap between classic IEC 61499 event/data connections (`EI0` / `IN0`) and modern, adapter-based communication structures.
 
@@ -79,7 +78,6 @@ The selected value is passed to the output adapter `OUT.D1` via the internal fun
 
 **Edge and Event-Driven:** Any change to one of the inputs immediately triggers a recalculation and update of the output.
 
-## State Overview
 
 | State Selector `G.D1` | Trigger Event | Selected Output Value `OUT.D1` | Output Event `OUT.E1` |
 
@@ -89,7 +87,6 @@ The selected value is passed to the output adapter `OUT.D1` via the internal fun
 
 | `TRUE` | Any (`EI0`, `G.E1`, `IN1.E1`) | **`IN1.D1`** | Enabled |
 
-## Application Scenarios
 
 * **Setpoint Switching:** Switch between a locally defined default setpoint (`IN0`) and a remote setpoint received via a network/adapter (`IN1`).
 
@@ -97,7 +94,6 @@ The selected value is passed to the output adapter `OUT.D1` via the internal fun
 
 * **Signal Fallback:** Fast, event-driven switching to a safe backup value in case of a system component failure.
 
-## Comparison with Similar Function Blocks
 
 Compared to the standard selection function block `F_SEL` from the IEC 61131-3 library, `WORD_AW_AX_SEL_AW` offers direct integration into the event-driven world of IEC 61499. While the classic `F_SEL` operates purely in a data flow-oriented manner, this function block captures asynchronous events via the adapters, stores the data consistently, and actively signals changes to the subsequent process.
 
@@ -105,3 +101,8 @@ Compared to the standard selection function block `F_SEL` from the IEC 61131-3 l
 **Signal Fallback:** Fast, event-driven switching to a safe backup value in case of a system component failure. ## Conclusion
 
 The **WORD_AW_AX_SEL_AW** function block is a useful tool for structured signal processing in complex IEC 61499 control applications. By encapsulating the adapter and flip-flop logic, it significantly simplifies the design of switchable signal paths in the application diagram and ensures clean, event-driven data flow.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

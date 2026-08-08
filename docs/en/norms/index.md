@@ -12,7 +12,6 @@ The standard is divided into several parts, each covering different aspects:
 ### Sources of Supply
 Standards are traditionally obtained in Germany through **Beuth Verlag** (DIN). A helpful tip from practical experience is to obtain them through **EVS (Estonian Centre for Standardisation and Accreditation)**. The identical European standards are often available there at significantly lower costs (especially the "3 User Licence").
 
-### Sources of Supply
 Standards are typically obtained through **EVS** (Estonian Centre for Standardisation and Accreditation)**. **Links:**
 
 * [Wikipedia (DE): EN 61499](https://de.wikipedia.org/wiki/EN_61499)

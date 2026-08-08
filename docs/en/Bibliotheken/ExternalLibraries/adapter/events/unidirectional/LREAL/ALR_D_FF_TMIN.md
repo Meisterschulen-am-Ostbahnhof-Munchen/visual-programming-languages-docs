@@ -34,9 +34,7 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 | Adapter | Direction | Type | Comment |
 | Tmin | TIME | Minimum wait time between two EO events |
 
-### **Data Outputs**
 
-### **Adapter**
 
 | Adapter | Direction | Type | Comment |
 | Adapter | | ... |---------|----------|-------------|-----------------------------------|

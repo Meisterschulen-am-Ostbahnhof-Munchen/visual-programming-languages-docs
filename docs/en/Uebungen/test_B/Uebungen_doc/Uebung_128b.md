@@ -14,7 +14,6 @@ In this exercise, various function blocks are interconnected to implement networ
 * **isobus::pgn::NmGetCfInfo** (`NmGetCfInfo_1`)
 * This function block retrieves information about a Control Function (CF) on the network.
 
-### Main Components
 * **isobus::pgn::NmGetCfInfo** (`NmGetCfInfo_1`)
 * This function block retrieves information about a Control Function (CF) on the network. * **Parameters**:
 * `u8CanIdx`: `NODE1` (CAN node 1)

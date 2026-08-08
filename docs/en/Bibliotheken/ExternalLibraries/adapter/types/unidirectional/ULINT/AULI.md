@@ -20,3 +20,4 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | ULINT | Indication (or Request) Data from Plug |
+### Data

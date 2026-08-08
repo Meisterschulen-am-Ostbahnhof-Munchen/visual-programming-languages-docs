@@ -46,7 +46,6 @@ This function block forwards incoming events and data from the input adapter `AU
 ## Technical Features
 - **Implicit Type Conversion:** The conversion from `UINT` to `ULINT` is performed automatically by the 4diac IDE and does not require an explicit conversion module. The value range from 0 to 65535 (UINT) is mapped to the corresponding ULINT range.
 
-## Technical Features
 - **Implicit Type Conversion:** - **Pass-Through Behavior:** Events and data are transmitted without delay or buffering. The output event occurs simultaneously with the input event.
 - **Unidirectional Adapters:** The module supports only one direction of data flow (from the AUI input to the AULI output). Reverse communication is not supported.
 

@@ -62,7 +62,6 @@ The result is immediately passed to the output adapter `OUT`, and the correspond
 * **Generic Design:** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AI_ADD'`. This makes it highly flexible and allows it to be applied to different numeric data types, provided the adapters used support this.
 
 
-## Technical Features
 
 * **Generic Design:** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AI_ADD'`. * **Unidirectional Adapters:** Using `unidirectional::AI` adapters drastically reduces wiring complexity in the function block diagram, as data and trigger events are bundled in a single connection.
 

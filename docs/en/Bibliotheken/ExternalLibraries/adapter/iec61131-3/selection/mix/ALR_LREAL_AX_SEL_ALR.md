@@ -4,15 +4,12 @@
 
 * * * * * * * * * *
 
-## Introduction
 
 The function block `ALR_LREAL_AX_SEL_ALR` is used for binary selection (multiplexing) between two analog input signals of data type `LREAL`. The block combines classic IEC 61499 events and data with modern, adapter-based interfaces.
 
 The control over which of the two inputs is routed to the output is achieved via a binary selection signal (`G`), which is read in via an adapter. The output signal is also output via an adapter.
 
-## Interface Structure
 
-### **Event Inputs**
 
 | Event | Description | Associated Data |
 
@@ -20,11 +17,9 @@ The control over which of the two inputs is routed to the output is achieved via
 
 **EI1** | Signals the update of the classic data input `IN1`. | `IN1` |
 
-### **Event Outputs**
 
 *This function block does not have direct, classic event outputs. Event forwarding is handled via the output adapter `OUT`.*
 
-### **Data Inputs**
 
 | Data Point | Data Type | Description |
 
@@ -32,10 +27,15 @@ The control over which of the two inputs is routed to the output is achieved via
 
 | **IN1** | LREAL | Input value to be selected: 1 (classic variable). |
 
-### **Data Outputs**
 
 *This function block does not have direct, classic data outputs. Data output is handled via the output adapter `OUT`.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 | Adapter Name | Type | Direction | Description |
@@ -76,8 +76,6 @@ The module is internally based on a logic network that buffers events and data a
 
 
 
-```
-``````
           +-----------------------------------------+
           |           ALR_LREAL_AX_SEL_ALR          |
           |                                         |
@@ -89,13 +87,11 @@ The module is internally based on a logic network that buffers events and data a
  (Event)--> [EI1]  -----/                           |
           +-----------------------------------------+
 
-## Technical Features
 
 * **Adapter Coupling:** This function block is ideally suited for bridging adapter-based communication (e.g., structured fieldbus or sensor couplers) and classic function block structures.
 
 * **Event-Driven:** The internal use of event flip-flops (`E_D_FF` / `E_D_FF_ANY`) ensures that the output only fires an event when data or the selector state has actually changed.
 
-## State Overview
 
 The following table shows the behavior of output `OUT` depending on the control signal `G`:
 
@@ -108,7 +104,6 @@ The following table shows the behavior of output `OUT` depending on the control 
 | **TRUE** | Value of `IN1` | On change of `IN1`, `EI1`, or state change of `G` |
 
 
-## Application Scenarios
 
 * **Setpoint Switching:** Switching an analog reference value (LREAL) between an automatic sensor value (via adapter `IN0`) and a manually specified parameter (via classic input `IN1`).
 
@@ -121,6 +116,11 @@ The following table shows the behavior of output `OUT` depending on the control 
 
 Compared to the standard selection block `F_SEL` from the IEC 61131-3 library, which operates purely in a data flow-oriented manner, `ALR_LREAL_AX_SEL_ALR` offers complete integration into the event-driven architecture of IEC 61499. It encapsulates the necessary event and conversion logic, eliminating the need for additional auxiliary blocks for signal buffering in the application network.
 
-## Conclusion
 
 The `ALR_LREAL_AX_SEL_ALR` is a specialized and robust multiplexer for `LREAL` signals. Through the clever combination of classic data inputs and modern, unidirectional adapters, it enables clean and clear structuring of control software in 4diac.
+## Functionality
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -5,33 +5,32 @@
 *No image available. The function block is graphically represented with three input sockets (IN1, IN2, IN3) and one output plug (OUT).*
 
 * * * * * * * * * *
-## Introduction
 
 The `ALI_MUL_3` function block is a generic arithmetic block for the 4diac IDE, used for multiplying three input values. It is characterized by the fact that the inputs and outputs are not implemented via classic data and event pins, but entirely via unidirectional adapters of type `ALI`. This enables structured, modular, and clear encapsulation of signal and data flows in IEC 61499 applications.
 
 
-## Interface Structure
 
 Since this functional block is entirely based on adapter technology, it has no direct, traditional event or data channels at the main level.
 
-### **Event Inputs**
 *No direct event inputs are available (signal processing is handled by the adapters).*
 
-### **Event Outputs**
 *No direct event outputs are available (signal forwarding is handled by the output adapter).*
 
-### **Data Inputs**
 *No direct data inputs are available.*
 
-### **Data Outputs**
 *No direct data outputs are available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 #### **Sockets (Inputs)**
 * **IN1** (Type: `adapter::types::unidirectional::ALI`): The first factor (multiplicand 1) for arithmetic multiplication.
 
-### * **IN2** (Type: `adapter::types::unidirectional::ALI`): The second factor (multiplicand 2) for arithmetic multiplication.
 
 * **IN3** (Type: `adapter::types::unidirectional::ALI`): The third factor (multiplicand 3) for arithmetic multiplication.
 
@@ -53,7 +52,6 @@ The calculation timing and the transfer of values are controlled by the `ALI` ad
 
 ---
 
-## Technical Features
 
 * **Generic Building Block:** The attribute `GenericClassName` with the value `'GEN_ALI_MUL'` makes the function block data-type independent. It can be used for various numeric data types (e.g., `INT`, `REAL`, `LREAL`) depending on the specific `ALI` adapter used.
 
@@ -63,7 +61,6 @@ The calculation timing and the transfer of values are controlled by the `ALI` ad
 
 ---
 
-## State Overview
 
 The function block behaves like a classic, stateless mathematical operator (combinatorial behavior):
 
@@ -75,7 +72,6 @@ The function block behaves like a classic, stateless mathematical operator (comb
 
 ---
 
-## Application Scenarios
 
 * **Calculation of Physical Quantities:** Determining volumes (length × width × height) or three-dimensional scales in factory automation.
 
@@ -86,7 +82,6 @@ The function block behaves like a classic, stateless mathematical operator (comb
 
 * ---
 
-## Comparison with Similar Components
 
 Compared to a standard IEC 61131-3 `MUL` component:
 
@@ -97,6 +92,10 @@ Compared to a standard IEC 61131-3 `MUL` component:
 
 ---
 
-## Conclusion
 
 The `ALI_MUL_3` is a modern and highly efficient function block for mathematical operations in the 4diac environment. Through the consistent use of unidirectional adapters, it promotes clean, modularized software design and is ideally suited for complex calculations with three input variables.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

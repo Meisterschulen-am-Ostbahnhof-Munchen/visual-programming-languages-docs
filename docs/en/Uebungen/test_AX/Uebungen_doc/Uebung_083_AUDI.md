@@ -2,9 +2,7 @@
 ![Uebung_083_AUDI_network](./Uebung_083_AUDI_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the use of an up/down counter based on the adapter function block `AUDI_CTUD_UDINT`. Four digital inputs (pushbuttons with single-click detection) control the counter: count up (CU), count down (CD), reset (R), and take over a new counter end value (PV). The current counter value (CV) is displayed on a numeric display, while the outputs QU and QD indicate whether the counter has reached its upper or lower limit.
-## Function Blocks (FBs) Used
 
 - **DigitalInput_CLK_I1** (Type: `logiBUS::io::DI::logiBUS_IE`)
 - Parameters: `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK`
@@ -39,7 +37,6 @@ This exercise demonstrates the use of an up/down counter based on the adapter fu
 - Parameter: `OUT = UDINT#5` (fixed setpoint 5)
 - Converts a constant value (5) into an adapter signal that serves as the PV (Preset Value) for the counter.
 
-## Program Flow and Connections
 
 The circuit operates event-driven via the button inputs:
 
@@ -59,17 +56,19 @@ The circuit operates event-driven via the button inputs:
 
 `` The constant `UDINT#5` on function block `AUDI_UDINT_TO_UDI` specifies that when I4 is activated, the preset value is set to 5 – the counter will then activate the QU output when it reaches 5.
 
-## Summary
 
 This exercise illustrates the use of an adapter-based up/down counter (`AUDI_CTUD_UDINT`) in 4diac. Four push-button inputs serve as control signals (count up, count down, reset, and preset takeover). The output signals QU (limit reached) and QD (zero point) are routed to digital outputs, and the current counter value is displayed numerically. The adapter technology decouples event and data flows, enabling flexible and reusable circuitry.
 
-# Summary
 
 This exercise demonstrates the use of an adapter-based up/down counter (`AUDI_CTUD_UDINT`) in 4diac. Four push-button inputs serve as control signals (count up, count down, reset, and preset takeover). The output signals QU (limit reached) and QD (zero point) are routed to digital outputs, and the current counter value is displayed numerically. The adapter technology decouples event and data flows, enabling flexible and reusable circuitry.
 
-# Summary ... ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Introduction
+## Function Blocks Used (FBs)
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

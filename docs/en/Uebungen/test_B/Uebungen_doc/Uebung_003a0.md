@@ -2,11 +2,11 @@
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a0`. Unlike using types (as in `Uebung_003a`), this exercise demonstrates how to visually group logic without creating separate type definitions in the library. This is achieved using so-called "Untyped SubApps."
 ----
-## Objective of the Exercise
 The main objective of this exercise is to demonstrate methods for structuring applications purely visually. Untyped sub-applications serve as "containers" or folders within a network to encapsulate related functions. They help to tidy up complex diagrams ("tidy up by collapsing") without having to worry about reusability or interface definitions.
 
 -----
 
+## Ziel der Übung
 ## Description and Components
 
 [cite_start]The subapplication `Uebung_003a0.SUB` contains two embedded subapplications (`SubApp` and `SubApp_1`), each with its own signal path[cite: 1].
@@ -15,7 +15,6 @@ The main objective of this exercise is to demonstrate methods for structuring ap
 
 Unlike typed subapplications, which are based on an external definition, the logic of these containers exists only within this specific instance. They have no external inputs or outputs in the interface (in this example) but access the hardware directly.
 
-### Untyped Subapplications 1. **Container `SubApp`**:
 * Contains the logic for channel 2.
 * Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
 
@@ -69,8 +68,9 @@ The encapsulation has no impact on runtime execution. The components behave exac
 
 -----
 
-## Application Example
 
 **Visual Grouping of Functional Areas**:
 
 In a large plant, untyped SubApps could be used to organize the logic thematically, e.g., a container for "Temperature Control," one for "Drive Control," and one for "Safety Monitoring." When you open the main view, you only see these three blocks and not hundreds of individual gates and connections. This makes navigation easier (the "zoom-in" effect), but it's not intended for reuse across multiple projects (for that, you use typed subapps).
+
+## Anwendungsbeispiel

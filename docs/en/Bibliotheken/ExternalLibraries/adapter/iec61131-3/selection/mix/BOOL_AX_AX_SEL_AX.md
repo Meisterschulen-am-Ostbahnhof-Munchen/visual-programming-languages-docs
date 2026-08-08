@@ -3,31 +3,31 @@
 ![BOOL_AX_AX_SEL_AX](./BOOL_AX_AX_SEL_AX.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `BOOL_AX_AX_SEL_AX` is a composite function block for IEC 61499. It performs binary selection between two Boolean signal sources and forwards the selected signal to an output.
 
 The unique feature of this block is the combination of classic event-based data channels and modern, adapter-based interfaces. It is ideally suited for dynamically filtering and forwarding a simple Boolean signal and an adapter-based signal using a selector.
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI0**: Sets the value of the direct data input `IN0` and triggers its processing in the internal network.
 
 
-### **Event Outputs**
 
 * *No direct event outputs are available. Events are output via the output adapter `OUT`.*
 
-### **Data Inputs**
 
 * **IN0** (BOOL): Directly available Boolean input variable, which can be selected.
 
-### **Data Outputs**
 
 * *No direct data outputs are available. Data transmission occurs via the output adapter `OUT`.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 * **IN1** (Socket, Type: `adapter::types::unidirectional::AX`): Adapter-based, selectable data channel.
@@ -47,7 +47,6 @@ The component is internally based on the standard selection logic of IEC 61131-3
 
 The internal memory and conversion elements (`E_D_FF`, `E_D_FF_ANY`, and `F_MOVE`) ensure that the data values are buffered at each relevant event (`EI0`, `G.E1`, or `IN1.E1`) and consistently transmitted to the output. Each change triggers an update of the output adapter `OUT`, including the corresponding event.
 
-## Technical Features
 
 * **Hybrid Interface:** This component acts as a bridge between classic IEC 61499 event control (for `IN0`) and adapter-based signal transmission (for `IN1`, `G`, `OUT`).
 
@@ -66,19 +65,21 @@ The output signal selection follows this logic:
 
 | **TRUE** | `IN1.D1` | Value of `IN1.D1` | `IN1.E1` (if selected) or edge on `G.E1` |
 
-## Application Scenarios
 
 * **Manual/Automatic Switching:** In automatic mode, a control signal is to be obtained from a complex software subsystem via an adapter (`IN1`). In manual mode or during maintenance, a physical, directly wired push button (`IN0`) should take over control. The switchover is performed via the selector `G`.
 
 * **Signal Override / Bypass Control:** Temporarily connecting an emergency or test signal to a standardized adapter line.
 
 
-## Comparison with Similar Function Blocks
 
 * **Standard `F_SEL`:** The classic IEC 61131-3 selection block processes only elementary data types and has no event control or adapter compatibility. `BOOL_AX_AX_SEL_AX` extends this functionality for distributed, event-driven systems.
 
 * **Purely Adapter-Based Selectors:** Unlike pure adapter couplers, this block allows the direct input of a standard Boolean data point (`IN0`) without requiring a separate adapter constructor.
 
-## Conclusion
 
 The `BOOL_AX_AX_SEL_AX` is a useful auxiliary function block for modular control concepts in 4diac. It simplifies signal routing in mixed system architectures where both classic I/O signals and structured adapter connections coexist.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

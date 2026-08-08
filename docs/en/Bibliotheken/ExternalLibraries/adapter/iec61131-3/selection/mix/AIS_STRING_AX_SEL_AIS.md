@@ -5,30 +5,30 @@
 *(No image available)*
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AIS_STRING_AX_SEL_AIS` is used for binary selection between two signal sources of different structures: an adapter input of type `AIS` and a classic string input (`IN1`). The control over which signal is passed to the output adapter is handled by a selector adapter of type `AX`. Internally, the block uses the standardized selection logic according to IEC 61131-3, encapsulated in a fully event-driven IEC 61499 network structure.
 
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI1**: Triggers the acquisition of the data input `IN1` (associated data variable: `IN1`).
 
-### **Event Outputs**
 
 * *No direct event outputs available.* (Event control is implicit via the output adapter `OUT`).
 
-### **Data Inputs**
 
 * **IN1** (STRING): Selectable input variable (string).
 
-### **Data Outputs**
 
 * *No direct data outputs available.* (Data is passed via the output adapter `OUT`).
 
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 * **OUT** (Plug, Type: `adapter::types::unidirectional::AIS`): The selected and updated output. Sends the selected signal to the subsequent logic.
@@ -80,7 +80,6 @@ Since this is a composite function block (FB), its behavior is controlled by the
 
 | **Change (arbitrary)** | Event at `G.E1` | Current value according to selector | Triggered |
 
-## Application Scenarios
 
 * **Status and Text Displays:** Switching a visualization display between a standard system status (provided via the `IN0` adapter) and a dynamic user message (passed as a string to `IN1`).
 
@@ -89,10 +88,14 @@ Since this is a composite function block (FB), its behavior is controlled by the
 * **Recipe Management:** Selection between a standard process parameter string and a manually entered correction value in automated production plants.
 
 
-## Comparison with Similar Function Blocks
 
 Compared to the standard selection block `F_SEL`, this block offers direct integration of IEC 61499 adapters. Developers no longer need to painstakingly decompose the adapter signals into individual data points for selection. All event synchronization is handled out-of-the-box within the block.
 
-## Conclusion
 
 `AIS_STRING_AX_SEL_AIS` provides a convenient and robust solution for bridging the gap between structured adapters and simple string variables in event-driven systems. It significantly minimizes the wiring effort in the higher-level function block diagram and guarantees deterministic behavior during signal changes.
+## Functionality
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

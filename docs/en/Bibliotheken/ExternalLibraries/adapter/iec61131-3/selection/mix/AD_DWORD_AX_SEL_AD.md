@@ -1,7 +1,5 @@
 # AD_DWORD_AX_SEL_AD
 
-```
-```text
                      +-----------------------------+
                      |     AD_DWORD_AX_SEL_AD      |
                      |                             |
@@ -19,29 +17,28 @@
 
 
 * * * * * * * * * *
-## Introduction
 The function block `AD_DWORD_AX_SEL_AD` is a composite function block for IEC 61499 systems. It is used for the binary selection of `DWORD` values. The block enables event-driven switching between a value fed in via an adapter (`IN0`) and a data value directly connected to the block (`IN1`). The selection signal and the selected output value are also transmitted via standardized adapters.
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI1**: Triggers the update and transfer of the directly connected data input `IN1`.
 
 
-### **Event Outputs**
 * *No direct event outputs.* (Event output is encapsulated via the adapter plug `OUT`).
 
-### **Data Inputs**
 * **IN1** (DWORD): Directly available, selectable input variable.
 
-### **Data Outputs**
 * *No direct data outputs.* (Data output is encapsulated via the adapter plug `OUT`).
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 * **OUT** (Plug, Type: `adapter::types::unidirectional::AD`): Outputs the selected `DWORD` value (`D1`) and the corresponding update event (`E1`).
 
-### * **IN0** (Socket, Type: `adapter::types::unidirectional::AD`): First selectable input value (DWORD), supplied via a unidirectional adapter.
 
 * **G** (Socket, Type: `adapter::types::unidirectional::AX`): Selector input. Controls, via a Boolean signal, which of the two inputs (`IN0` or `IN1`) is connected to the output `OUT`.
 
@@ -63,14 +60,12 @@ The component uses a combination of flip-flops (`E_D_FF_ANY` and `E_D_FF`) for s
 
 ---
 
-## Technical Features
 * **Asynchronous Processing**: The internal data flip-flops buffer signal states until a logical evaluation takes place. This ensures reliable processing even with events occurring at different times.
 
 * **Hybrid Interface**: The component combines the classic event/data-based IEC 61499 modeling (input `IN1` / `EI1`) with the more modern, adapter-based modeling (`IN0`, `G`, `OUT`). This facilitates integration into existing, mixed architectures.
 
 ---
 
-## State Overview
 
 The following table shows the output behavior depending on the selection signal `G`:
 
@@ -84,7 +79,6 @@ The following table shows the output behavior depending on the selection signal 
 
 ---
 
-## Application Scenarios
 
 * **Manual/Automatic Switching**: Selection between a manually specified DWORD value (e.g., via an HMI on `IN1`) and an automatic value from the process control (via adapter `IN0`).
 
@@ -95,7 +89,6 @@ The following table shows the output behavior depending on the selection signal 
 
 * ---
 
-## Comparison with Similar Components
 
 * **`F_SEL` (IEC 61131-3)**: The standard selection component lacks event handling and adapter support. `AD_DWORD_AX_SEL_AD` extends this basic functionality with event handling and encapsulation via adapters.
 
@@ -103,5 +96,9 @@ The following table shows the output behavior depending on the selection signal 
 
 --
 
-## Conclusion
 The `AD_DWORD_AX_SEL_AD` is a robust and flexible auxiliary component for structured signal processing. It is ideally suited for applications where clarity and the consistent use of adapters to reduce connection complexity are paramount.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

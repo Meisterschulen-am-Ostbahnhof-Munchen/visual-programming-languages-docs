@@ -2,37 +2,37 @@
 ![E_T_FF_INIT](./E_T_FF_INIT.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block **E_T_FF_INIT** implements a **toggle flip-flop** with integrated initialization logic. It combines the classic behavior of a T flip-flop (switching the output *Q* on each *CLK* event) with targeted output setting during initialization. This block is particularly suitable for applications where a defined initial state is required after startup before normal toggle operation begins.
-## Interface Structure
-### **Event Inputs**
 
 | Event | Type | With Variables | Description |
 |----------|--------|----------------|-------------------------------------------------------|
 | **INIT** | EInit | QI, Q_INIT | Initialization request; sets *Q* to *Q_INIT*. |
 | **CLK** | Event | – | Clock signal; triggers the toggling of *Q* on each rising edge (if *QI* = TRUE). |
 
-### **Event Outputs**
 
 | Event | Type | With Variables | Description |
 |----------|--------|---------------|-------------------------------------------------------|
 | **INITO** | EInit | QO | Initialization confirmation; signals the end of initialization. |
 | **EO** | Event | Q | Output event; is output after each state change of *Q*. |
 
-### **Data Inputs**
 
 | Variable | Type | Description |
 |----------|-------|------------------------------------------------------------|
 | **QI** | BOOL | Enable signal for the normal toggle function. |
 | **Q_INIT** | BOOL | Desired value of *Q* after initialization (if TRUE, *Q* is set). |
 
-### **Data Outputs**
 
 | Variable | Type | Description |
 |----------|-------|-----------------------------------------------------------|
 | **QO** | BOOL | Output qualifier; set to *QI* on INIT, to FALSE on de-initialization. |
 | **Q** | BOOL | Toggle output; toggles with each *CLK* (only if *QI* = TRUE). |
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters** 
 No adapters available.
 
@@ -63,12 +63,10 @@ The module operates as a **state-controlled machine (ECC)** with five states: `S
 
 **Important**: The toggle function is only active if *QI* = TRUE. If *QI* = FALSE, *Q* remains unchanged (the IF condition in the algorithms prevents the change).
 
-## Technical Features
 - **Combined Init/Toggle Logic**: This function block allows the output *Q* to be set to a defined value during initialization (*Q_INIT*). This distinguishes it from a simple T flip-flop, which usually starts in the RESET state.
 - **Enable via QI**: The variable *QI* acts as a global enable. Switching occurs only when *QI* = TRUE at *CLK*. When *QI* = FALSE, INIT events can still be processed, but toggle operation is disabled.
 - **Output Qualifier QO**: *QO* reflects the enable state – it is set to TRUE upon successful initialization and to FALSE upon de-initialization. This allows for easy monitoring of the block status.
 
-## State Overview
 
 | State | Description | Incoming Transition(s) | Outgoing Action (Algorithm) | Outgoing Event |
 |----------|------------------------------------------------------------------------|-----------------------------------------|---------------------------------|----------------------|
@@ -86,7 +84,6 @@ The module operates as a **state-controlled machine (ECC)** with five states: `S
 - `SET / RESET → DeInit` : `INIT & (QI = FALSE)`  
 - `DeInit → START`: always (condition = 1)
 
-## Application Scenarios
 
 1. **Initializing a Machine with a Defined Start State**
 
@@ -111,6 +108,11 @@ In a sequence control, *E_T_FF_INIT* is used as a flip-flop for a step. Initiali
 
 Unlike *E_T_FF*, *E_T_FF_INIT* can set the output to TRUE during initialization and provides explicit enable for toggle operation via *QI*.
 
-## Conclusion
 
 The function block **E_T_FF_INIT** is an extended variant of a T-flip-flop, specifically designed for controllers that require a defined initial state after startup. The combination of initialization (via *Q_INIT*), enable (via *QI*), and switching logic (via *CLK*) makes it highly versatile. It is suitable for safety-critical processes where operation is only permitted with active enable, as well as for applications requiring a reproducible startup state. The clearly structured state machine ensures deterministic and predictable behavior.
+
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -4,15 +4,12 @@
 
 **********
 
-## Introduction
 
 The function block `WSTRING_AIWS_AX_SEL_AIWS` is a composite function block for IEC 61499 systems. Its main function is binary multiplexing between two string inputs (WSTRING). Based on a logical selection signal, it allows either a directly applied string or a signal received via an adapter to be forwarded to an output adapter.
 
 Thanks to the use of adapters, this function block can be seamlessly integrated into modern, service-oriented control architectures within the 4diac IDE.
 
-## Interface Structure
 
-### **Event Inputs**
 
 | Event | Description | Linked Data |
 
@@ -20,11 +17,9 @@ Thanks to the use of adapters, this function block can be seamlessly integrated 
 
 | `EI0` | Triggers the acquisition and processing of the data input `IN0`. | `IN0` |
 
-### **Event Outputs**
 
 *There are no direct event outputs at the block level. Event forwarding is coupled via the output adapter `OUT`.*
 
-### **Data Inputs**
 
 | Data Point | Data Type | Description |
 
@@ -32,10 +27,15 @@ Thanks to the use of adapters, this function block can be seamlessly integrated 
 
 | `IN0` | `WSTRING` | Directly connected, selectable string input. |
 
-### **Data Outputs**
 
 *There are no direct data outputs at the block level. Data forwarding occurs via the output adapter `OUT`.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 | Adapter Name | Type | Direction (Plug/Socket) | Description |
@@ -84,7 +84,6 @@ The function block's internal network connects the adapter's event and data stre
      (AX)         |                         |
                   +-------------------------+
 
-## Technical Features
 
 * **Data Type Consistency:** The function block is internally parameterized for the data type `WSTRING` (Wide Character String). This also allows the processing of Unicode strings.
 
@@ -106,7 +105,6 @@ Since this is a Composite Function Block (CFB) without its own internal Executio
 * **Switching:** `G.E1` triggers -> Selector state changes -> `F_SEL` switches the corresponding path -> The output is updated with the newly selected value and `OUT.E1` is fired.
 
 
-## Application Scenarios
 
 * **Dynamic Text and Speech Switching:** Switching between user interface texts or system messages from a default value (`IN0`) and a dynamically received text resource (`IN1`).
 
@@ -125,3 +123,8 @@ Since this is a Composite Function Block (CFB) without its own internal Executio
 * **Type-Independent Selectors:** ## Conclusion
 
 The `WSTRING_AIWS_AX_SEL_AIWS` function block offers a robust and ready-to-use solution for signal- and event-driven selection of wide-character strings. By encapsulating complex flip-flop and conversion logic, it simplifies the design of clear and maintainable control applications in the 4diac IDE.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

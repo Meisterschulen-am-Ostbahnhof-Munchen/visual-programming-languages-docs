@@ -22,7 +22,7 @@ The function block `F_DWORD_TO_ULINT` converts a `DWORD` value to a `ULINT` valu
 This function block does not use any adapters.
 
 #
-## ## Functionality
+## #
 
 The function block performs the conversion from `DWORD` to `ULINT` as soon as the `REQ` event arrives. The algorithm within the function block uses the function `DWORD_TO_ULINT` to carry out the conversion. After successful conversion, the `CNF` event is triggered, and the converted value is available at the `OUT` output.
 
@@ -42,7 +42,6 @@ This function block has no internal state. Execution occurs exclusively upon the
 ## ⚖️ Comparison with Similar Function Blocks
 - Similar function blocks such as `F_WORD_TO_UINT` or `F_BYTE_TO_USINT` perform similar conversions, but for different data types.
 
-## ⚖️ Comparison with Similar Function Blocks
 - Similar function blocks such as `F_WORD_TO_UINT` or `F_BYTE_TO_USINT` perform similar conversions, but for different data types.
 
 `` - `F_DWORD_TO_ULINT` specializes in converting `DWORD` to `ULINT` and offers no additional functionality.

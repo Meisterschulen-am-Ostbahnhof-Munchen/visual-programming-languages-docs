@@ -27,7 +27,6 @@ The function block `sequence_ET_08` is a sequencer with eight outputs. It allows
 ### **Data Inputs**
 * `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the duration for the automatic transition from the current to the next state. If the value is set to `NO_TIME`, the timed transition for this step is disabled, and an event is required.
 
-### **Data Inputs**
 * `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the duration for the automatic transition from the current to the next state. If the value is set to `NO_TIME`, the timed transition for this step is disabled, and an event is required.
 *
 ### **Data Outputs**

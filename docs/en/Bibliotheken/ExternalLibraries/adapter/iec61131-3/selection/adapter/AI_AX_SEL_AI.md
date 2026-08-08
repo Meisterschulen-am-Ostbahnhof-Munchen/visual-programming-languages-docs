@@ -5,47 +5,44 @@
 *(No image available)*
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AI_AX_SEL_AI` is a binary selector (multiplexer) for analog signals based on the IEC 61499 architecture. It serves to select one of two analog input signals based on a control signal (selector) and forward it to the output. The unique feature of this block lies in its consistent use of adapters, which significantly simplifies and structures the cabling within the 4diac-ide development environment.
 
-## Interface Structure
 
 The function block does not have traditional discrete inputs and outputs for data and events at its main level. Instead, all communication is implemented via standardized adapters.
 
 
-### **Event Inputs**
 *No direct event inputs available (fully encapsulated via adapters).*
 
-### **Event Outputs**
 *No direct event outputs available (fully encapsulated via adapters).*
 
-### **Data Inputs**
 *No direct data inputs available (fully encapsulated via adapters).*
 
-### **Data Outputs**
 *No direct data outputs available (fully encapsulated via adapters).*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
-#### **Sockets (Input Interfaces)**
 * **G** (Type: `adapter::types::unidirectional::AX`): The selector input. This adapter provides the control signal (Boolean state) that determines which of the two analog inputs is routed to the output.
 
-### **Adapters**
 
-#### **Sockets (Input Interfaces)**
 * **G** (Type: `adapter::types::unidirectional::AX`): The selector input. This adapter provides the control signal (Boolean state) that determines which of the two analog inputs is routed to the output.
 
-### * **IN0** (Type: `adapter::types::unidirectional::AI`): Selectable analog input 0. This input is enabled when the selector signal `G` is in the state `FALSE` (0).
 
 * **IN1** (Type: `adapter::types::unidirectional::AI`): Selectable analog input 1. This input is enabled when the selector signal `G` is in the state `TRUE` (1).
 
-#### **Plugs (Output Interfaces)**
 
 * **OUT** (Type: `adapter::types::unidirectional::AI`): Selected analog output. It outputs the signal of the currently active input (`IN0` or `IN1`).
 
 ---
 
+#### **Plugs (Ausgangs-Schnittstellen)**
+#### **Sockets (Eingangs-Schnittstellen)**
 ## Functionality
 
 The module's internal logic controls the data and event flow as follows:
@@ -74,7 +71,6 @@ The module's internal logic controls the data and event flow as follows:
 
 * ---
 
-## Technical Features
 
 * **Data Type Specification:** Internally, the function block uses the data type `INT` (integer) for analog values, which is defined by the parameterization of the internal `F_MOVE` instances.
 
@@ -84,7 +80,6 @@ The module's internal logic controls the data and event flow as follows:
 
 --
 
-## State Overview
 
 The function block operates purely on an event- and data-flow-driven basis. There are no complex internal states (no state machine/ECC in the classical sense), but rather a direct dependency of the output on the inputs:
 
@@ -99,7 +94,6 @@ The function block operates purely on an event- and data-flow-driven basis. Ther
 
 ---
 
-## Application Scenarios
 
 * **Redundant Sensors:** Switching between a primary and a secondary (backup) analog sensor in the event of a detected failure.
 
@@ -109,7 +103,6 @@ The function block operates purely on an event- and data-flow-driven basis. Ther
 
 --
 
-## Comparison with Similar Function Blocks
 
 * **Standard `F_SEL` (IEC 61131-3):** The classic `F_SEL` function block requires discrete pins for events and data. The `AI_AX_SEL_AI` module encapsulates this functionality in user-friendly adapter structures, increasing reusability and clarity in complex IEC 61499 applications.
 
@@ -117,6 +110,10 @@ The function block operates purely on an event- and data-flow-driven basis. Ther
 
 ---
 
-## Conclusion
 
 The `AI_AX_SEL_AI` module provides an elegant, adapter-based solution for the binary selection of analog signals in distributed control systems. Thanks to the clean separation and encapsulation of the interfaces in standardized adapters, it is ideally suited for use in modular and service-oriented automation architectures within Eclipse 4diac.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

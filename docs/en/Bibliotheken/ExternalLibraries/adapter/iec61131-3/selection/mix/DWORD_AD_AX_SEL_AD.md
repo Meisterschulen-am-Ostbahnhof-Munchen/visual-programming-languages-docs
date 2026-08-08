@@ -5,29 +5,28 @@
 *No image available*
 
 * * * * * * * * * *
-## Introduction
 The function block `DWORD_AD_AX_SEL_AD` is a composite function block for the event-driven binary selection of two signal sources of data type `DWORD`. It acts as a multiplexer, which, based on the state of a selection signal `G` (provided via an adapter of type `AX`), switches either the direct data input `IN0` or the input `IN1` (provided via an adapter `AD`) to the output adapter `OUT`.
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI0**: Triggers the acquisition and storage of the directly applied data value `IN0`.
 
 
-### **Event Outputs**
 * *No direct event outputs.* (Event forwarding is handled via the output adapter `OUT`).
 
-### **Data Inputs**
 * **IN0** (DWORD): Directly available, selectable input variable.
 
-### **Data Outputs**
 * *No direct data outputs.* (Data forwarding is handled via the output adapter `OUT`).
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 * **OUT** (Plug, Type: `adapter::types::unidirectional::AD`): The output adapter that outputs the selected `DWORD` value (`D1`) along with the associated update event (`E1`).
 
-### * **IN1** (Socket, Type: `adapter::types::unidirectional::AD`): The input adapter for the alternative selection variable `DWORD`. It provides the date (`D1`) and the update event (`E1`).
 
 * **G** (Socket, Type: `adapter::types::unidirectional::AX`): The selector adapter. The binary signal (`D1`) controls the selection, and the event (`E1`) triggers the update of the selection state.
 
@@ -68,14 +67,12 @@ Inside the function block, several standardized sub-blocks work together to proc
 
 ---
 
-## Technical Features
 * **Complete Event Decoupling:** By using event flip-flops (`E_D_FF`) at all inputs, it is ensured that data is only processed on an explicit event edge. This prevents inconsistent states or unnecessary calculation cycles for purely static signal changes.
 
 * **Adapter-Based Architecture:** The use of standardized unidirectional adapters (`AD` and `AX`) minimizes wiring effort in the higher-level system and increases modularity in the 4diac network.
 
 ---
 
-## State Overview
 
 | State Selector (`G`) | Triggering Event | Active Input | Output Value (`OUT.D1`) | Output Event (`OUT.E1`) |
 
@@ -87,7 +84,6 @@ Inside the function block, several standardized sub-blocks work together to proc
 
 ---
 
-## Application Scenarios
 
 * **Switching between manual and automatic values:** Direct parameter input via an HMI (`IN0` via `EI0`) or use of an automatically calculated value from another program component (`IN1` via adapter).
 
@@ -98,7 +94,6 @@ Inside the function block, several standardized sub-blocks work together to proc
 
 * ---
 
-## Comparison with Similar Function Blocks
 Compared to the standard IEC 61131-3 `F_SEL` function block, `DWORD_AD_AX_SEL_AD` offers the following advantages:
 * **Event Control:** The standard `F_SEL` operates purely on a data flow basis. This function block integrates the event-based implementation of IEC 61499.
 
@@ -106,5 +101,9 @@ Compared to the standard IEC 61131-3 `F_SEL` function block, `DWORD_AD_AX_SEL_AD
 
 --
 
-## Conclusion
 The `DWORD_AD_AX_SEL_AD` is a robust, reusable selection function block for distributed control systems. It is ideally suited for applications where `DWORD` data streams need to be switched in an event-driven and modular manner.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -2,23 +2,18 @@
 ![NVS_AS](./NVS_AS.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block **NVS_AS** serves as an interface for reading and writing SINT (signed integer) data in non-volatile storage (NVS). Storage is performed using a user-defined key (KEY). The block extends access to the NVS with an adapter interface (unidirectional AS type), allowing values to be received and sent via standardized adapter connections. This enables modular and reusable connectivity to storage functions in IEC 61499 applications.
-## Interface Structure
 
-### **Event Inputs**
 
 | Event | Description | Associated Variables |
 |----------|---------------|-----------------------|
 | INIT | Initializes the NVS and triggers the first loading of a stored value. | QI, KEY, DEFAULT_VALUE |
 
-### **Event Outputs**
 
 | Event | Description | Associated Variables |
 |----------|---------------|-----------------------|
 | INITO | Confirmation of initialization and the first loading process. | QO, STATUS |
 
-### **Data Inputs**
 
 | Variable | Type | Description |
 |----------|--------|--------------|
@@ -26,13 +21,18 @@ The function block **NVS_AS** serves as an interface for reading and writing SIN
 | KEY | STRING | Key under which the value is stored in the NVS. |
 | DEFAULT_VALUE | SINT | Default value, read if no value exists under the key. |
 
-### **Data Outputs**
 
 | Variable | Type | Description |
 |----------|--------|--------------|
 | QO | BOOL | Confirms successful initialization and operational readiness. |
 | STATUS | STRING | Status message (e.g., "Success" or error message). |
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
@@ -55,7 +55,6 @@ After an INIT event, the internal NVS block is initialized. Immediately afterwar
 
 The function block therefore operates as a **read and write memory access with automatic feedback of the current value**.
 
-## Technical Features
 - **Adapter-Based Input/Output**
 
 The use of unidirectional AS adapters allows for loose coupling: **AS_IN** receives write requests, **AS_OUT** outputs the stored value. This corresponds to a publisher/subscriber or client/server pattern at the adapter level.
@@ -72,7 +71,6 @@ The function block stores and loads only SINT values. Separate versions are requ
 
 Errors during NVS operations (e.g., invalid key, memory error) are output as an error message via the STATUS output, and QO is set to FALSE.
 
-## State Overview
 The internal NVS module has its own state machine. The following processes are relevant for the user:
 
 | Phase | State |
@@ -84,7 +82,6 @@ The internal NVS module has its own state machine. The following processes are r
 
 A new INIT event can force a re-initialization at any time.
 
-## Application Scenarios
 - **Persistent Device Parameters**
 
 Storing configuration values (e.g., brightness, delay time) in the non-volatile memory of an ESP32, automatically loading them on restart.
@@ -97,7 +94,6 @@ Remembering the last state (e.g., counter reading, production parameters) even a
 
 Integration into a chain of adapters where one module sets values and another reads them.
 
-## Comparison with Similar Modules
 - **NVS (Direct)**
 
 The `NVS` module offers the same functionality, but without an adapter interface. It requires separate event and data lines. `NVS_AS` simplifies integration into adapter-oriented architectures.
@@ -110,10 +106,14 @@ Analogous modules for other data types. The interface and behavior are identical
 
 In some systems, retain variables are also persistent. `NVS_AS` relies on low-level NVS (e.g., on ESP32) and is therefore platform-specific, but offers higher performance and optimized capacity.
 
-## Conclusion
 The **NVS_AS** function block provides a practical, adapter-based encapsulation of non-volatile memory for SINT values. By combining initialization logic, automatic value feedback, and an adapter interface, it is ideally suited for modular IEC 61499 projects that require persistent storage with minimal wiring. The limitation to the SINT type and the automatic GET post-initialization should be noted, but simultaneously simplify handling in many standard applications.
 
-# Conclusion ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

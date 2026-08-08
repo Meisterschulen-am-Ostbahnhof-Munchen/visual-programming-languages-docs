@@ -32,19 +32,15 @@ The function block `AX_SEL_LREAL` is used for binary selection between two analo
 * **G** (Type: `adapter::types::unidirectional::AX`): Unidirectional adapter that functions as a selector. The control signal for selecting the active input is read via this adapter.
 
 
-### **Data Outputs**
 
 * **OUT** (LREAL): The currently selected input value.
 
-### **Adapters**
 
 * **G** (Type: `adapter::types::unidirectional::AX`): Unidirectional adapter that functions as a selector. This adapter reads the control signal for selecting the active input.
 
-### **Data Outputs**
 
 * **OUT** (LREAL): The currently selected input value.
 
-### **Adapters**
 
 * **G** (Type: `adapter::types::unidirectional::AX`): Unidirectional adapter that functions as a selector. ---
 

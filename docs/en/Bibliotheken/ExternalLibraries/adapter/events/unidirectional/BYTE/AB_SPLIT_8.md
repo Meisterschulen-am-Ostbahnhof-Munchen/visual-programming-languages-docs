@@ -68,7 +68,6 @@ The **AB_SPLIT_8** has no internal states or state machines. Signal transmission
 
 The **AB_SPLIT_8** function block is a simple yet effective block for multiplying a unidirectional AB adapter signal. Its generic design and passive operation make it ideal for parallelizing control and monitoring signals in automation technology. The absence of state logic ensures low runtime complexity and high reliability. This function block is a valuable addition to any 4diac library that relies on adapter communication.
 
-## Conclusion
 
 The **AB_SPLIT_8** function block is a simple yet effective block for multiplying a unidirectional AB adapter signal. ---
 

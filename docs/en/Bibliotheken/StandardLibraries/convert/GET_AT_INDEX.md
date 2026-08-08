@@ -21,7 +21,6 @@ The `GET_AT_INDEX` function block has a clearly defined interface structure with
 * **IN_ARRAY** (Type: `ANY`)
 * The input array from which a value is to be retrieved. The data type is generic (`ANY`) but must match the output.
 
-### **Data Inputs**
 * **IN_ARRAY** (Type: `ANY`)
 * The input array from which a value is to be retrieved. The data type is generic (`ANY`) but must match the output.
 * **INDEX** (Type: `UINT`)

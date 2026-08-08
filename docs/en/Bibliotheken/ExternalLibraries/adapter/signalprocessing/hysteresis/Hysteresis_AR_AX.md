@@ -31,7 +31,6 @@ The function block `Hysteresis_AR_AX` is a basic function block (BFB) for event-
 The function block uses standardized, unidirectional adapters for clean, modular coupling of data and events.
 
 
-### **Adapters**
 
 The function block uses standardized, unidirectional adapters for clean, modular coupling of data and events.
 

@@ -36,15 +36,12 @@ The function block only has adapter connections (socket and plug) through which 
 
 | Type | Name | Direction |
 
-### **Adapter**
 
 | Type | Name | Direction |
 
-### **Adapter**
 
 | Type | Name | Direction |
 
-### **Data Outputs**
 
 | Type | Name | Direction |
 | |------------|----------|----------|

@@ -2,20 +2,15 @@
 ![ALR_TO_AI](./ALR_TO_AI.svg)
 
 * * * * * * * * * *
-## Introduction
 The **ALR_TO_AI** function block is a composite block that converts an ALR (LREAL data) adapter to an AI (INT data) adapter. It is used to convert signals from agricultural technology (e.g., sensor values) to a standardized integer-based adapter interface. The block encapsulates the conversion and event forwarding, thus simplifying integration into existing 4diac applications.
-## Interface Structure
 
-### **Event Inputs**
 
 The function block does not have its own top-level event inputs. Event control is handled via the connected socket `ALR_IN`:
 
 | Input | Type | Description |
 | Input | Type | Description |
-# |---------|-----|--------------|
 | `ALR_IN` | ALR (Socket) | Adapter that triggers the conversion via its event (`E1`) |
 
-### **Event Outputs**
 
 The FB does not have any independent event outputs at the top level. Event feedback is provided via the connected plug `AI_OUT`:
 
@@ -23,7 +18,6 @@ The FB does not have any independent event outputs at the top level. Event feedb
 |---------|-----|---------------|
 | `AI_OUT` | AI (Plug) | Adapter that outputs the converted event (`E1`) after successful conversion |
 
-### **Data Inputs**
 
 The **data input signal** is provided via socket `ALR_IN`:
 
@@ -31,7 +25,6 @@ The **data input signal** is provided via socket `ALR_IN`:
 -----------------|----------|--------------|
 | `ALR_IN.D1` | LREAL | The floating-point value to be converted |
 
-### **Data Outputs**
 
 The **data output signal** is provided via plug `AI_OUT`:
 
@@ -39,6 +32,12 @@ The **data output signal** is provided via plug `AI_OUT`:
 -----------------|----------|--------------|
 | `AI_OUT.D1` | INT | The converted integer value |
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 The function block has two adapter interfaces:
@@ -60,21 +59,17 @@ The **ALR_TO_AI** function block contains an internal conversion block `F_LREAL_
 
 The entire process is synchronous and performed in a single step.
 
-## Technical Features
 * The function block (FB) is a **composite function block** – it does not have its own state machine (ECC) but implements the logic via an internal subnetwork.
 * The conversion follows the IEC 61131-3 function `LREAL_TO_INT`: decimal places are truncated (truncation to zero), and overflows or underflows are implementation-dependent.
 * The function block is designed as a unidirectional adapter coupling – no feedback channels are supported.
 
-## State Overview
 
 As a composite FB, **ALR_TO_AI** does not have its own state diagram. The internal converter `F_LREAL_TO_INT` operates in an event-driven manner: An event at input `REQ` triggers the conversion, and output `CNF` signals the end of the operation. The function block behaves like a transparent block for event and data forwarding.
 
-## Application Scenarios
 * **Sensor Value Processing**: Conversion of an LREAL signal (e.g., from an analog sensor adapter) into an INT signal, which is then processed by a PLC or a controller with integer-based adapters.
 * **Adapter Bridge**: Connecting adapter types of different physical units when only the data type, not the scaling, needs to be changed.
 * **Interface Adaptation**: Used in agricultural control systems (e.g., HR Agricultural Technology – general), where LREAL values from sensors are mapped to a CAN-based INT adapter interface.
 
-## Comparison with Similar Function Blocks
 
 | FB | Function | Difference |
 |----|----------|-------------|
@@ -84,13 +79,18 @@ As a composite FB, **ALR_TO_AI** does not have its own state diagram. The intern
 
 The **ALR_TO_AI** function block simplifies reuse by encapsulating the adapter logic and conversion in a single block.
 
-## Conclusion
 
 The **ALR_TO_AI** is a practical composite function block for the standardized conversion of LREAL-based to INT-based adapter interfaces. It allows for a clean separation of data conversion and adapter logic and facilitates integration into larger automation projects. Thanks to its clear event forwarding and the use of an IEC 61131 basic function, it is reliable and easy to use.
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

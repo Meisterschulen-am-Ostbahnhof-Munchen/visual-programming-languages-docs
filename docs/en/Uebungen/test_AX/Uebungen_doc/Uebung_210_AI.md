@@ -26,7 +26,7 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 in an adap
 - **Function**: Reads the digital input `Input_I2` and provides it as a reset signal (R) via an adapter output.
 
 #
-## ### FB: Output_Q1
+## ##
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**: `QI = TRUE`, `Output = Output_Q1`
 - **Function**: Controls the digital output `Output_Q1`. The output becomes active as soon as the counter reaches or exceeds the preset value.
@@ -36,12 +36,9 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 in an adap
 - **Function**: Converts the analog counter value (CV) to the AUDI format required for terminal output. **Note**: This function block cannot represent negative numbers.
 ...### FB: AI_TO_AUDI
 
-### FB: AI_TO_AUDI
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Function**: Converts the analog counter value (CV) to the AUDI format required for terminal output. **Note**: This function block cannot represent negative numbers.
 
-### FB: AI_TO_AUDI
-### FB: AI_TO_AUDI
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Function**: `QI = TRUE`, `Output = Output_Q1`
 - **Function**: `QI = TRUE`, `Output = Output_Q1`

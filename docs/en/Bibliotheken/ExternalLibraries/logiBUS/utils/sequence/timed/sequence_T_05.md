@@ -23,12 +23,9 @@ The function block `sequence_T_05` is a time-controlled sequencer with five outp
 ### **Data Inputs**
 All time data inputs are of type `TIME` and have the initial value `NO_TIME`. They define the dwell time in the respective state before the automatic transition to the next state occurs.
 
-### Data Inputs**
 All time data inputs are of type `TIME` and have the initial value `NO_TIME`. They define the dwell time in the respective state before the automatic transition to the next state occurs.
 
-### Data Inputs**
 
-### Data Inputs**
 ** ... * **`DT_S1_S2`**: Retention time in `State_01` before the transition to `State_02`.
 
 * **`DT_S2_S3`**: Retention time in `State_02` before the transition to `State_03`.

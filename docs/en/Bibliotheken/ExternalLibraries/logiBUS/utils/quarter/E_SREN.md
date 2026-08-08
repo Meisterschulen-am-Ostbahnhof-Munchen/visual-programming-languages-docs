@@ -37,7 +37,6 @@ The E_SREN function block is implemented as a Basic function block and has an in
 ## Technical Features
 * **State Detection:** The function block stores the previous initial state in the internal variables `old_Q` and `old_QB`. The output event `EO` is only generated when an actual state change occurs, thus preventing redundant event outputs.
 
-## Technical Features
 * **State Detection:** The function block stores the previous initial state in the internal variables `old_Q` and `old_QB`. The output event `EO` is only generated when an actual state change occurs, preventing redundant event outputs.
 * **Library Dependency:** The specific byte values for the `QB` output are imported from the constant library `logiBUS::utils::quarter::const::quarter`. Correct functionality requires the availability of this library.
 * **Four-State Logic:** The logic of the `NONE` event is special: While `QB` is set to `COMMAND_NO_ACTION`, the Boolean output `Q` remains explicitly unchanged.
@@ -65,7 +64,6 @@ The ECC (Execution Control Chart) consists of six states:
 ## ⚖️ Comparison with Similar Function Blocks
 * **E_SR (Bistable Function):** The classic set-reset flip-flop only has two stable states (`TRUE`/`FALSE`). The E_SREN extends this concept to include two additional states (`ERROR`, `NO_ACTION`), which are encoded via a dedicated byte (`QB`).
 
-## ⚖️ Comparison with Similar Function Blocks
 * **E_SR (Bistable Function):** The classic set-reset flip-flop only has two stable states (`TRUE`/`FALSE`). The E_SREN extends this concept to include two additional states (`ERROR`, `NO_ACTION`), which are encoded via a dedicated byte (`QB`).
 * **E_D_FF (D-Flip-Flop):** Assumes a data value on a clock event. The E_SREN is event-driven (four different events) and has no separate data input. The "data" is implicitly contained in the triggering events.
 

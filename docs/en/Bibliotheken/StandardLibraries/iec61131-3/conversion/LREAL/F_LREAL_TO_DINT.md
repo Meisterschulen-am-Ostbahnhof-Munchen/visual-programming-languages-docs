@@ -24,7 +24,6 @@ This function block does not have any adapters.
 ## Operation
 When the `REQ` event is triggered, the algorithm is executed that converts the `IN` value from LREAL to DINT and outputs the result to `OUT`. The `CNF` event is then triggered to signal the successful completion of the operation.
 
-### **Adapters**
 
 #
 ## Technical Features

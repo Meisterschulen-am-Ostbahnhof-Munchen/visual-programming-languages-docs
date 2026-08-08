@@ -1,22 +1,22 @@
 Here is the documentation for exercise **Exercise_035b** based on the provided XML data.
-# Exercise_035b: Mirror Sequence V2 with Step Chain
 ![Uebung_035b_network](./Uebung_035b_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise implements a step chain controller (sequencer) called "Mirror Sequence V2." The goal is the sequential control of four digital outputs (Q1 to Q4). Additionally, the current status of the step chain is visualized as a numerical value on a user interface. Control is achieved via digital inputs, which can start, modify, or reset the sequence.
 
-## Function Blocks Used
 
 This application uses various function blocks from the libraries `logiBUS`, `isobus`, and `iec61131`.
 
-### Main Function Blocks
 * **DigitalInput_CLK_I1** to **DigitalInput_CLK_I4** (`logiBUS::io::DI::logiBUS_IE`): These function blocks process the physical input signals (pushbuttons). They are configured to respond to the event `BUTTON_SINGLE_CLICK`.
 * **DigitalOutput_Q1** to **DigitalOutput_Q4** (`logiBUS::io::DQ::logiBUS_QX`): These function blocks control the physical outputs (lamps/actuators).
 * **Q_NumericValue** (`isobus::UT::Q::Q_NumericValue`): Used to display a numeric value on a Universal Terminal (UT). The object ID `OutputNumber_N1` is used here.
 * **F_SINT_TO_UINT** (`iec61131::conversion::F_SINT_TO_UINT`): A conversion block that converts the Short Integer (SINT) data type to Unsigned Integer (UINT) to make it compatible for display.
 * **E_RTimeOut** (`iec61499::events::E_RTimeOut`): *Note: This block is placed in the network but is not currently wired in the exercise (according to the comment, this is a "TODO" for a future example).*
 
+### Haupt-Bausteine
+## Function Blocks Used (FBs)
+## Introduction
+# Uebung_035b: Spiegelabfolge V2 mit Schrittkette
 ### Sub-blocks: sequence_ET_04
 
 This is the central logic block of the exercise.
@@ -38,7 +38,6 @@ This is the central logic block of the exercise.
 * `DO_S1` to `DO_S4`: Data outputs (BOOL) that carry the status of the respective step.
 * `STATE_NR`: Outputs the current step number as a number.
 
-## Program Flow and Connections
 
 The exercise sequence is determined by the interaction of the buttons with the sequencer module:
 
@@ -61,13 +60,14 @@ The exercise sequence is determined by the interaction of the buttons with the s
 * The current step number (`STATE_NR` from the sequencer) is sent to the converter `F_SINT_TO_UINT`.
 * The converted value (`u32NewValue`) is passed to the function block `Q_NumericValue` to display the active step number on the display (object `OutputNumber_N1`).
 
-## Summary
 
 Exercise **Exercise_035b** demonstrates the implementation of a more complex step sequencer (`sequence_ET_04`) within the 4diac IDE. It combines manual user input (start, reset, specific transition triggers) with time-based parameters to sequentially switch four outputs. Simultaneously, the internal state of the logic (the step number) is visualized for the user on a display.
 
-# Summary ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

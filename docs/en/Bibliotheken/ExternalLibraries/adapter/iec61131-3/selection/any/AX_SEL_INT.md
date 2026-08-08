@@ -6,13 +6,10 @@
 
 * * * * * * * * * *
 
-## Introduction
 
 The function block `AX_SEL_INT` is a standard selection function block according to IEC 61499. It is used for binary selection between two integer input values (`INT`) via a selector signal provided by a unidirectional adapter. The block is designed to process events with high efficiency and output an optimized event.
 
-## Interface Structure
 
-### **Event Inputs**
 
 | Event | Description | Associated Data |
 
@@ -22,7 +19,6 @@ The function block `AX_SEL_INT` is a standard selection function block according
 
 **EI1** | Signals an update to the input value `IN1`. | `IN1` |
 
-### **Event Outputs**
 
 | Event | Description | Associated Data |
 
@@ -30,7 +26,6 @@ The function block `AX_SEL_INT` is a standard selection function block according
 
 **CNF** | Confirmation event that signals a change or update to the selected output value. | `OUT` |
 
-### **Data Inputs**
 
 | Variable | Data Type | Description |
 
@@ -40,7 +35,6 @@ The function block `AX_SEL_INT` is a standard selection function block according
 
 | **IN1** | INT | Second selectable integer input value (selected if the selector is `TRUE`). |
 
-### **Data Outputs**
 
 | Variable | Data Type | Description |
 
@@ -48,6 +42,12 @@ The function block `AX_SEL_INT` is a standard selection function block according
 
 | **OUT** | INT | The currently selected integer output value. |
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 | Adapter Name | Type | Direction | Description |
@@ -73,7 +73,6 @@ If the signal is `FALSE`, the value of `IN0` is passed through to the output `OU
 3. **Event Filtering (Important Feature):** An output event (`CNF`) is primarily generated when the selection signal of the adapter `G` changes or when the resulting output value actually changes. This prevents an unnecessary flood of events in the subsequent control network during redundant data updates.
 
 
-## Technical Features
 
 * **Composite Function Block Network:** The function block is internally composed of several standard auxiliary blocks, including `F_SEL` (selection function according to IEC 61131-3), `F_MOVE` (value transmission), and `E_D_FF_ANY` (event-triggered D flip-flops for edge detection and value change verification).
 
@@ -81,7 +80,6 @@ If the signal is `FALSE`, the value of `IN0` is passed through to the output `OU
 
 * **Adapter Coupling:** * **Efficient Event Propagation:** Due to internal filtering, the output event `CNF` is only triggered when a genuine change occurs (especially when the selector `G` is changed).
 
-## State Overview
 
 Since this is a composite function block (FB) without its own state machine (ECC), its behavior is directly determined by the signal flow in the internal network:
 
@@ -107,6 +105,10 @@ Since this is a composite function block (FB) without its own state machine (ECC
 
 * **`AX_SEL_REAL`:** Identical functionality, but specifically designed for the floating-point data type `REAL`, while `AX_SEL_INT` is optimized for integer values `INT`.
 
-## Conclusion
 
 The `AX_SEL_INT` is a robust and reusable function block for discrete-event control technology. Through its integrated filtering of redundant events, it makes a significant contribution to performance optimization and stability within 4diac-based runtime environments.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

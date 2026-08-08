@@ -5,29 +5,29 @@
 *(No image available)*
 
 * * * * * * * * * *
-## Introduction
 The function block `AIWS_AX_SEL_AIWS` is used for binary selection between two unidirectional adapter signals of type `AIWS`. Which of the two inputs is switched to the output is controlled by a control adapter of type `AX`.
 
 
 
  The function block encapsulates the classic selection logic (comparable to the `SEL` standard function block from IEC 61131-3) within the event-driven environment of IEC 61499. This enables clean, modular, and transparent signal switching directly at the adapter level, eliminating the need to individually wire event and data lines in the higher-level system.
 
-## Interface Structure
 
 Because it is an adapter-based function block, the block itself does not have direct, classic event or data inputs and outputs on its outer casing. All communication is handled via the adapter interfaces.
 
-### **Event Inputs**
 *No direct event inputs available (events are received via the adapter sockets).*
 
-### **Event Outputs**
 *No direct event outputs available (events are sent via the adapter plug).*
 
-### **Data Inputs**
 *No direct data inputs available.*
 
-### **Data Outputs**
 *No direct data outputs available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 #### **Sockets (Input Adapters)**
@@ -75,12 +75,10 @@ The internal function block `F_SEL` (IEC 61131-3 `SEL`) evaluates the state of t
 
 The selected signal is passed via another `F_MOVE` block and an output flip-flop (`E_D_FF_ANY_OUT`) to data point `D1` of the output plug `OUT`. Simultaneously, the event `E1` is triggered at the output to inform subsequent blocks about the data update.
 
-## Technical Features
 * **Data type `WSTRING`:** The adapter data is processed internally via `F_MOVE` blocks with the data type `WSTRING`. This means that the user data within the `AIWS` adapter is transmitted and switched as wide strings.
 
 * **Event Decoupling:** By using flip-flops (`E_D_FF`), it is ensured that any change to the inputs or the selector results in an immediate and consistent update of the output.
 
-## State Overview
 
 The logical mapping of the output, depending on the selector `G`, is as follows:
 
@@ -94,7 +92,6 @@ The logical mapping of the output, depending on the selector `G`, is as follows:
 
 
 
- ## Application Scenarios
 
 * **Switching Analog Values with Status (formatted as WSTRING):** Redundant sensor systems where, in case of a fault, the system should switch from sensor 1 (`IN0`) to a backup sensor 2 (`IN1`).
 
@@ -109,5 +106,9 @@ The logical mapping of the output, depending on the selector `G`, is as follows:
 
 * **Multiplexer (`MUX`):** A classic multiplexer allows selection from more than two channels via an integer index. The `AIWS_AX_SEL_AIWS` is optimized for fast and resource-efficient binary selection (2 channels).
 
-## Conclusion
 The `AIWS_AX_SEL_AIWS` is a highly specialized auxiliary module for IEC 61499 systems (such as 4diac-ide) that elegantly and deterministically switches complex data and event streams between two adapters. It significantly reduces "spaghetti code" and confusing wiring in graphical programming environments.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

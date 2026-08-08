@@ -75,7 +75,6 @@ The function block operates as a stateless (or purely event-driven) arithmetic b
 
 ---
 
-## State Overview
 **The function block operates as a stateless (or purely event-driven) arithmetic block:**
 
 **Ready (Idle):** The block waits for value changes or trigger signals at the input adapters `IN1`, `IN2`, or `IN3`. 2. **Evaluation:** After a signal arrives, the values are read and summed.

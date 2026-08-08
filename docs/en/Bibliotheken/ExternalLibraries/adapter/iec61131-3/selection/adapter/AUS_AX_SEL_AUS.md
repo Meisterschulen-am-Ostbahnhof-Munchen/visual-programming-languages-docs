@@ -5,29 +5,29 @@
 *(No image available)*
 
 * * * * * * * * * *
-## Introduction
 
 The function block **OFF_AX_SEL_OFF** is a binary selector (multiplexer) for IEC 61499 systems. It is used to select between two input adapters (`IN0` and `IN1`) based on the state of a selection signal (selector `G`) and to forward the selected value to the output adapter (`OUT`).
 
 The block uses unidirectional adapter structures, which enables clean encapsulation of data and event streams and simplifies visual routing within the development environment.
 
 
-## Interface Structure
 
 Since this function block is implemented as a composite network and is entirely adapter-based, it has no direct, traditional event or data channels at its main level. All communication is bundled within the adapters.
 
-### **Event Inputs**
 *No direct event inputs are available (events are received via the adapter interfaces).*
 
-### **Event Outputs**
 *No direct event outputs are available (events are sent via the adapter interfaces).*
 
-### **Data Inputs**
 *No direct data inputs are available.*
 
-### **Data Outputs**
 *No direct data outputs are available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 #### **Adapters**
 
 #### **Sockets (Input Adapters)**
@@ -76,7 +76,6 @@ The module encapsulates an internal network that extracts and processes the adap
 
 4. **Output:** The result is passed via another flip-flop (`E_D_FF_ANY_OUT`) to the output adapter `OUT`, triggering the event `OUT.E1` simultaneously with the provision of the data on `OUT.D1`.
 
-## Technical Features
 
 * **Event-driven:** The output is updated immediately with every change to the inputs or the selector and assigned a new event.
 
@@ -84,7 +83,6 @@ The module encapsulates an internal network that extracts and processes the adap
 
 * **Adapter Encapsulation:** Facilitates the clean design of application diagrams, as complex data and event pairs are represented as a single connection (bus).
 
-## State Overview
 
 Since this is a composite function block without its own Execution Control Chart (ECC), its behavior is determined purely by the signal flow:
 
@@ -96,7 +94,6 @@ Since this is a composite function block without its own Execution Control Chart
 
 | `1` / `TRUE` | Any (`G.E1`, `IN0.E1`, `IN1.E1`) | Returns the value of `IN1.D1`; Triggers `OUT.E1`. |
 
-## Application Scenarios
 
 * **Setpoint Switching:** Dynamic switching of a target variable (e.g., a speed or stage of type `USINT`) between automatic operation (`IN1`) and manual operation (`IN0`).
 
@@ -113,3 +110,8 @@ Compared to the standard selection module `F_SEL` from the IEC 61131-3 library, 
 Compared to the standard selection module `F_SEL` from the IEC 61131-3 library, `AUS_AX_SEL_AUS` offers the crucial advantage of being able to work directly with manufacturer-specific or standardized unidirectional adapters (`AUS` and `AX`). While event and data lines in `F_SEL` have to be laboriously wired individually according to IEC 61499, this is done fully automatically within the module itself. ## Conclusion
 
 The **AUS_AX_SEL_AUS** function block represents an important bridge for modern, adapter-based IEC 61499 architectures. It combines the proven selection logic of IEC 61131-3 with the advantages of event-driven adapter coupling, thus significantly contributing to the clarity and maintainability of control software.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -2,11 +2,11 @@
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003a0_AX`. Unlike the use of types (as in `Uebung_003a_AX`), this exercise demonstrates how to visually group logic without creating separate type definitions. This is achieved using so-called "untyped subapps."
 ----
-## Objective of the Exercise
 The main objective of this exercise is to demonstrate methods for structuring applications purely visually. Untyped subapps serve as "containers" or folders within a network to encapsulate related functions. They help to clean up complex diagrams ("clean up by collapsing") without having to worry about reusability or interface definitions.
 
 -----
 
+## Ziel der Übung
 ## Description and Components
 
 [cite_start]The subapplication `Uebung_003a0_AX.SUB` contains two embedded subapplications (`SubApp` and `SubApp_1`), each with its own signal path[cite: 1].
@@ -15,7 +15,6 @@ The main objective of this exercise is to demonstrate methods for structuring ap
 
 Unlike typed subapplications, which are based on an external definition, the logic of these containers exists only within this specific instance.
 
-### Untyped Subapplications 1. **Container `SubApp`**:
 * Contains the logic for channel 2.
 * Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
 
@@ -69,8 +68,9 @@ The encapsulation has no impact on runtime execution. The components behave exac
 
 -----
 
-## Application Example
 
 A typical application example is the **Visual Grouping of Functional Areas**:
 
 In a large plant, one could use untyped sub-apps to organize the logic thematically, e.g., a container for "Temperature Control," one for "Drive Control," and one for "Safety Monitoring." When the main view is opened, only these three blocks are visible, rather than hundreds of individual gates and connections. This facilitates navigation (the "zoom-in" effect) but is not intended for reuse (typed sub-apps are used for this).
+
+## Anwendungsbeispiel

@@ -12,12 +12,12 @@ This article describes the logiBUS® exercise `Uebung_031`. Here, we control add
 
 ----
 
-## Objective of the Exercise
 
 Using the RGB library for the ESP32. This demonstrates how to define colors not using red-green-blue (RGB) values, but rather using hue, saturation, and value, and how to send these values to an LED strip.
 
 -----
 
+## Ziel der Übung
 ## Description and Components
 
 [cite_start]The subapplication `Uebung_031.SUB` uses a conversion module and a strip driver[cite: 1].
@@ -25,7 +25,6 @@ Using the RGB library for the ESP32. This demonstrates how to define colors not 
 ### Function Blocks (FBs)
 * **`hsv2rgb`**: Converts the intuitive HSV values into the RGB values required by the hardware.
 
-# * **`strip_set_pixel`**: Transfers the color values to a specific LED in the strip.
 * **`I1` (Set)**: Clicking this triggers the setting of the color.
 * **`I2` (Clear)**: Clicking this clears the display (LED off).
 
@@ -43,7 +42,6 @@ Using the RGB library for the ESP32. This demonstrates how to define colors not 
 
 -----
 
-## Application Example
 
 **Custom Design Lighting**:
 
@@ -51,5 +49,7 @@ The ambient lighting in a cabin should be adjustable. A rotary knob (potentiomet
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+
+## Anwendungsbeispiel
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

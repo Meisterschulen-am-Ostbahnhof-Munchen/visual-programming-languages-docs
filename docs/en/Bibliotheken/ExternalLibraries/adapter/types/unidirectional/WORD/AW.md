@@ -14,3 +14,4 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | WORD | Indication (or Request) Data from Plug |
+### Data

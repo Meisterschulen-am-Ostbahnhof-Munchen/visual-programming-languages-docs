@@ -18,7 +18,6 @@ This exercise implements an upward counter (count-up) based on the standard func
 ### Functionality of the Individual Function Blocks
 - **FB_CTU**: The up counter increments the internal counter value *CV* by 1 on each rising edge at the *CU* input. When *CV* reaches the preset value *PV* (here: 5), the output *Q* is set. A signal at the *R* input resets *CV* to 0 and *Q* to FALSE. The function block is activated via the *REQ* event input.
 
-### Functionality of the Individual Function Blocks
 - **FB_CTU**: The up counter increments the internal counter value *CV* by 1 on each rising edge at the *CU* input. - **Input_CU** and **Input_R**: Each reads a digital hardware input (logiBUS terminal) and outputs an event (*IND*) and the current state (*IN*) upon a signal change.
 - **Output_Q1**: Receives an event and sets the connected digital output to the value of the data input *OUT*.
 - **F_INT_TO_UDINT**: Converts the current counter value *CV* (data type `INT`) into an unsigned 32-bit value (`UDINT`), as the subsequent terminal output can only process positive values.

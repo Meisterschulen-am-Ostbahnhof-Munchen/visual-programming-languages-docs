@@ -13,9 +13,7 @@ This exercise uses specific function blocks for input processing, adapter conver
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Description**: These modules serve as an interface to the physical pushbuttons.
 
-### Sub-modules:
 
-### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Description**: These modules serve as an interface to the physical pushbuttons. ... - **Parameters**:
 - `QI`: `TRUE` (Block is active)

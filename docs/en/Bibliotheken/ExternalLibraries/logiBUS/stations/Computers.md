@@ -19,7 +19,6 @@ The constants are defined when the project is compiled. Each constant is assigne
 ## Technical Specifications
 * **Type:** All constants are of type `WSTRING`, which supports Unicode strings.
 
-## Technical Specifications
 * **Type:** All constants are of type `WSTRING`, which supports Unicode strings.
 * **Scope:** As global constants, they are available within the declared package (`logiBUS::stations`).
 * **Initialization:** The values are assigned directly upon declaration and are read-only at runtime.

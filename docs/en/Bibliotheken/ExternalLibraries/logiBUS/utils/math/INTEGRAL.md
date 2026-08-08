@@ -20,7 +20,6 @@ The function block `INTEGRAL` approximates the time integral of an input signal.
 ### **Data Outputs**
 * **OUT** (`REAL`, initial value: `0.0`): The current value of the integral. It is calculated by summing all partial integrals (`IN * TM`). The unit is `[IN] * Sekunden` because the time value `TM` is internally converted from milliseconds to seconds.
 
-### Data Outputs**
 * **OUT** (`REAL`, initial value: `0.0`): The current value of the integral. It is calculated by summing all partial integrals (`IN * TM`). The unit is `[IN] * Sekunden` because the time value `TM` is internally converted from milliseconds to seconds.
 * * **OVERFLOW** (`BOOL`, initial value: `FALSE`): Indicates an overflow. If this output is `TRUE`, the value of `OUT` has exceeded the representable range of the `REAL` data type. The integration function is blocked until it is reinitialized by a `RESET` event.
 

@@ -82,7 +82,6 @@ This returns the function block to the **WAIT** state.
 ## Conclusion
 The **AD_TO_AS** function block provides a compact and standardized solution for converting DWORD to SINT data in an event-driven adapter environment. By utilizing the IEC 61131 library function and its clear, event-based execution, it is reliable and easily integrated into existing control projects. The unidirectional structure limits its application to a simple data flow, which is sufficient for many use cases.
 
-## Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

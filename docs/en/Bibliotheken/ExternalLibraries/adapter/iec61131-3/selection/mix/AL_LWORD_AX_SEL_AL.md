@@ -71,7 +71,6 @@ As soon as an input value or the selection signal changes and has been recalcula
 
 ---
 
-## Technical Features
 * **Asymmetrical Design:** The component combines an adapter input (`IN0`) and a standard pin input (`IN1`). This is especially useful when comparing or switching a signal from an adapter-based bus structure with a localized value generated within the application.
 
 

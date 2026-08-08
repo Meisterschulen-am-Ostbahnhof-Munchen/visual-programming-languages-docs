@@ -81,7 +81,6 @@ When `StringValue_IS` receives a new string from the ISOBUS object, it sends the
 
 1. **Start**: `INI` initializes → `INITO` → `GET` → reads stored value → `GETO` → `Q_StringValue.REQ` → outputs the stored string.
 
-### Flowchart (Simplified)
 
 1. **Start**: `INI` initializes → `INITO` → `GET` → reads stored value → `GETO` → `Q_StringValue.REQ` → outputs stored string. 2. **New Input**: `StringValue_IS` receives a new string → `IND` → `INI.SET` → stores the new value.
 

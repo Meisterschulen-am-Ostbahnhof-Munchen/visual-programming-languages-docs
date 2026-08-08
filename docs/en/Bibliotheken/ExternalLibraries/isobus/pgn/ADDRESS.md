@@ -50,7 +50,6 @@ There is no directly equivalent function block in the IEC 61499 standard library
 
 * **Direct Value Input (Magic Numbers):** Directly writing the values `254` or `255` in the code is possible, but poor practice, as it impairs readability and maintainability.
 
-## ⚖️ Comparison with Similar Function Blocks
 
 There is no directly equivalent function block in the IEC 61499 standard library, as global constants are a language-specific extension (derived from Structured Text) within the 4diac IDE. * **Constant Blocks in Other Languages:** In function block programming languages like CFC or SFC, comparable constants are often defined in separate header files or global variable lists.
 

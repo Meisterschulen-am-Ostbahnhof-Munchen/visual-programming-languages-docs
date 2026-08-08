@@ -105,18 +105,15 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 ### Difficulty Level
 Advanced – Basic knowledge of the 4diac IDE and working with function blocks is required.
 
-### Learning Objectives
 - Understanding the interlock concept for motor controllers
 - Working with the function block `ILOCK_CONFLICT_TRIP` (conflict/trip logic)
 - Linking event and data flows in the 4diac IDE
 - Using an OR gate for simultaneous enabling
 - Error handling via a reset mechanism
 
-### Difficulty Level
 
 Advanced – Basic knowledge of the 4diac IDE and working with function blocks is required.
 
-### Learning Objectives
 ...``
 ### Prerequisites
 - Fundamentals of IEC 61499

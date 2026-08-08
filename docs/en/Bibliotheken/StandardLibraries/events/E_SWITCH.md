@@ -4,29 +4,28 @@
 
 * [E_SWITCH: The Switch of Automation – Why Simplicity Revolutionizes IEC 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_SWITCH-Die-Weiche-der-Automatisierung--Warum-Einfachheit-IEC-61499-revolutioniert-e3681fl)
 * [E_SWITCH: The Unsung Hero of Industrial Automation's Modular Design ](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_SWITCH-The-Unsung-Hero-of-Industrial-Automations-Modular-Design-e367npq)
-## Introduction
 The `E_SWITCH` (Event Switch) is a basic function block according to IEC 61499 that functions as a conditional event switch or 1-to-2 demultiplexer. It forwards a single input event (`EI`) to one of two outputs based on the state of a Boolean control variable (`G`).
 
 `` ![E_SWITCH](E_SWITCH.svg)
 
-## Interface Structure
 
-### **Event Inputs:**
 - **EI (Event Input)**: The input event to be forwarded.
 - **Associated Data**: `G`
 
-### **Event Outputs:**
 - **EO0**: The first event output.
 - **EO1**: The second event output.
 
-### **Data Inputs:**
 - **G (Guard)**: The Boolean condition that controls the switch (data type: `BOOL`).
 
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ## Functionality
 
 1. **Event Reception**: The function block waits for an event at input `EI`.
 
-# 2. **Condition Check**: When the `EI` event occurs, the value of the data variable `G` is evaluated.
 
 3. **Conditional Forwarding**:
 
@@ -35,16 +34,13 @@ The `E_SWITCH` (Event Switch) is a basic function block according to IEC 61499 t
 
 The event at input `EI` is always routed to exactly one of the two outputs, depending on the control condition `G`.
 
-## Technical Features
 - **Event Switch**: Serves as a fundamental "switch" or "if-else" construct for the event flow.
 - **Stateless**: The block itself has no internal memory; its decision is based solely on the value of `G` at the moment of the `EI` event.
 
-## Application Scenarios
 - **Conditional Logic**: Execution of alternative actions based on a condition. If `G` is true, execute action A (`EO1`); otherwise, execute action B (`EO0`).
 - **Mode-Dependent Processing**: Route commands to different processing paths depending on whether the system is in "Automatic" mode (`G=TRUE`) or "Manual" mode (`G=FALSE`).
 - **Error Handling**: Route a sensor event either to the normal processing logic (`G=FALSE` for "no error") or to an error handling routine (`G=TRUE` for "error detected").
 
-## ⚖️ Comparison with Similar Blocks
 
 | Feature | E_SWITCH | E_SELECT | E_DEMUX |
 |---------------|----------|----------|----------|
@@ -52,7 +48,6 @@ The event at input `EI` is always routed to exactly one of the two outputs, depe
 | Direction | 1:2 (Demultiplexer) | 2:1 (Multiplexer) | 1:n (Demultiplexer) |
 | State Model | BasicFB | BasicFB | BasicFB/Generic |
 
-## 🛠️ Related exercises
 * [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)
 * [Uebung_004b2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b2.md)
 * [Uebung_004b3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b3.md)
@@ -76,5 +71,10 @@ The event at input `EI` is always routed to exactly one of the two outputs, depe
 * [Exercise_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 * [Exercise_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
 
-## Conclusion
 The `E_SWITCH` block is a fundamental and widely used block for implementing conditional branching in the event-driven logic of IEC 61499. Its simplicity and clear function as an "if-else" switch for events make it an indispensable tool for creating flexible and robust control software.
+
+## Technical Features
+## Application Scenarios
+## ⚖️ Vergleich mit ähnlichen Bausteinen
+## 🛠️ Zugehörige Übungen
+## Conclusion

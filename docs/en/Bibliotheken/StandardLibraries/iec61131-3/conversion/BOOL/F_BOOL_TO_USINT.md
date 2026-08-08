@@ -21,9 +21,7 @@ The function block `F_BOOL_TO_USINT` converts a Boolean value (`BOOL`) into an u
 ### **Adapters**
 This function block does not use adapters.
 
-### **Adapters**
 
-### **Adapters**
 ****
 ## Functionality
 

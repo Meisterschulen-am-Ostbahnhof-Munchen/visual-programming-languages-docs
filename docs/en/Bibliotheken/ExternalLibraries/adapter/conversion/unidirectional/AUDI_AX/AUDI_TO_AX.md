@@ -2,21 +2,21 @@
 ![AUDI_TO_AX](./AUDI_TO_AX.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block `AUDI_TO_AX` is a composite function block that converts an **AUDI** adapter (UDINT data) into an **AX** adapter (BOOL data). It serves as a unidirectional converter for applications where an integer value (e.g., from a counter) needs to be mapped to a binary signal – specifically, it checks whether the input value is non-zero. The function block is implemented as a pure network connection using IEC 61131-compliant components.
-## Interface Structure
-### **Event Inputs**
 The function block does not have its own event inputs. The event to start processing is provided via the socket adapter `AUDI_IN` (see section Adapters).
 
-### **Event Outputs**
 The FB has no built-in event outputs. The result event is output via the plug adapter `AX_OUT` (see section Adapters).
 
-### **Data Inputs**
 The FB has no built-in data inputs. The UDINT value to be processed is provided via the socket adapter `AUDI_IN` (see section Adapters).
 
-### **Data Outputs**
 The FB has no built-in data outputs. The result (BOOL) is output via the plug adapter `AX_OUT` (see section Adapters).
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 | Name | Type | Adapter Type | Direction | Comment |
@@ -38,33 +38,33 @@ The internal process is divided into three steps:
 - If the input value is not equal to 0 → Output `TRUE`
 - If the input value is equal to 0 → Output `FALSE`
 
-## Technical Features
 - **Library Used:** The core consists of the IEC 61131 function block `F_NE` (non-equal comparison). This is imported from the library `iec61131::comparison::F_NE`.
 - **No Dedicated ECC:** As a composite function block, `AUDI_TO_AX` does not have its own execution state – the entire logic is purely data flow-driven.
 - **Unidirectional Adapters:** Both the input and output adapters are designed as *unidirectional*, meaning they only support a defined data and event flow from the source to the sink.
 - - **Parameterization:** The comparison value is fixed at `UDINT#0` and cannot be externally parameterized.
 
-## State Overview
 The function block (FB) does not have its own state machine. Its behavior is entirely determined by incoming events: Every event at socket `AUDI_IN.E1` triggers an execution of the internal logic and an output at plug `AX_OUT`.
 
-## Application Scenarios
 - **Binary Threshold Output:** A counter value (e.g., number of parts detected) should be passed on to a downstream controller as a switching signal (`TRUE` if present, `FALSE` if zero).
 
-## Application Scenarios - **Adapter Conversion in Heterogeneous Systems:** When a sensor or subsystem delivers a UDINT value via an AUDI adapter, but the target system expects a BOOL value via an AX adapter.
 - **Network Simplification:** The function block encapsulates the non-zero logic, thereby reducing the complexity of higher-level function plans.
 
-## Comparison with Similar Function Blocks
 - **`AUDI_TO_BOOL` (hypothetical):** Would offer the same functionality, but without the adapter concept – possibly with direct data inputs/outputs.
 - **Direct Comparison `F_NE`:** A single function block that performs the comparison, but without adapter adaptation.
 
 The advantage of `AUDI_TO_AX` lies in its seamless integration into an adapter-based architecture, as is common in the 4diac IDE. It avoids additional conversion steps between different interface types.
 
-## Conclusion
 The `AUDI_TO_AX` function block is a specialized yet highly useful converter for the unidirectional transfer of a UDINT value to a BOOL signal. By clearly encapsulating the comparison logic and using standard adapters, it simplifies the signal chain in IEC 61499-based automation systems. It is robust, easy to understand, and requires no complex configuration – ideal for common tasks such as binary meter reading.
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

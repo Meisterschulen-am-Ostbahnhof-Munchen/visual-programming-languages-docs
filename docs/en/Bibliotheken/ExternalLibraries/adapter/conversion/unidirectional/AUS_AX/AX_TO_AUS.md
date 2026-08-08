@@ -22,7 +22,6 @@ Data is received via the adapter `AX_IN` as a Boolean value (`D1` of type `BOOL`
 
 The converted value is output via the adapter `AUS_OUT` as an unsigned 8-bit integer (`D1` of type `USINT`).
 
-### **Data Outputs**
 
 The converted value is output via the adapter `AUS_OUT` as an unsigned 8-bit integer (`D1` of type `USINT`).
 

@@ -23,7 +23,6 @@ This function block has no adapters.
 ## Operation
 When the event input `REQ` is triggered, the algorithm is executed, converting the LREAL value of `IN` to a REAL value and outputting the result to `OUT`. The event `CNF` is then triggered to signal the completion of the operation.
 
-### **Adapters**
 
 #
 ## Technical Features

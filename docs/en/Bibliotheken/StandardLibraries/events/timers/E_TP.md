@@ -54,7 +54,6 @@ The **E_TP** function block (also known as **Pulse Generator** or **Timer Pulse*
 
 The **E_TP** function block is a useful tool in IEC 61499-based control technology for implementing time-controlled actions. Its simple interface and clear behavior make it easy to integrate into various control applications. The reset function in version 1.1 increases the flexibility of the function block, as the timer can now be reset manually.
 
-### Summary:
 
 The **E_TP** function block is a useful tool in IEC 61499-based control technology for implementing time-controlled actions.
 ## 🛠️ Related exercises

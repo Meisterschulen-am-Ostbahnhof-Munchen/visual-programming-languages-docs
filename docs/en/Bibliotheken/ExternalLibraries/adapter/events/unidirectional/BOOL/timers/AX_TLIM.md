@@ -41,7 +41,6 @@ Direct data outputs are not available. The current timer status is output via th
 
 > Note: The adapter type `AX` is a standard unidirectional adapter consisting of an event (`E1`) and a Boolean date (`D1`).
 
-## Functionality
 
 1. **Initial State** – The output variable `Q.D1` is `FALSE`; the timer is not running.
 

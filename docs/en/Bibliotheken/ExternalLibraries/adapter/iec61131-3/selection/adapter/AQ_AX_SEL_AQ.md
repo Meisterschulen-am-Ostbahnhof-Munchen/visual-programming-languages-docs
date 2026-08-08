@@ -3,30 +3,23 @@
 ![AQ_AX_SEL_AQ](./AQ_AX_SEL_AQ.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AQ_AX_SEL_AQ` is used for binary selection between two analog or value-based input signals provided via adapters. A selector adapter controls which of the two inputs is passed through to the output. The block encapsulates the classic selection logic and prepares it for event-driven execution in IEC 61499 environments.
 
-## Interface Structure
 
 The function block communicates exclusively via standardized adapter interfaces. This simplifies modeling in the application network, as related data and event lines are transmitted together.
 
-## **Event Inputs**
 The block does not have direct event inputs. Event processing is handled implicitly via the events of the connected input adapters (`IN0`, `IN1`, `G`).
 
-### **Event Outputs**
 The function block does not have direct event outputs. Events are forwarded via the output adapter (`OUT`).
 
-### **Data Inputs**
 There are no direct data inputs on the function block interface. Data is transmitted encapsulated via the sockets.
 
-### **Data Outputs**
 There are no direct data outputs. Data is provided encapsulated via the plug.
 
 
-### ### **Adapter**
+### ##
 
-#### **Sockets (Input Interfaces)**
 
 * **G** (Type: `adapter::types::unidirectional::AX`):
 
@@ -52,7 +45,6 @@ There are no direct data outputs. Data is provided encapsulated via the plug.
 
 * **Event**: `E1` (Trigger on value change at IN1).
 
-#### **Plugs (Output Interfaces)**
 
 * **OUT** (Type: `adapter::types::unidirectional::AQ`):
 
@@ -62,6 +54,14 @@ There are no direct data outputs. Data is provided encapsulated via the plug.
 
 * **Event**: `E1` (Output event for signaling a new valid value).
 
+#### **Plugs (Ausgangs-Schnittstellen)**
+#### **Sockets (Eingangs-Schnittstellen)**
+### **Adapter**
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
 ## Functionality
 
 The function block is implemented internally as a function block network and operates according to the following sequence:
@@ -79,7 +79,6 @@ The function block is implemented internally as a function block network and ope
 
 4. **Output**: The selected value is passed to the output plug `OUT.D1`. Simultaneously, the output event `OUT.E1` is triggered to inform subsequent program components in the control network about the value change.
 
-## Technical Features
 
 * **Event-Data Consistency**: The use of internal D flip-flops ensures that the data values are read and processed at the exact moment the corresponding change event occurs.
 
@@ -99,7 +98,6 @@ Since `AQ_AX_SEL_AQ` is a purely data- and event-driven combination block withou
 **TRUE** | `Wert_A` | `Wert_B` | **`Wert_B`** | Fires as soon as an event occurs at `IN0.E1`, `IN1.E1`, or `G.E1`. |
 
 
-## Application Scenarios
 
 * **Sensor Redundancy / Switchover**: Automatic or manual switching between a primary sensor (`IN0`) and a secondary/backup sensor (`IN1`) in case of a fault via the control signal `G`.
 
@@ -114,6 +112,10 @@ Since `AQ_AX_SEL_AQ` is a purely data- and event-driven combination block withou
 
 * **Classic Multiplexers (MUX)**: While a multiplexer usually selects from a large number of inputs, this component is specifically limited to efficient 1-out-of-2 selection (binary selection), which minimizes parameterization and wiring effort.
 
-## Conclusion
 
 The `AQ_AX_SEL_AQ` is a useful infrastructure component for modular 4diac applications. By completely encapsulating the signals in adapter connections, it significantly contributes to clarity in the application window and ensures robust, event-driven signal forwarding.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

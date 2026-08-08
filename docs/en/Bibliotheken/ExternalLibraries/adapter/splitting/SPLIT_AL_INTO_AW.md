@@ -36,7 +36,6 @@ Each output is provided by an edge-triggered memory (E_D_FF_ANY) and remains sta
 
 1. An incoming event at **IN.E1** activates the internal function block **SPLIT_LWORD_INTO_WORDS** via its event input **REQ**.
 
-### **Adapters**
 
 **Socket IN** – Type: `adapter::types::unidirectional::AL` (LWORD)
 

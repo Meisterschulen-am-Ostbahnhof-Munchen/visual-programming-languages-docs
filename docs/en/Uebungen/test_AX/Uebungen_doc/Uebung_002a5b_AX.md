@@ -2,11 +2,11 @@
 ![Uebung_002a5b_AX_network](./Uebung_002a5b_AX_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the basic interconnection of multiple digital inputs with multiple digital outputs. A logical OR operation is used to combine the states of the inputs. The result of this operation is then distributed to various digital outputs via a signal distributor. The implementation utilizes the concept of adapter function blocks to realize the Boolean logic and signal distribution.
-## Function Blocks Used
 Exercise `Uebung_002a5b_AX` uses a combination of specific I/O blocks and generic logic and signal distribution blocks.
 
+## Function Blocks Used (FBs)
+## Introduction
 ### Sub-Blocks: logiBUS_IXA
 - **Type**: `logiBUS::io::DI::logiBUS_IXA` (represented by instances such as `DigitalInput_I1`, `DigitalInput_I2`, `DigitalInput_I3`)
 - **Internal Function Blocks Used**: No internal function blocks are visible in the provided definition.
@@ -45,7 +45,6 @@ Exercise `Uebung_002a5b_AX` uses a combination of specific I/O blocks and generi
 - Data Output/Input: IN (Data Input), OUT1, OUT2, OUT3 (Data Outputs)
 - **Functionality**: This block serves as a signal distributor. It receives a single input signal at data input `IN` and simultaneously forwards it identically to three separate data outputs (`OUT1`, `OUT2`, `OUT3`).
 
-## Program Flow and Connections
 The exercise `Uebung_002a5b_AX` implements a control logic in which the states of three digital inputs are evaluated using an OR gate, and the result is distributed to three digital outputs.
 
 1. **Input Acquisition**: The function blocks `DigitalInput_I1`, `DigitalInput_I2`, and `DigitalInput_I3` continuously read the states of the physical inputs `Input_I1`, `Input_I2`, and `Input_I3`, respectively. Their respective data outputs (`DigitalInput_I1.IN`, `DigitalInput_I2.IN`, `DigitalInput_I3.IN`) provide these states.
@@ -86,5 +85,8 @@ The exercise `Uebung_002a5b_AX` provides a practical introduction to combining d
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

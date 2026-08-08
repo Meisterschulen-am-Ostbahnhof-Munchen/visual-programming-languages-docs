@@ -34,9 +34,7 @@ There are no data inputs.
 * `STATE_NR` (SINT): Numeric identifier of the current state. START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
 * `DO_S1` (BOOL): Is `TRUE` when state `State_01` is active.
 
-### Data Inputs**
 
-### Data Outputs**
 * `STATE_NR` (SINT): Numeric identifier of the current state. START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
 * `DO_S1` (BOOL): Is `TRUE` when state `State_01` is active. * `DO_S2` (BOOL): Is `TRUE` when state `State_02` is active.
 * `DO_S3` (BOOL): Is `TRUE` when state `State_03` is active.

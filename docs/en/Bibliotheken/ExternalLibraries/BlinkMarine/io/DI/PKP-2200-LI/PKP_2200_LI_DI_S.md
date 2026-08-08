@@ -4,3 +4,4 @@ Blink Marine PowerKey DI Struct
 | Name | Type | Initial Value |
 | :--- | :--- | :--- |
 | Pin | USINT | 255 |
+## Structure

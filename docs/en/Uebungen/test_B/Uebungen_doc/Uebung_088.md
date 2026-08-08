@@ -26,7 +26,6 @@ Using the function block `E_F_TRIG` (Falling Edge Trigger). Unlike the simple `E
 
 [cite_start]In `Uebung_088.SUB`, the response to an AND logic gate is compared.[cite: 1]
 
-### Functionality
 
 1. Two pushbuttons, `I1` and `I2`, are connected via a gate, `AND_2`.
 

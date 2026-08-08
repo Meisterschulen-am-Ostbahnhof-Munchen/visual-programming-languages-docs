@@ -3,22 +3,20 @@ Here is the documentation for exercise `Uebung_018a` in the required format.
 ![Uebung_018a_network](./Uebung_018a_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise demonstrates the control of audio signals in an ISOBUS Universal Terminal environment in combination with a time delay. The goal is to play a sequence of two different tones, separated by a short pause, when a softkey is released. This illustrates event processing and the use of delay blocks for sequencing actions.
 
-## Function Blocks Used
 
 In this sub-application, various function blocks are instantiated and interconnected to implement the desired logic.
 
-### Sub-modules:
 
+### Sub-modules
+## Function Blocks Used (FBs)
+## Introduction
 #### **SoftKey_UP_F1**
 - **Type**: `isobus::UT::io::Softkey::Softkey_IE`
 - **Description**: This module monitors input at the Universal Terminal (UT) for a specific softkey.
 
-### Sub-modules:
 
-### SoftKey_UP_F1**
 - **Type**: `isobus::UT::io::Softkey::Softkey_IE`
 - **Description**: This module monitors input at the Universal Terminal (UT) for a specific softkey. ... - **Configuration**:
 - **Parameter**: `QI` = `TRUE` (Activates the function block)
@@ -55,7 +53,6 @@ In this sub-application, various function blocks are instantiated and interconne
 - **Parameter**: `u16OffTimeMs` = `0`
 - **Event Input**: `REQ` (Starts the sound output)
 
-## Program Flow and Connections
 
 The exercise is structured sequentially and is started by user interaction:
 
@@ -71,5 +68,7 @@ The exercise is structured sequentially and is started by user interaction:
 
 This generates an audible feedback in the form of an ascending tone sequence (low-high) with a short pause in between.
 
-## Summary
 The exercise `Uebung_018a` provides fundamental knowledge about event chaining in IEC 61499. It demonstrates practically how to build a sequential logic in which one action (tone output 1) triggers the next action (delay -> tone output 2) without requiring further user intervention.
+
+## Program Flow and Connections
+## Summary

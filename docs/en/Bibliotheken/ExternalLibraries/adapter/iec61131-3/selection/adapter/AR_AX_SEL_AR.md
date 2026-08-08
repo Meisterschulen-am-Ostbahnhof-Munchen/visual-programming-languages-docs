@@ -3,38 +3,36 @@
 ![AR_AX_SEL_AR](./AR_AX_SEL_AR.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AR_AX_SEL_AR` is used for binary selection between two analog input signals transmitted via adapters. Based on the state of a selector signal, one of the two inputs is passed through to the output.
 
 By consistently using adapters instead of traditional discrete data and event pins, the complexity of the wiring in the higher-level IEC 61499 application diagram is significantly reduced.
 
-## Interface Structure
 
 Since this function block relies entirely on adapter-based communication, it has no direct, traditional event or data interfaces at the top level. All communication is handled via the declared adapters.
 
 
-### **Event Inputs**
 *No direct event inputs available (events are received via the adapter interfaces).*
 
-### **Event Outputs**
 *No direct event outputs available (events are sent via the adapter interfaces).*
 
-### **Data Inputs**
 *No direct data inputs available.*
 
-### **Data Outputs**
 *No direct data outputs available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
-#### **Sockets (Input Interfaces)**
 
 * **G** (Type: `adapter::types::unidirectional::AX`):
 
 The selector adapter. The signal present here controls which of the two inputs (`IN0` or `IN1`) is passed to the output.
 
-### * **IN0** (Type: `adapter::types::unidirectional::AR`):
 
 The first selectable signal input. This value is passed to output `OUT` when selector `G` is in state `FALSE` (0).
 
@@ -43,7 +41,6 @@ The first selectable signal input. This value is passed to output `OUT` when sel
 The second selectable signal input. This value is passed to output `OUT` when selector `G` is in state `TRUE` (1).
 
 
-#### **Plugs (Output Interfaces)**
 
 * **OUT** (Type: `adapter::types::unidirectional::AR`):
 
@@ -52,6 +49,8 @@ The selected output adapter. It provides the value of the currently active input
 
  ---
 
+#### **Plugs (Ausgangsschnittstellen)**
+#### **Sockets (Eingangsschnittstellen)**
 ## Functionality
 
 Inside the function block `AR_AX_SEL_AR` is a network of standard IEC 61131-3 and IEC 61499 components that process the adapter signals:
@@ -80,7 +79,6 @@ The selected signal is passed via another `F_MOVE` block to the output flip-flop
 
 ---
 
-## Technical Features
 
 * **Unidirectional Adapter Structure:** The function block uses unidirectional adapter types (`AR` for analog values, `AX` for binary values), ensuring clear and interference-free signal direction within the system.
 
@@ -91,7 +89,6 @@ The selected signal is passed via another `F_MOVE` block to the output flip-flop
 
 ---
 
-## State Overview
 
 The behavior can be described using the following simple logic table:
 
@@ -106,7 +103,6 @@ The behavior can be described using the following simple logic table:
 
 ---
 
-## Application Scenarios
 
 * **Sensor Redundancy:** Switching between a primary and a secondary analog sensor (e.g., temperature sensor or pressure sensor) in case of primary sensor failure.
 
@@ -116,12 +112,15 @@ The behavior can be described using the following simple logic table:
 
 --
 
-## Comparison with Similar Function Blocks
 
 Compared to the standard IEC 61131 function block `F_SEL`, `AR_AX_SEL_AR` offers the advantage of complete encapsulation via adapters. While the standard `F_SEL` requires events and data to be wired and synchronized separately in the network, `AR_AX_SEL_AR` reduces the wiring effort in the higher-level system to just three connections (two input adapters, one output adapter) plus the selection signal.
 
 ---
 
-## Conclusion
 
 The `AR_AX_SEL_AR` is an extremely useful auxiliary component for IEC 61499 applications. By abstracting the data and event streams into standardized adapter channels, it ensures a streamlined application design and simplifies the implementation of switching and redundancy logic for analog signals.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

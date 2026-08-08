@@ -3,38 +3,30 @@
 ![AX_SEL_SINT](./AX_SEL_SINT.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AX_SEL_SINT` is a standardized selection function for the data type `SINT` (short integer). It enables binary selection between two input values based on the state of a selection signal, which is read via an adapter. The block is designed for use in event-driven systems and combines classic IEC 61131-3 selection logic with event-based execution according to IEC 61499.
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI0**: Updates the value of the data input `IN0`.
 
 * **EI1**: Updates the value of data input `IN1`.
 
-### **Event Outputs**
 
 * **CNF**: Confirmation event. Signals that an evaluation has taken place and an updated value is available at `OUT`.
 
-### **Data Inputs**
 
 * **IN0** (SINT): First selectable input value. This value is passed to the output when the adapter's selection signal is `FALSE`.
 
 * **IN1** (SINT): Second selectable input value. This value is passed to the output when the adapter's selection signal is `TRUE`.
 
-### **Data Outputs**
 
 * **OUT** (SINT): The currently selected output value.
 
 
-### **Data Outputs**
 
 * **OUT** (SINT): The currently selected output value.
 
-### **Data Outputs**
 
 **IN0** (SINT): ### **Adapter**
 
@@ -42,6 +34,13 @@ The function block `AX_SEL_SINT` is a standardized selection function for the da
 
 ---
 
+### **Adapter**
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ## Functionality
 
 The function block `AX_SEL_SINT` operates internally as a composite function block (FB). It coordinates the data flow between the inputs and the output via memory elements (D flip-flops):
@@ -61,7 +60,6 @@ The function block `AX_SEL_SINT` operates internally as a composite function blo
 
 ---
 
-## Technical Features
 
 * **Adapter Coupling**: The use of a unidirectional adapter for the selection signal allows for clean encapsulation and reduces wiring complexity in the FB network.
 
@@ -71,7 +69,6 @@ The function block `AX_SEL_SINT` operates internally as a composite function blo
 
 --
 
-## State Overview
 
 Since `AX_SEL_SINT` is a composite function block, it does not have its own internal state machine (ECC). The behavior is entirely determined by the interaction of the internal components and their data/event flows:
 
@@ -85,7 +82,6 @@ Since `AX_SEL_SINT` is a composite function block, it does not have its own inte
 
 ---
 
-## Application Scenarios
 
 * **Setpoint Switching**: Switching between two predefined states or limit values (e.g., recipe values, standard vs. maintenance speeds) that are defined as `SINT` (range -128 to 127).
 
@@ -96,7 +92,6 @@ Since `AX_SEL_SINT` is a composite function block, it does not have its own inte
 
 ---
 
-## Comparison with Similar Function Blocks
 
 * **F_SEL (IEC 61131-3)**: The standard selection function block `F_SEL` operates purely in a data flow-oriented manner. `AX_SEL_SINT` extends this functionality to include the event-driven execution of IEC 61499 and elegantly integrates the selection signal via an adapter interface.
 
@@ -106,6 +101,10 @@ Since `AX_SEL_SINT` is a composite function block, it does not have its own inte
 
 ---
 
-## Conclusion
 
 `AX_SEL_SINT` offers a high-performance and clean way to implement binary selections on `SINT` data in IEC 61499 applications. The combination of adapter connectivity and event-driven triggering makes it a flexible block for modular control architectures.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

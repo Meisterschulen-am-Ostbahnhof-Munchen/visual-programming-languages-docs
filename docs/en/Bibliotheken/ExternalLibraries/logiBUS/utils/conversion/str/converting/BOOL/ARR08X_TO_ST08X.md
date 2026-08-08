@@ -22,7 +22,7 @@ This function block (FB) is used to convert an array of 8 BOOL values (ARR08X) i
 This function block has no adapters.
 
 #
-## ## Functionality
+## #
 The function block `ARR08X_TO_ST08X` performs a direct, element-by-element assignment of values from the input array `IN` to the corresponding fields of the output structure `OUT`. On each `REQ` event, the value of the `IN` array is read, and the individual elements of the array `IN[0]` to `IN[7]` are assigned to the fields `X_00` to `X_07` of the `ST08X` structure. After the assignment, the `CNF` event is triggered.
 
 The assignments are made as follows:
@@ -39,7 +39,6 @@ The assignments are made as follows:
 ## Technical Features
 * **Data Type Conversion**: This function block specializes in converting a generic BOOL array into a specific BOOL structure of type `ST08X`. This structure type must be known to the system (via `IMPORT logiBUS::utils::conversion::types::ST08X;`).
 
-## Technical Features
 * **Data Type Conversion**: This function block specializes in converting a generic BOOL array into a specific BOOL structure of type `ST08X`. * **Fixed Size**: This function block is designed for arrays and structures with exactly 8 BOOL elements. It is not variable for other array sizes.
 * **Determinism**: The conversion is direct and deterministic. Execution occurs immediately upon receiving the `REQ` event.
 

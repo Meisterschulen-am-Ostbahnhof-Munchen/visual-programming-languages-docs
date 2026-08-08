@@ -23,7 +23,6 @@ This function block does not use any adapters.
 ## Operation
 When an event is received at input `REQ`, the algorithm is executed, which converts the REAL value at input `IN` into a UDINT value and outputs the result at output `OUT`. The event `CNF` is then triggered to signal the successful completion of the conversion.
 
-### **Adapters**
 
 #
 ## Technical Features

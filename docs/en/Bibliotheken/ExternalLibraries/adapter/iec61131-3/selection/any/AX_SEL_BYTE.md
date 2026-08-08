@@ -3,33 +3,33 @@
 ![AX_SEL_BYTE](./AX_SEL_BYTE.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AX_SEL_BYTE` is a standardized selection block used for binary selection between two input values of data type `BYTE` (`IN0` and `IN1`). Selection is controlled via a specialized adapter channel (`G`). This block is particularly suitable for event-driven applications where data streams or state bytes need to be switched flexibly depending on an external selection signal.
 
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI0**: Updates and adopts the value at data input `IN0`.
 
 * **EI1**: Updates and adopts the value at data input `IN1`.
 
-### **Event Outputs**
 
 * **CNF**: Confirmation event. Signals to the downstream system that a newly selected value is available at output `OUT`.
 
-### **Data Inputs**
 
 * **IN0** (`BYTE`): First selectable input value (selected when the selection signal is logically `0` or inactive).
 
 * **IN1** (`BYTE`): Second selectable input value (selected when the selection signal is logically active).
 
-### **Data Outputs**
 
 * **OUT** (`BYTE`): The currently selected byte value.
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 * **G** (Type: `adapter::types::unidirectional::AX`): A unidirectional adapter that functions as a selector. It provides both the event (`E1`) to trigger the selection and the actual Boolean selection data value (`D1`).
@@ -50,7 +50,6 @@ The module behaves like an event-driven 2-to-1 multiplexer for byte data:
 3. **Event Filtering at the Output**: The function block only outputs a confirmation event (`CNF`) if the actually selected value at output `OUT` has changed. This prevents unnecessary subsequent calculations in the system when input data changes without relevance to the output.
 
 
-## Technical Features
 
 * **Event-Based Optimization**: By using internal edge detection (`E_D_FF_ANY`), a `CNF` event is only generated when there is a genuine change in the output value.
 
@@ -67,7 +66,6 @@ Since `AX_SEL_BYTE` is a composite function block (FB), its behavior is defined 
 
 * **Switching State**: The adapter signals a change at `G`. The function block switches the path, updates `OUT`, and triggers `CNF` if the value of `OUT` changes.
 
-## Application Scenarios
 
 * **Operating Mode Switching**: Selection between two different status or command bytes for a machine based on the current automatic/manual operating state.
 
@@ -76,7 +74,6 @@ Since `AX_SEL_BYTE` is a composite function block (FB), its behavior is defined 
 * **Parameterization**: Switching between two parameter sets (e.g., predefined byte configurations) during operation.
 
 
-## Comparison with Similar Function Blocks
 
 * **Standard `F_SEL`**: The classic IEC 61131-3 `F_SEL` function block operates purely on a data flow basis and has no event control or adapter interfaces. `AX_SEL_BYTE` extends this basic functionality with event-driven evaluation and event-based output filtering.
 
@@ -86,3 +83,8 @@ Since `AX_SEL_BYTE` is a composite function block (FB), its behavior is defined 
 * ## Conclusion
 
 `AX_SEL_BYTE` is an efficient utility module for structured, event-driven programming in 4diac. It combines the classic selection logic of IEC 61131-3 with the modern, resource-saving paradigms of IEC 61499.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -1,7 +1,7 @@
 # Numbers and Number Systems
 ## 🎧 Podcast
-* [ISOBUS Terminals: Understanding Numbers – NumberVariable, InputNumber & OutputNumber explained ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
 ## Number Systems
+* [ISOBUS Terminals: Understanding Numbers – NumberVariable, InputNumber & OutputNumber explained ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
 ### Decimal System (Base 10)
 The familiar system with the digits 0 to 9. It is mostly used in programming for human-readable values such as setpoints, counters, or time values.
 
@@ -11,7 +11,6 @@ The familiar system with the digits 0 to 9. It is mostly used in programming for
 
 Since computers and controllers work internally with states (on/off, 0/1), the binary system is the most fundamental system. It consists only of the digits `0` and `1`.
 
-### In IEC 61131-3, binary numbers are designated with the prefix `2#`.
 
 *Example:* `2#1011` (corresponds to 11 in decimal)
 
@@ -21,7 +20,6 @@ The hexadecimal system is particularly useful for programmers because a byte (8 
 
 In IEC 61131-3, hexadecimal numbers are designated with the prefix `16#`.
 
-### Hexadecimal system (base 16)
 
 The hexadecimal system is particularly useful for programmers because a byte (8 bits) can be represented exactly by two hexadecimal digits (0-9 and A-F). *Example:* `16#FF` (corresponds to 255 in decimal or `2#11111111` in binary)
 
@@ -31,7 +29,6 @@ The hexadecimal system is particularly useful for programmers because a byte (8 
 
 Literals are values hard-coded in the program code. Type prefixes can be used to tell the controller how to interpret a value.
 
-### Integers
 Integers can be specified without decimal places.
 
 * `1234` (Decimal)
@@ -39,12 +36,13 @@ Integers can be specified without decimal places.
 * `16#ABCD` (Hexadecimal)
 * `2#1010_0101` (Binary, underscores for readability)
 
-### Floating-point numbers (Real)
 Values with decimal places or in scientific notation.
 
 * `1.234`
 * `-0.5`
 * `1.0E-3` (equivalent to 0.001)
+### Floating Point Numbers (Real)
+### Integer Numbers
 
 ### Typed literals
 Sometimes it is important to explicitly specify the data type to avoid ambiguity.

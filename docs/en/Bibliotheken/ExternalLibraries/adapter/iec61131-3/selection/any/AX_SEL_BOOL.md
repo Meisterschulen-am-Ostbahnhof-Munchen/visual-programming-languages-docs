@@ -5,31 +5,31 @@
 *(No image available)*
 
 * * * * * * * * * *
-## Introduction
 The function block `AX_SEL_BOOL` is used for the binary selection of Boolean signals. It is based on the standardized selection function according to IEC 61131-3 and allows event-driven selection between two Boolean input values (`IN0` and `IN1`). Selection is elegantly controlled via an adapter input.
 
-## Interface Structure
-### **Event Inputs**
 * **EI0**: Triggers the update and transfer of the data input `IN0`.
 
 
  * **EI1**: Triggers the update and transfer of the data input `IN1`.
 
-### **Event Outputs**
 
 * **CNF**: Confirmation event. Signals that the selected output value `OUT` has been updated.
 
-### **Data Inputs**
 
 * **IN0** (BOOL): First selectable input value. This value is passed through to the output when the selector is in the state `FALSE`.
 
 * **IN1** (BOOL): Second selectable input value. This value is passed through to the output when the selector is in the state `TRUE`.
 
 
-### **Data Outputs**
 
 * **OUT** (BOOL): The currently selected output value (corresponds to either `IN0` or `IN1`, depending on the selector's state).
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 * **G** (Type: `adapter::types::unidirectional::AX`): A unidirectional adapter socket that functions as a selector. The switching signal is received via this adapter. An event at this adapter triggers the recalculation of the selection.
@@ -52,7 +52,6 @@ Internally, `AX_SEL_BOOL` is implemented as a composite function block (FB). The
 
 
 
- ## Technical Features
 * **Event-driven control on selector change**: An output event (`CNF`) is primarily generated when a relevant change or update is initiated via the selector adapter `G`.
 
 * **Resource efficiency**: By using edge-triggered and event-triggered D flip-flops (`E_D_FF` and `E_D_FF_ANY`) in the internal network, the CPU load is minimized, as calculations and signal forwarding only occur when actual signal changes occur.
@@ -139,3 +138,8 @@ As a composite function block, `AX_SEL_BOOL` does not have a classic state machi
 * ## Conclusion
 
 The `AX_SEL_BOOL` is a practical building block for modern industrial automation according to IEC 61499. By combining proven IEC 61131-3 selection logic with modern, adapter-based event control, it represents a clean and reusable solution for binary signal switching.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

@@ -21,12 +21,10 @@ The function block `F_TIME_IN_US_TO_ULINT` converts a time value in microseconds
 ### **Adapters**
 - No adapters are available.
 
-### **Adapters**
 
-### **Adapters**
 
 #
-## **Inputs**: ... ## Functionality
+## **Inputs**: ... #
 
 The function block uses the algorithm `REQ` to convert the incoming `TIME` value into a `ULINT` value in microseconds. The conversion is performed by the function `TIME_IN_US_TO_ULINT(IN)`. Once the conversion is complete, the event `CNF` is triggered to signal successful completion.
 

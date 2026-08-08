@@ -3,36 +3,24 @@ Here is the documentation for exercise `Uebung_060_sub_Outputs` based on the pro
 ![Uebung_060_sub_Outputs_network](./Uebung_060_sub_Outputs_network.svg)
 
 * * * * * * * * * *
-## Introduction
 The sub-application **Exercise_060_sub_Outputs** serves as an abstraction layer for the hardware outputs. According to the internal comment, this function block is intended for "TC-SC" (Task Controller Section Control). It receives logical Boolean signals and forwards them to physical or logical LogiBUS outputs (Digital Outputs).
 
 The function block maps a series of input variables (`Q_00` to `Q_08`) to specific output addresses.
 
-## Function Blocks (FBs) Used
 
 This sub-application uses multiple instances of the same block type to control the various digital outputs.
 
+## Function Blocks Used (FBs)
+## Introduction
 ### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
 
 There are 8 instances of this driver type on the network that forward the signals to the hardware. Since the structure is identical for all instances (except for the assigned output), they are described together here.
 
-### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
 
-### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
 
-### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
 
 #
-## Sub-Blocks: DigitalOutput_Q8 ... There are 8 instances of this driver type on the network that forward the signals to the hardware. ### Since the structure is identical for all instances (except for the assigned output), they are described together here.
 
-### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
-### Sub-Blocks: DigitalOutput_Q8
-### Sub-Blocks: DigitalOutput_Q8
-### Sub-Blocks: DigitalOutput_Q8
-### Sub-Blocks: DigitalOutput_Q8
-### Sub-Blocks: DigitalOutput_Q8
-### Sub-Blocks: DigitalOutput_Q8
-### Sub - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Internal Function Blocks Used**:
 - **DigitalOutput_Q1 to DigitalOutput_Q8**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
@@ -44,7 +32,6 @@ There are 8 instances of this driver type on the network that forward the signal
 
 These function blocks act as drivers for the LogiBUS system. As soon as an event arrives at input `REQ`, the value present at data input `OUT` is written to the configured physical output (`Output` parameter).
 
-## Program Flow and Connections
 
 The flow within the sub-application is purely event-driven and serves for direct signal routing (mapping).
 
@@ -68,10 +55,12 @@ The input variables are mapped to the outputs with an index offset:
 
 *Note:* The variable `Q_08` is defined in the interface, but according to the current configuration, it is not linked to the internal network.
 
-## Summary
 
 The `Uebung_060_sub_Outputs` is an interface component that enables a clean separation between the control logic and the hardware connection. It receives eight control signals (`Q_00` - `Q_07`) and maps them to LogiBUS outputs 1 through 8. This facilitates code reuse and improves clarity when controlling sectors (Section Control).
 
-## 🛠️ Related exercises
 * [Uebung_060](Uebung_060.md)
 
+
+## Program Flow and Connections
+## Summary
+## 🛠️ Zugehörige Übungen

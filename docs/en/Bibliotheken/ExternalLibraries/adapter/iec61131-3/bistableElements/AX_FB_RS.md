@@ -84,7 +84,6 @@ The **AX_FB_RS** is a modern, adapter-based implementation of the classic RS fli
 
 **Wiring** | Minimalist (bundled) | Classic (separate lines) |
 
-## Conclusion
 
 The **AX_FB_RS** is a modern, adapter-based implementation of the classic RS flip-flop. It is ideally suited for complex control applications in 4diac where clarity and signal encapsulation are essential. Its integrated reset dominance makes it especially suitable for applications where safe shutdown must take precedence over shutdown.
 

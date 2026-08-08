@@ -4,3 +4,4 @@ DataPanel Modules with medium IO density AI Struct
 | Name | Type | Initial Value |
 | :--- | :--- | :--- |
 | Pin | USINT | 255 |
+## Structure

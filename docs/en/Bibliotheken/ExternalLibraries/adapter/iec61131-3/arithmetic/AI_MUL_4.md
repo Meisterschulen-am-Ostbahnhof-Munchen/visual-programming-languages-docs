@@ -3,25 +3,25 @@
 ![AI_MUL_4](./AI_MUL_4.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AI_MUL_4` is a generic arithmetic function block for 4diac-IDE, compliant with the IEC 61131-3 standard. Its primary function is to calculate the mathematical product of four analog input values. The block utilizes unidirectional adapters of type `AI` (Analog Input) to transmit both data and the associated events in encapsulated form. This significantly reduces the wiring effort in the function block diagram and ensures a cleaner structure for the control logic.
 
-## Interface Structure
 
-### **Event Inputs**
 The function block does not have direct, independent event inputs. Event control is handled entirely via the connected adapters.
 
 
-### **Event Outputs**
 This function block does not have direct, independent event outputs. Subsequent blocks are triggered via the output adapter.
 
-### **Data Inputs**
 There are no direct data inputs. Values are provided via the adapter inputs.
 
-### **Data Outputs**
 There are no direct data outputs. The calculated value is output via the adapter output.
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 
 #### **Sockets (Input Adapters)**
@@ -49,7 +49,6 @@ $$\text{Result} = \text{Value}(IN1) \cdot \text{Value}(IN2) \cdot \text{Value}(I
 
 The result of this calculation is passed to the output adapter `OUT`, and the corresponding update event of the adapter is triggered to inform subsequent blocks in the control flow about the new value.
 
-## Technical Features
 
 * **Generic Class:** The block is internally based on the generic class `GEN_AI_MUL`. This enables flexible processing of data streams independent of specific hardware implementations.
 
@@ -57,7 +56,6 @@ The result of this calculation is passed to the output adapter `OUT`, and the co
 
 * **Compact Structure:** Processing four inputs in a single function block eliminates the need to cascade multiple multiplication blocks.
 
-## State Overview
 
 Since `AI_MUL_4` is a purely mathematical, data- and event-driven function block, it does not have an internal state machine (ECC). Its execution is purely stateless:
 
@@ -67,7 +65,6 @@ Since `AI_MUL_4` is a purely mathematical, data- and event-driven function block
 
 3. **Output:** The result is applied to the plug `OUT`, and the output event is triggered. The module immediately returns to standby mode.
 
-## Application Scenarios
 
 * **Scaling and Calibration:** Calculation of compound correction factors for analog sensor values (e.g., sensor value \cdot $ calibration factor \cdot $ temperature compensation \cdot $ unit conversion).
 
@@ -83,6 +80,10 @@ Since `AI_MUL_4` is a purely mathematical, data- and event-driven function block
 * **AI_MUL_2:** A similar adapter-based function block, but only for two inputs. `AI_MUL_4` saves additional wiring effort and function block instances for more complex calculations with up to four factors.
 
 
-## Conclusion
 
 The `AI_MUL_4` function block offers an efficient and clean way to implement complex multiplication tasks with up to four analog signals in 4diac-IDE. The consistent use of unidirectional adapters minimizes cabling effort and significantly improves the readability of the application design.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

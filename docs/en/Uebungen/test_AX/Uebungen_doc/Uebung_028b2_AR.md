@@ -2,9 +2,7 @@
 ![Uebung_028b2_AR_network](./Uebung_028b2_AR_network.svg)
 
 * * * * * * * * * *
-## Introduction
 This exercise implements analog input calibration with offset and scaling adjustment. The calibration parameters are persistently stored in NVS (Non-Volatile Storage). Additionally, a hysteresis controller is used, which reacts to the calibrated analog value. The threshold values and hysteresis bands for the controller are also loaded from NVS. The entire process is controlled by digital inputs and output via digital outputs.
-## Function Blocks (FBs) Used
 - **DigitalInput_I1** (Type: `logiBUS::io::DI::logiBUS_IXA`): Digital input that starts the output process.
 - Parameters: `QI=TRUE`, `Input=Input_I1`
 - **DigitalOutput_Q1** (Type: `logiBUS::io::DQ::logiBUS_QXA`): Digital output for direct transmission of the input status.
@@ -29,6 +27,8 @@ This exercise implements analog input calibration with offset and scaling adjust
 - **DigitalOutput_Q2** (Type: `logiBUS::io::DQ::logiBUS_QXA`): Digital output for the hysteresis signal.
 - Parameters: `QI=TRUE`, `Output=Output_Q2`
 
+## Function Blocks Used (FBs)
+## Introduction
 ### Sub-modules: `THRESHOLD`
 - **Type**: `MyLib::sys::NVS_IN_AND_STORE_AR`
 - **Internal Function Blocks Used**: The internal structure is not defined in the XML file. It is assumed that this sub-module reads a threshold value from the NVS (under the key `'THRESHOLD'`) and provides it as an analog output (`VALUEO`). The parameter `stObj=InputNumber_THRESHOLD` refers to a structure object for initialization.
@@ -42,7 +42,6 @@ This exercise implements analog input calibration with offset and scaling adjust
 - **Internal Function Blocks Used**: Analogous to the `THRESHOLD` block, but with the key `'HYSTERESIS'` and the structure object `InputNumber_HYSTERESIS`.
 - **Functionality**: Reads the hysteresis value (bandwidth) from the NVS and makes it available to the hysteresis controller via output `VALUEO`.
 
-## Program Flow and Connections
 
 1. **Initialization**: The digital input `DigitalInput_I1` is split into two paths via the adapter `AX_SPLIT_2`:
 
@@ -75,15 +74,16 @@ This exercise implements analog input calibration with offset and scaling adjust
 **Difficulty Level**: Advanced
 **Prerequisites**: Basic knowledge of the 4diac IDE, working with analog inputs/outputs, simple adapters, and NVS memory.
 
-## Summary
 
 This exercise demonstrates a complete analog measurement chain: from reading the raw analog value and calibration with persistent storage to rule-based output via a hysteresis comparator. The use of adapters for type conversion and sub-modules for reusing NVS accesses makes the setup modular and expandable. Calibration can be adjusted at any time using digital buttons without requiring changes to the program code.
 
-# Summary
 
 This exercise demonstrates a complete analog measurement chain: from reading the raw analog value and calibration with persistent storage to rule-based output via a hysteresis comparator. ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
+## Program Flow and Connections
+## Summary
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

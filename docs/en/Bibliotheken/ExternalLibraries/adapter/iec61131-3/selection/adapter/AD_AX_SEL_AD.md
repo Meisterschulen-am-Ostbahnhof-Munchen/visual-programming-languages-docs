@@ -3,27 +3,27 @@
 ![AD_AX_SEL_AD](./AD_AX_SEL_AD.svg)
 
 * * * * * * * * * *
-## Introduction
 The function block `AD_AX_SEL_AD` performs binary selection between two input signals provided via adapter structures. Based on the state of a selection signal (G), either the value of input `IN0` or input `IN1` is passed to output `OUT`. Internally, the block is implemented as a composite function block and utilizes standardized IEC 61499 and IEC 61131 mechanisms to ensure event-driven, type-safe signal propagation.
 
 
-## Interface Structure
 
 The interfaces of this function block are implemented entirely via adapters, enabling modular and clear wiring within the application network.
 
-### **Event Inputs**
 
 *This function block does not have direct event inputs on the housing. Event control is implicit via the adapters.*
 
-### **Event Outputs**
 *This function block does not have direct event outputs on the housing. Event forwarding is implicit via the adapters.*
 
-### **Data Inputs**
 *This component has no direct data inputs on its housing.*
 
-### **Data Outputs**
 *This component has no direct data outputs on its housing.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 * **Sockets (Input Adapters):**
 
@@ -57,21 +57,18 @@ The module encapsulates an internal network of control and conversion modules:
 
 
 
- ## Technical Features
 * **Adapter Encapsulation:** The use of unidirectional adapters (`AD` and `AX`) simplifies signal routing and avoids loose data and event lines.
 
 * **Type Independence via DWORD:** The internal data paths use the `DWORD` data type to represent the adapter data, enabling flexible transmission of different data formats.
 
 * **Near-Real-Time Response:** Every edge or value change at the input or selector adapters immediately results in an output update.
 
-## State Overview
 As a composite function block, this module does not have its own Execution Control Chart (ECC). The behavior is purely data- and event-driven through the internal interaction of the standard function blocks (FBs):
 
 * **Event on `IN0` or `IN1`:** Updates the respective internal value buffer. If the affected input is currently active, the new value is immediately output to `OUT`.
 
 * **Event on `G`:** Switches the active channel and outputs the value of the newly selected channel to `OUT`.
 
-## Application Scenarios
 
 * **Sensor Redundancy:** Switches between a primary sensor (`IN0`) and a redundant backup sensor (`IN1`) in case of signal loss or malfunction.
 
@@ -79,11 +76,15 @@ As a composite function block, this module does not have its own Execution Contr
 
 * **Signal Multiplexing:** Structured forwarding of control data in modular systems.
 
-## Comparison with Similar Function Blocks
 
 * **Standard `F_SEL`:** The classic `F_SEL` function block according to IEC 61131-3 operates directly on elementary data types and requires manual wiring of trigger events. `AD_AX_SEL_AD` encapsulates this logic and makes it directly available for adapter-based architectures.
 
 * **Multiplexer (MUX):** A classic MUX allows selection from more than two channels using an integer value. `AD_AX_SEL_AD` is optimized for simple binary decisions (either/or) and thus saves processing resources.
 
-## Conclusion
 The `AD_AX_SEL_AD` is a robust and efficient auxiliary module for event-driven signal switching. Thanks to the consistent use of adapters, it integrates perfectly into modern, service-oriented control architectures within 4diac.
+## Functionality
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

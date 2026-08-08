@@ -3,28 +3,28 @@
 ![AB_AX_SEL_AB](./AB_AX_SEL_AB.svg)
 
 * * * * * * * * * *
-## Introduction
 
 The function block `AB_AX_SEL_AB` is a composite function block for IEC 61499 that implements binary selection at the adapter level. Based on a control signal from a selector adapter (`G`), it selects between the signals of two input adapters (`IN0` and `IN1`) and forwards the selected signal to an output adapter (`OUT`).
 
 This block is particularly suitable for event-driven architectures where data streams need to be routed flexibly without disrupting the encapsulation of the adapter interfaces.
 
-## Interface Structure
 
 Since this is an adapter-based function block, the classic event and data inputs are completely encapsulated within the adapter interfaces.
 
-### **Event Inputs**
 *No direct event inputs are available. Control is achieved via events within the adapters.*
 
-### **Event Outputs**
 *No direct event outputs are available. Signaling is achieved via events within the output adapter.*
 
-### **Data Inputs**
 *No direct data inputs are available.*
 
-### **Data Outputs**
 *No direct data outputs are available.*
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapter**
 
 | Name | Direction | Type | Description |
@@ -74,7 +74,6 @@ Inside the function block is a network of standard function blocks (IEC 61131-3 
 * This flip-flop generates the corresponding output event (`OUT.E1`) at plug `OUT` and provides the selected data value (`OUT.D1`).
 
 
-## Technical Features
 
 * **Event-driven data routing:** Any change to the inputs `IN0` or `IN1`, as well as to the selector `G`, triggers an update and calculation of the output. No cyclic polling occurs.
 
@@ -85,7 +84,6 @@ Inside the function block is a network of standard function blocks (IEC 61131-3 
 
 * * **Typing:** The internal processing of the data is fixed to the data type `BYTE` (defined via the attribute `DataType="BYTE"` on the `F_MOVE` blocks).
 
-## State Overview
 
 | State Selector `G` | Event at Input | Behavior at Output `OUT` |
 
@@ -103,7 +101,6 @@ Inside the function block is a network of standard function blocks (IEC 61131-3 
 
 | Switch `TRUE` $\rightarrow$ `FALSE` | Event on `G` | The currently stored value of `IN0` is passed to `OUT`; `OUT.E1` is triggered. |
 
-## Application Scenarios
 
 * **Signal Switching at the Field Level:** Switching between the signal from an active sensor (`IN1`) and a predefined substitute/error value (`IN0`) in case of a fault.
 
@@ -120,6 +117,10 @@ Compared to the standard function block `F_SEL`, `AB_AX_SEL_AB` operates directl
 
 * This saves engineering time, reduces the number of visible connections in the 4diac IDE Application Editor, and minimizes potential errors when linking data and event streams.
 
-## Conclusion
 
 The `AB_AX_SEL_AB`is a robust and reusable auxiliary building block for signal routing based on byte adapters. Through the consistent encapsulation of the selection and synchronization logic, it significantly contributes to the clarity and modularization of control programs in the 4diac IDE.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

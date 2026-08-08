@@ -44,7 +44,6 @@ The `INI` block also has its own `INIT` event, which is directly linked to the `
 ### Data Connections
 - The physical value (`rPhys`) of `NumeriValue_PHYS` is passed to the data input `VALUE` of the `INI` block.
 
-### Data Connections
 - The physical value (`rPhys`) of `NumeriValue_PHYS` is passed to the data input `VALUE` of the `INI` block.
 
 `` - The object pool structure object (`stObj`) is passed from the SubApp interface to `NumeriValue_PHYS` and `Q_NumericValue_PHYS`.

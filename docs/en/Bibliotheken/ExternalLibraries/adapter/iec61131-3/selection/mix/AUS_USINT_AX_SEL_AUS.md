@@ -6,32 +6,30 @@
 
 * * * * * * * * * *
 
-## Introduction
 The function block `AUS_USINT_AX_SEL_AUS` is used for binary selection between two input signals of the data type `USINT` (Unsigned Short Integer). The selection is event-driven via a selection signal. The block uses unidirectional adapters to process data and events in a modular and structured manner.
 
-## Interface Structure
 
-### **Event Inputs**
 
 * **EI1**: Triggers the acceptance and processing of the directly connected data input `IN1`.
 
 
-### **Event Outputs**
 * *No direct event outputs.* (Event output is coupled via the output adapter `OUT`).
 
-### **Data Inputs**
 * **IN1** (USINT): Directly available, selectable input variable.
 
-### **Data Outputs**
 * *No direct data outputs.* (Data output is coupled via the output adapter `OUT`).
 
+### Data Outputs
+### Data Inputs
+### Event Outputs
+### Event Inputs
+## Interface Structure
+## Introduction
 ### **Adapters**
 * **OUT** (Plug, Type: `adapter::types::unidirectional::AUS`): The selected output value (`USINT`) and the corresponding confirmation event.
 
-### **Adapters**
 * **OUT** (Plug, Type: `adapter::types::unidirectional::AUS`): The selected output value (`USINT`) and the corresponding confirmation event.
 
-### * **IN0** (Socket, Type: `adapter::types::unidirectional::AUS`): The first selectable input value (`USINT`), which is fed in via an adapter.
 
 * **G** (Socket, Type: `adapter::types::unidirectional::AX`): The selection signal (gate) that determines which input is connected to the output.
 
@@ -64,13 +62,11 @@ The function block operates internally with a combination of D flip-flops (`E_D_
 
 ---
 
-## Technical Features
 * **Mixed Interface Operation**: The function block combines classic IEC 61499 event/data interfaces (`EI1` / `IN1`) with modern, unidirectional adapters (`IN0`, `G`, `OUT`).
 ...* * **Data Security through Event Coupling**: The use of internal D flip-flops ensures that data values are only transferred and processed when a corresponding event triggers them. This prevents data inconsistencies (race conditions).
 
 ---
 
-## State Overview
 
 | Selector State (`G.D1`) | Selected Output (`OUT.D1`) | Triggering Event |
 
@@ -82,7 +78,6 @@ The function block operates internally with a combination of D flip-flops (`E_D_
 
 ---
 
-## Application Scenarios
 
 * **Switching between automatic and manual values**: Selection of a setpoint (e.g., a speed or step index as `USINT`) between an automatic process value (`IN0` via adapter) and a manually specified value (`IN1`).
 
@@ -91,11 +86,14 @@ The function block operates internally with a combination of D flip-flops (`E_D_
 
 ---
 
-## Comparison with Similar Function Blocks
 
 Compared to the standard function block `F_SEL` from the IEC 61131-3 library, this block offers complete encapsulation for IEC 61499. While the standard `F_SEL` operates purely in a data flow-oriented manner, `AUS_USINT_AX_SEL_AUS` integrates event-driven state storage and utilizes adapters, which significantly simplifies and improves the clarity of wiring in the 4diac IDE Application Editor.
 
 --
 
-## Conclusion
 The `AUS_USINT_AX_SEL_AUS` is a robust auxiliary function block for structured signal and data flow control. Its use of unidirectional adapters makes it ideally suited for modular and clean software architectures in industrial automation.
+## Technical Features
+## State Overview
+## Application Scenarios
+## Comparison with Similar Function Blocks
+## Conclusion

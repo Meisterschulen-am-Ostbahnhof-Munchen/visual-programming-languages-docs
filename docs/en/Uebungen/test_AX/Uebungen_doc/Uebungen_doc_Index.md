@@ -1,7 +1,5 @@
 # Numeric Index (test_AX)
-# Numeric Index (`test_AX`)
 ...# Numeric Index (`test_AX`)
-# Numeric Index (`test_AX`)
 :maxdepth: 1
 
 Bibliothek_Sequenzer_AX

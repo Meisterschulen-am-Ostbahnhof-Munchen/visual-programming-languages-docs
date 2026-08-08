@@ -171,7 +171,11 @@ DIN EN 61131-3.pdf
 
 # Typst temporary files
 /docs/combined.md
+/docs/*/combined.md
 /docs/book.typ
+/docs/*/book.typ
 /docs/img/downloaded/
+/docs/*/img/downloaded/
+/docs/*/img/mermaid/
 
 

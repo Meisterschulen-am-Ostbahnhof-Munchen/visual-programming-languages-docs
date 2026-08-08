@@ -3,6 +3,7 @@ import re
 import sys
 import yaml
 import hashlib
+import urllib.parse
 import urllib.request
 from unittest.mock import MagicMock
 
@@ -54,6 +55,26 @@ def _detect_image_ext(data):
     if b'<svg' in data[:200] or b'<?xml' in data[:200]:
         return '.svg'
     return None
+
+
+IMAGE_EXTENSIONS = ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.bmp', '.webp', '.pdf')
+
+
+def resolve_local_image(target_src, docs_dir):
+    """If the referenced local image does not exist, fall back to a sibling
+    file with the same base name and a different image extension."""
+    if os.path.exists(os.path.join(docs_dir, target_src)):
+        return target_src
+    base, ext = os.path.splitext(target_src)
+    if not base or ext.lower() not in IMAGE_EXTENSIONS:
+        return target_src
+    for candidate_ext in IMAGE_EXTENSIONS:
+        if candidate_ext == ext.lower():
+            continue
+        candidate = f"{base}{candidate_ext}"
+        if os.path.exists(os.path.join(docs_dir, candidate)):
+            return candidate
+    return target_src
 
 def download_remote_image(url, docs_dir):
     # Create downloaded directory under docs/img/downloaded
@@ -139,6 +160,8 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     # 1. Markdown syntax: ![alt](path) or [text](path)
     def rewrite_single_link(prefix, text, url_part):
         url_part = url_part.strip()
+        # Strip an optional Markdown title, e.g. ![](url "title")
+        url_part = re.sub(r'\s+"[^"]*"\s*$', '', url_part)
         url_part_clean = urllib.parse.unquote(url_part).strip('<>')
         
         # Split anchor
@@ -213,6 +236,8 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
             
         # If it's an image or resource, rewrite the path to be relative to the docs/ directory
         # so that Pandoc running in docs/ can find it.
+        if prefix == '![':
+            target_src = resolve_local_image(target_src, docs_dir)
         anchor_str = f"#{anchor}" if anchor else ""
         dest = f"{target_src}{anchor_str}"
         if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):

@@ -1,7 +1,6 @@
 # AX_AX_SEL_AX
 
 <!-- Bild des FB falls vorhanden (Platzhalter) -->
-<!-- ![AX_AX_SEL_AX](AX_AX_SEL_AX.png) -->
 
 ![AX_AX_SEL_AX](./AX_AX_SEL_AX.svg)
 

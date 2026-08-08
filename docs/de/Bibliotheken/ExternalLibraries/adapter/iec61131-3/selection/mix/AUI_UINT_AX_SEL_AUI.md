@@ -1,8 +1,5 @@
 # AUI_UINT_AX_SEL_AUI
 
-![AUI_UINT_AX_SEL_AUI](AUI_UINT_AX_SEL_AUI.png)
-
-
 ![AUI_UINT_AX_SEL_AUI](./AUI_UINT_AX_SEL_AUI.svg)
 
 * * * * * * * * * *

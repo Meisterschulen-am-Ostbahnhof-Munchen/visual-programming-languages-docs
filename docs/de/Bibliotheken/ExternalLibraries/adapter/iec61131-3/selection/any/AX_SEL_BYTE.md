@@ -1,8 +1,5 @@
 # AX_SEL_BYTE
 
-![AX_SEL_BYTE Funktionsbaustein](AX_SEL_BYTE.png)
-
-
 ![AX_SEL_BYTE](./AX_SEL_BYTE.svg)
 
 * * * * * * * * * *

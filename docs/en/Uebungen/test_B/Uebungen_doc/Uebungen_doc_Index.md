@@ -1,6 +1,6 @@
 # Numeric Index (test_B)
 # Numeric Index (`test_B`)
-...# Nu```{toctree}
+...# Nu{toctree}
 :maxdepth: 1
 
 Uebung_000

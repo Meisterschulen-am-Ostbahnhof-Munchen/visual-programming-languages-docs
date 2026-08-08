@@ -7,7 +7,7 @@ The key difference lies in how a program's logic is formulated. While textual la
 flowchart TB
 A["Programming languages"] --> B["Textual programming languages"]
 A --> CL["Visual programming languages"]
-```
+
 Textual Programming Languages
 In textual languages, the algorithm is described by a sequence of strings (keywords, operators, variables). These languages are often very powerful and abstract, but require a precise knowledge of the syntax.
 
@@ -23,7 +23,7 @@ B --> Java
 B --> C++
 B --> X["C -- IEC9899"]
 B --> C#
-```
+
 Typical examples are:
 
 * **C / C++:** Low-level programming, high performance.
@@ -40,7 +40,7 @@ flowchart TB
 A["Programming languages"] --> CL["Visual programming languages"]
 CL --> E["Industrial visual languages"]
 CL --> C["Educational visual languages"]
-```
+
 A common distinction is made between programming languages based on their intended use:
 
 1. **Educational Languages:** These are primarily used for learning programming concepts without syntax hurdles. Well-known examples include **Scratch** and **Blockly**.
@@ -67,7 +67,7 @@ F --> SFC
 F --> ST
 G --> FB
 G --> EEC
-```
+
 
 ### IEC 61131-3 (The Classic Standard)
 IEC 61131-3 is the globally established standard for programmable logic controllers (PLCs). It offers both textual and visual languages:

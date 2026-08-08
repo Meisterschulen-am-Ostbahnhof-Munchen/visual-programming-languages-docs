@@ -44,7 +44,7 @@ An event is output at input `EO`.
 
 An event at input `EI` is either... depending on the value of input `G`... forwarded to `EO0` (for `G = FALSE`) or to `EO1` (for `G = TRUE`).
 
-```
+
 #### AE2_EVENT_TO_E (Adapter: AE2 event → 4diac event)
 - **Type**: `adapter::conversion::bidirectional::AE2_EVENT_TO_E`
 - **Parameters**: None set
@@ -56,7 +56,7 @@ An event at input `EI` is either... depending on the value of input `G`... forwa
 
 Converts an incoming AE2 adapter event (from the socket) into an internal 4diac event. The `REQ` input must be activated for this to work; after successful conversion, a `CNF` event will be output.
 
-```
+
 #### AE2_E_TO_EVENT (Adapter: 4diac event → AE2 event)
 - **Type**: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`
 - **Parameters**: None set

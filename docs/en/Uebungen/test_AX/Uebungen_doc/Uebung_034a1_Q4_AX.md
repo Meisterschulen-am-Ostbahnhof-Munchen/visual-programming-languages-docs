@@ -4,7 +4,7 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates controlling a PWM output (logiBUS Output Q4) using a numeric input value. Communication between the input block and the output block is via adapter connections ("Adapter Version"). An integrated comment indicates that the value transfer event is only triggered when the entered numeric value is confirmed with "OK"—not simply by pressing a key.
-```
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `PWM_Value`
@@ -17,7 +17,7 @@ This exercise demonstrates controlling a PWM output (logiBUS Output Q4) using a 
 
 The FB reads the numeric value entered by the user (e.g., from an HMI input field) and displays it. The output is provided via its adapter interface (`IN`). Output is only generated after the input has been confirmed with "OK". Event control is handled implicitly via the adapter.
 
-```
+
 ### Sub-Blocks: `PWMOutput_Q4`
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QDA_PWM`

@@ -77,7 +77,7 @@ The component functions as an encapsulation of the standard component `F_SEL` fr
 - If `G.D1 = FALSE` is present: Output = **IN0**
 - If `G.D1 = TRUE` is present: Output = **IN1**
 4. The result is placed on `OUT.D1`, and simultaneously the event `OUT.E1` is triggered to inform downstream components.
-...`` `` ``` `` `` `` The function block thus implements a time-controlled, event-driven assignment: Selection occurs only upon an external event, and the data must already be available.
+...`` ``  `` `` `` The function block thus implements a time-controlled, event-driven assignment: Selection occurs only upon an external event, and the data must already be available.
 
 ## Technical Features
 - **Composite Function Block:** The function block is built from an existing IEC 61131-3 function block (`F_SEL`) – this simplifies maintenance and certification.

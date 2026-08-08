@@ -5,7 +5,7 @@
 ## Introduction
 This exercise demonstrates the mutual interlocking of two toggle flip-flops. Each button (I1 and I2) controls a separate output (Q1 and Q2, respectively). The special feature is that the two flip-flops are connected via an adapter ("ILOCK"), so that only one of the two outputs can be active at any given time. When the other button is pressed, the previously active output is reset and the new output is set. This creates a simple alternating flashing circuit with mutual interlocking.
 
-```
+
 ## Function Blocks (FBs) Used
 
 - **DigitalInput_CLK_I1** and **DigitalInput_CLK_I2**: `logiBUS::io::DI::logiBUS_IE`
@@ -17,7 +17,7 @@ This exercise demonstrates the mutual interlocking of two toggle flip-flops. Eac
 - Parameters: `QI = TRUE`, `Output = Output_Q1`, and `Output_Q2`
 - These function blocks pass the data value to the hardware output as soon as an event occurs at `REQ`.
 
-```
+
 ## Program Flow and Connections
 
 1. **Input Processing**

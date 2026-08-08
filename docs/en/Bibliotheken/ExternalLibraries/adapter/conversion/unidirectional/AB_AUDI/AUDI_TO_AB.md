@@ -50,7 +50,7 @@ The **AUDI_TO_AB** function block is a composite function block (FB) that conver
 5. After the conversion is complete, `F_UDINT_TO_BYTE` sends an acknowledgment event (`CNF`), which is forwarded to the `AB_OUT` adapter (E1).
 
 6. Simultaneously, the converted BYTE value is output to `AB_OUT.D1` and is available to the receiving system.
-...`` ``` ``` ``` ``` ``` ``` ``` ``` The entire processing is event-driven and without intermediate storage – each incoming event generates exactly one outgoing event.
+...``         The entire processing is event-driven and without intermediate storage – each incoming event generates exactly one outgoing event.
 
 ## Technical Features
 - **Composite Structure**: The function block is implemented as a network of sub-functions. It uses the predefined conversion function block `F_UDINT_TO_BYTE` from the IEC 61131 library, ensuring standardized and testable conversion.

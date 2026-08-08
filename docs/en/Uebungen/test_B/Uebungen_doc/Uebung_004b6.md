@@ -25,7 +25,7 @@ The digital input serves as an enable signal (PERMIT) for a clock signal that to
 - `PERMIT` (BOOL)
 - **Function**: Passes an event received at `EI` to output `EO` only if the value of `PERMIT` = `TRUE`. Serves as an enable/disable element.
 
-```
+
 ### E_T_FF
 - **Type**: `iec61499::events::E_T_FF`
 - **Parameters**: none
@@ -36,7 +36,7 @@ The digital input serves as an enable signal (PERMIT) for a clock signal that to
 - `Q` (BOOL)
 - **Function**: Toggle flip-flop. At each clock cycle (event at `CLK`), the output `Q` toggles its state. Simultaneously, the event `EO` is triggered.
 
-```
+
 ### DigitalOutput_Q1
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`

@@ -56,7 +56,7 @@ After the calculation, the **CNF** event is output. The initial value of **IN**,
 
 After the calculation, the **CNF** event is output. The initial value of **IN** is already outside the valid range, so the block is set to "invalid" by default after the first iteration.
 
-```
+
 ## Technical Features
 
 - The filter is based on **two external constants** from the `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` library:

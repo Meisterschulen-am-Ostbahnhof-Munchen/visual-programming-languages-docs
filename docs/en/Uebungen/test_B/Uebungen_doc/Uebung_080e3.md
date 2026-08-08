@@ -5,12 +5,12 @@
 ## Introduction
 This exercise demonstrates the use of the function block **E_CTU** (up counter with event control) in combination with an **event brake**, implemented using an **E_D_FF_ANY** (flip-flop with hysteresis). Through the interplay of cyclic counting pulses, manual reset, and hysteresis on the counter value, an output signal is only triggered when a specific counter value is reached and the hysteresis threshold is exceeded. The exercise illustrates the use of event logic (E_SPLIT, E_MERGE), controlling a digital output, and passing a numeric value to an output number.
 
-```
+
 ## Function Blocks Used
 
 This exercise contains no further subapplications, but uses only basic function blocks from the libraries `logiBUS`, `iec61499`, and `isobus`. The most important function blocks are described below.
 
-```
+
 ### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 
 - **Type**: `logiBUS::io::DI::logiBUS_IE`

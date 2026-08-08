@@ -43,7 +43,7 @@ Communication is achieved via the standard separation of trigger and value:
 <DataConnections>
 <Connection Source="SoftKey_F1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
-```
+
 
 [cite_start][cite: 1]
 

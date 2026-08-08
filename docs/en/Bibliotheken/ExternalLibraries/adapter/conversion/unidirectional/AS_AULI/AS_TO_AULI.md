@@ -40,7 +40,7 @@ The module has **no direct data outputs**. Data output is via the **Plug adapter
 ## Functionality
 
 1. The function block expects an event at the socket adapter `AS_IN.E1`. Simultaneously, the data value `AS_IN.D1` (type SINT) must be present.
-...``` 2. The event is forwarded to the internal function block `F_SINT_TO_ULINT` (as `REQ`).
+... 2. The event is forwarded to the internal function block `F_SINT_TO_ULINT` (as `REQ`).
 
 3. The internal function block performs the conversion **SINT → ULINT**.
 

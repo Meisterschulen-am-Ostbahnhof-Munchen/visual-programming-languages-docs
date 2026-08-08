@@ -65,7 +65,7 @@ Output = Output_Q1`
 - If `Input_I1` (reset) is set to `TRUE` simultaneously or later, `Q` immediately becomes `FALSE` (asynchronous reset).
 - The current state of `Q` appears at the output `Output_Q1`.
 
-` ``` ``Input_I2` (clock) changes from `FALSE` to `TRUE` (rising edge), the output `Q` toggles the output `Q` to ... **Learning Objectives:**
+`  ``Input_I2` (clock) changes from `FALSE` to `TRUE` (rising edge), the output `Q` toggles the output `Q` to ... **Learning Objectives:**
 
 - Understand the functionality of a toggle flip-flop (T-FF).
 - Event-driven data flow modeling in 4diac (IEC 61499).

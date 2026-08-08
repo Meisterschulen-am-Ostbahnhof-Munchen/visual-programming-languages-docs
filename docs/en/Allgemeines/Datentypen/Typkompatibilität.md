@@ -14,7 +14,7 @@ A connection from **Source** → **Target** is allowed if:
 
 ```java
 targetType.isAssignableFrom(sourceType)
-```
+
 This means: the target type must be equal to or greater than the source type.
 
 ## Integer Types
@@ -107,7 +107,7 @@ Since `F_MOVE` is generic, it must be configured in XML network files using the 
 <FB Name="MeinFMove" Type="iec61131::selection::F_MOVE">
 <Attribute Name="DataType" Value="BOOL"/> <!-- Hier Datentyp konfigurieren -->
 </FB>
-```
+
 
 Without this attribute or with an empty value, the function block is invalid and will fail validation.
 
@@ -133,7 +133,7 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
   * *In ST:*
     ```pascal
     real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
-    ```
+    
 
   * *In the FB network:* Sequential insertion of two conversion modules:
     `[DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.
@@ -187,13 +187,13 @@ When converting large unsigned values, accuracy is lost starting at **16,777,216
 ```iecst
 UDINT#16777216  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Correct (2^24)
 UDINT#16777217  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Precision loss (rounding)
-```
+
 
 **Solution:** For values ≥ 16,777,216, use `LREAL` instead of `REAL`:
 
 ```iecst
 UDINT#16777217  →  UDINT_TO_LREAL()  →  LREAL#16777217.0  ✓
-```
+
 
 This applies in particular to:
 

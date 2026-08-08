@@ -42,7 +42,7 @@ The logical equation is (in ST syntax):
 
 ```st
 Q1.D1 := SET1.D1 OR ((NOT RESET.D1) AND Q1.D1);
-```
+
 
 This means:
 

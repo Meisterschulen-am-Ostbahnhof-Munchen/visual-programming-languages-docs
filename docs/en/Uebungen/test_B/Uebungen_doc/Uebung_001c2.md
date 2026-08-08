@@ -5,7 +5,7 @@
 ## Introduction
 This exercise implements a simple signal processing operation: The digital input `I1` is negated and output to the digital output `Q1`. The input is polled once during system boot. A specific comment in the network indicates that the startup behavior depends on the presence of a specific event connection (`INITO → REQ`).
 
-```
+
 ## Function Blocks (FBs) Used
 
 ### `DigitalInput_I1`
@@ -35,7 +35,7 @@ The block reads the digital value of the configured input (here The reading proc
 
 This function block performs a logical negation on the incoming BOOL value. Upon an event at `REQ`, the value at `IN` is negated, and the result is output to `OUT`. Then, `CNF` is triggered.
 
-```
+
 ### `DigitalOutput_Q1`
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:

@@ -40,7 +40,7 @@ The logic is implemented using two parallel connections. The structure shown in 
 <DataConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
-```
+
 
 [cite_start][cite: 1]
 

@@ -83,7 +83,7 @@ bootTimeVT = 90
 
 [System]
 DeviceName = LOGIBUS-NODE-01
-```
+
 
 ### Example file `settings.ini` (user settings):
 
@@ -93,7 +93,7 @@ UserLanguage = DE
 
 [User]
 OperatorID = 42
-```
+
 
 **Result in operation:**
 

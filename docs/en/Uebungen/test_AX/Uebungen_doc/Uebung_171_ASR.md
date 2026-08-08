@@ -54,7 +54,7 @@ The flow is determined by the event and data connections in the SubApp network:
 - Pressing a key on `Input_I1` triggers the event `IND` in the block `DigitalInput_CLK_I1`. This event is then routed to the event input `SET` of the converter `ASR_2EVENTS_TO_SR`.
 - Pressing a key on `Input_I2` triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
 
-` `` ``` triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
+` ``  triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
 
 `` 2. **Adapter Processing**:
 

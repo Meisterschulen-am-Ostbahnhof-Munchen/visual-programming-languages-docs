@@ -107,11 +107,11 @@ The connections in detail:
 
 **Simplified Flowchart:**
 
-```
+
 F1 (release)  → Set SR1 (Cyl1 retracted)
 F2 (press)    → Reset SR1 (Cyl1 extended) + Set SR2 (Cyl2 retracted)
 F3 (press)    → Reset SR2 (Cyl2 extended)
-```
+
 
 **Learning Objectives:**
 

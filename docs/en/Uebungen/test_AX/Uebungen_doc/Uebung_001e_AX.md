@@ -4,7 +4,7 @@
 * * * * * * * * * *
 ## Introduction
 This exercise implements a simple Boolean negation: The state of the digital input **Input_I1** is negated and output to the digital output **Output_Q1**. It serves as an introduction to signal processing with 4diac and demonstrates the basic interconnection of an input module, a logic negation block, and an output module via adapter connections.
-```
+
 ## Function Blocks Used
 
 This exercise uses three specific function blocks from the library:
@@ -45,7 +45,7 @@ This results in the following logic:
 
 The parameters `QI = TRUE` for the input and output modules activate them permanently. No further wiring or event controls are required.
 
-```
+
 ## Summary
 
 The exercise **Exercise_001e_AX** teaches the fundamentals of adapter-based communication in 4diac. It demonstrates how a digital input signal is processed with a simple logic gate (NOT) and output to a physical output. This understanding forms the basis for more complex logic operations and control tasks in automation technology.

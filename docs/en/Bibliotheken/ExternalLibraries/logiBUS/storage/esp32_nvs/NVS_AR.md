@@ -33,7 +33,7 @@ The function block operates as follows:
 1. **Initialization**: An event at `INIT` starts the initialization of the internal `NVS` function block. The inputs `QI`, `KEY`, and `DEFAULT_VALUE` are forwarded to `NVS`.
 
 2. **After Initialization**: Once `NVS` completes initialization (event `INITO`), a **read command** (`GET`) is automatically sent to `NVS`. The read value (or the default value) is then output via the adapter output `AR_OUT`.
-...``` 3. **Save**: An event received via the adapter input `AR_IN` (`AR_IN.E1`) triggers a **save command** (`SET`) in the internal `NVS`. The value to be saved is taken from the adapter data channel (`AR_IN.D1`).
+... 3. **Save**: An event received via the adapter input `AR_IN` (`AR_IN.E1`) triggers a **save command** (`SET`) in the internal `NVS`. The value to be saved is taken from the adapter data channel (`AR_IN.D1`).
 
 4. **Feedback**: After both a read and a save operation, the result (success/error) is reported via the adapter event `AR_OUT.E1` and via the data outputs `QO`/`STATUS`.
 

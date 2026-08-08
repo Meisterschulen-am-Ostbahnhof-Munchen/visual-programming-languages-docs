@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1261.0" height="800" viewBox="0 0 1261.0 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1261.0" height="800" fill="#ffffff" />
+<text x="630.0" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: AR_CALIBRATE_SQ</text>
+<rect x="46.0" y="528.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="86.0" y="544.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">IDLE</text>
+<rect x="334.00000000000006" y="528.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="374.00000000000006" y="544.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="424.00000000000006" y="528.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M414.00000000000006,544.0 L424.00000000000006,539.0" stroke="#000000" stroke-width="2" />
+<path d="M504.00000000000006,528.0 L504.00000000000006,550.0" stroke="#cccccc" stroke-width="1" />
+<rect x="424.00000000000006" y="532.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="464.00000000000006" y="540.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="505.00000000000006" y="532.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="545.0" y="540.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Y.E1</text>
+<rect x="478.0" y="239.99999999999997" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="518.0" y="255.99999999999997" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ_WAIT</text>
+<rect x="568.0" y="239.99999999999997" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M558.0,255.99999999999997 L568.0,250.99999999999997" stroke="#000000" stroke-width="2" />
+<path d="M648.0,239.99999999999997 L648.0,262.0" stroke="#cccccc" stroke-width="1" />
+<rect x="568.0" y="243.99999999999997" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="608.0" y="251.99999999999997" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="649.0" y="243.99999999999997" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="689.0" y="251.99999999999997" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Y.E1</text>
+<rect x="622.0000000000001" y="528.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="662.0000000000001" y="544.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">CO</text>
+<rect x="712.0000000000001" y="528.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M702.0000000000001,544.0 L712.0000000000001,539.0" stroke="#000000" stroke-width="2" />
+<path d="M792.0000000000001,528.0 L792.0000000000001,550.0" stroke="#cccccc" stroke-width="1" />
+<rect x="712.0000000000001" y="532.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="752.0000000000001" y="540.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CO</text>
+<rect x="793.0000000000001" y="532.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="833.0000000000001" y="540.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">OFFSET.EO1</text>
+<rect x="622.0000000000001" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="662.0000000000001" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">WAIT_CS</text>
+<rect x="910.0000000000001" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="950.0000000000001" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">CS</text>
+<rect x="1000.0000000000001" y="384.0" width="161" height="36" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M990.0000000000001,400.0 L1000.0000000000001,395.0" stroke="#000000" stroke-width="2" />
+<path d="M1080.0,384.0 L1080.0,420.0" stroke="#cccccc" stroke-width="1" />
+<rect x="1000.0000000000001" y="388.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1040.0" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CS</text>
+<rect x="1081.0" y="388.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1121.0" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">SCALE.EO1</text>
+<path d="M1000.0000000000001,402.0 L1161.0,402.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="1000.0000000000001" y="402.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1040.0" y="410.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="1081.0" y="402.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1121.0" y="410.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">OFFSET.EO1</text>
+<path d="M126.0,514.0 C166.0,514.0,351.50000000000006,488.0,351.50000000000006,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M351.50000000000006,528.0 L347.50000000000006,521.0717967697245 L355.50000000000006,521.0717967697245 L351.50000000000006,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(253.75000000000003,506.0)">
+<rect x="-17.0" y="-7.5" width="34.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">X.E1</text>
+</g>
+<path d="M334.00000000000006,529.0 C289.00000000000006,529.0,78.5,483.0,78.5,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M78.5,528.0 L74.5,521.0717967697245 L82.5,521.0717967697245 L78.5,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(189.37500000000003,511.625)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M126.0,544.0 C166.0,544.0,654.5000000000001,488.0,654.5000000000001,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M654.5000000000001,528.0 L650.5000000000001,521.0717967697245 L658.5000000000001,521.0717967697245 L654.5000000000001,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(405.25000000000006,521.0)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CO.E1[CO.D1]</text>
+</g>
+<path d="M654.5000000000001,528.0 C654.5000000000001,505.6,654.5000000000001,438.4,654.5000000000001,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M654.5000000000001,416.0 L658.5000000000001,422.9282032302755 L650.5000000000001,422.9282032302755 L654.5000000000001,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(654.5000000000001,472.0)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M622.0000000000001,370.0 C542.0000000000001,370.0,495.5,352.0,495.5,272.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M495.5,272.0 L499.5,278.9282032302755 L491.5,278.9282032302755 L495.5,272.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(528.75,351.0)">
+<rect x="-17.0" y="-7.5" width="34.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">X.E1</text>
+</g>
+<path d="M558.0,240.99999999999997 C653.0,240.99999999999997,669.5000000000001,289.0,669.5000000000001,384.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M669.5000000000001,384.0 L665.5000000000001,377.0717967697245 L673.5000000000001,377.0717967697245 L669.5000000000001,384.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(649.375,276.875)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M702.0000000000001,400.0 C742.0000000000001,400.0,950.0000000000001,344.0,950.0000000000001,384.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M950.0000000000001,384.0 L946.0000000000001,377.0717967697245 L954.0000000000001,377.0717967697245 L950.0000000000001,384.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(841.0000000000001,377.0)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CS.E1[CS.D1]</text>
+</g>
+<path d="M910.0000000000001,400.0 C579.411131463868,400.0,93.5,197.41113146386783,93.5,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M93.5,528.0 L89.5,521.0717967697245 L97.5,521.0717967697245 L93.5,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(377.77917429895047,340.02917429895047)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M669.5000000000001,416.0 C669.5000000000001,438.4,669.5000000000001,505.6,669.5000000000001,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M669.5000000000001,528.0 L665.5000000000001,521.0717967697245 L673.5000000000001,521.0717967697245 L669.5000000000001,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(669.5000000000001,490.0)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CO.E1[CO.D1]</text>
+</g>
+<path d="M126.0,544.0 C174.2063273855207,544.0,366.50000000000006,479.7936726144793,366.50000000000006,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M366.50000000000006,528.0 L362.50000000000006,521.0717967697245 L370.50000000000006,521.0717967697245 L366.50000000000006,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(264.3273727695703,535.9226272304297)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+</g>
+<path d="M126.0,559.0 C273.94950218432336,559.0,381.50000000000006,380.05049781567664,381.50000000000006,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M381.50000000000006,528.0 L377.50000000000006,521.0717967697245 L385.50000000000006,521.0717967697245 L381.50000000000006,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(309.2310633191213,488.0189366808787)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">OFFSET.EI1</text>
+</g>
+<path d="M126.0,574.0 C295.75335985745494,574.0,396.50000000000006,358.24664014254506,396.50000000000006,528.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M396.50000000000006,528.0 L392.50000000000006,521.0717967697245 L400.50000000000006,521.0717967697245 L396.50000000000006,528.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(324.90750994654564,505.3424900534544)">
+<rect x="-33.25" y="-7.5" width="66.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">SCALE.EI1</text>
+</g>
+<path d="M622.0000000000001,400.0 C512.0000000000001,400.0,510.5,382.0,510.5,272.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M510.5,272.0 L514.5,278.9282032302755 L506.5,278.9282032302755 L510.5,272.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(525.0,377.25)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+</g>
+<path d="M622.0000000000001,415.0 C497.0000000000001,415.0,525.5,397.0,525.5,272.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M525.5,272.0 L529.5,278.9282032302755 L521.5,278.9282032302755 L525.5,272.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(526.875,408.375)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">OFFSET.EI1</text>
+</g>
+<path d="M622.0000000000001,430.0 C482.0000000000001,430.0,540.5,412.0,540.5,272.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M540.5,272.0 L544.5,278.9282032302755 L536.5,278.9282032302755 L540.5,272.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(528.75,430.0)">
+<rect x="-33.25" y="-7.5" width="66.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">SCALE.EI1</text>
+</g>
+</svg>

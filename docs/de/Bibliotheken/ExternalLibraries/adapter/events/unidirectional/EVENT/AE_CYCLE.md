@@ -1,5 +1,8 @@
 # AE_CYCLE
 
+
+![AE_CYCLE](./AE_CYCLE.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

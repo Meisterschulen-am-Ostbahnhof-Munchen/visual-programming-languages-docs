@@ -1,5 +1,8 @@
 # AX_ASR_SWITCH_X
 
+
+![AX_ASR_SWITCH_X](./AX_ASR_SWITCH_X.svg)
+
 * * * * * * * * * *
 ## Einleitung
 

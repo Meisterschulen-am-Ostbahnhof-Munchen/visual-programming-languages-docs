@@ -1,5 +1,8 @@
 # AX_F_TRIG
 
+
+![AX_F_TRIG](./AX_F_TRIG.svg)
+
 * * * * * * * * * *
 ## Einleitung
 

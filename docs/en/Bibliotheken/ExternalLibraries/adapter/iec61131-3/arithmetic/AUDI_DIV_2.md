@@ -2,7 +2,7 @@
 
 ![AUDI_DIV_2](./AUDI_DIV_2.svg)
 
-![AUDI_DIV_2 Symbol](https://via.placeholder.com/150x150.png?text=AUDI_DIV_2) *(Symbolic Representation)*
+![AUDI_DIV_2](./AUDI_DIV_2.svg)
 
 * * * * * * * * * *
 ## Introduction

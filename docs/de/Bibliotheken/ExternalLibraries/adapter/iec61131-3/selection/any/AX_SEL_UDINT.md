@@ -3,7 +3,7 @@
 
 ![AX_SEL_UDINT](./AX_SEL_UDINT.svg)
 
-![AX_SEL_UDINT Funktionsblock](https://via.placeholder.com/150 "AX_SEL_UDINT Blockdiagramm") *(Bild des Funktionsblocks Platzhalter)*
+![AX_SEL_UDINT](./AX_SEL_UDINT.svg)
 
 * * * * * * * * * *
 

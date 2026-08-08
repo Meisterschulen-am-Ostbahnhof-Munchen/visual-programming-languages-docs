@@ -3,7 +3,7 @@
 
 ![AX_SEL_REAL](./AX_SEL_REAL.svg)
 
-![AX_SEL_REAL Funktionsblock](https://via.placeholder.com/150?text=AX_SEL_REAL+FB) *Hier könnte ein Bild des Funktionsblocks eingefügt werden*
+![AX_SEL_REAL](./AX_SEL_REAL.svg)
 
 * * * * * * * * * *
 ## Einleitung

@@ -87,7 +87,6 @@ Inside the function block is a network of standard function blocks that processe
 
 
 ```
-``````
        +-------+
 IN0 -->|       |
        | F_SEL |--> OUT (wenn G = FALSE, dann IN0; wenn G = TRUE, dann IN1)
@@ -96,6 +95,7 @@ IN1 -->|       |
            ^
            |
 G ---------+
+```
 
 ## Technical Features
 

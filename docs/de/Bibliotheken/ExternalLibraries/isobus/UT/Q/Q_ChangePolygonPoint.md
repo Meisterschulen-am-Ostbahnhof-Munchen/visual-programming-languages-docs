@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ChangePolygonPoint** ist ein standardkonformer Funktionsbaustein zur Modifikation von Polygonpunkten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.52) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ChangePolygonPoint](Q_ChangePolygonPoint.svg)
@@ -12,20 +13,24 @@ Der **Q_ChangePolygonPoint** ist ein standardkonformer Funktionsbaustein zur Mod
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Polygon-Objekt-ID)
 - `REQ`: Punktänderungs-Anforderung (mit Index und Koordinaten)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Polygon-Objekt-ID
 - `u8PointIndex` (USINT): Punktindex (0-basiert)
 - `u16NewXValue` (UINT): Neue X-Koordinate (relativ)
 - `u16NewYValue` (UINT): Neue Y-Koordinate (relativ)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldPointIndex` (USINT): Vorheriger Punktindex
 - `u16OldXValue` (UINT): Vorherige X-Koordinate

@@ -15,15 +15,19 @@ Das besondere Merkmal dieses Bausteins ist das im Suffix "X" und im Kommentar an
 Der Baustein interagiert hauptsächlich über Adapter-Schnittstellen.
 
 ### **Ereignis-Eingänge**
+
 *Dieser Baustein verfügt über keine direkten Ereignis-Eingänge in der Schnittstellenliste, da diese innerhalb des Adapters `G` gekapselt sind.*
 
 ### **Ereignis-Ausgänge**
+
 *Dieser Baustein verfügt über keine direkten Ereignis-Ausgänge in der Schnittstellenliste, da diese innerhalb des Adapters `Q` gekapselt sind.*
 
 ### **Daten-Eingänge**
+
 *Dieser Baustein verfügt über keine direkten Daten-Eingänge in der Schnittstellenliste, da diese innerhalb des Adapters `G` gekapselt sind.*
 
 ### **Daten-Ausgänge**
+
 *Dieser Baustein verfügt über keine direkten Daten-Ausgänge.*
 
 ### **Adapter**

@@ -7,6 +7,7 @@ Hier ist die Dokumentationsseite für die Übung `Uebung_006e2_AX` basierend auf
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_006e2_AX** realisiert ein RS-Flip-Flop (Rücksetz-Dominant) unter Verwendung von Adapter-Verbindungen (AX). Ziel der Übung ist es, zwei digitale Eingänge zu nutzen, um einen digitalen Ausgang zu setzen (Set) oder zurückzusetzen (Reset). Dabei wird die Logikbaustein-Bibliothek für bistabile Elemente verwendet und über das logiBUS-System mit der Hardware abstrahiert.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Die Übung **Uebung_006e2_AX** realisiert ein RS-Flip-Flop (Rücksetz-Dominant) 
 In dieser Sub-Applikation werden spezifische Funktionsbausteine für die Ein- und Ausgabe sowie die logische Verarbeitung verwendet.
 
 ### Sub-Bausteine: Uebung_006e2_AX
+
 Diese Übung selbst ist als `SubAppType` definiert und enthält folgende interne Komponenten:
 
 - **Typ**: SubAppType
@@ -59,9 +61,11 @@ Der Programmablauf wird durch Adapter-Verbindungen (`AdapterConnections`) realis
 -   Verknüpfung von Hardware-IOs mit logischen Funktionen.
 
 ## Zusammenfassung
+
 Die `Uebung_006e2_AX` demonstriert eine grundlegende Speicherfunktion in der Steuerungstechnik. Durch die Verwendung von Adaptern (`AX_FB_RS`, `logiBUS_IXA`, `logiBUS_QXA`) wird der Schaltplan übersichtlich gehalten, da Ereignis- und Datenflüsse in einer einzigen Verbindungslinie zusammengefasst sind. Das Verhalten entspricht einem klassischen RS-Flip-Flop, bei dem `Input_I1` als Set-Eingang und `Input_I2` als Reset-Eingang fungiert.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

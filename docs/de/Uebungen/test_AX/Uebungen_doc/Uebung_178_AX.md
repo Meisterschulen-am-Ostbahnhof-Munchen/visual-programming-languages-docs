@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_178_AX` basierend auf den ber
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung des Funktionsbausteins `AX_FB_F_TRIG` zur Erkennung einer fallenden Flanke (Falling Edge Detection). Ziel der Schaltung ist es, ein Ereignis oder Signal genau in dem Moment auszulösen, wenn ein Eingangssignal von einem hohen Status (TRUE) auf einen niedrigen Status (FALSE) wechselt (z.B. beim Loslassen eines Tasters).
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Diese Übung demonstriert die Verwendung des Funktionsbausteins `AX_FB_F_TRIG` z
 In dieser Sub-Application werden verschiedene Funktionsbausteine kombiniert, um die Logik abzubilden. Da es sich hierbei um eine SubApp handelt, werden im Folgenden die intern verschalteten Bausteine beschrieben.
 
 ### Sub-Bausteine: Interne Logik
+
 Diese Übung besteht aus einer Vernetzung der folgenden Standard- und Adapter-Bausteine:
 
 - **Verwendete interne FBs**:
@@ -51,4 +53,5 @@ Der Ablauf des Programms lässt sich wie folgt beschreiben:
 **Zusammenfassend**: Wenn der Eingang I1 ausgeschaltet wird (fallende Flanke), wird der Ausgang Q1 für genau eine Sekunde eingeschaltet.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_178_AX` veranschaulicht die Verarbeitung von Signalen basierend auf deren Abschaltmoment. Durch die Kombination einer fallenden Flankenerkennung (`F_TRIG`) mit einem Impuls-Timer (`TP`) wird eine zeitgesteuerte Reaktion auf das Ende eines Eingangssignals realisiert. Dies ist eine typische Anwendung für Nachlaufsteuerungen oder Reaktionen auf das Loslassen von Bedienelementen.

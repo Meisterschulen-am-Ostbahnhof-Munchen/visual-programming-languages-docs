@@ -11,6 +11,7 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: `DigitalInput_I1`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Verwendete interne FBs**: Keine (Hardwaretreiber)
   - **Parameter**:
@@ -20,6 +21,7 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
   - **Datenausgang**: `IN` (aktueller digitaler Wert)
 
 ### Sub-Bausteine: `DigitalInput_I2`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Verwendete interne FBs**: Keine
   - **Parameter**:
@@ -29,6 +31,7 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
   - **Datenausgang**: `IN`
 
 ### Sub-Bausteine: `ILOCK`
+
 - **Typ**: `logiBUS::signalprocessing::interlock::ILOCK_BLOCK`
 - **Verwendete interne FBs**: Keine (vordefinierter Verriegelungsblock)
   - **Parameter**: Keine
@@ -48,6 +51,7 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
   Der `ILOCK_BLOCK` wertet die beiden Kanäle aus. Wenn `DI_UP` aktiv (`1`) und das Ereignis `EI_UP` eintrifft, wird `DO_UP` auf `1` gesetzt und gleichzeitig `DO_DOWN` auf `0` zurückgesetzt (Verriegelung). Analog wird bei Aktivierung von Kanal 2 der Kanal 1 gesperrt. Es ist sichergestellt, dass nie beide Ausgänge gleichzeitig `TRUE` werden.
 
 ### Sub-Bausteine: `DigitalOutput_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Verwendete interne FBs**: Keine
   - **Parameter**:
@@ -57,6 +61,7 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
   - **Dateneingang**: `OUT` (auszugebender Wert)
 
 ### Sub-Bausteine: `DigitalOutput_Q2`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Verwendete interne FBs**: Keine
   - **Parameter**:
@@ -112,4 +117,5 @@ Nach Abschluss dieser Übung sind Sie in der Lage, einfache Interlock‑Logiken 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

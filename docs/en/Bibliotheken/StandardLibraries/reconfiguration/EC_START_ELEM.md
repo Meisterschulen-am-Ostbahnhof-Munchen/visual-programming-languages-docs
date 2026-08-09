@@ -1,25 +1,31 @@
 # EC_START_ELEM
+
 ![EC_START_ELEM](https://user-images.githubusercontent.com/116869307/214154626-dbd925bc-19c1-4bbf-98f5-db588d7cefec.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The EC_START_ELEM function block is used to start instances according to the state machine definition of IEC 61499 function blocks. It enables the targeted starting of function block instances, connections (event/data), resources, or devices within a distributed automation system.
 ![EC_START_ELEM](EC_START_ELEM.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **REQ**: Event to request the start of an element. Associated with the data ELEM_NAME, DST, and QI.
 
 ### **Event Outputs**
+
 - **CNF**: Event to confirm that the element has been started. Associated with the data STATUS and QO.
 
 ### **Data Inputs**
+
 - **QI** (BOOL): Event input qualifier for controlling the request
 - **ELEM_NAME** (WSTRING): Name of the element instance to be started
 - **DST** (WSTRING): Destination where the element must be started (Syntax: ResourceName)
 
 ### **Data Outputs**
+
 - **QO** (BOOL): Event output qualifier for status feedback
 - **STATUS** (WSTRING): Service status with possible values: RDY, NO_SUCH_OBJECT, INVALID_STATE
 
@@ -51,6 +57,7 @@ The function block has several service sequences:
 - **resource_initiated_termination**: Resource-side termination
 
 ## Application Scenarios
+
 - Dynamically starting function blocks in running systems
 - Reconfiguring automation systems at runtime
 - Distributed management of resources and devices

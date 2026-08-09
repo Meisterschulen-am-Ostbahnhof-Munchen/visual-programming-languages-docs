@@ -1,23 +1,29 @@
 # AD_SPLIT_7
+
 ![AD_SPLIT_7](./AD_SPLIT_7.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AD_SPLIT_7** is a generic function block for splitting an incoming adapter of type `AD` (unidirectional) into seven separate output adapters. It allows a single adapter signal to be forwarded in parallel to multiple downstream components without modifying or buffering the data. The function block is specifically designed for use in control engineering (e.g., agricultural machinery) and is licensed under the Eclipse Public License 2.0.
 ---
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 None.
 
 #### **Event Outputs**
+
 None.
 
 #### **Data Inputs**
+
 None.
 
 #### **Data Outputs**
+
 None.
 
 #### **Adapters**
@@ -42,6 +48,7 @@ The function block forwards the adapter signal (type `AD`) present at socket `IN
 --
 
 ## Technical Features
+
 - **Generic Function Block**: The function block is declared as a generic type (GenericClassName = `'GEN_AD_SPLIT'`), which allows reuse with different adapter variants.
 - **Unidirectional Adapters**: All adapters used are unidirectional (direction from the socket to the plugs).
 - **No Internal States**: There is no state machine – the outputs are continuously derived from the input.
@@ -50,11 +57,13 @@ The function block forwards the adapter signal (type `AD`) present at socket `IN
 ---
 
 ## State Overview
+
 The function block has no states or state machines. Its behavior is purely combinatorial: As soon as a valid signal is present at the input, it is immediately mirrored to all outputs.
 
 ---
 
 ## Application Scenarios
+
 - **Distributing Sensor Data**: A single sensor (e.g., speed, pressure) should supply several independent evaluation units in parallel.
 - **Parallel Operation of Actuators**: A control signal is simultaneously transmitted to several identical actuators (e.g., valves, motors).
 - **Redundancy Setup**: The same data stream is sent to multiple redundant processing paths.
@@ -82,6 +91,7 @@ AD_SPLIT_7` is a simple yet useful function block for passive signal duplication
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

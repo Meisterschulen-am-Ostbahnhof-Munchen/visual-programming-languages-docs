@@ -2,7 +2,6 @@
 
 Here you will find function blocks that map network communication (publish/subscribe) to the unidirectional adapters. These blocks encapsulate the corresponding `iec61499::net` function blocks and buffer the transmitted values using a D flip-flop.
 
-
 * [AB_PUBLISH_1](AB_PUBLISH_1.md)
 * [AB_SUBSCRIBE_1](AB_SUBSCRIBE_1.md)
 * [AD_PUBLISH_1](AD_PUBLISH_1.md)

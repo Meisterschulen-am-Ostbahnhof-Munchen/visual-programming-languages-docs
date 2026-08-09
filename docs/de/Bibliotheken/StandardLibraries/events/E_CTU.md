@@ -19,6 +19,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der `E_CTU` (Event-Driven Up Counter) ist ein ereignisgesteuerter Aufwärtszähler gemäß dem IEC 61499-Standard. Seine Funktion ist es, bei jedem ankommenden Zählereignis einen internen Zählerstand zu erhöhen und diesen mit einem vorgegebenen Grenzwert zu vergleichen. Der Baustein kann jederzeit zurückgesetzt werden.
 
 ![E_CTU](E_CTU.svg)
@@ -26,24 +27,29 @@ Der `E_CTU` (Event-Driven Up Counter) ist ein ereignisgesteuerter Aufwärtszähl
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **CU (Count Up)**: Löst einen Zählschritt aus, der den Zählerstand `CV` um 1 erhöht.
     - **Verbundene Daten**: `PV`
 - **R (Reset)**: Setzt den Zählerstand `CV` auf 0 zurück.
 
 ### **Ereignis-Ausgänge**
+
 - **CUO (Count Up Output)**: Bestätigt einen Zählschritt. Wird nach jedem `CU`-Ereignis ausgelöst.
     - **Verbundene Daten**: `Q`, `CV`
 - **RO (Reset Output)**: Bestätigt das Zurücksetzen des Zählers.
     - **Verbundene Daten**: `Q`, `CV`
 
 ### **Daten-Eingänge**
+
 - **PV (Preset Value)**: Der Grenzwert (Datentyp: `UINT`). Dieser Wert wird bei jedem `CU`-Ereignis mit dem Zählerstand verglichen.
 
 ### **Daten-Ausgänge**
+
 - **Q (Status)**: Ausgangs-Flag, das `TRUE` wird, wenn der Zählerstand `CV` den Grenzwert `PV` erreicht oder überschreitet (Datentyp: `BOOL`).
 - **CV (Counter Value)**: Der aktuelle Zählerstand (Datentyp: `UINT`).
 
 ## Funktionsweise
+
 Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 
 1.  **Zählen (CU)**: Wenn ein `CU`-Ereignis eintritt und der interne Zählerstand `CV` den Maximalwert für `UINT` (65535) noch nicht erreicht hat, wird `CV` um 1 erhöht. Anschließend wird `CV` mit dem am `PV`-Eingang anliegenden Grenzwert verglichen. Wenn `CV >= PV` ist, wird der Ausgang `Q` auf `TRUE` gesetzt, andernfalls auf `FALSE`. Nach dem Zählvorgang wird das `CUO`-Ereignis ausgelöst, das den aktuellen Zählerstand `CV` und das Status-Flag `Q` ausgibt.
@@ -51,11 +57,13 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 2.  **Zurücksetzen (R)**: Wenn ein `R`-Ereignis eintritt, wird der Zählerstand `CV` sofort auf 0 und das Status-Flag `Q` auf `FALSE` gesetzt. Anschließend wird das `RO`-Ereignis ausgelöst, das die zurückgesetzten Werte `CV` und `Q` ausgibt.
 
 ## Technische Besonderheiten
+
 - **Ereignisgesteuert**: Der Baustein arbeitet ausschließlich auf Basis von Ereignissen (`CU`, `R`).
 - **Überlaufschutz**: Der Zähler stoppt, wenn der maximale Wert für `UINT` (65535) erreicht ist, um einen Überlauf zu verhindern.
 - **PV bei jedem Zählschritt**: Der Grenzwert `PV` wird mit dem `CU`-Ereignis verknüpft, was bedeutet, dass er potenziell bei jedem Zählschritt geändert werden kann.
 
 ## Anwendungsbeispiele
+
 - **Stückzähler**: Zählen von produzierten Teilen auf einem Förderband. Wenn eine Zielmenge (`PV`) erreicht ist, wird `Q` `TRUE`.
 - **Ereigniszählung**: Erfassen der Häufigkeit von Ereignissen, wie z.B. das Betätigen eines Schalters.
 - **Taktzähler**: Zählen von Taktzyklen in einer Maschine, um Wartungsintervalle zu signalisieren.
@@ -81,9 +89,11 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 * [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
+
 Der `E_CTU` ist ein grundlegender und vielseitiger Zählerbaustein für ereignisgesteuerte Systeme nach IEC 61499. Seine einfache Schnittstelle und sein vorhersehbares Verhalten machen ihn zu einem robusten Werkzeug für eine Vielzahl von Zähl- und Überwachungsaufgaben in der industriellen Automatisierung.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

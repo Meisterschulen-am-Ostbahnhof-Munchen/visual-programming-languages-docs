@@ -1,8 +1,10 @@
 # UDINT_AUDI_LE
+
 ![UDINT_AUDI_LE](./UDINT_AUDI_LE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUDI_LE** compares two values and checks whether the first value (IN1) is less than or equal to the second value (IN2). The second value is provided via an adapter socket (type `AUDI`), while the result (true/false) is output via an adapter plug (type `AX`). This function block is specifically designed for processing unsigned double integers (UDINT) – or, more generally, elementary data types – and is suitable for use in IEC 61131-3 environments.
 
 * * * * * * * * * *
@@ -56,6 +58,7 @@ The internal block `F_LE` performs the comparison and passes the result (`TRUE` 
 
 * * * * * * * * * *
 ## Technical Features
+
 - **Data Type:** The input `IN1` is declared as `ANY_ELEMENTARY`, so the function block is, in principle, suitable for all elementary data types (e.g., INT, UDINT, REAL) – however, the naming convention focuses on UDINT.
 - **Adapters:** Communication with external systems is handled via standardized unidirectional adapters (`AUDI` and `AX`). This enables loose coupling and reusability across different networks.
 - **Internal Implementation:** The comparison is implemented using the embedded basic function block `F_LE`, which represents a typical IEC 61131-3 function.
@@ -68,6 +71,7 @@ This function block does not have an explicit state machine. It behaves like a s
 
 * * * * * * * * * *
 ## Application Scenarios
+
 - **Limit Monitoring:** Comparison of a measured value (e.g., speed, pressure) with a threshold value defined via an adapter.
 - **Range Check:** Combination with other comparison blocks (e.g., `UDINT_AUDI_GE`) to check a range of values.
 - **Control Logic:** Triggering an action if a value does not exceed a maximum value.

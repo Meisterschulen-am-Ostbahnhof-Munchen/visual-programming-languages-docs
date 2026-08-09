@@ -3,11 +3,13 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung eines Zeitrelais (Timer On-Delay) mit einer festen Zeitvorgabe von 5 Sekunden. Die Subapplikation dient als wiederverwendbare Komponente zur Signalverarbeitung mit Zeitverzögerung.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: tastend_TON_5s
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
     - **AX_X_TO_BOOL**: adapter::conversion::unidirectional::AX_X_TO_BOOL
@@ -57,6 +59,7 @@ Diese Übung demonstriert die Verwendung eines Zeitrelais (Timer On-Delay) mit e
 **Start der Übung**: Die Subapplikation kann in größere Applikationen integriert werden, wo eine 5-Sekunden-Verzögerung benötigt wird.
 
 ## Zusammenfassung
+
 Die Subapplikation tastend_TON_5s stellt eine kompakte Lösung für zeitverzögerte Signalverarbeitung dar. Durch die feste Zeitvorgabe von 5 Sekunden und die Verwendung standardisierter Adapter-Schnittstellen kann sie einfach in verschiedene Steuerungsanwendungen integriert werden. Die klare Struktur mit Signalwandlung, Timer-Funktionalität und Rückwandlung macht die Funktionsweise transparent und nachvollziehbar.
 
 ## 🛠️ Zugehörige Übungen
@@ -69,4 +72,5 @@ Die Subapplikation tastend_TON_5s stellt eine kompakte Lösung für zeitverzöge
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

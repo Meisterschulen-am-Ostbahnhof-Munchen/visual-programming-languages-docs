@@ -1,8 +1,10 @@
 # IA_VDS
+
 ![IA_VDS](./IA_VDS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **IA_VDS** function block is an ISOBUS adapter for vehicle direction and speed according to ISO 11783-7 (PGN 65256). It encapsulates access to the corresponding CAN bus data and provides it as modern 4diac adapter interfaces. The block is initialized via an INIT event and subsequently provides continuous navigation speed, compass direction, altitude, and a timeout status.
 ## Interface Structure
 
@@ -58,19 +60,18 @@ The module internally contains another function block, **I_VDS** (from the libra
 The IA_VDS does not have an explicit state machine; its behavior is determined by the internal I_VDS:
 
 1. **Initial** – No INIT signal has been received yet.
-
 2. **Initialization in progress** – After INIT, as long as I_VDS is not yet ready.
-
 3. **Active** – After successful initialization (INITO = TRUE). Values are updated regularly.
-
 4. **Error** – In case of timeout or invalid bus data (STATUS contains an error message, QO = FALSE).
 
 ## Application Scenarios
+
 - **Agricultural Machinery Control** – Integration of driving speed, direction, and height into control logic (e.g., for site-specific applications).
 - **ISOBUS Network Connection** – As an adapter in 4diac applications that use ISOBUS data from a tractor or harvester.
 - **Telemetry Systems** – Forwarding of VDS data to higher-level systems (cloud, display).
 
 ## Comparison with Similar Modules
+
 - **I_TC** (ISOBUS Tractor Control) – Provides general tractor data (speed, PTO speed, linkage) via similar adapters, but not specifically the VDS-PGN.
 - **I_GNSS** (ISOBUS GNSS Adapter) – Provides GPS-based position data, but without a focus on direction/speed via CAN.
 - **IA_VDS** is specialized for pure vehicle direction/speed information (PGN 65256) and has a particularly streamlined interface.
@@ -82,6 +83,7 @@ The **IA_VDS** is a practical module for easily integrating ISO-11783-7-specific
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

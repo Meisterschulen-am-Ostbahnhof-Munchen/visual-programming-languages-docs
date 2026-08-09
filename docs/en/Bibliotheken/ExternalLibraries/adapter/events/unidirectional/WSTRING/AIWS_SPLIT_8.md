@@ -1,23 +1,29 @@
 # AIWS_SPLIT_8
+
 ![AIWS_SPLIT_8](./AIWS_SPLIT_8.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AIWS_SPLIT_8** splits an incoming AIWS adapter signal into eight identical outputs. It functions as a generic splitter for unidirectional adapter connections and enables the parallel forwarding of a signal to multiple subsequent function blocks.
 ## Interface Structure
 
 The function block has neither event nor data inputs or outputs. All communication takes place exclusively via adapters.
 
 ### Event Inputs
+
 None.
 
 ### Event Outputs
+
 None.
 
 ### Data Inputs
+
 None.
 
 ### Data Outputs
+
 None.
 
 ### Adapters
@@ -39,6 +45,7 @@ None.
 The module receives an AIWS (adapter) signal via the **IN** socket. This signal is duplicated to all eight **OUT** plugs without processing or delay. Changes to the input signal are immediately reflected at all outputs.
 
 ## Technical Features
+
 - The module is generic and designed for a fixed number of eight outputs.
 - There are no event-driven processes – signal transmission is purely adapter-based and continuous.
 - The implementation is a pure splitter without internal logic or state management.
@@ -48,11 +55,13 @@ The module receives an AIWS (adapter) signal via the **IN** socket. This signal 
 The module does not have a state machine. There are no internal states or event sequences – the output directly follows the input.
 
 ## Application Scenarios
+
 - **Signal Distribution** in Automation Applications: An AIWS sensor value is to be made available to several independent control or monitoring blocks simultaneously.
 - **Parallelization** of Algorithms: Subsequent modules require the same adapter data stream but operate in parallel on different resources.
 - **Test and Simulation Environments**: An incoming signal is distributed across multiple evaluation instances to compare different processing paths.
 
 ## Comparison with Similar Components
+
 - **AIWS_SPLIT_4** – Splitter with four outputs.
 - **AIWS_SPLIT_16** – Splitter with 16 outputs.
 - **AIWS_MERGE** – Combines multiple AIWS adapters into a single output (counterpart).

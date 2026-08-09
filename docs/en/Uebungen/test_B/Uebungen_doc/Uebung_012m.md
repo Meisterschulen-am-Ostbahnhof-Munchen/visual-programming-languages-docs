@@ -1,10 +1,13 @@
 # Exercise_012m: String Input and Saving to NVS with a Subapp
+
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates processing a string input from an ISOBUS source and saving and retrieving the value to/from the non-volatile memory (NVS) of an ESP32. All the logic is organized in a self-contained subapp, promoting reusability and modularity. The goal is to implement robust storage of configuration data or user input that persists even after a reboot.
 ## Function Blocks (FBs) Used
 
 ### Sub-Block: Uebung_012m_sub
+
 - **Type**: `SubAppType` (custom SubApp)
 - **Internal FBs Used**:
 - **StringValue_IS**: `isobus::UT::io::StringValue::StringValue_IS`
@@ -38,15 +41,10 @@ The subapp `Uebung_012m_sub` encapsulates the entire process: reading a string v
 **Process**:
 
 1. After initialization (`NVS.INITO`), a read operation (`NVS.GET`) is automatically triggered. The read value is then stored at `NVS.VALUEO`.
-
 2. Upon an external event (not shown, but logical), `StringValue_IS` is activated. Its output, `IND`, triggers `NVS.SET`, which then saves the current string in the NVS.
-
 3. After a successful write (`NVS.SETO`) or read (`NVS.GETO`), an event is sent to the output `IND` of the subapp.
-
 4. Simultaneously, with each read operation (`NVS.GETO`), the retrieved value is sent to the ISOBUS bus via `Q_StringValue.REQ`, allowing other devices to query the current value.
-
 4. Simultaneously, with each read operation (`NVS.GETO`), the retrieved value is sent to the ISOBUS bus via `Q_StringValue.REQ`, enabling other devices to query the current value.
-
 4. Simultaneously, with each read operation (`NVS.GETO`), the retrieved value is sent to the ISOBUS bus, allowing other devices to query the current value.
 ## Program Flow and Connections
 
@@ -92,6 +90,6 @@ This exercise provides training in working with string input, non-volatile memor
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-

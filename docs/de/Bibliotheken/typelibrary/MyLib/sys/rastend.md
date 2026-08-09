@@ -5,11 +5,13 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert eine rastende Schaltfunktion, die beim Loslassen eines Signals gestartet wird. Die Subapplikation verwendet Adapter für die Signalverarbeitung und Ereignissteuerung, um eine zuverlässige Rastfunktionalität zu realisieren.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: rastend
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
     - **E_T_FF**: iec61499::events::E_T_FF
@@ -48,6 +50,7 @@ Der Programmablauf folgt dieser Signalverarbeitungskette:
 - Adapterverbindungen: IN → AX_X_TO_BOOL.AX_IN, AX_BOOL_TO_X.AX_OUT → OUT
 
 ## Zusammenfassung
+
 Diese Übung demonstriert die Implementierung einer rastenden Schaltfunktion mit Adaptern für Signalumwandlung. Sie zeigt die Verwendung von Toggle-Flipflops für Zustandsspeicherung und die strukturierte Signalverarbeitung über verschiedene Funktionsbausteine. Die Lösung ist besonders geeignet für Anwendungen, bei denen ein Signal nach dem Loslassen aktiv bleiben soll.
 
 ## 🛠️ Zugehörige Übungen

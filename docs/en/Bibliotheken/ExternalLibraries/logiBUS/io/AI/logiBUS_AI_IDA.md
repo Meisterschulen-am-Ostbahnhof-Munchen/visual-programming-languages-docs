@@ -1,8 +1,10 @@
 # logiBUS_AI_IDA
+
 ![logiBUS_AI_IDA](./logiBUS_AI_IDA.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `logiBUS_AI_IDA` is a composite function block (FB) for processing analog double-word input data. It serves as an interface between a logiBUS resource and the application by providing uniform analog input values via an adapter and returning status information (QO, STATUS) to the calling instance. The function block supports both initialization-driven and event-driven processing.
 ## Interface Structure
 
@@ -59,6 +61,7 @@ Der Baustein kapselt den internen FB `logiBUS_AI_ID`, der die eigentliche Logik 
 Die zyklische Verarbeitung erfolgt gemäß `TimeDelta`. Wenn `TimeDelta = 16#FFFFFFFF` gesetzt ist, wird nur bei einer Änderung des analogen Werts (unter Berücksichtigung der Hysterese) ein Ereignis erzeugt.
 
 ## Technische Besonderheiten
+
 - **Hysterese (`AnalogInput_hysteresis`)**: Ist der Wert 0, muss die Zykluszeit (`TimeDelta`) zwingend ungleich 0 sein, da sonst keine Ereignisse ausgelöst werden können.
 - **Zeitsteuerung**: Mit `TimeDelta` und `TimeRateLimit` kann das Verhalten feinabgestimmt werden – z. B. zyklische Abfrage (TimeDelta > 0) or pure change notification (TimeDelta = 0xFFFFFFFF).
 - **External Service Request**: Another component (e.g., a higher-level control block) can request an update via socket `SREQ`.
@@ -69,24 +72,21 @@ Die zyklische Verarbeitung erfolgt gemäß `TimeDelta`. Wenn `TimeDelta = 16#FFF
 The block itself does not have an explicit state machine, as its behavior is determined by the internal FB `logiBUS_AI_ID`. The following basic processes can be identified:
 
 1. **Initialization Phase**
-
 - Event `INIT` → Internal function block is configured → Confirmation `INITO` with QO/STATUS.
-
 2. **Data Provisioning (Cyclical / Change-Based)**
-
 - After INIT, the internal function block regularly sends events via `IND` (or `CNF`) to the plug `IN`, or upon value change.
-
 3. **Manual Request**
-
 - The current processing is triggered by `REQ` or `SREQ`; results are also output via `IN`.
 
 ## Application Scenarios
+
 - **Analog Sensor Acquisition**: Logging in analog sensors (e.g., temperature, pressure, level) with configurable hysteresis and sampling rate.
 - **Monitoring with Minimal Bus Load**: By setting `TimeDelta = 0xFFFFFFFF`, events are only sent when relevant changes occur.
 - **Safety-Critical Applications**: Combination of cyclic polling (e.g., 250 ms) with a fast change alarm (`TimeRateLimit` limits the event frequency).
 - **Control Bus Connection**: This function block is suitable as a generic interface for logiBUS-compatible analog input modules with a uniform adapter protocol.
 
 ## Comparison with Similar Function Blocks
+
 - **logiBUS_AI_ID** (internal FB): Provides the core logic but does not have an additional socket for external service requests. `logiBUS_AI_IDA` extends this functionality with `SREQ` and indirect triggering via `E_R_TRIG`.
 - **logiBUS_AI_S** (data structure): Serves as a pure data type for identifying the analog channel; `logiBUS_AI_IDA` uses it as an input parameter.
 - **Other composite function blocks for digital inputs**: Unlike digital function blocks, the focus is on analog conversion, hysteresis, and time-controlled change detection.

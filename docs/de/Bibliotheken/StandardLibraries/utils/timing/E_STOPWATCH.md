@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **E_STOPWATCH**-Funktionsbaustein ist ein hochpräziser Zeitmessbaustein nach IEC 61499-2 Standard, entwickelt unter EPL-2.0 Lizenz.
 Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen in Echtzeitsystemen.
 
@@ -13,12 +14,14 @@ Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `START`: Startet die Zeitmessung
 - `ET`: Trigger für Zwischenausgabe der gemessenen Zeit
 - `STOP`: Beendet die Zeitmessung und gibt Ergebnis aus
 - `RESET`: Setzt die Stoppuhr zurück
 
 ### **Ereignis-Ausgänge**
+
 - `EO`: Zeitdifferenzausgabe nach STOP
 - `ETO`: Zeitdifferenzausgabe nach ET-Trigger
 - `RESETO`: Bestätigung des Reset-Vorgangs
@@ -117,4 +120,5 @@ Idealer Einsatz bei:
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

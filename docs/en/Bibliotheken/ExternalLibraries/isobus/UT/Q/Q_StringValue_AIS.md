@@ -1,8 +1,10 @@
 # Q_StringValue_AIS
+
 ![Q_StringValue_AIS](./Q_StringValue_AIS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **Q_StringValue_AIS** implements the "Command Change String Value" service according to ISO 11783-6 (Part 6, Section F.24). It is used to send a new string value to a connected device via an ISOBUS network. The block encapsulates all the logic for initialization, sending the command, and returning the result. The new string value is input via a unidirectional adapter (AIS), which provides the actual data.
 ## Interface Structure
 
@@ -43,14 +45,13 @@ The function block **Q_StringValue_AIS** implements the "Command Change String V
 The function block internally contains an instance of the function block `Q_StringValue` (from the library `isobus::UT::Q`), which performs the actual ISOBUS communication. The wiring is as follows:
 
 1. **Initialization**: An INIT event at the input activates the internal `Q_StringValue` function block. The provided `u16ObjId` is forwarded to this device.
-
 2. **Triggering the Service**: As soon as the adapter `pau8String` receives an event (E1), the REQ event of the internal block is triggered. Simultaneously, the string value is passed to `Q_StringValue.pau8String` via the adapter's data output D1.
-
 3. **Feedback**: After processing is complete, the internal block outputs the events `INITO` and `CNF`, whose output data (`STATUS`, `s16result`) are directly passed to the corresponding outputs of the overall block.
 
 All the logic is implemented in the included `Q_StringValue` block; the `Q_StringValue_AIS` serves as a specialized package with an adapter input.
 
 ## Technical Features
+
 - The block complies with the **ISO 11783-6** (ISOBUS) specification, Part 6, "Command Change String Value" service.
 - The implementation uses a **unidirectional adapter** (`adapter::types::unidirectional::AIS`) that only transmits data from the host to the block. This simplifies integration into control systems where the new string value is provided asynchronously.
 - The initial value of `u16ObjId` is `ID_NULL` – this must be set to a valid object ID before first use.
@@ -66,6 +67,7 @@ The function block itself does not have an explicit internal state machine, as t
 - **Errors**: In case of invalid parameters or communication errors, a corresponding status/return value is provided.
 
 ## Application Scenarios
+
 - **ISOBUS Command:** Changing a string parameter on an agricultural device (e.g., machine name, task, variable name) via the ISOBUS network.
 - **Control Systems:** Connection to a PLC or HMI that provides the new string value via an adapter (e.g., from a text box, a database field, or a communication channel).
 - **Test Environments:** Simulating the service for development and testing purposes.

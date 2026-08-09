@@ -11,15 +11,19 @@ Der Funktionsblock `AL_TO_ALI` ist ein zusammengesetzter Baustein (Composite FB)
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Der Baustein besitzt keine eigenständigen Ereignis-Eingänge. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Der Baustein besitzt keine eigenständigen Ereignis-Ausgänge. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter.*
 
 ### **Daten-Eingänge**
+
 *Der Baustein besitzt keine eigenständigen Daten-Eingänge. Die Eingangsdaten werden über den Socket `AL_IN` bereitgestellt.*
 
 ### **Daten-Ausgänge**
+
 *Der Baustein besitzt keine eigenständigen Daten-Ausgänge. Die Ausgangsdaten werden über den Plug `ALI_OUT` bereitgestellt.*
 
 ### **Adapter**
@@ -70,4 +74,5 @@ Der `AL_TO_ALI`-Funktionsblock ist ein einfacher, aber wichtiger Konverter, der 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

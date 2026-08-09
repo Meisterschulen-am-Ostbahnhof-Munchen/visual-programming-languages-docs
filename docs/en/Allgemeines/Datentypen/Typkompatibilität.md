@@ -1,7 +1,9 @@
 # Type Compatibility in 4diac IDE (Data Connections)
+
 The rules for allowed data connections are based on the principle:
 **"Target must be able to accept Source"**.
 ## Central Files in the Codebase
+
 | File | Purpose |
 |-------|-------|
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/data/impl/DataTypeAnnotations.java` | Defines `isAssignableFrom(DataType other)` for each IEC 61131-3 type |
@@ -83,16 +85,14 @@ Long types also accept short variants:
 ## Summary of Rules
 
 1. **Width Rule:** A smaller type may be concatenated with a larger type (e.g., `UINT` → `UDINT`).
-
 2. **No Narrowing:** A larger type cannot be joined to a smaller type (e.g., `UDINT` → `UINT` is forbidden).
-
 3. **Sign Boundary:** Signed and unsigned integers are not compatible (e.g., `INT` → `UINT` is forbidden).
-
 4. **Boolean Special Rule:** `BOOL` can be joined to any bit type (`BYTE`, `WORD`, `DWORD`, `LWORD`).
 
 ## Obsolete Conversions & F_MOVE
 
 ### 1. Deprecated Conversion Modules
+
 All old identity conversion modules from the folder `convert-1.0.0` (such as `BOOL2BOOL`, `INT2INT`, `DINT2DINT`, `REAL2REAL`, `STRING2STRING`, etc.) are **deprecated** and must no longer be used.
 
 ### 2. Using `F_MOVE`
@@ -100,10 +100,10 @@ All old identity conversion modules from the folder `convert-1.0.0` (such as `BO
 To copy or forward values of the same type, the generic function block `F_MOVE` (`iec61131::selection::F_MOVE`) must be used instead.
 
 ### 3. Configuring `F_MOVE`
+
 Since `F_MOVE` is generic, it must be configured in XML network files using the attribute `DataType` to specify the desired target data type.
 
 **Example configuration in the XML:**
-
 
 ```xml
 <FB Name="MeinFMove" Type="iec61131::selection::F_MOVE">
@@ -132,24 +132,24 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
 * *In the FB network:* Direct connection via the conversion block `DWORD_TO_REAL`.
 * *Explanation:* This copies the bits of 123 directly into the float bit pattern. According to IEEE-754, this is interpreted as an extremely small, almost infinitely close zero, which is mathematically incorrect.
 * **Correct (double conversion):**
-  * *In ST:*
+* *In ST:*
     ```pascal
     real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
     ```
 
-  * *In the FB network:* Sequential insertion of two conversion modules:
+* *In the FB network:* Sequential insertion of two conversion modules:
     `[DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.
 
-  * *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
+* *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
 
 #### Scenario B: An IEEE-754 float bit pattern is already stored in the DWORD.
 
 If `DWORD` directly contains the raw bit pattern of a floating-point number (e.g., read in via a Modbus register or a network connection):
 
 * **Correct:**
-  * *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
-  * *In the FB network:* Insert the conversion block `DWORD_TO_REAL`.
-  * *Explanation:* Here, the direct cast via `reinterpret_cast` is exactly what's needed to interpret the raw bits directly as a floating-point number.
+* *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
+* *In the FB network:* Insert the conversion block `DWORD_TO_REAL`.
+* *Explanation:* Here, the direct cast via `reinterpret_cast` is exactly what's needed to interpret the raw bits directly as a floating-point number.
 
 ## Type Conversions (Casting)
 
@@ -163,7 +163,6 @@ The following direct conversions are **not defined** in IEC 61131-3 / IEC 61499:
 Instead, you must convert using the appropriate unsigned integer type:
 
 | Source | Destination | Correct Conversion |
-
 |--------|------|---------------------|
 | BYTE | REAL | `BYTE` → `USINT` → `REAL` |
 | WORD | REAL | `WORD` → `UINT` → `REAL` |
@@ -191,13 +190,11 @@ UDINT#16777216  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Correct (2^24)
 UDINT#16777217  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Precision loss (rounding)
 ```
 
-
 **Solution:** For values ≥ 16,777,216, use `LREAL` instead of `REAL`:
 
 ```iecst
 UDINT#16777217  →  UDINT_TO_LREAL()  →  LREAL#16777217.0  ✓
 ```
-
 
 This applies in particular to:
 
@@ -209,4 +206,5 @@ This applies in particular to:
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

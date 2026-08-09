@@ -10,15 +10,19 @@ Der Funktionsblock **AL_SPLIT_2** dient dazu, ein eingehendes unidirektionales A
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Keine*
 
 ### **Ereignis-Ausgänge**
+
 *Keine*
 
 ### **Daten-Eingänge**
+
 *Keine*
 
 ### **Daten-Ausgänge**
+
 *Keine*
 
 ### **Adapter**
@@ -69,4 +73,5 @@ Der `AL_SPLIT_2` ist ein einfacher, aber nützlicher generischer Funktionsblock 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

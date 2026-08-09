@@ -1,8 +1,10 @@
 # Exercise_217_ALI: Standard IEC 61131-3 ALI_FB_CTD (Adapter Version, Down Counter, LINT) with Terminal Output
+
 ![Uebung_217_ALI_network](./Uebung_217_ALI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an **IEC 61131-3 compliant down counter (CTD) in adapter version** for the LINT (Long Integer) data type. The current counter value is displayed on a terminal. The counter is decremented via a digital input signal **CD** (Count Down). Another digital signal **LD** (Load) loads the counter with a predefined preset value. Once the counter value reaches 0, the output **Q** is set.
 The preset value is obtained from a constant block (LINT#10) during initialization and passed to the counter via an ALI-LINT-to-LI converter. The counter reading is passed through an ALI-to-AUDI converter to a numeric display module (Q_NumericValue_AUDI) and displayed on the terminal.
 
@@ -11,6 +13,7 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 ## Function Blocks Used (FBs)
 
 ### ALI_FB_CTD
+
 - **Type:** `adapter::iec61131::counters::ALI_FB_CTD`
 - **Internal FBs Used:** None (standalone counter block)
 - **Parameters:**
@@ -26,6 +29,7 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 - **Functionality:** A pulse at event input CD decrements the current counter value CV by 1. A pulse at LD loads the value from PV into CV. When CV = 0, output Q is set.
 
 ### ALI_LINT_TO_LI
+
 - **Type:** `adapter::conversion::unidirectional::ALI_LINT_TO_LI`
 - **Internal Function Blocks Used:** None
 - **Parameters:**
@@ -37,6 +41,7 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 - **Functionality:** Upon a request (REQ), provides the parameterized LINT value (here 10) at output ALI_OUT. Serves as the source for the preset value PV.
 
 ### Input_CD
+
 - **Type:** `logiBUS::io::DI::logiBUS_IXA`
 - **Internal Function Blocks Used:** None
 - **Parameters:**
@@ -45,6 +50,7 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 - **Functionality:** Converts a digital signal from the fieldbus (Input_I1) into an adapter event output IN. Used to supply the CD (Count Down) signal to the counter.
 
 ### Input_LD
+
 - **Type:** `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters:**
 - `QI` = `TRUE`
@@ -52,6 +58,7 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 - **Functionality:** Similar to Input_CD, it provides the load signal (LD) for the counter.
 
 ### Output_Q1
+
 - **Type:** `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters:**
 - `QI` = `TRUE`
@@ -59,12 +66,14 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 - **Functionality:** Receives the digital output Q of the counter and makes it available as a fieldbus output (Output_Q1).
 
 ### ALI_TO_AUDI
+
 - **Type:** `adapter::conversion::unidirectional::ALI_TO_AUDI`
 - **Internal Function Blocks Used:** None
 - **Parameters:** None
 - **Functionality:** Converts the ALI adapter (LINT) to an AUDI adapter (UINT?). The converted value is passed to the numeric display block. Since the converter only processes positive values, negative counter readings cannot be displayed.
 
 ### Q_NumericValue_AUDI
+
 - **Type:** `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameters:**
 - `u16ObjId` = `OutputNumber_N1` (identifier of the terminal output element)
@@ -81,6 +90,7 @@ The following diagram shows the logical data and event flow:
 - **Output Q:** When CV = 0, the counter sets output Q. This is output as a fieldbus signal (Output_Q1) via Output_Q1.
 
 ### Connection List (Adapter and Event Connections)
+
 - **Event Connection:** `Input_LD.INITO` → `ALI_LINT_TO_LI.REQ`
 - **Adapter Connections:**
 - `Input_CD.IN` → `ALI_FB_CTD.CD`
@@ -104,4 +114,5 @@ The difficulty level is **medium**. Prior knowledge of the 4diac IDE and a basic
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

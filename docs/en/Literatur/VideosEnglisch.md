@@ -1,5 +1,7 @@
 # 📺 English Videos
+
 ## Selected Videos and Playlists
+
 * [Introduction to IEC 61499 (Video)](https://youtu.be/quCrTcl8qSc)
 * [4diac English Tutorials](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT)
 * [IEC 61499 Distributed Control](https://www.youtube.com/playlist?list=PLD-CHxmB4P7dD6R8jOnamCuvV4NwSgrQT)
@@ -7,6 +9,7 @@
 * [IES IEEE Webinar on IEC 61499](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
 *
 ### More YouTube Resources
+
 * [Video: IEC 61499 Overview](https://www.youtube.com/watch?v=quCrTcl8qSc)
 * [Video: Implementation Examples](https://www.youtube.com/watch?v=6ppKrO1ZwE8)
 * [Video: Distributed Intelligence](https://www.youtube.com/watch?v=K9iItQBC-ac)
@@ -20,6 +23,7 @@
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,6 +1,8 @@
 # AS_TO_AULI
+
 ---
 ## Introduction
+
 ![AS_TO_AULI](./AS_TO_AULI.svg)
 The composite function block `AS_TO_AULI` converts an **AS (SINT) adapter** to an **AULI (ULINT) adapter**. Internally, it uses the IEC 61131 conversion block `F_SINT_TO_ULINT` to perform the actual type conversion from SINT to ULINT. The block is designed as part of a unidirectional adapter library for communication between different data types.
 ---
@@ -14,16 +16,19 @@ The block has **no direct event inputs**. Events are received via the **Socket a
 - **`AS_IN.E1`** – Event input via the AS adapter, which triggers the data conversion.
 
 ### **Event Outputs**
+
 This function block has **no direct event outputs**. Events are output via the **Plug adapter `AULI_OUT`**:
 
 - **`AULI_OUT.E1`** – Event output via the AULI adapter, which is activated after the conversion is complete.
 
 ### **Data Inputs**
+
 This function block has **no direct data inputs**. Data input is via the **Socket adapter `AS_IN`**:
 
 - **`AS_IN.D1`** – Data input of type **SINT**, which provides the value to be converted.
 
 ### **Data Outputs**
+
 The module has **no direct data outputs**. Data output is via the **Plug adapter `AULI_OUT`**:
 
 - **`AULI_OUT.D1`** – Data output of type **ULINT**, which provides the converted value.
@@ -43,9 +48,7 @@ The module has **no direct data outputs**. Data output is via the **Plug adapter
 ... 2. The event is forwarded to the internal function block `F_SINT_TO_ULINT` (as `REQ`).
 
 3. The internal function block performs the conversion **SINT → ULINT**.
-
 4. After successful conversion, `F_SINT_TO_ULINT` sends an acknowledgment event (`CNF`) to the plug adapter `AULI_OUT.E1`.
-
 5. The converted value (type ULINT) is output via `AULI_OUT.D1`.
 
 The conversion is performed according to the IEC 61131-3 standard: The SINT value (8-bit signed) is converted into an unsigned 64-bit value (ULINT). Negative SINT values result in a negative ULINT representation (two's complement conversion to 64 bits).
@@ -53,6 +56,7 @@ The conversion is performed according to the IEC 61131-3 standard: The SINT valu
 ---
 
 ## Technical Specifications
+
 - **Standard Compliance**: The component is specified according to IEC 61499-2.
 - **License**: Eclipse Public License 2.0 (EPL-2.0).
 - **Dependency**: Imports the IEC 61131 component `F_SINT_TO_ULINT` from the package `iec61131::conversion`.
@@ -62,6 +66,7 @@ The conversion is performed according to the IEC 61131-3 standard: The SINT valu
 ---
 
 ## State Overview
+
 The function block does **not have its own state machine**. It functions purely as an interconnect for the inner `F_SINT_TO_ULINT` function block. Its behavior is strictly event-driven:
 
 - **Waiting** (Initial State) → Event sent to `AS_IN.E1` → Transition to **Conversion**.
@@ -72,6 +77,7 @@ Error handling is not explicitly modeled; the inner function block outputs a def
 ---
 
 ## Application Scenarios
+
 - **Integration into Adapter Chains**: If an upstream function block provides a SINT value, but subsequent components only process ULINT, `AS_TO_AULI` can be used as an intermediate adapter.
 - **Sensor Connection**: Sensors with 8-bit output (e.g., rotary encoders, simple switches) can be connected to a 64-bit bus.
 - **Legacy Systems**: This adapter makes legacy systems with SINT interfaces compatible with modern ULINT-based controllers.
@@ -98,4 +104,5 @@ AS_TO_AULI` is a simple yet important composite module for type conversion betwe
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

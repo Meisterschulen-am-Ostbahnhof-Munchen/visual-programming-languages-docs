@@ -10,20 +10,25 @@ Der Funktionsbaustein `AX_SEL_BYTE` ist ein standardisierter Selektionsbaustein,
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 * **EI0**: Aktualisiert und übernimmt den Wert am Daten-Eingang `IN0`.
 * **EI1**: Aktualisiert und übernimmt den Wert am Daten-Eingang `IN1`.
 
 ### **Ereignis-Ausgänge**
+
 * **CNF**: Bestätigungsereignis (Confirmation). Signalisiert dem nachfolgenden System, dass ein neuer ausgewählter Wert am Ausgang `OUT` bereitsteht.
 
 ### **Daten-Eingänge**
+
 * **IN0** (`BYTE`): Erster auswählbarer Eingangswert (wird selektiert, wenn das Auswahlsignal logisch `0` bzw. inaktiv ist).
 * **IN1** (`BYTE`): Zweiter auswählbarer Eingangswert (wird selektiert, wenn das Auswahlsignal logisch `1` bzw. aktiv ist).
 
 ### **Daten-Ausgänge**
+
 * **OUT** (`BYTE`): Der aktuell ausgewählte Byte-Wert.
 
 ### **Adapter**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`): Ein unidirektionaler Adapter, der als Selektor fungiert. Er liefert sowohl das Ereignis (`E1`) zur Triggerung der Auswahl als auch den eigentlichen booleschen Auswahl-Datenwert (`D1`).
 
 ## Funktionsweise

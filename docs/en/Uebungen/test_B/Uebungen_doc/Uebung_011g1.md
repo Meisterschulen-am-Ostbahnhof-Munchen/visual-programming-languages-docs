@@ -1,8 +1,10 @@
 # Exercise_011g1: Numeric Value Input -- Multiple IOObservers
+
 ![Uebung_011g1_network](./Uebung_011g1_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the parallel use of multiple `IOObserver` for a common numeric input value. Three instances of the function block `NumericValue_ID` monitor the same object identifier (`InputNumber_I1`). The returned `DWORD` values are each converted to the type `UDINT` using a conversion block. The exercise shows how multiple observers can be connected to a common data source without the values affecting each other.
 
 ## Function Blocks (FBs) Used
@@ -52,6 +54,7 @@ All three `NumericValue_ID` blocks obtain their data from the same ISOBUS object
 The outputs `OUT` of the three `F_DWORD_TO_UDINT` blocks represent the same numerical signal as `UDINT` – for different consumers within the application.
 
 ### Learning Objectives
+
 - Understanding the parallel monitoring of a single ISOBUS variable with multiple `IOObserver` instances.
 - Application of type conversions (`DWORD` → `UDINT`) in 4diac.
 - Error prevention through separate signal paths (no data overlap).
@@ -69,6 +72,7 @@ Exercise `Uebung_011g1` demonstrates a pattern in which a single numeric input (
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

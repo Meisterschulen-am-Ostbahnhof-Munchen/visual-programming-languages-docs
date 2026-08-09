@@ -1,8 +1,10 @@
 # AULI_FB_CTD
+
 ![AULI_FB_CTD](./AULI_FB_CTD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AULI_FB_CTD** implements a **down counter** based on the data type `ULINT` (unsigned long integer). It is implemented as an **adapter version** and encapsulates the standard function block `FB_CTD_ULINT` from the IEC 61131-3 library. The block allows modular connection via the adapter interfaces CD (Count Down), LD (Load), and PV (Preset Value), as well as the output of the current count value (CV) and a binary signal (Q) via corresponding plug adapters.
 ## Interface Structure
 
@@ -81,6 +83,7 @@ An event on `PV.E1` updates the internally stored preset value (without changing
 After each processing operation, the confirmation event `CNF` is sent, along with the events on the plug adapters `Q.E1` and `CV.E1`. The data `Q.D1` and `CV.D1` are updated accordingly.
 
 ## Technical Features
+
 - **ULINT Data Type:**
 
 The module uses unsigned 64-bit integers (ULINT), enabling counting ranges from 0 to 2⁶⁴‑1 – suitable for very large counting tasks.
@@ -112,6 +115,7 @@ Internally, the function block only manages the **counter value** (CV) and the *
 The output `Q` is set to `TRUE` when `CV = 0` is present; otherwise, it is `FALSE`..
 
 ## Application Scenarios
+
 - **Large-Range Piece Counter:**
 
 Detection of production quantities with a value range > 32 bits (e.g., 10 billion pieces).
@@ -145,6 +149,7 @@ The **AULI_FB_CTD** is a powerful down counter for 64-bit values that is integra
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,8 +1,10 @@
 # AULI_TO_AD
+
 ![AULI_TO_AD](./AULI_TO_AD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AULI_TO_AD** function block is a composite function block that converts a unidirectional adapter of type **AULI** (ULINT) to a unidirectional adapter of type **AD** (DWORD). It serves as a bridge between components that provide data in ULINT format and those that expect a DWORD format. The conversion is performed using the IEC 61131 function `F_ULINT_TO_DWORD`.
 ## Interface Structure
 
@@ -44,16 +46,14 @@ The function block does not have its own event or data inputs/outputs, but commu
 This function block internally connects socket `AULI_IN` to function block `F_ULINT_TO_DWORD` and its output to plug `AD_OUT`. The sequence is controlled via events:
 
 1. An incoming event at `AULI_IN.E1` activates the input of the conversion function.
-
 2. The data value `AULI_IN.D1` (ULINT) is passed to the input `IN` of the function.
-
 3. After the conversion, the result (DWORD) is provided at output `OUT`.
-
 4. Simultaneously, an event is output to `AD_OUT.E1` to inform the connected function block about the new data.
 
 The entire process is event-driven and occurs without any delay or state storage.
 
 ## Technical Features
+
 - **Composite Structure**: The function block is implemented as a network consisting of a single function block (`F_ULINT_TO_DWORD`). All connections are hard-wired.
 - **Package Import**: The conversion function used comes from the package `iec61131::conversion`. The function block is organized in the package `adapter::conversion::unidirectional`.
 - **No State Storage**: The function block is purely combinatorial – each input event immediately generates an output event with the converted value.
@@ -68,6 +68,7 @@ Since this is a composite block without its own algorithms, there is no explicit
 - **Output**: Sending the result and the event to `AD_OUT.E1`.
 
 ## Application Scenarios
+
 - **Data Adaptation in Agricultural Engineering**: Conversion of ULINT values (e.g., from sensors or control units) into the DWORD format required by downstream components.
 - **Adapter-Based Communication**: Use in modules that are connected exclusively via adapter interfaces, without direct input/output pins.
 - **System Integration**: If one existing system provides ULINT data, but another only accepts DWORD adapters, this module serves as a simple converter.

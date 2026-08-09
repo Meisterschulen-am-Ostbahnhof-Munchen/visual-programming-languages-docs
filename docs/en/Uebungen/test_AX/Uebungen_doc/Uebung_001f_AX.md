@@ -1,14 +1,17 @@
 # Exercise_001f_AX: DigitalInput_I1 negated with INIT to DigitalOutput_Q1
+
 ![Uebung_001f_AX_network](./Uebung_001f_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the negation of a digital input signal using the function block `AX_NOT_INIT`. The negated signal is output to a digital output. A special effect occurs during startup (BOOT): Since input I1 is not polled during system startup, `AX_NOT_INIT` initially returns a value of `TRUE`, regardless of the actual input state.
 ## Function Blocks Used
 
 This exercise consists of three function blocks connected within the SubApp network.
 
 ### Sub-Blocks: DigitalInput_I1
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -19,6 +22,7 @@ This exercise consists of three function blocks connected within the SubApp netw
 - **Functionality**: The block reads the state of the digital input `Input_I1` and makes it available via the adapter output `IN`.
 
 ### Sub-Blocks: DigitalOutput_Q1
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -29,6 +33,7 @@ This exercise consists of three function blocks connected within the SubApp netw
 - **Functionality**: This block sets the digital output `Output_Q1` to the value present at the adapter input `OUT`.
 
 ### Sub-Blocks: AX_NOT_INIT
+
 - **Type**: `adapter::booleanOperators::AX_NOT_INIT`
 - **Internal Function Blocks Used**: None
 - **Parameters**: None
@@ -43,7 +48,6 @@ This exercise consists of three function blocks connected within the SubApp netw
 The connections in the SubApp network are implemented as adapter connections:
 
 1. The adapter output `IN` of `DigitalInput_I1` is connected to the adapter input `IN` of `AX_NOT_INIT`.
-
 2. The adapter output `OUT` of `AX_NOT_INIT` is connected to the adapter input `OUT` of `DigitalOutput_Q1`.
 
 **Process**:
@@ -67,6 +71,7 @@ The connections in the SubApp network are implemented as adapter connections:
 Exercise `Uebung_001f_AX` illustrates the negation of a digital input signal using the special function block `AX_NOT_INIT`. The unique aspect lies in the initial output state at system startup, which is independent of the input `TRUE`. The exercise is supplemented with the comment: *“although I1 is not queried at BOOT, AX_NOT will output TRUE here.”* This emphasizes the learning effect regarding the startup behavior of initialized function blocks.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

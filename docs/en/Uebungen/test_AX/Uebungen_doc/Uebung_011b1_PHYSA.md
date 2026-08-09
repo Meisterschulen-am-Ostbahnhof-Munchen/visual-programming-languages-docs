@@ -1,8 +1,10 @@
 # Exercise_011b1_PHYSA: Numeric Value Input ADD with Physical Values
+
 ![Uebung_011b1_PHYSA_network](./Uebung_011b1_PHYSA_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the processing of physical measured values (e.g., voltage, current, speed) using an arithmetic operation. Two input values from defined physical sources are combined using an addition block, and the result is passed to a physical output. The focus is on the correct wiring of the adapter interfaces between the function blocks (FBs) for signal coupling with real I/O channels.
 ## Function Blocks (FBs) Used
 
@@ -69,4 +71,5 @@ The exercise **Exercise_011b1_PHYSA** illustrates the structure of a typical mea
 ---
 
 ### 🌐 Relevant topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

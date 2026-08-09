@@ -1,8 +1,10 @@
 # Exercise_011b1_PHYS: Numeric Value Input ADD (PHYS)
+
 ![Uebung_011b1_PHYS_network](./Uebung_011b1_PHYS_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the addition of two physical values (REAL) using the NumericValue pattern from the isobus library. The values are read in via the function blocks `InputNumber_I3` and `InputNumber_I4`, added together, and the result is output via the function block `Q_NumericValue_PHYS`.
 
 ## Function Blocks (FBs) Used
@@ -40,11 +42,8 @@ The two input blocks generate an event (`IND`) when a value changes. This event 
 The flow is event-driven:
 
 1. If the value at `InputNumber_I3` or `InputNumber_I4` changes, the `IND` event is triggered.
-
 2. Both `IND` events are connected to the `REQ` input of `ADD_2` (OR operation – either one triggers the addition).
-
 3. `ADD_2` adds the two REAL values and outputs the result to `OUT`.
-
 4. After the addition, `ADD_2` sends the `CNF` event, which triggers the function block `Q_NumericValue_PHYS` to set the output value.
 
 **Data Connections**:

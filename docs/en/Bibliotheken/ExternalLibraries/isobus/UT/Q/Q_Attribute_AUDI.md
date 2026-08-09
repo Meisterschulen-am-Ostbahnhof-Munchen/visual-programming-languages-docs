@@ -1,10 +1,13 @@
 # Q_Attribute_AUDI
+
 ![Q_Attribute_AUDI](./Q_Attribute_AUDI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **Q_Attribute_AUDI** implements the "Change Attribute" command of the ISOBUS standard ISO 11783-6 (Part 6 – F.38). It allows you to change an attribute of an object that is identified by a unique attribute ID (AID). The block supports passing the new attribute value via an adapter interface and returns the old value via an adapter as well. String attributes cannot be changed with this command.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Description |
@@ -42,14 +45,13 @@ The function block **Q_Attribute_AUDI** implements the "Change Attribute" comman
 ## Functionality
 
 1. **Initialization**: After a rising edge at **INIT**, the service is initialized. The required parameters (object ID and attribute ID) are read from the data inputs.
-
 2. **Command Execution**: As soon as the event output **E1** is triggered at socket **u32ValueAttribute** (e.g., by a connected function block providing a new value), the attribute change command is started. The new attribute value is adopted by the adapter.
-
 3. **Feedback**: After the command is completed, the output **CNF** is activated. The STATU string and the return value **s16result** contain the result. Simultaneously, the previously stored old attribute value is signaled at plug **u32OldValueAttribute** via the event output **E1** and made available via **D1**.
 
 The function block delegates the actual ISOBUS communication to the internal function block **Q_Attribute**, which performs the necessary protocol steps.
 
 ## Technical Features
+
 - **Error Codes** (output via s16result):
 - `VT_E_NO_ERR (0)` – no error
 - `VT_E_OVERFLOW (-6)` – buffer overflow
@@ -61,6 +63,7 @@ The function block delegates the actual ISOBUS communication to the internal fun
 - **Limitations**: The command does not support string attributes.
 
 ## State Overview
+
 The FB does not have an explicitly displayed state machine. The sequence control is event-driven:
 
 - After **INIT**, it transitions to a ready state.
@@ -68,11 +71,13 @@ The FB does not have an explicitly displayed state machine. The sequence control
 - The function block is **stateless** in the sense of a reusable sequence; each request is processed individually.
 
 ## Application Scenarios
+
 - **ISOBUS VT Applications**: Changing parameters of a virtual terminal (e.g., background color, label, visibility) at runtime.
 - **Control of Agricultural Equipment**: Dynamically adjusting attributes such as machine settings or diagnostic data.
 - **Implementation of ISO 11783-6 Workouts**: Replicating the "Change Attribute" command structure from the standard.
 
 ## Comparison with Similar Function Blocks
+
 - **Q_Attribute** (without AUDI): Offers the same core functionality, but without adapter interfaces. The new value must be passed directly as a data input, and no feedback of the old value is provided. **Q_Attribute_AUDI** extends this function block with flexible, adapter-based value passing and the return of the old value, increasing reusability and encapsulation.
 
 ## Conclusion

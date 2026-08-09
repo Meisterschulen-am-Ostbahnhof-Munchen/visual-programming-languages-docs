@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung implementiert einen Rückwärtszähler (Count Down, CTD) nach IEC 61131‑3 mit dem Datentyp LINT (64‑Bit Integer). Der Zähler wird durch zwei digitale Eingänge gesteuert: ein Count-Down-Impuls (CD) und ein Load-Impuls (LD). Der aktuelle Zählerstand (CV) wird über eine Konvertierung in den Typ UDINT (Unsigned 32‑Bit) an eine numerische Terminalausgabe gesendet. Der Ausgang Q signalisiert, wenn der Zählerstand ≤ 0 ist.
 
 Ein Kommentar im Netzwerk weist darauf hin, dass die Konvertierung `F_LINT_TO_UDINT` für negative Zählerstände ungeeignet ist, da UDINT keine negativen Zahlen darstellen kann.
@@ -73,9 +74,11 @@ Ein Kommentar im Netzwerk weist darauf hin, dass die Konvertierung `F_LINT_TO_UD
    Die Verwendung von `F_LINT_TO_UDINT` ist für negative Zählerstände nicht geeignet, da der Wertebereich von UDINT nur nicht-negative Zahlen umfasst. Bei negativem Zählerstand wird ein unerwartetes Ergebnis angezeigt oder die Konvertierung kann fehlschlagen. In der Praxis sollte eine andere Darstellung (z. B. Vorzeichenbehaftet) verwendet werden.
 
 ## Zusammenfassung
+
 In dieser Übung wird ein IEC 61131‑3 Rückwärtszähler (`FB_CTD_LINT`) mit zwei digitalen Eingängen angesteuert. Der Zählerstand wird auf einem Terminal ausgegeben, wobei die Konvertierung von LINT nach UDINT bewusst eine Einschränkung für negative Werte darstellt. Die Aufgabe veranschaulicht die ereignisgesteuerte Verarbeitung in 4diac, die Kopplung von Hardwareeingängen und die Grenzen von Datentypkonvertierungen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

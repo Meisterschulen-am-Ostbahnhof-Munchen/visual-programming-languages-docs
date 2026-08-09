@@ -13,15 +13,19 @@ Der Funktionsbaustein `AI_DIV_2` ist ein generischer Arithmetik-Baustein für di
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Synchronisation und Ereignissteuerung erfolgt implizit über die angebundenen Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Der Baustein besitzt keine direkten Ereignis-Ausgänge.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden. Die Datenübertragung wird vollständig über die Adapter-Schnittstellen abgewickelt.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden.
 
 ### **Adapter**

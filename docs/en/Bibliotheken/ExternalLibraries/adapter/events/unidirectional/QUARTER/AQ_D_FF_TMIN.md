@@ -1,37 +1,35 @@
 # AQ_D_FF_TMIN
+
 ![AQ_D_FF_TMIN](./AQ_D_FF_TMIN.svg)
 
 * * * * * * * * * *
 The function block **AQ_D_FF_TMIN** implements a data-locking D flip-flop with a minimum inter-disposal time (MIT) between two consecutive output events (EOs). It serves as an extension of a simple D flip-flop, adding time-based debouncing or minimum-distance control, and is connected to the signal transmitter and receiver via adapters.
 
-
 | Event | Type | With Variable | Comment |
 |----------|-----|--------------|-----------|
 | INIT | EInit | Tmin | Initialization request, sets the minimum MIT. |
-
-
 | Event | Type | Comment |
 |----------|-----|-----------|
 | INITO | EInit | Initialization confirmation. |
-
-
 | Variable | Type | Comment |
 |----------|-----|-----------|
 | Tmin | TIME | Minimum waiting time between two output events (EO). |
 
-
 No dedicated data outputs; the latched signal is output via the adapter `Q`.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
-
-| Type | Label | Direction | Comment |
-
 
 | Type | Label | Direction | Comment |
 | `adapter::types::unidirectional::AQ` | I | Socket (Input) | Latching value, containing one data signal (D1) and one event signal (E1). |
@@ -49,7 +47,6 @@ The initialization (`INIT`) passes the parameter `Tmin` to the internal function
 
 - **IEC 61499-Compliant:** Complies with the 61499-1 Annex A standard and utilizes the event/data flows of the standard.
 
-
 The FB does not have an explicit public state machine. Its behavior is determined by the internal FB `E_D_FF_ANY_TMIN`, which has the last latched value as its state and a wait logic. Simplified representation:
 
 | State | Meaning |
@@ -66,7 +63,6 @@ A detailed state representation can be found in the source code of the internal 
 - **Synchronization of Asynchronous Signals:** Forwarding a data value with a defined minimum time interval.
 - **Control of Slow Actuators:** Ensuring that actuators are not controlled faster than their mechanical response time allows.
 
-
 | Function Block | Special Feature |
 |----------|--------------|
 | `AQ_D_FF` / `E_D_FF` | Simple D flip-flop without a time limit on the output. |
@@ -75,11 +71,14 @@ AQ_D_FF_TMAX` (hypothetical) | Limits the maximum time between two output events
 
 Compared to a standard D flip-flop, `AQ_D_FF_TMIN` offers additional protection against excessively rapid succession of output events, which is often necessary in practice.
 
-
 The function block `AQ_D_FF_TMIN` combines the functionality of a D flip-flop with an adjustable minimum delay at the output. Thanks to its adapter interfaces and IEC 61499 compliance, it can be easily integrated into industrial control applications where both data acquisition and temporal decoupling of events are required. It offers a robust solution for signal processing and actuator control with defined temporal constraints.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

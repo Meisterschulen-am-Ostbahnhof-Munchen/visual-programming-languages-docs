@@ -1,5 +1,6 @@
 Here is the documentation page for the provided exercise file.
 # Exercise_039_sub_Outputs: Mirror Sequence V2 with Step Chain SUB Out
+
 ![Uebung_039_sub_Outputs_network](./Uebung_039_sub_Outputs_network.svg)
 *(Placeholder for exercise image)*
 
@@ -53,13 +54,11 @@ This function block combines hardware control and HMI interaction. It continuous
 The data and event flow within the sub-application is as follows:
 
 1. **Initialization and Triggers**:
-
 * The module reacts to the external event `REQ` or to a `IND` event from the softkey (`IX`).
 
 `` * The object ID for the softkey (`u16ObjId`) and the hardware address (`Output`) are passed from the outside to the internal function blocks `IX`, `QX`, and `GreenWhiteBackground`.
 
 2. **Logical operation (OR)**:
-
 * The function block `OR_2` receives two Boolean signals:
 * `IN1`: The status of the softkey (`IX.IN`).
 * `IN2`: The external input `OUT` (e.g., from a step sequence).
@@ -67,12 +66,9 @@ The data and event flow within the sub-application is as follows:
 `` * As soon as one of these signals is `TRUE`, the output of `OR_2` switches to `TRUE`. This enables an "OR" logic: The actuator runs when the automation system **or** the operator presses the button.
 
 3. **Output and Feedback**:
-
 * The result of the OR operation triggers the hardware output `QX`.
 * Simultaneously, the result is passed to the sub-application `GreenWhiteBackground`. As soon as the hardware output is active (confirmed by `QX.CNF`), the visualization is updated (the softkey will likely turn green).
-
 3. **Output and Feedback**:
-
 * The result of the OR operation triggers the hardware output `QX`.
 * Simultaneously, the result is passed to the sub-application `GreenWhiteBackground`. As soon as the hardware output is active (confirmed by `QX.CNF`), the visualization is updated (the softkey will likely be highlighted in green).
 *
@@ -83,4 +79,5 @@ The exercise/module `Uebung_039_sub_Outputs` presents a robust module for actuat
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

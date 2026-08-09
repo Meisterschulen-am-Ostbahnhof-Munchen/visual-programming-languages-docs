@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert eine Interlock-Funktion mit Konflikterkennung und Trip-Auslösung, die durch einen Reset zurückgesetzt werden kann. Sie zeigt den typischen Einsatz eines Interlock-Bausteins zur Vermeidung gleichzeitiger, widersprüchlicher Ansteuerungen (z. B. Auf/Ab-Bewegung). Der ILOCK_CONFLICT_TRIP erzeugt bei einem Konflikt einen Trip (Störausgang) und sperrt die Ausgänge, bis ein explizites Rücksetzsignal anliegt.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die Übung besteht aus folgenden Funktionsbausteinen, die über Ereignis- und Datenleitungen verbunden sind:
 
 - **DigitalInput_I1** – Typ: `logiBUS::io::DI::logiBUS_IX`  
@@ -37,6 +39,7 @@ Die Übung besteht aus folgenden Funktionsbausteinen, die über Ereignis- und Da
   Digitalausgang zur Anzeige des Trip-Zustands.
 
 ## Programmablauf und Verbindungen
+
 Die Übung ist als SubAppType angelegt, in der die gesamte Logik abläuft. Die Verbindungen sind wie folgt:
 
 | Ereignisverbindung | Quelle | Ziel | Datenverbindung | Quelle | Ziel |
@@ -57,9 +60,11 @@ Die Übung ist als SubAppType angelegt, in der die gesamte Logik abläuft. Die V
 3. Ein anliegendes Rücksetzsignal (I3) kann den Trip zurücksetzen und die normale Funktion wiederherstellen. Solange der Konflikt andauert, führt ein erneuter Reset nicht zu einer Freigabe.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_204** demonstriert die Verwendung des Interlock-Bausteins `ILOCK_CONFLICT_TRIP`. Sie zeigt, wie durch zwei gegensätzliche Stellsignale (z. B. Auf/Ab) ein Konflikt erkannt und durch einen Trip abgesichert wird. Der Baustein erfordert eine explizite Rücksetzung nach einem Konflikt. Dieses Verhalten ist typisch für Sicherheitsanwendungen in der Automatisierungstechnik. Die Übung eignet sich für Einsteiger, die grundlegende Verriegelungsmechanismen mit 4diac und logiBUS-Funktionsbausteinen erlernen möchten.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

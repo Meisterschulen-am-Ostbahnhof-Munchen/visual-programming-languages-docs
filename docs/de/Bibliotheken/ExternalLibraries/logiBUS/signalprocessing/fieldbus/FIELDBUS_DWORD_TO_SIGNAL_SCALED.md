@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **FIELDBUS_DWORD_TO_SIGNAL_SCALED** dient der Konvertierung eines Feldbus-DWORD-Signals in einen skalierten LREAL-Wert. Er prüft die Gültigkeit des Eingangssignals anhand eines vordefinierten Bereichs und berechnet bei gültigem Signal den Ausgangswert durch Multiplikation mit einem Skalierungsfaktor und Addition eines Offsets. Bei ungültigem Signal wird der Ausgang auf 0 gesetzt und die Gültigkeitsflagge auf FALSE gesetzt.
 
 ## Schnittstellenstruktur
@@ -38,9 +39,11 @@ Der Funktionsblock **FIELDBUS_DWORD_TO_SIGNAL_SCALED** dient der Konvertierung e
 | VALID | BOOL  | FALSE       | TRUE, wenn das Eingangssignal gültig ist |
 
 ### **Adapter**
+
 Keine Adapter vorhanden.
 
 ## Funktionsweise
+
 Der Funktionsblock besitzt zwei Zustände: **INIT** und **REQ**.
 
 - **INIT-Zustand**: Wird durch das Ereignis INIT ausgelöst. Der zugehörige Algorithmus ist leer, d.h. es werden keine weiteren Aktionen durchgeführt. Der Ausgang INITO bestätigt den Abschluss der Initialisierung.
@@ -57,6 +60,7 @@ Der Funktionsblock besitzt zwei Zustände: **INIT** und **REQ**.
 Die Konstanten `NOT_AVAILABLE_DWM` und `VALID_SIGNAL_DW` stammen aus importierten Bibliotheken und legen fest, welche DWORD-Werte als „nicht verfügbar“ bzw. als „gültig“ betrachtet werden.
 
 ## Technische Besonderheiten
+
 - Der Funktionsblock verwendet eine Bereichsprüfung mittels Vergleich von `DWORD_TO_UDINT(IN)` mit `VALID_SIGNAL_DW`. Dabei wird vorausgesetzt, dass gültige Feldbussignale innerhalb eines bestimmten Zahlenbereichs liegen.
 - Die Konvertierung erfolgt ohne Gleitkommafehleranfälligkeit, da zuerst die Umwandlung von DWORD in UDINT und dann in LREAL erfolgt.
 - Der Skalierungsfaktor `SCALE` und der Offset `OFFSET` können während der Initialisierung oder Laufzeit gesetzt werden, werden aber nur im REQ-Algorithmus verwendet.
@@ -72,11 +76,13 @@ Die Konstanten `NOT_AVAILABLE_DWM` und `VALID_SIGNAL_DW` stammen aus importierte
 Der Funktionsblock benötigt keine Zustandsübergänge zwischen INIT und REQ – beide Zustände werden direkt durch ihre jeweiligen Ereignisse gestartet.
 
 ## Anwendungsszenarien
+
 - **Landwirtschaftliche Feldbus-Steuerungen**: Umwandlung von rohen DWORD-Sensorwerten (z.B. Drehzahlen, Drücke) in physikalische Einheiten unter Berücksichtigung von Sensorcharakteristiken.
 - **Skalierung von analogen Werten**: Wenn ein Feldbusgerät einen 32-Bit-Rohwert liefert, der erst mit einem Faktor und Offset in eine normierte Größe (z.B. 0-100%) umgerechnet werden muss.
 - **Signalvalidierung**: Nur gültige Signale (innerhalb eines definierten Bereichs) werden weiterverarbeitet; bei ungültigen Werten wird ein definierter Nullwert ausgegeben.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **FIELDBUS_DWORD_TO_SIGNAL**: Ein ähnlicher Baustein ohne Skalierungsmöglichkeit, der den Rohwert direkt als LREAL ausgibt.
 - **FIELDBUS_DWORD_TO_SIGNAL_SCALED** bietet zusätzlich die Parameter `SCALE` und `OFFSET` für flexible Umrechnung.
 - **Ereignisgesteuerte Konverter**: Andere Bausteine nutzen möglicherweise eine andere Validierungslogik (z.B. Bitmasken) oder unterstützen unterschiedliche Feldbustypen.
@@ -84,4 +90,5 @@ Der Funktionsblock benötigt keine Zustandsübergänge zwischen INIT und REQ –
 Der vorliegende Baustein kombiniert Signalvalidierung mit einer einfachen linearen Transformation, was ihn für viele Anwendungen geeignet macht.
 
 ## Fazit
+
 Der `FIELDBUS_DWORD_TO_SIGNAL_SCALED` ist ein kompakter und wiederverwendbarer Funktionsblock zur Verarbeitung von Feldbussignalen. Er ermöglicht eine zuverlässige Gültigkeitsprüfung und gleichzeitige Skalierung in einem Schritt. Durch die klare Trennung von Initialisierung und Verarbeitung eignet er sich sowohl für Einmal- als auch für zyklische Aufrufe in Automatisierungssystemen, insbesondere in der Landtechnik.

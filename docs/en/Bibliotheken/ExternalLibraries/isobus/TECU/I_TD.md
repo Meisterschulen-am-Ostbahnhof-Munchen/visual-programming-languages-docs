@@ -1,8 +1,10 @@
 # I_TD
+
 ![I_TD](./I_TD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **I_TD** (Time/Date) function block is a special component for ISOBUS that enables the processing of time and date information according to the ISO 11783-7 standard (PGN 65254). It receives and processes the current time and date transmitted over the ISOBUS network. The output data corresponds to the defined SPNs (Suspect Parameter Numbers) of the protocol and is provided including the associated scaling and offsets.
 ## Interface Structure
 
@@ -55,6 +57,7 @@ The function block is initialized via the event input `INIT` with `QI` set. Afte
 `` If no valid telegram is received within an unspecified timeframe, the event `TIMEOUT` is triggered and the output `Q_timeout` is set to TRUE. The timeout timestamp is stored in `timestamp_timeout`.
 
 ## Technical Features
+
 - **ISOBUS Compliance:** The FB implements exactly PGN 65254 of the ISO 11783-7 standard, part "Time/Date TD".
 - **Initial Values:** Many data outputs are initialized with predefined "not available" values (e.g., YEAR = 0xFFFF), which allows for easy error detection.
 - **Scaling & Offset:** All values are scaled and offset according to the ISOBUS specification. The raw values of the SPNs are converted into physical units.
@@ -72,6 +75,7 @@ An explicit state machine is not defined in the XML. The FB operates as a reacti
 3. **Operational Ready** – Receiving telegrams → `IND`; if no telegrams are received → `TIMEOUT`.
 
 ## Application Scenarios
+
 - **Agricultural Machinery:** Receiving current time and date data from the ISOBUS on-board network, e.g., for loggers, controllers, or displays.
 - **Time Stamping:** Using the `timestamp_data` outputs to synchronize events in various control units.
 - **Time Zone Adjustment:** Evaluating local offsets to display local time in user interfaces.

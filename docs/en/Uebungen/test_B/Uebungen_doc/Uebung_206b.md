@@ -1,11 +1,15 @@
 # Exercise_206b: Interlock: ILOCK_T_FF (Three mutually interlocked toggle flip-flops via an adapter chain)
+
 ![Uebung_206b_network](./Uebung_206b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an application using three mutually interlocked toggle flip-flops. Three pushbuttons (digital inputs) each control an ILOCK_T_FF, which toggles its output with each button press. The three flip-flops are bidirectionally connected via an adapter chain, ensuring that only one output can be active at a time (interlock). The outputs are routed to three digital outputs (e.g., LEDs).
 ## Function Blocks (FBs) Used
+
 ### Digital Input: logiBUS_IE
+
 - **Type**: logiBUS::io::DI::logiBUS_IE
 - **Instances Used**: DigitalInput_CLK_I1, DigitalInput_CLK_I2, DigitalInput_CLK_I3
 - **Parameters**:
@@ -27,6 +31,7 @@ A toggle flip-flop that switches its output **Q** on every event at the input **
 
 A toggle flip-flop that switches its output **Q** on every event at its input **CLK**.
 ### Digital Output: logiBUS_QX
+
 - **Type**: logiBUS::io::DQ::logiBUS_QX
 - **Instances Used**: DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3
 - **Parameters**:
@@ -77,11 +82,13 @@ ILOCK_T_FF_1.ILOCK_OUT | ILOCK_T_FF_2.ILOCK_IN |
 ILOCK_T_FF_2.ILOCK_OUT | ILOCK_T_FF_3.ILOCK_IN |
 
 ## Summary
+
 This exercise demonstrates the use of the ILOCK_T_FF block to implement an interlock between three toggle flip-flops. The adapter chain ensures that only one output is active at any given time, which is typically required for applications with changing operating modes or exclusive states. Input/output is handled via the logiBUS hardware. **Learning Objectives**: Understanding interlock mechanisms, working with adapter interfaces, and event-driven logic in 4diac. **Prerequisites**: Basic knowledge of the 4diac IDE and the logiBUS library.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

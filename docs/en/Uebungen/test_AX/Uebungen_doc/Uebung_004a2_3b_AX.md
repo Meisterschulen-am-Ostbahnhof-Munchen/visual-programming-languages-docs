@@ -1,13 +1,16 @@
 # Exercise_004a2_3b_AX: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE_3 (3 Buttons)
+
 ![Uebung_004a2_3b_AX_network](./Uebung_004a2_3b_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a toggle flip-flop controlled by three buttons (BUTTON_SINGLE_CLICK). The button events are combined into a single clock signal using E_MERGE_3. The flip-flop toggles its initial state with each button press and outputs the result to a digital output.
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Block: DigitalInput_CLK_I1 (Type: `logiBUS_IE`)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -18,6 +21,7 @@ This exercise implements a toggle flip-flop controlled by three buttons (BUTTON_
 Digital input that triggers an event at its output `IND` when a single key press is placed on channel I1.
 
 ### Sub-module: DigitalInput_CLK_I2 (Type: `logiBUS_IE`)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -28,6 +32,7 @@ Digital input that triggers an event at its output `IND` when a single key press
 Same module as for channel I1, but connected to the second button (Input_I2).
 
 ### Sub-module: DigitalInput_CLK_I3 (Type: `logiBUS_IE`)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -38,6 +43,7 @@ Same module as for channel I1, but connected to the second button (Input_I2).
 Same module for the third button (Input_I3).
 
 ### Sub-module: E_MERGE_3 (Type: `E_MERGE_3`)
+
 - **Type**: `iec61499::events::E_MERGE_3`
 - **Parameters**: none
 - **Functionality**:
@@ -45,6 +51,7 @@ Same module for the third button (Input_I3).
 Combines three event inputs (`EI1`, `EI2`, `EI3`) into a single event output (`EO`). As soon as an event arrives at one of the inputs, it is immediately passed on to `EO`.
 
 ### Sub-module: AX_T_FF (Type: `AX_T_FF`)
+
 - **Type**: `adapter::events::unidirectional::AX_T_FF`
 - **Parameters**: none
 - **Functionality**:
@@ -52,6 +59,7 @@ Combines three event inputs (`EI1`, `EI2`, `EI3`) into a single event output (`E
 Toggle flip-flop. With each event at input `CLK`, the output `Q` toggles between `TRUE` and `FALSE`.
 
 ### Sub-module: DigitalOutput_Q1 (Type: `logiBUS_QXA`)
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -69,6 +77,7 @@ The flip-flop changes its output state with each received event. The current sta
 The entire circuit thus implements a **three-button toggle flip-flop**: Each button press – regardless of which button – toggles the output.
 
 ### Learning Objectives
+
 - Understanding toggle flip-flop behavior
 - Using the event merge block to combine multiple event sources
 - Integrating logiBUS inputs and outputs with event triggering
@@ -79,6 +88,7 @@ The entire circuit thus implements a **three-button toggle flip-flop**: Each but
 Easy – suitable for beginners in IEC 61499 modeling with 4diac-IDE.
 
 ### Prerequisites
+
 - Basic understanding of IEC 61499 event and data flows
 - Fundamentals of logiBUS configuration (input/output channels)
 
@@ -89,4 +99,5 @@ Exercise `Uebung_004a2_3b_AX` demonstrates the construction of a toggle flip-flo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

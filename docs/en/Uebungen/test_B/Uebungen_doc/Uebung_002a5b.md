@@ -1,8 +1,10 @@
 # Exercise_002a5b: DigitalInput_I1-3 with OR on DigitalOutput_Q1-3
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_002a5b`. This exercise combines two concepts: a logical OR operation with three inputs and the simultaneous distribution (fan-out) of the result to three digital outputs.
 ----
 ## Objective of the Exercise
+
 The objective is to model a complex I/O structure. It demonstrates how information is collected from multiple sensors, logically evaluated, and the result distributed to a group of actuators. The scalability of event connections is illustrated on both the input (fan-in) and output (fan-out) sides.
 
 ## Description and Components
@@ -43,9 +45,7 @@ The circuit uses a central logic element as a node for all signals. The structur
 Functional sequence:
 
 1. **Input trigger**: Any change to one of the three buttons (`I1`, `I2`, `I3`) triggers a recalculation of the logic.
-
 2. **Calculation**: The function block `OR_3_BOOL` sets its result to `TRUE` if at least one input is active.
-
 3. **Mass update**: The resulting signal is sent simultaneously to all three lamps (`Q1`, `Q2`, `Q3`). Once the logic is complete (`CNF`), all three hardware outputs are updated synchronously.
 
 -----

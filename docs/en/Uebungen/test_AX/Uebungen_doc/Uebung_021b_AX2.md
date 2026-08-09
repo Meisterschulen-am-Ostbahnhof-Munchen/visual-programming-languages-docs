@@ -1,11 +1,14 @@
 # Exercise_021b_AX2: Mirror Sequence (1) - AX Variant
+
 ![Uebung_021b_AX2_network](./Uebung_021b_AX2_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the control of a simple mirror sequence using an AX flip-flop (AX_SR). The sequence is started and reset using two softkeys (F1 and F2). The flip-flop's output controls a digital output (Output_Q1), which can, for example, drive a mirror actuator. This exercise demonstrates the basic handling of adapter-based event flip-flops and digital outputs in the 4diac IDE.
 
 ## Function Blocks Used (FBs)
+
 - **DigitalOutput_Q1**
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
@@ -46,6 +49,7 @@ The flow is divided into two comment fields:
 - **END POSITION** (with softkey F2)
 
 ### Event Connections
+
 - `SoftKey_UP_F1.IND` → `AX_FB_SR.S`
 
 Pressing softkey F1 sends an event to the set input of the flip-flop.
@@ -55,6 +59,7 @@ Pressing softkey F1 sends an event to the set input of the flip-flop.
 Pressing softkey F2 sends an event to the reset input of the flip-flop.
 
 ## Adapter Connection
+
 - `AX_FB_SR.Q` → `DigitalOutput_Q1.OUT`
 
 The flip-flop output is forwarded as an adapter signal to the digital output module. If Q is TRUE, the output `Output_Q1` is enabled.
@@ -62,9 +67,7 @@ The flip-flop output is forwarded as an adapter signal to the digital output mod
 ## Functionality
 
 1. **Start of Mirror Sequence**: Pressing softkey F1 → Sets the AX flip-flop. Output Q becomes TRUE → the digital output is enabled (e.g., mirror extends).
-
 2. **End Position / Reset**: Pressing softkey F2 → Resets the flip-flop. Q becomes FALSE → the digital output is disabled (mirror retracts).
-
 3. The state is retained until the other softkey is pressed.
 
 ## Summary
@@ -81,6 +84,7 @@ This exercise is suitable for beginners in event-driven programming with 4diac a
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

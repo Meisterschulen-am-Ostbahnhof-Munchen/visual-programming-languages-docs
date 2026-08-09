@@ -10,6 +10,7 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals (I1) 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: `DigitalInput_I1`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -19,6 +20,7 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals (I1) 
 - **Datenausgang**: `IN` (liefert den aktuellen digitalen Eingangswert)
 
 ### Sub-Baustein: `AX_NOT_INIT`
+
 - **Typ**: `adapter::booleanOperators::AX_NOT_INIT`
 - **Verwendete interne FBs**: Keine
 - **Ereigniseingang**: `INIT` (löst die Berechnung aus)
@@ -26,6 +28,7 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals (I1) 
 - **Adapterausgang**: `OUT` (liefert den negierten Wert des Eingangs)
 
 ### Sub-Baustein: `E_DELAY`
+
 - **Typ**: `iec61499::events::E_DELAY`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -34,6 +37,7 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals (I1) 
 - **Ereignisausgang**: `EO` (wird nach Ablauf der Verzögerungszeit ausgelöst)
 
 ### Sub-Baustein: `DigitalOutput_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -72,4 +76,5 @@ Die Übung `Uebung_001g_AX` zeigt, wie ein digitales Eingangssignal nach einer d
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

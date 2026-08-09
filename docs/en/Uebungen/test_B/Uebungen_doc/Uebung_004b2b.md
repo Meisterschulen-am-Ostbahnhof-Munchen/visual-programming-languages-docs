@@ -1,8 +1,10 @@
 # Exercise_004b2b: Two Independent Toggle Flip-Flops Using Sub-Applications
+
 ![Uebung_004b2b_network](./Uebung_004b2b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements two independent toggle flip-flops.
 The logic is encapsulated in a reusable sub-application, which is instantiated twice.
 
@@ -13,6 +15,7 @@ With each button press, the corresponding output toggles its state (on/off).
 ## Function Blocks (FBs) Used
 
 ### Main FBs at the Top Level
+
 - **logiBUS_IE** – Event-Controlled Digital Input
 - Parameters: `Input` = `Input_I1` or `Input_I2`, `InputEvent` = `BUTTON_SINGLE_CLICK`
 - Receives an event as soon as the connected button is simply pressed.
@@ -21,10 +24,12 @@ With each button press, the corresponding output toggles its state (on/off).
 - Sets the physical output according to the applied data value (BOOL).
 
 ### Sub-Blocks: `Uebung_004b2b_sub`
+
 - **Type**: SubAppType
 - **Description**: Sub-application for a toggle flip-flop (consists of `E_SWITCH` and `E_SR`)
 
 #### Internal Function Blocks Used
+
 - **`E_SWITCH_I1`**: Type `E_SWITCH`
 - Event Input: `EI`
 - Event Outputs: `EO0` (when G=FALSE), `EO1` (when G=TRUE)
@@ -43,12 +48,9 @@ With each button press, the corresponding output toggles its state (on/off).
 If `Q = FALSE` (G=0), the event is forwarded to `EO0` and thus to the set input (`S`) of `E_SR`.
 
 - If `Q = TRUE` (G=1), the event is forwarded to `EO1` and thus to the reset input (`R`) of `E_SR`.
-
 3. `E_SR` then changes its state:
-
 - On a set event, `Q = TRUE`.
 - On a reset event, `Q = FALSE`.
-
 4. After the state change, an event is generated at output `EO`, and the new value of `Q` is made available via the output of the sub-application.
 
 `` This results in **toggle behavior**: Each incoming event changes the initial state.

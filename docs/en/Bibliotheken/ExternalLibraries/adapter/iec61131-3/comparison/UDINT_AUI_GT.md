@@ -1,8 +1,10 @@
 # UDINT_AUI_GT
+
 ![UDINT_AUI_GT](./UDINT_AUI_GT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUI_GT** implements a greater-than comparison function. It compares a directly passed input value (`IN1`) with a second value provided via an adapter (`IN2`). The result of the comparison is output via an output adapter (`OUT`). The function block is classified as a standard comparison function according to IEC 61131-3.
 ## Interface Structure
 
@@ -46,6 +48,7 @@ The function block performs a "greater than" comparison between two values:
 - The result (true/false) is output via the plug adapter `OUT`: The data output of the internal `F_GT.OUT` is set to `OUT.D1`, and the completion event `F_GT.CNF` triggers `OUT.E1`.
 
 ## Technical Features
+
 - **Generic Data Type:** `IN1` is of type `ANY_ELEMENTARY`, allowing the function block to work with various elementary data types (e.g., INT, REAL, TIME).
 - **Adapter-Based Interface:** The use of adapters for the second input value and the result enables flexible integration into various environments and protocols.
 - **Internal Reuse:** The function block delegates the actual comparison to the standardized `F_GT` function block, increasing consistency and maintainability.
@@ -56,6 +59,7 @@ The function block performs a "greater than" comparison between two values:
 The function block does not have its own state machine (ECC). Its behavior is entirely determined by its internal link with the `F_GT` function block. Execution occurs whenever one of the input events (`REQ` or `IN2.E1`) is received. After the comparison is complete, the result is signaled via the output adapter.
 
 ## Application Scenarios
+
 - **Threshold Monitoring:** Comparison of a measured value (`IN1`) with a limit value obtained from a higher-level controller via an adapter.
 - **Dynamic Comparison Logic:** The adapter interface is ideally suited when the second comparison value is not static but originates from another function block or data source.
 - **Standardized Comparison Functions:** Use in IEC 61131-3 environments where a function block with defined interfaces for "greater than" values is required.

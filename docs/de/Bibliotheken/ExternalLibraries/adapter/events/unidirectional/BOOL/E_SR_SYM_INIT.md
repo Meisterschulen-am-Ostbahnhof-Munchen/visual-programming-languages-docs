@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `E_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabiles Flip-Flop mit symmetrischem Start-up-Verhalten und einer INIT-Schnittstelle. Er erweitert ein einfaches SR-Flip-Flop um die Möglichkeit, beim INIT‑Event den Ausgang `Q` auf einen vorgegebenen Wert (`Q_INIT`) zu setzen und eine Deinitialisierung durchzuführen. Die Eingangsqualifikation `QI` steuert, ob die Operationen (S, R, INIT) tatsächlich auf `Q` wirken.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Event | Typ | Kommentar |
@@ -37,9 +39,11 @@ Der Funktionsblock `E_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabile
 | `Q` | BOOL | Wert des Flip-Flops (bistabiler Ausgang) |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 Der FB besitzt fünf Zustände: `START`, `Init`, `DeInit`, `SET` und `RESET`.
 
 - **START**: Ruhezustand nach der Initialisierung.
@@ -50,12 +54,14 @@ Der FB besitzt fünf Zustände: `START`, `Init`, `DeInit`, `SET` und `RESET`.
 Die Qualifikation `QI` wirkt wie ein Freigabesignal: Nur wenn `QI = TRUE` beeinflussen `S`, `R` und die Initialisierung den Ausgang `Q`. Der Ausgang `QO` spiegelt den zuletzt gültigen Wert von `QI` wider (außer nach `DeInit`, dann ist `QO = FALSE`).
 
 ## Technische Besonderheiten
+
 - **Symmetrisches Start-up**: Der Wert von `Q` nach einer Initialisierung wird ausschließlich durch `Q_INIT` bestimmt – unabhängig vom vorherigen Zustand. Dies ermöglicht ein deterministisches Verhalten nach dem Start.
 - **Qualifizierte Operationen**: Alle Aktionen (S, R, INIT) werden nur ausgeführt, wenn `QI = TRUE`. Damit kann der FB z. B. über eine übergeordnete Steuerung ein- und ausgeschaltet werden.
 - **Deinitialisierung**: Durch ein `INIT` mit `QI = FALSE` gelangt der FB in einen definierten Deinitialisierungszustand (`DeInit`), der keine weiteren Aktionen mehr zulässt, bis ein erneutes `INIT` mit `QI = TRUE` erfolgt.
 - **Keine Speicherung von QO**: `QO` wird bei jeder Transition neu gesetzt, es erfolgt keine eigene Speicherung.
 
 ## Zustandsübersicht
+
 ```
 START
   │
@@ -82,11 +88,13 @@ Init ─────────────────────────
 ```
 
 ## Anwendungsszenarien
+
 - **Steuerungen, die nach dem Einschalten einen definierten Ausgangszustand benötigen** (z. B. Maschinen: Ventil geschlossen oder geöffnet).
 - **Systeme mit sicherheitskritischer Initialisierung**, bei denen der Ausgang erst nach Freigabe durch einen Qualifikator (`QI`) gesetzt werden darf.
 - **Bausteinketten**, bei denen eine Deinitialisierung (z. B. bei einem Reset des Gesamtsystems) den FB in einen Grundzustand zurückversetzen soll, ohne dass die eigentlichen S/R-Signale noch wirken.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **E_SR** (Standard SR-Flipflop): Hat kein INIT-Verhalten, startet undefiniert oder mit letztem Wert. `E_SR_SYM_INIT` erweitert dies um eine definierte Initialisierung und Deinitialisierung.
 - **E_RS**: Vertauscht Set/Reset-Priorität, aber ohne INIT-Mechanismus.
 - **E_SR_SYM**: Symmetrisches SR-Flipflop ohne INIT-Schnittstelle; `E_SR_SYM_INIT` fügt die INIT-Startlogik hinzu.
@@ -94,4 +102,5 @@ Init ─────────────────────────
 Der Vorteil des `E_SR_SYM_INIT` liegt in der Kombination von qualifizierter Initialisierung mit einem expliziten Deinitialisierungspfad.
 
 ## Fazit
+
 Der Funktionsblock `E_SR_SYM_INIT` bietet ein robustes, qualifiziertes Flip-Flop mit definiertem Startzustand. Die symmetrische Startlogik und die Deinitialisierungsmöglichkeit machen ihn ideal für Anwendungen, die ein reproduzierbares Verhalten nach Systemstart oder -reset erfordern. Die Trennung von Ereignissen und Qualifikation erlaubt eine flexible Einbindung in übergeordnete Steuerungsstrukturen.

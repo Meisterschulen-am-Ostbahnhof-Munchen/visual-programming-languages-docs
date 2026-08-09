@@ -1,9 +1,11 @@
 # HYST_1
+
 Hysteresis function
 This hysteresis function switches the output high if the input signal reaches obove high and will
 switch to low when the input falls back below low value.
 a separate output mid is set if the input stays between low and high value.
 ## Interface
+
 ### Event inputs
 
 | Name | Comment | With |

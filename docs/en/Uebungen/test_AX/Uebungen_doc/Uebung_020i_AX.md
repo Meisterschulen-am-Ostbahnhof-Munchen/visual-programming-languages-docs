@@ -1,8 +1,10 @@
 # Exercise_020i_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_PULSE; Teach-In
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020i_AX`. This exercise combines time measurement and time control into a self-learning pulse function.
 ----
 ## Objective of the Exercise
+
 The objective is to implement a teach-in procedure. Instead of hardcoding the time `PT` in the program, the operator can specify the desired duration by holding down a button. The controller stores this time and applies it to future pulses.
 
 ## Description and Components
@@ -32,7 +34,6 @@ The user presses and holds button `I2` for the desired duration (e.g., 3.5 secon
 
 * Pressing the button starts `E_STOPWATCH`.
 * Releasing the button stops the measurement. The value (3.5 seconds) is now present at input `PT` of `AX_PULSE`.
-
 2. **Execute**:
 
 The user briefly clicks button `I1`.

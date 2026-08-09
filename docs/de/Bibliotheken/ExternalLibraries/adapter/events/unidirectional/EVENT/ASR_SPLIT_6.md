@@ -11,15 +11,19 @@ Der Funktionsblock `ASR_SPLIT_6` verteilt ein eingehendes ASR-Signal (Generic Ad
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -68,4 +72,5 @@ Der `ASR_SPLIT_6` ist ein einfacher, aber nützlicher Funktionsblock zur Signalv
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

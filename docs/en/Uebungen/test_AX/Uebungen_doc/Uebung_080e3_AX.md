@@ -1,8 +1,10 @@
 # Exercise_080e3_AX: Example for E_CTU with Event Brake using AX_D_FF / AUI_D_FF_HYS
+
 ![Uebung_080e3_AX_network](./Uebung_080e3_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of the universal up-counter **E_CTU** in combination with an **event brake**, implemented using the function blocks **AX_D_FF** (D flip-flop) and **AUI_D_FF_HYS** (D flip-flop with hysteresis). The goal is to stabilize and output the counter value, as well as to set a digital output when the counter overflows.
 ## Function Blocks Used
 
@@ -31,7 +33,6 @@ The process can be divided into several steps:
 The two digital inputs `DigitalInput_CLK_I1` and `DigitalInput_RST_I2` convert the physical signals into adapter data. The downstream converters `X_TO_B_I1` and `X_TO_B_I2` provide Boolean values from this data (event output `CNF`).
 
 2. **Start/Stop Clock Generation**
-
 - The clock signal `CLK_I1` (via `X_TO_B_I1.CNF`) starts the cyclic clock generator `E_CYCLE` (`START` event).
 
 `` - The reset signal `RST_I2` (via `X_TO_B_I2.CNF`) terminates the clock (`STOP` event) and simultaneously resets the counter `E_CTU` (`R` event).
@@ -41,10 +42,8 @@ The two digital inputs `DigitalInput_CLK_I1` and `DigitalInput_RST_I2` convert t
 The clock generates a `EO` event every 1 ms, which increments the counter `E_CTU` at the `CU` (Count Up) input.
 
 4. **Counter Reading Output**
-
 - The current counter reading (`CV`) is passed to the function block `AUI_D_FF_HYS`. This D flip-flop with hysteresis (hysteresis value = 25) stabilizes the value and passes it to the converter `UI_TO_UDI_N1`.
 - The converted value is then passed to `Q_NumericValue` and made available as a numeric output.
-
 5. **Overflow Signaling**
 
 When the counter reaches its maximum value (overflow, event output `Q`), the D flip-flop `AX_D_FF` is set. Its output `Q` activates the digital output `DigitalOutput_Q1`.
@@ -72,6 +71,6 @@ After completing this exercise, you will be able to:
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-

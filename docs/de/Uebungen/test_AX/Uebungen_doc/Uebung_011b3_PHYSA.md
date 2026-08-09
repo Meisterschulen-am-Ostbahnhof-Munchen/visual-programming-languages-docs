@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung von physikalischen Werten (Physical Values) in einer einfachen Additionsschaltung. Zwei numerische Eingänge liefern physikalische Größen, die mittels eines Additionsbausteins verrechnet werden. Das Ergebnis wird als physikalischer Wert ausgegeben. Ziel ist es, den Umgang mit Adapterverbindungen zwischen **NumericValue_PHYSA**-Bausteinen und dem standardisierten **AR_ADD_2**-Baustein zu erlernen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -34,9 +35,11 @@ Die Verbindungen sind:
 Die Übung setzt keine speziellen Vorkenntnisse voraus. Sie kann direkt in der 4diac-IDE durch Erstellen einer neuen Anwendung mit diesem SubApp-Typ und Hinzufügen entsprechender Eingabe-/Ausgabegeräte (z. B. virtuelle Slider oder physische IOs) ausgeführt werden.
 
 ## Zusammenfassung
+
 Die SubApp **Uebung_011b3_PHYSA** realisiert eine einfache Addition zweier physikalischer Eingangswerte. Sie zeigt den typischen Aufbau einer Verarbeitungskette mit physikalischen Größen: Eingabe → Rechenoperation → Ausgabe. Dabei kommen ausschließlich Adapterverbindungen zum Einsatz, was eine flexible Kopplung der Bausteine ermöglicht. Dies ist die Grundlage für komplexere SPS-Programme mit Einheiten und physikalischen Messwerten in der 4diac-IDE.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

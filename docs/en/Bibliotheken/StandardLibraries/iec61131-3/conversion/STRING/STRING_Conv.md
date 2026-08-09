@@ -1,7 +1,9 @@
 # STRING Conversions
+
 Here you will find functions for converting the STRING data type.
 String Conversions ...
 ## 🛠️ Related exercises
+
 * [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
 * [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
 * [Uebung_051](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)
@@ -25,4 +27,3 @@ String Conversions ...
 * [Uebung_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
 * [Uebung_133](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_133.md)
 * [Uebung_134](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
-

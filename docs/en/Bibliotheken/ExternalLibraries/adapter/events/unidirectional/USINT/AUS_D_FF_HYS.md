@@ -1,8 +1,10 @@
 # AUS_D_FF_HYS
+
 ![AUS_D_FF_HYS](./AUS_D_FF_HYS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUS_D_FF_HYS` implements a data latch (D flip-flop) with hysteresis (threshold band). It serves to receive an incoming data value on an edge-triggered basis and make it available at the output. The hysteresis ensures stable switching behavior even with noisy or fluctuating input signals. The block uses generic adapters (`AUS`) that enable unidirectional data transmission with event-driven control, making it usable with any data type.
 ## Interface Structure
 
@@ -50,6 +52,7 @@ The FB encapsulates an internal block, `E_D_FF_ANY_HYS`, which implements the ac
 The exact switching threshold depends on the data type used by the adapter (the `AUS` adapter supports any type). The hysteresis value (`USINT`) is internally scaled or interpreted to the corresponding numerical range.
 
 ## Technical Features
+
 - **Generic Adapter:** The use of the unidirectional adapter `AUS` allows the use of a wide variety of data types (e.g., `INT`, `REAL`, `BOOL`) without requiring the function block itself to be typed. Type conversion is handled by the internal function block.
 - **Hysteresis as USINT:** Hysteresis is specified as an unsigned 8-bit value. The specific interpretation (e.g., as an absolute difference or percentage) depends on the implementation and is defined in the internal function block.
 - **Event Passthrough:** The INIT event is passed directly to the INITO event. This enables a simple initialization chain in the network.
@@ -72,6 +75,7 @@ State transitions occur only when the respective hysteresis thresholds are excee
 The thresholds are offset by the hysteresis value relative to a mean or reference value (typically upper threshold = reference + hysteresis/2, lower threshold = reference - hysteresis/2).
 
 ## Application Scenarios
+
 - **Sensor Debouncing:** A digital or analog sensor delivers fluctuating values (e.g., due to mechanical bouncing). The function block smooths the signal and provides a stable output.
 - **Threshold Switch with Reset Delay:** Monitoring of a process value that triggers a signal when an upper limit is exceeded and is only reset when a lower limit is undershot.
 - **Signal Conditioning in Building Automation:** Suppression of short interference pulses from temperature, brightness, or level sensors.

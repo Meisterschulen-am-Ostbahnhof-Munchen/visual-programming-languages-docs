@@ -1,8 +1,10 @@
 # AUS_TO_AUDI
+
 ![AUS_TO_AUDI](./AUS_TO_AUDI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The composite function block **AUS_TO_AUDI** converts a unidirectional adapter of type **AUS** (based on USINT values) into an adapter of type **AUDI** (based on UDINT values). It is used to translate data between two different adapter interfaces without altering the underlying data logic. The block is implemented as a pure pass-through component, forwarding events and data directly from the input to the output side.
 ## Interface Structure
 
@@ -47,11 +49,13 @@ This functional block operates as a simple pass-through. As soon as the event `E
 The function block does not have an internal state machine. The functionality is limited to a direct 1:1 connection between the input and output adapters. A state description is therefore not required.
 
 ## Application Scenarios
+
 - **Adapter Bridge**: Used in systems that utilize the AUS adapter (e.g., for simple byte values) but expect an AUDI interface (e.g., for 32-bit counters or addresses).
 - **Protocol Conversion**: Used within composite function blocks to mediate between different adapter versions within a device family.
 - **Data Preparation**: Prepares USINT data for function blocks that accept only UDINT inputs.
 
 ## Comparison with Similar Function Blocks
+
 - **INT_TO_DINT**: A standard function block for converting INTEGER types, but with independent input/output variables. `AUS_TO_AUDI`, on the other hand, operates at the adapter level and is optimized for integration into adapter-based architectures.
 - **AUS_TO_AUDI (simple)**: Alternative implementations could include additional overflow checks or filter functions; this function block is limited to simple pass-through.
 

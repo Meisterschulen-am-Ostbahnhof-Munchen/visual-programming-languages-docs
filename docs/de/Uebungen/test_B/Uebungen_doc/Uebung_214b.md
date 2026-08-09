@@ -13,6 +13,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
 ## Verwendete Funktionsbausteine (FBs)
 
 ### FB_CTU_ULINT
+
 - **Typ**: `iec61131::counters::FB_CTU_ULINT`
 - **Parameter**:
   - `PV` = `ULINT#5` (Presetwert)
@@ -26,6 +27,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
   - `CV` (Ausgang) – aktueller Zählerstand (ULINT)
 
 ### Input_CU (logiBUS_IX)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**:
   - `QI` = `TRUE` (Aktivierung)
@@ -34,6 +36,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
 - **Datenausgang**: `IN` – aktueller Zustand des Eingangs
 
 ### Input_R (logiBUS_IX)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -42,6 +45,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
 - **Datenausgang**: `IN`
 
 ### Output_Q1 (logiBUS_QX)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -50,6 +54,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
 - **Dateneingang**: `OUT` – Wert, der auf den Ausgang geschrieben wird
 
 ### F_ULINT_TO_LREAL
+
 - **Typ**: `iec61131::conversion::F_ULINT_TO_LREAL`
 - **Ereigniseingang/-ausgang**:
   - `REQ` (Eingang) – startet Konvertierung
@@ -59,6 +64,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
   - `OUT` (Ausgang) – konvertierter LREAL‑Wert
 
 ### Q_NumericValue_PHYS_LREAL
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYS_LREAL`
 - **Parameter**:
   - `stObj` = `OutputNumber_N3` (Referenz auf das Terminal‑Ausgabeobjekt)
@@ -94,4 +100,5 @@ Die Übung 214b demonstriert die Implementierung eines industriellen Vorwärtsz�
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,10 @@
 # Exercise_223: Standard IEC 61131-3 FB_CTUD_UDINT (Up/Down Counter, UDINT) with Terminal Output
+
 ![Uebung_223_network](./Uebung_223_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an up/down counter (FB_CTUD_UDINT) according to IEC 61131-3 with data type UDINT. The counter is controlled via digital inputs and outputs the current counter value as well as two output signals (QU, QD) to digital outputs. Additionally, the counter value is displayed on a terminal (Q_NumericValue).
 This exercise demonstrates the use of logiBUS input/output blocks in conjunction with a standardized counter FB. A comment in the network suggests that E_D_FF blocks may be needed to reduce the number of events.
 
@@ -67,6 +69,7 @@ Exercise 223 demonstrates the practical application of an IEC 61131-3 forward/do
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,56 +1,67 @@
 # logiBUS_QXA
+
 <img width="2042" height="360" alt="image" src="https://github.com/user-attachments/assets/a209d37d-5012-4889-853b-e7a36dfc6644" />
 * * * * * * * * * *
 ## Introduction
+
 The logiBUS_QXA is a composite function block for outputting Boolean data. It serves as an interface for digital output functions and enables the control of up to 8 digital outputs via a standardized protocol.
 ![logiBUS_QXA](logiBUS_QXA.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **INIT**: Service initialization event with the associated data QI, PARAMS, and Output
 
 ### **Event Outputs**
+
 - **INITO**: Initialization acknowledgment with the data QO and STATUS
 - **CNF**: Acknowledgement of the requested service with the data QO and STATUS
 
 ### **Data Inputs**
+
 - **QI**: Boolean event input qualifier
 - **PARAMS**: Service parameters as a string
 - **Output**: Identification of outputs Q1 to Q8 of type logiBUS_DO_S with initial value "Invalid"
 
 ### **Data Outputs**
+
 - **QO**: Boolean event output qualifier
 - **STATUS**: Service status as a string
 
 ### **Adapters**
+
 - **OUT**: Unidirectional adapter of type AX For output communication
 
 ## Functionality
+
 The logiBUS_QXA acts as a wrapper for the logiBUS_QX function block and provides a unified interface for digital output functions. During initialization (INIT event), the configuration parameters are passed and the outputs are configured accordingly. The block enables the control of up to 8 digital outputs via the output data structure.
 
 ## Technical Features
+
 - Uses the logiBUS_QX core function block for the actual output logic
 - Supports up to 8 digital outputs (Q1 to Q8)
 - Initialization with specific parameters via PARAMS input
 - Feedback on the operating status via STATUS output
 
 ## State Overview
+
 The function block goes through the following states:
 
 1. **Not Initialized**: Before the INIT event
-
 2. **Initialization**: During processing of the INIT event
 3. **Ready for Operation**: After successful initialization (INITO confirmation)
 4. **Active Operation**: Processing of output requests via the OUT adapter
 
 ## Application Scenarios
+
 - Control of digital actuators in automation systems
 - Connection of output modules in distributed control systems
 - Integration into logiBUS-based control architectures
 - Industrial automation with Boolean output signals
 
 ## ⚖️ Comparison with Similar Blocks
+
 Compared to simple logiBUS_QXA offers the following features for digital output blocks:
 
 - Extended parameterization options
@@ -59,6 +70,7 @@ Compared to simple logiBUS_QXA offers the following features for digital output 
 - Support for multiple outputs in a single structure
 
 ## 🛠️ Related Exercises
+
 * [Exercise_001_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX.md)
 * [Exercise_001_AX_b](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
 * [Exercise_001c_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001c_AX.md)
@@ -171,4 +183,5 @@ Compared to simple logiBUS_QXA offers the following features for digital output 
 * [Exercise_178_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
 
 ## Conclusion
+
 The logiBUS_QXA is a robust and flexible function block for digital output functions in industrial automation systems. Its standardized interface and comprehensive parameterization options make it ideally suited for use in complex control architectures with high demands on reliability and diagnostic capabilities.

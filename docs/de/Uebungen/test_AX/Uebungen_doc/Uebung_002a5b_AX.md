@@ -4,12 +4,15 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die grundlegende Verknüpfung von mehreren digitalen Eingängen mit mehreren digitalen Ausgängen. Dabei wird eine logische OR-Operation eingesetzt, um die Zustände der Eingänge zu verknüpfen. Das Ergebnis dieser Verknüpfung wird anschließend über einen Signalverteiler auf verschiedene digitale Ausgänge verteilt. Die Implementierung nutzt dabei das Konzept von Adapter-Funktionsbausteinen, um die boolesche Logik und die Signalverteilung zu realisieren.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die Übung `Uebung_002a5b_AX` verwendet eine Kombination aus spezifischen I/O-Bausteinen und generischen Logik- sowie Signalverteilungs-Bausteinen.
 
 ### Sub-Bausteine: logiBUS_IXA
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA` (repräsentiert durch Instanzen wie `DigitalInput_I1`, `DigitalInput_I2`, `DigitalInput_I3`)
 - **Verwendete interne FBs**: Keine internen FBs in der bereitgestellten Definition sichtbar.
     - **Bausteinname**: DigitalInput_I1 (Beispielhafte Instanz)
@@ -20,6 +23,7 @@ Die Übung `Uebung_002a5b_AX` verwendet eine Kombination aus spezifischen I/O-Ba
 - **Funktionsweise**: Dieser Funktionsbaustein dient zum Einlesen des logischen Zustands eines spezifischen digitalen Eingangs. Er überwacht den zugewiesenen physikalischen Eingang (z.B. `Input_I1`) und stellt dessen aktuellen Status als booleschen Wert an seinem Datenausgang `IN` bereit.
 
 ### Sub-Bausteine: logiBUS_QXA
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA` (repräsentiert durch Instanzen wie `DigitalOutput_Q1`, `DigitalOutput_Q2`, `DigitalOutput_Q3`)
 - **Verwendete interne FBs**: Keine internen FBs in der bereitgestellten Definition sichtbar.
     - **Bausteinname**: DigitalOutput_Q1 (Beispielhafte Instanz)
@@ -30,6 +34,7 @@ Die Übung `Uebung_002a5b_AX` verwendet eine Kombination aus spezifischen I/O-Ba
 - **Funktionsweise**: Dieser Funktionsbaustein dient zur Ansteuerung eines spezifischen digitalen Ausgangs. Er setzt den Zustand des zugewiesenen physikalischen Ausgangs (z.B. `Output_Q1`) basierend auf dem booleschen Wert, der an seinem Dateneingang `OUT` anliegt.
 
 ### Sub-Bausteine: AX_OR_3
+
 - **Typ**: `adapter::booleanOperators::AX_OR_3` (repräsentiert durch die Instanz `AX_OR_3`)
 - **Verwendete interne FBs**: Keine internen FBs in der bereitgestellten Definition sichtbar.
     - **Bausteinname**: AX_OR_3
@@ -39,6 +44,7 @@ Die Übung `Uebung_002a5b_AX` verwendet eine Kombination aus spezifischen I/O-Ba
 - **Funktionsweise**: Dieser Baustein implementiert eine logische OR-Verknüpfung mit drei Eingängen. Der Datenausgang `OUT` wird `TRUE`, wenn mindestens einer der drei Dateneingänge (`IN1`, `IN2`, `IN3`) den Wert `TRUE` hat. Andernfalls ist der Ausgang `FALSE`.
 
 ### Sub-Bausteine: AX_SPLIT_3
+
 - **Typ**: `adapter::events::unidirectional::AX_SPLIT_3` (repräsentiert durch die Instanz `AX_SPLIT_3`)
 - **Verwendete interne FBs**: Keine internen FBs in der bereitgestellten Definition sichtbar.
     - **Bausteinname**: AX_SPLIT_3
@@ -48,6 +54,7 @@ Die Übung `Uebung_002a5b_AX` verwendet eine Kombination aus spezifischen I/O-Ba
 - **Funktionsweise**: Dieser Baustein dient als Signalverteiler. Er nimmt ein einzelnes Eingangssignal am Dateneingang `IN` entgegen und leitet es identisch und gleichzeitig an drei separate Datenausgänge (`OUT1`, `OUT2`, `OUT3`) weiter.
 
 ## Programmablauf und Verbindungen
+
 Die Übung `Uebung_002a5b_AX` realisiert eine Steuerungslogik, bei der die Zustände von drei digitalen Eingängen über eine OR-Verknüpfung ausgewertet und das Ergebnis auf drei digitale Ausgänge verteilt wird.
 
 1.  **Erfassung der Eingänge**: Die Funktionsbausteine `DigitalInput_I1`, `DigitalInput_I2` und `DigitalInput_I3` lesen kontinuierlich die Zustände der physikalischen Eingänge `Input_I1`, `Input_I2` und `Input_I3` ein. Ihre jeweiligen Datenausgänge (`DigitalInput_I1.IN`, `DigitalInput_I2.IN`, `DigitalInput_I3.IN`) stellen diese Zustände bereit.
@@ -78,9 +85,11 @@ Die Übung `Uebung_002a5b_AX` realisiert eine Steuerungslogik, bei der die Zust�
 **Start der Übung**: Laden Sie die Applikation `Uebung_002a5b_AX` auf eine 4diac-kompatible Steuerung (SPS oder Laufzeitumgebung). Beobachten Sie das Verhalten der Ausgänge Q1, Q2 und Q3, wenn Sie die digitalen Eingänge I1, I2 oder I3 manuell schalten.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_002a5b_AX` bietet eine praktische Einführung in die Verknüpfung von digitalen I/O-Signalen. Sie demonstriert, wie mithilfe einer logischen OR-Operation mehrere Eingänge zu einem einzigen Steuersignal zusammengefasst werden können. Dieses Signal wird anschließend gesplittet, um eine synchronisierte Ansteuerung von mehreren Ausgängen zu ermöglichen. Das Kernprinzip ist, dass alle drei Ausgänge (Q1, Q2, Q3) aktiv werden, sobald mindestens einer der drei Eingänge (I1, I2, I3) aktiv ist. Diese Art der Gruppensteuerung ist eine grundlegende Funktion in vielen Automatisierungsanwendungen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

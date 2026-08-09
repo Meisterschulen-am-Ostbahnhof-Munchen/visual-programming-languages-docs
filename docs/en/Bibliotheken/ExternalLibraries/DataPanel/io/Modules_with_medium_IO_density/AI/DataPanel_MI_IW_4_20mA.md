@@ -1,8 +1,10 @@
 # DataPanel_MI_IW_4_20mA
+
 ![DataPanel_MI_IW_4_20mA](./DataPanel_MI_IW_4_20mA.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **DataPanel_MI_IW_4_20mA** is a service interface function block (SIFB) for acquiring analog input data in the 4-20mA range. It serves as an interface between the automation system and a hardware-level analog input module. The block handles the initialization of communication (e.g., bus connection), the cyclic request for measured values, and the provision of the measured raw data via output events.
 
 * * * * * * * * * *
@@ -66,6 +68,7 @@ The outputs `QO` and `STATUS` provide information about the success of the opera
 
 * * * * * * * * * *
 ## Technical Specifications
+
 - **Target Platform**: The module is designed for the "DataPanel" system of HR Agrartechnik GmbH (version 1.0, year 2026).
 - **Node Address Range**: The slave addresses `u8SAMember` are limited to the range 224–239; The initial value `MI::MI_00` corresponds to the smallest address (224).
 - **Input Channel Identification**: The data type `DataPanel_MI_AI_S` defines possible channels (`AnalogInput_1A … 8B`). The initial value `Invalid` indicates that no channel is selected before the first initialization.
@@ -86,6 +89,7 @@ Error states (e.g., communication failure) are reported via `STATUS`.
 
 * * * * * * * * * *
 ## Application Scenarios
+
 - **4-20 mA Sensor Connection**: A pressure sensor, level sensor, or temperature sensor with a 4-20 mA output is connected to the DataPanel system. The function block reads the measured value cyclically or on demand.
 - **Multi-channel acquisition**: Via different instances of the building block (with different `Input`With parameters, multiple analog channels can be operated in parallel.
 - **Data Logger System**: Combined with a function block for data recording, the `IND` output can be used to log status changes or alarms.
@@ -110,6 +114,7 @@ The **DataPanel_MI_IW_4_20mA** function block offers a robust and compact soluti
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

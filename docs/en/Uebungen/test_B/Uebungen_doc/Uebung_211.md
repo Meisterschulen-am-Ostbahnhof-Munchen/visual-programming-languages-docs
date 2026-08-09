@@ -1,8 +1,10 @@
 # Exercise_211: Standard IEC 61131-3 FB_CTU_DINT (Up Counter, DINT) with Terminal Output
+
 ![Uebung_211_network](./Uebung_211_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an up counter according to IEC 61131-3 using the function block `FB_CTU_DINT`. The counter uses the data type `DINT` (double exact integer). The counting pulses are provided via a digital input (I1), and a second digital input (I2) is used to reset the counter. The counter's output (Q) controls a digital output (Q1), and simultaneously, the current counter value (CV) is displayed on a screen via a terminal output.
 
 This exercise demonstrates the basic interconnection of industrial input/output modules (logiBUS) with a counter module and a numeric display. A comment in the circuit diagram indicates that the data type conversion used, `DINT_TO_UDINT`, is problematic because negative counter values cannot be displayed correctly.
@@ -96,7 +98,6 @@ After the counter is processed, the event `CNF` is triggered. This triggers two 
 
 - `Output_Q1.REQ` – the digital output Q1 is set by the value of `FB_CTU_DINT.Q`.
 - `F_DINT_TO_UDINT.REQ` – the current counter value (CV) is converted from `DINT` to `UDINT`.
-
 4. **Terminal Output:**
 
 The converted number (`UDINT`) is passed to the function block `Q_NumericValue`, which is triggered after the conversion event `CNF`. This updates the value on the terminal (e.g., control panel) with the object ID `OutputNumber_N1`.

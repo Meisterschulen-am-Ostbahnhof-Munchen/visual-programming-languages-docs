@@ -1,8 +1,10 @@
 # Exercise_020i: DigitalInput_I1 to DigitalOutput_Q1; E_PULSE; Pulse Shaping; Teach-In
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_020i`. This is a very practical exercise in which a time duration is learned not through numerical values, but through demonstration (teach-in).
 ----
 ## Objective of the Exercise
+
 Programming a variable pulse duration using the `E_STOPWATCH` function block.
 
 -----
@@ -25,7 +27,6 @@ Programming a variable pulse duration using the `E_STOPWATCH` function block.
 ## Operation
 
 1. **Learn Mode**: The user presses and holds button `I2`.
-
 * Pressing the button (rising edge) starts the stopwatch.
 
 Releasing the button (falling edge) stops the stopwatch.

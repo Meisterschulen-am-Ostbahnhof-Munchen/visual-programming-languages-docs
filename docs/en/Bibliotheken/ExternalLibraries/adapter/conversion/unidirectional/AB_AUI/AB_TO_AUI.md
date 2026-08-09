@@ -1,21 +1,27 @@
 # AB_TO_AUI
+
 ![AB_TO_AUI](./AB_TO_AUI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AB_TO_AUI** serves as an adapter converter between an AB adapter (BYTE-based) and an AUI adapter (UINT-based). It performs a unidirectional conversion from BYTE to UINT data type. The block is implemented as a composite FB and internally uses the IEC 61131-3 conversion function `F_BYTE_TO_UINT`. It is specifically designed for connecting sensors or actuators that deliver their data in BYTE format but must be processed in a UINT-based environment.
 ## Interface Structure
 
 ### **Event Inputs**
+
 The FB does not have direct event inputs at the top level. Event control is handled via the connected adapters.
 
 ### **Event Outputs**
+
 The FB has no direct event outputs at the top level. Events are passed on via the connected adapters.
 
 ### **Data Inputs**
+
 The FB has no direct data inputs at the top level. Data is received via the connected AB adapter.
 
 ### **Data Outputs**
+
 The FB has no direct data outputs at the top level. Data is output via the connected AUI adapter.
 
 ### **Adapters**
@@ -39,6 +45,7 @@ The module functions as a pure converter: As soon as an event occurs at socket `
 The entire process is strictly sequential and event-driven.
 
 ## Technical Features
+
 - **Unidirectional Operation:** The function block only supports data flow from AB (BYTE) to AUI (UINT). Reverse conversion is not possible with this function block.
 - **Use of IEC 61131-3 Conversion:** The conversion is performed using the standardized function block `F_BYTE_TO_UINT` from the IEC 61131 library. This ensures reliable and portable conversion.
 - **Adapter-Based Interface:** The function block is intentionally designed as an adapter converter and not as a standalone function block with direct inputs/outputs. This allows for easy integration into existing adapter-based communication structures.
@@ -49,6 +56,7 @@ The entire process is strictly sequential and event-driven.
 The function block does not have its own state machines. Its behavior is determined by the internal function block `F_BYTE_TO_UINT` (a simple function block without states) and event chaining. Therefore, the function block is always ready to perform a conversion as soon as an event arrives at the input adapter.
 
 ## Application Scenarios
+
 - **Sensor Connection:** A sensor delivers measured values in BYTE format (e.g., via an AB adapter), while the control system processes only UINT values. The AB_TO_AUI function block converts the values accordingly.
 - **Protocol Adaptation:** In heterogeneous fieldbus systems, the function block can be used as a simple data type converter between different adapter types.
 - **Testing and Simulation:** During development, this function block can be used to convert BYTE data from a test environment into UINT data for the target application.

@@ -1,8 +1,10 @@
 # ST_DEL_FB
+
 ![ST_DEL_FB](https://user-images.githubusercontent.com/116869307/214154809-ea8eaf7b-a851-4b0e-9cc9-2d7cdd14fcbd.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The ST_DEL_FB function block is used to delete a function block instance of a specific function block type. This function block belongs to the category of reconfiguration services and enables the dynamic management of function block instances at runtime.
 
 ![ST_DEL_FB](ST_DEL_FB.svg)
@@ -10,17 +12,21 @@ The ST_DEL_FB function block is used to delete a function block instance of a sp
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **REQ**: Event to request the deletion of a function block instance
 
 ### **Event Outputs**
+
 - **CNF**: Event confirming that the function block instance has been deleted
 
 ### **Data Inputs**
+
 - **QI** (BOOL): Event input qualifier
 - **FB_NAME** (WSTRING): Name of the function block instance to be deleted
 - **DST** (WSTRING): Destination where the function block instance must be deleted (Syntax: ResourceName)
 
 ### **Data Outputs**
+
 - **QO** (BOOL): Event output qualifier
 - **STATUS** (WSTRING): Service status (RDY, NO_SUCH_OBJECT, INVALID_STATE)
 
@@ -52,6 +58,7 @@ The function block supports several service sequences:
 - Resource-Initiated Termination
 
 ## Application Scenarios
+
 - Dynamic reconfiguration of control systems
 - Resource management in distributed automation systems
 - Runtime adaptation of function block architectures

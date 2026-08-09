@@ -1,12 +1,15 @@
 # Exercise_032: LED Strip Flashing LED
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_032`. It uses pre-configured color blocks for LED strips.
 ## 📺 Video
+
 ![Uebung_032_network](./Uebung_032_network.svg)
 
 * [The ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)
 
 ## 🎧 Podcast
+
 * [ESP32 as an Industrial PLC: Revolution with Eclipse 4diac and logiBUS®](https://podcasters.spotify.com/pod/show/logibus/episodes/ESP32-als-Industrie-SPS-Revolution-mit-Eclipse-4diac-und-logiBUS-e375dp6)
 * [ESP32 as PLC: Democratizing Industrial Automation with Eclipse 4diac](https://podcasters.spotify.com/pod/show/logibus/episodes/ESP32-as-PLC-Democratizing-Industrial-Automation-with-Eclipse-4diac-e375e13)
 * [ESP32 becomes an industrial PLC for agricultural machinery](https://podcasters.spotify.com/pod/show/logibus/episodes/ESP32-wird-industrielle-SPS-fr-Landmaschinen-e3bf4om)
@@ -26,6 +29,7 @@ Using the function block `logiBUS_LED_strip_QX`. This is a high-level function b
 [cite_start]In `Uebung_032.SUB`, four different colors (green, yellow, red, blue) are mapped to four pushbuttons[cite: 1].
 
 ### Function Blocks (FBs)
+
 * **`logiBUS_LED_strip_QX`**: Combination function block for RGB strips.
 * **Parameters**:
 * `Colour`: Selection from a palette (e.g., `LED_RED`).
@@ -45,6 +49,7 @@ This enables very fast programming of colored status signals.
 * ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 

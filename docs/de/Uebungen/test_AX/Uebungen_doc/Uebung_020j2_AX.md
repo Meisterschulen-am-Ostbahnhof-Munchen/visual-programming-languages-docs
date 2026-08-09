@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_020j2_AX`, basierend auf den 
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Verarbeitung von Signalen mittels Adapter-Verbindungen (AX) innerhalb einer IEC 61499 Anwendung. Ein digitales Eingangssignal (`DigitalInput_I1`) wird verwendet, um zwei separate digitale Ausgänge (`DigitalOutput_Q1` und `DigitalOutput_Q2`) anzusteuern. Die Besonderheit dieser Übung liegt in der Verwendung einer gekapselten Sub-Applikation (`Uebung_020j2_AX_sub`), die das Eingangssignal aufteilt und zwei unabhängige Impulsgeber (Pulse Timer) ansteuert.
 
 ## Verwendete Funktionsbausteine (FBs)

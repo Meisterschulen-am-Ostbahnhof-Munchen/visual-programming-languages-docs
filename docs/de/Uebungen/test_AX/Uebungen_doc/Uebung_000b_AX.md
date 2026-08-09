@@ -14,6 +14,7 @@ Die Übung bildet eine einfache UND-Logik ab, bei der zwei konstante **TRUE**-We
 Die SubApp besteht aus drei internen Funktionsbausteinen:
 
 ### AX_BOOL_TO_X (zweimal instanziiert)
+
 - **Typ**: `adapter::conversion::unidirectional::AX_BOOL_TO_X`
 - **Parameter**:  
   - `OUT` = `TRUE` (setzt den Ausgang auf den Wert **TRUE**)
@@ -23,6 +24,7 @@ Die SubApp besteht aus drei internen Funktionsbausteinen:
   - `AX_BOOL_TO_X_1.AX_OUT` → `AX_AND_2.IN2`
 
 ### AX_AND_2
+
 - **Typ**: `adapter::booleanOperators::AX_AND_2`
 - **Parameter**: Keine
 - **Funktion**: Führt eine logische UND-Verknüpfung der beiden Eingänge (`IN1`, `IN2`) durch. Der Ausgang (`OUT`) wird nach Ausführung der UND-Operation gesetzt.
@@ -31,6 +33,7 @@ Die SubApp besteht aus drei internen Funktionsbausteinen:
   - Ausgang (`OUT`) → `AX_X_TO_BOOL.AX_IN`
 
 ### AX_X_TO_BOOL
+
 - **Typ**: `adapter::conversion::unidirectional::AX_X_TO_BOOL`
 - **Parameter**: Keine
 - **Funktion**: Konvertiert einen Wert des Adapter-Datentyps `X` zurück in einen Booleschen Wert. Dies stellt den Ausgang der Gesamtschaltung dar.
@@ -67,4 +70,5 @@ Die Übung `Uebung_000b_AX` zeigt eine einfache UND-Logik, die ausschließlich m
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

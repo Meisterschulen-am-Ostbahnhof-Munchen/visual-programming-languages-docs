@@ -1,9 +1,11 @@
 # AUDI_FIELDBUS_UDINT_TO_SIGNAL_SCALED
+
 ![AUDI_FIELDBUS_UDINT_TO_SIGNAL_SCALED](./AUDI_FIELDBUS_UDINT_TO_SIGNAL_SCALED.svg)
 *Image of the function block: not available*
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUDI_FIELDBUS_UDINT_TO_SIGNAL_SCALED** is used to convert a received UDINT value (unsigned 32-bit integer) from a fieldbus protocol into a scaled signal and only forward it to the output if the input signal is marked as valid. It represents a combined solution for scaling and signal validity checking and is primarily used in automation technology for LogiBUS applications.
 
 ## Interface Structure
@@ -53,6 +55,7 @@ The function block operates internally as a composite block. It consists of a su
 - The event (`OUT.E1`) is triggered simultaneously with the update of the output data, allowing downstream function blocks to retrieve the new values.
 
 ## Technical Features
+
 - The function block (FB) is implemented as a **composite FB**, meaning its functionality is represented by an internal network of other function blocks. This allows for a clear separation of scaling and validity logic.
 - Initialization occurs via the `INIT` event, which is forwarded to the internal FB. After successful initialization, `INITO` is output.
 - The scaling factors `SCALE` and `OFFSET` are set during initialization and cannot be changed at runtime, as they are not updated via separate events.
@@ -65,15 +68,16 @@ The function block operates internally as a composite block. It consists of a su
 This function block does not have explicit states in the sense of a state machine. Its internal logic is executed purely data-flow controlled via the event chain:
 
 1. **Initialization Phase**: After receiving `INIT`, the internal function block is initialized and `INITO` is sent.
-
 2. **Data Processing Phase**: An incoming `IN.E1` triggers the scaling and validity check. Upon completion, `OUT.E1` and the output data are updated.
 
 ## Application Scenarios
+
 - **Scaling of Fieldbus Signals**: When a fieldbus delivers a UDINT value (e.g., a sensor counter reading) that needs to be converted into a physical unit, e.g., scaling and offset.
 - **Validity Check**: Only valid measured values should be passed on to the controller. The flag `VALID` can be evaluated by a higher-level safety block, for example.
 - **Coupling of LogiBUS and IEC 61499 Systems**: The function block serves as a bridge between the LogiBUS protocol and standardized function blocks.
 
 ## Comparison with Similar Function Blocks
+
 - **FIELDBUS_UDINT_TO_SIGNAL_SCALED** (bare scaling block): This block performs only the scaling, without the validity check and without the memory logic. The present composite function block extends it to include the status management of the validity flag.
 - **Standard IEC 61499 Scaling Blocks** (e.g., `SCALE`): Usually implemented as simple arithmetic blocks, they often lack integrated validity logic and connectivity to fieldbus adapters.
 

@@ -13,6 +13,7 @@ Diese Übung demonstriert das direkte Durchschleifen eines physikalischen Werts 
 In der SubApp sind zwei vordefinierte Funktionsbausteine eingesetzt:
 
 ### NumericValue_PHYSA
+
 - **Typ**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`
 - **Parameter**:
   - `QI` = `TRUE` (Freigabe des Bausteins)
@@ -22,6 +23,7 @@ In der SubApp sind zwei vordefinierte Funktionsbausteine eingesetzt:
 Dieser Baustein liest den physikalischen Wert von der Eingabeadresse `InputNumber_I3`. Er ist so konfiguriert, dass der Wert direkt (ohne Umrechnung) am Adapterausgang `rPhys` bereitgestellt wird.
 
 ### Q_NumericValue_PHYSA
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameter**:
   - `stObj` = `OutputNumber_N3` (Referenz auf die Ausgabestelle)
@@ -50,4 +52,5 @@ Die Übung **Uebung_011f_PHYSA** realisiert eine einfache Durchschleifung eines 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

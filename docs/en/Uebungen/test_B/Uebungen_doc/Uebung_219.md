@@ -1,12 +1,15 @@
 # Exercise_219: Standard IEC 61131-3 FB_CTD_ULINT (Down Counter, ULINT) with Terminal Output
+
 ![Uebung_219_network](./Uebung_219_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a down counter (counter) according to IEC 61131-3 using the function block `FB_CTD_ULINT` (data type ULINT). The counter is controlled via two digital inputs: **CD** (Count Down) decrements the counter value, and **LD** (Load) loads the preset value (PV). The current counter value is output to a terminal (NumericValue). Additionally, a digital output is set when the counter value reaches zero.
 ## Function Blocks (FBs) Used
 
 ### FB_CTD_ULINT (IEC 61131-3 Down Counter)
+
 - **Type**: iec61131::counters::FB_CTD_ULINT
 - **Parameters**:
 - `PV` = ULINT#10 (Default starting value)
@@ -20,6 +23,7 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 - `CV` (ULINT) – Current counter value
 
 ### Input_CD (Digital Input)
+
 - **Type**: logiBUS::io::DI::logiBUS_IX
 - **Parameters**:
 - `QI` = TRUE (Qualifier)
@@ -28,6 +32,7 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 - **Data Output**: `IN` (BOOL) – Current input value
 
 ### Input_LD (Digital Input)
+
 - **Type**: logiBUS::io::DI::logiBUS_IX
 - **Parameters**:
 - `QI` = TRUE
@@ -36,6 +41,7 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 - **Data Output**: `IN` (BOOL)
 
 ### Output_Q1 (Digital Output)
+
 - **Type**: logiBUS::io::DQ::logiBUS_QX
 - **Parameters**:
 - `QI` = TRUE
@@ -44,6 +50,7 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 - **Data Input**: `OUT` (BOOL) – Output value to be set
 
 ### F_ULINT_TO_UDINT (Type Conversion)
+
 - **Type**: iec61131::conversion::F_ULINT_TO_UDINT
 - **Event Input**: `REQ`
 - **Event Output**: `CNF`
@@ -51,6 +58,7 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 - **Data Output**: `OUT` (UDINT)
 
 ### Q_NumericValue (Terminal Output)
+
 - **Type**: isobus::UT::Q::Q_NumericValue
 - **Parameters**:
 - `u16ObjId` = OutputNumber_N1 (Output field identifier)
@@ -62,12 +70,9 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 The flow is controlled via event connections:
 
 1. **Processing input signals**:
-
 - If a change occurs at **Input_I1** (CD) or **Input_I2** (LD), the corresponding input block (`Input_CD.IND` or `Input_LD.IND`) triggers an event.
 - Both events are connected to the **REQ** input of the counter `FB_CTD_ULINT`. This triggers a counting operation at each of the two inputs.
-
 2. **Counter Operation**:
-
 - The counter `FB_CTD_ULINT` executes the following depending on the state of the data lines:
 - If `LD` = TRUE, the value from `PV` (ULINT#10) is loaded.
 - If `CD` = TRUE (and `LD` = FALSE), the counter value is decremented by 1.
@@ -91,6 +96,7 @@ Exercise **Exercise_219** demonstrates an IEC 61131-3 compliant down counter wit
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

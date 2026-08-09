@@ -1,8 +1,10 @@
 # ILOCK_BLOCK_PROTECT_AX
+
 ![ILOCK_BLOCK_PROTECT_AX](./ILOCK_BLOCK_PROTECT_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ILOCK_BLOCK_PROTECT_AX` implements a prioritized interlock for two opposing directions (UP/DOWN) while taking into account a configurable protection dead time. The block is implemented as an adapter version, meaning that the inputs and outputs are provided via IEC 61499 adapters. The goal is the safe control of actuators where only one direction may be active at a time, for example, during lifting or swiveling movements. The first activated input takes precedence; a change in direction only occurs after the protection time has elapsed and a new evaluation has been performed.
 ## Interface Structure
 
@@ -63,10 +65,10 @@ The function block is set to `FALSE`, and the timer is started via the event `ti
 - Only `UP_IN.D1 = TRUE` → Switch to `UP`
 - Only `DOWN_IN.D1 = TRUE` → Switch to `DOWN`
 - Neither or both `TRUE` → Switch back to `STOP`
-
 5. **Dynamic Update**: The event `UPDATE` allows the protection time `DT_PROTECT` to be changed during operation. The updated time takes effect the next time the timer is used (the timer is only started in the stop states). The event can be received in any state without changing the current control state.
 
 ## Technical Features
+
 - **Adapter Interface**: All data exchange takes place via adapters. This ensures a clean separation between control logic and peripherals, increases reusability, and improves encapsulation.
 - **Dynamic Protection Time**: The dead time can be changed at runtime via the `UPDATE` event without restarting the function block. This is particularly useful in applications with variable switching times (e.g., temperature-dependent delays).
 - **Dead Time Principle**: After an input is deactivated, the function block does not immediately switch to the other state, but enforces a minimal delay (`DT_PROTECT`). This prevents bounce or unwanted rapid switching.
@@ -98,6 +100,7 @@ The function block is set to `FALSE`, and the timer is started via the event `ti
 - In any state, the event `UPDATE` can return to the same state (only used to update `DT_PROTECT`).
 
 ## Application Scenarios
+
 - **Lifting Platform Control**: Interlocking of lifting and lowering; after releasing the lifting command, a dead time of, for example, 100 ms is observed before lowering is possible.
 - **Valve Control**: Switching between two media (e.g., heating/cooling) with a protection time to prevent pressure surges.
 - **Robot Axes**: Collision prevention through simultaneous control of opposing movements.

@@ -1,8 +1,10 @@
 # AULI_FB_CTUD
+
 ![AULI_FB_CTUD](./AULI_FB_CTUD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AULI_FB_CTUD** implements an up/down counter for unsigned 64-bit integers (ULINT). It exclusively uses adapter interfaces according to the IEC 61499-2 standard for event and data connections. The block encapsulates the standard FB `FB_CTUD_ULINT` and extends its inputs and outputs with adapter-based connections, enabling flexible and standardized integration into adapter-oriented architectures.
 ## Interface Structure
 
@@ -17,6 +19,7 @@ The block does not have any traditional event inputs. Instead, the counter event
 - **PV** (Preset Value) – Event via `PV.E1`
 
 ### **Event Outputs**
+
 - **CNF** – Standard event output, triggered with every counter update.
 
 Additionally, events are output via the **adapter plugs**:
@@ -74,6 +77,7 @@ After each processing operation, the event `CNF` is output. Simultaneously, the 
 The entire process is synchronous – each incoming event triggers a calculation and subsequently the output of the results.
 
 ## Technical Features
+
 - **Adapter-based communication**: All inputs and outputs are handled via adapters (sockets/plugs). This enables a decoupled connection between components and simplifies reuse in different contexts.
 - **Unidirectional Adapters**: The adapters used (AX, AULI) are unidirectional – sockets receive, plugs send.
 - **Trigger Behavior**: The function block fires the output events (`QU.E1`, `QD.E1`, `CV.E1`) on **every** counter update (including reset or load). For change-based triggering, an AX_D_FF (differentiator) must be used.
@@ -84,14 +88,13 @@ The entire process is synchronous – each incoming event triggers a calculation
 The function block does not have an explicit state machine; The counter behavior is implemented by the internal function `FB_CTUD_ULINT`. Essentially, three states are distinguished:
 
 1. **Normal Operation** – The counter value is between 1 and `2^64‑2`. Neither `QU` nor `QD` are active.
-
 2. **Overflow** – The counter has reached its maximum value. `QU.D1 = TRUE`.
-
 3. **Underflow** – The counter reading is 0. `QD.D1 = TRUE`.
 
 After a reset (`R`) or load (`LD`), the counter can immediately jump to one of these states.
 
 ## Application Scenarios
+
 - **Industrial Piece Counters**: Recording production quantities with up-and-down counting (e.g., good/bad parts).
 - **Pallet or Workpiece Tracking**: Counting inputs and outputs in a buffer memory.
 - **Event-Driven Systems**: Combination with sensors (light barriers, proximity switches) via the adapter interfaces.

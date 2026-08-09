@@ -1,8 +1,10 @@
 # Exercise_011e_MIX: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly mixed!
+
 ![Uebung_011e_MIX_network](./Uebung_011e_MIX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates an **incompatible interaction** between two different namespaces in the isobus context. The goal is to pass a numeric value from an input (I1) to an output (N3), deliberately using software scaling via `NumericObjectPool_S` – but with **incorrectly mixed** types. The exercise highlights the problems that can arise from using different data representations (raw values vs. physical values).
 
 In this specific example: An input of `10` at input I1 is converted to `F_RAW_TO_PHYS(I1)` (here replaced by `F_DWORD_TO_REAL`) via the function block `10.0` and then passed to output `N3`. However, the namespaces of the pool objects used (`InputNumber_I1` and `OutputNumber_N3`) are incompatible, leading to unexpected behavior – this exercise demonstrates these pitfalls.
@@ -43,6 +45,7 @@ The exercise `Uebung_011e_MIX` demonstrates how a numeric value is transferred f
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4DIAC IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

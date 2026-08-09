@@ -10,15 +10,19 @@ Der Funktionsblock `A2X_SPLIT_2` dient der Aufteilung eines eingehenden A2X-Adap
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine Ereignis-Eingänge vorhanden.
 
 ### **Ereignis-Ausgänge**
+
 Keine Ereignis-Ausgänge vorhanden.
 
 ### **Daten-Eingänge**
+
 Keine Daten-Eingänge vorhanden.
 
 ### **Daten-Ausgänge**
+
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
@@ -62,4 +66,5 @@ Der `A2X_SPLIT_2` ist ein einfacher, aber nützlicher Baustein zur Signalverteil
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

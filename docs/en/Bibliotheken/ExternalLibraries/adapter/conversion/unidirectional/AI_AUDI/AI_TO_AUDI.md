@@ -1,8 +1,10 @@
 # AI_TO_AUDI
+
 ![AI_TO_AUDI](./AI_TO_AUDI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AI_TO_AUDI` is a composite module that converts an **AI adapter** (data of type `INT`) into an **AUDI adapter** (data of type `UDINT`). It serves as a unidirectional interface between different adapter types and enables seamless data conversion within the 4diac IDE.
 ## Interface Structure
 
@@ -46,13 +48,9 @@ The function block is implemented as a composite function block. Internally, it 
 **Process:**
 
 1. An event arrives at the input `E1` of socket `AI_IN`, accompanied by an INT value at `D1`.
-
 2. This event is forwarded to the internal function block `Convert` (type `F_INT_TO_UDINT`).
-
 3. The internal function block performs the type conversion from `INT` to `UDINT` (according to IEC 61131-3).
-
 4. After successful conversion, an event is generated at the output `CNF` of the internal function block.
-
 5. This event is passed to plug `AUDI_OUT` (event output `E1`), and simultaneously the converted UDINT value is available at data output `D1`.
 
 This event is passed to plug `AUDI_OUT` (event output `E1`), and the converted UDINT value is simultaneously available at data output `D1`.
@@ -65,6 +63,7 @@ This event is passed to plug `AUDI_OUT` (event output `E1`), and the converted U
 - `Convert.OUT` → `AUDI_OUT.D1`
 
 ## Technical Features
+
 - **Composite Block:** Simplifies the reuse and encapsulation of the conversion logic.
 - **Standard Conversion:** Uses the IEC 61131-3 block `F_INT_TO_UDINT`, which ensures clean and portable type conversion.
 - **Unidirectional Adapters:** Both the input and output adapters are implemented as unidirectional interfaces (socket and plug, respectively) – data flows in only one direction.
@@ -75,6 +74,7 @@ This event is passed to plug `AUDI_OUT` (event output `E1`), and the converted U
 The function block itself does not have its own state machine, as it consists solely of a direct chain of adapter ports and the internal conversion block. The internal function block `F_INT_TO_UDINT` performs the conversion in one step – therefore, a state overview is not required.
 
 ## Application Scenarios
+
 - **Data Bridge Between Different Adapter Types:** When a higher-level system or library provides adapters of type `AI` (with INT data), but downstream components expect a `AUDI` adapter (with UDINT data).
 - **Signal Conversion in Automation Solutions:** For example, when processing counter values or position data that arrive as signed 16-bit values but must be passed on as unsigned 32-bit values.
 - **Modular Adapter Conversion:** Easily replace or extend the conversion logic by replacing the internal function block.
@@ -96,6 +96,7 @@ The `AI_TO_AUDI` composite block offers a simple yet clean solution for converti
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

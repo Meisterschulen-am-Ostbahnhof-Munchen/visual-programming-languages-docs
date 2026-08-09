@@ -6,23 +6,29 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsbaustein `UINT_AUI_AX_SEL_AUI` ist ein binärer Selektor (Auswahlbaustein), der ereignisgesteuert zwischen zwei Eingangssignalen wählt und das Ergebnis an einen Ausgang weiterleitet. Das Besondere an diesem Baustein ist die Kombination aus klassischen IEC 61499-Schnittstellen (Standarddaten und -ereignisse) und adapterbasierten Verbindungen. Dies ermöglicht eine nahtlose Integration und saubere Strukturierung von Signalflüssen in komplexen Steuerungsanwendungen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *   **EI0**: Löst die Übernahme und Aktualisierung des direkt anliegenden Daten-Eingangs `IN0` aus. (Verknüpft mit `IN0`).
 
 ### **Ereignis-Ausgänge**
+
 *   *Keine direkten Ereignis-Ausgänge vorhanden.* (Die Ereignisweiterleitung erfolgt gekoppelt über den Ausgangs-Adapter `OUT`).
 
 ### **Daten-Eingänge**
+
 *   **IN0** (UINT): Auswählbarer Eingangskanal 0 (Standard-Datenvariable).
 
 ### **Daten-Ausgänge**
+
 *   *Keine direkten Daten-Ausgänge vorhanden.* (Die Datenweitergabe erfolgt über den Ausgangs-Adapter `OUT`).
 
 ### **Adapter**
+
 *   **IN1** (Socket, Typ `adapter::types::unidirectional::AUI`): Auswählbarer Eingangskanal 1 via Adapter-Verbindung.
 *   **G** (Socket, Typ `adapter::types::unidirectional::AX`): Der Selektor-Eingang via Adapter. Bestimmt, welcher der beiden Kanäle auf den Ausgang durchgeschaltet wird.
 *   **OUT** (Plug, Typ `adapter::types::unidirectional::AUI`): Der selektierte Ausgangs-Adapter, welcher das ausgewählte Signal und das dazugehörige Ereignis weiterleitet.
@@ -30,6 +36,7 @@ Der Funktionsbaustein `UINT_AUI_AX_SEL_AUI` ist ein binärer Selektor (Auswahlba
 ---
 
 ## Funktionsweise
+
 Der Baustein basiert intern auf einem Netzwerk aus Standard-Auswahl- und Speicherbausteinen:
 
 1.  **Latching (Signalspeicherung):** 
@@ -61,6 +68,7 @@ IN1 ---> [  IN1 ] -------/       ^                  |
 ---
 
 ## Technische Besonderheiten
+
 *   **Mischbetrieb von Schnittstellen:** Der Baustein fungiert als Brücke zwischen der klassischen IEC 61499-Ereignis-/Datenwelt (`IN0`/`EI0`) und modernen, adapterbasierten Verbindungskonzepten.
 *   **Ereignisentkopplung:** Durch die interne Pufferung führt nicht jede minimale Schwankung an den Eingängen zu unkontrollierten Zustandsänderungen. Erst das entsprechende Ereignis validiert den neuen Wert.
 *   **Konsistenz:** Da alle Pfade über D-Flipflops synchronisiert sind, ist sichergestellt, dass Daten und Ereignisse am Ausgang `OUT` stets konsistent anliegen.
@@ -77,6 +85,7 @@ IN1 ---> [  IN1 ] -------/       ^                  |
 ---
 
 ## Anwendungsszenarien
+
 *   **Hand-/Automatik-Umschaltung:** Ein Prozesswert kann entweder manuell über ein lokales HMI (vorgegeben an `IN0`) oder automatisiert über ein Bussystem / eine überlagerte Steuerung (geliefert über den Adapter `IN1`) vorgegeben werden. Der Selektor `G` schaltet zwischen den Modi um.
 *   **Parametrierbare Standardwerte:** Vorgabe eines Default-Werts direkt an `IN0` für den Initialisierungs- oder Fehlerfall, während im Normalbetrieb dynamische Daten über den Adapter `IN1` eingespielt werden.
 *   **Redundante Signalpfade:** Umschalten auf einen Ersatzkanal beim Ausfall eines Primärsensors.
@@ -84,10 +93,12 @@ IN1 ---> [  IN1 ] -------/       ^                  |
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 *   **`F_SEL` (Standard-Selektor):** Arbeitet rein wertbasiert und besitzt keine integrierte Ereignissteuerung oder Adapter-Unterstützung.
 *   **Standard-Multiplexer (`MUX`):** Erlauben meist das Umschalten vieler Kanäle, bieten jedoch keine native Integration von unidirektionalen Adaptern wie `AUI` und `AX`.
 
 ---
 
 ## Fazit
+
 Der `UINT_AUI_AX_SEL_AUI` ist ein extrem nützlicher Hilfsbaustein für modulare 4diac-Architekturen. Er vereinfacht das Signalrouting bei der Verwendung von Adaptern und garantiert durch seine interne ereignisgesteuerte Speicherarchitektur eine robuste und deterministische Signalverarbeitung.

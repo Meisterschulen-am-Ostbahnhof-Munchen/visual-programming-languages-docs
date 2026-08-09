@@ -1,8 +1,10 @@
 # Exercise_006a3: SR and T Flip-Flop with 3x IE
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006a3`. This is a more complex application for controlling a motor with two directions of rotation and automatic switching.
 ----
 ## Objective of the Exercise
+
 To build a control system for forward and reverse operation with software interlock. It must be ensured that both directions can never be controlled simultaneously.
 
 -----
@@ -25,11 +27,8 @@ To build a control system for forward and reverse operation with software interl
 ## Functionality
 
 1. The user starts the system via `I1`, `I2`, or `I3`.
-
 2. The flip-flop provides a "Global On" signal.
-
 3. The sub-application `LinksRechts_T_FF` determines which branch is active.
-
 4. The AND gates allow the "On" signal to pass to only one of the two outputs.
 
 This circuit demonstrates how to solve complex decisions by combining basic functions (memory, logic gates, sub-applications).

@@ -1,8 +1,10 @@
 # Exercise_019a: Switching a Mask
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_019a`. Here, mask switching is extended to include a safety function: the alarm.
 ----
 ## Objective of the Exercise
+
 Learning how to work with alarm masks. In the ISOBUS standard, alarms take precedence over normal data masks and can often only be exited by an explicit acknowledgment (ACK).
 
 -----
@@ -25,11 +27,8 @@ Learning how to work with alarm masks. In the ISOBUS standard, alarms take prece
 ## Functionality
 
 1. The user can navigate as usual using `I1` and `I2`.
-
 2. If an error occurs (`I3`), the controller forces the display of `AlarmMask_A2`. The terminal then overlays the current view with the alarm message.
-
 3. Navigation via `I1/I2` is now ineffective or overridden by the alarm (depending on the terminal implementation).
-
 4. Only when the user presses the **ACK** softkey on the terminal does the controller switch back to the normal work interface (`M1`).
 
 -----

@@ -1,8 +1,10 @@
 # Exercise_222b: Standard IEC 61131-3 FB_CTUD_LINT (Up/Down Counter, LINT) with Terminal Output (PHYS_LREAL)
+
 ![Uebung_222b_network](./Uebung_222b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a standard-compliant IEC 61131-3 up/down counter with the data type **LINT** (64-bit integer). The counter is controlled via four digital inputs: count up (CU), count down (CD), reset (R), and load preset value (LD). The current counter value is output to two digital outputs (QU and QD) and, via a data type converter, as a physical floating-point value (LREAL) on a terminal. This allows the counter value to be monitored directly in the development environment during operation.
 ## Function Blocks (FBs) Used
 
@@ -21,7 +23,6 @@ This exercise implements a standard-compliant IEC 61131-3 up/down counter with t
 ## Program Flow and Connections
 
 1. **Event Chaining**
-
 - Each key press on one of the four inputs (Input_CU, Input_CD, Input_R, Input_LD) triggers the event `IND`.
 - These events are all routed to the event input `REQ` of the counter `FB_CTUD_LINT`.
 - After processing (event output `CNF`), the subsequent function blocks `Output_QU` and `Output_QD`, as well as the converter `F_LINT_TO_LREAL`, are triggered.
@@ -41,21 +42,15 @@ This exercise implements a standard-compliant IEC 61131-3 up/down counter with t
 * FB_CTUD_LINT.CV → F_LINT_TO_LREAL.IN
 * F_LINT_TO_LREAL.OUT → Q_NumericValue_PHYS_LREAL.lrPhys
 - The terminal thus displays the counter reading as a decimal floating-point number.
-
 3. **Learning Objectives**
-
 - Understanding the IEC 61131-3 CTUD function block (LINT).
 - Working with digital inputs/outputs in the logiBUS system.
 - Data type conversion from LINT to LREAL.
 - Visualizing process values via a terminal object.
-
 4. **Difficulty Level & Prior Knowledge**
-
 - **Difficulty:** Medium.
 - **Prior Knowledge:** Basic knowledge of the 4diac IDE, working with SubApp types, event and data connections, basic IEC 61131-3 knowledge.
-
 5. **Execution**
-
 - Load the exercise into the 4diac IDE.
 - Assign the corresponding logiBUS channels (Input_I1 … I4, Output_Q1, Q2).
 - Start the simulation or transfer it to the target hardware.
@@ -68,6 +63,7 @@ Exercise 222b demonstrates a complete IEC 61131-3 compliant forward/down counter
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

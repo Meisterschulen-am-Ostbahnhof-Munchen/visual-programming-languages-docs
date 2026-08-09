@@ -1,22 +1,23 @@
 # ALR_SPLIT_8
+
 ![ALR_SPLIT_8](./ALR_SPLIT_8.svg)
 
 * * * * * * * * * *
 The function block **ALR_SPLIT_8** is used to split a single ALR signal (via a socket) into eight identical ALR outputs (plugs). This block is designed as a generic function block and enables signal distribution within an IEC 61499-based controller.
 None
 
-None
-
-None
-
-None
-
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 #### **Adapter**
 
 | Name | Type | Direction | Description |
@@ -32,10 +33,10 @@ None
 | **OUT8** | `adapter::types::unidirectional::ALR` | Plug | Output 8 – Duplicated Signal |
 
 ## Functionality
+
 The function block forwards the ALR signal received via socket **IN** unchanged to all eight output adapters **OUT1** to **OUT8**. No data processing or time delay occurs – the signals are passed through directly. This allows multiple subsequent function blocks to be supplied with the same signal in parallel.
 
 - **Generic Type:** The function block is implemented as a generic function block (`GenericClassName = 'GEN_ALR_SPLIT'`), so the underlying ALR type can be specified during instantiation.
-
 - **Adapter-Based:** All communication occurs via adapters, ensuring loose coupling and easy reuse.
 
 The function block has no events and no internal state machine. Execution is strictly data flow-driven: If the signal at the input changes, it is immediately propagated to all outputs.
@@ -49,7 +50,11 @@ Other splitter function blocks (e.g., SPLIT_4 or SPLIT_16) differ only in the nu
 The **ALR_SPLIT_8** is a simple yet effective functional block for multiplying an ALR signal to eight outputs. Its generic nature, adapter-based interface, and passive operation make it a robust and flexible component for IEC 61499 applications.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

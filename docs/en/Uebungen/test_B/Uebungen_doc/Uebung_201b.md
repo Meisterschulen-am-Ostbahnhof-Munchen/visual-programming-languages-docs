@@ -1,8 +1,10 @@
 # Exercise_201b: Interlock: ILOCK_BLOCK (Motor with Forward/Reverse Rotation and Low-Side Driver)
+
 ![Uebung_201b_network](./Uebung_201b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an **interlock circuit** for a motor with forward and reverse rotation. Additionally, a **low-side driver** is controlled. The interlock prevents both directions from being active simultaneously. The logic is based on the special function block `ILOCK_BLOCK`.
 ## Function Blocks Used
 
@@ -38,7 +40,6 @@ The event outputs `.IND` trigger the corresponding event inputs of the interlock
 
 - `I1.IND` → `ILOCK.EI_UP`
 - `I2.IND` → `ILOCK.EI_DOWN`
-
 2. **Interlock Logic**
 
 The block `ILOCK` evaluates the data inputs `DI_UP` and `DI_DOWN`. It ensures that both outputs `DO_UP` and `DO_DOWN` are never **TRUE** simultaneously.
@@ -46,12 +47,10 @@ The block `ILOCK` evaluates the data inputs `DI_UP` and `DI_DOWN`. It ensures th
 The events `EO_UP` and `EO_DOWN` signal when a direction is activated.
 
 3. **Output Control**
-
 - `ILOCK.EO_UP` and the data signal `DO_UP` control the **clockwise** output (Q5).
 - `ILOCK.EO_DOWN` and `DO_DOWN` control the **counterclockwise** output (Q6).
 - Both events `EO_UP` and `EO_DOWN` are connected to the OR gate `OR_2_BOOL`. As soon as one direction is active, the OR gate triggers the **LowSide Driver** (Q56).
 - Simultaneously, the data signals `DO_UP` and `DO_DOWN` are fed to the inputs `IN1` and `IN2` of the OR gate. The output `OR_2_BOOL.OUT` feeds the data input of the LowSide Driver.
-
 4. **Interrelationship**
 
 The LowSide Driver is only activated when either clockwise or counterclockwise rotation is active. This ensures that the motor's power supply is only enabled in these states.
@@ -74,6 +73,7 @@ This exercise demonstrates the safe control of a motor with clockwise/counterclo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

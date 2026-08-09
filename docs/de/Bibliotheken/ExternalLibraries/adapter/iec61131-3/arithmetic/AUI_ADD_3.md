@@ -13,25 +13,31 @@ Der Funktionsbaustein `AUI_ADD_3` ist ein generischer arithmetischer Funktionsba
 Die Schnittstellen von `AUI_ADD_3` basieren vollständig auf Adaptern, um eine saubere Strukturierung der Signale zu gewährleisten.
 
 ### **Ereignis-Eingänge**
+
 *Es sind keine direkten Ereignis-Eingänge definiert.* Die Ereignissteuerung wird implizit über die Eingangs-Adapter (Sockets) abgewickelt.
 
 ### **Ereignis-Ausgänge**
+
 *Es sind keine direkten Ereignis-Ausgänge definiert.* Die Ereignisweiterleitung erfolgt implizit über den Ausgangs-Adapter (Plug).
 
 ### **Daten-Eingänge**
+
 *Es sind keine direkten Daten-Eingänge definiert.* Die Daten werden über die Eingangs-Adapter bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 *Es sind keine direkten Daten-Ausgänge definiert.* Das Ergebnis wird über den Ausgangs-Adapter bereitgestellt.
 
 ### **Adapter**
 
 #### Sockets (Eingangs-Adapter)
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUI`): Erster Eingangswert (Summand 1) für die arithmetische Addition.
 * **IN2** (Typ: `adapter::types::unidirectional::AUI`): Zweiter Eingangswert (Summand 2) für die arithmetische Addition.
 * **IN3** (Typ: `adapter::types::unidirectional::AUI`): Dritter Eingangswert (Summand 3) für die arithmetische Addition.
 
 #### Plugs (Ausgangs-Adapter)
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUI`): Ausgang für das berechnete Ergebnis (Summe aus `IN1 + IN2 + IN3`).
 
 ---

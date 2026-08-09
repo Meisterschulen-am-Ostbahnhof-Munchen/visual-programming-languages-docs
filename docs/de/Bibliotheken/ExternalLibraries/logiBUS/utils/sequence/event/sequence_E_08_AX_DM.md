@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Ablaufsteuerung mit acht sequenziell zu schaltenden Ausgängen. Er basiert auf einem endlichen Automaten mit neun Zuständen und ermöglicht den Wechsel zwischen den Zuständen durch explizite Ereignisse. Ein integrierter Totmannschalter (Deadman, DM) erlaubt die Überwachung und das kontrollierte Zurücksetzen der Ausgänge. Der FB ist speziell für den Einsatz in sicherheitskritischen oder überwachten Steuerungsabläufen in der Agrartechnik konzipiert.
 
 ## Schnittstellenstruktur
@@ -30,6 +31,7 @@ Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Abla
 | `CNF` | `STATE_NR` | Bestätigung der Zustandsänderung; liefert gleichzeitig die aktuelle Zustandsnummer |
 
 ### **Daten-Eingänge**
+
 Keine Daten-Eingänge vorhanden.
 
 ### **Daten-Ausgänge**
@@ -53,6 +55,7 @@ Keine Daten-Eingänge vorhanden.
 | Socket | `DM` | unidirectional::AX | Totmannschalter (Deadman); liefert das Ereignis `DM.E1` und den Datenwert `DM.D1` |
 
 ## Funktionsweise
+
 Der Funktionsblock arbeitet als endlicher Automat mit folgenden Zuständen: `xSTART` (Initial), `sState_01` bis `sState_08` (aktive Sequenzzustände), `sState_00` (Start-/Wartezustand nach Sequenzende) und `sRESET` (Zwischenzustand für Rücksetzung).
 
 - **Start und Ablauf**: Nach dem Start befindet sich der Automat im Zustand `xSTART`. Durch das Ereignis `START_S1` wird in den Zustand `sState_01` gewechselt. Von dort aus führen die Ereignisse `S1_S2`, `S2_S3`, … bis `S7_S8` sequenziell durch die acht Zustände. Der letzte Zustand `sState_08` wird durch `S8_START` in den Zustand `sState_00` überführt, der als Ruhepunkt nach der Sequenz dient und wiederholt über `START_S1` gestartet werden kann.
@@ -62,6 +65,7 @@ Der Funktionsblock arbeitet als endlicher Automat mit folgenden Zuständen: `xST
 - **Bestätigung**: Bei jedem Zustandswechsel (außer innerhalb von `sRESET`) wird das Ereignis `CNF` mit der aktuellen Zustandsnummer `STATE_NR` ausgegeben. Die Zustandsnummer wird über die Konstanten `sequence::State_00` bis `sequence::State_08` gesetzt.
 
 ## Technische Besonderheiten
+
 - **Adapterbasierte Ausgänge**: Alle acht Ausgänge sowie der Totmannschalter sind als unidirektionale AX-Adapter implementiert. Dies ermöglicht eine flexible Anbindung an externe Hardware (z. B. analoge oder digitale Aktoren) über den Adapterrahmen.
 - **Wiederverwendbare Sequenzkonstanten**: Die Zustandsnummern werden aus einer separaten Bibliothek (`logiBUS::utils::sequence::const::sequence`) bezogen, was eine konsistente Nummerierung über verschiedene Sequenzbausteine hinweg erlaubt.
 - **Deadman-Integration**: Der Totmannschalter wirkt nicht als Sperre, sondern als dynamischer Wertegeber für die Ausgänge. Jeder Zustand übernimmt bei Eintritt den aktuellen Wert von `DM.D1` und kann durch wiederholtes `DM.E1`-Ereignis aktualisiert werden.
@@ -84,15 +88,18 @@ Der Funktionsblock arbeitet als endlicher Automat mit folgenden Zuständen: `xST
 | `sRESET` | Rückstellzustand | alle deaktiviert | Automatisch → `sState_00` |
 
 ## Anwendungsszenarien
+
 - **Landwirtschaftliche Steuerungen**: Schrittweises Ansteuern von acht Ventilen, Antrieben oder Beleuchtungseinheiten, z. B. für Bewässerungssequenzen oder Erntemaschinen.
 - **Sicherheitsüberwachte Prozesse**: Einsatz in Anlagen, die einen Totmannschalter erfordern – der Bediener muss durch wiederholtes Betätigen des Deadman die Ausgänge aktiv halten.
 - **Test- und Prüfstände**: Sequenzielle Aktivierung von Prüfschritten mit manueller Freigabe durch den Bediener (über die Ereignisse).
 - **Modulare Ablaufsteuerung**: Kombination mehrerer `sequence_E_08_AX_DM`-Bausteine für umfangreichere Sequenzen mit mehr als acht Schritten.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **`sequence_E_08_AX` (ohne Deadman)**: Besitzt keinen Totmannschalter – die Ausgänge werden beim Eintritt dauerhaft aktiviert (z. B. mit `TRUE`) und nur beim Verlassen deaktiviert. Geeignet für unkritische Steuerungen.
 - **`sequence_E_04_AX_DM`**: Vierstufige Variante mit entsprechend weniger Ausgängen und Ereignissen. Bietet identische Deadman-Funktionalität.
 - **`sequence_T_08_AX_DM`**: Zeitgesteuerte Variante – die Zustandsübergänge erfolgen über Timer anstatt über externe Ereignisse. Vergleichbare Deadman-Integration.
 
 ## Fazit
+
 Der Funktionsblock `sequence_E_08_AX_DM` ist eine leistungsfähige und sichere Komponente für ereignisgesteuerte Abläufe mit bis zu acht Schritten. Die Integration eines Totmannschalters erhöht die Betriebssicherheit, indem sie erzwungene Bedienerinteraktion verlangt. Die adapterbasierte Ausgangsschnittstelle erlaubt eine einfache Anbindung an unterschiedliche Aktorik. Dank der klar strukturierten Zustandsmaschine und der expliziten Rücksetzmöglichkeit eignet sich dieser Baustein besonders für sicherheitsrelevante Steuerungsaufgaben in der Agrartechnik und darüber hinaus.

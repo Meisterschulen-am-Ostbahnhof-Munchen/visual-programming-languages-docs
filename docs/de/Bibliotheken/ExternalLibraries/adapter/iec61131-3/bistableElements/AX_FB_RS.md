@@ -13,15 +13,19 @@ Der Funktionsbaustein **AX_FB_RS** realisiert ein bistabiles Kippglied mit vorra
 Da dieser Baustein ausschließlich auf Adaptern basiert, sind die klassischen Ereignis- und Daten-Ein-/Ausgänge leer. Die Kommunikation erfolgt vollständig über die definierten Plugs und Sockets.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
@@ -88,4 +92,5 @@ Der **AX_FB_RS** ist eine moderne, adapterbasierte Implementierung des klassisch
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

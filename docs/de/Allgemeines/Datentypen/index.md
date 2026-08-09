@@ -1,6 +1,7 @@
 # 💾 Datentypen (Übersicht)
 
 ### Zusammenfassung der Kategorien
+
 Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 
 - **Bit-Datentypen**: BOOL, BYTE, WORD, DWORD, LWORD

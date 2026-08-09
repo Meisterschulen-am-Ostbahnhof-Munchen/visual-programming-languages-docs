@@ -1,8 +1,10 @@
 # E_R_TRIG (Rising Edge Detection)
+
 ![E_R_TRIG Funktionsbaustein](https://user-images.githubusercontent.com/113907528/204903134-9fbf33a3-4041-428e-9a9a-10a573c0b6f2.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **E_R_TRIG** (Rising Edge Trigger) is a fundamental function block according to IEC 61499 for detecting rising edges in digital signals. Based on the XML specification, it implements reliable edge detection for industrial control systems.
 ![E_R_TRIG](E_R_TRIG.svg)
 
@@ -23,22 +25,19 @@ The **E_R_TRIG** (Rising Edge Trigger) is a fundamental function block according
 - `QI` (Query Input): Input signal to be monitored (BOOL)
 
 ### **Internal Structure**
+
 According to the XML specification, the block consists of:
 
 1. **E_D_FF**: D flip-flop for signal state storage
-
 2. **E_SWITCH**: Switch for conditional Event Forwarding
 
 ## Functionality
 
 1. **Edge Detection**:
-
 - With each `EI` event, the current `QI` value is compared with the stored state from the previous cycle.
 - A rising edge occurs when `QI` transitions from `FALSE` to `TRUE`.
 - Upon detection of such an edge, the `EO` event should be triggered.
-
 2. **Internal Structure and Faulty Behavior**:
-
 - The function block is internally composed of a `E_D_FF` and a `E_SWITCH`.
 - **Caution: Faulty Implementation!** The internal logic of the function block (as of `events-3.0.0`) is faulty and actually implements a **falling edge detector (`E_F_TRIG`)** instead of a rising one.
 - The `EO` event is triggered when `QI` transitions from `TRUE` to `FALSE`.
@@ -52,6 +51,7 @@ According to the XML specification, the block consists of:
 ✔ **Faulty Logic**: The function block is named `E_R_TRIG` (Rising), but its internal wiring causes it to react to a **falling edge**. Users who require rising edge detection must use the logic of the `E_F_TRIG` function block, which ironically correctly detects a rising edge.
 
 ## Application Scenarios (for a rising edge)
+
 - **Sensor Data Evaluation**: Detect when a sensor changes from "inactive" to "active".
 - **Machine Safety**: Detect a start or enable signal.
 - **Process Control**: Start a process when a signal becomes `TRUE`.
@@ -65,6 +65,7 @@ According to the XML specification, the block consists of:
 | Memory Behavior | Yes | Yes | Yes |
 
 ## 🛠️ Related Exercises
+
 * [Exercise_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)]
 
 ## Conclusion

@@ -13,15 +13,19 @@ Der Funktionsbaustein `AR_SUB_2` dient zur Durchführung einer arithmetischen Su
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Dieser Funktionsbaustein besitzt keine direkten, diskreten Ereignis-Eingänge. Die Ereignissteuerung wird über die angeschlossenen Adapter realisiert.
 
 ### **Ereignis-Ausgänge**
+
 Dieser Funktionsbaustein besitzt keine direkten, diskreten Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt gekapselt über den Ausgangs-Adapter.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden. Die Eingangsdaten werden über die Adapter-Eingänge empfangen.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden. Das Berechnungsergebnis wird über den Adapter-Ausgang bereitgestellt.
 
 ### **Adapter**

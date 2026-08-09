@@ -1,8 +1,10 @@
 # Exercise_002a4b: DigitalInput_I1/_I2 with AND_BOOL and Negate on DigitalOutput_Q1
+
 ![Uebung_002a4b_network](./Uebung_002a4b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the basic linking of digital inputs with an **AND** function block, as well as the negation of an input signal. The result is routed to a digital output.
 The goal is to understand the configuration and interconnection of input/output blocks of the **logiBUS** family with an **IEC 61131** standard block.
 
@@ -18,6 +20,7 @@ The exercise consists of the following function blocks used directly in the netw
 | **DigitalOutput_Q1** | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` |
 
 ### Brief description of the function blocks used
+
 - **logiBUS_IX**: Reads a digital input of the logiBUS hardware. The parameter `Input` specifies the physical connection (e.g., I1, I2). A new value is signaled via the event output `IND`.
 - **AND_2_BOOL**: Performs an AND operation on two Boolean signals (type `iec61131::bitwiseOperators::AND_2_BOOL`). The output `OUT` is `TRUE` if and only if both inputs are `TRUE`.
 - **logiBUS_QX**: Sets a digital output of the logiBUS hardware. The parameter `Output` determines the output channel (e.g., Q1). The output is controlled by the event `REQ`.
@@ -27,15 +30,12 @@ The exercise consists of the following function blocks used directly in the netw
 The logic of the exercise is structured as follows:
 
 1. The digital inputs **I1** and **I2** are read via the function blocks `DigitalInput_I1` and `DigitalInput_I2`.
-
 2. The signal from **I2** is **negated** (inverted). This is done via a **Negate Connection** (attribute `Negated = "true"`) on the data connection between `DigitalInput_I2.IN` and `AND_2_BOOL.IN2`.
 
 `` *(Negation is only possible with Boolean data types.)*
 
 3. The function block `AND_2_BOOL` combines the signal from **I1** (to `IN1`) with the negated signal from **I2** (to `IN2`) using an AND operation.
-
 4. The result (`AND_2_BOOL.OUT`) is passed to the data input `OUT` of the output function block `DigitalOutput_Q1`.
-
 5. Event control:
 
 Each of the two input function blocks triggers the event `IND` when a new value is received.
@@ -64,6 +64,7 @@ Exercise **Exercise_002a4b** implements a simple AND gate with a negated second 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

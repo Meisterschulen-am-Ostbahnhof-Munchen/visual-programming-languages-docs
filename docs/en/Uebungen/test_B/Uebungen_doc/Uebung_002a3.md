@@ -1,8 +1,10 @@
 # Exercise_002a3: DigitalInput_I1/_I2 with OR on DigitalOutput_Q1
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_002a3`. In this exercise, a logical OR gate is implemented, in which a digital output is activated as soon as at least one of two digital inputs is in the "True" (HIGH) state.
 ----
 ## Objective of the Exercise
+
 The main objective of this exercise is to demonstrate the functionality of an OR gate in automation technology. It shows how alternative conditions (inputs) can be used to trigger the same action (output). This is a standard requirement for systems that must be operable from multiple locations.
 
 -----
@@ -39,11 +41,8 @@ The logic is defined by the interconnection of event and data connections. The s
 The process follows this logic:
 
 1. Any change to the buttons `I1` or `I2` triggers a `IND` event.
-
 2. Both events are connected to the `REQ` port of `OR_2`. This means that regardless of which button is pressed, the logic is recalculated.
-
 3. `OR_2` checks the states: If at least one input has the value `TRUE`, the output `OUT` also becomes `TRUE`.
-
 4. The `CNF` event instructs the function block `DigitalOutput_Q1` to update the hardware output `Q1`.
 
 -----

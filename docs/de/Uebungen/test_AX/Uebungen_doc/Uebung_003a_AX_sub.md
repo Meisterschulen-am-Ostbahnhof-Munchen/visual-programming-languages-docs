@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XM
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung behandelt eine Sub-Application (`SubAppType`), die eine generische Verbindung zwischen einem logiBUS-Eingang und einem logiBUS-Ausgang herstellt. Der Baustein dient dazu, ein Signal von einem definierten Hardware-Eingang direkt auf einen definierten Hardware-Ausgang durchzuschleifen (Mapping von IX auf QX).
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Diese Übung behandelt eine Sub-Application (`SubAppType`), die eine generische 
 In dieser Übung wird eine Sub-Application definiert, die intern auf spezifische Hardware-Treiberbausteine des logiBUS-Systems zugreift.
 
 ### Sub-Bausteine: Uebung_003a_AX_sub
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
     - **QX**: `logiBUS::io::DQ::logiBUS_QXA`
@@ -51,4 +53,5 @@ Der Ablauf innerhalb der Sub-Application gestaltet sich wie folgt:
 - Einsatz von Adapterverbindungen zur direkten Kopplung von Hardware-Abstraktionsschichten.
 
 ## Zusammenfassung
+
 Die `Uebung_003a_AX_sub` stellt einen wiederverwendbaren Baustein dar, der als "Durchgangsverbinder" fungiert. Er liest einen spezifizierten digitalen Eingang und schreibt dessen Zustand direkt auf einen spezifizierten digitalen Ausgang, ohne dass dazwischen eine weitere logische Verarbeitung stattfindet. Dies eignet sich hervorragend für einfache I/O-Tests oder direkte Hardware-Verknüpfungen.

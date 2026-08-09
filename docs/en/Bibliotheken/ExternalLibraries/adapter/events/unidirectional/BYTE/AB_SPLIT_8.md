@@ -1,8 +1,10 @@
 # AB_SPLIT_8
+
 ![AB_SPLIT_8](./AB_SPLIT_8.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AB_SPLIT_8** is used to multiply an incoming adapter signal of type `AB` into eight identical outputs. It functions as a passive splitter for unidirectional data exchange via the standardized interface `adapter::types::unidirectional::AB`. The block is designed as a generic function block and is typically used in automation technology to forward an AB signal in parallel to multiple downstream components.
 ## Interface Structure
 
@@ -54,12 +56,14 @@ The distribution is independent of the internal structure of the AB adapter (e.g
 The **AB_SPLIT_8** has no internal states or state machines. Signal transmission occurs without delay and without dependence on sequential logic.
 
 ## Application Scenarios
+
 - **Distributing a single AB sensor signal** to multiple actuators or controllers.
 - **Parallel connection of monitoring units** in agricultural technology (e.g., distributing an acknowledge signal).
 - **Extension of control cabinet wiring** through software-based signal multiplication.
 - **Test environments** where an AB signal is to be sent simultaneously to multiple analysis function blocks (FBs).
 
 ## Comparison with similar function blocks
+
 - **`AB_SPLIT_2`, `AB_SPLIT_4`**: These function blocks distribute the signal to two or four outputs, respectively. The `AB_SPLIT_8` offers the maximum of eight outputs in a single FB.
 - **`DATA_SPLIT`**: Distributes arbitrary data types (e.g., `INT`, `BOOL`). The `AB_SPLIT_8` function block is specifically designed for the `AB` adapter type and retains the complete adapter structure.
 - **`EC_SPLIT`**: An event splitter that only multiplies events, but not data. In contrast, `AB_SPLIT_8` operates at the adapter level, including all data and events it contains.
@@ -68,10 +72,10 @@ The **AB_SPLIT_8** has no internal states or state machines. Signal transmission
 
 The **AB_SPLIT_8** function block is a simple yet effective block for multiplying a unidirectional AB adapter signal. Its generic design and passive operation make it ideal for parallelizing control and monitoring signals in automation technology. The absence of state logic ensures low runtime complexity and high reliability. This function block is a valuable addition to any 4diac library that relies on adapter communication.
 
-
 The **AB_SPLIT_8** function block is a simple yet effective block for multiplying a unidirectional AB adapter signal. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
 

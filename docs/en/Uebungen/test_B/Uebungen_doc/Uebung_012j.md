@@ -1,8 +1,10 @@
 # Exercise_012j: String Input and Storage in INI
+
 ![Uebung_012j_network](./Uebung_012j_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the processing and storage of a string value using an **INI function block**.
 The goal is to persistently store a string read from a fieldbus object (ISOBUS) in an INI data structure and then retrieve it.
 
@@ -11,6 +13,7 @@ The configuration uses predefined constants for the memory location (`SECTION_S1
 ## Function Blocks (FBs) Used
 
 ### FB: `StringValue_IS`
+
 - **Type**: `isobus::UT::io::StringValue::StringValue_IS`
 - **Parameters**:
 - `QI` = `TRUE` (active)
@@ -26,6 +29,7 @@ Reads the string value from the specified The ISOBUS object ID (`InputString_S1`
 The system outputs the ISOBUS object ID (`InputString_S1`) and the output `IN`, as well as an event `IND`.
 
 ### FB: `INI`
+
 - **Type**: `eclipse4diac::storage::INI`
 - **Parameters**:
 - `QI` = `TRUE` (active)
@@ -44,6 +48,7 @@ The function block manages a persistent string value in INI format. Upon the eve
 
 The event `GET` is executed when the event occurs.
 ### FB: `Q_StringValue`
+
 - **Type**: `isobus::UT::Q::Q_StringValue`
 - **Parameters**:
 - `u16ObjId` = `InputString_S1` (Object ID – not used directly here, but for context)
@@ -74,16 +79,14 @@ After the read operation, `INI` outputs the event `GETO`. This triggers the `REQ
 When `StringValue_IS` receives a new string from the ISOBUS object, it sends the event `IND`. This event is connected to the `SET` input of `INI`, so the new value is saved.
 
 ### Data Connections
+
 - The output `IN` of `StringValue_IS` is connected to the data input `VALUE` of `INI` – the read string is passed on for storage.
 - The output `VALUEO` of `INI` is connected to the data input `pau8String` of `Q_StringValue` – the read string is then made available for output.
 
 ### Flowchart (Simplified)
 
 1. **Start**: `INI` initializes → `INITO` → `GET` → reads stored value → `GETO` → `Q_StringValue.REQ` → outputs the stored string.
-
-
 1. **Start**: `INI` initializes → `INITO` → `GET` → reads stored value → `GETO` → `Q_StringValue.REQ` → outputs stored string. 2. **New Input**: `StringValue_IS` receives a new string → `IND` → `INI.SET` → stores the new value.
-
 3. After another input from `GET` (e.g., via a cyclic trigger), the currently stored value is output.
 
 ## Summary
@@ -99,6 +102,7 @@ The use of constants (`SECTION_S1_STORE`, `KEY_S1_STORE`, `InputString_S1`) ensu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

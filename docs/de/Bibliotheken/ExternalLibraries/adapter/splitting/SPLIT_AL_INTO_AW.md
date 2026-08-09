@@ -10,9 +10,11 @@ Der Funktionsblock **SPLIT_AL_INTO_AW** dient dazu, eine über einen AL-Adapter 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **IN.E1** (Ereignis) – Wird über den Socket **IN** empfangen und startet den Aufteilungsvorgang.
 
 ### **Ereignis-Ausgänge**
+
 - **WORD_00.E1** – Wird über den Plug **WORD_00** ausgegeben.  
 - **WORD_01.E1** – Wird über den Plug **WORD_01** ausgegeben.  
 - **WORD_02.E1** – Wird über den Plug **WORD_02** ausgegeben.  
@@ -21,9 +23,11 @@ Der Funktionsblock **SPLIT_AL_INTO_AW** dient dazu, eine über einen AL-Adapter 
 Jeder Ereignisausgang wird parallel aktiviert, sobald die Aufteilung abgeschlossen ist.
 
 ### **Daten-Eingänge**
+
 - **IN.D1** (LWORD) – Die 64‑Bit‑Eingangsgröße, die aufgeteilt werden soll. Bereitgestellt über den Socket **IN**.
 
 ### **Daten-Ausgänge**
+
 - **WORD_00.D1** (WORD) – Das niederwertigste Wort (Bits 0–15).  
 - **WORD_01.D1** (WORD) – Das zweite Wort (Bits 16–31).  
 - **WORD_02.D1** (WORD) – Das dritte Wort (Bits 32–47).  
@@ -32,6 +36,7 @@ Jeder Ereignisausgang wird parallel aktiviert, sobald die Aufteilung abgeschloss
 Jeder Ausgang wird durch einen flankengesteuerten Speicher (E_D_FF_ANY) bereitgestellt und bleibt bis zum nächsten Aufteilungsvorgang stabil.
 
 ### **Adapter**
+
 - **Socket IN** – Typ: `adapter::types::unidirectional::AL` (LWORD)  
 - **Plugs WORD_00 … WORD_03** – Typ: `adapter::types::unidirectional::AW` (WORD)
 

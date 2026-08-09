@@ -10,15 +10,19 @@ Der Funktionsblock **AD_D_FF** realisiert ein **Data-Latch (D‑Flipflop)**. Er 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine direkten Ereignis-Eingänge. Der FB verwendet ausschließlich den **Eingangsadapter `I`**, der über seinen internen Ereigniskanal das Taktsignal liefert.
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge. Der FB verwendet ausschließlich den **Ausgangsadapter `Q`**, der über seinen internen Ereigniskanal signalisiert, dass ein neuer Datenwert bereitsteht.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge. Der zu latchende Wert wird über den **Datenkanal des Eingangsadapters `I`** bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Der latched Wert wird über den **Datenkanal des Ausgangsadapters `Q`** zur Verfügung gestellt.
 
 ### **Adapter**
@@ -75,4 +79,5 @@ Der **AD_D_FF** ist ein schlanker, adapterbasierter D‑Flipflop‑Baustein für
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,10 @@
 # ASR_AX_SWITCH
+
 ![ASR_AX_SWITCH](./ASR_AX_SWITCH.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ASR_AX_SWITCH** serves as a demultiplexer for asynchronous set/reset events (ASR). It forwards an incoming SET or RESET event, based on the state of a binary control input **G**, to either one of two outputs (**EO0** or **EO1**). This block enables demand-based distribution of control signals in automation applications.
 ## Interface Structure
 
@@ -54,6 +56,7 @@ The function block operates in an event-driven manner. After startup, it is in t
 Processing is deterministic without intermediate event storage.
 
 ## Technical Features
+
 - **Adapter-based communication**: The function block uses only adapters (sockets/plugs) for event and data exchange – this enables flexible integration within the 4diac IDE.
 - **No state storage**: The selection of the target channel is purely combinatorial at the time of the incoming event. No internal state is maintained.
 - **Full synchronicity**: After each output event, the function block returns to its initial state – events cannot be stacked.
@@ -72,6 +75,7 @@ Processing is deterministic without intermediate event storage.
 State transitions follow the ECC scheme: A condition leads from START to the action state, and from there, without further conditions, immediately back to START.
 
 ## Application Scenarios
+
 - **Channel Switching**: In a modular controller, a central set/reset command should be forwarded to different actuators (e.g., valves, motors) depending on the operating mode.
 - **Safety Logic**: Depending on an enable signal (`G`), resets are only routed to the active channel.
 - **Redundancy Control**: The signal `G` selects between the main and backup channels.
@@ -96,6 +100,7 @@ The **ASR_AX_SWITCH** is a compact, efficient demultiplexer for the directed rou
 **ASR_AX_SWITCH** ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

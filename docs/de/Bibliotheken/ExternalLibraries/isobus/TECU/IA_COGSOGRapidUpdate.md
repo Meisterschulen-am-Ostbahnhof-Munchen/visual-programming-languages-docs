@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NMEA 2000 PGN 129026 Messages „Course Over Ground (COG)“ und „Speed Over Ground (SOG)“ mit Unterstützung für schnelle Aktualisierungen (Rapid Update). Er entkoppelt die ISOBUS-Kommunikation und stellt die empfangenen Navigationsdaten sowie einen Timeout-Status über standardisierte Adapter-Schnittstellen bereit. Der Baustein wurde auf Basis der Eclipse Public License 2.0 entwickelt und ist für den Einsatz in landwirtschaftlichen Steuerungssystemen (TECU) optimiert.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ | Kommentar |
@@ -43,6 +45,7 @@ Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NM
 | COG_REF | adapter::types::unidirectional::AB | Referenz für den Kurs (z. B. True/Magnetic) |
 
 ## Funktionsweise
+
 1. **Initialisierung**  
    Durch ein Ereignis an **INIT** wird der Baustein aktiviert. Der Eingang **QI** steuert den Start. Nach erfolgreicher Initialisierung wird **INITO** ausgelöst und die Ausgänge **QO** (TRUE bei Erfolg) und **STATUS** gesetzt.
 
@@ -61,12 +64,14 @@ Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NM
    Die Adapter **COG**, **SOG**, **SID** und **COG_REF** werden bei jedem gültigen Daten-Empfang gemeinsam getriggert (Ereignisverbindung `IND`). Der **TIMEOUT**-Adapter wird unabhängig davon bei Timeout ausgelöst.
 
 ## Technische Besonderheiten
+
 - **NMEA 2000 PGN 129026** – Der Baustein ist speziell für die Interpretation dieser PGN ausgelegt, die rapide Aktualisierungen von COG und SOG ermöglicht.
 - **Adapter statt direkter Ein-/Ausgänge** – Alle Navigationsdaten werden über unidirektionale Adapter (Typ `unidirectional::AUI`, `AX` etc.) bereitgestellt, was eine flexible Weiterverarbeitung und Kapselung in übergeordneten Netzwerken erlaubt.
 - **Lizenz und Herkunft** – Der Baustein ist unter der Eclipse Public License 2.0 verfügbar und wurde von **HR Agrartechnik GmbH** entwickelt (Version 1.0, 19.04.2026, Autor: Franz Höpfinger).
 - **Integration in isobus::tecu** – Der FB ist Bestandteil der Bibliothek `isobus::tecu` und setzt auf einer hardwarenahen ISOBUS-Implementierung auf.
 
 ## Zustandsübersicht
+
 Der Funktionsblock besitzt keine explizit modellierten Zustände, dennoch lassen sich folgende Betriebsphasen ableiten:
 
 | Zustand | Beschreibung |
@@ -78,13 +83,16 @@ Der Funktionsblock besitzt keine explizit modellierten Zustände, dennoch lassen
 | **Fehler** | Initialisierung fehlgeschlagen (STATUS = Fehlertext) |
 
 ## Anwendungsszenarien
+
 - **Landwirtschaftliche Zugmaschinen** – Bereitstellung von Kurs- und Geschwindigkeitsdaten für automatische Lenksysteme oder Applikationskarten.
 - **ISOBUS-basierte Steuergeräte** – Einbindung in ein TECU-Netzwerk zur Auswertung von GPS/GNSS-Daten.
 - **Schnelle Regelkreise** – Nutzung der Rapid-Update-Funktion für dynamische Führungsgrößen (z. B. bei teilflächenspezifischer Behandlung).
 - **Fehlerüberwachung** – Einsatz des TIMEOUT-Adapters zur Erkennung von Datenausfällen und zur Aktivierung von Redundanzmechanismen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Es gibt allgemeine ISOBUS-Adapter für COG/SOG (z. B. `I_COGSOG`), die jedoch keine Rapid-Update-Unterstützung bieten. Der **IA_COGSOGRapidUpdate** ist speziell auf PGN 129026 ausgelegt und stellt zusätzlich die Sequenz-ID sowie den Timeout-Status bereit. Ähnliche Bausteine wie `I_COGSOGStd` verwenden möglicherweise eine langsamere Aktualisierungsrate oder fehlende Timeout-Erkennung. Die Verwendung von Adapter-Schnittstellen (statt fester Datenport) erhöht die Flexibilität, erfordert aber eine entsprechende Adapter-Konfiguration im übergeordneten Projekt.
 
 ## Fazit
+
 Der **IA_COGSOGRapidUpdate** ist ein spezialisierter, lizenzrechtlich freier ISOBUS-Adapter für hochfrequente Navigationsdaten. Er kapselt die komplexe NMEA-2000-Kommunikation und bietet standardisierte Adapterausgänge für Kurs, Geschwindigkeit, Sequenz-ID und Timeout. Durch seine klare Initialisierungslogik und die Möglichkeit zur Fehlerüberwachung eignet er sich ideal für Echtzeit-Anwendungen in der Agrartechnik. Die Nutzung der Adapter-Technologie ermöglicht eine saubere Modularisierung und Wiederverwendbarkeit in unterschiedlichsten Steuerungsarchitekturen.

@@ -1,4 +1,5 @@
 # F_EQ
+
 ![F_EQ](https://user-images.githubusercontent.com/116869307/214144380-5a135396-6b9c-4595-8546-75adff7095b0.png)
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_eq.html>
 * * * * * * * * * *
@@ -48,6 +49,7 @@ IF NOT EQ(Sollwert, Istwert) THEN
 // Fehlersignal generieren
 END_IF
 ### Advantages of the EQ Operator
+
 - **Simplicity:** The EQ operator is easy to understand and use, which simplifies the development of control logic.
 - **Flexibility:** The operator can be applied to various data types, including integers, floating-point numbers, and even Boolean values.
 - **Efficiency:** Because the EQ operator can be used directly in function blocks, it reduces the need for additional logic and makes the code more efficient.

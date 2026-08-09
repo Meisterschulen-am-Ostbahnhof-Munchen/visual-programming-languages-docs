@@ -7,37 +7,45 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsbaustein `ADI_ADD_2` ist ein generischer Funktionsbaustein zur Durchführung von arithmetischen Additionsoperationen. Im Gegensatz zu herkömmlichen mathematischen Funktionsbausteinen nutzt dieser Baustein ein adapterbasiertes Schnittstellenkonzept (unidirektionale `ADI`-Adapter), um Daten und zugehörige Steuerungssignale gebündelt zu übertragen. Er ermöglicht die Addition von zwei Eingangswerten zu einem Ausgangswert.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten, dedizierten Ereignis-Eingänge. Die Ereignissteuerung wird vollständig über die Adapter abgewickelt.*
 
 ### **Ereignis-Ausgänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten, dedizierten Ereignis-Ausgänge. Die Ereignisweiterleitung wird vollständig über den Ausgangs-Adapter abgewickelt.*
 
 ### **Daten-Eingänge**
+
 *Dieser Funktionsbaustein besitzt keine standardmäßigen, direkten Daten-Eingänge.*
 
 ### **Daten-Ausgänge**
+
 *Dieser Funktionsbaustein besitzt keine standardmäßigen, direkten Daten-Ausgänge.*
 
 ### **Adapter**
 
 #### **Sockets (Buchsen - Eingänge)**
+
 *   **IN1**: Typ `adapter::types::unidirectional::ADI`
     *   *Beschreibung:* Erster Eingangswert für die mathematische Addition.
 *   **IN2**: Typ `adapter::types::unidirectional::ADI`
     *   *Beschreibung:* Zweiter Eingangswert für die mathematische Addition.
 
 #### **Plugs (Stecker - Ausgänge)**
+
 *   **OUT**: Typ `adapter::types::unidirectional::ADI`
     *   *Beschreibung:* Ausgang, der das Ergebnis der Addition (`IN1 + IN2`) bereitstellt.
 
 ---
 
 ## Funktionsweise
+
 Der Baustein `ADI_ADD_2` realisiert die arithmetische Operation:
 $$\text{OUT} = \text{IN1} + \text{IN2}$$
 
@@ -48,12 +56,14 @@ Da es sich um einen generischen Baustein (`GEN_ADI_ADD`) handelt, richtet sich d
 ---
 
 ## Technische Besonderheiten
+
 *   **Generischer Typ:** Der Baustein ist als `GEN_ADI_ADD` deklariert. Dies erlaubt eine flexible Handhabung unterschiedlicher numerischer Datentypen, sofern diese durch die verwendeten Adapter unterstützt werden.
 *   **Adapterbasiertes Design:** Durch die Verwendung von unidirektionalen Adaptern vom Typ `ADI` wird die Anzahl der expliziten Verbindungslinien (Verdrahtungsaufwand im Application Editor der 4diac-IDE) drastisch reduziert, da Daten und Synchronisationsereignisse in einer Verbindung gekapselt sind.
 
 ---
 
 ## Zustandsübersicht
+
 Der Baustein verhält sich wie ein zustandsloser (bzw. rein ereignisgesteuerter kombinatorischer) Baustein:
 1.  **Warten auf Datenaktualisierung:** Der Baustein verharrt im Ruhezustand, bis über `IN1` oder `IN2` neue Werte signalisiert werden.
 2.  **Berechnung:** Bei Eintreffen eines Ereignisses an den Eingängen wird die mathematische Summe gebildet.
@@ -62,12 +72,14 @@ Der Baustein verhält sich wie ein zustandsloser (bzw. rein ereignisgesteuerter 
 ---
 
 ## Anwendungsszenarien
+
 *   **Modulare Signalverarbeitung:** Addition von Messwerten (z. B. Sensor 1 + Sensor 2 zur Ermittlung eines Gesamtwerts) in Systemen, die konsequent auf einer Adapter-Architektur aufbauen.
 *   **Kaskadierte Berechnungen:** Einfache Integration in komplexe arithmetische Berechnungsnetzwerke durch saubere, strukturierte Adapter-Verbindungen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einem klassischen `ADD`-Baustein nach IEC 61499 (welcher typischerweise dedizierte `REQ`- und `CNF`-Ereignisports sowie direkte Dateneingänge wie `IN1` und `IN2` als `ANY_NUM` besitzt) kapselt der `ADI_ADD_2` diese Schnittstellen in Adaptern. 
 
 *   **Standard ADD:** Erfordert manuelle Verdrahtung von min. 2 Ereignissen und 3 Datenleitungen (insgesamt 5 Verbindungen).
@@ -76,4 +88,5 @@ Im Vergleich zu einem klassischen `ADD`-Baustein nach IEC 61499 (welcher typisch
 ---
 
 ## Fazit
+
 Der `ADI_ADD_2` ist ein hocheffizienter, übersichtlicher und moderner Baustein für arithmetische Additionen in der 4diac-IDE. Er eignet sich hervorragend für anspruchsvolle Architekturen, bei denen Übersichtlichkeit durch den Einsatz von standardisierten Adaptern im Vordergrund steht.

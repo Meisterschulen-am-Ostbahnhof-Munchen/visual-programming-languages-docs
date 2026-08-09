@@ -1,16 +1,22 @@
 # ST64B
+
 * * * * * * * * * *
 ## Introduction
+
 The `ST64B` data type is a structured data type used to encapsulate 64 individual byte values. It was developed to provide a fixed 64-byte data structure that can be used for various use cases where a precisely defined size and direct access to individual bytes are required. The original XML definition contained a comment that incorrectly stated 16 bytes; the correct value is 64 bytes.
 ## Structure Definition
+
 The `ST64B` data type is a composite structure consisting exclusively of individual byte variables. It has no event- or adapter-based interfaces, as it is a pure data structure.
 ### **Event Inputs**
+
 Not applicable, as `ST64B` is a data type and not a function block.
 
 ### **Event Outputs**
+
 Not applicable, as `ST64B` is a data type and not a function block.
 
 ### **Data Components**
+
 The structure `ST64B` consists of the following 64 byte variables:
 
 | Name | Type | Description |
@@ -81,18 +87,23 @@ B\_05 | BYTE | BYTE 05 |
 | B\_63 | BYTE | BYTE 63 |
 
 ### **Data Outputs**
+
 Not applicable, as `ST64B` is a data type and its components do not function as "outputs" in the sense of a function block.
 
 ### **Adapters**
+
 Not applicable, as `ST64B` is a data type and not a function block.
 
 ## Functionality
+
 As a structured data type, `ST64B` does not have its own "function" in the sense of active behavior or logic. Its primary function is to define a memory area of 64 bytes and make it accessible in an organized form. This allows addressing individual bytes within the structure via their named variables (e.g., `ST64B.B_00`, `ST64B.B_15`). It serves as a passive data container.
 
 ## Technical Features
+
 The main feature of `ST64B` is its fixed size of exactly 64 bytes. Each byte is individually addressable via a unique variable name. This makes it ideal for situations requiring a strict data size and byte-by-byte manipulation of the content, such as when processing communication protocols or hardware registers. The sequential naming of the variables simplifies their allocation to a continuous memory area.
 
 ## State Overview
+
 As a pure data type, `ST64B` has no states in the sense of a state machine or a function block. The "state" of a `ST64B` instance is defined solely by the current values of the 64 contained byte variables. Each combination of these values represents a valid data state of the structure.
 
 ## Application Scenarios
@@ -112,4 +123,5 @@ ST64B` is a basic data type and cannot be directly compared to function blocks. 
 * **Arrays of BYTE:** An array of type `ARRAY[0..63] OF BYTE` would also store 64 bytes. The difference lies in the access method: `ST64B` uses named members (e.g., `myST64B.B_10`), while an array uses an index (e.g., `myArray[10]`). Named members can be advantageous in certain contexts for improved code readability or for directly addressing specific byte positions.
 
 ## Conclusion
+
 ST64B` is a simple yet powerful structured data type that provides a fixed data set of 64 bytes. Its strength lies in the clear definition and direct accessibility of each individual byte, making it an excellent choice for applications requiring precise control and interpretation of raw data blocks, particularly in communication and hardware interaction.

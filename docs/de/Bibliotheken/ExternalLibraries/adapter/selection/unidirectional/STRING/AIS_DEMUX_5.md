@@ -28,6 +28,7 @@ Der Funktionsblock **AIS_DEMUX_5** ist ein generischer AIS-Demultiplexer (Generi
 | **K**    | UINT  | Index des gewünschten Ausgangs (1 … 5)  |
 
 ### **Daten-Ausgänge**
+
 Keine Daten-Ausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die Adapter-Schnittstellen.
 
 ### **Adapter**

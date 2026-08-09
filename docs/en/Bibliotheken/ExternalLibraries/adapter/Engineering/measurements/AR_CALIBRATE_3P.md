@@ -1,10 +1,13 @@
 # AR_CALIBRATE_3P
+
 ![AR_CALIBRATE_3P](./AR_CALIBRATE_3P.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AR_CALIBRATE_3P** function block enables 3-point calibration of an analog input signal using adapters. It is specifically designed for joysticks that exhibit center drift and corrects this drift by linearizing between three reference points: minimum, mean, and maximum. The calibration points are saved and can be reset as needed.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -12,6 +15,7 @@ The **AR_CALIBRATE_3P** function block enables 3-point calibration of an analog 
 | SET | Event | Sets the reference values (MIN_REF, MID_REF, MAX_REF) for the calibration curve. Does not trigger a calculation, but only sets the target output values. |
 
 ### **Event Outputs**
+
 No explicit event outputs are available. Output is exclusively via the **Y** adapter.
 
 ### **Data Inputs**
@@ -72,6 +76,7 @@ The calculated output value is clipped to the interval `[MIN_REF, MAX_REF]` to e
 The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`).
 
 ## Technical Features
+
 - **Bidirectional Adapters for Calibration Points:** The stored raw values (`X_MIN`, `X_MID`, `X_MAX`) are bidirectional adapters of type `AR2`. They can be both written to (during calibration) and read from (during calculation). This ensures that the calibration points are permanently retained as long as the connection to the parent resource exists.
 - **Event-Driven Calibration:** The calibration of the three points is not automatic but is triggered by specific events (`C_MIN`, `C_MID`, `C_MAX`). This allows for the time-separated acquisition of the reference points.
 - **Protection against invalid intervals:** The algorithms check whether the ranges of the stored raw values are positive. If not (e.g., if the system is not yet calibrated), safe default values are output.
@@ -96,6 +101,7 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 - `SET`, `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → No change of state (remains in IDLE)
 
 ## Application Scenarios
+
 - **Joystick Calibration:** A joystick with an analog output (e.g., 0-10V) exhibits component-related deviations in the center and at the End stops. The operator moves the joystick to the three positions (Min, Center, Max) and triggers the calibration events via pushbuttons. Afterwards, `Y` delivers a linearized value normalized to the desired target values.
 - **Analog Potentiometer:** A sliding potentiometer showing signs of wear can be corrected by 3-point calibration.
 - **Sensors with Offset and Scaling Error:** For example, a pressure sensor with non-linear behavior between 0%, 50%, and 100% of its range.
@@ -112,4 +118,5 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 The key advantage lies in the explicit handling of the center point, which is neglected in many simple scaling methods.
 
 ## Conclusion
+
 AR_CALIBRATE_3P` is a practical function block for the precise correction of analog sensors with three distinct reference points. Thanks to its adapter-based interface, it integrates seamlessly into IEC-61499 systems and enables a flexible and reusable calibration solution, especially for joysticks and similar input devices.

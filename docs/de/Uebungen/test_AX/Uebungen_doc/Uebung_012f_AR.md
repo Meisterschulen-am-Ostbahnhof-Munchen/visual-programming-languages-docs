@@ -9,6 +9,7 @@ Diese Übung befasst sich mit dem Einlesen eines numerischen Werts (physikalisch
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Baustein: `Uebung_012f_sub_AR`
+
 - **Typ**: `MyLib::sys::NVS_IN_AND_STORE_AR`
 - **Parameter**:
   - `KEY` = `KEY_I1_STORE`
@@ -36,4 +37,5 @@ Die Übung `Uebung_012f_AR` demonstriert das persistente Ablegen eines numerisch
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

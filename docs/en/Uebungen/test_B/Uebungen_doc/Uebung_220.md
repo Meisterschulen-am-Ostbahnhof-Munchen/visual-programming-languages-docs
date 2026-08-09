@@ -1,10 +1,13 @@
 # Exercise_220: Standard IEC 61131-3 FB_CTUD (Up/Down Counter, INT) with Terminal Output
+
 ![Uebung_220_network](./Uebung_220_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a combined up/down counter according to IEC 61131-3 (FB CTUD) with a preset threshold of 10. The counter values are output via digital outputs as well as a numerical value on a terminal. The inputs are provided via logiBUS input blocks.
 ## Function Blocks (FBs) Used
+
 - **FB_CTUD** (Type: `iec61131::counters::FB_CTUD`): Standard IEC 61131-3 Up/Down Counter.
 - Parameters: `PV` = `INT#10` (Preset value)
 - Event inputs: `REQ` (Request)
@@ -54,6 +57,7 @@ In this exercise, a forward/downward counter according to IEC 61131-3 was implem
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

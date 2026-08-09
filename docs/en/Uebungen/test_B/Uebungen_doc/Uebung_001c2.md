@@ -1,14 +1,16 @@
 # Exercise_001c2: DigitalInput_I1 negated to DigitalOutput_Q1 --> Input polling at boot.
+
 ![Uebung_001c2_network](./Uebung_001c2_network.svg)
 
 * * * * * * * * * *
 ## Introduction
-This exercise implements a simple signal processing operation: The digital input `I1` is negated and output to the digital output `Q1`. The input is polled once during system boot. A specific comment in the network indicates that the startup behavior depends on the presence of a specific event connection (`INITO → REQ`).
 
+This exercise implements a simple signal processing operation: The digital input `I1` is negated and output to the digital output `Q1`. The input is polled once during system boot. A specific comment in the network indicates that the startup behavior depends on the presence of a specific event connection (`INITO → REQ`).
 
 ## Function Blocks (FBs) Used
 
 ### `DigitalInput_I1`
+
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**:
 - `QI = TRUE`
@@ -23,6 +25,7 @@ This exercise implements a simple signal processing operation: The digital input
 The block reads the digital value of the configured input (here The reading process is triggered by the event `Input_I1`. After a successful read, an event is output at `IND`, and the read value is made available via `IN`.
 
 ### `F_NOT_BOOL`
+
 - **Type**: `iec61131::bitwiseOperators::F_NOT_BOOL`
 - **Parameters**: None.
 - **Event Interface**:
@@ -35,8 +38,8 @@ The block reads the digital value of the configured input (here The reading proc
 
 This function block performs a logical negation on the incoming BOOL value. Upon an event at `REQ`, the value at `IN` is negated, and the result is output to `OUT`. Then, `CNF` is triggered.
 
-
 ### `DigitalOutput_Q1`
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
 - `QI = TRUE`
@@ -77,4 +80,5 @@ This exercise demonstrates the basic use of digital input and output components 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

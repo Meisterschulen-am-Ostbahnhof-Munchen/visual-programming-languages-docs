@@ -1,8 +1,10 @@
 # Exercise_006c: SR Flip-Flop with IB on DI_REPEAT
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006c`. Here, a complex channel control is implemented using byte data and event demultiplexers.
 ----
 ## Objective of the Exercise
+
 To learn about addressed event distribution. Instead of running a separate line for each channel, an "address" (index) is used to route an event to the correct destination.
 
 -----
@@ -26,7 +28,6 @@ To learn about addressed event distribution. Instead of running a separate line 
 The system operates with two channels:
 
 1. **Set Channel**: Pressing button `I1` (configured as a repeater) sends a number. The demux `E_DEMUX8_S` forwards the event to the corresponding memory location ➡️ The lamp turns on.
-
 2. **Reset Channel**: Pressing button `I2` similarly sends a number to `E_DEMUX8_R` ➡️ The corresponding lamp turns off.
 
 -----

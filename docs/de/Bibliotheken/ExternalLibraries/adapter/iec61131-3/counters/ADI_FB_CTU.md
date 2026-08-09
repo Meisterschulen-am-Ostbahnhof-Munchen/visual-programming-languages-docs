@@ -5,9 +5,11 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der ADI_FB_CTU ist ein Aufwärtszähler (Up-Counter) für Ganzzahlen vom Typ DINT, dessen Ein- und Ausgänge über standardisierte Adapter (AX und ADI) bereitgestellt werden. Er kapselt den Standard-Funktionsblock `FB_CTU_DINT` und ermöglicht dessen Integration in modulare Adapter-basierte Systeme. Der Baustein eignet sich für allgemeine Zählaufgaben in der Automatisierungstechnik.
 
 ## Schnittstellenstruktur
+
 Der Funktionsblock besitzt keine direkten Ereignis- oder Datenschnittstellen, sondern ausschließlich Adapter für die Anbindung. Die nachfolgende Tabelle erläutert die verfügbaren Adapter, deren Typ und Bedeutung.
 
 | Richtung | Name | Adapter-Typ | Beschreibung |
@@ -21,18 +23,23 @@ Der Funktionsblock besitzt keine direkten Ereignis- oder Datenschnittstellen, so
 Die Adapter `AX` (Ereignis-Adapter) und `ADI` (Daten-Adapter) sind unidirektional. Über die Adapter werden sowohl die Ereignisse als auch die zugehörigen Datenwerte übertragen.
 
 ### **Ereignis-Eingänge**
+
 Keine direkten Ereignis-Eingänge. Die Ereignisse werden über die Adapter `CU` und `R` (vom Typ `AX`) zugeführt.
 
 ### **Ereignis-Ausgänge**
+
 Ein direkter Ereignis-Ausgang `CNF` signalisiert die Bestätigung einer Verarbeitung. Zusätzlich wird über den Adapter `Q` (Typ `AX`) ein Ausgangsereignis bei jeder Aktualisierung ausgegeben.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge. Der Vorgabewert wird über den Adapter `PV` (Typ `ADI`) bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Der aktuelle Zählerstand wird über den Adapter `CV` (Typ `ADI`) ausgegeben.
 
 ### **Adapter**
+
 Der Funktionsblock verwendet drei Sockets (Eingangsadapter) und zwei Plugs (Ausgangsadapter):
 
 - **`CU` (Socket, `AX`)**: Zählimpuls – bei jedem Ereignis wird der interne Zähler inkrementiert.
@@ -42,6 +49,7 @@ Der Funktionsblock verwendet drei Sockets (Eingangsadapter) und zwei Plugs (Ausg
 - **`CV` (Plug, `ADI`)**: Aktueller Zählerstand – kann von nachgeschalteten Bausteinen gelesen werden.
 
 ## Funktionsweise
+
 Der ADI_FB_CTU realisiert einen einfachen Aufwärtszähler mit Vorgabewert-Vergleich.  
 
 - Bei jedem Ereignis am Eingang `CU` wird der interne Zähler um 1 erhöht.  
@@ -55,6 +63,7 @@ Nach jeder Verarbeitung (unabhängig davon, ob `CU`, `R` oder `PV` ausgelöst ha
 Intern wird ein Standard-Funktionsblock `FB_CTU_DINT` verwendet, dessen Ein- und Ausgänge über die Adapter verdrahtet sind. Der Zählwert ist vom Typ `DINT` (32-Bit-Ganzzahl).
 
 ## Technische Besonderheiten
+
 - **Adapter-basierte Schnittstelle** – ermöglicht eine lose Kopplung und einfache Integration in Adapter-basierte Architekturen (z. B. gemäß IEC 61499).  
 - **Unidirektionale Adapter** – die Adapter `AX` und `ADI` übertragen jeweils nur in eine Richtung.  
 - **Bestätigungsereignis `CNF`** – jedes Ereignis an einem Eingang löst eine sofortige Bestätigung aus.  
@@ -62,6 +71,7 @@ Intern wird ein Standard-Funktionsblock `FB_CTU_DINT` verwendet, dessen Ein- und
 - **Hinweis im Quelltext** – die häufige Ausgabe des `Q.E1`-Ereignisses kann bei zeitkritischen Anwendungen zu unnötigen Lasten führen; ggf. ist eine Filterung erforderlich.
 
 ## Zustandsübersicht
+
 Der Funktionsblock besitzt einen einzigen internen Zustand: den aktuellen Zählerstand (Initialwert = 0). Abhängig von den eingehenden Ereignissen ergeben sich folgende Zustandsübergänge:
 
 | Ereignis | Bedingung | Neuer Zustand (Zähler) | Ausgabe |
@@ -73,6 +83,7 @@ Der Funktionsblock besitzt einen einzigen internen Zustand: den aktuellen Zähle
 Der Ausgang `Q` (über den Adapter) wird gesetzt, sobald `Zähler ≥ PV` ist. Der aktuelle Wert von `Q` wird bei jeder Ausgabe mitgeliefert.
 
 ## Anwendungsszenarien
+
 - **Ereigniszählung** – Zählen von Impulsen, z. B. Teiledurchlauf, Maschinenzyklen.  
 - **Füllstandüberwachung** – Erfassen der Anzahl von Behältern oder Chargen.  
 - **Produktionssteuerung** – Auslösen einer Aktion, wenn eine bestimmte Stückzahl erreicht ist.  
@@ -91,4 +102,5 @@ Der Ausgang `Q` (über den Adapter) wird gesetzt, sobald `Zähler ≥ PV` ist. D
 Der ADI_FB_CTU ist als „Wrapper“ für den Standardzähler konzipiert und erleichtert die Wiederverwendung in Adapter-basierten Frameworks.
 
 ## Fazit
+
 Der ADI_FB_CTU ist ein flexibler, adapterbasierter Aufwärtszähler für DINT-Werte. Er kapselt die bewährte Zähllogik des `FB_CTU_DINT` und stellt sie über standardisierte Adapter (AX und ADI) bereit. Die Besonderheit, dass Ausgangsereignisse bei jeder Aktualisierung generiert werden, sollte bei der Systemauslegung berücksichtigt werden. Der Baustein eignet sich hervorragend für modulare, erweiterbare Automatisierungslösungen, in denen eine einheitliche Adapter-Schnittstelle gefordert wird.

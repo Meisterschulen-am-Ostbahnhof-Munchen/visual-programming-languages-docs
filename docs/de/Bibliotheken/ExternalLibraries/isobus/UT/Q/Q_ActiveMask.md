@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung aktiver Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.34) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ActiveMask](Q_ActiveMask.svg)
@@ -12,14 +13,17 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Maskenwechsel-Anforderung (mit Parametern)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Maskenwechsel-Bestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16NewMaskId` (UINT): Objekt-ID der neuen Maske
 
 !!! note "WorkingSet Object ID fest auf 0"
@@ -31,6 +35,7 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
     Da das Workingset ein einzelnes Objekt ist und nur 1x existiert, stellt diese Einschränkung kein Problem dar.
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u16OldMaskId` (UINT): Objekt-ID der vorherigen Maske
 - `s16result` (INT): ISO-konformer Ergebniscode

@@ -1,13 +1,16 @@
 # Exercise_021_AX: Mirror Sequence (1) - AX Variant
+
 ![Uebung_021_AX_network](./Uebung_021_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a simple control for a **mirror sequence (1)** – AX variant. A digital output can be set and reset using two softkeys (F1 and F2). The function block forms a kind of **start/stop logic** for a drive (AX) that is controlled by the softkeys. The exercise provides basic knowledge about the use of softkeys, SR flip-flops, and digital outputs in the 4diac IDE.
 
 ## Function Blocks (FBs) Used
 
 ### Softkey_UP_F1
+
 - **Type**: `isobus::UT::io::Softkey::Softkey_IXA`
 - **Parameters**:
 - `QI` = TRUE (Block active)
@@ -16,6 +19,7 @@ This exercise implements a simple control for a **mirror sequence (1)** – AX v
 - **Function**: Sends a signal (pulse) to the connected adapter when the F1 softkey is pressed.
 
 ### SoftKey_F2_DOWN
+
 - **Type**: `isobus::UT::io::Softkey::Softkey_IXA`
 - **Parameters**:
 - `QI` = TRUE
@@ -24,6 +28,7 @@ This exercise implements a simple control for a **mirror sequence (1)** – AX v
 - **Function**: Sends a signal to the SR circuit when the F2 softkey is pressed.
 
 ### AX_FB_SR
+
 - **Type**: `adapter::iec61131::bistableElements::AX_FB_SR`
 - **Parameters**: none
 - **Adapter Inputs**:
@@ -34,6 +39,7 @@ This exercise implements a simple control for a **mirror sequence (1)** – AX v
 - **Function**: An **SR flip-flop** (set – reset). As long as the set input is active, Q1 remains TRUE. A signal at the reset input sets Q1 to FALSE.
 
 ### DigitalOutput_Q1
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = TRUE (Block active)
@@ -44,9 +50,7 @@ This exercise implements a simple control for a **mirror sequence (1)** – AX v
 ## Program Flow and Connections
 
 1. **Initial State**: The SR output `Q1` is FALSE, the digital output `Output_Q1` is inactive.
-
 2. **Start (Softkey F1)**: When the **F1** key is pressed (labeled "START button"), `SoftKey_UP_F1` sends a pulse to `AX_FB_SR.SET1`. This sets the flip-flop: `Q1` becomes TRUE and remains so – even after the key is released.
-
 3. **Stop (Softkey F2)**: When the **F2** key is pressed (labeled "End Position"), `SoftKey_F2_DOWN` sends a pulse to `AX_FB_SR.RESET`. The flip-flop is reset: `Q1` becomes FALSE, and the output switches off.
 
 The connections are implemented as **adapter connections** (arrows between the adapters):
@@ -71,6 +75,7 @@ Exercise **Exercise_021_AX** demonstrates a simple mirror sequence for controlli
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -11,6 +11,7 @@ Diese Übung implementiert einen Toggle-Flip-Flop, der durch Echtzeit-Ereignisse
 ## Verwendete Funktionsbausteine (FBs)
 
 ### logiBUS_IE (DigitalInput_CLK_I1, DigitalInput_CLK_I2, DigitalInput_CLK_I3)
+
 - **Typ**: logiBUS::io::DI::logiBUS_IE  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -20,6 +21,7 @@ Diese Übung implementiert einen Toggle-Flip-Flop, der durch Echtzeit-Ereignisse
   Erfasst einen Tastendruck (Single Click) an einem digitalen Eingang und erzeugt ein Ereignis am Ausgangsereignis `IND`. Dient als Startquelle für die Ereigniskette.
 
 ### RT_E_REND
+
 - **Typ**: eclipse4diac::rtevents::RT_E_REND  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -36,6 +38,7 @@ Diese Übung implementiert einen Toggle-Flip-Flop, der durch Echtzeit-Ereignisse
   Realisiert ein Real-Time Rendezvous. Es wartet auf Ereignisse an `EI1` und `EI2`. Erst wenn beide innerhalb der Deadline (20 ms) eingetroffen sind, wird ein Ereignis am Ausgang `EO` erzeugt. Der Eingang `R` setzt den internen Zustand zurück. Damit wird sichergestellt, dass die nachfolgende Logik nur bei synchronen Ereignissen ausgelöst wird.
 
 ### E_T_FF
+
 - **Typ**: iec61499::events::E_T_FF  
 - **Keine Parameter**  
 - **Ereigniseingang**:  
@@ -46,6 +49,7 @@ Diese Übung implementiert einen Toggle-Flip-Flop, der durch Echtzeit-Ereignisse
   Toggle-Flip-Flop. Bei jedem Ereignis am Takt-Eingang (`CLK`) wird der interne Zustand umgeschaltet. Der Ausgang `Q` gibt den aktuellen Zustand aus (TRUE/FALSE).
 
 ### logiBUS_QX (DigitalOutput_Q1)
+
 - **Typ**: logiBUS::io::DQ::logiBUS_QX  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -94,4 +98,5 @@ Die Übung zeigt, wie mit dem Baustein `RT_E_REND` ein echtzeitkritischer Rendez
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

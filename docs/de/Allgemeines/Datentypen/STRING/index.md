@@ -1,9 +1,11 @@
 # Datentyp-Detail: STRING
 
 ## Beschreibung
+
 Der Datentyp **STRING** repräsentiert eine Zeichenfolge, die aus 8-Bit-Zeichen (üblicherweise ISO/IEC 10646-1 oder ASCII) besteht.
 
 ## Normative Definition
+
 Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 16a):
 
 | Eigenschaft | Wert |
@@ -13,9 +15,11 @@ Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 16a):
 | **Maximale Länge** | Herstellerspezifisch (Standard oft 255) |
 
 ## Literaldarstellung
+
 Zeichenfolge-Literale werden in **einfache Anführungszeichen** (`'`) eingeschlossen.
 
 ### Sonderzeichen (Escape-Sequenzen)
+
 Sonderzeichen werden durch ein Dollar-Zeichen (`$`) eingeleitet:
 
 | Sequenz | Bedeutung |
@@ -30,6 +34,7 @@ Sonderzeichen werden durch ein Dollar-Zeichen (`$`) eingeleitet:
 | `$hh` | Zeichen mit Hex-Code `hh` (z.B. `$41` für 'A') |
 
 ### Beispiele
+
 - `'Hallo Welt'` (Einfacher Text)
 - `'Zeile 1$NZeile 2'` (Mit Zeilenumbruch)
 - `'Zahl: $R$L100'` (Wagenrücklauf und Zeilenvorschub)

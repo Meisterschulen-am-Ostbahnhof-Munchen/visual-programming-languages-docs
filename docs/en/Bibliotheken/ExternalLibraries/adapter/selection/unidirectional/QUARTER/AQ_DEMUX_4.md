@@ -1,8 +1,10 @@
 # AQ_DEMUX_4
+
 ![AQ_DEMUX_4](./AQ_DEMUX_4.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AQ_DEMUX_4** is a generic demultiplexer for the adapter type `AQ` (Analog Quantity). It distributes an incoming analog value to one of four output adapters, selected by an index `K`. The device is activated by an event via the input `REQ` and confirms the switchover via the output `CNF`.
 ## Interface Structure
 
@@ -45,16 +47,14 @@ No directly declared data outputs – output is handled via the plugins.
 The demultiplexer operates in an event-driven manner:
 
 1. A value present at the adapter socket `IN` is forwarded by the module to the plug (OUT1…OUT4) specified by `K`.
-
 2. The forwarding occurs upon arrival of the event `REQ`.
-
 3. After successful transmission, the acknowledgment event `CNF` is sent.
-
 4. The index `K` must be in the range 1 to 4; other values result in undefined behavior (in the standard implementation, the module typically switches to the first output or none at all).
 
 Since this is a **generic FB** (recognizable by the attribute `GenericClassName`), the specific data type of the adapter `AQ` can be adapted to the actual use case by the development environment during instantiation (e.g., analog value, temperature, pressure, etc.).
 
 ## Technical Features
+
 - **Generic Type:** The FB is declared as generic (`GEN_AQ_DEMUX`). During instantiation, the adapter type `AQ` can be replaced by any compatible unidirectional adapter, provided the interface (data direction) matches.
 - **No State Storage:** The function block has no explicit states or time delays – switching is strictly event-driven and instantaneous.
 - **Output Selection:** The output is selected using the integer index `K` (UINT). The number of outputs is fixed at four (OUT1…OUT4).
@@ -65,12 +65,14 @@ Since this is a **generic FB** (recognizable by the attribute `GenericClassName`
 The function block does **not** define its own state machines (Execution Control Chart). The internal logic is purely event-driven and has no memory. Upon receiving the `REQ` event, the forwarding and the `CNF` event are triggered immediately. No error or overflow handling is provided.
 
 ## Application Scenarios
+
 - **Signal Distribution:** An analog value (e.g., pressure, temperature) provided by a sensor can be selectively passed on to various evaluation units or actuators.
 - **Channel Switching:** In a measurement chain, multiple measuring points can be connected sequentially to a common evaluation unit.
 - **Configurable Multiplexers:** Together with an index encoder (e.g., counter or PLC selection), the demultiplexer can be dynamically switched during operation.
 - **Generic Replacement:** Since the adapter type `AQ` is generic, the function block is suitable for any analog or scalar signals in automation technology (e.g., current, voltage, level).
 
 ## Comparison with Similar Function Blocks
+
 - **AQ_MUX_4** (Multiplexer): Performs the opposite function – multiple inputs are switched to one output. Both function blocks complement each other.
 - **E_DEMUX** (Event Demultiplexer): Distributes event signals instead of data values. The `AQ_DEMUX_4`, on the other hand, distributes continuous data across adapters and operates at the data level, not the event level.
 - **Demultiplexer with a fixed number of outputs:** Other function blocks often offer 2, 8, or 16 outputs. This function block offers exactly four, which is a good compromise for many applications.

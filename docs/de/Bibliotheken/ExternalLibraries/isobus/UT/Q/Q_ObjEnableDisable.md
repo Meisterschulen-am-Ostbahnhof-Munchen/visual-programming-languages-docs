@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ObjEnableDisable** ist ein standardkonformer Funktionsbaustein zur Aktivierung/Deaktivierung von Eingabeobjekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.4) Spezifikation für VT-Eingabeelemente.
 
 ![Q_ObjEnableDisable](Q_ObjEnableDisable.svg)
@@ -12,18 +13,22 @@ Der **Q_ObjEnableDisable** ist ein standardkonformer Funktionsbaustein zur Aktiv
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Aktivierungs-/Deaktivierungsanforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Betriebsbestätigung
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Objekt-ID (16-bit)
 - `qAbility` (BOOL): Aktivierungsstatus (TRUE=aktivieren, FALSE=deaktivieren)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `qOldAbility` (BOOL): Vorheriger Aktivierungsstatus
 - `s16result` (INT): ISO-konformer Ergebniscode

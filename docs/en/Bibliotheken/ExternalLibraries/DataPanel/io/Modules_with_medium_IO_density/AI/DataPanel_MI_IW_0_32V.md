@@ -1,8 +1,10 @@
 # DataPanel_MI_IW_0_32V
+
 ![DataPanel_MI_IW_0_32V](./DataPanel_MI_IW_0_32V.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Block (SIFB) according to IEC 61499. It is used to read an analog voltage signal in the range of 0–32V via a DataPanel MI module. The block handles the initialization of the communication channel, the configuration of an analog input (e.g., AnalogInput_1A to 8B), and the cyclical querying or reception of measured values. The output is as a **WORD** value; the status is signaled via **STATUS** and the **CNF** or **IND** event.
 ## Interface Structure
 
@@ -52,6 +54,7 @@ A **REQ** event triggers the query of the current analog value. The measured val
 **STATUS** returns a valid value for `"OK"`; in case of errors (e.g., communication error, invalid channel), an error message is issued and `QO` is set to `FALSE`.
 
 ## Technical Specifications
+
 - **Voltage Range:** 0V to 32V, represented as a WORD – scaling is hardware-dependent.
 - **Hysteresis Configuration:** The parameter `AnalogInput_hysteresis` allows setting a threshold to suppress noise or small voltage fluctuations.
 - **Initialization:** The input `u8SAMember` must contain a valid node address (224–239); `Input` selects the specific analog channel. The default settings are `MI::MI_00` (address of the first MI module) and `Invalid`, meaning a valid channel must be set before the first INIT.
@@ -67,6 +70,7 @@ Since this is a Service Interface FB, the internal logic is handled by the hardw
 - **ERROR:** In case of faulty initialization or loss of communication – STATUS contains an error message.
 
 ## Application Scenarios
+
 - **Voltage Monitoring:** Acquisition of sensor signals (e.g., pressure sensors, level sensors) with an output signal of 0…10V or 0…32V.
 - **Analog Value Acquisition in Agricultural Technology:** Integration into a DataPanel control system for recording analog values from various machine components.
 - **Hysteresis-controlled threshold evaluation:** Direct use of the input value in downstream logic that reacts to thresholds being exceeded or fallen below.

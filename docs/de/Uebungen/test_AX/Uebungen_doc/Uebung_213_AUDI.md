@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert einen **Vorwärtszähler (CTU)** nach IEC 61131-3 in einer Adapter‑Variante für den Datentyp **UDINT**. Der Zähler wird über zwei digitale Eingänge gesteuert (Zählimpuls und Reset) und gibt den aktuellen Zählerstand sowie den Zählerendwert auf einem Terminal und einem digitalen Ausgang aus. Ein fester Preset‑Wert von 5 wird über einen Konvertierungsbaustein vorgegeben.
 
 Die Übung dient dem Kennenlernen von:
@@ -19,6 +20,7 @@ Die Übung dient dem Kennenlernen von:
 ### Sub‑Bausteine:
 
 #### **AUDI_FB_CTU**
+
 - **Typ**: `adapter::iec61131::counters::AUDI_FB_CTU`
 - **Verwendete interne FBs**: Keine
 - **Parameter**: Keine expliziten Parameter (alle Steuerung über Adapter‑Schnittstellen)
@@ -36,6 +38,7 @@ Die Übung dient dem Kennenlernen von:
 ---
 
 #### **AUDI_UDINT_TO_UDI**
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -50,6 +53,7 @@ Die Übung dient dem Kennenlernen von:
 ---
 
 #### **Input_CU**
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI` = `TRUE` (Baustein aktiv)
@@ -63,6 +67,7 @@ Die Übung dient dem Kennenlernen von:
 ---
 
 #### **Input_R**
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -76,6 +81,7 @@ Die Übung dient dem Kennenlernen von:
 ---
 
 #### **Output_Q1**
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -89,6 +95,7 @@ Die Übung dient dem Kennenlernen von:
 ---
 
 #### **Q_NumericValue_AUDI**
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**:
   - `u16ObjId` = `OutputNumber_N1` (definiert das Terminal‑Ausgabeobjekt)
@@ -103,6 +110,7 @@ Die Übung dient dem Kennenlernen von:
 ## Programmablauf und Verbindungen
 
 ### Ablauf
+
 1. **Initialisierung**:  
    Nach dem Systemstart wird der Reset‑Eingang `Input_R` initialisiert. Das dabei erzeugte Ereignis `INITO` triggert den Konvertierungsbaustein `AUDI_UDINT_TO_UDI`, der den Preset‑Wert `5` an den Zähler `AUDI_FB_CTU.PV` übergibt.
 
@@ -130,6 +138,7 @@ Die Übung dient dem Kennenlernen von:
 ---
 
 ## Zusammenfassung
+
 Die Übung **Uebung_213_AUDI** realisiert einen vollständigen Vorwärtszähler (CTU) nach IEC 61131-3 in einer Adapter‑Variante. Der Zähler wird über zwei logiBUS‑Digitaleingänge bedient, sein aktueller Stand sowie das Erreichen des Preset‑Werts werden sowohl auf einem Terminal als auch auf einem digitalen Ausgang ausgegeben. Die einmalige Initialisierung des Preset‑Werts erfolgt über einen Konverterbaustein. Die Übung vermittelt den Umgang mit Adapter‑basierten Funktionsbausteinen, Datenkonvertierung und der Einbindung von Ein‑/Ausgängen in der 4diac‑IDE.
 
 **Schwierigkeitsgrad**: Mittel  
@@ -138,4 +147,5 @@ Die Übung **Uebung_213_AUDI** realisiert einen vollständigen Vorwärtszähler 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

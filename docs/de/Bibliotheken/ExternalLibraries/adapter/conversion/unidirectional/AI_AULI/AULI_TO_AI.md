@@ -10,15 +10,19 @@ Der Funktionsblock **AULI_TO_AI** ist ein zusammengesetzter Baustein (Composite 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein selbst besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Auch auf dieser Ebene sind keine dedizierten Ereignis-Ausgänge vorhanden; die Ausgabeereignisse werden über den AI_OUT-Adapter weitergegeben.
 
 ### **Daten-Eingänge**
+
 - Keine direkten Dateneingänge auf Blockebene. Die Daten gelangen über den Socket `AULI_IN` in den Baustein.
 
 ### **Daten-Ausgänge**
+
 - Keine direkten Datenausgänge auf Blockebene. Die konvertierten Daten werden über den Plug `AI_OUT` ausgegeben.
 
 ### **Adapter**

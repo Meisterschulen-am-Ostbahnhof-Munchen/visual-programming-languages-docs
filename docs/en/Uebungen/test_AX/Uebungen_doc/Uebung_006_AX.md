@@ -1,8 +1,10 @@
 # Exercise_006_AX: SR Flip-Flop with 2x IE
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006_AX`. Here, the classic RS gate (memory gate) is implemented.
 ----
 ## Objective of the Exercise
+
 Implementation of a circuit with separate pushbuttons for "On" and "Off".
 
 -----
@@ -22,6 +24,7 @@ Implementation of a circuit with separate pushbuttons for "On" and "Off".
 -----
 
 ## Functionality
+
 * A click on `I1` sends an event to `S` -> output `Q` becomes TRUE.
 * * A click on `I2` sends an event to `R` -> output `Q` becomes FALSE.
 * Repeatedly pressing `I1` has no effect if it is already on.

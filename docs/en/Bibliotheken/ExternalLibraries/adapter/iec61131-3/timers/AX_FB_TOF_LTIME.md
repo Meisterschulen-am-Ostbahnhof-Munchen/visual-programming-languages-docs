@@ -1,10 +1,13 @@
 # AX_FB_TOF_LTIME
+
 ![AX_FB_TOF_LTIME](./AX_FB_TOF_LTIME.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-delay according to IEC 61131-3. It is specifically designed for use with an AX adapter and uses an internal timer module and a D flip-flop to precisely represent the timing behavior. The time base uses the data type `LTIME`, resulting in high temporal resolution.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Comment |
@@ -48,16 +51,14 @@ The module behaves like a classic time-of-flight (TOF) delay circuit:
 Event-driven processing occurs as follows:
 
 1. The event `REQ` (either directly or from the adapter input `IN.E1`) triggers the internal timer `FB_TOF_LTIME`.
-
 2. The timer calculates the elapsed time and outputs the event `CNF` upon completion.
-
 3. This `CNF` clocks the D flip-flop `E_D_FF`, which stores the current timer output (`Q` of the timer) and passes it through to the output adapter `Q.D1`.
-
 4. Simultaneously, the `CNF` event is forwarded to the output adapter `Q.E1`, so that the downstream adapter is informed of the change.
 
 The variable `ET` is taken directly from the timer and displays the currently elapsed delay time at all times.
 
 ## Technical Features
+
 - **High time resolution** through the use of `LTIME` (Long Time) according to IEC 61131-3.
 - **Adapter-based I/O** via the unidirectional `AX` adapter enables loose coupling between different resources (e.g., between the application and the I/O driver).
 - **Standard compliance** according to IEC 61131-3 – the behavior corresponds exactly to that of a TOF timer.
@@ -74,15 +75,18 @@ The variable `ET` is taken directly from the timer and displays the currently el
 A change from `IN` to **TRUE** resets the timer and immediately returns it to the "Inactive / Ready" state. A change to **FALSE** restarts the delay.
 
 ## Application Scenarios
+
 - **Run-on control** of fans, pumps, or conveyor belts after a signal is switched off.
 - **Debouncing** of signals: a brief level change is filtered out by the delay.
 - **Protection times** when switching inductive loads: the switch-off is delayed by a defined time.
 - **Time-controlled logic** in production plants, where an output should remain active for a specific duration after the input event.
 
 ## Comparison with similar function blocks
+
 - **TON (Switch-on delay)**: The output only becomes active after a delay following the switch-on. – TOF delays the switch-off.
 - **TP (Pulse)**: The output provides a pulse of a predefined length, independent of the duration of the input signal. – TOF only reacts to the falling edge.
 - **RTRIG / FTRIG (Edge detection)**: Detect signal changes without a time component. – TOF combines edge detection with time control.
 
 ## Conclusion
+
 The `AX_FB_TOF_LTIME` is a powerful, standardized function block for time-critical switch-off delays in automation technology. The AX adapter allows for flexible integration into distributed systems, while the internal combination of timer and flip-flop ensures precise and reproducible timing. It is particularly suitable for applications requiring an accurate time base and a modular interface.

@@ -1,8 +1,10 @@
 # ILOCK_CONFLICT_TRIP
+
 ![ILOCK_CONFLICT_TRIP](./ILOCK_CONFLICT_TRIP.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ILOCK_CONFLICT_TRIP** function block is used for **prioritized interlocking** with **conflict detection**. It evaluates two opposing binary signals (e.g., "Forward" and "Reverse") and only actively passes on one of the two commands as long as they are not present simultaneously. If both inputs are active at the same time, a **trip state** (error/lock) is triggered, which can only be cleared by an explicit reset (with inactive inputs). This function block is specifically designed for safety-critical applications where conflicting control commands must be reliably detected.
 ## Interface Structure
 
@@ -61,6 +63,7 @@ The function block has four operating states: **STOP**, **UP**, **DOWN**, and **
 **Prioritization mechanism:** The first valid input received is served until it is withdrawn or a conflict with the other input occurs. Simultaneous TRUE values on both data inputs immediately lead to the trip state.
 
 ## Technical features
+
 - **Reset only allowed in trip:** The function block can only be reset from the TRIP state to the STOP state by `EI_RESET`. A reset during normal states (UP/DOWN/STOP) has no effect.
 - **Conditions for Trip Transitions:**
 - From STOP: `(EI_UP UND DI_UP UND DI_DOWN)` OR `(EI_DOWN UND DI_UP UND DI_DOWN)`
@@ -79,12 +82,14 @@ The function block has four operating states: **STOP**, **UP**, **DOWN**, and **
 **TRIP** | FALSE | FALSE | TRUE | Conflict/lock active |
 
 ## Application Scenarios
+
 - **Motor control for linear units or rotary actuators:** Prevents simultaneous forward/reverse commands.
 - **Hydraulic valve control:** Protection against conflicting switching commands (e.g., raising and lowering simultaneously).
 - **Safety Interlock in Automation:** Detection of operator errors and triggering of a safe stop.
 - **PLC Replication in Distributed Systems:** As part of a control logic that must avoid conflicting states.
 
 ## Comparison with Similar Function Blocks
+
 - **SR Latch / Flip-Flop:** A simple SR latch stores a state but does not detect conflicts with simultaneous "Set" and "Reset" signals. ILOCK_CONFLICT_TRIP enters the trip state instead of creating an undefined state.
 - **F_TRIG / R_TRIG (Edge Detection):** These function blocks only detect signal edges but do not have any interlock logic.
 - **Standard Interlock Function Blocks (e.g., from IEC 61131-3):** Many offer simple mutual interlocking (e.g., motor interlocking) but no dedicated trip state with a reset requirement. The ILOCK_CONFLICT_TRIP is more robust in fault situations.
@@ -96,6 +101,7 @@ The **ILOCK_CONFLICT_TRIP** is a compact, safety-oriented function block for the
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,8 +1,10 @@
 # WORDS_TO_ARR08B
+
 ![WORDS_TO_ARR08B](./WORDS_TO_ARR08B.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **WORDS_TO_ARR08B** is used to concatenate four 16-bit words (type `WORD`) into a byte array of length 8 (type `ARRAY[0..7] OF BYTE`). It uses the little-endian format (Intel standard), which stores the least significant bytes first. The block is controlled via an event input and is particularly suitable for PC-based controllers (e.g., Beckhoff, Wago, B&R, Raspberry Pi).
 ## Interface Structure
 
@@ -55,6 +57,7 @@ When a rising edge is detected at the event input `REQ`, the function block perf
 After the assignments are complete, the output pulse `CNF` is generated.
 
 ## Technical Features
+
 - **Little-Endian Format**: The bytes of each word are stored in ascending memory address order, with the least significant byte first. This corresponds to the Intel byte order and is common for many PC-based controllers and communication protocols (e.g., Modbus, CANopen, serial interfaces).
 - **No Reversal of Overall Order**: The words themselves are inserted into the array in the order `IN_00` to `IN_03`; only within each word is the byte order reversed. If a different implementation is required to also reverse the word order (e.g., Big-Endian at the word level), this is necessary.
 - **Immediate Execution**: The function block is purely combinatorial – after the event `REQ`, the result is available in the next execution cycle. No internal state is stored.
@@ -64,19 +67,19 @@ After the assignments are complete, the output pulse `CNF` is generated.
 The function block does not have an explicit state machine. Its behavior is purely event-driven:
 
 1. **Idle**: Waiting for `REQ`.
-
 2. **Processing**: Upon `REQ`, the input values are read and the output calculation is performed.
-
 3. **Complete**: `CNF` is sent; the function block returns to the idle state.
 
 The implementation is deterministic and requires only one execution step.
 
 ## Application Scenarios
+
 - **Communication with Peripherals**: A microcontroller or IPC sends 16-bit sensor data (e.g., analog-to-digital converter, encoder) via a byte-oriented serial bus. The device packs the words into a byte array that can be transmitted directly.
 - **Data Logging**: Combining multiple 16-bit measurements into a buffer for storage or transmission (e.g., CSV, binary format).
 - **Protocol Conversion**: Adapting data to the byte order required by a specific protocol (e.g., OPC UA, MQTT binary payload).
 
 ## Comparison with Similar Function Blocks
+
 - **WORDS_TO_ARR08B** expects exactly four words and creates an array of length 8. For other word/byte counts, related function blocks exist, such as `WORDS_TO_ARR04B`, `WORDS_TO_ARR16B`, or for big-endian.
 - Unlike a general-purpose block like `MERGE`, which concatenates arbitrary data types, this function block is specifically optimized for 2-byte-per-word conversion and guarantees the correct byte order.
 - Compared to simple variable assignment using `MOVE` or a pure function like `WORD_TO_BYTE`, this block avoids manual index calculations and improves readability.
@@ -88,6 +91,7 @@ The function block **WORDS_TO_ARR08B** is a compact, specialized module for conv
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
 

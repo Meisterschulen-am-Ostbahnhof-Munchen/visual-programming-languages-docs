@@ -11,15 +11,19 @@ Der **AUS_SPLIT_8** ist ein generischer Funktionsbaustein zur Verteilung eines e
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine Ereignis-Eingänge vorhanden.
 
 ### **Ereignis-Ausgänge**
+
 Keine Ereignis-Ausgänge vorhanden.
 
 ### **Daten-Eingänge**
+
 Keine Daten-Eingänge vorhanden.
 
 ### **Daten-Ausgänge**
+
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
@@ -69,5 +73,6 @@ Der **AUS_SPLIT_8** ist ein einfacher, aber nützlicher Funktionsbaustein zur Ve
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

@@ -1,8 +1,10 @@
 # Exercise_219_AULI: Standard IEC 61131-3 AULI_FB_CTD (Adapter Version, Countdown Counter, ULINT) with Terminal Output
+
 ![Uebung_219_AULI_network](./Uebung_219_AULI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **countdown counter** according to IEC 61131-3 (type `CTD`) in **adapter format**. The counter uses the **ULINT** (Unsigned Long Integer) data type and outputs the current counter value to a terminal (e.g., system display). Additionally, a digital output is set as soon as the counter value reaches zero.
 All functionality is encapsulated in a sub-application (SubApp) that is connected to the hardware via logiBUS inputs and outputs.
 
@@ -11,6 +13,7 @@ All functionality is encapsulated in a sub-application (SubApp) that is connecte
 The subapp contains the following internal function blocks:
 
 ### FB: AULI_FB_CTD
+
 - **Type**: `adapter::iec61131::counters::AULI_FB_CTD`
 - **Description**: Core block – the actual countdown counter. It has the interfaces typical for a CTD:
 - **Event Inputs**: – (automatically controlled by the adapter connections)
@@ -19,6 +22,7 @@ The subapp contains the following internal function blocks:
 - **Parameters**: no additional parameters
 
 ### FB: AULI_ULINT_TO_ULI
+
 - **Type**: `adapter::conversion::unidirectional::AULI_ULINT_TO_ULI`
 - **Description**: Converts a constant ULINT value (10) into The format `ULI` (required by the CTD function block).
 - **Parameters**: `OUT` = `ULINT#10` (fixed value, used as a preset value)
@@ -26,12 +30,14 @@ The subapp contains the following internal function blocks:
 - **Data Output**: `AULI_OUT` (connected to `AULI_FB_CTD.PV`)
 
 ### FB: Input_CD
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Description**: Digital input for the signal `CD` (Count Down). Reads the physical input `Input_I1`.
 - **Parameters**: `QI` = `TRUE` (initialization), `Input` = `Input_I1`
 - **Adapter output**: `IN` (connected to `AULI_FB_CTD.CD`)
 
 ### FB: Input_LD
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Description**: Digital input for the signal `LD` (load). Reads the physical input `Input_I2`.
 - **Parameters**: `QI` = `TRUE`, `Input` = `Input_I2`
@@ -39,21 +45,23 @@ The subapp contains the following internal function blocks:
 - **Event Output**: `INITO` (triggers the conversion of the preset value)
 
 ### FB: Output_Q1
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Description**: Digital output. Activates when the counter reaches zero (Q signal of the CTD).
 - **Parameters**: `QI` = `TRUE`, `Output` = `Output_Q1`
 - **Adapter Input**: `OUT` (connected to `AULI_FB_CTD.Q`)
 
 ### FB: AULI_TO_AUDI
+
 - **Type**: `adapter::conversion::unidirectional::AULI_TO_AUDI`
 - **Description**: Converts the current counter reading (`CV`, type AULI) to the AUDI type, which is required for terminal output.
 - **Adapter Input**: `AULI_IN` (connected to `AULI_FB_CTD.CV`)
 - **Adapter Output**: `AUDI_OUT` (connected to `Q_NumericValue_AUDI.u32NewValue`)
 
 ### FB: Q_NumericValue_AUDI
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Description**: Function block for displaying a numeric value in the terminal. It receives the current counter value and displays it on the assigned output object.
-
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Description**: Function block for displaying a numeric value in the terminal. It receives the current counter value and displays it on the assigned output object.
 
@@ -128,6 +136,7 @@ As soon as the counter value reaches 0, the CTD block sets the output `Q` to TRU
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

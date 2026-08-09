@@ -1,8 +1,10 @@
 # Exercise_087: Example for E_DEMUX
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_087`. It demonstrates the selection of an event path using a combination of logic values.
 ----
 ## Objective of the Exercise
+
 Using `E_DEMUX` (Event Demultiplexer). It shows how a central "execution event" (clicking button 1) is routed to various actuators, with the selection made via the combination of other buttons.
 
 -----

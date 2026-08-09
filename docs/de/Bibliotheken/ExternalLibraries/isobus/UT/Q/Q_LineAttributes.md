@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_LineAttributes** ist ein standardkonformer Funktionsbaustein zur Änderung von Linienattributen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.30) Spezifikation für VT-Systeme.
 
 ![Q_LineAttributes](Q_LineAttributes.svg)
@@ -12,20 +13,24 @@ Der **Q_LineAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Attributänderungs-Anforderung (mit neuen Linienattributen)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Status und alten Attributen)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Objekt-ID (16-bit)
 - `u8LineColour` (USINT): Neue Linienfarbe
 - `u8LineWidth` (USINT): Neue Linienbreite
 - `u16LineArt` (UINT): Neuer Linienstil
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldLineColour` (USINT): Alte Linienfarbe
 - `u8OldLineWidth` (USINT): Alte Linienbreite

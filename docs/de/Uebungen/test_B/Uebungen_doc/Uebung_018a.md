@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_018a` im gewünschten Format.
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Steuerung von Audiosignalen in einer ISOBUS-Universal-Terminal-Umgebung in Kombination mit einer Zeitverzögerung. Ziel ist es, beim Loslassen einer Softkey-Taste eine Sequenz aus zwei unterschiedlichen Tönen abzuspielen, die durch eine kurze Pause getrennt sind. Dies veranschaulicht die Ereignisverarbeitung und die Verwendung von Delay-Bausteinen zur Sequenzierung von Aktionen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -16,6 +17,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine instanziiert und
 ### Sub-Bausteine:
 
 #### **SoftKey_UP_F1**
+
 - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`
 - **Beschreibung**: Dieser Baustein überwacht die Eingabe am Universal Terminal (UT) für eine spezifische Softkey-Taste.
 - **Konfiguration**:
@@ -25,6 +27,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine instanziiert und
 - **Ereignisausgang**: `IND` (Signalisiert, dass das Ereignis eingetreten ist)
 
 #### **Q_CtrlAudioSignal_0**
+
 - **Typ**: `isobus::UT::Q::Q_CtrlAudioSignal`
 - **Beschreibung**: Erzeugt das erste akustische Signal (tieferer Ton).
 - **Konfiguration**:
@@ -36,6 +39,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine instanziiert und
 - **Ereignisausgang**: `CNF` (Bestätigt die Verarbeitung)
 
 #### **E_RDELAY**
+
 - **Typ**: `iec61499::events::E_RDELAY`
 - **Beschreibung**: Ein Verzögerungsbaustein, der das Weiterleiten eines Ereignisses um eine definierte Zeit verschiebt.
 - **Konfiguration**:
@@ -44,6 +48,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine instanziiert und
 - **Ereignisausgang**: `EO` (Feuert nach Ablauf der Zeit)
 
 #### **Q_CtrlAudioSignal_1**
+
 - **Typ**: `isobus::UT::Q::Q_CtrlAudioSignal`
 - **Beschreibung**: Erzeugt das zweite akustische Signal (höherer Ton).
 - **Konfiguration**:
@@ -66,4 +71,5 @@ Der Ablauf der Übung ist sequenziell aufgebaut und wird durch Benutzerinterakti
 Dies erzeugt eine akustische Rückmeldung in Form einer aufsteigenden Tonfolge (Low-High) mit einer kurzen Pause dazwischen.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_018a` vermittelt grundlegende Kenntnisse über die Verkettung von Ereignissen (Event Chaining) in IEC 61499. Sie zeigt praktisch, wie man eine sequentielle Logik aufbaut, bei der eine Aktion (Tonausgabe 1) die nächste Aktion (Verzögerung -> Tonausgabe 2) auslöst, ohne dass der Benutzer erneut eingreifen muss.

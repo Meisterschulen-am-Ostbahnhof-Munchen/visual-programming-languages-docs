@@ -1,17 +1,21 @@
 # F_NOW
+
 ![F_NOW](https://github.com/user-attachments/assets/3a8b2855-6d9a-49b3-ae77-6050fb2763d9)
 
 * * * * * * * * * *
 ## Introduction
+
 The **F_NOW** function is an IEC 61499-1 compliant helper function for querying the current local date and time, developed under the EPL-2.0 license (version 3.0).
 The function serves as a wrapper for the ST function NOW().
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `REQ`: Triggers the time query
 
 ### **Event Outputs**
+
 - `CNF`: Acknowledges the time query
 
 ### **Data Outputs**
@@ -23,12 +27,9 @@ The function serves as a wrapper for the ST function NOW().
 ## Functionality
 
 1. **Query**:
-
 - `REQ` triggers the time query
 - System time is captured in the local time zone
-
 2. **Output**:
-
 - `CNF` returns the result in DATE_AND_TIME format
 - Contains date and time with second accuracy
 
@@ -40,6 +41,7 @@ The function serves as a wrapper for the ST function NOW().
 ✔ **Eclipse 4diac integration**
 
 ## Application Scenarios
+
 - **Logging**: Timestamps for events
 - **Reports**: Generation with creation date
 - **Time-controlled processes**: Current time check
@@ -89,5 +91,5 @@ Ideal for:
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
+* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

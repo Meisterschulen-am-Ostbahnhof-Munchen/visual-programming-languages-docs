@@ -3,21 +3,26 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der RT_Bridge_11 Funktionsblock dient als Entkopplungsbrücke für 11 Datenverbindungen zwischen Echtzeit-Ereignisketten.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **RD**: Daten lesen.
 - **WR**: Daten schreiben.
 
 ### **Ereignis-Ausgänge**
+
 - **RDO**: Lese-Bestätigung.
 
 ### **Daten-Eingänge**
+
 - **SD_1** - **SD_11** (ANY): Eingangsdaten.
 
 ### **Daten-Ausgänge**
+
 - **RD_1** - **RD_11** (ANY): Ausgangsdaten.
 
 ## Metadaten
@@ -32,4 +37,5 @@ Der RT_Bridge_11 Funktionsblock dient als Entkopplungsbrücke für 11 Datenverbi
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,10 @@
 # AUI_D_FF_TMIN
+
 ![AUI_D_FF_TMIN](./AUI_D_FF_TMIN.svg)
 
 * * * * * * * * * * *
 ## Introduction
+
 The function block **AUI_D_FF_TMIN** implements a data-locking D flip-flop (data latch) with a minimum inter-disposal time between two consecutive output events. It serves to receive values via the unidirectional **AUI** adapter and pass them on with a defined minimum delay to prevent an excessively rapid sequence of events at the output.
 ## Interface Structure
 
@@ -58,6 +60,7 @@ The output of the stored value occurs only as an event on `Q.E1` and as a data v
 The block behaves like an edge-triggered D flip-flop, where each valid clock cycle (event on `I.E1`) takes over the current data value, but the actual transmission is time-limited.
 
 ## Technical Features
+
 - **Adapter-Based Input/Output** – The block uses only the standardized unidirectional **AUI** adapter. This makes it easy to integrate into existing adapter-oriented architectures.
 - **Reuse of Basic Components** – Internally, the IEC 61499 component `E_D_FF_ANY_TMIN` is used, which implements the time-limited throttling. This block encapsulates it and simplifies connection via adapters.
 - **No Dedicated State Machines** – The behavior is entirely determined by the internal component; The outer function block is purely configurable and connective.
@@ -75,6 +78,7 @@ The function block does not have an externally visible state machine (ECC). Inte
 These states are transparent to the user.
 
 ## Application Scenarios
+
 - **Sensor Value Smoothing** – Prevents a sensor that delivers measurements at short intervals from flooding the subsequent processing block with events.
 - **Actuator Control with Minimum Switching Time** – Ensures that an actuator (e.g., a valve) can only be switched after a defined minimum pause to reduce wear.
 - **Data Flow Limiting in Communication Lines** – Throttles the output rate of a data stream to prevent overloading the receiver.

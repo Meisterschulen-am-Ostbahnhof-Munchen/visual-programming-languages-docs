@@ -1,10 +1,13 @@
 # ILOCK_BLOCK
+
 ![ILOCK_BLOCK](./ILOCK_BLOCK.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ILOCK_BLOCK** implements an interlock between two opposing signals. It prioritizes the first arriving active signal and ignores all subsequent conflicting signals until the initial signal is released. This ensures that two opposing actions (e.g., Up/Down, Right/Left) are never activated simultaneously.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | With Variable | Description |
@@ -22,7 +25,6 @@ The function block **ILOCK_BLOCK** implements an interlock between two opposing 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-| Variable | Type | Comment |
 | |------------|------|-----------|
 | `DI_UP` | BOOL | TRUE = forward, upward, right, clockwise |
 | `DI_DOWN` | BOOL | TRUE = backward, downward, left, counterclockwise |
@@ -35,9 +37,11 @@ The function block **ILOCK_BLOCK** implements an interlock between two opposing 
 | `DO_DOWN` | BOOL | TRUE = backward, downward, left, counterclockwise |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 The module has two activation states (UP, DOWN) and two intermediate states (UP_STOP, DOWN_STOP) for deactivation. Control is achieved exclusively via the event inputs in conjunction with the data inputs.
 
 - **In the idle state (STOP)**, both outputs are set to FALSE.
@@ -49,6 +53,7 @@ The module has two activation states (UP, DOWN) and two intermediate states (UP_
 - **Ignoring Conflicting Signals:** As long as the function block is active (UP or DOWN), events in the opposite direction are completely ignored (no state change). This preserves the priority of the first signal.
 
 ## Technical Features
+
 - State transitions are event-driven and instantaneous (no delays).
 - Unlike a simple set/reset function block, the second input direction is not accepted during the interlock; the interlock can only be released by the original event itself.
 - All outputs are set back to FALSE after a stop.
@@ -73,15 +78,18 @@ DOWN_STOP **Transition Matrix (Simplified):**
 - `DOWN_STOP → STOP`: always (immediately)
 
 ## Application Scenarios
+
 - **Motor control (e.g., lifting platform, crane):** Prevents simultaneous travel in opposite directions.
 - **Valve control:** Protects against the simultaneous opening and closing of a process valve.
 - **Directional interlock in conveyor systems:** Ensures that a belt only activates one direction of rotation at a time.
 - **Safety-critical controls:** Enforces a clear, prioritized signal sequence.
 
 ## Comparison with similar function blocks
+
 - **Set/Reset (SR/R-SR):** Allows the simultaneous setting of both directions, which can lead to undefined states. The ILOCK_BLOCK prevents this through strict interlocking.
 - **State timer (e.g., with multiple states):** Offers more flexibility but requires manual implementation of the prioritization logic. The ILOCK_BLOCK directly encapsulates this logic.
 - **Simple Interlock via AND Gate:** Pure signal processing ignores the temporal sequence. The ILOCK_BLOCK reacts event-driven to the first valid activation.
 
 ## Conclusion
+
 The **ILOCK_BLOCK** is a specialized function block for interlock applications with prioritization of the first active input. Due to its clear state machine and event-driven processing, it is particularly suitable for time-critical and safety-related control systems where conflicting signals must be strictly excluded. It offers a robust alternative to classic set/reset logic and significantly reduces implementation effort.

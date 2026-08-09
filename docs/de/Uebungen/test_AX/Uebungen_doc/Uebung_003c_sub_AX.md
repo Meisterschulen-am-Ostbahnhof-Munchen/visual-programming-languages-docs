@@ -9,6 +9,7 @@ Hier ist die Dokumentation für die Sub-Applikation `Uebung_003c_sub_AX` basiere
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Sub-Applikation **Uebung_003c_sub_AX** dient als generischer Baustein zur Verbindung eines digitalen Eingangs (IX) mit einem Auxiliary-Ausgang (QX). Sie fungiert als Schnittstelle, um Signale vom LogiBUS-System auf das ISOBUS-Auxiliary-System zu mappen, wobei eine spezifische Eingangsnummer (`iInpNr`) berücksichtigt wird.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -16,6 +17,7 @@ Die Sub-Applikation **Uebung_003c_sub_AX** dient als generischer Baustein zur Ve
 In dieser Sub-Applikation werden spezifische Bausteine verschaltet, um die Weiterleitung der Signale zu realisieren.
 
 ### Sub-Bausteine: Interne Netzwerk-Komponenten
+
 Diese Sub-Applikation besteht intern aus zwei Hauptkomponenten, die über Adapter und Datenleitungen verbunden sind.
 
 - **Verwendete interne FBs**:
@@ -57,9 +59,11 @@ Der Ablauf innerhalb dieser Sub-Applikation ist linear und ereignisgesteuert dur
 Diese Übung verdeutlicht die Kapselung von Logik in Sub-Applikationen (`SubAppType`). Sie zeigt, wie man unterschiedliche Bussysteme (LogiBUS und ISOBUS Auxiliary) durch Adapterverbindungen innerhalb von 4diac verknüpft, ohne die interne Komplexität jedes Mal neu aufbauen zu müssen. Es ist ein grundlegender Baustein für modularisierte Steuerungssoftware in der Landtechnik.
 
 ## Zusammenfassung
+
 Die `Uebung_003c_sub_AX` ist ein wiederverwendbares Modul (SubApp), das einen digitalen LogiBUS-Eingang auf einen ISOBUS-Auxiliary-Ausgang abbildet. Durch die Parametrierung der Eingangsnummer (`iInpNr`) lässt sich der Baustein flexibel für verschiedene Eingänge verwenden, was die Erstellung größerer Steuerungsanwendungen vereinfacht und übersichtlicher gestaltet.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

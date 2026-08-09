@@ -1,4 +1,5 @@
 # Exercise_218b_ALR: Standard IEC 61131-3 AUDI_FB_CTD (Adapter Version, Down Counter, UDINT) with Terminal Output (PHYSA_LREAL)
+
 ![Uebung_218b_ALR_network](./Uebung_218b_ALR_network.svg)
 
 * * * * * * * * * *
@@ -6,10 +7,12 @@ This exercise implements a **down counter (CTD)** according to IEC 61131-3 using
 The implementation also allows **negative count values** – a corresponding message on the network indicates this. To reduce the event rate during rapid counting pulses, an **AX_D_FF** (flip-flop) could optionally be implemented.
 ---
 
-
 ## Function Blocks Used (FBs)
+
 ## Introduction
+
 ### Sub-Block: `AUDI_FB_CTD`
+
 - **Type**: `adapter::iec61131::counters::AUDI_FB_CTD`
 - **Internal FBs Used** (no other internal FBs)
 - **Parameters**: No custom parameters (all data is connected via adapters)
@@ -24,6 +27,7 @@ The implementation also allows **negative count values** – a corresponding mes
 The block decrements the internal counter by one on every positive edge event at the **CD** input. When an event occurs at input **LD**, the counter is loaded with the value of **PV**. Output **Q** becomes active as soon as the counter value is zero or less. The current counter value is available at **CV**.
 
 ### Sub-module: `AUDI_UDINT_TO_UDI`
+
 - **Type**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -40,6 +44,7 @@ When an event occurs at the **REQ** input, the parameterized UDINT value (here 1
 ---
 
 ### Sub-Block: `Input_CD`
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -54,6 +59,7 @@ When an event occurs at the **REQ** input, the parameterized UDINT value (here 1
 This block provides the digital input **Input_I1** (e.g., push button or sensor) as an adapter interface. When activated, the signal is forwarded at output `IN` and triggers a **CD** event on the connected counter.
 
 ### Sub-Block: `Input_LD`
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -70,6 +76,7 @@ Identical to `Input_CD`, but connected to **Input_I2**. A signal at this input l
 ---
 
 ### Sub-Block: `Output_Q1`
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -84,6 +91,7 @@ Identical to `Input_CD`, but connected to **Input_I2**. A signal at this input l
 This block sets the digital output **Output_Q1** to the value present at the adapter input `OUT`. It is used to display the counter status (Q).
 
 ### Sub-Block: `AUDI_TO_ALR`
+
 - **Type**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
 - **Internal Function Blocks Used**: None
 - **Parameters**: No custom parameters
@@ -98,6 +106,7 @@ This block converts the current counter value (UDINT) into a physical LREAL valu
 ---
 
 ### Sub-Block: `Q_NumericValue_PHYSA_LREAL`
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -111,23 +120,17 @@ The block receives the converted LREAL value and outputs it to the terminal (Out
 
 ---
 
-
 1. **Initialization**
 
 After the system starts, the function block `Input_LD` is initialized. This generates a `INITO` event, which triggers the function block `AUDI_UDINT_TO_UDI` (`REQ`). This block passes the fixed value **UDINT#10** to the counter's preset input.
 
 2. **Counting Operation**
-
 - Each positive signal at **Input_I1** (→ `Input_CD`) generates a **CD** event at the counter → the counter value is decremented by 1.
 - A signal at **Input_I2** (→ `Input_LD`) generates an **LD** event → the counter is reset to the last loaded preset value (initial 10).
-
 3. **Outputs**
-
 - The counter output **Q** is connected to the digital output **Output_Q1** via an adapter. The output lamp will then light up when the counter is ≤ 0.
 - The current counter value **CV** is converted to an LREAL value via `AUDI_TO_ALR` and output to the terminal (OutputNumber_N3) by `Q_NumericValue_PHYSA_LREAL`.
-
 4. **Notes from the Comments**
-
 - *“Negative values are possible here!”* – The counter can go below zero with continued CD events. The terminal output also displays negative LREAL values.
 - *“If necessary, add an AX_D_FF here to reduce the number of events.”* – For very fast pulses, a preceding flip-flop can dampen the event rate and prevent unwanted counts.
 
@@ -141,8 +144,6 @@ After the system starts, the function block `Input_LD` is initialized. This gene
 - Event: `Input_LD.INITO` → `AUDI_UDINT_TO_UDI.REQ`
 
 ---
-
-
 
 `` **Learning Objectives:**
 
@@ -161,5 +162,7 @@ After the system starts, the function block `Input_LD` is initialized. This gene
 ]
 
 ## Program Flow and Connections
+
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

@@ -11,18 +11,23 @@ Der Funktionsblock ALR_TO_AUDI ist ein zusammengesetzter Baustein (Composite FB)
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `ALR_IN.E1` – Ereigniseingang des ALR-Adapters; löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
+
 - `AUDI_OUT.E1` – Ereignisausgang des AUDI-Adapters; signalisiert die Fertigstellung der Konvertierung.
 
 ### **Daten-Eingänge**
+
 - `ALR_IN.D1` – LREAL-Eingangswert, der in einen UDINT-Wert umgewandelt wird.
 
 ### **Daten-Ausgänge**
+
 - `AUDI_OUT.D1` – UDINT-Ausgangswert, Ergebnis der Konvertierung.
 
 ### **Adapter**
+
 - **Socket** `ALR_IN` vom Typ `adapter::types::unidirectional::ALR` – Eingangsschnittstelle für LREAL-Werte mit Ereignis.
 - **Plug** `AUDI_OUT` vom Typ `adapter::types::unidirectional::AUDI` – Ausgangsschnittstelle für UDINT-Werte mit Ereignis.
 
@@ -68,4 +73,5 @@ Der ALR_TO_AUDI ist ein spezialisierter, aber dennoch einfacher Baustein zur Kon
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

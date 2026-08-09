@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ESC** ist ein standardkonformer Funktionsbaustein zur Abbruchsteuerung in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.8) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ESC](Q_ESC.svg)
@@ -12,14 +13,17 @@ Der **Q_ESC** ist ein standardkonformer Funktionsbaustein zur Abbruchsteuerung i
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Abbruchanforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Abbruchbestätigung (mit Status)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `s16result` (INT): ISO-konformer Ergebniscode
 

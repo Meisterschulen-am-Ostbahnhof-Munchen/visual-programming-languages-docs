@@ -1,8 +1,10 @@
 # I_TD_TD
+
 ![I_TD_TD](./I_TD_TD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **I_TD_TD** is a wrapper around the base block `I_TD` and generates a combined IEC 61131-3 date/time struct (type `DT`) from the individual time and date components. It serves as an interface to an ISOBUS-compliant time/date service (PGN 65254) and provides the processed time information as well as local time offsets as separate outputs.
 ## Interface Structure
 
@@ -64,6 +66,7 @@ If the internal service reports a timeout, the `TIMEOUT` event is activated at t
 The outputs `timestamp_data`, `timestamp_timeout`, `LOCAL_MINUTE_OFFSET`, and `LOCAL_HOUR_OFFSET` are taken unchanged from `I_TD`.
 
 ## Technical Features
+
 - **Wrapper Principle**
 
 This block simplifies the handling of the ISOBUS time service by combining the individual time components into a platform-compatible `DT` struct. The user does not need to perform any custom chaining of year, month, etc.
@@ -85,14 +88,12 @@ Processing is purely event-driven. Each cycle is initiated by the `IND` of the i
 The function block does not have an explicit internal state machine that would be visible to the user. However, the process can be divided into the following phases:
 
 1. **Idle State** – After initialization, the function block waits for the first `IND` of `I_TD`.
-
 2. **Active Processing** – `IND` of `I_TD` triggers `F_CONCAT_DT`; subsequently, the outer `IND` is output.
-
 3. **Timeout State** – If `I_TD` times out, `TIMEOUT` is output.
-
 4. **Initialization Phase** – The internal module is initialized during `INIT` and `INITO`.
 
 ## Application Scenarios
+
 - **ISOBUS Control Units**
 
 Used in agricultural control units that regularly query the current UTC time and the local time offset from the ISOBUS bus and require this data as a uniform data type (`DT`) for display or logging.
@@ -106,6 +107,7 @@ Used in systems that rely on an exact time base, e.g., recording devices (logger
 If subsequent function blocks do not expect access to individual time components, but only to a `DT` struct, `I_TD_TD` can serve as a link.
 
 ## Comparison with Similar Function Blocks
+
 - **I_TD (Basic Function Block)**
 
 Returns the time components as separate outputs (YEAR, MONTH, DAY, etc.). The user would have to concatenate them manually to a `DT`. `I_TD_TD` does this automatically and also adds the raw data timestamps.

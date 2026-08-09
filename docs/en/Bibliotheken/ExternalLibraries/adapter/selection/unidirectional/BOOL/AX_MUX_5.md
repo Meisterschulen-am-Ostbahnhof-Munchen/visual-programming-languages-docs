@@ -1,8 +1,10 @@
 # AX_MUX_5
+
 ![AX_MUX_5](./AX_MUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AX_MUX_5` is a generic multiplexer for adapters of type `AX`. It selects one of five unidirectional input adapters (`IN1`–`IN5`) based on the index `K` and forwards its data to the output adapter `OUT`. The block is controlled by the event `REQ`.
 ## Interface Structure
 
@@ -52,6 +54,7 @@ The module operates on the principle of a 5-to-1 adapter multiplexer. When the e
 After the switchover, the confirmation event `CNF` is output. The data from the selected adapter is transferred to the output adapter without delay.
 
 ## Technical Features
+
 - **Generic Function Block**: The function block is declared as a generic type (`GEN_AX_MUX`). The specific adapter implementation of `AX` is determined at runtime.
 - **Unidirectional Adapters**: Both the inputs and the output are defined as unidirectional interfaces – data flows in only one direction (from the socket to the plug).
 - **Index Range**: The index `K` is declared as `UINT`. Values outside the range 0..4 result in undefined behavior; this must be ensured by the application.
@@ -62,7 +65,6 @@ After the switchover, the confirmation event `CNF` is output. The data from the 
 The function block has no visible states; the logic is limited to event-driven switching. The following table shows the behavior depending on `K`:
 
 | Trigger | Condition | Action | Output |
-| Trigger | Condition | Action | Output |
 | |----------|-----------|----------------------------|---------|
 | `REQ` | `K = 0` | Connect `IN1` → `OUT` | `CNF` |
 | `REQ` | `K = 1` | Connect `IN2` → `OUT` | `CNF` |
@@ -72,6 +74,7 @@ The function block has no visible states; the logic is limited to event-driven s
 | Other | `K > 4` | No valid connection | undefined |
 
 ## Application Scenarios
+
 - **Sensor Selection**: In a machine control system, five different sensor values (e.g., temperature, pressure, position) can be provided via standardized AX adapters. The multiplexer selects the current sensor depending on the operating mode.
 - **Signal Routing**: In a test environment, multiple test signals are required at a central output. By switching the index, different test sources can be routed to the measuring device.
 - **Configurable Actuator Control**: Five actuators share a single control line. The function block allows one of the actuators to be selected sequentially and supplied with control data.

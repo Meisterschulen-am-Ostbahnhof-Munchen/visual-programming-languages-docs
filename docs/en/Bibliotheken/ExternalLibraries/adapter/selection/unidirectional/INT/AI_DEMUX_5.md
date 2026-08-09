@@ -1,8 +1,10 @@
 # AI_DEMUX_5
+
 ![AI_DEMUX_5](./AI_DEMUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AI_DEMUX_5** is a generic analog input demultiplexer for the 4diac IDE. It distributes an incoming AI (analog input) value via an adapter to one of five output adapters, controlled by an integer index K. The function block is implemented as a unidirectional adapter block and enables the flexible routing of analog signals in control applications.
 ## Interface Structure
 
@@ -78,6 +80,7 @@ The **AI_DEMUX_5** is a compact, generic demultiplexer for analog input signals 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

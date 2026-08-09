@@ -1,7 +1,10 @@
 # DataPanel_FREQ_SAE_J1939
+
 Frequency/Counter Inputs 7A-8A Status
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | Service Initialization | QI, u8SAMember |

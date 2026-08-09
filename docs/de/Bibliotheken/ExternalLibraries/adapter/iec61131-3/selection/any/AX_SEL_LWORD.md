@@ -13,20 +13,25 @@ Der Funktionsbaustein `AX_SEL_LWORD` dient der binären Auswahl (Selektion) zwis
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 * **`EI0`**: Signalisiert, dass der Eingangswert `IN0` aktualisiert bzw. neu gesetzt wurde.
 * **`EI1`**: Signalisiert, dass der Eingangswert `IN1` aktualisiert bzw. neu gesetzt wurde.
 
 ### **Ereignis-Ausgänge**
+
 * **`CNF`**: Bestätigungsereignis (Confirmation). Signalisiert dem nachfolgenden Netzwerk, dass ein neuer ausgewählter Wert am Datenausgang `OUT` anliegt.
 
 ### **Daten-Eingänge**
+
 * **`IN0` (`LWORD`)**: Erster auswählbarer Daten-Eingangswert (aktiv, wenn das Selektionssignal `G` logisch `FALSE` ist).
 * **`IN1` (`LWORD`)**: Zweiter auswählbarer Daten-Eingangswert (aktiv, wenn das Selektionssignal `G` logisch `TRUE` ist).
 
 ### **Daten-Ausgänge**
+
 * **`OUT` (`LWORD`)**: Der aktuell selektierte Daten-Ausgangswert.
 
 ### **Adapter**
+
 * **`G` (Typ: `adapter::types::unidirectional::AX`)**: Unidirektionaler Adapter-Socket, der als Selektor fungiert. Über diesen Adapter wird das Umschaltsignal empfangen.
 
 ## Funktionsweise

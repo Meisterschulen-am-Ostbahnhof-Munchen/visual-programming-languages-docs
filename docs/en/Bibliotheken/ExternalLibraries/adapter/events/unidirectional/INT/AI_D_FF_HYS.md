@@ -1,8 +1,10 @@
 # AI_D_FF_HYS
+
 ![AI_D_FF_HYS](./AI_D_FF_HYS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AI_D_FF_HYS** implements a clock-controlled D flip-flop (data latch) with configurable hysteresis. It serves to stably lock a binary or analog input signal and filter out disturbances in the signal waveform. The hysteresis prevents constant switching due to minor signal changes (bouncing, noise), thus ensuring a clean, latency-free output state.
 ## Interface Structure
 
@@ -84,6 +86,7 @@ The function block (FB) does not have explicit states in the sense of a finite a
 | Data Processing | Upon **I.E1**: Hysteresis comparison and, if necessary, acceptance |
 
 ## Application Scenarios
+
 - **Debouncing of Switches and Sensors**
 
 A mechanical contact produces bouncing signals. Hysteresis suppresses short-term changes and only passes on stable states.

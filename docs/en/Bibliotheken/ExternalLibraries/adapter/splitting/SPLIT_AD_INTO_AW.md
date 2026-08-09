@@ -1,8 +1,10 @@
 # SPLIT_AD_INTO_AW
+
 ![SPLIT_AD_INTO_AW](./SPLIT_AD_INTO_AW.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **SPLIT_AD_INTO_AW** is used to split a 32-bit DWORD value, received via a **AD** adapter (unidirectional), into two 16-bit WORD values and output them via two separate **AW** adapters (unidirectional). The splitting is event-driven, and the output data is stabilized by flip-flops until a new trigger arrives. The function block is implemented as a composite function block and internally uses the **SPLIT_DWORD_INTO_WORDS** function block as well as two **E_D_FF_ANY** flip-flops.
 
 ## Interface Structure
@@ -43,13 +45,9 @@ The adapters are designed as **unidirectional**:
 ## Functionality
 
 1. An event at input **IN.E1** triggers processing.
-
 2. The current DWORD value of **IN.D1** is read and passed to the internal function block **SPLIT_DWORD_INTO_WORDS**.
-
 3. This block splits the 32-bit value into two 16-bit words: **WORD_00** (lower order) and **WORD_01** (higher order).
-
 4. The two results are transferred in parallel to the flip-flops **E_D_FF_ANY_00** and **E_D_FF_ANY_01** and held there until the next event.
-
 5. Simultaneously, the output events **WORD_00.E1** and **WORD_01.E1** are triggered, indicating that the corresponding data (**WORD_00.D1** and **WORD_01.D1**) are valid.
 
 ...
@@ -68,6 +66,7 @@ The function block does not have an explicit state machine. Its behavior is pure
 - **Output:** The events at the outputs are triggered exactly once after processing.
 
 ## Application Scenarios
+
 - **Adapter-Based Decomposition:** Splitting a 32-bit value (e.g., from a sensor data word) into two 16-bit parts for separate processing chains.
 - **Communication Protocols:** Preparing data for interfaces that transmit WORD-wise (e.g., Modbus registers or CAN messages).
 - **Bit Manipulation:** Preprocessing for subsequent components that only expect WORD adapters.

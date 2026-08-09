@@ -1,8 +1,10 @@
 # ILOCK_2_E
+
 ![ILOCK_2_E](./ILOCK_2_E.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ILOCK_2_E** is an event-driven bistable toggle block with dual interlock. It is used to control two mutually exclusive outputs (OUT1, OUT2). In addition to explicit set and reset functions, the block offers an edge-triggered toggle function that allows a single toggle per activation. The block is particularly suitable for control logics where both outputs must never be TRUE simultaneously and a repeated toggle command only takes effect after being released again (e.g., by setting the other channel or resetting).
 ## Interface Structure
 
@@ -46,6 +48,7 @@ The internal logic provides **dual interlocking**: When one output is set, the o
 The **toggle function** is edge-triggered: The internal variables `EDGE1` and `EDGE2` store whether a toggle has already been executed on the corresponding channel. Only after a reset or a set of the other channel (`EDGE = FALSE`) is the toggle actually executed and the flag set to TRUE. Repeated CLK events without an intermediate set/reset of the same or the other channel are ignored.
 
 ## Technical Features
+
 - **Edge Detection for Toggle** – The internal flags `EDGE1`/`EDGE2` prevent multiple toggling events with the same enable signal.
 - **Always Exclusive Outputs** – Each algorithm ensures that both outputs are never TRUE simultaneously.
 - **No Data Inputs** – All control is exclusively event-based, enabling easy integration into event-driven automation systems.
@@ -65,6 +68,7 @@ The **toggle function** is edge-triggered: The internal variables `EDGE1` and `E
 All action states immediately revert to `STOP` after the algorithm is executed.
 
 ## Application Scenarios
+
 - **Direction Control** (e.g., motor left/right) – both directions are never active simultaneously.
 - **Pump Control with Priority** – two pumps, but only one may run at a time.
 - **Mode Switching with Single Toggle** – e.g., "Start/Stop" behavior, where a repeated toggle command only takes effect after a reset or other action.

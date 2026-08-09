@@ -1,6 +1,8 @@
 # TOF (Timer Off-Delay) - IEC 61131-3
+
 The function block **TOF** (Timer Off-Delay) implements a timer off. The output remains active for a defined period after the input signal ceases.
 ## Interface
+
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
 **Input** | IN | BOOL | Start Signal |

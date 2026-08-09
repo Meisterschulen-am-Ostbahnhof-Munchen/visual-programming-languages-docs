@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ChangePolygonScale** ist ein standardkonformer Funktionsbaustein zur Skalierung von Polygonobjekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.54) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ChangePolygonScale](Q_ChangePolygonScale.svg)
@@ -12,19 +13,23 @@ Der **Q_ChangePolygonScale** ist ein standardkonformer Funktionsbaustein zur Ska
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Polygon-Objekt-ID)
 - `REQ`: Skalierungsanforderung (mit neuen Abmessungen)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Skalierungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Polygon-Objekt-ID
 - `u16NewWidth` (UINT): Neue Breite in Pixeln
 - `u16NewHeight` (UINT): Neue Höhe in Pixeln
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u16OldWidth` (UINT): Vorherige Breite
 - `u16OldHeight` (UINT): Vorherige Höhe

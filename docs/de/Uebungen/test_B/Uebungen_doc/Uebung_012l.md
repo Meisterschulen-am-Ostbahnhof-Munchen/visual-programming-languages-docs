@@ -11,6 +11,7 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### StringValue_IS
+
 - **Typ**: `isobus::UT::io::StringValue::StringValue_IS`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -18,6 +19,7 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
 - **Funktionsweise**: Der Baustein empfängt den aktuellen Stringwert der ISOBUS‑Objektvariablen `InputString_S1`. Wann immer sich dieser Wert ändert (z. B. durch eine Eingabe am Terminal), wird am Ereignisausgang `IND` ein Signal erzeugt und der neue String am Datenausgang `IN` bereitgestellt.
 
 ### NVS
+
 - **Typ**: `logiBUS::storage::esp32_nvs::NVS`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -29,6 +31,7 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
   - Nach der Initialisierung (`INITO`) löst er automatisch einen `GET` aus.
 
 ### Q_StringValue
+
 - **Typ**: `isobus::UT::Q::Q_StringValue`
 - **Parameter**:
   - `u16ObjId` = `InputString_S1`
@@ -37,6 +40,7 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
 ## Programmablauf und Verbindungen
 
 ### Initialisierung (Start)
+
 1. Nach dem Start des Controllers erhält der `NVS`-Baustein das Ereignis `INITO`.
 2. Dieses Ereignis wird intern mit dem Ausgang `GET` verbunden (im XML als `Connection Source="NVS.INITO" Destination="NVS.GET" …` sichtbar). Somit wird sofort ein Lesevorgang ausgelöst.
 3. Der `NVS`-Baustein lädt den unter `KEY_S1_STORE` gespeicherten String (oder den Default‑Wert `"Test"`, falls noch kein Wert gespeichert wurde) und gibt ihn am Ausgang `VALUEO` aus.
@@ -44,12 +48,14 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
 5. `Q_StringValue` übernimmt den String von `NVS.VALUEO` (via `pau8String`) und schreibt ihn in die ISOBUS‑Variable `InputString_S1`.
 
 ### Änderung des Strings (z. B. durch Terminaleingabe)
+
 1. Sobald der Wert von `InputString_S1` von außen geändert wird (z. B. über ein Bedienterminal), erzeugt `StringValue_IS` ein Ereignis an `IND`.
 2. Dieses Ereignis ist mit dem `SET`-Eingang des `NVS`-Bausteins verbunden.
 3. `NVS` speichert den aktuellen String (von `StringValue_IS.IN` über die Datenverbindung an `NVS.VALUE`) unter dem Schlüssel `KEY_S1_STORE`.
 4. **Hinweis:** Nach dem Speichern wird **nicht** automatisch der `Q_StringValue` aktualisiert. Die Rückschreibung in die ISOBUS‑Variable erfolgt nur beim Start. Das ist beabsichtigt, da der Wert ja bereits im Terminal sichtbar ist.
 
 ### Datenverbindungen im Überblick
+
 - **Ereignisse**:
   - `NVS.INITO` → `NVS.GET` (initialer Lesevorgang)
   - `NVS.GETO` → `Q_StringValue.REQ` (Ausgabe des geladenen Strings)
@@ -59,16 +65,19 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
   - `StringValue_IS.IN` → `NVS.VALUE` (zu speichernder String)
 
 ### Wichtige Konstanten
+
 - **`KEY_S1_STORE`**: Der NVS‑Schlüssel, unter dem der String gespeichert wird.  
 - **`InputString_S1`**: Die ID der ISOBUS‑Stringvariablen, die als Quelle und Ziel dient.
 
 ## Lernziele
+
 - Verständnis der nichtflüchtigen Speicherung (NVS) auf ESP32‑Systemen.
 - Umgang mit ISOBUS‑Stringvariablen in 4diac.
 - Ereignisgesteuerte Abläufe: Initialisierung und reaktive Speicherung.
 - Verwendung von vordefinierten Konstanten (Schlüssel, Objekt‑IDs).
 
 ## Benötigte Vorkenntnisse
+
 - Grundlegende Bedienung der 4diac‑IDE.
 - Grundlagen der ISOBUS‑Kommunikation (Objekt‑IDs, Werte lesen/schreiben).
 - Einfaches Verständnis von ereignisgesteuerten Systemen.
@@ -80,5 +89,6 @@ Die Übung `Uebung_012l` zeigt, wie ein ISOBUS‑String in den NVS‑Speicher de
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

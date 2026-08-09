@@ -13,6 +13,7 @@ Ein zusätzlicher **Low-Side-Treiber** wird bei jeder aktiven Drehrichtung einge
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Digitaleingänge
+
 - **DigitalInput_I1** (Typ: `logiBUS::io::DI::logiBUS_IX`)
   - Parameter: `QI = TRUE`, `Input = Input_I1`
   - Ereignisausgang: `IND`
@@ -24,6 +25,7 @@ Ein zusätzlicher **Low-Side-Treiber** wird bei jeder aktiven Drehrichtung einge
   - Datenausgang: `IN`
 
 ### Interlock-Baustein
+
 - **ILOCK** (Typ: `logiBUS::signalprocessing::interlock::ILOCK_SWITCH`)
   - Ereigniseingänge: `EI_UP`, `EI_DOWN`
   - Dateneingänge: `DI_UP`, `DI_DOWN`
@@ -31,6 +33,7 @@ Ein zusätzlicher **Low-Side-Treiber** wird bei jeder aktiven Drehrichtung einge
   - Datenausgänge: `DO_UP`, `DO_DOWN`
 
 ### Digitalausgänge
+
 - **Rechtslauf** (Typ: `logiBUS::io::DQ::logiBUS_QX`)
   - Parameter: `QI = TRUE`, `Output = Output_Q5`
   - Eingang: `REQ`, Daten: `OUT`
@@ -44,6 +47,7 @@ Ein zusätzlicher **Low-Side-Treiber** wird bei jeder aktiven Drehrichtung einge
   - Eingang: `REQ`, Daten: `OUT`
 
 ### Logikgatter
+
 - **OR_2_BOOL** (Typ: `iec61131::bitwiseOperators::OR_2_BOOL`)
   - Ereigniseingang: `REQ`
   - Dateneingänge: `IN1`, `IN2`
@@ -90,4 +94,5 @@ Die Übung vermittelt die sichere Ansteuerung eines Reversiermotors mittels Inte
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

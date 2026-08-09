@@ -1,8 +1,10 @@
 # Exercise_004b6_AX: Toggle Flip-Flop with IXA / AX_PERMIT + AX_T_FF
+
 ![Uebung_004b6_AX_network](./Uebung_004b6_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of a toggle flip-flop (T-FF) in combination with an enable mechanism. A digital input (logiBUS_IXA) is routed via an **AX_PERMIT** adapter to the clock input of an **AX_T_FF** adapter. The output of the T-FF controls a digital output (logiBUS_QXA). This allows the output state to be toggled on every rising edge at the input – but only if the input has been previously enabled by **AX_PERMIT**.
 ## Function Blocks (FBs) Used
 
@@ -14,6 +16,7 @@ This exercise demonstrates the use of a toggle flip-flop (T-FF) in combination w
 | `AX_T_FF` | `adapter::events::unidirectional::AX_T_FF` | (No parameters set) |
 
 ### Adapter Descriptions
+
 - **logiBUS_IXA**: Reads a digital input from the logiBUS hardware.
 - **logiBUS_QXA**: Switches a digital output from the logiBUS hardware.
 - **AX_PERMIT**: An adapter that only passes on an incoming event if the connected adapter input (here, the input value) is active.
@@ -24,18 +27,15 @@ This exercise demonstrates the use of a toggle flip-flop (T-FF) in combination w
 The diagram shows the following connections (from the SubAppNetwork configuration):
 
 1. **Adapter Connection**:
-
 - `DigitalInput_I1.IN` (output of the input block) → `AX_PERMIT.PERMIT`
 
 *(The digital input value enables the AX_PERMIT adapter.)*
 
 2. **Event Connection**:
-
 - `AX_PERMIT.EO` (event output of the enable adapter) → `AX_T_FF.CLK`
 *(An event is only sent to the clock input of the T-FF when the enable is active.)*
 
 3. **Adapter Connection**:
-
 - `AX_T_FF.Q` (state output of the T-FF) → `DigitalOutput_Q1.OUT`
 *(The current The flip-flop state is passed to the digital output.)*
 

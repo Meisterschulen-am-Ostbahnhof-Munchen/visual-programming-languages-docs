@@ -1,13 +1,16 @@
 # Exercise_171_ASR: Exercise for ASR_AX_SR
+
 ![Uebung_171_ASR_network](./Uebung_171_ASR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the application of an asynchronous set-reset flip-flop (ASR) in the 4diac IDE. Two pushbuttons connected to the digital inputs I1 and I2 control the setting and resetting of a memory chip, whose output switches a digital output Q1. The exercise teaches fundamental concepts of event processing and the coupling of hardware inputs with an RS memory module.
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: DigitalInput_CLK_I1 and DigitalInput_CLK_I2
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Internal FBs Used**: None (Hardware Configuration Block)
 - **Parameters**:
@@ -19,6 +22,7 @@ This exercise demonstrates the application of an asynchronous set-reset flip-flo
 - **Functionality**: The blocks represent the Digital inputs of the logiBUS hardware. They detect a single click on the corresponding input channel and output an event (`IND`).
 
 ### Sub-block: ASR_2EVENTS_TO_SR
+
 - **Type**: `adapter::conversion::unidirectional::ASR_2EVENTS_TO_SR`
 - **Internal Function Blocks Used**: None (conversion block)
 - **Parameters**: None
@@ -27,6 +31,7 @@ This exercise demonstrates the application of an asynchronous set-reset flip-flo
 - **Functionality**: This block converts two separate events (SET and RESET) into an adapter interface that enables the control of an ASR flip-flop. An incoming SET event sets the output adapter to the set state, a RESET event to the reset state.
 
 ### Sub-module: ASR_AX_SR_1
+
 - **Type**: `adapter::events::unidirectional::ASR_AX_SR`
 - **Internal Function Blocks Used**: None (ASR memory module)
 - **Parameters**: None
@@ -50,7 +55,6 @@ This exercise demonstrates the application of an asynchronous set-reset flip-flo
 The flow is determined by the event and data connections in the SubApp network:
 
 1. **Input Events**:
-
 - Pressing a key on `Input_I1` triggers the event `IND` in the block `DigitalInput_CLK_I1`. This event is then routed to the event input `SET` of the converter `ASR_2EVENTS_TO_SR`.
 - Pressing a key on `Input_I2` triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
 
@@ -60,9 +64,7 @@ The flow is determined by the event and data connections in the SubApp network:
 
 - The converter `ASR_2EVENTS_TO_SR` sets the output adapter `ASR_OUT` according to the last incoming event (SET or RESET).
 - The adapter output is connected to the adapter input `S_R` of the ASR module `ASR_AX_SR_1`.
-
 3. **Memory and Output**:
-
 - The ASR module responds to the incoming adapter signal and updates its output `Q`.
 - The output `Q` is connected to the data input `OUT` of the digital output module `DigitalOutput_Q1`. This switches the physical output Q1 on or off accordingly.
 - **Learning Objectives**: Understanding event control, working with adapter modules, simple memory function (RS flip-flop).
@@ -77,6 +79,7 @@ Exercise `Uebung_171_ASR` demonstrates the implementation of an asynchronous RS 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

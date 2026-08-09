@@ -1,8 +1,10 @@
 # Hysteresis_AR_AX
+
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `Hysteresis_AR_AX` implements an analog-to-digital threshold circuit with hysteresis. It converts an analog input value (via an AR adapter) into a Boolean output (via an AX adapter), applying a defined hysteresis band around a mean value (threshold). The switching behavior is defined as follows:
 
 - **Switch-on**: occurs when the input value reaches or exceeds the value `THRESHOLD + (HYSTERESIS / 2.0)` (inclusive).
@@ -49,20 +51,20 @@ Durch die Hysterese wird ein stabiles Schaltverhalten erreicht, das Oszillatione
 
 Der FB arbeitet als endlicher Automat (ECC) mit folgenden Zuständen und Übergängen:
 
-1. **START** → **Init**  
-Auslöser: Eintreffen von `INIT` bei `QI = TRUE`.  
+1. **START** → **Init**
+Auslöser: Eintreffen von `INIT` bei `QI = TRUE`.
 Aktion: Das Initialisierungs‑Algorithmus wird ausgeführt: `QO := QI; OUTPUT.D1 := FALSE`.
 
-2. **Init** → **sOFF**  
-Auslöser: Ein Ereignis am Eingangs‑Adapter `INPUT.E1`.  
+2. **Init** → **sOFF**
+Auslöser: Ein Ereignis am Eingangs‑Adapter `INPUT.E1`.
 Der FB beginnt im ausgeschalteten Zustand.
 
-3. **sOFF**  
-Aktion: Ausführen von `alOff` – setzt `OUTPUT.D1 := FALSE; QO := QI`.  
+3. **sOFF**
+Aktion: Ausführen von `alOff` – setzt `OUTPUT.D1 := FALSE; QO := QI`.
 Übergänge:
 
 - Bei erneutem `INIT` mit `QI = FALSE` → **DeInit** (Deinitialisierung).
-- Bei wiederholtem Ereignis `INPUT.E1` **und** der Bedingung  
+- Bei wiederholtem Ereignis `INPUT.E1` **und** der Bedingung
 INPUT.D1 > = THRESHOLD.D1 + (ABS(HYSTERESIS.D1) / 2.0)) → **sON** (switch on).
 
 4. **sON**
@@ -85,6 +87,7 @@ Transition: always (`1`) back to **START**.
 Hysteresis is always calculated using the absolute value of the hysteresis, so negative inputs are also processed correctly.
 
 ## Technical Features
+
 - **Strict Shutdown**: The shutdown condition uses a strict inequality (`<`), not `<=`. This decision (version 1.2) prevents oscillations. Exactly at the switch-off threshold.
 - **Hysteresis Value**: The hysteresis value is converted to its absolute value before being halved using `ABS`. This allows the hysteresis to be passed as a negative value without changing the behavior.
 - **Initialization Behavior**: After `INIT` with `QI=TRUE`, the output `OUTPUT.D1` is set to `FALSE`. It only becomes active when the switch-on threshold is exceeded.
@@ -101,6 +104,7 @@ Hysteresis is always calculated using the absolute value of the hysteresis, so n
 | `DeInit` | Deinitialization; resets outputs and returns to START. |
 
 ## Application Scenarios
+
 - **Threshold switch for sensors**: E.g., temperature, pressure, or fill level – the digital output activates a display or actuator as soon as a measured value exceeds a threshold. Hysteresis exceeded.
 - **Analog signal debouncing**: Prevents rapid switching changes with noisy signals.
 - **Two-point controller (on/off control)**: Directly applicable in simple control loops, e.g., heating on/off.

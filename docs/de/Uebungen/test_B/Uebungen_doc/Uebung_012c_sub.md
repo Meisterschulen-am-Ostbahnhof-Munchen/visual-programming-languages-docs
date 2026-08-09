@@ -13,6 +13,7 @@ Der Baustein wird typischerweise verwendet, um Konfigurationsdaten oder gemessen
 ## Verwendete Funktionsbausteine (FBs)
 
 ### FB: ID (isobus::UT::io::NumericValue::NumericValue_ID)
+
 - **Parameter**: `QI` = `TRUE`
 - **Ereignisse**:
   - Ereigniseingänge: keine sichtbaren
@@ -22,6 +23,7 @@ Der Baustein wird typischerweise verwendet, um Konfigurationsdaten oder gemessen
 - **Funktionsweise**: Liest einen numerischen Wert von einer bestimmten Objekt‑ID (z. B. aus einem ISOBUS‑Netzwerk). Bei erfolgreichem Empfang wird das Ereignis `IND` gesendet und der Wert an `IN` ausgegeben.
 
 ### FB: F_DWORD_TO_UDINT (iec61131::conversion::F_DWORD_TO_UDINT)
+
 - **Parameter**: keine
 - **Ereignisse**:
   - Ereigniseingänge: `REQ`
@@ -31,6 +33,7 @@ Der Baustein wird typischerweise verwendet, um Konfigurationsdaten oder gemessen
 - **Funktionsweise**: Konvertiert einen DWORD-Wert in einen UDINT-Wert. Der konvertierte Wert wird nach Abschluss der Konvertierung am Ausgang `OUT` bereitgestellt.
 
 ### FB: INI (eclipse4diac::storage::INI)
+
 - **Parameter**: `QI` = `TRUE`, `DEFAULT_VALUE` = `UDINT#0`
 - **Ereignisse**:
   - Ereigniseingänge: `SET`, `GET`, `INI`
@@ -40,6 +43,7 @@ Der Baustein wird typischerweise verwendet, um Konfigurationsdaten oder gemessen
 - **Funktionsweise**: Speichert einen Wert unter einem Schlüssel (`KEY`) in einer Sektion (`SECTION`) in einer INI‑artigen Struktur. Wird `SET` getriggert, wird der aktuelle `VALUE` gespeichert und `SETO` ausgelöst. Wird `GET` getriggert, wird der gespeicherte Wert gelesen und an `VALUEO` ausgegeben sowie `GETO` gesendet. Beim Initialisieren (Ereignis `INI`) wird der Wert aus dem Speicher geladen oder der `DEFAULT_VALUE` verwendet.
 
 ### FB: Q_NumericValue (isobus::UT::Q::Q_NumericValue)
+
 - **Parameter**: keine
 - **Ereignisse**:
   - Ereigniseingänge: `REQ`
@@ -109,4 +113,5 @@ Die SubApp demonstriert die typische Vorgehensweise für eine zyklische Datenauf
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

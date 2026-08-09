@@ -1,10 +1,11 @@
 # Exercise_206: Interlock: ILOCK_T_FF (Two mutually interlocked toggle flip-flops via an adapter chain)
+
 ![Uebung_206_network](./Uebung_206_network.svg)
 
 * * * * * * * * * *
 ## Introduction
-This exercise demonstrates the mutual interlocking of two toggle flip-flops. Each button (I1 and I2) controls a separate output (Q1 and Q2, respectively). The special feature is that the two flip-flops are connected via an adapter ("ILOCK"), so that only one of the two outputs can be active at any given time. When the other button is pressed, the previously active output is reset and the new output is set. This creates a simple alternating flashing circuit with mutual interlocking.
 
+This exercise demonstrates the mutual interlocking of two toggle flip-flops. Each button (I1 and I2) controls a separate output (Q1 and Q2, respectively). The special feature is that the two flip-flops are connected via an adapter ("ILOCK"), so that only one of the two outputs can be active at any given time. When the other button is pressed, the previously active output is reset and the new output is set. This creates a simple alternating flashing circuit with mutual interlocking.
 
 ## Function Blocks (FBs) Used
 
@@ -16,7 +17,6 @@ This exercise demonstrates the mutual interlocking of two toggle flip-flops. Eac
 - **DigitalOutput_Q1** and **DigitalOutput_Q2**: `logiBUS::io::DQ::logiBUS_QX`
 - Parameters: `QI = TRUE`, `Output = Output_Q1`, and `Output_Q2`
 - These function blocks pass the data value to the hardware output as soon as an event occurs at `REQ`.
-
 
 ## Program Flow and Connections
 

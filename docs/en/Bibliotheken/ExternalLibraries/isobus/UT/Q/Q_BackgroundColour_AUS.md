@@ -1,8 +1,10 @@
 # Q_BackgroundColour_AUS
+
 ![Q_BackgroundColour_AUS](./Q_BackgroundColour_AUS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **Q_BackgroundColour_AUS** is used to change the background color of an object in the ISOBUS Virtual Terminal (VT). It encapsulates the corresponding command interface according to ISO 11783-6 (Part 6 – F.20).
 The block is supplied with the new color via a socket and returns the previous color via a plug. The actual color change is performed by the internal block `Q_BackgroundColour`.
 
@@ -35,6 +37,7 @@ The block is supplied with the new color via a socket and returns the previous c
 | `s16result` | INT | Return value (see description – error codes) |
 
 ### **Adapter**
+
 * **Socket** `u8Colour`
 
 Type: `adapter::types::unidirectional::AUS`
@@ -69,6 +72,7 @@ After the command is completed, the internal module sends a `CNF` event.
 * Simultaneously, the previous color value (data `D1`) and an acknowledgment event (`E1`) are output via the plug `u8OldColour`.
 *
 ## Technical Features
+
 * The module implements the "Change Background Colour" command according to ISO 11783-6, section F.20.
 * The color values correspond to the VT standard color palette from Annex A.3 of the standard.
 
@@ -88,14 +92,12 @@ After the command is completed, the internal module sends a `CNF` event.
 The function block (FB) does not have an explicit state machine at the top level, but the interaction with `INIT`, `REQ` (via adapter), and `CNF` results in the following implicit states:
 
 1. **IDLE** – Waiting for `INIT` or for an event on socket `u8Colour`.
-
 2. **INIT** – After `INIT`, the internal block is initialized.
-
 3. **READY** – After `INITO`, the FB is ready to receive color changes.
-
 4. **BUSY** – During the execution of the color change command (after `REQ`). 5. **DONE** – After `CNF`, the next command can be processed.
 
 ## Application Scenarios
+
 * **ISOBUS Virtual Terminal**
 
 Changing the background color of a graphical object (e.g., button, group, softkey) on the VT screen in an agricultural control system.
@@ -110,6 +112,7 @@ The `u8OldColour` plugin allows you to save the previous color value or use it f
 
 *
 ## Comparison with Similar Function Blocks
+
 * **`Q_BackgroundColour`** (without `_AUS`):
 
 Offers the same core functionality, but usually with individual event/data ports instead of encapsulated adapters. The `_AUS` function block simplifies the connection to other function blocks that also use AUS adapters.

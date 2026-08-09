@@ -355,7 +355,8 @@ def shift_headings(markdown_text, shift, page_id):
                     attached_id = True
                     
                 if shift > 0:
-                    new_hashes = '#' * (len(hashes) + shift)
+                    new_level = min(len(hashes) + shift, 6)
+                    new_hashes = '#' * new_level
                     line = f"{new_hashes} {title}{id_suffix}"
                 else:
                     line = f"{hashes} {title}{id_suffix}"

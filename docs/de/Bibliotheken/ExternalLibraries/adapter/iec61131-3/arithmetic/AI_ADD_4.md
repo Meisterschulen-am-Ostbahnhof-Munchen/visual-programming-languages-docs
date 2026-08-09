@@ -22,26 +22,32 @@ Der Funktionsbaustein `AI_ADD_4` ist ein generischer Arithmetik-Baustein für di
 Der Baustein besitzt keine klassischen ereignis- oder datenbasierten Ein- und Ausgänge auf der obersten Ebene. Die gesamte Kommunikation wird über Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignissteuerung ist in den Adaptern gekapselt.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignissteuerung ist in den Adaptern gekapselt.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster Summand für die Additionsoperation.
 *   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter Summand für die Additionsoperation.
 *   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter Summand für die Additionsoperation.
 *   **IN4** (Typ: `adapter::types::unidirectional::AI`): Vierter Summand für die Additionsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AI`): Ausgangsadapter, der das Ergebnis der Addition (`IN1 + IN2 + IN3 + IN4`) bereitstellt.
 
 ## Funktionsweise

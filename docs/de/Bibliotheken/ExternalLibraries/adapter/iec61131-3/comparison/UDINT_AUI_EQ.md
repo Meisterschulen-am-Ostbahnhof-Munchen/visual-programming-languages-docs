@@ -17,6 +17,7 @@ Der Funktionsbaustein **UDINT_AUI_EQ** dient dem Vergleich zweier Werte auf Glei
 | REQ  | Event | IN1 | Dient als Auslöser für den Vergleich. Der Wert von IN1 wird bei einem Ereignis am REQ-Eingang verarbeitet. |
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge vorhanden. Das Ergebnis wird über den Adapter-Ausgang (OUT) signalisiert.
 
 ### **Daten-Eingänge**
@@ -26,6 +27,7 @@ Keine direkten Ereignis-Ausgänge vorhanden. Das Ergebnis wird über den Adapter
 | IN1  | ANY_ELEMENTARY | Erster zu vergleichender Wert. Der Datentyp kann jeder elementare Typ (z. B. BOOL, INT, REAL, UDINT) sein. |
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Das Vergleichsergebnis wird über den Adapter-Ausgang (OUT) bereitgestellt.
 
 ### **Adapter**

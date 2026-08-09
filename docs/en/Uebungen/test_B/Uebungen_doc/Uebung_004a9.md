@@ -1,8 +1,10 @@
 # Exercise_004a9: with E_SPLIT_3
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a9`. Here, the concept of sequential event splitting is extended to three objectives.
 ----
 ## Objective of the Exercise
+
 Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three processes can be triggered sequentially with a single trigger.
 
 -----
@@ -27,9 +29,7 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 A single click of the button triggers a defined sequence of events:
 
 1. `EO1` fires ➡️ `Q1` toggles.
-
 2. `EO2` fires ➡️ `Q2` toggles.
-
 3. `EO3` fires ➡️ `Q3` toggles.
 
 The processing in the control system is so fast that the lights switch on and off simultaneously for the viewer; however, the internal sequence is strictly defined.

@@ -1,8 +1,10 @@
 # Exercise_003b2: Wireless 16 Buttons to DataPanel 16
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003b2`. This exercise demonstrates the system's scalability by mapping 15 buttons of a wireless remote control to 15 digital outputs of a DataPanel.
 ----
 ## Objective of the Exercise
+
 The objective of this exercise is the efficient management of a large number of hardware interfaces. By using standardized sub-applications with exposed parameters, the complete mapping between wireless inputs and CAN bus outputs can be performed centrally in the main application without having to modify the internal logic.
 
 ## Description and Components
@@ -34,11 +36,8 @@ In `Uebung_003b2`, the assignments are clearly defined:
 The signal path is event-driven via the CAN bus infrastructure:
 
 1. The user presses a button on the remote control.
-
 2. The instance of type `Funk_IX` within the corresponding sub-application detects the button press and triggers a `IND` event.
-
 3. This event is routed directly to the `REQ` input of the `DataPanel_MI_QX` module.
-
 4. The output module then generates a CAN message for the DataPanel to switch the assigned physical output on or off.
 
 Since all 15 instances operate in parallel and independently, any number of buttons can be operated simultaneously.

@@ -1,4 +1,5 @@
 # Funk_DI_S
+
 Funk_DI Struct
 ##Structure
 | Name | Type | Initial Value |
@@ -8,6 +9,6 @@ Funk_DI Struct
 * [Uebung_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
 * [Uebung_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
 
-
 ## Structure
+
 ## 🛠️ Zugehörige Übungen

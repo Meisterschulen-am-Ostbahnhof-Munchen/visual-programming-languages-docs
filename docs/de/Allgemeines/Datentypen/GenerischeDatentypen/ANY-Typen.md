@@ -19,9 +19,11 @@ flowchart TD
 ## Beschreibung der Gruppen
 
 ### ANY_ELEMENTARY
+
 Diese Gruppe umfasst alle vordefinierten Standard-Datentypen der Norm.
 
 #### ANY_MAGNITUDE (Größentypen)
+
 Typen, die eine Größe darstellen und für arithmetische Operationen geeignet sind. Hier wird weiter zwischen numerischen Typen und Zeitdauern unterschieden.
 
 ```mermaid
@@ -51,6 +53,7 @@ flowchart TD
 *   **ANY_DURATION**: Zeitdauer-Typen (`TIME`, `LTIME`).
 
 #### ANY_BIT (Bitfolgetypen)
+
 Typen zur Darstellung von Bitfolgen.
 
 ```mermaid
@@ -63,6 +66,7 @@ flowchart TD
 ```
 
 #### ANY_CHARS (Zeichentypen)
+
 Typen für Zeichen und Zeichenfolgen.
 
 ```mermaid
@@ -76,6 +80,7 @@ flowchart TD
 ```
 
 #### ANY_DATE (Datumstypen)
+
 Typen für Datums- und Uhrzeitangaben.
 
 ```mermaid
@@ -88,9 +93,11 @@ flowchart TD
 ```
 
 ### ANY_DERIVED
+
 Diese Gruppe umfasst alle vom Anwender definierten Datentypen (z.B. `STRUCT`, `ENUM`, `ARRAY`), die nicht direkt auf einen elementaren Typ zurückzuführen sind.
 
 ## Verwendung
+
 Generische Datentypen werden primär in Standard-Bibliotheken verwendet. Ein Beispiel ist die `ADD`-Funktion, die am Eingang den Typ `ANY_NUM` akzeptiert und somit sowohl zwei `INT` als auch zwei `REAL` Werte addieren kann.
 
 In anwenderdefinierten Programm-Organisationseinheiten (POEs) ist die Verwendung von `ANY`-Typen laut Norm nicht vorgesehen und bleibt herstellerspezifischen Erweiterungen vorbehalten.

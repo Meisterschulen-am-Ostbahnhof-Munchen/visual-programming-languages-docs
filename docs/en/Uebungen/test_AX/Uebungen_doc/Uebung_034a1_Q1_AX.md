@@ -1,14 +1,17 @@
 # Exercise_034a1_Q1_AX: Numeric Value Input to PWM Output (Adapter Version)
+
 ![Uebung_034a1_Q1_AX_network](./Uebung_034a1_Q1_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the simple connection of a **numeric value input** (ISOBUS NumericValue) to a **PWM output** via a direct adapter connection. After confirmation (OK button), the entered numeric value is output to the PWM output of the logiBUS module (channel Q1).
 This exercise is implemented as a **SubAppType** and uses only adapters for signal transmission, thus eliminating the need for separate data and event connections.
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `Uebung_034a1_Q1_AX`
+
 - **Type**: SubAppType (compound block)
 - **Internal FBs Used**:
 - **`PWM_Value`**: `isobus::UT::io::NumericValue::NumericValue_IDA`
@@ -25,9 +28,7 @@ This exercise is implemented as a **SubAppType** and uses only adapters for sign
 ## Program Flow and Connections
 
 1. The user enters a numerical value at an ISOBUS terminal via the object `InputNumber_PWM_Value`.
-
 2. After pressing the OK button, the value is received by the function block `PWM_Value` and made available at its adapter output `IN`.
-
 3. The adapter output is directly connected to the adapter input `OUT` of the function block `PWMOutput_Q1`:
 
 Verbindung: PWM_Value.IN → PWMOutput_Q1.OUT
@@ -43,6 +44,7 @@ This exercise demonstrates a **minimal configuration for controlling a PWM outpu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 

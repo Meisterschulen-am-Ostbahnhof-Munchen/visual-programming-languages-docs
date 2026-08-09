@@ -4,11 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert einen **Toggle-Flip-Flop** (Wechselschalter) unter Verwendung von **Ereignis-Eingängen** (IE) und einem **Rendezvous-Baustein** (`RT_E_REND`).  
 Das System erwartet zwei Tasterereignisse (Eingänge I1 und I2), die innerhalb einer bestimmten Zeitschranke (Deadline) eintreffen müssen. Erst wenn beide Ereignisse synchronisiert wurden, wird der Flip-Flop getaktet und der Digitalausgang Q1 umgeschaltet. Ein dritter Taster (I3) dient als Reset für den Rendezvous-Mechanismus.  
 Die Übung demonstriert den Umgang mit zeitkritischen Ereignisverbindungen, Rendezvous-Synchronisation und einfachen Toggle-Funktionen in der 4diac-IDE.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die SubApp verwendet folgende (Sub-)Bausteine:
 
 - **`DigitalInput_CLK_I1`** – Typ: `logiBUS::io::DI::logiBUS_IE`  
@@ -88,6 +90,7 @@ Die SubApp verwendet folgende (Sub-)Bausteine:
 | `AX_T_FF.Q` (Adapter) | `DigitalOutput_Q1.OUT` (Adapter) |
 
 ## Zusammenfassung
+
 Die Übung zeigt:  
 
 - Die Verwendung von **Ereignis-Eingängen** (`logiBUS_IE`) zur Erfassung von Tasterdrücken.  
@@ -100,4 +103,5 @@ Damit wird die Grundlage für zeitkritische, ereignisgesteuerte Logik in der Aut
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -6,11 +6,13 @@ Analog-Eingang auf PWM Ausgang (Adapter Version)
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung eines analogen Eingangs zur Ansteuerung eines PWM-Ausgangs über eine Adapterverbindung. Das Signal des analogen Eingangs wird zuerst durch eine Bitverschiebung (Shift Left) verarbeitet, bevor es an den PWM-Ausgang weitergegeben wird. Die Initialisierung des PWM-Ausgangs erfolgt über ein Ereignis, das vom analogen Eingang ausgelöst wird.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: AnalogInput\_I7
+
 - **Typ**: `logiBUS::io::AI::logiBUS_AI_IDA`
 - **Verwendete interne FBs**: Keine (Hardwaretreiberbaustein)
   - **Parameter**:
@@ -24,6 +26,7 @@ Diese Übung demonstriert die Verwendung eines analogen Eingangs zur Ansteuerung
 - **Funktionsweise**: Liest den analogen Eingangswert des angeschlossenen logiBUS-Moduls ein. Der Parameter `AnalogInput_hysteresis` reduziert Signalrauschen. Bei erfolgreicher Initialisierung wird das Ereignis `INITO` gesendet.
 
 ### Sub-Bausteine: PWMOutput\_Q4
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QDA_PWM`
 - **Verwendete interne FBs**: Keine (Hardwaretreiberbaustein)
   - **Parameter**:
@@ -36,6 +39,7 @@ Diese Übung demonstriert die Verwendung eines analogen Eingangs zur Ansteuerung
 - **Funktionsweise**: Steuert den digitalen Ausgangskanal Q4 als PWM-Ausgang. Der über den Adaptereingang `OUT` erhaltene Wert bestimmt das Tastverhältnis (Pulsweite). Der Ausgang wird mit dem Ereignis `INIT` aktiviert.
 
 ### Sub-Bausteine: AD\_SHL
+
 - **Typ**: `adapter::iec61131::bitwise::AD_SHL`
 - **Verwendete interne FBs**: Keine (reine Logik)
   - **Parameter**:
@@ -70,10 +74,12 @@ Somit erfolgt die gesamte Datenübertragung adaptierbar und bidirektional über 
 **Benötigte Vorkenntnisse**: Grundlegende Kenntnisse der 4diac-IDE und der logiBUS-Hardware
 
 ## Zusammenfassung
+
 Die Übung "Uebung_034_AD" zeigt eine einfache, aber praxisrelevante Anwendung: die Umsetzung eines analogen Messwerts in ein PWM-Signal unter Verwendung von Adapterverbindungen. Der Analogwert wird durch eine Linksverschiebung verstärkt und direkt an den PWM-Ausgang weitergeleitet. Die Adaptertechnik ermöglicht eine flexible und typsichere Datenübertragung ohne separate Datenverbindungen. Dieses Beispiel eignet sich für Anwendungen wie Helligkeitssteuerung, Drehzahlregelung oder Signalumformung in der Automatisierungstechnik.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

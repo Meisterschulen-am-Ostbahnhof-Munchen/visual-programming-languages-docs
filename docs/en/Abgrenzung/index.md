@@ -46,7 +46,6 @@ CL --> C["Educational visual languages"]
 A common distinction is made between programming languages based on their intended use:
 
 1. **Educational Languages:** These are primarily used for learning programming concepts without syntax hurdles. Well-known examples include **Scratch** and **Blockly**.
-
 2. **Industrial Visual Languages:** These are designed for professional use in automation technology.
 
 ---

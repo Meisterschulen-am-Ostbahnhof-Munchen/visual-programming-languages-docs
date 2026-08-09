@@ -1,8 +1,10 @@
 # Exercise_004a9_AX: with E_SPLIT_3
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a9_AX`. Here, the concept of event splitting is extended to three objectives.
 ----
 ## Objective of the Exercise
+
 Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three processes can be triggered sequentially.
 
 -----
@@ -36,9 +38,7 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 A single click of the button triggers a cascade:
 
 1. `EO1` fires -> `Q1` toggles.
-
 2. `EO2` fires -> `Q2` toggles.
-
 3. `EO3` fires -> `Q3` toggles.
 
 This happens so quickly within the PLC cycle time that it appears simultaneous to the human eye, but from a control engineering perspective, it is a defined sequence.

@@ -1,8 +1,10 @@
 # Exercise_020g: DigitalInput_I1 to DigitalOutput_Q1; E_TONOF; On/Off Delay
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_020g`.
 ----
 ## Objective of the Exercise
+
 Use of the function block `E_TONOF`, which provides both an on and off delay in a single package.
 
 -----

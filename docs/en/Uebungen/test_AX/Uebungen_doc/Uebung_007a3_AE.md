@@ -1,8 +1,10 @@
 # Exercise_007a3_AE: Flasher with E_CYCLE, E_SWITCH, and E_SR
+
 ![Uebung_007a3_AE_network](./Uebung_007a3_AE_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise describes the implementation of a flasher that periodically switches a digital output (Output_Q1) on and off. It is controlled by two pushbuttons (Start/Stop). The key components used are the function blocks `AE_CYCLE` (Timer), `AX_SWITCH` (Changeover Switch), `AX_SR` (Set-Reset Flip-Flop), and other adapter blocks. A special feature of this circuit is that the output remains permanently off when switched off – there is no unintended activation.
 
 ## Function Blocks (FBs) Used
@@ -31,9 +33,7 @@ This exercise describes the implementation of a flasher that periodically switch
 ## Program Flow and Connections
 
 1. **Start** – Pressing a key on Input_I1 (START) generates an event `IND`, which is routed to the `START` input of `AE_CYCLE`. The timer starts running.
-
 2. **Stop** – Pressing a key on Input_I2 (STOP) generates an event `IND`, which is sent to both the `STOP` input of `AE_CYCLE` (timer stops) and the `R` input of `AX_SR` (flip-flop is reset).
-
 3. **Cycle** – The timer `AE_CYCLE` generates an event at its output `EO` every second. This event is combined with the adapter signal from `AX_SR` (`Q`) via `AX_AE_MERGE` and sent to the `G` input of `AX_SWITCH`.
 
 This event is combined with the adapter signal from `AX_SR` (`Q`) via `AX_AE_MERGE` and sent to the `G` input of `AX_SWITCH`.
@@ -41,7 +41,6 @@ This event is combined with the adapter signal from `AX_SR` (`Q`) via `AX_AE_MER
 ... 4. **Switching** – `AX_SWITCH` forwards the incoming signal (from the merge) to either `G`, depending on its level, to `EO0` (connected to `S` of `AX_SR`) or to `EO1` (connected to `R` of `AX_SR`). This toggles the flip-flop's state with each timer pulse.
 
 5. **Output** – The output `Q` from `AX_SR` is distributed via `AX_SPLIT_2` in two ways:
-
 - `OUT1` goes back to `AX_AE_MERGE` (via `IN_AX`) to close the feedback loop.
 - `OUT2` is routed to the input `OUT` of `DigitalOutput_Q1` and switches the physical output (Output_Q1).
 
@@ -63,4 +62,5 @@ Exercise **Exercise_007a3_AE** demonstrates a robust blinker implemented using a
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

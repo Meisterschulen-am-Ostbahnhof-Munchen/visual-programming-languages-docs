@@ -1,8 +1,10 @@
 # AS_D_FF_HYS
+
 ![AS_D_FF_HYS](./AS_D_FF_HYS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AS_D_FF_HYS** implements a data-triggered flip-flop (D-latch) with **hysteresis** (switching hysteresis). This component is typically used in signal processing to smooth noisy or fluctuating input signals and create defined switching points. It features an event input `INIT` to set the hysteresis value, as well as two adapter interfaces: an input adapter `I` for the signal to be latched and an output adapter `Q` for the latched and hysteresis-filtered output signal.
 
 ## Interface Structure
@@ -48,6 +50,7 @@ The event `INIT` is used for the one-time configuration of the hysteresis value.
 The function block (FB) internally uses the block `E_D_FF_ANY_HYS` from the library `logiBUS::signalprocessing::hysteresis`, which implements the actual flip-flop logic with hysteresis.
 
 ## Technical Features
+
 - The hysteresis value is defined as `SINT` (signed integer).
 - The actual signal processing is implemented by a subordinate FB (`E_D_FF_ANY_HYS`), which is not directly accessible to the user.
 - The adapter interface allows loose coupling of the function block to other components.
@@ -58,6 +61,7 @@ The function block (FB) internally uses the block `E_D_FF_ANY_HYS` from the libr
 The function block (FB) has **no explicit state machine** that is externally visible. Internally, the current output value is stored. Hysteresis creates a state memory: The output does not change with every input change, but only when the hysteresis thresholds are exceeded or fallen below.
 
 ## Application Scenarios
+
 - **Debouncing of Switch Contacts** – Suppression of bounce and short interference pulses.
 - **Threshold Switches with Hysteresis** – e.g., temperature controllers that separate on and off points.
 - **Signal Smoothing in Sensors** – Processing noisy analog values into discrete states.

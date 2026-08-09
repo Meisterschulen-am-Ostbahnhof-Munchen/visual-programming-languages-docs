@@ -1,6 +1,8 @@
 # Eclipse 4diac™ IDE icon
+
 This is the list of icons already redesigned.
 ## Function Blocks
+
 - ![Type Info](figs/icons/application.png) Application
 - ![Type Info](figs/icons/basic_function_block.png) Basic Function Block
 - ![Type Info](figs/icons/composite_function_block.png) Composite Function Block
@@ -12,6 +14,7 @@ This is the list of icons already redesigned.
 - ![Type Info](figs/icons/data_type.png) Data Type
 
 ## System
+
 - ![Type Info](figs/icons/system.png) System
 - ![Type Info](figs/icons/system_configuration.png) System Configuration
 
@@ -43,7 +46,11 @@ Dieses Markdown ist sauber formatiert und sollte in jedem Markdown-Viewer korrek
 ---
 
 ## ECC
+
 ## Event/Data/Adapters
+
 ## Device
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

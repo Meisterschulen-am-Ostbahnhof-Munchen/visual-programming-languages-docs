@@ -11,6 +11,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: `FB_CTU_UDINT`
+
 - **Typ**: `iec61131::counters::FB_CTU_UDINT`
 - **Verwendete interne FBs**: (Standard IEC 61131-3, keine weiteren Unterbausteine)
 - **Parameter**:
@@ -19,6 +20,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
   Der Baustein zählt bei jedem positiven Flanke am Eingang `CU` den aktuellen Zählerstand `CV` (UDINT) hoch. Erreicht `CV` den Wert `PV`, wird der Ausgang `Q` gesetzt. Der Zähler kann über den Eingang `R` zurückgesetzt werden.
 
 ### Sub-Bausteine: `START`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
     - `QI` = `TRUE`
@@ -28,6 +30,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
   Erzeugt bei Betätigung des Tasters I1 (Einfachklick) ein Ereignis `IND`, das den Zyklusstart und das Einblenden des Objekts auslöst.
 
 ### Sub-Bausteine: `STOP`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
     - `QI` = `TRUE`
@@ -37,6 +40,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
   Erzeugt bei Betätigung des Tasters I2 ein Ereignis `IND`, das den zyklischen Timer anhält.
 
 ### Sub-Bausteine: `E_CYCLE`
+
 - **Typ**: `iec61499::events::E_CYCLE`
 - **Parameter**:
     - `DT` = `T#100ms` (Zykluszeit 100 ms)
@@ -44,16 +48,19 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
   Ein zyklischer Ereignisgenerator. Mit `START` wird der Zyklus gestartet, mit `STOP` angehalten. Das Ausgangsereignis `EO` tritt alle 100 ms auf.
 
 ### Sub-Bausteine: `E_T_FF`
+
 - **Typ**: `iec61499::events::E_T_FF`
 - **Funktionsweise**:  
   Ein T-Flipflop (Toggle-Flipflop). Jedes Ereignis am Takteingang `CLK` ändert den Zustand des Ausgangs `Q`. Hier wird aus dem 100‑ms-Takt ein 200‑ms‑Takt (wenn Q=1) erzeugt, um den Zählimpuls `CU` zu generieren.
 
 ### Sub-Bausteine: `E_PERMIT`
+
 - **Typ**: `iec61499::events::E_PERMIT`
 - **Funktionsweise**:  
   Ein Freigabebaustein. Er leitet ein Ereignis von `EI` nach `EO` nur dann weiter, wenn der Eingang `PERMIT` `TRUE` ist. Hier wird die Datenausgabe nur freigegeben, wenn der Zähler seinen Endwert erreicht hat (`Q=1`).
 
 ### Sub-Bausteine: `F_MUX_32`
+
 - **Typ**: `iec61131::selection::F_MUX_32`
 - **Parameter**:
     - `IN1` … `IN32` = `frame_00` … `frame_31` (32 vordefinierte Konstanten)
@@ -61,6 +68,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
   Ein 32‑Kanal-Multiplexer. Der Ausgang `OUT` entspricht dem Eingang `IN(K)`, wobei `K` der Auswahlwert (UDINT) ist. Hier wird der aktuelle Zählerstand `CV` als Auswahl verwendet, um das entsprechende Frame für die Animation auszuwählen.
 
 ### Sub-Bausteine: `Q_NumericValue`
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue`
 - **Parameter**:
     - `u16ObjId` = `ObjectPointer_Horse`
@@ -68,6 +76,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
   Schreibt den am Eingang `u32NewValue` anliegenden Wert in ein Terminal-Display-Objekt. Der Wert wird als physikalische LREAL-Größe dargestellt.
 
 ### Sub-Bausteine: `Q_ObjHideShow`
+
 - **Typ**: `isobus::UT::Q::Q_ObjHideShow`
 - **Parameter**:
     - `u16ObjId` = `Container_Horse`
@@ -101,5 +110,6 @@ Die Übung `Uebung_213c` führt einen Vorwärtszähler mit automatischem Reset b
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **ALI_MUX_2** ist ein generischer Multiplexer für zwei ALI‑Adapter‑Signale. Er wählt abhängig von einem Indexwert `K` einen der beiden Eingänge (`IN1` oder `IN2`) aus und leitet dessen Wert über den Ausgangsadapter `OUT` weiter. Der Baustein arbeitet ereignisgesteuert und quittiert jede Auswahloperation mit einem Bestätigungsereignis.
 
 ## Schnittstellenstruktur
@@ -27,6 +28,7 @@ Der Funktionsblock **ALI_MUX_2** ist ein generischer Multiplexer für zwei ALI�
 | `K`      | UINT  | Index für die Wahl des Eingangs (0 → `IN1`, 1 → `IN2`). |
 
 ### **Daten-Ausgänge**
+
 Keine eigenständigen Datenausgänge; die Ausgabe erfolgt über den Adapter `OUT`.
 
 ### **Adapter**
@@ -38,6 +40,7 @@ Keine eigenständigen Datenausgänge; die Ausgabe erfolgt über den Adapter `OUT
 | Socket   | `IN2`| `adapter::types::unidirectional::ALI`             | Zweiter Eingang (Index 1)                    |
 
 ## Funktionsweise
+
 1. Der Baustein wartet auf ein Ereignis am Eingang `REQ`.
 2. Beim Eintreffen von `REQ` wird der aktuelle Wert des Daten‑Eingangs `K` ausgewertet.
 3. Falls `K = 0` ist, wird der aktuelle Wert des Adapters `IN1` auf den Ausgangsadapter `OUT` übertragen.
@@ -48,12 +51,14 @@ Keine eigenständigen Datenausgänge; die Ausgabe erfolgt über den Adapter `OUT
 5. Der Baustein verharrt im Leerlauf bis zum nächsten `REQ`.
 
 ## Technische Besonderheiten
+
 - **Generischer Baustein**: Der FB ist generisch und kann für beliebige ALI‑Adapter‑Typinstanzen verwendet werden (generischer Klassenname `GEN_ALI_MUX`).
 - **Typ‑Hash**: Der Baustein unterstützt die Typ‑Hash‑Identifikation der Eclipse 4diac Core‑Umgebung für optimierte Laufzeitverwaltung.
 - **Unidirektionale Adapter**: Alle verwendeten Adapter sind vom Typ `adapter::types::unidirectional::ALI`, d. h. die Daten fließen nur in eine Richtung (vom Socket zum Plug).
 - **Kein interner Zustand**: Der FB besitzt keinen expliziten Zustandsautomaten; die Logik wird bei jedem `REQ` anhand des aktuellen `K`‑Werts ausgeführt.
 
 ## Zustandsübersicht
+
 Der Baustein hat implizit zwei Hauptzustände:
 
 | Zustand | Beschreibung |
@@ -64,19 +69,23 @@ Der Baustein hat implizit zwei Hauptzustände:
 Ein wirksamer Zustandsautomat ist nicht explizit im XML definiert, da die Logik rein kombinatorisch mit Ereignisauslösung abläuft.
 
 ## Anwendungsszenarien
+
 - **Sensorumschaltung**: Auswahl zwischen zwei analogen oder digitalen Sensoren (z. B. Temperaturfühler 1 und 2) in einer Automatisierungsanwendung.
 - **Signalrouting**: Weitergabe unterschiedlicher Steuersignale an ein gemeinsames Ziel, je nach Betriebsmodus.
 - **Redundanzumschaltung**: Umschalten auf einen Reserveeingang bei Ausfall des primären Signals.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Standard‑MUX (z. B. IEC‑FB vom Typ MUX)**: Diese arbeiten meist mit einfachen Datentypen (BOOL, INT, REAL) und liefern die Ausgabe über einen Datenausgang. Der **ALI_MUX_2** hingegen verwendet ausschließlich Adapter‑Schnittstellen, was eine lose Kopplung und Wiederverwendbarkeit in adapterbasierten Architekturen ermöglicht.
 - **Generische Multiplexer**: Vergleichbare Bausteine für allgemeine ALI‑Adapter existieren oft mit fester Kanalzahl. **ALI_MUX_2** ist auf zwei Kanäle spezifiziert, aber dank seiner generischen Natur leicht auf andere Kanalzahlen erweiterbar (z. B. durch Varianten wie ALI_MUX_4).
 - **Unterschied zu dedizierten Logikbausteinen**: Der FB setzt keine zusätzliche Logik um (z. B. Hysterese, Filter) – er ist ein reiner, ereignisgesteuerter Umschalter.
 
 ## Fazit
+
 Der **ALI_MUX_2** ist ein einfacher, aber effektiver Multiplexer für ALI‑Adapter‑Signale. Durch seine generische Auslegung und die rein adapterbasierte Schnittstelle eignet er sich ideal für modulare Automatisierungsprojekte, bei denen zwischen zwei Quellen umgeschaltet werden muss. Die klare Zustandslogik und die Bestätigung per `CNF` erlauben eine zuverlässige Einbindung in übergeordnete Steuerungsabläufe.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

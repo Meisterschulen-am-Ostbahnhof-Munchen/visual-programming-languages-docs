@@ -47,6 +47,7 @@ Auf direkter Block-Ebene sind keine Daten-Ausgänge definiert. Die Datenübertra
 Der Funktionsbaustein basiert intern auf einem logischen Netzwerk (`FBNetwork`), welches die Eingangswerte synchronisiert, die Auswahl trifft und das Ergebnis am Ausgang bereitstellt.
 
 ### Signalfluss und Logik:
+
 1. **Eingangssynchronisation (`IN0` und `IN1`):**
    * Ein Ereignis am Adapter-Eingang `IN0.E1` liest den Datenwert `IN0.D1` über ein D-Flip-Flop (`E_D_FF_ANY_IN0`) ein. Mittels `F_MOVE_IN0` wird dieser an den Selektor-Baustein übergeben.
    * Ein Ereignis am physischen Eingang `EI1` liest den Datenwert `IN1` über das D-Flip-Flop (`E_D_FF_ANY_IN1`) ein. Mittels `F_MOVE_IN1` wird dieser an den Selektor-Baustein übergeben.

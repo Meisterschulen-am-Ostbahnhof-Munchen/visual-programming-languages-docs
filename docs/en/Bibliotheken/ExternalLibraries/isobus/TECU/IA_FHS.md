@@ -1,8 +1,10 @@
 # IA_FHS
+
 ![IA_FHS](./IA_FHS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **IA_FHS** serves as an ISOBUS adapter for the Front Hitch Status (FHS) according to ISO 11783-7 (PGN 65094). It encapsulates the internal processing of the function block `I_FHS` and provides the acquired measurement and status values via standardized unidirectional adapter outputs. Initialization occurs via the event `INIT`; after successful completion, the data is provided via the adapter interfaces.
 ## Interface Structure
 
@@ -45,6 +47,7 @@ The function block **IA_FHS** serves as an ISOBUS adapter for the Front Hitch St
 The function block internally contains an instance `I_CORE` of type `isobus::tecu::I_FHS`. Upon arrival of the initialization event `INIT`, the kernel is activated with the qualifier `QI`. After successful initialization, it triggers the event `INITO`, sets `QO = TRUE`, and outputs the status as `STATUS`. Simultaneously, the kernel generates the event `IND`, which is forwarded via internal event connections to the adapters `POSITION`, `FORCE`, and `DRAFT`. The corresponding data values (`FRONT_HITCH_POSITION`, `FRONT_HITCH_NOMINAL_LOWER_LINK_FORCE`, `FRONT_HITCH_DRAFT`) are transmitted to the adapter outputs via the appropriate data connections. Any ISOBUS reception timeout is reported via the adapter event `TIMEOUT.E1` and the data value `Q_timeout`.
 
 ## Technical Features
+
 - **Standard Compliance**: The module meets the requirements of ISO 11783-7 for **PGN 65094** (Front Hitch Status).
 - **Adapter Interfaces**: All sensor values are output via unidirectional adapters, enabling flexible and decoupled further processing in the 4diac IDE.
 - **Initialization Sequence**: Initialization must be explicitly triggered via the event `INIT`; the function block will only function correctly after successful completion.
@@ -63,11 +66,13 @@ The function block does not have its own visible state machine. Internal sequenc
 If an error occurs during operation (e.g., connection loss), this is signaled via the timeout adapter or the status output.
 
 ## Application Scenarios
+
 - **Tractor Control**: Acquisition of the front linkage position and the load on the lower links for controlling implements (e.g., front loader, front linkage).
 - **ISOBUS Diagnostics**: Monitoring of the ISOBUS data stream for timeouts and plausibility of the force and position values.
 - **Data Recording**: Provides position, force, and tractive force data for telemetry or logging applications.
 
 ## Comparison with Similar Modules
+
 - **IA_RHS** (Rear Hitch Status): Analog adapter for the rear hitch. The addressing and PGN number differ (e.g., PGN 65096). While `IA_FHS` provides front hitch data, `IA_RHS` focuses on the rear hitch.
 - **Direct I_FHS Module**: Without an adapter wrapper, the user would have to integrate the core module `I_FHS` themselves and manually configure the necessary data and event connections. The adapter module simplifies handling through standardized, pre-configured interfaces.
 
@@ -78,4 +83,5 @@ The **IA_FHS** function block offers a ready-to-use ISOBUS adapter for front hit
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

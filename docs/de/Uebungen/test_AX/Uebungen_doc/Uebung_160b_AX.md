@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_160b_AX` basierend auf den be
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert eine Steuerung für einen Motor mit Links- und Rechtslauf unter Verwendung des Adapter-Konzepts (AX) in 4diac. Ziel der Übung ist es, zwei Ausgänge (Q5 und Q6) über separate Eingangsereignisse zu steuern (Setzen/Rücksetzen) und dabei einen gemeinsamen Statusausgang (Q56) zu aktivieren, sobald einer der beiden Motorausgänge aktiv ist. Zudem wird eine Verzögerung beim Umschaltvorgang über Taster I2 realisiert.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -91,10 +92,12 @@ Das Netzwerk realisiert eine verriegelte Steuerung mit folgendem Ablauf:
 *   **Q56**: Leuchtet, wenn Q5 oder Q6 aktiv sind.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_160b_AX` demonstriert die fortgeschrittene Nutzung von Adapter-Bausteinen zur Kapselung von Logik und Datenfluss. Durch den Einsatz von Splittern (`AX_SPLIT`) und logischen Operatoren (`AX_OR`) auf Adapter-Ebene wird der Schaltplan übersichtlich gehalten, während gleichzeitig komplexe Abhängigkeiten (gemeinsame Statusanzeige, Umschaltlogik) realisiert werden. Die Verzögerung (`E_DELAY`) sorgt für eine kurze Totzeit beim Umschalten der Drehrichtung über I2, was in realen Motoranwendungen wichtig für den Maschinenschutz ist.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

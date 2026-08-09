@@ -14,20 +14,25 @@ Der Funktionsbaustein `ATM_AX_SEL_ATM` dient als binärer Selektor (Multiplexer)
 Der Funktionsbaustein besitzt keine direkt herausgeführten Standard-Ereignis- oder Datenpins. Die gesamte Kommunikation wird elegant über Sockets (Eingangs-Adapter) und Plugs (Ausgangs-Adapter) gekapselt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereigniseingänge am FB-Körper vorhanden. Die Ereignissteuerung erfolgt implizit über die Adapter-Sockets.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignisausgänge am FB-Körper vorhanden. Die Ereignissignalisierung erfolgt implizit über den Adapter-Plug.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Dateneingänge am FB-Körper vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Datenausgänge am FB-Körper vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **IN0** (Typ: `adapter::types::unidirectional::ATM`): 
   Der erste auswählbare Eingangsadapter (entspricht der Selektion bei logisch `FALSE`).
 * **IN1** (Typ: `adapter::types::unidirectional::ATM`): 
@@ -36,6 +41,7 @@ Der Funktionsbaustein besitzt keine direkt herausgeführten Standard-Ereignis- o
   Der Auswahladapter (Selector). Das hier anliegende Signal bestimmt, welcher der beiden Eingänge an den Ausgang durchgeschaltet wird.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::ATM`): 
   Der Ausgangsadapter, der die Daten und Ereignisse des jeweils selektierten Eingangs (`IN0` oder `IN1`) führt.
 

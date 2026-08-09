@@ -1,8 +1,10 @@
 # Exercise_221b_ALR: Standard IEC 61131-3 ADI_FB_CTUD (Adapter Version, Up/Down Counter, DINT) with Terminal Output (PHYS)
+
 ![Uebung_221b_ALR_network](./Uebung_221b_ALR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an up/down counter according to IEC 61131-3 (type `ADI_FB_CTUD`). The counter is controlled via digital inputs and outputs the current counter value via both digital outputs (as limit signals) and a terminal output (physical value). The counting range uses 32-bit integers (DINT), and negative values are also possible.
 **Difficulty Level**: Advanced
 **Prerequisites**: Basic knowledge of the 4diac IDE and the IEC 61131-3 function block system, understanding of adapter interfaces.
@@ -66,18 +68,13 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 ### Signal Flow
 
 1. **Inputs**: The four digital inputs (`I1`–`I4`) are read into the controller via the logiBUS adapters `Input_CU`, `Input_CD`, `Input_R`, and `Input_LD`.
-
 2. **Counter Control**:
-
 - `CU` (Count Up) from `Input_CU`: Each event at input `I1` increments the counter by 1.
 - `CD` (Count Down) from `Input_CD`: An event at `I2` decrements the counter by 1.
 - `R` (Reset) from `Input_R`: An event at `I3` resets the counter to 0.
 - `LD` (Load) from `Input_LD`: An event on `I4` loads the preset value (PV) into the counter.
-
 3. **Preset Value (PV)**: The function block `ADI_DINT_TO_DI` is activated on the INIT event of `Input_LD` (event connection `Input_LD.INITO → ADI_DINT_TO_DI.REQ`). It passes the constant value `DINT#5` to the adapter input `PV` of the counter. Thus, the counter is set to 5 with each load.
-
 4. **Outputs**:
-
 - `QU` (Count Up Overflow): outputs to `TRUE` when the counter reaches or exceeds its maximum value → outputs to `Output_Q1`.
 - `QD` (Count Down Overflow): outputs to `TRUE` when the minimum value is undershot → outputs to `Output_Q2`.
 - `CV` (Current Value): converted to an LREAL signal via `ADI_TO_ALR` and passed to `Q_NumericValue_PHYSA_LREAL`. This outputs the current counter value as a numerical value on the terminal (physical output).
@@ -97,9 +94,7 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 ### Starting the Exercise
 
 1. The exercise is integrated as a SubAppType (`Uebung_221b_ALR`) in the 4diac IDE.
-
 2. A running logiBUS hardware with connected inputs/outputs (`I1`–`I4`, `Q1`, `Q2`) is required.
-
 3. The terminal object `OutputNumber_N3` must be present in the project (from the library `Uebungen::const::UT::DefaultPool_Numeric`). 4. After deployment, the controller can be tested by applying pulses to the inputs.
 
 ## Summary
@@ -109,4 +104,5 @@ Exercise `Uebung_221b_ALR` demonstrates the use of an industrial forward/downwar
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

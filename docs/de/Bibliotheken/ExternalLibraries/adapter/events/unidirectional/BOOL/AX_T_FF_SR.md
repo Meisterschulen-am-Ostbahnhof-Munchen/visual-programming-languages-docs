@@ -7,6 +7,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der AX_T_FF_SR ist ein ereignisgesteuerter bistabiler Funktionsblock mit Toggle-Funktionalität. Es handelt sich um ein Flip-Flop-Element, das sowohl als Set-Reset-Flipflop als auch als Toggle-Flipflop betrieben werden kann. Der Baustein kombiniert die Eigenschaften eines SR-Flipflops mit zusätzlicher Toggle-Funktionalität über einen Takteingang.
 
 ![AX_T_FF_SR](AX_T_FF_SR.svg)
@@ -14,23 +15,29 @@ Der AX_T_FF_SR ist ein ereignisgesteuerter bistabiler Funktionsblock mit Toggle-
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **S**: Setzt den Ausgang Q auf TRUE
 - **R**: Setzt den Ausgang Q auf FALSE (Reset)
 - **CLK**: Takt für das Umschalten (Toggle) des Ausgangs
 
 ### **Ereignis-Ausgänge**
+
 - Keine direkten Ereignisausgänge vorhanden
 
 ### **Daten-Eingänge**
+
 - Keine Dateneingänge vorhanden
 
 ### **Daten-Ausgänge**
+
 - Keine direkten Datenausgänge vorhanden
 
 ### **Adapter**
+
 - **Q**: Unidirektionaler Adapter vom Typ AX, der den Wert des Flipflops bereitstellt
 
 ## Funktionsweise
+
 Der AX_T_FF_SR verfügt über drei Betriebszustände:
 
 - **START**: Initialzustand
@@ -46,12 +53,14 @@ Die Zustandsübergänge werden durch die Ereigniseingänge gesteuert:
 Bei jedem Zustandswechsel wird der entsprechende Algorithmus ausgeführt, der den Adapterwert Q.D1 entsprechend setzt.
 
 ## Technische Besonderheiten
+
 - Kombiniert SR-Flipflop- und T-Flipflop-Funktionalität
 - Verwendet Adapter-Schnittstelle für die Datenausgabe
 - Unidirektionale Kommunikation über den Q-Adapter
 - Initialzustand ist START, von wo aus direkt in SET oder durch CLK in SET gewechselt werden kann
 
 ## Zustandsübersicht
+
 ```
 START (Initialzustand)
     │
@@ -73,6 +82,7 @@ RESET (Q.D1 = FALSE)
 ```
 
 ## Anwendungsszenarien
+
 - Zustandsspeicherung in Steuerungsanwendungen
 - Taktteilung und Frequenzteilung
 - Ereigniszählung
@@ -80,6 +90,7 @@ RESET (Q.D1 = FALSE)
 - Schaltnetze mit Rückkopplung
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einem einfachen E_SR-Flipflop bietet der AX_T_FF_SR zusätzliche Toggle-Funktionalität durch den CLK-Eingang. Während ein reines SR-Flipflop nur über Set- und Reset-Eingänge verfügt, ermöglicht dieser Baustein zusätzlich das taktgesteuerte Umschalten des Ausgangszustands.
 
 Vergleich mit [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md)
@@ -93,4 +104,5 @@ Vergleich mit [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md)
 * [Uebung_006a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a_AX.md)
 
 ## Fazit
+
 Der AX_T_FF_SR ist ein vielseitiger bistabiler Speicherbaustein, der die Vorteile von SR- und T-Flipflops kombiniert. Durch die Adapter-basierte Schnittstelle ermöglicht er eine flexible Integration in größere Steuerungssysteme und eignet sich besonders für Anwendungen, die sowohl direkte Zustandssetzung als auch taktgesteuertes Umschalten erfordern.

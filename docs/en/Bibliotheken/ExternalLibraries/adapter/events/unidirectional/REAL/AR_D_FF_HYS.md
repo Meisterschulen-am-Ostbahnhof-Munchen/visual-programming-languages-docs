@@ -1,8 +1,10 @@
 # AR_D_FF_HYS
+
 ![AR_D_FF_HYS](./AR_D_FF_HYS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AR_D_FF_HYS** implements a data latch (D) flip-flop with hysteresis. It serves for the stable acquisition and transmission of an analog (real) value, with a hysteresis band suppressing unwanted fluctuations at the output. The block is designed for use in industrial signal processing.
 ## Interface Structure
 
@@ -48,6 +50,7 @@ The function block internally contains a sub-FB `E_D_FF_ANY_HYS` from the librar
 - Initialization (`INIT`) sets the hysteresis band and immediately confirms it with `INITO`. Modifying `HYSTERESIS` during operation is not supported; the hysteresis is only applied during the INIT event.
 -
 ## Technical Features
+
 - **Adapter-Based Interface**: Both the input and output use the generic adapter `adapter::types::unidirectional::AR`, allowing the block to be flexibly integrated into existing adapter chains.
 - **Hysteresis Function**: Suppresses noise and oscillations at threshold values, ensuring a clean, stable output.
 - **EPL 2.0**: The block is licensed under the Eclipse Public License 2.0 and can be freely used and modified.
@@ -64,6 +67,7 @@ The block has an implicit memory state for the last output value. Since this is 
 There are no explicit state machines; the component operates purely event-driven.
 
 ## Application Scenarios
+
 - **Signal Smoothing**: Removal of high-frequency noise from analog measured values.
 - **Threshold Switch**: Defined on and off points for binary decisions (e.g., temperature control).
 - **Edge Detection with Hysteresis**: Reliable detection of rising or falling edges of an analog signal.

@@ -12,6 +12,7 @@ Die Übung ist als **SubAppType** realisiert und verwendet ausschließlich Adapt
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: `Uebung_034a1_Q1_AX`
+
 - **Typ**: SubAppType (zusammengesetzter Baustein)
 - **Verwendete interne FBs**:
 
@@ -47,5 +48,6 @@ Die Übung zeigt eine **minimale Konfiguration zur Ansteuerung eines PWM-Ausgang
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

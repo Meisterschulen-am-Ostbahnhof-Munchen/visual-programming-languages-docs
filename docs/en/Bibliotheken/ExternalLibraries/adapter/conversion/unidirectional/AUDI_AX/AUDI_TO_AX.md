@@ -1,4 +1,5 @@
 # AUDI_TO_AX
+
 ![AUDI_TO_AX](./AUDI_TO_AX.svg)
 
 * * * * * * * * * *
@@ -12,11 +13,17 @@ The FB has no built-in data inputs. The UDINT value to be processed is provided 
 The FB has no built-in data outputs. The result (BOOL) is output via the plug adapter `AX_OUT` (see section Adapters).
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Name | Type | Adapter Type | Direction | Comment |
@@ -25,19 +32,15 @@ The FB has no built-in data outputs. The result (BOOL) is output via the plug ad
 | `AX_OUT` | `adapter::types::unidirectional::AX` | Plug | Output | Provides the BOOL value (D1) and the acknowledgment event (E1) |
 
 ## Functionality
+
 The internal process is divided into three steps:
 
 1. **Event Reception:** The event `E1` of the socket adapter `AUDI_IN` triggers the processing.
-
 2. **Comparison:** The received UDINT value (`AUDI_IN.D1`) is compared in the function block `F_NE` (IEC 61131-3: *not equal*) with the constant value `UDINT#0`.
-
 3. **Result Output:** The result of the comparison (`F_NE.OUT`) – a BOOL – is placed on the output data port `AX_OUT.D1`. Simultaneously, the event `F_NE.CNF` is forwarded to the event input `AX_OUT.E1`, so that the output adapter signals the result.
-
 3. **Result Output:** The result of the comparison (`F_NE.OUT`) – a BOOL – is placed on the output data port `AX_OUT.D1`. **Context:**
-
 - If the input value is not equal to 0 → Output `TRUE`
 - If the input value is equal to 0 → Output `FALSE`
-
 - **Library Used:** The core consists of the IEC 61131 function block `F_NE` (non-equal comparison). This is imported from the library `iec61131::comparison::F_NE`.
 - **No Dedicated ECC:** As a composite function block, `AUDI_TO_AX` does not have its own execution state – the entire logic is purely data flow-driven.
 - **Unidirectional Adapters:** Both the input and output adapters are designed as *unidirectional*, meaning they only support a defined data and event flow from the source to the sink.
@@ -46,9 +49,7 @@ The internal process is divided into three steps:
 The function block (FB) does not have its own state machine. Its behavior is entirely determined by incoming events: Every event at socket `AUDI_IN.E1` triggers an execution of the internal logic and an output at plug `AX_OUT`.
 
 - **Binary Threshold Output:** A counter value (e.g., number of parts detected) should be passed on to a downstream controller as a switching signal (`TRUE` if present, `FALSE` if zero).
-
 - **Network Simplification:** The function block encapsulates the non-zero logic, thereby reducing the complexity of higher-level function plans.
-
 - **`AUDI_TO_BOOL` (hypothetical):** Would offer the same functionality, but without the adapter concept – possibly with direct data inputs/outputs.
 - **Direct Comparison `F_NE`:** A single function block that performs the comparison, but without adapter adaptation.
 
@@ -63,8 +64,13 @@ The `AUDI_TO_AX` function block is a specialized yet highly useful converter for
 ]
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

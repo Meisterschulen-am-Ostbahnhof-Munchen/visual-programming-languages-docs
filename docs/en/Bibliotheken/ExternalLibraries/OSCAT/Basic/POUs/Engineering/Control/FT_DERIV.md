@@ -1,8 +1,11 @@
 ![FT_DERIV](FT_DERIV.svg)
 # FT_DERIV
+
 Calculate derivative over signal 'in' with Factor 'K'
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | InitRequest | |
@@ -33,6 +36,6 @@ Calculate derivative over signal 'in' with Factor 'K'
 | delta_in | REAL | Input signal difference |
 
 ## 🛠️ Related exercises
+
 * [Uebung_151](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
 * [Uebung_151_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-

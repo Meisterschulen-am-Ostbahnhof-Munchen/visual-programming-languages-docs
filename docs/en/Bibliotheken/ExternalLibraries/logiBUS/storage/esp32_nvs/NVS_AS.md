@@ -1,38 +1,38 @@
 # NVS_AS
+
 ![NVS_AS](./NVS_AS.svg)
 
 * * * * * * * * * *
 The function block **NVS_AS** serves as an interface for reading and writing SINT (signed integer) data in non-volatile storage (NVS). Storage is performed using a user-defined key (KEY). The block extends access to the NVS with an adapter interface (unidirectional AS type), allowing values to be received and sent via standardized adapter connections. This enables modular and reusable connectivity to storage functions in IEC 61499 applications.
 
-
 | Event | Description | Associated Variables |
 |----------|---------------|-----------------------|
 | INIT | Initializes the NVS and triggers the first loading of a stored value. | QI, KEY, DEFAULT_VALUE |
-
-
 | Event | Description | Associated Variables |
 |----------|---------------|-----------------------|
 | INITO | Confirmation of initialization and the first loading process. | QO, STATUS |
-
-
 | Variable | Type | Description |
 |----------|--------|--------------|
 | QI | BOOL | Enables initialization (TRUE = enable). |
 | KEY | STRING | Key under which the value is stored in the NVS. |
 | DEFAULT_VALUE | SINT | Default value, read if no value exists under the key. |
-
-
 | Variable | Type | Description |
 |----------|--------|--------------|
 | QO | BOOL | Confirms successful initialization and operational readiness. |
 | STATUS | STRING | Status message (e.g., "Success" or error message). |
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
@@ -41,6 +41,7 @@ The function block **NVS_AS** serves as an interface for reading and writing SIN
 | AS_OUT | AS | PLUG | Sends the read SINT value to connected blocks via a unidirectional adapter protocol. |
 
 ## Functionality
+
 The **NVS_AS** block encapsulates an instance of the **NVS** block (from the `logiBUS::storage::esp32_nvs` library). The function operates in two modes:
 
 1. **Initialization and First Read Operation**
@@ -48,7 +49,6 @@ The **NVS_AS** block encapsulates an instance of the **NVS** block (from the `lo
 After an INIT event, the internal NVS block is initialized. Immediately afterward (automatic chaining of `INITO` to `GET`), the value stored under the specified KEY is read. If no value exists, `DEFAULT_VALUE` is returned. The read or specified value is sent to downstream function blocks via the **AS_OUT** adapter (event `E1` and data `D1`).
 
 2. **Writing and Reading via Adapters**
-
 - An event (`E1`) with an associated data value (`D1`) received via the **AS_IN** adapter triggers a **SET** operation in the NVS. The value is stored under the KEY specified during INIT.
 - After a successful SET, the stored value is automatically output via **AS_OUT** (through the connection between `NVS.SETO` and `AS_OUT.E1`).
 - Similarly, a reread can be triggered by an INIT event or by the internal process after a successful SET. A separate external read event is not provided; the value is always updated after a change or during initialization.
@@ -108,12 +108,16 @@ In some systems, retain variables are also persistent. `NVS_AS` relies on low-le
 
 The **NVS_AS** function block provides a practical, adapter-based encapsulation of non-volatile memory for SINT values. By combining initialization logic, automatic value feedback, and an adapter interface, it is ideally suited for modular IEC 61499 projects that require persistent storage with minimal wiring. The limitation to the SINT type and the automatic GET post-initialization should be noted, but simultaneously simplify handling in many standard applications.
 
-
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Echtzeit-Variante des E_REND Bausteins (Rendezvous). Wartet auf zwei Ereignisse.
 
 ![RT_E_REND](RT_E_REND.svg)
@@ -18,4 +19,5 @@ Echtzeit-Variante des E_REND Bausteins (Rendezvous). Wartet auf zwei Ereignisse.
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

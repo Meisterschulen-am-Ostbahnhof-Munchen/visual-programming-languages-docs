@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Realisierung eines Toggle-Flipflops (T-FF) mithilfe der Funktionsbausteine `E_R_TRIG` (Flankenerkennung steigend) und `E_T_FF` (Toggle-Flipflop). Ein digitaler Eingang (IX) wird als Taster verwendet – jede steigende Flanke am Eingang schaltet den digitalen Ausgang (QX) um (toggle). Der Aufbau eignet sich z. B. zum Ein- und Ausschalten einer Leuchte mit einem einzelnen Taster.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die Subapplikation besteht aus vier Funktionsbausteinen:
 
 - **DigitalInput_I1**: Typ `logiBUS::io::DI::logiBUS_IX`  
@@ -38,6 +40,7 @@ Die Subapplikation besteht aus vier Funktionsbausteinen:
   - **Dateneingang**: `OUT` (gewünschter digitaler Wert).  
 
 ## Programmablauf und Verbindungen
+
 Die Subapplikation ist als ereignisgesteuerte Kette realisiert:
 
 1. **Eingangsänderung**: Der Baustein `DigitalInput_I1` überwacht den physikalischen Eingang. Sobald sich der Zustand ändert, wird das Ereignis `IND` ausgelöst.
@@ -59,9 +62,11 @@ Die Subapplikation ist als ereignisgesteuerte Kette realisiert:
 **Vorkenntnisse**: Grundlegender Umgang mit 4diac‑IDE, Kenntnis von Event- und Datenverbindungen.
 
 ## Zusammenfassung
+
 Mit dieser Übung wurde eine typische Taster‑Schalter‑Funktion (Toggle) umgesetzt. Durch die Kombination von `E_R_TRIG` und `E_T_FF` wird jede steigende Flanke am Eingang erkannt und der Ausgangszustand umgeschaltet. Die Bausteine sind lose gekoppelt – ein Vorteil der ereignisgesteuerten Programmierung. Die Subapplikation kann direkt in ein 4diac-Projekt eingebunden und auf einem entsprechenden Zielsystem (mit logiBUS‑Anbindung) ausgeführt werden.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

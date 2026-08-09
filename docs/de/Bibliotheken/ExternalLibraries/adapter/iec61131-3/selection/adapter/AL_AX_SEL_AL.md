@@ -15,24 +15,30 @@ Der Funktionsbaustein `AL_AX_SEL_AL` ist ein ereignisgesteuerter Selektor (Binä
 Da dieser Funktionsbaustein intern als Netzwerk aufgebaut ist und vollständig auf Adapter-Schnittstellen basiert, besitzt er keine direkt herausgeführten klassischen Ein- oder Ausgangsvariablen.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignissteuerung erfolgt implizit über die angeschlossenen Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignisweiterleitung erfolgt implizit über den Ausgangs-Adapter.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Plugs (Stecker)**
+
 * **`OUT`** (Typ: `adapter::types::unidirectional::AL`): 
   Der ausgewählte Ausgang. Über diesen Adapter werden die selektierten Daten (`D1`) und das dazugehörige Aktualisierungsereignis (`E1`) ausgegeben.
 
 #### **Sockets (Buchsen)**
+
 * **`G`** (Typ: `adapter::types::unidirectional::AX`): 
   Der Selektor-Eingang (Gate/Selector). Steuert, welcher der beiden Eingänge (`IN0` oder `IN1`) auf den Ausgang durchgeschaltet wird.
 * **`IN0`** (Typ: `adapter::types::unidirectional::AL`): 

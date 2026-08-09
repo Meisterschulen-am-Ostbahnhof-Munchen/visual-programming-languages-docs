@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus einer `settings.ini`‑Datei. Er greift über einen Abschnittsnamen (`SECTION`) und einen Schlüssel (`KEY`) auf einen Konfigurationswert zu. Über die Adapter‑Schnittstelle `AS` kann der Wert sowohl gelesen als auch geschrieben werden. Der Baustein kapselt den internen `INI`‑Funktionsblock und erweitert ihn um eine einheitliche Adapter‑Schnittstelle.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ  | Mit‑Vars | Beschreibung |
@@ -43,6 +45,7 @@ Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus
 | `AS_OUT`    | `adapter::types::unidirectional::AS` | Ausgang (Plug)  | Gibt den aktuell gelesenen oder gespeicherten Wert aus (GET‑Operation). |
 
 ## Funktionsweise
+
 1. **Initialisierung und erstes Lesen (INIT‑Ereignis)**  
    Mit dem `INIT`‑Ereignis werden die Parameter `SECTION`, `KEY` und `DEFAULT_VALUE` übergeben. Der interne `INI`‑Baustein wird gestartet, liest den Wert aus der `settings.ini` und gibt ihn über den Adapter‑Ausgang `AS_OUT` aus. Gleichzeitig wird das `INITO`‑Ereignis ausgelöst, das den Abschluss der Initialisierung meldet.  
    Anschließend (eventuell noch im gleichen Zyklus) wird automatisch ein `GET` auf dem `INI`‑Baustein ausgeführt, sodass der gelesene Wert sofort am Adapter anliegt.
@@ -54,30 +57,36 @@ Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus
    Der interne `INI`‑Baustein liefert die Ausgangssignale `QO` und `STATUS`, die direkt an die gleichnamigen Ausgänge des `INI_AS`‑Bausteins durchgeschliffen werden.
 
 ## Technische Besonderheiten
+
 - **Adapter‑Schnittstelle `AS`**: Der Baustein verwendet einen unidirektionalen Adapter (`adapter::types::unidirectional::AS`). Dies ermöglicht eine standardisierte Anbindung an andere Bausteine, die denselben Adaptertyp unterstützen.
 - **Datentyp SINT**: Der gelesene und gespeicherte Wert ist vom Typ „Short Integer“ (SINT, 8‑Bit). Dadurch eignet sich der Baustein besonders für kleine ganzzahlige Konfigurationswerte.
 - **Wiederverwendung des `INI`‑Bausteins**: Die gesamte Logik zum Zugriff auf die INI‑Datei wird vom bewährten `eclipse4diac::storage::INI`‑Baustein übernommen. Der `INI_AS` kapselt diesen und ergänzt die Adapter‑Schnittstelle.
 - **Automatischer GET nach INIT**: Nach dem Initialisieren wird sofort ein Lesevorgang gestartet, sodass der aktuelle Wert ohne separates Ereignis am Adapterausgang bereitsteht.
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Das Verhalten wird rein über die Ereignisverkettung innerhalb des internen FBNetzwerks gesteuert:
 
 - Nach `INIT` läuft die Sequenz: INIT des `INI`‑Bausteins → INITO → GET (automatisch) → VALUO am Adapterausgang.
 - Nach einem SET‑Ereignis vom Adaptereingang: SET des `INI`‑Bausteins → SETO → Adapterausgang mit dem neuen Wert.
 
 ## Anwendungsszenarien
+
 - **Persistente Konfiguration**: Speichern und Lesen von Einstellungen wie Schwellwerten, Modus‑Flags oder Geräteadressen in einer `settings.ini`.
 - **Parametrisierung von Steuerungsanwendungen**: Wenn eine SPS oder ein anderes Automatisierungssystem zur Laufzeit Werte aus einer Konfigurationsdatei laden oder ändern muss.
 - **Adapter‑basierte Kommunikation**: Einbindung in eine übergeordnete Adapter‑Struktur, die mehrere solche Lese‑/Schreib‑Bausteine zusammenfasst.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **INI_STRING, INI_INT, INI_BOOL**: Diese Bausteine verwenden ebenfalls den internen `INI`‑Baustein, unterstützen aber andere Datentypen (STRING, INT, BOOL) und haben oft eine andere Schnittstellenstruktur (keine Adapter). Der `INI_AS` bietet durch den Adapter eine einheitliche und wiederverwendbare Schnittstelle.
 - **Direkter `INI`‑Baustein**: Der `INI`‑Baustein selbst hat mehrere Ereigniseingänge (INIT, GET, SET) und erfordert eine manuelle Verkabelung von Lese‑ und Schreibvorgängen. Der `INI_AS` vereinfacht die Handhabung, indem er die typische Nutzung (Lesen beim Start, Schreiben über Adapter) standardisiert.
 
 ## Fazit
+
 Der Funktionsblock `INI_AS` ist ein komfortabler Baustein zum persistenten Lesen und Schreiben von SINT‑Werten aus einer INI‑Datei. Durch die Adapter‑Schnittstelle lässt er sich leicht in bestehende Architekturen integrieren und reduziert den Verdrahtungsaufwand. Er eignet sich besonders für Konfigurationsaufgaben, bei denen ein einzelner ganzzahliger Wert zwischengespeichert werden muss.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

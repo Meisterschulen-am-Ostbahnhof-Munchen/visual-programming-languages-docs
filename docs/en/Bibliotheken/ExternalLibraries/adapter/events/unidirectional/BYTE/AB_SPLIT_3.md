@@ -1,8 +1,10 @@
 # AB_SPLIT_3
+
 ![AB_SPLIT_3](./AB_SPLIT_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AB_SPLIT_3** is used to split an incoming unidirectional data/signal adapter (type `AB`) into three identical output adapters. It is implemented as a generic function block and represents a simple 1-to-3 distribution without additional logic or delay.
 ## Interface Structure
 
@@ -49,6 +51,7 @@ Since the adapter `AB` is unidirectional, data transmission occurs exclusively i
 The function block has **no explicit state machine**. The behavior is purely data-flow oriented: As soon as the input adapter provides data, it is immediately propagated to all outputs. No state monitoring or control is required.
 
 ## Application Scenarios
+
 - **Signal Distribution in Automation Technology**: Splitting a sensor signal (e.g., temperature, pressure) to multiple processing units.
 - **Parallelization of Control Sequences**: Providing the same adapter stream to different function blocks that operate independently.
 - **Prototyping and Testing**: Using a simulated adapter to supply multiple system components simultaneously.
@@ -70,4 +73,5 @@ The **AB_SPLIT_3** is a simple yet useful generic splitter block for unidirectio
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

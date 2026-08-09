@@ -1,8 +1,10 @@
 # Exercise_080b: Example for E_CTU with E_SPLIT for Event Doubling and Terminal Output
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_080b`. It demonstrates how to artificially double the number of incoming events.
 ----
 ## Objective of the Exercise
+
 Manipulation of event streams using `E_SPLIT`.
 
 -----
@@ -26,6 +28,7 @@ Adapting Sensor Pulses: A gear sensor delivers one pulse per wheel revolution, b
 --
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

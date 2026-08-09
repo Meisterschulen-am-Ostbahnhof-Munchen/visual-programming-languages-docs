@@ -1,6 +1,8 @@
 # RT_E_MERGE
+
 * * * * * * * * * *
 ## Introduction
+
 Real-time version of the E_MERGE block. Merges multiple events.
 ![RT_E_MERGE](RT_E_MERGE.svg)
 ## Metadata
@@ -14,5 +16,5 @@ Real-time version of the E_MERGE block. Merges multiple events.
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
+* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

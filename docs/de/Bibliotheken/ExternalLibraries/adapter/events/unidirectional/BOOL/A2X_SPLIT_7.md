@@ -10,15 +10,19 @@ Der Funktionsbaustein **A2X_SPLIT_7** dient dazu, ein eingehendes A2X-Adaptersig
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - Keine
 
 ### **Ereignis-Ausgänge**
+
 - Keine
 
 ### **Daten-Eingänge**
+
 - Keine
 
 ### **Daten-Ausgänge**
+
 - Keine
 
 ### **Adapter**
@@ -61,4 +65,5 @@ Der **A2X_SPLIT_7** ist ein einfacher, aber nützlicher Funktionsbaustein zur Si
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

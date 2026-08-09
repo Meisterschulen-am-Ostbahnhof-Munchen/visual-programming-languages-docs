@@ -10,6 +10,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: AI_FB_CTD
+
 - **Typ**: adapter::iec61131::counters::AI_FB_CTD
 - **Verwendete interne FBs**: Keine
 - **Parameter**: Keine
@@ -18,6 +19,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 - **Funktionsweise**: Der Rückwärtszähler zählt bei jedem Ereignis an CD den Wert von PV herunter. Bei einem Ereignis an LD wird der Zähler auf den Wert von PV gesetzt. Der Ausgang Q wird TRUE, wenn der Zählerwert 0 erreicht oder unterschreitet.
 
 ### Sub-Bausteine: AI_INT_TO_I
+
 - **Typ**: adapter::conversion::unidirectional::AI_INT_TO_I
 - **Verwendete interne FBs**: Keine
 - **Parameter**: OUT = INT#10
@@ -26,6 +28,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 - **Funktionsweise**: Dieser Baustein stellt einen konstanten Integer-Wert (hier 10) bereit, der als Preset Value (PV) für den Zähler verwendet wird. Er wird durch das INITO-Ereignis des Load-Inputs getriggert.
 
 ### Sub-Bausteine: Input_CD (Count Down-Eingang)
+
 - **Typ**: logiBUS::io::DI::logiBUS_IXA
 - **Verwendete interne FBs**: Keine
 - **Parameter**: QI = TRUE, Input = Input_I1
@@ -34,6 +37,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 - **Funktionsweise**: Liest den digitalen Eingang I1 des logiBUS-Systems und gibt bei einer positiven Flanke ein Ereignis auf dem Adapter-Ausgang aus. Dieses Ereignis triggert den CD-Eingang des Zählers.
 
 ### Sub-Bausteine: Input_LD (Load-Eingang)
+
 - **Typ**: logiBUS::io::DI::logiBUS_IXA
 - **Verwendete interne FBs**: Keine
 - **Parameter**: QI = TRUE, Input = Input_I2
@@ -42,6 +46,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 - **Funktionsweise**: Liest den digitalen Eingang I2 und gibt bei einer positiven Flanke ein Ereignis aus. Dieses Ereignis triggert das LD-Ereignis am Zähler. Gleichzeitig wird über INITO die Initialisierung des PV-Werts angestoßen.
 
 ### Sub-Bausteine: Output_Q1
+
 - **Typ**: logiBUS::io::DQ::logiBUS_QXA
 - **Verwendete interne FBs**: Keine
 - **Parameter**: QI = TRUE, Output = Output_Q1
@@ -50,6 +55,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 - **Funktionsweise**: Übernimmt den Zählerausgang Q (über Adapter) und gibt ihn als digitalen Ausgang Q1 des logiBUS aus. Sobald der Zähler Null erreicht, wird Q1 aktiv.
 
 ### Sub-Bausteine: AI_TO_AUDI
+
 - **Typ**: adapter::conversion::unidirectional::AI_TO_AUDI
 - **Verwendete interne FBs**: Keine
 - **Parameter**: Keine
@@ -58,6 +64,7 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 - **Funktionsweise**: Konvertiert den Integer-Zählerwert (CV) in das für das Terminal erforderliche AUDI-Format. Hinweis: Dieser Baustein unterstützt keine negativen Zahlen, was bei einem Rückwärtszähler problematisch sein kann.
 
 ### Sub-Bausteine: Q_NumericValue_AUDI
+
 - **Typ**: isobus::UT::Q::Q_NumericValue_AUDI
 - **Verwendete interne FBs**: Keine
 - **Parameter**: u16ObjId = OutputNumber_N1
@@ -87,4 +94,5 @@ Diese Übung vermittelt den Umgang mit einem IEC 61131-3 Rückwärtszähler (CTD
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

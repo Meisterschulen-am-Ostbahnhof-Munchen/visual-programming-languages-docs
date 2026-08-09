@@ -1,9 +1,11 @@
 Here is the documentation page for Exercise 126b.
 # Exercise_126b: Exercise on ISOBUS Send Message Cyclic (with CB) Plotting a Sine Wave Function
+
 ![Uebung_126b_network](./Uebung_126b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 Exercise **Exercise_126b** demonstrates the cyclic sending of an ISOBUS message, where the data payload is dynamically generated via a callback mechanism. Specifically, a sine wave function is generated, and its values are written to the first byte of the CAN message. This can be used, for example, to simulate signal waveforms and then plot them in diagnostic tools such as PCAN Explorer.
 
 The key feature of this exercise is the separation of communication management (in the main network) and data generation (in a sub-application), connected via an adapter.
@@ -11,6 +13,7 @@ The key feature of this exercise is the separation of communication management (
 ## Function Blocks Used (FBs)
 
 ### Main Network
+
 The following function blocks are used in the main network to initiate communication:
 
 * **NmGetCfInfo_1** (`isobus::pgn::NmGetCfInfo`):
@@ -65,22 +68,15 @@ As soon as `CallbackFB` receives an event (triggered by the cyclic transmitter i
 ## Program Flow and Connections
 
 1. **Initialization**: The `NmGetCfInfo_1` module determines the necessary network information at startup.
-
 2. **Configuration**: As soon as the network information is available (`IND` event), the transmitter module `AlPgnTxNew8Bcycl_REQ` is installed (`install`).
-
 3. **Cyclic Operation**:
-
 * The `AlPgnTxNew8Bcycl_REQ` module is set to a repetition rate of 500 ms.
 * Every 500 ms, it triggers a request via the adapter port `CB` (connected to `DataSupply.PLUG1`).
-
 4. **Data Processing**:
-
 * Within the sub-application `DataSupply`, the `CallbackFB` receives the request.
 * This triggers the signal chain: The sine wave generator `GEN_SIN` calculates the next value based on the current time.
 * Due to the parameters (amplitude 10, offset 5), the generator produces values in the range of -5.0 to +15.0. Since the conversion is performed on `USINT`, negative values are typically clipped to 0.
-
 5. **Return and Sending**:
-
 * The calculated value is placed in the first byte of the payload.
 * The data is sent back to `AlPgnTxNew8Bcycl_REQ` via the adapter.
 * The module sends PGN 61184 with the current data to the CAN bus.
@@ -93,11 +89,13 @@ As soon as `CallbackFB` receives an event (triggered by the cyclic transmitter i
 * Data conversion and structuring for ISOBUS/CAN messages.
 
 ## Summary
+
 Exercise 126b demonstrates an elegant method for sending simulation data (here, a sine wave) via ISOBUS. By outsourcing data generation to a sub-application and using the callback interface, the main application remains uncluttered, and the cyclic transmitter autonomously handles the timing, while the current data is recalculated fresh with each cycle. The result can be visualized as a waveform in the PCAN Explorer (byte 0 of the message).
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

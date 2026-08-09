@@ -1,8 +1,10 @@
 # Q_BackgroundColourAux_AUS
+
 ![Q_BackgroundColourAux_AUS](./Q_BackgroundColourAux_AUS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This function block implements the command to change the background color of an object according to ISO 11783-6, Part F.20.
 It enables interaction with the Virtual Terminal (VT) and handles the transmission of the new color as well as the feedback of the result.
 
@@ -72,12 +74,11 @@ This function block executes the VT command and returns the status (`STATUS`) an
 The FB does not have explicit state machines in the XML. Event control is handled solely via event connections:
 
 1. **INIT** → Initialization of the service.
-
 2. **External event via socket adapter** → Start of the color change request.
-
 3. **CNF** → Completion of the operation with status and return value.
 
 ## Application Scenarios
+
 - Dynamic adjustment of the background color of an ISOBUS VT object (e.g., button, text field) depending on operating states or user input.
 - Implementation of color changes in agricultural control and visualization systems.
 

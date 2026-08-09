@@ -1,4 +1,5 @@
 # AS_D_FF_TMIN
+
 ![AS_D_FF_TMIN](./AS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -7,34 +8,28 @@ The function block **AS_D_FF_TMIN** implements a data-locking D flip-flop that t
 | Event | Type | Comment |
 |----------|-------|-------------------------------------------|
 | INIT | EInit | Initialization Request (reads `Tmin`) |
-
-
 | Event | Type | Comment |
 |----------|-------|-------------------------------------|
 | INITO | EInit | Initialization Confirmation |
-
-
 | Name | Type | Comment |
 |------|------|---------------------------------------------------------------|
 | Tmin | TIME | Minimum time between two consecutive CLK events |
 
-
 This block has no explicit data outputs; output is exclusively via the **Q** adapter.
 
 ### **Daten‑Ausgänge**
+
 ### **Daten‑Eingänge**
+
 ### **Ereignis‑Ausgänge**
+
 ### **Ereignis‑Eingänge**
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
-
-| Direction | Adapter | Type | Comment |
-
-
-| Direction | Adapter | Type | Comment |
-
-
 
 | Direction | Adapter | Type | Comment |
 | Socket | I | adapter::types::unidirectional::AS | Input data (D1) and clock (E1) |
@@ -43,6 +38,7 @@ This block has no explicit data outputs; output is exclusively via the **Q** ada
 The adapters of type `AS` each provide one event input/output (E1) and one data input/output (D1).
 
 ## Functionality
+
 After successful initialization (INIT with a valid `Tmin`), the block operates like a clocked D flip-flop with a time filter:
 
 * An event at the adapter input **I.E1** is interpreted as a clock signal (CLK).
@@ -58,13 +54,10 @@ Time filtering is implemented by the internally used block `E_D_FF_ANY_TMIN`, wh
 The block does not have explicit state machines in the sense of a statechart. However, its behavior can be described in two phases:
 
 1. **Initialization Phase**: After the INIT event, `Tmin` is set internally. Only then is the block ready to process CLK events.
-
 2. **Operation Phase**: The block waits for CLK events. When one arrives, it checks whether the time lock (since the last CLK) has expired. If so, the data value is taken and output. If no, the event is discarded.
-
 - **Digital Signal Debouncing**: A sensor delivers fast, bouncing signals; the minimum pulse width is set using `Tmin`.
 - **Clock Synchronization in Time-Critical Systems**: Prevents data transfers faster than a predefined system clock threshold.
 - **Rate Limiting for Communication Interfaces**: A new value is only accepted every `Tmin` seconds (e.g., for bus accesses).
-
 
 | Function Block | Time Filtering | Additional Features |
 |------------------|-----------------------------------|-------------------------------------------|
@@ -75,7 +68,11 @@ The block does not have explicit state machines in the sense of a statechart. Ho
 The **AS_D_FF_TMIN** function block extends a simple D flip-flop by adding an adjustable minimum time between two takeover events. Thanks to its adapter interface and the clear separation of initialization and operation, it is particularly suitable for industrial control systems and discrete-time processing applications where excessively fast switching must be avoided.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **ADD_4** ist ein leistungsfähiger Funktionsbaustein zur Summation von vier Werten, entwickelt unter EPL-2.0 Lizenz. Als Teil der GEN_ADD-Klasse bietet Version 1.0 eine typsichere Implementierung gemäß IEC 61131-3 Standard.
 
 ![ADD_4](ADD_4.svg)
@@ -12,18 +13,22 @@ Der **ADD_4** ist ein leistungsfähiger Funktionsbaustein zur Summation von vier
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit vier Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Summenergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_MAGNITUDE): Erster Summand
 - `IN2` (ANY_MAGNITUDE): Zweiter Summand
 - `IN3` (ANY_MAGNITUDE): Dritter Summand
 - `IN4` (ANY_MAGNITUDE): Vierter Summand
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_MAGNITUDE): Ergebnis der Addition (IN1+IN2+IN3+IN4)
 
 ## Funktionale Merkmale

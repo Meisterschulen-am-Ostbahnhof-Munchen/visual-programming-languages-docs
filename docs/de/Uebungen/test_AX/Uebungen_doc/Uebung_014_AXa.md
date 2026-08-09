@@ -10,6 +10,7 @@ Diese Übung demonstriert die Steuerung der Sichtbarkeit eines Containers (Objek
 ## Verwendete Funktionsbausteine (FBs)
 
 ### SoftKey_UP_F1 (Typ: isobus::UT::io::Softkey::Softkey_IE)
+
 - **Parameter**:
   - `QI` = TRUE
   - `u16ObjId` = SoftKey_F1
@@ -18,6 +19,7 @@ Diese Übung demonstriert die Steuerung der Sichtbarkeit eines Containers (Objek
 - **Funktionsweise**: Dieser Baustein erfasst das Loslassen des Softkeys F1 und gibt ein Ereignis an seinem Ausgang `IND` aus.
 
 ### SoftKey_UP_F2 (Typ: isobus::UT::io::Softkey::Softkey_IE)
+
 - **Parameter**:
   - `QI` = TRUE
   - `u16ObjId` = SoftKey_F2
@@ -26,6 +28,7 @@ Diese Übung demonstriert die Steuerung der Sichtbarkeit eines Containers (Objek
 - **Funktionsweise**: Analog zu SoftKey_UP_F1, jedoch für Softkey F2.
 
 ### AX_SR (Typ: adapter::events::unidirectional::AX_SR)
+
 - **Parameter**: Keine expliziten Parameter.
 - **Adapteranschlüsse**:
   - Eingänge: `S` (Set), `R` (Reset)
@@ -33,6 +36,7 @@ Diese Übung demonstriert die Steuerung der Sichtbarkeit eines Containers (Objek
 - **Funktionsweise**: Ein Set-Reset-Flipflop. Bei einem Ereignis auf `S` wird der Ausgang `Q` auf TRUE gesetzt, bei einem Ereignis auf `R` wird er zurückgesetzt (FALSE). Der Zustand bleibt erhalten, bis das nächste Ereignis eintrifft.
 
 ### Q_ObjHideShow (Typ: isobus::UT::Q::Q_ObjHideShow_AX)
+
 - **Parameter**:
   - `u16ObjId` = Container_B
 - **Adapteranschluss**: `qVisible` (Adapter-Eingang, erwartet einen booleschen Wert)
@@ -69,4 +73,5 @@ Die Übung zeigt eine typische Anwendung zur Ein-/Ausblendung eines Containers m
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

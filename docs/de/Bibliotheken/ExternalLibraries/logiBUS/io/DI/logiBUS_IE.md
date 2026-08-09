@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der logiBUS_IE Funktionsblock ist ein Eingabeservice-Schnittstellenbaustein für Ereigniseingabedaten. Er dient als Interface zwischen dem logiBUS-System und der 4diac-Laufzeitumgebung zur Verarbeitung von digitalen Eingangssignalen mit erweiterten Ereigniserkennungsfunktionen.
 
 ![logiBUS_IE](logiBUS_IE.svg)
@@ -12,12 +13,14 @@ Der logiBUS_IE Funktionsblock ist ein Eingabeservice-Schnittstellenbaustein für
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **INIT**: Service-Initialisierung
   - Verknüpft mit: QI, PARAMS, Input, InputEvent
 - **REQ**: Service-Anfrage
   - Verknüpft mit: QI
 
 ### **Ereignis-Ausgänge**
+
 - **INITO**: Initialisierungsbestätigung
   - Verknüpft mit: QO, STATUS
 - **CNF**: Bestätigung der angeforderten Services
@@ -26,6 +29,7 @@ Der logiBUS_IE Funktionsblock ist ein Eingabeservice-Schnittstellenbaustein für
   - Verknüpft mit: QO, STATUS
 
 ### **Daten-Eingänge**
+
 - **QI** (BOOL): Ereignis-Eingangsqualifizierer
 - **PARAMS** (STRING): Service-Parameter
 - **Input** (logiBUS_DI_S): Identifiziert den Eingang (I1..I8)
@@ -34,25 +38,31 @@ Der logiBUS_IE Funktionsblock ist ein Eingabeservice-Schnittstellenbaustein für
   - Initialwert: Invalid
 
 ### **Daten-Ausgänge**
+
 - **QO** (BOOL): Ereignis-Ausgangsqualifizierer
 - **STATUS** (STRING): Service-Status
 
 ### **Adapter**
+
 Keine Adapter-Schnittstellen vorhanden.
 
 ## Funktionsweise
+
 Der Funktionsblock ermöglicht die Verarbeitung digitaler Eingangssignale mit erweiterter Ereigniserkennung. Über die INIT-Initialisierung können spezifische Parameter konfiguriert werden. Der Baustein erkennt verschiedene Eingabeereignisse wie Tastendrücke, Loslassen, Einzelklicks und Doppelklicks und signalisiert diese über die entsprechenden Ausgangsereignisse.
 
 ## Technische Besonderheiten
+
 - Unterstützt multiple Ereignistypen (Down, Up, Single-Click, Double-Click)
 - Flexible Eingangskonfiguration über PARAMS-String
 - Statusrückmeldung über STATUS-Ausgang
 - Initialisierung mit Invalid-Werten für sicheren Start
 
 ## Zustandsübersicht
+
 Der Baustein verfügt über einen initialisierten und einen Betriebszustand. Nach erfolgreicher INIT-Initialisierung wechselt er in den Betriebszustand, in dem Ereignisverarbeitung und Service-Anfragen verarbeitet werden können.
 
 ## Anwendungsszenarien
+
 - Bedienpanel-Steuerungen
 - Tastatureingabe-Verarbeitung
 - Mechanische Schalter-Überwachung
@@ -60,6 +70,7 @@ Der Baustein verfügt über einen initialisierten und einen Betriebszustand. Nac
 - Industrielle Steuerungstaster
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet logiBUS_IE erweiterte Ereigniserkennungsfunktionen und kann komplexe Eingabemuster wie Doppelklicks erkennen. Die parametrierbare Konfiguration ermöglicht eine flexible Anpassung an verschiedene Hardware-Schnittstellen.
 
 ## 🛠️ Zugehörige Übungen
@@ -192,9 +203,11 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet logiBUS_IE erweite
 * [Uebung_180](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_180.md)
 
 ## Fazit
+
 Der logiBUS_IE Funktionsblock stellt eine leistungsstarke Schnittstelle für digitale Eingabegeräte mit erweiterter Ereigniserkennung bereit. Seine flexible Konfigurierbarkeit und die Unterstützung verschiedener Ereignistypen machen ihn ideal für Anwendungen, die komplexe Benutzerinteraktionen erfordern.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

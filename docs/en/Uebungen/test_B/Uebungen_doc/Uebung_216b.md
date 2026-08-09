@@ -1,10 +1,13 @@
 # Exercise_216b: Standard IEC 61131-3 FB_CTD_DINT (Down Counter, DINT) with Terminal Output (PHYS_LREAL)
+
 ![Uebung_216b_network](./Uebung_216b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **down counter (CTD)** according to IEC 61131-3 with the data type `DINT` and a terminal output of the current count value as a physical quantity (`PHYS_LREAL`). The counter is controlled via two digital inputs (**CD** = Count Down, **LD** = Load) and outputs the counter signal (`Q`) to a digital output. Simultaneously, the current counter value is visualized on a terminal via a numeric output block.
 ## Function Blocks (FBs) Used
+
 - **FB_CTD_DINT** – Type: `iec61131::counters::FB_CTD_DINT`
 - Parameter: `PV` = `DINT#10` (default value 10)
 - Counts down from `PV` on each rising edge of `CD`; resets to `PV` when `LD` is activated.
@@ -65,6 +68,7 @@ Exercise 216b demonstrates the application of an IEC 61131-3 reverse counter (`F
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

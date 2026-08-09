@@ -12,15 +12,19 @@ Der Funktionsbaustein `AS_ADD_3` ist ein generischer Funktionsbaustein (Generic 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Dieser Funktionsbaustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung wird über die angeschlossenen Adapter abgewickelt.
 
 ### **Ereignis-Ausgänge**
+
 Dieser Funktionsbaustein besitzt keine direkten Ereignis-Ausgänge. Die Weiterleitung von Ereignissen erfolgt über den Ausgangs-Adapter.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden.
 
 ### **Adapter**
@@ -28,11 +32,13 @@ Es sind keine direkten Daten-Ausgänge vorhanden.
 Der Baustein kommuniziert ausschließlich über Adapter-Schnittstellen.
 
 #### **Sockets (Buchsen - Eingänge):**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::AS`): Erster Eingang für die Addition.
 *   **IN2** (Typ: `adapter::types::unidirectional::AS`): Zweiter Eingang für die Addition.
 *   **IN3** (Typ: `adapter::types::unidirectional::AS`): Dritter Eingang für die Addition.
 
 #### **Plugs (Stecker - Ausgänge):**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AS`): Ausgang, der das Ergebnis der Addition (`IN1 + IN2 + IN3`) bereitstellt.
 
 ---

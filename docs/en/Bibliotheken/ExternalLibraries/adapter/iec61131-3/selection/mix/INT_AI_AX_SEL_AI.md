@@ -12,9 +12,7 @@ The function block `INT_AI_AX_SEL_AI` serves as a binary selector (selection blo
 ### **Event Inputs**
 
 | Name | Type | Description | Associated Data |
-
 | :--- | :--- | :--- | :--- |
-
 | **EI0** | Event | Sets or updates the local input value `IN0`. | `IN0` |
 
 ### **Event Outputs**
@@ -24,9 +22,7 @@ The function block `INT_AI_AX_SEL_AI` serves as a binary selector (selection blo
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 | :--- | :--- | :--- |
-
 | **IN0** | INT | Selectable local input value (integer). |
 
 ### **Data Outputs**
@@ -38,19 +34,14 @@ The function block `INT_AI_AX_SEL_AI` serves as a binary selector (selection blo
 #### **Plugs (Output Adapters)**
 
 | Name | Type | Description |
-
 | :--- | :--- | :--- |
-
 | **OUT** | `adapter::types::unidirectional::AI` | The selected analog output value (unidirectional analog input adapter). Transmits the selected value (`D1`) and the associated update event (`E1`). |
 
 #### **Sockets (Input Adapters)**
 
 | Name | Type | Description |
-
 | :--- | :--- | :--- |
-
 | **IN1** | `adapter::types::unidirectional::AI` | Selectable analog input value fed in via an adapter. |
-
 | **G** | `adapter::types::unidirectional::AX` | Selector input (control signal) for selecting the active channel. |
 
 --
@@ -74,7 +65,6 @@ The internal block `F_SEL` evaluates the control signal of the adapter `G`:
 If the selection signal `G` is **FALSE** (0), the value of **IN0** (local input) is passed through to the output.
 
 - If the selection signal `G` is **TRUE** (1), the value of **IN1** (adapter input) is passed through to the output.
-
 4. **Output:**
 
 The selected value is transferred via the converter `F_MOVE_OUT` and the output buffer `E_D_FF_ANY_OUT` to the output plug `OUT`, triggering the corresponding output event (`OUT.E1`).
@@ -84,7 +74,6 @@ The selected value is transferred via the converter `F_MOVE_OUT` and the output 
 ## Technical Features
 
 - **Adapter Connection:** By using unidirectional adapters (`AI` / `AX`), this module is ideally suited for modular applications where signals are to be transmitted via adapter lines instead of loose event/data connections.
-
 
 -- - **Event-driven:** Any change to one of the inputs (`EI0`, `IN1.E1`, or `G.E1`) triggers a recalculation and results in an immediate update of the output adapter `OUT`.
 
@@ -97,11 +86,8 @@ The selected value is transferred via the converter `F_MOVE_OUT` and the output 
 Since this is a composite function block network (composite FB / subapp behavior), there is no classic state machine (ECC). The behavior is purely data flow and event-driven:
 
 | Triggering event | Condition on selector `G` | Resulting behavior at output `OUT` |
-
 | :--- | :--- | :--- |
-
 | Event at `EI0` / `IN1.E1` / `G.E1` | `G.D1` is `FALSE` | `OUT.D1` is set to the current value of `IN0`; `OUT.E1` is triggered. |
-
 | Event at `EI0` / `IN1.E1` / `G.E1` | `G.D1` is `TRUE` | `OUT.D1` is set to the current value of `IN1.D1`; `OUT.E1` is triggered. |
 
 --
@@ -109,9 +95,7 @@ Since this is a composite function block network (composite FB / subapp behavior
 ## Application Scenarios
 
 - **Manual/Automatic Switching:** Reading a fixed setpoint (via `IN0` in manual mode) or an automatic setpoint dynamically provided via an adapter (`IN1`).
-
 - **Sensor Fallback Systems:** Switching to a predefined safety value (`IN0`) if an external sensor signals an error via selector `G`.
-
 - **Signal Multiplexing:** Structured forwarding of integer measurement values in complex, adapter-based fieldbus systems.
 
 ---
@@ -119,7 +103,6 @@ Since this is a composite function block network (composite FB / subapp behavior
 ## Comparison with Similar Components
 
 - **Standard `F_SEL`:** The standard selection component `F_SEL` has no integrated event control and does not support adapters. It operates purely at the data level. `INT_AI_AX_SEL_AI` encapsulates this functionality in an event-driven manner and directly provides the appropriate adapter interfaces.
-
 - **Standard Multiplexer (MUX):** A MUX typically allows selection from more than two channels using an integer selection signal, while this component is optimized for binary selection (2 channels).
 
 ---

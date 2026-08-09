@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_FillAttributes** ist ein standardkonformer Funktionsbaustein zur Änderung von Füllattributen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.32) Spezifikation für VT-Systeme.
 
 ![Q_FillAttributes](Q_FillAttributes.svg)
@@ -12,20 +13,24 @@ Der **Q_FillAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Attributänderungs-Anforderung (mit neuen Füllattributen)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Status und alten Attributen)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Objekt-ID (16-bit)
 - `u8FillType` (USINT): Neuer Fülltyp
 - `u8FillColour` (USINT): Neue Füllfarbe
 - `u16FillPatternId` (UINT): Neues Füllmuster
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldFillType` (USINT): Alter Fülltyp
 - `u8OldFillColour` (USINT): Alte Füllfarbe

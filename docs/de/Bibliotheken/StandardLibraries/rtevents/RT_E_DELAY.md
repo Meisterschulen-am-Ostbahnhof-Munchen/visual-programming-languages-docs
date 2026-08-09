@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der RT_E_DELAY Funktionsblock verzögert ein Ereignis um eine definierte Zeit (DT) unter Berücksichtigung von Echtzeitanforderungen.
 
 ![RT_E_DELAY](RT_E_DELAY.svg)
@@ -10,15 +11,18 @@ Der RT_E_DELAY Funktionsblock verzögert ein Ereignis um eine definierte Zeit (D
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **INIT**: Initialisierung.
 - **START**: Startet die Verzögerung.
 - **STOP**: Bricht die Verzögerung ab.
 
 ### **Ereignis-Ausgänge**
+
 - **INITO**: Initialisierung bestätigt.
 - **EO**: Das verzögerte Ereignis.
 
 ### **Daten-Eingänge**
+
 - **QI** (BOOL): Qualifizierer.
 - **DT** (TIME): Verzögerungszeit.
 - **Tmin** (TIME): Minimale Zeit.
@@ -26,6 +30,7 @@ Der RT_E_DELAY Funktionsblock verzögert ein Ereignis um eine definierte Zeit (D
 - **WCET** (TIME): Worst Case Execution Time.
 
 ### **Daten-Ausgänge**
+
 - **QO** (BOOL): Status.
 
 ## Metadaten
@@ -40,4 +45,5 @@ Der RT_E_DELAY Funktionsblock verzögert ein Ereignis um eine definierte Zeit (D
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

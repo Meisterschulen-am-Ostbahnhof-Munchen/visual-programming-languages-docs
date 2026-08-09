@@ -1,4 +1,5 @@
 # F_GE
+
 ![F_GE](https://user-images.githubusercontent.com/116869307/214144421-cde348ba-0c9a-4bc9-b41f-5db5d97218b0.png)
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_ge.html>
 * * * * * * * * * *
@@ -54,6 +55,7 @@ IF GE(EnergieVerbrauch, Grenzwert) THEN
 // Energieeinsparmaßnahmen aktivieren
 END_IF
 ### Advantages of the GE Operator
+
 - **Simple Logic:** The GE operator allows complex conditions to be formulated in simple, easily understandable expressions.
 - **Flexibility:** The operator can be applied to various numeric data types, including integers and floating-point numbers.
 - **Efficiency:** By being directly integrated into function blocks, the GE operator reduces the need for additional programming and makes the code more efficient.

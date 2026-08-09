@@ -16,6 +16,7 @@ Die gesamte Schaltung ist als **SubApp** mit Adapter-basierter Datenwandlung rea
 Die SubApp enthält folgende Funktionsbausteine:
 
 ### Sub-Baustein: IE_SPEED_UP
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:  
   - `QI` = TRUE  
@@ -25,6 +26,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Erfasst ein Long-Press-Hold-Ereignis am ersten digitalen Eingang und gibt ein IND-Ereignis aus, um den Zähler zu erhöhen.
 
 ### Sub-Baustein: IE_SPEED_DOWN
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:  
   - `QI` = TRUE  
@@ -34,6 +36,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Erfasst Long-Press-Hold am zweiten Eingang und löst das Herunterzählen aus.
 
 ### Sub-Baustein: IE_STOP
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:  
   - `QI` = TRUE  
@@ -43,6 +46,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Erfasst einen Single-Click am dritten Eingang und setzt den Zähler zurück (Reset).
 
 ### Sub-Baustein: IE_FULL
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:  
   - `QI` = TRUE  
@@ -52,6 +56,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Erfasst einen Single-Click am vierten Eingang und lädt einen voreingestellten Maximalwert in den Zähler (Load).
 
 ### Sub-Baustein: AUDI_CTUD
+
 - **Typ**: `adapter::events::unidirectional::AUDI_CTUD_UDINT` (Aufwärts/Abwärtszähler)
 - **Parameter**: Keine (Standardkonfiguration)
 - **Ereigniseingänge**:  
@@ -63,6 +68,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Zählt bei jedem `CU`-Ereignis hoch und bei jedem `CD`-Ereignis herunter. Bei `R` wird der Zähler auf 0 gesetzt, bei `LD` auf einen internen Standardwert (z. B. 10000).
 
 ### Sub-Baustein: AUDI_SPLIT_2
+
 - **Typ**: `adapter::events::unidirectional::AUDI_SPLIT_2` (Signalverteiler)
 - **Parameter**: Keine
 - **Adaptereingang**: `IN` (Daten)
@@ -70,6 +76,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Verteilt den eingehenden Zählerwert auf zwei parallele Pfade – einen für die PWM-Wandlung und einen für die Terminalausgabe.
 
 ### Sub-Baustein: AUDI_TO_AD
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_AD` (Wandler)
 - **Parameter**: Keine
 - **Adaptereingang**: `AUDI_IN`
@@ -77,6 +84,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Wandelt den Zählerwert (AUDI-Format) in einen analogen Wert um, der für die PWM-Stufe geeignet ist.
 
 ### Sub-Baustein: PWMOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QDA_PWM`
 - **Parameter**:  
   - `QI` = TRUE (aktiviert)  
@@ -85,6 +93,7 @@ Die SubApp enthält folgende Funktionsbausteine:
 - **Funktionsweise**: Gibt ein PWM-Signal proportional zum analogen Eingangswert am Ausgang `Q1` aus.
 
 ### Sub-Baustein: Q_NumericValue_AUDI
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**:  
   - `u16ObjId` = `OutputNumber_N1` (Zieladresse für das Terminal)
@@ -130,5 +139,6 @@ Die Terminalausgabe ermöglicht eine einfache Überwachung des aktuellen Werts �
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

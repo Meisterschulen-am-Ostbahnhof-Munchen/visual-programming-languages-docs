@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsblock **FIELDBUS_BYTE_TO_SIGNAL_SCALED** dient der Umsetzung eines eingehenden Byte-Werts in einen skalierten Real-Wert. Dabei wird geprüft, ob das eingehende Signal gültig ist. Ist dies der Fall, wird der Eingangswert mit einem Skalierungsfaktor multipliziert und ein Offset addiert. Andernfalls wird der Ausgang auf Null gesetzt und das Gültigkeitssignal zurückgesetzt. Der Block ist für den Einsatz in Feldbussystemen konzipiert, bei denen Sensor- oder Aktordaten als Byte übertragen werden und linearisiert oder normiert werden müssen.
 
 ## Schnittstellenstruktur
@@ -39,9 +40,11 @@ Der Funktionsblock **FIELDBUS_BYTE_TO_SIGNAL_SCALED** dient der Umsetzung eines 
 | `VALID` | BOOL     | `FALSE`     | `TRUE`, wenn der eingehende Byte-Wert als gültig bewertet wurde |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 Der Funktionsblock wird durch zwei Ereignisse gesteuert:
 
 1. **Initialisierung (`INIT`)**  
@@ -61,12 +64,14 @@ Der Funktionsblock wird durch zwei Ereignisse gesteuert:
 Der initiale Wert von `IN` ist `NOT_AVAILABLE_B` – ein weiterer importierter Konstantwert, der ein nicht verfügbares Signal kennzeichnet. Dadurch wird bei erstmaligem Aufruf von `REQ` (ohne vorherige gültige Eingabe) stets eine ungültige Ausgabe erzeugt.
 
 ## Technische Besonderheiten
+
 - Die Konstanten `NOT_AVAILABLE_B` und `VALID_SIGNAL_B` werden aus einem separaten Bibliothekspaket importiert und nicht lokal definiert. Dadurch sind sie projektweit einheitlich.
 - Die Skalierung erfolgt linear: Multiplikation mit `SCALE` und Addition von `OFFSET`. Der Offset wird vor der Umrechnung in `REAL` vom Typ `DINT` nach `REAL` konvertiert.
 - Der Eingang `IN` wird zunächst von `BYTE` nach `USINT` (unsigned short integer) gewandelt, um einen ganzzahligen Wertebereich 0…255 zu erhalten.
 - Der Block besitzt einen expliziten Initialisierungsmodus (`INIT`), der es erlaubt, Skalierung und Offset während der Laufzeit neu zu setzen.
 
 ## Zustandsübersicht
+
 Der Funktionsblock besitzt zwei einfache Zustände, die jeweils durch das entsprechende Ereignis aktiviert werden:
 
 | Zustand | Auslösendes Event | Ausführbarer Algorithmus | Ausgehende Events |
@@ -77,6 +82,7 @@ Der Funktionsblock besitzt zwei einfache Zustände, die jeweils durch das entspr
 Es gibt keine automatischen Zustandsübergänge; jeder Zustand wird ausschließlich durch das zugehörige Ereignis angesprochen.
 
 ## Anwendungsszenarien
+
 - **Austausch analoger Sensordaten über Feldbusse:**  
   Ein 8-Bit-Sensorwert (z. B. Temperatur 0…255) soll in physikalische Einheiten (z. B. °C) umgerechnet werden. Über `SCALE` und `OFFSET` wird die Kennlinie angepasst.
 
@@ -87,6 +93,7 @@ Es gibt keine automatischen Zustandsübergänge; jeder Zustand wird ausschließl
   Vor der ersten Verarbeitung kann über `INIT` der gewünschte Skalierungsfaktor und Offset gesetzt werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **`FIELDBUS_BYTE_TO_SIGNAL`** (ohne Skalierung):  
   Dieser Baustein gibt den Byte-Wert direkt als REAL aus, ohne Multiplikation oder Addition. Er eignet sich für Signale, die bereits in der richtigen Einheit vorliegen.
 
@@ -97,9 +104,11 @@ Es gibt keine automatischen Zustandsübergänge; jeder Zustand wird ausschließl
   Analoger Baustein für 16-Bit-Werte (WORD) mit identischer Skalierungslogik, jedoch anderem Eingangsdatentyp.
 
 ## Fazit
+
 Der Funktionsblock `FIELDBUS_BYTE_TO_SIGNAL_SCALED` ist ein praktisches Werkzeug für die Verarbeitung von Feldbus-Signalen im Byte-Format. Er kombiniert eine einfache Gültigkeitsprüfung mit einer frei konfigurierbaren linearen Skalierung. Durch die Verwendung importierter Konstanten ist er in einheitliche Signalverarbeitungspipelines integrierbar. Die klare Trennung von Initialisierung und Betrieb sowie die zwei Ereignisschnittstellen machen ihn zu einem robusten und leicht verständlichen Baustein für industrielle Automatisierungslösungen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -28,6 +28,7 @@ Der Funktionsblock **ALR_MUX_5** ist ein generischer Multiplexer für den Adapte
 | K    | UINT | 0 .. 4       | Index des auszuwählenden Eingangs |
 
 ### **Daten-Ausgänge**
+
 (Keine direkten Datenausgänge vorhanden – die Datenübertragung erfolgt über den Adapter OUT.)
 
 ### **Adapter**

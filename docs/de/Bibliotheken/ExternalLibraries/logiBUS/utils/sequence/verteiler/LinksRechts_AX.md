@@ -17,6 +17,7 @@ Besonders hervorzuheben ist die Möglichkeit, den automatischen Wechsel durch di
 Der Baustein verwendet primär Adapter für die Kommunikation, stellt jedoch auch einen Status-String als direkten Ausgang zur Verfügung.
 
 ### **Ereignis-Eingänge**
+
 *Es sind keine direkten Ereignis-Eingänge vorhanden. Die Steuerung erfolgt über die Ereignisse der Adapter-Sockets.*
 
 ### **Ereignis-Ausgänge**
@@ -26,6 +27,7 @@ Der Baustein verwendet primär Adapter für die Kommunikation, stellt jedoch auc
 | **EO** | Event | Ereignis, das ausgelöst wird, wenn sich der interne Zustand (`STATE`) ändert. |
 
 ### **Daten-Eingänge**
+
 *Es sind keine direkten Daten-Eingänge vorhanden. Die Daten werden über die Adapter-Sockets eingelesen.*
 
 ### **Daten-Ausgänge**

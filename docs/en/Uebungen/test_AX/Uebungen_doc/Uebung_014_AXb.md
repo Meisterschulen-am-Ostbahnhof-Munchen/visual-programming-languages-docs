@@ -1,8 +1,10 @@
 # Exercise_014_AXb: Container (visible/invisible)
+
 ![Uebung_014_AXb_network](./Uebung_014_AXb_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of softkeys in combination with an SR flip-flop to show and hide a graphical object (Container_B). The function block monitors the key presses of the softkeys F1 (Set) and F2 (Reset) and controls the container's visibility via an SR gate. The associated constants *Container_B*, *SoftKey_F1*, and *SoftKey_F2* are imported from a global pool.
 ## Function Blocks (FBs) Used
 
@@ -32,11 +34,8 @@ This exercise consists of a sub-application containing the following internal fu
 The connections within the subapplication are implemented as follows:
 
 1. **SoftKey_UP_F1** – Pressing the F1 key → Event output `IN` is activated.
-
 2. **SoftKey_UP_F2** – Pressing the F2 key → Event output `IN` is activated.
-
 3. **AX_FB_SR** – The event input `SET1` is connected to the output of SoftKey_UP_F1. The event input `RESET` is connected to the output of SoftKey_UP_F2.
-
 4. **Q_ObjHideShow** – The value input `qVisible` is connected to the output `Q1` of the SR flip-flop.
 
 Procedure:
@@ -53,6 +52,7 @@ This exercise implements a simple yet practical control pattern for visualizatio
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

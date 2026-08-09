@@ -1,4 +1,5 @@
 # 📋 This is in the curriculum: Visual programming languages (IEC 61499) as a core competency
+
 > 📌 **Source & Legal Basis:**
 > **Source:** *Framework Curriculum for Preparation for the Master Craftsman Examination in Agricultural and Construction Machinery Mechatronics*
 > **Publisher:** German Association of Agricultural and Construction Machinery Technicians V., Alfredstraße 102, 45131 Essen (Status: February 25, 2025)
@@ -15,10 +16,12 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 ## 📚 Curriculum Integration (Modules & Learning Units)
 
 ### 1. ⚡ [Automated Functions with IEC 61499](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)
+
 - **Curriculum Reference:** Part I LE 1.4 (40 teaching units) | Part II LE 1.1 (160 teaching units)
 - **Content:** Planning, graphical creation, and commissioning of networked mechatronic systems for implementing automated functions (e.g., automatic sequence control for hoists, valves, and drive systems).
 
 ### 2. 🔍 [Fault Diagnosis in Automated & Autonomous Systems ](./lehrplan_praxis/fehlerdiagnose_autonome_systeme.md)
+
 - **Curriculum Reference:** Part I LE 2.6 (20 teaching units) | Part II LE 1.3 (100 teaching units)
 - **Content:** Structured fault diagnosis, signal tracing, and online debugging in visual function block networks and state machines (ECC) for autonomously operating machines and attachments.
 
@@ -43,6 +46,7 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Main Portal & Direct Links to the 6 Wikis
@@ -54,7 +58,6 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 **Wiki 2** | **ISOBUS Virtual Terminal**<br> User interfaces, ISO Designer & VT objects. | [🖥️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) |
 **Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, pneumatics, motors, high-voltage technology, gearboxes & machine safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/en/latest/) |
 **Wiki 4** | **Visual Programming Languages** <br> Low-code development, IEC 61499 & 4diac IDE (main curriculum topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) |
-**Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for crimping technology, soldering stations, oscilloscopes & microscopes. | [🛠️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
 **Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for crimping technology, soldering stations, oscilloscopes & microscopes. | [🛠️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
 
 **Wiki 4**

@@ -1,5 +1,6 @@
 Here is the documentation for exercise `Uebung_160b2` in the requested format.
 # Exercise_160b2: Motor Forward/Reverse Rotation Automation IX
+
 ![Uebung_160b2_network](./Uebung_160b2_network.svg)
 *(If a network view image is available, please insert it here)*
 
@@ -24,6 +25,7 @@ This sub-application uses standard library blocks to implement the logical opera
 * An on-delay timer.
 
 ### Sub-Blocks
+
 *This exercise does not use user-defined sub-blocks, but rather direct instances of standard FBs are interconnected.*
 
 ## Program Flow and Connections
@@ -31,13 +33,10 @@ This sub-application uses standard library blocks to implement the logical opera
 The circuit implements interlocked control of two outputs (e.g., motor left/right) with the following properties:
 
 1. **Control of Output Q5 (First Path):**
-
 * Output **Q5** is controlled via the block **FB_RS_A**.
 * Activating input **I1** sets the block and activates Q5.
 * Activating input **I2** resets the block and immediately deactivates Q5.
-
 2. **Switching and Control of Output Q6 (Second Path):**
-
 * Input **I2** has a dual function: It stops Q5 and starts the process for Q6.
 * The signal from **I2** starts the timer **E_TON**. This is set to **50ms** (`PT=50ms`).
 * After 50ms, the timer output (`Q`) sets the function block **FB_RS_B**.

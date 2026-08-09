@@ -1,8 +1,10 @@
 # Exercise_204b: Interlock: ILOCK_CONFLICT_TRIP (Motor Safety Shutdown with Reset)
+
 ![Uebung_204b_network](./Uebung_204b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **motor safety shutdown with reset**. It is based on the function block `ILOCK_CONFLICT_TRIP`, which implements an interlock for two opposing motor directions (clockwise and counterclockwise). If a conflict occurs (both directions active simultaneously), the motor is stopped and an alarm (trip) is triggered. A separate reset input allows the trip state to be reset.
 
 The motor is controlled via three digital inputs:
@@ -61,9 +63,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DigitalInput_I1` provides the clockwise rotation request (BOOL) and an event `IND`.
 - `DigitalInput_I2` provides the counterclockwise rotation request and an event `IND`.
 - `DigitalInput_Reset` provides the reset signal and an event `IND`.
-
 2. **Processing in the ILOCK block**:
-
 - The block `ILOCK` receives the events from the following inputs:
 - `EI_UP` is triggered by `DigitalInput_I1.IND`.
 - `EI_DOWN` is triggered by `DigitalInput_I2.IND`.
@@ -72,9 +72,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DI_UP` from `DigitalInput_I1.IN`
 - `DI_DOWN` from `DigitalInput_I2.IN`
 - The function block decides, based on its internal state logic, whether the request is valid, a conflict exists, or a reset is performed.
-
 3. **Output of Motor Directions**:
-
 - If a clockwise rotation request is valid, `ILOCK` generates an event `EO_UP` and sets the data output `DO_UP` to TRUE.
 - If a reverse scrolling request is valid, `ILOCK` generates an event `EO_DOWN` and sets `DO_DOWN` to TRUE.
 - In case of an error (conflict), `ILOCK` generates an event `EO_TRIP` and sets `DO_TRIP` to TRUE.
@@ -86,9 +84,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DO_UP` → `Rechtslauf.OUT`
 - `DO_DOWN` → `Linkslauf.OUT`
 - `DO_TRIP` → `Trip_Anzeige.OUT`
-
 4. **Low-Side Driver**:
-
 - The low-side driver (output Q56) is activated as soon as either clockwise or counterclockwise rotation is active.
 - For this purpose, the events `EO_UP` and `EO_DOWN` (both) are routed to the function block `OR_2_BOOL.REQ`.
 - The data values `DO_UP` and `DO_DOWN` are routed to the inputs `IN1` and `IN2`, respectively, of the OR gate.
@@ -96,6 +92,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - The event `OR_2_BOOL.CNF` triggers the function block `LowSide_Treiber.REQ`, and the data value `OR_2_BOOL.OUT` is passed to `LowSide_Treiber.OUT`.
 
 ### Learning Objectives
+
 - Understanding the interlock concept for motor controllers
 - Working with the function block `ILOCK_CONFLICT_TRIP` (conflict/trip logic)
 - Linking event and data flows in the 4diac IDE
@@ -103,6 +100,7 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - Error handling via a reset mechanism
 
 ### Difficulty Level
+
 Advanced – Basic knowledge of the 4diac IDE and working with function blocks is required.
 
 - Understanding the interlock concept for motor controllers
@@ -111,11 +109,11 @@ Advanced – Basic knowledge of the 4diac IDE and working with function blocks i
 - Using an OR gate for simultaneous enabling
 - Error handling via a reset mechanism
 
-
 Advanced – Basic knowledge of the 4diac IDE and working with function blocks is required.
 
 ...``
 ### Prerequisites
+
 - Fundamentals of IEC 61499
 - Sequence controls and interlocks
 - Input/output configuration with logiBUS function blocks
@@ -123,11 +121,8 @@ Advanced – Basic knowledge of the 4diac IDE and working with function blocks i
 ### Starting the Exercise
 
 1. Open the 4diac IDE and load the exercise `Uebung_204b`.
-
 2. Ensure that the required logiBUS libraries are imported (see CompilerInfo).
-
 3. Check the connections between the function blocks.
-
 4. Simulate the behavior by applying the input signals I1, I2, and I3.
 
 ## Summary
@@ -137,4 +132,5 @@ The exercise `Uebung_204b` demonstrates the use of the function block `ILOCK_CON
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,12 +1,15 @@
 # Exercise_012e2_AR: Numeric Value Input PHYS and Storing INI with Subapp (AR Adapter)
+
 ![Uebung_012e2_AR_network](./Uebung_012e2_AR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of an **AR adapter** to combine a logiBUS digital input, a configurable time base, and a timer value configured via a sub-app block, which is loaded from a non-volatile storage (NVS). A digital input signal starts a timer whose expiration time is set via a stored numeric value (INI). The timer output switches a digital output. The key feature is the AR adapter's connection between the storage block, the arithmetic unit, and the timer.
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Exercise_012e_sub_AR
+
 - **Type**: `MyLib::sys::INI_IN_AND_STORE_AR`
 - **Internal FBs Used**: (not included in the provided XML; the block is imported as a predefined sub-application type)
 - Parameters:
@@ -49,7 +52,6 @@ The function block `DigitalInput_I1` provides the physical signal `Input_I1` (e.
 This signal is directly connected to the `IN` adapter of the timer `AX_TON`.
 
 - The timer starts on a rising edge (ON).
-
 3. **Variable Timer Time**
 
 The sub-block `Uebung_012e_sub_AR` outputs the numeric value loaded from the NVS via its AR output `VALUEO`.
@@ -90,4 +92,5 @@ The timer output `Q` of `AX_TON` switches the `OUT` adapter of the output module
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

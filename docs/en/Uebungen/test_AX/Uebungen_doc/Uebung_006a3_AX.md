@@ -1,8 +1,10 @@
 # Exercise_006a3_AX: SR and T Flip-Flop with 3x IE; forward/reverse rotation
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006a3_AX`. This is a more complex application for controlling a motor with two directions of rotation.
 ----
 ## Objective of the exercise
+
 Implementation of a reversing contactor control with software interlock. "Left" and "Right" must never be controlled simultaneously, as this would cause a short circuit in the power circuit.
 
 -----
@@ -28,11 +30,8 @@ Implementation of a reversing contactor control with software interlock. "Left" 
 ## Functionality
 
 1. The `AX_T_FF_SR` determines whether the motor should run at all.
-
 2. The subapp `AX_LinksRechts_T_FF` is a direction memory (toggle). Every time the motor is switched on (event from `SPLIT_3.OUT1`), this subapp toggles the direction for the *next* or *current* run (depending on the exact internal wiring).
-
 3. The AND gates connect "Motor On" (`SPLIT_3`) to "Direction Left" or "Direction Right".
-
 4. This ensures that only one output (`Q1` or `Q2`) is active at any given time.
 
 *Note: The exact logic for changing the direction (at every start? or via a separate button?) depends on `Uebung_006a3_sub_AX`.*

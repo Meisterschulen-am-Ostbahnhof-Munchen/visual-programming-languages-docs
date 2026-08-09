@@ -1,8 +1,10 @@
 # Exercise_001_AX_b: DigitalInput_I1 to DigitalOutput_Q1, using Plug and Socket
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_001_AX_b`, in which a digital input is connected to a digital output via signal conversion. Unlike a direct adapter connection, here the adapter state is explicitly converted to a Boolean value and back again.
 ----
 ## Objective of the Exercise
+
 The main objective of this exercise is to demonstrate the conversion between adapter interfaces ("Plug and Socket") and classic Boolean data connections. This is a fundamental technique in IEC 61499 for making signals transmitted via adapters accessible for logical operations (such as AND, OR, NOT) that operate on elementary data types.
 
 -----
@@ -48,11 +50,8 @@ The logic is implemented through the combination of adapter, event, and data con
 The process is as follows:
 
 1. If the state at input `I1` changes, `DigitalInput_I1` sends an adapter event.
-
 2. The function block `AX_X_TO_BOOL` receives this event, outputs the current state at data output `IN`, and signals this with the event `CNF`.
-
 3. The event `CNF` triggers the `REQ` input of `AX_BOOL_TO_X`, which then adopts the value from `OUT`.
-
 4. `AX_BOOL_TO_X` sends a new adapter event to `DigitalOutput_Q1`, which then switches the output `Q1`.
 
 -----

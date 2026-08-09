@@ -1,8 +1,10 @@
 # SUM
+
 ![SUM](./SUM.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **SUM** function block allows you to calculate the sum of all elements in a dynamic array. It is triggered by an event at the REQ input and, after successful calculation, outputs the result via the data output and a confirmation event via CNF.
 ## Interface Structure
 
@@ -50,17 +52,17 @@ The FB `SUM` accepts a one-dimensional array `A` of type `INT` with arbitrary le
 The function block does not have an explicit state machine. Its behavior can be described as follows:
 
 1. **Waiting:** No event is active – initial state.
-
 2. **Calculation:** Entry after receiving `REQ`; summation of the array.
-
 3. **Acknowledgement:** After completion of the calculation, `CNF` is sent; return to the wait state.
 
 ## Application Scenarios
+
 - Summing sensor readings over a specific period.
 - Calculating totals in a production plant (e.g., quantities, fill levels).
 - Preprocessing data arrays before further logical or arithmetic processing.
 
 ## Comparison with Similar Function Blocks
+
 - **SUM in IEC 61131-1:** This function block is closely based on the function of the same name from IEC 61131-3, but additionally enables event-driven execution and direct integration into the 4diac event model.
 - **ADD / MULT:** While `ADD` or `MULT` process individual number pairs, `SUM` allows the processing of an entire array in one step, simplifying the application logic.
 
@@ -71,4 +73,5 @@ The function block `SUM` offers a simple and efficient way to calculate the sum 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

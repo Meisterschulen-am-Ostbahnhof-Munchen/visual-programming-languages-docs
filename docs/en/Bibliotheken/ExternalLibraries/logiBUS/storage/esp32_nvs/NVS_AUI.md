@@ -1,10 +1,13 @@
 # NVS_AUI
+
 ![NVS_AUI](./NVS_AUI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **NVS_AUI** is used to load and store UINT data in non-volatile memory (NVS) using a key. It encapsulates access to the NVS and provides a standardized AUI adapter interface for outputting read values and receiving values to be stored. Typical applications include embedded systems that need to persistently store configuration or status data.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Comment | Accompanying Data |
@@ -56,6 +59,7 @@ A new value can be received via the input adapter `AUI_IN`. An incoming event (E
 `` The entire data and event flow is implemented by the embedded function block `NVS` (from the library `logiBUS::storage::esp32_nvs`).
 
 ## Technical Features
+
 - **AUI Adapter Interface**
 
 The unidirectional adapters `AUI_IN` and `AUI_OUT` enable loose coupling between the NVS module and other components that use standardized AUI interfaces.
@@ -69,6 +73,7 @@ Immediately after initialization, the value is read and made available via `AUI_
 Errors during initialization or memory accesses are signaled via `STATUS`.
 
 ## Status Overview
+
 The FB is in **idle state** after startup.
 
 - **Initialization** (upon arrival of `INIT`): Establishing the NVS connection, reading the existing value.
@@ -77,12 +82,15 @@ The FB is in **idle state** after startup.
 - **Error state** (in case of unsuccessful initialization): `QO` = FALSE, `STATUS` contains error text.
 
 ## Application Scenarios
+
 - **Configuration Memory** in IoT devices: Storing network settings, calibration data, or user settings.
 - **Status Monitoring**: Saving the last operating state (e.g., counter readings) before a power failure.
 - **Parameter Transfer** between different automation components that communicate via AUI adapters.
 
 ## Comparison with Similar Function Blocks
+
 Compared to the direct **NVS** function block, `NVS_AUI` offers a higher level of abstraction through its adapter interface. While the basic function block requires separate events for reading (`GET`) and writing (`SET`), `NVS_AUI` simplifies data flow through unidirectional adapters and automatic read operation after INIT. Other memory modules (e.g., `F_MMAP`, `F_FILE`) typically use file-based or memory-mapping methods; `NVS_AUI` is specifically optimized for non-volatile memory with key-value pairs.
 
 ## Conclusion
+
 NVS_AUI` is a practical functional block for persistent data storage in automation systems. The combination of NVS memory and an AUI adapter allows for easy integration into existing IEC 61499 applications, reduces wiring effort, and ensures a clear separation between memory logic and communication.

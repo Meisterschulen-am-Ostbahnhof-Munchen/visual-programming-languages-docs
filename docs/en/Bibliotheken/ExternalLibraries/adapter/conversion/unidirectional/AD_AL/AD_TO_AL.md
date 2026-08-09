@@ -1,8 +1,10 @@
 # AD_TO_AL
+
 ![AD_TO_AL](./AD_TO_AL.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AD_TO_AL** function block is a composite function block that performs a unidirectional conversion of an AD adapter (DWORD) to an AL adapter (LWORD). It serves as a bridge between subsystems that use different adapter types but require the same logical connection. The function block passes event and data signals through one-to-one, thus enabling the seamless integration of heterogeneous components.
 ## Interface Structure
 
@@ -44,6 +46,7 @@ The incoming data value (DWORD) is passed to the output as an LWORD without tran
 Type conversion occurs implicitly through the coupling of the adapters; no explicit data type conversion takes place. The runtime environment ensures that the values are handled according to the adapter definition.
 
 ## Technical Features
+
 - **Composite Function Block:** The function block contains no internal logic (no state machine, no algorithms) and consists exclusively of internal connections.
 - **Unidirectionality:** The adapters are designed to be unidirectional (only one data direction and one event direction).
 - **Package Structure:** The function block (FB) is located in the package `adapter::conversion::unidirectional`.
@@ -55,11 +58,13 @@ Type conversion occurs implicitly through the coupling of the adapters; no expli
 The function block does not have an internal state machine. Its state is identical to the state of the connected adapters. Passing through occurs without delay or logic.
 
 ## Application Scenarios
+
 - **System Integration:** Connecting components that use different adapter protocols (e.g., a controller with a DWORD interface and a bus coupler with an LWORD interface).
 - **Test Environments:** Easy injection of test data by replacing adapters.
 - **Modularization:** Separation of interface definition and data flow logic in large IEC 61499 projects.
 
 ## Comparison with Similar Blocks
+
 - `AL_TO_AD`: Performs the reverse conversion (LWORD → DWORD).
 - Direct adapter conversion blocks (e.g., `BYTE_TO_WORD`) generally do not replace adapters but convert elementary data types.
 - Other "composite" blocks in the `adapter::conversion` package offer similar forwarding for other adapter types (e.g., `AI_TO_AO`, `DI_TO_DO`).
@@ -73,6 +78,7 @@ The `AD_TO_AL` function block is a lean yet valuable tool for adapter conversion
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

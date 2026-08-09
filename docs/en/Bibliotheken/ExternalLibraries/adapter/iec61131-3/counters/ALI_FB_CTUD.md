@@ -1,11 +1,15 @@
 # ALI_FB_CTUD
+
 ![ALI_FB_CTUD](./ALI_FB_CTUD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ALI_FB_CTUD** implements an up/down counter with a value range of type **LINT** (64-bit integer). It is specifically designed for use with **ALI adapters** and encapsulates a standard-compliant counter according to IEC 61131-3 (FB_CTUD_LINT). Control and output are exclusively via adapter interfaces, allowing for flexible integration into adapter-based architectures.
 ## Interface Structure
+
 ### **Event Inputs**
+
 The function block does not have direct event inputs. All control events are received via the **sockets** (adapters):
 
 - **CU.E1** – Count Up event
@@ -16,21 +20,7 @@ The function block does not have direct event inputs. All control events are rec
 
 *Note*: All five events trigger a common internal processing cycle.
 
-*Note*: All five events trigger a common internal processing cycle.
-
 *Note: **CU.E1** – Count Up event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
-*Note: **CU.E1** – Count Down event
 *Note: **CU.E1** – Count Down event
 *CT ...
 ### **Event Outputs**
@@ -46,6 +36,7 @@ Additionally, the following events are output via the **Plugs** (Output Adapters
 *Special Note*: These events are triggered with **every** update (regardless of the input event). For change-triggered triggering, it is recommended to use an AX_D_FF block beforehand.
 
 ### **Data Inputs**
+
 The data values are provided via the **sockets**:
 
 - **CU.D1** (BOOL) – Count Up Enable
@@ -55,6 +46,7 @@ The data values are provided via the **sockets**:
 - **PV.D1** (LINT) – Preset Value
 
 ### **Data Outputs**
+
 The results data are provided via the **plugs**:
 
 - **QU.D1** (BOOL) – Signal: Counter value > 0 (e.g., for the "Up" output)
@@ -75,30 +67,31 @@ The results data are provided via the **plugs**:
 | **CV** | Plug   | `adapter::types::unidirectional::ALI` | Zählerwert‑Ausgang (Ereignis+LINT) |
 
 ## Funktionsweise
+
 Der Baustein enthält einen internen Funktionsblock **FB_CTUD_LINT**, der die eigentliche Zählerlogik nach IEC 61131‑3 implementiert. Jedes Ereignis an einem der fünf Sockets (CU.E1, CD.E1, R.E1, LD.E1, PV.E1) löst eine Verarbeitung aus: Die zugehörigen booleschen Daten (CU.D1, CD.D1, R.D1, LD.D1) und der Preset‑Wert (PV.D1) werden an den internen Baustein weitergeleitet und dort synchron ausgewertet. Der interne Baustein berechnet daraufhin den neuen Zählerstand und die Ausgangssignale QU, QD und CV. Nach Abschluss der Berechnung wird das Ausgangsereignis **CNF** gesendet und gleichzeitig werden die Ereignisse **QU.E1**, **QD.E1** und **CV.E1** auf den entsprechenden Plugs ausgegeben.
 
 Die Verwendung von Adaptern ermöglicht eine lose Kopplung: Die eigentlichen Signalquellen (z. B. Sensoren oder Bedienelemente) und -senken (z. B. Aktoren oder Anzeigen) werden über Adapterverbindungen angebunden, ohne dass die internen Daten‑ und Ereignisleitungen direkt sichtbar sind.
 
 ## Technische Besonderheiten
+
 - **Datenbereich**: 64‑Bit vorzeichenbehaftete Ganzzahl (LINT), geeignet für große Zählerstände.
 - **Adapter‑getriebene Schnittstelle**: Keine direkten Ereignis‑ oder Dateneingänge; alle Steuerungen erfolgen über AX‑ und ALI‑Adapter.
 - **Immerwährende Ereignisausgabe**: Die Ausgangsereignisse (QU.E1, QD.E1, CV.E1) werden bei **jedem** Verarbeitungszyklus ausgegeben, unabhängig davon, ob sich der Zählerstand tatsächlich geändert hat. Dieses Verhalten ist im Quellcode explizit dokumentiert – für eine änderungsbasierte Auslösung wird die Verwendung eines AX_D_FF‑Filters empfohlen.
 - **Interner Standard‑Baustein**: Der FB_CTUD_LINT entspricht der IEC 61131‑3‑Definition eines Auf‑/Abwärtszählers.
 
 ## Zustandsübersicht
+
 Eine formale Zustandsmaschine ist nicht extern sichtbar. Der interne Zustand besteht aus dem aktuellen **Zählerwert** (CV) und den internen Flags **QU** (z. B. „Wert > 0") and **QD** (e.g., "Value < 0"). The state is updated with each input event according to the following priority:
 
 1. **Reset (R)**: sets CV to 0.
-
 2. **Load (LD)**: adopts PV as the new CV.
-
 3. **Count Up (CU)**: increments CV by 1 if CU.D1 = TRUE.
-
 4. **Count Down (CD)**: decrements CV by 1 if CD.D1 = TRUE.
 
 The flags QU and QD are then calculated from the new CV.
 
 ## Application Scenarios
+
 - **Production Counting**: Recording workpieces or cycles – counting up on entry, counting down on exit.
 - **Position Monitoring**: Counting up/down steps in a linear drive.
 - **Inventory Management**: Counting storage units with manual correction via Load/Reset.

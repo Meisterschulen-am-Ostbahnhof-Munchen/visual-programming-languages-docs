@@ -15,25 +15,31 @@ Der Funktionsblock `ALI_MUL_3` ist ein generischer Arithmetik-Baustein für die 
 Da dieser Funktionsblock vollständig auf der Adapter-Technologie basiert, besitzt er keine direkten, klassischen Ereignis- oder Datenkanäle auf der Hauptelebene.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (Signalverarbeitung erfolgt über die Adapter).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (Signalweiterleitung erfolgt über den Ausgangs-Adapter).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingänge)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::ALI`): Der erste Faktor (Multiplikand 1) für die arithmetische Multiplikation.
 * **IN2** (Typ: `adapter::types::unidirectional::ALI`): Der zweite Faktor (Multiplikand 2) für die arithmetische Multiplikation.
 * **IN3** (Typ: `adapter::types::unidirectional::ALI`): Der dritte Faktor (Multiplikand 3) für die arithmetische Multiplikation.
 
 #### **Plugs (Ausgänge)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::ALI`): Das Ergebnis der Multiplikation (Produkt).
 
 ---

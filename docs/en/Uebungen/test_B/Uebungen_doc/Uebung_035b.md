@@ -4,7 +4,6 @@ Here is the documentation for exercise **Exercise_035b** based on the provided X
 * * * * * * * * * *
 This exercise implements a step chain controller (sequencer) called "Mirror Sequence V2." The goal is the sequential control of four digital outputs (Q1 to Q4). Additionally, the current status of the step chain is visualized as a numerical value on a user interface. Control is achieved via digital inputs, which can start, modify, or reset the sequence.
 
-
 This application uses various function blocks from the libraries `logiBUS`, `isobus`, and `iec61131`.
 
 * **DigitalInput_CLK_I1** to **DigitalInput_CLK_I4** (`logiBUS::io::DI::logiBUS_IE`): These function blocks process the physical input signals (pushbuttons). They are configured to respond to the event `BUTTON_SINGLE_CLICK`.
@@ -14,9 +13,13 @@ This application uses various function blocks from the libraries `logiBUS`, `iso
 * **E_RTimeOut** (`iec61499::events::E_RTimeOut`): *Note: This block is placed in the network but is not currently wired in the exercise (according to the comment, this is a "TODO" for a future example).*
 
 ### Haupt-Bausteine
+
 ## Function Blocks Used (FBs)
+
 ## Introduction
+
 # Uebung_035b: Spiegelabfolge V2 mit Schrittkette
+
 ### Sub-blocks: sequence_ET_04
 
 This is the central logic block of the exercise.
@@ -38,11 +41,9 @@ This is the central logic block of the exercise.
 * `DO_S1` to `DO_S4`: Data outputs (BOOL) that carry the status of the respective step.
 * `STATE_NR`: Outputs the current step number as a number.
 
-
 The exercise sequence is determined by the interaction of the buttons with the sequencer module:
 
 1. **Sequence Control**:
-
 * Button **I1** is connected to input `START_S1`. A click starts the sequence.
 * Button **I2** interacts with transition `S2_S3`.
 * Button **I3** interacts with transition `S4_START`.
@@ -54,20 +55,18 @@ The exercise sequence is determined by the interaction of the buttons with the s
 * Step 3 activates **Q3**.
 * Step 4 activates **Q4**.
 * The time parameters (T#2s) in the sequencer indicate that the steps have a defined runtime or that automatic transitions occur after 2 seconds, provided they are not overdriven by the inputs.
-
 3. **Visualization**:
-
 * The current step number (`STATE_NR` from the sequencer) is sent to the converter `F_SINT_TO_UINT`.
 * The converted value (`u32NewValue`) is passed to the function block `Q_NumericValue` to display the active step number on the display (object `OutputNumber_N1`).
 
-
 Exercise **Exercise_035b** demonstrates the implementation of a more complex step sequencer (`sequence_ET_04`) within the 4diac IDE. It combines manual user input (start, reset, specific transition triggers) with time-based parameters to sequentially switch four outputs. Simultaneously, the internal state of the logic (the step number) is visualized for the user on a display.
-
 
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 
 ## Program Flow and Connections
+
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

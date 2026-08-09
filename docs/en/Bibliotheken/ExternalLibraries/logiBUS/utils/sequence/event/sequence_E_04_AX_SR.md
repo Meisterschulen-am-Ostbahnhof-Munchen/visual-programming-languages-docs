@@ -1,10 +1,13 @@
 # sequence_E_04_AX_SR
+
 ![sequence_E_04_AX_SR](./sequence_E_04_AX_SR.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `sequence_E_04_AX_SR` implements an event-driven sequencer with four outputs via an AX adapter. It also offers a safety stop (STOP), a resume (RESUME), and a reset (RESET). The sequence cycles through the states State_00, State_01, State_02, State_03, and State_04 and can be operated cyclically.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Description |
@@ -45,6 +48,7 @@ No external data inputs.
 DO_S4` | `adapter::types::unidirectional::AX` | Output active in State_04 |
 
 ## Functionality
+
 The sequencer operates according to a finite state machine (ECM). The five sequential states are:
 
 - `State_00` (START)
@@ -62,8 +66,8 @@ The transition to the next state is triggered by the corresponding events (`S1_S
 The state then changes to one of the paused states (`sPAUSED_S1` to `sPAUSED_S4` or `sPAUSED_S0`). The ``RESET`` command puts the sequencer into a reset state, regardless of its current state. In this state, all four outputs are explicitly switched off, and then it immediately switches to ``State_00``.
 
 ## Technical Features
+
 - **AX Adapters**: The four outputs are implemented using unidirectional AX adapters, each with a Boolean value, ``D1``. The outputs are only set in active states and are immediately reset upon exiting or stopping.
-- **Pause/Resume Mechanism**: The internal variable ``savedState`` stores the state at the time of the stop, so that the exact same state can be resumed after ``RESUME``.
 - **Pause/Resume Mechanism**: The internal variable ``savedState`` stores the state at the time of the stop, so that the exact same state can be resumed after ``RESUME``.
 - **Safety Stop**: The `STOP` event causes all outputs to be switched off immediately (even without entering a paused state), which is designed as a dead-man stop.
 - **Use of constants from the `sequence` package**: The state numbers (`State_00`, `State_01`, ...) are defined as named constants in the `logiBUS::utils::sequence::const::sequence` package.
@@ -87,12 +91,14 @@ sPAUSED_S4 | none | saved | TRUE |
 sRESET | none | – | – |
 
 ## Application Scenarios
+
 - **Control of Sequential Processes**: e.g., a machine that performs four work steps in succession, with each step controlling its own actuator.
 - **Safety-Critical Applications**: When a `STOP` signal must immediately shut down all actuators (e.g., emergency stop), and the exact state is restored after release.
 - **Cyclic Processes**: from step 1 to 4 and back to step 0 (e.g., in packaging machines).
 - **Manual Intervention**: the process can be reset to the beginning at any time using `RESET`.
 
 ## Comparison with Similar Function Blocks
+
 Unlike simpler sequencers (e.g., without STOP/RESUME), `sequence_E_04_AX_SR` offers:
 
 - **Safety interrupt with defined shutdown of all outputs**.
@@ -103,4 +109,5 @@ Unlike simpler sequencers (e.g., without STOP/RESUME), `sequence_E_04_AX_SR` off
 Other function blocks with the same number of outputs, but without STOP/RESUME, are easier to use but do not offer a safety function.
 
 ## Conclusion
+
 The `sequence_E_04_AX_SR` function blockis a versatile, safety-conscious four-step sequencer. It is particularly suitable for controllers where an interruptible sequence with defined output states and a resume option is required. The interface is clearly structured, the implementation robust, and it integrates well into automation environments through the use of AX adapters.

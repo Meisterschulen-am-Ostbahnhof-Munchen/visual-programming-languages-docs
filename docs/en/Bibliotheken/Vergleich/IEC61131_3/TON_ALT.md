@@ -1,6 +1,8 @@
 # TON (On-Delay) - IEC 61131-3
+
 The **TON** (Timer On-Delay) function block implements an on-delay. The output is only activated when the input signal is present for a defined period.
 ## Interface
+
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
 **Input** | IN | BOOL | Start Signal |

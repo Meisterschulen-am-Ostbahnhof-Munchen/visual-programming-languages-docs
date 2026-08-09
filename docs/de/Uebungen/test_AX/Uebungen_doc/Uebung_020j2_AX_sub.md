@@ -13,6 +13,7 @@ Diese Subapplikation dient als Baustein für die Ansteuerung von zwei Ausgängen
 Die Subapplikation besteht aus einem selbstdefinierten SubAppType, der folgende interne Funktionsbausteine enthält:
 
 ### Sub-Baustein: `Uebung_020j2_AX_sub`
+
 - **Typ**: SubAppType (selbstdefinierte Subapplikation, Wiederverwendung als Baustein)
 - **Verwendete interne FBs**:
 
@@ -66,4 +67,5 @@ Die Subapplikation `Uebung_020j2_AX_sub` realisiert eine einfache, aber häufig 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

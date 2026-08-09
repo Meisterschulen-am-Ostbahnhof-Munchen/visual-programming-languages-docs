@@ -1,8 +1,10 @@
 # UDINT_AUI_NE
+
 ![UDINT_AUI_NE](./UDINT_AUI_NE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUI_NE** compares two values for inequality ("not equal"). It is classified as a standardized comparison function according to IEC 61131-3 and uses adapter interfaces for the second input and the result. The block is asynchronously event-driven: An event at the **REQ** input triggers the comparison, and the result is output via the output adapter.
 ## Interface Structure
 
@@ -45,16 +47,14 @@ The function block does not have any independent data outputs. The comparison re
 The function block operates internally with the predefined function block **F_NE** (from the library `iec61131::comparison`). The process is as follows:
 
 1. An event at input **REQ** activates the comparison. Simultaneously, the value must be present at **IN1**.
-
 2. The second value is provided via socket **IN2**. The internal function block **F_NE** receives an event from **IN2.E1** as well as from **REQ** (both event sources are connected to **F_NE.REQ**).
-
 3. **F_NE** compares the two data values (**IN1** and **IN2.D1**) and outputs the result to its output **OUT** (boolean).
-
 4. The output event **F_NE.CNF** is forwarded to the plug **OUT.E1**. The output data (**OUT.D1**) contains the comparison result.
 
 Thus, after each **REQ** event (or an event from **IN2**), the result at the adapter **OUT** is updated.
 
 ## Technical Features
+
 - **Generic Data Types:** The input **IN1** is declared as `ANY_ELEMENTARY`, making the function block compatible with all elementary data types. The second input is provided via the adapter **IN2** – this must also correspond to the same elementary data type.
 - **Adapter Interfaces:** The function block uses adapters only for the second input and the output. This enables a modular, type-safe connection in the 4diac IDE.
 - **Asynchronous Event Control:** The comparison is triggered by events. The result is output via the adapter in an event-driven manner – there is no continuous data output.
@@ -71,11 +71,13 @@ The function block does not have an explicit state machine. Its behavior can be 
 The function block is ready for the next comparison as soon as the result has been output.
 
 ## Application Scenarios
+
 - **Inequality Check in Control Sequences:** Monitors whether two measured values (e.g., temperature, pressure) differ from each other.
 - **State Comparison:** Checks whether a setpoint deviates from an actual value in order to trigger switching or alarm functions.
 - **Data Validation:** Compares input data from different sources for inconsistencies.
 
 ## Comparison with Similar Function Blocks
+
 - **F_E (Equal) / UDINT_AUI_EQ:** Performs an equality comparison. The difference lies in the inverted result.
 - **F_LT, F_GT:** Perform less-than and greater-than comparisons, respectively, but yield different logical results.
 - **Custom Implementation without Adapters:** Comparison blocks without adapters use direct data inputs; the **UDINT_AUI_NE** is specifically designed for use in adapter-based architectures.
@@ -87,6 +89,7 @@ The **UDINT_AUI_NE** function block is a standards-compliant, event-driven inequ
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

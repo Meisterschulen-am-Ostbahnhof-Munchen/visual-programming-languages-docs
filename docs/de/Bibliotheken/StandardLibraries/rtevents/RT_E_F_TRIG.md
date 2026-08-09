@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Echtzeit-Variante des E_F_TRIG Bausteins (Fallende Flanke).
 
 ![RT_E_F_TRIG](RT_E_F_TRIG.svg)
@@ -18,4 +19,5 @@ Echtzeit-Variante des E_F_TRIG Bausteins (Fallende Flanke).
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

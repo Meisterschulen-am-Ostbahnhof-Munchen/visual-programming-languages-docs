@@ -9,6 +9,7 @@ Hier ist die Dokumentation für die Übung basierend auf dem bereitgestellten XM
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Erstellung und Nutzung einer "Typed SubApp" (typisierte Unteranwendung). Die Logik verbindet eine SoftKey-Eingabe (F1) auf einem ISOBUS-Terminal mit einem physikalischen digitalen Ausgang (Q1) sowie einer visuellen Rückmeldung (Hintergrundfarbe). Durch die Kapselung in einer SubApp wird der Code modular und wiederverwendbar gestaltet.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -16,6 +17,7 @@ Diese Übung demonstriert die Erstellung und Nutzung einer "Typed SubApp" (typis
 In dieser SubApp werden verschiedene Funktionsbausteine und eine weitere SubApp verschaltet, um die gewünschte Funktionalität zu erreichen.
 
 ### Sub-Bausteine: Uebung_010c3_sub_AX (Diese Komponente selbst)
+
 *   **Typ**: SubAppType
 *   **Schnittstelle**:
     *   **Eingänge**:
@@ -70,9 +72,11 @@ Der Ablauf innerhalb dieser SubApp gestaltet sich wie folgt:
 *   Verständnis des Adapter-Konzepts in 4diac.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_010c3_sub_AX` ist ein wiederverwendbares Modul, das eine SoftKey-Bedienung gleichzeitig auf einen Hardware-Ausgang und eine Display-Visualisierung abbildet. Durch den Einsatz des `AX_SPLIT_2` Bausteins wird demonstriert, wie ein einzelnes Adapter-Event parallel verarbeitet werden kann, um Hardware-Aktionen und UI-Updates synchron zu halten.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

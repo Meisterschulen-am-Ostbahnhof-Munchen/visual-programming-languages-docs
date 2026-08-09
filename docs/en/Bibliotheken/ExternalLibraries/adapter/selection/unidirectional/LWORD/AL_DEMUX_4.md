@@ -1,8 +1,10 @@
 # AL_DEMUX_4
+
 ![AL_DEMUX_4](./AL_DEMUX_4.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AL_DEMUX_4** implements a generic demultiplexer for the adapter type `AL` (analog/logic). It distributes an incoming adapter signal to one of four outputs, with the selection controlled by the index value `K`. The block is suitable for applications where a single signal needs to be routed to different outputs.
 ## Interface Structure
 
@@ -51,8 +53,6 @@ The module operates on the principle of a 1-to-4 demultiplexer. On a rising edge
 
 The index `K` is interpreted as an integer value in the range 1 to 4. Values outside this range do not result in any signal transfer and do not trigger the event `CNF` (or the behavior is implementation-dependent).
 
-The index `K` is interpreted as an integer value in the range 1 to 4. Values outside this range do not result in any signal transfer and do not trigger the event `CNF` (or the behavior is implementation-dependent).
-
 ## Technical Features
 
 - **Generic Adapter Type:** The function block is defined for the unidirectional adapter `AL`. The generic property (`GenericClassName`) allows the type to be extended to other unidirectional adapters.
@@ -64,17 +64,17 @@ The index `K` is interpreted as an integer value in the range 1 to 4. Values out
 The function block has no modeled states, as it operates purely event-driven. The processes can be described as follows:
 
 1. **Waiting for REQ** – The function block is ready to receive a new index.
-
 2. **Signal Forwarding** – At `REQ`, the value of `K` is evaluated, and the signal from `IN` is copied to the corresponding output (OUT1..OUT4).
-
 3. **Acknowledgement** – `CNF` is then sent.
 
 ## Application Scenarios
+
 - **Sensor-Actuator Matrix:** A single analog or logic sensor provides data that is forwarded to various actuators (e.g., valves or displays) depending on the operating mode.
 - **Test and Verification Benches:** Rapid switching of a measured variable between multiple measuring devices.
 - **Signal Distribution in Automation:** Control of multi-way valves or multiplex connections in the process industry.
 
 ## Comparison with Similar Components
+
 - **`D_DEMUX` (Data Demultiplexer):** Works with data types (e.g., INT, REAL) and not with adapters. `AL_DEMUX_4`, on the other hand, encapsulates the signal in an adapter, which offers greater flexibility in type adaptation.
 - **`AL_MUX_4`:** The multiplexer counterpart (`AL_MUX_4`) combines multiple inputs into one output. `AL_DEMUX_4` implements the reverse.
 - **Generic MUX/DEMUX:** The IEC 61449-2 standard usually offers MUX components for scalar data, but without adapter support. `AL_DEMUX_4` fills this gap for unidirectional adapters.

@@ -1,8 +1,10 @@
 # AUS_D_FF_HYS_TMIN
+
 ![AUS_D_FF_HYS_TMIN](./AUS_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (D flip-flop) with hysteresis and a minimum inter-event time. It is structured as a sub-application (FB network) that delegates the actual logic to the inner block `logiBUS::signalprocessing::hysteresis::E_D_FF_ANY_HYS_TMIN`. This block serves to latch an analog or discrete value with a predefined hysteresis band and simultaneously limit the event rate (via the adapter input) to a configurable minimum interval.
 ## Interface Structure
 
@@ -48,6 +50,7 @@ This function block operates as a pure encapsulation of an internal flip-flop. A
 The internal function block handles all the logic; the outer block serves as an interface wrapper that connects the events and data accordingly.
 
 ## Technical Features
+
 - **Adapter Interface:** Communication takes place via the unidirectional adapters `adapter::types::unidirectional::AUS`. This enables a clear separation of event and data flow and easy reuse in different contexts.
 - **Hysteresis:** Prevents constant switching due to noisy signals. The latched value only changes when the input leaves the hysteresis band.
 - **Minimum Inter-Event Time (`Tmin`):** Debounces events and prevents bursts. Only events with a minimum interval of `Tmin` are accepted.
@@ -58,19 +61,15 @@ The internal function block handles all the logic; the outer block serves as an 
 Since the function block does not have its own state diagram (the logic resides within the internal FB), the state behavior results from the interaction of event control and the parameters:
 
 1. **Initialization (`INIT` – `INITO`)**: After startup, the internal FB is configured. Only then can events be processed.
-
 2. **Waiting for Incoming Event**: The function block is passive until an event arrives via `I.E1`.
-
 3. **Event Check** (internal):
-
 - Time Check: Is the interval to the last event ≥ `Tmin`?
 - Hysteresis Check: Does the new value exceed the old value by more than `HYSTERESIS`?
-
 4. **Output**: If the check is successful, `Q.E1` is triggered and the new data value is passed to `Q.D1`.
-
 5. **Return to Waiting State**.
 
 ## Application Scenarios
+
 - **Sensor Evaluation with Noise:** An analog value (e.g., temperature, pressure) should only trigger a switching operation if it shows a significant change (hysteresis) and does not occur too rapidly (debouncing).
 - **Frequency Limiting:** In communication protocols where an event must not be processed more frequently than a certain rate.
 - **Safety-Critical Applications:** Preventing false triggers caused by short-duration interference pulses (minimum time between two edges).

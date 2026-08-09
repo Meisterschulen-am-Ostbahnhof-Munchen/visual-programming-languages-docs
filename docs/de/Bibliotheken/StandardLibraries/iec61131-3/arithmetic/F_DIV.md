@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Division verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 
 ![F_DIV](F_DIV.svg)
@@ -12,16 +13,20 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Dividend und Divisor)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Divisionsergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_NUM): Dividend (Zähler)
 - `IN2` (ANY_NUM): Divisor (Nenner)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_NUM): Ergebnis der Division (IN1 / IN2)
 
 ## Funktionsprinzip

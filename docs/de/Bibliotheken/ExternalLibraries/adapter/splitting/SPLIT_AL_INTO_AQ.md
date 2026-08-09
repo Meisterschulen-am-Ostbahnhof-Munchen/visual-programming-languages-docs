@@ -10,15 +10,19 @@ Der Funktionsblock **SPLIT_AL_INTO_AQ** ist ein zusammengesetzter Baustein (Comp
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine direkten Ereignis-Eingänge. Das auslösende Ereignis wird über den eingehenden Adapter `IN.E1` bereitgestellt.
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge. Die Ausgabeereignisse werden über die ausgehenden Adapter `QUARTER_BYTE_xx.E1` weitergegeben.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge. Der LWORD-Datenwert wird über den eingehenden Adapter `IN.D1` eingelesen.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Die 2‑Bit‑Datenwerte werden über die ausgehenden Adapter `QUARTER_BYTE_xx.D1` ausgegeben.
 
 ### **Adapter**

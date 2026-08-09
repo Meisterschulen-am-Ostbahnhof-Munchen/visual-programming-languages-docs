@@ -1,7 +1,9 @@
 # Exercise_014: Containers (visible/invisible)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_014`. It demonstrates how to dynamically change the user interface of the ISOBUS terminal by making entire groups of objects (containers) visible or invisible.
 ## 🎧 Podcast
+
 ![Uebung_014_network](./Uebung_014_network.svg)
 
 * [4diac IDE: Your Open-Source Toolkit for Distributed Industrial Automation according to IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
@@ -23,6 +25,7 @@ Using the function block `Q_ObjHideShow` to control the visibility of ISOBUS obj
 [cite_start]The subapplication `Uebung_014.SUB` uses two softkeys to set or clear a memory location whose state controls the visibility of a container[cite: 1].
 
 ### Function Blocks (FBs)
+
 * **`SoftKey_UP_F1` & `F2`**: Terminal input (On/Off).
 * **`E_SR`**: Memory for the visibility status.
 * **`Q_ObjHideShow`**: The ISOBUS output block. [cite_start]It controls the "Visibility" property of the object with the ID `Container_B`[cite: 1].
@@ -32,13 +35,9 @@ Using the function block `Q_ObjHideShow` to control the visibility of ISOBUS obj
 ## Functionality
 
 1. Pressing **F1** sets the memory to `TRUE`.
-
 2. Pressing **F2** sets the memory to `FALSE`.
-
 3. The respective event (`EO`) triggers the `REQ` input of `Q_ObjHideShow`.
-
 4. The block transmits the state of `qVisible` to the terminal.
-
 5. All objects located in the ISOBUS pool within `Container_B` now appear or disappear simultaneously on the screen.
 
 -----
@@ -52,4 +51,5 @@ A machine can be ordered with or without a weighing system. The weighing display
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

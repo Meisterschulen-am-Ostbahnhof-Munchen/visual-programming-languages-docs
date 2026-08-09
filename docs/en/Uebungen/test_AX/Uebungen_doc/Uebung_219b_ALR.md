@@ -1,8 +1,10 @@
 # Exercise_219b_ALR: Standard IEC 61131-3 AULI_FB_CTD (Adapter Version, Countdown Counter, ULINT) with Terminal Output (PHYSA_LREAL)
+
 ![Uebung_219b_ALR_network](./Uebung_219b_ALR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a countdown counter (CTD) according to IEC 61131-3 as an adapter version. The counter processes ULINT values and outputs the current count via a terminal output (PHYSA_LREAL). Additionally, a digital output is set when the count reaches zero.
 
 This exercise demonstrates the use of:
@@ -14,6 +16,7 @@ This exercise demonstrates the use of:
 ## Function Blocks (FBs) Used
 
 ### AULI_FB_CTD
+
 - **Type**: `adapter::iec61131::counters::AULI_FB_CTD`
 - **Description**: Countdown counter for ULINT data type in adapter form. It has the event inputs `CD` (Countdown), `LD` (Load), and the data outputs `Q` (Zero Reached) and `CV` (Current Count Value).
 - **Parameters**: None
@@ -23,6 +26,7 @@ This exercise demonstrates the use of:
 - `CV` (Current Value) is assigned to `AULI_TO_ALR`
 
 ### AULI_ULINT_TO_ULI
+
 - **Type**: `adapter::conversion::unidirectional::AULI_ULINT_TO_ULI`
 - **Description**: Converts ULINT to ULINT (used here primarily for initialization). The parameter `OUT` is set to `ULINT#10`, meaning the counter starts at 10.
 - **Parameters**:
@@ -31,6 +35,7 @@ This exercise demonstrates the use of:
 - **Data Output**: `AULI_OUT` → `PV` of the counter
 
 ### Input_CD (logiBUS_IXA)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Description**: Digital input for the countdown signal (button input `Input_I1`). Active when TRUE.
 - **Parameters**:
@@ -38,6 +43,7 @@ This exercise demonstrates the use of:
 - `Input = Input_I1`
 
 ### Input_LD (logiBUS_IXA)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Description**: Digital input for the load signal (button input `Input_I2`). Active when TRUE.
 - **Parameters**:
@@ -45,6 +51,7 @@ This exercise demonstrates the use of:
 - `Input = Input_I2`
 
 ### Output_Q1 (logiBUS_QXA)
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Description**: Digital output that is set when the counter value reaches zero (`Q` of the counter).
 - **Parameters**:
@@ -52,6 +59,7 @@ This exercise demonstrates the use of:
 - `Output = Output_Q1`
 
 ### AULI_TO_ALR
+
 - **Type**: `adapter::conversion::unidirectional::AULI_TO_ALR`
 - **Description**: Converts the current ULINT count value to an LREAL value for physical output (AR).
 - **Events**: No direct event connection
@@ -60,6 +68,7 @@ This exercise demonstrates the use of:
 - `ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys`
 
 ### Q_NumericValue_PHYSA_LREAL
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Description**: Outputs the passed LREAL value as a formatted numeric string to a terminal (object `OutputNumber_N3`).
 - **Parameters**:
@@ -103,6 +112,7 @@ The exercise `Uebung_219b_ALR` implements an IEC 61131-3 compliant down counter 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

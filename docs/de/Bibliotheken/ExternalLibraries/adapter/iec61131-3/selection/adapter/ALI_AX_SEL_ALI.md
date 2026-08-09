@@ -15,25 +15,31 @@ Der Funktionsblock `ALI_AX_SEL_ALI` ist ein binärer Auswahlbaustein (Selection 
 Da es sich um einen adapterbasierten Funktionsblock handelt, besitzt er keine direkten, klassischen Ereignis- oder Dateneingänge auf der obersten Ebene. Die gesamte Kommunikation wird über Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (Steuerung erfolgt über die Adapter).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (Steuerung erfolgt über die Adapter).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingang-Schnittstellen)**
+
 * **G** (`adapter::types::unidirectional::AX`): Der Selektor-Adapter (Gate). Er steuert, welcher der beiden Eingänge auf den Ausgang durchgeschaltet wird.
 * **IN0** (`adapter::types::unidirectional::ALI`): Der erste auswählbare Eingangs-Adapter (wird standardmäßig bei `G = FALSE` gewählt).
 * **IN1** (`adapter::types::unidirectional::ALI`): Der zweite auswählbare Eingangs-Adapter (wird bei `G = TRUE` gewählt).
 
 #### **Plugs (Ausgang-Schnittstellen)**
+
 * **OUT** (`adapter::types::unidirectional::ALI`): Der Ausgangs-Adapter, der das ausgewählte Signal und das dazugehörige Ereignis bereitstellt.
 
 ---

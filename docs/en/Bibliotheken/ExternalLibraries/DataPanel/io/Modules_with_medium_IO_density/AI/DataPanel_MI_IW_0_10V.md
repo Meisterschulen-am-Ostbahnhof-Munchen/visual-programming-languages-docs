@@ -1,8 +1,10 @@
 # DataPanel_MI_IW_0_10V
+
 ![DataPanel_MI_IW_0_10V](./DataPanel_MI_IW_0_10V.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface module (SIFB) for acquiring an analog 0-10V input signal. It is designed as part of the **HR Agrartechnik DataPanel MI** system and enables parameterizable initialization as well as cyclical or event-driven retrieval of measured values.
 ## Interface Structure
 
@@ -60,6 +62,7 @@ The function block can also receive an event `IND` from the hardware without an 
 The digitized analog value is provided as a 16-bit word (`WORD`) on output `IN`. The scaling (e.g., 0V → 0, 10V → 65535) depends on the connected hardware and must be interpreted in the application.
 
 ## Technical Features
+
 - **HR Agricultural Technology Specific**: This function block is designed for the DataPanel MI family and uses predefined constants from the packages `DataPanel::io::MI::const::MI` and `DataPanel::io::MI::AI::DataPanel_MI_AI`.
 - **Hysteresis**: The parameter `AnalogInput_hysteresis` allows you to configure noise reduction or debouncing of the signal.
 - **Addressing**: The bus node is selected via `u8SAMember` (USINT, range 224–239); the default is `MI::MI_00`.
@@ -76,6 +79,7 @@ Since this is a service-oriented block, the internal state machine is controlled
 A detailed state machine (ECC) is not present in the XML model; however, the described behavior is typical for service-oriented SIFBs.
 
 ## Application Scenarios
+
 - **Agricultural Technology**: Acquisition of sensor signals (e.g., pressure, temperature, fill level) via 0-10V interfaces on HR data panels.
 - **Industrial Control**: Integration of analog measured values into a PLC environment via 4diac applications.
 - **Configurable Measuring Points**: Multiple channels of an MI module can be queried using different `Input` values.
@@ -97,6 +101,7 @@ The **DataPanel_MI_IW_0_10V** function block provides a robust and flexibly conf
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

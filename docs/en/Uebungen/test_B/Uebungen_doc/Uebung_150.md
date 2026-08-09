@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_150` based on the provided data.
 # Exercise_150: Pulse Counter
+
 ![Uebung_150_network](./Uebung_150_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 Exercise **Exercise_150** implements a sub-application (SubApp) that functions as a "pulse counter." It is used to configure and integrate a hardware-based pulse input via the logiBUS system. The goal is to establish an interface to a physical input (`PulseInput_I8`) and define parameters for data acquisition.
 
 ## Function Blocks Used
@@ -41,11 +43,13 @@ Since this exercise involves only configuring a hardware driver within a sub-app
 - Working with SubApp types to encapsulate hardware configurations.
 
 ## Summary
+
 Exercise **Exercise_150** presents a basic configuration for a pulse counter. It uses the block `logiBUS_PI_ID` to initialize the hardware input `PulseInput_I8` with specific parameters for pulse and time intervals. This exercise is essential for understanding the hardware abstraction layer in 4diac systems that use logiBUS.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

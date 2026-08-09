@@ -7,6 +7,7 @@ Hier ist die Dokumentationsseite für die Übung **Uebung_122b** basierend auf d
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung („Übung zu ISOBUS Name“) beschäftigt sich mit der Analyse und Aufschlüsselung des **ISOBUS NAME**-Feldes gemäß ISO 11783. Ziel ist es, Informationen über Teilnehmer (Control Functions - CF) am Bus abzurufen, deren 64-Bit-Namen zu extrahieren und diesen Namen in seine einzelnen Bestandteile (wie Hersteller, Geräteklasse, Funktion usw.) zu zerlegen.
 
 Die Übung ist als Sub-Application (`SubAppType`) realisiert und verarbeitet Listen von Netzwertereignissen und CF-Informationen.
@@ -18,6 +19,7 @@ In dieser Sub-Application werden verschiedene Funktionsbausteine instanziiert, u
 ### Haupt-Bausteine:
 
 #### 1. NmGetCfInfo (`isobus::pgn::NmGetCfInfo`)
+
 Dieser Baustein ist der Einstiegspunkt der Übung. Er ruft Informationen über die Control Functions (CF) im Netzwerk ab.
 
 - **Parameter**:
@@ -28,11 +30,13 @@ Dieser Baustein ist der Einstiegspunkt der Übung. Er ruft Informationen über d
 - **Funktionsweise**: Er liefert Arrays von Netzwerkereignissen (`sNetEv`) und CF-Informationen (`sCfInfo`), die anschließend verarbeitet werden.
 
 #### 2. LOG_16 (`logiBUS::utils::logging::LOG_16`)
+
 Hier werden zwei Instanzen (`LOG_16` und `LOG_16B`) verwendet.
 
 - **Funktionsweise**: Diese Bausteine dienen in dieser Übung als "Splitter" oder De-Multiplexer für Arrays. Sie nehmen die Listen (Arrays mit bis zu 16 Einträgen) von `NmGetCfInfo` entgegen und geben die einzelnen Elemente an 16 separaten Ausgängen aus. Dies ermöglicht die parallele Verarbeitung der ersten 16 erkannten Geräte.
 
 #### 3. STRUCT_DEMUX (`eclipse4diac::convert::STRUCT_DEMUX`)
+
 Dieser generische Konvertierungsbaustein wird vielfach eingesetzt (`SD_A_x`, `SD_B_x`, `SD_C_x`), um komplexe Datentypen (Strukturen) in ihre Einzelteile zu zerlegen, damit diese visualisiert oder weiterverarbeitet werden können.
 
 - **Verwendete Typen**:
@@ -41,6 +45,7 @@ Dieser generische Konvertierungsbaustein wird vielfach eingesetzt (`SD_A_x`, `SD
     - `isobus::pgn::NAMEFIELD_T` (bei `SD_C_x`): Zeigt die dekodierten Felder des ISOBUS Namens an.
 
 #### 4. NmSetNameField (`isobus::pgn::NmSetNameField`)
+
 Dies ist der Kernbaustein für die Interpretation des Namens. Er kommt 16-mal vor (`NmSetNF_1` bis `NmSetNF_16`).
 
 - **Eingang**: `au8IsoName` (Der 64-Bit ISOBUS Name als Byte-Array).
@@ -81,4 +86,5 @@ Die Übung **Uebung_122b** demonstriert die Detailanalyse von ISOBUS-Teilnehmern
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

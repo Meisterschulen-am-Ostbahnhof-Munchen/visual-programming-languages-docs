@@ -11,19 +11,23 @@ Der Funktionsbaustein **AD_TO_AI** dient als Konverter zwischen zwei unterschied
 ## Schnittstellenstruktur
 
 ### **Ereignis‑Eingänge**
+
 Der FB besitzt keine direkten Ereignis‑Eingänge auf oberster Ebene. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter:
 
 - **AD_IN.E1** (Ereignis des Socket‑Adapters) – löst die Konvertierung aus.
 
 ### **Ereignis‑Ausgänge**
+
 Auch diese werden ausschließlich über die Adapter bereitgestellt:
 
 - **AI_OUT.E1** (Ereignis des Plug‑Adapters) – signalisiert die Fertigstellung der konvertierten Daten.
 
 ### **Daten‑Eingänge**
+
 - **AD_IN.D1** (DWORD) – Der ursprüngliche Datenwert, der vom AD‑Adapter geliefert wird.
 
 ### **Daten‑Ausgänge**
+
 - **AI_OUT.D1** (INT) – Der konvertierte Wert, der über den AI‑Adapter nach außen gegeben wird.
 
 ### **Adapter**
@@ -81,4 +85,5 @@ Der Composite‑FB **AD_TO_AI** ist ein nützliches Werkzeug zur Typanpassung zw
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

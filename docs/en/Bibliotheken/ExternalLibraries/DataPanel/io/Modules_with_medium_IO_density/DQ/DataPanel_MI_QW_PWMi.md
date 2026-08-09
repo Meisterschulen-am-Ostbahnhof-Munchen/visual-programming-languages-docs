@@ -1,8 +1,11 @@
 ![DataPanel_MI_QW_PWMi](DataPanel_MI_QW_PWMi.svg)
 # DataPanel_MI_QW_PWMi
+
 Output service interface function block for Current Controlled PWM output data (Current Mode 4)
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | Service Initialization | QI, PARAMS, u8SAMember, Output, KP, AI |
@@ -37,6 +40,7 @@ STATUS | STRING | Service Status |
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung 178, basierend auf den bereitgestellt
 * * * * * * * * * *
 
 ## Einleitung
+
 Die **Uebung_178** beschäftigt sich mit der Erkennung von fallenden Flanken in der Signalverarbeitung. Ziel ist es, ein Ereignis genau dann auszulösen, wenn ein Eingangssignal von `TRUE` (High) auf `FALSE` (Low) wechselt. Zusätzlich wird dieses Ereignis genutzt, um einen zeitlich begrenzten Impuls zu generieren.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -56,4 +57,5 @@ Der Programmablauf dieser Übung gestaltet sich wie folgt:
 `DigitalInput_I1.IND` -> `FB_F_TRIG.REQ` -> `FB_F_TRIG.CNF` -> `E_TP.REQ` -> `E_TP.CNF` -> `DigitalOutput_Q1.REQ`
 
 ## Zusammenfassung
+
 Die Uebung_178 demonstriert die klassische Anwendung einer "Nachlaufsteuerung" oder Abschaltverzögerung basierend auf einem negativen Signalwechsel. Der Benutzer lernt hierbei die Kombination aus digitaler Signalerfassung, logischer Flankenauswertung mittels `FB_F_TRIG` und zeitgesteuerter Ausgabe mittels `E_TP`. Ein praktisches Beispiel wäre ein Licht, das für eine Sekunde aufleuchtet, sobald ein Taster *losgelassen* wird.

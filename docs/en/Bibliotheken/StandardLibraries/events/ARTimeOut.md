@@ -1,8 +1,10 @@
 # ARTimeOut
+
 ![ARTimeOut](https://user-images.githubusercontent.com/116869307/214142115-28b88284-c3b6-4c78-9145-6de372738f36.png)
 
 * * * * * * * * * *
 ## Introduction
+
 IEC 61499 is an international standard for modeling distributed industrial control systems. Within this standard, adapter types are an important component for defining reusable interfaces between function blocks. The **ARTimeOut** adapter (Adapter for Resettable Timeout) is an example of such an adapter, providing an interface for a resettable timeout service.
 ![ARTimeOut](ARTimeOut.svg)
 
@@ -27,12 +29,9 @@ The ARTimeOut adapter interface consists of:
 The ARTimeOut adapter offers two service sequences:
 
 1. **Timeout**:
-
 - The PLUG sends a **START** event with a duration of **DT** to start the timeout.
 - When the timeout expires, the SOCKET sends a **TimeOut** event back to the PLUG.
-
 2. **NormalOperation**:
-
 - The PLUG sends a **START** event with a duration of **DT** to start the timeout.
 - The PLUG can send a **STOP** event to end the timeout prematurely.
 
@@ -41,15 +40,10 @@ The ARTimeOut adapter offers two service sequences:
 The ARTimeOut adapter enables the control of a timeout mechanism with the following functions:
 
 1. **Start/Reset Timeout**:
-
 - The **START** event starts or resets the timeout with the specified duration **DT**.
-
 2. **Stop Timeout**:
-
 - The **STOP** event terminates the timeout prematurely.
-
 3. **Timeout Expiration**:
-
 - When the timeout expires, the **TimeOut** event is triggered to notify the PLUG.
 
 ## Application Examples

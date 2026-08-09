@@ -1,8 +1,10 @@
 # Exercise_004b5: Toggle Flip-Flop with IX / E_SWITCH + E_T_FF
+
 ![Uebung_004b5_network](./Uebung_004b5_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the implementation of a toggle flip-flop (T-FF) using the function blocks `E_R_TRIG` (rising edge detection) and `E_T_FF` (toggle flip-flop). A digital input (IX) is used as a push button – each rising edge at the input toggles the digital output (QX). This setup is suitable, for example, for switching a light on and off with a single push button.
 ## Function Blocks Used (FBs)
 
@@ -34,10 +36,10 @@ The subapplication consists of four function blocks:
 - **Data Input**: `OUT` (Desired digital value).
 
 ## Program Flow and Connections
+
 The subapplication is implemented as an event-driven chain:
 
 1. **Input Change**: The block `DigitalInput_I1` monitors the physical input. As soon as the state changes, the event `IND` is triggered.
-
 2. **Edge Detection**: The event `IND` is forwarded to the event input `EI` from `E_R_TRIG` (**Event Connection**: `DigitalInput_I1.IND → E_R_TRIG.EI`). In parallel, the current digital value (`DigitalInput_I1.IN`) is passed to the data input `QI` from `E_R_TRIG` (**Data connection**: `DigitalInput_I1.IN → E_R_TRIG.QI`).
 
 E_R_TRIG` checks whether the value of `QI` has a rising edge (change from FALSE to TRUE). If this is the case, an event is generated at the output `EO`.
@@ -58,11 +60,13 @@ Event `EO` is triggered by `E_T_FF`. 4. **Setting the Output**: The event `EO` f
 **Prerequisites**: Basic experience with the 4diac IDE, knowledge of event and data connections.
 
 ## Summary
+
 This exercise implemented a typical push-button switch function (toggle). By combining `E_R_TRIG` and `E_T_FF`, each rising edge at the input is detected, and the output state is toggled. The blocks are loosely coupled – an advantage of event-driven programming. The subapplication can be directly integrated into a 4diac project and run on a suitable target system (with logiBUS connectivity).
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

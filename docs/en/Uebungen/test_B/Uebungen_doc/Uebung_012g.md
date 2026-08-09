@@ -1,14 +1,17 @@
 # Exercise_012g: Numeric Value Input PHYS and Storage via INI
+
 ![Uebung_012g_network](./Uebung_012g_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of a physical numeric input (`NumericValue_PHYS`) in conjunction with persistent storage via the INI file format. The goal is to store an entered numeric value (e.g., from a sensor or user input) once and read it back as needed. The exercise introduces fundamental concepts of event handling, data flow chaining, and non-volatile data storage in 4diac.
 The function blocks used are from the libraries `isobus::UT` and `eclipse4diac::storage`.
 
 ## Function Blocks (FBs) Used
 
 ### `InputNumber_I3`
+
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_PHYS`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -18,6 +21,7 @@ The function blocks used are from the libraries `isobus::UT` and `eclipse4diac::
 This function block represents a physical numeric input (e.g., an analog or digital input). When the input value changes, an event `IND` is triggered, and the current value is provided as a floating-point number at the output `rPhys`.
 
 ### `NVS`
+
 - **Type**: `eclipse4diac::storage::INI`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -33,6 +37,7 @@ This function block implements non-volatile storage using an INI file. A value c
 
 ...
 ### `Q_NumericValue`
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
 - **Parameters**:
 - `stObj` = `InputNumber_I3`
@@ -71,6 +76,7 @@ The event and data connections ensure that the last saved value is automatically
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

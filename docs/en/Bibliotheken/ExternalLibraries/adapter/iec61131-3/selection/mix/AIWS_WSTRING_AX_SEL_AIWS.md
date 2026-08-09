@@ -9,7 +9,6 @@ The function block `AIWS_WSTRING_AX_SEL_AIWS` is a composite function block for 
 
 This block combines classic IEC 61499 events and data variables with modern, unidirectional adapters. It enables clean, event-driven signal switching directly within the control network.
 
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,9 +30,7 @@ This block combines classic IEC 61499 events and data variables with modern, uni
 ### **Adapter**
 
 * **OUT** (Plug, Type: `adapter::types::unidirectional::AIWS`): The selected output as a unidirectional adapter. This output carries the selected `WSTRING` value (`D1`) and the corresponding update event (`E1`).
-
 * **IN0** (Socket, Type: `adapter::types::unidirectional::AIWS`): The default selected input (unidirectional adapter) that provides the alternative `WSTRING` value.
-
 * * **G** (Socket, Type: `adapter::types::unidirectional::AX`): The selector input (unidirectional adapter) determines which of the two inputs is enabled.
 
 ---
@@ -46,7 +43,6 @@ The module's internal network (`FBNetwork`) manages the synchronization and logi
 
 The input values of `IN0` (via the adapter), `IN1` (via the local data input), and the selector `G` are buffered in internal memory modules (`E_D_FF_ANY` and `E_D_FF`, respectively) upon the arrival of a corresponding event. This ensures that data and events are processed synchronously.
 
-
 The input values of `E_D_FF_ANY` and `E_D_FF`, respectively, are buffered when a corresponding event occurs. 2. **Value Transfer:**
 
 The buffered data is transferred to the central selection block via conversion and assignment elements (`F_MOVE_IN0` and `F_MOVE_IN1`).
@@ -56,33 +52,25 @@ The buffered data is transferred to the central selection block via conversion a
 A standard selection block (`iec61131::selection::F_SEL`) performs the selection:
 
 * If the state of selector `G` is equal to `FALSE`, the value of **IN0** is passed to the output.
-
 * If the state of selector `G` is equal to `TRUE`, the value of **IN1** is selected.
-
-
 * 4. **Output:**
 
 The selected `WSTRING` value is passed via an output buffer (`E_D_FF_ANY_OUT`) to the output adapter `OUT`. Simultaneously, the output event `OUT.E1` is triggered to inform subsequent program components of the change.
 
-
-
        +-------------+
 IN0 -->|             |
-       |    F_SEL    |--> OUT (Wenn G = FALSE -> IN0)
+|    F_SEL    |--> OUT (Wenn G = FALSE -> IN0)
 IN1 -->|             |--> OUT (Wenn G = TRUE  -> IN1)
        +-------------+
               ^
-              |
+|
         G (Selector)
-
-
 
 ---
 
 ## Technical Features
 
 * **Mixed Operation:** This function block cleverly combines classic IEC 61499 data and event elements (for `IN1` / `EI1`) with modern adapter structures (`IN0`, `G`, `OUT`).
-
 * **Data Consistency:** The use of internal D flip-flops (`E_D_FF_ANY`) ensures that only consistent and stable data states are passed to the output and that no race conditions occur.
 
 ## State Overview
@@ -92,9 +80,7 @@ Since this is a composite function block (FB), it does not have its own Executio
 ## Application Scenarios
 
 * **Dynamic Text Switching:** Switching status messages, recipe names, or error messages in the `WSTRING` format on an HMI or display.
-
 * **Default Value Override:** Providing a default path or value via the `IN0` adapter, which can be overwritten by the signal at `IN1` if needed (e.g., during setup or user interaction).
-
 
 ## Comparison with Similar Building Blocks
 

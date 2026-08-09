@@ -11,15 +11,19 @@ Der Funktionsblock **AUDI_SPLIT_6** dient als generischer Verteiler (Splitter) f
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -66,4 +70,5 @@ Der `AUDI_SPLIT_6` ist ein einfacher, aber flexibler Baustein zur Vervielfachung
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -7,6 +7,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsbaustein `AUDI_AX_SEL_AUDI` dient als binärer Selektor (Auswahlschalter) für unidirektionale Kommunikationsadapter. Er ermöglicht es, basierend auf dem Zustand eines Steuersignals an einem Selektor-Adapter, den Daten- und Ereignisstrom zwischen zwei alternativen Eingangs-Adaptern auf einen einzigen Ausgangs-Adapter umzuleiten. 
 
 Der Baustein kapselt die dafür notwendige Synchronisations- und Konvertierungslogik, um eine saubere Trennung von Ereignissen und Datenflüssen innerhalb von IEC 61499 Anwendungen zu gewährleisten.
@@ -14,20 +15,25 @@ Der Baustein kapselt die dafür notwendige Synchronisations- und Konvertierungsl
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Es sind keine direkten Ereignis-Eingänge auf der Bausteinoberfläche definiert. Die Ereignisverarbeitung erfolgt vollständig gekapselt über die angeschlossenen Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Es sind keine direkten Ereignis-Ausgänge auf der Bausteinoberfläche definiert. Die Ereignisweiterleitung erfolgt vollständig über den Ausgangs-Adapter.*
 
 ### **Daten-Eingänge**
+
 *Es sind keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Es sind keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Anschlüsse)**
+
 * **IN0** (Typ: `adapter::types::unidirectional::AUDI`): 
   Erster auswählbarer Eingangs-Adapter. Die dort ankommenden Daten und Ereignisse werden an den Ausgang durchgereicht, wenn das Auswahlsignal `G` den logischen Zustand `FALSE` (bzw. `0`) besitzt.
 * **IN1** (Typ: `adapter::types::unidirectional::AUDI`): 
@@ -36,12 +42,14 @@ Der Baustein kapselt die dafür notwendige Synchronisations- und Konvertierungsl
   Selektor-Adapter. Das Signal auf diesem Adapter bestimmt, welcher der beiden Eingänge (`IN0` oder `IN1`) auf den Ausgang geschaltet wird.
 
 #### **Plugs (Ausgangs-Anschlüsse)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUDI`): 
   Ausgangs-Adapter. Gibt die Daten und das dazugehörige Triggerereignis des aktuell ausgewählten Eingangs aus.
 
 ---
 
 ## Funktionsweise
+
 Das interne Verhalten des Bausteins wird durch ein Netzwerk aus Standard-Funktionsbausteinen realisiert:
 
 1. **Ereignis- und Datensynchronisation**: 
@@ -58,6 +66,7 @@ Das interne Verhalten des Bausteins wird durch ein Netzwerk aus Standard-Funktio
 ---
 
 ## Technische Besonderheiten
+
 * **UDINT-Datenverarbeitung**: Obwohl die Adapter vom generischen Typ `AUDI` sind, werden die Nutzdaten (`D1`) intern explizit als `UDINT` (Unsigned Double Integer / 32-Bit Ganzzahl) verarbeitet und übertragen.
 * **Ereignisgesteuertes Verhalten**: Jede Änderung an den Eingängen oder am Selektor führt über das interne Koppelnetzwerk zu einer Neuberechnung und triggert das Ausgangsereignis des Adapters `OUT`.
 * **Kapselung**: Durch die Verwendung von Adaptern statt loser Event- und Daten-Ports wird der Verdrahtungsaufwand im übergeordneten Systemdiagramm extrem minimiert.
@@ -65,6 +74,7 @@ Das interne Verhalten des Bausteins wird durch ein Netzwerk aus Standard-Funktio
 ---
 
 ## Zustandsübersicht
+
 Da der Baustein als FB-Netzwerk aufgebaut ist, besitzt er keine klassische Zustandsmaschine (ECC). Das logische Verhalten lässt sich stattdessen über folgende Funktionstabelle beschreiben:
 
 | Zustand Selektor (`G.D1`) | Triggerndes Ereignis | Aktiver Datenpfad | Wert am Ausgang (`OUT.D1`) | Ereignis am Ausgang (`OUT.E1`) |
@@ -75,6 +85,7 @@ Da der Baustein als FB-Netzwerk aufgebaut ist, besitzt er keine klassische Zusta
 ---
 
 ## Anwendungsszenarien
+
 * **Sollwert-Umschaltung**: Wechsel zwischen einem Automatik-Sollwert (z.B. von einem PID-Regler an `IN1`) und einem Hand-Sollwert (z.B. von einer Visualisierung an `IN0`) über ein Auswahlsignal an `G`.
 * **Sensor-Redundanz**: Ausfallsichere Umschaltung zwischen einem Hauptsensor und einem Ersatzsensor bei Signalstörungen.
 * **Rezeptursteuerung**: Auswahl unterschiedlicher vordefinierter Parameter-Profile im laufenden Betrieb.
@@ -82,9 +93,11 @@ Da der Baustein als FB-Netzwerk aufgebaut ist, besitzt er keine klassische Zusta
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zum Standard-Auswahlbaustein `F_SEL` aus der IEC 61131-3 Bibliothek bietet `AUDI_AX_SEL_AUDI` den Vorteil, dass er direkt mit strukturierten, unidirektionalen Adaptern (`AUDI` und `AX`) interagieren kann. Bei der Verwendung des Standard-`F_SEL`-Bausteins müssten alle Event- und Datenleitungen der Adapter manuell aufgesplittet, einzeln verschaltet und anschließend wieder zusammengeführt werden, was fehleranfällig ist und das Anwendungsdiagramm unübersichtlich macht.
 
 ---
 
 ## Fazit
+
 Der Baustein `AUDI_AX_SEL_AUDI` bietet eine elegante, saubere und wiederverwendbare Lösung für die Signalumschaltung in 4diac-basierten Steuerungsarchitekturen. Durch die konsequente Nutzung von Adaptern trägt er maßgeblich zur Modularität und Übersichtlichkeit komplexer Steuerungsprogramme bei.

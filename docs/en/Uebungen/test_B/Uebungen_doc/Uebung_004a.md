@@ -1,4 +1,5 @@
 # Exercise_004a: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a`. In this exercise, we move beyond simple data forwarding and use events to implement a memory function: a classic impulse switch.
 ----
@@ -38,17 +39,11 @@ The logic is based on converting a momentary key press into a persistent memory 
 [cite_start][cite: 1]
 
 1. The user briefly presses the button on `I1` ("click").
-
 2. The `DigitalInput_CLK_I1` recognizes the "single click" pattern and sends a `IND` event.
-
 3. The event reaches the `CLK` input of the `E_T_FF`.
-
 4. The flip-flop changes its state (e.g., from FALSE to TRUE).
-
 5. The new signal is available at the data output `Q`, and the flip-flop sends an event to `EO`.
-
 6. `DigitalOutput_Q1` receives this event, reads the value from `Q`, and turns the light on.
-
 7. The process repeats with the next click; the flip-flop returns to FALSE, and the light turns off.
 
 -----

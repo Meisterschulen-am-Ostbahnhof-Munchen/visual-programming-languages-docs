@@ -1,8 +1,10 @@
 # ALR_TO_AS
+
 ![ALR_TO_AS](./ALR_TO_AS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ALR_TO_AS** function block is a composite function block that converts an **LREAL adapter** (ALR) into a **SINT adapter** (AS). It encapsulates the conversion of a floating-point value (LREAL) into a signed 8-bit integer value (SINT) and provides the result data via the SINT adapter. This function block is typically used in automation technology when data needs to be transferred between different adapter interfaces.
 ## Interface Structure
 
@@ -34,14 +36,13 @@ The function block does not have separate data outputs. The output data (SINT va
 The function block is implemented as a composite FB. Internally, it contains a function block `F_LREAL_TO_SINT` from the IEC 61131 library. The connections within the network cause:
 
 1. **Event-driven activation**: An incoming event at the adapter `ALR_IN` (`E1`) triggers the conversion FB (`Convert.REQ`).
-
 2. **Data conversion**: The LREAL value of `ALR_IN.D1` is forwarded to the input `Convert.IN`. The function block (FB) converts this value into a SINT value (rounding according to IEC 61131 rules).
-
 3. **Result Output**: After successful conversion, `Convert.CNF` signals an event to the output adapter `AS_OUT` (`E1`), and the converted SINT value is passed to `AS_OUT.D1`.
 
 This enables synchronous, event-driven conversion of an LREAL value to a SINT value via adapter interfaces.
 
 ## Technical Features
+
 - **Composite Structure**: The function block completely encapsulates the conversion logic in a network, making the implementation transparent and easily extensible.
 - **Adapter-based**: Instead of individual event and data ports, standardized unidirectional adapters (`ALR` and `AS`) are used. This simplifies integration into existing adapter-based architectures.
 - **Reuse**: The internal function block `F_LREAL_TO_SINT` is a proven IEC function block and ensures correct conversion to the standard.
@@ -52,6 +53,7 @@ This enables synchronous, event-driven conversion of an LREAL value to a SINT va
 The function block does not have an explicit state machine. Its behavior is determined by the internal function block `F_LREAL_TO_SINT` and the event connections. This internal function block (FB) executes a simple **IDLE → CONVERTING → DONE** cycle, controlled by the events `REQ` and `CNF`. For the user, the block is therefore transparent and usable as an **event-driven converter**.
 
 ## Application Scenarios
+
 - **Data Bridge Between Systems**: When a control module provides LREAL values via a `ALR` adapter, but a downstream module expects SINT values via a `AS` adapter.
 - **Uniform Adapter Interfaces**: Simplifying system design by outsourcing conversions to standalone function blocks.
 - **PLC Connection**: Connecting sensors or actuators that operate with LREAL accuracy to a SINT-based bus communication.
@@ -67,4 +69,5 @@ The `ALR_TO_AS` function block is a clean, adapter-based solution for converting
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

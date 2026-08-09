@@ -13,6 +13,7 @@ A --> CL["visuelle Programmiersprachen"]
 ```
 
 ### Textuelle Programmiersprachen
+
 In textuellen Sprachen wird der Algorithmus durch eine Abfolge von Zeichenfolgen (Schlüsselwörter, Operatoren, Variablen) beschrieben. Diese Sprachen sind oft sehr mächtig und abstrakt, erfordern jedoch eine präzise Kenntnis der Syntax.
 
 ```mermaid
@@ -32,6 +33,7 @@ Typische Vertreter sind:
 *   **Java / C#:** Objektorientierte Sprachen, weit verbreitet in der Unternehmenssoftware.
 
 ### Visuelle Programmiersprachen
+
 Visuelle Programmiersprachen (VPL) nutzen grafische Symbole, Blöcke oder Icons, die durch Linien (Verbindungen) miteinander verknüpft werden. Dies ermöglicht es oft, komplexe Zusammenhänge (wie z. B. Signalflüsse in der Elektrotechnik) intuitiver darzustellen.
 
 ```mermaid
@@ -69,6 +71,7 @@ G --> EEC
 ```
 
 ### IEC 61131-3 (Der klassische Standard)
+
 Die IEC 61131-3 ist der weltweit etablierte Standard für speicherprogrammierbare Steuerungen (SPS). Sie bietet sowohl textuelle als auch visuelle Sprachen an:
 
 *   **LD (Ladder Diagram / Kontaktplan):** Angelehnt an Stromlaufpläne.
@@ -77,6 +80,7 @@ Die IEC 61131-3 ist der weltweit etablierte Standard für speicherprogrammierbar
 *   **ST (Structured Text) & IL (Instruction List):** Die textuellen Vertreter innerhalb der Norm.
 
 ### IEC 61499 (Der Standard für verteilte Systeme)
+
 Die **IEC 61499** geht einen Schritt weiter. Sie nutzt das Konzept der **Function Blocks (FB)** konsequent für die Modellierung des gesamten Systems. Ein wesentlicher Unterschied ist die ereignisorientierte Ausführung, die durch die **ECC (Event Execution Control)** innerhalb der Bausteine gesteuert wird.
 
 ---
@@ -91,6 +95,7 @@ Die **IEC 61499** geht einen Schritt weiter. Sie nutzt das Konzept der **Functio
 | **Einsatzgebiet** | Web, Desktop, Systemnah | Automatisierung, Lehre, Workflow-Design |
 
 ### Literatur und Quellen
+
 *   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
 *   [YouTube: Visual vs. Textual Programming (Prägnante Zusammenfassung)](https://www.youtube.com/watch?v=MxJcdqOX9V0)
 *   [Vergleich bei Print2Forms](https://wiki.print2forms.de/doku.php?id=print2forms:skripte:textuellvsvisuell)

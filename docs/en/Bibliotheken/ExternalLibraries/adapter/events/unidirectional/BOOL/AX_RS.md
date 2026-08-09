@@ -1,9 +1,11 @@
 # AX_RS
+
 <img width="1188" height="282" alt="image" src="https://github.com/user-attachments/assets/96fcd1e8-c68a-4b6e-a8f0-f615322d30e2" />
 ![AX_RS_ecc](./AX_RS_ecc.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The AX_RS function block is an event-driven bistable element (flip-flop) based on the RS principle. It is a Basic Function Block that implements a set-reset mechanism and communicates via adapter interfaces.
 
 ![AX_RS](AX_RS.svg)
@@ -11,22 +13,28 @@ The AX_RS function block is an event-driven bistable element (flip-flop) based o
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **R**: Reset event - resets output Q
 - **S**: Set event - sets output Q
 
 ### **Event Outputs**
+
 No direct event outputs available
 
 ### **Data Inputs**
+
 No direct data inputs available
 
 ### **Data Outputs**
+
 No direct data outputs available
 
 ### **Adapters**
+
 - **Q**: Adapter of type `adapter::types::unidirectional::AX` - represents the value of the flip-flop
 
 ## Functionality
+
 The AX_RS function block operates as an RS flip-flop with the following properties:
 
 - Upon the occurrence of an S event (Set), output Q is set to TRUE
@@ -42,12 +50,11 @@ As with all event-driven bistable elements in IEC 61499 (see also Note 8 in Tabl
 - **Adapter Communication**: The component outputs its status exclusively via the adapter `Q` (type `AX`). A change to `Q` triggers the event `Q.E1`.
 
 ## State Overview
+
 The function block has three states in the ECC:
 
 1. **START**: Initial state
-
 2. **SET**: State after a set operation (Q.D1 = TRUE)
-
 3. **RESET**: State after a reset operation (Q.D1 = FALSE)
 
 **State Transitions:**
@@ -57,16 +64,19 @@ The function block has three states in the ECC:
 - RESET → SET: on S event
 
 ## Application Scenarios
+
 - Storage of binary states with adapter output
 - Implementation of interlock circuits in distributed systems
 - State storage in sequential processes
 - Signal processing in event-driven systems
 
 ## Related Blocks
+
 - **[AX_SR](AX_SR.md)**: Functionally identical, inputs reversed in the symbol.
 - **[E_RS](../../../../../StandardLibraries/events/E_RS.md)**: The standard equivalent with direct data/event outputs instead of adapters.
 
 ## ⚖️ Comparison with Similar Building Blocks
+
 Compared to other flip-flop implementations:
 
 - Uses adapter-based communication instead of direct data outputs
@@ -76,17 +86,20 @@ Compared to other flip-flop implementations:
 Comparison with [E_RS](../../../../../StandardLibraries/events/E_RS.md)]
 
 ## 🛠️ Related Exercises
+
 * [Exercise_006b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006b_AX.md)]
 * [Exercise_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)]
 * [Exercise_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)]
 * [Exercise_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)]
 
 ## Conclusion
+
 The AX_RS function block provides a simple and efficient implementation of an RS flip-flop for 4diac-based Control systems. Using adapters, it enables flexible integration into various system architectures and is particularly suitable for applications requiring reliable state storage with event-driven updates.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

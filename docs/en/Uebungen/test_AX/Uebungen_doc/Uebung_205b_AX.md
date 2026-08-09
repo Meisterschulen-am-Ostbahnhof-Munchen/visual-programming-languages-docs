@@ -1,13 +1,16 @@
 # Exercise_205b_AX: Interlock: ILOCK_SWITCH_PROTECT_AX (Motor Reversing with Protection Time via Adapter)
+
 ![Uebung_205b_AX_network](./Uebung_205b_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise covers motor reversing with a protection time using an interlock function block (ILOCK_SWITCH_PROTECT_AX). The goal is to control a motor via two inputs (up/down), where a defined protection time (here, 1 second) prevents both directions from being switched on simultaneously and blocks excessively rapid direction changes. Control is achieved via adapter interfaces, which increases the reusability of this sub-application type.
 Difficulty level: Advanced
 Prerequisites: Basic knowledge of the 4diac IDE, working with input/output function blocks, understanding of interlock logic.
 
 ## Function Blocks Used (FBs)
+
 - **DigitalInput_I1** (logiBUS::io::DI::logiBUS_IXA)
 - Parameters: QI = TRUE, Input = Input_I1
 - Event output/input: —
@@ -38,6 +41,7 @@ Prerequisites: Basic knowledge of the 4diac IDE, working with input/output funct
 - Data Output/Input: —
 
 ### Sub-Blocks: AX_2_TO_3
+
 - **Type**: MyLib::sys::AX_2_TO_3
 - **Internal Function Blocks Used**: (No detailed information included in the exercise)
 - **Functionality**:
@@ -85,7 +89,6 @@ The sub-module forwards the signals separately to the output modules `Rechtslauf
 The OR signal `OR_OUT` activates `LowSide_Treiber` (Q56), which switches the common low-side supply for the motor.
 
 5. **Output Modules**
-
 - `Rechtslauf` (Output_Q5): Controls the relay for clockwise rotation.
 - `Linkslauf` (Output_Q6): Controls the relay for reverse rotation.
 - `LowSide_Treiber` (Output_Q56): Switches the low-side voltage – necessary as soon as either direction is active.
@@ -99,6 +102,7 @@ Exercise **Exercise_205b_AX** demonstrates the implementation of a motorized rev
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

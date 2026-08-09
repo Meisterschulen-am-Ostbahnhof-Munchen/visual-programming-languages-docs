@@ -1,8 +1,11 @@
 # AI_SPLIT_6
+
 ## Introduction
+
 ![AI_SPLIT_6](./AI_SPLIT_6.svg)
 The function block **AI_SPLIT_6** serves as a generic splitter that distributes an analog input value (AI) to six identical outputs. It implements a 1:6 distribution of an AI adapter without modifying any data or events. The block is defined as a generic FB (GenericClassName: `GEN_AI_SPLIT`) and operates purely on an adapter basis.
 ## Interface Structure
+
 ### **Event Inputs**
 
 No event inputs available.
@@ -36,6 +39,7 @@ Output (Plug) | OUT6 | `adapter::types::unidirectional::AI` | Sixth Output |
 This function block has no internal logic or state machines. It functions as a passive splitter: The AI adapter connected to socket **IN** is duplicated unchanged to all six plug outputs **OUT1** to **OUT6**. Changes to the AI value (e.g., measured value or status) at the source are immediately and simultaneously visible at all outputs.
 
 ## Technical Features
+
 - **Generic Function Block**: The function block is marked as `eclipse4diac::core::GenericClassName`. This allows it to be parameterized or instantiated depending on the runtime environment without changing its basic splitter function.
 - **Pure Adapter Coupling**: Neither events nor data port variables are used; only unidirectional adapters of type `adapter::types::unidirectional::AI` are employed. This reduces overhead and enables direct interconnection with other AI adapter blocks.
 - **No States**: Since no ECC (Execution Control Chart) is present, the function block requires no algorithms or state transitions. The routing is purely structural.
@@ -45,11 +49,13 @@ This function block has no internal logic or state machines. It functions as a p
 The function block does not have a state machine (ECC) and does not perform any active operations. There are no distinguishable operating states.
 
 ## Application Scenarios
+
 - **Distribution of an Analog Sensor Signal**: A single analog input (e.g., a 4-20 mA transmitter) is to be passed on in parallel to multiple control functions or display units.
 - **Redundancy / Plausibility Check**: The same measured value is routed to several parallel evaluation blocks, which perform tasks such as averaging or error detection.
 - **Simulation and Testing**: A simulated AI adapter is distributed across multiple test blocks to verify system behavior under load.
 
 ## Comparison with Similar Blocks
+
 - **AI_SPLIT_2 / AI_SPLIT_4**: These blocks split one AI input into two or four outputs, respectively. **AI_SPLIT_6** represents the variant with six outputs. All splitters function identically and differ only in the number of output adapters.
 - **AI_DUPLICATE (hypothetical)**: A block that duplicates the value for copying purposes, but usually uses data ports. AI_SPLIT_6, on the other hand, uses adapters exclusively, allowing direct coupling without additional event control.
 
@@ -60,6 +66,7 @@ The **AI_SPLIT_6** is a minimal yet useful component for distributing analog ada
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

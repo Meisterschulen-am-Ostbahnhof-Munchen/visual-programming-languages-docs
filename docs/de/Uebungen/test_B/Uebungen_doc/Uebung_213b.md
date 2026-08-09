@@ -19,26 +19,31 @@ Die Übung zeigt die direkte Verbindung eines UDINT‑Werts auf einen LREAL‑Au
 Die Übung enthält fünf Funktionsbausteine, die alle auf der obersten Netzwerkebene angeordnet sind. Sub‑Bausteine sind nicht vorhanden.
 
 ### FB_CTU_UDINT
+
 - **Typ**: `iec61131::counters::FB_CTU_UDINT`
 - **Parameter**: `PV` = `UDINT#5` (Presetwert)
 - **Funktionsweise**: Vorwärtszähler (IEC 61131-3) für ganzzahlige Werte vom Typ UDINT. Bei jedem steigenden Signal am Eingang CU wird der Zählerstand CV um 1 erhöht. Wird der Eingang R gesetzt, wird CV auf 0 zurückgesetzt. Der Ausgang Q wird TRUE, sobald CV ≥ PV.
 
 ### Input_CU
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**: `QI` = `TRUE`, `Input` = `Input_I1`
 - **Funktionsweise**: Digitaler Eingangsbaustein, der den physischen Eingang I1 (z. B. Taster) ausliest. Der Ereignisausgang IND signalisiert eine Zustandsänderung.
 
 ### Input_R
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**: `QI` = `TRUE`, `Input` = `Input_I2`
 - **Funktionsweise**: Digitaler Eingangsbaustein für den physischen Eingang I2 (Rücksetztaster). Entspricht im Aufbau dem Baustein Input_CU.
 
 ### Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**: `QI` = `TRUE`, `Output` = `Output_Q1`
 - **Funktionsweise**: Digitaler Ausgangsbaustein, der den physischen Ausgang Q1 (z. B. Lampe) schaltet. Der Wert des Datenports OUT wird direkt an die Hardware übergeben.
 
 ### Q_NumericValue_PHYS_LREAL
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYS_LREAL`
 - **Parameter**: `stObj` = `OutputNumber_N3`
 - **Funktionsweise**: Terminalausgabe für einen physikalischen LREAL‑Wert. Der übergebene Wert (lrPhys) wird auf dem konfigurierten Ausgabekanal (hier `OutputNumber_N3`) dargestellt.
@@ -76,4 +81,5 @@ Damit werden grundlegende Kenntnisse der IEC‑61131‑3‑Zählerfunktionen und
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

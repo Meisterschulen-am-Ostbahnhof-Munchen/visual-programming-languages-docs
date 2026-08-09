@@ -36,6 +36,7 @@ Der Funktionsblock `FIELDBUS_DWORD_TO_SIGNAL` dient der Spiegelung und Validieru
 | VALID    | BOOL   | `FALSE`       | `TRUE`, wenn das Signal gültig ist |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
@@ -85,4 +86,5 @@ Es gibt nur einen Zustand; nach dessen Abarbeitung kehrt der Baustein in den IDL
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

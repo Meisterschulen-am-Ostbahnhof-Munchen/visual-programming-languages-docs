@@ -7,30 +7,37 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsbaustein `AX_SEL_DINT` dient zur binären Auswahl (Selektion) zwischen zwei Eingangswerten vom Typ `DINT` (Double Integer). Die Steuerung, welcher der beiden Eingänge auf den Ausgang durchgeschaltet wird, erfolgt über einen angeschlossenen Selektor-Adapter (`G`). Der Baustein ist für den Einsatz in ereignisgesteuerten Systemen gemäß dem IEC 61499-Standard optimiert.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *   **EI0**: Löst das Einlesen und Verarbeiten des Daten-Eingangs `IN0` aus.
 *   **EI1**: Löst das Einlesen und Verarbeiten des Daten-Eingangs `IN1` aus.
 
 ### **Ereignis-Ausgänge**
+
 *   **CNF**: Bestätigungsereignis (Confirmation). Es wird ausgegeben, um zu signalisieren, dass sich der ausgewählte Ausgangswert `OUT` aktualisiert hat.
 
 ### **Daten-Eingänge**
+
 *   **IN0** (DINT): Erster auswählbarer Daten-Eingangswert. Wird an den Ausgang durchgereicht, wenn das Auswahlsignal des Adapters `G` den Zustand für den ersten Eingang vorgibt.
 *   **IN1** (DINT): Zweiter auswählbarer Daten-Eingangswert. Wird an den Ausgang durchgereicht, wenn das Auswahlsignal des Adapters `G` den Zustand für den zweiten Eingang vorgibt.
 
 ### **Daten-Ausgänge**
+
 *   **OUT** (DINT): Der aktuell ausgewählte Ausgangswert (entspricht entweder `IN0` oder `IN1`).
 
 ### **Adapter**
+
 *   **G** (Socket, Typ: `adapter::types::unidirectional::AX`): Unidirektionaler Adapter, der als Selektor fungiert. Über diesen Adapter wird das Steuersignal empfangen, welches bestimmt, welcher Eingang aktiv geschaltet wird.
 
 ---
 
 ## Funktionsweise
+
 Der Baustein `AX_SEL_DINT` kapselt ein internes Netzwerk aus Hilfs-Funktionsbausteinen, um eine saubere ereignisgesteuerte Selektion zu realisieren:
 
 1.  **Datenspeicherung und -weiterleitung**:
@@ -46,6 +53,7 @@ Der Baustein `AX_SEL_DINT` kapselt ein internes Netzwerk aus Hilfs-Funktionsbaus
 ---
 
 ## Technische Besonderheiten
+
 *   **Ereignisfilterung**: Durch den Einsatz von `E_D_FF_ANY_OUT` am Ausgang wird sichergestellt, dass nachfolgende Programmteile nur bei einer echten Wertänderung am Ausgang getriggert werden.
 *   **Adapter-Anbindung**: Die Verwendung des standardisierten, unidirektionalen Adapters `AX` vereinfacht die Verdrahtung in komplexen Systemen, da Steuerleitungen und zugehörige Ereignisse in einer einzigen Verbindung gebündelt werden.
 
@@ -63,6 +71,7 @@ Der Baustein `AX_SEL_DINT` kapselt ein internes Netzwerk aus Hilfs-Funktionsbaus
 ---
 
 ## Anwendungsszenarien
+
 *   **Sollwertumschaltung**: Umschalten zwischen einem Automatik-Sollwert (z. B. von einer übergeordneten Steuerung) und einem Hand-Sollwert (z. B. von einem HMI) in industriellen Anlagen oder landwirtschaftlichen Maschinen.
 *   **Sensor-Redundanz**: Umschalten zwischen einem Haupt- und einem Ersatzsensor bei Ausfall oder zur Kalibrierung.
 *   **Rezeptursteuerung**: Dynamische Auswahl unterschiedlicher Konfigurationsparameter im laufenden Betrieb.
@@ -70,10 +79,12 @@ Der Baustein `AX_SEL_DINT` kapselt ein internes Netzwerk aus Hilfs-Funktionsbaus
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 *   **Klassischer `SEL` (IEC 61131-3)**: Der Standard-Selektionsbaustein arbeitet rein datenflussorientiert und besitzt keine Ereignissteuerung. Er benötigt zudem ein direktes `BOOL`-Signal zur Auswahl.
 *   **`AX_SEL_DINT`**: Bietet eine vollwertige ereignisgesteuerte Implementierung für die IEC 61499. Durch die Adapter-Schnittstelle `G` werden Steuer- und Datensignale sauber gekapselt, und der Baustein minimiert durch seine interne Logik die Ereignislast auf dem Steuerungsnetzwerk.
 
 ---
 
 ## Fazit
+
 Der `AX_SEL_DINT`-Funktionsbaustein ist ein robuster und effizienter Baustein zur ereignisgesteuerten Signalumschaltung. Durch die Kapselung der Auswahl- und Speicherlogik sowie der Verwendung von Adaptern eignet er sich hervorragend für modulare und übersichtliche Systemarchitekturen in modernen Steuerungsumgebungen.

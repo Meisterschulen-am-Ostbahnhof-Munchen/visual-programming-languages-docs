@@ -15,6 +15,7 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 ## Verwendete Funktionsbausteine (FBs)
 
 ### ALI_FB_CTD
+
 - **Typ:** `adapter::iec61131::counters::ALI_FB_CTD`
 - **Verwendete interne FBs:** keine (eigenständiger Zählerbaustein)
 - **Parameter:**
@@ -30,6 +31,7 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 - **Funktionsweise:** Ein Impuls am Ereigniseingang CD dekrementiert den aktuellen Zählerstand CV um 1. Ein Impuls am LD lädt den Wert von PV in CV. Wenn CV = 0 wird der Ausgang Q gesetzt.
 
 ### ALI_LINT_TO_LI
+
 - **Typ:** `adapter::conversion::unidirectional::ALI_LINT_TO_LI`
 - **Verwendete interne FBs:** keine
 - **Parameter:**
@@ -41,6 +43,7 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 - **Funktionsweise:** Stellt bei einer Anforderung (REQ) den parametrierten LINT-Wert (hier 10) am Ausgang ALI_OUT bereit. Dient als Quelle für den Preset-Wert PV.
 
 ### Input_CD
+
 - **Typ:** `logiBUS::io::DI::logiBUS_IXA`
 - **Verwendete interne FBs:** keine
 - **Parameter:**
@@ -49,6 +52,7 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 - **Funktionsweise:** Wandelt ein digitales Signal vom Feldbus (Input_I1) in einen Adapter-Ereignisausgang IN. Wird verwendet, um das CD-Signal (Count Down) an den Zähler zu liefern.
 
 ### Input_LD
+
 - **Typ:** `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter:**
   - `QI` = `TRUE`
@@ -56,6 +60,7 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 - **Funktionsweise:** Analog zu Input_CD, liefert das Ladesignal (LD) für den Zähler.
 
 ### Output_Q1
+
 - **Typ:** `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter:**
   - `QI` = `TRUE`
@@ -63,12 +68,14 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 - **Funktionsweise:** Nimmt den digitalen Ausgang Q des Zählers entgegen und stellt ihn als Feldbus-Ausgang (Output_Q1) bereit.
 
 ### ALI_TO_AUDI
+
 - **Typ:** `adapter::conversion::unidirectional::ALI_TO_AUDI`
 - **Verwendete interne FBs:** keine
 - **Parameter:** keine
 - **Funktionsweise:** Wandelt den ALI-Adatper (LINT) in einen AUDI-Adapter (UINT?) um. Der konvertierte Wert wird an den numerischen Anzeigebaustein weitergegeben. Da der Konverter nur positive Werte verarbeitet, können negative Zählerstände nicht angezeigt werden.
 
 ### Q_NumericValue_AUDI
+
 - **Typ:** `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter:**
   - `u16ObjId` = `OutputNumber_N1` (Kennung des Terminal-Ausgabeelements)
@@ -109,4 +116,5 @@ Der Schwierigkeitsgrad ist **mittel**. Vorkenntnisse in der 4diac-IDE und grundl
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

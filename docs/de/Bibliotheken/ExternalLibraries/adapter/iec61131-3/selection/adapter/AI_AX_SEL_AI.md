@@ -15,25 +15,31 @@ Der Funktionsbaustein `AI_AX_SEL_AI` ist ein binärer Selektor (Multiplexer) fü
 Der Funktionsbaustein besitzt keine klassischen diskreten Ein- und Ausgänge für Daten und Ereignisse auf seiner Hauptebene. Stattdessen ist die gesamte Kommunikation über standardisierte Adapter realisiert.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (vollständig über Adapter gekapselt).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (vollständig über Adapter gekapselt).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden (vollständig über Adapter gekapselt).*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden (vollständig über Adapter gekapselt).*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`): Der Selektor-Eingang. Dieser Adapter liefert das Steuersignal (boolescher Zustand), das bestimmt, welcher der beiden analogen Eingänge auf den Ausgang geschaltet wird.
 * **IN0** (Typ: `adapter::types::unidirectional::AI`): Der auswählbare Analogeingang 0. Dieser Wert wird durchgeschaltet, wenn das Selektorsignal `G` den Zustand `FALSE` (0) aufweist.
 * **IN1** (Typ: `adapter::types::unidirectional::AI`): Der auswählbare Analogeingang 1. Dieser Wert wird durchgeschaltet, wenn das Selektorsignal `G` den Zustand `TRUE` (1) aufweist.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AI`): Der ausgewählte Analogausgang. Er gibt das Signal des jeweils aktiven Eingangs (`IN0` oder `IN1`) aus.
 
 ---

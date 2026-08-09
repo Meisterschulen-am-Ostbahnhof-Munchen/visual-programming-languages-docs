@@ -15,15 +15,19 @@ Der Funktionsbaustein `AR_DIV_2` ist ein generischer arithmetischer Baustein, de
 Da es sich um einen rein adapterbasierten Funktionsbaustein handelt, verfügt `AR_DIV_2` über keine direkten, klassischen Daten- oder Ereignis-Ein- und Ausgänge auf der Hauptebene. Die gesamte Kommunikation wird über Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden.* (Die Ereignissteuerung erfolgt implizit über die Eingangs-Adapter).
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden.* (Die Ereignissteuerung erfolgt implizit über den Ausgangs-Adapter).
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.* (Die Datenübergabe erfolgt über die Eingangs-Adapter).
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.* (Die Datenübergabe erfolgt über den Ausgangs-Adapter).
 
 ### **Adapter**

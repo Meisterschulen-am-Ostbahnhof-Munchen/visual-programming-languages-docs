@@ -14,12 +14,15 @@ The function block `AUI_SUB_2` is used to perform arithmetic subtraction within 
 *This function block does not have direct event inputs. Event control is handled internally via the connected adapters.*
 
 ### **Event Outputs**
+
 *This function block does not have direct event outputs. Event forwarding is encapsulated via the output adapter.*
 
 ### **Data Inputs**
+
 *There are no direct data inputs. Data is transferred via the input adapters.*
 
 ### **Data Outputs**
+
 *There are no direct data outputs. The result is provided via the output adapter.*
 
 ### **Adapters**
@@ -33,7 +36,6 @@ First input adapter for subtraction. This represents the minuend (value from whi
 * **IN2** (Type: `adapter::types::unidirectional::AUI`):
 
 Second input adapter for subtraction. This represents the subtrahend (value being subtracted).
-
 
 #### **Plugs (Inputs / Outputs)**
 
@@ -51,13 +53,11 @@ $$\text{OUT} = \text{IN1} - \text{IN2}$$
 
 As soon as a change in value is signaled at the input adapters `IN1` or `IN2` (triggered by the event-driven nature of the underlying `AUI` adapter), the function block calculates the difference and outputs the result, along with a corresponding update event, via the output adapter `OUT`.
 
-
 ---
 
 ## Technical Features
 
 * **Generic Type:** The function block is based on the generic class `GEN_AUI_SUB`. This allows for flexible handling of different data types, provided they are supported by the underlying adapter type `AUI` (Analog User Interface / Unidirectional).
-
 * **Encapsulation:** By using unidirectional adapters, signal flows and their associated trigger events are neatly bundled. This significantly simplifies application design in the 4diac IDE and reduces the number of visible connection lines.
 
 --
@@ -68,7 +68,6 @@ The function block itself does not manage a complex internal state (stateless in
 
 1. **Waiting:** The function block waits for an update event at `IN1` or `IN2`.
 
-
 **Encapsulation:** 2. **Calculation:** After an event occurs, the data values are read and the subtraction is performed.
 
 3. **Output:** The new difference value is applied to `OUT`, and the adapter's output event is triggered.
@@ -78,18 +77,13 @@ The function block itself does not manage a complex internal state (stateless in
 ## Application Scenarios
 
 * **Differential Pressure/Differential Temperature Measurement:** Calculation of the deviation between two analog sensors whose values are already available as structured adapter signals.
-
 * **Setpoint-Actual Value Comparison:** Subtraction of an actual value from a setpoint to determine the control deviation in control loops.
-
 * **Zero Point Compensation (Offset Calculation):** Subtraction of a static or dynamic offset value (via `IN2`) from a raw signal (via `IN1`).
-
-
 * ---
 
 ## Comparison with Similar Building Blocks
 
 Compared to a standard subtraction block (such as the classic `SUB` block from the IEC 61131-3 library), the `AUI_SUB_2` does not require explicit wiring of separate event and data ports (e.g., `REQ`, `IN1`, and `IN2`). All the logic for value transfer and updates is encapsulated in the `AUI` adapter. This makes the `AUI_SUB_2` easier to maintain and more robust against wiring errors in complex system architectures.
-
 
 ---
 

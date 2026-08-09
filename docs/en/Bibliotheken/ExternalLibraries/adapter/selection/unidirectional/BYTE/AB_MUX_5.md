@@ -1,10 +1,13 @@
 # AB_MUX_5
+
 ![AB_MUX_5](./AB_MUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AB_MUX_5** implements a generic multiplexer for adapter interfaces of type `adapter::types::unidirectional::AB`. It selects one of five incoming adapter connections (IN1–IN5) and forwards it to the output adapter (OUT). The selection is made using an integer index `K`, which is evaluated on a rising edge at the event input `REQ`.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Comment |
@@ -52,15 +55,16 @@ In the event of a switchover, the output `CNF` is sent.
 - **Copyright and License**: The function block is subject to the Eclipse Public License 2.0, which permits free use, modification, and distribution.
 
 ## State Overview
+
 The function block does not have an explicit state machine (ECC). Its behavior is event-driven:
 
 1. **Idle State**: No event is present. The output adapter `OUT` displays the last selected input connection.
-
 2. **Switching Phase**: Upon a `REQ` event, the index `K` is read, the adapter connection is switched, and then `CNF` is output.
 
 This makes the function block deterministic and allows it to operate without delays other than the internal propagation time.
 
 ## Application Scenarios
+
 - **Signal Selection in Agricultural Engineering**: (Depending on the function block's origin) Selection between different sensor values (e.g., five different measuring points for temperature or pressure).
 - **Data Selection in Automation Systems**: Switching between multiple data sources (e.g., five conveyor belts or five machine states).
 - **Test and Simulation Environments**: Targeted selection of an input adapter signal for testing purposes.
@@ -77,11 +81,13 @@ This makes the function block deterministic and allows it to operate without del
 The AB_MUX_5 is specifically optimized for adapter connections and offers a clear separation of event control and data path.
 
 ## Conclusion
+
 The **AB_MUX_5** is a compact and reusable function block for adapter multiplexing. It allows the selection of one of five incoming adapter channels via a numeric index and is ideally suited for systems that need to dynamically switch between multiple identical interfaces. Thanks to its generic implementation and EPL 2.0 license, it can be used in various automation environments.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

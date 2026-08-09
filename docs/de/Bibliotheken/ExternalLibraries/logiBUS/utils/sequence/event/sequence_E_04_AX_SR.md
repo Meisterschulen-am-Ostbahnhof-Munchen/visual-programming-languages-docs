@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Sequenzer mit vier Ausgängen über AX-Adapter. Er bietet zusätzlich einen Sicherheitsstopp (STOP), eine Wiederaufnahme (RESUME) und einen Reset (RESET). Die Sequenz durchläuft die Zustände State_00, State_01, State_02, State_03, State_04 und kann zyklisch betrieben werden.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Beschreibung |
@@ -27,6 +29,7 @@ Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Se
 | `CNF` | Bestätigung der Ausführung. Mitgeführte Ausgabedaten: `STATE_NR`, `PAUSED` |
 
 ### **Daten-Eingänge**
+
 Keine externen Dateneingänge.
 
 ### **Daten-Ausgänge**
@@ -46,6 +49,7 @@ Keine externen Dateneingänge.
 | `DO_S4`  | `adapter::types::unidirectional::AX` | Ausgang, der in State_04 aktiv ist |
 
 ## Funktionsweise
+
 Der Sequenzer arbeitet nach einem endlichen Automaten (ECC). Die fünf sequenziellen Zustände sind:
 
 - `State_00` (START)
@@ -61,6 +65,7 @@ Wird `STOP` empfangen, deaktiviert der FB sofort den aktuellen Ausgang (Exit-Ste
 Der `RESET`-Befehl bringt den Sequenzer unabhängig vom aktuellen Zustand in einen Reset-Zustand, in dem alle vier Ausgänge explizit ausgeschaltet werden, und wechselt dann sofort nach `State_00`.
 
 ## Technische Besonderheiten
+
 - **AX-Adapter**: Die vier Ausgänge werden über unidirektionale AX-Adapter realisiert, die je einen booleschen Wert `D1` besitzen. Die Ausgänge werden nur in den aktiven Zuständen gesetzt, bei Verlassen oder beim Stopp sofort zurückgesetzt.
 - **Pause/Resume-Mechanismus**: Die interne Variable `savedState` speichert den Zustand zum Zeitpunkt des Stopps, sodass nach `RESUME` exakt der gleiche Zustand fortgesetzt werden kann.
 - **Sicherheitsstopp**: Der `STOP`-Ereignis bewirkt ein sofortiges Abschalten aller Ausgänge (auch ohne Eintreten in einen pausierten Zustand), was als Dead-Man-Stop ausgelegt ist.
@@ -85,12 +90,14 @@ Der `RESET`-Befehl bringt den Sequenzer unabhängig vom aktuellen Zustand in ein
 | sRESET           | keiner          | –           | –        |
 
 ## Anwendungsszenarien
+
 - **Steuerung sequenzieller Prozesse**: z. B. eine Maschine, die nacheinander vier Arbeitsschritte ausführt, wobei jeder Schritt einen eigenen Aktor ansteuert.
 - **Sicherheitskritische Anwendungen**: Wenn ein `STOP`-Signal sofort alle Aktoren abschalten muss (z. B. Not-Halt), und nach Freigabe der genaue Zustand wiederhergestellt wird.
 - **Zyklische Abläufe**: von Schritt 1 bis 4 und zurück zu Schritt 0 (z. B. in Verpackungsmaschinen).
 - **Manuelles Eingreifen**: über `RESET` kann der Ablauf jederzeit auf den Anfang zurückgesetzt werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Im Gegensatz zu einfacheren Sequenzern (z. B. ohne STOP/RESUME) bietet `sequence_E_04_AX_SR`:
 
 - **Sicherheitsunterbrechung mit definiertem Ausschalten** aller Ausgänge.
@@ -101,4 +108,5 @@ Im Gegensatz zu einfacheren Sequenzern (z. B. ohne STOP/RESUME) bietet `sequen
 Andere Bausteine mit gleicher Ausgangsanzahl, aber ohne STOP/RESUME, sind einfacher in der Handhabung, bieten jedoch keine Sicherheitsfunktion.
 
 ## Fazit
+
 Der Funktionsblock `sequence_E_04_AX_SR` ist ein vielseitiger, sicherheitsbewusster Sequenzer für vier Schritte. Er eignet sich besonders für Steuerungen, bei denen ein unterbrechbarer Ablauf mit definierten Ausgangszuständen und Wiederaufnahmeoption erforderlich ist. Die Schnittstelle ist klar strukturiert, die Implementierung robust und durch den Einsatz von AX-Adaptern gut in Automatisierungsumgebungen integrierbar.

@@ -26,15 +26,19 @@ Der Baustein besitzt keine direkten klassischen Ereignis- oder Dateneingänge au
 ```
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereigniseingänge vorhanden. Die Ereignissteuerung wird über die Adapter abgewickelt.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignisausgänge vorhanden. Die Ereignissteuerung wird über die Adapter abgewickelt.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Dateneingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Datenausgänge vorhanden.*
 
 ### **Adapter**

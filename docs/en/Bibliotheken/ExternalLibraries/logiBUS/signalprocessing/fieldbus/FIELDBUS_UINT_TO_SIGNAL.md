@@ -1,4 +1,5 @@
 # FIELDBUS_UINT_TO_SIGNAL
+
 ![FIELDBUS_UINT_TO_SIGNAL](./FIELDBUS_UINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -7,47 +8,44 @@ The FIELDBUS_UINT_TO_SIGNAL function block is used to process fieldbus signals. 
 | Event | Data Type | Comment |
 |----------|----------|-----------|
 | REQ | Event | Normal Execution Trigger (connected to IN) |
-
-
 | Event | Data Type | Comment |
 |----------|----------|-----------|
 | CNF | Event | Execution confirmation (connected to OUT and VALID) |
-
-
 | Name | Data Type | Initial Value | Comment |
 |------|----------|-------------|-----------|
 | IN | UINT | WORD_TO_UINT(NOT_AVAILABLE_WM) | Input value (raw fieldbus signal) |
-
-
 | Name | Data Type | Initial Value | Comment |
 |------|----------|-------------|-----------|
 | OUT | UINT | 16#0000 | Filtered Output Value |
 | VALID | BOOL | FALSE | TRUE if the signal is recognized as valid |
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 On each REQ event, the REQ algorithm is executed:
 
 1. The incoming value IN is compared to the constant `VALID_SIGNAL_W`.
-
 2. If `IN <= WORD_TO_UINT(VALID_SIGNAL_W)` is valid, the signal is considered valid:
-
 - `OUT` receives the value of `IN`.
 - `VALID` is set to TRUE.
-
 3. Otherwise (signal invalid):
-
 - `OUT` is reset to 0.
 - `VALID` is set to FALSE.
-
 4. The CNF event is then triggered.
 
 The constants `NOT_AVAILABLE_WM` (for the initial value of IN) and `VALID_SIGNAL_W` (as the threshold) are obtained from external imports and define the valid range of the fieldbus signal.
@@ -59,24 +57,26 @@ The constants `NOT_AVAILABLE_WM` (for the initial value of IN) and `VALID_SIGNAL
 The function block consists of a single state, **REQ**.
 
 - **START** → **REQ**: The algorithm is executed as soon as the REQ event occurs. After processing, CNF is output, and the state remains in REQ (cyclic processing).
-
 - Processing of analog sensor values from a fieldbus where a specific value range is defined as valid (e.g., 0–1000 for a pressure sensor).
 - Filtering of communication errors or invalid telegrams by setting values outside the valid range to zero and marking them as invalid.
 - Preprocessing of fieldbus signals before forwarding them to subsequent logic blocks.
 
-
 Unlike simple pass-through blocks (e.g., `MOVE`), `FIELDBUS_UINT_TO_SIGNAL` performs a deliberate validity check and distinguishes between valid and invalid values. Other blocks, such as `LIMIT` or `SCALE`, offer range limits but no separate Boolean output for validity. This block is particularly suitable for applications requiring explicit signal status indication.
 
 The FIELDBUS_UINT_TO_SIGNAL function block provides a simple and efficient way to check the validity of fieldbus signals and either pass them through or discard them. Its clear interface and the use of configurable constants make it versatile for use in IEC 61499 automation applications.
-
 
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

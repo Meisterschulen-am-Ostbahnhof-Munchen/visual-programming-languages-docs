@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsblock **AI_D_FF_HYS_TMIN** realisiert ein Data-Latch (D-Flipflop) mit einem Hystereseband und einer Mindestzeit zwischen aufeinanderfolgenden Ereignisausgängen. Er dient als robuste Signalverarbeitungskomponente, die Störungen und schnelle Flankenwechsel unterdrückt und nur stabile Zustandsänderungen weitergibt.
 
 ## Schnittstellenstruktur
@@ -29,6 +30,7 @@ Der Funktionsblock **AI_D_FF_HYS_TMIN** realisiert ein Data-Latch (D-Flipflop) m
 | Tmin         | TIME  | Mindestzeit zwischen zwei Ereignisausgängen (E1 am Q-Adapter) |
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine eigenen Datenausgänge. Der latched Wert wird über den Ausgangsadapter **Q** bereitgestellt.
 
 ### **Adapter**
@@ -39,6 +41,7 @@ Der Baustein besitzt keine eigenen Datenausgänge. Der latched Wert wird über d
 | **Q**   | adapter::types::unidirectional::AI | Ausgangsadapter: gibt den latched Wert aus (über Ereignis E1 und Daten D1) |
 
 ## Funktionsweise
+
 Der Baustein verwendet intern das Unterprogramm **E_D_FF_ANY_HYS_TMIN** aus der Bibliothek *logiBUS::signalprocessing::hysteresis*. Die Funktionsweise im Überblick:
 
 1. **Initialisierung**  
@@ -54,14 +57,17 @@ Der Baustein verwendet intern das Unterprogramm **E_D_FF_ANY_HYS_TMIN** aus der 
    Der aktuell gültige latched Wert wird über den **Q**-Adapter bereitgestellt. Bei jeder gültigen Zustandsänderung wird ein Ereignis an **Q.E1** gesendet.
 
 ## Technische Besonderheiten
+
 - **Hysterese** – Unterdrückt Rauschen und schnelle Schwankungen, indem eine Änderung nur dann akzeptiert wird, wenn sie das Hystereseband überschreitet.
 - **Mindestzeit zwischen Ereignissen (Tmin)** – Verhindert zu häufige Ausgaben (z. B. durch hochfrequente Signale oder Prellen). Ereignisse werden erst nach Ablauf von `Tmin` seit dem letzten Ereignis freigegeben.
 - **Adapterbasierte Schnittstelle** – Die Ein- und Ausgabe erfolgt über Unidirectional-Adapters, was eine flexible Kopplung mit anderen Komponenten erlaubt.
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keine expliziten benannten Zustände. Das interne Flipflop arbeitet als bistabiles Element mit zwei stabilen Zuständen (hoch/niedrig oder dem letzten gültigen Wert). Die Zustandsübergänge werden durch die Hysterese- und Zeitbedingungen kontrolliert.
 
 ## Anwendungsszenarien
+
 - **Entprellung von Sensorwerten** – Glättung analoger oder digitaler Eingangssignale (z. B. Temperatur, Druck, Füllstand) bei Schwellwertüberschreitungen.
 - **Filterung von Rauschspitzen** – Vermeidung von Fehlauslösungen durch kurzzeitige Störungen.
 - **Zeitgesteuerte Signalüberwachung** – Wenn Änderungen nur in bestimmten Zeitabständen gemeldet werden sollen (z. B. für Logging oder Aktualisierungsraten).
@@ -77,4 +83,5 @@ Der Baustein besitzt keine expliziten benannten Zustände. Das interne Flipflop 
 | **AI_D_FF_HYS_TMIN** (dieser) | Kombiniert beide Filter: Hysterese und zeitliche Begrenzung. |
 
 ## Fazit
+
 Der **AI_D_FF_HYS_TMIN** ist ein vielseitiger Funktionsblock zur robusten Signalaufbereitung. Seine Kombination aus Hysterese und Mindestintervall macht ihn ideal für Anwendungen, die sowohl störungssichere als auch zeitlich kontrollierte Zustandsänderungen erfordern. Die adapterbasierte Anbindung erleichtert die Integration in modulare Automatisierungssysteme.

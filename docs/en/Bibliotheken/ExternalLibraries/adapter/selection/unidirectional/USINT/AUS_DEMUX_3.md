@@ -1,8 +1,10 @@
 # AUS_DEMUX_3
+
 ![AUS_DEMUX_3](./AUS_DEMUX_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUS_DEMUX_3** implements a generic demultiplexer for OFF signals. It distributes an input value (of adapter type `AUS`) received via a socket to one of three outputs provided via plugs. The active output is selected using the index `K`. The adapters used are unidirectional and allow loose coupling between the components.
 ## Interface Structure
 
@@ -48,6 +50,7 @@ The function block operates in an event-driven manner. An event at input `REQ` t
 If `K` is outside the valid range, the output remains unchanged (no action).
 
 ## Technical Features
+
 - **Generic Function Block** – The function block is implemented as a generic type (`GEN_AUS_DEMUX`) and can be parameterized for different channel numbers during instantiation.
 - **Adapter-Based Interface** – The use of adapters according to IEC 61499 enables flexible and standardized signal coupling.
 - **Unidirectional Data Transmission** – The OFF adapters only operate in one direction; this corresponds to typical applications such as controlling actuators.
@@ -57,6 +60,7 @@ If `K` is outside the valid range, the output remains unchanged (no action).
 The function block does not have an explicit state machine (ECC). Its functionality is purely event-driven: Each `REQ` event leads directly to selection and forwarding. This allows the function block to be used concurrently without internal states.
 
 ## Application Scenarios
+
 - **Signal Distribution** – A central sensor or control value is to be forwarded to one of several actuators, depending on the selection.
 - **Multipoint Control** – In agricultural machinery (e.g., HR agricultural technology), this is used to control various segment valves or actuators from a single signal.
 - **Test Environments** – Targeted switching of a test signal to different devices under test.

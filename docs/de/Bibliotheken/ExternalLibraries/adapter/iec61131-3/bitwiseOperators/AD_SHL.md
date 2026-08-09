@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **AD_SHL** führt eine bitweise Linksverschiebung (Shift Left) eines Eingangswertes durch. Er ist als generischer Baustein konzipiert, der über Adapter-Schnittstellen kommuniziert und beliebige ganzzahlige Datentypen (ANY_INT) unterstützt. Die eigentliche Verschiebeoperation wird intern durch einen vordefinierten Baustein `F_SHL` realisiert.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Beschreibung | Mit-Parameter |
@@ -14,6 +16,7 @@ Der Funktionsblock **AD_SHL** führt eine bitweise Linksverschiebung (Shift Left
 | `UPDATE` | Aktualisiert die Schiebeanzahl und startet die Berechnung. | `N` |
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge vorhanden. Das Ereignis zur Weitergabe des Ergebnisses erfolgt über den Adapter `OUT` (Ereignis `OUT.E1`).
 
 ### **Daten-Eingänge**
@@ -23,6 +26,7 @@ Keine direkten Ereignis-Ausgänge vorhanden. Das Ereignis zur Weitergabe des Erg
 | `N` | `ANY_INT` | Anzahl der Bit-Positionen, um die verschoben werden soll. |
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Das Ergebnis der Verschiebung wird über den Adapter `OUT` (Daten `OUT.D1`) bereitgestellt.
 
 ### **Adapter**
@@ -33,6 +37,7 @@ Keine direkten Daten-Ausgänge. Das Ergebnis der Verschiebung wird über den Ada
 | Plug | `OUT` | `adapter::types::unidirectional::AD` | Stellt das Ergebnis der Linksverschiebung zur Verfügung. |
 
 ## Funktionsweise
+
 Der FB arbeitet als kompositiver Funktionsblock, der die eigentliche Operation an den Baustein `F_SHL` delegiert. Intern wird folgende Logik umgesetzt:
 
 1. **Ereignisauslösung**  
@@ -49,6 +54,7 @@ Der FB arbeitet als kompositiver Funktionsblock, der die eigentliche Operation a
 Der Baustein ist ereignisgesteuert: Jedes Eintreffen eines gültigen Ereignisses (entweder extern über `UPDATE` oder vom Socket-Adapter `IN`) löst eine vollständige Berechnung aus.
 
 ## Technische Besonderheiten
+
 - **Adapter-Schnittstelle**  
   Anstelle fester Ein- und Ausgänge verwendet der FB Adapter (`IN` als Socket, `OUT` als Plug), was eine flexible Anbindung in verschiedenen Architekturkontexten ermöglicht.
 
@@ -62,9 +68,11 @@ Der Baustein ist ereignisgesteuert: Jedes Eintreffen eines gültigen Ereignisses
   Der Baustein ist unter der Eclipse Public License 2.0 lizenziert und als generischer FB konzipiert.
 
 ## Zustandsübersicht
+
 Der FB ist als **kompositives Netzwerk** realisiert und besitzt keinen eigenen internen Zustandsautomaten (ECC). Die Ablaufsteuerung wird vollständig durch die Ereignisverbindungen innerhalb des Netzwerks und den verwendeten `F_SHL`-Baustein bestimmt. Eine explizite Zustandsmaschine ist nicht erforderlich.
 
 ## Anwendungsszenarien
+
 - **Bitmanipulation in der Steuerungstechnik**  
   Verschieben von Bitmustern zur Maskierung, Skalierung oder Kodierung von Signalen.
 
@@ -75,6 +83,7 @@ Der FB ist als **kompositives Netzwerk** realisiert und besitzt keinen eigenen i
   Multiplikation mit Zweierpotenzen durch Linksverschiebung, insbesondere in rechenzeitkritischen Umgebungen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Direkter `F_SHL`-Baustein**  
   Der interne `F_SHL` bietet die gleiche Funktionalität, jedoch ohne Adapter-Schnittstelle. `AD_SHL` kapselt diesen Baustein und erweitert ihn um eine adapterbasierte Anbindung, was die Wiederverwendung in modularen Systemen erleichtert.
 
@@ -82,4 +91,5 @@ Der FB ist als **kompositives Netzwerk** realisiert und besitzt keinen eigenen i
   Ähnliche Konzepte existieren für andere bitweise Operationen (z. B. `AD_SHR`, `AD_AND`). `AD_SHL` spezifiziert die Linksverschiebung und kann in einer Bibliothek adaptergekoppelter Logikbausteine verwendet werden.
 
 ## Fazit
+
 Der Funktionsblock `AD_SHL` realisiert eine bitweise Linksverschiebung mittels eines gekapselten `F_SHL`-Bausteins und stellt die gesamte Funktionalität über eine standardisierte Adapter-Schnittstelle zur Verfügung. Durch die generische Auslegung und die flexible Ereignissteuerung eignet er sich für vielfältige Anwendungen in der IEC-61499-basierten Automatisierungstechnik. Seine kompositive Struktur macht ihn wartbar und leicht erweiterbar.

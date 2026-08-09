@@ -1,8 +1,10 @@
 # Exercise_213_AUDI: Standard IEC 61131-3 AUDI_FB_CTU (Adapter Version, Up Counter, UDINT) with Terminal Output
+
 ![Uebung_213_AUDI_network](./Uebung_213_AUDI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **Up Counter (CTU)** according to IEC 61131-3 in an adapter version for the **UDINT** data type. The counter is controlled via two digital inputs (count pulse and reset) and outputs the current counter value as well as the end-of-count value to a terminal and a digital output. A fixed preset value of 5 is specified via a conversion block.
 This exercise is designed to introduce you to:
 
@@ -16,6 +18,7 @@ This exercise is designed to introduce you to:
 ### Sub-blocks:
 
 #### **AUDI_FB_CTU**
+
 - **Type**: `adapter::iec61131::counters::AUDI_FB_CTU`
 - **Internal FBs used**: None
 - **Parameters**: No explicit parameters (all control via adapter interfaces)
@@ -32,6 +35,7 @@ This exercise is designed to introduce you to:
 On each rising edge at the CU input, the counter is incremented by 1, provided `R=FALSE` is present. A signal at `R` resets the counter to 0. The output `Q` is TRUE as soon as the current counter value `CV` reaches or exceeds the preset value `PV`. The counting range is `UDINT` (0 … 4,294,967,295).
 
 #### **AUDI_UDINT_TO_UDI**
+
 - **Type**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Internal Function Blocks Used**: None
 - **Parameters**:
@@ -45,6 +49,7 @@ On each rising edge at the CU input, the counter is incremented by 1, provided `
 Converts the constant UDINT value 5 The signal is converted into a UDI adapter signal, which is then used as a preset value by the subsequent CTU module. This conversion is triggered once during the initialization event (`INITO`) of the reset input.
 
 #### **Input_CU**
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
 - `QI` = `TRUE` (Active Block)
@@ -59,6 +64,7 @@ Provides the first digital logiBUS input (terminal I1) as an adapter signal for 
 ---
 
 #### **Input_R**
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -71,6 +77,7 @@ Provides the first digital logiBUS input (terminal I1) as an adapter signal for 
 Provides the second digital logiBUS input (terminal I2) as an adapter signal for resetting the counter. Additionally, the event `INITO` is generated at startup, triggering a one-time initialization of the preset value.
 
 #### **Output_Q1**
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -85,6 +92,7 @@ Receives the counter end value (`Q`) and outputs it on the first digital logiBUS
 ---
 
 #### **Q_NumericValue_AUDI**
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameters**:
 - `u16ObjId` = `OutputNumber_N1` (defines the terminal output object)
@@ -112,7 +120,6 @@ Every rising edge at the logiBUS input I1 (`Input_CU`) increments the counter as
 `` - A signal at input I2 (`Input_R`) resets the counter to 0.
 
 3. **Output**:
-
 - The counter's output `Q` is connected directly to the logiBUS output Q1 (`Output_Q1`).
 - The current counter reading `CV` is continuously sent to the terminal block `Q_NumericValue_AUDI` and displayed there.
 
@@ -132,6 +139,7 @@ Every rising edge at the logiBUS input I1 (`Input_CU`) increments the counter as
 ---
 
 ## Summary
+
 The exercise **Exercise_213_AUDI** implements a complete up-counter (CTU) according to IEC 61131-3 in an adapter variant. The counter is operated via two logiBUS digital inputs, and its current value as well as when the preset value is reached are output to both a terminal and a digital output. The one-time initialization of the preset value is performed via a converter block. This exercise teaches the use of adapter-based function blocks, data conversion, and the integration of inputs/outputs in the 4diac IDE.
 
 **Difficulty Level**: Intermediate
@@ -140,6 +148,7 @@ The exercise **Exercise_213_AUDI** implements a complete up-counter (CTU) accord
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

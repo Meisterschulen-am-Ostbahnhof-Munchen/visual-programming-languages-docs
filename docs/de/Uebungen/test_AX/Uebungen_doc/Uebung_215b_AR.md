@@ -21,17 +21,20 @@ Vorkenntnisse: Grundlagen der IEC 61131-3, 4diac-IDE, Adapterkonzept
 ## Verwendete Funktionsbausteine (FBs)
 
 ### AI_FB_CTD
+
 - **Typ**: `adapter::iec61131::counters::AI_FB_CTD`
 - **Verwendete interne FBs**: Keine (Basisfunktionsbaustein)
 - **Funktionsweise**: Abwärtszähler (Count Down) mit den Adapter-Schnittstellen `CD` (Count-Eingang), `LD` (Preset laden), `PV` (Presetwert), `Q` (Ausgang, wird TRUE wenn CV=0) und `CV` (aktueller Zählerwert).
 
 ### AI_INT_TO_I
+
 - **Typ**: `adapter::conversion::unidirectional::AI_INT_TO_I`
 - **Parameter**:
   - `OUT` = `INT#10` (Presetwert, fest auf 10 gesetzt)
 - **Funktionsweise**: Wandelt einen Integer-Wert (hier 10) in einen Adapterausgang um, der mit dem PV-Eingang des Zählers verbunden wird.
 
 ### Input_CD
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI` = `TRUE` (Freigabe)
@@ -39,6 +42,7 @@ Vorkenntnisse: Grundlagen der IEC 61131-3, 4diac-IDE, Adapterkonzept
 - **Funktionsweise**: Digitaler Eingang für das CD-Signal (Count Down). Bei positiver Flanke wird der Zähler dekrementiert.
 
 ### Input_LD
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -46,6 +50,7 @@ Vorkenntnisse: Grundlagen der IEC 61131-3, 4diac-IDE, Adapterkonzept
 - **Funktionsweise**: Digitaler Eingang für das LD-Signal (Load). Bei positiver Flanke wird der Presetwert (PV) in den Zähler geladen.
 
 ### Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -53,10 +58,12 @@ Vorkenntnisse: Grundlagen der IEC 61131-3, 4diac-IDE, Adapterkonzept
 - **Funktionsweise**: Digitaler Ausgang, der den Q-Zustand des Zählers (TRUE=CV=0) an ein logiBUS-Ausgabemodul weiterleitet.
 
 ### AI_TO_AR
+
 - **Typ**: `adapter::conversion::unidirectional::AI_TO_AR`
 - **Funktionsweise**: Wandelt den analogen Adapterwert (CV) des Zählers in ein Array (AR) um, das vom Terminalbaustein erwartet wird.
 
 ### Q_NumericValue_PHYSA
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameter**:
   - `stObj` = `OutputNumber_N3` (referenziert ein Terminal-Ausgabeobjekt)
@@ -85,4 +92,5 @@ Die Übung zeigt die Realisierung eines Abwärtszählers nach IEC 61131-3 unter 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

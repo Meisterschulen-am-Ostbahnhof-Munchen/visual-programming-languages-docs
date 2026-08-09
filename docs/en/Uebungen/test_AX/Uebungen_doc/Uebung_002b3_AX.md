@@ -1,8 +1,10 @@
 # Exercise_002b3_AX: DigitalInput_I1/_I2/_I3 to DigitalOutput_Q1
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002b3_AX`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR) to fulfill a more complex switching condition.
 ----
 ## Objective of the Exercise
+
 The main objective of this exercise is the hierarchical linking of logic blocks. It demonstrates how partial results of a logical operation (here, an AND) can serve as input for another operation (here, an OR). This enables the representation of arbitrarily complex logical expressions in control engineering.
 
 -----
@@ -43,11 +45,8 @@ The hierarchical structure of the logic is clearly illustrated by the interconne
 Functional Process:
 
 1. The system first calculates the partial result of the AND operation between `I1` and `I2`.
-
 2. This partial result is passed to the first input of the OR block.
-
 3. The OR block compares this partial result with the direct signal from `I3`.
-
 4. The output `Q1` is activated if either both first inputs (`I1` AND `I2`) are active OR if the third input (`I3`) is active.
 
 -----

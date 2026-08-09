@@ -13,6 +13,7 @@ Diese Übung demonstriert die Verwendung des IEC 61131-3 Standardvorwärtszähle
 Die Übung besteht aus einem Netzwerk von sechs internen Funktionsbausteinen, die über Ereignis- und Datenverbindungen verknüpft sind.
 
 ### Sub-Bausteine: FB_CTU_ULINT
+
 - **Typ**: `iec61131::counters::FB_CTU_ULINT`
 - **Verwendete interne FBs**: keiner (der Baustein selbst ist primitiv)
 - **Parameter**:
@@ -29,6 +30,7 @@ Die Übung besteht aus einem Netzwerk von sechs internen Funktionsbausteinen, di
 - **Funktionsweise**: Bei jedem REQ-Ereignis wird die Zählerlogik ausgeführt: Eine steigende Flanke auf **CU** erhöht **CV** um 1, ein TRUE auf **R** setzt **CV** auf 0. **Q** wird in derselben Verarbeitung aktualisiert.
 
 ### Sub-Bausteine: Input_CU und Input_R (logiBUS_IX)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Verwendete interne FBs**: keiner
 - **Parameter**:
@@ -41,6 +43,7 @@ Die Übung besteht aus einem Netzwerk von sechs internen Funktionsbausteinen, di
 - **Funktionsweise**: Diese Bausteine lesen die realen digitalen Eingänge (logiBUS-Hardware) und geben bei jeder Änderung ein Ereignis aus. Der Zustand wird über **IN** bereitgestellt.
 
 ### Sub-Bausteine: Output_Q1 (logiBUS_QX)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Verwendete interne FBs**: keiner
 - **Parameter**:
@@ -53,6 +56,7 @@ Die Übung besteht aus einem Netzwerk von sechs internen Funktionsbausteinen, di
 - **Funktionsweise**: Der Baustein setzt den Digitalausgang auf den Wert von **OUT**, sobald ein **REQ**-Ereignis eintrifft.
 
 ### Sub-Bausteine: F_ULINT_TO_UDINT
+
 - **Typ**: `iec61131::conversion::F_ULINT_TO_UDINT`
 - **Verwendete interne FBs**: keiner
 - **Parameter**: keine
@@ -65,6 +69,7 @@ Die Übung besteht aus einem Netzwerk von sechs internen Funktionsbausteinen, di
 - **Funktionsweise**: Der Baustein wandelt einen 64‑Bit unsigned Integer (ULINT) in einen 32‑Bit unsigned Integer (UDINT) um. Ein Überlauf kann auftreten, wenn der ULINT-Wert größer als 2³²‑1 ist (Hinweis im Netzwerk).
 
 ### Sub-Bausteine: Q_NumericValue
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue`
 - **Verwendete interne FBs**: keiner
 - **Parameter**:
@@ -103,4 +108,5 @@ Die Übung 214 zeigt den praktischen Einsatz des IEC 61131-3 Standard-Zählers *
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

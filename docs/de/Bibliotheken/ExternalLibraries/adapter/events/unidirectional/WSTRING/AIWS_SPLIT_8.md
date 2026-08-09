@@ -12,15 +12,19 @@ Der Baustein **AIWS_SPLIT_8** teilt ein eingehendes AIWS-Adapter-Signal auf acht
 Der Baustein besitzt weder Ereignis- noch Dateneingänge oder -ausgänge. Die gesamte Kommunikation erfolgt ausschließlich über Adapter.
 
 ### Ereignis-Eingänge
+
 Keine.
 
 ### Ereignis-Ausgänge
+
 Keine.
 
 ### Daten-Eingänge
+
 Keine.
 
 ### Daten-Ausgänge
+
 Keine.
 
 ### Adapter

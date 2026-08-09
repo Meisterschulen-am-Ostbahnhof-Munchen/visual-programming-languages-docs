@@ -13,24 +13,30 @@ Der Funktionsbaustein (FB) `AUS_SUB_2` ist ein generischer Baustein zur Durchfü
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Dieser Funktionsbaustein besitzt keine direkten, dedizierten Ereignis-Eingänge. Die Ereignissteuerung wird vollständig über die verwendeten Adapter abgewickelt.
 
 ### **Ereignis-Ausgänge**
+
 Dieser Funktionsbaustein besitzt keine direkten, dedizierten Ereignis-Ausgänge. Die Ereignissteuerung wird vollständig über die verwendeten Adapter abgewickelt.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten, elementaren Daten-Eingänge vorhanden. Die Datenübergabe erfolgt über die Eingangs-Adapter.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten, elementaren Daten-Ausgänge vorhanden. Das Ergebnis wird über den Ausgangs-Adapter bereitgestellt.
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Eingang (Minuend) für die Subtraktionsberechnung.
 * **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Eingang (Subtrahend) für die Subtraktionsberechnung.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUS`): Der Ausgang (Differenz), der das berechnete Ergebnis der Subtraktion liefert.
 
 ---

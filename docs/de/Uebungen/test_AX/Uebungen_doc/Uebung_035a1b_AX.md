@@ -15,6 +15,7 @@ Die Übung **Uebung_035a1b_AX** implementiert eine klassische Ampelsteuerung. Hi
 In dieser SubApplikation werden verschiedene Bausteine verschaltet, um die Steuerungslogik zu realisieren.
 
 ### Haupt-Steuerungsbaustein: `sequence_Pattern_04_04_loop_AX`
+
 Dieser Baustein ist der Kern der Steuerung. Er durchläuft 4 Schritte in einer Endlosschleife.
 
 - **Typ**: `logiBUS::utils::sequence::pattern::sequence_Pattern_04_04_loop_AX`
@@ -26,6 +27,7 @@ Dieser Baustein ist der Kern der Steuerung. Er durchläuft 4 Schritte in einer E
     - `DT_S4_S1` = `T#1s` (Dauer Gelbphase)
 
 ### Muster-Erzeugung: `ASSEMBLE_BYTE_FROM_BOOLS`
+
 Es werden vier Instanzen dieses Bausteins verwendet, um die Lichtmuster für die vier Ampelphasen zu definieren. Jeder Baustein wandelt einzelne Boolesche Signale in ein Byte um, das vom Sequencer interpretiert wird.
 
 1.  **Instanz `P1_Red`**:
@@ -42,6 +44,7 @@ Es werden vier Instanzen dieses Bausteins verwendet, um die Lichtmuster für die
     - **Parameter**: `BIT_01` = `TRUE` (Gelb).
 
 ### Ein-/Ausgabe-Bausteine
+
 - **`DigitalInput_I1`** (`logiBUS::io::DI::logiBUS_IE`):
     - Repräsentiert den Taster zum Starten der Sequenz.
     - Reagiert auf das Ereignis `BUTTON_SINGLE_CLICK`.
@@ -54,6 +57,7 @@ Es werden vier Instanzen dieses Bausteins verwendet, um die Lichtmuster für die
 Der Ablauf der Steuerung gliedert sich in die Initialisierung der Muster und den eigentlichen Zyklus der Ampel.
 
 ### 1. Initialisierung
+
 Damit der Sequencer weiß, welche Lampen in welchem Schritt leuchten sollen, müssen die Bitmuster (`P1` bis `P4`) zunächst berechnet und übergeben werden.
 
 - Das Initialisierungs-Signal (`INITO`) vom Eingangsbaustein `DigitalInput_I1` startet eine Kette.
@@ -61,6 +65,7 @@ Damit der Sequencer weiß, welche Lampen in welchem Schritt leuchten sollen, mü
 - Am Ende dieser Kette wird der `RESET`-Eingang des Sequencers (`sequence_Pattern_04_04_loop_AX`) ausgelöst. Dadurch werden die erzeugten Byte-Muster an die Eingänge `P_S1` bis `P_S4` des Sequencers übernommen.
 
 ### 2. Start und Zyklus
+
 - Ein einfacher Klick (`BUTTON_SINGLE_CLICK`) auf den Eingang `DigitalInput_I1` sendet ein Event an `START_S1` des Sequencers.
 - Der Sequencer beginnt nun seinen Ablauf:
     1.  **Schritt 1**: Muster von `P1_Red` wird ausgegeben (Lampe Rot an). Wartezeit 3 Sekunden.
@@ -70,6 +75,7 @@ Damit der Sequencer weiß, welche Lampen in welchem Schritt leuchten sollen, mü
 - Da es sich um einen Loop-Baustein handelt, beginnt der Zyklus nach Schritt 4 wieder automatisch bei Schritt 1.
 
 ### 3. Ausgänge
+
 Die Ausgänge des Sequencers (`Q1`, `Q2`, `Q3`) sind als Adapter ausgeführt und direkt mit den Ausgangsbausteinen für die Lampen verbunden. Das Byte-Muster wird intern im Sequencer auf diese Adapter abgebildet (Bit 0 -> Q1, Bit 1 -> Q2, Bit 2 -> Q3).
 
 ## Zusammenfassung

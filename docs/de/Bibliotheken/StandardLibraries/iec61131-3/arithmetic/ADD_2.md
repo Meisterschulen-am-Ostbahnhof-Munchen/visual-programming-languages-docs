@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 unterstützt verschiedene numerische Datentypen gemäß IEC 61131-3 Standard.
 
 ![ADD_2](ADD_2.svg)
@@ -12,16 +13,20 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_MAGNITUDE): Erster Summand
 - `IN2` (ANY_MAGNITUDE): Zweiter Summand
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_MAGNITUDE): Summen-Ergebnis
 
 ## Funktionsweise

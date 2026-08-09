@@ -13,6 +13,7 @@ Diese Übung realisiert ein Toggle-Flip-Flop (T-FF) mit einem Initialwert von `F
 ### Sub-Bausteine:
 
 #### Baustein `DigitalInput_CLK_I1`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Verwendete interne FBs**: Keine (Hardwaretreiberbaustein)
 - **Parameter**:
@@ -22,6 +23,7 @@ Diese Übung realisiert ein Toggle-Flip-Flop (T-FF) mit einem Initialwert von `F
 - **Funktionsweise**: Dieser Baustein erfasst den Zustand des Eingangs `Input_I1` und erzeugt bei einem Tastendruck (Ereignis vom Typ `BUTTON_SINGLE_CLICK`) ein Ereignis am Ausgang `IND`. Das Signal wird getaktet und an das nachfolgende Flip-Flop weitergegeben.
 
 #### Baustein `AX_T_FF`
+
 - **Typ**: `adapter::events::unidirectional::AX_T_FF_INIT`
 - **Verwendete interne FBs**: Keine (Standard-Flip-Flop-Baustein)
 - **Parameter**:
@@ -30,6 +32,7 @@ Diese Übung realisiert ein Toggle-Flip-Flop (T-FF) mit einem Initialwert von `F
 - **Funktionsweise**: Dies ist ein Toggle-Flip-Flop. Bei jedem empfangenen Ereignis am Eingang `CLK` (verbunden mit `IND` des Eingangsbausteins) wird der interne Zustand `Q` umgeschaltet. Der Ausgangswert wird über den Adapterausgang `Q` bereitgestellt. Der Startwert ist `FALSE`, sodass nach dem ersten Tastendruck der Zustand auf `TRUE` wechselt.
 
 #### Baustein `DigitalOutput_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Verwendete interne FBs**: Keine (Hardwaretreiberbaustein)
 - **Parameter**:
@@ -62,4 +65,5 @@ Die Übung demonstriert die einfache Realisierung eines Toggle-Flip-Flops mit ha
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

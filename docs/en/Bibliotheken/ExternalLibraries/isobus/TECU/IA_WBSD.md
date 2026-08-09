@@ -1,10 +1,13 @@
 # IA_WBSD
+
 ![IA_WBSD](./IA_WBSD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distance) serves as an interface wrapper for ISOBUS communication of wheel-based speed and distance values according to ISO 11783-7. It encapsulates the internal module `I_WBSD` and provides its functionality via standardized adapter connections.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Comment |
@@ -50,6 +53,7 @@ The **IA_WBSD** function block is a pure adapter wrapper. It connects the extern
 The internal logic (calculation, timeout monitoring, ISOBUS frame handling) is handled entirely by the internal function block `I_WBSD`; **IA_WBSD** makes this available externally as an IEC 61499-compliant adapter interface.
 
 ## Technical Features
+
 - **Standard:** ISO 11783-7 (ISOBUS) – PGN 65096
 - **Development History:**
 - Version 1.0: Initial implementation as an adapter wrapper for `I_WBSD`
@@ -59,6 +63,7 @@ The internal logic (calculation, timeout monitoring, ISOBUS frame handling) is h
 - **Author:** - (not named)
 
 ## State Overview
+
 The block does not have its own explicit state machine. Its behavior is controlled by the internal function block `I_WBSD`:
 
 - **Idle State:** No initialization pending.
@@ -66,11 +71,13 @@ The block does not have its own explicit state machine. Its behavior is controll
 - **Initialization Complete:** **INITO** is triggered, **QO** indicates success (`TRUE`) or failure (`FALSE`). Afterward, measured values and timeout status can be continuously received via the adapters.
 
 ## Application Scenarios
+
 - **Agricultural Machine Control:** Integration of wheel-based speed and distance sensors into an ISOBUS control system (e.g., for tractors, harvesters).
 - **Positioning without GPS:** Use of the wheel sensors for relative position determination in field work applications.
 - **Monitoring of Driving Cycles:** Acquisition of speed and distance data for diagnostics or process control.
 
 ## Comparison with Similar Function Blocks
+
 - **IA_WBSD vs. Direct I_WBSD:** The internal function block `I_WBSD` provides the pure ISOBUS implementation, while **IA_WBSD** encapsulates this in an IEC 61499 adapter interface. This facilitates reuse in various tools (e.g., 4diac IDE) and loose coupling with other function blocks.
 - **IA_WBSD vs. Other ISOBUS Adapters:** Specific to the PGN 65096 (Wheel Based Speed and Distance). Adapters for other PGNs (e.g., for GPS position or motor speed) have a similar structure but differ in data types and internal interpretation.
 
@@ -82,4 +89,5 @@ The **IA_WBSD** is a practical adapter wrapper for the ISOBUS module `I_WBSD`. I
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,10 @@
 # Exercise_007: Flasher with E_CYCLE and E_T_FF
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_007`. It demonstrates how to generate periodic events to create a cyclic flashing signal.
 ----
 ## Objective of the Exercise
+
 Using the `E_CYCLE` function block to generate a time base. It demonstrates how a periodic trigger controls a toggle flip-flop to generate a smooth square wave (on/off) signal.
 
 -----
@@ -24,11 +26,8 @@ Using the `E_CYCLE` function block to generate a time base. It demonstrates how 
 ## Functionality
 
 1. The `E_CYCLE` function block fires an event every second.
-
 2. This event reaches the `CLK` input of the `E_T_FF`.
-
 3. The flip-flop toggles its state with each pulse (Off ➡️ On ➡️ Off ➡️ ...).
-
 4. Since two clock pulses are required for a full cycle (On and Off), the lamp blinks at a frequency of 0.5 Hz (1 second on, 1 second off).
 
 -----

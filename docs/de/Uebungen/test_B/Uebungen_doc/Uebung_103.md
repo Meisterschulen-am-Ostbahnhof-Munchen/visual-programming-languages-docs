@@ -3,11 +3,13 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals zu einem digitalen Ausgangssignal unter Verwendung von Plug-and-Socket-Verbindungen sowie DEMUX- und MUX-Funktionsbausteinen. Das System ermöglicht unterschiedliche Signalverarbeitungsmodi für verschiedene Anwendungsfälle.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Haupt-Funktionsbausteine:
+
 - **DigitalInput_I1** (logiBUS_IXA): Liest digitale Eingangssignale von Input_I1
 - **DigitalOutput_Q1** (logiBUS_QXA): Schreibt digitale Ausgangssignale zu Output_Q1
 - **AX_DEMUX_3**: Verteilt Eingangssignale auf drei verschiedene Ausgänge
@@ -19,14 +21,17 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals zu ei
 ### Sub-Bausteine:
 
 #### Sub-Baustein: rastend
+
 - **Typ**: FBs::Uebungen::Uebung_103::subapp::rastend
 - **Funktionsweise**: Verarbeitet rastende (haltende) Signale
 
 #### Sub-Baustein: tastend  
+
 - **Typ**: FBs::Uebungen::Uebung_103::subapp::tastend
 - **Funktionsweise**: Verarbeitet tastende (momentane) Signale
 
 #### Sub-Baustein: tastend_TON_5s
+
 - **Typ**: FBs::Uebungen::Uebung_103::subapp::tastend_TON_5s
 - **Funktionsweise**: Verarbeitet tastende Signale mit 5-Sekunden-Zeitverzögerung
 
@@ -56,9 +61,11 @@ Zusätzlich verarbeitet InputNumber_I1 numerische Werte über Konvertierungsbaus
 **Start der Übung**: Das System wird automatisch aktiviert, sobald die Parameter QI auf TRUE gesetzt sind.
 
 ## Zusammenfassung
+
 Diese Übung vermittelt praktische Erfahrungen mit Signalverteilung und -kombination unter Verwendung von DEMUX- und MUX-Bausteinen. Die Integration verschiedener Signalverarbeitungsmodi (rastend, tastend, verzögert) in Subapplikationen zeigt eine flexible und modulare Programmstruktur, die für komplexere Steuerungsaufgaben grundlegend ist.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

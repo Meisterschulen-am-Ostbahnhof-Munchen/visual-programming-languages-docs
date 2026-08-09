@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung 160b, basierend auf den bereitgestell
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert eine Steuerung für einen Motor mit Links- und Rechtslauf (Reversierbetrieb) unter Verwendung von logiBUS-Bausteinen für die Ein- und Ausgabe über Industrial Ethernet (IE). Die Schaltung verfügt über eine direkte Umschaltfunktion mit einer Sicherheitsverzögerung sowie eine Sammelanzeige für den Betriebszustand.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Diese Übung implementiert eine Steuerung für einen Motor mit Links- und Rechts
 In dieser Sub-Application werden verschiedene Standard-Bibliotheksbausteine sowie Hardware-Treiberbausteine verwendet, um die Logik abzubilden.
 
 ### Sub-Bausteine: Eingänge (Inputs)
+
 Hier werden die Taster für die Steuerung eingelesen.
 
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
@@ -29,6 +31,7 @@ Hier werden die Taster für die Steuerung eingelesen.
         - Beschreibung: Stoppt den zweiten Ausgang (Q6). Reagiert auf das Herunterdrücken.
 
 ### Sub-Bausteine: Ausgänge (Outputs)
+
 Diese Bausteine steuern die physischen Ausgänge an.
 
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
@@ -44,6 +47,7 @@ Diese Bausteine steuern die physischen Ausgänge an.
         - Beschreibung: Signalleuchte/Statusanzeige, aktiv wenn Q5 oder Q6 aktiv ist.
 
 ### Sub-Bausteine: Logik (Logic Control)
+
 Die Kernlogik der Steuerung.
 
 - **Typ**: `iec61499::events::E_SR` (Set/Reset Flip-Flop)
@@ -96,4 +100,5 @@ Das Netzwerk realisiert eine Motorsteuerung mit folgenden Eigenschaften:
 *   Logische Verknüpfung von Zuständen (OR) zur Ansteuerung einer Sammelanzeige.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_160b` zeigt eine praxisnahe Implementierung einer Wendeschützschaltunglogik in IEC 61499. Durch die Kombination von SR-Latches und einem Delay-Timer wird sichergestellt, dass beim Umschalten von Links- auf Rechtslauf (ausgelöst durch Taster I2) der erste Ausgang abschaltet, bevor der zweite Ausgang nach 50ms zuschaltet. Taster I1 dient als Start für die erste Richtung, Taster I3 als Stopp für die zweite Richtung. Ausgang Q56 signalisiert, ob der Motor aktuell in Betrieb ist.

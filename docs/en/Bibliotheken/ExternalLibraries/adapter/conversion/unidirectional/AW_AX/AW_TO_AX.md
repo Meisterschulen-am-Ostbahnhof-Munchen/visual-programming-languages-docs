@@ -1,8 +1,10 @@
 # AW_TO_AX
+
 ![AW_TO_AX](./AW_TO_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The composite function block **AW_TO_AX** converts an **AW adapter** (WORD) into an **AX adapter** (BOOL). It checks whether the 16-bit value received via the AW adapter is non-zero and outputs the result as a Boolean signal via the AX adapter.
 ## Interface Structure
 
@@ -47,6 +49,7 @@ This behavior is event-driven and follows the IEC 61499 execution semantics: An 
 - If **AW_IN.D1 ≠ 0**, an event is sent to **AX_OUT.E1** and the data value **AX_OUT.D1** is set to **TRUE**.
 -
 ## Technical Features
+
 - The function block is implemented as a **composite function block**, meaning its functionality is represented by an internal network consisting of a single **F_NE** function block.
 - It uses a **unidirectional adapter** (AW and AX) according to the adapter definition of the 4diac IDE.
 - The comparison logic is taken from the IEC 61131 library (`iec61131::comparison::F_NE`).
@@ -57,11 +60,13 @@ This behavior is event-driven and follows the IEC 61499 execution semantics: An 
 The function block has **no internal state machine** (no ECC). The sequence control is derived directly from the internal network: An event at the input adapter triggers the comparison block, which in turn passes the result to the output adapter.
 
 ## Application Scenarios
+
 - **Signal Conditioning:** Conversion of a digital WORD value (e.g., from a sensor module) into a Boolean signal that indicates whether the value is non-zero.
 - **Adapter Integration:** Use in systems that require adapter-based communication between different data types (e.g., linking a WORD-based bus component with BOOL-based control logic).
 - **Threshold Check:** By changing the comparison value (in the internal block **F_NE**), the function block could also be adapted to other threshold values (e.g., "Value > 100").
 
 ## Comparison with Similar Blocks
+
 - **WORD_TO_BOOL:** Simple, direct conversion of a WORD data type to BOOL (e.g., bit 0). In contrast, **AW_TO_AX** uses adapters and performs a comparison with zero – it reacts to the entire word.
 - **Unequal Comparator (F_NE):** The **AW_TO_AX** encapsulates the **F_NE** block and adds the adapter interfaces, enabling its use in adapter-based architectures.
 
@@ -72,4 +77,5 @@ The **AW_TO_AX** is a compact yet useful composite block for converting Word ada
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

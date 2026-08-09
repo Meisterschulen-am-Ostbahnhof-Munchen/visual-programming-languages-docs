@@ -1,8 +1,10 @@
 # ADI_SPLIT_5
+
 ![ADI_SPLIT_5](./ADI_SPLIT_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ADI_SPLIT_5** is used to split an incoming ADI adapter (unidirectional) into five identical output adapters. It is designed as a generic function block (Generic FB) and can be used in IEC 61499-based systems to forward a signal or data stream to multiple subsequent function blocks.
 ## Interface Structure
 
@@ -15,11 +17,13 @@ None
 None
 
 #### **Data Inputs**
+
 - **IN** (Socket, Type: `adapter::types::unidirectional::ADI`)
 
 Input adapter that provides the signal to be distributed.
 
 ### **Data Outputs**
+
 - **OUT1** (Plug, Type: `adapter::types::unidirectional::ADI`)
 - **OUT2** (Plug, Type: `adapter::types::unidirectional::ADI`)
 - **OUT3** (Plug, Type: `adapter::types::unidirectional::ADI`)
@@ -39,6 +43,7 @@ The function block **ADI_SPLIT_5** receives an ADI adapter via the socket **IN**
 Since these are unidirectional ADI adapters, the signal is only passed from the input side to the output side; feedback from the outputs is not intended.
 
 ## Technical Features
+
 - **Generic Function Block**: The class `GEN_ADI_SPLIT` allows for flexible reuse, e.g., by parameterizing the type or number of outputs (here fixed at five).
 - **Adapter-based**: No direct event or data inputs/outputs – all signal transmission occurs via the adapter interfaces.
 - **Unidirectional**: The adapters are defined as `unidirectional`, meaning data flows only in one direction (from IN to OUT1-5).
@@ -49,6 +54,7 @@ Since these are unidirectional ADI adapters, the signal is only passed from the 
 The **ADI_SPLIT_5** has no states of its own. It is a purely combinational function block that reacts immediately to incoming adapter data and passes it on unchanged to all outputs.
 
 ## Application Scenarios
+
 - **Signal Cascade**: Distribution of a sensor signal (e.g., temperature, pressure) to multiple evaluation and control blocks.
 - **Diagnostics and Monitoring**: Simultaneous distribution of a data stream to processing and logging modules.
 - **Load Balancing**: Parallel processing of the same input using different algorithms (e.g., filters, limit monitoring, visualization).

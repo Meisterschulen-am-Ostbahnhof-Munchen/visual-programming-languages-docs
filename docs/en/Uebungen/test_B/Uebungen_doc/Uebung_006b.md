@@ -1,8 +1,10 @@
 # Exercise_006b: RS Flip-Flop with 2x IE
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006b`.
 ----
 ## Objective of the Exercise
+
 Understanding reset priority.
 
 -----

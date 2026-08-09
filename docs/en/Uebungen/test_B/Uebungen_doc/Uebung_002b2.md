@@ -1,8 +1,10 @@
 # Exercise_002b2: DigitalInput_I1/_I2/_I3 to DigitalOutput_Q1; with MOVE
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002b2`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR), using a `F_MOVE` block for explicit data forwarding.
 -----
 ## Objective of the Exercise
+
 The main objective of this exercise is the hierarchical linking of logic blocks. It demonstrates how partial results of one operation can serve as input for another operation. Additionally, the `F_MOVE` block is introduced, which is used to explicitly pass data values in a separate event step.
 
 -----
@@ -49,13 +51,9 @@ The hierarchical structure of the logic is clearly illustrated by the event chai
 The functional sequence:
 
 1. If `I1` or `I2` changes, `AND_2` calculates the partial result.
-
 2. The completion event (`CNF`) of `AND_2` triggers `F_MOVE`.
-
 3. `F_MOVE` passes the partial result to the OR block and triggers it in turn (`CNF -> REQ`).
-
 4. The OR block processes the buffered result together with the signal from `I3`.
-
 5. The output `Q1` is activated when either both first inputs are active OR when the third input is active.
 
 -----

@@ -10,15 +10,19 @@ Der Funktionsblock **AB_TO_AUI** dient als Adapter-Konverter zwischen einem AB-A
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der FB besitzt keine direkten Ereignis-Eingänge auf der obersten Ebene. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Der FB besitzt keine direkten Ereignis-Ausgänge auf der obersten Ebene. Die Ereignisweitergabe erfolgt über die angeschlossenen Adapter.
 
 ### **Daten-Eingänge**
+
 Der FB besitzt keine direkten Daten-Eingänge auf der obersten Ebene. Die Datenaufnahme erfolgt über den angeschlossenen AB-Adapter.
 
 ### **Daten-Ausgänge**
+
 Der FB besitzt keine direkten Daten-Ausgänge auf der obersten Ebene. Die Datenabgabe erfolgt über den angeschlossenen AUI-Adapter.
 
 ### **Adapter**

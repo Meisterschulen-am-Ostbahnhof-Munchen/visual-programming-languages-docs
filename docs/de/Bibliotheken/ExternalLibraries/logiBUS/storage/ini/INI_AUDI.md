@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **INI_AUDI** ermöglicht das Lesen und Speichern von UDINT-Daten aus einer `settings.ini`-Datei. Dabei wird der Zugriff auf die Datei über einen internen `INI`-Baustein realisiert. Die Kommunikation mit der Umgebung erfolgt über zwei **AUDI-Adapter** (unidirektional), die als Plug (`AUDI_OUT`) und Socket (`AUDI_IN`) ausgeführt sind. Dies erlaubt eine modulare Anbindung an andere Bausteine, die über denselben Adaptertyp verfügen.
 
 ## Schnittstellenstruktur
@@ -44,6 +45,7 @@ Der Funktionsblock **INI_AUDI** ermöglicht das Lesen und Speichern von UDINT-Da
 | AUDI_IN  | AUDI     | Socket (Eingang)| Eingang des zu speichernden Werts |
 
 ## Funktionsweise
+
 Der Baustein arbeitet mit dem internen `INI`-Funktionsblock zusammen. Die grundlegende Abfolge ist:
 
 1. **Initialisierung (`INIT`-Ereignis)**  
@@ -64,12 +66,14 @@ Der Baustein arbeitet mit dem internen `INI`-Funktionsblock zusammen. Die grundl
    - Die Statusausgänge `QO` und `STATUS` werden vom internen `INI`-Baustein direkt übernommen und stehen am Ausgang zur Verfügung.
 
 ## Technische Besonderheiten
+
 - Der Baustein verwendet den **Adapter `adapter::types::unidirectional::AUDI`**, der speziell für die gerichtete Kommunikation von Werten und Ereignissen ausgelegt ist.
 - Die Daten werden als **UDINT (Unsigned Double Integer)** verarbeitet, was eine effiziente Speicherung und Übertragung ermöglicht.
 - Der interne `INI`-Baustein stammt aus der Bibliothek `eclipse4diac::storage` und unterstützt die Standard-INI-Dateiformate.
 - Der Fallback-Mechanismus über `DEFAULT_VALUE` stellt sicher, dass auch bei fehlenden Einträgen in der INI-Datei ein definierter Wert zurückgegeben wird.
 
 ## Zustandsübersicht
+
 Da der Baustein ereignisgesteuert arbeitet, ergeben sich folgende logische Zustände:
 
 - **Idle**: Warten auf ein `INIT`-Ereignis.
@@ -81,19 +85,23 @@ Da der Baustein ereignisgesteuert arbeitet, ergeben sich folgende logische Zust�
 Der Baustein ist zustandslos im Sinne eines kontinuierlichen Datenflusses; jede Aktion wird durch ein Ereignis getriggert und synchron beendet.
 
 ## Anwendungsszenarien
+
 - **Konfigurationsverwaltung** in Automatisierungssystemen: Lesen von Einstellungen (z. B. Grenzwerte, Parameter) aus einer zentralen `settings.ini` und Zurückschreiben geänderter Werte.
 - **Adapterbasierte Sensor-/Aktor-Kopplung**: Anbindung eines Bausteins, der über den AUDI-Adapter Werte liest oder setzt, ohne die Dateizugriffslogik selbst implementieren zu müssen.
 - **Persistente Datenspeicherung**: Speichern von Zählerständen oder Maschinenzuständen in einer INI-Datei bei gleichzeitiger Kommunikation über standardisierte Adapter.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Gegenüber reinem `INI`-Baustein**: `INI_AUDI` kapselt die Adapter-Kommunikation und bietet eine höhere Abstraktion. Der Anwender muss nicht direkt mit Ereignissen und Datenverbindungen zwischen mehreren Komponenten hantieren.
 - **Gegenüber Bausteinen mit anderen Datentypen**: Der vorliegende Baustein ist auf `UDINT` spezialisiert. Für andere Datentypen (z. B. `STRING`, `REAL`) sind separate Varianten erforderlich. Die grundlegende Struktur bleibt jedoch gleich.
 - **Vorteil**: Durch die Verwendung von Adaptern (AUDI) kann der Baustein leicht gegen andere Schnittstellen ausgetauscht werden, sofern diese denselben Adaptertyp implementieren.
 
 ## Fazit
+
 Der `INI_AUDI`-Funktionsblock stellt eine kompakte und wiederverwendbare Lösung dar, um UDINT-Werte aus einer INI-Datei zu lesen und zu schreiben, wobei die Ankopplung an die Umgebung über standardisierte AUDI-Adapter erfolgt. Durch die klare Trennung von Initialisierung, Lesen und Schreiben sowie die Einbindung eines Fallback-Werts eignet er sich besonders für robuste Konfigurations- und Datenspeicherungsaufgaben in Automatisierungsumgebungen. Die einfache Struktur erleichtert die Integration in komplexe 4diac-Netzwerke.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

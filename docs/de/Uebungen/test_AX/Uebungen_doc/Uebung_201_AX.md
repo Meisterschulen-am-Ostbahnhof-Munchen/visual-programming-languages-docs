@@ -19,6 +19,7 @@ Die Übung besteht aus fünf Funktionsbausteinen im Netzwerk:
 - **DigitalOutput_Q2** – steuert den zweiten digitalen Ausgang (`Output_Q2`)
 
 ### Baustein: `DigitalInput_I1` (Typ: `logiBUS::io::DI::logiBUS_IXA`)
+
 - **Typ**: Digitaleingabe-Baustein (Adapter-Schnittstelle)
 - **Parameter**:
   - `QI` = `TRUE`
@@ -26,6 +27,7 @@ Die Übung besteht aus fünf Funktionsbausteinen im Netzwerk:
 - **Ereignisse/Adapter**: Gibt ein Adapter-Interface `IN` aus, das mit dem Interlock-Block verbunden wird.
 
 ### Baustein: `DigitalInput_I2` (Typ: `logiBUS::io::DI::logiBUS_IXA`)
+
 - **Typ**: Digitaleingabe-Baustein (Adapter-Schnittstelle)
 - **Parameter**:
   - `QI` = `TRUE`
@@ -33,6 +35,7 @@ Die Übung besteht aus fünf Funktionsbausteinen im Netzwerk:
 - **Ereignisse/Adapter**: Gibt ein Adapter-Interface `IN` aus.
 
 ### Baustein: `ILOCK_BLOCK_AX` (Typ: `logiBUS::signalprocessing::interlock::ILOCK_BLOCK_AX`)
+
 - **Typ**: Verriegelungslogik-Baustein (Adapter-basiert)
 - **Parameter**: Keine expliziten Parameter in der XML
 - **Adapter-Schnittstellen**:
@@ -43,6 +46,7 @@ Die Übung besteht aus fünf Funktionsbausteinen im Netzwerk:
 - **Funktionsweise**: Der Baustein implementiert eine gegenseitige Verriegelung. Wenn der `UP_IN`-Eingang aktiv ist, wird `UP_OUT` aktiviert und gleichzeitig `DOWN_OUT` deaktiviert (sperrt den zweiten Kanal). Wird `DOWN_IN` aktiv, schaltet der Baustein entsprechend um. Ein gleichzeitiges Aktivieren beider Ausgänge ist nicht möglich.
 
 ### Baustein: `DigitalOutput_Q1` (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
+
 - **Typ**: Digitalausgabe-Baustein (Adapter-Schnittstelle)
 - **Parameter**:
   - `QI` = `TRUE`
@@ -50,6 +54,7 @@ Die Übung besteht aus fünf Funktionsbausteinen im Netzwerk:
 - **Ereignisse/Adapter**: Empfängt ein Adapter-Interface `OUT` vom Interlock-Block.
 
 ### Baustein: `DigitalOutput_Q2` (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
+
 - **Typ**: Digitalausgabe-Baustein (Adapter-Schnittstelle)
 - **Parameter**:
   - `QI` = `TRUE`
@@ -88,4 +93,5 @@ In dieser Übung wird die gegenseitige Verriegelung zweier Ausgänge mithilfe de
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,10 +1,13 @@
 # Exercise_001c2_AX: DigitalInput_I1 negated to DigitalOutput_Q1 --> Input query on boot.
+
 ![Uebung_001c2_AX_network](./Uebung_001c2_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the negation of a digital input signal to a digital output using a logic negation adapter. Particular emphasis is placed on the initial behavior after the controller boots: event feedback ensures that the output immediately assumes the correct negated state of the input.
 ## Function Blocks (FBs) Used
+
 - **DigitalInput_I1** (Type: `logiBUS::io::DI::logiBUS_IXA`):
 
 Reads the physical digital input `Input_I1`.
@@ -26,11 +29,8 @@ An adapter function block that negates the Boolean value applied to its `IN` ada
 The data flow is implemented at the adapter level:
 
 1. The digital input `DigitalInput_I1` provides the status of the physical input as an adapter signal at its `OUT` connection.
-
 2. This signal is directly forwarded to the `IN` adapter of the negation block `AX_NOT`.
-
 3. The negated value exits `AX_NOT` via the `OUT` adapter and is passed to the `OUT` adapter of the output block `DigitalOutput_Q1`.
-
 4. `DigitalOutput_Q1` sets the physical output accordingly.
 
 **Special Feature – Initialization Behavior (Boot):**
@@ -50,4 +50,5 @@ Exercise `Uebung_001c2_AX` demonstrates a basic circuit for negating a digital i
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

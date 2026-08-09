@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe dreier Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 bietet typsichere Addition für verschiedene numerische Datentypen gemäß IEC 61131-3 Standard.
 
 ![ADD_3](ADD_3.svg)
@@ -12,17 +13,21 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit drei Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Summenergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_MAGNITUDE): Erster Summand
 - `IN2` (ANY_MAGNITUDE): Zweiter Summand
 - `IN3` (ANY_MAGNITUDE): Dritter Summand
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_MAGNITUDE): Ergebnis der Addition (IN1 + IN2 + IN3)
 
 ## Funktionsprinzip

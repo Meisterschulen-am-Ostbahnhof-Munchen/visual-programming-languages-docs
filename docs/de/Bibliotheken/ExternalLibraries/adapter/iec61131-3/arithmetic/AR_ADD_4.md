@@ -13,15 +13,19 @@ Der Funktionsblock **AR_ADD_4** ist ein generischer Baustein zur arithmetischen 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - Keine (Der Baustein arbeitet ohne explizite Ereignissteuerung.)
 
 ### **Ereignis-Ausgänge**
+
 - Keine
 
 ### **Daten-Eingänge**
+
 - Keine (Alle Eingabeoperanden werden über Adapter bereitgestellt.)
 
 ### **Daten-Ausgänge**
+
 - Keine (Das Ergebnis wird über einen Adapter ausgegeben.)
 
 ### **Adapter**
@@ -82,4 +86,5 @@ Der **AR_ADD_4** ist ein kompakter, generischer Funktionsblock zur Addition von 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

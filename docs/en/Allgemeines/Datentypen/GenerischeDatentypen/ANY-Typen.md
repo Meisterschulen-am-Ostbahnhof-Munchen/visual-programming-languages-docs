@@ -16,13 +16,14 @@ flowchart TD
     ANY_ELEMENTARY --> ANY_DATE["ANY_DATE (Date types)"]
 ```
 
-
 ## Group Descriptions
 
 ### ANY_ELEMENTARY
+
 This group includes all predefined standard data types of the standard.
 
 #### ANY_MAGNITUDE (Magnitude Types)
+
 Types that represent a magnitude and are suitable for arithmetic operations. A further distinction is made between numeric types and time durations.
 
 ```mermaid
@@ -48,11 +49,11 @@ flowchart TD
     ANY_MAG_DURATION --> LTIME
 ```
 
-
 * **ANY_NUM**: Numeric types (integers and floating-point numbers).
 * **ANY_DURATION**: Duration types (`TIME`, `LTIME`).
 
 #### ANY_BIT (Bit String Types)
+
 Types for representing bit strings.
 
 ```mermaid
@@ -64,8 +65,8 @@ flowchart TD
     ANY_BIT --> LWORD
 ```
 
-
 #### ANY_CHARS (Character Types)
+
 Types for characters and strings.
 
 ```mermaid
@@ -78,8 +79,8 @@ flowchart TD
     ANY_CHAR --> WCHAR
 ```
 
-
 #### ANY_DATE (Date Types)
+
 Types for date and time values.
 
 ```mermaid
@@ -91,11 +92,12 @@ flowchart TD
     ANY_DATE --> LTOD
 ```
 
-
 ### ANY_DERIVED
+
 This group includes all user-defined data types (e.g., `STRUCT`, `ENUM`, `ARRAY`) that are not directly derived from an elementary type.
 
 ## Usage
+
 Generic data types are primarily used in standard libraries. An example is the `ADD` function, which accepts the type `ANY_NUM` as an input and can therefore add both two `INT` and two `REAL` values.
 
 In user-defined program organizational units (POEs), the use of `ANY` types is not provided for in the standard and remains reserved for manufacturer-specific extensions.

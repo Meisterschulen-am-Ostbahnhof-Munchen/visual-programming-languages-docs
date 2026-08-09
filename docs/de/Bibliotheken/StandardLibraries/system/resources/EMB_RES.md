@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Eine grundlegende Embedded-Ressource für die Ausführung von Funktionsblock-Netzwerken. Sie beinhaltet standardmäßig einen E_RESTART Funktionsblock für Start/Stopp-Ereignisse.
 
 ## Metadaten
@@ -17,4 +18,5 @@ Eine grundlegende Embedded-Ressource für die Ausführung von Funktionsblock-Net
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

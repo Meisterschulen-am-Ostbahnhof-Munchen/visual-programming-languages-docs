@@ -13,26 +13,32 @@ Der Funktionsbaustein `ALI_ADD_4` ist ein generischer arithmetischer Funktionsba
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung wird vollständig über die angeschlossenen Adapter abgewickelt.*
 
 ### **Ereignis-Ausgänge**
+
 *Der Baustein besitzt keine direkten Ereignis-Ausgänge. Die Weiterleitung von Ereignissen erfolgt über den Ausgangs-Adapter.*
 
 ### **Daten-Eingänge**
+
 *Der Baustein besitzt keine direkten Daten-Eingänge. Die Datenübergabe erfolgt über die Eingangs-Adapter (Sockets).*
 
 ### **Daten-Ausgänge**
+
 *Der Baustein besitzt keine direkten Daten-Ausgänge. Die Datenausgabe erfolgt über den Ausgangs-Adapter (Plug).*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::ALI`): Erster Summand für die Addition.
 *   **IN2** (Typ: `adapter::types::unidirectional::ALI`): Zweiter Summand für die Addition.
 *   **IN3** (Typ: `adapter::types::unidirectional::ALI`): Dritter Summand für die Addition.
 *   **IN4** (Typ: `adapter::types::unidirectional::ALI`): Vierter Summand für die Addition.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::ALI`): Ausgabe des berechneten Additionsergebnisses.
 
 ---

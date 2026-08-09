@@ -1,7 +1,10 @@
 # MULTIME
+
 multiplies a time by a real number and returns a time
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | REQ | | TM, MM |
@@ -26,5 +29,5 @@ multiplies a time by a real number and returns a time
 | | TIME | |
 
 ## 🛠️ Related exercises
-* [Uebung_020c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
 
+* [Uebung_020c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)

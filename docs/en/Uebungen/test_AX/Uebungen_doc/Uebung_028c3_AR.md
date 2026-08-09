@@ -1,13 +1,16 @@
 # Exercise_028c3_AR: Analog Input Calibration with INI Adapter and Hysteresis Controller at Output and Display
+
 ![Uebung_028c3_AR_network](./Uebung_028c3_AR_network.svg)
 
 * * * * * * * * * *
 This exercise demonstrates the calibration of an analog input (AnalogInput_I7) using a calibration adapter (AR_CALIBRATE) that loads an offset and a scaling factor from an INI file. The calibrated signal is passed to a hysteresis controller (Hysteresis_AR_AX), which switches a digital output (Output_Q2). Simultaneously, the calibrated value is displayed on a screen (Q_NumericValue_PHYSA). The exercise uses two inputs (I2, I3) to trigger the calibration and another input (I1) as an enable signal.
 
-
 ## Function Blocks Used (FBs)
+
 ## Introduction
+
 ### Sub-Blocks: None (all FBs are system-defined)
+
 - **AnalogInput_I7** (Type: `logiBUS::io::AI::logiBUS_AI_IDA`)
 - **Internal Parameters Used**: `AnalogInput_hysteresis = 50`, `TimeDelta = 250`, `TimeRateLimit = 100`
 - **Functionality**: Reads the physical analog value (e.g., voltage) from input I7. The parameters define hysteresis, sampling time, and rate limit.
@@ -51,25 +54,16 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - **Functionality**: Converts a constant real value into an AR signal. Serves as the threshold (THRESHOLD = 50.5) and hysteresis width (HYSTERESIS = 15.3) for the hysteresis controller.
 - **INIT** (Type: `iec61131::bitwiseOperators::INIT`)
 - **Functionality**: Generates a one-time initialization event (INITO) at system startup. This event triggers the two AR_REAL_TO_R blocks to set the constant values.
-
-
 1. **Initialization**: At startup, the INIT block triggers the two AR_REAL_TO_R blocks, which set the constant threshold values (50.5 and 15.3) on the analog bus.
-
 2. **Analog Value Acquisition**: The AnalogInput_I7 reads the raw value from input I7. This raw value is transferred to the CALIBRATE block via the conversion chain AD_TO_AUDI and AUDI_TO_AR.
-
 3. **Calibration**: The digital inputs I2 (CO) and I3 (CS) control the calibration:
-
 - When CS (I3 = TRUE), a new calibration cycle is started: The current raw value (X) is measured, and the offset and scaling are calculated.
 - When CO (I2 = TRUE), the calculated values are written to the INI file (via INI_OFFSET and INI_SCALE).
 - The calibrated output Y is routed to the splitter AR_SPLIT_2.
-
 4. **Signal Distribution**:
-
 - AR_SPLIT_2.OUT1 routes the calibrated value to the display (Q_NumericValue_PHYSA).
 - AR_SPLIT_2.OUT2 routes the calibrated value to the hysteresis controller (Hysteresis_AR_AX).
-
 5. **Hysteresis Control**: The hysteresis controller compares the calibrated input value with the threshold (50.5) and the hysteresis value (15.3). The output becomes active when the value exceeds 50.5 + 15.3/2 (depending on the implementation; typically: activation at > 50.5, reset at < 50.5 - 15.3), and switches the digital output Q2.
-
 6. **Enable Signal**: The digital input I1 is routed via the splitter AX_SPLIT_2 to output Q1 (directly forwarded) and simultaneously to AnalogInput_I7 (as a trigger for the measurement). Therefore, the analog value can only be read when I1 is active.
 
 **Note**: Comments on the network indicate that the double conversion (AD_TO_AUDI → AUDI_TO_AR) is necessary to ensure correct signal representation. A direct AD_TO_AR would perform the bit interpretation of the analog-to-digital converter without going through the audio bus, which can lead to incorrect values.
@@ -86,5 +80,7 @@ The exercise "Exercise_028c3_AR" implements a complete analog input calibration 
 ]
 
 ## Program Flow and Connections
+
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

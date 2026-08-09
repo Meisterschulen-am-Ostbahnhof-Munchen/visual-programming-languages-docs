@@ -7,21 +7,26 @@
 ![F_SUB_DT_DT](F_SUB_DT_DT.svg)
 
 ## Einführung
+
 Der **F_SUB_DT_DT** ist ein standardkonformer Funktionsbaustein zur präzisen Berechnung von Zeitdifferenzen zwischen zwei Zeitstempeln (DATE_AND_TIME), entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht mikrosekundengenaue Zeitintervallberechnungen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Start- und Endzeitstempel)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Zeitdifferenz)
 
 ### **Daten-Eingänge**
+
 - `IN1` (DATE_AND_TIME): Startzeitpunkt (Minuend)
 - `IN2` (DATE_AND_TIME): Endzeitpunkt (Subtrahend)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (TIME): Berechnetes Zeitintervall (IN1 - IN2)
 
 ## Funktionsprinzip

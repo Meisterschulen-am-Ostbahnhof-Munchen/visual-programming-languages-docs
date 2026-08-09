@@ -1,12 +1,15 @@
 # Exercise_004b4c: Three Mutually Interlocked Toggle Flip-Flops in a Chain via AE2 Adapter
+
 ![Uebung_004b4c_network](./Uebung_004b4c_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates a chain of three mutually interlocked toggle flip-flops. Each flip-flop is toggled by its own single-click button. The interlocking ensures that only one output is active at any given time – similar to a ring counter with mutual locking. The connection between the individual stages is made via a bidirectional AE2 adapter, so that only a single connection per link is sufficient for all communication.
 The hardware consists of three digital inputs (I1, I2, I3) and three digital outputs (Q1, Q2, Q3). The active output can be advanced by repeatedly pressing a button.
 
 ## Function Blocks Used (FBs)
+
 - **logiBUS::io::DI::logiBUS_IE**: Digital input with event triggering.
 - Parameters: QI = TRUE (input active), Input = corresponding hardware input (Input_I1, _I2, _I3), InputEvent = BUTTON_SINGLE_CLICK.
 - **logiBUS::io::DQ::logiBUS_QX**: Digital output.
@@ -14,6 +17,7 @@ The hardware consists of three digital inputs (I1, I2, I3) and three digital out
 - **SubApp Uebung_004b3c_sub** (instantiated three times here): Core block of the exercise. It implements a toggle flip-flop with mutual interlocking.
 
 ### Sub-Blocks: Exercise_004b3c_sub
+
 - **Type**: SubApp (`Uebungen::Uebung_004b3c_sub`)
 - **Internal Structure** (assumed, based on the task description):
 - **Internal Function Blocks Used** (not visible in the XML, but conceptually relevant):
@@ -51,6 +55,7 @@ Exercise **Exercise_004b4c** illustrates the implementation of a mutually interl
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

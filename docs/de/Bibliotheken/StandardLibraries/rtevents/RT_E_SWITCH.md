@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Echtzeit-Variante des E_SWITCH Bausteins. Schaltet den Ereignisfluss ein oder aus.
 
 ![RT_E_SWITCH](RT_E_SWITCH.svg)
@@ -18,4 +19,5 @@ Echtzeit-Variante des E_SWITCH Bausteins. Schaltet den Ereignisfluss ein oder au
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

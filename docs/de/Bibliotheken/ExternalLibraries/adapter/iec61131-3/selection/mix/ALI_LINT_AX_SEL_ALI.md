@@ -6,23 +6,29 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsbaustein `ALI_LINT_AX_SEL_ALI` dient der binären Auswahl (Selektion) zwischen zwei Eingangswerten vom Typ `LINT` (Large Integer). Die Steuerung, welcher der beiden Werte an den Ausgang durchgeschaltet wird, erfolgt über einen binären Selektor. Der Baustein kombiniert die klassische Auswahllogik der IEC 61131-3 mit der ereignisgesteuerten Architektur der IEC 61499 unter Verwendung von anwendungsspezifischen Adaptern zur Signalübertragung.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 * **EI1**: Löst die Übernahme des Daten-Eingangswerts `IN1` aus.
 
 ### **Ereignis-Ausgänge**
+
 * *Keine direkten Ereignis-Ausgänge auf Bausteinebene vorhanden.* Die Ereignisweiterleitung erfolgt gekapselt über die Adapter-Schnittstellen (z. B. `OUT.E1`).
 
 ### **Daten-Eingänge**
+
 * **IN1** (LINT): Selektierbarer Eingangswert 1 (Alternative 1).
 
 ### **Daten-Ausgänge**
+
 * *Keine direkten Daten-Ausgänge auf Bausteinebene vorhanden.* Die Datenausgabe erfolgt gekapselt über den Ausgangs-Adapter.
 
 ### **Adapter**
+
 * **OUT** (Plug, Typ: `adapter::types::unidirectional::ALI`): Der ausgewählte Ausgangswert (Selected Output).
 * **IN0** (Socket, Typ: `adapter::types::unidirectional::ALI`): Selektierbarer Eingangswert 0 (Alternative 0).
 * **G** (Socket, Typ: `adapter::types::unidirectional::AX`): Binärer Selektor (Gate), der bestimmt, welcher der beiden Eingänge (`IN0` oder `IN1`) zum Ausgang durchgeschaltet wird.
@@ -30,6 +36,7 @@ Der Funktionsbaustein `ALI_LINT_AX_SEL_ALI` dient der binären Auswahl (Selektio
 ---
 
 ## Funktionsweise
+
 Der Baustein arbeitet intern als ereignisgesteuerter Multiplexer:
 
 1. **Signalspeicherung (Latching):** Sobald an den Eingängen (`IN0`, `IN1` oder `G`) Ereignisse eintreffen, werden die anliegenden Datenwerte über interne D-Flip-Flops (`E_D_FF` und `E_D_FF_ANY`) zwischengespeichert. Dies stellt sicher, dass die Daten konsistent bleiben und nur bei aktiven Events aktualisiert werden.
@@ -42,6 +49,7 @@ Der Baustein arbeitet intern als ereignisgesteuerter Multiplexer:
 ---
 
 ## Technische Besonderheiten
+
 * **Einsatz von Adaptern:** Durch die Verwendung von Sockets und Plugs wird die Anzahl der notwendigen Verbindungen im übergeordneten Systemdiagramm stark reduziert.
 * **Datentypspezifisch:** Der Baustein ist speziell für den Datentyp `LINT` (64-Bit Ganzzahl) optimiert.
 * **Flanken- und Event-Synchronisation:** Die interne Logik stellt sicher, dass jede Änderung an den Eingängen deterministisch verarbeitet wird und nur gültige Zustandsänderungen ein Event am Ausgang `OUT` hervorrufen.
@@ -62,12 +70,14 @@ Der Baustein arbeitet intern als ereignisgesteuerter Multiplexer:
 ---
 
 ## Anwendungsszenarien
+
 * **Umschaltung von Signalquellen:** Dynamische Auswahl zwischen einem Standard-Sensormesswert (über `IN0` als Adapter) und einem manuell vorgegebenen Substitutionswert oder Parameter (über `IN1` als Direkteingang).
 * **Betriebsartenwahl:** Umschalten von Sollwerten (z. B. Rezepturnummern, Zählergrenzen) im `LINT`-Format basierend auf dem aktuellen Anlagenstatus (Automatik-/Handbetrieb über Selektor `G`).
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einem einfachen IEC 61131-3 `F_SEL`-Baustein bietet der `ALI_LINT_AX_SEL_ALI`:
 * Eine vollständige Integration in die ereignisgesteuerte IEC 61499-Umgebung.
 * Reduzierten Verdrahtungsaufwand durch die Kapselung von Events und Daten in den Adaptern `ALI` und `AX`.
@@ -76,4 +86,5 @@ Im Vergleich zu einem einfachen IEC 61131-3 `F_SEL`-Baustein bietet der `ALI_LIN
 ---
 
 ## Fazit
+
 Der Baustein `ALI_LINT_AX_SEL_ALI` ist eine spezialisierte und performante Lösung für die bedingte Signalweiterleitung von 64-Bit-Ganzzahlwerten. Durch seine adapterbasierte Schnittstelle fördert er ein sauberes, modulares und gut lesbares Applikationsdesign in 4diac-IDE.

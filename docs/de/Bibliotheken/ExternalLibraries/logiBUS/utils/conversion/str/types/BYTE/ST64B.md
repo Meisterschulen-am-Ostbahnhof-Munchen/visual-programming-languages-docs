@@ -2,18 +2,23 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Datentyp `ST64B` ist ein strukturierter Datentyp, der zur Kapselung von 64 einzelnen Byte-Werten dient. Er wurde entwickelt, um eine feste Datenstruktur von 64 Bytes bereitzustellen, die für verschiedene Anwendungsfälle genutzt werden kann, bei denen eine exakt definierte Größe und direkter Zugriff auf einzelne Bytes erforderlich ist. Die ursprüngliche XML-Definition enthielt einen Kommentar, der fälschlicherweise 16 Bytes angab; korrekt sind 64 Bytes.
 
 ## Strukturdefinition
+
 Der Datentyp `ST64B` ist eine zusammengesetzte Struktur, die ausschließlich aus einzelnen Byte-Variablen besteht. Er besitzt keine ereignis- oder adapterbasierten Schnittstellen, da es sich um eine reine Datenstruktur handelt.
 
 ### **Ereignis-Eingänge**
+
 Nicht zutreffend, da `ST64B` ein Datentyp und kein Funktionsblock ist.
 
 ### **Ereignis-Ausgänge**
+
 Nicht zutreffend, da `ST64B` ein Datentyp und kein Funktionsblock ist.
 
 ### **Daten-Bestandteile**
+
 Die Struktur `ST64B` setzt sich aus den folgenden 64 Byte-Variablen zusammen:
 
 | Name | Typ | Beschreibung |
@@ -84,21 +89,27 @@ Die Struktur `ST64B` setzt sich aus den folgenden 64 Byte-Variablen zusammen:
 | B\_63 | BYTE | BYTE 63 |
 
 ### **Daten-Ausgänge**
+
 Nicht zutreffend, da `ST64B` ein Datentyp ist und seine Bestandteile nicht als "Ausgänge" im Sinne eines Funktionsblocks fungieren.
 
 ### **Adapter**
+
 Nicht zutreffend, da `ST64B` ein Datentyp und kein Funktionsblock ist.
 
 ## Funktionsweise
+
 Als strukturierter Datentyp hat `ST64B` keine eigene "Funktionsweise" im Sinne eines aktiven Verhaltens oder einer Logik. Seine primäre Funktion ist es, einen Speicherbereich von 64 Bytes zu definieren und diesen in einer organisierten Form zugänglich zu machen. Dies ermöglicht die Adressierung einzelner Bytes innerhalb der Struktur über ihre benannten Variablen (z.B. `ST64B.B_00`, `ST64B.B_15`). Es dient als passiver Datencontainer.
 
 ## Technische Besonderheiten
+
 Die Hauptbesonderheit von `ST64B` ist seine feste Größe von exakt 64 Bytes. Jedes Byte ist einzeln über einen eindeutigen Variablennamen ansprechbar. Dies macht ihn ideal für Situationen, in denen eine strikte Datengröße und eine byteweise Manipulation des Inhalts erforderlich sind, wie z.B. bei der Verarbeitung von Kommunikationsprotokollen oder Hardware-Registern. Die sequentielle Benennung der Variablen vereinfacht die Zuordnung zu einem durchgehenden Speicherbereich.
 
 ## Zustandsübersicht
+
 Als reiner Datentyp besitzt `ST64B` keine Zustände im Sinne einer Zustandsmaschine oder eines Funktionsblocks. Der "Zustand" eines `ST64B`-Instanz wird ausschließlich durch die aktuellen Werte der 64 enthaltenen Byte-Variablen definiert. Jede Kombination dieser Werte stellt einen gültigen Datenzustand der Struktur dar.
 
 ## Anwendungsszenarien
+
 `ST64B` eignet sich hervorragend für folgende Anwendungsszenarien:
 
 *   **Kommunikationspuffer:** Als Standardpuffer für Nachrichten oder Pakete mit einer festen Größe von 64 Bytes, z.B. in CAN-Bus-Nachrichten (wenn mehrere Frames benötigt werden), serieller Kommunikation oder anderen Protokollen.
@@ -107,10 +118,12 @@ Als reiner Datentyp besitzt `ST64B` keine Zustände im Sinne einer Zustandsmasch
 *   **Generische Datenblöcke:** Handhabung von generischen Datenblöcken fester Größe, die flexibel interpretiert werden können, z.B. als Teil größerer Protokolle oder Datenstrukturen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 `ST64B` ist ein grundlegender Datentyp und kann nicht direkt mit Funktionsblöcken verglichen werden. Innerhalb der Datentypen ist er vergleichbar mit:
 
 *   **Anderen strukturierten Datentypen:** `ST64B` ist eine spezifische Instanz eines `StructuredType`. Es gibt ähnliche Strukturen mit unterschiedlicher Anzahl oder Art von Elementen (z.B. Strukturen mit 8, 16, 32 Bytes oder solche, die Integers, Booleans usw. enthalten). `ST64B` zeichnet sich durch seine rein byteweise Aufteilung aus.
 *   **Arrays von BYTE:** Ein Array vom Typ `ARRAY[0..63] OF BYTE` würde ebenfalls 64 Bytes speichern. Der Unterschied besteht in der Zugriffsweise: Bei `ST64B` erfolgt der Zugriff über benannte Member (z.B. `myST64B.B_10`), während bei einem Array der Zugriff über einen Index erfolgt (z.B. `myArray[10]`). Die benannten Member können in bestimmten Kontexten für eine klarere Lesbarkeit des Codes oder für die direkte Adressierung spezifischer Byte-Positionen vorteilhaft sein.
 
 ## Fazit
+
 `ST64B` ist ein einfacher, aber mächtiger strukturierter Datentyp, der eine feste Datenmenge von 64 Bytes bereitstellt. Seine Stärke liegt in der klaren Definition und der direkten Zugänglichkeit jedes einzelnen Bytes, was ihn zu einer ausgezeichneten Wahl für Anwendungen macht, die eine präzise Steuerung und Interpretation von Rohdatenblöcken erfordern, insbesondere im Bereich der Kommunikation und Hardware-Interaktion.

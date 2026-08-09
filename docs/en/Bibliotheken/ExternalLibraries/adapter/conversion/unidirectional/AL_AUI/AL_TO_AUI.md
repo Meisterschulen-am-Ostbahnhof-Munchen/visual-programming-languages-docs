@@ -1,21 +1,27 @@
 # AL_TO_AUI
+
 ![AL_TO_AUI](./AL_TO_AUI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AL_TO_AUI** function block is a composite component that converts an LWORD adapter (AL) into a UINT adapter (AUI). It enables the seamless integration of LWORD-based interfaces into systems that expect UINT data by encapsulating the conversion within a standardized adapter structure.
 ## Interface Structure
 
 ### **Event Inputs**
+
 No standalone event inputs. The **AL_IN** socket provides the trigger signal for the conversion via its event output `E1`.
 
 #### **Event Outputs**
+
 No standalone event outputs. The plug **AUI_OUT** provides confirmation of the completed conversion via its event input `E1`.
 
 ### **Data Inputs**
+
 No standalone data inputs. The socket **AL_IN** provides the value to be converted to `LWORD` via its data output `D1`.
 
 ### **Data Outputs**
+
 No standalone data outputs. The plug **AUI_OUT** provides the converted `UINT` value via its data input `D1`.
 
 ### **Adapter**
@@ -30,11 +36,8 @@ No standalone data outputs. The plug **AUI_OUT** provides the converted `UINT` v
 The module consists of an internal network with a single conversion module `F_LWORD_TO_UINT` from the IEC 61131 library. The process is strictly event-driven:
 
 1. An event at socket `AL_IN.E1` is forwarded to the `REQ` input of the conversion module.
-
 2. The conversion block reads the date from `AL_IN.D1` (type `LWORD`) and converts it to a `UINT` value according to IEC 61131 rules.
-
 3. After the conversion is complete, the block generates an event at its `CNF` output, which is directly passed to the plug `AUI_OUT.E1`.
-
 4. Simultaneously, the converted value is passed from the data output `OUT` to the data input `AUI_OUT.D1`.
 
 This completes the entire conversion in a single, unidirectional pass.
@@ -58,6 +61,7 @@ Since this is a composite block without its own state machine, the state logic i
 A detailed state description of the conversion block can be found in the IEC 61131 documentation.
 
 ## Application Scenarios
+
 - **Sensor Data Connection**: A sensor provides values in LWORD format (e.g., 64-bit counter readings), which are fed into the system via an AL adapter. The `AL_TO_AUI` function block converts these values into UINT (16-bit) for transmission to a controller with a UINT interface.
 - **Protocol Conversion**: In modular adapter chains, the function block serves as an intermediate stage to switch from LWORD-based to UINT-based subsystems without requiring changes to the original adapter logic.
 - **Data Reduction**: If the upper 48 bits of an LWORD value are not needed, the function block can selectively extract only the lower 16 bits as UINT (according to IEC 61131 conversion rules).

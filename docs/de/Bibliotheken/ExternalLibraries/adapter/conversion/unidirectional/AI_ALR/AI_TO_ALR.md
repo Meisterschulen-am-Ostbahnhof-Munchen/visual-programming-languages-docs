@@ -10,22 +10,27 @@ Der Funktionsblock **AI_TO_ALR** ist ein Composite-Baustein, der einen **AI (Ada
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Das Ereignis wird über den Socket‑Adapter `AI_IN` empfangen:
 
 - **AI_IN.E1** – Ereignis des INT-Adapters (Eingang).
 
 ### **Ereignis-Ausgänge**
+
 Auch hier gibt es keine direkten Ereignis-Ausgänge. Das Ereignis wird über den Plug‑Adapter `ALR_OUT` gesendet:
 
 - **ALR_OUT.E1** – Ereignis des LREAL-Adapters (Ausgang).
 
 ### **Daten-Eingänge**
+
 - **AI_IN.D1** – Datenwert vom Typ INT (über den Adapter).
 
 ### **Daten-Ausgänge**
+
 - **ALR_OUT.D1** – Datenwert vom Typ LREAL (über den Adapter).
 
 ### **Adapter**
+
 - **AI_IN** (Socket) – Adapter vom Typ `AI` (INT‑Adapter), Eingangsschnittstelle.
 - **ALR_OUT** (Plug) – Adapter vom Typ `ALR` (LREAL‑Adapter), Ausgangsschnittstelle.
 
@@ -66,4 +71,5 @@ Der Baustein **AI_TO_ALR** ist ein minimalistischer, aber effektiver Composite�
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

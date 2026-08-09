@@ -1,8 +1,10 @@
 # AX_TLIM
+
 ![AX_TLIM](./AX_TLIM.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AX_TLIM** function block is a time-limiting timer according to IEC 61499-2. It monitors a Boolean input signal provided via a unidirectional **AX adapter**. As long as the signal is active (TRUE), the output remains active – but only for a predefined time. If the activation duration exceeds the limit, the output is reset (timeout). A separate event input allows the time limit to be preset without triggering a new execution.
 ## Interface Structure
 
@@ -41,13 +43,9 @@ Direct data outputs are not available. The current timer status is output via th
 
 > Note: The adapter type `AX` is a standard unidirectional adapter consisting of an event (`E1`) and a Boolean date (`D1`).
 
-
 1. **Initial State** – The output variable `Q.D1` is `FALSE`; the timer is not running.
-
 2. **Activation** – As soon as the input adapter `IN` delivers an event (`E1`) with the date `TRUE`, `Q.D1` is immediately set to `TRUE`, and an internal timer is started.
-
 3. **Time Monitoring** – The timer counts the time that `IN.D1` remains on `TRUE`. The timer uses the value last set via `EIPT`, `PT`.
-
 - *Case A:* If `IN.D1` becomes `FALSE` before `PT` expires, then `Q.D1` is immediately set to `FALSE`.
 - *Case B:* If `IN.D1` remains on `TRUE` longer than `PT`, then after `PT` expires, `Q.D1` is set to `FALSE` (timeout).
 
@@ -56,6 +54,7 @@ Direct data outputs are not available. The current timer status is output via th
 5. **Default** – The event `EIPT` resets the time limit `PT` without affecting the current timer execution. Only the next activation of the timer (by `IN.E1` with `TRUE`) uses the new value.
 
 ## Technical Features
+
 - The function block is implemented as a **composite FB**; internally, it uses the standard FB `E_TLIM` (from `iec61499::events::timers`). The underlying logic is identical, but the interface is provided via unidirectional **AX adapters**.
 - The use of an adapter socket (`IN`) and an adapter plug (`Q`) enables a clean separation of event and data communication and simplifies integration with other function blocks using compatible adapters.
 - The timer is triggered **on an edge**: Only a rising edge on `IN.D1` starts a new timer cycle. A subsequent event on `IN.E1` with `TRUE` during a running timer does not reset the timer (unless the value briefly goes to `FALSE` and then back to `TRUE`).
@@ -74,6 +73,7 @@ The function block cycles through the following logical states (not explicitly r
 A switch from **Active** to **Timeout** occurs when the remaining timer time reaches zero. A switch from **Active** to **Revert** occurs when `IN.D1` changes to `FALSE` before the timer expires.
 
 ## Application Scenarios
+
 - **Actuator Monitoring** – e.g., checking whether a valve remains open longer than permitted.
 - **Safety Functions** – Switching off a signal after a maximum activation time.
 - **Time-Based Plausibility Check** – Detection of a stuck sensor that continuously reports `TRUE`.

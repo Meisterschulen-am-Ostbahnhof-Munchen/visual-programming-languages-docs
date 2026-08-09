@@ -1,9 +1,11 @@
 # ASR_SPLIT_8
+
 ![ASR_SPLIT_8](./ASR_SPLIT_8.svg)
 *(Insert image of function block here)*
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ASR_SPLIT_8` is used to distribute a single incoming **ASR** adapter signal unchanged to eight identical outputs. It is defined as a generic function block and is particularly suitable for applications where a sensor or control signal is required multiple times – for example, in agricultural automation technology.
 
 ## Interface Structure
@@ -45,6 +47,7 @@ The `ASR_SPLIT_8` block represents a **1-to-8 signal distribution** for the ASR 
 Since the adapter type `ASR` is defined as unidirectional, data flows only from the socket to the plugs. Changes to the input signal immediately affect all outputs.
 
 ## Technical Features
+
 - **Generic Type Parameterization**: The function block (FB) has the attributes `eclipse4diac::core::GenericClassName` (value `'GEN_ASR_SPLIT'`) and `eclipse4diac::core::TypeHash`, which enable the use of a generic ASR data type. This allows the block to be reused for various ASR subtypes.
 - **No Event Control**: The block contains no event inputs or outputs; signal transmission occurs exclusively via the adapter interfaces. This simplifies integration into static data flows.
 - **No Internal Behavior**: There is no state machine or algorithm – functionality is limited to the pure wiring logic of the 4diac IDE.
@@ -54,6 +57,7 @@ Since the adapter type `ASR` is defined as unidirectional, data flows only from 
 The `ASR_SPLIT_8` has **no internal states**. The output is a direct function of the input signal at any given time. The block behaves like passive wiring (sterile splitter) without any memory or delay effects.
 
 ## Application Scenarios
+
 - **Distribution of a sensor signal** (e.g., speed, pressure, or position) to multiple parallel control loops or display units.
 - **Dividing a control command** to multiple actuators in an agricultural machine, such as the simultaneous control of several valves or drives.
 - **Monitoring and Logging**: A signal can be routed to a controller via one output and to a diagnostic system via a second output.
@@ -75,6 +79,7 @@ The `ASR_SPLIT_8` is a simple yet efficient component for distributing an ASR si
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

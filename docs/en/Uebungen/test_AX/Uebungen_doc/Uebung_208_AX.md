@@ -1,4 +1,5 @@
 # Exercise_208_AX: Interlock: ILOCK_FB_SR_AX (Two mutually interlocked set-dominant latches via AX/AX2 adapter)
+
 ![Uebung_208_AX_network](./Uebung_208_AX_network.svg)
 
 - **Title**: Exercise_208_AX
@@ -12,6 +13,7 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: DigitalInput_S1, DigitalInput_R1, DigitalInput_S2, DigitalInput_R2
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Internal FBs Used**: None (Hardware Adapter Block)
 - **Parameters**:
@@ -20,6 +22,7 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 - **Functionality**: These blocks read the digital input signals from the logiBUS hardware and output them via the adapter output. The following sub-function blocks are available: `IN`. They serve as an interface to the physical inputs.
 
 ### Sub-function blocks: ILOCK_SR_1, ILOCK_SR_2
+
 - **Type**: `logiBUS::signalprocessing::interlock::ILOCK_FB_SR_AX`
 - **Internal Function Blocks Used**: None (predefined interlock block)
 - **Parameters**: None (default configuration)
@@ -33,6 +36,7 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 Interlocking means that an active `ILOCK_IN` prevents its own latch from being set. Therefore, only one of the two latches can be set at any given time.
 
 ### Sub-Blocks: DigitalOutput_Q1, DigitalOutput_Q2
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Internal Function Blocks Used**: None (Hardware Adapter Block)
 - **Parameters**:
@@ -63,11 +67,8 @@ The output `ILOCK_SR_1.ILOCK_OUT` is connected to the input `ILOCK_SR_2.ILOCK_IN
 **Procedure**:
 
 1. If a TRUE signal is present at `S1` (and `ILOCK_SR_1` is not blocked by `ILOCK_SR_2`), then `Q1` is set.
-
 2. If a TRUE signal is present at `S2` (and `ILOCK_SR_2` is not blocked by `ILOCK_SR_1`), then `Q2` is set.
-
 3. A reset via `R1` or `R2` resets the respective latch.
-
 4. Due to the interlock, `Q1` and `Q2` can never be TRUE simultaneously. Attempting to set the blocked latch will be ineffective.
 
 **Learning Objectives**:
@@ -86,6 +87,7 @@ Exercise `Uebung_208_AX` demonstrates how to create a mutual interlock between t
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

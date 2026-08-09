@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Funktionsblock zur Erfassung von Encoder-Impulsdaten. Er ist für die Verarbeitung eines 7A+8A-Encoder-Paares ausgelegt und gibt den aktuellen Zählerstand sowie Statusinformationen aus. Die Initialisierung erfolgt über Parameter wie die Knotenadresse (SA-Member), die Eingangskonfiguration sowie Schwellwerte für impuls- und zeitbasierte Ereignisauslösung.
 
 ## Schnittstellenstruktur
@@ -43,9 +44,11 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 | IN | DWORD | Aktueller Encoder-Zählerwert |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 1. **Initialisierung (INIT → INITO)**  
    Der Baustein wird mit den Parametern `PARAMS`, der Knotenadresse `u8SAMember`, der Eingangsspezifikation `Input` sowie den Schwellwerten `ImpulseDelta` und `TimeDelta` konfiguriert. Nach erfolgreicher Initialisierung wird das Ereignis `INITO` mit `QO` und `STATUS` quittiert.
 
@@ -58,6 +61,7 @@ Keine.
 Der Ausgang `IN` enthält zu jedem Ereignis (CNF und IND) den aktuellen 32-Bit-Zählerwert des Encoders.
 
 ## Technische Besonderheiten
+
 - **Benutzerdefinierte Typen**: Der Eingang `Input` basiert auf dem Datentyp `DataPanel_MI_DI_S`, der eine spezifische Eingangskonfiguration (z. B. 7A) erwartet. Der Konstantwert `Invalid` dient als Platzhalter für nicht definierte Eingänge.
 - **Konfigurierbare Ereignisauslösung**: Durch kombinierte Nutzung von `ImpulseDelta` und `TimeDelta` kann das System entweder nach einer bestimmten Impulsanzahl, nach einer Zeitspanne oder nach dem zuerst eintretenden Ereignis (UND-Verknüpfung) einen IND auslösen.
 - **Knotenadressierung**: Über `u8SAMember` (Wertebereich 224–239) wird der physikalische Knoten im Bus-System ausgewählt. Der Initialwert `MI::MI_00` verweist auf eine Konstante des Moduls `MI`.
@@ -74,11 +78,13 @@ Der Ausgang `IN` enthält zu jedem Ereignis (CNF und IND) den aktuellen 32-Bit-Z
 Die tatsächliche Zustandsmaschine ist im vorliegenden Code nicht explizit abgebildet; die dargestellten Zustände leiten sich aus dem typischen Verhalten von Service-Interface-FBs ab.
 
 ## Anwendungsszenarien
+
 - **Landmaschinensteuerung**: Erfassung von Drehzahlen an Antriebswellen über Inkrementalgeber (7A+8A-Paar) zur Überwachung und Regelung von Arbeitsprozessen.
 - **Positionserfassung**: Verwendung als Impulszähler zur Wegmessung, z. B. für Fahrantriebe oder Stellglieder.
 - **Ereignisgesteuerte Datenerfassung**: Durch die konfigurierbaren IND-Schwellen können Lastspitzen im Datenverkehr vermieden und Logging-Aufgaben optimiert werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Gegenüber einfachen Encoder-Zählern bietet der DataPanel_MI_ID_ENC:
 
 - **Flexible Auslösekriterien**: Statt nur auf Polling angewiesen zu sein, können Impuls- oder Zeit-Schwellwerte gesetzt werden.
@@ -86,4 +92,5 @@ Gegenüber einfachen Encoder-Zählern bietet der DataPanel_MI_ID_ENC:
 - **Ereignisbasierte Ausgabe**: Die Trennung von `CNF` (synchron zur Anfrage) und `IND` (asynchron) erlaubt eine entkoppelte Verarbeitung in höheren Steuerungsebenen.
 
 ## Fazit
+
 Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein leistungsfähiger Service-Interface-Baustein für die Encoder-Datenerfassung in industriellen Steuerungssystemen. Durch seine parametrierbaren Schwellwerte und die Unterstützung sowohl synchroner als auch asynchroner Ereignisse eignet er sich besonders für Echtzeitanwendungen in der Landtechnik. Die klare Schnittstellendefinition und die Verwendung spezifischer Datentypen ermöglichen eine einfache Integration in bestehende Automatisierungsumgebungen.

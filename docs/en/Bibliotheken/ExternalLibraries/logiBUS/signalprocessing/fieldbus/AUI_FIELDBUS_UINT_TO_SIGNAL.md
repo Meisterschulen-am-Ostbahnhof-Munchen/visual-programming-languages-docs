@@ -1,8 +1,10 @@
 # AUI_FIELDBUS_UINT_TO_SIGNAL
+
 ![AUI_FIELDBUS_UINT_TO_SIGNAL](./AUI_FIELDBUS_UINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUI_FIELDBUS_UINT_TO_SIGNAL** forwards a fieldbus signal encoded as `UINT` to a downstream AUI adapter, provided the signal is recognized as valid. It also provides a separate validity indicator (`VALID`). The block encapsulates a data converter and an edge-triggered D flip-flop, which buffers the validity signal until the next event.
 ## Interface Structure
 
@@ -33,18 +35,14 @@ The function block does not have separate data outputs. Output data is transmitt
 ## Functionality
 
 1. An external event on the **socket `IN`** (via its event input `E1`) triggers the process.
-
 2. The incoming data value (`IN.D1`) is processed by the internal function block `FIELDBUS_UINT_TO_SIGNAL`. This generates an output value (`OUT`) and a validity flag (`VALID`).
-
 3. The processed value is immediately passed to the **plug `OUT`** (data signal `D1`) and an event is triggered at `OUT.E1`.
-
 4. Simultaneously, the validity flag of the internal function block is transferred to the **D flip-flop `E_D_FF`** (clocked by the same event).
-
 5. The output of the flip-flop (`Q`) is connected to the **plug `VALID`** (data signal `D1`); simultaneously, an event is sent to `VALID.E1`.
-
 6. The state of the validity signal is retained until the next processing cycle.
 
 ## Technical Features
+
 - The function block is implemented as a **composite FB**; its functionality consists of two internal FBs:
 - `FIELDBUS_UINT_TO_SIGNAL` (data converter)
 - `E_D_FF` (edge-triggered D flip-flop)
@@ -64,6 +62,7 @@ The FB itself does not have an explicit state machine. However, its behavior can
 | **Hold** | The validation value is held in the flip-flop until the next event arrives. |
 
 ## Application Scenarios
+
 - **Fieldbus Interface**: A `UINT` value originating from a fieldbus is to be converted into a standardized AUI signal and only passed on if data integrity is maintained.
 - **Validation-Checked Forwarding**: Applications where the output signal is only considered valid after successful internal validation (e.g., CRC check).
 - **Single-Channel Signal Conditioning**: This function block can be used in safety-related chains to separately signal the result of a plausibility check.
@@ -85,6 +84,7 @@ The `AUI_FIELDBUS_UINT_TO_SIGNAL` function block is a compact, adapter-based mod
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

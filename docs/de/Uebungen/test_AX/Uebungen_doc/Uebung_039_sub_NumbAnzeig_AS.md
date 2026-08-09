@@ -15,12 +15,14 @@ Die SubApp empfängt eine Adapterverbindung vom Typ `STATE_NR` (unidirektional) 
 Innerhalb der SubApp sind zwei Funktionsbausteine enthalten, die die Signalverarbeitung und Terminalkommunikation übernehmen.
 
 ### FB: `Q_NumericValue`
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**:
   - `u16ObjId` = `OutputNumber_N1` (vordefinierter Objektbezeichner aus dem `UT::DefaultPool`)
 - **Funktion**: Stellt einen numerischen Wert auf einem ISOBUS-Terminal dar. Der Eingang `u32NewValue` erwartet den aktuellen Zahlenwert als 32-Bit Unsigned Integer. Die Darstellung erfolgt unter der durch `u16ObjId` spezifizierten Objekt-ID.
 
 ### FB: `AS_TO_AUDI`
+
 - **Typ**: `adapter::conversion::unidirectional::AS_TO_AUDI`
 - **Parameter**: keine
 - **Funktion**: Konvertiert die Daten und das Ereignis eines unidirektionalen AS-Adapters in ein für AUDI-kompatible FBs (wie `Q_NumericValue_AUDI`) nutzbares Format. Der Ausgang `AUDI_OUT` liefert das konvertierte Signal zur weiteren Verarbeitung.
@@ -56,4 +58,5 @@ Die Übung kann direkt in der 4diac-IDE geladen und mit einem entsprechenden üb
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

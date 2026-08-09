@@ -1,8 +1,10 @@
 # E_RS_SYM_INIT
+
 ![E_RS_SYM_INIT](./E_RS_SYM_INIT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **E_RS_SYM_INIT** is an event-driven, bistable toggle switch (flip-flop) with symmetrical startup behavior and explicit initialization. It implements the familiar RS flip-flop logic, where the output **Q** can be set to either TRUE or FALSE during initialization (event **INIT**) – depending on the value of the parameter **Q_INIT**. This enables defined behavior after a system startup or reinitialization.
 ## Interface Structure
 
@@ -52,6 +54,7 @@ The **E_RS_SYM_INIT** operates as a state machine with five states: **START**, *
 * **Qualifier QI**: The actual change to **Q** only occurs if **QI=TRUE**. If **QI=FALSE**, the set and reset signals are ignored, but **QO** still passes the value of **QI**. This enables conditional behavior, e.g.,... B. for valid/invalid releases.
 
 ## Technical Features
+
 * **Symmetrical Start Behavior**: The initial state of **Q** is explicitly defined via the parameter **Q_INIT**. This distinguishes the function block from a standard RS flip-flop, whose start state is undefined.
 * **INIT as an Event with Parameters**: The INIT event input carries the values **QI** and **Q_INIT** simultaneously, clearly separating initialization and deinitialization.
 * **QC (Event Qualifier) Passed Through**: For every valid operation (Set, Reset, or INIT), **QO** is set to the value of **QI**, allowing the calling application to verify the operation's validity.
@@ -79,6 +82,7 @@ The **E_RS_SYM_INIT** operates as a state machine with five states: **START**, *
 * DeInit → START: 1 (always)
 
 ## Application Scenarios
+
 * **Controllers with Defined Power-On Behavior**: If a specific start value is required for a flag or output after a restart of the automation system (e.g., TRUE for "system running" or FALSE for "shut down"), **Q_INIT** can be set accordingly.
 * SET → DeInit: INIT ∧ (QI = FALSE)
 * SET → START: 1 (always)

@@ -1,7 +1,9 @@
 # Exercise_011_AUDI: Numeric Value Input
+
 This article describes the logiBUS® exercise `Uebung_011_AUDI`. It is the adapter-based version of exercise 011 and demonstrates how numeric values can be processed efficiently and clearly.
 ----
 ## Objective of the Exercise
+
 To learn modern, adapter-based processing of ISOBUS terminal inputs. Using adapters makes the block network more compact, and the separation of event and data flow is implicit within the adapter structure.
 -----
 
@@ -26,9 +28,7 @@ The connection between input and conversion is made exclusively via an adapter l
 <Connection Source="InputNumber_I1.IN" Destination="F_DWORD_TO_UDINT.AD_IN"/>
 </AdapterConnections>
 1. The user enters a value at the terminal (e.g., "100").
-
 2. After confirmation, the `InputNumber_I1` module sends the update via the adapter plug.
-
 3. The converter `AD_TO_AUDI` (instantiated as `F_DWORD_TO_UDINT`) receives this packet, converts its type, and makes the result available to the `AUDI` plug for the remaining logic.
 
 -----

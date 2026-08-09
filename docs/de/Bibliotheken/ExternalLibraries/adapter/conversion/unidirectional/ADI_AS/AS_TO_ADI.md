@@ -10,15 +10,19 @@ Der Funktionsblock **AS_TO_ADI** wandelt einen SINT-Adapter (AS) in einen DINT-A
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine
 
 ### **Ereignis-Ausgänge**
+
 Keine
 
 ### **Daten-Eingänge**
+
 Keine
 
 ### **Daten-Ausgänge**
+
 Keine
 
 ### **Adapter**

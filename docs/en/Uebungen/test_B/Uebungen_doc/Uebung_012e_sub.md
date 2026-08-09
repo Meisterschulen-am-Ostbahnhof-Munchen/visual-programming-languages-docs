@@ -1,8 +1,10 @@
 # Exercise_012e_sub: Numeric Value Input PHYS and Saving to INI with Subapp
+
 ![Uebung_012e_sub_network](./Uebung_012e_sub_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates how to read a physical numeric value (Numeric Value) using a function block, save it to an INI file, and process it using a quality block (Q). All functionality is encapsulated in a SubApp (SubAppType `Uebung_012e_sub`). The SubApp has the inputs `KEY`, `SECTION`, and `stObj`, as well as the output `VALUEO`. A successful completion event, `IND`, signals the completion of the process.
 
 ## Function Blocks Used (FBs)
@@ -42,7 +44,6 @@ Additionally, `GETO` is also forwarded to the output `IND`, so the SubApp output
 The `INI` block also has its own `INIT` event, which is directly linked to the `GET` event. This ensures that when the subapp starts, the value stored in the INI file is automatically read and then processed through the `GETO` flow of the quality block.
 
 ### Data Connections
-- The physical value (`rPhys`) of `NumeriValue_PHYS` is passed to the data input `VALUE` of the `INI` block.
 
 - The physical value (`rPhys`) of `NumeriValue_PHYS` is passed to the data input `VALUE` of the `INI` block.
 
@@ -65,6 +66,7 @@ It is designed as a reusable component that is configured via the parameters `KE
 It is designed as a reusable component that is configured via the parameters `KEY`, `SECTION`, and `stObj`. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

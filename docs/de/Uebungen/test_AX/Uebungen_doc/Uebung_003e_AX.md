@@ -13,11 +13,13 @@ Die Übung realisiert eine einfache Durchschaltung von vier digitalen Eingängen
 ### Sub-Bausteine:
 
 #### DigitalInput_Ix (x=1..4)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: QI = `TRUE`; Input = `Input_I1` (bzw. `_I2`, `_I3`, `_I4`)
 - **Funktionsweise**: Liest den digitalen Eingangswert vom logiBUS‑IO‑System ein.
 
 #### DigitalOutput_Qx (x=1..4) und Bypass_Valve
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**: 
   - DigitalOutput_Q1..Q4: QI = `TRUE`; Output = `Output_Q1` .. `Output_Q4`
@@ -25,6 +27,7 @@ Die Übung realisiert eine einfache Durchschaltung von vier digitalen Eingängen
 - **Funktionsweise**: Gibt das digitale Signal auf den entsprechenden logiBUS‑Ausgang aus.
 
 #### BYPASS_AX_x (x=1..4)
+
 - **Typ**: `logiBUS::signalprocessing::bypass::BYPASS_AX_AX`
 - **Parameter**: keine (reine Adapterverbindungen)
 - **Ereignisausgang/-eingang**: keine
@@ -59,4 +62,5 @@ Die Übung vermittelt den Umgang mit **Adapterverbindungen** und **Bypass‑Logi
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

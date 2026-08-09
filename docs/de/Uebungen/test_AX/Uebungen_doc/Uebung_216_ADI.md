@@ -13,6 +13,7 @@ Die Übung zeigt den Einsatz von Adapter-Schnittstellen zur Verbindung verschied
 ## Verwendete Funktionsbausteine (FBs)
 
 ### ADI_FB_CTD
+
 - **Typ**: `adapter::iec61131::counters::ADI_FB_CTD`
 - **Parameter**: keine
 - **Funktion**: IEC 61131-3 Rückwärtszähler (CTD). Zählt bei jedem positiven Flanke am Eingang `CD` den aktuellen Wert (PV) herunter. Bei Erreichen von Null wird der Ausgang `Q` gesetzt. Über den Eingang `LD` wird der Zähler mit dem Wert von `PV` geladen.
@@ -20,31 +21,37 @@ Die Übung zeigt den Einsatz von Adapter-Schnittstellen zur Verbindung verschied
 - **Adapter-Ausgänge**: `Q` (Zählerende), `CV` (aktueller Zählerstand)
 
 ### ADI_DINT_TO_DI
+
 - **Typ**: `adapter::conversion::unidirectional::ADI_DINT_TO_DI`
 - **Parameter**: `OUT = DINT#10`
 - **Funktion**: Wandelt eine konstante DINT-Zahl (hier 10) in ein DI-Adapter-Interface um, das als Vorgabewert (`PV`) für den Zähler dient.
 
 ### Input_CD
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `QI = TRUE`, `Input = Input_I1`
 - **Funktion**: Digitaler Eingang für das Zählsignal (CD). Aktiviert über den physischen Eingang I1.
 
 ### Input_LD
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `QI = TRUE`, `Input = Input_I2`
 - **Funktion**: Digitaler Eingang für das Ladesignal (LD). Aktiviert über den physischen Eingang I2. Der Ereignisausgang `INITO` dieses Bausteins startet die Initialisierung des Vorgabewerts.
 
 ### Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
 - **Funktion**: Digitaler Ausgang für das Zählerende-Signal (`Q`). Schaltet den physischen Ausgang Q1.
 
 ### ADI_TO_AUDI
+
 - **Typ**: `adapter::conversion::unidirectional::ADI_TO_AUDI`
 - **Parameter**: keine
 - **Funktion**: Konvertiert das ADI-Interface (DINT) in ein AUDI-Interface (Analog Universal Data Interface). **Wichtig:** Diese Konvertierung unterstützt keine negativen Zahlen – der Zählerstand kann nur als positive Zahl oder Null dargestellt werden.
 
 ### Q_NumericValue_AUDI
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**: `u16ObjId = OutputNumber_N1`
 - **Funktion**: Gibt den übergebenen numerischen Wert (vom AUDI-Interface) auf einem Terminal aus. Die Objekt-ID verweist auf eine vordefinierte Ausgabeadresse.
@@ -84,4 +91,5 @@ Der Aufbau ist als Subapplikation realisiert und kann direkt in eine 4diac-IDE-U
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

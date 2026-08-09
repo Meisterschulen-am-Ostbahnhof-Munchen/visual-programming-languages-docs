@@ -1,11 +1,14 @@
 # Exercise_004b4c_sub_AE: Sub-application for a latching toggle flip-flop with AE2 adapter
+
 ![Uebung_004b4c_sub_AE_network](./Uebung_004b4c_sub_AE_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This sub-application implements a latching toggle flip-flop that can be controlled via an **AE2 adapter (socket)** and receive feedback via an **AE2 adapter (plug)** and an **AX adapter (Q)**. The flip-flop is toggled by an incoming event at input `IND`. It can also be reset via the AE2 adapter, which represents the **latching** function. The current state of the flip-flop is output via the AX adapter.
 
 ## Function Blocks (FBs) Used
+
 - **`E_SR_I1`** – Type: `iec61499::events::E_SR`
 
 Set-Reset flip-flop with Boolean output `Q`. The set input `S` sets `Q` to `TRUE`, and the reset input `R` sets `Q` to `FALSE`.
@@ -41,20 +44,17 @@ The incoming event at input `IND` is directly forwarded to the event input `EI` 
 The output `Q` of the flip-flop `E_SR_I1` is connected to the control input `G` of the turnout.
 
 - If `Q = FALSE` is in the state of `Q = FALSE`, the turnout switches the event to its output `EO0`.
-
 2. **Turnout Control via Flip-Flop State**
 
 The output `Q` of the flip-flop `E_SR_I1` is connected to the control input `G` of the turnout. - If `Q = TRUE` is present, it switches to `EO1`.
 
 3. **Toggle Function**
-
 - `EO0` is connected to the set input `S` of the flip-flop → sets `Q` to `TRUE`.
 - `EO1` is connected to the reset input `R` of the flip-flop → sets `Q` to `FALSE`.
 
 This causes the flip-flop to toggle with each incoming event.
 
 4. **Integration of the AE2 Adapter**
-
 - The event from `EO0` is also routed to the `REQ` inputs of **both** adapter converters (`AE2_EVENT_TO_E` and `AE2_E_TO_EVENT`).
 - The converters are interconnected:
 - The `CNF` output of `AE2_EVENT_TO_E` triggers the `REQ` input of `AE2_E_TO_EVENT` and simultaneously goes to the reset input `R` of the flip-flop.
@@ -79,6 +79,7 @@ This exercise deepens the understanding of using **AE2 adapters** for bidirectio
 --
 
 ### 🌐 Relevant topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

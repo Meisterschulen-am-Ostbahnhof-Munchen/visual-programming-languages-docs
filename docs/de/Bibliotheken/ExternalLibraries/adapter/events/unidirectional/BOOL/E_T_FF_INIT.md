@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **E_T_FF_INIT** realisiert ein **Toggle-Flip-Flop** mit integrierter Initialisierungslogik. Er kombiniert das klassische Verhalten eines T‑Flip‑Flops (Umschalten des Ausgangs *Q* bei jedem *CLK*‑Ereignis) mit einer gezielten Setzung des Ausgangs während der Initialisierung. Der Baustein eignet sich besonders für Anwendungen, bei denen nach dem Start ein definierter Anfangszustand erforderlich ist, bevor der normale Toggle‑Betrieb beginnt.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ    | Mit Variablen | Beschreibung                                          |
@@ -36,9 +38,11 @@ Der Funktionsblock **E_T_FF_INIT** realisiert ein **Toggle-Flip-Flop** mit integ
 | **Q**    | BOOL  | Toggle‑Ausgang; wird bei jedem *CLK* umgeschaltet (nur wenn *QI* = TRUE). |
 
 ### **Adapter**  
+
 Keine Adapter vorhanden.
 
 ## Funktionsweise
+
 Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zuständen: `START`, `Init`, `DeInit`, `SET` und `RESET`.
 
 1. **Initialisierung (Zustand *Init*)**:  
@@ -63,6 +67,7 @@ Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zustä
 **Wichtig**: Die Toggle‑Funktion ist nur aktiv, wenn *QI* = TRUE. Ist *QI* = FALSE, bleibt *Q* unverändert (die IF‑Bedingung in den Algorithmen verhindert die Änderung).
 
 ## Technische Besonderheiten
+
 - **Kombinierte Init‑/Toggle‑Logik**: Der Baustein erlaubt es, den Ausgang *Q* bereits während der Initialisierung auf einen definierten Wert zu setzen (*Q_INIT*). Dies unterscheidet ihn von einem einfachen T‑Flip‑Flop, das meist im RESET‑Zustand startet.  
 - **Freigabe über QI**: Die Variable *QI* fungiert als globale Freigabe. Nur wenn *QI* = TRUE, erfolgt das Umschalten bei *CLK*. Bei *QI* = FALSE können zwar INIT‑Ereignisse verarbeitet werden, aber der Toggle‑Betrieb ist deaktiviert.  
 - **Ausgangsqualifikator QO**: *QO* spiegelt den Freigabezustand wider – er wird bei erfolgreicher Initialisierung auf TRUE, bei De‑Initialisierung auf FALSE gesetzt. Dies ermöglicht eine einfache Überwachung des Baustein‑Status.
@@ -87,6 +92,7 @@ Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zustä
 - `DeInit → START` : immer (Bedingung = 1)
 
 ## Anwendungsszenarien
+
 1. **Initialisieren einer Maschine mit definiertem Startzustand**  
    Ein Förderband soll nach dem Einschalten immer in der Position „bereit“ ( *Q* = TRUE) sein. Mit *Q_INIT* = TRUE und *QI* = TRUE wird dies erreicht. Danach kann ein Taktgeber über *CLK* das Band zwischen den beiden Zuständen hin‑ und herschalten.
 
@@ -108,4 +114,5 @@ Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zustä
 Im Gegensatz zu *E_T_FF* kann *E_T_FF_INIT* den Ausgang bei der Erstinitialisierung auf TRUE setzen und bietet über *QI* eine explizite Freigabe für den Toggle‑Betrieb.
 
 ## Fazit
+
 Der Funktionsblock **E_T_FF_INIT** ist eine erweiterte Variante eines T‑Flip‑Flops, die speziell für Steuerungen entwickelt wurde, die nach dem Hochfahren einen definierten Ausgangszustand benötigen. Die Kombination aus Initialisierung (über *Q_INIT*), Freigabe (über *QI*) und Umschaltlogik (über *CLK*) macht ihn vielseitig einsetzbar. Er eignet sich für sicherheitskritische Abläufe, bei denen der Betrieb nur bei aktiver Freigabe erfolgen darf, sowie für Anwendungen, die einen reproduzierbaren Startzustand erfordern. Die klar strukturierte Zustandsmaschine gewährleistet ein deterministisches und vorhersagbares Verhalten.

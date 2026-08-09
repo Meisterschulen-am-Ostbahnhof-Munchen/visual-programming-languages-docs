@@ -1,22 +1,28 @@
 # AS_SPLIT_9
+
 ![AS_SPLIT_9](./AS_SPLIT_9.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AS_SPLIT_9** is used to split an incoming **AS adapter** (unidirectional) into nine separate output adapters. It is implemented as a generic function block and distributes the AS signal present at socket `IN` identically to all nine plug outputs (`OUT1` … `OUT9`). This makes it ideal for routing a single AS signal multiple times to different downstream components.
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - None
 
 ### **Event Outputs**
+
 - None
 
 ### **Data Inputs**
+
 - None
 
 ### **Data Outputs**
+
 - None
 
 ### **Adapters**
@@ -38,8 +44,8 @@ The function block **AS_SPLIT_9** is used to split an incoming **AS adapter** (u
 
 The module receives an AS connection via socket `IN`. Internal logic forwards this incoming signal without modification to all nine plug outputs (`OUT1` … `OUT9`). This ensures that the same AS data and/or events are always available at all outputs. There is no separate state machine or internal processing – distribution occurs directly and without delay.
 
-#
 # Functionality ## Technical Features
+
 - **Generic Function Block** – The function block is classified as **GEN_AS_SPLIT** and can be parameterized as needed (e.g., for a variable number of outputs).
 - **Unidirectional Adapters** – Both inputs and outputs use the type `adapter::types::unidirectional::AS`. This ensures that the data/event direction from IN to OUT is strictly maintained.
 - No dedicated event or data inputs are required – the entire interface consists exclusively of adapters.
@@ -49,11 +55,13 @@ The module receives an AS connection via socket `IN`. Internal logic forwards th
 The function block does not have an explicit state machine (ECC). Distribution occurs purely combinatorially as soon as the input adapter provides valid data or events.
 
 ## Application Scenarios
+
 - **Signal Distribution** – An AS sensor or controller must supply several actuators or monitored components simultaneously.
 - **Parallel Operation** – Multiple devices are to be connected to an AS network without requiring active replication.
 - **Test and Simulation Environments** – An outgoing AS signal is split across multiple test modules or analysis tools.
 
 ## Comparison with Similar Components
+
 - **AS_SPLIT_2**, **AS_SPLIT_4**, etc. – These components offer a smaller number of outputs (2, 4, etc.) and are optimized for smaller distributions.
 - **AS_MUX** – A multiplexer that combines multiple inputs into one output; the opposite of a splitter.
 - **AS_COPY** – Copies a signal to a second output; equivalent to a 1:2 split.

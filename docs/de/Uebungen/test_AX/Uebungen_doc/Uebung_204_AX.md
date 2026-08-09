@@ -13,6 +13,7 @@ Die Ausgänge steuern zwei digitale Aktoren (Q1, Q2) und eine Tripanzeige (Q4).
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: *keine*  
+
 Die gesamte Übung ist als eigenständige Subapplikation aufgebaut. Alle FBs werden direkt im Netzwerk eingesetzt.
 
 ### Übersicht der FBs im Netzwerk

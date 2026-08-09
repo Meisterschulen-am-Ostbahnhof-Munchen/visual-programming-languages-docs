@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsbaustein **AB_MUX_5** realisiert einen generischen Multiplexer für Adapter-Schnittstellen des Typs `adapter::types::unidirectional::AB`. Er wählt aus fünf eingehenden Adapterverbindungen (IN1–IN5) eine einzige aus und leitet sie an den Ausgangs-Adapter (OUT) weiter. Die Auswahl erfolgt über einen ganzzahligen Index `K`, der bei einer steigenden Flanke am Ereigniseingang `REQ` ausgewertet wird.
 
 ## Schnittstellenstruktur
@@ -27,6 +28,7 @@ Der Funktionsbaustein **AB_MUX_5** realisiert einen generischen Multiplexer für
 | K        | UINT | Index des auszuwählenden Eingangs (0 = IN1, 1 = IN2, …, 4 = IN5) |
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Datenausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über den Adapter-Plug `OUT`.*
 
 ### **Adapter**
@@ -41,17 +43,20 @@ Der Funktionsbaustein **AB_MUX_5** realisiert einen generischen Multiplexer für
 | Socket   | IN5     | adapter::types::unidirectional::AB   | Fünfter Eingang (Index 4) |
 
 ## Funktionsweise
+
 Der Baustein arbeitet als **1‑aus‑5‑Multiplexer** auf der Adapter-Ebene. Bei einem Ereignis am Eingang `REQ` wird der aktuelle Wert von `K` ausgewertet. Gültige Werte sind 0 bis 4. Der entsprechende Adapter-Socket (IN1 bei K=0, IN2 bei K=1, … IN5 bei K=4) wird mit dem Ausgangs-Adapter `OUT` verbunden. Nach erfolgter Umschaltung wird der Ereignisausgang `CNF` gesendet.
 
 Werden Werte außerhalb des Bereichs 0..4 an `K` angelegt, ist das Verhalten undefiniert – typischerweise wird kein Eingang ausgewählt oder der letzte gültige Zustand beibehalten. Der Baustein selbst führt keine Bereichsprüfung durch.
 
 ## Technische Besonderheiten
+
 - **Adapter-basiert**: Der FB nutzt den unidirektionalen Adapter `adapter::types::unidirectional::AB`, der für den Austausch von Daten in einer Richtung (hier: Eingang → Ausgang) ausgelegt ist.
 - **Generische Parametrierung**: Der Baustein ist als generischer FB mit dem Klassennamen `GEN_AB_MUX` ausgelegt. Dies ermöglicht eine Typprüfung sowie eine Optimierung der Laufzeitumgebung (z. B. Eclipse 4diac).
 - **Keine Daten-Mapping-Logik**: Die Datenübergabe erfolgt implizit durch die Adapterverbindung; der FB selbst enthält keine zusätzlichen Daten-Ein- oder Ausgänge.
 - **Copyright und Lizenz**: Der Baustein unterliegt der Eclipse Public License 2.0, was eine freie Nutzung, Modifikation und Weitergabe erlaubt.
 
 ## Zustandsübersicht
+
 Der FB besitzt keine explizite Zustandsmaschine (ECC). Sein Verhalten ist ereignisgesteuert:
 
 1. **Ruhezustand**: Es liegt kein Ereignis vor. Der Ausgangsadapter `OUT` zeigt die zuletzt ausgewählte Eingangsverbindung.
@@ -60,6 +65,7 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Sein Verhalten ist ereign
 Damit ist der FB deterministisch und arbeitet ohne Verzögerungen außer der internen Propagationszeit.
 
 ## Anwendungsszenarien
+
 - **Signalauswahl in der Landtechnik**: (Entsprechend dem Ursprung des Bausteins) Auswahl zwischen verschiedenen Sensorwerten (z. B. fünf unterschiedliche Messstellen für Temperatur oder Druck).
 - **Datenselektion in Automatisierungssystemen**: Umschaltung zwischen mehreren Datenquellen (z. B. fünf Förderbänder oder fünf Maschinenzustände).
 - **Test- und Simulationsumgebungen**: Gezielte Wahl eines Eingangsadapter-Signals für Prüfzwecke.
@@ -76,9 +82,11 @@ Damit ist der FB deterministisch und arbeitet ohne Verzögerungen außer der int
 Der AB_MUX_5 ist speziell für Adapterverbindungen optimiert und bietet eine klare Trennung von Ereignissteuerung und Datenpfad.
 
 ## Fazit
+
 Der **AB_MUX_5** ist ein kompakter und wiederverwendbarer Funktionsbaustein zur Adapter-Multiplexierung. Er ermöglicht die Auswahl eines von fünf eingehenden Adapterkanälen über einen numerischen Index und eignet sich ideal für Systeme, die mehrere gleichartige Schnittstellen dynamisch umschalten müssen. Dank seiner generischen Implementierung und der Lizenz unter EPL 2.0 kann er in verschiedenen Automatisierungsumgebungen eingesetzt werden.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

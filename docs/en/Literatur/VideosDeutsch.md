@@ -1,12 +1,11 @@
 # 📺 Videos German
+
 ## Engineering Trend - IEC 61131 versus IEC 61499
+
 In recent years, there has been a trend in engineering towards using the IEC 61499 standard compared to the IEC 61131 standard. IEC 61499 offers a more flexible and modular architecture for the development of control systems and makes it easier to network and communicate between systems. IEC 61499 relies on the use of Function Blocks for modeling control systems. Function Blocks are small units that perform specific functions and can be easily adapted. They enable faster and more efficient development and modification of control systems. In comparison, IEC 61131 relies on the use of programming languages such as ladder logic and structured text. While still widely used, it is considered less flexible and modular than IEC 61499. Overall, the trend toward using the IEC 61499 standard in engineering is due to its more flexible and modular architecture, which makes it easier to network and communicate control systems. IEC 61499 is therefore increasingly being used as a standard for the development of control systems compared to IEC 61131.
 ### Interview with Dieter Hess (SPS/IPC/DRIVES 2011)
-Live interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions) at the publish-industry VIP Talk on the RED COUCH.
-
 
 Live interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions) at the publish-industry VIP Talk on the RED COUCH.
-
 
 ... *Note: Dieter Hess is a critic of IEC 61499.*
 
@@ -24,20 +23,24 @@ Live interview with Dieter Hess (Managing Director, 3S-Smart Software Solutions)
 ## YouTube Channels and Playlists
 
 ### 4diac
+
 * [4diac Channel](https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g)
 * [4diac About](https://www.youtube.com/@4diac177/about)
 
 ### nxtControl GmbH
+
 * [nxtControl Playlist](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g)
 * [nxtControl About](https://www.youtube.com/@nxtControl/about)
 
 ### Alois Zoitl (German)
-* [Alois Zoitl Playlist](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj)
 
+* [Alois Zoitl Playlist](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj)
 * [More German-language videos](https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm)
 
 ### 4Diac (Andere Deutsch)
+
 ### MS-MUC Original Productions
+
 * [Videos from MS-MUC](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW)
 
 ---

@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_LockUnlockMask** ist ein standardkonformer Funktionsbaustein zur Steuerung des Sperrzustands von Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.46) Spezifikation für VT-Systeme ab Version 4.
 
 ![Q_LockUnlockMask](Q_LockUnlockMask.svg)
@@ -12,19 +13,23 @@ Der **Q_LockUnlockMask** ist ein standardkonformer Funktionsbaustein zur Steueru
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Sperr-/Entsperr-Anforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Betriebsbestätigung
 
 ### **Daten-Eingänge**
+
 - `u8LockCmd` (USINT): Sperrbefehl (0=Entsperren, 1=Sperren)
 - `u16MaskId` (UINT): Masken-Objekt-ID
 - `u16LockTimeoutMs` (UINT): Timeout in ms (0=kein Timeout)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldLockCmd` (USINT): Vorheriger Sperrzustand
 - `u16OldMaskId` (UINT): Vorherige Masken-ID

@@ -11,15 +11,19 @@ Der Funktionsblock **AIWS_SPLIT_5** ist ein generischer Baustein zur Aufteilung 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine Ereignis‑Eingänge vorhanden. Der Baustein arbeitet rein daten‑ bzw. adapter‑basiert.
 
 ### **Ereignis-Ausgänge**
+
 Keine Ereignis‑Ausgänge vorhanden. Die Weiterleitung erfolgt implizit über die Adapter‑Schnittstellen.
 
 ### **Daten-Eingänge**
+
 Keine Daten‑Eingänge vorhanden. Die gesamte Informationsübertragung erfolgt über den Socket‑Adapter.
 
 ### **Daten-Ausgänge**
+
 Keine Daten‑Ausgänge vorhanden. Die Ausgabe geschieht über die Plug‑Adapter.
 
 ### **Adapter**
@@ -73,4 +77,5 @@ Der **AIWS_SPLIT_5** ist ein einfacher, aber essenzieller Funktionsblock zur Ver
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

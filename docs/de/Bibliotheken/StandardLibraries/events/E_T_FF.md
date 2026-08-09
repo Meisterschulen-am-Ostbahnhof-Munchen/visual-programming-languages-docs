@@ -9,6 +9,7 @@
 * [Unpacking E_T_FF_SR: The Secret Toggle Switch of Industrial Control Systems](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Unpacking-E_T_FF_SR-The-Secret-Toggle-Switch-of-Industrial-Control-Systems-e367ntv)
 
 ## Einleitung
+
 Der `E_T_FF` (Event-driven Toggle Flip-Flop) ist ein ereignisgesteuerter Kippschalter, der seinen Zustand (`Q`) bei jedem eingehenden Taktereignis (`CLK`) wechselt. Er ist das digitale Äquivalent eines "Stromstoßschalters" (Stromstoßrelais), bei dem ein kurzer Impuls den Zustand dauerhaft ändert.
 
 ![E_T_FF](E_T_FF.svg)
@@ -16,22 +17,27 @@ Der `E_T_FF` (Event-driven Toggle Flip-Flop) ist ein ereignisgesteuerter Kippsch
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
+
 - **CLK (Clock)**: Das Taktereignis, das den Zustand von `Q` umschaltet.
 
 ### **Ereignis-Ausgänge:**
+
 - **EO (Event Output)**: Wird ausgelöst, wenn sich der Zustand von `Q` ändert.
     - **Verbundene Daten**: `Q`
 
 ### **Daten-Ausgänge:**
+
 - **Q**: Der aktuelle Zustand des Flip-Flops (Datentyp: `BOOL`).
 
 ## Funktionsweise
+
 Der `E_T_FF`-Baustein ist ein einfacher Toggle Flip-Flop:
 
 1.  **Zustandswechsel**: Bei jedem eingehenden `CLK`-Ereignis ändert der Ausgang `Q` seinen Zustand: War `Q` `TRUE`, wird es `FALSE`, und war `Q` `FALSE`, wird es `TRUE`.
 2.  **Ereignisauslösung**: Jede Zustandsänderung von `Q` löst das `EO`-Ereignis aus.
 
 ## Technische Besonderheiten
+
 - **Stromstoßschalter-Analogie**: Der Baustein verhält sich wie ein Stromstoßschalter: Ein kurzer Impuls (`CLK`) schaltet das Licht (`Q`) ein, der nächste Impuls schaltet es aus.
 - **Speicherfunktion**: `Q` speichert den letzten Zustand des Flip-Flops.
 - **Zustandslos zwischen Takten**: Änderungen am `CLK`-Eingang beeinflussen `Q` nur zum Zeitpunkt des Ereignisses.
@@ -39,6 +45,7 @@ Der `E_T_FF`-Baustein ist ein einfacher Toggle Flip-Flop:
 ## Anwendungsbeispiele
 
 ### Taster für eine Lampe
+
 Mit einem `E_T_FF` lässt sich eine Taster-Logik für eine Lampe realisieren:
 
 - **Konzept**: Ein Taster erzeugt ein `CLK`-Ereignis. Jedes Drücken schaltet die Lampe (`Q`) ein oder aus.
@@ -48,6 +55,7 @@ Mit einem `E_T_FF` lässt sich eine Taster-Logik für eine Lampe realisieren:
     - Embedded Ressource: ![E_T_FF Anwendung Taster EMB_RES](https://user-images.githubusercontent.com/69573151/200582652-15139148-a200-49fb-a683-93e341eab607.png)
 
 ### Blinker
+
 Durch Rückkopplung mit einem Zeitgeber lässt sich ein Blinker realisieren:
 
 - **Konzept**: Das `EO`-Ereignis des `E_T_FF` startet einen `E_DELAY`, dessen `EO` wiederum als `CLK` für den `E_T_FF` dient. Dies erzeugt einen periodischen Zustandswechsel.
@@ -106,4 +114,5 @@ Durch Rückkopplung mit einem Zeitgeber lässt sich ein Blinker realisieren:
 * [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
+
 Der `E_T_FF`-Baustein ist ein einfacher, aber äußerst vielseitiger Speicherbaustein. Seine "Stromstoßschalter"-Funktion ist fundamental für die Implementierung von Taster-Logiken, Blinkern und anderen bistabilen Steuerungen in IEC 61499-Anwendungen.

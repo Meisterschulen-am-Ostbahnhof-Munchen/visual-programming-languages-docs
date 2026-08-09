@@ -1,8 +1,10 @@
 # NVS_ALR
+
 ![NVS_ALR](./NVS_ALR.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **NVS_ALR** is used to load and store values of type `LREAL` in non-volatile storage (NVS) using a key. It is specifically designed for connection via the unidirectional **ALR adapter**. The block combines an initialization phase, in which the memory contents are read, with a subsequent read and write operation via the adapter.
 ## Interface Structure
 
@@ -55,6 +57,7 @@ An event at the **ALR_IN.E1** input (connected to the socket) triggers a **SET**
 In this network, a **GET** command is automatically triggered after initialization. An explicit read call via the adapter is not included in the design; the function block always outputs the current value via **ALR_OUT** after each NVS operation (INIT, SET).
 
 ## Technical Features
+
 - **Adapter Interface**
 
 Communication with the outside world occurs exclusively via the unidirectional ALR adapter. This makes the module particularly suitable for modular architectures where data flows are handled via standardized interfaces.
@@ -81,6 +84,7 @@ The function block does not cycle through explicitly modeled states, but is even
 - **Write** – At ALR_IN.E1, the value is saved and the result is sent to ALR_OUT.
 
 ## Application Scenarios
+
 - **ESP32 Configuration Parameters**
 
 Storage of LREAL values such as calibration factors, thresholds, or PID parameters that should be retained after a restart. The ALR adapter enables easy integration with other function blocks that use the same adapter type.
@@ -94,6 +98,7 @@ If a function block needs to read and write LREAL values from the NVS, but direc
 Use in Industry 4.0 applications where devices communicate via standardized adapter services (e.g., via an ALR configuration layer).
 
 ## Comparison with Similar Function Blocks
+
 - **NVS (Direct)**
 
 The `NVS` function block offers more flexibility (e.g., random access, different data types), but requires more complex wiring and explicit GET/SET calls. NVS_ALR reduces the complexity to an adapter interface.
@@ -113,4 +118,5 @@ The **NVS_ALR** function block offers a compact and user-friendly way to persist
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

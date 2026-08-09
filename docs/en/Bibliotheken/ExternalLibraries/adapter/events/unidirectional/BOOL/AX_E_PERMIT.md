@@ -1,8 +1,10 @@
 # AX_E_PERMIT
+
 ![AX_E_PERMIT](./AX_E_PERMIT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AX_E_PERMIT** function block implements conditional event propagation (permissive propagation). An incoming event is only forwarded to the output if a permit signal provided via an adapter has the value `TRUE`. The function block acts as a gate that can interrupt or enable the processing chain depending on external conditions.
 ## Interface Structure
 
@@ -19,9 +21,11 @@ The **AX_E_PERMIT** function block implements conditional event propagation (per
 | EO | Event | Event Output |
 
 ### **Data Inputs**
+
 This function block has no data inputs of its own. The enable signal is provided via an adapter.
 
 ### **Data Outputs**
+
 This function block has no data outputs.
 
 ### **Adapter**
@@ -42,6 +46,7 @@ Therefore:
 - **Permit = FALSE:** The event is suppressed; `EO` remains inactive.
 
 ## Technical Features
+
 - **Adapter-Based Interface:** The enable signal is not provided as a classic data input, but via an adapter (`AX`, unidirectional). This enables modular coupling and reuse of the enable logic.
 - **No Data Forwarding:** The function block itself does not output any data. It serves solely to control the event flow.
 - **Unidirectional Adapter:** The adapter provides only one data value (D1) to the function block; feedback is not provided.
@@ -58,6 +63,7 @@ The block itself has no visible states. Its internal behavior is determined by t
 There is no explicit state machine; the block operates purely combinatorially at the event level.
 
 ## Application Scenarios
+
 - **Safety Interlock:** An event (e.g., machine start) is only forwarded if an external safety circuit provides a release signal.
 - **Conditional Processing:** In a production control system, data from sensors can only be sent to the higher-level controller when the operating mode is activated.
 - **Test and Simulation Environments:** An event can be selectively enabled or disabled via a manual release signal to test specific scenarios.

@@ -1,8 +1,10 @@
 # OUT_ANY_CONSOLE
+
 ![OUT_ANY_CONSOLE](https://user-images.githubusercontent.com/116869307/214155060-5060da47-97f7-475f-9a49-036c24119346.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **OUT_ANY_CONSOLE** function block is a universal debugging tool for outputting variable values to the system console, developed under the EPL 2.0 license (version 3.0).
 The block supports outputting any data type for development and diagnostic purposes.
 
@@ -11,9 +13,11 @@ The block supports outputting any data type for development and diagnostic purpo
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `REQ`: Trigger for console output (with qualifier `QI`, value `IN`, and optional `LABEL`)
 
 ### **Event Outputs**
+
 - `CNF`: Acknowledgement of the output operation
 
 ### **Data Inputs**
@@ -33,17 +37,12 @@ The block supports outputting any data type for development and diagnostic purpo
 ## Functionality
 
 1. **Triggering**:
-
 - The `REQ` event with `QI`=TRUE starts output
 - The combination of `LABEL` and `IN` is formatted
-
 2. **Execution**:
-
 - The value is written to standard output
 - Automatic type conversion for `ANY`
-
 3. **Confirmation**:
-
 - `CNF` with `QO`=TRUE on success
 - `CNF` with `QO`=FALSE on errors
 
@@ -55,6 +54,7 @@ The block supports outputting any data type for development and diagnostic purpo
 ✔ **Platform-independent** for various target systems
 
 ## Application Scenarios
+
 - **Debugging**: Runtime variable inspection
 - **Logging**: Event tracking
 - **System diagnostics**: Condition monitoring
@@ -97,6 +97,7 @@ Ideal for:
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

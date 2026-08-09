@@ -1,22 +1,27 @@
 # Q_ActiveMask
+
 ![Q_ActiveMask](https://user-images.githubusercontent.com/69573151/212328886-4d5587f1-b2cd-4e8a-9cbe-0aa55ca1abcf.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **Q_ActiveMask** is a standards-compliant function block for controlling active masks in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.34) specification for agricultural tax systems.
 ![Q_ActiveMask](Q_ActiveMask.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization Request
 - `REQ`: Screen Change Request (with parameters)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization Confirmation
 - `CNF`: Screen Change Confirmation (with result data)
 
 ### **Data Inputs**
+
 - `u16NewMaskId` (UINT): Object ID of the new screen
 
 !!! Note: "WorkingSet Object ID fixed to 0"
@@ -29,6 +34,7 @@ The **WorkingSet Object ID** (`u16WorkSetId`) is **fixed to 0** by the authors o
 Since the working set is a single object and only exists once, this limitation is not a problem.
 
 ### **Data Outputs**
+
 - `STATUS` (STRING): Operating status message
 - `u16OldMaskId` (UINT): Object ID of the previous screen
 - `s16result` (INT): ISO-compliant result code
@@ -36,17 +42,12 @@ Since the working set is a single object and only exists once, this limitation i
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` event starts the function block
 - `INITO` confirms successful setup
-
 2. **Mask Change**:
-
 - Trigger `REQ` with new mask parameters
 - Return `CNF` result and previous mask ID
-
 3. **Error Handling**:
-
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -68,6 +69,7 @@ Since the working set is a single object and only exists once, this limitation i
 -21 | VT_E_NO_INSTANCE | No VT Instance |
 
 ## Application Scenarios
+
 - **Tractor Controls**: Operating Mode Switching
 - **Harvest Monitoring**: Data Acquisition Masks
 - **Diagnostic Systems**: Fault Display Masks

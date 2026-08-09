@@ -1,8 +1,10 @@
 # Exercise_001c_AX: DigitalInput_I1 to DigitalOutput_Q1 --> Query input at boot.
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_001c_AX`. It demonstrates how to query a digital input immediately after system startup (boot process) to transmit the initial state to a digital output.
 ----
 ## Objective of the exercise
+
 The main objective of this exercise is to understand the initialization process in IEC 61499. In many automation scenarios, it is not sufficient to simply react to state changes; the system must also capture the current state of the hardware at startup to ensure a defined initial state.
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)] -----
@@ -42,11 +44,8 @@ The special feature of this exercise lies in the event connection, which provide
 The functional sequence is as follows:
 
 1. **System Startup**: When the 4diac runtime environment starts up, the function block `DigitalInput_I1` is initialized.
-
 2. **Initialization Event**: After successful initialization, the function block sends a `INITO` event.
-
 3. **Self-Triggering**: Since `INITO` is connected to its own `REQ` input, the function block is immediately prompted to read the physical state of the `Input_I1` input.
-
 4. **Signal Forwarding**: The read value is sent via the adapter `IN` to `DigitalOutput_Q1`, which updates the output `Q1` to the correct state during boot.
 
 Without this `INITO -> REQ` connection, the output would only be updated when the input state changes for the first time *after* startup.
@@ -62,6 +61,7 @@ Imagine a controller that operates a ventilation flap based on the position of a
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

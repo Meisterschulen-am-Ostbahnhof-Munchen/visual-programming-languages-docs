@@ -1,12 +1,15 @@
 # Exercise_001d2_AX: DigitalInput_I1/2 to DigitalOutput_Q1/2, as an alternative (interlocked) connection using plug and socket, without ECC
+
 ![Uebung_001d2_AX_network](./Uebung_001d2_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an alternative, interconnected control of two digital outputs (Q1, Q2) using two digital inputs (I1, I2). The circuit uses an interlocked (mutually exclusive) connection with logic gates and flip-flops, but without an explicit ECC (Execution Control Chart). It serves as an example of a more complex coupling of input and output signals based on the logiBUS IO system.
 The circuit processes the inputs in such a way that only one of the two outputs can be active at any given time. Which input controls the output is determined by the internal logic, with the feedback of the flip-flop states implementing mutual blocking.
 
 ## Function Blocks (FBs) Used
+
 - **DigitalInput_I1**, **DigitalInput_I2**:
 
 Type: `logiBUS::io::DI::logiBUS_IXA`
@@ -64,7 +67,6 @@ The circuit operates according to the following principle:
 The inputs I1 and I2 are read via the `logiBUS_IXA` function blocks and passed on as Boolean signals to the subsequent logic.
 
 2. **AND Circuit with Feedback**
-
 - The output of DigitalInput_I1 is fed to the first input (IN1) of `AX_AND_2_Q1`.
 - The output of DigitalInput_I2 is fed to the second input (IN2) of `AX_AND_2_Q2`.
 - The AND gates each receive the second input from the *output of the other* D flip-flop:

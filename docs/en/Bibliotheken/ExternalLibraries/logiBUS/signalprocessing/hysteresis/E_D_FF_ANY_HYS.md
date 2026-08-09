@@ -1,8 +1,10 @@
 # E_D_FF_ANY_HYS
+
 ![E_D_FF_ANY_HYS](./E_D_FF_ANY_HYS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **E_D_FF_ANY_HYS** implements a data latch flip-flop with adjustable hysteresis. It takes a numeric input value `D` and outputs `Q`, but only if the difference between the current output `Q` and the new input `D` exceeds a predefined threshold (`HYSTERESIS`). This effectively suppresses small, unwanted fluctuations (e.g., noise).
 ## Interface Structure
 
@@ -44,14 +46,13 @@ Q := D` is set and the event `EO` is triggered. In each subsequent call to ``CLK
 `GE(SUB(MAX(D, Q), MIN(D, Q)), HYSTERESIS)``
 
 * `MAX(D, Q)`` and ``MIN(D, Q)`` return the larger and smaller of the two numbers, respectively.
-
 * `SUB(...)`` calculates the positive difference (absolute value).
-
 * `GE(...)`` checks whether this difference is greater than or equal to ``HYSTERESIS``.
 
 `` Only if this condition is **true** is the algorithm `LATCH` executed again (Q := D) and `EO` sent. If the condition is false, `Q` remains unchanged and no event is output. The state remains `SET` in both cases.
 
 ## Technical Features
+
 * **Generic Data Type:** The inputs and outputs `D`, `HYSTERESIS`, and `Q` are declared as `ANY_NUM`. The function block can therefore be used with any IEC 61499 numeric types (e.g., `INT`, `REAL`, `LREAL`), as long as all three values have the same specific type.
 * **Hysteresis Function:** Hysteresis is implemented as the magnitude of the difference between the old and new values. This means the switching direction is irrelevant – exceeding the threshold in either direction triggers a takeover.
 * **Initial Behavior:** The value is always taken over on the first `CLK` after startup (no hysteresis check). This corresponds to an output initialization.
@@ -73,6 +74,7 @@ The function block contains a very simple two-state automatic state machine:
 * There is no transition back to `START` – the controller remains permanently in `SET` after the first `CLK`.
 
 ## Application Scenarios
+
 * **Stabilizing Sensor Signals:** If an analog sensor (e.g., temperature, pressure, level) delivers unstable values due to noise or small fluctuations, this function block can smooth the output. Example: Level measurement with a distance sensor where small ripples on the liquid surface should be ignored.
 * **Switching Hysteresis in Control Systems:** In two-point controllers or comparators, this function block can be used to prevent constant switching on and off (fluttering). The `HYSTERESIS` value defines the dead zone.
 * **Value takeover with deadband:** At the MES/SCADA level, monitored process values can only be updated when the value changes significantly – this reduces data traffic and alarm overload.

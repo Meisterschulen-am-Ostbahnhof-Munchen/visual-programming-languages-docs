@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_GraphicsContext** ist ein standardkonformer Funktionsbaustein zur Steuerung von Grafik-Kontextobjekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.56) Spezifikation für VT-Systeme ab Version 4.
 
 ![Q_GraphicsContext](Q_GraphicsContext.svg)
@@ -12,20 +13,24 @@ Der **Q_GraphicsContext** ist ein standardkonformer Funktionsbaustein zur Steuer
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Konfigurationsanforderung (mit Sub-Command und Parametern)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Konfigurationsbestätigung (mit Status und vorherigen Werten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Grafik-Kontext Objekt-ID (16-bit)
 - `u8SubCommandID` (USINT): Sub-Befehls-ID (8-bit)
 - `u8ParaList` (USINT[5]): Parameterliste (5 Byte Array)
 - `u16LenBytes` (UINT): Parameterlänge in Bytes
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldSubCommandID` (USINT): Vorherige Sub-Befehls-ID
 - `u8OldParaList` (USINT[5]): Vorherige Parameterliste

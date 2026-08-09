@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **ILOCK_BLOCK** realisiert eine Verriegelung (Interlock) zwischen zwei gegenläufigen Signalen. Er priorisiert das zuerst eintreffende aktive Signal und ignoriert alle nachfolgenden widersprüchlichen Signale, bis das initiale Signal wieder freigegeben wird. Dadurch wird sichergestellt, dass sich zwei gegensätzliche Aktionen (z. B. Auf/Ab, Rechts/Links) niemals gleichzeitig aktivieren.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Mit Variable | Beschreibung |
@@ -36,9 +38,11 @@ Der Funktionsblock **ILOCK_BLOCK** realisiert eine Verriegelung (Interlock) zwis
 | `DO_DOWN`  | BOOL | TRUE = rückwärts, abwärts, links, gegen den Uhrzeigersinn |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 Der Baustein besitzt zwei Aktivierungszustände (UP, DOWN) und zwei Zwischenzustände (UP_STOP, DOWN_STOP) zum Abmelden. Die Steuerung erfolgt ausschließlich über die Ereignis-Eingänge in Verbindung mit den Daten-Eingängen.
 
 - **In den Ruhezustand (STOP)** werden beide Ausgänge auf FALSE gesetzt.
@@ -50,6 +54,7 @@ Der Baustein besitzt zwei Aktivierungszustände (UP, DOWN) und zwei Zwischenzust
 - **Ignorieren widersprüchlicher Signale:** Solange der Baustein aktiv ist (UP oder DOWN), werden Ereignisse der entgegengesetzten Richtung vollständig ignoriert (keine Zustandsänderung). Dadurch wird die Priorität des ersten Signals gewahrt.
 
 ## Technische Besonderheiten
+
 - Die Zustandsübergänge erfolgen ereignisgesteuert und sofort (keine Verzögerungen).
 - Im Gegensatz zu einem einfachen Set/Reset-Baustein wird die zweite Eingangsrichtung während der Verriegelung nicht akzeptiert; die Verriegelung kann nur durch das ursprüngliche Ereignis selbst aufgehoben werden.
 - Alle Ausgänge werden nach einem Stopp wieder auf FALSE gesetzt.
@@ -74,15 +79,18 @@ Der Baustein besitzt zwei Aktivierungszustände (UP, DOWN) und zwei Zwischenzust
 - `DOWN_STOP → STOP` : immer (sofort)
 
 ## Anwendungsszenarien
+
 - **Motorsteuerung (z. B. Hebebühne, Kran):** Verhindert gleichzeitiges Fahren in entgegengesetzte Richtungen.
 - **Ventilsteuerung:** Schützt vor gleichzeitigem Öffnen und Schließen eines Prozessventils.
 - **Richtungsverriegelung in Förderanlagen:** Sorgt dafür, dass ein Band nur eine Drehrichtung gleichzeitig aktiviert.
 - **Sicherheitskritische Steuerungen:** Erzwingt eine eindeutige, priorisierte Signalfolge.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Set/Reset (SR/R-SR):** Erlaubt das gleichzeitige Setzen beider Richtungen, was zu undefinierten Zuständen führen kann. Der ILOCK_BLOCK verhindert dies durch strikte Verriegelung.
 - **Zustandsautomat (z. B. mit mehreren Zuständen):** Bietet mehr Flexibilität, erfordert aber manuelle Implementierung der Priorisierungslogik. Der ILOCK_BLOCK kapselt diese Logik direkt.
 - **Einfacher Interlock über UND-Gatter:** Reine Signalverknüpfung ignoriert die zeitliche Reihenfolge. Der ILOCK_BLOCK reagiert ereignisgesteuert auf die erste gültige Aktivierung.
 
 ## Fazit
+
 Der **ILOCK_BLOCK** ist ein spezialisierter Funktionsbaustein für Verriegelungsanwendungen mit Priorisierung des ersten aktiven Eingangs. Durch seine klare Zustandsmaschine und die ereignisgesteuerte Verarbeitung eignet er sich besonders für zeitkritische und sicherheitsrelevante Steuerungen, bei denen widersprüchliche Signale streng ausgeschlossen werden müssen. Er bietet eine robuste Alternative zu klassischen Set/Reset-Logiken und reduziert den Implementierungsaufwand erheblich.

@@ -1,13 +1,16 @@
 # Exercise_034a1_Q4_AX: Numeric Value Input to PWM Output (Adapter Version)
+
 ![Uebung_034a1_Q4_AX_network](./Uebung_034a1_Q4_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates controlling a PWM output (logiBUS Output Q4) using a numeric input value. Communication between the input block and the output block is via adapter connections ("Adapter Version"). An integrated comment indicates that the value transfer event is only triggered when the entered numeric value is confirmed with "OK"—not simply by pressing a key.
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `PWM_Value`
+
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_IDA`
 - **Internal FBs Used**: (No other internal FBs, as this is an atomic FB. The FB itself is part of the library `isobus`.)
 - **Parameters**:
@@ -16,7 +19,6 @@ This exercise demonstrates controlling a PWM output (logiBUS Output Q4) using a 
 - **Functionality**:
 
 The FB reads the numeric value entered by the user (e.g., from an HMI input field) and displays it. The output is provided via its adapter interface (`IN`). Output is only generated after the input has been confirmed with "OK". Event control is handled implicitly via the adapter.
-
 
 ### Sub-Blocks: `PWMOutput_Q4`
 
@@ -53,4 +55,5 @@ Exercise `Uebung_034a1_Q4_AX` connects a numeric input function block (`NumericV
 Exercise `Uebung_034a1_Q4_AX` connects a numeric input function block (`NumericValue_IDA`) to a PWM output function block (`logiBUS_QDA_PWM`) using an adapter. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

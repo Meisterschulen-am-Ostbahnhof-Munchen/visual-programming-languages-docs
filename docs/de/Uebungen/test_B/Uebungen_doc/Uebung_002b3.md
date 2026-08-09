@@ -5,11 +5,13 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung demonstriert die Verarbeitung digitaler Eingangssignale und deren logische Verknüpfung zur Steuerung eines digitalen Ausgangs. Die Schaltung kombiniert UND- und ODER-Verknüpfungen, um eine spezifische Logik zwischen drei Eingängen und einem Ausgang zu realisieren.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### DigitalInput_I1, DigitalInput_I2, DigitalInput_I3
+
 - **Typ**: logiBUS_IX
 - **Parameter**: 
   - QI = TRUE
@@ -17,14 +19,17 @@ Diese Übung demonstriert die Verarbeitung digitaler Eingangssignale und deren l
 - **Funktionsweise**: Lesen der digitalen Eingangssignale von den entsprechenden Hardware-Eingängen
 
 ### AND_2_BOOL
+
 - **Typ**: AND_2_BOOL
 - **Funktionsweise**: Führt eine logische UND-Verknüpfung zwischen zwei booleschen Eingängen durch
 
 ### OR_2_BOOL
+
 - **Typ**: OR_2_BOOL
 - **Funktionsweise**: Führt eine logische ODER-Verknüpfung zwischen zwei booleschen Eingängen durch
 
 ### DigitalOutput_Q1
+
 - **Typ**: logiBUS_QX
 - **Parameter**:
   - QI = TRUE
@@ -65,9 +70,11 @@ Q1 = (I1 UND I2) ODER I3
 **Start der Übung**: Die Übung wird in der 4diac-IDE geladen und auf ein kompatibles Steuerungssystem deployt. Die digitalen Eingänge I1, I2 und I3 können getestet werden, um die Funktionalität der Schaltung zu überprüfen.
 
 ## Zusammenfassung
+
 Diese Übung zeigt eine grundlegende kombinatorische Logikschaltung, die digitale Eingangssignale verarbeitet und über logische Verknüpfungen einen Ausgang steuert. Die Implementierung demonstriert die prinzipielle Arbeitsweise ereignisgesteuerter Systeme in der IEC 61499 mit direkter Anbindung an Hardware-Ein- und Ausgänge.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

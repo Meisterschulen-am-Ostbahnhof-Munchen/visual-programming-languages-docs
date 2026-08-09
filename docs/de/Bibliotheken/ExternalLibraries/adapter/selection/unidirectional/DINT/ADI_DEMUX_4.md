@@ -29,6 +29,7 @@ Der Funktionsblock `ADI_DEMUX_4` ist ein generischer Demultiplexer, der einen ei
 | K | UINT | Index (1‑basiert) für die Auswahl des Zielausgangs (1→OUT1, 2→OUT2, 3→OUT3, 4→OUT4) |
 
 ### **Daten-Ausgänge**
+
 _Keine_
 
 ### **Adapter**
@@ -85,4 +86,5 @@ Der `ADI_DEMUX_4` ist ein kompakter, generischer Demultiplexer für die ereignis
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Attributdeklaration `GenericClassName` definiert den Klassennamen für generische Typen in 4diac.
 
 ## Technische Details
+
 - **Basis-Datentyp:** `STRING`
 - **Initialwert:** `'GEN_'`
 - **Verwendung:** Wird auf `FBType`-Ebene angewendet, um generische Implementierungen zu kennzeichnen.
@@ -21,4 +23,5 @@ Die Attributdeklaration `GenericClassName` definiert den Klassennamen für gener
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

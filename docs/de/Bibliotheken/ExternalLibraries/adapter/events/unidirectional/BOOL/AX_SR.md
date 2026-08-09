@@ -7,6 +7,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der AX_SR Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Flop), das als Set-Reset-Speicher fungiert. Er ermöglicht das Setzen und Rücksetzen eines logischen Zustands und stellt diesen über eine Adapterschnittstelle zur Verfügung.
 
 ![AX_SR](AX_SR.svg)
@@ -14,22 +15,28 @@ Der AX_SR Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Fl
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **S**: Setzt den Ausgang Q auf TRUE
 - **R**: Setzt den Ausgang Q auf FALSE
 
 ### **Ereignis-Ausgänge**
+
 - Keine direkten Ereignis-Ausgänge vorhanden
 
 ### **Daten-Eingänge**
+
 - Keine Daten-Eingänge vorhanden
 
 ### **Daten-Ausgänge**
+
 - Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
+
 - **Q**: Unidirektionaler Adapter vom Typ "adapter::types::unidirectional::AX", der den aktuellen Zustand des Flip-Flops bereitstellt
 
 ## Funktionsweise
+
 Der AX_SR Funktionsblock arbeitet als Set-Reset-Flip-Flop mit folgenden Eigenschaften:
 
 - Bei einem S-Ereignis wird der interne Zustand auf SET gesetzt und der Ausgang Q auf TRUE
@@ -46,6 +53,7 @@ Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe a
 - **Adapter-Kommunikation**: Der Baustein stellt seinen Zustand über den Adapter `Q` zur Verfügung.
 
 ## Zustandsübersicht
+
 1. **START**: Initialzustand
 2. **SET**: Zustand nach S-Ereignis, Ausgang Q.D1 = TRUE
 3. **RESET**: Zustand nach R-Ereignis, Ausgang Q.D1 = FALSE
@@ -57,16 +65,19 @@ Zustandsübergänge:
 - RESET → SET: Bei S-Ereignis
 
 ## Anwendungsszenarien
+
 - Speicherung von Schaltzuständen in verteilten Steuerungsanwendungen
 - Zustandsverwaltung über Adapterschnittstellen
 - Signalverarbeitung mit Speicherfunktion
 - Überwachung von Betriebszuständen
 
 ## Verwandte Bausteine
+
 - **[AX_RS](AX_RS.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
 - **[E_SR](../../../../../StandardLibraries/events/E_SR.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu anderen Speicherelementen bietet AX_SR:
 
 - Klare Trennung von Set- und Reset-Funktionalität
@@ -91,4 +102,5 @@ Vergleich mit [E_SR](../../../../../StandardLibraries/events/E_SR.md)
 * [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
+
 Der AX_SR Funktionsblock stellt eine zuverlässige und einfach zu verwendende Lösung für bistabile Speicherfunktionen in verteilten Automatisierungssystemen dar. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und bietet eine klare, ereignisgesteuerte Schnittstelle für Set-Reset-Operationen.

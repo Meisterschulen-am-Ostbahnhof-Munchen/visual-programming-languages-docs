@@ -1,4 +1,5 @@
 # AIS_MUX_2
+
 ![AIS_MUX_2](./AIS_MUX_2.svg)
 
 * * * * * * * * * *
@@ -7,13 +8,9 @@ The function block `AIS_MUX_2` implements a generic multiplexer for the adapter 
 | Name | Type | Comment |
 |------|-----|------------|
 | `REQ` | Event | Sets the index K and triggers the switching. |
-
-
 | Name | Type | Comment |
 |------|-----|-----------|
 | `CNF` | Event | Confirms the adoption of the new index K. |
-
-
 | Name | Type | Comment |
 |------|-----|-----------|
 | `K` | UINT | Index for selecting the active input (0 = IN1, 1 = IN2). |
@@ -21,11 +18,17 @@ The function block `AIS_MUX_2` implements a generic multiplexer for the adapter 
 No data outputs are available. Adapter signals are forwarded via the adapter interfaces.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
@@ -34,6 +37,7 @@ No data outputs are available. Adapter signals are forwarded via the adapter int
 | Socket (Input) | `IN2` | `adapter::types::unidirectional::AIS` | Second input adapter (switched on when K = 1). |
 
 ## Functionality
+
 The component operates as a simple 2-to-1 multiplexer at the adapter level. As soon as the event `REQ` occurs, the value of `K` is evaluated:
 
 - If `K = 0` is present, the signals from adapter `IN1` are routed to output adapter `OUT`.
@@ -49,7 +53,6 @@ The switchover process takes place within a single execution sequence, so no int
 - **Type Hash**: An attribute `TypeHash` is present but is left empty by default. It enables cryptographic checksums for runtime identification, if needed.
 - **Event-Driven**: Switching occurs only on an explicit `REQ` signal; without this signal, the last active output remains active.
 
-
 The function block implicitly has two states, which are traversed by the event `REQ`:
 
 | State | Description |
@@ -62,14 +65,17 @@ A graphical state machine is not part of the XML definition; its behavior is rep
 - **Source Switching**: Switching between two AIS data sources, e.g., different sensors or communication channels.
 - **Redundancy**: Switching to a backup input if the primary channel fails (controlled by higher-level logic).
 - **Testing & Diagnostics**: Temporary connection of a test adapter instead of the normal data stream.
-
 - **Standard Multiplexers (e.g., MUX)**: These usually operate on simple data types (INT, BOOL) and output a single data value. In contrast, the `AIS_MUX_2` operates on the entire adapter interface, allowing multiple related signals to be switched simultaneously.
 - **Adapter Selectors (e.g., SELECT)**: Comparable function blocks exist for other adapter types; this one is specifically tailored to the `AIS` type.
 
 The `AIS_MUX_2` is a compact and efficient function block for selecting between two AIS adapter inputs. Its generic declaration allows its use in various contexts, while the pure adapter interface simplifies integration into existing IEC 61499 systems. Its simple event-driven control makes it highly predictable and easily integrated into higher-level control logic.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

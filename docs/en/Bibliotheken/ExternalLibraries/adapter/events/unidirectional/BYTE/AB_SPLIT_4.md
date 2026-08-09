@@ -1,8 +1,10 @@
 # AB_SPLIT_4
+
 ![AB_SPLIT_4](./AB_SPLIT_4.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AB_SPLIT_4** is used to distribute a single incoming unidirectional adapter connection of type `AB` to four parallel outgoing adapter connections of the same type. It is designed as a generic block and enables the distribution of a data or signal flow across multiple downstream components.
 ## Interface Structure
 
@@ -48,6 +50,7 @@ This component functions as a passive splitter at the adapter level. As soon as 
 The function block does not have an internal state machine (ECC – Execution Control Chart). It behaves statically and forwards the data present at `IN` to all outputs throughout its entire runtime. There are no interrupt or initialization states.
 
 ## Application Scenarios
+
 - **Distributing Sensor Values:** A sensor delivers data via a `AB` adapter, which must be forwarded in parallel to several control modules or display units.
 - **Test and Diagnostic Environments:** A data stream is sent to a processing unit and simultaneously to a logging or monitoring component.
 - **Modular Systems:** Within a larger automation application, the function block can be used to split a common bus signal to several downstream function blocks.

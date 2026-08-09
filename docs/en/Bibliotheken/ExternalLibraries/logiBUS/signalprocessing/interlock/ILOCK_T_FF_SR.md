@@ -1,8 +1,10 @@
 # ILOCK_T_FF_SR
+
 ![ILOCK_T_FF_SR](./ILOCK_T_FF_SR.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ILOCK_T_FF_SR` is a composite function block (FB) that implements a latchable toggle flip-flop with set and reset functionality. It has an adapter interface (AE2) that enables bidirectional communication with other instances and serves for interlock chaining. The flip-flop toggles its output `Q` on every rising edge of the clock input `CLK`, provided no reset or set event is present. Latching is achieved via the adapters, which can be set by external function blocks.
 ## Interface Structure
 
@@ -56,6 +58,7 @@ This results in the toggle behavior: Each clock pulse reverses the current state
 After each state change, the event output `EO` is triggered.
 
 ## Technical Features
+
 - **Composite FB:** The block is implemented as a network of IEC 61499 elementary modules. This ensures transparent and traceable behavior.
 - **Bidirectional Adapters:** Using the adapter type `AE2` allows for flexible coupling as both a socket (input) and a plug (output).
 - **Conflict Handling:** If a set and a reset event occur simultaneously (e.g., `S` and `R`), the reset event takes precedence because the reset input of `E_SR` has multiple sources and is treated with priority. The exact priority is determined by the E_SR implementation (default: reset takes precedence over set).
@@ -85,11 +88,13 @@ A reset event (`R`) always results in the state FALSE, regardless of the current
 The adapter events act like an external reset and set the state to FALSE.
 
 ## Application Scenarios
+
 - **Interlock Control in Safety Circuits:** Several machines or drives should interlock with each other. Only one may be active at any given time. By chaining multiple `ILOCK_T_FF_SR` devices, it can be ensured that only one flip-flop is set at any given time.
 - **State Machines with Changing Modes:** This component is suitable as a toggle flip-flop that can be overridden by external set/reset signals, e.g., for manual intervention.
 - **Cascaded Circuits with Feedback:** The adapter interface allows for easy integration into existing AE2-based communication structures.
 
 ## Comparison with Similar Components
+
 - **Standard T-FF (IEC 61499)`E_T_FF`):** Offers only toggle functionality without separate set/reset inputs. The `ILOCK_T_FF_SR` extends this to include set and reset control.
 - **Standard SR flip-flop (e.g., `E_SR`):** Has only set and reset, no toggle. This component combines toggle with SR.
 - **Interlock component:** Many manufacturer-specific blocks implement interlock via buses; this component uses standardized adapters (AE2) and is therefore more portable.

@@ -1,9 +1,11 @@
 # AUI_CTU
+
 ![AUI_CTU](./AUI_CTU.svg)
 *Image of function block not available*
 
 * * * * * * * * * *
 ## Introduction
+
 The AUI_CTU is an event-driven up counter with an adapter interface. It increments the counter on every positive edge event at input `CU` and outputs the count via adapter `CV`. The output `Q` indicates whether the counter value (`CV`) has reached or exceeded the set limit (`PV`). The special feature of this implementation is the "On-Change" triggering: The event on the adapter `Q.E1` is only triggered if the logical state of `Q` actually changes. This reduces unnecessary events in subsequent processing.
 
 ## Interface Structure
@@ -50,16 +52,11 @@ This function block implements a finite state machine (ECC) with the following a
 Process:
 
 1. **Event `CU`** (and `CV < 65535`): Transition to state `CU`. The counter is incremented, `Q` is recalculated, and `CV.E1` and the event `CUO` are output.
-
 - If `Q` has changed compared to the last stored value (`Q_OLD`), the state changes to `EMIT_Q`.
 - Otherwise, the function block returns to state `START`.
-
 2. **Event `R`**: Transition to state `R`. The counter is reset, `Q` is recalculated, and `CV.E1` and `RO` are output. Then, analogous to `CU`, a decision is made whether to reach `EMIT_Q` or return to `START`.
-
 3. **Adapter event `PV.E1`** (limit change): Transition to state `UPDATE_PV`. The algorithm `UPDATE` recalculates `Q`. Here too, the state `EMIT_Q` is only traversed when `Q` changes.
-
 4. **State `EMIT_Q`**: Executes the algorithm `SAVE_Q` (stores the new `Q` value in `Q_OLD`) and sends the event `Q.E1`. Afterward, the function block always returns to `START`.
-
 4. **State `EMIT_Q`**: Executes the algorithm `SAVE_Q` (stores the new `Q` value in `Q_OLD`) and sends the event `Q.E1`.
 
 The function block then always returns to `START`.
@@ -88,6 +85,7 @@ The transitions are triggered by conditions:
 - `[Q.D1 <> Q_OLD]` / `[Q.D1 = Q_OLD]`Comparison of the current Q with the stored previous value.
 
 ## Application Scenarios
+
 - **Event Counter with Threshold Monitoring**: Counting pulses (e.g., workpieces on a conveyor belt) and triggering an action as soon as a specific threshold is reached.
 - **Level Monitoring**: Used as a limit switch that transmits a status when a setpoint is exceeded.
 - **State-Dependent Controls**: E.g., in batch processing where a process step should be triggered after a certain number of steps.
@@ -112,6 +110,7 @@ The `AUI_CTU` is a modern, adapter-based up-meter that stands out for its effici
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,8 +1,10 @@
 # AUI_LT
+
 ![AUI_LT](./AUI_LT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUI_LT` performs a less-than comparison (`<`) between two input values. It is accessed via adapter interfaces and is suitable for use in component-based automation systems according to IEC 61131-3. The block performs the comparison asynchronously and outputs the result as a Boolean value via an output adapter.
 ## Interface Structure
 
@@ -51,6 +53,7 @@ Der `AUI_LT`-Baustein ist als Composite-FB realisiert. Intern wird ein einzelner
 Der Vergleich erfolgt nach der Logik: **IN1.D1 < IN2.D1 ⇒ OUT.D1 = true**, andernfalls `false`.
 
 ## Technische Besonderheiten
+
 - **Adapterbasierte Kommunikation**: Alle Ein- und Ausgänge erfolgen über unidirektionale Adapter (Typen `AUI` und `AX`). Dies ermöglicht eine lose Kopplung und Wiederverwendung in verschiedenen Umgebungen.
 - **Asynchrone Auslösung**: Da beide Ereigniseingänge auf den gleichen `REQ` des internen `F_LT` führen, kann der Vergleich durch ein Ereignis an **einem** der beiden Eingänge gestartet werden. Es ist nicht erforderlich, dass beide Ereignisse gleichzeitig eintreffen.
 - **Typkompatibilität**: Der Baustein arbeitet mit beliebigen `ANY_BIT`-Datentypen (z. B. `BOOL`, `BYTE`, `WORD`, `DWORD`, `LWORD`), sofern die angeschlossenen Adapter dies unterstützen.
@@ -65,6 +68,7 @@ Da der `AUI_LT` keine explizite Zustandsmaschine besitzt, existiert lediglich ei
 | **Bereit** | Wartet auf ein Ereignis an IN1.E1 oder IN2.E1. Nach Auslösung wird der Vergleich durchgeführt und das Ergebnis über OUT ausgegeben. Der FB kehrt sofort in den Bereit-Zustand zurück. |
 
 ## Anwendungsszenarien
+
 - **Grenzwertüberwachung**: Prüfen, ob ein Messwert unter einem Schwellwert liegt, z. B. `Temperatur < Grenzwert`.
 - **Steuerungslogik**: Bedingte Aktivierung von Ausgängen, z. B. Ventil öffnen, wenn `Druck < Sollwert`.
 - **Interlock-Bedingungen**: Sicherheitsabfragen, bei denen ein Betrieb nur erlaubt ist, wenn eine Größe kleiner als eine andere ist.

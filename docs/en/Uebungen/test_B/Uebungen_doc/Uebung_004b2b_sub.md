@@ -1,13 +1,16 @@
 # Exercise_004b2b_sub: Sub-application for a Toggle Flip-Flop (E_SWITCH + E_SR)
+
 ![Uebung_004b2b_sub_network](./Uebung_004b2b_sub_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **toggle flip-flop** (also known as a switching element) using the function blocks `E_SWITCH` and `E_SR`. The goal is to toggle the Boolean output `Q` on each incoming event `IND`. The implementation is a sub-application that can be integrated as a reusable component into higher-level applications.
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Block: `Uebung_004b2b_sub`
+
 - **Type**: SubAppType (Subapplication)
 - **Internal FBs Used**:
 - **E_SWITCH_I1**: `E_SWITCH`
@@ -39,9 +42,7 @@ The output `Q` is routed back to the gate input `G` of `E_SWITCH`. This causes t
 ## Program Flow and Connections
 
 1. **Initial State**: At startup, the output `Q` of `E_SR` is initially `FALSE` (default).
-
 2. **First Event**: An event at the input `IND` reaches `E_SWITCH`. Since `G = FALSE` is present, the event is forwarded to the set input `S` of `E_SR`. `E_SR` sets `Q` to `TRUE` and outputs an event at `EO` (which is then forwarded to the outer output `EO` of the subapplication).
-
 3. **Second event**: Now `G = TRUE` is present. The next `IND` event is therefore fed to the reset input `R`, which resets `Q` back to `FALSE`. This process repeats with each subsequent event.
 
 The next `IND` event is therefore fed to the reset input `R`, which resets `Q` back to `FALSE`.
@@ -83,6 +84,7 @@ Exercise 004b2b demonstrates the simple implementation of a toggle flip-flop by 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

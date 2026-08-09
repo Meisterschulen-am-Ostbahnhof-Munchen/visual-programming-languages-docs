@@ -13,20 +13,25 @@ Der Funktionsbaustein `AX_SEL_LINT` ist ein Standard-Auswahlbaustein (Selection 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 * **EI0**: Löst die Übernahme des Datenwerts von `IN0` aus.
 * **EI1**: Löst die Übernahme des Datenwerts von `IN1` aus.
 
 ### **Ereignis-Ausgänge**
+
 * **CNF**: Bestätigungsereignis (Confirmation). Signalisiert, dass sich der ausgewählte Ausgangswert (`OUT`) geändert hat.
 
 ### **Daten-Eingänge**
+
 * **IN0** (LINT): Erster auswählbarer Daten-Eingangswert.
 * **IN1** (LINT): Zweiter auswählbarer Daten-Eingangswert.
 
 ### **Daten-Ausgänge**
+
 * **OUT** (LINT): Der aktuell selektierte Ausgangswert.
 
 ### **Adapter**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`): Unidirektionaler Adapter, der als Selektor fungiert. Er liefert das Schaltereignis (`E1`) und das Selektions-Datensignal (`D1`), welches bestimmt, welcher der Eingänge durchgeschaltet wird.
 
 ---

@@ -1,8 +1,10 @@
 # Exercise_004b3b_sub: Sub-application for a toggle flip-flop with an external RESET input and a SET output for latching
+
 ![Uebung_004b3b_sub_network](./Uebung_004b3b_sub_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This sub-application implements a toggle flip-flop with an external RESET input and a SET output for latching. It serves as a reusable component for applications where an output state is toggled with each event and can be reset as needed.
 
 ## Function Blocks (FBs) Used
@@ -10,6 +12,7 @@ This sub-application implements a toggle flip-flop with an external RESET input 
 The sub-application contains two function blocks:
 
 ### E_SWITCH (IEC 61499 Event Switch)
+
 - **Type**: `iec61499::events::E_SWITCH`
 - **Internal FBs Used** (no other sub-blocks present)
 - **Event Inputs**: `EI` (Event Input)
@@ -63,9 +66,7 @@ The sub-application has two event inputs (`IND` and `RESET`), two event outputs 
 
 - If `Q` = FALSE, the event is passed on to `EO0`, setting `E_SR` (Q becomes TRUE) and simultaneously activating the output `SET`.
 - If `Q` = TRUE, the event is passed on to `EO1`, resetting `E_SR` (Q becomes FALSE).
-
 3. After each state change of `E_SR`, an event is output to `EO`.
-
 4. An external event at input `RESET` forces the reset of `E_SR` (regardless of its current state) and also triggers an event at `EO`.
 
 This allows the sub-application to implement a toggle function: Each event at `IND` toggles the output `Q`. The output `SET` is activated when it changes from FALSE to TRUE and can be used for interlocking (e.g., setting another function block). The input `RESET` resets the state without affecting the toggle cycle.
@@ -77,6 +78,7 @@ In this exercise, a sub-application was created to implement a toggle flip-flop 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
 ]

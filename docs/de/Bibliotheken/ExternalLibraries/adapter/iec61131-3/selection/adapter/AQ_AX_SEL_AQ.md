@@ -13,20 +13,25 @@ Der Funktionsbaustein `AQ_AX_SEL_AQ` dient der binären Auswahl (Selektion) zwis
 Der Funktionsbaustein kommuniziert ausschließlich über standardisierte Adapter-Schnittstellen. Dies vereinfacht die Modellierung im Applikationsnetzwerk, da zusammengehörige Daten- und Ereignislinien gebündelt übertragen werden.
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignisverarbeitung erfolgt implizit über die Ereignisse der angeschlossenen Eingangs-Adapter (`IN0`, `IN1`, `G`).
 
 ### **Ereignis-Ausgänge**
+
 Der Baustein besitzt keine direkten Ereignis-Ausgänge. Die Weiterleitung von Ereignissen erfolgt über den Ausgangs-Adapter (`OUT`).
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge auf der Bausteinoberfläche vorhanden. Die Datenübergabe erfolgt gekapselt über die Sockets.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden. Die Datenbereitstellung erfolgt gekapselt über den Plug.
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`):
   * **Beschreibung**: Selektor (Auswahlsignal).
   * **Daten**: `D1` (Zustand des Selektors).
@@ -41,6 +46,7 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Die Datenbereitstellung erfolg
   * **Ereignis**: `E1` (Trigger bei Wertänderung an IN1).
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AQ`):
   * **Beschreibung**: Der ausgewählte Ausgangskanal.
   * **Daten**: `D1` (Ausgangswert des selektierten Eingangs).

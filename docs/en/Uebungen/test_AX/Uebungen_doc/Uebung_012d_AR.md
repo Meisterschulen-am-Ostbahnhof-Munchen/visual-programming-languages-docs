@@ -1,11 +1,14 @@
 # Exercise_012d_AR: Numeric Value Input PHYS and Storage NVS (AR Adapter, plain)
+
 ![Uebung_012d_AR_network](./Uebung_012d_AR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the acquisition of a numeric value via a physical input (PHYS), the storage of the value in non-volatile memory (NVS), and the subsequent output. Communication between the function blocks is handled via an AR adapter (adapter interface), without the use of sub-blocks.
 
 ## Function Blocks (FBs) Used
+
 - **InputNumber_I3**
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`
 - **Parameters**:
@@ -30,9 +33,7 @@ This exercise demonstrates the acquisition of a numeric value via a physical inp
 The function blocks are connected via adapter interfaces:
 
 1. **Input**: The block `InputNumber_I3` reads the current value of a physical numeric input (e.g., potentiometer or sensor) and provides it at the output adapter `rPhys`.
-
 2. **Storage and Transmission**: The adapter output `InputNumber_I3.rPhys` is connected to the adapter input `NVS_AR.AR_IN`. The module `NVS_AR` stores the received value under the key `KEY_I1_STORE` in non-volatile memory and outputs the stored value (or, if no value is present, the default value) via the output adapter `AR_OUT`.
-
 3. **Output**: The adapter output `NVS_AR.AR_OUT` is connected to the adapter input `Q_NumericValue.rPhys`. The module `Q_NumericValue` outputs the received value on the physical output `OutputNumber_N3` (e.g., a display or analog signal).
 
 **Learning Objectives of the Exercise:**
@@ -51,4 +52,5 @@ The exercise `Uebung_012d_AR` implements a simple pipeline: physical input → s
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

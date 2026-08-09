@@ -1,8 +1,10 @@
 # UDINT_AUI_AX_SEL
+
 ![UDINT_AUI_AX_SEL](./UDINT_AUI_AX_SEL.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUI_AX_SEL** implements a binary selection between two input values. The selection is controlled via an adapter of type `AX`, which typically provides an axis position or a digital state. This block is used for flexible switching of signal sources in automation solutions.
 ## Interface Structure
 
@@ -43,14 +45,13 @@ The function block **UDINT_AUI_AX_SEL** implements a binary selection between tw
 The function block (FB) operates in an event-driven manner:
 
 1. Upon an event at `EI0`, the current value of `IN0` is internally adopted.
-
 2. Upon an event at `EI1`, the current value of `IN1` is internally adopted.
-
 3. The selection signal `G.D1` is continuously obtained via the adapter `G`. When `G.D1 = FALSE` is present, the value of `IN0` is forwarded to the output `OUT`; when `G.D1 = TRUE` is present, the value of `IN1` is output. 4. After successful internal processing, an event is sent at output `CNF` to confirm the selection.
 
 The actual selection logic is implemented by an internal `F_SEL` function block (IEC 61131), which controls the two buffered values based on the selection signal `G.D1`.
 
 ## Technical Features
+
 - **Flexible Input `IN0`**: The first input is declared as `ANY_ELEMENTARY`, allowing it to accept various elementary data types. The second input and the output are fixed to `UINT` – type conversion must be done externally.
 - **Adapter-based control**: Selection is not made via a direct Boolean input, but via the adapter `AX`. This allows for loose coupling to physical or logical axis signals.
 - **Event-driven update**: The values of `IN0` and `IN1` are only updated by explicit events, not cyclically. This ensures deterministic selection control.
@@ -61,6 +62,7 @@ The actual selection logic is implemented by an internal `F_SEL` function block 
 The function block does not have an explicit state machine. The sequence control is purely event-driven via the event inputs and the internal `F_SEL`. The input values are latched at the corresponding events and then continuously switched according to the selection signal.
 
 ## Application Scenarios
+
 - **Axis-Dependent Signal Selection**: In a machine tool, switching between two measurement signal sources is possible via the axis position (provided by the `AX` adapter).
 - **Redundant Sensor Selection**: With two sensors that deliver different values (e.g., one analog and one digital), the function block selects the active value based on an operating mode signal.
 - **Configurable Operating Modes**: An adapter provides a switching command (0/1), thus enabling selection between two predefined setpoints.

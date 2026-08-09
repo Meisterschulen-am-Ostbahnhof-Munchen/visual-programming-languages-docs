@@ -1,6 +1,8 @@
 # I_VDS
+
 * * * * * * * * * *
 ## Introduction
+
 The **I_VDS** function block (Vehicle Direction/Speed) is an ISO 11783-7 compliant system for the precise detection of vehicle direction, speed, and inclination, developed under the EPL-2.0 license.
 The block integrates navigation data for modern agricultural machinery and commercial vehicles.
 ![I_VDS](I_VDS.svg)
@@ -8,14 +10,17 @@ The block integrates navigation data for modern agricultural machinery and comme
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization Request (with qualifier `QI`)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization Confirmation (with status)
 - `IND`: Data Indication with Navigation Parameters
 - `TIMEOUT`: Timeout Event
 
 ### **Data Inputs**
+
 - `QI` (BOOL): Qualifier for Initialization
 
 ### **Data Outputs**
@@ -32,17 +37,12 @@ The block integrates navigation data for modern agricultural machinery and comme
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with `QI`=TRUE starts the GPS/navigation system
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-
 2. **Data Update**:
-
 - `IND` provides continuously updated navigation data
 - Standard update rate: 100ms for real-time applications
-
 3. **Error Handling**:
-
 - `TIMEOUT` in case of signal loss or communication errors
 - Status messages in the `STATUS` field
 
@@ -57,6 +57,7 @@ The block integrates navigation data for modern agricultural machinery and comme
 ✔ **Extended sensor data** (pitch angle/altitude reserved)
 
 ## Application Scenarios
+
 - **Precision agriculture**: Automatic guidance
 - **Fleet management**: Real-time tracking and speed monitoring
 - **Slope detection**: Safety systems for slopes
@@ -81,6 +82,7 @@ Update Rate | 10 Hz | 1 Hz | 20 Hz |
 ISO Compliance | Full | Partial | Full |
 
 ## 🛠️ Related Exercises
+
 * [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)]
 * [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
 

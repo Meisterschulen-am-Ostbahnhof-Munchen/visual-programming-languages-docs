@@ -1,8 +1,11 @@
 # AE_DELAY
+
 * * * * * * * * * *
 ## Introduction
+
 The **AE_DELAY** function block is a wrapper for the standard IEC 61499 function block `E_DELAY`, specifically designed for use with **Event Adapters (AE)**. It enables the delayed forwarding of events within an adapter-based architecture. Instead of conventional event pins, this function block uses adapter sockets and plugs to receive start and stop signals and output the delayed event.
 ## Interface Structure
+
 The function block encapsulates the functionality of an on-delay timer in adapter interfaces.
 
 ### **Event Inputs**
@@ -38,14 +41,12 @@ This function block does not have any data outputs.
 The **AE_DELAY** block acts as a bridge between the adapter world and the classic `E_DELAY` timer:
 
 1. **Initialization:** The desired delay time is set via the data input `DT`. This can be updated via the event `REQ`.
-
 2. **Starting the Timer:** When an event (usually `E1`) arrives at the adapter socket **START**, it is internally forwarded to the `START` input of the embedded `E_DELAY` block. The timer then starts running.
-
 3. **Time Expiration:** Once the time `DT` has elapsed, the internal timer generates an event. This is forwarded to the adapter plug **EO** (event `E1`).
-
 4. **Stopping:** When an event arrives at the adapter socket **STOP**, the running timer is immediately stopped and reset. No event is generated at output `EO`.
 
 ## Technical Details
+
 * **Package Membership:** The function block is part of the package `adapter::events::unidirectional::timers`.
 * **Encapsulation:** It contains an instance of `iec61499::events::E_DELAY`.
 * **Adapter Type:** Uses the unidirectional event adapter `AE` (`adapter::types::unidirectional::AE`), which typically carries a single event (`E1`).
@@ -60,6 +61,7 @@ The function block itself does not have an explicit state machine (ECC) because 
 * **Reset:** A signal at `STOP` during the *Timing* phase immediately resets the block to the idle state.
 
 ## Application Scenarios
+
 * **Adapter-Based Controllers:** Ideal for systems that rely heavily on adapter connections to reduce the "spaghetti code" of individual connections.
 * **Delayed Signal Chains:** Inserting delays into an event chain that is logically grouped by adapters.
 * **Process Control:** Delayed start of units or processes controlled via standardized AE interfaces.
@@ -79,4 +81,5 @@ The **AE_DELAY** is an indispensable tool for developers who want to leverage th
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

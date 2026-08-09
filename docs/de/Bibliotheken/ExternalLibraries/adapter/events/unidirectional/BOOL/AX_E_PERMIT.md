@@ -22,9 +22,11 @@ Der Baustein **AX_E_PERMIT** realisiert eine bedingte Ereignisweitergabe (permis
 | EO   | Event | Ereignisausgang |
 
 ### **Daten-Eingänge**
+
 Der Baustein besitzt keine eigenen Dateneingänge. Das Freigabesignal wird über einen Adapter bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine Datenausgänge.
 
 ### **Adapter**

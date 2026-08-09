@@ -1,8 +1,10 @@
 # AI_SPLIT_3
+
 ![AI_SPLIT_3](./AI_SPLIT_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AI_SPLIT_3** is a generic function block for duplicating an analog input signal (AI). It splits an incoming AI signal into three separate, identical output signals. The function block is entirely defined via adapters of type `AI` and operates purely in a data flow-oriented manner without its own event or data point interfaces.
 ## Interface Structure
 
@@ -42,6 +44,7 @@ The functional block forwards the analog signal received via socket `IN` unchang
 Since no events or state machines are present, the signal is passed purely via data flow. As soon as a new AI signal is present at `IN`, it is available at all three outputs.
 
 ## Technical Features
+
 - **Generic Function Block:** The function block is identified as `eclipse4diac::core::GenericClassName` using `'GEN_AI_SPLIT'`. This allows it to be used in various applications for different AI data types without requiring modification of the function block itself.
 - **Pure Adapter Interface:** No direct event or data inputs/outputs are required. All data transmission occurs via the adapters, enabling flexible coupling with other function blocks.
 - **No State Logic:** The function block does not have its own state machine (ECC) – its functionality is purely data flow-based and therefore very lightweight.
@@ -51,11 +54,13 @@ Since no events or state machines are present, the signal is passed purely via d
 The function block has **no** state machine or internal states. Signals are passed directly and without delay. Therefore, a state overview is not required.
 
 ## Application Scenarios
+
 - **Signal Distribution in Automation Systems:** An analog measured value (e.g., pressure sensor, temperature) is to be transmitted to multiple control or monitoring units.
 - **Redundancy and Parallel Processing:** The same AI signal is required in parallel for different algorithms (e.g., control, alarming, logging).
 - **Test Environments:** A simulated analog value can be distributed simultaneously to multiple components under test.
 
 ## Comparison with Similar Components
+
 - **AI_SPLIT_2:** Distributes the input signal to two outputs instead of three.
 - **AI_SPLIT_4 / AI_SPLIT_N:** Extended versions with four or more outputs (if available).
 - **AI_SELECT:** Selects one input from multiple inputs instead of duplicating a signal.
@@ -70,4 +75,5 @@ The **AI_SPLIT_3** is a simple yet effective block for multiplying an analog sig
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

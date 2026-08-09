@@ -1,8 +1,10 @@
 # AQ_DEMUX_3
+
 ![AQ_DEMUX_3](./AQ_DEMUX_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AQ_DEMUX_3** implements a generic demultiplexer for analog signals (AQ – Analog Quantity). It routes the signal present at its input adapter to one of three output adapters. The active output is selected via the index parameter K, which is set by an event at the **REQ** input. The block is designed as a **generic FB** and can be used in IEC 61499-based control systems for flexible signal distribution.
 ## Interface Structure
 
@@ -38,11 +40,8 @@ No standalone data outputs. The output data is provided via the adapter outputs.
 ## Functionality
 
 1. The module waits for an event at input `REQ`.
-
 2. Upon receiving this event, the current value of data input `K` is read.
-
 3. Depending on the value of `K` (1, 2, or 3), the corresponding output adapter (`OUT1`, `OUT2`, or `OUT3`) is activated, and the signal present at the adapter input `IN` is routed to it.
-
 4. After the switchover, the confirmation event `CNF` is output.
 
 The module behaves like a 1-to-3 demultiplexer: The input signal is always routed to only one of the three outputs. The other two outputs do not provide a valid value (usually 0 or undefined).
@@ -65,6 +64,7 @@ The function block (FB) does not have a state machine explicitly defined in the 
 After a valid `REQ`, the **Processing** state is entered, followed immediately by **Idle**.
 
 ## Application Scenarios
+
 - **Dividing an analog sensor signal** to various actuators or downstream control blocks.
 - **Switching between multiple consumers** (e.g., depending on the operating mode or product recipe).
 - **Test and diagnostic environments** where a signal must be selectively routed to different analysis paths.

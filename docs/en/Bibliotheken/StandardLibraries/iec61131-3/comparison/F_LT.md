@@ -1,4 +1,5 @@
 # F_LT
+
 ![F_LT](https://user-images.githubusercontent.com/116869307/214144532-b5430c89-2a21-4998-9685-34848ef4d5d1.png)
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_lt.html>
 * * * * * * * * * *
@@ -54,6 +55,7 @@ IF LT(EnergieVerbrauch, Grenzwert) THEN
 // Energieeinsparmaßnahmen deaktivieren
 END_IF
 ### Advantages of the LT Operator
+
 - **Simple Logic:** The LT operator allows complex conditions to be formulated in simple, easily understandable expressions.
 - **Flexibility:** The operator can be applied to various numeric data types, including integers and floating-point numbers.
 - **Efficiency:** By being directly integrated into function blocks, the LT operator reduces the need for additional programming and makes the code more efficient.

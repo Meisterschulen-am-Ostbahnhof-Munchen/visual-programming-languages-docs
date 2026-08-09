@@ -1,8 +1,10 @@
 # AUDI_DEMUX_5
+
 ![AUDI_DEMUX_5](./AUDI_DEMUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUDI_DEMUX_5` is a generic demultiplexer for the unidirectional `AUDI` adapter. It forwards an adapter value present at its input adapter `IN` to one of five output adapters (`OUT1` to `OUT5`). The target adapter is selected via the data input `K`.
 ## Interface Structure
 
@@ -51,6 +53,7 @@ No data outputs available.
 This module operates as a 1-to-5 demultiplexer. As soon as a signal arrives at the event input `REQ`, the current value of the input `K` is evaluated (an integer value between 1 and 5 is expected). The adapter value present at the adapter socket `IN` is then passed through to the output adapter (`OUT1` to `OUT5`) determined by `K`. After successful switching, the event output `CNF` is sent to confirm processing.
 
 ## Technical Features
+
 - The function block is implemented as a **generic FB**, identified by the attribute `GenericClassName` with the value `'GEN_AUDI_DEMUX'`. This allows for easy adaptation to a different number of outputs.
 - No time delays or state machines are defined in the FB; switching is event-driven and instantaneous.
 - All adapters used are of type `adapter::types::unidirectional::AUDI`, which is designed for directed data transmission.
@@ -60,12 +63,11 @@ This module operates as a 1-to-5 demultiplexer. As soon as a signal arrives at t
 The function block does not have an explicit state machine. Its behavior can be reduced to a simple sequence:
 
 1. Wait for event `REQ`.
-
 2. Read `K`.
-
 3. Switch `IN` to the corresponding output adapter. 4. Sending `CNF`.
 
 ## Application Scenarios
+
 - **Audio/Signal Distribution:** An incoming audio stream (via the `AUDI` adapter) is routed to one of five different processing paths or output devices, depending on the selected index.
 - **Routing Systems:** In modular automation solutions, this component can be used to dynamically switch data flows.
 - **Test Environments:** Switching between different test sources to a common destination, or vice versa.

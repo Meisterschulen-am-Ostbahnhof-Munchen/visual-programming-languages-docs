@@ -1,9 +1,11 @@
 # ALI_TO_ALR
+
 ![ALI_TO_ALR](./ALI_TO_ALR.svg)
 *(Image not available)*
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ALI_TO_ALR** is a composite function block that converts an **ALI adapter** (LINT data type) to an **ALR adapter** (LREAL data type). It acts as a bridge between different adapter interfaces and enables seamless data conversion from 64-bit integers to 64-bit floating-point numbers.
 
 ## Interface Structure
@@ -36,13 +38,9 @@ Similarly, there are no separate data outputs. The converted LREAL value is outp
 The function block operates as a simple forwarder and converter:
 
 1. An event at **Socket** `ALI_IN.E1` triggers the internal function block `Convert` (type `F_LINT_TO_LREAL`).
-
 2. Simultaneously, the LINT value from `ALI_IN.D1` is passed to input `Convert.IN`.
-
 3. The conversion block `Convert` converts the value into an LREAL value according to IEC 61131 conversion logic.
-
 4. After the conversion is complete, `Convert` generates the event `CNF`, which is forwarded to the **plug** `ALR_OUT.E1`.
-
 5. At the same time, the converted LREAL value from `Convert.OUT` is passed to `ALR_OUT.D1`.
 
 The entire process is event-driven and does not use its own state logic.
@@ -61,6 +59,7 @@ The FB does not have its own state machine. Execution follows the event chain of
 - Idle → Event sent to `ALI_IN.E1` → Conversion in progress → Result event sent to `ALR_OUT.E1` → Returns to Idle.
 
 ## Application Scenarios
+
 - Integration of components that provide LINT values (e.g., counters, position sensors) into systems that expect LREAL (e.g., control algorithms with floating-point calculations).
 - Conversion from integer-based to floating-point-based adapter interfaces without changing the higher-level architecture.
 - Intermediate layer in modular control projects where different data types need to be connected.

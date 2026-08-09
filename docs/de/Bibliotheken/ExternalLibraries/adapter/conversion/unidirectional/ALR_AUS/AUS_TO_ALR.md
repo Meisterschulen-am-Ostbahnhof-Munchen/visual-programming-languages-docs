@@ -11,15 +11,19 @@ Der Funktionsblock **AUS_TO_ALR** ist ein Composite-Baustein, der einen **AUS-Ad
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine separaten Ereignis-Eingänge vorhanden. Die Ereignisweiterleitung erfolgt über den **AUS_IN**‑Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Keine separaten Ereignis-Ausgänge vorhanden. Die Ereignisweiterleitung erfolgt über den **ALR_OUT**‑Adapter.
 
 ### **Daten-Eingänge**
+
 Keine separaten Daten-Eingänge vorhanden. Die Datenweiterleitung erfolgt über den **AUS_IN**‑Adapter.
 
 ### **Daten-Ausgänge**
+
 Keine separaten Daten-Ausgänge vorhanden. Die Datenweiterleitung erfolgt über den **ALR_OUT**‑Adapter.
 
 ### **Adapter**

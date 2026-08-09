@@ -1,8 +1,10 @@
 # Exercise_011f_PHYSA: Passing Through Numeric Value Input I1 to N3 with PHYSA (Physical Values)
+
 ![Uebung_011f_PHYSA_network](./Uebung_011f_PHYSA_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the direct pass-through of a physical value (PHYSA) without conversion. An incoming numeric value from interface `InputNumber_I3` is passed unchanged to output interface `OutputNumber_N3`. The exercise illustrates how to handle physical values in an ISOBUS context and the simple connection of input and output modules.
 
 ## Function Blocks Used (FBs)
@@ -10,6 +12,7 @@ This exercise demonstrates the direct pass-through of a physical value (PHYSA) w
 Two predefined function blocks are used in the subapp:
 
 ### NumericValue_PHYSA
+
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`
 - **Parameters**:
 - `QI` = `TRUE` (Block enable)
@@ -19,6 +22,7 @@ Two predefined function blocks are used in the subapp:
 This function block reads the physical value from the input address `InputNumber_I3`. It is configured so that the value is provided directly (without conversion) at the adapter output `rPhys`.
 
 ### Q_NumericValue_PHYSA
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameters**:
 - `stObj` = `OutputNumber_N3` (reference to the output address)
@@ -48,6 +52,7 @@ Exercise **Exercise_011f_PHYSA** implements a simple pass-through of a physical 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -4,11 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert den Einsatz des **Reset-dominanten Toggle-Flipflops (AX_FB_RS_T_FF)** mit Adapter-Schnittstelle in der 4diac-IDE.  
 Das Flipflop besitzt drei Eingänge (SET, RESET1, CLK) und einen Ausgang (Q1). Die Schaltung wird über digitale logiBUS-Eingänge (Input_I1 als SET, Input_I2 als RESET, Input_I3 als Takt) gesteuert. Das Ausgangssignal wird auf den logiBUS-Ausgang Output_Q1 gelegt.  
 Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verstehen und die Verdrahtung mit Adapter-FBs nachzuvollziehen.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 - **DigitalInput_SET** (Typ: `logiBUS_IXA`): Liest den logiBUS-Eingang `Input_I1` (SET-Signal).
 - **DigitalInput_RESET** (Typ: `logiBUS_IXA`): Liest den logiBUS-Eingang `Input_I2` (RESET-Signal).
 - **DigitalInput_CLK** (Typ: `logiBUS_IXA`): Liest den logiBUS-Eingang `Input_I3` (Taktsignal).
@@ -29,6 +31,7 @@ Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verste
 | DigitalOutput_Q1 | `Output` | `Output_Q1` |
 
 ## Programmablauf und Verbindungen
+
 Die logiBUS-Eingänge werden über die Funktionsbausteine `DigitalInput_SET`, `DigitalInput_RESET` und `DigitalInput_CLK` ausgelesen und als Adapter-Sockets an das Flipflop `RS_T_FF` weitergegeben.
 
 **Verbindungen (AdapterConnections):**
@@ -54,9 +57,11 @@ Die logiBUS-Eingänge werden über die Funktionsbausteine `DigitalInput_SET`, `D
 **Vorkenntnisse:** Grundlegende Kenntnisse über Flipflops und die 4diac-IDE.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_006a4_AX_RS` realisiert ein reset-dominantes Toggle-Flipflop mit drei logiBUS-Eingängen und einem Ausgang. Durch die Adapter-Schnittstelle des Flipflops wird eine klare, funktionale Verbindung zwischen Hardware-Ein-/Ausgängen und der Logik des Bausteins erreicht. Die dominante RESET-Funktion sorgt für ein sicheres Grundverhalten in Steuerungsanwendungen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

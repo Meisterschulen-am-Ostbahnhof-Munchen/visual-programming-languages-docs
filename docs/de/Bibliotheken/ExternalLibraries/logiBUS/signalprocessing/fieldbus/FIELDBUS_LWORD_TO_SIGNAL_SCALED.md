@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL_SCALED** dient der Umwandlung eines als **LWORD** vorliegenden Feldbus-Rohsignals in einen skalierten **LREAL**-Ausgangswert. Er spiegelt das Eingangssignal auf den Ausgang, sofern das Signal gültig ist, und wendet dabei eine lineare Skalierung an. Der Baustein ist für den Einsatz in der industriellen Automatisierung, insbesondere im Kontext von Feldbussystemen, konzipiert.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
@@ -37,9 +39,11 @@ Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL_SCALED** dient der Umwandlung eine
 | VALID  | BOOL  | FALSE       | Gibt an, ob das Eingangssignal gültig ist (TRUE = gültig)   |
 
 ### **Adapter**
+
 Keine Adapter vorhanden.
 
 ## Funktionsweise
+
 Der Baustein besitzt zwei Algorithmen, die durch die Ereignisse **INIT** und **REQ** ausgelöst werden.
 
 - **INIT** (bei Ereignis `INIT`): Der Algorithmus ist leer, setzt jedoch den Ausgangs-Ereignis `INITO`. Dies ermöglicht die Initialisierung der Skalierungsparameter (SCALE und OFFSET) über den INIT-Aufruf, ohne dass eine sofortige Verarbeitung stattfindet.
@@ -57,6 +61,7 @@ Der Baustein besitzt zwei Algorithmen, die durch die Ereignisse **INIT** und **R
 Die Skalierung erfolgt also linear: `OUT = IN_als_LREAL * SCALE + OFFSET`. Der Standardwert von `SCALE` ist 1.0, der von `OFFSET` ist 0, sodass ohne Anpassung eine identische Übertragung stattfindet.
 
 ## Technische Besonderheiten
+
 - **Gültigkeitsprüfung**: Der Baustein nutzt zwei importierte Konstanten:
   - `NOT_AVAILABLE_LWM`: Initialwert für den Eingang `IN` (kennzeichnet „nicht verfügbar“).
   - `VALID_SIGNAL_LW`: Grenzwert, bis zu dem ein Signal als gültig gilt (inklusive).
@@ -76,11 +81,13 @@ Die Skalierung erfolgt also linear: `OUT = IN_als_LREAL * SCALE + OFFSET`. Der S
 Der Baustein wechselt zwischen diesen beiden Zuständen nur durch die entsprechenden Ereignisse. Es gibt keinen expliziten Übergang nach der Initialisierung in einen Wartezustand; der Baustein bleibt so lange im letzten Zustand, bis ein neues Ereignis eintrifft.
 
 ## Anwendungsszenarien
+
 - **Analogwerte aus dem Feldbus**: Ein LWORD-Rohwert von einem analogen Eingangsmodul (z. B. 0…10 V, skaliert als Rohwert) wird mit Hilfe von SCALE und OFFSET in einen physikalischen Wert (z. B. Druck, Temperatur) umgerechnet.
 - **Gültigkeitsfilter**: Signale, die außerhalb des zulässigen Bereichs liegen (z. B. Drahtbruch oder Überlauf), werden durch die Gültigkeitsprüfung erkannt und als ungültig markiert, während der Ausgang auf 0 gesetzt wird.
 - **Initialisierung von Parametern**: Die Skalierung kann beim Start der Steuerung über das INIT-Ereignis konfiguriert werden, ohne dass die eigentliche Verarbeitung bereits läuft.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **FIELDBUS_LREAL_TO_SIGNAL_SCALED**: Ein analoger Baustein für LREAL-Eingänge, der eine ähnliche Gültigkeitsprüfung und Skalierung bietet.
 - **FIELDBUS_SINT_TO_SIGNAL_SCALED**: Für vorzeichenbehaftete 8-Bit-Werte.
 - **Einfache Skalierer ohne Gültigkeitsprüfung**: Bausteine wie `SCALE` oder `MUL_ADD` bieten nur die mathematische Operation, jedoch keine Feldbus-spezifische Gültigkeitserkennung.
@@ -88,4 +95,5 @@ Der Baustein wechselt zwischen diesen beiden Zuständen nur durch die entspreche
 Der vorliegende Baustein kombiniert die Gültigkeitsprüfung (über den Grenzwert `VALID_SIGNAL_LW`) mit einer linearen Skalierung und eignet sich daher besonders für Feldbus-Anwendungen, bei denen die Gültigkeit des Signals vor der Weiterverarbeitung sichergestellt werden muss.
 
 ## Fazit
+
 **FIELDBUS_LWORD_TO_SIGNAL_SCALED** ist ein kompakter, aber leistungsfähiger Funktionsblock zur Verarbeitung von Feldbus-Signalen im LWORD-Format. Er bietet eine einfache Skalierung, eine integrierte Gültigkeitsprüfung und eine saubere Trennung von Initialisierung und Ausführung. Durch die Verwendung standardisierter Importe (`VALID_SIGNAL_LW`) lässt er sich leicht in bestehende Bibliotheken integrieren und an spezifische Feldbusprotokolle anpassen. Der Baustein ist unter der Eclipse Public License 2.0 verfügbar und eignet sich für den Einsatz in industriellen Steuerungssystemen mit IEC 61499-konformen Laufzeitumgebungen.

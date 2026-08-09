@@ -30,6 +30,7 @@ Der Funktionsblock **AR_D_FF_HYS_TMIN** realisiert ein Data-Latch (D-Flip-Flop) 
 | Tmin        | TIME | Mindestzeit zwischen zwei Ausgabeereignissen (inter-disposal time). Verhindert zu schnelles Weiterschalten. |
 
 ### **Daten-Ausgänge**
+
 Der FB besitzt keine eigenständigen Datenausgänge; die Ausgabedaten werden über den Adapter **Q** bereitgestellt.
 
 ### **Adapter**

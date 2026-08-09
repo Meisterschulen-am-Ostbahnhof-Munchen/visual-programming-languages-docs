@@ -11,17 +11,21 @@ Der Funktionsblock `SPLIT_AL_INTO_AD` dient dazu, einen eingehenden **AL (LWORD)
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **nicht direkt vorhanden**  
   Ereignisse werden über den SOCKET-Adapter `IN` (Signale `IN.E1`) empfangen. Intern löst dies die Verarbeitung aus.
 
 ### **Ereignis-Ausgänge**
+
 - **nicht direkt vorhanden**  
   Die Ausgabeereignisse erfolgen über die PLUG-Adapter `DWORD_00.E1` und `DWORD_01.E1`, sobald ein neuer Wert bereitsteht.
 
 ### **Daten-Eingänge**
+
 - **IN.D1** – Eingangsdaten (`LWORD`) aus dem SOCKET-Adapter `IN`.
 
 ### **Daten-Ausgänge**
+
 - **DWORD_00.D1** – Erstes aufgeteiltes DWORD (Low-Teil) am PLUG-Adapter `DWORD_00`.
 - **DWORD_01.D1** – Zweites aufgeteiltes DWORD (High-Teil) am PLUG-Adapter `DWORD_01`.
 

@@ -1,8 +1,10 @@
 # Exercise_218: Standard IEC 61131-3 FB_CTD_UDINT (Countdown Counter, UDINT) with Terminal Output
+
 ![Uebung_218_network](./Uebung_218_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a downcounter according to IEC 61131-3 (type `FB_CTD_UDINT`). The function block counts down on each falling edge at the input `CD` (Count Down), starting from the preset value `PV` (Preset Value). The counter can be reset to the starting value via a load input (`LD`). The current counter reading (`CV`) is output to a terminal, and the output `Q` is set as soon as the counter reading reaches zero.
 The hardware connection is established via two digital inputs (I1, I2) and one digital output (Q1), as well as a terminal output for numerical values. The entire configuration is implemented as a subapplication in the 4diac IDE.
 
@@ -23,12 +25,9 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 ### Event Control
 
 1. **Event Source:**
-
 - `Input_CD.IND` (signal from button I1) is connected to `FB_CTD_UDINT.REQ`.
 - `Input_LD.IND` (signal from button I2) is also connected to `FB_CTD_UDINT.REQ`.
-
 2. **Event Sink:**
-
 - `FB_CTD_UDINT.CNF` (counter confirmation) triggers two actions:
 - `Output_Q1.REQ` (digital output Q1 is updated).
 - `Q_NumericValue.REQ` (Terminal display update).
@@ -43,12 +42,14 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 | `FB_CTD_UDINT.CV` | `Q_NumericValue.u32NewValue` | Current counter reading (as a 32-bit value) to the terminal. |
 
 ### Functionality
+
 - After startup, the counter is set to the preset value `PV = 10` by the loading signal (`LD`).
 - Each negative signal at the `CD` input (button I1) decrements the counter by 1.
 - As soon as the counter reading reaches zero, the output `Q` is set to `TRUE`, and the digital output Q1 (lamp) illuminates.
 - The current counter reading (`CV`) is continuously displayed on the terminal (object `OutputNumber_N1`).
 
 ### Learning Objectives & Prerequisites
+
 - **Difficulty Level:** Easy
 - **Prerequisites:** Basic knowledge of IEC 61131-3 and familiarity with the 4diac IDE.
 - **Learning Objectives:**
@@ -63,6 +64,7 @@ Exercise 218 implements a complete down counter using the IEC 61131-3 standard m
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

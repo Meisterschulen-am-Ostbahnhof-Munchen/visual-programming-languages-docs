@@ -1,8 +1,10 @@
 # AUDI_TO_AB
+
 ![AUDI_TO_AB](./AUDI_TO_AB.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AUDI_TO_AB** function block is a composite function block (FB) that converts a UDINT interface (AUDI, 32-bit unsigned integer) into a BYTE interface (AB, 8-bit). It encapsulates the conversion logic and provides two unidirectional adapters: a socket for the AUDI input and a plug for the AB output. This function block is typically used to enable data communication between systems that use different data types via adapters.
 ## Interface Structure
 
@@ -40,19 +42,15 @@ The **AUDI_TO_AB** function block is a composite function block (FB) that conver
 ## Functionality
 
 1. An external system sends an event via the adapter `AUDI_IN` (E1).
-
 2. This event triggers the internal conversion block `F_UDINT_TO_BYTE` (from the IEC 61131 library) via its `REQ` input.
-
 3. Simultaneously, the current data value from `AUDI_IN.D1` is transferred to the `IN` input of the conversion module.
-
 4. The conversion module converts the UDINT value into a BYTE value and stores the result at its `OUT` output.
-
 5. After the conversion is complete, `F_UDINT_TO_BYTE` sends an acknowledgment event (`CNF`), which is forwarded to the `AB_OUT` adapter (E1).
-
 6. Simultaneously, the converted BYTE value is output to `AB_OUT.D1` and is available to the receiving system.
 ...``         The entire processing is event-driven and without intermediate storage – each incoming event generates exactly one outgoing event.
 
 ## Technical Features
+
 - **Composite Structure**: The function block is implemented as a network of sub-functions. It uses the predefined conversion function block `F_UDINT_TO_BYTE` from the IEC 61131 library, ensuring standardized and testable conversion.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional. This reduces coupling and enables easy integration into data flows that only require one direction.
 - **No State Storage**: The function block is purely combinatorial (no internal states). It reacts to each incoming event immediately and outputs the result without delay.
@@ -63,6 +61,7 @@ The **AUDI_TO_AB** function block is a composite function block (FB) that conver
 This function block does not have an explicit state machine. It operates event-driven according to the principle "input event → conversion → output event". There are no queues or delays – processing is atomic and occurs within a single cycle.
 
 ## Application Scenarios
+
 - **Data Adaptation in Adapter-Based Systems**: If a component or protocol delivers a UDINT value via an AUDI adapter, but the downstream function block expects a BYTE value via an AB adapter, this function block can be used for seamless coupling.
 - **Transition from 32-bit to 8-bit interfaces**: For example, in sensor-actuator communication, where a sensor provides 32-bit raw data, but the actuator only processes 8-bit commands.
 - **Test and simulation environments**: Allows easy replacement of adapters without having to change the entire data path logic.

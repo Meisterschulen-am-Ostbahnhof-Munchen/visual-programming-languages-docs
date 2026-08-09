@@ -1,8 +1,10 @@
 # ADI_DEMUX_4
+
 ![ADI_DEMUX_4](./ADI_DEMUX_4.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ADI_DEMUX_4` is a generic demultiplexer that distributes an incoming data value via a unidirectional adapter (socket) to one of four output adapters (plugs). The destination output is selected via an index input. This block is typically used in industrial automation to dynamically switch signal paths or route data to different consumers.
 ## Interface Structure
 
@@ -25,6 +27,7 @@ The function block `ADI_DEMUX_4` is a generic demultiplexer that distributes an 
 | K | UINT | Index (1-based) for selecting the destination output (1→OUT1, 2→OUT2, 3→OUT3, 4→OUT4) |
 
 ### **Data Outputs**
+
 _None_
 
 ### **Adapters**
@@ -40,16 +43,14 @@ Plug | OUT4 | ADI (unidirectional) | Fourth output adapter |
 ## Functionality
 
 1. The function block waits for an event at input `REQ`.
-
 2. Upon receipt of `REQ`, the current value of index `K` is read.
-
 3. The data value provided via socket `IN` (e.g., `INT`, `REAL`, or a user-defined type – depending on the specific adapter instantiation) is forwarded to the output adapter addressed by `K` (`OUT1`, `OUT2`, `OUT3`, or `OUT4`).
-
 4. The event `CNF` is then issued to signal successful completion.
 
 > **Note:** The index `K` is interpreted as an unsigned integer. Values outside the range 1…4 lead to undefined behavior – in a robust implementation, the calling function block should ensure valid indices.
 
 ## Technical Features
+
 - **Generic Type:** The function block is designed as a generic function block (`eclipse4diac::core::GenericClassName = 'GEN_ADI_DEMUX'`). It can be parameterized in conjunction with various data adapters (e.g., for `INT`, `REAL`, `BOOL`) without requiring modifications to the logic itself.
 - **Unidirectional Adapters:** All adapters are unidirectional – data flows only from socket `IN` to one of the plugs. This enables loose coupling and easy exchange of data sources and sinks.
 - **Event-driven execution:** The demultiplex operation is triggered only by the `REQ` event. There is no continuous data stream; the function block operates strictly according to the event-driven paradigm of IEC 61499.
@@ -63,6 +64,7 @@ The function block has no explicit states. Its behavior can be described as a si
 - **Return to Standby State.**
 
 ## Application Scenarios
+
 - **Signal Distribution:** A sensor delivers measured values via an ADI adapter. Depending on the operating mode (index `K`), the values are forwarded to various actuators or control logics.
 - **Process Switching:** In a multi-process system, the same data input can be selectively routed to different processing stations.
 - **Diagnostics & Testing:** A central data stream is switched to different test or monitoring blocks without requiring any changes to the wiring.
@@ -82,4 +84,5 @@ The `ADI_DEMUX_4` is a compact, generic demultiplexer for event-driven distribut
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -12,15 +12,19 @@ The function block (FB) **AI_ADD_2** is a generic block for performing the arith
 ## Interface Structure
 
 ### **Event Inputs**
+
 *There are no direct event inputs. Event control is encapsulated via the adapters used.*
 
 ### **Event Outputs**
+
 *There are no direct event outputs. Event control is encapsulated via the adapters used.*
 
 ### **Data Inputs**
+
 *There are no direct data inputs.*
 
 ### **Data Outputs**
+
 *There are no direct data outputs.*
 
 ### **Adapters**
@@ -28,7 +32,6 @@ The function block (FB) **AI_ADD_2** is a generic block for performing the arith
 #### **Sockets (Input Interfaces)**
 
 * **IN1** (Type: `adapter::types::unidirectional::AI`): The first addend of the addition operation. Both the value and the corresponding update event are received via this adapter.
-
 * **IN2** (Type: `adapter::types::unidirectional::AI`): The second addend of the addition operation.
 
 #### **Plugs (Output Interfaces)**
@@ -43,15 +46,12 @@ $$\text{OUT} = \text{IN1} + \text{IN2}$$
 
 The calculated result is immediately passed to the output adapter `OUT`, and the corresponding update event is triggered to inform subsequent program parts of the new value.
 
-
 Since this is a generic function block (`GEN_AI_ADD`), the underlying data type (e.g., `REAL`, `INT`, `LREAL`) is flexible and determined by the configuration of the connected adapters.
 
 ## Technical Features
 
 * **Generic Type (`GEN_AI_ADD`):** The function block is not tied to a specific data type, which increases its reusability for different analog signal ranges.
-
 * **Unidirectional Adapters:** Using the `adapter::types::unidirectional::AI` type drastically reduces wiring complexity in the 4diac-ide, as values and events are bundled in a single connection.
-
 * * **Clean Encapsulation:** No loose event and data lines on the surface of the function block.
 
 ## State Overview
@@ -61,11 +61,8 @@ The function block operates in an event-driven and stateless manner. No internal
 ## Application Scenarios
 
 * **Sensor Data Aggregation:** Adding two flow rates (e.g., main flow and bypass flow) to obtain a total flow rate.
-
 * **Setpoint Offsetting:** Adding a fixed or dynamic offset (e.g., calibration value) to an analog input signal.
-
 * **Signal Mixing:** Simple mathematical combination of two analog control signals in process automation.
-
 
 ## Comparison with Similar Function Blocks
 

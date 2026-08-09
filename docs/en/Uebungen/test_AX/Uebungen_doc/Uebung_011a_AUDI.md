@@ -1,8 +1,10 @@
 # Exercise_011a_AUDI: Numeric Value Output and BUTTON_PRESS_REPEAT_DONE
+
 ![Uebung_011a_AUDI_network](./Uebung_011a_AUDI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of a digital input (pushbutton) with repeat detection (`BUTTON_PRESS_REPEAT_DONE`) to output a numeric value to an ISOBUS Virtual Terminal.
 The incoming button press is captured via a logiBUS IBA interface, converted into an ISOBUS-compatible format via an adapter, and finally sent to a `Q_NumericValue_AUDI` block, which displays the value on the terminal's screen.
 
@@ -46,7 +48,6 @@ logiBUS_IBA` reads the current state of the digital input and provides it as AB 
 The adapter `AB_TO_AUDI` converts the AB format to the AUDI format. The connection is established via an adapter connection (`AdapterConnections`):
 
 - `Source="logiBUS_IBA.IN"` → `Destination="AB_TO_AUDI.AB_IN"`
-
 4. **Output on the Virtual Terminal**
 
 The converted value (AUDI format) is provided at output `AUDI_OUT` by `AB_TO_AUDI` and passed to the module `Q_NumericValue_AUDI` via another adapter connection:
@@ -73,6 +74,7 @@ This exercise is suitable as an introduction to ISOBUS communication with the 4d
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

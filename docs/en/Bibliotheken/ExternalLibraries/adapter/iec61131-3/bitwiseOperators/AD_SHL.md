@@ -1,10 +1,13 @@
 # AD_SHL
+
 ![AD_SHL](./AD_SHL.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AD_SHL** performs a bitwise left shift of an input value. It is designed as a generic function block that communicates via adapter interfaces and supports any integer data type (ANY_INT). The actual shift operation is implemented internally by a predefined function block `F_SHL`.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Description | With Parameters |
@@ -12,6 +15,7 @@ The function block **AD_SHL** performs a bitwise left shift of an input value. I
 | `UPDATE` | Updates the shift count and starts the calculation. | `N` |
 
 ### **Event Outputs**
+
 No direct event outputs are available. The event for passing the result is handled via the adapter `OUT` (event `OUT.E1`).
 
 ### **Data Inputs**
@@ -21,6 +25,7 @@ No direct event outputs are available. The event for passing the result is handl
 | `N` | `ANY_INT` | Number of bit positions to shift. |
 
 ### **Data Outputs**
+
 No direct data outputs. The result of the shift is provided via the adapter `OUT` (data `OUT.D1`).
 
 ### **Adapter**
@@ -31,10 +36,10 @@ No direct data outputs. The result of the shift is provided via the adapter `OUT
 | Plug | `OUT` | `adapter::types::unidirectional::AD` | Provides the result of the left shift. |
 
 ## Functionality
+
 The FB operates as a composite function block that delegates the actual operation to the block `F_SHL`. Internally, the following logic is implemented:
 
 1. **Event Triggering**
-
 - An incoming event from `UPDATE` or from the adapter `IN.E1` triggers the input `REQ` of the internal block `F_SHL`.
 - The value of `N` is directly passed to the input `F_SHL.N`.
 
@@ -51,6 +56,7 @@ The result of the calculation (`F_SHL.OUT`) is transferred to the data output of
 The function block is event-driven: Each arrival of a valid event (either externally via `UPDATE` or from the socket adapter `IN`) triggers a complete calculation.
 
 ## Technical Features
+
 - **Adapter Interface**
 
 Instead of fixed inputs and outputs, the function block uses adapters (`IN` as a socket, `OUT` as a plug), which enables flexible integration in various architectural contexts.
@@ -72,6 +78,7 @@ This function block is licensed under the Eclipse Public License 2.0 and designe
 This function block is implemented as a **composite network** and does not have its own internal state machine (ECC). The sequence control is entirely determined by the event connections within the network and the `F_SHL` function block used. An explicit state machine is not required.
 
 ## Application Scenarios
+
 - **Bit Manipulation in Control Engineering**
 
 Shifting bit patterns for masking, scaling, or encoding signals.
@@ -85,6 +92,7 @@ Adapting data words by left shifting, e.g., for serial interfaces or bus systems
 Multiplication by powers of two by left shifting, especially in computationally critical environments.
 
 ## Comparison with Similar Blocks
+
 - **Direct `F_SHL` Block**
 
 The internal `F_SHL` offers the same functionality, but without an adapter interface. `AD_SHL` encapsulates this block and extends it with an adapter-based connection, which facilitates reuse in modular systems.

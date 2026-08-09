@@ -1,8 +1,10 @@
 # IA_RHS
+
 ![IA_RHS](./IA_RHS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **IA_RHS** (ISOBUS Adapter for Rear Hitch Status) serves as an interface between the ISOBUS system (according to ISO 11783-7, PGN 65093) and an application network. It encapsulates the communication with the internal module I_RHS and provides the measured rear hitch data (position, force, tractive force) as well as the timeout status via standardized, unidirectional adapters. This module is primarily used in tractor and agricultural machinery control systems.
 ## Interface Structure
 
@@ -45,6 +47,7 @@ The function block **IA_RHS** (ISOBUS Adapter for Rear Hitch Status) serves as a
 The function block is activated by the **INIT** event. The qualifier signal **QI** is then forwarded to the internal function block **I_RHS**. After successful initialization (or an error), the function block reports back via the **INITO** event and outputs the **QO** and **STATUS** signals. Simultaneously, the data supplied by I_RHS (position, lower link force, draft force) is applied to the corresponding adapters **POSITION**, **FORCE**, and **DRAFT**. The timeout status of I_RHS is output via the **TIMEOUT** adapter. The adapters each use a unidirectional data format (e.g., OFF for analog, unscaled values). Output to the adapters occurs via a separate event (through internal connections of I_CORE.IND). This allows a receiving module to react to the arrival of new data.
 
 ## Technical Features
+
 - The module is based on the ISOBUS standard ISO 11783-7 and uses PGN 65093.
 - The internal calculations and ISOBUS communication are performed entirely by the **I_RHS** module. IA_RHS serves solely as an adapter wrapper for providing data to the 4diac network.
 - All four adapters are unidirectional (output), meaning data is only sent but not received by the connected module.
@@ -60,6 +63,7 @@ This function block does not have explicitly modeled states. Its behavior is det
 - **Error/Timeout**: A timeout is signaled via the TIMEOUT adapter, and the status is output as text via the **STATUS** output.
 
 ## Application Scenarios
+
 - **Tractor Control with ISOBUS Connection**: Reading the rear linkage data (hitch status) from an ISOBUS-compatible terminal or control unit and forwarding it to a higher-level controller.
 - **Agricultural Implements**: Connecting implements that require the rear linkage position or force (e.g., plow depth control).
 - **Diagnostics and Monitoring**: Recording timeout status and system status for maintenance and fault analysis.
@@ -75,6 +79,7 @@ The IA_RHS module is a practical, standards-compliant encapsulation of the rear 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

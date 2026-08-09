@@ -1,11 +1,14 @@
 # Exercise_223b: Standard IEC 61131-3 FB_CTUD_UDINT (Forward/Backward Counter, UDINT) with Terminal Output (PHYS)
+
 ![Uebung_223b_network](./Uebung_223b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a forward/backward counting function block according to IEC 61131-3 (type `FB_CTUD_UDINT`) with a value range of type `UDINT`. The current counter reading is also output to a terminal (PHYS). The counter functions are controlled via four digital inputs, and two digital outputs signal the counter direction.
 
 ## Function Blocks Used (FBs)
+
 - **FB_CTUD_UDINT**
 - Type: `iec61131::counters::FB_CTUD_UDINT`
 - Parameters: `PV` = `UDINT#10`
@@ -32,15 +35,12 @@ This exercise implements a forward/backward counting function block according to
 Event control is handled via the `IND` events of the digital inputs. Each key press at an input triggers a `REQ` processing operation of the counter:
 
 1. **Event Connections**
-
 - `Input_CU.IND` → `FB_CTUD_UDINT.REQ`
 - `Input_CD.IND` → `FB_CTUD_UDINT.REQ`
 - `Input_R.IND` → `FB_CTUD_UDINT.REQ`
 - `Input_LD.IND` → `FB_CTUD_UDINT.REQ`
 - `FB_CTUD_UDINT.CNF` → `Output_QU.REQ`, `Output_QD.REQ`, `Q_NumericValue_PHYS_LREAL.REQ`
-
 2. **Data Connections**
-
 - `Input_CU.IN` → `FB_CTUD_UDINT.CU`
 - `Input_CD.IN` → `FB_CTUD_UDINT.CD`
 - `Input_R.IN` → `FB_CTUD_UDINT.R`

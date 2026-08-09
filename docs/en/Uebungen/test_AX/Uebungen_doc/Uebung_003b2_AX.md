@@ -1,4 +1,5 @@
 # Exercise_003b2_AX: Wireless 16 Buttons on DataPanel 16
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003b2_AX`. This exercise demonstrates the system's scalability using the example of linking 15 wireless buttons with 15 digital outputs, implemented through untyped sub-applications (or reused typed sub-applications, which were manually placed here).
 ----
@@ -7,10 +8,10 @@ The objective of this exercise is to efficiently manage a large number of simila
 -----
 
 ## Ziel der Übung
+
 ## Description and Components
 
 [cite_start]The subapplication `Uebung_003b2_AX.SUB` instantiates the subtype `Uebung_003b2_sub_AX` 15 times (here named `F1` to `F15`)[cite: 1].
-
 
 [cite_start]This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`)[cite: 2]. It has the following configuration parameters:
 
@@ -41,15 +42,12 @@ This exercise maps the following signals:
 Each instance, `F1` to `F15`, operates independently:
 
 1. The `Funk_IXA` module receives the signal from the corresponding button on the remote control.
-
 2. The signal is forwarded to the `DataPanel_MI_QXA` module via an adapter connection.
-
 3. The output on the DataPanel switches accordingly.
 
 Since all 15 channels operate in parallel, multiple buttons can be pressed simultaneously, and the corresponding outputs react concurrently.
 
 -----
-
 
 An application example is a **control panel for a loading crane**:
 

@@ -6,9 +6,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert einen Vorwärts-/Rückwärtszähler (CTUD) nach IEC 61131-3 in einer Adapter-Version. Der Zählerwert (Integer) wird über einen digitalen Preset-Wert (PV) initialisiert und kann über vier digitale Eingänge gesteuert werden. Der aktuelle Zählerstand wird über einen Analogausgang auf einem Terminal ausgegeben (physikalische Darstellung). Die Übung demonstriert die Verwendung von Adapter-basierten Funktionsbausteinen sowie die Umwandlung und Ausgabe von Zählerdaten.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 - **AI_FB_CTUD**  
   - **Typ**: `adapter::iec61131::counters::AI_FB_CTUD`  
   - **Funktion**: Vorwärts-/Rückwärtszähler mit Adapter-Schnittstelle (Eingänge CU, CD, R, LD, PV; Ausgänge QU, QD, CV).  
@@ -33,6 +35,7 @@ Diese Übung realisiert einen Vorwärts-/Rückwärtszähler (CTUD) nach IEC 6113
   - **Funktion**: Gibt den analogen Zahlenwert physisch auf dem Terminal aus.
 
 ## Programmablauf und Verbindungen
+
 Die Ereignissteuerung erfolgt über einen einzigen Ereignispfad:
 
 - Der Baustein **Input_LD** löst beim Initialisierungsereignis (`INITO`) den Baustein **AI_INT_TO_I** aus (`REQ`), sodass dieser den konstanten Preset-Wert (INT#5) auf seinem Ausgang bereitstellt.
@@ -60,9 +63,11 @@ Ein Kommentar weist darauf hin, dass mit dem Zähler auch negative Werte möglic
 Der Baustein **AI_FB_CTUD** arbeitet als Zähler: Bei jedem steigenden Flanke an CU wird der Zähler erhöht, bei CD verringert, bei R auf 0 zurückgesetzt und bei LD auf den Wert von PV geladen. Die Ausgänge QU und QD werden aktiv, wenn der Zählerstand einen Schwellwert erreicht (typischerweise >0 für QU, <0 für QD).
 
 ## Zusammenfassung
+
 Die Übung **Uebung_220b_AR** zeigt den Einsatz eines standardisierten IEC 61131-3 Zählers (CTUD) in einer Adapter-Architektur. Durch die Verbindung von digitalen Eingängen (Taster/Sensoren), Digitalausgängen und einer Terminalausgabe wird ein vollständiger Zählprozess mit Visualisierung abgebildet. Der Lernende versteht die Funktionsweise von Aufwärts-/Abwärtszählern, die Adapter-Kommunikation in 4diac sowie die Umwandlung von Datenformaten (INT über AI_TO_AR). Zusätzlich wird die Möglichkeit zur Ereignisreduzierung durch Flipflops thematisiert.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

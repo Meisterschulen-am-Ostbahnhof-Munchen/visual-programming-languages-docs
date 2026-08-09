@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **DualHysteresis_AR_AX** führt eine zweiseitige Analog-Digital-Wandlung mit einstellbarer Hysterese durch.  
 Aus einem analogen Eingangswert werden zwei binäre Ausgangssignale (`DO_UP`, `DO_DOWN`) erzeugt, die abhängig von der Lage des Eingangssignals relativ zu drei Parametern geschaltet werden:  
 
@@ -21,6 +22,7 @@ Die Schaltpunkte berechnen sich wie folgt:
 Damit wird ein sicheres Schaltverhalten mit verminderter Schaltfrequenz erreicht, typisch für Regelstrecken mit Schaltschwelle und Rückführhysterese.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ | Beschreibung |
@@ -46,6 +48,7 @@ Damit wird ein sicheres Schaltverhalten mit verminderter Schaltfrequenz erreicht
 | `QO`  | BOOL | Ausgangsqualifikator – wird auf den Wert von `QI` gesetzt, spiegelt den Betriebszustand wider. |
 
 ### **Adapter**
+
 **Sockets (Eingangsadapter):**
 
 | Adapter | Typ | Beschreibung |
@@ -63,6 +66,7 @@ Damit wird ein sicheres Schaltverhalten mit verminderter Schaltfrequenz erreicht
 | `DO_DOWN` | adapter::types::unidirectional::AX | Binärausgang für den **DOWN**-Zustand (Einschalten bei Unterschreiten der unteren Schwelle) |
 
 ## Funktionsweise
+
 Nach einer erfolgreichen Initialisierung (`INIT` mit `QI = TRUE`) wechselt der FB in den **Neutral**-Zustand. In diesem Zustand sind beide Ausgänge (`DO_UP`, `DO_DOWN`) auf `FALSE`.
 
 Sobald über den Adapter `INPUT` ein neuer Wert eintrifft (Ereignis `E1`), wird die Hysterese-Logik ausgewertet:
@@ -76,6 +80,7 @@ Sobald über den Adapter `INPUT` ein neuer Wert eintrifft (Ereignis `E1`), wird 
 Ist `QI = FALSE` bei einem `INIT`-Ereignis, wird der FB deinitialisiert und beide Ausgänge werden auf `FALSE` gesetzt. Ein erneutes `INIT` mit `QI = TRUE` startet den Ablauf neu.
 
 ## Technische Besonderheiten
+
 - **Verwendung von Absolutwerten**: Die Parameter `DEAD` und `HYSTERESIS` werden intern mit `ABS()` behandelt, sodass negative Werte nicht zu unerwünschtem Verhalten führen.  
 - **Symmetrische Schaltpunkte**: Die Schwellen liegen symmetrisch um den Mittelwert `MI`.  
 - **Qualifikator `QI`**: Der FB arbeitet nur bei `QI = TRUE`. Bei `FALSE` werden alle Ausgänge zwangsweise zurückgesetzt (Safe State).  
@@ -103,11 +108,13 @@ Ist `QI = FALSE` bei einem `INIT`-Ereignis, wird der FB deinitialisiert und beid
 - `DeInit` → `START` (automatisch)
 
 ## Anwendungsszenarien
+
 - **Temperaturregelung mit zwei Stufen**: Ein Heiz- und ein Kühlkreis können mit eigenen Hysteresen betrieben werden, z. B. Heizung unterhalb von 18 °C einschalten, oberhalb von 22 °C ausschalten; Kühlung oberhalb von 30 °C einschalten, unterhalb von 26 °C ausschalten.  
 - **Füllstandsüberwachung**: Zwei Schaltpunkte (MIN/MAX) mit Hysterese zur Vermeidung von Prellen bei Pumpen- oder Ventilsteuerungen.  
 - **Grenzwertüberwachung mit zwei Alarmschwellen**: Oberer und unterer Alarm mit Ein-/Ausschaltverzögerung durch Hysterese.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Der **DualHysteresis_AR_AX** erweitert eine einfache Hysterese (Einschaltpunkt = Ausschaltpunkt + Hysterese) um eine zweite, inverse Richtung.  
 
 - **Einfache Hysterese**: nur ein Ausgang, eine Schaltschwelle.  
@@ -116,4 +123,5 @@ Der **DualHysteresis_AR_AX** erweitert eine einfache Hysterese (Einschaltpunkt =
 Im Vergleich zu einem PID-Regler ist dieser FB rein schaltend – er erzeugt keine stetigen Stellsignale, eignet sich aber hervorragend für einfache Zweipunkt-Regelungen.
 
 ## Fazit
+
 Der Funktionsblock **DualHysteresis_AR_AX** ist eine robuste, ereignisgesteuerte Lösung zur Umwandlung eines analogen Signals in zwei digitale Ausgänge mit einstellbarer Hysterese. Dank der Verwendung von Absolutwerten und der klaren Schaltlogik ist er einfach parametrierbar und vermeidet Schaltspiele. Er eignet sich besonders für industrielle Anwendungen, bei denen zwei gegenläufige Aktoren (z. B. Heizen/Kühlen, Öffnen/Schließen) mit definiertem Schaltabstand betrieben werden müssen.

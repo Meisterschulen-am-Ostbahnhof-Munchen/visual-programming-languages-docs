@@ -1,8 +1,10 @@
 # INI_ALR
+
 ![INI_ALR](./INI_ALR.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **INI_ALR** is used to read and write floating-point values of type LREAL to and from a `settings.ini` file. It accesses a configuration file that is parameterized via a section name and a key. The block encapsulates the use of the internal `INI` function block and additionally provides a standardized **ALR** adapter interface (unidirectional) through which values can be both set and read.
 ## Interface Structure
 
@@ -56,6 +58,7 @@ A set event at the adapter socket `ALR_IN.E1` is forwarded to the SET input of t
 The currently read value is always available at output `ALR_OUT` via the initial GET sequence and the forwarding of `GETO`. A new read can be triggered by another `INIT` pulse.
 
 ## Technical Features
+
 - **Reuse** of the standardized `INI` block (`eclipse4diac::storage::INI`) for file access.
 - **ALR adapter interface** – allows unidirectional coupling with other blocks that use the same adapter type. This simplifies integration into modular control applications.
 - **Asynchronous processing**: Read and write operations are event-driven and performed asynchronously. Acknowledgement is provided via the corresponding event outputs.
@@ -73,6 +76,7 @@ The `INI_ALR` itself does not have its own state machines. State management is f
 - **Error State** – in case of faulty INI accesses, STATUS is set accordingly.
 
 ## Application Scenarios
+
 - **Machine Configuration** – Loading parameters (e.g., maximum speed, limits) from a central INI configuration file.
 - **Calibration Values** – Storing and reading calibration data in automation technology.
 - **Interface to ALR-based Components** – If a function block provides or expects an LREAL value via an ALR adapter, `INI_ALR` can be used as a link for persistent storage.
@@ -93,6 +97,7 @@ The `INI_ALR` is a practical function block that extends access to `settings.ini
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

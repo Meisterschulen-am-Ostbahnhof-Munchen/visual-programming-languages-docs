@@ -1,8 +1,10 @@
 # Exercise_090a1: Example for F_MUX_2
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_090a1`. It demonstrates the selection of a data value based on an address.
 ----
 ## Objective of the Exercise
+
 Using the function block `F_MUX_2` (multiplexer). It shows how to switch between two signal sources to operate a common output.
 
 -----
@@ -22,6 +24,7 @@ Using the function block `F_MUX_2` (multiplexer). It shows how to switch between
 -----
 
 ## Functionality
+
 * If button **I4** is not pressed (K=0) ➡️ The state of **I1** is passed to output `Q1`.
 * If button **I4** is pressed (K=1) ➡️ The state of **I2** is passed to output `Q1`.
 

@@ -11,16 +11,20 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` dient der filternden Weitergabe
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **`IN.E1`** (über Socket `IN`): Ereignis zum Anfordern der Signalverarbeitung. Ein eingehendes Ereignis startet die Spiegelung des Eingangswerts auf den Ausgang und aktualisiert den Gültigkeitsstatus.
 
 ### **Ereignis-Ausgänge**
+
 - **`OUT.E1`** (über Plug `OUT`): Ereignis, das nach erfolgreicher Verarbeitung ausgegeben wird. Signalisiert, dass der aktuelle Ausgangswert (`OUT.D1`) gültig ist.
 - **`VALID.E1`** (über Plug `VALID`): Ereignis, das zeitgleich mit `OUT.E1` ausgegeben wird. Bestätigt die Aktualisierung des Gültigkeitssignals (`VALID.D1`).
 
 ### **Daten-Eingänge**
+
 - **`IN.D1`** (über Socket `IN`, Typ: `LWORD`): Das zu verarbeitende Feldbus-Signal. Der Wert wird unverändert an den Ausgang weitergegeben, sofern das interne Gültigkeitssignal aktiv ist.
 
 ### **Daten-Ausgänge**
+
 - **`OUT.D1`** (über Plug `OUT`, Typ: `LWORD`): Das gefilterte Ausgangssignal. Enthält den Wert von `IN.D1`, wenn das Signal gültig ist, andernfalls bleibt der letzte gültige Wert erhalten (durch das interne Verhalten des verwendeten Bausteins `FIELDBUS_LWORD_TO_SIGNAL`).
 - **`VALID.D1`** (über Plug `VALID`, Typ: `BOOL`): Zeigt an, ob das aktuell ausgegebene Signal gültig ist. Der Wert wird durch ein internes Flipflop (E_D_FF) zwischengespeichert und bei jedem Verarbeitungszyklus aktualisiert.
 
@@ -81,4 +85,5 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` ist ein spezialisierter Composi
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

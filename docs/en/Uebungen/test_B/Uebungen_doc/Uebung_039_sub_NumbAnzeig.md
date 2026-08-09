@@ -1,9 +1,11 @@
 Here is the generated documentation based on the provided XML code:
 # Exercise_039_sub_NumbDisplay: Mirror Sequence V2 with Step Chain SUB Num
+
 ![Uebung_039_sub_NumbAnzeig_network](./Uebung_039_sub_NumbAnzeig_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The sub-application **Exercise_039_sub_NumbDisplay** is a utility component designed to display numeric values within the context of a step chain (mirror sequence V2). Its main task is to receive a status number (`STATE_NR`), convert it into a suitable data format, and then send it to an output element (ISOBUS Universal Terminal).
 
 ## Function Blocks (FBs) Used
@@ -11,6 +13,7 @@ The sub-application **Exercise_039_sub_NumbDisplay** is a utility component desi
 This exercise defines a sub-block that internally uses standard conversion blocks as well as ISOBUS communication blocks.
 
 ### Sub-Blocks: Exercise_039_sub_NumbDisplay
+
 - **Type**: SubAppType
 - **Description**: Mirror sequence V2 with step chain SUB Num
 - **Internal Function Blocks Used**:
@@ -54,9 +57,10 @@ Once the conversion is confirmed (event `CNF` from `F_SINT_TO_UINT`), the functi
 * **Data**: `STATE_NR` (Input) → `F_SINT_TO_UINT.IN` → `F_SINT_TO_UINT.OUT` → `Q_NumericValue.u32NewValue`.
 
 ## Summary
+
 The exercise **Exercise_039_sub_NumbDisplay** demonstrates the encapsulation of logic in a sub-application. It serves as an interface between the control logic (sequence of steps) and the visualization (ISOBUS terminal) by adapting data types and handling communication with the output object `OutputNumber_N1`. This promotes reusability and clarity in the main program.
 
 ## 🛠️ Related exercises
+
 * [Uebung_039](Uebung_039.md)
 * [Uebung_039a](Uebung_039a.md)
-

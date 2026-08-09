@@ -1,8 +1,10 @@
 # Exercise_009_AUDI: Ticker (AX-Adapter Based)
+
 ![Uebung_009_AUDI_network](./Uebung_009_AUDI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the implementation of a **ticker** based on **AX adapters** (adapter event interfaces) in the 4diac IDE.
 The goal is to implement an up/down counter controlled by a switch (AX_SWITCH), a set/reset gate (AX_SR), and a permit signal (AX_PERMIT). The current counter value is output on a digital output and a numeric display.
 
@@ -13,6 +15,7 @@ This exercise is part of the **Exercises** library and uses predefined adapter b
 This exercise consists of a **SubApp** (Exercise_009_AUDI) containing several internal function blocks. The SubApp itself has no dedicated input/output interfaces; all signals are processed via internal connections.
 
 ### Sub-Blocks: Exercise_009_AUDI (SubApp)
+
 - **Type**: SubAppType
 - **Internal FBs Used**:
 - **DigitalOutput_Q1**: `logiBUS::io::DQ::logiBUS_QXA`
@@ -72,7 +75,6 @@ The signal from `AX_SR.Q` is sent to `AX_SPLIT_3.IN` and distributed to three ou
 `` - `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
 
 - `OUT3` → to `AX_PERMIT.PERMIT`.
-
 6. **Allowance and Counter**
 
 AX_PERMIT` only forwards the event to `EO` if an event is present at the `PERMIT` input. This event is then sent to the counter `AUDI_CTUD_UDINT.CU`. The counter increments its value with each event.
@@ -102,6 +104,7 @@ The use of adapters allows for flexible, event-driven chaining and demonstrates 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

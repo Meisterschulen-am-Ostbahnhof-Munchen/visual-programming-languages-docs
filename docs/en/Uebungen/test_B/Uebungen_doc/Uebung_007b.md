@@ -1,8 +1,10 @@
 # Exercise_007b: Flasher with E_CYCLE and E_T_FF
+
 ![Uebung_007b_network](./Uebung_007b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a simple flasher controlled by two pushbuttons. An E_CYCLE function block generates periodic events, which are distributed to multiple paths via an E_SPLIT_4. All four outputs of the splitter are merged in an E_MERGE_4, so that each period sends a single event to the toggle flip-flop (E_T_FF). The flip-flop's output switches a digital output (logiBUS Q1). The clock generator can be started via one pushbutton (I1) and stopped via a second pushbutton (I2).
 All logic is encapsulated in a sub-application and uses only logiBUS hardware inputs and outputs.
 
@@ -13,6 +15,7 @@ All logic is encapsulated in a sub-application and uses only logiBUS hardware in
 The subapplication consists of the following function blocks:
 
 ### Block: `DigitalOutput_Q1`
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
 - `QI` = `TRUE` (Enable)
@@ -22,6 +25,7 @@ The subapplication consists of the following function blocks:
 - **Functionality**: Sets the logiBUS digital output Q1 to the value of the Data is received as soon as an event arrives at `REQ`.
 
 ### Block: `E_CYCLE`
+
 - **Type**: `iec61499::events::E_CYCLE`
 - **Parameters**:
 - `DT` = `T#10ms` (cycle time 10 ms)
@@ -33,6 +37,7 @@ The subapplication consists of the following function blocks:
 - **Functionality**: Generates events periodically at 10 ms intervals after starting. The counter can be stopped by an event at `STOP`.
 
 ### Component: `E_T_FF`
+
 - **Type**: `iec61499::events::E_T_FF`
 - **Parameters**: None
 - **Event Inputs**:
@@ -46,6 +51,7 @@ The subapplication consists of the following function blocks:
 --
 
 ### Block: `E_SPLIT_4`
+
 - **Type**: `iec61499::events::E_SPLIT_4`
 - **Parameters**: None
 - **Event Inputs**: `EI` (Input Event)
@@ -55,6 +61,7 @@ The subapplication consists of the following function blocks:
 ---
 
 ### Module: `E_MERGE_4`
+
 - **Type**: `iec61499::events::E_MERGE_4`
 - **Parameters**: None
 - **Event Inputs**: `EI1`, `EI2`, `EI3`, `EI4` (four inputs)
@@ -64,6 +71,7 @@ The subapplication consists of the following function blocks:
 ---
 
 ### Module: `DigitalInput_CLK_I1`
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -75,6 +83,7 @@ The subapplication consists of the following function blocks:
 ---
 
 ### Block: `DigitalInput_CLK_I2`
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -90,7 +99,6 @@ The subapplication consists of the following function blocks:
 The following description explains the signal flow within the subapplication.
 
 1. **Start/Stop of the Clock Generator**
-
 - Pressing a key at I1 triggers an event at the output `IND` of `DigitalInput_CLK_I1`. This event is connected to the event input `START` of `E_CYCLE` → the cycle generator starts.
 - Pressing a key at I2 triggers an event at the output `IND` of `DigitalInput_CLK_I2`. This event is connected to the event input `STOP` of `E_CYCLE` → the cycle generator stops.
 
@@ -98,14 +106,10 @@ The following description explains the signal flow within the subapplication.
 
 - The `E_CYCLE` generates an event at its output `EO` every 10 ms.
 - This event is fed to the input `EI` of the `E_SPLIT_4`. The splitter distributes the event to all four outputs (`EO1` to `EO4`).
-
 3. **Combination**
-
 - The four outputs of the splitter are connected to the four inputs (`EI1` to `EI4`) of the `E_MERGE_4`. This ensures that every event, regardless of the path it takes, is immediately forwarded to the output `EO` of the merger.
 - The connection from the splitter to the merger via all four paths serves here purely as passthrough (redundancy), but could be used for future expansions.
-
 4. **Toggle Flip-Flop**
-
 - The output event of `E_MERGE_4` is fed to the clock input `CLK` of `E_T_FF`.
 - With each clock cycle, the output `Q` of the flip-flop toggles its state (0 → 1 → 0 → …).
 - Simultaneously, an event is triggered at the output `EO` of the flip-flop.
@@ -149,6 +153,7 @@ Exercise 007b demonstrates the use of cyclic event generation (`E_CYCLE`), event
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

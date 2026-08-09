@@ -1,8 +1,10 @@
 # AS_D_FF
+
 ![AS_D_FF](./AS_D_FF.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AS_D_FF** implements a simple data latch (D flip-flop) based on adapters. It stores an incoming data value with each incoming event and outputs the stored value as a signal. The block encapsulates the logic of the 4diac standard block `E_D_FF_ANY` and provides its interfaces exclusively via unidirectional adapters of type `adapter::types::unidirectional::AS`. This enables modular and standardized integration into more complex systems.
 ## Interface Structure
 
@@ -62,6 +64,7 @@ The component does not have an explicit state machine. Its behavior is determine
 The state is switched to `I.E1` by an event (if the data value has changed) and remains in this state until the next event.
 
 ## Application Scenarios
+
 - **Signal Buffering**: Temporarily storing a digital signal that is to be retrieved at specific times (e.g., sample-and-hold).
 - **Synchronization**: Adapting asynchronous data streams to a clock-driven sequence by holding a value at an event.
 - **Modular Interconnection**: Used in systems based on adapter communication to maintain a uniform interface (e.g., in a chain of processing blocks).
@@ -84,6 +87,7 @@ The **AS_D_FF** function block represents a practical encapsulation of a D flip-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

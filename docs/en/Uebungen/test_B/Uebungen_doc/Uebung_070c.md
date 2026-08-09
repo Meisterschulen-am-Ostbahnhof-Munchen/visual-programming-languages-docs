@@ -1,8 +1,10 @@
 # Exercise_070c: Outputting WBSD to UT, PHYS
+
 ![Uebung_070c_network](./Uebung_070c_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates how to read the wheel-based machine speed (WBSD) from a fieldbus, convert it into a physical value, and display it as a numerical value on a Universal Terminal (UT).
 The raw integer value (UINT) is converted into a real numerical value (e.g., m/s) using scaling and then transmitted to the UT.
 
@@ -10,6 +12,7 @@ The raw integer value (UINT) is converted into a real numerical value (e.g., m/s
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: I_WBSD
+
 * **Type**: `isobus::tecu::I_WBSD`
 * **Internal FBs Used**: (none)
 * **Parameters**:
@@ -23,6 +26,7 @@ The raw integer value (UINT) is converted into a real numerical value (e.g., m/s
 The block reads the current value of the wheel-based machine speed (WBSD) via the ISOBUS fieldbus. The event `IND` is triggered when a new, valid measurement is obtained.
 
 ### Sub-Blocks: FIELDBUS_UINT_TO_SIGNAL_SCALED
+
 * **Type**: `logiBUS::signalprocessing::fieldbus::FIELDBUS_UINT_TO_SIGNAL_SCALED`
 * **Internal Function Blocks Used**: (none)
 * **Parameters**:
@@ -43,6 +47,7 @@ OUT = IN * SCALE + OFFSET`.
 For example, mm/s is converted to m/s using `SCALE = 0.001` and `OFFSET = 0`.
 
 ### Sub-Blocks: Q_NumericValue
+
 * **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
 * **Internal Function Blocks Used**: (none)
 * **Parameters**:
@@ -66,7 +71,6 @@ I_WBSD.IND` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.REQ` → `FIELDBUS_UINT_TO_SIGNA
 
 - The fieldbus block generates the event `IND` when a new wheel speed value is received, which triggers the conversion.
 - After successful conversion, `CNF` signals the UT block to display the updated value.
-
 2. **Data Flow**
 
 I_WBSD.WHEELBASEDMACHINESPEED` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.IN`
@@ -95,6 +99,7 @@ Exercise **Exercise_070c** demonstrates a complete data path from fieldbus data 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

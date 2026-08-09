@@ -9,6 +9,7 @@ Hier ist die Dokumentation für die Übung 151 basierend auf den bereitgestellte
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert eine Sub-Applikation (`SubAppType`) mit dem Namen **Uebung_151**. Ziel der Übung ist die Erfassung und Verarbeitung von Impulssignalen über eine Hardwareschnittstelle. Die eingehenden Rohdaten werden konvertiert und anschließend wird mittels eines mathematischen Bausteins die Ableitung (Änderungsrate) berechnet. Dies dient typischerweise dazu, aus einem Zählerstand eine Geschwindigkeit oder Frequenz zu ermitteln.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -65,4 +66,5 @@ Der Ablauf der Übung wird durch die Ereignis- und Datenkette definiert:
 *   Anwendung mathematischer Funktionen aus der OSCAT-Bibliothek zur Signalverarbeitung.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_151** zeigt den Aufbau eines Impulszählers mit nachgeschalteter Frequenzberechnung. Durch die Kombination aus Hardware-Treiber, Konvertierungslogik und dem Differenzierer (`FT_DERIV`) wird aus einfachen Zählimpulsen eine nutzbare Prozessgröße (z.B. Drehzahl oder Durchfluss) generiert.

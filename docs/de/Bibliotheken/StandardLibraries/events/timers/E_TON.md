@@ -15,6 +15,7 @@
 Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) gemäß der Norm **IEC 61499**, der für **On-Delay-Timer** (Einschaltverzögerung) in industriellen Automatisierungssystemen verwendet wird. Dieser Baustein ermöglicht es, ein Signal zeitlich verzögert einzuschalten, was in vielen Steuerungsanwendungen erforderlich ist, um beispielsweise Maschinen oder Prozesse sicher zu steuern.
 
 ### Allgemeine Beschreibung:
+
 - **Name**: E_TON
 - **Typ**: Standard Timer Function Block (On-Delay Timing)
 - **Zweck**: Der Baustein wird verwendet, um eine zeitverzögerte Einschaltfunktion zu realisieren. Er ist besonders nützlich in Anwendungen, bei denen eine Verzögerung beim Einschalten eines Signals erforderlich ist.
@@ -25,6 +26,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
 ### Interface-Beschreibung:
 
 #### **Eingangsereignisse (Event Inputs):**
+
 1. **REQ** (Normal Execution Request):
    - **Typ**: Event
    - **Beschreibung**: Dieses Ereignis triggert die normale Ausführung des Bausteins. Es wird verwendet, um den Timer zu starten oder zu aktualisieren.
@@ -33,6 +35,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
      - **PT**: Die vorgegebene Zeitdauer für die Einschaltverzögerung (On-Delay).
 
 #### **Ausgangsereignisse (Event Outputs):**
+
 1. **CNF** (Execution Confirmation):
    - **Typ**: Event
    - **Beschreibung**: Dieses Ereignis bestätigt die Ausführung des Bausteins. Es wird ausgelöst, wenn der Timer abgelaufen ist oder ein Zustandswechsel stattgefunden hat.
@@ -40,6 +43,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
      - **Q**: Der Ausgangswert, der den Zustand des Timers anzeigt.
 
 #### **Eingangsvariablen (Input Variables):**
+
 1. **IN**:
    - **Typ**: BOOL
    - **Beschreibung**: Der Eingangswert, der den Timer startet. Wenn **IN** auf `TRUE` gesetzt wird, startet die Einschaltverzögerung (**PT**). Der Ausgang **Q** wird erst nach Ablauf der Zeit **PT** auf `TRUE` gesetzt.
@@ -49,6 +53,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
    - **Beschreibung**: Die vorgegebene Zeitdauer für die Einschaltverzögerung (On-Delay). Diese Zeit wird ab dem Moment gemessen, in dem **IN** auf `TRUE` gesetzt wird.
 
 #### **Ausgangsvariablen (Output Variables):**
+
 1. **Q**:
    - **Typ**: BOOL
    - **Beschreibung**: Der Ausgangswert, der den Zustand des Timers anzeigt. **Q** wird auf `TRUE` gesetzt, nachdem die Einschaltverzögerung (**PT**) abgelaufen ist.
@@ -56,6 +61,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
 ---
 
 ### Funktionsweise:
+
 1. **Einschaltverzögerung (On-Delay)**:
    - Wenn **IN** auf `TRUE` gesetzt wird, startet der Timer für die Einschaltverzögerung (**PT**).
    - Nach Ablauf von **PT** wird **Q** auf `TRUE` gesetzt.
@@ -67,12 +73,14 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
 ---
 
 ### Anwendungsbeispiele:
+
 - **Maschinensteuerung**: Verzögerte Reaktion auf Sensoren oder Schaltbefehle, z. B. um ein Überlasten von Motoren zu vermeiden.
 - **Prozessautomatisierung**: Zeitgesteuerte Schaltvorgänge in industriellen Prozessen, z. B. in Förderbändern oder Heizungssteuerungen.
 
 ---
 
 ### Zusammenfassung:
+
 Der **E_TON**-Baustein ist ein einfaches, aber leistungsstarkes Werkzeug in der IEC 61499, um zeitverzögerte Einschaltvorgänge in industriellen Automatisierungssystemen zu realisieren. Er bietet eine zuverlässige Möglichkeit, Signale mit einer definierten Verzögerung einzuschalten, was in vielen Steuerungsanwendungen unerlässlich ist. Der Baustein ist einfach zu konfigurieren und kann in einer Vielzahl von Szenarien eingesetzt werden, bei denen eine zeitliche Verzögerung erforderlich ist.
 
 ## 🛠️ Zugehörige Übungen

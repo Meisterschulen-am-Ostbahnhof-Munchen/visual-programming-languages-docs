@@ -1,8 +1,10 @@
 # AX_RS_SYM_INIT
+
 ![AX_RS_SYM_INIT](./AX_RS_SYM_INIT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AX_RS_SYM_INIT** implements an event-driven, bistable flip-flop (RS flip-flop) with symmetrical startup behavior and an explicit initialization mechanism. It extends a simple RS flip-flop by adding the ability to assume a predefined state at startup (INIT) and to control both initialization and deinitialization via the INIT event input. The actual state of the flip-flop is provided via an adapter, while the data outputs QO and the adapter output Q.D1 are synchronized.
 ## Interface Structure
 
@@ -58,6 +60,7 @@ The function block cycles through various states, controlled by the INIT, S, and
 The `QI` variable acts as a qualifier: Only if `QI = TRUE` is present are the operations on the adapter (setting/resetting `Q.D1`) actually performed. Otherwise, only `QO` is passed on.
 
 ## Technical Features
+
 - **Symmetrical Startup Behavior**: Initialization takes the value of `Q_INIT` into account, allowing the flip-flop to start in either the SET or RESET state. The behavior is symmetrical because both possibilities are explicitly implemented.
 - **Adapter Coupling**: The flip-flop's state is not directly output as a data output, but is provided via a **unidirectional adapter** (`Q`) with output `D1`. This enables loose coupling with other function blocks.
 - **Deinitialization**: INIT with `QI = FALSE` resets the function block and returns it to the START state. All internal variables are set to their defined values (`QO = FALSE`).
@@ -84,11 +87,13 @@ The `QI` variable acts as a qualifier: Only if `QI = TRUE` is present are the op
 - DeInit → START (automatic after completion)
 
 ## Application Scenarios
+
 - **Startup Control**: A flip-flop that should assume a defined initial state after a start or reset (e.g., a machine starts in the "Ready" state).
 - **Safe Initialization**: In safety-critical systems where the start state must be explicitly specified.
 - **Modular Design**: Used as a fundamental storage element in an adapter-based architecture where the state is passed to other components via the adapter.
 
 ## Comparison with Similar Function Blocks
+
 - **Standard RS (e.g., RS Flip-Flop)**: Simple RS flip-flop without INIT and without an adapter. `AX_RS_SYM_INIT` extends this with initialization logic and an adapter interface.
 - **Bistable Flip-Flops with Reset**: Many function blocks only offer asynchronous reset. This function block integrates the reset into the event-driven behavior and allows for symmetrical target setting.
 - **SR Latch with INIT**: Similar function blocks exist, but usually without the qualifier `QI` and the deinitialization option.

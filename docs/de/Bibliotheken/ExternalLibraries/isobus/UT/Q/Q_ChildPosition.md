@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ChildPosition** ist ein standardkonformer Funktionsbaustein zur absoluten Positionsänderung von Child-Objekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.16) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ChildPosition](Q_ChildPosition.svg)
@@ -12,20 +13,24 @@ Der **Q_ChildPosition** ist ein standardkonformer Funktionsbaustein zur absolute
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt- und Parent-ID)
 - `REQ`: Positionsänderungs-Anforderung (mit absoluten Koordinaten)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Child-Objekt-ID
 - `u16ObjIdParent` (UINT): Parent-Objekt-ID
 - `s16Xposition` (INT): Absolute X-Position relativ zum Parent
 - `s16Yposition` (INT): Absolute Y-Position relativ zum Parent
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `s16OldXposition` (INT): Vorherige X-Position
 - `s16OldYposition` (INT): Vorherige Y-Position

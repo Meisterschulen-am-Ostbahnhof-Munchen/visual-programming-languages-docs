@@ -1,7 +1,10 @@
 # CTRL_IN
+
 calculate the process error DIFF
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | REQ | | SET_POINT, ACTUAL, NOISE |

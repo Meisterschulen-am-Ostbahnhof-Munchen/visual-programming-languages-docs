@@ -1,8 +1,10 @@
 # AS_MUX_3
+
 ![AS_MUX_3](./AS_MUX_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AS_MUX_3** is a generic multiplexer IC according to IEC 61499-2. It allows one of three input signals to be forwarded to a common output via a unidirectional **AS** adapter. The active input is selected using an integer index `K` (UINT). The IC is particularly suitable for flexible switching between different signal sources in automation systems, such as those found in agricultural technology.
 ## Interface Structure
 
@@ -47,6 +49,7 @@ This function block operates in an event-driven manner. Upon a **REQ** event, th
 - Values outside the range 0-2 are undefined and result in undefined behavior.
 
 ## Technical Features
+
 - **Adapter-based**: The function block uses the unidirectional `adapter::types::unidirectional::AS` adapter. This allows for flexible coupling with other function blocks of the same adapter type without fixed data paths.
 - **Generic design**: The **AS_MUX_3** is declared as a generic function block (attribute `eclipse4diac::core::GenericClassName = 'GEN_AS_MUX'`). This allows it to be customized in various configurations (e.g., different numbers of inputs) using the IDE.
 - **Easy Extensibility**: The concept can be extended to any number of inputs (e.g., AS_MUX_4, AS_MUX_5, etc.) without changing its fundamental functionality.
@@ -56,12 +59,11 @@ This function block operates in an event-driven manner. Upon a **REQ** event, th
 The function block does not have an explicit state machine in the XML. Its behavior can be described as an **event-driven function block** with the following implicit states:
 
 1. **Waiting**: No REQ event is pending → Output OUT remains unchanged.
-
 2. **Selection**: REQ is received → Index K is checked, and the corresponding adapter socket is switched to the plug.
-
 3. **Acknowledgement**: After successful switching, CNF is sent, followed by a return to the waiting state.
 
 ## Application Scenarios
+
 - **Signal Switching** in Field Control: Selection between different sensors (e.g., temperature, humidity, pressure) for control purposes.
 - **Data Stream Multiplexing** in a higher-level control logic where multiple sources need to be queried sequentially.
 - **Test and Diagnostic Systems**: Switching between normal operation and test signals.
@@ -84,6 +86,7 @@ The **AS_MUX_3** is a compact and efficient multiplexer device for three unidire
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

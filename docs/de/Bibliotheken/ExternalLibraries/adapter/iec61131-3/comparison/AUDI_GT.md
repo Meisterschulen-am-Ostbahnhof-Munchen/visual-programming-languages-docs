@@ -11,21 +11,26 @@ Der Funktionsblock AUDI_GT realisiert einen Vergleich zweier Werte auf „Größ
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **IN1.E1** – Ereigniseingang für den ersten Wert (über Adapter IN1)
 - **IN2.E1** – Ereigniseingang für den zweiten Wert (über Adapter IN2)
 Beide Ereignisse werden auf den internen REQ-Eingang des Bausteins F_GT verbunden.
 
 ### **Ereignis-Ausgänge**
+
 - **OUT.E1** – Ereignisausgang, der nach Abschluss des Vergleichs aktiviert wird (über Adapter OUT). Das Ergebnis liegt dann am Datenausgang an.
 
 ### **Daten-Eingänge**
+
 - **IN1.D1** – Erster Eingangswert (über Adapter IN1, Typ abhängig vom Adapter AUDI)
 - **IN2.D1** – Zweiter Eingangswert (über Adapter IN2, Typ abhängig vom Adapter AUDI)
 
 ### **Daten-Ausgänge**
+
 - **OUT.D1** – Ergebnis des Vergleichs: TRUE, wenn IN1 > IN2, sonst FALSE (über Adapter OUT, Typ abhängig vom Adapter AX)
 
 ### **Adapter**
+
 - **Socket IN1** (Typ: `adapter::types::unidirectional::AUDI`) – Verbindung für den ersten zu vergleichenden Wert.
 - **Socket IN2** (Typ: `adapter::types::unidirectional::AUDI`) – Verbindung für den zweiten zu vergleichenden Wert.
 - **Plug OUT** (Typ: `adapter::types::unidirectional::AX`) – Ausgabe des Vergleichsergebnisses.

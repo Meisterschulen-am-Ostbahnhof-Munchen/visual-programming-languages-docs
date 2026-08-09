@@ -31,9 +31,7 @@ The function block `AUI_MUL_3` is used for the mathematical multiplication of th
 #### **Sockets (Input Interfaces)**
 
 * **IN1** (Type: `adapter::types::unidirectional::AUI`): First multiplicand.
-
 * **IN2** (Type: `adapter::types::unidirectional::AUI`): Second multiplicand.
-
 * **IN3** (Type: `adapter::types::unidirectional::AUI`): Third multiplicand.
 
 #### **Plugs (Output Interface)**
@@ -46,7 +44,6 @@ The function block `AUI_MUL_3` is used for the mathematical multiplication of th
 
 As soon as a new event is signaled at one of the input adapters (`IN1`, `IN2`, or `IN3`), the function block reads the current values of the three inputs.
 
-
  The arithmetic multiplication is calculated as follows:
 
 $$ Result = Value(IN1) \cdot Value(IN2) \cdot Value(IN3)$$
@@ -55,13 +52,11 @@ The result is passed to the output adapter `OUT`, and a corresponding output eve
 
 Since the function block is declared as generic (`GEN_AUI_MUL`), it adapts flexibly to the data types of the connected adapters (e.g., `INT`, `REAL`, `LREAL`), as long as these are supported by the adapter type used.
 
-
 ---
 
 ## Technical Features
 
 * **Generic Type:** By defining it as a generic function block, it can be flexibly used for various numeric data types without having to create a separate function block for each type.
-
 * **Encapsulation by Adapters:** The use of the unidirectional `AUI` adapters significantly reduces the number of visible connection lines in the 4diac editor, as data and trigger events are bundled in a single connection.
 
 --
@@ -71,9 +66,7 @@ Since the function block is declared as generic (`GEN_AUI_MUL`), it adapts flexi
 The function block operates purely event-driven:
 
 1. **Wait State:** The function block waits for a trigger event on one of the sockets (`IN1`, `IN2`, `IN3`).
-
 2. **Calculation:** After an event occurs, the data is read and multiplied.
-
 
 -- 3. **Output:** The result is applied to the plug `OUT`, the plug's send event is triggered, and the function block returns to standby mode.
 
@@ -88,7 +81,6 @@ The function block operates purely event-driven:
 Compared to a classic, non-generic IEC 61131-3 standard function block, the `MUL` offers:
 
 * **Less Cascading:** Standard multipliers often only have two inputs. To multiply three values, two function blocks would have to be cascaded. The `AUI_MUL_3` accomplishes this in a single step.
-
 * **Improved Overview:** While classic function blocks require separate event and data lines, the adapter concept used here significantly simplifies the visual application design in the 4diac IDE.
 
 --

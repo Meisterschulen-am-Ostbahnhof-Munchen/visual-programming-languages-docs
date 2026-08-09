@@ -12,15 +12,19 @@ Der Funktionsblock **ALI_TO_AW** ist ein zusammengesetzter Baustein (Composite F
 Der Baustein besitzt keine direkten Ereignis- oder Datenein-/ausgänge auf FB-Ebene. Die Kommunikation erfolgt ausschließlich über zwei Adapter (einen Socket und einen Plug).
 
 ### **Ereignis-Eingänge**  
+
 *Keine direkten Ereignis-Eingänge vorhanden. Das eingehende Ereignis wird über den Adapter `ALI_IN.E1` bereitgestellt.*
 
 ### **Ereignis-Ausgänge**  
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Das ausgehende Ereignis wird über den Adapter `AW_OUT.E1` bereitgestellt.*
 
 ### **Daten-Eingänge**  
+
 *Keine direkten Daten-Eingänge vorhanden. Der LINT-Wert wird über den Adapter `ALI_IN.D1` bezogen.*
 
 ### **Daten-Ausgänge**  
+
 *Keine direkten Daten-Ausgänge vorhanden. Der WORD-Wert wird über den Adapter `AW_OUT.D1` ausgegeben.*
 
 ### **Adapter**
@@ -76,4 +80,5 @@ Der Funktionsblock `ALI_TO_AW` ist ein praktischer und wiederverwendbarer Bauste
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

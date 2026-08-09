@@ -1,11 +1,14 @@
 # Exercise_075: MM710
+
 ![Uebung_075_network](./Uebung_075_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the integration of the function block **FB_MM710_IMU** for communication with an MM710 IMU sensor via the logiBUS. The sensor is controlled via the CAN bus and provides motion data. This exercise serves as a foundation for understanding the parameterization and use of CAN-based sensor blocks in 4diac.
 
 ## Function Blocks (FBs) Used
+
 - **FB_MM710_IMU** (Type: `logiBUS::bosch::imu::FB_MM710_IMU`)
 - **Parameters**:
 - `QI` = `TRUE` (Activation of the block)
@@ -20,9 +23,7 @@ The SubApp contains **no further function blocks or sub-function blocks**. The e
 **Process**:
 
 1. After the PLC is activated, the function block is initialized with `QI = TRUE`.
-
 2. The function block attempts to communicate with the sensor at address `0xD8` via the CAN bus.
-
 3. After a successful connection, sensor data (e.g., acceleration, rotation rate) can be read (depending on the implementation of the function block).
 
 **Learning Objectives**:
@@ -43,6 +44,7 @@ Exercise **Exercise_075** demonstrates the basic integration of the MM710 IMU se
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,28 +1,34 @@
 # Q_ChildPosition
+
 ![Q_ChildPosition](https://user-images.githubusercontent.com/116869307/214147176-8b27f37a-4898-406a-98a0-e5f5701abc58.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **Q_ChildPosition** is a standards-compliant function block for the absolute position change of child objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.16) specification for agricultural tax systems.
 ![Q_ChildPosition](Q_ChildPosition.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization request (with object and parent ID)
 - `REQ`: Position change request (with absolute coordinates)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization confirmation
 - `CNF`: Change confirmation (with result data)
 
 ### **Data Inputs**
+
 - `u16ObjId` (UINT): Child object ID
 - `u16ObjIdParent` (UINT): Parent object ID
 - `s16Xposition` (INT): Absolute X-position relative to the parent
 - `s16Yposition` (INT): Absolute Y-position relative to the parent
 
 ### **Data Outputs**
+
 - `STATUS` (STRING): Operational status message
 - `s16OldXposition` (INT): Previous X-position
 - `s16OldYposition` (INT): Previous Y-position
@@ -31,18 +37,13 @@ The **Q_ChildPosition** is a standards-compliant function block for the absolute
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with child and parent object IDs
 - `INITO` confirms operational readiness
-
 2. **Position Change**:
-
 - `REQ` with absolute coordinates relative to the parent
 - Value range: -32768 to +32767 pixels
 - `CNF` returns the result and the previous position
-
 3. **Error Handling**:
-
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -69,6 +70,7 @@ The **Q_ChildPosition** is a standards-compliant function block for the absolute
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
 
 ## Application Scenarios
+
 - **Precise Object Placement**: Exact positioning of UI elements
 - **Dynamic Layouts**: Reorientation of controls
 - **Complex Arrangements**: Multi-layered interfaces

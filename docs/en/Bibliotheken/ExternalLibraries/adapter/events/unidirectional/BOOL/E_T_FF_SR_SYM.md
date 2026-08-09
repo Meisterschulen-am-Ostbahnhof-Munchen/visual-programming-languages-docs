@@ -1,8 +1,10 @@
 # E_T_FF_SR_SYM
+
 ![E_T_FF_SR_SYM](./E_T_FF_SR_SYM.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **E_T_FF_SR_SYM** is an event-driven, bistable toggle switch with an integrated toggle function. It combines the properties of an SR flip-flop (set-reset) and a toggle flip-flop (toggles on clock). Its unique feature is its symmetrical startup behavior: In the initial state, both set and clock events result in the set state, while a reset event directly results in the reset state. This enables defined and predictable behavior immediately after commissioning.
 ## Interface Structure
 
@@ -52,6 +54,7 @@ The **EO** event is then output, which accompanies the new value of **Q**.
 The **toggle** behavior is implemented by ensuring that a CLK event always toggles the current state – regardless of whether SET or RESET is active.
 
 ## Technical Features
+
 - No data inputs: Control is achieved exclusively via events. This reduces the number of required connections and simplifies timing analysis.
 - Symmetrical start behavior: The initial state START is not equivalent to a defined output value. Instead, a defined subsequent state is immediately assumed with each of the three possible start events (S, R, CLK). This prevents undefined states after the start.
 - All algorithms are implemented in ST (Structured Text) and consist of simple assignments.
@@ -80,6 +83,7 @@ RESET | S | SET |
 Note: S events remaining in the SET state or R events remaining in the RESET state are not explicitly mapped – the state is retained, and no EO output is generated.
 
 ## Application Scenarios
+
 - **Clock Switching Operations**: This function block is suitable for applications where a binary signal needs to be switched by a clock signal, but separate setting or resetting must also be possible (e.g., manual priority control).
 - **Symmetrical Start Initialization**: In safety-critical systems, responding equally to S or CLK in the start state prevents the presence of an undefined value.
 - **Pulse Width Modulation or Toggle Locking**: As a simple toggle function block with set/reset priority.
@@ -100,6 +104,7 @@ The **E_T_FF_SR_SYM** is a versatile event-driven flip-flop component that combi
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

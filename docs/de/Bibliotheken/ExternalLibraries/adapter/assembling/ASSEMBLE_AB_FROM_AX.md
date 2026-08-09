@@ -11,15 +11,19 @@ Der Funktionsblock **ASSEMBLE_AB_FROM_AX** fasst acht boolesche Einzelsignale, d
 ## Schnittstellenstruktur
 
 ### **Ereignis‑Eingänge**
+
 Keine. Ereignisse werden ausschließlich über die Adapter‑Sockets empfangen.
 
 ### **Ereignis‑Ausgänge**
+
 Keine. Ereignisse werden ausschließlich über den Adapter‑Plug ausgegeben.
 
 ### **Daten‑Eingänge**
+
 Keine. Alle Daten werden über die Adapter‑Sockets übertragen.
 
 ### **Daten‑Ausgänge**
+
 Keine. Alle Daten werden über den Adapter‑Plug ausgegeben.
 
 ### **Adapter**
@@ -86,4 +90,5 @@ Der Funktionsblock **ASSEMBLE_AB_FROM_AX** ist ein praktischer, adapterbasierter
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

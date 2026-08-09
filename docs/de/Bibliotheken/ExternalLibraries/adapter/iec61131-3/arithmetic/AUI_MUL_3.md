@@ -30,11 +30,13 @@ Der Funktionsbaustein `AUI_MUL_3` dient der mathematischen Multiplikation von dr
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUI`): Erster Multiplikand.
 * **IN2** (Typ: `adapter::types::unidirectional::AUI`): Zweiter Multiplikand.
 * **IN3** (Typ: `adapter::types::unidirectional::AUI`): Dritter Multiplikand.
 
 #### **Plugs (Ausgangs-Schnittstelle)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUI`): Ergebnis der Multiplikation ($OUT = IN1 \cdot IN2 \cdot IN3$).
 
 ---

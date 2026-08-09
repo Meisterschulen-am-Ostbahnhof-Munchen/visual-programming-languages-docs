@@ -15,6 +15,7 @@ Es werden folgende Funktionsbausteine verwendet. Die SubApp enthält keine weite
 ---
 
 ### FB: `InputNumber_I3`
+
 - **Typ**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`
 - **Parameter**:
   - `QI` = `TRUE` (Initialwert für die Qualität des Eingangs)
@@ -27,6 +28,7 @@ Es werden folgende Funktionsbausteine verwendet. Die SubApp enthält keine weite
 ---
 
 ### FB: `INI_AR`
+
 - **Typ**: `eclipse4diac::storage::INI_AR`
 - **Parameter**:
   - `QI` = `TRUE` (Aktivierung des Speichervorgangs)
@@ -41,6 +43,7 @@ Es werden folgende Funktionsbausteine verwendet. Die SubApp enthält keine weite
 ---
 
 ### FB: `Q_NumericValue`
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameter**:
   - `stObj` = `InputNumber_I3` (Referenz auf dasselbe physikalische Objekt wie beim Eingang)
@@ -80,4 +83,5 @@ Die Übung `Uebung_012g_AR` zeigt eine kompakte Realisierung eines numerischen W
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -15,15 +15,19 @@ Der Funktionsblock **AX_FB_F_TRIG** (Falling Edge Trigger mit AX-Adapter) dient 
 Der Baustein verzichtet auf klassische separate Ereignis- und Daten-Pins und nutzt stattdessen Adapter-Schnittstellen.
 
 ### **Ereignis-Eingänge**
+
 *   *Keine direkten Ereignis-Eingänge (gekapselt im Adapter `CLK`).*
 
 ### **Ereignis-Ausgänge**
+
 *   *Keine direkten Ereignis-Ausgänge (gekapselt im Adapter `Q`).*
 
 ### **Daten-Eingänge**
+
 *   *Keine direkten Daten-Eingänge (gekapselt im Adapter `CLK`).*
 
 ### **Daten-Ausgänge**
+
 *   *Keine direkten Daten-Ausgänge (gekapselt im Adapter `Q`).*
 
 ### **Adapter**
@@ -86,4 +90,5 @@ Der **AX_FB_F_TRIG** ist ein essenzieller Baustein für Entwickler, die innerhal
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

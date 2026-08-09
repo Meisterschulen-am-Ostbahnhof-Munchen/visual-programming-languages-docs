@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ChildLocation** ist ein standardkonformer Funktionsbaustein zur Positionsänderung von Child-Objekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.14) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ChildLocation](Q_ChildLocation.svg)
@@ -12,20 +13,24 @@ Der **Q_ChildLocation** ist ein standardkonformer Funktionsbaustein zur Position
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt- und Parent-ID)
 - `REQ`: Positionsänderungs-Anforderung (mit relativen Koordinaten)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Child-Objekt-ID
 - `u16ObjIdParent` (UINT): Parent-Objekt-ID
 - `u8Xchange` (USINT): Relative X-Positionsänderung (-128 bis +127)
 - `u8Ychange` (USINT): Relative Y-Positionsänderung (-128 bis +127)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldXchange` (USINT): Vorherige X-Änderung
 - `u8OldYchange` (USINT): Vorherige Y-Änderung

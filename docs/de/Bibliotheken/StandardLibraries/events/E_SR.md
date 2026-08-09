@@ -8,6 +8,7 @@
 * [Decoding the E_SR Function Block: The Unsung Hero of Industrial Automation](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-the-E_SR-Function-Block-The-Unsung-Hero-of-Industrial-Automation-e3681qo)
 
 ## Einleitung
+
 Der `E_SR` (Event-driven SR Flip-Flop) ist ein ereignisgesteuerter, bistabiler Funktionsbaustein nach IEC 61499. Er dient als grundlegendes Speicherelement, das durch separate "Set"- und "Reset"-Ereignisse gesteuert wird. Sein Ausgang `Q` behält seinen Zustand bei, bis ein entgegengesetztes Ereignis eintrifft.
 
 ![E_SR](E_SR.svg)
@@ -15,17 +16,21 @@ Der `E_SR` (Event-driven SR Flip-Flop) ist ein ereignisgesteuerter, bistabiler F
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
+
 - **S (Set)**: Setzt den Ausgang `Q` auf `TRUE`.
 - **R (Reset)**: Setzt den Ausgang `Q` auf `FALSE`.
 
 ### **Ereignis-Ausgänge:**
+
 - **EO (Event Output)**: Wird ausgelöst, wenn sich der Zustand von `Q` ändert.
     - **Verbundene Daten**: `Q`
 
 ### **Daten-Ausgänge:**
+
 - **Q**: Der aktuelle Zustand des Flip-Flops (Datentyp: `BOOL`).
 
 ## Funktionsweise
+
 Der `E_SR`-Baustein funktioniert als einfacher Speicher (Latch):
 
 1.  **Setzen**: Wenn ein Ereignis am Eingang `S` eintrifft, wird der Ausgang `Q` auf `TRUE` gesetzt. Wenn `Q` vorher `FALSE` war, wird das `EO`-Ereignis ausgelöst.
@@ -41,11 +46,13 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 - **Änderungserkennung**: Der `EO`-Ausgang wird nur bei einer tatsächlichen Zustandsänderung ausgelöst.
 
 ## Anwendungsszenarien
+
 - **Start/Stopp-Logik**: Ein "Start"-Taster ist mit `S` verbunden, ein "Stopp"-Taster mit `R`, um den Zustand einer Maschine zu steuern.
 - **Fehlerspeicherung**: Ein Fehlerereignis setzt den Baustein (`S`), der den Fehlerzustand speichert, bis er von einem Bediener oder einem anderen Prozess explizit quittiert (`R`) wird.
 - **Modus-Speicher**: Speichern des aktuellen Betriebsmodus einer Anlage (z.B. "Hand" vs. "Automatik").
 
 ## Verwandte Bausteine
+
 - **[E_RS](E_RS.md)**: Funktional identisch zum `E_SR`. Der einzige Unterschied liegt in der grafischen Anordnung der `S`- und `R`-Anschlüsse am Symbol.
 - **`E_D_FF`**: Speichert ebenfalls einen Zustand, aber taktbasiert. `E_D_FF` übernimmt den Wert am `D`-Eingang bei einem `CLK`-Ereignis.
 
@@ -76,4 +83,5 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 * [Uebung_160b](../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
 
 ## Fazit
+
 Der `E_SR`-Baustein ist ein fundamentaler Speicherbaustein in der IEC 61499. Er ist ideal für einfache Zustandspeicherungen, bei denen ein Zustand durch ein Ereignis gesetzt und durch ein anderes explizit zurückgesetzt wird. Das Fehlen einer garantierten Set- oder Reset-Dominanz bei gleichzeitigen Ereignissen muss in kritischen Anwendungen beachtet werden.

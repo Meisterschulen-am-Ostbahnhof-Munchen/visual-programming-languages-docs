@@ -17,6 +17,7 @@ Die **Uebung_039a_sub_Outputs** ist ein Sub-Applikations-Typ, der dafür konzipi
 In dieser Sub-Applikation werden verschiedene Funktionsbausteine und eine weitere Sub-Applikation verwendet, um die Steuerungslogik und die visuelle Rückmeldung zu realisieren.
 
 ### Sub-Bausteine: GreenWhiteBackground
+
 Diese Sub-Applikation wird verwendet, um den Status des Ausgangs visuell auf dem Display darzustellen.
 
 - **Typ**: `MyLib::sys::GreenWhiteBackground`
@@ -28,6 +29,7 @@ Diese Sub-Applikation wird verwendet, um den Status des Ausgangs visuell auf dem
 ### Weitere Bausteine
 
 #### IE (Softkey Input Event)
+
 - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`
 - **Parameter**: 
     - `QI` = `TRUE`
@@ -36,14 +38,17 @@ Diese Sub-Applikation wird verwendet, um den Status des Ausgangs visuell auf dem
 - **Funktionsweise**: Überwacht einen spezifischen ISOBUS-Softkey. Wenn dieser losgelassen wird, sendet der Baustein ein Event am Ausgang `IND`.
 
 #### E_SWITCH (Event Switch)
+
 - **Typ**: `iec61499::events::E_SWITCH`
 - **Funktionsweise**: Fungiert als Weiche für Events. Abhängig vom Eingang `G` wird das eingehende Event `EI` entweder auf `EO0` (wenn G=0) oder `EO1` (wenn G=1) geleitet. Dies ist zentral für die Toggle-Logik.
 
 #### E_SR (Set/Reset Flip-Flop)
+
 - **Typ**: `iec61499::events::E_SR`
 - **Funktionsweise**: Ein bistabiles Element, das den Zustand (Ein/Aus) speichert. Ein Event an `S` setzt den Ausgang `Q` auf TRUE, ein Event an `R` setzt ihn auf FALSE.
 
 #### QX (LogiBUS Output)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**: `QI` = `TRUE`
 - **Funktionsweise**: Dieser Baustein steuert den physikalischen oder logischen Ausgang des LogiBUS-Systems. Er übernimmt den Zustand von `OUT` und schreibt ihn auf die Variable, die am Dateneingang `Output` definiert ist.
@@ -68,6 +73,7 @@ Der Ablauf innerhalb dieser Sub-Applikation lässt sich wie folgt beschreiben:
     *   Diese erhält den aktuellen Zustand (`E_SR.Q` verbunden mit `DI1`) und aktualisiert die Darstellung auf dem Terminal.
 
 ### Lernziele und Besonderheiten
+
 *   Erstellung einer wiederverwendbaren Komponente (Sub-Applikation) für UI-Elemente.
 *   Implementierung einer **Toggle-Funktion** (Ein/Aus mit einem Taster) mittels Standard-Events (E_SWITCH und E_SR).
 *   Synchronisation von Hardware-Ausgängen und UI-Darstellung.

@@ -1,4 +1,5 @@
 # F_NE
+
 ![F_NE](https://user-images.githubusercontent.com/116869307/214144558-e676465a-a116-46b2-87e7-fd3b912c702a.png)
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_ne.html>
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_ne.html>
@@ -56,6 +57,7 @@ IF NE(Sollwert, Istwert) THEN
 // Fehlersignal generieren
 END_IF
 ### Advantages of the NE Operator
+
 - **Simple Logic:** The NE operator allows complex conditions to be formulated in simple, easily understandable expressions.
 - **Flexibility:** The operator can be applied to various data types, including integers, floating-point numbers, and even Boolean values.
 - **Efficiency:** By being directly integrated into function blocks, the NE operator reduces the need for additional programming and makes the code more efficient.

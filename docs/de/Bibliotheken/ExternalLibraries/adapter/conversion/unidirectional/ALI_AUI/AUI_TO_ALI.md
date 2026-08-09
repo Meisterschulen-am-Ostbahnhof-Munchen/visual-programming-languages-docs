@@ -11,18 +11,23 @@ Der Funktionsblock AUI_TO_ALI ist ein Composite FB, der einen AUI-Adapter (UINT)
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **AUI_IN.E1** (Ereignis über Socket AUI_IN): Startet die Konvertierung, wenn ein Ereignis am Socket anliegt (über den AUI-Adapter).
 
 ### **Ereignis-Ausgänge**
+
 - **ALI_OUT.E1** (Ereignis über Plug ALI_OUT): Wird nach abgeschlossener Konvertierung ausgegeben (über den ALI-Adapter).
 
 ### **Daten-Eingänge**
+
 - **AUI_IN.D1** (Daten über Socket AUI_IN): UINT-Wert, der in einen LINT-Wert konvertiert werden soll.
 
 ### **Daten-Ausgänge**
+
 - **ALI_OUT.D1** (Daten über Plug ALI_OUT): Konvertierter LINT-Wert.
 
 ### **Adapter**
+
 - **Socket AUI_IN** (Typ: adapter::types::unidirectional::AUI): Empfängt UINT-Daten und zugehöriges Ereignis.
 - **Plug ALI_OUT** (Typ: adapter::types::unidirectional::ALI): Sendet konvertierte LINT-Daten und zugehöriges Ereignis.
 
@@ -58,4 +63,5 @@ Der Composite FB AUI_TO_ALI bietet eine einfache und zuverlässige Möglichkeit,
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

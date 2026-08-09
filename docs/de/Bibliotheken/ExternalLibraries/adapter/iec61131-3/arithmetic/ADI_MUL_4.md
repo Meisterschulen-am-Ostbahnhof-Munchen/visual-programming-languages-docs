@@ -13,26 +13,32 @@ Der Funktionsbaustein `ADI_MUL_4` ist ein generischer, adapterbasierter Baustein
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Dieser Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung ist in den verwendeten Adaptern gekapselt.*
 
 ### **Ereignis-Ausgänge**
+
 *Dieser Baustein besitzt keine direkten Ereignis-Ausgänge. Die Ereignisweiterleitung ist in den verwendeten Adaptern gekapselt.*
 
 ### **Daten-Eingänge**
+
 *Dieser Baustein besitzt keine direkten Daten-Eingänge. Die Datenübergabe erfolgt über die Sockets.*
 
 ### **Daten-Ausgänge**
+
 *Dieser Baustein besitzt keine direkten Daten-Ausgänge. Die Datenausgabe erfolgt über den Plug.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Faktor für die Multiplikation.
 *   **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Faktor für die Multiplikation.
 *   **IN3** (Typ: `adapter::types::unidirectional::ADI`): Dritter Faktor für die Multiplikation.
 *   **IN4** (Typ: `adapter::types::unidirectional::ADI`): Vierter Faktor für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::ADI`): Ergebnis der Multiplikation ($OUT = IN1 \times IN2 \times IN3 \times IN4$).
 
 ## Funktionsweise

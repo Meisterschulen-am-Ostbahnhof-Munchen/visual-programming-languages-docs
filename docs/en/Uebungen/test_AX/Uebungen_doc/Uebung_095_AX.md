@@ -1,8 +1,10 @@
 # Exercise_095_AX: Example for AX_SELECT
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_095_AX`.
 ----
 ## Purpose of the Exercise
+
 Selecting an event source (opposite of `E_SPLIT` or `E_SWITCH`).
 
 -----
@@ -23,6 +25,7 @@ Selecting an event source (opposite of `E_SPLIT` or `E_SWITCH`).
 -----
 
 ## Functionality
+
 * If `I1` is off (`G=FALSE`), events from `I2` (`EI0`) are passed to the output. Events from `I3` are ignored.
 * If `I1` is on (`G=TRUE`), events from `I3` (`EI1`) are passed through to the output. Events from `I2` are ignored.
 

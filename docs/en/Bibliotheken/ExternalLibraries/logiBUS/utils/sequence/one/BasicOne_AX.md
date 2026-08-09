@@ -1,8 +1,10 @@
 # BasicOne_AX
+
 ![BasicOne_AX](./BasicOne_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `BasicOne_AX` is a basic IEC 61499 block of type *Basic Function Block*, serving as a template for simple control tasks. It implements an initializable switching of a Boolean signal using unidirectional adapter interfaces of type `AX`. The block is suitable for scenarios in which an input signal needs to be copied to an output and the initialization state needs to be monitored.
 ## Interface Structure
 
@@ -51,6 +53,7 @@ The function block iterates through a finite state machine (ECC) with the states
 In summary, the function block operates as a *triggered passthrough*: The adapter input is copied to the adapter output with each event at the socket, but only if the function block was previously initialized correctly (`QI=TRUE` for `INIT`).
 
 ## Technical Features
+
 - **Adapter-Based Interface**: Input/output data is not exchanged via direct variables, but rather via the unidirectional adapters `DI1` and `DO1` (type `AX`). This enables flexible coupling with other function blocks of the same adapter type.
 - **Initialization Logic**: The function block distinguishes between an initialized (`QI=TRUE`) and a deinitialized (`QI=FALSE`) state. Incoming adapter events are only processed after successful initialization.
 - **Package Name**: The function block is organized in the package `logiBUS::utils::sequence::one`, indicating its use in a logiBUS environment.
@@ -69,11 +72,13 @@ The ECC (Execution Control Chart) of the module comprises five states:
 | `DeInit` | Performs deinitialization (sets `QO` and `DO1.D1` to `FALSE`), sends `INITO`. |
 
 ## Application Scenarios
+
 - **Signal Passthrough with Fuse**: A Boolean signal (e.g., enabling a process) should only be passed from a source to a sink if the function block has been initialized beforehand. Sending `INIT` followed by `QI=FALSE` again interrupts the passthrough.
 - **Initialization Sequence in Manufacturing Plants**: Before production starts, the function block is initialized (e.g., checking safety conditions). Only then may actuators be controlled via `DO1`.
 - **Data Transfer in Modular Systems**: The unidirectional adapter `AX` allows loose coupling between modules – the component serves as a simple "pass-through" in a data chain.
 
 ## Comparison with Similar Components
+
 - **BasicOne (without adapter)**: A typical `BasicOne` component uses direct input/output variables. `BasicOne_AX` extends this with an adapter-based interface, improving reusability and structuring in larger systems.
 - **Standard `E_SR` (Set/Reset)**: A set/reset flip-flop stores a state, while `BasicOne_AX`It has no memory function – the output follows the input only during active initialization and upon each event.
 - **Move Function Block**: A `MOVE` block continuously copies values. In contrast, `BasicOne_AX` only copies upon an event (triggered) and only after successful initialization.

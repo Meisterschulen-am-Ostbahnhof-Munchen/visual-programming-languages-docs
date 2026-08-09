@@ -10,15 +10,19 @@ Der Funktionsbaustein `AL_SPLIT_8` verteilt ein eingehendes unidirektionales AL-
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine
 
 ### **Ereignis-Ausgänge**
+
 Keine
 
 ### **Daten-Eingänge**
+
 Keine
 
 ### **Daten-Ausgänge**
+
 Keine
 
 ### **Adapter**
@@ -60,4 +64,5 @@ Der `AL_SPLIT_8` ist ein schlichter, aber wichtiger Baustein zur Vervielfachung 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

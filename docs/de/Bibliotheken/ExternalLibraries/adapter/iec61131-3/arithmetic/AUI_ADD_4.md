@@ -24,20 +24,25 @@ Durch die Verwendung von Adaptern wird die Anzahl der sichtbaren Verbindungen im
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung erfolgt implizit über die integrierten Ereigniskanäle der Eingangs-Adapter (`IN1` bis `IN4`).
 
 ### **Ereignis-Ausgänge**
+
 Der Baustein besitzt keine direkten Ereignis-Ausgänge. Die Weiterleitung von Aktualisierungsereignissen erfolgt implizit über den Ausgangs-Adapter (`OUT`).
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden. Die Datenübergabe ist vollständig in den Eingangs-Adaptern gekapselt.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden. Die Datenausgabe ist im Ausgangs-Adapter gekapselt.
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUI`): 
   Erster Summand der Additionsoperation.
 * **IN2** (Typ: `adapter::types::unidirectional::AUI`): 
@@ -48,6 +53,7 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Die Datenausgabe ist im Ausgan
   Vierter Summand der Additionsoperation.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUI`): 
   Ausgangs-Adapter, der das mathematische Ergebnis der Addition bereitstellt.
 

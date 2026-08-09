@@ -11,26 +11,32 @@ Der Funktionsbaustein `ALR_MUL_4` dient der Durchführung einer arithmetischen M
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Für diesen Funktionsbaustein sind keine direkten Ereignis-Eingänge definiert, da die Steuerung und Aktualisierung über die Adapter erfolgt.*
 
 ### **Ereignis-Ausgänge**
+
 *Für diesen Funktionsbaustein sind keine direkten Ereignis-Ausgänge definiert.*
 
 ### **Daten-Eingänge**
+
 *Für diesen Funktionsbaustein sind keine direkten Daten-Eingänge definiert.*
 
 ### **Daten-Ausgänge**
+
 *Für diesen Funktionsbaustein sind keine direkten Daten-Ausgänge definiert.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::ALR`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
 *   **IN2** (Typ: `adapter::types::unidirectional::ALR`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
 *   **IN3** (Typ: `adapter::types::unidirectional::ALR`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
 *   **IN4** (Typ: `adapter::types::unidirectional::ALR`): Vierter Eingangswert (Multiplikand 4) für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::ALR`): Ausgang für das berechnete Produkt der vier Eingangswerte.
 
 ## Funktionsweise

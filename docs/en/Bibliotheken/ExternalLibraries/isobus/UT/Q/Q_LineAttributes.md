@@ -1,28 +1,34 @@
 # Q_LineAttributes
+
 ![Q_LineAttributes](https://user-images.githubusercontent.com/116869307/214147948-3b9f6d08-00a5-43c0-895b-f2a997773b97.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **Q_LineAttributes** is a standards-compliant function module for modifying line attributes in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.30) specification for VT systems.
 ![Q_LineAttributes](Q_LineAttributes.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization request (with object ID)
 - `REQ`: Attribute change request (with new line attributes)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization confirmation
 - `CNF`: Change confirmation (with status and old attributes)
 
 ### **Data Inputs**
+
 - `u16ObjId` (UINT): Object ID (16-bit)
 - `u8LineColour` (USINT): New line color
 - `u8LineWidth` (USINT): New line width
 - `u16LineArt` (UINT): New line style
 
 ### **Data Outputs**
+
 - `STATUS` (STRING): Operational status message
 - `u8OldLineColour` (USINT): Old line color
 - `u8OldLineWidth` (USINT): Old line width
@@ -32,18 +38,13 @@ The **Q_LineAttributes** is a standards-compliant function module for modifying 
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with object ID
 - `INITO` confirms operational readiness
-
 2. **Attribute Change**:
-
 - `REQ` with new line attributes
 - Changes Object Line Properties
 - `CNF` provides result status and previous values
-
 3. **Error Handling**:
-
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -76,6 +77,7 @@ The **Q_LineAttributes** is a standards-compliant function module for modifying 
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
+
 - **Graphic Design**: Dynamic Line Adjustments
 - **Diagrams**: Highlighting Important Elements
 - **User Guidance**: Visual Markers

@@ -17,20 +17,25 @@ Durch die konsequente Verwendung von Adaptern anstelle von klassischen diskreten
 Da dieser Funktionsbaustein vollständig auf adapterbasierte Kommunikation setzt, verfügt er auf oberster Ebene über keine direkten, klassischen Event- oder Daten-Schnittstellen. Die gesamte Kommunikation wird über die deklarierten Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (Ereignisse werden über die Adapter-Schnittstellen empfangen).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (Ereignisse werden über die Adapter-Schnittstellen gesendet).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangsschnittstellen)**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`):
   Der Auswahladapter (Selector). Das hier anliegende Signal steuert, welcher der beiden Eingänge (`IN0` oder `IN1`) an den Ausgang weitergeleitet wird.
 * **IN0** (Typ: `adapter::types::unidirectional::AR`):
@@ -39,6 +44,7 @@ Da dieser Funktionsbaustein vollständig auf adapterbasierte Kommunikation setzt
   Der zweite auswählbare Signal-Eingang. Dieser Wert wird an den Ausgang `OUT` weitergegeben, wenn der Selektor `G` den Zustand `TRUE` (1) aufweist.
 
 #### **Plugs (Ausgangsschnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AR`):
   Der selektierte Ausgangsadapter. Er liefert den Wert des jeweils aktiven Eingangs inklusive des dazugehörigen Aktualisierungsereignisses.
 

@@ -11,18 +11,23 @@ Der Funktionsblock AR_TO_AUS ist ein Composite-Baustein zur Umwandlung eines REA
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **AR_IN.E1** (über Socket `AR_IN`): Ereignis zum Starten der Konvertierung des anliegenden REAL-Wertes.
 
 ### **Ereignis-Ausgänge**
+
 - **AUS_OUT.E1** (über Plug `AUS_OUT`): Ereignis, das nach erfolgreicher Konvertierung und Ausgabe des USINT-Wertes ausgelöst wird.
 
 ### **Daten-Eingänge**
+
 - **AR_IN.D1** (über Socket `AR_IN`, Typ: REAL): Eingangswert, der in USINT konvertiert werden soll.
 
 ### **Daten-Ausgänge**
+
 - **AUS_OUT.D1** (über Plug `AUS_OUT`, Typ: USINT): Konvertierter Ausgangswert.
 
 ### **Adapter**
+
 - **Socket AR_IN** (Typ: `adapter::types::unidirectional::AR`): Unidirektionaler REAL-Eingangsadapter.
 - **Plug AUS_OUT** (Typ: `adapter::types::unidirectional::AUS`): Unidirektionaler USINT-Ausgangsadapter.
 
@@ -69,4 +74,5 @@ Der Funktionsblock AR_TO_AUS bietet eine einfache, modulare Lösung zur Konverti
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

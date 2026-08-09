@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert einen **Rückwärtszähler (CTD)** nach IEC 61131‑3 mit einem **AUDI_FB_CTD** (Adapter‑Version, Datentyp **UDINT**). Der aktuelle Zählerstand wird über ein Terminal in **PHYSA_LREAL** ausgegeben. Zusätzlich ist ein digitaler Ausgang (**Output_Q1**) vorhanden, der den Zustand des Zählers (Q) anzeigt.
 
 Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender Hinweis im Netzwerk macht darauf aufmerksam. Um die Ereignisrate bei schnellen Zählimpulsen zu reduzieren, könnte optional ein **AX_D_FF** (Flip‑Flop) eingebaut werden.
@@ -13,6 +14,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub‑Baustein: `AUDI_FB_CTD`
+
 - **Typ**: `adapter::iec61131::counters::AUDI_FB_CTD`
 - **Verwendete interne FBs** (keine weiteren internen FBs)
 - **Parameter**: Keine eigenen Parameter (alle Daten werden über Adapter verbunden)
@@ -28,6 +30,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ### Sub‑Baustein: `AUDI_UDINT_TO_UDI`
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -43,6 +46,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ### Sub‑Baustein: `Input_CD`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -58,6 +62,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ### Sub‑Baustein: `Input_LD`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -73,6 +78,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ### Sub‑Baustein: `Output_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -88,6 +94,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ### Sub‑Baustein: `AUDI_TO_ALR`
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
 - **Verwendete interne FBs**: Keine
 - **Parameter**: Keine eigenen Parameter
@@ -101,6 +108,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ### Sub‑Baustein: `Q_NumericValue_PHYSA_LREAL`
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Verwendete interne FBs**: Keine
 - **Parameter**:
@@ -142,6 +150,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 ---
 
 ## Zusammenfassung
+
 Die **Uebung_218b_ALR** vermittelt den Umgang mit einem **IEC‑61131‑3 Rückwärtszähler** in der **4diac‑IDE**. Der Zähler wird über zwei digitale Eingänge gesteuert (Zählen und Laden) und gibt seinen Status sowie den aktuellen Wert aus. Die Besonderheit liegt in der Umwandlung des UDINT‑Zählwertes in eine LREAL‑Terminalausgabe, sodass auch negative Zahlen dargestellt werden können.
 
 **Lernziele:**
@@ -157,4 +166,5 @@ Die **Uebung_218b_ALR** vermittelt den Umgang mit einem **IEC‑61131‑3 Rückw
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,11 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinierten SubApp, um die **Wheel Based Machine Speed (WBSD)** von einem ISOBUS-IA-WBSD-Baustein über den **Universal Task (UT)** auszugeben und gleichzeitig einen digitalen Ausgang Q1 zu schalten, sobald die Geschwindigkeit größer als 0 ist. Die gesamte Kommunikation erfolgt über Adapter-Schnittstellen, was eine modulare und typsichere Verbindung der Funktionsbausteine ermöglicht.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Haupt-FBs (auf oberster Ebene)
+
 - **IA_WBSD**: `isobus::tecu::IA_WBSD`  
   ISOBUS-Adapter-Baustein für die Wheel Based Machine Speed. Parameter: `QI` = TRUE (aktiviert).
 
@@ -25,12 +27,14 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
   Verteilt ein eingehendes AUI-Ereignis auf zwei Ausgänge (OUT1, OUT2) – hier für parallele Weiterleitung der Geschwindigkeitsdaten.
 
 ### Sub-Bausteine: `AX_GT_0_UINT`
+
 - **Typ**: `MyLib::sys::AX_GT_0_UINT` (benutzerdefinierte SubApp)
 - **Verwendete interne FBs**: (Details liegen nicht vor, da die SubApp extern definiert ist. Sie enthält vermutlich einen Vergleichsbaustein für unsigned integer.)
 - **Funktionsweise**:  
   Diese SubApp prüft, ob der eingehende Wert (vom Typ UINT) größer als 0 ist. Trifft dies zu, wird der Ausgangsadapter `AX_OUT` aktiviert. Dieser Ausgang steuert anschließend den digitalen Ausgang Q1 (über den Adapterverbund mit `DigitalOutput_Q1.OUT`).
 
 ## Programmablauf und Verbindungen
+
 1. Der Adapter `IA_WBSD` liefert kontinuierlich die aktuelle Radgeschwindigkeit über den Adapterausgang `SPEED` (AUI-Format).
 2. Der Split-Baustein `AUI_SPLIT_2` empfängt die Geschwindigkeit und leitet sie an zwei Pfade weiter:
    - **OUT1** → `CONV_AUI_AUDI` → `Q_NumericValue_WBSD`: Die Geschwindigkeit wird über den UT als numerischer Wert ausgegeben (Objektreferenz `NumberVariable_Wheel_based_machine_speed`).
@@ -50,9 +54,11 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 **Hinweis**: Die Übung liegt als **Adapter-Version** der Grundübung `Uebung_071` vor. Voraussetzung ist ein funktionierender ISOBUS-UT-sowie logiBUS-Ausgang in der Zielumgebung.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_071_AUI` zeigt eine typische landwirtschaftliche Automatisierungsaufgabe: die Ausgabe einer Maschinengeschwindigkeit auf einem Universal Terminal und die gleichzeitige Aktivierung eines digitalen Ausgangs bei Bewegung. Alle Kommunikationsverbindungen wurden durch Adaptertypen realisiert, was die Wiederverwendbarkeit und Austauschbarkeit der Bausteine erhöht. Der Einsatz der SubApp `AX_GT_0_UINT` verdeutlicht, wie eigene kleine Logikbausteine dezentral in das Gesamtsystem integriert werden.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

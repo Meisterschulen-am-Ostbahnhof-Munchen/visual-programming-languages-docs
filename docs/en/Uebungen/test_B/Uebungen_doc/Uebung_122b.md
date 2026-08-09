@@ -1,9 +1,11 @@
 Here is the documentation page for exercise **Exercise_122b** based on the provided XML data.
 # Exercise_122b: ISOBUS Name Exercise
+
 ![Uebung_122b_network](./Uebung_122b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise ("ISOBUS Name Exercise") deals with the analysis and decoding of the **ISOBUS NAME** field according to ISO 11783. The goal is to retrieve information about participants (Control Functions - CFs) on the bus, extract their 64-bit names, and decompose these names into their individual components (such as manufacturer, device class, function, etc.).
 
 The exercise is implemented as a sub-application (`SubAppType`) and processes lists of network value events and CF information.
@@ -68,15 +70,12 @@ This function block scans the bus and outputs the current lists of network parti
 The outputs `sNetEv` (Network Events) and `sCfInfo` (Control Function Info) are passed to the `LOG_16` function blocks. These break down the arrays into individual connections (index 1 to 16).
 
 3. **Processing Path A & C (Name Analysis)**:
-
 - The individual network events are routed from `LOG_16` to the `SD_A` blocks.
 - There, the attribute `cfName` (the ISOBUS name) is extracted.
 - This `cfName` is then forwarded directly to the respective `NmSetNF` block.
 - The `NmSetNF` block decodes the name.
 - The result (the structure with the readable fields) is displayed in detail in the `SD_C` block. This allows you to see, for example, which manufacturer is behind a device.
-
 4. **Processing Path B (Information Display)**:
-
 - In parallel, the general CF information is routed from `LOG_16B` to the `SD_B` blocks. This presumably serves to diagnose the addresses and status of the participants, independent of the name decoding.
 
 ## Summary
@@ -86,6 +85,7 @@ Exercise **Exercise_122b** demonstrates the detailed analysis of ISOBUS particip
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

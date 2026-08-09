@@ -1,4 +1,5 @@
 # AR_TO_AS
+
 ![AR_TO_AS](./AR_TO_AS.svg)
 
 * * * * * * * * * *
@@ -14,11 +15,17 @@ No dedicated data inputs. Data is received via the **AS_OUT adapter** (see Adapt
 No dedicated data outputs. Data is sent via the **AR_IN adapter** (see Adapters).
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
@@ -27,12 +34,11 @@ No dedicated data outputs. Data is sent via the **AR_IN adapter** (see Adapters)
 | `AS_OUT` | `adapter::types::unidirectional::AS` | Plug (outbound) | Unidirectional SINT adapter. Receives a SINT value (D1) and an associated event (E1). |
 
 ## Functionality
+
 The function block performs the conversion as follows:
 
 1. An incoming event on **AR_IN.E1** triggers the internal conversion block **F_REAL_TO_SINT**.
-
 2. The REAL value associated with the event from **AR_IN.D1** is forwarded to the input `IN` of the conversion block.
-
 3. **F_REAL_TO_SINT** converts the REAL value into a SINT value and outputs the result to its output `OUT`. 4. After the conversion is complete, an event is sent via **AS_OUT.E1**, along with the converted SINT value to **AS_OUT.D1**.
 
 A synchronous 1:1 conversion takes place – each incoming REAL request generates exactly one outgoing SINT response.
@@ -58,7 +64,11 @@ All of these modules share the use of the corresponding IEC 61131 conversion blo
 The **AR_TO_AS** is a simple yet effective composite module for converting a REAL adapter to a SINT adapter. It cleanly encapsulates the conversion logic and enables type-safe, event-driven communication between function blocks with different numeric interfaces. Thanks to the use of standard libraries, it is reliable and platform-independent.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

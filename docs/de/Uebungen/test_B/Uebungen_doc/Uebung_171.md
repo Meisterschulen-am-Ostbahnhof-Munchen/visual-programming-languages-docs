@@ -34,9 +34,11 @@ In dieser Übung werden spezifisch folgende Bausteine instanziiert:
 Das Netzwerk zeigt eine einfache Verbindung zwischen einer Standard-Funktion und einem Event-Baustein, ist jedoch noch unvollständig (siehe TODO).
 
 ### Bestehende Datenverbindungen
+
 *   **F_MOVE.OUT** $\rightarrow$ **E_MOVE.IN**: Das Ergebnis der Zuweisung/Bewegung aus dem Baustein `F_MOVE` wird direkt an den Dateneingang von `E_MOVE` geleitet.
 
 ### Hinweise zur Durchführung
+
 Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt **"TODO"**. Dies deutet darauf hin, dass die Übung vom Anwender vervollständigt werden muss. Wahrscheinlich fehlen:
 
 1.  Eingangswerte für `F_MOVE`, um einen Wert zu definieren.
@@ -54,4 +56,5 @@ Die `Uebung_171` stellt eine grundlegende Aufgabe dar, um die Datenübergabe in 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

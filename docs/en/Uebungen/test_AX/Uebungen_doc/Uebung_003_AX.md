@@ -1,8 +1,10 @@
 # Exercise_003_AX: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2 - Flat with Adapter
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003_AX`. In this exercise, two independent signal paths are implemented, where each digital input directly controls an associated digital output.
 ----
 ## Objective of the Exercise
+
 The main objective of this exercise is to demonstrate the parallel processing of signals in IEC 61499. Unlike sequential programming models (such as classic PLC cycles in STL), the function blocks in 4diac operate event-driven and independently of each other. This makes it possible to implement multiple control tasks simultaneously and without mutual interference in a single sub-application.
 
 -----
@@ -38,7 +40,6 @@ The independence of the two channels is ensured by the separate adapter connecti
 The functional sequence:
 
 1. If the state of `I1` changes, `DigitalInput_I1` sends an event directly to `DigitalOutput_Q1`. The output `Q1` is then activated.
-
 2. If the state of `I2` changes, `DigitalInput_I2` sends an event directly to `DigitalOutput_Q2`. The output `Q2` is then activated.
 
 These two processes run completely asynchronously. A high switching frequency on channel 1 has no effect on the response time or function of channel 2.
@@ -54,6 +55,7 @@ In a pumping station, there are two identical pumps, each operated by its own lo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

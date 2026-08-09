@@ -1,8 +1,10 @@
 # Exercise_210: Standard IEC 61131-3 FB_CTU (Upward Counter, INT) with Terminal Output
+
 ![Uebung_210_network](./Uebung_210_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an upward counter (count-up) based on the standard function block **FB_CTU** according to IEC 61131-3. The counter uses a data type `INT` (16-bit integer) and has a terminal output that numerically displays the current count. Digital inputs and a digital output of the logiBUS system serve as the hardware interface.
 ## Function Blocks (FBs) Used
 
@@ -16,8 +18,8 @@ This exercise implements an upward counter (count-up) based on the standard func
 | **Q_NumericValue** | `isobus::UT::Q::Q_NumericValue` | u16ObjId = OutputNumber_N1 | REQ (Input) | u32NewValue (Input) |
 
 ### Functionality of the Individual Function Blocks
-- **FB_CTU**: The up counter increments the internal counter value *CV* by 1 on each rising edge at the *CU* input. When *CV* reaches the preset value *PV* (here: 5), the output *Q* is set. A signal at the *R* input resets *CV* to 0 and *Q* to FALSE. The function block is activated via the *REQ* event input.
 
+- **FB_CTU**: The up counter increments the internal counter value *CV* by 1 on each rising edge at the *CU* input. When *CV* reaches the preset value *PV* (here: 5), the output *Q* is set. A signal at the *R* input resets *CV* to 0 and *Q* to FALSE. The function block is activated via the *REQ* event input.
 - **FB_CTU**: The up counter increments the internal counter value *CV* by 1 on each rising edge at the *CU* input. - **Input_CU** and **Input_R**: Each reads a digital hardware input (logiBUS terminal) and outputs an event (*IND*) and the current state (*IN*) upon a signal change.
 - **Output_Q1**: Receives an event and sets the connected digital output to the value of the data input *OUT*.
 - **F_INT_TO_UDINT**: Converts the current counter value *CV* (data type `INT`) into an unsigned 32-bit value (`UDINT`), as the subsequent terminal output can only process positive values.
@@ -28,13 +30,9 @@ This exercise implements an upward counter (count-up) based on the standard func
 The flow is controlled by event connections:
 
 1. **Counting Pulses**: When a change occurs at the digital input *Input_I1*, `Input_CU.IND` sends an event to `FB_CTU.REQ`. Simultaneously, the signal state is forwarded via `Input_CU.IN` → `FB_CTU.CU`.
-
 2. **Reset**: Similarly, a change at *Input_I2* triggers an event from `Input_R.IND`, which is also sent to `FB_CTU.REQ`. The value of `Input_R.IN` is then passed to the reset input `FB_CTU.R`.
-
 2. **Reset**: Similarly, a change at *Input_I2* triggers an event from `Input_R.IND`, which is also sent to `FB_CTU.REQ`. The value of `Input_R.IN` is passed to the reset input `FB_CTU.R`.
-
 3. **Set Output**: After each processing step of the counter (event output `FB_CTU.CNF`), two actions are triggered in parallel:
-
 - The output value *Q* is passed via `FB_CTU.Q` → `Output_Q1.OUT` to the digital output *Output_Q1* and output via `Output_Q1.REQ`.
 - The current counter value *CV* is converted via `FB_CTU.CV` → `F_INT_TO_UDINT.IN`. The converted `UDINT` value (`F_INT_TO_UDINT.OUT`) is passed to `Q_NumericValue.u32NewValue`. Another event (`F_INT_TO_UDINT.CNF`) activates `Q_NumericValue.REQ` to update the terminal display.
 
@@ -64,4 +62,5 @@ This exercise provides practical experience with the IEC 61131-3 counter functio
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

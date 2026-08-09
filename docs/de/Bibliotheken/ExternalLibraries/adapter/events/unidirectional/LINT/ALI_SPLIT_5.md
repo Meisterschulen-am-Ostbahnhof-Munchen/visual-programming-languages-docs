@@ -11,15 +11,19 @@ Der Funktionsblock `ALI_SPLIT_5` ist ein generischer Adapter‑Split‑Baustein.
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - Keine
 
 ### **Ereignis-Ausgänge**
+
 - Keine
 
 ### **Daten-Eingänge**
+
 - Keine
 
 ### **Daten-Ausgänge**
+
 - Keine
 
 ### **Adapter**
@@ -67,4 +71,5 @@ Der `ALI_SPLIT_5` ist ein einfacher, aber essenzieller Baustein zur Vervielfachu
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

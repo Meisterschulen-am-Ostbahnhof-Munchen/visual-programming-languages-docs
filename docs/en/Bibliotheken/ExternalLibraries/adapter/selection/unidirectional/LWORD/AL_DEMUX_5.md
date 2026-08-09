@@ -1,8 +1,10 @@
 # AL_DEMUX_5
+
 ![AL_DEMUX_5](./AL_DEMUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AL_DEMUX_5** is a generic demultiplexer for the universal data type `AL` (adapter of type `adapter::types::unidirectional::AL`). It forwards an incoming data value from its input adapter **IN** to any one of five output adapters (**OUT1…OUT5**). The destination output is selected via the index **K**, which is evaluated on a rising edge at the event input **REQ**. After successful forwarding, the event **CNF** is output.
 ## Interface Structure
 
@@ -50,6 +52,7 @@ None.
 The function block (FB) operates statelessly – every `REQ` call immediately triggers the described action. If an index outside the range 1…5 is specified, no forwarding occurs, but `CNF` is still sent (depending on the specific implementation; see technical details).
 
 ## Technical Details
+
 - **Generic Block**: The FB is declared as generic `GEN_AL_DEMUX`. This allows for later specialization in other adapter types, provided the interface is compatible.
 - **Adapter-based**: The use of adapters (sockets/plugs) enables loose coupling between data sources and sinks. The input `IN` and the outputs `OUT1`…`OUT5` are each of type `adapter::types::unidirectional::AL`.
 - **Index handling**: The index **K** is defined as `UINT`. In the common implementation, only the value range 1…5 is considered valid. A value of 0 or >5 does not result in any data transmission, but still triggers `CNF`.
@@ -61,6 +64,7 @@ The function block (FB) operates statelessly – every `REQ` call immediately tr
 The **AL_DEMUX_5** module has no explicit states (ECC diagram). It is a purely combinatorial/event-driven module: Each `REQ` pulse immediately triggers index evaluation and forwarding, without intermediate states.
 
 ## Application Scenarios
+
 - **Data Routing**: A sensor delivers a universal value via `IN`, which is to be forwarded to one of five processing stations (OUT1…OUT5) depending on the context. The index **K** is set by a higher-level controller.
 - **Demand-driven distribution**: In a production line, a workpiece can be routed to different processing stations. The demultiplexer selects the target adapter based on an identification code (`K`).
 - **Test environments**: Simulated switching between different test adapters without changing the wiring.
@@ -82,6 +86,7 @@ The **AL_DEMUX_5** is a simple yet useful generic demultiplexer for adapters of 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

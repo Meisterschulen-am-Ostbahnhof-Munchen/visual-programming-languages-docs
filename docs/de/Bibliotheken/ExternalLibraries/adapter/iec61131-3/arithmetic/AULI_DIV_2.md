@@ -13,18 +13,23 @@ Der Funktionsbaustein `AULI_DIV_2` ist ein generischer Funktionsbaustein (Generi
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Dieser Funktionsbaustein besitzt keine direkten, dedizierten Ereignis-Eingänge. Die Steuerung des Signalflusses und die Ereignisverarbeitung werden vollständig über die angeschlossenen Adapter abgewickelt.
 
 ### **Ereignis-Ausgänge**
+
 Dieser Funktionsbaustein besitzt keine direkten, dedizierten Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt gekoppelt über den Ausgangs-Adapter.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden. Die Werte für die Berechnung werden über die Eingangs-Adapter bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden. Das Berechnungsergebnis wird über den Ausgangs-Adapter bereitgestellt.
 
 ### **Adapter**
+
 Die gesamte Kommunikation des Bausteins wird über Adapter vom Typ `AULI` (unidirektional) realisiert:
 
 *   **IN1 (Socket / Buchse)**:

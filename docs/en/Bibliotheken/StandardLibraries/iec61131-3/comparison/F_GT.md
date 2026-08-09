@@ -1,4 +1,5 @@
 # F_GT
+
 ![F_GT](https://user-images.githubusercontent.com/116869307/214144462-1c7d92c0-429d-443e-a766-64c3e94c0a0b.png)
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_gt.html>
 * * * * * * * * * *
@@ -54,14 +55,14 @@ IF GT(EnergieVerbrauch, Grenzwert) THEN
 // Energieeinsparmaßnahmen aktivieren
 END_IF
 ### Advantages of the GT Operator
+
 - **Simple Logic:** The GT operator allows complex conditions to be formulated in simple, easily understandable expressions.
 - **Flexibility:** The operator can be applied to various numeric data types, including integers and floating-point numbers.
 - **Efficiency:** By being directly integrated into function blocks, the GT operator reduces the need for additional programming and makes the code more efficient.
 - **Robustness:** The GT operator helps to develop robust control algorithms based on precise numerical comparisons.
 
-#
-
 ## 🛠️ Related Exercises
+
 * [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)]
 * [Exercise_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)]
 * [Exercise_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)]

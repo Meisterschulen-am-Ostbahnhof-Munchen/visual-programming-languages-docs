@@ -11,26 +11,31 @@ Der Funktionsblock **AULI_TO_AUDI** ist ein Composite-Baustein, der die Konverti
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der FB besitzt keine separaten Ereignis-Eingänge. Das erforderliche Ereignis wird über den Socket-Adapter empfangen:
 
 - **E1** (im Socket `AULI_IN`): Startet die Konvertierung eines ULINT-Wertes.
 
 ### **Ereignis-Ausgänge**
+
 Es sind keine direkten Ereignis-Ausgänge vorhanden. Das Ereignis wird über den Plug-Adapter ausgegeben:
 
 - **E1** (im Plug `AUDI_OUT`): Signalisiert den Abschluss der Konvertierung und die Bereitstellung des UDINT-Wertes.
 
 ### **Daten-Eingänge**
+
 Daten werden ausschließlich über den Socket-Adapter bereitgestellt:
 
 - **D1** (im Socket `AULI_IN`): ULINT-Eingabewert (64-Bit unsigned integer).
 
 ### **Daten-Ausgänge**
+
 Daten werden über den Plug-Adapter ausgegeben:
 
 - **D1** (im Plug `AUDI_OUT`): UDINT-Ausgabewert (32-Bit unsigned integer).
 
 ### **Adapter**
+
 - **Socket AULI_IN**  
   Typ: `adapter::types::unidirectional::AULI`  
   Empfängt den zu konvertierenden ULINT-Wert und das zugehörige Ereignis.
@@ -79,4 +84,5 @@ Der AULI_TO_AUDI ist ein kompakter, spezialisierter Composite-Baustein, der die 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

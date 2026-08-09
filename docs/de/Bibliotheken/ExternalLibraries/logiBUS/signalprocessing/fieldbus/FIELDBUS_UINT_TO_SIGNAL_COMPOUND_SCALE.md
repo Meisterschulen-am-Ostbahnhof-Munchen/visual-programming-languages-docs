@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsblock `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient zur Aufbereitung eines 16‑Bit‑Feldbussignals (Typ `UINT`) in einen skalierten Realwert. Dabei wird das eingehende Wort in ein oberes und ein unteres Byte zerlegt, jedes Byte mit einem eigenen Skalierungsfaktor multipliziert und ein Offset addiert. Zusätzlich wird ein Gültigkeitssignal (`VALID`) ausgegeben, das auf einem vorgegebenen Schwellwert basiert. Der FB eignet sich besonders für Protokolle, die zwei Messgrößen (z. B. Temperatur und Druck) in einem einzigen Register kodieren.
 
 ## Schnittstellenstruktur
@@ -40,9 +41,11 @@ Der Funktionsblock `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient zur Aufbereitu
 | `VALID`  | BOOL   | `FALSE`     | `TRUE`, wenn das Eingangssignal als gültig erkannt wurde |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 1. **Initialisierung** (`INIT`):  
    Der Algorithmus `INIT` ist leer, die Parameter `SCALE_HIGH`, `SCALE_LOW` und `OFFSET` werden jedoch über die `With`-Beziehung mit dem Ereignis verknüpft und können so beim Aufruf von `INIT` gesetzt werden.
 
@@ -67,12 +70,14 @@ Keine.
    - Anschließend wird das Ereignis `CNF` ausgegeben.
 
 ## Technische Besonderheiten
+
 - **Compound‑Skalierung**: Der FB erlaubt getrennte Skalierung für das obere und untere Byte eines 16‑Bit‑Wortes. Dies ist nützlich, wenn zwei unterschiedliche physikalische Größen in einem Register zusammengefasst sind.
 - **Gültigkeitsprüfung**: Der Vergleich mit `VALID_SIGNAL_W` definiert einen Schwellwert. Werte oberhalb dieses Schwellwerts werden als ungültig betrachtet – typisch für Feldbus‑Fehlerkodierungen (z. B. „Not Available“).
 - **Parametrierung über `INIT`**: Die Skalierungsfaktoren und der Offset können einmalig über das `INIT`-Ereignis gesetzt werden, sodass sie während des Betriebs konstant bleiben.
 - **Initialwerte**: Die vorgegebenen Werte (`SCALE_HIGH=0.256`, `SCALE_LOW=0.001`, `OFFSET=0`) sind als Beispielwerte anzusehen; sie sollten an die konkrete Anwendung angepasst werden.
 
 ## Zustandsübersicht
+
 Der FB besitzt zwei EC‑Zustände:
 
 - **INIT**: Führt den leeren Algorithmus `INIT` aus und verlässt den Zustand über den Ausgang `INITO`.
@@ -81,6 +86,7 @@ Der FB besitzt zwei EC‑Zustände:
 Der FB ist als SimpleFB implementiert; es gibt keine weiteren Zustände wie IDLE oder WAIT.
 
 ## Anwendungsszenarien
+
 - **Zwei‑in‑eins‑Sensorwerte**: Ein Temperatur‑ und ein Drucksensor liefern ihre Werte als je 8‑Bit‑Zahlen in einem 16‑Bit‑Register. Der FB wandelt diese mit getrennten Skalierungen in physikalische Einheiten um.
 - **Fehlererkennung im Feldbus**: Wenn das Feldbusprotokoll für ungültige Messwerte einen bestimmten Bit‑Code (z. B. alle Bits 1) vorsieht, kann über den Schwellwert `VALID_SIGNAL_W` die Gültigkeit erkannt werden.
 - **Nachverarbeitung von Logging‑Daten**: Rohdaten aus einem Feldbus‑Logger werden mit den ursprünglichen Skalierungen wieder in die physikalischen Größen zurückgerechnet.
@@ -96,9 +102,11 @@ Der FB ist als SimpleFB implementiert; es gibt keine weiteren Zustände wie IDLE
 Dieser FB kombiniert als einziger die Byte‑trennung mit einer zweifachen Skalierung und einer integrierten Gültigkeitserkennung, was ihn für spezielle Feldbus‑Protokolle mit zusammengesetzten Registern besonders geeignet macht.
 
 ## Fazit
+
 Der `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` ist ein leistungsfähiger Funktionsblock zur Aufbereitung von 16‑Bit‑Feldbussignalen, die zwei unabhängige Messwerte in einem Register kodieren. Durch die getrennte Skalierung von High‑ und Low‑Byte sowie die integrierte Gültigkeitsprüfung lassen sich komplexe Sensor‑Register effizient und zuverlässig in physikalische Größen umrechnen. Die Parametrierung über das `INIT`-Ereignis und die klare Trennung von Initialisierung und Betrieb machen den FB wiederverwendbar und anpassbar.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

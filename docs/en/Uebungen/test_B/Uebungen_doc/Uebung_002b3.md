@@ -1,12 +1,15 @@
 # Exercise_002b3: DigitalInput_I1/_I2/_I3 to DigitalOutput_Q1; without MOVE
+
 ![Uebung_002b3_network](./Uebung_002b3_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the processing of digital input signals and their logical combination to control a digital output. The circuit combines AND and OR logic gates to implement specific logic between three inputs and one output.
 ## Function Blocks (FBs) Used
 
 ### DigitalInput_I1, DigitalInput_I2, DigitalInput_I3
+
 - **Type**: logiBUS_IX
 - **Parameters**:
 - QI = TRUE
@@ -14,14 +17,17 @@ This exercise demonstrates the processing of digital input signals and their log
 - **Function**: Reads the digital input signals from the corresponding hardware inputs
 
 ### AND_2_BOOL
+
 - **Type**: AND_2_BOOL
 - **Function**: Performs a logical AND operation between two Boolean inputs
 
 ### OR_2_BOOL
+
 - **Type**: OR_2_BOOL
 - **Function**: Performs a logical OR operation between two Boolean inputs
 
 ### DigitalOutput_Q1
+
 - **Type**: logiBUS_QX
 - **Parameters**:
 - QI = TRUE
@@ -63,11 +69,13 @@ Q1 = (I1 AND I2) OR I3
 **Starting the Exercise**: The exercise is loaded in the 4diac IDE and deployed to a compatible control system. The digital inputs I1, I2, and I3 can be tested to verify the functionality of the circuit.
 
 ## Summary
+
 This exercise demonstrates a basic combinational logic circuit that processes digital input signals and controls an output via logic operations. This implementation demonstrates the basic functionality of event-driven systems according to IEC 61499 with direct connection to hardware inputs and outputs.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

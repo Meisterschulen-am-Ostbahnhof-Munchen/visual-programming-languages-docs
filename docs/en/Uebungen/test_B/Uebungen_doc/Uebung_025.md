@@ -1,12 +1,15 @@
 # Exercise_025: Mirror Sequence (5)
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_025`. Here, the sequence control is secured using rendezvous blocks.
 ## 📺 Video
+
 ![Uebung_025_network](./Uebung_025_network.svg)
 
 * Soldering in 2025](https://www.youtube.com/watch?v=fpcOFSE5sl0)
 
 ## 🎧 Podcast
+
 * ETFA 2025: Plug and Produce – How IEC 61499 is Revolutionizing Factory Automation](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/ETFA-2025-Plug-and-Produce--Wie-IEC-61499-die-Fabrikautomation-revolutioniert-e376pnk)
 * IEC 61499: Leap into Industry – ETFA 2025 and the Future of Automation](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Sprung-in-die-Industrie--ETFA-2025-und-die-Zukunft-der-Automatisierung-e376pnm)
 * Industrial Revolution Reloaded: Unpacking Plug & Produce, Data Privacy, and ETFA 2025](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Industrial-Revolution-Reloaded-Unpacking-Plug--Produce--Data-Privacy--and-ETFA-2025-e376pid)

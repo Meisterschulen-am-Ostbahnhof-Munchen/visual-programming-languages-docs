@@ -1,8 +1,10 @@
 # Hysteresis
+
 ![Hysteresis](./Hysteresis.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **Hysteresis** function block converts an analog input signal (REAL) into a digital output signal (BOOL). It operates with an adjustable hysteresis threshold to ensure stable switching behavior and prevent oscillations at the threshold. The switching points are arranged symmetrically around a mean value (THRESHOLD).
 ## Interface Structure
 
@@ -57,6 +59,7 @@ By using `ABS(HYSTERESIS)`, the hysteresis remains symmetrical even if a negativ
 Initialization (`INIT`) and normal operation (`REQ`) are controlled by the qualifier `QI`. The function block operates as long as `QI = TRUE` is present; it deinitializes (outputs go to FALSE) when `QI = FALSE` is present.
 
 ## Technical Features
+
 - **Symmetrical Hysteresis**: `ABS(HYSTERESIS)` ensures the hysteresis width is always positive.
 - **Strict Turn-Off Condition**: The condition `INPUT < THRESHOLD - (ABS(HYSTERESIS) / 2.0)` prevents erratic behavior when values are exactly the same.
 - **State Control via QI**: A `INIT` event with `QI = FALSE` deactivates the function block and resets all outputs.
@@ -84,6 +87,7 @@ The function block goes through the following states:
 - `DeInit → START` immediately after deinitialization
 
 ## Application Scenarios
+
 - **Temperature Control**: A heating system switches on when an upper threshold is reached and off when a lower threshold is reached, to prevent frequent To avoid switching on and off.
 - **Level Monitoring**: Signals "full" or "empty" with hysteresis to protect pumps from continuous cycling.
 - **Pressure Switch**: Triggers alarms or valves when pressure is exceeded, with a defined reset point.

@@ -17,15 +17,19 @@ Durch die Verwendung von Adaptern anstelle von klassischen diskreten Ein- und Au
 Die Schnittstelle dieses Funktionsbausteins basiert vollständig auf Adaptern. Es gibt keine direkten, klassischen Ereignis- oder Datenein- und -ausgänge auf der Bausteinoberfläche.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (die Steuerung erfolgt über die Adapter).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (die Steuerung erfolgt über die Adapter).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**

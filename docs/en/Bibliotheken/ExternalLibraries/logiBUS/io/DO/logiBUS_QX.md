@@ -1,58 +1,68 @@
 # logiBUS_QX
+
 <img width="2048" height="379" alt="image" src="https://github.com/user-attachments/assets/be731935-05c6-402b-9703-aa2d97f347b6" />
 * * * * * * * * * *
 ## Introduction
+
 The logiBUS_QX function block is an output service interface block for Boolean output data. It serves as an interface for controlling digital outputs via the logiBUS system and enables communication between the control application and the physical output channels.
 ![logiBUS_QX](logiBUS_QX.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **INIT**: Service Initialization Event
 - **REQ**: Service Request Event
 
 ### **Event Outputs**
+
 - **INITO**: Initialization Acknowledgement
 - **CNF**: Acknowledgement of Requested Service Operation
 
 ### **Data Inputs**
+
 - **QI** (BOOL): Event Input Qualifier
 - **PARAMS** (STRING): Service Parameters
 - **OUT** (BOOL): Output Data for Resource
 - **Output** (logiBUS_DO_S): Identifies the Output (Output_Q1..Q8), Initial Value: Invalid
 
 ### **Data Outputs**
+
 - **QO** (BOOL): Event Output Qualifier
 - **STATUS** (STRING): Service Status Information
 
 ### **Adapters**
+
 No adapter interfaces available.
 
 ## Functionality
+
 The logiBUS_QX block manages communication with the digital output channels of the logiBUS system. During initialization (INIT event), the service parameters are configured and the specific output channel is identified. Boolean values (OUT) can be sent to the configured output channel via the REQ event. The block acknowledges each operation via the corresponding output events INITO and CNF.
 
 ## Technical Features
+
 - Uses specific logiBUS data types for output identification
 - Supports up to 8 digital output channels (Q1-Q8)
 - Provides detailed status feedback via the STATUS output
 - Initializes outputs with an invalid state (Invalid)
 
 ## State Overview
+
 The block goes through the following main states:
 
 1. **Not Initialized**: Before the first INIT operation
-
 2. **Initialized**: After successful INIT operation, ready for REQ operations
-
 3. **Active**: During the processing of REQ operations
 
 ## Application Scenarios
+
 - Control of digital actuators (relays, valves, lamps)
 - Connection to logiBUS hardware outputs
 - Automation systems with distributed I/O components
 - Safety-relevant switching operations with status feedback
 
 ## ⚖️ Comparison with Similar Blocks
+
 Compared to standard digital output blocks, logiBUS_QX offers:
 
 - Specific Integration in logiBUS systems
@@ -61,6 +71,7 @@ Compared to standard digital output blocks, logiBUS_QX offers:
 - Higher level of abstraction for hardware access
 
 ## 🛠️ Related exercises
+
 * [Uebung_001](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_001c.md)
 * [Uebung_002](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_002.md)
@@ -218,4 +229,5 @@ Compared to standard digital output blocks, logiBUS_QX offers:
 * [Uebung_180](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_180.md)
 
 ## Conclusion
+
 The logiBUS_QX function block represents a robust and reliable interface for controlling digital outputs in logiBUS-based automation systems. Its clear event structure and comprehensive status feedback make it suitable It is particularly suitable for applications that require high reliability and traceability of output operations.

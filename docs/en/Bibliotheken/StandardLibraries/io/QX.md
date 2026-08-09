@@ -1,44 +1,54 @@
 # QX
+
 ![](https://user-images.githubusercontent.com/69573151/210781265-4dabab2d-a9e3-4da6-a14b-8df0a8ed36e5.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The QX function block is an output service interface function block for Boolean output data. It serves as an interface between the control logic and physical output devices and enables the output of digital signals to external resources.
 ![QX](QX.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **INIT**: Service Initialization Event
 - **REQ**: Service Request Event
 
 ### **Event Outputs**
+
 - **INITO**: Initialization Acknowledgement
 - **CNF**: Acknowledgement of Requested Service Operation
 
 ### **Data Inputs**
+
 - **QI** (BOOL): Event Input Qualifier
 - **PARAMS** (STRING): Service Parameters for Configuration
 - **OUT** (BOOL): Output Data for the Resource
 
 ### **Data Outputs**
+
 - **QO** (BOOL): Event Output Qualifier
 - **STATUS** (STRING): Service Status Information
 
 ### **Adapters**
+
 No adapter interfaces are available.
 
 ## Functionality
+
 The QX block processes two main operations: initialization and service requests. The INIT event initializes the service with the specified parameters. The REQ event outputs the Boolean OUT value to the connected resource. Each operation generates a corresponding acknowledgment (INITO or CNF) containing status information.
 
 The INIT event initializes the service with the specified parameters.
 ## Technical Features
+
 - Specialized for Boolean output data
 - Supports configurable service configuration
 - Provides detailed status information via the STRING output STATUS
 - Uses qualifiers (QI/QO) for event control
 
 ## State Overview
+
 The block cycles through the following states:
 
 1. **Not Initialized**: Before the first INIT operation
@@ -46,12 +56,14 @@ The block cycles through the following states:
 3. **Active**: During the processing of REQ operations
 
 ## Application Scenarios
+
 - Control of digital outputs (relays, LEDs, valves)
 - Interface to actuators in automation systems
 - Integration into I/O subsystems for distributed controllers
 - Test and simulation environments for output signals
 
 ## ⚖️ Comparison with Similar Blocks
+
 Compared to generic output blocks, QX offers specific service interface functionality with configurable settings and detailed status reporting. Other blocks, such as simple BOOL outputs, typically have fewer configuration options and less status information.
 
 ## 🛠️ Related exercises
@@ -220,4 +232,5 @@ Compared to generic output blocks, QX offers specific service interface function
 * [Exercise_180](../../../Uebungen/test_B/Uebungen_doc/Uebung_180.md)
 
 ## Conclusion
+
 The QX function block provides a robust and configurable solution for Boolean output services. Its structured event handling and detailed status feedback make it particularly suitable for reliable automation applications where transparency regarding the I/O status is required.

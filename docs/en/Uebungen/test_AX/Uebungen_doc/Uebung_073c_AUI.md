@@ -1,8 +1,10 @@
 # Exercise_073c_AUI: Outputting VDS and GBSD to a Universal Terminal (UT) using PHYS (Adapter Version)
+
 ![Uebung_073c_AUI_network](./Uebung_073c_AUI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the output of the speed signals **Ground Based Speed (GBSD)** and **Vehicle/Drive Speed (VDS)** to a Universal Terminal (UT) using physical addresses (PHYS). The signals are received via ISOBUS adapters (IA), scaled, and displayed on the UT using the `Q_NumericValue_PHYSA` blocks.
 This exercise teaches how to use signal scaling and the adapter concept (*AUI*) in 4diac IDE.
 
@@ -30,7 +32,6 @@ This exercise consists of six function blocks, all located within the subapp `Ue
 The connections between the function blocks are made via **adapters (AUI)**. The data flow is as follows:
 
 1. **GBSD**
-
 - `IA_GBSD` receives the raw speed (UINT) via ISOBUS.
 - The output `SPEED` is routed via an adapter connection to the input `IN` of `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD`.
 - This module scales the value using `SCALE = 0.001` and outputs the result as REAL at output `OUT`.
@@ -55,6 +56,7 @@ Exercise **Exercise_073c_AUI** demonstrates how to read two speed signals (GBSD 
 Exercise **Exercise_073c_AUI** demonstrates how to read two speed signals (GBSD and VDS) via ISOBUS adapters (IA), scale them by a factor of 0.001, and output them to a Universal Terminal using the physical addresses of an object pool. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

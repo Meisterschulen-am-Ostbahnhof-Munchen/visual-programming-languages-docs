@@ -1,8 +1,10 @@
 # Exercise_011f: Passing Through Numeric Value Input I3 to N3 (Input and Output PHYS via NumericObjectPool_S)
+
 ![Uebung_011f_network](./Uebung_011f_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the direct pass-through of a numeric input value from the physical input I3 to the physical output N3.
 The value is read without conversion or processing by a `NumericValue_PHYS` block and written to the output via a `Q_NumericValue_PHYS` block.
 The use of a `NumericObjectPool_S` (DefaultPool_Numeric) establishes the connection to the specific input/output objects.
@@ -14,6 +16,7 @@ Example:
 ## Function Blocks (FBs) Used
 
 ### Sub-block: Uebung_011f (SubAppType)
+
 - **Type**: SubAppType (custom subapplication)
 - **Internal FBs Used**:
 - **NumericValue_PHYS** *(Type: `isobus::UT::io::NumericValue::NumericValue_PHYS`)*
@@ -45,9 +48,7 @@ The entire subapplication thus functions as a transparent pass-through from I3 t
 The flow is purely event-driven:
 
 1. The input block detects a change at I3 and fires `IND`.
-
 2. The output block is triggered by `REQ` to take the current `rPhys` value and output it to N3.
-
 3. Since no further processing steps take place, the value is transferred one-to-one.
 
 **Learning Objectives**:
@@ -60,6 +61,7 @@ The flow is purely event-driven:
 **Prerequisites**: Basic knowledge of the 4diac IDE and the IEC 61499 model.
 
 ## Summary
+
 Exercise **Exercise_011f** implements a simple pass-through of a numerical value from input I3 to output N3.
 
 By combining `NumericValue_PHYS` (read) and `Q_NumericValue_PHYS` (write), a clear separation between I/O access and event control is achieved.
@@ -69,4 +71,5 @@ The subapplication is designed as a reusable building block and can be directly 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

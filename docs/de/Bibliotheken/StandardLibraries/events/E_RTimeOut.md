@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **E_RTimeOut** ist ein spezieller Funktionsbaustein nach IEC 61499-2. Er implementiert einen resettablen Timeout-Service durch interne Verwendung eines E_RDELAY-Bausteins.
 
 ![E_RTimeOut](E_RTimeOut.svg)
@@ -12,6 +13,7 @@ Der **E_RTimeOut** ist ein spezieller Funktionsbaustein nach IEC 61499-2. Er imp
 ## Struktur und Schnittstellen
 
 ### **Adapter-Schnittstelle (Socket-Perspektive)**
+
 Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich um einen Socket handelt, sind die Signalrichtungen gegenüber der Adapter-Definition (Plug) invertiert:
 
 - **Eingänge (vom Socket empfangen)**:
@@ -22,6 +24,7 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
   - `TimeOut`: Wird nach Ablauf der Zeit an den verbundenen Plug signalisiert.
 
 ### **Interne Komponenten**
+
 - `DLY` (E_RDELAY): Kernkomponente für die Zeitsteuerung
 
 ## Funktionsweise

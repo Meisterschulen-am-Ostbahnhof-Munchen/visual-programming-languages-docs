@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert einen Vorwärts-/Rückwärtszähler (engl. *Counter Up/Down*, CTUD) nach IEC 61131-3 in einer Adapter-Version (ADI_FB_CTUD). Der Zähler arbeitet mit 32‑Bit‑Ganzzahlen (DINT) und gibt den aktuellen Zählwert über eine Terminalausgabe aus. Die Eingänge werden über logiBUS-Adapter eingelesen, die Ausgänge über logiBUS-Adapter gesteuert. Ein fester Preset-Wert von 5 wird bei der Initialisierung geladen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -60,4 +61,5 @@ Diese Übung implementiert einen Vorwärts-/Rückwärtszähler (engl. *Counter U
    - Bei hochfrequenten Ereignissen kann es sinnvoll sein, je einen AX_D_FF-Baustein (Ereignis-Flipflop) zwischenzuschalten, um die Ereignisrate zu reduzieren (siehe Kommentar).
 
 ## Zusammenfassung
+
 Die Übung 221 demonstriert den Einsatz eines IEC‑61131‑3‑konformen Aufwärts-/Abwärtszählers in der Adapter-Version. Der Zähler wird über physische Eingänge gesteuert und gibt seinen aktuellen Wert sowie Überlauf-/Unterlaufsignale auf Ausgänge und ein Terminal aus. Ein fester Preset-Wert wird initial geladen. Die Übung zeigt die Integration von Standard‑FBs mit logiBUS‑E/A und Terminalausgabe sowie die Datenkonvertierung zwischen verschiedenen Adapter-Schnittstellen. Hinweise auf Einschränkungen (keine negativen Zahlen) und Optimierungsmöglichkeiten (Ereignisreduktion) sind vorhanden.

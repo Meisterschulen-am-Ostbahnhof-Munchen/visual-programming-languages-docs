@@ -1,8 +1,10 @@
 # AX_TO_AB
+
 ![AX_TO_AB](./AX_TO_AB.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The composite function block `AX_TO_AB` converts a BOOL adapter signal of type `AX` into a BYTE adapter signal of type `AB`. It encapsulates the type conversion and event passing in a reusable unit.
 ## Interface Structure
 
@@ -57,6 +59,7 @@ Since this is a composite function block, all internal connections are defined a
 The function block has no internal states – it operates purely combinatorially. The output values are a direct function of the input values at any given time.
 
 ## Application Scenarios
+
 - **Connecting Sensors/Actuators**: If a device or controller operates as a BOOL signal, but the target system expects a BYTE adapter format, `AX_TO_AB` can be used as an intermediary.
 - **Adapter Bridges**: In heterogeneous automation networks where different adapter protocols are used, the function block (FB) allows for a simple and type-safe connection.
 - **Testing and Simulation**: The FB can be used as a simple converter in test environments to translate signals between different logic layers.
@@ -72,6 +75,7 @@ The composite function block `AX_TO_AB` offers a compact and elegant solution fo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

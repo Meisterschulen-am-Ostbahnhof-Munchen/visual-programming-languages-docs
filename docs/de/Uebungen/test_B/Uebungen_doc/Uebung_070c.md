@@ -12,6 +12,7 @@ Dabei wird der rohe Ganzzahlwert (UINT) mittels Skalierung in einen realen Zahle
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: I_WBSD
+
 * **Typ**: `isobus::tecu::I_WBSD`
 * **Verwendete interne FBs**: (keine)
   * **Parameter**:
@@ -24,6 +25,7 @@ Dabei wird der rohe Ganzzahlwert (UINT) mittels Skalierung in einen realen Zahle
   Der Baustein liest über den ISOBUS-Feldbus den aktuellen Wert der radbasierten Maschinengeschwindigkeit (WBSD) ein. Bei einem neuen, gültigen Messwert wird das Ereignis `IND` ausgelöst.
 
 ### Sub-Bausteine: FIELDBUS_UINT_TO_SIGNAL_SCALED
+
 * **Typ**: `logiBUS::signalprocessing::fieldbus::FIELDBUS_UINT_TO_SIGNAL_SCALED`
 * **Verwendete interne FBs**: (keine)
   * **Parameter**:
@@ -41,6 +43,7 @@ Dabei wird der rohe Ganzzahlwert (UINT) mittels Skalierung in einen realen Zahle
   Mit `SCALE = 0.001` und `OFFSET = 0` werden z. B. mm/s in m/s konvertiert.
 
 ### Sub-Bausteine: Q_NumericValue
+
 * **Typ**: `isobus::UT::Q::Q_NumericValue_PHYS`
 * **Verwendete interne FBs**: (keine)
   * **Parameter**:
@@ -89,4 +92,5 @@ Die Übung **Uebung_070c** demonstriert einen vollständigen Datenpfad von der F
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

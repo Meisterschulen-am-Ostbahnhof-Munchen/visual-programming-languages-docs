@@ -11,15 +11,19 @@ Der Funktionsbaustein `AUDI_SPLIT_9` dient dazu, ein ankommendes AUDI-Signal üb
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine Ereignis-Eingänge vorhanden. Die Datenübertragung erfolgt ausschließlich über die Adapter-Schnittstellen.
 
 ### **Ereignis-Ausgänge**
+
 Keine Ereignis-Ausgänge vorhanden. Die Ausgangssignale werden direkt über die Adapter-Plugs bereitgestellt.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge vorhanden. Die Eingangsdaten werden über den Socket-Adapter `IN` eingelesen.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge vorhanden. Die Ausgangsdaten werden über die neun Plug-Adapter `OUT1` bis `OUT9` ausgegeben.
 
 ### **Adapter**
@@ -61,4 +65,5 @@ Der `AUDI_SPLIT_9` ist ein einfacher, aber nützlicher Funktionsbaustein zur Ver
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

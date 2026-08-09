@@ -5,6 +5,7 @@ Hier ist die Dokumentation für die Übung `Uebung_006a3_sub_AX` basierend auf d
 * * * * * * * * * *
 
 ## Einleitung
+
 Bei diesem Baustein handelt es sich um eine Subapplikation (SubAppType), die eine Logik zur wechselseitigen Ansteuerung zweier Ausgänge implementiert. Der Baustein nutzt die Adapter-Technologie (`AX`), um Signale zu verarbeiten. Ziel ist es, basierend auf einem Eingangssignal den Zustand zweier Ausgänge (`Links` und `Rechts`) zu toggeln, wobei diese Ausgänge stets entgegengesetzte Zustände haben (komplementär).
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -12,6 +13,7 @@ Bei diesem Baustein handelt es sich um eine Subapplikation (SubAppType), die ein
 In dieser Subapplikation werden spezifische Adapter-Bausteine verwendet, um die Umschaltlogik und Signalverteilung zu realisieren.
 
 ### Sub-Bausteine: Uebung_006a3_sub_AX
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
 
@@ -57,4 +59,5 @@ Der Ablauf innerhalb der Subapplikation ist rein ereignis- und signalgesteuert �
 *   `Links` (Plug): Ausgang, der dem invertierten Zustand des Flip-Flops entspricht.
 
 ## Zusammenfassung
+
 Die Subapplikation `Uebung_006a3_sub_AX` stellt ein Modul zur Verfügung, das einen Eingangsimpuls in zwei alternierende Ausgangssignale umwandelt. Durch die Verwendung von Adapter-Bausteinen (`AX`) wird die Verdrahtung vereinfacht, da Daten und Events gekapselt übertragen werden können. Die integrierte Invertierung (`AX_NOT`) stellt sicher, dass die Ausgänge `Links` und `Rechts` niemals denselben logischen Zustand haben.

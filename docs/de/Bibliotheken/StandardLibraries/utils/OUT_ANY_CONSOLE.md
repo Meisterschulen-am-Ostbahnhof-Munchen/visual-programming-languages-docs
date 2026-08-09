@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **OUT_ANY_CONSOLE**-Funktionsbaustein ist ein universelles Debugging-Tool zur Ausgabe von Variablenwerten auf der Systemkonsole, entwickelt unter EPL-2.0 Lizenz (Version 3.0).
 Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- und Diagnosezwecke.
 
@@ -13,9 +14,11 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Auslöser für Konsolenausgabe (mit Qualifier `QI`, Wert `IN` und optionalem `LABEL`)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Bestätigung der Ausgabeoperation
 
 ### **Daten-Eingänge**
@@ -97,4 +100,5 @@ Idealer Einsatz bei:
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

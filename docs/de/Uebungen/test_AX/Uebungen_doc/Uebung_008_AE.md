@@ -12,6 +12,7 @@ Diese Übung realisiert einen einfachen Blinker (Wechselblinker) unter Verwendun
 Alle verwendeten Bausteine sind Adapter-FBs aus den Bibliotheken `adapter::events::unidirectional::timers` und `adapter::events::unidirectional`. Zusätzlich kommt ein Hardwareausgang (logiBUS) zum Einsatz.
 
 ### AE_CYCLE
+
 - **Typ**: `adapter::events::unidirectional::timers::AE_CYCLE`
 - **Parameter**:
   - `DT` = `T#1s` (Zykluszeit 1 Sekunde)
@@ -20,6 +21,7 @@ Alle verwendeten Bausteine sind Adapter-FBs aus den Bibliotheken `adapter::event
 - **Funktion**: Erzeugt einen periodischen Ereignisimpuls. Wird als Taktgeber für den Blinker verwendet.
 
 ### AX_SWITCH
+
 - **Typ**: `adapter::events::unidirectional::AX_SWITCH`
 - **Parameter**: Keine
 - **Ereigniseingang**:
@@ -30,6 +32,7 @@ Alle verwendeten Bausteine sind Adapter-FBs aus den Bibliotheken `adapter::event
 - **Funktion**: Schaltet ein eingehendes Ereignis entweder auf Ausgang 0 oder 1, abhängig vom aktuellen Zustand eines internen Umschalters. Hier wird das zurückgeführte Ereignis über `AX_AE_MERGE.OUT` an den Gate-Eingang gelegt und abwechselnd das Setzen (S) und Rücksetzen (R) des SR-Flipflops getriggert.
 
 ### AX_SR
+
 - **Typ**: `adapter::events::unidirectional::AX_SR`
 - **Parameter**: Keine
 - **Ereigniseingänge**:
@@ -40,6 +43,7 @@ Alle verwendeten Bausteine sind Adapter-FBs aus den Bibliotheken `adapter::event
 - **Funktion**: Realisiert ein SR-Flipflop auf Ereignisebene. Der Ausgang Q wird bei einem Impuls auf S gesetzt und bei einem Impuls auf R zurückgesetzt.
 
 ### AX_SPLIT_2
+
 - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Parameter**: Keine
 - **Adaptereingang**:
@@ -50,6 +54,7 @@ Alle verwendeten Bausteine sind Adapter-FBs aus den Bibliotheken `adapter::event
 - **Funktion**: Verteilt den eingehenden Adapter (Zustand) auf zwei parallele Pfade.
 
 ### AX_AE_MERGE
+
 - **Typ**: `adapter::events::unidirectional::AX_AE_MERGE`
 - **Parameter**: Keine
 - **Adaptereingänge**:
@@ -60,6 +65,7 @@ Alle verwendeten Bausteine sind Adapter-FBs aus den Bibliotheken `adapter::event
 - **Funktion**: Verbindet einen Adapter (Datenzustand) mit einem Ereignis. Der ausgehende Adapter enthält den Zustand von `IN_AX` und wird durch das Ereignis `IN_AE` getriggert. Dadurch wird der aktuelle Zustand des SR-Flipflops an den Schalter weitergegeben, sobald das Zyklusereignis eintrifft.
 
 ### DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI` = `TRUE` (immer aktiviert)
@@ -93,4 +99,5 @@ Die Übung „Uebung_008_AE" zeigt den Aufbau eines Blinkers mit Hilfe von 4diac
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

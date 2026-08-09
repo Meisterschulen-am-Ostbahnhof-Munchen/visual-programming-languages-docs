@@ -1,4 +1,5 @@
 # E_PULSE
+
 **Important note: This function block requires only one event and no cyclic calls. It has no output ET and does not display the elapsed time.**
 ![image](https://github.com/user-attachments/assets/f5119723-ac8b-477f-afe1-795808faa1e2)
 
@@ -35,7 +36,6 @@ The interface of the E_PULSE block consists of:
 The E_PULSE block uses two internal function blocks to implement the desired behavior:
 
 1. **E_DELAY**: This block implements the delay time **PT**. When the **START** event occurs, the timer starts running. When the delay time has elapsed, the **EO** event is triggered.
-
 2. **E_SR**: This block is a bistable element that stores the pulse state. When the **S** event occurs, the output **Q** is set to **TRUE**. When the **R** event occurs, the output **Q** is set to **FALSE**.
 
 #### Behavior of the E_PULSE Block
@@ -43,11 +43,8 @@ The E_PULSE block uses two internal function blocks to implement the desired beh
 The E_PULSE block behaves like a pulse generator that produces a pulse with a specific duration **PT**. The behavior of the function block can be described as follows:
 
 1. **Pulse Start**: When the **REQ** event occurs, the timer is started, and the output **Q** is set to **TRUE**.
-
 2. **Pulse Duration**: The output **Q** remains **TRUE** until the delay time **PT** has elapsed.
-
 3. **Pulse End**: Once the delay time **PT** has elapsed, the output **Q** is set to **FALSE**, and the **CNF** event is triggered to signal the end of the pulse.
-
 4. **Reset**: When the **R** event occurs, the timer is reset, and the output **Q** is set to **FALSE**.
 
 #### Independence from Cyclic Calling
@@ -62,9 +59,8 @@ The E_PULSE function block can be used in various industrial control application
 - **Lighting Control**: This function block can be used in lighting systems to switch on the light for a specific period of time, e.g., for emergency lighting.
 - **Valve Control**: This function block can be used to open a valve for a specific period of time, e.g., to release a specific quantity of liquid or gas.
 
-##
-
 ## 🛠️ Related Exercises
+
 * [Exercise_020h](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020h.md)]
 * [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)]
 

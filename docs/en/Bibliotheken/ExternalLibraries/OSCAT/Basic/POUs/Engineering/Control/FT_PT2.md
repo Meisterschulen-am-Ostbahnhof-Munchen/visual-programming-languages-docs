@@ -2,8 +2,11 @@
 #FT_PT2
 2nd grade filter with programmable times
 # FT_PT2
+
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | InitRequest | in, TM, D, K |

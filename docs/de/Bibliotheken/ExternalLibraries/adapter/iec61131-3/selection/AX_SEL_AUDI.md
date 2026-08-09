@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **AX_SEL_AUDI** realisiert eine binäre Auswahlfunktion nach IEC 61131-3. Er wählt aus zwei Eingangswerten (IN0, IN1) einen aus und gibt diesen über einen Adapter-Ausgang weiter. Die Steuerung der Selektion erfolgt über einen Adapter-Eingang, der ein Ereignis und ein Auswahlsignal bereitstellt. Der Baustein ist für modulare, adapterbasierte Architekturen ausgelegt.
 
 ## Schnittstellenstruktur
@@ -16,6 +17,7 @@ Der Funktionsblock **AX_SEL_AUDI** realisiert eine binäre Auswahlfunktion nach 
 | **EI1** | Setzt den Eingang IN1 (mit IN1 verbunden). Das Ereignis dient der Aktualisierung des Wertes IN1. |
 
 ### **Ereignis-Ausgänge**
+
 Der Baustein besitzt keine expliziten Ereignis-Ausgänge. Die Ausgabe von Ereignissen erfolgt ausschließlich über den **OUT**-Adapter (siehe Adapter).
 
 ### **Daten-Eingänge**
@@ -26,6 +28,7 @@ Der Baustein besitzt keine expliziten Ereignis-Ausgänge. Die Ausgabe von Ereign
 | **IN1**  | UDINT | Zweiter selektierbarer Eingangswert. |
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine expliziten Daten-Ausgänge. Der ausgewählte Wert wird über den **OUT**-Adapter ausgegeben (siehe Adapter).
 
 ### **Adapter**
@@ -56,11 +59,13 @@ F_SEL.OUT ──► OUT.D1
 ```
 
 ## Technische Besonderheiten
+
 - **Adapterbasierte Ein‑/Ausgabe:** Statt klassischer Ein‑/Ausgangsvariablen werden Adapter (Plug/Socket) verwendet. Dies ermöglicht eine lose Kopplung und Wiederverwendung in verschiedenen Umgebungen.
 - **Interner IEC‑Baustein:** Die Kernlogik (F_SEL) ist ein standardisierter Funktionsblock nach IEC 61131-3. AX_SEL_AUDI kapselt diesen und ergänzt Adapterschnittstellen.
 - **Versionierung:** Der Baustein liegt in Version 3.0 vor, ursprünglich entwickelt von der TU Wien (2012) und später aktualisiert.
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Abläufe sind rein ereignisgesteuert:
 
 - **Warten:** Der FB wartet auf ein Ereignis auf **G.E1**.
@@ -68,6 +73,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Abläufe sind rein
 - **Aktualisierung:** Die Ereignisse EI0 und EI1 können jederzeit die Eingangswerte neu setzen, wirken sich aber erst bei der nächsten Selektion aus.
 
 ## Anwendungsszenarien
+
 - **Signalumschaltung:** Auswahl zwischen zwei Sensorsignalen (z. B. Temperatur‑/Druckwerte) basierend auf einem Steuersignal (z. B. Betriebsart).
 - **Moduswechsel:** Umschalten zwischen verschiedenen Regelparametern oder Sollwerten in einer Steuerung.
 - **Redundanz:** Falls ein Signal ausfällt, kann über das Steuersignal auf ein alternatives Signal umgeschaltet werden.
@@ -81,4 +87,5 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Abläufe sind rein
 | **MUX‑Bausteine** | Mehrkanalige Auswahl (z. B. 4‑zu‑1), oft mit zusätzlichem Index‑Eingang. AX_SEL_AUDI ist auf zwei Kanäle begrenzt. |
 
 ## Fazit
+
 **AX_SEL_AUDI** ist ein kompakter, adaptergestützter Funktionsblock zur binären Signalauswahl. Er vereinfacht den Einsatz in modularen Steuerungsarchitekturen, indem er die Standard‑Selektionslogik mit modernen Adapterschnittstellen kombiniert. Die klare Ereignissteuerung und die einfache Funktionsweise machen ihn zu einer robusten Lösung für typische Umschalt- und Selektionsaufgaben in der Automatisierungstechnik.

@@ -1,12 +1,15 @@
 # Exercise_014_AXa: Container (visible/invisible)
+
 ![Uebung_014_AXa_network](./Uebung_014_AXa_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates controlling the visibility of a container (object) using two softkeys. SoftKey_F1 shows the container, and SoftKey_F2 hides it. A set-reset flip-flop (AX_SR) is used to store the state and pass it to a hide/show block.
 ## Function Blocks (FBs) Used
 
 ### SoftKey_UP_F1 (Type: isobus::UT::io::Softkey::Softkey_IE)
+
 - **Parameters**:
 - `QI` = TRUE
 - `u16ObjId` = SoftKey_F1
@@ -15,6 +18,7 @@ This exercise demonstrates controlling the visibility of a container (object) us
 - **Functionality**: This function block detects the release of the softkey F1 and outputs an event at its output `IND`.
 
 ### SoftKey_UP_F2 (Type: isobus::UT::io::Softkey::Softkey_IE)
+
 - **Parameters**:
 - `QI` = TRUE
 - `u16ObjId` = SoftKey_F2
@@ -23,6 +27,7 @@ This exercise demonstrates controlling the visibility of a container (object) us
 - **Functionality**: Analogous to SoftKey_UP_F1, but for Softkey F2.
 
 ### AX_SR (Type: adapter::events::unidirectional::AX_SR)
+
 - **Parameters**: No explicit parameters.
 - **Adapter Connections**:
 - Inputs: `S` (Set), `R` (Reset)
@@ -30,6 +35,7 @@ This exercise demonstrates controlling the visibility of a container (object) us
 - **Functionality**: A set-reset flip-flop. An event on `S` sets the output `Q` to TRUE; an event on `R` resets it to FALSE. The state is retained until the next event occurs.
 
 ### Q_ObjHideShow (Type: isobus::UT::Q::Q_ObjHideShow_AX)
+
 - **Parameters**:
 - `u16ObjId` = Container_B
 - **Adapter Connection**: `qVisible` (Adapter input, expects a Boolean value)
@@ -47,9 +53,7 @@ The status output `Q` of **AX_SR** is forwarded to the block **Q_ObjHideShow** v
 **Process**:
 
 1. When the operator releases softkey F1, a set event is sent to AX_SR. This sets the output `Q` to TRUE.
-
 2. The TRUE value activates the function block **Q_ObjHideShow**, making the container `Container_B` visible.
-
 3. When softkey F2 is released, a reset event is sent to AX_SR. `Q` is set to FALSE, and the container becomes invisible.
 
 **Learning Objectives**:
@@ -69,6 +73,7 @@ This exercise demonstrates a typical application for showing/hiding a container 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

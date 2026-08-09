@@ -1,10 +1,13 @@
 # Exercise_218_AUDI: Standard IEC 61131-3 AUDI_FB_CTD (Adapter Version, Down Counter, UDINT) with Terminal Output
+
 ![Uebung_218_AUDI_network](./Uebung_218_AUDI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) with a UDINT data type. The counter value is output via a terminal block. A separate conversion block sets the initial value (preset value) to 10. The exercise demonstrates the use of adapter-based function blocks and their interaction with input/output modules as well as a numeric terminal display.
 ## Function Blocks (FBs) Used
+
 - **AUDI_FB_CTD** – Type: `adapter::iec61131::counters::AUDI_FB_CTD`
 - IEC 61131-3 compliant down counter (CTD). Each event at input `CD` (Count Down) decrements the internal counter. When the counter reaches zero, output `Q` is set. Input `LD` loads the current counter value from `PV`.
 - **AUDI_UDINT_TO_UDI** – Type: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
@@ -25,15 +28,10 @@ This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) wit
 **Event and Data Connections:**
 
 1. The input `Input_LD` (pin `Input_I2`) generates an event on a rising edge at the output `IN`. This event is forwarded to the conversion block `AUDI_UDINT_TO_UDI.REQ` via the event connection `Input_LD.INITO`.
-
 2. Subsequently, `AUDI_UDINT_TO_UDI` outputs the pre-calculated UDINT value (10) at its output `AUDI_OUT`. This value is then routed via an adapter connection to the input `PV` of `AUDI_FB_CTD`.
-
 3. Simultaneously, the adapter input `Input_LD.IN` is directly connected to the counter's input `LD` (adapter connection). This loads the preset value (10) into the counter.
-
 3. 4. The input `Input_CD` (pin `Input_I1`) outputs a signal at its output `IN`, which is connected via an adapter to the counter's input `CD`. Each event decrements the counter reading by 1.
-
 5. The counter output `Q` is passed via an adapter to the digital output `Output_Q1.OUT`. `Q` becomes TRUE once the counter reading reaches 0.
-
 6. The current counter reading (`CV`) is sent via an adapter to the numeric terminal output `Q_NumericValue_AUDI.u32NewValue` and displayed on the terminal.
 
 `` **Learning Objectives:**
@@ -60,6 +58,7 @@ Exercise 218 demonstrates a complete IEC 61131-3 down counter with a UDINT data 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

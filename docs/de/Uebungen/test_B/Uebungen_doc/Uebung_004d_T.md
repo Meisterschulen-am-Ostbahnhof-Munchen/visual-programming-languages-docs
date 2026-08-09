@@ -15,6 +15,7 @@ In der Übung werden zwei digitale Eingänge als Takt- und Reset-Quelle verwende
 Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinander verbunden sind:
 
 ### DigitalInput_RST (logiBUS_IX)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**:  
   `QI = TRUE` (Qualifier für Initialisierung aktiv)  
@@ -23,6 +24,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 - **Funktionsweise**: Liest den digitalen Eingang `Input_I1` aus. Das Ereignis `IND` wird bei Signaländerung ausgelöst. Der gelesene Wert wird am Datenausgang `IN` bereitgestellt. Dient als Reset-Signal für das T-FF.
 
 ### DigitalInput_CLK (logiBUS_IX)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**:  
   `QI = TRUE`  
@@ -31,6 +33,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 - **Funktionsweise**: Liest den digitalen Eingang `Input_I2` aus. Das Ereignis `IND` wird bei Signaländerung ausgelöst. Der gelesene Wert wird am Datenausgang `IN` bereitgestellt. Dient als Taktsignal für das T-FF.
 
 ### T_FF (FB_T_FF)
+
 - **Typ**: `logiBUS::bistableElements::FB_T_FF`
 - **Parameter**: Keine expliziten Parameter, die Schnittstellen werden über Verbindungen belegt.
 - **Funktionsweise**: Implementiert ein Toggle-Flipflop.  
@@ -41,6 +44,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
   - **Ereignisausgang `CNF`**: Wird nach abgeschlossener Verarbeitung ausgelöst.
 
 ### DigitalOutput_Q1 (logiBUS_QX)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**:  
   `QI = TRUE`  
@@ -87,4 +91,5 @@ Die Übung `Uebung_004d_T` zeigt den Einsatz des Funktionsbausteins `FB_T_FF` zu
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

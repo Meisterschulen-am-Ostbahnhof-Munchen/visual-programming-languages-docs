@@ -1,8 +1,10 @@
 # ADI_FB_CTD
+
 ![ADI_FB_CTD](./ADI_FB_CTD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ADI_FB_CTD** is a down counter for values of type `DINT` that communicates exclusively via ADI adapters. It encapsulates an internal standard counter and enables counting down, loading a default value, and outputting the current counter value – all via standardized adapter interfaces.
 ## Interface Structure
 
@@ -45,6 +47,7 @@ The ADI_FB_CTD uses an internal IEC 61131 counter (`FB_CTD_DINT`). All communica
 All incoming events (CD, LD, and PV) are routed to the common `REQ` input of the internal counter. The internal function block distinguishes between counting and loading based on the data values. Upon completion of the action, the event `CNF` is triggered, simultaneously operating the output adapters **Q** and **CV** and setting the event output `CNF`.
 
 ## Technical Features
+
 - **Always Active Output:** The function block outputs an event on the **Q** adapter with **every** update (via CD, LD, or PV) – even if the corresponding data value does not change. If a triggering output is only desired upon an actual state change, a filter block such as `AX_D_FF` must be placed upstream.
 - **Adapter-Based Interface:** All inputs and outputs are implemented as ADI adapters. This enables loose coupling and easy reusability in modular control architectures.
 - **Internal Standard Counter:** The counting logic is based on an established IEC 61131 component and is therefore robust and reliable.
@@ -60,11 +63,13 @@ The FB does not have its own state machine. Its behavior is determined by the in
 After each processing step, the FB is immediately ready for the next event (no blocking).
 
 ## Application Scenarios
+
 - **Workpiece Counting:** A sensor reports each passing workpiece as an event on **CD**. The counter decrements from a predefined starting value (**PV**) to zero. When the counter reaches zero, a signal (e.g., "Container full") can be output via **Q**.
 - **Time Delay:** In combination with a clock, the counter functions as a down timer, the remaining time of which is read via **CV**.
 - **Control of Processes:** The current counter value (**CV**) serves as a parameter for subsequent steps (e.g., positioning, quantity control).
 
 ## Comparison with Similar Function Blocks
+
 - **CTU (Up Counter)** – counts only upwards; ADI_FB_CTD only downwards.
 - **CTUD (Up/Down Counter)** – can count in both directions; ADI_FB_CTD is specialized for one direction.
 - **Standard IEC 61499 Counters** – use separate event and data ports, while ADI_FB_CTD unifies the interfaces via adapters.

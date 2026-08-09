@@ -1,8 +1,10 @@
 # AR_SPLIT_3
+
 ![AR_SPLIT_3](./AR_SPLIT_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AR_SPLIT_3** serves as a generic splitter for adapter connections. It distributes an incoming data and event stream (via a `AR` adapter) to three separate, identically structured output adapters. This enables efficient reuse of information in automation processes without duplicating the logic.
 ## Interface Structure
 
@@ -15,9 +17,11 @@ None – the block has only adapter interfaces. Events are transmitted implicitl
 None – Events are passed via the plugs `OUT1`, `OUT2`, and `OUT3` (type `AR`).
 
 ### **Data Inputs**
+
 None – All data is provided via the adapter `IN`.
 
 ### **Data Outputs**
+
 None – All data is output via the three output adapters (`OUT1`, `OUT2`, `OUT3`).
 
 ### **Adapters**
@@ -48,6 +52,7 @@ Every event or data packet received at `IN` is simultaneously forwarded to all t
 The function block is **stateless** (combinatorial). There are no internal states or sequential processes. Distribution occurs purely through the connection of the adapter signals.
 
 ## Application Scenarios
+
 - **Distributing sensor data** to multiple parallel processing logics (e.g., evaluation, visualization, logging).
 - **Controlling multiple actuator groups** with an identical control signal (e.g., parallel valve or motor control).
 - **Splitting a control event** into different function blocks without copying the source logic.

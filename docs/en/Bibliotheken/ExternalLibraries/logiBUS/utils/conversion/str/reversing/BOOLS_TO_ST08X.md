@@ -1,13 +1,12 @@
 # BOOLS_TO_ST08X
+
 <img width="1032" height="423" alt="image" src="https://github.com/user-attachments/assets/6ba52e2e-b4e7-4f80-ac9f-c05e7c05956f" />
 ![BOOLS_TO_ST08X](./BOOLS_TO_ST08X.svg)
 
 * * * * * * * * * *
 This function block (FB) is used to combine eight individual BOOL values into a structure of type `ST08X`. It enables the clear grouping and transfer of eight binary pieces of information as a single structured variable.
 * **REQ** (Event): This event triggers the conversion and assignment of the input values to the output. All data inputs are connected to this event and are read upon its arrival.
-
 * **CNF** (Event): This confirmation event is triggered after the conversion is successfully completed and the output `OUT` has been updated. The data output `OUT` is associated with this event.
-
 * **IN_00** (BOOL): The value for bit 0 of the output structure.
 * **IN_01** (BOOL): The value for bit 1 of the output structure.
 * **IN_02** (BOOL): The value for bit 2 of the output structure.
@@ -16,34 +15,38 @@ This function block (FB) is used to combine eight individual BOOL values into a 
 * **IN_05** (BOOL): The value for bit 5 of the output structure.
 * **IN_06** (BOOL): The value for bit 6 of the output structure.
 * **IN_07** (BOOL): The value for bit 7 of the output structure.
-
 * **OUT** (logiBUS::utils::conversion::types::ST08X): The resulting structure containing the values of the eight binary inputs in their respective fields (`X_00` to `X_07`).
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
+
 This function block has no adapters.
 
 ## Functionality
+
 The function block `BOOLS_TO_ST08X` is activated by an incoming `REQ` event. With each activation, the current values of the eight data inputs (`IN_00` to `IN_07`) are directly assigned to the corresponding fields (`X_00` to `X_07`) of the output structure `OUT`. After successful assignment, the `CNF` event is triggered at the output to signal the completion of the operation and make the updated `OUT` value available. The assignment is one-to-one, where `IN_00` corresponds to the field `X_00`, `IN_01` to the field `X_01`, and so on, until `IN_07` is assigned to the field `X_07`.
 
 * **Direct Assignment:** The logic consists of a direct one-to-one assignment of the Boolean inputs to the fields of the `ST08X` structure.
 * **Typing:** The `ST08X` type is a user-defined structure specifically designed for aggregating eight Boolean values and can be used in a type-safe manner.
-
 * **Direct Assignment:** * **Efficiency:** Due to its simple implementation, this function block is very efficient and resource-saving.
 * **Stateless:** The function block does not store any internal states and processes each request independently of previous calls.
 
 The function block `BOOLS_TO_ST08X` is a stateless function block. This means that it does not store any information about previous executions that could influence its current behavior. Each activation by the `REQ` event results in a recalculation of the output `OUT` based on the values of the data inputs valid at that time.
 
 * **Sensor Data Acquisition:** Combining eight individual digital sensor states (e.g., limit switches, light barriers) into a single structure for more compact data processing or visualization.
-
 * **Interface Communication:** Prepare binary data for transmission via serial interfaces or communication protocols that expect data in structured formats.
 * **Programming Logic:** Simplify the logic in more complex function blocks by combining eight separate signals into a single, more manageable variable.
-
 
 This function block specializes in converting eight BOOL values to the user-defined `ST08X` type. Compare to:
 
@@ -63,8 +66,13 @@ The `BOOLS_TO_ST08X` function block is a simple yet extremely useful building bl
 ]
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

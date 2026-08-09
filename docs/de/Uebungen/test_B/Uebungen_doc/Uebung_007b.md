@@ -17,6 +17,7 @@ Die gesamte Logik ist in einer Subapplikation gekapselt und verwendet ausschlie�
 Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 
 ### Baustein: `DigitalOutput_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**:
   - `QI` = `TRUE` (Freigabe)
@@ -28,6 +29,7 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 ---
 
 ### Baustein: `E_CYCLE`
+
 - **Typ**: `iec61499::events::E_CYCLE`
 - **Parameter**:
   - `DT` = `T#10ms` (Zykluszeit 10 ms)
@@ -41,6 +43,7 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 ---
 
 ### Baustein: `E_T_FF`
+
 - **Typ**: `iec61499::events::E_T_FF`
 - **Parameter**: Keine
 - **Ereignis-Eingänge**:
@@ -54,6 +57,7 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 ---
 
 ### Baustein: `E_SPLIT_4`
+
 - **Typ**: `iec61499::events::E_SPLIT_4`
 - **Parameter**: Keine
 - **Ereignis-Eingänge**: `EI` (Eingangsereignis)
@@ -63,6 +67,7 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 ---
 
 ### Baustein: `E_MERGE_4`
+
 - **Typ**: `iec61499::events::E_MERGE_4`
 - **Parameter**: Keine
 - **Ereignis-Eingänge**: `EI1`, `EI2`, `EI3`, `EI4` (vier Eingänge)
@@ -72,6 +77,7 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 ---
 
 ### Baustein: `DigitalInput_CLK_I1`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -83,6 +89,7 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 ---
 
 ### Baustein: `DigitalInput_CLK_I2`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -147,4 +154,5 @@ Die Übung 007b demonstriert den Einsatz von zyklischer Ereigniserzeugung (`E_CY
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

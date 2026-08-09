@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Die Übung **Uebung_216b_ALR** realisiert einen Abwärtszähler (Counter Down) gemäß IEC 61131-3 unter Verwendung eines Adapter-basierten Funktionsbausteins `ADI_FB_CTD`. Der Zählerwert wird über eine Adapter-Wandlungskette auf ein alphanumerisches Terminal (PHYS) ausgegeben. Zusätzlich wird ein digitaler Ausgang gesetzt, wenn der Zählerstand Null erreicht. Die Übung veranschaulicht die Integration von logiBUS‑Eingängen, Adapter-Konvertierungen und Terminal-Ausgabe in einer kompakten Subapplikation.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -78,4 +79,5 @@ Die Übung **Uebung_216b_ALR** realisiert einen Abwärtszähler (Counter Down) g
 - `Input_LD.INITO` → `ADI_DINT_TO_DI.REQ`
 
 ## Zusammenfassung
+
 Die Übung demonstriert den Einsatz eines IEC-61131-3‑Abwärtszählers in einer Adapter-basierten Umgebung. Durch die Kombination von logiBUS-Ein-/Ausgängen, einer DINT-Konvertierung und einer alphanumerischen Terminalausgabe wird ein vollständiger, praxisnaher Zählerkreislauf abgebildet. Der Benutzer lernt, Adapterverbindungen zu verschalten und Ereignissteuerungen zu nutzen. Ein besonderer Fokus liegt auf der korrekten Initialisierung des Preset-Werts und der Ausgabe des Zählerstands (auch negativer Werte) auf einem Terminal.

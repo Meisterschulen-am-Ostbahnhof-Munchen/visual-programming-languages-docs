@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_SoftKeyMask** ist ein standardkonformer Funktionsbaustein zur Verwaltung von Softkey-Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.36) Spezifikation für VT-Systeme.
 
 ![Q_SoftKeyMask](Q_SoftKeyMask.svg)
@@ -12,19 +13,23 @@ Der **Q_SoftKeyMask** ist ein standardkonformer Funktionsbaustein zur Verwaltung
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Maskenwechsel-Anforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Wechselbestätigung
 
 ### **Daten-Eingänge**
+
 - `u8MaskType` (USINT): Maskentyp (1=Daten, 2=Alarm)
 - `u16DataMaskId` (UINT): Objekt-ID der aktiven Maske
 - `u16SoftKeyMaskId` (UINT): Objekt-ID der neuen Softkey-Maske
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldMaskType` (USINT): Vorheriger Maskentyp
 - `u16OldDataMaskId` (UINT): Vorherige Datenmasken-ID

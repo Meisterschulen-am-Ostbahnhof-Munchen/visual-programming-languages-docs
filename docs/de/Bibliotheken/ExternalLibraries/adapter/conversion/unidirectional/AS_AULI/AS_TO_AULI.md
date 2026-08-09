@@ -13,21 +13,25 @@ Der zusammengesetzte Funktionsbaustein `AS_TO_AULI` dient der Umwandlung eines *
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt **keine direkten Ereignis-Eingänge**. Der Empfang von Ereignissen erfolgt über den **Socket-Adapter `AS_IN`**:
 
 - **`AS_IN.E1`** – Ereignis-Eingang über den AS-Adapter, der die Datenumwandlung anstößt.
 
 ### **Ereignis-Ausgänge**
+
 Der Baustein besitzt **keine direkten Ereignis-Ausgänge**. Die Ausgabe von Ereignissen erfolgt über den **Plug-Adapter `AULI_OUT`**:
 
 - **`AULI_OUT.E1`** – Ereignis-Ausgang über den AULI-Adapter, der nach abgeschlossener Konvertierung aktiviert wird.
 
 ### **Daten-Eingänge**
+
 Der Baustein besitzt **keine direkten Daten-Eingänge**. Die Dateneingabe erfolgt über den **Socket-Adapter `AS_IN`**:
 
 - **`AS_IN.D1`** – Daten-Eingang vom Typ **SINT**, der den umzuwandelnden Wert bereitstellt.
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt **keine direkten Daten-Ausgänge**. Die Datenausgabe erfolgt über den **Plug-Adapter `AULI_OUT`**:
 
 - **`AULI_OUT.D1`** – Daten-Ausgang vom Typ **ULINT**, der den konvertierten Wert liefert.
@@ -42,6 +46,7 @@ Der Baustein besitzt **keine direkten Daten-Ausgänge**. Die Datenausgabe erfolg
 ---
 
 ## Funktionsweise
+
 1. Der Baustein erwartet ein Ereignis am Socket-Adapter `AS_IN.E1`. Gleichzeitig muss der Datenwert `AS_IN.D1` (Typ SINT) anliegen.
 2. Das Ereignis wird an den internen Funktionsbaustein `F_SINT_TO_ULINT` (weitergeleitet als `REQ`).
 3. Der interne Baustein führt die Konvertierung **SINT → ULINT** durch.
@@ -53,6 +58,7 @@ Die Konvertierung erfolgt nach den Regeln der IEC 61131-3: Der SINT-Wert (8‑Bi
 ---
 
 ## Technische Besonderheiten
+
 - **Standardkonformität**: Der Baustein ist gemäß IEC 61499-2 spezifiziert.
 - **Lizenz**: Eclipse Public License 2.0 (EPL-2.0).
 - **Abhängigkeit**: Importiert den IEC 61131-Baustein `F_SINT_TO_ULINT` aus dem Paket `iec61131::conversion`.
@@ -62,6 +68,7 @@ Die Konvertierung erfolgt nach den Regeln der IEC 61131-3: Der SINT-Wert (8‑Bi
 ---
 
 ## Zustandsübersicht
+
 Der Baustein besitzt **keine eigene Zustandsmaschine**. Er fungiert als reine Verschaltung des inneren `F_SINT_TO_ULINT`-Bausteins. Das Verhalten ist strikt ereignisgesteuert:
 
 - **Warten** (Initialzustand) → Ereignis an `AS_IN.E1` → Übergang zu **Konvertierung**.
@@ -72,6 +79,7 @@ Eine Fehlerbehandlung ist nicht explizit modelliert; der innere Baustein gibt be
 ---
 
 ## Anwendungsszenarien
+
 - **Einbindung in Adapterketten**: Wenn ein vorangeschalteter Funktionsbaustein einen SINT-Wert liefert, nachfolgende Komponenten jedoch nur ULINT verarbeiten, kann `AS_TO_AULI` als Zwischenadapter verwendet werden.
 - **Sensor-Anbindung**: Sensoren mit 8‑Bit‑Ausgabe (z. B. Drehgeber, einfache Schalter) können an einen 64‑Bit‑Bus angebunden werden.
 - **Legacy-Systeme**: Altanlagen mit SINT‑Schnittstellen werden durch diesen Adapter kompatibel zu modernen ULINT‑basierten Steuerungen.
@@ -92,9 +100,11 @@ Der vorliegende Baustein deckt die Konvertierung von einem 8‑Bit‑Vorzeichen�
 ---
 
 ## Fazit
+
 `AS_TO_AULI` ist ein einfacher, aber wichtiger zusammengesetzter Baustein zur Typanpassung zwischen SINT- und ULINT-Adaptern. Er kapselt die IEC 61131-Konvertierung und ermöglicht eine typsichere, ereignisgesteuerte Integration in Automatisierungssysteme. Durch seine klare Schnittstellenstruktur und die Verwendung von Standardbibliotheken ist er wartbar, wiederverwendbar und leicht in bestehende 4diac‑IDE‑Projekte einbindbar.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

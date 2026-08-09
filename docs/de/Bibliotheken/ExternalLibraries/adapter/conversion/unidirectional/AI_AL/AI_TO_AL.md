@@ -10,15 +10,19 @@ Der Composite-Funktionsbaustein **AI_TO_AL** dient zur Umwandlung eines INT-Wert
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine eigenständigen Ereignis-Eingänge am Baustein. Die Ereignissteuerung erfolgt ausschließlich über den integrierten Socket `AI_IN`, der das Ereignis `E1` als Trigger für die Konvertierung bereitstellt.
 
 ### **Ereignis-Ausgänge**
+
 Keine eigenständigen Ereignis-Ausgänge am Baustein. Das Ergebnisereignis der internen Konvertierung wird über den Plug `AL_OUT` als Ereignis `E1` ausgegeben.
 
 ### **Daten-Eingänge**
+
 Keine eigenständigen Daten-Eingänge am Baustein. Der zu konvertierende INT-Wert wird über den Socket `AI_IN` (Datenpunkt `D1`) in den Baustein eingelesen.
 
 ### **Daten-Ausgänge**
+
 Keine eigenständigen Daten-Ausgänge am Baustein. Der konvertierte LWORD-Wert wird über den Plug `AL_OUT` (Datenpunkt `D1`) ausgegeben.
 
 ### **Adapter**

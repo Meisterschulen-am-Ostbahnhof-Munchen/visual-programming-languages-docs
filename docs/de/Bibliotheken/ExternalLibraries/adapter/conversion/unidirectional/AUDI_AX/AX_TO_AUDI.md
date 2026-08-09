@@ -10,18 +10,23 @@ Der Funktionsblock **AX_TO_AUDI** ist ein zusammengesetzter Baustein (Composite 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **AX_IN.E1** (über Socket‑Adapter AX_IN): Ereignis, das die Konvertierung anstößt.
 
 ### **Ereignis-Ausgänge**
+
 - **AUDI_OUT.E1** (über Plug‑Adapter AUDI_OUT): Bestätigungsereignis nach erfolgreicher Konvertierung.
 
 ### **Daten-Eingänge**
+
 - **AX_IN.D1** (über Socket‑Adapter AX_IN, Datentyp **BOOL**): Der umzuwandelnde Boolesche Wert.
 
 ### **Daten-Ausgänge**
+
 - **AUDI_OUT.D1** (über Plug‑Adapter AUDI_OUT, Datentyp **UDINT**): Der konvertierte Ganzzahlwert (0 oder 1).
 
 ### **Adapter**
+
 - **AX_IN** – Socket‑Adapter vom Typ `adapter::types::unidirectional::AX`  
   Nimmt einen Booleschen Wert (und ein zugehöriges Ereignis) entgegen.
 

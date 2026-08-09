@@ -1,21 +1,27 @@
 # ALI_SPLIT_5
+
 ![ALI_SPLIT_5](./ALI_SPLIT_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ALI_SPLIT_5` is a generic adapter split block. It accepts a single incoming ALI adapter (`adapter::types::unidirectional::ALI`) and provides the same ALI signals at five outgoing ALI adapter interfaces. This allows an ALI connection to be distributed to multiple subsequent blocks or devices without interrupting the logical signal chain.
 ## Interface Structure
 
 ### **Event Inputs**
+
 - None
 
 ### **Event Outputs**
+
 - None
 
 ### **Data Inputs**
+
 - None
 
 ### **Data Outputs**
+
 - None
 
 ### **Adapters**
@@ -36,6 +42,7 @@ As soon as the module is connected to socket `IN` via a valid ALI connection, al
 The forwarding is bidirectional according to the ALI adapter definition: Both events and data (as defined in the ALI type) are made available synchronously at all outputs. The function block has no internal runtime logic or state.
 
 ## Technical Features
+
 - **Generic Function Block** – The specific implementation is controlled by the meta attributes `GenericClassName` and `TypeHash`. This allows the same function block definition to be reused for different ALI variants (e.g., with different data structures).
 - **No Delay** – The signals are replicated to the outputs without any significant delay.
 - **Easily Expandable** – The principle of this splitter can be transferred to other adapter types; the generic architecture eliminates the need to modify the basic logic.
@@ -46,6 +53,7 @@ The forwarding is bidirectional according to the ALI adapter definition: Both ev
 The component has **no internal state machine**. It operates directly and without delay as a pure connection switch ("wired split"). State changes occur only through the connected adapter partners, and these are passed on transparently.
 
 ## Application Scenarios
+
 - **Distributing a sensor signal** to multiple evaluation units or controllers that require the same ALI data stream.
 - **Parallelizing ALI communication paths** in a machine controller to supply redundant or independent processing chains.
 - **Test and debugging environments** where an ALI signal needs to be simultaneously monitored and recorded.
@@ -61,6 +69,7 @@ The `ALI_SPLIT_5` is a simple yet essential component for multiplying an ALI sig
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **I_RHS** (Rear Hitch Status) ist ein standardkonformer Funktionsbaustein zur Überwachung der Heckkupplungsparameter, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die präzise Erfassung von Position, Kraft und Status der Heckkupplung in Landmaschinen.
 
@@ -11,17 +12,21 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Qualifier `QI`)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung (mit Status)
 - `IND`: Indikationsereignis mit allen Kupplungsparametern
 - `TIMEOUT`: Timeout-Ereignis
 
 ### **Daten-Eingänge**
+
 - `QI` (BOOL): Qualifier für Initialisierung
 
 ### **Daten-Ausgänge**
+
 - `QO` (BOOL): Qualifier für Ausgangsereignisse
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `Q_timeout` (BOOL): Timeout-Indikator

@@ -11,20 +11,25 @@ Der SET_WORD Funktionsbaustein schreibt einen WORD-Wert von seinem Dateneingang 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **REQ** (Event): Normaler Ausführungsauftrag. Der Baustein wird ausgelöst, wenn ein Ereignis an diesem Eingang eintrifft.  
   Mit den Variablen `IN` und `OUT` verbunden.
 
 ### **Ereignis-Ausgänge**
+
 - **CNF** (Event): Bestätigung der Ausführung. Wird nach erfolgreicher Zuweisung gesendet.  
   Mit der Variable `OUT` verbunden.
 
 ### **Daten-Eingänge**
+
 - **IN** (WORD): Der Wert, der in die Zielvariable geschrieben werden soll. Initialwert: `0`.
 
 ### **Daten-Ausgänge**
+
 Keine Daten-Ausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die InOut-Variable `OUT`.
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise

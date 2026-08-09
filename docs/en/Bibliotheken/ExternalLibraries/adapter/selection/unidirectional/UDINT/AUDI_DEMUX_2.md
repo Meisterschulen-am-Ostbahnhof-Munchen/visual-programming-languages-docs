@@ -1,10 +1,13 @@
 # AUDI_DEMUX_2
+
 ![AUDI_DEMUX_2](./AUDI_DEMUX_2.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUDI_DEMUX_2` is a generic 1-to-2 demultiplexer for the unidirectional adapter type `AUDI`. It forwards an incoming AUDI value to one of two output plugs, controlled by a numeric index.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Description | With Data |
@@ -24,6 +27,7 @@ The function block `AUDI_DEMUX_2` is a generic 1-to-2 demultiplexer for the unid
 | `K` | `UINT` | Selection index (0 → OUT1, 1 → OUT2) |
 
 ### **Data Outputs**
+
 None.
 
 ### **Adapter**
@@ -35,6 +39,7 @@ None.
 | Plug | `OUT2` | `adapter::types::unidirectional::AUDI` | Output | Second output (Index 1) |
 
 ## Functionality
+
 The function block waits in a default state for the event `REQ`. Upon arrival of `REQ`, the current value of the data input `K` is evaluated:
 
 - **K = 0**: The AUDI value present at socket `IN` is forwarded to plug `OUT1`.
@@ -44,6 +49,7 @@ The function block waits in a default state for the event `REQ`. Upon arrival of
 After successful forwarding, the event `CNF` is output, and the function block returns to its standby state.
 
 ## Technical Features
+
 - The function block is implemented as a generic function block (`GEN_AUDI_DEMUX`) and can be parameterized for different AUDI variants by specifying a concrete type hash identifier.
 - The interface uses only the unidirectional adapter `AUDI`, which is defined in an adapter package.
 - The logic is event-driven and suitable for cyclic and event-driven automation environments.
@@ -58,14 +64,17 @@ The function block implicitly has an internal state machine:
 - **Return**: After outputting `CNF`, the system returns to its initial state.
 
 ## Application Scenarios
+
 - **Signal Demultiplexing in Agricultural Engineering**: Distribution of an audio signal (e.g., sensor data) to two different control units.
 - **Switching Between Operating Modes**: Depending on the index, a signal is routed to a different processing unit.
 - **Testing and Diagnostic Tasks**: Targeted application of a test signal to one of two outputs.
 
 ## Comparison with Similar Components
+
 - `AUDI_DEMUX_2` differs from general demultiplexers (e.g., `DEMUX` for elementary data types) through the use of the complex adapter type `AUDI`.
 
 Compared to a multiplexer (`AUDI_MUX`), the data flow direction is reversed – here, a signal is distributed to multiple outputs, while a multiplexer combines multiple inputs into a single output.
 
 ## Conclusion
+
 AUDI_DEMUX_2` is a specialized, generic demultiplexer for unidirectional AUDI interfaces. It enables clean and event-driven signal distribution in automation systems, especially in environments that use the AUDI adapter standard. Its simple interface (one index, two outputs) makes it intuitive to use and easy to integrate into existing control logic.

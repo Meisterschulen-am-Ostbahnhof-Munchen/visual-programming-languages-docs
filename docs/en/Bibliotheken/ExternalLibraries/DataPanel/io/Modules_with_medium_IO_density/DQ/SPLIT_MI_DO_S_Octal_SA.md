@@ -1,4 +1,5 @@
 # SPLIT_MI_DO_S_Octal_SA
+
 ![SPLIT_MI_DO_S_Octal_SA](./SPLIT_MI_DO_S_Octal_SA.svg)
 
 * * * * * * * * * *
@@ -7,18 +8,12 @@ The function block **SPLIT_MI_DO_S_Octal_SA** is used to split a single data val
 | Event | Comment |
 |----------|-----------|
 | `REQ` | Service Request; Processing starts as soon as the event occurs. The user must first validate the data input `IN`. |
-
-
 | Event | Comment |
 |----------|-----------|
 | `CNF` | Confirmation of completed processing. Indicates that all eight outputs have been updated. |
-
-
 | Name | Type | Comment |
 |------|----------------------------------|------------------------------------|
 | `IN` | `DataPanel_MI_DO_S_Octal_SA` | Octal input value (Port 1…8 and common `u8SAMember`) |
-
-
 | Name | Type | Comment |
 |------|-----------------------------------|--------------------------|
 | `OUT1` | `DataPanel_MI_DO_S_Single_SA` | Single Output 1 |
@@ -31,36 +26,38 @@ The function block **SPLIT_MI_DO_S_Octal_SA** is used to split a single data val
 | `OUT8` | `DataPanel_MI_DO_S_Single_SA` | Single Output 8 |
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
+
 No adapters available.
 
 ## Functionality
+
 This function block implements a simple, event-driven process:
 
 1. An incoming `REQ` event triggers the execution of the algorithm `REQ`.
 
 No adapters available.
 
-
 This function block implements a simple, event-driven sequence:
 
 1. An incoming `REQ` event triggers the execution of the algorithm `REQ`.
-
-
-
 3. Each output also receives the corresponding port value from the octal input:
-
 - `OUT1.Port := IN.Port1`
 - `OUT2.Port := IN.Port2`
 - …
 - `OUT8.Port := IN.Port8`
 4. Upon completion, the event `CNF` is sent, indicating that all eight outputs are valid.
-
 - The function block is implemented as a **SimpleFB** (simple function block) and operates without a state machine with multiple states – processing occurs in a single step.
 - There is no concurrency or time-critical processes; the partitioning occurs synchronously with the `REQ` event.
 - The types `DataPanel_MI_DO_S_Octal_SA` and `DataPanel_MI_DO_S_Single_SA` must be defined in the same data namespace (here, `DataPanel::io::MI::DQ`).
@@ -79,11 +76,14 @@ There are no other states that indicate delay or error handling.
 
 Comparable components exist for other data structures (e.g., `SPLIT_MI_DO_S_Octal_SA` for specific panel types). The basic mechanism—splitting a composite data type into its components—is universal but differs depending on the data field name and type.
 
-
 The `SPLIT_MI_DO_S_Octal_SA` is a compact and clearly structured function block for decomposing an octal data packet into eight individual signals. It facilitates the modularization of automation software by dividing complex data types into manageable units and directly inheriting the port assignment from the source structure.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

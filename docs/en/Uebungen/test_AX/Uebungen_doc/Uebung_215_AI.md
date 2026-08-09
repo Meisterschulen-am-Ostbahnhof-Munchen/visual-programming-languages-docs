@@ -1,12 +1,15 @@
 # Exercise_215_AI: Standard IEC 61131-3 AI_FB_CTD (Adapter Version, Down Counter, INT) with Terminal Output
+
 ![Uebung_215_AI_network](./Uebung_215_AI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a down counter according to IEC 61131-3 with an adapter interface (AI_FB_CTD) and outputs the current counter value to a terminal. The counter is decremented and loaded via digital inputs.
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: AI_FB_CTD
+
 - **Type**: adapter::iec61131::counters::AI_FB_CTD
 - **Internal FBs Used**: None
 - **Parameters**: None
@@ -14,15 +17,14 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Data Output/Input**: CV (current counter value, INT), PV (preset value, INT as input via adapter)
 - **Functionality**: The down counter decrements the value of PV with each event at CD. With each event at LD, the counter is reset to the value of PV. Output Q becomes TRUE when the counter value reaches or falls below 0.
 
-
 ### Sub-Blocks: AI_INT_TO_I
+
 - **Type**: adapter::conversion::unidirectional::AI_INT_TO_I
 - **Internal Function Blocks Used**: None
 - **Parameters**: OUT = INT#10
 - **Event Output/Input**: REQ (Input), CNF (Output)
 - **Data Output/Input**: AI_OUT (INT)
 - **Functionality**: This block provides a constant integer value (here 10) that is used as the preset value (PV) for the counter. It is triggered by the INITO event of the load input.
-
 
 ### Sub-Blocks: Input_CD (Count Down Input)
 
@@ -33,15 +35,14 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Data Output/Input**: None
 - **Functionality**: Reads the digital input I1 of the logiBUS system and outputs an event on the adapter output on a rising edge. This event triggers the CD input of the counter.
 
-
 ### Sub-Blocks: Input_LD (Load Input)
+
 - **Type**: logiBUS::io::DI::logiBUS_IXA
 - **Internal Function Blocks Used**: None
 - **Parameters**: QI = TRUE, Input = Input_I2
 - **Event Output/Input**: INITO (Initialization), IN (Event Output on Edge)
 - **Data Output/Input**: None
 - **Functionality**: Reads the digital input I2 and outputs an event on a rising edge. This event triggers the LD event at the meter. Simultaneously, the initialization of the PV value is triggered via INITO.
-
 
 ### Sub-Blocks: Output_Q1
 
@@ -53,6 +54,7 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Functionality**: Receives the counter output Q (via adapter) and outputs it as the digital output Q1 of the logiBUS. Q1 becomes active as soon as the counter reaches zero.
 
 ### Sub-Blocks: AI_TO_AUDI
+
 - **Type**: adapter::conversion::unidirectional::AI_TO_AUDI
 - **Internal Function Blocks Used**: None
 - **Parameters**: None
@@ -81,9 +83,7 @@ The blocks are wired via adapter connections. Initially, the preset value 10 is 
 **Process**:
 
 1. **Counting**: A rising edge at input I1 (Input_CD) sends an event via the adapter connection to the CD input of AI_FB_CTD. The counter decrements by 1.
-
 2. **Loading**: A rising edge at input I2 (Input_LD) triggers the LD event and resets the counter to the value of PV (10). Simultaneously, the converter AI_INT_TO_I is triggered via INITO to reset the PV value.
-
 3. **Output**: The current counter value (CV) is converted into a terminal format via AI_TO_AUDI and displayed on the visualization (Q_NumericValue_AUDI). The counter's output Q is connected to the digital output Q1.
 
 **Notes from the source code**:
@@ -98,6 +98,7 @@ This exercise teaches how to use an IEC 61131-3 down counter (CTD) in an adapter
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

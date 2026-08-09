@@ -9,6 +9,7 @@ Hier ist die Dokumentation für die Übung `Uebung_010c4_sub_AX` basierend auf d
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung behandelt die Erstellung einer typisierten Sub-Applikation (`SubAppType`). Das Ziel dieses Bausteins ist es, eine ISOBUS-Softtaste (SoftKey) mit einem digitalen Ausgang (DigitalOutput) zu verknüpfen und gleichzeitig eine visuelle Rückmeldung über eine Hintergrundsteuerung zu realisieren. Der Baustein kapselt diese Logik, um sie wiederverwendbar zu machen (z.B. für F1/Q1, F2/Q2 etc.).
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -16,6 +17,7 @@ Diese Übung behandelt die Erstellung einer typisierten Sub-Applikation (`SubApp
 In diesem Netzwerk werden verschiedene spezialisierte Funktionsbausteine verwendet, um die Kommunikation zwischen Benutzereingabe (Softkey) und Hardwareausgabe (Digital Output) zu steuern.
 
 ### Haupt-Funktionsbausteine
+
 Folgende Funktionsbausteine sind direkt im Netzwerk verschaltet:
 
 *   **SoftKey_F1** (`isobus::UT::io::Softkey::Softkey_IXA`):
@@ -28,6 +30,7 @@ Folgende Funktionsbausteine sind direkt im Netzwerk verschaltet:
     *   Ein Adapter-Baustein, der ein eingehendes Signal aufspaltet, um es an zwei verschiedene Ziele weiterzuleiten (Splitter).
 
 ### Sub-Bausteine: GreenWhiteBackground_AX
+
 Innerhalb dieser Übung wird eine weitere Sub-Applikation instanziiert.
 
 - **Typ**: `MyLib::sys::GreenWhiteBackground_AX`
@@ -58,4 +61,5 @@ Der Ablauf innerhalb der `Uebung_010c4_sub_AX` wird durch Adapter- und Datenverb
 Diese Struktur stellt sicher, dass Hardware-Schaltung und visuelles Feedback synchron zur Tastenbetätigung erfolgen.
 
 ## Zusammenfassung
+
 Die `Uebung_010c4_sub_AX` ist ein modularer Baustein zur Kopplung einer Softtaste mit einem Digitalausgang und einer visuellen Rückmeldung. Durch die Verwendung von Adaptern (`AX_SPLIT_2`) wird die Signalverteilung effizient gelöst, während die Datenverbindungen die notwendige Konfiguration (IDs) bereitstellen.

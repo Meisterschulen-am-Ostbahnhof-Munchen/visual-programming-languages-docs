@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **Q_Attribute_AUDI** implementiert das Kommando „Change Attribute“ des ISOBUS-Standards ISO 11783-6 (Teil 6 – F.38). Er ermöglicht das Ändern eines Attributs eines Objekts, das über eine eindeutige Attribut-ID (AID) identifiziert wird. Der Baustein unterstützt die Übergabe des neuen Attributwerts über eine Adapter-Schnittstelle und gibt den alten Wert ebenfalls über einen Adapter zurück. String-Attribute können mit diesem Befehl nicht geändert werden.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ | Beschreibung |
@@ -42,6 +44,7 @@ Der Funktionsblock **Q_Attribute_AUDI** implementiert das Kommando „Change Att
 | u32OldValueAttribute | Plug | unidirectional::AUDI | Alter Wert des Attributs (32-Bit, wird vom FB über den Adapter ausgegeben) |
 
 ## Funktionsweise
+
 1. **Initialisierung**: Nach einem positiven Flanke an **INIT** wird der Dienst initialisiert. Die dafür benötigten Parameter (Objekt-ID und Attribut-ID) werden aus den Daten-Eingängen gelesen.
 2. **Ausführung des Kommandos**: Sobald am Socket **u32ValueAttribute** der Ereignisausgang **E1** ausgelöst wird (z. B. durch einen angeschlossenen FB, der einen neuen Wert bereitstellt), wird das Attributänderungs-Kommando gestartet. Der neue Attributwert wird vom Adapter übernommen.
 3. **Rückmeldung**: Nach Abschluss des Kommandos wird der Ausgang **CNF** aktiviert. Der STATU-String und der Rückgabewert **s16result** enthalten das Ergebnis. Parallel dazu wird am Plug **u32OldValueAttribute** der zuvor gespeicherte alte Attributwert über den Ereignisausgang **E1** signalisiert und über **D1** bereitgestellt.
@@ -49,6 +52,7 @@ Der Funktionsblock **Q_Attribute_AUDI** implementiert das Kommando „Change Att
 Der Baustein delegiert die eigentliche ISOBUS-Kommunikation an den internen Funktionsblock **Q_Attribute**, der die notwendigen Protokollschritte durchführt.
 
 ## Technische Besonderheiten
+
 - **Fehlercodes** (über s16result ausgegeben):
   - `VT_E_NO_ERR (0)` – kein Fehler
   - `VT_E_OVERFLOW (-6)` – Pufferüberlauf
@@ -60,6 +64,7 @@ Der Baustein delegiert die eigentliche ISOBUS-Kommunikation an den internen Funk
 - **Einschränkungen**: Der Befehl unterstützt keine String-Attribute.
 
 ## Zustandsübersicht
+
 Der FB besitzt keine explizit dargestellte Zustandsmaschine. Die Ablaufsteuerung erfolgt ereignisgesteuert:
 
 - Nach **INIT** wechselt er in einen bereiten Zustand.
@@ -67,12 +72,15 @@ Der FB besitzt keine explizit dargestellte Zustandsmaschine. Die Ablaufsteuerung
 - Der Baustein ist **nicht zustandsbehaftet** im Sinne einer wiederverwendbaren Sequenz; jeder Request wird einzeln abgearbeitet.
 
 ## Anwendungsszenarien
+
 - **ISOBUS-VT-Anwendungen**: Ändern von Parametern eines virtuellen Terminals (z. B. Hintergrundfarbe, Beschriftung, Sichtbarkeit) zur Laufzeit.
 - **Steuerung landwirtschaftlicher Geräte**: Dynamisches Anpassen von Attributen wie Maschineneinstellungen oder Diagnosedaten.
 - **Implementierung von ISO 11783-6 Workouts**: Nachbildung der Kommandostruktur „Change Attribute“ aus dem Standard.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Q_Attribute** (ohne AUDI): Bietet die gleiche Kernfunktionalität, jedoch ohne Adapter-Schnittstellen. Der neue Wert muss hier direkt als Dateneingang übergeben werden und es erfolgt keine Rückmeldung des alten Werts. **Q_Attribute_AUDI** erweitert diesen Baustein um eine flexible, adapterbasierte Wertübergabe und die Rückgabe des alten Werts, was die Wiederverwendbarkeit und Kapselung erhöht.
 
 ## Fazit
+
 **Q_Attribute_AUDI** ist ein spezialisierter Funktionsblock für ISOBUS-Anwendungen, der das sichere und standardkonforme Ändern von Attributen ermöglicht. Durch die adapterbasierte Schnittstelle für Attributwerte wird eine hohe Modularität erreicht, und die Ausgabe des alten Werts erlaubt eine einfache Nachverfolgung von Änderungen. Der Baustein ist ideal für komplexe VT-Implementierungen, bei denen Werte aus unterschiedlichen Quellen stammen oder in separaten Logikeinheiten verwaltet werden.

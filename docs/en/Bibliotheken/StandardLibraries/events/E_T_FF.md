@@ -1,5 +1,7 @@
 # E_T_FF
+
 ## 🎧 Podcast
+
 ![E_T_FF_ecc](./E_T_FF_ecc.svg)
 
 * [The E_T_FF in IEC 61499: Modular Toggle for Industry 4.0 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_T_FF-in-IEC-61499-Modulares-Kippen-fr-die-Industrie-4-0-e3674m7)
@@ -10,27 +12,19 @@ The `E_T_FF` (Event-driven Toggle Flip-Flop) is an event-driven toggle switch th
 
 ![E_T_FF](E_T_FF.svg)
 
-
 - **CLK (Clock)**: The clock event that toggles the state of `Q`.
-
 - **EO (Event Output)**: Triggered when the state of `Q` changes.
 - **Associated Data**: `Q`
-
 - **Q**: The current state of the flip-flop (data type: `BOOL`).
 
-#
-## #
 
 The `E_T_FF` component is a simple toggle flip-flop:
 
 1. **State Change**: Upon each incoming `CLK` event, the output `Q` changes its state: If `Q` was `TRUE`, it becomes `FALSE`, and if `Q` was `FALSE`, it becomes `TRUE`.
-
 2. **Event Triggering**: Each state change of `Q` triggers the `EO` event.
-
 - **Impulse Switch Analogy**: The component behaves like an impulse switch: A short pulse (`CLK`) switches the light (`Q`) on, the next pulse switches it off.
 - **Memory Function**: `Q` stores the last state of the flip-flop.
 - **Stateless Between Clock Cycles**: Changes to the `CLK` input only affect `Q` at the time of the event.
-
 
 A push button logic for a lamp can be implemented using a `E_T_FF`:
 
@@ -41,22 +35,31 @@ A push button logic for a lamp can be implemented using a `E_T_FF`:
 - Embedded Resource: ![E_T_FF Anwendung Taster EMB_RES](https://user-images.githubusercontent.com/69573151/200582652-15139148-a200-49fb-a683-93e341eab607.png)
 
 ### Taster für eine Lampe
-## Anwendungsbeispiele
+
 ## Technical Features
-## Functionality
+
+## Anwendungsbeispiele
+
 ### Data Outputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
+## Introduction
+
+## Functionality
+
 ### Blinker
+
 A blinker can be implemented using feedback with a timer:
 
 - **Concept**: The `EO` event of `E_T_FF` triggers a `E_DELAY` event, whose `EO` event, in turn, serves as the `CLK` event for `E_T_FF`. This creates a periodic state change.
-
 - Mapping: ![E_T_FF Anwendung Blinker Mapping](https://user-images.githubusercontent.com/69573151/200581547-83f78279-e1a1-4748-8240-8755630638a9.png)
 - Application: ![E_T_FF Anwendung Blinker App](https://user-images.githubusercontent.com/69573151/200581603-62aadee2-2a3a-4562-994f-51475817da3b.png)
 - Embedded resource: ![E_T_FF Anwendung Blinker EMB_RES](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)
-
 * [Uebung_004a](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a.md)
 * [Uebung_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
 * [Uebung_004a2_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
@@ -107,4 +110,5 @@ A blinker can be implemented using feedback with a timer:
 The `E_T_FF` module is a simple yet extremely versatile memory module. Its impulse relay function is fundamental for implementing push-button logic, flashers, and other bistable control circuits in IEC 61499 applications.
 
 ## 🛠️ Zugehörige Übungen
+
 ## Conclusion

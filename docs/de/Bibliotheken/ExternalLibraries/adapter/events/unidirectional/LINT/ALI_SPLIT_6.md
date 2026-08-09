@@ -10,15 +10,19 @@ Der Funktionsblock ALI_SPLIT_6 dient dazu, ein eingehendes unidirektionales ALI-
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Keine*
 
 ### **Ereignis-Ausgänge**
+
 *Keine*
 
 ### **Daten-Eingänge**
+
 *Keine*
 
 ### **Daten-Ausgänge**
+
 *Keine*
 
 ### **Adapter**
@@ -71,4 +75,5 @@ Der ALI_SPLIT_6 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfa
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

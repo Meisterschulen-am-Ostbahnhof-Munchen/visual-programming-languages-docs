@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer-Pulse) gemäß IEC 61131-3, erweitert um einen uni-direktionalen **AX-Adapter**. Er wird in der 4diac-IDE verwendet, um zeitlich begrenzte Impulse zu erzeugen und die Ausgangssignale über einen Adapter an die Anwendung zu übergeben. Das Verhalten entspricht einem **TP**-Timer, der bei einem steigenden Flanke am Eingang den Ausgang für eine vorgegebene Zeit auf TRUE setzt.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Kommentar |
@@ -32,6 +34,7 @@ Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer
 | ET   | LTIME | Verstrichene Zeit (Elapsed Time) |
 
 ### **Adapter**
+
 - **Stecker (Plugs):**  
   - **Q**: Ausgangsadapter vom Typ `adapter::types::unidirectional::AX`.  
     Über diesen Adapter wird das boolesche Ausgangssignal `Q.D1` sowie das Ereignis `Q.E1` an die Anwendung weitergegeben.
@@ -41,6 +44,7 @@ Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer
     Über diesen Adapter empfängt der Baustein das Start-Ereignis (über `IN.E1`) und ggf. ein boolesches Signal (über `IN.D1`), das intern als Freigabe oder Zusatzbedingung genutzt wird (hier nicht direkt mit der Timerlogik verbunden, sondern zu einem internen Standard-Timer geführt).
 
 ## Funktionsweise
+
 Der Baustein besteht intern aus zwei Komponenten:
 
 1. **FB_TP_LTIME** – ein reiner Puls-Timer (IEC 61131‑3 TP) mit Zeitbasis LTIME.
@@ -55,12 +59,14 @@ Der Baustein besteht intern aus zwei Komponenten:
 - Der Ausgang `ET` gibt die aktuell verstrichene Zeit an und ist direkt mit dem Ausgang des internen Timers verbunden.
 
 ## Technische Besonderheiten
+
 - **Adapter‑Schnittstelle:** Der FB kapselt die Timerlogik in eine Adapter‑Schnittstelle, sodass er in modularen, adapterbasierten Architekturen einfach eingebunden werden kann.
 - **D‑Flipflop zur Signalhaltung:** Der Q‑Ausgang des Timers wird über ein Flipflop synchron zum `CNF`-Ereignis übernommen, um Glitches oder asynchrone Änderungen zu vermeiden.
 - **Doppelter Ereignispfad:** Der Start des Timers kann sowohl über den Adapter (`IN.E1`) als auch über den Standard‑Eventeingang `REQ` erfolgen – beide sind intern verbunden, was eine flexible Ansteuerung erlaubt.
 - **LTIME‑Unterstützung:** Die Pulszeit wird als `LTIME` (Long Time, 64‑Bit Nanosekunden) verarbeitet, was eine extrem hohe Zeitauflösung und große Zeitbereiche ermöglicht.
 
 ## Zustandsübersicht
+
 Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsverhalten für den Gesamtbaustein:
 
 | Zustand | Beschreibung |
@@ -70,6 +76,7 @@ Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsver
 | **DONE** | Der Puls ist abgeschlossen. `CNF` wurde ausgegeben, `ET` ist gleich `PT`, `Q.D1` wird mit dem nächsten `CNF` auf FALSE gesetzt. Bei einem neuen `REQ` oder `IN.E1` beginnt der Zyklus von vorn. |
 
 ## Anwendungsszenarien
+
 - **Impulsausgabe mit definierter Länge:** Steuerung von Aktoren (z. B. Ventile, Lampen), die für eine bestimmte Zeit eingeschaltet werden sollen.
 - **Adapter‑basierte Subsysteme:** Einbinden des Timers in eine modulare Automatisierungslösung, bei der Ein‑ und Ausgänge über Adapter (AX‑Protokoll) kommunizieren.
 - **Zeitmessung mit hoher Auflösung:** Nutzung von `LTIME` für präzise Zeitsteuerungen im Mikro‑ oder Nanosekundenbereich.
@@ -86,9 +93,11 @@ Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsver
 Der vorliegende Baustein kombiniert die Timerfunktion eines TP mit der Flexibilität eines Adapters.
 
 ## Fazit
+
 Der **AX_FB_TP_LTIME** ist ein robuster und präziser Puls‑Timer für die 4diac‑IDE, der durch die Adapter‑Schnittstelle und die Verwendung von `LTIME` besonders geeignet für hochauflösende, modulare Automatisierungslösungen ist. Die interne Flipflop‑Struktur sorgt für saubere Signalübergaben, und die doppelte Ereignisbeschaltung bietet Flexibilität in der Ansteuerung.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

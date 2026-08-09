@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsblock FB_RANDOM generiert eine zufällige REAL-Zahl zwischen 0 und 1.
 
 ![FB_RANDOM](FB_RANDOM.svg)
@@ -10,17 +11,21 @@ Der Funktionsblock FB_RANDOM generiert eine zufällige REAL-Zahl zwischen 0 und 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **INIT**: Initialisiert den Zufallsgenerator mit einem Seed.
 - **REQ**: Berechnet eine neue Zufallszahl.
 
 ### **Ereignis-Ausgänge**
+
 - **INITO**: Initialisierung abgeschlossen.
 - **CNF**: Berechnung abgeschlossen, neuer Wert verfügbar.
 
 ### **Daten-Eingänge**
+
 - **SEED** (UINT): Der Startwert (Seed) für den Zufallsgenerator. Ein Wert von 0 verwendet die aktuelle Systemzeit.
 
 ### **Daten-Ausgänge**
+
 - **VAL** (REAL): Die generierte Zufallszahl.
 
 ## Metadaten
@@ -35,4 +40,5 @@ Der Funktionsblock FB_RANDOM generiert eine zufällige REAL-Zahl zwischen 0 und 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

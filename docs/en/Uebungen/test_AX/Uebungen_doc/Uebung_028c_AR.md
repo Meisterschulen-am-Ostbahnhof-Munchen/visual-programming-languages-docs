@@ -1,14 +1,17 @@
 # Exercise_028c_AR: Analog Input Calibration with Adapters, INI and Hysteresis Controller at Output, and Display
+
 ![Uebung_028c_AR_network](./Uebung_028c_AR_network.svg)
 *Image of the exercise to follow*
 ---
 ## Introduction
+
 This exercise demonstrates the calibration of an analog input (AnalogInput_I7) using offset and scaling adapters (AR_CALIBRATE). The calibration values are persistently stored via INI function blocks (INI_AR2). Additionally, a hysteresis controller is applied to the calibrated analog signal, with the threshold and hysteresis also loaded via INI (SubApp THRESHOLD and HYSTERESIS). The hysteresis result is output to a digital output (Output_Q2), while the calibrated value is simultaneously displayed on a screen (Q_NumericValue_PHYSA). Digital inputs control the calibration (Calibrate On/Off and Calibrate Set) as well as an additional digital output (Output_Q1).
 
 ...)) ) ``) ``) ``) ``) ` control the calibration (`Calibrate On/Off (Calibrate On/Off, (Calibrate Set)) as well as an additional digital output
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `THRESHOLD` and `HYSTERESIS`
+
 - **Type**: `MyLib::sys::INI_IN_AND_STORE_AR`
 - **Parameters**:
 - `SECTION`: Section name in the INI configuration (`'HYSTERESIS'`)
@@ -56,16 +59,13 @@ The calibrated value `Y` is distributed via `AR_SPLIT_2` to two paths:
 
 - Path 1 to `Q_NumericValue_PHYSA` (display)
 - Path 2 to the hysteresis block `Hysteresis_AR_AX` (input `INPUT`)
-
 4. **Hysteresis**:
 
 The subapps `THRESHOLD` and `HYSTERESIS` read the parameters (threshold and hysteresis band) from the INI configuration (section `'HYSTERESIS'`). These values are passed to the hysteresis block. The hysteresis block compares the calibrated value with the threshold, taking the hysteresis band into account, and outputs a digital signal (`OUTPUT`).
 
 5. **Digital Outputs**:
-
 - `DigitalInput_I1` is split via `AX_SPLIT_2`: One branch controls `DigitalOutput_Q1`, the other branch triggers the analog input (`SREQ`) to initiate a sample.
 - The result of the hysteresis (`Hysteresis_AR_AX.OUTPUT`) is directly fed to `DigitalOutput_Q2`.
-
 6. **Special Feature**:
 
 The double conversion (`AD_TO_AUDI` → `AUDI_TO_AR`) is necessary because the analog (AD) value cannot be directly converted into an AR adapter. The AUDI adapter serves as an intermediate format.
@@ -90,6 +90,7 @@ In this exercise, an analog input is calibrated. The calibration values are pers
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 

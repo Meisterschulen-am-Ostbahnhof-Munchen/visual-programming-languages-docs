@@ -16,6 +16,7 @@ myst:
 ---
 
 ### 📋 [Das steht im Lehrplan (Rahmenlehrplan 2025)](./das_steht_im_lehrplan.md)
+
 > **Die visuelle Programmierung (IEC 61499 / 4diac) ist die zentrale Kernmethode des Rahmenlehrplans 2025** zur Erstellung und Diagnose automatisierter & autonomer Funktionen an Land- und Baumaschinen (LandBauMechMstrV vom 09.09.2024, in Kraft ab 01.08.2025).
 
 * 📋 **[Das steht im Lehrplan – Visuelle Sprachen als Lehrplan-Hauptthema](./das_steht_im_lehrplan.md)**
@@ -57,6 +58,7 @@ Haben Sie sich jemals gefragt, wie man Programme visuell erstellt? Hier finden S
 ## 📖 Kernkonzepte
 
 ### IEC 61499 & 4diac
+
 Die **IEC 61499** ist eine internationale Norm für die Echtzeit-Verarbeitung in verteilten Steuerungssystemen. Sie bietet eine flexible Plattform und eine gemeinsame Sprache für die Kommunikation zwischen Systemen. 
 
 **Eclipse 4diac** ist die führende Open-Source-Entwicklungsumgebung für diesen Standard. Sie ermöglicht es, komplexe industrielle Anwendungen effizient zu modellieren und zu verteilen.
@@ -100,4 +102,5 @@ Die **IEC 61499** ist eine internationale Norm für die Echtzeit-Verarbeitung in
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

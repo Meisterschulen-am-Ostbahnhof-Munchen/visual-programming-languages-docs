@@ -1,6 +1,8 @@
 # 🧩 Function Blocks in IEC 61499
+
 The IEC 61499 standard defines a model for distributed industrial control systems. The central component of this model is the function block (FB). Unlike IEC 61131-3, an FB in IEC 61499 encapsulates not only data and algorithms, but also the **control of its execution**.
 ## Structure of a Function Block
+
 A function block always consists of two parts:
 
 1. **Interface:** The "shell" of the block.
@@ -66,26 +68,20 @@ A transition triggers (fires) when:
 *Example:* `REQ [x > 10]` -> Only change the state if event `REQ` occurs AND `x` is greater than 10.
 
 ### 3. EC Actions
+
 Actions are executed as soon as a state becomes active. An action consists of two parts (both optional):
 
 1. **Algorithm:** A piece of program code (e.g., in structured text) that performs calculations.
-
 2. **Output Event:** An event (event output) that is sent externally after the algorithm has finished executing (e.g., `CNF`).
 
 ### Process in the ECC
 
 1. The function block is in a state (e.g., `START`) and waits.
-
 2. An event arrives at the input.
-
 3. The ECC checks all transitions originating from the current state.
-
 4. If a transition is valid (event matches + condition is true), the ECC changes to the new state.
-
 5. In the new state, all assigned **algorithms** are executed sequentially.
-
 6. Afterward, the assigned **output events** are triggered.
-
 7. The ECC waits in the new state for the next event.
 
 ---

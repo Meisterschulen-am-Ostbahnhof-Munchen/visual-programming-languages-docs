@@ -1,8 +1,10 @@
 # Exercise_007c: Flasher with E_CYCLE and E_T_FF
+
 ![Uebung_007c_network](./Uebung_007c_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the creation of a simple flasher using the IEC 61499 function blocks `E_CYCLE` and `E_T_FF`.
 The flasher is controlled via two digital inputs:
 
@@ -28,17 +30,11 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 ## Program Flow and Connections
 
 1. **Start**: Pressing a key on **I1** generates an event on `DigitalInput_CLK_I1.IND`. This event is connected to the **START** input of `E_CYCLE` and activates the cyclic timer.
-
 2. **Stop**: Pressing a key on **I2** generates an event on `DigitalInput_CLK_I2.IND`. This event is connected to the **STOP** input of `E_CYCLE` and deactivates the timer.
-
 3. **Cycle**: As long as `E_CYCLE` is active, it generates an event every 10 ms at its output `EO`.
-
 4. **Splitting**: This event is split across three outputs (`E_SPLIT_3`–`EO1`–`EO3`) by `E_SPLIT_3`.
-
 5. **Merging**: The three identical events are merged back into a single event via `E_MERGE_3`. (This minimizes the delay time and ensures signal integrity.)
-
 6. **Toggle**: The merged event triggers the `CLK` input of `E_T_FF`. The flip-flop's state toggles with each clock cycle. The current value is provided at the data output `Q`.
-
 7. **Output**: The event `EO` from `E_T_FF` is routed to the `REQ` input of `DigitalOutput_Q1`. Simultaneously, the data value `Q` (0 or 1) is passed to the `OUT` input of the output module. Output Q1 is set accordingly at each clock cycle.
 
 `` **Learning Objectives**:

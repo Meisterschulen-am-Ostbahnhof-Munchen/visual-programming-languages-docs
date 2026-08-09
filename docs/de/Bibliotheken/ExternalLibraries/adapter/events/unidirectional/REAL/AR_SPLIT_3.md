@@ -11,15 +11,19 @@ Der Funktionsbaustein **AR_SPLIT_3** dient als generischer Splitter für Adapter
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine – der Baustein besitzt ausschließlich Adapter-Schnittstellen. Ereignisse werden implizit über den Socket `IN` (vom Typ `AR`) übertragen.
 
 ### **Ereignis-Ausgänge**
+
 Keine – Ereignisse werden über die Plugs `OUT1`, `OUT2` und `OUT3` (Typ `AR`) weitergegeben.
 
 ### **Daten-Eingänge**
+
 Keine – alle Daten werden über den Adapter `IN` bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Keine – alle Daten werden über die drei Ausgangsadapter (`OUT1`, `OUT2`, `OUT3`) ausgegeben.
 
 ### **Adapter**

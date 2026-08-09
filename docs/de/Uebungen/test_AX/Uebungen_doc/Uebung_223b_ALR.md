@@ -13,6 +13,7 @@ Die Übung demonstriert die Adaptertechnologie der 4diac‑IDE, die Typkonvertie
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Hauptbaustein: `AUDI_FB_CTUD`
+
 - **Typ**: `adapter::iec61131::counters::AUDI_FB_CTUD`
 - **Beschreibung**: Standard IEC‑61131‑3 Auf‑/Abwärtszähler (Forward/Reverse Counter) mit einem Zählbereich vom Typ `UDINT`.
 - **Funktionsweise**:
@@ -25,11 +26,13 @@ Die Übung demonstriert die Adaptertechnologie der 4diac‑IDE, die Typkonvertie
   - Der **QD**‑Ausgang gibt ein Signal, wenn der Zähler auf Null steht und weiter rückwärts zählen soll (Unterlauf).
 
 ### Konvertierungsbaustein: `AUDI_UDINT_TO_UDI`
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Parameter**: `OUT = UDINT#5`
 - **Funktionsweise**: Wandelt eine Konstante vom Typ `UDINT` (hier: 5) in den vom Zähler erwarteten `UDI`‑Typ um und stellt den Wert am Ausgang `AUDI_OUT` bereit. Dieser Wert wird als Preset‑Wert an den **PV**‑Eingang des Zählers übergeben.
 
 ### Digitaleingänge
+
 - **Input_CU**, **Input_CD**, **Input_R**, **Input_LD**
   - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
   - **Parameter**:
@@ -38,6 +41,7 @@ Die Übung demonstriert die Adaptertechnologie der 4diac‑IDE, die Typkonvertie
   - **Funktionsweise**: Diese Adapter‑Bausteine koppeln die digitalen Eingänge der logiBUS‑Hardware an die Adapterschnittstellen. Sie liefern ein Ereignis und einen Datenwert (Adapterschnittstelle) an den Zähler.
 
 ### Digitalausgänge
+
 - **Output_QU**, **Output_QD**
   - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
   - **Parameter**:
@@ -46,10 +50,12 @@ Die Übung demonstriert die Adaptertechnologie der 4diac‑IDE, die Typkonvertie
   - **Funktionsweise**: Empfangen die Adaptersignale vom Zähler (QU, QD) und geben sie als digitale Ausgangssignale an die Hardware weiter.
 
 ### Konvertierungsbaustein: `AUDI_TO_ALR`
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
 - **Funktionsweise**: Wandelt den `AUDI`‑Zählerstand (Typ `AUDI`, entspricht einem vorzeichenlosen Integer) in einen `ALR`‑Wert um. Dieser wird anschließend an die Terminalausgabe übergeben.
 
 ### Terminalausgabe: `Q_NumericValue_PHYSA_LREAL`
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Parameter**: `stObj = OutputNumber_N3`
 - **Funktionsweise**: Nimmt einen physikalischen Wert vom Typ `LREAL` entgegen und gibt ihn als numerischen Wert auf einem Terminal (z. B. HMI) aus. Der Parameter `stObj` referenziert das entsprechende Ausgabeelement.
@@ -89,4 +95,5 @@ Die Übung 223b realisiert einen vollständigen Auf‑/Abwärtszähler mit feste
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

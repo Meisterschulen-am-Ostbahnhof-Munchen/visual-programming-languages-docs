@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_NumericValueAux** ist ein standardkonformer Funktionsbaustein zur numerischen Wertänderung in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.22) Spezifikation für numerische VT-Objekte.
 
 ![Q_NumericValueAux](Q_NumericValueAux.svg)
@@ -10,18 +11,22 @@ Der **Q_NumericValueAux** ist ein standardkonformer Funktionsbaustein zur numeri
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Wertänderungs-Anforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Objekt-ID (16-bit)
 - `u32NewValue` (UDINT): Neuer numerischer Wert (32-bit unsigned)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u32OldValue` (UDINT): Vorheriger numerischer Wert
 - `s16result` (INT): ISO-konformer Ergebniscode

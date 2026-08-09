@@ -42,6 +42,7 @@ Links mit Mirrors
 ## Update
 
 ### Update-URL in IDE konfigurieren
+
 So passen Sie die Update-Quelle in der IDE an:
 
 1. Menü: Window → Preferences
@@ -53,6 +54,7 @@ So passen Sie die Update-Quelle in der IDE an:
 4. Neue "Sites" können über "Add..." hinzugefügt werden
 
 ### Update Möglichkeiten
+
 Sie haben zwei Möglichkeiten, die aktuellste Version der 4diac IDE zu erhalten:
 
 1. **Über das Update-System in der IDE** (empfohlen für kleine Updates):
@@ -72,6 +74,7 @@ Sie haben zwei Möglichkeiten, die aktuellste Version der 4diac IDE zu erhalten:
 3. Starten Sie die IDE über die `4diac-ide.exe` im Hauptverzeichnis
 
 ### Durchführung von Updates
+
 In Eclipse 4diac können Sie Updates auf verschiedene Weise durchführen. Hier sind die Schritte, um ein Update durchzuführen:
 
 1.  Starten Sie Eclipse 4diac und wählen Sie "Help" im Menü.
@@ -100,6 +103,7 @@ Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmt
 Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.
 
 #### Eclipse 4diac Latest
+
 [https://download.eclipse.org/4diac/updates/latest/](https://download.eclipse.org/4diac/updates/latest/)
 
 ### Release Candidate
@@ -111,6 +115,7 @@ Benutzer von 4diac können diese URLs verwenden, um die neueste RC-Version von 4
 Es ist jedoch zu beachten, dass Release-Kandidat-Updates möglicherweise nicht so stabil sind wie die offiziellen Versionen und daher für Produktionsumgebungen nicht empfohlen werden.
 
 #### Eclipse 4diac Release Candidate
+
 [https://download.eclipse.org/4diac/updates/rc/](https://download.eclipse.org/4diac/updates/rc/)
 
 ### Milestone
@@ -120,6 +125,7 @@ Eclipse 4diac ist eine open-source Plattform für die Entwicklung von Industrie 
 Ein Eclipse 4diac Milestone Build ist somit eine Zwischenversion der Eclipse 4diac-Plattform, die verschiedene neue Funktionen, Verbesserungen und Fehlerkorrekturen gegenüber der vorherigen stabilen Version enthält, aber auch noch nicht vollständig getestet wurde und daher möglicherweise noch einige Fehler enthält. Diese Versionen werden normalerweise an Entwickler und interessierte Anwender verteilt, um Feedback zu sammeln und bei der weiteren Entwicklung der Plattform zu unterstützen.
 
 #### Eclipse 4diac Milestone
+
 [https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
 
 ### Nightly Build
@@ -127,9 +133,11 @@ Ein Eclipse 4diac Milestone Build ist somit eine Zwischenversion der Eclipse 4di
 Nightly Builds sind tägliche automatisch erstellte Versionen einer Software, die die neuesten Änderungen und Entwicklungen enthalten. Diese Builds werden häufig von Entwicklern genutzt, um die neuesten Funktionen zu testen und Fehler zu finden. Nightly Build Update URLs für 4diac sind Webadressen, die auf die neuesten täglich erstellten Versionen der 4diac-Software verweisen. Diese URLs werden verwendet, um Benutzern die Möglichkeit zu geben, die neuesten Entwicklungen von 4diac zu testen und Feedback zu geben. Nightly Builds sind jedoch nicht als stabile Versionen gedacht und sollten daher nicht in produktiven Umgebungen verwendet werden. Die Nightly Build Update-URL für 4diac ist nicht immer offen zugänglich.
 
 #### Eclipse 4diac Nightly Download Seite
+
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

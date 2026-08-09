@@ -1,7 +1,10 @@
 # Data Type Details: UDINT
+
 ## Description
+
 Unsigned double integer
 ## Normative Definition
+
 According to **DIN EN 61131-3**, this data type is specified as follows:
 | Property | Value |
 | :--- | :--- |
@@ -10,11 +13,13 @@ According to **DIN EN 61131-3**, this data type is specified as follows:
 | **Reference** | Table 10, No. 8 |
 
 ## Use in Programming
+
 In IEC 61131-3 and IEC 61499, this type is used for declaring variables and in function blocks.
 
 When used as a literal, a prefix can be used, e.g., `UDINT#...`.
 
 ## 🛠️ Related exercises
+
 * [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
 * [Uebung_009_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
 * [Uebung_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
@@ -43,4 +48,3 @@ When used as a literal, a prefix can be used, e.g., `UDINT#...`.
 * [Uebung_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
 * [Uebung_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
 * [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
-

@@ -1,8 +1,10 @@
 # AL_SPLIT_5
+
 ![AL_SPLIT_5](./AL_SPLIT_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AL_SPLIT_5** serves as a generic splitter for a unidirectional adapter of type `AL`. It splits an incoming signal (via the `IN` socket) into five separate outputs (`OUT1` to `OUT5`). The block is marked as generic, which allows the specific adapter type to be defined when using it.
 ## Interface Structure
 
@@ -40,6 +42,7 @@ The function block receives a signal of type `AL` via socket `IN` and forwards i
 The function block is designed as a generic function block (`GEN_AL_SPLIT`). The specific adapter type `AL` can be defined via an attribute during instantiation.
 
 ## Technical Features
+
 - **No Events or Data**: The function block has only adapter interfaces, no event or data ports.
 - **Generic Design**: The type of the `AL` adapter is configurable (generic class), allowing different implementations of the same adapter type to be used.
 - **Pure Signal Distribution**: This is a pure 1:5 distribution without any logic, delay, or transformation.
@@ -49,6 +52,7 @@ The function block is designed as a generic function block (`GEN_AL_SPLIT`). The
 The function block does not have an internal state machine, as it does not process any events. It behaves statically and permanently passes the input signal to all outputs.
 
 ## Application Scenarios
+
 - **Signal Distribution**: If several components require the same adapter signal of a `AL` type, e.g., For example, to send a sensor value to different control logics.
 - **Test and debugging environments**: An incoming adapter signal can be passed on to multiple monitor or logging blocks simultaneously.
 - **Redundancy**: The signal can be distributed to parallel processing paths.
@@ -64,6 +68,7 @@ The **AL_SPLIT_5** is a simple yet useful generic function block for duplicating
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

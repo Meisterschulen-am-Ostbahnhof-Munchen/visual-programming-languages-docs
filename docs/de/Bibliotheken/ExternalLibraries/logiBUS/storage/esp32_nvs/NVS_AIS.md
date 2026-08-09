@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `NVS_AIS` dient zum Speichern und Laden von Zeichenketten (STRING) im nichtflüchtigen Speicher (NVS – Non‑Volatile Storage) eines ESP32‑Mikrocontrollers. Die Daten werden über einen Schlüssel (KEY) adressiert und über AIS‑Adapter (Acyclic Information Service) ausgetauscht. Der Baustein kapselt die Initialisierung des NVS sowie die grundlegenden Lese‑ und Schreiboperationen und stellt eine standardisierte Schnittstelle für die Einbindung in industrielle Steuerungsanwendungen bereit.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ   | Beschreibung                                            | Mitgeführte Daten |
@@ -42,6 +44,7 @@ Der Funktionsblock `NVS_AIS` dient zum Speichern und Laden von Zeichenketten (ST
 | AIS_OUT  | `adapter::types::unidirectional::AIS` (Plug)   | **Stored value output (GETO)** – Sendet den gelesenen STRING‑Wert aus dem NVS über das AIS‑Protokoll. |
 
 ## Funktionsweise
+
 1. **Initialisierung**  
    Ein Ereignis am `INIT`-Eingang startet die interne Logik. Der Baustein ruft den eingebetteten `NVS`‑Funktionsblock auf, der den nichtflüchtigen Speicher vorbereitet. Die mitgelieferten Daten (`QI`, `KEY`, `DEFAULT_VALUE`) werden an den internen Baustein weitergeleitet.
 
@@ -55,28 +58,34 @@ Der Funktionsblock `NVS_AIS` dient zum Speichern und Laden von Zeichenketten (ST
    Sowohl nach dem Lesen als auch nach dem Schreiben gibt der Baustein den Status (`QO`, `STATUS`) sowie das `INITO`-Ereignis aus. Der Status kann für Fehlerdiagnosen genutzt werden.
 
 ## Technische Besonderheiten
+
 - **NVS für ESP32** – Der Baustein ist speziell für den nichtflüchtigen Speicher des ESP32 ausgelegt und verwendet die entsprechende Treiber‑API.
 - **Adapter‑Schnittstelle** – Die Kommunikation mit der Außenwelt erfolgt ausschließlich über AIS‑Adapter (unidirektional). Dies entkoppelt den Baustein von konkreten Bus‑ oder Applikationsprotokollen.
 - **Automatische Leseoperation nach INIT** – Nach der Initialisierung wird unverzüglich ein Lesevorgang gestartet, sodass der gespeicherte Wert sofort am Ausgang bereitsteht.
 - **Einheitlicher Status** – Alle relevanten Zustandsinformationen werden über die Ausgänge `QO` und `STATUS` zurückgemeldet.
 
 ## Zustandsübersicht
+
 Der Baustein `NVS_AIS` selbst besitzt keine explizite Zustandsmaschine. Sein Verhalten wird vollständig durch den eingebetteten `NVS`‑Funktionsblock gesteuert, der die typischen Zustände eines NVS‑Treibers durchläuft (z. B. Initialisierung, Bereit, Fehler). Die Ereignisse `INIT` und `INITO` bilden den Start‑Stopp‑Zyklus ab; die Adapter‑Ereignisse `E1` leiten die Schreib‑/Leseanforderungen ein.
 
 ## Anwendungsszenarien
+
 - **Konfigurationsspeicher** – Persistentes Ablegen von Geräteeinstellungen (z. B. Netzwerk‑Parameter, Betriebsmodi) als Zeichenketten.
 - **Datenaustausch mit anderen Bausteinen** – Verwendung der AIS‑Adapter zur einfachen Einbindung in eine IEC‑61499‑Anwendung, ohne direkte Bus‑ oder Speicherzugriffe programmieren zu müssen.
 - **Wiederherstellung nach Neustart** – Die Kombination aus INIT, automatischem Lesen und Default‑Werten stellt sicher, dass ein defnitiert initialisierter Zustand erreicht wird.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **`NVS` (direkt)**: Der direkte NVS‑Baustein bietet detailliertere Steuerungsmöglichkeiten (eigene Ereignisse für GET/SET), erfordert aber eine manuelle Verbindung der Schnittstellen. `NVS_AIS` vereinfacht die Anwendung durch die Einbettung der Lese‑/Schreiblogik und die standardisierten Adapter.
 - **Weitere Speicher‑Bausteine (z. B. für SD‑Karte)**: Diese arbeiten meist mit anderen Protokollen (SPI, I²C) und bieten unterschiedliche Speicherschemata. `NVS_AIS` ist auf die spezifischen Eigenschaften des ESP32‑NVS optimiert (Schlüssel‑Wert‑Paare, geringe Latenz).
 
 ## Fazit
+
 `NVS_AIS` ist ein praktischer Funktionsblock, der das Speichern und Laden von Zeichenketten im nichtflüchtigen Speicher des ESP32 kapselt und über eine saubere Adapter‑Schnittstelle bereitstellt. Durch die automatisierte Initialisierung und die Integration von Lese‑ und Schreibvorgängen eignet er sich besonders für Anwendungen, die eine einfache, zuverlässige Persistenz von Konfigurationsdaten benötigen. Die Adapter‑Anbindung ermöglicht eine lose Kopplung mit anderen Bausteinen und erhöht die Wiederverwendbarkeit in verschiedenen IEC‑61499‑Projekten.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 * [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

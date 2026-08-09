@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der RT_E_CYCLE Funktionsblock implementiert eine periodische Ereigniserzeugung (Zyklus) mit Echtzeiteigenschaften. Er ermöglicht das Definieren von Deadlines und Ausführungszeiten (WCET).
 
 ![RT_E_CYCLE](RT_E_CYCLE.svg)
@@ -10,21 +11,26 @@ Der RT_E_CYCLE Funktionsblock implementiert eine periodische Ereigniserzeugung (
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **START**: Startet den Zyklus.
 - **STOP**: Stoppt den Zyklus.
 
 ### **Ereignis-Ausgänge**
+
 - **EO**: Das zyklisch erzeugte Ereignis.
 
 ### **Daten-Eingänge**
+
 - **DT** (TIME): Zykluszeit (Delay Time).
 - **Deadline** (TIME): Deadline für die Ereignisverarbeitung.
 - **WCET** (TIME): Worst Case Execution Time.
 
 ### **Daten-Ausgänge**
+
 - **QO** (BOOL): Statusanzeige.
 
 ## Funktionsweise
+
 Nach dem `START`-Ereignis wird das `EO`-Ereignis periodisch mit der Zeit `DT` ausgelöst. Die Parameter `Deadline` und `WCET` dienen der Echtzeitplanung und -überwachung.
 
 ## Metadaten
@@ -39,4 +45,5 @@ Nach dem `START`-Ereignis wird das `EO`-Ereignis periodisch mit der Zeit `DT` au
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

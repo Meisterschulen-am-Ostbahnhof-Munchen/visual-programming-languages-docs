@@ -1,9 +1,11 @@
 # ILOCK_SWITCH_AX
+
 ![ILOCK_SWITCH_AX](./ILOCK_SWITCH_AX.svg)
 *(No image available)*
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ILOCK_SWITCH_AX** implements interlocking switch control for bidirectional axes. It prioritizes the last active input and ensures that both directions are never activated simultaneously. Communication occurs exclusively via adapter interfaces of type `adapter::types::unidirectional::AX`. This version is specifically designed for use in modular control systems with standardized adapters.
 
 ## Interface Structure
@@ -52,6 +54,7 @@ A change from the current state to the other is only possible when the other soc
 If the active input is lost without the other becoming active, an intermediate state (`UP_STOP` or `DOWN_STOP`) is reached. In this state, the outputs are set to `FALSE`, and then the state machine immediately transitions to the `STOP` state.
 
 ## Technical Features
+
 - **Adapter-based interface**: The function block uses only adapters of type `unidirectional::AX`, which enables clean encapsulation of event and data communication and facilitates reuse in different contexts.
 - **Prioritization of the last active input**: Unlike a simple state machine that only reacts to rising edges, this system considers the last valid signal sent.
 - **Secure Interlock**: The ECC structure prevents both outputs from becoming `TRUE` simultaneously.
@@ -68,11 +71,13 @@ UP_STOP` | FALSE | FALSE | Intermediate State After Exiting UP |
 DOWN_STOP` | FALSE | FALSE | Intermediate State After Exiting DOWN |
 
 ## Application Scenarios
+
 - **Control of lifting/lowering drives** (e.g., hoists, hydraulic cylinders) – prevents simultaneous lifting and lowering.
 - **Interlocking of switches** in conveyor systems – prioritizes the most recent request.
 - **Safety-oriented switching** in modular automation systems using an adapter-based data model (e.g., logiBUS).
 
 ## Comparison with similar function blocks
+
 - **ILOCK_SWITCH** (without adapter): Offers similar interlock logic but uses direct event and data ports. The adapter version `ILOCK_SWITCH_AX` allows for easier coupling to standardized interfaces and is better suited for hierarchical architectures.
 - **SR-Flipflop** (Set-Reset): Can also lock two states, but always prioritizes the set or reset input (depending on the implementation) and not the last active one.
 

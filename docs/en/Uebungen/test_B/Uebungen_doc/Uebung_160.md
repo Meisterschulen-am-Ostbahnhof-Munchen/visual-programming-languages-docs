@@ -1,8 +1,10 @@
 # Exercise_160: Motor Left/Right Rotation
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_160`. It demonstrates the simple logic function for controlling a reversible drive.
 ----
 ## Objective of the Exercise
+
 Implementation of a control system for left rotation, right rotation, and a summed signal (motor active).
 
 -----
@@ -25,6 +27,7 @@ Implementation of a control system for left rotation, right rotation, and a summ
 -----
 
 ## Functionality
+
 * If the user presses **I1**, output `Q5` is activated.
 * If the user presses **I2**, output `Q6` is activated.
 * * The OR gate activates output `Q56` whenever **either I1 OR I2** (or both) is pressed.

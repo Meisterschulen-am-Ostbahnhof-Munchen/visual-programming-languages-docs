@@ -7,21 +7,26 @@
 ![F_MUL](F_MUL.svg)
 
 ## Einführung
+
 Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Multiplikation verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit zwei Faktoren)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_NUM): Erster Faktor
 - `IN2` (ANY_NUM): Zweiter Faktor
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_NUM): Produkt der Multiplikation (IN1 × IN2)
 
 ## Funktionsprinzip

@@ -1,8 +1,10 @@
 # E_D_FF_ANY_HYS_TMIN
+
 ![E_D_FF_ANY_HYS_TMIN](./E_D_FF_ANY_HYS_TMIN.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hysteresis that additionally enforces a minimum inter-disposal time between successive output events. It serves to stably transfer an analog or discrete value while simultaneously suppressing fast noise and excessively frequent state transitions.
 ## Interface Structure
 
@@ -31,7 +33,6 @@ The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hy
 ### **Data Outputs**
 
 | Name | Type | Description |
-| Name | Type | Description |
 | |------|----------|-----------------------------------------------------|
 | `Q` | ANY_NUM | Output value – the last valid latched value |
 
@@ -44,7 +45,6 @@ None.
 The function block consists internally of two functional blocks:
 
 1. **`E_D_FF_ANY_HYS`** – A D flip-flop with hysteresis: On a `CLK` event, the current value of `D` is compared with the stored value. Only if the difference exceeds the value of `HYSTERESIS` is the output `Q` set to the new value and an internal event sent to the subsequent block.
-
 2. **`E_TMIN`** – A timer that ensures that at least the time `Tmin` has elapsed between two `EO` events.
 
 Procedure:
@@ -56,6 +56,7 @@ Procedure:
 - The output value (`Q`) is passed directly from the flip-flop to the data output.
 
 ## Technical Features
+
 - **Generic Data Type** `ANY_NUM`: The function block can work with various numeric data types (INT, REAL, LREAL, …).
 - **Hysteresis** suppresses small fluctuations (e.g., sensor noise) and prevents unwanted oscillation.
 - **Minimum Event Interval `Tmin`** limits the maximum output frequency and protects subsequent processing steps from overload.
@@ -71,6 +72,7 @@ Since the function block consists of two sub-blocks internally, no separate stat
 - Timer allows or blocks the output of `EO`
 
 ## Application Scenarios
+
 - **Signal conditioning** for slow measured variables (e.g., temperature, fill level) where small fluctuations should be ignored and a minimum update rate must be maintained.
 - **Debouncing** of digital or analog switching contacts that must be transmitted with a delay.
 - **Control engineering** with a limited switching frequency to protect actuators.

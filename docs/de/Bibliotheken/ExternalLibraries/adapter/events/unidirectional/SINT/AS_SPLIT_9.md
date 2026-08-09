@@ -11,15 +11,19 @@ Der Funktionsblock **AS_SPLIT_9** dient dazu, einen eingehenden **AS‑Adapter**
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - Keine
 
 ### **Ereignis-Ausgänge**
+
 - Keine
 
 ### **Daten-Eingänge**
+
 - Keine
 
 ### **Daten-Ausgänge**
+
 - Keine
 
 ### **Adapter**

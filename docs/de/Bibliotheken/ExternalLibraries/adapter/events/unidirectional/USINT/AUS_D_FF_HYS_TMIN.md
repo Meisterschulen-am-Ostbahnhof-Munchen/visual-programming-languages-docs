@@ -29,6 +29,7 @@ Der Funktionsblock **AUS_D_FF_HYS_TMIN** realisiert ein datengetriggertes Flip-F
 | `Tmin`       | TIME     | Minimale Zeitspanne zwischen zwei eingehenden Ereignissen (Inter‑arrival‑Time). |
 
 ### **Daten-Ausgänge**
+
 – Keine direkten Datenausgänge vorhanden. Der gelatchte Wert wird über den Adapter‑Plug `Q` ausgegeben.
 
 ### **Adapter**

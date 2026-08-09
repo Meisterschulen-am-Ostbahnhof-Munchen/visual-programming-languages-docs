@@ -4,6 +4,7 @@
 
 * * * * * * * * * *  
 ## Einleitung  
+
 Diese Übung zeigt, wie die arbeitsbreitenbezogene Maschinengeschwindigkeit (WBSD – Working Width Based Ground Speed) auf einem Universal Terminal (UT) ausgegeben werden kann. Die Ausgabe erfolgt gesteuert über einen Qualitätsindikator (QI), der über einen Taster ein- und ausgeschaltet wird. Der QI bestimmt, ob die aktuelle Geschwindigkeit an das UT gesendet wird oder nicht. Der Taster (Digital Input) steuert über einen T-Flipflop sowohl den QI als auch einen digitalen Ausgang (Q2) zur Statusanzeige.
 
 ## Verwendete Funktionsbausteine (FBs)  
@@ -49,9 +50,11 @@ Diese Übung zeigt, wie die arbeitsbreitenbezogene Maschinengeschwindigkeit (WBS
    - Die Übung **Uebung_094a** nutzt dasselbe Prinzip.  
 
 ## Zusammenfassung  
+
 Die Übung demonstriert die Verknüpfung von ISOBUS‑Elementen (Geschwindigkeitssensor, UT‑Ausgabe) mit Logikbausteinen (T‑Flipflop, Digitalein‑/ausgänge) in 4diac‑IDE. Durch den Taster wird der Qualitätsindikator des Geschwindigkeitssignals gesteuert, sodass die Anzeige am UT nur bei aktiviertem QI aktualisiert wird. Ein digitaler Ausgang gibt den Zustand optisch wieder. Dies ermöglicht eine bedarfsgesteuerte Übertragung von Prozessdaten an das Terminal.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

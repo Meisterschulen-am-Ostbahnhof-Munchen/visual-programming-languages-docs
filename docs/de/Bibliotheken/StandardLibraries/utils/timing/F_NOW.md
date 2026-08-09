@@ -5,15 +5,18 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Die **F_NOW**-Funktion ist eine IEC 61499-1-konforme Hilfsfunktion zur Abfrage des aktuellen lokalen Datums und der Uhrzeit, entwickelt unter EPL-2.0 Lizenz (Version 3.0).
 Die Funktion dient als Wrapper für die ST-Funktion NOW().
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Löst die Zeitabfrage aus
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Bestätigung der Zeitabfrage
 
 ### **Daten-Ausgänge**
@@ -90,4 +93,5 @@ Idealer Einsatz bei:
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

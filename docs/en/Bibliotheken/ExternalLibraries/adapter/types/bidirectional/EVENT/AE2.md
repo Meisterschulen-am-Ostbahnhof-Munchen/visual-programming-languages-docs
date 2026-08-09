@@ -2,8 +2,11 @@
 #AE2
 bidirectional adapter interface for 1 event
 # AE2
+
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | EI1 | Request (or Indication) | |

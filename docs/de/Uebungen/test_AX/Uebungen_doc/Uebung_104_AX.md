@@ -12,6 +12,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Baustein: SEQ
+
 - **Typ**: `logiBUS::utils::sequence::boolean::sequence_B_08_AX_AX`  
 - **Parameter**: Keine expliziten Parameter gesetzt.  
 - **Ereigniseingänge**:  
@@ -26,6 +27,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Während des normalen Betriebs durchläuft sie eine festgelegte Schrittfolge.
 
 ### Sub-Baustein: Feedback_S1
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -36,6 +38,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Bei `QI=TRUE` ist der Adapter aktiv.
 
 ### Sub-Baustein: Feedback_S2
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -45,6 +48,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Analog zu Feedback_S1 für Sensor `Input_I2`.
 
 ### Sub-Baustein: Feedback_S3
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -54,6 +58,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Analog zu Feedback_S1 für Sensor `Input_I3`.
 
 ### Sub-Baustein: Reset_Button
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -64,6 +69,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Erkennt einen einzelnen Tastendruck (Single‑Click) auf den physischen Eingang `Input_I4` und erzeugt ein Ereignis am Ausgang `IND`, das die Sequenz zurücksetzt.
 
 ### Sub-Baustein: Action_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -73,6 +79,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Digitaler Ausgangsadapter, der den logischen Adapterwert auf den physikalischen Ausgang `Output_Q1` ausgibt.
 
 ### Sub-Baustein: Action_Q2
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -82,6 +89,7 @@ Der verwendete Sequenzbaustein `sequence_B_08_AX_AX` bildet das Kernstück und w
   Analog zu Action_Q1 für Ausgang `Output_Q2`.
 
 ### Sub-Baustein: Action_Q3
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
 - **Parameter**:  
   - `QI` = `TRUE`  
@@ -105,20 +113,24 @@ Dieses Verhalten stellt das **Power‑Fail Recovery** dar: Nach einem Stromausfa
 Im normalen Ablauf durchläuft die Sequenz eine vordefinierte Schrittfolge (nicht im XML dargestellt, da die Schritte im FB `sequence_B_08_AX_AX` konfiguriert werden).
 
 ### Lernziele
+
 - Verständnis von zustandsbasierten Steuerungen mit Recovery‑Mechanismus  
 - Umgang mit IEC 61499‑Adaptern in der 4diac‑IDE  
 - Einsatz von logiBUS I/O‑Bausteinen (Eingangs‑/Ausgangsadapter)  
 - Analyse und Fehlerbehandlung bei Spannungsausfällen  
 
 ### Schwierigkeitsgrad
+
 Mittel – Grundkenntnisse in 4diac und Schrittketten sind erforderlich.
 
 ### Vorkenntnisse
+
 - Grundlagen der IEC 61499  
 - Bedienung der 4diac‑IDE  
 - Vertrautheit mit logiBUS‑I/O (Sensoren, Aktoren)  
 
 ### Starten der Übung
+
 1. Öffnen Sie die Übung `Uebung_104_AX` in der 4diac‑IDE.  
 2. Verbinden Sie die physikalischen Ein‑/Ausgänge:  
    - `Input_I1`, `I2`, `I3` – z. B. Endlagenschalter oder Sensoren  
@@ -136,4 +148,5 @@ Das Recovery‑Verhalten sorgt dafür, dass die Steuerung nach einem Spannungsau
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -11,6 +11,7 @@ Diese Übung demonstriert das fehlerhafte Durchschleifen eines numerischen Einga
 ## Verwendete Funktionsbausteine (FBs)
 
 ### InputNumber_I1
+
 - **Typ**: `isobus::UT::io::NumericValue::NumericValue_IDA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -19,12 +20,14 @@ Diese Übung demonstriert das fehlerhafte Durchschleifen eines numerischen Einga
   Liest den aktuellen Wert des numerischen Eingangs **I1** aus dem Pool `DefaultPool` und stellt ihn am Adapterausgang `IN` bereit.
 
 ### F_DWORD_TO_UDINT
+
 - **Typ**: `adapter::conversion::unidirectional::AD_TO_AR`
 - **Parameter**: keine
 - **Funktionsweise**:  
   Konvertiert den am Adaptereingang `AD_IN` anliegenden DWORD-Wert in einen UDINT-Wert und gibt diesen am Adapterausgang `AR_OUT` aus.
 
 ### Q_NumericValue_PHYS
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameter**:
   - `stObj` = `OutputNumber_N3`

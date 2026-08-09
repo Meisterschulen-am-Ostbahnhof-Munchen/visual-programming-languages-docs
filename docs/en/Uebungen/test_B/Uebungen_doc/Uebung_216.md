@@ -1,8 +1,10 @@
 # Exercise_216: Standard IEC 61131-3 FB_CTD_DINT (Down Counter, DINT) with Terminal Output
+
 ![Uebung_216_network](./Uebung_216_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the implementation of a **down counter (CTD)** according to IEC 61131-3 with the integer data type `DINT` (double integer) and a **terminal output** of the current counter reading.
 The counter is controlled by two digital inputs:
 
@@ -38,21 +40,16 @@ A digital output **Q1** is activated as soon as the counter reading reaches 0. S
 ## Program Flow and Connections
 
 1. **Event Chaining**
-
 - Input I1 or I2 triggers the `REQ` input of the counter via the `IND` event output.
 - After successful processing (CNF), the output block `Output_Q1` and the conversion `F_DINT_TO_UDINT` are triggered simultaneously.
 - After the conversion, the value is passed to the terminal block `Q_NumericValue`.
-
 2. **Data Concatenation**
-
 - `Input_CD.IN` → `FB_CTD_DINT.CD` (Decrement)
 - `Input_LD.IN` → `FB_CTD_DINT.LD` (Load)
 - `FB_CTD_DINT.Q` → `Output_Q1.OUT` (Set Output at Counter Value 0)
 - `FB_CTD_DINT.CV` → `F_DINT_TO_UDINT.IN` (Current Counter Value)
 - `F_DINT_TO_UDINT.OUT` → `Q_NumericValue.u32NewValue` (Terminal Output)
-
 3. **Functionality**
-
 - On each rising edge at I1, the counter value is decremented by 1.
 - On a rising edge at I2, the counter is loaded with the value 10 (PV).
 - As soon as the counter reading reaches 0, output Q1 is set.
@@ -76,6 +73,7 @@ This exercise is suitable for beginners in the 4diac IDE who already have basic 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

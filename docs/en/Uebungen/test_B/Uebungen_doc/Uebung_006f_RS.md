@@ -1,8 +1,10 @@
 # Exercise_006f_RS: Exercise for FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop)
+
 ![Uebung_006f_RS_network](./Uebung_006f_RS_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of a **reset-dominant toggle flip-flop** (FB_RS_T_FF) in the 4diac IDE. The goal is to understand the behavior of a prioritized reset input in combination with a clock-controlled toggle mechanism. The inputs are connected via logiBUS hardware components, and the output is provided via a digital output.
 ## Function Blocks (FBs) Used
 
@@ -19,6 +21,7 @@ DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-fl
 ### Details of the Function Blocks
 
 #### `DigitalInput_S`, `DigitalInput_R`, `DigitalInput_CLK`
+
 - **Type**: logiBUS::io::DI::logiBUS_IX (Hardware Input Function Block)
 - **Parameters**:
 - `QI` = `TRUE` (Input enabled)
@@ -27,6 +30,7 @@ DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-fl
 - **Data Output**: `IN` (current digital value of the input)
 
 #### `RS_T_FF`
+
 - **Type**: logiBUS::bistableElements::FB_RS_T_FF
 - **Parameters**: No user-defined parameters
 - **Event Input**: `REQ` (starts processing)
@@ -39,6 +43,7 @@ DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-fl
 - **Data Output**: `Q1` (Output state of the flip-flop)
 
 #### `DigitalOutput_Q1`
+
 - **Type**: logiBUS::io::DQ::logiBUS_QX (Hardware output module)
 - **Parameters**:
 - `QI` = `TRUE` (Output enabled)
@@ -51,16 +56,12 @@ DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-fl
 The program flow is controlled by the physical inputs I1, I2, and I3. Any change to one of these inputs triggers the following steps:
 
 1. **Event Triggering**: The affected input block (`DigitalInput_S`, `DigitalInput_R`, or `DigitalInput_CLK`) sends a `IND` event.
-
 2. **Event Forwarding**: All three `IND` events are connected to the `REQ` input of the flip-flop `RS_T_FF`. Thus, the flip-flop is recalculated **every** change in any input.
-
 3. **Data Processing in the Flip-Flop**:
-
 - The set input `S` is fed by `DigitalInput_S.IN` (I1).
 - The reset input `R1` is fed by `DigitalInput_R.IN` (I2).
 - The clock input `CLK` is fed by `DigitalInput_CLK.IN` (I3).
 - The flip-flop behaves in a reset-dominant manner: When `R1 = TRUE`, the output `Q1` is reset, regardless of `S` and the clock edge. When `R1 = FALSE` and a positive clock edge on `CLK`, the output is toggled when `S = TRUE`.
-
 4. **Output**: After processing, `RS_T_FF` sends a `CNF` event to the output chip `DigitalOutput_Q1`. The new state `Q1` is then transferred to the physical output Q1.
 
 Q1` **Important Notes**:
@@ -75,6 +76,7 @@ Exercise `Uebung_006f_RS` demonstrates the integration of a reset-dominant toggl
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_SelectActiveWorkingSet** ist ein standardkonformer Funktionsbaustein zur Steuerung aktiver Arbeitsbereiche in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.64) Spezifikation für VT-Systeme ab Version 6.
 
 ![Q_SelectActiveWorkingSet](Q_SelectActiveWorkingSet.svg)
@@ -12,17 +13,21 @@ Der **Q_SelectActiveWorkingSet** ist ein standardkonformer Funktionsbaustein zur
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Arbeitsbereichswechsel-Anforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Wechselbestätigung
 
 ### **Daten-Eingänge**
+
 - `pau8Name` (USINT[8]): ISO-NAME des neuen aktiven Arbeitsbereichs
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `pau8OldName` (USINT[8]): ISO-NAME des vorherigen Arbeitsbereichs
 - `s16result` (INT): ISO-konformer Ergebniscode

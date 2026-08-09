@@ -1,4 +1,5 @@
 # Exercise_220b_AR: Standard IEC 61131-3 AI_FB_CTUD (Adapter Version, Up/Down Counter, INT) with Terminal Output (PHYS)
+
 ![Uebung_220b_AR_network](./Uebung_220b_AR_network.svg)
 *Image not available*
 
@@ -6,7 +7,6 @@
 This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version. The counter value (integer) is initialized via a digital preset value (PV) and can be controlled via four digital inputs. The current counter value is output to a terminal via an analog output (physical representation). The exercise demonstrates the use of adapter-based function blocks as well as the conversion and output of counter data.
 
 * * * * * * * * *
-
 
 This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version.
 
@@ -32,7 +32,6 @@ This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in a
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameter**: `stObj = OutputNumber_N3` (predefined terminal output object)
 - **Function**: Physically outputs the analog numeric value to the terminal.
-
 
 Event control is handled via a single event path:
 
@@ -72,13 +71,16 @@ The function block **AI_FB_CTUD** functions as a counter: The counter is increme
 
 Exercise **Exercise_220b_AR** demonstrates the use of a standardized IEC 61131-3 counter (CTUD) in an adapter architecture. By connecting digital inputs (pushbuttons/sensors), digital outputs, and a terminal output, a complete counting process with visualization is implemented. The learner understands the functionality of up/down counters, adapter communication in 4diac, and the conversion of data formats (INT via AI_TO_AR). Additionally, the possibility of event reduction using flip-flops is explored.
 
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 
 ## Introduction
+
 ## Function Blocks Used (FBs)
+
 ## Program Flow and Connections
+
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

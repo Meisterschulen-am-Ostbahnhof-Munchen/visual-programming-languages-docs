@@ -1,8 +1,10 @@
 # FIELDBUS_ULINT_TO_SIGNAL
+
 ![FIELDBUS_ULINT_TO_SIGNAL](./FIELDBUS_ULINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **FIELDBUS_ULINT_TO_SIGNAL** serves as a filter block for fieldbus signals of type `ULINT`. It checks whether an incoming value lies within the valid signal range and, depending on the result, either outputs it unchanged or sets the output to a defined invalid value. The VALID output signal indicates the signal validity status.
 This block is particularly suitable for use in safety-critical or quality-monitoring applications where invalid or faulty fieldbus values must be reliably detected and handled.
 
@@ -48,18 +50,16 @@ After an event at the **REQ** input, the following algorithm is executed:
 VALID_SIGNAL_LW` is an imported constant from the `FIELDBUS_SIGNAL` library and defines the upper limit of the valid value range.
 
 2. **Case – Valid Input** (Condition met):
-
 - `OUT` := `IN`
 - `VALID` := `TRUE`
-
 3. **Case – Invalid Input** (Condition not met):
-
 - `OUT` := `0`
 - `VALID` := `FALSE`
 
 The **CNF** event output is then triggered.
 
 ## Technical Features
+
 - The function block operates deterministically and requires only a single processing stage.
 - The threshold values `NOT_AVAILABLE_LWM` and `VALID_SIGNAL_LW` are defined as external constants and stored centrally in the library `FIELDBUS_SIGNAL`. They can be adjusted without modifying the function block.
 - The output value for an invalid signal is set to 0, which represents a defined "invalidity value" in many fieldbus systems.
@@ -76,6 +76,7 @@ The function block is implemented as a **SimpleFB** and has only one state:
 There are no further states or branches – the functionality is purely process-oriented.
 
 ## Application Scenarios
+
 - **Fieldbus Signal Conditioning:** A sensor delivers a ULINT value that is only physically meaningful within a specific range (e.g., rotational speed, pressure). The function block filters out invalid measurements.
 - **Safety Chain:** In a safety-related controller, faulty or deviating fieldbus values are detected and replaced by a defined substitute value (0). Simultaneously, a validity signal is provided for the downstream logic.
 - **Quality Monitoring:** The VALID output can be used to monitor data integrity, e.g., to trigger alarms or switch to alternative signal sources.
@@ -91,6 +92,7 @@ The **FIELDBUS_ULINT_TO_SIGNAL** is a simple yet reliable function block for sig
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_SetAudioVolume** ist ein standardkonformer Funktionsbaustein zur Lautstärkeregelung in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.12) Spezifikation für VT-Audiosteuerung.
 
 ![Q_SetAudioVolume](Q_SetAudioVolume.svg)
@@ -12,17 +13,21 @@ Der **Q_SetAudioVolume** ist ein standardkonformer Funktionsbaustein zur Lautst�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Lautstärkeänderungs-Anforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung
 
 ### **Daten-Eingänge**
+
 - `u8Volume` (USINT): Lautstärkewert (0-100%)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldVolume` (USINT): Vorherige Lautstärkeeinstellung
 - `s16result` (INT): ISO-konformer Ergebniscode

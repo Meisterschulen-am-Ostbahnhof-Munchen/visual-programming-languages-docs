@@ -11,34 +11,41 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) gemäß IEC 61131-3 in e
 ## Verwendete Funktionsbausteine (FBs)
 
 ### FB: AI_FB_CTU
+
 - **Typ**: `adapter::iec61131::counters::AI_FB_CTU`
 - **Funktion**: Vorwärtszähler mit Adapterschnittstelle. Zählt bei jedem positiven Ereignis am Eingang CU den internen Zähler um 1 hoch. Der Zähler wird über den Eingang R zurückgesetzt. Der aktuelle Zählerwert (CV) und der Ausgang Q (wenn CV ≥ PV) werden über Adapterausgänge bereitgestellt.
 
 ### FB: AI_INT_TO_I
+
 - **Typ**: `adapter::conversion::unidirectional::AI_INT_TO_I`
 - **Parameter**: `OUT = INT#5` (fester Preset-Wert)
 - **Funktion**: Wandelt einen konstanten Integer-Wert (5) in das erforderliche Adapterformat um und stellt ihn als Preset-Wert (PV) für den Zähler bereit.
 
 ### FB: Input_CU
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `QI = TRUE`, `Input = Input_I1`
 - **Funktion**: Liest den digitalen Eingang `Input_I1` und stellt ihn über einen Adapterausgang als Zählimpuls (CU) bereit.
 
 ### FB: Input_R
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `QI = TRUE`, `Input = Input_I2`
 - **Funktion**: Liest den digitalen Eingang `Input_I2` und stellt ihn über einen Adapterausgang als Rücksetzsignal (R) bereit.
 
 ### FB: Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
 - **Funktion**: Steuert den digitalen Ausgang `Output_Q1`. Der Ausgang wird aktiv, sobald der Zähler den Preset-Wert erreicht oder überschreitet.
 
 ### FB: AI_TO_AUDI
+
 - **Typ**: `adapter::conversion::unidirectional::AI_TO_AUDI`
 - **Funktion**: Wandelt den analogen Zählerwert (CV) in das AUDI-Format um, das für die Terminalausgabe benötigt wird. **Hinweis**: Der Baustein kann keine negativen Zahlen darstellen.
 
 ### FB: Q_NumericValue_AUDI
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**: `u16ObjId = OutputNumber_N1`
 - **Funktion**: Gibt den übergebenen numerischen Wert auf dem Terminal aus. Die Objekt-ID `OutputNumber_N1` definiert die Position der Anzeige.
@@ -75,4 +82,5 @@ Die Übung demonstriert die Realisierung eines IEC 61131-3 Vorwärtszählers mit
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

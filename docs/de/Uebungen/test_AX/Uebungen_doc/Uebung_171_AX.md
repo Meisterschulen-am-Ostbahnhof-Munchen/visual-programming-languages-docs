@@ -5,6 +5,7 @@ Hier ist die Dokumentation für die Übung `Uebung_171_AX` basierend auf den ber
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung behandelt die Verwendung von Adaptern im Kontext von Set/Reset-Logik (SR-Flip-Flop) innerhalb eines Sub-Applikations-Netzwerks. Der Fokus liegt auf der Konvertierung von diskreten Ereignissen (Tasterklicks) in Adapter-Interaktionen und der Ansteuerung eines SR-Bausteins sowie eines digitalen Ausgangs über Adapter-Schnittstellen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-K
 ### Sub-Bausteine:
 
 ### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Beschreibung**: Diese Bausteine dienen als Schnittstelle zu den physischen Tastern.
 - **Parameter**:
@@ -24,6 +26,7 @@ In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-K
     - `IND`: Feuert ein Ereignis, wenn der Taster gedrückt wird.
 
 ### ASR_2EVENTS_TO_SR
+
 - **Typ**: `adapter::conversion::unidirectional::ASR_2EVENTS_TO_SR`
 - **Beschreibung**: Ein Konverter-Baustein, der zwei separate Ereignisse (Setzen und Rücksetzen) entgegennimmt und diese in eine Adapter-Kommunikation für ein SR-Verhalten übersetzt.
 - **Ereigniseingang**:
@@ -33,6 +36,7 @@ In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-K
     - `ASR_OUT`: Die Adapter-Schnittstelle zur Weitergabe der Befehle.
 
 ### ASR_AX_SR_1
+
 - **Typ**: `adapter::events::unidirectional::ASR_AX_SR`
 - **Beschreibung**: Dieser Baustein implementiert die SR-Logik (Set/Reset) basierend auf Adapter-Eingaben.
 - **Adaptereingang**:
@@ -41,6 +45,7 @@ In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-K
     - `Q`: Gibt den aktuellen Zustand weiter.
 
 ### DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Beschreibung**: Dieser Baustein steuert den physischen Ausgang an, nimmt jedoch Adapter-Verbindungen entgegen.
 - **Parameter**:
@@ -74,9 +79,11 @@ Der Ablauf der Übung gestaltet sich wie folgt:
 *   Realisierung einer Speicherfunktion (SR) mittels Adapter-Bausteinen.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_171_AX` zeigt eine moderne Implementierung einer klassischen Speicherfunktion. Anstatt Signale direkt über Boolesche Verbindungen zu verknüpfen, werden hier Adapter verwendet, um die Kommunikation zwischen Eingabe-Konvertierung, Logik und Ausgabe zu kapseln. Dies reduziert die sichtbare Komplexität der Verbindungen und demonstriert die Flexibilität des Adapter-Konzepts für Standard-Automatisierungsaufgaben wie das Schalten eines Ausgangs über zwei Taster.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

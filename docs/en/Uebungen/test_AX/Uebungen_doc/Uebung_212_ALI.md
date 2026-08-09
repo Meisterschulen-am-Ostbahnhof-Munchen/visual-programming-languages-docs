@@ -1,10 +1,13 @@
 # Exercise_212_ALI: Standard IEC 61131-3 ALI_FB_CTU (Adapter Version, Up Counter, LINT) with Terminal Output
+
 ![Uebung_212_ALI_network](./Uebung_212_ALI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of an up counter (CTU) according to IEC 61131-3 in the adapter version (ALI_FB_CTU). The counter counts input pulses (CU) upwards, can be reset via a reset input (R), and outputs the current counter value via a terminal output. Additionally, an output signal (Q) is set as soon as the counter value reaches or exceeds the predefined setpoint (PV).
 ## Function Blocks (FBs) Used
+
 - **ALI_FB_CTU** (`adapter::iec61131::counters::ALI_FB_CTU`)
 
 Up counter (Count Up) as an adapter block.
@@ -54,7 +57,6 @@ The flow is controlled by event and adapter connections:
 At startup (event `INITO` from `Input_R`), the target value (PV) is set via the function block `ALI_LINT_TO_LI`. By default, this returns the value `LINT#5` as the target value.
 
 2. **Counting Operation**
-
 - Each rising edge at input `Input_CU` (connected to the adapter input `CU` of the counter) increments the internal counter reading by 1.
 - A signal at `Input_R` (connected to the adapter input `R`) resets the counter to 0.
 - The output `Q` of the counter becomes `TRUE` as soon as the counter reading is greater than or equal to the setpoint (PV). This signal is then passed on to the digital output `Output_Q1`.
@@ -72,6 +74,7 @@ This exercise demonstrates the practical application of an IEC 61131-3 compliant
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

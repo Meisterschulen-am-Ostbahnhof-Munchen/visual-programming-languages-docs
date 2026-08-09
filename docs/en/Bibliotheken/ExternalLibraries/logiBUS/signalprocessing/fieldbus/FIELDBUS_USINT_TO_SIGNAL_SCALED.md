@@ -1,8 +1,10 @@
 # FIELDBUS_USINT_TO_SIGNAL_SCALED
+
 ![FIELDBUS_USINT_TO_SIGNAL_SCALED](./FIELDBUS_USINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **FIELDBUS_USINT_TO_SIGNAL_SCALED** converts an incoming USINT signal into a scaled REAL value, taking a validity check into account. It is typically used in fieldbus signal processing to apply a scaling factor and an offset to raw fieldbus values (e.g., sensor data) and simultaneously evaluate the validity of the input signal. The block is structured according to the IEC 61499-1 standard.
 ## Interface Structure
 
@@ -56,6 +58,7 @@ If `IN` exceeds the threshold (i.e., the signal is invalid), `OUT` is set to `0.
 This behavior mirrors the input 1:1 to the output, provided the signal is valid – with additional scaling and offset.
 
 ## Technical Details
+
 - The constants `NOT_AVAILABLE_B` and `VALID_SIGNAL_B` come from the external package `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`. They define the boundaries between valid and invalid USINT values. `BYTE_TO_USINT(NOT_AVAILABLE_B)` is the initial state of the input and indicates an "unavailable" signal.
 - The `INIT` algorithm contains no ST code – initialization is limited to providing the parameters via event binding. The function block expects a `INIT` call before the first `REQ` to set the scaling and offset.
 - Scaling is always performed as REAL arithmetic; therefore, the offset is converted from DINT to REAL.
@@ -72,10 +75,12 @@ The function block has two elementary states as simple FBs:
 There are no further wait states – each incoming event immediately triggers the processing of the corresponding algorithm and the output of the associated result.
 
 ## Application Scenarios
+
 - **Fieldbus Sensor Evaluation**: A sensor delivers a raw USINT value (e.g., 0…200). The physical quantity (e.g., pressure in bar) is calculated from this using `SCALE` and `OFFSET`. The limit value `VALID_SIGNAL_B` separates valid measured values from error or initialization values.
 - **Process Variable Update**: In PLC or control applications, the function block is triggered cyclically with `REQ` to process the latest fieldbus data and incorporate it into the control context.
 
 ## Comparison with Similar Function Blocks
+
 - **`FIELDBUS_USINT_TO_SIGNAL`**: A simpler function block without scaling or offset; it outputs the USINT value directly as REAL or as another data type.
 - **`FIELDBUS_WORD_TO_SIGNAL_SCALED`**: Analog function block for WORD inputs – offers higher resolution but requires a different data type.
 
@@ -88,6 +93,7 @@ The function block `FIELDBUS_USINT_TO_SIGNAL_SCALED` is a compact yet powerful c
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

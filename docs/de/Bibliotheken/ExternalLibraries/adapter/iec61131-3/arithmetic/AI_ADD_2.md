@@ -13,24 +13,30 @@ Der Funktionsbaustein (FB) **AI_ADD_2** ist ein generischer Baustein zur Durchf�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Es sind keine direkten Ereignis-Eingänge vorhanden. Die Ereignissteuerung erfolgt gekapselt über die verwendeten Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Es sind keine direkten Ereignis-Ausgänge vorhanden. Die Ereignissteuerung erfolgt gekapselt über die verwendeten Adapter.*
 
 ### **Daten-Eingänge**
+
 *Es sind keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Es sind keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AI`): Der erste Summand der Additionsoperation. Über diesen Adapter werden sowohl der Wert als auch das dazugehörige Aktualisierungsereignis empfangen.
 * **IN2** (Typ: `adapter::types::unidirectional::AI`): Der zweite Summand der Additionsoperation.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AI`): Das Ergebnis der Addition ($OUT = IN1 + IN2$). Über diesen Adapter werden das Ergebnis und das entsprechende Aktualisierungsereignis an nachfolgende Bausteine weitergegeben.
 
 ## Funktionsweise

@@ -1,8 +1,10 @@
 # Read-Only Settings (`settingsReadOnly.ini`)
+
 In logiBUS® systems, configuration values and parameters are managed in INI files on the ECU's file system. In addition to the freely writable standard configuration file (`settings.ini`), the system supports a read-only settings file: **`settingsReadOnly.ini`**.
 This feature is used to permanently freeze factory settings, manufacturer-defined system parameters, fixed communication addresses, or critical hardware and security options. This prevents important parameters from being accidentally changed by operators or by the control system itself.
 ---
 ## Introduction
+
 ## Concept of the Two Configuration Files
 
 The ECU distinguishes between two levels of configuration storage:
@@ -12,15 +14,11 @@ The ECU distinguishes between two levels of configuration storage:
 | **`settingsReadOnly.ini`** | Factory Settings & System Defaults | ❌ No (Write-protected) | ISOBUS source addresses (Node SAs), hardware pin assignments, fixed boot times |
 | **`settings.ini`** | User & Runtime Settings | ✅ Yes (Read & Write) | User preferences, dynamic operating parameters, selectable limit scaling |
 
-
 1. **Factory Settings Priority**: During boot, the control unit first reads the file `settingsReadOnly.ini`. All sections (`[Section]`) and keys (`KEY`) defined within it are loaded in read-only mode.
-
 2. **Automatic Purge:** If a key is located in both `settingsReadOnly.ini` and the writable `settings.ini`, the duplicate key is automatically **removed** from `settings.ini` at system startup. This ensures that no conflicting values exist and the user file remains uncluttered.
-
 3. **Additional Loading:** All parameters that are *not* located in `settingsReadOnly.ini` are loaded from `settings.ini` and behave normally as writable files.
 
 ---
-
 
 Parameters are read transparently. If a key is stored in `settingsReadOnly.ini`, its immutable value is always returned.
 
@@ -33,24 +31,27 @@ If an attempt is made to change a read-only key (whether via control functions o
 ---
 
 ### Schreibzugriffe (`SET`)
+
 ### Lesezugriffe (`GET`)
+
 ## Verhalten im Betrieb (Lesen & Schreiben)
+
 ### Functionality & Priorität beim Start
+
 ## Behavior in 4diac FORTE (IEC 61499 INI Blocks)
 
 For users of 4diac FORTE control programs, the INI function blocks (`INI`, `INI_AX`, `INI_AUI`, `INI_AR`, etc.) behave as follows with read-only parameters:
 
 * **Read event (`GET`)**: Signals the confirmation event `GETO` as usual. The protected value is present at output `VALUEO`, and `STATUS` reports `"OK"`.
 * **Write Event (`SET`)**:
-  * The **normal success event (`SETO`)** is not triggered, but rather the error event **`SETOE`** (*Set Output Error*).
-  * The data output **`STATUS`** provides the understandable message: **`"Key is read-only"`**.
-  * The output **`QO`** indicates the error state.
+* The **normal success event (`SETO`)** is not triggered, but rather the error event **`SETOE`** (*Set Output Error*).
+* The data output **`STATUS`** provides the understandable message: **`"Key is read-only"`**.
+* The output **`QO`** indicates the error state.
 
 !!! note "Note for Application Developers"
     By evaluating the output event `SETOE` or the status string `"Key is read-only"`, the 4diac application can react specifically to read-only parameters (e.g., displaying a note on the visualization).
 
 ---
-
 
 The file `settingsReadOnly.ini` is located on the ECU's memory under:
 `/data/settingsReadOnly.ini`
@@ -58,22 +59,22 @@ The file `settingsReadOnly.ini` is located on the ECU's memory under:
 Importing or updating the factory settings is easily done via the ECU's integrated **Web Interface** (File Server):
 
 1. Connect to the ECU's web interface using a web browser.
-
 2. Navigate to the file management (`/data`).
-
 3. Upload your prepared `settingsReadOnly.ini` file.
-
 4. After restarting the ECU, the read-only parameters will take effect.
 
 If `settingsReadOnly.ini` is not present on the ECU, the system will start normally without any limitations. All keys in `settings.ini` remain fully writable, as before.
 
 ---
 
-
 ## Praktisches Beispiel
+
 ### Verhalten bei fehlender Datei
+
 ### Übertragung auf das Steuergerät
+
 ## Einspielen und Verwalten der Werkseinstellungen
+
 ### Example file `settingsReadOnly.ini` (factory settings):
 
 [CF-A]
@@ -81,7 +82,6 @@ UserLanguage = DE
 
 [User]
 OperatorID = 42
-
 
 **Result in operation:**
 
@@ -92,6 +92,7 @@ OperatorID = 42
 ---
 
 ### Beispieldatei `settings.ini` (Benutzereinstellungen):
+
 ## Summary & Best Practices
 
 | Goal | Recommended Procedure |

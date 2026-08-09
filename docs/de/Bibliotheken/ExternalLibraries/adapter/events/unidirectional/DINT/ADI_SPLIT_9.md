@@ -11,18 +11,23 @@ Der Funktionsblock `ADI_SPLIT_9` ist ein generischer Baustein, der ein eingehend
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
+
 - **IN** (Socket): Adapter vom Typ `adapter::types::unidirectional::ADI` – Eingangssignal.
 - **OUT1** bis **OUT9** (Plugs): Neun Adapter desselben Typs – Ausgänge, die das Eingangssignal unverändert weitergeben.
 
@@ -58,4 +63,5 @@ Der Funktionsblock besitzt keine Zustandsautomaten oder Algorithmen. Er ist rein
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

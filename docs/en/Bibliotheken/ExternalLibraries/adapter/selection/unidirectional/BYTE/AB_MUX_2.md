@@ -1,6 +1,8 @@
 # AB_MUX_2
+
 ---
 ## Introduction
+
 ![AB_MUX_2](./AB_MUX_2.svg)
 The function block **AB_MUX_2** is a generic multiplexer that selects two values (IN1, IN2) present at adapter interfaces via an index `K` and forwards them to the output `OUT`. The block operates in an event-driven manner and is suitable for use in industrial control applications with standardized adapters of type `AB`.
 ## Interface Structure
@@ -38,17 +40,15 @@ No direct data outputs – output is exclusively via the `OUT` adapter.
 ## Functionality
 
 1. The module waits in idle mode for a `REQ` event.
-
 2. Upon arrival of `REQ`, the value of the data input `K` is read.
-
 - If `K = 0` is present, the signal from adapter `IN1` is switched to output adapter `OUT`.
 - If `K = 1` is present, the signal from adapter `IN2` is switched to output adapter `OUT`.
-
 3. After a successful switchover, the event `CNF` is output.
 
 Values are transmitted via standardized AB adapters, making the function block usable regardless of specific data formats.
 
 ## Technical Features
+
 - **Generic Structure**: The function block is declared as a generic FB (`GEN_AB_MUX`) and can be reused in different contexts.
 - **Adapter-Based**: Inputs and outputs use the adapter type `unidirectional::AB`, which provides a uniform interface for value-based connections.
 - **No State Machine**: The function block does not have an explicit ECC state machine – the simple logic is executed directly upon receiving `REQ`.
@@ -58,6 +58,7 @@ Values are transmitted via standardized AB adapters, making the function block u
 Since the function block does not define a state machine (ECC is missing), only the implicit **Idle** state exists. For each `REQ`, the switchover is performed immediately, and `CNF` is returned. No delayed or multi-stage processes can be observed.
 
 ## Application Scenarios
+
 - **Signal Switching** in field devices: Selection between two sensors (e.g., temperature, pressure) under index control.
 - **Redundancy Switching**: Switching between primary and secondary measured values.
 - **Operating Mode Selection**: Selection of different control parameters or commands depending on the operating mode.
@@ -77,6 +78,7 @@ The function block **AB_MUX_2** provides a flexible and standardized solution fo
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

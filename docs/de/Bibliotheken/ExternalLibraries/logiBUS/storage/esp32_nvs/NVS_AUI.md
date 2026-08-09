@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **NVS_AUI** dient dem Laden und Speichern von UINT-Daten in einem nichtflüchtigen Speicher (NVS) mittels eines Schlüssels (Key). Er kapselt die Zugriffe auf den NVS und stellt eine standardisierte AUI‑Adapter‑Schnittstelle bereit, über die gelesene Werte ausgegeben und zu speichernde Werte entgegengenommen werden. Typische Einsatzorte sind eingebettete Systeme, die Konfigurations- oder Zustandsdaten persistent ablegen müssen.
 
 ## Schnittstellenstruktur
@@ -43,6 +44,7 @@ Der Funktionsblock **NVS_AUI** dient dem Laden und Speichern von UINT-Daten in e
 | `AUI_OUT`  | **Plug** (Ausgang) – Typ: `adapter::types::unidirectional::AUI` | Gibt den ausgelesenen Wert aus (GETO) |
 
 ## Funktionsweise
+
 1. **Initialisierung**  
    Ein `INIT`‑Ereignis löst die Verbindung zum nichtflüchtigen Speicher aus. Dabei werden der Schlüssel (`KEY`) und der Standardwert (`DEFAULT_VALUE`) übergeben. Nach erfolgreicher Initialisierung wird `INITO` mit dem Ergebnis (`QO` / `STATUS`) quittiert.
 
@@ -55,6 +57,7 @@ Der Funktionsblock **NVS_AUI** dient dem Laden und Speichern von UINT-Daten in e
 Der gesamte Daten‑ und Ereignisfluss wird durch den eingebetteten Funktionsblock `NVS` (aus der Bibliothek `logiBUS::storage::esp32_nvs`) realisiert.
 
 ## Technische Besonderheiten
+
 - **AUI‑Adapter‑Schnittstelle**  
   Die unidirektionalen Adapter `AUI_IN` und `AUI_OUT` ermöglichen eine lose Kopplung zwischen dem NVS‑Baustein und anderen Komponenten, die standardisierte AUI‑Schnittstellen verwenden.
 
@@ -65,6 +68,7 @@ Der gesamte Daten‑ und Ereignisfluss wird durch den eingebetteten Funktionsblo
   Fehler während der Initialisierung oder bei Speicherzugriffen werden über `STATUS` signalisiert.
 
 ## Zustandsübersicht
+
 Der FB befindet sich nach dem Hochlaufen im **Ruhezustand**.  
 
 - **Initialisierung** (beim Eintreffen von `INIT`): Herstellen der NVS‑Verbindung, Lesen des vorhandenen Werts.  
@@ -73,12 +77,15 @@ Der FB befindet sich nach dem Hochlaufen im **Ruhezustand**.
 - **Fehlerzustand** (bei nicht erfolgreicher Initialisierung): `QO` = FALSE, `STATUS` enthält Fehlertext.
 
 ## Anwendungsszenarien
+
 - **Konfigurationsspeicher** in IoT‑Geräten: Ablegen von Netzwerkeinstellungen, Kalibrierdaten oder Benutzereinstellungen.  
 - **Zustandsüberwachung**: Speichern des letzten Betriebszustands (z. B. Zählerstände) vor einem Spannungsausfall.  
 - **Parameterübergabe** zwischen unterschiedlichen Automatisierungskomponenten, die über AUI‑Adapter kommunizieren.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Gegenüber dem direkten **NVS**‑Funktionsblock bietet `NVS_AUI` eine höhere Abstraktion durch die Adapter‑Schnittstelle. Während der Basis‑Baustein separate Ereignisse für Lesen (`GET`) und Schreiben (`SET`) benötigt, vereinfacht `NVS_AUI` den Datenfluss durch die unidirektionalen Adapter und den automatischen Lesevorgang nach INIT. Andere Speicherbausteine (z. B. `F_MMAP`, `F_FILE`) verwenden meist dateibasierte oder speicherabbildende Verfahren; `NVS_AUI` ist speziell für nichtflüchtige Speicher mit Schlüssel‑Wert‑Paaren optimiert.
 
 ## Fazit
+
 `NVS_AUI` ist ein praktischer Funktionsblock zur persistenten Datenhaltung in Automatisierungssystemen. Die Kombination aus NVS‑Speicher und AUI‑Adapter erlaubt eine einfache Einbindung in bestehende IEC 61499‑Applikationen, reduziert den Verdrahtungsaufwand und sorgt für eine klare Trennung zwischen Speicherlogik und Kommunikation.

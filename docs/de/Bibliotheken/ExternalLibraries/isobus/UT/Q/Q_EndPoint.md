@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_EndPoint** ist ein standardkonformer Funktionsbaustein zur Steuerung von Linienendpunkten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.26) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_EndPoint](Q_EndPoint.svg)
@@ -12,20 +13,24 @@ Der **Q_EndPoint** ist ein standardkonformer Funktionsbaustein zur Steuerung von
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Endpunktänderungs-Anforderung (mit Position/Richtung)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Linienobjekt-ID
 - `u16Width` (UINT): Neue X-Endposition (0-65535 Pixel)
 - `u16Height` (UINT): Neue Y-Endposition (0-65535 Pixel)
 - `u8LineDirection` (USINT): Linienrichtung (ISO 11783-6 B.27)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u16OldWidth` (UINT): Vorherige X-Endposition
 - `u16OldHeight` (UINT): Vorherige Y-Endposition

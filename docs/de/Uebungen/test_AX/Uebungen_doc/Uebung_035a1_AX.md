@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_035a1_AX` basierend auf den b
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert eine **Ampelsteuerung** unter Verwendung eines **Pattern Sequencers** (Muster-Ablaufsteuerung). Das Ziel ist es, eine klassische Verkehrsampel-Sequenz (Rot -> Rot/Gelb -> Grün -> Gelb -> Rot) durch definierte Zeitintervalle und Bitmuster zu steuern. Die Übung nutzt die Adapter-Technologie (AX) für die Anbindung der Ausgänge und des Timings.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Diese Übung implementiert eine **Ampelsteuerung** unter Verwendung eines **Patt
 In dieser Übung werden verschiedene Bausteine innerhalb des `SubAppNetwork` verschaltet. Nachfolgend sind die wichtigsten Komponenten detailliert beschrieben.
 
 ### Sub-Bausteine: PatternSeq
+
 Dieser Baustein ist das Herzstück der Steuerung und regelt den zeitlichen Ablauf sowie die Ausgabemuster der Ampelphasen.
 
 - **Typ**: `logiBUS::utils::sequence::pattern::sequence_Pattern_04_04_loop_AX`
@@ -33,6 +35,7 @@ Dieser Baustein ist das Herzstück der Steuerung und regelt den zeitlichen Ablau
 - **Funktionsweise**: Der Baustein durchläuft zyklisch 4 Schritte. Für jeden Schritt wird ein Bitmuster (`P_SX`) an den Ausgängen angelegt und für die definierte Zeit (`DT_SX_SY`) gehalten.
 
 ### Sub-Bausteine: DigitalInput_I1
+
 Dieser Baustein verarbeitet das Eingangssignal zum Starten der Ampelsequenz.
 
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
@@ -42,6 +45,7 @@ Dieser Baustein verarbeitet das Eingangssignal zum Starten der Ampelsequenz.
 - **Funktionsweise**: Erfasst einen Einzelklick auf dem Eingang I1 und löst ein Event (`IND`) aus.
 
 ### Sub-Bausteine: Ausgänge (Light_Red, Light_Yellow, Light_Green)
+
 Diese Bausteine stellen die physischen Ausgänge der Ampel dar.
 
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
@@ -52,6 +56,7 @@ Diese Bausteine stellen die physischen Ausgänge der Ampel dar.
 - **Funktionsweise**: Sie empfangen Signale über Adapterverbindungen und schalten die entsprechenden Hardware-Ausgänge.
 
 ### Sub-Bausteine: E_TimeOut
+
 Stellt die Timer-Funktionalität für den Sequenzer bereit.
 
 - **Typ**: `iec61499::events::E_TimeOut`
@@ -76,9 +81,11 @@ Der Ablauf der Ampelsteuerung gestaltet sich wie folgt:
     *   Der `E_TimeOut` Baustein ist über den Adapter `timeOut` mit dem Sequenzer verbunden, um die Timer-Events (`T#3s`, `T#1s` etc.) intern zu verarbeiten.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_035a1_AX` demonstriert effizient, wie komplexe Zustandsautomaten wie eine Ampelsteuerung mit Hilfe eines **Pattern Sequencers** vereinfacht werden können. Anstatt jeden Zustandsübergang einzeln zu programmieren, werden Phasenzeiten und Ausgabemuster parametriert. Die Verwendung von `logiBUS` Adaptern (AX/QXA) zeigt zudem eine moderne Art der Baustein-Kommunikation in 4diac.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

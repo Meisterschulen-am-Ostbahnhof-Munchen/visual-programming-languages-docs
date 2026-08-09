@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `AX_T_FF_SR_SYM_STORE` realisiert ein ereignisgesteuertes, bistabiles Kippglied (Flipflop) mit Setz- (S), Rücksetz- (R) und Toggle-Funktion (CLK). Seine Besonderheit ist das symmetrische Startverhalten: Über einen speziellen Adapter (`Q_INIT`) kann der Anfangszustand beim Systemstart definiert und gespeichert werden.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ   | Kommentar                                   |
@@ -16,12 +18,15 @@ Der Funktionsblock `AX_T_FF_SR_SYM_STORE` realisiert ein ereignisgesteuertes, bi
 | CLK  | Event | Toggelt den Ausgang `Q` (TRUE ↔ FALSE)      |
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge vorhanden. Ausgangsdaten werden ausschließlich über die Adapter-Schnittstellen bereitgestellt.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge. Initialwert und Zustand werden über Adapter eingelesen bzw. ausgegeben.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Der aktuelle Zustand wird über die Adapter verfügbar gemacht.
 
 ### **Adapter**
@@ -32,6 +37,7 @@ Keine direkten Daten-Ausgänge. Der aktuelle Zustand wird über die Adapter verf
 | Q_INIT  | adapter::types::bidirectional::AX2 | Bidirektionale Schnittstelle für den Startwert von `Q` bei INIT (beinhaltet drei Ein-/Ausgänge: z.B. DI1/DO1, EI1/EO1) |
 
 ## Funktionsweise
+
 Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-Funktion. Der Ablauf gliedert sich in Initialisierung und Betrieb:
 
 1. **Initialisierung (START → Init)**  
@@ -50,6 +56,7 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
    Bei jeder Zustandsänderung werden die Ausgangsdaten über die Adapter aktualisiert und das Ereignis `Q.E1` sowie `Q_INIT.EO1` ausgegeben.
 
 ## Technische Besonderheiten
+
 - **Adapter-basierte Ein-/Ausgabe**  
   Statt klassischer DataInputs/DataOutputs verwendet der Baustein Adapter-Schnittstellen. Dies ermöglicht eine flexible Kopplung mit anderen Bausteinen oder Systemkomponenten, die ebenfalls das Adapterprotokoll unterstützen.
 
@@ -80,6 +87,7 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
 - RESET → SET (bei Ereignis S oder CLK)
 
 ## Anwendungsszenarien
+
 - **Speicherung von Maschinenzuständen**  
   In Fertigungsanlagen kann dieser Baustein den aktuellen Betriebsmodus (z.B. „Ein“ oder „Aus“) speichern und beim Neustart wiederherstellen.
 
@@ -90,6 +98,7 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
   Zum Beispiel das Umschalten einer Signalleuchte bei jedem Tastendruck, ohne dass separate Ein- und Aus-Befehle nötig sind.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Standard E_SR (E_R-SET)**  
   Einfaches Set-Reset-Flipflop ohne Toggle und ohne symmetrische Startinitialisierung. Der Anfangszustand ist meist undefiniert oder muss extern gesetzt werden.
 
@@ -103,9 +112,11 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
   Wenige FBs in der 4diac-Bibliothek verwenden Adapter für die Zustandsausgabe. Dieses Design ermöglicht eine saubere Trennung von Ereignis- und Datenpfaden und erleichtert die Wiederverwendung in komplexen Systemen.
 
 ## Fazit
+
 Der `AX_T_FF_SR_SYM_STORE` ist ein leistungsfähiger und flexibler Funktionsblock für zustandsbehaftete Steuerungsaufgaben. Seine Kombination aus Set, Reset und Toggle, gepaart mit dem symmetrischen Startverhalten über Adapter, macht ihn ideal für Anwendungen, die ein definiertes Wiederanlaufverhalten erfordern. Durch die Verwendung von Adaptern fügt er sich nahtlos in modulare und verteilte Automatisierungssysteme ein.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

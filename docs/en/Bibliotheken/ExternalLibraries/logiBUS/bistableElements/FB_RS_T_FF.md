@@ -1,10 +1,13 @@
 # FB_RS_T_FF
+
 ![FB_RS_T_FF](./FB_RS_T_FF.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with an additional toggle function. It combines the properties of an RS flip-flop (set and reset) with the ability to toggle the output on each rising edge of the clock signal. The reset input has priority, followed by the set input, and then the toggle function.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Comment |
@@ -32,10 +35,11 @@ The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with
 | `Q1` | BOOL | Latch output – displays the current stored state. |
 
 ### **Adapters**
+
 This function block has no adapter interfaces.
 
-#
-## ## Functionality
+## Functionality
+
 The following algorithm is executed for each event `REQ`:
 
 - **Reset dominant**: If `R1 = TRUE` occurs, `Q1` is immediately set to `FALSE` – regardless of any other inputs.
@@ -56,12 +60,14 @@ Q1 := NOT Q1;
 END_IF;
 EDGE := CLK;
 ## Technical Features
+
 - **Reset Dominance**: The R1 input has the highest priority; when set, it overrides both Set and Toggle commands.
 - **Edge Detection**: The toggle occurs only on a rising edge of `CLK` (transition from `FALSE` to `TRUE`), which is implemented by the internal variable `EDGE`.
 - **Initial State**: The internal variable `EDGE` is initialized with `TRUE`, preventing an unintended toggle from being triggered on the first call, as the condition `CLK AND NOT EDGE` would otherwise be met at a static `TRUE` level.
 - **Data Type**: All inputs and outputs are of type `BOOL`.
 
 ## State Overview
+
 The function block does not have an explicit state machine; the state is implicitly represented by the internal variables `Q1` and `EDGE`. A state table summarizes the behavior:
 
 | Current `Q1` | `R1` | `S` | `CLK` (rising edge) | New `Q1` |
@@ -72,11 +78,13 @@ x | FALSE| FALSE| TRUE (and previously FALSE) | NOT Q1 |
 x | FALSE| FALSE| FALSE or no edge | unchanged |
 
 ## Application Scenarios
+
 - **Reset-dominant control** with additional switching option, e.g., for manual override in safety circuits.
 - **Toggle function** on clock edges, e.g., as a frequency divider or switch in digital logic circuits.
 - **Combined set/reset/toggle control** in automation systems, where an output can be set by sensor signals and toggled by a push button.
 
 ## Comparison with similar components
+
 - **RS flip-flop**: Pure RS without toggle; `FB_RS_T_FF` extends it with a toggle function.
 - **Toggle flip-flop (T-FF)**: Pure toggle without set/reset; this component combines both functions, with the toggle only being executed when set/reset is inactive.
 - **JK flip-flop**: Offers similar flexibility (set, reset, toggle) but requires two event inputs (e.g., for J and K). `FB_RS_T_FF` simplifies the interface to one event input and three Boolean values.

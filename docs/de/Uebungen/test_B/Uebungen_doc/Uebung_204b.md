@@ -111,14 +111,17 @@ Der Ablauf gliedert sich in folgende Schritte:
 - Fehlerbehandlung durch Reset-Mechanismus
 
 ### Schwierigkeitsgrad
+
 Fortgeschritten – Grundkenntnisse in der 4diac-IDE und im Umgang mit Funktionsbausteinen werden vorausgesetzt.
 
 ### Vorkenntnisse
+
 - Grundlagen der IEC 61499
 - Ablaufsteuerungen und Verriegelungen
 - Ein-/Ausgabe-Konfiguration mit logiBUS-Bausteinen
 
 ### Start der Übung
+
 1. Öffnen Sie die 4diac-IDE und laden Sie die Übung `Uebung_204b`.
 2. Stellen Sie sicher, dass die benötigten logiBUS-Bibliotheken importiert sind (siehe CompilerInfo).
 3. Überprüfen Sie die Verbindungen zwischen den Bausteinen.
@@ -131,4 +134,5 @@ Die Übung `Uebung_204b` demonstriert den Einsatz des Funktionsbausteins `ILOCK_
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

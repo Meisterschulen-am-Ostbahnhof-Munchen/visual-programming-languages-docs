@@ -1,8 +1,10 @@
 # AE_MUX_2
+
 ![AE_MUX_2](./AE_MUX_2.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AE_MUX_2** is a generic multiplexer function block for analog value adapters (AEs). It selects one of two analog signal inputs based on an index input and routes it to the output. The block is built according to the IEC 61499-2 standard and is suitable for flexible signal switching in distributed automation systems.
 ## Interface Structure
 
@@ -46,6 +48,7 @@ The module operates as a 2-to-1 multiplexer at the adapter level. As soon as a *
 After successful switching, the **CNF** event is output. The function block is event-driven and only performs a switchover on a rising edge at **REQ**.
 
 ## Technical Features
+
 - **Generic Class**: The function block is marked as a generic function block by the attribute `GenericClassName = 'GEN_AE_MUX'`, enabling reuse with different adapter types.
 - **Standard Compliance**: Full implementation according to IEC 61499-2, including metadata for identification and versioning.
 - **Restricted Index Range**: The index `K` is declared as `UINT`, but the logic only implements the values 0 and 1; other values lead to undefined behavior (depending on the specific implementation).
@@ -56,6 +59,7 @@ After successful switching, the **CNF** event is output. The function block is e
 The function block does not have an explicit state machine. Operation is purely combinatorial: Each **REQ** event triggers an immediate evaluation of `K` and the corresponding switching.
 
 ## Application Scenarios
+
 - **Switching between two analog sensors** – e.g., selecting a temperature sensor from two measuring points.
 - **Redundant signal paths** – if one input fails, the system can switch to the second.
 - **Testing & Commissioning** – manual switching between a real and a simulated analog value.
@@ -79,6 +83,7 @@ The **AE_MUX_2** offers a compact and standards-compliant solution for selecting
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

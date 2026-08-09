@@ -10,15 +10,19 @@ Der Funktionsbaustein **AW_TO_AD** ist ein zusammengesetzter Baustein (Composite
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **AW_IN.E1** – Ereigniseingang über den Socket `AW_IN`. Ein eingehendes Ereignis wird direkt an den Ausgang weitergeleitet.
 
 ### **Ereignis-Ausgänge**
+
 - **AD_OUT.E1** – Ereignisausgang über den Plug `AD_OUT`. Das vom Eingang durchgereichte Ereignis wird hier ausgegeben.
 
 ### **Daten-Eingänge**
+
 - **AW_IN.D1** – Dateneingang (Typ: WORD, 16 Bit) über den Socket `AW_IN`.
 
 ### **Daten-Ausgänge**
+
 - **AD_OUT.D1** – Datenausgang (Typ: DWORD, 32 Bit) über den Plug `AD_OUT`. Die empfangenen 16 Bit werden auf die unteren 16 Bit des DWORD abgebildet; die oberen 16 Bit werden mit Nullen aufgefüllt (implizite Konvertierung).
 
 ### **Adapter**
@@ -72,4 +76,5 @@ Im Gegensatz zu einem reinen Datenkonverter berücksichtigt `AW_TO_AD` auch die 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

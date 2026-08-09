@@ -1,8 +1,10 @@
 # ASSEMBLE_AW_FROM_AB
+
 ![ASSEMBLE_AW_FROM_AB](./ASSEMBLE_AW_FROM_AB.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ASSEMBLE_AW_FROM_AB** is used to combine two unidirectional byte adapters (type `AB`) into a unidirectional word adapter (type `AW`). It combines the data from two byte inputs into a word output, with event logic ensuring that output occurs only when the information is updated.
 ## Interface Structure
 
@@ -28,7 +30,6 @@ The function block has no direct event or data inputs/outputs, but communicates 
 The function block (FB) is based internally on two sub-components:
 
 1. **`ASSEMBLE_WORD_FROM_BYTES`** – a predefined assembler that combines two input bytes into a WORD.
-
 2. **`E_D_FF_ANY`** – a D flip-flop that temporarily stores the combined value and passes it on at a clock event.
 
 **Process:**
@@ -66,11 +67,13 @@ The FB does not have an explicit state diagram, as its internal logic operates p
 - **Output:** After successful assembly, the new WORD value is transferred to the flip-flop, and the output event is triggered.
 
 ## Application Scenarios
+
 - **Protocol Conversion:** Combining two serial byte streams into a WORD data word for a subsequent processing module.
 - **Sensor Fusion:** Combining two 8-bit sensor data (e.g., temperature and humidity) into a 16-bit value.
 - **Hardware Control:** Generating a 16-bit output signal from two separate 8-bit register values.
 
 ## Comparison with Similar Function Blocks
+
 - **`ASSEMBLE_WORD_FROM_BYTES`** – pure assembler without memory. It expects discrete data inputs and outputs the result immediately (provided the event and data are supplied synchronously).
 - **`SPLIT_BYTE_FROM_WORD`** – inverse function (WORD -> two BYTEs); symmetrically structured, also uses unidirectional adapters.
 - **Custom Function Block with Memory:** This function block integrates the flip-flop, so the output remains stable until new data arrives – unlike function blocks that recalculate with each event but offer no intermediate storage.

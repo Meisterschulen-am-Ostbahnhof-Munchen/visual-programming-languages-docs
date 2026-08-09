@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_020j_AX` basierend auf den be
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_020j_AX** demonstriert die Verwendung von Adapter-Verbindungen zur Signalverarbeitung. Ein digitales Eingangssignal (`Input_I1`) wird eingelesen, aufgeteilt und zur Ansteuerung von zwei digitalen Ausgängen (`Output_Q1` und `Output_Q2`) verwendet. Dabei kommen impulsformende Zeitglieder (Timer) zum Einsatz, die über Adapter-Schnittstellen kommunizieren.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Die Übung **Uebung_020j_AX** demonstriert die Verwendung von Adapter-Verbindung
 In dieser Übung werden verschiedene Bausteine innerhalb des Netzwerks verschaltet, um die gewünschte Logik zu realisieren.
 
 ### Sub-Bausteine: DigitalInput_I1
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Dieser Baustein stellt die Schnittstelle zum physischen Eingang her.
 - **Parameter**:
@@ -21,22 +23,26 @@ In dieser Übung werden verschiedene Bausteine innerhalb des Netzwerks verschalt
     - `Input` = `Input_I1` (Zuordnung der Hardware-Ressource)
 
 ### Sub-Bausteine: AX_SPLIT_2
+
 - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Beschreibung**: Ein Splitter-Baustein für Adapter-Verbindungen. Er nimmt eine eingehende Adapter-Verbindung entgegen und teilt sie auf zwei Ausgänge auf, um das Signal an mehrere Empfänger weiterzuleiten.
 
 ### Sub-Bausteine: AX_TP_Q1
+
 - **Typ**: `adapter::events::unidirectional::timers::AX_TP`
 - **Beschreibung**: Ein Impuls-Timer (Pulse Timer) basierend auf Adapter-Technologie. Er erzeugt einen Impuls definierter Länge.
 - **Parameter**:
     - `PT` = `T#800ms` (Impulsdauer von 800 Millisekunden)
 
 ### Sub-Bausteine: AX_TP_Q2
+
 - **Typ**: `adapter::events::unidirectional::timers::AX_TP`
 - **Beschreibung**: Ein zweiter Impuls-Timer für den zweiten Ausgangspfad.
 - **Parameter**:
     - `PT` = `T#1200m` (Impulsdauer von 1200 Minuten – *Hinweis: Hierbei handelt es sich laut IEC 61131-3 Syntax um Minuten. Im Kontext von Übungen ist oft Millisekunden (ms) gemeint, der Code spezifiziert jedoch `m`*).
 
 ### Sub-Bausteine: DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Beschreibung**: Schnittstelle zum ersten physischen Ausgang.
 - **Parameter**:
@@ -44,6 +50,7 @@ In dieser Übung werden verschiedene Bausteine innerhalb des Netzwerks verschalt
     - `Output` = `Output_Q1`
 
 ### Sub-Bausteine: DigitalOutput_Q2
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Beschreibung**: Schnittstelle zum zweiten physischen Ausgang.
 - **Parameter**:
@@ -72,10 +79,12 @@ Der Ablauf der Übung gestaltet sich wie folgt:
 - Parametrierung von Adapter-Timern (`AX_TP`).
 
 ## Zusammenfassung
+
 Die Übung `Uebung_020j_AX` zeigt eine Parallelschaltung von zwei Ausgängen, die durch einen gemeinsamen Eingang ausgelöst werden. Durch die Verwendung von Adapter-Timern werden unterschiedliche Impulsdauern für `Q1` und `Q2` realisiert, ohne dass klassische Event- und Data-Connections separat gezogen werden müssen. Besonderes Augenmerk liegt auf der korrekten Verwendung des Splitter-Bausteins und der Zeit-Syntax der Parameter.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

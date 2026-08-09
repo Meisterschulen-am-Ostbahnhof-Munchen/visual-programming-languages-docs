@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Echtzeit-Variante des E_PERMIT Bausteins. Lässt ein Ereignis nur durch, wenn die Bedingung (PERMIT) wahr ist.
 
 ![RT_E_PERMIT](RT_E_PERMIT.svg)
@@ -18,4 +19,5 @@ Echtzeit-Variante des E_PERMIT Bausteins. Lässt ein Ereignis nur durch, wenn di
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

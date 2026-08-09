@@ -1,7 +1,9 @@
 # Exercise_070: Outputting WBSD to UT
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_070`. It demonstrates how to read data from the tractor ECU (TECU) and visualize it on the terminal.
 ## 🎧 Podcast
+
 ![Uebung_070_network](./Uebung_070_network.svg)
 
 * [The BTS7030-2EPA Intelligent Car Power Monitor ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Der-BTS7030-2EPA-intelligenter-Auto-Stromwchter-e3b8n3s)
@@ -23,6 +25,7 @@ Using the function block `I_WBSD` (Wheel Based Speed and Distance). The objectiv
 [cite_start]The subapplication `Uebung_070.SUB` reads the ISOBUS message WBSD and forwards it to a numerical display[cite: 1].
 
 ### Function Blocks (FBs)
+
 * **`I_WBSD`**: Type `isobus::tecu::I_WBSD`. [cite_start]This module listens on the CAN bus for the standardized TECU messages for wheel-based speed and distance[cite: 1].
 * **`Q_NumericValue`**: Sends the value to the object `NumberVariable_Wheel_based_machine_speed` in the terminal pool.
 
@@ -33,11 +36,8 @@ Using the function block `I_WBSD` (Wheel Based Speed and Distance). The objectiv
 The TECU sends the speed data to the ISOBUS at fixed time intervals (cyclically).
 
 1. The module `I_WBSD` receives a new message.
-
 2. It updates the output `WHEELBASEDMACHINESPEED` and fires a `IND` event.
-
 3. The event triggers the display on the terminal.
-
 4. The driver sees the tractor's current speed in real time on their display.
 
 -----
@@ -51,5 +51,6 @@ When spreading liquid manure or fertilizer, precise speed control is crucial for
 --
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
+
 * [🌐 Interactive JBC Soldering Tip Guide & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)
 * [🌐 Diode & Semiconductor Basics on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)

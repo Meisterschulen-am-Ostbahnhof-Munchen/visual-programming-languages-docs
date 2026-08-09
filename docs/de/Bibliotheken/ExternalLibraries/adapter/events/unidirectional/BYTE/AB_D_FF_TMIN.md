@@ -28,6 +28,7 @@ Der **AB_D_FF_TMIN** ist ein Adapter-basierter Funktionsbaustein (FB) nach IEC 6
 | `Tmin` | TIME | Mindestzeit zwischen zwei Ausgangsereignissen EO |
 
 ### **Daten-Ausgänge**
+
 Keine direkten Datenausgänge; die Datenausgabe erfolgt über den Adapter-Plug `Q`.
 
 ### **Adapter**

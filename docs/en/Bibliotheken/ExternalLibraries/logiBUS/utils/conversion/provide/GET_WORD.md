@@ -1,8 +1,10 @@
 # GET_WORD
+
 ![GET_WORD](./GET_WORD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **GET_WORD** function block is used to read a WORD value from an InOut variable and make it available as a buffered output. It is typically used to capture a current value from a hardware peripheral or a shared memory location and make it available for further processing in the control program.
 ## Interface Structure
 
@@ -39,16 +41,14 @@ No adapters available.
 ## Functionality
 
 1. The function block starts with a **REQ** event at the input.
-
 2. The **REQ** algorithm is executed:
-
 - The current value of the input variable `IN` is copied to the output `OUT`.
-
 3. After successful assignment, the **CNF** event is sent at the output.
 
 Thus, the value read once remains at the output `OUT` until another **REQ** pulse triggers an update. This corresponds to a buffered read operation.
 
 ## Technical Features
+
 - **InOut Usage** – The function block reads an InOut variable, which is typically connected to a memory or hardware register.
 - **Buffering** – The read value is held in the output `OUT`, even if the source `IN` changes later. Only a subsequent **REQ** call updates the buffer.
 - **Initialization** – `IN` and `OUT` are pre-set to 0 by default.
@@ -64,6 +64,7 @@ The function block implements a simple state machine with only one state:
 There are no other states such as IDLE or WAIT, as the logic is strictly event-driven without branching.
 
 ## Application Scenarios
+
 - **Reading a Hardware Register** – For example, reading an analog-to-digital converter value or a counter value stored as a WORD.
 - **Saving a Volatile Value** – If the source is only stable for a short time (e.g., after an interrupt), the function block can freeze the value at a defined moment.
 - **Accessing Shared Variables** – In multi-call environments, the current value of a global WORD variable is retrieved and processed locally.

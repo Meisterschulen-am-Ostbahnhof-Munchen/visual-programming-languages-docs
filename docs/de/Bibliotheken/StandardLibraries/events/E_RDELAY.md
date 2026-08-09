@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein nach IEC 61499, der im Gegensatz zum einfachen E_DELAY eine nachladbare und abbrechbare Ereignisverzögerung ermöglicht. Entwickelt unter EPL-2.0 Lizenz.
 
 ![E_RDELAY](E_RDELAY.svg)
@@ -12,13 +13,16 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `START`: Beginnt/Resetet die Verzögerung (mit DT-Parameter)
 - `STOP`: Bricht die aktive Verzögerung ab
 
 ### **Ereignis-Ausgänge**
+
 - `EO`: Verzögertes Ausgangsereignis
 
 ### **Daten-Eingänge**
+
 - `DT` (Delay Time): Verzögerungsdauer (TIME-Datentyp)
 
 ## Funktionsprinzip

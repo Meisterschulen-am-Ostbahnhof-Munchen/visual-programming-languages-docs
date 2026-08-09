@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_040_2` basierend auf den bere
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung implementiert ein **8-Kanal-Lauflicht**, welches manuell über Taster gesteuert wird. Im Gegensatz zu einem automatisch ablaufenden Lauflicht, wird hier der Fortschritt der Sequenz durch Benutzerinteraktion bestimmt. Das System ist in zwei Blöcke aufgeteilt, die jeweils 4 Schritte steuern, und beinhaltet eine visuelle Rückmeldung über den aktuellen Status sowie eine numerische Anzeige des aktiven Schritts.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Diese Übung implementiert ein **8-Kanal-Lauflicht**, welches manuell über Tast
 In dieser Übung werden verschiedene Standard- und Spezialbausteine verwendet, um die Logik, die Ein-/Ausgabe und die Sequenzsteuerung zu realisieren.
 
 ### Sub-Bausteine: sequence_E_08_loop
+
 Dies ist der zentrale Baustein zur Steuerung der Zustände des Lauflichts.
 
 - **Typ**: `logiBUS::utils::sequence::event::sequence_E_08_loop`
@@ -26,6 +28,7 @@ Dies ist der zentrale Baustein zur Steuerung der Zustände des Lauflichts.
     - **Ausgänge**: Für jeden Zustand gibt es ein Ereignis (`EO_S1`..`EO_S8`) und ein Datensignal (`DO_S1`..`DO_S8`), welche die physikalischen Ausgänge steuern. Zusätzlich wird die aktuelle Zustandsnummer (`STATE_NR`) ausgegeben.
 
 ### Sub-Bausteine: Logik-Cluster (Zähler & Demultiplexer)
+
 Um die manuellen Tasterdrücke in die korrekten Zustandsübergänge umzuwandeln, wird eine Kombination aus Zählern, Subtrahierern und Demultiplexern verwendet. Dies kommt zweimal vor (für die erste und zweite Hälfte der Sequenz).
 
 - **Typ**: Kombination aus Standard-IEC61499/61131 Bausteinen
@@ -37,6 +40,7 @@ Um die manuellen Tasterdrücke in die korrekten Zustandsübergänge umzuwandeln,
     Ein Tasterdruck erhöht den Zähler. Der Wert wird angepasst (Schritt 1 wird zu Index 0) und steuert den Demultiplexer. Dieser feuert das entsprechende Event, um den `sequence_E_08_loop` Baustein in den nächsten Zustand zu schalten.
 
 ### Weitere Bausteine
+
 - **logiBUS_QX (DigitalOutput_Q1 - Q8)**: Repräsentieren die 8 Lampen/LEDs des Lauflichts.
 - **logiBUS_IE (DigitalInput_CLK_I1 - I4)**: Repräsentieren die Eingabetaster.
     - `I1`: Start / Initialisierung.
@@ -76,9 +80,11 @@ Das Programm ist darauf ausgelegt, eine geführte Sequenz von 8 Schritten abzubi
 - Umgang mit Datentypkonvertierung.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_040_2` demonstriert ein komplexes, manuell getaktetes Lauflicht. Durch die Verwendung eines dedizierten Sequenz-Bausteins (`sequence_E_08_loop`) wird die Logik der Zustände sauber gekapselt, während die externe Beschaltung mit Zählern und Demultiplexern eine flexible Eingabesteuerung über mehrere Taster ermöglicht. Das Ergebnis ist eine robust steuerbare Lichtsequenz mit visueller Statusanzeige.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -1,5 +1,7 @@
 # BOOL_TO_QUARTER
+
 ## 🎧 Podcast
+
 ![BOOL_TO_QUARTER](./BOOL_TO_QUARTER.svg)
 
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
@@ -9,36 +11,32 @@
 * * * * * * * * * *
 The function block `BOOL_TO_QUARTER` converts a binary BOOL signal into a special, predefined quarter byte. It translates the logical states `TRUE` and `FALSE` into corresponding, semantically meaningful byte constants, typically used for control commands (e.g., ENABLE/DISABLE). This block is part of the `logiBUS::utils::quarter` library.
 
-
 * **REQ**: This event triggers the conversion function. Upon its arrival, the current value at the data input `I` is read and processed.
-
 * **CNF**: This event signals the completion of the conversion. It is output along with the calculated output value `QB`.
-
 * **I** (BOOL, Initial value: `FALSE`): The binary input value to be converted.
-
 * **QB** (BYTE, Initial value: `quarter::COMMAND_DISABLE`): The output value as a byte. The block uses a so-called "quarter byte" (2 bits), which can represent four states, of which only two are used in this implementation. The specific value is derived from the constants of the imported library.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapter**
+
 This function block has no adapter interfaces.
 
 ## Functionality
+
 When triggered by the `REQ` event, the block evaluates the value at the input `I`. The processing is performed via a `CASE` instruction:
 
 * If `I` has the value `BOOL#TRUE`, the output `QB` is set to the constant `quarter::COMMAND_ENABLE`.
-
-
-
-
-
-
-
-
 
 #** ... * In all other cases (i.e., by default with `FALSE`), the output `QB` is set to the constant `quarter::COMMAND_DISABLE`.
 
@@ -56,15 +54,19 @@ The block does not have an internal state in the sense of a memory. It behaves p
 *
 * **`BOOL_TO_BYTE`**: A generic converter that typically maps `TRUE` to `1` and `FALSE` to `0`. `BOOL_TO_QUARTER` is more specialized and uses project-specific, semantic constants instead of numeric values.
 * **Direct assignment**: The functionality could also be replicated by direct assignment in ST code (`QB := I`), but this would eliminate the advantages of centralized constant definition and a clear interface (events).
-
 * [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
 * [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
 
 The `BOOL_TO_QUARTER` function block is a specialized but useful converter for control applications. It offers a clean interface with event-driven control, uses centrally managed constants for consistent semantics, and is potentially extensible thanks to the quarter-byte concept. Its strength lies in combining simple binary logic with device-specific control protocols.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 ## 🛠️ Zugehörige Übungen
+
 ## Conclusion

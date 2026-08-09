@@ -1,4 +1,5 @@
 # AI_SPLIT_7
+
 ![AI_SPLIT_7](./AI_SPLIT_7.svg)
 
 * * * * * * * * * *
@@ -12,12 +13,19 @@ Direct data inputs are not defined. The analog value is read exclusively via the
 Direct data outputs are not available. The analog values are output via the seven adapters **OUT1** to **OUT7** (plugs).
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
+
 - **IN** (Socket): Type `adapter::types::unidirectional::AI` – Input for the analog signal.
 - **OUT1** to **OUT7** (plugs): Type `adapter::types::unidirectional::AI` – Seven outputs that forward the incoming value identically.
 
@@ -29,21 +37,21 @@ Direct data outputs are not available. The analog values are output via the seve
 - **Adapter-Based:** The interfaces are implemented as IEC 61499 adapters, enabling loose coupling between function blocks.
 - **No Event Control:** Since no events are used, data transmission occurs exclusively via the adapter connections and is driven by the runtime environment.
 
-
 The function block has no explicit states because it contains no sequential or event-driven logic. It operates continuously as a pure signal distributor.
 
 - **Distributing a Sensor Signal:** An analog sensor (e.g., temperature, pressure) is to be transmitted to multiple control logics or displays.
 - **Redundant Processing:** The same measured value is required in parallel by different algorithms or monitoring units.
-
-
 - **AI_SPLIT_N:** Function blocks such as `AI_SPLIT_2` or `AI_SPLIT_3` differ only in the number of output adapters. `AI_SPLIT_7` offers the maximum distribution across seven channels.
 - **Other splitters:** Unlike event-driven splitters (e.g., `E_SPLIT`), this function block operates purely analogously without event triggering. It is optimized for continuous analog signals.
-
 
 **AI_SPLIT_7** is a simple yet effective function block for multiplying analog signals in IEC 61499 systems. Through the use of adapters and its generic implementation, it can be easily integrated into various automation and control applications. Its clear, event-free structure makes it particularly suitable for unidirectional data transfer without additional control logic.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

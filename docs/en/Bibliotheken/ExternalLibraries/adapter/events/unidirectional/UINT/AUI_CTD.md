@@ -1,8 +1,10 @@
 # AUI_CTD
+
 ![AUI_CTD](./AUI_CTD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AUI_CTD** is an event-driven down counter with adapter interfaces. It features **On-Change triggering**: The output signal **Q** is only updated when its logical state actually changes. This avoids unnecessary events and increases efficiency in event-driven systems.
 ## Interface Structure
 
@@ -55,6 +57,7 @@ The function block (FB) compares the current **Q** value with the stored predece
 When the **PV** adapter reports (event **PV.E1**), **Q** is recalculated (using the **UPDATE** algorithm). Here too, **Q** is only output when there is a state change.
 
 ## Technical Features
+
 - **On-Change Triggering** – Reduces event load by activating the **Q** output only when changes actually occur.
 - **Adapter Interface** – Enables loose coupling and reuse in complex control structures.
 - **Initial Value** – **Q_OLD** is initialized with `FALSE`, so that a change is detected on the first iteration if **CV** is already ≤ 0.
@@ -78,6 +81,7 @@ The process is controlled by the following ECC states:
 - From **EMIT_Q**, the system always switches back to **START**.
 
 ## Application Scenarios
+
 - **Material Counter** in Conveyor Systems: **CD** is triggered for each part that leaves the station. As soon as **CV ≤ 0**, a replenishment request is sent.
 - **Cycle Control** for Repeated Processes: The counter runs from a starting value (loaded via **LD**) to zero and then triggers an action.
 - **Event-optimized systems** with many parallel counters: Thanks to on-change triggering, only relevant status changes are reported.
@@ -99,6 +103,7 @@ The **AUI_CTD** is a powerful down counter for IEC 61499-compliant controllers. 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

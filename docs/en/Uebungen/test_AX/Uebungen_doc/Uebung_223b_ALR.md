@@ -1,8 +1,10 @@
 # Exercise_223b_ALR: Standard IEC 61131-3 AUDI_FB_CTUD (Adapter Version, Up/Down Counter, UDINT) with Terminal Output (PHYSA_LREAL)
+
 ![Uebung_223b_ALR_network](./Uebung_223b_ALR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a standards-compliant up/down counter based on the IEC 61131-3 block **AUDI_FB_CTUD** in its adapter version. The counter processes four digital input signals (up count, down count, reset, and loading a preset value) and outputs the current counter value as well as overflow/underflow signals. The preset value is provided via a conversion block, and the counter value is converted into a physical LREAL value for terminal output.
 
 This exercise demonstrates the adapter technology of the 4diac IDE, type conversion between different data formats, and the connection of digital inputs/outputs as well as a numerical output (e.g., for an operator panel).
@@ -10,6 +12,7 @@ This exercise demonstrates the adapter technology of the 4diac IDE, type convers
 ## Function Blocks (FBs) Used
 
 ### Main Block: `AUDI_FB_CTUD`
+
 - **Type**: `adapter::iec61131::counters::AUDI_FB_CTUD`
 - **Description**: Standard IEC 61131-3 forward/reverse counter with a counting range of type `UDINT`.
 - **Functionality**:
@@ -22,11 +25,13 @@ This exercise demonstrates the adapter technology of the 4diac IDE, type convers
 - The **QD** output sends a signal when the counter is at zero and should continue counting backward (underflow).
 
 ### Conversion Block: `AUDI_UDINT_TO_UDI`
+
 - **Type**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Parameters**: `OUT = UDINT#5`
 - **Functionality**: Converts a constant of type `UDINT` (here: 5) to the type expected by the counter, `UDI`, and provides the value at output `AUDI_OUT`. This value is passed as a preset value to the **PV** input of the counter.
 
 ### Digital Inputs
+
 - **Input_CU**, **Input_CD**, **Input_R**, **Input_LD**
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
@@ -35,6 +40,7 @@ This exercise demonstrates the adapter technology of the 4diac IDE, type convers
 - **Functionality**: These adapter function blocks connect the digital inputs of the logiBUS hardware to the adapter interfaces. They provide an event and a data value (adapter interface) to the counter.
 
 ### Digital Outputs
+
 - **Output_QU**, **Output_QD**
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
@@ -43,10 +49,12 @@ This exercise demonstrates the adapter technology of the 4diac IDE, type convers
 - **Functionality**: Receive the adapter signals from the counter (QU, QD) and forward them as digital output signals to the hardware.
 
 ### Conversion Module: `AUDI_TO_ALR`
+
 - **Type**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
 - **Function**: Converts the `AUDI` counter value (type `AUDI`, corresponding to an unsigned integer) into a `ALR` value. This value is then passed to the terminal output.
 
 ### Terminal output: `Q_NumericValue_PHYSA_LREAL`
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Parameter**: `stObj = OutputNumber_N3`
 - **Functionality**: Accepts a physical value of type `LREAL` and outputs it as a numeric value to a terminal (e.g., HMI). The parameter `stObj` references the corresponding output element.
@@ -63,7 +71,6 @@ The counter is controlled by the digital inputs:
 The preset value is initialized via the event connection `Input_LD.INITO -> AUDI_UDINT_TO_UDI.REQ` when the device is first powered on. The conversion block `AUDI_UDINT_TO_UDI` then outputs the constant value 5 (UDINT) via its output `AUDI_OUT` to the **PV** input of the counter.
 
 The current counter reading is routed via the adapter connection `AUDI_FB_CTUD.CV → AUDI_TO_ALR.AUDI_IN`, converted there to the `ALR` type, and then passed to the physical input `lrPhys` of the terminal block (`AUDI_TO_ALR.ALR_OUT → Q_NumericValue_PHYSA_LREAL.lrPhys`).
-
 
 **Special Features**:
 
@@ -85,6 +92,7 @@ Exercise 223b implements a complete up/down counter with a fixed preset value (5
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

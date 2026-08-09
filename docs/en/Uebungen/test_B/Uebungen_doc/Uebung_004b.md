@@ -1,8 +1,10 @@
 # Exercise_004b: Toggle Flip-Flop with IE / E_SWITCH + E_SR
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004b`. It demonstrates how to manually construct the function of a toggle flip-flop from basic building blocks (switch and memory).
 ----
 ## Objective of the Exercise
+
 Understanding the internal logic of a memory block. Instead of using the pre-built block `E_T_FF`, a feedback loop is constructed that uses the current state to direct the next event to the correct input (`Setzen` or `Rücksetzen`).
 
 -----
@@ -42,11 +44,8 @@ The key lies in the feedback of the output state to the input of the switch:
 The functional sequence:
 
 1. **OFF state**: `E_SR.Q` is FALSE, therefore `E_SWITCH.G` is also FALSE.
-
 2. A key press fires `EI`. The switch forwards this to `EO0` ➡️ `E_SR.S`. The memory is set, and the lamp lights up.
-
 3. **ON state**: Since the lamp is now on, `E_SWITCH.G` is TRUE.
-
 4. The next key press fires `EI` again. This time, the switch routes the event to `EO1` ➡️ `E_SR.R`. The memory is reset, and the light goes out.
 
 -----

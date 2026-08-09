@@ -9,6 +9,7 @@ Hier ist die Dokumentation für die Übung **Uebung_035c** im gewünschten Forma
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_035c** („Spiegelabfolge V2 mit Schrittkette“) demonstriert die Steuerung einer sequenziellen Abfolge (Schrittkette) mit vier Zuständen. Dabei kommen sowohl zeitgesteuerte als auch ereignisgesteuerte Übergänge zum Einsatz. Der aktuelle Status der Schrittkette wird über digitale Ausgänge (LEDs) visualisiert und die Nummer des aktiven Schritts wird auf einer numerischen Anzeige ausgegeben.
 
 ## Verwendete Funktionsbausteine (FBs)

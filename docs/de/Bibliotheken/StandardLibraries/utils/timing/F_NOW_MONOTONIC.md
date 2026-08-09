@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 `F_NOW_MONOTONIC` ist eine IEC 61499-konforme Funktion, die einen monotonen Zeitstempel zurückgibt.
 Im Gegensatz zur Systemzeit (`NOW`) ist diese Zeit unabhängig von externen Änderungen (z. B. Zeitzonen oder NTP-Updates) und eignet sich daher ideal für zeitkritische Steuerungen oder Performance-Messungen.
 Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
@@ -14,17 +15,21 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **REQ** (Trigger):
   Startet die Ausführung der Funktion. Bei Eingang dieses Ereignisses wird der aktuelle monotone Zeitwert berechnet und über den Ausgang `CNF` ausgegeben.
 
 ### **Ereignis-Ausgänge**
+
 - **CNF** (Bestätigung):
   Signalisiert den Abschluss der Operation. Das Ereignis wird zusammen mit dem berechneten Zeitwert (`TIME`) ausgegeben.
 
 ### **Daten-Eingänge**
+
 - *Keine* – Die Funktion benötigt keine zusätzlichen Eingabeparameter.
 
 ### **Daten-Ausgänge**
+
 - **TIME** (Ausgangsvariable):
   Rückgabewert vom Typ `TIME`, der den aktuellen Wert der monotonen Uhr repräsentiert.
   *Beispiel:* `T#123456ms` (abhängig vom Hardware/OS-Referenzpunkt).
@@ -48,6 +53,7 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 ---
 
 ## Technische Besonderheiten
+
 - **Monotone Zeit**:
   Garantiert stetig steigende Werte, selbst bei Systemzeitänderungen.
   *Hinweis:* Der Referenzpunkt ist hardwareabhängig (z. B. Systemstart).
@@ -57,12 +63,14 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 ---
 
 ## Rückgabecodes
+
 - **Erfolg**: Gültiger `TIME`-Wert (z. B. `T#42s`).
 - **Fehler**: Keine expliziten Fehlercodes, aber undefinierte Werte bei Systemfehlern.
 
 ---
 
 ## Anwendungsszenarien
+
 1. **Echtzeit-Messungen**:
    Laufzeitanalyse von Steuerungszyklen ohne Einfluss durch Systemzeitänderungen.
 
@@ -85,6 +93,7 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 ---
 
 ## Fazit
+
 `F_NOW_MONOTONIC` ist ein schlanker, aber unverzichtbarer Baustein für Anwendungen, die eine zuverlässige und monotone Zeitquelle benötigen.
 Durch seine Hardwarenähe und Unabhängigkeit von Systemzeitänderungen eignet er sich besonders für industrielle Echtzeitanwendungen.
 Die Integration in Eclipse 4diac gewährleistet Kompatibilität mit modernen Automatisierungslösungen.
@@ -94,4 +103,5 @@ Die Integration in Eclipse 4diac gewährleistet Kompatibilität mit modernen Aut
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

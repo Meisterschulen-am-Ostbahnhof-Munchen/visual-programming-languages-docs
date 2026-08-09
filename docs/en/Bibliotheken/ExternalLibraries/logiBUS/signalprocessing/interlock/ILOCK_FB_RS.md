@@ -1,8 +1,10 @@
 # ILOCK_FB_RS
+
 ![ILOCK_FB_RS](./ILOCK_FB_RS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (reset-dominant flip-flop). It extends a simple RS flip-flop with a bidirectional coupling interface, enabling multiple such blocks to be chained together in an interlock chain. The output state is set by the Set input (S) and reset by the Reset input (R1) – also taking into account signals from adjacent blocks.
 ## Interface Structure
 
@@ -27,7 +29,6 @@ The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (
 
 ### **Data Outputs**
 
-| Variable | Type | Comment |
 | Variable | Type | Comment |
 | |----------|--------|-----------|
 | `Q1` | BOOL | Flip-flop output |
@@ -58,6 +59,7 @@ Internally, the component consists of an RS flip-flop (`FB_RS`, reset-dominant),
 - **Event Control:** All events (REQ, as well as the adapter events) are collected and forwarded to the internal flip-flop via OR logic. The acknowledgment (CNF) is output after the flip-flop has processed.
 
 ## Technical Features
+
 - **Reset Dominance:** In case of conflict (S and R1 active simultaneously), the reset takes precedence → `Q1 = FALSE`.
 - **Cascading:** Multiple `ILOCK_FB_RS` units can be cascaded using the adapters. A reset occurring at one point propagates through the chain.
 - **Bidirectional Coupling:** The adapters enable both forward and reverse communication, allowing the device to receive and forward set and reset signals from both sides.

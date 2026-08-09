@@ -1,5 +1,7 @@
 # About Eclipse 4diac™
+
 ## A Poem about 4diac in the Style of Goethe
+
 In 4diac, streams of code flow,
 it lives and pulsates in its own ode.
 It dances to the rhythm of bits and bytes,
@@ -67,5 +69,5 @@ Details are governed by this agreement:
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
+* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

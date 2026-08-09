@@ -45,6 +45,7 @@ Diese Übung implementiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_LINT)
 Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
 
 ### Ereignisverbindungen
+
 - `Input_CU.IND` → `FB_CTU_LINT.REQ`  
   Bei einer positiven Flanke des Digitaleingangs I1 wird der Zähler zum Hochzählen angestoßen.
 
@@ -61,6 +62,7 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
   Nach der Konvertierung wird der Wert an das Terminal gesendet.
 
 ### Datenverbindungen
+
 - `Input_CU.IN` → `FB_CTU_LINT.CU`  
   Der Zustand von Eingang I1 steuert den Zählimpuls (positive Flanke).
 
@@ -77,6 +79,7 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
   Der konvertierte LREAL-Wert wird dem Terminal-Baustein übergeben.
 
 ### Funktionsweise
+
 1. Solange der Eingang CU (I1) einen positiven Flankenwechsel zeigt, erhöht der Zähler CV um 1.
 2. Ein positiver Flankenwechsel am Reset-Eingang R (I2) setzt CV auf 0.
 3. Erreicht der Zählerstand den voreingestellten Wert PV (hier 5) oder mehr, wird der Ausgang Q auf TRUE gesetzt. Ein weiteres Zählen ist dann nicht mehr möglich, bis ein Reset erfolgt.
@@ -99,4 +102,5 @@ Die Übung 212b zeigt die Kombination eines IEC 61131-3 Vorwärtszählers (FB_CT
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

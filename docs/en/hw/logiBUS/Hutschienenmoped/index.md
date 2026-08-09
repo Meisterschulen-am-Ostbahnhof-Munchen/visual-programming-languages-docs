@@ -1,4 +1,5 @@
 # DIN Rail Controller Overview
+
 The DIN Rail Controller: Compact Controller for DIN Rails
 Our "DIN Rail Controller" is the ideal solution for anyone needing a compact, flexible, and cost-effective controller directly in the control cabinet. Mounted on a standard DIN rail, it serves as the brain for countless automation and digitalization tasks. To meet the diverse needs of beginners and professionals, we offer the DIN Rail Controller in two generations.
 **1. The Classic DIN Rail Controller (Based on ESP32)**
@@ -37,6 +38,7 @@ Choose the S3 model if you are planning demanding projects, require maximum perf
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 * [🌐 MCU vs. MPU comparison guide on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
 

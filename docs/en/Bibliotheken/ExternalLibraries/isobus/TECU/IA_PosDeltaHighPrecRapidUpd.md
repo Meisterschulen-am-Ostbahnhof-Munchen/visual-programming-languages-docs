@@ -1,8 +1,10 @@
 # IA_PosDeltaHighPrecRapidUpd
+
 ![IA_PosDeltaHighPrecRapidUpd](./IA_PosDeltaHighPrecRapidUpd.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `IA_PosDeltaHighPrecRapidUpd` is an ISOBUS adapter module for high-precision, rapidly updated position deltas according to the NMEA 2000 standard (PGN 129027). It encapsulates the internal core module `I_PosDeltaHighPrecRapidUpd` and makes its output data available via adapter interfaces. This allows position changes (time, latitude, and longitude deltas) as well as a timeout status to be seamlessly integrated into automation systems.
 ## Interface Structure
 
@@ -47,6 +49,7 @@ This function block acts as a wrapper around the internal function block `I_PosD
 ... The internal data connections ensure that the values from `TimeDelta`, `LatitudeDelta`, `LongitudeDelta`, and `Q_timeout` are transferred to the corresponding adapter data port `D1`.
 
 ## Technical Features
+
 - **Standard Compliance**: The module implements NMEA 2000 PGN 129027 – "Position Delta, High Precision Rapid Update".
 - **Adapter-Based**: The output data is provided via flexible, unidirectional adapters, allowing direct connection to other modules in a 4diac system.
 - **High Precision & Update Rate**: Optimized for applications requiring accurate and rapid position changes (e.g., in agriculture or vehicle navigation).
@@ -57,16 +60,13 @@ This function block acts as a wrapper around the internal function block `I_PosD
 The function block does not have an explicit finite state machine (ECC) in its XML definition. Its behavior is entirely controlled by the internal core function block `I_PosDeltaHighPrecRapidUpd`:
 
 1. **Wait for Initialization**: After system startup, `QI = FALSE` is present; `INIT` is not triggered.
-
 2. **Start Initialization**: Upon the `INIT` event with `QI = TRUE`, the core is activated.
-
 3. **Initialization Confirmed**: The core reports `INITO` with `QO = TRUE` and a positive status; data provisioning then begins.
-
 4. **Data Update**: With each new position delta, the adapters are automatically updated with the current values.
-
 5. **Timeout**: If no more valid data is received, the core sets `Q_timeout = TRUE` and triggers the `TIMEOUT` event.
 
 ## Application Scenarios
+
 - **Precision Agriculture**: Monitoring of position changes of a tractor or agricultural machine in real time (e.g., for steering systems or application maps).
 - **Vehicle Navigation**: Processing of high-precision GNSS deltas in autonomous vehicles.
 - **ISOBUS Integration**: Connection to existing ISOBUS control units based on PGN 129027.
@@ -89,6 +89,7 @@ The `IA_PosDeltaHighPrecRapidUpd` is a specialized ISOBUS adapter for high-preci
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (ADI_FB_CTU) im Adapter-Format. Der Zählerwert wird auf einem Terminal (PHYS) ausgegeben. Die Konfiguration ermöglicht das Zählen von Impulsen, Rücksetzen des Zählers und die Darstellung des aktuellen Zählwertes inklusive negativer Werte.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -61,9 +62,11 @@ Der Programmablauf ist ereignisgesteuert:
 - Bei hohen Ereignisraten kann ein AX_D_FF (Event-Filter) zwischengeschaltet werden, um die Eventlast zu reduzieren.
 
 ## Zusammenfassung
+
 Die Übung demonstriert die Verwendung eines standardisierten IEC 61131-3 Vorwärtszählers (ADI_FB_CTU) in der 4diac-IDE mit Adaptertechnologie. Die Verbindung von digitalen Ein-/Ausgängen, Konvertierungsbausteinen und Terminalausgabe zeigt eine typische Industriesteuerungsaufgabe. Lernziele sind das Verständnis von Zählerlogik, Ereignissteuerung und der Integration physischer I/O in ein Funktionsbaustein-Netzwerk. Voraussetzungen sind Grundkenntnisse der 4diac-IDE und der IEC 61131-3 Adapter-Bausteine.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

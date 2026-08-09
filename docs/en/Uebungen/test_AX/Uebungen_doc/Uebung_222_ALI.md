@@ -1,12 +1,15 @@
 # Exercise_222_ALI: Standard IEC 61131-3 ALI_FB_CTUD (Adapter Version, Up/Down Counter, LINT) with Terminal Output
+
 ![Uebung_222_ALI_network](./Uebung_222_ALI_network.svg)
 *Image not available*
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an up/down counter according to IEC 61131-3 (CTUD) in adapter format. The counter is controlled via digital inputs (logiBUS) and outputs its current count via a terminal. The preset value (PV) is set to LINT#5 and loaded when the LD input is set. The outputs QU (overflow) and QD (underflow) are connected to digital outputs.
 
 ## Function Blocks (FBs) Used
+
 - **ALI_FB_CTUD** (Type: `adapter::iec61131::counters::ALI_FB_CTUD`):
 - Parameters: none set in the XML (default values)
 - Event inputs: CU, CD, R, LD
@@ -47,12 +50,9 @@ This exercise implements an up/down counter according to IEC 61131-3 (CTUD) in a
 The hardware inputs (I1–I4) are read via the logiBUS DI blocks. The events and data are connected as follows:
 
 1. **Clock inputs CU and CD**:
-
 - `Input_CU.IN` → `ALI_FB_CTUD.CU` (Count up, rising edge)
 - `Input_CD.IN` → `ALI_FB_CTUD.CD` (Count down, rising edge)
-
 2. **Reset and Load**:
-
 - `Input_R.IN` → `ALI_FB_CTUD.R` (Sets the counter to 0)
 - `Input_LD.IN` → `ALI_FB_CTUD.LD` (Loads the preset value PV into the counter)
 - The event `Input_LD.INITO` triggers the `ALI_LINT_TO_LI.REQ` is output, so that the fixed value LINT#5 is available as a PV at output `ALI_OUT`.
@@ -60,14 +60,10 @@ The hardware inputs (I1–I4) are read via the logiBUS DI blocks. The events and
 The output is `ALI_LINT_TO_LI.REQ`. 3. **Preset Value**:
 
 - `ALI_LINT_TO_LI.ALI_OUT` → `ALI_FB_CTUD.PV`
-
 4. **Outputs**:
-
 - `ALI_FB_CTUD.QU` → `Output_QU.OUT` (switched to digital output Q1)
 - `ALI_FB_CTUD.QD` → `Output_QD.OUT` (switched to digital output Q2)
-
 5. **Count Value Output to Terminal**:
-
 - `ALI_FB_CTUD.CV` → `ALI_TO_AUDI.ALI_IN`
 - `ALI_TO_AUDI.AUDI_OUT` → `Q_NumericValue_AUDI.u32NewValue`
 - The current count value (CV) is converted and displayed in the terminal with the object ID `OutputNumber_N1` output.
@@ -84,6 +80,7 @@ This exercise demonstrates the use of the standardized CTUD counter (IEC 61131-3
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

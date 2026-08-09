@@ -6,6 +6,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der AX_RS Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Flop) nach dem RS-Prinzip. Es handelt sich um einen Basic Function Block, der einen Set-Reset-Mechanismus implementiert und über Adapter-Schnittstellen kommuniziert.
 
 ![AX_RS](AX_RS.svg)
@@ -13,22 +14,28 @@ Der AX_RS Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Fl
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **R**: Reset-Ereignis - setzt den Ausgang Q zurück
 - **S**: Set-Ereignis - setzt den Ausgang Q
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge vorhanden
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge vorhanden
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
+
 - **Q**: Adapter vom Typ `adapter::types::unidirectional::AX` - repräsentiert den Wert des Flip-Flops
 
 ## Funktionsweise
+
 Der AX_RS Funktionsblock arbeitet als RS-Flip-Flop mit folgenden Eigenschaften:
 
 - Bei Eintreffen eines S-Ereignis (Set) wird der Ausgang Q auf TRUE gesetzt
@@ -44,6 +51,7 @@ Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe a
 - **Adapter-Kommunikation**: Der Baustein gibt seinen Zustand ausschließlich über den Adapter `Q` (Typ `AX`) aus. Eine Änderung von `Q` löst das Ereignis `Q.E1` aus.
 
 ## Zustandsübersicht
+
 Der Funktionsblock verfügt über drei Zustände im ECC:
 
 1. **START**: Initialzustand
@@ -57,16 +65,19 @@ Der Funktionsblock verfügt über drei Zustände im ECC:
 - RESET → SET: bei S-Ereignis
 
 ## Anwendungsszenarien
+
 - Speicherung von binären Zuständen mit Adapter-Ausgabe
 - Implementierung von Verriegelungsschaltungen in verteilten Systemen
 - Zustandsspeicherung in sequentiellen Abläufen
 - Signalverarbeitung in ereignisgesteuerten Systemen
 
 ## Verwandte Bausteine
+
 - **[AX_SR](AX_SR.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
 - **[E_RS](../../../../../StandardLibraries/events/E_RS.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu anderen Flip-Flop-Implementierungen:
 
 - Verwendet Adapter-basierte Kommunikation statt direkter Datenausgänge
@@ -83,9 +94,11 @@ Vergleich mit [E_RS](../../../../../StandardLibraries/events/E_RS.md)
 * [Uebung_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
 
 ## Fazit
+
 Der AX_RS Funktionsblock bietet eine einfache und effiziente Implementierung eines RS-Flip-Flops für 4diac-basierte Steuerungssysteme. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und eignet sich besonders für Anwendungen, die zuverlässige Zustandsspeicherung mit ereignisgesteuerter Aktualisierung benötigen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

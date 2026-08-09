@@ -1,10 +1,13 @@
 # logiBUS_IBA
+
 ![logiBUS_IBA](./logiBUS_IBA.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **logiBUS_IBA** function block is a composite block for processing byte input data via the logiBUS protocol. It encapsulates the initialization, configuration, and event control of a logiBUS input block and provides the data via an adapter. The block is designed for use in agricultural control systems.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Description |
@@ -41,6 +44,7 @@ The **logiBUS_IBA** function block is a composite block for processing byte inpu
 | IN | adapter::types::unidirectional::AB | Unidirectional adapter for providing input data to the higher-level resource |
 
 ## Functionality
+
 The **logiBUS_IBA** function block works internally with an instance of the **logiBUS_IB** function block (from the `logiBUS::io::DI` library). The event and data paths are linked as follows:
 
 - During the **INIT** event, the inputs `QI`, `PARAMS`, `Input`, and `InputEvent` are forwarded to the corresponding initialization of the internal function block. After initialization is complete, the output event **INITO** is set, and the outputs `QO` and `STATUS` are updated.
@@ -49,6 +53,7 @@ The **logiBUS_IBA** function block works internally with an instance of the **lo
 - Error and status signals are reported back via `QO` and `STATUS`.
 
 ## Technical Features
+
 - **Composite FB:** This function block encapsulates the complex initialization and data provision of a logiBUS input in a single interface.
 - **Adapter-Based Data Output:** Input data is not output via separate data outputs, but rather via a **unidirectional adapter** (type `AB`). This allows for flexible coupling with other function blocks.
 - **Configurable Inputs:** The physical input (I1..I8) and the event behavior (e.g., repetition) can be selected using the parameters `Input` and `InputEvent`.
@@ -64,14 +69,17 @@ This function block does not have an explicitly displayed state machine, as it i
 - **ERROR** – Error state (status message via STATUS)
 
 ## Application Scenarios
+
 - **Agricultural Control Systems:** Acquisition of digital input signals (e.g., sensors, switches) via logiBUS and forwarding to a controller.
 - **Input Modules in Fieldbus Systems:** The function block serves as a standardized interface for logiBUS inputs in IEC 61499-2 applications.
 - **Prototypes and Test Setups:** Thanks to its configurability, the function block can be quickly adapted to various input configurations.
 
 ## Comparison with Similar Function Blocks
+
 - **logiBUS_IB:** The internal function block is a pure Basic Function Block; **logiBUS_IBA** adds an adapter output and simplified event control.
 - **SYNC/D_SYNC:** These function blocks from the Sync library offer similar input configuration but without specific logiBUS protocol support.
 - **Generic Input Adapter:** Compared to generic adapters, **logiBUS_IBA** offers a predefined logiBUS configuration, reducing development effort.
 
 ## Conclusion
+
 The **logiBUS_IBA** is a practical composite function block for integrating logiBUS inputs into IEC 61499-based automation systems. By combining initialization, parameter configuration, and adapter-based data output, it creates a clean and reusable interface. It is particularly suitable for agricultural applications that rely on the logiBUS protocol.

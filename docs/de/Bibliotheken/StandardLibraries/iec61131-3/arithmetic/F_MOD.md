@@ -7,21 +7,26 @@
 ![F_MOD](F_MOD.svg)
 
 ## Einführung
+
 Der **F_MOD** ist ein arithmetischer Funktionsbaustein zur Berechnung des Divisionsrests, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die Modulo-Operation für ganzzahlige Datentypen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Dividend und Divisor)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Restwert)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_INT): Dividend (ganzzahlig)
 - `IN2` (ANY_INT): Divisor (ganzzahlig)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_NUM): Rest der Division (IN1 mod IN2)
 
 ## Funktionsweise

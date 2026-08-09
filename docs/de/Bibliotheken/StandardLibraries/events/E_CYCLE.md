@@ -1,6 +1,7 @@
 # E_CYCLE
 
 ## Einleitung
+
 Der `E_CYCLE` ist ein Funktionsbaustein nach IEC 61499, der als periodischer Ereignisgenerator dient. Nach dem Starten feuert der Baustein in einem festgelegten Zeitintervall (`DT`) wiederholt ein Ausgangsereignis (`EO`). Er ist das grundlegende Werkzeug zur Erstellung von Taktgebern und zyklischen Abläufen.
 
 ![E_CYCLE](E_CYCLE.svg)
@@ -8,17 +9,21 @@ Der `E_CYCLE` ist ein Funktionsbaustein nach IEC 61499, der als periodischer Ere
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **START**: Startet die periodische Generierung von `EO`-Ereignissen.
     - **Verbundene Daten**: `DT`
 - **STOP**: Stoppt die Generierung von `EO`-Ereignissen.
 
 ### **Ereignis-Ausgänge**
+
 - **EO (Event Output)**: Das zyklisch ausgelöste Ausgangsereignis.
 
 ### **Daten-Eingänge**
+
 - **DT (Delay Time)**: Die Zeitdauer zwischen den einzelnen `EO`-Ereignissen (Datentyp: `TIME`).
 
 ## Funktionsweise
+
 Die Funktionalität des `E_CYCLE` basiert intern auf einer Rückkopplungsschleife mit einem `E_DELAY`-Baustein.
 
 1.  **Starten des Zyklus**:
@@ -35,11 +40,13 @@ Die Funktionalität des `E_CYCLE` basiert intern auf einer Rückkopplungsschleif
     - Der Timer wird gestoppt und es werden keine weiteren `EO`-Ereignisse mehr generiert, bis ein erneutes `START`-Ereignis eintrifft.
 
 ## Technische Besonderheiten
+
 - **Ereignisgenerator**: Der Baustein erzeugt eine Kette von Ereignissen, keinen kontinuierlichen Zustand (wie z.B. eine Rechteckwelle). Um ein Blinken zu realisieren, müsste das `EO`-Ereignis beispielsweise einen `E_T_FF` (Toggle Flip-Flop) ansteuern.
 - **Präzise Zeitsteuerung**: Ermöglicht eine genaue Definition der Zykluszeit über den `TIME`-Datentyp.
 - **Ereignisgesteuerte Architektur**: Die gesamte Steuerung (Start/Stopp) erfolgt rein ereignisbasiert.
 
 ## Anwendungsszenarien
+
 - **Taktgeber**: Periodisches Anstoßen von anderen Funktionsblöcken in einem festen Takt (z.B. für Abtastungen oder Berechnungen).
 - **Blinker/Warnleuchten**: Als Impulsgeber für einen nachgeschalteten Flip-Flop, um ein visuelles Signal zu erzeugen.
 - **Watchdog**: Periodisches Senden eines "Lebenszeichens". Wenn das Signal ausbleibt, kann ein Fehler erkannt werden.
@@ -75,4 +82,5 @@ Die Funktionalität des `E_CYCLE` basiert intern auf einer Rückkopplungsschleif
 * [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
+
 Der `E_CYCLE`-Baustein ist ein essenzielles Werkzeug für alle Anwendungen, die eine periodische oder zyklische Logik erfordern. Er implementiert auf einfache Weise einen Taktgeber, dessen Frequenz über den `DT`-Parameter präzise eingestellt werden kann. Sein rein ereignisbasiertes Verhalten macht ihn zu einer effizienten und fundamentalen Komponente in der IEC 61499-Systemarchitektur.

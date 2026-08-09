@@ -17,6 +17,7 @@ Die Übung demonstriert den Einsatz von:
 ## Verwendete Funktionsbausteine (FBs)
 
 ### AULI_FB_CTD
+
 - **Typ**: `adapter::iec61131::counters::AULI_FB_CTD`
 - **Beschreibung**: Rückwärtszähler (Count Down) für ULINT-Datentyp in Adapter-Ausführung. Er besitzt die Ereigniseingänge `CD` (Count Down), `LD` (Load) sowie die Datenausgänge `Q` (Null erreicht) und `CV` (aktueller Zählwert).
 - **Parameter**: keine
@@ -26,6 +27,7 @@ Die Übung demonstriert den Einsatz von:
   - `CV` (Current Value) wird auf `AULI_TO_ALR` gegeben
 
 ### AULI_ULINT_TO_ULI
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_ULINT_TO_ULI`
 - **Beschreibung**: Konvertiert ULINT in ULINT (hier eher als Initialisierung genutzt). Der Parameter `OUT` wird auf `ULINT#10` gesetzt, d.h. der Zähler startet bei 10.
 - **Parameter**: 
@@ -34,6 +36,7 @@ Die Übung demonstriert den Einsatz von:
 - **Datenausgang**: `AULI_OUT` → `PV` des Zählers
 
 ### Input_CD (logiBUS_IXA)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Digitaler Eingang für das Count-Down-Signal (Tasteneingang `Input_I1`). Aktiv bei TRUE.
 - **Parameter**: 
@@ -41,6 +44,7 @@ Die Übung demonstriert den Einsatz von:
   - `Input = Input_I1`
 
 ### Input_LD (logiBUS_IXA)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Digitaler Eingang für das Load-Signal (Tasteneingang `Input_I2`). Aktiv bei TRUE.
 - **Parameter**: 
@@ -48,6 +52,7 @@ Die Übung demonstriert den Einsatz von:
   - `Input = Input_I2`
 
 ### Output_Q1 (logiBUS_QXA)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Beschreibung**: Digitaler Ausgang, der gesetzt wird, wenn der Zählwert Null erreicht (`Q` des Zählers).
 - **Parameter**: 
@@ -55,6 +60,7 @@ Die Übung demonstriert den Einsatz von:
   - `Output = Output_Q1`
 
 ### AULI_TO_ALR
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_TO_ALR`
 - **Beschreibung**: Konvertiert den aktuellen ULINT-Zählwert in einen LREAL-Wert für die physische Ausgabe (AR).
 - **Ereignisse**: keine direkte Ereignisverbindung
@@ -63,6 +69,7 @@ Die Übung demonstriert den Einsatz von:
   - `ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys`
 
 ### Q_NumericValue_PHYSA_LREAL
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Beschreibung**: Gibt den übergebenen LREAL-Wert als formatierten numerischen String auf einem Terminal aus (Objekt `OutputNumber_N3`).
 - **Parameter**: 
@@ -101,4 +108,5 @@ Die Übung `Uebung_219b_ALR` realisiert einen IEC 61131-3 konformen Rückwärtsz
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

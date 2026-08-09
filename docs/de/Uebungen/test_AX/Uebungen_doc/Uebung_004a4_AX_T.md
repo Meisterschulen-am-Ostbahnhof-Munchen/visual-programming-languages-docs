@@ -4,12 +4,14 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung eines **Toggle-Flipflops (AX_FB_T_FF)** mit Hilfe von Adaptern.  
 Ein Toggle-Flipflop ändert bei jedem positiven Taktimpuls (CLK) seinen Ausgangszustand (Q1) und kann über den Rücksetzeingang (RST) auf `FALSE` gesetzt werden.
 
 Die Eingänge werden über zwei logiBUS-Digital-Eingabebausteine (Input_I1 und Input_I2) realisiert, der Ausgang über einen logiBUS-Digital-Ausgabebaustein (Output_Q1).
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die SubApp enthält folgende Funktionsbausteine:
 
 - **DigitalInput_RST**  
@@ -33,9 +35,11 @@ Die SubApp enthält folgende Funktionsbausteine:
   - *Verbindet den Flipflop-Ausgang mit dem physischen Ausgang Output_Q1.*
 
 ### Sub-Bausteine:
+
 Es wurden keine weiteren SubApp-Bausteine innerhalb dieser Übung verwendet.
 
 ## Programmablauf und Verbindungen
+
 Die Funktionsbausteine sind über **Adapterverbindungen** (keine klassischen Event-/Datenverbindungen) verknüpft:
 
 1. **Reset-Signal (RST):**  
@@ -56,6 +60,7 @@ Die Funktionsbausteine sind über **Adapterverbindungen** (keine klassischen Eve
 - Ein aktiver Reset (TRue) setzt den Ausgang sofort auf `FALSE` und hält ihn dort, bis der Reset wieder wegfällt und ein neuer Takt kommt.
 
 ## Zusammenfassung
+
 Mit dieser Übung wird die Anwendung eines **Toggle-Flipflops** über Adapterverbindungen in der 4diac-IDE vermittelt.  
 
 - Lernziele:  
@@ -70,4 +75,5 @@ Die Übung eignet sich zum Einstieg in die sequentielle Logik mit Speicherverhal
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

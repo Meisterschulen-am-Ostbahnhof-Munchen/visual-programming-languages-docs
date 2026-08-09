@@ -1,4 +1,5 @@
 # FIELDBUS_DWORD_TO_SIGNAL_SCALED
+
 ![FIELDBUS_DWORD_TO_SIGNAL_SCALED](./FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -8,21 +9,15 @@ The function block **FIELDBUS_DWORD_TO_SIGNAL_SCALED** converts a fieldbus DWORD
 |----------|-----|---------------|
 | INIT | EInit | Initialization request; passes scaling parameters |
 | REQ | Event | Normal execution request for processing the input |
-
-
 | Event | Type | Description |
 |----------|-----|--------------|
 | INITO | EInit | Initialization Acknowledgement |
 | CNF | Event | Execution Acknowledgement; returns scaled output and validity flag |
-
-
 | Name | Type | Initial Value | Description |
 |--------|-------|-----------------------|--------------|
 | IN | DWORD | NOT_AVAILABLE_DWM | Input value from the fieldbus |
 | SCALE | LREAL | LREAL#1.0 | Scaling factor (multiplier) |
 | OFFSET | DINT | DINT#0 | Offset added after scaling |
-
-
 | Name | Type | Initial Value | Description |
 |-------|-------|--------------|--------------|
 | OUT | LREAL | LREAL#0.0 | Scaled output value |
@@ -32,30 +27,32 @@ The function block **FIELDBUS_DWORD_TO_SIGNAL_SCALED** converts a fieldbus DWORD
 No adapters available.
 
 ### **Adapter**
+
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ## Functionality
+
 The function block has two states: **INIT** and **REQ**.
 
 - **INIT state**: Triggered by the INIT event. The associated algorithm is empty, meaning no further actions are performed. The INITO output confirms the completion of the initialization.
 - **REQ state**: Triggered by the REQ event. The REQ algorithm performs the following steps:
-
 1. Checks whether the input value IN, interpreted as a UDINT, is less than or equal to the constant `VALID_SIGNAL_DW`.
-
 2. If this condition is met, the signal is considered valid:
-
 - `OUT` is calculated as: `UDINT_TO_LREAL(DWORD_TO_UDINT(IN)) * SCALE + DINT_TO_LREAL(OFFSET)`
 - `VALID` is set to `TRUE`.
-
 3. Otherwise (signal invalid):
-
 - `OUT` is set to `0.0`.
 - `VALID` is set to `FALSE`.
-
 4. The CNF event is then triggered, providing the results (OUT, VALID).
 
 The constants `NOT_AVAILABLE_DWM` and `VALID_SIGNAL_DW` are taken from imported libraries and define which DWORD values are considered "not available" and "valid," respectively.
@@ -67,7 +64,6 @@ The constants `NOT_AVAILABLE_DWM` and `VALID_SIGNAL_DW` are taken from imported 
 
 - The function block is implemented as a SimpleFB and is suitable for cyclic processing.
 
-
 | State | Trigger | Action | Output |
 |---------|----------|---------|---------|
 | INIT | INIT Event | INIT Algorithm (empty) | INITO |
@@ -78,7 +74,6 @@ The function block does not require state transitions between INIT and REQ – b
 - **Agricultural Fieldbus Controllers**: Conversion of raw DWORD sensor values (e.g., rotational speeds, pressures) into physical units, taking sensor characteristics into account.
 - **Scaling of Analog Values**: When a fieldbus device delivers a 32-bit raw value that must first be converted into a normalized value (e.g., 0-100%) using a factor and offset.
 - **Signal Validation**: Only valid signals (within a defined range) are processed further; for invalid values, a defined zero value is output.
-
 - **FIELDBUS_DWORD_TO_SIGNAL**: A similar function block without scaling capabilities, which outputs the raw value directly as LREAL.
 - **FIELDBUS_DWORD_TO_SIGNAL_SCALED** additionally offers the parameters `SCALE` and `OFFSET` for flexible conversion.
 - **Event-driven converters**: Other function blocks may use different validation logic (e.g., bitmasks) or support different fieldbus types.
@@ -88,7 +83,11 @@ This function block combines signal validation with a simple linear transformati
 The `FIELDBUS_DWORD_TO_SIGNAL_SCALED` is a compact and reusable function block for processing fieldbus signals. It enables reliable validity checking and simultaneous scaling in a single step. Due to the clear separation of initialization and processing, it is suitable for both one-time and cyclic calls in automation systems, particularly in agricultural technology.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

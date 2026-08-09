@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) zur Anbindung des Bosch MM7.10 IMU‑Sensors über CAN/J1939. Er ermöglicht das Auslesen von Beschleunigungs‑, Drehraten‑ und Neigungswerten sowie die Überwachung von System‑ und Fehlerzuständen. Der FB kapselt die gesamte CAN‑Kommunikation und Signalverarbeitung und stellt die Daten standardisiert über Ereignis‑ und Datenausgänge zur Verfügung.
 
 ## Schnittstellenstruktur
@@ -56,14 +57,17 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 | sErrorMsg | STRING | Fehlertext (z. B. „CAN timeout“). |
 
 ### **Adapter**
+
 Keine Adapter definiert.
 
 ## Funktionsweise
+
 Der FB_MM710_IMU initialisiert beim Eintreffen von **INIT** mit QI = TRUE die CAN‑Kommunikation und den internen Empfangspuffer. Nach erfolgreicher Initialisierung wird **INITO** mit QO = TRUE gesetzt. Durch jeden **REQ‑Impuls** wird eine Messwertabfrage ausgelöst – der Baustein wartet dann auf die CAN‑Antwort des Sensors. Sind gültige Daten empfangen, wird **CNF** ausgegeben und alle Datenausgänge aktualisiert. Tritt ein Kommunikations‑ oder CRC‑Fehler auf oder überschreitet der Nachrichtenzähler einen Timeout, wird stattdessen **ERROR** gesetzt. Der Baustein kann mehrfach hintereinander zyklisch mit REQ getriggert werden.
 
 Die Signal‑Status (eStatus*) ermöglichen eine Einzelfehleranalyse für jede Achse. Der Hardware‑Index unterscheidet zwischen älteren MM5.10 und aktuellen MM7.10 Sensoren.
 
 ## Technische Besonderheiten
+
 - **CAN/J1939‑Protokoll** – Verwendung einer festen Source‑Address (Standard: `16#DA`).
 - **Time‑out‑Überwachung** – Der `uiMessageCounter` (0‑15) wird bei jeder gültigen Nachricht hochgezählt; bleibt er aus, wird nach 16 fehlenden Nachrichten ein Kommunikationsfehler gemeldet.
 - **Signal‑Status‑Bits** – Liefern granularere Informationen als einfache „ready/error“-Flags.
@@ -71,6 +75,7 @@ Die Signal‑Status (eStatus*) ermöglichen eine Einzelfehleranalyse für jede A
 - **Hardware‑Unterscheidung** – `uiHW_Index` erlaubt adaptives Verhalten für unterschiedliche Sensor‑Versionen.
 
 ## Zustandsübersicht
+
 Der Baustein durchläuft folgende Zustände (nicht explizit als ECC, aber aus dem Verhalten ableitbar):
 
 1. **Inaktiv** – Nach dem Start, wartet auf INIT.
@@ -81,13 +86,16 @@ Der Baustein durchläuft folgende Zustände (nicht explizit als ECC, aber aus de
 6. **Fehler** – Bei Timeout oder CRC‑Fehler; ERROR wird gesendet (Rückfall in Bereit nach Fehlerbehandlung).
 
 ## Anwendungsszenarien
+
 - **Mobile Arbeitsmaschinen** – Neigungs‑ und Beschleunigungsüberwachung von Baggern, Kränen oder Gabelstaplern.
 - **Fahrzeugdynamik** – Erfassung von Roll‑, Pitch‑ und Yaw‑Winkeln für Stabilitätskontrollen.
 - **Industrieroboter** – Überwachung von Vibrationen und unerwarteten Bewegungen.
 - **IoT‑Sensorknoten** – Einbindung in übergeordnete Steuerungen mittels CAN‑Bus.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Gegenüber einfachen IMU‑Treibern (z. B. per SPI/I²C) bietet dieser FB eine direkte Integration in J1939‑Netzwerke. Die Signal‑Status‑Bits ermöglichen eine Diagnose, die bei Standard‑Bausteinen oft fehlt. Der integrierte Hardware‑Index (MM5.10 / MM7.10) erlaubt eine einfache Migration. Andere CAN‑IMU‑Bausteine verwenden ggf. proprietäre Nachrichtenformate, während dieser FB auf dem offenen J1939‑Standard basiert.
 
 ## Fazit
+
 Der FB_MM710_IMU ist ein mächtiger Baustein für die zuverlässige Erfassung von IMU‑Daten in CAN‑basierten Automatisierungssystemen. Seine umfangreichen Status‑ und Fehlerinformationen unterstützen eine lückenlose Diagnose, und die einfache Parametrisierung über INIT und REQ macht ihn flexibel einsetzbar. Besonders in sicherheitskritischen Anwendungen mit J1939 ist er eine optimale Wahl.

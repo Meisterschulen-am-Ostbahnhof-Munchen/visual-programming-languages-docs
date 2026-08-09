@@ -1,4 +1,5 @@
 # Exercise_080e4: Example of an E_CTU with Event Brake using E_D_FF_ANY
+
 ![Uebung_080e4_network](./Uebung_080e4_network.svg)
 
 * * * * * * * * * *
@@ -17,17 +18,17 @@ E_D_FF` | `iec61499::events::E_D_FF` | Standard D flip-flop for binary output |
 Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = OutputNumber_N1` (Output of a numerical value) |
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `Output = Output_Q1` (Digital output) |
 
-
 ## Program Flow and Connections
+
 ## Function Blocks Used (FBs)
+
 ## Introduction
+
 ### Event and Data Flow
 
 1. **Generating Count Pulses**
 
 The clock generator `E_CYCLE` is started as soon as `DigitalInput_CLK_I1` sends an event (`IND`). It is stopped by an event from `DigitalInput_CLK_I2`.
-
-
 
 1. **Generating Count Pulses**
 
@@ -43,7 +44,6 @@ The counter outputs two events:
 
 - `CUO` (Counter Overflow) – becomes active when the counter value `CV` reaches the parameter `PV` (here 5).
 - `RO` (Reset Overflow) – is activated when the counter is reset and exceeds its range (not relevant here, but both events are used).
-
 4. **Event Distribution and Merging**
 
 CUO` and `RO` are jointly routed to input `EI` of `E_SPLIT_4`.
@@ -73,22 +73,15 @@ The output `DigitalOutput_Q1` is therefore always activated when the counter rea
 - Applying an **E_D_FF_ANY with hysteresis and minimum time** to suppress short-term changes (event dampening).
 - Interaction of **numeric and digital outputs** based on counter events.
 
-
 **Advanced** – Basic knowledge of the 4diac IDE and IEC 61499 event/data flows is required.
 
 - Fundamentals of the 4diac IDE: Creating sub-applications, connecting function blocks.
 - Understanding of event and data edges.
 - Experience with logiBUS and isobus libraries (when using hardware simulation).
-
-
 1. Import the sub-application `Uebung_080e4` into your 4diac project.
-
 2. Ensure that the required libraries (`logiBUS`, `iec61499`, `isobus`) are available.
-
 3. Assign the inputs/outputs `Input_I1`, `Input_I2`, `Output_Q1`, and `OutputNumber_N1` to appropriate hardware or simulation addresses.
-
 4. Start the execution and observe the behavior when the buttons are pressed (I1 start/stop clock, I2 reset).
-
 
 This exercise demonstrates how an **E_CTU** can output both a **stabilized counter value** and an **immediate binary status** using **E_D_FF_ANY** and **E_D_FF**. Event processing via split/merge ensures that both overflow and reset events are treated equally. This is typical for applications where a counter value is only processed after a certain settling time (e.g., debouncing sensor data).
 
@@ -98,10 +91,14 @@ This exercise demonstrates how an **E_CTU** can output both a **stabilized count
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
-
 ### Learning Objectives
+
 ### Difficulty Level
+
 ### Benötigte Vorkenntnisse
+
 ### Starten der Übung
+
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

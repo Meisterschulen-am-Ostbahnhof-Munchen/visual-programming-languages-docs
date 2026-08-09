@@ -10,17 +10,21 @@ Der Funktionsblock **SPLIT_AL_INTO_AB** dient dazu, einen über einen **AL-Adapt
 ## Schnittstellenstruktur
 
 ### Ereignis-Eingänge
+
 - **IN** (Socket, Typ: `adapter::types::unidirectional::AL`):  
   Der integrierte Ereignis-Ausgang **E1** des AL-Adapters löst die Verarbeitung aus. Ein eingehendes Ereignis am Adapter IN startet die Zerlegung des gleichzeitig anliegenden Datenwertes.
 
 ### Ereignis-Ausgänge
+
 Die Ausgangsadapter **BYTE_00** bis **BYTE_07** (Plugs, Typ: `adapter::types::unidirectional::AB`) verfügen jeweils über einen Ereignis-Eingang **E1**, der nach erfolgter Datenübernahme ausgelöst wird. Diese Ereignisse werden vom internen Netzwerk generiert und signalisieren, dass das zugehörige Byte gültig am Datenausgang des Adapters anliegt.
 
 ### Daten-Eingänge
+
 - **IN** (Socket, Typ: `adapter::types::unidirectional::AL`):  
   Liefert den zu zerlegenden 64-Bit-Datenwert über den Daten-Eingang **D1** des Adapters (Typ LWORD).
 
 ### Daten-Ausgänge
+
 - **BYTE_00** bis **BYTE_07** (Plugs, Typ: `adapter::types::unidirectional::AB`):  
   Jeder dieser Adapter stellt über seinen Daten-Ausgang **D1** ein einzelnes Byte (BYTE) zur Verfügung. Die Zuordnung ist:
 
@@ -30,6 +34,7 @@ Die Ausgangsadapter **BYTE_00** bis **BYTE_07** (Plugs, Typ: `adapter::types::un
   - BYTE_07: höchstwertigstes Byte (Bit 56…63)
 
 ### Adapter
+
 - **IN**: Socket (AL – Adapter Long Word) – aufnehmender Adapter  
 - **BYTE_00 … BYTE_07**: Plugs (AB – Adapter Byte) – abgebende Adapter
 
@@ -79,4 +84,5 @@ Der Baustein selbst besitzt keinen eigenen, sichtbaren Zustandsautomaten. Die in
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

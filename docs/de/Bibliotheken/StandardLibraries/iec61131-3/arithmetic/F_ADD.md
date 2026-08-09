@@ -7,21 +7,26 @@
 ![F_ADD](F_ADD.svg)
 
 ## Einführung
+
 Der **F_ADD** ist ein standardkonformer arithmetischer Funktionsbaustein nach IEC 61131-3, entwickelt von der TU Wien ACIN unter EPL-2.0 Lizenz. Version 1.0 ermöglicht eine typsichere Addition von Werten (ANY_MAGNITUDE) für industrielle Steuerungsanwendungen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_MAGNITUDE): Erster Operand
 - `IN2` (ANY_MAGNITUDE): Zweiter Operand
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_MAGNITUDE): Summe von IN1 und IN2
 
 ## Funktionsweise

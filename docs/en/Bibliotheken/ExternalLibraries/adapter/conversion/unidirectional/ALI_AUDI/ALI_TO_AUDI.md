@@ -1,8 +1,10 @@
 # ALI_TO_AUDI
+
 ![ALI_TO_AUDI](./ALI_TO_AUDI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ALI_TO_AUDI** is a composite block that converts an ALI adapter (LINT) into an AUDI adapter (UDINT). It serves as a unidirectional converter between two different data type adapters for the IEC 61499 profile interface. The conversion is performed using an internal block *F_LINT_TO_UDINT* from the IEC 61131 library.
 ## Interface Structure
 
@@ -38,6 +40,7 @@ As soon as the ALI_IN adapter receives an event (E1), the associated LINT data v
 The conversion from LINT (64-bit signed) to UDINT (32-bit unsigned) is unsigned and can lead to overflows or information loss for values outside the UDINT range (0 … 4,294,967,295).
 
 ## Technical Features
+
 - **Composite Function Block**: The function block consists of an internal network with a single conversion block.
 - **Unidirectional Adapter-to-Adapter Converter**: Data flows only from ALI_IN to AUDI_OUT.
 - **No State Logic**: The function block has no internal state machine; the conversion occurs deterministically with each event.
@@ -47,11 +50,13 @@ The conversion from LINT (64-bit signed) to UDINT (32-bit unsigned) is unsigned 
 The function block does not have its own state machine. The state is determined solely by the internal block *F_LINT_TO_UDINT*, which performs a one-time conversion with each REQ event and immediately delivers the result.
 
 ## Application Scenarios
+
 - **System Integration**: When one system component (e.g., sensor, drive) provides an ALI adapter (LINT), while another component expects an AUDI adapter (UDINT).
 - **Protocol Adaptation**: In heterogeneous control environments where different IEC 61499 adapter profiles for integers are used.
 - **Migration**: Exchange of 64-bit LINT values for 32-bit UDINT values, provided the value range limits are respected.
 
 ## Comparison with Similar Function Blocks
+
 - **F_LINT_TO_UDINT (direct)**: This function block performs pure data conversion without an adapter. *ALI_TO_AUDI* encapsulates this function in an adapter-based interface.
 - **ALI_TO_xxx/Converter**: Other adapter converters (e.g., ALI_TO_BOOL, ALI_TO_REAL) use analogous mechanisms but differ in target type and value range.
 

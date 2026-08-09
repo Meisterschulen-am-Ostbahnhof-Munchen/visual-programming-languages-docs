@@ -1,9 +1,12 @@
 # quarterconst
+
 ## 🎧 Podcast
+
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 ----
 * * * * * * * * * *
 ## Introduction
+
 Global constants for quarter values.
 
 ## Metadata
@@ -17,5 +20,5 @@ Global constants for quarter values.
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
+* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

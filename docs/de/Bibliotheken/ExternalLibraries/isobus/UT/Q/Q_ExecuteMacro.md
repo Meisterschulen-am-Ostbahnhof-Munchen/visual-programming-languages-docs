@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ExecuteMacro** ist ein standardkonformer Funktionsbaustein zur Ausführung von Makros in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.48) Spezifikation für VT ab Version 4.
 
 ![Q_ExecuteMacro](Q_ExecuteMacro.svg)
@@ -12,17 +13,21 @@ Der **Q_ExecuteMacro** ist ein standardkonformer Funktionsbaustein zur Ausführu
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Makro-ID)
 - `REQ`: Makroausführungs-Anforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Ausführungsbestätigung (mit Status)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Makro-Objekt-ID (max. Wert 255)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `s16result` (INT): ISO-konformer Ergebniscode
 

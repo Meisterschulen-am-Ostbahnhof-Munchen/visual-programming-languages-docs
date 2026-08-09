@@ -1,6 +1,8 @@
 # RT_E_REND
+
 * * * * * * * * * *
 ## Introduction
+
 Real-time version of the E_REND block (Rendezvous). Waits for two events.
 ![RT_E_REND](RT_E_REND.svg)
 ## Metadata
@@ -14,6 +16,7 @@ Real-time version of the E_REND block (Rendezvous). Waits for two events.
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

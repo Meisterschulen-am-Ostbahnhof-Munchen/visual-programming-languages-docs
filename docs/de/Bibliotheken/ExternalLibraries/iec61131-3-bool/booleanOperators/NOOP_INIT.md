@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **NOOP_INIT** (No Operation with INIT) dient als einfacher Durchschalt- oder Platzhalterbaustein. Er ermöglicht die Initialisierung sowie die normale Datenweitergabe eines Booleschen Signals von einem Eingang zu einem Ausgang. Die Besonderheit liegt in der zusätzlichen Behandlung des INIT-Ereignisses, das sowohl eine Bestätigung (INITO) als auch eine Datenweitergabe auslöst.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Kommentar |
@@ -34,9 +36,11 @@ Der Funktionsblock **NOOP_INIT** (No Operation with INIT) dient als einfacher Du
 | OUT  | BOOL | Ausgangssignal (entspricht IN nach einem Durchlauf) |
 
 ### **Adapter**
+
 Keine Adapter vorhanden.
 
 ## Funktionsweise
+
 Der Baustein verarbeitet eingehende Ereignisse wie folgt:
 
 1. **INIT-Ereignis**:
@@ -49,31 +53,37 @@ Der Baustein verarbeitet eingehende Ereignisse wie folgt:
 Im Ergebnis wird sowohl bei INIT als auch bei REQ eine Datenweitergabe durchgeführt und jeweils ein Bestätigungsereignis erzeugt. Der Datenausgang `OUT` entspricht stets dem zuletzt übernommenen Wert des Eingangs `IN`.
 
 ## Technische Besonderheiten
+
 - Der Baustein nutzt intern eine Instanz des Standard-FBs `iec61131::selection::F_MOVE` für die Datenkopie.
 - Die INIT-Behandlung ist zweigeteilt: Sie quittiert sofort mit `INITO` und führt parallel die Datenweitergabe aus. Dies kann für Initialisierungssequenzen nützlich sein, bei denen das System nach der ersten Übergabe eines Startwerts arbeiten soll.
 - Es sind keine internen Zustände oder Timings vorhanden; die Reaktion erfolgt ereignisgesteuert.
 
 ## Zustandsübersicht
+
 Der FB besitzt keinen expliziten Zustandsautomaten, das Verhalten ist rein ereignisgesteuert:
 
 - Im Ruhezustand (kein Ereignis) warten die Eingänge.
 - Bei **INIT** oder **REQ** wird die Datenkopie gestartet; nach deren Abschluss wird `CNF` gesendet. Bei INIT wird zusätzlich sofort `INITO` emittiert.
 
 ## Anwendungsszenarien
+
 - **Platzhalter** in der Entwicklungsphase: Anstatt eines komplexen Bausteins wird NOOP_INIT eingefügt, um Datenflüsse zu testen.
 - **Debugging**: Das explizite INIT-Ereignis kann verwendet werden, um einen initialen Wert zu setzen und gleichzeitig eine Bestätigung zu erhalten.
 - **Signalkopplung**: Wenn ein Signal unverändert weitergeleitet werden muss, aber die INIT-Schnittstelle eines nachfolgenden Bausteins bedient werden soll.
 - **Test von Initialisierungssequenzen**: Simulation einer Startroutine, die einen Wert setzt und quittiert.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **NOOP (ohne INIT)**: Einfacher Durchschaltbaustein ohne Initialisierungsereignis. NOOP_INIT erweitert dies um die INIT/INITO-Paarung.
 - **MOVE (direkt)**: Ein reiner Datenkopierer ohne Ereignissteuerung; NOOP_INIT bietet eine ereignisgesteuerte Version mit Bestätigungen.
 - **E_CYCLE oder E_PERMIT**: Diese Bausteine steuern Ereignisse, übertragen aber keine Daten. NOOP_INIT kombiniert Datenweitergabe mit Ereignisweiterleitung.
 
 ## Fazit
+
 Der Funktionsblock **NOOP_INIT** ist ein einfacher, aber flexibler Hilfsbaustein für den ereignisgesteuerten Datentransport. Durch die Kombination von INIT- und REQ-Ereignissen eignet er sich besonders für Initialisierungsabläufe und Testumgebungen. Seine interne Struktur macht ihn leicht verständlich und gut in bestehende 4diac-Netzwerke integrierbar.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

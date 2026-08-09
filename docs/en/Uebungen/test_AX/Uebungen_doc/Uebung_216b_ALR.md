@@ -1,12 +1,15 @@
 # Exercise_216b_ALR: Standard IEC 61131-3 ADI_FB_CTD (Adapter Version, DINT) with Terminal Output (PHYS)
+
 ![Uebung_216b_ALR_network](./Uebung_216b_ALR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-3 using an adapter-based function block `ADI_FB_CTD`. The counter value is output to an alphanumeric terminal (PHYS) via an adapter conversion chain. Additionally, a digital output is set when the counter value reaches zero. This exercise illustrates the integration of logiBUS inputs, adapter conversions, and terminal output in a compact sub-application.
 ## Function Blocks (FBs) Used
 
 ### Internal Function Blocks
+
 - **ADI_FB_CTD** (Type: `adapter::iec61131::counters::ADI_FB_CTD`)
 - **Description**: Adapter version of an IEC 61131-3 down counter (CTD). The block decrements the current value (`CV`) by 1 on each falling edge at the event input `CD`. The preset value is loaded via the adapter input `PV` as soon as the input `LD` is activated. The output `Q` is set as soon as `CV` reaches the value 0.
 - **Parameters**: (no explicit parameters set – uses default values)
@@ -47,15 +50,10 @@ Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-
 ## Program Flow and Connections
 
 1. **Initialization**: When the subapplication starts, the function block `Input_LD` becomes active and triggers the event `INITO`. This event triggers `ADI_DINT_TO_DI.REQ`, so the preset value (DINT#10) is applied to the adapter output `ADI_OUT`.
-
 2. **Load Preset**: The preset value is transferred via the adapter connection to input `PV` of the counter `ADI_FB_CTD`. Simultaneously, the event `INITO` activates the load input `LD` of the counter. (The event connection `Input_LD.INITO` only goes to `ADI_DINT_TO_DI.REQ`, not directly to the counter. However, `Input_LD.IN` is connected to `ADI_FB_CTD.LD` – this connection is implemented as an adapter connection and transmits the digital signal. The initialization of `Input_LD` presumably sets the input `LD` to TRUE, so that the counter loads the preset.)
-
 3. **Counting Operation**: The digital input `Input_CD` (pin I1) supplies the counter with the counting pulses via the adapter input `CD`. On each falling edge (or as defined by the adapter), the counter decrements the current value `CV` by 1.
-
 4. **Output Status**: As soon as `CV` reaches 0, the counter sets the output `Q` to TRUE. This is then passed to the physical output Q1 via `Output_Q1`.
-
 5. **Terminal Output**: The current counter value (`CV`) is converted into an alphanumeric format via the adapter `ADI_TO_ALR` and passed to the terminal module `Q_NumericValue_PHYSA_LREAL`. This outputs the value to the configured terminal `OutputNumber_N3`. Note the comment: Negative values are also possible here (due to the counter overflowing below 0).
-
 6. **Notes**: The comment suggests possibly including a `AX_D_FF` (flip-flop) to reduce the event rate. This would be useful for very fast counting pulses to reduce the load on the terminal output.
 
 ### Connection Overview (Adapter Connections)
@@ -74,4 +72,5 @@ Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-
 - `Input_LD.INITO` → `ADI_DINT_TO_DI.REQ`
 
 ## Summary
+
 This exercise demonstrates the use of an IEC 61131-3 down counter in an adapter-based environment. By combining logiBUS inputs/outputs, DINT conversion, and alphanumeric terminal output, a complete, practical metering circuit is simulated. The user learns how to connect adapters and utilize event-driven controls. Particular emphasis is placed on the correct initialization of the preset value and the output of the meter reading (including negative values) to a terminal.

@@ -92,12 +92,15 @@ Lang-Typen akzeptieren auch die kurzen Varianten:
 ## Veraltete Konvertierungen & F_MOVE
 
 ### 1. Deprecated Konvertierungsbausteine
+
 Alle alten Identitäts-Konvertierungsbausteine aus dem Ordner `convert-1.0.0` (wie z. B. `BOOL2BOOL`, `INT2INT`, `DINT2DINT`, `REAL2REAL`, `STRING2STRING` etc.) sind **veraltet (deprecated)** und dürfen nicht mehr verwendet werden.
 
 ### 2. Verwendung von `F_MOVE`
+
 Für das Kopieren bzw. Weiterleiten von Werten desselben Typs muss stattdessen der generische Baustein `F_MOVE` (`iec61131::selection::F_MOVE`) verwendet werden.
 
 ### 3. Konfiguration von `F_MOVE`
+
 Da `F_MOVE` generisch ist, muss er in XML-Netzwerkdateien über das Attribut `DataType` auf den gewünschten Zieldatentyp konfiguriert werden. 
 
 **Beispiel-Konfiguration in der XML:**
@@ -121,6 +124,7 @@ Wenn eine Zuweisung (in ST) oder eine Verbindung (im FB-Netzwerk) nicht implizit
 In FORTE / 4diac werden Konvertierungen von Bit-Strings (wie `DWORD`, `WORD`, `BYTE`) zu numerischen Typen (`REAL`, `INT`, `DINT` etc.) als Bit-Ebene **`reinterpret_cast`** ausgeführt. Das bedeutet, dass die Bitmuster direkt kopiert werden, ohne den mathematischen Wert anzupassen. Dies gilt gleichermaßen für ST-Funktionsaufrufe wie für grafische Konvertierungsbausteine.
 
 #### Szenario A: Im DWORD ist ein Zahlenwert (z.B. UDINT) gespeichert
+
 Wenn in einem `DWORD` ein numerischer Ganzzahlwert (z. B. 123) abgelegt ist und dieser als Fließkommazahl (`REAL`) ausgegeben werden soll:
 
 * **Falsch:**
@@ -139,6 +143,7 @@ Wenn in einem `DWORD` ein numerischer Ganzzahlwert (z. B. 123) abgelegt ist und 
   * *Erklärung:* `DWORD_TO_UDINT` kopiert das Bitmuster (123 bleibt 123 als UDINT). `UDINT_TO_REAL` führt dann die echte mathematische Umwandlung in die Fließkommazahl `123.0` durch.
 
 #### Szenario B: Im DWORD ist bereits ein IEEE-754 Float-Bitmuster gespeichert
+
 Wenn das `DWORD` direkt das Roh-Bitmuster einer Fließkommazahl enthält (z. B. eingelesen über ein Modbus-Register oder eine Netzwerk-Verbindung):
 
 * **Richtig:**
@@ -201,4 +206,5 @@ Dies betrifft insbesondere:
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

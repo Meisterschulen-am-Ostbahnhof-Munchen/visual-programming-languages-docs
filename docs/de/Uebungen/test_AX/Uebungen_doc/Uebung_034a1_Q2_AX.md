@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Kopplung eines numerischen Eingabewerts (über einen iSoBUS-Numeric-Value-Dienst) mit einem PWM‑Ausgang (logiBUS). Der vom Anwender eingegebene Zahlenwert wird direkt in ein PWM‑Signal umgesetzt und am Ausgang `Output_Q2` ausgegeben. Die Kommunikation zwischen den beiden Funktionsbausteinen erfolgt über eine Adapterverbindung, was eine modulare und flexible Verschaltung ermöglicht.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -54,4 +55,5 @@ Die Übung zeigt, wie eine numerische Benutzereingabe aus einem iSoBUS‑Dienst 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

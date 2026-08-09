@@ -1,9 +1,11 @@
 # AX_SR
+
 <img width="1186" height="279" alt="image" src="https://github.com/user-attachments/assets/da4a5f8e-5e9f-45f9-be8f-ac02a9cdb0ca" />
 ![AX_SR_ecc](./AX_SR_ecc.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The AX_SR function block is an event-driven bistable element (flip-flop) that functions as a set-reset memory. It allows setting and resetting a logical state and makes this state available via an adapter interface.
 
 ![AX_SR](AX_SR.svg)
@@ -11,22 +13,28 @@ The AX_SR function block is an event-driven bistable element (flip-flop) that fu
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **S**: Sets output Q to TRUE
 - **R**: Sets output Q to FALSE
 
 ### **Event Outputs**
+
 - No direct event outputs available
 
 ### **Data Inputs**
+
 - No data inputs available
 
 ### **Data Outputs**
+
 - No direct data outputs available
 
 ### **Adapters**
+
 - **Q**: Unidirectional adapter of type "adapter::types::unidirectional::AX", which provides the current state of the flip-flop
 
 ## Functionality
+
 The AX_SR function block operates as a set-reset flip-flop with the following properties:
 
 - On an S event, the internal state is set to SET and output Q to TRUE
@@ -45,9 +53,7 @@ As with all event-driven bistable elements in IEC 61499 (see also Note 8 in Tabl
 ## State Overview
 
 1. **START**: Initial state
-
 2. **SET**: State after S-event, output Q.D1 = TRUE
-
 3. **RESET**: State after R-event, output Q.D1 = FALSE
 
 State Transitions:
@@ -57,16 +63,19 @@ State Transitions:
 - RESET → SET: On S-event
 
 ## Application Scenarios
+
 - Storage of switching states in distributed control applications
 - State management via adapter interfaces
 - Signal processing with memory function
 - Monitoring of operating states
 
 ## Related Function Blocks
+
 - **[AX_RS](AX_RS.md)**: Functionally identical, inputs reversed in the symbol.
 - **[E_SR](../../../../../StandardLibraries/events/E_SR.md)**: The standard equivalent with direct data/event outputs instead of adapters.
 
 ## ⚖️ Comparison with Similar Building Blocks
+
 Compared to other memory elements, AX_SR offers:
 
 - Clear separation of set and reset functionality
@@ -77,6 +86,7 @@ Compared to other memory elements, AX_SR offers:
 Comparison with [E_SR](../../../../../StandardLibraries/events/E_SR.md)]
 
 ## 🛠️ Related Exercises
+
 * [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)]
 * [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)]
 * [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)]
@@ -90,4 +100,5 @@ Comparison with [E_SR](../../../../../StandardLibraries/events/E_SR.md)]
 * [Exercise_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Conclusion
+
 The AX_SR function block provides a reliable and easy-to-use solution for bistable memory functions in distributed automation systems. Through the use of adapters, it enables flexible integration into various system architectures and offers a clear, event-driven interface for Set-reset operations.

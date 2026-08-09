@@ -1,8 +1,10 @@
 # StringValue_IS
+
 ![StringValue_IS](./StringValue_IS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **StringValue_IS** function block is an input service interface function block (Input SIFB) for receiving string data from a resource. It serves as a standardized interface for integrating external string information into the 4diac environment. Typical applications include connecting to ISOBUS systems, where strings such as names, status messages, or identifiers are received.
 ## Interface Structure
 
@@ -60,6 +62,7 @@ The resource can send new data at any time. The function block signals this via 
 The outputs `IN`, `QO`, and `STATUS` are updated with each of the events `CNF` and `IND` and can be used immediately by subsequent function blocks.
 
 ## Technical Features
+
 - **Object ID:**
 
 The input `u16ObjId` is predefined with the initial value `ID_NULL`. Before first use, a valid object ID must be set. The actual meaning of the ID depends on the underlying resource protocol (e.g., ISOBUS object number).
@@ -86,6 +89,7 @@ The function block goes through the following basic states (not explicitly model
 - **Error State:** In case of communication errors. Can be reset by re-running `INIT`.
 
 ## Application Scenarios
+
 - **ISOBUS Control Units:**
 
 Receiving strings such as device names, variable names, or status messages from an ISOBUS server.
@@ -116,6 +120,7 @@ The **StringValue_IS** is an essential component for integrating string-based da
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

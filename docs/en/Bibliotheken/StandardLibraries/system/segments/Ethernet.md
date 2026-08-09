@@ -1,8 +1,11 @@
 # Ethernet
+
 * * * * * * * * * *
 ## Introduction
+
 An Ethernet network segment for connecting devices.
 ## Metadata
+
 | Attribute | Value |
 | :--- | :--- |
 | Copyright | (c) 2008 Profactor GmbH |
@@ -13,6 +16,7 @@ An Ethernet network segment for connecting devices.
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

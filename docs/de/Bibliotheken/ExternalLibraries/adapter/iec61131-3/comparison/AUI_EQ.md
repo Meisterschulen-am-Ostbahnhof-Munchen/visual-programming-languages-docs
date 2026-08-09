@@ -10,22 +10,27 @@ Der Funktionsblock AUI_EQ führt einen Gleichheitsvergleich zwischen zwei analog
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **IN1.E1** – Auslöser für den Vergleich (wird gesendet, wenn der erste Wert aktualisiert wird).
 - **IN2.E1** – Alternativer Auslöser für den Vergleich (wird gesendet, wenn der zweite Wert aktualisiert wird).
 
 Beide Ereignisse sind mit demselben internen Verarbeitungsereignis verbunden; der Vergleich wird bei Eintreffen eines der beiden Ereignisse angestoßen.
 
 ### **Ereignis-Ausgänge**
+
 - **OUT.E1** – Bestätigung, dass der Vergleich abgeschlossen ist und das Ergebnis am Datenausgang anliegt.
 
 ### **Daten-Eingänge**
+
 - **IN1.D1** – Erster zu vergleichender analoger Wert.
 - **IN2.D1** – Zweiter zu vergleichender analoger Wert.
 
 ### **Daten-Ausgänge**
+
 - **OUT.D1** – Ergebnis des Vergleichs: `true`, wenn `IN1.D1 == IN2.D1`, sonst `false`.
 
 ### **Adapter**
+
 - **IN1** (Socket) – Adapter vom Typ `adapter::types::unidirectional::AUI`, kapselt den ersten Eingangswert und das zugehörige Ereignis.
 - **IN2** (Socket) – Adapter vom Typ `adapter::types::unidirectional::AUI`, kapselt den zweiten Eingangswert und das zugehörige Ereignis.
 - **OUT** (Plug) – Adapter vom Typ `adapter::types::unidirectional::AX`, kapselt das Ergebnis und das Ausgangsereignis.

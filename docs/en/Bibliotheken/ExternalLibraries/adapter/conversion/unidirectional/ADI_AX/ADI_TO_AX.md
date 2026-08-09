@@ -1,8 +1,10 @@
 # ADI_TO_AX
+
 ![ADI_TO_AX](./ADI_TO_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ADI_TO_AX** function block is a composite module that performs a simple signal conversion between two adapter types. It converts a DINT value (type: *adapter::types::unidirectional::ADI*) received via the **ADI_IN** socket into a BOOL value and outputs it via the **AX_OUT** plug (type: *adapter::types::unidirectional::AX*). The conversion is performed by comparing the received DINT value with the constant value 0. If the value is not equal to 0, the BOOL output is set to TRUE; if they are equal, it is set to FALSE. This module is particularly suitable for connecting digital signal sources encoded as integers to Boolean interfaces.
 ## Interface Structure
 
@@ -46,12 +48,12 @@ Internally, the function block consists of a single function block **F_NE** of t
 `` 2. The data value **D1** of the ADI_IN adapter is applied to the **IN1** input of the **F_NE**. The second comparison value, **IN2**, is fixed to the value `DINT#0`.
 
 3. The **F_NE** compares `IN1 != IN2`. The result (BOOL) is output at the **OUT** output.
-
 4. After processing is complete, **F_NE.CNF** signals completion. This event is sent to the **E1** input of the AX_OUT adapter, which then passes the output value (also the **OUT** signal) to **D1** of the AX_OUT adapter.
 
 Thus, the function block implements a simple threshold logic: Any non-zero DINT value is interpreted as logically "true". The function block operates strictly event-driven – each incoming event triggers exactly one comparison and output action.
 
 ## Technical Features
+
 - **Adapter Coupling:** The function block is designed as a composite block that connects two unidirectional adapters. It can therefore be seamlessly integrated into an adapter-based communication architecture.
 - **No Internal States:** Since the function block has no internal state variables or timers, its behavior is purely combinatorial and deterministic.
 - **Direct Impedance:** The function block used, `F_NE` from the IEC 61131 library, is high-performance and does not require dynamic memory management.
@@ -66,6 +68,7 @@ This function block has no states of its own, as it is entirely based on the int
 - **Processing:** Upon receiving an event, the comparison is performed; the output is updated immediately. After the comparison, the output event is sent.
 
 ## Application Scenarios
+
 - **Digitization of Analog Values:** In automation, DINT values (e.g., counter readings, error codes) are often interpreted as Boolean signals. This function block is suitable for converting non-zero conditions into binary signals.
 - **Adapter Bridging:** If a component only provides an ADI adapter, but the downstream logic only accepts AX adapters, this function block can be used as a lossless converter.
 - **Simple Switching Thresholds:** With minimal effort, it's possible to determine whether a value deviates from zero – useful, for example, for monitoring counting pulses or limit violations.

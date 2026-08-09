@@ -1,9 +1,11 @@
 # AUDI_MUX_3
+
 (No image available)
 ![AUDI_MUX_3](./AUDI_MUX_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUDI_MUX_3` is a generic multiplexer (MUX) that allows you to select one of three adapter inputs (IN1, IN2, IN3) of type `adapter::types::unidirectional::AUDI` and connect it to the adapter output `OUT`. The selection is made via the index (0, 1, or 2) applied to the data input `K` and is triggered by an event at the input `REQ`. This function block is designed for use in automation systems that utilize the AUDI adapter standard.
 
 ## Interface Structure
@@ -56,21 +58,19 @@ The acknowledgment event `CNF` is then sent. The switchover occurs immediately, 
 The `AUDI_MUX_3` does not have an explicit state machine. Its operation can be described as a one-step action:
 
 1. Wait for event `REQ`.
-
 2. Evaluate `K`.
-
 3. Switch the corresponding input adapter to `OUT`.
-
 4. Send `CNF`.
-
 5. Return to the wait state.
 
 ## Application Scenarios
+
 - **Signal Configuration**: A controller may have several similar AUDI signals (e.g., measured values) that need to be selected depending on the operating mode.
 - **Switching Between Sensors**: Three sensors provide data via one AUDI adapter; the multiplexer selects the active sensor.
 - **Test/Bypass Mode**: A module can be operated in normal mode (IN1), test mode (IN2), or bypass mode (IN3).
 
 ## Comparison with Similar Components
+
 - **AUDI_MUX_2**: A two-input multiplexer – analogous design, but with only two socket adapters.
 - **Standard MUX**: Conventional multiplexers (e.g., `MUX2` or `MUX4`) usually operate at the data type level (e.g., `ANY`), while `AUDI_MUX_3` is specifically designed for adapter interfaces and forwards the entire adapter connection, including events.
 - **Conditional Adapters**: Some libraries offer conditional adapter routing, but usually with more complex state logic.

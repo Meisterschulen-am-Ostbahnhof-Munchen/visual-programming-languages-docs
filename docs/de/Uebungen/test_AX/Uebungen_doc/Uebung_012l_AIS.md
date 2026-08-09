@@ -4,11 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung des AIS-Adapter-Protokolls zur Kommunikation zwischen einem String-Eingabebaustein und einem nichtflüchtigen Speicher (NVS). Der eingegebene String wird über einen AIS-Adapter an den NVS-Baustein übergeben und dort gespeichert. Ein Lesebaustein stellt den aktuell gespeicherten Wert wieder bereit. Die Übung dient als einfaches Beispiel für die Speicherung von Konfigurations- oder Zustandsdaten mittels des AIS-Modells in 4diac.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### StringValue_AIS
+
 - **Typ**: `isobus::UT::io::StringValue::StringValue_AIS`
 - **Parameter**:
   - `QI` = `TRUE` (Eingang freigeschaltet)
@@ -16,6 +18,7 @@ Diese Übung demonstriert die Verwendung des AIS-Adapter-Protokolls zur Kommunik
 - **Funktionsweise**: Dieser Baustein stellt einen AIS-Adapter bereit, über den ein String eingegeben werden kann. Er ist die Quelle des zu speichernden Wertes.
 
 ### NVS_AIS
+
 - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AIS`
 - **Parameter**:
   - `QI` = `TRUE` (Eingang freigeschaltet)
@@ -24,6 +27,7 @@ Diese Übung demonstriert die Verwendung des AIS-Adapter-Protokolls zur Kommunik
 - **Funktionsweise**: Der Baustein realisiert einen nichtflüchtigen Speicher (NVS) mit AIS-Schnittstelle. Über den AIS_IN wird ein String empfangen und unter dem angegebenen Schlüssel gespeichert. Über den AIS_OUT wird der gespeicherte String (oder der Default-Wert) ausgegeben.
 
 ### Q_StringValue_AIS
+
 - **Typ**: `isobus::UT::Q::Q_StringValue_AIS`
 - **Parameter**:
   - `u16ObjId` = `InputString_S1` (Objekt-ID des Ausgabestrings)
@@ -47,9 +51,11 @@ Der Ablauf ist zyklisch: Sobald ein neuer String eingegeben wird, aktualisiert d
 **Voraussetzungen**: Grundkenntnisse in 4diac und dem AIS-Adaptermodell.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_012l_AIS** zeigt eine minimalistische Kette: Stringeingabe → NVS-Speicherung → Ausgabe über AIS. Sie verdeutlicht, wie Konfigurationsdaten mit geringem Aufwand dauerhaft gespeichert und wieder ausgelesen werden können. Die Implementierung nutzt das AIS-Adapterprotokoll, ohne dass zusätzliche Ereignisverbindungen nötig sind.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

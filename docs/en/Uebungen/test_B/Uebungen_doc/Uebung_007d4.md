@@ -1,8 +1,10 @@
 # Exercise_007d4: Blinker with E_CYCLE and E_T_FF
+
 ![Uebung_007d4_network](./Uebung_007d4_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **blinker** based on a random signal.
 A periodic clock (E_CYCLE) triggers a random number generator (FB_RANDOM).
 
@@ -13,6 +15,7 @@ then processed by a Move function block and compared to a threshold value (F_GT)
 The result switches a digital output (logiBUS QX) – producing an irregularly blinking signal.
 
 ## Function Blocks Used (FBs)
+
 - **DigitalOutput_Q1** (Type: `logiBUS::io::DQ::logiBUS_QX`)
 - Parameters: `QI` = TRUE, `Output` = "Output_Q1"
 - Purpose: Physical digital output (simulated here).
@@ -59,12 +62,10 @@ the output `Q` is set to TRUE; otherwise, it is set to FALSE.
 A valid switch generates an event at `EO`.
 
 4. **Signal Propagation**
-
 - The event `EO` from the hysteresis flip-flop triggers the F_MOVE block.
 - F_MOVE copies the current state `Q` (as REAL: 0.0 or 1.0?) to its output `OUT`.
 - The output `OUT` is passed to the data input `IN1` of the comparator block F_GT.
 - The event `CNF` from F_MOVE starts F_GT.
-
 5. **Threshold Comparison**
 
 F_GT checks if the copied value is greater than 0.49.
@@ -104,4 +105,5 @@ This example deepens the understanding of event-driven function blocks, paramete
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

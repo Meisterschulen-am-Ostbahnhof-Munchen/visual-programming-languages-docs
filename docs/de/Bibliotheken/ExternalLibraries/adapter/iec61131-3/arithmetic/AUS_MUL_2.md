@@ -13,15 +13,19 @@ Der Funktionsbaustein `AUS_MUL_2` ist ein generischer Arithmetikbaustein für di
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung wird über die angeschlossenen Adapter abgewickelt.*
 
 ### **Ereignis-Ausgänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt über den Ausgangs-Adapter.*
 
 ### **Daten-Eingänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten Daten-Eingänge.*
 
 ### **Daten-Ausgänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten Daten-Ausgänge.*
 
 ### **Adapter**
@@ -29,10 +33,12 @@ Der Funktionsbaustein `AUS_MUL_2` ist ein generischer Arithmetikbaustein für di
 Die gesamte Kommunikation (Daten und zugehörige Trigger-Ereignisse) wird über unidirektionale Adapter des Typs `AUS` realisiert.
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Multiplikand (Eingang 1).
 *   **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Multiplikand (Eingang 2).
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das Ergebnis der Multiplikation ($IN1 \times IN2$).
 
 ---

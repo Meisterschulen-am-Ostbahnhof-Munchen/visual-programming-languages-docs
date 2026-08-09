@@ -17,20 +17,25 @@ Dieser Baustein kapselt die klassische Multiplexer-Funktion (entsprechend `SEL` 
 Der Funktionsbaustein besitzt keine klassischen ereignis- oder datenbasierten Ein- und Ausgänge auf der Hauptebene. Die gesamte Kommunikation wird über Adapter-Schnittstellen abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignisverarbeitung erfolgt gekapselt über die Sockets der Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignisweiterleitung erfolgt gekapselt über den Plug des Ausgangs-Adapters.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`):
   * **Beschreibung:** Selektor-Schnittstelle. Bestimmt, welcher Eingang auf den Ausgang geschaltet wird.
   * **Ereignis:** `E1` (Trigger für die Aktualisierung des Selektionssignals).
@@ -45,6 +50,7 @@ Der Funktionsbaustein besitzt keine klassischen ereignis- oder datenbasierten Ei
   * **Daten:** `D1` (Datenwert des zweiten Kanals).
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AS`):
   * **Beschreibung:** Der ausgewählte Ausgangskanal, welcher die Daten des aktiven Eingangs spiegelt.
   * **Ereignis:** `E1` (Wird ausgelöst, wenn ein neuer selektierter Wert ausgegeben wird).

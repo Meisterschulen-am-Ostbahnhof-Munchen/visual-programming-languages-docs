@@ -1,19 +1,26 @@
 # RT_Bridge_7
+
 * * * * * * * * * *
 ## Introduction
+
 The RT_Bridge_7 function block serves as a decoupling bridge for 7 data connections between real-time event chains.
 ## Interface Structure
+
 ### **Event Inputs**
+
 - **RD**: Read data.
 - **WR**: Write data.
 
 ### **Event Outputs**
+
 - **RDO**: Read acknowledgment.
 
 ### **Data Inputs**
+
 - **SD_1** - **SD_7** (ANY): Input data.
 
 ### **Data Outputs**
+
 - **RD_1** - **RD_7** (ANY): Output data.
 
 ## Metadata
@@ -28,4 +35,5 @@ The RT_Bridge_7 function block serves as a decoupling bridge for 7 data connecti
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

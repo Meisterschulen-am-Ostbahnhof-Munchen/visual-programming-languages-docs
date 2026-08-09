@@ -1,8 +1,10 @@
 # Exercise_210b: Standard IEC 61131-3 FB_CTU (Counter Up, INT) with Terminal Output
+
 ![Uebung_210b_network](./Uebung_210b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **Counter Up** according to IEC 61131-3 (FB_CTU) with the data type `INT`. The counter is controlled via two digital inputs: a count pulse input (`CU`) and a reset input (`R`). The current counter value is output both to a digital output (limit reached) and via a terminal object for numerical display.
 
 This exercise demonstrates the basic functionality of an industrial counter, the integration of hardware inputs/outputs (logiBUS), and the output of values to a numeric display (terminal).
@@ -68,6 +70,7 @@ After each counting operation, the counter's `CNF` event is forwarded to the dig
 - The comment "**F_INT_TO_REAL can be omitted**" confirms the direct conversion without an explicit function block.
 
 ### Learning Objectives and Prior Knowledge
+
 - **Learning Objectives**:
 - Integration of an IEC 61131-3 counter into a 4diac application.
 - Linking digital inputs and outputs with logiBUS hardware.
@@ -83,6 +86,7 @@ Exercise **Exercise_210b** implements a complete IEC 61131-3 forward counter (`F
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

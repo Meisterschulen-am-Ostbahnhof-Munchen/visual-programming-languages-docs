@@ -1,8 +1,10 @@
 # AI_TO_AULI
+
 ![AI_TO_AULI](./AI_TO_AULI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AI_TO_AULI** serves as a composite block for converting a unidirectional adapter of type `AI` (based on the data type `INT`) into a unidirectional adapter of type `AULI` (based on `ULINT`). It enables the seamless integration of components that use different integer data types without requiring the user to implement the conversion logic.
 ---
 
@@ -43,6 +45,7 @@ Data output is provided via the plug adapter `AULI_OUT`.
 | `D1` | `AULI_OUT`| `ULINT`| Output data (64-bit unsigned integer) |
 
 ### **Adapter**
+
 - **Socket** `AI_IN` : Unidirectional adapter with the interfaces `E1` (event) and `D1` (INT).
 - **Plug** `AULI_OUT`: Unidirectional adapter with the interfaces `E1` (event) and `D1` (ULINT).
 
@@ -53,13 +56,9 @@ Data output is provided via the plug adapter `AULI_OUT`.
 This module performs a simple type conversion from `INT` to `ULINT`. Internally, the IEC 61131 module `F_INT_TO_ULINT` is used. The process is event-driven:
 
 1. An incoming event at socket `AI_IN.E1` triggers the input `REQ` of the conversion module.
-
 2. The data value `AI_IN.D1` (INT) is passed to the input `IN` of the conversion block.
-
 3. The conversion is performed, and the result (ULINT) is provided at the output `OUT`.
-
 4. After the conversion is complete, an event is generated at the output `CNF` of the conversion block, which is forwarded to the plug `AULI_OUT.E1`.
-
 5. Simultaneously, the converted value is sent to the plug `AULI_OUT.D1`.
 
 This ensures a complete, synchronized transfer of the event and data.
@@ -67,6 +66,7 @@ This ensures a complete, synchronized transfer of the event and data.
 ---
 
 ## Technical Features
+
 - **Adapter-Based Communication:** The module encapsulates the conversion logic in a composite, so the connected components only need to know the respective adapter interfaces.
 - **Unidirectional Data Transfer:** Both `AI` and `AULI` are designed as unidirectional adapters; reverse data transfer is not supported.
 - **Type Conversion:** The internal module `F_INT_TO_ULINT` performs an extended conversion from 16-bit integer (`INT`) to 64-bit unsigned integer (`ULINT`). Negative `INT` values are converted into large positive `ULINT` values using two's complement (e.g., `-1` → `2^64-1`).
@@ -81,6 +81,7 @@ Since the component is implemented as a pure composite without its own stateful 
 --- ---
 
 ## Application Scenarios
+
 - **Adapter Converter:** Integrating sensors or actuators provided as `AI` adapters (INT) into a system that expects `AULI` adapters (ULINT).
 - **System Integration:** Use in PLC or automation architectures where different data types need to be standardized.
 - **Protocol Adaptation:** Converting 16-bit counter values to 64-bit counter values for extended range.
@@ -106,6 +107,7 @@ The function block `AI_TO_AULI` offers a clean, adapter-based solution for conve
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

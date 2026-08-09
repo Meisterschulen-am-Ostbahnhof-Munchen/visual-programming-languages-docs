@@ -14,24 +14,28 @@ The function block `AL_AX_SEL_AL` is an event-driven selector (binary selection)
 Since this function block is internally structured as a network and is entirely based on adapter interfaces, it does not have any directly accessible, traditional input or output variables.
 
 ## **Event Inputs**
+
 *No direct event inputs are available. Event control is handled implicitly via the connected adapters.*
 
 ### **Event Outputs**
+
 *No direct event outputs are available. Event forwarding is handled implicitly via the output adapter.*
 
 ### **Data Inputs**
+
 *No direct data inputs are available.*
 
 ### **Data Outputs**
+
 *No direct data outputs are available.*
 
 ### **Adapters**
 
 #### **Plugs**
+
 * **`OUT`** (Type: `adapter::types::unidirectional::AL`):
 
 The selected output. This adapter outputs the selected data (`D1`) and the associated update event (`E1`).
-
 
 #### **Sockets**
 
@@ -46,7 +50,6 @@ The first selectable input channel. This is active and routed to the output when
 * **`IN1`** (Type: `adapter::types::unidirectional::AL`):
 
 The second selectable input channel. This is active and is passed to the output when the selector `G` has the state `TRUE` (or logic 1).
-
 
 ---
 
@@ -67,10 +70,7 @@ The buffered data values are forwarded to the central selection block via intern
 The core of the network evaluates the state of the selector `G`:
 
 * If `G` equals `FALSE`, the signal from `IN0` is passed to the output.
-
-
 * If `G` equals `TRUE`, the signal from `IN1` is passed to the output.
-
 4. **Output:**
 
 After a successful selection, the result is transferred via another flip-flop to the plug `OUT` and made available there simultaneously with an event (`OUT.E1`).
@@ -80,7 +80,6 @@ After a successful selection, the result is transferred via another flip-flop to
 ## Technical Features
 
 * **Type Openness through LWORD Abstraction:** The internal use of `LWORD` (64-bit) for the copy operations (`F_MOVE`) allows for high flexibility in the data being transferred, as various bit and integer patterns can be transmitted without information loss.
-
 * **Full Event Control:** Any change to any input or selector triggers an immediate recalculation. This ensures that consistent and up-to-date data is always available at the output.
 
 ---
@@ -88,11 +87,8 @@ After a successful selection, the result is transferred via another flip-flop to
 ## State Overview
 
 | Selector State (`G.D1`) | Output Value (`OUT.D1`) | Trigger Event |
-
 | :--- | :--- | :--- |
-
 | `FALSE` (0) | Value of `IN0.D1` | Event on `IN0` or `G` |
-
 | `TRUE` (1) | Value of `IN1.D1` | Event on `IN1` or `G` |
 
 ---
@@ -100,10 +96,7 @@ After a successful selection, the result is transferred via another flip-flop to
 ## Application Scenarios
 
 * **Setpoint Switching:** Switching between a standard setpoint (`IN0`) and an alternative setpoint (`IN1`) based on an external control signal.
-
 * **Manual/Automatic Operation:** Switching a control signal for a valve or motor between a manually specified value (e.g., from a visualization) and the calculated value of an automatic controller.
-
-
 * * **Sensor Redundancy:** Dynamic switching to a backup sensor (`IN1`) if the primary sensor (`IN0`) is flagged as faulty via a diagnostic function (switching controlled by the fault bit on `G`).
 
 ---
@@ -113,13 +106,11 @@ After a successful selection, the result is transferred via another flip-flop to
 Compared to a standard `SEL` function block from the IEC 61131-3 library, `AL_AX_SEL_AL` offers the following advantages:
 * **Reduced Wiring Effort:** Encapsulation in adapters eliminates the need to run separate event and data lines. A single connection path per channel is sufficient.
 
-
 ---
 
 Compared to a standard `SEL` function block from the IEC 61131-3 library, `AL_AX_SEL_AL` offers the following advantages:
 
 * **Reduced Wiring Effort:** Encapsulation in adapters eliminates the need for separate event and data lines. A single connection path per channel is sufficient.
-
 * * **Event Coupling:** The function block inherently responds to the event triggers integrated into the adapters, eliminating the need for manual event-based linking in the FBD (Function Block Diagram).
 
 ---

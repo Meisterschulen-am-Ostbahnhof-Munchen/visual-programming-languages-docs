@@ -1,8 +1,10 @@
 # INI_AX2
+
 ![INI_AX2](./INI_AX2.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The INI_AX2 function block is used to read and write real data from a settings.ini file via an AX2 adapter. It combines the INI block with a bidirectional AX2 adapter to read values from or write them back to a configuration file. Initialization is performed via the INIT event, where the section and key are specified. The read value is offered via the adapter, and a write operation is triggered via the adapter event.
 ## Interface Structure
 
@@ -54,6 +56,7 @@ The INI_AX2 function block contains an internal INI function block (eclipse4diac
 Thus, read and write access to the settings.ini file can be controlled via the AX2 adapter.
 
 ## Technical Features
+
 - The block uses a bidirectional AX2 adapter that can both send and receive values.
 - A BOOL value is used as the default, although the comment indicates REAL data. The actual value type is determined by the adapter.
 - The internal INI block is part of the eclipse4diac standard library for file access.
@@ -69,19 +72,23 @@ The block itself does not have explicit states, as it is implemented as a pure n
 - **Wait**: After completing an operation, waiting for the next event.
 
 ## Application Scenarios
+
 - Reading configuration parameters from an INI file in an automation application, where the values are passed to other components via an AX2 adapter.
 - Writing modified parameters back to the file, e.g., after user input or an algorithm.
 - Combining with other blocks for persistent storage of settings in an IEC 61499 system.
 
 ## Comparison with Similar Blocks
+
 - The simple **INI** block offers direct read/write access to INI files, but without adapter connectivity. INI_AX2 extends this with a standardized AX2 interface for value exchange.
 
 Other memory blocks, such as **CSV** or **JSON** blocks, serve different file formats; INI_AX2 is specific to the INI format with a bidirectional adapter.
 
 ## Conclusion
+
 The INI_AX2 function block is a useful component for IEC 61499 applications that require easy access to configuration files via an AX2 adapter. By encapsulating the INI block and using event-driven control, it enables both read and write operations to a settings.ini file. The use of a bidirectional adapter allows for flexible integration into complex networks.
 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

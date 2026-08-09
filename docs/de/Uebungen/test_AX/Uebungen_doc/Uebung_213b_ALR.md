@@ -29,41 +29,49 @@ Die SubApp `Uebung_213b_ALR` muss in ein 4diac‑Projekt eingebunden und mit den
 Im Netzwerk der SubApp werden folgende Bausteine eingesetzt:
 
 ### **AUDI_FB_CTU** (Zentrale Zählerlogik)
+
 - **Typ**: `adapter::iec61131::counters::AUDI_FB_CTU`
 - **Beschreibung**: Vorwärtszähler mit Zählereingang (CU), Rücksetzeingang (R), Ausgang (Q) und aktuellem Zählerstand (CV).  
 - **Besonderheit**: Die interne Logik arbeitet mit dem Datentyp UDINT.
 
 ### **AUDI_UDINT_TO_UDI** (Sollwert‑Vorgabe)
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - **Parameter**: `OUT = UDINT#5`  
 - **Funktion**: Wandelt den konstanten Wert `5` in ein unidirektionales Signal um und gibt es an den Sollwert‑Eingang **PV** des Zählers weiter. Dadurch wird der Zähler auf einen Schwellwert von 5 programmiert.
 
 ### **Input_CU** (Zählimpulse)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `QI = TRUE` , `Input = Input_I1`  
 - **Funktion**: Liest den digitalen Eingang **I1** und stellt das Signal am Adapter‑Ausgang **IN** bereit. Wird mit dem Zählereingang **CU** verbunden.
 
 ### **Input_R** (Rücksetzen)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `QI = TRUE` , `Input = Input_I2`  
 - **Funktion**: Liest den digitalen Eingang **I2** und verbindet dessen Ausgang mit dem Rücksetzeingang **R** des Zählers.  
 - **Zusätzlich** löst das Ereignis **INITO** den Konverter `AUDI_UDINT_TO_UDI` aus, sodass der Sollwert beim Start initial gesetzt wird.
 
 ### **Output_Q1** (Zähler‑Q‑Ausgang)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**: `QI = TRUE` , `Output = Output_Q1`  
 - **Funktion**: Gibt den Zähler‑Ausgang **Q** (aktiv, wenn CV ≥ PV) auf dem digitalen Ausgang **Q1** aus.
 
 ### **AUDI_TO_ALR** (Konvertierung UDINT → Analog‑LREAL)
+
 - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
 - **Funktion**: Wandelt den unidirektionalen Zählerstand (CV) in ein physikalisches Analogsignal (LREAL) um. Dieses Signal wird an den nachfolgenden Terminal‑Baustein weitergeleitet.
 
 ### **Q_NumericValue_PHYSA_LREAL** (Terminal‑Ausgabe)
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Parameter**: `stObj = OutputNumber_N3`  
 - **Funktion**: Gibt den als LREAL vorliegenden Zählerstand auf dem Terminal‑Objekt `OutputNumber_N3` aus. Dort kann der Zahlenwert in Echtzeit beobachtet werden.
 
 ### **Hinweise aus Kommentaren**
+
 - Die Konvertierung **AUDI_TO_ALR** arbeitet mit **vorzeichenbehafteten Werten** – daher sind negative Zahlen theoretisch möglich, obwohl der Zähler nur positive UDINT‑Werte liefert.  
 - Um die Ereignisrate zu reduzieren (insbesondere bei schnellen Zählimpulsen), kann ein **AX_D_FF** (Dominant‑Flipflop) zwischengeschaltet werden (siehe Kommentar im Netzwerk).
 
@@ -106,4 +114,5 @@ Die Übung eignet sich gut zum Verständnis von Adapter‑Verbindungen, Konverti
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

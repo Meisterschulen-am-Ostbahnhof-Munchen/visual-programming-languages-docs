@@ -21,7 +21,6 @@ The function block `E_D_FF_ANY_HYS` is an edge-triggered D flip-flop (data latch
 ### **Data Inputs**
 
 * **D** (`ANY_NUM`): The current data value to be read.
-
 * **HYSTERESIS** (`ANY_NUM`): The hysteresis band. Specifies the minimum difference that must exist between `D` and `Q` for the output to be updated.
 
 ### **Data Outputs**
@@ -38,14 +37,7 @@ The function block operates internally using an Execution Control Chart (ECC) an
 
 1. **Initialization**: On first startup, the block is in state `START`. The first `CLK` event leads directly to state `SET`. The algorithm `LATCH` is executed, which writes the current value of `D` to the output `Q`. Simultaneously, the output event `EO` is sent.
 
-
 The process executes the algorithm `LATCH`, which writes the current value of `D` to the output `Q`.
-
-
-
-
-
-
 
 ... 2. **Hysteresis Check for Subsequent Events**: If the function block is in state `SET`, each subsequent `CLK` event will only lead to a re-execution of `SET` (and thus to an update of `Q` and the firing of `EO`) if the following condition is met:
 
@@ -56,31 +48,25 @@ In the ECC condition, this is mathematically implemented using the formula `GE(S
 ## Technical Features
 
 * **Generic Data Type**: By using the data type `ANY_NUM` for the inputs and outputs, the function block is highly reusable and can be interconnected with various numeric data types (e.g., `INT`, `REAL`, `LREAL`).
-
 * **Efficient Difference Calculation**: The difference calculation using `SUB(MAX(D, Q), MIN(D, Q))` ensures that a positive absolute value is always used for comparison with the hysteresis, regardless of whether the new value is greater or less than the old value.
 
 ## Status Overview
 
-
-
   [ START ] --( CLK )--> [ SET (Algorithmus: LATCH, Ausgang: EO) ]
-                            |
+|
                             +--( CLK [Differenz >= HYSTERESIS] )--> (erneuter Aufruf von SET)
 
 * **START**: Waiting state before the first clock cycle.
-
 * **SET**: State in which the input value is accepted and output. This state is called cyclically at each valid clock cycle (taking hysteresis into account).
 
 ## Application Scenarios
 
 * **Noise Filtering for Analog Sensor Values**: Reduction of event floods in distributed systems. If a sensor (e.g., a temperature sensor) continuously delivers slightly fluctuating values, hysteresis prevents new control events from being constantly distributed throughout the system in response to minimal changes.
-
 * **Limit Monitoring with Deadband**: Prevention of signal bounce when transmitting process values to visualizations (HMI) or databases.
 
 ## Comparison with Similar Function Blocks
 
 * **E_D_FF**: The standard D flip-flop typically reacts at the Boolean level or unconditionally stores values at each clock cycle. `E_D_FF_ANY_HYS` additionally filters the values using the hysteresis condition.
-
 * **Hysteresis blocks (e.g., with Boolean output)**: Typical hysteresis blocks compare a value with fixed thresholds and output a `BOOL` signal (e.g., threshold switch). `E_D_FF_ANY_HYS`, on the other hand, outputs the numerical value itself as soon as it has changed significantly.
 
 ## Conclusion

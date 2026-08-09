@@ -1,19 +1,25 @@
 # ST64X
+
 *(No image available because this is a data type and not a function block.)*
 
 * * * * * * * * * *
 ## Introduction
+
 The provided XML definition describes a **DataType** named `ST64X`, not a function block (FB). This structured data type serves as a container for a collection of 64 individual binary values (BOOL variables). It allows 64 independent switches, flags, or status bits to be grouped under a single name and addressed individually via named fields. Although the internal XML comment states "A Structure with 16 BOOLs," the actual definition contains 64 BOOL variables.
 ## Interface Structure
+
 Since `ST64X` is a data type and not a function block, it does not have direct event or data inputs and outputs in the sense of an FB. Instead, it defines an internal structure of components that can be used as a unified variable within a function block (e.g., as an input or output parameter).
 
 ### **Event Inputs**
+
 Not applicable for a data type.
 
 ### **Event Outputs**
+
 Not applicable for a data type.
 
 ### **Data Inputs**
+
 Not applicable for a data type. The elements listed here are the **internal components** of the `ST64X` structure that hold data. When `ST64X` is used as a data input for a function block, these are the available fields:
 
 | Name | Type | Comment |
@@ -84,32 +90,37 @@ Not applicable for a data type. The elements listed here are the **internal comp
 | `B_63` | `BOOL` | `BIT 63` |
 
 ### **Data Outputs**
+
 Not applicable for a data type. The elements listed above are the **internal components** of the `ST64X` structure that hold data. When `ST64X` is used as a data output of a function block, these are the available fields.
 
 ### **Adapters**
+
 Not applicable for a data type.
 
-#
-## ## Functionality
+## Functionality
 
 ST64X` itself has no "function" in the sense of an active component that performs calculations or changes states. Its "function" is to provide a defined structure that serves as a template for data objects. Once instantiated, a variable of type `ST64X` holds 64 individual BOOL values that can be read or written directly via their names (e.g., `MyVariable.X_00`, `MyVariable.B_63`). It is a passive data container.
 
 ## Technical Features
+
 * **Structured Data:** Defines a fixed arrangement of 64 BOOL variables.
 * **Named Fields:** Each bit has a unique name (`X_00` to `X_09` and `B_10` to `B_63`), which improves code readability compared to purely numeric indices.
 * **Size:** Represents 64 bits, which typically occupies 8 bytes of memory (depending on the compiler implementation and padding).
 * **Package Information:** The data type is located in the package `logiBUS::utils::conversion::types`, indicating its role in utilities or conversions.
 
 ## State Overview
+
 Not applicable for a data type, as it has no internal logic or state machine. The "state" of a `ST64X`The variable is simply the current value of the 64 contained BOOL variables.
 
 ## Application Scenarios
+
 * **Bit Fields and Flags:** Ideal for representing a large number of binary status flags, switch positions, or configuration options that need to be organized in a single, coherent block.
 * **Hardware Interfaces:** Can be used to map registers or I/O ports where individual bits represent specific functions or states.
 * **Compact Data Transmission:** When a large number of BOOL values need to be transmitted efficiently, this type can provide a compact representation.
 * **Abstract States:** Represents complex states resulting from the combination of 64 binary features.
 *
 ## ⚖️ Comparison with Similar Building Blocks
+
 Since `ST64X` is a data type, it is not directly compared to function blocks, but rather to other ways of structuring BOOL values:
 
 * **`ARRAY OF BOOL`:** A `ARRAY[0..63] OF BOOL` would also store 64 BOOL values. The main difference lies in the access method: `ST64X` uses named arrays (e.g., `MyVar.X_00`), which is often more readable if each bit has a specific meaning. Arrays use indices (e.g., `MyArray[0]`), which is more flexible for loops and dynamic access, but less informative if the meaning of the individual indices is not obvious.
@@ -127,6 +138,7 @@ The data type ``ST64X`` is a useful construct in 4diac-ide for defining a struct
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

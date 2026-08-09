@@ -1,40 +1,41 @@
 # F_MOVE
+
 ![F_MOVE](https://github.com/user-attachments/assets/16aaf0c8-4559-4366-be56-14f0db433d33)
 
 * * * * * * * * * *
 ![F_MOVE](F_MOVE.svg)
 ## Introduction
+
 The **F_MOVE** is a universal function block for type-safe data transfer, developed under the EPL-2.0 license. Version 1.0 enables the transfer of any data type (ANY) between variables in control applications.
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `REQ`: Transfer request (with input value)
 
 ### **Event Outputs**
+
 - `CNF`: Transfer acknowledgment (with output value)
 
 ### **Data Inputs**
+
 - `IN` (ANY): Source data (any type)
 
 #### **Data Outputs**
+
 - `OUT` (ANY): Destination data (identical type to input)
 
 ## Functionality
 
 1. **Activation**:
-
 - Triggered by the `REQ` event
 - Processes any data type (ANY)
-
 2. **Data Transfer**:
-
 - 1:1 copy of the input value
 - Type-preserving transfer
 - Supports all IEC 61131-3 Data Types
-
 3. **Confirmation**:
-
 - `CNF` event after successful transfer
 - OUT receives an exact copy of IN
 
@@ -46,12 +47,14 @@ The **F_MOVE** is a universal function block for type-safe data transfer, develo
 ✔ **IEC 61131-3 compliant**
 
 ## Application Examples
+
 - **Data Conversion**: Type conversions
 - **Signal Forwarding**: Process data distribution
 - **Buffer Operations**: Intermediate storage
 - **Interfaces**: Data encapsulation
 
 ## Special Notes
+
 - **Type Compatibility**:
 - Input and output types must be identical
 - No automatic type conversion
@@ -68,6 +71,7 @@ The **F_MOVE** is a universal function block for type-safe data transfer, develo
 | Latency | 1 Cycle | Variable | 1 Cycle |
 
 ## 🛠️ Related Exercises
+
 * [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)]
 * [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)]
 * [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)]

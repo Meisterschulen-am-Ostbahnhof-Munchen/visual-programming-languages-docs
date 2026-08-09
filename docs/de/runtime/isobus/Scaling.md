@@ -5,21 +5,25 @@
 Ja, im **ISOBUS-Standard ISO 11783-6** (Teil 6: **Virtual Terminal**) ist das **Skalieren der Anbaugerätemasken** tatsächlich dem **Anbaugerät (Implement) zugeordnet** und nicht dem virtuellen Terminal (VT).
 
 ### Hintergrund:
+
 - **ISO 11783-6** definiert die Kommunikation zwischen dem **Virtuellen Terminal (VT)** und den angeschlossenen **Anbaugeräten (Implements)**.
 - Die **Darstellung der Benutzeroberfläche** (Masken, Symbole, Texte) wird vom Anbaugerät über **Object Pools** an das VT übertragen.
 - Das **Skalieren** der Masken ist notwendig, um die korrekte Darstellung auf unterschiedlichen VT-Bildschirmgrößen und Auflösungen zu gewährleisten.
 
 ### Zuständigkeit für das Skalieren:
+
 - **Das Anbaugerät ist verantwortlich** für die Skalierung seiner Masken, da es die **Object Pools** bereitstellt und die logische Struktur der Benutzeroberfläche definiert.
 - Das VT führt die Skalierung nicht eigenständig durch, sondern nutzt die vom Anbaugerät gelieferten Daten.
 - Falls das VT eine andere Auflösung hat als vom Anbaugerät erwartet, muss das Anbaugerät die **Skalierungsfaktoren anpassen** (z. B. durch dynamische Generierung der Object Pools oder Nutzung von **Scaled Objects**).
 
 ### Praktische Umsetzung:
+
 - Das Anbaugerät kann **skalierbare Objekte** (z. B. **Softkeys, Zahlenfelder, Grafiken**) bereitstellen.
 - Die **VT-Auflösung** wird im **Device-Descriptor** kommuniziert, sodass das Anbaugerät die Masken entsprechend anpassen kann.
 - Falls keine automatische Skalierung erfolgt, kann es zu Darstellungsproblemen kommen (z. B. abgeschnittene Elemente auf kleinen Displays).
 
 ### Fazit:
+
 Die ISOBUS-Norm weist die Verantwortung für das Skalieren der Masken klar dem **Anbaugerät** zu, während das VT primär für die korrekte Darstellung der übermittelten Daten zuständig ist. Dies ermöglicht eine flexible Anpassung an verschiedene Terminalgrößen, erfordert aber eine korrekte Implementierung seitens der Anbaugeräte-Hersteller.
 
 ## **Skalierungsregeln für ISOBUS-Objekte (ISO 11783-6)**
@@ -29,6 +33,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 ---
 
 ### **Kernprinzipien**
+
 1. **DataMask-Objekte** (z. B. Inputs, Outputs, Grafiken):
    - Immer skaliert (Beispiele: `InputNumber: 9000–9999`, `LinearBargraph: 18000–18599`)
 2. **SoftkeyMask/Auxiliary-Objekte**:
@@ -43,6 +48,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 ### **Kritische Punkte & Handlungsempfehlungen**
 
 #### **1. Überschneidungen und Kontextabhängigkeit**
+
 - **Problem**:
   - Objekte wie `Container` oder `OutputString` existieren in beiden Masken, aber mit unterschiedlichen ID-Bereichen (z. B. `11000–11499` vs. `11500–11999`).
   - **Frage**: Darf ein `OutputString` mit ID `11000` (eigentlich DataMask) auch in einer *SoftkeyMask* verwendet werden?
@@ -52,6 +58,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
     - Bei abweichenden IDs ein **Warning-Log** ausgeben, aber Skalierung anhand des Kontexts durchführen.
 
 #### **2. Skalierungsausnahme:**
+
 - **Besonderheit**:
   - Die **PictureGraphic**-Objekte im SoftkeyMask-Bereich (`20500–20999`) sind als *Working Set Bitmaps* deklariert – im Gegensatz zur DataMask-Variante (`20000–20499`).
   - **Warum "Scaling" trotzdem?**
@@ -59,11 +66,13 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
     - *Unterschied zur DataMask*: Die Skalierung ist hier **nicht viewport-relativ**, sondern folgt internen Regeln (z. B. feste Skalierungsfaktoren für Menü-Icons).
 
 #### **3. Auxiliary Functions (`31000–31999`) – Zentrierungspflicht**
+
 - **Problem**:
   - Auxiliary-Objekte müssen laut Norm **immer zentriert** werden (keine Skalierung).
   - **Risiko**: Wenn ein Auxiliary-Object fälschlich im DataMask-Bereich platziert wird (z. B. ID `31500`), könnte die Skalierung die Darstellung brechen.
 
 #### **4. Fehlende Klarheit bei "Working Set Object" (ID 0)**
+
 - **Besonderheit**:
   - Das "Working Set Object" (ID 0) ist **immer zentriert** und gilt nur für die *SoftkeyMask*.
   - **Achtung**: Wenn ein DataMask-Container fälschlich ID 0 referenziert, sollte dies als Fehler behandelt werden.
@@ -71,6 +80,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 ---
 
 ### **Hinweise zur Anwendung**
+
 - **Pfeile (→)**: Markieren korrespondierende ID-Bereiche für Hybrid-Objekte.
 - **"x"**: Keine Zuordnung in diesem Kontext.
 - **ISO-Konformität**: Die Tabelle folgt ISO 11783-6, wobei die Skalierungslast beim Anbaugerät liegt.

@@ -22,6 +22,7 @@ Die Übung besteht aus fünf Funktionsbausteinen, die direkt im SubApp-Netzwerk 
 ### Details zu den Bausteinen
 
 #### `DigitalInput_S`, `DigitalInput_R`, `DigitalInput_CLK`
+
 - **Typ**: logiBUS::io::DI::logiBUS_IX (Hardware-Eingangsbaustein)
 - **Parameter**:
   - `QI` = `TRUE` (Eingang aktiviert)
@@ -30,6 +31,7 @@ Die Übung besteht aus fünf Funktionsbausteinen, die direkt im SubApp-Netzwerk 
 - **Datenausgang**: `IN` (aktueller digitaler Wert des Eingangs)
 
 #### `RS_T_FF`
+
 - **Typ**: logiBUS::bistableElements::FB_RS_T_FF
 - **Parameter**: Keine benutzerdefinierten Parameter
 - **Ereigniseingang**: `REQ` (startet die Verarbeitung)
@@ -42,6 +44,7 @@ Die Übung besteht aus fünf Funktionsbausteinen, die direkt im SubApp-Netzwerk 
 - **Datenausgang**: `Q1` (Ausgangszustand des Flipflops)
 
 #### `DigitalOutput_Q1`
+
 - **Typ**: logiBUS::io::DQ::logiBUS_QX (Hardware-Ausgangsbaustein)
 - **Parameter**:
   - `QI` = `TRUE` (Ausgang aktiviert)
@@ -74,4 +77,5 @@ Die Übung `Uebung_006f_RS` zeigt die Einbindung eines reset-dominanten Toggle-F
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

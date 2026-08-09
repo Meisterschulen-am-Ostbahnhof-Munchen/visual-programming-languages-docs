@@ -1,8 +1,10 @@
 # E_STOPWATCH
+
 ![E_STOPWATCH](https://user-images.githubusercontent.com/116869307/214154982-af9a1e9b-6839-43e1-8191-1eca65a4308c.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **E_STOPWATCH** function block is a high-precision timing module compliant with the IEC 61499-2 standard, developed under the EPL 2.0 license.
 The module enables millisecond-accurate timing measurements between events in real-time systems.
 
@@ -11,12 +13,14 @@ The module enables millisecond-accurate timing measurements between events in re
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `START`: Starts timing
 - `ET`: Triggers intermediate output of the measured time
 - `STOP`: Ends timing and outputs the result
 - `RESET`: Resets the stopwatch
 
 ### **Event Outputs**
+
 - `EO`: Outputs time difference after STOP
 - `ETO`: Outputs time difference after ET trigger
 - `RESETO`: Confirms the reset operation
@@ -30,17 +34,12 @@ The module enables millisecond-accurate timing measurements between events in re
 ## Functionality
 
 1. **Start Phase**:
-
 - `START` initializes the time measurement
 - Monotone system time is recorded (`NOW_MONOTONIC`)
-
 2. **Measurement Phase**:
-
 - `ET` delivers intermediate results without stopping the measurement
 - Multiple triggers are possible
-
 3. **Closing Phase**:
-
 - `STOP` ends the measurement and outputs the final result
 - `RESET` resets all values
 
@@ -70,6 +69,7 @@ START --> RESET: RESET
 ```
 
 ## Application Scenarios
+
 - **Performance Measurement**: Algorithm Runtimes
 - **Process Control**: Time-Critical Processes
 - **System Diagnostics**: Response Times
@@ -117,4 +117,5 @@ Ideal for:
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

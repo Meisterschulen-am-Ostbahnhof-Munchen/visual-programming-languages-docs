@@ -1,13 +1,16 @@
 # Exercise_076: Outputting MSS to a UT using Compound Scaling
+
 ![Uebung_076_network](./Uebung_076_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a function for processing machine selected speed (MSS). The value is scaled using a compound scale function block and then output as a numeric value to a Universal Terminal (UT). The scaling is performed using upper and lower factors (0.256 and 0.001). A note indicates that the object pool entry used (NumberVariable_Wheel_based_machine_speed) is currently a placeholder and should later be replaced with the correct entry (NumberVariable_Machine_selected_speed).
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `I_MSS`
+
 - **Type**: `isobus::tecu::I_MSS`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -16,6 +19,7 @@ This exercise implements a function for processing machine selected speed (MSS).
 This FB represents the input for the machine speed. Upon input at its event input `QI`, it outputs the current machine speed value (type: presumably UINT) at the data output `SELECTEDMACHINESPEED`. The event output `IND` signals that a new value is available.
 
 ### Sub-modules: `COMPOUND_SCALE`
+
 - **Type**: `logiBUS::signalprocessing::fieldbus::FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE`
 - **Parameters**:
 - `SCALE_HIGH` = `REAL#0.256`
@@ -26,6 +30,7 @@ This FB represents the input for the machine speed. Upon input at its event inpu
 This function block performs compound scaling of an unsigned integer (UINT) value. The incoming value `IN` is multiplied by two different scaling factors to achieve higher accuracy in the lower and upper ranges of the value. The output `OUT` returns the scaled value (type: REAL). The event input `REQ` starts the calculation; upon completion, a signal is output at the event output `CNF`.
 
 ### Sub-Blocks: `Q_NumericValue`
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
 - **Parameters**:
 - `stObj` = `NumberVariable_Wheel_based_machine_speed`

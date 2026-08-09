@@ -11,6 +11,7 @@ Diese Übung realisiert eine einfache Signalverarbeitung: Der digitale Eingang `
 ## Verwendete Funktionsbausteine (FBs)
 
 ### `DigitalInput_I1`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**:
   - `QI = TRUE`
@@ -24,6 +25,7 @@ Diese Übung realisiert eine einfache Signalverarbeitung: Der digitale Eingang `
   Der Baustein liest den digitalen Wert des konfigurierten Eingangs (hier `Input_I1`) aus. Gesteuert wird das Lesen über das Ereignis `REQ`. Nach erfolgreichem Lesen wird am Ausgang `IND` ein Ereignis ausgegeben und der gelesene Wert über `IN` bereitgestellt.
 
 ### `F_NOT_BOOL`
+
 - **Typ**: `iec61131::bitwiseOperators::F_NOT_BOOL`
 - **Parameter**: Keine.
 - **Ereignisschnittstelle**:
@@ -36,6 +38,7 @@ Diese Übung realisiert eine einfache Signalverarbeitung: Der digitale Eingang `
   Der Baustein führt eine logische Negation auf den anliegenden BOOL-Wert durch. Bei einem Ereignis an `REQ` wird der Wert an `IN` negiert und das Ergebnis an `OUT` ausgegeben. Anschließend wird `CNF` ausgelöst.
 
 ### `DigitalOutput_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**:
   - `QI = TRUE`
@@ -71,4 +74,5 @@ Die Übung demonstriert die grundlegende Verwendung von digitalen Ein- und Ausga
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

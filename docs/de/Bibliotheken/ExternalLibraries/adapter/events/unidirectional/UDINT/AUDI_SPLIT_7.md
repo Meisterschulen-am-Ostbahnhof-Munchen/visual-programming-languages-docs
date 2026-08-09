@@ -11,15 +11,19 @@ Der Funktionsblock `AUDI_SPLIT_7` dient dazu, ein einzelnes AUDI-Eingangssignal 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine
 
 ### **Ereignis-Ausgänge**
+
 Keine
 
 ### **Daten-Eingänge**
+
 Keine
 
 ### **Daten-Ausgänge**
+
 Keine
 
 ### **Adapter**
@@ -74,4 +78,5 @@ Während `AUDI_SPLIT_7` auf den spezifischen AUDI-Adaptertyp ausgelegt ist, exis
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

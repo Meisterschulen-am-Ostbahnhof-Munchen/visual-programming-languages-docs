@@ -1,7 +1,9 @@
 # Exercise_049: DigitalInput_I1-_I4 to DigitalOutput_Q1-_Q4
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_049`. This exercise is designed to practice creating extensive point-to-point connections.
 ## 🎧 Podcast
+
 ![Uebung_049_network](./Uebung_049_network.svg)
 
 * [4diac IDE: How the IEC 61499 Standard is Revolutionizing Industrial Automation ](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Wie-der-IEC-61499-Standard-die-Industrieautomatisierung-revolutioniert-e36756a)
@@ -19,6 +21,7 @@ This article describes the logiBUS® exercise `Uebung_049`. This exercise is des
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

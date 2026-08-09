@@ -1,8 +1,10 @@
 # Exercise_152: Pulse Counter & PI Controller
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_152`. Here, a closed-loop control system is implemented.
 ----
 ## Objective of the Exercise
+
 Implementation of a PI controller to maintain a constant physical quantity.
 
 -----
@@ -38,4 +40,5 @@ The controller continuously attempts to adjust the manipulated variable at the P
 * ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

@@ -1,8 +1,10 @@
 # Exercise_202b: Interlock: ILOCK_BLOCK_PROTECT (Motor Reversing with Protection Time)
+
 ![Uebung_202b_network](./Uebung_202b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements motor reversing with an interlock and protection time (ILOCK_BLOCK_PROTECT). The direction of rotation (clockwise or counterclockwise) is controlled via two digital inputs, with the interlock block preventing both outputs from being active simultaneously. A low-side driver is switched in both cases via an OR gate. Additionally, a protection time (DT_PROTECT = 1 s) is integrated, which only allows a change of direction after this time has elapsed.
 ## Function Blocks (FBs) Used
 
@@ -72,10 +74,8 @@ Timer that monitors the ILOCK's protection time.
 The components are connected as follows:
 
 1. **Input Signals**:
-
 - ``DigitalInput_I1`` (Taster/Sensor für Rechtslauf) sendet über seinen Ereignisausgang IND ein Ereignis an den Ereigniseingang ``EI_UP`` des ILOCK. Gleichzeitig wird der Datenwert ``IN`` an den Dateneingang ``DI_UP`` is passed.
 - ``DigitalInput_I2`` (Taster/Sensor für Linkslauf) sendet analog an ``EI_DOWN`` und ``DI_DOWN``.
-
 2. **Interlock with Protection Time (ILOCK)**:
 
 The ILOCK block evaluates the input signals. Upon a valid command (e.g., DI_UP = TRUE and an event at EI_UP), the corresponding output (DO_UP) is activated, and an event is connected to the ``EO_UP`` ausgegeben. Gleichzeitig wird der andere Ausgang (DO_DOWN) deaktiviert. Die Schutzzeit ``DT_PROTECT = 1s`` verhindert einen sofortigen Richtungswechsel; erst nach Ablauf der Zeit darf die Gegenrichtung angenommen werden. Der Adapter ``timeOut`` ist mit dem ``E_TimeOut`` block, which implements the time monitoring.
@@ -85,7 +85,6 @@ The ILOCK block evaluates the input signals. Upon a valid command (e.g., DI_UP =
 - The event ``EO_UP`` des ILOCK triggert den ``Rechtslauf``-Baustein (Eingang REQ) und übergibt den Datenwert ``DO_UP`` an den Dateneingang OUT. Somit wird der Ausgang ``Output_Q5`` is set.
 - Similarly, the event ``EO_DOWN`` der ``Linkslauf``-Baustein aktiviert und ``Output_Q6`` is set.
 - Both events (EO_UP and EO_DOWN) are also sent to the REQ event input of the ``OR_2_BOOL``-Bausteins weitergeleitet. Der Datenwertausgang ``DO_UP`` geht auf IN1, ``DO_DOWN`` auf IN2 des ODER-Bausteins. Der Ausgang OUT des ODER-Bausteins wird an den ``LowSide_Treiber`` übergeben, sodass der gemeinsame Ausgang ``Output_Q56`` whenever either clockwise or counterclockwise rotation is active.
-
 4. **Time Monitoring**:
 
 The ``E_TimeOut`` block is connected to the ILOCK via an adapter and provides the necessary timing functionality for the protection time.
@@ -101,6 +100,7 @@ The ``E_TimeOut`` block is connected to the ILOCK via an adapter and provides th
 Exercise ``Uebung_202b`` vermittelt den Einsatz des Interlock-Bausteins ``ILOCK_BLOCK_PROTECT`` on safe motor reversal. The integration of a protection time prevents excessively rapid changes in direction, thus preventing component damage. The use of an OR gate for shared low-side control and the clear separation of event and data flows illustrate the typical structure of a 4diac IDE controller for logiBUS hardware.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

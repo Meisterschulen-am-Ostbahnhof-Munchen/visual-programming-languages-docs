@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert eine Kalibrierung für einen analogen Eingang. Ein Analogwert wird eingelesen, über zwei Adapterkonvertierungen an einen Kalibrierungsbaustein übergeben und die ermittelten Offset- und Skalierungswerte werden dauerhaft im NVS-Speicher (Non-Volatile Storage) abgelegt. Zwei digitale Eingänge steuern den Kalibriermodus (Offset und Scale). Ein weiterer digitaler Eingang dient als Trigger für die analoge Abtastung und wird gleichzeitig auf einen digitalen Ausgang durchgeschleift.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -23,6 +24,7 @@ Diese Übung realisiert eine Kalibrierung für einen analogen Eingang. Ein Analo
 | AUDI_TO_AR | `adapter::conversion::unidirectional::AUDI_TO_AR` | (keine Parameter) |
 
 ### Kurzbeschreibung der Bausteine
+
 - **DigitalInput_I1**: Liest einen digitalen Eingang (Input_I1) und leitet das Ereignis über den Adapterausgang `IN` weiter.
 - **DigitalOutput_Q1**: Gibt ein digitales Signal auf den Ausgang `OUT` (Output_Q1) aus, wenn der Adaptereingang `OUT` angesteuert wird.
 - **AnalogInput_I4**: Analoger Eingangsbaustein. Bei einer Anfrage (SREQ) liefert er einen Analogwert. Parametriert mit Hysterese, Zeitdelta und Ratenbegrenzung.

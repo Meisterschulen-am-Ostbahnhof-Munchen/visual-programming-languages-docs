@@ -15,10 +15,12 @@
 ## 1. Ereignisgesteuerte Architektur (Events & Data)
 
 ### Unterschied zu klassischen PLC-Sprachen (IEC 61131-3)
+
 - **Klassisch (Zyklisch):** Das Programm wird ständig in einer festen Schleife abgearbeitet.
 - **IEC 61499 (Ereignisgesteuert):** Die Ausführung eines Funktionsbausteins (FB) wird ausschließlich durch explizite **Events** getriggert. Dies reduziert die Bus- und Prozessorlast drastisch und ermöglicht erst echte Verteilbarkeit.
 
 ### Struktur eines IEC 61499 Funktionsbausteins
+
 - **Event-Eingänge (`INIT`, `REQ`):** Starten die interne Verarbeitung.
 - **Event-Ausgänge (`INITO`, `CNF`):** Signalisiert den Abschluss einer Verarbeitung an nachgelagerte Bausteine.
 - **Daten-Eingänge & -Ausgänge (`WITH`-Verknüpfung):** Kopplung von Ereignissen an Datenwerte (z. B. Sensorwerte, Sollwerte).
@@ -28,6 +30,7 @@
 ## 2. Praktische Umsetzung im Meisterprüfungsprojekt
 
 ### Anwendungsbeispiel: Automatische Ventilstellung & Hubwerksregelung
+
 1. **Sensor-Baustein:** Erfasst den aktuellen Druck ($p$) und Position ($s$).
 2. **Regler-Baustein (PID / Hysterese):** Grafisch im 4diac IDE verbunden.
 3. **Aktor-Baustein (PWM / CAN-Output):** Steuert das Proportionalventil an.
@@ -37,5 +40,6 @@
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

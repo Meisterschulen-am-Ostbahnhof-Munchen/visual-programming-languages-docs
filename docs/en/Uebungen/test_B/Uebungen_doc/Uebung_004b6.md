@@ -1,14 +1,17 @@
 # Exercise_004b6: Toggle Flip-Flop with IX / E_PERMIT + E_T_FF
+
 ![Uebung_004b6_network](./Uebung_004b6_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a toggle flip-flop (T-FF) using a digital input (logiBUS_IX) and the function blocks **E_PERMIT** and **E_T_FF**.
 The digital input serves as an enable signal (PERMIT) for a clock signal that toggles the flip-flop's state. The output is connected to a digital output (logiBUS_QX).
 
 ## Function Blocks Used (FBs)
 
 ### DigitalInput_I1
+
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -16,6 +19,7 @@ The digital input serves as an enable signal (PERMIT) for a clock signal that to
 - **Function**: Reads the state of the connected digital input signal and provides the value at the data output `IN`. A signal change triggers the event `IND`.
 
 ### E_PERMIT
+
 - **Type**: `iec61499::events::E_PERMIT`
 - **Parameters**: none
 - **Event Input/Output**:
@@ -25,8 +29,8 @@ The digital input serves as an enable signal (PERMIT) for a clock signal that to
 - `PERMIT` (BOOL)
 - **Function**: Passes an event received at `EI` to output `EO` only if the value of `PERMIT` = `TRUE`. Serves as an enable/disable element.
 
-
 ### E_T_FF
+
 - **Type**: `iec61499::events::E_T_FF`
 - **Parameters**: none
 - **Event Input/Output**:
@@ -35,7 +39,6 @@ The digital input serves as an enable signal (PERMIT) for a clock signal that to
 - **Data Output**:
 - `Q` (BOOL)
 - **Function**: Toggle flip-flop. At each clock cycle (event at `CLK`), the output `Q` toggles its state. Simultaneously, the event `EO` is triggered.
-
 
 ### DigitalOutput_Q1
 
@@ -80,11 +83,13 @@ As soon as the digital input changes, the event `IND` is triggered. The current 
 Insert the sub-app `Uebung_004b6` into a 4diac project, connect the hardware resources (e.g., physical input `Input_I1` and output `Output_Q1`), and run the application.
 
 ## Summary
+
 This exercise demonstrates a toggle flip-flop that only changes its state when a digital input is active. By combining `E_PERMIT` and `E_T_FF`, a clock signal can be enabled – useful for applications such as debounced pushbuttons or mode switching.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

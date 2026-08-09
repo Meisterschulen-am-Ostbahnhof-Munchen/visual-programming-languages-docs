@@ -1,8 +1,10 @@
 # Exercise_004a11b_AX: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK and STORE (NVS)
+
 ![Uebung_004a11b_AX_network](./Uebung_004a11b_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **toggle flip-flop** (T-FF) with a digital input (logiBUS DI) triggered by the event `BUTTON_SINGLE_CLICK`. The flip-flop's current state is stored in non-volatile memory (NVS) and restored upon startup. This ensures the initial state is retained even after a restart.
 This exercise demonstrates the combination of event-driven logic (T-FF) with persistent data storage.
 

@@ -7,6 +7,7 @@ Hier ist die generierte Dokumentation basierend auf dem bereitgestellten XML-Cod
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Sub-Applikation **Uebung_039_sub_NumbAnzeig** ist eine Hilfskomponente, die für die Anzeige von numerischen Werten im Kontext einer Schrittkette (Spiegelabfolge V2) konzipiert wurde. Ihre Hauptaufgabe besteht darin, eine Statusnummer (`STATE_NR`) entgegenzunehmen, diese in ein passendes Datenformat zu konvertieren und anschließend an ein Ausgabeelement (ISOBUS Universal Terminal) zu senden.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Die Sub-Applikation **Uebung_039_sub_NumbAnzeig** ist eine Hilfskomponente, die 
 In dieser Übung wird ein Sub-Baustein definiert, der intern Standard-Konvertierungsbausteine sowie ISOBUS-Kommunikationsbausteine verwendet.
 
 ### Sub-Bausteine: Uebung_039_sub_NumbAnzeig
+
 - **Typ**: SubAppType
 - **Beschreibung**: Spiegelabfolge V2 mit Schrittkette SUB Num
 - **Verwendete interne FBs**:
@@ -55,6 +57,7 @@ Der Ablauf innerhalb dieses Sub-Bausteins ist streng linear und ereignisgesteuer
 *   **Daten**: `STATE_NR` (Input) &rarr; `F_SINT_TO_UINT.IN` &rarr; `F_SINT_TO_UINT.OUT` &rarr; `Q_NumericValue.u32NewValue`.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_039_sub_NumbAnzeig** demonstriert die Kapselung von Logik in einer Sub-Applikation. Sie dient als Schnittstelle zwischen der Steuerungslogik (Schrittkette) und der Visualisierung (ISOBUS-Terminal), indem sie Datentypen anpasst und die Kommunikation mit dem Ausgabeobjekt `OutputNumber_N1` übernimmt. Dies fördert die Wiederverwendbarkeit und Übersichtlichkeit im Hauptprogramm.
 
 ## 🛠️ Zugehörige Übungen

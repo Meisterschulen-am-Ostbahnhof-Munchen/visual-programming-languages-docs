@@ -1,8 +1,10 @@
 # AIS_DEMUX_5
+
 ![AIS_DEMUX_5](./AIS_DEMUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AIS_DEMUX_5** is a generic AIS demultiplexer (Generic FB) according to IEC 61499. It serves to forward an AIS signal arriving via the adapter input **IN** to one of five adapter outputs (**OUT1** … **OUT5**) according to the set index **K**. The selection and forwarding are triggered by an event **REQ** and acknowledged with **CNF** after successful transmission.
 ## Interface Structure
 
@@ -25,6 +27,7 @@ The function block **AIS_DEMUX_5** is a generic AIS demultiplexer (Generic FB) a
 | **K** | UINT | Index of the desired output (1 … 5) |
 
 ### **Data Outputs**
+
 No data outputs are available. Output is exclusively via the adapter interfaces.
 
 ### **Adapters**
@@ -41,19 +44,16 @@ No data outputs are available. Output is exclusively via the adapter interfaces.
 ## Functionality
 
 1. The user sets the desired output index **K** (1 … 5).
-
 2. A rising event at **REQ** triggers the demultiplexing action:
-
 - The current value from the adapter input **IN** is read.
 - This value is then written to the adapter output **OUTx** (x = K).
-
 3. After successful writing, the event **CNF** is output.
-
 4. If the index is outside the permissible range (e.g., 0 or >5), no action is performed, and **CNF** is still sent (or depending on the behavior – typically, no assignment occurs).
 
 The internal processing is event-driven and follows the principle of classic demultiplexers: An input is switched to one of several outputs.
 
 ## Technical Features
+
 - **Generic Function Block (FB):** The function block is designed as a generic template `GEN_AIS_DEMUX`. The present instance, `AIS_DEMUX_5`, is a special implementation with exactly five outputs. By modifying the generic type, demultiplexers with any number of outputs can be created.
 - **Adapter-based I/O:** Instead of conventional data inputs/outputs, the block uses directed adapters of type `AIS`. This enables clean, component-oriented interconnection of complex signal types in the IEC 61499 environment.
 - **Error Handling:** If the index **K** is invalid, the incoming value is not passed to any output; however, the acknowledgment signal **CNF** is still output to avoid blocking the calling block.
@@ -71,6 +71,7 @@ Bei ungültigem K: sofort CNF, kein Schreiben
 - Upon completion (or in case of an error), **CNF** is sent and the machine returns to the IDLE state.
 
 ## Application Scenarios
+
 - **Sensor Selection:** A single AIS sensor (e.g., an analog level sensor) can be switched to different actuators (valves, pumps) depending on the requirements.
 - **Test and Diagnostic Systems:** Switching a test signal sequentially to several devices under test.
 - **Routing Tasks:** Dynamic distribution of a data stream to different consumers in an automation system.

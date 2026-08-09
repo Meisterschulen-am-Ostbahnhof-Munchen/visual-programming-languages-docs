@@ -1,8 +1,10 @@
 # Exercise_160_AX: Motor Left/Right Rotation
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_160_AX`.
 ----
 ## Objective of the Exercise
+
 Combination of individual outputs and a collective message.
 
 -----
@@ -25,9 +27,7 @@ Combination of individual outputs and a collective message.
 ## Functionality
 
 1. Pressing `I1` activates `Q5`.
-
 2. Pressing `I2` activates `Q6`.
-
 3. The function block `AX_OR_2` ensures that `Q56` is always active when **either** `Q5` **or** `Q6` (or both) are active.
 
 -----

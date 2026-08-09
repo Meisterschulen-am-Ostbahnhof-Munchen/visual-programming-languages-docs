@@ -1,8 +1,10 @@
 # Exercise_006a2_AX: 2x SR and T Flip-Flop with IE
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_006a2_AX`.
 ----
 ## Objective of the Exercise
+
 Demonstration of a central off function.
 
 -----
@@ -23,6 +25,7 @@ Demonstration of a central off function.
 -----
 
 ## Functionality
+
 * `I1` is connected to `CLK` of FF1.
 * `I2` is connected to `CLK` of FF2.
 * `I3` is connected to `R` of **both** flip-flops (fan-out).

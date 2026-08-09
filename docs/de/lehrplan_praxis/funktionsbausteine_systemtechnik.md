@@ -15,6 +15,7 @@
 ## 1. Modulare Bibliotheken (Type Libraries)
 
 ### Wiederverwendbare Funktionsbausteine (Basic & Composite FBs)
+
 - **Basic Function Blocks (BFB):** Enthalten eine interne Zustandsmaschine (ECC) und Algorithmen.
 - **Composite Function Blocks (CFB):** Zusammenfassung mehrerer Unter-Bausteine zu einer komplexen Bausteingruppe (z. B. Vollständige Hydraulik-Ansteuerung).
 - **Service Interface Function Blocks (SIFB):** Schnittstelle zur Hardware (GPIO, CAN-Transceiver, Timer).
@@ -24,5 +25,6 @@
 ## 2. Dokumentation & Technische Zeichnungen nach Lehrplan
 
 ### Grafische Ablaufpläne & Signalflusspläne
+
 - Erstellung herstellerunabhängiger Funktionspläne für Kundenunterlagen und Meisterprüfungsdokumentation.
 - Normgerechte Darstellung von Event- und Datenverbindungen.

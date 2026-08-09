@@ -1,8 +1,10 @@
 # AUDI_UDINT_GT
+
 ![AUDI_UDINT_GT](./AUDI_UDINT_GT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUDI_UDINT_GT` performs a comparison of two unsigned 32-bit integers (UDINT). It checks whether the value of an input (IN1) provided via an adapter socket is greater than a second value (IN2) passed directly as a data input. The result is output via an adapter plug. The block implements the **GREAT AS** comparison operator specified in IEC 61131-3.
 ## Interface Structure
 
@@ -36,16 +38,13 @@ The FB does not have its own data outputs. The result value is provided via the 
 ## Functionality
 
 1. The module waits for a **REQ event**.
-
 2. Upon receipt of REQ, the current values of IN2 (direct data input) and IN1 (via the adapter socket) are read.
-
 3. Internally, the predefined function block `F_GT` (IEC 61131-3 "Greater Than") is activated. This compares the two UDINT values.
-
 4. The result of the comparison (Boolean value) is output via the adapter plug `OUT`. A corresponding event signals the availability of the result on the adapter output.
-
 5. The function block then returns to the wait state and can be triggered again via REQ.
 
 ## Technical Features
+
 - **Adapter-based interface:** The function block uses 4diac's proprietary adapter technology to flexibly encapsulate inputs and outputs. The adapters `AUDI` and `AX` correspond to the standard unidirectional types.
 - **IEC 61131-3 Compliance:** The comparison is implemented using the standardized function block `F_GT`, ensuring reusability and interoperability.
 - **Implicit Event Chaining:** By coupling the internal `F_GT` with the output adapter, the event-data relationship is automatically established – no manual linking of output events is required.
@@ -61,6 +60,7 @@ The function block does not have an explicit state machine. It operates in an ev
 The internal execution of `F_GT` is carried out in one step according to its specification.
 
 ## Application Scenarios
+
 - **Threshold Monitoring:** Monitor whether a process value (via IN1) exceeds a limit value (via IN2).
 - **Quality Control:** Check whether a count or a measured value exceeds a predefined target value.
 - **Sequence Controls:** Activate subsequent logic steps when a specific numerical range is exceeded.
@@ -85,4 +85,5 @@ The function block `AUDI_UDINT_GT` offers a standardized and type-safe way to im
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

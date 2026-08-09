@@ -17,42 +17,50 @@ Dadurch wird das Zusammenspiel bistabiler Elemente und die Ereignisverteilung in
 ### Sub-Bausteine
 
 #### DigitalInput_CLK_I1
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `Input = Input_I1`, `QI = TRUE`
 - **Funktionsweise**: Stellt den digitalen Tastereingang I1 als Ereignis zur Verfügung. Jede Betätigung erzeugt ein Ereignis am Ausgang `IN`.
 
 #### DigitalInput_CLK_I2
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `Input = Input_I2`, `QI = TRUE`
 - **Funktionsweise**: Stellt den digitalen Tastereingang I2 als Ereignis zur Verfügung.
 
 #### DigitalInput_CLK_I3
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**: `Input = Input_I3`, `QI = TRUE`
 - **Funktionsweise**: Stellt den digitalen Tastereingang I3 (Resettaster) als Ereignis zur Verfügung.
 
 #### AX_SPLIT_2
+
 - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Funktionsweise**: Verteilt ein eingehendes Ereignis (von I3) auf zwei Ausgänge (`OUT1`, `OUT2`). So kann ein einziges Tastersignal gleichzeitig an mehrere Empfänger gesendet werden.
 
 #### AX_T_FF_SR_Q1
+
 - **Typ**: `adapter::bistableElements::AX_FB_RS_T_FF`
 - **Funktionsweise**: Kombinierter RS- und T‑Flipflop.  
   - Am Ereigniseingang `CLK` (verbunden mit I1) wird der Ausgang `Q1` bei jeder positiven Flanke umgeschaltet (Toggle).  
   - Der Ereigniseingang `RESET1` (verbunden mit `AX_SPLIT_2.OUT1`) setzt den Ausgang `Q1` zurück.
 
 #### AX_T_FF_SR_Q2
+
 - **Typ**: `adapter::bistableElements::AX_FB_RS_T_FF`
 - **Funktionsweise**: Gleichartiger Flipflop wie oben.  
   - `CLK` von I2, `RESET1` von `AX_SPLIT_2.OUT2`.  
   - Steuert den Ausgang `Q2`.
 
 #### DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**: `Output = Output_Q1`, `QI = TRUE`
 - **Funktionsweise**: Digitalausgang, der den Zustand von `Q1` auf den physikalischen Ausgang `Output_Q1` ausgibt.
 
 #### DigitalOutput_Q2
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**: `Output = Output_Q2`, `QI = TRUE`
 - **Funktionsweise**: Digitalausgang, der den Zustand von `Q2` auf den physikalischen Ausgang `Output_Q2` ausgibt.
@@ -92,4 +100,5 @@ Der Schwerpunkt liegt auf dem Verständnis bistabiler Schaltungen und der ereign
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

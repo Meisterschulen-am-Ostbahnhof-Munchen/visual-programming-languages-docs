@@ -39,6 +39,7 @@ Er wird typischerweise in landwirtschaftlichen Steuerungen eingesetzt, um Sensor
 | (kein expliziter Name) | REAL | Der berechnete physikalische Wert, ausgegeben als Gleitkommazahl. |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
@@ -90,4 +91,5 @@ Der **F_RAW_TO_PHYS** Baustein ist eine nützliche und sauber implementierte Kom
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

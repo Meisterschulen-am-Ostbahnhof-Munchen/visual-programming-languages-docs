@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ChangeObjectLabel** ist ein standardkonformer Funktionsbaustein zur Änderung von Objektbeschriftungen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.50) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_ChangeObjectLabel](Q_ChangeObjectLabel.svg)
@@ -12,20 +13,24 @@ Der **Q_ChangeObjectLabel** ist ein standardkonformer Funktionsbaustein zur Änd
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Beschriftungsänderungs-Anforderung (mit Text/Grafik-Parametern)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Zielobjekt-Kennung
 - `u16ObIdStringVar` (UINT): Textvariablen-Objekt-ID (max. 32 Zeichen)
 - `u8FontType` (USINT): Schriftart (bei Textbeschriftung)
 - `u16ObIdGrafic` (UINT): Grafikobjekt-ID (für Symbolbeschriftung)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u16OldObIdStringVar` (UINT): Vorherige Textvariablen-ID
 - `u8OldFontType` (USINT): Vorherige Schriftart

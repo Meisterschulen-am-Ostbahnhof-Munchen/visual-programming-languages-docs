@@ -1,8 +1,10 @@
 # AL_SPLIT_9
+
 ![AL_SPLIT_9](./AL_SPLIT_9.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AL_SPLIT_9** is a generic function block that splits an incoming adapter of type `AL` into nine identical outgoing adapters. It is used to distribute a signal or data flow arriving via a single adapter to multiple downstream components. The function block is defined as a generic type (`GEN_AL_SPLIT`) and must be bound to the specific adapter type before use.
 ## Interface Structure
 
@@ -47,11 +49,13 @@ Since the function block is generic, a specific adapter type must be assigned to
 The function block has no internal state machine. It operates statelessly and is purely data-flow driven.
 
 ## Application Scenarios
+
 - **Signal Distribution:** A sensor value (e.g., temperature, pressure) is to be sent simultaneously to multiple evaluation units or controllers.
 - **Data Replication:** A control command is to be distributed to multiple actuators in parallel.
 - **Modular Architectures:** Splitting a data stream in a pipeline to feed different processing branches.
 
 ## Comparison with Similar Components
+
 - **AL_SPLIT_2, AL_SPLIT_4:** Components with analog functionality that distribute the input signal to 2 or 4 outputs, respectively. `AL_SPLIT_9` covers a larger number of outputs, which is particularly useful in complex distribution structures.
 - **Simple Coupling (e.g., Direct Connection):** Without the Split component, the sender would have to provide multiple adapter connections themselves. The Split component encapsulates this logic and simplifies the overall architecture.
 
@@ -67,4 +71,5 @@ The `AL_SPLIT_9` is a simple yet powerful generic distribution block for adapter
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

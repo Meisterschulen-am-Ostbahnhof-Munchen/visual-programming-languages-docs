@@ -1,24 +1,32 @@
 # AX_SPLIT_2
+
 <img width="711" height="266" alt="image" src="https://github.com/user-attachments/assets/35bdbc21-637d-4e15-9327-20c28f43b4b5" />
 * * * * * * * * * *
 ## Introduction
+
 The AX_SPLIT_2 function block serves as a generic building block for distributing an AX signal to two separate outputs. The block enables the splitting of an incoming AX signal to two independent output channels.
 ![AX_SPLIT_2](AX_SPLIT_2.svg)
 
 ## Interface Structure
+
 ### **Event Inputs**
+
 No direct event inputs available
 
 ### **Event Outputs**
+
 No direct event outputs available
 
 ### **Data Inputs**
+
 No direct data inputs available
 
 ### **Data Outputs**
+
 No direct data outputs available
 
 ### **Adapters**
+
 **Input Adapters:**
 
 - **IN**: AX adapter (unidirectional) - Receives the incoming AX signal
@@ -29,29 +37,35 @@ No direct data outputs available
 - **OUT2**: AX adapter (unidirectional) - Second output channel for the distributed signal
 
 ## Functionality
+
 The AX_SPLIT_2 function block receives an AX signal via the IN adapter and simultaneously distributes this signal to both output adapters OUT1 and OUT2. OUT2. This is a 1:2 distribution, where the incoming signal is passed on to both outputs without modification.
 
 ## Technical Features
+
 - Generic implementation for AX signals
 - Unidirectional signal transmission
 - No signal delay between input and output
 - Simultaneous activation of both outputs
 
 ## State Overview
+
 The function block operates statelessly – with every incoming signal via the IN adapter, both output adapters are immediately activated.
 
 ## Application Scenarios
+
 - Signal distribution in control systems
 - Parallel supply of multiple components with the same signal
 - Branching of AX communication paths
 - Redundant signal routing
 
 ## ⚖️ Comparison with Similar Function Blocks
+
 Compared to other distribution blocks, AX_SPLIT_2 offers a specific 1:2 split for AX signals. Other splitter blocks may support different numbers of outputs or other signal types.
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## 🛠️ Related exercises
+
 * [Uebung_002_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002_AX.md)
 * [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
 * [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
@@ -76,4 +90,5 @@ Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 * [Exercise_160b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
 ## Conclusion
+
 The AX_SPLIT_2 function block provides a simple and efficient solution for distributing AX signals to two outputs. Its generic nature and unidirectional architecture make it a versatile building block. in distributed automation systems.

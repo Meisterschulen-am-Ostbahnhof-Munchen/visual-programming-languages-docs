@@ -15,18 +15,23 @@ Der Funktionsblock **AI_TO_AUS** ist ein Composite-Baustein, der einen **AI-Adap
 Der Baustein besitzt keine eigenen separaten Ereignis- oder Datenports, sondern kommuniziert ausschließlich über Adapter.
 
 ### **Ereignis-Eingänge**
+
 - Keine direkten Ereigniseingänge. Die Ereignissteuerung erfolgt indirekt über den Adapter `AI_IN` (Socket) – hierüber wird das Ereignis `E1` empfangen.
 
 ### **Ereignis-Ausgänge**
+
 - Keine direkten Ereignisausgänge. Das konvertierte Ereignis wird über den Adapter `AUS_OUT` (Plug) als `E1` ausgegeben.
 
 ### **Daten-Eingänge**
+
 - Keine direkten Dateneingänge. Der zu konvertierende Datenwert (`INT`) wird über den Adapter `AI_IN` (Socket) als `D1` bezogen.
 
 ### **Daten-Ausgänge**
+
 - Keine direkten Datenausgänge. Der konvertierte Wert (`USINT`) wird über den Adapter `AUS_OUT` (Plug) als `D1` bereitgestellt.
 
 ### **Adapter**
+
 - **`AI_IN`** (Socket)  
   Typ: `adapter::types::unidirectional::AI`  
   Beschreibung: Nimmt einen `INT`-Wert und ein zugehöriges Ereignis auf.
@@ -70,4 +75,5 @@ Der Funktionsblock **AI_TO_AUS** ist ein kompakter Composite-Baustein zur einfac
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

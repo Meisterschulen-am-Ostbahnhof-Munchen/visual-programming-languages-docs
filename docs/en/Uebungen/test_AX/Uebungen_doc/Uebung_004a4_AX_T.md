@@ -1,8 +1,10 @@
 # Exercise_004a4_AX_T: Exercise for AX_FB_T_FF (Toggle Flip-Flop with Adapter)
+
 ![Uebung_004a4_AX_T_network](./Uebung_004a4_AX_T_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of a **toggle flip-flop (AX_FB_T_FF)** with the help of adapters.
 A toggle flip-flop changes its output state (Q1) on each positive clock pulse (CLK) and can be set to `FALSE` via the reset input (RST).
 The inputs are implemented via two logiBUS digital input modules (Input_I1 and Input_I2), and the output via a logiBUS digital output module (Output_Q1).
@@ -58,6 +60,7 @@ T_FF.Q1` → `DigitalOutput_Q1.OUT`
 - An active reset (TRue) immediately sets the output to `FALSE` and keeps it there until the reset is removed and a new clock pulse arrives.
 
 ## Summary
+
 This exercise teaches the application of a **toggle flip-flop** via adapter connections in the 4diac IDE.
 
 - Learning Objectives:
@@ -71,6 +74,7 @@ This exercise is suitable as an introduction to sequential logic with memory beh
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

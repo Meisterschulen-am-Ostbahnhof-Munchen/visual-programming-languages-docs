@@ -10,15 +10,19 @@ Der Funktionsbaustein **AULI_SPLIT_6** dient dazu, einen einzelnen AULI-Adapter-
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**

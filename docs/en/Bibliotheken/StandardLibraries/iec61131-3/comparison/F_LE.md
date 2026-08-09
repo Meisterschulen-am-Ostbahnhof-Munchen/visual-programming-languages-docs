@@ -1,4 +1,5 @@
 # F_LE
+
 ![F_LE](https://user-images.githubusercontent.com/116869307/214144498-90e02083-7b69-44ac-b427-cb50e29ced5b.png)
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_le.html>
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_le.html>
@@ -56,6 +57,7 @@ IF LE(EnergieVerbrauch, Grenzwert) THEN
 // Energieeinsparmaßnahmen deaktivieren
 END_IF
 ### Advantages of the LE Operator
+
 - **Simple Logic:** The LE operator allows complex conditions to be formulated in simple, easily understandable expressions.
 - **Flexibility:** The operator can be applied to various numeric data types, including integers and floating-point numbers.
 - **Efficiency:** By being directly integrated into function blocks, the LE operator reduces the need for additional programming and makes the code more efficient.

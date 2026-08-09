@@ -1,8 +1,10 @@
 # Exercise_003a_AX: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2 - with typed Subapp
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003a_AX`. The exercise demonstrates an advanced approach to structuring IEC 61499 applications: the use of typed sub-applications ("Typed SubApps") for encapsulating and reusing logic.
 ----
 ## Objective of the Exercise
+
 The main objective is to show how redundant code can be avoided. Instead of drawing identical structures (e.g., connecting an input to an output) multiple times, a generic function block is defined once. This can then be instantiated and configured as often as needed. This significantly improves the clarity and maintainability of large projects.
 
 -----

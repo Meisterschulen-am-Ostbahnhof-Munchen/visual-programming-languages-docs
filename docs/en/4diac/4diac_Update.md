@@ -1,4 +1,5 @@
 # Eclipse 4diac™ update
+
 Assignment GIT branch to download:
 | Git | Git Link | Download | Download Link |
 |---------|----------------------------------------------------------------|----------|----------------------------------------------------------------|
@@ -40,31 +41,26 @@ Links with Mirrors
 ## Update
 
 ### Configuring the Update URL in the IDE
+
 To adjust the update source in the IDE:
 
 1. Menu: Window → Preferences
-
 2. Navigate to: Install/Update → Available Software Sites
-
 3. For different versions:
-
 - **Stable Releases**: [https://www.eclipse.org/4diac/downloads/updates/release](https://www.eclipse.org/4diac/downloads/updates/release)
 - **Nightly Builds**: [https://download.eclipse.org/4diac/updates/nightly](https://download.eclipse.org/4diac/updates/nightly)]
 - Further URLs are listed below
-
 4. New sites can be added via "Add..."
 
 ### Update Options
+
 You have two options to obtain the latest version of the 4diac IDE:
 
 1. **Via the update system in the IDE** (recommended for minor updates):
-
 - Open the 4diac IDE
 - Select "Help" > "Check for Updates"
 - Follow the instructions
-
 2. **Manual Download** (recommended for new installations or major updates):
-
 - Download the latest Download the ZIP archive from the download page
 - Be sure to use **7-Zip** (or a similar tool) to extract the files.
 - *Important:* The built-in Windows ZIP tool is extremely slow with 4diac archives and can cause long waiting times!
@@ -72,36 +68,26 @@ You have two options to obtain the latest version of the 4diac IDE:
 #### Updating via a ZIP file
 
 1. Extract the downloaded ZIP archive using 7-Zip.
-
 2. The extracted folder can be saved anywhere.
-
 3. Start the IDE by opening the `4diac-ide.exe` folder in the root directory.
 
 ### Performing Updates
+
 You can perform updates in Eclipse 4diac in several ways. Here are the steps to perform an update:
 
 1. Start Eclipse 4diac and select "Help" from the menu.
-
 2. Click "Check for Updates." The Update Management window will open.
-
 3. Click "Select All" or select the updates you want to install.
-
 4. Click "Next." The license agreements will be displayed, which you must accept before proceeding.
-
 5. Click "Finish" to begin downloading and installing the updates.
-
 6. Wait until the download and installation are complete. You may be prompted to restart Eclipse 4diac to activate the updates.
 
 Alternatively, you can download and install updates directly from the URL.
 
 1. Launch Eclipse 4diac and select "Help" from the menu.
-
 2. Click "Install New Software...". The installation window will open.
-
 3. Enter the update URL in the "Work with" field and click "Add."
-
 4. Select the desired extensions and click "Next."
-
 5. Follow the on-screen instructions to complete the installation.
 
 It is important to note that sometimes updates may not be compatible with your installed 4diac version. In this case, you may need to update your 4diac version before performing the update.
@@ -151,6 +137,7 @@ Nightly builds are automatically generated daily versions of software that inclu
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

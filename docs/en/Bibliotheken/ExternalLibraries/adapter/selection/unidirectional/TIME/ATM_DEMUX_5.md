@@ -1,8 +1,10 @@
 # ATM_DEMUX_5
+
 ![ATM_DEMUX_5](./ATM_DEMUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ATM_DEMUX_5** is a generic demultiplexer IC for five output channels. It forwards data received via a unidirectional ATM adapter to one of the five outputs, which is selected by an index **K**. The IC thus implements a 1-to-N distribution (N=5) based on the ATM adapter type.
 ## Interface Structure
 
@@ -42,16 +44,14 @@ Plug (Output 4) | `OUT4` | `adapter::types::unidirectional::ATM` | Fourth output
 ## Functionality
 
 1. The module waits for a `REQ` event.
-
 2. At the time of the event, the current value of **K** is read.
-
 3. The data present at adapter `IN` is passed on to the output adapter determined by **K** (`OUT1` … `OUT5`).
-
 4. After successful forwarding, the event `CNF` is triggered.
 
 Valid values for **K** are 1 to 5. For values outside this range or undefined indices (e.g., 0), the behavior may be undefined – in this case, the function block will not perform any action or send `CNF`. The maximum number of outputs is fixed at five.
 
 ## Technical Features
+
 - **Generic Design**
 
 The function block is declared as a generic demultiplexer (`GEN_ATM_DEMUX`). This allows for easy adjustment of the number of channels or the adapter type used by re-instantiating with different parameters.
@@ -74,6 +74,7 @@ The component does not have an explicit state machine. Its behavior is purely ev
 There is no persistent memory or internal state.
 
 ## Application Scenarios
+
 - **Distributing ATM data streams** in industrial communication networks where a data channel needs to be split across up to five target devices.
 - **Routing in automation systems** – for example, to control multiple identical actuators via a common control channel.
 - **Test bench and testing environments** where a signal needs to be applied sequentially to different measurement points.

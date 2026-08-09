@@ -4,10 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der **ADI_FB_CTUD** ist ein aufwärts/abwärts zählender Funktionsbaustein für ganzzahlige Werte (DINT). Er realisiert einen Vorwärts-/Rückwärtszähler, der über standardisierte **Adapterschnittstellen** gesteuert wird. Der Baustein kapselt die IEC-61131-3-Komponente `FB_CTUD_DINT` und stellt deren Funktionalität über ereignisgesteuerte Adapter bereit.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt keine direkten Ereigniseingänge. Die Ansteuerung erfolgt ausschließlich über die **Sockets**:
 
 - **CU (Count Up)** – Ereignis zum Inkrementieren des Zählwerts
@@ -19,9 +22,11 @@ Der Baustein besitzt keine direkten Ereigniseingänge. Die Ansteuerung erfolgt a
 Diese Adapter liefern sowohl ein Ereignis als auch einen Datenwert (bei AX-Adapter über den Datenausgang `D1`).
 
 ### **Ereignis-Ausgänge**
+
 - **CNF** – Bestätigungsereignis, das nach jeder Verarbeitung eines der Eingangsereignisse ausgegeben wird.
 
 ### **Daten-Eingänge**
+
 Die Datenwerte der Eingangsadapter werden über die Verbindungen des internen FB `FB_CTUD_DINT` verarbeitet. Die Adapter liefern folgende Daten:
 
 - **CU.D1** – Zählrichtung (Bool, 1 = Aufwärtszählen)
@@ -33,6 +38,7 @@ Die Datenwerte der Eingangsadapter werden über die Verbindungen des internen FB
 - **PV.D1** – Presetwert (DINT)
 
 ### **Daten-Ausgänge**
+
 Die Ausgangsdaten werden über die Plug-Adapter bereitgestellt:
 
 - **QU.D1** – Zähler hat aufwärtsgeschaltet (Bool, nach CU-Ereignis)
@@ -40,6 +46,7 @@ Die Ausgangsdaten werden über die Plug-Adapter bereitgestellt:
 - **CV.D1** – Aktueller Zählwert (DINT)
 
 ### **Adapter**
+
 Der Baustein verwendet drei verschiedene Adaptertypen:
 
 - **unidirectional::AX** – für Ereignis- und Bool-Daten (CU, CD, R, LD als Sockets; QU, QD als Plugs)
@@ -48,6 +55,7 @@ Der Baustein verwendet drei verschiedene Adaptertypen:
 Die Adapter sind so konzipiert, dass sie sowohl das Ereignis als auch den zugehörigen Datenwert in einem Zug übertragen.
 
 ## Funktionsweise
+
 Der interne FB `FB_CTUD_DINT` realisiert die klassische Aufwärts-/Abwärtszählerlogik:
 
 - Bei einem Ereignis auf **CU** wird der Zählwert um 1 erhöht, sofern `CU.D1` = TRUE (oder das Ereignis allein als Aufwärtsimpuls gilt).
@@ -59,12 +67,14 @@ Der interne FB `FB_CTUD_DINT` realisiert die klassische Aufwärts-/Abwärtszähl
 **Wichtig:** Der Baustein feuert die Ausgangsereignisse (QU.E1, QD.E1) bei *jedem* Update (CU, CD, R, LD, PV) – nicht nur bei einer tatsächlichen Wertänderung. Soll eine reine Flankenauswertung (on-change) erfolgen, wird der Einsatz eines **AX_D_FF** als Filter empfohlen.
 
 ## Technische Besonderheiten
+
 - **Adapterbasierte Schnittstelle:** Alle Ein- und Ausgänge erfolgen über standardisierte unidirektionale Adapter, was die Wiederverwendbarkeit und Kapselung erhöht.
 - **IEC-61131-3-Kompatibilität:** Der interne Zähler entspricht der Norm und erlaubt einfache Migration zwischen verschiedenen Steuerungssystemen.
 - **Immer aktive Ereignisse:** Wie oben beschrieben, werden Ausgangsereignisse bei jedem Eingangsereignis generiert – dies kann in zeitkritischen Anwendungen zu hoher Buslast führen.
 - **Kein Zustandsautomat auf oberster Ebene:** Der FB besitzt kein eigenes ECC; die gesamte Logik wird durch den internen FB ausgeführt.
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung erfolgt strikt ereignisgesteuert:
 
 1. Warten auf ein Ereignis an einem der Sockets.
@@ -73,6 +83,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung erfol
 4. Zurück zu Schritt 1.
 
 ## Anwendungsszenarien
+
 - **Zählen von Impulsen** in Fertigungsanlagen (z. B. Werkstückzähler).
 - **Positionserfassung** mit Inkrementalgebern (Auf-/Abwärtszählung).
 - **Stücklisten- und Bestandszählung** mit Rückstellmöglichkeit.
@@ -91,4 +102,5 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung erfol
 Der ADI_FB_CTUD bietet eine saubere adapterbasierte Kapselung, erfordert jedoch bei Bedarf nach on-change-Triggering zusätzliche Maßnahmen.
 
 ## Fazit
+
 Der **ADI_FB_CTUD** ist ein flexibler und normenkonformer Aufwärts-/Abwärtszähler mit DINT-Wertebereich, der sich durch seine moderne Adapterschnittstelle auszeichnet. Er eignet sich besonders für modulare Steuerungsarchitekturen, in denen Komponenten über standardisierte Adapter kommunizieren. Die Besonderheit des immer aktiven Ereignisausgangs sollte bei der Integration in Echtzeitsysteme berücksichtigt werden.

@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung 177, basierend auf den bereitgestellt
 * * * * * * * * * *
 
 ## Einleitung
+
 Die **Uebung_177** demonstriert die Verwendung des `FB_R_TRIG` Funktionsbausteins zur Erkennung einer steigenden Flanke (Rising Edge Detection). Ziel der Übung ist es, ein Eingangssignal so zu verarbeiten, dass nur der Moment des Einschaltens (Wechsel von FALSE auf TRUE) eine Aktion auslöst. Dieses kurzzeitige Signal wird anschließend genutzt, um einen Timer zu starten, der einen Ausgang für eine definierte Zeit aktiviert.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -50,4 +51,5 @@ Der Ablauf der Steuerung gestaltet sich wie folgt:
 *   `E_TP.Q` -> `DigitalOutput_Q1.OUT`
 
 ## Zusammenfassung
+
 Diese Übung zeigt eine klassische Anwendung in der Automatisierungstechnik: Das Entkoppeln eines statischen Eingangssignals (Schalterzustand) von der Ausgabelogik durch Flankenerkennung. Durch die Kombination von `FB_R_TRIG` und `E_TP` wird sichergestellt, dass der Ausgang `Q1` bei jedem Drücken des Tasters `I1` exakt für eine Sekunde aktiv ist, selbst wenn der Taster länger gedrückt gehalten wird.

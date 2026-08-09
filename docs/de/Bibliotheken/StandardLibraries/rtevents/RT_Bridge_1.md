@@ -3,24 +3,30 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der RT_Bridge_1 Funktionsblock dient als Entkopplungsbrücke für eine Datenverbindung zwischen Echtzeit-Ereignisketten. Er ermöglicht den sicheren Datenaustausch zwischen verschiedenen Ausführungskontexten.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **RD**: Daten aus der Brücke lesen.
 - **WR**: Daten in die Brücke schreiben.
 
 ### **Ereignis-Ausgänge**
+
 - **RDO**: Benachrichtigung über gelesene Daten.
 
 ### **Daten-Eingänge**
+
 - **SD_1** (ANY): Daten, die in die Brücke geschrieben werden sollen.
 
 ### **Daten-Ausgänge**
+
 - **RD_1** (ANY): Daten, die aus der Brücke gelesen wurden.
 
 ## Funktionsweise
+
 Der Baustein speichert die über `WR` empfangenen Daten zwischen und stellt sie bei `RD` am Ausgang zur Verfügung. Dies entkoppelt den Schreib- vom Leseprozess zeitlich.
 
 ## Metadaten
@@ -35,4 +41,5 @@ Der Baustein speichert die über `WR` empfangenen Daten zwischen und stellt sie 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

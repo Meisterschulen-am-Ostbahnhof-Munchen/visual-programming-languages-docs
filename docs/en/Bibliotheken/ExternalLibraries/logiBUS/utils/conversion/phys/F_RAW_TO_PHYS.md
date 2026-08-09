@@ -1,8 +1,10 @@
 # F_RAW_TO_PHYS
+
 ![F_RAW_TO_PHYS](./F_RAW_TO_PHYS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **F_RAW_TO_PHYS** converts an ISOBUS raw value of type `UDINT` into a physical value of type `REAL`. The conversion is performed according to the standardized ISOBUS formula:
 display = (raw + offset) * scale`
 
@@ -36,6 +38,7 @@ It is typically used in agricultural control systems to convert sensor data or a
 | (no explicit name) | REAL | The calculated physical value, output as a floating-point number. |
 
 ### **Adapters**
+
 None.
 
 ## Functionality
@@ -43,11 +46,8 @@ None.
 When an event occurs at the **REQ** input, the function block performs the following calculation:
 
 1. The raw value `u32Raw` is converted from `UDINT` to `LINT` (64-bit to prevent overflows during addition).
-
 2. The offset `stObj.i32Offset` is also extended to `LINT`.
-
 3. Both values are added: `(u32Raw + stObj.i32Offset)`.
-
 4. The intermediate result is converted to `REAL` and multiplied by the scaling factor `stObj.r32Scale`.
 
 Result: `REAL := (LINT(UDINT(u32Raw)) + LINT(stObj.i32Offset)) * stObj.r32Scale`
@@ -62,6 +62,7 @@ Result: `REAL := (LINT(UDINT(u32Raw)) + LINT(stObj.i32Offset)) * stObj.r32Scale`
 The result is available at the data output after the **CNF** event.
 
 ## Technical Features
+
 - The function block uses **`LINT`** (64-bit integer) as an intermediate type to reliably prevent overflow when adding `UDINT` and `DINT` (e.g., large positive values with large negative values).
 - Raw value = 50000
 - Scaling = 0.01
@@ -78,11 +79,13 @@ The result is available at the data output after the **CNF** event.
 The function block has **no** internal states or memory. Each call processes the current input data and simultaneously generates the output value. It is therefore a pure **combinatorial logic function block**.
 
 ## Application Scenarios
+
 - **ISOBUS control units** (tractors, implements) – conversion of raw CAN data into physical units (e.g., pressure, position, speed).
 - **Agricultural Applications** – Conversion of sensor values from the ISOBUS protocol into displayable values.
 - **Test and Simulation Environments** – Replication of the ISOBUS conversion for development and verification purposes.
 
 ## Comparison with Similar Function Blocks
+
 - **F_RAW_TO_PHYS** is specifically designed for the ISOBUS formula `(raw + offset) * scale` and uses the data types common there (`UDINT`, `DINT`).
 - General converter function blocks (e.g., `LREAL_TO_REAL`) do not offer offset scaling logic and therefore must be manually supplemented with this calculation.
 
@@ -95,4 +98,5 @@ The **F_RAW_TO_PHYS** function block is a useful and cleanly implemented compone
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

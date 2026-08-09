@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **I_FPTO** ist ein standardkonformer Funktionsbaustein zur Steuerung und Überwachung der Front Power Take-Off (FPTO)-Ausgangswelle, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die Messung und Steuerung von FPTO-Parametern.
 
@@ -11,17 +12,21 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Qualifier `QI`)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung (mit Status)
 - `IND`: Indikationsereignis mit allen FPTO-Parametern
 - `TIMEOUT`: Timeout-Ereignis
 
 ### **Daten-Eingänge**
+
 - `QI` (BOOL): Qualifier für Initialisierung
 
 ### **Daten-Ausgänge**
+
 - `QO` (BOOL): Qualifier für Ausgangsereignisse
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `Q_timeout` (BOOL): Timeout-Indikator

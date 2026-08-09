@@ -11,6 +11,7 @@ Diese Übung realisiert ein Toggle‑Flip‑Flop, das über drei Taster (BUTTON_
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub‑Baustein: DigitalInput_CLK_I1 (Typ: `logiBUS_IE`)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -20,6 +21,7 @@ Diese Übung realisiert ein Toggle‑Flip‑Flop, das über drei Taster (BUTTON_
   Digitaler Eingang, der bei einem einzelnen Tastendruck auf Kanal I1 ein Ereignis an seinem Ausgang `IND` auslöst.
 
 ### Sub‑Baustein: DigitalInput_CLK_I2 (Typ: `logiBUS_IE`)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -29,6 +31,7 @@ Diese Übung realisiert ein Toggle‑Flip‑Flop, das über drei Taster (BUTTON_
   Gleicher Baustein wie für Kanal I1, jedoch angeschlossen an den zweiten Taster (Input_I2).
 
 ### Sub‑Baustein: DigitalInput_CLK_I3 (Typ: `logiBUS_IE`)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -38,18 +41,21 @@ Diese Übung realisiert ein Toggle‑Flip‑Flop, das über drei Taster (BUTTON_
   Gleicher Baustein für den dritten Taster (Input_I3).
 
 ### Sub‑Baustein: E_MERGE_3 (Typ: `E_MERGE_3`)
+
 - **Typ**: `iec61499::events::E_MERGE_3`
 - **Parameter**: keine
 - **Funktionsweise**:  
   Vereinigt drei Ereigniseingänge (`EI1`, `EI2`, `EI3`) zu einem einzigen Ereignisausgang (`EO`). Sobald ein Ereignis an einem der Eingänge eintrifft, wird es unverzögert an `EO` weitergegeben.
 
 ### Sub‑Baustein: AX_T_FF (Typ: `AX_T_FF`)
+
 - **Typ**: `adapter::events::unidirectional::AX_T_FF`
 - **Parameter**: keine
 - **Funktionsweise**:  
   Toggle‑Flip‑Flop. Bei jedem Ereignis am Eingang `CLK` wechselt der Zustand am Ausgang `Q` zwischen `TRUE` und `FALSE` (toggle).
 
 ### Sub‑Baustein: DigitalOutput_Q1 (Typ: `logiBUS_QXA`)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -66,15 +72,18 @@ Der Flip‑Flop wechselt bei jedem empfangenen Ereignis seinen Ausgangszustand. 
 Die gesamte Schaltung realisiert somit ein **Toggle‑Flip‑Flop mit drei Tastern**: Jeder Tastendruck – unabhängig von welchem Taster – toggelt den Ausgang.
 
 ### Lernziele
+
 - Verständnis des Toggle‑Flip‑Flop‑Verhaltens
 - Anwendung des Ereignis‑Merge‑Bausteins zur Bündelung mehrerer Ereignisquellen
 - Einbindung von logiBUS‑Ein‑ und Ausgängen mit Ereignisauslösung
 - Aufbau einer einfachen ereignisgesteuerten Schaltung in 4diac‑IDE
 
 ### Schwierigkeitsgrad  
+
 Einfach – geeignet für Einsteiger in die IEC 61499‑Modellierung mit 4diac‑IDE.
 
 ### Benötigte Vorkenntnisse
+
 - Grundlegendes Verständnis der IEC 61499‑Ereignis‑ und Datenflüsse
 - Grundlagen der logiBUS‑Konfiguration (Ein‑/Ausgangskanäle)
 
@@ -85,4 +94,5 @@ Die Übung `Uebung_004a2_3b_AX` demonstriert den Aufbau eines Toggle‑Flip‑Fl
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

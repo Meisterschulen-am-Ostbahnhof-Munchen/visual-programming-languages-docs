@@ -4,24 +4,31 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der AX_OR_6 ist ein generischer Funktionsblock zur Berechnung einer logischen ODER-Verknüpfung mit sechs Eingängen. Der Baustein dient zur Verarbeitung von booleschen Signalen in Automatisierungssystemen und gibt das Ergebnis der ODER-Operation über einen Adapterausgang aus.
 
 ![AX_OR_6](AX_OR_6.svg)
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
+
 Keine Ereigniseingänge vorhanden
 
 ### **Ereignis-Ausgänge**
+
 Keine Ereignisausgänge vorhanden
 
 ### **Daten-Eingänge**
+
 Keine Dateneingänge vorhanden
 
 ### **Daten-Ausgänge**
+
 Keine Datenausgänge vorhanden
 
 ### **Adapter**
+
 **Eingangsadapter:**
 
 - **IN1** - ODER-Eingang 1 (Typ: adapter::types::unidirectional::AX)
@@ -36,27 +43,33 @@ Keine Datenausgänge vorhanden
 - **OUT** - ODER-Ergebnis (Typ: adapter::types::unidirectional::AX)
 
 ## Funktionsweise
+
 Der Funktionsblock berechnet kontinuierlich die logische ODER-Verknüpfung aller sechs Eingangssignale. Das Ausgangssignal ist TRUE (wahr), wenn mindestens einer der sechs Eingänge TRUE ist. Nur wenn alle sechs Eingänge FALSE (falsch) sind, wird der Ausgang ebenfalls FALSE.
 
 ## Technische Besonderheiten
+
 - Generischer Funktionsblock mit der Klasse 'GEN_AX_OR'
 - Verwendet unidirektionale AX-Adapter für die Signalübertragung
 - Sechs unabhängige Eingänge für flexible Anwendungen
 - Echtzeitfähige Verarbeitung ohne Ereignissteuerung
 
 ## Zustandsübersicht
+
 Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Die Ausgabe wird kontinuierlich basierend auf den aktuellen Eingangswerten berechnet.
 
 ## Anwendungsszenarien
+
 - Sicherheitskreise mit mehreren Not-Aus-Tastern
 - Überwachungssysteme mit mehreren Sensoren
 - Steuerungslogik mit alternativen Aktivierungsbedingungen
 - Verknüpfung mehrerer Zustandsmeldungen
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einfacheren ODER-Bausteinen mit weniger Eingängen bietet AX_OR_6 eine höhere Flexibilität durch sechs separate Eingänge. Die ausschließliche Verwendung von Adaptern statt konventioneller Daten-Ein-/Ausgänge ermöglicht eine modulare Systemarchitektur.
 
 Vergleich mit [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)
 
 ## Fazit
+
 Der AX_OR_6 ist ein spezialisierter Logikbaustein für Anwendungen, die eine ODER-Verknüpfung mit mehreren Eingängen erfordern. Durch die Adapter-basierte Schnittstelle eignet er sich besonders für modulare Systemdesigns und ermöglicht eine klare Trennung der Signalwege.

@@ -1,13 +1,16 @@
 # Exercise_006a4_AX_RS: Exercise for AX_FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop with Adapter)
+
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of the **Reset-Dominant Toggle Flip-Flop (AX_FB_RS_T_FF)** with an adapter interface in the 4diac IDE.
 The flip-flop has three inputs (SET, RESET1, CLK) and one output (Q1). The circuit is controlled via digital logiBUS inputs (Input_I1 as SET, Input_I2 as RESET, Input_I3 as clock). The output signal is connected to the logiBUS output Output_Q1.
 The goal is to understand the behavior of a **reset-dominant** toggle flip-flop and to replicate the wiring with adapter FBs.
 
 ## Function Blocks (FBs) Used
+
 - **DigitalInput_SET** (Type: `logiBUS_IXA`): Reads the logiBUS input `Input_I1` (SET signal).
 - **DigitalInput_RESET** (Type: `logiBUS_IXA`): Reads the logiBUS input `Input_I2` (RESET signal).
 - **DigitalInput_CLK** (Type: `logiBUS_IXA`): Reads the logiBUS input `Input_I3` (Clock signal).
@@ -57,11 +60,13 @@ The logiBUS inputs are read via the function blocks `DigitalInput_SET`, `Digital
 **Prerequisites:** Basic knowledge of flip-flops and the 4diac IDE.
 
 ## Summary
+
 Exercise `Uebung_006a4_AX_RS` implements a reset-dominant toggle flip-flop with three logiBUS inputs and one output. The flip-flop's adapter interface provides a clear, functional connection between the hardware inputs/outputs and the function block's logic. The dominant RESET function ensures reliable basic behavior in control applications.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

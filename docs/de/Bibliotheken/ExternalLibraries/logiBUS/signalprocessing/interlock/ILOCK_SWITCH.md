@@ -38,6 +38,7 @@ Der Funktionsbaustein **ILOCK_SWITCH** dient als prioritätsgesteuerte Weiche mi
 | **DO_DOWN** | BOOL | TRUE = rückwärts, abwärts, links, gegen Uhrzeigersinn |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise

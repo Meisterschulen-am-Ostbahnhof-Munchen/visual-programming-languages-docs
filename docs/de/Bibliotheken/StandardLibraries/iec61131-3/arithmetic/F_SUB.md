@@ -7,21 +7,26 @@
 ![F_SUB](F_SUB.svg)
 
 ## Einführung
+
 Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Differenzbildung verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Minuend und Subtrahend)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (ANY_MAGNITUDE): Minuend (Wert, von dem subtrahiert wird)
 - `IN2` (ANY_MAGNITUDE): Subtrahend (Wert, der subtrahiert wird)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_MAGNITUDE): Differenz der Subtraktion (IN1 - IN2)
 
 ## Funktionsprinzip

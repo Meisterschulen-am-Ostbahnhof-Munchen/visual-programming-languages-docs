@@ -1,4 +1,5 @@
 # Exercise_003a0: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2 - with Untyped SubApps
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a0`. Unlike using types (as in `Uebung_003a`), this exercise demonstrates how to visually group logic without creating separate type definitions in the library. This is achieved using so-called "Untyped SubApps."
 ----
@@ -7,6 +8,7 @@ The main objective of this exercise is to demonstrate methods for structuring ap
 -----
 
 ## Ziel der Übung
+
 ## Description and Components
 
 [cite_start]The subapplication `Uebung_003a0.SUB` contains two embedded subapplications (`SubApp` and `SubApp_1`), each with its own signal path[cite: 1].
@@ -17,9 +19,7 @@ Unlike typed subapplications, which are based on an external definition, the log
 
 * Contains the logic for channel 2.
 * Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
-
 2. **Container `SubApp_1`**:
-
 * Contains the logic for channel 1.
 * Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`[cite: 1].
 
@@ -63,11 +63,9 @@ Functional Flow:
 The encapsulation has no impact on runtime execution. The components behave exactly as if they were all placed at the top level.
 
 1. `SubApp_1` processes the signal from `I1` to `Q1`.
-
 2. `SubApp` processes the signal from `I2` to `Q2`.
 
 -----
-
 
 **Visual Grouping of Functional Areas**:
 

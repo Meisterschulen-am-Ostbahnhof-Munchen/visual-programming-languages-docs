@@ -12,17 +12,20 @@ Diese Übung implementiert einen Vorwärtszähler gemäß IEC 61131-3 (Typ **AUL
 Die SubApp besteht aus mehreren Funktionsbausteinen, die im Folgenden beschrieben werden.
 
 ### Sub-Baustein: AULI_FB_CTU
+
 - **Typ**: `adapter::iec61131::counters::AULI_FB_CTU`
 - **Parameter**: Keine (werden über Adapterverbindungen gesetzt)
 - **Funktionsweise**: Vorwärtszähler für ULINT-Werte. Er zählt bei jedem positiven Flanke am Eingang **CU** (Count Up) hoch. Der Eingang **R** setzt den Zähler zurück. Der aktuelle Zählerwert wird am Adapterausgang **CV** ausgegeben, der Überlauf (Zählerstand ≥ PV) am Ausgang **Q**.
 
 ### Sub-Baustein: AULI_ULINT_TO_ULI
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_ULINT_TO_ULI`
 - **Parameter**:
   - `OUT` = `ULINT#5` (Voreinstellung des Startwerts)
 - **Funktionsweise**: Konvertiert einen ULINT-Wert (hier konstant 5) in einen ULI-Ausgangswert, der dem Zähler als **PV** (Preset Value) zugeführt wird. Der Baustein wird beim Start (INITO des Reseteingangs) aktiviert.
 
 ### Sub-Baustein: Input_CU
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -30,6 +33,7 @@ Die SubApp besteht aus mehreren Funktionsbausteinen, die im Folgenden beschriebe
 - **Funktionsweise**: Digitaler Eingang, der die Zählimpulse (CU) liefert. Der Baustein stellt den Adapterausgang **IN** zur Verfügung.
 
 ### Sub-Baustein: Input_R
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -37,6 +41,7 @@ Die SubApp besteht aus mehreren Funktionsbausteinen, die im Folgenden beschriebe
 - **Funktionsweise**: Digitaler Eingang zum Zurücksetzen des Zählers (R). Sein Ereignisausgang **INITO** wird genutzt, um beim Start die Initialisierung des PV-Wertes auszulösen.
 
 ### Sub-Baustein: Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -44,11 +49,13 @@ Die SubApp besteht aus mehreren Funktionsbausteinen, die im Folgenden beschriebe
 - **Funktionsweise**: Digitaler Ausgang, der den Überlauf (Q) des Zählers anzeigt.
 
 ### Sub-Baustein: AULI_TO_AUDI
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_TO_AUDI`
 - **Parameter**: Keine
 - **Funktionsweise**: Konvertiert den Zählerwert vom Typ ULINT (AULI) in einen numerischen Wert (AUDI) für die Terminal-Ausgabe.
 
 ### Sub-Baustein: Q_NumericValue_AUDI
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**:
   - `u16ObjId` = `OutputNumber_N1` (Objekt-ID der numerischen Anzeige)
@@ -85,4 +92,5 @@ Die Übung **Uebung_214_AULI** vermittelt den Umgang mit dem IEC-61131-3-konform
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

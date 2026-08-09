@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **I_GBSD** (Ground-based Speed and Distance) ist ein standardkonformer Funktionsbaustein zur Messung von Fahrzeuggeschwindigkeit, Distanz und Fahrtrichtung, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für präzise Bewegungsdaten in landwirtschaftlichen und baulichen Maschinen.
 
@@ -11,17 +12,21 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Qualifier `QI`)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung (mit Status)
 - `IND`: Datenindikation mit Geschwindigkeit, Distanz und Richtung
 - `TIMEOUT`: Timeout-Ereignis
 
 ### **Daten-Eingänge**
+
 - `QI` (BOOL): Qualifier für Initialisierung
 
 ### **Daten-Ausgänge**
+
 - `QO` (BOOL): Qualifier für Ausgangsereignisse
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `Q_timeout` (BOOL): Timeout-Indikator

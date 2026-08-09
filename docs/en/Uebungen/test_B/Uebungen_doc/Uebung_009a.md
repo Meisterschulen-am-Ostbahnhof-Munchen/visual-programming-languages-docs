@@ -1,8 +1,10 @@
 # Exercise_009a: RampLimitFS
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_009a`. It demonstrates the complex control of a numerical value using various button interactions.
 ----
 ## Objective of the Exercise
+
 Control of a ramp function block (`RampLimitFS`). It shows how different event types (click vs. long press) can be used to influence the rate of value change.
 
 -----
@@ -31,9 +33,7 @@ Control of a ramp function block (`RampLimitFS`). It shows how different event t
 The Ramp block reacts to different event inputs:
 
 1. **Static Targets**: Upon `ZERO` or `FULL`, the internal calculation immediately jumps to the limit values.
-
 2. **Dynamic Change**:
-
 * A click (`SINGLE_CLICK`) on `I2` triggers the `UP_SLOW` input of the Ramp block. The value increases at the rate specified in the parameter `SLOW`.
 * If the user holds the button down for a longer period (`LONG_PRESS_START`), input `UP_FAST` is triggered. The value now increases significantly faster (parameter `FAST`).
 

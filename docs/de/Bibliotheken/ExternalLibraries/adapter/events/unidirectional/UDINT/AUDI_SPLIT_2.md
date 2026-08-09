@@ -10,15 +10,19 @@ Der Funktionsblock **AUDI_SPLIT_2** ist ein generischer Baustein zur Signalverte
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -65,4 +69,5 @@ Der **AUDI_SPLIT_2** ist ein kompakter, generischer Adapter-Splitter für die 4d
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

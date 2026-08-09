@@ -28,9 +28,11 @@ Das Steuergerät unterscheidet zwei Ebenen der Konfigurationsspeicherung:
 ## Verhalten im Betrieb (Lesen & Schreiben)
 
 ### Lesezugriffe (`GET`)
+
 Das Auslesen von Parametern erfolgt transparent. Wenn ein Schlüssel in `settingsReadOnly.ini` hinterlegt ist, wird stets dessen unveränderlicher Wert zurückgegeben.
 
 ### Schreibzugriffe (`SET`)
+
 Wird versucht, einen schreibgeschützten Schlüssel zu ändern (egal ob durch Steuerungsfunktionen oder über 4diac IEC 61499 Funktionsblöcke), passiert Folgendes:
 
 * Der **Schreibversuch wird abgelehnt**.
@@ -60,6 +62,7 @@ Die Datei `settingsReadOnly.ini` liegt auf dem Speicher des Steuergeräts unter:
 `/data/settingsReadOnly.ini`
 
 ### Übertragung auf das Steuergerät
+
 Das Einspielen oder Aktualisieren der Werkseinstellungen erfolgt einfach über das integrierte **Web-Interface** (File Server) des Steuergeräts:
 
 1. Verbinden Sie sich über einen Webbrowser mit dem Web-Interface des Steuergeräts.
@@ -68,6 +71,7 @@ Das Einspielen oder Aktualisieren der Werkseinstellungen erfolgt einfach über d
 4. Nach einem Neustart des Steuergeräts werden die schreibgeschützten Parameter wirksam.
 
 ### Verhalten bei fehlender Datei
+
 Falls keine `settingsReadOnly.ini` auf dem Steuergerät vorhanden ist, startet das System gewohnt ohne Einschränkungen. Alle Schlüssel in `settings.ini` verhalten sich wie bisher voll beschreibbar.
 
 ---
@@ -75,6 +79,7 @@ Falls keine `settingsReadOnly.ini` auf dem Steuergerät vorhanden ist, startet d
 ## Praktisches Beispiel
 
 ### Beispieldatei `settingsReadOnly.ini` (Werkseinstellungen):
+
 ```ini
 [CF-A]
 NODE1_SA = 128
@@ -85,6 +90,7 @@ DeviceName = LOGIBUS-NODE-01
 ```
 
 ### Beispieldatei `settings.ini` (Benutzereinstellungen):
+
 ```ini
 [CF-A]
 UserLanguage = DE
@@ -113,4 +119,5 @@ OperatorID = 42
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

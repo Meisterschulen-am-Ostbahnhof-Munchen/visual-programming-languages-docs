@@ -1,8 +1,10 @@
 # AW_DEMUX_3
+
 ![AW_DEMUX_3](./AW_DEMUX_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AW_DEMUX_3** is a generic demultiplexer for the unidirectional adapter type `AW`. It distributes an incoming data value, provided via the socket adapter `IN`, to one of three output adapters (`OUT1`, `OUT2`, `OUT3`), depending on an integer index `K`. The function block is controlled by the event `REQ` and acknowledges the distribution with `CNF`.
 ## Interface Structure
 
@@ -48,16 +50,14 @@ All adapters are of the same unidirectional type `AW`. Socket `IN` receives the 
 ## Functionality
 
 1. The function block waits for an event at input `REQ`.
-
 2. Upon arrival of `REQ`, the current value of data input `K` is read.
-
 3. Depending on `K` (values 1, 2, or 3), the data value received via socket `IN` is passed through to the corresponding plug (`OUT1`, `OUT2`, or `OUT3`). All other outputs remain unchanged or are put into a defined idle state (depending on the adapter definition).
-
 4. After successful forwarding, the event `CNF` is output to confirm successful completion.
 
 Since the adapter type `AW` is unidirectional, data transmission only occurs from the socket to the plugs; feedback from the consumers is not provided.
 
 ## Technical Features
+
 - **Generic Block**: The function block is declared as a generic block (`GenericClassName = 'GEN_AW_DEMUX'`). This allows for later instantiation or adaptation to different output numbers, even though the current version has a fixed three outputs.
 - **Unidirectional Communication**: The adapter used, `adapter::types::unidirectional::AW`, only allows data flow from the sender (socket) to the receiver (plug). No feedback or acknowledgment from connected consumers is included.
 - **No internal state machine**: The functionality is purely event-driven and does not use an explicit state machine (ECC). The function block reacts immediately to each `REQ` event with the distribution.
@@ -74,6 +74,7 @@ The function block **AW_DEMUX_3** does not have a modeled internal state machine
 There are no hold, error, or special states.
 
 ## Application Scenarios
+
 - **Signal Distribution in Automation**: An analog or digital measured value (e.g., temperature, pressure) from a sensor unit is to be forwarded to different actuators or control blocks depending on the operating mode.
 - **Channel Switching**: In a communication chain, an incoming data signal is switched to one of three downstream processing paths by an index.
 - **Test and Simulation Environments**: The function block can be used to distribute a generic data stream to various test modules.
@@ -100,6 +101,7 @@ The **AW_DEMUX_3** is a compact, generic demultiplexer for the `AW` adapter type
 **AW_DEMUX_3** ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

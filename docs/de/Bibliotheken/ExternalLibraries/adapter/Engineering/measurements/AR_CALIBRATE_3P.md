@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **AR_CALIBRATE_3P** ermöglicht eine 3‑Punkt‑Kalibrierung eines analogen Eingangssignals unter Verwendung von Adaptern. Er ist speziell für Joysticks ausgelegt, die einen Mittenversatz (Center‑Drift) aufweisen, und korrigiert diesen durch Linearisierung zwischen drei Referenzpunkten: Minimum, Mittelwert und Maximum. Die Kalibrierungspunkte werden gespeichert und können bei Bedarf neu eingestellt werden.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Kommentar |
@@ -14,6 +16,7 @@ Der Funktionsblock **AR_CALIBRATE_3P** ermöglicht eine 3‑Punkt‑Kalibrierung
 | SET | Event | Setzt die Referenzwerte (MIN_REF, MID_REF, MAX_REF) für die Kalibrierungskennlinie. Löst keine Berechnung aus, sondern legt nur die Zielausgabewerte fest. |
 
 ### **Ereignis-Ausgänge**
+
 Keine expliziten Ereignisausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über den Adapter **Y**.
 
 ### **Daten-Eingänge**
@@ -25,6 +28,7 @@ Keine expliziten Ereignisausgänge vorhanden. Die Ausgabe erfolgt ausschließlic
 | MAX_REF | REAL | 100.0 | Zielwert für den größten Eingangswert (Max). |
 
 ### **Daten-Ausgänge**
+
 Keine direkten Datenausgänge – alle Ausgaben werden über die **Plugs** (Ausgangsadapter) bereitgestellt.
 
 ### **Adapter**
@@ -41,6 +45,7 @@ Keine direkten Datenausgänge – alle Ausgaben werden über die **Plugs** (Ausg
 | **Socket** (Eingang) | C_MAX | `adapter::types::unidirectional::AX` | Ereignis zum Kalibrieren des Maximalpunkts. |
 
 ## Funktionsweise
+
 Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen drei gespeicherten Rohwerten (`X_MIN`, `X_MID`, `X_MAX`) und den zugehörigen Referenzwerten (`MIN_REF`, `MID_REF`, `MAX_REF`).
 
 1. **Kalibrierung der Punkte:**  
@@ -64,6 +69,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
    Der kalibrierte Wert wird über den Adapter `Y` (Ereignis `Y.E1` und Data `Y.D1`) ausgegeben.
 
 ## Technische Besonderheiten
+
 - **Bidirektionale Adapter für Kalibrierungspunkte:** Die gespeicherten Rohwerte (`X_MIN`, `X_MID`, `X_MAX`) sind bidirektionale Adapter vom Typ `AR2`. Sie können sowohl beschrieben (während der Kalibrierung) als auch gelesen (während der Berechnung) werden. Dadurch bleiben die Kalibrierungspunkte dauerhaft erhalten, solange die Verbindung zur übergeordneten Ressource besteht.
 - **Ereignisgesteuerte Kalibrierung:** Die Kalibrierung der drei Punkte erfolgt nicht automatisch, sondern wird durch spezifische Ereignisse (`C_MIN`, `C_MID`, `C_MAX`) ausgelöst. Dies erlaubt eine zeitlich getrennte Aufnahme der Referenzpunkte.
 - **Schutz vor ungültigen Intervallen:** Die Algorithmen prüfen, ob die Spannweiten der gespeicherten Rohwerte positiv sind. Falls nicht (z. B. bei noch nicht kalibriertem Zustand), werden sichere Standardwerte ausgegeben.
@@ -88,6 +94,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 - `SET`, `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → Keine Zustandsänderung (bleibt in IDLE)
 
 ## Anwendungsszenarien
+
 - **Joystick‑Kalibrierung:** Ein Joystick mit analogem Ausgang (z. B. 0‑10 V) weist bauteilbedingte Abweichungen in der Mitte und an den Endanschlägen auf. Der Bediener fährt den Joystick an die drei Positionen (Min, Mitte, Max) und löst über Taster die Kalibrierungsereignisse aus. Danach liefert `Y` einen linearisierten, auf die gewünschten Zielwerte normierten Wert.
 - **Analoges Potentiometer:** Ein Schleifpotentiometer mit Abnutzungserscheinungen kann durch 3‑Punkt‑Kalibrierung korrigiert werden.
 - **Sensoren mit Offset und Skalierungsfehler:** Z. B. ein Drucksensor mit nichtlinearem Verhalten zwischen 0 %, 50 % und 100 % des Bereichs.
@@ -104,4 +111,5 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 Der entscheidende Vorteil liegt in der expliziten Behandlung des Mittelpunkts, die bei vielen einfachen Skalierungen vernachlässigt wird.
 
 ## Fazit
+
 `AR_CALIBRATE_3P` ist ein praktischer Funktionsblock für die präzise Korrektur von analogen Sensoren mit drei markanten Referenzpunkten. Durch die adapterbasierte Schnittstelle fügt er sich nahtlos in IEC‑61499‑Systeme ein und ermöglicht eine flexible und wiederverwendbare Kalibrierungslösung, insbesondere für Joysticks und ähnliche Eingabegeräte.

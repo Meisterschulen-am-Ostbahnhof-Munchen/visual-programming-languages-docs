@@ -11,15 +11,19 @@ Der Funktionsbaustein **AUI_SPLIT_3** dient als generischer Splitter, der eine e
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine – der FB besitzt keine eigenständigen Ereignis-Eingänge. Die Ereignisweiterleitung erfolgt ausschließlich über die AUI-Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Keine – der FB besitzt keine eigenständigen Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt ausschließlich über die AUI-Adapter.
 
 ### **Daten-Eingänge**
+
 Keine – der FB besitzt keine eigenständigen Daten-Eingänge. Daten werden über die AUI-Adapter übertragen.
 
 ### **Daten-Ausgänge**
+
 Keine – der FB besitzt keine eigenständigen Daten-Ausgänge. Daten werden über die AUI-Adapter übertragen.
 
 ### **Adapter**

@@ -29,6 +29,7 @@ Der **AD_MUX_4** ist ein generischer, ereignisgesteuerter Adapter-Multiplexer f�
 | **K**         | UINT | Index für die Auswahl des Eingangskanals (Wertebereich 0–3). |
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine direkten Datenausgänge; die Ausgabe erfolgt über den Adapter **OUT**.
 
 ### **Adapter**
@@ -92,4 +93,5 @@ Der **AD_MUX_4** ist ein kompakter und flexibler Adapter-Multiplexer, der vier E
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

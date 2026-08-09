@@ -1,4 +1,5 @@
 # RampLimitFS
+
 <img width="842" height="294" alt="RampLimitFS" src="https://github.com/user-attachments/assets/29d36f04-bd95-4ebf-ae98-807414c5e6b9" />
 * * * * * * * * * *
 The function block `RampLimitFS` is used to incrementally increase or decrease an output value at different speeds (fast/slow), similar to a cruise control function in vehicles. It also allows you to set minimum and maximum values and load a predefined value.
@@ -14,24 +15,27 @@ The function block `RampLimitFS` is used to incrementally increase or decrease a
 - `DOWN_FAST`: Decrements the value of `OUT` by the value of `FAST`.
 - `FULL`: Sets `OUT` to the value of `VAL_FULL`.
 - `LOAD`: Loads the value of `PV` into `OUT`.
-
 - `CNF`: Confirms execution and outputs the current value of `OUT`.
-
 - `PV` (DINT): Preset value loaded with `LOAD`.
-
 - `SLOW` (DINT): Step size for slow changes.
 - `FAST` (DINT): Step size for fast changes.
 - `VAL_FULL` (DINT): Maximum value for `OUT`.
-
 - `OUT` (DINT): Current output value.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
+
 No adapters available.
 
 ## Functionality
@@ -56,13 +60,11 @@ The value of `OUT` is automatically limited to the defined limits (`VAL_ZERO`, `
 
 Different value change rates are possible using `SLOW` and `FAST`.
 
-
 The function block has no internal state. Each event immediately triggers the corresponding calculation and output.
 
 - **Cruise Control**: Stepwise speed adjustment with slow/fast key presses.
 - **Process Control**: Limited setpoint specification with manual fine-tuning.
 - **Parameter Loading**: Loading predefined values (e.g., from non-volatile memory).
-
 - **Comparison with Standard Ramp Functions**:
 
 RampLimitFS` additionally offers the option to switch between fast and slow step sizes and assign direct values (min/max).
@@ -76,8 +78,13 @@ Unlike simple counters, this function block allows for dynamic adjustment of ste
 The `RampLimitFS` function block is ideal for applications where a value needs to be adjusted stepwise within defined limits. By differentiating between fast and slow changes and offering the ability to load direct values, it provides a high degree of flexibility for various control tasks.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 ## 🛠️ Zugehörige Übungen
+
 ## Conclusion

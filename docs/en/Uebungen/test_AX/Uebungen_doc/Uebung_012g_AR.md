@@ -1,8 +1,10 @@
 # Exercise_012g_AR: Numeric Value Input PHYS and Storage INI (AR Adapter, plain)
+
 ![Uebung_012g_AR_network](./Uebung_012g_AR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 In this exercise, a numeric value (REAL) is read via a physical input and permanently stored using the INI_AR adapter. The stored value can then be visualized via another output block. The exercise demonstrates the use of the AR adapter interface (adapter resource) for communication between a physical input block and a memory block, as well as a numeric output.
 ## Function Blocks Used (FBs)
 
@@ -11,6 +13,7 @@ The following function blocks are used. The sub-app contains no other sub-blocks
 ---
 
 ### FB: `InputNumber_I3`
+
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`
 - **Parameters**:
 - `QI` = `TRUE` (Initial value for the input quality)
@@ -24,6 +27,7 @@ The function block reads a numeric value (REAL) from the configured physical inp
 ---
 
 ### FB: `INI_AR`
+
 - **Type**: `eclipse4diac::storage::INI_AR`
 - **Parameters**:
 - `QI` = `TRUE` (Activate the saving process)
@@ -37,6 +41,7 @@ The function block reads a numeric value (REAL) from the configured physical inp
 This function block stores a value received from the `AR_IN` adapter under the specified key in non-volatile memory (NVS). At startup or after saving, the stored value is made available at the `AR_OUT` adapter. The `DEFAULT_VALUE` adapter is used if no value has yet been stored.
 
 ### FB: `Q_NumericValue`
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameters**:
 - `stObj` = `InputNumber_I3` (reference to the same physical object as the input)
@@ -80,4 +85,5 @@ The exercise `Uebung_012g_AR` demonstrates a compact implementation of a numeric
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

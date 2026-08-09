@@ -15,18 +15,23 @@ Der Baustein überprüft den booleschen Wert, der über den Adapter empfangen wi
 Der Baustein verfügt über eine Adapter-Schnittstelle (Socket) für den Eingang und einen Ereignis-Ausgang.
 
 ### **Ereignis-Eingänge**
+
 Dieser Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung erfolgt über den Adapter.
 
 ### **Ereignis-Ausgänge**
+
 *   **EO** (Event Output): Dieses Ereignis wird ausgelöst, wenn eine fallende Flanke (oder ein logischer FALSE-Zustand) am Adapter erkannt wurde.
 
 ### **Daten-Eingänge**
+
 Dieser Baustein besitzt keine direkten Daten-Eingänge. Die Daten werden über den Adapter bezogen.
 
 ### **Daten-Ausgänge**
+
 Dieser Baustein besitzt keine direkten Daten-Ausgänge.
 
 ### **Adapter**
+
 *   **QI** (Typ: `adapter::types::unidirectional::AX`): Der Eingangs-Socket. Über diesen Adapter empfängt der Baustein sowohl das Trigger-Ereignis als auch den zu prüfenden booleschen Wert.
     *   *Kommentar:* Wert, der auf eine fallende Flanke geprüft werden soll.
 
@@ -71,4 +76,5 @@ Der **AX_F_TRIG** ist ein spezialisierter Utility-Baustein für die strukturiert
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

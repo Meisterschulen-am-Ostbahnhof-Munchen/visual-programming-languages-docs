@@ -13,15 +13,19 @@ Der Funktionsbaustein (FB) **AUS_DIV_2** ist ein generischer Baustein zur Durchf
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Es sind keine direkten Ereignis-Eingänge auf der Bausteinoberfläche vorhanden. Die ereignisbasierte Steuerung und Triggerung der Berechnung erfolgt intern über die angeschlossenen Eingangs-Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Es sind keine direkten Ereignis-Ausgänge auf der Bausteinoberfläche vorhanden. Die Weiterleitung von Berechnungs- und Aktualisierungsereignissen erfolgt über den Ausgangs-Adapter.
 
 ### **Daten-Eingänge**
+
 Der Baustein besitzt keine direkten elementaren Daten-Eingänge. Alle Eingangsdaten werden über die Adapter-Schnittstellen übergeben.
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine direkten elementaren Daten-Ausgänge. Das Berechnungsergebnis wird über den Ausgangs-Adapter bereitgestellt.
 
 ### **Adapter**

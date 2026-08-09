@@ -16,20 +16,25 @@ Der Baustein nutzt intern die klassische Auswahl-Logik des standardisierten `SEL
 Der Funktionsbaustein verwendet ein adapterbasiertes Schnittstellendesign. Er besitzt keine direkt herausgeführten ereignis- oder datenbasierten Ein- und Ausgänge auf der Hauptebene, sondern wickelt die gesamte Kommunikation über Plugs (Stecker) und Sockets (Buchsen) ab.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignisverarbeitung erfolgt gekapselt über die Adapter-Schnittstellen.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignisausgabe erfolgt gekapselt über den Ausgangs-Adapter.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`): 
   Der Selector-Eingang (Gate). Bestimmt, welcher der beiden Eingänge (`IN0` oder `IN1`) an den Ausgang durchgeschaltet wird.
 * **IN0** (Typ: `adapter::types::unidirectional::AIS`): 
@@ -38,6 +43,7 @@ Der Funktionsbaustein verwendet ein adapterbasiertes Schnittstellendesign. Er be
   Der zweite auswählbare Eingangskanal. Dieser Kanal wird aktiv geschaltet, wenn der Selektor `G` den Zustand `TRUE` (1) aufweist.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AIS`): 
   Der ausgewählte Ausgangskanal. Er liefert den Wert des jeweils aktiven Eingangskanals sowie das zugehörige Aktualisierungsereignis.
 

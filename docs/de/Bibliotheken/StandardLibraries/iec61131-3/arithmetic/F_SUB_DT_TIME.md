@@ -7,21 +7,26 @@
 ![F_SUB_DT_TIME](F_SUB_DT_TIME.svg)
 
 ## Einführung
+
 Der **F_SUB_DT_TIME** ist ein standardkonformer Funktionsbaustein zur Subtraktion von Zeitintervallen von Zeitstempeln, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitpunktberechnungen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Zeitstempel und Zeitintervall)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit korrigiertem Zeitstempel)
 
 ### **Daten-Eingänge**
+
 - `IN1` (DATE_AND_TIME): Basiszeitpunkt
 - `IN2` (TIME): Abzuziehendes Zeitintervall
 
 ### **Daten-Ausgänge**
+
 - `OUT` (DATE_AND_TIME): Berechneter Zeitpunkt (IN1 - IN2)
 
 ## Funktionsprinzip

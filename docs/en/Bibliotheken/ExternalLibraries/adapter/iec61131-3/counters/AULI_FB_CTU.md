@@ -1,11 +1,11 @@
 # AULI_FB_CTU
+
 ![AULI_FB_CTU](./AULI_FB_CTU.svg)
 
 * * * * * * * * * *
 The function block **AULI_FB_CTU** implements an up counter based on the ULINT (unsigned long integer) data type. It is designed as an IEC 61499-compliant component with an **AULI adapter interface**. Internally, the counter uses a standardized IEC 61131-3 CTU component (`FB_CTU_ULINT`) and makes its functionality available via adapter ports. Events are triggered with every update – regardless of a value change.
 
 No dedicated event inputs. Events are received exclusively via the **AX adapters** of the sockets (CU, R, PV).
-
 
 | Name | Type | Comment |
 |------|-----|-----------|
@@ -16,19 +16,20 @@ No direct data inputs. The required data (CU pulse, reset signal, preset value) 
 No direct data outputs. The result values (current counter value CV and threshold status Q) are output via the **AULI or AX adapters** of the plugs.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Direction | Adapter Name | Type | Comment |
-
-
-| Direction | Adapter Name | Type | Comment |
-
-
 **Socket (Input)** | CU | `adapter::types::unidirectional::AX` | Count-Up Pulse (Event + Data) |
 **Socket (Input)** | R | `adapter::types::unidirectional::AX` | Reset Pulse (Event + Data) |
 **Socket (Input)** | PV | `adapter::types::unidirectional::AULI` | Preset Value (Comparison Value for Q Output) |
@@ -36,6 +37,7 @@ No direct data outputs. The result values (current counter value CV and threshol
 | **Plug (Output)** | CV | `adapter::types::unidirectional::AULI` | Current Meter Reading (ULINT) |
 
 ## Functionality
+
 This module encapsulates an IEC 61131-3 compliant CTU meter (`FB_CTU_ULINT`). Events and data are received via the **socket adapters**:
 
 - **CU Update**: A rising edge at CU triggers a counting step (CV = CV + 1).
@@ -69,7 +71,6 @@ After each processing operation, the outputs are updated and the CNF event is se
 - **Threshold Monitoring**: Counting of products or events up to a configurable threshold (PV); the Q output is activated upon reaching this threshold.
 - **Reset-Controlled Batch Counting**: After an R pulse, the counter starts from zero; the current count is output via CV.
 - **Adapter-Based Automation Modules**: Easy integration into systems that rely on AX/AULI adapters (e.g., standardized I/O modules).
-
 - **Standard CTU (IEC 61131-3)**: Typically offers separate event and data ports. The `AULI_FB_CTU` encapsulates these in adapters, which simplifies bus-level wiring.
 - **CTU with Change Detection**: Some counter function blocks only fire output events when a value changes. This function block triggers with every update – resulting in deterministic behavior (one event per input event), but may require downstream filters.
 - **CTU as a Basic Function Block**: Other implementations use their own state machine; this function block delegates the logic to an embedded block, thus remaining lean.
@@ -77,7 +78,11 @@ After each processing operation, the outputs are updated and the CNF event is se
 The **AULI_FB_CTU** offers an IEC 61499-compliant, adapter-based increment counter function with ULINT data width. Its strengths lie in its modular interface and reliable event triggering with every update. For applications requiring only change detection, an external filter block (AX_D_FF) is recommended. Overall, the block is suitable for a wide range of counting scenarios in industrial automation, especially in adapter-oriented architectures.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

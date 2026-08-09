@@ -10,15 +10,19 @@ Der Funktionsbaustein **ASR_SPLIT_9** dient dazu, einen einzelnen eingehenden AS
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine vorhanden.
 
 ### **Ereignis-Ausgänge**
+
 Keine vorhanden.
 
 ### **Daten-Eingänge**
+
 Keine separaten Dateneingänge. Der gesamte Datenaustausch erfolgt über den ASR-Adapter **IN**.
 
 ### **Daten-Ausgänge**
+
 Keine separaten Datenausgänge. Die Daten werden über die ASR-Adapter **OUT1** bis **OUT9** ausgegeben.
 
 ### **Adapter**
@@ -77,4 +81,5 @@ Der Funktionsbaustein **ASR_SPLIT_9** ist eine kompakte und effiziente Lösung z
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

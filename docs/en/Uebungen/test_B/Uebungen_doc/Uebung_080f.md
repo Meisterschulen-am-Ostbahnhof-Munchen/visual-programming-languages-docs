@@ -1,14 +1,17 @@
 # Exercise_080f: Example for E_CTU
+
 ![Uebung_080f_network](./Uebung_080f_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of the event-driven increment counter `E_CTU` according to IEC 61499. The counter is incremented and decremented using two pushbuttons. The current counter value is displayed on a numeric display as an animated horse (single frames). A digital output is set as soon as the counter reaches the predefined limit.
 This exercise is suitable for users who want to take their first steps with counters and event chaining in 4diac.
 
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Input Logic (Buttons)
+
 - **DigitalInput_CLK_I1 (Type: `logiBUS::io::DI::logiBUS_IE`)**
 - Parameters:
 - `QI` = `TRUE`
@@ -23,6 +26,7 @@ This exercise is suitable for users who want to take their first steps with coun
 - Function: Provides the second button (I2) as an event source. Each single click generates an event `IND`.
 
 ### Sub-Block: Up Counter
+
 - **E_CTU (Type: `iec61499::events::E_CTU`)**
 - Parameters:
 - `PV` = `UINT#5` (Limit)
@@ -34,6 +38,7 @@ This exercise is suitable for users who want to take their first steps with coun
 - Function: Combines two event inputs (`EI1`, `EI2`) into a single event output `EO`. As soon as one of the two events occurs, `EO` is triggered.
 
 ### Sub-module: Output Logic (Digital Output)
+
 - **DigitalOutput_Q1 (Type: `logiBUS::io::DQ::logiBUS_QX`)**
 - Parameters:
 - `QI` = `TRUE`
@@ -41,12 +46,14 @@ This exercise is suitable for users who want to take their first steps with coun
 - Function: Switches the digital output Q1. The value at data input `OUT` is updated when an event arrives at `REQ`.
 
 ### Sub-module: Multiplexer
+
 - **F_MUX_32 (Type: `iec61131::selection::F_MUX_32`)**
 - Parameters:
 - `IN1` … `IN32` = constants `frame_00` … `frame_31` (32 individual frames of a horse animation)
 - Function: A 32-way multiplexer. Depending on the value at the selection input `K` (0 … 31), the corresponding file output `INx` is routed to the output `OUT`.
 
 ### Sub-Block: Numeric Display
+
 - **Q_NumericValue_1 (Type: `isobus::UT::Q::Q_NumericValue`)**
 - Parameters:
 - `u16ObjId` = `ObjectPointer_Horse`
@@ -57,17 +64,12 @@ This exercise is suitable for users who want to take their first steps with coun
 The flow is controlled by events:
 
 1. **Counter Input**
-
 - A click on button I1 generates an event `IND` at the block `DigitalInput_CLK_I1`.
 - This event is directly routed to input `CU` of `E_CTU`. The counter increments by 1.
-
 2. **Reset**
-
 - Clicking button I2 generates an event `IND` at `DigitalInput_CLK_I2`.
 - This event is routed to input `R` of `E_CTU`. The counter is reset to 0.
-
 3. **Event Merging**
-
 - Both the output `CUO` (after counter increment) and `RO` (after reset) of `E_CTU` are connected to the inputs `EI1` and `EI2` of `E_MERGE_2`.
 - The merged output `EO` is activated with every counter change.
 
@@ -97,6 +99,7 @@ Prerequisites: Basic knowledge of IEC 61499 event processing and the 4diac IDE. 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

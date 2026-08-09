@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_006e2`, basierend auf den ber
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_006e2** demonstriert die Implementierung eines **RS-Flip-Flops** (Rücksetz-Dominant) unter Verwendung von zwei digitalen Eingängen (IX) und einem digitalen Ausgang. Das Ziel ist es, eine grundlegende Speicherfunktion zu realisieren, bei der ein Eingang den Ausgang setzt und der andere ihn zurücksetzt. Diese Übung nutzt die `logiBUS` Bibliothek für die Hardware-Abstraktion der Ein- und Ausgänge.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Die Übung **Uebung_006e2** demonstriert die Implementierung eines **RS-Flip-Flo
 In dieser Sub-Applikation werden verschiedene Bausteine instanziiert und miteinander verschaltet.
 
 ### Sub-Bausteine: DigitalInput_I1
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Beschreibung**: Dieser Baustein repräsentiert den ersten digitalen Eingang, der als "Set"-Signal fungiert.
 - **Parameter**:
@@ -21,6 +23,7 @@ In dieser Sub-Applikation werden verschiedene Bausteine instanziiert und miteina
     - `Input` = `Input_I1` (Hardware-Mapping auf Eingang I1)
 
 ### Sub-Bausteine: DigitalInput_I2
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Beschreibung**: Dieser Baustein repräsentiert den zweiten digitalen Eingang, der als "Reset"-Signal fungiert.
 - **Parameter**:
@@ -28,6 +31,7 @@ In dieser Sub-Applikation werden verschiedene Bausteine instanziiert und miteina
     - `Input` = `Input_I2` (Hardware-Mapping auf Eingang I2)
 
 ### Sub-Bausteine: FB_RS
+
 - **Typ**: `iec61131::bistableElements::FB_RS`
 - **Beschreibung**: Ein bistabiles Element (Flip-Flop) mit Rücksetz-Dominanz.
 - **Funktionsweise**:
@@ -35,6 +39,7 @@ In dieser Sub-Applikation werden verschiedene Bausteine instanziiert und miteina
     - Wenn der Eingang `R1` TRUE ist, wird der Ausgang `Q1` FALSE (unabhängig von S, da RS rücksetz-dominant ist).
 
 ### Sub-Bausteine: DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Beschreibung**: Dieser Baustein repräsentiert den digitalen Ausgang, der den Status des Flip-Flops anzeigt.
 - **Parameter**:
@@ -67,9 +72,11 @@ Der Programmablauf wird durch die Ereignisketten (Event Connections) und den Dat
 - Werden beide Eingänge gleichzeitig betätigt, bleibt der Ausgang aus (Reset ist dominant).
 
 ## Zusammenfassung
+
 Diese Übung ist ein klassisches Beispiel für speicherprogrammierbare Steuerungslogik nach IEC 61131-3. Sie vermittelt das Verständnis für bistabile Elemente und die Ereignissteuerung in 4diac, bei der die Ausführung der Logikblöcke durch Trigger (Events) von den Eingangsbausteinen gesteuert wird. Das Ergebnis ist eine robuste Schaltung zum Ein- und Ausschalten eines Verbrauchers über zwei getrennte Signale.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

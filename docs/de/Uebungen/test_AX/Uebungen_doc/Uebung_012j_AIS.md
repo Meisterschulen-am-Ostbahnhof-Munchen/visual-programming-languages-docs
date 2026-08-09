@@ -15,6 +15,7 @@ Ziel ist es, einen Anfangswert (Default: „Test") im NVS zu speichern und diese
 Die Übung besteht aus drei Funktionsbausteinen, die über Adapter verbunden sind:
 
 ### FB: InputString\_I1
+
 - **Typ**: `isobus::UT::io::StringValue::StringValue_AIS`
 - **Parameter**:
   - `QI` = `TRUE` (Baustein aktiv)
@@ -24,6 +25,7 @@ Die Übung besteht aus drei Funktionsbausteinen, die über Adapter verbunden sin
 - **Funktionsweise**: Dieser Baustein liest einen String-Wert von einer virtuellen Eingabestelle (z. B. HMI oder Simulation) und stellt ihn über den Adapter `IN` bereit. Der Wert wird durch die Objekt-ID `InputNumber_I1` identifiziert.
 
 ### FB: INI\_AIS
+
 - **Typ**: `eclipse4diac::storage::INI_AIS`
 - **Parameter**:
   - `QI` = `TRUE` (Baustein aktiv)
@@ -37,6 +39,7 @@ Die Übung besteht aus drei Funktionsbausteinen, die über Adapter verbunden sin
 - **Funktionsweise**: Der Baustein fungiert als Speicherzugriff für nichtflüchtigen Speicher (NVS). Er speichert einen über `AIS_IN` erhaltenen String unter der angegebenen Sektion und dem Schlüssel. Wird kein neuer Wert zugeführt, liefert er den zuletzt gespeicherten Wert oder den `DEFAULT_VALUE` über `AIS_OUT`.
 
 ### FB: Q\_StringValue\_AIS
+
 - **Typ**: `isobus::UT::Q::Q_StringValue_AIS`
 - **Parameter**:
   - `u16ObjId` = `InputNumber_I1` (gleiche Objekt-ID wie Eingang)
@@ -67,4 +70,5 @@ Die Übung **Uebung_012j_AIS** zeigt die grundlegende Handhabung von String-Date
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

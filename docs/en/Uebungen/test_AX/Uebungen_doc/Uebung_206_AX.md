@@ -1,9 +1,11 @@
 # Exercise_206_AX: Interlock: ILOCK_T_FF_AX (Three mutually interlocked toggle flip-flops via an adapter chain)
+
 ![Uebung_206_AX_network](./Uebung_206_AX_network.svg)
 *Image of the exercise not available*
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the implementation of an **interlock** (mutual interlock) using three toggle flip-flops (T-FF). Each flip-flop is toggled by a push button (single-click). The special feature: A bidirectional adapter chain ensures that only one output can be active at any given time – as soon as one flip-flop is set, the others are automatically reset.
 
 This makes the circuit suitable for safety-critical applications, e.g., for the exclusive control of actuators.
@@ -23,6 +25,7 @@ DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output on channel Q
 DigitalOutput_Q3` | `logiBUS::io::DQ::logiBUS_QXA` | Digital output on channel Q3 |
 
 ### Sub-Block: ILOCK_T_FF_AX
+
 - **Type**: `logiBUS::signalprocessing::interlock::ILOCK_T_FF_AX` (Library Block)
 - **Internal Function Blocks Used**: *No detailed information publicly available* – the block is integrated as a pre-built logic block from the library.
 - **Functionality**:
@@ -80,4 +83,5 @@ Exercise "Exercise_206_AX" demonstrates an elegant way to interlock three toggle
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

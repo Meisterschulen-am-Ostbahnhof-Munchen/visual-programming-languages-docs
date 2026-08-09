@@ -1,8 +1,10 @@
 # ATM_DEMUX_4
+
 ![ATM_DEMUX_4](./ATM_DEMUX_4.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distributes a data stream arriving via an incoming adapter (socket) to one of four outgoing adapters (plugs). The output channel is selected via an index `K`, which is evaluated upon the arrival of an event.
 ## Interface Structure
 
@@ -41,16 +43,13 @@ The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distribute
 ## Functionality
 
 1. The function block expects an event at input `REQ`. This event **must** be synchronized with the data input `K` (using a "With" declaration).
-
 2. Upon arrival of `REQ`, the current value of `K` is evaluated. Valid values are in the range 1–4.
-
 3. The pending value (or received message) via adapter `IN` is forwarded to adapter `OUTX`, where `X` corresponds to index `K`.
-
 4. After successful forwarding, the event `CNF` is output.
-
 5. If the index `K` is invalid (e.g., 0 or >4), no forwarding occurs – the behavior then depends on the implementation (typically an error or output of the event without any action).
 
 ## Technical Features
+
 - **Generic Function Block** – the function block is declared as a generic class (`GEN_ATM_DEMUX`) and can be instantiated in various contexts as long as the adapters used are of type `ATM`.
 - **Adapter-Based Coupling** – the inputs and outputs are implemented as unidirectional adapters, which allows for loose coupling of the components.
 - **Event-Driven Selection** – the index `K` is only evaluated upon an event; statically setting the input alone does not trigger any action.
@@ -67,6 +66,7 @@ A state machine is not explicitly included in the provided XML. The typical beha
 An incorrect index can result in a separate **ERROR** state (not defined in the XML, but common).
 
 ## Application Scenarios
+
 - **Signal Distribution** – A signal from a sensor can be selectively forwarded to various actuators or controllers.
 - **Routing** – In a modular machine control system, data packets can be sent to different modules depending on the operating state.
 - **Test/Simulation Environments** – Switching between real and simulated data streams by selecting the corresponding output.

@@ -1,6 +1,8 @@
 # I_MSS
+
 * * * * * * * * * *
 ## Introduction
+
 The **I_MSS** (Machine Selected Speed) is a standards-compliant function block for controlling and monitoring the machine-selected speed, developed under the EPL-2.0 license.
 Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise speed control in agricultural and construction machinery.
 ![I_MSS](I_MSS.svg)
@@ -8,17 +10,21 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization Request (with qualifier `QI`)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization Confirmation (with status)
 - `IND`: Indication Event with all speed parameters
 - `TIMEOUT`: Timeout Event
 
 ### **Data Inputs**
+
 - `QI` (BOOL): Qualifier for Initialization
 
 ### **Data Outputs**
+
 - `QO` (BOOL): Qualifier for Output Events
 - `STATUS` (STRING): Operating status message
 - `Q_timeout` (BOOL): Timeout indicator
@@ -48,17 +54,12 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with `QI`=TRUE starts system initialization
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-
 2. **Data Provision**:
-
 - `IND` provides all speed parameters with timestamps
 - Automatic updates upon state changes
-
 3. **Error Handling**:
-
 - `TIMEOUT` in case of communication problems
 - Detailed error codes in `SELECTEDMACHINE_EXIT_REASON_CODE`
 
@@ -71,6 +72,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ✔ **Intelligent Limit Detection** with 3-stage status
 
 ## Application Scenarios
+
 - **Tractors**: Automatic speed adjustment for field work
 - **Harvesting Machines**: Precise row length calculation
 - **Construction Machinery**: Speed limitation in hazardous areas
@@ -96,6 +98,7 @@ Source Flexibility | 8 | 1-2 | 1 |
 Low Speed | ✔ Optimal | ✖ Inaccurate | ✖ Unusable |
 
 ## 🛠️ Related Exercises
+
 * [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
 
 ## Conclusion

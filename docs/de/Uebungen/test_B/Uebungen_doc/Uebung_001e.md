@@ -24,6 +24,7 @@ Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit I
 ## Verwendete Funktionsbausteine (FBs)
 
 ### **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IX`)
+
 - **Typ:** `logiBUS::io::DI::logiBUS_IX`  
 - **Parameter:**
   - `QI` = `TRUE` (Qualifier – immer aktiv)
@@ -33,6 +34,7 @@ Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit I
 - **Funktionsweise:** Liest den digitalen Zustand des Eingangs I1 und stellt ihn am Ausgang `IN` zur Verfügung. Ein eingehendes Ereignis (z. B. über das Netzwerk) aktiviert die Auslese.
 
 ### **F_NOT_BOOL** (`iec61131::bitwiseOperators::F_NOT_BOOL`)
+
 - **Typ:** `iec61131::bitwiseOperators::F_NOT_BOOL`
 - **Parameter:** Keine
 - **Ereigniseingang:** `REQ` – startet die Negation  
@@ -42,6 +44,7 @@ Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit I
 - **Funktionsweise:** Führt eine logische NOT-Operation auf den booleschen Eingangswert aus. Bei `IN = TRUE` wird `OUT = FALSE` und umgekehrt.
 
 ### **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QX`)
+
 - **Typ:** `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter:**
   - `QI` = `TRUE` (Qualifier – immer aktiv)
@@ -80,4 +83,5 @@ Die Übung **Uebung_001e** realisiert eine einfache Negation eines digitalen Ein
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

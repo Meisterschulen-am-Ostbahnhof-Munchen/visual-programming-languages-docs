@@ -1,29 +1,29 @@
 # AUDI_MUL_2
+
 ![AUDI_MUL_2](./AUDI_MUL_2.svg)
 **Image:** No image available.
 
 * * * * * * * * * *
 The function block `AUDI_MUL_2` is a generic function block for calculating the arithmetic product of two numeric values. It receives its operands via two input adapters and outputs the result via one output adapter. Its generic design allows the use of different data types (e.g., integers, floating-point numbers), which are defined by the specific adapter type.
 
-
-
 None.
-
-
-None.
-
 
 No direct data ports. The input values are transmitted via the adapters `IN1` and `IN2`.
-
 
 No direct data ports. The result is output via the adapter `OUT`.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Direction | Name | Type | Description |
@@ -44,19 +44,15 @@ The function block is designed generically. The specific data type (e.g., `REAL`
 - **Generic Design:** The attributes `eclipse4diac::core::GenericClassName` and `eclipse4diac::core::TypeHash` identify the function block as generic. The actual data type is only defined in the specific project, e.g., by typing the adapter.
 - **No Execution Control Chart (ECC):** Since no events exist, a state machine is not required. Processing occurs continuously with valid data.
 
-
 This function block has no states or ECC state diagrams. Execution is determined solely by the data flow.
 
 - Arithmetic calculations in industrial control applications where the multiplication of two values is required (e.g., scaling, unit conversion).
 - Use in complex function blocks where operands are obtained from other components via adapters.
 - Replacement for classic MUL function blocks when loose coupling via adapters is desired.
-
 - **Classic MUL FB** (with event/data ports): Operates in an event-driven manner and requires explicit data inputs/outputs. `AUDI_MUL_2`, on the other hand, uses adapters, which allows for more flexible interconnection.
 - **Other generic arithmetic function blocks** (e.g., `AUDI_ADD_2`): Same structure, but with a different operation. The adapter interface remains identical, ensuring easy interchangeability.
 
-
 AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61499 applications. By eliminating events and using typed adapters, it is particularly well-suited for dataflow-oriented and loosely coupled systems. Its generic design allows it to be used with various numeric data types without requiring modification of the function block itself.
-
 
 AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61499 applications. ---
 
@@ -65,8 +61,13 @@ AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61
 ]
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

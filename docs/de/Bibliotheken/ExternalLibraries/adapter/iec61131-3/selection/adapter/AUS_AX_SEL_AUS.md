@@ -17,20 +17,25 @@ Der Baustein nutzt unidirektionale Adapterstrukturen, was eine saubere Kapselung
 Da dieser Funktionsbaustein als Composite-Netzwerk realisiert ist und vollständig auf Adaptern basiert, besitzt er keine direkten, klassischen Ereignis- oder Datenkanäle auf seiner Hauptebene. Die gesamte Kommunikation ist in den Adaptern gebündelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (Ereignisse werden über die Adapter-Schnittstellen empfangen).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (Ereignisse werden über die Adapter-Schnittstellen gesendet).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **G** (Typ: `adapter::types::unidirectional::AX`):
     *   **Beschreibung:** Auswahlsignal (Selector).
     *   **Inhalt:** Enthält das Auswahlerleignis `E1` und das dazugehörige Datensignal `D1` (üblicherweise boolesch interpretiert), das bestimmt, welcher Eingang durchgeschaltet wird.
@@ -42,6 +47,7 @@ Da dieser Funktionsbaustein als Composite-Netzwerk realisiert ist und vollständ
     *   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AUS`):
     *   **Beschreibung:** Der ausgewählte Ausgang. Erhält die Daten und Ereignisse des jeweils durchgeschalteten Eingangs.
     *   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).

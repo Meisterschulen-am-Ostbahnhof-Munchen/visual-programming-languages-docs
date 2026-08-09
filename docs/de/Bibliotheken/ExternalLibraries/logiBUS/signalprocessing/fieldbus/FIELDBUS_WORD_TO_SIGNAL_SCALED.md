@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **FIELDBUS_WORD_TO_SIGNAL_SCALED** dient dazu, einen digitalen Feldbus-Rohwert (16‑Bit WORD) in einen skalierten physikalischen Signalwert (REAL) umzurechnen. Dabei wird nur dann ein gültiger Ausgang geliefert, wenn der eingehende Wert als gültiges Signal erkannt wird. Der Baustein prüft die Gültigkeit anhand einer vordefinierten Konstanten (`VALID_SIGNAL_W`) und kann unsichere oder „nicht verfügbare“ Werte zuverlässig unterdrücken.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Ereignis | Beschreibung |
@@ -37,9 +39,11 @@ Der Funktionsblock **FIELDBUS_WORD_TO_SIGNAL_SCALED** dient dazu, einen digitale
 | `VALID` | BOOL     | `FALSE`     | Gültigkeitsflag – `TRUE`, wenn der eingehende Rohwert als gültiges Signal erkannt wurde. |
 
 ### **Adapter**
+
 Keine Adapter vorhanden.
 
 ## Funktionsweise
+
 Der Baustein arbeitet zustandsgesteuert:
 
 1. **INIT‑Zustand**:  
@@ -63,6 +67,7 @@ Der Baustein arbeitet zustandsgesteuert:
 Der Vergleichswert `VALID_SIGNAL_W` sowie der Standard‑Eingangswert `NOT_AVAILABLE_WM` sind als Konstanten im Namespace `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` importiert.
 
 ## Technische Besonderheiten
+
 - **Verwendung von externen Konstanten**: Die Gültigkeitsschwelle (`VALID_SIGNAL_W`) und der „Nicht verfügbar“‑Marker (`NOT_AVAILABLE_WM`) werden aus einer globalen Bibliothek bezogen. Dies ermöglicht eine konsistente Signaldefinition über mehrere FB‑Instanzen hinweg.
 - **Skalierung mit REAL und DINT**: Der Offset ist als `DINT` definiert, wird aber durch `DINT_TO_REAL` in eine Gleitkommazahl gewandelt. Dies kann bei großen Werten zu geringfügigen Rundungsfehlern führen, ist in der Praxis aber meist vernachlässigbar.
 - **Gültigkeitslogik**: Anders als bei einfachen „Word‑to‑Real“‑Wandlern wird der Wert nur dann ausgegeben, wenn er innerhalb des definierten gültigen Bereichs liegt. Dadurch werden Fehlinterpretationen von Störungen oder ungültigen Telegrammen vermieden.
@@ -78,6 +83,7 @@ Der Vergleichswert `VALID_SIGNAL_W` sowie der Standard‑Eingangswert `NOT_AVAIL
 Der FB kennt keine weiteren Zustände; nach jedem Ereignis kehrt er in den entsprechenden Startzustand zurück. Es gibt keine explizite Fehlerbehandlung oder Timeouts.
 
 ## Anwendungsszenarien
+
 - **Landtechnik / Agrarsteuerungen**: Ein Feldbus-Gerät (z. B. ISOBUS) liefert Rohwerte für Sensoren (Drehzahl, Temperatur, Druck). Der FB skaliert diese auf physikalische Einheiten und erkennt ungültige Messbereiche.
 - **Industrielle Automatisierung**: Bei Profibus/IO‑Link‑Anbindung können Wort‑Codes in prozessrelevante Größen umgerechnet werden – z. B. 0…1000 → 0,0…10,0 V.
 - **Diagnose‑ und Sicherheitsfunktionen**: Durch die Gültigkeitsprüfung lassen sich Signalverluste oder Bereichsüberschreitungen einfach erkennen und eine Fehlerreaktion einleiten.
@@ -93,9 +99,11 @@ Der FB kennt keine weiteren Zustände; nach jedem Ereignis kehrt er in den entsp
 Die Stärke von `FIELDBUS_WORD_TO_SIGNAL_SCALED` liegt in der **Kombination aus Gültigkeitsprüfung, Skalierung und Offset** in einem einzigen, überschaubaren FB.
 
 ## Fazit
+
 Der Funktionsblock bietet eine kompakte und robuste Lösung zur Aufbereitung von Feldbus‑Rohdaten. Er integriert die typische Aufgabenkette „Prüfen → Skalieren → Offsieten“ und sorgt durch die feste Gültigkeitsschwelle für eine klare Trennung zwischen normalen Messwerten und Fehlersignalen. Durch die Verwendung externer Konstanten bleibt er flexibel anpassbar, ohne die innere Logik zu verkomplizieren. Ideal für sicherheitskritische oder diagnostische Anwendungen in der Automatisierungstechnik.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

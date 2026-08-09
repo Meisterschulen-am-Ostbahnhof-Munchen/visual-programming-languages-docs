@@ -1,6 +1,7 @@
 # E_DEMUX
 
 ## Einleitung
+
 Der `E_DEMUX` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) an einen von mehreren Ausgängen weiterleitet. Die Auswahl des spezifischen Ausgangs wird durch den Wert einer Eingangsvariable (`K`) bestimmt. Diese Version des Bausteins ist ein 1-zu-4 Demultiplexer.
 
 ![E_DEMUX](E_DEMUX.svg)
@@ -10,19 +11,23 @@ Der `E_DEMUX` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, de
 ![E_DEMUX_ecc](./E_DEMUX_ecc.svg)
 
 ### **Ereignis-Eingänge**
+
 - **EI (Event Input)**: Das Eingangereignis, das verteilt werden soll.
     - **Verbundene Daten**: `K`
 
 ### **Ereignis-Ausgänge**
+
 - **EO0**: Wird ausgelöst, wenn `EI` ankommt und `K = 0`.
 - **EO1**: Wird ausgelöst, wenn `EI` ankommt und `K = 1`.
 - **EO2**: Wird ausgelöst, wenn `EI` ankommt und `K = 2`.
 - **EO3**: Wird ausgelöst, wenn `EI` ankommt und `K = 3`.
 
 ### **Daten-Eingänge**
+
 - **K**: Der Auswahlindex, der bestimmt, welcher Ausgang ausgelöst wird (Datentyp: `UINT`).
 
 ## Funktionsweise
+
 1.  **Ereignisempfang**: Der Baustein wartet auf ein Ereignis am Eingang `EI`.
 2.  **Auswahl**: Wenn das `EI`-Ereignis eintrifft, wird der Wert der Datenvariable `K` ausgewertet.
 3.  **Weiterleitung**:
@@ -35,11 +40,13 @@ Der `E_DEMUX` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, de
 Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergeleitet, sofern der Index `K` gültig ist.
 
 ## Technische Besonderheiten
+
 - **1-zu-4 Verteilung**: Dieser Baustein verteilt ein Ereignis auf vier mögliche Ausgänge.
 - **Index-gesteuert**: Die Logik basiert auf einem numerischen Index.
 - **Deterministisches Verhalten**: Die Weiterleitung ist klar und eindeutig definiert, was für zuverlässige Steuerungen sorgt.
 
 ## Anwendungsszenarien
+
 - **Zustandsmaschinen**: Auswahl des nächsten Zustandsübergangs basierend auf einem berechneten Index.
 - **Modus-Umschaltung**: Aktivierung unterschiedlicher Anlagenteile je nach gewähltem Betriebsmodus (`K` = Modus-Nummer).
 - **Sequenzer/Schrittketten**: Aktivierung des nächsten Schritts in einer Kette.
@@ -62,4 +69,5 @@ Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergele
 * [Uebung_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
 
 ## Fazit
+
 Der `E_DEMUX` ist ein fundamentaler Baustein für die Steuerung des Ereignisflusses in IEC 61499-Anwendungen. Er ermöglicht eine klare, indexbasierte Aufteilung von Ereignisströmen und ist damit ein Schlüsselwerkzeug für die Implementierung von Zustandslogiken, Modus-Umschaltungen und Sequenzsteuerungen.

@@ -7,21 +7,26 @@
 ![F_MULTIME](F_MULTIME.svg)
 
 ## Einführung
+
 Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation von Zeitwerten mit numerischen Faktoren, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Skalierung von Zeitintervallen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Zeitwert und Multiplikator)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit skaliertem Zeitwert)
 
 ### **Daten-Eingänge**
+
 - `IN1` (TIME): Zeitwert (Basiswert)
 - `IN2` (ANY_NUM): Skalierungsfaktor
 
 ### **Daten-Ausgänge**
+
 - `OUT` (TIME): Skalierter Zeitwert (IN1 × IN2)
 
 ## Funktionsprinzip

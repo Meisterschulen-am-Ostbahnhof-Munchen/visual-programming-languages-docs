@@ -1,8 +1,10 @@
 # Exercise_080c_AUI: Example of E_CTU with AX_T_FF and AX_PERMIT (Event Halving) and Terminal Output
+
 ![Uebung_080c_AUI_network](./Uebung_080c_AUI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of an up counter (E_CTU) in combination with a T flip-flop (AX_T_FF) and an event enable block (AX_PERMIT).
 The events of a button (I1) are halved by the T flip-flop before incrementing the counter. A second button (I2) serves as a reset.
 
@@ -11,6 +13,7 @@ The current counter value is sent via a converter to a numeric output on a termi
 ---
 
 ## Function Blocks (FBs) Used
+
 - **DigitalInput_CLK_I1** (Type: `logiBUS::io::DI::logiBUS_IE`)
 - Parameters: QI = TRUE, Input = `Input_I1`, InputEvent = `BUTTON_SINGLE_CLICK`
 - Event output: `IND` → connected to `AX_T_FF.CLK`
@@ -31,11 +34,11 @@ The current counter value is sent via a converter to a numeric output on a termi
 - **DigitalOutput_Q1** (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 - Parameters: QI = TRUE, Output = `Output_Q1`
 - Adapter input: `OUT` ← `E_CTU.Q`
-- **AUI_TO_AUDI** (Type: `adapter::conversion::unidirectional::AUI_TO_AUDI`)  
-- Adapter input: `AUI_IN` ← `E_CTU.CV`  
+- **AUI_TO_AUDI** (Type: `adapter::conversion::unidirectional::AUI_TO_AUDI`)
+- Adapter input: `AUI_IN` ← `E_CTU.CV`
 - Adapter output: `AUDI_OUT` → `Q_NumericValue_AUDI.u32NewValue`
-- **Q_NumericValue_AUDI** (Type: `isobus::UT::Q::Q_NumericValue_AUDI`)  
-- Parameters: `u16ObjId` = `OutputNumber_N1`  
+- **Q_NumericValue_AUDI** (Type: `isobus::UT::Q::Q_NumericValue_AUDI`)
+- Parameters: `u16ObjId` = `OutputNumber_N1`
 - Data input: `u32NewValue` ← `AUI_TO_AUDI.AUDI_OUT`
 
 ---
@@ -61,7 +64,6 @@ The enabled event reaches the up counter via its input `CU`. The internal counte
 A second button on `Input_I2` triggers an event that is directly connected via `DigitalInput_CLK_I2.IND` to the reset input `R` of `E_CTU` – when pressed, the counter is reset to 0.
 
 5. **Counter Reading Output**
-
 - The current counter value (`CV`) is converted into an analog data value via the converter `AUI_TO_AUDI`.
 - This value is passed to the data block `Q_NumericValue_AUDI`, which displays it on a terminal (e.g., via the configured `OutputNumber_N1`).
 - Simultaneously, the counter provides a binary output `Q`, which is active whenever the counter reading is greater than 0. This output is then forwarded to the digital output `DigitalOutput_Q1` (to `Output_Q1`).
@@ -89,6 +91,6 @@ The interaction of event, adapter, and data connections demonstrates typical pat
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-

@@ -1,8 +1,11 @@
 # IX
+
 ## 🎧 Podcast
+
 * [Infineon MOTIX BTM9020/9021EP: Datasheet Analysis for Automotive – Robust Motor Driver with Intelligent Diagnostics (HW vs. SPI) ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-MOTIX-BTM90209021EP-Datenblatt-Analyse-fr-Automotive--Robuster-Motortreiber-mit-intelligenter-Diagnose-HW-vs--SPI-e39av51)
 * [Integrated Full Bridge ICs MOTIX™ BTM9020EP ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/integrierten-Vollbrcken-ICs-MOTIX-BTM9020EP-e368kse)
 ## Introduction
+
 The IX function block is a service interface function block for Boolean input data. It serves as an interface for communication with input devices and enables the querying and processing of digital input signals in 4diac systems.
 
 ![IX](IX.svg)
@@ -10,36 +13,44 @@ The IX function block is a service interface function block for Boolean input da
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **INIT**: Service Initialization - Initializes the function block and configures the hardware parameters
 - **REQ**: Service Request - Requests a query of the current input value
 
 ### **Event Outputs**
+
 - **INITO**: Initialization Acknowledgement - Confirms successful initialization
 - **CNF**: Confirmation of Requested Service - Confirms a successful query
 - **IND**: Indication from Resource - Signals a change in the input signal's state
 
 ### **Data Inputs**
+
 - **QI**: Event Input Qualifier (BOOL) - Controls the activation of the service functionality
 - **PARAMS**: Service Parameters (STRING) - Contains configuration parameters for the hardware interface
 
 ### **Data Outputs**
+
 - **QO**: Event Output Qualifier (BOOL) - Displays the service execution status
 - **STATUS**: Service status (STRING) - Provides status information about the service execution
 - **IN**: Input data from the resource (BOOL) - Contains the current value of the digital input
 
 ### **Adapter**
+
 No adapter interfaces are available.
 
 ## Functionality
+
 The IX function block acts as an intermediary between the control logic and physical input devices. During initialization (INIT), the hardware parameters are configured. Subsequently, the current state of the input can be queried via REQ events. The block can process both poll-based queries (REQ/CNF) and event-based notifications (IND) upon state changes.
 
 ## Technical Features
+
 - Supports both request-based and event-driven operating modes
 - Boolean data type for simple digital inputs
 - Flexible parameter configuration via STRING parameters
 - Comprehensive status feedback for fault diagnosis
 
 ## State Overview
+
 The function block goes through the following main states:
 
 1. **Not Initialized**: Block is inactive
@@ -48,15 +59,18 @@ The function block goes through the following main states:
 4. **Indication Ready**: Ready for event-driven notifications
 
 ## Application Scenarios
+
 - Querying digital sensors (limit switches, proximity switches)
 - Monitoring push-button inputs
 - Reading switch positions
 - Digital signal processing in automation systems
 
 ## ⚖️ Comparison with Similar Blocks
+
 Compared to other input blocks, IX offers an enhanced service interface with both poll-based and event-driven operating modes. While simpler input blocks often only provide direct values, IX offers additional status information and error handling.
 
 ## 🛠️ Related exercises
+
 * [Uebung_001](../../../Uebungen/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../Uebungen/test_B/Uebungen_doc/Uebung_001c.md)
 * [Uebung_002](../../../Uebungen/test_B/Uebungen_doc/Uebung_002.md)
@@ -136,9 +150,11 @@ Compared to other input blocks, IX offers an enhanced service interface with bot
 * [Exercise_178](../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
 
 ## Conclusion
+
 The IX function block provides a robust and flexible solution for integrating Boolean input data into 4diac systems. Its comprehensive error handling and flexible operating modes make it particularly suitable for reliable automation applications with digital input signals.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

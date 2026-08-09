@@ -1,8 +1,10 @@
 # AUDI_D_FF_TMIN
+
 ![AUDI_D_FF_TMIN](./AUDI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUDI_D_FF_TMIN** implements a D flip-flop (data latch) with a minimum lock time between successive output events. It serves to receive a value received via one adapter and output it via a second adapter, with the propagation of the output event being time-controlled.
 ## Interface Structure
 
@@ -52,6 +54,7 @@ An event at the input `I.E1` (of the adapter) is passed as a clock signal (CLK) 
 The internal function block enforces a minimum time interval between successive `Q.E1` events. If the time defined at `Tmin` is exceeded, the next output event is only triggered after this time interval has elapsed. This prevents overloads on the output side.
 
 ## Technical Features
+
 - **Adapter-Based Communication**
 
 The function block uses two unidirectional AUDI adapters for input and output. This achieves loose coupling between data flow and event control.
@@ -75,6 +78,7 @@ The function block has no externally visible states, as the state logic is encap
 An INIT event resets all states.
 
 ## Application Scenarios
+
 - **Time-Controlled Data Buffer**
 
 Accepts measured values or control signals at fixed time intervals, e.g., to decouple a fast sensor from a slow actuator.

@@ -12,6 +12,7 @@ Die Konfiguration verwendet vordefinierte Konstanten für den Speicherabschnitt 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### FB: `StringValue_IS`
+
 - **Typ**: `isobus::UT::io::StringValue::StringValue_IS`  
 - **Parameter**:
   - `QI` = `TRUE` (aktiv)
@@ -24,6 +25,7 @@ Die Konfiguration verwendet vordefinierte Konstanten für den Speicherabschnitt 
   Liest bei Aktivierung den Stringwert von der spezifizierten ISOBUS-Objekt-ID (`InputString_S1`) und gibt diesen über den Ausgang `IN` sowie ein Ereignis `IND` aus.
 
 ### FB: `INI`
+
 - **Typ**: `eclipse4diac::storage::INI`  
 - **Parameter**:
   - `QI` = `TRUE` (aktiv)
@@ -40,6 +42,7 @@ Die Konfiguration verwendet vordefinierte Konstanten für den Speicherabschnitt 
   Der FB verwaltet einen persistenten String-Wert im INI-Format. Beim Ereignis `SET` wird der anliegende `VALUE` unter dem angegebenen Schlüssel und Abschnitt gespeichert. Beim Ereignis `GET` wird der gespeicherte Wert auf `VALUEO` ausgegeben und das Ereignis `GETO` gesendet. Bei Initialisierung (`INITO`) wird automatisch ein `GET` ausgeführt.
 
 ### FB: `Q_StringValue`
+
 - **Typ**: `isobus::UT::Q::Q_StringValue`  
 - **Parameter**:
   - `u16ObjId` = `InputString_S1` (Objekt-ID – wird hier nicht direkt verwendet, aber als Kontext)
@@ -55,6 +58,7 @@ Die Konfiguration verwendet vordefinierte Konstanten für den Speicherabschnitt 
 Der Programmablauf gliedert sich in zwei Phasen: **Initialisierung** und **zyklische Verarbeitung**.
 
 ### Ereignisverbindungen
+
 1. **Initialisierung**:  
    Der FB `INI` erzeugt nach erfolgreicher Initialisierung das Ereignis `INITO`. Dieses wird direkt mit dem `GET`-Eingang von `INI` verbunden. Dadurch wird unmittelbar nach dem Start der gespeicherte Wert gelesen.
 
@@ -65,6 +69,7 @@ Der Programmablauf gliedert sich in zwei Phasen: **Initialisierung** und **zykli
    Wenn `StringValue_IS` einen neuen String vom ISOBUS-Objekt empfängt, sendet es das Ereignis `IND`. Dieses ist mit dem `SET`-Eingang von `INI` verbunden, sodass der neue Wert gespeichert wird.
 
 ### Datenverbindungen
+
 - Der Ausgang `IN` von `StringValue_IS` wird mit dem Dateneingang `VALUE` von `INI` verbunden – der gelesene String wird zum Speichern weitergegeben.
 - Der Ausgang `VALUEO` von `INI` wird mit dem Dateneingang `pau8String` von `Q_StringValue` verbunden – der ausgelesene String wird für die Ausgabe bereitgestellt.
 
@@ -87,4 +92,5 @@ Durch die Verwendung von Konstanten (`SECTION_S1_STORE`, `KEY_S1_STORE`, `InputS
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

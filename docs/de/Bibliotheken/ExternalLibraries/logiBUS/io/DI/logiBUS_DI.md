@@ -11,18 +11,23 @@ Die logiBUS_DI GlobalConstants-Definition stellt eine Sammlung von vordefinierte
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Keine Ereigniseingänge vorhanden - handelt sich um eine Konstantendefinition*
 
 ### **Ereignis-Ausgänge**
+
 *Keine Ereignisausgänge vorhanden - handelt sich um eine Konstantendefinition*
 
 ### **Daten-Eingänge**
+
 *Keine Dateneingänge vorhanden - handelt sich um eine Konstantendefinition*
 
 ### **Daten-Ausgänge**
+
 *Keine Datenausgänge vorhanden - handelt sich um eine Konstantendefinition*
 
 ### **Adapter**
+
 *Keine Adapter vorhanden - handelt sich um eine Konstantendefinition*
 
 ## Funktionsweise

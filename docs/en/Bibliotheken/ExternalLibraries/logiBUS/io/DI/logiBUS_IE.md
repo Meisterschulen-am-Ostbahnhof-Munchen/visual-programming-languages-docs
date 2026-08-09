@@ -1,19 +1,23 @@
 # logiBUS_IE
+
 <img width="2037" height="313" alt="image" src="https://github.com/user-attachments/assets/3cb31c53-ac68-4483-bfc4-834776122b60" />
 * * * * * * * * * *
 ## Introduction
+
 The logiBUS_IE function block is an input service interface module for event input data. It serves as an interface between the logiBUS system and the 4diac runtime environment for processing digital input signals with extended event detection functions.
 `` ![logiBUS_IE](logiBUS_IE.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **INIT**: Service Initialization
 - Linked to: QI, PARAMS, Input, InputEvent
 - **REQ**: Service Request
 - Linked to: QI
 
 ### **Event Outputs**
+
 - **INITO**: Initialization Acknowledgement
 - Linked to: QO, STATUS
 - **CNF**: Acknowledgement of Requested Services
@@ -22,6 +26,7 @@ The logiBUS_IE function block is an input service interface module for event inp
 - Linked to: QO, STATUS
 
 ### **Data Inputs**
+
 - **QI** (BOOL): Event Input Qualifier
 - **PARAMS** (STRING): Service Parameter
 - **Input** (logiBUS_DI_S): Identifies the Input (I1..I8)
@@ -30,25 +35,31 @@ The logiBUS_IE function block is an input service interface module for event inp
 - Initial value: Invalid
 
 ### **Data Outputs**
+
 - **QO** (BOOL): Event output qualifier
 - **STATUS** (STRING): Service status
 
 ### **Adapter**
+
 No adapter interfaces available.
 
 ## Functionality
+
 This function block enables the processing of digital input signals with advanced event detection. Specific parameters can be configured via the INIT initialization. The block recognizes various input events such as key presses, releases, single clicks, and double clicks and signals these via the corresponding output events.
 
 ## Technical Features
+
 - Supports multiple event types (Down, Up, Single-Click, Double-Click)
 - Flexible input configuration via PARAMS string
 - Status feedback via STATUS output
 - Initialization with invalid values for a safe start
 
 ## State Overview
+
 The function block has an initialized state and an operating state. After successful INIT initialization, it switches to the operating state, in which event processing and service requests can be handled.
 
 ## Application Scenarios
+
 - Operator Panel Controllers
 - Keyboard Input Processing
 - Mechanical Switch Monitoring
@@ -56,9 +67,11 @@ The function block has an initialized state and an operating state. After succes
 - Industrial Control Pushbuttons
 
 ## ⚖️ Comparison with Similar Function Blocks
+
 Compared to simple digital input blocks, logiBUS_IE offers advanced event detection capabilities and can recognize complex input patterns such as double-clicks. The configurable design allows for flexible adaptation to various hardware interfaces.
 
 ## 🛠️ Related exercises
+
 * [Uebung_004a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004a.md)
 * [Uebung_004a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
 * [Uebung_004a2_2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
@@ -187,11 +200,13 @@ Compared to simple digital input blocks, logiBUS_IE offers advanced event detect
 * [Uebung_180](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_180.md)
 
 ## Conclusion
+
 The logiBUS_IE function block provides a powerful interface for digital input devices Advanced event detection is available. Its flexible configurability and support for various event types make it ideal for applications requiring complex user interactions.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

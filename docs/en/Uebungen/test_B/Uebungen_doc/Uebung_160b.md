@@ -1,9 +1,11 @@
 Here is the documentation for Exercise 160b, based on the provided XML data.
 # Exercise_160b: Motor Reverse/Forward Rotation Automation via IE
+
 ![Uebung_160b_network](./Uebung_160b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a control system for a motor with reverse and forward rotation (reversing operation) using logiBUS blocks for input and output via Industrial Ethernet (IE). The circuit features a direct switching function with a safety delay and a collective indicator for the operating status.
 
 ## Function Blocks Used
@@ -11,6 +13,7 @@ This exercise implements a control system for a motor with reverse and forward r
 This sub-application uses various standard library blocks as well as hardware driver blocks to implement the logic.
 
 ## Sub-Blocks: Inputs
+
 Here, the pushbuttons for the control system are read.
 
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
@@ -44,6 +47,7 @@ These blocks control the physical outputs.
 - Description: Signal lamp/status indicator, active when Q5 or Q6 is active.
 
 ### Sub-Blocks: Logic (Logic Control)
+
 The core logic of the controller.
 
 - **Type**: `iec61499::events::E_SR` (Set/Reset Flip-Flop)
@@ -71,27 +75,21 @@ The core logic of the controller.
 The network implements motor control with the following properties:
 
 1. **Start Direction A (Q5):**
-
 * When `Input_I1` (click) is activated, `DigitalInput_CLK_I1` sends an event to the set input (S) of `E_SR_A`.
 
 `` * `E_SR_A` sets its output Q to TRUE, thereby activating `DigitalOutput_Q5`.
 
 2. **Switching / Stop A & Start B (Q6):**
-
 * When `Input_I2` is pressed, two things happen simultaneously:
 * An event is sent to the reset input (R) of `E_SR_A`. This immediately switches off `DigitalOutput_Q5`.
 * An event starts the timer `E_DELAY`.
 * After 50 ms (`DT=T#50ms`), `E_DELAY` sends an event to the set input (S) of `E_SR_B`.
 * * `E_SR_B` sets its output Q to TRUE, thereby activating `DigitalOutput_Q6`.
 * *Note:* I2 here acts as a switch from A to B with a short dead time.
-
 3. **Stop towards B (Q6):**
-
 * When `Input_I3` is pressed (push), `DigitalInput_CLK_I3` sends an event to the reset input (R) of `E_SR_B`.
 * `DigitalOutput_Q6` is switched off.
-
 4. **Operating Indicator (Q56):**
-
 * The data outputs (Q) of `E_SR_A` and `E_SR_B` are connected to the inputs of the `OR_2_BOOL` block.
 * As soon as one of the two SR memories is active (motor running left or right), `OR_2_BOOL` activates `DigitalOutput_Q56`.
 
@@ -103,4 +101,5 @@ The network implements motor control with the following properties:
 * Logical combination of states (OR) to control a summary display.
 
 ## Summary
+
 Exercise `Uebung_160b` demonstrates a practical implementation of a reversing contactor circuit logic according to IEC 61499. The combination of SR latches and a delay timer ensures that when switching from clockwise to counterclockwise rotation (triggered by button I2), the first output switches off before the second output switches on after 50 ms. Button I1 serves as the start for the first direction, and button I3 as the stop for the second direction. Output Q56 signals whether the motor is currently running.

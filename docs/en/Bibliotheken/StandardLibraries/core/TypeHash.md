@@ -1,8 +1,11 @@
 # TypeHash
+
 * * * * * * * * * *
 ## Introduction
+
 The attribute declaration `TypeHash` defines a fixed type hash for function blocks.
 ## Technical Details
+
 - **Base Data Type:** `STRING`
 - **Initial Value:** `''` (empty)
 - **Use:** Used to identify and validate type versions.
@@ -18,6 +21,7 @@ The attribute declaration `TypeHash` defines a fixed type hash for function bloc
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

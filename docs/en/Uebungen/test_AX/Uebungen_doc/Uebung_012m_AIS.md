@@ -1,6 +1,8 @@
 # Exercise_012m_AIS: String Input and Storage in Non-Volatile Memory (NVS) with Subapp (AIS Adapter)
+
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of an **AIS adapter** (Application Interface Service) to read and store a string in **non-volatile memory (NVS)**. The function block `NVS_IN_AND_STORE_AIS` is used as a subapp to parameterize a predefined key (`KEY`) and an object ID (`u16ObjId`) and thus persistently store any string value.
 The exercise shows how external constants from the project import can be used to keep the configuration clean.
 ## Function Blocks Used
@@ -8,6 +10,7 @@ The exercise shows how external constants from the project import can be used to
 The exercise contains a single subapp block that encapsulates all the functionality.
 
 ### Sub-modules: `Uebung_012m_sub_AIS`
+
 - **Type**: `MyLib::sys::NVS_IN_AND_STORE_AIS`
 - **Internal Function Blocks Used**: None (the function block is included as a predefined type from a library)
 - **Parameters**:
@@ -41,6 +44,7 @@ The exercise `Uebung_012m_AIS` demonstrates how a string is read via an AIS adap
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

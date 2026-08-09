@@ -11,15 +11,19 @@ Der Funktionsblock `AW_SPLIT_4` verteilt einen eingehenden AW-Adapter (unidirekt
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine (die Datenübertragung erfolgt ausschließlich über den Adapter‑Socket).
 
 ### **Daten-Ausgänge**
+
 Keine (die Ausgabe erfolgt ausschließlich über die Adapter‑Plugs).
 
 ### **Adapter**

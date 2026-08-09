@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_172`, basierend auf den berei
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Sub-Applikation **Uebung_172** ist eine Übungseinheit, die sich mit dem Funktionsbaustein `E_MUX_2` beschäftigt. Sie dient als Vorlage oder Ausgangspunkt, um die Funktionsweise des Event-Multiplexers (E_MUX) innerhalb der IEC 61499 Norm zu erlernen und zu implementieren.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ Die Sub-Applikation **Uebung_172** ist eine Übungseinheit, die sich mit dem Fun
 In dieser Übung wird der Standard-Baustein aus der `iec61499::events` Bibliothek verwendet.
 
 ### Sub-Bausteine: Uebung_172
+
 Diese Sub-Applikation definiert den Rahmen der Übung.
 
 - **Typ**: SubAppType
@@ -32,4 +34,5 @@ Aktuell stellt die Übung ein Gerüst dar, das vom Anwender vervollständigt wer
 *   **Ziel der Übung**: Das Ziel ist vermutlich, zwei verschiedene Event-Quellen an den `E_MUX_2` anzuschließen und das resultierende Ausgangs-Event weiterzuverarbeiten, um das Prinzip der Ereignis-Zusammenführung (Multiplexing) zu verstehen.
 
 ## Zusammenfassung
+
 Die `Uebung_172` ist eine vorbereitete Arbeitsumgebung für die Auseinandersetzung mit dem `E_MUX_2` Funktionsbaustein. Sie enthält die notwendige Instanz des Bausteins und einen Platzhalter-Kommentar, überlässt die konkrete Implementierung der Event-Logik jedoch dem Lernenden.

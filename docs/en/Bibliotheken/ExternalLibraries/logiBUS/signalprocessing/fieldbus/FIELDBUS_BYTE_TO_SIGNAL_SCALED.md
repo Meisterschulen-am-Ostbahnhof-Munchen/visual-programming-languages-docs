@@ -1,8 +1,10 @@
 # FIELDBUS_BYTE_TO_SIGNAL_SCALED
+
 ![FIELDBUS_BYTE_TO_SIGNAL_SCALED](./FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte value into a scaled real value. It checks whether the incoming signal is valid. If so, the input value is multiplied by a scaling factor and an offset is added. Otherwise, the output is set to zero and the validity signal is reset. This block is designed for use in fieldbus systems where sensor or actuator data is transmitted as bytes and needs to be linearized or normalized.
 ## Interface Structure
 
@@ -36,6 +38,7 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte 
 | `VALID` | BOOL | `FALSE` | `TRUE`, if the incoming byte value was deemed valid |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
@@ -63,6 +66,7 @@ The event `CNF` is then sent with the current values of `OUT` and `VALID`.
 The initial value of `IN` is `NOT_AVAILABLE_B` – another imported constant value that indicates an unavailable signal. Therefore, the first time `REQ` is called (without a previous valid input), it always produces an invalid output.
 
 ## Technical Features
+
 - The constants `NOT_AVAILABLE_B` and `VALID_SIGNAL_B` are imported from a separate library package and are not defined locally. This ensures they are consistent across the entire project.
 - Scaling is linear: multiplication by `SCALE` and addition by `OFFSET`. The offset is converted from type `DINT` to `REAL` before being converted to `REAL`.
 - The input `IN` is first converted from `BYTE` to `USINT` (unsigned short integer) to obtain an integer range of 0…255.
@@ -80,6 +84,7 @@ The function block has two simple states, each activated by the corresponding ev
 There are no automatic state transitions; Each state is addressed exclusively through its corresponding event.
 
 ## Application Scenarios
+
 - **Exchange of analog sensor data via fieldbuses:**
 
 An 8-bit sensor value (e.g., temperature 0…255) is to be converted into physical units (e.g., °C). The characteristic curve is adjusted via `SCALE` and `OFFSET`.
@@ -93,6 +98,7 @@ If the fieldbus defines certain byte values as invalid (e.g., `0xFF` for "sensor
 Before the first processing, the desired scaling factor and offset can be set using `INIT`.
 
 ## Comparison with Similar Blocks
+
 - **`FIELDBUS_BYTE_TO_SIGNAL`** (without scaling):
 
 This block outputs the byte value directly as REAL, without multiplication or addition. It is suitable for signals that are already in the correct unit.
@@ -112,6 +118,7 @@ The function block `FIELDBUS_BYTE_TO_SIGNAL_SCALED` is a practical tool for proc
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

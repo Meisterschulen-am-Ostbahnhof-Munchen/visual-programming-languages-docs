@@ -1,8 +1,10 @@
 # Exercise_009: Ticker
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_009`. Here, we connect the time base with a counter function and a numeric display.
 ----
 ## Objective of the Exercise
+
 To learn event-based counting (`E_CTUD`) and how to display values on a terminal.
 
 -----
@@ -25,15 +27,10 @@ To learn event-based counting (`E_CTUD`) and how to display values on a terminal
 ## Functionality
 
 1. The flasher module generates an event every second.
-
 2. This event is filtered by `E_PERMIT`. Since `PERMIT` is connected to the flashing output, only **every second** event (i.e., only when the flasher is currently ON) is allowed through.
-
 3. The allowed events reach the `CU` (Count Up) input of the counter.
-
 4. The counter value increments.
-
 5. With each change (`CO` - Count Output), the new value is sent to `Q_NumericValue`.
-
 6. The user sees a steadily increasing number on the ISOBUS terminal.
 
 -----
@@ -47,6 +44,7 @@ The controller counts the time intervals during which a specific condition (e.g.
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

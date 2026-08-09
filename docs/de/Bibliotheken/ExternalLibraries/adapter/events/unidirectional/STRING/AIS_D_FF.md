@@ -11,15 +11,19 @@ Der Baustein `AIS_D_FF` realisiert ein taktflankengesteuertes D‑Flipflop (Data
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine direkten Ereignis-Eingänge. Das Taktsignal wird über den Socket-Adapter **I** (Ereignisport `E1`) bereitgestellt.
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge. Das Ausgangsereignis wird über den Plug-Adapter **Q** (Ereignisport `E1`) gesendet.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge. Der zu übernehmende Datenwert wird über den Socket-Adapter **I** (Datenport `D1`) empfangen.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge. Der gespeicherte Wert wird über den Plug-Adapter **Q** (Datenport `D1`) ausgegeben.
 
 ### **Adapter**

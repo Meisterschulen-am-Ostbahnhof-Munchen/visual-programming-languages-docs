@@ -8,23 +8,29 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsbaustein `AUS_USINT_AX_SEL_AUS` dient zur binären Auswahl (Selektion) zwischen zwei Eingangssignalen des Datentyps `USINT` (Unsigned Short Integer). Die Auswahl erfolgt ereignisgesteuert über ein Selektionssignal. Der Baustein nutzt unidirektionale Adapter, um Daten und Ereignisse modular und strukturiert zu verarbeiten.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *   **EI1**: Löst die Übernahme und Verarbeitung des direkt anliegenden Daten-Eingangs `IN1` aus.
 
 ### **Ereignis-Ausgänge**
+
 *   *Keine direkten Ereignis-Ausgänge.* (Die Ereignisausgabe erfolgt gekoppelt über den Ausgangs-Adapter `OUT`).
 
 ### **Daten-Eingänge**
+
 *   **IN1** (USINT): Direkt anliegende auswählbare Eingangsvariable.
 
 ### **Daten-Ausgänge**
+
 *   *Keine direkten Daten-Ausgänge.* (Die Datenausgabe erfolgt gekoppelt über den Ausgangs-Adapter `OUT`).
 
 ### **Adapter**
+
 *   **OUT** (Plug, Typ: `adapter::types::unidirectional::AUS`): Der ausgewählte Ausgangswert (`USINT`) und das dazugehörige Bestätigungsereignis.
 *   **IN0** (Socket, Typ: `adapter::types::unidirectional::AUS`): Der erste auswählbare Eingangswert (`USINT`), der über einen Adapter eingespeist wird.
 *   **G** (Socket, Typ: `adapter::types::unidirectional::AX`): Das Selektionssignal (Gate), welches bestimmt, welcher Eingang auf den Ausgang geschaltet wird.
@@ -32,6 +38,7 @@ Der Funktionsbaustein `AUS_USINT_AX_SEL_AUS` dient zur binären Auswahl (Selekti
 ---
 
 ## Funktionsweise
+
 Der Funktionsbaustein arbeitet intern mit einer Kombination aus D-Flip-Flops (`E_D_FF_ANY` bzw. `E_D_FF`) und Standard-Auswahlbausteinen (`F_SEL`). Die interne Verarbeitung läuft wie folgt ab:
 
 1.  **Wertpufferung**: 
@@ -48,6 +55,7 @@ Der Funktionsbaustein arbeitet intern mit einer Kombination aus D-Flip-Flops (`E
 ---
 
 ## Technische Besonderheiten
+
 *   **Mischbetrieb von Schnittstellen**: Der Baustein kombiniert klassische IEC 61499 Event-/Daten-Schnittstellen (`EI1` / `IN1`) mit modernen, unidirektionalen Adaptern (`IN0`, `G`, `OUT`).
 *   **Datensicherheit durch Event-Kopplung**: Durch den Einsatz interner D-Flip-Flops wird sichergestellt, dass Datenwerte nur bei einem entsprechenden Event-Trigger übernommen und verarbeitet werden. Dies verhindert Dateninkonsistenzen (Race Conditions).
 
@@ -63,15 +71,18 @@ Der Funktionsbaustein arbeitet intern mit einer Kombination aus D-Flip-Flops (`E
 ---
 
 ## Anwendungsszenarien
+
 *   **Umschaltung zwischen Automatik- und Handwert**: Auswahl eines Sollwerts (z. B. eine Drehzahl oder ein Schrittindex als `USINT`) zwischen einem automatischen Prozesswert (`IN0` über Adapter) und einem manuell vorgegebenen Wert (`IN1`).
 *   **Signal-Multiplexing**: Flexible Weiterleitung von Status- oder Steuerungscodes in dezentralen Steuerungssystemen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zum Standard-Funktionsbaustein `F_SEL` aus der IEC 61131-3 Bibliothek bietet dieser Baustein eine vollständige Kapselung für die IEC 61499. Während der Standard-`F_SEL` rein datenflussorientiert arbeitet, integriert `AUS_USINT_AX_SEL_AUS` eine ereignisgesteuerte Zustandsspeicherung und nutzt Adapter, was die Verkabelung im 4diac-IDE Application Editor erheblich vereinfacht und übersichtlicher gestaltet.
 
 ---
 
 ## Fazit
+
 Der `AUS_USINT_AX_SEL_AUS` ist ein robuster Hilfsbaustein für die strukturierte Signal- und Datenflusssteuerung. Durch die Nutzung von unidirektionalen Adaptern eignet er sich hervorragend für modulare und saubere Softwarearchitekturen in der industriellen Automatisierungstechnik.

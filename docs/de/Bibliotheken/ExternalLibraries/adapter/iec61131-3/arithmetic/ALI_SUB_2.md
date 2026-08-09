@@ -13,24 +13,30 @@ Der Funktionsbaustein (FB) `ALI_SUB_2` ist ein generischer, arithmetischer Funkt
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Dieser Funktionsbaustein besitzt keine direkten Ereignis-Eingänge. Die Steuerung und die Ereignisverarbeitung werden über die angeschlossenen Adapter realisiert.
 
 ### **Ereignis-Ausgänge**
+
 Dieser Funktionsbaustein besitzt keine direkten Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt über die Ausgangs-Adapter.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden. Die Datenübertragung erfolgt gekapselt über die Eingangs-Adapter.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden. Das Ergebnis wird über den Ausgangs-Adapter bereitgestellt.
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::ALI`): Der erste Eingang (Minuend) für die Subtraktionsberechnung.
 *   **IN2** (Typ: `adapter::types::unidirectional::ALI`): Der zweite Eingang (Subtrahend) für die Subtraktionsberechnung.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::ALI`): Der Ausgang (Differenz) der Berechnung ($OUT = IN1 - IN2$).
 
 ---

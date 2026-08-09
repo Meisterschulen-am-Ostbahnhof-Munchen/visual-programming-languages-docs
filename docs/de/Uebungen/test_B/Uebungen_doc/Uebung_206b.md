@@ -4,10 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Flip-Flops realisiert. Drei Taster (Digitaleingänge) steuern jeweils ein ILOCK_T_FF, welches seinen Ausgang bei jedem Tastendruck umschaltet. Die drei Flip-Flops sind über eine Adapter-Kette bidirektional miteinander verbunden, sodass immer nur ein Ausgang aktiv sein kann (Interlock). Die Ausgänge werden auf drei digitale Ausgänge (z. B. LEDs) geführt.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 ### Digitaleingang: logiBUS_IE
+
 - **Typ**: logiBUS::io::DI::logiBUS_IE  
 - **Verwendete Instanzen**: DigitalInput_CLK_I1, DigitalInput_CLK_I2, DigitalInput_CLK_I3  
 - **Parameter**:  
@@ -18,6 +21,7 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
   Jeder Baustein erfasst einen Taster (Button) und erzeugt bei einem einzelnen Klick ein Ereignis (IND) an seinem Ereignisausgang.
 
 ### Interlock-Toggle-Flip-Flop: ILOCK_T_FF
+
 - **Typ**: logiBUS::signalprocessing::interlock::ILOCK_T_FF  
 - **Verwendete Instanzen**: ILOCK_T_FF_1, ILOCK_T_FF_2, ILOCK_T_FF_3  
 - **Parameter**: keine spezifischen Parameter im XML  
@@ -25,6 +29,7 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
   Ein Toggle-Flip-Flop, das bei jedem Ereignis am Eingang **CLK** seinen Ausgang **Q** umschaltet. Es besitzt zwei Adapter-Schnittstellen: **ILOCK_IN** und **ILOCK_OUT**. Über diese Adapter können mehrere ILOCK_T_FF zu einer Kette verbunden werden, wodurch sichergestellt wird, dass immer nur ein Flip-Flop in der Kette seinen Ausgang auf TRUE setzen kann (gegenseitige Verriegelung). Bei Aktivierung eines anderen Flip-Flops wird das zuvor aktive automatisch zurückgesetzt.
 
 ### Digitalausgang: logiBUS_QX
+
 - **Typ**: logiBUS::io::DQ::logiBUS_QX  
 - **Verwendete Instanzen**: DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3  
 - **Parameter**:  
@@ -70,9 +75,11 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
 | ILOCK_T_FF_2.ILOCK_OUT | ILOCK_T_FF_3.ILOCK_IN |
 
 ## Zusammenfassung
+
 Diese Übung demonstriert die Verwendung des ILOCK_T_FF-Bausteins zur Realisierung einer gegenseitigen Verriegelung (Interlock) von drei Toggle-Flip-Flops. Durch die Adapter-Kette wird sichergestellt, dass stets nur ein Ausgang aktiv ist, was typischerweise für Anwendungen mit wechselnden Betriebsmodi oder exklusiven Zuständen benötigt wird. Die Ein-/Ausgabe erfolgt über die logiBUS-Hardware. **Lernziele**: Verständnis von Interlock-Mechanismen, Umgang mit Adapter-Schnittstellen und Ereignisgesteuerter Logik in 4diac. **Voraussetzungen**: Grundkenntnisse der 4diac-IDE und der logiBUS-Bibliothek.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

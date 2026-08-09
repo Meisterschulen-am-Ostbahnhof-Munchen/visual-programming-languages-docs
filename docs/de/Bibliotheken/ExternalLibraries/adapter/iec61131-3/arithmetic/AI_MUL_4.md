@@ -13,26 +13,32 @@ Der Funktionsbaustein `AI_MUL_4` ist ein generischer arithmetischer Baustein fü
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Funktionsbaustein besitzt keine direkten, eigenständigen Ereignis-Eingänge. Die Ereignissteuerung wird vollständig über die angeschlossenen Adapter abgewickelt.
 
 ### **Ereignis-Ausgänge**
+
 Der Funktionsbaustein besitzt keine direkten, eigenständigen Ereignis-Ausgänge. Die Triggerung nachfolgender Bausteine erfolgt über den Ausgangs-Adapter.
 
 ### **Daten-Eingänge**
+
 Es sind keine direkten Daten-Eingänge vorhanden. Die Wertebereitstellung erfolgt über die Adapter-Eingänge.
 
 ### **Daten-Ausgänge**
+
 Es sind keine direkten Daten-Ausgänge vorhanden. Die Ausgabe des berechneten Werts erfolgt über den Adapter-Ausgang.
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster Multiplikand.
 *   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter Multiplikand.
 *   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter Multiplikand.
 *   **IN4** (Typ: `adapter::types::unidirectional::AI`): Vierter Multiplikand.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AI`): Produkt der Multiplikation aller vier Eingänge ($OUT = IN1 \cdot IN2 \cdot IN3 \cdot IN4$).
 
 ## Funktionsweise

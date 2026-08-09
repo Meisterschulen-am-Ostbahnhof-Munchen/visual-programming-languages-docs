@@ -1,5 +1,7 @@
 # Q_NumericValue_PHYS
+
 ## Introduction
+
 ![Q_NumericValue_PHYS](./Q_NumericValue_PHYS.svg)
 The function block `Q_NumericValue_PHYS` is a composite function block according to the standard **ISO 11783-6 (ISOBUS)**. It is used to change the numeric value of an ISOBUS object by specifying a physical value. The conversion from physical to raw data values is performed automatically based on the scaling, offset, and decimal places defined in the object structure `NumericObjectPool_S`.
 The function block encapsulates three sub-functions:
@@ -50,13 +52,10 @@ No adapters available.
 Processing occurs in two separate steps:
 
 1. **Initialization (event `INIT`):**
-
 - The passed parameter `stObj` is temporarily stored via `F_MOVE`.
 - Upon completion, `Q_NumericValue.INIT` is triggered, providing the object ID (`u16ObjId`) from `F_MOVE.OUT`.
 - Initialization is acknowledged with `INITO`.
-
 2. **Value Change (Event `REQ`):**
-
 - The physical value `rPhys`, along with the stored structure `stObj`, is passed to `F_PHYS_TO_RAW`.
 - `F_PHYS_TO_RAW` calculates the raw value (`u32NewValue`) as well as the limit flags `xOver` and `xUnder`.
 - Subsequently, `Q_NumericValue.REQ` is triggered, which writes the calculated raw value to the ISOBUS object.
@@ -85,6 +84,7 @@ REQ` → `F_PHYS_TO_RAW.REQ` → `F_PHYS_TO_RAW.CNF` → `Q_NumericValue.REQ` �
 During the execution of a run, the function block is not prepared for new events. The respective confirmation signal (`INITO` or `CNF`) must be awaited.
 
 ## Application Scenarios
+
 - **Vehicle terminal with ISOBUS connection:** Setting target values (e.g., working height, application rate) via user input in physical units (m, kg/h, °C).
 - **Remote control of agricultural equipment:** Sending physical values from a controller to an ISOBUS device (e.g., seed drill) without manual raw value conversion.
 - **Automated calibration:** Adjusting parameters during operation, where the scaling and offset are derived from a configuration structure (`NumericObjectPool_S`).

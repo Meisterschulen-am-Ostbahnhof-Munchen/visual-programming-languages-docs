@@ -1,9 +1,11 @@
 Here is the documentation for exercise **Exercise_126b2** based on the provided data.
 # Exercise_126b2: ISOBUS Send Message Cyclic (with CB) Sine Function Plotting
+
 ![Uebung_126b2_network](./Uebung_126b2_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the cyclic sending of an ISOBUS message whose data content is dynamically generated at runtime. Specifically, a sine function is generated, its values are packaged into a CAN message, and sent over the network. This is suitable, for example, for plotting signals in PCAN Explorer.
 
 A special feature of this exercise is the use of the **callback mechanism**. Instead of providing the data statically, the send block (`AlPgnTxNew8Bcycl_REQ`) requests new data via an adapter connection (`CB`) shortly before the packet is sent.
@@ -51,17 +53,12 @@ As soon as the transmit block in the main network is ready to send, it triggers 
 ## Program Flow and Connections
 
 1. **Initialization**:
-
 * First, module `NmGetCfInfo_1` is executed to load the network configuration for `NODE1`.
 * Once the information is available (`IND` event), the cyclic transmitter `AlPgnTxNew8Bcycl_REQ` is initialized via the input `install`.
-
 2. **Cyclic Transmission**:
-
 * The `AlPgnTxNew8Bcycl_REQ` is set to a cycle time of **500 ms**.
 * The transmission process is initiated every 500 ms.
-
 3. **Data Generation (Callback)**:
-
 * The transmitter is connected to the sub-module `DataSupply` via an adapter connection (`CB`, <->, `PLUG1`).
 * Before transmission, the transmitter calls the sub-module.
 * The sub-module calculates the current value of the sine wave (period 10s, amplitude 10, offset 5).
@@ -76,6 +73,7 @@ This exercise demonstrates how to create ISOBUS applications in 4diac that calcu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -7,20 +7,25 @@
 ![F_TRUNC](F_TRUNC.svg)
 
 ## Einführung
+
 Der **F_TRUNC** ist ein standardkonformer Funktionsbaustein zur Abrundung von Fließkommazahlen in Richtung Null (truncation toward zero), entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Konvertierung gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Eingabewert)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit abgerundetem Wert)
 
 ### **Daten-Eingänge**
+
 - `IN` (ANY_REAL): Eingabewert (Fließkommazahl)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (ANY_INT): Abgerundeter Ganzzahlwert
 
 ## Funktionsprinzip

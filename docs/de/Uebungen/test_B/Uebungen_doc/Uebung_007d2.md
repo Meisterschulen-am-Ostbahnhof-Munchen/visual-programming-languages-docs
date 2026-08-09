@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung realisiert einen Blinker unter Verwendung von `E_CYCLE` und `E_D_FF_TMIN`. Der Blinker erzeugt ein zufälliges Ein-/Ausschaltverhältnis, wobei ein Flipflop mit minimaler Einschaltzeit von 3 Sekunden sicherstellt, dass der Ausgang nach einem Einschalten nicht zu früh wieder ausschaltet.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -63,4 +64,5 @@ Vorausgesetzt werden Grundkenntnisse der Ereignisbehandlung nach IEC 61499 und
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

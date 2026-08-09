@@ -15,6 +15,7 @@ Die gesamte Funktionalität ist in einer SubApplikation (SubApp) gekapselt, die 
 Die SubApp enthält folgende interne Funktionsbausteine:
 
 ### FB: AULI_FB_CTD
+
 - **Typ**: `adapter::iec61131::counters::AULI_FB_CTD`
 - **Beschreibung**: Kernbaustein – der eigentliche Rückwärtszähler. Er besitzt die für einen CTD typischen Schnittstellen:
     - **Ereigniseingänge**: – (wird automatisch durch die Adapterverbindungen gesteuert)
@@ -23,6 +24,7 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 - **Parameter**: keine zusätzlichen Parameter
 
 ### FB: AULI_ULINT_TO_ULI
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_ULINT_TO_ULI`
 - **Beschreibung**: Konvertiert einen konstanten ULINT‑Wert (10) in das Format `ULI` (benötigt vom CTD‑Baustein).
 - **Parameter**: `OUT` = `ULINT#10` (Festwert, der als Preset‑Wert dient)
@@ -30,12 +32,14 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 - **Datenausgang**: `AULI_OUT` (verbunden mit `AULI_FB_CTD.PV`)
 
 ### FB: Input_CD
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Digitaler Eingang für das Signal `CD` (Count Down). Liest den physischen Eingang `Input_I1`.
 - **Parameter**: `QI` = `TRUE` (Initialisierung), `Input` = `Input_I1`
 - **Adapterausgang**: `IN` (verbunden mit `AULI_FB_CTD.CD`)
 
 ### FB: Input_LD
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Digitaler Eingang für das Signal `LD` (Load). Liest den physischen Eingang `Input_I2`.
 - **Parameter**: `QI` = `TRUE`, `Input` = `Input_I2`
@@ -43,18 +47,21 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 - **Ereignisausgang**: `INITO` (triggert die Umwandlung des Preset-Werts)
 
 ### FB: Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Beschreibung**: Digitaler Ausgang. Wird aktiv, sobald der Zählerstand Null erreicht (Q‑Signal des CTD).
 - **Parameter**: `QI` = `TRUE`, `Output` = `Output_Q1`
 - **Adaptereingang**: `OUT` (verbunden mit `AULI_FB_CTD.Q`)
 
 ### FB: AULI_TO_AUDI
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_TO_AUDI`
 - **Beschreibung**: Konvertiert den aktuellen Zählerstand (`CV`, Typ AULI) in den Typ AUDI, der für die Terminalausgabe benötigt wird.
 - **Adaptereingang**: `AULI_IN` (verbunden mit `AULI_FB_CTD.CV`)
 - **Adapterausgang**: `AUDI_OUT` (verbunden mit `Q_NumericValue_AUDI.u32NewValue`)
 
 ### FB: Q_NumericValue_AUDI
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Beschreibung**: Baustein zur Anzeige eines numerischen Werts im Terminal. Erhält den aktuellen Zählerstand und zeigt ihn auf dem zugeordneten Ausgabeobjekt an.
 - **Parameter**: `u16ObjId` = `OutputNumber_N1` (Terminal‑Ausgabeobjekt)
@@ -111,4 +118,5 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

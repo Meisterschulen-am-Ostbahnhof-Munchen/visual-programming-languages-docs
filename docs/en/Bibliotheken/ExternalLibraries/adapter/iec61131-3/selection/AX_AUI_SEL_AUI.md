@@ -1,8 +1,10 @@
 # AX_AUI_SEL_AUI
+
 ![AX_AUI_SEL_AUI](./AX_AUI_SEL_AUI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AX_AUI_SEL_AUI** implements binary selection. It selects between two 16-bit input values (**IN0** and **IN1**) and outputs the selected value via a standardized output adapter. The selection is controlled by a Boolean signal provided via an input adapter. The block combines the functionality of the IEC 61131-3 block `F_SEL` with modular adapter interfaces and is particularly suitable for control applications with reusable, encapsulated connections.
 ## Interface Structure
 
@@ -69,17 +71,15 @@ The component functions as an encapsulation of the standard component `F_SEL` fr
 **Procedure:**
 
 1. The input values **IN0** and **IN1** are either statically defined or updated via the events `EI0` / `EI1`.
-
 2. An event on adapter **G** (signal `G.E1`) starts the selection.
-
 3. The internal `F_SEL` evaluates the Boolean signal `G.D1`:
-
 - If `G.D1 = FALSE` is present: Output = **IN0**
 - If `G.D1 = TRUE` is present: Output = **IN1**
 4. The result is placed on `OUT.D1`, and simultaneously the event `OUT.E1` is triggered to inform downstream components.
 ...`` ``  `` `` `` The function block thus implements a time-controlled, event-driven assignment: Selection occurs only upon an external event, and the data must already be available.
 
 ## Technical Features
+
 - **Composite Function Block:** The function block is built from an existing IEC 61131-3 function block (`F_SEL`) – this simplifies maintenance and certification.
 - **Adapter-Based Interfaces:** The use of the adapters `AX` and `AUI` enables loose coupling and facilitates the exchange of submodules.
 - **Data Type:** `UINT` (16-bit) – suitable for counters, configuration values, or analog scales.
@@ -91,12 +91,12 @@ The component functions as an encapsulation of the standard component `F_SEL` fr
 The function block does not have an explicit state machine. Its functionality is entirely defined by the interaction of events:
 
 1. **Waiting for Trigger Input** – No event is present at `G.E1`.
-
 2. **Selection and Output** – Upon receipt of `G.E1`, the result is determined within a processing step and output via `OUT` (event `OUT.E1`).
 
 An explicit state machine is not required because the internal `F_SEL` has no delays or memory.
 
 ## Application Scenarios
+
 - **Switching Between Operating Modes:** A control signal (e.g., via a digital input) selects between two sets of parameters, such as speed limits or configuration values.
 - **MUX Function in Data Paths:** In a measurement chain, it is possible to select between two sensor channels without duplicating the entire signal processing.
 - **Fail-Safe Switchover:** If the primary value fails, a logical signal can be used to switch to a substitute value.

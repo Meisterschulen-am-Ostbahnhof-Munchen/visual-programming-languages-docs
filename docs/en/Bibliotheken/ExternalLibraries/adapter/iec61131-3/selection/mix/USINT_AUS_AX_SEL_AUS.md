@@ -13,9 +13,7 @@ The function block `USINT_AUS_AX_SEL_AUS` is used for binary selection between t
 ### **Event Inputs**
 
 | Name | Type | Description |
-
 | :--- | :--- | :--- |
-
 | **EI0** | Event | Updated the value at the local data input `IN0`. |
 
 ### **Event Outputs**
@@ -25,9 +23,7 @@ The function block `USINT_AUS_AX_SEL_AUS` is used for binary selection between t
 ### **Data Inputs**
 
 | Name | Type | Description |
-
 | :--- | :--- | :--- |
-
 | **IN0** | USINT | First selectable data channel (local input). |
 
 ### **Data Outputs**
@@ -37,15 +33,10 @@ The function block `USINT_AUS_AX_SEL_AUS` is used for binary selection between t
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-
 | :--- | :--- | :--- | :--- |
-
 | **OUT** | Plug | `adapter::types::unidirectional::AUS` | The selected output channel (contains the event `E1` and the data `D1`). |
-
 | **IN1** | Socket | `adapter::types::unidirectional::AUS` | Second selectable data channel via adapter (contains the event `E1` and the data `D1`). |
-
 | **G** | Socket | `adapter::types::unidirectional::AX` | Selector input (control signal for selecting between `IN0` and `IN1`). |
-
 
 ---
 
@@ -54,48 +45,30 @@ The function block `USINT_AUS_AX_SEL_AUS` is used for binary selection between t
 The module is internally based on a network of standard function blocks that implement event-driven selection:
 
 1. **Data Storage and Synchronization**:
-
 * As soon as a signal arrives at the event input `EI0`, the value of `IN0` is temporarily stored via an event-driven D flip-flop (`E_D_FF_ANY_IN0`) and a copy block (`F_MOVE_IN0`).
-
 * Analogous processes occur for the adapter input `IN1` (via `E_D_FF_ANY_IN1` / `F_MOVE_IN1` upon arrival of `IN1.E1`) and the selector `G` (via `E_D_FF_G` upon arrival of `G.E1`).
-
 2. **Selection Logic**:
-
 * The actual selection process is performed by the standard selection block `F_SEL`.
-
-
- * If the state `FALSE` (0) is present at selector input `G`, the value of `IN0` is selected.
-
+* If the state `FALSE` (0) is present at selector input `G`, the value of `IN0` is selected.
 * If the state `TRUE` (1) is present at selector input `G`, the value of `IN1` is selected.
-
 3. **Output**:
-
 * The result of the selection is passed to the output adapter `OUT`.
-
-
- * Any change to the selected value triggers the output event `OUT.E1` and makes the new value `USINT` available at `OUT.D1`.
+* Any change to the selected value triggers the output event `OUT.E1` and makes the new value `USINT` available at `OUT.D1`.
 
 ---
 
 ## Technical Features
 
 * **Mixed Operation**: The function block allows for clean coupling between a classic data input (`IN0`) and an adapter-based input (`IN1`).
-
 * **Event-Driven Design**: No continuous cyclic calculation is performed. Processing occurs only when input data changes or a selection event occurs.
-
 * **Compact Architecture**: By encapsulating the D flip-flops and the logic within the FB network, the complexity is hidden from the user.
-
-
 * ---
 
 ## State Overview
 
 | State Selector (`G`) | Triggering Event | Active Channel | Output (`OUT.D1`) | Output Event (`OUT.E1`) |
-
 | :---: | :---: | :---: | :---: | :---: |
-
 | `FALSE` | `EI0` or `G.E1` | `IN0` | Value of `IN0` | Yes |
-
 | `TRUE` | `IN1.E1` or `G.E1` | `IN1` | Value of `IN1.D1` | Yes |
 
 ---
@@ -103,7 +76,6 @@ The module is internally based on a network of standard function blocks that imp
 ## Application Scenarios
 
 * **Operating Mode Switching**: Switching a parameter (e.g., an ID or a mode value in the range 0–255) between a fixed default value (`IN0`) and a value dynamically received via a bus adapter (`IN1`).
-
 * **Manual/Automatic Switching**: Setting target values for actuators where, in manual mode, a local value (`IN0`) is activated, and in automatic mode, a higher-level adapter value (`IN1`) is activated.
 
 ---

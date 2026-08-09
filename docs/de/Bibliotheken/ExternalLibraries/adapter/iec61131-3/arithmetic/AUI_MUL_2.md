@@ -7,6 +7,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsbaustein `AUI_MUL_2` ist ein generischer arithmetischer Funktionsblock für die Entwicklungsumgebung 4diac-ide, der zur Durchführung einer Multiplikation von zwei Eingangswerten dient. 
 
 Die Besonderheit dieses Bausteins liegt in seiner adapterbasierten Architektur. Statt klassischer, einzelner Daten- und Ereignisleitungen nutzt dieser Baustein unidirektionale Adapter (`AUI`), um Daten und die dazugehörigen Steuerungsereignisse gekapselt zu übertragen. Dies reduziert die visuelle Komplexität von Steuerungsanwendungen erheblich.
@@ -14,18 +15,23 @@ Die Besonderheit dieses Bausteins liegt in seiner adapterbasierten Architektur. 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignissteuerung wird vollständig über die Eingangsadapter abgewickelt.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignisweiterleitung wird vollständig über den Ausgangsadapter abgewickelt.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
+
 * **`IN1` (Typ: `adapter::types::unidirectional::AUI` - Socket / Buchse):** 
   Der erste Eingangsadapter, der den ersten Faktor für die Multiplikation liefert.
 * **`IN2` (Typ: `adapter::types::unidirectional::AUI` - Socket / Buchse):** 
@@ -36,6 +42,7 @@ Die Besonderheit dieses Bausteins liegt in seiner adapterbasierten Architektur. 
 ---
 
 ## Funktionsweise
+
 Sobald an einem der Eingangsadapter (`IN1` oder `IN2`) ein Ereignis signalisiert, dass ein neuer Wert vorliegt, liest der Funktionsblock die aktuellen Werte aus beiden Adaptern aus. 
 
 Die Berechnung erfolgt nach der klassischen mathematischen Formel:
@@ -46,12 +53,14 @@ Nach erfolgreicher Berechnung wird das Ergebnis an den Ausgangsadapter `OUT` üb
 ---
 
 ## Technische Besonderheiten
+
 * **Generisches Verhalten:** Der Baustein ist über das Compiler-Attribut `GenericClassName` mit dem Wert `'GEN_AUI_MUL'` verknüpft. Das bedeutet, dass der Baustein datentypunabhängig (z. B. für `INT`, `REAL`, `LREAL` etc.) agieren kann, je nachdem, welcher konkrete Datentyp durch die angeschlossenen Adapter definiert wird.
 * **Effiziente Verdrahtung:** Durch die Kapselung in `AUI`-Adapter (Adapter Unidirectional Interface) wird die Anzahl der Verbindungen im Funktionsplan drastisch reduziert, da Daten- und Ereignisflüsse zusammengefasst sind.
 
 ---
 
 ## Zustandsübersicht
+
 Der Funktionsbaustein arbeitet rein ereignisgesteuert und zustandslos (reaktiv):
 1. **Bereitschaftszustand:** Der Baustein wartet auf eingehende Ereignisse über `IN1` oder `IN2`.
 2. **Berechnungsphase:** Ein eingehendes Ereignis triggert die interne Multiplikation der aktuellen Adapterdaten.
@@ -60,6 +69,7 @@ Der Funktionsbaustein arbeitet rein ereignisgesteuert und zustandslos (reaktiv):
 ---
 
 ## Anwendungsszenarien
+
 * **Messwertskalierung:** Multiplikation eines analogen Sensorwerts (z. B. Spannung) mit einem Skalierungsfaktor zur Berechnung des physikalischen Istwerts.
 * **Leistungsberechnung:** Kontinuierliche Multiplikation von Strom (I) und Spannung (U) zur Ermittlung der aktuellen Wirkleistung (P).
 * **Signalverstärkung:** Anwendung im Bereich der Signalverarbeitung zur einfachen Pegelanpassung.
@@ -67,10 +77,12 @@ Der Funktionsbaustein arbeitet rein ereignisgesteuert und zustandslos (reaktiv):
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 * **Standard `MUL` Baustein (IEC 61131-3):** Ein Standard-Multiplikationsbaustein benötigt separate Pins für jedes Datensignal sowie für die Ausführungssteuerung (`REQ`/`CNF`). `AUI_MUL_2` löst dies eleganter und platzsparender über Adapterverbindungen.
 * **Multi-Input-Multiplizierer (`MUL_3`, `MUL_4`):** Während Bausteine wie `AUI_MUL_2` fest auf zwei Eingänge ausgelegt sind, erlauben Multi-Input-Bausteine die Multiplikation von drei oder mehr Faktoren in einem einzigen Schritt, weisen dafür jedoch eine höhere Komplexität auf.
 
 ---
 
 ## Fazit
+
 Der `AUI_MUL_2` ist ein hochgradig modularer und moderner Funktionsbaustein für die 4diac-ide. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes Softwaredesign in verteilten Steuerungssystemen nach IEC 61499, ohne dabei an Flexibilität bei den verarbeiteten Datentypen einzubüßen.

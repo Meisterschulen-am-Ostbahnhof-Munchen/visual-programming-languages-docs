@@ -13,26 +13,32 @@ Der Funktionsbaustein (FB) `AUDI_SUB_2` ist ein generischer Funktionsbaustein zu
 Da der Baustein vollständig auf Adaptern basiert, besitzt er keine klassischen, direkt sichtbaren Ereignis- oder Daten-Pins auf der obersten Ebene. Die gesamte Kommunikation wird über die Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignissteuerung ist in den Adaptern gekapselt.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignissteuerung ist in den Adaptern gekapselt.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden. Die Datenübertragung erfolgt über die Adapter-Schnittstellen.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden. Die Datenübertragung erfolgt über die Adapter-Schnittstellen.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter / Steckdosen)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::AUDI`):
     *   Erster Eingang der Subtraktion (Minuend).
 *   **IN2** (Typ: `adapter::types::unidirectional::AUDI`):
     *   Zweiter Eingang der Subtraktion (Subtrahend).
 
 #### **Plugs (Ausgangs-Adapter / Stecker)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AUDI`):
     *   Ausgang des Bausteins, der das Ergebnis der Subtraktion (Differenz) bereitstellt.
 

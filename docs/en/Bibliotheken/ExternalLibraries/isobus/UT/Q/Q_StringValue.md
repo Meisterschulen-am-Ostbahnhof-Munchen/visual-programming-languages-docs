@@ -1,26 +1,32 @@
 # Q_StringValue
+
 ![Q_StringValue](https://user-images.githubusercontent.com/69573151/212334298-f7c6215c-a80c-491c-ad3e-6ba0e539f0d0.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **Q_StringValue** is a standards-compliant function block for dynamic text updates in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.24) specification for VT text objects.
 ![Q_StringValue](Q_StringValue.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization Request (with object ID)
 - `REQ`: Text Change Request
 
 ### **Event Outputs**
+
 - `INITO`: Initialization Confirmation
 - `CNF`: Change Confirmation
 
 ### **Data Inputs**
+
 - `u16ObjId` (UINT): Text Object ID (16-bit)
 - `pau8String` (STRING): New Text Value (null-terminated)
 
 ### **Data Outputs**
+
 - `STATUS` (STRING): Operational Status Message
 - `pau8OldString` (STRING): Previous text value
 - `s16result` (INT): ISO-compliant result code
@@ -28,18 +34,13 @@ The **Q_StringValue** is a standards-compliant function block for dynamic text u
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-
 2. **Text Update**:
-
 - `REQ` with new text string
 - Immediately updates the VT text object
 - `CNF` returns operational status and previous text
-
 3. **String Requirements**:
-
 - Maximum `ISO_VTC_CMD_STR_MAX_LENGTH` including null termination
 - Must be null-terminated
 
@@ -73,6 +74,7 @@ The **Q_StringValue** is a standards-compliant function block for dynamic text u
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
+
 - **Dynamic Displays**: Measured values, status messages
 - **Language Switching**: Multilingual texts
 - **Process Visualization**: Real-time data
@@ -88,6 +90,7 @@ The **Q_StringValue** is a standards-compliant function block for dynamic text u
 | Feedback | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises
+
 * [Exercise_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)]
 
 ## Conclusion

@@ -1,8 +1,10 @@
 # Exercise_218b: Standard IEC 61131-3 FB_CTD_UDINT (Down Counter, UDINT) with Terminal Output (PHYS)
+
 ![Uebung_218b_network](./Uebung_218b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a down counter according to IEC 61131-3 of type **FB_CTD_UDINT** (count value as UDINT).
 The counter is controlled via two digital inputs: A pulse at **input I1** (CD) decrements the current value by 1, and a pulse at **input I2** (LD) loads the preset value (PV) into the counter.
 
@@ -19,7 +21,6 @@ All FBs used are described below.
 ### Sub-Blocks:
 
 1. **FB_CTD_UDINT** (IEC 61131-3 Down Counter)
-
 - **Type**: `iec61131::counters::FB_CTD_UDINT`
 - **Parameters**:
 - `PV` = `UDINT#10` (default value)
@@ -83,7 +84,6 @@ Identical to Input_CD, but connected to physical input I2 – serves as a load p
 Sets the physical digital output Q1 to the value present at the data input OUT. Q1 becomes active as soon as the counter Q = TRUE.
 
 5. **Q_NumericValue_PHYS_LREAL** (Terminal Output)
-
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYS_LREAL`
 - **Parameters**:
 - `stObj` = `OutputNumber_N3` (Reference to the terminal output object)
@@ -117,17 +117,14 @@ The flow is controlled by the event and data connections in the SubAppNetwork:
 ` ``Input_LD.IN`` is connected to the data input qzmsdocs000058 ... The two comments in the network indicate that the normal output (Q) could also be used as an alternative, and that UDINT can be interpreted as LREAL without explicit conversion (an implicit type conversion occurs internally).
 
 ## Summary
+
 - **Learning Objectives**: To learn and apply the IEC 61131-3 down counter (CTD) with UDINT counter values, as well as the integration of digital inputs/outputs and a physical terminal output.
 - **Difficulty Level**: Easy to medium – suitable for getting started with counter logic and the use of physical output blocks.
 - **Prerequisites**: Basic knowledge of the 4diac IDE and simple IEC 61131-3 components.
 - **Operation**:
-
 1. Connect the physical inputs I1 (down count button) and I2 (load button).
-
 2. Output Q1 switches on as soon as the counter reading reaches zero.
-
 3. The terminal (OutputNumber_N3) displays the current counter reading as a real-time value.
-
 4. Start the exercise by triggering a rising edge at one of the inputs.
 
 This exercise demonstrates a complete, practical counter application with both digital and visual feedback.
@@ -135,6 +132,7 @@ This exercise demonstrates a complete, practical counter application with both d
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

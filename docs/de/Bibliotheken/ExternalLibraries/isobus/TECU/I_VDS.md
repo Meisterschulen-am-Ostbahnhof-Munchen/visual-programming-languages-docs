@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **I_VDS**-Funktionsbaustein (Vehicle Direction/Speed) ist ein ISO 11783-7-konformes System zur präzisen Erfassung von Fahrzeugrichtung, Geschwindigkeit und Neigung, entwickelt unter EPL-2.0 Lizenz.
 Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahrzeuge.
 
@@ -11,14 +12,17 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Qualifier `QI`)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung (mit Status)
 - `IND`: Datenindikation mit Navigationsparametern
 - `TIMEOUT`: Timeout-Ereignis
 
 ### **Daten-Eingänge**
+
 - `QI` (BOOL): Qualifier für Initialisierung
 
 ### **Daten-Ausgänge**

@@ -11,15 +11,19 @@ Der Funktionsbaustein `ASR_SPLIT_3` dient dazu, einen eingehenden ASR (Applicati
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -66,4 +70,5 @@ Der `ASR_SPLIT_3` ist ein einfacher, aber effektiver Baustein zur Vervielfältig
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

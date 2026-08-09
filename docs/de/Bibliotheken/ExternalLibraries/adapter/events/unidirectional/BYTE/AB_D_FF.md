@@ -12,18 +12,23 @@ Der Funktionsblock **AB_D_FF** realisiert ein asynchrones Daten-Latch (D-Flipflo
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **I.E1** (via Adapter `I`): Startet das Übernehmen des Datenwerts.
 
 ### **Ereignis-Ausgänge**
+
 - **Q.E1** (via Adapter `Q`): Signalisiert die Ausgabe des gelatchten Datenwerts.
 
 ### **Daten-Eingänge**
+
 - **I.D1** (via Adapter `I`): Der zu latchnde Datenwert (Typ beliebig, abhängig vom verwendeten Adaptertyp `adapter::types::unidirectional::AB`).
 
 ### **Daten-Ausgänge**
+
 - **Q.D1** (via Adapter `Q`): Der gelatchte und ausgegebene Datenwert.
 
 ### **Adapter**
+
 - **I** (Socket): Eingangsadapter vom Typ `adapter::types::unidirectional::AB` – nimmt den zu latchnden Wert und das Steuerereignis entgegen.
 - **Q** (Plug): Ausgangsadapter vom selben Typ – gibt den gespeicherten Wert und das zugehörige Ereignis aus.
 

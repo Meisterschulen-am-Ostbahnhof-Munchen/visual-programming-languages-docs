@@ -1,8 +1,10 @@
 # ILOCK_FB_SR
+
 ![ILOCK_FB_SR](./ILOCK_FB_SR.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The ILOCK_FB_SR function block implements a bistable set-dominant SR latch, specifically designed for use in interlock circuits. It extends a simple SR latch with bidirectional adapters for coupling with other function blocks, enabling the implementation of complex interconnections and priority logic.
 ## Interface Structure
 
@@ -53,6 +55,7 @@ The logic is supplemented by three OR gates:
 This structure allows multiple interlock blocks to be cascaded: A set signal can be blocked or forwarded by an upstream block. Simultaneously, the release of its own latch is reported to the adjacent blocks.
 
 ## Technical Features
+
 - **Set-Dominant Behavior**: In case of conflict (S1=TRUE, R=TRUE), the set signal takes precedence.
 - **Adapter-Based Coupling**: The bidirectional adapters `ILOCK_IN` and `ILOCK_OUT` allow for modular interconnection without the need to manually establish direct data or event connections between the components.
 - **Feedback**: The internal logic processes both external set and reset signals as well as the states of adjacent components, creating a dynamic interlocking chain.
@@ -75,11 +78,13 @@ The internal SR latch has four states based on the (combined) inputs:
 The effective values for S1 (Set) result from the OR operation of `S1`, `ILOCK_IN.DO1`, and `ILOCK_OUT.DI1`.
 
 ## Application Scenarios
+
 - **Safety Interlocks**: In systems where multiple conditions must be met simultaneously before a process is enabled (e.g., safety gates, emergency stop).
 - **Cascaded Controls**: Superior and subordinate interlock units that interact via adapters (e.g., in production lines).
 - **Priority-Based Sets**: Used in systems where a set signal must take precedence over a reset signal to enforce safety-critical states.
 
 ## Comparison with Similar Devices
+
 - **IEC 61131 SR (reset-dominant)**: Standard SR latch where the reset signal takes precedence in case of a conflict. The ILOCK_FB_SR reverses this priority.
 - **IEC 61131 RS (set-dominant)**: Similar behavior at its core, but without the adapter-based interconnection and the logic for chaining multiple devices.
 - **D Flip-Flop**: Clocked memory cell that only takes over on a rising edge – this is an asynchronous, clock-independent latch.

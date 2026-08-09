@@ -16,6 +16,7 @@ Die Übung besteht aus drei vordefinierten Funktionsbausteinen, die im SubApp‑
 - **CONV_AUI_AUDI** – Adapter‑Konvertierer von AUI nach AUDI
 
 ### IA_WBSD
+
 - **Typ**: `isobus::tecu::IA_WBSD`  
 - **Parameter**:  
   - `QI` = `TRUE` (Baustein ist aktiv)  
@@ -23,6 +24,7 @@ Die Übung besteht aus drei vordefinierten Funktionsbausteinen, die im SubApp‑
   Der Baustein stellt die aktuellen Geschwindigkeitsdaten (wheel‑based machine speed) über einen **Adapter‑Ausgang** (`SPEED`) zur Verfügung. Er dient als Schnittstelle zur Fahrzeug‑Sensorik.
 
 ### Q_NumericValue_WBSD
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`  
 - **Parameter**:  
   - `u16ObjId` = `NumberVariable_Wheel_based_machine_speed` (Verweis auf die Objekt‑ID des numerischen Variablen‑Eintrags im UT)  
@@ -30,6 +32,7 @@ Die Übung besteht aus drei vordefinierten Funktionsbausteinen, die im SubApp‑
   Über diesen Baustein wird ein numerischer Wert an das Universal Terminal gesendet. Die Objekt‑ID legt fest, welche Variable (hier die Radgeschwindigkeit) auf dem UT visualisiert wird.
 
 ### CONV_AUI_AUDI
+
 - **Typ**: `adapter::conversion::unidirectional::AUI_TO_AUDI`  
 - **Parameter**: keine  
 - **Funktionsweise**:  
@@ -61,4 +64,5 @@ Der Schwierigkeitsgrad ist als **fortgeschritten** einzustufen, da grundlegende 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

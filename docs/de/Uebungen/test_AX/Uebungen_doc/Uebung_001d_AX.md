@@ -12,6 +12,7 @@ Das Ziel ist es, die grundlegende Verwendung von Adapterverbindungen in der 4dia
 ## Verwendete Funktionsbausteine (FBs)
 
 ### DigitalInput_I1
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Verwendete Parameter**:
   - `QI` = `TRUE` (Freigabe aktiv)
@@ -20,6 +21,7 @@ Das Ziel ist es, die grundlegende Verwendung von Adapterverbindungen in der 4dia
   Der Baustein liest den Zustand des angeschlossenen digitalen Eingangs **Input_I1**. Bei einer Signaländerung wird ein Ereignis über den **Adapterausgang `IN`** ausgegeben. Der Parameter `QI` muss gesetzt sein, damit der Baustein arbeitet.
 
 ### DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Verwendete Parameter**:
   - `QI` = `TRUE` (Freigabe aktiv)
@@ -28,11 +30,13 @@ Das Ziel ist es, die grundlegende Verwendung von Adapterverbindungen in der 4dia
   Der Baustein empfängt ein Ereignis über den **Adaptereingang `OUT`** und setzt den angeschlossenen digitalen Ausgang **Output_Q1** entsprechend. Der Ausgang wird aktiv, sobald ein Ereignis eintrifft.
 
 ### AX_SPLIT_2
+
 - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Funktionsweise**:  
   Dieser Adapterbaustein verteilt ein eingehendes Ereignis auf **zwei identische Ausgänge** (`OUT1` und `OUT2`). Er dient als **Splitte**r, um das Signal parallel an mehrere nachfolgende Bausteine weiterzuleiten.
 
 ### AX_AND_2
+
 - **Typ**: `adapter::booleanOperators::AX_AND_2`
 - **Funktionsweise**:  
   Dieser Adapterbaustein führt eine **logische UND-Verknüpfung** auf zwei Ereigniseingängen (`IN1`, `IN2`) durch. Nur wenn an beiden Eingängen gleichzeitig ein Ereignis anliegt, wird ein Ereignis am Ausgang `OUT` ausgegeben.
@@ -58,4 +62,5 @@ Durch die Kombination von Splitter- (`AX_SPLIT_2`) und UND-Baustein (`AX_AND_2`)
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

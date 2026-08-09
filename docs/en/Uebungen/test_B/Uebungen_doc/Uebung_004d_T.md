@@ -1,8 +1,10 @@
 # Exercise_004d_T: Exercise for FB_T_FF (Toggle Flip-Flop)
+
 ![Uebung_004d_T_network](./Uebung_004d_T_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the application of the function block **FB_T_FF** (Toggle Flip-Flop).
 A toggle flip-flop changes its output state on each rising edge of the clock signal (CLK). Additionally, the output can be reset by a reset signal (RST).
 
@@ -13,22 +15,25 @@ In this exercise, two digital inputs are used as clock and reset sources. The T-
 This exercise consists of four function blocks connected in the SubApp network:
 
 ### DigitalInput_RST (logiBUS_IX)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
-- **Parameters**: 
-QI = TRUE` (Qualifier for initialization active) 
+- **Parameters**:
+QI = TRUE` (Qualifier for initialization active)
 Input = Input_I1` (Physical input of the logiBUS terminal)
 
 - **Functionality**: Reads the digital input `Input_I1`. The event `IND` is triggered upon signal change. The read value is provided at the data output `IN`. Serves as a reset signal for the T-FF.
 
 ### DigitalInput_CLK (logiBUS_IX)
+
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
-- **Parameters**: 
-QI = TRUE` 
+- **Parameters**:
+QI = TRUE`
 Input = Input_I2`
 
 - **Functionality**: Reads the digital input `Input_I2`. The event `IND` is triggered upon a signal change. The read value is provided at the data output `IN`. Serves as a clock signal for the T-FF.
 
 ### T_FF (FB_T_FF)
+
 - **Type**: `logiBUS::bistableElements::FB_T_FF`
 - **Parameters**: No explicit parameters; the interfaces are defined via connections.
 - **Functionality**: Implements a toggle flip-flop.
@@ -39,9 +44,10 @@ Input = Input_I2`
 - **Event output `CNF`**: Triggered after processing is complete.
 
 ### DigitalOutput_Q1 (logiBUS_QX)
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
-- **Parameters**: 
-QI = TRUE` 
+- **Parameters**:
+QI = TRUE`
 Output = Output_Q1`
 
 - **Functionality**: Receives the state of the T-FF via the data input `OUT` and outputs it at the physical output `Output_Q1`. The output is updated by the event `REQ`.
@@ -49,7 +55,6 @@ Output = Output_Q1`
 ## Program Flow and Connections
 
 1. **Event Chaining**:
-
 - Both digital inputs (`DigitalInput_RST` and `DigitalInput_CLK`) are connected via their event output `IND` to the event input `REQ` of `T_FF`.
 - This means: Any change to either input triggers processing of the T-FF.
 - After processing of the T-FF, the event output `CNF` is connected to the `REQ` input of `DigitalOutput_Q1`, so that the output value is immediately passed on to the hardware.
@@ -78,9 +83,7 @@ Output = Output_Q1`
 **Starting the Exercise:**
 
 1. Load the project into the 4diac IDE (the subapp `Uebung_004d_T` is contained in the class `Uebungen`).
-
 2. Assign the inputs `Input_I1` and `Input_I2`, as well as the output `Output_Q1`, to the corresponding logiBUS terminals of your hardware.
-
 3. Start the application and observe its behavior by applying signals to the inputs.
 
 ## Summary
@@ -90,6 +93,7 @@ Exercise `Uebung_004d_T` demonstrates the use of the function block `FB_T_FF` to
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

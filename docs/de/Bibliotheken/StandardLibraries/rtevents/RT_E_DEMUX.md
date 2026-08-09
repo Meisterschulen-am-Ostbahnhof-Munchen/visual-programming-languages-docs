@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Echtzeit-Variante des E_DEMUX Bausteins. Leitet ein Eingangsereignis an einen von mehreren Ausgängen weiter.
 
 ![RT_E_DEMUX](RT_E_DEMUX.svg)
@@ -18,4 +19,5 @@ Echtzeit-Variante des E_DEMUX Bausteins. Leitet ein Eingangsereignis an einen vo
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

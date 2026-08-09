@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **AX_FB_TOF_LTIME** realisiert einen Standard-Timer für die Ausschaltverzögerung (Off-Delay) nach IEC 61131-3. Er ist speziell für den Einsatz mit einem AX-Adapter ausgelegt und verwendet dabei einen internen Timerbaustein sowie ein D-Flipflop, um das Zeitverhalten präzise abzubilden. Die Zeitbasis arbeitet mit dem Datentyp `LTIME`, wodurch eine hohe zeitliche Auflösung erreicht wird.
 
 ## Schnittstellenstruktur
@@ -40,6 +41,7 @@ Der Funktionsblock **AX_FB_TOF_LTIME** realisiert einen Standard-Timer für die 
 | **Plug** `Q` | `adapter::types::unidirectional::AX` | Ausgangsadapter – gibt das zeitverzögerte Ausgangssignal weiter (über Ereignis `E1` und Daten `D1`). |
 
 ## Funktionsweise
+
 Der Baustein verhält sich wie eine klassische Ausschaltverzögerung (TOF):
 
 - Solange der Eingang `IN` (über den Adapter) **TRUE** ist, ist der Ausgang `Q` ebenfalls **TRUE** und die verstrichene Zeit `ET` wird auf Null gesetzt.
@@ -56,6 +58,7 @@ Die ereignisgesteuerte Verarbeitung erfolgt wie folgt:
 Die Variable `ET` wird direkt vom Timer übernommen und zeigt jederzeit die aktuell abgelaufene Verzögerungszeit an.
 
 ## Technische Besonderheiten
+
 - **Hohe Zeitauflösung** durch Verwendung von `LTIME` (Long Time) gemäß IEC 61131-3.
 - **Adapter-basierte Ein‑/Ausgabe** über den unidirektionalen `AX`-Adapter ermöglicht eine lose Kopplung zwischen verschiedenen Ressourcen (z. B. zwischen Anwendung und E/A‑Treiber).
 - **Standardkonformität** nach IEC 61131-3 – das Verhalten entspricht exakt dem eines TOF‑Timers.
@@ -72,15 +75,18 @@ Die Variable `ET` wird direkt vom Timer übernommen und zeigt jederzeit die aktu
 Ein erneuter Wechsel von `IN` auf **TRUE** setzt den Timer zurück und führt sofort wieder in den Zustand „Inaktiv / Bereit“. Ein Wechsel auf **FALSE** startet die Verzögerung von Neuem.
 
 ## Anwendungsszenarien
+
 - **Nachlaufsteuerung** von Lüftern, Pumpen oder Förderbändern nach dem Abschalten eines Signals.
 - **Entprellung** von Signalen: ein kurzzeitiger Pegelwechsel wird durch die Verzögerung ausgefiltert.
 - **Schutzzeiten** beim Schalten von induktiven Lasten: das Ausschalten wird um eine definierte Zeit verzögert.
 - **Zeitgesteuerte Logik** in Produktionsanlagen, bei der ein Ausgang für eine bestimmte Dauer nach dem Eingangsereignis aktiv bleiben soll.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **TON (Einschaltverzögerung)**: Der Ausgang wird erst nach einer Verzögerung nach dem Einschalten aktiv. – TOF verzögert das Ausschalten.
 - **TP (Impuls)**: Der Ausgang gibt einen Impuls vorgegebener Länge, unabhängig von der Dauer des Eingangssignals. – TOF reagiert nur auf die fallende Flanke.
 - **RTRIG / FTRIG (Flankenerkennung)**: Erkennen Signalwechsel, ohne Zeitkomponente. – TOF kombiniert Flankenerkennung mit Zeitsteuerung.
 
 ## Fazit
+
 Der `AX_FB_TOF_LTIME` ist ein leistungsfähiger, standardisierter Funktionsblock für zeitkritische Ausschaltverzögerungen in der Automatisierungstechnik. Durch die Verwendung des AX-Adapters lässt er sich flexibel in verteilte Systeme einbinden, während die interne Kombination aus Timer und Flipflop ein präzises und reproduzierbares Zeitverhalten gewährleistet. Er eignet sich besonders für Anwendungen, die eine genaue Zeitbasis und eine modulare Schnittstelle erfordern.

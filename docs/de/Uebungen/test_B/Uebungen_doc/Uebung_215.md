@@ -19,6 +19,7 @@ Die gesamte Schaltung besteht aus einem SubApp‑Typ (SubAppType) mit der Bezeic
 ### Sub-Bausteine:
 
 #### `FB_CTD` (Typ: `iec61131::counters::FB_CTD`)
+
 - **Typ**: IEC 61131-3 Funktionbaustein – Abwärtszähler (Counter Down)
 - **Parameter**:
   - `PV = INT#10` → Preset‑Wert = 10 (als Integer‑Konstante)
@@ -38,6 +39,7 @@ Die gesamte Schaltung besteht aus einem SubApp‑Typ (SubAppType) mit der Bezeic
 Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zähler um 1 herunter. Ein positiver Flanke an `LD` setzt den Zähler zurück auf den Wert von `PV`. Der Ausgang `Q` ist `TRUE`, solange der Zählerstand = 0 ist. Der aktuelle Zählerstand wird über `CV` ausgegeben.
 
 #### `Input_CD` (Typ: `logiBUS::io::DI::logiBUS_IX`)
+
 - **Typ**: Digitaleingang – physikalischer Eingang `Input_I1`
 - **Parameter**:
   - `QI = TRUE` → Eingang aktiviert
@@ -47,6 +49,7 @@ Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zäh
   - `IN` (BOOL) → aktueller Zustand des Eingangs
 
 #### `Input_LD` (Typ: `logiBUS::io::DI::logiBUS_IX`)
+
 - **Typ**: Digitaleingang – physikalischer Eingang `Input_I2`
 - **Parameter**:
   - `QI = TRUE`
@@ -54,6 +57,7 @@ Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zäh
 - **Ausgänge**: wie `Input_CD`
 
 #### `Output_Q1` (Typ: `logiBUS::io::DQ::logiBUS_QX`)
+
 - **Typ**: Digitalausgang – physikalischer Ausgang `Output_Q1`
 - **Parameter**:
   - `QI = TRUE`
@@ -63,6 +67,7 @@ Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zäh
   - `OUT` (BOOL) → Wert für den Ausgang
 
 #### `F_INT_TO_UDINT` (Typ: `iec61131::conversion::F_INT_TO_UDINT`)
+
 - **Typ**: IEC‑Konvertierungsfunktion von `INT` nach `UDINT`
 - **Dateneingänge**:
   - `IN` (INT) → Eingangswert (hier der aktuelle Zählerstand)
@@ -72,6 +77,7 @@ Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zäh
 > **Hinweis**: Die Verwendung dieses Bausteins ist aus technischer Sicht nicht optimal, da der Zählerstand `CV` eines **Rückwärtszählers** nicht negativ werden kann (er stoppt bei 0). Eine direkte Kopplung ohne Typkonvertierung wäre möglich, der Baustein dient hier aber als didaktisches Beispiel für die Umwandlung von Datentypen.
 
 #### `Q_NumericValue` (Typ: `isobus::UT::Q::Q_NumericValue`)
+
 - **Typ**: Terminal‑Ausgabebaustein zur Darstellung eines numerischen Wertes
 - **Parameter**:
   - `u16ObjId = OutputNumber_N1` → Objekt‑ID des numerischen Anzeigefeldes auf dem Terminal
@@ -123,4 +129,5 @@ In dieser Übung wurde ein vollständiger Rückwärtszähler gemäß IEC 61131�
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

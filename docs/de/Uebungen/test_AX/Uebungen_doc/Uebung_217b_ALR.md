@@ -13,34 +13,41 @@ Die Übung veranschaulicht den Umgang mit Adapter‑Schnittstellen, die Signalum
 ## Verwendete Funktionsbausteine (FBs)
 
 ### ALI_FB_CTD
+
 - **Typ**: `adapter::iec61131::counters::ALI_FB_CTD`
 - **Beschreibung**: IEC 61131-3 Abwärtszähler (CTD) für den Datentyp LINT. Er besitzt zwei Ereigniseingänge (`CD`, `LD`), einen Dateneingang für den Preset-Wert (`PV`) und einen Ereignisausgang (`Q`) für das Zählergebnis. Der Zählerstand wird am Adapterausgang `CV` bereitgestellt.
 
 ### ALI_LINT_TO_LI
+
 - **Typ**: `adapter::conversion::unidirectional::ALI_LINT_TO_LI`
 - **Beschreibung**: Konvertiert einen LINT‑Wert in einen LINT‑Adapterwert (LI). Wird verwendet, um den Preset-Wert (LINT#10) an den Zähler zu übergeben.
 - **Parameter**: `OUT` = `LINT#10` (voreingestellter Zählerendwert)
 
 ### Input_CD (logiBUS_IXA)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Digitaler Eingangsbaustein für den logiBUS. Erfasst den Zustand des Tasters `Input_I1`, der das Dekrementieren (`CD`) auslöst.
 - **Parameter**: `QI` = `TRUE`, `Input` = `Input_I1`
 
 ### Input_LD (logiBUS_IXA)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Beschreibung**: Zweiter digitaler Eingang für den Taster `Input_I2`, der das Laden des Preset-Wertes (`LD`) auslöst.
 - **Parameter**: `QI` = `TRUE`, `Input` = `Input_I2`
 
 ### Output_Q1 (logiBUS_QXA)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Beschreibung**: Digitaler Ausgangsbaustein für den logiBUS. Gibt den Zustand von `Q` (Zählerstand ≤ 0) auf `Output_Q1` aus.
 - **Parameter**: `QI` = `TRUE`, `Output` = `Output_Q1`
 
 ### ALI_TO_ALR
+
 - **Typ**: `adapter::conversion::unidirectional::ALI_TO_ALR`
 - **Beschreibung**: Wandelt einen ALI‑Adapter (ganzzahlig) in einen ALR‑Adapter (reell) um. Ermöglicht die Übergabe des LINT‑Zählerwerts an eine Terminalausgabe, die einen LREAL‑Wert erwartet.
 
 ### Q_NumericValue_PHYSA_LREAL
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Beschreibung**: Terminalausgabe‑Baustein für numerische Werte vom Typ `PHYSA_LREAL`. Zeigt den umgewandelten Zählerwert auf dem zugeordneten Terminalobjekt `OutputNumber_N3` an.
 - **Parameter**: `stObj` = `OutputNumber_N3`
@@ -83,4 +90,5 @@ Die Übung **217b_ALR** vermittelt den sicheren Umgang mit einem IEC 61131-3 Abw
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

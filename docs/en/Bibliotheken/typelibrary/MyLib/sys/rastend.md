@@ -30,13 +30,9 @@ AX_OUT
 The program flow follows this signal processing chain:
 
 1. **Input Signal Processing**: The incoming AX signal is passed through the IN adapter to AX_X_TO_BOOL.
-
 2. **Signal Conversion**: AX_X_TO_BOOL converts the AX signal into a Boolean value.
-
 3. **Switch Control**: The Boolean value controls E_SWITCH, which forwards events to the toggle flip-flop.
-
 4. **Latching Function**: E_T_FF implements the actual latching function and stores the state.
-
 5. **Output Signal Generation**: AX_BOOL_TO_X converts the Boolean output value back into an AX signal.
 
 **Connections in Detail**:
@@ -51,11 +47,16 @@ This exercise demonstrates the implementation of a latching switching function w
 * [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 * [Uebung_103c2](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 
-
 # Rastend
+
 ## Introduction
+
 ## Function Blocks Used (FBs)
+
 ### Sub-modules: rastend
+
 ## Program Flow and Connections
+
 ## Summary
+
 ## 🛠️ Zugehörige Übungen

@@ -1,8 +1,10 @@
 # Exercise_004b3: Toggle Flip-Flop with IE / Split / Interlock
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004b3`. This exercise extends the two-channel system with mutual interlocking: Only one lamp can be illuminated at a time.
 ----
 ## Objective of the Exercise
+
 Implementation of exclusive selection logic. Switching on one channel must necessarily result in the other channel being switched off. This is a standard requirement when selecting operating modes or directions of travel.
 
 -----
@@ -40,13 +42,9 @@ The special feature lies in the "cross-connection" of the set events:
 The functional sequence:
 
 1. Lamp 1 is on, lamp 2 is off.
-
 2. User presses button 2 (`I2`).
-
 3. The switch on channel 2 detects "lamp 2 is off" and triggers the on event (`EO0`).
-
 4. This event is sent to the memory of channel 2 (`Setzen`) ➡️ Lamp 2 turns on.
-
 5. Simultaneously, the same event is sent to the reset input of channel 1 ➡️ Lamp 1 immediately turns off.
 
 Result: Activating one function automatically deactivates the other.

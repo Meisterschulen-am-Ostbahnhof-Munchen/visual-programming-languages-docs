@@ -1,10 +1,14 @@
 # ISONETEVENT_T
+
 * * * * * * * * * *
 ## Introduction
+
 The data type `ISONETEVENT_T` is a structured type used to describe a network event within an ISOBUS network. It encapsulates all relevant information needed to identify and process an event related to the management of network participants (control functions). This type is typically used in callback functions to report changes in the network's state.
 ## Interface Structure
+
 The structure `ISONETEVENT_T` consists of the following six elements:
 ### **Data Elements**
+
 * **`eNetEvent`** (Type: `USINT`, Initial value: `ISO_NETEVENT_e::Isonet_Last`)
 * **Description:** Indicates which specific event occurred in the network member management (e.g., connection establishment, termination, address change).
 * **`eMemberRefer`** (Type: `SINT`, Initial value: `ISOUSERHOME_e::notdef`)
@@ -26,10 +30,10 @@ The structure `ISONETEVENT_T` consists of the following six elements:
 **Description:** The ISOBUS name of the involved control function. This name is a unique identifier according to the ISOBUS standard.
 
 ## Functionality
+
 The structure `ISONETEVENT_T` functions as a container or message object. When a relevant network event occurs (defined by `eNetEvent`), an instance of this structure is populated with the current data and passed to a registered callback function. The contained data enables the receiving software component to accurately classify the event and identify the affected network entities (`eMemberRefer`, `s16OwnCfHnd`, `s16Handle`), their current address (`u8SAMember`), and their ISOBUS name (`cfName`).
 
 ## Technical Details
-* **Type:** This is a `StructuredType` within the 4diac IDE.
 
 * **Type:** This is a `StructuredType` within the 4diac IDE.
 * **Initial Values:** Two elements (`eNetEvent`, `eMemberRefer`) have defined initial values that reference enumerated types (`ISO_NETEVENT_e`, `ISOUSERHOME_e`). This ensures a defined initial state.
@@ -46,6 +50,7 @@ This data type is primarily used in scenarios where an application needs to be i
 * Logging network activity for diagnostic purposes.
 
 ## ⚖️ Comparison with Similar Building Blocks
+
 Within the 4diac type library, various structured data types exist for communication protocols. Unlike generic communication structures (such as those for TCP/IP), `ISONETEVENT_T` is highly specialized for the event messages of the ISOBUS protocol stack, particularly the network management (NM) component. Other ISOBUS-related types might focus more on the exchange of process data (PGN data).
 
 ## Conclusion
@@ -55,4 +60,5 @@ The data type `ISONETEVENT_T` is an essential tool for developing ISOBUS-enabled
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

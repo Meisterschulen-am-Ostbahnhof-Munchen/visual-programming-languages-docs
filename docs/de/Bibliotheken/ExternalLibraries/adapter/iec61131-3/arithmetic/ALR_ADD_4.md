@@ -11,26 +11,32 @@ Der Funktionsbaustein (FB) **ALR_ADD_4** ist ein generischer arithmetischer Baus
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Synchronisation und Ereignissteuerung erfolgt implizit über die verwendeten Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Weiterleitung von Ereignissen erfolgt implizit über den Ausgangsadapter.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden. Die Datenübergabe erfolgt vollständig über die Adapter-Schnittstellen.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden. Die Datenübergabe erfolgt vollständig über die Adapter-Schnittstelle.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN1** (Typ: `adapter::types::unidirectional::ALR`): Erster Eingangswert (Summand 1) für die Addition.
 *   **IN2** (Typ: `adapter::types::unidirectional::ALR`): Zweiter Eingangswert (Summand 2) für die Addition.
 *   **IN3** (Typ: `adapter::types::unidirectional::ALR`): Dritter Eingangswert (Summand 3) für die Addition.
 *   **IN4** (Typ: `adapter::types::unidirectional::ALR`): Vierter Eingangswert (Summand 4) für die Addition.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das berechnete Ergebnis der Addition (Summe).
 
 ## Funktionsweise

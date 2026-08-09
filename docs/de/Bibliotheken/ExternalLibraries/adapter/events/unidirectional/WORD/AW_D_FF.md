@@ -10,15 +10,19 @@ Der Funktionsblock **AW_D_FF** realisiert ein datengesteuertes Flipflop (D‑Lat
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine direkten Ereignis-Eingänge auf FB‑Ebene. Die Ereignissteuerung erfolgt über den Eingangsadapter **I**.
 
 ### **Ereignis-Ausgänge**
+
 Keine direkten Ereignis-Ausgänge auf FB‑Ebene. Die Ereignisausgabe erfolgt über den Ausgangsadapter **Q**.
 
 ### **Daten-Eingänge**
+
 Keine direkten Daten-Eingänge auf FB‑Ebene. Die Datenübergabe erfolgt über den Eingangsadapter **I**.
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge auf FB‑Ebene. Die Datenausgabe erfolgt über den Ausgangsadapter **Q**.
 
 ### **Adapter**

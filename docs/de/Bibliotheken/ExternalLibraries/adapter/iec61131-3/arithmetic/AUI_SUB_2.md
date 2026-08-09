@@ -13,26 +13,32 @@ Der Funktionsbaustein `AUI_SUB_2` dient zur Durchführung einer arithmetischen S
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung wird intern über die angebundenen Adapter abgewickelt.*
 
 ### **Ereignis-Ausgänge**
+
 *Dieser Funktionsbaustein besitzt keine direkten Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt gekapselt über den Ausgangs-Adapter.*
 
 ### **Daten-Eingänge**
+
 *Es sind keine direkten Daten-Eingänge vorhanden. Die Datenübergabe erfolgt über die Eingangs-Adapter.*
 
 ### **Daten-Ausgänge**
+
 *Es sind keine direkten Daten-Ausgänge vorhanden. Das Ergebnis wird über den Ausgangs-Adapter bereitgestellt.*
 
 ### **Adapter**
 
 #### **Sockets (Steckdosen / Eingänge)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUI`): 
   Erster Eingangsadapter für die Subtraktion. Dieser repräsentiert den Minuenden (Wert, von dem subtrahiert wird).
 * **IN2** (Typ: `adapter::types::unidirectional::AUI`): 
   Zweiter Eingangsadapter für die Subtraktion. Dieser repräsentiert den Subtrahenden (Wert, der subtrahiert wird).
 
 #### **Plugs (Stecker / Ausgänge)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUI`): 
   Ausgangsadapter, der das Ergebnis der Subtraktion (die Differenz) zur weiteren Verwendung bereitstellt.
 

@@ -1,8 +1,10 @@
 # ASSEMBLE_AL_FROM_AW
+
 ![ASSEMBLE_AL_FROM_AW](./ASSEMBLE_AL_FROM_AW.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ASSEMBLE_AL_FROM_AW` combines the data from four **AW (WORD)** adapter interfaces into one **AL (LWORD)** output value. It is used to combine multiple 16-bit words into a 64-bit word and output it via a clocked signal.
 ## Interface Structure
 
@@ -39,7 +41,6 @@ No direct data outputs – the result is output via the OUT adapter.
 The module utilizes an internal network of two function blocks:
 
 1. **`ASSEMBLE_LWORD_FROM_WORDS`** – performs the logical combination of the four 16-bit words (`WORD_00` to `WORD_03`) into a 64-bit LWORD.
-
 2. **`E_D_FF_ANY`** – a clock-edge-triggered D flip-flop that only transmits the combined value to the output adapter `OUT` when a rising edge is present at the clock input.
 
 The events from the four input adapters (`WORD_00.E1` … `WORD_03.E1`) are all connected to the `REQ` event input of `ASSEMBLE_LWORD_FROM_WORDS`. As soon as an event arrives at one of the input adapters, the combination is recalculated. Upon completion (`CNF`), `E_D_FF_ANY` is clocked, which then adopts the calculated value into its internal state and outputs it via `OUT.D1`. The event at the output adapter (`OUT.E1`) signals the availability of the new value.
@@ -56,6 +57,7 @@ As soon as an event arrives at one of the input adapters, the combination is rec
 The function block does not have its own ECC (Execution Control Chart), but consists of a combinational circuit with a downstream flip-flop. The internal state logic is fully implemented by the two sub-modules `ASSEMBLE_LWORD_FROM_WORDS` and `E_D_FF_ANY`.
 
 ## Application Scenarios
+
 - **Industrial Data Acquisition** – Combining four 16-bit sensor values (e.g., temperature, pressure, flow rate, level) into a single 64-bit data packet.
 - **Communication Interfaces** – Processing separately arriving 16-bit data blocks for a 64-bit interface (e.g., Modbus register → OPC UA).
 - **Bit-Parallel Processing** – Combining four microcontroller registers into a single large register for advanced logic applications.
@@ -77,6 +79,7 @@ ASSEMBLE_AL_FROM_AW` is a specialized function block for concatenating four 16-b
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
 

@@ -15,15 +15,19 @@ Im Gegensatz zu klassischen arithmetischen Bausteinen, die mit direkten Daten- u
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Dieser Baustein besitzt keine direkten Ereignis-Eingänge. Die Steuerung und Triggerung erfolgt implizit über die verbundenen Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Dieser Baustein besitzt keine direkten Ereignis-Ausgänge.*
 
 ### **Daten-Eingänge**
+
 *Dieser Baustein besitzt keine direkten Daten-Eingänge.*
 
 ### **Daten-Ausgänge**
+
 *Dieser Baustein besitzt keine direkten Daten-Ausgänge.*
 
 ### **Adapter**

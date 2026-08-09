@@ -1,10 +1,13 @@
 # INI_AUDI
+
 ![INI_AUDI](./INI_AUDI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **INI_AUDI** function block enables reading and saving UDINT data from a `settings.ini` file. Access to the file is implemented via an internal `INI` function block. Communication with the environment is handled via two **AUDI adapters** (unidirectional), implemented as a plug (`AUDI_OUT`) and a socket (`AUDI_IN`). This allows for modular integration with other function blocks that use the same adapter type.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -41,21 +44,17 @@ The **INI_AUDI** function block enables reading and saving UDINT data from a `se
 | AUDI_IN | AUDI | Socket (Input) | Input of the value to be stored |
 
 ## Functionality
+
 This function block works in conjunction with the internal `INI` function block. The basic sequence is:
 
 1. **Initialization (`INIT` event)**
-
 - The input data associated with `INIT` (`QI`, `SECTION`, `KEY`, `DEFAULT_VALUE`) is forwarded to the internal `INI` module.
 - `INI` is started and acknowledged with `INITO`.
-
 2. **Reading a Value**
-
 - After INIT confirmation, the `GET` command of the `INI` block is automatically triggered.
 - The read value (or `DEFAULT_VALUE`) is output to the `AUDI_OUT.D1` adapter via `INI.VALUEO`.
 - Simultaneously, the event `AUDI_OUT.E1` is sent to notify the connected block.
-
 3. **Writing a Value**
-
 - If the adapter `AUDI_IN` receives an event `E1` with a data value `D1`, `INI_AUDI` forwards this to the `INI` block as a `SET` command.
 - The internal `INI` block stores the value in the INI file under the specified section and key and acknowledges it with `SETO`.
 - The acknowledgment event is output via `AUDI_OUT.E1`.
@@ -65,13 +64,14 @@ This function block works in conjunction with the internal `INI` function block.
 - The status outputs `QO` and `STATUS` are directly inherited from the internal `INI` block and are available at the output.
 
 ## Technical Features
+
 - The block uses the **adapter `adapter::types::unidirectional::AUDI`**, which is specifically designed for the directed communication of values and events.
 - The data is processed as **UDINT (Unsigned Double Integer)**, enabling efficient storage and transmission.
 - The internal `INI` block is from the `eclipse4diac::storage` library and supports standard INI file formats.
-
 - The block uses the **adapter `adapter::types::unidirectional::AUDI`**, which is specifically designed for the directed communication of values and events. - The fallback mechanism via `DEFAULT_VALUE` ensures that a defined value is returned even if entries are missing in the INI file.
 
 ## State Overview
+
 Since the function block operates in an event-driven manner, the following logical states result:
 
 - **Idle**: Waiting for a `INIT` event.
@@ -83,11 +83,13 @@ Since the function block operates in an event-driven manner, the following logic
 The function block is stateless in the sense of a continuous data flow; each action is triggered by an event and terminates synchronously.
 
 ## Application Scenarios
+
 - **Configuration Management** in automation systems: Reading settings (e.g., limits, parameters) from a central `settings.ini` and writing back changed values.
 - **Adapter-based sensor/actuator coupling**: Connecting a function block that reads or sets values via the AUDI adapter without having to implement the file access logic itself.
 - **Persistent Data Storage**: Saving counter readings or machine states to an INI file while simultaneously communicating via standardized adapters.
 
 ## Comparison with Similar Function Blocks
+
 - **Compared to a pure `INI` function block**: `INI_AUDI` encapsulates the adapter communication and offers a higher level of abstraction. The user does not have to directly handle events and data connections between multiple components.
 - **Compared to Function Blocks with Other Data Types**: This function block is specifically designed for `UDINT`. Separate versions are required for other data types (e.g., `STRING`, `REAL`). However, the basic structure remains the same.
 - **Advantage**: By using adapters (AUDI), the function block can easily be replaced with other interfaces, provided they implement the same adapter type.
@@ -99,4 +101,5 @@ The `INI_AUDI` function block provides a compact and reusable solution for readi
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

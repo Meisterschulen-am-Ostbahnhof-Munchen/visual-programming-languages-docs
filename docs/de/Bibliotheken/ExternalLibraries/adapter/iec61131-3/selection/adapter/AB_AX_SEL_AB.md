@@ -15,15 +15,19 @@ Dieser Baustein eignet sich besonders für ereignisgesteuerte Architekturen, bei
 Da es sich um einen adapterbasierten Funktionsbaustein handelt, sind die klassischen Ereignis- und Dateneingänge vollständig in den Adapterschnittstellen gekapselt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Steuerung erfolgt über die Ereignisse innerhalb der Adapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Signalisierung erfolgt über die Ereignisse innerhalb des Ausgangs-Adapters.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**

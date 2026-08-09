@@ -15,6 +15,7 @@ Die Steuerung erfolgt über eine zeitgesteuerte Sequenz mit 5 Schritten (`sequen
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Haupt-Steuerungsbaustein: `Seq`
+
 Dieser Baustein steuert den zeitlichen Ablauf der Ampelphasen.
 
 - **Typ**: `logiBUS::utils::sequence::timed::sequence_T_05_loop_AX`
@@ -27,6 +28,7 @@ Dieser Baustein steuert den zeitlichen Ablauf der Ampelphasen.
     - `DT_S5_S1` = `T#2s` (Dauer Phase 5: Gelb)
 
 ### Ein- und Ausgabebausteine
+
 - **`DigitalInput_CLK_I1`** (`logiBUS::io::DI::logiBUS_IE`):
     - Dient als Startsignal für die Sequenz.
     - Parameter: Reagiert auf `BUTTON_SINGLE_CLICK` an Eingang `Input_I1`.
@@ -35,6 +37,7 @@ Dieser Baustein steuert den zeitlichen Ablauf der Ampelphasen.
     - Verknüpft mit `Output_Q1`, `Output_Q2`, `Output_Q3`.
 
 ### Logik- und Hilfsbausteine
+
 - **`OR_Red`, `OR_Yellow`, `OR_Green`** (`adapter::booleanOperators::AX_OR_2`):
     - ODER-Gatter, die Signale aus verschiedenen Sequenzschritten zusammenführen (z.B. leuchtet Gelb allein in Phase 5, aber auch zusammen mit Rot in Phase 2).
 - **`AX_SPLIT_2`** (`adapter::events::unidirectional::AX_SPLIT_2`):

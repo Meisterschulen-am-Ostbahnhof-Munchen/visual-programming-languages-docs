@@ -1,8 +1,10 @@
 # AUI_SPLIT_3
+
 ![AUI_SPLIT_3](./AUI_SPLIT_3.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUI_SPLIT_3** serves as a generic splitter that distributes a single incoming AUI interface to three identical outgoing AUI interfaces. It allows for the simple duplication of a unidirectional adapter (of type `adapter::types::unidirectional::AUI`) without altering the events or data it carries.
 ## Interface Structure
 
@@ -36,6 +38,7 @@ None – the FB has no independent data outputs. Data is transmitted via the AUI
 The module functions purely as a signal distributor. It receives an AUI interface via socket `IN` and forwards all incoming events and data unchanged to the three plugs `OUT1`, `OUT2`, and `OUT3`. No processing, delay, or state change takes place. The function block (FB) is therefore **stateless** and behaves like a simple replication of wiring.
 
 ## Technical Features
+
 - **Generic Structure**: The function block is labeled as a generic FB (`GEN_AUI_SPLIT`), allowing it to be used with various AUI adapter variants (with different event/data signatures).
 - **Unidirectional**: The adapter type `unidirectional` means that data and event flows are only in one direction (from the socket to the plugs). Backward communication is not supported.
 - **No Latency**: Due to the absence of internal logic, no measurable delay occurs.
@@ -46,6 +49,7 @@ The module functions purely as a signal distributor. It receives an AUI interfac
 The function block does not have an internal state machine. There is only one continuous operating state in which the input interface is permanently mirrored to the three output interfaces.
 
 ## Application Scenarios
+
 - **Signal Multiplication**: An AUI signal from a sensor or controller is to be forwarded to multiple independent receivers (e.g., actuators, displays, other controllers).
 - **Monitoring**: An existing AUI data stream is copied to a monitoring unit without affecting the original signal paths.
 - **Test and Simulation Environments**: A test stimulus is to be distributed in parallel to multiple components under test.

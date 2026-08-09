@@ -10,15 +10,19 @@ Der Funktionsblock `AW_SPLIT_7` dient dazu, einen einzelnen eingehenden AW-Adapt
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - Keine
 
 ### **Ereignis-Ausgänge**
+
 - Keine
 
 ### **Daten-Eingänge**
+
 - Keine
 
 ### **Daten-Ausgänge**
+
 - Keine
 
 ### **Adapter**

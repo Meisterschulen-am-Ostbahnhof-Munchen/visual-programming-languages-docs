@@ -6,6 +6,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `E_T_FF_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabiles Flipflop mit Set-, Reset- und Toggle‑Funktion. Es zeichnet sich durch ein symmetrisches Start‑up‑Verhalten aus: Beim Initialisierungsereignis (`INIT`) wird der Ausgang `Q` auf den am Eingang `Q_INIT` vorgegebenen Wert gesetzt, sofern der Qualifier `QI` aktiv ist. Der Baustein kombiniert die Eigenschaften eines SR‑Flipflops und eines Toggle‑Flipflops in einer Einheit.
 
 ## Schnittstellenstruktur
@@ -41,9 +42,11 @@ Der Funktionsblock `E_T_FF_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bist
 | Q    | BOOL  | Wert des Flipflops                       |
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`, `Init`, `DeInit`, `SET` und `RESET`.
 
 - **Initialisierung (`INIT`)**  
@@ -65,6 +68,7 @@ Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`
   Befindet sich der Automat im Zustand `SET`, wechselt er zu `RESET` und umgekehrt. Dabei wird der jeweilige Algorithmus (`SET` bzw. `RESET`) mit der aktuellen Bewertung von `QI` ausgeführt. Der Ausgang `Q` wird also bei jedem Takt umgeschaltet, sofern `QI = TRUE` ist.
 
 ## Technische Besonderheiten
+
 - **Symmetrisches Start‑up‑Verhalten**: Der initiale Wert von `Q` wird durch den parametrierbaren Eingang `Q_INIT` festgelegt und nicht etwa auf einen festen Default gesetzt. Dadurch kann das System reproduzierbar in einen definierten Zustand starten.
 - **Ereignisqualifier `QI`**: Alle Aktionen (`SET`, `RESET`) werden nur dann tatsächlich ausgeführt, wenn `QI = TRUE` ist. Bei `QI = FALSE` wird der Ausgangsqualifier `QO` lediglich auf `FALSE` gesetzt, der Wert von `Q` bleibt unverändert. Dies ermöglicht eine bedingte Steuerung durch vorgeschaltete Bausteine.
 - **Deinitialisierung**: Wird während der Laufzeit ein `INIT`-Ereignis mit `QI = FALSE` empfangen, so wird der Baustein deinitialisiert und geht in den Ruhezustand (`START`). In diesem Zustand reagiert er auf keine weiteren Ereignisse, bis er erneut initialisiert wird.
@@ -91,11 +95,13 @@ Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`
 - `DeInit` → `START` : immer (Transition mit Bedingung `1`)
 
 ## Anwendungsszenarien
+
 - **Steuerung mit definiertem Startzustand**: In Sicherheitssteuerungen oder Anlagen, die nach einem Neustart einen bestimmten Ausgangszustand benötigen, kann `Q_INIT` entsprechend gesetzt werden.
 - **Toggle-Funktion für Befehlsschalter**: Ein einziger Taster (verbunden mit `CLK`) schaltet einen Ausgang bei jedem Drücken um – z. B. für Lichtsteuerungen.
 - **Bedingte Set-/Reset-Logik**: Der Qualifier `QI` erlaubt es, die Aktionen von übergeordneten Bedingungen abhängig zu machen, ohne dass der Zustand des Flipflops verloren geht.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 - **Standard SR-Flipflop (`E_SR`)**: Bietet nur Setzen und Rücksetzen, keine Toggle-Funktion und kein einstellbarer Startwert.
 - **Toggle-Flipflop (`E_TOGGLE`)**: Nur Umschalten bei jedem Takt, kein separates Setzen/Rücksetzen, kein definierter Startwert.
 - **SR-Flipflop mit Initialisierung (`E_SR_INIT`)**: Ähnlich, aber ohne Toggle-Funktion.
@@ -103,4 +109,5 @@ Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`
 Der vorliegende Baustein vereint alle drei Funktionen (Set, Reset, Toggle) mit einem flexiblen Initialisierungsverhalten – eine umfassende Lösung für viele ereignisgesteuerte Steuerungsaufgaben.
 
 ## Fazit
+
 `E_T_FF_SR_SYM_INIT` ist ein vielseitiger Funktionsblock für die IEC‑61499‑basierte ereignisgesteuerte Automatisierung. Durch die Kombination von Setzen, Rücksetzen und Toggeln sowie der parametrierbaren Initialisierung deckt er ein breites Spektrum an Anforderungen ab. Die Verwendung des Qualifiers `QI` erhöht die Flexibilität und ermöglicht eine sichere Einbindung in komplexe Ablaufsteuerungen.

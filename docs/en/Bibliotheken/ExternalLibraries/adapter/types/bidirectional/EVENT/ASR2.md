@@ -2,8 +2,11 @@
 #ASR2
 bidirectional adapter interface for 2 events
 # ASR2
+
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | EI_SET | Set/Switch on | |

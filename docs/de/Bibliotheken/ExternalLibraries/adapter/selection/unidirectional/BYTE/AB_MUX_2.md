@@ -29,6 +29,7 @@ Der Funktionsbaustein **AB_MUX_2** ist ein generischer Multiplexer, der zwei an 
 | `K`      | UINT  | Auswahlindex: 0 → IN1, 1 → IN2 (andere Werte verhalten sich undefiniert oder bleiben unverändert). |
 
 ### **Daten-Ausgänge**
+
 Keine direkten Datenausgänge – die Ausgabe erfolgt ausschließlich über den Adapter `OUT`.
 
 ### **Adapter**
@@ -80,4 +81,5 @@ Der Funktionsbaustein **AB_MUX_2** stellt eine flexible und standardisierte Lös
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

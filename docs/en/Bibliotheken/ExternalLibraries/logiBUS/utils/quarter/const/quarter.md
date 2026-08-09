@@ -1,5 +1,7 @@
 # quarter
+
 ## 🎧 Podcast
+
 ![quarter](./quarter.svg)
 
 * [The Secret of the 2-Bit Quarter: Efficiency in CAN Bus for Commercial Vehicles ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
@@ -17,15 +19,20 @@ Not present (constant collection). The constants themselves represent symbolic n
 
 Not present (constant collection).
 
-Not present (constant collection).
-
 ### Event Outputs
+
 ### Event Inputs
+
 ### Data Outputs
+
 ### Data Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
+
 Not present (constant collection).
 
 ## Functionality
@@ -40,9 +47,7 @@ Not applicable, as this is a static collection of values.
 
 * **SAE J1939 Communication:** Used in function blocks that send or receive parameters according to SAE J1939, especially for status and control information transmitted as 2-bit fields.
 * **Status Management:** Assigning and querying device or function states (e.g., on/off, faulty, unavailable) within a control application.
-
 * **Logging and Diagnostics:** Use of the `_msg` strings to generate readable log entries or displays in the control panel.
-
 * **`logiBUS::utils::bit::const`:** Contains constants for single bits (e.g., `BIT_FALSE`, `BIT_TRUE`). `quarter` extends this concept to 2-bit fields with application-specific semantics.
 * **Manual Definition:** Instead of using this library, the values could be written directly in the code as numbers or binary literals. However, using `quarter` increases maintainability, readability, and consistency across the entire project.
 
@@ -51,7 +56,11 @@ Not applicable, as this is a static collection of values.
 The `quarter` constant library is a useful tool for developing control software in the SAE J1939 environment and other systems that use 2-bit status and control fields. It promotes standardized, self-explanatory programming and reduces the potential for errors through the use of "magic numbers." Its integration into the `logiBUS::utils` package makes it a fundamental component for structured logiBUS applications.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 ## Conclusion

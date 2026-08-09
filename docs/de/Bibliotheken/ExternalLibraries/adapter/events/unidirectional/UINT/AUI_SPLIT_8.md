@@ -11,15 +11,19 @@ Der Baustein `AUI_SPLIT_8` dient dazu, ein eingehendes AUI-Adapter-Signal (unidi
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**

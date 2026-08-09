@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_ListItem** ist ein standardkonformer Funktionsbaustein zur Verwaltung von Listeneinträgen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.42) Spezifikation für Listen-Input-Objekte in VT-Systemen.
 
 ![Q_ListItem](Q_ListItem.svg)
@@ -12,19 +13,23 @@ Der **Q_ListItem** ist ein standardkonformer Funktionsbaustein zur Verwaltung vo
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Listen-Objekt-ID)
 - `REQ`: Änderungsanforderung (mit Index und neuer Objekt-ID)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Status und vorherigen Werten)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Listen-Objekt-ID (16-bit)
 - `u8ListIndex` (USINT): Listenindex (0-basiert)
 - `u16NewObjId` (UINT): Neue Objekt-ID oder 0xFFFF (leerer Eintrag)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldListIndex` (USINT): Vorheriger Listenindex
 - `u16OldObjId` (UINT): Vorherige Objekt-ID

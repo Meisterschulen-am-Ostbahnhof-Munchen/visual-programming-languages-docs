@@ -30,6 +30,7 @@ Der Funktionsblock (FB) `ARRAY2ARRAY_2_LREAL` ist ein Service-Interface-Funktion
 *   **OUT** (Typ: `LREAL`, Array-Größe: `2`): Das Ziel-Array, in das die kopierten Werte geschrieben werden. Ebenfalls ein Array von Langen Reellen Zahlen.
 
 ### **Adapter**
+
 Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
@@ -77,4 +78,5 @@ Der `ARRAY2ARRAY_2_LREAL` Funktionsblock bietet eine unkomplizierte und ereignis
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

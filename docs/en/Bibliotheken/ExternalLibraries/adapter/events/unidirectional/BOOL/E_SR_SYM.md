@@ -1,16 +1,20 @@
 # E_SR_SYM
+
 ![E_SR_SYM](./E_SR_SYM.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The E_SR_SYM function block is an event-driven bistable element with symmetric start behavior. It implements a flip-flop that responds to set and reset events and whose initial state is not predetermined but is determined by the first arriving event.
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **S** (Event): Sets the output \( Q \) to `TRUE`.
 - **R** (Event): Sets the output \( Q \) to `FALSE`.
 
 ### **Event Outputs**
+
 - **EO** (Event): Triggered when the value of \( Q \) changes (after an S or R event). The output data memory \( Q \) is assigned to this event (`With Var="Q"`).
 
 ### **Data Inputs**
@@ -18,6 +22,7 @@ The E_SR_SYM function block is an event-driven bistable element with symmetric s
 None.
 
 ### **Data Outputs**
+
 - **Q** (BOOL): Current logical state of the flip-flop (`TRUE` or `FALSE`).
 
 ### **Adapters**
@@ -59,6 +64,7 @@ Transitions:
 - RESET → SET at **S**
 
 ## Application Scenarios
+
 - **Event-driven enable signals:** A binary enable signal is set by a set pulse and reset by a reset pulse.
 - **Initially indeterminate systems:** Startup behavior where the first valid command (set or reset) determines the subsequent sequence.
 - **Simple two-point control:** Switching actuators (e.g., valve open/close) using external command transmitters.

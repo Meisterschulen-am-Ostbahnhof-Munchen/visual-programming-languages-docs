@@ -1,8 +1,10 @@
 # AI_TO_ADI
+
 ![AI_TO_ADI](./AI_TO_ADI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The AI_TO_ADI function block is a composite function block that converts an AI adapter (integer values, type INT) into an ADI adapter (double integer values, type DINT). It serves as a bridge between components that use different adapter interfaces.
 ## Interface Structure
 
@@ -42,6 +44,7 @@ The function block (FB) does not have its own data outputs. The data is output v
 This function block operates as a simple forwarder: As soon as the event `E1` is present at the incoming adapter `AI_IN`, the current value of `AI_IN.D1` is read and passed unchanged to `ADI_OUT.D1`. Subsequently, the event `E1` is triggered at the outgoing adapter `ADI_OUT`. The type conversion from `INT` to `DINT` is performed automatically via the adapter binding; no explicit conversion logic is required.
 
 ## Technical Features
+
 - **Implicit Type Conversion:** The function block (FB) performs the conversion from 16-bit integer (INT) to 32-bit double integer (DINT) without data loss, as the target data type is larger.
 - **Composite Implementation:** The function block is implemented as a composite FB, meaning it contains an internal network that directly connects the two adapters. It can be used in control projects like a primitive FB.
 - **Unidirectional Communication:** Both adapters are designed to be unidirectional – data flows only from input to output.
@@ -52,6 +55,7 @@ This function block operates as a simple forwarder: As soon as the event `E1` is
 The AI_TO_ADI has no internal state machine (ECC). It behaves passively and immediately forwards every incoming event and its associated data. There are no internal states, wait times, or value storage.
 
 ## Application Scenarios
+
 - **Adapter Bridge:** If a sensor module provides an AI adapter (INT), but a subsequent processing module expects an ADI adapter (DINT), the AI_TO_ADI can be used as an intermediary.
 - **System Integration:** In heterogeneous automation systems where different data types are used for adapter interfaces, this function block enables easy adaptation without modifying the original components.
 - **Prototyping:** Rapid coupling of function blocks from different libraries based on different adapter types.

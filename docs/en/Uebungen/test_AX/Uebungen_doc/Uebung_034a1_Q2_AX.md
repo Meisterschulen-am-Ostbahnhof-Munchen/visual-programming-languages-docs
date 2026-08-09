@@ -1,8 +1,10 @@
 # Exercise_034a1_Q2_AX: Numeric Value Input to PWM Output (Adapter Version)
+
 ![Uebung_034a1_Q2_AX_network](./Uebung_034a1_Q2_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the coupling of a numeric input value (via an iSoBUS numeric value service) with a PWM output (logiBUS). The numeric value entered by the user is directly converted into a PWM signal and output at output `Output_Q2`. Communication between the two function blocks takes place via an adapter connection, which allows for modular and flexible wiring.
 ## Function Blocks Used (FBs)
 
@@ -43,11 +45,8 @@ The data transfer event is only triggered when the entered numeric value is conf
 ## Program Flow and Connections
 
 1. The function block `PWM_Value` waits for a valid numeric value from the iSoBUS input field.
-
 2. After user confirmation (OK button), a data event with the numerical value is sent via the **adapter output** `IN`.
-
 3. The adapter connection forwards this signal to the **adapter input** `OUT` of the function block `PWMOutput_Q2`.
-
 4. `PWMOutput_Q2` converts the received value into a PWM signal with the corresponding pulse width and controls the connected logiBUS output `Output_Q2`.
 
 **Important prerequisites:**
@@ -63,6 +62,7 @@ This exercise demonstrates how a numerical user input from an iSoBUS service is 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

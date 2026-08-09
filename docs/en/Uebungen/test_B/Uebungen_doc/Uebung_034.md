@@ -1,8 +1,10 @@
 # Exercise_034: Analog Input to PWM Output
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_034`. Here, an analog measurement is used to continuously control the power of an actuator.
 ----
 ## Objective of the Exercise
+
 Connecting an analog input (`logiBUS_AI`) to a PWM output (`logiBUS_QD_PWM`). It demonstrates how data values are scaled to map the control range of a sensor to the power range of an actuator.
 
 -----
@@ -24,11 +26,8 @@ Connecting an analog input (`logiBUS_AI`) to a PWM output (`logiBUS_QD_PWM`). It
 ## Functionality
 
 1. Any change at the analog input `I7` triggers a `IND` event.
-
 2. The value is adjusted in `F_SHL` to reach the desired target range.
-
 3. The result is sent to the `OUT` port of the PWM module and activated via `REQ`.
-
 4. The actuator at `Q4` reacts immediately to the new input.
 
 -----
@@ -42,4 +41,5 @@ By turning a physical potentiometer (`I7`), the operator can continuously adjust
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

@@ -14,6 +14,7 @@ Diese Übung veranschaulicht die Realisierung einer gegenseitigen Verriegelung (
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: DigitalInput_S1, DigitalInput_R1, DigitalInput_S2, DigitalInput_R2
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Verwendete interne FBs**: Keine (Hardware-Adapterbaustein)
 - **Parameter**:
@@ -22,6 +23,7 @@ Diese Übung veranschaulicht die Realisierung einer gegenseitigen Verriegelung (
 - **Funktionsweise**: Diese Bausteine lesen die digitalen Eingangssignale der logiBUS-Hardware ein und stellen sie über den Adapterausgang `IN` zur Verfügung. Sie dienen als Schnittstelle zu den physikalischen Eingängen.
 
 ### Sub-Bausteine: ILOCK_SR_1, ILOCK_SR_2
+
 - **Typ**: `logiBUS::signalprocessing::interlock::ILOCK_FB_SR_AX`
 - **Verwendete interne FBs**: Keine (vordefinierter Interlock-Baustein)
 - **Parameter**: Keine (Standardkonfiguration)
@@ -35,6 +37,7 @@ Diese Übung veranschaulicht die Realisierung einer gegenseitigen Verriegelung (
   Die Verriegelung bewirkt, dass ein aktiver `ILOCK_IN` das Setzen des eigenen Latches blockiert. Dadurch kann immer nur eines der beiden Latches gesetzt sein.
 
 ### Sub-Bausteine: DigitalOutput_Q1, DigitalOutput_Q2
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Verwendete interne FBs**: Keine (Hardware-Adapterbaustein)
 - **Parameter**:
@@ -80,4 +83,5 @@ Die Übung `Uebung_208_AX` demonstriert den Aufbau einer gegenseitigen Verriegel
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,10 @@
 # FIELDBUS_UDINT_TO_SIGNAL_SCALED
+
 ![FIELDBUS_UDINT_TO_SIGNAL_SCALED](./FIELDBUS_UDINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `FIELDBUS_UDINT_TO_SIGNAL_SCALED` processes a UDINT value received via the fieldbus. It mirrors the input `IN` to the output `OUT`, but only if the incoming signal is recognized as valid. Additionally, the value is scaled by a factor and an offset is applied. This function block is typically used in the signal processing chain of fieldbus protocols to convert raw integer values into physical quantities (e.g., as LREAL).
 ## Interface Structure
 
@@ -45,9 +47,7 @@ The function block has two states: `INIT` and `REQ`.
 
 - **INIT State**: Upon a `INIT` event, the empty algorithm is executed (no action is taken), and subsequently, `INITO` is output. The parameters `SCALE` and `OFFSET` are passed to the function block but are only used during the next `REQ` processing.
 - **REQ State**: On a `REQ` event, the following logic is executed:
-
 1. The incoming value `IN` is compared to a predefined threshold `VALID_SIGNAL_DW` (from the import `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_DW`).
-
 2. If `IN <= DWORD_TO_UDINT(VALID_SIGNAL_DW)` is true, the input is considered valid. Then `OUT` is calculated as:
 
 OUT := UDINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
@@ -59,6 +59,7 @@ and `VALID` is set to `TRUE`.
 The initial value of `IN` is preset to `DWORD_TO_UDINT(NOT_AVAILABLE_DWM)`, a constant from the same import that represents a special "not available" value.
 
 ## Technical Features
+
 - The validity check is based on two imported constants:
 - `VALID_SIGNAL_DW`: Upper limit for valid values.
 - `NOT_AVAILABLE_DWM`: Default value for unavailable signals (used as the initial value for `IN`).
@@ -75,6 +76,7 @@ The function block uses a simple state diagram with two states:
 There are no other states or loops.
 
 ## Application Scenarios
+
 - **Scaling of Sensor Values**: A fieldbus device provides a raw UDINT value (e.g., 0 … 65535). `SCALE` converts a physical quantity (e.g., pressure in bar), and the offset accounts for zero-point shifts.
 - **Validation Check**: Typical fieldbus protocols define certain bit patterns as "invalid." This function block automatically filters out these values and sets `VALID = FALSE`.
 - **Initialization**: At system startup, the scaling factor can be set via `INIT`, while the `REQ` cycle regularly processes the current process values.
@@ -90,6 +92,7 @@ The `FIELDBUS_UDINT_TO_SIGNAL_SCALED` function block provides a robust and simpl
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

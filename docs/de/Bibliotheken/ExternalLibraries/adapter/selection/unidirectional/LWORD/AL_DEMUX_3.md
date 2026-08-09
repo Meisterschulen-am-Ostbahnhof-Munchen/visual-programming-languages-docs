@@ -29,6 +29,7 @@ Der Funktionsblock **AL_DEMUX_3** ist ein generischer Demultiplexer für unidire
 | K | UINT | Index (1, 2 oder 3) für den zu aktivierenden Ausgang |
 
 ### **Daten-Ausgänge**
+
 – Keine –
 
 ### **Adapter**

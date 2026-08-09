@@ -1,4 +1,5 @@
 # AIWS_MUX_2
+
 ![AIWS_MUX_2](./AIWS_MUX_2.svg)
 
 * * * * * * * * * *
@@ -7,26 +8,27 @@ The AIWS_MUX_2 is a generic multiplexer for the AIWS adapter. It allows selectio
 | Event | Description | With Variables |
 |----------|---------------|---------------|
 | REQ | Event to Trigger Index Setting | K |
-
-
 | Event | Description |
 |----------|--------------|
 | CNF | Selection Confirmation |
-
-
 | Variable | Type | Description |
 |----------|------|--------------|
 | K | UINT | Selection Index (0 = IN1, 1 = IN2) |
 
-
 None (signal transmission is exclusively via adapters).
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 | Direction | Name | Type | Description |
@@ -36,6 +38,7 @@ None (signal transmission is exclusively via adapters).
 Socket (Input) | IN2 | AIWS | Second AIWS Input (Selection at K=1) |
 
 ## Functionality
+
 When an event occurs at the **REQ** input, the current value of the index **K** is evaluated:
 
 - If **K = 0**, the signal from **IN1** is passed through to **OUT**.
@@ -51,9 +54,7 @@ After successful selection, the **CNF** event is output. The function block oper
 The function block does not contain an explicit state machine (ECC) in the XML description. The implicit behavior can be described as follows:
 
 1. **Idle State** – no REQ event is pending.
-
 2. During REQ, K is evaluated and the switchover occurs immediately.
-
 3. CNF is then sent, and the function block returns to its idle state.
 
 Multiple REQ events can occur consecutively; ongoing processing is not blocked.
@@ -61,21 +62,24 @@ Multiple REQ events can occur consecutively; ongoing processing is not blocked.
 - **Sensor Switching**: Selection between two analog measured values (e.g., temperature or pressure) in an automation controller.
 - **Operating Mode Change**: Switching between two different signal sources, such as different measuring points or redundant sensors.
 - **Test and Simulation Environments**: Easy switching of the AIWS signal to be analyzed.
-
 - **AIWS_MUX_4** (if available): Offers four inputs instead of two and requires more index bits.
 - **Standard Multiplexer (Data MUX)**: Usually works with single basic variables (e.g., INT, REAL) and without an adapter. In contrast, the AIWS_MUX_2 encapsulates complex signal structures in a single adapter, simplifying reuse and reducing wiring at the function block level.
 - **Event-driven vs. continuous multiplexing**: The block only updates on REQ, which is sufficient for many applications and saves resources.
 
 The AIWS_MUX_2 is a compact, generic multiplexer for AIWS adapters. Its simple event-driven selection based on an index makes it ideal for switching between two analog signals. The use of Eclipse-4diac adapter technology ensures a clean, reusable interface and facilitates integration into complex automation solutions.
 
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

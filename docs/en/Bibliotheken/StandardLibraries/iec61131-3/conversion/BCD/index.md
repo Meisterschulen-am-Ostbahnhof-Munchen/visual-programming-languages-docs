@@ -1,5 +1,7 @@
 # BCD Conversions
+
 ## 🎧 Podcast
+
 * [The VBCD Valve Engineering Datasheet Decoded](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Ingenieurs-Datenblatt-des-VBCD-Ventils-entschlsselt-e3bgpd5)
 * [The VBCD DE-A Valve: How an Invisible Hero Safely Controls Cranes, Excavators, and More](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-VBCD-DE-A-Ventil-Wie-ein-unsichtbarer-Held-Krne--Bagger-und-Co--sicher-steuert-e373m6h)
 * [The VBCD DE-A Valve: Unpacking the Silent Guardian of Hydraulic Safety and Precision](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/The-VBCD-DE-A-Valve-Unpacking-the-Silent-Guardian-of-Hydraulic-Safety-and-Precision-e375b61)

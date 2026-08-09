@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Ausgabe eines numerischen Werts unter Verwendung eines Tastendruck-Ereignisses (BUTTON_LONG_PRESS_UP). Dabei wird ein digitaler Eingangsbaustein (logiBUS_IDA) verwendet, der bei einem langen Tastendruck ein Ereignis auslöst. Dieses Ereignis wird über einen Adapter in ein Format konvertiert, das der Ausgabebaustein Q_NumericValue_AUDI verarbeiten kann – dieser gibt dann den vordefinierten numerischen Wert auf dem ISOBUS aus.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 - **logiBUS_IDA**  
   - **Typ**: logiBUS::io::DI::logiBUS_IDA  
   - **Parameter**: QI = TRUE, Input = Input_I1, InputEvent = BUTTON_LONG_PRESS_UP  
@@ -22,6 +24,7 @@ Diese Übung demonstriert die Ausgabe eines numerischen Werts unter Verwendung e
   - **Funktionsweise**: Nimmt einen 32‑Bit‑Wert (hier über den Adapter) entgegen und gibt ihn über das ISOBUS‑Objekt mit der Objekt-ID `OutputNumber_N1` aus. Dies ermöglicht die Anzeige eines numerischen Werts auf einem ISOBUS‑Terminal.
 
 ## Programmablauf und Verbindungen
+
 Die Funktionsbausteine sind wie folgt miteinander verbunden:
 
 1. **logiBUS_IDA** -> **AD_TO_AUDI (AD_IN)**:  
@@ -42,4 +45,5 @@ Durch diese Kette wird bei jedem langen Tastendruck der festgelegte numerische W
 **Benötigte Vorkenntnisse**: Grundlegendes Verständnis von Funktionsbausteinen, Ereignissen und ISOBUS-Kommunikation.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_011a2_AUDI** zeigt einen kompakten Ablauf: Ein digitaler Tastendruck (lang) löst eine Ereigniskette aus, an deren Ende ein numerischer Wert auf dem ISOBUS ausgegeben wird. Die drei verwendeten Bausteine – der Eingangsbaustein, ein Konvertierungsadapter und der Ausgabebaustein – sind über Adapterverbindungen lose gekoppelt. Dies ermöglicht eine flexible, ereignisgesteuerte Werteausgabe und vermittelt grundlegende Konzepte der modularen Steuerungsprogrammierung.

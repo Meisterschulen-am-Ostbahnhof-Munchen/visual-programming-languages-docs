@@ -5,14 +5,17 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **ATimeOut**-Adapter ist eine standardisierte Schnittstelle (AdapterType) gemäß IEC 61499 zur Implementierung von Timeout-Services. Er definiert die Kommunikation zwischen einem Dienstnutzer (PLUG) und einem Zeitdienst-Anbieter (SOCKET). Im Gegensatz zum `ARTimeOut` ist dieser Adapter für einfache, nicht-nachtriggerbare Timeouts vorgesehen.
 
 ![ATimeOut](ATimeOut.svg)
 
 ## Struktur des ATimeOut-Adapters
+
 Der ATimeOut-Adapter definiert eine klare Trennung der Zuständigkeiten zwischen der Steuerlogik (Plug) und dem Zeitgeber (Socket).
 
 ### Schnittstelle (Interface)
+
 Die Schnittstelle ist aus der Perspektive des **Plugs** definiert:
 
 - **Eingangsereignisse (Event Inputs - vom Socket empfangen)**:
@@ -26,6 +29,7 @@ Die Schnittstelle ist aus der Perspektive des **Plugs** definiert:
   - **DT (Duration Time)**: Definiert die Zeitdauer für den Timeout (Datentyp: TIME).
 
 ## Verhalten und Service-Sequenzen
+
 Der Adapter unterstützt zwei grundlegende Abläufe:
 
 1. **Timeout-Ablauf**:
@@ -36,10 +40,12 @@ Der Adapter unterstützt zwei grundlegende Abläufe:
    - Bevor die Zeit abläuft, sendet der Plug `STOP`. Der Socket bricht die Zeitmessung ab; es erfolgt kein `TimeOut`-Ereignis.
 
 ## Technische Besonderheiten
+
 - **Nicht nachtriggerbar**: Ein erneutes `START` während eines laufenden Timeouts wird bei der Standard-Implementierung (`E_TimeOut`) ignoriert.
 - **Adapter-Konzept**: Ermöglicht eine saubere Kapselung der Zeitlogik und vereinfacht das Baustein-Netzwerk durch Reduzierung der Verbindungslinien.
 
 ## Anwendungsbeispiele
+
 - **Überwachung von Antwortzeiten**: Warten auf eine Bestätigung (z.B. von einem Kommunikationspartner) innerhalb eines festen Zeitfensters.
 - **Prozessüberwachung**: Sicherstellen, dass ein mechanischer Vorgang innerhalb der erwarteten Zeit abgeschlossen wird.
 
@@ -52,4 +58,5 @@ Der Adapter unterstützt zwei grundlegende Abläufe:
 | Ereignis START | Startet Timer     | Startet/Resetet Timer |
 
 ## Fazit
+
 Der ATimeOut-Adapter stellt eine robuste und einfache Schnittstelle für zeitkritische Überwachungsaufgaben in verteilten Steuerungssystemen dar. Er ist die Basis für den Funktionsbaustein `E_TimeOut`.

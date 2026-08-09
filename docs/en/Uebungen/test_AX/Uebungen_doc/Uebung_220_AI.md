@@ -1,8 +1,10 @@
 # Exercise_220_AI: Standard IEC 61131-3 AI_FB_CTUD (Adapter Version, Up/Down Counter, INT) with Terminal Output
+
 ![Uebung_220_AI_network](./Uebung_220_AI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **up/down counter according to IEC 61131-3 (CTUD)** as an adapter version for the data type `INT`. The current counter value is output via a terminal (numeric output). Control is achieved via four digital inputs (CU, CD, R, LD) and two digital outputs (QU, QD). A constant value (INT#5) is loaded as a preset value (PV).
 
 ## Function Blocks (FBs) Used
@@ -77,12 +79,9 @@ At startup, the event `Input_LD.INITO` is forwarded to `AI_INT_TO_I.REQ`. This t
 - `Input_CD.IN` → `AI_FB_CTUD.CD` (Count down on edge)
 - `Input_R.IN` → `AI_FB_CTUD.R` (Reset to 0)
 - `Input_LD.IN` → `AI_FB_CTUD.LD` (Load value from PV)
-
 3. **Counter Outputs**
-
 - `AI_FB_CTUD.QU` → `Output_QU.OUT` (Overflow)
 - `AI_FB_CTUD.QD` → `Output_QD.OUT` (underflow)
-
 4. **Counter Reading Output**
 
 The current counter value `CV` is converted via `AI_TO_AUDI` and sent to the output block `Q_NumericValue_AUDI.u32NewValue`. This displays the value on a configured terminal number (`u16ObjId = OutputNumber_N1`).
@@ -97,6 +96,7 @@ The current counter value `CV` is converted via `AI_TO_AUDI` and sent to the out
 This exercise demonstrates the use of an IEC 61131-3 counter (CTUD) in a 4diac adapter environment. It shows the linking of digital inputs/outputs, the conversion of data formats (`INT` ↔ adapter ↔ AUDI), and the output of a numerical value to a terminal. The learning effect lies in understanding event-driven counters, data flow conversion, and error handling for negative values. This exercise is suitable for advanced users and requires basic knowledge of the 4diac IDE and IEC 61131-3.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

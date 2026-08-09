@@ -51,6 +51,7 @@ Der Ablauf ist in zwei Kommentarfelder unterteilt:
 - **Endlage** (bei Softkey F2)
 
 ### Ereignisverbindungen
+
 - `SoftKey_UP_F1.IND` → `AX_FB_SR.S`  
   Ein Druck auf Softkey F1 sendet ein Ereignis an den Set‑Eingang des Flipflops.
 
@@ -58,10 +59,12 @@ Der Ablauf ist in zwei Kommentarfelder unterteilt:
   Ein Druck auf Softkey F2 sendet ein Ereignis an den Reset‑Eingang des Flipflops.
 
 ### Adapterverbindung
+
 - `AX_FB_SR.Q` → `DigitalOutput_Q1.OUT`  
   Der Ausgang des Flipflops wird als Adaptersignal an den digitalen Ausgangsbaustein weitergeleitet. Liegt Q auf TRUE, schaltet der Ausgang `Output_Q1` durch.
 
 ### Funktionsweise
+
 1. **Start der Spiegelabfolge**: Drücken von Softkey F1 → Setzt das AX-Flipflop. Der Ausgang Q wird TRUE → der digitale Ausgang schaltet ein (z. B. Spiegel fährt aus).
 2. **Endlage / Reset**: Drücken von Softkey F2 → Reset des Flipflops. Q wird FALSE → der digitale Ausgang schaltet aus (Spiegel fährt zurück).
 3. Der Zustand bleibt erhalten, bis der andere Softkey gedrückt wird.
@@ -80,4 +83,5 @@ Die Übung eignet sich für Einsteiger in die ereignisgesteuerte Programmierung 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

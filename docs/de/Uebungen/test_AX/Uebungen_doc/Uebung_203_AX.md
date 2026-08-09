@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verwendung eines **Interlock-Funktionsbausteins mit Prioritätsumschaltung** (ILOCK_SWITCH_AX). Zwei digitale Eingänge (Input_I1, Input_I2) steuern über einen Adapter-basierten Interlock-Baustein zwei digitale Ausgänge (Output_Q1, Output_Q2). Der Interlock sorgt dafür, dass immer nur ein Ausgang aktiv sein kann – bei gleichzeitigen Eingangssignalen setzt sich ein definierter Prioritätsmechanismus durch. Die Kommunikation mit der Peripherie erfolgt über logiBUS-Adapterschnittstellen.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die SubApp enthält fünf Funktionsbausteine aus der logiBUS-Bibliothek:
 
 - **DigitalInput_I1** (Typ: `logiBUS::io::DI::logiBUS_IXA`)  
@@ -34,6 +36,7 @@ Die SubApp enthält fünf Funktionsbausteine aus der logiBUS-Bibliothek:
   - Ausgabe des Signals auf den logiBUS-Ausgangskanal Output_Q2.
 
 ## Programmablauf und Verbindungen
+
 Die folgende Adapter-Verbindungsstruktur liegt dem Ablauf zugrunde:
 
 1. **Eingangssignale:**  
@@ -57,9 +60,11 @@ Bei aktivem Signal an **Input_I1** wird **Output_Q1** gesetzt. Bei aktivem Signa
 - Starten Sie die Übung, indem Sie die SubApp in Ihr System einbinden und die Klemmen entsprechend verdrahten.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_203_AX** vermittelt den Einsatz eines **prioritätsgesteuerten Interlocks** über Adapterschnittstellen. Zwei digitale Eingänge werden über den Baustein `ILOCK_SWITCH_AX` verarbeitet, der bei gleichzeitigen Signalen eine festgelegte Priorität (hier: UP vor DOWN) anwendet und die Ausgänge entsprechend schaltet. Die Implementierung erfolgt vollständig mit logiBUS-I/O-Bausteinen und zeigt eine typische Verriegelungsschaltung, wie sie in der Automatisierungstechnik häufig benötigt wird.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

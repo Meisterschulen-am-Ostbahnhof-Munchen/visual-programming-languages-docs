@@ -1,4 +1,5 @@
 # Exercise_002a5b_AX: DigitalInput_I1-3 with OR to DigitalOutput_Q1-3, using Plug and Socket
+
 ![Uebung_002a5b_AX_network](./Uebung_002a5b_AX_network.svg)
 
 * * * * * * * * * *
@@ -6,8 +7,11 @@ This exercise demonstrates the basic interconnection of multiple digital inputs 
 Exercise `Uebung_002a5b_AX` uses a combination of specific I/O blocks and generic logic and signal distribution blocks.
 
 ## Function Blocks Used (FBs)
+
 ## Introduction
+
 ### Sub-Blocks: logiBUS_IXA
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA` (represented by instances such as `DigitalInput_I1`, `DigitalInput_I2`, `DigitalInput_I3`)
 - **Internal Function Blocks Used**: No internal function blocks are visible in the provided definition.
 - **Block Name**: DigitalInput_I1 (Example instance)
@@ -18,6 +22,7 @@ Exercise `Uebung_002a5b_AX` uses a combination of specific I/O blocks and generi
 - **Functionality**: This function block is used to read the logical state of a specific digital input. It monitors the assigned physical input (e.g., `Input_I1`) and provides its current status as a Boolean value at its data output `IN`.
 
 ### Sub-Blocks: logiBUS_QXA
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA` (represented by instances such as `DigitalOutput_Q1`, `DigitalOutput_Q2`, `DigitalOutput_Q3`)
 - **Internal Function Blocks Used**: No internal function blocks are visible in the provided definition.
 - **Block Name**: DigitalOutput_Q1 (Example Instance)
@@ -28,6 +33,7 @@ Exercise `Uebung_002a5b_AX` uses a combination of specific I/O blocks and generi
 - **Functionality**: This function block is used to control a specific digital output. It sets the state of the assigned physical output (e.g., `Output_Q1`) based on the Boolean value present at its data input `OUT`.
 
 ### Sub-blocks: AX_OR_3
+
 - **Type**: `adapter::booleanOperators::AX_OR_3` (represented by the instance `AX_OR_3`)
 - **Internal FBs Used**: No internal FBs are visible in the provided definition.
 - **Block Name**: AX_OR_3
@@ -37,6 +43,7 @@ Exercise `Uebung_002a5b_AX` uses a combination of specific I/O blocks and generi
 - **Functionality**: This function block implements a three-input logical OR gate. The data output `OUT` becomes `TRUE` if at least one of the three data inputs (`IN1`, `IN2`, `IN3`) has the value `TRUE`. Otherwise, the output is `FALSE`.
 
 ### Sub-Blocks: AX_SPLIT_3
+
 - **Type**: `adapter::events::unidirectional::AX_SPLIT_3` (represented by the instance `AX_SPLIT_3`)
 - **Internal Function Blocks Used**: No internal function blocks are visible in the provided definition.
 - **Block Name**: AX_SPLIT_3
@@ -58,9 +65,7 @@ The exercise `Uebung_002a5b_AX` implements a control logic in which the states o
 The `AX_OR_3` block logically combines these three Boolean values. The result (`TRUE`, if I1 OR I2 OR I3 is `TRUE`) is made available at its data output `AX_OR_3.OUT`.
 
 3. **Signal Distribution**: The data output of the OR gate (`AX_OR_3.OUT`) is connected to the data input of the signal distributor `AX_SPLIT_3` (`AX_SPLIT_3.IN`). The `AX_SPLIT_3` gate duplicates this single control signal and forwards it to its three data outputs (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`).
-
 4. **Output Control**: The outputs of the signal distributor are each connected to the inputs of the digital output modules:
-
 * `AX_SPLIT_3.OUT1` is connected to `DigitalOutput_Q1.OUT`.
 * `AX_SPLIT_3.OUT2` is connected to `DigitalOutput_Q2.OUT`.
 * `AX_SPLIT_3.OUT3` is connected to `DigitalOutput_Q3.OUT`.
@@ -88,5 +93,7 @@ The exercise `Uebung_002a5b_AX` provides a practical introduction to combining d
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## Program Flow and Connections
+
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

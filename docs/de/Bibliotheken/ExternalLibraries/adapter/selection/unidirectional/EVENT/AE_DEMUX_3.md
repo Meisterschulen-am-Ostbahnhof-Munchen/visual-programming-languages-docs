@@ -32,6 +32,7 @@ Der Baustein ist als generischer FB (GenericClassName `GEN_AE_DEMUX`) realisiert
 | `K`  | UINT  | Index des ausgewählten Ausgangs (gültige Werte: 1, 2 oder 3) |
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Datenausgänge vorhanden. Die Ausgangsdaten werden über die Adapter-Ausgänge bereitgestellt.*
 
 ### **Adapter**
@@ -87,4 +88,5 @@ Der **AE_DEMUX_3** ist ein kompakter, generischer Demultiplexer für AE-Signale,
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

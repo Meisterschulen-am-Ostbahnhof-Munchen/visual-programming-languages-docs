@@ -1,5 +1,6 @@
 ![GEN_SIN](GEN_SIN.svg)
 # GEN_SIN
+
 this signal generator generates a sine wave output
 this signal generator generates a sine wave output. The sine wave signal is defined by period time (PT),
 amplitude (AM), offset (OS) and a specific delay for the output signal (DL).
@@ -42,6 +43,6 @@ in addition to an analog output Out there is a second boolean output Q with the 
 | Out | REAL | Analog Output |
 
 ## 🛠️ Related exercises
+
 * [Uebung_126b2_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
 * [Uebung_126b_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
-

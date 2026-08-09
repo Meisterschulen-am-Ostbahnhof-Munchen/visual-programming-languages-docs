@@ -10,6 +10,7 @@ Diese Übung demonstriert das einfache Durchschleifen eines numerischen Werts vo
 ## Verwendete Funktionsbausteine (FBs)
 
 ### InputNumber_I3
+
 - **Typ**: `isobus::UT::io::NumericValue::NumericValue_ID`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -21,6 +22,7 @@ Diese Übung demonstriert das einfache Durchschleifen eines numerischen Werts vo
 - **Funktionsweise**: Dieser FB liest den aktuellen Wert des ISOBUS-Objekts mit der ID `InputNumber_I3`. Bei jeder Wertänderung am Bus wird das Ereignis `IND` ausgelöst und der aktuelle Wert als DWORD am Ausgang `IN` bereitgestellt.
 
 ### F_DWORD_TO_UDINT
+
 - **Typ**: `iec61131::conversion::F_DWORD_TO_UDINT`
 - **Parameter**: keine zusätzlichen
 - **Ereigniseingänge**: `REQ` (Konvertierung anfordern)
@@ -30,6 +32,7 @@ Diese Übung demonstriert das einfache Durchschleifen eines numerischen Werts vo
 - **Funktionsweise**: Der FB wandelt den 32-Bit DWORD in einen vorzeichenlosen 32-Bit Integer (UDINT) um. Die Konvertierung wird durch ein Ereignis an `REQ` gestartet; nach Abschluss wird `CNF` ausgelöst.
 
 ### Q_NumericValue
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue`
 - **Parameter**:
   - `u16ObjId` = `OutputNumber_N3`
@@ -73,4 +76,5 @@ Dieses einfache Durchschleifen kann als Basis für komplexere Signalverarbeitung
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

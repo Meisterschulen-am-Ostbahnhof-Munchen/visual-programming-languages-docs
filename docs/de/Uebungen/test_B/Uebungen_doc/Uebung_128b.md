@@ -56,6 +56,7 @@ In dieser Übung werden verschiedene Funktionsbausteine verschaltet, um die Netz
     *   **Funktion**: Stellt die Nutzdaten (Payload) für die ISOBUS-Nachricht bereit.
 
 ### Debugging / Visualisierung
+
 Folgende Bausteine dienen der Aufschlüsselung von Strukturen zu Diagnosezwecken:
 
 *   **eclipse4diac::convert::STRUCT_DEMUX** (`STRUCT_DEMUX_3`): Zerlegt `isobus::pgn::NAMEFIELD_T`.
@@ -87,4 +88,5 @@ In dieser Übung wird die Handhabung von ISOBUS-Transportprotokollen vertieft. I
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

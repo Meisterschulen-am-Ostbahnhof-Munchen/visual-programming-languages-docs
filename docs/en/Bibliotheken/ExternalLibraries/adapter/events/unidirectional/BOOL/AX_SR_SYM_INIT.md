@@ -1,10 +1,13 @@
 # AX_SR_SYM_INIT
+
 ![AX_SR_SYM_INIT](./AX_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AX_SR_SYM_INIT** implements an event-driven, bistable flip-flop (set-reset) with symmetrical start-up behavior and special initialization logic. It extends the classic SR flip-flop with a qualified initialization and deinitialization sequence, where the output state is specified via the input `Q_INIT`, and the entire logic is only active if the qualifier `QI` has the value `TRUE`.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Description |
@@ -39,6 +42,7 @@ The function block **AX_SR_SYM_INIT** implements an event-driven, bistable flip-
 | Q | adapter::types::unidirectional::AX | Flip-flop value – set/reset via the interface |
 
 ## Functionality
+
 The function block has four main states: `START`, `Init`, `DeInit`, `SET`, and `RESET`.
 
 - **`START`** – Wait state after system startup.
@@ -61,6 +65,7 @@ The transitions between ``SET`` and ``RESET`` are triggered only by the events `
 - **Guard Conditions**: The state transitions use conditions like `INIT[TRUE = QI]` or `[FALSE = Q_INIT]` to precisely control the logic.
 
 ## State Overview
+
 - **START** → Idle state after startup.
 - **Init** → Initialization run (only with `QI=TRUE`).
 - **DeInit** → Deinitialization run (only with `QI=FALSE`).
@@ -79,14 +84,17 @@ Transitions:
 - `DeInit` → `START`: automatically after completion of the DeInit algorithm
 
 ## Application Scenarios
+
 - **Control of actuators with defined start behavior**: A motor or valve should perform a certain action after being switched on. Assume a specific state (e.g., closed = `Q=FALSE`), depending on an initialization specification.
 - **Qualified State Changes**: In systems where an enable signal (`QI`) allows the actual value change, while the qualifier output (`QO`) signals validity.
 - **Resettable Initialization Routine**: A component can be set or reset by an INIT call, but can later be put into a defined idle state by another INIT call with `QI=FALSE`.
 
 ## Comparison with Similar Function Blocks
+
 - **Standard SR Flip-Flop (e.g., `SR` or `AX_SR`)**: Simple set/reset without initialization or qualifier. `AX_SR_SYM_INIT` additionally offers a qualified initialization and deinitialization process.
 - **Function Blocks with INIT Interface (e.g., `E_SR` with `INIT`)**: These often lack pronounced deinitialization or a qualifier. The function block presented here differs in its symmetrical behavior – both setting and resetting can be specified in the INIT step.
 - **Function Blocks with Adapter (`unidirectional::AX`)**)**: These are used to transmit the state externally via a standardized adapter interface. The `AX_SR_SYM_INIT` encapsulates this logic in a function block.
 
 ## Conclusion
+
 The `AX_SR_SYM_INIT` is a versatile function block for applications that require qualified startup and initialization behavior. By combining event control, qualifier logic, and an adapter interface, it is particularly suitable for modular automation solutions according to IEC 61499, where a defined system startup and clean deinitialization are required.

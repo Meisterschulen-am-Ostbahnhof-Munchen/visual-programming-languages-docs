@@ -1,25 +1,32 @@
 # logiBUS_DI
+
 ![logiBUS_DI](./logiBUS_DI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The logiBUS_DI GlobalConstants definition provides a collection of predefined constants for digital inputs of the logiBUS system. These constants define the pin assignments for various digital input channels and are used to configure logiBUS_DI function blocks.
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 *No event inputs available - this is a constant definition*
 
 ### **Event Outputs**
+
 *No event outputs available - this is a constant definition*
 
 ### **Data Inputs**
+
 *No data inputs available - this is a constant definition*
 
 ### **Data Outputs**
+
 *No data outputs available - this is a constant definition*
 
 ### **Adapters**
+
 *No adapters available - this is a constant definition*
 
 ## Functionality
@@ -32,6 +39,7 @@ The GlobalConstants definition logiBUS_DI provides structured constants of type 
 These constants are used as initialization values for configuring digital inputs in the logiBUS system.
 
 ## Technical Features
+
 - **Structure Type**: All constants use the structured data type `logiBUS_DI_S`
 - **Pin Range**: Valid pins range from 1 to 9; invalid configurations are indicated by pin 255
 - **Package Membership**: The constants are organized in the package `logiBUS::io::DI`
@@ -42,6 +50,7 @@ These constants are used as initialization values for configuring digital inputs
 Since this is a pure constant definition, there are no state transitions or state machines.
 
 ## Application Scenarios
+
 - Configuration of digital input modules in logiBUS systems
 - Parameterization of function blocks that process digital inputs
 - Type-safe pin assignments in control programs

@@ -1,23 +1,29 @@
 # Q_BackgroundColourAux
+
 * * * * * * * * * *
 ## Introduction
+
 The **Q_BackgroundColourAux** is a standards-compliant function block for controlling secondary background colors in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.20) specification for auxiliary colors in agricultural tax systems.
 ![Q_BackgroundColourAux](Q_BackgroundColourAux.svg)
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization Request (with object ID)
 - `REQ`: Color Change Request (with color code)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization Confirmation
 - `CNF`: Change Confirmation (with result data)
 
 ### **Data Inputs**
+
 - `u16ObjId` (UINT): Object Identifier
 - `u8Colour` (USINT): New Auxiliary Color Value (ISO 11783-6 palette)
 
 ### **Data Outputs**
+
 - `STATUS` (STRING): Operational status message
 - `u8OldColour` (USINT): Previous auxiliary color value
 - `s16result` (INT): ISO-compliant result code
@@ -25,17 +31,12 @@ The **Q_BackgroundColourAux** is a standards-compliant function block for contro
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with object ID for auxiliary element
 - `INITO` confirms operational readiness
-
 2. **Color Change**:
-
 - `REQ` triggers with new auxiliary color code (0-255)
 - `CNF` returns result and previous color value
-
 3. **Error Handling**:
-
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -66,6 +67,7 @@ The **Q_BackgroundColourAux** is a standards-compliant function block for contro
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid instance |
 
 ## Application Scenarios
+
 - **Status Indicators**: Secondary colors for bars
 - **Groupings**: Color separation of areas
 - **Editor Modes**: Guidelines in configurators

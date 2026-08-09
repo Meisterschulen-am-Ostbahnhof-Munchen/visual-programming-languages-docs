@@ -1,26 +1,32 @@
 # Q_ObjSelectInput
+
 ![Q_ObjSelectInput](https://user-images.githubusercontent.com/116869307/214148166-50d7f308-5767-4b09-b5a9-cd6f4e61bd5b.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The **Q_ObjSelectInput** is a standards-compliant function block for the programmatic selection of input fields in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.6) specification for VT input elements.
 ![Q_ObjSelectInput](Q_ObjSelectInput.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - `INIT`: Initialization Request (with object ID)
 - `REQ`: Selection Request (with option parameter)
 
 ### **Event Outputs**
+
 - `INITO`: Initialization Confirmation
 - `CNF`: Selection Confirmation
 
 ### **Data Inputs**
+
 - `u16ObjId` (UINT): Input Object ID (16-bit)
 - `u8Option` (USINT): Selection Option (0x00 or 0xFF)
 
 ### **Data Outputs**
+
 - `STATUS` (STRING): Operational status message
 - `u8OldOption` (USINT): Previous selection option
 - `s16result` (INT): ISO-compliant result code
@@ -28,18 +34,13 @@ The **Q_ObjSelectInput** is a standards-compliant function block for the program
 ## Functionality
 
 1. **Initialization**:
-
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-
 2. **Field selection**:
-
 - `REQ` with selection option
 - Sets focus on the input field
 - `CNF` returns operational status and previous option
-
 3. **Options**:
-
 - `0xFF`: Standard selection (VT version 3+)
 - `0x00`: Extended selection (VT version 4+ only)
 
@@ -69,6 +70,7 @@ The **Q_ObjSelectInput** is a standards-compliant function block for the program
 -130 | VT_E_NOT_ALIVE | VT Not Active |
 
 ## Application Scenarios
+
 - **Form Navigation**: Automatic Field Selection
 - **Input Assistants**: Guided Operation
 - **Error Management**: Direct Jump to Error Fields

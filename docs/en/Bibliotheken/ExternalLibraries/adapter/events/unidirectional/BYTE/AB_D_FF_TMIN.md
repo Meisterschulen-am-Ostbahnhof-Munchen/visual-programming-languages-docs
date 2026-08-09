@@ -1,8 +1,10 @@
 # AB_D_FF_TMIN
+
 ![AB_D_FF_TMIN](./AB_D_FF_TMIN.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AB_D_FF_TMIN** is an adapter-based function block (FB) according to IEC 61499 that implements the functionality of a data latch (D flip-flop) with a minimum time condition between successive output events. It serves to transfer a digital data value from an adapter socket (input) to an adapter plug (output), ensuring that the output events (EO) do not occur faster than permitted by a configured time parameter `Tmin`. The block abstracts the pure D flip-flop logic by using an internal flip-flop block and encapsulates data and events in adapter interfaces.
 ## Interface Structure
 
@@ -25,6 +27,7 @@ The **AB_D_FF_TMIN** is an adapter-based function block (FB) according to IEC 61
 | `Tmin` | TIME | Minimum time between two output events (EO) |
 
 ### **Data Outputs**
+
 No direct data outputs; Data output is handled via the adapter plug `Q`.
 
 ### **Adapter**
@@ -45,7 +48,6 @@ The function block works internally with the function block `E_D_FF_ANY_TMIN` (t
 An event at `INIT` passes the parameter `Tmin` (minimum time) to the inner function block. The function block acknowledges this with `INITO`.
 
 2. **Data Acquisition and Transmission:**
-
 - An event `E1` occurs at socket `I`, which carries the data value `D1` (the signal to be latched).
 
 `` - This event is forwarded as `CLK` to the inner flip-flop, which simultaneously receives the data value `D1` from `I.D1`.
@@ -54,12 +56,12 @@ An event at `INIT` passes the parameter `Tmin` (minimum time) to the inner funct
 - The latched value is passed out via plug `Q.D1`, and at the same time, the output event `EO` of the inner flip-flop is triggered.
 - This `EO` is forwarded to `Q.E1`, so that the receiving adapter is informed of the update.
 
-
 ` 3. **Time Control:**
 
 The internal function block `E_D_FF_ANY_TMIN` ensures that after an output event `EO`, no further output events can be generated for the duration of `Tmin` – regardless of how quickly input events arrive. If the time between two `E1` inputs exceeds the `Tmin` threshold, the value is immediately adopted; otherwise, it is blocked until the minimum time has elapsed.
 
 ## Technical Features
+
 - **Adapter-Based Interface:**
 
 Instead of individual event/data ports, the function block uses adapters that transport events and data as an encapsulated unit. This increases reusability and reduces the number of external connections.
@@ -85,6 +87,7 @@ The function block does not have an explicit visible state machine; The state is
 - **State 1 (latched and active):** (No SFC or ECC is defined in the XML; the state logic is entirely contained within the internal function block.)
 
 ## Application Scenarios
+
 - **Signal Debouncing:**
 
 If a sensor or button generates multiple rapid pulses (bounce), the function block (FB) can prevent multiple values from being passed on in quick succession by setting `Tmin` to, for example, 20 ms.

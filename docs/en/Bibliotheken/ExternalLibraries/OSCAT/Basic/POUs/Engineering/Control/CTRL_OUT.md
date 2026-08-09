@@ -1,5 +1,6 @@
 ![CTRL_OUT](CTRL_OUT.svg)
 # CTRL_OUT
+
 Control Output with Limit and Manual Override
 CTRL_OUT adds to the CI input the value of OFFSET and returns the result
 to Y if MANUAL = FALSE. If MANUAL is TRUE at output Y the input value of

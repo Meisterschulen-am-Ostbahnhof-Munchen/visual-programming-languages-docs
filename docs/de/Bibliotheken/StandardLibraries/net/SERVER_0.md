@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der SERVER_0 Funktionsblock dient als Gegenstelle zu einem CLIENT_0 Block. Er ermöglicht die Einrichtung einer Server-Client-Verbindung ohne Austausch von Nutzdaten über Daten-Ein-/Ausgänge.
 
 ![SERVER_0](SERVER_0.svg)
@@ -10,22 +11,27 @@ Der SERVER_0 Funktionsblock dient als Gegenstelle zu einem CLIENT_0 Block. Er er
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **INIT** (Typ: Event) - Aktiviert den Server für eine Client-Verbindung (QI = TRUE) oder schließt den Server (QI = FALSE)
 - **RSP** (Typ: Event) - Sendet eine Antwort/Bestätigung an den Client
 
 ### **Ereignis-Ausgänge**
+
 - **INITO** (Typ: Event) - Signalisiert Bereitschaft für Client-Verbindung (QI = TRUE) oder geschlossenen Zustand (QI = FALSE)
 - **IND** (Typ: Event) - Zeigt an, dass eine Anfrage vom Client eingegangen ist
 
 ### **Daten-Eingänge**
+
 - **QI** (BOOL) - Qualifizierer für INIT-Operation
 - **ID** (WSTRING) - Identifikator für die Server-Instanz
 
 ### **Daten-Ausgänge**
+
 - **QO** (BOOL) - Qualifizierer für Statusausgabe
 - **STATUS** (WSTRING) - Statusinformationen
 
 ## Funktionsweise
+
 Der SERVER_0 Block verwaltet die Verbindung.
 
 1. **Initialisierung**: Aktivierung über INIT.
@@ -35,17 +41,20 @@ Der SERVER_0 Block verwaltet die Verbindung.
    Es werden dabei keine Nutzdaten (SD_x, RD_x) übertragen.
 
 ## Technische Besonderheiten
+
 - Keine Daten-Ein-/Ausgänge vorhanden
 - WSTRING-Typ für ID und STATUS
 - Generische Implementierung durch 'GEN_SERVER' Klassenattribut
 
 ## Zustandsübersicht
+
 - **Nicht initialisiert**: Server inaktiv
 - **Initialisiert**: Server bereit
 - **Indication (IND)**: Client hat angefragt
 - **Response (RSP)**: Server antwortet
 
 ## Anwendungsszenarien
+
 - Ereignis-Synchronisation
 - Signalisierung von Zuständen ohne Dateninhalt
 
@@ -61,4 +70,5 @@ Der SERVER_0 Block verwaltet die Verbindung.
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

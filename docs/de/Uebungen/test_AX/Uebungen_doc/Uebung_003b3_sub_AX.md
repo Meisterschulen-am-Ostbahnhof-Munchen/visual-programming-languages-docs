@@ -15,6 +15,7 @@ Diese Übung beschreibt eine Sub-Applikation (`SubAppType`), die eine generische
 In dieser Sub-Applikation werden spezifische Funktionsbausteine instanziiert und miteinander verknüpft, um die Signalweiterleitung zu realisieren.
 
 ### Sub-Bausteine: IXA
+
 - **Typ**: `Funk::io::DI::Funk_IXA`
 - **Verwendete interne FBs**:
     - **Bausteinname**: IXA
@@ -27,6 +28,7 @@ In dieser Sub-Applikation werden spezifische Funktionsbausteine instanziiert und
   Dieser Baustein repräsentiert die Eingangsseite der Adapterverbindung. Er nimmt die Konfiguration des Eingangs (`Input`) entgegen und stellt die Schnittstelle für das Eingangssignal bereit.
 
 ### Sub-Bausteine: QXA
+
 - **Typ**: `DataPanel::io::MI::DQ::DataPanel_MI_QXA`
 - **Verwendete interne FBs**:
     - **Bausteinname**: QXA

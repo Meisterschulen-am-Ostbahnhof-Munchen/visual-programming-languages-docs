@@ -1,5 +1,7 @@
 # Other German
+
 ## Articles and Portals
+
 * [Distributed Controllers according to IEC 61499 (Docplayer)](https://docplayer.org/71630572-Verteilte-steuerungen-nach-iec-61499.html)
 * [Presentation: IEC 61499 (SlidePlayer)](https://slideplayer.org/slide/879446/)
 * [Vyatkin: Talk PDF](http://vyatkin.org/uploads/talk.pdf)
@@ -21,4 +23,5 @@
 ---
 
 ## UniversalAutomation.org
+
 * [Official Website](https://universalautomation.org/)

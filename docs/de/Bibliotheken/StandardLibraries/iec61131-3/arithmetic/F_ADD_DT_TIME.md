@@ -7,21 +7,26 @@
 ![F_ADD_DT_TIME](F_ADD_DT_TIME.svg)
 
 ## Einführung
+
 Der **F_ADD_DT_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von Zeitwerten zu Datums-/Zeitangaben, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitberechnungen mit DATE_AND_TIME und TIME-Datentypen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (DATE_AND_TIME): Ausgangsdatum/-zeit
 - `IN2` (TIME): Zeitdauer für Addition
 
 ### **Daten-Ausgänge**
+
 - `OUT` (DATE_AND_TIME): Ergebnis der Addition
 
 ## Funktionsweise

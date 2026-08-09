@@ -1,8 +1,10 @@
 # AUDI_UDINT_NE
+
 ![AUDI_UDINT_NE](./AUDI_UDINT_NE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUDI_UDINT_NE** performs a not-equal comparison between a value (type UDINT) provided via an adapter and a second direct data input. It is part of the IEC 61131-3 comparison functions and encapsulates the comparison logic in an addressable component with event control. This block is particularly suitable for use in industrial control systems where values from different sources need to be checked for inequality.
 ## Interface Structure
 
@@ -56,18 +58,19 @@ Internally, the comparison is performed by the embedded function block `F_NE` (t
 The function block has **no** explicit state machine. Processing is event-driven:
 
 1. Event at `REQ` or `IN1.E1` → internally, `F_NE` is called.
-
 2. After the comparison is complete, the event `OUT.E1` is generated, and the result is output to `OUT.D1`.
 
 Between events, the function block remains passive and does not store any state information.
 
 ## Application Scenarios
+
 - **Limit Monitoring:** Checks whether a measured value (via adapter) deviates from a target value.
 - **Status Queries:** Determines whether two sensor values (e.g., rotational speeds or counter readings) differ.
 - **Error Detection:** Detects an unexpected input level by comparison with a reference value.
 - **Modular Control Logic:** Integration into larger function block networks where data is exchanged via adapters.
 
 ## Comparison with Similar Function Blocks
+
 - **`AUDI_UDINT_EQ` (Equal):** Performs an equal comparison. Logical inverse of the `NE` function block.
 - **`AUDI_INT_NE`, `AUDI_DINT_NE`:** Analog function blocks for the data types `INT` and `DINT`, respectively. The interface structure is identical; only the data path is adapted to the respective type.
 - **`F_NE` (direct comparison function block):** Offers the same comparison without adapter encapsulation. The `AUDI_UDINT_NE` adds the adapter inputs/outputs, thus simplifying the wiring in directed data flows.

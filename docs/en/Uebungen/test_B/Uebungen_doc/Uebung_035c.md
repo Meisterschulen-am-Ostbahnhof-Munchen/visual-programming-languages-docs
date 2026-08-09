@@ -1,10 +1,12 @@
 Here is the documentation for exercise **Exercise_035c** in the requested format.
 # Exercise_035c: Mirror Sequence V2 with Step Chain
+
 ![Uebung_035c_network](./Uebung_035c_network.svg)
 *(Insert image of the exercise here, if available)*
 
 * * * * * * * * * *
 ## Introduction
+
 Exercise **Exercise_035c** ("Mirror Sequence V2 with Step Chain") demonstrates the control of a sequential sequence (step chain) with four states. Both time-controlled and event-driven transitions are used. The current status of the step chain is visualized via digital outputs (LEDs), and the number of the active step is displayed on a numeric display.
 
 ## Function Blocks (FBs) Used
@@ -12,6 +14,7 @@ Exercise **Exercise_035c** ("Mirror Sequence V2 with Step Chain") demonstrates t
 This exercise uses various standard and logic blocks to implement the input and output as well as the sequence control.
 
 ### Main Components
+
 * **DigitalInput_CLK_I1 to I4** (`logiBUS::io::DI::logiBUS_IE`):
 * Used to read the button signals (Input_I1 to Input_I4).
 * Configured for the event `BUTTON_SINGLE_CLICK`.
@@ -49,24 +52,17 @@ This function block is the core of the logic control.
 The logic combines automatic time transitions with manual user intervention.
 
 1. **Starting the Sequence**:
-
 * Pressing **Button I1** triggers the event `START_S1`.
 * The step sequence jumps to **State 1**.
 * Output **Q1** is activated.
-
 2. **Automatic and Manual Transitions**:
-
 * **S1 -> S2**: Since no explicit event is wired for this transition, the change to **State 2** (Q2 on) occurs automatically after the time `DT_S1_S2` (2 seconds) has elapsed.
 * **S2 -> S3**: The transition to **State 3** (Q3 on) requires manual confirmation via **Button I2**, as this is connected to input `S2_S3`. The time `DT_S2_S3` likely serves as the minimum waiting time or timeout basis.
 * **S3 -> S4**: The transition to **State 4** (Q4 on) occurs automatically after `DT_S3_S4` (2 seconds) has elapsed, as no button event is connected.
 * **S4 -> Start**: To restart the sequence from State 4, **Button I3** must be pressed (input `S4_START`).
-
 3. **Visualization**:
-
 * In parallel with the LEDs, the current step number (`STATE_NR`) is sent via the converter to the block `Q_NumericValue` and displayed on the display (OutputNumber_N1).
-
 4. **Reset**:
-
 * The **button I4** is connected to the `RESET` input and resets the entire step sequence to its initial state (all outputs off) at any time.
 
 ## Summary

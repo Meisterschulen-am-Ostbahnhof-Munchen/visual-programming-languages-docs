@@ -17,6 +17,7 @@ Hierbei kommt ein Toggle-Flip-Flop (`E_T_FF`) zum Einsatz, welches seinen Zustan
 In dieser Sub-Applikation werden verschiedene Bausteine aus der `logiBUS` und der `iec61499` Standardbibliothek verwendet, um die Logik zu realisieren.
 
 ### Sub-Bausteine: DigitalInput_CLK_I1 & DigitalInput_CLK_I2
+
 Die Eingangsbausteine erfassen die Tasterbetätigung.
 
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
@@ -32,6 +33,7 @@ Die Eingangsbausteine erfassen die Tasterbetätigung.
 - **Funktionsweise**: Diese Bausteine überwachen die physischen Eingänge I1 und I2. Sie sind so konfiguriert, dass sie nur bei einem einfachen Klick (`BUTTON_SINGLE_CLICK`) ein Event am Ausgang `IND` erzeugen.
 
 ### Sub-Bausteine: E_MERGE_3
+
 Dient der Zusammenführung von Event-Strömen.
 
 - **Typ**: `iec61499::events::E_MERGE_3`
@@ -43,6 +45,7 @@ Dient der Zusammenführung von Event-Strömen.
 - **Funktionsweise**: Der Merge-Baustein fungiert als ODER-Glied für Events. Egal ob das Signal von Taster I1 oder Taster I2 kommt, das Event wird an den Ausgang `EO` durchgereicht.
 
 ### Sub-Bausteine: E_T_FF
+
 Das eigentliche Speicherelement der Schaltung.
 
 - **Typ**: `iec61499::events::E_T_FF`
@@ -54,6 +57,7 @@ Das eigentliche Speicherelement der Schaltung.
 - **Funktionsweise**: Das Toggle-Flip-Flop wechselt bei jedem eingehenden Event am `CLK`-Eingang seinen internen Zustand `Q` (von 0 auf 1 oder von 1 auf 0).
 
 ### Sub-Bausteine: DigitalOutput_Q1
+
 Stellt die Verbindung zur physischen Hardware her.
 
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`

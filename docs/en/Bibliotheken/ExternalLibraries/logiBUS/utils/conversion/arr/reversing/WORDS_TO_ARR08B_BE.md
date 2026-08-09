@@ -1,11 +1,14 @@
 # WORDS_TO_ARR08B_BE
+
 <br>
 ![WORDS_TO_ARR08B_BE](./WORDS_TO_ARR08B_BE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **WORDS_TO_ARR08B_BE** combines four 16-bit words (WORD) into an 8-byte array. The conversion is performed in **Big-Endian format** (Network Byte Order), where the most significant byte is stored first in the output array. This corresponds to the standard representation in network protocols such as Modbus TCP, Siemens S7 communication, or Ethernet headers.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Description |
@@ -34,9 +37,11 @@ The function block **WORDS_TO_ARR08B_BE** combines four 16-bit words (WORD) into
 | `OUT`| ARRAY[0..7] OF BYTE | 8-byte array in big-endian format |
 
 ### **Adapters**
+
 No adapters available.
 
 ## Functionality
+
 After receiving the event `REQ`, the values of the four inputs `IN_00` to `IN_03` are read. For each word, the **high byte** (BYTE 1) and then the **low byte** (BYTE 0) are written to the output array. The order in the array is:
 
 - `OUT[0]` = High byte of `IN_00`
@@ -51,14 +56,17 @@ After receiving the event `REQ`, the values of the four inputs `IN_00` to `IN_03
 The event `CNF` is then triggered.
 
 ## Technical Features
+
 - **Big-Endian Format** (Network Byte Order) – the bytes are stored in order, with the most significant byte first. This is required for many industrial communication protocols and network stacks.
 - The function block operates **event-driven**: The conversion is only performed when a `REQ` event occurs, so no cyclical calculation takes place.
 - The internal implementation uses **Structured Text (ST)** with direct bit element access (`%B1` and `%B0`), ensuring efficient and deterministic conversion.
 
 ## State Overview
+
 The function block has no explicit internal state (stateless). It immediately performs the calculation upon each `REQ` and signals completion with `CNF`. No blocking is expected during the calculation.
 
 ## Application Scenarios
+
 - **Network Communication**: Preparation of data for protocols that expect big-endian, e.g., Modbus TCP, Siemens S7 over Industrial Ethernet, or raw Ethernet frames.
 - **Data Preprocessing**: Conversion of sensor values or control commands stored as WORD registers into a byte-oriented format.
 - **Gateway Functions**: Translation between little-endian controllers and big-endian networks.

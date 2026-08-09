@@ -1,8 +1,11 @@
 # DualCAN deca output ESP32S3
+
 ## CAN BUS
+
 CAN TX 4
 CAN RX 5
 ## 🔌 OK
+
 ### Analogue inputs
 
 | Entrance: | PIN (ESP32S3) |
@@ -11,19 +14,11 @@ CAN RX 5
 | AnalogInput_I2 |  4 |
 | AnalogInput_I3 |  6 |
 
-```
 ```c
 ADC1_CHANNEL_3,     /*!< ADC1 channel 3 is GPIO4  */
 ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO5  */
 ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO6  */
-
-
-Voltage divider is located in the controller:
-
-47/13 --> all other inputs as well as the CAN2 DI inputs
-
-10/10 --> Inputs I1/I2 - Ideal for 5V signals
-
+```
 ### Digital Inputs
 
 | Input: | PIN (ESP32S3) |
@@ -58,6 +53,7 @@ These inputs have a voltage divider in the controller: 47/13 --> and a Schmitt t
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Loaded & Unloaded Voltage Divider on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/spannungsteiler/)
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 

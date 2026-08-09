@@ -17,6 +17,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine kombiniert, um d
 ### Interne Bausteine
 
 #### `DigitalInput_CLK_I1`, `DigitalInput_CLK_I2`, `DigitalInput_CLK_I3`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Funktion**: Stellen die drei notwendigen Eingangssignale bereit, die synchronisiert werden sollen.
 - **Konfiguration**:
@@ -25,6 +26,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine kombiniert, um d
     - `QI` = `TRUE`
 
 #### `DigitalInput_R_I4`
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IE`
 - **Funktion**: Dient als zentraler Reset-Eingang für die Schaltung.
 - **Konfiguration**:
@@ -33,6 +35,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine kombiniert, um d
     - `QI` = `TRUE`
 
 #### `E_REND_3`
+
 - **Typ**: `iec61499::events::E_REND_3`
 - **Funktion**: Ein "Rendezvous"-Baustein für drei Ereignisse. Er wartet, bis an allen drei Eingängen (`EI1`, `EI2`, `EI3`) jeweils ein Ereignis eingetreten ist. Erst wenn alle drei Ereignisse registriert wurden (die Reihenfolge ist dabei irrelevant), feuert der Ausgang `EO`.
 - **Anschlüsse**:
@@ -40,6 +43,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine kombiniert, um d
     - Eingang `R` verbunden mit Reset-Eingang I4.
 
 #### `E_T_FF_SR`
+
 - **Typ**: `iec61499::events::E_T_FF_SR`
 - **Funktion**: Ein Toggle-Flip-Flop (T-FlipFlop) mit Set- und Reset-Eingängen. Bei jedem Ereignis am `CLK`-Eingang wechselt der Status des Ausgangs `Q`.
 - **Anschlüsse**:
@@ -47,6 +51,7 @@ In dieser SubApplikation werden verschiedene Funktionsbausteine kombiniert, um d
     - `R` (Reset) verbunden mit dem Reset-Eingang I4.
 
 #### `DigitalOutput_Q1`
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Funktion**: Steuert den physischen Ausgang basierend auf dem Status des Flip-Flops.
 - **Konfiguration**:

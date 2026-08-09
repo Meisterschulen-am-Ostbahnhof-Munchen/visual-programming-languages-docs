@@ -1,5 +1,7 @@
 # Radio
+
 ## 🎧 Podcast
+
 * [DIN EN 61499-1 Demystified: Function Blocks, Object Orientation and Distributed Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Entmystifiziert-Funktionsbausteine--Objektorientierung-und-verteilte-Systeme-e37229b)
 * [DIN EN 61499-1: Building Blocks for Industry 4.0 – How Function Blocks Revolutionize Automation ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Baukltze-fr-die-Industrie-4-0--So-revolutionieren-Funktionsbausteine-die-Automatisierung-e3681j7)
 * [DIN EN 61499-1: Function Blocks and the Paradigm Shift in Industrial Software Development ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Funktionsbausteine-und-der-Paradigmenwechsel-in-der-industriellen-Softwareentwicklung-e36clps)

@@ -1,11 +1,14 @@
 # Exercise_201_Interlock_BOOL: Interlock basic exercise (BOOL)
+
 ![Uebung_201_Interlock_BOOL_network](./Uebung_201_Interlock_BOOL_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise teaches the basic functionality of an **interlock circuit** (interlock) using Boolean signals. Four digital inputs (`I1` to `I4`) control four digital outputs (`Q1` to `Q4`) via special interlock blocks. The interlock blocks are arranged in a chain, so that a subsequent output can only be enabled once the previous interlock block has been activated. This allows for the implementation of a safe, sequential control system.
 
 ## Function Blocks (FBs) Used
+
 - **DigitalInput_I1 … DigitalInput_I4**
 
 Type: `logiBUS::io::DI::logiBUS_IX`
@@ -51,6 +54,7 @@ This chaining ensures that an interlock block only provides a valid output if th
 After internal processing, each interlock block outputs an acknowledgment event (`CNF`) that controls the corresponding digital output (e.g., `DigitalOutput_Q1.REQ`). Simultaneously, the data value (`OUT`) is transmitted to the output.
 
 ## Learning Objectives and Notes
+
 - **Learning Objective:** Understanding interlock logic and cascaded enable conditions.
 - **Difficulty Level:** Basic.
 - **Prerequisites:** Basic knowledge of the 4diac IDE and working with logiBUS blocks.
@@ -63,4 +67,5 @@ The exercise *Exercise_201_Interlock_BOOL* demonstrates the construction of a si
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

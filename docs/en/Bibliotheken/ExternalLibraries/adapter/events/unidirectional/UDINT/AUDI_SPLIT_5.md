@@ -1,21 +1,27 @@
 # AUDI_SPLIT_5
+
 ![AUDI_SPLIT_5](./AUDI_SPLIT_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUDI_SPLIT_5** is used to distribute a single incoming AUDI signal to five identical AUDI outputs. It is designed as a generic adapter module and allows for flexible further processing of the signal along multiple paths.
 ## Interface Structure
 
 ### **Event Inputs**
+
 None available.
 
 ### **Event Outputs**
+
 None available.
 
 ### **Data Inputs**
+
 None available.
 
 ### **Data Outputs**
+
 None available.
 
 ### **Adapter**
@@ -34,6 +40,7 @@ None available.
 This function block forwards the AUDI signal present at socket `IN` unchanged and simultaneously to all five plugs `OUT1` to `OUT5`. No signal processing, conversion, or buffering takes place – distribution occurs purely at the adapter level as soon as a connection to the outputs is established.
 
 ## Technical Features
+
 - **Generic Function Block**: The function block is implemented as a generic type (`GEN_AUDI_SPLIT`). It can be instantiated for various data types via appropriate runtime environment mechanisms, as long as these data types conform to the unidirectional AUDI adapter protocol.
 - **No State Logic**: The function block contains no event or data processing and no internal state machine.
 - **Simple and High-Performance Signal Distribution**: Due to its pure adapter structure, it is particularly suitable for scenarios where a signal needs to be duplicated without latency.
@@ -43,6 +50,7 @@ This function block forwards the AUDI signal present at socket `IN` unchanged an
 The function block does not have an explicit state machine. Its behavior is deterministic: As long as the function block is in operation, every signal arriving at `IN` is immediately passed on to all outputs.
 
 ## Application Scenarios
+
 - **Distributing control signals** in industrial automation, e.g., a start/stop command that is intended to reach several identical modules.
 - **Duplicating a measured value** for parallel evaluations or visualizations.
 - **Establishing redundancy paths** by using the same signal multiple times.

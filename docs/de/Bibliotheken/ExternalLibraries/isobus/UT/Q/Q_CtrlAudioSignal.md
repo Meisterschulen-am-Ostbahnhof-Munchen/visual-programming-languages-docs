@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuerung von Audiogeräten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.10) Spezifikation für landwirtschaftliche Steuersysteme.
 
 ![Q_CtrlAudioSignal](Q_CtrlAudioSignal.svg)
@@ -12,20 +13,24 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 - `REQ`: Audiosteuerungs-Anforderung (mit Signalparametern)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Steuerungsbestätigung (mit Ergebnisdaten)
 
 ### **Daten-Eingänge**
+
 - `u8NumOfRepit` (USINT): Wiederholungen (1-255)
 - `u16Frequency` (UINT): Frequenz in Hz
 - `u16OnTimeMs` (UINT): Einschaltdauer in ms
 - `u16OffTimeMs` (UINT): Ausschaltdauer in ms
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldNumOfRepit` (USINT): Vorherige Wiederholungen
 - `u16OldFrequency` (UINT): Vorherige Frequenz

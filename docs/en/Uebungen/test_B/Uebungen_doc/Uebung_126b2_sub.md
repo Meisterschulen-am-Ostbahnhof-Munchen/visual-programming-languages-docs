@@ -1,8 +1,10 @@
 # Exercise_126b2_sub: Plotting a Sine Wave Function on PCAN Explorer
+
 ![Uebung_126b2_sub_network](./Uebung_126b2_sub_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates how to generate a sine wave function using 4diac and CAN communication and send it to a PCAN Explorer via the CAN bus. The generated sine wave value is converted into a byte array, packaged into a CAN message, and sent via a callback mechanism. The goal is to display the sinusoidal output on the PCAN Explorer.
 ## Function Blocks Used
 
@@ -57,15 +59,10 @@ Sends the CAN message to the PCAN Explorer via the adapter `PLUG1`.
 The flow is cyclical and controlled by event chaining:
 
 1. **Start**: The block `CallbackFB` sends a `REQ` event to `GEN_SIN`.
-
 2. **Sine Generation**: `GEN_SIN` calculates the current sine value and sends `CNF` to `F_REAL_TO_DWORD`.
-
 3. **Type Conversion**: `F_REAL_TO_DWORD` converts the REAL value to a DWORD and sends `CNF` to `BYTES_TO_ARR08B`.
-
 4. **Byte Conversion**: `BYTES_TO_ARR08B` splits the DWORD into 8 bytes (inverting big-endian) and sends `CNF` to `STRUCT_MUX`.
-
 5. **Structure Construction**: `STRUCT_MUX` packs the byte array into a `CAN_MSG` structure and sends `CNF` to `CallbackFB`.
-
 6. **Send**: `CallbackFB` sends the CAN message via the adapter `PLUG1` and then triggers `GEN_SIN` again (via `REQ`), thus restarting the cycle.
 
 The data connections transmit the corresponding values:
@@ -93,6 +90,7 @@ This exercise implements cyclic sine wave generation and sends the values to a P
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

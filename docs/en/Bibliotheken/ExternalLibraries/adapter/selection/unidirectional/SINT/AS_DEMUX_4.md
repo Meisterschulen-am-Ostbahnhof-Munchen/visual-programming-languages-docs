@@ -1,8 +1,10 @@
 # AS_DEMUX_4
+
 ![AS_DEMUX_4](./AS_DEMUX_4.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AS_DEMUX_4** serves as a demultiplexer for a unidirectional adapter of type `AS`. It routes the adapter input at a single input to one of four possible outputs. The target output is selected via a numeric index, which is specified when an event is requested. The block is implemented as a generic type (`GEN_AS_DEMUX`) and is suitable for use in modular control architectures where data flows need to be switched dynamically.
 ## Interface Structure
 
@@ -58,6 +60,7 @@ The following applies:
 `` The link between the event and data paths is ensured via the ``With`` attribute of ``REQ``: ``K`` is evaluated together with the event.
 
 ## Technical Features
+
 - **Generic Design**: The function block is defined as a generic type (``GEN_AS_DEMUX``). This allows it to be reused for any adapter instance of the unidirectional ``AS`` type without requiring any modifications to the source code.
 - **Index Range**: If a value outside the valid range (1 … 4) is passed for ``K``, the behavior is undefined. The function block does not perform a range check. The user is responsible for validating the index.
 - - **Event-driven operation**: Switching occurs exclusively via the `REQ` event. A static index change without an event has no effect.
@@ -73,11 +76,13 @@ The function block does not have an explicit state machine in the XML model. Its
 **Confirming** | After the switching, `CNF` is sent, and the function block returns to standby mode. |
 
 ## Application Scenarios
+
 - **Tool Changers in Manufacturing**: A central sensor or actuator adapter provides data that must be switched to one of four machine adapters, depending on the current machining station.
 - **Modular Control Architectures**: A higher-level function block selects the subsystem to communicate with from several concurrently configured subsystems.
 - **Test and Simulation Environments**: Switching between the real process adapter and a simulated backup adapter, e.g., for commissioning or troubleshooting.
 
 ## Comparison with Similar Function Blocks
+
 - **`AS_MUX_4`** (Multiplexer): Performs the reverse operation – multiple inputs are switched to a single output. The AS_DEMUX_4 complements this function block to create a complete switching system.
 - **`SELECT`-FB** (IEC 61499 Standard): Selects one of two data paths based on a Boolean input. The AS_DEMUX_4 operates at the adapter level and offers four paths instead of two, but is not limited to simple data types.
 - **Generic Demultiplexers**: Other implementations often use single data-event pairs. The AS_DEMUX_4 uses adapters, enabling the switching of complex interfaces (events + data) in one operation.

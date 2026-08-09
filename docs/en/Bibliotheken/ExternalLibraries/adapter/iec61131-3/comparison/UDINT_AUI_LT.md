@@ -1,10 +1,13 @@
 # UDINT_AUI_LT
+
 ![UDINT_AUI_LT](./UDINT_AUI_LT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUI_LT** performs the "less than" comparison. It checks whether the value at input **IN1** is less than the value at adapter input **IN2**. The result (BOOL) is provided via the output adapter **OUT**. The use of IEC 61131-3 adapters enables flexible and modular integration with the environment.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -33,6 +36,7 @@ The function block **UDINT_AUI_LT** performs the "less than" comparison. It chec
 | Output (Plug) | **OUT** | `adapter::types::unidirectional::AX` | Result (TRUE if IN1 < IN2, otherwise FALSE) – provided via event E1 and data D1 |
 
 ## Functionality
+
 The function block is built as an internal network from the base function block **F_LT** (type `iec61131::comparison::F_LT`).
 
 - An event at **REQ** or at the adapter input **IN2.E1** triggers the internal F_LT via its event input **REQ**.
@@ -42,11 +46,13 @@ The function block is built as an internal network from the base function block 
 `` - After a successful comparison, the event **OUT.E1** is activated.
 
 ## Technical Features
+
 - The function block uses the IEC 61131-3 adapters **AUI** (unidirectional input) and **AX** (unidirectional output). This allows the function block to be easily integrated into existing adapter network-based architectures.
 - The data type **ANY_ELEMENTARY** allows the processing of all elementary types (BOOL, INT, REAL, …) – the actual type is determined at runtime.
 - There is no separate state management; the logic is fully implemented by the internal **F_LT**.
 
 ## State Overview
+
 The function block does not have its own state machine. Execution is purely event-driven:
 
 - **Waiting for Event**: No comparison is active.
@@ -54,6 +60,7 @@ The function block does not have its own state machine. Execution is purely even
 - **Output**: After the comparison is complete, **OUT.E1** is triggered and the result is provided to **OUT.D1**.
 
 ## Application Scenarios
+
 - **Limit Monitoring**: Checking whether a measured value (e.g., temperature, pressure) is below a setpoint.
 - **Control Logic**: Conditions such as "If sensor value < threshold, then switch on actuator."
 - **Modular Automation**: Integration into existing adapter structures without additional conversion blocks.

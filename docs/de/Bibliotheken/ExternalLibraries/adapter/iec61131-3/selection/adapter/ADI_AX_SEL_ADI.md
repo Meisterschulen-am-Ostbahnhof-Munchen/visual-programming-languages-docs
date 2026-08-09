@@ -18,24 +18,30 @@ Der Baustein ist als zusammengesetzter Funktionsbaustein (Composite FB) realisie
 Die Schnittstelle dieses Funktionsbausteins ist vollständig über Adapter realisiert. Es gibt keine direkten elementaren Daten- oder Ereigniseingänge außerhalb der Adapterstrukturen.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (Ereignisse werden über die Adapter-Schnittstellen empfangen).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (Ereignisse werden über die Adapter-Schnittstellen gesendet).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Plugs (Stecker - Ausgänge)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::ADI`): 
   Der ausgewählte Ausgang (Selected Output). Sendet das ausgewählte Datensignal (`D1`) und das zugehörige Aktualisierungsereignis (`E1`).
 
 #### **Sockets (Buchsen - Eingänge)**
+
 * **IN0** (Typ: `adapter::types::unidirectional::ADI`): 
   Erster auswählbarer Eingang. Dieser Wert wird zum Ausgang durchgeschaltet, wenn das Auswahlsignal `G` auf `FALSE` (0) steht.
 * **IN1** (Typ: `adapter::types::unidirectional::ADI`): 

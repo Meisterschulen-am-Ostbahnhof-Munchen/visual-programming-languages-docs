@@ -10,6 +10,7 @@ Der Funktionsblock **AI_FB_CTD** ist ein nach IEC 61499-2 standardisierter Abwä
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der FB besitzt keine direkten, separaten Ereignis-Eingänge. Die erforderlichen Ereignisse werden über die **Socket-Adapter** (CD, LD, PV) bereitgestellt – jedes dieser Module führt ein Ereignis (E1) mit sich, das die Zählerlogik triggert.
 
 | Socket | Ereignis (im Adapter) | Beschreibung                 |
@@ -27,6 +28,7 @@ Der FB besitzt keine direkten, separaten Ereignis-Eingänge. Die erforderlichen 
 Zusätzlich werden die Ausgangsereignisse auch über die **Plug-Adapter** Q und CV (jeweils E1) weitergegeben.
 
 ### **Daten-Eingänge**
+
 Es gibt keine direkten Daten-Eingänge. Alle Datenwerte werden über die Socket-Adapter übertragen:
 
 - **CD** liefert den Abwärtszählimpuls (D1) – logischer Wert, der den Zähler dekrementiert.
@@ -34,6 +36,7 @@ Es gibt keine direkten Daten-Eingänge. Alle Datenwerte werden über die Socket-
 - **PV** liefert den Vorgabewert (D1) – Integer, der als neuer Zählerstand geladen wird.
 
 ### **Daten-Ausgänge**
+
 Es gibt keine direkten Daten-Ausgänge. Die Ausgangsdaten werden über die Plug-Adapter bereitgestellt:
 
 - **Q** liefert den Zählerstatus (D1) – BOOL, TRUE wenn Zählerstand ≤ 0.
@@ -112,4 +115,5 @@ Der `AI_FB_CTD` ist ein flexibler, adapterbasierter Abwärtszähler für Integer
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

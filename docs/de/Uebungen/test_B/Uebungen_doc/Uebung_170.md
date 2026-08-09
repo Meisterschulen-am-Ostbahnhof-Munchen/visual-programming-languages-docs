@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_170` basierend auf den bereit
 * * * * * * * * * *
 
 ## Einleitung
+
 Die `Uebung_170` ist eine Sub-Applikation, die sich mit der Handhabung von Zeitüberschreitungen (Timeouts) befasst. Sie dient als Übungsumgebung für den Funktionsbaustein `E_RTimeOut` (Event Resettable TimeOut), um dessen Verhalten innerhalb eines IEC 61499 Netzwerks zu testen oder zu demonstrieren.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -32,9 +33,11 @@ Aktuell besteht das Netzwerk dieser Übung lediglich aus der Instanz `ARTimeOut_
     *   Der Benutzer kann die Eingangsereignisse des Bausteins manuell triggern, um zu beobachten, wann und wie das Timeout-Ereignis ausgelöst wird.
 
 ## Zusammenfassung
+
 Die `Uebung_170` stellt eine minimale Konfiguration bereit, die ausschließlich den Funktionsbaustein `E_RTimeOut` enthält. Sie dient als grundlegende Vorlage oder Testumgebung, um die Logik von rücksetzbaren Timeouts in der 4diac-IDE zu erlernen oder zu überprüfen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

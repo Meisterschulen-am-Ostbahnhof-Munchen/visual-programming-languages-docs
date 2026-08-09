@@ -1,8 +1,10 @@
 # UDINT_AUDI_LT
+
 ![UDINT_AUDI_LT](./UDINT_AUDI_LT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUDI_LT** performs a numerical less-than comparison according to IEC 61131-3. It compares two input values and returns the result (true/false) via an output adapter. The internal processes are implemented as a sub-application using a standardized comparison block (F_LT).
 ## Interface Structure
 
@@ -45,19 +47,23 @@ The result is output as a logical value via adapter **OUT** (type `AX`).
 | IN2 | AUDI | Socket | Input adapter for the second comparison value |
 
 ## Functionality
+
 The block is activated when an event occurs at input **REQ** or socket input **IN2.E1**. The values from **IN1** (direct data input) and **IN2** (provided via the socket adapter) are then fed to the internal function block **F_LT** (IEC 61131-3 comparison block "<“) übergeben. Das Ergebnis der Operation wird über den Adapter **OUT** als Datenwert (D1) und gleichzeitig ein Bestätigungsereignis (E1) ausgegeben.
 
 Die Verwendung von Adaptern ermöglicht eine lose Kopplung der Eingabe- und Ausgabedaten.
 
 ## Technische Besonderheiten
+
 - **Datentypen** – IN1 akzeptiert jeden elementaren Typ (ANY_ELEMENTARY); IN2 ist durch den verwendeten Adaptertyp (`AUDI`) festgelegt.
 - **Adapter-Schnittstelle** – Die Ereignis- und Datenausgabe erfolgt nicht über klassische Ein-/Ausgänge, sondern über einen Plug-Adapter. Das ermöglicht eine flexible Anbindung an nachfolgende Bausteine.
 - **Interne Realisierung** – Der Vergleich wird nicht direkt im Baustein selbst berechnet, sondern delegiert an den in IEC 61131-3 definierten Funktionsbaustein `F_LT`. Somit ist die Implementierung konsistent zur Norm.
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keine explizite Zustandsmaschine. Die Verarbeitung erfolgt ereignisgesteuert – nach jedem Eingangsereignis wird der Vergleich einmal ausgeführt und das Ergebnis unverzögert ausgegeben. Es werden keine internen Zustände gehalten.
 
 ## Anwendungsszenarien
+
 - **Schwellwertüberwachung** – Prüfen, ob ein Messwert (IN1) unter einem Grenzwert (IN2) liegt.
 - **Sicherheitslogik** – Erkennen von Unterläufen oder Bereichsunterschreitungen.
 - **Steuerungssequenzen** – Aktivieren eines nachfolgenden Prozessschrittes nur wenn eine Bedingung `IN1 < IN2` erfüllt ist.
@@ -75,4 +81,5 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Die Verarbeitung erfolgt 
 Unlike direct comparison blocks such as `F_LT`, this block offers extended coupling via adapters, simplifying integration into modular automation architectures.
 
 ## Conclusion
+
 The function block **UDINT_AUDI_LT** is an IEC 61131-3 compliant implementation of a less-than comparison. The use of adapters for the second input and the output enables flexible integration into applications with hierarchical or plug-and-play interfaces. is particularly suitable for control tasks where comparison results need to be further processed in an event-driven manner.

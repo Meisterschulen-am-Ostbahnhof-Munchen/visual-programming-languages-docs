@@ -1,8 +1,10 @@
 # UDINT_AUI_LE
+
 ![UDINT_AUI_LE](./UDINT_AUI_LE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **UDINT_AUI_LE** performs a less-than-equal-to comparison of two values. It is classified as a standard comparison function according to IEC 61131-3 and is specifically designed for use with adapter interfaces. The block encapsulates an internal `F_LE` comparison block and provides its functionality via a unidirectional input adapter (socket) and a unidirectional output adapter (plug).
 ## Interface Structure
 
@@ -40,6 +42,7 @@ The function block performs a comparison `IN1 <= IN2`. The comparison is trigger
 The logic corresponds to an OR operation of the two trigger sources – both the explicit call via `REQ` and the implicit update of the input adapter trigger the comparison. This enables flexible control of the comparison process.
 
 ## Technical Features
+
 - **Adapter-based interface**: Instead of direct input/output variables, adapters (Socket `IN2`, Plug `OUT`) are used. This makes the function block particularly suitable for use in modular and reusable components.
 - **Dual triggering**: The comparison is triggered by both the `REQ` event and the input adapter event. This prevents data loss and simplifies connection to continuously updated data sources.
 - **ANY_ELEMENTARY for IN1**: The first input accepts any elementary data type (e.g., INT, REAL, UDINT), making the function block universally applicable.
@@ -50,14 +53,12 @@ The logic corresponds to an OR operation of the two trigger sources – both the
 The function block (FB) does not have an explicit state machine; its behavior is purely functional:
 
 1. **Idle**: Waiting for a trigger signal (either `REQ` or `IN2.E1`).
-
 2. **Comparison**: The internal block `F_LE` is executed as soon as a trigger is received.
-
 3. **Output**: The result (`True` if `IN1 <= IN2`, otherwise `False`) is set to `OUT.D1`, and the event `OUT.E1` is triggered.
-
 4. Return to **Idle**.
 
 ## Application Scenarios
+
 - **Limit Value Monitoring**: The current measured value is entered via `IN1` (e.g., as `REAL`), and the limit value is entered via the adapter `IN2` from a higher-level controller. The output signal `OUT.D1` indicates whether the limit value has been reached or fallen below.
 - **Comparison in Modular Systems**: In a distributed automation application, different function block types can communicate via adapters. This block serves as a standardized comparison component with a uniform interface.
 - **Data-Driven Logic**: Automatic triggering via `IN2.E1` enables reactive execution as soon as the second comparison value changes – without cyclic polling.

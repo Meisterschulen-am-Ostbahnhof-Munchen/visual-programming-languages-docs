@@ -4,12 +4,15 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Adapter-Version. Der Zähler verwendet den Typ `ALI_FB_CTU` und kann auf einen vorgegebenen Preset-Wert (hier 5) voreingestellt werden. Der aktuelle Zählerstand wird über eine physikalische Terminalausgabe (`Q_NumericValue_PHYSA_LREAL`) auf einem Ausgabekanal ausgegeben. Zusätzlich wird ein digitaler Ausgang (`Output_Q1`) gesetzt, sobald der Zählwert den Preset-Wert erreicht oder überschreitet. Die Eingänge für das Zählsignal (CU) und den Reset (R) werden von digitalen Eingängen der logiBUS-Plattform gespeist. Ein Kommentar weist darauf hin, dass negative Zählerstände möglich sind und empfiehlt ggf. den Einbau eines AX_D_FF zur Reduzierung von Ereignissen.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 ### Sub-Bausteine:
 
 #### **ALI_FB_CTU**
+
 - **Typ**: `adapter::iec61131::counters::ALI_FB_CTU`
 - **Parameter**: Keine
 - **Ereignis-Eingänge/-Ausgänge**: Keine direkten Event-Verbindungen; Ereignisse werden über die Adapter-Ports `CU`, `R`, `Q`, `CV` transportiert.
@@ -19,6 +22,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Der Baustein ist ein Vorwärtszähler für LINT-Werte. Bei jedem steigenden Flanke am `CU`-Eingang wird der interne Zähler um 1 erhöht. Ein Signal am `R`-Eingang setzt den Zähler auf 0 zurück. Der Ausgang `Q` wird TRUE, sobald der aktuelle Zählerstand mindestens den Wert von `PV` erreicht. Der aktuelle Zählerstand ist am Ausgang `CV` verfügbar.
 
 #### **ALI_LINT_TO_LI**
+
 - **Typ**: `adapter::conversion::unidirectional::ALI_LINT_TO_LI`
 - **Parameter**:
     - `OUT` = `LINT#5` (konstanter Preset-Wert)
@@ -29,6 +33,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Dieser Baustein konvertiert einen konstanten LINT-Wert in das ALI-Format, das der Zähler als Preset-Eingang erwartet. Die Ausgabe wird bei einem Ereignis am `REQ`-Eingang aktualisiert (hier einmalig bei Initialisierung).
 
 #### **Input_CU**
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
     - `QI` = `TRUE` (Qualifier, immer aktiv)
@@ -39,6 +44,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Liest den Zustand des digitalen Eingangs `Input_I1` und stellt ihn als Adapter-Signal bereit.
 
 #### **Input_R**
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
     - `QI` = `TRUE`
@@ -50,6 +56,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Liest den Zustand des digitalen Eingangs `Input_I2` und stellt ihn als Adapter-Signal für den Zähler-Reset bereit. Der `INITO`-Ereignisausgang wird für die einmalige Initialisierung des Preset-Wertes genutzt.
 
 #### **Output_Q1**
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
     - `QI` = `TRUE`
@@ -59,6 +66,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Setzt den digitalen Ausgang `Output_Q1` auf den Wert des Zählerausgangs `Q`.
 
 #### **ALI_TO_ALR**
+
 - **Typ**: `adapter::conversion::unidirectional::ALI_TO_ALR`
 - **Parameter**: Keine
 - **Daten-Eingänge/-Ausgänge**:
@@ -67,6 +75,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Wandelt das ALI-Signal (LINT) in ein ALR-Signal (LREAL) um, das für die physikalische Ausgabe benötigt wird.
 
 #### **Q_NumericValue_PHYSA_LREAL**
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Parameter**:
     - `stObj` = `OutputNumber_N3` (Referenz auf das Terminalausgabeobjekt)
@@ -75,6 +84,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - **Funktionsweise**: Gibt den übergebenen LREAL-Wert als numerischen Wert auf der physikalischen Terminalausgabe `OutputNumber_N3` aus.
 
 ## Programmablauf und Verbindungen
+
 Die Übung realisiert einen vorwärtszählenden Zähler mit Terminalausgabe. Die Verbindungen sind wie folgt aufgebaut:
 
 1. **Initialisierung**: Beim Start der SPS wird das INITO-Ereignis von `Input_R` ausgelöst. Dieses triggert `ALI_LINT_TO_LI` und setzt den Preset-Wert des Zählers auf `LINT#5`. Der Zähler ist damit für den Zielwert 5 konfiguriert.
@@ -94,9 +104,11 @@ Die Übung realisiert einen vorwärtszählenden Zähler mit Terminalausgabe. Die
 **Benötigte Vorkenntnisse**: Umgang mit Funktionsbausteinen, Adapterverbindungen und Ereignissteuerung in 4diac.
 
 ## Zusammenfassung
+
 Die Übung `Uebung_212b_ALR` demonstriert einen vollständig konfigurierten Vorwärtszähler mit festem Preset-Wert und physikalischer Ausgabe. Sie kombiniert digitale Ein-/Ausgänge, einen Zählbaustein, Konvertierungsbausteine und eine Terminalausgabe zu einem funktionsfähigen Automatisierungsbeispiel. Die Kommentare geben praktische Hinweise zur Optimierung (Ereignisreduzierung) und weisen auf mögliche Randbedingungen (negative Werte) hin.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der **ILOCK_T_FF** ist ein zusammengesetzter Funktionsblock (Composite FB), der einen sperrbaren Toggle-Flipflop (T-Flipflop) realisiert. Er erweitert ein einfaches T-Flipflop um eine bidirektionale Interlock-Schnittstelle, die das Verketten mehrerer Bausteine zu einer Verriegelungskette erlaubt. Der Baustein eignet sich vor allem für sicherheitsgerichtete Steuerungen, bei denen einmal geschaltete Zustände blockiert und an nachfolgende Glieder weitergegeben werden müssen.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Beschreibung |
@@ -20,6 +22,7 @@ Der **ILOCK_T_FF** ist ein zusammengesetzter Funktionsblock (Composite FB), der 
 | EO   | Ereignis | Wird ausgelöst, sobald der interne Set‑/Reset‑Latch seinen Zustand geändert hat. |
 
 ### **Daten-Eingänge**
+
 Keine Dateneingänge (die Steuerung erfolgt rein über Ereignisse und die Adapter).
 
 ### **Daten-Ausgänge**
@@ -36,6 +39,7 @@ Keine Dateneingänge (die Steuerung erfolgt rein über Ereignisse und die Adapte
 | ILOCK_OUT| `adapter::types::bidirectional::AE2` | Stecker (Plug)  | Sendet und empfängt Lock‑Signale von bzw. an nachgeschaltete Bausteine. |
 
 ## Funktionsweise
+
 Der Baustein besteht intern aus einem **E_SWITCH** (Ereignisverzweiger) und einem **E_SR** (Set‑Reset‑Latch):
 
 1. **Normalbetrieb (kein Lock)**  
@@ -59,11 +63,13 @@ Der Baustein besteht intern aus einem **E_SWITCH** (Ereignisverzweiger) und eine
    - Sobald ein Lock aktiv wird, erzwingt er ein **Q = FALSE** und blockiert weitere Toggle‑Versuche, bis der Lock wieder aufgehoben wird.
 
 ## Technische Besonderheiten
+
 - **Bidirektionale Lock‑Propagation**: Der Baustein kann Lock‑Signale sowohl aufnehmen als auch weitergeben, sodass eine Daisy‑Chain mehrerer ILOCK_T_FF möglich ist.
 - **Rückkopplung des eigenen Zustands**: Das Ausgangssignal **Q** wird intern als Steuersignal für den **E_SWITCH** verwendet und bestimmt die Toggle‑Richtung.
 - **Kein eigenes ECC**: Die gesamte Logik wird durch die beiden enthaltenen Basisbausteine (E_SR, E_SWITCH) abgebildet.
 
 ## Zustandsübersicht
+
 Da der Baustein kein eigenes Zustandsdiagramm besitzt, ergeben sich die Zustände aus dem internen **E_SR**:
 
 | Zustand **Q** | Bedeutung im Normalbetrieb | Bedeutung bei aktivem Lock |
@@ -74,6 +80,7 @@ Da der Baustein kein eigenes Zustandsdiagramm besitzt, ergeben sich die Zuständ
 Ein aktiver Lock liegt vor, sobald eines der Adapter‑Ereignisse (ILOCK_IN.EO1 oder ILOCK_OUT.EI1) empfangen wurde. Der Lock wird solange gehalten, bis kein Lock‑Ereignis mehr anliegt (die genaue Auflösung hängt von der externen Signalsteuerung ab).
 
 ## Anwendungsszenarien
+
 - **Sicherheitsverriegelungen in der Landtechnik** (z.B. Steuerung von Anbaugeräten): Ein einmal aktivierter Sperrzustand blockiert alle folgenden Schaltvorgänge und wird über die Kette an alle weiteren Komponenten weitergegeben.
 - **Verkettete Not‑Aus‑Systeme**: Erlaubt das Fortpflanzen eines Stopp‑Signals entlang mehrerer Stationen, während jede Station selbst den Zustand verwaltet.
 - **Protokolladaption für Interlock‑Signale**: Der Baustein kann als universelles Glied in einer Verriegelungskette eingesetzt werden, bei der der Ausgang Q einen Schaltvorgang repräsentiert.
@@ -87,4 +94,5 @@ Ein aktiver Lock liegt vor, sobald eines der Adapter‑Ereignisse (ILOCK_IN.EO1 
 | **Einfacher Interlock‑Baustein** | Nur Lock‑Weitergabe, kein Toggle. | Der ILOCK_T_FF kombiniert Toggle und Lock‑Propagation in einem Baustein. |
 
 ## Fazit
+
 Der **ILOCK_T_FF** vereint die Funktionalität eines getakteten T‑Flipflops mit einer effizienten, bidirektionalen Interlock‑Propagation. Durch die integrierte Multi‑Hop‑Weiterleitung eignet er sich ideal für vernetzte Sicherheitsketten, in denen ein Schaltzustand blockiert und gleichzeitig an die gesamte Kette weitergegeben werden muss. Sein kompakter Aufbau als Composite FB macht ihn leicht verständlich und wiederverwendbar.

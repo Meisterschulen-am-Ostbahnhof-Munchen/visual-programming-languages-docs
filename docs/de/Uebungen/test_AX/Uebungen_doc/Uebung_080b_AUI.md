@@ -23,30 +23,37 @@ Diese Übung demonstriert den Einsatz eines aufwärtszählenden Zählers (E_CTU)
 Folgende Funktionsbausteine werden im SubApp-Netzwerk eingesetzt:
 
 ### `DigitalInput_CLK_I1` (Typ: `logiBUS::io::DI::logiBUS_IE`)
+
 - **Parameter**: `QI=TRUE`, `Input=Input_I1`, `InputEvent=BUTTON_SINGLE_CLICK`
 - **Funktion**: Liest einen digitalen Eingang (Taster I1) und generiert bei einem einfachen Klick das Ereignis `IND`.
 
 ### `DigitalInput_CLK_I2` (Typ: `logiBUS::io::DI::logiBUS_IE`)
+
 - **Parameter**: `QI=TRUE`, `Input=Input_I2`, `InputEvent=BUTTON_SINGLE_CLICK`
 - **Funktion**: Liest einen digitalen Eingang (Taster I2) und generiert bei einem einfachen Klick das Ereignis `IND` (dient als Rücksetzsignal).
 
 ### `E_SPLIT` (Typ: `iec61499::events::E_SPLIT`)
+
 - **Parameter**: keine
 - **Funktion**: Teilt ein eingehendes Ereignis (EI) auf zwei identische Ausgangsereignisse (EO1, EO2) auf.
 
 ### `E_CTU` (Typ: `adapter::events::unidirectional::AUI_CTU`)
+
 - **Parameter**: keine  
 - **Funktion**: Aufwärtszähler mit zwei Ereigniseingängen: CU (Count Up) und R (Reset). Über den Adapter-Ausgang `Q` wird der Zählerstand als boolescher Wert (bei CV>0) ausgegeben, über `CV` der aktuelle Zählerstand (Datenadapter).
 
 ### `AUI_TO_AUDI` (Typ: `adapter::conversion::unidirectional::AUI_TO_AUDI`)
+
 - **Parameter**: keine  
 - **Funktion**: Wandelt einen AUI-Datenadapter (hier den Zählerwert CV) in einen AUDI-Datenadapter (u32) um, der von nachfolgenden Bausteinen verarbeitet werden kann.
 
 ### `DigitalOutput_Q1` (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
+
 - **Parameter**: `QI=TRUE`, `Output=Output_Q1`
 - **Funktion**: Steuert einen digitalen Ausgang (Q1) basierend auf dem eingehenden Wert am Adapteranschluss `OUT`.
 
 ### `Q_NumericValue_AUDI` (Typ: `isobus::UT::Q::Q_NumericValue_AUDI`)
+
 - **Parameter**: `u16ObjId=OutputNumber_N1`
 - **Funktion**: Nimmt einen 32-Bit-Zahlenwert (via `u32NewValue`) entgegen und gibt diesen auf dem konfigurierten Terminalobjekt (hier `OutputNumber_N1`) aus.
 
@@ -88,5 +95,6 @@ Die Übung **Uebung_080b_AUI** veranschaulicht die Kombination eines Aufwärtsz�
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang einen von zwei AX-Adapter-Eingängen auf den Ausgang schaltet.
 
 ![AX_SELECT](AX_SELECT.svg)
@@ -11,9 +12,11 @@ Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang
 ## Schnittstellenstruktur
 
 ### **Daten-Eingänge**
+
 - **G** (BOOL): Auswahlsignal. FALSE = IN0, TRUE = IN1.
 
 ### **Adapter**
+
 **Sockets (Eingänge):**
 
 - **IN0** (adapter::types::unidirectional::AX)
@@ -24,19 +27,24 @@ Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang
 - **OUT** (adapter::types::unidirectional::AX)
 
 ## Funktionsweise
+
 Wenn G = FALSE, wird IN0 an OUT weitergeleitet.
 Wenn G = TRUE, wird IN1 an OUT weitergeleitet.
 
 ## Technische Besonderheiten
+
 - Verwendet unidirektionale Adapter.
 
 ## Zustandsübersicht
+
 Kombinatorisch.
 
 ## Anwendungsszenarien
+
 Auswahl von Signalen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 - **E_SELECT**: Standard Ereignis-Select ohne Adapter.
 
 ## 🛠️ Zugehörige Übungen
@@ -44,4 +52,5 @@ Auswahl von Signalen.
 * [Uebung_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)
 
 ## Fazit
+
 Adapter-basierter Select-Baustein.

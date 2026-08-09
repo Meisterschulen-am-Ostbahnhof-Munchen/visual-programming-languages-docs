@@ -11,15 +11,19 @@ Der Funktionsblock **AIS_SPLIT_3** dient dazu, einen eingehenden AIS-Datenstrom 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Nicht vorhanden – der Baustein arbeitet rein daten- und adaptergesteuert.
 
 ### **Ereignis-Ausgänge**
+
 Nicht vorhanden.
 
 ### **Daten-Eingänge**
+
 Nicht vorhanden – die Eingangsdaten werden ausschließlich über den Adapter-Socket bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Nicht vorhanden – die Ausgangsdaten werden ausschließlich über die Adapter-Plugs ausgegeben.
 
 ### **Adapter**
@@ -68,4 +72,5 @@ Der **AIS_SPLIT_3** ist ein einfacher, aber effektiver Baustein zur Vervielfachu
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

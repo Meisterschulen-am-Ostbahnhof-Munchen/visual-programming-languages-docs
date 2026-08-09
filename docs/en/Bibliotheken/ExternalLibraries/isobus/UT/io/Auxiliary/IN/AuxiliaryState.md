@@ -1,37 +1,48 @@
 # AuxiliaryState
+
 ![AuxiliaryState](./AuxiliaryState.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 AuxiliaryState is a collection of global constants for auxiliary inputs in ISOBUS systems. These constants define various states of auxiliary inputs, typically used for control functions in agricultural and mobile machinery.
 ## Interface Structure
+
 AuxiliaryState consists of global constants and is not a function block in the traditional sense. Therefore, this component does not have any event or data interfaces.
 
 ### **Event Inputs**
+
 - Not available (Global Constants)
 
 ### **Event Outputs**
+
 - Not available (Global Constants)
 
 ### **Data Inputs**
+
 - Not available (Global Constants)
 
 ### **Data Outputs**
+
 - Not available (Global Constants)
 
 ### **Adapters**
+
 - Not available
 
 ## Functionality
+
 AuxiliaryState defines a set of predefined constants for the data type `AuxiliaryState_S`. Each constant represents a specific state of an auxiliary input with a corresponding numeric value and optional additional parameters.
 
 ## Technical Features
+
 - All constants are of type `isobus::UT::io::Auxiliary::IN::AuxiliaryState_S`
 - The value ranges from 0 to 255
 - Some constants also contain the flag `bCyclic := FALSE`
 - The structure follows ISOBUS standards for agricultural control systems
 
 ## State Overview
+
 The defined constants include the following states:
 
 | Constant | Value | Description |
@@ -49,6 +60,7 @@ AuxHeldBackwards_START` | 8 | Held (backward, down, or left) (with bCyclic=FALSE
 | `Invalid` | 255 | Invalid value |
 
 ## Application Scenarios
+
 - Control of hydraulic functions in tractors
 - Operation of implements via ISOBUS interfaces
 - Status monitoring of auxiliary functions in mobile machinery
@@ -59,4 +71,5 @@ AuxHeldBackwards_START` | 8 | Held (backward, down, or left) (with bCyclic=FALSE
 Unlike function blocks with active logic, AuxiliaryState consists of passive constant definitions that can be used as reference values in other function blocks. They offer a standardized way to define auxiliary states in ISOBUS environments.
 
 ## Conclusion
+
 AuxiliaryState provides a comprehensive collection of standardized constants for handling auxiliary inputs in ISOBUS systems. The clear definition of the different states enables a consistent implementation of control logic across different systems and facilitates the maintainability and readability of the code.

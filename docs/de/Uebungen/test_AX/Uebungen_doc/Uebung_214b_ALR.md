@@ -4,11 +4,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Adapter-Version. Der Zähler arbeitet mit dem Datentyp `ULINT`. Der aktuelle Zählwert wird über einen physikalischen Ausgang (`PHYSA_LREAL`) an ein Terminal ausgegeben. Der Preset-Wert wird initial auf 5 gesetzt.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### AULI_FB_CTU
+
 - **Typ**: `adapter::iec61131::counters::AULI_FB_CTU`
 - **Parameter**: keine
 - **Ereigniseingänge**: (implizit über Adapterverbindungen)
@@ -22,6 +24,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
   - `CV` (aktueller Zählwert) – `ULINT`
 
 ### AULI_ULINT_TO_ULI
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_ULINT_TO_ULI`
 - **Parameter**: `OUT = ULINT#5` (statischer Wert, der als Preset dient)
 - **Ereigniseingänge**:
@@ -30,6 +33,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
   - `AULI_OUT` – liefert den umgewandelten Wert an `AULI_FB_CTU.PV`
 
 ### Input_CU
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI = TRUE` (Aktivierung)
@@ -38,6 +42,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
   - `IN` – Adapterausgang, verbunden mit `AULI_FB_CTU.CU`
 
 ### Input_R
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
   - `QI = TRUE`
@@ -48,6 +53,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
   - `INITO` – Initialisierungsereignis, verbunden mit `AULI_ULINT_TO_ULI.REQ`
 
 ### Output_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI = TRUE`
@@ -56,6 +62,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
   - `OUT` – Adaptereingang, verbunden mit `AULI_FB_CTU.Q`
 
 ### AULI_TO_AUDI (Instanzname `AULI_TO_AUDI`)
+
 - **Typ**: `adapter::conversion::unidirectional::AULI_TO_ALR`
 - **Parameter**: keine
 - **Dateneingänge**:
@@ -64,6 +71,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
   - `ALR_OUT` – liefert den Zählwert als `LREAL` an `Q_NumericValue_PHYSA_LREAL`
 
 ### Q_NumericValue_PHYSA_LREAL
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Parameter**:
   - `stObj = OutputNumber_N3` (Referenz auf das Terminal-Ausgabeobjekt)
@@ -93,4 +101,5 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
 - Zur Reduzierung der Ereignisrate kann bei hohen Zählfrequenzen ein AX_D_FF (Abfrageverzögerung) vorgeschaltet werden (siehe Kommentar).
 
 ## Zusammenfassung
+
 Die Übung demonstriert die Anwendung eines IEC 61131-3 Vorwärtszählers als Adapter-FB mit `ULINT`-Datentyp. Der Zähler wird über digitale Eingänge gesteuert, der Ausgang schaltet einen Digitalausgang, und der aktuelle Zählwert wird über eine Typkonvertierung auf einem Terminal als `LREAL` ausgegeben. Der Preset-Wert wird initial auf 5 gesetzt.

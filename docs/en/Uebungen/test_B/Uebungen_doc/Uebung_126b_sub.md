@@ -1,8 +1,10 @@
 # Exercise_126b_sub: Plotting a Sine Wave Function on PCAN Explorer
+
 ![Uebung_126b_sub_network](./Uebung_126b_sub_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the generation of a sine wave signal using the function block `GEN_SIN` and the preparation of the data for transmission via the CAN bus. The generated values are converted into a message format suitable for PCAN Explorer and sent to the adapter `isobus::pgn::tx::Callback` via a callback function block. The goal is to understand signal generation, type conversion, and the structuring of CAN messages in the 4diac IDE.
 ## Function Blocks Used
 
@@ -62,6 +64,7 @@ This exercise illustrates the entire path from analog signal generation to the o
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **SET_REAL** dient dazu, einen REAL-Wert von einem Dateneingang auf eine InOut-Variable zu schreiben. Er ist ein einfacher, ereignisgesteuerter Baustein, der nach einer Anforderung (REQ) den aktuellen Eingangswert IN an die referenzierte Variable OUT weitergibt und den Vorgang durch ein Bestätigungsereignis (CNF) quittiert.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Beschreibung |
@@ -27,12 +29,15 @@ Der Funktionsblock **SET_REAL** dient dazu, einen REAL-Wert von einem Dateneinga
 | OUT  | REAL (InOut) | 0.0 | Zielvariable (InOut – lesend und schreibend) |
 
 ### **Daten-Ausgänge**
+
 Keine separaten Datenausgänge vorhanden. Der InOut-Parameter OUT fungiert gleichzeitig als Ausgang und wird nach der Zuweisung aktualisiert.
 
 ### **Adapter**
+
 Keine.
 
 ## Funktionsweise
+
 Der FB besitzt einen einzigen Ausführungszustand **REQ**. Sobald ein Ereignis am Eingang **REQ** eintrifft, wird der hinterlegte Algorithmus ausgeführt:
 
 ```
@@ -42,6 +47,7 @@ OUT := IN;
 Der aktuelle Wert von IN wird der InOut-Variable OUT zugewiesen. Anschließend wird das Ereignis **CNF** ausgegeben, um den Abschluss der Operation zu signalisieren. Der Vorgang ist atomar und benötigt keine weiteren Zustandsübergänge.
 
 ## Technische Besonderheiten
+
 - **InOut-Parameter OUT**: Die Variable OUT ist sowohl lesbar als auch beschreibbar. Sie wird direkt von der aufrufenden Umgebung referenziert, sodass die Zuweisung unmittelbar den Wert an der Ursprungsadresse ändert.
 - **Initialwerte**: Sowohl IN als auch OUT sind mit 0.0 initialisiert. Dies verhindert undefinierte Zustände vor der ersten Ausführung.
 - **Einfachheit**: Der FB besteht aus nur einem Zustand und einem Algorithmus, was eine sehr geringe Laufzeitkomplexität garantiert.
@@ -55,6 +61,7 @@ Der aktuelle Wert von IN wird der InOut-Variable OUT zugewiesen. Anschließend w
 Es existiert kein weiterer Zustand; der FB kehrt nach dem Durchlauf sofort wieder in den wartenden Zustand REQ zurück.
 
 ## Anwendungsszenarien
+
 - **Parametereinstellung**: Übergabe eines REAL-Werts an eine globale Konfigurationsvariable, z. B. zur Skalierung oder für Sollwerte.
 - **Initialisierung**: Setzen einer InOut-Variable auf einen definierten Startwert während der Inbetriebnahme.
 - **Wertkopie innerhalb einer Applikation**: Einfaches Überschreiben einer bestehenden REAL-Variablen durch einen anderen Wert, gesteuert durch ein Ereignis.
@@ -71,4 +78,5 @@ Es existiert kein weiterer Zustand; der FB kehrt nach dem Durchlauf sofort wiede
 Im Vergleich zu einem generischen MOVE-Baustein bietet SET_REAL eine schlankere Implementierung und ist auf den häufig benötigten REAL-Typ zugeschnitten.
 
 ## Fazit
+
 Der Funktionsblock **SET_REAL** ist ein einfacher, aber effektiver Baustein zum gezielten Setzen einer REAL-Variablen. Dank seiner minimalen Zustandsmaschine und der direkten Verwendung von InOut-Parametern eignet er sich hervorragend für ereignisgesteuerte Zuweisungen in IEC 61499-Applikationen. Er reduziert Komplexität und erhöht die Lesbarkeit des Steuerungscodes.

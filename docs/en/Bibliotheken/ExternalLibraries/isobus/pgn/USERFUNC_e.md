@@ -1,4 +1,5 @@
 # USERFUNC_e
+
 ![USERFUNC_e](./USERFUNC_e.svg)
 
 * * * * * * * * * *
@@ -7,17 +8,22 @@ USERFUNC_e` is a collection of global constants and not a function block. Theref
 
 *Not applicable.* This resource provides constants and has no inputs.
 
-#
-# ##
 *Not applicable.* The constants are referenced directly in the application code.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ## Interface Structure
+
+## Introduction
+
 ### **Adapters**
+
 *Not applicable.*
 
 ## Functionality
+
 USERFUNC_e` is a collection of predefined constant values. Each name (e.g., `task_controller`) is associated with a fixed numeric value (e.g., `1`). These constants can be used throughout the application to identify device roles, perform comparisons, or set parameters, significantly improving code maintainability and readability compared to directly using "magic numbers."
 
 * **Data Type:** All constants are of type `SINT` (8-bit signed integer).
@@ -26,7 +32,6 @@ USERFUNC_e` is a collection of predefined constant values. Each name (e.g., `tas
 * **Special Values:**
 * `undefined` (-1): Indicates an undefined or unknown function.
 * `all_clients` (20) & `all_server` (21): Values for broadcast or group addressing.
-
 
 *Not applicable.* Constants have no state.
 
@@ -39,14 +44,18 @@ Unlike function blocks that contain active logic, `USERFUNC_e` is a passive data
 
 The global constant `USERFUNC_e` is an essential tool for developing readable and maintainable ISOBUS applications in 4diac. It abstracts the raw, standard-defined numeric values for device functions into meaningful identifiers, thus significantly contributing to error prevention and improved code quality. Its use is recommended for all projects that work with ISOBUS device communication.
 
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 
-## Technical Features
-## State Overview
 ## Application Scenarios
+
+## State Overview
+
+## Technical Features
+
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 ## Conclusion
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

@@ -17,15 +17,19 @@ Der Baustein speichert einen binären Zustand. Wenn sowohl das Setz- (SET) als a
 Der Baustein kommuniziert ausschließlich über Adapter-Schnittstellen. Klassische diskrete Ein- und Ausgänge sind nicht vorhanden, da diese innerhalb der Adapter gekapselt sind.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (diese sind in den Sockets `SET1` und `RESET` enthalten).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (diese sind im Plug `Q1` enthalten).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden (diese sind in den Sockets `SET1` und `RESET` enthalten).*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden (diese sind im Plug `Q1` enthalten).*
 
 ### **Adapter**
@@ -92,4 +96,5 @@ Der **AX_FB_SR** ist ein spezialisierter Baustein für die strukturierte, adapte
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

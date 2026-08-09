@@ -1,8 +1,10 @@
 # Exercise_104_AX: State-Based Step Sequence with Power Fail Recovery (AX Version)
+
 ![Uebung_104_AX_network](./Uebung_104_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **state-based step sequence with power fail recovery** for the AX variant (adapter-based).
 After a power failure or restart, the system can automatically return to the state whose corresponding input sensor is currently providing a TRUE signal.
 
@@ -11,6 +13,7 @@ The sequence block `sequence_B_08_AX_AX` forms the core and is connected to the 
 ## Function Blocks (FBs) Used
 
 ### Sub-block: SEQ
+
 - **Type**: `logiBUS::utils::sequence::boolean::sequence_B_08_AX_AX`
 - **Parameters**: No explicit parameters set.
 - **Event Inputs**:
@@ -28,6 +31,7 @@ Upon power-up or after a reset, the sequence jumps directly to the step whose co
 During normal operation, it executes a defined sequence of steps.
 
 ### Sub-module: Feedback_S1
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -38,6 +42,7 @@ During normal operation, it executes a defined sequence of steps.
 Digital input adapter that converts the physical sensor `Input_I1` into a logical adapter. The adapter is active for `QI=TRUE`.
 
 ### Sub-module: Feedback_S2
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -48,6 +53,7 @@ Digital input adapter that converts the physical sensor `Input_I1` into a logica
 Analogous to Feedback_S1 for sensor `Input_I2`.
 
 ### Sub-module: Feedback_S3
+
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -58,6 +64,7 @@ Analogous to Feedback_S1 for sensor `Input_I2`.
 Analogous to Feedback_S1 for sensor `Input_I3`.
 
 ### Sub-module: Reset_Button
+
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -69,6 +76,7 @@ Analogous to Feedback_S1 for sensor `Input_I3`.
 Detects a single click on the physical input `Input_I4` and generates an event at the output `IND`, which resets the sequence.
 
 ### Sub-module: Action_Q1
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -79,6 +87,7 @@ Detects a single click on the physical input `Input_I4` and generates an event a
 Digital output adapter that outputs the logical adapter value to the physical output `Output_Q1`.
 
 ### Sub-module: Action_Q2
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -89,6 +98,7 @@ Digital output adapter that outputs the logical adapter value to the physical ou
 Analogous to Action_Q1 for output `Output_Q2`.
 
 ### Sub-module: Action_Q3
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -119,30 +129,30 @@ This behavior represents **Power Fail Recovery**: After a power failure or resta
 In normal operation, the sequence executes a predefined sequence of steps (not shown in the XML, as the steps are configured in the function block `sequence_B_08_AX_AX`).
 
 ### Learning Objectives
+
 - Understanding of state-based controllers with recovery mechanisms
 - Working with IEC 61499 adapters in the 4diac IDE
 - Using logiBUS I/O blocks (input/output adapters)
 - Analyzing and handling errors during power failures
 
 ### Difficulty Level
+
 Medium – Basic knowledge of 4diac and step sequences is required.
 
 ### Prerequisites
+
 - Fundamentals of IEC 61499
 - Operation of the 4diac IDE
 - Familiarity with logiBUS I/O (sensors, actuators)
 
 ### Starting the Exercise
+
 1. Open the exercise `Uebung_104_AX` in the 4diac IDE.
-
 2. Connect the physical inputs/outputs:
-
 - `Input_I1`, `I2`, `I3` – e.g., limit switches or sensors
 - `Input_I4` – reset button
 - `Output_Q1`, `Q2`, `Q3` – e.g., valves or motors
-
 3. Upload the application to the target hardware (e.g., logiBUS controller).
-
 4. Test the power failure recovery: Interrupt and restore the power supply – the machine should return to the state defined by the sensors.
 
 ## Summary
@@ -156,6 +166,7 @@ The recovery behavior ensures that the controller automatically assumes the appr
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

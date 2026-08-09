@@ -20,26 +20,32 @@ Der Funktionsbaustein `AUI_DIV_2` ist ein generischer Funktionsbaustein zur Durc
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 *Es sind keine direkten Ereignis-Eingänge definiert. Die Ereignissteuerung erfolgt implizit über die Adapter-Schnittstellen.*
 
 ### **Ereignis-Ausgänge**
+
 *Es sind keine direkten Ereignis-Ausgänge definiert. Die Ereignissteuerung erfolgt implizit über die Adapter-Schnittstellen.*
 
 ### **Daten-Eingänge**
+
 *Es sind keine direkten Daten-Eingänge definiert. Die Datenübergabe erfolgt über die Eingangs-Adapter.*
 
 ### **Daten-Ausgänge**
+
 *Es sind keine direkten Daten-Ausgänge definiert. Die Datenübergabe erfolgt über den Ausgangs-Adapter.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Schnittstellen)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUI`): 
   Der erste Eingang-Adapter. Er liefert den Dividenden (Zähler) für die Divisionsoperation sowie die zugehörigen Triggereignisse.
 * **IN2** (Typ: `adapter::types::unidirectional::AUI`): 
   Der zweite Eingang-Adapter. Er liefert den Divisor (Nenner) für die Divisionsoperation sowie die zugehörigen Triggereignisse.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUI`): 
   Der Ausgangs-Adapter. Er gibt das Ergebnis der Division (Quotient) und das entsprechende Berechnungsereignis aus.
 

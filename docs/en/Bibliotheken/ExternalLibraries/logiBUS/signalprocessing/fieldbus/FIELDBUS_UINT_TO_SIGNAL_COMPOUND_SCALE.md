@@ -1,8 +1,10 @@
 # FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE
+
 ![FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to process a 16-bit fieldbus signal (type `UINT`) into a scaled real value. The incoming word is split into an upper and a lower byte, each byte is multiplied by its own scaling factor, and an offset is added. Additionally, a validity signal (`VALID`) is output, based on a predefined threshold. This function block is particularly suitable for protocols that encode two measured variables (e.g., temperature and pressure) in a single register.
 ## Interface Structure
 
@@ -37,9 +39,11 @@ OFFSET` | DINT | `0` | Offset added after scaling (in REAL) |
 | `VALID` | BOOL | `FALSE` | `TRUE`, if the input signal is recognized as valid |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 1. **Initialization** (`INIT`):
 
 The algorithm `INIT` is empty, but the parameters `SCALE_HIGH`, `SCALE_LOW`, and `OFFSET` are linked to the event via the `With` relationship and can thus be set when `INIT` is called.
@@ -70,12 +74,14 @@ OUT := highByte * SCALE_HIGH + lowByte * SCALE_LOW + OFFSET`
 - The event `CNF` is then output.
 
 ## Technical Features
+
 - **Compound Scaling**: The function block allows separate scaling for the upper and lower bytes of a 16-bit word. This is useful when two different physical quantities are combined in one register.
 - **Validity Check**: Comparison with `VALID_SIGNAL_W` defines a threshold. Values above this threshold are considered invalid – typical for fieldbus error codes (e.g., "Not Available").
 - **Parameterization via `INIT`**: The scaling factors and offset can be set once via the `INIT` event so that they remain constant during operation.
 - **Initial Values**: The predefined values (`SCALE_HIGH=0.256`, `SCALE_LOW=0.001`, `OFFSET=0`) are examples; they should be adapted to the specific application.
 
 ## State Overview
+
 The FB has two EC states:
 
 - **INIT**: Executes the empty algorithm `INIT` and exits the state via the output `INITO`.
@@ -84,6 +90,7 @@ The FB has two EC states:
 The FB is implemented as a SimpleFB; there are no other states such as IDLE or WAIT.
 
 ## Application Scenarios
+
 - **Two-in-one Sensor Values**: A temperature sensor and a pressure sensor provide their values as 8-bit numbers each in a 16-bit register. The function block (FB) converts these values into physical units using separate scaling.
 - **Fieldbus Error Detection**: If the fieldbus protocol specifies a particular bit code (e.g., all bits 1) for invalid measured values, validity can be detected using the threshold value `VALID_SIGNAL_W`.
 - **Post-processing of Logging Data**: Raw data from a fieldbus logger is converted back into physical units using the original scaling.
@@ -99,11 +106,13 @@ The FB is implemented as a SimpleFB; there are no other states such as IDLE or W
 This function block is unique in combining byte separation with dual scaling and integrated validation, making it particularly suitable for special fieldbus protocols with compound registers.
 
 ## Conclusion
+
 The `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is a powerful function block for processing 16-bit fieldbus signals that encode two independent measured values in a single register. Separate scaling of high and low bytes, along with integrated validation, allows for the efficient and reliable conversion of complex sensor registers into physical quantities. Parameterization via `INIT`The event and the clear separation of initialization and operation make the function block reusable and adaptable.
 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

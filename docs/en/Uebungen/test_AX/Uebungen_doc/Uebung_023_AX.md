@@ -1,8 +1,10 @@
 # Exercise_023_AX: Mirror Sequence (3) - AX Variant
+
 ![Uebung_023_AX_network](./Uebung_023_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **mirror sequence** for two double-acting cylinders. The goal is to build a sequential control for extending and retracting two cylinders using AX function blocks (SR bistables) and softkeys. The control is operated via softkeys on the terminal, and the digital outputs control the actuators (e.g., valves).
 The sequence is divided into two parts:
 
@@ -16,6 +18,7 @@ The AX_SPLIT adapters distribute events across multiple paths, ensuring that the
 No additional sub-blocks (SubAppTypes) are used – all function blocks are directly integrated into the network.
 
 ### Input Blocks (Softkeys)
+
 - **SoftKey_F1 (UP)**
 
 Type: `isobus::UT::io::Softkey::Softkey_IXA`
@@ -83,6 +86,7 @@ Parameters:
 Function: Reset (extend) for **Retract Cylinder 1**.
 
 ### Processing Blocks
+
 - **AX_FB_SR_Extend_Cyl_1**
 
 Type: `adapter::iec61131::bistableElements::AX_FB_SR`
@@ -124,6 +128,7 @@ Function: SR bistable for the retraction command of cylinder 1.
 Set by `AX_SPLIT_3.OUT2`, reset by SoftKey_F9.
 
 ### Event Distribution
+
 - **AX_SPLIT_2**
 
 Type: `adapter::events::unidirectional::AX_SPLIT_2`
@@ -146,6 +151,7 @@ Function: Distributes the event from SoftKey_F8 to two outputs:
 - OUT2 → SET of AX_FB_SR_Retract_Cyl_1
 
 ### Output Blocks
+
 - **DigitalOutput_Q1**
 
 Type: `logiBUS::io::DQ::logiBUS_QXA`
@@ -204,7 +210,6 @@ Pressing **SoftKey_F2** (DOWN) sends an event to `AX_SPLIT_2`.
 
 - Output OUT1 of `AX_SPLIT_2` resets the SR bistable `AX_FB_SR_Ausfahren_Cyl_1` → Q1 becomes inactive, cylinder 1 no longer extends.
 - Output OUT2 simultaneously activates `AX_FB_SR_Ausfahren_Cyl_2` → Q2 extends cylinder 2.
-
 3. **Reset Cylinder 2**
 
 Pressing **SoftKey_F3** (DOWN) resets `AX_FB_SR_Ausfahren_Cyl_2` → Q2 is inactive.
@@ -221,7 +226,6 @@ Pressing **SoftKey_F8** (DOWN) activates `AX_SPLIT_3`:
 
 - OUT1 resets `AX_FB_SR_Einfahren_Cyl_2` → Q3 is inactive.
 - OUT2 sets `AX_FB_SR_Einfahren_Cyl_1` → Q4 is active.
-
 3. **Reset Cylinder 1**
 
 Pressing **SoftKey_F9** (DOWN) resets `AX_FB_SR_Einfahren_Cyl_1` → Q4 is deactivated.
@@ -237,16 +241,17 @@ The adapter connections are linked in the network as follows:
 - `AX_SPLIT_2.OUT2` → `AX_FB_SR_Ausfahren_Cyl_2.SET1`
 - `SoftKey_F3_DOWN.IN` → `AX_FB_SR_Ausfahren_Cyl_2.RESET`
 - `SoftKey_F7_UP.IN` → `AX_FB_SR_Einfahren_Cyl_2.SET1`
-- `SoftKey_F8_DOWN.IN` → `AX_SPLIT_3.IN`  
-- `AX_SPLIT_3.OUT1` → `AX_FB_SR_Einfahren_Cyl_2.RESET`  
-- `AX_SPLIT_3.OUT2` → `AX_FB_SR_Einfahren_Cyl_1.SET1`  
-- `SoftKey_F9_DOWN.IN` → `AX_FB_SR_Einfahren_Cyl_1.RESET`  
-- `AX_FB_SR_Ausfahren_Cyl_1.Q1` → `DigitalOutput_Q1.OUT`  
-- `AX_FB_SR_Ausfahren_Cyl_2.Q1` → `DigitalOutput_Q2.OUT`  
-- `AX_FB_SR_Einfahren_Cyl_2.Q1` → `DigitalOutput_Q3.OUT`  
+- `SoftKey_F8_DOWN.IN` → `AX_SPLIT_3.IN`
+- `AX_SPLIT_3.OUT1` → `AX_FB_SR_Einfahren_Cyl_2.RESET`
+- `AX_SPLIT_3.OUT2` → `AX_FB_SR_Einfahren_Cyl_1.SET1`
+- `SoftKey_F9_DOWN.IN` → `AX_FB_SR_Einfahren_Cyl_1.RESET`
+- `AX_FB_SR_Ausfahren_Cyl_1.Q1` → `DigitalOutput_Q1.OUT`
+- `AX_FB_SR_Ausfahren_Cyl_2.Q1` → `DigitalOutput_Q2.OUT`
+- `AX_FB_SR_Einfahren_Cyl_2.Q1` → `DigitalOutput_Q3.OUT`
 - `AX_FB_SR_Einfahren_Cyl_1.Q1` → `DigitalOutput_Q4.OUT`
 
 ### Learning Objectives
+
 - Understanding the mirroring sequence (sequence creation with reset and set in one step)
 - Application of **AX_FB_SR** (bistable elements according to IEC 61131)
 - Use of **AX_SPLIT_2** for event distribution
@@ -254,6 +259,7 @@ The adapter connections are linked in the network as follows:
 - Practicing the four-step process: Start – Mirror – Stop – Reset
 
 ### Notes
+
 - This exercise requires basic knowledge of the 4diac IDE and working with adapter connections.
 - All softkeys are defined as **DOWN** or **UP** keys; the assignment is made via the object ID (e.g., `SoftKey_F1`).
 - The digital outputs `Output_Q1` to `Output_Q4` must be assigned to the actual valves or displays.
@@ -265,6 +271,7 @@ The exercise "Mirror Sequence (3) – AX Variant" demonstrates sequential contro
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

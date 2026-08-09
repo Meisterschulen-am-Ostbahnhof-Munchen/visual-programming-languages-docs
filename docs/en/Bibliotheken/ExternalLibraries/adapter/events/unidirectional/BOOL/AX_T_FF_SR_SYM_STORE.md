@@ -1,10 +1,13 @@
 # AX_T_FF_SR_SYM_STORE
+
 ![AX_T_FF_SR_SYM_STORE](./AX_T_FF_SR_SYM_STORE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AX_T_FF_SR_SYM_STORE` implements an event-driven, bistable flip-flop with set (S), reset (R), and toggle (CLK) functions. Its special feature is its symmetrical startup behavior: The initial state at system startup can be defined and saved via a special adapter (`Q_INIT`).
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -14,12 +17,15 @@ The function block `AX_T_FF_SR_SYM_STORE` implements an event-driven, bistable f
 | CLK | Event | Toggles output `Q` (TRUE ↔ FALSE) |
 
 ### **Event Outputs**
+
 No direct event outputs are available. Output data is provided exclusively via the adapter interfaces.
 
 ### **Data Inputs**
+
 No direct data inputs. Initial value and state are read and output via adapters.
 
 ### **Data Outputs**
+
 No direct data outputs. The current state is made available via the adapters.
 
 ### **Adapters**
@@ -30,6 +36,7 @@ No direct data outputs. The current state is made available via the adapters.
 | Q_INIT | adapter::types::bidirectional::AX2 | Bidirectional interface for the initial value of `Q` at INIT (includes three inputs/outputs: e.g., DI1/DO1, EI1/EO1) |
 
 ## Functionality
+
 The function block operates as an SR flip-flop (set-reset) with an additional toggle function. The process is divided into initialization and operation:
 
 1. **Initialization (START → Init)**
@@ -52,6 +59,7 @@ Starting from SET or RESET, each event at inputs S, R, or CLK toggles the state:
 With each state change, the output data is updated via the adapters, and the events `Q.E1` and `Q_INIT.EO1` are output.
 
 ## Technical Features
+
 - **Adapter-Based Input/Output**
 
 Instead of classic data inputs/outputs, the module uses adapter interfaces. This enables flexible coupling with other modules or system components that also support the adapter protocol.
@@ -86,6 +94,7 @@ This functional reduction simplifies the interface and avoids confusion with the
 - RESET → SET (on Event S or CLK)
 
 ## Application Scenarios
+
 - **Machine State Storage**
 
 In production plants, this function block can store the current operating mode (e.g., "On" or "Off") and restore it upon restart.
@@ -99,6 +108,7 @@ Scenarios requiring a defined start value (e.g., valve position at the beginning
 For example, toggling an indicator light with each key press, without requiring separate on and off commands.
 
 ## Comparison with Similar Function Blocks
+
 - **Standard E_SR (E_R-SET)**
 
 Simple set-reset flip-flop without toggle functionality and without symmetric start initialization. The initial state is usually undefined or must be set externally.
@@ -122,4 +132,5 @@ The `AX_T_FF_SR_SYM_STORE` is a powerful and flexible function block for statefu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

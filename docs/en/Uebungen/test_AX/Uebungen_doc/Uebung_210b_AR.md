@@ -1,11 +1,14 @@
 # Exercise_210b_AR: Standard IEC 61131-3 AI_FB_CTU (Adapter Version, Up Counter, INT) with Terminal Output (PHYS)
+
 ![Uebung_210b_AR_network](./Uebung_210b_AR_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the use of an IEC 61131-3 up counter (CTU) in an adapter version. The counter is controlled via two digital inputs (CU for counting pulses, R for reset). The current counter value is output to a terminal (PHYS) via an analog output. A preset value (PV) is set to 5 at startup. The counter's output Q is routed to a digital output.
 
 ## Function Blocks (FBs) Used
+
 - **AI_FB_CTU**
 
 Type: `adapter::iec61131::counters::AI_FB_CTU`
@@ -98,6 +101,7 @@ This exercise teaches how to use an IEC 61131-3 counter (CTU) in an adapter-base
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

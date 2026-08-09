@@ -16,20 +16,25 @@ Die Besonderheit dieses Bausteins liegt in der konsequenten Verwendung von unidi
 Da dieser Funktionsbaustein vollständig auf Adaptern basiert, besitzt er keine direkten, klassischen Ereignis- oder Datenkanäle auf seiner äußeren Grenze. Die gesamte Kommunikation ist in den Adaptern gekapselt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden. Die Ereignissteuerung erfolgt implizit über die Eingangsadapter.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden. Die Ereignisausgabe erfolgt implizit über den Ausgangsadapter.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangsadapter)**
+
 * **G** (Typ: `adapter::types::unidirectional::AX`):
   Der Selektor-Kanal. Das hier anliegende Signal steuert, welcher der beiden Eingänge auf den Ausgang durchgeschaltet wird.
 * **IN0** (Typ: `adapter::types::unidirectional::AULI`):
@@ -38,6 +43,7 @@ Da dieser Funktionsbaustein vollständig auf Adaptern basiert, besitzt er keine 
   Der zweite auswählbare Eingangskanal. Dieser Wert wird an den Ausgang weitergegeben, wenn der Selektor `G` den Zustand `TRUE` (1) aufweist.
 
 #### **Plugs (Ausgangsadapter)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AULI`):
   Der ausgewählte Ausgangskanal, welcher das Signal des ausgewählten Eingangs (`IN0` oder `IN1`) führt.
 

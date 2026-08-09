@@ -1,8 +1,10 @@
 # DataPanel_MI_IW_Ratio
+
 ![DataPanel_MI_IW_Ratio](./DataPanel_MI_IW_Ratio.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **DataPanel_MI_IW_Ratio** is a service interface function block (SIFB) for acquiring analog input data with ratiometric conversion. It provides the interface to a sensor connected to a node (SA 224..239) whose measured value is output as a 16-bit word (WORD). This block is part of the library `DataPanel::io::MI::AI` and is typically used in automation technology, particularly in agricultural engineering.
 ## Interface Structure
 
@@ -34,7 +36,6 @@ The function block **DataPanel_MI_IW_Ratio** is a service interface function blo
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-| Variable | Type | Comment |
 | |----------|-----|-----------|
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Service Status |
@@ -63,6 +64,7 @@ If the hardware supports asynchronous events (e.g., cyclic updates), the IND eve
 The measurement value is output as a 16-bit word (WORD) in ratiometric format. This means that the digital value is directly proportional to the ratio of the measured voltage to the reference voltage.
 
 ## Technical Features
+
 - **Ratiometric Measurement**: The function block is specifically designed for ratiometric sensors where the output is proportional to the supply voltage. This minimizes measurement errors caused by voltage fluctuations.
 - **Configuration via constants**: The initial value of `u8SAMember` (`MI::MI_00`) and the data type `DataPanel_MI_AI_S` are derived from imported libraries (`DataPanel::io::MI::const::MI` and `DataPanel::io::MI::AI::DataPanel_MI_AI`). The valid address range for the node is between 224 and 239 (Node SA 224..239).
 - **Hysteresis**: Threshold hysteresis behavior can be implemented using `AnalogInput_hysteresis`; the exact effect depends on the underlying driver.
@@ -81,6 +83,7 @@ Since the function block is implemented as a service interface function block, i
 In case of an error, `QO = FALSE` is set and `STATUS` contains a corresponding error message.
 
 ## Application Scenarios
+
 - **Agricultural Machinery**: Acquisition of sensor values (e.g., fill levels, pressure, position) via the ratiometric input of a data panel.
 - **Industrial Automation**: Connection of analog sensors with voltage output (0…5V, 0…10V) that operate ratiometrically.
 - **Early Prototypes**: The module can be directly integrated into a controller from the 4diac IDE and tested with any parameters.
@@ -102,4 +105,5 @@ The `DataPanel_MI_IW_Ratio` is a specialized service interface function block fo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]

@@ -11,15 +11,19 @@ Der Funktionsblock **AL_TO_AUI** ist ein Composite-Baustein, der einen LWORD-Ada
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine eigenständigen Ereignis-Eingänge. Der Socket **AL_IN** liefert über seinen Ereignisausgang `E1` das auslösende Signal für die Konvertierung.
 
 ### **Ereignis-Ausgänge**
+
 Keine eigenständigen Ereignis-Ausgänge. Der Plug **AUI_OUT** stellt über seinen Ereigniseingang `E1` die Bestätigung der abgeschlossenen Konvertierung bereit.
 
 ### **Daten-Eingänge**
+
 Keine eigenständigen Daten-Eingänge. Der Socket **AL_IN** liefert über seinen Datenausgang `D1` den als `LWORD` zu konvertierenden Wert.
 
 ### **Daten-Ausgänge**
+
 Keine eigenständigen Daten-Ausgänge. Der Plug **AUI_OUT** stellt über seinen Dateneingang `D1` den konvertierten `UINT`-Wert zur Verfügung.
 
 ### **Adapter**

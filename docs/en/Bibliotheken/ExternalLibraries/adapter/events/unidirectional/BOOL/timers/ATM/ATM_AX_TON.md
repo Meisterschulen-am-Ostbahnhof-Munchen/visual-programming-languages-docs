@@ -1,8 +1,10 @@
 # ATM_AX_TON
+
 ![ATM_AX_TON](./ATM_AX_TON.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ATM_AX_TON** is a function block for on-delay. It implements standard timer functionality according to IEC 61499-2, which is controlled via an adapter interface (AX/AT). The block allows a timer to be started via an input adapter and the output state and confirmation of completion to be provided via an output adapter.
 ## Interface Structure
 
@@ -57,6 +59,7 @@ According to the specification, the event input **EIPT** is used to set the lead
 If **IN** goes to FALSE, the timer is immediately reset and **Q.D1** becomes FALSE (without delay).
 
 ## Technical Features
+
 - **Adapter-Based Interface:** The function block uses only adapters (AX and ATM) for communication, not traditional input/output grooves. This enables flexible encapsulation and reuse in complex systems.
 - **Unidirectional Adapters:** The adapters used are unidirectional (AX for Boolean values and ATM for time values). The function block expects the adapters to be correctly integrated into the higher-level hierarchy.
 - **Unconnected Event Input EIPT:** The **EIPT** input is defined but not connected to the internal E_TON. This could indicate a planned extension or external use by the user. In the current version, it has no direct function within the function block network.
@@ -75,6 +78,7 @@ The FB itself does not manage its own state machine – the state logic resides 
 | FALSE (any) | Output remains FALSE | FALSE |
 
 ## Application Scenarios
+
 - **Machine Control:** Delaying the activation of drives or valves to prevent multiple components from starting simultaneously.
 - **Signal Conditioning:** Debouncing switching signals by only considering a short pulse as valid after a defined time.
 - **Process Automation:** Initiating subsequent steps only after a waiting period (e.g., in conveyor belts or dosing systems).
@@ -100,4 +104,5 @@ The **ATM_AX_TON** is a ready-to-use on-delay timer with a modern, adapter-based
 The **ATM_AX_TON** is a ready-to-use, adapter-based interface. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

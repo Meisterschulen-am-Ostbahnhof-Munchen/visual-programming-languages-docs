@@ -7,6 +7,7 @@ In diesem Abschnitt werden grundlegende Konzepte erläutert, die für die Progra
 Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werden als **Identifikatoren** bezeichnet. Um einen sauberen und portablen Code zu gewährleisten, legt die Norm IEC 61131-3 strikte Regeln fest.
 
 ### Grundregeln der Norm
+
 1.  **Zeichensatz:** Identifikatoren dürfen nur aus Buchstaben (A-Z, a-z), Ziffern (0-9) und dem Unterstrich (_) bestehen.
 2.  **Anfang:** Ein Name darf **nicht mit einer Ziffer** beginnen. Er muss mit einem Buchstaben oder einem Unterstrich starten.
 3.  **Leerzeichen:** Leerzeichen sind innerhalb eines Namens nicht erlaubt.
@@ -15,6 +16,7 @@ Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werde
 6.  **Reservierte Wörter:** Schlüsselwörter der Sprache (z. B. `IF`, `THEN`, `VAR`, `END_VAR`) dürfen nicht als Identifikatoren verwendet werden.
 
 ### Best Practices (Empfehlungen)
+
 *   **Unterstriche:** Vermeiden Sie einfache Unterstriche am Anfang von Namen, da diese häufig für systeminterne Bibliotheksfunktionen reserviert sind.
 *   **Doppelte Unterstriche:** Diese sind in vielen Systemen reserviert oder verboten.
 *   **Klarheit:** Namen sollten selbsterklärend sein. Verwenden Sie lieber `Temperatur_Sensor_1` statt `T_S1`.

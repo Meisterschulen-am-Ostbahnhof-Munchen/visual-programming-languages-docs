@@ -1,8 +1,10 @@
 # logiBUS_IE2A
+
 ![logiBUS_IE2A](./logiBUS_IE2A.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `logiBUS_IE2A` is a composite block (FB) for processing events at digital inputs of the logiBUS system. It extends the functionality of the underlying block `logiBUS_IE2` by adding a dedicated adapter output for event messages and allows the transfer of parameters such as long press times or multi-click counters. The block serves as a standardized interface between the logiBUS hardware and a higher-level control logic.
 ## Interface Structure
 
@@ -53,6 +55,7 @@ The `logiBUS_IE2A` is a purely structural block that encapsulates the logic of t
 The data flows are hard-coded in the internal network and conform to the protocol of `logiBUS_IE2`.
 
 ## Technical Features
+
 - **Composite Structure**: The function block does not contain its own state machine, but delegates all logic to the internal FB `logiBUS_IE2`.
 - **Predefined Initial Values**: The inputs `Input` and `InputEvent` are pre-assigned to `Invalid`, and `arg` to `65535`. This prevents misconfigurations as long as the parameters are not explicitly set.
 - **Adapter Output**: Event output is provided via a unidirectional adapter (`AE`), which enables loose coupling to the calling application.
@@ -63,11 +66,13 @@ The data flows are hard-coded in the internal network and conform to the protoco
 The `logiBUS_IE2A` does not have its own state machine (no ECC). The internal function block `logiBUS_IE2` implements the necessary states for event detection and output. From the perspective of the composite function block, only the cyclic processes INIT → INITO and REQ → (event output via adapter) are relevant.
 
 ## Application Scenarios
+
 - **Button and Switch Evaluation**: Detection of single and multiple clicks as well as long presses on the digital inputs of a logiBUS module.
 - **Configurable Event Detection**: The `arg` input allows for dynamic definition of thresholds for long press times or the number of multiple clicks.
 - **Integration into Higher-Level Controllers**: The adapter output enables seamless integration with automation systems that communicate via adapter interfaces.
 
 ## Comparison with Similar Function Blocks
+
 - **`logiBUS_IE2`**: This function block is used within `logiBUS_IE2A`. It offers the same functionality, but without the dedicated adapter output and without the aggregation of parameters in a composite structure.
 - **`logiBUS_IE2S`** (if present): Another function block in the same family, which may differ in additional status outputs or other event selection.
 - The **`logiBUS_IE2A`** is characterized by its simple configuration and standardized adapter interface, which facilitates reuse in different projects.

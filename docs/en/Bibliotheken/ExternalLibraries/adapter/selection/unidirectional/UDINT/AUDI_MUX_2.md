@@ -1,8 +1,10 @@
 # AUDI_MUX_2
+
 ![AUDI_MUX_2](./AUDI_MUX_2.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AUDI_MUX_2** is a generic multiplexer function block (FB) according to IEC 61499. It allows the selection of one of two input values via an index (K) and forwards the selected value to the output. The FB is implemented as a generic block, so the specific data type of the values can be flexibly defined using adapters.
 ## Interface Structure
 
@@ -52,16 +54,14 @@ All adapters are of type `adapter::types::unidirectional::AUDI`. This generic ad
 The function block operates according to the multiplexer principle:
 
 1. An incoming event `REQ` triggers processing.
-
 2. The index `K` is read. It must have the value 0 or 1.
-
 3. Depending on `K`, the corresponding adapter socket `IN1` (K=0) or `IN2` (K=1) is activated, and its data value is transferred to plug `OUT`.
-
 4. After successful transfer, a `CNF` event is sent.
 
 The transfer occurs synchronously during event processing. It must be ensured that valid values are present at sockets `IN1` and `IN2` before sending `REQ`.
 
 ## Technical Features
+
 - **Generic Function Block**: The function block is declared as a generic type (`GEN_AUDI_MUX`). This allows it to be used in various contexts with different data types without requiring a separate implementation for each type.
 - **Adapter-Based Interface**: The use of adapters instead of fixed data ports enables flexible coupling with other function blocks that implement the same adapter type.
 - **Index Range**: The index `K` is declared as `UINT`, but is restricted to the values 0 and 1 in the multiplexer. Values outside this range result in undefined behavior (no error handling in the function block).
@@ -78,11 +78,13 @@ The FB does not have an explicit state machine (ECC). Its functionality is purel
 An internal state is not required.
 
 ## Application Scenarios
+
 - **Selection between two measured values**: In automation technology, the FB can be used to switch between two sensor values (e.g., temperature, pressure), controlled by an operating mode.
 - **Data Source Switching**: In communication systems, the function block selects between two parallel data streams, depending on a control signal.
 - **Parameter Selection**: In control applications, the function block can be used to pass different sets of parameters (as structures) to a subsequent algorithm.
 
 ## Comparison with Similar Function Blocks
+
 - **IEC 61499 Standard MUX**: The standard MUX usually works with fixed data types and more than two inputs. `AUDI_MUX_2` is specifically limited to two inputs but is implemented generically via adapters.
 - **Multi-Adapter Selector**: A generic 2-to-1 multiplexer with adapters offers the same basic functionality, but often with additional states or error handling. `AUDI_MUX_2` is minimalist and suitable for simple switching tasks without side effects.
 

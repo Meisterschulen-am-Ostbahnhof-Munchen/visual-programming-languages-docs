@@ -10,15 +10,19 @@ Der Funktionsblock **AUI_TO_AUS** dient als zusammengesetzter Baustein zur Umwan
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine separaten Ereignis-Eingänge. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter.
 
 ### **Ereignis-Ausgänge**
+
 Keine separaten Ereignis-Ausgänge. Die Ereignisweitergabe erfolgt über die angeschlossenen Adapter.
 
 ### **Daten-Eingänge**
+
 Keine separaten Daten-Eingänge. Die Dateneingabe erfolgt über die angeschlossenen Adapter.
 
 ### **Daten-Ausgänge**
+
 Keine separaten Daten-Ausgänge. Die Datenausgabe erfolgt über die angeschlossenen Adapter.
 
 ### **Adapter**
@@ -75,4 +79,5 @@ Der **AUI_TO_AUS** ist ein kompakter und fokussierter Baustein zur Adapter‑Kon
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

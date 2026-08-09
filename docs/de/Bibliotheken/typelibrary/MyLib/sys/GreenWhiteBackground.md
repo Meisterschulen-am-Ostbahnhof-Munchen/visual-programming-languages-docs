@@ -5,11 +5,13 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung "GreenWhiteBackground" demonstriert die Verwendung von Hintergrundfarben in einem ISOBUS-konformen System. Die Subapplikation ermöglicht das Umschalten zwischen grüner und weißer Hintergrundfarbe für ein bestimmtes Objekt basierend auf einem Selektorsignal.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: GreenWhiteBackground
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
     - **Q_BackgroundColour**: isobus::UT::Q::Q_BackgroundColour
@@ -56,6 +58,7 @@ Die Übung "GreenWhiteBackground" demonstriert die Verwendung von Hintergrundfar
 **Start der Übung**: Die Übung wird durch das REQ-Ereignis gestartet, wobei DI1 den Farbwechsel steuert und u16ObjId das Zielobjekt identifiziert.
 
 ## Zusammenfassung
+
 Die GreenWhiteBackground-Übung zeigt eine praktische Anwendung zur dynamischen Änderung von Hintergrundfarben in ISOBUS-Systemen. Durch die Kombination eines Selektionsbausteins mit einem ISOBUS-spezifischen Farbsteuerungsbaustein wird ein einfacher aber effektiver Farbwechselmechanismus implementiert, der grundlegende Konzepte der Funktionsbausteinprogrammierung und ISOBUS-Kommunikation vermittelt.
 
 ## 🛠️ Zugehörige Übungen

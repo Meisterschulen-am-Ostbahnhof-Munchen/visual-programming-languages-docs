@@ -11,15 +11,19 @@ Der Funktionsbaustein **AR_ADD_2** dient der Berechnung der arithmetischen Addit
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine
 
 ### **Ereignis-Ausgänge**
+
 Keine
 
 ### **Daten-Eingänge**
+
 Keine
 
 ### **Daten-Ausgänge**
+
 Keine
 
 ### **Adapter**
@@ -66,4 +70,5 @@ Im Vergleich zu klassischen, Daten-eingabebasierten Additionsbausteinen (z. B.
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

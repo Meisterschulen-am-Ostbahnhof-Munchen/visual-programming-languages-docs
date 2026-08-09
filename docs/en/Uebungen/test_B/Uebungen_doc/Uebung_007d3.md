@@ -1,8 +1,10 @@
 # Exercise_007d3: Flasher with E_CYCLE and E_T_FF
+
 ![Uebung_007d3_network](./Uebung_007d3_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a randomly controlled flasher using the function blocks `E_CYCLE`, `FB_RANDOM`, `E_D_FF_ANY_HYS`, `F_MOVE`, and `F_GT`. A cyclic clock triggers the generation of a random value, which, via a flip-flop with hysteresis and a comparator, switches a digital output. The flasher thus simulates an irregular on/off behavior.
 ## Function Blocks Used
 
@@ -50,6 +52,7 @@ This exercise demonstrates the combination of cyclic event control, random value
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

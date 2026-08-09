@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der AX_MUX_2 ist ein generischer Multiplexer-Funktionsblock, der zwei Eingangssignale über einen Indexwert selektiert und an einen Ausgang weiterleitet. Der Baustein dient zur dynamischen Auswahl zwischen zwei verschiedenen Eingangssignalen basierend auf einem Steuerindex.
 
 ![AX_MUX_2](AX_MUX_2.svg)
@@ -11,23 +12,29 @@ Der AX_MUX_2 ist ein generischer Multiplexer-Funktionsblock, der zwei Eingangssi
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **REQ**: Setzt den Indexwert K und startet den Multiplexvorgang
 
 ### **Ereignis-Ausgänge**
+
 - **CNF**: Bestätigt die erfolgreiche Setzung des Index K
 
 ### **Daten-Eingänge**
+
 - **K** (UINT): Indexwert zur Auswahl des Eingangssignals (0 oder 1)
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Datenausgänge vorhanden*
 
 ### **Adapter**
+
 - **IN1** (Socket): Eingabewert 1 (wird bei K=0 ausgewählt)
 - **IN2** (Socket): Eingabewert 2 (wird bei K=1 ausgewählt)
 - **OUT** (Plug): Ausgabesignal (leitet den selektierten Eingang weiter)
 
 ## Funktionsweise
+
 Der AX_MUX_2 arbeitet als 2:1-Multiplexer. Bei Empfang eines REQ-Ereignisses wird der anliegende Indexwert K ausgewertet:
 
 - Bei K=0 wird der Eingang IN1 an den Ausgang OUT weitergeleitet
@@ -35,12 +42,14 @@ Der AX_MUX_2 arbeitet als 2:1-Multiplexer. Bei Empfang eines REQ-Ereignisses wir
 Nach erfolgreicher Verarbeitung wird ein CNF-Ereignis generiert.
 
 ## Technische Besonderheiten
+
 - Verwendet unidirektionale AX-Adapter für die Signalübertragung
 - Unterstützt den generischen Funktionsblockmechanismus
 - Arbeitet mit UINT-Datentyp für den Indexparameter
 - Bietet klare Ereignisbestätigung durch CNF-Ausgang
 
 ## Zustandsübersicht
+
 Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
 
 1. Wartezustand auf REQ-Ereignis
@@ -48,12 +57,14 @@ Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
 3. Bestätigungszustand mit CNF-Ausgabe
 
 ## Anwendungsszenarien
+
 - Signalrouting in Steuerungssystemen
 - Umschaltung zwischen verschiedenen Sensoreingängen
 - Dynamische Auswahl von Aktorsteuerungen
 - Modulare Systemarchitekturen mit konfigurierbaren Signalpfaden
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einfachen Multiplexern bietet AX_MUX_2:
 
 - Adapter-basierte Schnittstellen für bessere Modularität
@@ -67,4 +78,5 @@ Vergleich mit [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/F_
 * [Uebung_090a1_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
 
 ## Fazit
+
 Der AX_MUX_2 ist ein effizienter und flexibler Multiplexer-Baustein, der sich ideal für modulare Steuerungssysteme eignet. Seine Adapter-basierte Architektur ermöglicht einfache Integration in bestehende Systeme, während der Ereignismechanismus eine zuverlässige und nachvollziehbare Signalverarbeitung gewährleistet.

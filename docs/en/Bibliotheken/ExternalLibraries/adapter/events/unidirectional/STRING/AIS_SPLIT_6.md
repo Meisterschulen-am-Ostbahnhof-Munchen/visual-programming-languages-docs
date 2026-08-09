@@ -1,8 +1,10 @@
 # AIS_SPLIT_6
+
 ![AIS_SPLIT_6](./AIS_SPLIT_6.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AIS_SPLIT_6** is used to distribute an incoming AIS (Automation Interface Signal) signal to six separate AIS outputs. It acts as a generic splitter, forwarding the incoming signal to all connected outputs without delay or manipulation.
 ## Interface Structure
 
@@ -39,6 +41,7 @@ No data outputs available (data transmission occurs exclusively via the adapter)
 The module receives an AIS signal via socket `IN` and forwards it simultaneously and identically to all six plugs `OUT1` to `OUT6`. No data processing, filtering, or intermediate storage takes place – the distribution is purely signal-based. The function block operates unidirectionally (only from the input to the outputs) and thus represents a simple 1:6 multiplication of the AIS signal.
 
 ## Technical Features
+
 - **Generic Type**: The function block is implemented as a generic function block (`GEN_AIS_SPLIT`), meaning it can be used with various AIS types as long as the adapter definition (`adapter::types::unidirectional::AIS`) matches.
 - **Unidirectional**: Data exchange occurs only in one direction – from the input to the outputs. Feedback from the outputs to the input is not supported.
 - **No Internal Logic**: Since there are neither events nor data inputs/outputs, the function block operates purely passively and requires no state machine or algorithms.
@@ -49,6 +52,7 @@ The module receives an AIS signal via socket `IN` and forwards it simultaneously
 This function block does not have its own state machine (ECC). Its behavior is deterministic and timeless: An incoming AIS signal is immediately passed on to all outputs. There are no internal states or steps.
 
 ## Application Scenarios
+
 - **Distributing Control Signals**: An AIS signal from a central controller (e.g., a higher-level function block) must be forwarded to several subordinate components.
 - **Monitoring and Parallel Operation**: A signal should be used simultaneously for control, monitoring, and logging.
 - **Test Setups**: A uniform test signal is distributed to several simulated or real modules.
@@ -65,6 +69,7 @@ The `AIS_SPLIT_6` is a useful and minimalist module for signal splitters in AIS-
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

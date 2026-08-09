@@ -1,8 +1,10 @@
 # Exercise_011: Numeric Value Input
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_011`. It demonstrates how to read numerical values (data) from an ISOBUS terminal.
 
 ## 🎧 Podcast
+
 ![Uebung_011_network](./Uebung_011_network.svg)
 
 * [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
@@ -24,6 +26,7 @@ Learning how to process numeric variables in the ISOBUS context. This exercise d
 [cite_start]The subapplication `Uebung_011.SUB` uses an input block for numeric values[cite: 1].
 
 ### Function Blocks (FBs)
+
 * **`InputNumber_I1`**: Type `NumericValue_ID`. [cite_start]This block represents a numeric input field (Data Mask Object) on the ISOBUS terminal[cite: 1]. Once the user confirms the input, the module sends the new value to port `IN` (DWORD) and fires a `IND` event.
 * **`F_DWORD_TO_UDINT`**: A conversion module that transforms the raw 32-bit value from the terminal into an unsigned integer (UDINT) for further logic processing.
 
@@ -33,7 +36,6 @@ Learning how to process numeric variables in the ISOBUS context. This exercise d
 
 The logic waits for confirmation of the input at the terminal:
 
-```
 ```xml
 <EventConnections>
 <Connection Source="InputNumber_I1.IND" Destination="F_DWORD_TO_UDINT.REQ"/>
@@ -41,20 +43,7 @@ The logic waits for confirmation of the input at the terminal:
 <DataConnections>
 <Connection Source="InputNumber_I1.IN" Destination="F_DWORD_TO_UDINT.IN"/>
 </DataConnections>
-
-
-[cite_start][cite: 1]
-
-1. The user taps the numeric keypad `I1` on the terminal, enters, for example, "42", and presses "Enter".
-
-2. The terminal sends the value to the controller via the CAN bus.
-
-3. The function block `InputNumber_I1` receives the value and triggers the event `IND`.
-
-4. The conversion function block takes the value and makes it available to the rest of the application as a standard data type.
-
------
-
+```
 ## Application Example
 
 **Setting Target Values**:

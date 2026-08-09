@@ -1,8 +1,10 @@
 # DualHysteresis_AR_AX
+
 ![DualHysteresis_AR_AX](./DualHysteresis_AR_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **DualHysteresis_AR_AX** performs a two-way analog-to-digital conversion with adjustable hysteresis.
 Two binary output signals (`DO_UP`, `DO_DOWN`) are generated from an analog input value. These signals are switched depending on the position of the input signal relative to three parameters:
 
@@ -20,6 +22,7 @@ The switching points are calculated as follows:
 This ensures reliable switching behavior with a reduced switching frequency, typical for control loops. with switching threshold and feedback hysteresis.
 
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Description |
@@ -45,6 +48,7 @@ This ensures reliable switching behavior with a reduced switching frequency, typ
 | `QO` | BOOL | Output qualifier – is set to the value of `QI`, reflects the operating state. |
 
 ### **Adapters**
+
 **Sockets (Input Adapters):**
 
 | Adapter | Type | Description |
@@ -62,22 +66,21 @@ This ensures reliable switching behavior with a reduced switching frequency, typ
 | `DO_DOWN` | adapter::types::unidirectional::AX | Binary output for the **DOWN** state (switches on when the lower threshold is not reached) |
 
 ## Functionality
+
 After successful initialization (`INIT` with `QI = TRUE`), the function block switches to the **Neutral** state. In this state, both outputs (`DO_UP`, `DO_DOWN`) are set to `FALSE`.
 
 As soon as a new value arrives via the adapter `INPUT` (event `E1`), the hysteresis logic is evaluated:
 
 1. **Turn on UP**: When `INPUT.D1 >= MI.D1 + ABS(DEAD.D1) + ABS(HYSTERESIS.D1)`, the **UP** state becomes active. Then, the following applies: `DO_UP = TRUE`, `DO_DOWN = FALSE`.
-
 2. **Turn on DOWN**: When `INPUT.D1 <= MI.D1 - ABS(DEAD.D1) - ABS(HYSTERESIS.D1)`, the **DOWN** state becomes active. Then the following applies: `DO_UP = FALSE`, `DO_DOWN = TRUE`.
-
 3. **Return to Neutral**:
-
 - From **UP**, the return occurs at `INPUT.D1 < MI.D1 + ABS(DEAD.D1)` (strict condition).
 - From **DOWN**, the return occurs at `INPUT.D1 > MI.D1 - ABS(DEAD.D1)` (strict condition).
 
 If `QI = FALSE` occurs during a `INIT` event, the function block is deinitialized and both outputs are set to `FALSE`. A subsequent `INIT` event with `QI = TRUE` restarts the process.
 
 ## Technical Features
+
 - **Use of Absolute Values**: The parameters `DEAD` and `HYSTERESIS` are internally treated as `ABS()`, so negative values do not lead to undesirable behavior.
 - **Symmetrical Switching Points**: The thresholds are symmetrically positioned around the mean value `MI`.
 - **Qualifier `QI`**: The function block only operates at `QI = TRUE`. At `FALSE`, all outputs are forcibly reset (safe state).
@@ -105,11 +108,13 @@ If `QI = FALSE` occurs during a `INIT` event, the function block is deinitialize
 - `DeInit` → `START`(Automatic)
 
 ## Application Scenarios
+
 - **Two-Stage Temperature Control**: A heating and a cooling circuit can be operated with their own hysteresis settings, e.g., heating switched on below 18 °C, switched off above 22 °C; cooling switched on above 30 °C, switched off below 26 °C.
 - **Level Monitoring**: Two switching points (MIN/MAX) with hysteresis to prevent contact bounce in pump or valve controls.
 - **Limit Monitoring with Two Alarm Thresholds**: Upper and lower alarms with on/off delay via hysteresis.
 
 ## Comparison with Similar Function Blocks
+
 The **DualHysteresis_AR_AX** extends simple hysteresis (switch-on point = switch-off point + hysteresis) by adding a second, inverse direction.
 
 - **Simple Hysteresis**: only one output, one switching threshold.
@@ -119,4 +124,5 @@ The **DualHysteresis_AR_AX** extends simple hysteresis (switch-on point = switch
 Compared to a PID controller, this function block is purely switching – it does not generate continuous control signals, but is ideally suited for simple two-point control applications.
 
 ## Conclusion
+
 The **DualHysteresis_AR_AX** function block is a robust, event-driven solution for converting an analog signal into two digital outputs with adjustable hysteresis. Thanks to the use of absolute values and clear switching logic, it is easy to parameterize and avoids switching cycles. It is particularly suitable for industrial applications where two opposing actuators (e.g., heating/cooling, opening/closing) need to be operated with a defined switching interval.

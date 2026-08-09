@@ -19,6 +19,7 @@ In dieser Sub-Application kommen Hardware-Treiberbausteine sowie Logik- und Zeit
 ### Sub-Bausteine:
 
 #### 1. Hardware-Eingang
+
 - **Name**: `DigitalInput_I1`
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameter**:
@@ -26,11 +27,13 @@ In dieser Sub-Application kommen Hardware-Treiberbausteine sowie Logik- und Zeit
 - **Funktionsweise**: Stellt den Zustand des digitalen Eingangs für die Logik bereit.
 
 #### 2. Flankenerkennung (Rising Trigger)
+
 - **Name**: `AX_FB_R_TRIG`
 - **Typ**: `adapter::iec61131::edgeDetection::AX_FB_R_TRIG`
 - **Funktionsweise**: Dieser Baustein überwacht das Eingangssignal. Er gibt nur dann ein Signal am Ausgang `Q` aus, wenn das Eingangssignal `CLK` von `FALSE` (0) auf `TRUE` (1) wechselt (steigende Flanke). Dauersignale werden ignoriert.
 
 #### 3. Impuls-Timer (Pulse Timer)
+
 - **Name**: `AX_TP`
 - **Typ**: `adapter::events::unidirectional::timers::AX_TP`
 - **Parameter**:
@@ -38,6 +41,7 @@ In dieser Sub-Application kommen Hardware-Treiberbausteine sowie Logik- und Zeit
 - **Funktionsweise**: Erzeugt einen Impuls am Ausgang `Q` mit der Dauer, die in `PT` definiert ist, sobald der Eingang `IN` aktiviert wird.
 
 #### 4. Hardware-Ausgang
+
 - **Name**: `DigitalOutput_Q1`
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:

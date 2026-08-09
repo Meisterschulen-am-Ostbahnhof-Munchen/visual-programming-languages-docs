@@ -1,8 +1,11 @@
 # 📏 Standards and Norms
+
 In industrial automation, standards form the foundation for interoperability, safety, and efficiency. They ensure that systems from different manufacturers can work together and that software remains portable.
 ## IEC 61499: The Standard for Distributed Systems
+
 IEC 61499 is the central standard for this project. It extends the IEC 61131-3 model with a system-wide architecture for distributed control systems.
 ### Structure of the Standard
+
 The standard is divided into several parts, each covering different aspects:
 
 * **Part 1: Architecture:** Defines the basic model for distributed systems, including function blocks, resources, and devices.
@@ -10,6 +13,7 @@ The standard is divided into several parts, each covering different aspects:
 * **Part 4: Rules for Compliance Profiles:** Defines how specific profiles must be created to guarantee interoperability between different systems (e.g., for a specific industry).
 
 ### Sources of Supply
+
 Standards are traditionally obtained in Germany through **Beuth Verlag** (DIN). A helpful tip from practical experience is to obtain them through **EVS (Estonian Centre for Standardisation and Accreditation)**. The identical European standards are often available there at significantly lower costs (especially the "3 User Licence").
 
 Standards are typically obtained through **EVS** (Estonian Centre for Standardisation and Accreditation)**. **Links:**
@@ -56,5 +60,5 @@ All registered symbols can be viewed in the ISO Online Browsing Platform (OBP) [
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
 
+* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]

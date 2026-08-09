@@ -7,21 +7,26 @@
 ![F_DIVTIME](F_DIVTIME.svg)
 
 ## Einführung
+
 Der **F_DIVTIME** ist ein spezialisierter Funktionsbaustein zur Division von Zeitwerten durch numerische Faktoren, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitberechnungen mit TIME- und ANY_NUM-Datentypen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (TIME): Zu dividierende Zeitdauer
 - `IN2` (ANY_NUM): Divisor (numerischer Wert)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (TIME): Ergebnis der Division (IN1 / IN2)
 
 ## Funktionsweise

@@ -1,10 +1,13 @@
 # E_SR_SYM_INIT
+
 ![E_SR_SYM_INIT](./E_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flop with symmetric startup behavior and an INIT interface. It extends a simple SR flip-flop by adding the ability to set the output `Q` to a predefined value (`Q_INIT`) and perform deinitialization during the INIT event. The input qualification `QI` controls whether the operations (S, R, INIT) actually affect `Q`.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Comment |
@@ -35,9 +38,11 @@ The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flo
 | `Q` | BOOL | Value of the flip-flop (bistable output) |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 The function block has five states: `START`, `Init`, `DeInit`, `SET`, and `RESET`.
 
 - **START**: Idle state after initialization.
@@ -82,11 +87,13 @@ DeInit
 ▼
 START
 ## Application Scenarios
+
 - **Controllers that require a defined output state after power-up** (e.g., machines: valve closed or open).
 - **Systems with safety-critical initialization**, where the output may only be set after authorization by a qualifier (`QI`).
 - **Block chains**, where deinitialization (e.g., during a system reset) should return the function block to a default state without the actual set/reset signals still being active.
 
 ## Comparison with Similar Function Blocks
+
 - **E_SR** (Standard SR Flip-Flop): Has no initialization behavior; it starts undefined or with the last value. `E_SR_SYM_INIT` extends this with defined initialization and deinitialization.
 - **E_RS**: Swaps set/reset priority, but without an initialization mechanism.
 - **E_SR_SYM**: Symmetric SR flip-flop without an INIT interface; `E_SR_SYM_INIT` adds the INIT startup logic.
@@ -94,4 +101,5 @@ START
 The advantage of `E_SR_SYM_INIT` lies in the combination of qualified initialization with an explicit deinitialization path.
 
 ## Conclusion
+
 The function block `E_SR_SYM_INIT` offers a robust, qualified flip-flop with a defined startup state. Its symmetric startup logic and deinitialization capability make it ideal for applications requiring reproducible behavior after system startup or reset. The separation of events and qualification allows for flexible integration into higher-level control structures.

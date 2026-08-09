@@ -1,10 +1,13 @@
 # IA_GBSD
+
 ![IA_GBSD](./IA_GBSD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **IA_GBSD** serves as an adapter wrapper for the ISOBUS-compatible module **I_GBSD** ("Ground Based Speed and Distance"). It encapsulates the initialization and data communication of a ground-based speed and distance sensor according to ISO 11783-7 (PGN 65097) and provides the values via unidirectional adapter interfaces.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -39,6 +42,7 @@ The function block **IA_GBSD** serves as an adapter wrapper for the ISOBUS-compa
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout status |
 
 ## Functionality
+
 The function block is implemented as a pure adapter wrapper:
 
 - An INIT event at the input is directly forwarded to the internal block **I_GBSD**.
@@ -48,20 +52,24 @@ The function block is implemented as a pure adapter wrapper:
 - All data connections are established within the FB network between the inputs/outputs and the internal module.
 
 ## Technical Features
+
 - **Adapter-based interface**: The output data is not provided as fixed variables, but via unidirectional adapters (AUI, AUDI, AX), allowing for flexible integration with other components.
 - **ISOBUS compliance**: The FB implements PGN 65097 according to ISO 11783-7 – the standard for ground-based speed and distance in agricultural technology.
 - **Timeout monitoring**: The separate timeout adapter signals whether the sensor values have been updated within an expected time period.
 - **Compact design**: There is no separate state machine; all control logic resides in the internal module **I_GBSD**.
 
 ## State Overview
+
 The function block itself does not have an explicit finite state machine. The internal block goes through an initialization state (triggered by INIT) and an operating state in which speed, distance, and timeout status are continuously updated.
 
 ## Application Scenarios
+
 - **ISOBUS Control Units (TECUs)**: Integration of a radar sensor or other ground-based speed/distance sensor into an ISOBUS-compatible system.
 - **Agricultural Vehicles**: Provision of driving speed and distance traveled for downstream functions (e.g., metered applications, section control).
 - **Test and Simulation Environments**: Use of the adapter wrapper to replace the real sensor with a simulated data source.
 
 ## Comparison with Similar Modules
+
 - **IA_GBSD** vs. **I_GBSD**: I_GBSD is the natively programmed ISOBUS module, while IA_GBSD makes its functionality accessible exclusively via adapters. The wrapper simplifies wiring in graphical editors and separates the actual logic from the interface connection.
 - **Alternative Adapter Wrappers**: Similar wrappers exist for other ISOBUS PGNs (e.g., for navigation data or hydraulic systems), which also provide adapters for their output values.
 

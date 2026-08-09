@@ -1,8 +1,10 @@
 # Exercise_038_AX: Running Light 8 Pure Time Control
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_038_AX`. We will build a classic sequencer.
 ----
 ## Objective of the Exercise
+
 Implementation of an automatic sequence of 8 steps.
 
 -----
@@ -25,17 +27,11 @@ Implementation of an automatic sequence of 8 steps.
 ## Functionality
 
 1. Start via button `I1` -> sequence jumps to `S1`.
-
 2. Output `DO_S1` becomes active -> `Q1` lights up.
-
 3. After `T#200ms`, the sequence automatically switches to `S2`.
-
 4. `DO_S1` goes out, `DO_S2` turns on -> `Q2` lights up.
-
 5. ... this continues until `S8`.
-
 6. After `S8`, it jumps back to `S1` (loop).
-
 7. Reset via button `I4` -> Everything off.
 
 -----

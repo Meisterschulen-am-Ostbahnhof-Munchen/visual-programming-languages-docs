@@ -1,6 +1,8 @@
 #Control
 # Control
+
 ## 🎧 Podcast
+
 * [Eclipse 4diac: Revolutionizing Industrial Control with Open-Source Cyber-Physical Systems](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Eclipse-4diac-Revolutionizing-Industrial-Control-with-Open-Source-Cyber-Physical-Systems-e368lqu)
 * [Simplifying Industrial Control: Your Deep Dive into Eclipse 4diac and IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Simplifying-Industrial-Control-Your-Deep-Dive-into-Eclipse-4diac-and-IEC-61499-e3681v8)
 * [The Future of Industrial Control: Decoding IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/The-Future-of-Industrial-Control-Decoding-IEC-61499-e36cjlj)

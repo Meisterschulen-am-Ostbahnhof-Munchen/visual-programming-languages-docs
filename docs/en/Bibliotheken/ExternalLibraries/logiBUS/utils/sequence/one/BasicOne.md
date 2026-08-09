@@ -1,10 +1,13 @@
 # BasicOne
+
 ![BasicOne](./BasicOne.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **BasicOne** function block is a basic, event-driven block according to IEC 61499. It serves as a simple sequence element for initialization, execution of a main operation, and proper deinitialization. The block is particularly suitable for control sequences where a resource state (e.g., device ready) needs to be monitored and reset. The block is included in the package `logiBUS::utils::sequence::one`.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Type | Accompanying Data | Description |
@@ -34,15 +37,15 @@ The **BasicOne** function block is a basic, event-driven block according to IEC 
 | `DO1` | BOOL | First data output; During a normal operation, the value is `DI1` if `QI = TRUE` is present, otherwise `FALSE`. |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 The function block goes through a clearly defined lifecycle:
 
 1. **Start State (START)**: After startup, the function block waits for a `INIT` event.
-
 2. **Initialization (Init)**: If `INIT` is received with `QI = TRUE`, the function block executes the *initialize* algorithm. This sets `QO := QI` (i.e., `TRUE`). Then, `INITO` is sent, and the function block transitions to the **Initialized** state.
-
 3. **Normal Operation (NormalOp)**: In the **Initialized** state, a `REQ` event can initiate normal operation. The *normalOperation* algorithm sets `QO := QI` (still `TRUE`) and, if `QI = TRUE` is present, transfers the value from `DI1` to `DO1`. Afterward, `CNF` is sent, and the function block automatically returns to **Initialized**.
 
 The normalOperation* algorithm sets `QO := QI` (still `TRUE`) and transfers the value from `DI1` to `DO1`. 4. **DeInitialization**: If a `INIT` event with `QI = FALSE` is received in the **Initialized** state, the function block executes the *deInitialize* algorithm. This sets `QO := FALSE` and `DO1 := FALSE`. Subsequently, `INITO` is sent, and the function block returns to the **START** start state.
@@ -67,14 +70,17 @@ Important: The normal operation is only executed if `QI = TRUE` is present. In t
 | `DeInit` | Deinitialization phase; sets `QO = FALSE` and `DO1 = FALSE`. | Executes the *deInitialize* algorithm, sending `INITO`. |
 
 ## Application Scenarios
+
 - **Initializing a Component**: A device must be configured upon power-up. Using `INIT` (QI=TRUE), the device state is set to "ready." `REQ` then executes the actual logic cyclically.
 - **Resource Management**: The function block can be used as a simple sequencer for one-time initialization and subsequent deinitialization (e.g., for a database connection).
 - **Safety-Oriented Control**: The qualifier `QI` ensures that the output `DO1` can only accept the input value if the function block is initialized. Deinitialization resets all outputs (`FALSE`).
 
 ## Comparison with similar building blocks
+
 - **BasicBOOLEAN**: A simple Boolean building block without a state machine that only reacts to an event and passes a value. `BasicOne`, on the other hand, offers an explicit initialization and deinitialization sequence.
 - **SR Flip-Flop**: A memory building block with set and reset capabilities. `BasicOne` is more of a state machine that implements a single start and stop operation, but does not have a hold function.
 - **SimpleCycle**: A cyclic building block that repeatedly performs the same operation. `BasicOne`It distinguishes between initialization and cyclic execution, allowing for a clean separation.
 
 ## Conclusion
+
 The function block `BasicOne` is an excellent basic element for control projects that require controlled initialization, reliable operation, and defined deinitialization. Its simple state machine and dependency on the qualifier `QI` make it flexible and easy to use without unnecessary complexity. It is suitable for both newcomers to the IEC 61499 world and experienced developers who need clear, reusable function blocks.

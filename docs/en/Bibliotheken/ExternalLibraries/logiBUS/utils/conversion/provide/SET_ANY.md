@@ -1,10 +1,13 @@
 # SET_ANY
+
 ![SET_ANY](./SET_ANY.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **SET_ANY** is used to write any value from input `IN` to a variable `OUT`, declared as an InOut parameter. The operation is triggered by an event at input `REQ` and acknowledged with the output event `CNF` after successful assignment. The function block is generic and can work with any data type, as long as the types of `IN` and `OUT` are compatible.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
@@ -33,15 +36,18 @@ OUT | ANY | **InOut Parameter** – used as both an input and an output (see Dat
 OUT | ANY | **InOut Parameter** – contains the value of the input `IN` after execution. The variable can also be used outside the function block. |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 The module has a single processing state, `REQ`. If an event occurs at the event input `REQ`, the algorithm `REQ` is executed:
 
 OUT := IN;
 After assignment, the output event `CNF` is sent. Execution is atomic – no further state logic is applied.
 
 ## Technical Features
+
 - **Generic Data Type `ANY`:** The function block can be used with any IEC 61499 data type (e.g., BOOL, INT, REAL, STRING, structures). Type compatibility between `IN` and `OUT` must be ensured by the user.
 - **InOut Mechanism:** `OUT` is declared as an InOut parameter. This means that the variable serves as both input (e.g., for read operations) and output. In the 4diac IDE, InOut is typically implemented as a reference to an external variable.
 - **Simple State Machine:** The function block contains only one state, making it very lightweight and resource-efficient.
@@ -55,6 +61,7 @@ After assignment, the output event `CNF` is sent. Execution is atomic – no fur
 There are no other states, no branches, and no time monitoring.
 
 ## Application-Specific Scenarios
+
 - **Variable Initialization:** A one-time initial value is set for a globally or instance-specific variable.
 - **Parameter Override:** At runtime, an existing value is overwritten with a new one, e.g., to change setpoints or configuration parameters.
 - **Point-to-Point Data Transfer:** When a value needs to be copied from a source to a directly connected destination without requiring separate logic.
@@ -74,6 +81,7 @@ SET_ANY` is a simple yet flexible function block for selectively overwriting var
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

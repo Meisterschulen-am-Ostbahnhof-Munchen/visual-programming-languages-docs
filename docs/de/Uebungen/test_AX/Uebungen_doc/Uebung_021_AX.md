@@ -11,6 +11,7 @@ Diese Übung realisiert eine einfache Steuerung für eine **Spiegelabfolge (1)**
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Softkey_UP_F1
+
 - **Typ**: `isobus::UT::io::Softkey::Softkey_IXA`
 - **Parameter**:
   - `QI` = TRUE (Baustein aktiv)
@@ -19,6 +20,7 @@ Diese Übung realisiert eine einfache Steuerung für eine **Spiegelabfolge (1)**
 - **Funktion**: Sendet bei Betätigung der Softkey-F1 ein Signal (Impuls) an den angeschlossenen Adapter.
 
 ### SoftKey_F2_DOWN
+
 - **Typ**: `isobus::UT::io::Softkey::Softkey_IXA`
 - **Parameter**:
   - `QI` = TRUE
@@ -27,6 +29,7 @@ Diese Übung realisiert eine einfache Steuerung für eine **Spiegelabfolge (1)**
 - **Funktion**: Sendet bei Betätigung der Softkey-F2 ein Signal an das SR-Glied.
 
 ### AX_FB_SR
+
 - **Typ**: `adapter::iec61131::bistableElements::AX_FB_SR`
 - **Parameter**: keine weiteren
 - **Adaptereingänge**:
@@ -37,6 +40,7 @@ Diese Übung realisiert eine einfache Steuerung für eine **Spiegelabfolge (1)**
 - **Funktion**: Ein **SR-Flipflop** (setzen – rücksetzen). Solange der Set-Eingang aktiv ist, bleibt Q1 = TRUE. Ein Signal am Reset-Eingang setzt Q1 auf FALSE.
 
 ### DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameter**:
   - `QI` = TRUE (Baustein aktiv)
@@ -72,4 +76,5 @@ Die Übung **Uebung_021_AX** demonstriert eine einfache Spiegelabfolge zur Steue
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

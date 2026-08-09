@@ -15,6 +15,7 @@ Die Sequenzer-Bausteine ermöglichen die Implementierung von Schrittketten (Sequ
 Diese Bausteine schalten zum nächsten Schritt, wenn entweder ein externes Ereignis (`S1_S2`, `S2_S3`, etc.) eintritt oder eine definierte Zeit (`DT_S*_S*`) abgelaufen ist.
 
 ### Verfügbare Typen
+
 - `sequence_ET_04_AX`: 4 Schritte, 4 Ausgänge.
 - `sequence_ET_04_loop_AX`: 4 Schritte, zyklisch (loop).
 - `sequence_ET_05_AX`: 5 Schritte, 5 Ausgänge.
@@ -29,6 +30,7 @@ Diese Bausteine schalten zum nächsten Schritt, wenn entweder ein externes Ereig
 Diese Bausteine schalten automatisch nach Ablauf der für den jeweiligen Schritt definierten Zeit weiter.
 
 ### Verfügbare Typen
+
 - `sequence_T_04_AX`: 4 Schritte, zeitgesteuert.
 - `sequence_T_04_loop_AX`: 4 Schritte, zyklisch.
 - `sequence_T_05_AX`: 5 Schritte, zeitgesteuert.
@@ -43,10 +45,12 @@ Diese Bausteine schalten automatisch nach Ablauf der für den jeweiligen Schritt
 Die Pattern-Sequenzer (`sequence_Pattern_xx_AX`) ermöglichen es, für jeden Schritt ein individuelles Bitmuster (Pattern) für die Ausgänge zu definieren. Dies ist ideal für Anwendungen, bei denen in einem Schritt mehrere Aktoren gleichzeitig in bestimmten Mustern geschaltet werden müssen.
 
 ### Verfügbare Typen
+
 - **[sequence_Pattern_04_04_loop_AX](../../../Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX.md)**: 4 Schritte, 4 Ausgänge, zyklisch.
 - **[sequence_Pattern_08_08_loop_AX](../../../Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX.md)**: 8 Schritte, 8 Ausgänge, zyklisch.
 
 ### Funktionsweise
+
 Jeder Zustand `S1` bis `Sx` hat einen zugehörigen Eingang `P_S1` bis `P_Sx` vom Typ `BYTE`. Die einzelnen Bits dieses Bytes steuern die Adapter-Ausgänge `Q1` bis `Qx`:
 
 - Bit 0 -> Ausgang Q1
@@ -62,6 +66,7 @@ Beim Übergang in einen neuen Zustand wird das entsprechende Muster sofort an di
 Im Gegensatz zur `ET`-Serie besitzen diese Bausteine **keine integrierte Zeitüberwachung**. Ein Weiterschalten erfolgt ausschließlich durch externe Ereignis-Signale.
 
 ### Verfügbare Typen
+
 - `sequence_E_04_AX`: 4 Schritte.
 - `sequence_E_04_loop_AX`: 4 Schritte, zyklisch.
 - `sequence_E_05_AX`: 5 Schritte.
@@ -76,9 +81,11 @@ Im Gegensatz zur `ET`-Serie besitzen diese Bausteine **keine integrierte Zeitüb
 Neben den universellen Schrittketten gibt es spezialisierte Bausteine für häufig vorkommende Aufgabenstellungen.
 
 ### Schiebersteuerung (`SchieberControl_AX`)
+
 Dieser Baustein dient zur sequentiellen Ansteuerung von Schiebern oder Ventilen mit Endlagenrückmeldung. Er bündelt die Logik für das Öffnen/Schließen und die Überwachung der Laufzeit.
 
 ### Links-Rechts-Verteiler (`LinksRechts_AX`)
+
 Spezialbaustein für Anwendungen wie z.B. Förderbänder oder Weichen, die zwischen zwei Richtungen oder Zuständen hin- und herschalten müssen, inklusive der notwendigen Verriegelungen und Umschaltpausen.
 
 ---

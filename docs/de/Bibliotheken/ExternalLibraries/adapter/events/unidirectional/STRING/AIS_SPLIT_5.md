@@ -10,15 +10,19 @@ Der Funktionsbaustein **AIS_SPLIT_5** dient als generischer Verteiler (Splitter)
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -63,4 +67,5 @@ Der `AIS_SPLIT_5` ist ein einfacher, aber wirkungsvoller generischer Funktionsba
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

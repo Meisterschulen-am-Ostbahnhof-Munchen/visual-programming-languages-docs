@@ -7,6 +7,7 @@ In der industriellen Automatisierung bilden Normen das Fundament für Interopera
 Die IEC 61499 ist die zentrale Norm für dieses Projekt. Sie erweitert das Modell der IEC 61131-3 um eine systemweite Architektur für verteilte Steuerungssysteme.
 
 ### Struktur der Norm
+
 Die Norm ist in mehrere Teile gegliedert, die unterschiedliche Aspekte abdecken:
 
 *   **Teil 1: Architektur:** Definiert das grundlegende Modell für verteilte Systeme, einschließlich Funktionsbausteinen (Function Blocks), Ressourcen und Geräten.
@@ -14,6 +15,7 @@ Die Norm ist in mehrere Teile gegliedert, die unterschiedliche Aspekte abdecken:
 *   **Teil 4: Regeln für Compliance-Profile:** Definiert, wie spezifische Profile erstellt werden müssen, um die Interoperabilität zwischen verschiedenen Systemen (z. B. für eine bestimmte Branche) zu garantieren.
 
 ### Bezugsquellen
+
 Normen sind in Deutschland klassischerweise über den **Beuth Verlag** (DIN) zu beziehen. Ein hilfreicher Tipp aus der Praxis ist der Bezug über die **EVS (Estonian Centre for Standardisation and Accreditation)**. Dort sind die identischen europäischen Normen oft deutlich kostengünstiger erhältlich (besonders die "3 User Licence").
 
 **Links:**
@@ -60,4 +62,5 @@ Alle registrierten Symbole können in der [ISO Online Browsing Platform (OBP)](h
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

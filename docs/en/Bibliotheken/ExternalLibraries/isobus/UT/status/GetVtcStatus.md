@@ -1,8 +1,10 @@
 # GetVtcStatus
+
 ![GetVtcStatus](./GetVtcStatus.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **GetVtcStatus** is a Service Interface Block (SIFB) that encapsulates the function `IsoVtcGetStatusInfo()` from the ISOBUS driver. It enables the reading of various status information from a VT client and the connected Virtual Terminal (VT). The block was developed according to the ISO 11783-6 standard and is suitable for integration into ISOBUS applications.
 ## Interface Structure
 
@@ -57,6 +59,7 @@ The event `REQ` initiates a specific query. The desired status value must be sel
 `` If `QI` is FALSE during the REQ call, the service is not executed and a corresponding error status is returned.
 
 ## Technical Features
+
 - The function block is implemented as a **Service Interface Block** (SIFB) and accesses the system-level ISOBUS driver library.
 - The possible values for `eVTInfo` (ISOVT_STATUS_e) are:
 
@@ -92,14 +95,12 @@ The event `REQ` initiates a specific query. The desired status value must be sel
 The function block implements simple state-driven logic:
 
 1. **Start State** – The function block waits for the event `INIT`.
-
 2. **Initialization** – Upon receiving `INIT` (with a valid QI), the service is initialized. If successful, `INITO` is sent with QO=TRUE. If an error occurs, QO=FALSE and a corresponding STATUS are sent.
-
 3. **Ready** – After successful initialization, any number of `REQ` events can be processed. Each `REQ` call triggers a call to `IsoVtcGetStatusInfo()` and the subsequent sending of `CNF`.
-
 4. **Error Handling** – If an internal error occurs during a REQ, `CNF` is output with QO=FALSE and an error description in `STATUS`.
 
 ## Application Scenarios
+
 - **Diagnostics and Monitoring** of an ISOBUS system: Reading the current VT address, graphics type, or boot time.
 - **Detection of VT Availability** by querying `VT_ALIVE` and `VT_DOWNLOAD_FINISHED`.
 - **Control of the softkey configuration** by querying the number of physical and virtual softkeys (`VT_PHYSICALSOFTKEYS`, `VT_VIRTUALSOFTKEYS`).

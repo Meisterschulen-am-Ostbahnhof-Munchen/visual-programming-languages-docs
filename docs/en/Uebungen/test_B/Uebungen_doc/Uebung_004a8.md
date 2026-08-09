@@ -1,8 +1,10 @@
 # Exercise_004a8: with E_SPLIT_2
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a8`. This is a variant of exercise 004a4, in which a specific function block is used for two outputs.
 ----
 ## Objective of the Exercise
+
 To become familiar with type-specific splitter function blocks. While `E_SPLIT` is often generic, function blocks like `E_SPLIT_2` explicitly define the number of outputs.
 
 -----

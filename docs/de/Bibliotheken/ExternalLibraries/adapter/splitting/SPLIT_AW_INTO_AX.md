@@ -10,15 +10,19 @@ Der Funktionsblock `SPLIT_AW_INTO_AX` dient dazu, ein 16‑Bit Wort (Typ `AW`) i
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt keine eigenständigen Ereignis-Eingänge auf der Fassade. Das initiale Ereignis wird über den Socket-Adapter `IN` (siehe Adapter) empfangen.
 
 ### **Ereignis-Ausgänge**
+
 Der Baustein besitzt keine eigenständigen Ereignis-Ausgänge auf der Fassade. Die Ausgangsereignisse werden über die Plug-Adapter `BIT_00` … `BIT_15` (siehe Adapter) abgegeben.
 
 ### **Daten-Eingänge**
+
 Der Baustein besitzt keine eigenständigen Daten-Eingänge auf der Fassade. Der zu verarbeitende 16‑Bit Wert wird über den Socket-Adapter `IN` (siehe Adapter) als Datenwert `D1` (Typ `WORD`) bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine eigenständigen Daten-Ausgänge auf der Fassade. Die 16 extrahierten Binärwerte werden über die Plug-Adapter `BIT_00` … `BIT_15` als Datenwert `D1` (Typ `BOOL`) ausgegeben.
 
 ### **Adapter**
@@ -72,4 +76,5 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten auf oberster Ebene. Der in
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

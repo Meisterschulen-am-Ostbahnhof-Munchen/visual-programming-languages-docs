@@ -1,10 +1,13 @@
 # Exercise_224b: Standard IEC 61131-3 FB_CTUD_ULINT (Up/Down Counter, ULINT) with Terminal Output (PHYS_LREAL)
+
 ![Uebung_224b_network](./Uebung_224b_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements an up/down counter according to IEC 61131-3 (function block `FB_CTUD_ULINT`) with the data type `ULINT`. The current counter value is converted into a physical value (`LREAL`) via a converter and displayed on a terminal output (e.g., a control panel). Control is achieved via four digital inputs (CU, CD, R, LD), and two digital outputs indicate the limit signals (QU, QD).
 ## Function Blocks (FBs) Used
+
 - **`FB_CTUD_ULINT`** (Type: `iec61131::counters::FB_CTUD_ULINT`)
 - Parameters: `PV` = `ULINT#10`
 - Event Input: `REQ` (trigger)
@@ -54,12 +57,6 @@ The flow is event-driven via **event connections**:
 
 `Output_QD.REQ` – updates the digital output `QD`
 
-`Output_QD.REQ` – updates the digital output `QD`
-
-`Output_QD.REQ` – updates the digital output `QD`
-
-`Output_QD.REQ` – updates the digital output `QD`
-
 `Output_QD.REQ` – updates The **data connections** transmit the following values:
 
 - The digital input signals (`Input_*.IN`) are routed directly to the corresponding data inputs of the meter: `CU`, `CD`, `R`, `LD`.
@@ -77,4 +74,5 @@ This exercise demonstrates the use of an IEC 61131-3 forward/down counter (`FB_C
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

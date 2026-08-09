@@ -1,8 +1,10 @@
 # AB_TO_AI
+
 ![AB_TO_AI](./AB_TO_AI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AB_TO_AI** is a composite function block for converting an **AB adapter (BYTE)** to an **AI adapter (INT)**. It enables the seamless integration of BYTE-based adapter interfaces into systems that expect INT values. Internally, the block uses the IEC 61131 conversion block `F_BYTE_TO_INT`.
 ## Interface Structure
 
@@ -40,16 +42,14 @@ The FB has no direct data outputs. The output value is provided via the adapter 
 ## Functionality
 
 1. An incoming event on **AB_IN.E1** triggers the processing.
-
 2. The BYTE value provided by **AB_IN.D1** is passed to the internal block `F_BYTE_TO_INT`.
-
 3. `F_BYTE_TO_INT` performs the type conversion and provides the INT value at its output `OUT`.
-
 4. After successful conversion, the event **AI_OUT.E1** is sent, and the INT value is available at **AI_OUT.D1**.
 
 The conversion is performed without loss of value range: BYTE (0…255) is directly mapped to INT.
 
 ## Technical Features
+
 - **Composite Function Block:** The logic is implemented entirely through an internal network consisting of a single conversion block.
 - **Reusable:** The block can be integrated into projects that require unidirectional adapter conversion.
 - **License:** The block and its associated materials are licensed under the **Eclipse Public License 2.0**.
@@ -60,6 +60,7 @@ The conversion is performed without loss of value range: BYTE (0…255) is direc
 The function block (FB) does not have its own internal state machine. Its behavior is determined solely by the triggering events and the embedded block `F_BYTE_TO_INT`. There are no persistent states.
 
 ## Application Scenarios
+
 - **Sensor Connection:** A sensor delivers data as BYTE via an AB adapter; downstream processing expects INT values via an AI adapter.
 - **Protocol Adaptation:** In heterogeneous communication paths, BYTE-encoded information must be converted into an INT-based data model.
 - **Adapter Mediation:** As an intermediary between two system components that use different adapter types.
@@ -75,6 +76,7 @@ The **AB_TO_AI** is a useful and simple function block that bridges the gap betw
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -10,15 +10,19 @@ Der Composite FB `AI_TO_AB` dient der Umwandlung eines **INT**-Werts, der über 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine eigenständigen Ereignis-Eingänge. Die ereignisgesteuerte Kommunikation erfolgt über den AI_IN-Adapter (siehe Adapter).
 
 ### **Ereignis-Ausgänge**
+
 Keine eigenständigen Ereignis-Ausgänge. Die ereignisgesteuerte Ausgabe erfolgt über den AB_OUT-Adapter (siehe Adapter).
 
 ### **Daten-Eingänge**
+
 Keine eigenständigen Daten-Eingänge. Der zu konvertierende INT-Wert wird über den AI_IN-Adapter bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 Keine eigenständigen Daten-Ausgänge. Der konvertierte BYTE-Wert wird über den AB_OUT-Adapter ausgegeben.
 
 ### **Adapter**

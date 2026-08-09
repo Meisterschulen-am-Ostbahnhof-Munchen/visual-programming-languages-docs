@@ -13,24 +13,30 @@ Der Funktionsbaustein `AI_SUB_2` ist ein generischer, arithmetischer Funktionsba
 Da dieser Funktionsbaustein vollständig auf einer Adapter-Architektur basiert, besitzt er keine direkten, klassischen Ereignis- oder Datenkanäle auf der Bausteinoberfläche. Die gesamte Kommunikation wird über die Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden (die Ereignissteuerung ist in den Adaptern gekapselt).*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden (die Ereignissteuerung ist in den Adaptern gekapselt).*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### Sockets (Eingangs-Adapter)
+
 *   **IN1** (Typ: `adapter::types::unidirectional::AI`): Der erste analoge Eingangswert (Minuend) für die Subtraktionsoperation.
 *   **IN2** (Typ: `adapter::types::unidirectional::AI`): Der zweite analoge Eingangswert (Subtrahend), der von `IN1` abgezogen wird.
 
 #### Plugs (Ausgangs-Adapter)
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AI`): Das Ergebnis der Subtraktion (Differenz: `IN1 - IN2`).
 
 ## Funktionsweise

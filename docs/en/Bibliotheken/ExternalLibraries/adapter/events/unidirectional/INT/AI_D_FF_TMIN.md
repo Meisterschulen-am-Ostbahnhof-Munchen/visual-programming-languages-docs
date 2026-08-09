@@ -1,8 +1,10 @@
 # AI_D_FF_TMIN
+
 ![AI_D_FF_TMIN](./AI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AI_D_FF_TMIN** implements a D flip-flop (data latch) with a minimum inter-disposal time between successive output events. It serves as an adapter-encapsulated component that receives an asynchronously incoming data value via a socket, temporarily stores it during an active event, and passes it on via a plug. Output is only released again when the configured minimum time \( T_{\text{min}} \) has elapsed since the last output.
 ## Interface Structure
 
@@ -59,16 +61,13 @@ This function block encapsulates the internal function block `E_D_FF_ANY_TMIN`, 
 The function block does not have an explicitly visible state machine; the timing behavior is entirely controlled by the internal function block `E_D_FF_ANY_TMIN`. The function block essentially goes through the following phases:
 
 1. **Initialization** – After receiving `INIT`, the internal function block is configured.
-
 2. **Waiting for Clock** – The function block waits for an event at socket `I`.
-
 3. **Latching** – Upon receiving a clock signal, the data value is acquired and an output event is generated.
-
 4. **Lockout Phase** – After the output, any further output event is delayed for the duration of `Tmin`.
-
 5. **Ready** – After the lockout period expires, another clock signal can be processed.
 
 ## Application Scenarios
+
 - **Sensor Data Acquisition:** An asynchronously operating sensor provides measured values that should only be transmitted to a control system at a defined minimum interval (e.g., temperature measurement with debouncing).
 - **Buffering of Time-Critical Signals:** In automation applications where downstream processing modules tolerate a limited event rate, this module is used as a "rate limiter."
 - **Synchronization:** This module can be used to synchronize cyclic processes by limiting the maximum update rate of an output signal.
@@ -91,6 +90,7 @@ AI_D_FF_TMIN` offers a compact solution for buffering and time-controlled data t
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

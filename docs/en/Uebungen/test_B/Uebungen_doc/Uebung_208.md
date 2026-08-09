@@ -1,11 +1,14 @@
 # Exercise_208: Interlock: ILOCK_FB_SR (Two mutually interlocked set-dominant latches via AX2 adapter)
+
 ![Uebung_208_network](./Uebung_208_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the implementation of a mutual interlock between two outputs using the function block `ILOCK_FB_SR`. Each set-dominant latch controls one output, with an adapter connection ensuring that only one of the two outputs can be active at any given time. The inputs (set and reset) are read via digital input modules (logiBUS_IX), and the outputs are output via digital output modules (logiBUS_QX). The interlock prevents both outputs from being set simultaneously – even if both set signals are present at the same time.
 
 ## Function Blocks (FBs) Used
+
 - **DigitalInput_S1, DigitalInput_R1, DigitalInput_S2, DigitalInput_R2**
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**:
@@ -43,7 +46,6 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 Each DigitalInput FB (logiBUS_IX) waits for a signal change at its associated hardware input (`Input_I1` … `Input_I4`). Upon a rising edge, it generates the event `IND` and provides the current state at the data output `IN`.
 
 2. **Interlock Logic**
-
 - The event `IND` of the respective input is directly forwarded to the `REQ` input of the associated `ILOCK_FB_SR`.
 - Simultaneously, the data value `IN` is applied to the corresponding set or reset input of the ILOCK:
 * `DigitalInput_S1.IN` → `ILOCK_SR_1.S1`
@@ -57,7 +59,6 @@ ILOCK_SR_1.ILOCK_OUT` → `ILOCK_SR_2.ILOCK_IN`
 This means that `ILOCK_SR_2` can only set its output `Q1` to TRUE if `ILOCK_SR_1.Q1` is FALSE (and vice versa).
 
 3. **Output**
-
 - After processing, the ILOCK block generates the event `CNF`. This triggers the associated DigitalOutput FB (logiBUS_QX) via its `REQ` input.
 - Simultaneously, the result `Q1` of the ILOCK is passed to the data output `OUT` of the DigitalOutput:
 * `ILOCK_SR_1.Q1` → `DigitalOutput_Q1.OUT`
@@ -84,6 +85,7 @@ In this exercise, a mutual interlock of two outputs was implemented using the fu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

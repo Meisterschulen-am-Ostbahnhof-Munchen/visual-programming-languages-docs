@@ -11,15 +11,19 @@ Der Funktionsblock AS_SPLIT_5 ist ein generischer Baustein, der einen eingehende
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine Ereignis-Eingänge definiert.
 
 ### **Ereignis-Ausgänge**
+
 Keine Ereignis-Ausgänge definiert.
 
 ### **Daten-Eingänge**
+
 Keine Daten-Eingänge definiert.
 
 ### **Daten-Ausgänge**
+
 Keine Daten-Ausgänge definiert.
 
 ### **Adapter**
@@ -65,4 +69,5 @@ Der AS_SPLIT_5 ist ein einfacher, aber effektiver Funktionsblock zur Vervielfach
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

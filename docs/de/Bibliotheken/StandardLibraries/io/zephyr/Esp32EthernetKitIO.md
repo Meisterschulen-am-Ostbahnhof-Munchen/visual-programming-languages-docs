@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der Funktionsblock Esp32EthernetKitIO dient als Template für modulare Ein-/Ausgabe-Operationen mit dem Esp32EthernetKit-Board. Dieser Baustein ermöglicht die Steuerung und Überwachung verschiedener Hardware-Komponenten des Boards über eine einheitliche Schnittstelle.
 
 ![Esp32EthernetKitIO](Esp32EthernetKitIO.svg)
@@ -12,12 +13,15 @@ Der Funktionsblock Esp32EthernetKitIO dient als Template für modulare Ein-/Ausg
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **INIT**: Service-Initialisierung - löst den Initialisierungsprozess des Bausteins aus
 
 ### **Ereignis-Ausgänge**
+
 - **INITO**: Initialisierungsbestätigung - signalisiert den erfolgreichen Abschluss der Initialisierung
 
 ### **Daten-Eingänge**
+
 - **QI** (BOOL): Event Input Qualifier - steuert die Ausführung des Bausteins
 - **LED0** (STRING): Konfiguration für LED0
 - **SW0** (STRING): Konfiguration für Schalter SW0
@@ -26,28 +30,34 @@ Der Funktionsblock Esp32EthernetKitIO dient als Template für modulare Ein-/Ausg
 - **UpdateInterval** (TIME): Aktualisierungsintervall mit Standardwert T#40ms
 
 ### **Daten-Ausgänge**
+
 - **QO** (BOOL): Event Output Qualifier - Status der Bausteinausführung
 - **STATUS** (STRING): Service-Status - liefert detaillierte Statusinformationen
 
 ### **Adapter**
+
 Keine Adapter-Schnittstellen vorhanden.
 
 ## Funktionsweise
+
 Der Esp32EthernetKitIO-Baustein initialisiert und verwaltet die Hardware-Komponenten des Esp32EthernetKit-Boards. Bei Empfang des INIT-Ereignisses werden die konfigurierten Ein-/Ausgabekomponenten (LEDs, Schalter, ADC, PWM) entsprechend den übergebenen String-Parametern eingerichtet. Das Aktualisierungsintervall bestimmt, wie häufig die Ein-/Ausgabezustände aktualisiert werden.
 
 ## Technische Besonderheiten
+
 - Verwendet String-Parameter zur flexiblen Konfiguration der Hardware-Komponenten
 - Unterstützt gemischte Signaltypen (digital, analog, PWM)
 - Bietet ein konfigurierbares Aktualisierungsintervall für Echtzeit-Anwendungen
 - Implementiert im Zephyr-RTOS-Framework
 
 ## Zustandsübergänge
+
 1. **Initialisierungszustand**: Wartet auf INIT-Ereignis
 2. **Aktivierungszustand**: Verarbeitet INIT mit Konfigurationsparametern
 3. **Betriebszustand**: Führt kontinuierliche Ein-/Ausgabeoperationen durch
 4. **Statusmeldung**: Sendet INITO mit Statusinformationen
 
 ## Anwendungsszenarien
+
 - Steuerung von Beleuchtungssystemen mit LEDs
 - Erfassung von Benutzereingaben über Taster/Schalter
 - Messung analoger Sensordaten über ADC
@@ -55,13 +65,16 @@ Der Esp32EthernetKitIO-Baustein initialisiert und verwaltet die Hardware-Kompone
 - IoT-Geräte mit Esp32EthernetKit-Board
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 Im Vergleich zu einfachen Ein-/Ausgabeblöcken bietet Esp32EthernetKitIO eine integrierte Lösung für das spezifische Hardware-Board mit Unterstützung für verschiedene Signaltypen und konfigurierbaren Aktualisierungsintervallen.
 
 ## Fazit
+
 Der Esp32EthernetKitIO-Funktionsblock stellt eine flexible und leistungsfähige Lösung für die Ansteuerung von Esp32EthernetKit-Boards in 4diac-basierten Steuerungssystemen dar. Durch die modulare Konfiguration über String-Parameter ermöglicht er eine vielseitige Nutzung in verschiedenen industriellen und IoT-Anwendungen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

@@ -1,10 +1,13 @@
 # SET_LTIME
+
 ![SET_LTIME](./SET_LTIME.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **SET_LTIME** is used to write an input value of type `LTIME` to a variable declared as InOut. This allows you to directly set the value of an external reference (e.g., an instance variable or another function block). Using an InOut variable allows for efficient data transfer without requiring a separate data output.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -30,9 +33,11 @@ The function block **SET_LTIME** is used to write an input value of type `LTIME`
 | OUT | LTIME | LT#0s | **InOut Variable** – Target variable that receives the passed value. The function block writes the value of `IN` to this variable. As an InOut variable, it can be both read from and written to externally. |
 
 ### **Adapter**
+
 None.
 
 ## Functionality
+
 When an event occurs at the **REQ** input, the algorithm `REQ` is executed:
 
 - The value of the data input `IN` is copied directly into the InOut variable `OUT`.
@@ -42,6 +47,7 @@ The logic is very simple and consists of a single assignment:
 
 OUT := IN;
 ## Technical Features
+
 - The function block (FB) works exclusively with the **LTIME** data type (high-resolution time, according to IEC 61499).
 - The target variable `OUT` is declared as **InOut**. This means that it is passed externally as a reference. Changes made by the FB to `OUT` immediately affect the referenced variable.
 - Initially, both `IN` and `OUT` are set to `LT#0s` to prevent undefined states.
@@ -58,11 +64,13 @@ The FB has exactly one state:
 There are no branches or timers. The function block is essentially combinatorial, as it reacts immediately to the input event.
 
 ## Application Scenarios
+
 - **Setting a Central Time Base**: If multiple function blocks access a common LTIME variable, `SET_LTIME` can update this variable.
 - **Runtime Configuration**: In a control application, target time values from a configuration interface can be written to the corresponding InOut parameters.
 - **Testing and Simulation**: This function block is suitable for selectively writing values to an observable variable in test environments.
 
 ## Comparison with Similar Function Blocks
+
 - **SET_TIME**: Works analogously, but with the data type `TIME` (second resolution). `SET_LTIME` offers higher time resolution (nanoseconds) and is therefore suitable for precise applications.
 - **MOVE Function Blocks**: Many IEC 61499 libraries contain generic MOVE function blocks that copy values from an input to an output. `SET_LTIME` specializes in `LTIME` and uses an InOut reference instead of a separate output, which can be advantageous in certain architectures.
 

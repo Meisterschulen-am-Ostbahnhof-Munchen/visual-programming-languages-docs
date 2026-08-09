@@ -1,8 +1,10 @@
 # Exercise_012b_AUDI: Numeric Value Input and Storage
+
 ![Uebung_012b_AUDI_network](./Uebung_012b_AUDI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the acquisition of a numeric value via an ISOBUS input, its conversion into a storable format, and its persistent storage using an INI-based storage mechanism. The stored value is then read back and provided as an ISOBUS output value. The function blocks communicate via adapter interfaces (AUDI), which enable standardized data transfer.
 ## Function Blocks Used
 
@@ -39,9 +41,7 @@ This exercise imports the following constants from the libraries `Uebungen::cons
 `` 2. This adapter output is connected to the adapter input `AD_IN` of **AD_TO_AUDI**. This function block converts the data format and makes the value available at its output `AUDI_OUT`.
 
 3. The output `AD_TO_AUDI.AUDI_OUT` is connected to the adapter input `AUDI_IN` of **INI_AUDI**. This persistently stores the value in an INI section.
-
 4. The stored value is passed from the adapter output `INI_AUDI.AUDI_OUT` to the data port `u32NewValue` of **Q_NumericValue_AUDI**.
-
 5. **Q_NumericValue_AUDI** then sets the ISOBUS output value with object ID `OutputNumber_N1` to this value.
 
 The entire data chain is unidirectional and operates without explicit event control – execution is performed cyclically by the runtime environment.
@@ -65,6 +65,7 @@ The constants `SECTION_I1_STORE` and `KEY_I1_STORE` must be defined as NVS const
 Exercise **Exercise_012b_AUDI** demonstrates a complete data path from ISOBUS input through format conversion, persistent storage in an INI structure, to ISOBUS output. It illustrates the use of adapters for coupling different component types and the use of memory components for persistent data storage. After successful completion, participants will be able to independently implement similar data storage and forwarding chains in their own projects.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

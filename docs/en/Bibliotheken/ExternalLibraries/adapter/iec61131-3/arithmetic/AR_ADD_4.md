@@ -1,23 +1,29 @@
 # AR_ADD_4
+
 ![AR_ADD_4](./AR_ADD_4.svg)
 *Note: A graphical symbol for the function block is not available.*
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AR_ADD_4** is a generic function block for the arithmetic addition of multiple values. It is designed according to the IEC 61499-2 standard and allows the flexible processing of up to four additive operands via adapter interfaces. The function block is typically used in automation systems where numerical summation of multiple signals is required.
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - None (The function block operates without explicit event control.)
 
 ### **Event Outputs**
+
 - None
 
 ### **Data Inputs**
+
 - None (All input operands are provided via adapters.)
 
 ### **Data Outputs**
+
 - None (The result is output via an adapter.)
 
 ### **Adapter**
@@ -44,6 +50,7 @@ The function block **AR_ADD_4** performs the summation of the four values applie
 Since the function block is declared as a generic type (`eclipse4diac::core::GenericClassName = 'GEN_AR_ADD'`), the underlying data type (e.g., Integer, Real, or user-defined arithmetic types) is only determined at runtime through the specific configuration. Processing is data-driven – as soon as valid values are present at all four inputs, the sum is calculated and updated at the output.
 
 ## Technical Features
+
 - **Generic Function Block**: The function block is marked as generic (`eclipse4diac::core::GenericClassName`). This allows the specific arithmetic data type to be defined only when used in the project, enabling high reusability.
 - **Adapter-Based Communication**: Instead of classic data inputs/outputs, all values are exchanged via adapters. This allows for loose coupling with other components and promotes modular structures.
 - **No Event Control**: The component has no event inputs or outputs. Calculation and data transmission occur automatically as soon as all input values are available (similar to a continuous function).
@@ -56,11 +63,8 @@ Due to its purely data-driven and eventless operation, the component has **no in
 ## Application Scenarios
 
 1. **Calculating the sum of multiple process values** (e.g., adding flow signals from multiple sensors).
-
 2. **Scaling and Summation** – In combination with scalable adapters, the function block can be used for weighted summation.
-
 3. **Calculation of total consumption or total energy** from multiple partial measurements.
-
 4. **Generic summation in modular automation solutions** where the number of summands is fixed, but the data type is variable.
 
 ## Comparison with similar function blocks
@@ -81,6 +85,7 @@ The **AR_ADD_4** is a compact, generic function block for adding four values via
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

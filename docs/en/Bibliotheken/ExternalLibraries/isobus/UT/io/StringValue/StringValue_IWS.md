@@ -1,8 +1,10 @@
 # StringValue_IWS
+
 ![StringValue_IWS](./StringValue_IWS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **StringValue_IWS** is a service interface function block (SIFB) responsible for receiving wide strings (*Wide String*, `WSTRING`) as input data from a resource-side source (e.g., hardware interface, bus system). It provides a standardized interface for managing initialization, cyclic/demand-driven data retrieval, and asynchronous indications. This function block is typically found in ISOBUS-based control environments or other fieldbus systems that process Unicode-encoded text data.
 ## Interface Structure
 
@@ -60,6 +62,7 @@ If the resource provides new data without being prompted (e.g., when an input is
 The event outputs `QO` always return the current qualifier value (usually `QI` upon successful operation, otherwise `FALSE`). The status `STATUS` contains human-readable error or success messages.
 
 ## Technical Features
+
 - **Wide Strings (`WSTRING`)**
 
 This function block uses `WSTRING` (UTF-16 encoded) to correctly transmit international character sets, special characters, and emojis. This is particularly important in ISOBUS agricultural technology, for example, when operator terminals display Unicode text.
@@ -81,16 +84,13 @@ This attribute serves for runtime identification of the type and is used for dyn
 An explicit state engine is not defined in the XML; however, the following implicit process emerges from the SIFB semantics:
 
 1. **IDLE** – Waiting for `INIT` or the first `REQ`.
-
 2. **INIT** – Initialization phase; after successful execution, transition to **READY**.
-
 3. **READY** – Ready for `REQ` or `IND`. Briefly enters **BUSY** upon `REQ`, then returns to **READY**.
-
 4. **INDICATION** – Asynchronous data indexing; returns to **READY** after processing.
-
 5. **ERROR** – In case of errors (e.g., communication interruption), `STATUS` is set and the block remains in place until `INIT` is sent again (with `QI=FALSE` as a possible reset).
 
 ## Application Scenarios
+
 - **ISOBUS Terminal (UT) – Unicode Text Input**
 
 Receiving user input such as machine names, addresses, or diagnostic texts from an operator terminal via ISOBUS.
@@ -121,6 +121,7 @@ The `StringValue_IWS` is an essential component for integrating text input into 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,8 +1,10 @@
 # GET_BYTE
+
 ![GET_BYTE](./GET_BYTE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **GET_BYTE** function block is used to read a variable `BYTE`, which is provided via an **InOut** parameter. The read value is buffered at the output `OUT` and is available after execution. This function block is typically used to retrieve a current `BYTE` value from an external source (e.g., a shared data area) without modifying the source itself.
 ## Interface Structure
 
@@ -44,6 +46,7 @@ OUT := IN;
 Since `IN` is declared as an InOut parameter, the calling application must provide a BYTE variable that can be both read and (in the case of other function blocks) written. However, `GET_BYTE` only performs a read operation.
 
 ## Technical Features
+
 - **InOut Parameter**: The function block accesses an external variable directly without connecting it via a separate data input. This enables efficient, direct data binding and saves network resources.
 - **Buffered Output**: The read value is buffered in `OUT` and remains until the next execution – even if the source variable changes in the meantime.
 - **No State Machine**: The function block consists of a single state, which makes the implementation lean and deterministic.
@@ -59,6 +62,7 @@ The function block has exactly one internal state:
 There are no wait states or branches.
 
 ## Application Scenarios
+
 - **Reading Configuration Values**: A `BYTE` value from a central data block (e.g., a global configuration) is transferred to a local buffer.
 - **Synchronization Between Function Blocks**: Another function block writes a `BYTE` value to a shared InOut variable, and `GET_BYTE` reads this value as needed.
 - **Safe Data Transfer**: The buffered output prevents subsequent logic from reacting to a changing source value – it always works with the value valid at the time of the request.

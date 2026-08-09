@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung **Uebung_035b** basierend auf den ber
 * * * * * * * * * *
 
 ## Einleitung
+
 In dieser Übung wird eine Schrittkettensteuerung (Sequencer) realisiert, die als "Spiegelabfolge V2" bezeichnet wird. Das Ziel ist die sequentielle Ansteuerung von vier digitalen Ausgängen (Q1 bis Q4). Zusätzlich wird der aktuelle Status der Schrittkette als numerischer Wert auf einer Benutzeroberfläche visualisiert. Die Steuerung erfolgt über digitale Eingänge, welche die Sequenz starten, beeinflussen oder zurücksetzen können.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -14,6 +15,7 @@ In dieser Übung wird eine Schrittkettensteuerung (Sequencer) realisiert, die al
 In dieser Anwendung werden verschiedene Funktionsbausteine aus den Bibliotheken `logiBUS`, `isobus` und `iec61131` verwendet.
 
 ### Haupt-Bausteine
+
 *   **DigitalInput_CLK_I1** bis **DigitalInput_CLK_I4** (`logiBUS::io::DI::logiBUS_IE`): Diese Bausteine verarbeiten die physischen Eingabesignale (Taster). Sie sind so konfiguriert, dass sie auf das Ereignis `BUTTON_SINGLE_CLICK` reagieren.
 *   **DigitalOutput_Q1** bis **DigitalOutput_Q4** (`logiBUS::io::DQ::logiBUS_QX`): Diese Bausteine steuern die physischen Ausgänge (Lampen/Aktoren).
 *   **Q_NumericValue** (`isobus::UT::Q::Q_NumericValue`): Dient zur Anzeige eines numerischen Wertes auf einem Universal Terminal (UT). Hier wird die Objekt-ID `OutputNumber_N1` verwendet.
@@ -21,6 +23,7 @@ In dieser Anwendung werden verschiedene Funktionsbausteine aus den Bibliotheken 
 *   **E_RTimeOut** (`iec61499::events::E_RTimeOut`): *Hinweis: Dieser Baustein ist im Netzwerk platziert, aber im aktuellen Stand der Übung nicht verdrahtet (laut Kommentar ein "TODO" für ein zukünftiges Beispiel).*
 
 ### Sub-Bausteine: sequence_ET_04
+
 Dies ist der zentrale Logikbaustein der Übung.
 
 *   **Typ**: `logiBUS::utils::sequence::combi::sequence_ET_04`
@@ -69,4 +72,5 @@ Die Übung **Uebung_035b** demonstriert die Implementierung einer komplexeren Sc
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

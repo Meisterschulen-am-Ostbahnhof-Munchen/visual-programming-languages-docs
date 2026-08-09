@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **TIMESTAMP_NS** ist ein IEC 61499-konformer Funktionsbaustein zur Erzeugung hochauflösender Zeitstempel in Nanosekunden.
 Standardmäßig generiert er Unix-Epoch-Timestamps (ab 01.01.1970), unterstützt aber durch Anpassung des Startdatums (`startDate`) alternative Zeitreferenzen.
 Entwickelt unter EPL-2.0 Lizenz.
@@ -14,21 +15,25 @@ Entwickelt unter EPL-2.0 Lizenz.
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **REQ** (Trigger):
   Startet die Berechnung des Zeitstempels. Muss mit dem Eingangsparameter `startDate` verknüpft sein.
   *Beispiel:* `REQ(startDate := DT#2000-01-01-00:00:00)`
 
 ### **Ereignis-Ausgänge**
+
 - **CNF** (Bestätigung):
   Signalisiert den Abschluss der Berechnung. Der generierte Zeitstempel steht dann als `ULINT`-Wert zur Verfügung.
 
 ### **Daten-Eingänge**
+
 - **startDate** (DT):
   Startdatum für die Zeitstempelberechnung.
   *Default:* `DT#1970-01-01-00:00:00` (Unix-Epoch).
   *Hinweis:* Andere Werte ermöglichen benutzerdefinierte Referenzen (z. B. Systemstart).
 
 ### **Daten-Ausgänge**
+
 - **ULINT** (Ausgangsvariable):
   Zeitstempel in Nanosekunden seit dem definierten `startDate`.
   *Beispiel:* `1680000000000000000` (1,68e18 ns ≈ 2023-03-28).
@@ -54,6 +59,7 @@ Entwickelt unter EPL-2.0 Lizenz.
 ---
 
 ## Technische Besonderheiten
+
 - **Nanosekunden-Präzision**: 64-bit-Zähler (`ULINT`) vermeidet Überlauf bis ~584 Jahre.
 - **Flexible Referenzen**: Beliebige Startdaten (z. B. `DT#2000-01-01` für Y2K-Referenz).
 - **Lizenz**: Eclipse Public License 2.0 (EPL-2.0).
@@ -61,6 +67,7 @@ Entwickelt unter EPL-2.0 Lizenz.
 ---
 
 ## Rückgabecodes
+
 - **Erfolg**: Gültiger `ULINT`-Wert (Nanosekunden).
 - **Fehler**: Keine expliziten Codes, aber:
   - `0` bei ungültiger Berechnung (z. B. `startDate > NOW()`).
@@ -69,6 +76,7 @@ Entwickelt unter EPL-2.0 Lizenz.
 ---
 
 ## Anwendungsszenarien
+
 1. **High-Performance-Logging**:
    Synchronisation von Ereignissen in verteilten Systemen.
 
@@ -92,6 +100,7 @@ Entwickelt unter EPL-2.0 Lizenz.
 ---
 
 ## Fazit
+
 `TIMESTAMP_NS` ist ein essentieller Baustein für Anwendungen, die hochpräzise und flexible Zeitstempel benötigen. Seine Unterstützung benutzerdefinierter Startdaten und Nanosekunden-Präzision macht ihn ideal für:
 
 - **Industrielle Datenaufzeichnung**

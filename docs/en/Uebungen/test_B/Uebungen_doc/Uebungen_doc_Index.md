@@ -1,4 +1,5 @@
 # Numeric Index (test_B)
+
 ...# Nu{toctree}
 :maxdepth: 1
 

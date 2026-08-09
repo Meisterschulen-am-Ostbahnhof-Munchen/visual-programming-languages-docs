@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung  
+
 Diese Sub-Applikation realisiert ein verriegelbares Toggle-Flip-Flop, das über einen **AE2-Adapter (Socket)** gesteuert und über einen **AE2-Adapter (Plug)** sowie einen **AX-Adapter (Q)** rückgemeldet werden kann. Das Flip-Flop wird durch ein eingehendes Ereignis am Eingang `IND` umgeschaltet (Toggle‑Funktion). Zusätzlich kann es über den AE2‑Adapter zurückgesetzt werden, was die **Verriegelung** darstellt. Der aktuelle Zustand des Flip‑Flops wird über den AX‑Adapter ausgegeben.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -51,6 +52,7 @@ Diese Sub-Applikation realisiert ein verriegelbares Toggle-Flip-Flop, das über 
    Der boolesche Wert `Q` des Flip‑Flops wird über `AX_TO_AE` in ein AX‑Adapter‑Signal gewandelt und am Plug `Q` ausgegeben.
 
 ## Zusammenfassung  
+
 Die Übung vertieft den Umgang mit **AE2‑Adaptern** zur bidirektionalen Ereigniskommunikation und demonstriert die Realisierung eines **verriegelbaren Toggle‑Flip‑Flops**. Der kombinierte Einsatz von Set‑Reset‑Flipflop, Ereignisweiche und Adapter‑Konvertern zeigt, wie ereignisgesteuerte Rückkopplungen und externe Steuereingriffe modular in 4diac‑IDE umgesetzt werden können.  
 **Lernziele:**  
 
@@ -62,4 +64,5 @@ Die Übung vertieft den Umgang mit **AE2‑Adaptern** zur bidirektionalen Ereign
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

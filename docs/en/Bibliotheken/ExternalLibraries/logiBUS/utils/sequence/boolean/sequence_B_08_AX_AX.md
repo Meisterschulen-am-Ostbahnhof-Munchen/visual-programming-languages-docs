@@ -1,8 +1,10 @@
 # sequence_B_08_AX_AX
+
 ![sequence_B_08_AX_AX](./sequence_B_08_AX_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **sequence_B_08_AX_AX** implements a sequential control system with eight outputs. State transitions are level-controlled via BOOL signals provided by an AX adapter. The block is designed for fail-safe applications and allows for the restoration of the current state after a power failure. It is particularly suitable for sequence control systems in automation technology where multiple switching operations must be executed sequentially.
 ## Interface Structure
 
@@ -64,11 +66,8 @@ The function block operates on the basis of an event-driven state machine (ECM).
 Each state performs the following actions upon entry:
 
 1. **Deactivate the previous output**: The output adapter of the previous state is set to `FALSE` (algorithm `State_n_X`).
-
 2. **Update the state number**: `STATE_NR` is set to the constant of the current state (e.g., `sequence::State_01`).
-
 3. **Activate the new output**: The value of the corresponding input (`DI_Sn.D1`) is transferred to the output (`DO_Sn.D1`) (algorithm `State_n_E`).
-
 4. **Output the confirmation event**: `CNF` is triggered.
 
 From state 8, the event `S8_START` returns to the start state (`xSTART`). The event `RESET` can force an immediate return from any active state (1…8) to state `sState_00` – setting all outputs to `FALSE`.
@@ -76,6 +75,7 @@ From state 8, the event `S8_START` returns to the start state (`xSTART`). The ev
 After a reset (`RESET`), the machine briefly enters state `sRESET`, which deactivates all outputs, and then immediately jumps to state `sState_00`.
 
 ## Technical Features
+
 - **Level-Controlled Transitions**: The transitions are triggered by the applied BOOL value of the respective input (not edge-triggered). This allows for easy recovery after a power failure, as the state can be directly detected and resumed upon power-up.
 - **Use of AX Adapters**: The interfaces are implemented as unidirectional AX adapters, allowing for loose coupling and easy reuse of the inputs/outputs.
 - **Configurable Constants**: The state numbers are derived from the constant `sequence::State_nn` in the package `logiBUS::utils::sequence::const::sequence` – this allows them to be defined and modified centrally.
@@ -99,12 +99,14 @@ After a reset (`RESET`), the machine briefly enters state `sRESET`, which deacti
 *Note: The state `sRESET`This function is used solely for clearing all outputs and exits automatically.*
 
 ## Application Scenarios
+
 - **Sequence Control in Agricultural Machinery**: For example, the sequential switching on and off of eight hydraulic valves or lighting units.
 - **Conveyor Belt Control**: Activation of belt sections sequentially, with transitions triggered by level sensors (BOOL).
 - **Laboratory Automation**: Stepwise release of reagent dosing units, controlled by level signals from flow sensors.
 - **End-of-Life Processes**: Since the state can be restored after a power failure using the input signals, this function block is suitable for safety-critical processes.
 
 ## Comparison with Similar Function Blocks
+
 - **Timer-Based Sequencers**: Transitions are triggered by time sequences rather than levels. In contrast, `sequence_B_08_AX_AX` reacts directly to external signals and is suitable for event-driven processes.
 - **Edge-triggered sequencers**: These would only react to rising edges. In contrast, the function block presented here recognizes sustained levels, which improves its restart capability.
 - **Adapterless blocks**: Many standard function blocks use simple BOOL inputs. The use of AX adapters achieves greater modularity and interchangeability of signal sources/sinks.

@@ -10,15 +10,19 @@ Der Funktionsblock **AUDI_SPLIT_5** dient dazu, ein einzelnes eingehendes AUDI�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine vorhanden.
 
 ### **Ereignis-Ausgänge**
+
 Keine vorhanden.
 
 ### **Daten-Eingänge**
+
 Keine vorhanden.
 
 ### **Daten-Ausgänge**
+
 Keine vorhanden.
 
 ### **Adapter**

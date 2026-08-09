@@ -12,11 +12,13 @@ Dabei kommt ein Compound Scaling (zusammengesetzte Skalierung) zum Einsatz, um d
 ## Verwendete Funktionsbausteine (FBs)
 
 ### IA_MSS
+
 - **Typ**: `isobus::tecu::IA_MSS`
 - **Parameter**: QI = TRUE  
 - **Funktionsweise**: Dieser FB stellt die Schnittstelle zur ISO-bus-basierten Maschinensteuerung dar. Er liefert die aktuelle Maschinensollgeschwindigkeit (MSS) als Ausgangssignal am Adapterport `SPEED`. Der Parameter QI (Qualifier Input) wird fest auf TRUE gesetzt, um die Datenbereitstellung zu aktivieren.
 
 ### COMPOUND_SCALE
+
 - **Typ**: `logiBUS::signalprocessing::fieldbus::AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE`
 - **Parameter**:
   - `SCALE_HIGH` = REAL#0.256  
@@ -25,6 +27,7 @@ Dabei kommt ein Compound Scaling (zusammengesetzte Skalierung) zum Einsatz, um d
 - **Funktionsweise**: Dieser FB empfängt den Rohwert (UINT) vom IA_MSS über den Adaptereingang `IN` und skaliert ihn mittels einer zusammengesetzten Skalierung (Compound Scaling) in einen physikalischen Wert. Die Skalierungsparameter legen die obere und untere Grenze des linearen Bereichs fest; der Offset bleibt hier Null. Der skalierte Wert wird am Ausgang `OUT` bereitgestellt.
 
 ### Q_NumericValue
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameter**:
   - `stObj` = `NumberVariable_Wheel_based_machine_speed`  
@@ -61,4 +64,5 @@ Die Übung erfordert Grundkenntnisse in der 4diac-IDE und im Umgang mit ISO-bus-
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

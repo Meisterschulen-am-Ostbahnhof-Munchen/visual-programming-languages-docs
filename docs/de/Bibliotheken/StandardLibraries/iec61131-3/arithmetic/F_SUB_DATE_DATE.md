@@ -7,21 +7,26 @@
 ![F_SUB_DATE_DATE](F_SUB_DATE_DATE.svg)
 
 ## Einführung
+
 Der **F_SUB_DATE_DATE** ist ein standardkonformer Funktionsbaustein zur Berechnung von Zeitdifferenzen zwischen zwei Datumswerten, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die präzise Berechnung von Zeitintervallen gemäß IEC 61131-3 Standard.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Start- und Enddatum)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Zeitdifferenz)
 
 ### **Daten-Eingänge**
+
 - `IN1` (DATE): Startdatum (Minuend)
 - `IN2` (DATE): Enddatum (Subtrahend)
 
 ### **Daten-Ausgänge**
+
 - `OUT` (TIME): Berechnetes Zeitintervall (IN1 - IN2)
 
 ## Funktionsprinzip

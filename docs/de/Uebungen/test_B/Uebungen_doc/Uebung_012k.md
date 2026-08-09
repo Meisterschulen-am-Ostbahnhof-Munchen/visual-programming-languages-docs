@@ -2,10 +2,13 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert das Einlesen eines String-Wertes von einer Eingabequelle (z. B. einem Touch-Eingabefeld) und das dauerhafte Speichern dieses Wertes in einer INI-Datei. Die gesamte Funktionalität ist in einer Subapp gekapselt, die als wiederverwendbarer Baustein zur Verfügung steht. Der gespeicherte Wert steht nach jedem Lese- oder Speichervorgang als Ausgang zur Verfügung und wird gleichzeitig an eine Ausgabekomponente (z. B. Display) übermittelt.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 ### Sub-Baustein: `Uebung_012k_sub`
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
     - **`StringValue_IS`**: `isobus::UT::io::StringValue::StringValue_IS`
@@ -23,6 +26,7 @@ Diese Übung demonstriert das Einlesen eines String-Wertes von einer Eingabequel
     3. **Lesen und Ausgeben**: Sobald `INI` einen `GET`-Vorgang abschliesst (sowohl nach INIT als auch nach jedem SET – hier jedoch nur nach INIT realisiert), wird über `GETO` das Ereignis an den `REQ`-Eingang von `Q_StringValue` und gleichzeitig an den Ausgang `IND` der SubApp weitergeleitet. Der geladene String wird über `VALUEO` direkt nach aussen gegeben und von `Q_StringValue` an die Ausgabestelle gesendet.
 
 ## Programmablauf und Verbindungen
+
 Der oberste Baustein `Uebung_012k` besitzt keine eigene Schnittstelle (leere `SubAppInterfaceList`). Er instanziiert den Sub-Baustein `Uebung_012k_sub` und übergibt diesem drei konstante Parameter:
 
 - `KEY` = `KEY_I1_STORE`
@@ -48,9 +52,11 @@ Diese Konstanten sind in den referenzierten Bibliotheken definiert und legen fes
 **Beachte**: Nach einem Speichervorgang (`SET`) wird aktuell kein erneutes `GET` ausgelöst. Daher wird der neu gespeicherte Wert erst bei der nächsten Initialisierung oder einem manuellen `GET` gelesen und an die Ausgabe weitergegeben. In der vorliegenden Konfiguration dient dies dem einmaligen Speichern eines Startwertes, der beim Neustart wiederhergestellt wird.
 
 ## Zusammenfassung
+
 Die Übung zeigt den Umgang mit String-Eingaben, der persistierenden Speicherung in INI-Dateien sowie der gekapselten Wiederverwendung von Funktionalität durch eine Subapp. Der `INI`-FB übernimmt das Speichern und Laden, während `StringValue_IS` und `Q_StringValue` die Kommunikation mit der Hardware (Eingabe/Ausgabe) realisieren. Die Subapp `Uebung_012k_sub` kann in übergeordneten Projekten einfach per Parameterkonfiguration an unterschiedliche Objekt-IDs und Speicherorte angepasst werden.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

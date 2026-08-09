@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **ILOCK_IO_AX** realisiert einen kettbaren (chainable) Momentanschalter (Momentary Latch) mit Interlock-Funktion. Er stellt sicher, dass immer nur ein Element in einer Kette aktiv ist – sobald ein anderer FB in der Kette aktiv wird, wird dieser zurückgesetzt. Der FB ist speziell für die Verwendung mit AX/AX2-Adapterschnittstellen ausgelegt.
 
 ## Schnittstellenstruktur
+
 Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB-Ebene. Die gesamte Kommunikation erfolgt über **Adapter-Schnittstellen**. Nachfolgend sind die über die Adapter übertragenen Signale aufgeschlüsselt.
 
 ### **Ereignis-Eingänge**
@@ -51,6 +53,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB
 | `ILOCK_OUT` | Plug (Ausgang) | `adapter::types::bidirectional::AX2` | Verbindung zum **untergeordneten** FB in der Kette. |
 
 ## Funktionsweise
+
 Der FB arbeitet als **Momentanschalter mit Interlock** (auch „exklusiver Latch“). Im Zustand `REQ` wird folgende Logik ausgeführt:
 
 - Der Ausgang `OUT.D1` wird nur dann **TRUE**, wenn der Eingang `IN.D1` aktiv ist **und** kein anderer FB in der Kette gerade aktiv ist (`ILOCK_IN.DO1` vom Vorgänger und `ILOCK_OUT.DI1` vom Nachfolger müssen FALSE sein).
@@ -60,11 +63,13 @@ Der FB arbeitet als **Momentanschalter mit Interlock** (auch „exklusiver Latch
 Durch die bidirektionale Weitergabe des Zustands über die ILOCK-Adapter wissen alle FBs in der Kette voneinander, sodass nur einer aktiv sein kann.
 
 ## Technische Besonderheiten
+
 - **Kettbare Interlock-Struktur**: Mehrere ILOCK_IO_AX-Bausteine können hintereinander geschaltet werden, indem `ILOCK_OUT` eines FBs mit `ILOCK_IN` des nächsten verbunden wird. Die Kette kann beliebig lang sein.
 - **Keine eigenen Ereignisse/Daten auf FB-Ebene**: Die gesamte Signalübertragung erfolgt über die standardisierten AX/AX2-Adapter. Dies ermöglicht eine einfache Integration in bestehende Adapter-basierte Systeme.
 - **Immer nur eine Verarbeitung**: Da nur ein Zustand (`REQ`) existiert, wird bei jedem Ereignis dieselbe Logik ausgeführt. Es gibt keine internen Zustandswechsel.
 
 ## Zustandsübersicht
+
 Der FB besitzt nur einen einzigen Zustand:
 
 ```
@@ -79,6 +84,7 @@ Der FB besitzt nur einen einzigen Zustand:
 Im Zustand `REQ` werden die Algorithmus `REQ` und die Ereignisausgaben ausgeführt. Der Zustand wird nie verlassen.
 
 ## Anwendungsszenarien
+
 - **Steuerung von Schaltgeräten** (z. B. Ventile, Motoren) in einer Linie, bei der immer nur eines aktiv sein darf.
 - **Prioritätslose Auswahl** aus mehreren Quellen (z. B. Tasterfeld mit Interlock).
 - **Verkettete Sicherheitssteuerungen**, bei denen eine Aktivierung einer nachfolgenden Stufe die vorherige deaktivieren muss (oder umgekehrt).
@@ -92,4 +98,5 @@ Im Zustand `REQ` werden die Algorithmus `REQ` und die Ereignisausgaben ausgefüh
 | **ILOCK_IO_AX** | Exklusive Aktivierung in einer Kette. | Erzwingt, dass nur ein FB aktiv ist – ideal für Liniensteuerungen. |
 
 ## Fazit
+
 Der **ILOCK_IO_AX** ist ein spezialisierter Funktionsblock für exklusive Aktivierungen in geketteten Anordnungen. Durch die Verwendung von AX/AX2-Adaptern und die bidirektionale Zustandsrückmeldung wird eine robuste Interlock-Logik ohne separate Verdrahtung realisiert. Er eignet sich besonders für modulare Steuerungsstrukturen, bei denen mehrere Aktoren nur nacheinander oder einzeln aktiv sein dürfen.

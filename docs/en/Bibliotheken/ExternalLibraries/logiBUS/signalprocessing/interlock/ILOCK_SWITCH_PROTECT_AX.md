@@ -1,8 +1,10 @@
 # ILOCK_SWITCH_PROTECT_AX
+
 ![ILOCK_SWITCH_PROTECT_AX](./ILOCK_SWITCH_PROTECT_AX.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `ILOCK_SWITCH_PROTECT_AX` is used for interlocked switching between two input channels (UP/DOWN) with an adjustable protection dead time. It prioritizes the last active input and, through the dead time, prevents uncontrolled switching back and forth (bouncing) in the case of simultaneous or rapidly changing demands. The interface is provided via standardized unidirectional adapters (type `AX`) and a timer adapter.
 ## Interface Structure
 
@@ -55,6 +57,7 @@ This module implements a **latched two-channel circuit with dead time**:
 - The dead time prevents crosstalk or signal bounce, e.g., with mechanical switches or overlapping requirements.
 
 ## Technical Features
+
 - **Adapter-based interface**: The function block communicates exclusively via standardized adapters (`AX` for Boolean control, `ATimeOut` for timers). This allows for easy reuse in various container blocks.
 - **Integrated Protection Logic**: In state `PROTECT`, all outputs are deactivated before a new direction is activated – this protects connected hardware (e.g., motors, valves) from short circuits or mutual blocking.
 - **Parameter Update**: The event `UPDATE` allows dynamic adjustment of the dead time at runtime without having to reset the function block.
@@ -84,12 +87,14 @@ The transitions defined in the ECC are:
 - In each state, an UPDATE event can re-evaluate the state and Update the dead time.
 
 ## Application Scenarios
+
 - **Interlocking of drives**: For example, in a lifting table or conveyor belt that may only be active in one direction at a time.
 - **Short-circuit protection** in H-bridge circuits: Before the polarity of a motor is switched, both outputs are briefly deactivated.
 - **Switching safety logic** in agricultural technology or automation, where mechanical limit switches or proximity sensors require time-based debouncing.
 - **Interface between two control systems**: If both systems control a common axis, the function block prevents collisions by prioritizing the last active input.
 
 ## Comparison with similar function blocks
+
 - **Simple RS flip-flop**: Offers no dead time and switches instantly – can oscillate with overlapping signals.
 - **SWITCH (without protection)**: Standard toggle switch also switches without delay and without debouncing.
 - **SR Latch with Timer**: Similar function, but usually implemented as a composite function block. `ILOCK_SWITCH_PROTECT_AX` encapsulates all the logic, including the timer and evaluation, in a single Basic Function Block.
@@ -102,6 +107,7 @@ ILOCK_SWITCH_PROTECT_AX`This robust and flexible component for interlocked switc
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,8 +1,10 @@
 # AUI_AX_SEL_REQ
+
 ![AUI_AX_SEL_REQ](./AUI_AX_SEL_REQ.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUI_AX_SEL_REQ** is a binary selector block controlled by an event input (REQ). Based on a selection criterion provided by an **adapter** (G), it selects between two input values (IN0, IN1) and outputs the result at output OUT. The block serves as a compact, reusable component for signal selection in automation applications and extends the functionality of a simple toggle switch with event-driven operation.
 ## Interface Structure
 
@@ -42,18 +44,15 @@ The function block **AUI_AX_SEL_REQ** is a binary selector block controlled by a
 The function block implements the selection via an internal function block **F_SEL** (type: `iec61131::selection::F_SEL`). The event chaining works as follows:
 
 1. A **REQ** event at the input or an event from **Adapter G (E1)** is forwarded to the internal **F_SEL.REQ**.
-
 2. The value present at **G.D1** via the adapter is passed to the selector input **F_SEL.G**.
-
 3. The data values **IN0** and **IN1** are passed directly to the corresponding inputs of **F_SEL**.
-
 4. The internal function block performs the binary selection: If **G.D1 = 0**, **IN0** is output to **F_SEL.OUT**; otherwise, **IN1** is output.
-
 5. The result is output to **OUT**, and the event **F_SEL.CNF** triggers the output **CNF**.
 
 Thus, the selection is triggered either by an external REQ event or by an event (E1) from the adapter. The output OUT remains active after execution until the next selection process.
 
 ## Technical Features
+
 * **Adapter-Based Selection:** The use of adapter G (type AX) enables flexible coupling with other function blocks or hardware interfaces that provide a uniform selection signal.
 * **Event-Driven:** Both the external REQ event and the event from the adapter can trigger the process. This allows for both cyclic and event-driven querying.
 * **Type Safety:** The inputs are defined as UINT (unsigned integer); the function block operates exclusively with this data type.
@@ -63,6 +62,7 @@ Thus, the selection is triggered either by an external REQ event or by an event 
 The function block is purely functional and does not have its own finite state machine. The internal logic is entirely covered by the included **F_SEL** block, which performs a combinational selection process in an event-driven manner. Upon triggering REQ or Adapter-E1, the output OUT is set discretely; there are no internal states or delays.
 
 ## Application Scenarios
+
 * **Configurable Signal Selection:** In machine controls where switching between two sensors or measured values (e.g., speed, pressure) is required, depending on a control signal.
 * **Parameterizable Operating Modes:** Selection between two parameter sets (e.g., IN0 = Normal Operation, IN1 = Test Mode) via a central selector signal.
 * **Error Value Substitution Circuit:** If a primary value (IN0) is invalid, the substitute value (IN1) can be activated via the adapter.

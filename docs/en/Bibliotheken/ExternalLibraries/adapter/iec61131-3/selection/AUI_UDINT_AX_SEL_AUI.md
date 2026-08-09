@@ -1,8 +1,10 @@
 # AUI_UDINT_AX_SEL_AUI
+
 ![AUI_UDINT_AX_SEL_AUI](./AUI_UDINT_AX_SEL_AUI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUI_UDINT_AX_SEL_AUI` implements a binary selection between two input values, controlled by an adapter of type *AX*. The selected value is output via an *AUI* adapter. The block is classified as a standard selection function according to IEC 61131-3 and is suitable for use in automation applications requiring flexible, event-driven signal switching.
 ## Interface Structure
 
@@ -40,7 +42,6 @@ No direct data outputs. The selected value is output via the *AUI* adapter `OUT`
 This function block encapsulates an IEC 61131-3 standard function block `F_SEL` (binary selection). Selection is event-driven:
 
 1. The event inputs `EI0` and `EI1` are used to update and update the two input values, respectively. They are linked to the data `IN0` and `IN1`.
-
 2. The control adapter `G` receives an external event (`G.E1`) and a Boolean/digital value (`G.D1`). This event triggers the internal `F_SEL` (via its `REQ` input).
 
 The control adapter `G` receives an external event (`G.E1`) and a Boolean/digital value (`G.D1`). The event triggers the internal `F_SEL` (via its `REQ` input).
@@ -70,6 +71,7 @@ This function block does not have its own state machine, but delegates the selec
 `` A detailed description of the internal `F_SEL` can be found in the IEC 61131-3 specification or the documentation of the standard function block.
 
 ## Application Scenarios
+
 - **Signal Switching:** Selection between two measured values or control signals in an automation system, controlled by an enable or mode signal (e.g., manual/automatic).
 - **Adapter-Based Architectures:** Use in systems based on the adapter pattern of the 4diac IDE (e.g., for connecting components with standardized interfaces).
 - **Polymorphic Data Paths:** Processing different data types (e.g., optionally UINT or BOOL) within the same function block without requiring separate conversion.
@@ -85,6 +87,7 @@ The function block `AUI_UDINT_AX_SEL_AUI` provides flexible, adapter-based binar
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

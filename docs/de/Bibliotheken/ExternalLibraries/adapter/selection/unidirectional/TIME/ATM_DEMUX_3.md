@@ -29,9 +29,11 @@ Der Funktionsblock **ATM_DEMUX_3** ist ein generischer Demultiplexer für unidir
 | K        | UINT  | Index zur Auswahl des Ausgangs (1, 2 oder 3) |
 
 ### **Daten-Ausgänge**
+
 Keine direkten Daten-Ausgänge vorhanden; die Datenweitergabe erfolgt über die Adapter.
 
 ### **Adapter**
+
 **Plugs (Ausgänge):**
 
 | Name | Typ                                | Kommentar |
@@ -87,4 +89,5 @@ Der **ATM_DEMUX_3** ist ein kompakter und klar definierter Demultiplexer für un
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

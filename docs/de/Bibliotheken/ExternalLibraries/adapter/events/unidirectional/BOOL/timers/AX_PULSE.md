@@ -2,6 +2,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
 Der AX_PULSE ist ein Funktionsblock, der einen Impuls über einen AX-Adapter ausgibt.
@@ -11,6 +12,7 @@ Der AX_PULSE ist ein Funktionsblock, der einen Impuls über einen AX-Adapter aus
 ## Schnittstellenstruktur
 
 ### **Adapter**
+
 **Sockets (Eingänge):**
 
 - **REQ** (adapter::types::unidirectional::AX): Trigger.
@@ -20,18 +22,23 @@ Der AX_PULSE ist ein Funktionsblock, der einen Impuls über einen AX-Adapter aus
 - **PULSE** (adapter::types::unidirectional::AX): Impulsausgang.
 
 ## Funktionsweise
+
 Bei REQ wird PULSE kurzzeitig aktiv.
 
 ## Technische Besonderheiten
+
 - Verwendet unidirektionale Adapter.
 
 ## Zustandsübersicht
+
 Impuls.
 
 ## Anwendungsszenarien
+
 Signalisierung.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 - **E_PULSE**
 
 ## 🛠️ Zugehörige Übungen
@@ -40,4 +47,5 @@ Signalisierung.
 * [Uebung_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Fazit
+
 Adapter-basierter Impuls-Baustein.

@@ -1,8 +1,10 @@
 # EC_SET_EVT
+
 ![EC_SET_EVT](https://user-images.githubusercontent.com/116869307/214154604-e4081ae0-85d5-496e-a037-2b8bf39eba7d.png)
 
 * * * * * * * * * *
 ## Introduction
+
 The EC_SET_EVT function block is used to set event inputs or outputs of a function block instance. It enables the targeted triggering of events in other function blocks and can be used, for example, as an event sniffer. This function block belongs to the category of reconfiguration services according to the IEC 61499-1 standard.
 
 ![EC_SET_EVT](EC_SET_EVT.svg)
@@ -10,18 +12,22 @@ The EC_SET_EVT function block is used to set event inputs or outputs of a functi
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **REQ**: Service Request - triggers the execution of the setting operation
 
 ### **Event Outputs**
+
 - **CNF**: Acknowledgement of the requested service operation
 
 ### **Data Inputs**
+
 - **QI** (BOOL): Event Input Qualifier - enables/disables the service
 - **FB_NAME** (WSTRING): Name of the function block instance
 - **FB_EVENT_IO** (WSTRING): Name of the event to be set
 - **DST** (WSTRING): Destination where the event is to be set (Syntax: ResourceName)
 
 ### **Data Outputs**
+
 - **QO** (BOOL): Event Output Qualifier - indicates the status of the service execution
 - **STATUS** (WSTRING): Service status (RDY, NO_SUCH_OBJECT, INVALID_STATE)
 
@@ -54,6 +60,7 @@ The function block supports several service sequences:
 - **resource_initiated_termination**: Resource-side termination
 
 ## Application Scenarios
+
 - Debugging and monitoring of event flows
 - Automated test environments
 - Dynamic reconfiguration of control systems

@@ -1,9 +1,11 @@
 # Exercise_022_AX: Mirror Sequence (2) - AX Variant
+
 No image available.
 ![Uebung_022_AX_network](./Uebung_022_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a **mirror sequence** for two cylinders using the **AX variant** (adapter-based function blocks). Control is via three softkeys (F1, F2, F3). The operation is as follows:
 
 - **Softkey F1** → Cylinder 1 extends.
@@ -19,6 +21,7 @@ The exercise consists of a SubApp network with seven function blocks and an even
 ### Sub-Blocks
 
 ### DigitalOutput_Q1, DigitalOutput_Q2
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -26,6 +29,7 @@ The exercise consists of a SubApp network with seven function blocks and an even
 - **Functionality**: Represents a digital output. The output becomes active when the input (via the adapter port `OUT`) receives a signal.
 
 ### SoftKey_UP_F1, SoftKey_F2_DOWN, SoftKey_F3_DOWN
+
 - **Type**: `isobus::UT::io::Softkey::Softkey_IXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -33,6 +37,7 @@ The exercise consists of a SubApp network with seven function blocks and an even
 - **Functionality**: Generates an event at the adapter output `IN` as soon as the assigned key (F1, F2, F3) is pressed. The input `QI` activates the component.
 
 ### AX_FB_SR_Extend_Cyl_1, AX_FB_SR_Extend_Cyl_2
+
 - **Type**: `adapter::iec61131::bistableElements::AX_FB_SR`
 - **Parameters**: None (all configuration via adapter interface)
 - **Internal FBs Used**:
@@ -41,6 +46,7 @@ The exercise consists of a SubApp network with seven function blocks and an even
 - **Functionality**: A set pulse at `SET1` sets the output `Q1` to `TRUE` and holds it until a reset pulse at `RESET` is received. This behavior corresponds to a dominant set flip-flop.
 
 ### AX_SPLIT_2
+
 - **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Parameters**: None
 - **Functionality**: An event splitter. An incoming event at input `IN` is distributed to two outputs (`OUT1`, `OUT2`) – both are activated simultaneously. Used to forward a key press to two destinations.
@@ -50,15 +56,11 @@ The exercise consists of a SubApp network with seven function blocks and an even
 The flow is determined by the adapter connections in the SubApp network:
 
 1. **F1 (SoftKey_UP_F1)** → sets `AX_FB_SR_Ausfahren_Cyl_1` (via `SET1`).
-
 - The output `Q1` from Cyl_1 becomes `TRUE` and activates **DigitalOutput_Q1** (cylinder 1 extends).
-
 2. **F2 (SoftKey_F2_DOWN)** → is distributed via `AX_SPLIT_2` to two paths:
-
 - **OUT1** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_1` → cylinder 1 retracts (Q1 = FALSE).
 - **OUT2** → `SET1` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 extends (Q2 = TRUE).
 - This achieves the mirroring: The active cylinder switches from 1 to 2.
-
 3. **F3 (SoftKey_F3_DOWN)** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 retracts (Q2 = FALSE).
 
 **Overview of signal flows:**

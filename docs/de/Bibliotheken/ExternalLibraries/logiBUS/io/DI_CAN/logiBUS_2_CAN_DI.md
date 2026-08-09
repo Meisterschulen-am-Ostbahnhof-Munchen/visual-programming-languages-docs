@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Die logiBUS_2_CAN_DI GlobalConstants definieren Konstanten für die Konfiguration von digitalen Eingängen (DI) im logiBUS-System über CAN-Bus. Diese Konstanten werden zur Pin-Zuweisung für digitale Eingangskanäle verwendet und stellen eine standardisierte Schnittstelle für die Hardware-Konfiguration bereit.
 
 ## Schnittstellenstruktur
@@ -24,6 +25,7 @@ Alle Konstanten verwenden den strukturierten Datentyp `logiBUS_2_CAN_DI_S`, der 
 - **Pin**: Ganzzahlwert zur Identifikation des physikalischen Eingangspins
 
 ## Funktionsweise
+
 Die Konstanten werden zur Laufzeit nicht verändert und dienen ausschließlich der Konfiguration der digitalen Eingänge. Sie definieren die Hardware-Zuordnung zwischen logischen Kanälen und physikalischen Pins im CAN-basierten logiBUS-System.
 
 ## Technische Besonderheiten
@@ -50,4 +52,5 @@ Im Vergleich zu einfachen numerischen Konstanten bieten diese strukturierten Kon
 - Kompatibilität mit logiBUS-Systemarchitektur
 
 ## Fazit
+
 Die logiBUS_2_CAN_DI GlobalConstants bieten eine robuste und typsichere Lösung für die Konfiguration digitaler Eingänge in CAN-basierten logiBUS-Systemen. Durch die strukturierte Herangehensweise ermöglichen sie eine klare Hardware-Zuordnung und erleichtern die Wartung und Erweiterung von Automatisierungslösungen.

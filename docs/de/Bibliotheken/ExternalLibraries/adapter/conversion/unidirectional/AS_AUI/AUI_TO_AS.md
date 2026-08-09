@@ -12,18 +12,22 @@ Er kapselt die notwendige Signal- und Datenumwandlung in einer wiederverwendbare
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Der Baustein besitzt auf seiner obersten Ebene **keine direkten Ereignis-Eingänge**.  
 Das auslösende Ereignis wird über den Socket `AUI_IN` (Adapter `adapter::types::unidirectional::AUI`) bereitgestellt. Dieses Ereignis (bezeichnet als `E1`) startet die Konvertierung intern.
 
 ### **Ereignis-Ausgänge**
+
 Auf der obersten Ebene sind **keine direkten Ereignis-Ausgänge** vorhanden.  
 Das Abschlussereignis der Konvertierung wird über den Plug `AS_OUT` (Adapter `adapter::types::unidirectional::AS`) als Ereignis `E1` nach außen gegeben.
 
 ### **Daten-Eingänge**
+
 Es existieren **keine direkten Daten-Eingänge**.  
 Die Eingangsdaten (Datentyp `UINT`) werden über den Socket `AUI_IN` (Kanal `D1`) in den Baustein eingespeist.
 
 ### **Daten-Ausgänge**
+
 Auch **keine direkten Daten-Ausgänge** sind vorhanden.  
 Die konvertierten Daten (Datentyp `SINT`) verlassen den Baustein über den Plug `AS_OUT` (Kanal `D1`).
 
@@ -75,4 +79,5 @@ Der Funktionsblock `AUI_TO_AS` bietet eine einfache, gekapselte Lösung zur Umwa
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

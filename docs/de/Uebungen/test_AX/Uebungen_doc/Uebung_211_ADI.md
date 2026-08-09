@@ -10,6 +10,7 @@ Diese Übung implementiert einen Standard IEC 61131-3 Vorwärtszähler (Counter 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: ADI_FB_CTU
+
 - **Typ**: adapter::iec61131::counters::ADI_FB_CTU
 - **Verwendete interne FBs**: Keine (Basisfunktionsbaustein)
 - **Parameter**: Keine
@@ -19,36 +20,42 @@ Diese Übung implementiert einen Standard IEC 61131-3 Vorwärtszähler (Counter 
 - **Funktionsweise**: Der Baustein zählt bei jedem positiven Flanke am Ereigniseingang CU den internen Zähler CV hoch (DINT). Erreicht CV den Wert PV, wird Q gesetzt. Ein Signal am Eingang R setzt CV zurück auf 0 und Q zurück.
 
 ### Sub-Bausteine: ADI_DINT_TO_DI
+
 - **Typ**: adapter::conversion::unidirectional::ADI_DINT_TO_DI
 - **Verwendete interne FBs**: Keine
 - **Parameter**: `OUT = DINT#5` (fester Endwert)
 - **Funktionsweise**: Wandelt einen DINT-Wert in einen Adapter-Datenausgang (ADI) um. Hier wird der konstante Wert 5 als PV für den Zähler bereitgestellt.
 
 ### Sub-Bausteine: ADI_TO_AUDI
+
 - **Typ**: adapter::conversion::unidirectional::ADI_TO_AUDI
 - **Verwendete interne FBs**: Keine
 - **Parameter**: Keine
 - **Funktionsweise**: Konvertiert den Adapter-Datenausgang (ADI) in einen AUDI-Datenausgang, der für die Terminalausgabe geeignet ist. (Hinweis: Der Baustein unterstützt keine negativen Zahlen – siehe Kommentar im Netzwerk.)
 
 ### Sub-Bausteine: Q_NumericValue_AUDI
+
 - **Typ**: isobus::UT::Q::Q_NumericValue_AUDI
 - **Verwendete interne FBs**: Keine
 - **Parameter**: `u16ObjId = OutputNumber_N1` (Referenz auf das Terminal-Ausgabeobjekt)
 - **Funktionsweise**: Nimmt einen AUDI-Datenwert (u32NewValue) entgegen und gibt diesen über das Terminal aus. Die Objekt-ID verweist auf den vordefinierten Ausgabeplatz.
 
 ### Sub-Bausteine: Input_CU
+
 - **Typ**: logiBUS::io::DI::logiBUS_IXA
 - **Verwendete interne FBs**: Keine
 - **Parameter**: `QI = TRUE`, `Input = Input_I1` (physischer Eingang)
 - **Funktionsweise**: Liest den digitalen Eingang I1 und stellt ihn als Adapter-Datenausgang (IN) für den Zählimpuls CU bereit. Der Baustein ist immer aktiviert (QI = TRUE).
 
 ### Sub-Bausteine: Input_R
+
 - **Typ**: logiBUS::io::DI::logiBUS_IXA
 - **Verwendete interne FBs**: Keine
 - **Parameter**: `QI = TRUE`, `Input = Input_I2` (physischer Eingang)
 - **Funktionsweise**: Liest den digitalen Eingang I2 und stellt ihn als Adapter-Datenausgang (IN) für den Reset R bereit. Zusätzlich löst der Ereignisausgang INITO eine einmalige Initialisierung des PV-Werts aus.
 
 ### Sub-Bausteine: Output_Q1
+
 - **Typ**: logiBUS::io::DQ::logiBUS_QXA
 - **Verwendete interne FBs**: Keine
 - **Parameter**: `QI = TRUE`, `Output = Output_Q1` (physischer Ausgang)

@@ -1,8 +1,10 @@
 # AW_TO_ALI
+
 ![AW_TO_ALI](./AW_TO_ALI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AW_TO_ALI** function block is a composite function block that converts a unidirectional adapter of type **AW** (WORD) into an adapter of type **ALI** (LINT). It is used to convert data between different adapter interfaces without requiring the user to implement the actual conversion logic. Internally, the function block uses the IEC 61131 function block `F_WORD_TO_LINT` and provides typical event/data control via the supplied adapter interfaces.
 ## Interface Structure
 
@@ -40,18 +42,15 @@ Both adapters are unidirectional, meaning they transmit events and data in only 
 The process within the composite block is strictly sequential:
 
 1. An event **E1** at socket **AW_IN** is forwarded to the internal function block **F_WORD_TO_LINT** (instance name *Convert*) and activates its **REQ input**.
-
 2. Simultaneously, the incoming data value **D1** (WORD) is placed at the **IN input** of the converter.
-
 3. The converter `F_WORD_TO_LINT` performs the type conversion from WORD to LINT and provides the result at its **OUT output**.
-
 4. After the conversion is complete, the converter generates a **CNF event**, which is passed to the **E1 input** of the output adapter **ALI_OUT**.
-
 5. Simultaneously, the converted value (LINT) is transferred from the **OUT output** of the converter to the data output **D1** of the **ALI_OUT adapter**.
 
 This completes the data conversion at a safe, event-driven time.
 
 ## Technical Features
+
 * **Composite Block** – The conversion logic is completely encapsulated in an internal network consisting of only a single conversion function block. The block does not have its own ECC state machine.
 * **Adapter-Based Interface** – Instead of individual event/data inputs/outputs, adapters are used. This enables a modular, reusable connection in adapter-based control architectures.
 * **Package Structure** – The function block is located in the package `adapter::conversion::unidirectional` and uses the converter `iec61131::conversion::F_WORD_TO_LINT` from the IEC 61131 conversion library.
@@ -63,6 +62,7 @@ This completes the data conversion at a safe, event-driven time.
 Since this is a composite function block without its own state machine (ECC), there are no defined states. The functionality is entirely controlled by the embedded function block `F_WORD_TO_LINT`, which performs a one-time, event-driven conversion. The function block is always ready when an event arrives at the input adapter. After the conversion, it waits for the next event.
 
 ## Application Scenarios
+
 * **Data Conversion in Adapter Chains** – If a control system is based on unidirectional adapters and one component delivers WORD data, but a subsequent component expects LINT data, AW_TO_ALI can be inserted as an intermediary.
 * **Connecting Field Devices with Different Bit Widths** – For example, integrating a sensor that delivers 16-bit measured values (WORD) into logic that works with 64-bit values (LINT) (e.g., for high-resolution counters or timestamps).
 * **Type Conversion in Libraries** – Extending an existing adapter library with convenient conversion blocks to ensure compatibility between different data formats.

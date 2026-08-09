@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der **AULI_DEMUX_4** ist ein generischer Demultiplexer, der einen eingehenden AULI‑Adapter-Datenstrom an einen von vier möglichen Ausgangsadaptern weiterleitet. Die Auswahl erfolgt über einen numerischen Index (K), der beim Setzen des REQ‑Ereignisses ausgewertet wird. Der Baustein ist für den Einsatz in der landwirtschaftlichen Automatisierungstechnik (AULI) konzipiert und erlaubt eine flexible Verteilung von Signalen.
 
 ## Schnittstellenstruktur
@@ -27,6 +28,7 @@ Der **AULI_DEMUX_4** ist ein generischer Demultiplexer, der einen eingehenden AU
 | K | UINT | Index (Wertebereich 0–3 für OUT1…OUT4) |
 
 ### **Daten-Ausgänge**
+
 *Keine*
 
 ### **Adapter**
@@ -40,6 +42,7 @@ Der **AULI_DEMUX_4** ist ein generischer Demultiplexer, der einen eingehenden AU
 | OUT4 | AULI | Plug (Ausgang) | Vierter Ausgang (bei K=3) |
 
 ## Funktionsweise
+
 Der Baustein arbeitet ereignisgesteuert:
 
 1. Ein REQ‑Ereignis wird empfangen.
@@ -50,12 +53,14 @@ Der Baustein arbeitet ereignisgesteuert:
 Der Baustein ist generisch (GenericClassName `'GEN_AULI_DEMUX'`) und kann durch Parametrisierung an verschiedene AULI‑Untertypen angepasst werden.
 
 ## Technische Besonderheiten
+
 - **Adapterbasiert**: Die Ein‑ und Ausgaben erfolgen ausschließlich über AULI‑Adapter, was eine lose Kopplung und modulare Wiederverwendung ermöglicht.
 - **Unidirektional**: Der Datenfluss verläuft nur vom Socket **IN** zu einem der Plugs; eine Rückkopplung ist nicht vorgesehen.
 - **Generisch**: Der Baustein ist als Vorlage (Generic FB) definiert, sodass er mit unterschiedlichen AULI‑Datentypen verwendet werden kann.
 - **Einfache Indizierung**: Der Index K ist als UINT ausgeführt (Werte 0 bis 3). Bei ungültigen Werten ist das Verhalten undefiniert (keine Bereichsprüfung im FB‑Interface).
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keine explizite Zustandsmaschine (ECC) im XML. Seine Funktionalität reduziert sich auf eine reine Ereignis‑Daten‑Transaktion:
 
 - **IDLE**: Warten auf REQ.
@@ -65,6 +70,7 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC) im XML. Seine Funkti
 Eine detaillierte Zustandsgraphik ist nicht erforderlich, da der Baustein atomar arbeitet.
 
 ## Anwendungsszenarien
+
 - **Verteilung von Sensordaten**: Ein AULI‑Sensor (z.B. Bodenfeuchte) wird nacheinander an verschiedene Aktor‑Einheiten weitergeleitet.
 - **Kanalumschaltung**: Steuerung von vier unterschiedlichen Verbrauchern (Ventilen, Motoren) über eine gemeinsame Datenquelle.
 - **Test- und Simulationsumgebungen**: Gezieltes Ansprechen einzelner Komponenten in einer AULI‑basierten Testplattform.
@@ -78,9 +84,11 @@ Eine detaillierte Zustandsgraphik ist nicht erforderlich, da der Baustein atomar
 | AULI_SWITCH | Umschalter | Ermöglicht dynamisches Verbinden zwischen mehreren Ein‑ und Ausgängen (Matrix‑Topologie). |
 
 ## Fazit
+
 Der **AULI_DEMUX_4** ist ein kompakter, generischer Demultiplexer für AULI‑Adapter, der sich ideal für die gezielte Verteilung von Datenströmen in der Agrartechnik eignet. Dank seiner einfachen Ereignissteuerung und Adapterschnittstelle lässt er sich leicht in bestehende 4diac‑Prozessketten integrieren. Die generische Natur erlaubt Anpassungen ohne Änderung der Bausteinlogik.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

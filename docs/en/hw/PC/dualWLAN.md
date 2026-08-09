@@ -1,8 +1,11 @@
 # Dual Wi-Fi
+
 ## ChatGPT
+
 All text on this page was created with [https://chat.openai.com/chat](https://chat.openai.com/chat)
 Amazing
 ## **Working with 2 Wi-Fi Connections in Windows 10**
+
 This video shows you how to work with two Wi-Fi connections in Windows 10. Whether you're at work or at home, you might need to connect to both a public and a private Wi-Fi network. Or perhaps you want to switch your internet connection between two different networks without interrupting the connection. This video will teach you how to set up and manage multiple Wi-Fi connections in Windows 10 to make your work more efficient and productive.
 
 **Working with 2 Wi-Fi Connections in Windows 10** Video: [Working with 2 Wi-Fi connections under Windows 10 ](https://www.youtube.com/watch?v=a5Re1vOtmww)
@@ -18,17 +21,12 @@ This article tests several USB Wi-Fi adapters under Windows 10 and Ubuntu 22.04 
 A total of seven different USB Wi-Fi adapters are tested in this article. These include:
 
 1. Hama N150 Nano Wi-Fi USB Stick, 2.4 GHz
-
 2. Edimax EW-7811Un V2 Wi-Fi 4 Nano Adapter, Version 2
-
 3. Edimax EW-7811UN Super Mini Wi-Fi USB Stick (150 Mbps), Version 1
-
 4. Cudy WU650S AC 650 Mbps Wireless USB Wi-Fi Stick
 5. ALL-WA1200AC
 6. ALL-WA0300AC
-
 7. ALL-WA0150N (MTK7601)
-
 8. ALL-WA0100N (RTL8188EU)
 
 TODO Edimax EW-7611ULB
@@ -38,6 +36,7 @@ These adapters are tested under both Windows 10 and Ubuntu 22.04 LTS to evaluate
 ---
 
 ### Table
+
 * Works under Windows 10 without driver installation
 * Works under Ubuntu 22.04 LTS without driver installation
 

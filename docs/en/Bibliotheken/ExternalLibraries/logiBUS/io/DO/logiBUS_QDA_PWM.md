@@ -1,8 +1,10 @@
 # logiBUS_QDA_PWM
+
 ![logiBUS_QDA_PWM](./logiBUS_QDA_PWM.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **logiBUS_QDA_PWM** function block is a composite block for controlling a PWM (Double Word) output via a logiBUS system. It encapsulates the initialization and triggering of an internal PWM output block and provides an adapter interface for receiving commands (events and data) from external sources. The block was developed for use in agricultural technology and is licensed under EPL 2.0.
 ## Interface Structure
 
@@ -56,6 +58,7 @@ The adapter *OUT* receives an external event *E1* and a data value *D1*. The eve
 This function block allows for a clean separation of initialization and cyclic output: Configuration is performed once via INIT, while the actual PWM output is triggered by the adapter.
 
 ## Technical Features
+
 - **Composite Function Block:** The function block encapsulates all the logic of a PWM output function block and provides a standardized adapter interface for data exchange with the resource.
 - **Double-Word Output:** The name indicates a 32-bit data width, which is transmitted via the adapter data element *D1*.
 - **Initialization Parameters:** Flexible configuration data, necessary for addressing or parameterizing the logiBUS module, can be passed via *PARAMS* (STRING).
@@ -105,4 +108,5 @@ The **logiBUS_QDA_PWM** function block is a practical encapsulation of a PWM out
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` dient der Umwandlung eines Feldbus-Signals (LWORD) in einen skalierten und mit Offset versehenen Wert. Dabei wird nur dann ein gültiges Ausgangssignal erzeugt, wenn das Eingangssignal als gültig markiert ist. Die Gültigkeit wird über ein internes D-Flipflop stabil gehalten und als boolesches Signal ausgegeben.
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
 
 | Name | Typ   | Kommentar |
@@ -35,6 +37,7 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` dient der Umwandlung ein
 | AX   | Plug     | VALID | Signal gültig (TRUE/FALSE)|
 
 ## Funktionsweise
+
 Der FB enthält intern zwei Komponenten:
 
 - **FIELDBUS_LWORD_TO_SIGNAL_SCALED**: Führt die eigentliche Umrechnung des LWORD-Eingangs mithilfe der Parameter SCALE und OFFSET durch. Bei einem Ereignis an `IN.E1` (verbunden mit `REQ`) wird der verarbeitete Wert auf `OUT` und das Gültigkeitssignal auf `VALID` gesetzt.
@@ -50,17 +53,20 @@ Somit ergibt sich folgende Ablaufkette:
 Die INIT-Schnittstelle dient der Initialisierung und wird direkt durchgeschliffen.
 
 ## Technische Besonderheiten
+
 - Die INIT- und INITO-Verbindungen sind im Netzwerk als unsichtbar markiert, sie existieren jedoch für eine saubere Initialisierungskaskade.
 - Skalierung und Offset werden intern an den unterlagerten FB weitergeleitet und sind direkt konfigurierbar.
 - Das D-Flipflop verhindert unerwünschte Flanken oder kurzzeitige Invaliditätsänderungen am Ausgang.
 
 ## Zustandsübersicht
+
 Der FB besitzt keine explizite Zustandsmaschine (ECC). Sein Verhalten wird durch die Ereignisverarbeitung gesteuert:
 
 - **Nach INIT**: Der FB ist bereit, Ereignisse an `IN.E1` zu empfangen.
 - **Nach jedem REQ/CNF-Zyklus**: Ein neuer skalierten Wert und ein aktualisiertes Gültigkeitssignal liegen an den Adaptern an.
 
 ## Anwendungsszenarien
+
 Typische Einsatzbereiche sind:
 
 - Umwandlung von Feldbus-Rohdaten (z. B. LWORD aus PROFIBUS, CAN etc.) in physikalische Größen (Temperatur, Druck, Drehzahl) mit benutzerdefinierter Skalierung.
@@ -68,6 +74,7 @@ Typische Einsatzbereiche sind:
 - Integration in Anlagensteuerungen, die eine saubere Initialisierungsreihenfolge (über INIT) erfordern.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Einfachere Bausteine zur LWORD-Konvertierung bieten oft keine integrierte Gültigkeitsprüfung und geben das Signal direkt aus. `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` ergänzt diese Funktionalität um:
 
 - Ein separates Gültigkeitssignal, flankengesteuert über D-Flipflop.
@@ -75,4 +82,5 @@ Einfachere Bausteine zur LWORD-Konvertierung bieten oft keine integrierte Gülti
 Die Kombination von Skalierung, Offset und Gültigkeitslatch hebt ihn von reinen Umrechnungsbausteinen ab.
 
 ## Fazit
+
 Dieser Funktionsblock stellt eine robuste Lösung für die Aufbereitung von Feldbus-Signalen dar. Er kombiniert Skalierung, Offset-Verschiebung und eine zuverlässige Gültigkeitsanzeige in einem kompakten, initialisierbaren Baustein. Durch die Verwendung eines D-Flipflops wird die Signalqualität stabilisiert, was insbesondere in sicherheitskritischen oder rauschbehafteten Umgebungen von Vorteil ist.

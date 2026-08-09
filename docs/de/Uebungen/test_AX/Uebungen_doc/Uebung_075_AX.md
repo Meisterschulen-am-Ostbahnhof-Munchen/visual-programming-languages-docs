@@ -12,6 +12,7 @@ Diese Übung demonstriert die Ansteuerung digitaler Ausgänge über einen ISOBUS
 ### Sub-Bausteine:
 
 #### IA_Lighting
+
 - **Typ**: `isobus::tecu::IA_Lighting`
 - **Verwendete interne FBs**: keine
 - **Parameter**:
@@ -20,6 +21,7 @@ Diese Übung demonstriert die Ansteuerung digitaler Ausgänge über einen ISOBUS
   Dieser Funktionsbaustein stellt ein ISOBUS-konformes Lichtsteuerinterface bereit. Über Adapterausgänge werden verschiedene Lichtfunktionen bereitgestellt, darunter Rechts- und Linksblinker (`RIGHT_TURN_SIGNAL_LIGHTS`, `LEFT_TURN_SIGNAL_LIGHTS`). Die Signale werden aktiv, sobald eine übergeordnete Steuerung die entsprechenden Lichtbefehle sendet.
 
 #### DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Verwendete interne FBs**: keine
 - **Parameter**:
@@ -60,4 +62,5 @@ Die Übung „Uebung_075_AX“ zeigt, wie ein ISOBUS-Lichtadapter über Adapterv
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -10,15 +10,19 @@ Der Funktionsblock **AE_SPLIT_3** dient dazu, einen eingehenden Adapter-Datenstr
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -70,4 +74,5 @@ Der **AE_SPLIT_3** ist ein einfacher und dennoch unverzichtbarer Funktionsblock 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

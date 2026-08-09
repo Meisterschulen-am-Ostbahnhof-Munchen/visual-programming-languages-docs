@@ -1,22 +1,28 @@
 # AULI_D_FF
+
 ![AULI_D_FF](./AULI_D_FF.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The AULI_D_FF function block implements a clock-edge-triggered D flip-flop (data latch). Upon receiving an event, it accepts the incoming data value and holds it until the next clock cycle. Input and output are handled via standardized unidirectional adapters, allowing for easy integration of the block into modular control architectures.
 
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **I.E1** – Clock event (rising edge): triggers the transfer of the data value
 
 ### **Event Outputs**
+
 - **Q.E1** – Output event: sent after successful transfer of the value
 
 ### **Data Inputs**
+
 - **I.D1** – Data value to be latched (any type, as the internal function block `E_D_FF_ANY` is used)
 
 ### **Data Outputs**
+
 - **Q.D1** – Latched data value (corresponds to the last value transferred from I.D1)
 
 ### **Adapters**
@@ -33,6 +39,7 @@ As soon as an event arrives at **I.E1** on input adapter I, the current value of
 The function block operates as **clocked memory** and is particularly suitable for synchronizing data flows in event-driven automation systems.
 
 ## Technical Features
+
 - The function block is implemented as a **composition** and internally uses the standard function block `iec61499::events::E_D_FF_ANY`, which provides the actual flip-flop functionality.
 - The use of adapters enables **uniform connectivity** to a wide variety of components that support the same adapter type.
 
@@ -48,6 +55,7 @@ The internal state of the D flip-flop can be logical 0 or 1. Since the data valu
 | no event | unchanged | unchanged |
 
 ## Application Scenarios
+
 - **Data Buffering** in production lines: A sensor value is acquired and buffered at each clock cycle.
 - **State Machines**: Implementation of memory cells for step sequences where the next state depends on the current output.
 - **Synchronization**: Adapting asynchronous data streams to a uniform clock in distributed control systems.

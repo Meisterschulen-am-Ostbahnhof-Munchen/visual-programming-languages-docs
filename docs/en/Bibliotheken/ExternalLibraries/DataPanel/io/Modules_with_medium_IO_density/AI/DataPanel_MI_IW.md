@@ -1,7 +1,10 @@
 # DataPanel_MI_IW
+
 Input service interface function block for analog input data
 ## Interface
+
 ### Event inputs
+
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | Service Initialization | QI, PARAMS, u8SAMember, Input |

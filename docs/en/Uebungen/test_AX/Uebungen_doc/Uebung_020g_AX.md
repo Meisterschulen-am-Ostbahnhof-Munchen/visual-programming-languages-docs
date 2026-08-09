@@ -1,8 +1,10 @@
 # Exercise_020g_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_TONOF; On/Off Delay
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020g_AX`. Here, the combined delay block `AX_TONOF` is used.
 ----
 ## Objective of the Exercise
+
 The objective is to filter a signal in both directions over time. Short pulses (both positive and negative) are ignored. Only if a state remains stable for longer than the defined time is it passed to the output.
 
 -----
@@ -24,7 +26,6 @@ The objective is to filter a signal in both directions over time. Short pulses (
 ## Functionality
 
 1. **Power On**: When `I1` is pressed, nothing happens at the output initially. `Q1` is only powered on after **5 seconds** of continuous pressure.
-
 2. **Power Off**: When `I1` is released, `Q1` remains on initially. `Q1` is only powered off after **5 seconds** of being released.
 
 A brief tap (< 5s) does not power on. A brief release (< 5s) does not power off.

@@ -1,6 +1,8 @@
 ![AX](AX.svg)
 # AX (BOOL)
+
 ## 🎧 Podcast
+
 * [Eclipse 4diac: How Open Source Research and Practice Connect in Industrial Automation ](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Wie-Open-Source-Forschung-und-Praxis-in-der-industriellen-Automatisierung-verbindet-e38bhlu)
 * [The Working Set Object: Understanding the Brain of the ISOBUS User Interface – From Standard to Practice in ISO Designer ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/Das-Working-Set-Objekt-Das-Gehirn-der-ISOBUS-Bedienoberflche-verstehen--Von-der-Norm-zur-Praxis-im-ISO-Designer-e36cl5v)
 * [Code Renovation with AX Adapters: How Eclipse 4diac™ Conquers Complexity Through Signal Bundling ](https://podcasters.spotify.com/pod/show/logibus/episodes/Code-Renovierung-mit-AX-Adaptern-Wie-Eclipse-4diac-durch-Signal-Bndelung-Komplexitt-besiegt-e3ahcd1)
@@ -48,5 +50,7 @@
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ### Data
+
 ## 🛠️ Zugehörige Übungen
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

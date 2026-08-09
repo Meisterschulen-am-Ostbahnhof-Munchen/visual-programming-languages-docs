@@ -1,8 +1,10 @@
 # StringValue_AIWS
+
 ![StringValue_AIWS](./StringValue_AIWS.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **StringValue_AIWS** is an input-service interface block for processing wide-string data (UTF-16) in an ISOBUS context. It provides an adapter-based interface through which external resources can input strings. The block acts as a wrapper for the internal block *StringValue_IWS* and offers a standardized initialization and request interface.
 ## Interface Structure
 
@@ -51,6 +53,7 @@ The event `REQ` initiates a request to provide a new wide-string value. The actu
 The module encapsulates all the logic for initialization and communication with the underlying wide-string service and provides a uniform adapter interface to the outside.
 
 ## Technical Features
+
 - **Wide-String Support**: The module is designed for UTF-16 (Wide Strings) and is therefore particularly suitable for international character sets (Unicode).
 - **Adapter-based communication**: The use of a unidirectional adapter (`AIWS`) allows for a clean separation between service logic and the resource interface.
 - **ISOBUS compliance**: The object ID (`u16ObjId`) is assigned the initial value `ID_NULL`, indicating ISOBUS-specific assignment.
@@ -61,14 +64,12 @@ The module encapsulates all the logic for initialization and communication with 
 The function block does not have an explicit state machine; its behavior is controlled by events:
 
 1. **Idle state** – The function block waits for `INIT` or `REQ`.
-
 2. **Initialization** – After `INIT`, the parameters are passed to the internal function block; outputs `QO` and `STATUS` are updated, and `INITO` is sent.
-
 3. **Request State** – After `REQ`, a data request is initiated. The response is asynchronous via the adapter `IN` (event `E1`).
-
 4. **Error Handling** – If an error occurs during initialization, `QO` is set to `FALSE`, and a corresponding message `STATUS` is output.
 
 ## Application Scenarios
+
 - **Input of Unicode text** into agricultural operator terminals (ISOBUS-UT) – e.g., for vehicle names, field names, or product designations.
 - **Configuration interface** for ISOBUS devices that require wide-string parameters.
 - **Connection of external input devices** (keyboards, touchscreens) to an ISOBUS control unit via a standardized adapter interface.

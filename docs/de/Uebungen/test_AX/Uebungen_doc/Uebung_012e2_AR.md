@@ -10,6 +10,7 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Bausteine: Uebung_012e_sub_AR
+
 - **Typ**: `MyLib::sys::INI_IN_AND_STORE_AR`
 - **Verwendete interne FBs**: (nicht im bereitgestellten XML enthalten; der Baustein wird als vordefinierter Sub-App-Typ importiert)
 - Parameter:
@@ -86,4 +87,5 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

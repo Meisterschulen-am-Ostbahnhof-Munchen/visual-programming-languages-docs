@@ -1,11 +1,14 @@
 # Exercise_072c_AUI: Outputting GBSD and WBSD to a UT using PHYS (Adapter Version)
+
 ![Uebung_072c_AUI_network](./Uebung_072c_AUI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the behavior of the function blocks `IA_GBSD` (Ground Based Machine Speed) and `IA_WBSD` (Wheel Based Machine Speed) on an ISOBUS Universal Terminal (UT). The digital speed values (UINT) supplied by the respective ISOBUS applications are converted into physical values using a scaling function block and then displayed on the terminal via a UT adapter (`Q_NumericValue_PHYSA`). The scaling is performed with a decimal accuracy of 0.001 (e.g., conversion from mm/s to m/s).
 
 ## Function Blocks (FBs) Used
+
 - **IA_GBSD** (Type: `isobus::tecu::IA_GBSD`)
 - Parameter: `QI` = TRUE
 - Returns a UINT value for the speed-based machine speed via the adapter output `SPEED`.
@@ -32,17 +35,12 @@ This exercise demonstrates the behavior of the function blocks `IA_GBSD` (Ground
 ## Program Flow and Connections
 
 1. **Speed Acquisition**
-
 - The function blocks `IA_GBSD` and `IA_WBSD` are operated with `QI` active and continuously deliver current speed values as UINT data at their adapter outputs `SPEED`.
-
 2. **Scaling**
-
 - The output `SPEED` of `IA_GBSD` is connected to the input `IN` of `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` via an adapter connection.
 - Similarly, `SPEED` from `IA_WBSD` is connected to the input `IN` of `FIELDBUS_UINT_TO_SIGNAL_SCALED_WBSD`.
 - Both scaling blocks multiply the incoming UINT value by `0.001` (no offset) and output the result as a REAL value.
-
 3. **Output on the UT**
-
 - The scaled value (output `OUT` of the scaling block) is fed as a data source to the `rPhys` input of the respective `Q_NumericValue_PHYSA` block.
 
 These building blocks are configured with the corresponding UT objects (`NumberVariable_Ground_based_machine_speed` and `NumberVariable_Wheel_based_machine_speed`) and display the values on the Universal Terminal.
@@ -63,6 +61,7 @@ This exercise demonstrates the continuous data flow from the ISOBUS application 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

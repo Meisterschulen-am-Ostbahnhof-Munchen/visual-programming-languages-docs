@@ -15,15 +15,19 @@ Der Baustein besitzt keine direkten Ereignis- oder Datenschnittstellen.
 Die gesamte Kommunikation erfolgt über **Adapter** (Plugs und Sockets).
 
 ### **Ereignis-Eingänge**
+
 Keine (Ereignisse werden über die Adapter `CLK` und `RST` empfangen).
 
 ### **Ereignis-Ausgänge**
+
 Keine (Ereignisse werden über den Adapter `Q1` gesendet).
 
 ### **Daten-Eingänge**
+
 Keine (Daten werden über die Adapter `CLK` und `RST` empfangen).
 
 ### **Daten-Ausgänge**
+
 Keine (Daten werden über den Adapter `Q1` gesendet).
 
 ### **Adapter**
@@ -99,4 +103,5 @@ Die einfache Logik und der minimale Zustandsautomat machen ihn zuverlässig und 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

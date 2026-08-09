@@ -4,9 +4,11 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock **AB_FIELDBUS_BYTE_TO_SIGNAL** dient dazu, ein eingehendes Byte-Signal (über den Adapter *IN*) auf den Ausgang (*OUT*) zu spiegeln, sofern das Signal als gültig erkannt wird. Die Gültigkeit wird über einen separaten Ausgang (*VALID*) signalisiert. Der Baustein kapselt die Verarbeitung eines Feldbus-Byte-Signals und stellt sicher, dass nur valide Daten an die nachfolgende Logik weitergegeben werden. Er basiert auf einem internen `FIELDBUS_BYTE_TO_SIGNAL`-Baustein, ergänzt durch ein D-Flipflop zur stabilen Ausgabe des Gültigkeitssignals.
 
 ## Schnittstellenstruktur
+
 Der FB besitzt **keine** direkten Ereignis- oder Daten-Ein-/Ausgänge auf der obersten Ebene. Die gesamte Kommunikation erfolgt über drei **Adapter-Schnittstellen**:
 
 | Adapter | Richtung | Typ | Beschreibung |
@@ -18,15 +20,19 @@ Der FB besitzt **keine** direkten Ereignis- oder Daten-Ein-/Ausgänge auf der ob
 Die Adapter sind vom Typ **unidirectional**, d.h. sie übertragen Daten und Ereignisse in eine Richtung. Die Typen `AB` und `AX` enthalten jeweils einen Ereignis-Eingang/-Ausgang (E1) und einen Daten-Eingang/-Ausgang (D1, vom Typ `ANY` bzw. `BOOL`).
 
 ### **Ereignis-Eingänge**
+
 Keine (die Ereignisse werden über den Socket-Adapter `IN` empfangen).
 
 ### **Ereignis-Ausgänge**
+
 Keine (die Ereignisse werden über die Plug-Adapter `OUT` und `VALID` gesendet).
 
 ### **Daten-Eingänge**
+
 Keine (die Daten werden über den Socket-Adapter `IN` empfangen).
 
 ### **Daten-Ausgänge**
+
 Keine (die Daten werden über die Plug-Adapter `OUT` und `VALID` gesendet).
 
 ### **Adapter**
@@ -47,6 +53,7 @@ Keine (die Daten werden über die Plug-Adapter `OUT` und `VALID` gesendet).
 - **D1**: Datenausgang (BOOL) – `TRUE`, wenn das aktuell verarbeitete Signal gültig ist; sonst `FALSE`.
 
 ## Funktionsweise
+
 1. Ein eingehendes Ereignis am Adapter `IN.E1` triggert den internen Baustein `FIELDBUS_BYTE_TO_SIGNAL`, der das Byte an `IN.D1` verarbeitet.
 2. Der interne Baustein gibt an seinen Ausgängen `OUT` (das gespiegelte Byte) und `VALID` (die Gültigkeitsinformation) weiter.
 3. Das Ausgangssignal wird sofort an den Adapter `OUT` weitergeleitet und ein Ereignis (`OUT.E1`) ausgelöst.
@@ -56,12 +63,14 @@ Keine (die Daten werden über die Plug-Adapter `OUT` und `VALID` gesendet).
 Somit wird das Byte immer dann an `OUT` weitergegeben, wenn es gültig ist. Der Gültigkeitszustand bleibt bis zum nächsten Verarbeitungsdurchlauf erhalten.
 
 ## Technische Besonderheiten
+
 - **Adapter-basierte Kommunikation**: Der FB nutzt ausschließlich Adapter-Schnittstellen, was eine modulare und typisierte Verbindung in der 4diac-IDE ermöglicht.
 - **D-Flipflop zur Entprellung**: Das Gültigkeitssignal wird durch ein Flipflop getaktet, um Stabilität zu gewährleisten und Hutschiene-Effekte zu vermeiden.
 - **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0** veröffentlicht (Copyright HR Agrartechnik GmbH).
 - **Compiler-Package**: `logiBUS::signalprocessing::fieldbus` – spezifisch für Feldbus-Anwendungen.
 
 ## Zustandsübersicht
+
 Der Baustein besitzt keinen expliziten Zustandsautomaten auf der obersten Ebene; die Zustände ergeben sich aus dem Zusammenwirken der internen Komponenten:
 
 | Zustand | Beschreibung |
@@ -73,17 +82,21 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten auf der obersten Ebene;
 In jedem Zyklus wird der Zustand durchlaufen.
 
 ## Anwendungsszenarien
+
 - **Feldbus-Integration**: Empfang eines Byte-Wertes von einem Feldbus (z.B. CAN, Profibus) und dessen Weitergabe an eine Steuerungslogik, wobei nur gültige Telegramme durchgereicht werden.
 - **Signalaufbereitung**: Umwandlung eines rohen Byte-Streams in ein getaktetes, gültigkeitsgeprüftes Signal für nachgeschaltete Funktionsblöcke.
 - **Fehlererkennung**: Der Baustein kann mit einem externen Gültigkeitsprüfer kombiniert werden, der am `IN`-Adapter anliegt.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Einfachere **Mirror**-Bausteine leiten ein Signal ohne Gültigkeitsprüfung weiter. Dieser FB fügt eine explizite Validierung hinzu und gibt das Gültigkeitssignal separat aus. Im Gegensatz zu einem reinen Flipflop-basierten Haltebaustein verarbeitet er hier ein Byte und nicht nur boolesche Werte. Der interne `FIELDBUS_BYTE_TO_SIGNAL` übernimmt die spezifische Feldbus-Interpretation.
 
 ## Fazit
+
 Der `AB_FIELDBUS_BYTE_TO_SIGNAL` ist ein spezialisierter Baustein für die sichere Weitergabe von Feldbus-Byte-Signalen. Durch die Kombination aus Spiegelung und Gültigkeitsprüfung eignet er sich ideal für Echtzeit-Anwendungen, bei denen nur valide Daten weiterverarbeitet werden dürfen. Die Adapter-basierte Schnittstelle erlaubt eine einfache Integration in bestehende 4diac-Projekte.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

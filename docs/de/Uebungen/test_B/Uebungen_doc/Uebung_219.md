@@ -10,6 +10,7 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
 ## Verwendete Funktionsbausteine (FBs)
 
 ### FB_CTD_ULINT (IEC 61131-3 Rückwärtszähler)
+
 - **Typ**: iec61131::counters::FB_CTD_ULINT
 - **Parameter**:
   - `PV` = ULINT#10 (Voreingestellter Startwert)
@@ -23,6 +24,7 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
   - `CV` (ULINT) – Aktueller Zählerwert
 
 ### Input_CD (Digitaler Eingang)
+
 - **Typ**: logiBUS::io::DI::logiBUS_IX
 - **Parameter**:
   - `QI` = TRUE (Qualifier)
@@ -31,6 +33,7 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
 - **Datenausgang**: `IN` (BOOL) – aktueller Eingangswert
 
 ### Input_LD (Digitaler Eingang)
+
 - **Typ**: logiBUS::io::DI::logiBUS_IX
 - **Parameter**:
   - `QI` = TRUE
@@ -39,6 +42,7 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
 - **Datenausgang**: `IN` (BOOL)
 
 ### Output_Q1 (Digitaler Ausgang)
+
 - **Typ**: logiBUS::io::DQ::logiBUS_QX
 - **Parameter**:
   - `QI` = TRUE
@@ -47,6 +51,7 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
 - **Dateneingang**: `OUT` (BOOL) – zu setzender Ausgangswert
 
 ### F_ULINT_TO_UDINT (Typkonvertierung)
+
 - **Typ**: iec61131::conversion::F_ULINT_TO_UDINT
 - **Ereigniseingang**: `REQ`
 - **Ereignisausgang**: `CNF`
@@ -54,6 +59,7 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
 - **Datenausgang**: `OUT` (UDINT)
 
 ### Q_NumericValue (Terminal-Ausgabe)
+
 - **Typ**: isobus::UT::Q::Q_NumericValue
 - **Parameter**:
   - `u16ObjId` = OutputNumber_N1 (Kennung des Ausgabefeldes)
@@ -92,4 +98,5 @@ Die Übung **Uebung_219** demonstriert einen IEC 61131-3 konformen Rückwärtsz�
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

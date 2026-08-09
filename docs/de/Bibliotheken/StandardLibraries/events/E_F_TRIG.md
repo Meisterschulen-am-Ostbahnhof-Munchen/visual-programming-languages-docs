@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **E_F_TRIG** (Falling Edge Trigger) ist ein grundlegender Funktionsbaustein der IEC 61499 Norm zur Erkennung von fallenden Signalflanken. Dieser Baustein spielt eine wichtige Rolle in der Ereignisdetektion und Signalverarbeitung industrieller Steuerungssysteme.
 
 ![E_F_TRIG](E_F_TRIG.svg)
@@ -27,6 +28,7 @@ Der **E_F_TRIG** (Falling Edge Trigger) ist ein grundlegender Funktionsbaustein 
 - **QI (Qualifier Input)**: Das zu überwachende boolesche Signal (Datentyp: `BOOL`).
 
 ## Funktionsweise
+
 Der `E_F_TRIG` soll eine fallende Flanke am `QI`-Eingang erkennen. Eine fallende Flanke tritt auf, wenn `QI` beim letzten `EI`-Ereignis `TRUE` war und beim aktuellen `EI`-Ereignis `FALSE` ist.
 
 Bei jedem `EI`-Ereignis wird der aktuelle Zustand von `QI` mit dem Zustand aus dem vorherigen Zyklus verglichen. Wenn eine fallende Flanke erkannt wird, sollte das `EO`-Ereignis ausgelöst werden.

@@ -1,8 +1,10 @@
 # AX_T_FF_SR_SYM_INIT
+
 ![AX_T_FF_SR_SYM_INIT](./AX_T_FF_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AX_T_FF_SR_SYM_INIT** implements an event-driven bistable flip-flop with **Set**, **Reset**, and **Toggle** functionality. It features **symmetrical start-up behavior**, where the output state after the INIT event can be defined via the parameter `Q_INIT`. The block is designed according to IEC 61499-1 Annex A and is suitable for applications requiring a resettable, set, or toggleable binary state with an initializable preset.
 ## Interface Structure
 
@@ -89,6 +91,7 @@ The output `QO` is set to the current value of `QI` with each executed algorithm
 - DeInit → START: (always, condition = 1)
 
 ## Application Scenarios
+
 - **Machine Control**: Defined start state after power-up (e.g., Valve Closed = `Q_INIT = FALSE`).
 - **State Change with Toggle**: Switches a light or drive with each CLK pulse.
 - **Safe Initialization**: The action can be made conditional via `QI` (e.g., enabling by a higher-level controller).

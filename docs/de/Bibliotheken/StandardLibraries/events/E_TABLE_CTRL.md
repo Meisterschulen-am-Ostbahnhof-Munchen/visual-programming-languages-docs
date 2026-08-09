@@ -7,6 +7,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **E_TABLE_CTRL** ist ein Unterstützungsbaustein für E_TABLE nach IEC 61499-1 (Annex A), unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die präzise Steuerung von Ereignissequenzen basierend auf einer konfigurierbaren Zeit-Tabelle.
 
 ![E_TABLE_CTRL](E_TABLE_CTRL.svg)
@@ -14,17 +15,21 @@ Der **E_TABLE_CTRL** ist ein Unterstützungsbaustein für E_TABLE nach IEC 61499
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisiert die Ereignistabelle (mit DT- und N-Parametern)
 - `CLK`: Taktsignal für den Tabellenfortschritt
 
 ### **Ereignis-Ausgang**
+
 - `CLKO`: Generiertes Taktereignis (mit DTO- und CV-Daten)
 
 ### **Daten-Eingänge**
+
 - `DT` (TIME-Array): Zeitintervalle für die Ereignisgenerierung
 - `N` (UINT): Anzahl der aktiven Zeitschritte
 
 ### **Daten-Ausgänge**
+
 - `DTO` (TIME): Aktuelles Zeitintervall
 - `CV` (UINT): Aktueller Ereignisindex (0..N-1)
 

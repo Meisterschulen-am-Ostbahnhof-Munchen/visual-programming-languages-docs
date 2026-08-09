@@ -1,8 +1,10 @@
 # Q_ObjEnableDisable_AB
+
 ![Q_ObjEnableDisable_AB](./Q_ObjEnableDisable_AB.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `Q_ObjEnableDisable_AB` serves as a wrapper that enables the control of a binary object (switching on/off) via a unidirectional **AB adapter (BYTE)**. It encapsulates the logic of the block `isobus::UT::Q::Q_ObjEnableDisable` and provides its functionality via the standardized adapter interfaces `qAbility` (socket) and `qOldAbility` (plug). The function block is suitable for connecting to adapter-based systems, e.g., for the remote control of actuators.
 ## Interface Structure
 
@@ -54,6 +56,7 @@ The internal FB processes the command and sets the object's state accordingly. T
 The plug `qOldAbility` provides the object's previous state (BYTE) and the associated event, allowing a downstream function block to react to state changes.
 
 ## Technical Features
+
 - **Adapter-Based Encapsulation**
 
 The FB uses the standardized unidirectional AB adapter, which allows for easy integration into existing adapter networks.

@@ -4,12 +4,15 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsblock `AX_INTERLOCK_2` ist ein ereignisgesteuerter, bistabiler Baustein mit Toggle-Funktionalität und einem dualen Verriegelungsmechanismus (Interlock). Er dient zur Steuerung zweier unabhängiger, aber gegenseitig ausschließender Ausgänge. Der Baustein kombiniert Set-, Reset- und Toggle-Funktionen für zwei Kanäle und stellt sicher, dass immer nur einer der beiden Ausgänge aktiv sein kann.
 
 ![AX_INTERLOCK_2](AX_INTERLOCK_2.svg)
 
 ## Schnittstellenstruktur
+
 ### **Ereignis-Eingänge**
+
 *   **SET1**: Setzt den Ausgang OUT1.
 *   **CLK1**: Dient als Takt (Clock) und löst bei einem Ereignis ein Toggle (Umschalten) des Ausgangs OUT1 aus.
 *   **SET2**: Setzt den Ausgang OUT2.
@@ -17,19 +20,24 @@ Der Funktionsblock `AX_INTERLOCK_2` ist ein ereignisgesteuerter, bistabiler Baus
 *   **R**: Setzt alle Ausgänge zurück (Reset).
 
 ### **Ereignis-Ausgänge**
+
 *   Keine direkten Ereignisausgänge vorhanden. Die Ausgabe erfolgt über Adapter.
 
 ### **Daten-Eingänge**
+
 *   Keine Dateneingänge vorhanden.
 
 ### **Daten-Ausgänge**
+
 *   Keine direkten Datenausgänge vorhanden. Die Datenausgabe erfolgt über Adapter.
 
 ### **Adapter**
+
 *   **OUT1**: Unidirektionaler Adapter vom Typ `adapter::types::unidirectional::AX`. Überträgt den Zustand des ersten Flip-Flops (TRUE/FALSE).
 *   **OUT2**: Unidirektionaler Adapter vom Typ `adapter::types::unidirectional::AX`. Überträgt den Zustand des zweiten Flip-Flops (TRUE/FALSE).
 
 ## Funktionsweise
+
 Der `AX_INTERLOCK_2` ist als Basic Function Block (BFB) implementiert und besitzt einen Execution Control Chart (ECC) mit vier Zuständen: `START`, `SET1`, `SET2` und `RESET`.
 
 *   **Ausgangszustand (`START`)**: Beide Ausgänge sind inaktiv (FALSE).
@@ -40,11 +48,13 @@ Der `AX_INTERLOCK_2` ist als Basic Function Block (BFB) implementiert und besitz
 Die Toggle-Funktion wird durch die `CLK1`- und `CLK2`-Eingänge realisiert. Ein `CLK1`-Ereignis im `START`-Zustand führt zum Zustand `SET1` und aktiviert somit `OUT1` (falls es vorher aus war). Befand sich der Baustein bereits im Zustand `SET1`, würde ein weiteres `CLK1`-Ereignis (nach Rückkehr in `START`) erneut in `SET1` führen, was jedoch keine Zustandsänderung bewirkt, da `OUT1` bereits TRUE ist. Die eigentliche Toggle-Logik (Umschalten zwischen TRUE/FALSE) muss durch die externe Logik, die die `CLKx`-Ereignisse generiert, in Abhängigkeit vom aktuellen Ausgangszustand realisiert werden.
 
 ## Technische Besonderheiten
+
 *   **Dualer Interlock**: Die gegenseitige Ausschließlichkeit der Ausgänge ist hart im Zustandsübergang verankert. Im Zustand `SET1` wird immer auch `RESET2` aufgerufen und umgekehrt.
 *   **Priorität**: Ein globales Reset-Ereignis (`R`) hat Vorrang und setzt beide Ausgänge zurück, unabhängig von anderen anstehenden Ereignissen oder dem aktuellen Zustand.
 *   **Adapter-basierte Ausgabe**: Die Ausgabewerte werden nicht über klassische Datenausgangspins, sondern über unidirektionale Adapter bereitgestellt. Dies ermöglicht eine saubere, typisierte Schnittstelle zur Anbindung anderer Bausteine.
 
 ## Zustandsübergang
+
 1.  **START** (beide Ausgänge FALSE)
     *   Bei `SET1` oder `CLK1` -> **SET1** (OUT1=TRUE, OUT2=FALSE)
     *   Bei `SET2` oder `CLK2` -> **SET2** (OUT1=FALSE, OUT2=TRUE)
@@ -57,14 +67,17 @@ Die Toggle-Funktion wird durch die `CLK1`- und `CLK2`-Eingänge realisiert. Ein 
     *   Automatischer Übergang -> **START**
 
 ## Anwendungsszenarien
+
 *   **Steuerung gegensätzlicher Aktoren**: Ideal für die Ansteuerung von zwei Aktoren, die nie gleichzeitig aktiv sein dürfen, wie z.B. "Ventil Öffnen" / "Ventil Schließen" oder "Vorwärts" / "Rückwärts" bei einem Antrieb.
 *   **Betriebsartenschaltung**: Umschaltung zwischen zwei verschiedenen Betriebsarten einer Maschine (z.B. "Automatik" / "Manuell"), wobei sichergestellt wird, dass nur eine aktiv ist.
 *   **Toggle-Funktion mit Sicherheit**: Bereitstellung einer Toggle-Funktion (z.B. für ein Hand-/Ausschaltgerät), die mit einer gegenseitigen Verriegelung kombiniert ist.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 *   **E_RS / E_SR (Bistabile Flip-Flops)**: Diese klassischen Bausteine bieten Set/Reset für einen einzigen Ausgang. Der `AX_INTERLOCK_2` erweitert dieses Konzept um einen zweiten Kanal mit integrierter gegenseitiger Verriegelung und separaten Toggle-Eingängen.
 *   **E_TOGGLE**: Bietet eine reine Toggle-Funktion für einen Ausgang. Der `AX_INTERLOCK_2` bietet Toggle-Funktionalität für zwei Kanäle, jedoch mit dem wesentlichen Zusatz der zwingenden gegenseitigen Ausschließlichkeit (Interlock).
 *   **E_D_FF (D-Flip-Flop)**: Übernimmt einen Datenwert taktgesteuert. Der `AX_INTERLOCK_2` hat keine Dateneingänge; sein Zustand wird ausschließlich durch die Ereigniseingänge bestimmt.
 
 ## Fazit
+
 Der `AX_INTERLOCK_2` ist ein spezialisierter Steuerbaustein für Anwendungen, bei denen zwei sich gegenseitig ausschließende Zustände sicher verwaltet werden müssen. Durch die Kombination von bistabilen Set/Reset-Funktionen, Toggle-Möglichkeiten und einer hart verdrahteten gegenseitigen Verriegelung reduziert er den Programmieraufwand und erhöht die Zuverlässigkeit der Steuerungslogik. Die Verwendung von Adaptern für die Ausgabe fördert eine modulare und gut strukturierte Anwendungsarchitektur.

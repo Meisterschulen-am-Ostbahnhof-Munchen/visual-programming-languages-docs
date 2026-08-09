@@ -1,8 +1,10 @@
 # Exercise_001c4: DigitalInput_I1 to DigitalOutput_Q1 --> Query input at boot.
+
 ![Uebung_001c4_network](./Uebung_001c4_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the basic use of a digital input and a digital output on a logiBUS system. The input **Input_I1** is queried at system startup (boot), and its state is directly transferred to the output **Output_Q1**. The exercise shows how the initialization event connection (INITO → REQ) ensures that the output assumes the correct value during startup. Additionally, the **NOOP** block is used as a simple pass-through block to connect the event and data paths.
 ## Function Blocks Used (FBs)
 
@@ -27,7 +29,6 @@ In this exercise, three predefined function blocks are used directly in the SubA
 The exercise proceeds as follows:
 
 1. **Initialization**: Upon successful initialization, the `DigitalInput_I1` block sends an event to its output, `INITO`, when the system starts. This event is then fed back to its own event input, `REQ` (self-triggering). This triggers an initial read request from the input before the actual cyclic behavior begins. Without this connection, the output `Q1` would be **FALSE** at startup; with the connection, it is **TRUE** (provided the input is enabled).
-
 2. **Cyclic Reading**: After the read request, `DigitalInput_I1` acknowledges the operation with a `CNF` event. Simultaneously, it generates a `IND` event for every change in the input signal. Both events (`CNF` and `IND`) are forwarded to the event input `REQ` of the **NOOP** block.
 ... 3. **Data Passthrough**: The read input value (data output `IN` of DigitalInput_I1) is routed to the data input `IN` of the NOOP function block. The NOOP then forwards this value unchanged to its data output `OUT`.
 
@@ -47,6 +48,7 @@ The following table shows the essential connections in the network:
 | `NOOP.OUT` | `DigitalOutput_Q1.OUT` | Data |
 
 ### Learning Objectives
+
 - Understanding the initialization sequence (INITO) and its effect on output values at startup.
 - Working with logiBUS input and output blocks in 4diac.
 - Using the NOOP block as a simple pass-through block to connect event and data paths.
@@ -59,6 +61,7 @@ Exercise **Exercise_001c4** demonstrates a simple use case: A digital input is d
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

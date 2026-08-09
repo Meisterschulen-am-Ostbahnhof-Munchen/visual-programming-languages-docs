@@ -1,8 +1,10 @@
 # AUDI_TO_ALR
+
 ![AUDI_TO_ALR](./AUDI_TO_ALR.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AUDI_TO_ALR** function block is a composite module that converts a unidirectional adapter of type **AUDI** (data type `UDINT`) into an adapter of type **ALR** (data type `LREAL`). It serves as a simple link between two different adapter interfaces, thus enabling the integration of components based on different data formats.
 ## Interface Structure
 
@@ -53,6 +55,7 @@ The function block forwards the incoming event `E1` from socket `AUDI_IN` direct
 As a composite module, `AUDI_TO_ALR` does not have its own state machine. Its behavior is purely combinatorial: An incoming event is immediately passed on to the output – without delay or condition.
 
 ## Application Scenarios
+
 - **Integration of UDINT-based sensors** (e.g., rotary encoders with 32-bit counters) into an LREAL-processing control system.
 - **Adapter bridge** between different libraries or components based on different data types but using uniform adapter interfaces.
 - **Prototype development** and rapid wiring of adapters without having to create separate conversion logic.
@@ -68,6 +71,7 @@ AUDI_TO_ALR` is a minimal yet useful composite block for connecting two unidirec
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

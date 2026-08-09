@@ -1,9 +1,11 @@
 # Datentyp-Detail: TIME
 
 ## Beschreibung
+
 Der Datentyp **TIME** wird zur Darstellung von Zeitdauern (Relativzeit) verwendet.
 
 ## Normative Definition
+
 Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 12a):
 
 | Eigenschaft | Wert |
@@ -12,9 +14,11 @@ Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 12a):
 | **Voreingestellter Wert** | `T#0s` |
 
 ## Literaldarstellung
+
 TIME-Literale beginnen immer mit dem Präfix `T#` oder `TIME#`.
 
 ### Einheiten
+
 Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
 
 - `d`: Tage (days)
@@ -24,11 +28,13 @@ Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
 - `ms`: Millisekunden (milliseconds)
 
 ### Syntaxregeln
+
 - Unterstriche (`_`) zur besseren Lesbarkeit sind erlaubt.
 - Negative Zeitdauern sind durch ein Minuszeichen nach dem Doppelkreuz möglich (`T#-...`).
 - Die Einheiten können gemischt werden (z.B. Tage und Millisekunden).
 
 ### Beispiele
+
 - `T#10ms` (10 Millisekunden)
 - `T#2h_30m` (2 Stunden und 30 Minuten)
 - `T#5d4h3m2s1ms` (Kombination aller Einheiten)

@@ -5,12 +5,14 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Diese Übung realisiert einen Toggle-Flip-Flop (T-FF) mithilfe eines digitalen Eingangs (logiBUS_IX) und der Funktionsbausteine **E_PERMIT** und **E_T_FF**.  
 Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den Zustand des Flip-Flops wechselt. Der Ausgang wird auf einen digitalen Ausgang (logiBUS_QX) geschaltet.
 
 ## Verwendete Funktionsbausteine (FBs)
 
 ### DigitalInput_I1
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -18,6 +20,7 @@ Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den 
 - **Funktion**: Liest den Zustand des angeschlossenen digitalen Eingangssignals und stellt den Wert am Datenausgang `IN` bereit. Bei einer Signaländerung wird das Ereignis `IND` ausgelöst.
 
 ### E_PERMIT
+
 - **Typ**: `iec61499::events::E_PERMIT`
 - **Parameter**: keine
 - **Ereigniseingang/-ausgang**:
@@ -28,6 +31,7 @@ Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den 
 - **Funktion**: Gibt ein an `EI` eingehendes Ereignis nur dann am Ausgang `EO` weiter, wenn der Wert von `PERMIT` = `TRUE` ist. Dient als Freigabeglied.
 
 ### E_T_FF
+
 - **Typ**: `iec61499::events::E_T_FF`
 - **Parameter**: keine
 - **Ereigniseingang/-ausgang**:
@@ -38,6 +42,7 @@ Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den 
 - **Funktion**: Toggle-Flip-Flop. Bei jedem Takt (Ereignis an `CLK`) wechselt der Ausgang `Q` seinen Zustand (toggle). Gleichzeitig wird das Ereignis `EO` ausgelöst.
 
 ### DigitalOutput_Q1
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**:
   - `QI` = `TRUE`
@@ -77,9 +82,11 @@ Sobald sich der Digitaleingang ändert, wird das Ereignis `IND` ausgelöst. Der 
 Fügen Sie die SubApp `Uebung_004b6` in ein 4diac-Projekt ein, verbinden Sie die Hardware-Ressourcen (z. B. physischen Eingang `Input_I1` und Ausgang `Output_Q1`) und führen Sie die Applikation aus.
 
 ## Zusammenfassung
+
 Die Übung demonstriert einen Toggle-Flip-Flop, der nur bei aktivem digitalen Eingang seinen Zustand wechselt. Durch die Kombination von `E_PERMIT` und `E_T_FF` kann eine Freigabe für den Takt realisiert werden – nützlich für Anwendungen wie entprellte Taster oder Betriebsartenumschaltung.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

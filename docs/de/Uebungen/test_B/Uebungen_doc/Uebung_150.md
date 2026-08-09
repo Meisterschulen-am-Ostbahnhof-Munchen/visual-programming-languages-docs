@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_150` basierend auf den bereit
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_150** implementiert eine Sub-Applikation (SubApp), die als "Impulszähler" fungiert. Sie dient der Konfiguration und Einbindung eines hardwareseitigen Pulse-Inputs über das logiBUS-System. Ziel ist es, eine Schnittstelle zu einem physikalischen Eingang (`PulseInput_I8`) herzustellen und Parameter für die Erfassung festzulegen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -44,9 +45,11 @@ Da es sich bei dieser Übung um eine reine Konfiguration eines Hardware-Treibers
     - Umgang mit SubApp-Typen zur Kapselung von Hardware-Konfigurationen.
 
 ## Zusammenfassung
+
 Die Übung **Uebung_150** stellt eine grundlegende Konfiguration für einen Impulszähler dar. Sie nutzt den Baustein `logiBUS_PI_ID`, um den Hardware-Eingang `PulseInput_I8` mit spezifischen Parametern für Impuls- und Zeitintervalle zu initialisieren. Diese Übung ist essenziell für das Verständnis der Hardware-Abstraktionsschicht in 4diac-Systemen, die logiBUS verwenden.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

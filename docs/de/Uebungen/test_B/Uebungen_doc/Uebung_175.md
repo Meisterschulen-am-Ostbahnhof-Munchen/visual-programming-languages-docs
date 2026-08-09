@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_175** ist eine Vorlage zur Einarbeitung in die Nutzung von Tabellensteuerungen innerhalb der IEC 61499 Architektur. Der Fokus liegt speziell auf dem Funktionsbaustein `E_TABLE_CTRL` (Event Table Control). Die Übung stellt ein Grundgerüst bereit, das durch den Anwender vervollständigt werden muss.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -12,6 +13,7 @@ Die Übung **Uebung_175** ist eine Vorlage zur Einarbeitung in die Nutzung von T
 In dieser Sub-Applikation wird primär ein Instanz eines Standard-Bibliotheksbausteins verwendet.
 
 ### Sub-Bausteine: E_TABLE_CTRL_1
+
 - **Typ**: `iec61499::events::E_TABLE_CTRL`
 - **Verwendete interne FBs**:
     - Dieser Baustein ist eine Instanz aus der Standardbibliothek (`iec61499`).
@@ -39,4 +41,5 @@ Das Netzwerk dieser Übung ist als **Aufgabe (TODO)** konzipiert.
     3.  Konfigurieren Sie die Parameter des Bausteins, falls notwendig.
 
 ## Zusammenfassung
+
 Die `Uebung_175` ist eine leere Übungsumgebung ("Skeleton"), die lediglich den Baustein `E_TABLE_CTRL` bereitstellt. Ziel der Übung ist es, die Funktionalität dieses Bausteins durch eigenständiges Erstellen der Verbindungen und Logik zu erlernen.

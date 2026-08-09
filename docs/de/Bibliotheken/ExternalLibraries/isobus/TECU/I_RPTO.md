@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **I_RPTO** (Rear Power Take-Off) ist ein standardkonformer Funktionsbaustein zur Steuerung und Überwachung der Heckzapfwelle, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die präzise Regelung von Zapfwellenparametern in Landmaschinen.
 
@@ -11,17 +12,21 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Qualifier `QI`)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung (mit Status)
 - `IND`: Indikationsereignis mit allen Zapfwellenparametern
 - `TIMEOUT`: Timeout-Ereignis
 
 ### **Daten-Eingänge**
+
 - `QI` (BOOL): Qualifier für Initialisierung
 
 ### **Daten-Ausgänge**
+
 - `QO` (BOOL): Qualifier für Ausgangsereignisse
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `Q_timeout` (BOOL): Timeout-Indikator

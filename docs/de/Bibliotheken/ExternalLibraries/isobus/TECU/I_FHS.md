@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **I_FHS** ist ein standardkonformer Funktionsbaustein für Front-Anbaugerätestatusinformationen nach ISO 11783-7 (PGN 65094).
 Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung von Front-Anbaugeräten in modernen Agrarsystemen.
 
@@ -11,17 +12,21 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `IND`: Statusindikation
 - `TIMEOUT`: Timeout-Ereignis
 
 ### **Daten-Eingänge**
+
 - `QI` (BOOL): Initialisierungsqualifier
 
 ### **Daten-Ausgänge**
+
 - `QO` (BOOL): Statusqualifier
 - `STATUS` (STRING): Betriebsstatus
 - `timestamp_*` (DINT): Zeitstempel

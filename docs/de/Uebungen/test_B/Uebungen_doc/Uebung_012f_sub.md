@@ -4,12 +4,15 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Diese Übung demonstriert die Verarbeitung eines numerischen Eingangswertes (Rohwert) in einen physikalischen Wert, dessen dauerhafte Speicherung im nichtflüchtigen Speicher (NVS) sowie das anschließende Auslesen und die Ausgabe des gespeicherten Wertes. Die Funktionalität ist in einer Subapplikation (SubApp) gekapselt.
 
 ## Verwendete Funktionsbausteine (FBs)
+
 Die Subapplikation besteht aus drei internen Funktionsbausteinen, die zusammen die gewünschte Funktionalität realisieren.
 
 ### Sub-Bausteine: Uebung_012f_sub (SubAppType)
+
 - **Typ**: SubAppType
 - **Verwendete interne FBs**:
     - **NumericValue_PHYS**: `isobus::UT::io::NumericValue::NumericValue_PHYS`
@@ -37,7 +40,9 @@ Die Subapplikation besteht aus drei internen Funktionsbausteinen, die zusammen d
         - **Funktionsweise**: Dieser Qualitätsbaustein prüft die Konsistenz zwischen dem Objekt-Pool (`stObj`) und dem physikalischen Wert (`rPhys`). Im vorliegenden Netzwerk wird er durch das Auslesen des NVS getriggert, um die Qualität des gelesenen Wertes zu überprüfen. Sein Ausgang wird nicht weiterverwendet (nur zur Überwachung).
 
 ## Programmablauf und Verbindungen
+
 ### Ereignisablauf
+
 1. **Umwandlung und Speichern**:
    - Der Baustein `NumericValue_PHYS` erhält die Konfiguration (`stObj`) und den Rohwert (implizit über die Eingangsdaten der Subapp). Nach erfolgter Umwandlung erzeugt er das Ereignis `IND`.
    - Dieses Ereignis wird an den Eingang `SET` des NVS-Bausteins weitergeleitet. Gleichzeitig steht der physikalische Wert (`NumericValue_PHYS.rPhys`) am Dateneingang `NVS.VALUE` an.
@@ -54,12 +59,14 @@ Die Subapplikation besteht aus drei internen Funktionsbausteinen, die zusammen d
    - Der ausgelesene Wert (`NVS.VALUEO`) wird direkt an den Subapp-Datenausgang `VALUEO` weitergegeben sowie an den Dateneingang `Q_NumericValue_PHYS.rPhys`.
 
 ### Datenverbindungen
+
 - `stObj` (Subapp-Eingang) → `NumericValue_PHYS.stObj` und `Q_NumericValue_PHYS.stObj`
 - `KEY` (Subapp-Eingang) → `NVS.KEY`
 - `NumericValue_PHYS.rPhys` → `NVS.VALUE`
 - `NVS.VALUEO` → `VALUEO` (Subapp-Ausgang) und `Q_NumericValue_PHYS.rPhys`
 
 ### Übersicht der Verbindungen (grafisch nicht dargestellt)
+
 ```
 [Subapp Eingänge] → [NumericValue_PHYS] → [NVS] → [Subapp Ausgänge]
                                   ↑          ↑
@@ -68,22 +75,27 @@ Die Subapplikation besteht aus drei internen Funktionsbausteinen, die zusammen d
 ```
 
 ### Lernziele
+
 - Verständnis der Verwendung von nichtflüchtigen Speicherbausteinen (NVS) in 4diac.
 - Kennenlernen der physikalischen Werteumrechnung mit `NumericValue_PHYS`.
 - Einbindung eines Qualitätsbausteins zur Überwachung.
 - Aufbau einer SubApp mit mehreren Funktionsbausteinen und Ereignis-/Datenverknüpfungen.
 
 ### Schwierigkeitsgrad: Mittel
+
 ### Vorkenntnisse
+
 - Grundlegende Bedienung der 4diac-IDE.
 - Verständnis von Ereignis- und Datenflüssen in IEC 61499.
 - Kenntnis der verwendeten Bibliotheken (`isobus`, `logiBUS`).
 
 ## Zusammenfassung
+
 Die Subapp `Uebung_012f_sub` realisiert eine kompakte Einheit zum Einlesen, Umrechnen, Speichern und Auslesen eines numerischen Wertes im nichtflüchtigen Speicher. Sie kombiniert die physikalische Konvertierung mit einer dauerhaften Speicherung und einer optionalen Qualitätsprüfung. Die Übung vermittelt praxisnahe Konzepte der industriellen Automatisierung mit 4diac.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 * [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

@@ -13,25 +13,31 @@ Der Funktionsbaustein (FB) `AUS_MUL_3` dient der arithmetischen Multiplikation v
 Da dieser Funktionsbaustein vollständig auf Adaptern basiert, verfügt er über keine direkten, klassischen Ereignis- oder Datenschnittstellen auf der Bausteinebene. Die gesamte Kommunikation und Synchronisation erfolgt über die deklarierten Adapter.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden.* (Die Ereignissteuerung wird über die Adapter-Sockets abgewickelt).
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden.* (Die Ereignissteuerung wird über den Adapter-Plug abgewickelt).
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 * **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Multiplikand für die arithmetische Operation.
 * **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Multiplikand für die arithmetische Operation.
 * **IN3** (Typ: `adapter::types::unidirectional::AUS`): Der dritte Multiplikand für die arithmetische Operation.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 * **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das berechnete Ergebnis der Multiplikation ($OUT = IN1 \times IN2 \times IN3$).
 
 ## Funktionsweise

@@ -1,8 +1,10 @@
 # AL_MUX_5
+
 ![AL_MUX_5](./AL_MUX_5.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **AL_MUX_5** is a generic multiplexer function block that allows one of five analog or logic adapter inputs (IN1 to IN5) to be switched to a common output (OUT). The active channel is selected via the index parameter K. The block is designed for use in industrial control systems and is based on the IEC 61499-2 standard.
 ## Interface Structure
 
@@ -54,6 +56,7 @@ When an event arrives at the **REQ** input, the function block reads the current
 The function block is stateless (combinatory). There is no internal state machine. Channel selection is strictly event-driven and without memory of past states.
 
 ## Application Scenarios
+
 - **Signal Selection**: Selection of a sensor signal from multiple sources in a higher-level controller.
 - **Data Routing**: Forwarding of different data streams to a common processing node.
 - **Test and Diagnostic Systems**: Switching between different test signals to an analysis unit.
@@ -76,6 +79,7 @@ The **AL_MUX_5** is a compact, generic multiplexer for up to five input channels
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

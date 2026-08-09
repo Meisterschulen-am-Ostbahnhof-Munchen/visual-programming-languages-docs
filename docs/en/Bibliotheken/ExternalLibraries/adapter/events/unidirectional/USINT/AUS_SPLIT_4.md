@@ -1,27 +1,24 @@
 # OFF_SPLIT_4
+
 ![AUS_SPLIT_4](./AUS_SPLIT_4.svg)
 
 * * * * * * * * * *
 The function block `AUS_SPLIT_4` distributes an incoming **OFF** signal (typically a binary control signal for "Off") to four identical output signals. It serves as a generic splitter and allows a single command or state to be forwarded to multiple downstream components without requiring separate branching logic.
 
-
-None.
-
-
-None.
-
-
-None.
-
-
 None.
 
 ### Data Outputs
+
 ### Data Inputs
+
 ### Event Outputs
+
 ### Event Inputs
+
 ## Interface Structure
+
 ## Introduction
+
 ### **Adapters**
 
 The function block communicates exclusively via adapters of type `adapter::types::unidirectional::AUS`. This is a unidirectional adapter that transmits a Boolean signal (OFF command).
@@ -38,13 +35,11 @@ The function block communicates exclusively via adapters of type `adapter::types
 
 The module operates as a pure signal distributor: As soon as an OFF signal is present at socket `IN`, it is passed on unchanged to all four plugs (`OUT1` to `OUT4`). No logical processing, delay, or state change takes place. The distribution occurs in parallel and immediately.
 
-
 - **License**: The source code is subject to the **Eclipse Public License 2.0** (EPL-2.0).
 - **Author**: Developed by **HR Agrartechnik GmbH**, Version 1.0, January 24, 2025.
 - **Generic Implementation**: The function block is declared as a generic FB (`GenericClassName` = `'GEN_AUS_SPLIT'`), which allows for easy adaptation to different signal types or configurations.
 - **Adapter-Based**: Communication takes place exclusively via adapters, not via traditional event or data ports. This allows the function block to be seamlessly integrated into an adapter-based architecture.
 - **No State Machine**: There is no internal state logic – the distribution is purely combinatorial.
-
 
 The module does not have a state machine. The output signals follow the input signal directly. Therefore, a graphical state overview is not available.
 
@@ -52,7 +47,6 @@ The module does not have a state machine. The output signals follow the input si
 - **Redundant Monitoring**: Distributing an OFF signal to multiple monitoring units that must react to the command independently.
 - **Modular Machine Structure**: In a modular system, an OFF signal, once detected, is routed to multiple modules via buses or coupling elements. `AUS_SPLIT_4` replaces complex wiring or logical OR operations.
 - **Testing and Simulation**: For simultaneously controlling multiple simulated components with the same signal.
-
 
 | Function Block | Function | Special Feature |
 |----------|----------|--------------|
@@ -63,11 +57,14 @@ The module does not have a state machine. The output signals follow the input si
 
 The `AUS_SPLIT_4` sits between a simple 2-way splitter and a fully configurable splitter. It is ideal when exactly four outputs are needed – without any additional configuration.
 
-
 The `AUS_SPLIT_4` is a simple yet useful generic function block for distributing an OFF signal to four parallel paths. Its adapter-based interface and clear separation of logic and signal transmission make it a robust component in IEC 61499-based automation. Thanks to its generic declaration, it can be easily integrated into various projects and, if necessary, adapted to custom signal types.
 
 ## Technical Features
+
 ## State Overview
+
 ## Application Scenarios
+
 ## Comparison with Similar Function Blocks
+
 ## Conclusion

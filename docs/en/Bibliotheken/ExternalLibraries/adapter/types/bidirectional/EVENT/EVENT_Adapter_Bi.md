@@ -1,5 +1,7 @@
 # Bidirectional Event Adapter
+
 ## 🎧 Podcast
+
 * [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
 * [Event FBs according to IEC 61499: Building blocks of automation – how event function blocks work](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/EventFBs-nach-IEC-61499-Legosteine-der-Automatisierung--So-funktionieren-Ereignis-Funktionsbausteine-e375gjm)
 * [IEC 61499: Revolution of automation – event-driven FBs and distributed systems explained](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Revolution-der-Automatisierung--Event-gesteuerte-FBs-und-verteilte-Systeme-erklrt-e3671vb)

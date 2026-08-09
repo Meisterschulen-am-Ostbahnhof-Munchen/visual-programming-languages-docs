@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_GetAttribute** ist ein standardkonformer Funktionsbaustein zum Abfragen von Objektattributen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.58) Spezifikation für VT-Systeme ab Version 4.
 
 ![Q_GetAttribute](Q_GetAttribute.svg)
@@ -12,18 +13,22 @@ Der **Q_GetAttribute** ist ein standardkonformer Funktionsbaustein zum Abfragen 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Attributabfrage-Anforderung (mit Attribut-ID)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Abfragebestätigung (mit Status und Attributwert)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Objekt-ID (16-bit)
 - `u8AID` (USINT): Attribut-ID (8-bit)
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldAID` (USINT): Aktueller Attributwert
 - `s16result` (INT): ISO-konformer Ergebniscode

@@ -7,6 +7,7 @@
 
 * * * * * * * * * *
 ## Einleitung
+
 Der Funktionsbaustein `AUI_AX_SEL_AUI` ist ein zusammengesetzter Funktionsbaustein (Composite Function Block) für 4diac-ide. Er dient der binären Auswahl (Selektion) zwischen zwei analogen bzw. numerischen Eingangssignalen, die über Adapter bereitgestellt werden. Basierend auf dem Zustand eines Selektions-Adapters schaltet der Baustein eines der beiden Eingangssignale auf den Ausgang auf.
 
 ## Schnittstellenstruktur
@@ -14,25 +15,31 @@ Der Funktionsbaustein `AUI_AX_SEL_AUI` ist ein zusammengesetzter Funktionsbauste
 Der Funktionsbaustein verfügt über keine klassischen, direkten Ereignis- oder Datenkanäle an seiner Hauptoberfläche. Die gesamte Kommunikation wird über Adapter abgewickelt.
 
 ### **Ereignis-Eingänge**
+
 *Keine direkten Ereignis-Eingänge vorhanden.*
 
 ### **Ereignis-Ausgänge**
+
 *Keine direkten Ereignis-Ausgänge vorhanden.*
 
 ### **Daten-Eingänge**
+
 *Keine direkten Daten-Eingänge vorhanden.*
 
 ### **Daten-Ausgänge**
+
 *Keine direkten Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
 #### **Sockets (Eingangs-Adapter)**
+
 *   **IN0** (Typ: `adapter::types::unidirectional::AUI`): Unidirektionaler Adapter für das erste auswählbare Eingangssignal. Dieses Signal wird an den Ausgang weitergeleitet, wenn der Selektor `G` den Wert `FALSE` aufweist.
 *   **IN1** (Typ: `adapter::types::unidirectional::AUI`): Unidirektionaler Adapter für das zweite auswählbare Eingangssignal. Dieses Signal wird an den Ausgang weitergeleitet, wenn der Selektor `G` den Wert `TRUE` aufweist.
 *   **G** (Typ: `adapter::types::unidirectional::AX`): Unidirektionaler Selektor-Adapter. Bestimmt, welches der beiden Eingangssignale durchgeschaltet wird.
 
 #### **Plugs (Ausgangs-Adapter)**
+
 *   **OUT** (Typ: `adapter::types::unidirectional::AUI`): Unidirektionaler Adapter für das ausgewählte Ausgangssignal.
 
 ---
@@ -55,6 +62,7 @@ Im Inneren des Bausteins befindet sich ein definiertes Netzwerk aus Standard-Fun
 ---
 
 ## Technische Besonderheiten
+
 *   **Reine Adapter-Schnittstelle:** Der Baustein ist speziell für die Verwendung in modernen, adapterbasierten Architekturen konzipiert. Dies sorgt für ein sehr cleanes und übersichtliches Applikationsdiagramm, da lose Daten- und Event-Leitungen in Adaptern gebündelt werden.
 *   **Ereignisgesteuert:** Jede Änderung (Senden eines Ereignisses) an den Eingängen `IN0`, `IN1` oder dem Selektor `G` triggert eine sofortige Neuberechnung und führt zu einer Aktualisierung des Ausgangs `OUT`.
 *   **Typisierung:** Die internen Konvertierungs- und Weiterleitungsbausteine arbeiten primär mit dem Datentyp `UINT`.
@@ -73,6 +81,7 @@ Da es sich um einen Composite-FB handelt, besitzt der Baustein keine eigene Zust
 ---
 
 ## Anwendungsszenarien
+
 *   **Sollwert-Umschaltung:** Wechseln zwischen einem manuell vorgegebenen Sollwert (z. B. über ein HMI an `IN0`) und einem Automatik-Sollwert (z. B. aus einer Berechnungslogik an `IN1`).
 *   **Sensorredundanz:** Umschalten zwischen zwei analogen Messwertgebern (z. B. Primärsensor an `IN1` und Backup-Sensor an `IN0`) im Fehlerfall über ein Steuersignal an `G`.
 *   **Betriebsartenwahl:** Auswahl unterschiedlicher analoger Steuerparameter in Abhängigkeit vom aktuellen Maschinenzustand.
@@ -80,6 +89,7 @@ Da es sich um einen Composite-FB handelt, besitzt der Baustein keine eigene Zust
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 Der klassische Standard-Baustein `F_SEL` benötigt direkte Datenleitungen (z. B. `ANY_ELEMENTARY`) und eine manuelle Event-Verkabelung für die Berechnungstriggerung (`REQ`/`CNF`). 
 
 Der Baustein `AUI_AX_SEL_AUI` kapselt diese komplette Logik inklusive der Event-Synchronisation und Pufferung. Er eignet sich daher ideal für modularisierte Software-Architekturen, bei denen Signalgruppen bereits standardmäßig als Adapter vorliegen.
@@ -87,4 +97,5 @@ Der Baustein `AUI_AX_SEL_AUI` kapselt diese komplette Logik inklusive der Event-
 ---
 
 ## Fazit
+
 `AUI_AX_SEL_AUI` vereinfacht das Signalrouting in 4diac-Anwendungen erheblich. Er kombiniert die bewährte Auswahl-Logik der IEC 61131-3 mit den strukturellen Vorteilen ereignisgesteuerter Adapter in der IEC 61499.

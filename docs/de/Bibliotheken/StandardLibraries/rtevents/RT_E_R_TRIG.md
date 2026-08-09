@@ -3,6 +3,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Echtzeit-Variante des E_R_TRIG Bausteins (Steigende Flanke).
 
 ![RT_E_R_TRIG](RT_E_R_TRIG.svg)
@@ -18,4 +19,5 @@ Echtzeit-Variante des E_R_TRIG Bausteins (Steigende Flanke).
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

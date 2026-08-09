@@ -7,6 +7,7 @@ Hier ist die Dokumentationsseite für die Übung 126b.
 * * * * * * * * * *
 
 ## Einleitung
+
 Die Übung **Uebung_126b** demonstriert das zyklische Senden einer ISOBUS-Nachricht, bei der die Nutzdaten (Data Payload) dynamisch über einen Callback-Mechanismus generiert werden. Konkret wird eine Sinus-Funktion erzeugt, deren Werte in das erste Byte der CAN-Nachricht geschrieben werden. Dies dient beispielsweise dazu, Signalverläufe zu simulieren und diese anschließend in Diagnose-Tools wie dem PCAN-Explorer zu plotten.
 
 Das Hauptmerkmal dieser Übung ist die Trennung von Kommunikationsmanagement (im Haupt-Netzwerk) und Datengenerierung (in einer Sub-Application), verbunden über einen Adapter.
@@ -14,6 +15,7 @@ Das Hauptmerkmal dieser Übung ist die Trennung von Kommunikationsmanagement (im
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Haupt-Netzwerk
+
 Im Hauptnetzwerk werden folgende Bausteine verwendet, um die Kommunikation zu initiieren:
 
 *   **NmGetCfInfo_1** (`isobus::pgn::NmGetCfInfo`):
@@ -37,6 +39,7 @@ Im Hauptnetzwerk werden folgende Bausteine verwendet, um die Kommunikation zu in
     *   Eine Sub-Application, welche die Logik zur Datenerzeugung (Sinus-Kurve) enthält.
 
 ### Sub-Bausteine: DataSupply (Uebung_126b_sub)
+
 Diese Sub-Application kapselt die Logik zur Berechnung der Sinuswerte.
 
 *   **Typ**: SubApp
@@ -90,9 +93,11 @@ Diese Sub-Application kapselt die Logik zur Berechnung der Sinuswerte.
 *   Datenkonvertierung und Strukturierung für ISOBUS/CAN-Nachrichten.
 
 ## Zusammenfassung
+
 Die Übung 126b zeigt eine elegante Methode, um Simulationsdaten (hier eine Sinuskurve) über den ISOBUS zu senden. Durch die Auslagerung der Datenerzeugung in eine Sub-Applikation und die Nutzung der Callback-Schnittstelle bleibt die Hauptanwendung übersichtlich und der zyklische Sender kümmert sich autonom um das Timing, während die aktuellen Daten bei jedem Zyklus frisch berechnet werden. Das Ergebnis kann im PCAN-Explorer als Wellenform visualisiert werden (Byte 0 der Nachricht).
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

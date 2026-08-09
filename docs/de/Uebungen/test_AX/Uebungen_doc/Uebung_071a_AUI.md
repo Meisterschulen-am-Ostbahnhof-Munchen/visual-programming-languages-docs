@@ -13,6 +13,7 @@ Diese Übung demonstriert die Verwendung von Adapter-Interfaces (AUI/AUDI) in 4d
 ## Verwendete Funktionsbausteine (FBs)
 
 ### Sub-Baustein: `AX_GT_0`
+
 - **Typ**: `MyLib::sys::AX_GT_0_UINT` (SubApp)
 - **Verwendete interne FBs**: Nicht näher spezifiziert (gehört zur Bibliothek `MyLib::sys`)
 - **Funktionsweise**: Dieser Baustein nimmt über einen Adapter-Eingang (AUI) einen ganzzahligen Wert entgegen und prüft, ob dieser größer als Null ist. Am Ausgang `AX_OUT` wird ein boolesches Signal (TRUE/FALSE) bereitgestellt, das das Ergebnis des Vergleichs darstellt.
@@ -57,4 +58,5 @@ Nach erfolgreicher Bearbeitung versteht der Teilnehmer die Datenflussstruktur mi
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

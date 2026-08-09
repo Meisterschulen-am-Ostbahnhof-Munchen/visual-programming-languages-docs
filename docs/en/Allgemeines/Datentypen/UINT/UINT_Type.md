@@ -1,5 +1,7 @@
 # Data type: UINT
+
 ## 🛠️ Related exercises
+
 * [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
 * [Uebung_010b4_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
 * [Uebung_010b4_sub_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
@@ -32,4 +34,3 @@
 * [Uebung_090a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
 * [Uebung_090a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 * [Uebung_103](../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-

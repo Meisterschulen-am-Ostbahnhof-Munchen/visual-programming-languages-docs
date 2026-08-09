@@ -12,6 +12,7 @@ Die verwendeten Bausteine stammen aus den Bibliotheken `isobus::UT` und `eclipse
 ## Verwendete Funktionsbausteine (FBs)
 
 ### `InputNumber_I3`
+
 - **Typ**: `isobus::UT::io::NumericValue::NumericValue_PHYS`
 - **Parameter**:
     - `QI` = `TRUE`
@@ -20,6 +21,7 @@ Die verwendeten Bausteine stammen aus den Bibliotheken `isobus::UT` und `eclipse
   Dieser Baustein repräsentiert einen physischen numerischen Eingang (z. B. ein Analog‑ oder Digitaleingang). Bei einer Wertänderung am Eingang wird ein Ereignis `IND` ausgelöst und der aktuelle Wert als Gleitkommazahl am Ausgang `rPhys` bereitgestellt.
 
 ### `NVS`
+
 - **Typ**: `eclipse4diac::storage::INI`
 - **Parameter**:
     - `QI` = `TRUE`
@@ -33,6 +35,7 @@ Die verwendeten Bausteine stammen aus den Bibliotheken `isobus::UT` und `eclipse
   - Bei `GET` wird der gespeicherte Wert am Ausgang `VALUEO` ausgegeben (falls kein Wert gespeichert ist, wird `DEFAULT_VALUE` verwendet).
 
 ### `Q_NumericValue`
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYS`
 - **Parameter**:
     - `stObj` = `InputNumber_I3`
@@ -64,4 +67,5 @@ Durch die Ereignis‑ und Datenverbindungen wird sichergestellt, dass nach dem E
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

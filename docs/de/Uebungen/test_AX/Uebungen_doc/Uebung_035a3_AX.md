@@ -17,6 +17,7 @@ In dieser SubApplikation werden verschiedene logische Bausteine, Zeitglieder und
 ### Haupt-Steuerbausteine
 
 #### **Seq** (`logiBUS::utils::sequence::timed::sequence_T_05_loop_AX`)
+
 Dieser Baustein ist der Kern der Ablaufsteuerung. Er definiert 5 zeitgesteuerte Zustände (S1 bis S5), die in einer Schleife durchlaufen werden.
 
 - **Typ**: Sequenz-Controller (Timed Loop)
@@ -29,6 +30,7 @@ Dieser Baustein ist der Kern der Ablaufsteuerung. Er definiert 5 zeitgesteuerte 
 - **Funktionsweise**: Nach Aktivierung durch `START_S1` werden die Ausgänge `DO_S1` bis `DO_S5` nacheinander für die definierte Zeitdauer aktiv geschaltet.
 
 #### **Blinker** (`adapter::events::unidirectional::signals::AX_BLINK_TRAIN`)
+
 Dieser Baustein erzeugt das Blinksignal für die Grün-Phase.
 
 - **Typ**: Signalgenerator / Blinker

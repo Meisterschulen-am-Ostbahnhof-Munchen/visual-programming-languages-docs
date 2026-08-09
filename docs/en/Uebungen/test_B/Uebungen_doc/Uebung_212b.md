@@ -1,4 +1,5 @@
 # Exercise_212b: Standard IEC 61131-3 FB_CTU_LINT (Upward Counter, LINT) with Terminal Output (PHYS_LREAL)
+
 ![Uebung_212b_network](./Uebung_212b_network.svg)
 *No image available.*
 
@@ -28,7 +29,6 @@ This exercise implements an upward counter according to IEC 61131-3 (FB_CTU_LINT
 - Parameters: stObj = OutputNumber_N3 (reference to a terminal output object)
 - Data input: lrPhys (physical LREAL value)
 - Event input: REQ (trigger terminal output)
-
 
 Control is achieved via event and data connections:
 
@@ -71,17 +71,20 @@ The current counter value (LINT) is passed to the converter.
 The converted LREAL value is passed to the terminal block.
 
 ### Datenverbindungen
+
 ### Ereignisverbindungen
+
 ## Program Flow and Connections
+
 ## Function Blocks Used (FBs)
+
 ## Introduction
+
 ### Functionality
+
 1. As long as the input CU (I1) shows a rising edge, the counter CV increments by 1.
-
 2. A rising edge at the reset input R (I2) sets CV to 0.
-
 3. If the counter value reaches the preset value PV (here 5) or higher, the output Q is set to TRUE. Further counting is then no longer possible until a reset occurs.
-
 
 **Learning Objectives:**
 
@@ -93,7 +96,6 @@ The converted LREAL value is passed to the terminal block.
 **Difficulty Level:** Advanced Fundamentals
 **Prerequisites:** Basic understanding of the 4diac IDE, working with digital inputs/outputs, event chaining.
 
-
 Exercise 212b demonstrates the combination of an IEC 61131-3 up counter (FB_CTU_LINT) with a terminal output. The counter is controlled via two digital inputs; the output Q switches when the preset value is reached. The current counter value is output to a LogiBUS terminal block after each action via type conversion. This demonstrates the chaining of events, data flow logic, and the use of utility blocks in 4diac.
 
 ---
@@ -103,4 +105,5 @@ Exercise 212b demonstrates the combination of an IEC 61131-3 up counter (FB_CTU_
 ]
 
 ## Summary
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

@@ -18,14 +18,17 @@ Moderne Land- und Baumaschinen sind hochgradig vernetzte, dezentrale mechatronis
 ## 📚 Verankerung im Lehrplan (Module & Lerneinheiten)
 
 ### 1. ⚡ [Automatisierte Funktionen mit IEC 61499](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)
+
 - **Lehrplan-Bezug:** Teil I LE 1.4 (40 UE) | Teil II LE 1.1 (160 UStd.)
 - **Inhalte:** Planung, grafische Erstellung und Inbetriebnahme vernetzter mechatronischer Systeme zur Realisierung von automatisierten Funktionen (z. B. automatische Sequenzsteuerung für Hubwerke, Ventile, Fahrantriebe).
 
 ### 2. 🔍 [Fehlerdiagnose in automatisierten & autonomen Systemen](./lehrplan_praxis/fehlerdiagnose_autonome_systeme.md)
+
 - **Lehrplan-Bezug:** Teil I LE 2.6 (20 UE) | Teil II LE 1.3 (100 UStd.)
 - **Inhalte:** Strukturierte Fehlerdiagnose, Signalverfolgung und Online-Debugging in visuellen Funktionsbaustein-Netzen und Zustandsautomaten (ECC) bei autonom arbeitenden Maschinen und Anbaugeräten.
 
 ### 3. 🧩 [Systemtechnik, Signalfluss & Zustandsmaschinen](./lehrplan_praxis/funktionsbausteine_systemtechnik.md)
+
 - **Lehrplan-Bezug:** Teil II LE 1.1 (160 UStd.) & LE 1.4 (40 UStd.)
 - **Inhalte:** Technische Grundlagen der Steuerungstechnik, Signalflusspläne, Abstraktion von Sensorik/Aktorik, Zustandsüberführungsgraphen (Execution Control Charts - ECC), herstellerunabhängige Bausteinbibliotheken.
 
@@ -45,6 +48,7 @@ Moderne Land- und Baumaschinen sind hochgradig vernetzte, dezentrale mechatronis
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Hauptportal & Direktlinks zu den 6 Wikis

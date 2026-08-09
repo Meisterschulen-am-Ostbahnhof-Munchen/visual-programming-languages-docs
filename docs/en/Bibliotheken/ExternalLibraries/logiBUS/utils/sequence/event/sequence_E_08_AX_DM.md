@@ -1,10 +1,13 @@
 # sequence_E_08_AX_DM
+
 ![sequence_E_08_AX_DM](./sequence_E_08_AX_DM.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `sequence_E_08_AX_DM` implements an event-driven sequence control with eight sequentially switchable outputs. It is based on a finite state machine with nine states and allows switching between states via explicit events. An integrated deadman switch (DM) allows monitoring and controlled reset of the outputs. The function block is specifically designed for use in safety-critical or monitored control sequences in agricultural technology.
 ## Interface Structure
+
 ### **Event Inputs**
 
 | Event | Description |
@@ -27,6 +30,7 @@ S7_S8` | Change from state 7 to state 8 (State_08) |
 | `CNF` | `STATE_NR` | Confirmation of state change; also returns the current state number |
 
 ### **Data Inputs**
+
 No data inputs available.
 
 ### **Data Outputs**
@@ -50,6 +54,7 @@ No data inputs available.
 | Socket | `DM` | unidirectional::AX | Deadman switch; returns the event `DM.E1` and the data value `DM.D1` |
 
 ## Functionality
+
 The function block operates as a finite automaton with the following states: `xSTART` (initial), `sState_01` to `sState_08` (active sequence states), `sState_00` (start/wait state after sequence completion), and `sRESET` (intermediate state for reset).
 
 **Start and Process**: After starting, the automaton is in state `xSTART`. The event `START_S1` transitions it to state `sState_01`. From there, the events `S1_S2`, `S2_S3`, ... up to `S7_S8` sequentially cycle through the eight states. The last state, `sState_08`, is transitioned to state `sState_00` by `S8_START`. This state serves as the rest point after the sequence and can be restarted via `START_S1`.
@@ -61,6 +66,7 @@ The function block operates as a finite automaton with the following states: `xS
 - **Confirmation**: With each state change (except within `sRESET`), the event `CNF` is output with the current state number `STATE_NR`. The state number is set via the constants `sequence::State_00` to `sequence::State_08`.
 
 ## Technical Features
+
 - **Adapter-Based Outputs**: All eight outputs and the dead man's switch are implemented as unidirectional AX adapters. This allows for flexible connection to external hardware (e.g., analog or digital actuators) via the adapter frame.
 - **Reusable Sequence Constants**: The state numbers are retrieved from a separate library (`logiBUS::utils::sequence::const::sequence`), allowing for consistent numbering across different sequence blocks.
 - **Deadman Integration**: The deadman switch does not act as a block, but rather as a dynamic value generator for the outputs. Each state inherits the current value from `DM.D1` upon entry and can be updated by a repeated `DM.E1` event.
@@ -83,15 +89,18 @@ The function block operates as a finite automaton with the following states: `xS
 | `sRESET` | Reset state | All disabled | Automatic → `sState_00` |
 
 ## Application Scenarios
+
 - **Agricultural Control Systems**: Step-by-step control of eight valves, actuators, or lighting units, e.g., for irrigation sequences or harvesting machines.
 - **Safety-Monitored Processes**: Use in systems requiring a deadman's switch – the operator must keep the outputs active by repeatedly pressing the deadman switch.
 - **Test and Inspection Stations**: Sequential activation of test steps with manual release by the operator (via events).
 - **Modular Sequence Control**: Combination of multiple `sequence_E_08_AX_DM` blocks for more complex sequences with more than eight steps.
 
 ## Comparison with Similar Blocks
+
 - **`sequence_E_08_AX` (without deadman)**: Does not have a deadman switch – the outputs are permanently activated upon entry (e.g., with `TRUE`) and only deactivated upon exit. Suitable for non-critical control systems.
 - **`sequence_E_04_AX_DM`**: Four-stage variant with correspondingly fewer outputs and events. Offers identical deadman functionality.
 - **`sequence_T_08_AX_DM`**: Time-controlled variant – state transitions occur via timers instead of external events. Comparable deadman integration.
 
 ## Conclusion
+
 The `sequence_E_08_AX_DM` function block is a powerful and safe component for event-driven processes with up to eight steps. The integration of a deadman switch increases operational safety by requiring operator interaction. The adapter-based output interface allows for easy connection to various actuators. Thanks to its clearly structured state machine and explicit reset capability, this module is particularly suitable for safety-critical control tasks in agricultural technology and beyond.

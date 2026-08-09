@@ -1,8 +1,10 @@
 # AUI_TO_AW
+
 ![AUI_TO_AW](./AUI_TO_AW.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `AUI_TO_AW` is a composite module that converts an AUI adapter (data type UINT) into an AW adapter (data type WORD). It encapsulates the type conversion and provides it as a standardized adapter interface, enabling seamless integration of system components with different data types.
 ## Interface Structure
 
@@ -44,6 +46,7 @@ This function block responds to an event on socket `AUI_IN.E1`. The current valu
 The interaction of event and data flow ensures secure and deterministic data transmission.
 
 ## Technical Features
+
 - **Composite Structure:** The block encapsulates the complete conversion logic in a single function block, eliminating the need for any further conversion steps in the application.
 - **Type Conversion:** Conversion is performed using the standardized IEC 61131 function block `F_UINT_TO_WORD`. UINT and WORD are bit-compatible, so no data loss occurs.
 - **Adapter Interface:** The use of adapters enables loose coupling of the components. The function block can be directly integrated into adapter-based networks.
@@ -54,11 +57,13 @@ The interaction of event and data flow ensures secure and deterministic data tra
 The function block does not contain its own state machine (ECC). Sequence control is handled solely through the event connections in the composite network. After startup, the function block is immediately ready to process incoming events and perform the conversion.
 
 ## Application Scenarios
+
 - **Adapter Bridge:** If one system component communicates only via an AUI adapter (UINT), but another component expects an AW adapter (WORD), `AUI_TO_AW` can be used as an intermediary.
 - **Data Type Adaptation:** In Industry 4.0 or IIoT environments where devices use different data types, this component harmonizes the interfaces.
 - **Modular Chaining:** The component can be easily inserted into a chain of adapters to ensure compatibility between components.
 
 ## Comparison with Similar Components
+
 - **Direct Use of `F_UINT_TO_WORD`:** Instead of the composite component, `F_UINT_TO_WORD` could be used directly, and the adapters connected separately. The composite block simplifies cabling and increases reusability.
 - **Analog converters (e.g., `AWORD_TO_AUINT`):** Corresponding modules exist for the reverse direction. `AUI_TO_AW` focuses specifically on the conversion from UINT to WORD and offers a clearly named, targeted solution.
 

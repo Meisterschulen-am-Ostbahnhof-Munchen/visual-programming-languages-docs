@@ -1,8 +1,10 @@
 # AUDI_LE
+
 ![AUDI_LE](./AUDI_LE.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AUDI_LE** performs a less-than-equal-to comparison of two values. It is built as a composite function block based on the standardized comparison block `F_LE` from the IEC 61131 classification. Communication with the environment occurs exclusively via adapter interfaces, allowing the block to be integrated modularly into event-driven processes.
 ## Interface Structure
 
@@ -45,14 +47,12 @@ The function block **AUDI_LE** performs a less-than-equal-to comparison of two v
 ## Functionality
 
 1. The function block (FB) expects one event and one data value at each of its two input adapters (`IN1` and `IN2`).
-
 2. Internally, the two events are combined (via an implicit AND condition in the network), and the embedded function block `F_LE` is started with the data values.
-
 3. `F_LE` performs the comparison `IN1 ≤ IN2` and places the result (Boolean value) at its data output.
-
 4. As soon as the result is available, the event at the output adapter `OUT` is triggered, and the result value is made available via `OUT.D1`.
 
 ## Technical Features
+
 - **Adapter-Based Interfaces:** The function block (FB) does not have traditional individual ports but uses standardized unidirectional adapters. This facilitates reuse and integration into complex communication structures.
 - **Composite Structure:** All logic is implemented via an internal FB (`F_LE`). This makes the function block easy to understand and extend.
 - **Event Synchronization:** Both input events must arrive before processing starts. This ensures that current value pairs are always compared.
@@ -62,6 +62,7 @@ The function block **AUDI_LE** performs a less-than-equal-to comparison of two v
 The FB does not have its own directed state machine, as it operates purely combinatorially. The internal `F_LE` is also stateless. The only relevant logic is the AND operation of the events – after receiving both events, the result is output once.
 
 ## Application Scenarios
+
 - **Limit Monitoring:** Check whether a measured value exceeds a threshold.
 - **Enabling Logic:** Activate an action only if the current requirement is less than or equal to a maximum allowable value.
 - **Comparison Chains:** Combine multiple `AUDI_LE` function blocks to implement complex conditions (e.g., `x ≤ y ≤ z`).

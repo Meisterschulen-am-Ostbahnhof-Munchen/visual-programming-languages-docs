@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderung von Schriftattributen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.28) Spezifikation für VT-Systeme.
 
 ![Q_FontAttributes](Q_FontAttributes.svg)
@@ -12,14 +13,17 @@ Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `INIT`: Initialisierungsanforderung (mit Objekt-ID)
 - `REQ`: Attributänderungs-Anforderung (mit neuen Schriftattributen)
 
 ### **Ereignis-Ausgänge**
+
 - `INITO`: Initialisierungsbestätigung
 - `CNF`: Änderungsbestätigung (mit Status und alten Attributen)
 
 ### **Daten-Eingänge**
+
 - `u16ObjId` (UINT): Objekt-ID (16-bit)
 - `u8FontColour` (USINT): Neue Schriftfarbe
 - `u8FontSize` (USINT): Neue Schriftgröße
@@ -27,6 +31,7 @@ Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - `u8FontStyle` (USINT): Neuer Schriftstil
 
 ### **Daten-Ausgänge**
+
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `u8OldFontColour` (USINT): Alte Schriftfarbe
 - `u8OldFontSize` (USINT): Alte Schriftgröße

@@ -35,11 +35,13 @@ $$Y = (X + \text{OFFSET}) \cdot \text{SCALE}$$
 ### **Adapter**
 
 #### **Plugs (Ausgangsseitig / Speicherverbindungen)**
+
 *   **Y** (Typ: `adapter::types::unidirectional::AR`): Der kalibrierte Ausgangswert.
 *   **OFFSET** (Typ: `adapter::types::bidirectional::AR2`): Verbindung zum Speicher des Offset-Werts (Standard-Anfangswert: 0.0).
 *   **SCALE** (Typ: `adapter::types::bidirectional::AR2`): Verbindung zum Speicher des Skalierungswerts (Standard-Anfangswert: 1.0).
 
 #### **Sockets (Eingangsseitig / Sensorverbindungen)**
+
 *   **X** (Typ: `adapter::types::unidirectional::AR`): Der unkalibrierte Rohwerteingang des Sensors.
 *   **CO** (Typ: `adapter::types::unidirectional::AX`): Befehl zur Durchführung der Offset-Kalibrierung ("Calibrate Offset").
 *   **CS** (Typ: `adapter::types::unidirectional::AX`): Befehl zur Durchführung der Skalierungs-Kalibrierung ("Calibrate Scale").
@@ -49,6 +51,7 @@ $$Y = (X + \text{OFFSET}) \cdot \text{SCALE}$$
 Die Kalibrierung verläuft in zwei sequenziellen Hauptschritten, die mathematisch entkoppelt sind:
 
 ### 1. Offset-Kalibrierung (CO)
+
 1. Der Sensor wird mit der niedrigen Referenzgröße beaufschlagt.
 2. Der gewünschte Zielwert wird an `Y_Offset` angelegt.
 3. Der Trigger `CO.E1` (mit `CO.D1` = TRUE) wird ausgelöst.
@@ -57,6 +60,7 @@ Die Kalibrierung verläuft in zwei sequenziellen Hauptschritten, die mathematisc
    *Hinweis:* Nach diesem Schritt entspricht der Ausgang $Y$ unabhängig vom aktuellen Skalierungswert exakt dem Wert `Y_Offset`.
 
 ### 2. Skalierungs-Kalibrierung (CS)
+
 1. Der Sensor wird mit der hohen Referenzgröße beaufschlagt.
 2. Der gewünschte Zielwert wird an `Y_Scale` angelegt.
 3. Der Trigger `CS.E1` (mit `CS.D1` = TRUE) wird ausgelöst.

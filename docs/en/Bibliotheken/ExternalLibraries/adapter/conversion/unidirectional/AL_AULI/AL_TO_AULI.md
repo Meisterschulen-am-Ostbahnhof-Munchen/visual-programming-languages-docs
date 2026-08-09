@@ -1,8 +1,10 @@
 # AL_TO_AULI
+
 ![AL_TO_AULI](./AL_TO_AULI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block **AL_TO_AULI** is a composite function block (FB) that performs a data type conversion from an **AL adapter** (type `LWORD`) to an **AULI adapter** (type `ULINT`).
 It serves as a bridge between components that work with different data types and enables seamless integration into IEC 61499-based systems.
 
@@ -45,6 +47,7 @@ The function block (FB) performs the conversion using an internal block `F_LWORD
 - The converted ULINT value is then available at the **D1** data output of the output adapter.
 
 ## Technical Specifications
+
 - **License:** This function block is provided under the **Eclipse Public License 2.0**.
 - **Version:** 1.0 (as of 2026-02-17)
 - **Dependencies:** It requires the function `F_LWORD_TO_ULINT` from the `iec61132::conversion` library.
@@ -56,11 +59,13 @@ The function block (FB) performs the conversion using an internal block `F_LWORD
 The function block **AL_TO_AULI** does not have its own state machine – it delegates all conversion logic to the internal function block `F_LWORD_TO_ULINT`. This makes it behave like a transparent conversion layer that only becomes active upon an incoming event and returns to its idle state after the conversion.
 
 ## Application Scenarios
+
 - **Data Type Conversion** in PLC or automation systems when an LWORD signal (e.g., from a communication module) needs to be converted into a ULINT value for subsequent processing (e.g., counters or arithmetic).
 - **Adapter bridge** between function blocks that work exclusively with the AULI adapter and those that use the AL adapter.
 - **Migration** of existing LWORD-based components to ULINT-based systems without changing the signal chain.
 
 ## Comparison with similar function blocks
+
 - **F_LWORD_TO_ULINT (direct converter):** This pure function block performs the same conversion, but without adapter interfaces. It is suitable for simple data flow models, while **AL_TO_AULI** is specifically optimized for use in adapter-based architectures.
 - **Other adapter converters (e.g., AL_TO_UDINT, AL_TO_DWORD):** Similar function blocks exist for other target types (UDINT, DWORD). They differ only in the output data type but follow the same design pattern.
 
@@ -71,6 +76,7 @@ The **AL_TO_AULI** function block offers a simple and robust way to convert LWOR
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

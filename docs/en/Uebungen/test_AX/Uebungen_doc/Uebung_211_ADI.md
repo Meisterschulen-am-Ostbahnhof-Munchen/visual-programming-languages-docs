@@ -1,12 +1,15 @@
 # Exercise_211_ADI: Standard IEC 61131-3 ADI_FB_CTU (Adapter Version, Up Counter, DINT) with Terminal Output
+
 ![Uebung_211_ADI_network](./Uebung_211_ADI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as an adapter version for the DINT data type. The counter value is also output via a terminal. The hardware inputs (CU and R) are read via logiBUS DI blocks, and the output Q controls a logiBUS DO terminal. The counter end value (PV) is set to a constant value of 5.
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: ADI_FB_CTU
+
 - **Type**: adapter::iec61131::counters::ADI_FB_CTU
 - **Internal FBs Used**: None (Basic Function Block)
 - **Parameters**: None
@@ -16,30 +19,35 @@ This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as 
 - **Functionality**: The block increments the internal counter CV (DINT) on every rising edge at the event input CU. When CV reaches the value PV, Q is set. A signal at input R resets CV to 0 and Q.
 
 ### Sub-Blocks: ADI_DINT_TO_DI
+
 - **Type**: adapter::conversion::unidirectional::ADI_DINT_TO_DI
 - **Internal Function Blocks Used**: None
 - **Parameters**: `OUT = DINT#5` (fixed end value)
 - **Functionality**: Converts a DINT value into an adapter data output (ADI). Here, the constant value 5 is provided as PV for the meter.
 
 ### Sub-Blocks: ADI_TO_AUDI
+
 - **Type**: adapter::conversion::unidirectional::ADI_TO_AUDI
 - **Internal Function Blocks Used**: None
 - **Parameters**: None
 - **Functionality**: Converts the adapter data output (ADI) into an AUDI data output suitable for terminal output. (Note: This function block does not support negative numbers – see the comment in the network.)
 
 ### Sub-function block: Q_NumericValue_AUDI
+
 - **Type**: isobus::UT::Q::Q_NumericValue_AUDI
 - **Internal Function Blocks Used**: None
 - **Parameters**: `u16ObjId = OutputNumber_N1` (Reference to the terminal output object)
 - **Functionality**: Receives an AUDI data value (u32NewValue) and outputs it to the terminal. The object ID refers to the predefined output location.
 
 ### Sub-Blocks: Input_CU
+
 - **Type**: logiBUS::io::DI::logiBUS_IXA
 - **Internal Function Blocks Used**: None
 - **Parameters**: `QI = TRUE`, `Input = Input_I1` (physical input)
 - **Functionality**: Reads the digital input I1 and makes it available as an adapter data output (IN) for the counting pulse CU. The block is always enabled (QI = TRUE).
 
 ### Sub-Blocks: Input_R
+
 - **Type**: logiBUS::io::DI::logiBUS_IXA
 - **Internal Function Blocks Used**: None
 - **Parameters**: `QI = TRUE`, `Input = Input_I2` (physical input)
@@ -56,13 +64,9 @@ This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as 
 ## Program Flow and Connections
 
 1. **Initialization**: At startup, the Input_R block triggers the INITO event. This triggers the ADI_DINT_TO_DI block, which provides the fixed PV value (5) as a DINT and sends it via the adapter output ADI_OUT to the PV input of ADI_FB_CTU.
-
 2. **Counting Pulses**: A rising edge at input I1 (logiBUS) is forwarded via Input_CU as an adapter signal (IN) to the CU input of the counter. The counter increments its internal CV with each event.
-
 3. **Reset**: A rising edge at input I2 is forwarded via Input_R as an adapter signal to the R input of the counter and resets CV.
-
 4. **Output**: The counter output Q (set when CV >= PV) is passed via an adapter connection to the OUT input of Output_Q1 and switches the physical output Q1.
-
 5. **Terminal Output**: The current counter value CV is converted to an AUDIO format via ADI_TO_AUDI and passed to Q_NumericValue_AUDI. The function block outputs the value to the terminal (object OutputNumber_N1).
 
 **Notes**:

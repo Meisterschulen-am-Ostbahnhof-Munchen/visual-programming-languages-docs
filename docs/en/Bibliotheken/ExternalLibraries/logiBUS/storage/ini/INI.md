@@ -1,8 +1,10 @@
 # INI
+
 ![INI](./INI.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **INI** function block is used for the secure reading and writing of configuration data in a `settings.ini` file. It allows access to values via a section and key name and provides both initialization and read/write operations as separate events. Its use of generic data types (`ANY`) makes it flexible.
 ## Interface Structure
 
@@ -49,14 +51,13 @@ No adapters defined.
 The function block operates on a file `settings.ini`, which contains a simple key-value structure in sections (`[Section]`). Its use involves three steps:
 
 1. **INIT** – The INIT event passes the parameters `SECTION` and `KEY`. The function block opens or loads the INI file and prepares the read/write operations. Successful initialization is signaled by the INITO event.
-
 2. **SET** – After initialization, a new value can be written to the previously defined key using SET. The passed value `VALUE` is stored in `settings.ini`, provided the key is not write-protected. If the parameter is read-only and located in `settingsReadOnly.ini`, the write attempt is rejected, triggering the error event **`SETOE`**, and `STATUS` reports `"Key is read-only"`.
-
 3. **GET** – The GET function reads the current value of the key. For read-only parameters, the value from `settingsReadOnly.ini` is always returned. If a normal key does not exist in `settings.ini`, the default value specified via `DEFAULT_VALUE` is returned. The read value appears at output `VALUEO`.
 
 The execution of each event is acknowledged by the respective output (INITO, SETO/SETOE, GETO). The function block `QO` indicates whether the operation was successful, and `STATUS` provides textual feedback.
 
 ## Technical Features
+
 - **Generic Data Types** – `VALUE` and `DEFAULT_VALUE` are declared as `ANY`. The function block can therefore work with various data types (e.g., BOOL, INT, REAL, STRING), provided the runtime environment supports them.
 - **Write Protection (Factory Default)** – In addition to `settings.ini`, the system also supports the write-protected default file `settingsReadOnly.ini`. Parameters from this file override modifiable values and reject write attempts using `STATUS = "Key is read-only"`. See also [Read-only settings (`settingsReadOnly.ini`)](./settingsReadOnly.md)].
 - **Event-based control** – All actions are triggered by events. The function block can therefore be fully integrated into an event-driven system (e.g., IEC 61499).
@@ -73,6 +74,7 @@ The function block goes through the following main states:
 State transitions are controlled by the INIT, SET, and GET events and their corresponding acknowledgment outputs.
 
 ## Application Scenarios
+
 - **Machine Configuration** – Saving and retrieving parameters such as speed, temperature limits, or operating modes in a central INI file.
 - **Plant Initialization** – Loading settings once when the controller starts via the INIT event.
 - **Online Parameterization** – Dynamically changing values during operation using SET and immediately retrieving them with GET.

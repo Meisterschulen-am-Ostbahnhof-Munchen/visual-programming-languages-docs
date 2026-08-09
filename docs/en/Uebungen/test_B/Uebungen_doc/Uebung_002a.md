@@ -1,8 +1,10 @@
 # Exercise_002a: DigitalInput_I1/_I2 with AND on DigitalOutput_Q1
+
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_002a`. In this exercise, a classic AND gate is implemented, where a digital output is only activated if two digital inputs are simultaneously in the "True" (HIGH) state.
 -----
 ## Objective of the Exercise
+
 The main objective of this exercise is to implement a basic logical decision structure. It demonstrates how signals from multiple sensors (inputs) can be combined to trigger an action at an actuator (output). This is a fundamental building block of any control programming.
 
 -----
@@ -39,13 +41,8 @@ The logic is defined by the interconnection of event and data connections. The s
 The process follows this logic:
 
 1. If either of the two inputs (`I1` or `I2`) changes, the respective block sends a `IND` event to the `REQ` port of the `AND_2` block.
-
 2. The `AND_2` block then reads both data inputs (`IN1` and `IN2`) and calculates the result (`IN1 AND IN2`).
-
-2. The `AND_2` block then reads both data inputs (`IN1` and `IN2`) and calculates the result (`IN1 AND IN2`).
-
 3. After the calculation is complete, the logic block fires a `CNF` event (Confirmation).
-
 4. This `CNF` event reaches the `REQ` port of `DigitalOutput_Q1`, which then accepts the result and switches the physical output.
 
 -----

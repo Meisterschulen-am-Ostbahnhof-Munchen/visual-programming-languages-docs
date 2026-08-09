@@ -1,10 +1,13 @@
 # Exercise_011a2_AUDI: Numeric Value Output and BUTTON_PRESS_REPEAT_DONE
+
 ![Uebung_011a2_AUDI_network](./Uebung_011a2_AUDI_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise demonstrates the output of a numeric value using a button press event (BUTTON_LONG_PRESS_UP). A digital input block (logiBUS_IDA) is used, which triggers an event when the button is pressed and held. This event is converted via an adapter into a format that the output block Q_NumericValue_AUDI can process – this then outputs the predefined numeric value on the ISOBUS.
 ## Function Blocks (FBs) Used
+
 - **logiBUS_IDA**
 - **Type**: logiBUS::io::DI::logiBUS_IDA
 - **Parameters**: QI = TRUE, Input = Input_I1, InputEvent = BUTTON_LONG_PRESS_UP
@@ -43,4 +46,5 @@ This chain outputs the defined numerical value (here, the ISOBUS object `OutputN
 **Required Prior Knowledge**: Basic understanding of function blocks, events, and ISOBUS communication.
 
 ## Summary
+
 The exercise **Exercise_011a2_AUDI** demonstrates a compact process: A long press of a digital key triggers an event chain, at the end of which a numerical value is output on the ISOBUS. The three components used—the input block, a conversion adapter, and the output block—are loosely coupled via adapter connections. This enables flexible, event-driven value output and conveys basic concepts of modular control programming.

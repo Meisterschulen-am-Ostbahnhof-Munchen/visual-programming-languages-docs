@@ -5,6 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
+
 Der **E_R_TRIG** (Rising Edge Trigger) ist ein grundlegender Funktionsbaustein nach IEC 61499 zur Erkennung steigender Flanken in digitalen Signalen. Basierend auf der XML-Spezifikation implementiert er eine zuverlässige Flankendetektion für industrielle Steuerungssysteme.
 
 ![E_R_TRIG](E_R_TRIG.svg)
@@ -12,6 +13,7 @@ Der **E_R_TRIG** (Rising Edge Trigger) ist ein grundlegender Funktionsbaustein n
 ## Struktur des E_R_TRIG-Bausteins
 
 ### **Schnittstelle (Interface)**
+
 **Ereignis-Eingänge:**
 
 - `EI` (Event Input): Aktiviert die Flankenerkennung (mit `QI`-Wert verknüpft)
@@ -25,6 +27,7 @@ Der **E_R_TRIG** (Rising Edge Trigger) ist ein grundlegender Funktionsbaustein n
 - `QI` (Query Input): Zu überwachendes Eingangssignal (BOOL)
 
 ### **Interne Struktur**
+
 Laut XML-Spezifikation besteht der Baustein aus:
 
 1. **E_D_FF**: D-Flip-Flop zur Signalzustandsspeicherung

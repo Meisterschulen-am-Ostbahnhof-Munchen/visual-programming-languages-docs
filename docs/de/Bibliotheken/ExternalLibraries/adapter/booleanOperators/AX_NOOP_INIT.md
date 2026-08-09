@@ -10,18 +10,23 @@ Der Funktionsblock `AX_NOOP_INIT` ist ein No-Operation-Baustein, der eingehende 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - **INIT** (Typ: `EInit`): Initialisierungsanforderung. Löst beim Eintreffen die Ereignisausgänge `INITO` und `OUT.E1` aus.
 
 ### **Ereignis-Ausgänge**
+
 - **INITO** (Typ: `EInit`): Initialisierungsbestätigung. Wird direkt durch `INIT` ausgelöst.
 
 ### **Daten-Eingänge**
+
 Der Baustein besitzt keine separaten Dateneingänge auf der obersten Ebene. Sämtliche Daten werden über den eingehenden Adapter (`IN`) transportiert.
 
 ### **Daten-Ausgänge**
+
 Der Baustein besitzt keine separaten Datenausgänge auf der obersten Ebene. Sämtliche Daten werden über den ausgehenden Adapter (`OUT`) transportiert.
 
 ### **Adapter**
+
 - **IN** (Socket): Eingangsadapter vom Typ `adapter::types::unidirectional::AX`. Stellt eine Ereignisschnittstelle `E1` und eine Datenschnittstelle `D1` zur Verfügung.
 - **OUT** (Plug): Ausgangsadapter vom Typ `adapter::types::unidirectional::AX`. Stellt eine Ereignisschnittstelle `E1` und eine Datenschnittstelle `D1` zur Verfügung.
 

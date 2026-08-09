@@ -11,15 +11,19 @@ Der Funktionsblock **AW_SPLIT_3** dient als generischer Verteiler für einen uni
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 Keine.
 
 ### **Daten-Eingänge**
+
 Keine.
 
 ### **Daten-Ausgänge**
+
 Keine.
 
 ### **Adapter**
@@ -68,4 +72,5 @@ Der **AW_SPLIT_3** ist ein grundlegender, aber flexibler Verteilerbaustein in Ec
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

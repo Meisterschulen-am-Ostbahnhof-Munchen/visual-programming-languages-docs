@@ -1,9 +1,11 @@
 Here is the documentation page for exercise `Uebung_006e2_AX`, based on the provided XML data.
 # Exercise_006e2_AX: RS Flip-Flop with 2x IXA
+
 ![Uebung_006e2_AX_network](./Uebung_006e2_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 Exercise **Exercise_006e2_AX** implements an RS flip-flop (reset dominant) using adapter connections (AX). The goal of the exercise is to use two digital inputs to set or reset a digital output. The logic block library for bistable elements is used and abstracted from the hardware via the logiBUS system.
 
 ## Function Blocks Used
@@ -39,17 +41,12 @@ The sub-application reads two external signals via the logiBUS adapters, process
 The program flow is implemented through adapter connections (`AdapterConnections`), which encapsulate both data and events.
 
 1. **Setting the Memory (Set):**
-
 - The adapter `DigitalInput_I1.IN` is connected to the adapter input `AX_FB_RS.SET`.
 - When the input `Input_I1` is activated, the RS flip-flop is set.
-
 2. **Reset the Memory:**
-
 - Adapter `DigitalInput_I2.IN` is connected to adapter input `AX_FB_RS.RESET1`.
 - When input `Input_I2` is activated, the RS flip-flop is reset.
-
 3. **State Output:**
-
 - Adapter output `AX_FB_RS.Q1` is connected to adapter `DigitalOutput_Q1.OUT`.
 - The current state of the flip-flop is thus directly passed to the physical output `Output_Q1`.
 
@@ -60,11 +57,13 @@ The program flow is implemented through adapter connections (`AdapterConnections
 - Linking hardware I/Os with logic functions.
 
 ## Summary
+
 The `Uebung_006e2_AX` demonstrates a basic memory function in control engineering. By using adapters (`AX_FB_RS`, `logiBUS_IXA`, `logiBUS_QXA`), the circuit diagram remains clear, as event and data flows are combined in a single connection. The behavior corresponds to a classic RS flip-flop, where `Input_I1` acts as the set input and `Input_I2` as the reset input.
 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

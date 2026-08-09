@@ -26,6 +26,7 @@ Keine weiteren Sub-Applikationen oder Sub-Bausteine sind enthalten.
 ### Details zu den Funktionsbausteinen
 
 #### E_SR_I1 (Set-Reset Flip-Flop)
+
 - **Typ**: `iec61499::events::E_SR`
 - **Parameter**: Keine gesetzt
 - **Ereigniseingänge**: `S` (Set), `R` (Reset)
@@ -35,6 +36,7 @@ Keine weiteren Sub-Applikationen oder Sub-Bausteine sind enthalten.
   Das E_SR speichert einen booleschen Zustand. Ein Ereignis am `S`-Eingang setzt `Q = TRUE`, ein Ereignis am `R`-Eingang setzt `Q = FALSE`. Nach jeder Änderung wird am Ausgang `EO` ein Ereignis ausgegeben.
 
 #### E_SWITCH_I1 (Ereignis-Weiche)
+
 - **Typ**: `iec61499::events::E_SWITCH`
 - **Parameter**: Keine gesetzt
 - **Ereigniseingänge**: `EI` (Eingangsereignis)
@@ -44,6 +46,7 @@ Keine weiteren Sub-Applikationen oder Sub-Bausteine sind enthalten.
   Ein Ereignis am Eingang `EI` wird je nach Wert des `G`-Eingangs entweder an `EO0` (bei `G = FALSE`) oder an `EO1` (bei `G = TRUE`) weitergeleitet.
 
 #### AE2_EVENT_TO_E (Adapter: AE2-Ereignis → 4diac-Ereignis)
+
 - **Typ**: `adapter::conversion::bidirectional::AE2_EVENT_TO_E`
 - **Parameter**: Keine gesetzt
 - **Ereigniseingänge**: `REQ` (Anforderung zur Konvertierung)
@@ -54,6 +57,7 @@ Keine weiteren Sub-Applikationen oder Sub-Bausteine sind enthalten.
   Wandelt ein eingehendes AE2-Adapter-Ereignis (vom Socket) in ein internes 4diac-Ereignis um. Dazu muss der `REQ`-Eingang aktiviert werden; nach erfolgreicher Konvertierung wird ein `CNF`-Ereignis ausgegeben.
 
 #### AE2_E_TO_EVENT (Adapter: 4diac-Ereignis → AE2-Ereignis)
+
 - **Typ**: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`
 - **Parameter**: Keine gesetzt
 - **Ereigniseingänge**: `REQ` (Anforderung zur Konvertierung)
@@ -103,4 +107,5 @@ Sie eignet sich als Grundbaustein für komplexere Steuerungen, die ein wechselnd
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

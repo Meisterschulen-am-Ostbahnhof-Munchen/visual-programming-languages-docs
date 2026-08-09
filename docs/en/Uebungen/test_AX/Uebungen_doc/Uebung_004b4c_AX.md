@@ -1,10 +1,13 @@
 # Exercise_004b4c_AX: Three Interlocked Toggle Flip-Flops in a Chain via AE2 Adapter
+
 ![Uebung_004b4c_AX_network](./Uebung_004b4c_AX_network.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 This exercise deals with the implementation of a chain of three interlocked toggle flip-flops. The interlocking is achieved via AE2 adapters (bidirectional interfaces), so that each sub-function can only change its state when the preceding flip-flops are inactive. This ensures that only one output can be active at any given time. The inputs are controlled via logiBUS pushbuttons (single-click event), and the outputs are indicated via logiBUS LEDs.
 ## Function Blocks (FBs) Used
+
 The following table lists the function blocks used in the network:
 
 | Function Block Name | Type | Description |
@@ -50,16 +53,13 @@ The output `Q` of each sub-module is connected via an adapter connection (e.g., 
 **Procedure**:
 
 1. No button is pressed: All outputs are off (inactive).
-
 2. When button I1 is pressed, SubApp AX1 toggles to active (Q1 on). The interlock allows this because all previous stages are inactive.
-
 3. When button I2 is pressed, SubApp AX2 toggles only if AX1 is inactive. Since AX1 is currently active, no toggling occurs (interlock).
-
 4. Only when button I1 is pressed again (AX1 becomes inactive) can button I2 activate the second flip-flop.
-
 5. The same applies analogously to the third stage.
 
 This exercise demonstrates the implementation of a sequential interlocking chain with minimal connections using bidirectional AE2 adapters.
 
 ## Summary
+
 In this exercise, a chain of mutually interlocking toggle flip-flops was constructed using three identical sub-modules (`Uebung_004b4c_sub_AE`). The interlocking ensures that only one output can be active at any given time. The implementation utilizes logiBUS input and output modules as well as AE2 adapters to enable communication between the sub-modules with only one cable connection per stage. This demonstrates a simple and efficient interlocking logic concept.

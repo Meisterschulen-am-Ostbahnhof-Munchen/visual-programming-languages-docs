@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung `Uebung_174`, basierend auf den berei
 * * * * * * * * * *
 
 ## Einleitung
+
 Die **Uebung_174** ist eine Sub-Application, die sich mit dem Initialisierungsverhalten von Steuerungen in IEC 61499 beschäftigt. Spezifisch geht es um den Umgang mit dem `E_RESTART` Funktionsbaustein. Die Übung stellt ein Grundgerüst dar, in dem die Logik für Kalt- und Warmstarts implementiert werden soll.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -40,4 +41,5 @@ Aktuell stellt diese Übung ein leeres Netzwerk mit einer Aufgabenstellung dar.
     2.  An die Ausgänge des `E_RESTART_1` Bausteins sollen Logik-Ketten angeschlossen werden, die definieren, was beim Start der Applikation passieren soll (z.B. Setzen von Standardwerten).
 
 ## Zusammenfassung
+
 Die `Uebung_174` ist eine Basisübung zur Implementierung von Start-up-Routinen. Sie bietet den `E_RESTART` Baustein an und fordert den Anwender durch einen "TODO"-Kommentar dazu auf, die entsprechende Initialisierungslogik für den Kalt- und Warmstart der Steuerung zu entwickeln.

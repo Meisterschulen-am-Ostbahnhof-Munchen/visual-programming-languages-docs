@@ -7,21 +7,26 @@
 ![F_ADD_TOD_TIME](F_ADD_TOD_TIME.svg)
 
 ## Einführung
+
 Der **F_ADD_TOD_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von Zeitwerten zu Tageszeiten, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitberechnungen mit TIME_OF_DAY und TIME-Datentypen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 - `REQ`: Berechnungsanforderung (mit Eingabewerten)
 
 ### **Ereignis-Ausgänge**
+
 - `CNF`: Berechnungsbestätigung (mit Ergebnis)
 
 ### **Daten-Eingänge**
+
 - `IN1` (TIME_OF_DAY): Ausgangszeit (Tageszeit)
 - `IN2` (TIME): Zeitdauer für Addition
 
 ### **Daten-Ausgänge**
+
 - `OUT` (TIME_OF_DAY): Ergebnis der Addition
 
 ## Funktionsweise

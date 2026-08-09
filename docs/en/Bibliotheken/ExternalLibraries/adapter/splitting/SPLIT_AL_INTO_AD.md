@@ -1,25 +1,31 @@
 # SPLIT_AL_INTO_AD
+
 ![SPLIT_AL_INTO_AD](./SPLIT_AL_INTO_AD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The function block `SPLIT_AL_INTO_AD` splits an incoming **AL (LWORD)** adapter into two separate **AD (DWORD)** adapters. It thus implements the necessary interface conversion for applications where a large data word (LWORD) needs to be split into two smaller DWORDs and made available via unidirectional adapters.
 ## Interface Structure
 
 ### **Event Inputs**
+
 - **not directly available**
 
 Events are received via the SOCKET adapter `IN` (signals `IN.E1`). Internally, this triggers processing.
 
 ### **Event Outputs**
+
 - **Not directly available**
 
 Output events occur via the PLUG adapters `DWORD_00.E1` and `DWORD_01.E1` as soon as a new value is available.
 
 ### **Data Inputs**
+
 - **IN.D1** – Input data (`LWORD`) from the SOCKET adapter `IN`.
 
 ### **Data Outputs**
+
 - **DWORD_00.D1** – First split DWORD (low part) on the PLUG adapter `DWORD_00`.
 - **DWORD_01.D1** – Second split DWORD (high part) on the PLUG adapter `DWORD_01`.
 
@@ -40,6 +46,7 @@ The two results are then passed in parallel to the inputs of the flip-flop block
 The flip-flops ensure that the output data remains stable until the next valid input event and is only updated during new processing.
 
 ## Technical Features
+
 - **Full Adapter Encapsulation** – The module has no direct events or data ports, but communicates exclusively via standardized unidirectional adapters (AL/AD).
 - **Internal Use of `SPLIT_LWORD_INTO_DWORDS`** – This separate, typed splitter module handles the data splitting; The flip-flops decouple data and event passing.
 - **Zero latency for simultaneous events** – Since both flip-flops are clocked by the same `CNF`, both outputs are always updated synchronously.
@@ -54,11 +61,13 @@ The function block does not have an explicit state machine. Its behavior is pure
 - **Stable** – The flip-flops hold the values until the next event.
 
 ## Application Scenarios
+
 - **Industrial Automation** – When a sensor/actuator delivers an LWORD data word (e.g., a 64-bit counter or combined status/control words) via an AL adapter, but subsequent modules operate with two separate DWORD adapters.
 - **Protocol Translation** – Decomposing large data packets into manageable subwords for adapter-based communication protocols.
 - **Data Validation and Forwarding** – Splitting an LWORD into two DWORDs to serve different processing paths (e.g., visualization and control) in parallel.
 
 ## Comparison with Similar Components
+
 - **`SPLIT_LWORD_INTO_DWORDS`** – Pure data splitter without adapter connectivity and without event synchronization. `SPLIT_AL_INTO_AD` extends this with the necessary adapter interfaces and flip-flops for correct event handling.
 - **Manual Splitting** – Alternatively, the splitting could be programmed directly in the logic of the higher-level system; however, this module reduces the effort and improves reusability.
 

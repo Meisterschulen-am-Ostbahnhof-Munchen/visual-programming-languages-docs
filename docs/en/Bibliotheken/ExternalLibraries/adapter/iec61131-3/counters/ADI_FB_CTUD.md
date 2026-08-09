@@ -1,11 +1,15 @@
 # ADI_FB_CTUD
+
 ![ADI_FB_CTUD](./ADI_FB_CTUD.svg)
 
 * * * * * * * * * *
 ## Introduction
+
 The **ADI_FB_CTUD** is an up/down counting function block for integer values (DINT). It implements a forward/backward counter that is controlled via standardized **adapter interfaces**. The block encapsulates the IEC 61131-3 component `FB_CTUD_DINT` and provides its functionality via event-driven adapters.
 ## Interface Structure
+
 ### **Event Inputs**
+
 The block does not have direct event inputs. Control is exclusively via the **sockets**:
 
 - **CU (Count Up)** – Event to increment the counter value
@@ -17,9 +21,11 @@ The block does not have direct event inputs. Control is exclusively via the **so
 These adapters provide both an event and a data value (for AX adapters, via the data output `D1`).
 
 ### **Event Outputs**
+
 - **CNF** – Acknowledge event, which is output after each processing of one of the input events.
 
 ### **Data Inputs**
+
 The data values of the input adapters are processed via the connections of the internal function block `FB_CTUD_DINT`. The adapters provide the following data:
 
 - **CU.D1** – Counting direction (Bool, 1 = Count up)
@@ -32,6 +38,7 @@ The data values of the input adapters are processed via the connections of the i
 - **PV.D1** – Preset value (DINT)
 
 ### **Data Outputs**
+
 The output data is provided via the plug adapters:
 
 - **QU.D1** – Counter has incremented (Bool, after CU event)
@@ -48,6 +55,7 @@ The function block uses three different adapter types:
 The adapters are designed to transfer both the event and the associated data value in one operation.
 
 ## Functionality
+
 The internal function block `FB_CTUD_DINT` implements the classic up/down counter logic:
 
 - When an event occurs on **CU**, the counter value is incremented by 1, provided `CU.D1` = TRUE (or the event alone is considered an up pulse).
@@ -59,6 +67,7 @@ The internal function block `FB_CTUD_DINT` implements the classic up/down counte
 **Important:** The function block fires the output events (QU.E1, QD.E1) on *every* update (CU, CD, R, LD, PV) – not just on an actual value change. If only edge detection (on-change) is required, the use of an **AX_D_FF** as a filter is recommended.
 
 ## Technical Features
+
 - **Adapter-based interface:** All inputs and outputs are via standardized unidirectional adapters, which increases reusability and encapsulation.
 - **IEC 61131-3 Compatibility:** The internal counter complies with the standard and allows for easy migration between different control systems.
 - **Always Active Events:** As described above, output events are generated with every input event – this can lead to high bus load in time-critical applications.
@@ -69,14 +78,12 @@ The internal function block `FB_CTUD_DINT` implements the classic up/down counte
 The function block does not have an explicit state machine. Processing is strictly event-driven:
 
 1. Wait for an event at one of the sockets.
-
 2. Process the associated data value (if available) and the internal counter state.
-
 3. Output **CNF** and, if applicable, **QU.E1** and **QD.E1**.
-
 4. Return to step 1.
 
 ## Application Scenarios
+
 - **Counting pulses** in manufacturing systems (e.g., workpiece counters).
 - **Position detection** with incremental encoders (counting up/down).
 - **Bill of materials and inventory counting** with reset capability.
@@ -95,4 +102,5 @@ Filtering | Recommendation: AX_D_FF | Partially integrated |
 The ADI_FB_CTUD offers clean, adapter-based encapsulation, but requires additional measures for on-change triggering if needed.
 
 ## Conclusion
+
 The **ADI_FB_CTUD** is a flexible and standards-compliant up/down counter with a DINT value range, distinguished by its modern adapter interface. It is particularly suitable for modular control architectures where components communicate via standardized adapters. The always-active event output should be considered when integrating it into real-time systems.

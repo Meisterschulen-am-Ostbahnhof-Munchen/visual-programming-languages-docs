@@ -1,13 +1,16 @@
 Here is the documentation for exercise `Uebung_006a3_sub_AX` based on the provided data.
 # Exercise_006a3_sub_AX: Subapplication Type
+
 * * * * * * * * * *
 ## Introduction
+
 This function block is a subapplication (SubAppType) that implements logic for the mutual control of two outputs. The block uses adapter technology (`AX`) to process signals. The goal is to toggle the state of two outputs (`Links` and `Rechts`) based on an input signal, with these outputs always having opposite states (complementary).
 ## Function Blocks Used
 
 Specific adapter blocks are used in this subapplication to implement the switching logic and signal distribution.
 
 ### Sub-Blocks: Exercise_006a3_sub_AX
+
 - **Type**: SubAppType
 - **Internal Function Blocks Used**:
 - **AX_SWITCH**: `adapter::events::unidirectional::AX_SWITCH`
@@ -44,13 +47,9 @@ The component receives a signal via the adapter socket `IN`. This signal trigger
 The flow within the subapplication is purely event- and signal-driven via the adapter connections:
 
 1. **Input Signal**: The external signal arrives at socket `IN`.
-
 2. **Triggering**: `AX_SWITCH` detects the signal at input `G` and fires an event at output `EO1`.
-
 3. **State Change**: This event serves as the clock signal (`CLK`) for `AX_T_FF`, which then toggles its internal state `Q`.
-
 4. **Signal Distribution**: The signal from `Q` is passed on to the splitter `AX_SPLIT_2`.
-
 * **Path A (Right)**: The output `OUT1` of the splitter forwards the signal directly to the plug `Rechts`.
 * **Path B (Left)**: The output `OUT2` of the splitter forwards the signal to the inverter `AX_NOT`. The inverted signal is then output to the plug `Links`.
 
@@ -61,4 +60,5 @@ The flow within the subapplication is purely event- and signal-driven via the ad
 * `Links` (Plug): Output corresponding to the inverted state of the flip-flop.
 
 ## Summary
+
 The subapplication `Uebung_006a3_sub_AX` provides a module that converts an input pulse into two alternating output signals. The use of adapter ICs (`AX`) simplifies the wiring, as data and events can be transmitted in encapsulated form. The integrated inversion (`AX_NOT`) ensures that the outputs `Links` and `Rechts` never have the same logical state.

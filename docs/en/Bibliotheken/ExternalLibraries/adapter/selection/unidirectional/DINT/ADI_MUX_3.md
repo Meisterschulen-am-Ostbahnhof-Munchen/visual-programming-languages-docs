@@ -43,7 +43,7 @@ The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input 
 
 The function block operates as a 3-to-1 multiplexer. Upon the arrival of a **REQ** event, the current value of the data input **K** is read. Based on this index (0, 1, or 2), the signal of the corresponding socket adapter (IN1, IN2, or IN3) is passed through to the plug adapter **OUT**. The **CNF** event is then triggered to acknowledge the successful operation.
 
-`` The input and output signals are transmitted via the standardized **ADI** adapter (unidirectional), which can be configured for any analog or digital values.
+The input and output signals are transmitted via the standardized **ADI** adapter (unidirectional), which can be configured for any analog or digital values.
 
 ## Technical Features
 

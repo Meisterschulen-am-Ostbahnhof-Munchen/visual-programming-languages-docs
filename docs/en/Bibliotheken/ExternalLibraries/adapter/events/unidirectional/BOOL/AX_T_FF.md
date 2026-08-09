@@ -66,7 +66,7 @@ State Transitions:
 
 Compared to other flip-flop types such as RS or D flip-flops, the A toggle flip-flop is a specialized functionality for simple switching operations. It has a simpler structure than more general-purpose flip-flop types and requires no additional data inputs.
 
-`` Comparison with [E_T_FF](../../../../../StandardLibraries/events/E_T_FF.md)
+Comparison with [E_T_FF](../../../../../StandardLibraries/events/E_T_FF.md)
 
 ## 🛠️ Related exercises
 

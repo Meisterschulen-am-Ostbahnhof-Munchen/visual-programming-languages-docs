@@ -42,7 +42,7 @@ No data outputs available.
 1. The FB expects an incoming AUI signal at socket `IN`.
 2. When the event input `REQ` is activated, the FB reads the value of the data input `K`.
 
-`` 3. Depending on the value of `K` (valid from 1 to 5), the signal from the input adapter is switched to the corresponding output adapter (`OUT1` … `OUT5`). The other outputs remain inactive or are reset (depending on the implementation in the generic function block).
+3. Depending on the value of `K` (valid from 1 to 5), the signal from the input adapter is switched to the corresponding output adapter (`OUT1` … `OUT5`). The other outputs remain inactive or are reset (depending on the implementation in the generic function block).
 
 4. After successful switching, the event output `CNF` is sent.
 5. The function block is then ready for a new request.

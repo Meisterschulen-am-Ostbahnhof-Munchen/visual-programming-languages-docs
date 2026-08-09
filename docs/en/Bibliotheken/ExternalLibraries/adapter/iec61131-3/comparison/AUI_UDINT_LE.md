@@ -41,7 +41,7 @@ This function block implements the function `IN1 ≤ IN2`. Internal processing:
 
 - The event input `REQ` or the incoming event `IN1.E1` (via the socket adapter) triggers the internal function block `F_LE` (IEC 61131-3 comparison `LE`).
 
-`` - The data values `IN1` (via adapter) and `IN2` (directly) are fed to the internal function block.
+- The data values `IN1` (via adapter) and `IN2` (directly) are fed to the internal function block.
 
 - The result (BOOL) is output via the output adapter `OUT` as soon as the internal function block has completed its calculation (`F_LE.CNF` → `OUT.E1`).
 

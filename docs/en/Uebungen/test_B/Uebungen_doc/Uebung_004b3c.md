@@ -43,7 +43,7 @@ This sub-application implements a lockable toggle flip-flop with a bidirectional
 - Event Outputs: `EO0` (when G=FALSE), `EO1` (when G=TRUE)
 - Function: Routes the incoming event to either `EO0` or `EO1`, depending on the value of `G`.
 
-`` - **E_SR_I1** (Type: `iec61499::events::E_SR`)
+- **E_SR_I1** (Type: `iec61499::events::E_SR`)
 
 - Event inputs: `S` (Set), `R` (Reset)
 - Event output: `EO` (after a change in output Q)
@@ -60,7 +60,7 @@ The internal toggle mechanism is implemented by the set-reset flip-flop `E_SR`. 
 - If `Q = FALSE` → event via `EO0` to the set input `S` → flip-flop is set.
 - If `Q = TRUE` → event via `EO1` to the reset input `R` → flip-flop is reset.
 
-`` In parallel, during a set operation (EO0), an event is sent via the adapter (`AE2_E_TO_EVENT`) to the other sub-application to trigger a reset. The event received via the adapter from the other side (`AE2_EVENT_TO_E`) is also routed to the reset input. This ensures that only one of the two flip-flops is `TRUE` at any given time.
+In parallel, during a set operation (EO0), an event is sent via the adapter (`AE2_E_TO_EVENT`) to the other sub-application to trigger a reset. The event received via the adapter from the other side (`AE2_EVENT_TO_E`) is also routed to the reset input. This ensures that only one of the two flip-flops is `TRUE` at any given time.
 
 The output `Q` is passed to the external system via the data output of the sub-application.
 

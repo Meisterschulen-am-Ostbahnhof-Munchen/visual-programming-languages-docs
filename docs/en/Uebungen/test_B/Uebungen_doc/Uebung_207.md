@@ -34,7 +34,7 @@ ILOCK.OUT2 → DigitalOutput_Q2.OUT
 1. **Setting Q1**: Pressing a key at input I1 generates an event at output `IND` of function block `DigitalInput_I1`. This event is forwarded to event input `CLK1` of the interlock function block `ILOCK`. Subsequently, `ILOCK` sets data output `OUT1` to `TRUE` and `OUT2` to `FALSE` (mutual interlocking). The output block `EO` is then triggered via the event output `DigitalOutput_Q1`, which passes the value of `OUT1` to the physical output Q1. `DigitalOutput_Q2` also receives the same event and takes over the value of `OUT2` (which is now `FALSE`).
 2. **Setting Q2**: Similarly, pressing a button at input I2, via `DigitalInput_I2` and the event input `CLK2`, sets `OUT2` (and resets `OUT1`).
 
-`` 3. **Reset**: Pressing a button at input I3 sends a signal to the event input `R` of the interlock function block. This resets both outputs `OUT1` and `OUT2` to `FALSE`. Both output blocks are then updated again via `EO`.
+3. **Reset**: Pressing a button at input I3 sends a signal to the event input `R` of the interlock function block. This resets both outputs `OUT1` and `OUT2` to `FALSE`. Both output blocks are then updated again via `EO`.
 
 **Special Feature:** The output blocks are triggered together by every event (whether setting or resetting), so that both outputs always reflect the interlock state synchronously.
 

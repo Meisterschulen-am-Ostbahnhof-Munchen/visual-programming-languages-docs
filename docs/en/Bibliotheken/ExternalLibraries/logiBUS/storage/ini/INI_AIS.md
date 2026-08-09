@@ -52,7 +52,7 @@ The function block internally contains an instance of the function block `INI` (
 - The INIT event pulse starts the INI block.
 - Upon completion, INI returns the event `INITO`, which is output externally as `INITO` of the INI_AIS. Simultaneously, the outputs `QO` and `STATUS` are also received.
 
-`` - Immediately after initialization, the `GET` service is automatically triggered in the INI block to read the value from `settings.ini`.
+- Immediately after initialization, the `GET` service is automatically triggered in the INI block to read the value from `settings.ini`.
 
 2. **Reading a Value (via AIS_OUT)**
 - The read value appears at the data output `VALUEO` of the INI block and is assigned to the data output `D1` of the adapter plug `AIS_OUT`.

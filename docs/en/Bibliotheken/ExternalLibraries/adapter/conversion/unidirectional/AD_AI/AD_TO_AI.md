@@ -41,7 +41,7 @@ The function block operates in an event-driven manner:
 
 1. An event at socket **AD_IN.E1** triggers the internal instance `Convert` (type `F_DWORD_TO_INT`) via its event input **REQ**.
 
-`` 2. Simultaneously, the data value **AD_IN.D1** (DWORD) is passed to the data input **IN** of `Convert`.
+2. Simultaneously, the data value **AD_IN.D1** (DWORD) is passed to the data input **IN** of `Convert`.
 
 3. The function `F_DWORD_TO_INT` performs the type conversion from DWORD to INT.
 4. After the calculation is complete, `Convert` sends an event at its output **CNF**, which is connected to the plug event **AI_OUT.E1**.
@@ -49,9 +49,7 @@ The function block operates in an event-driven manner:
 
 Thus, after each incoming event at the socket, a converted data value is automatically made available on the plug.
 
-4. After the calculation is complete, `Convert` sends an event at its output **CNF**, which is connected to the plug event **AI_OUT.E1**.
 
-5.
 ## Technical Features
 
 - **Composition:** The FB is a pure composite function block – it contains no internal logic but delegates the conversion to the standard function block `F_DWORD_TO_INT` from the IEC 61131 library.

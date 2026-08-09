@@ -50,7 +50,7 @@ The function block **ALI_D_FF_HYS_TMIN** is implemented as a composition and int
 3. **Minimum Time Control** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
 2. **Signal Acquisition** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
 
-`` 4. **Output** – Once the minimum time has elapsed, the new value is output via the output adapter **Q**. The function block then waits for the next input event.
+4. **Output** – Once the minimum time has elapsed, the new value is output via the output adapter **Q**. The function block then waits for the next input event.
 
 ## Technical Features
 

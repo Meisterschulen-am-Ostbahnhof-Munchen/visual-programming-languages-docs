@@ -65,7 +65,7 @@ Simultaneously, the data is transferred via adapter connections:
 
 Thus, all data transmission is adaptable and bidirectional via adapter interfaces, without separate data lines. The bit shift amplifies the analog input value by a factor of 2 (corresponding to a doubling) before it is output as a PWM duty cycle.
 
-`` **Learning Objectives**:
+**Learning Objectives**:
 
 - Understanding adapter communication in the 4diac IDE
 - Integration of analog inputs (logiBUS) and PWM outputs

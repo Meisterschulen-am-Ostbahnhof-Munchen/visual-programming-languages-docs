@@ -11,7 +11,6 @@ It has an event input `EI`. Upon each occurrence of an event, the function block
 
 [cite_start]This function block encapsulates the logic for a left/right switch.[cite: 1]
 
-It has an event input `EI`. Upon each occurrence of an event, the function block internally changes its direction setting. The results are provided via the data outputs `Links` and `Rechts`.
 
 [cite_start] This is used in exercise 006a3 to automatically reverse the direction of rotation of a motor during each start-up. The function block ensures that a clear direction decision is always made.
 

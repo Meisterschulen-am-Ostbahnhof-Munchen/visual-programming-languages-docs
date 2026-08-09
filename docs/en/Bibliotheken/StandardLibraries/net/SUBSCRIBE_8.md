@@ -5,7 +5,7 @@
 ## Introduction
 
 The SUBSCRIBE_8 function block acts as a subscriber for a PUBLISH_8 block and allows the receipt of up to 8 different data values over a single communication link. The block implements a publish-subscribe communication pattern and is part of the iec61499::net package.
-`` ![SUBSCRIBE_8](SUBSCRIBE_8.svg)
+![SUBSCRIBE_8](SUBSCRIBE_8.svg)
 
 ## Interface Structure
 

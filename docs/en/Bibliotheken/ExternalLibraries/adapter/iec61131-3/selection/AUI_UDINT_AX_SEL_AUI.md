@@ -46,13 +46,12 @@ This function block encapsulates an IEC 61131-3 standard function block `F_SEL` 
 
 The control adapter `G` receives an external event (`G.E1`) and a Boolean/digital value (`G.D1`). The event triggers the internal `F_SEL` (via its `REQ` input).
 
-`` 3. The internal function block `F_SEL` selects the value of `IN0` (if `G = FALSE`) or `IN1` (if `G = TRUE`) based on the control signal (`F_SEL.G`) and places it at output `F_SEL.OUT`.
+3. The internal function block `F_SEL` selects the value of `IN0` (if `G = FALSE`) or `IN1` (if `G = TRUE`) based on the control signal (`F_SEL.G`) and places it at output `F_SEL.OUT`.
 
 4. The confirmation event `F_SEL.CNF` is forwarded to output adapter `OUT.E1`, and the selected value is output via `OUT.D1`.
 
 Thus, the function block functions as a unified, adapter-based interface for binary selection operations.
 
-4.
 ## Technical Features
 
 - **Adapters instead of individual signals:** Instead of individual event and data outputs, the FB uses adapters (`AUI` and `AX`). This enables modular encapsulation and simplifies integration into adapter-based architectures.
@@ -68,7 +67,7 @@ This function block does not have its own state machine, but delegates the selec
 - A selection is triggered on a rising edge of `G.E1`.
 - The events `EI0` and `EI1` have no direct effect on the selection; they merely serve to transfer the input values (e.g., from an asynchronous process).
 
-`` A detailed description of the internal `F_SEL` can be found in the IEC 61131-3 specification or the documentation of the standard function block.
+A detailed description of the internal `F_SEL` can be found in the IEC 61131-3 specification or the documentation of the standard function block.
 
 ## Application Scenarios
 

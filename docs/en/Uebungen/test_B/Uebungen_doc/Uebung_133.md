@@ -11,7 +11,6 @@ This function block automatically sends requests to the partner at fixed interva
 
 ![Uebung_133_network](./Uebung_133_network.svg)
 
-[cite_start]Combination of querying and cyclical monitoring using `AlPgnRxNew8Bcylc_REQ`[cite: 1].
 
 This function block automatically sends requests to the partner at fixed intervals and simultaneously monitors the arrival of the responses within the control time. This is the most secure form of communication for data that is not automatically sent by the partner but still needs to be constantly up-to-date.
 

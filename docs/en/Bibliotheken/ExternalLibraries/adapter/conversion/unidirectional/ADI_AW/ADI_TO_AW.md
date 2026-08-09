@@ -50,7 +50,7 @@ The function block operates in an event-driven manner:
 1. An incoming event at `ADI_IN.E1` is internally forwarded to the conversion block `F_DINT_TO_WORD` (via its `REQ` input).
 2. Simultaneously, the data value from `ADI_IN.D1` is transferred as `DINT` to the `IN` input of the conversion function.
 
-`` 3. The function block `F_DINT_TO_WORD` converts the `DINT` value to a `WORD` value (according to IEC 61131-3).
+3. The function block `F_DINT_TO_WORD` converts the `DINT` value to a `WORD` value (according to IEC 61131-3).
 
 4. After the conversion is complete, the converter's output event (`CNF`) is sent.
 5. This event is forwarded to `AW_OUT.E1`, and the converted `WORD` value (from `OUT`) is passed to `AW_OUT.D1`.

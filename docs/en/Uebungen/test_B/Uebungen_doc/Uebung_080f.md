@@ -73,7 +73,7 @@ The flow is controlled by events:
 - Both the output `CUO` (after counter increment) and `RO` (after reset) of `E_CTU` are connected to the inputs `EI1` and `EI2` of `E_MERGE_2`.
 - The merged output `EO` is activated with every counter change.
 
-`` 4. **Display and Output Update**
+4. **Display and Output Update**
 
 - The common event `EO` is forwarded in parallel to two components:
 - **Multiplexer**: The event reaches the `REQ` input of `F_MUX_32`. The current counter value `CV` (data connection from `E_CTU.CV` to `F_MUX_32.K`) selects the appropriate frame. The multiplexer outputs the selected frame at its output `OUT`.

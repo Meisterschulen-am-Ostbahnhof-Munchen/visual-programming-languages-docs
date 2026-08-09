@@ -33,10 +33,8 @@ Receives the ALR signal to be distributed.
 Passes the incoming signal on unchanged.
 
 * **OUT2** – *Plug* (Output 2) of type `adapter::types::unidirectional::ALR`
-Passes the incoming signal on unchanged.
 
 * **OUT3** – *Plug* (Output 3) of type `adapter::types::unidirectional::ALR`
-Passes the incoming signal on unchanged.
 
 ## Functionality
 

@@ -37,11 +37,8 @@ The operation of the `NetEv2NetEv` block is deterministic and simple:
 1. The function is executed when a `REQ` event occurs.
 2. The entire contents of the input data structure `IN` are copied to the output data structure.
 
-This function block does not use any adapters.
 
-The operation of the `NetEv2NetEv` block is deterministic and simple:
 
-1. The function is executed when a `REQ` event occurs.
 2. The entire contents of the input data structure `IN` are copied to the output data structure. 3. The field `.s16Handle` within this copied output structure is then overwritten with the value of the input `s16Handle`.
 4. The `CNF` event is triggered to signal the output of the modified data set.
 

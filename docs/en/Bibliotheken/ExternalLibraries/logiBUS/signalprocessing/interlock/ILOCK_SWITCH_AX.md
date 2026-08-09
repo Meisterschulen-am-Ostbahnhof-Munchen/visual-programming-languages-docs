@@ -44,7 +44,7 @@ The logic is implemented using a finite state machine (ECC). The function block 
 - In the state `UP`, `UP_OUT.D1` is set to `TRUE` and `DOWN_OUT.D1` is set to `FALSE`.
 - In the state `UP`, `UP_OUT.D1` is set to `TRUE` and `DOWN_OUT.D1` to `FALSE`.
 
-`` - In state `DOWN`, `DOWN_OUT.D1` is set to `TRUE` and `UP_OUT.D1` to `FALSE`.
+- In state `DOWN`, `DOWN_OUT.D1` is set to `TRUE` and `UP_OUT.D1` to `FALSE`.
 
 A change from the current state to the other is only possible when the other socket becomes active (prioritization of the last active input). The conditions are differentiated as follows:
 

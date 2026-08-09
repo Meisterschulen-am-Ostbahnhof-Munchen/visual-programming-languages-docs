@@ -63,7 +63,7 @@ The goal is to understand the interaction of monostable elements (R_IO) with har
 - The outputs of these modules connect the digital outputs `Output_Q1` and `Output_Q2`.
 - The third pushbutton on `Input_I3` serves as a common reset signal: It is simultaneously distributed via `AX_SPLIT_2` to the `RESET1` inputs of both `AX_FB_R_IO` modules.
 
-`` 2. **Functionality**:
+2. **Functionality**:
 
 - Pressing I1 or I2 activates the corresponding output, which then remains on (self-holding).
 - Pressing I3 deactivates both outputs ("caretaker off").

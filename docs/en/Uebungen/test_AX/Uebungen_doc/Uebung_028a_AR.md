@@ -23,7 +23,7 @@ This exercise uses only directly instantiated function blocks (no sub-applicatio
 - `Output` = `Output_Q1` (physical digital output)
 - **Functionality**: Switches a digital output according to the received signal. Here, the signal from `DigitalInput_I1` is passed through a split structure.
 
-`` - **AnalogInput_I4**
+- **AnalogInput_I4**
 
 - **Type**: `logiBUS::io::AI::logiBUS_AI_IDA`
 - **Parameters**:
@@ -34,7 +34,7 @@ This exercise uses only directly instantiated function blocks (no sub-applicatio
 - `TimeRateLimit` = 100
 - **Functionality**: Reads an analog current/voltage value and provides it as an adapter interface (`IN`). The parameters are used for filtering (hysteresis, sampling rate, rate limiting).
 
-`` - **CALIBRATE**
+- **CALIBRATE**
 
 - **Type**: `adapter::Engineering::measurements::AR_CALIBRATE`
 - **Parameters**:
@@ -53,7 +53,7 @@ This exercise uses only directly instantiated function blocks (no sub-applicatio
 
 Returns the current value at output `VAL` or allows you to save a new value via input `VAL`.
 
-`` - **INI_SCALE**
+- **INI_SCALE**
 
 - **Type**: `eclipse4diac::storage::INI_AR2`
 - **Parameters**:

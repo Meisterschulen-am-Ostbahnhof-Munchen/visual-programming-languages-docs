@@ -41,7 +41,7 @@ The function block compares the two 32-bit integer values (UDINT) for inequality
 
 - When the **event `REQ`** occurs, `IN2` is compared with the current value of `IN1.D1`.
 
-`` - When an **event arrives via the adapter `IN1.E1`**, a comparison is also triggered, comparing the data value `IN1.D1` transmitted via the adapter with the value last received by `IN2`.
+- When an **event arrives via the adapter `IN1.E1`**, a comparison is also triggered, comparing the data value `IN1.D1` transmitted via the adapter with the value last received by `IN2`.
 
 Internally, the comparison is performed by the embedded function block `F_NE` (type `iec61131::comparison::F_NE`). The result (`true` if there is no difference) is output via the **adapter output `OUT.D1`**, and the event `OUT.E1` is sent simultaneously.
 

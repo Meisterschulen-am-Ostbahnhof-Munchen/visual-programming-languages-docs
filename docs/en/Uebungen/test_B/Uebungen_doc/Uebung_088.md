@@ -27,8 +27,6 @@ Using the function block `E_F_TRIG` (Falling Edge Trigger). Unlike the simple `E
 
 [cite_start]In `Uebung_088.SUB`, the response to an AND logic gate is compared.[cite: 1]
 
-1. Two pushbuttons, `I1` and `I2`, are connected via a gate, `AND_2`.
-2. The result (`OUT`) is present at the input, `QI`, of the edge trigger.
 
 [cite_start] 3. **Positive Edge**: When the buttons are pressed, nothing happens at the output.
 

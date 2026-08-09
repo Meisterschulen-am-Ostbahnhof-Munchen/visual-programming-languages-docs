@@ -22,7 +22,7 @@ Here, the pushbuttons for the control system are read.
 - Parameters: `Input` = `Input_I1`, `InputEvent` = `BUTTON_SINGLE_CLICK`
 - Description: Starts the first output (Q5). Responds to a single click.
 
-`` - **DigitalInput_CLK_I2**: `logiBUS_IE`
+- **DigitalInput_CLK_I2**: `logiBUS_IE`
 
 - Parameters: `Input` = `Input_I2`, `InputEvent` = `BUTTON_PRESS_DOWN`
 - Description: Stops output Q5 and initiates the start of output Q6. Responds to being pressed down.
@@ -77,7 +77,7 @@ The network implements motor control with the following properties:
 1. **Start Direction A (Q5):**
 * When `Input_I1` (click) is activated, `DigitalInput_CLK_I1` sends an event to the set input (S) of `E_SR_A`.
 
-`` * `E_SR_A` sets its output Q to TRUE, thereby activating `DigitalOutput_Q5`.
+* `E_SR_A` sets its output Q to TRUE, thereby activating `DigitalOutput_Q5`.
 
 2. **Switching / Stop A & Start B (Q6):**
 * When `Input_I2` is pressed, two things happen simultaneously:

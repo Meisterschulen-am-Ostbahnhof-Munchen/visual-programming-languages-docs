@@ -58,7 +58,7 @@ The combined event feeds the **clock input `CLK`** from `E_D_FF_ANY`. This funct
 
 This filters out short spikes in the counter reading.
 
-`` 6. **Numerical Output**
+6. **Numerical Output**
 
 The stable counter value `Q` from `E_D_FF_ANY` is passed via the data connection to input `u32NewValue` of `Q_NumericValue`. The event `EO` from `E_D_FF_ANY` triggers the output via input `REQ`.
 

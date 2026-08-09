@@ -13,7 +13,6 @@ Not applicable. The structure defines a data type, not function block interfaces
 
 ## **Data Outputs**
 
-Not applicable. The structure defines a data type, not function block interfaces.
 
 ### **Adapter**
 

@@ -38,7 +38,7 @@ The function block operates in a simple event-driven sequence:
 1. An incoming event at socket **AL_IN.E1** is forwarded to the `REQ` input of the internal function block `F_LWORD_TO_LREAL`.
 2. Simultaneously, the data value from **AL_IN.D1** (LWORD) is passed to the `IN` input of the converter.
 
-`` 3. The internal function block (FB) performs the conversion `LWORD → LREAL`.
+3. The internal function block (FB) performs the conversion `LWORD → LREAL`.
 
 4. After the conversion is complete, the event `CNF` is sent to the plug **ALR_OUT.E1**.
 5. The converted LREAL value is output to **ALR_OUT.D1**.

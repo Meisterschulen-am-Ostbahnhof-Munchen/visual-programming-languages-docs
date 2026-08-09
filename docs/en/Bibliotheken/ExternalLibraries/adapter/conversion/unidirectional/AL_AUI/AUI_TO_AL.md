@@ -42,7 +42,7 @@ The function block operates in an event-driven manner:
 1. An incoming event at socket **AUI_IN.E1** (triggered by the connected transmitter) activates the internal block `F_UINT_TO_LWORD` via its event input `REQ`.
 2. The value of **AUI_IN.D1** (UINT) is passed to the data input `IN` of the conversion block.
 
-`` 3. The conversion is performed according to the IEC 61131 standard: A UINT value is converted into an LWORD value (the upper 48 bits are padded with zeros).
+3. The conversion is performed according to the IEC 61131 standard: A UINT value is converted into an LWORD value (the upper 48 bits are padded with zeros).
 
 4. After the conversion is complete, the result is passed to **AL_OUT.D1** (LWORD).
 5. Simultaneously, the acknowledgment event from `CNF` is sent to **AL_OUT.E1** to signal the availability of the new value to the receiver.

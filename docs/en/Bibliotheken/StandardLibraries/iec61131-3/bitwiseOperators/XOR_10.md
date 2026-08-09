@@ -28,7 +28,6 @@ This function block does not use adapters.
 
 Upon receiving the REQ event, the function block calculates a bitwise XOR operation of all active inputs (IN1 to IN10). The result is output at the OUT output, and the CNF event is triggered.
 
-This function block does not use adapters.
 
 - Result bit = 1 if an odd number of input bits at that position are 1
 - Result bit = 0 if an even number of input bits at that position are 1

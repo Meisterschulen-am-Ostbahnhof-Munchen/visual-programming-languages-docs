@@ -73,7 +73,7 @@ The module operates as a **state-controlled machine (ECC)** with five states: `S
 | SET | Normal toggle state: *Q* = TRUE. | Init → SET (when Q_INIT = TRUE) <br> RESET → SET (when CLK) | `SET` | EO |
 | RESET | Normal toggle state: *Q* = FALSE. | Init → RESET (when Q_INIT = FALSE) <br>SET → RESET (when CLK) | `RESET` | EO |
 
-`` **Transition conditions** (simplified):
+**Transition conditions** (simplified):
 - `START → Init` : `INIT & (QI = TRUE)`
 - `Init → SET` : `(Q_INIT = TRUE)`
 - `Init → RESET` : `(Q_INIT = FALSE)`

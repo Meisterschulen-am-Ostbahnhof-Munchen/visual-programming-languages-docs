@@ -20,7 +20,7 @@ This exercise demonstrates the use of an up/down counter based on the adapter fu
 - **AUDI_CTUD_UDINT** (Type: `adapter::events::unidirectional::AUDI_CTUD_UDINT`)
 - Adapter-based up/down counter for 32-bit unsigned integers.
 
-`` - Event inputs: `CU` (Count Up), `CD` (Count Down), `R` (Reset)
+- Event inputs: `CU` (Count Up), `CD` (Count Down), `R` (Reset)
 
 - Data outputs: `CV` (Current counter value), `QU` (High if CV ≥ PV), `QD` (High if CV = 0)
 - Data/adapter inputs: `PV` (Preset Value) via adapter connection
@@ -45,13 +45,13 @@ The circuit operates event-driven via the button inputs:
 3. **Reset (R)**: Pressing a button on **I3** resets the counter to 0 via input `R`.
 4. **Apply Preset Value (PV)**: Pressing a button on **I4** triggers the function block `AUDI_UDINT_TO_UDI` (event input `REQ`), which sends the constant value **5** via its adapter output `AUDI_OUT` to the PV input of the counter. The counter adopts this value as the new upper limit.
 
-`` The outputs are connected as follows:
+The outputs are connected as follows:
 
 - The adapter output `QU` of the counter is connected to the control input `OUT` of `DigitalOutput_Q1`. If the counter reading is ≥ PV (here the initial default value, unless overwritten), lamp Q1 illuminates.
 - The adapter output `QD` is connected to `DigitalOutput_Q2`. If the counter reading is 0, Q2 illuminates.
 - The current counter reading `CV` is forwarded via an adapter connection to the input `u32NewValue` of the display module `Q_NumericValue_AUDI` and displayed on a numeric display.
 
-`` The constant `UDINT#5` on function block `AUDI_UDINT_TO_UDI` specifies that when I4 is activated, the preset value is set to 5 – the counter will then activate the QU output when it reaches 5.
+The constant `UDINT#5` on function block `AUDI_UDINT_TO_UDI` specifies that when I4 is activated, the preset value is set to 5 – the counter will then activate the QU output when it reaches 5.
 
 This exercise illustrates the use of an adapter-based up/down counter (`AUDI_CTUD_UDINT`) in 4diac. Four push-button inputs serve as control signals (count up, count down, reset, and preset takeover). The output signals QU (limit reached) and QD (zero point) are routed to digital outputs, and the current counter value is displayed numerically. The adapter technology decouples event and data flows, enabling flexible and reusable circuitry.
 

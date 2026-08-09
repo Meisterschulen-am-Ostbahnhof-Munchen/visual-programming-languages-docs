@@ -52,7 +52,7 @@ The function block works internally with another function block **E_D_FF_ANY_HYS
 
 When the event `INIT` arrives, the value of `HYSTERESIS` is passed to the inner component, and the event is immediately acknowledged as `INITO`.
 
-`` 2. **Data Processing**
+2. **Data Processing**
 
 The event and data connections are directly connected between the adapters and the internal module:
 

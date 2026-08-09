@@ -43,7 +43,6 @@ Direct data outputs are not available. The current timer status is output via th
 
 > Note: The adapter type `AX` is a standard unidirectional adapter consisting of an event (`E1`) and a Boolean date (`D1`).
 
-1. **Initial State** – The output variable `Q.D1` is `FALSE`; the timer is not running.
 2. **Activation** – As soon as the input adapter `IN` delivers an event (`E1`) with the date `TRUE`, `Q.D1` is immediately set to `TRUE`, and an internal timer is started.
 3. **Time Monitoring** – The timer counts the time that `IN.D1` remains on `TRUE`. The timer uses the value last set via `EIPT`, `PT`.
 - *Case A:* If `IN.D1` becomes `FALSE` before `PT` expires, then `Q.D1` is immediately set to `FALSE`.

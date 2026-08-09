@@ -55,7 +55,7 @@ The stored value is only output as an event on `Q.E1` and as a data value on `Q.
 
 The output of the stored value occurs only as an event on `Q.E1` and as a data value on `Q.D1` if at least `Tmin` of time has passed since the last output event. If a new transfer event occurs before this time has elapsed, the new value is stored, and the output is further delayed until the minimum time has been met.
 
-`` 4. **State Protection**
+4. **State Protection**
 
 The block behaves like an edge-triggered D flip-flop, where each valid clock cycle (event on `I.E1`) takes over the current data value, but the actual transmission is time-limited.
 

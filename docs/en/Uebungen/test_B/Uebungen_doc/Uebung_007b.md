@@ -102,7 +102,7 @@ The following description explains the signal flow within the subapplication.
 - Pressing a key at I1 triggers an event at the output `IND` of `DigitalInput_CLK_I1`. This event is connected to the event input `START` of `E_CYCLE` → the cycle generator starts.
 - Pressing a key at I2 triggers an event at the output `IND` of `DigitalInput_CLK_I2`. This event is connected to the event input `STOP` of `E_CYCLE` → the cycle generator stops.
 
-`` 2. **Cycle and Distribution**
+2. **Cycle and Distribution**
 
 - The `E_CYCLE` generates an event at its output `EO` every 10 ms.
 - This event is fed to the input `EI` of the `E_SPLIT_4`. The splitter distributes the event to all four outputs (`EO1` to `EO4`).
@@ -116,9 +116,9 @@ The following description explains the signal flow within the subapplication.
 
 ` This means that every event, regardless of the path it takes, is immediately forwarded to the output `EO` of the flip-flop.
 
-`` This means that 4.
+This means that 4.
 
-`` ` ... 5. **Output**
+` ... 5. **Output**
 
 - The flip-flop's event `EO` is connected to the event input `REQ` of the output block `DigitalOutput_Q1`.
 - The flip-flop's current value `Q` is assigned to the output block's data input `OUT`.

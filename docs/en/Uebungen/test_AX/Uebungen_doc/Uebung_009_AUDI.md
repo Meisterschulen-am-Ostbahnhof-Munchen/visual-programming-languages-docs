@@ -72,7 +72,7 @@ The signal from `AX_SR.Q` is sent to `AX_SPLIT_3.IN` and distributed to three ou
 
 - `OUT1` → back to the event junction `AX_AE_MERGE.IN_AX`.
 
-`` - `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
+- `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
 
 - `OUT3` → to `AX_PERMIT.PERMIT`.
 6. **Allowance and Counter**

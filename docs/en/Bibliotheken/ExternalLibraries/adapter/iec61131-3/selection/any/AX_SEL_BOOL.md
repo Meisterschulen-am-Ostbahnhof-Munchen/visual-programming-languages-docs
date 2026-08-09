@@ -51,7 +51,7 @@ As a composite function block, `AX_SEL_BOOL` does not have a classic state machi
 | `EI0` / `EI1` | *No Change* | Values at `IN0`/`IN1` are updated. | - | No direct change to the output without selector triggering. |
 | Adapter Event (`G.E1`) | `FALSE` | Selector switches to `IN0`. | `CNF` | Value of `IN0` |
 | Adapter event (`G.E1`) | `TRUE` | Selector switches to `IN1`. | `CNF` | Value of `IN1` |
-`` | `` | `` | ``CNF` | Value of `IN0` |
+| `` | `` | ``CNF` | Value of `IN0` |
 `| `IN0` | | `G.E1` | | `TRUE` | | `TRUE` | | `CNF` | `IN0` |
 
 `IN0` | | ... ## Application Scenarios

@@ -50,8 +50,6 @@ The logic is identical to parallel control, however, the view is hierarchically 
 <SubAppNetwork>
 <FB Name="DigitalInput_I1" ... />
 <FB Name="DigitalOutput_Q1" ... />
-<EventConnections> ... </EventConnections>
-<DataConnections> ... </DataConnections>
 </SubAppNetwork>
 </SubApp>
 </SubAppNetwork>

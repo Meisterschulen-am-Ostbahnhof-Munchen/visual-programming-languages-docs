@@ -5,7 +5,7 @@
 ## Introduction
 
 The SUBSCRIBE_0 function block is used to subscribe to data from a PUBLISH_0 block. It enables communication between different components in a distributed automation system by receiving data from a publisher and triggering events when new data is available.
-`` ![SUBSCRIBE_0](SUBSCRIBE_0.svg)
+![SUBSCRIBE_0](SUBSCRIBE_0.svg)
 
 ## Interface Structure
 

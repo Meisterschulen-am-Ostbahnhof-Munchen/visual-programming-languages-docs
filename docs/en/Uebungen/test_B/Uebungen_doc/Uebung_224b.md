@@ -16,7 +16,7 @@ This exercise implements an up/down counter according to IEC 61131-3 (function b
 - Data Outputs: `QU` (upper limit) `QD` (lower limit), `CV` (current counter reading)
 - Functionality: Implements a forward/downward counter. The counter is incremented on each rising event at `CU` and decremented on `CD`. The counter is reset to 0 on `R` and loaded with the value from `PV` on `LD`. Outputs `QU` and `QD` are set when the counter reading reaches the programmed limit.
 
-`` - **`Input_CU`** (Type: `logiBUS::io::DI::logiBUS_IX`)
+- **`Input_CU`** (Type: `logiBUS::io::DI::logiBUS_IX`)
 
 - Parameters: `QI` = `TRUE`, `Input` = `Input_I1`
 - Function: Digital input that reads the physical input `I1` of the logiBUS module.

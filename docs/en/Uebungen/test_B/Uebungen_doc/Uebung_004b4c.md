@@ -36,7 +36,7 @@ The three modules are connected in series:
 - Each button (`DigitalInput_CLK_I1`, `_I2`, `_I3`) triggers an event (`IND`) when pressed, which is forwarded directly to the corresponding sub-app (`Uebung_004b3b_sub1`, `_sub3`).
 - The output of the sub-app (`EO`) triggers the associated digital output module (`DigitalOutput_Q1`, etc.) via its event input (`REQ`).
 
-`` - **Data Connections**:
+- **Data Connections**:
 
 - The output value `Q` of each subapp is directly connected to the data output `OUT` of the corresponding `logiBUS_QX`, so that the hardware output displays the current state.
 - **Adapter Connections (Chain)**:

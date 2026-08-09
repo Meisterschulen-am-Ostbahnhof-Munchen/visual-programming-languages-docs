@@ -31,7 +31,7 @@ This function block performs the conversion from `BOOL` to `ULINT` when the even
 
 - The function block is a simple function block (`SimpleFB`) and uses an ST algorithm for the conversion.
 
-`` - The conversion is performed using the function ``BOOL_TO_ULINT``, which directly converts the Boolean value into a ``ULINT`` value.
+- The conversion is performed using the function ``BOOL_TO_ULINT``, which directly converts the Boolean value into a ``ULINT`` value.
 
 The function block has no internal states. The conversion occurs immediately upon receiving the ``REQ`` event.
 

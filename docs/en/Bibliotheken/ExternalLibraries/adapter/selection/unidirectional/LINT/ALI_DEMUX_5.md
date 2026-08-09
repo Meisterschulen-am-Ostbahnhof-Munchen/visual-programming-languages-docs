@@ -42,7 +42,7 @@ No standalone data outputs; output is handled via the adapters.
 1. The function block waits for an event `REQ`.
 2. Upon arrival of `REQ`, the current value of the data input `K` is evaluated.
 
-`` 3. Depending on the value of `K` (valid in the range 1 to 5), the ALI adapter `IN` is routed to the corresponding output adapter `OUT1` … `OUT5`.
+3. Depending on the value of `K` (valid in the range 1 to 5), the ALI adapter `IN` is routed to the corresponding output adapter `OUT1` … `OUT5`.
 
 * For `K=1`, `IN` is connected to `OUT1`, for `K=2` to `OUT2`, and so on.
 4. After successful assignment, the event `CNF` is sent to confirm the operation.

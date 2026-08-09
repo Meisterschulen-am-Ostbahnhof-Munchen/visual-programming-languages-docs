@@ -38,7 +38,7 @@ The flow is controlled by events:
 6. These new parameters are written to the memory blocks **INI_OFFSET** and **INI_SCALE** via data connections (event `SET` is sent by **CALIBRATE** via `EOCO` and `EOCS`, respectively).
 7. After initialization (`INITO` → `GET`), the stored values are passed back to **CALIBRATE** via **SET_REAL_OFFSET** and **SET_REAL_SCALE**, thus ensuring the calibration is permanently maintained.
 
-`` The data flows connect:
+The data flows connect:
 
 - `AnalogInput_I4.IN` → `F_DWORD_TO_UDINT_I4.IN`
 - `F_DWORD_TO_UDINT_I4.OUT` → `CALIBRATE.X`

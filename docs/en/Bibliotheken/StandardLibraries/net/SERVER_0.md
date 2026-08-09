@@ -4,7 +4,7 @@
 ## Introduction
 
 The SERVER_0 function block serves as the counterpart to a CLIENT_0 block. It enables the establishment of a server-client connection without exchanging user data via data inputs/outputs.
-`` ![SERVER_0](SERVER_0.svg)
+![SERVER_0](SERVER_0.svg)
 ## Interface Structure
 
 ### **Event Inputs**

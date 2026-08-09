@@ -48,13 +48,13 @@ This function block encapsulates the IEC 61131 function block `F_SEL` (binary se
 
 1. When either `EI0` or `EI1` is triggered, the corresponding data input is updated simultaneously, and the event `REQ` of the internal `F_SEL` is triggered.
 
-`` 2. The internal function `F_SEL` checks the signal `G.D1` provided via the adapter `G`:
+2. The internal function `F_SEL` checks the signal `G.D1` provided via the adapter `G`:
 
 - If `G.D1 = 0` is false (i.e., logically incorrect), the value of `IN0` is passed to `OUT`.
 - If `G.D1 ≠ 0` is true (i.e., logically correct), the value of `IN1` is passed to `OUT`.
 3. After the selection is complete, `F_SEL` confirms with the event `CNF`, which is then forwarded as the output event of the entire function block.
 
-`` The adapter `G` is connected to the application as a unidirectional socket and continuously provides the selection signal.
+The adapter `G` is connected to the application as a unidirectional socket and continuously provides the selection signal.
 
 ## Technical Features
 
@@ -62,7 +62,7 @@ This function block encapsulates the IEC 61131 function block `F_SEL` (binary se
 - The input type `IN1` is declared as `ANY_ELEMENTARY` – this allows the use of various elementary data types, but requires type-safe wiring at the application level.
 - The output `OUT` is permanently declared as `UINT`. If `IN1` has a different elementary type, either an implicit conversion must be performed in the target system or an explicit adjustment must be made.
 
-`` - The function block requires a connected adapter of type `AX`. If this adapter is missing, the internal `F_SEL` is not wired correctly, and the behavior is undefined.
+- The function block requires a connected adapter of type `AX`. If this adapter is missing, the internal `F_SEL` is not wired correctly, and the behavior is undefined.
 
 ## State Overview
 

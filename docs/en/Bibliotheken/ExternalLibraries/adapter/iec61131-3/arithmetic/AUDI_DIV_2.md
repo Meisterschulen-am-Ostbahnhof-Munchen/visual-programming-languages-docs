@@ -18,7 +18,6 @@ The function block does not have any direct, classic event or data inputs on its
 | (unidirectional::AUDI)  (unidirect..) |
 [IN2] =|======================================>|
 | (unidirectional::AUDI)                |
-         +---------------------------------------+
 
 ### **Event Inputs**
 
@@ -76,7 +75,6 @@ Execution follows a simple, event-driven pattern:
 └────────────────────────────────────────┘
           │
           ▼
-┌────────────────────────────────────────┐
 │ Ist IN2 == 0?                          │
 └──────────────────┬─────────────────────┘
                    │
@@ -91,9 +89,7 @@ Execution follows a simple, event-driven pattern:
          └─────────┬─────────┘
                    │
                    ▼
-┌────────────────────────────────────────┐
 │ Aktualisiere Daten im OUT-Adapter      │
-└────────────────────────────────────────┘
           │
           ▼
 [Sende Aktualisierungs-Event über OUT]

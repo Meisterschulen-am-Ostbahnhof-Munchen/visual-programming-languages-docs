@@ -56,7 +56,7 @@ The sub-application has the following interfaces:
 - The `SETO` event is passed to the SubApp output `IND`.
 - The `GETO` event triggers, firstly, the `REQ` input of the `Q_StringValue` block, which passes the current string (from INI.VALUEO) and the object ID to the queue, and secondly, the SubApp output `IND`.
 
-`` **Summary of Connections**:
+**Summary of Connections**:
 
 - **Event Connections**:
 - `StringValue_IS.IND` → `INI.SET`

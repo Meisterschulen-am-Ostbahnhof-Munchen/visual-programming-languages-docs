@@ -27,7 +27,6 @@ The inputs `Input_I1` and `Input_I2`, as well as the output `Output_Q1`, are phy
 
 **Notes on the hardware FBs**:
 
-The inputs `Input_I1` and `Input_I2`, as well as the output `Output_Q1`, are physical logiBUS channels. The terminal object `OutputNumber_N3` is a predefined numeric display element that represents the counter value.
 
 **
 ## Program Flow and Connections
@@ -56,7 +55,7 @@ The two digital inputs `Input_CU` and `Input_R` are connected to the `REQ` input
 
 The `FB_CTU` increments on every rising edge at `CU`. The current counter value is available at the data output `CV`. If the counter value is greater than or equal to the preset value `PV` (here `INT#5`), the output `Q` is set to `TRUE`. A `TRUE` signal at `R` resets the counter (CV = 0, Q = FALSE).
 
-`` - **Output**:
+- **Output**:
 
 After each counting operation, the counter's `CNF` event is forwarded to the digital output `Output_Q1` and to the terminal output `Q_NumericValue_PHYS`.
 

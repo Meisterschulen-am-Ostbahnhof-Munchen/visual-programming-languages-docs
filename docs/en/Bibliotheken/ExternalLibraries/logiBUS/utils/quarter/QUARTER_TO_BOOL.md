@@ -41,7 +41,7 @@ This function block does not use adapters.
 
 When triggered by a `REQ` event, the function block reads the value at the data input `IB`. This value is then compared with predefined constants to determine the corresponding internal state. Depending on the state, a specific algorithm is executed, which either sets the BOOL output `Q` or leaves it unchanged. After the algorithm has finished executing, the `CNF` event is triggered, and the function block returns to its initial state.
 
-`` The specific mapping of the input values to the output logic is as follows:
+The specific mapping of the input values to the output logic is as follows:
 
 * `quarter::STATUS_ENABLED` → Algorithm `SET` → `Q := TRUE`
 * `quarter::STATUS_DISABLED` → Algorithm `RESET` → `Q := FALSE`
@@ -60,7 +60,7 @@ The ECC (Execution Control Chart) consists of six states:
 
 1. **START**: Initial and wait state. Upon receiving `REQ`, a transition to `SET`, `RESET`, `Error`, or `none` occurs, depending on the value of `IB`.
 
-`` 2. **SET**: Executes the algorithm `SET` (sets `Q` to TRUE).
+2. **SET**: Executes the algorithm `SET` (sets `Q` to TRUE).
 
 3. **RESET**: Executes the algorithm `RESET` (sets `Q` to FALSE).
 4. **Error**: Executes the algorithm `ERROR` (sets `Q` to FALSE).

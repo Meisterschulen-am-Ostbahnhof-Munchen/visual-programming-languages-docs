@@ -50,7 +50,7 @@ The entire conversion process is event-driven: An incoming event triggers the co
 - The internal converter `F_LINT_TO_DWORD` is an IEC 61131-3 module that performs a bit-perfect conversion of a 64-bit integer value (LINT) to a 32-bit double-word value (DWORD).
 - The adapters are defined as unidirectional, meaning that data flows exclusively from the input to the output adapter.
 
-`` - This function block is designed for use in automation systems that utilize adapter interfaces according to the IEC 61499 standard.
+- This function block is designed for use in automation systems that utilize adapter interfaces according to the IEC 61499 standard.
 
 ## State Overview
 

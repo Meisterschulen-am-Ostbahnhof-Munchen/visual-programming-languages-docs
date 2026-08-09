@@ -47,7 +47,7 @@ The function block consists internally of two sub-function blocks: `FIELDBUS_WOR
 - Simultaneously, the D flip-flop (`E_D_FF`) is clocked: The current validity status (`VALID` signal from `FIELDBUS_WORD_TO_SIGNAL`) is adopted.
 - The output of the flip-flop (`Q`) is passed to the **VALID** adapter via `VALID.D1` and the event `VALID.E1` (triggered by `E_D_FF.EO`).
 
-`` Thus, a valid word is only output if the internal check of the incoming signal is successful. The validity status is retained until the next processing cycle.
+Thus, a valid word is only output if the internal check of the incoming signal is successful. The validity status is retained until the next processing cycle.
 
 ## Technical Features
 

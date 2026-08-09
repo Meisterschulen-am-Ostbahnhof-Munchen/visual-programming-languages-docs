@@ -44,7 +44,7 @@ The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a qu
 1. An event at `IN.E1` triggers the internal processing.
 2. The sub-function block `BOOL_TO_QUARTER` is activated via its event input `REQ` and converts the Boolean value at `I` into a quarter byte.
 
-`` 3. After the conversion is complete, `BOOL_TO_QUARTER` reports this via its event `CNF`, which is then passed on to `OUT.E1`.
+3. After the conversion is complete, `BOOL_TO_QUARTER` reports this via its event `CNF`, which is then passed on to `OUT.E1`.
 
 4. Simultaneously, the converted value is transferred via the data connection from the output `QB` of the sub-block to `OUT.D1`.
 

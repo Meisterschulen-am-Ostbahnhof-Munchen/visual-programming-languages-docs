@@ -24,7 +24,6 @@ The image above illustrates this exact case.
 - `a` (type `INT`)
 - `b` (type `BOOL`)
 
-The image above illustrates this exact case.
 
 ...
 ### Data Outputs

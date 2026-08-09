@@ -44,7 +44,7 @@ No direct data outputs; the quartets are provided via the data interfaces of the
 2. The byte present at the socket (`IN.D1`) is forwarded to the internal component `SPLIT_BYTE_INTO_QUARTERS`. This component splits the byte into four 2-bit parts (quartets).
 3. The four quartets are fed in parallel to the data inputs of `E_D_FF_ANY` flip-flops.
 
-`` 4. Simultaneously, the splitter's acknowledgment event (`CNF`) is distributed to the clock inputs (`CLK`) of all four flip-flops.
+4. Simultaneously, the splitter's acknowledgment event (`CNF`) is distributed to the clock inputs (`CLK`) of all four flip-flops.
 
 5. On the rising edge of this event, the flip-flops take over the quartets and pass them on to their respective outputs (`Q`).
 6. The flip-flop outputs are directly connected to the data inputs of the output adapters `QUARTER_BYTE_00` … `QUARTER_BYTE_03`. Simultaneously, the flip-flop output event (`EO`) is sent to the event input (`E1`) of the respective adapter, so that the data is output on the adapter interface.

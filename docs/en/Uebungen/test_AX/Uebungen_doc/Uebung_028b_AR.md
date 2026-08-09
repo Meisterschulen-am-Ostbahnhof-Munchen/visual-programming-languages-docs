@@ -87,7 +87,7 @@ Conversion adapter (type `adapter::conversion::unidirectional::AD_TO_AUDI` or `A
 - The threshold values `THRESHOLD` and `HYSTERESIS` are read from the INI file (section `HYSTERESIS`) by the sub-functions **THRESHOLD** and **HYSTERESIS** and applied to the corresponding terminals of the controller.
 - The output `OUTPUT` of the hysteresis controller controls the digital output **DigitalOutput_Q2**.
 
-`` **Learning Objectives**:
+**Learning Objectives**:
 
 - Understanding adapter conversion between analog signal types (`AD`, `AUDI`, `AR`)
 - Working with **INI** blocks for persistent storage and loading of calibration parameters

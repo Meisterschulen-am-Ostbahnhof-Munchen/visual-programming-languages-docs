@@ -16,7 +16,7 @@ This exercise demonstrates the use of adapter interfaces to connect various func
 - **Parameters**: none
 - **Function**: IEC 61131-3 Down Counter (CTD). On each rising edge at input `CD`, the current value (PV) is decremented. When zero is reached, output `Q` is set. The counter is loaded with the value from `PV` via input `LD`.
 
-`` - **Adapter Inputs**: `CD` (count pulse), `LD` (load), `PV` (default value)
+- **Adapter Inputs**: `CD` (count pulse), `LD` (load), `PV` (default value)
 - **Adapter Outputs**: `Q` (counter end), `CV` (current counter reading)
 
 ### ADI_DINT_TO_DI

@@ -51,7 +51,6 @@ After processing, event `CNF` is output to acknowledge successful execution.
 - If `K = 2` is present, the data is forwarded to `OUT2`.
 - For other values of `K`, no forwarding occurs.
 
-After processing, event `CNF` is output to acknowledge successful execution.
 
 -
 ## Technical Features

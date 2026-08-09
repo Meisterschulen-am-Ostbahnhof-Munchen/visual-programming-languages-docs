@@ -42,7 +42,7 @@ No adapters available.
 2. The array is then traversed from index `LOWER_BOUND(A,1)+1` to `UPPER_BOUND(A,1)`.
 3. In each iteration, the current value is compared to `currentMin`, and the minimum is updated using the function `MIN()`.
 
-`` 4. After the loop completes, the final minimum value is output via the unnamed data output, and the event `CNF` is sent.
+4. After the loop completes, the final minimum value is output via the unnamed data output, and the event `CNF` is sent.
 
 The calculation is performed sequentially within a single execution step; the runtime increases linearly with the array size.
 

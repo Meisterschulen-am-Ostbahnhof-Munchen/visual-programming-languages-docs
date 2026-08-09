@@ -21,7 +21,7 @@ The following table lists the function blocks used in the network:
 - **Type**: SubApp (reusable component)
 - **Internal Function Blocks Used**: The SubApp implements a toggle flip-flop (e.g., with an SR flip-flop or a memory element) and a latching circuit that evaluates the state of neighboring SubApps via the AE2 adapters.
 
-`` - **Interfaces**:
+- **Interfaces**:
 
 - Event input `IND` (from the button)
 - Adapter socket and adapter plug (type AE2) for bidirectional communication with neighboring devices

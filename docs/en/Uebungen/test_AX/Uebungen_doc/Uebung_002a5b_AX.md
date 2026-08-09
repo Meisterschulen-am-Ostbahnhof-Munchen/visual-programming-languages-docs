@@ -56,7 +56,7 @@ The exercise `Uebung_002a5b_AX` implements a control logic in which the states o
 
 1. **Input Acquisition**: The function blocks `DigitalInput_I1`, `DigitalInput_I2`, and `DigitalInput_I3` continuously read the states of the physical inputs `Input_I1`, `Input_I2`, and `Input_I3`, respectively. Their respective data outputs (`DigitalInput_I1.IN`, `DigitalInput_I2.IN`, `DigitalInput_I3.IN`) provide these states.
 
-`` 2. **Logical OR operation**: The data outputs of the three input blocks are directly connected to the data inputs of the OR block `AX_OR_3`:
+2. **Logical OR operation**: The data outputs of the three input blocks are directly connected to the data inputs of the OR block `AX_OR_3`:
 
 * `DigitalInput_I1.IN` is connected to `AX_OR_3.IN1`.
 * `DigitalInput_I2.IN` is connected to `AX_OR_3.IN2`.

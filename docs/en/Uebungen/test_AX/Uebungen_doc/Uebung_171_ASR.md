@@ -60,7 +60,7 @@ The flow is determined by the event and data connections in the SubApp network:
 
 ` ``  triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
 
-`` 2. **Adapter Processing**:
+2. **Adapter Processing**:
 
 - The converter `ASR_2EVENTS_TO_SR` sets the output adapter `ASR_OUT` according to the last incoming event (SET or RESET).
 - The adapter output is connected to the adapter input `S_R` of the ASR module `ASR_AX_SR_1`.

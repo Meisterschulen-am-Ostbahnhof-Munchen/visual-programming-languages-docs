@@ -46,7 +46,7 @@ The function block internally uses the comparison function block **F_NE** ("Not 
 1. A LINT value is received via socket `ALI_IN`.
 2. The event `ALI_IN.E1` triggers the function block `F_NE` via its `REQ` input.
 
-`` 3. In `F_NE`, the input value (`IN1`) is compared with the constant value `LINT#0` (`IN2`).
+3. In `F_NE`, the input value (`IN1`) is compared with the constant value `LINT#0` (`IN2`).
 
 4. The result `OUT` is a BOOL:
 - **TRUE** if `IN1 ≠ 0`

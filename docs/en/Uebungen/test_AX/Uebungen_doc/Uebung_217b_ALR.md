@@ -85,7 +85,7 @@ Exercise **217b_ALR** teaches the safe handling of an IEC 61131-3 down counter i
 
 Exercise **217b_ALR** teaches the safe handling of an IEC 61131-3 down counter in adapter format, signal conversion between integer and floating-point types, and the connection of a terminal output. It demonstrates the typical wiring of logiBUS inputs/outputs with function blocks and prepares the user for the implementation of counter-based control tasks.
 
-`` **Learning Objectives:**
+**Learning Objectives:**
 
 - Understanding the IEC 61131-3 CTD counter (down counter) with LINT data type
 - Working with adapter interfaces (ALI, LI, ALR)

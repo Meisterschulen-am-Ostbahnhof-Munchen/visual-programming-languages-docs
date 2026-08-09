@@ -24,6 +24,6 @@ This exercise demonstrates how an event stream (`EI`) is split into two differen
 * If the switch `I1` is set to `FALSE`, the `IND` event ends up at output `EO0`.
 * If the switch `I1` is set to `FALSE`, the `IND` event will be output at `EO0`.
 
-`` * If the switch `I1` is set to `TRUE`, the `IND` event will be output at `EO1`.
+* If the switch `I1` is set to `TRUE`, the `IND` event will be output at `EO1`.
 
 This is the basis for every conditional program execution ("If-Then-Else") in IEC 61499.

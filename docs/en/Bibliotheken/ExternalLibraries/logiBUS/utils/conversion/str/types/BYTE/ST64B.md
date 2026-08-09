@@ -13,7 +13,6 @@ Not applicable, as `ST64B` is a data type and not a function block.
 
 ### **Event Outputs**
 
-Not applicable, as `ST64B` is a data type and not a function block.
 
 ### **Data Components**
 
@@ -92,7 +91,6 @@ Not applicable, as `ST64B` is a data type and its components do not function as 
 
 ### **Adapters**
 
-Not applicable, as `ST64B` is a data type and not a function block.
 
 ## Functionality
 

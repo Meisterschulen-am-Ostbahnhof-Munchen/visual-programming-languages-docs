@@ -28,7 +28,7 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - **Internal Parameters Used**: `Y_Offset = 0.0`, `Y_Scale = 100.0`
 - **Functionality**: Performs a calibration of the analog input value. Calculates an offset and scaling factor, which is written to the INI file. Inputs: X (raw value), CO (commit trigger), CS (read trigger). Outputs: Y (calibrated value), OFFSET, SCALE.
 
-`` - **INI_OFFSET** (Type: `eclipse4diac::storage::INI_AR2`)
+- **INI_OFFSET** (Type: `eclipse4diac::storage::INI_AR2`)
 
 - **Internal Parameters Used**: `SECTION = 'Uebung_028a_AR'`, `KEY = 'OFFSET'`, `DEFAULT_VALUE = 0.0`
 - **Functionality**: Reads the offset value from an INI file and provides it as an analogous value.

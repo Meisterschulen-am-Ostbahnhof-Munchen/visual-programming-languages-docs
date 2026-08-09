@@ -42,7 +42,6 @@ After these assignments are complete, the `CNF` event is output along with the p
 
 * `OUT[7]` receives the value of `IN.7` (bit 7)
 
-After these assignments are complete, the `CNF` event is output along with the populated array `OUT`.
 
 * `OUT[0]` receives the value of `IN.0`
 * `OUT[1]` receives the value of `IN.1`

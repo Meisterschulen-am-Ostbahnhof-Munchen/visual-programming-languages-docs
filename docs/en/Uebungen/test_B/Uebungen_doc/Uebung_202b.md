@@ -89,7 +89,7 @@ The ILOCK block evaluates the input signals. Upon a valid command (e.g., DI_UP =
 
 The ``E_TimeOut`` block is connected to the ILOCK via an adapter and provides the necessary timing functionality for the protection time.
 
-`` In summary, the following sequence occurs:
+In summary, the following sequence occurs:
 
 - Activation of input I1 → clockwise rotation is enabled, counterclockwise rotation is disabled, and the low-side driver becomes active.
 - When switching to I2: the 1-second protection time must elapse before counterclockwise rotation becomes active. The last state is retained during the protection time.

@@ -43,7 +43,7 @@ The initialization (`INIT`) passes the parameter `Tmin` to the internal function
 
 - **Minimum Interval Time (Tmin):** Prevents excessively rapid succession of output events, e.g., for debouncing or limiting the update rate.
 
-`` - **Adapter-Based Communication:** The function block (FB) uses unidirectional adapters (`AQ`) that bundle both data and events, enabling loose coupling between the signal source and sink.
+- **Adapter-Based Communication:** The function block (FB) uses unidirectional adapters (`AQ`) that bundle both data and events, enabling loose coupling between the signal source and sink.
 
 - **IEC 61499-Compliant:** Complies with the 61499-1 Annex A standard and utilizes the event/data flows of the standard.
 

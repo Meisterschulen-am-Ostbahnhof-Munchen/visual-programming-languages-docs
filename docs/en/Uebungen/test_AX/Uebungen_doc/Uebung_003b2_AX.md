@@ -19,7 +19,6 @@ The objective of this exercise is to efficiently manage a large number of simila
 
 ### Sub-component: `Uebung_003b2_sub_AX`
 
-[cite_start]This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`)[cite: 2]. It has the following configuration parameters:
 
 * **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
 * * **`Output`**: The physical output (e.g., `DigitalOutput_1B`).

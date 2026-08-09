@@ -39,7 +39,7 @@ After saving (or after initialization), the event `GETO` of the `INI` block is t
 
 Additionally, `GETO` is also forwarded to the output `IND`, so the SubApp outputs a signal even after the read operation.
 
-`` 4. **Initialization**
+4. **Initialization**
 
 The `INI` block also has its own `INIT` event, which is directly linked to the `GET` event. This ensures that when the subapp starts, the value stored in the INI file is automatically read and then processed through the `GETO` flow of the quality block.
 
@@ -47,11 +47,11 @@ The `INI` block also has its own `INIT` event, which is directly linked to the `
 
 - The physical value (`rPhys`) of `NumeriValue_PHYS` is passed to the data input `VALUE` of the `INI` block.
 
-`` - The object pool structure object (`stObj`) is passed from the SubApp interface to `NumeriValue_PHYS` and `Q_NumericValue_PHYS`.
+- The object pool structure object (`stObj`) is passed from the SubApp interface to `NumeriValue_PHYS` and `Q_NumericValue_PHYS`.
 
 - The SubApp inputs `KEY` and `SECTION` are directly connected to the corresponding inputs of the `INI` block (both hidden in the diagram).
 
-`` - The output `VALUEO` of the subapp receives its value from the quality-checked result of the `Q_NumericValue_PHYS` block (routed via `VALUEO` from `INI` -> `rPhys` to `Q_NumericValue_PHYS`).
+- The output `VALUEO` of the subapp receives its value from the quality-checked result of the `Q_NumericValue_PHYS` block (routed via `VALUEO` from `INI` -> `rPhys` to `Q_NumericValue_PHYS`).
 
 ## Summary
 

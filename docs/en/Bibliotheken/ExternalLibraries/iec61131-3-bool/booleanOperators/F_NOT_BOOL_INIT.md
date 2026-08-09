@@ -50,7 +50,7 @@ Thus, both `INIT` and `REQ` result in the same core functionality (negation), bu
 - The function block does not contain its own algorithmic logic, but uses an internal sub-function (`F_NOT`). This promotes reuse and consistency.
 - The initialization mechanism allows the output to be set to the negated input even before the first "normal" call – useful in PLC programs where start values need to be defined.
 
-`` - The simultaneous use of `INIT` and `REQ` enables a clear separation between startup behavior and cyclic operation.
+- The simultaneous use of `INIT` and `REQ` enables a clear separation between startup behavior and cyclic operation.
 
 - By including the input variables in the events (WITH), it is ensured that the data is always up-to-date.
 

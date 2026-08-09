@@ -55,7 +55,7 @@ CV` (UDINT) – current counter reading
 
 Provides the physical digital input I1 (e.g., push button or sensor) in the system. The IND event is triggered when the state changes.
 
-`` 3. **Input_LD** (Digital Input I2)
+3. **Input_LD** (Digital Input I2)
 
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**:
@@ -69,7 +69,7 @@ Provides the physical digital input I1 (e.g., push button or sensor) in the syst
 
 Identical to Input_CD, but connected to physical input I2 – serves as a load pulse for the counter.
 
-`` 4. **Output_Q1** (Digital Output Q1)
+4. **Output_Q1** (Digital Output Q1)
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:

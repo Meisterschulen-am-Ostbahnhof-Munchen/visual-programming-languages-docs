@@ -51,7 +51,6 @@ The `AX_TO_AD` function block does not have its own internal state. Its behavior
 - **Implicit Data Type Conversion**: The BOOL value is automatically converted to a DWORD value (bits 0-31: 0 or 1).
 - **Unidirectional Adapters**:** Both the input and output use unidirectional adapters that support only one data and one event connection.
 
-The `AX_TO_AD` function block does not have its own internal state. Its behavior is purely reactive: An incoming event at the input is immediately passed on to the output, optionally accompanied by the updated data signature.
 
 - **Composite FB**:**
 ## Application Scenarios

@@ -57,7 +57,6 @@ The calculated result is immediately passed to the output adapter `OUT`, and a c
 
 * **Generic Type:** The function block is based on the generic class `'GEN_ADI_MUL'`. This allows for flexible handling of different numeric data types (e.g., `INT`, `UINT`, `REAL`, `LREAL`), depending on how the underlying ADI adapters are implemented.
 
-The calculated result is immediately passed to the output adapter `OUT`, and a corresponding update event is forwarded via the adapter.
 
 * **Generic Type:** The function block is based on the generic class `'GEN_ADI_MUL'`. This enables flexible handling of different numeric data types (e.g., `INT`, `UINT`, `REAL`, `LREAL`). * **Unidirectional Adapters:** Using the type `unidirectional::ADI` ensures a clear, one-way data flow, minimizing coupling between program components and increasing system stability.
 

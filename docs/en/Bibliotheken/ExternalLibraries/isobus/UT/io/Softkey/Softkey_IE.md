@@ -7,7 +7,7 @@
 
 The Softkey_IE function block is an input service interface function block for event input data, specifically designed for processing softkey events according to ISO 11783-6. It serves as an interface between the application logic and the physical softkey input devices in agricultural and mobile machinery.
 
-`` ![Softkey_IE](Softkey_IE.svg)
+![Softkey_IE](Softkey_IE.svg)
 
 ## Interface Structure
 

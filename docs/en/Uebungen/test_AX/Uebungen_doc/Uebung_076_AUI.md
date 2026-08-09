@@ -43,7 +43,7 @@ The flow is as follows:
 2. This value is forwarded via an adapter connection to the input ``IN`` of the function block ``COMPOUND_SCALE``.
 3. ``COMPOUND_SCALE`` performs the compound scaling and outputs the resulting physical value (real value) at the output ``OUT``.
 
-`` 4. The scaled value is transferred via another adapter connection to the input `rPhys` of the function block `Q_NumericValue`.
+4. The scaled value is transferred via another adapter connection to the input `rPhys` of the function block `Q_NumericValue`.
 
 5. `Q_NumericValue` writes the value to the referenced object pool object so that it can be displayed on the UT.
 

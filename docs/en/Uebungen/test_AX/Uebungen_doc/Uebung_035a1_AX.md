@@ -16,7 +16,7 @@ In this exercise, various function blocks are interconnected within `SubAppNetwo
 
 This module is the core of the control system and regulates the timing and output patterns of the traffic light phases.
 
-`` - **Type**: `logiBUS::utils::sequence::pattern::sequence_Pattern_04_04_loop_AX`
+- **Type**: `logiBUS::utils::sequence::pattern::sequence_Pattern_04_04_loop_AX`
 - **Internal Parameters Used**:
 - **DT_S1_S2** = `T#3s` (Phase 1 Duration: Red)
 - **DT_S2_S3** = `T#1s` (Phase 2 Duration: Red-Yellow)

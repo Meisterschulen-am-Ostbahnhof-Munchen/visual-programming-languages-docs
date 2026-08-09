@@ -38,7 +38,7 @@ This exercise demonstrates the typical application of an IEC 61131-3 counter wit
 
 `FB_CTUD`` outputs a `CNF`, which simultaneously triggers the output blocks (`Output_QU`, `Output_QD`) as well as the conversion and terminal output.
 
-`` - **Data Connections**:
+- **Data Connections**:
 
 - The digital input signals (`IN` and `logiBUS_IX`) are directly connected to the corresponding data inputs of the meter (`CU`, `CD`, `R`, `LD`).
 - The meter outputs `QU` and `QD` are connected to the logiBUS outputs (`OUT` and `logiBUS_QX`).

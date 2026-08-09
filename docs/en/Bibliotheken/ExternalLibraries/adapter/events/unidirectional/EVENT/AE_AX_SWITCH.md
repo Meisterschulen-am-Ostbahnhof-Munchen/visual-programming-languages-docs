@@ -41,7 +41,7 @@ The function block (FB) is always in state `START`. As soon as an event arrives 
 
 - **`G.D1 = 0`** → The FB switches to state `G0` and sends an event via adapter `EO0.E1`. It then immediately returns to state `START`.
 
-`` - **`G.D1 = 1`** → The function block (FB) switches to state `G1` and sends an event via adapter `EO1.E1`. It then immediately returns to state `START`.
+- **`G.D1 = 1`** → The function block (FB) switches to state `G1` and sends an event via adapter `EO1.E1`. It then immediately returns to state `START`.
 
 An additional event at adapter `G` (signal `G.E1`) does not trigger any action – the FB remains in state `START`. This prevents unwanted switching operations when the data value changes.
 

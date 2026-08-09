@@ -59,7 +59,7 @@ The `SchieberVerriegelung` function block is implemented as a Basic Function Blo
 
 States `LinksAuf` and `rechtsAuf` represent the locked operating states. From these states, the system can transition to state `AlleAuf` by selectively opening/closing the side sliders, or return to state `AlleZu` by closing the main slider.
 
-`` The algorithm `normalOperation` copies the blocking states from the inputs (`DI_*_GESPERRT`) to the outputs (`DO_*_GESPERRT`) when operation is enabled (`QI=TRUE`).
+The algorithm `normalOperation` copies the blocking states from the inputs (`DI_*_GESPERRT`) to the outputs (`DO_*_GESPERRT`) when operation is enabled (`QI=TRUE`).
 
 ## Technical Features
 

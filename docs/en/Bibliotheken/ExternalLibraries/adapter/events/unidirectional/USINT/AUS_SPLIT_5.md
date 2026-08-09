@@ -14,7 +14,6 @@ None (signal exchange occurs exclusively via adapters).
 
 ### **Event Outputs**
 
-None (signal exchange occurs exclusively via adapters).
 
 ### **Data Inputs**
 

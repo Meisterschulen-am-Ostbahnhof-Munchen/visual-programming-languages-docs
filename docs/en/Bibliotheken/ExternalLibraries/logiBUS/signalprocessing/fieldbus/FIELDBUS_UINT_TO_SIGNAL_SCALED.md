@@ -43,7 +43,7 @@ The FB has two operating states, which are controlled by the corresponding event
 
 - **INIT state**: Upon receiving `INIT`, the parameters `SCALE` and `OFFSET` are adopted (the algorithm is empty; the transfer occurs implicitly via the `With` link). The event `INITO` is then sent.
 
-`` - **REQ State**: Upon receiving `REQ`, the following algorithm is executed:
+- **REQ State**: Upon receiving `REQ`, the following algorithm is executed:
 
 1. Check whether the input value `IN` is less than or equal to a predefined validity threshold. This threshold is given by the imported constant `VALID_SIGNAL_W` (from the namespace `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`).
 2. **Valid (`IN <= VALID_SIGNAL_W`)**:

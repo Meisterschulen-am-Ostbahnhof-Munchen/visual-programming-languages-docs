@@ -53,7 +53,7 @@ An event at the input `INIT` triggers the initialization of the internal `INI` b
 
 A set event at the adapter socket `ALR_IN.E1` is forwarded to the SET input of the internal `INI` module. The value to be saved is located at `ALR_IN.D1` and is set via `INI.VALUE`. After successful writing, the `INI` module acknowledges with `SETO`, which in turn triggers `ALR_OUT.E1`.
 
-`` 3. **Reading via ALR-IN** (implicit)
+3. **Reading via ALR-IN** (implicit)
 
 The currently read value is always available at output `ALR_OUT` via the initial GET sequence and the forwarding of `GETO`. A new read can be triggered by another `INIT` pulse.
 

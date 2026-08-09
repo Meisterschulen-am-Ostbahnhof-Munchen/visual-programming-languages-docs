@@ -37,7 +37,7 @@ The **AS_D_FF** function block operates as an asynchronous data latch.
 
 Upon each positive event on `I.E1`, the current value of `I.D1` is transferred to the block's internal memory. Immediately afterwards, an event is triggered on `Q.E1`, and the stored value is available on `Q.D1`.
 
-`` This logic is implemented by the internally used component `E_D_FF_ANY`:
+This logic is implemented by the internally used component `E_D_FF_ANY`:
 
 - `I.E1` → `E_D_FF_ANY.CLK`
 - `I.D1` → `E_D_FF_ANY.D`

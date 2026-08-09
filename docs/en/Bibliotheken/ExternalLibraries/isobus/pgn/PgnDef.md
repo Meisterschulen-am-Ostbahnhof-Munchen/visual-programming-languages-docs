@@ -16,19 +16,15 @@ Not present. This is a constant definition.
 
 ### **Event Outputs**
 
-Not present. This is a constant definition.
 
 ### **Data Inputs**
 
-Not present. This is a constant definition.
 
 ### **Data Outputs**
 
-Not present. This is a constant definition.
 
 ### **Adapters**
 
-Not present. This is a constant definition.
 
 ## How it Works
 

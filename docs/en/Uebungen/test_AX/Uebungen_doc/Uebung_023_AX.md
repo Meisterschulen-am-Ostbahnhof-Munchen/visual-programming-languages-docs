@@ -32,7 +32,6 @@ Function: Start button **Extend** for cylinder 1.
 
 - **SoftKey_F2 (DOWN)**
 
-Type: `isobus::UT::io::Softkey::Softkey_IXA`
 
 Parameters:
 
@@ -43,7 +42,6 @@ Function: Triggers the resetting of cylinder 1's extension and the simultaneous 
 
 - **SoftKey_F3 (DOWN)**
 
-Type: `isobus::UT::io::Softkey::Softkey_IXA`
 
 Parameters:
 
@@ -54,7 +52,6 @@ Function: Reset (retract) for **Extend Cylinder 2**.
 
 - **SoftKey_F7 (UP)**
 
-Type: `isobus::UT::io::Softkey::Softkey_IXA`
 
 Parameters:
 
@@ -65,7 +62,6 @@ Function: Start button **Retract** for cylinder 2.
 
 - **SoftKey_F8 (DOWN)**
 
-Type: `isobus::UT::io::Softkey::Softkey_IXA`
 
 Parameters:
 
@@ -76,7 +72,6 @@ Function: Triggers the retraction of cylinder 2 and the simultaneous setting of 
 
 - **SoftKey_F9 (DOWN)**
 
-Type: `isobus::UT::io::Softkey::Softkey_IXA`
 
 Parameters:
 
@@ -99,7 +94,6 @@ Set by SoftKey_F1, reset by `AX_SPLIT_2.OUT1`.
 
 - **AX_FB_SR_Extend_Cyl_2**
 
-Type: `adapter::iec61131::bistableElements::AX_FB_SR`
 
 Parameters: None
 
@@ -109,7 +103,6 @@ Set by `AX_SPLIT_2.OUT2`, reset by SoftKey_F3.
 
 - **AX_FB_SR_Retract_Cyl_2**
 
-Type: `adapter::iec61131::bistableElements::AX_FB_SR`
 
 Parameters: None
 
@@ -119,7 +112,6 @@ Set by SoftKey_F7, reset by `AX_SPLIT_3.OUT1`.
 
 - **AX_FB_SR_Retract_Cyl_1**
 
-Type: `adapter::iec61131::bistableElements::AX_FB_SR`
 
 Parameters: None
 
@@ -141,7 +133,6 @@ Function: Distributes the event from SoftKey_F2 to two outputs:
 - OUT2 → SET of AX_FB_SR_Extend_Cyl_2
 - **AX_SPLIT_3**
 
-Type: `adapter::events::unidirectional::AX_SPLIT_2`
 
 Parameters: None
 

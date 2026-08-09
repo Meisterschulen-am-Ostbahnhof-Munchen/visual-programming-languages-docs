@@ -52,7 +52,7 @@ Process:
 - To the clock input `CLK` of the flip-flop (`E_D_FF`).
 - Simultaneously, the validity status (`FIELDBUS_UDINT_TO_SIGNAL.VALID`) is set to the data input `D` of the flip-flop.
 
-`` - On the rising edge of `CLK`, the flip-flop inherits the value from `D` to `Q` and outputs an event on `EO`.
+- On the rising edge of `CLK`, the flip-flop inherits the value from `D` to `Q` and outputs an event on `EO`.
 
 - The flip-flop output `Q` feeds `VALID.D1`, and the event `EO` triggers `VALID.E1`.
 

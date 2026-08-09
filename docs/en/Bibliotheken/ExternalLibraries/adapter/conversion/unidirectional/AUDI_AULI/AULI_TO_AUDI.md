@@ -52,7 +52,7 @@ The function block contains an internal network with a single conversion block, 
 
 1. An incoming event **E1** from socket `AULI_IN` triggers the conversion block via its `REQ` event.
 
-`` 2. Simultaneously, the ULINT value from `AULI_IN.D1` is forwarded to the input `IN` of the converter.
+2. Simultaneously, the ULINT value from `AULI_IN.D1` is forwarded to the input `IN` of the converter.
 
 3. The converter transforms the 64-bit value into a 32-bit value and outputs the result to its output `OUT`.
 4. After successful conversion, the converter sends an acknowledgment event (`CNF`), which is forwarded as **E1** to the plug `AUDI_OUT`.

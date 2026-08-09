@@ -53,7 +53,7 @@ When the adapter sends its event `E1`, the `F_SEL` block is controlled. The sele
 
 - **D1 = 0** → Output `OUT` receives the value of `IN0`.
 
-`` - **D1 ≠ 0** → Output `OUT` receives the value of `IN1`.
+- **D1 ≠ 0** → Output `OUT` receives the value of `IN1`.
 
 The event `CNF` is then output to confirm successful processing.
 
@@ -61,7 +61,7 @@ The event `CNF` is then output to confirm successful processing.
 
 - The input `IN0` is declared as `ANY_ELEMENTARY`, meaning it can accept values of different elementary types. However, the output `OUT` is fixed as `UDINT` – an implicit type conversion (e.g., from INT, DINT, REAL) occurs when passing the output to `F_SEL`.
 
-`` - The function block internally uses a predefined `F_SEL` function block (from the IEC 61131 library) that performs the actual binary selection.
+- The function block internally uses a predefined `F_SEL` function block (from the IEC 61131 library) that performs the actual binary selection.
 
 - The events `EI0` and `EI1` serve only to update the corresponding data values; the selection is only triggered by the adapter event.
 

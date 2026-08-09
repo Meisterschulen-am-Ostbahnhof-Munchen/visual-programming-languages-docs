@@ -43,7 +43,7 @@ None available.
 1. The function block waits for an event at input `REQ`.
 2. When `REQ` occurs, the algorithm is executed: The current value of the data input `IN` is assigned to the InOut variable `OUT` (`OUT := IN`).
 
-`` 3. After successful assignment, the event `CNF` is triggered to signal completion to the calling function block.
+3. After successful assignment, the event `CNF` is triggered to signal completion to the calling function block.
 
 Execution takes place in a single EC state (`REQ`), which runs the algorithm exactly once.
 

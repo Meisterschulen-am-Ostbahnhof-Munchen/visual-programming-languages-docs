@@ -13,7 +13,7 @@ This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) wit
 - **AUDI_UDINT_TO_UDI** – Type: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - Converts a UDINT value (here fixed to `UDINT#10`) and outputs it at its output `AUDI_OUT`. This value is used as the counter's preset value (`PV`).
 
-`` - **Input_CD** – Type: `logiBUS::io::DI::logiBUS_IXA`
+- **Input_CD** – Type: `logiBUS::io::DI::logiBUS_IXA`
 
 - Digital input connected to `Input_I1`. When TRUE, an event is generated at output `IN`, which decrements the counter.
 - **Input_LD** – Type: `logiBUS::io::DI::logiBUS_IXA`
@@ -30,11 +30,11 @@ This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) wit
 1. The input `Input_LD` (pin `Input_I2`) generates an event on a rising edge at the output `IN`. This event is forwarded to the conversion block `AUDI_UDINT_TO_UDI.REQ` via the event connection `Input_LD.INITO`.
 2. Subsequently, `AUDI_UDINT_TO_UDI` outputs the pre-calculated UDINT value (10) at its output `AUDI_OUT`. This value is then routed via an adapter connection to the input `PV` of `AUDI_FB_CTD`.
 3. Simultaneously, the adapter input `Input_LD.IN` is directly connected to the counter's input `LD` (adapter connection). This loads the preset value (10) into the counter.
-3. 4. The input `Input_CD` (pin `Input_I1`) outputs a signal at its output `IN`, which is connected via an adapter to the counter's input `CD`. Each event decrements the counter reading by 1.
+4. The input `Input_CD` (pin `Input_I1`) outputs a signal at its output `IN`, which is connected via an adapter to the counter's input `CD`. Each event decrements the counter reading by 1.
 5. The counter output `Q` is passed via an adapter to the digital output `Output_Q1.OUT`. `Q` becomes TRUE once the counter reading reaches 0.
 6. The current counter reading (`CV`) is sent via an adapter to the numeric terminal output `Q_NumericValue_AUDI.u32NewValue` and displayed on the terminal.
 
-`` **Learning Objectives:**
+**Learning Objectives:**
 
 - Understanding the IEC 61131-3 Down Counter (CTD) as an adapter block.
 - Working with event and adapter connections in 4diac.

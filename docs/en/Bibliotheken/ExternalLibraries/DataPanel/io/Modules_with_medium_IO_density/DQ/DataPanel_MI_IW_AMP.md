@@ -12,7 +12,7 @@ The DataPanel_MI_IW_AMP function block is an input interface function block (Ser
 
 - `INIT (EInit)` – Service initialization. Triggered to configure the function block and establish the connection to the hardware. This event transfers the parameters QI, PARAMS, u8SAMember, Input, and AnalogInput_hysteresis.
 
-`` - `REQ (Event)` – Service request. Triggers a new measurement query. The function block responds with the CNF event and provides the current amperage value on the IN output.
+- `REQ (Event)` – Service request. Triggers a new measurement query. The function block responds with the CNF event and provides the current amperage value on the IN output.
 
 ### **Event Outputs**
 

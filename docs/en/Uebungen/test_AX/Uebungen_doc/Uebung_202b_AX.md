@@ -61,7 +61,7 @@ The logic is implemented as a sub-application and uses an adapter-based data flo
 3. **Signal Distribution via SubApp `AX_2_TO_3`**
 - The delayed outputs `UP_OUT` and `DOWN_OUT` from `ILOCK_AX` are routed to the subapp `AX_2_TO_3` via adapter connections.
 
-`` - This sub-app forwards the signals to the corresponding outputs `UP_OUT` and `DOWN_OUT` and generates an OR signal (`OR_OUT`) that activates the **LowSide_Driver** as soon as one of the two rotation directions is requested.
+- This sub-app forwards the signals to the corresponding outputs `UP_OUT` and `DOWN_OUT` and generates an OR signal (`OR_OUT`) that activates the **LowSide_Driver** as soon as one of the two rotation directions is requested.
 
 4. **Outputs**
 - `Rechtslauf` and `Linkslauf` are controlled directly by the sub-app's outputs.

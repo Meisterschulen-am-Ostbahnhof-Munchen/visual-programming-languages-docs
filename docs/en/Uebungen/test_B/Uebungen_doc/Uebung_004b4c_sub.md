@@ -65,7 +65,7 @@ The sub-application operates according to the following sequence:
 
 If `Q = TRUE` (flip-flop is set), the event is forwarded to output `EO0`.
 
-`` - If `Q = FALSE` (flip-flop reset) is triggered, the event is forwarded to `EO1`.
+- If `Q = FALSE` (flip-flop reset) is triggered, the event is forwarded to `EO1`.
 
 4. The output `EO0` (when set) leads to the reset input `R` of the flip-flop (via the path: `EO0` → `AE2_E_TO_EVENT.REQ` → (feedback) → `AE2_EVENT_TO_E.CNF` → `E_SR_I1.R`). **Note:** The event chain is actually wired as follows:
 - `E_SWITCH_I1.EO0` goes to `E_SR_I1.S` (set).
@@ -74,7 +74,7 @@ If `Q = TRUE` (flip-flop is set), the event is forwarded to output `EO0`.
 - The adapter converters are cross-connected (see EventConnections), so an event from `AE2_E_TO_EVENT` is passed to `AE2_EVENT_TO_E` and vice versa. This enables bidirectional communication via the adapter.
 5. After processing the set or reset event, the output `EO` is triggered by `E_SR_I1` and made available as the sub-application output `EO`.
 
-`` 6. The current state `Q` is directly output as `Q` by the sub-application.
+6. The current state `Q` is directly output as `Q` by the sub-application.
 
 **Adapter Connections:**
 

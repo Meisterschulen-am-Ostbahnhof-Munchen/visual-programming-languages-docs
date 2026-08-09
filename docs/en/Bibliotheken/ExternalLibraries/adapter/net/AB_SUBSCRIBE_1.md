@@ -40,7 +40,7 @@ The function block **AB_SUBSCRIBE_1** is a composite function block that encapsu
 1. The internal `INIT` event initializes the internal `SUBSCRIBE_1` block with `QI` and `ID`. Upon success, it returns `INITO`.
 2. The internal `SUBSCRIBE_1` block monitors the configured channel. As soon as the associated `PUBLISH_1` block publishes data, it generates the indication event `IND` and places the received value at `RD_1`.
 3. `IND` clocks the internal **E_D_FF_ANY** flip-flop (`CLK`), which receives the value from `RD_1` at its data input `D`.
-3. 4. The stored value appears stably at output `Q` and is transferred via the data connection to `OUT.D1` of the AX plug.
+4. The stored value appears stably at output `Q` and is transferred via the data connection to `OUT.D1` of the AX plug.
 5. The event `EO` of the flip-flop is transferred to the event output `OUT.E1`, so that downstream components are notified of the new information.
 
 ## Technical Features

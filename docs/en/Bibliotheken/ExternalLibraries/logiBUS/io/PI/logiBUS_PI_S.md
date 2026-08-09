@@ -13,7 +13,6 @@ Not applicable – this is a data type, not an executable function block.
 
 ### **Data Outputs**
 
-Not applicable – this is a data type, not an executable function block.
 
 ### **Internal Structure (Variables)**
 

@@ -49,7 +49,7 @@ The data is converted into a physical value (`rPhys`). If the conversion is succ
 - This event is forwarded to the input `SET` of the NVS function block. Simultaneously, the physical value (`NumericValue_PHYS.rPhys`) is available at the data input `NVS.VALUE`.
 - The NVS stores the value under the key taken from the subapp input `KEY` and acknowledges it with `SETO`.
 
-`` - The event `SETO` is passed to the subapp output `IND` (serving as confirmation for the caller).
+- The event `SETO` is passed to the subapp output `IND` (serving as confirmation for the caller).
 
 2. **Initialization and First Read**:
 - After the subapp starts, the event `NVS.INITO` is activated (by initializing the NVS block).

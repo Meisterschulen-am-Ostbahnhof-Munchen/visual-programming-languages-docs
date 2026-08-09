@@ -32,7 +32,7 @@ The logic of the exercise is structured as follows:
 1. The digital inputs **I1** and **I2** are read via the function blocks `DigitalInput_I1` and `DigitalInput_I2`.
 2. The signal from **I2** is **negated** (inverted). This is done via a **Negate Connection** (attribute `Negated = "true"`) on the data connection between `DigitalInput_I2.IN` and `AND_2_BOOL.IN2`.
 
-`` *(Negation is only possible with Boolean data types.)*
+*(Negation is only possible with Boolean data types.)*
 
 3. The function block `AND_2_BOOL` combines the signal from **I1** (to `IN1`) with the negated signal from **I2** (to `IN2`) using an AND operation.
 4. The result (`AND_2_BOOL.OUT`) is passed to the data input `OUT` of the output function block `DigitalOutput_Q1`.

@@ -41,7 +41,7 @@ The function block operates purely combinatorially based on an internal instance
 
 1. **Event E1 on the OFF_IN adapter** is routed to the **REQ input** of the conversion block `Convert`.
 
-`` 2. The conversion block converts the USINT value at its **IN** input into an INT value and signals completion with the **CNF** event.
+2. The conversion block converts the USINT value at its **IN** input into an INT value and signals completion with the **CNF** event.
 
 3. The **CNF** event is passed to the **E1 input of the AI_OUT adapter**, and simultaneously, the converted INT value is output to the **D1 data output** of the AI_OUT adapter.
 

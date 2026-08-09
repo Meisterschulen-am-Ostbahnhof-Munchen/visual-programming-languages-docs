@@ -21,7 +21,7 @@ Four function blocks are instantiated in the sub-application:
 
 * **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]This block reads the state of the physical input `Input_I1` and makes it available via its adapter connection `IN`[cite: 1].
 
-`` * **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This component receives signals at its adapter input `OUT` and sets the corresponding physical output `Output_Q1`[cite: 1].
+* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This component receives signals at its adapter input `OUT` and sets the corresponding physical output `Output_Q1`[cite: 1].
 
 * **`AX_X_TO_BOOL`**: [cite_start]A converter component that decomposes a signal received at the adapter input `AX_IN` (socket) into an event `CNF` and a Boolean data value `IN`[cite: 1].
 * **`AX_BOOL_TO_X`**: [cite_start]A converter module that reassembles an adapter signal at output `AX_OUT` (Plug) from an event `REQ` and a Boolean data value `OUT`[cite: 1].

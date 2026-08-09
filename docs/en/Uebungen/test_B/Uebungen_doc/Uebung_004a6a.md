@@ -79,7 +79,7 @@ This exercise uses three digital inputs (`I1`, `I2`, `I3`) and one digital outpu
 2. **Data Chaining**:
 - The output `Q` of the flip-flop `E_T_FF` is passed via a data connection to the data input `OUT` of the output block `DigitalOutput_Q1`.
 
-`` 3. **State Change**:
+3. **State Change**:
 
 - Each successful rendezvous (simultaneous pressing of `I1` and `I2` within 20 ms) toggles the output `Q1`.
 - A key press on `I3` resets the rendezvous state (without directly changing the output).

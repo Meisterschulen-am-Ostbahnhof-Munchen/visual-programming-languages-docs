@@ -40,7 +40,7 @@ The objective is to understand sequential event processing. In IEC 61499, an eve
 
 Both lamps thus switch synchronously, controlled by one button.
 
-`` *(Note in the code: "Using two T_FFs here is pointless; this is only to show how to use E_SPLIT." - That's correct; both outputs could have been connected to a single FF. This is purely for demonstrating event splitting.)*
+*(Note in the code: "Using two T_FFs here is pointless; this is only to show how to use E_SPLIT." - That's correct; both outputs could have been connected to a single FF. This is purely for demonstrating event splitting.)*
 
 -----
 

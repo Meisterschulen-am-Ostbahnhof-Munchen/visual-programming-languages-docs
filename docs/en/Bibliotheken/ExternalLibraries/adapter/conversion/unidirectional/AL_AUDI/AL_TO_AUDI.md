@@ -36,7 +36,7 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 1. An incoming event at socket `AL_IN` (via its event output `E1`) triggers the conversion instance `Convert` (Type `F_LWORD_TO_UDINT`).
 2. Simultaneously, the LWORD data value from `AL_IN.D1` is transferred to the input `IN` of `Convert`.
 
-`` 3. The conversion function converts the LWORD value into a UDINT value.
+3. The conversion function converts the LWORD value into a UDINT value.
 
 4. After successful conversion, `Convert` signals this via its event output `CNF`, causing the plug `AUDI_OUT` to receive an event at its event input `E1`.
 5. The converted UDINT value is passed from the output `OUT` of `Convert` to the data input `D1` of `AUDI_OUT` and is thus available at the output adapter.

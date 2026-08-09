@@ -54,7 +54,7 @@ Control is achieved via four digital inputs (logiBUS) that function as pushbutto
 
 Each input block generates an event (`IND`) on a rising edge. These events are switched to the event input `REQ` of the counter block `FB_CTUD_LINT`. The counter then responds to the corresponding data input (`CU`, `CD`, `R`, `LD`).
 
-`` The data connections transmit the logical states of the buttons:
+The data connections transmit the logical states of the buttons:
 
 - `Input_CU.IN` → `FB_CTUD_LINT.CU`
 - `Input_CD.IN` → `FB_CTUD_LINT.CD`

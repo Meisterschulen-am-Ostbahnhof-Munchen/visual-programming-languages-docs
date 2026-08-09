@@ -71,7 +71,7 @@ The scale factor is calculated by dividing the reference value `Y_Scale` by the 
 
 1. In state `REQ`, the function block (FB) is transitioned to state `CO` by an event on adapter `CO` (containing data). There, the offset is calculated and output via adapter `OFFSET`. The FB then immediately returns to state `REQ`.
 
-`` 2. Scale calibration is performed analogously via the adapter `CS` and the state `CS`.
+2. Scale calibration is performed analogously via the adapter `CS` and the state `CS`.
 
 3. The event `SET` updates the reference values `Y_Offset` and `Y_Scale` without exiting the calibration state.
 4. Repeated measurements (via `X.E1`) update the output `Y` with the current calibration parameters.

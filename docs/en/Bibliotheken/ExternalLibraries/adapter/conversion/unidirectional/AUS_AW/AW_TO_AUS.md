@@ -38,7 +38,7 @@ None.
 1. An incoming event at the adapter socket `AW_IN.E1` triggers the internal conversion module `Convert` (type `F_WORD_TO_USINT`) via its event input `REQ`.
 2. Simultaneously, the data value from `AW_IN.D1` (type `WORD`) is forwarded to the data input `Convert.IN`.
 
-`` 3. After conversion, the result (`USINT`) is provided at data output `Convert.OUT` and transferred to data port `AUS_OUT.D1`.
+3. After conversion, the result (`USINT`) is provided at data output `Convert.OUT` and transferred to data port `AUS_OUT.D1`.
 
 4. The conversion block signals completion via its event `CNF`, which directly activates the event output `AUS_OUT.E1`.
 

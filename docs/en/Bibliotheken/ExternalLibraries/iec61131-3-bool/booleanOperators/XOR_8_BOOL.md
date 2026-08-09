@@ -46,7 +46,7 @@ An XOR (exclusive OR) operation returns `TRUE` (1) as the result if and only if 
 * **Generic Block:** The block is marked as a generic block (`GEN_XOR`), indicating its reusability and possible parameterization for other data types. In this specific instance, however, it is fixed to the data type `BOOL`.
 * **Generic Block:** The block is marked as a generic block (`GEN_XOR`), which indicates its reusability and possible parameterization for other data types. In this specific instance, however, it is fixed to the data type `BOOL`.
 
-`` * **Event-driven execution:** The operation is only performed upon an incoming `REQ` event, enabling efficient and deterministic control.
+* **Event-driven execution:** The operation is only performed upon an incoming `REQ` event, enabling efficient and deterministic control.
 
 * **Fixed number of inputs:** The block provides exactly eight inputs. Unused inputs should be set to a defined logical value (e.g., `FALSE`).
 

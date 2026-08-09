@@ -70,14 +70,12 @@ Within `E_TABLE`, `E_TABLE_CTRL` interacts with a `E_DELAY` block:
 2. It sends `DTO` via `CLKO` to the `E_DELAY` block.
 1. `DTO` to `CLKO`.
 
-2.
 
 3. `E_DELAY` 3. After `E_DELAY` has expired, it signals this via its `EO` output back to the `CLK` input of `E_TABLE_CTRL`.
 4. `E_TABLE_CTRL` then calculates the next delay time, and the cycle repeats.
 
 This block thus encapsulates the pure state logic (which step is next, how long it takes), while `E_DELAY` executes the actual time delay.
 
-4. `E_TABLE_CTRL` then calculates the next delay time, and the cycle repeats.
 
 This block therefore encapsulates the pure state logic (which step is next, how long it takes), while `E_DELAY` performs the actual time delay.
 ## 🛠️ Related Exercises

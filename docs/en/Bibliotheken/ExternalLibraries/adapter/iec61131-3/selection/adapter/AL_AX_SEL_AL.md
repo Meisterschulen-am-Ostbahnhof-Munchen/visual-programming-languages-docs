@@ -108,7 +108,6 @@ Compared to a standard `SEL` function block from the IEC 61131-3 library, `AL_AX
 
 ---
 
-Compared to a standard `SEL` function block from the IEC 61131-3 library, `AL_AX_SEL_AL` offers the following advantages:
 
 * **Reduced Wiring Effort:** Encapsulation in adapters eliminates the need for separate event and data lines. A single connection path per channel is sufficient.
 * * **Event Coupling:** The function block inherently responds to the event triggers integrated into the adapters, eliminating the need for manual event-based linking in the FBD (Function Block Diagram).

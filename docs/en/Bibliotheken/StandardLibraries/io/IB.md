@@ -16,7 +16,7 @@
 
 The IB (Input Byte) function block is a service interface function block for processing byte input data. It serves as an interface between an IEC 61499 control system and external input devices or resources that supply byte data.
 
-`` ![IB](IB.svg)
+![IB](IB.svg)
 
 ## Interface Structure
 

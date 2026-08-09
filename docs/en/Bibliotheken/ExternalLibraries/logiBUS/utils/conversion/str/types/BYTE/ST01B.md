@@ -13,7 +13,6 @@ Not applicable, as `ST01B` is a data type and not a function block.
 
 ### **Event Outputs**
 
-Not applicable, as `ST01B` is a data type and not a function block.
 
 ### **Data Inputs**
 
@@ -21,11 +20,9 @@ Not applicable, as `ST01B` is a data type and not a function block. It defines a
 
 ### **Data Outputs**
 
-Not applicable, as `ST01B` is a data type and not a function block. It defines a structure that can be used as a type for data variables in function blocks.
 
 ### **Adapters**
 
-Not applicable, as `ST01B` is a data type and not a function block.
 
 ## Functionality
 

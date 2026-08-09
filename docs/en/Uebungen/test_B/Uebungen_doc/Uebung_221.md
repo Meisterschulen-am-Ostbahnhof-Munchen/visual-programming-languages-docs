@@ -47,7 +47,7 @@ Control is achieved via four digital inputs (CU, CD, Reset, Load Initial Value) 
 - After the counter processing (`CNF` event):
 - The outputs `QU` and `QD` are forwarded to the output blocks `Output_QU` and `Output_QD`. These set the physical outputs.
 
-`` - The current counter value `CV` is converted to an unsigned value via `F_DINT_TO_UDINT` and passed to `Q_NumericValue`, which displays the value on the terminal.
+- The current counter value `CV` is converted to an unsigned value via `F_DINT_TO_UDINT` and passed to `Q_NumericValue`, which displays the value on the terminal.
 
 3. **Process**:
 - A rising edge at CU increments the counter by 1.

@@ -38,7 +38,7 @@ The function block forwards the ADI signal present at socket `IN` to all nine pl
 - The function block is defined as a generic function block (attribute `eclipse4diac::core::GenericClassName` = `'GEN_ADI_SPLIT'`) and can therefore be reused in different projects.
 - It has neither events nor data inputs/outputs; all functionality resides in the adapter topology.
 
-`` - The type hash attribute is empty, indicating a simple, non-versioned execution.
+- The type hash attribute is empty, indicating a simple, non-versioned execution.
 
 ## State Overview
 

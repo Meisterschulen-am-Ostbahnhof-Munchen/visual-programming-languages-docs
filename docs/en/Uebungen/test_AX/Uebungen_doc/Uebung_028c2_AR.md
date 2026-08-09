@@ -45,7 +45,7 @@ THRESHOLD` | SubApp `MyLib::sys::NVS_IN_AND_STORE_AR` | `KEY='THRESHOLD'`, `stOb
 2. **Conversion**: The value is converted to a real-world value (`AR`) using `AD_TO_AUDI` and `AUDI_TO_AR`. A comment indicates that a direct conversion (`AD_TO_AR`) would result in the same value as `reinterpret_cast` – the double conversion ensures correct value transfer.
 3. **Calibration**: The value (`AR`) is passed to `CALIBRATE.X`. The digital inputs `I2` (CO) and `I3` (CS) trigger the calculation of offset (`CO` event) and scaling (`CS` event). The calculated values are stored via the NVS function blocks.
 
-`` - `DigitalInput_I2_CO` → `CALIBRATE.CO` (Determine offset)
+- `DigitalInput_I2_CO` → `CALIBRATE.CO` (Determine offset)
 
 - `DigitalInput_I3_CS` → `CALIBRATE.CS` (Determine scaling)
 4. **Split of the calibrated value**: The output `CALIBRATE.Y` is split via `AR_SPLIT_2` to two paths:

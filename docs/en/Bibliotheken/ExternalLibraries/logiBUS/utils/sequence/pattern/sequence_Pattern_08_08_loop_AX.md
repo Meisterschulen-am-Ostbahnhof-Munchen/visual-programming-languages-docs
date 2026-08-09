@@ -48,7 +48,7 @@ The component operates as a finite state machine with a cyclic structure:
 2. **State Logic**: In each state (`State_01` to `State_08`), the corresponding byte pattern (`P_Sn`) is parsed.
 * If bit 0 of `P_S1` is set, `Q1.D1` is set to TRUE.
 
-`` * If bit 1 of `P_S1` is set, `Q2.D1` is set to TRUE, and so on.
+* If bit 1 of `P_S1` is set, `Q2.D1` is set to TRUE, and so on.
 
 * Simultaneously, the event `E1` is triggered on all adapters `Q1` through `Q8` to signal the change.
 3. **Transitions**: The transition to the next state occurs when:

@@ -49,7 +49,7 @@ Q := D` is set and the event `EO` is triggered. In each subsequent call to ``CLK
 * `SUB(...)`` calculates the positive difference (absolute value).
 * `GE(...)`` checks whether this difference is greater than or equal to ``HYSTERESIS``.
 
-`` Only if this condition is **true** is the algorithm `LATCH` executed again (Q := D) and `EO` sent. If the condition is false, `Q` remains unchanged and no event is output. The state remains `SET` in both cases.
+Only if this condition is **true** is the algorithm `LATCH` executed again (Q := D) and `EO` sent. If the condition is false, `Q` remains unchanged and no event is output. The state remains `SET` in both cases.
 
 ## Technical Features
 

@@ -44,7 +44,7 @@ This function block encapsulates the internal function block `E_D_FF_ANY_TMIN`, 
 - The initialization event `INIT` is passed to the internal function block along with the parameter `Tmin`.
 - A data latch is triggered by an event on socket `I` (adapter event `I.E1`). This event serves as the clock signal (`CLK`) for the flip-flop.
 
-`` - The current data value of `I.D1` is taken at each clock cycle and made available at the output of the internal function block.
+- The current data value of `I.D1` is taken at each clock cycle and made available at the output of the internal function block.
 
 - The internal function block generates an event at output `EO`, which is passed on via the adapter `Q` as `Q.E1`.
 - There must be at least `EO` time between two consecutive events. If another clock cycle occurs during this lock time, the data value is latched, but the output is only released after the lock time has expired.

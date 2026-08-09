@@ -22,7 +22,6 @@ The function block **ALI_SPLIT_3** is used to distribute an incoming unidirectio
 
 ### **Data Outputs**
 
-– None (all communication takes place via the adapter interfaces)
 
 ### **Adapter**
 

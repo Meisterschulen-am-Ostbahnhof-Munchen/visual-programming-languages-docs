@@ -45,7 +45,7 @@ The SubApp uses the following (sub)blocks:
 - **Data Connections:** None
 - **Function:** Performs a rendezvous between the events at `EI1` and `EI2`. If both arrive within `Deadline`, `EO` is triggered. The input `R` resets the internal state.
 
-`` - **`AX_T_FF`** – Type: `adapter::events::unidirectional::AX_T_FF`
+- **`AX_T_FF`** – Type: `adapter::events::unidirectional::AX_T_FF`
 
 **Parameters:** None
 
@@ -71,7 +71,7 @@ The SubApp uses the following (sub)blocks:
 - The block waits until both events have arrived. The maximum waiting time between the first and second events is 20 ms (`Deadline`). If the difference exceeds this value, the operation is discarded and the next attempt is awaited.
 - An event from `I3` (Reset Pin) immediately resets the rendezvous state without triggering `EO`.
 
-`` 3. **Toggle Flip-Flop:**
+3. **Toggle Flip-Flop:**
 
 - If the rendezvous is successful, `RT_E_REND` sends an event to the `CLK` input of `AX_T_FF`.
 - The flip-flop changes its internal state (from `FALSE` to `TRUE` or vice versa) and outputs it via the adapter output `Q`.

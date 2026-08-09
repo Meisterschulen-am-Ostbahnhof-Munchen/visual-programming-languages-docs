@@ -45,7 +45,7 @@ The function block is activated by an event at `REQ`. The associated algorithm c
 - `OUT` receives the value of `IN`.
 - `VALID` is set to `TRUE`.
 
-`` - Otherwise (signal invalid):
+- Otherwise (signal invalid):
 
 - `OUT` is set to `DWORD#0`.
 - `VALID` is set to `FALSE`.

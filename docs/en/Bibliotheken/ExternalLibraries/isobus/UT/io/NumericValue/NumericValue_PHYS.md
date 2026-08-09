@@ -60,7 +60,7 @@ The sub-module `F_RAW_TO_PHYS` receives the integer value and the original struc
 Finally, the output `IND` is activated, and the calculated value is output at the data output `rPhys`.
 ...``
 
-`` The chaining ensures that the current raw value is read from the object pool and calculated for each REQ.
+The chaining ensures that the current raw value is read from the object pool and calculated for each REQ.
 
 ## Technical Features
 

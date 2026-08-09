@@ -37,7 +37,7 @@ The module internally links the event and data lines of the two adapters directl
 
 - The incoming event `E1` of socket `AS_IN` is transferred unchanged to the output plug `ADI_OUT` at its event `E1`.
 
-`` - The data value `D1` from the SINT adapter (`AS_IN.D1`) is forwarded to data port `D1` of the DINT adapter (`ADI_OUT.D1`).
+- The data value `D1` from the SINT adapter (`AS_IN.D1`) is forwarded to data port `D1` of the DINT adapter (`ADI_OUT.D1`).
 
 Since the data types are different (SINT → DINT), implicit value preservation occurs: The SINT value (value range -128 … 127) is copied into a signed 32-bit value (sign extension). The function block itself does not execute its own conversion logic but relies on the type conversion defined by the adapter interfaces.
 

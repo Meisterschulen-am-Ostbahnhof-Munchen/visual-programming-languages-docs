@@ -50,7 +50,7 @@ The possible error codes correspond to the ISO11783-6 definitions and cover typi
 - The interface uses only adapters for data transmission, resulting in loose coupling and flexible wiring.
 - The adapters are of type "unidirectional::OFF" and enable event-driven data transmission.
 
-`` - The function block (FB) is designed for use in ISOBUS systems according to ISO 11783-6.
+- The function block (FB) is designed for use in ISOBUS systems according to ISO 11783-6.
 
 ## State Overview
 

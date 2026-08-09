@@ -50,7 +50,7 @@ The block is initialized via the event input `INIT`, passing the version number 
 - ``versionString`` must be null-terminated or exactly 32 bytes long (ISO V11+).
 - If a string consisting of spaces (``'       '``) is passed, the function deletes the last stored pool version.
 
-`` - Maximum version entry length: 32 bytes.
+- Maximum version entry length: 32 bytes.
 
 - The block is designed as a Service Interface Block (SIB) for ISOBUS communication (ISO 11783-6).
 

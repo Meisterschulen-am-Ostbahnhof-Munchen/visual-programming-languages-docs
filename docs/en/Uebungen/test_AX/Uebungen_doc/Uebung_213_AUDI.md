@@ -117,7 +117,7 @@ After system startup, the reset input `Input_R` is initialized. The resulting ev
 
 Every rising edge at the logiBUS input I1 (`Input_CU`) increments the counter as long as the reset (`Input_R`) is inactive.
 
-`` - A signal at input I2 (`Input_R`) resets the counter to 0.
+- A signal at input I2 (`Input_R`) resets the counter to 0.
 
 3. **Output**:
 - The counter's output `Q` is connected directly to the logiBUS output Q1 (`Output_Q1`).

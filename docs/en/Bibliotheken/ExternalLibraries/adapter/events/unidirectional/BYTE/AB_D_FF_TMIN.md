@@ -50,7 +50,7 @@ An event at `INIT` passes the parameter `Tmin` (minimum time) to the inner funct
 2. **Data Acquisition and Transmission:**
 - An event `E1` occurs at socket `I`, which carries the data value `D1` (the signal to be latched).
 
-`` - This event is forwarded as `CLK` to the inner flip-flop, which simultaneously receives the data value `D1` from `I.D1`.
+- This event is forwarded as `CLK` to the inner flip-flop, which simultaneously receives the data value `D1` from `I.D1`.
 
 - The inner flip-flop stores the value `D1` and outputs it at its output `Q`.
 - The latched value is passed out via plug `Q.D1`, and at the same time, the output event `EO` of the inner flip-flop is triggered.

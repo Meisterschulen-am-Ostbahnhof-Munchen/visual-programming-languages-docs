@@ -51,7 +51,6 @@ No adapters available.
 
 This function block implements a simple, event-driven sequence:
 
-1. An incoming `REQ` event triggers the execution of the algorithm `REQ`.
 3. Each output also receives the corresponding port value from the octal input:
 - `OUT1.Port := IN.Port1`
 - `OUT2.Port := IN.Port2`

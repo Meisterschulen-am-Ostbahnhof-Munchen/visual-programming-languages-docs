@@ -81,7 +81,7 @@ The exercise flow is determined by the **event and data connections** in the Sub
 
 The two digital inputs `DigitalInput_I1` and `DigitalInput_I2` monitor the physical inputs `Input_I1` and `Input_I2`, respectively. The event `IND` is triggered on a rising or falling edge.
 
-`` 2. **Event Forwarding to ILOCK**
+2. **Event Forwarding to ILOCK**
 
 - `DigitalInput_I1.IND` → `ILOCK.EI_UP`
 - `DigitalInput_I2.IND` → `ILOCK.EI_DOWN`
@@ -94,7 +94,7 @@ Simultaneously, the current digital values are passed to `ILOCK` via the data co
 
 ILOCK_BLOCK` processes the incoming events and data. It sets the output `DO_UP` (or `DO_DOWN`) to the value of the corresponding input, provided the other channel is not already active. Internal logic ensures that only one channel can deliver the value `TRUE` at any given time. The output events `EO_UP` and `EO_DOWN` are generated accordingly.
 
-`` 4. **Output to Hardware**
+4. **Output to Hardware**
 
 The events and data of `ILOCK` are forwarded to the digital outputs:
 

@@ -64,7 +64,7 @@ Internally, a standard function block `FB_CTU_DINT` is used, with its inputs and
 
 - **Adapter-based interface** – enables loose coupling and easy integration into adapter-based architectures (e.g., according to IEC 61499).
 
-`` - **Unidirectional Adapters** – the adapters `AX` and `ADI` each transmit in only one direction.
+- **Unidirectional Adapters** – the adapters `AX` and `ADI` each transmit in only one direction.
 
 - **Acknowledgement Event `CNF`** – any event at an input triggers an immediate acknowledgement.
 - **No Edge Detection** – the function block reacts to any event, not to the rising or falling edges of a digital signal.

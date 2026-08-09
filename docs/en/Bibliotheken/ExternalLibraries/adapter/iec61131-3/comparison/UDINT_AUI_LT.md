@@ -43,7 +43,7 @@ The function block is built as an internal network from the base function block 
 - The data values **IN1** and **IN2.D1** are forwarded to the corresponding data inputs of F_LT.
 - F_LT performs the comparison `IN1 < IN2` and outputs the result (BOOL) to **OUT.D1**.
 
-`` - After a successful comparison, the event **OUT.E1** is activated.
+- After a successful comparison, the event **OUT.E1** is activated.
 
 ## Technical Features
 

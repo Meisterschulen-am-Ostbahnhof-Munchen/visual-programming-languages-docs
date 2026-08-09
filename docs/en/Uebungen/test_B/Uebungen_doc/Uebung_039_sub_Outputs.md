@@ -56,14 +56,14 @@ The data and event flow within the sub-application is as follows:
 1. **Initialization and Triggers**:
 * The module reacts to the external event `REQ` or to a `IND` event from the softkey (`IX`).
 
-`` * The object ID for the softkey (`u16ObjId`) and the hardware address (`Output`) are passed from the outside to the internal function blocks `IX`, `QX`, and `GreenWhiteBackground`.
+* The object ID for the softkey (`u16ObjId`) and the hardware address (`Output`) are passed from the outside to the internal function blocks `IX`, `QX`, and `GreenWhiteBackground`.
 
 2. **Logical operation (OR)**:
 * The function block `OR_2` receives two Boolean signals:
 * `IN1`: The status of the softkey (`IX.IN`).
 * `IN2`: The external input `OUT` (e.g., from a step sequence).
 
-`` * As soon as one of these signals is `TRUE`, the output of `OR_2` switches to `TRUE`. This enables an "OR" logic: The actuator runs when the automation system **or** the operator presses the button.
+* As soon as one of these signals is `TRUE`, the output of `OR_2` switches to `TRUE`. This enables an "OR" logic: The actuator runs when the automation system **or** the operator presses the button.
 
 3. **Output and Feedback**:
 * The result of the OR operation triggers the hardware output `QX`.

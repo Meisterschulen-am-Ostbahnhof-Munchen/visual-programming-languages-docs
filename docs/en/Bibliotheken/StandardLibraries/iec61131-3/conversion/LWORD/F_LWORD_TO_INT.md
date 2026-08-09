@@ -32,7 +32,7 @@ The function block performs the conversion by transforming the `LWORD` value at 
 - Converting a 64-bit value to a 16-bit value can result in data loss if the original value is outside the representable range of `INT`.
 - Converting from a 64-bit value to a 16-bit value can lead to data loss if the original value is outside the representable range of `INT`.
 
-`` - The function block is implemented as a simple function block (`SimpleFB`) and uses an ST algorithm for conversion.
+- The function block is implemented as a simple function block (`SimpleFB`) and uses an ST algorithm for conversion.
 
 The function block has no internal states. The conversion occurs immediately upon an event at the input `REQ`.
 

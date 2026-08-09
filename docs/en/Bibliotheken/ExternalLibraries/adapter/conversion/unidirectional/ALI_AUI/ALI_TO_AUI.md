@@ -14,7 +14,6 @@ Not present – event control is handled by the adapters.
 
 #### **Event Outputs**
 
-Not present – event control is handled by the adapters.
 
 #### **Data Inputs**
 

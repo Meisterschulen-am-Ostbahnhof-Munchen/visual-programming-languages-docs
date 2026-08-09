@@ -60,7 +60,7 @@ The constants `NOT_AVAILABLE_DWM` and `VALID_SIGNAL_DW` are taken from imported 
 - The function block uses a range check by comparing `DWORD_TO_UDINT(IN)` with `VALID_SIGNAL_DW`. This assumes that valid fieldbus signals lie within a specific range of numbers.
 - The conversion is performed without floating-point errors because the DWORD is first converted to UDINT and then to LREAL.
 
-`` - The scaling factor `SCALE` and the offset `OFFSET` can be set during initialization or runtime, but are only used in the REQ algorithm.
+- The scaling factor `SCALE` and the offset `OFFSET` can be set during initialization or runtime, but are only used in the REQ algorithm.
 
 - The function block is implemented as a SimpleFB and is suitable for cyclic processing.
 

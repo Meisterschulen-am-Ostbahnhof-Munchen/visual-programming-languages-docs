@@ -63,7 +63,6 @@ The module is internally based on a logic network that buffers events and data a
 |               /                         |
 (LREAL)--> [IN1]  ======/                          |
 (Event)--> [EI1]  -----/                           |
-          +-----------------------------------------+
 
 * **Adapter Coupling:** This function block is ideally suited for bridging adapter-based communication (e.g., structured fieldbus or sensor couplers) and classic function block structures.
 * **Event-Driven:** The internal use of event flip-flops (`E_D_FF` / `E_D_FF_ANY`) ensures that the output only fires an event when data or the selector state has actually changed.

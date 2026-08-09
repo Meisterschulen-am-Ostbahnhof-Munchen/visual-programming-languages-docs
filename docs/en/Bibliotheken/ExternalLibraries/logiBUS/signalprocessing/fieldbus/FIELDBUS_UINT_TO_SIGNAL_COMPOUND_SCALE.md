@@ -48,7 +48,7 @@ None.
 
 The algorithm `INIT` is empty, but the parameters `SCALE_HIGH`, `SCALE_LOW`, and `OFFSET` are linked to the event via the `With` relationship and can thus be set when `INIT` is called.
 
-`` 2. **Normal Processing** (`REQ`):
+2. **Normal Processing** (`REQ`):
 
 - The input value `IN` is compared to a constant `VALID_SIGNAL_W` (from the imported name `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_W`):
 

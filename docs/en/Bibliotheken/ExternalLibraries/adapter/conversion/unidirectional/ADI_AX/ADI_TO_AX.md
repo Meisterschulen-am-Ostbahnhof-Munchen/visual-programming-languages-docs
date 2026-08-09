@@ -45,7 +45,7 @@ Internally, the function block consists of a single function block **F_NE** of t
 
 1. An incoming event **E1** from the ADI_IN adapter is forwarded to the **REQ** input of **F_NE**.
 
-`` 2. The data value **D1** of the ADI_IN adapter is applied to the **IN1** input of the **F_NE**. The second comparison value, **IN2**, is fixed to the value `DINT#0`.
+2. The data value **D1** of the ADI_IN adapter is applied to the **IN1** input of the **F_NE**. The second comparison value, **IN2**, is fixed to the value `DINT#0`.
 
 3. The **F_NE** compares `IN1 != IN2`. The result (BOOL) is output at the **OUT** output.
 4. After processing is complete, **F_NE.CNF** signals completion. This event is sent to the **E1** input of the AX_OUT adapter, which then passes the output value (also the **OUT** signal) to **D1** of the AX_OUT adapter.

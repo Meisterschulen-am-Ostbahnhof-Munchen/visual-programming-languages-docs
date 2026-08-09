@@ -55,7 +55,7 @@ Procedure:
 - The flip-flop receives the current byte value and outputs it at its output `Q`.
 - Simultaneously, the flip-flop's event `EO` is passed to the AB adapter's event output `OUT.E1`.
 
-`` This ensures that the output byte is only updated when an input bit changes, and that the output is stable and synchronized.
+This ensures that the output byte is only updated when an input bit changes, and that the output is stable and synchronized.
 
 ## Technical Features
 

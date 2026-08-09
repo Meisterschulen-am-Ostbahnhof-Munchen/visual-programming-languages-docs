@@ -40,7 +40,7 @@ The flow within the subapplication is as follows:
 
 1. An event at the adapter input `IN` is forwarded to the splitter `AX_SPLIT_2.IN`.
 
-`` 2. The splitter splits the event between its two outputs:
+2. The splitter splits the event between its two outputs:
 
 - `AX_SPLIT_2.OUT1` → connected to `AX_TP_Q1.IN`
 - `AX_SPLIT_2.OUT2` → connected to `AX_TP_Q2.IN`

@@ -66,7 +66,6 @@ The internal counter behaves like a classic IEC 61131-3 up-down counter:
 - A rising edge at `CD` decrements the counter value by 1.
 - A rising edge at `R` resets the counter value to 0.
 
-The internal counter behaves like a classic IEC 61131-3 up-down counter:
 
 - A rising edge at `CU` increments the counter value by 1.
 - A rising edge at `R` resets the counter value to 0. - The combination of `LD = TRUE` and an event at `PV` loads the current counter value to the value of `PV`.

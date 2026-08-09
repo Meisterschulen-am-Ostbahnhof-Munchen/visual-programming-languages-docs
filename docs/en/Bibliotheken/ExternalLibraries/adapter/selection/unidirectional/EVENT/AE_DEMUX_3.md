@@ -8,7 +8,7 @@
 The function block **AE_DEMUX_3** is a generic AE demultiplexer.
 It forwards an AE value received at the adapter input `IN` to one of three adapter outputs (`OUT1` to `OUT3`). The output is selected using the index `K`, which is evaluated when an event occurs at the input `REQ`.
 
-`` The function block is implemented as a generic function block (GenericClassName `GEN_AE_DEMUX`) and is only specialized for the specific number of outputs at compile time or during instantiation.
+The function block is implemented as a generic function block (GenericClassName `GEN_AE_DEMUX`) and is only specialized for the specific number of outputs at compile time or during instantiation.
 
 ## Interface Structure
 
@@ -48,7 +48,7 @@ It forwards an AE value received at the adapter input `IN` to one of three adapt
 1. The function block waits for an event at input `REQ`.
 2. The event triggers the reading of the integer value from data input `K`.
 
-`` 3. Depending on the value of `K`, the AE value present at adapter socket `IN` is forwarded to one of the three adapter plugs:
+3. Depending on the value of `K`, the AE value present at adapter socket `IN` is forwarded to one of the three adapter plugs:
 
 - `K = 1` → Forwarding to `OUT1`
 - `K = 2` → Forwarding to `OUT2`

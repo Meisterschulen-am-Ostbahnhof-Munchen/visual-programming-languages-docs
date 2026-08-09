@@ -109,7 +109,6 @@ Advanced – Basic knowledge of the 4diac IDE and working with function blocks i
 - Using an OR gate for simultaneous enabling
 - Error handling via a reset mechanism
 
-Advanced – Basic knowledge of the 4diac IDE and working with function blocks is required.
 
 ...``
 ### Prerequisites

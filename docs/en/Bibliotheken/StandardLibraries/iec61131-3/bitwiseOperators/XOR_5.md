@@ -38,7 +38,7 @@ No adapter interfaces are available.
 
 Upon arrival of the REQ event, the function block performs a bitwise XOR operation on all five input values. The result is output to the OUT output, and simultaneously, the CNF event is generated to confirm the completion of the calculation.
 
-`` The XOR operation is performed according to the following principle:
+The XOR operation is performed according to the following principle:
 
 - Each bit position is processed individually.
 - The result bit is 1 if an odd number of input bits at that position are 1.

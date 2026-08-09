@@ -52,7 +52,7 @@ Internally, the component consists of an **E_SWITCH** (event branch) and an **E_
 - A lock event (e.g., from an upstream component via **ILOCK_IN.EO1** or from a downstream component via **ILOCK_OUT.EI1**) is applied to the **Reset** (**R**) of the latch.
 - This immediately resets **Q** to **FALSE**. The toggle operation is interrupted because the **E_SWITCH** now remains in the **Q = FALSE** state and would attempt to set it on the next **CLK** event – however, the lock signal can take effect again.
 
-`` - **Lock Propagation**: Each incoming lock event is simultaneously propagated to the other adapter output:
+- **Lock Propagation**: Each incoming lock event is simultaneously propagated to the other adapter output:
 
 - **ILOCK_IN.EO1** → **ILOCK_OUT.EO1** (to subsequent devices)
 - **ILOCK_OUT.EI1** → **ILOCK_IN.EI1** (to previous devices)

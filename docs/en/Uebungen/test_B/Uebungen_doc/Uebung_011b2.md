@@ -21,7 +21,7 @@ Exercise **Exercise_011b2** performs a simple multiplication of two numeric valu
 - Data output: `IN` (DWORD)
 - Function: Reads the current numeric value of the ISOBUS object "InputNumber_I2" and provides it as a DWORD.
 
-`` - **F\_DWORD\_TO\_UDINT** (Type: `iec61131::conversion::F_DWORD_TO_UDINT`)
+- **F\_DWORD\_TO\_UDINT** (Type: `iec61131::conversion::F_DWORD_TO_UDINT`)
 
 - Event input: `REQ`, Event output: `CNF`
 - Data input: `IN` (DWORD), Data output: `OUT` (UDINT)
@@ -33,7 +33,7 @@ Exercise **Exercise_011b2** performs a simple multiplication of two numeric valu
 - Data inputs: `IN1`, `IN2` (both UDINT), Data output: `OUT` (UDINT)
 - Function: Multiplies the two incoming UDINT values and outputs the product as a UDINT.
 
-`` - **Q\_NumericValue** (Type: `isobus::UT::Q::Q_NumericValue`)
+- **Q\_NumericValue** (Type: `isobus::UT::Q::Q_NumericValue`)
 
 - Parameters: `u16ObjId` = `OutputNumber_N1`
 - Event input: `REQ`
@@ -54,7 +54,7 @@ qzmsdocs q a t` ... 2. **Data Flow**:
 - The outputs `OUT` of the converters (UDINT) are routed to `F_MUL.IN1` (from `I1`) or `F_MUL.IN2` (from `I2`).
 - The product `F_MUL.OUT` is written to the input `u32NewValue` of `Q_NumericValue` and output from there to the bus.
 
-`` The entire logic is event-driven: As soon as a new measured value is received at one of the inputs, the entire chain is processed and the output is updated.
+The entire logic is event-driven: As soon as a new measured value is received at one of the inputs, the entire chain is processed and the output is updated.
 
 ## Summary
 

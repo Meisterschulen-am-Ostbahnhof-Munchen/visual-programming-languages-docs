@@ -17,7 +17,7 @@ This exercise uses various standard and library function blocks within the netwo
 
 This section describes the internal building blocks that are interconnected in the network of this sub-application.
 
-`` - **Internal Function Blocks Used**:
+- **Internal Function Blocks Used**:
 
 - **logiBUS_PI_ID**: `logiBUS::io::PI::logiBUS_PI_ID`
 - This function block provides the interface to the hardware (pulse input).

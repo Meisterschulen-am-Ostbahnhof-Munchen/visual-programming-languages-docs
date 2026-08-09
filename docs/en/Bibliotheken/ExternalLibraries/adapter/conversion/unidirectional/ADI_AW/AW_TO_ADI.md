@@ -44,7 +44,7 @@ The converted DINT value is output via the plug adapter `ADI_OUT`.
 1. An incoming event at socket `AW_IN.E1` triggers the internal function block `F_WORD_TO_DINT` via its event input `REQ`.
 2. Simultaneously, the WORD data value from `AW_IN.D1` is transferred to the data input `IN` of `F_WORD_TO_DINT`.
 3. After the conversion is complete, `F_WORD_TO_DINT` generates an acknowledgment event at `CNF`.
-2. 3. 4. 5. 6. 7 ... 4. This event is forwarded to plug `ADI_OUT.E1`, while the converted DINT value is transferred from `F_WORD_TO_DINT.OUT` to `ADI_OUT.D1`.
+4. This event is forwarded to plug `ADI_OUT.E1`, while the converted DINT value is transferred from `F_WORD_TO_DINT.OUT` to `ADI_OUT.D1`.
 
 The entire process is thus synchronous: A pulse at the WORD adapter results in a pulse at the DINT adapter with the converted value.
 

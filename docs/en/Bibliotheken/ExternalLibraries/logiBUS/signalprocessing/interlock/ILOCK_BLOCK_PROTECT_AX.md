@@ -86,7 +86,7 @@ The function block is set to `FALSE`, and the timer is started via the event `ti
 | `DOWN_STOP` | Wait time after deactivating DOWN. | Algorithm `STOP` (analogous to `UP_STOP`). |
 | `EVAL` | Evaluation after the protection period expires. | No algorithm; the transitions determine the next state based on the current input data. |
 
-`` **Transitions (Simplified):**
+**Transitions (Simplified):**
 
 - `STOP → UP` if `UP_IN.E1` and `UP_IN.D1 = TRUE`
 - `STOP → DOWN` if `DOWN_IN.E1` and `DOWN_IN.D1 = TRUE`

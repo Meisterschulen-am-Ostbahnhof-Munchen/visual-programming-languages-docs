@@ -48,7 +48,7 @@ This exercise uses only the standard function blocks listed above. No other sub-
 - `ASSEMBLE_BYTE_FROM_BOOLS.OUT` → `SPLIT_BYTE_INTO_BOOLS.IN`
 5. The **Split Block** splits the byte back into four individual Boolean values at its output sockets `BIT_00` to `BIT_03`.
 
-`` 6. These values are then connected to the **digital outputs** Q1 to Q4:
+6. These values are then connected to the **digital outputs** Q1 to Q4:
 
 - `SPLIT_BYTE_INTO_BOOLS.BIT_00` → `DigitalOutput_Q1.OUT`
 - `SPLIT_BYTE_INTO_BOOLS.BIT_01` → `DigitalOutput_Q2.OUT`

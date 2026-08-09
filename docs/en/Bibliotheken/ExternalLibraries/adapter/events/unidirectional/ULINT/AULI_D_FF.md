@@ -43,7 +43,7 @@ The function block operates as **clocked memory** and is particularly suitable f
 - The function block is implemented as a **composition** and internally uses the standard function block `iec61499::events::E_D_FF_ANY`, which provides the actual flip-flop functionality.
 - The use of adapters enables **uniform connectivity** to a wide variety of components that support the same adapter type.
 
-`` - No further configuration parameters or initializations are required – the function block operates deterministically after the first clock edge.
+- No further configuration parameters or initializations are required – the function block operates deterministically after the first clock edge.
 
 ## State Overview
 

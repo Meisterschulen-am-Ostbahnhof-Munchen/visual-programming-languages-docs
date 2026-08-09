@@ -16,7 +16,6 @@ Not applicable, as `ST32X` is a user-defined data type and not a function block.
 
 ### **Event Outputs**
 
-Not applicable, as `ST32X` is a user-defined data type and not a function block.
 
 ### **Data Inputs**
 

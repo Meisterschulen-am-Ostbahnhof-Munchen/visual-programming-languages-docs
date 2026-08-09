@@ -37,7 +37,7 @@ Event control is handled via a single event path:
 
 - The function block **Input_LD** triggers the function block **AI_INT_TO_I** (`REQ`) upon the initialization event (`INITO`), causing it to output the constant preset value (INT#5).
 
-`` The logical data connections (adapter connections) link the components as follows:
+The logical data connections (adapter connections) link the components as follows:
 
 - **Digital inputs to counters:**
 

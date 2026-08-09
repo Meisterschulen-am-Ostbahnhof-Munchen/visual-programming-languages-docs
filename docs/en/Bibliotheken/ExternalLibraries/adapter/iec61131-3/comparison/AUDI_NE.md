@@ -40,7 +40,7 @@ The **AUDI_NE** is a composite function block. Internally, it uses the standardi
 - If an event occurs at **IN1.E1** or **IN2.E1**, the signal is forwarded to the internal block **F_NE.REQ**.
 - Simultaneously, the current data values from **IN1.D1** and **IN2.D1** are transferred to **F_NE.IN1** and **F_NE.IN2**.
 
-`` - **F_NE** performs the inequality comparison and outputs the result via **F_NE.OUT** and an acknowledgment event via **F_NE.CNF**.
+- **F_NE** performs the inequality comparison and outputs the result via **F_NE.OUT** and an acknowledgment event via **F_NE.CNF**.
 
 - The acknowledgment event is passed to **OUT.E1**, and the result to **OUT.D1**.
 

@@ -28,7 +28,7 @@ This exercise implements a standard-compliant IEC 61131-3 up/down counter with t
 - After processing (event output `CNF`), the subsequent function blocks `Output_QU` and `Output_QD`, as well as the converter `F_LINT_TO_LREAL`, are triggered.
 - After the conversion, the terminal object `Q_NumericValue_PHYS_LREAL` is updated.
 
-`` 2. **Data Chaining**
+2. **Data Chaining**
 
 - The digital input signals (IN) are connected directly to the corresponding counter inputs:
 * Input_CU.IN → FB_CTUD_LINT.CU

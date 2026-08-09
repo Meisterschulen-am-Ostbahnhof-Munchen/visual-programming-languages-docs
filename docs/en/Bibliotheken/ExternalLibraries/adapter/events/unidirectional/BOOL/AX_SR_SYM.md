@@ -25,7 +25,6 @@ None.
 
 ### **Data Outputs**
 
-None (the output value is provided via an adapter).
 
 ### **Adapter**
 

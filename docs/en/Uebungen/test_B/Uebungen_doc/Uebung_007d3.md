@@ -31,7 +31,7 @@ This event is passed via the event connection to the input `REQ` of `FB_RANDOM`.
 
 The `CNF` event triggers the clock input `CLK` of `E_D_FF_ANY_HYS`. The data value of `FB_RANDOM.VAL` is applied to the data input `D`. Due to the set hysteresis of 0.95, the output `Q` is only set to TRUE if the random value significantly exceeds the previous threshold; if it falls below the threshold, it is reset after a corresponding delay. The output `Q` is a BOOL value.
 
-`` 4. **Type Conversion**
+4. **Type Conversion**
 
 After the flip-flop, the BOOL value is converted to a REAL number (TRUE → 1.0, FALSE → 0.0) via `F_MOVE` (with DataType = REAL). The event for this conversion is provided by `E_D_FF_ANY_HYS.EO`.
 

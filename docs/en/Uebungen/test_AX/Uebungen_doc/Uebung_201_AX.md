@@ -71,7 +71,7 @@ The exercise proceeds as follows:
 3. The interlock logic is executed in `ILOCK_BLOCK_AX`:
 - When `UP_IN` is activated, `UP_OUT` is set to TRUE and `DOWN_OUT` is set to FALSE.
 
-`` - When `DOWN_IN` is activated, `DOWN_OUT` is set to TRUE and `UP_OUT` to FALSE.
+- When `DOWN_IN` is activated, `DOWN_OUT` is set to TRUE and `UP_OUT` to FALSE.
 
 - If both inputs are active simultaneously, the internal logic ensures a defined priority (usually the one detected first).
 4. The output adapters of the interlock block are connected to the output modules:

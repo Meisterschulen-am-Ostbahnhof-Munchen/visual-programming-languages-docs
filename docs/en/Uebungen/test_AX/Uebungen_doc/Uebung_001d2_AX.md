@@ -75,7 +75,7 @@ The inputs I1 and I2 are read via the `logiBUS_IXA` function blocks and passed o
 
 This cross-connection means that output Q1 can only be active when flip-flop Q2 is inactive (and vice versa). This creates a mutual interlock.
 
-`` 3. **Signal Distribution and Negation**
+3. **Signal Distribution and Negation**
 
 - The outputs of the AND gates are split into two paths by the `AX_SPLIT_2` function blocks:
 * One path goes directly to the digital outputs:

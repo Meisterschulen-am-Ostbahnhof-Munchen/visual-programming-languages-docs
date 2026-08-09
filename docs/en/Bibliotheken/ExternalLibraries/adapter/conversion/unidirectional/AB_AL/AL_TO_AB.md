@@ -30,7 +30,6 @@ The function block **AL_TO_AB** is a composite function block that enables unidi
 4. Simultaneously, the converted BYTE value is transferred via the converter's data output `OUT` to the data input `D1` of `AB_OUT`.
 5. The connected receiver on plug `AB_OUT` thus receives the event and the converted data value.
 
-4.
 ## Technical Features
 
 - **Integration of IEC 61131-3**: The conversion uses the standardized function block `F_LWORD_TO_BYTE` from the IEC 61131-3 library. This ensures that the conversion logic is standards-compliant and portable.

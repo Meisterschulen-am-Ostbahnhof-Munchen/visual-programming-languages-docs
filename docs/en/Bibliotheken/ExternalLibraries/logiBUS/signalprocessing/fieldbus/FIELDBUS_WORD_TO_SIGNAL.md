@@ -47,7 +47,7 @@ The module operates using a simple algorithm:
 
 – If the converted value is **less than or equal to** `VALID_SIGNAL_W`, **IN** is directly passed to **OUT** and **VALID** is set to `TRUE`.
 
-`` Otherwise, **OUT** is reset to `16#0000` and **VALID** to `FALSE`.
+Otherwise, **OUT** is reset to `16#0000` and **VALID** to `FALSE`.
 
 4. The **CNF** event is then triggered.
 

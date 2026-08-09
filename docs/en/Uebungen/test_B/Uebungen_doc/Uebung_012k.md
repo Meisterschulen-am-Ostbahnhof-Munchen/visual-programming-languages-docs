@@ -17,7 +17,7 @@ This exercise demonstrates reading a string value from an input source (e.g., a 
 - Parameters: `QI` = `TRUE`, `DEFAULT_VALUE` = `STRING#''`
 - Description: This function block stores a string value under a specific key (`KEY`) and range (`SECTION`) in an INI file. It supports the events `SET` (save), `GET` (load), and `INIT` (initialization).
 
-`` - **`Q_StringValue`**: `isobus::UT::Q::Q_StringValue`
+- **`Q_StringValue`**: `isobus::UT::Q::Q_StringValue`
 
 - Parameters: none (parameters are set via data connections)
 - Description: This function block converts the binary string provided by `INI` into an output format and sends it to the output location identified by `u16ObjId` (e.g., display).
@@ -25,7 +25,7 @@ This exercise demonstrates reading a string value from an input source (e.g., a 
 1. **Initialization**: Upon startup, the `INIT` event of the `INI` function block is triggered. This internally triggers a `GET` event, which loads the last saved value from the INI file.
 2. **Saving a New Value**: When the `StringValue_IS` function block detects a new input value, it sends an event to the `SET` input of `INI`. `INI` then saves the current value under the specified `KEY` and `SECTION` and outputs the event `SETO`.
 
-`` 3. **Reading and Output**: As soon as `INI` completes a `GET` operation (both after INIT and after each SET – however, this is only implemented after INIT here), the event is forwarded via `GETO` to the `REQ` input of `Q_StringValue` and simultaneously to the output `IND` of the subapp. The loaded string is then directly output via `VALUEO` and sent to the output location by `Q_StringValue`.
+3. **Reading and Output**: As soon as `INI` completes a `GET` operation (both after INIT and after each SET – however, this is only implemented after INIT here), the event is forwarded via `GETO` to the `REQ` input of `Q_StringValue` and simultaneously to the output `IND` of the subapp. The loaded string is then directly output via `VALUEO` and sent to the output location by `Q_StringValue`.
 
 ## Program Flow and Connections
 

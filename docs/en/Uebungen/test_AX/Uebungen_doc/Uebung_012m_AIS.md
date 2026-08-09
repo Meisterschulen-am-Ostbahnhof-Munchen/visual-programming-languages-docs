@@ -26,7 +26,7 @@ The subapp has no input/output interfaces of its own (InterfaceList is empty). I
 
 - The constants `KEY_I1_STORE` and `InputString_S1` must be defined as constants in the project and are transferred to the subapp during import.
 
-`` - Execution starts as soon as the AIS adapter provides a new string. The function block then stores this value persistently.
+- Execution starts as soon as the AIS adapter provides a new string. The function block then stores this value persistently.
 
 **Learning Objectives**:
 

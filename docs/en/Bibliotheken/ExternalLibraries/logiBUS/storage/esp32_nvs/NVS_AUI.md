@@ -56,7 +56,7 @@ After initialization, the stored value for the specified key is automatically re
 
 A new value can be received via the input adapter `AUI_IN`. An incoming event (E1) with the associated data (D1) is forwarded to the internal NVS function block, which persistently stores the value under the initialized key.
 
-`` The entire data and event flow is implemented by the embedded function block `NVS` (from the library `logiBUS::storage::esp32_nvs`).
+The entire data and event flow is implemented by the embedded function block `NVS` (from the library `logiBUS::storage::esp32_nvs`).
 
 ## Technical Features
 

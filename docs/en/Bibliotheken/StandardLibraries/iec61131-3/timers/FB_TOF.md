@@ -60,7 +60,7 @@ The FB_TOF function block can be used in various industrial control applications
 
 - **Machine Control**: The function block can be used to ensure that a machine continues to run for a specific period of time after being switched off, for example, to complete processes or to implement safety precautions.
 
-`` - **Lighting Control**: This function block can be used in lighting systems to keep the light on for a specific period of time after the switch is turned off.
+- **Lighting Control**: This function block can be used in lighting systems to keep the light on for a specific period of time after the switch is turned off.
 
 - **Valve Control**: This function block can be used to keep a valve open for a specific period of time after it has closed, for example, to release pressure.
 

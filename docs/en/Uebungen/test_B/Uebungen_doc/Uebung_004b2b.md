@@ -43,7 +43,7 @@ With each button press, the corresponding output toggles its state (on/off).
 
 1. The sub-application receives an event at input `IND`.
 
-`` 2. The internal `E_SWITCH` checks the value of its data input `G` (which is connected to the current output `Q` of `E_SR`):
+2. The internal `E_SWITCH` checks the value of its data input `G` (which is connected to the current output `Q` of `E_SR`):
 
 If `Q = FALSE` (G=0), the event is forwarded to `EO0` and thus to the set input (`S`) of `E_SR`.
 
@@ -53,7 +53,7 @@ If `Q = FALSE` (G=0), the event is forwarded to `EO0` and thus to the set input 
 - On a reset event, `Q = FALSE`.
 4. After the state change, an event is generated at output `EO`, and the new value of `Q` is made available via the output of the sub-application.
 
-`` This results in **toggle behavior**: Each incoming event changes the initial state.
+This results in **toggle behavior**: Each incoming event changes the initial state.
 
 ## Program Flow and Connections
 

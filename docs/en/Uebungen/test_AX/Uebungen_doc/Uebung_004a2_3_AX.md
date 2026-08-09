@@ -16,7 +16,7 @@ The following function blocks are used in the network:
 - Parameters: `QI` = `TRUE`, `Output` = `Output_Q1`
 - Function: Provides the digital output Q1. The output value is set via the adapter input `OUT`.
 
-`` - **DigitalInput_CLK_I1** – Type: `logiBUS::io::DI::logiBUS_IE`
+- **DigitalInput_CLK_I1** – Type: `logiBUS::io::DI::logiBUS_IE`
 
 - Parameters: `QI` = `TRUE`, `Input` = `Input_I1`, `InputEvent` = `BUTTON_SINGLE_CLICK`
 - Task: Detects the button on I1. Each button press triggers the event `BUTTON_SINGLE_CLICK` and sends an IND event to the output.

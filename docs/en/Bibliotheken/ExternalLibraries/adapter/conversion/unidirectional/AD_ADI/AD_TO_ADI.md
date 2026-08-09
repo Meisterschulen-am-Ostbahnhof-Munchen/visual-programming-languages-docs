@@ -39,7 +39,7 @@ This function block encapsulates a call to the IEC 61131-3 conversion function `
 2. Simultaneously, the DWORD data `AD_IN.D1` is passed to input `Convert.IN`.
 3. The conversion function block converts the value into a DINT and signals completion via the event `CNF`.
 
-`` 4. This event is forwarded to plug `ADI_OUT.E1`, and the converted DINT value (`Convert.OUT`) is placed in `ADI_OUT.D1`.
+4. This event is forwarded to plug `ADI_OUT.E1`, and the converted DINT value (`Convert.OUT`) is placed in `ADI_OUT.D1`.
 
 As a result, from the application's perspective, the composite function block behaves like a direct adapter converter without any side effects.
 

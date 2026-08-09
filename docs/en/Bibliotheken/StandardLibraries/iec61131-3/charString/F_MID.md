@@ -32,7 +32,7 @@ The function block `F_MID` extracts a substring from the input string `IN`. The 
 - The function block supports any string type (`ANY_STRING`) and integer type (`ANY_INT`).
 - The function block supports arbitrary string types (`ANY_STRING`) and integer types (`ANY_INT`).
 
-`` - The start position `P` and the length `L` must be valid values within the length of the input string to ensure correct results.
+- The start position `P` and the length `L` must be valid values within the length of the input string to ensure correct results.
 
 1. **Initialization**: The function block waits for a request via `REQ`.
 2. **Processing**: Upon receiving `REQ`, the input data is processed and the substring is extracted.

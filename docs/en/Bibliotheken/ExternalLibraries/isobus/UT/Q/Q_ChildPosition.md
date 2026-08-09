@@ -34,6 +34,20 @@ The **Q_ChildPosition** is a standards-compliant function block for the absolute
 - `s16OldYposition` (INT): Previous Y-position
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` (the child object to move) and `u16ObjIdParent` (the parent object) are subject to **different** validity rules. ISO 11783-6 Annex F only defines which object types are valid as the child — which object types may act as parent is defined separately in Annex B, under each object type's "Allowed commands" list.
+
+**`u16ObjId` — valid child object types (Annex F.16):**
+Container (3000–3999), Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Output String Field (11000–11999), Output Number Field (12000–12999), Output Line (13000–13999), Output Rectangle (14000–14999), Output Ellipse (15000–15999), Output Polygon (16000–16999), Meter (17000–17999), Linear Bar Graph (18000–18999), Arched Bar Graph (19000–19999), Picture Graphic (20000–20499), Object Pointer (27000–27999), Output List Object (37000–37999), External Object Pointer (43000–43999), Animation Object (44000–44999), Scaled Graphic Object (48000–48999), Auxiliary Function/Type2 (29000–29999 / 31000–31999), Auxiliary Input/Type2 (30000–30999 / 32000–32999), Auxiliary Control Designator (33000–33999).
+
+**`u16ObjIdParent` — valid parent object types (Annex B, "Allowed commands"):**
+WorkingSet (B.1), Data Mask (B.2), Alarm Mask (B.3), **Container (B.4)**, Key (B.6), Window Mask, Button, Auxiliary Function (Type 1/2), Auxiliary Input (Type 1/2).
+
+**Not valid as parent:** Soft Key Mask (B.5 does not list the command as allowed) and Animation Object (its children are indexed frames, not X/Y-positioned).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

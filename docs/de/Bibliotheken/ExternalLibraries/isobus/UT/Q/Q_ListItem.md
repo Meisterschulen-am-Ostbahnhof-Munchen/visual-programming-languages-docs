@@ -35,6 +35,17 @@ Der **Q_ListItem** ist ein standardkonformer Funktionsbaustein zur Verwaltung vo
 - `u16OldObjId` (UINT): Vorherige Objekt-ID
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjId` (das Listenobjekt) und `u16NewObjId` (der neue Listeneintrag) unterliegen **unterschiedlichen** Regeln.
+
+**`u16ObjId` — gültige Listenobjekt-Typen (Annex F.42):**
+Input List Field (10000–10999), Output List Object (37000–37999, VT v4+), Animation Object (44000–44999, VT v5+), External Object Definition (41000–41999, VT v5+).
+
+**`u16NewObjId` — neuer Listeneintrag:** Jede beliebige Objekt-ID (der Eintrag zeigt auf das Objekt) oder 0xFFFF (ID_NULL) für einen leeren Eintrag. Die Gültigkeit der neuen Objekt-ID prüft das VT und meldet sie über F.43 zurück (Bit 2 = Invalid New List Item Object ID).
+
+ID_NULL (65535) ist für `u16ObjId` kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

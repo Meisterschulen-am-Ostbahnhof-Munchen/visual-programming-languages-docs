@@ -34,8 +34,17 @@ No explicit data outputs at the FB level. The output data is provided via the ad
 
 | Direction | Name | Type | Comment |
 |---|---|---|---|
-Socket (Input) | `qVisible` | `adapter::types::unidirectional::AB` | Target Visibility: 0 = hidden, 1 = displayed |
+| Socket (Input) | `qVisible` | `adapter::types::unidirectional::AB` | Target Visibility: 0 = hidden, 1 = displayed |
 | Plug (Output) | `qOldVisible` | `adapter::types::unidirectional::AB` | Previous Visibility Value: 0 = hidden, 1 = displayed, 0xFF = undefined |
+
+## Valid Object IDs
+
+The validity rules of the internal base function block `Q_ObjHideShow` apply:
+
+**`u16ObjId` — valid object types (Annex F.2):**
+Container (3000–3999).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
 
 ## Functionality
 

@@ -35,6 +35,13 @@ Der **Q_Size** ist ein standardkonformer Funktionsbaustein zur Größenänderung
 - `u16OldHeight` (UINT): Vorherige Höhe
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16ObjId` — gültige Objekttypen (Anhang F.18, Objekte mit Größen-Attribut):**
+Container (3000–3999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Output String Field (11000–11999), Output Number Field (12000–12999), Output Line (13000–13999), Output Rectangle (14000–14999), Output Ellipse (15000–15999), Output Polygon (16000–16999), Meter (17000–17999), Linear Bar Graph (18000–18999), Arched Bar Graph (19000–19999), Output List Object (37000–37999), Animation Object (44000–44999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

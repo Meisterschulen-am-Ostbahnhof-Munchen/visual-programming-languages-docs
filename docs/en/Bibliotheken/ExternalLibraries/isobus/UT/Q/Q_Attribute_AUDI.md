@@ -42,6 +42,17 @@ The function block **Q_Attribute_AUDI** implements the "Change Attribute" comman
 | u32ValueAttribute | Socket | unidirectional::AUDI | New value for the attribute (32-bit, fed into the FB via the adapter) |
 | u32OldValueAttribute | Plug | unidirectional::AUDI | Old attribute value (32-bit, output by the function block via the adapter) |
 
+## Valid Object IDs
+
+`u16ObjId` (the object whose attribute is changed) and `u8IdAttribute` (the Attribute ID, AID) are subject to **different** validity rules.
+
+**`u16ObjId` — valid object types (Annex F.38):**
+Data Mask (1000–1999), Alarm Mask (2000–2999), Soft Key Mask (4000–4999), Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Auxiliary Function Type 2 (31000–31999).
+
+**`u8IdAttribute` (AID):** Valid attribute IDs are object-type specific and defined in Annex B, in the attribute tables of each object type. An AID with no attribute assigned is rejected by the VT ("Invalid Attribute ID", F.39).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**: After a rising edge at **INIT**, the service is initialized. The required parameters (object ID and attribute ID) are read from the data inputs.

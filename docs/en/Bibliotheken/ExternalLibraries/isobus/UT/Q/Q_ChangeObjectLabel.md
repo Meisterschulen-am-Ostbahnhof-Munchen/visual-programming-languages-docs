@@ -35,6 +35,15 @@ The **Q_ChangeObjectLabel** is a standards-compliant function block for changing
 - `u16OldObIdGrafic` (UINT): Previous graphic object ID
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+The F.50 command addresses, in bytes 2,3, the **Object ID of the object to label** — per Annex F.51 (error bit 0) and B.21 this object must be **listed in the Object Label Reference List** (i.e. any pool object whose ID is an entry of the reference list).
+
+**Implementation note (VTClientHelper):** `iso_is_object_label_refer_list_id` accepts only the **ObjectLabelReferList** range (the Object Label Reference List object's own ID) — a known deviation from the Annex F.50 semantics:
+- **ObjectLabelReferList**: 40000 – 40999
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when sent via `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

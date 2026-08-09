@@ -33,6 +33,12 @@ Der **Q_GetAttribute** ist ein standardkonformer Funktionsbaustein zum Abfragen 
 - `u8OldAID` (USINT): Aktueller Attributwert
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+Der Befehl F.58 ist eine feste 8-Byte-Nachricht (Objekt-ID in Bytes 2,3, Attribut-ID in Byte 4; kein Transport Protocol) und **beschränkt den Objekttyp nicht** — jedes Objekt im Objektpool kann abgefragt werden. Das VT validiert die Objekt-ID und die Attribut-ID und meldet einen Fehler, falls eine davon ungültig ist.
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

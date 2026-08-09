@@ -32,6 +32,12 @@ Der `Q_NumericValue_AUDI` ist ein spezieller ISOBUS-Funktionsbaustein, der es er
 - **u32OldValue** (Plug): `AUDI` - Der alte/aktuelle Wert des Objekts.
 - **u32NewValue** (Socket): `AUDI` - Der neue Wert, der an das ISOBUS-Terminal gesendet werden soll.
 
+## Gültige Objekt-IDs
+
+`u16ObjId` ist für dieselben Objekttypen gültig wie beim umschlossenen Basisbaustein `Q_NumericValue` (Anhang F.22, Objekte mit numerischem Wert-Attribut): Input Boolean Field (7000–7999), Input Number Field (9000–9999), Input List Field (10000–10999), Output Number Field (12000–12999), Meter (17000–17999), Linear Bar Graph (18000–18999), Arched Bar Graph (19000–19999), Number Variable (21000–21999), Object Pointer (27000–27999), Output List Object (37000–37999), External Object Pointer (43000–43999), Animation Object (44000–44999), Scaled Graphic Object (48000–48999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 Der Baustein wird über das `INIT`-Ereignis mit der Objekt-ID `u16ObjId` initialisiert. Sobald ein Ereignis am `u32NewValue`-Socket eintrifft (`u32NewValue.E1`), wird der enthaltene UDINT-Wert (`u32NewValue.D1`) an das ISOBUS-Terminal gesendet, um den angezeigten numerischen Wert zu aktualisieren. Nach erfolgreicher Ausführung wird ein `CNF`-Ereignis ausgelöst, und der alte Wert des Objekts wird über den `u32OldValue`-Plug bereitgestellt.

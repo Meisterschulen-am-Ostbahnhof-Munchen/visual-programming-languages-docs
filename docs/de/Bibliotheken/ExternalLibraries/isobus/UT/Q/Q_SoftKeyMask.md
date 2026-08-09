@@ -51,6 +51,29 @@ Der **Q_SoftKeyMask** ist ein standardkonformer Funktionsbaustein zur Verwaltung
    - `1`: Datenmasken-Verknüpfung
    - `2`: Alarmmasken-Verknüpfung
 
+## Gültige Objekt-IDs
+
+Der Baustein adressiert **zwei verschiedene Objekt-IDs** mit jeweils eigenen Gültigkeitsregeln:
+
+### Gültige Werte für u16DataMaskId (Daten-/Alarmmaske)
+
+Der Change Soft Key Mask-Befehl (Annex F.36) ordnet einer Daten- oder Alarmmaske eine Softkey-Maske zu. Gültig ist `u16DataMaskId`, wenn er in einen der folgenden ISO 11783-6-ID-Bereiche fällt:
+
+| Objekttyp   | ID-Bereich |
+|-------------|------------|
+| DataMask    | 1000 – 1999 |
+| AlarmMask   | 2000 – 2999 |
+
+### Gültige Werte für u16SoftKeyMaskId (Softkey-Maske)
+
+Gültig ist `u16SoftKeyMaskId`, wenn er in den ISO 11783-6-ID-Bereich einer Softkey-Maske fällt:
+
+| Objekttyp   | ID-Bereich |
+|-------------|------------|
+| SoftKeyMask | 4000 – 4999 |
+
+**Hinweis:** ID_NULL (65535) ist kein Befehlsziel, kann aber in INIT zur Deaktivierung des Bausteins verwendet werden. Jede Daten-/Alarmmasken-ID außerhalb der genannten Bereiche oder jede Softkey-Masken-ID, die keine SoftKeyMask ist, ist unabhängig voneinander ungültig.
+
 ## Technische Besonderheiten
 
 ✔ **ISO 11783-6 konform** (F.36)

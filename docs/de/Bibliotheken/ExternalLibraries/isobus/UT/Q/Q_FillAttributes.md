@@ -37,6 +37,14 @@ Der **Q_FillAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - `u16OldFillPatternId` (UINT): Altes Füllmuster
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjId` adressiert das Zielobjekt des Kommandos **F.32** (Change Fill Attributes). Gültig ist ein **Fill-Attributes-Objekt**:
+
+**FillAttributesObject:** 25000–25999
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

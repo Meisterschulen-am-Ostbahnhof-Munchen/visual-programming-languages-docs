@@ -39,6 +39,13 @@ Since the working set is a single object and only exists once, this limitation i
 - `u16OldMaskId` (UINT): Object ID of the previous screen
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+**`u16NewMaskId` — valid mask object types (Annex F.34):**
+Data Mask (1000–1999), Alarm Mask (2000–2999).
+
+ID_NULL (65535) is not a valid command target for the new active mask. Any ID outside these ranges is invalid for commanding.
+
 ## Functionality
 
 1. **Initialization**:

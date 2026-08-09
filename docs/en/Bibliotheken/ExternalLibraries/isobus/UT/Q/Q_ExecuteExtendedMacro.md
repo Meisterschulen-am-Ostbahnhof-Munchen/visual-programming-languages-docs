@@ -29,6 +29,12 @@ The **Q_ExecuteExtendedMacro** is a standards-compliant function block for execu
 - `STATUS` (STRING): Operational status message
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` addresses the Macro object (range **1–999**, 16-bit field in bytes 2,3 of command F.62). Unlike Q_ExecuteMacro (F.48, 8-bit field), all Macro IDs 1–999 can be addressed here.
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when sent via `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

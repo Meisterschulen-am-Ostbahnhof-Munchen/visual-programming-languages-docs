@@ -42,6 +42,12 @@ Der Funktionsbaustein **Q_StringValue_AIS** realisiert den Dienst "Command Chang
 |------------|------------------------------------|----------------------------------|
 | pau8String | adapter::types::unidirectional::AIS | Liefert den neuen String-Wert  |
 
+## Gültige Objekt-IDs
+
+`u16ObjId` ist für dieselben Objekttypen gültig wie beim umschlossenen Basisbaustein `Q_StringValue` (Anhang F.24, Objekte mit String-Wert-Attribut): Input String Field (8000–8999), Output String Field (11000–11999), String Variable (22000–22999), Input Attributes (26000–26999). Auch das Verhalten der variablen F.24-Datenlänge / des ISO-Transport-Protokolls von `Q_StringValue` gilt hier.
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 Der Baustein enthält intern eine Instanz des Funktionsbausteins `Q_StringValue` (aus der Bibliothek `isobus::UT::Q`), die die eigentliche ISOBUS-Kommunikation durchführt. Die Verdrahtung erfolgt folgendermaßen:

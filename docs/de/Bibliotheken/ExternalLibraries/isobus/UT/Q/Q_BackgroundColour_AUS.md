@@ -48,6 +48,12 @@ Der Baustein wird über einen Socket mit der neuen Farbe versorgt und gibt über
   Gibt die vorherige Hintergrundfarbe zurück, nachdem der Änderungsbefehl ausgeführt wurde.  
   Das Ereignis `E1` signalisiert, dass der Wert gültig ist, der Datenwert `D1` enthält die alte Farbe.
 
+## Gültige Objekt-IDs
+
+`u16ObjId` ist für dieselben Objekttypen gültig wie beim umschlossenen Basisbaustein `Q_BackgroundColour` (Anhang F.20, Objekte mit Hintergrundfarben-Attribut): WorkingSet (0), Data Mask (1000–1999), Alarm Mask (2000–2999), Soft Key Mask (4000–4999), Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Output String Field (11000–11999), Output Number Field (12000–12999), Window Mask (34000–34999), Graphics Context (36000–36999), Auxiliary Function (29000–29999), Auxiliary Function Type2 (31000–31999), Auxiliary Input Type2 (32000–32999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**  

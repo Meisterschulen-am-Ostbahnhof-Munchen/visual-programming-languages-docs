@@ -43,6 +43,17 @@ Der Funktionsblock **Q_Attribute_AUDI** implementiert das Kommando „Change Att
 | u32ValueAttribute | Socket | unidirectional::AUDI | Neuer Wert für das Attribut (32-Bit, wird über den Adapter in den FB eingespeist) |
 | u32OldValueAttribute | Plug | unidirectional::AUDI | Alter Wert des Attributs (32-Bit, wird vom FB über den Adapter ausgegeben) |
 
+## Gültige Objekt-IDs
+
+`u16ObjId` (das Objekt, dessen Attribut geändert wird) und `u8IdAttribute` (die Attribut-ID, AID) unterliegen **unterschiedlichen** Gültigkeitsregeln.
+
+**`u16ObjId` — gültige Objekttypen (Annex F.38):**
+DataMask (1000–1999), AlarmMask (2000–2999), SoftKeyMask (4000–4999), Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Auxiliary Function Type 2 (31000–31999).
+
+**`u8IdAttribute` (AID):** Die gültigen Attribut-IDs sind objekttypspezifisch und in Annex B in den Attributtabellen der jeweiligen Objekttypen definiert. Eine AID ohne zugewiesenes Attribut wird vom VT mit „Invalid Attribute ID" (F.39) beantwortet.
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**: Nach einem positiven Flanke an **INIT** wird der Dienst initialisiert. Die dafür benötigten Parameter (Objekt-ID und Attribut-ID) werden aus den Daten-Eingängen gelesen.

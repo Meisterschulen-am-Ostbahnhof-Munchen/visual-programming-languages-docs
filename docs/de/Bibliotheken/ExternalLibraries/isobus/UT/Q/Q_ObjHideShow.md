@@ -33,6 +33,13 @@ Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarke
 - `qOldVisible` (BOOL): Vorheriger Sichtbarkeitsstatus
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16ObjId` — gültige Objekttypen (Annex F.2):**
+Container (3000–3999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein. Jede ID außerhalb dieses Bereichs ist ungültig.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

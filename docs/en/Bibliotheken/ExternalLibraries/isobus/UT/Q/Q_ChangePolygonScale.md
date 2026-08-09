@@ -59,7 +59,8 @@ The **Q_ChangePolygonScale** is a standards-compliant function block for scaling
 |------------|-----------------------------|
 | Width | Horizontal scaling |
 | Height | Vertical scaling |
-| 0xFFFF | Maintain original size |
+
+Per Annex F.54 the VT rescales all polygon points using 32-bit integer math: `new_x = [(old_x × new_width) + (old_width/2)] / old_width` and analogously for `new_y`.
 
 ## Return Codes (s16result)
 

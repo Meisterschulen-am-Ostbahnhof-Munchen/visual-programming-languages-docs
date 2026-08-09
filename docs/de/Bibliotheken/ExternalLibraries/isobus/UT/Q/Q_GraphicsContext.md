@@ -61,13 +61,19 @@ Der **Q_GraphicsContext** ist ein standardkonformer Funktionsbaustein zur Steuer
 
 ## Sub-Befehls Referenz
 
-| ID  | Befehl               | Parameterbeschreibung           |
-|-----|----------------------|---------------------------------|
-| 0x01| Linienstil           | [0]=Stärke, [1]=Typ            |
-| 0x02| Füllmuster           | [0]=Muster-ID                  |
-| 0x03| Transparenz          | [0]=Alpha-Wert (0-255)         |
-| 0x04| Clip-Bereich         | [0-3]=X,Y,W,H Koordinaten      |
-| 0x05| Transformationsmatrix| [0-4]=Matrixparameter         |
+Die Sub-Befehls-IDs entsprechen Tabelle F.1 der ISO 11783-6 (nicht zu verwechseln mit früheren/abgeleiteten Nummerierungen):
+
+| ID  | Befehl                         | Parameterbeschreibung                         |
+|-----|--------------------------------|-----------------------------------------------|
+| 0   | Set Graphics Cursor            | Bytes 5-6 X, 7-8 Y (signed)                   |
+| 1   | Move Graphics Cursor           | Bytes 5-6 X-Offset, 7-8 Y-Offset (signed)     |
+| 2   | Set Foreground Colour          | Byte 5 Farbindex                              |
+| 3   | Set Background Colour          | Byte 5 Farbindex                              |
+| 4   | Set Line Attributes Object ID  | Bytes 5-6 Objekt-ID (65535 = keine Linie)     |
+| 5   | Set Fill Attributes Object ID  | Bytes 5-6 Objekt-ID (65535 = keine Füllung)   |
+| 6   | Set Font Attributes Object ID  | Bytes 5-6 Objekt-ID (65535 = kein Font)       |
+
+⚠ **Variable Datenlänge / Transport Protocol:** Der Befehl F.56 hat eine **variable Datenlänge**. Nachrichten **größer als 8 Byte** werden per **Transport Protocol (TP)** übertragen; kleinere Befehle werden auf 8 Byte mit FF16 aufgefüllt. Mit der 5-Byte-Parameterliste dieses Bausteins (`u8ParaList`, ArraySize 5) entsteht eine 9-Byte-Nachricht (→ TP). Sub-Befehle mit mehr als 5 Parameter-Bytes (z. B. Draw Polygon mit mehreren Punkten, Pan & Zoom Viewport) lassen sich über diesen Baustein daher nicht vollständig ausdrücken.
 
 ## Rückgabecodes (s16result)
 

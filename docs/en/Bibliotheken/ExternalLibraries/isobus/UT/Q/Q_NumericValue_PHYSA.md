@@ -42,6 +42,12 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 | `adapter::types::unidirectional::AX` | `xOver` | Plug (Output) | Signals that the physical value exceeds the upper ISOBUS limit |
 | `adapter::types::unidirectional::AX` | `xUnder` | Plug (Output) | Signals that the physical value falls below the lower ISOBUS limit |
 
+## Valid Object IDs
+
+`stObj.u16ObjId` is valid for the same object types as the wrapped base block `Q_NumericValue_PHYS` / `Q_NumericValue` (Annex F.22, objects with numeric value attribute): Input Boolean Field (7000–7999), Input Number Field (9000–9999), Input List Field (10000–10999), Output Number Field (12000–12999), Meter (17000–17999), Linear Bar Graph (18000–18999), Arched Bar Graph (19000–19999), Number Variable (21000–21999), Object Pointer (27000–27999), Output List Object (37000–37999), External Object Pointer (43000–43999), Animation Object (44000–44999), Scaled Graphic Object (48000–48999).
+
+ID_NULL (65535) is not a command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. After the **INIT** event, the function block is initialized with the object pool properties defined in `stObj`.

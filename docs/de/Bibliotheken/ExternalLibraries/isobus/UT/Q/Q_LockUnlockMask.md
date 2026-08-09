@@ -36,6 +36,14 @@ Der **Q_LockUnlockMask** ist ein standardkonformer Funktionsbaustein zur Steueru
 - `u16OldLockTimeoutMs` (UINT): Vorheriger Timeout
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16MaskId` adressiert die zu sperrende/entsperrende Maske (F.46). Gültig sind:
+
+**DataMask (1000–1999)** und **WindowMask / User-Layout Data Mask (34000–34999)**.
+
+ID_NULL (65535) ist kein gültiges Kommandoziel — das Kommando wird vom VT mit einem Fehlercode beantwortet (die Maske muss der aktuell sichtbaren Maske entsprechen).
+
 ## Funktionsweise
 
 1. **Initialisierung**:

@@ -57,6 +57,7 @@ Der **Q_ChangePolygonPoint** ist ein standardkonformer Funktionsbaustein zur Mod
 ✔ **ISO 11783-6 konform** (F.52)
 ✔ **Präzise Koordinatensteuerung** (16-bit)
 ✔ **Indexbasierter Zugriff** (0-255 Punkte)
+✔ **Ein Punkt pro Befehl** (feste 8-Byte-Nachricht, kein Transport Protocol)
 ✔ **Echtzeitfähige** Verarbeitung
 
 ## Koordinatenbereich

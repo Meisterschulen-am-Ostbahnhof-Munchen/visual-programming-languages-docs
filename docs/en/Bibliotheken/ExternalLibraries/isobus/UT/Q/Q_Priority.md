@@ -31,6 +31,14 @@ The **Q_Priority** is a standards-compliant function block for priority control 
 - `u8OldPriority` (USINT): Previous priority
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` addresses the **Alarm Mask** whose priority is changed (F.40):
+
+**AlarmMask:** 2000–2999
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

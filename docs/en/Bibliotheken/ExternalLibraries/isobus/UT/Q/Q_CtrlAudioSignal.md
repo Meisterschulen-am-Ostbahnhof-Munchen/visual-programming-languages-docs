@@ -6,6 +6,8 @@
 ## Introduction
 
 The **Q_CtrlAudioSignal** is a standards-compliant function block for controlling audio devices in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.10) specification for agricultural tax systems.
+
+The F.10 command addresses the VT's **audio device** directly — it does **not reference any object**, so this block has no Object ID input. **Activations = 0** terminates any audio in process from the originating Working Set (frequency and duration values are ignored); 1–255 sets the number of audio activations.
 ![Q_CtrlAudioSignal](Q_CtrlAudioSignal.svg)
 
 ## Interface Structure

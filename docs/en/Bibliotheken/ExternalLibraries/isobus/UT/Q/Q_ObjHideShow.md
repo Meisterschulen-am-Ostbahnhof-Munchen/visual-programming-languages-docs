@@ -31,6 +31,13 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 - `qOldVisible` (BOOL): Previous visibility status
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+**`u16ObjId` — valid object types (Annex F.2):**
+Container (3000–3999).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`. Any ID outside this range is invalid for commanding.
+
 ## Functionality
 
 1. **Initialization**:

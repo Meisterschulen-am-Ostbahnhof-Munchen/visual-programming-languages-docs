@@ -33,6 +33,13 @@ Der **Q_NumericValue** ist ein standardkonformer Funktionsbaustein zur Änderung
 - `u32OldValue` (UDINT): Vorheriger numerischer Wert
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16ObjId` — gültige Objekttypen (Anhang F.22, Objekte mit numerischem Wert-Attribut):**
+Input Boolean Field (7000–7999), Input Number Field (9000–9999), Input List Field (10000–10999), Output Number Field (12000–12999), Meter (17000–17999), Linear Bar Graph (18000–18999), Arched Bar Graph (19000–19999), Number Variable (21000–21999), Object Pointer (27000–27999), Output List Object (37000–37999), External Object Pointer (43000–43999), Animation Object (44000–44999), Scaled Graphic Object (48000–48999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

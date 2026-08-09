@@ -8,6 +8,8 @@
 
 Der **Q_SetAudioVolume** ist ein standardkonformer Funktionsbaustein zur Lautstärkeregelung in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.12) Spezifikation für VT-Audiosteuerung.
 
+Der Befehl F.12 adressiert direkt das **Audiogerät** des VT — er referenziert **kein Objekt**, daher besitzt dieser Baustein keinen Objekt-ID-Eingang. Die Nachricht hat eine feste Länge von 8 Byte; Byte 2 enthält den Lautstärkeprozentsatz (0 % – 100 %).
+
 ![Q_SetAudioVolume](Q_SetAudioVolume.svg)
 
 ## Schnittstellenstruktur

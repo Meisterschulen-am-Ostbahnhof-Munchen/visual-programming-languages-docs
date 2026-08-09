@@ -37,6 +37,15 @@ This function block does not have its own data outputs. The old visibility value
 | Socket | `qVisible` | `unidirectional::AX` | Input of the new visibility value (0 = hidden, 1 = shown) |
 | Plug | `qOldVisible` | `unidirectional::AB` | Output of the previous visibility value (0/1/0xFF) |
 
+## Valid Object IDs
+
+The validity rules of the internal base function block `Q_ObjHideShow` apply:
+
+**`u16ObjId` — valid object types (Annex F.2):**
+Container (3000–3999).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. The function block is initialized via the event `INIT`, and the object ID (`u16ObjId`) is passed to the internal function block `Q_ObjHideShow`.

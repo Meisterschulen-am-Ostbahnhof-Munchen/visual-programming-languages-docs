@@ -43,6 +43,14 @@ Der Funktionsblock Q_Priority_AUS dient zur Änderung der Priorität einer Alarm
 | u8Priority | AUS (unidirectional) | Socket | Neue Priorität (wird über den Adapter gesendet) |
 | u8OldPriority | AUS (unidirectional) | Plug | Alte Priorität (wird über den Adapter empfangen) |
 
+## Gültige Objekt-IDs
+
+Der Baustein kapselt **Q_Priority** (F.40). `u16ObjId` adressiert die **AlarmMask**, deren Priorität geändert wird:
+
+**AlarmMask:** 2000–2999
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 Nach dem Auslösen von `INIT` mit der gültigen Objekt-ID der Alarmmaske initialisiert der Baustein die interne Kommunikation. Sobald über den Adapter `u8Priority` ein Ereignis eintrifft, wird der Dienst zur Prioritätsänderung ausgeführt. Der Baustein sendet die neue Priorität an den virtuellen Terminal und gibt nach Abschluss die Bestätigung über `CNF` mit dem Status und dem Ergebniswert aus. Gleichzeitig wird über den Adapter `u8OldPriority` die bisherige Priorität (sofern verfügbar) zurückgegeben.

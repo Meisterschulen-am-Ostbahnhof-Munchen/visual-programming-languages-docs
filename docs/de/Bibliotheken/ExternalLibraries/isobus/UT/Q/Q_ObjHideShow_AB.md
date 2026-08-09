@@ -38,6 +38,15 @@ Keine expliziten Datenausgänge auf FB-Ebene. Die Ausgangsdaten werden über den
 | Socket (Eingang) | `qVisible` | `adapter::types::unidirectional::AB` | Sollwert der Sichtbarkeit: 0 = versteckt, 1 = angezeigt |
 | Plug (Ausgang) | `qOldVisible` | `adapter::types::unidirectional::AB` | Alter Wert der Sichtbarkeit: 0 = versteckt, 1 = angezeigt, 0xFF = undefiniert |
 
+## Gültige Objekt-IDs
+
+Es gelten die Gültigkeitsregeln des internen Basisbausteins `Q_ObjHideShow`:
+
+**`u16ObjId` — gültige Objekttypen (Annex F.2):**
+Container (3000–3999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**  

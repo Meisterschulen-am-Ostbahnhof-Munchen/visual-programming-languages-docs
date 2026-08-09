@@ -6,6 +6,8 @@
 ## Introduction
 
 The **Q_SetAudioVolume** is a standards-compliant function block for volume control in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.12) specification for VT audio control.
+
+The F.12 command addresses the VT's **audio device** directly — it does **not reference any object**, so this block has no Object ID input. The message has a fixed length of 8 bytes; byte 2 carries the volume percentage (0% – 100%).
 ![Q_SetAudioVolume](Q_SetAudioVolume.svg)
 
 ## Interface Structure

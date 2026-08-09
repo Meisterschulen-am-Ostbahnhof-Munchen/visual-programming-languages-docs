@@ -53,6 +53,12 @@ Returns the previous background color after the change command has been executed
 
 The event `E1` signals that the value is valid; the data value `D1` contains the old color.
 
+## Valid Object IDs
+
+`u16ObjId` is valid for the same object types as the wrapped base block `Q_BackgroundColour` (Annex F.20, objects with background colour attribute): WorkingSet (0), Data Mask (1000–1999), Alarm Mask (2000–2999), Soft Key Mask (4000–4999), Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Output String Field (11000–11999), Output Number Field (12000–12999), Window Mask (34000–34999), Graphics Context (36000–36999), Auxiliary Function (29000–29999), Auxiliary Function Type2 (31000–31999), Auxiliary Input Type2 (32000–32999).
+
+ID_NULL (65535) is not a command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**

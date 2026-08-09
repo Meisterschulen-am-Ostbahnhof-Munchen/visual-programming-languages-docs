@@ -63,7 +63,8 @@ Der **Q_ChangePolygonScale** ist ein standardkonformer Funktionsbaustein zur Ska
 |------------|-----------------------------|
 | Breite     | Horizontale Skalierung      |
 | Höhe       | Vertikale Skalierung        |
-| 0xFFFF     | Ursprungsgröße beibehalten  |
+
+Die VT skaliert gemäß Annex F.54 alle Polygonpunkte mit 32-Bit-Integer-Arithmetik: `new_x = [(old_x × new_width) + (old_width/2)] / old_width` und analog für `new_y`.
 
 ## Rückgabecodes (s16result)
 

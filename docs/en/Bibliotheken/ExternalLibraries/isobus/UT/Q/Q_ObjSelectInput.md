@@ -31,6 +31,13 @@ The **Q_ObjSelectInput** is a standards-compliant function block for the program
 - `u8OldOption` (USINT): Previous selection option
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+**`u16ObjId` — valid object types (Annex F.6):**
+Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`. Any ID outside these ranges is invalid for commanding.
+
 ## Functionality
 
 1. **Initialization**:

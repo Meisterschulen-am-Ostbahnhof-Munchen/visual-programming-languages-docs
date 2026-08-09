@@ -40,6 +40,13 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 - `u16OldMaskId` (UINT): Objekt-ID der vorherigen Maske
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16NewMaskId` — gültige Maskenobjekttypen (Annex F.34):**
+Data Mask (1000–1999), Alarm Mask (2000–2999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel für die neue aktive Maske. Jede ID außerhalb dieser Bereiche ist ungültig.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

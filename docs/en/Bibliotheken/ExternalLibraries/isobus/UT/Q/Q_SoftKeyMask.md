@@ -47,6 +47,29 @@ The **Q_SoftKeyMask** is a standards-compliant function block for managing softk
 - `1`: Data Mask Link
 - `2`: Alarm Mask Link
 
+## Valid Object IDs
+
+The function block addresses **two distinct Object IDs**, each with its own validity rules:
+
+### Valid values for u16DataMaskId (data or alarm mask)
+
+The Change Soft Key Mask command (Annex F.36) associates a Soft Key Mask with a Data Mask or an Alarm Mask. `u16DataMaskId` is valid if it falls within one of the following ISO 11783-6 ID ranges:
+
+| Object type | ID range |
+|-------------|----------|
+| DataMask    | 1000 – 1999 |
+| AlarmMask   | 2000 – 2999 |
+
+### Valid values for u16SoftKeyMaskId (soft key mask)
+
+`u16SoftKeyMaskId` is valid if it falls within the ISO 11783-6 ID range of a Soft Key Mask:
+
+| Object type | ID range |
+|-------------|----------|
+| SoftKeyMask | 4000 – 4999 |
+
+**Note:** ID_NULL (65535) is not a command target but can be used in INIT to deactivate the FB. Any data/alarm mask ID outside the ranges above, or any soft key mask ID that is not a SoftKeyMask, is invalid for commanding — independent of each other.
+
 ## Technical Features
 
 ✔ **ISO 11783-6 compliant** (F.36)

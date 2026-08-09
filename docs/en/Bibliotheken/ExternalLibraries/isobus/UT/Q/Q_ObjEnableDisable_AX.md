@@ -37,6 +37,15 @@ No direct data outputs; the previous state is output via the adapter plug `qOldA
 | `qAbility` | `adapter::types::unidirectional::AX` | Socket | Receives the Enable/Disable command (0 = disable, 1 = enable, 0xFF = undefined). |
 | `qOldAbility` | `adapter::types::unidirectional::AB` | Plug | Returns the object's previous state (same encoding). |
 
+## Valid Object IDs
+
+The validity rules of the internal base function block `Q_ObjEnableDisable` apply:
+
+**`u16ObjId` — valid object types (Annex F.4):**
+Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Animation Object (44000–44999).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**

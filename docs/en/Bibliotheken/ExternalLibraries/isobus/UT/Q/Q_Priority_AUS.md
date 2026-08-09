@@ -41,6 +41,14 @@ The Q_Priority_AUS function block is used to change the priority of an alarm mas
 | u8Priority | OFF (unidirectional) | Socket | New priority (sent via the adapter) |
 | u8OldPriority | OFF (unidirectional) | Plug | Old priority (received via the adapter) |
 
+## Valid Object IDs
+
+The function block wraps **Q_Priority** (F.40). `u16ObjId` addresses the **Alarm Mask** whose priority is changed:
+
+**AlarmMask:** 2000–2999
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 After triggering `INIT` with the valid object ID of the alarm mask, the function block initializes the internal communication. As soon as an event arrives via the `u8Priority` adapter, the service for changing the priority is executed. The module sends the new priority to the virtual terminal and, upon completion, outputs confirmation via `CNF`, including the status and result value. Simultaneously, the previous priority (if available) is returned via the adapter `u8OldPriority`.

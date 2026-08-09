@@ -35,6 +35,14 @@ The **Q_LineAttributes** is a standards-compliant function module for modifying 
 - `u16OldLineArt` (UINT): Old line style
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` addresses the target object of the **F.30** command (Change Line Attributes). Valid is a **Line Attributes object**:
+
+**LineAttributesObject:** 24000–24999
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

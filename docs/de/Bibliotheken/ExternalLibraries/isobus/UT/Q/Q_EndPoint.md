@@ -37,6 +37,13 @@ Der **Q_EndPoint** ist ein standardkonformer Funktionsbaustein zur Steuerung von
 - `u8OldLineDirection` (USINT): Vorherige Linienrichtung
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16ObjId` — gültiger Objekttyp (Anhang F.26, Output-Line-Objekt):**
+Output Line (13000–13999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

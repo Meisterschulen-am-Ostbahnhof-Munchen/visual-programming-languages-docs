@@ -29,6 +29,12 @@ The **Q_ExecuteMacro** is a standards-compliant function block for executing mac
 - `STATUS` (STRING): Operational status message
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` addresses the Macro object. Annex A defines the range 1–999, but the F.48 command carries the Macro Object ID in only a **single byte** (Byte 2). This FB can therefore address only **IDs 1–255** (values > 255 are truncated). Use Q_ExecuteExtendedMacro (F.62) for Macro IDs 256–999.
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when sent via `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

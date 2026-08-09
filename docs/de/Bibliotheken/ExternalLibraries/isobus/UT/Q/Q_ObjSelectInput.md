@@ -33,6 +33,13 @@ Der **Q_ObjSelectInput** ist ein standardkonformer Funktionsbaustein zur program
 - `u8OldOption` (USINT): Vorherige Auswahloption
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16ObjId` — gültige Objekttypen (Annex F.6):**
+Key (5000–5999), Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein. Jede ID außerhalb dieser Bereiche ist ungültig.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

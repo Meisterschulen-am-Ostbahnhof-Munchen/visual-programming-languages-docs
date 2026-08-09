@@ -35,6 +35,13 @@ The **Q_EndPoint** is a standards-compliant function block for controlling line 
 - `u8OldLineDirection` (USINT): Previous Line Direction
 - `s16result` (INT): ISO-compliant Result Code
 
+## Valid Object IDs
+
+**`u16ObjId` — valid object type (Annex F.26, Output Line object):**
+Output Line (13000–13999).
+
+ID_NULL (65535) is not a command target but deactivates the FB when used with `INIT`. Any ID outside these ranges is invalid for commanding.
+
 ## Functionality
 
 1. **Initialization**:

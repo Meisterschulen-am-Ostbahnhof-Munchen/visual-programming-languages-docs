@@ -33,6 +33,17 @@ The **Q_ListItem** is a standards-compliant function module for managing list en
 - `u16OldObjId` (UINT): Previous object ID
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` (the list object) and `u16NewObjId` (the new list item) are subject to **different** rules.
+
+**`u16ObjId` — valid list object types (Annex F.42):**
+Input List Field (10000–10999), Output List Object (37000–37999, VT v4+), Animation Object (44000–44999, VT v5+), External Object Definition (41000–41999, VT v5+).
+
+**`u16NewObjId` — new list item:** any object ID (the item points to that object) or 0xFFFF (ID_NULL) to set an empty item. The validity of the new object ID is verified by the VT and reported back via F.43 (bit 2 = Invalid New List Item Object ID).
+
+ID_NULL (65535) is not a valid command target for `u16ObjId` but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

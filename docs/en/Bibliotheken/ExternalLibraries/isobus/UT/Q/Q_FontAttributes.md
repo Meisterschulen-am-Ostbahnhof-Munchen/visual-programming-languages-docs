@@ -37,6 +37,14 @@ The **Q_FontAttributes** is a standards-compliant function module for modifying 
 - `u8OldFontStyle` (USINT): Old font style
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+`u16ObjId` addresses the target object of the **F.28** command (Change Font Attributes). Valid is a **Font Attributes object**:
+
+**FontAttributesObject:** 23000–23999
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

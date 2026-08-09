@@ -33,6 +33,15 @@ Der **Q_StringValue** ist ein standardkonformer Funktionsbaustein zur dynamische
 - `pau8OldString` (STRING): Vorheriger Textwert
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+**`u16ObjId` — gültige Objekttypen (Anhang F.24, Objekte mit String-Wert-Attribut):**
+Input String Field (8000–8999), Output String Field (11000–11999), String Variable (22000–22999), Input Attributes (26000–26999).
+
+**Datenlänge / Transport-Protokoll:** Das F.24-Kommando hat eine **variable Datenlänge** (Kommando-Frame: Objekt-ID, Anzahl String-Bytes, String-Wert). Strings, die in eine einzelne CAN-Nachricht passen, werden direkt gesendet; längere Strings werden über das ISO 11783 **Transport-Protokoll** übertragen. Der übertragene String darf laut Anhang F.24 kürzer sein als das Längen-Attribut des Zielobjekts (das VT füllt mit Leerzeichen auf), darf es aber nicht überschreiten.
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

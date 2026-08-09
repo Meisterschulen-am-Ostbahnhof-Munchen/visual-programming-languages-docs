@@ -53,6 +53,7 @@ The **Q_ChangePolygonPoint** is a standards-compliant function block for modifyi
 ✔ **ISO 11783-6 compliant** (F.52)
 ✔ **Precise coordinate control** (16-bit)
 ✔ **Index-based access** (0-255 points)
+✔ **One point per command** (fixed 8-byte message, no Transport Protocol)
 ✔ **Real-time processing**
 
 ## Coordinate Range

@@ -37,6 +37,14 @@ Der **Q_LineAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - `u16OldLineArt` (UINT): Alter Linienstil
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjId` adressiert das Zielobjekt des Kommandos **F.30** (Change Line Attributes). Gültig ist ein **Line-Attributes-Objekt**:
+
+**LineAttributesObject:** 24000–24999
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

@@ -40,6 +40,12 @@ The function block **Q_StringValue_AIS** implements the "Command Change String V
 |------------|------------------------------------|----------------------------------|
 | pau8String | adapter::types::unidirectional::AIS | Returns the new string value |
 
+## Valid Object IDs
+
+`u16ObjId` is valid for the same object types as the wrapped base block `Q_StringValue` (Annex F.24, objects with string value attribute): Input String Field (8000–8999), Output String Field (11000–11999), String Variable (22000–22999), Input Attributes (26000–26999). The F.24 variable data length / ISO transport protocol behaviour of `Q_StringValue` also applies.
+
+ID_NULL (65535) is not a command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 The function block internally contains an instance of the function block `Q_StringValue` (from the library `isobus::UT::Q`), which performs the actual ISOBUS communication. The wiring is as follows:

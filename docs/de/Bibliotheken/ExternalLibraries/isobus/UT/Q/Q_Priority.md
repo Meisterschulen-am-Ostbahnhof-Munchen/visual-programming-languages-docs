@@ -33,6 +33,14 @@ Der **Q_Priority** ist ein standardkonformer Funktionsbaustein zur Prioritätsst
 - `u8OldPriority` (USINT): Vorherige Priorität
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjId` adressiert die **AlarmMask**, deren Priorität geändert wird (F.40):
+
+**AlarmMask:** 2000–2999
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

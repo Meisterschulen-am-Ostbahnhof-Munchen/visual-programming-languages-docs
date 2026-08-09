@@ -31,6 +31,15 @@ The **Q_StringValue** is a standards-compliant function block for dynamic text u
 - `pau8OldString` (STRING): Previous text value
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+**`u16ObjId` — valid object types (Annex F.24, objects with string value attribute):**
+Input String Field (8000–8999), Output String Field (11000–11999), String Variable (22000–22999), Input Attributes (26000–26999).
+
+**Data length / Transport Protocol:** The F.24 command has a **variable data length** (command frame: Object ID, string byte count, string value). Strings that fit into a single CAN message are sent directly; longer strings are transmitted using the ISO 11783 **transport protocol**. Per Annex F.24 the transferred string may be shorter than the target object's length attribute (the VT pads it with space characters), but the number of transferred bytes shall not exceed the target object's length attribute.
+
+ID_NULL (65535) is not a command target but deactivates the FB when used with `INIT`. Any ID outside these ranges is invalid for commanding.
+
 ## Functionality
 
 1. **Initialization**:

@@ -39,6 +39,14 @@ Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - `u8OldFontStyle` (USINT): Alter Schriftstil
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjId` adressiert das Zielobjekt des Kommandos **F.28** (Change Font Attributes). Gültig ist ein **Font-Attributes-Objekt**:
+
+**FontAttributesObject:** 23000–23999
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

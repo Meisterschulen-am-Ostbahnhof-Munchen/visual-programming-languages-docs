@@ -31,6 +31,12 @@ Der **Q_ExecuteExtendedMacro** ist ein standardkonformer Funktionsbaustein zur A
 - `STATUS` (STRING): Betriebsstatusmeldung
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjId` adressiert das Macro-Objekt (Bereich **1–999**, 16-Bit-Feld in Bytes 2,3 des Befehls F.62). Im Gegensatz zu Q_ExecuteMacro (F.48, 8-Bit-Feld) können hier alle Macro-IDs 1–999 angesprochen werden.
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**:

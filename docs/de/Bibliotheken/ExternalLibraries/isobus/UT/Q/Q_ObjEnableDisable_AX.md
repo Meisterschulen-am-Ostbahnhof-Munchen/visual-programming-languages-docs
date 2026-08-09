@@ -38,6 +38,15 @@ Keine direkten Datenausgänge; der alte Zustand wird über den Adapter-Plug `qOl
 | `qAbility` | `adapter::types::unidirectional::AX` | Socket | Empfängt den Enable/Disable-Befehl (0 = disable, 1 = enable, 0xFF = undefined). |
 | `qOldAbility` | `adapter::types::unidirectional::AB` | Plug | Gibt den vorherigen Zustand des Objekts zurück (gleiche Codierung). |
 
+## Gültige Objekt-IDs
+
+Es gelten die Gültigkeitsregeln des internen Basisbausteins `Q_ObjEnableDisable`:
+
+**`u16ObjId` — gültige Objekttypen (Annex F.4):**
+Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Animation Object (44000–44999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. **Initialisierung**  

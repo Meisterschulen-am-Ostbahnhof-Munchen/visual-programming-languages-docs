@@ -31,6 +31,12 @@ The **Q_GetAttribute** is a standards-compliant function module for querying obj
 - `u8OldAID` (USINT): Current attribute value
 - `s16result` (INT): ISO-compliant result code
 
+## Valid Object IDs
+
+The F.58 command is a fixed 8-byte message (Object ID in bytes 2,3, Attribute ID in byte 4; no Transport Protocol) and places **no restriction on the object type** — any object in the object pool can be queried. The VT validates the Object ID and the Attribute ID and returns an error response if either is invalid.
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when sent via `INIT`.
+
 ## Functionality
 
 1. **Initialization**:

@@ -32,6 +32,15 @@ Der **Q_SelectColourMap** ist ein standardkonformer Funktionsbaustein zur Verwal
 - `u16OldObjIdColourMap` (UINT): Vorherige Farbpaletten-ID
 - `s16result` (INT): ISO-konformer Ergebniscode
 
+## Gültige Objekt-IDs
+
+`u16ObjIdColourMap` adressiert (Bytes 2,3) laut Annex F.60:
+- **ColourMap**: 39000 – 39999 (VT ab Version 4)
+- **ColourPalette**: 45000 – 45999 (VT ab Version 6, Annex F.60)
+- **FFFF16**: stellt die Standard-Farbtabelle wieder her (A.3)
+
+**Implementierungshinweis (VTClientHelper):** `iso_is_colour_map_id` akzeptiert nur den ColourMap-Bereich. Zudem wird ID_NULL (65535) von `cmd_select_colour_map_or_palette` abgefangen und mit VT_E_NO_ERR (0) beantwortet, ohne einen Befehl an das VT zu senden — der dokumentierte FFFF-Wert zum Wiederherstellen der Standardpalette funktioniert daher derzeit nicht (bekannte Abweichung).
+
 ## Funktionsweise
 
 1. **Initialisierung**:

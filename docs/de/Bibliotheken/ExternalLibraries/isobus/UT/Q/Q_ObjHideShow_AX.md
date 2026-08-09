@@ -39,6 +39,15 @@ Der Baustein besitzt keine eigenen Datenausgänge. Der alte Sichtbarkeitswert wi
 | Socket   | `qVisible`    | `unidirectional::AX`            | Eingabe des neuen Sichtbarkeitswerts (0 = hidden, 1 = shown) |
 | Plug     | `qOldVisible` | `unidirectional::AB`            | Ausgabe des bisherigen Sichtbarkeitswerts (0/1/0xFF)       |
 
+## Gültige Objekt-IDs
+
+Es gelten die Gültigkeitsregeln des internen Basisbausteins `Q_ObjHideShow`:
+
+**`u16ObjId` — gültige Objekttypen (Annex F.2):**
+Container (3000–3999).
+
+ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.
+
 ## Funktionsweise
 
 1. Über das Ereignis `INIT` wird der Baustein initialisiert und die Objekt‑ID (`u16ObjId`) an den internen FB `Q_ObjHideShow` übergeben.

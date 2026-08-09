@@ -37,6 +37,15 @@ No dedicated data outputs – output data is provided via the adapter plug.
 | **Socket** `qAbility` | Input | Unidirectional AB adapter: receives the command (BYTE). `0` = disable, `1` = enable, `0xFF` = undefined. |
 | **Plug** `qOldAbility` | Output | Unidirectional AB adapter: returns the previous state of the object (same encoding). |
 
+## Valid Object IDs
+
+The validity rules of the internal base function block `Q_ObjEnableDisable` apply:
+
+**`u16ObjId` — valid object types (Annex F.4):**
+Button (6000–6999), Input Boolean Field (7000–7999), Input String Field (8000–8999), Input Number Field (9000–9999), Input List Field (10000–10999), Animation Object (44000–44999).
+
+ID_NULL (65535) is not a valid command target but deactivates the FB when used with `INIT`.
+
 ## Functionality
 
 The FB acts as a bridge between an AB adapter (BYTE) and the internal function block `Q_ObjEnableDisable`. The processes are as follows:

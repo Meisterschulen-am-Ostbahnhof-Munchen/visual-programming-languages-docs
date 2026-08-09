@@ -100,10 +100,23 @@ Die Verbindungen im Detail:
 
 **Ablaufdiagramm (vereinfacht):**
 
+```mermaid
+flowchart TD
+    A["F1 (loslassen)"] --> B["Setze SR1<br/>Zylinder 1 fährt aus"]
+    C["F2 (drücken)"] --> D["Rücksetze SR1<br/>Zylinder 1 fährt ein"]
+    C --> E["Setze SR2<br/>Zylinder 2 fährt aus"]
+    F["F3 (drücken)"] --> G["Rücksetze SR2<br/>Zylinder 2 fährt ein"]
 ```
-F1 (loslassen)  → Setze SR1 (Zyl1 aus)
-F2 (drücken)    → Rücksetze SR1 (Zyl1 ein) + Setze SR2 (Zyl2 aus)
-F3 (drücken)    → Rücksetze SR2 (Zyl2 ein)
+
+Als Zustandsdiagramm sieht die Spiegelabfolge wie folgt aus:
+
+```mermaid
+stateDiagram-v2
+    state "Zylinder 1 ausgefahren" as cyl1_out
+    state "Zylinder 2 ausgefahren" as cyl2_out
+    [*] --> cyl1_out: F1 (loslassen)
+    cyl1_out --> cyl2_out: F2 (drücken)
+    cyl2_out --> [*]: F3 (drücken)
 ```
 
 **Lernziele:**

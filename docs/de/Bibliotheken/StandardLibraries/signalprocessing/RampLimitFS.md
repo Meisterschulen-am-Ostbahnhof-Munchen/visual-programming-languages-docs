@@ -13,6 +13,7 @@ Der Funktionsblock `RampLimitFS` dient zur schrittweisen Erhöhung oder Verringe
 
 ### **Ereignis-Eingänge**
 
+- `INIT`: Initialisiert alle Dateneingänge (`PV`, `VAL_ZERO`, `SLOW`, `FAST`, `VAL_FULL`) gemeinsam und setzt `OUT` auf `VAL_ZERO`. **Muss vor jedem anderen Ereignis einmal ausgelöst werden** — ohne `INIT` bleibt z. B. `VAL_FULL` auf seinem Vorgabewert 0, bis `FULL` selbst einmal ausgelöst wurde, wodurch die Begrenzung bei `UP_SLOW`/`UP_FAST` fehlschlägt (siehe Technische Besonderheiten).
 - `ZERO`: Setzt den Ausgang `OUT` auf den Wert von `VAL_ZERO`.
 - `UP_SLOW`: Erhöht `OUT` um den Wert von `SLOW`.
 - `UP_FAST`: Erhöht `OUT` um den Wert von `FAST`.
@@ -23,6 +24,7 @@ Der Funktionsblock `RampLimitFS` dient zur schrittweisen Erhöhung oder Verringe
 
 ### **Ereignis-Ausgänge**
 
+- `INITO`: Bestätigt die Initialisierung (Antwort auf `INIT`) und gibt den aktuellen Wert von `OUT` aus.
 - `CNF`: Bestätigt die Ausführung und gibt den aktuellen Wert von `OUT` aus.
 
 ### **Daten-Eingänge**
@@ -63,9 +65,12 @@ Der Ausgabewert wird dabei immer auf die Grenzen `VAL_ZERO` (Minimum) und `VAL_F
 - **Flexible Schrittweiten**:
   Unterschiedliche Geschwindigkeiten der Wertänderung durch `SLOW` und `FAST`.
 
+- **`INIT` ist Pflicht vor dem ersten Ereignis**:
+  Jedes Ereignis liest per `WITH`-Deklaration nur die Dateneingänge ein, die es für seine eigene Berechnung braucht — z. B. liest `UP_SLOW` `SLOW` **und** `VAL_FULL` (für die Begrenzung), `DOWN_SLOW` liest `SLOW` **und** `VAL_ZERO`. Ohne einen vorherigen `INIT`-Aufruf haben diese Werte noch nie einen gültigen Wert erhalten und stehen auf ihrem Vorgabewert 0 — bei `VAL_ZERO` fällt das meist nicht auf, bei `VAL_FULL` klemmt dann aber jeder `UP_SLOW`/`UP_FAST`-Schritt sofort auf 0.
+
 ## Zustandsübersicht
 
-Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur entsprechenden Berechnung und Ausgabe.
+Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur entsprechenden Berechnung und Ausgabe. Einzige Ausnahme: `INIT` muss einmal vor allen anderen Ereignissen laufen, damit `VAL_ZERO`/`VAL_FULL`/`SLOW`/`FAST`/`PV` überhaupt einen definierten Wert im Baustein haben.
 
 ## Anwendungsszenarien
 

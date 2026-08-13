@@ -75,6 +75,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Der Ablauf ist ereignisgeste
 
 Gegenüber einem klassischen **MUX**‑Baustein (z. B. mit einfachen `ANY`‑Datenports) arbeitet **AIWS_MUX_5** ausschließlich mit dem spezialisierten **AIWS‑Adapter**. Das erhöht die Typsicherheit und vereinfacht die Einbindung in bestehende AIWS‑basierte Komponenten. Nachteilig ist die fixe Anzahl von fünf Eingängen; für andere Kanalzahlen müsste der generische Parameter angepasst oder ein anderer FB verwendet werden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AIWS_MUX_5** ist ein kompakter, ereignisgesteuerter Multiplexer für fünf AIWS‑Signale. Er eignet sich besonders für den Einsatz in modularen Steuerungssystemen, bei denen eine flexible und typensichere Umschaltung zwischen analogen Eingangswerten erforderlich ist. Die generische Deklaration erlaubt eine einfache Anpassung an unterschiedliche Anforderungen.

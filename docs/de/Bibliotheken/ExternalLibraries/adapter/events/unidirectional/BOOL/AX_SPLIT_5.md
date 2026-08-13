@@ -70,6 +70,10 @@ Im Vergleich zu einfachen Split-Bausteinen bietet AX_SPLIT_5 eine feste Anzahl v
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AX_SPLIT_5 ist ein spezialisierter Verteilerbaustein, der durch seine einfache und deterministische Funktionsweise ideal für Anwendungen geeignet ist, bei denen ein Signal auf genau fünf Empfänger verteilt werden muss. Die Verwendung standardisierter AX-Adapter gewährleistet Kompatibilität innerhalb bestehender Steuerungssysteme.

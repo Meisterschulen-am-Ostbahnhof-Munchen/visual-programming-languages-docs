@@ -59,6 +59,11 @@ The function block does not have a state machine (ECC) and does not perform any 
 - **AI_SPLIT_2 / AI_SPLIT_4**: These blocks split one AI input into two or four outputs, respectively. **AI_SPLIT_6** represents the variant with six outputs. All splitters function identically and differ only in the number of output adapters.
 - **AI_DUPLICATE (hypothetical)**: A block that duplicates the value for copying purposes, but usually uses data ports. AI_SPLIT_6, on the other hand, uses adapters exclusively, allowing direct coupling without additional event control.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AI_SPLIT_6** is a minimal yet useful component for distributing analog adapter signals in the 4diac IDE. Its generic definition and pure adapter interface make it particularly suitable for architectures requiring loose coupling and easy extensibility. The distribution across six outputs enables flexible multiple use of a single analog input value.

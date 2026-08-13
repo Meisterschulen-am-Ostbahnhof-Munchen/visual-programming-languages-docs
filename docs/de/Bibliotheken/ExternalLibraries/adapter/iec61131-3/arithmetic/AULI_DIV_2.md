@@ -79,6 +79,10 @@ Da es sich bei diesem Baustein um einen grundlegenden arithmetischen Baustein ha
 *   **Standard `DIV`-Baustein**: Ein klassischer IEC 61131-3 / IEC 61499 `DIV`-Baustein nutzt direkte Dateneingänge (`IN1`, `IN2`) und Event-Ports (`REQ`, `CNF`). Der `AULI_DIV_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung bei komplexen Signalstrukturen erheblich vereinfacht.
 *   **Andere AULI-Arithmetikbausteine** (z. B. `AULI_ADD`, `AULI_SUB`): Nutzen dieselbe Schnittstellenphilosophie mit Sockets und Plugs, führen jedoch andere mathematische Operationen aus.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AULI_DIV_2` ist ein moderner, modularer Funktionsbaustein für arithmetische Divisionen in Eclipse 4diac. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes und übersichtliches Softwaredesign in verteilten Steuerungssystemen nach IEC 61499, indem er Daten und Steuerereignisse elegant bündelt.

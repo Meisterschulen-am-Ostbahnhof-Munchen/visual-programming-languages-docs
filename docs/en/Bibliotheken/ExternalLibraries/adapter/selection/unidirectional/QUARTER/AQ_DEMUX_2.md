@@ -78,6 +78,11 @@ A repeated REQ event performs a new forwarding each time, regardless of the prev
 
 Compared to a pure data demultiplexer, the AQ_DEMUX_2 offers advantages through its adapter interface, which enables standardized transmission of analog values with optional additional information (e.g., unit, status).
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AQ_DEMUX_2** is a specialized yet flexible function block for distributing analog values to two outputs. Its generic nature and adapter-based communication make it a valuable element in automation technology, especially in scenarios with event-driven channel selection. The simple interface and clear separation of event and data logic facilitate integration into complex control projects.

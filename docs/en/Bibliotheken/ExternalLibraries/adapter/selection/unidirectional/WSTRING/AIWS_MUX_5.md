@@ -74,6 +74,11 @@ The function block (FB) does not have an explicit state machine. The process is 
 
 Compared to a classic **MUX** module (e.g., with simple `ANY` data ports), **AIWS_MUX_5** works exclusively with the specialized **AIWS adapter**. This increases type reliability and simplifies integration into existing AIWS-based components. A disadvantage is the fixed number of five inputs; for other channel numbers, the generic parameter would have to be adjusted or a different function block would have to be used.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AIWS_MUX_5** is a compact, event-driven multiplexer for five AIWS signals. It is particularly suitable for use in modular control systems where flexible and type-safe switching between analog input values is required. The generic declaration allows for easy adaptation to different requirements.

@@ -57,6 +57,10 @@ Der Baustein besitzt keine internen Zustände. Er ist vollständig zustandslos u
 - **Standard‑SPLIT‑Bausteine** (z. B. `SPLIT` für einfache Datentypen) verteilen einzelne Werte, während `AL_SPLIT_8` speziell für den unidirektionalen Adapter `AL` ausgelegt ist.
 - **Adapter‑Merger** (wie ein hypothetischer `AL_MERGE`) führen mehrere Signale zu einem zusammen; der `AL_SPLIT_8` realisiert die umgekehrte 1:n‑Funktionalität.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AL_SPLIT_8` ist ein schlichter, aber wichtiger Baustein zur Vervielfachung von AL‑Adapter‑Signalen. Durch seine passive, zustandslose Arbeitsweise fügt er sich nahtlos in datenflussorientierte 4diac‑Anwendungen ein und erleichtert die strukturierte Verteilung von Alarm‑ oder Steuersignalen.

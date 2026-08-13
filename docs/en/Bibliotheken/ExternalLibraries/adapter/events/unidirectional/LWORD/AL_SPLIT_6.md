@@ -61,6 +61,11 @@ The function block has no state machine (no ECC) and therefore no defined state 
 - **AL_SPLIT_2, AL_SPLIT_4** … **AL_SPLIT_N**: These function blocks differ only in the number of output channels. The functionality is identical – a simple 1:N split.
 - **Other split blocks with events or data:** Unlike these, **AL_SPLIT_6** has no data or event interfaces, but works purely via adapters. This simplifies configuration but limits the variety of types.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AL_SPLIT_6** is a compact and efficient function block for multiplying a unidirectional AL adapter signal. Due to its generic nature and simple structure, it is ideally suited for all applications where an input signal needs to be distributed to multiple outputs without additional logic or event control.

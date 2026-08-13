@@ -59,6 +59,11 @@ Since the FB has no event inputs, it does not have an explicit state machine. Si
 - **AUDI_SPLIT_2**: A splitter reduced to two outputs; this block extends this to three outputs.
 - **Generic Splitters**: Many libraries contain split variants for other adapter types (e.g., `DATA_SPLIT`), but these are data-type specific.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUDI_SPLIT_3** is a simple yet useful function block for distributing a unidirectional AUDI adapter signal to three outputs. Its generic nature and pure adapter interface allow it to integrate seamlessly into event-driven and data-stream-oriented IEC 61499 applications. It provides a clean, maintainable solution for architectural signal distribution and reduces the need for manual signal routing.

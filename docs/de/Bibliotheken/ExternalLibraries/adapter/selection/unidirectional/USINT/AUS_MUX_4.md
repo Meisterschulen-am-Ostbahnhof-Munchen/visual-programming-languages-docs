@@ -74,6 +74,10 @@ Es gibt keine weiteren Zustände oder Verzögerungen.
 - Ein **AUS_DEMUX** würde einen Eingang auf mehrere Ausgänge verteilen; der AUS_MUX_4 realisiert die umgekehrte Selektion.
 - Andere Multiplexer mit mehr Kanälen (z. B. AUS_MUX_8) wären für größere Auswahlen geeignet, während dieser auf vier Kanäle spezialisiert ist.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AUS_MUX_4 ist ein spezialisierter, aber flexibler Multiplexer für die Auswahl eines von vier AUS-Signalen. Dank der Adapter-Schnittstelle und des generischen Ansatzes lässt er sich gut in modulare Automatisierungslösungen integrieren. Er eignet sich besonders für Anwendungen, die eine ereignisgesteuerte Signalselektion mit klar definierten Schnittstellen erfordern.

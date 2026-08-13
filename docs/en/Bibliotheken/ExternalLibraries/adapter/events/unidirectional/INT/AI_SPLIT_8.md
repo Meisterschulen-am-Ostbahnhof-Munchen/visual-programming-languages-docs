@@ -56,6 +56,11 @@ The function block does not have an internal state machine (ECC). There are no d
 - **AI_SPLIT_2, AI_SPLIT_4:** These function blocks distribute an analog signal to two or four outputs, respectively. The present function block offers a higher number of parallel connections with eight outputs.
 - **DIO_SPLIT (digital):** A similar splitter for digital signals, but based on DI/DO adapter types. The AI_SPLIT_8 is specifically designed for analog signals.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AI_SPLIT_8** is a simple, generic function block for multiplying an analog signal. Its clear structure—one input, eight outputs, no events—makes it ideal for straightforward signal distribution in automation applications. Its generic nature allows for flexible adaptation to various analog data types.

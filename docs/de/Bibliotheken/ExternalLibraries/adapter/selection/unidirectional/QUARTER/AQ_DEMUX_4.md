@@ -80,6 +80,10 @@ Der Baustein definiert **keine** eigenen Zustandsautomaten (Execution Control Ch
 - **Demultiplexer mit fester Anzahl Ausgänge:** Andere Bausteine bieten oft 2, 8 oder 16 Ausgänge. Dieser FB bietet genau vier, was für viele Anwendungen ein guter Kompromiss ist.
 - **Generische Implementierung:** Viele Demultiplexer in Bibliotheken sind typspezifisch (z. B. für INT oder REAL). Die generische Natur dieses Bausteins erhöht die Wiederverwendbarkeit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AQ_DEMUX_4` ist ein kompakter, generischer Demultiplexer für unidirektionale analoge Adapter. Er ermöglicht die flexible Verteilung eines Eingangswerts auf vier Ausgänge unter Kontrolle eines Index. Dank der generischen Typdefinition kann er in verschiedenen Signalumgebungen eingesetzt werden, ohne den Anwendungskern zu ändern. Die einfache ereignisgesteuerte Schnittstelle macht ihn zu einem grundlegenden Baustein für Kanalumschaltungen in verteilten Automatisierungs- und Steuerungssystemen.

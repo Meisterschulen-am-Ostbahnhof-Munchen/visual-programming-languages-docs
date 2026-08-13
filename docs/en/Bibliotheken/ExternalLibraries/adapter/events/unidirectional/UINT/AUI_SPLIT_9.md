@@ -68,6 +68,11 @@ The FB does not have a state machine. Sequential processing does not occur; sign
 - **AUI_MERGE_***: A merger combines multiple AUI inputs into one output – the opposite function. A splitter, on the other hand, distributes the output.
 - **Generic Splitters of Other Adapter Types (e.g., Data-Based)**: Unlike data-event splitters, AUI_SPLIT_9 operates purely at the adapter level and requires no event control, thus reducing implementation effort.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUI_SPLIT_9** is a simple yet effective function block for distributing multiple unidirectional AUI signals. Its generic nature allows for flexible reuse in various projects. Due to its lack of inherent logic, this building block is resource-efficient and easy to understand. It is particularly well-suited for the rapid implementation of one-to-many connections in adapter-based automation architectures.

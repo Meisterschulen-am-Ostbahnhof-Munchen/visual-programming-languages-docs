@@ -85,6 +85,10 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine**. Es gibt nur ein
 - **Standard-MUX-FBs:** Oft mit einzelnen Datenports (z. B. INT, BOOL) realisiert. Der hier gezeigte FB hingegen arbeitet ausschließlich mit AS-Adaptern, was eine konsistente Datenübertragung in AS-basierten Systemen ermöglicht.
 - **Dekomposition in mehrere AS_MUX_2:** Prinzipiell möglich, aber weniger effizient und übersichtlich.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock **AS_MUX_4** bietet eine elegante und flexible Möglichkeit, aus vier AS-Datenquellen eine auszuwählen. Durch die adapterbasierte Schnittstelle fügt er sich nahtlos in die 4diac-IDE und in AS-Kommunikationsstrukturen ein. Seine einfache, ereignisgesteuerte Funktionsweise macht ihn zu einem Grundbaustein für Selektionsaufgaben in der Automatisierungstechnik. Die generische Auslegung erlaubt eine problemlose Integration in unterschiedlichste Projekte.

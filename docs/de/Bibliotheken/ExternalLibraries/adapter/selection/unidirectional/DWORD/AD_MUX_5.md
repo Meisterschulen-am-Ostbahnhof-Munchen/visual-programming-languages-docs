@@ -78,6 +78,10 @@ Der Baustein besitzt einen einfachen Zustandsautomaten:
 
 Im Vergleich zu klassischen Multiplexern (z. B. `MUX_2` oder `MUX_4`), die meist auf Dateneingänge (INT, REAL, etc.) ausgelegt sind, arbeitet der **AD_MUX_5** ausschließlich mit Adapter-Schnittstellen. Dies ermöglicht eine modulare und typsichere Verkabelung in einem Komponentenbasierten System. Der Baustein ist speziell für Fälle optimiert, in denen die zu multiplexenden Signale selbst komplexe Datenstrukturen (Adressen, Kanäle, Zustände) enthalten, die durch einen Adapter gekapselt werden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AD_MUX_5` ist ein kleiner, aber nützlicher generischer Baustein zur Adapter-basierten Signalauswahl. Er reduziert den Verdrahtungsaufwand und erhöht die Übersichtlichkeit in Steuerungssystemen, bei denen aus mehreren gleichartigen Schnittstellen eine ausgewählt werden muss. Dank seiner einfachen Ereignissteuerung und der klaren Schnittstelle lässt er sich leicht in bestehende Projekte integrieren.

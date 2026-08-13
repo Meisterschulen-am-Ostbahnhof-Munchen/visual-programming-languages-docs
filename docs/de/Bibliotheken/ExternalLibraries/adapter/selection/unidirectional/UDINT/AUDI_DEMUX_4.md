@@ -82,6 +82,10 @@ Im Gegensatz zu konventionellen Demultiplexern (z. B. `MUX`/`DEMUX` auf Signal
 
 Ein **generischer MUX-Baustein** für denselben Adaptertyp würde umgekehrt mehrere Eingänge auf einen Ausgang zusammenführen. Der vorliegende FB füllt die entgegengesetzte Rolle – die Verteilung eines Eingangs auf mehrere Ausgänge.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AUDI_DEMUX_4** ist ein kompakter, generischer Funktionsblock für die unidirektionale Demultiplexierung von AUDI-Adapterverbindungen. Durch seine reine Ereignissteuerung, die einfache Indexauswahl und die klare Trennung von Ereignis- und Datenpfaden eignet er sich besonders für applikationsneutrale Verteileraufgaben in IEC 61499-2 konformen Systemen. Die Integration als generischer FB erhöht die Wiederverwendbarkeit über verschiedene Projekte hinweg.

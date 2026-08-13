@@ -64,6 +64,10 @@ Die Funktionalität ist rein kombinatorisch: Das Signal am Eingang wird permanen
 - **Data Distribution FB**: Einige Bibliotheken stellen generische Verteiler für Datenports bereit; dieser FB ist speziell für den AUDI-Adapter-Typ optimiert und benötigt keine zusätzliche Konfiguration der Datenstruktur.
 - **Manuelle Parallelschaltung**: Mehrere AUDI-Socket-zu-Plug-Verbindungen könnten das Gleiche bewirken, sind aber unübersichtlicher und fehleranfälliger.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **AUDI_SPLIT_8** ist ein kompakter, generischer Spezialbaustein zur Signalverteilung auf Adapterebene.  

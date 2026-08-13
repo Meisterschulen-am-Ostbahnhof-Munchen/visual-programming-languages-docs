@@ -60,6 +60,10 @@ Der FB verfügt über keine Zustandsmaschine (ECC). Die Verteilung erfolgt stati
 - **AR_MERGE** – Ein Zusammenführen mehrerer AR‑Adapter auf einen, also die inverse Operation.
 - **AR_COPY** – Oft als dedizierter FB für eine einzelne 1:1‑Verteilung, während `AR_SPLIT_7` mehrere Ausgänge auf einmal bedient.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AR_SPLIT_7** ist ein schlanker, generischer Funktionsblock zur einfachen Verteilung eines AR‑Adapters auf bis zu sieben Zieladapter. Dank seiner generischen Natur ist er ohne Anpassung der Typinformationen sofort einsetzbar und eignet sich besonders für lose gekoppelte, datenflussorientierte Architekturen in der Automatisierungstechnik.

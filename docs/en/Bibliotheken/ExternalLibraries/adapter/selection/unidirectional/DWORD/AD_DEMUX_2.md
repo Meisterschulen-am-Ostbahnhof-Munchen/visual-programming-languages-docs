@@ -70,6 +70,11 @@ The FB does not have an explicit state machine (ECC). All logic is limited to ev
 - **AD_DEMUX with More Outputs:** For more than two outputs, function blocks such as `AD_DEMUX_4` or a more generic variant with a configurable number of channels are available.
 - **Manual Switching via Logic:** An alternative could be a simple selector block, which, however, does not offer adapter interfaces and requires separate data and event connections.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AD_DEMUX_2` is a compact, generic function block for the simple demultiplexing of AD adapters. Its clear interface, purely event-driven operation, and support for generic types make it a flexible tool for many automation tasks where a signal needs to be selectively switched to one of two paths.

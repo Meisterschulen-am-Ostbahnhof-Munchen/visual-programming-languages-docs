@@ -86,6 +86,11 @@ Compared to a standard multiplication function block (`MUL`) according to IEC 61
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALI_MUL_4` is an efficient auxiliary module for arithmetic calculations in complex 4diac systems. It is particularly suitable for applications where multiple values need to be multiplied compactly and systematically without cluttering the user interface with countless connection lines.

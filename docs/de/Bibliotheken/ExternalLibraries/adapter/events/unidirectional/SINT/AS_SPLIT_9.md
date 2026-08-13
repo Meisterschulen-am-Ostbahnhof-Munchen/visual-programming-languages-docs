@@ -68,6 +68,10 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Die Verteilung erfolgt re
 - **AS_COPY** – Kopiert ein Signal auf einen zweiten Ausgang; entspricht einem 1:2‑Split.  
 - **AS_SPLIT_9** stellt mit neun Ausgängen die größte Standardvariante dar und deckt umfangreiche Verteilungsanforderungen ab.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AS_SPLIT_9** ist ein unkomplizierter, zuverlässiger Funktionsblock zur Vervielfältigung eines AS‑Signals. Durch die reine Adapter‑Schnittstelle und das Fehlen interner Logik eignet er sich besonders für Anwendungen, in denen ein Ausgangssignal auf viele Empfänger verteilt werden muss. Seine generische Natur erlaubt zudem eine einfache Anpassung an spezifische Projektanforderungen.

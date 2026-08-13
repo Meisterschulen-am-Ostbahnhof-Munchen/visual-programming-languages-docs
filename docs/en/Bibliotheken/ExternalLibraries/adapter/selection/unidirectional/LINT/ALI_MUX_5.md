@@ -75,6 +75,11 @@ The component does not have explicit state machines (no ECC states are defined).
 - **ALI_DEMUX**: The demultiplexer distributes one input signal to multiple outputs; the ALI_MUX_5 works in the opposite way.
 - **SCALE/CLAMP blocks**: These perform signal processing, while the ALI_MUX_5 offers a simple pass-through function without data manipulation.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ALI_MUX_5** is a compact, generic multiplexer for five ALI adapter channels. Its purely adapter-based communication and simple event control make it ideal for modular automation solutions with changing data sources. Its generic nature allows it to be used with various ALI data types and facilitates reuse in different projects.

@@ -73,6 +73,10 @@ Eine parallel laufende Zustandsmaschine innerhalb des FB ist nicht explizit mode
 
 Standard‑IEC‑61499‑MUX‑Bausteine arbeiten in der Regel mit reinen Datentypen (z.B. `ANY`) und haben separate Daten‑Ein‑ und Ausgänge. Der **AW_MUX_4** hingegen kapselt die Daten in einem spezifischen Adaptertyp (`AW`). Dies erlaubt eine einfachere Verdrahtung und typsichere Kopplung innerhalb einer AW‑basierten Adapterlandschaft. Nachteilig ist die Abhängigkeit von diesem speziellen Adapter, was die Wiederverwendbarkeit in Umgebungen ohne AW‑Typen einschränkt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AW_MUX_4` ist ein kompakter, generischer Multiplexer für AW‑Adapter. Er bietet eine klare, ereignisgesteuerte Auswahl zwischen vier Eingängen und gibt das ausgewählte Signal über einen einzigen Ausgang weiter. Die Einfachheit der Schnittstelle und die EPL‑Lizenzierung machen ihn zu einem praktischen Werkzeug in AW‑Adapter‑basierten Steuerungsanwendungen, bei denen eine flexible Signalumschaltung erforderlich ist.

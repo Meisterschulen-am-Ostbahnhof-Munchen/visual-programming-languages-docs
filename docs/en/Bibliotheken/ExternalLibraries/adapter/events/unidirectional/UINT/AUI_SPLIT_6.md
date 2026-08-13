@@ -64,6 +64,11 @@ The function block has **no states**. It operates continuously without an intern
 - **AUI_SPLIT_2 / AUI_SPLIT_4**: These function blocks split a signal across two or four outputs, respectively. **AUI_SPLIT_6** offers the largest number (6) of outputs, thus covering applications with many parallel destinations.
 - **AUI_MERGE_***: Unlike splitters, merge blocks combine multiple AUI signals into one.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUI_SPLIT_6** is a simple yet effective distribution block for AUI signals. It enables the star-shaped routing of an input signal to up to six independent outputs. Due to its generic nature and lack of logic, it is ideally suited for flexible and expandable automation solutions.

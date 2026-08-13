@@ -67,4 +67,9 @@ The `AUS_SPLIT_4` is a simple yet useful generic function block for distributing
 
 ## Comparison with Similar Function Blocks
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion

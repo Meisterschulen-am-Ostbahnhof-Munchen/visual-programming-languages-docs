@@ -81,6 +81,10 @@ Nach jedem erfolgreichen Durchlauf wird wieder der Ruhezustand `IDLE` erreicht.
 - **Adapterbasierte Selektoren**: Andere Bausteine wie `AIWS_SELECT` wählen zwischen zwei Adaptern. `AIWS_MUX_3` erweitert dies auf drei Eingänge und einen festen Index-Parameter.
 - **Generischer Multi-MUX**: Im Vergleich zu einem nicht-generischen Multiplexer erlaubt die generische Definition den Einsatz beliebig vieler Instanzen mit demselben Adaptertyp, ohne dass der Baustein für jede Datenart neu definiert werden muss.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AIWS_MUX_3** ist ein flexibler und generischer Multiplexer, der speziell für den unidirektionalen Adaptertyp *AIWS* entwickelt wurde. Er ermöglicht die saubere, ereignisgesteuerte Auswahl aus bis zu drei Quellen und eignet sich besonders für modulare Automatisierungslösungen, bei denen Daten über Adapter gekapselt werden. Die einfache Schnittstelle (ein Index, ein Ereignis) und die klare Zustandslogik machen ihn leicht integrierbar und testbar.

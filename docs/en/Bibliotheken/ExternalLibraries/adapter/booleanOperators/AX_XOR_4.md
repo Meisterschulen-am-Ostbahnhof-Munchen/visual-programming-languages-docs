@@ -76,6 +76,11 @@ Compared to standard XOR function blocks, AX_XOR_4 offers:
 
 Comparison with [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_XOR_4 function block represents a specialized solution for four-input XOR operations in adapter-based system architectures. Its purely adapter-based interface makes it particularly suitable for modular system designs where communication takes place via standardized adapters.

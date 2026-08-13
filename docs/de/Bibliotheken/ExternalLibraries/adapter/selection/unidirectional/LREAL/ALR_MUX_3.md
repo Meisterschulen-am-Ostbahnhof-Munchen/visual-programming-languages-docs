@@ -80,6 +80,10 @@ Eine detaillierte Zustandsmaschine wird vom generischen Framework beim Kompilier
 - **Allgemeine Multiplexer‑FB** (z. B. `MUX` aus IEC‑61499‑Standardbibliotheken): Diese arbeiten meist mit skalaren Datentypen (BOOL, INT) und nicht mit Adaptern. Der **ALR_MUX_3** ist auf die ALR‑Adapter‑Schnittstelle optimiert.
 - Im Gegensatz zu einem analogen Schalter oder Datenverteiler liegt der Fokus auf der Ereignis‑gesteuerten Übergabe vollständiger ALR‑Pakete.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ALR_MUX_3** ist ein kompakter, generischer Multiplexer für die ALR‑Adapter‑Schnittstelle. Er ermöglicht die flexible Umschaltung zwischen drei Datenquellen auf Basis eines Indexwerts. Dank seiner Adapter‑basierten Ein‑/Ausgabe und der generischen Typisierung lässt er sich einfach in IEC‑61499‑Projekte integrieren und erweitern.

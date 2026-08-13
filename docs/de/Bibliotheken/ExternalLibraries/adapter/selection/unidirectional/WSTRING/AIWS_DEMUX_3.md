@@ -75,6 +75,10 @@ Der Baustein besitzt keine explizit modellierte Zustandsmaschine. Sein Verhalten
 
 Der **AIWS_DEMUX_3** bietet eine auf die Agrartechnik zugeschnittene, sofort einsetzbare Lösung ohne zusätzliche Konfiguration.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AIWS_DEMUX_3** ist ein einfacher, aber wichtiger Funktionsblock für die gezielte Verteilung von AIWS-Informationen auf drei Ausgänge. Dank seiner klaren Schnittstelle und der generischen Auslegung lässt er sich nahtlos in landwirtschaftliche Automatisierungsprojekte integrieren. Er reduziert den Programmieraufwand und erhöht die Übersichtlichkeit von Datenflussdiagrammen.

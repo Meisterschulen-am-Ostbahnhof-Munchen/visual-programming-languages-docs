@@ -62,6 +62,10 @@ Der Baustein besitzt keine eigenen Zustände oder Zustandsautomaten. Er verhält
 - **AUI_MERGE (z.B. AUI_MERGE_5)**: Führt mehrere AUI-Eingänge zu einem Ausgang zusammen – gegensätzliche Funktion.
 - **Reine Event-Splitter (E_SPLIT)**: Teilen nur Ereignisse, aber keine Datenadapter. Der AUI_SPLIT_5 hingegen verteilt komplette Adapter-Schnittstellen.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUI_SPLIT_5** ist ein einfacher, aber essenzieller Baustein zur Vervielfältigung von AUI-Signalen. Seine generische Auslegung und die vollständige Durchleitung des Adapters machen ihn flexibel einsetzbar. Für Anwendungen, die eine unidirektionale 1:5-Verteilung bei gleichzeitiger Minimierung von Latenz erfordern, stellt er eine optimale Lösung dar.

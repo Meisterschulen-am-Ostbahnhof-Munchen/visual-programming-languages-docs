@@ -87,6 +87,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten, da die Logik rein durc
 
 Alle Multiplexer folgen dem gleichen Prinzip und unterscheiden sich nur in der Anzahl der Adapter-Sockets.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AR_MUX_3` ist ein kompakter und funktionaler Funktionsblock zur Auswahl eines von drei Adapter-Signalen. Er eignet sich besonders für Anwendungen, die eine einfache, ereignisgesteuerte Umschaltung erfordern. Die Verwendung von Adaptern gewährleistet eine saubere Kapselung und Wiederverwendbarkeit in modularen Steuerungsprojekten.

@@ -74,6 +74,10 @@ Der Baustein besitzt keine Zustandsmaschine. Die Ausgangssignale folgen direkt d
 
 Der `AUS_SPLIT_4` liegt in der Mitte zwischen einem einfachen 2‑fach-Splitter und einem vollparametrierbaren Splitter. Er ist ideal, wenn exakt vier Ausgänge benötigt werden – ohne zusätzliche Konfiguration.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AUS_SPLIT_4` ist ein einfacher, aber nützlicher generischer Funktionsblock zur Verteilung eines AUS-Signals auf vier parallele Pfade. Seine adapterbasierte Schnittstelle und die klare Trennung von Logik und Signalweitergabe machen ihn zu einem robusten Baustein in der IEC 61499‑basierten Automatisierung. Dank der generischen Deklaration kann er problemlos in verschiedene Projekte eingebunden und ggf. an eigene Signaltypen angepasst werden.

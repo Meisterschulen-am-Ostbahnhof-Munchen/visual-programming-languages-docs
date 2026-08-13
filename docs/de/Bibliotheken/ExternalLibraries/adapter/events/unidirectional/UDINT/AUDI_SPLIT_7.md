@@ -71,6 +71,10 @@ Der Baustein enthält keine Zustandsmaschine (ECC). Das Verhalten ist vollständ
 
 Während `AUDI_SPLIT_7` auf den spezifischen AUDI-Adaptertyp ausgelegt ist, existieren generische Split-Bausteine für andere Datenformate. Die Beschränkung auf eine feste Anzahl von sieben Ausgängen unterscheidet ihn von flexiblen Splittern mit parametrierbarer Ausgangsanzahl.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AUDI_SPLIT_7` ist ein einfacher, aber effektiver Baustein zum Verteilen eines AUDI-Signals auf sieben identische Pfade. Durch die generische Auslegung kann er in verschiedenen Kontexten wiederverwendet werden. Der Verzicht auf Ereignisse und interne Logik macht ihn leichtgewichtig und zuverlässig für reine Signalverteilungsaufgaben.

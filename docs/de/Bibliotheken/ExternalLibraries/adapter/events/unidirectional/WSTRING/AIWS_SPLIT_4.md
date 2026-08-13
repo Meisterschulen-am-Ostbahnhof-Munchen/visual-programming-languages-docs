@@ -63,6 +63,10 @@ Der FB besitzt keine eigenen Zustände oder Abläufe. Es liegt eine rein kombina
 - **Event-basierte Splitter**: Manche Splittter verwenden Ereignisausgänge (z.B. `SPLIT` für beliebige Events). `AIWS_SPLIT_4` ist speziell auf den unidirektionalen **AIWS**-Adapter zugeschnitten und benötigt keine Events.
 - **Mehrere Ausgänge**: Es gibt Varianten auf zwei (z.B. `AIWS_SPLIT_2`) oder mehr Ausgänge; `AIWS_SPLIT_4` stellt standardmäßig vier bereit.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AIWS_SPLIT_4` ist ein einfacher, aber essenzieller Baustein zur Verteilung von unidirektionalen **AIWS**-Adapterverbindungen. Er reduziert den Verdrahtungsaufwand, sorgt für klare Strukturen und ermöglicht die parallele Nutzung eines Datenstroms durch mehrere Funktionsblöcke ohne zusätzliche Logik.

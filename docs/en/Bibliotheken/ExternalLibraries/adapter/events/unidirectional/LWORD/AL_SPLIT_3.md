@@ -59,6 +59,11 @@ The function block (FB) has **no internal state** and no state machine. It does 
 - **Adapter Merger (e.g., AL_MERGE):** Combines multiple adapter signals into one – the opposite of the function described here.
 - **Individual AL Splitters:** Generic versions also exist for other output numbers (e.g., AL_SPLIT_2, AL_SPLIT_4), differing only in the number of plugs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **AL_SPLIT_3** is a simple yet useful generic function block for duplicating a unidirectional adapter signal to three independent outputs. Due to its passive nature, it is resource-efficient and ideally suited for the flexible design of IEC 61499 applications where a signal is needed multiple times without altering the source logic.

@@ -89,6 +89,10 @@ Es gibt keine dauerhaften Speicher oder internen Zustände.
 
 Im Gegensatz zum Multiplexer realisiert der `ATM_DEMUX_5` die umgekehrte Richtung – von einem gemeinsamen Eingang zu mehreren Ausgängen. Er eignet sich daher für Stern‑ oder Bus‑Topologien mit einem Sender und mehreren Empfängern.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **ATM_DEMUX_5** ist ein einfacher, aber effektiver generischer Demultiplexer für unidirektionale ATM‑Adapter. Mit fünf Ausgangskanälen und ereignisgesteuerter Auswahl über einen Index **K** deckt er viele typische Verteilungsaufgaben in der Automatisierungstechnik ab. Durch seine generische Deklaration kann er leicht an andere Adaptertypen oder Kanalzahlen angepasst werden, ohne die grundlegende Funktionslogik zu ändern.

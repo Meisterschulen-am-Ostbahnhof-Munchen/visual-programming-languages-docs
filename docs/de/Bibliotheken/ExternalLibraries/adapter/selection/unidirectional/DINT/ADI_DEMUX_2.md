@@ -81,6 +81,10 @@ Da der Baustein kein explizites ECC (Execution Control Chart) aus der XML ableit
 - **ADI_DEMUX_3 / ADI_DEMUX_N**: Erweiterte Varianten mit mehr als zwei Ausgängen; ADI_DEMUX_2 beschränkt sich auf zwei Kanäle.
 - **DEMUX mit Einzeldatenports**: Herkömmliche Demultiplexer arbeiten mit einzelnen Input- und Output-Variablen; ADI_DEMUX_2 nutzt dagegen Adapter für strukturierte Datenübertragung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der ADI_DEMUX_2 ist ein spezialisierter, generischer Funktionsbaustein für das Routing von ADI-Datenströmen. Er bietet eine einfache, ereignisgesteuerte Umschaltung zwischen zwei Ausgangsadaptern und eignet sich besonders für modulare Automatisierungslösungen, die auf Adaptern basieren. Durch die generische Auslegung kann er flexibel an unterschiedliche Datentypen angepasst werden.

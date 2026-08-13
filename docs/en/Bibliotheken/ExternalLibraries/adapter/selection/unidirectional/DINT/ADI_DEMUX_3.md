@@ -79,6 +79,11 @@ The function block does not have any explicitly modeled states. The internal log
 
 The **ADI_DEMUX_3** is characterized by its explicit index selection (UINT), which enables flexible programming without the need for additional multiplexing logic. Unlike hard-wired splits, it allows for targeted channel selection at runtime.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ADI_DEMUX_3** function block is a simple yet effective demultiplexer for ADI data streams. Thanks to its generic structure and clear event-driven operation, it is ideally suited for use in modular, adapter-based automation projects. Selecting one of three outputs via an index creates a clean separation of signal sources and sinks without requiring the implementation of complex, custom multiplexing logic.

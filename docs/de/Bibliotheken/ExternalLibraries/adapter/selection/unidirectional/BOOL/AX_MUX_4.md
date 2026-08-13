@@ -67,6 +67,10 @@ Der **AX_MUX_4** besitzt keine eigenen Zustände. Die Umschaltung erfolgt kausal
 
 Im Gegensatz zu klassischen Multiplexern, die auf einfachen Datentypen (INT, BOOL etc.) arbeiten, operiert der **AX_MUX_4** auf **Adapterebene**. Dies ermöglicht die Durchschaltung komplexer, zusammengesetzter Datenstrukturen, die durch den `AX`-Adapter definiert werden. Vorteil: Die Schnittstelle bleibt in der grafischen 4diac-Umgebung klar strukturiert, ohne dass einzelne Datenleitungen manuell verbunden werden müssen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AX_MUX_4** ist ein einfacher, aber flexibler Multiplexer für AX-Adapter. Er eignet sich für alle Anwendungen, bei denen zur Laufzeit zwischen mehreren Adapterquellen umgeschaltet werden muss. Aufgrund seiner generischen Natur und der klaren Ereignissteuerung kann er in viele Automatisierungslösungen integriert werden.

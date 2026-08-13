@@ -71,6 +71,11 @@ Compared to standard XOR blocks with fewer inputs, the AX_XOR_5 offers the abili
 
 Comparison with [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_XOR_5 function block provides a flexible solution for multi-input XOR operations. Its adapter-based interface allows for easy integration into existing control systems, while its generic implementation ensures reusability and extensibility.

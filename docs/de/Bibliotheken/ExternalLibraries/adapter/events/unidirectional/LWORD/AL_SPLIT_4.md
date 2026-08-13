@@ -64,6 +64,10 @@ Der Baustein besitzt keinen Zustandsautomaten. Er arbeitet statisch und verteilt
 
 Im Gegensatz zu diesen Bausteinen arbeitet `AL_SPLIT_4` ausschließlich auf Adapterebene und kopiert vollständige Adapter-Kommunikationsströme.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der Funktionsblock **AL_SPLIT_4** ist ein einfacher, effizienter Signalfächer für den Adaptertyp `AL`. Er eignet sich ideal für alle Anwendungen, in denen ein einzelner Adapterdatenstrom an mehrere Verbraucher weitergegeben werden muss, ohne zusätzliche Logik oder Verzögerungen. Seine generische Natur erlaubt den Einsatz in unterschiedlichen Kontexten der Automatisierungstechnik, insbesondere in der Landmaschinensteuerung, wie vom Hersteller vorgesehen.

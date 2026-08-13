@@ -70,6 +70,10 @@ Im Vergleich zu Standard-ODER-Bausteinen mit weniger Eingängen bietet AX_OR_5 d
 
 Vergleich mit [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_OR_5 Funktionsblock stellt eine effiziente Lösung für ODER-Verknüpfungen mit fünf Eingängen dar. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und eignet sich besonders für Anwendungen, bei denen mehrere Signale logisch verknüpft werden müssen.

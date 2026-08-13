@@ -72,6 +72,10 @@ Im Vergleich zu anderen Split-Bausteinen bietet AX_SPLIT_8 eine feste Anzahl von
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AX_SPLIT_8 Funktionsblock stellt eine einfache und effiziente Lösung zur Verteilung von Adapter-Signalen in 4diac-Systemen dar. Seine feste Ausgangsanzahl von acht Ports macht ihn besonders geeignet für standardisierte Verteilungsaufgaben in industriellen Steuerungsanwendungen.

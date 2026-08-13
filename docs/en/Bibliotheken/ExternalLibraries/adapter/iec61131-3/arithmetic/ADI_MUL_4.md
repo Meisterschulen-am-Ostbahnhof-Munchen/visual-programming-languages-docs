@@ -67,6 +67,11 @@ The function block `ADI_MUL_4` is a **stateless** function block. It does not ha
 
 * **Standard `MUL` function block (IEC 61131-3):** Classic multipliers use direct data and event pins. `ADI_MUL_4`, on the other hand, uses adapters, which simplifies routing but requires a corresponding adapter infrastructure in the project. * **ADI_MUL_2 / ADI_MUL_3:** Similar function blocks with fewer inputs. The `ADI_MUL_4` is particularly suitable when exactly four factors need to be multiplied together without cascading multiple 2x multipliers.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ADI_MUL_4` is a highly efficient auxiliary function block for mathematical signal processing in IEC 61499 systems. Through the consistent use of unidirectional adapters, it promotes clean, modular software design and reduces the complexity of graphical wiring within the 4diac IDE.

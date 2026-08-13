@@ -77,6 +77,10 @@ Im Vergleich zu einem Standard-`MUL`-Baustein der IEC 61131-3 / IEC 61499, welch
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_MUL_2` ist ein moderner und flexibler Funktionsbaustein für arithmetische Operationen in IEC 61499-Steuerungsprogrammen. Dank der generischen Struktur und der konsequenten Nutzung von Adaptern eignet er sich hervorragend für saubere, modulare und gut wartbare Software-Architekturen in der industriellen Automatisierung.

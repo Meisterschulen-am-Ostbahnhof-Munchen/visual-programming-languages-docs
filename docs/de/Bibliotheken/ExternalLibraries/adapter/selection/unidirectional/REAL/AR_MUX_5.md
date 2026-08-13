@@ -84,6 +84,10 @@ Danach kehrt der Baustein in den Bereit‑Zustand zurück.
 - **Standard‑Multiplexer mit Datenelementen**: Im Gegensatz zu klassischen IEC‑61499‑Bausteinen, die einzelne Variablen (z. B. BOOL, REAL) multiplexen, arbeitet der `AR_MUX_5` auf Adapterebene und kann somit komplexe, zusammengesetzte Informationen als Ganzes weiterleiten.
 - **Buskoppler / Schalter**: Während Buskoppler oft bidirektionale oder adressierbare Kommunikation unterstützen, ist der `AR_MUX_5` ein einfacher, ereignisgesteuerter Selektor ohne Rückmeldung des Schaltzustands.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AR_MUX_5` ist ein übersichtlicher, generischer Funktionsblock zur Auswahl eines von fünf AR‑Adapter‑Eingängen. Dank der adapterbasierten Schnittstelle eignet er sich besonders für modulare Automatisierungslösungen, bei denen Daten in strukturierter Form weitergereicht werden. Die einfache Ereignissteuerung mit `REQ`/`CNF` ermöglicht eine unkomplizierte Integration in vorhandene Steuerungsabläufe. Für Anwendungen mit mehr oder weniger Kanälen stehen entsprechende Varianten zur Verfügung.

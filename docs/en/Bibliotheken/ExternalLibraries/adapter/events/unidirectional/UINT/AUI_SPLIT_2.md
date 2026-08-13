@@ -60,6 +60,11 @@ The AUI_SPLIT_2 function block has **no state machine**. There are no internal s
 - **AUI_MERGE_2**: Combines two AUI inputs into one output (optionally with arbitration). The splitter operates in the opposite direction.
 - **AUI_PASS**: A pure 1:1 pass-through adapter without branching.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUI_SPLIT_2** is a minimalist yet useful function block for splitting a unidirectional AUI signal into two outputs. Thanks to its generic implementation and the absence of complex logic, it is ideally suited for scenarios requiring clean, lossless duplication of data streams.

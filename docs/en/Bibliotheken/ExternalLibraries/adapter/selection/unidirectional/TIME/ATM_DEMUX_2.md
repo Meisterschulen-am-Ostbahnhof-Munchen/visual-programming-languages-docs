@@ -78,6 +78,11 @@ The component implements a trivial finite state machine, which is represented in
 
 The `ATM_DEMUX_2` stands out due to its integration of the ATM adapter protocol and its generic architecture.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The function block **ATM_DEMUX_2** offers a compact, reusable solution for demultiplexing ATM signals in automation technology. Its generic design and adapter interfaces make it easily adaptable to different channel counts and suitable for modular control systems according to IEC 61499.

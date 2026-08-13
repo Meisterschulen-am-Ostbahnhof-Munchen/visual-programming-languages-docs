@@ -72,6 +72,11 @@ Upon receiving REQ, it briefly enters a processing state, copies the input value
 - **AS_DEMUX_2 / AS_DEMUX_4**: Same functionality, but with two or four outputs, respectively.
 - **S_DEMUX** (Standard Demultiplexer): Works with elementary data types (e.g., BOOL, INT); The present function block (FB) is specifically designed for AS adapters and is therefore easier to integrate into adapter-based architectures.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AS_DEMUX_3** is a simple yet essential building block for dynamically forwarding AS data to one of three outputs. Its generic nature makes it flexible, especially in modular automation solutions that rely on adapter communication. Its clear interface (REQ/CNF + Index K) allows for efficient integration into control logic.

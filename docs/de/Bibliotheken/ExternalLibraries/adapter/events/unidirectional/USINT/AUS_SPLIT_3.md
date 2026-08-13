@@ -61,6 +61,10 @@ Da **AUS_SPLIT_3** über keine Ablaufsteuerung oder explizite Zustände verfügt
 - **DATA_SPLIT**: Verteilt reine Datenkanäle, erfordert separate Ereignissteuerung. Der AUS-Splitter kapselt Ereignis und Daten gemeinsam im Adapter.
 - **Manuelle Implementierung**: Ohne diesen Baustein müsste jeder Ausgang mit einer eigenen Kopie des Quelladapters verbunden werden. **AUS_SPLIT_3** vereinfacht die Verdrahtung und erhöht die Übersichtlichkeit.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUS_SPLIT_3** ist ein einfacher aber nützlicher Funktionsblock zur Vervielfachung von AUS‑Adapter-Signalen. Aufgrund seiner generischen Auslegung und Zustandslosigkeit eignet er sich hervorragend für die modulare und wartungsfreundliche Strukturierung von 4diac-Anwendungen.

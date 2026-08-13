@@ -63,6 +63,10 @@ Da es sich um einen rein datenfluss- und adapterbasierten Funktionsbaustein hand
 
 Im Vergleich zu klassischen mathematischen Bausteinen der IEC 61131-3 (wie z. B. einem Standard-`MUL`-Baustein mit diskreten `REQ` / `CNF` Events und separaten Datenleitungen) entfällt beim `ALI_MUL_2` das manuelle Verknüpfen von Event- und Datenpfaden. Dies verhindert Fehler bei der Event-Daten-Zuordnung und führt zu einem wesentlich aufgeräumteren und lesbareren Applikationsdiagramm in 4diac-ide.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALI_MUL_2` ist ein moderner und effizienter Funktionsbaustein zur Multiplikation. Durch die konsequente Nutzung von unidirektionalen Adaptern eignet er sich hervorragend für serviceorientierte und modular aufgebaute Steuerungssysteme, bei denen Übersichtlichkeit und einfache Wartbarkeit im Vordergrund stehen.

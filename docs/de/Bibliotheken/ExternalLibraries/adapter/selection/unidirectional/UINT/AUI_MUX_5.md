@@ -75,6 +75,10 @@ Nach Schritt 3 kehrt der Block in den Wartezustand zurück. Mehrere **REQ**-Erei
 - **AUI_DEMUX_5**: Ein Demultiplexer, der einen Eingang auf einen von fünf Ausgängen verteilt – quasi die Umkehrfunktion.
 - **Standard-MUX-Bausteine** (z. B. mit einfachen Datentypen wie INT oder BOOL): Der **AUI_MUX_5** zeichnet sich durch die spezielle Adapter-Schnittstelle und die unidirektionale Datenflussrichtung aus, was ihn besonders für AUI-basierte Architekturen geeignet macht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUI_MUX_5** ist ein übersichtlicher und flexibler Multiplexer für fünf unidirektionale AUI-Adapter. Dank seiner generischen Implementierung lässt er sich problemlos in verschiedenste Automatisierungsprojekte integrieren. Die einfache ereignisgesteuerte Arbeitsweise ermöglicht eine zuverlässige Signalauswahl ohne komplexe interne Zustandslogik.

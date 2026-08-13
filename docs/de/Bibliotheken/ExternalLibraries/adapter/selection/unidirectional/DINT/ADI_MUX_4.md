@@ -79,6 +79,10 @@ Da der FB keine explizite Zustandsmaschine in der XML‑Definition besitzt, ergi
 - **Standard‑Multiplexer (z. B. MUX4):** Verwenden meist klassische Daten‑I/Os statt Adapter. Der ADI_MUX_4 integriert die Adapter‑Schnittstelle direkt und ist daher nahtlos in adapterbasierte Architekturen einbindbar.
 - **Demultiplexer (z. B. DEMUX):** Verteilt ein Eingangssignal auf mehrere Ausgänge – gegenteilige Funktionsrichtung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ADI_MUX_4** ist ein kompakter, generischer Multiplexer‑Baustein mit adapterbasierter Schnittstelle. Er eignet sich besonders für modulare, adapterorientierte Steuerungssysteme, bei denen eine dynamische Auswahl von Datenquellen benötigt wird. Dank der klaren Struktur und der einfachen Ereignissteuerung ist er leicht zu parametrieren und zu erweitern.

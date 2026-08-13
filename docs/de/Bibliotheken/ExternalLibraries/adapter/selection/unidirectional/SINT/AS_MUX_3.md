@@ -80,6 +80,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten im XML. Das Verhalten k
 
 Der **AS_MUX_3** hebt sich durch seine Adapter-Schnittstelle von klassischen SEL-Bausteinen ab, die nur einfache Variablen verarbeiten. Adapter ermöglichen den Austausch komplexer Datentypen und bieten eine typsichere Verbindung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AS_MUX_3** ist ein kompakter und effizienter Multiplexer-Baustein für drei unidirektionale **AS**-Signale. Seine klare Ereignissteuerung und die generische Auslegung machen ihn zu einem wertvollen Werkzeug in IEC‑61499‑basierten Automatisierungslösungen, insbesondere in der Agrartechnik, wo eine flexible Signalumschaltung gefordert ist. Durch den Verzicht auf Datenausgänge zugunsten eines Adapter-Plugs wird eine saubere Trennung von Daten- und Ereignispfaden gewährleistet.

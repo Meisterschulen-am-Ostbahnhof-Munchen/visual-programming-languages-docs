@@ -83,6 +83,10 @@ Eine detaillierte Zustandsgraphik ist nicht erforderlich, da der Baustein atomar
 | AULI_DEMUX_2 | Demultiplexer (2‑fach) | Gleiche Funktionsweise, jedoch nur zwei Ausgänge. |
 | AULI_SWITCH | Umschalter | Ermöglicht dynamisches Verbinden zwischen mehreren Ein‑ und Ausgängen (Matrix‑Topologie). |
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AULI_DEMUX_4** ist ein kompakter, generischer Demultiplexer für AULI‑Adapter, der sich ideal für die gezielte Verteilung von Datenströmen in der Agrartechnik eignet. Dank seiner einfachen Ereignissteuerung und Adapterschnittstelle lässt er sich leicht in bestehende 4diac‑Prozessketten integrieren. Die generische Natur erlaubt Anpassungen ohne Änderung der Bausteinlogik.

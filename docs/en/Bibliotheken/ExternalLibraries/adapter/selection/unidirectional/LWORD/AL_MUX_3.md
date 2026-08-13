@@ -66,6 +66,11 @@ Since the function block does not have an explicit state machine (IEC 61499 basi
 - **MUX_ANY**: A data-type-independent multiplexer (e.g., for `ANY` types) typically works with simple data variables and not with adapters. The AL_MUX_3 is specifically designed for the **AL** adapter type.
 - **SELECT**: A similar function block (e.g., from the IEC 61499-2 Standard Library) often operates using event-driven Boolean conditions. The AL_MUX_3 uses a numeric index.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AL_MUX_3** is a simple yet useful multiplexer function block for adapter-based AL data. It is particularly suitable for scenarios where one data source needs to be dynamically selected from several similar data sources. Its clear event-driven operation and generic nature make it easy to integrate into automation solutions based on IEC 61499 and the 4diac framework.

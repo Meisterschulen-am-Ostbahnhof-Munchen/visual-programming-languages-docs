@@ -89,6 +89,10 @@ Der Baustein kann sich während der Umschaltung in einem kurzen, undefinierten M
 - **ATM_MUX_N (generische Variante)**: Der vorliegende `ATM_MUX_2` ist eine spezielle Instanz mit zwei Eingängen. Ein generischer `ATM_MUX` könnte über einen Parameter `N` die Anzahl der Eingänge festlegen.  
 - **Einfache If-else-Logik**: In einer IEC 61499‑Umgebung könnte ein Multiplexer auch durch eine Kombination aus Decision‑FB und mehreren Select‑Bausteinen realisiert werden. Der `ATM_MUX_2` kapselt diese Logik jedoch in einem einzigen, wiederverwendbaren Baustein und reduziert so die Komplexität des Netzwerks.  
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit  
 
 Der `ATM_MUX_2` ist ein schlanker, generischer Multiplexer für zwei unidirektionale ATM‑Datenströme. Er zeichnet sich durch einfache Handhabung (Indexauswahl per Ereignis) und modulare Adapter‑Schnittstellen aus. Aufgrund seiner generischen Natur kann er leicht an unterschiedliche Anzahlen von Eingängen angepasst werden. Der Baustein eignet sich besonders für Anwendungen, bei denen eine schnelle, ereignisgesteuerte Kanalumschaltung erforderlich ist, ohne dass zusätzliche Logik im Netzwerk aufgebaut werden muss.

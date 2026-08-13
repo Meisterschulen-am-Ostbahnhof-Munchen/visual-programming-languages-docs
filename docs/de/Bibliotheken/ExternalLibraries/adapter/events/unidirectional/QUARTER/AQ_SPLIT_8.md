@@ -58,6 +58,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten (ECC). Die Funktionalit
 - **AQ_SELECT**: Ein Multiplexer, der aus mehreren Eingängen einen auswählt – eher Gegenteil der Split-Funktion.
 - **DQ_SPLIT_8**: Analoger Baustein für digitale Signale (DQ-Typ) – strukturell identisch, aber für andere Signalart.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AQ_SPLIT_8** ist ein einfacher, zuverlässiger Fan-Out-Baustein für die 1:8-Verteilung von Analogausgangssignalen über Adapter-Schnittstellen. Er verzichtet auf Ereignislogik und Zustandsautomaten und eignet sich daher besonders für klar definierte, statische Signalverteilungen in Automatisierungssystemen. Die generische Basis erleichtert die Wiederverwendung in unterschiedlichen Projekten.

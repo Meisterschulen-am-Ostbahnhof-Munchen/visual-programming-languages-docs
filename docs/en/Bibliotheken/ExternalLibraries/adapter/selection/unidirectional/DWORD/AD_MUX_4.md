@@ -86,6 +86,11 @@ Upon arrival of **REQ**, the connection is updated, and the transition back to t
 
 The AD_MUX_4 is characterized by its adapter-based, unidirectional signal routing, which allows for clean encapsulation in modular IEC 61499 applications.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AD_MUX_4** is a compact and flexible adapter multiplexer that routes four input channels to a single output path via a numerical index. Its event-driven operation and adapter interfaces make it ideal for modular automation systems requiring dynamic signal selection. Its simple structure allows for easy integration into higher-level control logic.

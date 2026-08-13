@@ -75,6 +75,10 @@ Der FB besitzt keine explizite Zustandsmaschine. Der Arbeitsablauf lässt sich w
 - Für mehr Eingänge wären entsprechende Varianten (z. B. ADI_MUX_4, ADI_MUX_8) denkbar, die den Index **K** entsprechend erweitern.
 - Im Gegensatz zu einem allgemeinen Multiplexer für Standarddatentypen (z. B. INT, REAL) arbeitet dieser FB ausschließlich mit ADI-Adaptern und ist daher in ADI-basierte Systemarchitekturen integriert.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ADI_MUX_2** ist ein kompakter, ereignisgesteuerter Multiplexer für ADI-Adapter. Er eignet sich hervorragend für Anwendungen, bei denen zwischen zwei ADI-Datenquellen dynamisch umgeschaltet werden muss. Dank seiner generischen Auslegung kann er in unterschiedlichsten ADI-Kontexten eingesetzt werden, ohne dass eine Anpassung der internen Logik erforderlich ist.

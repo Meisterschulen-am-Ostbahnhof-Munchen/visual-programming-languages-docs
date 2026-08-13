@@ -79,6 +79,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten in der XML‑Darstellung. Das
 - **Adapter‑Selektor‑Bausteine:** Ähnliche Bausteine existieren für andere Adapter‑Typen (z. B. bidirektional). `AS_MUX_5` ist auf den unidirektionalen Typ `AS` spezialisiert und auf fünf Eingänge festgelegt.
 - **Generische Varianten:** Der Einsatz des `GenericClassName` Attributs erlaubt eine einfache Anpassung auf andere Adapter‑Typen durch Wiederverwendung der gleichen Logik.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AS_MUX_5` ist ein spezialisierter Multiplexer für unidirektionale Adapterverbindungen des Typs `AS`. Er ermöglicht eine flexible und saubere Umschaltung zwischen fünf Quellen ohne Datenkonvertierung. Durch seine generische Natur und einfache Ereignissteuerung eignet er sich besonders für modulare Automatisierungslösungen, bei denen die Auswahl verschiedener Sensor‑ oder Aktorverbindungen zur Laufzeit erforderlich ist.

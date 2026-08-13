@@ -72,6 +72,10 @@ Da es sich um einen kombinatorischen (bzw. zustandslosen) Funktionsbaustein hand
 * **Standard-ADD (IEC 61131-3):** Klassische `ADD`-Bausteine nutzen dedizierte Event- und Datenleitungen. `AUS_ADD_3` hingegen kapselt diese in Adaptern, was zu saubereren Software-Architekturen führt.
 * **AUS_ADD_2 / AUS_ADD_4:** Im Vergleich zu Varianten mit zwei oder vier Eingängen ist dieser Baustein speziell auf genau drei Eingangskanäle optimiert, um ungenutzte Schnittstellen im Programmcode zu vermeiden.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUS_ADD_3` ist ein effizienter und wiederverwendbarer Funktionsbaustein zur Addition von drei Signalen. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein modulares, übersichtliches und wartungsfreundliches Anwendungsdesign innerhalb der IEC 61499 Entwicklungsumgebung.

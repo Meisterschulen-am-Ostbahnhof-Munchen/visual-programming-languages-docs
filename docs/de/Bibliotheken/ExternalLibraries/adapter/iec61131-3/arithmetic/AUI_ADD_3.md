@@ -88,6 +88,10 @@ Der Baustein arbeitet ereignisgesteuert und zustandslos (bzw. rein reaktiv):
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_ADD_3` ist ein effizienter Hilfsbaustein für arithmetische Operationen in modernen IEC 61499 Steuerungsanwendungen. Durch die konsequente Nutzung des Adapter-Konzepts fügt er sich nahtlos in serviceorientierte und modular aufgebaute Software-Architekturen ein und trägt zur Reduzierung der Komplexität in der grafischen Programmierung bei.

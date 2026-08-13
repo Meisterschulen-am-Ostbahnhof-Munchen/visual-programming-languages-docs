@@ -74,6 +74,10 @@ Der Baustein besitzt keine expliziten Zustände. Er verhält sich wie eine Kombi
 - **AUDI_DEMUX_2**, **AUDI_DEMUX_4**: Varianten mit zwei bzw. vier Ausgängen. Der vorliegende Baustein ist für exakt drei Kanäle ausgelegt.
 - **Generic DEMUX**: Ein allgemeiner Demultiplexer mit parametrierbarer Kanalzahl (sofern verfügbar) wäre flexibler, benötigt aber mehr Konfiguration. `AUDI_DEMUX_3` ist statisch und daher einfacher zu verwenden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AUDI_DEMUX_3` ist ein einfacher, aber effektiver Baustein zur kanalbasierten Weiterleitung eines unidirektionalen Adaptersignals. Seine klare Schnittstelle und die ereignisgesteuerte Arbeitsweise machen ihn zu einer zuverlässigen Komponente in IEC 61499-Anwendungen, die eine Signalverteilung an genau drei Ausgänge erfordern.

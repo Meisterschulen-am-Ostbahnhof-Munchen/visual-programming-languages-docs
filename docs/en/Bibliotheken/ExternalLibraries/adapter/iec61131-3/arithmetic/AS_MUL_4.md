@@ -84,6 +84,11 @@ Since `AS_MUL_4` is a mathematical, stateless function block, no complex interna
 * **`AS_MUL_2` / `AS_MUL_3`:** Offer the same adapter-based functionality but are limited to two or three input values, respectively. `AS_MUL_4` eliminates the need for additional intermediate steps and temporary auxiliary variables when combining four factors.
 * ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AS_MUL_4` is a highly efficient, clear, and modern function block for arithmetic calculations in IEC 61499. The consistent use of unidirectional adapters keeps the application design uncluttered while maintaining the full flexibility of a generic data type.

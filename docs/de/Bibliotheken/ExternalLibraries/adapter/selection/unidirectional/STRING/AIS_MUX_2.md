@@ -78,6 +78,10 @@ Eine grafische Zustandsmaschine ist nicht Bestandteil der XML‑Definition; das 
 - **Standard‑Multiplexer (z. B. MUX)**: Diese arbeiten meist auf einfachen Datentypen (INT, BOOL) und geben einen Datenwert aus. Der `AIS_MUX_2` arbeitet hingegen auf dem gesamten Adapter‑Interface, sodass mehrere zusammengehörige Signale gleichzeitig umgeschaltet werden.
 - **Adapter‑Selektoren (z. B. SELECT)**: Vergleichbare Bausteine existieren für andere Adaptertypen; der vorliegende ist speziell auf den `AIS`‑Typ zugeschnitten.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AIS_MUX_2` ist ein kompakter und effizienter Funktionsblock zur Auswahl zwischen zwei AIS‑Adaptereingängen. Seine generische Deklaration erlaubt den Einsatz in verschiedenen Kontexten, während die reine Adapter‑Schnittstelle die Integration in bestehende IEC 61499‑Systeme vereinfacht. Die einfache Ereignissteuerung macht ihn gut vorhersagbar und leicht in übergeordnete Steuerungslogiken einbindbar.

@@ -63,6 +63,11 @@ Since the FB has no defined states, its behavior is deterministic: Every `REQ` e
 - **Demultiplexers with Other Adapter Types**: Similar function blocks exist for other unidirectional or bidirectional adapters (e.g., `DAT_DEMUX` for simple data types). The advantage of the AR adapter lies in the structured transmission of complex data.
 - **Generic N-Demultiplexers**: Corresponding generic variants (`AR_DEMUX_3`, `AR_DEMUX_8`, etc.) are available for other numbers of outputs.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AR_DEMUX_5** is a simple yet effective function block for selectively routing an AR data stream to five different outputs. Thanks to its generic design and clean event handling, it is ideally suited for modular automation systems, especially in the context of agricultural machinery control. The clear interface and the avoidance of internal states simplify integration and maintenance.

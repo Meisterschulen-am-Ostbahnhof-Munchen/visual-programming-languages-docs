@@ -79,6 +79,10 @@ Der FB besitzt keine explizit modellierten Zustände (ECC). Sein Verhalten entsp
 
 Der `AUI_DEMUX_5` bietet einen guten Kompromiss zwischen Flexibilität und Komplexität für Systeme mit bis zu fünf Teilnehmern.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock `AUI_DEMUX_5` ist ein nützlicher Baustein zur gezielten Verteilung eines AUI‑Signals auf eine von fünf Leitungen. Dank des ereignisgesteuerten Index‑Eingangs und der reinen Adapter‑Schnittstelle lässt er sich einfach in größere Automatisierungs‑ oder Steuerungsprojekte einbinden. Die generische Architektur erlaubt zudem eine einfache Anpassung auf andere Ausgangsanforderungen.

@@ -86,6 +86,10 @@ Die Umschaltung erfolgt innerhalb desselben Zyklus; der Baustein ist nicht block
 - **Standard‑Demultiplexer**: In gängigen FB‑Bibliotheken existieren oft Demultiplexer mit fester Kanalzahl (z. B. DEMUX_4). Der hier beschriebene Baustein nutzt jedoch Adaptertypen und ist auf den spezifischen Datentyp `AUS` zugeschnitten.
 - **Generische Varianten**: Der generische Ansatz (`GEN_AUS_DEMUX`) erlaubt die Erzeugung von Bausteinen mit beliebiger Kanalzahl, was die Wiederverwendbarkeit erhöht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 `AUS_DEMUX_4` ist ein spezialisierter Demultiplexer für den IEC‑61499‑Adaptertyp `AUS`. Er ermöglicht die flexible, ereignisgesteuerte Verteilung eines Eingangssignals auf vier Ausgangskanäle. Die Verwendung von Adaptern macht den Baustein kompatibel mit anderen Komponenten desselben Typs und fördert eine saubere, modulare Systemarchitektur. Durch die generische Basis kann er leicht auf andere Kanalzahlen angepasst werden.

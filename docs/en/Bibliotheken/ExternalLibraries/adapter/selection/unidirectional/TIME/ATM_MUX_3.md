@@ -72,6 +72,11 @@ A change occurs only upon the arrival of the REQ event. The state remains until 
 - **Multi-Level Multiplexers**: If more than three inputs are required, cascading multiple ATM_MUX_3 blocks or a standalone function block with a larger number of K inputs is necessary.
 - **Adapter Selector (e.g., SELECT Adapter)**: Some libraries offer adapter selectors directly, but these often lack explicit index control via a data input and only switch based on events.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ATM_MUX_3** is a compact and flexible function block for dynamically switching three ATM adapters to a common output. Its simple handling via events and indexes makes it ideal for control applications where multiple similar sources need to be connected as required. Its generic design allows for broad reuse in various projects.

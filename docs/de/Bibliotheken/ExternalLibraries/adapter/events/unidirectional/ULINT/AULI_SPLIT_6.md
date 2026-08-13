@@ -70,6 +70,10 @@ Da der Baustein keine Ereignissteuerung besitzt und keine internen Zustände ver
 
 Der **AULI_SPLIT_6** bietet im Vergleich zu kleineren Splittern eine höhere Anzahl an Ausgängen, was den Verdrahtungsaufwand in komplexen Systemen reduziert und gleichzeitig eine saubere Signalstruktur erhält.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AULI_SPLIT_6** ist ein einfacher, aber effektiver Funktionsbaustein zur Verteilung eines AULI-Adaptersignals auf sechs parallele Ausgänge. Dank seiner generischen Implementierung und der reinen Adapter-Schnittstelle lässt er sich leicht in IEC‑61499‑Anwendungen der Landtechnik und Automatisierungstechnik integrieren. Er eignet sich besonders für Szenarien, in denen ein Signal mehrfach benötigt wird, ohne zusätzliche Logik oder Zustandsverwaltung.

@@ -61,6 +61,10 @@ Der Baustein besitzt keine eigenen Zustände oder eine Ereignisablaufsteuerung (
 | SPLIT_1_2 (z.B. für Daten) | Daten | beliebig | Arbeitet mit Daten‑Ereignis‑Kombinationen |
 Im Gegensatz zu datenbasierten Split‑Bausteinen benötigt AUS_SPLIT_9 keine Ereignissteuerung, da die Adapterverbindung die Datenweitergabe implizit abwickelt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUS_SPLIT_9** ist ein einfacher, aber effektiver Funktionsblock zur Aufteilung eines einzelnen AUS‑Signals auf neun parallele Pfade. Seine generische Natur und die reine Adapter‑Schnittstelle machen ihn flexibel einsetzbar in IEC 61499‑basierten Steuerungsanwendungen, die eine unidirektionale Signalvervielfältigung erfordern.

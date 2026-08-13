@@ -78,6 +78,11 @@ The function block (FB) does not have documented state machine control. Only a b
 
 Compared to a general-purpose MUX function block (e.g., MUX from IEC 61499 standard libraries), AIS_MUX_3 uses only AIS adapters, providing a clear data structure and type safety within an AIS-based framework.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The function block **AIS_MUX_3** enables simple and efficient switching between three AIS data sources. Thanks to its generic definition and adapter interface, it can be flexibly used in AIS applications in agricultural technology as well as in other industries. Its clear event control and limited complexity make it a robust building block for multiplexing tasks.

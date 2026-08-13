@@ -76,6 +76,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine in der XML-Definition. Sei
 - **Standard-MUX (z. B. E_MUX)**: Nutzt oft einfache Datentypen (INT, REAL) statt Adapter. Der Adapter-basierte Ansatz erlaubt komplexere Datenstrukturen und eine lose Kopplung zwischen Komponenten.
 - **AW_SELECT** (hypothetisch): Kann einen von mehreren Adaptereingängen selektieren, jedoch ohne Indexsteuerung (z. B. über Boolesche Auswahl). `AW_MUX_3` erlaubt eine numerische, erweiterbare Selektion.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AW_MUX_3` ist ein spezialisierter, generischer Multiplexer für die Adapter-basierte Kommunikation in IEC 61499-Systemen. Er ermöglicht die dynamische Auswahl einer von drei Quellen und eignet sich besonders für flexible Sensor-/Aktor-Routing in verteilten Automatisierungslösungen. Seine einfache Ereignissteuerung und die klare Schnittstelle machen ihn zu einem robusten Baustein für Standard-Multiplex-Anwendungen.

@@ -59,6 +59,11 @@ The function block (FB) does not have an internal state machine (ECC). There are
 * **AW_SPLIT_N** – Another generic split FB that can be extended to a variable number of outputs. `AW_SPLIT_5` is a specialized variant with five fixed outputs.
 * **Pure Data Splitters** – These operate on data types like `INT` or `BOOL` and use different interface types. `AW_SPLIT_5` is specifically designed for the AW adapter.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AW_SPLIT_5` is a simple yet useful component for splitting an AW adapter signal into five parallel paths. Its generic design allows for flexible use in various control projects within the 4diac IDE. The absence of an event and data interface reduces complexity to the essentials – pure signal duplication.

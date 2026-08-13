@@ -58,6 +58,10 @@ Der FB besitzt keine explizite Zustandsmaschine. Die Funktionalität lässt sich
 - Ein Multiplexer (ALR_MUX) würde die umgekehrte Funktion ausführen: mehrere Eingänge auf einen Ausgang zusammenführen.
 - Der Baustein ähnelt einem 1‑zu‑2‑Demultiplexer in der Digitaltechnik, jedoch auf Adapterebene.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der ALR_DEMUX_2 ist ein nützlicher, einfacher Demultiplexer für ALR‑Daten. Seine klare Schnittstelle und die ereignisgesteuerte Arbeitsweise machen ihn gut geeignet für Anwendungen, die eine gezielte Weiterschaltung von ALR‑Verbindungen erfordern. Durch die generische Deklaration ist eine problemlose Integration in bestehende 4diac‑Projekte möglich.

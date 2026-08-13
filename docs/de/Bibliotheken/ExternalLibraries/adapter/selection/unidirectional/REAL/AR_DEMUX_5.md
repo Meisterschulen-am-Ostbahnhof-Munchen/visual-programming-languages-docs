@@ -64,6 +64,10 @@ Da der FB keine definierten Zustände besitzt, ist das Verhalten deterministisch
 - **Demultiplexer mit anderen Adaptertypen**: Ähnliche Bausteine existieren für andere unidirektionale oder bidirektionale Adapter (z. B. `DAT_DEMUX` für einfache Datentypen). Der Vorteil des AR-Adapters liegt in der strukturierten Übertragung komplexer Daten.
 - **Generische N‑Demultiplexer**: Für andere Ausgangsanzahlen stehen entsprechende generische Varianten (`AR_DEMUX_3`, `AR_DEMUX_8` etc.) zur Verfügung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AR_DEMUX_5** ist ein einfacher, aber effektiver Funktionsblock zur selektiven Weiterleitung eines AR‑Datenstroms an fünf verschiedene Ausgänge. Dank seiner generischen Auslegung und der sauberen Ereignissteuerung eignet er sich ideal für modulare Automatisierungssysteme, insbesondere im Umfeld landwirtschaftlicher Maschinensteuerungen. Die klare Schnittstelle und die Vermeidung interner Zustände erleichtern die Integration und Wartung.

@@ -67,6 +67,10 @@ Da der FB keine Zustandsmaschine besitzt, existieren keine expliziten Zustände.
 
 Gegenüber diesen Alternativen bietet AR_SPLIT_4 eine feste Anzahl von vier Ausgängen, was eine kompakte und übersichtliche Implementierung ohne Konfigurationsaufwand ermöglicht.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AR_SPLIT_4** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Verteilung eines unidirektionalen AR-Adaptersignals auf vier parallele Pfade. Aufgrund seines schlanken Designs (keine Ereignis-/Datenschnittstellen, keine Zustandsmaschine) eignet er sich ideal für alle Anwendungen, bei denen ein Signal mehrfach benötigt wird, ohne zusätzliche Logik einzubringen.

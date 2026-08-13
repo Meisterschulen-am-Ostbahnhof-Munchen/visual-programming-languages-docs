@@ -78,6 +78,11 @@ Due to its purely data-driven and eventless operation, the component has **no in
 
 The **AR_ADD_4** function block stands out from classic IEC 61499 arithmetic function blocks due to its pure adapter communication and generic design. It is particularly suitable for systems that already rely on adapter technology and do not require explicit event control.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AR_ADD_4** is a compact, generic function block for adding four values via adapter interfaces. Its simple and robust data-driven operation makes it a useful basic building block for modular automation applications. The absence of events and the generic typing enable flexible integration into heterogeneous systems. For applications with more or fewer than four addends, adapted variants or extended function blocks must be used.

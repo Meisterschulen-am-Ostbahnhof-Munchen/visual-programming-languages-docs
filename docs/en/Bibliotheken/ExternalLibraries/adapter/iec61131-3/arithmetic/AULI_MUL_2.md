@@ -91,6 +91,11 @@ Compared to a standard multiplication function block (such as the IEC 61199 `MUL
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AULI_MUL_2` is a specialized and modern variant of a multiplication function block for IEC 61499. Due to the consistent use of adapters, it is ideally suited for demanding, modular applications where clarity and standardization are paramount.

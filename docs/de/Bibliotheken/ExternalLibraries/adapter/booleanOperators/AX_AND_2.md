@@ -71,6 +71,10 @@ Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.m
 * [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
 * [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_AND_2 bietet eine zuverlässige und standardkonforme Implementierung der logischen UND-Funktion mit Adapter-basierten Schnittstellen. Seine generische Natur macht ihn vielseitig einsetzbar in verschiedenen Automatisierungsprojekten, die nach IEC 61499-Standard entwickelt werden.

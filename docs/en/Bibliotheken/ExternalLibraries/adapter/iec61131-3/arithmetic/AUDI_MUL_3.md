@@ -59,6 +59,11 @@ The **AUDI_MUL_3** does not have an explicit state machine. The output **OUT** a
 - **AUDI_ADD_3**: Performs the addition of three values, while **AUDI_MUL_3** performs multiplication – both use the same adapter structure.
 - **Conventional IEC 61499 Function Blocks**: Typical multifunction blocks often use separate data and event ports. The adapter-based approach simplifies typing and reusability in generic frameworks.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 **AUDI_MUL_3** is a compact, generic function block for multiplying three values. Its adapter-driven interface and generic typing make it ideal for modular, reusable control applications. Its simple, data-flow-oriented approach without state machines makes it intuitive to use and extensible.

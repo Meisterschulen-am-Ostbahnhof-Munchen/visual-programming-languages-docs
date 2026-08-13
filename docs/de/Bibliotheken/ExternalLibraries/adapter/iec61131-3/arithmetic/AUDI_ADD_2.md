@@ -63,6 +63,10 @@ Der **AUDI_ADD_2** besitzt keine Zustände (kein ECC). Die Addition wird unverz�
 - **Klassische ADD-FBs (z. B. `ADD` aus IEC 61131-3)**: Diese besitzen meist konkrete Dateneingänge und -ausgänge sowie Ereignissteuerung. Der `AUDI_ADD_2` ersetzt dies durch eine Adapter-Schnittstelle, was eine höhere Abstraktion und Kapselung ermöglicht.
 - **Generische Addierer (z. B. `GEN_ADD`)**: Solche Bausteine sind ebenfalls generisch, verwenden aber häufig direkte Datenports. Der `AUDI_ADD_2` ist speziell für adapterbasierte Schnittstellen optimiert.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUDI_ADD_2** ist ein spezialisierter, generischer Additions-FB für adapterbasierte 4diac-IDE-Umgebungen. Durch den Verzicht auf klassische Ports und die Nutzung des `AUDI`-Adaptertyps eignet er sich besonders für datenflussorientierte und stark modularisierte Steuerungsanwendungen. Seine generische Ausführung erhöht die Wiederverwendbarkeit über verschiedene Datentypen hinweg.

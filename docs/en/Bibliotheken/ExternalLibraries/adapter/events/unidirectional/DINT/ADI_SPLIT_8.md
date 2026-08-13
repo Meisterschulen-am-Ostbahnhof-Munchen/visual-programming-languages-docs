@@ -66,6 +66,11 @@ The `ADI_SPLIT_8` FB has no internal states or an ECC (Execution Control Chart).
 - **FORK FBs**: Some IEC 61499 implementations offer fork blocks for adapters, but these are often event-driven. This FB is distinguished by its absence of events and its fixed number of eight outputs.
 - **Manual Wiring**: Without this FB, each destination connection would have to be implemented individually via coupling adapters or manual branching – more complex and prone to errors.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 ADI_SPLIT_8` is a powerful, generic split block for unidirectional ADI adapters in IEC 61499 applications. It significantly reduces wiring effort, improves clarity, and allows for the easy duplication of an adapter path. Thanks to its generic parameterization and event-free operation, it is particularly well-suited for data-driven automation systems that require reliable, low-latency signal distribution.

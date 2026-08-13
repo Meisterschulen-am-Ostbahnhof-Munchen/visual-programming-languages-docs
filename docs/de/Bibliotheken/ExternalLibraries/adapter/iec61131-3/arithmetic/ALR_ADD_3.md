@@ -69,6 +69,10 @@ Da es sich bei `ALR_ADD_3` um einen mathematischen, datenflussorientierten Funkt
 * **Standard `ADD` (IEC 61131-3):** Der klassische `ADD`-Baustein verwendet separate Pins für Daten und Ereignisse (REQ/CNF). `ALR_ADD_3` hingegen bündelt diese Signale in Adaptern, was die Modularität und Wiederverwendbarkeit im projektübergreifenden Design erhöht.
 * **`ALR_ADD_2`:** Ein ähnlicher adapterbasierter Baustein, der jedoch nur zwei Eingänge unterstützt. `ALR_ADD_3` spart bei der Addition von exakt drei Werten Kaskadierungen und somit zusätzlichen Speicher- und Berechnungsaufwand.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_ADD_3` ist ein flexibler und performanter Baustein zur Addition von drei Werten in 4diac-Umgebungen. Durch sein generisches Design und die konsequente Nutzung von unidirektionalen Adaptern trägt er maßgeblich zur Übersichtlichkeit, Strukturierung und Wartbarkeit moderner, verteilter Steuerungsprogramme bei.

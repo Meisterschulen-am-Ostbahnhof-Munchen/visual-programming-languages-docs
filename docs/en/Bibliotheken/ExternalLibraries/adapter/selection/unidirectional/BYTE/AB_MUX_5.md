@@ -80,6 +80,11 @@ This makes the function block deterministic and allows it to operate without del
 
 The AB_MUX_5 is specifically optimized for adapter connections and offers a clear separation of event control and data path.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AB_MUX_5** is a compact and reusable function block for adapter multiplexing. It allows the selection of one of five incoming adapter channels via a numeric index and is ideally suited for systems that need to dynamically switch between multiple identical interfaces. Thanks to its generic implementation and EPL 2.0 license, it can be used in various automation environments.

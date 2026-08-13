@@ -72,6 +72,11 @@ FB_Alarm_MUX | 4 | 1 | Bitmasks/Selection | Specifically for Alarm Signals |
 
 The AL_MUX_5 is characterized by its addressable index control (0 to 4) and the use of adapters, which enables flexible integration with other 4diac components.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AL_MUX_5** is a compact, generic multiplexer for up to five input channels. It is particularly suitable for applications requiring event-driven switching of adapter signals (e.g., analog measured values). Its simple interface structure and lack of state logic make it easy to integrate and adapt into existing IEC 61499-2 projects.

@@ -82,6 +82,11 @@ Compared to classic IEC 61131-3 subtraction blocks (such as `SUB`), which use st
 
 Compared to bidirectional calculation blocks, the `ALR_SUB_2` features deterministic, non-reactive signal processing.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_SUB_2` is an efficient and flexible standard component for arithmetic calculations in modern, service-oriented control systems. By utilizing adapter technology, it supports a modular and maintainable software design according to the IEC 61499 standard.

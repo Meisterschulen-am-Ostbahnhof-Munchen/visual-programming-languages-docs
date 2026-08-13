@@ -80,6 +80,10 @@ Ein wiederholtes REQ-Ereignis führt jedes Mal eine neue Weiterleitung durch, un
 
 Gegenüber einem reinen Daten-Demultiplexer bietet der AQ_DEMUX_2 Vorteile durch die Adapter-Schnittstelle, die eine standardisierte Übertragung analoger Werte mit optionalen Zusatzinformationen (z. B. Einheit, Status) ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AQ_DEMUX_2** ist ein spezialisierter, aber flexibler Funktionsbaustein zur Verteilung analoger Werte auf zwei Ausgänge. Sein generischer Charakter und die Adapter-basierte Kommunikation machen ihn zu einem wertvollen Element in der Automatisierungstechnik, insbesondere in Szenarien mit ereignisgesteuerter Kanalauswahl. Die einfache Schnittstelle und die klare Trennung von Ereignis- und Datenlogik erleichtern die Integration in komplexe Steuerungsprojekte.

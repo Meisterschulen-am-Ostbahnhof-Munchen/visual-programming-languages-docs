@@ -61,6 +61,11 @@ The function block does not have an internal state machine, as it does not proce
 
 Other splitter blocks exist in the 4diac ecosystem, such as `SPLIT` for event or data flows. The advantage of `AL_SPLIT_5` lies in its exclusive adapter interface. While a `SPLIT` block separates events or data, this block operates directly at the adapter level and requires no conversion between events and data. Similar function blocks with a different number of outputs (e.g., `AL_SPLIT_2`, `AL_SPLIT_3`) are conceivable, but are not included in this generic form by default.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AL_SPLIT_5** is a simple yet useful generic function block for duplicating a unidirectional adapter signal to five outputs. Due to its pure adapter interface and lack of event/data logic, it is particularly suitable for applications that need to distribute a signal to multiple receivers without processing. The generic design increases flexibility for reuse in different projects.

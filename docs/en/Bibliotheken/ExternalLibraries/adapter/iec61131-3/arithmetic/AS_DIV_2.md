@@ -79,6 +79,11 @@ Compared to classic IEC 61131-3 `DIV` components, which use direct data pins, th
 
 --
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AS_DIV_2` is a robust and versatile component for arithmetic division in distributed control systems. Its consistent use of the adapter concept supports modern, modular software design according to the IEC 61499 standard.

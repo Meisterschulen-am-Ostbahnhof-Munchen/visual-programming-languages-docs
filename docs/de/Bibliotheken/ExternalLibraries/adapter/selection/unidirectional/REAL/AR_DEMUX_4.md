@@ -68,6 +68,10 @@ Ein expliziter Zustandsautomat ist nicht definiert. Der Baustein arbeitet zustan
 - **`DEMUX` für einfache Datentypen (z.B. `BOOL_DEMUX_4`)**: Funktionsprinzip identisch, aber statt AR‑Adaptern werden elementare Datentypen verwendet.
 - **`AR_DEMUX_n` mit variabler Kanalzahl**: `AR_DEMUX_4` ist auf vier Kanäle festgelegt; andere Varianten (z.B. `AR_DEMUX_2`, `AR_DEMUX_8`) existieren für abweichende Anzahlen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AR_DEMUX_4` ist ein spezialisierter, aber dennoch generisch nutzbarer Demultiplexer für den AR‑Adaptertyp. Er eignet sich hervorragend zur einfachen und effizienten Verteilung eines Datenstroms auf bis zu vier Ausgänge. Dank des klaren ereignisgesteuerten Interfaces und der Trennung von Index und Daten lässt er sich gut in industrielle Steuerungsarchitekturen integrieren.

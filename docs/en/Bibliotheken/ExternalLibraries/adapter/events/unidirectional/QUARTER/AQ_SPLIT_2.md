@@ -58,6 +58,11 @@ The function block has no internal states. It is stateless (combinatory) and out
 - **Event-Driven Split Components**: These often require trigger events and then perform signal transmission. In contrast, `AQ_SPLIT_2` operates purely signal-driven without events.
 - **Bus-based splitters**: These distribute multiple signals over a shared bus (e.g., via multicast). `AQ_SPLIT_2` operates selectively and individually via adapters.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AQ_SPLIT_2` is a simple yet useful component for distributing an analog signal to two identical outputs. Thanks to its generic nature, it can be used in various 4diac projects without modification. Its stateless operation minimizes complexity and makes it ideal for real-time applications requiring immediate signal transmission.

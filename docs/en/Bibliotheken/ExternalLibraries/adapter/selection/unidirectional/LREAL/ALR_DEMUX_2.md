@@ -57,6 +57,11 @@ The function block does not have an explicit state machine. The functionality ca
 - A multiplexer (ALR_MUX) would perform the opposite function: combining multiple inputs into one output.
 - The component is similar to a 1-to-2 demultiplexer in digital technology, but at the adapter level.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The ALR_DEMUX_2 is a useful, simple demultiplexer for ALR data. Its clear interface and event-driven operation make it well-suited for applications that require targeted routing of ALR connections. Thanks to its generic declaration, it can be easily integrated into existing 4diac projects.

@@ -73,6 +73,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Das Verhalten ist rein er
 - **Standard-MUX (für Daten)**: Herkömmliche Multiplexer arbeiten mit Datentypen (z. B. INT, BOOL) und Datenausgängen. Der AR_MUX_4 arbeitet dagegen mit Adaptern, was die direkte Weiterleitung komplexer Signalpfade (z. B. Aktor-Ansteuerung) ermöglicht.
 - **AR_SWITCH (Weiche)**: Ein ähnlicher Baustein, der jedoch oft einen Umschaltbefehl auf ein Ereignis hin ausführt, aber mit anderer Anzahl von Ein-/Ausgängen oder allgemeinerer Konfiguration.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AR_MUX_4 ist ein spezialisierter Multiplexer für AR-Adapter, der eine einfache und schnelle Umschaltung zwischen vier Eingangssignalen erlaubt. Dank seiner generischen Implementierung und der sauberen ereignisgesteuerten Schnittstelle eignet er sich ideal für Anwendungen, die eine flexible Signalweiterschaltung in der Automatisierungstechnik erfordern.

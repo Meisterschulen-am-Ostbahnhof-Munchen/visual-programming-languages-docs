@@ -74,6 +74,11 @@ The FB does not have an explicit state machine. The workflow can be described as
 - For more inputs, corresponding variants (e.g., ADI_MUX_4, ADI_MUX_8) would be conceivable, which would extend the index **K** accordingly.
 - Unlike a general multiplexer for standard data types (e.g., INT, REAL), this function block works exclusively with ADI adapters and is therefore integrated into ADI-based system architectures.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ADI_MUX_2** is a compact, event-driven multiplexer for ADI adapters. It is ideally suited for applications requiring dynamic switching between two ADI data sources. Thanks to its generic design, it can be used in a wide variety of ADI contexts without requiring any modifications to its internal logic.

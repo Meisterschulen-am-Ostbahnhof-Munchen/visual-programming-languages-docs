@@ -70,6 +70,10 @@ Der FB besitzt **keinen internen Zustandsautomaten**. Es existieren keine Zustä
 
 Der `AULI_SPLIT_5` ist im Gegensatz zu ereignisbasierten Splittern **ereignislos** und rein adapterbasiert. Er lässt sich daher besonders in Datenflusssystemen ohne Taktsignal einsetzen.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AULI_SPLIT_5` ist ein minimalistischer, aber nützlicher Funktionsblock zur Vervielfachung eines unidirektionalen AULI-Signals auf fünf Ausgänge. Seine generische Natur erlaubt eine flexible Parametrisierung im Eclipse-4diac-Framework. Aufgrund des fehlenden Zustandsautomaten und der reinen Durchleitung ist er extrem ressourcenschonend und für Hochgeschwindigkeits-Datenverteilungen geeignet.

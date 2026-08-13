@@ -62,6 +62,11 @@ The function block does not have an explicit state machine (ECC). Since it only 
 - **ADI_MERGE** – Combines multiple ADI inputs into one output (counterpart to the splitter).
 - **Manual Wiring** – Alternatively, distribution could be achieved by connecting multiple outputs to the same output; however, the splitter in the 4diac IDE is the cleaner and reusable solution.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ADI_SPLIT_4** is a simple yet useful generic function block for multiplying an ADI data stream. It requires no configuration and integrates seamlessly into modular automation projects. Its adapter-based interface ensures flexibility and allows it to be integrated into different environments without modifications to its internal logic.

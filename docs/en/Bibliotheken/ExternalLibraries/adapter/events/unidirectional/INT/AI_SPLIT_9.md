@@ -65,6 +65,11 @@ The block does not have an internal state machine (no ECC). It operates purely o
 - **AI_MERGE**: Combines multiple AI inputs into a single output – the opposite operation.
 - **Direct Adapter Linking**: In 4diac, a single adapter port can theoretically be connected multiple times, but the explicit splitting with this function block is more documented and clearly structured.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AI_SPLIT_9** is a simple yet useful function block for signal multiplication of analog inputs in IEC 61499 applications. Its generic structure and adapter interface allow it to integrate seamlessly into the 4diac ecosystem and facilitate the structured routing of signals. Its use is recommended wherever an AI signal needs to be simultaneously passed to multiple processing units.

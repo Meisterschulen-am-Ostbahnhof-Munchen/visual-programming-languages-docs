@@ -83,6 +83,11 @@ The function block has **no explicit state machine**. There is only an implicit 
 - **Standard MUX Function Blocks:** Often implemented with single data ports (e.g., INT, BOOL). The function block shown here, however, works exclusively with AS adapters, enabling consistent data transmission in AS-based systems.
 - **Decomposition into multiple AS_MUX_2:** In principle possible, but less efficient and clear.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AS_MUX_4** function block offers an elegant and flexible way to select one of four AS data sources. Thanks to its adapter-based interface, it integrates seamlessly into the 4diac IDE and AS communication structures. Its simple, event-driven operation makes it a fundamental building block for selection tasks in automation technology. Its generic design allows for easy integration into a wide variety of projects.

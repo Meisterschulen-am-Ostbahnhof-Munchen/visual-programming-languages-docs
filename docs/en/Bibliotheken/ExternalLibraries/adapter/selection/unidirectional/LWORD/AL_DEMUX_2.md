@@ -75,6 +75,11 @@ A formal state machine is not defined. The function block behaves as follows:
 - **SIMPLE_SELECT**: Simple switch based on a Boolean signal. AL_DEMUX_2, on the other hand, uses an integer index and AL adapter interfaces.
 - **Standard Demultiplexers in Libraries**: Many IEC 61499 libraries offer demultiplexers with more than two outputs (e.g., `DEMUX_4`), but these often only use simple data types and no adapters. AL_DEMUX_2 is specifically optimized for adapter-based applications.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The function block **AL_DEMUX_2** represents a compact, generic solution for forwarding data to two adapter outputs. Its event-driven selection via index makes it particularly suitable for time-controlled or sequential switching operations in automation systems. The use of AL adapters ensures easy integration into existing adapter-based architectures.

@@ -63,6 +63,11 @@ The `AD_SPLIT_3` does not have its own state diagram (ECC). The outputs follow t
 - **AD_MERGE**: Combines multiple adapter inputs into one output – functionally the opposite.
 - **Specific Data Splitters**: Function blocks like `SPLIT_INT` or `SPLIT_BOOL` operate at the data level, not the adapter level. `AD_SPLIT_3` is designed for complete adapter structures (data plus events).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AD_SPLIT_3` is a simple yet useful generic function block for multiplying unidirectional adapters. Due to its pure adapter interface and lack of logic, it is particularly suitable for modular architectures where a signal needs to be distributed to multiple receivers without introducing additional complexity.

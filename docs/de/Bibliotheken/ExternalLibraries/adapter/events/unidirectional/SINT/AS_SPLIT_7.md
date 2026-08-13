@@ -65,6 +65,10 @@ Der **AS_SPLIT_7** besitzt keine Zustandsautomaten, da er rein passiv arbeitet. 
 
 Der **AS_SPLIT_7** gehört zu einer Familie von Splitter‑Bausteinen, die sich nur in der Anzahl der Ausgänge unterscheiden (z. B. `AS_SPLIT_2`, `AS_SPLIT_3`, …, `AS_SPLIT_N`). Gegenüber einer manuellen Verkabelung bietet der FB den Vorteil der Wiederverwendbarkeit, klaren Schnittstellendefinition und einfachen Parametrierbarkeit. Im Gegensatz zu aktiven Signalverteilern (z. B. mit Verstärkung) nimmt der Baustein keinerlei Einfluss auf das Signal und verhält sich daher ideal für passive Anwendungen.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AS_SPLIT_7** ist ein einfacher, aber nützlicher Funktionsblock zur passiven Verteilung eines unidirektionalen AS‑Signals auf sieben Ausgänge. Dank seiner generischen Implementierung und der Adapter‑Schnittstelle fügt er sich nahtlos in moderne, komponentenbasierte Automatisierungslösungen ein. Für Anwendungen, die eine reine Signalvervielfachung ohne Verarbeitung erfordern, stellt er eine zuverlässige und leicht verständliche Lösung dar.

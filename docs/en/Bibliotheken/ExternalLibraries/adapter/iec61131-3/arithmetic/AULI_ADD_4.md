@@ -73,6 +73,11 @@ The function block behaves in an event-driven and stateless manner (i.e., it has
 * **Standard ADD Function Blocks (e.g., `ADD` from IEC 61131-3):** These use direct data and event ports (such as `REQ`, `CNF`, `IN1`, `IN2`). `AULI_ADD_4`, on the other hand, completely encapsulates these interfaces in adapters, resulting in a cleaner control flow diagram.
 * **AULI_ADD_2:** A similar function block, but with only two inputs. `AULI_ADD_4` eliminates the need to cascade multiple individual addition function blocks when adding four values.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AULI_ADD_4` function block is a highly efficient, clear, and modern block for arithmetic operations in IEC 61499. Through the consistent use of the `AULI` adapter structure, it significantly reduces the number of connection lines in the 4diac IDE application editor and is ideally suited for modular automation solutions.

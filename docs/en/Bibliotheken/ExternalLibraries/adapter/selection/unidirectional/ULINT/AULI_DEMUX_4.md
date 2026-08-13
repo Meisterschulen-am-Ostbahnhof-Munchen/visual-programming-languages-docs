@@ -82,6 +82,11 @@ A detailed state graph is not required because the function block operates atomi
 | AULI_DEMUX_2 | Dual Demultiplexer | Same functionality, but only two outputs. |
 | AULI_SWITCH | Switch | Enables dynamic connection between multiple inputs and outputs (matrix topology). |
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AULI_DEMUX_4** is a compact, generic demultiplexer for AULI adapters, ideally suited for the targeted distribution of data streams in agricultural technology. Thanks to its simple event control and adapter interface, it can be easily integrated into existing 4diac process chains. Its generic nature allows for customization without changing the block logic.

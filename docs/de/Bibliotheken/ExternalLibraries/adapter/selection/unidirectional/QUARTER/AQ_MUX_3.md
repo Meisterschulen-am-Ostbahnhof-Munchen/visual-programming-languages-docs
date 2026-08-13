@@ -71,6 +71,10 @@ In der bereitgestellten XML ist kein expliziter ECC (Execution Control Chart) de
 - **AQ_MUX_2** – Ein Multiplexer mit nur zwei Eingängen (IN1, IN2). Der AQ_MUX_3 erweitert diese Funktionalität auf drei Eingänge.
 - **Datenbasierte MUX-Bausteine** – Im Unterschied zu rein datenorientierten Multiplexern (z. B. `MUX` auf Basis von `ANY`-Datentypen) arbeitet der AQ_MUX_3 ausschließlich über Adapter, was eine engere Kopplung an die AQ-Adapter-Schnittstelle bedeutet.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AQ_MUX_3 ist ein einfacher, aber wirksamer generischer Multiplexer für AQ-Adapter. Er erlaubt die flexible Umschaltung zwischen drei analogen Eingängen und eignet sich besonders für modulare Steuerungsarchitekturen, bei denen eine lose Kopplung über Adapter gewünscht ist. Seine deterministische Reaktion und die einfache Schnittstelle machen ihn zu einem zuverlässigen Baustein in der 4diac-IDE.

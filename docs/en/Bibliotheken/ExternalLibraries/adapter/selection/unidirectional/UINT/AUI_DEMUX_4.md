@@ -88,6 +88,11 @@ There are no additional error states. An invalid index (e.g., 0 or >4) can be ig
 
 The `AUI_DEMUX_4` is a simple, clearly defined function block without overhead and is particularly suitable for fixed, pre-defined distributions with a maximum of four paths.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AUI_DEMUX_4` function block provides a simple and efficient solution for signal routing in AUI-based controllers. Thanks to its generic design and clear interfaces, it can be easily integrated into existing systems. The event-driven index switching allows for a rapid response to changes in the target address. This function block offers a robust foundation for many applications requiring dynamic distribution to up to four outputs.

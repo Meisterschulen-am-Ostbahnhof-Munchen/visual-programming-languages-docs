@@ -63,6 +63,11 @@ The AR_SPLIT_5 does not have its own state machine. Its behavior is static and p
 - **AR_SPLIT_2, AR_SPLIT_3, AR_SPLIT_4**: These function blocks split an AR adapter into two, three, or four outputs, respectively. The AR_SPLIT_5 is the extension to five outputs.
 - **AR_MERGE_***: Unlike split function blocks, merge function blocks combine multiple AR adapters into one.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AR_SPLIT_5 is a simple yet useful function block for distributing a unidirectional AR adapter across five independent outputs. Its generic and eventless structure makes it a fundamental tool for adapter-based communication in IEC 61499 systems.

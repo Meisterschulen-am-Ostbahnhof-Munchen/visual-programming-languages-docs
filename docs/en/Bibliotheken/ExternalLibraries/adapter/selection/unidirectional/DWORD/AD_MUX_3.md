@@ -72,6 +72,11 @@ The function block does not have explicit states in the sense of a state machine
 
 Compared to a simple analog switch (e.g., `MUX_2` with two channels), `AD_MUX_3` expands the selection to three channels. Multichannel multiplexers with more than three channels (e.g., `AD_MUX_4_`) are conceivable by adjusting the adapter type and the number of sockets accordingly. This component offers a good balance between flexibility and simplicity.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AD_MUX_3** is a compact, generic multiplexer component for unidirectional analog data. Its clear event-driven interface and the use of IEC 61499 adapters make it ideally suited for the modular design of automation applications requiring dynamic signal selection.

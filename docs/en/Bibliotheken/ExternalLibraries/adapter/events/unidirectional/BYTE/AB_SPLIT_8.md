@@ -68,6 +68,11 @@ The **AB_SPLIT_8** has no internal states or state machines. Signal transmission
 - **`DATA_SPLIT`**: Distributes arbitrary data types (e.g., `INT`, `BOOL`). The `AB_SPLIT_8` function block is specifically designed for the `AB` adapter type and retains the complete adapter structure.
 - **`EC_SPLIT`**: An event splitter that only multiplies events, but not data. In contrast, `AB_SPLIT_8` operates at the adapter level, including all data and events it contains.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AB_SPLIT_8** function block is a simple yet effective block for multiplying a unidirectional AB adapter signal. Its generic design and passive operation make it ideal for parallelizing control and monitoring signals in automation technology. The absence of state logic ensures low runtime complexity and high reliability. This function block is a valuable addition to any 4diac library that relies on adapter communication.

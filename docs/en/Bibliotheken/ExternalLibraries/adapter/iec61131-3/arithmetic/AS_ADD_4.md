@@ -85,6 +85,11 @@ Compared to a classic, standard `ADD` component (according to IEC 61131-3):
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AS_ADD_4` is a specialized, highly efficient function block for modern, adapter-based programming in the 4diac IDE. It is ideally suited for applications that require a high degree of modularity and clarity in the signal flow and need to add four summands cleanly and efficiently.

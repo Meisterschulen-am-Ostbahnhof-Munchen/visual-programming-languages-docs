@@ -65,6 +65,11 @@ The function block has no defined states, as it does not require event-driven ex
 - **AIWS_MERGE:** A compound function block that combines multiple AIWS inputs into one output – the functional inverse of a splitter.
 - **Direct connection:** Instead of a splitter function block, multiple parallel connections could be made in the application model, but this reduces clarity and is more complex to modify.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AIWS_SPLIT_6 is a simple yet useful function block for multiplying AIWS signals in IEC 61499-based controllers. Its generic nature and clear adapter interface facilitate reuse and integration into larger projects.

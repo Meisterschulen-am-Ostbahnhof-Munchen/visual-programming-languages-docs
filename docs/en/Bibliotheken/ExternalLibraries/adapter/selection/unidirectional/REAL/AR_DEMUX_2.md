@@ -79,6 +79,11 @@ Since no internal state variables exist, the behavior is deterministic and concu
 - **AR_SELECTOR**: A simple switch that also selects between two paths, but often without an index event (e.g., via a Boolean input). The AR_DEMUX_2 offers extended selection options through the UINT index and is scalable to multiple outputs (here: two).
 - **SWITCH function blocks (IEC 61499 standard)**: Many standard libraries contain generic demultiplexers for simple data types (e.g., ANY). The AR_DEMUX_2 abstracts the adapter type and is specifically optimized for unidirectional AR interfaces.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AR_DEMUX_2** is a compact, generic demultiplexer for unidirectional AR adapters. It is ideally suited for switching an incoming adapter path to up to two outputs in IEC 61499-based systems. The clearly defined interface with index input and acknowledgment event enables reliable and deterministic switching in automation and control applications. Due to its generic nature, the function block can be reused for different AR types without modifying its internal behavior.

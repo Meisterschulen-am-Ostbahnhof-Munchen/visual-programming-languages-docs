@@ -75,6 +75,11 @@ This function block has no explicit states. It behaves like a combinatorics func
 
 - **Generic DEMUX**: A general-purpose demultiplexer with a configurable number of channels (if available) would be more flexible but requires more configuration. `AUDI_DEMUX_3` is static and therefore easier to use.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AUDI_DEMUX_3` is a simple yet effective module for channel-based forwarding of a unidirectional adapter signal. Its clear interface and event-driven operation make it a reliable component in IEC 61499 applications that require signal distribution to exactly three outputs.

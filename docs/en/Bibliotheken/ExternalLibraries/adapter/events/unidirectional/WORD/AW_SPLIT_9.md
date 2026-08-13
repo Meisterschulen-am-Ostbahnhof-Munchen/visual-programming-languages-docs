@@ -65,6 +65,11 @@ The function block does not have its own state machine, as no events or algorith
 - **Data Split Blocks**: Blocks that split data inputs (e.g., `INT`, `REAL`). `AW_SPLIT_9` operates exclusively at the adapter level and not at individual data points.
 - **Multiplexers (MUX)**: A multiplexer selects one of several inputs, while this block distributes one input to many outputs (fan-out).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AW_SPLIT_9` is a simple yet useful generic function block for splitting a unidirectional AW adapter signal into nine parallel outputs. Its structure is minimalist and purely passive, making it a reliable tool in adapter-oriented control architectures. It requires neither events nor data and can be integrated into existing applications without side effects.

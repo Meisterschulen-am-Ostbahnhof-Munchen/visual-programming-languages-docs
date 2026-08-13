@@ -67,6 +67,11 @@ Compared to simpler demultiplexers, the AX_DEMUX_5 offers five output channels a
 
 Comparison with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)]
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AX_DEMUX_5 is an efficient and flexible demultiplexer for AX-based communication systems. Its five output channels and simple index control offer diverse application possibilities in industrial automation solutions.

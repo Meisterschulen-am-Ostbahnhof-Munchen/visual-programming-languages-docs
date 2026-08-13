@@ -64,6 +64,11 @@ The function block has **no explicit state machine** (ECC). It reacts purely eve
 - **Generic ADI MUX (derived)**: The generic base allows for the creation of specializations with a different number of inputs (e.g., ADI_MUX_3, ADI_MUX_8) without reimplementing the logic.
 - **Difference to Select Function Blocks**: Select function blocks typically operate bitwise or on scalars; ADI_MUX_5 transmits complete adapter data streams.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ADI_MUX_5** is a compact, generic multiplexer for ADI adapters in the 4diac IDE. Its adapter-based interface and simple index control make it a practical tool for flexible signal selection in control applications. The ability to generate a GenericClassName allows for type-safe adaptation to specific projects.

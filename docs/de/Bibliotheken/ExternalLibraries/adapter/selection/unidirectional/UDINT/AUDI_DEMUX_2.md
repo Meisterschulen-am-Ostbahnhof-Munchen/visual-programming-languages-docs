@@ -75,6 +75,10 @@ Der Baustein besitzt implizit einen internen Zustandsautomaten:
 - `AUDI_DEMUX_2` unterscheidet sich von allgemeinen Demultiplexern (z. B. `DEMUX` für elementare Datentypen) durch die Verwendung des komplexen Adaptertyps `AUDI`.
 - Verglichen mit einem Multiplexer (`AUDI_MUX`) kehrt die Datenflussrichtung um – hier wird ein Signal auf mehrere Ausgänge verteilt, während ein Multiplexer mehrere Eingänge auf einen Ausgang zusammenführt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 `AUDI_DEMUX_2` ist ein spezialisierter, generischer Demultiplexer für unidirektionale AUDI‑Schnittstellen. Er ermöglicht eine saubere und ereignisgesteuerte Verteilung von Signalen in Automatisierungssystemen, insbesondere in Umgebungen, die den AUDI‑Adapterstandard nutzen. Die einfache Schnittstelle (ein Index, zwei Ausgänge) macht ihn intuitiv einsetzbar und leicht in bestehende Steuerungslogiken integrierbar.

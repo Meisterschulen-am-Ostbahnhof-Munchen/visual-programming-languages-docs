@@ -57,6 +57,11 @@ This functional block does not have an internal state machine. The routing is st
 - **Event/Data Splitter:** Conventional splitter function blocks (e.g., `SPLIT` for `BOOL`) operate on individual data and event channels. `ADI_SPLIT_2`, on the other hand, copies an entire adapter, including all its data and events.
 - **Mux/Demux Function Blocks:** Multiplexers and demultiplexers perform merging or distribution with selection; `ADI_SPLIT_2` distributes rigidly without selection.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 ADI_SPLIT_2` is a simple yet useful function block for distributing an ADI adapter to two identical outputs. It simplifies the design of adapter-based controllers and avoids redundant source blocks. Its generic nature and lack of internal logic make it a flexible component in IEC 61499 applications.

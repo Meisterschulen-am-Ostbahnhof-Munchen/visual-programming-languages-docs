@@ -74,6 +74,11 @@ The function block does not have an explicit state machine (ECC) in its XML defi
 - **Standard multiplexer blocks** (e.g., `MUX_2`, `MUX_4`) typically use simple data types (BOOL, INT) instead of adapters. `AB_MUX_3` is specifically designed for AB adapters.
 - Unlike a generic multiplexer with a variable number of inputs, this block is fixed to three inputs, which simplifies handling and increases type safety.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AB_MUX_3` is a compact and specialized function block for selecting one of three AB adapter inputs. It is particularly suitable for applications requiring reliable switching between different adapter sources without the need for additional data conversion.

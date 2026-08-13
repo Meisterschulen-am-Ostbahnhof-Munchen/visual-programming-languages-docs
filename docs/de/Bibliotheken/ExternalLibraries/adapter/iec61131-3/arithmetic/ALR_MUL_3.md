@@ -83,6 +83,10 @@ Der Baustein besitzt keine komplexe interne Zustandsmaschine (ECC). Er arbeitet 
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Baustein `ALR_MUL_3` ist eine effiziente und saubere Lösung für dreifache Multiplikationsaufgaben in IEC 61499-Anwendungen. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes Software-Design und sorgt für gut strukturierte Datenflüsse in der 4diac-IDE.

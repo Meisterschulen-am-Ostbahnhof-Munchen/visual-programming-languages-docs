@@ -72,6 +72,10 @@ Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet AX_XOR_7 d
 
 Vergleich mit [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_XOR_7 Funktionsblock stellt eine effiziente Lösung für XOR-Operationen mit mehreren Eingängen dar. Durch die Adapter-basierte Architektur ermöglicht er eine flexible Integration in verschiedene Steuerungssysteme und eignet sich besonders für Anwendungen, die eine Prüfung auf ungerade Parität über mehrere Signale erfordern.

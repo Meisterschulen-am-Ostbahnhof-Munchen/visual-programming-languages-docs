@@ -64,6 +64,11 @@ The function block does not have an explicit state machine. It is always in acti
 - **AULI_SPLIT_4 / AULI_SPLIT_8**: These variants differ only in the number of output channels. The function block described here offers a particularly high distribution density with 9 outputs.
 - **Generic splitter function blocks for other adapter types**: In principle, analog splitters exist for... B. `AULI` adapter with a lower output count. All of them share stateless 1:n duplication.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AULI_SPLIT_9** is a simple yet effective distribution block for the unidirectional AULI adapter. Thanks to its generic nature and complete signal passthrough without latency or processing delay, it is ideally suited for scenarios where a single data set needs to be distributed to many receivers. The lack of event control and the pure adapter approach make it particularly lightweight and performant.

@@ -73,6 +73,10 @@ Der Baustein besitzt keine expliziten Zustände im Sinne einer State‑Machine. 
 
 Im Vergleich zu einem einfachen analogen Schalter (z. B. `MUX_2` mit zwei Kanälen) erweitert `AD_MUX_3` die Auswahl auf drei Kanäle. Multichannel‑Multiplexer mit mehr als drei Kanälen (z. B. `AD_MUX_4_`) sind denkbar, indem der Adapter‑Typ und die Anzahl der Sockets entsprechend angepasst werden. Der vorliegende Baustein bietet eine gute Balance zwischen Flexibilität und Einfachheit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AD_MUX_3** ist ein kompakter, generischer Multiplexer‑Baustein für unidirektionale analoge Daten. Durch seine klare ereignisgesteuerte Schnittstelle und die Verwendung von IEC 61499‑Adaptern eignet er sich hervorragend für den modularen Aufbau von Automatisierungsanwendungen, die eine dynamische Signalauswahl erfordern.

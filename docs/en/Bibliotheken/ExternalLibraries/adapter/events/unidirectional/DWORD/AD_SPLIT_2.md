@@ -58,6 +58,11 @@ The function block has no explicit states. It operates continuously and immediat
 - **AD_MERGE**: Combines multiple adapter inputs into one output – the inverse function of AD_SPLIT_2.
 - **AD_SELECT**: Selects one of several adapter inputs and passes it on, but requires control logic.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AD_SPLIT_2 is a simple yet effective function block for signal distribution in adapter-based architectures. Its generic nature and lack of state logic make it easy to configure and resource-efficient. It is particularly suitable for modular automation projects where an adapter signal needs to be distributed to multiple downstream components.

@@ -78,6 +78,11 @@ Distinguishing between multiple internal states is not required.
 
 Unlike a **multiplexer** (e.g., `ALI_MUX`), which combines multiple inputs into one output, the `ALI_DEMUX_3` distributes a single input to multiple outputs. Compared to a **static splitter** (which copies all inputs in parallel), the demux allows index-based selection, thus reducing the bus load. Similar function blocks exist for other data types (e.g., `GEN_DEMUX` for generic data), but this function block is specifically optimized for the ALI adapter type.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ALI_DEMUX_3** is a compact, generic demultiplexer for ALI data streams with three outputs. It is particularly suitable for modular architectures that require flexible signal rerouting. Thanks to its adapter interface, it can be seamlessly integrated into existing IEC 61499 applications and offers high reusability due to its generic basis.

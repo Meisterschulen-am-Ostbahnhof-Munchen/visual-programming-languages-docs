@@ -60,6 +60,10 @@ Der FB besitzt **keinen internen Zustand** und keine Zustandsmaschine. Er führt
 - **Adapter-Merger (z. B. AL_MERGE):** Führen mehrere Adapter-Signale zu einem zusammen – das Gegenteil der hier beschriebenen Funktion.
 - **Individuelle AL-Splitter:** Für andere Ausgangsanzahlen (z. B. AL_SPLIT_2, AL_SPLIT_4) existieren ebenfalls generische Varianten, die sich nur in der Anzahl der Plugs unterscheiden.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **AL_SPLIT_3** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfältigung eines unidirektionalen Adapter-Signals auf drei unabhängige Ausgänge. Aufgrund seiner passiven Natur ist er ressourcenschonend und eignet sich ideal zur flexiblen Gestaltung von IEC 61499 Anwendungen, in denen ein Signal mehrfach benötigt wird, ohne die Quelllogik zu verändern.

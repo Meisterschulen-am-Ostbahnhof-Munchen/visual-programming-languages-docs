@@ -64,6 +64,11 @@ The function block has **no** states of its own. Its behavior is purely combinat
 
 While `AB_SPLIT_9` distributes a single source to multiple sinks, `AB_MERGE` combines several sources into a single output. Therefore, `AB_SPLIT_9` is the ideal choice when a signal needs to be routed to many consumers.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AB_SPLIT_9** offers a simple yet powerful way to split a single adapter-based data stream into nine parallel paths. Its generic nature allows it to be used in any 4diac project, requires no state programming, and enables a clean, modular architecture. It is a fundamental building block for the serial or parallel distribution of adapter signals in automation technology.

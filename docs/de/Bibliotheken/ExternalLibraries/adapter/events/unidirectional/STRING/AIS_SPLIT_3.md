@@ -65,6 +65,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Sein Verhalten entspri
 
 Der AIS_SPLIT_3 füllt die Lücke zwischen dem einfachen 2-Wege-Splitter und einem vollständig parametrierbaren Splitter.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AIS_SPLIT_3** ist ein einfacher, aber effektiver Baustein zur Vervielfachung eines AIS-Datenstroms. Dank seiner generischen Natur und der klaren adapterbasierten Schnittstelle lässt er sich leicht in größere 4diac-Projekte integrieren. Für Anwendungen, die eine mehrfache Verteilung ohne Datenänderung erfordern, bietet er eine robuste und wartbare Lösung.

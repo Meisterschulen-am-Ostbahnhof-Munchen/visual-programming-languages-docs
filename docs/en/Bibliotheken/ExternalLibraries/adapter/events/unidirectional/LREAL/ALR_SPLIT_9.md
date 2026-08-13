@@ -57,6 +57,11 @@ The FB has no state machine because it has no internal logic or memory behavior.
 - **Data Type Splitters (e.g., `SPLIT_INT`):** These operate at the data level, while `ALR_SPLIT_9` operates at the adapter level (signal/event forwarding).
 - **Adapter Multiplexers/Demultiplexers:** Unlike these, `ALR_SPLIT_9` does not select or combine signals, but simply forwards the incoming signal 1:9.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ALR_SPLIT_9** is a simple yet practical function block for distributing a unidirectional ALR signal across nine parallel paths. It is easy to understand, requires no resources for logic or states, and can be directly integrated into control programs that require signal duplication.

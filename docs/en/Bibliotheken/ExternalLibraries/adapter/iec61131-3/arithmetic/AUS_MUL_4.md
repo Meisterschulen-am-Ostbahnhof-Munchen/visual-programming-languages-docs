@@ -86,6 +86,11 @@ Compared to standard multiplication components (such as the classic `MUL` of IEC
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUS_MUL_4` is a highly efficient and modern function block for the 4diac IDE. It combines the fundamental mathematical function of multiplication with the modern structuring advantages of IEC 61499 adapters, resulting in cleaner, more maintainable, and more transparent control applications.

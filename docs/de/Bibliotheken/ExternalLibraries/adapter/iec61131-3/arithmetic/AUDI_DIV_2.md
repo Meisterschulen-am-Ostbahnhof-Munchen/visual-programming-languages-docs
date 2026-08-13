@@ -124,6 +124,10 @@ Die Ausführung folgt einem einfachen, ereignisgesteuerten Schema:
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUDI_DIV_2` ist ein moderner, adapterbasierter Funktionsbaustein für die IEC 61499. Er eignet sich hervorragend für komplexe Projekte in der 4diac-ide, bei denen ein hoher Wert auf Übersichtlichkeit, Kapselung und einfache Wartbarkeit des Applikationsdiagramms gelegt wird.

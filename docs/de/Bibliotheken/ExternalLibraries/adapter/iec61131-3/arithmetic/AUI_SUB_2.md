@@ -85,6 +85,10 @@ Im Vergleich zu einem Standard-Subtraktionsblock (wie dem klassischen `SUB`-Baus
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_SUB_2` ist ein hocheffizienter, übersichtlicher und moderner Funktionsbaustein zur Durchführung von Subtraktionen. Durch die konsequente Nutzung von Adaptern fügt er sich nahtlos in serviceorientierte und modularisierte Steuerungskonzepte ein und trägt zu einem sauberen Software-Design in der 4diac IDE bei.

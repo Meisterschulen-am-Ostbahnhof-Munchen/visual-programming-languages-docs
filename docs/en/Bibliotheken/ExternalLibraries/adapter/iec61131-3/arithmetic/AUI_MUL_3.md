@@ -85,6 +85,11 @@ Compared to a classic, non-generic IEC 61131-3 standard function block, the `MUL
 
 --
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUI_MUL_3` is a highly efficient and reusable function block for arithmetic calculations. By combining generic data processing with modern adapter technology, it is ideally suited for clean, clear and maintainable control architectures in IEC 61499 environments.

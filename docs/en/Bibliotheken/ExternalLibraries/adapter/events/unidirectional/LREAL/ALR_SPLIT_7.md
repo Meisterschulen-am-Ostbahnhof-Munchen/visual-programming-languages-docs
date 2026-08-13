@@ -70,6 +70,11 @@ The function block does not have an internal state machine. There are no states 
 
 All variations are based on the same principle: unidirectional distribution without signal modification.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `ALR_SPLIT_7` is a simple yet useful function block for splitting a single ALR signal into seven parallel paths. Its generic implementation allows it to be used in various industrial or agricultural automation scenarios where a signal is needed multiple times. It does not offer complex logic but reliably fulfills its function as a passive splitter.

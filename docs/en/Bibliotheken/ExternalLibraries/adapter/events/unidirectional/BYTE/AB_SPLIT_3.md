@@ -66,6 +66,11 @@ The function block has **no explicit state machine**. The behavior is purely dat
 
 While `SPLIT_2` offers only two outputs, `AB_SPLIT_3` covers the need for triple distribution. No additional logic functions such as filtering or delay are implemented.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AB_SPLIT_3** is a simple yet useful generic splitter block for unidirectional adapters. It enables clean structuring of automation applications by splitting an incoming signal path into three parallel paths. Thanks to its generic nature, it can be used with any AB adapter type and integrates seamlessly into the IEC 61499-2 compliant 4diac development environment.

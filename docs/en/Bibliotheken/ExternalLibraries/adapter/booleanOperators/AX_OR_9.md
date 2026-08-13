@@ -71,6 +71,11 @@ Compared to standard OR function blocks with fewer inputs, AX_OR_9 offers the ab
 
 Comparison with [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_9 is a specialized OR function block for applications that need to logically combine exactly nine input signals. Its fixed number of inputs and simple operation make it particularly suitable for clearly defined control tasks with redundant input signals.

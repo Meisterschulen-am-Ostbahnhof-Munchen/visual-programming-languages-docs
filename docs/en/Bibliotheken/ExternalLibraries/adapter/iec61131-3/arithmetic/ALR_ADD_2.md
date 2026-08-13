@@ -75,6 +75,11 @@ Compared to a standard `ADD` function block (which has separate event inputs lik
 
 --
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_ADD_2` is a modern and highly efficient variant of the classic addition function block. It is ideally suited for service-oriented architectures and distributed control systems within the 4diac environment, where clarity and standardized adapter interfaces are paramount.

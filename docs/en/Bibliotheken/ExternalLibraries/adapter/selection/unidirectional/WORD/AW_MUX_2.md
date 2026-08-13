@@ -75,6 +75,11 @@ The function block does not have an internal state machine. Its functionality is
 
 The `AW_MUX_2` fills the gap between pure data multiplexers and full protocol switchers.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AW_MUX_2** is a simple yet powerful function block for adapter switching in the 4diac IDE. By using the generic adapter type `AW` and index-based selection, it is suitable for flexible switching in modular automation solutions. The absence of a state machine makes it resource-efficient and easy to use, while the clear event-based control ensures reliable synchronization.

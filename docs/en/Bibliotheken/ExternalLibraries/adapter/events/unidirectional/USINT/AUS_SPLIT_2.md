@@ -59,6 +59,11 @@ Since the function block has no state logic, there is no state machine. Its func
 - **Event-Based Splitters**: Unlike components with event inputs (e.g., `E_SPLIT`), `AUS_SPLIT_2` operates exclusively via adapters and is therefore suitable for pure signal distribution without control logic.
 - **Merge Blocks**: While splitters duplicate signals, merge blocks combine multiple signals into one (e.g., `AUS_MERGE_2`).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AUS_SPLIT_2` is a minimalist yet useful function block for decentralized signal distribution in 4diac applications. Its generic nature and simple adapter interface make it universally applicable, especially when only unidirectional signal copying is required. More complex tasks involving control or processing logic require extended versions.

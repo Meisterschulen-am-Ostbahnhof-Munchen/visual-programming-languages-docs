@@ -70,6 +70,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Die Verarbeitung er
 - Im Gegensatz zu **schaltbaren Verbindungsbausteinen** (z. B. `MUX` mit `ANY`‑Typen) arbeitet `ALR_MUX_4` ausschließlich mit einem festen Adapter‑Protokoll und ist daher für standardisierte ALR‑Daten optimiert.
 - Verglichen mit einem **16‑Kanal‑Multiplexer** bietet dieser Baustein eine kleinere, auf vier Kanäle beschränkte Auswahl, was die Komplexität reduziert und die Wartbarkeit erhöht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_MUX_4` ist ein kompakter, ereignisgesteuerter Multiplexer für vier ALR‑Adapter‑Eingänge. Seine adapterbasierte Schnittstelle und die parametrisierbare Indexauswahl machen ihn zu einem flexiblen Werkzeug für die Signalkanal‑Umschaltung in industriellen Steuerungssystemen. Die einfache Handhabung (ein Ereignis, ein Index) erlaubt eine schnelle Integration in bestehende Automatisierungslösungen.

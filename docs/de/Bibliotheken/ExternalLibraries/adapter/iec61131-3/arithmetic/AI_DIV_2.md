@@ -79,6 +79,10 @@ Der Baustein `AI_DIV_2` ist ein zustandsloser (stateless) Kombinationsbaustein. 
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AI_DIV_2` ist ein hocheffizienter und moderner Hilfsbaustein für die analoge Signalverarbeitung in 4diac. Durch die konsequente Nutzung von Adaptern fügt er sich nahtlos in serviceorientierte Steuerungsarchitekturen ein und minimiert den Implementierungs- und Testaufwand für mathematische Grundoperationen.

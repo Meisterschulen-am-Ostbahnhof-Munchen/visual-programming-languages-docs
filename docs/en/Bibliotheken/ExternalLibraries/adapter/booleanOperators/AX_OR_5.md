@@ -67,6 +67,11 @@ Compared to standard OR blocks with fewer inputs, AX_OR_5 offers the ability to 
 
 Comparison with [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_5 function block provides an efficient solution for five-input OR logic operations. Using adapters, it allows for flexible integration into various system architectures and is particularly suitable for applications requiring logical combinations of multiple signals.

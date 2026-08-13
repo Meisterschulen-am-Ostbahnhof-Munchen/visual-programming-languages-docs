@@ -74,6 +74,10 @@ Der Baustein besitzt **keine explizite Zustandsmaschine (ECC)**. Er verhält sic
 - **MUX_2 / MUX_4**: Diese Bausteine arbeiten meist mit zwei bzw. vier Eingängen und nutzen oft direkte Datenports statt Adaptern. AUS_MUX_3 ist speziell für den **AUS-Adapter-Typ** ausgelegt und bietet eine saubere adapterbasierte Kapselung der Signale.
 - **SELECT / SWITCH**: Allgemeine Auswahlbausteine arbeiten typischerweise mit einfachen Datentypen; der AUS_MUX_3 hingegen überträgt gesamte Adapterverbindungen, was eine höhere Abstraktionsebene erlaubt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUS_MUX_3** ist ein kompakter, generischer Baustein zur Adapter-Multiplexierung mit drei Eingängen. Dank seiner Ereignissteuerung und der Verwendung des unidirektionalen AUS-Adapters eignet er sich ideal für die flexible Signalauswahl in Automatisierungslösungen, bei denen unterschiedliche Datenquellen auf eine gemeinsame Senke geschaltet werden müssen. Die generische Auslegung erleichtert die Wiederverwendung und Anpassung in verschiedenen Projekten.

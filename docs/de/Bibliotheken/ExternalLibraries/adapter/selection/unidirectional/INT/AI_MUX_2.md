@@ -85,6 +85,10 @@ Es gibt keine internen Variablen, die einen Zustand speichern.
 
 Der **AI_MUX_2** ist speziell für analoge (AI-)Signale über Adapter ausgelegt und daher in komplexen Automatisierungssystemen, die auf Adapter-Kommunikation setzen, besser integrierbar als ein standardisierter SEL-Baustein.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AI_MUX_2** ist ein einfacher, aber effektiver Funktionsblock zur ereignisgesteuerten Umschaltung zwischen zwei analogen Signalen. Er nutzt das Adapterkonzept der 61499-2-Norm, um eine saubere Trennung von Daten- und Ereignisflüssen zu gewährleisten. Durch seinen generischen Aufbau kann er leicht an kundenspezifische Anforderungen angepasst werden. Der FB eignet sich besonders für modulare Steuerungsarchitekturen, in denen analoge Signalpfadumschaltungen benötigt werden.

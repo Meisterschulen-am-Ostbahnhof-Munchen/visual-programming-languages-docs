@@ -82,6 +82,11 @@ While the function block is in state `SELECT`, no further `REQ` events are accep
 - **SEL (Selector)**: Simple case differentiation with data inputs/outputs. AS_MUX_2 uses adapters, enabling more flexible and structured connections.
 - **Adapter-based multiplexers from other libraries**: Often extended to multiple channels (e.g., 4-way); AS_MUX_2 focuses on 2-way selection.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 AS_MUX_2 is a compact and generic component for switching between two adapters. Thanks to the adapter technology, complex signal paths can be modeled cleanly and switched dynamically at runtime. Its ease of use (one event input, one index) makes it particularly suitable for applications requiring fast and reliable source selection.

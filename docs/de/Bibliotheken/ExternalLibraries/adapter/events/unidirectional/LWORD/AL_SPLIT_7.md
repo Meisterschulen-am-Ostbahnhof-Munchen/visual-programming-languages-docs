@@ -58,6 +58,10 @@ Der Baustein hat keine internen Zustände. Er ist jederzeit bereit, eingehende A
 
 Im Vergleich zu einem **AL_SPLIT_2** oder **AL_SPLIT_4** bietet **AL_SPLIT_7** eine höhere Anzahl von Ausgängen (sieben statt zwei oder vier). Während kleinere Splitter bei geringen Anforderungen ausreichen, ermöglicht dieser Baustein eine direkte Verteilung an sieben Empfänger, ohne mehrere Splitter kaskadieren zu müssen. Gegenüber einem **AL_MERGE** (der mehrere Eingänge zusammenführt) ist die Funktion genau entgegengesetzt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AL_SPLIT_7** ist ein einfacher, aber nützlicher generischer Baustein zur Vervielfältigung von unidirektionalen AL-Adapterverbindungen. Dank seiner generischen Natur und der klaren Schnittstelle lässt er sich flexibel in Automatisierungs- und Steuerungssysteme integrieren, in denen ein Signal auf mehrere Pfade verteilt werden muss. Seine implementationsbedingte Transparenz gewährleistet eine verlustfreie Weitergabe ohne zusätzliche Latenz.

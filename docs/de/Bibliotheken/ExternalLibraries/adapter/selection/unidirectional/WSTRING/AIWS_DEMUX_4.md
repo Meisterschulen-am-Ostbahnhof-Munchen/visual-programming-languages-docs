@@ -79,6 +79,10 @@ Es gibt keine internen Fehlerzustände oder Timeout-Mechanismen.
 - **AIWS_DEMUX_4 vs. Multiplexer (AIWS_MUX)**: Der Demultiplexer verteilt einen Eingang auf mehrere Ausgänge, der Multiplexer wählt einen von mehreren Eingängen aus. Beide arbeiten komplementär.
 - **AIWS_DEMUX_4 vs. manuelle Indexsteuerung**: Ohne diesen Baustein müsste die Datenweitergabe programmatisch in Funktionsbausteinen oder Skripten umgesetzt werden – der Demux kapselt diese Logik wiederverwendbar.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AIWS_DEMUX_4** ist ein kompakter, adapterbasierter Demultiplexer für AIWS-Datenströme in IEC 61499‑Systemen. Er ermöglicht eine saubere Trennung von Datenweiterleitung und Steuerungslogik und eignet sich besonders für modulare Automatisierungsanwendungen. Die generische Auslegung erlaubt eine einfache Skalierung auf andere Kanalzahlen.

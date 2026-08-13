@@ -84,6 +84,11 @@ The switchover occurs within the same cycle; the function block is non-blocking.
 - **Standard demultiplexer**: Common function block libraries often contain demultiplexers with a fixed number of channels (e.g., DEMUX_4). However, the function block described here uses adapter types and is tailored to the specific data type `AUS`.
 - **Generic variants**: The generic approach (`GEN_AUS_DEMUX`) allows the creation of function blocks with any number of channels, which increases reusability.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AUS_DEMUX_4` is a specialized demultiplexer for the IEC 61499 adapter type `AUS`. It enables the flexible, event-driven distribution of an input signal to four output channels. The use of adapters makes the device compatible with other components of the same type and promotes a clean, modular system architecture. Its generic base allows it to be easily adapted to other channel counts.

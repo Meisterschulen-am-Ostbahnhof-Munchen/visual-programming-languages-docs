@@ -63,6 +63,11 @@ The function block has no internal state machine or discrete states. Its operati
 - **Generic Splits with Events**: Some splitters operate in an event-driven manner (e.g., `E_SPLIT`), but then require additional triggers. In contrast, `AB_SPLIT_6` operates continuously and without events via the adapter interface.
 - **Data Splitters (e.g., `F_SPLIT`)**: These split individual data values (e.g., an array), while `AB_SPLIT_6` copies the entire adapter data stream unchanged.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AB_SPLIT_6` is a simple yet useful generic function block for multiplying a unidirectional adapter signal to up to six outputs. It is easy to understand, requires no configuration, and is ideally suited for the rapid distribution of adapter data in industrial control applications.

@@ -73,6 +73,11 @@ The function block does not have an internal state machine. The demultiplex func
 
 A **MUX** (multiplexer) performs the reverse function – multiple inputs are switched to one output. The **AI_DEMUX_5** is a demultiplexer with five fixed outputs. Unlike a generic, configurable DEMUX (e.g., with a variable number of outputs), the number here is fixed at five, providing a clear interface for typical applications with up to five destinations. Compared to a manual, cascaded setup with multiple 1-to-2 demultiplexers, this function block reduces complexity and improves clarity.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AI_DEMUX_5** is a compact, generic demultiplexer for analog input signals in the 4diac IDE. With its simple event control, Index K input, and adapter-based interface, it is ideally suited for routing AI values in modular control applications. The fixed number of five outputs covers many practical requirements, while the generic implementation allows for flexible reuse.

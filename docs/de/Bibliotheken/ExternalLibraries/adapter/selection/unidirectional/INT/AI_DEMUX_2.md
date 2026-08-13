@@ -74,6 +74,10 @@ Der FB besitzt keine expliziten Zustände im Sinne einer Zustandsmaschine. Die V
 
 Im Vergleich zu einem softwarebasierten Demultiplexer (z. B. in IEC 61499 mit mehreren SEND-Ereignissen) zeichnet sich **AI_DEMUX_2** durch die enge Kopplung an den AI-Adaptertyp und die saubere Aufteilung in Socket/Plug aus.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AI_DEMUX_2** ist ein spezialisierter Baustein zur gerichteten Verteilung analoger Adaptersignale. Seine generische Natur und die klare Schnittstelle machen ihn zu einem nützlichen Werkzeug in modularen Automatisierungsprojekten, insbesondere bei der Signalumschaltung oder -verteilung auf zwei parallele Pfade. Durch die Verwendung von Adaptern bleibt die Datenintegrität gewahrt, und die einfache Indexsteuerung ermöglicht eine flexible Integration in übergeordnete Steuerungslogiken.

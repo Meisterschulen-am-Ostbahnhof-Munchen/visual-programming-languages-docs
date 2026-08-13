@@ -69,6 +69,10 @@ Der FB besitzt keinen Zustandsautomaten. Es findet keine sequentielle Abarbeitun
 - **AUI_MERGE_***: Ein Merger fasst mehrere AUI-Eingänge zu einem Ausgang zusammen – die entgegengesetzte Funktion. Der Splitter verteilt hingegen.
 - **Generische Splitter anderer Adaptertypen (z. B. Daten-basiert)**: Im Gegensatz zu Daten-Ereignis-Splittern arbeitet AUI_SPLIT_9 rein auf Adapterebene und benötigt keine Ereignissteuerung, was den Implementierungsaufwand reduziert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUI_SPLIT_9** ist ein einfacher, aber effektiver Funktionsbaustein zur Mehrfachverteilung unidirektionaler AUI-Signale. Seine generische Natur ermöglicht eine flexible Wiederverwendung in verschiedenen Projekten. Aufgrund der fehlenden Eigenlogik ist der Baustein ressourcenschonend und leicht verständlich. Er eignet sich besonders für die schnelle Realisierung von 1-zu-n-Verbindungen in adapterbasierten Automatisierungsarchitekturen.

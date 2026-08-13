@@ -66,6 +66,10 @@ Der Baustein besitzt keinen internen Zustandsautomaten (kein ECC). Er verhält s
 - **AI_MERGE**: Führt mehrere AI‑Eingänge zu einem Ausgang zusammen – die gegenteilige Operation.
 - **Direkte Adapter‑Verknüpfung**: In 4diac kann ein einzelner Adapter‑Port konzeptionell auch mehrfach verbunden werden, jedoch ist die explizite Splittung mit diesem FB dokumentierter und klarer strukturiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AI_SPLIT_9** ist ein einfacher, aber nützlicher Funktionsblock zur Signalvervielfachung von analogen Eingängen in IEC 61499‑Applikationen. Durch seinen generischen Aufbau und die Adapter‑Schnittstelle fügt er sich nahtlos in das 4diac‑Ökosystem ein und erleichtert die strukturierte Verschaltung von Signalen. Seine Verwendung empfiehlt sich überall dort, wo ein AI‑Signal gleichzeitig an mehrere Verarbeitungseinheiten übergeben werden muss.

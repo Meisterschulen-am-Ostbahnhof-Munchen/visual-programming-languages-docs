@@ -69,6 +69,10 @@ Der Baustein besitzt kein internes Zustandsverhalten (keine State Machine / ECC)
 *   **Standard-MUL-Bausteine (IEC 61131-3)**: Klassische Multiplikationsbausteine arbeiten in der Regel direkt mit Standard-Datentypen (z. B. `REAL`) und erfordern separate Event-Verbindungen (`REQ`/`CNF`). `ALR_MUL_4` vereinfacht dies durch die Nutzung von Adaptern.
 *   **ALR_MUL_2 / ALR_MUL_3**: Diese Bausteine sind für die Multiplikation von nur zwei oder drei Werten ausgelegt. Der `ALR_MUL_4` spart bei der Notwendigkeit von vier Multiplikanden zusätzliche Zwischenschritte und zusätzliche Bausteinkaskaden ein, was die Performance und Übersichtlichkeit des Steuerungsprogramms verbessert.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_MUL_4`-Funktionsbaustein ist ein praktischer Hilfsbaustein für die mathematische Signalverarbeitung in 4diac. Durch die konsequente Nutzung des Adapterkonzepts trägt er maßgeblich zur Reduzierung von Verbindungslinien im Anwendungsdiagramm bei und bietet gleichzeitig die Flexibilität eines generischen Funktionsbausteins.

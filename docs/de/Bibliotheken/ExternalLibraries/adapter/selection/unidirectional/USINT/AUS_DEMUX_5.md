@@ -70,6 +70,10 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine** (kein ECC). Die 
 - **AUS_DEMUX_5 vs. konventioneller DEMUX mit Datenausgängen**: Während klassische Demultiplexer oft über skalare Datenausgänge verfügen, nutzt dieser FB Adapterschnittstellen. Das ermöglicht eine engere Kopplung an andere Adapter-basierte Bausteine und erleichtert die modulare Systemgestaltung.
 - **AUS_DEMUX_5 vs. MUX-Bausteine**: Der AUS_DEMUX übernimmt die entgegengesetzte Funktion eines Multiplexers (z.B. AUS_MUX), der mehrere Eingänge auf einen Ausgang zusammenführt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AUS_DEMUX_5** ist ein spezialisierter, generischer Funktionsblock zur unidirektionalen Signalverteilung über Adapterschnittstellen. Seine klare, ereignisgesteuerte Logik und die Verwendung von bis zu fünf Ausgängen machen ihn zu einem nützlichen Werkzeug für die modulare und flexible Automatisierung nach IEC 61499. Durch den generischen Typ lässt er sich leicht an verschiedene Adaptervarianten anpassen, was die Wiederverwendbarkeit erhöht.

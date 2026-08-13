@@ -80,6 +80,11 @@ The function block behaves like a stateless mathematical operator. There is no i
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUDI_SUB_2` is a specialized, yet flexible, function block for subtraction due to its generic nature. It is ideally suited for service-oriented architectures within 4diac, where a unified interface concept using unidirectional adapters is paramount.

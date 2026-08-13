@@ -61,6 +61,11 @@ The function block does not have a state machine. The calculation is purely data
 
 Compared to classic, data-input-based addition blocks (e.g., `ADD`), `AR_ADD_2` is distinguished by its adapter interfaces. While standard adders often operate with single inputs (`IN1`, `IN2`) and one output (`OUT`), adapters enable direct connection to more complex data structures and greater reusability through type safety. The block is intentionally generic, allowing for dynamic type adjustment at runtime.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 AR_ADD_2` is a compact, generic function block for adding two values using adapter interfaces. It is particularly suitable for cross-system applications where type flexibility and loose coupling via adapters are required. Its simple, stateless architecture makes it robust and easy to integrate into existing automation projects.

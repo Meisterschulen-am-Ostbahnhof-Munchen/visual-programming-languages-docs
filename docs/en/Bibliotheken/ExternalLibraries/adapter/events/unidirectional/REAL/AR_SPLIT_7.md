@@ -59,6 +59,11 @@ The function block (FB) does not have a state machine (ECC). Distribution is sta
 - **AR_MERGE** – Merging multiple AR adapters into one, i.e., the inverse operation.
 - **AR_COPY** – Often used as a dedicated function block for a single 1:1 distribution, while `AR_SPLIT_7` handles multiple outputs at once.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AR_SPLIT_7** is a lean, generic function block for easily distributing one AR adapter to up to seven target adapters. Thanks to its generic nature, it can be used immediately without modifying the type information and is particularly suitable for loosely coupled, dataflow-oriented architectures in automation technology.

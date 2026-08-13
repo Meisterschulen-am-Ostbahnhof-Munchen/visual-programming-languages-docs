@@ -73,6 +73,10 @@ Die Ausführungslogik wird typischerweise durch Ereignisse auf den Eingangs-Adap
 
 Im Vergleich zu einem Standard-Subtraktionsbaustein (z. B. `SUB` aus der IEC 61131-3-Bibliothek), der mit expliziten Eingängen wie `REQ`, `IN1` und `IN2` arbeitet, bietet der `AS_SUB_2` durch die Kapselung in Adaptern eine wesentlich höhere Modularität. Er eignet sich besonders für fortgeschrittene Softwarearchitekturen in IEC 61499, bei denen Daten- und Signalflüsse als logische Einheiten (Schnittstellen) zusammengefasst werden sollen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_SUB_2` ist ein hocheffizienter, wiederverwendbarer und übersichtlicher Funktionsbaustein zur Realisierung von Subtraktionsaufgaben. Seine Stärke liegt in der konsequenten Nutzung von Adaptern, was zu saubereren Software-Designs und einer verbesserten Wartbarkeit innerhalb der 4diac-ide führt.

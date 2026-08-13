@@ -70,6 +70,10 @@ Da es sich um einen adapterbasierten Baustein zur reinen arithmetischen Datenver
 *   **Standard-Addierer (z. B. `F_ADD`):** Ein klassischer IEC 61131-3 Addier-Baustein benötigt separate Datenleitungen und Event-Verbindungen. `ADI_ADD_4` bündelt diese in Adaptern, was die visuelle Komplexität im Editor reduziert.
 *   **Zweifach-Addierer (`ADI_ADD_2`):** Zur Addition von vier Werten müssten drei zweifache Addierer kaskadiert werden. Der `ADI_ADD_4` spart hierbei signifikant Platz und Ausführungszeit, indem er die Berechnung in einem einzigen Schritt bündelt.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ADI_ADD_4` ist ein performanter und effizienter Funktionsbaustein zur Addition von vier numerischen Signalen. Durch die konsequente Nutzung von Adaptern reduziert er die Anzahl der physischen Verbindungen im Steuerungsprogramm und trägt maßgeblich zu einer übersichtlichen und wartungsfreundlichen Softwarearchitektur bei.

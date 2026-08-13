@@ -59,6 +59,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten (ECC), da er keinerlei 
 - **Adapter-Multiplexer (z. B. AIS_MERGE)** – Während ein Splitter einen Eingang auf mehrere Ausgänge verteilt, fasst ein Merger mehrere Eingänge zu einem Ausgang zusammen. Der AIS_SPLIT_7 ist das Gegenstück dazu.
 - **Event-Splitter** – Unterscheiden sich durch die Verarbeitung von Ereignissen; der AIS_SPLIT_7 arbeitet hingegen rein adapterbasiert ohne separate Ereigniskanäle.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AIS_SPLIT_7** ist ein einfacher, aber effektiver Funktionsblock zur Verteilung eines unidirektionalen AIS-Datenstroms auf sieben parallele Ausgänge. Seine generische Ausführung und die ausschließliche Nutzung von Adaptern machen ihn zu einem flexiblen Werkzeug in der automatisierungstechnischen Anwendungsentwicklung nach IEC 61499. Durch das Fehlen von Zustandslogik und Ereignissteuerung ist er leichtgewichtig und für reine Verteilungsaufgaben optimal geeignet.

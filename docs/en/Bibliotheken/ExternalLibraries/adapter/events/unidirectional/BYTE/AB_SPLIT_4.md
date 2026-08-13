@@ -59,6 +59,11 @@ The function block does not have an internal state machine (ECC – Execution Co
 
 Similar splitter function blocks exist for other adapter types or for data-based forwarding. The `AB_SPLIT_4` is characterized by its specific fit for the adapter type `AB` and its unidirectional design. Unlike function blocks with event or data interfaces, it requires no additional clocking or synchronization – the distribution is implicit in the connection topology.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AB_SPLIT_4` is a simple yet useful generic function block for multiplying a unidirectional adapter connection. It simplifies the structuring of control applications by avoiding redundant wiring and enabling a clear distribution of signal pins. Its generic implementation makes it flexible and usable in various contexts.

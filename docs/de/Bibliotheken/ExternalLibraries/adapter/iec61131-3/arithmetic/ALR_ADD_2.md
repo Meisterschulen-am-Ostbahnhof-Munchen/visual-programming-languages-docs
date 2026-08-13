@@ -77,6 +77,10 @@ Im Vergleich zu einem Standard-`ADD`-Funktionsbaustein (der separate Event-Eing�
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_ADD_2` ist eine moderne und hocheffiziente Variante des klassischen Additionsbausteins. Er eignet sich hervorragend für serviceorientierte Architekturen und verteilte Steuerungssysteme innerhalb der 4diac-Umgebung, bei denen Übersichtlichkeit und standardisierte Adapter-Schnittstellen im Vordergrund stehen.

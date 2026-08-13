@@ -73,6 +73,10 @@ Der Baustein besitzt **keine explizite Zustandsmaschine** (ECC). Die Funktionali
 
 Im Standard-Funktionsblock-Repertoire existieren Multiplexer wie `MUX_2`, `MUX_4` usw. Diese arbeiten jedoch meist mit direkten Datentypen (BOOL, INT usw.) und nicht mit Adaptern. Der **ALR_MUX_2** ist speziell für ALR-Adapter ausgelegt und ermöglicht die strukturierte Weitergabe komplexer Datenfelder ohne zusätzliche Serialisierung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ALR_MUX_2** ist ein spezialisierter, generischer Multiplexer für unidirektionale ALR-Adapter. Er bietet eine einfache, ereignisgesteuerte Umschaltung zwischen zwei Eingängen und eignet sich besonders für Anwendungen in der Landwirtschaftstechnik, wo ALR-Datenströme flexibel gelenkt werden müssen. Aufgrund der EPL-2.0-Lizenz kann er frei verwendet und angepasst werden.

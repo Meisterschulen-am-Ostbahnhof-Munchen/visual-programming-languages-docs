@@ -74,6 +74,10 @@ Der Baustein besitzt keinen expliziten internen Zustandsautomaten. Die Funktions
 - **`AUI_DEMUX`**: Ein Demultiplexer, der einen Eingang auf mehrere Ausgänge verteilt.
 - **Standard `MUX`-Bausteine (für Basisdatentypen)**: Diese arbeiten meist mit elementaren Datentypen (INT, BOOL) und haben einen vergleichbaren Auswahlmechanismus, jedoch ohne Adapter-Schnittstelle.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_MUX_3` ist ein spezialisierter, aber flexibler Multiplexer für den unidirektionalen AUI-Adapter. Er ermöglicht eine saubere Ereignis-gesteuerte Auswahl aus drei Quellen und eignet sich besonders für modulare Automatisierungslösungen, die auf dem Adapter-Konzept basieren. Die einfache Handhabung und die generische Parametrierbarkeit machen ihn zu einem nützlichen Werkzeug in der 4diac-IDE.

@@ -64,6 +64,10 @@ Der Baustein besitzt keinen internen Automaten oder diskrete Zustände. Die Funk
 - **Generische Splits mit Ereignissen**: Manche Splitter arbeiten ereignisgesteuert (z. B. `E_SPLIT`), erfordern dann aber zusätzliche Trigger. Der `AB_SPLIT_6` arbeitet dagegen kontinuierlich und ereignislos über die Adapterschnittstelle.
 - **Daten‑Splitter (z. B. `F_SPLIT`)**: Diese teilen einzelne Datenwerte (z. B. ein Array) auf, während der `AB_SPLIT_6` den gesamten Adapter-Datenstrom unverändert kopiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AB_SPLIT_6` ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Vervielfachung eines unidirektionalen Adaptersignals auf bis zu sechs Ausgänge. Er ist leicht verständlich, benötigt keine Konfiguration und eignet sich hervorragend für die schnelle Verteilung von Adapterdaten in industriellen Steuerungsanwendungen.

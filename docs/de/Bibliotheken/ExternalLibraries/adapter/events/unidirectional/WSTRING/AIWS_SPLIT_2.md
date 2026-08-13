@@ -60,6 +60,10 @@ Der Funktionsblock ist zustandslos. Es existieren keine internen Zustände oder 
 - **SPLIT‑Bausteine für andere Adaptertypen**: In 4diac existieren analoge Split‑Bausteine für andere Adapter (z. B. `DINT_SPLIT`), die ein Datensignal auf mehrere Ausgänge verteilen – jedoch auf Datenebene und nicht über Adapter.
 - **Ereignis‑Split‑Bausteine**: Bausteine wie `E_SPLIT` verteilen Ereignisse, nicht Datenströme – AIWS_SPLIT_2 adressiert spezifisch die AIWS‑Adapterkommunikation.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AIWS_SPLIT_2** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfältigung eines AIWS‑Adaptersignals. Er reduziert den Verdrahtungsaufwand in Applikationen, die dasselbe analoge oder gemischte Signal mehrfach benötigen, und fügt sich durch seine passive, zustandslose Architektur transparent in bestehende Abläufe ein.

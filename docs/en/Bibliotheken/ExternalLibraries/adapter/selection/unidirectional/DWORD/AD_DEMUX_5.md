@@ -84,6 +84,11 @@ A state machine is not explicitly defined in the XML, but corresponds to the typ
 
 The **AD_DEMUX_5** stands out due to its purely adapter-based interface, which enables loose coupling and flexible type adaptation via generic adapter definitions.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AD_DEMUX_5** is a compact and efficient function block for adapter demultiplexing. It allows the dynamic selection of one of five output channels and is particularly suitable for systems that rely on unidirectional adapter connections. Its generic design allows it to be reused in various automation environments without modifying its internal logic. The block simplifies the implementation of switching logic at the adapter level and contributes to a clearer, modular system architecture.

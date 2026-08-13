@@ -57,6 +57,11 @@ The module does not have an explicit state machine (ECC). Its functionality is p
 - **AQ_SELECT**: A multiplexer that selects one input from multiple inputs – the opposite of a split function.
 - **DQ_SPLIT_8**: Analog component for digital signals (DQ type) – structurally identical, but for a different signal type.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AQ_SPLIT_8** is a simple, reliable fan-out component for the 1:8 distribution of analog output signals via adapter interfaces. It does not use event logic or state machines and is therefore particularly suitable for clearly defined, static signal distributions in automation systems. Its generic basis facilitates reuse in different projects.

@@ -67,6 +67,11 @@ This function block does not have a state machine (ECC). It operates statically 
 
 Unlike these function blocks, **AD_SPLIT_8** does not perform any selection – all outputs always receive the same signal.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **AD_SPLIT_8** is a simple yet essential function block in IEC 61499 systems that implements signal distribution via adapter interfaces without additional logic or runtime costs. Its generic nature makes it flexible and facilitates the modular structuring of automation projects.

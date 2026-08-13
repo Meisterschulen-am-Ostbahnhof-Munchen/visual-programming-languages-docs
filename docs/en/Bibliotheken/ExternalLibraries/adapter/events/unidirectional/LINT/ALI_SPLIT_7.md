@@ -62,6 +62,11 @@ The FB has **no explicit states**. Its functionality is purely passive and data 
 - **ALI_SPLIT_2 / ALI_SPLIT_4**: These function blocks offer splits to two or four outputs, respectively. `ALI_SPLIT_7` is the extension to seven outputs for specific requirements.
 - **ALI_MERGE**: The counterpart that combines multiple ALI inputs into one output. A splitter like `ALI_SPLIT_7` operates in the opposite direction (fan-out).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ALI_SPLIT_7** is a specialized, generic function block for the clean and lossless 1:7 distribution of unidirectional ALI signals. Its simple structure, lack of state logic, and generic design make it ideal for modular control architectures where a signal needs to be passed to multiple receivers in parallel.

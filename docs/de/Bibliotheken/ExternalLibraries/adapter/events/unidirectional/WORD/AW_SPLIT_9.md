@@ -67,6 +67,10 @@ Der Baustein besitzt keine eigene Zustandsmaschine, da keine Ereignisse oder Alg
 - **Daten‑Split‑Bausteine**: Bausteine, die Daten‑Eingänge (z. B. `INT`, `REAL`) aufteilen. `AW_SPLIT_9` arbeitet ausschließlich auf Adapterebene und nicht auf einzelnen Datenpunkten.
 - **Multiplexer (MUX)**: Ein Multiplexer wählt einen von mehreren Eingängen aus, während dieser Baustein einen Eingang auf viele Ausgänge verteilt (Fan‑Out).
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AW_SPLIT_9` ist ein einfacher, aber nützlicher generischer Funktionsblock für die Aufteilung eines unidirektionalen AW‑Adapter‑Signals auf neun parallele Ausgänge. Seine Struktur ist minimalistisch und rein passiv, was ihn zu einem zuverlässigen Werkzeug in adapterorientierten Steuerungsarchitekturen macht. Er benötigt weder Ereignisse noch Daten und kann ohne Nebenwirkungen in bestehende Applikationen integriert werden.

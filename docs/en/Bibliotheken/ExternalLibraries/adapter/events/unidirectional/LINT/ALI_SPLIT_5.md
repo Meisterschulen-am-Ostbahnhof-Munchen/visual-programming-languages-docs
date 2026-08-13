@@ -62,6 +62,11 @@ The component has **no internal state machine**. It operates directly and withou
 
 Other split or fanout components usually offer a fixed number of outputs or are restricted to specific data types. The `ALI_SPLIT_5` is specifically designed for the unidirectional ALI adapter, but its generic template allows for flexible application. Unlike a **multiplexer** or **router**, this component always forwards the signal to all outputs **without switching**.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `ALI_SPLIT_5` is a simple yet essential component for multiplying an ALI signal. Due to its generic nature, it can be easily integrated into various 4diac projects and simplifies signal distribution in complex automation architectures. It requires little maintenance because it contains no internal logic and contributes to the modularization and reusability of ALI connections.

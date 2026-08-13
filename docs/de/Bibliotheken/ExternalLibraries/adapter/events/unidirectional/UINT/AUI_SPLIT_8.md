@@ -66,6 +66,10 @@ Der Baustein besitzt keine Zustände. Er verhält sich statisch und leitet immer
 - **`AUI_SPLIT_2`, `AUI_SPLIT_4`**: Gleiche Funktionalität mit geringerer Ausgangsanzahl.
 - **Ereignis-Splitter (z. B. `E_SPLIT`)**: Verteilen nur Ereignisse ohne die mitgeführten Daten eines Adapters. `AUI_SPLIT_8` hingegen repliziert den gesamten Adapter-Inhalt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AUI_SPLIT_8` ist ein einfacher, aber essenzieller Baustein zur Vervielfältigung eines unidirektionalen AUI-Signalpfades. Aufgrund seiner generischen Auslegung und rein passiven Struktur eignet er sich für beliebige AUI-basierte Anwendungen, in denen ein Signal an bis zu acht Empfänger verteilt werden muss. Die Implementierung ist schlank, fehlerarm und benötigt keinerlei Konfiguration.

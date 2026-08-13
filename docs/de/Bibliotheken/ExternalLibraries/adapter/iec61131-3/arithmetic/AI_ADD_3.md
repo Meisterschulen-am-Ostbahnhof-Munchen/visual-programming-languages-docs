@@ -87,6 +87,10 @@ Während Standard-Addierer meist nur zwei Eingänge unterstützen, spart der `AI
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AI_ADD_3` ist ein modularer und übersichtlicher Hilfsbaustein zur effizienten analogen Signalverarbeitung. Durch die konsequente Nutzung von Adaptern reduziert er das visuelle "Spaghetti-Wiring" in 4diac-Anwendungen erheblich und trägt zu einer performanten, ereignisgesteuerten Steuerungsarchitektur bei.

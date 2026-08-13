@@ -69,6 +69,10 @@ Der **AB_SPLIT_8** besitzt keine internen Zustände oder Zustandsautomaten. Die 
 - **`DATA_SPLIT`**: Verteilt beliebige Datentypen (z. B. `INT`, `BOOL`). Der `AB_SPLIT_8` ist auf den Adaptertyp `AB` spezialisiert und behält die vollständige Adapterstruktur bei.
 - **`EC_SPLIT`**: Ein Ereignis-Splitter, der nur Ereignisse vervielfacht, aber keine Daten. Im Gegensatz dazu arbeitet `AB_SPLIT_8` auf Adapterebene inklusive aller darin enthaltenen Daten und Ereignisse.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AB_SPLIT_8** ist ein einfacher, aber effektiver Funktionsblock zur Vervielfachung eines unidirektionalen AB-Adaptersignals. Durch seine generische Ausführung und die passive Arbeitsweise eignet er sich ideal für die Parallelisierung von Steuerungs- und Überwachungssignalen in der Automatisierungstechnik. Die fehlende Zustandslogik sorgt für geringe Laufzeitkomplexität und hohe Zuverlässigkeit. Der Baustein ist eine sinnvolle Ergänzung für jede 4diac-Bibliothek, die auf Adapterkommunikation setzt.

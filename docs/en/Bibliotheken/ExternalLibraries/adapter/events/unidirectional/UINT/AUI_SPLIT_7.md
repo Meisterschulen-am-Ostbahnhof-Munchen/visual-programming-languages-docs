@@ -63,6 +63,11 @@ There is no state machine. The block is purely data flow controlled and has only
 - **AUI_SPLIT_2, AUI_SPLIT_4** – Function blocks with the same functionality, but reduced to 2 or 4 outputs, respectively. The `AUI_SPLIT_7` offers the largest number of outputs and thus covers more extensive distribution requirements.
 - **AUI_MERGE** – the counterpart that combines multiple AUI inputs into a single output. In contrast, the `SPLIT` is purely passive and does not aggregate any data.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AUI_SPLIT_7` is a simple yet essential function block for unidirectional signal distribution in adapter-based control systems. Thanks to its generic design and clear 1-to-N structure, it can be flexibly integrated into any AUI-based architecture. For applications requiring broad parallel distribution without side effects, it represents a robust and maintainable solution.

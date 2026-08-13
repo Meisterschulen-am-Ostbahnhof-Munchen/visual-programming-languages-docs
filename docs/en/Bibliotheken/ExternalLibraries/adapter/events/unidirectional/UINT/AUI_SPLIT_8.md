@@ -64,6 +64,11 @@ The component has no states. It behaves statically and always passes through all
 - **`AUI_SPLIT_2`, `AUI_SPLIT_4`**: Same functionality with fewer outputs.
 - **Event Splitters (e.g., `E_SPLIT`)**: Distribute only events without the accompanying data from an adapter. `AUI_SPLIT_8`, on the other hand, replicates the entire adapter content.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AUI_SPLIT_8` is a simple yet essential component for replicating a unidirectional AUI signal path. Due to its generic design and purely passive structure, it is suitable for any AUI-based application where a signal needs to be distributed to up to eight receivers. The implementation is lean, error-free, and requires no configuration.

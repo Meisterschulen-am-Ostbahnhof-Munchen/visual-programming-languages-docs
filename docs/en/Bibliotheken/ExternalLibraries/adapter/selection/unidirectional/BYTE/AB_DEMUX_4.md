@@ -66,6 +66,11 @@ The AB_DEMUX_4 function block does **not have an explicit state machine**. It be
 - **AB_DEMUX_2 / AB_DEMUX_8**: Variants with two or eight outputs, respectively. The present module offers exactly four outputs and an index in the range 1 to 4.
 - **Direct connection via adapter**: Without a demultiplexer, a separate adapter socket would have to be created for each destination; the demultiplexer saves resources and simplifies configuration.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AB_DEMUX_4 is a compact, generic demultiplexer for unidirectional AB adapters. It enables flexible and resource-efficient distribution of adapter data to up to four outputs and is particularly suitable for applications where a data stream needs to be selectively routed to different devices. Its generic design increases reusability in various 4diac projects.

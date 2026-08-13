@@ -76,6 +76,11 @@ This sequence repeats with each new **REQ** event.
 
 Compared to a generic `MUX` function block (with standard data types), the adapter variant offers a clearer interface definition and facilitates the reuse of signal configurations.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ADI_MUX_3** is a compact, generic multiplexer for three adapter inputs. Its clear event-driven operation and the use of ADI adapters make it ideal for modular automation solutions where signals need to be switched efficiently. The simple interface and generic nature allow for flexible adaptation to various applications.

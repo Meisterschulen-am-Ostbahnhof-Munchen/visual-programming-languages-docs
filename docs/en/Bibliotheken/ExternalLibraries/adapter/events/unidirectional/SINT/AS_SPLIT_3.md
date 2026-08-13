@@ -59,6 +59,11 @@ The function block does not have an internal state machine or an ECC (Execution 
 - **AS_MERGE (Theoretical)**: Unlike a merge function block, which combines multiple inputs into one output, AS_SPLIT_3 performs the reverse function (1 → N).
 - **Generic Split Function Blocks**: Similar concepts exist for data inputs (e.g., SPLIT_INT), but these work with elementary data, while AS_SPLIT_3 processes adapters (complex data types).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AS_SPLIT_3 is a simple yet useful function block for duplicating adapter data in the 4diac IDE. Its generic design and the absence of event traffic make it particularly lightweight and usable in many scenarios. The documented license (EPL 2.0) ensures that the block can be legally integrated into your own projects.

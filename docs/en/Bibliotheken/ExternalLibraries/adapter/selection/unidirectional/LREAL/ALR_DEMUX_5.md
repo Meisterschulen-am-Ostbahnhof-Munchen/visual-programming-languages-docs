@@ -74,6 +74,11 @@ This makes it a purely event-driven function block without internal memory (apar
 - **ALR_SWITCH** – A one-to-one switch that selects a single output from multiple inputs but does not distribute the signal to multiple outputs.
 - **Components with a fixed number of outputs** (e.g., `ALR_DEMUX_2`, `ALR_DEMUX_8`) differ only in the number of available adapter plugs.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `ALR_DEMUX_5` is a compact, event-driven demultiplexer for ALR adapters. It is particularly suitable for applications where a single data stream needs to be switched to one of several lines. Its generic design and unidirectional adapter interface allow for flexible integration into a wide variety of control environments.

@@ -66,6 +66,10 @@ Der Baustein besitzt **keine** eigenen Zustände. Das Verhalten ist rein kombina
 
 Während `AB_SPLIT_9` eine Quelle auf viele Senken verteilt, realisiert `AB_MERGE` eine Zusammenführung mehrerer Quellen in einen Ausgang. `AB_SPLIT_9` ist daher die ideale Wahl, wenn ein Signal an viele Verbraucher weitergeleitet werden muss.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AB_SPLIT_9** bietet eine einfache, aber leistungsfähige Möglichkeit, einen einzelnen Adapter‑basierten Datenstrom auf neun parallele Pfade aufzuteilen. Durch seine generische Natur ist er in beliebigen 4diac‑Projekten einsetzbar, erfordert keine Zustandsprogrammierung und ermöglicht eine saubere, modulare Architektur. Er ist ein grundlegender Baustein für die serielle oder parallele Verteilung von Adapter‑Signalen in der Automatisierungstechnik.

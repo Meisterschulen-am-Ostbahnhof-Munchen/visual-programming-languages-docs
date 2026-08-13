@@ -91,6 +91,10 @@ Die Zeitspanne zwischen `REQ` und `CNF` ist rein durch die Ausführungszeit der 
 
 Der `AQ_MUX_4` hebt sich durch die Verwendung von Adaptern ab, die es erlauben, komplexe Signale über eine einzige Verbindung zu transportieren, und durch seine generische Basis, die eine einfache Wiederverwendung in verschiedenen Ausbaustufen ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AQ_MUX_4` ist ein praktischer Baustein zur dynamischen Auswahl eines analogen Ausgangssignals aus bis zu vier Quellen. Seine adapterbasierte Schnittstelle macht ihn besonders geeignet für modulare Steuerungsarchitekturen, in denen Signale nicht nur als einzelne Werte, sondern als strukturierte Datenpakete ausgetauscht werden. Die generische Deklaration erleichtert zudem die Anpassung an abweichende Anforderungen.

@@ -82,6 +82,10 @@ Im Vergleich zu klassischen IEC 61131-3 `DIV`-Bausteinen, die mit direkten Daten
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_DIV_2` ist ein robuster und flexibel einsetzbarer Baustein für arithmetische Divisionen in verteilten Steuerungssystemen. Durch die konsequente Nutzung des Adapter-Konzepts unterstützt er modernes, modulares Softwaredesign nach dem IEC 61499-Standard.

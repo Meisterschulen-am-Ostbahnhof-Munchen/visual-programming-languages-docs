@@ -63,6 +63,10 @@ Der FB besitzt kein explizites Zustandsdiagramm. Da keine Ereignisse verarbeitet
 - **Analoge Splitter in anderen Bibliotheken**: Oft werden solche Funktionen durch Adapter-Kopplung oder Datenkopierer realisiert. Der AI_SPLIT_5 bietet eine saubere, wiederverwendbare Struktur innerhalb des 4diac-Frameworks.
 - **Unterschied zu Daten-Ereignis-basierten Splittern**: Da der FB keine Ereignisse nutzt, ist er rein signalflussorientiert und benötigt keine Synchronisation oder Ablaufsteuerung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AI_SPLIT_5 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfältigung eines analogen Signals. Seine generische Natur und die klare Adapter-Schnittstelle machen ihn zu einem idealen Baustein für modulare Automatisierungslösungen, bei denen ein Analogwert mehrfach benötigt wird. Die fehlende Ereignissteuerung reduziert die Komplexität und ermöglicht eine direkte Signalweitergabe ohne zeitliche Verzögerungen.

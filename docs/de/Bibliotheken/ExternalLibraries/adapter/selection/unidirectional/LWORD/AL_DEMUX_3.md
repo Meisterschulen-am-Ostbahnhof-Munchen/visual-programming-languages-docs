@@ -89,6 +89,10 @@ Nach dem Senden von **CNF** kehrt der Baustein sofort in den Bereit‑Zustand zu
 
 Der **AL_DEMUX_3** zeichnet sich durch die direkte Adapter‑Schnittstelle aus, die eine nahtlose Integration in adapterbasierte Kommunikationspfade ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AL_DEMUX_3** ist ein kompakter und effizienter Funktionsblock zum Verteilen von unidirektionalen AL‑Adapterdaten auf drei Kanäle. Die indexgesteuerte Umschaltung über ein Ereignis macht ihn einfach handhabbar und für vielfältige Routing‑Aufgaben geeignet. Durch seinen generischen Aufbau kann er ohne Anpassung in unterschiedlichen Projekten eingesetzt werden.

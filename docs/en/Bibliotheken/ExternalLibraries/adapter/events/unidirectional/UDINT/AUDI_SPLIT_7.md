@@ -69,6 +69,11 @@ The component does not contain a state machine (ECC). Its behavior is completely
 
 While `AUDI_SPLIT_7` is designed for the specific AUDI adapter type, generic split modules exist for other data formats. Its limitation to a fixed number of seven outputs distinguishes it from flexible splitters with a configurable number of outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AUDI_SPLIT_7` is a simple yet effective module for distributing an AUDI signal to seven identical paths. Its generic design allows it to be reused in various contexts. The absence of events and internal logic makes it lightweight and reliable for pure signal distribution tasks.

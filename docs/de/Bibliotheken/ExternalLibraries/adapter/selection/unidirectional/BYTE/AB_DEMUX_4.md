@@ -68,6 +68,10 @@ Der AB_DEMUX_4 hat **keine explizite Zustandsmaschine**. Er verhält sich wie ei
 - **AB_DEMUX_2 / AB_DEMUX_8**: Varianten mit zwei bzw. acht Ausgängen. Der vorliegende Baustein bietet genau vier Ausgänge und einen Index im Bereich 1..4.
 - **Direkte Verbindung via Adapter**: Ohne Demultiplexer müsste pro Ziel ein eigener Adapter-Socket angelegt werden; der Demultiplexer spart Ressourcen und vereinfacht die Konfiguration.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AB_DEMUX_4 ist ein kompakter, generischer Demultiplexer für unidirektionale AB-Adapter. Er ermöglicht eine flexible und ressourcenschonende Verteilung von Adapterdaten auf bis zu vier Ausgänge und eignet sich besonders für Anwendungen, in denen ein Datenstrom wahlweise an verschiedene Verbraucher geschaltet werden muss. Die generische Auslegung erhöht die Wiederverwendbarkeit in unterschiedlichen 4diac-Projekten.

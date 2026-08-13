@@ -60,6 +60,10 @@ Der Baustein besitzt keine internen Zustände oder sequentielle Logik. Die Signa
 
 Andere Splitter-Bausteine wie `ALI_SPLIT_2`, `ALI_SPLIT_4` oder `ALI_SPLIT_N` unterscheiden sich lediglich in der Anzahl der Ausgänge. Der `ALI_SPLIT_8` bietet die maximale Verteilung in der Standardfamilie. Im Gegensatz zu einem Multiplexer (`ALI_MUX`) oder einer Weiche (`ALI_SWITCH`) wird hier **jeder Ausgang mit dem gleichen Signal** versorgt – es findet keine Auswahl oder Umschaltung statt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `ALI_SPLIT_8` ist ein einfacher, aber essenzieller Baustein zur Vervielfältigung von ALI-Signalen. Durch seine generische Definition und den Verzicht auf Zustandslogik eignet er sich besonders für robuste, latenzarme Verteilungen in der landwirtschaftlichen Automatisierungstechnik.

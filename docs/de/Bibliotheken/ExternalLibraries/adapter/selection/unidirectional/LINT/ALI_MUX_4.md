@@ -68,6 +68,10 @@ Der Baustein besitzt im Wesentlichen einen einzigen operativen Zustand. Auf ein 
 - Im Unterschied zu einem einfachen Daten-Multiplexer, der die Werte direkt kopiert, leitet der Adapter-Multiplexer die gesamte Verbindung (inklusive Ereignis- und Datenpfade) weiter.
 - Ein Adapter-Demultiplexer (`ALI_DEMUX_4`) würde einen Eingang auf mehrere Ausgänge verteilen – hier genau die umgekehrte Funktion.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `ALI_MUX_4` ist ein spezialisierter, ereignisgesteuerter Multiplexer für ALI-Adapter mit vier Eingängen. Er eignet sich ideal für Anwendungen, bei denen aus mehreren ALI-Datenquellen eine ausgewählt werden muss. Die einfache Schnittstelle (ein Index und ein Steuerereignis) macht ihn leicht integrierbar, erfordert aber die Einhaltung des gültigen Indexbereichs 0–3. Der Baustein ergänzt die ALI-Adapter-Familie um eine grundlegende Selektionsfunktion.

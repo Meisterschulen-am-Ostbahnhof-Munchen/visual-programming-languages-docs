@@ -88,6 +88,11 @@ An internal state is not required.
 - **IEC 61499 Standard MUX**: The standard MUX usually works with fixed data types and more than two inputs. `AUDI_MUX_2` is specifically limited to two inputs but is implemented generically via adapters.
 - **Multi-Adapter Selector**: A generic 2-to-1 multiplexer with adapters offers the same basic functionality, but often with additional states or error handling. `AUDI_MUX_2` is minimalist and suitable for simple switching tasks without side effects.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUDI_MUX_2` is a compact, generic multiplexer function block for selecting between two values. Its adapter-based interface makes it flexible and unconstrained on specific data types. Simple event control and a clear operating principle enable straightforward integration into IEC 61499 applications. For tasks requiring only binary selection, it represents an efficient and reusable solution.

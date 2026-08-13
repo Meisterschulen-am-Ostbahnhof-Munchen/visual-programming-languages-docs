@@ -68,6 +68,11 @@ The module does not have a state machine. There are no internal states or event 
 
 All split components share the feature of passing the signal through unchanged; they differ only in the number of outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **AIWS_SPLIT_8** is a simple yet essential component for multiplying an AIWS adapter signal across eight parallel paths. Its implementation without event-driven control or state logic makes it lightweight and reliable for use in distributed automation systems.

@@ -65,6 +65,11 @@ The block behaves like a purely functional block without internal memory (analog
 
 Compared to standard subtraction components of IEC 61131-3 (such as a classic `SUB` component with discrete pins), the `AI_SUB_2` eliminates the need for manually wiring separate `REQ` and `CNF` event lines as well as individual analog data lines. All relevant information is cleanly transmitted in the `AI` adapters.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AI_SUB_2` is a specialized and highly efficient component for modern, adapter-based programming in 4diac. It is ideally suited for clean software architectures in the field of analog signal preprocessing, where clarity and encapsulation are paramount.

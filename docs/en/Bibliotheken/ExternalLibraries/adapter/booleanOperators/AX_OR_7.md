@@ -70,6 +70,11 @@ Compared to standard OR blocks, the AX_OR_7 offers the unique feature of seven i
 
 Comparison with [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_7 is a specialized OR gate for applications with many input signals. With its seven inputs and adapter-based interface, it is particularly suitable for complex control tasks where multiple signals need to be logically combined.

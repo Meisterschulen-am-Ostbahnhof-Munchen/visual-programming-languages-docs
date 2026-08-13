@@ -72,6 +72,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Das Verhalten ist rein fu
 
 Im 4diac-Framework existieren generische Multiplexer (z. B. `MUX_2`, `MUX_8`). Der **AIS_MUX_4** ist speziell für den AIS-Adapter-Typ ausgelegt und optimiert für unidirektionale AIS-Daten. Im Gegensatz zu universellen Multiplexern mit einfachen Datentypen (z. B. `INT`, `BOOL`) arbeitet er auf Adapterebene und überträgt komplexe Datenstrukturen in einem Schritt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AIS_MUX_4` ist ein einfacher, aber effektiver Baustein zur Auswahl eines von vier AIS-Eingängen. Seine generische Auslegung und die klare Ereignissteuerung machen ihn gut geeignet für modulare Automatisierungslösungen mit AIS-Kommunikation.

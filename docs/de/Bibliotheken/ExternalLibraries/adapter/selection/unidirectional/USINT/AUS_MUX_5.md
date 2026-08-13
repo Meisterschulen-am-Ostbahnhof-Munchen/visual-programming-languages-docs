@@ -75,6 +75,10 @@ Es gibt keine internen Zustände oder Verzögerungen.
 - **AUS_MUX_2**, **AUS_MUX_4**: Bausteine mit ähnlicher Funktionalität, aber geringerer Anzahl von Eingängen (2 bzw. 4). Der **AUS_MUX_5** deckt den erweiterten Bedarf für fünf Quellen ab.
 - **AUS_MUX_N**: Ein generischer Multiplexer mit parametrisierbarer Kanalzahl – falls vorhanden, wäre dieser flexibler, jedoch ohne direkte Unterstützung für genau fünf Kanäle.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUS_MUX_5** bietet eine einfache und effiziente Möglichkeit, aus bis zu fünf AUS-Signalen eines auszuwählen. Dank seiner Adapter-Schnittstelle und generischen Struktur lässt er sich leicht in IEC 61499-basierte Steuerungssysteme integrieren. Er eignet sich besonders für Anwendungen, die eine dynamische und indexgesteuerte Signalumschaltung erfordern.

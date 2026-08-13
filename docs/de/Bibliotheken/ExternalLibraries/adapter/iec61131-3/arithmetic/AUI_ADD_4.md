@@ -98,6 +98,10 @@ Der Baustein besitzt eine einfache, ereignisgesteuerte Ausführungslogik (Execut
 * **Vergleich mit Standard-`ADD` (IEC 61131-3):** Klassische `ADD`-Bausteine arbeiten mit expliziten Daten- und Event-Pins. `AUI_ADD_4` bündelt diese Signale in Adaptern, was die Verkabelung vereinfacht und standardisiert.
 * **Vergleich mit `AUI_ADD_2`:** Für die Addition von drei oder vier Werten müssten bei einem 2-fach-Addierer mehrere Bausteine kaskadiert werden. `AUI_ADD_4` spart hierdurch Systemressourcen, verringert die Latenzzeit und sorgt für ein saubereres Applikationslayout.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_ADD_4` ist ein praktischer Hilfsbaustein für fortgeschrittene Steuerungsprojekte in der 4diac-IDE. Er kombiniert die mathematische Grundfunktion der Addition mit den strukturellen Vorteilen moderner Adapter-Verbindungen und eignet sich ideal für saubere, übersichtliche Signalverarbeitungsketten.

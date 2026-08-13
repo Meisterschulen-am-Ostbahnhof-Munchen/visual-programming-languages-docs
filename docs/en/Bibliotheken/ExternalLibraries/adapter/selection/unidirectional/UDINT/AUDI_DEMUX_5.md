@@ -76,6 +76,11 @@ The function block does not have an explicit state machine. Its behavior can be 
 
 The `AUDI_DEMUX_5` is similar to other demultiplexers such as the `AUDI_DEMUX_2` or `MUX_4`, but differs in the number of outputs and the specific use of the `AUDI` adapter type. Unlike multiplexers (which combine multiple inputs into one output), this component acts as a distributor from one input to multiple outputs. Generic versions can be created by simply changing the number of adapter ports.
 ...``AUDI_DEMUX_5`` is similar to other demultiplexers such as the `AUDI_DEMUX_2` or `MUX_4`, but differs in the number of outputs and the specific use of the `AUDI` adapter type.
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AUDI_DEMUX_5` is a compact, generic solution for the targeted forwarding of `AUDI` adapter data. Thanks to its clear interface and event-driven processing, it can be easily integrated into higher-level control logic and is particularly suitable for applications that require dynamic switching of signal paths.

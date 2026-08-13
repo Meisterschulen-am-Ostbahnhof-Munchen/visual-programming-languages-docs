@@ -86,6 +86,10 @@ Im Vergleich zu einem klassischen, nicht-generischen IEC 61131-3 `MUL`-Standardb
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_MUL_3` ist ein hocheffizienter und wiederverwendbarer Funktionsbaustein für arithmetische Berechnungen. Durch die Kombination aus generischer Datenverarbeitung und moderner Adapter-Technologie eignet er sich ideal für saubere, übersichtliche und wartbare Steuerungsarchitekturen in IEC 61499-Umgebungen.

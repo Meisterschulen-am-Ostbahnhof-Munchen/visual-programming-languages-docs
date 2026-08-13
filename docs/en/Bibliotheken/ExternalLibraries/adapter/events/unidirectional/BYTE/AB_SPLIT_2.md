@@ -57,6 +57,11 @@ The function block does not have a state machine. The output adapters always ref
 
 Compared to dedicated **SPLIT FBs** with event/data ports, `AB_SPLIT_2` operates purely on an adapter basis. While classic split function blocks often require triggered data copies, distribution here occurs continuously and without explicit activation. Adapter multiplexers or bus couplers offer similar functionality, but with more complex configurations. This function block is specifically designed for the unidirectional `AB` adapter.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AB_SPLIT_2` is a simple yet effective generic function block for splitting a unidirectional adapter into two outputs. It increases the flexibility of adapter cabling in industrial control systems according to IEC 61499 and is freely available thanks to the EPL 2.0 license. For applications requiring a 1:2 distribution of adapter data, it offers a clean and maintainable solution.

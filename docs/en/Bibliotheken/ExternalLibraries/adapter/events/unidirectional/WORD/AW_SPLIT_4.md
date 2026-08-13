@@ -58,6 +58,11 @@ Not applicable – the FB does not contain a state machine (ECC) and operates en
 
 Unlike data- or event-based split function blocks (e.g., `SPLIT`, `F_SPLIT`), `AW_SPLIT_4` operates exclusively at the adapter level. The advantage lies in its loose coupling and reusability across different AW types. The disadvantage: Only AW data can be distributed, not events or general values.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AW_SPLIT_4` function block is a simple, generic distributor for unidirectional AW adapters. It is ideally suited to split a single AW signal into up to four outputs and, thanks to its generic nature, integrates flexibly into various IEC 61499 applications.

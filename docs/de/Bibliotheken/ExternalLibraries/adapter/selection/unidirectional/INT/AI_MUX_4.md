@@ -80,6 +80,10 @@ Der Baustein besitzt keine explizit modellierten Zustände (keine ECC‑Beschrei
 - **DI_MUX_4**: Digitaler Multiplexer für binäre Signale. Der vorliegende FB verarbeitet analoge Adapterdaten, die typischerweise Gleitkomma‑ oder Ganzzahlwerte enthalten.
 - **Manuelle Umschaltung**: Ohne Multiplexer müsste die Verbindung zwischen Quelle und Senke durch Programm- oder Verdrahtungsänderungen erfolgen; der FB bietet eine flexible, indexbasierte Auswahl zur Laufzeit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AI_MUX_4** ist ein kompakter, generischer Funktionsbaustein zur Auswahl eines von vier analogen Signalen über einen Index. Er vereinfacht die Umschaltung analoger Pfade in 4diac‑basierten Automatisierungslösungen und lässt sich durch seine Adapterschnittstellen nahtlos in bestehende Projekte einbinden. Die fehlende Zustandsautomaten-Beschreibung macht ihn besonders einfach und schnell ausführbar.

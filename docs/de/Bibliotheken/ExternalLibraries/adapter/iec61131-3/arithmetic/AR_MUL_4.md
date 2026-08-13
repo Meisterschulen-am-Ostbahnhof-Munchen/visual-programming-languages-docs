@@ -66,6 +66,10 @@ Da es sich um einen rein mathematischen Berechnungsbaustein handelt, ist der Bau
 
 Im Vergleich zu herkömmlichen IEC 61131-3 `MUL`-Bausteinen, die oft nur zwei Eingänge besitzen und direkte Daten- und Ereignispins nutzen, bietet der `AR_MUL_4` durch die Zusammenfassung von vier Eingängen und die Verwendung von Adaptern eine wesentlich aufgeräumtere visuelle Darstellung im Steuerungsprogramm. Er verhindert die Notwendigkeit, mehrere Multiplizierer hintereinander zu schalten (Kaskadierung).
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AR_MUL_4` ist ein praktischer Hilfsbaustein für arithmetische Operationen in der IEC 61499-Umgebung. Durch die konsequente Nutzung von Adaptern trägt er maßgeblich zur Übersichtlichkeit und Modularität von Steuerungsprogrammen bei, insbesondere bei der Verarbeitung komplexerer mathematischer Formeln.

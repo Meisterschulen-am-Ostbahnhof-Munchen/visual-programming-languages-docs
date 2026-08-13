@@ -78,6 +78,11 @@ This function block has no explicitly modeled states (no ECC description). Its b
 - **DI_MUX_4**: Digital multiplexer for binary signals. This function block processes analog adapter data, which typically contains floating-point or integer values.
 - **Manual Switching**: Without a multiplexer, the connection between source and sink would have to be made through program or wiring changes; this function block offers flexible, index-based selection at runtime.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AI_MUX_4** is a compact, generic function block for selecting one of four analog signals via an index. It simplifies the switching of analog paths in 4diac-based automation solutions and can be seamlessly integrated into existing projects thanks to its adapter interfaces. The absence of a state machine description makes it particularly easy and quick to implement.

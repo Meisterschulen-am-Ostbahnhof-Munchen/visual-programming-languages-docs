@@ -82,6 +82,10 @@ Ein fehlerhafter Index kann in einem eigenen **FEHLER**-Zustand münden (nicht i
 
 Der vorliegende Baustein ist auf die Verwendung in einer Umgebung zugeschnitten, in der Kommunikation über `ATM`-Adapter erfolgt, und bietet eine kompakte Lösung für 1‑aus‑4‑Selektion.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **ATM_DEMUX_4** ist ein spezialisierter, generischer Demultiplexer für Adapter-basierte Steuerungsarchitekturen. Er ermöglicht eine saubere, ereignisgesteuerte Auswahl eines von vier Ausgangskanälen und lässt sich aufgrund seiner generischen Deklaration flexibel in verschiedenen Projekten wiederverwenden. Für Anwendungen, die eine standardisierte Punkt‑zu‑Punkt‑Verteilung von ATM-Nachrichten benötigen, stellt er ein effizientes und klares Bauelement dar.

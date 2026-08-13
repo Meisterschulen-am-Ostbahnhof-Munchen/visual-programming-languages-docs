@@ -61,6 +61,10 @@ Der Funktionsblock verfügt über keine Zustandsmaschine. Er ist passiv und füh
 - **IQ_SPLIT_4**: Analoger Baustein für digitale Adapter (z.B. `adapter::types::unidirectional::IQ`), ansonsten identische Funktionsweise.
 - **Manuelle Parallelschaltung**: Theoretisch könnte man einen AQ-Socket manuell mit mehreren Plugs verbinden, aber der `AQ_SPLIT_4` bietet eine übersichtliche und wiederverwendbare Kapselung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AQ_SPLIT_4` ist ein einfacher, aber nützlicher Funktionsblock zur Signalverteilung in der industriellen Automatisierung mit 4diac. Durch seine generische Auslegung und das Fehlen interner Logik ist er leicht verständlich, robust und flexibel einsetzbar. Er trägt zur Strukturierung und Wiederverwendbarkeit von Funktionsblocknetzwerken bei.

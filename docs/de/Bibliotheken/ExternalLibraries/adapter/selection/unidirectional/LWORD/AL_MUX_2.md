@@ -78,6 +78,10 @@ Eine detaillierte Zustandsmaschine wird vom Hersteller nicht bereitgestellt.
 - **AL_MUX_2 vs. AL_MUX_4**: Ein Multiplexer mit vier Eingängen existiert ggf. als Erweiterung, benötigt dann aber einen größeren Indexbereich (z. B. `K = 0..3`).
 - **AL_MUX_2 vs. generischer `GEN_AL_MUX`**: Der vorliegende Baustein ist eine konkrete Instanz des generischen Musters mit zwei Eingängen. Andere Instanzen könnten z. B. `AL_MUX_4` oder `AL_MUX_8` sein.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AL_MUX_2** ist ein einfacher, aber flexibler Multiplexer für unidirektionale AL‑Adapter. Seine generische Natur erlaubt den Einsatz in vielen Anwendungen, bei denen zwischen zwei Adapter‑Signalen umgeschaltet werden muss. Die saubere Trennung von Ereignis‑ und Datenpfad sowie die Bestätigung über `CNF` machen ihn zu einem verlässlichen Baustein in IEC 61499‑basierten Automatisierungssystemen.

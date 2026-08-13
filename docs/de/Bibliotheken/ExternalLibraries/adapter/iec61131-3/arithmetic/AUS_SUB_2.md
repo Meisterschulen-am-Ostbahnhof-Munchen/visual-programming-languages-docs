@@ -83,6 +83,10 @@ Im Vergleich zu einem klassischen IEC 61131-3 `SUB`-Baustein, der direkt mit ele
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUS_SUB_2` ist ein spezialisierter, aber dennoch flexibel einsetzbarer Subtraktionsbaustein. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes, strukturiertes und übersichtliches Design von Steuerungsprogrammen in der 4diac-ide.

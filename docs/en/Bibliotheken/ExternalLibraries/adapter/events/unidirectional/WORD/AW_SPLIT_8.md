@@ -71,6 +71,11 @@ A more detailed state description can be derived from the adapter definitions.
 - **General Splitters (e.g., for other adapter types):** Splitters exist for various adapter data types (e.g., `BOOL_SPLIT`, `INT_SPLIT`) that have an analog structure but different adapter interfaces.
 - **Multicast Blocks:** More complex blocks can additionally offer filtering, prioritization, or buffering functions; `AW_SPLIT_8` is intentionally kept minimalist to avoid unwanted side effects.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AW_SPLIT_8` block is a simple yet useful generic 1:8 splitter for unidirectional AW adapters. It fulfills the basic requirement of distributing an incoming signal to eight outputs without delay or modification. Its generic design allows it to be used in various contexts where type-safe replication of adapter data streams is required. Strict adherence to the IEC 61499-2 standard and the use of adapters facilitate integration into existing 4diac projects.

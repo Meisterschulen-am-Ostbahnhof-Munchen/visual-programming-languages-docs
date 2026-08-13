@@ -71,6 +71,10 @@ Da der Baustein keine explizite Zustandsmaschine (ECC) enthält, existiert nur e
 - **Allgemeine MUX-Bausteine (z. B. MUX)**: Diese verwenden oft direkte Datenports anstelle von Adaptern. Der adapterbasierte Ansatz von AI_MUX_5 ermöglicht eine engere Integration in adapterorientierte Architekturen und erleichtert den Austausch von Ein- und Ausgangsschnittstellen.
 - **Bit-Multiplexer**: Für binäre Signale existieren separate Multiplexer – AI_MUX_5 ist speziell für analoge (kontinuierliche) Signale ausgelegt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AI_MUX_5** ist ein kompakter, adapterbasierter Analog-Multiplexer für fünf Eingänge. Er eignet sich besonders für den Einsatz in modularen Automatisierungslösungen, bei denen analoge Signale flexibel umgeschaltet werden müssen. Dank seiner generischen Natur und der klaren Schnittstellenstruktur lässt er sich leicht in bestehende Projekte integrieren und erweitern.

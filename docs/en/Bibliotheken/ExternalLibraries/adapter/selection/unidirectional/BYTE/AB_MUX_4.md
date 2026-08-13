@@ -67,6 +67,11 @@ This function block does not have an explicit state machine (ECC). After each `R
 - **AB_MUX_8**: An advanced eight-input multiplexer. The `AB_MUX_4` falls in between, offering a good compromise between flexibility and resource consumption.
 - **Demultiplexer (AB_DMUX)**: Distributes a signal to multiple outputs; the `AB_MUX_4` operates in the opposite direction.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AB_MUX_4` is a compact, generic multiplexer component for the `unidirectional::AB` adapter interface. Due to its generic nature and simple event control, it is ideally suited for building modular automation solutions with a limited number of selectable signal sources.

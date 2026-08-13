@@ -86,6 +86,10 @@ Bei Eintreffen von **REQ** wird die Verbindung aktualisiert, und es erfolgt sofo
 
 Der AD_MUX_4 zeichnet sich durch seine Adapter-basierte, unidirektionale Signalweiterleitung aus, die in modularen IEC‑61499‑Anwendungen eine saubere Kapselung erlaubt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AD_MUX_4** ist ein kompakter und flexibler Adapter-Multiplexer, der vier Eingangskanäle über einen numerischen Index auf einen Ausgangs-Pfad schaltet. Seine ereignisgesteuerte Arbeitsweise und die Adapter‑Schnittstellen machen ihn ideal für modulare Automatisierungssysteme, die eine dynamische Signalauswahl erfordern. Durch die einfache Struktur lässt er sich leicht in übergeordnete Steuerungslogiken integrieren.

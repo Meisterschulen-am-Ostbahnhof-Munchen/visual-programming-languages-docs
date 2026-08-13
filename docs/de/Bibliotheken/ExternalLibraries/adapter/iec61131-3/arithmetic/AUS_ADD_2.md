@@ -78,6 +78,10 @@ Im Vergleich zu einem Standard-Addition-Baustein (wie z. B. `ADD` aus der IEC 61
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AUS_ADD_2` ist ein effizienter, generischer Hilfsbaustein für die arithmetische Addition in IEC 61499-Anwendungen. Durch die konsequente Nutzung von unidirektionalen Adaptern eignet er sich hervorragend für moderne, modulare Softwarearchitekturen in der industriellen Automatisierungstechnik.

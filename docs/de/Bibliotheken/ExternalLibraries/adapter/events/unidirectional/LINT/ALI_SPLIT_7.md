@@ -63,6 +63,10 @@ Der FB verfügt über **keine expliziten Zustände**. Seine Funktionalität ist 
 - **ALI_SPLIT_2 / ALI_SPLIT_4**: Diese Bausteine bieten Aufteilungen auf zwei bzw. vier Ausgänge. `ALI_SPLIT_7` ist die Erweiterung auf sieben Ausgänge für spezifische Anforderungen.
 - **ALI_MERGE**: Das Gegenstück, das mehrere ALI‑Eingänge zu einem Ausgang zusammenführt. Ein Splitter wie `ALI_SPLIT_7` arbeitet in umgekehrter Richtung (Fan‑Out).
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **ALI_SPLIT_7** ist ein spezialisierter, generischer Funktionsbaustein zur sauberen und verlustfreien 1:7‑Verteilung von unidirektionalen ALI‑Signalen. Durch seine einfache Struktur, die fehlende Zustandslogik und die generische Auslegung eignet er sich ideal für modulare Steuerungsarchitekturen, bei denen ein Signal parallel an mehrere Empfänger weitergeleitet werden muss.

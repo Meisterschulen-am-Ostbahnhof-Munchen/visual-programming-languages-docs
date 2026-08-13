@@ -87,6 +87,11 @@ After sending **CNF**, the function block immediately returns to the Ready state
 
 The **AL_DEMUX_3** features a direct adapter interface, enabling seamless integration into adapter-based communication paths.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AL_DEMUX_3** is a compact and efficient function block for distributing unidirectional AL adapter data across three channels. Its index-driven switching via an event makes it easy to use and suitable for a wide range of routing tasks. Its generic architecture allows it to be used in different projects without modification.

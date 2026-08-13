@@ -63,6 +63,10 @@ Der Baustein besitzt keinen internen Zustandsautomaten, da er keine Ereignisse v
 
 Im 4diac-Ökosystem existieren weitere Splitter-Bausteine, z. B. `SPLIT` für Ereignis- oder Datenflüsse. Der Vorteil von `AL_SPLIT_5` liegt in der ausschließlichen Adapter-Schnittstelle. Während ein `SPLIT`-Baustein Ereignisse oder Daten trennt, arbeitet dieser Baustein direkt auf der Adapterebene und erfordert keine Umsetzung zwischen Ereignissen und Daten. Ähnliche Bausteine mit anderer Anzahl von Ausgängen (z. B. `AL_SPLIT_2`, `AL_SPLIT_3`) sind denkbar, jedoch nicht standardmäßig in dieser generischen Form enthalten.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AL_SPLIT_5** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfältigung eines unidirektionalen Adaptersignals auf fünf Ausgänge. Aufgrund seiner reinen Adapterschnittstelle und fehlenden Ereignis-/Datenlogik eignet er sich besonders für Anwendungen, die ein Signal ohne Verarbeitung an mehrere Empfänger verteilen müssen. Die generische Auslegung erhöht die Flexibilität bei der Wiederverwendung in verschiedenen Projekten.

@@ -66,6 +66,10 @@ Der Funktionsblock besitzt **keinen expliziten internen Zustandsautomaten** (ECC
 
 Der **AUI_MUX_4** ist funktional identisch zu einem klassischen 4‑zu‑1‑Multiplexer, aber speziell auf den AUI-Adaptertyp zugeschnitten. Im Gegensatz zu generischen Daten-Multiplexern (z. B. MUX aus IEC 61499‑Standardbibliotheken) arbeitet er nicht mit elementaren Datentypen, sondern mit komplexen Adapterverbindungen. Dies vereinfacht die Verkabelung in AUI‑basierten Architekturen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUI_MUX_4** bietet eine saubere, wiederverwendbare Lösung zur Auswahl zwischen vier AUI‑Signalen. Seine ereignisgesteuerte Arbeitsweise und die generische Typdefinition machen ihn flexibel einsetzbar, insbesondere in modularen Automatisierungslösungen auf Basis des 4diac‑Frameworks.

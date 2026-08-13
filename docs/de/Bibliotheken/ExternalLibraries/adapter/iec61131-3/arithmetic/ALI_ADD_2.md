@@ -63,6 +63,10 @@ Der Funktionsbaustein ist zustandslos (kombinatorisches Verhalten). Er besitzt k
 
 Klassische `ADD`-Bausteine nach IEC 61131-3 verfügen meist über direkte Dateneingänge (`IN1`, `IN2`...) und Event-Pins (`REQ`, `CNF`). Der `ALI_ADD_2` unterscheidet sich dadurch, dass er diese Kanäle in Adaptern (`ALI`) kapselt. Dies führt zu einer besseren Kapselung und einer saubereren Strukturierung in komplexen 4diac-Applikationen, erfordert jedoch, dass die verbundenen Bausteine ebenfalls das `ALI`-Adapterprotokoll unterstützen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALI_ADD_2` ist ein spezialisierter, hocheffizienter Additionsbaustein für adapterbasierte Architekturen in der 4diac-IDE. Er vereint die mathematische Standardfunktionalität der Addition mit den strukturellen Vorteilen moderner, adapterbasierter Kommunikationsparadigmen.

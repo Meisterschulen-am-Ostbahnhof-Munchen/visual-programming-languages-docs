@@ -72,6 +72,11 @@ This module does **not have an explicit state machine** (ECC). Its functionality
 
 The standard function block repertoire includes multiplexers such as `MUX_2`, `MUX_4`, etc. However, these usually work with direct data types (BOOL, INT, etc.) and not with adapters. The **ALR_MUX_2** is specifically designed for ALR adapters and enables the structured transfer of complex data fields without additional serialization.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ALR_MUX_2** is a specialized, generic multiplexer for unidirectional ALR adapters. It offers simple, event-driven switching between two inputs and is particularly suitable for agricultural applications where ALR data streams need to be flexibly managed. Due to its EPL 2.0 license, it can be freely used and adapted.

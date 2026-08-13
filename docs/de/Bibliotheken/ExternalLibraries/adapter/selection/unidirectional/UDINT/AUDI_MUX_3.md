@@ -76,6 +76,10 @@ Der `AUDI_MUX_3` verfügt über keine explizite Zustandsmaschine. Die Funktionsw
 - **Standard‑MUX**: Herkömmliche Multiplexer (z. B. `MUX2` oder `MUX4`) arbeiten meist auf Datentygebene (z. B. `ANY`), während `AUDI_MUX_3` speziell für Adapter‑Schnittstellen konzipiert ist und die gesamte Adapter‑Verbindung inklusive Ereignissen weiterleitet.
 - **Conditional‑Adapter**: Einige Bibliotheken bieten bedingte Adapter‑Weiterleitungen an, jedoch meist mit aufwändigerer Zustandslogik.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUDI_MUX_3` ist ein kompakter, generischer Funktionsblock zur einfachen Auswahl eines von drei gleichartigen AUDI‑Adapter‑Eingängen. Durch seine ereignisgesteuerte Arbeitsweise und die reduzierte Schnittstelle eignet er sich hervorragend für schnelle Umschaltaufgaben in Automatisierungsanwendungen. Die Rückmeldung über das `CNF`-Ereignis erlaubt eine zuverlässige Synchronisation im Steuerungsablauf.

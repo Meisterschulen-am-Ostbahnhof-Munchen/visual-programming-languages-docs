@@ -82,6 +82,10 @@ Da kein detaillierter ECC vorliegt, wird die Implementierung als deterministisch
 - **Standard-MUX (z.B. IEC 61499 MUX):** Ein allgemeiner Multiplexer arbeitet typischerweise mit einfachen Datentypen (INT, REAL) und Ereignissen. ALI_MUX_3 ist speziell für den ALI-Adaptertyp ausgelegt.
 - **ALI_SELECT:** Ein Baustein, der durch ein boolesches Signal zwischen zwei ALI-Quellen wählt. ALI_MUX_3 erlaubt die Auswahl aus drei Quellen mittels eines UINT-Index.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ALI_MUX_3** ist ein kompakter und flexibler Multiplexer für drei unidirektionale ALI-Datenströme. Er eignet sich besonders für Anwendungen, in denen mehrere ALI-Quellen über einen Index ausgewählt werden müssen. Die generische Definition erleichtert die Anpassung an spezifische Implementierungen, und die reine Adapter-Schnittstelle sorgt für eine saubere, typisierte Kommunikation. Der Baustein ist ein grundlegendes Element in ALI-basierten Steuerungssystemen.

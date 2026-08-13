@@ -82,6 +82,10 @@ Nach dem Senden von **CNF** kehrt der Baustein in den Idle-Zustand zurück.
 - **DEMUX (Demultiplexer)**: Verteilt ein Signal auf mehrere Ausgänge – umgekehrte Funktionalität.
 - **AULI_MUX_4** ist kompakter als ein generischer MUX mit vielen Ein-/Ausgängen, da er auf vier Kanäle beschränkt ist.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AULI_MUX_4** ist ein schlanker, aber effektiver Funktionsblock zur Auswahl eines von vier AULI-Signalen. Seine generische Deklaration erleichtert die Wiederverwendung in verschiedenen Automatisierungsprojekten. Durch die klare ereignisgesteuerte Schnittstelle fügt er sich nahtlos in IEC 61499 Anwendungen ein und eignet sich besonders für Anwendungen, die eine flexible Umschaltung zwischen Signalquellen erfordern.

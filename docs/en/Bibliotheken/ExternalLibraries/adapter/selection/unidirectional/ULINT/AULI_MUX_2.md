@@ -78,6 +78,11 @@ The function block does not have an explicit state machine. It behaves like an e
 - **`SELECT` (IEC 61131-3)**: Works with elementary data types (BOOL, INT, …), while `AULI_MUX_2` communicates via structured adapters and can therefore transmit complex data objects.
 - **`MERGE` blocks**: These combine multiple inputs in parallel (e.g., logic OR), while the MUX exclusively switches a single channel.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AULI_MUX_2` function block represents a simple yet robust multiplexer for use in 4diac environments.

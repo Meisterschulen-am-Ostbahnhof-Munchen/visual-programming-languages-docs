@@ -89,6 +89,10 @@ Der interne Zustandsautomat ist einfach gehalten:
 
 Im Gegensatz zu einem einfachen Daten‑Demultiplexer arbeitet `AIS_DEMUX_5` auf einer abstrakteren Adapter‑Ebene und kapselt die gesamte Signalübertragung (inkl. Konsistenzprüfungen) im Adapter‑Protokoll.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AIS_DEMUX_5** ist ein kompakter, generischer Funktionsblock der IEC‑61499‑Bibliothek, der eine saubere Adapter‑basierte Demultiplex‑Funktionalität für AIS‑Signale bereitstellt. Durch die generische Vorlage kann er flexibel an die Anzahl der benötigten Ausgänge angepasst werden. Die einfache ereignisgesteuerte Schnittstelle macht ihn leicht in übergeordnete Steuerungslogiken integrierbar, während die Verwendung von Adaptern eine hohe Wiederverwendbarkeit und Kapselung gewährleistet.

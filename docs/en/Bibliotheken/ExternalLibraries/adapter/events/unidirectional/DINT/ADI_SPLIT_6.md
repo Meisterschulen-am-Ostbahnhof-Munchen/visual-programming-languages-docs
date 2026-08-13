@@ -63,6 +63,11 @@ This function block does not have a state machine or explicit operating states. 
 - **ADI_MERGE / ADI_COMBINE:** While this function block distributes a signal, other function blocks combine multiple adapter inputs into a single output.
 - **Other Splitter Variants:** Splitters may exist for other adapter types (e.g., bidirectional ADI). This function block is limited to unidirectional signals.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `ADI_SPLIT_6` function block is a simple yet effective function block for multiplying unidirectional ADI adapter signals. Its generic design and low complexity make it ideally suited for the modular development of control applications in the Eclipse 4diac environment. Its applications range from simple signal distribution to testing and redundancy scenarios.

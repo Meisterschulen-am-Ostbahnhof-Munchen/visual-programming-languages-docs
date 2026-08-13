@@ -84,6 +84,10 @@ Im Vergleich zu einem Standard-Multiplikationsbaustein (`MUL`) nach IEC 61131-3,
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALI_MUL_4` ist ein effizienter Hilfsbaustein für arithmetische Berechnungen in komplexen 4diac-Systemen. Er eignet sich besonders für Anwendungen, bei denen mehrere Werte kompakt und strukturiert miteinander multipliziert werden müssen, ohne die Benutzeroberfläche mit unzähligen Verbindungslinien zu überladen.

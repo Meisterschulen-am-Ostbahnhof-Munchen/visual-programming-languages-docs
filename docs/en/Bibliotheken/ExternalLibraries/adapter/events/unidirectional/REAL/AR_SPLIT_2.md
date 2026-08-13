@@ -56,6 +56,11 @@ The function block does not implement state automation. Its functionality is lim
 
 Modules such as `AR_SPLIT_3` or `AR_SPLIT_N` offer similar functionality, distributing a signal to three or N outputs, respectively. The choice depends on the required number of outputs. Cascading multiple `AR_SPLIT_2` instances is also possible, but increases complexity compared to a dedicated multi-output splitter.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AR_SPLIT_2** is a simple yet essential module for multiplying an AR signal in IEC 61499-based control systems. Its generic design and clear interface make it the first choice when a signal needs to be passed between two independent target components.

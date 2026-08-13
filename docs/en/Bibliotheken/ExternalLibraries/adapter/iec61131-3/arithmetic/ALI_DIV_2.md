@@ -70,6 +70,11 @@ Since `ALI_DIV_2` is a data- and event-driven block, it does not have a complex 
 
 Compared to a standard `DIV` function block according to IEC 61131-3 or IEC 61499, which uses classic data pins (`IN1`, `IN2`, `OUT`) and separate event pins (`REQ`, `CNF`), the `ALI_DIV_2` offers a significantly cleaner interface in the function block diagram through the use of adapters. It is particularly suitable for advanced software architectures that consistently leverage the advantages of adapters for structuring.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALI_DIV_2` is a highly efficient and flexible division block for modern IEC 61499 applications. Through the consistent use of generic types and the `ALI` adapter concept, it significantly contributes to the clarity, reusability, and maintainability of control software in the 4diac IDE.

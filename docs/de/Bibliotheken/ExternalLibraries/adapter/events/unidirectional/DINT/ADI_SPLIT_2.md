@@ -59,6 +59,10 @@ Dieser Funktionsblock besitzt keinen internen Zustandsautomaten. Die Weiterleitu
 - **Ereignis‑/Daten‑Splitter:** Konventionelle Splitter-FBs (z. B. `SPLIT` für `BOOL`) arbeiten auf einzelnen Daten‑ und Ereignis‑Kanälen. `ADI_SPLIT_2` hingegen kopiert einen gesamten Adapter inklusive aller enthaltenen Daten und Ereignisse.  
 - **Mux/Demux‑Bausteine:** Multiplexer und Demultiplexer führen eine Zusammenführung oder Verteilung mit Auswahl durch; `ADI_SPLIT_2` verteilt starr und ohne Selektion.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `ADI_SPLIT_2` ist ein einfacher, aber nützlicher Funktionsblock zur Verteilung eines ADI‑Adapters auf zwei identische Ausgänge. Er erleichtert das Design von Adapter-basierten Steuerungen und vermeidet redundante Quellbausteine. Seine generische Natur und die fehlende interne Logik machen ihn zu einer flexiblen Komponente in IEC‑61499‑Applikationen.

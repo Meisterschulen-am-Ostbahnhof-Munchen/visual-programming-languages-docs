@@ -71,6 +71,11 @@ Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 * [Exercise_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)]
 * [Exercise_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)]
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AX_SPLIT_3 offers a simple and efficient solution for signal distribution in 4diac systems. Its generic implementation and standards-compliant adapter interface make it a versatile component for various automation applications.

@@ -74,6 +74,10 @@ Der Funktionsblock besitzt keinen internen Zustandsautomaten. Die Demultiplex-Fu
 
 Ein **MUX** (Multiplexer) führt die umgekehrte Funktion aus – mehrere Eingänge werden auf einen Ausgang geschaltet. Der **AI_DEMUX_5** ist ein Demultiplexer mit fest fünf Ausgängen. Im Gegensatz zu einem generischen, parametrierbaren DEMUX (z. B. mit variabler Anzahl an Ausgängen) ist die Anzahl hier auf fünf festgelegt, was eine klare Schnittstelle für typische Anwendungen mit bis zu fünf Zielen bietet. Gegenüber einem manuellen, kaskadierten Aufbau mit mehreren 1-zu-2-Demultiplexern reduziert dieser FB die Komplexität und erhöht die Übersichtlichkeit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AI_DEMUX_5** ist ein kompakter, generischer Demultiplexer für analoge Eingangssignale in der 4diac-IDE. Mit seiner einfachen Ereignissteuerung, dem Index-K-Eingang und der Adapter-basierten Schnittstelle eignet er sich ideal für das Routing von AI-Werten in modularen Steuerungsanwendungen. Die feste Anzahl von fünf Ausgängen deckt viele praktische Anforderungen ab, während die generische Implementierung eine flexible Wiederverwendung ermöglicht.

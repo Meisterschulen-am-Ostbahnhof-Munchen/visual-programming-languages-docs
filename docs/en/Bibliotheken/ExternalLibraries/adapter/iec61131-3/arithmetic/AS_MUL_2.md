@@ -77,6 +77,11 @@ Compared to a standard IEC 61131-3 / IEC 61499 `MUL` component, which uses indiv
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AS_MUL_2` is a modern and flexible function block for arithmetic operations in IEC 61499 control programs. Thanks to its generic structure and consistent use of adapters, it is ideally suited for clean, modular, and easily maintainable software architectures in industrial automation.

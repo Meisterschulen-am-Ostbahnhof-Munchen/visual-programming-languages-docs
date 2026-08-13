@@ -64,6 +64,10 @@ Im Vergleich zu anderen logischen Operatoren wie AND oder OR bietet XOR die Beso
 
 Vergleich mit [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_XOR_2 Funktionsblock stellt eine effiziente und zuverlässige Lösung für XOR-Operationen in 4diac-basierten Steuerungssystemen dar. Durch die Verwendung von Adapter-Schnittstellen ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und eignet sich besonders für Anwendungen, bei denen Signalunterschiede erkannt werden müssen.

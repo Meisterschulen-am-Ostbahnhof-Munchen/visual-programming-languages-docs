@@ -72,6 +72,11 @@ The function block operates purely event-driven and has no internal state that p
 * **Standard MUL Function Blocks (IEC 61131-3):** Classic multipliers work with direct elementary data types (such as `REAL` or `INT`) and require separate event inputs (`REQ`) and event outputs (`CNF`). `AUI_MUL_4` simplifies this by encapsulating the data in adapters.
 * **AUI_MUL_2 / AUI_MUL_3:** Similar function blocks with fewer inputs. The function block `AUI_MUL_4` is particularly suitable when exactly four factors need to be multiplied without having to chain multiple multiplication blocks together (which saves resources and latency in the execution model).
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The function block `AUI_MUL_4` represents an efficient and clean solution for arithmetic multiplications of four factors within an adapter-based 4diac architecture. It promotes the modular design and clarity of the IEC 61499 application.

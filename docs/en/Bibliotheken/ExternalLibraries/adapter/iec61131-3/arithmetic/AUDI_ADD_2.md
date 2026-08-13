@@ -62,6 +62,11 @@ The **AUDI_ADD_2** function block has no states (no ECC). The addition is perfor
 - **Classic ADD Function Blocks (e.g., `ADD` from IEC 61131-3)**: These typically have concrete data inputs and outputs as well as event control. The `AUDI_ADD_2` replaces this with an adapter interface, enabling a higher level of abstraction and encapsulation.
 - **Generic Adders (e.g., `GEN_ADD`)**: Such function blocks are also generic but often use direct data ports. The `AUDI_ADD_2` is specifically optimized for adapter-based interfaces.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AUDI_ADD_2** is a specialized, generic addition function block for adapter-based 4diac IDE environments. By eliminating traditional ports and utilizing the `AUDI` adapter type, it is particularly well-suited for data flow-oriented and highly modularized control applications. Its generic design increases reusability across different data types.

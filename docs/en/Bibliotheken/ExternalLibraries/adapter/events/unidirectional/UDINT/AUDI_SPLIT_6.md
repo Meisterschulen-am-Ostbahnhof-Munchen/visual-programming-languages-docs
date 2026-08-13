@@ -61,6 +61,11 @@ No state machine (ECC) exists. The function block does not execute any sequentia
 
 Other split function blocks exist (e.g., `AUDI_SPLIT_2`, `AUDI_SPLIT_4`) that differ only in the number of outputs. With six outputs, `AUDI_SPLIT_6` offers a higher distribution density. Unlike pure data splitters for basic data types, this FB works exclusively with AUDI adapters and supports unidirectional coupling.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AUDI_SPLIT_6` is a simple yet flexible function block for multiplying adapter connections in a 4diac environment. Its generic nature and lean implementation without event overhead make it ideal for scenarios where an incoming data stream needs to be distributed to multiple independent receivers.

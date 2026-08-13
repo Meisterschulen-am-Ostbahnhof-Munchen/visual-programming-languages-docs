@@ -86,6 +86,10 @@ Der Baustein arbeitet ereignisgesteuert und besitzt keinen internen, persistente
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AULI_MUL_3` ist ein effizienter Hilfsbaustein für Anwendungen, die ein hohes Maß an Modularität erfordern. Durch die konsequente Nutzung von unidirektionalen Adaptern trägt er zur Reduzierung von "Signal-Spaghetti" in komplexen 4diac-Anwendungen bei und vereinfacht die Multiplikation von drei Variablen.

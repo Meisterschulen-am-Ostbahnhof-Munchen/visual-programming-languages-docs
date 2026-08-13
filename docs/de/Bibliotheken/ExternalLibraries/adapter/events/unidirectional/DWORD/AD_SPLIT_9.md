@@ -64,6 +64,10 @@ Der FB besitzt keinen internen Zustandsautomaten und führt keinerlei sequentiel
 - **AD_SPLIT_2 / AD_SPLIT_4 / AD_SPLIT_8**: Diese Bausteine bieten die gleiche Funktionalität, jedoch mit einer geringeren Anzahl von Ausgängen (2, 4, 8). `AD_SPLIT_9` ergänzt das Portfolio für Anwendungen, die genau neun parallele Ausgänge benötigen.
 - **Andere Split-Bausteine**: Datentyp-orientierte Split-FBs (z. B. für INTEGER oder BOOL) teilen einzelne Datenwerte auf, während `AD_SPLIT_9` vollständige Adapterstrukturen vervielfältigt. Der Adapter kann dabei mehrere zusammengehörige Daten und Ereignisse bündeln.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AD_SPLIT_9` ist ein einfacher, aber nützlicher generischer Funktionsblock zur unidirektionalen Aufteilung eines Adaptersignals auf neun identische Ausgänge. Er hilft, Redundanz im Systemdesign zu vermeiden und erleichtert die modulare Strukturierung von IEC 61499-Anwendungen.

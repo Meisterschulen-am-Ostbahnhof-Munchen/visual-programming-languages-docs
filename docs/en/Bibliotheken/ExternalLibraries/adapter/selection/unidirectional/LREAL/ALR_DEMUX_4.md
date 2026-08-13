@@ -74,6 +74,11 @@ The function block does not have an explicit state machine. Its behavior can be 
 - **ALR_DEMUX_2**: A demultiplexer with only two outputs, suitable for smaller configurations.
 - **Generic DEMUX Components**: Other implementations often use direct data inputs/outputs, while ALR_DEMUX_4 is based on adapters, allowing for more flexible type adaptation.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 **ALR_DEMUX_4** is a compact, event-driven demultiplexer for ALR data streams. Its adapter-based interface and generic architecture make it versatile for use in automated agricultural systems. It allows for simple, index-driven signal distribution without additional logic and is particularly useful in scenarios with multiple identical actuators or sensors.

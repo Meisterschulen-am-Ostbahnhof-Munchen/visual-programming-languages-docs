@@ -67,6 +67,11 @@ The function block does not have an explicit state machine (ECC). Distribution o
 - **AS_COPY** – Copies a signal to a second output; equivalent to a 1:2 split.
 - **AS_SPLIT_9**, with nine outputs, is the largest standard variant and covers extensive distribution requirements.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AS_SPLIT_9** is a straightforward, reliable function block for duplicating an AS signal. Its simple adapter interface and lack of internal logic make it particularly suitable for applications where an output signal needs to be distributed to multiple receivers. Its generic nature also allows for easy adaptation to specific project requirements.

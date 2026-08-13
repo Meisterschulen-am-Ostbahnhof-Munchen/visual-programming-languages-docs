@@ -67,6 +67,11 @@ The FB does not have its own states or behavior modes, as it only performs struc
 
 The ALI_SPLIT_6 differs from other split variants only in the number of outputs. All function blocks in this family operate on the same passive distribution principle. The function block described here is implemented as a generic block, while other variants may be implemented as simple function block types without genericity.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The ALI_SPLIT_6 is a simple yet useful function block for multiplying a unidirectional ALI adapter signal to six identical outputs. Thanks to its generic properties, it can be flexibly integrated into various control systems. Due to the lack of processing logic, it is particularly resource-efficient and easy to understand. It is ideally suited for applications where a signal needs to be provided to multiple receivers simultaneously.

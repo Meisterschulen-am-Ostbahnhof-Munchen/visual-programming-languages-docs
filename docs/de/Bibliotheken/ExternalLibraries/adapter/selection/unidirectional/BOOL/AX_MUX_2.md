@@ -77,6 +77,10 @@ Vergleich mit [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/F_
 
 * [Uebung_090a1_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_MUX_2 ist ein effizienter und flexibler Multiplexer-Baustein, der sich ideal für modulare Steuerungssysteme eignet. Seine Adapter-basierte Architektur ermöglicht einfache Integration in bestehende Systeme, während der Ereignismechanismus eine zuverlässige und nachvollziehbare Signalverarbeitung gewährleistet.

@@ -86,6 +86,10 @@ Im Vergleich zu Standard-Multiplikationsbausteinen (wie dem klassischen `MUL` de
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUS_MUL_4` ist ein hocheffizienter und moderner Funktionsbaustein für die 4diac-IDE. Er kombiniert die mathematische Grundfunktion der Multiplikation mit den modernen Strukturierungsvorteilen von IEC 61499-Adaptern, was zu saubereren, wartungsfreundlicheren und übersichtlicheren Steuerungsanwendungen führt.

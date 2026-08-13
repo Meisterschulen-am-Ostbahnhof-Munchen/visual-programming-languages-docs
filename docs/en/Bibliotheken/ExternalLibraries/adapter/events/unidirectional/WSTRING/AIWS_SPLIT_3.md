@@ -59,6 +59,11 @@ This function block does not have a state machine (ECC), therefore there are no 
 - **ALL_SPLIT (for data):** A generic function block for splitting data inputs/outputs, not specific to adapters. AIWS_SPLIT_3, on the other hand, is specifically optimized for the AIWS adapter type and operates at the adapter level.
 - **AIWS_JOIN_3:** The inverse function block that combines three AIWS inputs into one output.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIWS_SPLIT_3** is a simple yet effective generic function block for duplicating an AIWS adapter signal to three parallel outputs. Thanks to its generic nature, it can be flexibly used in various automation and control applications where a data stream is required multiple times.

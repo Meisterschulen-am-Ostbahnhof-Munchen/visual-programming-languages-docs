@@ -75,6 +75,10 @@ Der `AL_MUX_4` besitzt keine expliziten Zustände. Sein Verhalten ist rein funkt
 - **`SELECT` oder `CASE` (Funktionsbausteine)**: Eher prozessorientiert, während der `AL_MUX_4` speziell für die Kopplung von Adaptern in einer IEC 61499-Umgebung optimiert ist.
 - **Adapter-Bypass**: Andere Bausteine zur Adapter-Umschaltung existieren, der `AL_MUX_4` bietet eine feste 4-zu-1-Struktur und ist generisch konfigurierbar.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AL_MUX_4` ist ein kompakter und effizienter Funktionsblock zur Auswahl eines von vier AL-Adaptern. Durch seine generische Natur und die einfache Ereignissteuerung eignet er sich ideal für modulare Steuerungsanwendungen, die eine flexible Weiterleitung von Adapter-Signalen erfordern. Seine Verwendung reduziert den Verdrahtungsaufwand und erhöht die Wiederverwendbarkeit von Steuerungslogiken.

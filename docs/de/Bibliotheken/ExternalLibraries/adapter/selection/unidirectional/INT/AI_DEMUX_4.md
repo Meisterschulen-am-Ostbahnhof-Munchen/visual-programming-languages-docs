@@ -66,6 +66,10 @@ In der XML‑Deklaration ist keine Zustandsmaschine definiert. Der FB verhält s
 - **AI_DEMUX_2 / AI_DEMUX_8**: Bausteine mit zwei bzw. acht Ausgängen; AI_DEMUX_4 stellt eine spezifische Anzahl von vier Ausgängen bereit.
 - **Generische Demultiplexer**: Andere Implementierungen erlauben oft eine konfigurierbare Kanalanzahl; AI_DEMUX_4 ist auf vier Kanäle festgelegt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 AI_DEMUX_4 ist ein einfacher und zuverlässiger Baustein zur Signaldemultiplexierung in IEC‑61499‑Systemen. Er ermöglicht die flexible Verteilung analoger Signale auf bis zu vier Kanäle und eignet sich durch seinen generischen Aufbau für vielfältige Automatisierungsaufgaben.

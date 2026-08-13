@@ -63,6 +63,10 @@ Nicht zutreffend – der Baustein arbeitet ohne Zustandsmaschine. Die Multiplika
 
 Im Gegensatz zu klassischen IEC‑61131-Multiplikationsbausteinen (z. B. `MUL` mit festen Datentypen) bietet `AUDI_MUL_4` eine generische, adapterbasierte Schnittstelle, die eine flexible Wiederverwendung ermöglicht. Andere Multiplikatoren wie `MUL_2` oder `AUDI_MUL_2` verarbeiten nur zwei Eingänge, während `AUDI_MUL_4` vier Eingänge gleichzeitig multipliziert. Bausteine mit ereignisgesteuerter Verarbeitung (z. B. `MUL_E`) erfordern zusätzliche Trigger, während dieser FB rein datengesteuert arbeitet.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der FB **AUDI_MUL_4** ist ein spezialisierter, generischer Multiplikationsbaustein für vier Eingangswerte. Durch die Nutzung von Adaptern und die generische Auslegung eignet er sich besonders für modulare, wiederverwendbare Automatisierungslösungen, bei denen Flexibilität und Skalierbarkeit im Vordergrund stehen. Die einfache Schnittstelle ohne Ereignisse macht die Integration in datenorientierte Architekturen unkompliziert.

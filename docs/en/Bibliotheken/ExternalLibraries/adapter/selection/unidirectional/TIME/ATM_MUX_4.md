@@ -86,6 +86,11 @@ An incorrect index specification (values outside 0…3) is ignored – the funct
 - **Standard multiplexer components (e.g., MUX2, MUX4)** typically work with elementary data types (INT, BOOL). The `ATM_MUX_4` is specifically designed for the "ATM" adapter type, allowing direct, protocol-compliant forwarding without data conversion.
 - **Adapter-based multiplexers** are less common than data multiplexers. This component encapsulates all switching logic within a single function block, improving network clarity.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ATM_MUX_4` is a compact, generic function block for selecting one of four ATM adapter inputs. It is particularly suitable for event-driven applications in agricultural control systems where unidirectional ATM data streams need to be switched. The ability to rename generically and the clear, event-based interface make it highly versatile.

@@ -80,6 +80,10 @@ Ein wirksamer Zustandsautomat ist nicht explizit im XML definiert, da die Logik 
 - **Generische Multiplexer**: Vergleichbare Bausteine für allgemeine ALI‑Adapter existieren oft mit fester Kanalzahl. **ALI_MUX_2** ist auf zwei Kanäle spezifiziert, aber dank seiner generischen Natur leicht auf andere Kanalzahlen erweiterbar (z. B. durch Varianten wie ALI_MUX_4).
 - **Unterschied zu dedizierten Logikbausteinen**: Der FB setzt keine zusätzliche Logik um (z. B. Hysterese, Filter) – er ist ein reiner, ereignisgesteuerter Umschalter.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ALI_MUX_2** ist ein einfacher, aber effektiver Multiplexer für ALI‑Adapter‑Signale. Durch seine generische Auslegung und die rein adapterbasierte Schnittstelle eignet er sich ideal für modulare Automatisierungsprojekte, bei denen zwischen zwei Quellen umgeschaltet werden muss. Die klare Zustandslogik und die Bestätigung per `CNF` erlauben eine zuverlässige Einbindung in übergeordnete Steuerungsabläufe.

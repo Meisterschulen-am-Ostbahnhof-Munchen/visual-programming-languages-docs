@@ -69,6 +69,11 @@ The function block has **no explicit states**, as it is implemented as a pure fu
 
 The **AIWS_MUX_4** is specifically designed for the unidirectional AIWS adapter type. A general multiplexer for other adapter types (e.g., for byte or Boolean data) differs in its interface definition, while the underlying logic (index-based selection) is identical. Due to its generic design, the function block can be easily adapted to other adapter types.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AIWS_MUX_4** is a compact, generic multiplexer for four unidirectional AIWS adapters. It offers simple, event-driven switching with a clear interface concept and is particularly suitable for applications where multiple AIWS sources need to be selectively connected to a common output.

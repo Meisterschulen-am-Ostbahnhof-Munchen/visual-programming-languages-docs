@@ -89,6 +89,10 @@ Eine explizite Zustandsmaschine ist im XML nicht definiert, aber das beschrieben
 
 Der AW_DEMUX_4 ist die Erweiterung auf vier Ausgänge. Er bietet eine höhere Anzahl von Zielen, benötigt aber eine klare Festlegung des Index.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AW_DEMUX_4** ist ein einfacher, aber nützlicher generischer Demultiplexer für unidirektionale Adapter. Er ermöglicht die flexible Weiterleitung eines Eingangssignals an einen von vier Ausgängen, gesteuert über einen Index. Dank seiner generischen Struktur und der Lizenz unter EPL 2.0 ist er gut in IEC 61499‑basierte Automatisierungssysteme integrierbar.

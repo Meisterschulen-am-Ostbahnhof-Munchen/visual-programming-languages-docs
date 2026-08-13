@@ -70,6 +70,11 @@ The function block behaves purely functionally and essentially has the following
 * **Standard `MUL` (IEC 61131-3):** Classic multiplication blocks operate with discrete data and event pins. `AR_MUL_3` uses adapters instead, which makes the design clearer.
 * **`AR_MUL_2`:** Multiplies only two values. `AR_MUL_3` eliminates the need for an additional cascading block when three variables need to be multiplied, thus optimizing performance and clarity.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AR_MUL_3` is a practical and reusable function block for modern IEC 61499 development in 4diac. By encapsulating the mathematical logic in an adapter-based structure, it significantly contributes to the clarity of complex control applications.

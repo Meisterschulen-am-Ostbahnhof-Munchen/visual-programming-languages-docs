@@ -78,6 +78,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Sein Verhalten lässt sic
 
 `AUDI_DEMUX_5` ähnelt anderen Demultiplexern wie `AUDI_DEMUX_2` oder `MUX_4`, unterscheidet sich jedoch durch die Anzahl der Ausgänge und die spezifische Nutzung des `AUDI`-Adaptertyps. Im Gegensatz zu Multiplexern (die mehrere Eingänge auf einen Ausgang zusammenführen) arbeitet dieser Baustein als Verteiler von einem Eingang auf mehrere Ausgänge. Generische Varianten lassen sich durch einfaches Ändern der Anzahl der Adapterports erzeugen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AUDI_DEMUX_5` stellt eine kompakte, generische Lösung zur gezielten Weiterleitung von `AUDI`-Adapterdaten dar. Dank seiner klaren Schnittstelle und ereignisgesteuerten Verarbeitung ist er einfach in übergeordnete Steuerungslogiken integrierbar und eignet sich besonders für Anwendungen, die eine dynamische Umschaltung von Signalpfaden erfordern.

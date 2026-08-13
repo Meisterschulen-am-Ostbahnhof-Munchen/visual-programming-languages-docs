@@ -66,6 +66,10 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine** (ECC). Er reagie
 - **Generic ADI MUX (abgeleitet)**: Durch die generische Basis können Spezialisierungen mit anderer Eingangsanzahl (z. B. ADI_MUX_3, ADI_MUX_8) erzeugt werden, ohne die Logik neu zu implementieren.  
 - **Unterschied zu Select‑Bausteinen**: Select-FBs arbeiten meist bitweise oder auf Skalaren; ADI_MUX_5 überträgt komplette Adapterdatenströme.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ADI_MUX_5** ist ein kompakter, generischer Multiplexer für ADI‑Adapter in der 4diac‑IDE. Seine adapterbasierte Schnittstelle und die einfache Indexsteuerung machen ihn zu einem praktischen Werkzeug für die flexible Signalauswahl in Steuerungsanwendungen. Die Möglichkeit der Generierung (GenericClassName) erlaubt eine typsichere Anpassung an konkrete Projekte.

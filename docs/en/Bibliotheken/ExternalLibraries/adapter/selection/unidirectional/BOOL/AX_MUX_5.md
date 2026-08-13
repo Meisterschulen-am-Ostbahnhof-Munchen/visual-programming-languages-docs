@@ -89,6 +89,11 @@ The function block has no visible states; the logic is limited to event-driven s
 
 Compared to a hard-wired selection module, `AX_MUX_5` offers flexible, event-driven switching and is specifically optimized for use with unidirectional AX adapters.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AX_MUX_5` is a compact, generic multiplexer for up to five AX adapter inputs. It is particularly suitable for applications where multiple similar data sources need to be dynamically selected. Its clear event interface and simple index control allow for easy integration into larger control architectures. The lack of a range check for `K` necessitates correct indexing by the calling logic.

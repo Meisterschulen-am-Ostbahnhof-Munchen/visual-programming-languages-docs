@@ -76,6 +76,11 @@ The function block does not have an explicit state machine in its XML descriptio
 - **Multiplexer (`AIS_MUX_2`)**: The multiplexer combines multiple AIS inputs into a single output; the demultiplexer performs the reverse function.
 - **Advantages**: The use of adapters allows for loose coupling and easy reuse in various applications.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AIS_DEMUX_2** is a specialized, generic function block for demultiplexing AIS signals. It offers a clear, event-driven interface with adapters and is particularly suitable for use in agricultural technology and other areas where unidirectional AIS data needs to be distributed. Its EPL 2.0 license makes it open and extensible.

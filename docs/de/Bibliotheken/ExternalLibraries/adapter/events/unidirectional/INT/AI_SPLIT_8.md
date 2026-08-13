@@ -57,6 +57,10 @@ Der FB besitzt keine interne Zustandsmaschine (ECC). Es gibt keine definierten Z
 - **AI_SPLIT_2, AI_SPLIT_4:** Diese Bausteine verteilen ein analoges Signal auf zwei bzw. vier Ausgänge. Der vorliegende FB bietet mit acht Ausgängen eine höhere Anzahl paralleler Verbindungen.
 - **DIO_SPLIT (digital):** Ein ähnlicher Splitter für digitale Signale, jedoch auf Basis von *DI/DO*-Adaptertypen. Der AI_SPLIT_8 ist spezifisch für analoge Signale ausgelegt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AI_SPLIT_8** ist ein einfacher, generischer Funktionsblock zur Vervielfachung eines analogen Signals. Seine klare Struktur – ein Eingang, acht Ausgänge, keine Ereignisse – macht ihn ideal für die unkomplizierte Signalverteilung in Automatisierungsanwendungen. Der generische Charakter erlaubt eine flexible Anpassung an verschiedene analoge Datentypen.

@@ -76,6 +76,10 @@ Da keine Zustandsmaschine im XML definiert ist, kann die interne Logik als einfa
 - **AULI_SELECT**: Oft ein spezialisierterer Baustein mit fester Anzahl von Kanälen; `AULI_DEMUX_3` ist explizit für drei Kanäle ausgelegt.
 - **Generische Demultiplexer**: Die generische Natur des Bausteins erlaubt es, die Kanalanzahl (z. B. `AULI_DEMUX_N`) durch Parametrierung zu ändern, ohne den Baustein neu zu erstellen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AULI_DEMUX_3** ist ein einfacher, aber nützlicher Funktionsblock zur gezielten Verteilung eines AULI‑Werts auf drei Ausgänge. Seine generische Architektur und die klare ereignisgesteuerte Schnittstelle machen ihn zu einem flexiblen Werkzeug in der Automatisierungstechnik, insbesondere wenn es um die Kanalumschaltung oder Signalverteilung geht.

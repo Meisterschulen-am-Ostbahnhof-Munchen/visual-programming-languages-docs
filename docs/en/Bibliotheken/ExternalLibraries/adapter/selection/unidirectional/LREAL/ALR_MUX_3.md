@@ -80,6 +80,11 @@ A detailed state machine is provided by the generic framework when compiling the
 - **General Multiplexer Function Blocks** (e.g., `MUX` from IEC 61499 standard libraries): These usually work with scalar data types (BOOL, INT) and not with adapters. The **ALR_MUX_3** is optimized for the ALR adapter interface.
 - Unlike an analog switch or data distributor, the focus is on event-driven transmission of complete ALR packets.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ALR_MUX_3** is a compact, generic multiplexer for the ALR adapter interface. It enables flexible switching between three data sources based on an index value. Thanks to its adapter-based input/output and generic typing, it can be easily integrated and extended into IEC 61499 projects.

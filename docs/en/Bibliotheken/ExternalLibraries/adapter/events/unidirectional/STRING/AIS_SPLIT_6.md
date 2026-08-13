@@ -62,6 +62,11 @@ This function block does not have its own state machine (ECC). Its behavior is d
 
 Other split function blocks may exist in the 4diac framework that differ in the number of outputs or data type. `AIS_SPLIT_6` is specifically designed for the AIS adapter interface and six outputs. Other splitters might have additional events or configuration parameters (e.g., selective routing), while this module is intentionally simple and requires no configuration.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AIS_SPLIT_6` is a useful and minimalist module for signal splitters in AIS-based control systems. It reliably distributes an incoming signal to six outputs and is characterized by its simplicity, generic design, and clear interface separation. This makes it particularly suitable for modular, transparent control architectures.

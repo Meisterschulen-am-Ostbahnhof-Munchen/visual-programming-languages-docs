@@ -63,6 +63,10 @@ Der Baustein besitzt kein internes Zustandsverhalten. Die Ausgänge folgen direk
 - **AI_MERGE**: Fasst mehrere AI-Signale zu einem zusammen (z. B. Mittelwert).
   AI_SPLIT_2 ist spezialisiert auf die einfache 1-zu-2-Verteilung ohne Logik oder Konfiguration.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 AI_SPLIT_2 ist ein einfacher, aber nützlicher Baustein zur passiven Aufteilung eines analogen Eingangssignals. Durch den generischen Adapteransatz ist er flexibel einsetzbar und erleichtert die modulare Strukturierung von Applikationen nach IEC 61499.

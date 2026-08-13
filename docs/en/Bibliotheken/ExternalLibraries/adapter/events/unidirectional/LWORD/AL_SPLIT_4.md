@@ -62,6 +62,11 @@ The function block does not have a state machine. It operates statically and per
 
 Unlike these function blocks, `AL_SPLIT_4` operates exclusively at the adapter level and copies complete adapter communication streams.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AL_SPLIT_4** function block is a simple, efficient signal fan for the `AL` adapter type. It is ideally suited for all applications where a single adapter data stream needs to be distributed to multiple consumers without additional logic or delays. Its generic nature allows its use in various automation contexts, particularly in agricultural machinery control, as intended by the manufacturer.

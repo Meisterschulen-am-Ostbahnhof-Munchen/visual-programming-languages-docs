@@ -71,6 +71,10 @@ Danach ist der FB wieder bereit für das nächste REQ.
 - **Multiplexer (z. B. AD_MUX):** Ein Multiplexer schaltet mehrere Eingänge auf einen Ausgang – genau die umgekehrte Funktionalität.
 - **Einfacher Schalter:** AD_DEMUX_3 arbeitet ohne Zwischenspeicherung und eignet sich daher besonders für zeitkritische Weiterleitungen im laufenden Betrieb.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AD_DEMUX_3 ist ein kompakter, generischer Demultiplexer für Adapter-basierte Schnittstellen. Durch die klare Ereignissteuerung und die einfache Indexauswahl eignet er sich ideal zur dynamischen Signalverteilung in verteilten Automatisierungssystemen. Die feste Anzahl von drei Ausgängen deckt viele typische Anwendungsfälle ab und ermöglicht eine schnelle Implementierung ohne überflüssige Konfiguration.

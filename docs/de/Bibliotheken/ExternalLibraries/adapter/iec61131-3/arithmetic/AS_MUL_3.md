@@ -76,6 +76,10 @@ Im Vergleich zu Standard-Multiplikationsbausteinen (wie `MUL`), die mit separate
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AS_MUL_3` ist ein effizienter, modularer und wiederverwendbarer Funktionsbaustein für arithmetische Dreifach-Multiplikationen. Er eignet sich hervorragend für moderne, adapter-basierte Softwarearchitekturen innerhalb der IEC 61499 und trägt zur Übersichtlichkeit komplexer Steuerungsanwendungen bei.

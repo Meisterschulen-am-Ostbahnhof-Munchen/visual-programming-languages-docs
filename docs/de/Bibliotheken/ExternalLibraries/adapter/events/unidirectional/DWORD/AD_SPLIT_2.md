@@ -59,6 +59,10 @@ Der Funktionsblock hat keine expliziten Zustände. Er arbeitet kontinuierlich un
 - **AD_MERGE**: Führt mehrere Adaptereingänge zu einem Ausgang zusammen – die Umkehrfunktion zu AD_SPLIT_2.
 - **AD_SELECT**: Wählt einen von mehreren Adaptereingängen aus und gibt ihn weiter, erfordert hingegen eine Steuerlogik.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AD_SPLIT_2 ist ein einfacher, aber effektiver Baustein zur Signalverteilung in Adapter-basierten Architekturen. Seine generische Natur und die fehlende Zustandslogik machen ihn leicht konfigurierbar und ressourcenschonend. Er eignet sich besonders für modulare Automatisierungsprojekte, in denen ein Adaptersignal auf mehrere nachgelagerte Komponenten verteilt werden muss.

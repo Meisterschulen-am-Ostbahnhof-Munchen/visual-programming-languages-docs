@@ -71,6 +71,11 @@ The function block does not have an explicit state machine. Its behavior is pure
 
 Generic multiplexers exist in the 4diac framework (e.g., `MUX_2`, `MUX_8`). The **AIS_MUX_4** is specifically designed for the AIS adapter type and optimized for unidirectional AIS data. Unlike universal multiplexers with simple data types (e.g., `INT`, `BOOL`), it operates at the adapter level and transmits complex data structures in a single step.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AIS_MUX_4` is a simple yet effective component for selecting one of four AIS inputs. Its generic design and clear event control make it well-suited for modular automation solutions with AIS communication.

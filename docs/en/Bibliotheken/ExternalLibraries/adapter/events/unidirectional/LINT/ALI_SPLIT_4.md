@@ -61,6 +61,11 @@ The function block has no states or control logic of its own. Its behavior is de
 - **ALI_MERGE**: Combines multiple ALI inputs into one output – the inverse function of the split function.
 - **ALI_SELECT**: Selects one of several inputs based on a control signal and routes it to an output (no parallel distribution).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ALI_SPLIT_4** is a simple yet useful function block for passively distributing a unidirectional ALI signal to four identical outputs. Its generic design and the absence of event or data logic make it particularly suitable for rapid signal multiplication in automation technology without incurring additional processing load.

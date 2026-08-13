@@ -75,6 +75,10 @@ Der Funktionsblock besitzt keine explizite Zustandsmaschine. Sein Verhalten kann
 - **ALR_DEMUX_2**: Ein Demultiplexer mit nur zwei Ausgängen, geeignet für kleinere Konfigurationen.
 - **Generische DEMUX-Bausteine**: Andere Implementierungen verwenden oft direkte Daten-Ein-/Ausgänge, während ALR_DEMUX_4 auf Adaptern basiert, was eine flexiblere Typanpassung ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 **ALR_DEMUX_4** ist ein kompakter, ereignisgesteuerter Demultiplexer für ALR-Datenströme. Die Adapter-basierte Schnittstelle und der generische Aufbau machen ihn vielseitig einsetzbar in automatisierten landwirtschaftlichen Systemen. Er erlaubt eine einfache, indexgesteuerte Verteilung von Signalen ohne zusätzliche Logik und ist besonders in Szenarien mit mehreren gleichartigen Aktoren oder Sensoren nützlich.

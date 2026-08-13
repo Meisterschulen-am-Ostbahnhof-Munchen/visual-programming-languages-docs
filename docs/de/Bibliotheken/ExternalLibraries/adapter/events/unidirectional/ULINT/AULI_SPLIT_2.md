@@ -64,6 +64,10 @@ Da der Funktionsblock keine interne Logik oder Zustandsmaschine enthält, existi
 
 Während **AULI_SPLIT_2** eine feste 1‑zu‑2‑Aufteilung vornimmt, erlauben generische Splitter eine flexible Anzahl von Ausgängen. Zusammenführer wie **AULI_MERGE** lösen die umgekehrte Aufgabe.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AULI_SPLIT_2** ist ein minimaler und effizienter Baustein zur Signalvervielfachung unidirektionaler AULI‑Adapter. Aufgrund seiner passiven, zustandslosen Natur eignet er sich ideal für Echtzeitanwendungen, in denen Kopien eines Datenstroms ohne zusätzliche Latenz oder Logik benötigt werden. Seine generische Implementierung erleichtert den Einsatz in unterschiedlichen Entwicklungswerkzeugen und Bibliotheken.

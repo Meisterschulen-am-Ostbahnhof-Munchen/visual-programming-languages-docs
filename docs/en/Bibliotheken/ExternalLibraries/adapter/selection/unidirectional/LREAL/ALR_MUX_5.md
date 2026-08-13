@@ -88,6 +88,11 @@ The function block does not have an explicit state machine. It remains in the **
 
 The ALR_MUX_5 is characterized by its adapter interface, which can transport complex composite data structures, and by its generic design.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ALR_MUX_5** function block offers clean, event-driven multiplexing functionality for five unidirectional ALR adapters. It is generic, easy to use, and suitable for all applications that require dynamic selection from multiple data sources in ALR format. Thanks to the adapter technology, even complex data packets can be switched without additional effort.

@@ -62,6 +62,11 @@ The function block (FB) has no states or sequences of its own. It uses purely co
 - **Event-Based Splitters**: Some splitters use event outputs (e.g., `SPLIT` for arbitrary events). `AIWS_SPLIT_4` is specifically designed for the unidirectional **AIWS** adapter and requires no events.
 - **Multiple Outputs**: Variants with two (e.g., `AIWS_SPLIT_2`) or more outputs are available; `AIWS_SPLIT_4` provides four outputs by default.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AIWS_SPLIT_4` is a simple yet essential component for distributing unidirectional **AIWS** adapter connections. It reduces wiring complexity, ensures clear structures, and enables the parallel use of a data stream by multiple function blocks without additional logic.

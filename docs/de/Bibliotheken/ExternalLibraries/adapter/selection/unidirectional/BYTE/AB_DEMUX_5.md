@@ -86,6 +86,10 @@ Mögliche Fehlerzustände (ungültiger Index) sind nicht definiert; dies sollte 
 - **AB_DEMUX_5 vs. AB_DEMUX_3**: Die Anzahl der Ausgänge ist die wesentliche Unterscheidung; der Demultiplexer mit drei Ausgängen hat nur die Plugs OUT1–OUT3.
 - **Generische Varianten**: Durch die generische Deklaration kann derselbe Baustein in unterschiedlichen Adapter‑Kontexten (z. B. mit anderen Datenformaten) wiederverwendet werden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AB_DEMUX_5 ist ein kompakter, generischer Demultiplexer für unidirektionale AB-Adapter. Er ermöglicht eine saubere und flexible Datenweiterleitung an bis zu fünf Ziele auf Basis eines Index und eignet sich besonders für modulare Steuerungsarchitekturen, bei denen eine Kommunikationsschnittstelle auf mehrere Aktoren aufgeteilt werden muss.

@@ -74,6 +74,10 @@ Im Vergleich zu klassischen IEC 61131-3 Subtraktionsbausteinen (wie z. B. `SUB`)
 
 Gegenüber bidirektionalen Berechnungsbausteinen zeichnet sich der `ALR_SUB_2` durch eine deterministische, rückwirkungsfreie Signalverarbeitung aus.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_SUB_2` ist ein effizienter und flexibel einsetzbarer Standardbaustein für arithmetische Berechnungen in modernen, serviceorientierten Steuerungssystemen. Durch die Nutzung der Adapter-Technologie unterstützt er ein modulares und wartungsfreundliches Softwaredesign nach dem IEC 61499-Standard.

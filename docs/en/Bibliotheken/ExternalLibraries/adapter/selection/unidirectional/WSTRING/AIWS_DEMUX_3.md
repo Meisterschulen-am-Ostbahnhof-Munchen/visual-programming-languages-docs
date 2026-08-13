@@ -73,6 +73,11 @@ This function block does not have an explicitly modeled state machine. However, 
 
 The **AIWS_DEMUX_3** offers a ready-to-use solution tailored to agricultural technology, requiring no additional configuration.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AIWS_DEMUX_3** is a simple yet crucial function block for the targeted distribution of AIWS information to three outputs. Thanks to its clear interface and generic design, it integrates seamlessly into agricultural automation projects. It reduces programming effort and improves the clarity of data flow diagrams.

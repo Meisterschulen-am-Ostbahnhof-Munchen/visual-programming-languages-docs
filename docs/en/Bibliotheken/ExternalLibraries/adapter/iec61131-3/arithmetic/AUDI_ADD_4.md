@@ -60,6 +60,11 @@ The function block has no explicit states. The processing is data-driven: As soo
 - **`AUDI_ADD_2`**: A hypothetical function block with only two adapter inputs – `AUDI_ADD_4` extends this to four summands.
 - **Generic Function Blocks**: The attribute `GenericClassName` makes this function block similar to the generic approach of IEC 61499, where the data type is only determined at runtime.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUDI_ADD_4` is a flexible, pure adapter function block for adding four values. Thanks to its generic design, it is suitable for various numeric data types and can be used in modular automation projects that rely on adapter-based communication. Eliminating events simplifies handling in data-driven systems, but requires correct adapter cabling.

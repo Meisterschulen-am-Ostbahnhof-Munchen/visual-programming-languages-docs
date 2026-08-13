@@ -69,6 +69,11 @@ Since `ALR_ADD_3` is a mathematical, data-flow-oriented function block, it does 
 * **Standard `ADD` (IEC 61131-3):** The classic `ADD` component uses separate pins for data and events (REQ/CNF). In contrast, `ALR_ADD_3` combines these signals in adapters, increasing modularity and reusability in cross-project designs.
 * **`ALR_ADD_2`:** A similar adapter-based component, but it only supports two inputs. `ALR_ADD_3` eliminates cascading when adding exactly three values, thus saving additional memory and computational effort.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_ADD_3` is a flexible and high-performance component for adding three values in 4diac environments. Through its generic design and the consistent use of unidirectional adapters, it makes a significant contribution to the clarity, structuring and maintainability of modern, distributed control programs.

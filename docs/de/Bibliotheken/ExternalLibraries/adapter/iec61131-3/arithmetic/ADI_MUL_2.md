@@ -65,6 +65,10 @@ Der Funktionsbaustein verhält sich rein zustandslos (bzw. kombinatorisch). Es e
 
 Im Vergleich zu einem Standard-Multiplikationsbaustein (wie z. B. dem klassischen `MUL`-Baustein aus der IEC 61131-3-Bibliothek), der mit expliziten Daten-Pins (`IN1`, `IN2`, `OUT`) und Ereignissen (`REQ`, `CNF`) arbeitet, entfällt beim `ADI_MUL_2` die manuelle Verdrahtung von Trigger-Ereignissen. Dies erhöht die Wiederverwendbarkeit und sorgt für ein saubereres Software-Design.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `ADI_MUL_2` ist ein moderner, flexibler und übersichtlich zu verdrahtender Multiplikationsbaustein. Durch die konsequente Nutzung von unidirektionalen Adaptern eignet er sich hervorragend für serviceorientierte Architekturen in der industriellen Automation und erleichtert die Erstellung sauber strukturierter IEC 61499-Applikationen.

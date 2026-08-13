@@ -74,6 +74,10 @@ Im Vergleich zu anderen Splitter-Bausteinen bietet AX_SPLIT_6 eine feste Anzahl 
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 AX_SPLIT_6 ist ein spezialisierter Verteilerbaustein, der sich ideal für Anwendungen eignet, bei denen ein Signal an genau sechs Empfänger verteilt werden muss. Die einfache Struktur und die Verwendung standardisierter AX-Adapter machen ihn zu einer zuverlässigen Lösung für Signalverteilungsaufgaben in automatisierungstechnischen Systemen.

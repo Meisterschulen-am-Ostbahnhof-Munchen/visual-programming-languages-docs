@@ -82,6 +82,11 @@ The component does not have a complex internal state machine (ECC). It operates 
 
 --
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_MUL_3` function block is an efficient and clean solution for triple multiplication tasks in IEC 61499 applications. By consistently using unidirectional adapters, he promotes clean software design and ensures well-structured data flows in the 4diac IDE.

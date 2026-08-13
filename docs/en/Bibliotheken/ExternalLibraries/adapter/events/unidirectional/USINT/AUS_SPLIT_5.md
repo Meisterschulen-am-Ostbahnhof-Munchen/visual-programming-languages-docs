@@ -59,6 +59,11 @@ The component has no internal state. It operates deterministically and entirely 
 - **OFF_SPLIT_2 / OFF_SPLIT_3** – Function blocks with the same functionality but a different number of outputs (2 or 3).
 - **E_SPLIT** – A standard event split function block that uses event inputs and outputs instead of adapters. `AUS_SPLIT_5` is adapter-based and therefore more flexible in its reuse with different protocols.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AUS_SPLIT_5` is a simple, generic distribution function block for unidirectional OFF signals. It simplifies modular control logic by implementing a 1:5 split without additional logic. Thanks to the adapter interface, it can be used in different contexts (e.g., event, data, or mixed streams).

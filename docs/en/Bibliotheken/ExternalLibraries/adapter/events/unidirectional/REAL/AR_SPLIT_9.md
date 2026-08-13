@@ -61,6 +61,11 @@ The function block has no internal state (no state machine). The output signal c
 
 The function blocks differ only in the number of outputs; the functionality and generic properties are identical.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AR_SPLIT_9** is a simple yet useful splitter function block for unidirectional AR signals. Due to its generic design, it can be flexibly used in different control architectures without requiring manual type adaptation. It is particularly suitable for scenarios where a signal needs to be duplicated to multiple paths simultaneously.

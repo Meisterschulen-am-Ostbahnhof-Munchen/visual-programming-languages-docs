@@ -78,6 +78,10 @@ Im Vergleich zum Standard-Subtraktionsbaustein `SUB` aus der IEC 61131-3 Bibliot
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALI_SUB_2` ist ein vielseitiger und wartungsfreundlicher Funktionsbaustein für arithmetische Subtraktionen in 4diac. Durch die konsequente Nutzung von Adaptern fügt er sich ideal in serviceorientierte und modulare Steuerungsarchitekturen ein und minimiert den Verdrahtungsaufwand im Entwicklungswerkzeug.

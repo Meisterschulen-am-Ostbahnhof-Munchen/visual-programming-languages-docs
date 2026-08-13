@@ -71,6 +71,10 @@ Der Baustein besitzt **keine expliziten Zustände**, da er als reiner Funktionsb
 
 Der **AIWS_MUX_4** ist speziell auf den unidirektionalen AIWS‑Adaptertyp zugeschnitten. Ein allgemeiner Multiplexer für andere Adaptertypen (z. B. für Byte‑ oder Bool‑Daten) unterscheidet sich in der Schnittstellendefinition, während die grundlegende Logik (Index basierte Auswahl) identisch ist. Durch die generische Auslegung kann der Baustein leicht an andere Adapter‑Typen angepasst werden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AIWS_MUX_4** ist ein kompakter, generischer Multiplexer für vier unidirektionale AIWS‑Adapter. Er bietet eine einfache, ereignisgesteuerte Umschaltung mit klarem Schnittstellenkonzept und eignet sich besonders für Anwendungen, in denen mehrere AIWS‑Quellen selektiv an einen gemeinsamen Ausgang gelegt werden müssen.

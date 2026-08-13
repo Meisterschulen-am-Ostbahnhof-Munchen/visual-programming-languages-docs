@@ -56,6 +56,11 @@ The AIS_SPLIT_2 does not have its own state machine. The operating state is dete
 - **Event/Data Splitter**: Other splitters work with simple events or data (e.g., F_SPLIT), while AIS_SPLIT_2 splits complete adapter interfaces.
 - **AIS_MERGE**: The counterpart that combines two AIS inputs into one output.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AIS_SPLIT_2 is a minimalist, generically applicable adapter splitter that enables the flexible branching of AIS interfaces in 4diac projects. By configuring it via the GenericClassName attribute, it can be used for different AIS types without modifying the source code.

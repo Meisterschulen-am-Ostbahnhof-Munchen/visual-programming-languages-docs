@@ -59,6 +59,11 @@ The module has no internal state logic (no ECC). There is no internal state mach
 
 Other splitter components, such as `AIS_SPLIT_2`, `AIS_SPLIT_3`, and `AIS_SPLIT_4`, offer fewer outputs. All of them distribute a single AIS input signal to multiple outputs. The `AIS_SPLIT_5` offers the maximum of five outputs in this family. The appropriate splitter can be selected based on requirements to avoid unnecessary cabling.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AIS_SPLIT_5` is a simple yet effective generic function block for multiplying a unidirectional AIS adapter signal. It reduces cabling effort in the 4diac IDE and enables clean, modular structuring of control applications. It represents an optimal solution for applications requiring the distribution of a signal to up to five receivers.

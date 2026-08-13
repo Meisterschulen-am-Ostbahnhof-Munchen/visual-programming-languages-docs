@@ -73,6 +73,11 @@ Unlike a conventional data demultiplexer (e.g., `DEMUX`), which transmits values
 
 A pure data demux would have separate data outputs; here, the outputs are implemented as adapters, making the structure more modular, but also more specific.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The ALI_DEMUX_2 is a compact and useful component for signal routing in ALI-based systems. Thanks to event-driven selection and the use of adapters, it integrates seamlessly into modern IEC 61499 applications. Its simplicity and clear functionality make it a solid foundation for any switching logic.

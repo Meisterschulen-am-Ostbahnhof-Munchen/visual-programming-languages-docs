@@ -70,6 +70,11 @@ The function block does not have an explicit internal state machine. It is state
 
 In contrast to these components, the ADI_DEMUX_5 is characterized by its direct adapter connection and simple index-driven distribution.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ADI_DEMUX_5** is a specialized demultiplexer for ADI adapters that enables clean, index-based signal distribution to up to five outputs with minimal effort. Its generic implementation and clear event handling make it a versatile tool in modular automation systems based on the Eclipse 4diac framework.

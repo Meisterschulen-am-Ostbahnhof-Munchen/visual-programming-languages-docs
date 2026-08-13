@@ -60,6 +60,11 @@ The function block does not have its own states or state machines. It behaves li
 - **AUI_MERGE (e.g., AUI_MERGE_5)**: Combines multiple AUI inputs into a single output – the opposite function.
 - **Pure Event Splitters (E_SPLIT)**: Share only events, not data adapters. The AUI_SPLIT_5, however, distributes complete adapter interfaces.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUI_SPLIT_5** is a simple yet essential component for multiplying AUI signals. Its generic design and the adapter's complete passthrough make it highly versatile. It represents an optimal solution for applications requiring unidirectional 1:5 distribution while minimizing latency.

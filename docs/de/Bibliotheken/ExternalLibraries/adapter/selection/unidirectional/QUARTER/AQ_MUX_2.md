@@ -84,6 +84,10 @@ Im IEC‑61499‑Standard existieren verschiedene Multiplexer‑Funktionsblöcke
 - **Spezialisierung auf analoge Ausgänge**: Der Adaptertyp `AQ` ist für analoge Ausgangssignale optimiert (z. B. 0‑10 V, 4‑20 mA).
 - **Einfachheit**: Nur zwei Kanäle (gegenüber `MUX` mit mehreren Eingängen), was die Übersichtlichkeit erhöht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AQ_MUX_2** ist ein praktischer, generischer Multiplexer‑Baustein für analoge Ausgangswerte. Seine adapterbasierte Schnittstelle erleichtert die Integration in bestehende 4diac‑Applikationen und macht ihn besonders für modulare Steuerungslösungen geeignet. Dank der transparenten Umschaltlogik und der klaren Ereignissteuerung ist er zuverlässig und leicht verständlich.

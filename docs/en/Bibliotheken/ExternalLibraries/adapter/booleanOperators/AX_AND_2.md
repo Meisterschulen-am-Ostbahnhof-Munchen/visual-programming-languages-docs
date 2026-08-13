@@ -69,6 +69,11 @@ Comparison [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.
 * [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)]
 * [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_AND_2 offers a reliable and standards-compliant implementation of the logical AND function with adapter-based interfaces. Its generic nature makes it versatile for use in various automation projects developed according to the IEC 61499 standard.

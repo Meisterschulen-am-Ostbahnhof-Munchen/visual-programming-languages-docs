@@ -69,6 +69,11 @@ The function block does not have an explicit state machine (ECC). Processing is 
 - Unlike **switchable interconnects** (e.g., `MUX` with `ANY` types), `ALR_MUX_4` operates exclusively with a fixed adapter protocol and is therefore optimized for standardized ALR data.
 - Compared to a **16-channel multiplexer**, this component offers a smaller selection limited to four channels, reducing complexity and improving maintainability.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_MUX_4` is a compact, event-driven multiplexer for four ALR adapter inputs. Its adapter-based interface and configurable index selection make it a flexible tool for signal channel switching in industrial control systems. The simple handling (one event, one index) allows for quick integration into existing automation solutions.

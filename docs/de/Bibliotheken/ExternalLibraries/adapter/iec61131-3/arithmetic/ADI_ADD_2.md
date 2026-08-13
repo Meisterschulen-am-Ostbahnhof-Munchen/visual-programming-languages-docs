@@ -87,6 +87,10 @@ Im Vergleich zu einem klassischen `ADD`-Baustein nach IEC 61499 (welcher typisch
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ADI_ADD_2` ist ein hocheffizienter, übersichtlicher und moderner Baustein für arithmetische Additionen in der 4diac-IDE. Er eignet sich hervorragend für anspruchsvolle Architekturen, bei denen Übersichtlichkeit durch den Einsatz von standardisierten Adaptern im Vordergrund steht.

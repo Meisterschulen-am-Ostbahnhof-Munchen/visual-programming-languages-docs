@@ -58,6 +58,11 @@ This function block does not have an explicit state machine (ECC) because it doe
 - **Adapter Multiplexers (e.g., AIS_MERGE)** – While a splitter distributes one input to multiple outputs, a merger combines multiple inputs into one output. The AIS_SPLIT_7 is the counterpart to this.
 - **Event Splitters** – These differ in their event processing capabilities; the AIS_SPLIT_7, however, operates purely on an adapter basis without separate event channels.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIS_SPLIT_7** is a simple yet effective functional block for distributing a unidirectional AIS data stream to seven parallel outputs. Its generic design and exclusive use of adapters make it a flexible tool in automation application development according to IEC 61499. The absence of state logic and event control makes it lightweight and ideally suited for pure distribution tasks.

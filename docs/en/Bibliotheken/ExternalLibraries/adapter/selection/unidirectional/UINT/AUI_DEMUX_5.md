@@ -80,6 +80,11 @@ The function block does not have any explicitly modeled states (ECC). Its behavi
 
 The `AUI_DEMUX_5` offers a good compromise between flexibility and complexity for systems with up to five participants.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AUI_DEMUX_5` function block is a useful module for selectively distributing an AUI signal to one of five lines. Thanks to its event-driven index input and simple adapter interface, it can be easily integrated into larger automation or control projects. The generic architecture also allows for easy adaptation to other output requirements.

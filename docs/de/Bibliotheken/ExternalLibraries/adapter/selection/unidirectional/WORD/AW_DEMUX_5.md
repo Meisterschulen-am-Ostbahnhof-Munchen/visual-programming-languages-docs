@@ -94,6 +94,10 @@ Der FB besitzt keine explizit modellierte Zustandsmaschine. Sein internes Verhal
 - **AW_SELECT**: Ein analoger Multiplexer, der mehrere Eingänge auf einen Ausgang schaltet. AW_DEMUX_5 ist die Umkehrfunktion.
 - **MUX/DEMUX mit Ereignissteuerung**: Viele Demultiplexer besitzen separate Enable-Eingänge; hier erfolgt die Aktivierung über das **REQ**-Ereignis, was eine synchrone Verarbeitung ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AW_DEMUX_5** ist ein spezialisierter Demultiplexer für unidirektionale AW-Adapter in der 4diac-IDE. Durch die Verwendung von Adaptern eignet er sich besonders für modulare Automatisierungslösungen, bei denen Datenströme flexibel zwischen Komponenten umgeschaltet werden müssen. Seine einfache Schnittstelle (ein Ereignis, ein Index, fünf Ausgänge) macht ihn leicht einsetzbar, während die generische Natur eine breite Wiederverwendung erlaubt.

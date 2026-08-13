@@ -55,6 +55,11 @@ The function block has no state machines or algorithms. It is purely passive and
 - Unlike data- or event-based splitters, `ADI_SPLIT_9` operates at the higher adapter level, enabling clean architectural separation.
 - Similar function blocks exist with a variable number of outputs (e.g., `ADI_SPLIT_M`), while this function block offers a fixed number of nine outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 ADI_SPLIT_9` is a simple, generic function block for 1-to-9 distribution of a unidirectional ADI signal. It is suitable for applications that require multiple, identical forwarding of adapter signals without additional logic.

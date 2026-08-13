@@ -73,6 +73,10 @@ Der Funktionsbaustein ist zustandslos (kombinatorisch). Es gibt keinen internen 
 
 Der AL_MUX_5 zeichnet sich durch seine adressierbare Indexsteuerung (0 bis 4) und die Verwendung von Adaptern aus, was eine flexible Anbindung an andere 4diac-Komponenten ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AL_MUX_5** ist ein kompakter, generischer Multiplexer für bis zu fünf Eingangskanäle. Er eignet sich besonders für Anwendungen, bei denen eine ereignisgesteuerte Umschaltung von Adaptersignalen (z.B. analoge Messwerte) erforderlich ist. Durch die einfache Schnittstellenstruktur und die fehlende Zustandslogik lässt er sich leicht in bestehende IEC 61499-2 Projekte integrieren und anpassen.

@@ -74,6 +74,10 @@ Im Vergleich zu Standard-ODER-Bausteinen mit weniger Eingängen bietet AX_OR_9 d
 
 Vergleich mit [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_OR_9 ist ein spezialisierter ODER-Baustein für Anwendungen, die genau neun Eingangssignale logisch verknüpfen müssen. Durch die feste Eingangsanzahl und die einfache Funktionsweise eignet er sich besonders für klar definierte Steuerungsaufgaben mit redundanten Eingangssignalen.

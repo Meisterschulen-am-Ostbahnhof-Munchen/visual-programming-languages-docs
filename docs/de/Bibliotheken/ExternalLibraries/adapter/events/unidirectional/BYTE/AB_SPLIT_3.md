@@ -68,6 +68,10 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine**. Das Verhalten i
 
 Während `SPLIT_2` nur zwei Ausgänge bietet, deckt `AB_SPLIT_3` den Bedarf für eine dreifache Verteilung ab. Es sind keine weiteren logischen Funktionen wie Filterung oder Verzögerung implementiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AB_SPLIT_3** ist ein einfacher, aber nützlicher generischer Splitter-Baustein für unidirektionale Adapter. Er ermöglicht eine saubere Strukturierung von Automatisierungsanwendungen, indem ein eingehender Signalpfad auf drei parallele Pfade aufgeteilt wird. Dank seiner generischen Natur kann er für beliebige AB-Adapter-Typen eingesetzt werden und fügt sich nahtlos in die IEC 61499-2-konforme Entwicklungsumgebung 4diac ein.

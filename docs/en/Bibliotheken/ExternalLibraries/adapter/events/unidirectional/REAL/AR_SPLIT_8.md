@@ -57,6 +57,11 @@ The function block has no explicit state diagram and operates statelessly. Adapt
 - **AR_MERGE_X**: Combines multiple AR signals into one – opposite function.
 - **SPLIT_* for other adapter types**: Split blocks exist for other unidirectional and bidirectional adapter definitions that implement a similar splitting logic.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AR_SPLIT_8 is a simple yet extremely useful block for distributing unidirectional AR adapter signals across up to eight parallel paths. Its generic implementation allows for flexible use in various automation projects without requiring the implementation of additional signal multiplication logic.

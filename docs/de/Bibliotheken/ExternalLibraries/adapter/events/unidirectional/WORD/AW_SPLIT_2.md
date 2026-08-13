@@ -63,6 +63,10 @@ Der Funktionsblock besitzt keinen internen Zustandsautomaten. Die Weiterleitung 
 - **AW_MERGE_2** – führt zwei AW‑Eingänge zu einem Ausgang zusammen (Gegenstück zum Split).
 - **Daten‑Split‑Bausteine** (z. B. `SPLIT_INT`, `SPLIT_BOOL`) arbeiten auf Datensignalen, nicht auf Adaptern. `AW_SPLIT_2` ist speziell für die Aufteilung von Adapter‑Schnittstellen ausgelegt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AW_SPLIT_2` ist ein einfacher, aber wesentlicher generischer Baustein zur Adapter‑Verteilung. Er ermöglicht eine saubere, wiederverwendbare Aufspaltung eines unidirektionalen AW‑Pfades, ohne zusätzliche Logik oder Laufzeitkosten. Besonders in modularen, adapterbasierten Steuerungssystemen erleichtert er die Signalverteilung und fördert die Wiederverwendbarkeit von Komponenten.

@@ -63,6 +63,11 @@ The FB has no state machines. Its behavior is timeless and constant: The input s
 - **AS_SPLIT_2:** Same functionality, but only two outputs. `AS_SPLIT_4` extends this to four.
 - **Event-Based Splitters (e.g., E_SPLIT):** Work with event and data inputs/outputs and distribute events. `AS_SPLIT_4`, on the other hand, operates at the adapter level and forwards the entire adapter contract (including all events and data contained within it).
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AS_SPLIT_4` is a simple yet essential building block for structurally replicating unidirectional AS adapter connections in 4diac applications. Its generic design and pure adapter interface make it ideal for modular and scalable control architectures.

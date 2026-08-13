@@ -75,6 +75,11 @@ An explicit state machine is not defined in the XML. The module operates functio
 - **Event Multiplexer (e.g., MUX_2)** – Selects between two event paths; the focus here is on the adapter signal.
 - **Data Multiplexer (e.g., SEL, MUX_INT)** – Works with simple data types (INT, BOOL) and has separate output variables. In contrast, `AUS_MUX_2` uses complete adapter interfaces, enabling the encapsulated transfer of complex information.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUS_MUX_2` is a compact, adapter-based function block for selecting one of two OFF signals. Its generic design and clear event control make it particularly suitable for modular automation solutions in the IEC 61499 environment, where standardized adapters are used for data exchange.

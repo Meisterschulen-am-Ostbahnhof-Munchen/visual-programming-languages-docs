@@ -87,6 +87,11 @@ Compared to a classic `ADD` component according to IEC 61499 (which typically ha
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ADI_ADD_2` is a highly efficient, clear, and modern component for arithmetic addition in the 4diac IDE. It is ideally suited for demanding architectures where clarity through the use of standardized adapters is paramount.

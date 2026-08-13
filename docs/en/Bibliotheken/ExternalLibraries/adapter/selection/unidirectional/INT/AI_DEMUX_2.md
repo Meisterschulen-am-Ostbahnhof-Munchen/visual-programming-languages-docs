@@ -73,6 +73,11 @@ The FB does not have explicit states in the sense of a state machine. Processing
 
 Compared to a software-based demultiplexer (e.g., in IEC 61499 with multiple SEND events), **AI_DEMUX_2** is characterized by its tight coupling to the AI adapter type and its clean socket/plug separation.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AI_DEMUX_2** is a specialized function block for the directed distribution of analog adapter signals. Its generic nature and clear interface make it a useful tool in modular automation projects, especially for signal switching or distribution to two parallel paths. The use of adapters ensures data integrity, and the simple index control allows for flexible integration into higher-level control logic.

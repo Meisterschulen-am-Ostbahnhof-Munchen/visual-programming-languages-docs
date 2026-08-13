@@ -87,6 +87,10 @@ Im Vergleich zu einem Standard-`MUL`-Baustein der IEC 61131-3:
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALI_MUL_3` ist ein moderner und hocheffizienter Funktionsblock für mathematische Operationen in der 4diac-Umgebung. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes, modularisiertes Softwaredesign und eignet sich hervorragend für komplexe Berechnungen mit drei Eingangsvariablen.

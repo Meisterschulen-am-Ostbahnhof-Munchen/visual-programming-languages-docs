@@ -65,6 +65,11 @@ No state machine is defined in the XML declaration. The function block behaves l
 - **AI_DEMUX_2 / AI_DEMUX_8**: Devices with two or eight outputs, respectively; AI_DEMUX_4 provides a specific set of four outputs.
 - **Generic Demultiplexers**: Other implementations often allow a configurable number of channels; AI_DEMUX_4 is fixed at four channels.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 AI_DEMUX_4 is a simple and reliable device for signal demultiplexing in IEC 61499 systems. It enables the flexible distribution of analog signals across up to four channels and, due to its generic design, is suitable for a wide range of automation tasks.

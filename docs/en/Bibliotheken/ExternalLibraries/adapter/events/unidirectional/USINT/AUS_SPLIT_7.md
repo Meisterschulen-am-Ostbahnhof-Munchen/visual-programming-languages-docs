@@ -59,6 +59,11 @@ The function block does not have a state machine. The output signal of each of t
 - Unlike data splitters (e.g., `SPLIT_INT`, `SPLIT_BOOL`), this function block works exclusively with adapters and not with elementary data types. This makes it particularly suitable for protocol-based or type-safe connections.
 - Function blocks with event interfaces (e.g., `E_SPLIT`) distribute events, not signals. AUS_SPLIT_7, on the other hand, distributes a continuous signal value.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUS_SPLIT_7** is a simple yet effective generic function block for the unidirectional distribution of an OFF adapter signal to seven parallel outputs. Its purely adapter-based interface and lack of event logic make it suitable for all applications where a signal needs to be duplicated without delay or state storage. It offers a clean, modular solution for signal distribution in IEC 61499-based automation systems.

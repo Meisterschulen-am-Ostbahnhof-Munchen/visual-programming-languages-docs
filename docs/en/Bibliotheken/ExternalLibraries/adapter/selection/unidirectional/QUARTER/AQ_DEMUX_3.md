@@ -81,6 +81,11 @@ After a valid `REQ`, the **Processing** state is entered, followed immediately b
 
 This function block is characterized by its loose adapter coupling and generic design.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AQ_DEMUX_3** is a useful, generic IEC 61499 function block for distributed signal routing based on AQ adapters. With its event-driven index switching, it is suitable for flexible routing tasks in automation technology. The clear interface and the possibility of generic extension make it a good choice when multiple analog signals need to be routed to different receivers at different times.

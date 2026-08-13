@@ -64,6 +64,10 @@ Der Funktionsblock besitzt keine explizite Zustandslogik oder Zustandsmaschine. 
 - **ALR_SPLIT_2, ALR_SPLIT_3, ALR_SPLIT_4:** Diese Bausteine teilen ein ALR-Signal auf zwei, drei bzw. vier Ausgänge auf. Der vorliegende FB erweitert dies auf fünf Ausgänge.
 - **Allgemeine Split-FBs (z.B. DATA_SPLIT):** Ähnliche Bausteine existieren für andere Datentypen. Die Funktionsweise ist identisch, lediglich der verwendete Adaptertyp unterscheidet sich. Der Vorteil des ALR_SPLIT_5 liegt in der direkten Nutzung des ALR-Adapterprotokolls ohne zusätzliche Typkonvertierung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **ALR_SPLIT_5** ist ein einfacher, aber wertvoller Baustein zur Vervielfachung von ALR-Signalen in IEC-61499-Systemen. Seine generische und kombinatorische Implementierung macht ihn leicht integrierbar und ressourceneffizient. Er eignet sich besonders für Anwendungen, in denen ein Signal an mehrere Empfänger verteilt werden muss, ohne zusätzliche Logik oder zeitliche Steuerung zu benötigen.

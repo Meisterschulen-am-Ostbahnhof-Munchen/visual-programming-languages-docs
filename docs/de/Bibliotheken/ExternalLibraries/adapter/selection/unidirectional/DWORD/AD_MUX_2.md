@@ -78,6 +78,10 @@ Der Baustein besitzt keinen programmierten Ablaufzustand. Er kann als **ereignis
 - **AD_MUX_N (N‑fach Multiplexer)**: Ein erweiterter Baustein mit mehr als zwei Eingängen (z. B. AD_MUX_4) würde mehrere Sockets und einen größeren Indexbereich benötigen. AD_MUX_2 stellt die einfachste Form dar.
 - **Adapter‑Selektor mit Priorität**: Alternativ könnte ein Baustein mit Prioritätslogik (z. B. „erst gültiges Signal gewinnt“) realisiert werden; AD_MUX_2 folgt dagegen einer strikten Indexlogik.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AD_MUX_2** ist ein kompakter, generischer Funktionsbaustein zur Adapter‑Auswahl in 4diac‑Umgebungen. Seine klare Ereignisschnittstelle und die Adapter‑basierte Arbeitsweise machen ihn ideal für Anwendungen, bei denen Signalpfade flexibel umgeschaltet werden müssen. Durch die generische Deklaration lässt er sich leicht in verschiedene Projekte integrieren oder an spezifische Adapter‑Typen anpassen.

@@ -57,6 +57,11 @@ The function block has no internal states. It is a pure split function block wit
 
 Compared to an **AW_SPLIT_2** or **AW_SPLIT_4**, this function block offers a higher number of outputs (6). This makes it particularly suitable for systems with many parallel receivers. Alternatively, several smaller Split function blocks could be cascaded, but this can negatively impact clarity and performance. The **AW_SPLIT_6** is optimized as a complete solution for this requirement.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AW_SPLIT_6** is a simple yet useful function block for multiplying a unidirectional AW signal to six outputs. Due to its generic nature and adapter-based interface, it integrates seamlessly into a 4diac environment. It is recommended for all applications where a single signal is needed multiple times without any detours.

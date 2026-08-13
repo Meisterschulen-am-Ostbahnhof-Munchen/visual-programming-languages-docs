@@ -62,6 +62,10 @@ Der Baustein besitzt keine Zustandsautomaten oder Zustandsspeicher. Sein Verhalt
 - **ALI_MERGE (hypothetisch):** Führt mehrere ALI-Eingänge zu einem Ausgang zusammen – funktional gegensätzlich.
 - **Ereignis-basierte Splitter (z. B. E_SPLIT):** Arbeiten mit reinen Ereignissen, während ALI_SPLIT_3 Daten- und Ereignisanteile gemeinsam über einen Adapter verteilt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 ALI_SPLIT_3 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfachung von ALI-Adapterverbindungen. Seine generische Natur und die reine Signalweitergabe machen ihn zu einem flexiblen Werkzeug in der Automatisierungs- und Steuerungstechnik, insbesondere wenn ein Signal mehrfach benötigt wird.

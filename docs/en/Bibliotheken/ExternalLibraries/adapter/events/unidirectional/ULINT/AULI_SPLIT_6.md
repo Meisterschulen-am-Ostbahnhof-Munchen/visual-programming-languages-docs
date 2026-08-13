@@ -69,6 +69,11 @@ Since the function block has no event control and manages no internal states, th
 
 Compared to smaller splitters, the **AULI_SPLIT_6** offers a higher number of outputs, reducing wiring complexity in complex systems while maintaining a clean signal structure.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AULI_SPLIT_6** is a simple yet effective function block for distributing an AULI adapter signal to six parallel outputs. Thanks to its generic implementation and pure adapter interface, it can be easily integrated into IEC 61499 applications in agricultural and automation technology. It is particularly suitable for scenarios where a signal is required multiple times without additional logic or state management.

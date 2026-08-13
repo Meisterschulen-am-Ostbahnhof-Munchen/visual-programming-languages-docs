@@ -80,6 +80,10 @@ Der FB ist nicht zustandsbehaftet; nach jedem REQ wird die Umschaltung sofort un
 - **Standard-Daten-Demultiplexer (z. B. für ANY):** Statt AULI-Adapter arbeiten diese oft mit skalaren Datentypen (wie INT, BOOL) und haben separate Datenausgänge. Der AULI_DEMUX_5 ist speziell auf die AULI-Schnittstelle ausgelegt.
 - **Adapter-Multiplexer aus anderen Bibliotheken:** Je nach Umgebung können ähnliche Bausteine existieren, die jedoch häufig bidirektionale Adapter verwenden. Der vorliegende FB ist explizit unidirektional und erwartet die AULI-Definition.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AULI_DEMUX_5** ist ein kompakter, ereignisgesteuerter Demultiplexer für unidirektionale AULI-Adapter. Er ermöglicht eine flexible Signalweiterleitung auf fünf Zieladapter und eignet sich besonders für modulare Automatisierungslösungen, bei denen Adapter als standardisierte Schnittstelle dienen. Durch die generische Basis kann der Baustein leicht an andere Kanalzahlen angepasst werden.

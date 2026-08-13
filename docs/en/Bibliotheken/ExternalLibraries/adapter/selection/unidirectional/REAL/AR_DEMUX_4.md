@@ -67,6 +67,11 @@ An explicit state machine is not defined. The function block operates statelessl
 - **`DEMUX` for Simple Data Types (e.g., `BOOL_DEMUX_4`)**: Identical operating principle, but elementary data types are used instead of AR adapters.
 - **`AR_DEMUX_n` with Variable Number of Channels**: `AR_DEMUX_4` is fixed at four channels; other variants (e.g., `AR_DEMUX_2`, `AR_DEMUX_8`) exist for different numbers of channels.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AR_DEMUX_4` is a specialized yet generically usable demultiplexer for the AR adapter type. It is ideally suited for the simple and efficient distribution of a data stream to up to four outputs. Thanks to its clear event-driven interface and the separation of index and data, it can be easily integrated into industrial control architectures.

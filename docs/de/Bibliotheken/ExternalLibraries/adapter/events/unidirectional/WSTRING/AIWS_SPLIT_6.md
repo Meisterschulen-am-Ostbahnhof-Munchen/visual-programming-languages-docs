@@ -66,6 +66,10 @@ Der Baustein besitzt keine definierten Zustände, da er keine ereignisgesteuerte
 - **AIWS_MERGE:** Ein zusammensetzender Baustein, der mehrere AIWS-Eingänge zu einem Ausgang zusammenführt – funktionale Umkehrung des Splitters.
 - **Direkte Verbindung:** Anstatt eines Splitter-Bausteins könnten mehrere parallele Verbindungen im Applikationsmodell gezogen werden, was jedoch die Übersichtlichkeit reduziert und bei Änderungen aufwändiger ist.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AIWS_SPLIT_6 ist ein einfacher, aber nützlicher Baustein zur Vervielfachung von AIWS-Signalen in IEC 61499-basierten Steuerungen. Seine generische Natur und die klare Adapter-Schnittstelle erleichtern die Wiederverwendung und Integration in größere Projekte.

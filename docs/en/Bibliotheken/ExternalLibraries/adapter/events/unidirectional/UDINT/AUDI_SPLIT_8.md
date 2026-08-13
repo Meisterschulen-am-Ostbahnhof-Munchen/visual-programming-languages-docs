@@ -67,6 +67,11 @@ The functionality is purely combinational: The signal at the input is permanentl
 - **Data Distribution FB**: Some libraries provide generic distributors for data ports; this FB is specifically optimized for the AUDI adapter type and requires no additional data structure configuration.
 - **Manual Parallel Connection**: Multiple AUDI socket-to-plug connections could achieve the same result, but are less organized and more prone to errors.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **AUDI_SPLIT_8** is a compact, generic, specialized module for signal distribution at the adapter level.

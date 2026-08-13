@@ -69,6 +69,10 @@ Da es sich um einen service‑orientierten generischen FB handelt, wird keine ex
 
 Im Vergleich zu klassischen IEC 61439‑Demultiplexern (z. B. `DEMUX_BOOL`, `DEMUX_INT`) arbeitet der `AR_DEMUX_3` auf Adapterebene. Während konventionelle Demultiplexer einzelne Datenwerte auf mehrere Ausgangsvariablen verteilen, überträgt dieser Baustein komplette Adapterschnittstellen. Dies reduziert die Verdrahtung und erhöht die Abstraktion. Ähnliche Blöcke wie ein `MUX_3` (Multiplexer) arbeiten umgekehrt und fassen mehrere Adaptereingänge auf einen Ausgang zusammen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AR_DEMUX_3` ist ein spezialisierter, aber flexibler Baustein zur dynamischen Verteilung von Adapterverbindungen in IEC‑61499‑Systemen. Seine generische Natur und die einfache Indexsteuerung machen ihn ideal für modulare Automatisierungslösungen, bei denen ein Datenpfad auf verschiedene Empfänger geschaltet werden muss. Die Verwendung von unidirektionalen AR‑Adaptern gewährleistet dabei eine klare Trennung von Steuerung und Datenfluss.

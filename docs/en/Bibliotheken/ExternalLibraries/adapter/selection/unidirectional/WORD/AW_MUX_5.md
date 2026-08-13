@@ -91,6 +91,11 @@ These states are purely internal and not directly controllable by the user.
 - **Multi-channel switches (e.g., MUX_2, MUX_4):** These offer a smaller number of inputs. The AW_MUX_5, with its five inputs, covers a medium requirement.
 - **Generic multiplexers:** Some implementations allow a variable number of inputs via parameters. The AW_MUX_5, however, is fixed at exactly five, but offers the advantage of a clear adapter interface.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AW_MUX_5 is a compact, event-driven multiplexer function block for unidirectional adapters of type `AW`. It allows for the easy selection of one of five signal sources and is particularly suitable for modular, adapter-based control architectures. Its clear index assignment, generic design, and integration under an EPL 2.0 license make it a useful component in the 4diac IDE environment.

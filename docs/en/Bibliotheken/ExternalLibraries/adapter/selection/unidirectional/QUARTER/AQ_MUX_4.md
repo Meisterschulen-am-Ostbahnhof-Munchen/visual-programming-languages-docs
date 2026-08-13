@@ -87,6 +87,11 @@ The time interval between `REQ` and `CNF` is determined solely by the execution 
 
 The `AQ_MUX_4` stands out due to its use of adapters, which allow complex signals to be transmitted over a single connection, and its generic basis, which enables easy reuse in various configurations.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AQ_MUX_4` is a practical component for dynamically selecting an analog output signal from up to four sources. Its adapter-based interface makes it particularly suitable for modular control architectures where signals are exchanged not only as individual values but also as structured data packets. The generic declaration also facilitates adaptation to varying requirements.

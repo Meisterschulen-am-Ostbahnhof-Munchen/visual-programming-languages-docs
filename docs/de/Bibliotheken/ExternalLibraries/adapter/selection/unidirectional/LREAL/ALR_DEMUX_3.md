@@ -64,6 +64,10 @@ Der `ALR_DEMUX_3` verfügt über keine explizite Zustandsmaschine. Er befindet s
 
 Im Vergleich zu einem klassischen, datenorientierten Demultiplexer (z. B. `F_MUX/DEMUX`), der mit skalaren Datentypen (INT, REAL usw.) arbeitet, ist der `ALR_DEMUX_3` speziell für die strukturierte Adapter-Kommunikation ausgelegt. Während ein Daten-Demux nur einzelne Werte weiterleitet, überträgt dieser Baustein eine gesamte ALR-Verbindung einschließlich aller darin enthaltener Datenfelder. Er ist weniger flexibel bezüglich der Anzahl der Ausgänge (fest auf drei), bietet aber eine saubere Trennung auf Adapter-Ebene.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `ALR_DEMUX_3` ist ein spezialisierter, generischer Baustein für die unidirektionale Verteilung von ALR-Adapterverbindungen. Er ermöglicht eine flexible und dynamische Signalweiterleitung in Automatisierungssystemen und erweitert das Spektrum industrieller Demultiplexer um die Komponente der adapterbasierten Kommunikation. Seine einfache Ereignislogik und die festgelegte Anzahl von drei Ausgängen machen ihn für praxisnahe Szenarien gleichermaßen leistungsfähig und einfach zu handhaben.

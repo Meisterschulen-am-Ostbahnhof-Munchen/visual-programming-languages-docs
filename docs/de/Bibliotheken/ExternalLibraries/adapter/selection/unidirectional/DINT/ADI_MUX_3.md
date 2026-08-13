@@ -78,6 +78,10 @@ Diese Abfolge wiederholt sich bei jedem neuen **REQ**-Ereignis.
 
 Gegenüber einem generischen `MUX`-Baustein (mit Standard-Datentypen) bietet die Adapter‑Variante eine klarere Schnittstellendefinition und erleichtert die Wiederverwendung von Signalkonfigurationen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ADI_MUX_3** ist ein kompakter, generischer Multiplexer für drei Adapter-Eingänge. Durch die klare ereignisgesteuerte Arbeitsweise und die Verwendung von ADI-Adaptern eignet er sich hervorragend für modulare Automatisierungslösungen, bei denen Signale effizient umgeschaltet werden müssen. Die einfache Schnittstelle und die generische Natur erlauben eine flexible Anpassung an verschiedene Applikationen.

@@ -66,6 +66,10 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Es gibt nur einen einzig
 
 Der `AUI_SPLIT_3` stellt eine spezifische Konfiguration dar, die genau drei identische Ausgänge bereitstellt. Er kann bei Bedarf durch andere Splitter-Varianten ersetzt werden.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AUI_SPLIT_3` ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Vervielfachung einer unidirektionalen AUI-Schnittstelle. Dank seiner reinen Durchleitungsfunktion und fehlenden Zustandslogik ist er zuverlässig, performant und leicht in bestehende Automatisierungslösungen integrierbar. Er eignet sich besonders für Anwendungen, in denen ein Signal auf mehrere Pfade aufgeteilt werden muss.

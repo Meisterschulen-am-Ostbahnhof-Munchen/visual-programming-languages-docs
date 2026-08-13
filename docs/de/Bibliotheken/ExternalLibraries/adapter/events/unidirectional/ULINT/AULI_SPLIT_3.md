@@ -54,6 +54,10 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Die Funktionalität ist 
 
 Im Gegensatz zu einem **AULI_MERGE** (der mehrere Eingänge auf einen Ausgang zusammenführt) oder einem **AULI_SELECT** (der wahlweise einen von mehreren Eingängen durchschaltet), bietet **AULI_SPLIT_3** eine reine Fan-out-Funktion. Es gibt keinen Entscheidungsmechanismus, keine Priorisierung und keine Datenmodifikation. Ähnliche Splitter mit anderer Ausgangsanzahl (z. B. SPLIT_2) unterscheiden sich lediglich in der Anzahl der Ausgänge.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **AULI_SPLIT_3** ist ein einfacher, aber essenzieller Baustein zur Vervielfachung unidirektionaler AULI-Signale. Durch die generische Auslegung und die verzögerungsfreie Weiterleitung eignet er sich besonders für Broadcast-Szenarien in der Automatisierungstechnik, wo ein Signal gleichzeitig an mehrere Verbraucher übergeben werden muss.

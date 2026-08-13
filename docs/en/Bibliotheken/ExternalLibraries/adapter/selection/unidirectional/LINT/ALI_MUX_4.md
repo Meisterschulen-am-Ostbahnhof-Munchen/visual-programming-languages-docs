@@ -67,6 +67,11 @@ The function block essentially has a single operational state. Upon a REQ event,
 - Unlike a simple data multiplexer, which copies the values directly, the adapter multiplexer forwards the entire connection (including event and data paths).
 - An adapter demultiplexer (`ALI_DEMUX_4`) would distribute one input to multiple outputs – here, the function is exactly the opposite.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 ALI_MUX_4` is a specialized, event-driven multiplexer for ALI adapters with four inputs. It is ideally suited for applications where one ALI data source needs to be selected from multiple sources. Its simple interface (one index and one control event) makes it easy to integrate, but requires adherence to the valid index range of 0–3. This component adds a basic selection function to the ALI adapter family.

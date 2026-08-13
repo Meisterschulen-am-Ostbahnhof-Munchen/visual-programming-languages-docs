@@ -61,6 +61,10 @@ Da der Baustein keine Ereignis-Ein-/Ausgänge besitzt, gibt es keine Zustandsmas
 * **AD_MERGE_4**: Ein Gegenstück, das mehrere AD-Eingänge zu einem Ausgang zusammenführt, im Gegensatz zur Aufteilung.
 * **Reine Daten-Split-Bausteine (z. B. D_SPLIT_4)**: Diese teilen einzelne Datenwerte (z. B. INT, REAL) auf, während AD_SPLIT_4 speziell für den komplexen AD-Adapter-Typ ausgelegt ist.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AD_SPLIT_4**-Funktionsblock ist ein kompaktes, generisches Werkzeug zur einfachen Vervielfältigung eines unidirektionalen AD-Signals. Seine klare Schnittstelle ohne Ereignisse macht ihn besonders geeignet für datenflussorientierte Applikationen in der Automatisierungstechnik, bei denen ein Signal an mehrere Empfänger verteilt werden muss. Durch die generische Auslegung kann er flexibel an verschiedene Adapter-Datentypen angepasst werden.

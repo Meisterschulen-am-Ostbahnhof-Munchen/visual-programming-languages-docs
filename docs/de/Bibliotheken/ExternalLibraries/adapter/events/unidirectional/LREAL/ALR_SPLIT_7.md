@@ -72,6 +72,10 @@ Der Funktionsblock besitzt keinen internen Zustandsautomaten. Es gibt keine Zust
 
 Alle Variationen basieren auf dem gleichen Prinzip: unidirektionale Verteilung ohne Signalveränderung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `ALR_SPLIT_7` ist ein einfacher, aber nützlicher Funktionsblock zur Aufteilung eines einzelnen ALR-Signals auf sieben parallele Pfade. Durch seine generische Implementierung kann er in verschiedenen industriellen oder landwirtschaftlichen Automatisierungsszenarien eingesetzt werden, wo ein Signal mehrfach benötigt wird. Er bietet keine komplexe Logik, erfüllt aber zuverlässig seine Aufgabe als passiver Verteiler.

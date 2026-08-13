@@ -64,6 +64,11 @@ The `ALR_DEMUX_3` does not have an explicit state machine. It is always in a bas
 
 Compared to a classic, data-oriented demultiplexer (e.g., `F_MUX/DEMUX`), which works with scalar data types (INT, REAL, etc.), the `ALR_DEMUX_3` is specifically designed for structured adapter communication. While a data demuxer only forwards individual values, this component transmits an entire ALR connection, including all its data fields. It is less flexible regarding the number of outputs (fixed at three), but offers clean separation at the adapter level.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `ALR_DEMUX_3` is a specialized, generic component for the unidirectional distribution of ALR adapter connections. It enables flexible and dynamic signal routing in automation systems and expands the range of industrial demultiplexers to include the component of adapter-based communication. Its simple event logic and the fixed number of three outputs make it equally powerful and easy to use for practical scenarios.

@@ -74,6 +74,11 @@ The execution logic is typically triggered by events on the input adapters:
 
 Compared to a standard subtraction function block (e.g., `SUB` from the IEC 61131-3 library), which uses explicit inputs like `REQ`, `IN1`, and `IN2`, the `AS_SUB_2` offers significantly higher modularity due to its encapsulation in adapters. It is particularly suitable for advanced software architectures in IEC 61499, where data and signal flows are to be combined as logical units (interfaces).
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AS_SUB_2` is a highly efficient, reusable, and clearly structured function block for implementing subtraction tasks. Its strength lies in the consistent use of adapters, which leads to cleaner software designs and improved maintainability within the 4diac-ide.

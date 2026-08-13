@@ -78,6 +78,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC) in der XML-Definitio
 - **Standard‑MUX‑Bausteine** (z. B. `MUX_2`, `MUX_4`) arbeiten meist mit einfachen Datentypen (BOOL, INT) statt mit Adaptern. `AB_MUX_3` ist speziell für AB‑Adapter ausgelegt.
 - Im Gegensatz zu einem generischen Multiplexer mit variabler Anzahl von Eingängen ist dieser Baustein auf drei Eingänge festgelegt, was die Handhabung vereinfacht und die Typsicherheit erhöht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AB_MUX_3` ist ein kompakter und spezialisierter Funktionsbaustein zur Auswahl eines von drei AB‑Adapter-Eingängen. Er eignet sich besonders für Anwendungen, die eine zuverlässige Umschaltung zwischen verschiedenen Adapterquellen erfordern, ohne dass zusätzliche Datenkonvertierungen nötig sind.

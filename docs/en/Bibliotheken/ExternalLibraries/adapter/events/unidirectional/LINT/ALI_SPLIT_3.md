@@ -60,6 +60,11 @@ The function block has no state machines or state memory. Its behavior is determ
 - **ALI_MERGE (hypothetical):** Combines multiple ALI inputs into one output – functionally the opposite.
 - **Event-Based Splitters (e.g., E_SPLIT):** Work with pure events, while ALI_SPLIT_3 distributes data and event components together via a single adapter.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 ALI_SPLIT_3 is a simple yet useful function block for multiplying ALI adapter connections. Its generic nature and pure signal transmission make it a flexible tool in automation and control engineering, especially when a signal is needed multiple times.

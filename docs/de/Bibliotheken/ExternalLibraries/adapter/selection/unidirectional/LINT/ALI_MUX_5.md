@@ -77,6 +77,10 @@ Der Baustein besitzt keine expliziten Zustandsautomaten (keine ECC‑Zustände d
 - **ALI_DEMUX**: Der Demultiplexer verteilt ein Eingangssignal auf mehrere Ausgänge; der ALI_MUX_5 arbeitet genau umgekehrt.
 - **SCALE/CLAMP‑Bausteine**: Diese führen Signalverarbeitung durch, während der ALI_MUX_5 eine reine Durchschaltfunktion ohne Datenmanipulation bietet.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ALI_MUX_5** ist ein kompakter, generischer Multiplexer für fünf ALI‑Adapterkanäle. Durch die rein adapterbasierte Kommunikation und die einfache Ereignissteuerung eignet er sich ideal für modulare Automatisierungslösungen mit wechselnden Datenquellen. Seine generische Natur erlaubt den Einsatz mit verschiedenen ALI‑Datentypen und erleichtert die Wiederverwendung in unterschiedlichen Projekten.

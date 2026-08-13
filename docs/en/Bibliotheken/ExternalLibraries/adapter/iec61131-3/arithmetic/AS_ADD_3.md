@@ -85,6 +85,11 @@ The function block operates in an event-driven manner and does not have a comple
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AS_ADD_3` is a highly efficient, modular component for adding three values. Thanks to the consistent use of unidirectional adapters, it integrates perfectly into modern, service-oriented, and well-structured IEC 61499 control applications.

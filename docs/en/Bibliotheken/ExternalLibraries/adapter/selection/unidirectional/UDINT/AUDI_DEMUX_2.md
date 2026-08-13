@@ -75,6 +75,11 @@ The function block implicitly has an internal state machine:
 
 Compared to a multiplexer (`AUDI_MUX`), the data flow direction is reversed – here, a signal is distributed to multiple outputs, while a multiplexer combines multiple inputs into a single output.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 AUDI_DEMUX_2` is a specialized, generic demultiplexer for unidirectional AUDI interfaces. It enables clean and event-driven signal distribution in automation systems, especially in environments that use the AUDI adapter standard. Its simple interface (one index, two outputs) makes it intuitive to use and easy to integrate into existing control logic.

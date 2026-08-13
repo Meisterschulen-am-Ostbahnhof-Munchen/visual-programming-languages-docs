@@ -87,6 +87,11 @@ The function block does not have an explicit state machine in the XML model. Its
 - **`SELECT`-FB** (IEC 61499 Standard): Selects one of two data paths based on a Boolean input. The AS_DEMUX_4 operates at the adapter level and offers four paths instead of two, but is not limited to simple data types.
 - **Generic Demultiplexers**: Other implementations often use single data-event pairs. The AS_DEMUX_4 uses adapters, enabling the switching of complex interfaces (events + data) in one operation.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AS_DEMUX_4** is a compact, generic function block for dynamically distributing a unidirectional `AS` adapter to up to four outputs. Its event-driven selection via a numeric index makes it versatile for use in modular control systems. By using adapters, not only data but also the associated event paths are switched, enabling a clean and encapsulated interface structure. Index validation must be performed outside the function block.

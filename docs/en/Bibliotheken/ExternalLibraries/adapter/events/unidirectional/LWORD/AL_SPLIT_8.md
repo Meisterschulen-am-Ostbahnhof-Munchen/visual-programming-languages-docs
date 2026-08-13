@@ -56,6 +56,11 @@ The function block has no internal states. It is completely stateless and perfor
 - **Standard SPLIT function blocks** (e.g., `SPLIT` for simple data types) distribute individual values, while `AL_SPLIT_8` is specifically designed for the unidirectional adapter `AL`.
 - **Adapter mergers** (such as a hypothetical `AL_MERGE`) combine multiple signals into one; `AL_SPLIT_8` implements the reverse 1:n functionality.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AL_SPLIT_8` is a simple yet important function block for multiplying AL adapter signals. Its passive, stateless operation allows it to integrate seamlessly into data-flow-oriented 4diac applications and facilitates the structured distribution of alarm or control signals.

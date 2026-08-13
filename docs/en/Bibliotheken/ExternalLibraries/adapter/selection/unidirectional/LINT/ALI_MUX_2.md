@@ -81,6 +81,11 @@ An effective state machine is not explicitly defined in the XML, as the logic op
 - **Generic Multiplexers**: Comparable function blocks for general-purpose ALI adapters often exist with a fixed number of channels. **ALI_MUX_2** is specified for two channels, but thanks to its generic nature, it can easily be extended to other channel numbers (e.g., through variants like ALI_MUX_4).
 - **Difference from Dedicated Logic Function Blocks**: The FB does not implement any additional logic (e.g., hysteresis, filters) – it is a pure, event-driven switch.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ALI_MUX_2** is a simple yet effective multiplexer for ALI adapter signals. Its generic design and purely adapter-based interface make it ideal for modular automation projects where switching between two sources is required. The clear state logic and confirmation via `CNF` allow for reliable integration into higher-level control processes.

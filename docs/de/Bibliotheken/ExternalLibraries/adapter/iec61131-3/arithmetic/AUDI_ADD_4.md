@@ -62,6 +62,10 @@ Der Baustein besitzt keine expliziten Zustände. Die Verarbeitung erfolgt dateng
 - **`AUDI_ADD_2`**: Ein hypothetischer Baustein mit nur zwei Adaptereingängen – `AUDI_ADD_4` erweitert dies auf vier Summanden.
 - **Generische FBs**: Durch das Attribut `GenericClassName` ähnelt der Baustein dem generischen Ansatz von IEC 61499, bei dem der Datentyp erst zur Laufzeit festgelegt wird.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUDI_ADD_4` ist ein flexibler, reiner Adapterbaustein zur Addition von vier Werten. Dank seiner generischen Auslegung eignet er sich für verschiedene numerische Datentypen und kann in modularen Automatisierungsprojekten eingesetzt werden, die auf Adapter‑basierte Kommunikation setzen. Der Verzicht auf Ereignisse vereinfacht die Handhabung in datengetriebenen Systemen, erfordert jedoch eine korrekte Adapterverkabelung.

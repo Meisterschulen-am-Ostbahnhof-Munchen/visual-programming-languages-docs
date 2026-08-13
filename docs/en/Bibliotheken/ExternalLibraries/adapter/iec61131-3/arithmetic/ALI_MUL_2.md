@@ -65,4 +65,9 @@ The `ALI_MUL_2` is a modern and efficient function block for multiplication. Tha
 
 ## Comparison with Similar Function Blocks
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion

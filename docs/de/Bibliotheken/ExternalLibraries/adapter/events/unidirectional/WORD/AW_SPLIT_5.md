@@ -58,6 +58,10 @@ Der FB besitzt keine interne Zustandsmaschine (ECC). Es gibt keine definierten Z
 * **AW_SPLIT_N** – Ein weiterer generischer Split‑FB, der auf eine variable Anzahl von Ausgängen erweiterbar ist. `AW_SPLIT_5` ist eine spezialisierte Variante mit fest fünf Ausgängen.
 * **Reine Daten‑Splitter** – Diese arbeiten auf Datentypen wie `INT` oder `BOOL` und nutzen andere Schnittstellentypen. `AW_SPLIT_5` ist speziell für den AW‑Adapter konzipiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AW_SPLIT_5` ist ein einfacher, aber nützlicher Baustein zur Aufteilung eines AW‑Adapter‑Signals auf fünf parallele Pfade. Durch seinen generischen Aufbau kann er flexibel in unterschiedlichen Steuerungsprojekten der 4diac‑IDE eingesetzt werden. Die fehlende Ereignis- und Daten‑Schnittstelle reduziert die Komplexität auf das Wesentliche – die reine Signalvervielfältigung.

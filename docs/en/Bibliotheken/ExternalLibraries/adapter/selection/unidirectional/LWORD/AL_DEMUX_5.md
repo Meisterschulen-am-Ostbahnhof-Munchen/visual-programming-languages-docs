@@ -79,6 +79,11 @@ The **AL_DEMUX_5** module has no explicit states (ECC diagram). It is a purely c
 
 The `AL_DEMUX_5` fills a gap for the demultiplexing of adapter data (e.g., for complex data types such as structures), while pure event demultiplexers like `E_DEMUX` do not transport data.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AL_DEMUX_5** is a simple yet useful generic demultiplexer for adapters of type `AL`. Its clear structure with one input and five output adapters makes it ideal for routing applications in IEC 61499 systems. EPL licensing and its generic design promote reusability and adaptability. This component adds the important capability of selectively distributing structured data adapters to existing standard demultiplexers.

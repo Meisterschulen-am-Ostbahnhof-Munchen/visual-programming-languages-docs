@@ -80,6 +80,11 @@ An explicit state machine is not defined in the function block's source code. It
 
 The `AD_DEMUX_4` is the counterpart to the multiplexer component (e.g., `AD_SELECT`), which combines multiple inputs into a single output. While a multiplexer implements an **N-to-1** function, the demultiplexer provides a **1-to-N** function. Unlike classic demultiplexers for elementary data types, this component uses **adapter interfaces**, enabling it to route complex, composite signals or protocols in a structured manner.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AD_DEMUX_4` is a versatile, generic adapter demultiplexer for the IEC 61499 environment. Due to its event-driven switching and the use of adapters, it is particularly suitable for flexible signal switches in modular automation and control systems.

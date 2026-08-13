@@ -60,6 +60,11 @@ Since **AUS_SPLIT_3** has no sequence control or explicit states, a state machin
 - **DATA_SPLIT**: Distributes pure data channels and requires separate event control. The OFF splitter encapsulates the event and data together in the adapter.
 - **Manual implementation**: Without this function block, each output would have to be connected to its own copy of the source adapter. **AUS_SPLIT_3** simplifies wiring and improves clarity.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUS_SPLIT_3** is a simple yet useful function block for multiplying OFF adapter signals. Due to its generic design and stateless nature, it is ideally suited for the modular and maintainable structuring of 4diac applications.

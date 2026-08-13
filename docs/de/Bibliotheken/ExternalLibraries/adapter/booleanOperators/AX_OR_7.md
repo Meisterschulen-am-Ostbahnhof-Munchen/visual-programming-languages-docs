@@ -73,6 +73,10 @@ Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_7 die Besonderheit von sie
 
 Vergleich mit [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_OR_7 ist ein spezialisierter ODER-Baustein für Anwendungen mit vielen Eingangssignalen. Durch die sieben Eingänge und die Adapter-basierte Schnittstelle eignet er sich besonders für komplexe Steuerungsaufgaben, bei denen mehrere Signale logisch verknüpft werden müssen.

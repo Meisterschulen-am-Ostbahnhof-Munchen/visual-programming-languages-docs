@@ -68,6 +68,11 @@ The function block operates in an event-driven and stateless manner. No internal
 
 Compared to the standard IEC 61131-3 add block (`ADD`), which uses classic data pins (e.g., `IN1`, `IN2` of type `ANY_NUM`) and explicit control events (`REQ` / `CNF`), **AI_ADD_2** offers a significantly cleaner visual representation. Encapsulation within adapters eliminates the need to manually draw separate event lines, minimizing the risk of errors during application development.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AI_ADD_2** is a modern, highly efficient function block for the 4diac-ide. It combines the fundamental mathematical function of addition with the structural advantages of IEC 61499 adapters. This makes it the ideal choice for modular control architectures.

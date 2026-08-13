@@ -85,6 +85,11 @@ AR_MUX_4 | 4 | Extended Version with Four Inputs |
 
 All multiplexers follow the same principle and differ only in the number of adapter sockets.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AR_MUX_3` is a compact and functional module for selecting one of three adapter signals. It is particularly suitable for applications requiring simple, event-driven switching. The use of adapters ensures clean encapsulation and reusability in modular control projects.

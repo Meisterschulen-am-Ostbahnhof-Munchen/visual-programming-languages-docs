@@ -79,6 +79,10 @@ Der FB weist keine dokumentierte Zustandsautomaten-Steuerung auf. Aus der Schnit
 
 Im Vergleich zu einem allgemeinen MUX-FB (z. B. MUX aus IEC‑61499‑Standardbibliotheken) verwendet AIS_MUX_3 ausschließlich AIS-Adapter, was eine klare Datenstruktur und Typsicherheit innerhalb eines AIS-basierten Frameworks bietet.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Funktionsbaustein **AIS_MUX_3** ermöglicht eine einfache und effiziente Umschaltung zwischen drei AIS-Datenquellen. Dank der generischen Definition und der Adapter-Schnittstelle ist er flexibel in AIS-Anwendungen der Agrartechnik sowie in anderen Industrien einsetzbar. Die klare Ereignissteuerung und die begrenzte Komplexität machen ihn zu einem robusten Baustein für Multiplex-Aufgaben.

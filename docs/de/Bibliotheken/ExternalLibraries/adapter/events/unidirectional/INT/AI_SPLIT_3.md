@@ -70,6 +70,10 @@ Der Baustein verfügt über **keine** Zustandsmaschine oder internen Zustände. 
 
 Gemeinsam ist allen Split‑Bausteinen, dass sie das Eingangssignal ohne Veränderung an alle Ausgänge weiterleiten. Der AI_SPLIT_3 stellt eine typische 3‑fach‑Ausführung dar.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AI_SPLIT_3** ist ein einfacher, aber effektiver Baustein zur Vervielfältigung eines analogen Signals auf drei Ausgänge. Durch seine generische Natur und die Verwendung von Adaptern fügt er sich nahtlos in Adapter‑basierte 4diac‑Applikationen ein. Er eignet sich ideal für Anwendungen, in denen ein AI‑Wert an mehrere Verbraucher verteilt werden muss, ohne zusätzliche Logik oder Konfiguration.

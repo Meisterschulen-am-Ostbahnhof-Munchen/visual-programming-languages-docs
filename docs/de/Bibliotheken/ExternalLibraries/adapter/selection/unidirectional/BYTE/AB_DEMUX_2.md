@@ -82,6 +82,10 @@ Der Funktionsblock besitzt keine expliziten Zustände im Sinne eines Zustandsaut
 
 Der **AB_DEMUX_2** zeichnet sich durch seine einfache Handhabung mit nur zwei Ausgängen und die direkte Adapterkopplung aus. Im Vergleich zu einem Ereignis-Demultiplexer werden hier vollständige Adaptersignale (inkl. aller enthaltenen Daten) weitergeleitet.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AB_DEMUX_2** ist ein kompakter, ereignisgesteuerter Demultiplexer für unidirektionale AB-Adapter. Durch die klare Trennung von Ereignissteuerung und Datenweiterleitung eignet er sich ideal für modulare Automatisierungslösungen, bei denen ein Datenstrom zwischen zwei Zielen umgeschaltet werden muss. Seine generische Auslegung ermöglicht den Einsatz in verschiedenen Kontexten, während die einfache Schnittstelle eine zuverlässige Integration in bestehende 4diac-Projekte gewährleistet.

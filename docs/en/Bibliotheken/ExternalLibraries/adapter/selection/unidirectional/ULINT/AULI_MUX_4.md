@@ -82,6 +82,11 @@ After sending **CNF**, the function block returns to the idle state.
 
 **AULI_MUX_4** is more compact than a generic MUX with many inputs/outputs because it is limited to four channels.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AULI_MUX_4** is a lean yet effective function block for selecting one of four AULI signals. Its generic declaration facilitates reuse in various automation projects. Its clear, event-driven interface allows it to integrate seamlessly into IEC 61499 applications and makes it particularly suitable for applications requiring flexible switching between signal sources.

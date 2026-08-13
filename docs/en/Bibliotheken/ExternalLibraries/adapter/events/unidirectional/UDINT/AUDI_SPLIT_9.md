@@ -56,6 +56,11 @@ The function block has no internal state. Its behavior is completely static and 
 
 Compared to a general-purpose `AUDI_MERGE` (which combines multiple inputs into one output) or a `AUDI_SELECT` (which switches between multiple inputs), the Split function block offers the exact opposite function: duplication instead of merging or selection. Compared to a custom, software-implemented split (e.g., by connecting an output multiple times in the application), the function block (FB) ensures a clean, typed, and reusable interface and avoids potential multiple connection errors in the editor.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AUDI_SPLIT_9` is a simple yet useful function block for duplicating audio signals. Its implementation as a generic type and the clear separation of input and nine outputs facilitate the development of modular automation solutions. Due to its static nature, it is particularly suitable for data flow-oriented applications where event control is not required.

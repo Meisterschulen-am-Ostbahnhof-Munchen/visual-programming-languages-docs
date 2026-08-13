@@ -68,6 +68,11 @@ The function block has no internal states. It is purely combinatorial and does n
 - **Manual Split with Multiple Function Block Instances**: Without this function block, the AIWS signal would have to be implemented by cascading several 2- or 3-way split blocks, which reduces clarity.
 - **Event-Based Data Distributor**: Function blocks controlled by events require additional event wiring and are less efficient for simple data forwarding.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AIWS_SPLIT_9` is a simple yet useful generic function block for multiplying a unidirectional AIWS adapter signal to nine outputs. It avoids unnecessary complexity, requires no event control, and can be used directly in IEC 61499 applications without additional configuration. Thanks to its generic nature, it is flexibly adaptable to various adapter types and is particularly suitable for signal distribution in modular automation architectures.

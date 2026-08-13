@@ -67,6 +67,10 @@ Da der FB keine eigene ablauforientierte Steuerung (ECC) besitzt, befindet er si
 - **Generische Demultiplexer (z.B. für andere Datentypen)**: Diese arbeiten meist mit einfachen Daten‑Variablen (z.B. `ANY`) und nicht mit Adaptern. Der vorliegende Baustein ist speziell für AIS‑Adapter ausgelegt.  
 - **AIS_MUX_3**: Der Multiplexer als Gegenstück fasst mehrere AIS‑Eingänge zu einem Ausgang zusammen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 **AIS_DEMUX_3** ist ein einfacher, aber funktionaler Demultiplexer für AIS‑Daten in IEC‑61499‑basierten Systemen. Er ermöglicht das gezielte Weiterleiten eines Adaptersignals an einen von drei Ausgängen. Durch die verwendeten Adapter ist er gut in bestehende AIS‑Kommunikationsstrukturen integrierbar. Die ereignisgesteuerte Ausführung sorgt für ein deterministisches Verhalten.

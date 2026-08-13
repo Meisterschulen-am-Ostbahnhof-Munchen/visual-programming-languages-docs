@@ -80,6 +80,11 @@ Since the function block does not derive an explicit ECC (Execution Control Char
 - **ADI_DEMUX_3 / ADI_DEMUX_N**: Extended versions with more than two outputs; ADI_DEMUX_2 is limited to two channels.
 - **DEMUX with Individual Data Ports**: Conventional demultiplexers work with individual input and output variables; ADI_DEMUX_2, on the other hand, uses adapters for structured data transmission.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The ADI_DEMUX_2 is a specialized, generic function block for routing ADI data streams. It offers simple, event-driven switching between two output adapters and is particularly suitable for modular automation solutions based on adapters. Its generic design allows it to be flexibly adapted to different data types.

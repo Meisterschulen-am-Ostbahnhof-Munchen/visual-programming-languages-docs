@@ -73,6 +73,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Er arbeitet als reaktiver Ba
 - **ATM_MUX_2 / ATM_MUX_4**: Bausteine mit gleicher Funktionalität, aber nur zwei oder vier Eingängen. Der vorliegende ATM_MUX_5 bietet die maximale Anzahl von fünf Kanälen.
 - **Allgemeine MUX‑Bausteine (z. B. Daten‑MUX)**: Diese arbeiten oft mit skalaren Daten (z. B. INT, REAL) und nicht mit Adaptern. Der ATM_MUX_5 ist speziell für den Austausch komplexer, über Adapter definierter Datentypen ausgelegt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ATM_MUX_5** ist ein flexibler, ereignisgesteuerter Multiplexer für fünf unidirektionale ATM‑Datenströme. Seine Adapter‑Schnittstelle ermöglicht eine lose Kopplung der Komponenten und erlaubt die einfache Wiederverwendung in verschiedenen Automatisierungs‑ und Kommunikationssystemen. Die generische Auslegung macht ihn zu einer praktischen Grundlage für individuelle Multiplexer‑Varianten.

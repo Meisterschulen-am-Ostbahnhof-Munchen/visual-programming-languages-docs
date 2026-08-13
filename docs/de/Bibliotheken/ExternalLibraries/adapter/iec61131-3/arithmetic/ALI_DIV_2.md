@@ -66,6 +66,10 @@ Da es sich bei `ALI_DIV_2` um einen daten- und ereignisgesteuerten Rechenbaustei
 
 Im Vergleich zu einem Standard-`DIV`-Baustein der IEC 61131-3 bzw. IEC 61499, welcher mit klassischen Daten-Pins (`IN1`, `IN2`, `OUT`) und separaten Event-Pins (`REQ`, `CNF`) arbeitet, bietet der `ALI_DIV_2` durch die Nutzung von Adaptern eine deutlich aufgeräumtere Oberfläche im Funktionsplan. Er eignet sich besonders für fortgeschrittene Software-Architekturen, die konsequent auf die Vorteile von Adaptern zur Strukturierung setzen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALI_DIV_2` ist ein hocheffizienter und flexibel einsetzbarer Divisionsbaustein für moderne IEC 61499 Anwendungen. Durch die konsequente Nutzung generischer Typen und des `ALI`-Adapter-Konzepts trägt er maßgeblich zur Übersichtlichkeit, Wiederverwendbarkeit und Wartbarkeit von Steuerungssoftware in der 4diac-IDE bei.

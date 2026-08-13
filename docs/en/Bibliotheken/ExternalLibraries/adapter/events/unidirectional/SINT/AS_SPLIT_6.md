@@ -62,6 +62,11 @@ The block does not have an End-Centre Conditioning (ECC) function, as no sequent
 - **AS_MERGE_...** – Combines multiple adapter inputs into one output – the opposite task.
 - **Manual Wiring** – Could be implemented using multiple adapter couplings, but increases the configuration effort.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AS_SPLIT_6** is a simple yet effective generic function block for splitting a unidirectional AS signal into six separate outputs. Its generic nature allows for flexible use in various automation environments where fast and clear signal duplication is required.

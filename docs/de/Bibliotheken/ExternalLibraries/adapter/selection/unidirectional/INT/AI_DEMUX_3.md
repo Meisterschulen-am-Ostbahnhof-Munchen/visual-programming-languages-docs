@@ -70,6 +70,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Seine Funktionalität ist
 
 Gegenüber einem klassischen **Demultiplexer-FB** mit Datenausgängen bietet der **AI_DEMUX_3** den Vorteil der Adapter-Schnittstellen. Dadurch wird die Verdrahtung auf Funktionsblockebene vereinfacht und die Wiederverwendbarkeit erhöht. Nachteile können in der geringeren Anzahl von Ausgängen (3 statt variabel) und der Bindung an den Adaptertyp **AI** liegen. Ein vergleichbarer **Demux-FB** mit generischen Datenausgängen erfordert zusätzliche Typumwandlungen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AI_DEMUX_3** ist ein effektiver und spezialisierter Baustein zur Verteilung analoger Werte auf bis zu drei Ausgänge. Durch die Verwendung von unidirektionalen Adaptern fügt er sich nahtlos in moderne, adapterbasierte Architekturen ein und eignet sich besonders für modulare Automatisierungslösungen, bei denen klare Schnittstellen und einfache Konfiguration gefragt sind.

@@ -79,6 +79,10 @@ Im Vergleich zu Standard-XOR-Bausteinen bietet AX_XOR_4:
 
 Vergleich mit [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_XOR_4 Funktionsblock stellt eine spezialisierte Lösung für XOR-Operationen mit vier Eingängen in adapterbasierten Systemarchitekturen dar. Seine rein adapterbasierte Schnittstelle macht ihn besonders geeignet für modulare Systemdesigns, bei denen die Kommunikation über standardisierte Adapter erfolgt.

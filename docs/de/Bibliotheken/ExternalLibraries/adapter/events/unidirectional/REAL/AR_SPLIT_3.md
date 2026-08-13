@@ -68,6 +68,10 @@ Der Baustein ist **zustandslos** (kombinatorisch). Es gibt keine internen Zustä
 
 Im Gegensatz zu dedizierten Splittern mit Daten‑ oder Ereignis‑Ein‑/Ausgängen arbeitet der `AR_SPLIT_3` ausschließlich über Adapter, was ihn besonders flexibel und typenunabhängig macht.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **AR_SPLIT_3** ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Mehrfachverteilung von Adapter‑Signalen. Er reduziert den Aufwand für die Signalvervielfältigung in IEC 61499‑Applikationen und trägt durch seine generische Natur zur Wiederverwendbarkeit und Übersichtlichkeit von Steuerungslogiken bei. Dank des reinen Adapter‑Ansatzes kann er ohne Modifikation in unterschiedlichste Umgebungen integriert werden.

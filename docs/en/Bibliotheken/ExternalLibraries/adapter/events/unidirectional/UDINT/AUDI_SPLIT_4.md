@@ -66,6 +66,11 @@ AUDI_SPLIT_4` | Distributes an audio signal to four outputs. | This is a simple 
 AUDI_MERGE` | Combines multiple audio inputs into one output. | Inverted splitter (1:1 mapping, but reversed). |
 Generic splitters | Can be applied to other adapters via type parameters. | Offer more flexibility than hardwired versions. |
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AUDI_SPLIT_4` is a simple yet useful function block for multiplying a unidirectional audio adapter signal to four parallel outputs. Its generic nature allows for adaptation to various adapter types, and its eventless operation makes it particularly suitable for pure data distribution tasks without additional control logic. The component contributes to the structuring and reusability of signals in complex automation solutions.

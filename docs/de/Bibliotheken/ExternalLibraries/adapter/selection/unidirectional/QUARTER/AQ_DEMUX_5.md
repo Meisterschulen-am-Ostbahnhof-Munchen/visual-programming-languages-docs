@@ -81,6 +81,10 @@ Der Übergang von **IDLE** zu **BUSY** erfolgt durch ein `REQ`-Ereignis. Nach er
 - **AQ_MUX_5 (Multiplexer)**: Ein Multiplexer kehrt die Richtung um – er liest aus mehreren Eingängen einen aus und gibt einen Wert aus. Der Demultiplexer verteilt dagegen einen Eingang auf mehrere Ausgänge.
 - **Unidirektionale vs. bidirektionale Demultiplexer**: Bidirektionale Varianten (z.B. `AQ_BI_DEMUX`) erlauben auch Datenfluss von einem Ausgang zurück zum Eingang, was hier nicht der Fall ist.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AQ_DEMUX_5` ist ein spezialisierter Funktionsblock zur punktuellen Verteilung unidirektionaler `AQ`-Daten auf fünf Kanäle. Sein generischer Aufbau erleichtert die Wiederverwendung in unterschiedlichen Steuerungssystemen. Die klare Ereignissteuerung (REQ/CNF) und die einfache Indizierung machen ihn zu einem zuverlässigen Element für Anwendungen, die eine dynamische Kanalwahl erfordern.

@@ -84,6 +84,11 @@ Compared to standard multiplication components (such as the classic `MUL` compon
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AR_MUL_2` function block is an efficient tool for arithmetic operations in modern, adapter-based control programs. Its encapsulation in unidirectional interfaces offers a high degree of reusability and ensures a clean and structured design within the 4diac environment.

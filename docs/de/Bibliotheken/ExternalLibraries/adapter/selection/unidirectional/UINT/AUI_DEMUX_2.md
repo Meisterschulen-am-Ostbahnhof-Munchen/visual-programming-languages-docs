@@ -71,6 +71,10 @@ Der Funktionsbaustein besitzt keinen expliziten Zustandsautomaten. Die Reaktion 
 - **Generische Varianten** wie `AUI_DEMUX_n` (mit n > 2) erweitern die Anzahl der Ausgänge, behalten aber die gleiche Logik bei.
 - **Adapterbasierte Alternativen** erfordern ggf. eine aufwändigere Verkabelung, bieten jedoch mehr Flexibilität bei der Datenhaltung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AUI_DEMUX_2` ist ein kompakter, generischer Demultiplexer für zwei AUI-Ausgänge. Er eignet sich besonders für Anwendungen, bei denen ein eingehender AUI-Datenstrom indexgesteuert auf einen von zwei Pfaden geleitet werden muss. Dank seiner generischen Natur kann er ohne Codeänderung für unterschiedliche AUI-Typen verwendet werden.

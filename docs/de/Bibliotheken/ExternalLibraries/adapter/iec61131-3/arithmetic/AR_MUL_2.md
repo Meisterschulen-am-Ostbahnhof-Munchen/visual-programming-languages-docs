@@ -84,6 +84,10 @@ Im Vergleich zu Standard-Multiplikationsbausteinen (wie dem klassischen `MUL`-Ba
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AR_MUL_2`-Funktionsbaustein ist ein effizientes Werkzeug für arithmetische Operationen in modernen, adapterbasierten Steuerungsprogrammen. Durch die Kapselung in unidirektionale Schnittstellen bietet er ein hohes Maß an Wiederverwendbarkeit und sorgt für ein sauberes und strukturiertes Design innerhalb der 4diac-Umgebung.

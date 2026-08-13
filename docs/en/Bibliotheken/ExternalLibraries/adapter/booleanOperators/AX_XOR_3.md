@@ -72,6 +72,11 @@ Comparison with [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/X
 
 * [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_XOR_3 function block provides a reliable and efficient solution for triple XOR operations in IEC 61499-based control systems. By using adapters, it enables flexible integration into different system architectures and is particularly suitable for applications that require parity checking or special logical conditions with three input signals.

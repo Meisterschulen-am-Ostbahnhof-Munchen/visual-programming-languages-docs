@@ -72,6 +72,11 @@ There are no further states or delays.
 - An **AUS_DEMUX** would distribute one input to multiple outputs; the AUS_MUX_4 performs the reverse selection.
 - Other multiplexers with more channels (e.g., AUS_MUX_8) would be suitable for larger selections, while this one is specialized for four channels.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AUS_MUX_4 is a specialized yet flexible multiplexer for selecting one of four AUS signals. Thanks to its adapter interface and generic approach, it integrates well into modular automation solutions. It is particularly suitable for applications that require event-driven signal selection with clearly defined interfaces.

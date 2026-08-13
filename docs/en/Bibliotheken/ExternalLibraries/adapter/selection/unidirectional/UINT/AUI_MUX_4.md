@@ -65,6 +65,11 @@ The function block has **no explicit internal state machine** (ECC). Its functio
 
 The **AUI_MUX_4** is functionally identical to a classic 4-to-1 multiplexer, but specifically tailored to the AUI adapter type. Unlike generic data multiplexers (e.g., MUX from IEC 61499 standard libraries), it does not work with elementary data types, but rather with complex adapter connections. This simplifies cabling in AUI-based architectures.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AUI_MUX_4** offers a clean, reusable solution for selecting between four AUI signals. Its event-driven operation and generic type definition make it flexible to use, especially in modular automation solutions based on the 4diac framework.

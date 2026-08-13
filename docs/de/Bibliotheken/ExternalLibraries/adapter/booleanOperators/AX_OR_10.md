@@ -40,6 +40,10 @@ Logische Verknüpfungen mit vielen Eingängen.
 
 - **AX_OR_2...9**: Varianten mit weniger Eingängen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Adapter-basierter ODER-Baustein mit 10 Eingängen.

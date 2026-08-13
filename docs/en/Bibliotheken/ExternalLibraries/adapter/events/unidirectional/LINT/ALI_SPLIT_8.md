@@ -61,6 +61,11 @@ The function block has no internal states or sequential logic. Signal distributi
 
 Other splitter components such as `ALI_SPLIT_2`, `ALI_SPLIT_4`, or `ALI_SPLIT_N` differ only in the number of outputs. The `ALI_SPLIT_8` offers the maximum distribution in the standard family. Unlike a multiplexer (`ALI_MUX`) or a switch (`ALI_SWITCH`), here **each output is supplied with the same signal** – no selection or switching takes place.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `ALI_SPLIT_8` is a simple yet essential component for multiplying ALI signals. Its generic definition and the absence of state logic make it particularly suitable for robust, low-latency distributions in agricultural automation.

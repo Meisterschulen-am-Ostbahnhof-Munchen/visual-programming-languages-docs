@@ -63,6 +63,11 @@ The FB has no internal state machine and executes no sequential logic. Its behav
 - **AD_SPLIT_2 / AD_SPLIT_4 / AD_SPLIT_8**: These function blocks offer the same functionality, but with fewer outputs (2, 4, 8). `AD_SPLIT_9` complements the portfolio for applications requiring exactly nine parallel outputs.
 - **Other Split Function Blocks**: Data type-oriented split function blocks (e.g., for INTEGER or BOOL) split individual data values, while `AD_SPLIT_9` replicates complete adapter structures. The adapter can bundle multiple related data and events.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AD_SPLIT_9` is a simple yet useful generic function block for unidirectionally splitting an adapter signal into nine identical outputs. It helps avoid redundancy in system design and facilitates the modular structuring of IEC 61499 applications.

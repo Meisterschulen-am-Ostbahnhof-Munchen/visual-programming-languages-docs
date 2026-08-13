@@ -79,6 +79,10 @@ Der interne Ablauf lässt sich als einfache Zustandsmaschine beschreiben:
 | **AULI_SWITCH** | Generischer Umschalter, oft mit mehreren Ausgängen und erweiterter Indexlogik. |
 | **AULI_DEMUX_2** (dieser FB) | Demultiplexer: ein Eingang wird auf einen von zwei Ausgängen verteilt – einfacher und spezifischer als ein generischer Switch. |
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AULI_DEMUX_2** ist ein kompakter, aber leistungsfähiger Basisbaustein für die AULI-basierte Kommunikation. Er ermöglicht die flexible Verteilung von Datenströmen auf zwei Pfade und lässt sich aufgrund seiner generischen Natur problemlos in unterschiedlichste Steuerungs- und Automatisierungsszenarien integrieren.

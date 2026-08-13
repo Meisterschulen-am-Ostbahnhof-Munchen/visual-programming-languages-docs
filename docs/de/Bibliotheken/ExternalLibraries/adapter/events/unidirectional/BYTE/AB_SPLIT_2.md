@@ -58,6 +58,10 @@ Der FB besitzt keinen Zustandsautomaten. Die Ausgangsadapter spiegeln stets den 
 
 Im Vergleich zu dedizierten **SPLIT-FBs** mit Ereignis-/Datenports arbeitet `AB_SPLIT_2` rein adapterbasiert. Während klassische Split-Bausteine oft getriggerte Datenkopien erfordern, erfolgt die Verteilung hier kontinuierlich und ohne explizite Aktivierung. Ähnliche Funktionalität bieten Adapter-Multiplexer oder Buskoppler, jedoch mit komplexerer Konfiguration. Der vorliegende Baustein ist speziell auf den unidirektionalen `AB`-Adapter zugeschnitten.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AB_SPLIT_2` ist ein einfacher, aber effektiver generischer Funktionsblock zur Aufteilung eines unidirektionalen Adapters auf zwei Ausgänge. Er erweitert die Flexibilität in der Adapterverkabelung industrieller Steuerungssysteme gemäß IEC 61499 und ist dank der EPL-2.0-Lizenz frei einsetzbar. Für Anwendungen, die eine 1:2-Verteilung von Adapterdaten benötigen, bietet er eine saubere und wartbare Lösung.

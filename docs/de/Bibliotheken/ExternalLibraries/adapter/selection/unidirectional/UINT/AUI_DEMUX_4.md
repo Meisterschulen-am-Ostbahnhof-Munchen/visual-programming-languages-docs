@@ -89,6 +89,10 @@ Es gibt keine zusätzlichen Fehlerzustände. Ein ungültiger Index (z. B. 0 od
 
 Der `AUI_DEMUX_4` ist ein einfacher, klar definierter Baustein ohne Overhead und eignet sich besonders für feste, vorab bekannte Verteilungen mit maximal vier Pfaden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock `AUI_DEMUX_4` stellt eine einfache und effiziente Lösung zur Signalführung in AUI‑basierten Steuerungen dar. Dank seiner generischen Auslegung und der klaren Schnittstellen lässt er sich unkompliziert in vorhandene Systeme integrieren. Die ereignisgesteuerte Indexumschaltung erlaubt eine schnelle Reaktion auf Änderungen der Zieladresse. Für viele Anwendungen, bei denen eine dynamische Verteilung auf bis zu vier Ausgänge erforderlich ist, bietet dieser Baustein eine robuste Grundlage.

@@ -89,6 +89,11 @@ There is no persistent memory or internal state.
 
 Unlike the multiplexer, the `ATM_DEMUX_5` implements the reverse direction – from a common input to multiple outputs. It is therefore suitable for star or bus topologies with one transmitter and multiple receivers.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ATM_DEMUX_5** is a simple yet effective generic demultiplexer for unidirectional ATM adapters. With five output channels and event-driven selection via an index **K**, it covers many typical distribution tasks in automation technology. Its generic declaration allows it to be easily adapted to other adapter types or channel counts without changing the underlying functional logic.

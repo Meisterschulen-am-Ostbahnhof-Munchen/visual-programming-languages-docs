@@ -70,6 +70,10 @@ Der Baustein besitzt **keine Zustandsmaschine** (ECC). Er ist stateless, d.h. er
 
 Gegenüber einer manuellen Parallelschaltung mehrerer ADI_Split-Bausteine reduziert der `ADI_SPLIT_7` den Konfigurationsaufwand und verbessert die Übersicht im Netzwerk.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `ADI_SPLIT_7` ist ein einfacher, aber leistungsfähiger Baustein zur Verteilung eines unidirektionalen ADI-Signals auf sieben identische Ausgänge. Dank seiner generischen Implementierung und dem Verzicht auf Ereignissteuerung eignet er sich ideal für Reinverteilungen in Automatisierungs- und Steuerungsumgebungen, die auf dem ADI-Adapterprotokoll basieren.

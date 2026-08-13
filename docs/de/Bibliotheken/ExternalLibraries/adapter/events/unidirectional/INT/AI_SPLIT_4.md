@@ -62,6 +62,10 @@ Der Baustein verfügt über keinen Zustandsautomaten – er ist ereignisfrei und
 - **AI_SELECT** oder **AI_MUX**: Diese Bausteine wählen aus mehreren Eingängen einen aus, während der AI_SPLIT das Eingangssignal vervielfacht.
 - **Standard-Adaptersplit**: Manche Bibliotheken bieten generische Split-Bausteine, die jedoch oft zusätzliche Ereignis- oder Datenschnittstellen benötigen. Der AI_SPLIT_4 ist durch seinen reinen Adapteransatz besonders einfach in Adapterketten integrierbar.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der Funktionsblock **AI_SPLIT_4** ist ein spezialisierter, aber einfach einsetzbarer Baustein zur Vervielfachung analoger Signale. Dank seiner reinen Adapterschnittstelle lässt er sich nahtlos in 4diac-Projekte einbinden, ohne zusätzliche Ereignislogik. Er eignet sich besonders für modulare und skalierbare Automatisierungslösungen, bei denen ein einzelner Messwert an mehrere Verbraucher verteilt werden muss.

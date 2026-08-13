@@ -69,6 +69,11 @@ The block does not have an explicit state machine. Its functionality is purely e
 
 Compared to a classic **demultiplexer function block** with data outputs, the **AI_DEMUX_3** offers the advantage of adapter interfaces. This simplifies wiring at the function block level and increases reusability. Disadvantages may include the smaller number of outputs (3 instead of variable) and the requirement for the adapter type **AI**. A comparable **demultiplexer function block** with generic data outputs requires additional type conversions.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AI_DEMUX_3** is an effective and specialized component for distributing analog values to up to three outputs. Thanks to its use of unidirectional adapters, it integrates seamlessly into modern, adapter-based architectures and is particularly suitable for modular automation solutions where clear interfaces and simple configuration are essential.

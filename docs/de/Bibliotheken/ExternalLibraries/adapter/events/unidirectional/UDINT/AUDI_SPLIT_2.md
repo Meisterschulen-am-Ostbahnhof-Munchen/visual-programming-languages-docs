@@ -62,6 +62,10 @@ Der FB hat keine eigenen Zustandsdiagramme, da er keine ereignisgesteuerten Abl�
 - **Andere Splitter mit mehr Ausgängen** (z.B. `AUDI_SPLIT_3`): Erweitern die Verzweigungszahl, folgen aber dem gleichen Prinzip.
 - **Ereignisbasierte Splitter** (z.B. `E_SPLIT`): Benötigen Ereignis- und Daten-Eingänge/-Ausgänge und führen eine synchronisierte Verteilung durch – im Gegensatz zum vorliegenden asynchronen Daten-Adapter-Split.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUDI_SPLIT_2** ist ein kompakter, generischer Adapter-Splitter für die 4diac-IDE. Er erfüllt die einfache Aufgabe der Signalverzweigung auf zwei Ausgänge, ohne zusätzliche Latenz oder Logik zu verursachen. Durch die generische Auslegung eignet er sich für unterschiedlichste AUDI-Datentypen und ermöglicht eine flexible Wiederverwendung in modularen Automatisierungsprojekten. Seine Einfachheit und Typsicherheit machen ihn zu einem soliden Grundbaustein für verteilte Steuerungssysteme.

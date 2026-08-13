@@ -83,6 +83,10 @@ Im Vergleich zu einem Standard-Subtraktionsbaustein (z. B. `SUB` aus der IEC 611
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AULI_SUB_2` ist ein robuster und wiederverwendbarer Funktionsbaustein zur Subtraktion. Durch den konsequenten Einsatz von Adaptern fördert er ein sauberes, übersichtliches und wartungsfreundliches Applikationsdesign in der 4diac-IDE.

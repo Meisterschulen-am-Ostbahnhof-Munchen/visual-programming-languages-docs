@@ -63,6 +63,10 @@ Der Baustein besitzt keinen Zustandsautomaten. Die Berechnung wird rein datenget
 
 Im Vergleich zu klassischen, Daten-eingabebasierten Additionsbausteinen (z. B. `ADD`) zeichnet sich `AR_ADD_2` durch seine Adapterschnittstellen aus. Während Standard-Addierer oft mit einzelnen Eingängen (`IN1`, `IN2`) und einem Ausgang (`OUT`) arbeiten, ermöglichen Adapter die direkte Verbindung zu komplexeren Datenstrukturen und eine höhere Wiederverwendbarkeit durch Typsicherheit. Der Baustein ist bewusst generisch gehalten, was eine dynamische Typanpassung zur Laufzeit erlaubt.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AR_ADD_2` ist ein kompakter, generischer Funktionsbaustein für die Addition von zwei Werten mittels Adapter-Schnittstellen. Er eignet sich besonders für systemübergreifende Anwendungen, bei denen Typflexibilität und lose Kopplung durch Adapter gefragt sind. Die einfache, zustandslose Architektur macht ihn robust und leicht in bestehende Automatisierungsprojekte integrierbar.

@@ -74,6 +74,11 @@ The FB does not have a sophisticated state machine (e.g., ECC) because it operat
 - **AULI Splitter**: The counterpart that distributes one input to multiple outputs (e.g., `AULI_DISTRIBUTE`). While the MUX combines many sources into one output, the splitter distributes one source to many outputs.
 - **Selector without Adapters**: A simple index-based function block with data inputs (e.g., `SEL`) typically only offers single values, not complex adapter interfaces.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AULI_MUX_3` is a flexible, event-driven multiplexer that switches between up to three data sources via adapter interfaces. Its generic nature and the use of standard adapters make it ideal for modular and reusable control applications. The simple interface with only one index and one acknowledgment event allows for seamless integration into higher-level logic systems.

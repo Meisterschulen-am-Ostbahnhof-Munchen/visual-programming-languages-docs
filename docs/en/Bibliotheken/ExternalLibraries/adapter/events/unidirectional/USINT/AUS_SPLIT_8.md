@@ -64,6 +64,11 @@ The function block does not have a state machine. There are no internal states o
 - **AUS_MERGE / AUS_JOIN**: Combine multiple signals – functionally the opposite.
 - **AUS_ROUTER**: Can selectively route a signal to one of several outputs, while the splitter always activates all outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUS_SPLIT_8** is a simple yet useful function block for multiplying an OFF signal. Its lack of logic and states makes it efficient and easy to understand. It is particularly suitable for applications where a control signal needs to be distributed to multiple receivers without requiring selection or processing.

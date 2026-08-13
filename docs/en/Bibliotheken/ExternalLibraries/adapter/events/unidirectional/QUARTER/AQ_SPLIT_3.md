@@ -66,6 +66,11 @@ The function block is stateless. It does not execute any time-dependent or seque
 - **Manual Triple Wiring**: Instead of a single component, the input signal could be manually connected to three sockets. However, the splitter improves the clarity and maintainability of the network.
 - **Generic Splitters for Other Adapter Types**: Similar components exist, for example, for data or event signals (e.g., `DATA_SPLIT_3`). `AQ_SPLIT_3` is specifically designed for the AQ adapter type.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AQ_SPLIT_3` is a simple, functional fan-out component for unidirectional AQ adapters. Thanks to its generic design and clear 1:3 distribution, it is ideally suited for all applications that need to provide an AQ signal multiple times. The absence of event and data I/O makes it lightweight and usable in any process context.

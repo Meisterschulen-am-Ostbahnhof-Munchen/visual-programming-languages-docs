@@ -80,6 +80,10 @@ Der FB besitzt keine explizit modellierten Zustände. Die interne Logik verarbei
 
 Der **ADI_DEMUX_3** zeichnet sich durch die explizite Index‑Auswahl (UINT) aus, was eine flexible Programmierung ohne zusätzliche Multiplex‑Logik ermöglicht. Im Gegensatz zu festverdrahteten Splits erlaubt er die gezielte Kanalwahl zur Laufzeit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock **ADI_DEMUX_3** ist ein einfacher, aber effektiver Demultiplexer für ADI‑Datenströme. Dank seiner generischen Struktur und der klaren ereignisgesteuerten Arbeitsweise eignet er sich hervorragend für den Einsatz in modularen, adapterbasierten Automatisierungsprojekten. Durch die Auswahl eines von drei Ausgängen über einen Index entsteht eine saubere Trennung von Signalquellen und Senken, ohne dass aufwändige eigene Multiplex‑Logik implementiert werden muss.

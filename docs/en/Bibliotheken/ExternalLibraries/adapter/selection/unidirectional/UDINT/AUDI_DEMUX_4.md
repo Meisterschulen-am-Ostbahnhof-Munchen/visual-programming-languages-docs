@@ -81,6 +81,11 @@ Unlike conventional demultiplexers (e.g., `MUX`/`DEMUX` at the signal level), **
 
 Conversely, a **generic MUX function block** for the same adapter type would combine multiple inputs into a single output. This function block fulfills the opposite function – distributing one input to multiple outputs.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AUDI_DEMUX_4** is a compact, generic function block for the unidirectional demultiplexing of AUDI adapter connections. Due to its pure event-driven control, simple index selection, and clear separation of event and data paths, it is particularly suitable for application-neutral distribution tasks in IEC 61499-2 compliant systems. Integration as a generic function block increases reusability across different projects.

@@ -59,6 +59,11 @@ Compared to simple switches or multiplexers, the AX_DEMUX_2 offers specialized d
 
 Comparison with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)]
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AX_DEMUX_2 represents an efficient and standards-compliant component for data distribution in IEC 61499-based automation systems. Its generic nature and adapter-based architecture make it a flexible solution for various demultiplexing applications.

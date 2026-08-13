@@ -81,6 +81,10 @@ Der Baustein besitzt kein komplexes internes Zustandsdiagramm (zustandslos). Er 
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AI_MUL_3` Funktionsbaustein bietet eine effiziente, saubere und performante Möglichkeit, dreifache Multiplikationen innerhalb einer 4diac-Anwendung zu realisieren. Durch die konsequente Nutzung des Adapter-Konzepts trägt er maßgeblich zur Übersichtlichkeit und Wartbarkeit von Steuerungssoftware bei.

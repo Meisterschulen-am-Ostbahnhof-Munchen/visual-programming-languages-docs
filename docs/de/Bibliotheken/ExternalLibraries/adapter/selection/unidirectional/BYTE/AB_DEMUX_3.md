@@ -75,6 +75,10 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Die Funktionalität wird 
 - **AB_DEMUX_N**: Varianten mit mehr oder weniger Ausgängen (z. B. `AB_DEMUX_2`, `AB_DEMUX_4`). Der vorliegende FB ist auf drei Ausgänge spezialisiert.
 - **Manuelle Umschaltung**: Alternativ könnte die Umschaltung über bedingte Zuweisungen in einem skriptbasierten FB realisiert werden – der **AB_DEMUX_3** bietet jedoch eine kompakte und standardisierte Lösung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AB_DEMUX_3** ist ein einfacher, aber effektiver Baustein zur Demultiplexierung von AB-Adapterdaten. Er kapselt die Indexauswahl sauber in einem wiederverwendbaren FB und eignet sich besonders für Systeme, die eine flexible, ereignisgesteuerte Datenweiterleitung erfordern. Die generische Natur erlaubt zudem eine einfache Anpassung an verschiedene Datentypen der AB-Schnittstelle.

@@ -78,6 +78,10 @@ Der **AL_DEMUX_5** besitzt keine expliziten Zustände (ECC‑Diagramm). Es hande
 
 Der `AL_DEMUX_5` schließt eine Lücke für die Demultiplexierung von Adapterdaten (z. B. für komplexe Datentypen wie Strukturen), während reine Ereignis‑Demultiplexer wie `E_DEMUX` keine Daten transportieren.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AL_DEMUX_5** ist ein einfacher, aber nützlicher generischer Demultiplexer für Adapter vom Typ `AL`. Seine klare Struktur mit einem Eingangs‑ und fünf Ausgangsadaptern macht ihn ideal für Routing‑Anwendungen in IEC 61499‑Systemen. Die EPL‑Lizenzierung und die generische Auslegung fördern die Wiederverwendbarkeit und Anpassbarkeit. Der Baustein ergänzt die vorhandenen Standard‑Demultiplexer um die wichtige Fähigkeit, strukturierte Datenadapter gezielt zu verteilen.

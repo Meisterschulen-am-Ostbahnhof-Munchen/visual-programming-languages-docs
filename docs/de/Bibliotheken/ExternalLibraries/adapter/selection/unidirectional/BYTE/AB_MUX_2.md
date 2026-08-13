@@ -74,6 +74,10 @@ Da der Baustein keine Zustandsmaschine definiert (ECC fehlt), existiert nur der 
 | Standard‑MUX‑Bausteine (z. B. MUX2) | Arbeitet meist mit direkten Daten‑Eingängen (BOOL, INT) und besitzt eigene Daten‑Ausgänge. |
 | **Vorteil AB_MUX_2** | Einheitliche Adapter‑Schnittstelle, leichte Austauschbarkeit der Datenquelle und -senke. |
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Funktionsbaustein **AB_MUX_2** stellt eine flexible und standardisierte Lösung zur Auswahl zwischen zwei Signalquellen dar. Die Verwendung von Adaptern erleichtert die Integration in komplexe 4diac‑Projekte und sorgt für eine saubere Trennung von Steuerlogik und Datenflüssen. Durch die generische Deklaration ist der Baustein wiederverwendbar und für eine Vielzahl industrieller Anwendungen geeignet.

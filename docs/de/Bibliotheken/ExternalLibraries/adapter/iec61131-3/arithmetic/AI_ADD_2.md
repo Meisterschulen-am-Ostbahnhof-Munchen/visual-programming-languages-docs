@@ -69,6 +69,10 @@ Der Funktionsbaustein verhält sich ereignisgesteuert und zustandslos. Es wird k
 
 Im Vergleich zum Standard-IEC-61131-3-Additionsbaustein (`ADD`), welcher mit klassischen Daten-Pins (z. B. `IN1`, `IN2` vom Typ `ANY_NUM`) und expliziten Kontroll-Events (`REQ` / `CNF`) arbeitet, bietet **AI_ADD_2** eine deutlich aufgeräumtere visuelle Darstellung. Durch die Kapselung in Adaptern entfällt das manuelle Ziehen separater Event-Linien, was das Fehlerrisiko bei der Applikationserstellung minimiert.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AI_ADD_2** ist ein moderner, hocheffizienter Funktionsbaustein für die 4diac-ide. Er kombiniert die mathematische Grundfunktion der Addition mit den strukturellen Vorteilen von IEC 61499-Adaptern. Dies macht ihn zur idealen Wahl für modular aufgebaute Regelungs- und Steuerungsarchitekturen.

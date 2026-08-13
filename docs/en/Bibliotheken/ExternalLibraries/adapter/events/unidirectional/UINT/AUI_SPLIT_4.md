@@ -62,6 +62,11 @@ This function block has no event inputs or outputs and does not execute any algo
 - **AUI_SELECT** – Selects one of several inputs using a control signal (with selection function).
 - Unlike these function blocks, `AUI_SPLIT_4` offers a pure 1:4 distribution without selection logic or merging.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUI_SPLIT_4** function block is a simple yet useful component for passively multiplying AUI signals. Its generic nature and clear interface make it a flexible tool in automation development, especially when multiple identical receivers need to be supplied with the same signal.

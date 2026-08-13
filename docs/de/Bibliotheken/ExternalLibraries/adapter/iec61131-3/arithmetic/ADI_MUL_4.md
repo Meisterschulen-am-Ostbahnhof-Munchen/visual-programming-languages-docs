@@ -69,6 +69,10 @@ Der Funktionsbaustein `ADI_MUL_4` ist ein **zustandsloser (stateless)** Rechenba
 *   **Standard `MUL`-Baustein (IEC 61131-3):** Klassische Multiplizierer nutzen direkte Daten- und Ereignispins. `ADI_MUL_4` hingegen nutzt Adapter, was das Routing vereinfacht, jedoch eine entsprechende Adapter-Infrastruktur im Projekt voraussetzt.
 *   **ADI_MUL_2 / ADI_MUL_3:** Ähnliche Bausteine mit weniger Eingängen. `ADI_MUL_4` eignet sich speziell dann, wenn exakt vier Faktoren miteinander multipliziert werden müssen, ohne mehrere 2-fach-Multiplizierer kaskadieren zu müssen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ADI_MUL_4` ist ein hocheffizienter Hilfsbaustein für die mathematische Signalverarbeitung in IEC 61499-Systemen. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes, modulares Software-Design und reduziert die Komplexität der grafischen Verdrahtung innerhalb der 4diac-IDE.

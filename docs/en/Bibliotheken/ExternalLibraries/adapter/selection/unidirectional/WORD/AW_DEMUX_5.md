@@ -92,6 +92,11 @@ The function block does not have an explicitly modeled state machine. Its intern
 - **AW_SELECT**: An analog multiplexer that switches multiple inputs to one output. AW_DEMUX_5 is the inverse function.
 - **MUX/DEMUX with Event Control**: Many demultiplexers have separate enable inputs; here, activation occurs via the **REQ** event, enabling synchronous processing.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AW_DEMUX_5** is a specialized demultiplexer for unidirectional AW adapters in the 4diac IDE. Its use of adapters makes it particularly suitable for modular automation solutions where data streams need to be flexibly switched between components. Its simple interface (one event, one index, five outputs) makes it easy to use, while its generic nature allows for broad reuse.

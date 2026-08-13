@@ -85,6 +85,11 @@ The function block does not have an explicit state machine. Its behavior is limi
 - **AUS_DEMUX_N** (generic for more than two outputs) – this function block is limited to exactly two outputs, making it simpler and clearer.
 - **EXTRACT** / **SELECT** – unlike dataflow-based function blocks, routing here is controlled by an explicit event.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AUS_DEMUX_2** is a lean, generic demultiplexer for AUS adapters, characterized by its clear event interface and ease of use. It is suitable for all cases where a single data stream needs to be redirected to one of two target adapters based on an event. Its generic design allows its use with any AUS data type – ideal for modular and reusable automation solutions.

@@ -61,6 +61,11 @@ The function block does not have its own states or event flow control (ECC). Sig
 
 Unlike data-based split blocks, AUS_SPLIT_9 does not require event control, as the adapter connection handles data transmission implicitly.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUS_SPLIT_9** is a simple yet effective function block for splitting a single OFF signal into nine parallel paths. Its generic nature and pure adapter interface make it flexible for use in IEC 61499-based control applications that require unidirectional signal duplication.

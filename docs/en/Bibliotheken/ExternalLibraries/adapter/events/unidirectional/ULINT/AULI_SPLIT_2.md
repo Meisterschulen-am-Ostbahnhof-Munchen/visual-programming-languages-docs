@@ -62,6 +62,11 @@ Since the function block contains no internal logic or state machine, there is n
 
 While **AULI_SPLIT_2** performs a fixed 1:2 split, generic splitters allow for a flexible number of outputs. Mergers like **AULI_MERGE** accomplish the opposite.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AULI_SPLIT_2** is a minimal and efficient component for multiplying signals from unidirectional AULI adapters. Due to its passive, stateless nature, it is ideally suited for real-time applications where copies of a data stream are needed without additional latency or logic. Its generic implementation facilitates its use in various development tools and libraries.

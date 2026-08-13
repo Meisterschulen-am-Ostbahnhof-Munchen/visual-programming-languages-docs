@@ -78,6 +78,11 @@ The function block `AI_DIV_2` is a stateless combination block. It does not have
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AI_DIV_2` is a highly efficient and modern auxiliary module for analog signal processing in 4diac. Through the consistent use of adapters, it integrates seamlessly into service-oriented control architectures and minimizes the implementation and testing effort for basic mathematical operations.

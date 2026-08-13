@@ -59,6 +59,11 @@ The module does not have a state machine – it operates continuously and withou
 - **Data-Based Splitters (e.g., SPLIT_INT):** Unlike adapter-based splitters, data-based splitters work with specific data types (e.g., integers) and usually require events for triggering. The AIS_SPLIT_4 is a pure adapter splitter and does not require explicit triggering.
 - **Adapter Multiplexers (e.g., AIS_MUX):** A multiplexer selects one input from several, while the splitter distributes one input to multiple outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIS_SPLIT_4** is a simple yet practical function block for reliably distributing an AIS signal to four identical outputs. Its generic design and pure adapter logic make it flexible and eliminate the need for additional event control. It is ideally suited for applications where a signal is needed multiple times without data processing or synchronization.

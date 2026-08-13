@@ -84,6 +84,11 @@ The FB does not have an explicit state machine (ECC). Its behavior can be descri
 - **AW_SWITCH:** A function block with similar functionality, but instead of duplicating the input value, it switches between different sources (multiplexer).
 - **Advantages of AW_DEMUX_2:** Clear separation of control logic and data transfer, easy extensibility to additional outputs (e.g., AW_DEMUX_4).
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 AW_DEMUX_2 is a compact, generic function block for adapter-based demultiplexing of AW values. Its event-driven selection and clear interface structure make it a flexible building block for modular automation solutions. Thanks to its generic design, it can be easily adapted to different AW types without changing its fundamental functionality.

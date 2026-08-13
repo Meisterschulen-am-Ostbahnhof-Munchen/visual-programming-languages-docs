@@ -64,6 +64,11 @@ The function block does not have its own state machine (ECC). It is a pure conne
 - **SPLIT_ALL_2**: A non-generic splitter for two outputs that uses specific data types. AW_SPLIT_3 offers greater flexibility due to its generic nature.
 - **REPEATER**: A simple amplifier or repeater for adapters with only one output. AW_SPLIT_3 extends this to three parallel outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AW_SPLIT_3** is a fundamental yet flexible distribution block in Eclipse 4diac. Its generic design makes it universally applicable to all unidirectional adapter types. The clear, passive structure without additional logic allows for efficient and reliable signal distribution in automation solutions. Especially when combined with the type variability and 4diac adapter mechanics, it represents a valuable tool for modular and reusable control architectures.

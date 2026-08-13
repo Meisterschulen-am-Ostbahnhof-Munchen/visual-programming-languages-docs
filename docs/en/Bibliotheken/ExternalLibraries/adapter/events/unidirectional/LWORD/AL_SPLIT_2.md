@@ -65,6 +65,11 @@ The 4diac IDE offers various splitter components for different signal types:
 
 The `AL_SPLIT_2` is specifically optimized for adapter interfaces, providing a clean way to split complex, adapter-based connections without interfering with the data or event layer.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AL_SPLIT_2` is a simple yet useful generic function block for splitting unidirectional adapter signals. It enables flexible and structured signal distribution in modular automation solutions without additional logic or state dependencies. Its generic nature makes it universally applicable.

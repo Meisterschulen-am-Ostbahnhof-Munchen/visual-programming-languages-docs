@@ -71,6 +71,11 @@ A parallel state machine within the function block is not explicitly modeled –
 
 Standard IEC 61499 MUX devices typically work with pure data types (e.g., `ANY`) and have separate data inputs and outputs. The **AW_MUX_4**, on the other hand, encapsulates the data in a specific adapter type (`AW`). This allows for simpler wiring and type-safe coupling within an AW-based adapter environment. A disadvantage is the dependency on this specific adapter, which limits its reusability in environments without AW-type devices.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AW_MUX_4` is a compact, generic multiplexer for AW adapters. It offers clear, event-driven selection between four inputs and outputs the selected signal via a single output. Its simple interface and EPL licensing make it a practical tool in AW adapter-based control applications where flexible signal switching is required.

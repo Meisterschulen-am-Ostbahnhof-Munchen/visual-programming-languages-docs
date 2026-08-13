@@ -80,6 +80,11 @@ The AIWS_MUX_2 is a compact, generic multiplexer for AIWS adapters. Its simple e
 
 ## Comparison with Similar Function Blocks
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

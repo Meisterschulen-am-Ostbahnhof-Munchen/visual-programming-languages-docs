@@ -74,6 +74,11 @@ Since it is a combinational (or stateless) function block, `AUS_ADD_3` has no co
 * **Standard ADD (IEC 61131-3):** Classic `ADD` function blocks use dedicated event and data lines. `AUS_ADD_3`, on the other hand, encapsulates these in adapters, resulting in cleaner software architectures.
 * **OFF_ADD_2 / OFF_ADD_4:** Compared to variants with two or four inputs, this function block is specifically optimized for exactly three input channels to avoid unused interfaces in the program code.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUS_ADD_3` is an efficient and reusable function block for adding three signals. Through the consistent use of unidirectional adapters, it promotes a modular, clear, and maintainable application design within the IEC 61499 development environment.

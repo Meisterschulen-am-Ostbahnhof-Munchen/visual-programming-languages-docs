@@ -70,6 +70,11 @@ Since this is an adapter-based component for purely arithmetic data processing, 
 * **Standard Adder (e.g., `F_ADD`):** A classic IEC 61131-3 adder block requires separate data lines and event connections. `ADI_ADD_4` bundles these in adapters, reducing visual complexity in the editor.
 * **Dual Adder (`ADI_ADD_2`):** To add four values, three dual adders would have to be cascaded. `ADI_ADD_4` significantly saves space and execution time by combining the calculation into a single step.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ADI_ADD_4` is a high-performance and efficient function block for adding four numeric signals. By consistently using adapters, he reduces the number of physical connections in the control program and makes a significant contribution to a clear and maintenance-friendly software architecture.

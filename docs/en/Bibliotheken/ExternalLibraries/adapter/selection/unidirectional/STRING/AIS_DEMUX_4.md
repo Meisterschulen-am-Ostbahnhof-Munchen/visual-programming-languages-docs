@@ -81,6 +81,11 @@ The transition from IDLE to ROUTE is performed using REQ, and after the forwardi
 
 The AIS_DEMUX_4 stands out due to its adapter interface and its specific focus on AIS protocols.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AIS_DEMUX_4** is a simple yet effective demultiplexer for AIS adapter connections. Its generic design allows for use in various environments, while its clear event-driven control ensures robust switching between four output paths. It is an ideal component when AIS data streams need to be flexibly distributed across multiple sinks.

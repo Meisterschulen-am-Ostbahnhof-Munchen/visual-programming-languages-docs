@@ -79,6 +79,11 @@ The function block (FB) is not stateful; after each request (REQ), the switchove
 - **Standard Data Demultiplexers (e.g., for ANY):** Instead of AULI adapters, these often work with scalar data types (such as INT, BOOL) and have separate data outputs. The AULI_DEMUX_5 is specifically designed for the AULI interface.
 - **Adapter Multiplexers from Other Libraries:** Depending on the environment, similar function blocks may exist, but these often use bidirectional adapters. The function block presented here is explicitly unidirectional and expects the AULI definition.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AULI_DEMUX_5** is a compact, event-driven demultiplexer for unidirectional AULI adapters. It enables flexible signal routing to five target adapters and is particularly suitable for modular automation solutions where adapters serve as a standardized interface. Thanks to its generic basis, the function block can be easily adapted to different channel counts.

@@ -88,6 +88,11 @@ An explicit state machine is not defined in the XML, but the described behavior 
 
 The AW_DEMUX_4 is the extension to four outputs. It offers a higher number of destinations but requires a clearly defined index.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AW_DEMUX_4** is a simple yet useful generic demultiplexer for unidirectional adapters. It allows the flexible routing of an input signal to one of four outputs, controlled by an index. Thanks to its generic structure and EPL 2.0 license, it integrates well into IEC 61499-based automation systems.

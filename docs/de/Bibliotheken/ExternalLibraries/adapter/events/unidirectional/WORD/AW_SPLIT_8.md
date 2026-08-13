@@ -72,6 +72,10 @@ Eine genauere Zustandsbeschreibung ist aus den Adapterdefinitionen abzuleiten.
 - **Allgemeine Splitter (z. B. für andere Adaptertypen):** Es existieren Splitter für verschiedene Adapter-Datentypen (z. B. `BOOL_SPLIT`, `INT_SPLIT`), die analoge Struktur aufweisen, aber unterschiedliche Adapter-Schnittstellen besitzen.
 - **Multicast-Bausteine:** Komplexere Bausteine können zusätzlich Filter-, Priorisierungs- oder Pufferfunktionen bieten; `AW_SPLIT_8` ist absichtlich minimalistisch gehalten, um keine unerwünschten Seiteneffekte zu erzeugen.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der Baustein `AW_SPLIT_8` ist ein einfacher, aber nützlicher generischer 1:8-Splitter für unidirektionale AW-Adapter. Er erfüllt die grundlegende Anforderung, ein eingehendes Signal ohne Verzögerung oder Veränderung auf acht Ausgänge zu verteilen. Durch seine generische Auslegung kann er in verschiedenen Kontexten eingesetzt werden, in denen eine typsichere Vervielfältigung von Adapterdatenströmen benötigt wird. Die strikte Einhaltung des IEC 61499-2-Standards und die Verwendung von Adaptern erleichtern die Integration in bestehende 4diac-Projekte.

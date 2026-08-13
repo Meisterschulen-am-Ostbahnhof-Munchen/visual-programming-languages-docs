@@ -94,6 +94,11 @@ There are no hold, error, or special states.
 
 **AW_DEMUX_3** (Generic, non-adapter-specific) | The biggest difference compared to pure data or event demultiplexers is the use of the `AW` adapter type, which encapsulates standardized, unidirectional data transmission within the 4diac IDE.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AW_DEMUX_3** is a compact, generic demultiplexer for the `AW` adapter type. Event-driven, it distributes input data to three outputs based on an index. Its simple, transaction-oriented operation without state machines makes it a reliable component for targeted signal routing in industrial control and automation solutions. Its generic nature also allows for flexible reuse in different projects.

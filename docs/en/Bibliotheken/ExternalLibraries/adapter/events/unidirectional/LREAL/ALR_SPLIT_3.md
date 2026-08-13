@@ -62,6 +62,11 @@ The function block does not define any internal states. The output signal always
 * **ALR_SPLIT_4** – Distributes one signal to four outputs.
 * **Manual Coupling** – Without the SPLIT function block, the signal would have to be tapped multiple times in the application or distributed via a common line, which reduces clarity and maintainability.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ALR_SPLIT_3** is a simple yet useful generic function block for multiplying an ALR signal. It facilitates structured and reusable interconnection in automation solutions where a signal needs to be passed on to multiple receivers without additional logic or latency.

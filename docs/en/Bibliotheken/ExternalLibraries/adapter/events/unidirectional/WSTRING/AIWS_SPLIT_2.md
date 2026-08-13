@@ -58,6 +58,11 @@ The function block is stateless. There are no internal states or transitions. Th
 - **SPLIT Modules for Other Adapter Types**: 4diac offers analog split modules for other adapters (e.g., `DINT_SPLIT`) that distribute a data signal to multiple outputs – but at the data level, not via adapters.
 - **Event Split Blocks**: Blocks like `E_SPLIT` distribute events, not data streams – AIWS_SPLIT_2 specifically addresses AIWS adapter communication.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIWS_SPLIT_2** is a simple yet useful generic function block for duplicating an AIWS adapter signal. It reduces wiring complexity in applications that require the same analog or mixed signal multiple times and, thanks to its passive, stateless architecture, integrates seamlessly into existing workflows.

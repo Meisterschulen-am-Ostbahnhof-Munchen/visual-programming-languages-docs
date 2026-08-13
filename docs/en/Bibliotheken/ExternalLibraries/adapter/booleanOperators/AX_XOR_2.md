@@ -61,6 +61,11 @@ Compared to other logical operators such as AND or OR, XOR has the unique featur
 
 Comparison with [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_XOR_2 function block provides an efficient and reliable solution for XOR operations in 4diac-based control systems. Its use of adapter interfaces allows for flexible integration into various system architectures and makes it particularly suitable for applications where signal differences need to be detected.

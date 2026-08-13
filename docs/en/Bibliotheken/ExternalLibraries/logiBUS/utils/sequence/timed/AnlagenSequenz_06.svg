@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1394" height="769" viewBox="-588 -20 1394 769">
+<defs>
+</defs>
+<rect x="3" y="3" width="210" height="719" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H210 V248 H204 V288 H210 V719 H0 V288 H6 V248 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L210,30" stroke="#000000" stroke-width="1" />
+<text x="105.0" y="266.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AnlagenSequenz_06</text>
+<text x="105.0" y="280.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">0.6</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">EIN</text>
+<text x="-63" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Startsequenz auslösen; nur wirksam wenn</text>
+<text x="-193" y="57" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">EINSCHALTBEREIT=TRUE; quittiert dabei zugleich</text>
+<text x="-193" y="69" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">eine anstehende Störungsanzeige</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">AUS</text>
+<text x="-63" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Stopsequenz auslösen, aus jedem Schritt der</text>
+<text x="-193" y="83" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Vorlauf-Kette oder aus S_LAEUFT</text>
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M1</text>
+<text x="-63" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 1 hat sich geändert</text>
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M2</text>
+<text x="-63" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 2 hat sich geändert</text>
+<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M3</text>
+<text x="-63" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="149" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 3 hat sich geändert</text>
+<path d="M-5,167 L-5,177 L0,172 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="176" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M4</text>
+<text x="-63" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="175" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 4 hat sich geändert</text>
+<path d="M-5,193 L-5,203 L0,198 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="202" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M5</text>
+<text x="-63" y="201" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="201" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 5 hat sich geändert</text>
+<path d="M-5,219 L-5,229 L0,224 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="228" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M6</text>
+<text x="-63" y="227" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-193" y="227" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 6 hat sich geändert</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE1_EIN</text>
+<text x="-63" y="308" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR1 zu S_VOR2, M5 startet (Vorlauf)</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE2_EIN</text>
+<text x="-63" y="334" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR2 zu S_VOR3, M4 startet (Vorlauf)</text>
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE3_EIN</text>
+<text x="-63" y="360" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR3 zu S_VOR4, M3 startet (Vorlauf)</text>
+<path d="M-5,378 L-5,388 L0,383 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE4_EIN</text>
+<text x="-63" y="386" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="386" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR4 zu S_VOR5, M2 startet (Vorlauf)</text>
+<path d="M-5,404 L-5,414 L0,409 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE5_EIN</text>
+<text x="-63" y="412" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="412" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR5 zu S_LAEUFT, M1 startet (Vorlauf)</text>
+<path d="M-5,430 L-5,440 L0,435 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="439" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE1_AUS</text>
+<text x="-63" y="438" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="438" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH1 zu S_NACH2, M2 stoppt (Nachlauf)</text>
+<path d="M-5,456 L-5,466 L0,461 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="465" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE2_AUS</text>
+<text x="-63" y="464" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="464" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH2 zu S_NACH3, M3 stoppt (Nachlauf)</text>
+<path d="M-5,482 L-5,492 L0,487 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="491" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE3_AUS</text>
+<text x="-63" y="490" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="490" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH3 zu S_NACH4, M4 stoppt (Nachlauf)</text>
+<path d="M-5,508 L-5,518 L0,513 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="517" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE4_AUS</text>
+<text x="-63" y="516" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="516" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH4 zu S_NACH5, M5 stoppt (Nachlauf)</text>
+<path d="M-5,534 L-5,544 L0,539 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="543" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE5_AUS</text>
+<text x="-63" y="542" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-193" y="542" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH5 zu S_AUS, M6 stoppt (Nachlauf)</text>
+<path d="M-5,560 L-5,570 L0,565 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="569" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M1</text>
+<text x="-63" y="568" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-193" y="568" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 1 hat aktuell eine Störung anstehen</text>
+<path d="M-5,586 L-5,596 L0,591 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="595" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M2</text>
+<text x="-63" y="594" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-193" y="594" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 2 hat aktuell eine Störung anstehen</text>
+<path d="M-5,612 L-5,622 L0,617 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="621" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M3</text>
+<text x="-63" y="620" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-193" y="620" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 3 hat aktuell eine Störung anstehen</text>
+<path d="M-5,638 L-5,648 L0,643 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="647" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M4</text>
+<text x="-63" y="646" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-193" y="646" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 4 hat aktuell eine Störung anstehen</text>
+<path d="M-5,664 L-5,674 L0,669 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="673" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M5</text>
+<text x="-63" y="672" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-193" y="672" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 5 hat aktuell eine Störung anstehen</text>
+<path d="M-5,690 L-5,700 L0,695 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="699" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M6</text>
+<text x="-63" y="698" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-193" y="698" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 6 hat aktuell eine Störung anstehen</text>
+<path d="M210,37 L210,47 L215,42 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="281" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Ausführungsbestätigung, mit jedem Zustands-Update</text>
+<path d="M210,63 L210,73 L215,68 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M1</text>
+<text x="281" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 1 aktualisiert (analog EO_Sx in</text>
+<text x="351" y="83" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">sequence_T_04/_08)</text>
+<path d="M210,89 L210,99 L215,94 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M2</text>
+<text x="281" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 2 aktualisiert</text>
+<path d="M210,115 L210,125 L215,120 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M3</text>
+<text x="281" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="123" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 3 aktualisiert</text>
+<path d="M210,141 L210,151 L215,146 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M4</text>
+<text x="281" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="149" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 4 aktualisiert</text>
+<path d="M210,167 L210,177 L215,172 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="176" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M5</text>
+<text x="281" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="175" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 5 aktualisiert</text>
+<path d="M210,193 L210,203 L215,198 Z" fill="#63B31F" stroke="none" />
+<text x="198" y="202" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M6</text>
+<text x="281" y="201" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="351" y="201" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 6 aktualisiert</text>
+<rect x="205.0" y="300.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="198" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">timeOut</text>
+<text x="281" y="308" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">ATimeOut</text>
+<text x="351" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">timeOut Adapter</text>
+<path d="M210,326 L210,336 L215,331 Z" fill="#18519E" stroke="none" />
+<text x="198" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS_BETRIEB</text>
+<text x="281" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="351" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">0=Aus 1=Hochfahren 2=Läuft 3=Herunterfahren</text>
+<path d="M210,352 L210,362 L215,357 Z" fill="#18519E" stroke="none" />
+<text x="198" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS_STOERUNG</text>
+<text x="281" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="351" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">0=keine 4=aktiv, verriegelt bis EIN</text>
+<path d="M210,378 L210,388 L215,383 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">EINSCHALTBEREIT</text>
+<text x="281" y="386" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE nur wenn alle Motoren stehen UND alle Motoren</text>
+<text x="351" y="398" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">störungsfrei sind</text>
+<path d="M210,404 L210,414 L215,409 Z" fill="#18519E" stroke="none" />
+<text x="198" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">ZAEHLSTAND</text>
+<text x="281" y="412" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="351" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">0..6, Anzahl aktuell laufender Motoren, s. Konzept</text>
+<path d="M210,430 L210,440 L215,435 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M1</text>
+<text x="281" y="438" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 1</text>
+<path d="M210,456 L210,466 L215,461 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M2</text>
+<text x="281" y="464" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 2</text>
+<path d="M210,482 L210,492 L215,487 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M3</text>
+<text x="281" y="490" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 3</text>
+<path d="M210,508 L210,518 L215,513 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M4</text>
+<text x="281" y="516" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 4</text>
+<path d="M210,534 L210,544 L215,539 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M5</text>
+<text x="281" y="542" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 5</text>
+<path d="M210,560 L210,570 L215,565 Z" fill="#9FA48A" stroke="none" />
+<text x="198" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M6</text>
+<text x="281" y="568" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="351" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 6</text>
+<path d="M-12,94 L-12,565" stroke="#404040" stroke-width="1" />
+<path d="M0,94 L-12,94" stroke="#404040" />
+<rect x="-14" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,565 L-5,565" stroke="#404040" />
+<rect x="-14" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,120 L-20,591" stroke="#404040" stroke-width="1" />
+<path d="M0,120 L-20,120" stroke="#404040" />
+<rect x="-22" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,591 L-5,591" stroke="#404040" />
+<rect x="-22" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-28,146 L-28,617" stroke="#404040" stroke-width="1" />
+<path d="M0,146 L-28,146" stroke="#404040" />
+<rect x="-30" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-28,617 L-5,617" stroke="#404040" />
+<rect x="-30" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-36,172 L-36,643" stroke="#404040" stroke-width="1" />
+<path d="M0,172 L-36,172" stroke="#404040" />
+<rect x="-38" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-36,643 L-5,643" stroke="#404040" />
+<rect x="-38" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-44,198 L-44,669" stroke="#404040" stroke-width="1" />
+<path d="M0,198 L-44,198" stroke="#404040" />
+<rect x="-46" y="196" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-44,669 L-5,669" stroke="#404040" />
+<rect x="-46" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-52,224 L-52,695" stroke="#404040" stroke-width="1" />
+<path d="M0,224 L-52,224" stroke="#404040" />
+<rect x="-54" y="222" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-52,695 L-5,695" stroke="#404040" />
+<rect x="-54" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,42 L222,409" stroke="#404040" stroke-width="1" />
+<path d="M210,42 L222,42" stroke="#404040" />
+<rect x="220" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,331 L215,331" stroke="#404040" />
+<rect x="220" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,357 L215,357" stroke="#404040" />
+<rect x="220" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,409 L215,409" stroke="#404040" />
+<rect x="220" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,383 L215,383" stroke="#404040" />
+<rect x="220" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M230,68 L230,435" stroke="#404040" stroke-width="1" />
+<path d="M210,68 L230,68" stroke="#404040" />
+<rect x="228" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M230,435 L215,435" stroke="#404040" />
+<rect x="228" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M238,94 L238,461" stroke="#404040" stroke-width="1" />
+<path d="M210,94 L238,94" stroke="#404040" />
+<rect x="236" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M238,461 L215,461" stroke="#404040" />
+<rect x="236" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M246,120 L246,487" stroke="#404040" stroke-width="1" />
+<path d="M210,120 L246,120" stroke="#404040" />
+<rect x="244" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M246,487 L215,487" stroke="#404040" />
+<rect x="244" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M254,146 L254,513" stroke="#404040" stroke-width="1" />
+<path d="M210,146 L254,146" stroke="#404040" />
+<rect x="252" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M254,513 L215,513" stroke="#404040" />
+<rect x="252" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M262,172 L262,539" stroke="#404040" stroke-width="1" />
+<path d="M210,172 L262,172" stroke="#404040" />
+<rect x="260" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M262,539 L215,539" stroke="#404040" />
+<rect x="260" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M270,198 L270,565" stroke="#404040" stroke-width="1" />
+<path d="M210,198 L270,198" stroke="#404040" />
+<rect x="268" y="196" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M270,565 L215,565" stroke="#404040" />
+<rect x="268" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

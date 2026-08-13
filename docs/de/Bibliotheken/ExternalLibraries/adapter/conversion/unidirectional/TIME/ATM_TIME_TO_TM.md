@@ -50,7 +50,8 @@ Change-Detection, bei jedem `REQ` erneut.
   Wert in `TIME` um, sondern nimmt einen bereits fertigen `TIME`-Wert entgegen und reicht ihn nur
   als Adapter weiter. Die eigentliche Umrechnung (z. B. von REAL-Sekunden) erfolgt vorher, typisch
   über `iec61131::arithmetic::F_MULTIME` (`T#1s * REAL#Sekunden`) — siehe den `Override_Timer`-
-  Baustein (`adapter::OverrideK`) für ein konkretes Anwendungsbeispiel.
+  SubApp (`FBs::sys`, Getreideannahme-Anwendungscode, nicht Teil dieser Bibliotheks-Doku) für ein
+  konkretes Anwendungsbeispiel.
 - **Kein Event bei unverändertem Wert wird unterdrückt** — anders als z. B. bei
   [AX_ATM_FB_TON](../../../iec61131-3/timers/AX_ATM_FB_TON.md)s `ET`-Ausgang gibt es hier keine
   `E_D_FF`/`E_D_FF_ANY`-Pufferung; jedes `REQ` erzeugt ein neues Adapterereignis.
@@ -67,7 +68,7 @@ Der Baustein ist zustandslos: Jedes `REQ`-Ereignis führt unmittelbar zur Ausgab
   [AX_ATM_FB_TOF](../../../iec61131-3/timers/AX_ATM_FB_TOF.md)/
   [AX_ATM_FB_TP](../../../iec61131-3/timers/AX_ATM_FB_TP.md).
 - Letztes Glied einer Umrechnungskette von REAL-Sekunden zu einem adapterbasierten Zeitwert
-  (`F_MULTIME` → `ATM_TIME_TO_TM`), wie im `Override_Timer`-Baustein (`adapter::OverrideK`).
+  (`F_MULTIME` → `ATM_TIME_TO_TM`), wie im `Override_Timer`-SubApp (`FBs::sys`).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

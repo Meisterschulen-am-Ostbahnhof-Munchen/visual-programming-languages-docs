@@ -70,8 +70,8 @@ aktuellen Werts über `IN`/`CNF`.
   [AX_ATM_FB_TP](../../../iec61131-3/timers/AX_ATM_FB_TP.md) an
   `OSCAT::Basic::POUs::conversion::TIME_TO_REAL` weiterreichen.
 - Erstes Glied einer Rückrechnungskette von einem adapterbasierten Zeitwert zu REAL-Sekunden
-  (`ATM_TM_TO_TIME` → `TIME_TO_REAL` → `F_DIV`), wie im `Override_Timer`-Baustein
-  (`adapter::OverrideK`).
+  (`ATM_TM_TO_TIME` → `TIME_TO_REAL` → `F_DIV`), wie im `Override_Timer`-SubApp (`FBs::sys`,
+  Getreideannahme-Anwendungscode, nicht Teil dieser Bibliotheks-Doku).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

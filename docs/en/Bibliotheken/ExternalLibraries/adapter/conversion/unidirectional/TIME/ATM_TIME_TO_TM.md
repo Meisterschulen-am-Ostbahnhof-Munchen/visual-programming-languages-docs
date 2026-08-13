@@ -47,8 +47,9 @@ carrying the supplied time value — no buffering, no change detection, freshly 
 - **No `REAL_TO_TIME` exists in the standard libraries.** This block does not convert a numeric
   value into `TIME` — it accepts an already-finished `TIME` value and merely forwards it as an
   adapter. The actual conversion (e.g. from REAL seconds) happens beforehand, typically via
-  `iec61131::arithmetic::F_MULTIME` (`T#1s * REAL#seconds`) — see the `Override_Timer` block
-  (`adapter::OverrideK`) for a concrete usage example.
+  `iec61131::arithmetic::F_MULTIME` (`T#1s * REAL#seconds`) — see the `Override_Timer` SubApp
+  (`FBs::sys`, Getreideannahme application code, not part of this library's documentation) for a
+  concrete usage example.
 - **No event is suppressed for an unchanged value** — unlike, say,
   [AX_ATM_FB_TON](../../../iec61131-3/timers/AX_ATM_FB_TON.md)'s `ET` output, there is no
   `E_D_FF`/`E_D_FF_ANY` buffering here; every `REQ` produces a fresh adapter event.
@@ -65,8 +66,7 @@ The block is stateless: every `REQ` event immediately outputs the current `OUT` 
   [AX_ATM_FB_TOF](../../../iec61131-3/timers/AX_ATM_FB_TOF.md)/
   [AX_ATM_FB_TP](../../../iec61131-3/timers/AX_ATM_FB_TP.md).
 - The final step in a conversion chain from REAL seconds to an adapter-based time value
-  (`F_MULTIME` → `ATM_TIME_TO_TM`), as used in the `Override_Timer` block
-  (`adapter::OverrideK`).
+  (`F_MULTIME` → `ATM_TIME_TO_TM`), as used in the `Override_Timer` SubApp (`FBs::sys`).
 
 ## ⚖️ Comparison with Similar Blocks
 

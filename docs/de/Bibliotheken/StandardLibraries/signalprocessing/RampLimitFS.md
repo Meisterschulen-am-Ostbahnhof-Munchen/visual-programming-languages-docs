@@ -38,6 +38,8 @@ Der Funktionsblock `RampLimitFS` dient zur schrittweisen Erhöhung oder Verringe
 ### **Daten-Ausgänge**
 
 - `OUT` (DINT): Aktueller Ausgabewert.
+- `qAtZero` (BOOL): `TRUE`, wenn `OUT` auf oder unter `VAL_ZERO` liegt (unteres Limit erreicht).
+- `qAtFull` (BOOL): `TRUE`, wenn `OUT` auf oder über `VAL_FULL` liegt (oberes Limit erreicht).
 
 ### **Adapter**
 
@@ -67,6 +69,9 @@ Der Ausgabewert wird dabei immer auf die Grenzen `VAL_ZERO` (Minimum) und `VAL_F
 
 - **`INIT` ist Pflicht vor dem ersten Ereignis**:
   Jedes Ereignis liest per `WITH`-Deklaration nur die Dateneingänge ein, die es für seine eigene Berechnung braucht — z. B. liest `UP_SLOW` `SLOW` **und** `VAL_FULL` (für die Begrenzung), `DOWN_SLOW` liest `SLOW` **und** `VAL_ZERO`. Ohne einen vorherigen `INIT`-Aufruf haben diese Werte noch nie einen gültigen Wert erhalten und stehen auf ihrem Vorgabewert 0 — bei `VAL_ZERO` fällt das meist nicht auf, bei `VAL_FULL` klemmt dann aber jeder `UP_SLOW`/`UP_FAST`-Schritt sofort auf 0.
+
+- **Limit-Erkennung über `qAtZero`/`qAtFull`**:
+  Jedes Ereignis (auch `INIT`) berechnet nach der eigentlichen Wertänderung `qAtZero := OUT <= VAL_ZERO` und `qAtFull := OUT >= VAL_FULL` neu und gibt beide über `INITO`/`CNF` mit aus. Damit muss ein aufrufender Baustein nicht selbst prüfen, ob eine Grenze erreicht ist — praktisch z. B. um bei Erreichen einer Grenze eine Bedienfläche auszublenden (siehe `ScrollFS`/`ScrollFS_PHYS` in `isobus::UT::Q`, die genau das für die Scroll-Pfeiltasten nutzen).
 
 ## Zustandsübersicht
 

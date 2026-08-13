@@ -38,6 +38,8 @@ The `RampLimitFS` function block incrementally increases or decreases an output 
 ### **Data Outputs**
 
 - `OUT` (DINT): Current output value.
+- `qAtZero` (BOOL): `TRUE` if `OUT` is at or below `VAL_ZERO` (lower limit reached).
+- `qAtFull` (BOOL): `TRUE` if `OUT` is at or above `VAL_FULL` (upper limit reached).
 
 ### **Adapters**
 
@@ -67,6 +69,9 @@ The output value is always clamped to the boundaries `VAL_ZERO` (minimum) and `V
 
 - **`INIT` is mandatory before the first event**:
   Each event only reads the data inputs it needs for its own calculation, as declared via its `WITH` list — e.g. `UP_SLOW` reads `SLOW` **and** `VAL_FULL` (for clamping), `DOWN_SLOW` reads `SLOW` **and** `VAL_ZERO`. Without a preceding `INIT` call, these values have never been assigned a valid value and sit at their default of 0 — usually unnoticed for `VAL_ZERO`, but for `VAL_FULL` every `UP_SLOW`/`UP_FAST` step then immediately clamps to 0.
+
+- **Limit detection via `qAtZero`/`qAtFull`**:
+  Every event (including `INIT`) recomputes `qAtZero := OUT <= VAL_ZERO` and `qAtFull := OUT >= VAL_FULL` after the actual value change and outputs both alongside `INITO`/`CNF`. A calling block therefore doesn't need to check the limits itself - useful e.g. to hide a control when a limit is reached (see `ScrollFS`/`ScrollFS_PHYS` in `isobus::UT::Q`, which use exactly this for the scroll arrow buttons).
 
 ## State Overview
 

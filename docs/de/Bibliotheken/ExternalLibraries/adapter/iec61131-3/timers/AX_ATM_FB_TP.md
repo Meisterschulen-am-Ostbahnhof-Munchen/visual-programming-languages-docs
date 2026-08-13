@@ -64,7 +64,20 @@ Impuls, nicht retriggerbar).
   `ET` über einen extern angeschlossenen `E_CYCLE`.
 - **`ET`-Events nur bei Wertänderung**, nach demselben Prinzip wie
   [ASSEMBLE_AB_FROM_AX](../../assembling/ASSEMBLE_AB_FROM_AX.md).
-- **`PT.E1` triggert ebenfalls neu.**
+- **`PT` ist live, nicht gelatched — `IN.E1`, `PT.E1` und `REQ` sind für `FB_TP` gleichwertige
+  Auslöser**, genau wie bei [AX_ATM_FB_TON](AX_ATM_FB_TON.md). `PT.D1` liegt als reine
+  Datenverbindung dauerhaft an `FB_TP.PT` an, keine Pufferung/Entprellung im Adapter:
+  - **`PT = 0`**: Der Impuls gilt bei der nächsten Auswertung bereits als abgelaufen — für den
+    Beobachter kann `Q` praktisch keine sichtbare TRUE-Phase haben.
+  - **`PT` wird während des laufenden Impulses verkleinert**, sodass das bereits gelaufene `ET`
+    die neue Sollzeit übersteigt: `Q` wird sofort FALSE.
+  - **`PT` wird während des laufenden Impulses vergrößert**: `Q` bleibt entsprechend länger TRUE.
+  - **Schnell aufeinanderfolgende `PT.E1`-Ereignisse** lösen jeweils eine eigene Auswertung aus,
+    keine Zusammenfassung.
+  - **Vor dem allerersten `PT.E1`** liegt an `FB_TP.PT` der `TIME`-Standardwert `T#0s` an.
+- **Identisches Verhalten in [AX_ATM_FB_TON](AX_ATM_FB_TON.md) und
+  [AX_ATM_FB_TOF](AX_ATM_FB_TOF.md)** — alle drei sind strukturell identisch verdrahtet, nur der
+  intern gewrappte Standardbaustein unterscheidet sich.
 
 ## Zustandsübersicht
 

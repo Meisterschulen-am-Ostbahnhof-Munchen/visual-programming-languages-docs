@@ -61,7 +61,19 @@ back to FALSE does the `PT` countdown run before `Q` drops back to FALSE.
   externally attached `E_CYCLE`.
 - **`ET` events only fire on a value change**, the same principle used by
   [ASSEMBLE_AB_FROM_AX](../../assembling/ASSEMBLE_AB_FROM_AX.md).
-- **`PT.E1` also re-triggers**, so a preset time changed at runtime is picked up immediately.
+- **`PT` is live, not latched — `IN.E1`, `PT.E1`, and `REQ` are equivalent triggers for
+  `FB_TOF`**, exactly as in [AX_ATM_FB_TON](AX_ATM_FB_TON.md). `PT.D1` sits as a plain data
+  connection permanently wired to `FB_TOF.PT`, no buffering/debouncing in the adapter:
+  - **`PT = 0`**: once `IN` has fallen to FALSE, `Q` becomes FALSE immediately at the next
+    evaluation (no visible run-on).
+  - **`PT` is decreased during run-on**, such that the already-elapsed `ET` exceeds the new
+    preset time: `Q` becomes FALSE immediately.
+  - **`PT` is increased during run-on**: `Q` correspondingly stays TRUE longer.
+  - **Rapid consecutive `PT.E1` events** each trigger their own evaluation, no coalescing.
+  - **Before the very first `PT.E1`**, `FB_TOF.PT` reads `TIME`'s default value `T#0s`.
+- **Identical behavior in [AX_ATM_FB_TON](AX_ATM_FB_TON.md) and
+  [AX_ATM_FB_TP](AX_ATM_FB_TP.md)** — all three are structurally wired identically, only the
+  internally wrapped standard block differs.
 
 ## State Overview
 

@@ -63,8 +63,20 @@ erst wenn `IN` wieder auf FALSE fällt, läuft die Zeit `PT` ab, bevor `Q` auf F
   `ET` über einen extern angeschlossenen `E_CYCLE`.
 - **`ET`-Events nur bei Wertänderung**, nach demselben Prinzip wie
   [ASSEMBLE_AB_FROM_AX](../../assembling/ASSEMBLE_AB_FROM_AX.md).
-- **`PT.E1` triggert ebenfalls neu**, sodass eine zur Laufzeit geänderte Sollzeit sofort
-  berücksichtigt wird.
+- **`PT` ist live, nicht gelatched — `IN.E1`, `PT.E1` und `REQ` sind für `FB_TOF` gleichwertige
+  Auslöser**, genau wie bei [AX_ATM_FB_TON](AX_ATM_FB_TON.md). `PT.D1` liegt als reine
+  Datenverbindung dauerhaft an `FB_TOF.PT` an, keine Pufferung/Entprellung im Adapter:
+  - **`PT = 0`**: Nachdem `IN` auf FALSE gefallen ist, wird `Q` bei der nächsten Auswertung sofort
+    FALSE (kein sichtbarer Nachlauf).
+  - **`PT` wird während des Nachlaufs verkleinert**, sodass das bereits gelaufene `ET` die neue
+    Sollzeit übersteigt: `Q` wird sofort FALSE.
+  - **`PT` wird während des Nachlaufs vergrößert**: `Q` bleibt entsprechend länger TRUE.
+  - **Schnell aufeinanderfolgende `PT.E1`-Ereignisse** lösen jeweils eine eigene Auswertung aus,
+    keine Zusammenfassung.
+  - **Vor dem allerersten `PT.E1`** liegt an `FB_TOF.PT` der `TIME`-Standardwert `T#0s` an.
+- **Identisches Verhalten in [AX_ATM_FB_TON](AX_ATM_FB_TON.md) und
+  [AX_ATM_FB_TP](AX_ATM_FB_TP.md)** — alle drei sind strukturell identisch verdrahtet, nur der
+  intern gewrappte Standardbaustein unterscheidet sich.
 
 ## Zustandsübersicht
 

@@ -66,9 +66,30 @@ Intern wird derselbe `FB_TON`-Standardbaustein wie in `AX_FB_TON` verwendet, erg
   [ASSEMBLE_AB_FROM_AX](../../assembling/ASSEMBLE_AB_FROM_AX.md) und
   [AB_AX_SEL_AB](../selection/adapter/AB_AX_SEL_AB.md) — verhindert Event-Flut bei jedem
   `E_CYCLE`-Tick, wenn sich der Zeitwert (je nach Auflösung) gar nicht geändert hat.
-- **`PT.E1` triggert ebenfalls neu.** Ändert die Anwendung die Sollzeit zur Laufzeit (z. B. weil
-  ein OPC-UA-Wert neu geschrieben wurde), wird sofort neu gerechnet, statt auf den nächsten
-  `E_CYCLE`-Tick zu warten.
+- **`PT` ist live, nicht gelatched — `IN.E1`, `PT.E1` und `REQ` sind für `FB_TON` gleichwertige
+  Auslöser.** `PT.D1` liegt als reine Datenverbindung dauerhaft an `FB_TON.PT` an; der Adapter
+  puffert oder entprellt `PT` nicht. `FB_TON` selbst unterscheidet nicht, welches der drei
+  Ereignisse (`IN.E1`, `PT.E1`, `REQ`) die Neuauswertung ausgelöst hat — es wertet in jedem Fall
+  mit dem *aktuellen* `PT` gegen das *aktuelle* `ET` neu aus. Eine zur Laufzeit geänderte Sollzeit
+  ist also nicht an der steigenden Flanke von `IN` eingefroren, sondern wirkt bei der nächsten
+  Auswertung sofort:
+  - **`PT = 0`**: `Q` wird bei der nächsten Auswertung sofort TRUE, da `ET` (≥ 0) die Sollzeit
+    bereits erreicht/überschritten hat.
+  - **`PT` wird während des Timings verkleinert**, sodass das bereits gelaufene `ET` die neue,
+    kleinere Sollzeit übersteigt: `Q` wird bei der nächsten Auswertung sofort TRUE, statt bis zur
+    ursprünglich größeren Sollzeit zu warten.
+  - **`PT` wird während des Timings vergrößert**: `Q` bleibt entsprechend länger FALSE.
+  - **Schnell aufeinanderfolgende `PT.E1`-Ereignisse werden nicht zusammengefasst** — jedes einzelne
+    Ereignis löst eine eigene `FB_TON.REQ`-Auswertung aus, es gibt keine Debounce-Logik im Adapter.
+  - **Vor dem allerersten `PT.E1`** liegt an `FB_TON.PT` der `TIME`-Standardwert `T#0s` an, nicht
+    ein projektspezifischer Default — entspricht dann dem Fall `PT = 0` oben, falls `IN` vorher
+    schon TRUE wird.
+- **Identisches Verhalten in [AX_ATM_FB_TOF](AX_ATM_FB_TOF.md) und
+  [AX_ATM_FB_TP](AX_ATM_FB_TP.md).** Alle drei Bausteine sind strukturell identisch verdrahtet
+  (gleiches `IN.E1`/`PT.E1`/`REQ` → `REQ`-Muster, gleiches `E_D_FF`/`E_D_FF_ANY`-Change-Detection-
+  Muster für `Q`/`ET`) — nur der intern gewrappte Standardbaustein (`FB_TON`/`FB_TOF`/`FB_TP`)
+  unterscheidet sich. Das oben beschriebene `PT`-Verhalten gilt für alle drei gleichermaßen; siehe
+  deren jeweilige Seiten für die timerspezifischen `PT=0`-Grenzfälle.
 - **`adapter::events::unidirectional::timers`-Familie (`AX_TON` etc.) hat keinen `ET`-Ausgang.**
   Wird die verbleibende/abgelaufene Zeit gebraucht (z. B. für einen Countdown in der Visu), ist
   diese `iec61131-3`-Familie erforderlich, nicht die einfachere `events`-Familie.

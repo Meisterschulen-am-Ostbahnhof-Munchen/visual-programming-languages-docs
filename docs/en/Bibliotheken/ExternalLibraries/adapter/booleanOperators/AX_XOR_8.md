@@ -70,6 +70,11 @@ Compared to simple XOR components with fewer inputs, AX_XOR_8 offers the ability
 
 Comparison with [XOR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_8.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_XOR_8 is a specialized logic component for demanding multi-input XOR operations. Its adapter-based interface makes it particularly suitable for modular system designs where flexible connections between functional blocks are required.

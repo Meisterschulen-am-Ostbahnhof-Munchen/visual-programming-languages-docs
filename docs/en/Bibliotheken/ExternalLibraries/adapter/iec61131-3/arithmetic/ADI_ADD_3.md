@@ -81,6 +81,11 @@ The function block operates in a purely stateless (reactive) state:
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ADI_ADD_3` is a practical, generic auxiliary function block for arithmetic operations in modern IEC 61499 control applications. Its consistent use of adapters allows it to integrate seamlessly into clean software architectures and minimizes wiring effort in the development environment.

@@ -97,6 +97,11 @@ The function block operates as a stateless (or purely event-driven) arithmetic b
 * **Cascaded Adders (e.g., 2x `AULI_ADD_2`):** To add three values with classic two-way adders, two components would have to be connected in series. `AULI_ADD_3` eliminates the need for an entire function block and the associated intermediate wiring.
 * ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AULI_ADD_3` is a practical and modern function block for structured programming in 4diac. Thanks to the consistent use of the unidirectional `AULI` adapter, it is ideally suited for clean, clear, and maintainable architectures in distributed control systems according to the IEC 61499 standard.

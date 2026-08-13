@@ -84,6 +84,10 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Sein Verhalten lässt sic
 - **AW_SWITCH:** Ein FB mit ähnlicher Funktion, der jedoch den Eingangswert nicht dupliziert, sondern zwischen verschiedenen Quellen umschaltet (Multiplexer).  
 - **Vorteile des AW_DEMUX_2:** Klare Trennung von Steuerlogik und Datenübergabe, einfache Erweiterbarkeit auf weitere Ausgänge (z. B. AW_DEMUX_4).
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AW_DEMUX_2 ist ein kompakter, generischer Funktionsblock zur Adapter-basierten Demultiplexierung von AW-Werten. Seine ereignisgesteuerte Auswahl und die klare Schnittstellenstruktur machen ihn zu einem flexiblen Baustein für modulare Automatisierungslösungen. Dank der generischen Auslegung kann er leicht an unterschiedliche AW-Typen angepasst werden, ohne die grundlegende Funktionalität zu verändern.

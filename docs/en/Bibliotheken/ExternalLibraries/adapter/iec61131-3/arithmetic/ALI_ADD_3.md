@@ -66,6 +66,11 @@ The function block operates purely stateless. There is no internal state machine
 * **Standard ADD (IEC 61131-3):** A standard ADD component uses classic data and event connections. `ALI_ADD_3`, on the other hand, encapsulates these interfaces in adapters, reducing visual complexity in system design.
 * **Cascaded Dual Adders:** To add three values with conventional dual adders, two components would have to be connected in series. `ALI_ADD_3` eliminates the need for one component as well as the intermediate instantiation and wiring.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 `ALI_ADD_3` is a compact and efficient auxiliary component for 4diac-ide. Through the consistent use of unidirectional adapters, he makes a significant contribution to the creation of clean, modularized and easily readable control code for processing analog signals.

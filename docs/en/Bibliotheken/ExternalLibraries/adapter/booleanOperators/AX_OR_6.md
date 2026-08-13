@@ -68,6 +68,11 @@ Compared to simpler OR components with fewer inputs, the AX_OR_6 offers greater 
 
 Comparison with [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_6 is a specialized logic component for applications requiring a multi-input OR gate. Its adapter-based interface makes it particularly suitable for modular system designs and allows for clear separation of signal paths.

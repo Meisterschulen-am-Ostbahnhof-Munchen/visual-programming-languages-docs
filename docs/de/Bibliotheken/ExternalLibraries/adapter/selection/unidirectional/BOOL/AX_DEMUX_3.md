@@ -78,6 +78,10 @@ Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 * [Uebung_103c](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 * [Uebung_103c2](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AX_DEMUX_3 stellt einen robusten und flexiblen Demultiplexer für verteilte Automatisierungssysteme dar. Durch die Verwendung standardisierter Adapter und die klare Ereignissteuerung eignet er sich besonders für komplexe Datenfluss-Steuerungen in industriellen Anwendungen.

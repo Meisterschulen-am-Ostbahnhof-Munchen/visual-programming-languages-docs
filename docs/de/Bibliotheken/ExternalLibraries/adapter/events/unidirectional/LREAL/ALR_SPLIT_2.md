@@ -57,6 +57,10 @@ Der Baustein besitzt keine Zustandsautomaten. Das Verhalten ist ausschließlich 
 - Im Gegensatz zu datenbasierten Splittern (`MUX`, `F_SPLIT`) findet hier keine Datenmanipulation statt.
 - Es existieren möglicherweise Varianten mit mehr Ausgängen (z.B. `ALR_SPLIT_4`), die eine höhere Anzahl an Verteilungen erlauben.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `ALR_SPLIT_2` ist ein einfacher und effektiver Baustein zur Aufteilung eines eingehenden ALR-Adapter-Signals auf zwei Ausgänge. Aufgrund seiner generischen Natur und der fehlenden Logik eignet er sich ideal für die saubere Signalverteilung in IEC 61499-Systemen.

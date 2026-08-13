@@ -68,6 +68,11 @@ AIWS_SPLIT_4 | 4 | AIWS Adapter | Alternative to **5** |
 
 All split variants are based on the same principle and differ only in the number of output adapters. The **AIWS_SPLIT_5** covers a medium distribution requirement and is particularly advantageous when exactly five parallel outputs are needed.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIWS_SPLIT_5** is a simple yet essential function block for duplicating AIWS adapter signals. Its generic design and the absence of events or data porting allow it to be integrated into existing IEC 61499 applications without additional configuration. Ideal for applications requiring precise distribution of an adapter across up to five independent paths.

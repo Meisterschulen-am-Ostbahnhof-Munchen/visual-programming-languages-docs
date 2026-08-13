@@ -81,6 +81,11 @@ An incorrect index can result in a separate **ERROR** state (not defined in the 
 
 This function block is designed for use in environments where communication occurs via `ATM` adapters and offers a compact solution for 1-out-of-4 selection.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ATM_DEMUX_4** is a specialized, generic demultiplexer for adapter-based control architectures. It enables clean, event-driven selection of one of four output channels and, due to its generic declaration, can be flexibly reused in different projects. For applications that require a standardized point-to-point distribution of ATM messages, it represents an efficient and clear building block.

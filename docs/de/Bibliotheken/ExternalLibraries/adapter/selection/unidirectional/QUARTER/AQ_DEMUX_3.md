@@ -83,6 +83,10 @@ Nach einem gültigen `REQ` wird der Zustand **Processing** durchlaufen, danach s
 
 Der vorliegende Baustein zeichnet sich durch die lose Adapter‑Kopplung und die generische Auslegung aus.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AQ_DEMUX_3** ist ein nützlicher, generischer IEC 61499‑Funktionsbaustein zur verteilten Signalweitergabe auf Basis von AQ‑Adaptern. Mit seiner ereignisgesteuerten Indexumschaltung eignet er sich für flexible Routing‑Aufgaben in der Automatisierungstechnik. Die klare Schnittstelle und die Möglichkeit der generischen Erweiterung machen ihn zu einer guten Wahl, wenn mehrere analoge Signale zeitlich getrennt an verschiedene Empfänger geleitet werden müssen.

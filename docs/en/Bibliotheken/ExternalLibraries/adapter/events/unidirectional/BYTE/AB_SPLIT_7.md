@@ -67,6 +67,11 @@ Due to its generic design, the function block can be used in various contexts on
 - **AB_SPLIT_N**: Generalization with a configurable number of outputs, if available. AB_SPLIT_7 is a fixed 1:7 split.
 - **Direct wiring without a splitter**: If multiple identical copies are needed, the source function block would have to be instantiated multiple times, which increases the design complexity. The splitter reduces redundancy at the adapter connection level.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AB_SPLIT_7** is a simple yet useful function block for multiplying a unidirectional adapter connection. Its generic nature and clear separation of inputs and outputs make it a reusable tool in the 4diac IDE, especially in scenarios requiring parallel signal distribution. It contributes to the modularity and clarity of industrial control applications.

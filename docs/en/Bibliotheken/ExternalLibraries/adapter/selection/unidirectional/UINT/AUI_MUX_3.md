@@ -73,6 +73,11 @@ The function block does not have an explicit internal state machine. Its operati
 - **`AUI_DEMUX`**: A demultiplexer that distributes one input to multiple outputs.
 - **Standard `MUX` function blocks (for basic data types)**: These mostly work with elementary data types (INT, BOOL) and have a comparable selection mechanism, but without an adapter interface.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUI_MUX_3` is a specialized yet flexible multiplexer for the unidirectional AUI adapter. It enables clean, event-driven selection from three sources and is particularly suitable for modular automation solutions based on the adapter concept. Its ease of use and generic parameterization make it a useful tool in the 4diac IDE.

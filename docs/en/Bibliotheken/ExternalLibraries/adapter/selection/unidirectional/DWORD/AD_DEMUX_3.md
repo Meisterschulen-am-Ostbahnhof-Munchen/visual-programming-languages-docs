@@ -71,6 +71,11 @@ Afterward, the FB is ready for the next request.
 - **Multiplexer (e.g., AD_MUX):** A multiplexer switches multiple inputs to one output – precisely the reverse functionality.
 - **Simple Switch:** AD_DEMUX_3 operates without intermediate storage and is therefore particularly suitable for time-critical routing during operation.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AD_DEMUX_3 is a compact, generic demultiplexer for adapter-based interfaces. Its clear event control and simple index selection make it ideal for dynamic signal distribution in distributed automation systems. The fixed number of three outputs covers many typical use cases and enables rapid implementation without unnecessary configuration.

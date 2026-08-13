@@ -67,6 +67,11 @@ Compared to simple split components, the AX_SPLIT_5 offers a fixed number of fiv
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AX_SPLIT_5 is a specialized distribution component whose simple and deterministic operation makes it ideal for applications where a signal needs to be distributed to exactly five receivers. The use of standardized AX adapters ensures compatibility within existing control systems.

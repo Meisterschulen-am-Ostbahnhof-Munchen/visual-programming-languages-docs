@@ -89,6 +89,11 @@ Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 * [Exercise_160b2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 * [Exercise_160b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AX_SPLIT_2 function block provides a simple and efficient solution for distributing AX signals to two outputs. Its generic nature and unidirectional architecture make it a versatile building block. in distributed automation systems.

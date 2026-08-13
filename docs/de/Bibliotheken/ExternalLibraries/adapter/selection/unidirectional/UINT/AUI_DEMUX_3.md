@@ -72,6 +72,10 @@ Eine explizite Zustandsmaschine ist in der XML nicht definiert. Das Verhalten ka
 - **AUI\_MUX** – Der zugehörige Multiplexer, der mehrere Eingänge auf einen Ausgang zusammenführt. Beide ergänzen sich in symmetrischen Datenpfaden.  
 - **Standard IEC 61499-Demultiplexer (z. B. SELECT)** – Diese nutzen meist einfache Datentypen, während AUI\_DEMUX\_3 speziell für das Adapterprotokoll AUI ausgelegt ist und so komplexe strukturierte Datenübertragung ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AUI\_DEMUX\_3 ist ein spezialisierter Funktionsbaustein zur unidirektionalen Demultiplexierung von AUI-Datenströmen auf drei Kanäle. Seine klare ereignisgesteuerte Schnittstelle und der generische Aufbau machen ihn zu einer flexiblen Komponente in IEC-61499-basierten Steuerungssystemen, die eine dynamische Weiterschaltung von Adapterverbindungen erfordern.

@@ -90,6 +90,11 @@ The function block behaves like a classic, stateless (or purely functional) func
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 `ALR_MUL_2` is a specialized, highly efficient function block for modern IEC 61499 architectures. Through its consistent use of adapters, it promotes clean, object-oriented software design in industrial automation and is ideally suited for complex, distributed control tasks.

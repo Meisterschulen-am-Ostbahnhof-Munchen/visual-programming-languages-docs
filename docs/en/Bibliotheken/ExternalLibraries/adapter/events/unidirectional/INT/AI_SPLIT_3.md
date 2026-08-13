@@ -68,6 +68,11 @@ The function block has **no** state machine or internal states. Signals are pass
 
 All split blocks share the common feature of passing the input signal to all outputs without modification. The AI_SPLIT_3 represents a typical 3-way split.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AI_SPLIT_3** is a simple yet effective block for multiplying an analog signal to three outputs. Its generic nature and the use of adapters allow it to integrate seamlessly into adapter-based 4diac applications. It is ideally suited for applications where an AI value needs to be distributed to multiple devices without requiring additional logic or configuration.

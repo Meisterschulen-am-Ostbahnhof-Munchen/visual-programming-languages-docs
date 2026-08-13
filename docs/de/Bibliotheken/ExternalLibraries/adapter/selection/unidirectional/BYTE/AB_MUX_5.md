@@ -81,6 +81,10 @@ Damit ist der FB deterministisch und arbeitet ohne Verzögerungen außer der int
 
 Der AB_MUX_5 ist speziell für Adapterverbindungen optimiert und bietet eine klare Trennung von Ereignissteuerung und Datenpfad.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AB_MUX_5** ist ein kompakter und wiederverwendbarer Funktionsbaustein zur Adapter-Multiplexierung. Er ermöglicht die Auswahl eines von fünf eingehenden Adapterkanälen über einen numerischen Index und eignet sich ideal für Systeme, die mehrere gleichartige Schnittstellen dynamisch umschalten müssen. Dank seiner generischen Implementierung und der Lizenz unter EPL 2.0 kann er in verschiedenen Automatisierungsumgebungen eingesetzt werden.

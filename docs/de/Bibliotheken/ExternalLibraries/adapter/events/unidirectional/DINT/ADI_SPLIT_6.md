@@ -64,6 +64,10 @@ Der Baustein verfügt über keinen Zustandsautomaten oder explizite Betriebszust
 - **ADI_MERGE / ADI_COMBINE:** Während dieser Baustein ein Signal verteilt, fassen andere Bausteine mehrere Adapter-Eingänge zu einem Ausgang zusammen.
 - **Weitere Splitter-Varianten:** Es existieren möglicherweise Splitter für andere Adapter-Typen (z. B. bidirektionale ADI). Der vorliegende FB beschränkt sich auf unidirektionale Signale.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `ADI_SPLIT_6` ist ein einfacher aber effektiver Baustein zur Vervielfachung unidirektionaler ADI-Adapter-Signale. Durch die generische Auslegung und die geringe Komplexität eignet er sich hervorragend für den modularen Aufbau von Steuerungsanwendungen im Eclipse 4diac Umfeld. Seine Einsatzmöglichkeiten reichen von der reinen Signalverteilung bis hin zu Test- und Redundanzszenarien.

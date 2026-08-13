@@ -62,6 +62,11 @@ This FB does not contain a state machine. It operates in a data-driven manner an
 - **General split function blocks:** Other split function blocks exist for data types (e.g., INT_SPLIT), but these are designed for specific data formats. This function block operates exclusively at the adapter level, making it more flexible when data exchange occurs via adapters.
 - **Custom Implementation:** Alternatively, the distribution could also be achieved by manually wiring multiple adapter nodes, but this reduces clarity and maintainability.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AR_SPLIT_6** is a simple yet useful generic function block for multiplying an AR adapter signal into six parallel outputs. It is characterized by minimal complexity, a clear structure, and high reusability in automation projects based on the 4diac IDE and the IEC 61499 standard.

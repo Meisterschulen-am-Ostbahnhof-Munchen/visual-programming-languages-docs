@@ -86,6 +86,11 @@ There are no internal variables that store a state.
 
 The **AI_MUX_2** is specifically designed for analog (AI) signals via adapters and is therefore easier to integrate into complex automation systems that rely on adapter communication than a standardized SEL module.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AI_MUX_2** is a simple yet effective function block for event-driven switching between two analog signals. It utilizes the adapter concept of the 61499-2 standard to ensure a clean separation of data and event flows. Its generic design allows for easy adaptation to customer-specific requirements. The FB is particularly suitable for modular control architectures where analog signal path switching is required.

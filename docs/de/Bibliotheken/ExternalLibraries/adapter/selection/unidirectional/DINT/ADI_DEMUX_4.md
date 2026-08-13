@@ -79,6 +79,10 @@ Der Baustein besitzt keine expliziten Zustände. Das Verhalten kann als einfache
 | `DEMUX_2` / `DEMUX_8` | Demultiplexer mit anderer Kanalzahl | `ADI_DEMUX_4` bietet genau vier Ausgänge; andere Varianten passt man durch eigene Adapter oder generische Parameter an |
 | `SELECT` (IEC‑Standard) | Auswahl zwischen zwei Werten (boolesche Steuerung) | Arbeitet mit einfachen Datentypen, nicht mit Adaptern; weniger flexibel hinsichtlich unterschiedlicher Datenquellen |
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `ADI_DEMUX_4` ist ein kompakter, generischer Demultiplexer für die ereignisgesteuerte Verteilung von Adapterdaten. Dank der unidirektionalen Adapter‑Schnittstelle und der generischen Auslegung eignet er sich hervorragend für modulare Automatisierungslösungen, bei denen Datenflüsse dynamisch umgeschaltet werden müssen. Die einfache Schnittstelle – ein Ereignis, ein Index und fünf Adapter – ermöglicht eine unkomplizierte Integration in größere Steuerungssysteme.

@@ -75,6 +75,11 @@ The function block does not have an explicit state machine. The response occurs 
 - **Generic variants** such as `AUI_DEMUX_n` (with n > 2) increase the number of outputs but retain the same logic.
 - **Adapter-based alternatives** may require more complex cabling but offer greater flexibility in data storage.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AUI_DEMUX_2` is a compact, generic demultiplexer for two AUI outputs. It is particularly suitable for applications where an incoming AUI data stream needs to be routed to one of two paths using an index. Thanks to its generic nature, it can be used for different AUI types without any code changes.

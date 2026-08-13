@@ -74,6 +74,10 @@ Da es sich bei `AI_MUL_4` um einen rein mathematischen, daten- und ereignisgeste
 *   **Standard-MUL (IEC 61131-3):** Klassische Multiplikationsbausteine arbeiten meist nur mit elementaren Datentypen (z. B. `REAL`, `INT`) und benötigen separate Event-Leitungen (`REQ` / `CNF`). Zudem unterstützen sie oft standardmäßig nur zwei Eingänge. `AI_MUL_4` hingegen verarbeitet vier Eingänge direkt und nutzt Adapter zur Kapselung, was das Netzwerklayout übersichtlicher macht.
 *   **AI_MUL_2:** Ein ähnlicher adapterbasierter Baustein, jedoch nur für zwei Eingänge. `AI_MUL_4` spart bei komplexeren Berechnungen mit bis zu vier Faktoren zusätzlichen Verdrahtungsaufwand und Baustein-Instanzen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AI_MUL_4`-Funktionsbaustein bietet eine effiziente und saubere Möglichkeit, komplexe Multiplikationsaufgaben mit bis zu vier analogen Signalen in 4diac-IDE zu realisieren. Durch die konsequente Nutzung von unidirektionalen Adaptern wird der Verkabelungsaufwand minimiert und die Lesbarkeit des Applikationsdesigns signifikant verbessert.

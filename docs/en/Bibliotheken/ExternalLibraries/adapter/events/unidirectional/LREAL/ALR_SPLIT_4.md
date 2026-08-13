@@ -57,6 +57,11 @@ The function block does not have its own states. Signal transmission is continuo
 - **Event Splitters**: Split events but operate at the event level only. ALR_SPLIT_4, on the other hand, distributes complete adapter signals (events and data encapsulated).
 - **Data Splitters**: Distribute individual data values, but without adapter encapsulation. ALR_SPLIT_4 is specifically optimized for use with unidirectional ALR adapter types.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **ALR_SPLIT_4** is a simple yet essential component for multiplying adapter connections. Its generic design allows it to be used with various ALR adapter types without requiring any modification to the block logic. It is particularly suitable for modular architectures where a signal needs to be distributed to multiple receivers in parallel.

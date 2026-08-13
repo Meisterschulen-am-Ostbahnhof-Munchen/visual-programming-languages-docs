@@ -76,6 +76,11 @@ Comparison with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)]
 * [Exercise_103c](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)]
 * [Exercise_103c2](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AX_DEMUX_3 is a robust and flexible demultiplexer for distributed automation systems. Its use of standardized adapters and clear event-driven control make it particularly suitable for complex data flow control in industrial applications.

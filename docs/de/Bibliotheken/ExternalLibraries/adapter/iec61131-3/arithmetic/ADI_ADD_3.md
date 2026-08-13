@@ -82,6 +82,10 @@ Der Funktionsbaustein verhält sich rein zustandslos (reaktiv):
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ADI_ADD_3` ist ein praktischer, generischer Hilfsbaustein für arithmetische Operationen in modernen IEC 61499 Steuerungsanwendungen. Durch die konsequente Nutzung von Adaptern fügt er sich nahtlos in saubere Software-Architekturen ein und minimiert den Verdrahtungsaufwand in der Entwicklungsumgebung.

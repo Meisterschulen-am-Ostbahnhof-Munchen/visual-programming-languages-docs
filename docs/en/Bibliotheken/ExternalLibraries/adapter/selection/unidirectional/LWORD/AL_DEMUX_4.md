@@ -79,6 +79,11 @@ The function block has no modeled states, as it operates purely event-driven. Th
 - **`AL_MUX_4`:** The multiplexer counterpart (`AL_MUX_4`) combines multiple inputs into one output. `AL_DEMUX_4` implements the reverse.
 - **Generic MUX/DEMUX:** The IEC 61449-2 standard usually offers MUX components for scalar data, but without adapter support. `AL_DEMUX_4` fills this gap for unidirectional adapters.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AL_DEMUX_4** is a compact and effective function block for signal distribution based on adapters. Its clear event control and limitation to four outputs make it particularly suitable for manageable automation tasks where a single analog or logic signal needs to be selectively routed to different locations. Its generic design allows for use with various adapter types and increases reusability.

@@ -57,6 +57,11 @@ The function block (FB) does not have an explicit state machine. It operates in 
 
 The IEC 61499 standard often offers multiplexer FBs with direct data inputs. The AUDI_MUX_4, however, uses adapters, enabling flexible coupling with other function blocks that support the AUDI adapter interface. This increases reusability and allows for consistent data transmission across adapters.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AUDI_MUX_4 is a useful generic multiplexer for adapter-based systems. It allows the selection of one of four inputs via an index and is particularly suitable for modular automation solutions where a clear separation of event and data flows is desired.

@@ -65,6 +65,10 @@ Der Baustein besitzt keine Zustände oder ECC‑Zustandsdiagramme. Die Ausführu
 - **Klassischer MUL‑FB** (mit Ereignis‑/Datenports): Arbeitet ereignisgesteuert und benötigt explizite Dateneingänge/-ausgänge. `AUDI_MUL_2` hingegen verwendet Adapter, was eine flexiblere Verschaltung ermöglicht.
 - **Andere generische Arithmetik‑Bausteine** (z. B. `AUDI_ADD_2`): Gleiche Struktur, aber mit anderer Operation. Das Adapter‑Interface bleibt identisch, sodass eine einfache Austauschbarkeit gegeben ist.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AUDI_MUL_2` ist ein generischer, adapterbasierter Multiplikationsbaustein für IEC 61499‑Anwendungen. Durch den Verzicht auf Ereignisse und die Nutzung typisierter Adapter eignet er sich besonders für datenflussorientierte und lose gekoppelte Systeme. Die generische Ausprägung erlaubt den Einsatz mit verschiedenen numerischen Datentypen, ohne dass der Baustein selbst angepasst werden muss.

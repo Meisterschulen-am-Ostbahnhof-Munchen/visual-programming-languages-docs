@@ -76,6 +76,10 @@ Der Baustein verfügt über keinen expliziten Zustandsautomaten in der XML-Besch
 - **Multiplexer (`AIS_MUX_2`)**: Der Multiplexer führt mehrere AIS-Eingänge zu einem Ausgang zusammen; der Demultiplexer stellt die Umkehrfunktion dar.
 - **Vorteile**: Die Verwendung von Adaptern erlaubt eine lose Kopplung und einfache Wiederverwendung in verschiedenen Anwendungen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AIS_DEMUX_2** ist ein spezialisierter, generischer Funktionsblock zur Demultiplexierung von AIS-Signalen. Er bietet eine klare, ereignisgesteuerte Schnittstelle mit Adaptern und eignet sich besonders für den Einsatz in der Agrartechnik und anderen Bereichen, in denen unidirektionale AIS-Daten verteilt werden müssen. Durch seine Lizenzierung als EPL 2.0 ist er offen und erweiterbar.

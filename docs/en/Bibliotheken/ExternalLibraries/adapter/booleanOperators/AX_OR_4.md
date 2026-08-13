@@ -66,6 +66,11 @@ Compared to simpler OR function blocks, the AX_OR_4 offers the advantage of four
 
 Comparison with [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_4 is an efficient and compact function block for four-input logical OR gates. Its adapter-based interface allows for flexible integration into larger control systems, while its continuous operation ensures an immediate response to input changes.

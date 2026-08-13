@@ -82,6 +82,10 @@ Der Baustein `ALI_ADD_4` ist ein zustandsloser (kombinatorischer) Funktionsbaust
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Funktionsbaustein `ALI_ADD_4` bietet eine elegante und saubere Möglichkeit, vier analoge Werte innerhalb einer adapterbasierten 4diac-Applikation zu addieren. Durch die Kapselung von Daten- und Eventkanälen in `ALI`-Adaptern unterstützt er die Erstellung modularer, übersichtlicher und leicht wartbarer Steuerungssoftware.

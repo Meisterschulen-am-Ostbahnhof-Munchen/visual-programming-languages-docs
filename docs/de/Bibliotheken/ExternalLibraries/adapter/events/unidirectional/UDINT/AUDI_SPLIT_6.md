@@ -63,6 +63,10 @@ Es existiert kein Zustandsautomat (ECC). Der Baustein führt keine sequenziellen
 
 Es existieren andere Split-Bausteine (z. B. `AUDI_SPLIT_2`, `AUDI_SPLIT_4`), die sich lediglich in der Anzahl der Ausgänge unterscheiden. Der `AUDI_SPLIT_6` bietet mit sechs Ausgängen eine höhere Verteilungsdichte. Im Gegensatz zu reinen Daten-Splittern für Basisdatentypen arbeitet dieser FB ausschließlich mit AUDI-Adaptern und berücksichtigt die unidirektionale Kopplung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AUDI_SPLIT_6` ist ein einfacher, aber flexibler Baustein zur Vervielfachung von Adapterverbindungen in einer 4diac-Umgebung. Seine generische Natur und die schlanke Implementierung ohne Ereignis-Overhead machen ihn ideal für Szenarien, in denen ein eingehender Datenstrom an mehrere unabhängige Empfänger verteilt werden muss.

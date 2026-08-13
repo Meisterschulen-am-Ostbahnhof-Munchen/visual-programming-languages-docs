@@ -87,6 +87,10 @@ Der Funktionsbaustein arbeitet als zustandsloser (bzw. rein ereignisgesteuerter)
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AULI_ADD_3` ist ein praktischer und moderner Funktionsbaustein für die strukturierte Programmierung in 4diac. Durch die konsequente Nutzung des unidirektionalen `AULI`-Adapters eignet er sich ideal für saubere, übersichtliche und wartbare Architekturen in verteilten Steuerungssystemen nach dem IEC 61499-Standard.

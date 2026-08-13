@@ -58,6 +58,10 @@ Der Baustein besitzt keinen internen Zustand. Sein Verhalten ist vollständig st
 
 Gegenüber einem allgemeinen `AUDI_MERGE` (der mehrere Eingänge zu einem Ausgang zusammenführt) oder einem `AUDI_SELECT` (der zwischen mehreren Eingängen umschaltet) bietet der Split-Baustein die exakte Umkehrfunktion: Vervielfältigung statt Zusammenführung oder Selektion. Im Vergleich zu einem eigenen, in Software realisierten Split (z. B. durch mehrfache Verbindung eines Ausgangs in der Applikation) gewährleistet der FB eine saubere, typisierte und wiederverwendbare Schnittstelle und vermeidet potenzielle Mehrfachverbindungsfehler im Editor.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AUDI_SPLIT_9` ist ein einfacher, aber nützlicher Funktionsbaustein zur Vervielfältigung von AUDI-Signalen. Seine Implementation als generischer Typ und die klare Trennung von Eingang und neun Ausgängen erleichtert den Aufbau modularer Automatisierungslösungen. Aufgrund seiner statischen Natur ist er besonders geeignet für datenflussorientierte Anwendungen, bei denen keine Ereignissteuerung erforderlich ist.

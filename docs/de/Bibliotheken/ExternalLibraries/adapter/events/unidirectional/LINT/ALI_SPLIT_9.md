@@ -70,6 +70,10 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Sein Verhalten ist rein d
 - **ALI_MERGE** (hypothetisch): Fasst mehrere ALI-Eingänge zu einem Ausgang zusammen – gegenteilige Funktion.
 - **Ereignisbasierte Splitter**: Andere Bausteine nutzen Ereignisse zur Steuerung des Signalflusses; dieser Adapter-Splitter arbeitet signalgetrieben ohne Ereignislogik.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **ALI_SPLIT_9** ist ein spezialisierter, generischer Adapter-FB, der in der industriellen Automatisierung mit 4diac-IDE die einfache und zuverlässige Verteilung eines unidirektionalen ALI-Signals auf bis zu neun separate Empfänger ermöglicht. Durch seine reine Adapterschnittstelle ist er besonders ressourcenschonend und eignet sich ideal für sternförmige Vernetzungstopologien in IEC 61499-basierten Systemen. Der generische Charakter erlaubt eine flexible Anpassung an spezifische Typanforderungen ohne Änderung der Bausteinstruktur.

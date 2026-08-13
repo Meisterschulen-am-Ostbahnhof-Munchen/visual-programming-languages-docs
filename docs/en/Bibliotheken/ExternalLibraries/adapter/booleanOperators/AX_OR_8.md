@@ -76,6 +76,11 @@ Compared to simple OR function blocks with fewer inputs, AX_OR_8 offers the abil
 
 Comparison with [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_8 function block represents an efficient solution for complex OR logic operations with up to eight inputs. Due to the use of standard adapters and its generic implementation, it is particularly suitable for reusable control logic in industrial automation applications.

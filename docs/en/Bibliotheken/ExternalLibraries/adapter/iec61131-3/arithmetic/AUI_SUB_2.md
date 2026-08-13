@@ -87,6 +87,11 @@ Compared to a standard subtraction block (such as the classic `SUB` block from t
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUI_SUB_2` is a highly efficient, clear, and modern function block for performing subtractions. Through the consistent use of adapters, it integrates seamlessly into service-oriented and modularized control concepts and contributes to a clean software design in the 4diac IDE.

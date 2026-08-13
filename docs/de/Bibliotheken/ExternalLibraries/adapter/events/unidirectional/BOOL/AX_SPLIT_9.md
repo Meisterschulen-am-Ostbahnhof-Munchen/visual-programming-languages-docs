@@ -66,6 +66,10 @@ Im Vergleich zu einfacheren Splitter-Blöcken bietet AX_SPLIT_9 eine höhere Anz
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AX_SPLIT_9 Funktionsblock stellt eine effiziente Lösung für die parallele Verteilung unidirektionaler Adaptersignale dar. Seine generische Natur und die hohe Anzahl an Ausgängen machen ihn besonders geeignet für komplexe Steuerungsanwendungen, bei denen ein Signal an multiple Empfänger verteilt werden muss.

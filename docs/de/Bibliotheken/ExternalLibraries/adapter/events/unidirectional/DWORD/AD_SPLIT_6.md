@@ -62,6 +62,10 @@ Der Funktionsblock besitzt keine internen Zustände oder Zustandsautomaten. Er v
 
 Andere Splitt-Bausteine wie `AD_SPLIT_2`, `AD_SPLIT_4` oder `AD_SPLIT_8` unterscheiden sich lediglich in der Anzahl der Ausgänge. `AD_SPLIT_6` bietet mit sechs Ausgängen einen Mittelweg zwischen den varianten. Es existieren auch Bausteine mit zusätzlicher Logik (z.B. bedingte Verteilung), die jedoch hier nicht vorliegt.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AD_SPLIT_6` ist ein einfacher, aber nützlicher generischer Funktionsblock zur 1:6-Verteilung eines AD-Adapters. Seine klare Schnittstelle und das Fehlen von Zustandslogik machen ihn leicht verständlich und effizient für die Verteilungsaufgaben in IEC 61499-basierten Anwendungen.

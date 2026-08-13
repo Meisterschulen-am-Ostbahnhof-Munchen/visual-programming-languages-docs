@@ -59,6 +59,11 @@ The function block does not have an explicit state machine. Its behavior is dete
 
 Unlike function blocks such as `AUDI_MERGE_5` (combining multiple signals) or `AUDI_SPLIT_2` (only two outputs), `AUDI_SPLIT_5` offers a specific distribution across exactly five outputs. Generic split function blocks for other numbers (e.g., `AUDI_SPLIT_N`) often exist as templates, while this function block covers a fixed, but frequently required, configuration.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AUDI_SPLIT_5` is a simple and efficient adapter function block for signal distribution. Its generic design and the absence of event/data logic make it lightweight and versatile. It is ideally suited for all applications where an audio signal needs to be split across five parallel paths.

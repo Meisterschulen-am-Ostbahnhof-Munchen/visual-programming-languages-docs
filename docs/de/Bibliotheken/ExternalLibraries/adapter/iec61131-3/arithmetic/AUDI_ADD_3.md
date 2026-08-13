@@ -61,6 +61,10 @@ Der FB besitzt keine Zustandsmaschine (keine ECC-Elemente in der XML). Das Verha
 - **MUL_3:** Multipliziert drei Werte – im Gegensatz zur Addition.
 Alle genannten Bausteine verwenden das gleiche Adapter-Konzept und sind generisch.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUDI_ADD_3` ist ein flexibler, generischer Funktionsblock für die Addition von drei Werten. Seine reine Adapter-Schnittstelle und die Zustandslosigkeit machen ihn einfach in der Handhabung und ideal für modulare Automatisierungslösungen auf Basis von IEC 61499.

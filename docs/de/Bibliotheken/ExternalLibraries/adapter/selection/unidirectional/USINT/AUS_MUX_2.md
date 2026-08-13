@@ -76,6 +76,10 @@ Eine explizite Zustandsmaschine ist in der XML nicht hinterlegt. Der Baustein ar
 - **Ereignis-MUX (z. B. MUX_2)** – Wählt zwischen zwei Ereignispfaden; hier liegt der Fokus auf dem Adaptersignal.
 - **Daten-Multiplexer (z. B. SEL, MUX_INT)** – Arbeiten mit einfachen Datentypen (INT, BOOL) und haben separate Ausgangsvariablen. `AUS_MUX_2` nutzt dagegen komplette Adapter-Schnittstellen, was eine gekapselte Übergabe komplexer Informationen ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUS_MUX_2` ist ein kompakter, adapterbasierter Funktionsblock zur Auswahl eines von zwei AUS-Signalen. Durch den generischen Aufbau und die klare Ereignissteuerung eignet er sich besonders für modulare Automatisierungslösungen im Umfeld der IEC 61499, wo standardisierte Adapter für den Datenaustausch verwendet werden.

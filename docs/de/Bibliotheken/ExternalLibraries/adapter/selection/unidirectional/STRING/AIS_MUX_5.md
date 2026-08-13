@@ -77,6 +77,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Das Verhalten ist r
 Im Gegensatz zu einfachen Multiplexern mit einzelnen Daten‑Ein‑ und Ausgängen arbeitet `AIS_MUX_5` auf Adapter‑Ebene. Das ermöglicht die Weitergabe kompletter Datenpakete oder komplexer Zustände, ohne dass der Anwender die interne Datenstruktur kennen muss.  
 Vergleichbare Bausteine existieren für andere Adaptertypen (z. B. `AIS_MUX_2`, `AIS_MUX_10`), die sich lediglich in der Anzahl der Eingänge unterscheiden.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AIS_MUX_5** ist ein einfacher und dennoch leistungsfähiger Adapter‑Multiplexer für fünf Eingänge. Seine generische Natur und die reine Adapter‑Schnittstelle machen ihn zu einer universellen Komponente für die flexible Kopplung von AIS‑basierten Datenströmen in IEC‑61499‑Applikationen.

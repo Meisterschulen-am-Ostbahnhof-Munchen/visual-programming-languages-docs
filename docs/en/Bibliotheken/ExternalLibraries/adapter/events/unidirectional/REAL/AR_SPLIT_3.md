@@ -68,6 +68,11 @@ The function block is **stateless** (combinatorial). There are no internal state
 
 Unlike dedicated splitters with data or event inputs/outputs, the `AR_SPLIT_3` operates exclusively via adapters, making it particularly flexible and type-independent.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **AR_SPLIT_3** is a simple yet useful generic function block for distributing adapter signals to multiple outputs. It reduces the effort required for signal duplication in IEC 61499 applications and, due to its generic nature, contributes to the reusability and clarity of control logic. Thanks to its pure adapter approach, it can be integrated into a wide variety of environments without modification.

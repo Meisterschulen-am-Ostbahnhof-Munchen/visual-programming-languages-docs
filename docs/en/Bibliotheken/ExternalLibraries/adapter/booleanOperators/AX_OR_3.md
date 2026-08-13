@@ -73,6 +73,11 @@ Comparison with [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR
 * [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)]
 * [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_3 function block provides an efficient solution for three-input OR logic operations. Its adapter-based interface allows for flexible integration into various control architectures and makes it particularly suitable for applications where multiple conditions can be met alternatively.

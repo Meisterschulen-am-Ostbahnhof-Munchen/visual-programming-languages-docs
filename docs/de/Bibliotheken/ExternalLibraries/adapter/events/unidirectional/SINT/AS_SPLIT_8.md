@@ -66,6 +66,10 @@ Nicht zutreffend – der Baustein besitzt keine internen Zustände oder Ablaufst
 - **Ereignisbasierte Splitter (z. B. E_SPLIT)**: Diese arbeiten mit Ereignissen und verteilen diese zeitlich gesteuert. Der vorliegende Baustein verteilt dagegen dauerhaft die gesamten Adapterdaten ohne Ereigniskontrolle.
 - **Daten-basierte Splitter (z. B. ANY_DISTRIBUTE)**: Trennen Datenwerte auf, benötigen aber zusätzliche Ereignisse. AS_SPLIT_8 ist für reine Adapter-Weiterleitungen optimiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AS_SPLIT_8** ist ein einfacher, aber nützlicher Adapterverteiler, der ohne zusätzliche Logik einen eingehenden AS-Datenstrom auf acht Ausgänge dupliziert. Sein generischer Charakter und die klare Struktur machen ihn zu einer soliden Lösung für Szenarien, in denen ein Adaptersignal mehrfach verwendet werden muss. Die Dokumentation des Bausteins erhebt keinen Anspruch auf Vollständigkeit hinsichtlich der Implementierungsdetails; die genaue Funktionalität kann je nach verwendeter Laufzeitumgebung variieren.

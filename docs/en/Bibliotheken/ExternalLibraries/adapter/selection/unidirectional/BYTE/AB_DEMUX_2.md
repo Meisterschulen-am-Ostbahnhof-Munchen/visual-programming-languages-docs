@@ -82,6 +82,11 @@ The function block does not have explicit states in the sense of a state machine
 
 The **AB_DEMUX_2** is characterized by its ease of use with only two outputs and direct adapter coupling. In contrast to an event-driven demultiplexer, it forwards complete adapter signals (including all embedded data).
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AB_DEMUX_2** is a compact, event-driven demultiplexer for unidirectional AB adapters. Its clear separation of event control and data forwarding makes it ideal for modular automation solutions where a data stream needs to be switched between two destinations. Its generic design allows for use in various contexts, while the simple interface ensures reliable integration into existing 4diac projects.

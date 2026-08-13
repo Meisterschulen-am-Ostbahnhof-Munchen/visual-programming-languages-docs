@@ -72,6 +72,11 @@ Compared to other splitter blocks, AX_SPLIT_6 offers a fixed number of six outpu
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AX_SPLIT_6 is a specialized distribution module ideally suited for applications where a signal needs to be distributed to exactly six receivers. Its simple structure and the use of standardized AX adapters make it a reliable solution for signal distribution tasks in automation systems.

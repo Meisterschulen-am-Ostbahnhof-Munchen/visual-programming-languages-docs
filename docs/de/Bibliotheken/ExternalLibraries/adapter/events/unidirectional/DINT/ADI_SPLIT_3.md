@@ -65,6 +65,10 @@ Der Baustein besitzt keine internen Zustände. Seine Funktionalität beschränkt
 
 Der `ADI_SPLIT_3` ist speziell für den Fall optimiert, dass genau drei identische Kopien eines ADI-Signals benötigt werden. Falls mehr oder weniger Ausgänge erforderlich sind, können andere Splitter-Varianten oder Kombinationen eingesetzt werden.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **ADI_SPLIT_3** ist ein einfacher, aber nützlicher generischer Baustein zur Vervielfachung von ADI-Datenströmen auf drei Wege. Durch seine reine Adapter-Schnittstelle lässt er sich nahtlos in bestehende 4diac-Projekte integrieren, ohne zusätzliche Ereignis- oder Datenverarbeitung zu erfordern. Er eignet sich besonders für passive Signalverteilungen in modularen, adapterbasierten Automatisierungslösungen.

@@ -69,6 +69,11 @@ The module does not have a complex internal state machine (ECC). Processing is e
 
 Compared to standard IEC 61131-3 addition components (such as a classic `ADD` component with discrete inputs), the `AUI_ADD_2` eliminates the need for separate wiring of REQ/CNF events and the actual data lines. This reduces the potential for errors when manually creating event-data associations (WITH connections).
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUI_ADD_2` is a highly efficient, modular component for mathematical addition in modern IEC 61499 systems. Through the consistent use of adapters, he promotes a clear, error-resistant and easily maintainable application design in the 4diac IDE.

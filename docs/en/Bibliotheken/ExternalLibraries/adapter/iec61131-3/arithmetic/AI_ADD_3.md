@@ -85,6 +85,11 @@ While standard adders typically only support two inputs, the `AI_ADD_3` eliminat
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AI_ADD_3` is a modular and user-friendly auxiliary module for efficient analog signal processing. Its consistent use of adapters significantly reduces the visual "spaghetti wiring" in 4diac applications and contributes to a high-performance, event-driven control architecture.

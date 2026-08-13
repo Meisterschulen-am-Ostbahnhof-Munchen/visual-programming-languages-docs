@@ -65,6 +65,10 @@ Der FB besitzt keine Zustandsautomaten. Das Verhalten ist zeitlos und gleichblei
 - **AS_SPLIT_2:** Gleiche Funktionalität, aber nur zwei Ausgänge. `AS_SPLIT_4` erweitert dies auf vier.
 - **Ereignis-basierte Splitter (z. B. E_SPLIT):** Arbeiten mit Ereignis- und Dateneingängen/-ausgängen und verbreiten Ereignisse. `AS_SPLIT_4` operiert dagegen auf Adapterebene und leitet den gesamten Adaptervertrag (inkl. aller darin enthaltenen Ereignisse und Daten) weiter.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AS_SPLIT_4` ist ein einfacher, aber essentieller Baustein zur strukturellen Vervielfältigung von unidirektionalen AS-Adapterverbindungen in 4diac-Anwendungen. Seine generische Auslegung und die reine Adapterschnittstelle machen ihn ideal für modulare und skalierbare Steuerungsarchitekturen.

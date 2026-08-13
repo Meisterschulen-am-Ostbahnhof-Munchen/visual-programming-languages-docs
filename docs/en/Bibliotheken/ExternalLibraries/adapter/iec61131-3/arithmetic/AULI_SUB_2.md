@@ -86,6 +86,11 @@ Compared to a standard subtraction function block (e.g., `SUB` from the IEC 6113
 
 --
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AULI_SUB_2` is a robust and reusable function block for subtraction. Through the consistent use of adapters, it promotes a clean, well-organized, and maintainable application design in the 4diac IDE.

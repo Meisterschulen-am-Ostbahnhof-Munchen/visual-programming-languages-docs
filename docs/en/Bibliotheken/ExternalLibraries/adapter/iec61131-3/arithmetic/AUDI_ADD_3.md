@@ -61,6 +61,11 @@ The function block (FB) does not have a state machine (no ECC elements in the XM
 
 All of the above blocks use the same adapter concept and are generic.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUDI_ADD_3` is a flexible, generic function block for adding three values. Its pure adapter interface and stateless nature make it easy to use and ideal for modular automation solutions based on IEC 61499.

@@ -85,6 +85,10 @@ Eine Zustandsmaschine ist im XML nicht explizit definiert, entspricht aber dem t
 
 Der **AD_DEMUX_5** hebt sich durch seine rein adaptergestützte Schnittstelle hervor, die eine lose Kopplung und flexible Typanpassung über generische Adapterdefinitionen ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AD_DEMUX_5** ist ein kompakter und effizienter Funktionsblock zur Adapter‑Demultiplexierung. Er erlaubt die dynamische Auswahl eines von fünf Ausgangskanälen und eignet sich besonders für Systeme, die auf unidirektionale Adapterverbindungen setzen. Durch seine generische Auslegung kann er in verschiedenen Automatisierungsumgebungen ohne Anpassung der inneren Logik wiederverwendet werden. Der Baustein vereinfacht die Implementierung von Umschaltlogiken auf Adapterebene und trägt zu einer übersichtlicheren, modularen Systemarchitektur bei.

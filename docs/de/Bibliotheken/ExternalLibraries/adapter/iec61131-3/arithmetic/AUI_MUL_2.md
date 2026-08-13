@@ -83,6 +83,10 @@ Der Funktionsbaustein arbeitet rein ereignisgesteuert und zustandslos (reaktiv):
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_MUL_2` ist ein hochgradig modularer und moderner Funktionsbaustein für die 4diac-ide. Durch die konsequente Nutzung von unidirektionalen Adaptern fördert er ein sauberes Softwaredesign in verteilten Steuerungssystemen nach IEC 61499, ohne dabei an Flexibilität bei den verarbeiteten Datentypen einzubüßen.

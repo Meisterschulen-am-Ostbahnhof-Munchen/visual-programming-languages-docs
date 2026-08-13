@@ -77,6 +77,11 @@ Since the function block does not store an internal state (purely combinatorial 
 
 The AS_DEMUX_2 is specifically optimized for the bidirectional (but here used unidirectionally) AS adapter interface and, unlike general data blocks, operates exclusively at the adapter level.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AS_DEMUX_2** is a simple yet flexible demultiplexer for adapter-based applications. Thanks to its generic design and purely event-driven control, it is ideally suited for dynamic switching tasks in IEC 61499 systems where a data stream needs to be selectively routed to two paths. Its low complexity facilitates integration and makes it a reliable basic component in modular control architectures.

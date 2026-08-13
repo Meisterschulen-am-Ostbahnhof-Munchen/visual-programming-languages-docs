@@ -78,6 +78,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Das Verhalten beschrä
 - **AUS_DEMUX_N** (generisch für mehr als zwei Ausgänge) – dieser Baustein ist auf genau zwei Ausgänge beschränkt und dadurch einfacher und übersichtlicher.
 - **EXTRACT** / **SELECT** – im Unterschied zu datenflussbasierten Bausteinen wird hier die Weiterleitung durch ein explizites Ereignis gesteuert.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AUS_DEMUX_2** ist ein schlanker, generischer Demultiplexer für AUS‑Adapter, der sich durch seine klare Ereignisschnittstelle und die einfache Handhabung auszeichnet. Er eignet sich für alle Fälle, in denen ein einzelner Datenstrom ereignisgesteuert auf einen von zwei Zieladaptern umgeleitet werden muss. Die generische Auslegung erlaubt den Einsatz mit beliebigen AUS‑Datentypen – ideal für modulare und wiederverwendbare Automatisierungslösungen.

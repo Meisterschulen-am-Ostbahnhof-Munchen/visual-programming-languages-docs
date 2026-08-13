@@ -60,6 +60,10 @@ Der **AUDI_MUL_3** besitzt keinen expliziten Zustandsautomaten. Die Ausgabe **OU
 - **AUDI_ADD_3**: Führt eine Addition dreier Werte durch, während der **AUDI_MUL_3** eine Multiplikation realisiert – beide nutzen die gleiche Adapterstruktur.
 - **Konventionelle IEC 61499-Bausteine**: Übliche Multifunktionsblöcke verwenden oft separate Daten‑ und Ereignisports. Der adapterbasierte Ansatz vereinfacht die Typisierung und Wiederverwendbarkeit in generischen Frameworks.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUDI_MUL_3** ist ein kompakter, generischer Funktionsblock zur Multiplikation von drei Werten. Durch die adaptergesteuerte Schnittstelle und die generische Typisierung eignet er sich hervorragend für modulare, wiederverwendbare Steuerungsapplikationen. Die einfache datenflussorientierte Arbeitsweise ohne Zustandsautomaten macht ihn intuitiv einsetzbar und erweiterbar.

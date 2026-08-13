@@ -77,6 +77,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Das Verhalten lässt sich je
 | **ALI_MUX** (Multiplexer) | Ein Multiplexer wählt einen von mehreren Eingängen aus und gibt ihn an einen einzigen Ausgang weiter – genau umgekehrte Richtung. |
 | **Standard‑DEMUX** (Daten‑Demux) | Arbeitet oft mit skalaren Datentypen statt mit Adaptern; ALI_DEMUX_5 verwendet komplexe Adapter‑Schnittstellen. |
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **ALI_DEMUX_5** ermöglicht eine flexible und ereignisgesteuerte Weiterleitung von ALI‑Datenströmen auf fünf unidirektionale Ausgänge. Durch die generische Deklaration und die klare Schnittstellenstruktur fügt er sich nahtlos in IEC‑61499‑Systeme ein und eignet sich für eine Vielzahl von Anwendungen in der Automatisierungstechnik.

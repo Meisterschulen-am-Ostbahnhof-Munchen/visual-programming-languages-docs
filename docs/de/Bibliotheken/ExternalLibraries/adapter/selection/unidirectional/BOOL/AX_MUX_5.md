@@ -90,6 +90,10 @@ Der Baustein besitzt keine sichtbaren Zustände; die Logik beschränkt sich auf 
 
 Im Vergleich zu einem fest verdrahteten Selektionsbaustein bietet `AX_MUX_5` eine flexible, ereignisgesteuerte Umschaltung und ist speziell für die Verwendung mit unidirektionalen AX‑Adaptern optimiert.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AX_MUX_5` ist ein kompakter, generischer Multiplexer für bis zu fünf AX‑Adaptereingänge. Er eignet sich besonders für Anwendungen, in denen mehrere gleichartige Datenquellen dynamisch ausgewählt werden müssen. Durch die klare Ereignisschnittstelle und die einfache Indexsteuerung lässt er sich leicht in größere Steuerungsarchitekturen integrieren. Die fehlende Bereichsprüfung für `K` erfordert eine korrekte Indexierung durch die aufrufende Logik.

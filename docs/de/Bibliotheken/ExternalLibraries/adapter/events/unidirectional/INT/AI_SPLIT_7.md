@@ -55,6 +55,10 @@ Der Baustein besitzt keine expliziten Zustände, da er keine sequentielle oder e
 - **AI_SPLIT_N:** Bausteine wie `AI_SPLIT_2` oder `AI_SPLIT_3` unterscheiden sich nur in der Anzahl der Ausgangsadapter. `AI_SPLIT_7` bietet die maximale Verteilung auf sieben Kanäle.
 - **Andere Splitter:** Im Gegensatz zu ereignisgesteuerten Splittern (z. B. `E_SPLIT`) arbeitet dieser FB rein analog ohne Triggerung durch Ereignisse. Er ist für kontinuierliche analoge Signale optimiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **AI_SPLIT_7** ist ein einfacher, aber effektiver Funktionsblock zur Vervielfältigung analoger Signale in IEC 61499-Systemen. Durch den Einsatz von Adaptern und die generische Implementierung lässt er sich leicht in unterschiedliche Automatisierungs- und Steuerungsanwendungen einbinden. Seine klare, ereignislose Struktur macht ihn besonders geeignet für unidirektionale Datenweitergabe ohne zusätzliche Steuerlogik.

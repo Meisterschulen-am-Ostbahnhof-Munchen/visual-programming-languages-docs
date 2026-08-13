@@ -74,6 +74,11 @@ There are no internal states or delays.
 - **AUS_MUX_2**, **AUS_MUX_4**: Function blocks with similar functionality but fewer inputs (2 and 4, respectively). The **AUS_MUX_5** covers the extended requirement for five sources.
 - **AUS_MUX_N**: A generic multiplexer with a configurable number of channels – if available, this would be more flexible, but it does not directly support exactly five channels.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AUS_MUX_5** offers a simple and efficient way to select one of up to five OFF signals. Thanks to its adapter interface and generic structure, it can be easily integrated into IEC 61499-based control systems. It is particularly suitable for applications that require dynamic and index-controlled signal switching.

@@ -57,6 +57,10 @@ Der Baustein implementiert keine Zustandsautomaten. Die Funktionalität beschrä
 
 Ähnliche Funktionalität bieten Bausteine wie `AR_SPLIT_3` oder `AR_SPLIT_N`, die ein Signal auf drei bzw. N Ausgänge verteilen. Die Auswahl hängt von der benötigten Anzahl an Ausgängen ab. Ein Verbinden mehrerer `AR_SPLIT_2`-Instanzen in Kaskade ist ebenfalls möglich, erhöht jedoch die Komplexität gegenüber einem dedizierten Splitter mit mehreren Ausgängen.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AR_SPLIT_2** ist ein einfacher, aber essenzieller Baustein zur Vervielfachung eines AR-Signals in IEC 61499-basierten Steuerungssystemen. Seine generische Auslegung und die klare Schnittstelle machen ihn zur ersten Wahl, wenn ein Signal an zwei unabhängige Zielbausteine weitergegeben werden muss.

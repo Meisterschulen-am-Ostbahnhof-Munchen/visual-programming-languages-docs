@@ -63,6 +63,10 @@ Der Baustein verfügt über keine Eckwert-Zustandsautomatik (ECC), da keine sequ
 - **AS_MERGE_...** – Führt mehrere Adapter-Eingänge zu einem Ausgang zusammen – gegensätzliche Aufgabe.
 - **Manuelle Verdrahtung** – Könnte über mehrere Adapter-Kopplungen realisiert werden, erhöht jedoch den Konfigurationsaufwand.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AS_SPLIT_6** ist ein einfacher, aber effektiver generischer Funktionsbaustein zur Aufteilung eines unidirektionalen AS-Signals auf sechs separate Ausgänge. Durch seine generische Natur kann er flexibel in verschiedenen Automatisierungsumgebungen eingesetzt werden, wo eine schnelle und übersichtliche Signalvervielfältigung erforderlich ist.

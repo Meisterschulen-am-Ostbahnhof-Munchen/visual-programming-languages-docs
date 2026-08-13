@@ -73,6 +73,10 @@ Der Funktionsbaustein ist als rein mathematischer, zustandsloser Baustein (state
 
 Im Vergleich zu klassischen IEC 61131-3 `MUL`-Bausteinen bietet der `ADI_MUL_3` durch die Verwendung von Adaptern den Vorteil, dass Ereignisse und Daten logisch in einer einzigen Verbindung gekapselt sind. Dies reduziert den Verdrahtungsaufwand in der 4diac-IDE erheblich. Im Vergleich zu einem zweifachen Multiplizierer (`ADI_MUL_2`) spart dieser Baustein zudem ein Kaskadieren von Blöcken ein, was die Ausführungszeit verkürzt und das Anwendungsdiagramm übersichtlicher gestaltet.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ADI_MUL_3` ist ein praktischer Hilfsbaustein für arithmetische Berechnungen in IEC 61499-Anwendungen. Durch die konsequente Nutzung von unidirektionalen Adaptern trägt er zu einem sauberen, lesbaren und wartungsfreundlichen Steuerungsentwurf bei.

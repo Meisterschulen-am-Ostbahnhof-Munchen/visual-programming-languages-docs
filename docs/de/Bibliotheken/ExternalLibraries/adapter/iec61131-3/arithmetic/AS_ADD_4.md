@@ -85,6 +85,10 @@ Im Vergleich zu einem klassischen, standardmäßigen `ADD`-Baustein (nach IEC 61
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_ADD_4` ist ein spezialisierter, hocheffizienter Funktionsbaustein für die moderne, adapterbasierte Programmierung in 4diac-IDE. Er eignet sich hervorragend für Anwendungen, die ein hohes Maß an Modularität und Übersichtlichkeit im Signalfluss erfordern und vier Summanden sauber und performant addieren müssen.

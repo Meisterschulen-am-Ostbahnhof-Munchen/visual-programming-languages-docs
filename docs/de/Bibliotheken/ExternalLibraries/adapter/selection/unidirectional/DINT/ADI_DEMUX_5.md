@@ -70,6 +70,10 @@ Der Baustein besitzt keinen expliziten internen Zustandsautomaten. Er ist zustan
 
 Im Gegensatz zu diesen Bausteinen zeichnet sich der ADI_DEMUX_5 durch die direkte Adapter‑Anbindung und die einfache Index‑gesteuerte Verteilung aus.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **ADI_DEMUX_5** ist ein spezialisierter Demultiplexer für ADI‑Adapter, der mit minimalem Aufwand eine saubere, indexbasierte Signalverteilung auf bis zu fünf Ausgänge ermöglicht. Seine generische Implementierung und die klare Ereignissteuerung machen ihn zu einem vielseitigen Werkzeug in modularen Automatisierungssystemen, die auf dem Eclipse 4diac‑Framework basieren.

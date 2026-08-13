@@ -76,6 +76,11 @@ The function block does not have a programmed execution state. It can be conside
 - **AD_MUX_N (N-Way Multiplexer)**: An extended component with more than two inputs (e.g., AD_MUX_4) would require multiple sockets and a larger index range. AD_MUX_2 represents the simplest form.
 - **Adapter Selector with Priority**: Alternatively, a component with priority logic (e.g., "only valid signal wins") could be implemented; AD_MUX_2, on the other hand, follows a strict index logic.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AD_MUX_2** is a compact, generic function block for adapter selection in 4diac environments. Its clear event interface and adapter-based operation make it ideal for applications where signal paths need to be switched flexibly. Thanks to its generic declaration, it can be easily integrated into various projects or adapted to specific adapter types.

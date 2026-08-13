@@ -66,6 +66,11 @@ Comparison with [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/A
 
 Compared to simple AND blocks with fewer inputs, AX_AND_4 offers the ability to directly link four signals without additional chaining. Compared to OR operations, the AND operation places stricter demands on activation.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_AND_4 function block provides an efficient solution for linking four Boolean input signals using a logical AND operation. Through the use of adapters, it enables flexible integration into various control systems and is particularly suitable for applications where multiple safety or enable conditions must be met simultaneously.

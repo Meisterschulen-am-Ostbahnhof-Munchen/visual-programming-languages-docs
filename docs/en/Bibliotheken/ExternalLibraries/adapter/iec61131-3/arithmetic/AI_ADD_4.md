@@ -83,6 +83,11 @@ The function block behaves purely reactively (event-driven):
 **Wiring Effort** | Very low (only 5 connections) | High (separate event and data lines) |
 **Typing** | Generic via adapter | Explicit via FB typing (e.g., `ADD_REAL`) |
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AI_ADD_4` is a highly efficient and modern function block that fully utilizes the advantages of adapter-based coupling in IEC 61499. It is ideally suited for complex control architectures where clarity in the application diagram and a clear signal structure are paramount.

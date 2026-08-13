@@ -62,6 +62,11 @@ The function block has no internal state behavior. The outputs follow the input 
 
 AI_SPLIT_2 is specialized for simple 1:2 distribution without logic or configuration.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AI_SPLIT_2 is a simple yet useful function block for passively splitting an analog input signal. Its generic adapter approach makes it flexible and facilitates the modular structuring of applications according to IEC 61499.

@@ -78,6 +78,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Er verhält sich wie eine er
 - **`SELECT` (IEC 61131‑3)**: Arbeitet auf elementaren Datentypen (BOOL, INT, …), während `AULI_MUX_2` über strukturierte Adapter kommuniziert und daher komplexe Datenobjekte übertragen kann.  
 - **`MERGE`-Bausteine**: Diese kombinieren mehrere Eingänge parallel (z. B. Logik‑ODER), während der MUX exklusiv einen einzelnen Kanal durchschaltet.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock `AULI_MUX_2` stellt einen einfachen, aber robusten Multiplexer für den Einsatz in 4diac‑Umgebungen dar.  

@@ -77,6 +77,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Die Funktionalität
 
 Der **AUS_DEMUX_3** bietet gezielt drei Ausgänge und eignet sich für Anwendungen, die eine feste Kanalanzahl erfordern.  
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit  
 
 Der **AUS_DEMUX_3** ist ein kompakter, ereignisgesteuerter Demultiplexer für unidirektionale AUS-Signale. Durch die Adaptertechnik und die generische Auslegung lässt er sich flexibel in automatisierungstechnische Systeme nach IEC 61499 integrieren. Besonders in der Landtechnik und bei verteilten Steuerungen ist er ein nützliches Werkzeug zur gezielten Signalverteilung.

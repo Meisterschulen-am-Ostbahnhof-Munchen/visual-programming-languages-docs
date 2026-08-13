@@ -63,6 +63,11 @@ The FB does not have an explicit state diagram. Since no events are processed, t
 - **Difference to Data-Event-Based Splitters**: Since the function block does not use events, it is purely signal-flow oriented and requires no synchronization or sequence control.
 
 **AI_SPLIT_5 is not a data-event-based splitter.**
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AI_SPLIT_5 is a simple yet useful function block for duplicating an analog signal. Its generic nature and clear adapter interface make it an ideal building block for modular automation solutions where an analog value is needed multiple times. The lack of event-driven control reduces complexity and enables direct signal transmission without time delays.

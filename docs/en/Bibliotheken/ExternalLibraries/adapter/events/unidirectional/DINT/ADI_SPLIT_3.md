@@ -63,6 +63,11 @@ The function block has no internal states. Its functionality is limited to passi
 
 The `ADI_SPLIT_3` is specifically optimized for situations where exactly three identical copies of an ADI signal are required. If more or fewer outputs are needed, other splitter variants or combinations can be used.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ADI_SPLIT_3** is a simple yet useful generic building block for multiplying ADI data streams in three directions. Its pure adapter interface allows for seamless integration into existing 4diac projects without requiring additional event or data processing. It is particularly well-suited for passive signal distribution in modular, adapter-based automation solutions.

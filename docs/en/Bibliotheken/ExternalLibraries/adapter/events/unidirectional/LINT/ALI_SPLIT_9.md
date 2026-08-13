@@ -69,6 +69,11 @@ The module does not have its own state machine. Its behavior is determined solel
 - **ALI_MERGE** (hypothetical): Combines multiple ALI inputs into one output – the opposite function.
 - **Event-based splitters**: Other components use events to control the signal flow; this adapter splitter operates in a signal-driven manner without event logic.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ALI_SPLIT_9** is a specialized, generic adapter function block (FB) that enables the simple and reliable distribution of a unidirectional ALI signal to up to nine separate receivers in industrial automation using the 4diac IDE. Its pure adapter interface makes it particularly resource-efficient and ideally suited for star network topologies in IEC 61499-based systems. Its generic nature allows for flexible adaptation to specific requirements without changing the block structure.

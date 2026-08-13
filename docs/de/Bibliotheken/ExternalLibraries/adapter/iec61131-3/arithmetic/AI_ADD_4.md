@@ -86,6 +86,10 @@ Der Baustein verhält sich rein reaktiv (ereignisgesteuert):
 | **Verdrahtungsaufwand** | Sehr gering (nur 5 Verbindungen) | Hoch (separate Event- und Datenlinien) |
 | **Typisierung** | Generisch über Adapter | Explizit über FB-Typisierung (z.B. `ADD_REAL`) |
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AI_ADD_4` ist ein hocheffizienter und moderner Funktionsbaustein, der die Vorteile der adapterbasierten Kopplung in IEC 61499 voll ausschöpft. Er eignet sich hervorragend für komplexe Steuerungsarchitekturen, bei denen Übersichtlichkeit im Applikationsdiagramm und eine klare Signalstruktur im Vordergrund stehen.

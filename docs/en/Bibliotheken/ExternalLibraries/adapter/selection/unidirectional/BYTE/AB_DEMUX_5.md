@@ -86,6 +86,11 @@ Possible error states (invalid index) are not defined; this should be avoided by
 
 **AB_DEMUX_5 vs. AB_DEMUX_3**:** The number of outputs is the key difference; the demultiplexer with three outputs only has plugs OUT1–OUT3. - **Generic Variants**: The generic declaration allows the same function block to be reused in different adapter contexts (e.g., with different data formats).
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AB_DEMUX_5 is a compact, generic demultiplexer for unidirectional AB adapters. It enables clean and flexible data forwarding to up to five destinations based on an index and is particularly suitable for modular control architectures where a communication interface needs to be distributed across multiple actuators.

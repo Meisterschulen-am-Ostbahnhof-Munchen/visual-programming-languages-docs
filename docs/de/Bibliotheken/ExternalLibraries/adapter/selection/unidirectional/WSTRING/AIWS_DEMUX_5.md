@@ -79,6 +79,10 @@ Der Funktionsblock besitzt keine explizite, im ECC definierte Zustandsmaschine. 
 
 Der `AIWS_DEMUX_5` ist speziell für die gleichzeitige Bereitstellung von fünf unidirektionalen Ausgängen ausgelegt, während ein reiner Switch nur zwei Wege bietet. Im Gegensatz zum Multiplexer wird hier eine Eingangsquelle auf einen von vielen Ausgängen verteilt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AIWS_DEMUX_5` ist ein strukturierter, generischer Demultiplexer für den unidirektionalen AIWS-Adapterdatentyp. Er ermöglicht die flexible Aufteilung eines eingehenden Datenstroms auf bis zu fünf Ziele, gesteuert durch einen externen Index. Dank der Adaptertechnik und der einfachen ereignisgesteuerten Schnittstelle lässt er sich leicht in komplexe Automatisierungs- und Datenverarbeitungssysteme integrieren.

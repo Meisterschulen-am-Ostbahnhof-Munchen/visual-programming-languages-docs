@@ -76,6 +76,11 @@ Comparison with [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/
 
 * [Exercise_090a1_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_MUX_2 is an efficient and flexible multiplexer module, ideally suited for modular control systems. Its adapter-based architecture allows for easy integration into existing systems, while the event mechanism ensures reliable and traceable signal processing.

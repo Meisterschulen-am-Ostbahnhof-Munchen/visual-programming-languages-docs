@@ -56,6 +56,11 @@ This function block has no state machines. Its behavior is determined solely by 
 - Unlike data-based splitters (`MUX`, `F_SPLIT`), no data manipulation takes place here.
 - Variants with more outputs may exist (e.g., `ALR_SPLIT_4`), allowing for a higher number of distributions.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 ALR_SPLIT_2` is a simple and effective component for splitting an incoming ALR adapter signal to two outputs. Due to its generic nature and lack of logic, it is ideally suited for clean signal distribution in IEC 61499 systems.

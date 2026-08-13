@@ -83,6 +83,11 @@ The function block then returns to the ready state.
 - **Standard Multiplexer with Data Elements**: Unlike classic IEC 61499 components that multiplex individual variables (e.g., BOOL, REAL), the `AR_MUX_5` operates at the adapter level and can therefore forward complex, composite information as a whole.
 - **Bus Coupler / Switch**: While bus couplers often support bidirectional or addressable communication, the `AR_MUX_5` is a simple, event-driven selector without feedback on the switching state.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AR_MUX_5` is a clear, generic function block for selecting one of five AR adapter inputs. Thanks to its adapter-based interface, it is particularly suitable for modular automation solutions where data is passed in a structured format. The simple event control with `REQ`/`CNF` enables straightforward integration into existing control sequences. Variants are available for applications with more or fewer channels.

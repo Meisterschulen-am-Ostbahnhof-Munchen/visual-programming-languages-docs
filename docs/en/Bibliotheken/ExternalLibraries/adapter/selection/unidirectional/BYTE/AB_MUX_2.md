@@ -71,6 +71,11 @@ Since the function block does not define a state machine (ECC is missing), only 
 | Standard MUX function blocks (e.g., MUX2) | It typically works with direct data inputs (BOOL, INT) and has its own data outputs. |
 **Advantage AB_MUX_2** | Uniform adapter interface, easy interchangeability of data source and sink. |
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The function block **AB_MUX_2** provides a flexible and standardized solution for selecting between two signal sources. The use of adapters facilitates integration into complex 4diac projects and ensures a clean separation of control logic and data flows. Thanks to its generic declaration, the block is reusable and suitable for a wide range of industrial applications.

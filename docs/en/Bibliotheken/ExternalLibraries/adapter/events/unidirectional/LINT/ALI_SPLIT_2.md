@@ -63,6 +63,11 @@ Since the module has no event inputs/outputs or internal states, there is no sta
 | **ALI_MERGE_2** | Combines two ALI inputs into one ALI output. | Opposite function (Join). |
 | **ALI_FILTER** | Passes on only specific data/events. | Contains filter logic. |
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **ALI_SPLIT_2** is a simple but essential function block for distributing unidirectional ALI interfaces. Its generic nature and lean implementation make it a universal tool in IEC 61499 component development when a signal or data stream needs to be passed to multiple subsequent blocks.

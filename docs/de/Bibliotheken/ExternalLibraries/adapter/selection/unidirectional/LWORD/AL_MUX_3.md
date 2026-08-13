@@ -67,6 +67,10 @@ Da der Baustein keine explizite Zustandsmaschine besitzt (IEC 61499-Basis), kann
 - **MUX_ANY**: Ein datentyp-unabhängiger Multiplexer (z. B. für `ANY`-Typen) arbeitet meist mit einfachen Datenvariablen und nicht mit Adaptern. Der AL_MUX_3 ist speziell auf den Adaptertyp **AL** zugeschnitten.
 - **SELECT**: Ein ähnlicher Baustein (z. B. aus IEC 61499-2 Standard Library) arbeitet oft ereignisgesteuert mit booleschen Bedingungen. Der AL_MUX_3 verwendet einen numerischen Index.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AL_MUX_3** ist ein einfacher, aber nützlicher Multiplexer-Baustein für Adapter-basierte AL-Daten. Er eignet sich besonders für Szenarien, in denen aus mehreren gleichartigen Datenquellen eine dynamisch ausgewählt werden muss. Durch die klare Ereignissteuerung und die generische Natur lässt er sich gut in Automatisierungslösungen integrieren, die auf IEC 61499 und dem 4diac-Framework basieren.

@@ -77,6 +77,11 @@ The function block has no explicit states. Its behavior can be described as a si
 | `DEMUX_2` / `DEMUX_8` | Demultiplexer with a different number of channels | `ADI_DEMUX_4` offers exactly four outputs; other variants can be adapted using custom adapters or generic parameters |
 | `SELECT` (IEC standard) | Selection between two values (Boolean control) | Works with simple data types, not with adapters; less flexible with regard to different data sources |
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `ADI_DEMUX_4` is a compact, generic demultiplexer for event-driven distribution of adapter data. Thanks to its unidirectional adapter interface and generic design, it is ideally suited for modular automation solutions where data flows need to be switched dynamically. The simple interface—one event, one index, and five adapters—enables straightforward integration into larger control systems.

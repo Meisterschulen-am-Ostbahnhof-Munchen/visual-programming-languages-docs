@@ -66,6 +66,10 @@ Der Baustein verhält sich wie ein rein funktionaler Baustein ohne internen Spei
 
 Im Vergleich zu Standard-Subtraktionsbausteinen der IEC 61131-3 (wie z. B. einem klassischen `SUB`-Baustein mit diskreten Pins) entfällt beim `AI_SUB_2` das manuelle Verdrahten von separaten `REQ`- und `CNF`-Eventleitungen sowie einzelnen analogen Datenleitungen. Alle relevanten Informationen werden sauber in den `AI`-Adaptern übertragen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AI_SUB_2` ist ein spezialisierter und hocheffizienter Baustein für die moderne, adapterbasierte Programmierung in 4diac. Er eignet sich hervorragend für saubere Softwarearchitekturen im Bereich der analogen Signalvorverarbeitung, bei denen Übersichtlichkeit und Kapselung im Vordergrund stehen.

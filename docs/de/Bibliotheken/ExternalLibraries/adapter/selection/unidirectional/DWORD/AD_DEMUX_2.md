@@ -70,6 +70,10 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Die gesamte Logik beschr�
 - **AD_DEMUX mit mehr Ausgängen:** Für mehr als zwei Ausgänge sind Bausteine wie `AD_DEMUX_4` oder eine generischere Variante mit parametrisierbarer Kanalzahl verfügbar.
 - **Manuelle Umschaltung über Logik:** Alternative könnte ein einfacher Selector-Baustein sein, der jedoch keine Adapter-Schnittstellen bietet und separate Daten- und Eventverbindungen erfordert.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AD_DEMUX_2` ist ein kompakter, generischer Funktionsblock zur einfachen Demultiplexion von AD-Adaptern. Seine klare Schnittstelle, die rein ereignisgesteuerte Arbeitsweise und die Unterstützung generischer Typen machen ihn zu einem flexiblen Werkzeug für viele automatisierungstechnische Aufgaben, bei denen ein Signal wahlweise auf einen von zwei Wegen geschaltet werden muss.

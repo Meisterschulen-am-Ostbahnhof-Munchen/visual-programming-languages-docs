@@ -67,6 +67,11 @@ The **AIS_SPLIT_9** has no internal states or sequence controls. Its behavior is
 - **Direct Coupling**: Instead of a Split component, manual wiring (multiple OUT adapters) could also be performed in the 4diac IDE. However, the **AIS_SPLIT_9** simplifies the graphical representation and reduces the complexity of the network.
 
 **AIS_MERGE**
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIS_SPLIT_9** is a simple yet extremely useful function block for duplicating a unidirectional AIS signal to nine outputs. Its generic design, the absence of event or data logic, and its clear interface make it a reliable tool for modular automation solutions. It is particularly suitable for applications where a signal needs to be distributed to multiple receivers without delay or modification.

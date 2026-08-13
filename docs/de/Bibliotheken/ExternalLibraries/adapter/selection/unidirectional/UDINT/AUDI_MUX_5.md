@@ -67,6 +67,10 @@ Der Baustein besitzt keine expliziten Zustände im Sinne einer Zustandsmaschine.
 
 Ähnliche Funktionalität bieten Standard‑MUX‑Bausteine (z. B. `MUX` oder `SEL`), die oft mit einfachen Datentypen (BOOL, INT, REAL) arbeiten. Der **AUDI_MUX_5** hebt sich durch die Verwendung von Adaptern ab, die komplexe, strukturierte Daten oder ganze Signalpfade in einem einzigen Verbindungspunkt bündeln. Dadurch eignet er sich besonders für den Einsatz in objektorientierten oder adapterbasierten Architekturen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUDI_MUX_5** ist ein kompakter, generischer Multiplexer für fünf Adaptereingänge. Er ermöglicht eine saubere, typengeprüfte Umschaltung von Signalen in der Automatisierungstechnik und lässt sich aufgrund seiner generischen Natur flexibel in verschiedene Steuerungsumgebungen integrieren. Seine einfache Handhabung und klare Schnittstelle machen ihn zu einem nützlichen Werkzeug für die Signalauswahl in 4diac‑Projekten.

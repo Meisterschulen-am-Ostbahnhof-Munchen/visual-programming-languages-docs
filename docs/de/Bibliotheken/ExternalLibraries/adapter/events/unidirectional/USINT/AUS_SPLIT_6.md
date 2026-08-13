@@ -66,6 +66,10 @@ Der Baustein besitzt **keine expliziten Zustände**. Sein Verhalten ergibt sich 
 - **Datensplitter**: Reine Datenverteiler (z. B. `F_MUX`, `F_DIST`) erfordern separate Datentypen. Der vorliegende Baustein ist spezifisch für den Adaptertyp `AUS` und kapselt die Signalstruktur.
 - **Generic‑Fähigkeit**: Dank der generischen Deklaration kann der Baustein in verschiedenen Kontexten mit unterschiedlichen AUS‑Adapterimplementierungen wiederverwendet werden.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUS_SPLIT_6** ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Signalverteilung in IEC 61499‑Anwendungen. Er reduziert den Verdrahtungsaufwand, indem er ein einzelnes AUS‑Signal auf sechs parallele Ausgänge bringt. Seine generische Natur macht ihn flexibel einsetzbar, solange der verwendete AUS‑Adapter den unidirektionalen Vertrag einhält.

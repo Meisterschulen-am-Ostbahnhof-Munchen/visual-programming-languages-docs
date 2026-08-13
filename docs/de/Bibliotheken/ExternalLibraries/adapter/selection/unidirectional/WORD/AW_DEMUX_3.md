@@ -92,6 +92,10 @@ Es gibt keine Halte‑, Fehler‑ oder Sonderzustände.
 
 Der größte Unterschied zu reinen Daten‑ oder Ereignis‑Demultiplexern ist die Verwendung des Adapter‑Typs `AW`, der eine standardisierte, unidirektionale Datenübertragung in der 4diac‑IDE kapselt.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AW_DEMUX_3** ist ein kompakter, generischer Demultiplexer für den Adapter‑Typ `AW`. Mit einem Ereignis gesteuert, verteilt er auf Basis eines Indexes Eingangsdaten auf drei Ausgänge. Seine einfache, transaktionsorientierte Funktionsweise ohne Zustandsautomaten macht ihn zu einem verlässlichen Baustein für die gezielte Signalweiterleitung in industriellen Steuerungs‑ und Automatisierungslösungen. Der generische Charakter ermöglicht zudem eine flexible Wiederverwendung in unterschiedlichen Projekten.

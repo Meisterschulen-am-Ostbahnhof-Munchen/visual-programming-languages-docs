@@ -70,6 +70,10 @@ Im Vergleich zu einfacheren ODER-Bausteinen mit weniger Eingängen bietet AX_OR_
 
 Vergleich mit [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_OR_6 ist ein spezialisierter Logikbaustein für Anwendungen, die eine ODER-Verknüpfung mit mehreren Eingängen erfordern. Durch die Adapter-basierte Schnittstelle eignet er sich besonders für modulare Systemdesigns und ermöglicht eine klare Trennung der Signalwege.

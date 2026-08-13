@@ -57,6 +57,11 @@ The function block does not have an internal state machine. Its functionality is
 
 Unlike an **AULI_MERGE** (which combines multiple inputs into one output) or an **AULI_SELECT** (which selectively passes through one of several inputs), **AULI_SPLIT_3** offers a pure fan-out function. There is no decision mechanism, no prioritization, and no data modification. Similar splitters with a different number of outputs (e.g., SPLIT_2) differ only in the number of outputs.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 **AULI_SPLIT_3** is a simple yet essential function block for multiplying unidirectional AULI signals. Its generic design and delay-free transmission make it particularly suitable for broadcast scenarios in automation technology, where a signal must be transmitted to multiple devices simultaneously.

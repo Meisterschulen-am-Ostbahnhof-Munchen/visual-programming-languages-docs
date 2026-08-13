@@ -92,6 +92,10 @@ Eine detailliertere Zustandsmaschine ist nicht erforderlich, da der Baustein vol
 
 Der AULI_MUX_5 zeichnet sich durch die Verwendung von AULI-Adaptern aus, was eine saubere modulare Kapselung von Daten und Protokollen ermöglicht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AULI_MUX_5** ist ein flexibler und einfach einsetzbarer Funktionsblock zur Auswahl eines von fünf AULI-Signalen. Seine generische Definition erlaubt eine Wiederverwendung auch mit abweichender Eingangsanzahl. Die klare ereignisgesteuerte Schnittstelle und die Zustandslosigkeit machen ihn zu einem verlässlichen Baustein für modulare Automatisierungslösungen.

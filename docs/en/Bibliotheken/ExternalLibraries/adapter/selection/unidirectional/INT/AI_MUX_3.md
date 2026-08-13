@@ -71,6 +71,11 @@ The function block does not have an explicit state machine. The logic is limited
 - **Standard Multiplexer with Data Inputs**: Unlike function block types that use direct `ANY` data inputs, `AI_MUX_3` operates purely on an adapter basis. This allows for better modularity, as the attached adapters themselves can contain complex data structures or processing logic.
 - **Multi-Channel Multiplexer**: A function block with more than three channels (e.g., AI_MUX_4) would function analogously, but the adapter definition allows for expansion through multiple instances or a custom function block with more sockets.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AI_MUX_3** is a compact, generic analog multiplexer for the 4diac IDE. Thanks to its adapters and event-driven control, it is particularly well-suited for flexible, modular automation solutions where multiple analog signal sources need to be selected and routed to a single output.

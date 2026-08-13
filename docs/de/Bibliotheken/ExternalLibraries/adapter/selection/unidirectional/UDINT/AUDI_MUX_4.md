@@ -58,6 +58,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Es liegt ein impliziter Zust
 
 Standard IEC 61499 bietet oft Multiplexer-FBs mit direkten Dateneingängen. Der AUDI_MUX_4 nutzt hingegen Adapter, was eine flexible Kopplung mit anderen Bausteinen ermöglicht, die das AUDI-Adapterinterface unterstützen. Dies erhöht die Wiederverwendbarkeit und erlaubt eine einheitliche Datenübertragung über Adapter hinweg.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AUDI_MUX_4 ist ein nützlicher generischer Multiplexer für Adapter-basierte Systeme. Er ermöglicht die Auswahl eines von vier Eingängen über einen Index und eignet sich besonders für modulare Automatisierungslösungen, bei denen eine klare Trennung von Ereignis- und Datenflüssen erwünscht ist.

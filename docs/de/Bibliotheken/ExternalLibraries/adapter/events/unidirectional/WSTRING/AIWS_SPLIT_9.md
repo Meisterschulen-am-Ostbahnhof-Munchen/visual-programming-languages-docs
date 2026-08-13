@@ -69,6 +69,10 @@ Der Funktionsblock besitzt keine internen Zustände. Er ist rein kombinatorisch 
 - **Manueller Split mit mehreren FB-Instanzen**: Ohne diesen Baustein müsste man das AIWS-Signal durch Hintereinanderschaltung mehrerer 2- oder 3-fach-Split-Blöcke realisieren, was die Übersichtlichkeit verringert.  
 - **Datenverteiler auf Basis von Ereignissen**: Bausteine, die über Ereignisse gesteuert werden, benötigen zusätzliche Event-Verdrahtung und sind für reine Datenweiterleitung weniger effizient.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `AIWS_SPLIT_9` ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfachung eines unidirektionalen AIWS-Adapter-Signals auf neun Ausgänge. Er verzichtet auf überflüssige Komplexität, benötigt keine Ereignissteuerung und kann ohne zusätzliche Konfiguration direkt in IEC 61499-Applikationen eingesetzt werden. Dank seiner generischen Natur ist er flexibel an verschiedene Adapter-Typen anpassbar und eignet sich besonders für Signalverteilungen in modularen Automatisierungsarchitekturen.

@@ -66,6 +66,10 @@ Der Baustein besitzt kein komplexes internes Zustandsdiagramm (ECC). Er arbeitet
 
 Im Vergleich zum Standard-IEC-61131-3-Kompaktbaustein `DIV` besitzt der `ALR_DIV_2` keine direkten Datenpins (wie `IN1`, `IN2` als `ANY_NUM`). Während der Standard-`DIV`-Baustein für einfache, punktuelle Berechnungen optimiert ist, eignet sich der `ALR_DIV_2` primär für serviceorientierte Architekturen und Anwendungen, die konsequent auf eine lose Kopplung mittels Adapterstrukturen setzen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_DIV_2` ist ein spezialisierter, aber dennoch flexibler Divisionsbaustein für die 4diac-IDE. Er eignet sich hervorragend für anspruchsvolle Projekte, die Wert auf eine saubere Kapselung von Datenflüssen mithilfe des unidirektionalen `ALR`-Adapters legen.

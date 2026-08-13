@@ -66,6 +66,11 @@ The **AX_MUX_4** has no states of its own. The switching occurs causally with ea
 
 Unlike classic multiplexers that operate on simple data types (INT, BOOL, etc.), the **AX_MUX_4** operates at the **adapter level**. This enables the routing of complex, composite data structures defined by the `AX` adapter. Advantage: The interface remains clearly structured in the graphical 4diac environment without the need to manually connect individual data lines.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AX_MUX_4** is a simple yet flexible multiplexer for AX adapters. It is suitable for all applications that require switching between multiple adapter sources at runtime. Due to its generic nature and clear event handling, it can be integrated into many automation solutions.

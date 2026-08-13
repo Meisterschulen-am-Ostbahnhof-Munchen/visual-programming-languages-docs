@@ -56,6 +56,10 @@ Der Funktionsblock besitzt keine Zustandsautomaten oder Algorithmen. Er ist rein
 - Im Gegensatz zu daten- oder ereignisbasierten Splittern arbeitet `ADI_SPLIT_9` auf der höheren Adapterebene, was eine saubere architekturelle Trennung ermöglicht.
 - Ähnliche Bausteine existieren mit variabler Ausgangsanzahl (z. B. `ADI_SPLIT_M`), während dieser FB eine feste Anzahl von neun Ausgängen bietet.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 `ADI_SPLIT_9` ist ein einfacher, generischer Funktionsblock zur 1-zu-9-Verteilung eines unidirektionalen ADI-Signals. Er eignet sich für Anwendungen, die ein mehrfaches, identisches Weiterleiten von Adaptersignalen ohne zusätzliche Logik erfordern.

@@ -62,6 +62,10 @@ Im Vergleich zu einfachen Schaltern oder Multiplexern bietet der AX_DEMUX_2 eine
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AX_DEMUX_2 stellt einen effizienten und standardkonformen Baustein für die Datenverteilung in IEC 61499-basierten Automatisierungssystemen dar. Seine generische Natur und Adapter-basierte Architektur machen ihn zu einer flexiblen Lösung für verschiedene Demultiplex-Anwendungen.

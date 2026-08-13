@@ -64,6 +64,10 @@ Der Baustein besitzt **keinen internen Zustandsautomaten**. Er arbeitet direkt u
 
 Andere Split‑ oder Fanout‑Bausteine bieten meist eine feste Anzahl von Ausgängen oder sind auf bestimmte Datentypen festgelegt. Der `ALI_SPLIT_5` ist speziell auf den unidirektionalen ALI‑Adapter zugeschnitten, jedoch durch seine generische Vorlage flexibel einsetzbar. Im Gegensatz zu einem **Multiplexer** oder **Router** leitet dieser Baustein das Signal **ohne Umschaltung** stets an alle Ausgänge weiter.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `ALI_SPLIT_5` ist ein einfacher, aber essenzieller Baustein zur Vervielfachung eines ALI‑Signals. Aufgrund seiner generischen Natur lässt er sich problemlos in verschiedene 4diac‑Projekte integrieren und vereinfacht die Signalverteilung in komplexen Automatisierungsarchitekturen. Er ist wartungsarm, da er keine eigene Logik enthält, und trägt zur Modularisierung und Wiederverwendbarkeit von ALI‑Verbindungen bei.

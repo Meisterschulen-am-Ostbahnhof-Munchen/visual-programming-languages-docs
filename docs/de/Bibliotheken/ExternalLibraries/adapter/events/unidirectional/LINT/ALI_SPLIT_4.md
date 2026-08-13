@@ -63,6 +63,10 @@ Der Baustein besitzt keine eigenen Zustände oder Steuerlogik. Das Verhalten ist
 - **ALI_MERGE**: Führt mehrere ALI-Eingänge zu einem Ausgang zusammen – die inverse Funktion zum Split.
 - **ALI_SELECT**: Wählt basierend auf einem Steuersignal einen von mehreren Eingängen aus und leitet ihn an einen Ausgang weiter (keine Parallelverteilung).
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **ALI_SPLIT_4** ist ein einfacher, aber nützlicher Funktionsbaustein zur passiven Verteilung eines unidirektionalen ALI-Signals auf vier identische Ausgänge. Durch die generische Bauweise und das Fehlen von Ereignis- oder Datenlogik eignet er sich besonders für schnelle Signalvervielfachungen in der Automatisierungstechnik, ohne zusätzliche Rechenlast zu verursachen.

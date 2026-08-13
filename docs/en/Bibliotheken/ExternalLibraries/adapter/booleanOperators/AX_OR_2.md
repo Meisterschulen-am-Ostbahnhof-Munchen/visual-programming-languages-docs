@@ -74,6 +74,11 @@ Comparison with [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR
 * [Uebung_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 * [Uebung_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_OR_2 function block offers a reliable A simple solution for Boolean OR operations in automation systems. Its adapter-based architecture allows for flexible use in various control contexts.

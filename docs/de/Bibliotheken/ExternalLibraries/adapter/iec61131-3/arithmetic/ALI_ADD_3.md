@@ -67,6 +67,10 @@ Der Funktionsbaustein arbeitet rein zustandslos (stateless). Es gibt keine inter
 *   **Standard-ADD (IEC 61131-3):** Ein Standard-ADD-Baustein verwendet klassische Daten- und Ereignis-Verbindungen. `ALI_ADD_3` hingegen kapselt diese Schnittstellen in Adaptern, was die visuelle Komplexität im Systementwurf verringert.
 *   **Kaskadierte 2-fach-Addierer:** Um drei Werte mit herkömmlichen 2-fach-Addierern zu addieren, müssten zwei Bausteine in Reihe geschaltet werden. `ALI_ADD_3` spart hierbei einen Baustein sowie die dazwischenliegende Instanziierung und Verdrahtung ein.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `ALI_ADD_3` ist ein kompakter und effizienter Hilfsbaustein für 4diac-ide. Durch die konsequente Nutzung von unidirektionalen Adaptern trägt er maßgeblich zur Erstellung von sauberem, modularisiertem und leicht lesbarem Steuerungscode bei der Verarbeitung von analogen Signalen bei.

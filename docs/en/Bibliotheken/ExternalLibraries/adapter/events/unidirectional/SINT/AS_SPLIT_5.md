@@ -60,6 +60,11 @@ The block does not have an internal state machine. Signal distribution is contin
 
 Since AS_SPLIT_5 is designed for a specific adapter architecture (unidirectional AS), similar components typically exist, such as "AS_SPLIT_2", "AS_SPLIT_3", or generalized splitters with a variable number of outputs. This component differs in its fixed number of five outputs and its pure adapter interface without data or event ports.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AS_SPLIT_5 is a simple yet effective function block for multiplying an AS adapter signal into five parallel outputs. Its generic implementation and clear interface make it well-suited for modular automation solutions according to IEC 61499.

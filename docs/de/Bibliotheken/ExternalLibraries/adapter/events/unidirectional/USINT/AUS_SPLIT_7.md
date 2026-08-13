@@ -61,6 +61,10 @@ Der Funktionsblock verfügt über keinen Zustandsautomaten. Das Ausgangssignal j
 - Im Gegensatz zu Daten-Splittern (z. B. `SPLIT_INT`, `SPLIT_BOOL`) arbeitet dieser Baustein ausschließlich mit Adaptern und nicht mit elementaren Datentypen. Dadurch eignet er sich besonders für protokollbasierte oder typsichere Verbindungen.
 - Bausteine mit Ereignis-Schnittstellen (z. B. `E_SPLIT`) verteilen Ereignisse, nicht Signale. AUS_SPLIT_7 verteilt dagegen einen kontinuierlichen Signalwert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUS_SPLIT_7** ist ein einfacher, aber effektiver generischer Funktionsblock zur unidirektionalen Verteilung eines AUS-Adapter-Signals auf sieben parallele Ausgänge. Durch seine reine Adapter-basierte Schnittstelle und die fehlende Ereignislogik eignet er sich für alle Anwendungen, bei denen ein Signal ohne Verzögerung oder Zustandsspeicherung vervielfacht werden muss. Er bietet eine saubere, modulare Lösung für die Signalverteilung in IEC 61499-basierten Automatisierungssystemen.

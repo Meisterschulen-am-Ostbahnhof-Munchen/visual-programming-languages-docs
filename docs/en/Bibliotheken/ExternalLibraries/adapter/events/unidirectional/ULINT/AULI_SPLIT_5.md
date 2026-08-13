@@ -68,6 +68,11 @@ The FB has **no internal state machine**. There are no states, no transitions, a
 
 The `AULI_SPLIT_5`, unlike event-based splitters, is **eventless** and purely adapter-based. It is therefore particularly suitable for use in data flow systems without a clock signal.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AULI_SPLIT_5` is a minimalist yet useful function block for multiplying a unidirectional AULI signal to five outputs. Its generic nature allows for flexible parameterization within the Eclipse 4diac framework. Due to the absence of a state machine and its simple pass-through functionality, it is extremely resource-efficient and suitable for high-speed data distribution.

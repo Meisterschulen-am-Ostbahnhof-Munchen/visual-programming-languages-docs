@@ -56,6 +56,11 @@ The module has no internal states or sequential logic. It behaves like a pure wi
 
 Unlike a simple connection node (which only implements a 1:1 connection), `AS_SPLIT_2` enables clean, configurable distribution across two outputs. Compared to an **AS_MUX** or **AS_DEMUX**, this function block lacks selection or prioritization logic – it always distributes all incoming data to all outputs. Similar blocks like `AS_SPLIT_3` or `AS_SPLIT_N` expand the number of outputs accordingly.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AS_SPLIT_2** is a simple yet useful function block for duplicating adapter data streams. Its generic definition and the absence of complex logic make it ideally suited as a universal distribution element in 4diac-based automation systems where signal splitting without data modification is required.

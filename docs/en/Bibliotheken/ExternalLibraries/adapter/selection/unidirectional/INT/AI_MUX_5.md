@@ -70,6 +70,11 @@ Since the module does not contain an explicit state machine (ECC), only an impli
 - **General MUX Components (e.g., MUX)**: These often use direct data ports instead of adapters. The adapter-based approach of AI_MUX_5 enables tighter integration into adapter-oriented architectures and facilitates the exchange of input and output interfaces.
 - **Bit Multiplexers**: Separate multiplexers exist for binary signals – AI_MUX_5 is specifically designed for analog (continuous) signals.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AI_MUX_5** is a compact, adapter-based analog multiplexer for five inputs. It is particularly suitable for use in modular automation solutions where analog signals need to be switched flexibly. Thanks to its generic nature and clear interface structure, it can be easily integrated into and expanded within existing projects.

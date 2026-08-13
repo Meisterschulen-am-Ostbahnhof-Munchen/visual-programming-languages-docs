@@ -65,6 +65,11 @@ Since this function block performs a purely combinatorial, mathematical operatio
 * **Standard Add-in Component:** A classic IEC 61131-3 `ADD` component uses direct data inputs (e.g., `REAL`, `INT`) and often requires explicit event connections (`REQ` / `CNF`). `ALR_ADD_4` encapsulates this data and these events in adapters, simplifying project design.
 * **Two-Way Adder (e.g., ALR_ADD_2):** Offers only two inputs. The `ALR_ADD_4` block eliminates the need to cascade multiple smaller adder blocks when summing three or four values.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_ADD_4` block is an efficient and clean solution for arithmetic addition in component- and adapter-based system architectures within 4diac. It promotes reusability and ensures a streamlined system design.

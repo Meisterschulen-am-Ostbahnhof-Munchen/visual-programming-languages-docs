@@ -78,6 +78,11 @@ The function block does **not** define its own state machines (Execution Control
 - **Demultiplexer with a fixed number of outputs:** Other function blocks often offer 2, 8, or 16 outputs. This function block offers exactly four, which is a good compromise for many applications.
 - **Generic Implementation:** Many demultiplexers in libraries are type-specific (e.g., for INT or REAL). The generic nature of this function block increases its reusability.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AQ_DEMUX_4` is a compact, generic demultiplexer for unidirectional analog adapters. It enables the flexible distribution of an input value to four outputs under the control of an index. Thanks to its generic type definition, it can be used in various signal environments without changing the application core. Its simple event-driven interface makes it a fundamental building block for channel switching in distributed automation and control systems.

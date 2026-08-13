@@ -75,6 +75,11 @@ After step 3, the block returns to the wait state. Several **REQ** events are pr
 - **AUI_DEMUX_5**: A demultiplexer that distributes one input to one of five outputs – essentially the inverse function.
 - **Standard MUX components** (e.g., with simple data types such as INT or BOOL): The **AUI_MUX_5** is distinguished by its special adapter interface and unidirectional data flow, making it particularly suitable for AUI-based architectures.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AUI_MUX_5** is a clear and flexible multiplexer for five unidirectional AUI adapters. Thanks to its generic implementation, it can be easily integrated into a wide variety of automation projects. The simple event-driven operation enables reliable signal selection without complex internal state logic.

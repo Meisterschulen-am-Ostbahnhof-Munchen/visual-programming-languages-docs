@@ -74,6 +74,10 @@ Diese einfache Zustandsmaschine garantiert eine schnelle und deterministische Re
 - **AQ_MUX_2 / AQ_MUX_4**: Diese Bausteine bieten eine geringere Anzahl von Eingängen (2 bzw. 4). Der `AQ_MUX_5` erweitert die Flexibilität auf fünf Eingänge, was häufig für Anwendungen mit fünf parallelen Signalen benötigt wird.
 - **AQ_MUX_5** vs. **Allgemeine Multiplexer (z. B. MUX_INT)**: Der hier beschriebene Baustein ist speziell für analoge Ausgangsschnittstellen (AQ) optimiert und setzt auf Adapter, während allgemeine Multiplexer standardisierte Datentypen und Ereignisse verwenden. Die Adapter-Kapselung erleichtert die Wiederverwendung und Typsicherheit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AQ_MUX_5` ist ein spezialisierter, generischer Multiplexer für analoge Ausgangsanwendungen im 4diac-Framework. Seine einfache Handhabung, die klare Ereignissteuerung und die Nutzung unidirektionaler Adapter machen ihn zu einem effizienten Werkzeug für die Auswahl eines von fünf analogen Signalen in Echtzeitsystemen.

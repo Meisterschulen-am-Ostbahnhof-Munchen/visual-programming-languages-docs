@@ -82,6 +82,10 @@ Der **ATM_DEMUX_3** besitzt keine internen Zustände. Er reagiert auf jedes REQ-
 | DEMUX_2 / DEMUX_4 | Demultiplexer mit 2 bzw. 4 Ausgängen | **ATM_DEMUX_3** bietet genau drei Ausgänge und ist auf unidirektionale ATM-Adapter spezialisiert |
 | SELECT             | Wählt einen von mehreren Datenpfaden aus (oft ohne Adapter) | Arbeitet meist direkt mit Datenvariablen statt mit Adaptern |
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **ATM_DEMUX_3** ist ein kompakter und klar definierter Demultiplexer für unidirektionale ATM-Adapter. Seine generische Auslegung ermöglicht eine flexible Integration in verschiedene Automatisierungsprojekte, während die ereignisgesteuerte Arbeitsweise eine deterministische Datenverteilung gewährleistet. Durch die Festlegung auf drei Ausgänge eignet er sich besonders für typische 1‑aus‑3‑Schaltaufgaben in der Steuerungstechnik.

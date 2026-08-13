@@ -69,6 +69,10 @@ Der Baustein besitzt keine Zustandsmaschine. Es gibt keine internen Zustände od
 
 Gemeinsam ist allen Split-Bausteinen die unveränderte Weitergabe des Signals; sie unterscheiden sich nur in der Anzahl der Ausgänge.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **AIWS_SPLIT_8** ist ein einfacher, aber notwendiger Baustein zur Vervielfachung eines AIWS-Adapter-Signals auf acht parallele Pfade. Seine Implementation ohne Ereignissteuerung oder Zustandslogik macht ihn leichtgewichtig und zuverlässig für den Einsatz in verteilten Automatisierungssystemen.

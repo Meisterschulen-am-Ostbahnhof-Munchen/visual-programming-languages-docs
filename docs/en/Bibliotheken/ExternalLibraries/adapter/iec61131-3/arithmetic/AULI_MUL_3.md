@@ -86,6 +86,11 @@ The function block operates in an event-driven manner and has no internal, persi
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 `AULI_MUL_3` is an efficient auxiliary component for applications requiring a high degree of modularity. Through the consistent use of unidirectional adapters, it helps reduce "signal spaghetti" in complex 4diac applications and simplifies the multiplication of three variables.

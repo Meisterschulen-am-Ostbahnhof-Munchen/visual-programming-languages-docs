@@ -76,6 +76,11 @@ The `AL_MUX_4` has no explicit states. Its behavior is purely functional: `REQ` 
 - **`SELECT` or `CASE` (Function Blocks)**: More process-oriented, while the `AL_MUX_4` is specifically optimized for coupling adapters in an IEC 61499 environment.
 - **Adapter Bypass**: Other function blocks for adapter switching exist; the `AL_MUX_4` offers a fixed 4-to-1 structure and is generically configurable.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AL_MUX_4` is a compact and efficient function block for selecting one of four AL adapters. Its generic nature and simple event control make it ideal for modular control applications that require flexible routing of adapter signals. Its use reduces wiring effort and increases the reusability of control logic.

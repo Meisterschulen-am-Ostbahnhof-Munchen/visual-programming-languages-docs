@@ -77,6 +77,11 @@ The function block has a simple state machine:
 
 Compared to classic multiplexers (e.g., `MUX_2` or `MUX_4`), which are mostly designed for data inputs (INT, REAL, etc.), the **AD_MUX_5** works exclusively with adapter interfaces. This enables modular and type-safe wiring in a component-based system. The component is specifically optimized for cases where the signals to be multiplexed themselves contain complex data structures (addresses, channels, states) that are encapsulated by an adapter.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AD_MUX_5` is a small but useful generic component for adapter-based signal selection. It reduces wiring effort and increases clarity in control systems where one must be selected from several similar interfaces. Thanks to its simple event control and clear interface, it can be easily integrated into existing projects.

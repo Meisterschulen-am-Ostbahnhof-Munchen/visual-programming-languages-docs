@@ -76,6 +76,10 @@ Eine formale Zustandsmaschine ist nicht definiert. Der Baustein verhält sich wi
 - **SIMPLE_SELECT**: Einfache Weiche auf Basis eines Booleschen Signals. AL_DEMUX_2 arbeitet dagegen mit einem ganzzahligen Index und AL-Adapter-Schnittstellen.
 - **Standard-Demultiplexer in Bibliotheken**: Viele IEC-61499-Bibliotheken bieten Demultiplexer mit mehr als zwei Ausgängen (z.B. `DEMUX_4`), die jedoch oft nur einfache Datentypen und keine Adapter verwenden. Der AL_DEMUX_2 ist speziell für Adapter-basierte Anwendungen optimiert.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsbaustein **AL_DEMUX_2** stellt eine kompakte, generische Lösung zur Datenweiterleitung an zwei Adapterausgänge dar. Durch die ereignisgesteuerte Auswahl per Index eignet er sich besonders für zeitgesteuerte oder sequenzielle Umschaltvorgänge in Automatisierungssystemen. Die Verwendung von AL-Adaptern gewährleistet eine einfache Integration in bestehende Adapter-basierte Architekturen.

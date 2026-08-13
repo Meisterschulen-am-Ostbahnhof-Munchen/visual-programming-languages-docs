@@ -78,6 +78,11 @@ The function block does not have an explicit state machine in its XML representa
 - **Adapter Selector Components:** Similar components exist for other adapter types (e.g., bidirectional). `AS_MUX_5` is specialized for the unidirectional type `AS` and is limited to five inputs.
 - **Generic Variants:** The use of the `GenericClassName` attribute allows for easy adaptation to other adapter types by reusing the same logic.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 AS_MUX_5` is a specialized multiplexer for unidirectional adapter connections of type `AS`. It enables flexible and clean switching between five sources without data conversion. Due to its generic nature and simple event control, it is particularly suitable for modular automation solutions where the selection of different sensor or actuator connections at runtime is required.

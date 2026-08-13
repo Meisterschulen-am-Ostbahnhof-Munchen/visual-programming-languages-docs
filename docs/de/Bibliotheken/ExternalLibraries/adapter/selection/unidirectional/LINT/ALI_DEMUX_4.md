@@ -84,6 +84,10 @@ Eine detaillierte Zustandsmaschine ist nicht explizit modelliert, da der FB rein
 
 Der ALI_DEMUX_4 ist spezifisch für die ALI‑Adapter‑Schnittstelle optimiert und bietet daher eine nahtlose Integration in ALI‑basierte Applikationen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock **ALI_DEMUX_4** stellt eine einfache und effektive Möglichkeit dar, einen eingehenden ALI‑Signalstrom auf vier Ausgänge zu verteilen. Er zeichnet sich durch seine generische Bauweise, klare Schnittstellen und leichte Bedienbarkeit aus. Dank der Adapter‑Architektur ist er besonders in landwirtschaftlichen Steuerungssystemen mit ALI‑Protokoll einsetzbar und trägt zu einer sauberen Strukturierung des Datenflusses bei.

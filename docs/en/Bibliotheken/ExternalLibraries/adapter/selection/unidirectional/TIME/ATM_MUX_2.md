@@ -87,6 +87,11 @@ The function block may be in a brief, undefined state during the switchover – 
 - **ATM_MUX_N (Generic Variant)**: The present `ATM_MUX_2` is a special instance with two inputs. A generic `ATM_MUX` could define the number of inputs via a parameter `N`.
 - **Simple If-else Logic**: In an IEC 61499 environment, a multiplexer could also be implemented using a combination of a Decision function block and several Select function blocks. The `ATM_MUX_2` encapsulates this logic in a single, reusable component, thus reducing network complexity.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ATM_MUX_2` is a lean, generic multiplexer for two unidirectional ATM data streams. It features easy operation (index selection via event) and modular adapter interfaces. Due to its generic nature, it can be easily adapted to different numbers of inputs. The component is particularly suitable for applications requiring fast, event-driven channel switching without the need for additional logic on the network.

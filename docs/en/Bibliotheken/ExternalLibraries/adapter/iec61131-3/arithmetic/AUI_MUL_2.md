@@ -87,6 +87,11 @@ The function block operates purely event-driven and stateless (reactively):
 
 ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUI_MUL_2` is a highly modular and modern function block for the 4diac-ide. Through the consistent use of unidirectional adapters, it promotes clean software design in distributed control systems according to IEC 61499, without sacrificing flexibility in the data types it can process.

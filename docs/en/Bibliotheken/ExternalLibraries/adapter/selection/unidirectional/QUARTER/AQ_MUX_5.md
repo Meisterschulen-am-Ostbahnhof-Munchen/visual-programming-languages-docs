@@ -72,6 +72,11 @@ This simple state machine guarantees a fast and deterministic response.
 - **AQ_MUX_2 / AQ_MUX_4**: These components offer a smaller number of inputs (2 and 4, respectively). The `AQ_MUX_5` extends the flexibility to five inputs, which is often required for applications with five parallel signals.
 - **AQ_MUX_5** vs. **General Multiplexers (e.g., MUX_INT)**: The component described here is specifically optimized for analog output interfaces (AQ) and uses adapters, while general multiplexers use standardized data types and events. The adapter encapsulation facilitates reuse and type safety.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AQ_MUX_5` is a specialized, generic multiplexer for analog output applications in the 4diac framework. Its ease of use, clear event handling, and the use of unidirectional adapters make it an efficient tool for selecting one of five analog signals in real-time systems.

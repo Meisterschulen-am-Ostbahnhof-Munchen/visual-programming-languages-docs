@@ -64,6 +64,11 @@ The function block has no internal state machine. It operates statelessly and is
 **Simple Coupling (e.g., Direct Connection):** Without the Split component, the sender would have to provide multiple adapter connections themselves. The Split component encapsulates this logic and simplifies the overall architecture.
 
 **
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AL_SPLIT_9` is a simple yet powerful generic distribution block for adapter interfaces of type `AL`. It enables clean, maintainable distribution of a data flow across nine independent paths. Thanks to its generic nature and stateless operation, it is ideally suited for modular and scalable automation solutions.

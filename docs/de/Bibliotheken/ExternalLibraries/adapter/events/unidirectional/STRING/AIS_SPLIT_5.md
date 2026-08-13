@@ -60,6 +60,10 @@ Der Baustein besitzt keine eigene Zustandslogik (kein ECC). Es gibt keinen inter
 
 Es gibt weitere Splitter-Bausteine wie `AIS_SPLIT_2`, `AIS_SPLIT_3` oder `AIS_SPLIT_4`, die eine geringere Anzahl an Ausgängen bereitstellen. Gemeinsam ist allen, dass sie ein einzelnes AIS-Eingangssignal auf mehrere Ausgänge verteilen. Der `AIS_SPLIT_5` bietet die maximale Anzahl von fünf Ausgängen dieser Familie. Je nach Bedarf kann der passende Splitter gewählt werden, um unnötige Verkabelung zu vermeiden.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AIS_SPLIT_5` ist ein einfacher, aber wirkungsvoller generischer Funktionsbaustein zur Vervielfachung eines unidirektionalen AIS-Adapter-Signals. Er reduziert den Verkabelungsaufwand in der 4diac-IDE und ermöglicht eine saubere, modulare Strukturierung von Steuerungsanwendungen. Für Anwendungen, die eine Aufteilung eines Signals auf bis zu fünf Empfänger erfordern, stellt er eine optimale Lösung dar.

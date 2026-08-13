@@ -68,6 +68,11 @@ Since the FB has no state machine, no explicit states exist. The behavior is det
 
 Compared to these alternatives, AR_SPLIT_4 offers a fixed number of four outputs, enabling a compact and clear implementation without configuration overhead.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AR_SPLIT_4** is a simple yet useful generic function block for distributing a unidirectional AR adapter signal across four parallel paths. Due to its streamlined design (no event/data interfaces, no state machine), it is ideally suited for all applications where a signal is needed multiple times without introducing additional logic.

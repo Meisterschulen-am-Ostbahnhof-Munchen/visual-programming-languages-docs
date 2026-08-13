@@ -87,6 +87,10 @@ Der Baustein arbeitet ereignisgesteuert und besitzt kein komplexes internes Zust
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_ADD_3` ist ein hocheffizienter, modularer Baustein zur Addition von drei Werten. Durch die konsequente Nutzung von unidirektionalen Adaptern fügt er sich perfekt in moderne, serviceorientierte und sauber strukturierte IEC 61499 Steuerungsanwendungen ein.

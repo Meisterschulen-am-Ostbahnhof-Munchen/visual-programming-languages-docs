@@ -80,6 +80,10 @@ Der Baustein implementiert eine triviale endliche Zustandsmaschine, die in der S
 
 Der `ATM_DEMUX_2` hebt sich durch die Integration des ATM‑Adapter‑Protokolls und die generische Architektur hervor.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsbaustein **ATM_DEMUX_2** bietet eine kompakte, wiederverwendbare Lösung zur Demultiplexierung von ATM‑Signalen in der Automatisierungstechnik. Durch den generischen Aufbau und die Adapter‑Schnittstellen ist er leicht an unterschiedliche Kanalanzahlen anpassbar und eignet sich für modulare Steuerungssysteme nach IEC 61499.

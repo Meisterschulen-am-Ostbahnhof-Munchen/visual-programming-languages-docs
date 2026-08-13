@@ -87,6 +87,10 @@ Der Baustein verhält sich wie ein klassischer, zustandsloser (bzw. rein funktio
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `ALR_MUL_2` ist ein spezialisierter, hocheffizienter Funktionsbaustein für moderne IEC 61499-Architekturen. Durch die konsequente Nutzung von Adaptern fördert er ein sauberes, objektorientiertes Softwaredesign in der industriellen Automatisierung und eignet sich hervorragend für komplexe, verteilte Steuerungsaufgaben.

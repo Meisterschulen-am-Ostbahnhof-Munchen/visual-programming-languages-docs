@@ -79,6 +79,11 @@ The function block does not have an explicit state machine in the XML. Its behav
 
 The **AS_MUX_3** distinguishes itself from classic SEL devices, which only process simple variables, through its adapter interface. Adapters enable the exchange of complex data types and provide a type-safe connection.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AS_MUX_3** is a compact and efficient multiplexer device for three unidirectional **AS** signals. Its clear event control and generic design make it a valuable tool in IEC 61499-based automation solutions, especially in agricultural technology, where flexible signal switching is required. By foregoing data outputs in favor of an adapter plug, a clean separation of data and event paths is ensured.

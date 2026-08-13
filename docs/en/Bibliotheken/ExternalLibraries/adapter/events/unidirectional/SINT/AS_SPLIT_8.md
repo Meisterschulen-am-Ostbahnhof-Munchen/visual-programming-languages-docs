@@ -65,6 +65,11 @@ Not applicable – the block has no internal states or sequence control.
 - **Event-based splitters (e.g., E_SPLIT)**: These operate with events and distribute them according to a time-controlled process. In contrast, this function block continuously distributes all adapter data without event control.
 - **Data-based splitters (e.g., ANY_DISTRIBUTE)**: Split data values but require additional events. AS_SPLIT_8 is optimized for simple adapter forwarding.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AS_SPLIT_8** is a simple yet useful adapter distributor that duplicates an incoming AS data stream to eight outputs without requiring any additional logic. Its generic nature and clear structure make it a robust solution for scenarios where an adapter signal needs to be used multiple times. The module's documentation does not claim to be exhaustive regarding implementation details; the exact functionality may vary depending on the runtime environment used.

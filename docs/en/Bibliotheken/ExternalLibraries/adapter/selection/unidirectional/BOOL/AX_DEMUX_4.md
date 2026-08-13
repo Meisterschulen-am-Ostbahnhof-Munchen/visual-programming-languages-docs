@@ -65,6 +65,11 @@ Compared to simple multiplexers, AX_DEMUX_4 offers four fixed outputs with an ad
 
 Comparison with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)]
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AX_DEMUX_4 is a robust and easy-to-configure demultiplexer for industrial automation systems. Its adapter-based architecture enables flexible integration into existing control structures, while index-driven selection ensures precise data distribution.

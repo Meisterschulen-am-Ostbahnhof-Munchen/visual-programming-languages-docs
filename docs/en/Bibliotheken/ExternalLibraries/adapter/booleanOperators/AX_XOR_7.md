@@ -69,6 +69,11 @@ Compared to standard XOR blocks with fewer inputs, AX_XOR_7 offers the ability t
 
 Comparison with [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)]
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_XOR_7 function block provides an efficient solution for multi-input XOR operations. Its adapter-based architecture allows for flexible integration into various control systems and makes it particularly suitable for applications requiring odd parity checks across multiple signals.

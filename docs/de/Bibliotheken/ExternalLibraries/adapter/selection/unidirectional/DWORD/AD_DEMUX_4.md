@@ -82,6 +82,10 @@ Eine explizite Zustandsmaschine ist im Quelltext des Bausteins nicht hinterlegt.
 
 Der `AD_DEMUX_4` ist das Gegenstück zum Multiplexer‑Baustein (z.B. `AD_SELECT`), der mehrere Eingänge auf einen Ausgang zusammenführt. Während ein Multiplexer also eine **N‑zu‑1**‑Funktion realisiert, bildet der Demultiplexer eine **1‑zu‑N**‑Funktion. Im Unterschied zu klassischen Demultiplexern für elementare Datentypen arbeitet dieser Baustein mit **Adapter‑Schnittstellen**, wodurch er komplexe, zusammengesetzte Signale oder Protokolle in einer strukturierten Form routen kann.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `AD_DEMUX_4` ist ein vielseitiger, generischer Adapter‑Demultiplexer für die IEC‑61499‑Umgebung. Durch die ereignisgesteuerte Umschaltung und die Nutzung von Adaptern eignet er sich besonders für flexible Signalweichen in modularen Automatisierungs- und Steuerungssystemen.

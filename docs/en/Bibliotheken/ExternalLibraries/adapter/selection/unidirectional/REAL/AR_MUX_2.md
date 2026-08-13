@@ -78,6 +78,11 @@ The device does not have an explicit ECC algorithm but operates in an event-driv
 
 The `AR_MUX_2` is specifically optimized for use with unidirectional AR adapters and offers a clear, event-driven interface, unlike general selectors.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AR_MUX_2 is a compact, generic multiplexer for adapter signals that enables reliable and fast switching between two inputs. Its event-driven operation and standards-compliant interface make it a useful component in modular automation solutions, especially in agricultural technology.

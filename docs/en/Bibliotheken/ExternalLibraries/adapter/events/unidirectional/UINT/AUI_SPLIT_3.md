@@ -64,6 +64,11 @@ The function block does not have an internal state machine. There is only one co
 
 The `AUI_SPLIT_3` represents a specific configuration that provides exactly three identical outputs. It can be replaced by other splitter variants if needed.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AUI_SPLIT_3` is a simple yet useful generic function block for multiplying a unidirectional AUI interface. Thanks to its pure pass-through function and lack of state logic, it is reliable, performant, and easily integrated into existing automation solutions. It is particularly suitable for applications where a signal needs to be split across multiple paths.

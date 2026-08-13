@@ -79,6 +79,10 @@ Eine Unterscheidung mehrerer interner Zustände ist nicht erforderlich.
 
 Im Gegensatz zu einem **Multiplexer** (z. B. `ALI_MUX`), der mehrere Eingänge auf einen Ausgang zusammenführt, verteilt der `ALI_DEMUX_3` einen einzelnen Eingang auf mehrere Ausgänge. Gegenüber einem **statischen Splitter** (der alle Eingänge parallel kopiert) erlaubt der Demux eine indexbasierte Selektion und reduziert so die Buslast. Ähnliche Bausteine existieren für andere Datentypen (z. B. `GEN_DEMUX` für generische Daten), jedoch ist dieser FB speziell für den ALI‑Adaptertyp optimiert.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **ALI_DEMUX_3** ist ein kompakter, generischer Demultiplexer für ALI‑Datenströme mit drei Ausgängen. Er eignet sich besonders für modulare Architekturen, die eine flexible Signalumleitung erfordern. Durch die Adapter‑Schnittstelle lässt er sich nahtlos in bestehende IEC‑61499‑Applikationen integrieren und bietet dank seiner generischen Basis eine hohe Wiederverwendbarkeit.

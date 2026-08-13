@@ -64,6 +64,11 @@ Since the function block does not have a state machine (Execution Control Chart)
 - **AIWS_SPLIT_2, AIWS_SPLIT_4** – splitters with the same functionality but a different number of outputs (2 or 4). AIWS_SPLIT_7 offers the maximum number of outputs within this splitter family.
 - **Generic 1:N Splitters** – Other IEC 61499 libraries often contain generic splitters for data types such as `ANY`. AIWS_SPLIT_7 is specifically designed for the adapter type `AIWS` and therefore requires no type conversion.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIWS_SPLIT_7** is a simple yet powerful function block for multiplying a unidirectional AIWS data stream to seven parallel outputs. Its generic definition and purely adapter-based interface enable flexible integration into IEC 61499 applications, particularly for signal distribution and parallel processing tasks.

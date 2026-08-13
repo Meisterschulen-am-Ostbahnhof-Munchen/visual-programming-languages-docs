@@ -72,6 +72,10 @@ Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet der AX_XOR
 
 Vergleich mit [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_XOR_6 ist ein spezialisierter Funktionsblock für anspruchsvolle XOR-Operationen mit mehreren Eingängen. Durch die Adapter-basierte Schnittstelle lässt er sich gut in bestehende Steuerungssysteme integrieren und bietet eine effiziente Lösung für komplexe boolesche Verknüpfungen ohne zusätzliche Verkabelungskomplexität.

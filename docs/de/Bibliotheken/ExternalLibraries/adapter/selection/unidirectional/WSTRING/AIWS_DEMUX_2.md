@@ -78,6 +78,10 @@ Fehlerzustände (z. B. ungültiger Index) können in der Implementierung optio
 - **Standard-DEMUX (z. B. für ANY-Datentypen)**: Nutzen oft Daten-Eingänge und -Ausgänge statt Adapter; der Adapter-Ansatz kapselt das Protokoll und erleichtert die Wiederverwendung.
 - **AIWS-Splitter**: Im Gegensatz zu einem Splitter (der Daten an alle Ausgänge gleichzeitig sendet) wählt der Demultiplexer gezielt einen Pfad aus.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AIWS_DEMUX_2** ist ein kompakter, ereignisgesteuerter Demultiplexer für AIWS-Protokolldaten. Er eignet sich hervorragend für Anwendungen, bei denen ein Datenstrom bedarfsgerecht an eines von zwei Zielen weitergeleitet werden muss. Die generische Basis erlaubt eine einfache Erweiterung auf mehr Kanäle, ohne das Interface grundlegend ändern zu müssen.

@@ -72,6 +72,11 @@ An explicit state machine is not defined in the XML. The behavior can be concept
 - **AUI\_MUX** – The associated multiplexer, which combines multiple inputs into one output. Both complement each other in symmetrical data paths.
 - **Standard IEC 61499 demultiplexers (e.g., SELECT)** – These usually use simple data types, while AUI\_DEMUX\_3 is specifically designed for the AUI adapter protocol and thus enables complex, structured data transmission.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The AUI\_DEMUX\_3 is a specialized function block for the unidirectional demultiplexing of AUI data streams onto three channels. Its clear, event-driven interface and generic architecture make it a flexible component in IEC 61499-based control systems that require dynamic switching of adapter connections.

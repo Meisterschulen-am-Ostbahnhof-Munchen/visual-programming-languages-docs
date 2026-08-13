@@ -72,6 +72,10 @@ Bei Eingang von REQ wechselt er kurz in einen Verarbeitungszustand, kopiert den 
 - **AS_DEMUX_2 / AS_DEMUX_4**: Gleiche Funktionalität, aber mit zwei bzw. vier Ausgängen.
 - **S_DEMUX** (Standard‑Demultiplexer): Arbeiten mit elementaren Datentypen (z. B. BOOL, INT); der vorliegende FB ist speziell für AS‑Adapter ausgelegt und daher besser in adapterbasierte Architekturen integrierbar.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AS_DEMUX_3** ist ein einfacher, aber essenzieller Baustein zur dynamischen Weiterleitung von AS‑Daten auf einen von drei Ausgängen. Seine generische Natur macht ihn flexibel einsetzbar, insbesondere in modularen Automatisierungslösungen, die auf Adapter‑Kommunikation setzen. Durch die klare Schnittstelle (REQ/CNF + Index K) lässt er sich effizient in Steuerungslogiken einbinden.

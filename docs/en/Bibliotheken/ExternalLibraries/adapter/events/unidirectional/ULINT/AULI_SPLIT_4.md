@@ -59,6 +59,11 @@ The block does not have its own state machine (no ECC states). It behaves statel
 
 The **AULI_SPLIT_4** is a specialized split function block exclusively for the unidirectional AULI adapter type. Unlike general split function blocks (e.g., `SPLIT` for various data types), it is fixed to exactly one adapter interface, which increases type clarity and prevents misconfigurations. It differs from active distributors (e.g., `MUX` or `DEMUX`) in its passive, lossless distribution without switching logic or addressing.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AULI_SPLIT_4** is a simple yet useful function block for multiplying an AULI adapter to four outputs. Its generic design and the absence of unnecessary logic allow it to integrate seamlessly into modular 4diac projects. It is particularly suitable for applications where a signal needs to be passed on to multiple receivers without requiring further processing or selection.

@@ -61,6 +61,11 @@ The function block has no internal state machine. The routing is static and occu
 - **AW_MERGE_2** – combines two AW inputs into one output (counterpart to the Split function).
 - **Data Split Function Blocks** (e.g., `SPLIT_INT`, `SPLIT_BOOL`) operate on data signals, not on adapters. `AW_SPLIT_2` is specifically designed for splitting adapter interfaces.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AW_SPLIT_2` is a simple yet essential generic function block for adapter distribution. It enables clean, reusable splitting of a unidirectional AW path without additional logic or runtime costs. Especially in modular, adapter-based control systems, it simplifies signal distribution and promotes component reusability.

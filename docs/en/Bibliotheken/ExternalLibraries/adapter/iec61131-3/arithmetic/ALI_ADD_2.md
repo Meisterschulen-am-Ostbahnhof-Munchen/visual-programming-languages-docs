@@ -62,6 +62,11 @@ The function block is stateless (combinatorial behavior). It does not have an in
 
 Classic `ADD` components according to IEC 61131-3 typically have direct data inputs (`IN1`, `IN2`...) and event pins (`REQ`, `CNF`). The `ALI_ADD_2` differs in that it encapsulates these channels in adapters (`ALI`). This results in better encapsulation and cleaner structuring in complex 4diac applications, but requires that the connected components also support the `ALI` adapter protocol.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALI_ADD_2` is a specialized, highly efficient addition component for adapter-based architectures in the 4diac IDE. It combines the standard mathematical functionality of addition with the structural advantages of modern, adapter-based communication paradigms.

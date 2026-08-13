@@ -67,6 +67,10 @@ Der Baustein verfügt über **keine Zustandsmaschine (ECC)**, da er keine Ereign
 | `AUDI_MERGE` | Fasst mehrere AUDI‑Eingänge zu einem Ausgang zusammen. | Umkehrung des Splitters (1:1‑Mapping, aber invers). |
 | Generische Splitter | Können über Typ-Parameter auf andere Adapter angewendet werden. | Bieten mehr Flexibilität als fest verdrahtete Varianten. |
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der `AUDI_SPLIT_4` ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfachung eines unidirektionalen AUDI‑Adapter‑Signals auf vier parallele Ausgänge. Seine generische Natur erlaubt die Anpassung an verschiedene Adaptertypen, und die ereignislose Arbeitsweise macht ihn besonders geeignet für reine Datenverteilungsaufgaben ohne zusätzliche Steuerlogik. Der Baustein trägt zur Strukturierung und Wiederverwendbarkeit von Signalen in komplexen Automatisierungslösungen bei.

@@ -79,6 +79,11 @@ The function block does not have an explicit state machine. However, its behavio
 **ALI_MUX** (Multiplexer) | A multiplexer selects one of several inputs and passes it to a single output – exactly the opposite direction. |
 **Standard-DEMUX** (Data-Demux) | Often works with scalar data types instead of adapters; ALI_DEMUX_5 uses complex adapter interfaces. |
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ALI_DEMUX_5** enables flexible and event-driven routing of ALI data streams to five unidirectional outputs. Its generic declaration and clear interface structure allow it to integrate seamlessly into IEC 61499 systems and make it suitable for a wide range of automation applications.

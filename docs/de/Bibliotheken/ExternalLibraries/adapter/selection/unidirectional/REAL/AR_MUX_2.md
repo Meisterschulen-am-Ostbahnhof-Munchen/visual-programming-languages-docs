@@ -79,6 +79,10 @@ Der Baustein besitzt keinen expliziten ECC‑Algorithmus, sondern arbeitet ereig
 
 Der `AR_MUX_2` ist speziell für den Einsatz mit unidirektionalen AR‑Adaptern optimiert und bietet eine klare, ereignisgesteuerte Schnittstelle im Gegensatz zu allgemeinen Auswahlbausteinen.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AR_MUX_2 ist ein kompakter, generischer Multiplexer für Adapter‑Signale, der eine zuverlässige und schnelle Umschaltung zwischen zwei Eingängen ermöglicht. Seine ereignisgesteuerte Arbeitsweise und die standardkonforme Schnittstelle machen ihn zu einem nützlichen Baustein in modularen Automatisierungslösungen, insbesondere in der Agrartechnik.

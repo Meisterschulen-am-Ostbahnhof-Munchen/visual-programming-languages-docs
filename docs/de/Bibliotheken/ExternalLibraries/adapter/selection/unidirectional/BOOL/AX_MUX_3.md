@@ -76,6 +76,10 @@ Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_
 * [Uebung_103c](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 * [Uebung_103c2](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_MUX_3 ist ein vielseitiger und zuverlässiger Multiplexer-Baustein für Steuerungsanwendungen, der durch seine drei Eingänge und standardisierte Adapter-Schnittstellen eine flexible Signalauswahl ermöglicht. Die klare Ereignissteuerung und Bestätigungsmechanismen machen ihn besonders geeignet für sicherheitskritische Anwendungen.

@@ -75,6 +75,11 @@ The function block (FB) does not have an explicit state machine (ECC). Its funct
 - **AB_DEMUX_N**: Variants with more or fewer outputs (e.g., `AB_DEMUX_2`, `AB_DEMUX_4`). This function block is specifically designed for three outputs.
 - **Manual Switching**: Alternatively, switching could be implemented using conditional assignments in a script-based function block – however, **AB_DEMUX_3** offers a compact and standardized solution.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 **AB_DEMUX_3** is a simple yet effective function block for demultiplexing AB adapter data. It neatly encapsulates index selection in a reusable function block and is particularly suitable for systems requiring flexible, event-driven data forwarding. Furthermore, its generic nature allows for easy adaptation to different data types of the AB interface.

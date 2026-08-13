@@ -75,6 +75,10 @@ Gegenüber einem herkömmlichen Data‑Demultiplexer (z. B. `DEMUX`), der Wert
 
 Ein reiner Daten‑Demux hätte separate Datenausgänge; hier sind die Ausgänge als Adapter realisiert, was die Struktur modularer macht, aber auch spezifischer.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der ALI_DEMUX_2 ist ein kompakter und nützlicher Baustein zur Signalweiterleitung in ALI‑basierten Systemen. Durch die ereignisgesteuerte Auswahl und die Verwendung von Adaptern fügt er sich nahtlos in moderne IEC‑61499‑Anwendungen ein. Seine Einfachheit und klare Funktionalität machen ihn zu einem soliden Grundbaustein für jegliche Umschaltlogik.

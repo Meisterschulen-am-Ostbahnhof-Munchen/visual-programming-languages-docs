@@ -63,6 +63,11 @@ The **ADI_SPLIT_5** has no states of its own. It is a purely combinational funct
 
 In the IEC 61499 environment, variants such as **SPLIT_2**, **SPLIT_3**, or **SPLIT_N** are common, providing a different number of outputs. **ADI_SPLIT_5** is a specific implementation for exactly five outputs using unidirectional ADI adapter interfaces. Unlike event-based split components (e.g., `E_SPLIT`), distribution here is achieved via adapters, enabling type-based and typically data-oriented communication.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **ADI_SPLIT_5** is a simple yet useful function block for distributing a unidirectional ADI signal to up to five subsequent function blocks. It is particularly suitable for modular automation solutions where an input signal needs to be used multiple times without requiring additional control logic. Its generic implementation allows it to be reused in various contexts.

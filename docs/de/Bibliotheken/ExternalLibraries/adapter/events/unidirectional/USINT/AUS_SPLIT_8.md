@@ -66,6 +66,10 @@ Der Baustein besitzt keine Zustandsmaschine. Es existieren keine internen Zustä
 - **AUS_MERGE / AUS_JOIN**: Führen mehrere Signale zusammen – funktional das Gegenteil.
 - **AUS_ROUTER**: Kann ein Signal wahlweise auf einen von mehreren Ausgängen leiten, während der Splitter immer alle Ausgänge aktiviert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUS_SPLIT_8** ist ein einfacher, aber nützlicher Funktionsbaustein zur Vervielfachung eines AUS-Signals. Durch den Verzicht auf Logik und Zustände ist er effizient und leicht verständlich. Er eignet sich besonders für Anwendungen, in denen ein Steuersignal auf mehrere Empfänger verteilt werden muss, ohne dass eine Auswahl oder Verarbeitung erforderlich ist.

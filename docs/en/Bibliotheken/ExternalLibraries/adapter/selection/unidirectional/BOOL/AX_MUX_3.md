@@ -78,6 +78,11 @@ Comparison with [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/
 * [Exercise_103c](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)]
 * [Exercise_103c2](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)]
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AX_MUX_3 is a versatile and reliable multiplexer IC for control applications. Its three inputs and standardized adapter interfaces allow for flexible signal selection. Clear event handling and confirmation mechanisms make it particularly suitable for safety-critical applications.

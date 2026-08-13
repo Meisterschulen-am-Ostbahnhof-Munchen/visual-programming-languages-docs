@@ -78,6 +78,11 @@ Since the FB does not have an explicit state machine in its XML definition, its 
 - **Standard multiplexers (e.g., MUX4):** Usually use classic data I/Os instead of adapters. The ADI_MUX_4 integrates the adapter interface directly and can therefore be seamlessly integrated into adapter-based architectures.
 - **Demultiplexers (e.g., DEMUX):** Distributes one input signal to multiple outputs – the opposite function.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **ADI_MUX_4** is a compact, generic multiplexer component with an adapter-based interface. It is particularly suitable for modular, adapter-oriented control systems where dynamic selection of data sources is required. Thanks to its clear structure and simple event handling, it is easy to parameterize and extend.

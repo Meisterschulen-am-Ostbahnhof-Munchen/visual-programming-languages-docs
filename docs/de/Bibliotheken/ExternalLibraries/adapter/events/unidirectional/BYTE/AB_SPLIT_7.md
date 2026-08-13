@@ -68,6 +68,10 @@ Durch die generische Auslegung kann der Baustein in verschiedenen Kontexten eing
 - **AB_SPLIT_N**: Verallgemeinerung mit parametrierbarer Anzahl an Ausgängen, falls verfügbar. AB_SPLIT_7 ist eine feste 1:7-Aufteilung.
 - **Direkte Verdrahtung ohne Splitter**: Bei Bedarf an mehreren identischen Kopien müsste der Quell-FB mehrfach instanziiert werden, was den Entwurf aufbläht. Der Splitter reduziert Redundanz auf Ebene der Adapterverbindungen.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AB_SPLIT_7** ist ein einfacher, aber nützlicher Baustein zur Vervielfachung einer unidirektionalen Adapterverbindung. Seine generische Natur und die klare Trennung von Ein- und Ausgängen machen ihn zu einem wiederverwendbaren Werkzeug in der 4diac-IDE, insbesondere in Szenarien, die eine parallele Verteilung von Signalen erfordern. Er trägt zur Modularität und Übersichtlichkeit industrieller Steuerungsanwendungen bei.

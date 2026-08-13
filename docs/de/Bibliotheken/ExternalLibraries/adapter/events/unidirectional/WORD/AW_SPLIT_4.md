@@ -60,6 +60,10 @@ Nicht anwendbar – der FB enthält keine Zustandsmaschine (ECC) und arbeitet du
 
 Im Gegensatz zu daten‑ oder ereignisbasierten Split‑Bausteinen (z. B. `SPLIT`, `F_SPLIT`) arbeitet `AW_SPLIT_4` ausschließlich auf Adapterebene. Der Vorteil liegt in der losen Kopplung und der Wiederverwendbarkeit über verschiedene AW‑Typen hinweg. Nachteil: Es können nur AW‑Daten verteilt werden, nicht etwa Ereignisse oder allgemeine Werte.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der Baustein `AW_SPLIT_4` ist ein einfacher, generischer Verteiler für unidirektionale AW‑Adapter. Er eignet sich ideal, um ein einzelnes AW‑Signal auf bis zu vier Ausgänge aufzuteilen, und fügt sich dank seiner generischen Natur flexibel in unterschiedliche IEC 61499‑Anwendungen ein.

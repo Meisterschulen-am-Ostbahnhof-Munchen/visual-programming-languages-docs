@@ -61,6 +61,11 @@ The FB does not have its own state diagrams because it does not contain any even
 - **Other Splitters with More Outputs** (e.g., `AUDI_SPLIT_3`): Increase the number of branches but follow the same principle.
 - **Event-based splitters** (e.g., `E_SPLIT`): These require event and data inputs/outputs and perform synchronized distribution—unlike the asynchronous data adapter split presented here.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AUDI_SPLIT_2** is a compact, generic adapter splitter for the 4diac IDE. It performs the simple task of splitting signals to two outputs without introducing additional latency or logic. Its generic design makes it suitable for a wide variety of AUDI data types and allows for flexible reuse in modular automation projects. Its simplicity and type safety make it a solid foundation for distributed control systems.

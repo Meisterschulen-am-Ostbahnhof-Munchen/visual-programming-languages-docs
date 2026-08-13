@@ -77,6 +77,11 @@ The function block does not have an explicit state machine defined in the ECC. T
 
 The `AIWS_DEMUX_5` is specifically designed for the simultaneous provision of five unidirectional outputs, whereas a simple switch only offers two paths. Unlike a multiplexer, here an input source is distributed to one of many outputs.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AIWS_DEMUX_5` is a structured, generic demultiplexer for the unidirectional AIWS adapter data type. It enables the flexible distribution of an incoming data stream to up to five destinations, controlled by an external index. Thanks to its adapter technology and simple event-driven interface, it can be easily integrated into complex automation and data processing systems.

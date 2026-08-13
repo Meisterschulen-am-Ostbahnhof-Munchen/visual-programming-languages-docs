@@ -64,6 +64,10 @@ Der **ADI_SPLIT_5** besitzt keine eigenen Zustände. Er ist ein rein kombinatori
 
 Im IEC 61499‑Umfeld existieren häufig Varianten wie **SPLIT_2**, **SPLIT_3** oder **SPLIT_N**, die eine unterschiedliche Anzahl von Ausgängen bereitstellen. Der **ADI_SPLIT_5** ist eine spezielle Realisierung für exakt fünf Ausgänge unter Verwendung von unidirektionalen ADI‑Adapter‑Schnittstellen. Im Gegensatz zu ereignisbasierten Split‑Bausteinen (z. B. `E_SPLIT`) erfolgt hier die Verteilung über Adapter, was eine typengebundene und typischerweise datenorientierte Kommunikation ermöglicht.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **ADI_SPLIT_5** ist ein einfacher, aber nützlicher Funktionsblock zur Verteilung eines unidirektionalen ADI‑Signals auf bis zu fünf nachfolgende Bausteine. Er eignet sich besonders für modulare Automatisierungslösungen, bei denen ein Eingangssignal mehrfach genutzt werden muss, ohne dass eine zusätzliche Steuerungslogik erforderlich ist. Durch die generische Implementierung kann er in verschiedenen Kontexten wiederverwendet werden.

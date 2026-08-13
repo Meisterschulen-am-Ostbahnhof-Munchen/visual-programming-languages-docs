@@ -58,6 +58,11 @@ The block does not have an explicit state diagram (ECC). It is a purely combinat
 
 **AR_ADD_2 / AR_ADD_4 etc.:** These blocks differ only in the number of inputs (two or four). `AR_ADD_3` is specifically optimized for adding exactly three values. The generic approach allows all these variants to be implemented, if needed, by parameterizing a common base type.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 AR_ADD_3` is a clear, generic function block for adding three values using adapters. Its abstraction via generic attributes and adapters makes it well-suited for IEC 61499 applications that require flexible and reusable signal processing.

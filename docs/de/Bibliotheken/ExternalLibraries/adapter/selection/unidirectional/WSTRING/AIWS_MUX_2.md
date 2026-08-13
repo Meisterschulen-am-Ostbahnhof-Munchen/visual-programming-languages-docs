@@ -77,6 +77,10 @@ Mehrere REQ-Ereignisse nacheinander sind möglich; eine laufende Verarbeitung wi
 - **Standard‑Multiplexer (Daten‑MUX)**: Arbeitet meist mit einzelnen Basisvariablen (z. B. INT, REAL) und ohne Adapter. Der AIWS_MUX_2 kapselt dagegen komplexe Signalstrukturen in einem Adapter, was die Wiederverwendung und Reduzierung der Verdrahtung auf FB-Ebene vereinfacht.
 - **Ereignisgesteuerte vs. kontinuierliche MUX**: Der Baustein aktualisiert nur bei REQ, was in vielen Anwendungen ausreicht und Ressourcen spart.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AIWS_MUX_2 ist ein kompakter, generischer Multiplexer für AIWS-Adapter. Durch die einfache ereignisgesteuerte Selektion auf Basis eines Index eignet er sich ideal für die Umschaltung zwischen zwei analogen Signalen. Die Nutzung der Eclipse‑4diac‑Adaptertechnologie sorgt für eine saubere, wiederverwendbare Schnittstelle und erleichtert die Integration in komplexe Automatisierungslösungen.

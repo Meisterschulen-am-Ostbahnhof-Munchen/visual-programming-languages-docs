@@ -62,6 +62,10 @@ Der Funktionsblock besitzt keinen internen Zustand (keine Zustandsmaschine). Das
 
 Die Bausteine unterscheiden sich lediglich in der Anzahl der Ausgänge; die Funktionsweise und die generische Eigenschaft sind identisch.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AR_SPLIT_9** ist ein einfacher, aber hilfreicher Verteilerbaustein für unidirektionale AR‑Signale. Aufgrund seiner generischen Auslegung kann er flexibel in unterschiedlichen Steuerungsarchitekturen eingesetzt werden, ohne dass eine Typanpassung von Hand erforderlich ist. Er eignet sich besonders für Szenarien, in denen ein Signal auf viele Pfade gleichzeitig dupliziert werden muss.

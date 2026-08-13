@@ -66,6 +66,11 @@ Since the function block does not have its own sequence control (ECC), it is per
 - **Generic demultiplexers (e.g., for other data types)**: These usually work with simple data variables (e.g., `ANY`) and not with adapters. This component is specifically designed for AIS adapters.
 - **AIS_MUX_3**: The multiplexer, as the counterpart, combines several AIS inputs into a single output.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 **AIS_DEMUX_3** is a simple yet functional demultiplexer for AIS data in IEC 61499-based systems. It allows for the targeted routing of an adapter signal to one of three outputs. Thanks to the adapters used, it can be easily integrated into existing AIS communication structures. The event-driven execution ensures deterministic behavior.

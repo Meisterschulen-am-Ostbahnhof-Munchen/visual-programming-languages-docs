@@ -68,6 +68,11 @@ There is no state machine. The function block operates continuously and permanen
 
 Compared to a configurable split block, `AB_SPLIT_5` offers a fixed, yet simple and type-safe solution without additional configuration effort.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AB_SPLIT_5` is a lean, specialized function block for the 1:5 distribution of unidirectional AB adapter signals. Thanks to its generic implementation and clear interface structure, it is ideally suited for the modular design of automation systems where a signal is required multiple times.

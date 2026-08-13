@@ -62,6 +62,11 @@ The function block does not have a complex internal state machine (no Execution 
 
 Compared to the standard subtraction block `SUB` (based on classic IEC 61131-3 elements), which uses discrete inputs like `IN1` and `IN2` as well as explicit events (`REQ` / `CNF`), `AR_SUB_2` offers a significantly higher level of abstraction through the use of adapters. This saves development time when coupling complex signal elements, but requires consistent use of adapters throughout the entire project.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AR_SUB_2` is a specialized and modern computing component for the 4diac IDE. It is ideally suited for service-oriented architectures within IEC 61499, where clarity and standardized adapter interfaces are paramount.

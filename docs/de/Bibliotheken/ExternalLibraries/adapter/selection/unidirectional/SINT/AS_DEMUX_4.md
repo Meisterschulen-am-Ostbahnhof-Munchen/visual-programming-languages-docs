@@ -89,6 +89,10 @@ Der Baustein besitzt keine explizite Zustandsmaschine im XML‑Modell. Sein Verh
 - **`SELECT`‑FB** (IEC 61499 Standard): Wählt basierend auf einem Booleschen Eingang einen von zwei Datenpfaden aus. Der AS_DEMUX_4 arbeitet auf Adapterebene und bietet vier statt zwei Pfade, ist jedoch nicht auf einfache Datentypen beschränkt.
 - **Generische Demultiplexer**: Andere Implementierungen verwenden häufig einzelne Daten‑Ereignis‑Paare. Der AS_DEMUX_4 nutzt Adapter, wodurch komplexe Schnittstellen (Ereignisse + Daten) in einem Rutsch umgeschaltet werden können.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AS_DEMUX_4** ist ein kompakter, generischer Funktionsblock zur dynamischen Verteilung eines unidirektionalen `AS`‑Adapters auf bis zu vier Ausgänge. Seine ereignisgesteuerte Auswahl über einen numerischen Index macht ihn vielseitig einsetzbar in modularen Steuerungssystemen. Durch die Verwendung von Adaptern werden nicht nur Daten, sondern auch die zugehörigen Ereignispfade umgeschaltet, was eine saubere und kapselnde Schnittstellenstruktur ermöglicht. Eine Validierung des Indexes muss außerhalb des Bausteins erfolgen.

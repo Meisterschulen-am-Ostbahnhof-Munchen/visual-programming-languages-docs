@@ -69,6 +69,10 @@ Im Vergleich zu einfacheren ODER-Bausteinen bietet AX_OR_4 den Vorteil von vier 
 
 Vergleich mit [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_OR_4 ist ein effizienter und kompakter Baustein für logische ODER-Verknüpfungen mit vier Eingängen. Seine Adapter-basierte Schnittstelle ermöglicht eine flexible Integration in größere Steuerungssysteme, während die kontinuierliche Arbeitsweise eine sofortige Reaktion auf Eingangsänderungen gewährleistet.

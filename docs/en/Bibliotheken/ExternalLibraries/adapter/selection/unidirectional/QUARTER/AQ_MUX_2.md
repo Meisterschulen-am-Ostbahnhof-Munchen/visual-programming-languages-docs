@@ -80,6 +80,11 @@ Various multiplexer function blocks exist in the IEC 61499 standard (e.g., `SEL`
 - **Specialization for Analog Outputs**: The adapter type `AQ` is optimized for analog output signals (e.g., 0-10V, 4-20mA).
 - **Simplicity**: Only two channels (compared to `MUX` with multiple inputs), which improves clarity.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AQ_MUX_2** is a practical, generic multiplexer module for analog output values. Its adapter-based interface facilitates integration into existing 4diac applications and makes it particularly suitable for modular control solutions. Thanks to its transparent switching logic and clear event handling, it is reliable and easy to understand.

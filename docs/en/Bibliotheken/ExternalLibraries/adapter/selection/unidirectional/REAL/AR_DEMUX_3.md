@@ -67,6 +67,11 @@ Since this is a service-oriented generic function block (FB), no explicit state 
 
 Compared to classic IEC 61439 demultiplexers (e.g., `DEMUX_BOOL`, `DEMUX_INT`), the `AR_DEMUX_3` operates at the adapter level. While conventional demultiplexers distribute individual data values to multiple output variables, this component transmits complete adapter interfaces. This reduces wiring and increases abstraction. Similar components, such as the `MUX_3` (multiplexer), operate in reverse, combining multiple adapter inputs into a single output.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The `AR_DEMUX_3` is a specialized yet flexible component for the dynamic distribution of adapter connections in IEC 61499 systems. Its generic nature and simple index control make it ideal for modular automation solutions where a data path needs to be routed to different receivers. The use of unidirectional AR adapters ensures a clear separation of control and data flow.

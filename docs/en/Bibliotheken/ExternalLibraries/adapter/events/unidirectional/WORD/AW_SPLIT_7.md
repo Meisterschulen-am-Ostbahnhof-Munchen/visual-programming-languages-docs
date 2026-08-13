@@ -59,6 +59,11 @@ The `AW_SPLIT_7` function block does not have an internal state machine. Its beh
 - **Adapter Multiplexers**: Unlike multiplexers that select between multiple inputs, the `AW_SPLIT_7` distributes a single input without selection.
 - **Data Split Function Blocks**: If the function block had data and event ports, it would have to copy data. Adapter-based splits are more efficient because only references are passed on.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The `AW_SPLIT_7` is a simple yet useful generic function block for duplicating a unidirectional AW adapter to seven outputs. Its strengths lie in its flexible type adaptation and efficient, event-free routing. It is particularly suitable for modular automation systems where an adapter needs to be used multiple times.

@@ -70,6 +70,11 @@ Compared to other split blocks, AX_SPLIT_8 offers a fixed number of eight output
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AX_SPLIT_8 function block provides a simple and efficient solution for distributing adapter signals in 4diac systems. Its fixed output of eight ports makes it particularly suitable for standardized distribution tasks in industrial control applications.

@@ -75,6 +75,11 @@ The function block does not have an explicit state machine (ECC). Its functional
 
 The **AUS_DEMUX_3** offers three dedicated outputs and is suitable for applications requiring a fixed number of channels.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AUS_DEMUX_3** is a compact, event-driven demultiplexer for unidirectional OFF signals. Its adapter technology and generic design allow for flexible integration into automation systems compliant with IEC 61499. It is a particularly useful tool for targeted signal distribution in agricultural technology and distributed control systems.

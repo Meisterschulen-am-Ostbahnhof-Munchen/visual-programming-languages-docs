@@ -62,6 +62,11 @@ Since the module has no event inputs/outputs, there is no state machine. The beh
 * **AD_MERGE_4**: A counterpart that combines multiple AD inputs into a single output, as opposed to splitting them.
 * **Pure Data Split Function Blocks (e.g., D_SPLIT_4)**: These split individual data values (e.g., INT, REAL), while AD_SPLIT_4 is specifically designed for the complex AD adapter type.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AD_SPLIT_4** function block is a compact, generic tool for easily replicating a unidirectional AD signal. Its clean, event-free interface makes it particularly suitable for data flow-oriented applications in automation technology where a signal needs to be distributed to multiple receivers. Its generic design allows it to be flexibly adapted to various adapter data types.

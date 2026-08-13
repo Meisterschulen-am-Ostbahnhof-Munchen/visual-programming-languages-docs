@@ -86,6 +86,11 @@ Bei ungültigem K: sofort CNF, kein Schreiben
 
 Unlike a simple data demultiplexer, `AIS_DEMUX_5` operates at a more abstract adapter level and encapsulates all signal transmission (including consistency checks) within the adapter protocol.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 **AIS_DEMUX_5** is a compact, generic function block from the IEC 61499 library that provides clean, adapter-based demultiplexing functionality for AIS signals. Thanks to its generic template, it can be flexibly adapted to the number of outputs required. The simple event-driven interface makes it easy to integrate into higher-level control logic, while the use of adapters ensures high reusability and encapsulation.

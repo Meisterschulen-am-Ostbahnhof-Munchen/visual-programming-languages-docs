@@ -87,6 +87,10 @@ Da es sich bei `AS_MUL_4` um einen mathematischen, zustandslosen Funktionsbauste
 
 ---
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_MUL_4` ist ein hocheffizienter, übersichtlicher und moderner Funktionsbaustein für arithmetische Berechnungen in der IEC 61499. Durch die konsequente Nutzung von unidirektionalen Adaptern wird das Application-Design aufgeräumt gehalten, während gleichzeitig die volle Flexibilität eines generischen Datentyps erhalten bleibt.

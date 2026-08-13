@@ -76,6 +76,10 @@ Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet AX_XOR_5 d
 
 Vergleich mit [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AX_XOR_5 Funktionsblock stellt eine flexible Lösung für XOR-Operationen mit mehreren Eingängen dar. Seine Adapter-basierte Schnittstelle ermöglicht eine einfache Integration in bestehende Steuerungssysteme, während die generische Implementierung Wiederverwendbarkeit und Erweiterbarkeit gewährleistet.

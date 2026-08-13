@@ -79,6 +79,10 @@ Aufgrund der rein datengetriebenen und ereignislosen Arbeitsweise besitzt der Ba
 
 Der Baustein **AR_ADD_4** hebt sich durch die reine Adapter-Kommunikation und die generische Auslegung von klassischen IEC 61499-Arithmetikbausteinen ab. Er eignet sich besonders für Systeme, die bereits auf Adapter-Technologie setzen und keine explizite Ereignissteuerung benötigen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AR_ADD_4** ist ein kompakter, generischer Funktionsblock zur Addition von vier Werten über Adapter-Schnittstellen. Seine einfache und robuste datengetriebene Funktionsweise macht ihn zu einem nützlichen Grundbaustein für modulare Automatisierungsanwendungen. Die Abwesenheit von Ereignissen und die generische Typisierung ermöglichen eine flexible Integration in heterogene Systeme. Für Anwendungen mit mehr oder weniger als vier Summanden muss auf angepasste Varianten oder erweiterte Bausteine zurückgegriffen werden.

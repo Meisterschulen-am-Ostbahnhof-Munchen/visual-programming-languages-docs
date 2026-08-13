@@ -87,6 +87,10 @@ Eine fehlerhafte Indexangabe (Werte außerhalb 0…3) wird nicht behandelt – d
 - **Standard‑MUX‑Bausteine (z. B. MUX2, MUX4)** arbeiten meist mit elementaren Datentypen (INT, BOOL). Der `ATM_MUX_4` ist speziell für den Adapter‑Typ „ATM“ ausgelegt, was eine direkte, protokollgetreue Weiterleitung ohne Datenkonvertierung erlaubt.
 - **Adapter‑basierte Multiplexer** sind seltener als Daten‑Multiplexer. Der vorliegende Baustein kapselt die gesamte Umschaltlogik innerhalb eines Funktionsblocks, was die Netzübersichtlichkeit erhöht.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ATM_MUX_4` ist ein kompakter, generischer Funktionsblock zur Auswahl eines von vier ATM‑Adapter-Eingängen. Er eignet sich besonders für ereignisgesteuerte Applikationen in der Agrarsteuerung, bei denen unidirektionale ATM‑Datenströme umgeschaltet werden müssen. Die Möglichkeit der generischen Umbenennung und die klare ereignisbasierte Schnittstelle machen ihn vielseitig einsetzbar.

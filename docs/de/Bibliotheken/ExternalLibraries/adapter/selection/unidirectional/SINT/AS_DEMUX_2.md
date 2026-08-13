@@ -79,6 +79,10 @@ Da der Baustein keinen internen Zustand speichert (reines kombinatorisches Verha
 
 Der AS_DEMUX_2 ist speziell für die bidirektionale (hier aber unidirektional verwendete) AS-Adapter-Schnittstelle optimiert und arbeitet im Gegensatz zu allgemeinen Datenbausteinen ausschließlich auf Adapterebene.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AS_DEMUX_2** stellt einen einfachen, aber flexiblen Demultiplexer für adapterbasierte Applikationen dar. Dank seines generischen Designs und der reinen Ereignissteuerung eignet er sich hervorragend für dynamische Umschaltaufgaben in IEC‑61499‑Systemen, bei denen ein Datenstrom wahlweise auf zwei Pfade gelenkt werden muss. Seine geringe Komplexität erleichtert die Integration und macht ihn zu einem zuverlässigen Grundbaustein in modularen Steuerungsarchitekturen.

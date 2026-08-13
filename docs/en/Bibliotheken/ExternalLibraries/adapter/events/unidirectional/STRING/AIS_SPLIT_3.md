@@ -63,6 +63,11 @@ This function block does not have an explicit state machine. Its behavior is tha
 
 The AIS_SPLIT_3 fills the gap between a simple 2-way splitter and a fully configurable splitter.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AIS_SPLIT_3** is a simple yet effective component for multiplying an AIS data stream. Thanks to its generic nature and clear, adapter-based interface, it can be easily integrated into larger 4diac projects. It offers a robust and maintainable solution for applications requiring multiple distributions without data modification.

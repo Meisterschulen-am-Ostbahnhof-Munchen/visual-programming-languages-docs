@@ -91,6 +91,10 @@ Diese Zustände sind rein internal und vom Anwender nicht direkt steuerbar.
 - **Mehrkanalige Umschalter (z. B. MUX_2, MUX_4):** Diese bieten eine kleinere Anzahl von Eingängen. Der AW_MUX_5 deckt mit fünf Eingängen einen mittleren Bedarf ab.
 - **Generische Multiplexer:** Einige Implementierungen erlauben eine variable Anzahl von Eingängen über Parameter. Der AW_MUX_5 ist hingegen auf genau fünf festgelegt, bietet aber den Vorteil der klaren Adapter‑Schnittstelle.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AW_MUX_5 ist ein kompakter, ereignisgesteuerter Multiplexer-Funktionsblock für unidirektionale Adapter vom Typ `AW`. Er ermöglicht die einfache Auswahl einer von fünf Signalquellen und eignet sich besonders für modulare, adapterbasierte Steuerungsarchitekturen. Die klare Index-Zuordnung, die generische Auslegung und die Integration als EPL-2.0‑Lizenz machen ihn zu einem nützlichen Baustein in der 4diac‑IDE‑Umgebung.

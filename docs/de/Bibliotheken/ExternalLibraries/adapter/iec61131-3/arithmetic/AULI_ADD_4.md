@@ -73,6 +73,10 @@ Der Funktionsbaustein verhält sich ereignisgesteuert und zustandslos (bzw. besi
 *   **Standard-ADD-Bausteine (z. B. `ADD` aus der IEC 61131-3):** Diese nutzen direkte Daten- und Ereignisports (wie `REQ`, `CNF`, `IN1`, `IN2`). `AULI_ADD_4` hingegen kapselt diese Schnittstellen vollständig in Adaptern, was zu einem aufgeräumteren Control-Flow-Diagramm führt.
 *   **AULI_ADD_2:** Ein ähnlicher Baustein, der jedoch nur zwei Eingänge besitzt. `AULI_ADD_4` spart bei der Addition von vier Werten die Kaskadierung mehrerer einzelner Additions-Bausteine ein.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AULI_ADD_4`-Funktionsbaustein ist ein hocheffizienter, übersichtlicher und moderner Baustein für arithmetische Operationen in IEC 61499. Durch die konsequente Nutzung der `AULI`-Adapterstruktur sorgt er für eine signifikante Reduzierung von Verbindungslinien im Applikationseditor der 4diac IDE und eignet sich hervorragend für modulare Automatisierungslösungen.

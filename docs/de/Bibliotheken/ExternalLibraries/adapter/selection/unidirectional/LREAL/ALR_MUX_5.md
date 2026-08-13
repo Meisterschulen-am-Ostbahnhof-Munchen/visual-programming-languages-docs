@@ -89,6 +89,10 @@ Der FB besitzt keine explizite Zustandsmaschine. Er verharrt im **IDLE**-Zustand
 
 Der ALR_MUX_5 zeichnet sich durch die Adapter-Schnittstelle aus, die komplexe zusammengesetzte Datenstrukturen transportieren kann, und durch die generische Auslegung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock **ALR_MUX_5** bietet eine saubere, ereignisgesteuerte Multiplex-Funktionalität für fünf unidirektionale ALR-Adapter. Er ist generisch, einfach einsetzbar und eignet sich für alle Anwendungen, die eine dynamische Auswahl aus mehreren Datenquellen im ALR-Format erfordern. Dank der Adaptertechnik können auch komplexe Datenpakete ohne zusätzlichen Aufwand umgeschaltet werden.

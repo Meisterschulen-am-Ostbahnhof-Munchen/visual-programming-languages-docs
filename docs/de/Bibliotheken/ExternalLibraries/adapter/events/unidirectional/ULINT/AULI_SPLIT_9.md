@@ -61,6 +61,10 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Er befindet sich stets
 - **AULI_SPLIT_4 / AULI_SPLIT_8**: Diese Varianten unterscheiden sich lediglich in der Anzahl der Ausgangskanäle. Der hier beschriebene Baustein bietet mit 9 Ausgängen eine besonders hohe Verteilungsdichte.
 - **Generische Splitter‑FBs für andere Adaptertypen**: Prinzipiell existieren analoge Splitter für z. B. `AULI`-Adapter mit geringerer Ausgangszahl. Allen gemeinsam ist die zustandslose 1:n‑Vervielfältigung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AULI_SPLIT_9** ist ein einfacher, aber effektiver Verteilerbaustein für den unidirektionalen AULI‑Adapter. Dank seiner generischen Natur und der vollständigen Signaldurchleitung ohne Latenz oder Verarbeitungsverzögerung eignet er sich ideal für Szenarien, in denen ein einzelner Datensatz an viele Empfänger gestreut werden muss. Die fehlende Ereignissteuerung und der reine Adapter‑Ansatz machen ihn besonders leichtgewichtig und performant.

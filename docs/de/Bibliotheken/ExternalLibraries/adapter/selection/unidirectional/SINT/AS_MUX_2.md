@@ -82,6 +82,10 @@ Während sich der Baustein im Zustand `SELECT` befindet, wird kein weiteres `REQ
 - **SEL (Selector)**: Einfache Fallunterscheidung mit Daten-Ein-/Ausgängen. AS_MUX_2 nutzt Adapter, was flexiblere und strukturiertere Verbindungen ermöglicht.
 - **Adapter-basierte Multiplexer anderer Bibliotheken**: Oft auf mehrere Kanäle erweitert (z.B. 4‑fach); der AS_MUX_2 fokussiert auf die 2‑fach-Auswahl.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der AS_MUX_2 ist ein kompakter und generischer Baustein zur Umschaltung zwischen zwei Adaptern. Dank der Adaptertechnik lassen sich komplexe Signalpfade sauber modellieren und zur Laufzeit dynamisch umschalten. Die einfache Handhabung (ein Ereigniseingang, ein Index) macht ihn besonders geeignet für Anwendungen, die eine schnelle und zuverlässige Quellenauswahl erfordern.

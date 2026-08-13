@@ -77,6 +77,11 @@ The internal process can be described as a simple state machine:
 | **AULI_SWITCH** | Generic switch, often with multiple outputs and extended index logic. |
 | **AULI_DEMUX_2** (this FB) | Demultiplexer: Distributes one input to one of two outputs – simpler and more specific than a generic switch. |
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AULI_DEMUX_2** is a compact yet powerful basic function block for AULI-based communication. It enables the flexible distribution of data streams across two paths and, due to its generic nature, can be easily integrated into a wide variety of control and automation scenarios.

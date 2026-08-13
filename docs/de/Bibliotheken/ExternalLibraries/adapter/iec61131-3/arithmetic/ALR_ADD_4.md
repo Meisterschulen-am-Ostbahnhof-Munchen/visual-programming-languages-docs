@@ -66,6 +66,10 @@ Da dieser Funktionsbaustein eine rein kombinatorische, mathematische Operation a
 *   **Standard-ADD-Baustein:** Ein klassischer IEC 61131-3 `ADD`-Baustein nutzt direkte Dateneingänge (z. B. `REAL`, `INT`) und benötigt oft explizite Event-Verbindungen (`REQ` / `CNF`). `ALR_ADD_4` kapselt diese Daten und Events in Adaptern, was die Projektierung vereinfacht.
 *   **Zwei-Wege-Addierer (z.B. ALR_ADD_2):** Bietet nur zwei Eingänge. `ALR_ADD_4` spart bei der Summierung von drei oder vier Werten das Kaskadieren mehrerer kleinerer Addierer-Bausteine ein.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `ALR_ADD_4`-Baustein ist eine effiziente und saubere Lösung für arithmetische Additionen in komponenten- und adapterbasierten Systemarchitekturen innerhalb von 4diac. Er fördert die Wiederverwendbarkeit und sorgt für ein aufgeräumtes Systemdesign.

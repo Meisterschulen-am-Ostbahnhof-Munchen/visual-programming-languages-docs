@@ -74,6 +74,10 @@ Der Funktionsblock besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung
 - **AUI_MUX_4 oder AUI_MUX_8**: Erweiterte Versionen mit mehr Eingängen; AUI_MUX_2 bietet eine minimalistische, intuitive 2-Kanal-Auswahl.
 - **AUI_MERGE**: Ein Baustein, der mehrere AUI-Ströme zusammenführt (datengetrieben) – hier handelt es sich um eine aktive Auswahl, nicht um eine Merge-Operation.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AUI_MUX_2** ist ein kompakter, generischer Multiplexer für unidirektionale AUI-Schnittstellen. Er ermöglicht eine saubere, ereignisgesteuerte Umschaltung zwischen zwei Eingangsadaptern und eignet sich ideal für alle Anwendungen, bei denen eine einfache 2-zu-1-Auswahl auf AUI-Ebene benötigt wird. Dank seiner generischen Auslegung kann er flexibel an verschiedene AUI-Datentypen angepasst werden.

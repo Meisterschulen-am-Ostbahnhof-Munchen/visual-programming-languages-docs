@@ -75,6 +75,10 @@ Damit handelt es sich um einen rein ereignisgesteuerten Baustein ohne internes G
 - **ALR_SWITCH** – Ein 1‑zu‑1‑Umschalter, der einen einzelnen Ausgang aus mehreren Eingängen auswählt, aber keine Verteilung auf mehrere Ausgänge vornimmt.
 - **Bausteine mit festerer Ausgangsanzahl** (z.B. `ALR_DEMUX_2`, `ALR_DEMUX_8`) unterscheiden sich nur in der Anzahl der verfügbaren Adapter‑Plugs.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der `ALR_DEMUX_5` ist ein kompakter, ereignisgesteuerter Demultiplexer für ALR‑Adapter. Er eignet sich besonders für Anwendungen, in denen ein einzelner Datenstrom auf eine von mehreren Leitungen umgeschaltet werden muss. Durch seine generische Auslegung und die unidirektionale Adapterschnittstelle ist er flexibel in verschiedenste Steuerungsumgebungen integrierbar.

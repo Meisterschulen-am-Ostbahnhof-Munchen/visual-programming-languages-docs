@@ -64,6 +64,10 @@ Da der Baustein keine Ereignis‑Eingänge/Ausgänge oder internen Zustände bes
 | **ALI_MERGE_2** | Fasst zwei ALI‑Eingänge zu einem ALI‑Ausgang zusammen. | Gegenteilige Funktion (Join). |
 | **ALI_FILTER** | Leitet nur bestimmte Daten/Ereignisse weiter. | Enthält Filterlogik. |
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 **ALI_SPLIT_2** ist ein einfacher, aber essenzieller Funktionsblock für die Verteilung unidirektionaler ALI‑Schnittstellen. Seine generische Natur und die schlanke Implementierung machen ihn zu einem universellen Werkzeug in der IEC 61499‑Komponentenentwicklung, wenn ein Signal oder Datenstrom an mehrere nachfolgende Blöcke weitergegeben werden muss.

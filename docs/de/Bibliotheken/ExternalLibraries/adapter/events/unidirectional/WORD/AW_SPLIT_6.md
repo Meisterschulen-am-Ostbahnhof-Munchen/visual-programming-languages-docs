@@ -58,6 +58,10 @@ Der Funktionsblock besitzt keine internen Zustände. Er ist ein reiner Split‑B
 
 Im Vergleich zu einem **AW_SPLIT_2** oder **AW_SPLIT_4** bietet der vorliegende Baustein eine höhere Anzahl von Ausgängen (6). Damit eignet er sich besonders für Systeme mit vielen parallelen Empfängern. Alternativ könnte eine Kaskadierung mehrerer kleiner Split‑Bausteine verwendet werden, was jedoch die Übersichtlichkeit und Performance beeinträchtigen kann. Der **AW_SPLIT_6** ist als Komplettlösung für diese Anforderung optimiert.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AW_SPLIT_6** ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfältigung eines unidirektionalen AW‑Signals auf sechs Ausgänge. Durch seine generische Natur und die Adapter‑basierte Schnittstelle fügt er sich nahtlos in eine 4diac‑Umgebung ein. Er empfiehlt sich für alle Anwendungen, bei denen ein einzelnes Signal ohne Umwege mehrfach benötigt wird.

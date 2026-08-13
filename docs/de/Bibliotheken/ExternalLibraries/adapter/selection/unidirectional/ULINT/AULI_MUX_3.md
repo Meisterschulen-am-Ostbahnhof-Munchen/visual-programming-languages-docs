@@ -76,6 +76,10 @@ Der FB besitzt keine ausgeprägte Zustandsmaschine (z.B. ECC), da er rein ereign
 - **AULI-Splitter**: Das Gegenstück, das einen Eingang auf mehrere Ausgänge verteilt (z.B. `AULI_DISTRIBUTE`). Während der MUX viele Quellen auf einen Ausgang bündelt, verteilt der Splitter eine Quelle auf viele Ausgänge.
 - **Selektor ohne Adapter**: Ein einfacher Index-basierter FB mit Daten-Eingängen (z.B. `SEL`) bietet typischerweise nur Einzelwerte, keine komplexen Adapter-Interfaces.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AULI_MUX_3` ist ein flexibler, ereignisgesteuerter Multiplexer, der über Adapter-Schnittstellen bis zu drei Datenquellen umschaltet. Sein generischer Charakter und die Verwendung von Standard-Adaptern machen ihn ideal für modulare und wiederverwendbare Steuerungsanwendungen. Die einfache Schnittstelle mit nur einem Index und einem Bestätigungsereignis ermöglicht eine klare Einbindung in übergeordnete Logiken.

@@ -72,6 +72,11 @@ The function block does not have an explicit state machine. Its behavior is pure
 - **Standard MUX (for Data)**: Conventional multiplexers work with data types (e.g., INT, BOOL) and data outputs. In contrast, the AR_MUX_4 works with adapters, which enables the direct routing of complex signal paths (e.g., actuator control).
 - **AR_SWITCH (Switch)**: A similar component that often executes a switching command in response to an event, but with a different number of inputs/outputs or a more general configuration.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AR_MUX_4 is a specialized multiplexer for AR adapters that allows for simple and fast switching between four input signals. Thanks to its generic implementation and clean event-driven interface, it is ideally suited for applications that require flexible signal forwarding in automation technology.

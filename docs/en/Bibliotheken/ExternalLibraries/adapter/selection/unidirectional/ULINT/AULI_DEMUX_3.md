@@ -76,6 +76,11 @@ Since no state machine is defined in the XML, the internal logic can be consider
 - **AULI_SELECT**: Often a more specialized function block with a fixed number of channels; `AULI_DEMUX_3` is explicitly designed for three channels.
 - **Generic Demultiplexers**: The generic nature of the function block allows the number of channels (e.g., `AULI_DEMUX_N`) to be changed by parameterization without having to recreate the function block.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AULI_DEMUX_3** is a simple yet useful function block for the targeted distribution of an AULI value to three outputs. Its generic architecture and clear event-driven interface make it a flexible tool in automation technology, especially when it comes to channel switching or signal distribution.

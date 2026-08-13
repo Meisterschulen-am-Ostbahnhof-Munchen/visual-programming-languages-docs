@@ -74,6 +74,11 @@ Compared to standard multiplication function blocks (such as `MUL`), which use s
 
 --
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 `AS_MUL_3` is an efficient, modular, and reusable function block for arithmetic triple multiplication. It is ideally suited for modern, adapter-based software architectures within IEC 61499 and contributes to the clarity of complex control applications.

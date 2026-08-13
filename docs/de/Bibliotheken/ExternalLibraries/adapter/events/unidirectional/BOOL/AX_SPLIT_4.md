@@ -68,6 +68,10 @@ Im Vergleich zu einfachen Split-Bausteinen bietet AX_SPLIT_4 eine spezifische 1:
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der AX_SPLIT_4 Funktionsblock bietet eine einfache und effiziente Lösung zur Verteilung von AX-Adapter-Daten auf vier parallele Ausgänge. Seine generische Natur und die Verwendung standardisierter Adapter machen ihn vielseitig einsetzbar in verschiedenen Automatisierungsanwendungen.

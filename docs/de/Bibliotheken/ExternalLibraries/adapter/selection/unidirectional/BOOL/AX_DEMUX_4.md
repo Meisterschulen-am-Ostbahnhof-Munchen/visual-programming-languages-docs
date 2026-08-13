@@ -68,6 +68,10 @@ Im Vergleich zu einfachen Multiplexern bietet AX_DEMUX_4 vier feste Ausgänge mi
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der AX_DEMUX_4 ist ein robuster und einfach zu konfigurierender Demultiplexer für industrielle Automatisierungssysteme. Seine Adapter-basierte Architektur ermöglicht flexible Integration in bestehende Steuerungsstrukturen, während die Index-gesteuerte Auswahl eine präzise Datenverteilung gewährleistet.

@@ -93,6 +93,10 @@ Der FB besitzt keine explizite Zustandsmaschine (kein ECC im XML). Das Verhalten
 - **AS_SELECT (Multiplexer)**: Führt die umgekehrte Operation aus – mehrere Eingänge auf einen Ausgang.
 - **Direkte Variablenumschaltung**: Alternativ könnte ein Multiplexer über Data-Variablen realisiert werden. Der Adapter-Ansatz bietet jedoch eine saubere Interface-Kapselung und Wiederverwendbarkeit.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der Funktionsblock **AS_DEMUX_5** stellt eine flexible und robuste Lösung zur kanalselektiven Weiterleitung von Adapter-Signalen dar. Seine generische Natur erlaubt eine einfache Anpassung an verschiedene Anforderungen, während die klare Ereignisschnittstelle eine zuverlässige und nachvollziehbare Steuerung ermöglicht. Durch die Einhaltung des IEC 61499‑Standards eignet er sich besonders für modulare Automatisierungsprojekte, in denen Wiederverwendbarkeit und Typsicherheit im Vordergrund stehen.

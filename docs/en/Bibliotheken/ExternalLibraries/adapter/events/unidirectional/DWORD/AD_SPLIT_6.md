@@ -60,6 +60,11 @@ The function block has no internal states or state machines. It behaves passivel
 
 Other split components such as `AD_SPLIT_2`, `AD_SPLIT_4`, or `AD_SPLIT_8` differ only in the number of outputs. `AD_SPLIT_6`, with six outputs, offers a middle ground between these variants. Components with additional logic (e.g., conditional distribution) also exist, but this is not the case here.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 AD_SPLIT_6` is a simple yet useful generic function block for 1:6 distribution of an AD adapter. Its clear interface and lack of state logic make it easy to understand and efficient for distribution tasks in IEC 61499-based applications.

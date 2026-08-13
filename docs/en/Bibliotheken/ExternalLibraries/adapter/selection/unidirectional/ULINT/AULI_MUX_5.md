@@ -91,6 +91,11 @@ A more detailed state machine is not required because the function block operate
 
 The AULI_MUX_5 is distinguished by its use of AULI adapters, which enables clean, modular encapsulation of data and protocols.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AULI_MUX_5** is a flexible and easy-to-use function block for selecting one of five AULI signals. Its generic definition allows for reuse even with a different number of inputs. The clear, event-driven interface and stateless operation make it a reliable building block for modular automation solutions.

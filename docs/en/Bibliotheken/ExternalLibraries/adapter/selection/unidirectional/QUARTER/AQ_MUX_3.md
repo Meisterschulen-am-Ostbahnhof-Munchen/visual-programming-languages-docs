@@ -69,6 +69,11 @@ No explicit ECC (Execution Control Chart) is defined in the provided XML. The be
 - **AQ_MUX_2** – A multiplexer with only two inputs (IN1, IN2). The AQ_MUX_3 extends this functionality to three inputs.
 - **Data-Based Multiplexer Blocks** – Unlike purely data-oriented multiplexers (e.g., `MUX` based on `ANY` data types), the AQ_MUX_3 operates exclusively via adapters, resulting in tighter coupling to the AQ adapter interface.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The AQ_MUX_3 is a simple yet effective generic multiplexer for AQ adapters. It allows flexible switching between three analog inputs and is particularly well-suited for modular control architectures where loose coupling via adapters is desired. Its deterministic response and simple interface make it a reliable component in the 4diac IDE.

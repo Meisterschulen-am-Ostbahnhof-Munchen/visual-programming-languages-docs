@@ -70,6 +70,10 @@ Als rein mathematischer Kombinationsbaustein besitzt `AS_ADD_2` kein komplexes i
 *   **Standard ADD (z. B. F_ADD):** Der klassische IEC 61131-3 bzw. IEC 61499 ADD-Baustein arbeitet mit diskreten Variablen (z. B. `ANY_NUM`) und separaten Event-Ports (`REQ` / `CNF`). `AS_ADD_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung vereinfacht, jedoch die Verwendung des spezifischen Adaptertyps `AS` voraussetzt.
 *   **Multi-Addierer (z. B. ADD_3):** Ermöglicht die Addition von drei oder mehr Werten in einem einzigen Baustein, ist jedoch oft unhandlicher, wenn Datenstrukturen konsistent über Adapter transportiert werden sollen.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AS_ADD_2` ist ein spezialisierter Hilfsbaustein für moderne, modular aufgebaute IEC 61499 Steuerungsprogramme. Durch die konsequente Nutzung von Adaptern fügt er sich nahtlos in serviceorientierte Architekturen ein und minimiert den Design- und Verdrahtungsaufwand in der 4diac IDE.

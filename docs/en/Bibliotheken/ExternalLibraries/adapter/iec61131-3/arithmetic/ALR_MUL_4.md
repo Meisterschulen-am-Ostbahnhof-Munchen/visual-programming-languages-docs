@@ -68,6 +68,11 @@ The function block has no internal state behavior (no state machine/ECC) and ope
 * **Standard MUL Function Blocks (IEC 61131-3)**: Classic multiplication function blocks typically work directly with standard data types (e.g., `REAL`) and require separate event connections (`REQ`/`CNF`). `ALR_MUL_4` simplifies this through the use of adapters.
 * **ALR_MUL_2 / ALR_MUL_3**: These function blocks are designed for multiplying only two or three values. The `ALR_MUL_4` function block eliminates the need for additional intermediate steps and block cascades when four multiplicands are required, thus improving the performance and clarity of the control program.
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALR_MUL_4` function block is a practical auxiliary block for mathematical signal processing in 4diac. By consistently utilizing the adapter concept, it significantly reduces the number of connecting lines in the application diagram while simultaneously offering the flexibility of a generic function block.

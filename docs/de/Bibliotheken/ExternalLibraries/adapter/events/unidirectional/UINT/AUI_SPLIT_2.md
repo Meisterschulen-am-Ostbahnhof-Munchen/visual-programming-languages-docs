@@ -61,6 +61,10 @@ Der AUI_SPLIT_2 verfügt über **keine Zustandsmaschine**. Es gibt keine interne
 - **AUI_MERGE_2**: Führt zwei AUI-Eingänge zu einem Ausgang zusammen (ggf. mit Arbitration). Der Splitter arbeitet in die entgegengesetzte Richtung.
 - **AUI_PASS**: Ein reiner 1:1-Durchgangsadapter ohne Verzweigung.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AUI_SPLIT_2** ist ein minimalistischer, aber nützlicher Funktionsblock zur Aufteilung eines unidirektionalen AUI-Signals auf zwei Ausgänge. Dank seiner generischen Implementierung und dem Verzicht auf komplexe Logik eignet er sich ideal für Szenarien, in denen eine saubere, verlustfreie Vervielfältigung von Datenströmen erforderlich ist.

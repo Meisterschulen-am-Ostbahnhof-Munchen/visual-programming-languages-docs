@@ -66,6 +66,11 @@ Compared to simple split function blocks, AX_SPLIT_4 offers a specific 1:4 split
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The AX_SPLIT_4 function block offers a simple and efficient solution for distributing AX adapter data to four parallel outputs. Its generic nature and the use of standardized adapters make it versatile for use in various automation applications.

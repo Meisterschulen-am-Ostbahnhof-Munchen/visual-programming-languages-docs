@@ -68,6 +68,11 @@ This function block has **no explicit state machine** (no ECC). All logic is eve
 - **AUS_DEMUX_5 vs. Conventional DEMUX with Data Outputs**: While classic demultiplexers often have scalar data outputs, this function block uses adapter interfaces. This enables closer coupling to other adapter-based components and facilitates modular system design.
 - **AUS_DEMUX_5 vs. MUX Components**: The AUS_DEMUX performs the opposite function of a multiplexer (e.g., AUS_MUX), combining multiple inputs into a single output.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AUS_DEMUX_5** is a specialized, generic function block for unidirectional signal distribution via adapter interfaces. Its clear, event-driven logic and the use of up to five outputs make it a useful tool for modular and flexible automation according to IEC 61499. Its generic design allows it to be easily adapted to different adapter variants, increasing reusability.

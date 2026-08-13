@@ -60,6 +60,10 @@ Der Baustein besitzt kein explizites Zustandsdiagramm (ECC). Es handelt sich um 
 
 **AR_ADD_2 / AR_ADD_4 etc.:** Diese Bausteine unterscheiden sich lediglich in der Anzahl der Eingänge (zwei bzw. vier). `AR_ADD_3` ist speziell für die Addition von genau drei Werten optimiert. Der generische Ansatz erlaubt es, alle diese Varianten bei Bedarf durch Parametrisierung eines gemeinsamen Basistyps zu realisieren.
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 `AR_ADD_3` ist ein übersichtlicher, generischer Funktionsblock für die Addition dreier Werte unter Verwendung von Adaptern. Durch die Abstraktion über generische Attribute und Adapter eignet er sich gut für IEC-61499-Anwendungen, die eine flexible und wiederverwendbare Signalverarbeitung erfordern.

@@ -76,6 +76,11 @@ Compared to the standard subtraction function block `SUB` from the IEC 61131-3 l
 
  ---
 
+## Change Detection
+
+The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `ALI_SUB_2` is a versatile and easy-to-maintain function block for arithmetic subtraction in 4diac. Thanks to the consistent use of adapters, it integrates perfectly into service-oriented and modular control architectures and minimizes wiring effort in the development tool.

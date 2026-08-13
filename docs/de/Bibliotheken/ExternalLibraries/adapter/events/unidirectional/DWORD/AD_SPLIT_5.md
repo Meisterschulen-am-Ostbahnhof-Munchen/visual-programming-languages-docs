@@ -62,6 +62,10 @@ Der Funktionsblock hat keine internen Zustände oder Schritte. Es handelt sich u
 - **Manuelle Verkabelung**: Ohne diesen Baustein müsste der Ausgang des Quellbausteins mehrfach verbunden werden, was in der 4diac-IDE nicht direkt möglich ist (ein Port kann nur eine Verbindung haben). Der Splitter löst dieses Problem.
 - **Ereignisbasierte Splitter**: Es gibt auch Splitter für Ereignisse (z. B. `E_SPLIT`), die jedoch auf Ereignis- und Datenports basieren. `AD_SPLIT_5` arbeitet dagegen ausschließlich auf Adapterebene.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der Funktionsblock `AD_SPLIT_5` ist ein einfaches, aber nützliches Werkzeug zur Vervielfachung von Adaptersignalen in der 4diac-Entwicklungsumgebung. Durch seine generische Auslegung und den Verzicht auf eine Zustandsmaschine bietet er eine effiziente Möglichkeit, ein Adaptersignal ohne Code-Änderungen auf fünf parallele Pfade zu verteilen. Er ist ideal für modulare und skalierbare Automatisierungsanwendungen.

@@ -68,6 +68,10 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Er führt nach jedem `REQ
 - **AB_MUX_8**: Ein erweiterter Multiplexer für acht Eingänge. Der `AB_MUX_4` liegt dazwischen und bietet einen guten Kompromiss zwischen Flexibilität und Ressourcenverbrauch.
 - **Demultiplexer (AB_DMUX)**: Verteilt ein Signal auf mehrere Ausgänge; der `AB_MUX_4` arbeitet in die entgegengesetzte Richtung.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AB_MUX_4` ist ein kompakter, generischer Multiplexer-Baustein für die Adapter-Schnittstelle `unidirectional::AB`. Aufgrund seiner generischen Natur und der einfachen Ereignissteuerung eignet er sich hervorragend für den Aufbau modularer Automatisierungslösungen mit einer begrenzten Anzahl wählbarer Signalquellen.

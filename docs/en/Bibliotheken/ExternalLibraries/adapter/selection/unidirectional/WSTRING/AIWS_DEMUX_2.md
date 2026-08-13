@@ -77,6 +77,11 @@ Error states (e.g., invalid index) can optionally be represented by an error eve
 - **Standard DEMUX (e.g., for ANY data types)**: Often uses data inputs and outputs instead of adapters; the adapter approach encapsulates the protocol and facilitates reuse.
 - **AIWS Splitter**: Unlike a splitter (which sends data to all outputs simultaneously), the demultiplexer selectively chooses a path.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AIWS_DEMUX_2** is a compact, event-driven demultiplexer for AIWS protocol data. It is ideally suited for applications where a data stream needs to be routed to one of two destinations on demand. Its generic architecture allows for easy expansion to more channels without requiring fundamental changes to the interface.

@@ -61,6 +61,11 @@ The function block does not have a state machine – it is event-free and contin
 - **AI_SELECT** or **AI_MUX**: These modules select one input from several, while the AI_SPLIT multiplies the input signal.
 - **Standard Adapter Split**: Some libraries offer generic split function blocks, but these often require additional event or data interfaces. The AI_SPLIT_4, with its pure adapter approach, is particularly easy to integrate into adapter chains.
 
+## Change Detection
+
+Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
+
+
 ## Conclusion
 
 The **AI_SPLIT_4** function block is a specialized yet easy-to-use function block for multiplying analog signals. Thanks to its pure adapter interface, it can be seamlessly integrated into 4diac projects without additional event logic. It is particularly suitable for modular and scalable automation solutions where a single measured value needs to be distributed to multiple devices.

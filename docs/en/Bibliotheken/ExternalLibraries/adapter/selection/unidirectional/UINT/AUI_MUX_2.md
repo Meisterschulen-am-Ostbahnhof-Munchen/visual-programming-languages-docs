@@ -72,6 +72,11 @@ The function block does not have an explicit state machine. Processing is event-
 - **AUI_MUX_4 or AUI_MUX_8**: Extended versions with more inputs; AUI_MUX_2 offers a minimalist, intuitive 2-channel selection.
 - **AUI_MERGE**: A function block that combines multiple AUI streams (data-driven) – this is an active selection, not a merge operation.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AUI_MUX_2** is a compact, generic multiplexer for unidirectional AUI interfaces. It enables clean, event-driven switching between two input adapters and is ideal for all applications requiring simple 2-to-1 selection at the AUI level. Thanks to its generic design, it can be flexibly adapted to various AUI data types.

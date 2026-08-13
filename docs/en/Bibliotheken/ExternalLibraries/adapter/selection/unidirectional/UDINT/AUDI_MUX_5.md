@@ -65,6 +65,11 @@ The function block does not have explicit states in the sense of a state machine
 
 Standard MUX function blocks (e.g., `MUX` or `SEL`) offer similar functionality, often using simple data types (BOOL, INT, REAL). The **AUDI_MUX_5** stands out due to its use of adapters that bundle complex, structured data or entire signal paths into a single connection point. This makes it particularly suitable for use in object-oriented or adapter-based architectures.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The **AUDI_MUX_5** is a compact, generic multiplexer for five adapter inputs. It enables clean, type-tested switching of signals in automation technology and, due to its generic nature, can be flexibly integrated into various control environments. Its ease of use and clear interface make it a useful tool for signal selection in 4diac projects.

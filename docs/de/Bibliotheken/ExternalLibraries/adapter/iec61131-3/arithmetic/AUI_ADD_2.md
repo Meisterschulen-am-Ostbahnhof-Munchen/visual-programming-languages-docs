@@ -67,6 +67,10 @@ Der Baustein besitzt keinen komplexen internen Zustandsautomaten (ECC). Die Vera
 
 Im Vergleich zu Standard-Additionsbausteinen der IEC 61131-3 (wie z. B. einem klassischen `ADD`-Baustein mit diskreten Eingängen) entfällt beim `AUI_ADD_2` das separate Verdrahten von REQ/CNF-Ereignissen und den eigentlichen Datenleitungen. Dies reduziert die Fehleranfälligkeit bei der manuellen Erstellung von Event-Daten-Assoziationen (With-Verbindungen).
 
+## Änderungserkennung
+
+Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der `AUI_ADD_2` ist ein hocheffizienter, modularer Baustein für die mathematische Addition in modernen IEC 61499-Systemen. Durch den konsequenten Einsatz von Adaptern fördert er ein übersichtliches, fehlerresistentes und gut wartbares Anwendungsdesign in der 4diac-IDE.

@@ -73,6 +73,10 @@ Ein Wechsel erfolgt ausschließlich bei Eintreffen des REQ-Ereignisses. Der Zust
 - **Mehrstufige Multiplexer**: Sollen mehr als drei Eingänge unterstützt werden, ist eine Kaskadierung mehrerer ATM_MUX_3-Bausteine oder ein eigenständiger FB mit größerer K-Anzahl erforderlich.
 - **Adapter-Selektor (z.B. SELECT-Adapter)**: Einige Bibliotheken bieten direkt Adapter-Selektoren an, die jedoch oft keine explizite Indexsteuerung über einen Daten-Eingang besitzen, sondern nur über Ereignisse umschalten.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **ATM_MUX_3** ist ein kompakter und flexibler Baustein zur dynamischen Umschaltung von drei ATM-Adaptern auf einen gemeinsamen Ausgang. Seine einfache Handhabung über Ereignis und Index macht ihn ideal für Steuerungsanwendungen, bei denen mehrere gleichartige Quellen bedarfsgerecht angebunden werden müssen. Die generische Auslegung erlaubt eine breite Wiederverwendung in verschiedenen Projekten.

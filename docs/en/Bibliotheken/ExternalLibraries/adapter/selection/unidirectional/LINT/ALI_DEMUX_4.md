@@ -83,6 +83,11 @@ A detailed state machine is not explicitly modeled because the function block op
 
 The ALI_DEMUX_4 is specifically optimized for the ALI adapter interface and therefore offers seamless integration into ALI-based applications.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **ALI_DEMUX_4** function block provides a simple and effective way to distribute an incoming ALI signal stream to four outputs. It is characterized by its generic design, clear interfaces, and ease of use. Thanks to its adapter architecture, it is particularly suitable for use in agricultural control systems with the ALI protocol and contributes to a clean structuring of the data flow.

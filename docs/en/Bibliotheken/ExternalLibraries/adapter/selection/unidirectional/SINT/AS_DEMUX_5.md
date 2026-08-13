@@ -92,6 +92,11 @@ The FB does not have an explicit state machine (no ECC in the XML). Its behavior
 - **AS_SELECT (Multiplexer)**: Performs the reverse operation – multiple inputs to one output.
 - **Direct Variable Switching**: Alternatively, a multiplexer could be implemented using data variables. The adapter approach, however, offers clean interface encapsulation and reusability.
 
+## Change Detection
+
+The selected output plug is only written and its adapter event only sent if the incoming value differs from the value currently held on that plug. If the value is unchanged, no adapter event is sent, avoiding redundant updates on unrelated peers.
+
+
 ## Conclusion
 
 The **AS_DEMUX_5** function block represents a flexible and robust solution for channel-selective forwarding of adapter signals. Its generic nature allows for easy adaptation to various requirements, while the clear event interface enables reliable and traceable control. By complying with the IEC 61499 standard, it is particularly suitable for modular automation projects where reusability and type safety are paramount.

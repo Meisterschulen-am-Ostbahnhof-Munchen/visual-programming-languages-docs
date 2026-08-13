@@ -62,6 +62,10 @@ Der FB besitzt keine Zustandsmaschine (kein ECC) und daher keinen definierten Zu
 - **AL_SPLIT_2, AL_SPLIT_4** … **AL_SPLIT_N**: Diese Bausteine unterscheiden sich lediglich in der Anzahl der Ausgangskanäle. Die Funktionsweise ist identisch – eine einfache 1:N‑Aufteilung.
 - **Andere Split‑Bausteine mit Ereignissen oder Daten:** Im Unterschied zu diesen besitzt **AL_SPLIT_6** keine Daten‑ oder Ereignisschnittstellen, sondern arbeitet rein über Adapter. Das vereinfacht die Konfiguration, schränkt aber die Typvielfalt ein.
 
+## Änderungserkennung
+
+Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.
+
 ## Fazit
 
 Der **AL_SPLIT_6** ist ein kompakter und effizienter Funktionsblock zur Vervielfachung eines unidirektionalen AL‑Adapter‑Signals. Durch seinen generischen Charakter und die einfache Struktur eignet er sich hervorragend für alle Anwendungen, bei denen ein Eingangssignal auf mehrere Ausgänge verteilt werden muss, ohne zusätzliche Logik oder Ereignissteuerung.

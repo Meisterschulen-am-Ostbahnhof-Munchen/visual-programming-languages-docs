@@ -72,6 +72,10 @@ Der Funktionsblock besitzt keinen expliziten Zustandsautomaten. Die Logik beschr
 - **Standard-Multiplexer mit Dateneingängen**: Im Gegensatz zu FB-Typen, die direkte `ANY`-Dateneingänge verwenden, arbeitet `AI_MUX_3` rein adapterbasiert. Dies ermöglicht eine bessere Modularität, da die angehängten Adapter selbst komplexe Datenstrukturen oder Verarbeitungslogik enthalten können.
 - **Mehrkanal-Multiplexer**: Ein Baustein mit mehr als drei Kanälen (z. B. AI_MUX_4) würde analog funktionieren, aber durch die Adapterdefinition ist eine Erweiterung durch mehrere Instanzen oder einen eigenen FB mit mehr Sockets möglich.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug (`OUT`) wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.
+
 ## Fazit
 
 Der **AI_MUX_3** ist ein kompakter, generischer Analog-Multiplexer für die 4diac-IDE. Durch den Einsatz von Adaptern und die Ereignissteuerung eignet er sich besonders für flexible, modulare Automatisierungslösungen, bei denen mehrere analoge Signalquellen ausgewählt und an einen einzigen Ausgang weitergeleitet werden müssen.

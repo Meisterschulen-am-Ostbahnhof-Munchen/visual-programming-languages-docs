@@ -75,6 +75,11 @@ The `AUDI_MUX_3` does not have an explicit state machine. Its operation can be d
 - **Standard MUX**: Conventional multiplexers (e.g., `MUX2` or `MUX4`) usually operate at the data type level (e.g., `ANY`), while `AUDI_MUX_3` is specifically designed for adapter interfaces and forwards the entire adapter connection, including events.
 - **Conditional Adapters**: Some libraries offer conditional adapter routing, but usually with more complex state logic.
 
+## Change Detection
+
+The selected output plug (`OUT`) is only written and its adapter event only sent if the incoming value differs from the value currently held on `OUT`. If the value is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.
+
+
 ## Conclusion
 
 The `AUDI_MUX_3` is a compact, generic function block for easily selecting one of three identical AUDI adapter inputs. Its event-driven operation and simplified interface make it ideal for fast switching tasks in automation applications. Feedback via the `CNF` event ensures reliable synchronization in the control sequence.

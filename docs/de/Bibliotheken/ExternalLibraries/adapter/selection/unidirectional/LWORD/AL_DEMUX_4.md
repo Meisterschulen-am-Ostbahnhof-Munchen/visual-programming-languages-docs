@@ -80,6 +80,10 @@ Der Baustein besitzt keine modellierten Zustände, da er rein ereignisgesteuert 
 - **`AL_MUX_4`:** Der Multiplexer-Gegenpart (`AL_MUX_4`) fasst mehrere Eingänge zu einem Ausgang zusammen. `AL_DEMUX_4` realisiert die umgekehrte Richtung.
 - **Generische MUX/DEMUX:** Standard IEC 61449-2 bietet meist MUX-Bausteine für skalare Daten, jedoch ohne Adapterunterstützung. `AL_DEMUX_4` füllt diese Lücke für unidirektionale Adapter.
 
+## Änderungserkennung
+
+Der ausgewählte Ausgangs-Plug wird nur beschrieben und sein Adapter-Event nur gesendet, wenn sich der eingehende Wert vom aktuell auf diesem Plug gehaltenen Wert unterscheidet. Bleibt der Wert unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nicht betroffenen Peers vermieden.
+
 ## Fazit
 
 Der **AL_DEMUX_4** ist ein kompakter und effektiver Funktionsbaustein zur Signalverteilung auf Adapterbasis. Durch die klare Ereignissteuerung und die Beschränkung auf vier Ausgänge eignet er sich besonders für überschaubare Automatisierungsaufgaben, bei denen ein einzelnes analoges oder logisches Signal wahlweise an verschiedene Stellen geschaltet werden muss. Die generische Auslegung ermöglicht den Einsatz mit unterschiedlichen Adaptertypen und erhöht die Wiederverwendbarkeit.

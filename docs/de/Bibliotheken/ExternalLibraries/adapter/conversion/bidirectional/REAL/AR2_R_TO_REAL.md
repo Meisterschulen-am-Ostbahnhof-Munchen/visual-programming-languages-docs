@@ -1,11 +1,11 @@
-# AR2_X_TO_REAL
+# AR2_R_TO_REAL
 
-![AR2_X_TO_REAL](./AR2_X_TO_REAL.svg)
+![AR2_R_TO_REAL](./AR2_R_TO_REAL.svg)
 
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsblock **AR2_X_TO_REAL** ist ein Composite-Baustein, der als Brücke zwischen einer AR2‑Adapter‑Schnittstelle und REAL‑Werten dient. Er ermöglicht die bidirektionale Datenübertragung und Konvertierung, wobei die eigentliche Umwandlung durch einen externen Adapter vom Typ `adapter::types::bidirectional::AR2` realisiert wird.
+Der Funktionsblock **AR2_R_TO_REAL** ist ein Composite-Baustein, der als Brücke zwischen einer AR2‑Adapter‑Schnittstelle und REAL‑Werten dient. Er ermöglicht die bidirektionale Datenübertragung und Konvertierung, wobei die eigentliche Umwandlung durch einen externen Adapter vom Typ `adapter::types::bidirectional::AR2` realisiert wird.
 
 ## Schnittstellenstruktur
 
@@ -71,4 +71,4 @@ Während direkte Konvertierungsbausteine (z. B. AR2_TO_REAL) die Umwandlung fe
 
 ## Fazit
 
-Der **AR2_X_TO_REAL** ist ein nützlicher Brückenbaustein für Systeme, die sowohl AR2‑ als auch REAL‑Daten verarbeiten müssen. Durch die Nutzung eines bidirektionalen Adapters wird eine klare Trennung zwischen Schnittstelle und Konvertierungslogik erreicht, was Wiederverwendbarkeit und Wartbarkeit verbessert.
+Der **AR2_R_TO_REAL** ist ein nützlicher Brückenbaustein für Systeme, die sowohl AR2‑ als auch REAL‑Daten verarbeiten müssen. Durch die Nutzung eines bidirektionalen Adapters wird eine klare Trennung zwischen Schnittstelle und Konvertierungslogik erreicht, was Wiederverwendbarkeit und Wartbarkeit verbessert.

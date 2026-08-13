@@ -1,11 +1,11 @@
-# AR2_REAL_TO_X
+# AR2_REAL_TO_R
 
-![AR2_REAL_TO_X](./AR2_REAL_TO_X.svg)
+![AR2_REAL_TO_R](./AR2_REAL_TO_R.svg)
 
 * * * * * * * * * *
 ## Introduction
 
-The function block `AR2_REAL_TO_X` is a composite function block (FB) for converting a REAL value into an AR2 format. It encapsulates a bidirectional adapter of type `adapter::types::bidirectional::AR2` and acts as a transparent interface between a simple REAL variable and the more complex AR2 data type. The conversion logic resides entirely within the adapter, while the FB only handles signal and data transmission.
+The function block `AR2_REAL_TO_R` is a composite function block (FB) for converting a REAL value into an AR2 format. It encapsulates a bidirectional adapter of type `adapter::types::bidirectional::AR2` and acts as a transparent interface between a simple REAL variable and the more complex AR2 data type. The conversion logic resides entirely within the adapter, while the FB only handles signal and data transmission.
 ## Interface Structure
 
 ### **Event Inputs**
@@ -78,18 +78,18 @@ Since the FB does not have an internal state machine, there is no classic state 
 
 ## Comparison with Similar Function Blocks
 
-- **AR2_REAL_TO_X vs. Simple Type Conversion (REAL_TO_INT etc.)**:
+- **AR2_REAL_TO_R vs. Simple Type Conversion (REAL_TO_INT etc.)**:
 
-Simple converters work directly with elementary data types. `AR2_REAL_TO_X`, on the other hand, uses an adapter that encapsulates a complex conversion (e.g., to an array or structure).
+Simple converters work directly with elementary data types. `AR2_REAL_TO_R`, on the other hand, uses an adapter that encapsulates a complex conversion (e.g., to an array or structure).
 
-- **AR2_REAL_TO_X vs. Direct Adapter Use**:
+- **AR2_REAL_TO_R vs. Direct Adapter Use**:
 
 The function block simplifies handling by performing the signal wiring (event and data connections). The user only needs to instantiate the function block and connect it to their code.
 
-- **AR2_REAL_TO_X vs. CONVERT Adapter Blocks**:
+- **AR2_REAL_TO_R vs. CONVERT Adapter Blocks**:
 
 Similar blocks (e.g., from the IEC 61499 library) usually offer generic conversion. This function block is specifically for coupling REAL and AR2.
 
 ## Conclusion
 
-The function block `AR2_REAL_TO_X` provides a simple, event-driven interface for using a bidirectional AR2 adapter. It is ideal for all applications that require conversion between the standard REAL data type and a project-specific AR2 format. Its design keeps the complexity hidden within the adapter, and the block can be integrated into applications like a normal function block.
+The function block `AR2_REAL_TO_R` provides a simple, event-driven interface for using a bidirectional AR2 adapter. It is ideal for all applications that require conversion between the standard REAL data type and a project-specific AR2 format. Its design keeps the complexity hidden within the adapter, and the block can be integrated into applications like a normal function block.

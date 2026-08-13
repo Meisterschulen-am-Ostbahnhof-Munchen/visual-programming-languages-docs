@@ -1,11 +1,11 @@
-# AR2_REAL_TO_X
+# AR2_REAL_TO_R
 
-![AR2_REAL_TO_X](./AR2_REAL_TO_X.svg)
+![AR2_REAL_TO_R](./AR2_REAL_TO_R.svg)
 
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsblock `AR2_REAL_TO_X` ist ein zusammengesetzter Baustein (Composite FB) zur Konvertierung eines REAL-Wertes in ein AR2-Format. Er kapselt einen bidirektionalen Adapter des Typs `adapter::types::bidirectional::AR2` und fungiert als transparente Schnittstelle zwischen einer einfachen REAL-Variable und dem komplexeren AR2-Datentyp. Die Konvertierungslogik liegt vollständig im verwendeten Adapter, während der FB lediglich die Signal- und Datenweiterleitung übernimmt.
+Der Funktionsblock `AR2_REAL_TO_R` ist ein zusammengesetzter Baustein (Composite FB) zur Konvertierung eines REAL-Wertes in ein AR2-Format. Er kapselt einen bidirektionalen Adapter des Typs `adapter::types::bidirectional::AR2` und fungiert als transparente Schnittstelle zwischen einer einfachen REAL-Variable und dem komplexeren AR2-Datentyp. Die Konvertierungslogik liegt vollständig im verwendeten Adapter, während der FB lediglich die Signal- und Datenweiterleitung übernimmt.
 
 ## Schnittstellenstruktur
 
@@ -78,15 +78,15 @@ Da der FB keine interne Zustandsmaschine besitzt, liegt keine klassische Zustand
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AR2_REAL_TO_X vs. einfache Typkonvertierung (REAL_TO_INT etc.)**:  
-  Einfache Konverter arbeiten direkt auf elementaren Datentypen. `AR2_REAL_TO_X` hingegen verwendet einen Adapter, der eine komplexe Umwandlung (z. B. in ein Array oder eine Struktur) kapselt.
+- **AR2_REAL_TO_R vs. einfache Typkonvertierung (REAL_TO_INT etc.)**:  
+  Einfache Konverter arbeiten direkt auf elementaren Datentypen. `AR2_REAL_TO_R` hingegen verwendet einen Adapter, der eine komplexe Umwandlung (z. B. in ein Array oder eine Struktur) kapselt.
 
-- **AR2_REAL_TO_X vs. direkte Adapter-Nutzung**:  
+- **AR2_REAL_TO_R vs. direkte Adapter-Nutzung**:  
   Der FB vereinfacht die Handhabung, indem er die Signalverdrahtung (Ereignis- und Datenverbindungen) vornimmt. Der Anwender muss nur noch den FB instanziieren und mit seinem Code verbinden.
 
-- **AR2_REAL_TO_X vs. CONVERT-Adapter-Bausteine**:  
+- **AR2_REAL_TO_R vs. CONVERT-Adapter-Bausteine**:  
   Ähnliche Bausteine (z. B. aus der IEC 61499-Bibliothek) bieten meist generische Konvertierung. Dieser FB ist spezifisch für die Kopplung von REAL und AR2.
 
 ## Fazit
 
-Der Funktionsblock `AR2_REAL_TO_X` bietet eine einfache, ereignisgesteuerte Schnittstelle zur Nutzung eines bidirektionalen AR2-Adapters. Er ist ideal für alle Anwendungen, die eine Konvertierung zwischen dem Standard-Datentyp REAL und einem projektspezifischen AR2-Format benötigen. Durch seine Zusammensetzung bleibt die Komplexität im Adapter verborgen, und der Baustein kann wie ein normaler FB in Anwendungen integriert werden.
+Der Funktionsblock `AR2_REAL_TO_R` bietet eine einfache, ereignisgesteuerte Schnittstelle zur Nutzung eines bidirektionalen AR2-Adapters. Er ist ideal für alle Anwendungen, die eine Konvertierung zwischen dem Standard-Datentyp REAL und einem projektspezifischen AR2-Format benötigen. Durch seine Zusammensetzung bleibt die Komplexität im Adapter verborgen, und der Baustein kann wie ein normaler FB in Anwendungen integriert werden.

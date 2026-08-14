@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der `AE_AUI_MUX_3` ist die adapterbasierte Variante des generischen Multiplexers für den Datentyp `EVENT`. Anders als [AE_MUX_3](AE_MUX_3.md) erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
+Der `AE_AUI_MUX_3` ist die adapterbasierte Variante des generischen Multiplexers für den Datentyp `EVENT`. Anders als `AE_MUX_3` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
 
 ## Schnittstellenstruktur
 
@@ -55,10 +55,10 @@ Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-Vergleich mit [AE_MUX_3](AE_MUX_3.md) (gleiche Auswahllogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
+Vergleich mit `AE_MUX_3` (gleiche Auswahllogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
 
 Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md), das dieselbe 3:1-Auswahl rein datenbasiert ohne Adapter/Ereigniskonzept ausführt.
 
 ## Fazit
 
-Der `AE_AUI_MUX_3` überträgt die Multiplexer-Logik von [AE_MUX_3](AE_MUX_3.md) auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.
+Der `AE_AUI_MUX_3` überträgt die Multiplexer-Logik von `AE_MUX_3` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

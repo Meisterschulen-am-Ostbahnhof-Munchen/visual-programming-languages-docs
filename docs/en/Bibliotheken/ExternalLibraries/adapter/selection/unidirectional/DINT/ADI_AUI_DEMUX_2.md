@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Introduction
 
-`ADI_AUI_DEMUX_2` is the adapter-based variant of the generic demultiplexer for data type `DINT`. Unlike [ADI_DEMUX_2](ADI_DEMUX_2.md), it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.
+`ADI_AUI_DEMUX_2` is the adapter-based variant of the generic demultiplexer for data type `DINT`. Unlike `ADI_DEMUX_2`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.
 
 ## Interface Structure
 
@@ -15,7 +15,7 @@
 
 ### **Event Outputs**
 
-- **CNF**: confirms that the index received via K has been evaluated and the target plug updated accordingly.
+- **CNF**: Always sent once an event from the selector adapter `K` has been processed -- regardless of whether the selected output changed.
 
 ### **Data Inputs**
 
@@ -34,7 +34,13 @@
 
 ## Functionality
 
-`ADI_AUI_DEMUX_2` receives a value on socket **IN** and forwards it to exactly one of the 2 output plugs `OUT1` … `OUT2`. Which output is written is decided by the index arriving on the adapter socket **K** (type `AUI`): as soon as the `AUI` plug connected to K fires its internal `E1` event carrying the data value `D1`, `ADI_AUI_DEMUX_2` interprets that value as a 0-based index (`0` … `1`), writes the input value to the corresponding `OUT` plug and triggers that plug's adapter event. `ADI_AUI_DEMUX_2` then confirms completion via the **CNF** event.
+The function block re-evaluates the current value of **K** on every incoming event -- both on an event from the selector adapter `K` (type `AUI`) and on an event from the input adapter `IN`:
+
+1. The current value of `K.D1` determines which of the 2 output adapters (`OUT1` … `OUT2`) is currently selected.
+2. The data value of `IN` is compared against the value currently held on the selected output. Only on an actual change is that output rewritten and its adapter event sent (see "Change Detection" below).
+3. If the triggering event comes from the selector adapter `K`, the `CNF` event is additionally always sent -- regardless of whether the selected output changed -- to confirm that the index update was processed.
+
+As a result, a pure change of `K` alone also propagates the current value of `IN` to the newly selected output immediately, even if `IN` hasn't changed since its own last event.
 
 ## Technical Details
 
@@ -44,7 +50,10 @@
 
 ## State Overview
 
-The block is stateless with respect to any sequencing logic: it waits for the `E1` event on socket **K**, evaluates the index carried with it once it arrives, updates the affected adapter plug and reports completion via **CNF**. No state beyond the most recently written adapter value is kept between calls.
+The function block has no explicit state machine; instead it re-evaluates the current value of `K.D1` on every incoming event:
+
+- **Any event** (selector adapter `K` or `IN`) → determine the currently selected output, update it with the current `IN` value on a change and send its adapter event.
+- **Additionally on an event from `K`** → `CNF` is always sent, regardless of whether the selected output changed.
 
 ## Application Scenarios
 
@@ -54,7 +63,7 @@ The block is stateless with respect to any sequencing logic: it waits for the `E
 
 ## ⚖️ Comparison with Similar Blocks
 
-Compare with [ADI_DEMUX_2](ADI_DEMUX_2.md) (same distribution logic, but the index arrives through a classic **REQ** event plus **K** data input instead of an adapter).
+Compare with `ADI_DEMUX_2` (same distribution logic, but the index arrives through a classic **REQ** event plus **K** data input instead of an adapter).
 
 Compare with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), which demultiplexes purely on events without any adapter concept.
 

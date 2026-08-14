@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der `AE_AUI_DEMUX_3` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `EVENT`. Anders als [AE_DEMUX_3](AE_DEMUX_3.md) erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
+Der `AE_AUI_DEMUX_3` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `EVENT`. Anders als `AE_DEMUX_3` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
 
 ## Schnittstellenstruktur
 
@@ -55,10 +55,10 @@ Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-Vergleich mit [AE_DEMUX_3](AE_DEMUX_3.md) (gleiche Verteillogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
+Vergleich mit `AE_DEMUX_3` (gleiche Verteillogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
 ## Fazit
 
-Der `AE_AUI_DEMUX_3` überträgt die Demultiplexer-Logik von [AE_DEMUX_3](AE_DEMUX_3.md) auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.
+Der `AE_AUI_DEMUX_3` überträgt die Demultiplexer-Logik von `AE_DEMUX_3` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

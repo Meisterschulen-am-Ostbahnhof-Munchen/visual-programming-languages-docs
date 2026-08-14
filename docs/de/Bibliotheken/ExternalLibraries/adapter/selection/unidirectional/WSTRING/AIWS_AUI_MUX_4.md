@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der `AIWS_AUI_MUX_4` ist die adapterbasierte Variante des generischen Multiplexers für den Datentyp `WSTRING`. Anders als [AIWS_MUX_4](AIWS_MUX_4.md) erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
+Der `AIWS_AUI_MUX_4` ist die adapterbasierte Variante des generischen Multiplexers für den Datentyp `WSTRING`. Anders als `AIWS_MUX_4` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
 
 ## Schnittstellenstruktur
 
@@ -15,7 +15,7 @@ Der `AIWS_AUI_MUX_4` ist die adapterbasierte Variante des generischen Multiplexe
 
 ### **Ereignis-Ausgänge**
 
-- **CNF**: Bestätigt die erfolgte Auswertung des über K empfangenen Index und die daraus resultierende Aktualisierung des Ziel-Plugs.
+- **CNF**: Wird immer gesendet, sobald ein Ereignis des Selektor-Adapters `K` verarbeitet wurde – unabhängig davon, ob sich der Ausgangswert dabei geändert hat.
 
 ### **Daten-Eingänge**
 
@@ -36,7 +36,13 @@ Der `AIWS_AUI_MUX_4` ist die adapterbasierte Variante des generischen Multiplexe
 
 ## Funktionsweise
 
-Der `AIWS_AUI_MUX_4` wählt über den Adapter-Socket **K** (Typ `AUI`) einen von 4 Eingangs-Sockets `IN1` … `IN4` aus und reicht dessen Wert an den einzigen Ausgangs-Plug `OUT` weiter. Sobald der an K angeschlossene `AUI`-Plug sein internes `E1`-Ereignis mit dem Datenwert `D1` sendet, interpretiert `AIWS_AUI_MUX_4` diesen Wert als 0-basierten Index (`0` … `3`), kopiert den Wert des gewählten Eingangs auf `OUT` und löst dort das Adapter-Event aus. Danach bestätigt `AIWS_AUI_MUX_4` den Vorgang über das Ereignis **CNF**.
+Der Funktionsblock wertet den aktuellen Wert von **K** bei jedem eingehenden Ereignis neu aus -- sowohl beim Ereignis des Selektor-Adapters `K` (Typ `AUI`) als auch bei einem Ereignis an einem der Eingangs-Adapter `IN1`…`IN4`:
+
+1. Der aktuelle Wert von `K.D1` bestimmt, welcher der 4 Eingangs-Adapter (`IN1` … `IN4`) gerade ausgewählt ist.
+2. Der Datenwert dieses ausgewählten Eingangs wird mit dem aktuell auf `OUT` gehaltenen Wert verglichen. Nur bei tatsächlicher Änderung wird `OUT` neu beschrieben und dessen Adapter-Event gesendet (siehe „Änderungserkennung“ unten).
+3. Kommt das auslösende Ereignis vom Selektor-Adapter `K`, wird zusätzlich -- unabhängig davon, ob sich `OUT` dabei geändert hat -- immer das Ereignis `CNF` gesendet, um die Verarbeitung des Index-Updates zu bestätigen.
+
+Dadurch zieht auch eine reine Änderung von `K` den Ausgang sofort nach, selbst wenn sich der Datenwert des neu ausgewählten Eingangs seit dessen letztem eigenen Ereignis nicht verändert hat.
 
 ## Technische Besonderheiten
 
@@ -46,7 +52,10 @@ Der `AIWS_AUI_MUX_4` wählt über den Adapter-Socket **K** (Typ `AUI`) einen von
 
 ## Zustandsübersicht
 
-Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das `E1`-Ereignis am Socket **K**, wertet bei dessen Eintreffen den mitgelieferten Index aus, aktualisiert den betroffenen Adapter-Plug und meldet den Abschluss über **CNF**. Zwischen zwei Aufrufen wird kein Zustand außer dem zuletzt geschriebenen Adapterwert gehalten.
+Der FB besitzt keinen expliziten Zustandsautomaten, sondern wertet bei jedem eingehenden Ereignis den aktuellen Wert von `K.D1` neu aus:
+
+- **Beliebiges Ereignis** (Selektor-Adapter `K` oder `IN1`…`IN4`) → aktuell selektierten Eingang auslesen, `OUT` bei Wertänderung aktualisieren und dessen Adapter-Event senden.
+- **Zusätzlich beim Ereignis von `K`** → `CNF` wird immer gesendet, unabhängig davon, ob sich `OUT` dabei geändert hat.
 
 ## Anwendungsszenarien
 
@@ -56,10 +65,10 @@ Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-Vergleich mit [AIWS_MUX_4](AIWS_MUX_4.md) (gleiche Auswahllogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
+Vergleich mit `AIWS_MUX_4` (gleiche Auswahllogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
 
 Vergleich mit [F_MUX_4](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_4.md), das dieselbe 4:1-Auswahl rein datenbasiert ohne Adapter/Ereigniskonzept ausführt.
 
 ## Fazit
 
-Der `AIWS_AUI_MUX_4` überträgt die Multiplexer-Logik von [AIWS_MUX_4](AIWS_MUX_4.md) auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.
+Der `AIWS_AUI_MUX_4` überträgt die Multiplexer-Logik von `AIWS_MUX_4` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

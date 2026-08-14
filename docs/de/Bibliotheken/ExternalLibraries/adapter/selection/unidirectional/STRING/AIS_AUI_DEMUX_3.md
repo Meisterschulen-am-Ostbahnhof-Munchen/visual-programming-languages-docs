@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der `AIS_AUI_DEMUX_3` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `STRING`. Anders als [AIS_DEMUX_3](AIS_DEMUX_3.md) erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
+Der `AIS_AUI_DEMUX_3` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `STRING`. Anders als `AIS_DEMUX_3` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
 
 ## Schnittstellenstruktur
 
@@ -15,7 +15,7 @@ Der `AIS_AUI_DEMUX_3` ist die adapterbasierte Variante des generischen Demultipl
 
 ### **Ereignis-Ausgänge**
 
-- **CNF**: Bestätigt die erfolgte Auswertung des über K empfangenen Index und die daraus resultierende Aktualisierung des Ziel-Plugs.
+- **CNF**: Wird immer gesendet, sobald ein Ereignis des Selektor-Adapters `K` verarbeitet wurde – unabhängig davon, ob sich der ausgewählte Ausgang dabei geändert hat.
 
 ### **Daten-Eingänge**
 
@@ -35,7 +35,13 @@ Der `AIS_AUI_DEMUX_3` ist die adapterbasierte Variante des generischen Demultipl
 
 ## Funktionsweise
 
-Der `AIS_AUI_DEMUX_3` empfängt über den Socket **IN** den am Eingang anliegenden Wert (`STRING`, Zeichenkette (8-Bit-Zeichen)) und leitet ihn an genau einen der 3 Ausgangs-Plugs `OUT1` … `OUT3` weiter. Welcher Ausgang beschrieben wird, bestimmt der Index, der über den Adapter-Socket **K** (Typ `AUI`) hereinkommt: Sobald der am Socket K angeschlossene `AUI`-Plug sein internes `E1`-Ereignis mit dem Datenwert `D1` sendet, wertet der `AIS_AUI_DEMUX_3` diesen Wert als Index (0-basiert, `0` … `2`) aus, schreibt den Eingangswert auf den entsprechenden `OUT`-Plug und löst dort dessen Adapter-Event aus. Anschließend meldet `AIS_AUI_DEMUX_3` den Abschluss der Operation über das Ereignis **CNF**.
+Der Funktionsblock wertet den aktuellen Wert von **K** bei jedem eingehenden Ereignis neu aus -- sowohl beim Ereignis des Selektor-Adapters `K` (Typ `AUI`) als auch bei einem Ereignis am Eingangs-Adapter `IN`:
+
+1. Der aktuelle Wert von `K.D1` bestimmt, welcher der 3 Ausgangs-Adapter (`OUT1` … `OUT3`) gerade ausgewählt ist.
+2. Der Datenwert von `IN` wird mit dem aktuell auf dem ausgewählten Ausgang gehaltenen Wert verglichen. Nur bei tatsächlicher Änderung wird dieser Ausgang neu beschrieben und dessen Adapter-Event gesendet (siehe „Änderungserkennung“ unten).
+3. Kommt das auslösende Ereignis vom Selektor-Adapter `K`, wird zusätzlich -- unabhängig davon, ob sich der ausgewählte Ausgang dabei geändert hat -- immer das Ereignis `CNF` gesendet, um die Verarbeitung des Index-Updates zu bestätigen.
+
+Dadurch übernimmt auch eine reine Änderung von `K` sofort den aktuellen Wert von `IN` auf den neu ausgewählten Ausgang, selbst wenn sich `IN` seit dessen letztem eigenen Ereignis nicht verändert hat.
 
 ## Technische Besonderheiten
 
@@ -45,7 +51,10 @@ Der `AIS_AUI_DEMUX_3` empfängt über den Socket **IN** den am Eingang anliegend
 
 ## Zustandsübersicht
 
-Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das `E1`-Ereignis am Socket **K**, wertet bei dessen Eintreffen den mitgelieferten Index aus, aktualisiert den betroffenen Adapter-Plug und meldet den Abschluss über **CNF**. Zwischen zwei Aufrufen wird kein Zustand außer dem zuletzt geschriebenen Adapterwert gehalten.
+Der FB besitzt keinen expliziten Zustandsautomaten, sondern wertet bei jedem eingehenden Ereignis den aktuellen Wert von `K.D1` neu aus:
+
+- **Beliebiges Ereignis** (Selektor-Adapter `K` oder `IN`) → aktuell selektierten Ausgang bestimmen, ihn bei Wertänderung mit dem aktuellen `IN`-Wert aktualisieren und sein Adapter-Event senden.
+- **Zusätzlich beim Ereignis von `K`** → `CNF` wird immer gesendet, unabhängig davon, ob sich der ausgewählte Ausgang dabei geändert hat.
 
 ## Anwendungsszenarien
 
@@ -55,10 +64,10 @@ Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-Vergleich mit [AIS_DEMUX_3](AIS_DEMUX_3.md) (gleiche Verteillogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
+Vergleich mit `AIS_DEMUX_3` (gleiche Verteillogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
 ## Fazit
 
-Der `AIS_AUI_DEMUX_3` überträgt die Demultiplexer-Logik von [AIS_DEMUX_3](AIS_DEMUX_3.md) auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.
+Der `AIS_AUI_DEMUX_3` überträgt die Demultiplexer-Logik von `AIS_DEMUX_3` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

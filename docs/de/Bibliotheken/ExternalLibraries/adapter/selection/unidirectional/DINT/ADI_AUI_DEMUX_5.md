@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der `ADI_AUI_DEMUX_5` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `DINT`. Anders als [ADI_DEMUX_5](ADI_DEMUX_5.md) erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
+Der `ADI_AUI_DEMUX_5` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `DINT`. Anders als `ADI_DEMUX_5` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.
 
 ## Schnittstellenstruktur
 
@@ -15,7 +15,7 @@ Der `ADI_AUI_DEMUX_5` ist die adapterbasierte Variante des generischen Demultipl
 
 ### **Ereignis-Ausgänge**
 
-- **CNF**: Bestätigt die erfolgte Auswertung des über K empfangenen Index und die daraus resultierende Aktualisierung des Ziel-Plugs.
+- **CNF**: Wird immer gesendet, sobald ein Ereignis des Selektor-Adapters `K` verarbeitet wurde – unabhängig davon, ob sich der ausgewählte Ausgang dabei geändert hat.
 
 ### **Daten-Eingänge**
 
@@ -37,7 +37,13 @@ Der `ADI_AUI_DEMUX_5` ist die adapterbasierte Variante des generischen Demultipl
 
 ## Funktionsweise
 
-Der `ADI_AUI_DEMUX_5` empfängt über den Socket **IN** den am Eingang anliegenden Wert (`DINT`, 32-Bit-Ganzzahl (vorzeichenbehaftet)) und leitet ihn an genau einen der 5 Ausgangs-Plugs `OUT1` … `OUT5` weiter. Welcher Ausgang beschrieben wird, bestimmt der Index, der über den Adapter-Socket **K** (Typ `AUI`) hereinkommt: Sobald der am Socket K angeschlossene `AUI`-Plug sein internes `E1`-Ereignis mit dem Datenwert `D1` sendet, wertet der `ADI_AUI_DEMUX_5` diesen Wert als Index (0-basiert, `0` … `4`) aus, schreibt den Eingangswert auf den entsprechenden `OUT`-Plug und löst dort dessen Adapter-Event aus. Anschließend meldet `ADI_AUI_DEMUX_5` den Abschluss der Operation über das Ereignis **CNF**.
+Der Funktionsblock wertet den aktuellen Wert von **K** bei jedem eingehenden Ereignis neu aus -- sowohl beim Ereignis des Selektor-Adapters `K` (Typ `AUI`) als auch bei einem Ereignis am Eingangs-Adapter `IN`:
+
+1. Der aktuelle Wert von `K.D1` bestimmt, welcher der 5 Ausgangs-Adapter (`OUT1` … `OUT5`) gerade ausgewählt ist.
+2. Der Datenwert von `IN` wird mit dem aktuell auf dem ausgewählten Ausgang gehaltenen Wert verglichen. Nur bei tatsächlicher Änderung wird dieser Ausgang neu beschrieben und dessen Adapter-Event gesendet (siehe „Änderungserkennung“ unten).
+3. Kommt das auslösende Ereignis vom Selektor-Adapter `K`, wird zusätzlich -- unabhängig davon, ob sich der ausgewählte Ausgang dabei geändert hat -- immer das Ereignis `CNF` gesendet, um die Verarbeitung des Index-Updates zu bestätigen.
+
+Dadurch übernimmt auch eine reine Änderung von `K` sofort den aktuellen Wert von `IN` auf den neu ausgewählten Ausgang, selbst wenn sich `IN` seit dessen letztem eigenen Ereignis nicht verändert hat.
 
 ## Technische Besonderheiten
 
@@ -47,7 +53,10 @@ Der `ADI_AUI_DEMUX_5` empfängt über den Socket **IN** den am Eingang anliegend
 
 ## Zustandsübersicht
 
-Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das `E1`-Ereignis am Socket **K**, wertet bei dessen Eintreffen den mitgelieferten Index aus, aktualisiert den betroffenen Adapter-Plug und meldet den Abschluss über **CNF**. Zwischen zwei Aufrufen wird kein Zustand außer dem zuletzt geschriebenen Adapterwert gehalten.
+Der FB besitzt keinen expliziten Zustandsautomaten, sondern wertet bei jedem eingehenden Ereignis den aktuellen Wert von `K.D1` neu aus:
+
+- **Beliebiges Ereignis** (Selektor-Adapter `K` oder `IN`) → aktuell selektierten Ausgang bestimmen, ihn bei Wertänderung mit dem aktuellen `IN`-Wert aktualisieren und sein Adapter-Event senden.
+- **Zusätzlich beim Ereignis von `K`** → `CNF` wird immer gesendet, unabhängig davon, ob sich der ausgewählte Ausgang dabei geändert hat.
 
 ## Anwendungsszenarien
 
@@ -57,10 +66,10 @@ Der Baustein ist zustandslos bezüglich einer Ablaufsteuerung: Er wartet auf das
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-Vergleich mit [ADI_DEMUX_5](ADI_DEMUX_5.md) (gleiche Verteillogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
+Vergleich mit `ADI_DEMUX_5` (gleiche Verteillogik, Index jedoch klassisch über **REQ**-Ereignis + **K**-Dateneingang statt über einen Adapter).
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
 ## Fazit
 
-Der `ADI_AUI_DEMUX_5` überträgt die Demultiplexer-Logik von [ADI_DEMUX_5](ADI_DEMUX_5.md) auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.
+Der `ADI_AUI_DEMUX_5` überträgt die Demultiplexer-Logik von `ADI_DEMUX_5` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Introduction
 
-`AE_AUI_MUX_3` is the adapter-based variant of the generic multiplexer for data type `EVENT`. Unlike [AE_MUX_3](AE_MUX_3.md), it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.
+`AE_AUI_MUX_3` is the adapter-based variant of the generic multiplexer for data type `EVENT`. Unlike `AE_MUX_3`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.
 
 ## Interface Structure
 
@@ -55,7 +55,7 @@ The block is stateless with respect to any sequencing logic: it waits for the `E
 
 ## ⚖️ Comparison with Similar Blocks
 
-Compare with [AE_MUX_3](AE_MUX_3.md) (same selection logic, but the index arrives through a classic **REQ** event plus **K** data input instead of an adapter).
+Compare with `AE_MUX_3` (same selection logic, but the index arrives through a classic **REQ** event plus **K** data input instead of an adapter).
 
 Compare with [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md), which performs the same 3:1 selection purely on data, without any adapter/event concept.
 

@@ -32,7 +32,7 @@ The **E_RDELAY** (Reloadable Delay) is an extended delay function block accordin
 - `STOP` immediately terminates the active delay
 - No `EO` event is generated
 3. **Delay Completion**:
-- `DT` is triggered once after exactly `EO`
+- `EO` is triggered once after exactly `DT`
 - Immediate triggering occurs if DT ≤ T#0s
 
 ## Service Sequences (according to the XML specification)
@@ -41,8 +41,8 @@ The **E_RDELAY** (Reloadable Delay) is an extended delay function block accordin
 - Normal delay with START → EO
 2. **delay_canceled**:
 - START followed by STOP (no EO)
-3. **no_multiple_delay**:
-- Multiple START events trigger only one EO
+3. **reload_delay**:
+- Multiple START events reload (reset) the delay; only one EO is triggered
 
 ## Technical Special Features
 
@@ -64,11 +64,11 @@ The **E_RDELAY** (Reloadable Delay) is an extended delay function block accordin
 |---------------|----------|---------|
 | Reset Function | ✔️ (via START) | ❌ |
 | Multiple Triggers | Only 1 EO | Only 1 EO |
-| Service Sequences | 3 defined | 1 defined |
+| Service Sequences | 3 defined (`event_delay`, `delay_canceled`, `reload_delay`) | 3 defined (`event_delay`, `delay_canceled`, `no_multiple_delay`) |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_018a](../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)]
+* [Exercise_018a](../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Conclusion
 

@@ -36,7 +36,7 @@ The block uses a **socket** of type `ARTimeOut`. Since it is a socket, the signa
 3. **Timeout Termination**:
 - The `STOP` event terminates the active timer.
 4. **Timeout Triggering**:
-- After the `DT` event expires, `TimeOut` event generated
+- After `DT` expires, the `TimeOut` event is generated
 - Signaled via the adapter socket
 
 ## Technical Features
@@ -60,14 +60,14 @@ The block uses a **socket** of type `ARTimeOut`. Since it is a socket, the signa
 
 | Feature | E_RTimeOut | E_DELAY | E_TABLE |
 |--------------|------------|---------|---------|
-Reset Function | ✔️ | ❌ | ❌ |
-Interface | Adapter | Direct | Direct |
-Standard | 61499-2 | 61499-1 | 61499-1 |
+| Reset Function | ✔️ | ❌ | ❌ |
+| Interface | Adapter | Direct | Direct |
+| Standard | 61499-2 | 61499-1 | 61499-1 |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)]
-* [Exercise_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)]
+* [Exercise_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+* [Exercise_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)
 
 ## Conclusion
 

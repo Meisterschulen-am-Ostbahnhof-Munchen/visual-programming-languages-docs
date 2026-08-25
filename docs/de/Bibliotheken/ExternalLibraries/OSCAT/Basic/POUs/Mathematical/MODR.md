@@ -1,6 +1,6 @@
 # MODR
 
-this is a modulo funtion for real numbers
+this is a modulo function for real numbers
 
 ## Interface
 

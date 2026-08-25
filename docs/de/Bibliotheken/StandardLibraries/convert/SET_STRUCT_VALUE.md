@@ -29,7 +29,7 @@ Der Funktionsblock verfügt über Ereignis- und Datenschnittstellen, um seine Fu
 
 ### **Daten-Ausgänge**
 
-*   **out_struct** (Typ: ANY): Die modifizierte Struktur nach dem Setzen des Elements. Der Kommentar im XML besagt "TRUE if no errors ocurred, FALSE otherwise", was ein Überbleibsel eines `STATUS`-Ausgangs ist, aber hier bezieht es sich auf die ausgegebene, geänderte Struktur.
+*   **out_struct** (Typ: ANY): Die modifizierte Struktur nach dem Setzen des Elements. Der Kommentar im XML besagt "TRUE if no errors occurred, FALSE otherwise", was ein Überbleibsel eines `STATUS`-Ausgangs ist, aber hier bezieht es sich auf die ausgegebene, geänderte Struktur.
 
 ### **Adapter**
 

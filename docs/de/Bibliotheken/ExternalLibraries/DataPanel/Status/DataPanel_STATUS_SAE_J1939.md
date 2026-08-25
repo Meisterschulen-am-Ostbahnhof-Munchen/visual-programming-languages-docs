@@ -33,7 +33,7 @@ Status Output of 1 DataPanel Node
 | :--- | :--- | :--- | :--- |
 | QO | BOOL | | Event Output Qualifier |
 | STATUS | STRING | | Service Status |
-| bTimeout | BOOL | FALSE | Timeout occured TRUE = Timeout, FALSE = no Timeout |
+| bTimeout | BOOL | FALSE | Timeout occurred TRUE = Timeout, FALSE = no Timeout |
 | s32TimeStamp_timeout | DINT | | Time stamp of the Timeout in ms |
 | s32TimeStamp | DINT | | Time stamp of the message in ms |
 | Version | USINT | | |

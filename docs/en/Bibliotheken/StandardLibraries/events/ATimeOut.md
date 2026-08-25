@@ -17,7 +17,7 @@ The ATimeOut adapter defines a clear separation of responsibilities between the 
 The interface is defined from the perspective of the **plug**:
 
 - **Input Events (received from the socket)**:
-- **Timeout**: Signals that the specified time has elapsed.
+- **TimeOut**: Signals that the specified time has elapsed.
 - **Output Events (sent to the socket)**:
 - **START**: Initiates the timeout process. This event is associated with the variable **DT**.
 - **STOP**: Terminates an ongoing timeout process.

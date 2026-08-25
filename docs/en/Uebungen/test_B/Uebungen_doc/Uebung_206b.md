@@ -70,16 +70,16 @@ The outputs **Q** of the flip-flops are connected to the data inputs **OUT** of 
 | ILOCK_T_FF_1.EO | DigitalOutput_Q1.REQ | Event |
 | ILOCK_T_FF_2.EO | DigitalOutput_Q2.REQ | Event |
 | ILOCK_T_FF_3.EO | DigitalOutput_Q3.REQ | Event |
-ILOCK_T_FF_1.Q | DigitalOutput_Q1.OUT | Data |
-ILOCK_T_FF_2.Q | DigitalOutput_Q2.OUT | Data |
-ILOCK_T_FF_3.Q | DigitalOutput_Q3.OUT | Data |
+| ILOCK_T_FF_1.Q | DigitalOutput_Q1.OUT | Data |
+| ILOCK_T_FF_2.Q | DigitalOutput_Q2.OUT | Data |
+| ILOCK_T_FF_3.Q | DigitalOutput_Q3.OUT | Data |
 
 **Adapter Connections (Bidirectional):**
 
 | Source | Destination |
 |--------|------|
-ILOCK_T_FF_1.ILOCK_OUT | ILOCK_T_FF_2.ILOCK_IN |
-ILOCK_T_FF_2.ILOCK_OUT | ILOCK_T_FF_3.ILOCK_IN |
+| ILOCK_T_FF_1.ILOCK_OUT | ILOCK_T_FF_2.ILOCK_IN |
+| ILOCK_T_FF_2.ILOCK_OUT | ILOCK_T_FF_3.ILOCK_IN |
 
 ## Summary
 

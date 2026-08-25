@@ -147,4 +147,4 @@ Essential for:
 
 ## Example applications
 
-[Q_NumericValue_examples](Q_NumericValue_beispiele.md)]
+[Q_NumericValue_examples](Q_NumericValue_beispiele.md)

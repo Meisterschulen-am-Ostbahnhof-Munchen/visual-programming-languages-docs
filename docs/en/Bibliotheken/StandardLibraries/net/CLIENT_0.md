@@ -62,8 +62,8 @@ The CLIENT_0 block initializes a network connection to the SERVER_0 block via th
 | :--- | :--- |
 | Copyright | (c) 2025 Monika Wenger |
 | License | EPL-2.0 |
-Version | 3.0 (December 5, 2025, Monika Wenger) |
-4diac Package | iec61499::net |
+| Version | 3.0 (December 5, 2025, Monika Wenger) |
+| 4diac Package | iec61499::net |
 
 --
 

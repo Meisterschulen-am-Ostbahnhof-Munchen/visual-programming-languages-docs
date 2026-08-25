@@ -79,8 +79,8 @@ The block has implicit states:
 *
 ## 🛠️ Related Exercises
 
-* [Exercise_130](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)]
-* [Exercise_134](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)]
+* [Exercise_130](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)
+* [Exercise_134](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 
 ## Conclusion
 

@@ -65,7 +65,7 @@ The block has no internal state and operates stateless. The output is continuous
 
 Compared to standard OR blocks with fewer inputs, AX_OR_5 offers the ability to process five signals simultaneously, simplifying wiring and saving space. Compared to cascaded OR gates, this block provides an integrated solution.
 
-Comparison with [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)]
+Comparison with [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)
 
 ## Change Detection
 

@@ -1,6 +1,6 @@
 # Exercise_002a4: DigitalInput_I1/_I2 with AND_BOOL on DigitalOutput_Q1
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002a4`. In this exercise, a logical AND gate is implemented, where a digital output is only activated if two digital inputs are simultaneously in the "True" (HIGH) state.
 ----
 ## Objective of the Exercise

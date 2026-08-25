@@ -1,6 +1,6 @@
 # Exercise_034b: LONG_PRESS_HOLD Input to PWM Output with Terminal Output
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_034b`. Here, the PWM power is controlled via button interactions ("accelerating").
 ----
 ## Objective of the Exercise

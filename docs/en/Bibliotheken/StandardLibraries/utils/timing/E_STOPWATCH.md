@@ -94,8 +94,8 @@ START --> RESET: RESET
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)]
-* [Exercise_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)]
+* [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
+* [Exercise_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Conclusion
 

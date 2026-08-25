@@ -92,14 +92,14 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 
 | Feature | I_MSS | Standard | GPS-based |
 ---------|-------|----------|------------|
-Accuracy | ±0.2% | ±1-2% | ±5-10% |
-Response Time | <100ms | 200ms | 1-2s |
-Source Flexibility | 8 | 1-2 | 1 |
-Low Speed | ✔ Optimal | ✖ Inaccurate | ✖ Unusable |
+| Accuracy | ±0.2% | ±1-2% | ±5-10% |
+| Response Time | <100ms | 200ms | 1-2s |
+| Source Flexibility | 8 | 1-2 | 1 |
+| Low Speed | ✔ Optimal | ✖ Inaccurate | ✖ Unusable |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
+* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

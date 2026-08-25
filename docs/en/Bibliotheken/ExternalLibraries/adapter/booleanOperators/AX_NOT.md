@@ -56,11 +56,11 @@ The function block operates statelessly and performs the NOT operation directly 
 
 Compared to other Boolean operators such as AND or OR, AX_NOT performs only the negation operation. The use of adapters instead of direct inputs/outputs allows for more flexible integration into more complex system architectures.
 
-Comparison with [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)]
+Comparison with [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006a3_sub_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)]
+* [Exercise_006a3_sub_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
 
 ## Conclusion
 

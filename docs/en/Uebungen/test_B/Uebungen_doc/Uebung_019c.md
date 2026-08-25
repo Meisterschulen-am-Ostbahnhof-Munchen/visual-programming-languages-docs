@@ -1,6 +1,6 @@
 # Exercise_019c: Switching a Screen
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_019c`. This is the most complex navigation logic, where screen switching can be actively blocked by the hardware state.
 ----
 ## Objective of the Exercise

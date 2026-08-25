@@ -68,8 +68,8 @@ No further state exists; the function block immediately returns to the waiting R
 |----|-----|-------------|
 | **SET_BOOL** | BOOL | Writes Boolean values, analogous functionality |
 | **SET_INT** | INT | Writes integers, identical event control |
-**MOVE** (generic) | ANY | Can copy any data type, but requires type matching and often has multiple states |
-**SET_REAL** | REAL | Specifically optimized for REAL, minimal states and clear semantics |
+| **MOVE** (generic) | ANY | Can copy any data type, but requires type matching and often has multiple states |
+| **SET_REAL** | REAL | Specifically optimized for REAL, minimal states and clear semantics |
 
 Compared to a generic MOVE block, SET_REAL offers a leaner implementation and is tailored to the frequently used REAL type.
 

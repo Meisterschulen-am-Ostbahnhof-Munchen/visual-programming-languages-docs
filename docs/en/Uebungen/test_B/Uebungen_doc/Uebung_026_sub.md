@@ -1,6 +1,6 @@
 # Exercise_026_sub: Mirror Sequence (6)
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the sub-application type `Uebung_026_sub`. This function block serves as a standardized interface for actuators within a complex sequence of steps.
 ----
 ## Purpose of the Exercise
@@ -35,4 +35,4 @@ In the main application, this type allows for very clear wiring of the phase tra
 
 ## 🛠️ Related Exercises
 
-* [Exercise_026](Uebung_026.md)]
+* [Exercise_026](Uebung_026.md)

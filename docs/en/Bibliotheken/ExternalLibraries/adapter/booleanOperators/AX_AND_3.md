@@ -68,11 +68,11 @@ Compared to standard AND blocks, AX_AND_3 offers:
 - Specific AX type compatibility
 - Unidirectional signal transmission
 
-Comparison with [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)]
+Comparison with [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)]
+* [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Change Detection
 

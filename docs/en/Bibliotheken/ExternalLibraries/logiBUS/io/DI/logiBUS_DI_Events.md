@@ -27,18 +27,18 @@ The event constants cover the following states:
 |-------|-----------|--------------|
 | 0 | BUTTON_PRESS_DOWN | Button pressed |
 | 1 | BUTTON_PRESS_UP | Button released |
-2 | BUTTON_PRESS_REPEAT | Button pressed again |
-3 | BUTTON_PRESS_REPEAT_DONE | Button repeat ended |
-4 | BUTTON_SINGLE_CLICK | Single click |
-5 | BUTTON_DOUBLE_CLICK | Double click |
-6 | BUTTON_MULTIPLE_CLICK | Multi-click |
-7 | BUTTON_LONG_PRESS_START | Long press begins |
-8 | BUTTON_LONG_PRESS_HOLD | Long press is held |
-9 | BUTTON_LONG_PRESS_UP | Long press ends |
-10 | BUTTON_PRESS_END | Press ends |
-11 | BUTTON_EVENT_MAX | Maximum event ID |
-12 | BUTTON_NONE_PRESS | No key press |
-255 | Invalid | Invalid event |
+| 2 | BUTTON_PRESS_REPEAT | Button pressed again |
+| 3 | BUTTON_PRESS_REPEAT_DONE | Button repeat ended |
+| 4 | BUTTON_SINGLE_CLICK | Single click |
+| 5 | BUTTON_DOUBLE_CLICK | Double click |
+| 6 | BUTTON_MULTIPLE_CLICK | Multi-click |
+| 7 | BUTTON_LONG_PRESS_START | Long press begins |
+| 8 | BUTTON_LONG_PRESS_HOLD | Long press is held |
+| 9 | BUTTON_LONG_PRESS_UP | Long press ends |
+| 10 | BUTTON_PRESS_END | Press ends |
+| 11 | BUTTON_EVENT_MAX | Maximum event ID |
+| 12 | BUTTON_NONE_PRESS | No key press |
+| 255 | Invalid | Invalid event |
 ...
 ## Application Scenarios
 

@@ -1,6 +1,6 @@
 # Exercise_124: ISOBUS Send Message Exercise
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_124`. Here, we move beyond standard messages and send custom data packets (PGNs) to a specific partner in the network.
 ----
 ## Objective of the Exercise

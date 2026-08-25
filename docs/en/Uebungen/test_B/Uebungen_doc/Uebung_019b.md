@@ -1,6 +1,6 @@
 # Exercise_019b: Switching a Mask
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_019b`. Here, the virtual alarm at the terminal is synchronized with a physical alarm output.
 ----
 ## Objective of the Exercise

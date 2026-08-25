@@ -62,10 +62,10 @@ The function block has no persistent internal state. It behaves like a pure func
 *
 ## 🛠️ Related Exercises
 
-* [Exercise_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)]
-* [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)]
-* [Exercise_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)]
-* [Exercise_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)]
+* [Exercise_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
+* [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+* [Exercise_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+* [Exercise_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
 
 ## Conclusion
 

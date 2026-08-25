@@ -60,7 +60,7 @@ The function block does not have an internal state in the sense of a memory. Its
 
 ## ⚖️ Comparison with similar building blocks
 
-* **`XOR` (2 inputs):** The standard XOR block only combines two inputs. To combine seven signals, this block would have to be nested multiple times, which reduces program readability. `XOR_7_BOOL` offers a direct and clear solution. See: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)]
+* **`XOR` (2 inputs):** The standard XOR block only combines two inputs. To combine seven signals, this block would have to be nested multiple times, which reduces program readability. `XOR_7_BOOL` offers a direct and clear solution. See: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
 * **`GEN_XOR` (Generic, n inputs):** The underlying generic block `GEN_XOR` can be instantiated with a variable number of inputs. `XOR_7_BOOL` is a specific, pre-configured instance with seven inputs that can be used directly without having to parameterize the number of inputs.
 * **`PARITY_CHECK`:** A pure parity check block could deliver similar results, but is often conceptually designed for error detection in data streams, whereas `XOR_7_BOOL` serves as a general-purpose logical operator in control logic.
 

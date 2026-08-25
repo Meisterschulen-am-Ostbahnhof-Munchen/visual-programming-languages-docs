@@ -28,10 +28,10 @@ None.
 
 | Type | Direction | Name | Description |
 |-------------|----------|------|--------------------------------------|
-Socket | Input | IN | Incoming ASR signal adapter. |
-Plug | Output | OUT1 | First outgoing ASR signal adapter. |
-Plug | Output | OUT2 | Second outgoing ASR signal adapter. |
-Plug | Output | OUT3 | Third outgoing ASR signal adapter. |
+| Socket | Input | IN | Incoming ASR signal adapter. |
+| Plug | Output | OUT1 | First outgoing ASR signal adapter. |
+| Plug | Output | OUT2 | Second outgoing ASR signal adapter. |
+| Plug | Output | OUT3 | Third outgoing ASR signal adapter. |
 
 All adapters are of type `adapter::types::unidirectional::ASR`.
 ...

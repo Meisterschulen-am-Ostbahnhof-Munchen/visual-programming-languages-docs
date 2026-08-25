@@ -52,7 +52,7 @@ The **ADD_2** is a generic function block for adding two values, developed under
 | INT | 123 + 456 = 579 |
 | REAL | 1.23 + 4.56 = 5.79 |
 | TIME | T#1s + T#2s = T#3s |
-LREAL | 1.23e10 + 4.56e10 |
+| LREAL | 1.23e10 + 4.56e10 |
 
 ## Application Scenarios
 

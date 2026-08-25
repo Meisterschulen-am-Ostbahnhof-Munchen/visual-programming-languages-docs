@@ -69,7 +69,7 @@ The function block has no internal state (memory-free / combinatorial). Its beha
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **`AND_2_BOOL`, `AND_16_BOOL`, etc.:** These blocks offer the same logical function, but for a different number of inputs (2, 16, etc.). The choice of block depends on the required number of operands. See: [AND_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_8.md)]
+* **`AND_2_BOOL`, `AND_16_BOOL`, etc.:** These blocks offer the same logical function, but for a different number of inputs (2, 16, etc.). The choice of block depends on the required number of operands. See: [AND_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_8.md)
 * **`OR_n_BOOL`:** Performs a logical OR operation. The result is `TRUE` if at least one input is `TRUE`.
 * **`XOR_n_BOOL`:** Performs an exclusive OR (XOR) operation.
 * **Continuous Function Blocks (IEC 61131-3):** In IEC 61131-3, AND operations are typically implemented as continuous contacts or operations in languages such as FBD or LD. The `AND_8_BOOL` function block, however, is event-driven and explicitly requires a trigger event.

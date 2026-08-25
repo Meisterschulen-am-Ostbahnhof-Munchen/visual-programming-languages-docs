@@ -79,9 +79,9 @@ Vs. Blocks with Internal Data Storage: The use of a callback adapter distinguish
 *
 ## 🛠️ Related Exercises
 
-* [Exercise_126](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)]
-* [Exercise_126b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b.md)]
-* [Exercise_126b2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2.md)]
+* [Exercise_126](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)
+* [Exercise_126b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b.md)
+* [Exercise_126b2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2.md)
 
 ## Conclusion
 

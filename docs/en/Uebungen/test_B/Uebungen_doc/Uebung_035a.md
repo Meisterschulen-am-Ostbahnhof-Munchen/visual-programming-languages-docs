@@ -1,6 +1,6 @@
 # Exercise_035a: Traffic Light Control International
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_035a`. Here, the control of a traffic light system is implemented using a timed sequence.
 ----
 ## Objective of the Exercise

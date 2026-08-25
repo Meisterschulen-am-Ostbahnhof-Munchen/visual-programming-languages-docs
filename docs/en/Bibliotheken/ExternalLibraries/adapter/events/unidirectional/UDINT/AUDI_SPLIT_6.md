@@ -28,13 +28,13 @@ None.
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-Socket | **IN** | `adapter::types::unidirectional::AUDI` | Incoming adapter for the data stream to be distributed. |
-Plug | **OUT1** | `adapter::types::unidirectional::AUDI` | First output adapter (copy of the input). |
-Plug | **OUT2** | `adapter::types::unidirectional::AUDI` | Second output adapter. |
-Plug | **OUT3** | `adapter::types::unidirectional::AUDI` | Third output adapter. |
-Plug | **OUT4** | `adapter::types::unidirectional::AUDI` | Fourth output adapter. |
-Plug | **OUT5** | `adapter::types::unidirectional::AUDI` | Fifth output adapter. |
-Plug | **OUT6** | `adapter::types::unidirectional::AUDI` | Sixth output adapter. |
+| Socket | **IN** | `adapter::types::unidirectional::AUDI` | Incoming adapter for the data stream to be distributed. |
+| Plug | **OUT1** | `adapter::types::unidirectional::AUDI` | First output adapter (copy of the input). |
+| Plug | **OUT2** | `adapter::types::unidirectional::AUDI` | Second output adapter. |
+| Plug | **OUT3** | `adapter::types::unidirectional::AUDI` | Third output adapter. |
+| Plug | **OUT4** | `adapter::types::unidirectional::AUDI` | Fourth output adapter. |
+| Plug | **OUT5** | `adapter::types::unidirectional::AUDI` | Fifth output adapter. |
+| Plug | **OUT6** | `adapter::types::unidirectional::AUDI` | Sixth output adapter. |
 
 ## Functionality
 

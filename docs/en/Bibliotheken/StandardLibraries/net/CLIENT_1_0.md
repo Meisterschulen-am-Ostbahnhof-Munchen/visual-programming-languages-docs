@@ -51,10 +51,10 @@ The CLIENT_1_0 block establishes a connection via INIT. When the REQ event is tr
 
 | Attribute | Value |
 | :--- | :--- |
-Copyright | (c) 2017, 2025 fortiss GmbH, JKU Linz |
-License | EPL-2.0 |
-Version | 3.0 (2025-19-26, Alois Zoitl) |
-4diac Package | iec61499::net |
+| Copyright | (c) 2017, 2025 fortiss GmbH, JKU Linz |
+| License | EPL-2.0 |
+| Version | 3.0 (2025-19-26, Alois Zoitl) |
+| 4diac Package | iec61499::net |
 
 --
 

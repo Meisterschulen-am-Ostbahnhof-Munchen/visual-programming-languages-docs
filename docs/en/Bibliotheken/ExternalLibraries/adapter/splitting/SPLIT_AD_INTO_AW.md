@@ -76,7 +76,7 @@ The function block does not have an explicit state machine. Its behavior is pure
 | Component | Description | Difference |
 |----------|--------------|-------------|
 | **SPLIT_DWORD_INTO_WORDS** | Pure data splitting without event output or adapters. | Provides only data outputs, no events, and no adapter connectivity. |
-**SPLIT_AD_INTO_AW** | Adapter-based variant with stabilized outputs. | Integrates flip-flops and event output, specifically for AD/AW adapters. |
+| **SPLIT_AD_INTO_AW** | Adapter-based variant with stabilized outputs. | Integrates flip-flops and event output, specifically for AD/AW adapters. |
 
 ## Conclusion
 

@@ -63,8 +63,8 @@ The function block does not possess a persistent internal state in the sense of 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_122](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)]
-* [Exercise_122b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)]
+* [Exercise_122](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+* [Exercise_122b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
 
 ## Conclusion
 

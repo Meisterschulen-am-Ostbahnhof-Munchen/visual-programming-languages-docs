@@ -74,8 +74,8 @@ There are no other states such as IDLE or WAIT, as the logic is strictly event-d
 | Function Block | Difference |
 |----------|-------------|
 | **MOVE** | Copies a value from a data input to an output. `GET_WORD`, on the other hand, reads from an InOut variable, which often represents a connection to an external resource. |
-**READ** | Often standardized for IEC 61499, reads from a process image. `GET_WORD` is more specific for a buffered WORD takeover from an InOut location. |
-**LATCH** | Holds a value after a set pulse. `GET_WORD` only updates on each **REQ**, thus resembling a clocked latch, but is not set/resettable. |
+| **READ** | Often standardized for IEC 61499, reads from a process image. `GET_WORD` is more specific for a buffered WORD takeover from an InOut location. |
+| **LATCH** | Holds a value after a set pulse. `GET_WORD` only updates on each **REQ**, thus resembling a clocked latch, but is not set/resettable. |
 
 ## Conclusion
 

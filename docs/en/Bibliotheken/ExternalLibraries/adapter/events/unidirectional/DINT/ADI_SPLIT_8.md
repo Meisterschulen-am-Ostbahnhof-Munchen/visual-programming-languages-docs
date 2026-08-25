@@ -34,9 +34,9 @@ No data outputs are available.
 | Plug | OUT3 | ADI (unidirectional) | Third outgoing adapter. |
 | Plug | OUT4 | ADI (unidirectional) | Fourth outgoing adapter. |
 | Plug | OUT5 | ADI (unidirectional) | Fifth outgoing adapter. |
-Plug | OUT6 | ADI (unidirectional) | Sixth outgoing adapter. |
-Plug | OUT7 | ADI (unidirectional) | Seventh outgoing adapter. |
-Plug | OUT8 | ADI (unidirectional) | Eighth outgoing adapter. |
+| Plug | OUT6 | ADI (unidirectional) | Sixth outgoing adapter. |
+| Plug | OUT7 | ADI (unidirectional) | Seventh outgoing adapter. |
+| Plug | OUT8 | ADI (unidirectional) | Eighth outgoing adapter. |
 
 ## Functionality
 

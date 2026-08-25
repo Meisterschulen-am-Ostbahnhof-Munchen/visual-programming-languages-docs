@@ -75,8 +75,8 @@ There is no explicit state machine; the block operates purely combinatorially at
 |-------------------|-----------------------------------------------------------------------------|
 | **E_PERMIT** | Standard block with direct Boolean input. No adapter required. |
 | **AX_E_PERMIT** | Same logic, but the enable signal is provided via a unidirectional adapter, which facilitates coupling across subsystems. |
-**E_SR** (Set-Reset) | Event-based state storage; not directly suitable as a gate. |
-**E_MUX** | Event switch that toggles between two outputs depending on a data input – not a pure blocking function. |
+| **E_SR** (Set-Reset) | Event-based state storage; not directly suitable as a gate. |
+| **E_MUX** | Event switch that toggles between two outputs depending on a data input – not a pure blocking function. |
 
 The advantage of `AX_E_PERMIT` lies in the clean separation of the enable logic by an adapter, which promotes the reuse of control modules.
 

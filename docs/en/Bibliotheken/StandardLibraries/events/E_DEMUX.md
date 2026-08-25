@@ -54,7 +54,7 @@ The input event is therefore always forwarded exclusively to exactly one output,
 
 | Feature | E_DEMUX (this) | E_MUX | E_SWITCH |
 ----------------|------------------|----------------|------------------|
-Operating principle | 1:4 distribution | n:1 merging | 1:2 distribution |
+| Operating principle | 1:4 distribution | n:1 merging | 1:2 distribution |
 | Control | Index `K` [0-3] | Index `K` | `BOOL` condition `G` |
 | Event flow | Splitting | Merging | Conditional switch |
 
@@ -62,9 +62,9 @@ Operating principle | 1:4 distribution | n:1 merging | 1:2 distribution |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)]
-* [Exercise_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)]
-* [Exercise_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)]
+* [Exercise_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+* [Exercise_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Exercise_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
 
 ## Conclusion
 

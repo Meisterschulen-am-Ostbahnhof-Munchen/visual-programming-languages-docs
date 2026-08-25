@@ -13,16 +13,16 @@ The function block **ILOCK_2_E** is an event-driven bistable toggle block with d
 | Event | Comment |
 |----------|-----------|
 | `SET1` | Sets OUT1 to TRUE and OUT2 to FALSE. |
-CLK1` | Toggles OUT1 (upon initial activation after a set/reset) and sets OUT2 to FALSE. |
-SET2` | Sets OUT2 to TRUE and OUT1 to FALSE. |
-CLK2` | Toggles OUT2 and sets OUT1 to FALSE. |
-R` | Resets both outputs to FALSE. |
+| CLK1` | Toggles OUT1 (upon initial activation after a set/reset) and sets OUT2 to FALSE. |
+| SET2` | Sets OUT2 to TRUE and OUT1 to FALSE. |
+| CLK2` | Toggles OUT2 and sets OUT1 to FALSE. |
+| R` | Resets both outputs to FALSE. |
 
 ### **Event Outputs**
 
 | Event | Comment |
 ----------|-----------|
-EO` | Triggered after every output change (SET, TOGGLE, or RESET). Stores the current values of OUT1 and OUT2. |
+| EO` | Triggered after every output change (SET, TOGGLE, or RESET). Stores the current values of OUT1 and OUT2. |
 
 ### **Data Inputs**
 

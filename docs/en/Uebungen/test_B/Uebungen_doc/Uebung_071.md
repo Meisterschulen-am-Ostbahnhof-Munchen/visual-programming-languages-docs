@@ -1,6 +1,6 @@
 # Exercise_071: Output WBSD to UT, Switch Q1 when Speed > 0
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_071`. Here, the tractor speed is not only displayed but also used directly to control an actuator.
 ----
 ## Objective of the Exercise

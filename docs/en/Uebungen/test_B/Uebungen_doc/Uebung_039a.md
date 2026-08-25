@@ -1,6 +1,6 @@
 # Exercise_039a: Mirror Sequence V2 with Step Chain
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 ## Overview
 
 [cite_start]This exercise is a specialization of valve control for systems with 3/2-way valves (e.g., hydraulic ring systems like those used by Claas)[cite: 1].

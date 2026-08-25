@@ -1,6 +1,6 @@
 # Exercise_004a2_AX: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a2_AX`. Here, the impulse circuit is extended so that it can be operated by two different pushbuttons. This is achieved by merging the events from the two pushbuttons.
 ----
 ## Objective of the Exercise

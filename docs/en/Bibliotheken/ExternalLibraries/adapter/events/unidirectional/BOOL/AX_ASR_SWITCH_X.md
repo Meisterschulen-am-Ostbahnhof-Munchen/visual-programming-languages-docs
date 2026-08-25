@@ -29,7 +29,7 @@ The function block interacts primarily via adapter interfaces.
 
 | Name | Type | Component | Comment |
 | :--- | :--- | :--- | :--- |
-**G** | `adapter::types::unidirectional::AX` | Socket (Input) | Boolean input adapter (contains event `E1` and data `D1`). |
+| **G** | `adapter::types::unidirectional::AX` | Socket (Input) | Boolean input adapter (contains event `E1` and data `D1`). |
 | **Q** | `adapter::types::unidirectional::ASR` | Plug (Output) | Set/Reset output adapter (contains events `SET` and `RESET`). |
 
 ## Functionality
@@ -56,8 +56,8 @@ Since this is a Composite Function Block without its own state machine (ECC), it
 
 | Input G (D1) on Event G (E1) | Triggered Event at Q | Logical Meaning |
 | :--- | :--- | :--- |
-**TRUE** | **RESET** | Reset / Stop |
-**FALSE** | **SET** | Set / Start |
+| **TRUE** | **RESET** | Reset / Stop |
+| **FALSE** | **SET** | Set / Start |
 
 ## Application Scenarios
 

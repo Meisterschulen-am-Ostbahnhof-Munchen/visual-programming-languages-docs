@@ -89,9 +89,9 @@ Error handling is not explicitly modeled; the inner function block outputs a def
 | Function Block | Target Type | Source Type | Special Feature |
 |----------|---------|-----------|-------------|
 | `AS_TO_AULI` | ULINT | SINT | SINT to ULINT conversion |
-AS_TO_AUDI` | UDINT | SINT | SINT to UDINT conversion (32-bit) |
-AS_TO_AWORD` | WORD | SINT | SINT to WORD conversion (16-bit) |
-AULI_TO_AS` | SINT | ULINT | ULINT to SINT conversion (with overflow limitation) |
+| AS_TO_AUDI` | UDINT | SINT | SINT to UDINT conversion (32-bit) |
+| AS_TO_AWORD` | WORD | SINT | SINT to WORD conversion (16-bit) |
+| AULI_TO_AS` | SINT | ULINT | ULINT to SINT conversion (with overflow limitation) |
 
 This function block covers the conversion from an 8-bit signed type to a 64-bit unsigned type and is particularly suitable for applications requiring a large output range.
 

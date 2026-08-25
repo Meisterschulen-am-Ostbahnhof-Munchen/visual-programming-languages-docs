@@ -27,15 +27,15 @@ The function block **FIELDBUS_LWORD_TO_SIGNAL_SCALED** converts a raw fieldbus s
 | Name | Type | Initial Value | Description |
 |----------|--------|-----------------------|-----------------------------------------------|
 | IN | LWORD | NOT_AVAILABLE_LWM | Fieldbus Raw Signal (LWORD) |
-SCALE | LREAL | LREAL#1.0 | Scaling Factor (Multiplication) |
-OFFSET | DINT | DINT#0 | Offset added after scaling |
+| SCALE | LREAL | LREAL#1.0 | Scaling Factor (Multiplication) |
+| OFFSET | DINT | DINT#0 | Offset added after scaling |
 
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
 |--------|-------|-------------|--------------------------------------------------------------|
-OUT | LREAL | LREAL#0.0 | Scaled Output Value (LREAL) |
-VALID | BOOL | FALSE | Indicates whether the input signal is valid (TRUE = valid) |
+| OUT | LREAL | LREAL#0.0 | Scaled Output Value (LREAL) |
+| VALID | BOOL | FALSE | Indicates whether the input signal is valid (TRUE = valid) |
 
 ### **Adapters**
 
@@ -79,7 +79,7 @@ The comparison is performed by converting both LWORD values to ULINT, so that ne
 | State | Triggered by | Output Algorithm | Event Output | Description |
 |---------|----------------|--------------------|-----------------|--------------|
 | INIT | Event INIT | INIT | INITO | Initialization: Adopt Scaling Parameters |
-REQ | Event REQ | REQ | CNF | Signal Processing: Scaling and Validation Check |
+| REQ | Event REQ | REQ | CNF | Signal Processing: Scaling and Validation Check |
 
 The function block switches between these two states only through the corresponding events. There is no explicit transition to a wait state after initialization; the function block remains in the last state until a new event arrives.
 

@@ -30,11 +30,11 @@ There are no explicit data outputs. The distributed data is provided via the ada
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AB` | `IN` | Socket | Input adapter that supplies the data to be distributed. |
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug | First output adapter – receives a copy of the input data. |
-adapter::types::unidirectional::AB` | `OUT2` | Plug | Second output adapter. |
-adapter::types::unidirectional::AB` | `OUT3` | Plug | Third output adapter. |
-adapter::types::unidirectional::AB` | `OUT4` | Plug | Fourth output adapter. |
-adapter::types::unidirectional::AB` | `OUT5` | Plug | Fifth output adapter. |
-adapter::types::unidirectional::AB` | `OUT6` | Plug | Sixth output adapter. |
+| adapter::types::unidirectional::AB` | `OUT2` | Plug | Second output adapter. |
+| adapter::types::unidirectional::AB` | `OUT3` | Plug | Third output adapter. |
+| adapter::types::unidirectional::AB` | `OUT4` | Plug | Fourth output adapter. |
+| adapter::types::unidirectional::AB` | `OUT5` | Plug | Fifth output adapter. |
+| adapter::types::unidirectional::AB` | `OUT6` | Plug | Sixth output adapter. |
 
 ## Functionality
 

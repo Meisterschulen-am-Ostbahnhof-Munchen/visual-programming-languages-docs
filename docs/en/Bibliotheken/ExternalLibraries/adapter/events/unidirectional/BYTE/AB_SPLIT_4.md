@@ -28,11 +28,11 @@ None.
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-Socket | `IN` | `adapter::types::unidirectional::AB` | Incoming unidirectional adapter connection |
-Plug | `OUT1` | `adapter::types::unidirectional::AB` | First outgoing adapter connection |
-Plug | `OUT2` | `adapter::types::unidirectional::AB` | Second outgoing adapter connection |
-Plug | `OUT3` | `adapter::types::unidirectional::AB` | Third outgoing adapter connection |
-Plug | `OUT4` | `adapter::types::unidirectional::AB` | Fourth Outgoing Adapter Connection |
+| Socket | `IN` | `adapter::types::unidirectional::AB` | Incoming unidirectional adapter connection |
+| Plug | `OUT1` | `adapter::types::unidirectional::AB` | First outgoing adapter connection |
+| Plug | `OUT2` | `adapter::types::unidirectional::AB` | Second outgoing adapter connection |
+| Plug | `OUT3` | `adapter::types::unidirectional::AB` | Third outgoing adapter connection |
+| Plug | `OUT4` | `adapter::types::unidirectional::AB` | Fourth Outgoing Adapter Connection |
 
 ## Functionality
 

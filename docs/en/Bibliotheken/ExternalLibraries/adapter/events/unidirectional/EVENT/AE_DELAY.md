@@ -33,8 +33,8 @@ This function block does not have any data outputs.
 | Name | Type | Kind | Comment |
 | :--- | :--- | :--- | :--- |
 | **START** | adapter::types::unidirectional::AE | Socket (Input) | Starts the time delay (internally triggers `START`). |
-**STOP** | adapter::types::unidirectional::AE | Socket (Input) | Stops/cancels the time delay (internally triggers `STOP`). |
-**EO** | adapter::types::unidirectional::AE | Plug (Output) | **Event Output**: Outputs the event after the specified time elapses, `DT`. |
+| **STOP** | adapter::types::unidirectional::AE | Socket (Input) | Stops/cancels the time delay (internally triggers `STOP`). |
+| **EO** | adapter::types::unidirectional::AE | Plug (Output) | **Event Output**: Outputs the event after the specified time elapses, `DT`. |
 
 ## Functionality
 

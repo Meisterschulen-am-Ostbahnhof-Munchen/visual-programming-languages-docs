@@ -41,7 +41,7 @@ The function block does not have any direct, classic event or data inputs on its
 | :--- | :--- | :--- | :--- |
 | **Socket** (Female) | `IN1` | `adapter::types::unidirectional::AUDI` | First input value for division (dividend). |
 | **Socket** (Female) | `IN2` | `adapter::types::unidirectional::AUDI` | Second input value for the division (divisor). |
-**Plug** (connector) | `OUT` | `adapter::types::unidirectional::AUDI` | Result of the division (quotient). |
+| **Plug** (connector) | `OUT` | `adapter::types::unidirectional::AUDI` | Result of the division (quotient). |
 
 ---
 

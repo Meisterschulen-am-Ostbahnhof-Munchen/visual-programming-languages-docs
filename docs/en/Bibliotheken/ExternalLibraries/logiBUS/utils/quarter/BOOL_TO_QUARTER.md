@@ -54,8 +54,8 @@ The block does not have an internal state in the sense of a memory. It behaves p
 *
 * **`BOOL_TO_BYTE`**: A generic converter that typically maps `TRUE` to `1` and `FALSE` to `0`. `BOOL_TO_QUARTER` is more specialized and uses project-specific, semantic constants instead of numeric values.
 * **Direct assignment**: The functionality could also be replicated by direct assignment in ST code (`QB := I`), but this would eliminate the advantages of centralized constant definition and a clear interface (events).
-* [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
-* [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
+* [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 The `BOOL_TO_QUARTER` function block is a specialized but useful converter for control applications. It offers a clean interface with event-driven control, uses centrally managed constants for consistent semantics, and is potentially extensible thanks to the quarter-byte concept. Its strength lies in combining simple binary logic with device-specific control protocols.
 

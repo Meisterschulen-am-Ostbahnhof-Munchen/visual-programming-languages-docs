@@ -1,6 +1,6 @@
 # Exercise_010c: SoftKey_F1 on DigitalOutput_Q1 with GreenWhiteBackground
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_010c`. Previously, the keys were only used for input. Now they receive dynamic feedback on the screen.
 ## 🎧 Podcast
 

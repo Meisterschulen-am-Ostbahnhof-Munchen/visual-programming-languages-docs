@@ -66,8 +66,8 @@ A detailed state representation can be found in the source code of the internal 
 | Function Block | Special Feature |
 |----------|--------------|
 | `AQ_D_FF` / `E_D_FF` | Simple D flip-flop without a time limit on the output. |
-AQ_D_FF_TMIN` (this FB) | Extended by a minimum delay Tmin between output events. |
-AQ_D_FF_TMAX` (hypothetical) | Limits the maximum time between two output events. |
+| AQ_D_FF_TMIN` (this FB) | Extended by a minimum delay Tmin between output events. |
+| AQ_D_FF_TMAX` (hypothetical) | Limits the maximum time between two output events. |
 
 Compared to a standard D flip-flop, `AQ_D_FF_TMIN` offers additional protection against excessively rapid succession of output events, which is often necessary in practice.
 

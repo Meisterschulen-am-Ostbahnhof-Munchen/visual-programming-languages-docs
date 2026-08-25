@@ -31,16 +31,16 @@ The **IA_VDS** function block is an ISOBUS adapter for vehicle direction and spe
 | Name | Type | Description |
 |--------|--------|--------------|
 | QO | BOOL | Event Output Qualifier (TRUE = Initialization OK). |
-STATUS | STRING | Message text (e.g., error description or "Ready"). |
+| STATUS | STRING | Message text (e.g., error description or "Ready"). |
 
 ### **Adapter**
 
 | Adapter | Type | Description |
 |--------------|------|--------------|
-NAV_SPEED | AUI | Navigation-based vehicle speed (unidirectional, receiver). |
-BEARING | AUI | Compass direction (unidirectional, receiver). |
-ALTITUDE | AUI | Altitude above sea level (unidirectional, receiver). |
-TIMEOUT | AX | Timeout status (unidirectional, receiver). |
+| NAV_SPEED | AUI | Navigation-based vehicle speed (unidirectional, receiver). |
+| BEARING | AUI | Compass direction (unidirectional, receiver). |
+| ALTITUDE | AUI | Altitude above sea level (unidirectional, receiver). |
+| TIMEOUT | AX | Timeout status (unidirectional, receiver). |
 
 All adapters are implemented as plugs (outgoing) – the IA_VDS sends the data to the connected sinks.
 

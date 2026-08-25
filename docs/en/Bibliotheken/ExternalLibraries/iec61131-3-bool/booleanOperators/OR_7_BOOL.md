@@ -68,7 +68,7 @@ The function block has no internal state or memory. Its behavior is purely combi
 
 * **AND_7_BOOL:** Performs a logical AND operation. The output is only `TRUE` if *all* inputs are `TRUE`.
 * **XOR_7_BOOL:** Performs an exclusive OR (XOR) operation. The output is `TRUE` if an odd number of inputs are `TRUE`.
-* **OR_n_BOOL (n=2,4,...):** Function blocks of the same family that provide the OR function for a different, fixed number of inputs. The choice of block depends on the required number of signals. See: [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)]
+* **OR_n_BOOL (n=2,4,...):** Function blocks of the same family that provide the OR function for a different, fixed number of inputs. The choice of block depends on the required number of signals. See: [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)
 * **Generic FB (GEN_OR):** The underlying generic implementation used to create the specific `OR_n_BOOL` variants.
 
 ## Conclusion

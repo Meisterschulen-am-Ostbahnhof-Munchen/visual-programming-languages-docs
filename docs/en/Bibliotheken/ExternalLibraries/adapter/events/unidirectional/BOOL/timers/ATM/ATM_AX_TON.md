@@ -90,8 +90,8 @@ The FB itself does not manage its own state machine – the state logic resides 
 |----------|-----|--------------|
 | **E_TON** (IEC 61499) | Standard On-Delay | Classic input/output interface; direct event and data ports |
 | **ATM_AX_TON** | Adapter-based | Encapsulates E_TON and provides an AX/AT adapter; additional EIPT input (not connected) |
-**E_TOF** | Off-Delay | Delay on power-off (opposite behavior) |
-**E_CTU** | Up-counter | Counts events, not a timer |
+| **E_TOF** | Off-Delay | Delay on power-off (opposite behavior) |
+| **E_CTU** | Up-counter | Counts events, not a timer |
 
 The **ATM_AX_TON** differs in its pure adapter interface and the lack of direct data coupling. It is particularly suitable for modular, hierarchically structured controllers.
 

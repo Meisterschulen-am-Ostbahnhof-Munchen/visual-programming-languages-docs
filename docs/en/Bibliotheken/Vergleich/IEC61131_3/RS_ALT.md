@@ -5,9 +5,9 @@ The function block **RS** is a bistable element (flip-flop) where resetting take
 
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
-**Input** | S | BOOL | Set Input (Set) |
-**Input** | R1 | BOOL | Reset Input (Reset) |
-**Output** | Q1 | BOOL | Output State |
+| **Input** | S | BOOL | Set Input (Set) |
+| **Input** | R1 | BOOL | Reset Input (Reset) |
+| **Output** | Q1 | BOOL | Output State |
 
 ## Function
 

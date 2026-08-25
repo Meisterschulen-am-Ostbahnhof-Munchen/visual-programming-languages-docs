@@ -1,13 +1,13 @@
 # Exercise_001c_AX: DigitalInput_I1 to DigitalOutput_Q1 --> Query input at boot.
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_001c_AX`. It demonstrates how to query a digital input immediately after system startup (boot process) to transmit the initial state to a digital output.
 ----
 ## Objective of the exercise
 
 The main objective of this exercise is to understand the initialization process in IEC 61499. In many automation scenarios, it is not sufficient to simply react to state changes; the system must also capture the current state of the hardware at startup to ensure a defined initial state.
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)] -----
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)] -----
 
 ## Description and Components
 

@@ -74,7 +74,7 @@ The component implicitly passes through the following main states:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_125](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)]
+* [Exercise_125](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
 
 ## Conclusion
 

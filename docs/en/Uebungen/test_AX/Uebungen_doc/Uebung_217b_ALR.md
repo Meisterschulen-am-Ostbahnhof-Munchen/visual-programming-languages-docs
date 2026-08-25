@@ -73,11 +73,11 @@ This exercise illustrates the use of adapter interfaces, signal conversion betwe
 |-------------------------------|--------------------------------|-----------------|
 | `Input_CD.IN` | `ALI_FB_CTD.CD` | Adapter (IN) |
 | `Input_LD.IN` | `ALI_FB_CTD.LD` | Adapter (IN) |
-ALI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter (OUT) |
-ALI_FB_CTD.CV` | `ALI_TO_ALR.ALI_IN` | Adapter |
-ALI_TO_ALR.ALR_OUT` | `Q_NumericValue_PHYSA_LREAL.lrPhys` | Adapter |
-ALI_LINT_TO_LI.ALI_OUT` | `ALI_FB_CTD.PV` | Adapter |
-Input_LD.INITO` (Event) | `ALI_LINT_TO_LI.REQ` | Event |
+| ALI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter (OUT) |
+| ALI_FB_CTD.CV` | `ALI_TO_ALR.ALI_IN` | Adapter |
+| ALI_TO_ALR.ALR_OUT` | `Q_NumericValue_PHYSA_LREAL.lrPhys` | Adapter |
+| ALI_LINT_TO_LI.ALI_OUT` | `ALI_FB_CTD.PV` | Adapter |
+| Input_LD.INITO` (Event) | `ALI_LINT_TO_LI.REQ` | Event |
 
 ## Summary
 

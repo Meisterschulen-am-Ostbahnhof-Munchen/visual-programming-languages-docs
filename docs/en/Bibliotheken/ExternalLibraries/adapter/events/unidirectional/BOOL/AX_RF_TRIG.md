@@ -17,7 +17,7 @@ The block does not have direct event inputs. Edge detection is triggered by the 
 | Name | Comment |
 |------|-----------|
 | ER | Confirmation that a rising edge (0→1) has been detected. |
-EF | Confirmation that a falling edge (1→0) has been detected. |
+| EF | Confirmation that a falling edge (1→0) has been detected. |
 
 #### **Data Inputs**
 
@@ -31,7 +31,7 @@ No data outputs.
 
 | Name | Type | Comment |
 |------|-----|-----------|
-QI | adapter::types::unidirectional::AX | Receives the Boolean value whose edges are to be monitored. The adapter provides both an event (E1) and the data value (D1). |
+| QI | adapter::types::unidirectional::AX | Receives the Boolean value whose edges are to be monitored. The adapter provides both an event (E1) and the data value (D1). |
 
 ## Functionality
 

@@ -33,9 +33,9 @@ No data outputs available.
 | Output (Plug) | **OUT2** | `adapter::types::unidirectional::ASR` | Second output. |
 | Output (Plug) | **OUT3** | `adapter::types::unidirectional::ASR` | Third output. |
 | Output (Plug) | **OUT4** | `adapter::types::unidirectional::ASR` | Fourth output. |
-Output (Plug) | **OUT5** | `adapter::types::unidirectional::ASR` | Fifth output. |
-Output (Plug) | **OUT6** | `adapter::types::unidirectional::ASR` | Sixth output. |
-Output (Plug) | **OUT7** | `adapter::types::unidirectional::ASR` | Seventh output. |
+| Output (Plug) | **OUT5** | `adapter::types::unidirectional::ASR` | Fifth output. |
+| Output (Plug) | **OUT6** | `adapter::types::unidirectional::ASR` | Sixth output. |
+| Output (Plug) | **OUT7** | `adapter::types::unidirectional::ASR` | Seventh output. |
 
 ## Functionality
 

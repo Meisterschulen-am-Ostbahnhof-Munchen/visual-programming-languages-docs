@@ -38,8 +38,8 @@ The module does not have traditional event and data inputs/outputs, but instead 
 
 | Direction | Name | Type | Description |
 |----------|------------|------------------------------|-----------------------------|
-Socket | `AI_IN` | `adapter::types::unidirectional::AI` | Input adapter (INT). |
-Plug | `AUDI_OUT` | `adapter::types::unidirectional::AUDI` | Output adapter (UDINT). |
+| Socket | `AI_IN` | `adapter::types::unidirectional::AI` | Input adapter (INT). |
+| Plug | `AUDI_OUT` | `adapter::types::unidirectional::AUDI` | Output adapter (UDINT). |
 
 ## Functionality
 

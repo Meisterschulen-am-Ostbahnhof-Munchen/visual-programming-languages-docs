@@ -62,7 +62,7 @@ Compared to other selection blocks, AX_SEL offers:
 - Easy integration through the unidirectional adapter
 - Standardized interface according to IEC 61131-3
 
-Comparison with [F_SEL](../../../../StandardLibraries/iec61131-3/selection/F_SEL.md)]
+Comparison with [F_SEL](../../../../StandardLibraries/iec61131-3/selection/F_SEL.md)
 
 ## Conclusion
 

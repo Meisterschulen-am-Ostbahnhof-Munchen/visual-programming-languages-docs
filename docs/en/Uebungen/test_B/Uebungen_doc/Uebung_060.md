@@ -1,6 +1,6 @@
 # Exercise_060: for TC-SC, i.e., Task Controller Section Control
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_060`. This is a high-level exercise for professional ISOBUS applications in the field of precision farming.
 ## 🎧 Podcast
 

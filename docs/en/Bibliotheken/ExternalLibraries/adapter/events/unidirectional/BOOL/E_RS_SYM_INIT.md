@@ -13,21 +13,21 @@ The function block **E_RS_SYM_INIT** is an event-driven, bistable toggle switch 
 | Event | Type | Comment |
 |----------|-----|-----------|
 | **INIT** | EInit | Initialization Request; Takes the values of **QI** and **Q_INIT** |
-**R** | Event | Resets output **Q** |
-**S** | Event | Sets output **Q** |
+| **R** | Event | Resets output **Q** |
+| **S** | Event | Sets output **Q** |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
 |----------|-----|-----------|
-**INITO** | EInit | Initialization confirmation; passes the value of **QO** |
-**EO** | Event | Indicates that output **Q** has changed |
+| **INITO** | EInit | Initialization confirmation; passes the value of **QO** |
+| **EO** | Event | Indicates that output **Q** has changed |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
 |----------|-------|-----------|
-**QI** | BOOL | Event Qualifier: Set/reset operations are only executed if *QI=TRUE*. During initialization, *QI* sets the value of **QO**. |
+| **QI** | BOOL | Event Qualifier: Set/reset operations are only executed if *QI=TRUE*. During initialization, *QI* sets the value of **QO**. |
 | **Q_INIT** | BOOL | Sets the initial value of **Q**, which is inherited during initialization. |
 
 ### **Data Outputs**
@@ -101,9 +101,9 @@ The **E_RS_SYM_INIT** operates as a state machine with five states: **START**, *
 | Function Block | Difference to E_RS_SYM_INIT |
 |----------|-------------------------------|
 | **E_RS** (Standard RS Flip-Flop) | No explicit start behavior; **Q** is not defined during INIT. **Q_INIT** is missing. |
-**E_SR** (Set-Dominant Flip-Flop) | Set dominates over Reset; no initializable start state. |
-**E_RS_SYM** | Symmetric RS logic without an INIT function; no start behavior. |
-**E_RS_SYM**| **E_RS_SYM_INIT** (this one) | Combines symmetrical RS logic with selectable initial value and deinitialization. |
+| **E_SR** (Set-Dominant Flip-Flop) | Set dominates over Reset; no initializable start state. |
+| **E_RS_SYM** | Symmetric RS logic without an INIT function; no start behavior. |
+| **E_RS_SYM**| **E_RS_SYM_INIT** (this one) | Combines symmetrical RS logic with selectable initial value and deinitialization. |
 
 ## Conclusion
 

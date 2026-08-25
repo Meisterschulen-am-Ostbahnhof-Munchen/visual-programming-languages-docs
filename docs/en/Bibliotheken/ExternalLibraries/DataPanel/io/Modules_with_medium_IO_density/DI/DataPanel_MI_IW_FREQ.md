@@ -15,14 +15,14 @@ The function block **DataPanel_MI_IW_FREQ** is a service interface function bloc
 | Event | Description | With |
 |----------|---------------|-----|
 | **INIT** | Service Initialization | `QI`, `PARAMS`, `u8SAMember`, `Input`, `FreqDelta`, `TimeDelta` |
-**REQ** | Service Request (Read Current Frequency) | `QI` |
+| **REQ** | Service Request (Read Current Frequency) | `QI` |
 
 ### **Event Outputs**
 
 | Event | Description | With |
 |----------|--------------|-----|
-**INITO** | Initialization Confirmation | `QO`, `STATUS` |
-**CNF** | Confirmation of a requested query | `QO`, `STATUS`, `IN` |
+| **INITO** | Initialization Confirmation | `QO`, `STATUS` |
+| **CNF** | Confirmation of a requested query | `QO`, `STATUS`, `IN` |
 | **IND** | Asynchronous indication (frequency change or time elapsed) | `QO`, `STATUS`, `IN` |
 
 ### **Data Inputs**

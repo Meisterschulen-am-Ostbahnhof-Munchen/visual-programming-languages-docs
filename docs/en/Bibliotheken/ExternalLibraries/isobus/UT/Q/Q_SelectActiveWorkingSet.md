@@ -65,9 +65,9 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 | 0 | VT_E_NO_ERR | Successful Switch |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT not ready |
--21 | VT_E_NO_INSTANCE | No VT client available |
--129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
--130 | VT_E_NOT_ALIVE | VT not active |
+| -21 | VT_E_NO_INSTANCE | No VT client available |
+| -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
+| -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
 
@@ -80,10 +80,10 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 
 | Feature | Q_SelectActiveWorkingSet | VtContextSwitch | VtWorkspaceManager |
 ---------------|--------------------------|-----------------|--------------------|
-ISO Standard | ✔ | ✖ | ✖ |
-VT Version | 6+ | All | All |
-ISO NAME | ✔ | ✖ | ✖ |
-Feedback | ✔ | ✖ | ✔ |
+| ISO Standard | ✔ | ✖ | ✖ |
+| VT Version | 6+ | All | All |
+| ISO NAME | ✔ | ✖ | ✖ |
+| Feedback | ✔ | ✖ | ✔ |
 
 ## Conclusion
 

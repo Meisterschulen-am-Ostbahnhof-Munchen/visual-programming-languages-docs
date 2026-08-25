@@ -59,7 +59,7 @@ The function block has a continuous operating state and constantly calculates th
 
 Compared to other logical operators such as AND or OR, XOR has the unique feature that a TRUE signal is only generated when the input values are different. This makes it particularly suitable for comparison and difference detection tasks.
 
-Comparison with [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)]
+Comparison with [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)
 
 ## Change Detection
 
@@ -74,4 +74,4 @@ The AX_XOR_2 function block provides an efficient and reliable solution for XOR 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
+* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

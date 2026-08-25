@@ -30,11 +30,11 @@ No data outputs are available. Output data is provided via the plug adapters `OU
 |------|------|----------|--------------|
 | `adapter::types::unidirectional::AW` | `IN` | Socket (Input) | Source adapter that provides the signal to be split |
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug (Output) | First output, identical to the IN signal |
-adapter::types::unidirectional::AW` | `OUT2` | Plug (Output) | Second output |
-adapter::types::unidirectional::AW` | `OUT3` | Plug (Output) | Third output |
-adapter::types::unidirectional::AW` | `OUT4` | Plug (Output) | Fourth output |
-adapter::types::unidirectional::AW` | `OUT5` | Plug (Output) | Fifth output |
-adapter::types::unidirectional::AW` | `OUT6` | Plug (Output) | Sixth Output |
+| adapter::types::unidirectional::AW` | `OUT2` | Plug (Output) | Second output |
+| adapter::types::unidirectional::AW` | `OUT3` | Plug (Output) | Third output |
+| adapter::types::unidirectional::AW` | `OUT4` | Plug (Output) | Fourth output |
+| adapter::types::unidirectional::AW` | `OUT5` | Plug (Output) | Fifth output |
+| adapter::types::unidirectional::AW` | `OUT6` | Plug (Output) | Sixth Output |
 | `adapter::types::unidirectional::AW` | `OUT7` | Plug (Output) | Seventh Output |
 | `adapter::types::unidirectional::AW` | `OUT8` | Plug (Output) | Eighth Output |
 

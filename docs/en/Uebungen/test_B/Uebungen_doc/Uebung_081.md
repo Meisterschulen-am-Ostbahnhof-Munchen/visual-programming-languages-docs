@@ -1,6 +1,6 @@
 # Exercise_081: Example for E_CTD
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_081`. It demonstrates the principle of counting down until the zero limit is reached.
 ----
 ## Objective of the Exercise

@@ -32,7 +32,7 @@ The `E_RS` block functions as a simple latch:
 
 ## Technical Features and Standards Comparison
 
-According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this function block is identical to [E_SR](E_SR.md)]. Both function blocks (`E_RS` and `E_SR`) exist to maintain consistency with the types in IEC 61131-3, even though IEC 61499 does not have an inherent "dominance" of events, as is the case with level-controlled inputs in classic PLC programming.
+According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this function block is identical to [E_SR](E_SR.md). Both function blocks (`E_RS` and `E_SR`) exist to maintain consistency with the types in IEC 61131-3, even though IEC 61499 does not have an inherent "dominance" of events, as is the case with level-controlled inputs in classic PLC programming.
 
 - **Comparison to IEC 61131-3**: See [RS (Bistable, priority reset)](../../Vergleich/IEC61131_3/RS_ALT.md). While in IEC 61131-3 the `RS` function block has a defined "reset dominance" (if R and S are TRUE simultaneously, R wins), the behavior in IEC 61499 for closely spaced events depends on the processing order of the runtime environment (ECC). Since events are transient, there is no permanent conflict between two static signals.
 - **Functional Identity**: `E_RS` and `E_SR` are technically identical. Their graphical representation and naming conventions simply follow the established naming conventions to facilitate orientation for developers.
@@ -51,10 +51,10 @@ According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)]
-* [Exercise_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)]
-* [Exercise_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)]
-* [Exercise_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)]
+* [Exercise_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
+* [Exercise_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
+* [Exercise_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+* [Exercise_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
 
 ## Conclusion
 

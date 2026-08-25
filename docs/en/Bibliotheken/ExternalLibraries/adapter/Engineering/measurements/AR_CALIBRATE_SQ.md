@@ -102,9 +102,9 @@ $$\text{OFFSET} := \frac{Y\_LOW\_INT}{\text{SCALE}} - X\_LOW\_INT$$
 
 | Feature | AR_CALIBRATE | AR_CALIBRATE_SQ |
 | :--- | :--- | :--- |
-**CO Calculation Formula** | $\text{OFFSET} := Y\_Offset - X$ | $\text{OFFSET} := \frac{Y\_Offset}{\text{SCALE}} - X$ |
-**Output Y to CO** | $Y = Y\_Offset \cdot \text{SCALE}$ (only correct for $\text{SCALE} = 1$) | $Y = Y\_Offset$ (always mathematically correct) |
-**Sequence Control** | No restrictions (CO and CS can be triggered arbitrarily) | ECC enforced (CO must always precede CS) |
+| **CO Calculation Formula** | $\text{OFFSET} := Y\_Offset - X$ | $\text{OFFSET} := \frac{Y\_Offset}{\text{SCALE}} - X$ |
+| **Output Y to CO** | $Y = Y\_Offset \cdot \text{SCALE}$ (only correct for $\text{SCALE} = 1$) | $Y = Y\_Offset$ (always mathematically correct) |
+| **Sequence Control** | No restrictions (CO and CS can be triggered arbitrarily) | ECC enforced (CO must always precede CS) |
 
 ## Conclusion
 

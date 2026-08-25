@@ -1,6 +1,6 @@
 # Exercise_012a: Numeric Value Input and Storage (NVS) with Sub-Application
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_012a`. Here, the persistent storage from Exercise 012 is encapsulated in a reusable sub-application.
 ----
 ## Overview

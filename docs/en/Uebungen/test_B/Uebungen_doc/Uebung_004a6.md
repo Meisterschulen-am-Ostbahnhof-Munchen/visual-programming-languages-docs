@@ -1,6 +1,6 @@
 # Exercise_004a6: Toggle Flip-Flop with IE and E_REND (Rendezvous)
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a6`. It introduces an advanced event pattern: the rendezvous. An event is only passed on when several different conditions have occurred independently of each other.
 ----
 ## Objective of the Exercise

@@ -28,12 +28,12 @@ No data outputs available.
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-Socket (Input) | IN | `adapter::types::unidirectional::AULI` | Receives the AULI signal to be split |
-Plug (Output) | OUT1 | `adapter::types::unidirectional::AULI` | First output for the AULI signal |
-Plug (Output) | OUT2 | `adapter::types::unidirectional::AULI` | Second output |
-Plug (Output) | OUT3 | `adapter::types::unidirectional::AULI` | Third output |
-Plug (Output) | OUT4 | `adapter::types::unidirectional::AULI` | Fourth output |
-Plug (Output) | OUT5 | `adapter::types::unidirectional::AULI` | Fifth Output |
+| Socket (Input) | IN | `adapter::types::unidirectional::AULI` | Receives the AULI signal to be split |
+| Plug (Output) | OUT1 | `adapter::types::unidirectional::AULI` | First output for the AULI signal |
+| Plug (Output) | OUT2 | `adapter::types::unidirectional::AULI` | Second output |
+| Plug (Output) | OUT3 | `adapter::types::unidirectional::AULI` | Third output |
+| Plug (Output) | OUT4 | `adapter::types::unidirectional::AULI` | Fourth output |
+| Plug (Output) | OUT5 | `adapter::types::unidirectional::AULI` | Fifth Output |
 | Plug (Output) | OUT6 | `adapter::types::unidirectional::AULI` | Sixth Output |
 | Plug (Output) | OUT7 | `adapter::types::unidirectional::AULI` | Seventh Output |
 

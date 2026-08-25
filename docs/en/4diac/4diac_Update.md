@@ -18,8 +18,8 @@ Direct links
 
 | Operating System | rc | milestone | nightly |
 ----------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-*************************** | ********* | ********* | ********* |
-win32.win32.x86_64.zip | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-win32.win32.x86_64.zip) | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-win32.win32.x86_64.zip) | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-win32.win32.x86_64.zip) |
+| *************************** | ********* | ********* | ********* |
+| win32.win32.x86_64.zip | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-win32.win32.x86_64.zip) | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-win32.win32.x86_64.zip) | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-win32.win32.x86_64.zip) |
 | linux.gtk.x86_64.tar.gz | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-linux.gtk.x86_64.tar.gz) | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-linux.gtk.x86_64.tar.gz) | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-linux.gtk.x86_64.tar.gz) |
 | macosx.cocoa.aarch64.dmg | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.aarch64.dmg) | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.aarch64.dmg) | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.aarch64.dmg) |
 | macosx.cocoa.aarch64.tar.gz | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz) | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz) | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz) |
@@ -48,7 +48,7 @@ To adjust the update source in the IDE:
 2. Navigate to: Install/Update → Available Software Sites
 3. For different versions:
 - **Stable Releases**: [https://www.eclipse.org/4diac/downloads/updates/release](https://www.eclipse.org/4diac/downloads/updates/release)
-- **Nightly Builds**: [https://download.eclipse.org/4diac/updates/nightly](https://download.eclipse.org/4diac/updates/nightly)]
+- **Nightly Builds**: [https://download.eclipse.org/4diac/updates/nightly](https://download.eclipse.org/4diac/updates/nightly)
 - Further URLs are listed below
 4. New sites can be added via "Add..."
 

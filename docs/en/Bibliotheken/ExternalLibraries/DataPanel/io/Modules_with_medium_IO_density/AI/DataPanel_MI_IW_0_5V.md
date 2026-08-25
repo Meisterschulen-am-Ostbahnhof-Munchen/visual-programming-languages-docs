@@ -83,11 +83,11 @@ Since the XML definition does not contain an ECC (Execution Control Chart), the 
 | State | Description | Event | Action |
 |---------|---------------|----------|---------|
 | **IDLE** | Waiting for Initialization | `INIT` (QI=TRUE) | Starting connection |
-**INIT** | Initialization in progress | – | Waiting for resource confirmation |
-**READY** | Ready for requests | `INITO` | Set QO=TRUE |
-**BUSY** | Measurement request in progress | `REQ` | Sending request to resource |
-**DONE** | Response received | `CNF` | Loading `IN` and setting QO=TRUE |
-**ERROR** | Error status | – | Set QO=FALSE, STATUS=Error text |
+| **INIT** | Initialization in progress | – | Waiting for resource confirmation |
+| **READY** | Ready for requests | `INITO` | Set QO=TRUE |
+| **BUSY** | Measurement request in progress | `REQ` | Sending request to resource |
+| **DONE** | Response received | `CNF` | Loading `IN` and setting QO=TRUE |
+| **ERROR** | Error status | – | Set QO=FALSE, STATUS=Error text |
 
 Asynchronous `IND` events can occur in the **READY** or **BUSY** states and result in the immediate availability of the value.
 

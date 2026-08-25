@@ -73,7 +73,7 @@ Since the FB implements the behavior via an internal block, there is no separate
 |----------|-------------|
 | Simple D flip-flop (e.g., `E_D_FF`) | Latch without hysteresis – any change at the input is immediately registered. |
 | D flip-flop with deadband (`E_D_FF_TOTBAND`) | It has a deadband that blocks changes as long as the value remains within the band. |
-**ALR_D_FF_HYS** | Hysteresis is only effective in one direction (threshold behavior), typically used to prevent flutter. |
+| **ALR_D_FF_HYS** | Hysteresis is only effective in one direction (threshold behavior), typically used to prevent flutter. |
 
 ## Conclusion
 

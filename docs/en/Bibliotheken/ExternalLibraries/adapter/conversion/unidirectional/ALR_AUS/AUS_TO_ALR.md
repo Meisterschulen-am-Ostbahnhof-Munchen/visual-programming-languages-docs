@@ -65,8 +65,8 @@ The function block has **no internal state machine**. It operates transparently:
 |---------|------------|-----------------------------------------------------|
 | Input / Output | Adapter Interfaces | Individual Data Inputs/Outputs |
 | Event Processing | Pass-Through via Adapter | Custom Event I/C Pairs |
-Implementation | Composite (Connections Only) | Executable Algorithms |
-Type Conversion | Not Included in the Function Block | Explicit Conversion via Algorithm |
+| Implementation | Composite (Connections Only) | Executable Algorithms |
+| Type Conversion | Not Included in the Function Block | Explicit Conversion via Algorithm |
 
 While a classic *USINT_TO_LREAL* function block performs the value conversion itself, **AUS_TO_ALR** only provides adapter adaptation. A separate function block must be interposed for the actual data conversion.
 

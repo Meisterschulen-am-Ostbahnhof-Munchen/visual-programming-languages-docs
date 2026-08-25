@@ -70,7 +70,7 @@ The F.12 command addresses the VT's **audio device** directly — it does **not 
 | -21 | VT_E_NO_INSTANCE | No VT Client Available |
 | -128 | VT_E_HANDLE_INVALID | Invalid Audio Configuration |
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
--130 | VT_E_NOT_ALIVE | VT not active |
+| -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
 
@@ -86,7 +86,7 @@ The F.12 command addresses the VT's **audio device** directly — it does **not 
 | ISO Standard | ✔ | ✖ | ✖ |
 | Value Range | 0-100% | 0-255 | 0-10 steps |
 | Global Effect | ✔ | ✔ | ✖ |
-Feedback | ✔ | ✖ | ✔ |
+| Feedback | ✔ | ✖ | ✔ |
 
 ## Conclusion
 

@@ -32,7 +32,7 @@ The function block **AI_SPLIT_4** is a generic block that splits a unidirectiona
 | **Plug (Output)** | `OUT1` | `adapter::types::unidirectional::AI` | First output (copy of the input signal) |
 | **Plug (Output)** | `OUT2` | `adapter::types::unidirectional::AI` | Second output (copy of the input signal) |
 | **Plug (Output)** | `OUT3` | `adapter::types::unidirectional::AI` | Third output (copy of the input signal) |
-**Plug (output)** | `OUT4` | `adapter::types::unidirectional::AI` | Fourth output (copy of the input signal) |
+| **Plug (output)** | `OUT4` | `adapter::types::unidirectional::AI` | Fourth output (copy of the input signal) |
 
 ## Functionality
 

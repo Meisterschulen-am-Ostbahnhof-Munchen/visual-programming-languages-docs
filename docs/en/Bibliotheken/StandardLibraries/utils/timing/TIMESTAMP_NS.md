@@ -101,10 +101,10 @@ Calculation of intervals from arbitrary reference points.
 
 | Function | `TIMESTAMP_NS` | `NOW()` | `F_NOW_MONOTONIC` |
 |---------------------|-----------------------|-----------------------|-----------------------|
-**Output Format** | Nanoseconds (ULINT) | Time Interval (TIME) | Time Interval (TIME) |
-**Reference Point** | Configurable | System Startup | Hardware Dependent |
-**Precision** | 1 ns | 1 ms | 1 ns (typical) |
-**Use Case** | Absolute Timestamps | Relative Time Measurement | Monotonical Measurement |
+| **Output Format** | Nanoseconds (ULINT) | Time Interval (TIME) | Time Interval (TIME) |
+| **Reference Point** | Configurable | System Startup | Hardware Dependent |
+| **Precision** | 1 ns | 1 ms | 1 ns (typical) |
+| **Use Case** | Absolute Timestamps | Relative Time Measurement | Monotonical Measurement |
 
 ---
 

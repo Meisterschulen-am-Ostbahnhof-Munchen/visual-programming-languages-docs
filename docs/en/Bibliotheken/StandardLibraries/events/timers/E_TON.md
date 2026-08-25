@@ -81,7 +81,7 @@ The **E_TON** function block is a simple yet powerful tool in IEC 61499 for impl
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)]
-* [Exercise_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)]
-* [Exercise_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)]
-* [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)]
+* [Exercise_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
+* [Exercise_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
+* [Exercise_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+* [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)

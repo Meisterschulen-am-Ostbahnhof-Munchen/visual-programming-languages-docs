@@ -65,7 +65,7 @@ The function block does not have its own state machine. It is triggered by the *
 |---------|-------------|
 | *Idle* | Waiting for `REQ`; outputs retain the last value. |
 | *Processing* | `REQ` received – data is being processed. |
-*Completed* | `CNF` is being sent, outputs are valid. The module immediately returns to idle state. |
+| *Completed* | `CNF` is being sent, outputs are valid. The module immediately returns to idle state. |
 
 ## Application Scenarios
 

@@ -72,10 +72,10 @@ The function block does not have an explicit state machine; the state is implici
 
 | Current `Q1` | `R1` | `S` | `CLK` (rising edge) | New `Q1` |
 ----------------|------|-----|---------------------------|-------------|
-x | TRUE | x | x | FALSE |
-x | FALSE| TRUE| x | TRUE |
-x | FALSE| FALSE| TRUE (and previously FALSE) | NOT Q1 |
-x | FALSE| FALSE| FALSE or no edge | unchanged |
+| x | TRUE | x | x | FALSE |
+| x | FALSE| TRUE| x | TRUE |
+| x | FALSE| FALSE| TRUE (and previously FALSE) | NOT Q1 |
+| x | FALSE| FALSE| FALSE or no edge | unchanged |
 
 ## Application Scenarios
 

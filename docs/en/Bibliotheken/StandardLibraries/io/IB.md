@@ -83,8 +83,8 @@ Compared to other input blocks:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)]
-* [Exercise_011a](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)]
+* [Exercise_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+* [Exercise_011a](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Conclusion
 

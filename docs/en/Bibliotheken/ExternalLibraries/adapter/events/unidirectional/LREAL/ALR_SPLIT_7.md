@@ -36,8 +36,8 @@ None
 | OUT3 | `adapter::types::unidirectional::ALR` | Plug (Output) | Third output of the split signal. |
 | OUT4 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fourth output of the split signal. |
 | OUT5 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fifth output of the split signal. |
-OUT6 | `adapter::types::unidirectional::ALR` | Plug (Output) | Sixth output of the split signal. |
-OUT7 | `adapter::types::unidirectional::ALR` | Plug (Output) | Seventh output of the split signal. |
+| OUT6 | `adapter::types::unidirectional::ALR` | Plug (Output) | Sixth output of the split signal. |
+| OUT7 | `adapter::types::unidirectional::ALR` | Plug (Output) | Seventh output of the split signal. |
 
 ## Functionality
 

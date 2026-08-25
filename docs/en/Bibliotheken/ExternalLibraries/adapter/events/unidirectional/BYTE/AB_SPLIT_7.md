@@ -34,8 +34,8 @@ None available.
 | OUT3 | `adapter::types::unidirectional::AB` | Plug (Output) | Third outgoing adapter. |
 | OUT4 | `adapter::types::unidirectional::AB` | Plug (Output) | Fourth outgoing adapter. |
 | OUT5 | `adapter::types::unidirectional::AB` | Plug (Output) | Fifth outgoing adapter. |
-OUT6 | `adapter::types::unidirectional::AB` | Plug (Output) | Sixth outgoing adapter. |
-OUT7 | `adapter::types::unidirectional::AB` | Plug (Output) | Seventh outgoing adapter. |
+| OUT6 | `adapter::types::unidirectional::AB` | Plug (Output) | Sixth outgoing adapter. |
+| OUT7 | `adapter::types::unidirectional::AB` | Plug (Output) | Seventh outgoing adapter. |
 
 ## Functionality
 

@@ -61,13 +61,13 @@ Since it is a combinational logic block, the AX_AND_2 has no internal states. Th
 
 Compared to standard AND blocks, the AX_AND_2 uses adapter-based interfaces instead of direct data and event inputs/outputs. This enables more flexible integration into adapter-based system architectures.
 
-Comparison [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)]
+Comparison [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)]
-* [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)]
-* [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)]
+* [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+* [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+* [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
 
 ## Change Detection
 

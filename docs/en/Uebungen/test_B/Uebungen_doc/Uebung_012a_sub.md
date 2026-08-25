@@ -1,6 +1,6 @@
 # Exercise_012a_sub: Numeric Value Input and Storage in NVS with Subapp
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 ## Overview
 
 [cite_start]This module serves as a universal interface for user input that is to be permanently stored in NVS (Non-Volatile Storage)[cite: 1].
@@ -16,4 +16,4 @@ Additionally, the function block provides an input `REQ` to trigger an external 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_012a](Uebung_012a.md)]
+* [Exercise_012a](Uebung_012a.md)

@@ -90,8 +90,8 @@ In state `REQ`, the algorithm `REQ` and the event outputs are executed. This sta
 | Function Block | Description | Difference to ILOCK_IO_AX |
 |----------|---------------|----------------------------|
 | **SR Flip-Flop** | Sets output on SET, resets on RESET. | No interlock – multiple function blocks (FBs) can be active simultaneously. |
-**Simple Latch (e.g., LATCH_AX)** | Holds the value until triggered again. | No coupling with other FBs. |
-**ILOCK_IO_AX** | Exclusive activation in a chain. | Enforces that only one FB is active – ideal for line control systems. |
+| **Simple Latch (e.g., LATCH_AX)** | Holds the value until triggered again. | No coupling with other FBs. |
+| **ILOCK_IO_AX** | Exclusive activation in a chain. | Enforces that only one FB is active – ideal for line control systems. |
 
 ## Conclusion
 

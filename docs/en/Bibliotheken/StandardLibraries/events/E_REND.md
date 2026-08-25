@@ -47,12 +47,12 @@ The `E_REND` (Event Rendezvous) is a function block according to IEC 61499 that 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a6](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a6.md)]
-* [Exercise_004a6_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a6_AX.md)]
-* [Exercise_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)]
-* [Exercise_004a7_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)]
-* [Exercise_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)]
-* [Exercise_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)]
+* [Exercise_004a6](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a6.md)
+* [Exercise_004a6_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a6_AX.md)
+* [Exercise_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
+* [Exercise_004a7_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+* [Exercise_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+* [Exercise_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
 
 ## Conclusion
 

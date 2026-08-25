@@ -76,7 +76,7 @@ The **F_MUL** is a standards-compliant function block for multiplying numeric va
 
 ## 🛠️ Related Exercises
 
-* [Exercise_034b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)]
+* [Exercise_034b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
 
 ## Conclusion
 

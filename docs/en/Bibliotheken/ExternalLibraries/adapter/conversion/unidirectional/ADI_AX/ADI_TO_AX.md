@@ -80,7 +80,7 @@ This function block has no states of its own, as it is entirely based on the int
 | **ADI_TO_AX** (this function block) | Composite | DINT ≠ 0 → BOOL |
 | `BOOL_TO_DINT` (Standard Library) | Function | Direct conversion from BOOL to DINT (e.g., TRUE → 1) |
 | `F_NE` (IEC 61131) | Function | General Non-Equal Comparison of Arbitrary Data Types |
-**Custom Adapter Converter** | – | Can be easily extended with other comparison functions (F_EQ, F_GT, etc.) |
+| **Custom Adapter Converter** | – | Can be easily extended with other comparison functions (F_EQ, F_GT, etc.) |
 
 Compared to a pure BOOL-to-DINT conversion, **ADI_TO_AX** offers the advantage that the DINT value is retained exactly (e.g., 42 → TRUE), whereas a Boolean conversion can only distinguish between TRUE/FALSE and 1/0.
 

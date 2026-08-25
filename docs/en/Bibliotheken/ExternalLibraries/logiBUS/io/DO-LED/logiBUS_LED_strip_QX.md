@@ -70,8 +70,8 @@ Compared to simple digital output blocks, logiBUS_LED_strip_QX offers extended f
 
 ## 🛠️ Related Exercises
 
-* [Exercise_032](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_032.md)]
-* [Exercise_033_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_033_sub.md)]
+* [Exercise_032](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_032.md)
+* [Exercise_033_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_033_sub.md)
 
 ## Conclusion
 

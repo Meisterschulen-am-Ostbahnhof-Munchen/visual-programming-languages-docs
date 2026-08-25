@@ -66,9 +66,9 @@ If the active input is lost without the other becoming active, an intermediate s
 |---------|-----------|-------------|--------------|
 | `STOP` | FALSE | FALSE | Idle state, no direction active |
 | `UP` | TRUE | FALSE | Forward/Upward Direction Active |
-DOWN` | FALSE | TRUE | Backward/Downward Direction Active |
-UP_STOP` | FALSE | FALSE | Intermediate State After Exiting UP |
-DOWN_STOP` | FALSE | FALSE | Intermediate State After Exiting DOWN |
+| DOWN` | FALSE | TRUE | Backward/Downward Direction Active |
+| UP_STOP` | FALSE | FALSE | Intermediate State After Exiting UP |
+| DOWN_STOP` | FALSE | FALSE | Intermediate State After Exiting DOWN |
 
 ## Application Scenarios
 

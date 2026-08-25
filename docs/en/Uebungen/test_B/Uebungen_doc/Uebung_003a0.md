@@ -1,6 +1,6 @@
 # Exercise_003a0: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2 - with Untyped SubApps
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a0`. Unlike using types (as in `Uebung_003a`), this exercise demonstrates how to visually group logic without creating separate type definitions in the library. This is achieved using so-called "Untyped SubApps."
 ----
 The main objective of this exercise is to demonstrate methods for structuring applications purely visually. Untyped sub-applications serve as "containers" or folders within a network to encapsulate related functions. They help to tidy up complex diagrams ("tidy up by collapsing") without having to worry about reusability or interface definitions.

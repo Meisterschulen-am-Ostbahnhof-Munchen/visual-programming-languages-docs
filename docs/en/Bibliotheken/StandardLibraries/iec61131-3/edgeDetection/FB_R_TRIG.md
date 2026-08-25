@@ -54,8 +54,8 @@ This function block does not have a complex state machine. The state is represen
 
 ## 🛠️ Related Exercises
 
-* [Exercise_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)]
-* [Exercise_177_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)]
+* [Exercise_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
+* [Exercise_177_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
 
 ## Conclusion
 

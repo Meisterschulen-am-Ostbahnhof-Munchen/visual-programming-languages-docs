@@ -26,10 +26,10 @@ The **Q_ActiveMask** is a standards-compliant function block for controlling act
 
 !!! Note: "WorkingSet Object ID fixed to 0"
 
-The **WorkingSet Object ID** (`u16WorkSetId`) is **fixed to 0** by the authors of [logiBUS®](https://www.logibus.tech/)]. The user must ensure that the WorkingSet object in the object pool always has Object ID 0. This is the default setting in most tools:
+The **WorkingSet Object ID** (`u16WorkSetId`) is **fixed to 0** by the authors of [logiBUS®](https://www.logibus.tech/). The user must ensure that the WorkingSet object in the object pool always has Object ID 0. This is the default setting in most tools:
 
 - [ISO-Designer](https://www.bucherautomation.com/iso-designer/sw10133) from Bucher Automation AG
-- [Isobus Studio](https://isobus-studio.com/) from [to-the-future / Tobias Tenberg](https://www.to-the-future.de/)]
+- [Isobus Studio](https://isobus-studio.com/) from [to-the-future / Tobias Tenberg](https://www.to-the-future.de/)
 
 Since the working set is a single object and only exists once, this limitation is not a problem.
 
@@ -72,8 +72,8 @@ ID_NULL (65535) is not a valid command target for the new active mask. Any ID ou
 |------|-----------|-----------|
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
--8 | VT_E_NOACT | Invalid State |
--21 | VT_E_NO_INSTANCE | No VT Instance |
+| -8 | VT_E_NOACT | Invalid State |
+| -21 | VT_E_NO_INSTANCE | No VT Instance |
 
 ## Application Scenarios
 
@@ -87,15 +87,15 @@ ID_NULL (65535) is not a valid command target for the new active mask. Any ID ou
 | Feature | Q_ActiveMask | VtMaskManager | VtDynamicDisplay |
 ---------------|---------------|---------------|------------------|
 | ISO Standard | ✔ | ✖ | ✖ |
-Error Codes | Standard | Manufacturer | Partial |
-Condition Management | Full | Basic | Advanced |
+| Error Codes | Standard | Manufacturer | Partial |
+| Condition Management | Full | Basic | Advanced |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_019](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)]
-* [Exercise_019a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)]
-* [Exercise_019b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)]
-* [Exercise_019c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)]
+* [Exercise_019](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
+* [Exercise_019a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
+* [Exercise_019b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+* [Exercise_019c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
 
 ## Conclusion
 

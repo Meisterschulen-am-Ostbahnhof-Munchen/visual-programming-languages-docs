@@ -1,6 +1,6 @@
 # Exercise_006d: SR Flip-Flop with 2x IE and Double-Click.
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006d`. Here, an asymmetric operating logic for protecting the system is implemented.
 ----
 ## Objective of the Exercise

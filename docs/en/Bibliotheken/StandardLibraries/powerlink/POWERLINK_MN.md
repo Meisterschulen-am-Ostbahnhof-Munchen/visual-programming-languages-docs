@@ -41,9 +41,9 @@ This block initializes the openPOWERLINK stack on the specified Ethernet interfa
 | Attribute | Value |
 | :--- | :--- |
 | Copyright | (c) 2011 AIT |
-License | EPL-2.0 |
-Version | 3.0 (2025-04-14, Patrick Aigner) |
-4diac Package | powerlink |
+| License | EPL-2.0 |
+| Version | 3.0 (2025-04-14, Patrick Aigner) |
+| 4diac Package | powerlink |
 
 --
 

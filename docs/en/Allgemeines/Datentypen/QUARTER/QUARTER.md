@@ -19,10 +19,10 @@ The **QUARTER** data type is a 2-bit data type that represents four states. It i
 
 | Binary Value | Decimal | Meaning (Typical) |
 | :--- | :--- | :--- |
-00` | 0 | **Off** |
-01` | 1 | **On** |
-10` | 2 | **Error** (or Reserved) |
-11` | 3 | **Not Available** (or Don't Care) |
+| 00` | 0 | **Off** |
+| 01` | 1 | **On** |
+| 10` | 2 | **Error** (or Reserved) |
+| 11` | 3 | **Not Available** (or Don't Care) |
 
 ## Usage
 
@@ -34,5 +34,5 @@ Since **QUARTER** is not a standard data type in the IEC standards, it is often 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
-* [Exercise_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
+* [Exercise_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Exercise_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)

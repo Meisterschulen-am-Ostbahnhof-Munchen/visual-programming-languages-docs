@@ -1,6 +1,6 @@
 # Exercise_006c: SR Flip-Flop with IB on DI_REPEAT
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006c`. Here, a complex channel control is implemented using byte data and event demultiplexers.
 ----
 ## Objective of the Exercise

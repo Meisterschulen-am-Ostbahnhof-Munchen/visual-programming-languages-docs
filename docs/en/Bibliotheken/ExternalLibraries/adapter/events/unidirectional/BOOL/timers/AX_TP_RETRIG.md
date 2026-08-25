@@ -76,9 +76,9 @@ Note: The reset (event **R**) always immediately returns to the IDLE state.
 | Function block | Property |
 |----------|-------------|
 | **AX_TP_RETRIG** | Retriggerable pulse timer with AX adapter. |
-**E_TP** (Standard IEC 61499) | Simple pulse timer, non-retriggerable – restarting during the pulse is ignored. |
-**E_TP_RETRIG** | Retriggerable version without adapter (pure event/data interface). |
-**E_DELAY** (Delay) | Delays a signal by a fixed time, but does not generate a pulse of fixed duration. |
+| **E_TP** (Standard IEC 61499) | Simple pulse timer, non-retriggerable – restarting during the pulse is ignored. |
+| **E_TP_RETRIG** | Retriggerable version without adapter (pure event/data interface). |
+| **E_DELAY** (Delay) | Delays a signal by a fixed time, but does not generate a pulse of fixed duration. |
 
 The **AX_TP_RETRIG** combines retrigger functionality with a compact adapter interface and is therefore particularly suitable for modular, adapter-based systems.
 

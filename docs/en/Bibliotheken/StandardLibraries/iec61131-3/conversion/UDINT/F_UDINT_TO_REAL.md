@@ -53,10 +53,10 @@ The function block has no internal states. Processing occurs immediately upon tr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)]
-* [Exercise_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)]
-* [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)]
-* [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)]
+* [Exercise_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+* [Exercise_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+* [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+* [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Conclusion
 

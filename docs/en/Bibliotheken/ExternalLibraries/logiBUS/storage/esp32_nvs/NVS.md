@@ -78,9 +78,9 @@ The data types of the inputs and outputs `VALUE`, `DEFAULT_VALUE`, and `VALUEO` 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)]
-* [Exercise_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)]
-* [Exercise_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)]
+* [Exercise_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+* [Exercise_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
+* [Exercise_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
 
 ## Conclusion
 

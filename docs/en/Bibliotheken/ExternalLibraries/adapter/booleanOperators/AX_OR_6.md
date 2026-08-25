@@ -66,7 +66,7 @@ The function block has no internal state and operates stateless. The output is c
 
 Compared to simpler OR components with fewer inputs, the AX_OR_6 offers greater flexibility thanks to its six separate inputs. The exclusive use of adapters instead of conventional data inputs/outputs enables a modular system architecture.
 
-Comparison with [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)]
+Comparison with [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)
 
 ## Change Detection
 

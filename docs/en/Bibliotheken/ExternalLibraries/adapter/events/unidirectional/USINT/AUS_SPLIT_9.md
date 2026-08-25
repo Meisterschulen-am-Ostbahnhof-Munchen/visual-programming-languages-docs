@@ -28,7 +28,7 @@ None.
 
 | Direction | Name | Type | Description |
 |----------|-----|-----|--------------|
-SOCKET | IN | `adapter::types::unidirectional::AUS` | Incoming OFF signal |
+| SOCKET | IN | `adapter::types::unidirectional::AUS` | Incoming OFF signal |
 | PLUG | OUT1 … OUT9 | `adapter::types::unidirectional::AUS` | Nine outgoing OFF signals |
 
 ## Functionality

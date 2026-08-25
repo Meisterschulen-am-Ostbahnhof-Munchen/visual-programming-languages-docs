@@ -87,9 +87,9 @@ The use of user-defined adapter types (`AUDI`, `AX`) allows for easy adaptation 
 |-----------|------------------------|---------------------------------------|
 | **Interface** | Pure adapters (event and data encapsulated) | Separate input/output pins |
 | **Data Type** | User-defined types (`AUDI`, `AX`) | Arbitrary (configurable) |
-**Selector** | Event-driven (via adapter) | Data-driven, without extra events |
-**Reusability** | Higher due to type safety and encapsulation | More flexible, but loosely coupled |
-**Complexity** | Medium (adapters require prior knowledge) | Low (direct pins) |
+| **Selector** | Event-driven (via adapter) | Data-driven, without extra events |
+| **Reusability** | Higher due to type safety and encapsulation | More flexible, but loosely coupled |
+| **Complexity** | Medium (adapters require prior knowledge) | Low (direct pins) |
 
 The **AUDI_AX_SEL_AUDI** offers higher integration into adapter-based architectures and is particularly suitable for modular, type-bound systems, while a pure `F_SEL` is more universal.
 

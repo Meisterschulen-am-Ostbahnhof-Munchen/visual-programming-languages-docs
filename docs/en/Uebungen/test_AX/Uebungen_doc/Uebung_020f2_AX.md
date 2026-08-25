@@ -1,6 +1,6 @@
 # Exercise_020f2_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_FB_TP; Pulse Shaping
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020f2_AX`. Here, the adapter-based IEC 61131-3 timer block `AX_FB_TP` is used, which requires regular triggering (clocking).
 ----
 ## Objective of the Exercise

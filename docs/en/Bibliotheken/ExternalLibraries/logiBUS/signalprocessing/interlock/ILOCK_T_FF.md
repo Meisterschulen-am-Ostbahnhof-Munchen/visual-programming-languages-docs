@@ -35,7 +35,7 @@ No data inputs (control is achieved solely through events and the adapters).
 | Name | Type | Direction | Description |
 |------|-----|----------|-------------|
 | ILOCK_IN | `adapter::types::bidirectional::AE2` | Socket | Receives and sends lock signals to and from upstream components in the chain. |
-ILOCK_OUT | `adapter::types::bidirectional::AE2` | Plug | Sends and receives lock signals to and from downstream components. |
+| ILOCK_OUT | `adapter::types::bidirectional::AE2` | Plug | Sends and receives lock signals to and from downstream components. |
 
 ## Functionality
 

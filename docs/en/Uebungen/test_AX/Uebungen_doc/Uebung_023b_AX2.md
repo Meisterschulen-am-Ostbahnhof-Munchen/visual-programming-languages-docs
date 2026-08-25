@@ -29,10 +29,10 @@ The SubAppType does not have its own input/output interfaces but communicates ex
 | AX_SR_Extend_Cyl_2 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for extending cylinder 2 |
 | AX_SR_Retract_Cyl_1 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for retracting cylinder 1 |
 | AX_SR_Retract_Cyl_2 | `adapter::events::unidirectional::AX_SR` | Set-Reset block for retracting cylinder 2 |
-DigitalOutput_Q1 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q1 (active when AX_SR_Extend_Cyl_1.Q is set) |
-DigitalOutput_Q2 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q2 (active when AX_SR_Extend_Cyl_2.Q is set) |
-DigitalOutput_Q3 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q3 (active when AX_SR_Retract_Cyl_2.Q is set) |
-DigitalOutput_Q4 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q4 (active when AX_SR_Einfahren_Cyl_1.Q is set) |
+| DigitalOutput_Q1 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q1 (active when AX_SR_Extend_Cyl_1.Q is set) |
+| DigitalOutput_Q2 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q2 (active when AX_SR_Extend_Cyl_2.Q is set) |
+| DigitalOutput_Q3 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q3 (active when AX_SR_Retract_Cyl_2.Q is set) |
+| DigitalOutput_Q4 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q4 (active when AX_SR_Einfahren_Cyl_1.Q is set) |
 
 ### Block Parameters
 

@@ -57,9 +57,9 @@ This version of the block ("AX Adapter Version") uses special adapters (`adapter
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | **POWERED** | AX | Adapter for controlling the "open" valve (pneumatic/main supply). Active during opening and in the open state. |
-**OPEN** | AX | Adapter for controlling the "open" signal. |
-**CLOSE** | AX | Adapter for controlling the "close" signal. |
-**timeOut** | ATimeOut | Adapter for timer functionality (monitors opening/closing times). |
+| **OPEN** | AX | Adapter for controlling the "open" signal. |
+| **CLOSE** | AX | Adapter for controlling the "close" signal. |
+| **timeOut** | ATimeOut | Adapter for timer functionality (monitors opening/closing times). |
 
 ## Functionality
 

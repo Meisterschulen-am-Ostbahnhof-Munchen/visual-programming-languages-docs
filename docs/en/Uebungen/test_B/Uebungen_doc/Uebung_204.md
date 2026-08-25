@@ -56,7 +56,7 @@ The exercise is set up as a SubAppType, in which all the logic runs. The connect
 
 | Event Connection | Source | Destination | Data Connection | Source | Destination |
 |-------------------|--------|------|-----------------|--------|------|
-IND → EI_UP | DigitalInput_I1 | ILOCK | IN → DI_UP | DigitalInput_I1 | ILOCK |
+| IND → EI_UP | DigitalInput_I1 | ILOCK | IN → DI_UP | DigitalInput_I1 | ILOCK |
 | IND → EI_DOWN | DigitalInput_I2 | ILOCK | IN → DI_DOWN | DigitalInput_I2 | ILOCK |
 | IND → EI_RESET | DigitalInput_Reset | ILOCK | – | – | – |
 | EO_UP → REQ | ILOCK | DigitalOutput_Q1 | DO_UP → OUT | ILOCK | DigitalOutput_Q1 |

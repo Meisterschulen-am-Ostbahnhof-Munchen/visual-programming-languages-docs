@@ -81,8 +81,8 @@ The ECC consists of six states:
 **`STRING` assignment:** A direct assignment in ST code could accomplish something similar, but the `QUARTER_TO_STR_STATUS` block encapsulates the logic, promotes reusability, and enforces the use of standardized constants, increasing consistency throughout the project.
 ## 🛠️ Related Exercises
 
-* [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
-* [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
+* [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Conclusion
 

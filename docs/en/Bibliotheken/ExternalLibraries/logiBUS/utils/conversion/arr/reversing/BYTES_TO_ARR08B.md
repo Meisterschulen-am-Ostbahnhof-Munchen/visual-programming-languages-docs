@@ -66,8 +66,8 @@ The function block is stateless. Each `REQ` call is independent of previous call
 *
 ## 🛠️ Related Exercises
 
-* [Exercise_126b_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)]
-* [Exercise_12x_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)]
+* [Exercise_126b_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Exercise_12x_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Conclusion
 

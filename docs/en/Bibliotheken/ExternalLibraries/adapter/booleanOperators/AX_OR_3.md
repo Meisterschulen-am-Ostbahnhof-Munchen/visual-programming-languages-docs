@@ -66,12 +66,12 @@ Since it is a combinational function block without a memory function, AX_OR_3 ha
 
 Compared to standard OR blocks, AX_OR_3 offers the advantage of three inputs in a single block, which simplifies wiring. Compared to function blocks with a variable number of inputs, AX_OR_3 is specifically optimized for triple OR operation.
 
-Comparison with [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)]
+Comparison with [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)]
-* [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)]
+* [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+* [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Change Detection
 

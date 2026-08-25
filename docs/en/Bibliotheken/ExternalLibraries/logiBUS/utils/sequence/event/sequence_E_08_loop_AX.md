@@ -54,7 +54,7 @@ For cyclic, event-driven 8-step sequences with adapter connectivity.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)]
+* [Exercise_040_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
 
 ## Conclusion
 

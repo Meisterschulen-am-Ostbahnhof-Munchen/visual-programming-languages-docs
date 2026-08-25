@@ -61,12 +61,12 @@ The AX_TON block functions as a power-on delay timer. When an input event is rec
 
 Compared to other timer blocks, AX_TON offers a standardized interface via adapters, which facilitates reusability and modular integration into larger control systems.
 
-Comparison with [E_TON](../../../../../../StandardLibraries/events/timers/E_TON.md)]
+Comparison with [E_TON](../../../../../../StandardLibraries/events/timers/E_TON.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)]
-* [Exercise_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)]
+* [Exercise_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)
+* [Exercise_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Conclusion
 

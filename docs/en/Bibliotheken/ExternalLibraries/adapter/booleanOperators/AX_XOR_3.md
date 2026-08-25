@@ -66,11 +66,11 @@ The function block has no internal states and operates statically. The output is
 
 Compared to standard two-input XOR blocks, AX_XOR_3 offers the extension to three inputs. While a two-input XOR only returns true if the inputs are unequal, the three-input XOR takes the parity of all three signals into account.
 
-Comparison with [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)]
+Comparison with [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)]
+* [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Change Detection
 

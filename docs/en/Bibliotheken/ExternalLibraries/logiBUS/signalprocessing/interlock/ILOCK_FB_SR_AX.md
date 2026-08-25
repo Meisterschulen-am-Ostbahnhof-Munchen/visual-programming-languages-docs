@@ -31,15 +31,15 @@ The function block **ILOCK_FB_SR_AX** implements a set-dominant (set-priority) b
 |-------|-----|---------------|
 | `SET1.D1` | BOOL | Set input (dominant) |
 | `RESET.D1` | BOOL | Reset input (active when SET1=0) |
-ILOCK_IN.DO1` | BOOL | Data from the parent interlock stage (propagation signal) |
-ILOCK_OUT.DI1` | BOOL | Data from the child interlock stage (feedback) |
+| ILOCK_IN.DO1` | BOOL | Data from the parent interlock stage (propagation signal) |
+| ILOCK_OUT.DI1` | BOOL | Data from the child interlock stage (feedback) |
 
 ### **Data Outputs**
 
 | Data | Type | Description |
 |-------|-----|--------------|
-Q1.D1` | BOOL | Latch output (set by Set or Interlock) |
-ILOCK_IN.DI1` | BOOL | Propagated Set signal to the parent stage |
+| Q1.D1` | BOOL | Latch output (set by Set or Interlock) |
+| ILOCK_IN.DI1` | BOOL | Propagated Set signal to the parent stage |
 | `ILOCK_OUT.DO1` | BOOL | Propagated Set signal to the subordinate stage |
 
 ### **Adapter**

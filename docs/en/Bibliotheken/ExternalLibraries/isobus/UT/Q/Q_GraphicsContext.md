@@ -78,9 +78,9 @@ The sub-command IDs correspond to Table F.1 of ISO 11783-6 (not to be confused w
 | 0 | VT_E_NO_ERR | Successful Execution |
 | -6 | VT_E_OVERFLOW | Parameter Buffer Too Small |
 | -8 | VT_E_NOACT | VT not ready |
--21 | VT_E_NO_INSTANCE | No VT client available |
--129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
--130 | VT_E_NOT_ALIVE | VT not active |
+| -21 | VT_E_NO_INSTANCE | No VT client available |
+| -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
+| -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
 

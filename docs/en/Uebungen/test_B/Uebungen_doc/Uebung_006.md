@@ -1,6 +1,6 @@
 # Exercise_006: SR Flip-Flop with 2x IE
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_006`. Here, a classic self-holding memory with separate pushbuttons for on and off is implemented.
 ----
 ![](Uebung_006.png)

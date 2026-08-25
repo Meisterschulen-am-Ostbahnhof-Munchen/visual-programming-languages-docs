@@ -13,21 +13,21 @@ The **logiBUS_PI_IDA** is a composite function block (FB) for processing double-
 | Name | Type | Comment |
 |------|-----|-----------|
 | INIT | EInit | Service Initialization – Parameterization and Start |
-REQ | Event | Service Request – Triggers processing |
+| REQ | Event | Service Request – Triggers processing |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
 |------|-----|-----------|
-INIT | EInit | Initialization Confirm – Confirms successful initialization |
+| INIT | EInit | Initialization Confirm – Confirms successful initialization |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
 |------|-----|-------------|-----------|
-QI | BOOL | – | Event Input Qualifier (Enable/Disable) |
-PARAMS | STRING | – | Service Parameters (e.g., bus address, channel configuration) |
-Input | logiBUS::io::PI::logiBUS_PI_S | `Invalid` | Identifies the physical input (Input_I1..I8) |
+| QI | BOOL | – | Event Input Qualifier (Enable/Disable) |
+| PARAMS | STRING | – | Service Parameters (e.g., bus address, channel configuration) |
+| Input | logiBUS::io::PI::logiBUS_PI_S | `Invalid` | Identifies the physical input (Input_I1..I8) |
 | PulseDelta | DWORD | – | Number of pulses after which an indication (IND) is triggered |
 | TimeDelta | DWORD | `250` | Time in ms after which a periodic indication (IND) is triggered |
 | TimeRateLimit | DWORD | `100` | Minimum interval in ms between two indications (rate limiting) |

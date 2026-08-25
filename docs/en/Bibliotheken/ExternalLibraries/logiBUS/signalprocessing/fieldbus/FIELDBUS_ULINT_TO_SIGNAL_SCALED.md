@@ -12,29 +12,29 @@ The function block **FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used to convert a raw 
 
 | Event | Type | Description | With Variables |
 |----------|-----|--------------|---------------|
-**INIT** | EInit | Initialization Request | SCALE, OFFSET |
-**REQ** | Event | Normal Execution Request | IN |
+| **INIT** | EInit | Initialization Request | SCALE, OFFSET |
+| **REQ** | Event | Normal Execution Request | IN |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Variables |
 |----------|-----|---------------|---------------|
-**INITO** | EInit | Initialization Acknowledgement | – |
-**CNF** | Event | Execution Acknowledgement | OUT, VALID |
+| **INITO** | EInit | Initialization Acknowledgement | – |
+| **CNF** | Event | Execution Acknowledgement | OUT, VALID |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
 |----------|-----|-------------|--------------|
-**IN** | ULINT | `LWORD_TO_ULINT(NOT_AVAILABLE_LWM)` | Raw value from the fieldbus |
-**SCALE** | LREAL | `1.0` | Scaling factor |
-**OFFSET** | DINT | `0` | Offset added after scaling |
+| **IN** | ULINT | `LWORD_TO_ULINT(NOT_AVAILABLE_LWM)` | Raw value from the fieldbus |
+| **SCALE** | LREAL | `1.0` | Scaling factor |
+| **OFFSET** | DINT | `0` | Offset added after scaling |
 
 ### **Data Outputs**
 
 | Variable | Type | Initial value | Description |
 |----------|-----|--------------|--------------|
-**OUT** | LREAL | `0.0` | Scaled output value (valid only if VALID = TRUE) |
+| **OUT** | LREAL | `0.0` | Scaled output value (valid only if VALID = TRUE) |
 | **VALID** | BOOL | `FALSE` | Validation signal: TRUE if IN ≤ `VALID_SIGNAL_LW`, otherwise FALSE |
 
 ### **Adapters**

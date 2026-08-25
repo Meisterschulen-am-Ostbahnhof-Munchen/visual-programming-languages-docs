@@ -86,15 +86,15 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 
 | Feature | I_RPTO | Standard | Premium |
 |---------|--------|----------|---------|
-Speed Accuracy | ±0.2% | ±1% | ±0.1% |
-Operating Modes | 4 | 2 | 6 |
-Diagnostic Scope | 64 Codes | 8 Codes | 128 Codes |
-Response Time | <100ms | 200ms | 50ms |
+| Speed Accuracy | ±0.2% | ±1% | ±0.1% |
+| Operating Modes | 4 | 2 | 6 |
+| Diagnostic Scope | 64 Codes | 8 Codes | 128 Codes |
+| Response Time | <100ms | 200ms | 50ms |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)]
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
+* [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
+* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

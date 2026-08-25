@@ -83,9 +83,9 @@ Compared to sequencers with time-controlled transitions (e.g., `sequence_T_08_lo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)]
-* [Exercise_040_2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)]
-* [Exercise_041](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)]
+* [Exercise_040](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+* [Exercise_040_2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+* [Exercise_041](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Conclusion
 

@@ -27,12 +27,12 @@ None.
 
 | Direction | Name | Type |
 |----------|------|-----|
-Socket (Input) | `IN` | `adapter::types::unidirectional::AUS` |
-Plug (Output) | `OUT1` | `adapter::types::unidirectional::AUS` |
-Plug (Output) | `OUT2` | `adapter::types::unidirectional::AUS` |
-Plug (Output) | `OUT3` | `adapter::types::unidirectional::AUS` |
-Plug (Output) | `OUT4` | `adapter::types::unidirectional::AUS` |
-Plug (Output) | `OUT5` | `adapter::types::unidirectional::AUS` |
+| Socket (Input) | `IN` | `adapter::types::unidirectional::AUS` |
+| Plug (Output) | `OUT1` | `adapter::types::unidirectional::AUS` |
+| Plug (Output) | `OUT2` | `adapter::types::unidirectional::AUS` |
+| Plug (Output) | `OUT3` | `adapter::types::unidirectional::AUS` |
+| Plug (Output) | `OUT4` | `adapter::types::unidirectional::AUS` |
+| Plug (Output) | `OUT5` | `adapter::types::unidirectional::AUS` |
 
 ## Functionality
 

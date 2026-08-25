@@ -53,10 +53,10 @@ The **ADD_4** is a powerful function block for summing four values, developed un
 
 | Category | Examples |
 ----------------|-------------------------|
-Integers | INT, DINT, UDINT |
-Floating Point | REAL, LREAL |
-Time Values | TIME, LTIME |
-Special Types | DATE_AND_TIME |
+| Integers | INT, DINT, UDINT |
+| Floating Point | REAL, LREAL |
+| Time Values | TIME, LTIME |
+| Special Types | DATE_AND_TIME |
 
 ## Application Scenarios
 

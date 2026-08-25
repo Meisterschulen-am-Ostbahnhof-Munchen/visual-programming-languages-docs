@@ -51,7 +51,7 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 |---------------|----------------------------------|
 | Single device | Standard operation with u8Instance=0 |
 | Multi-ECU | Parallel Instances (1-255) |
-Diagnostics | STATUS Messages for Service |
+| Diagnostics | STATUS Messages for Service |
 
 ## Application Scenarios
 
@@ -66,7 +66,7 @@ Diagnostics | STATUS Messages for Service |
 |----------------|-------------|---------------|---------------|
 | Page Switch | ✔ | ✔ | ✖ |
 | Multi-ECU | ✔ | ✖ | ✖ |
-STATUS feedback | ✔ | ✖ | ✔ |
+| STATUS feedback | ✔ | ✖ | ✔ |
 
 ## Error Handling
 
@@ -79,10 +79,10 @@ STATUS feedback | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)]
-* [Exercise_012a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a.md)]
-* [Exercise_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)]
-* [Exercise_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)]
+* [Exercise_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+* [Exercise_012a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a.md)
+* [Exercise_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
+* [Exercise_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
 
 ## Conclusion
 

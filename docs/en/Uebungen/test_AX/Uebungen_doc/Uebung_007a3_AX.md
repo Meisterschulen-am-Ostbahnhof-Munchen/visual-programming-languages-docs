@@ -1,6 +1,6 @@
 # Exercise_007a3_AX: Turn Signal with E_CYCLE, E_SWITCH, and E_SR
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_007a3_AX`. This exercise demonstrates the "clean" solution for a switchable turn signal.
 ----
 ## Objective of the Exercise

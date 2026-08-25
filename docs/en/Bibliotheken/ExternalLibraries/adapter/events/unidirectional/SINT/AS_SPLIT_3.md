@@ -29,9 +29,9 @@ None
 | Name | Type | Direction | Description |
 |-------------|-----|-----------|--------------|
 | IN | `adapter::types::unidirectional::AS` | Socket | Input adapter – Data source distributed to three outputs. |
-OUT1 | `adapter::types::unidirectional::AS` | Plug | First output – receives the unchanged data from IN. |
-OUT2 | `adapter::types::unidirectional::AS` | Plug | Second output – receives the unchanged data from IN. |
-OUT3 | `adapter::types::unidirectional::AS` | Plug | Third output – receives the unchanged data from IN. |
+| OUT1 | `adapter::types::unidirectional::AS` | Plug | First output – receives the unchanged data from IN. |
+| OUT2 | `adapter::types::unidirectional::AS` | Plug | Second output – receives the unchanged data from IN. |
+| OUT3 | `adapter::types::unidirectional::AS` | Plug | Third output – receives the unchanged data from IN. |
 
 ## Functionality
 

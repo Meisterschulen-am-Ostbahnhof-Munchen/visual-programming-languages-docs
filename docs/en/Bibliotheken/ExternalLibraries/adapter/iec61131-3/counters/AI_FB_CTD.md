@@ -104,7 +104,7 @@ Therefore, a graphical state machine is not required.
 | **AI_FB_CTD** | Downward | Adapters only (AX, AI) | Output on every update |
 | **AI_FB_CTU** | Upward | Adapters only (AX, AI) | Upward counter, analog structure |
 | **FB_CTD** (Standard) | Downward | Direct Events/Data | Classic Variable Connection, without Adapter |
-**FB_CTUD** | Both | Direct | Combined Increment/Decrement Counter, Extended Logic |
+| **FB_CTUD** | Both | Direct | Combined Increment/Decrement Counter, Extended Logic |
 
 The **AI_FB_CTD** stands out due to its consistent use of adapters, making it ideal for hierarchical and reusable control models. Unlike the standard FB_CTD, separate data and event inputs are eliminated – everything is handled via the adapters.
 

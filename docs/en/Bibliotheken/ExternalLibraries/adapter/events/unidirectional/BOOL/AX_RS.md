@@ -83,14 +83,14 @@ Compared to other flip-flop implementations:
 - Event-driven state changes
 - Simple RS logic without additional clock or enable signals
 
-Comparison with [E_RS](../../../../../StandardLibraries/events/E_RS.md)]
+Comparison with [E_RS](../../../../../StandardLibraries/events/E_RS.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006b_AX.md)]
-* [Exercise_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)]
-* [Exercise_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)]
-* [Exercise_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)]
+* [Exercise_006b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006b_AX.md)
+* [Exercise_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)
+* [Exercise_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+* [Exercise_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
 
 ## Conclusion
 

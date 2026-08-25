@@ -89,8 +89,8 @@ The following table lists the corresponding adapters and I/O blocks for each dat
 | DATE | D | — | — | — |
 | TIME | T | — | — | — |
 | TIME_OF_DAY | TOD | — | — | — |
-DATE_AND_TIME | DT | — | — | — |
-QUARTER | Q | — | — | — |
+| DATE_AND_TIME | DT | — | — | — |
+| QUARTER | Q | — | — | — |
 
 The following list contains the elementary data types according to DIN EN 61131-3.
 

@@ -60,9 +60,9 @@ Similar conversion blocks exist for other data types (e.g., `INT_TO_DINT`), but 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)]
-* [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)]
-* [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)]
+* [Exercise_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
+* [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+* [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Conclusion
 

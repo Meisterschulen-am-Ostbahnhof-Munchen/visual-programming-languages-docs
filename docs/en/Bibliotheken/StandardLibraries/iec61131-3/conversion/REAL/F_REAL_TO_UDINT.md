@@ -53,7 +53,7 @@ Since this is a simple function block, there are no state transitions or machine
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)]
+* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

@@ -83,7 +83,7 @@ After the timer expires, E_TP automatically switches from ACTIVE to IDLE.
 -----------------|-------------------------------------------------------------------------------|------|
 | **E_TP** (Standard) | Direct event/data connections, no adapter. | ATM_AX_TP encapsulates E_TP and provides adapters. |
 | **E_R_TRIG** | Edge detection without pulse extension. | Generates only a very short pulse, no time control. |
-**E_CYCLE** | Cyclic timer, repeats pulses. | Single pulse. |
+| **E_CYCLE** | Cyclic timer, repeats pulses. | Single pulse. |
 
 ## Conclusion
 
@@ -93,4 +93,4 @@ The **ATM_AX_TP** is a useful function block for generating a non-retriggerable 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
+* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

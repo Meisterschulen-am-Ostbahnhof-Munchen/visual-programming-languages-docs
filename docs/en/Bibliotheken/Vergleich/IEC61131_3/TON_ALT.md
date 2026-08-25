@@ -5,10 +5,10 @@ The **TON** (Timer On-Delay) function block implements an on-delay. The output i
 
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
-**Input** | IN | BOOL | Start Signal |
-**Input** | PT | TIME | Preset Time (Delay Time) |
-**Output** | Q | BOOL | Output Signal |
-**Output** | ET | TIME | Elapsed Time |
+| **Input** | IN | BOOL | Start Signal |
+| **Input** | PT | TIME | Preset Time (Delay Time) |
+| **Output** | Q | BOOL | Output Signal |
+| **Output** | ET | TIME | Elapsed Time |
 
 **Output**
 ## Function

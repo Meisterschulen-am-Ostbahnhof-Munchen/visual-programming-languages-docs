@@ -64,8 +64,8 @@ The F.10 command addresses the VT's **audio device** directly — it does **not 
 -----------------|------------|----------------|
 | Frequency | 0-65535 Hz | 2000 Hz |
 | Duty Cycle | 0-65535 ms | 200 ms |
-Shutdown time | 0-65535 ms | 100 ms |
-Repetitions | 1-255 | 3 |
+| Shutdown time | 0-65535 ms | 100 ms |
+| Repetitions | 1-255 | 3 |
 
 ## Return codes (s16result)
 
@@ -93,9 +93,9 @@ Repetitions | 1-255 | 3 |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)]
-* [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)]
-* [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)]
+* [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
+* [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+* [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Conclusion
 

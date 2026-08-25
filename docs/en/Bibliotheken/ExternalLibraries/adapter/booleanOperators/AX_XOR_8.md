@@ -68,7 +68,7 @@ Since it is a combinational logic block, AX_XOR_8 has no internal state. The out
 
 Compared to simple XOR components with fewer inputs, AX_XOR_8 offers the ability to combine up to 8 signals simultaneously. The exclusive use of adapters instead of direct data and event inputs enables greater flexibility in complex system architectures.
 
-Comparison with [XOR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_8.md)]
+Comparison with [XOR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_8.md)
 
 ## Change Detection
 

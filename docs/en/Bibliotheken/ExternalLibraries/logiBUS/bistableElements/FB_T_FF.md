@@ -77,8 +77,8 @@ The state is immediately reactivated after processing; there are no wait or foll
 | Function Block | Property |
 |----------------|-----------------------------------------------------------------------------|
 | **SR Flip-Flop**| Set and reset via separate inputs; no toggle behavior. |
-**D-Flip-Flop** | Takes the value of `D` on the clock edge; no toggle, no reset integrated. |
-**FB_T_FF** | Inverts the output on each rising edge; asynchronous reset possible. |
+| **D-Flip-Flop** | Takes the value of `D` on the clock edge; no toggle, no reset integrated. |
+| **FB_T_FF** | Inverts the output on each rising edge; asynchronous reset possible. |
 
 The **FB_T_FF** is therefore ideal for simple switching tasks where no set/reset input is required.
 

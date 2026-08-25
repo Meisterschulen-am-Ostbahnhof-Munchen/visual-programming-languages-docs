@@ -25,9 +25,9 @@ The function block **INI_ALR** is used to read and write floating-point values o
 | Name | Type | Comment |
 |----------------|--------|-----------------------------------------------------------|
 | QI | BOOL | Event Input Qualifier (Allow) |
-SECTION | STRING | Section name in the INI file |
-KEY | STRING | Key name within the section |
-DEFAULT_VALUE | LREAL | Fallback value if the key is missing in the INI file |
+| SECTION | STRING | Section name in the INI file |
+| KEY | STRING | Key name within the section |
+| DEFAULT_VALUE | LREAL | Fallback value if the key is missing in the INI file |
 
 ### **Data Outputs**
 

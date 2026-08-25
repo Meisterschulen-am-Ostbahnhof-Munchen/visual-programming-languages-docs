@@ -30,7 +30,7 @@ The **AUDI_TO_ALI** function block is a composite module that bridges an **AUDI*
 
 | Name | Data Type | Description |
 |------|----------|--------------|
-*No custom data outputs* | – | The converted value is provided via the ALI_OUT.D1 plug. |
+| *No custom data outputs* | – | The converted value is provided via the ALI_OUT.D1 plug. |
 
 ### **Adapter**
 

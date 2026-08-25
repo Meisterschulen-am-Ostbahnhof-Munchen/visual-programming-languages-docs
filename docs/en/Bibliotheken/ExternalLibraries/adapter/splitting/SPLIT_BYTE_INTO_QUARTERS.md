@@ -32,8 +32,8 @@ Not available.
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AB` | Byte input that provides the data to be split. |
 | **Plug** (Output) | `QUARTER_BYTE_00` | `adapter::types::unidirectional::AQ` | Output for the first quarter (least significant 2 bits). |
 | **Plug** (Output) | `QUARTER_BYTE_01` | `adapter::types::unidirectional::AQ` | Output for the second quarter (bits 2-3). |
-**Plug** (Output) | `QUARTER_BYTE_02` | `adapter::types::unidirectional::AQ` | Output for the third quarter (bits 4-5). |
-**Plug** (Output) | `QUARTER_BYTE_03` | `adapter::types::unidirectional::AQ` | Output for the fourth quarter (most significant 2 bits). |
+| **Plug** (Output) | `QUARTER_BYTE_02` | `adapter::types::unidirectional::AQ` | Output for the third quarter (bits 4-5). |
+| **Plug** (Output) | `QUARTER_BYTE_03` | `adapter::types::unidirectional::AQ` | Output for the fourth quarter (most significant 2 bits). |
 
 ## Functionality
 

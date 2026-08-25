@@ -38,10 +38,10 @@ No direct data outputs – all outputs are provided via **plugs** (output adapte
 | **Plug** (Output) | X_MIN | `adapter::types::bidirectional::AR2` | Stored minimum value (from the raw value). |
 | **Plug** (Output) | X_MID | `adapter::types::bidirectional::AR2` | Stored average value (from the raw value). |
 | **Plug** (Output) | X_MAX | `adapter::types::bidirectional::AR2` | Stored maximum value (from the raw value). |
-**Socket** (Input) | X | `adapter::types::unidirectional::AR` | Raw value from the sensor (analog value plus event). |
-**Socket** (Input) | C_MIN | `adapter::types::unidirectional::AX` | Event for calibrating the minimum point (reads the current raw value). |
-**Socket** (Input) | C_MID | `adapter::types::unidirectional::AX` | Event for calibrating the midpoint. |
-**Socket** (Input) | C_MAX | `adapter::types::unidirectional::AX` | Event for calibrating the maximum point. |
+| **Socket** (Input) | X | `adapter::types::unidirectional::AR` | Raw value from the sensor (analog value plus event). |
+| **Socket** (Input) | C_MIN | `adapter::types::unidirectional::AX` | Event for calibrating the minimum point (reads the current raw value). |
+| **Socket** (Input) | C_MID | `adapter::types::unidirectional::AX` | Event for calibrating the midpoint. |
+| **Socket** (Input) | C_MAX | `adapter::types::unidirectional::AX` | Event for calibrating the maximum point. |
 
 ## Functionality
 
@@ -111,9 +111,9 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 | Function Block | Property |
 |----------|-------------|
 | **AR_SCALE** | Simple linear scaling (2-point) – without correction of center nonlinearities. |
-**AR_CALIBRATE_2P** | Two-point calibration (Min, Max) – cannot address center drift. |
-**AR_CALIBRATE_3P** (this block) | Three-point calibration with separate center calibration – ideal for joysticks with center drift. |
-**Table-based correction** | More complex, requires many reference points; AR_CALIBRATE_3P is simpler and faster. |
+| **AR_CALIBRATE_2P** | Two-point calibration (Min, Max) – cannot address center drift. |
+| **AR_CALIBRATE_3P** (this block) | Three-point calibration with separate center calibration – ideal for joysticks with center drift. |
+| **Table-based correction** | More complex, requires many reference points; AR_CALIBRATE_3P is simpler and faster. |
 
 The key advantage lies in the explicit handling of the center point, which is neglected in many simple scaling methods.
 

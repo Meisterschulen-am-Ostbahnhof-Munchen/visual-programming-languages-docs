@@ -47,7 +47,7 @@ The function block does not have an internal state in the sense of a memory. Its
 
 * **Safety chain:** Linking several safety switches (e.g., emergency stop, guardrail, two-hand control), all of which must be closed to start a machine.
 * **Masking:** Selectively activates a function only if multiple enable signals are present.
-* **AND (2 Inputs):** A basic AND block with only two inputs. `AND_4_BOOL` consolidates four such operations into a single block, improving diagram readability and maintainability. See: [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_4.md)]
+* **AND (2 Inputs):** A basic AND block with only two inputs. `AND_4_BOOL` consolidates four such operations into a single block, improving diagram readability and maintainability. See: [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_4.md)
 * **OR_4_BOOL:** Performs a logical OR operation where the result is `TRUE` if at least one input is `TRUE`. This is the logical counterpart to AND.
 * **GEN_AND:** The generic base class on which `AND_4_BOOL` is built. It can be configured to create AND blocks with any number of inputs.
 

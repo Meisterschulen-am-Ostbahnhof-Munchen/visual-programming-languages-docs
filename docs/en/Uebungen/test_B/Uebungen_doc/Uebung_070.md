@@ -1,6 +1,6 @@
 # Exercise_070: Outputting WBSD to UT
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_070`. It demonstrates how to read data from the tractor ECU (TECU) and visualize it on the terminal.
 ## 🎧 Podcast
 

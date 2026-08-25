@@ -1,6 +1,6 @@
 # Exercise_004a5: same as Exercise_004a4 but without E_SPLIT
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a5`. Similar to event merging, this exercise demonstrates that distributing an event to multiple destinations is often possible without an explicit function block.
 ----
 ## Objective of the Exercise

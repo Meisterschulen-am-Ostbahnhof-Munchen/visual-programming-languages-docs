@@ -74,7 +74,7 @@ This function block maps the states of the internal `E_PULSE_RETRIG`:
 |----------|-------------|
 | **E_PULSE** | Simple pulse without retrigger – one-time timer start, no restart upon subsequent request. |
 | **AX_PULSE_RETRIG** | Retriggerable version with AX adapter (event + data). |
-**TON / TOF** | Delay blocks (turn-on delay / turn-off delay) – no pulse shaper. |
+| **TON / TOF** | Delay blocks (turn-on delay / turn-off delay) – no pulse shaper. |
 
 The AX_PULSE_RETRIG thus offers the flexibility of a retriggerable pulse with a standardized adapter interface for easy integration into larger function block networks.
 

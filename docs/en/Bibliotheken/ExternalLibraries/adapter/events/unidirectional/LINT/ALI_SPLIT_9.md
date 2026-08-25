@@ -28,11 +28,11 @@ None
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-Socket (Input) | IN | `ALI` (unidirectional) | Input of the ALI signal to be distributed |
-Plug (Output 1) | OUT1 | `ALI` (unidirectional) | First output – identical copy of the input signal |
-Plug (Output 2) | OUT2 | `ALI` (unidirectional) | Second output |
-Plug (Output 3) | OUT3 | `ALI` (unidirectional) | Third output |
-Plug (Output 4) | OUT4 | `ALI` (unidirectional) | Fourth exit |
+| Socket (Input) | IN | `ALI` (unidirectional) | Input of the ALI signal to be distributed |
+| Plug (Output 1) | OUT1 | `ALI` (unidirectional) | First output – identical copy of the input signal |
+| Plug (Output 2) | OUT2 | `ALI` (unidirectional) | Second output |
+| Plug (Output 3) | OUT3 | `ALI` (unidirectional) | Third output |
+| Plug (Output 4) | OUT4 | `ALI` (unidirectional) | Fourth exit |
 | Plug (output 5) | OUT5 | `ALI` (unidirectional) | Fifth exit |
 | Plug (output 6) | OUT6 | `ALI` (unidirectional) | Sixth exit |
 | Plug (output 7) | OUT7 | `ALI` (unidirectional) | Seventh exit |

@@ -63,7 +63,7 @@ The Composite FB itself does not have its own state machine. Its behavior is ent
 |----|---------------|---------------|-----------|
 | `AR_TO_ALI` | REAL → LINT | AR / ALI Adapter | Specifically for Adapter Coupling |
 | `F_REAL_TO_LINT` | REAL → LINT | Standalone I/O (REQ/CNF, IN/OUT) | Direct converter without adapters |
-The `AR_TO_ALI` encapsulates the `F_REAL_TO_LINT` and adds the adapter connections. The advantage lies in its simple, adapter-network-compatible connection. A direct converter without adapters would not be usable in adapter structures. |
+| The `AR_TO_ALI` encapsulates the `F_REAL_TO_LINT` and adds the adapter connections. The advantage lies in its simple, adapter-network-compatible connection. A direct converter without adapters would not be usable in adapter structures. |
 
 ## Conclusion
 

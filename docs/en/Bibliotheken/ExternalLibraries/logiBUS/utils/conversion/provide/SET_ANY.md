@@ -25,7 +25,7 @@ The function block **SET_ANY** is used to write any value from input `IN` to a v
 | Name | Data Type | Comment |
 |------|----------|-----------|
 | IN | ANY | Value written to the target variable. |
-OUT | ANY | **InOut Parameter** – used as both an input and an output (see Data Outputs). |
+| OUT | ANY | **InOut Parameter** – used as both an input and an output (see Data Outputs). |
 
 > **Note:** `OUT` is declared as InOut. It functions as a data input (the original variable is read if necessary) and as a data output (overwritten with the value of `IN`).
 
@@ -33,7 +33,7 @@ OUT | ANY | **InOut Parameter** – used as both an input and an output (see Dat
 
 | Name | Data Type | Comment |
 |------|----------|-----------|
-OUT | ANY | **InOut Parameter** – contains the value of the input `IN` after execution. The variable can also be used outside the function block. |
+| OUT | ANY | **InOut Parameter** – contains the value of the input `IN` after execution. The variable can also be used outside the function block. |
 
 ### **Adapter**
 

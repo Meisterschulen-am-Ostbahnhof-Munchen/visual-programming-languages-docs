@@ -110,11 +110,11 @@ The function block is set to `FALSE`, and the timer is started via the event `ti
 
 | Function Block / Property | `ILOCK_BLOCK_PROTECT_AX` | Simple Interlock (without dead time) | Interlock with fixed dead time |
 | :--- | :--- | :--- | :--- |
-Dead Time | Dynamically configurable via `UPDATE` | None | Fixed (usually wired in the block) |
-Interface | Adapter (AX), loose coupling | Mostly direct inputs/outputs | Direct inputs/outputs |
-Priority | First active input | Often fixed priority | Varies |
-Evaluation after dead time | Yes, with a clear state machine | No | Partially |
-Flexibility | High (runtime change) | Low | Medium |
+| Dead Time | Dynamically configurable via `UPDATE` | None | Fixed (usually wired in the block) |
+| Interface | Adapter (AX), loose coupling | Mostly direct inputs/outputs | Direct inputs/outputs |
+| Priority | First active input | Often fixed priority | Varies |
+| Evaluation after dead time | Yes, with a clear state machine | No | Partially |
+| Flexibility | High (runtime change) | Low | Medium |
 
 The `ILOCK_BLOCK_PROTECT_AX` offers a particularly flexible solution thanks to its adapter interface and dynamically adjustable dead time. It is ideal for modular, reusable control projects according to IEC 61499.
 

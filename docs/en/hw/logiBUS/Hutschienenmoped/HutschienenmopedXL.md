@@ -38,11 +38,11 @@ ADC1_CHANNEL_8,     /*!< ADC1 channel 8 is GPIO9  */
 | Output_Q1 | 21 |
 | Output_Q2 | 47 |
 | Output_Q3 | 39 |
-Output_Q4 | 40 |
-Output_Q5 | 41 |
-Output_Q6 | 42 |
-Output_Q7 | 1 |
-Output_Q8 | 2 |
+| Output_Q4 | 40 |
+| Output_Q5 | 41 |
+| Output_Q6 | 42 |
+| Output_Q7 | 1 |
+| Output_Q8 | 2 |
 
 ### LED Strip
 

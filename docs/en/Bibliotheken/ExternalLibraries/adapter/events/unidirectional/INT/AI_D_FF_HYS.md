@@ -107,9 +107,9 @@ This adapter allows the connection of components with different event clocks by 
 
 | Component | Hysteresis | Clock Input | Output Type | Special Feature |
 -------------------|-----------|-------------|-----------------------|----------------------------------|
-**AI_D_FF_HYS** | Yes | Yes | Adapter (AI) | Flexible Adapter Coupling | ... Standard D-FF (61499) | No | Yes | Direct Data Outputs | No Noise Suppression |
-SR Flip-Flop | No | No | Direct | Set/Reset, No Clock |
-Schmitt Trigger | Yes | No | Analog Threshold | Threshold Only, No Memory |
+| **AI_D_FF_HYS** | Yes | Yes | Adapter (AI) | Flexible Adapter Coupling | ... Standard D-FF (61499) | No | Yes | Direct Data Outputs | No Noise Suppression |
+| SR Flip-Flop | No | No | Direct | Set/Reset, No Clock |
+| Schmitt Trigger | Yes | No | Analog Threshold | Threshold Only, No Memory |
 
 The AI_D_FF_HYS combines the features of a clocked D flip-flop with adjustable hysteresis and offers platform-independent integration into IEC 61499 systems via its adapter interface.
 

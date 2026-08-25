@@ -60,7 +60,7 @@ The adapter itself has no internal state. The sending function block controls th
 | Events | 1 output | Often multiple inputs/outputs |
 | Data | 1 byte (2 bits used) | Frequently multiple variables or complex types |
 | Alignment | Unidirectional (Plug-side) | Bidirectional or pure socket-side |
-Complexity | Very low | Medium to high |
+| Complexity | Very low | Medium to high |
 
 The `AQ` adapter is specifically optimized for the minimal case of "one event + one byte".
 

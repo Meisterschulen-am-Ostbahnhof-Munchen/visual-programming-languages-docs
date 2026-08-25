@@ -29,7 +29,7 @@ The function block `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to process a
 | `IN` | UINT | `WORD_TO_UINT(NOT_AVAILABLE_WM)` | Raw value from fieldbus |
 | `SCALE_HIGH` | REAL | `0.256` | Scaling factor for the upper byte |
 | `SCALE_LOW` | REAL | `0.001` | Scaling factor for the lower byte |
-OFFSET` | DINT | `0` | Offset added after scaling (in REAL) |
+| OFFSET` | DINT | `0` | Offset added after scaling (in REAL) |
 
 ### **Data Outputs**
 

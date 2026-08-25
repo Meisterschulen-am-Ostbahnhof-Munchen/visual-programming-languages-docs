@@ -62,7 +62,7 @@ Typical applications include safety and enable chains in automation technology, 
 
 ## ⚖️ Comparison with similar building blocks
 
-* **`AND_2_BOOL` / `AND_3_BOOL` etc.**: Basic AND blocks with two, three, or four inputs. `AND_5_BOOL` extends this logic to five inputs without the need to chain multiple blocks. See: [AND_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_5.md)]
+* **`AND_2_BOOL` / `AND_3_BOOL` etc.**: Basic AND blocks with two, three, or four inputs. `AND_5_BOOL` extends this logic to five inputs without the need to chain multiple blocks. See: [AND_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_5.md)
 * **`GEN_AND`**: The underlying generic block. `AND_5_BOOL` is a pre-configured, unchangeable instance of it with a fixed number of inputs.
 * **OR blocks**: Perform a logical OR operation. While `AND_5_BOOL` outputs `TRUE` only if all `TRUE` inputs are present, OR gates output `TRUE` even if only one `TRUE` input is present.
 

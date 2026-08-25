@@ -35,7 +35,7 @@ After conversion is complete, the event **E1** is sent to the outgoing adapter.
 | Adapter Name | Direction | Type | Description |
 |-------------|----------|-----|--------------|
 | **AS_IN** | Socket (Input) | adapter::types::unidirectional::AS | Input adapter for the SINT value (including event E1) |
-**AD_OUT** | Plug (Output) | adapter::types::unidirectional::AD | Output adapter for the converted DWORD value (including event E1) |
+| **AD_OUT** | Plug (Output) | adapter::types::unidirectional::AD | Output adapter for the converted DWORD value (including event E1) |
 
 ## Functionality
 

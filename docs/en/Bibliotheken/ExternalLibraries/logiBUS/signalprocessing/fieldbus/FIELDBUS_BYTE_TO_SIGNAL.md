@@ -31,7 +31,7 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL** is used for the simple validation
 | Name | Data Type | Initial Value | Comment |
 |------|----------|-------------|-----------|
 | OUT | BYTE | 16#00 | Filtered output value; 0 if signal is invalid. |
-VALID | BOOL | FALSE | TRUE if the input signal is recognized as valid. |
+| VALID | BOOL | FALSE | TRUE if the input signal is recognized as valid. |
 
 ### **Adapter**
 

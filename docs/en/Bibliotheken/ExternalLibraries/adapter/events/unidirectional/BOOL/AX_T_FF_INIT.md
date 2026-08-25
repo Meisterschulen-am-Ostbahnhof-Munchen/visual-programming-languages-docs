@@ -96,10 +96,10 @@ The state transitions are controlled by the INIT event (with a corresponding con
 
 | Criterion | AX_T_FF_INIT | Simple Toggle Flip-Flop (without INIT) | SR Flip-Flop |
 -----------|--------------|------------------------------|-------------|
-Initialization | Yes, via INIT with Q_INIT | No, state undefined after startup | No (set/reset via separate inputs) |
-State Change | Clocked by CLK | Clocked by CLK | Asynchronous via S and R |
-Output | Via adapter (typed) | Often as a BOOL data output | BOOL data output |
-Qualifier QI | Controls whether an action is executed | Not present | Not present |
+| Initialization | Yes, via INIT with Q_INIT | No, state undefined after startup | No (set/reset via separate inputs) |
+| State Change | Clocked by CLK | Clocked by CLK | Asynchronous via S and R |
+| Output | Via adapter (typed) | Often as a BOOL data output | BOOL data output |
+| Qualifier QI | Controls whether an action is executed | Not present | Not present |
 
 Compared to a simple toggle flip-flop, the **AX_T_FF_INIT** offers the possibility of defined initialization and uses an adapter for the output, which simplifies configuration in complex systems.
 

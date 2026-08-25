@@ -74,7 +74,7 @@ Compared to standard XOR function blocks, AX_XOR_4 offers:
 - Specialization for unidirectional AX adapters
 - No event-driven control, but continuous operation
 
-Comparison with [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)]
+Comparison with [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)
 
 ## Change Detection
 

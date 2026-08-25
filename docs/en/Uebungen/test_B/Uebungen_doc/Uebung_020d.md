@@ -1,6 +1,6 @@
 # Exercise_020d: DigitalInput_I1 to DigitalOutput_Q1; TOF Delay Off; resolved
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_020d`. Here, the function of a time-of-flight (TOF) delay is built manually from basic function blocks.
 ----
 ## Objective of the exercise

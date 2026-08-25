@@ -28,11 +28,11 @@ None.
 
 | Direction | Name | Type | Description |
 |----------|-----|-----|--------------|
-Socket (Input) | IN | `adapter::types::unidirectional::AIS` | Incoming AIS adapter signal |
-Plug (Output 1) | OUT1 | `adapter::types::unidirectional::AIS` | First outgoing AIS adapter port |
-Plug (Output 2) | OUT2 | `adapter::types::unidirectional::AIS` | Second outgoing AIS adapter port |
-Plug (Output 3) | OUT3 | `adapter::types::unidirectional::AIS` | Third outgoing AIS adapter port |
-Plug (Output 4) | OUT4 | `adapter::types::unidirectional::AIS` | Fourth Outgoing AIS Adapter Port |
+| Socket (Input) | IN | `adapter::types::unidirectional::AIS` | Incoming AIS adapter signal |
+| Plug (Output 1) | OUT1 | `adapter::types::unidirectional::AIS` | First outgoing AIS adapter port |
+| Plug (Output 2) | OUT2 | `adapter::types::unidirectional::AIS` | Second outgoing AIS adapter port |
+| Plug (Output 3) | OUT3 | `adapter::types::unidirectional::AIS` | Third outgoing AIS adapter port |
+| Plug (Output 4) | OUT4 | `adapter::types::unidirectional::AIS` | Fourth Outgoing AIS Adapter Port |
 | Plug (Output 5) | OUT5 | `adapter::types::unidirectional::AIS` | Fifth Outgoing AIS Adapter Port |
 
 ## Functionality

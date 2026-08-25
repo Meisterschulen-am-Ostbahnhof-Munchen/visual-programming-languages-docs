@@ -105,8 +105,8 @@ After the dead time has elapsed, the function block leaves the protection phase 
 |----------|---------------|
 | **SR Flip-Flop** | Simple set/reset logic, no dead time, no protection against simultaneous signals |
 | **ILOCK_BLOCK_PROTECT** | Prioritizes the first active input, dead time after each direction change, both outputs never active simultaneously `TRUE` |
-**Interlock Block without Timer** | Blocking logic only, immediate switching possible, no protection time |
-**RS Lock with Time Delay** | Similar, but often less configurable and event-driven |
+| **Interlock Block without Timer** | Blocking logic only, immediate switching possible, no protection time |
+| **RS Lock with Time Delay** | Similar, but often less configurable and event-driven |
 
 The `ILOCK_BLOCK_PROTECT`It offers an integrated, configurable dead time and is specifically optimized for event-driven systems according to IEC 61499.
 

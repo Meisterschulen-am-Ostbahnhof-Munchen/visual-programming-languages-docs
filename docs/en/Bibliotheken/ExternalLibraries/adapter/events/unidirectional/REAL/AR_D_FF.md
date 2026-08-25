@@ -64,7 +64,7 @@ The component has a single internal memory (the latched data value). State trans
 
 | Old State | Input D1 (current) | New State | Output D1 | Event Q.E1 |
 |---------------|---------------|--------------|-------------|
-*any* | *any* | Value of D1 | Value of D1 | is triggered |
+| *any* | *any* | Value of D1 | Value of D1 | is triggered |
 
 There are no other internal states or branches.
 

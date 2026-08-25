@@ -1,9 +1,9 @@
 # Exercise_013: SR Flip-Flop (Softkey)
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_013`. It demonstrates the implementation of a memory function that is fully controlled via the ISOBUS terminal.
 Exercise_013: SR Flip-Flop (Softkey)
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 This article describes the logiBUS® exercise `Uebung_013`. It demonstrates the implementation of a memory function that is operated entirely via the ISOBUS terminal.
 

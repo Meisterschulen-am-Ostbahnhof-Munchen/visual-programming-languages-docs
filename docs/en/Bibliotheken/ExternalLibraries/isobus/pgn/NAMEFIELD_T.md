@@ -17,13 +17,13 @@ NAMEFIELD_T` is a structured data type (STRUCT) consisting of ten individual var
 | `bSelfConf` | `BOOL` | `TRUE` | Indicates whether it is a self-configurable address ECU. |
 | `bIndGroup` | `BYTE` | `16#FF` | Assigns the NAME to an industry group (range 0-7). |
 | `bDevClassInst` | `BYTE` | `16#FF` | Identifier if a device class occurs multiple times on the network (0..15). |
-bDevClass` | `BYTE` | `16#FF` | ISO-defined device class (0..127). |
-bReserved` | `BOOL` | `TRUE` | Reserved bit (not used). |
-bFunction` | `BYTE` | `16#FF` | ISO-defined function, corresponds to the Source Address (SA) (0..255). |
-bFunctionInst` | `BYTE` | `16#FF` | Subgroup of a function (0..31). |
-bEcuInstance` | `BYTE` | `16#FF` | Indicates which control unit is assigned to a specific function (0..7). |
-wManufCode` | `WORD` | `16#FFFF` | ISO-defined manufacturer code (0..2047). |
-dwIdentNumb` | `DWORD` | `16#FFFFFFFF` | Unique serial number; used when the NAME is not unique within the same network (0 to 2,097,151).
+| bDevClass` | `BYTE` | `16#FF` | ISO-defined device class (0..127). |
+| bReserved` | `BOOL` | `TRUE` | Reserved bit (not used). |
+| bFunction` | `BYTE` | `16#FF` | ISO-defined function, corresponds to the Source Address (SA) (0..255). |
+| bFunctionInst` | `BYTE` | `16#FF` | Subgroup of a function (0..31). |
+| bEcuInstance` | `BYTE` | `16#FF` | Indicates which control unit is assigned to a specific function (0..7). |
+| wManufCode` | `WORD` | `16#FFFF` | ISO-defined manufacturer code (0..2047). |
+| dwIdentNumb` | `DWORD` | `16#FFFFFFFF` | Unique serial number; used when the NAME is not unique within the same network (0 to 2,097,151).
 
 ### **Data Outputs**
 

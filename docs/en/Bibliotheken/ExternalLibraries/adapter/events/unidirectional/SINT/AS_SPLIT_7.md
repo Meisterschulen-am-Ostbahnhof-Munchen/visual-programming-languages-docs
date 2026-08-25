@@ -34,8 +34,8 @@ None
 | OUT3 | `adapter::types::unidirectional::AS` | Plug | Third output – same signal as the input. |
 | OUT4 | `adapter::types::unidirectional::AS` | Plug | Fourth output – same signal as the input. |
 | OUT5 | `adapter::types::unidirectional::AS` | Plug | Fifth output – same signal as the input. |
-OUT6 | `adapter::types::unidirectional::AS` | Plug | Sixth output – same signal as the input. |
-OUT7 | `adapter::types::unidirectional::AS` | Plug | Seventh output – same signal as the input. |
+| OUT6 | `adapter::types::unidirectional::AS` | Plug | Sixth output – same signal as the input. |
+| OUT7 | `adapter::types::unidirectional::AS` | Plug | Seventh output – same signal as the input. |
 
 ## Functionality
 

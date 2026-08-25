@@ -53,7 +53,7 @@ For time-controlled, cyclic 8-step sequences with adapter connectivity.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_038_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)]
+* [Exercise_038_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
 
 ## Conclusion
 

@@ -38,8 +38,8 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 | :--- | :---: | :--- |
 | **Part I – LE 1.4 (Extensions)** | **40 hours** | Graphical creation of additional functions (implementation on control units) |
 | **Part I – LE 2.6 (Autonomous Systems)** | **20 hours** | Analysis & Diagnosis of Visual Sequence Controls of Autonomous Machines |
-**Part II – LE 1.1 (Systems Engineering)** | **160 hours** | Fundamentals of Control Engineering, IEC 61499 Modeling, Signal Flow & ECC |
-**Part II – LE 1.3 (Diagnostic Engineering)** | **100 hours** | Measurement-Based Signal Tracing & Online Monitoring of Graphical Components |
+| **Part II – LE 1.1 (Systems Engineering)** | **160 hours** | Fundamentals of Control Engineering, IEC 61499 Modeling, Signal Flow & ECC |
+| **Part II – LE 1.3 (Diagnostic Engineering)** | **100 hours** | Measurement-Based Signal Tracing & Online Monitoring of Graphical Components |
 
 --
 
@@ -53,12 +53,12 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 
 | Wiki | Topic / Description | Link |
 | :--- | :--- | :---: |
-**Wiki 0** | **Master Schools Wiki**<br> General information, Curriculum 2025 & Main Wiki. | [📖 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) |
-**Wiki 1** | **C Programming in ISOBUS**<br> Fundamentals of C programming and the ISOBUS environment. | [🚜 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/install-isobus-environment-docs/en/latest/) |
-**Wiki 2** | **ISOBUS Virtual Terminal**<br> User interfaces, ISO Designer & VT objects. | [🖥️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) |
-**Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, pneumatics, motors, high-voltage technology, gearboxes & machine safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/en/latest/) |
-**Wiki 4** | **Visual Programming Languages** <br> Low-code development, IEC 61499 & 4diac IDE (main curriculum topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) |
-**Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for crimping technology, soldering stations, oscilloscopes & microscopes. | [🛠️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
+| **Wiki 0** | **Master Schools Wiki**<br> General information, Curriculum 2025 & Main Wiki. | [📖 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) |
+| **Wiki 1** | **C Programming in ISOBUS**<br> Fundamentals of C programming and the ISOBUS environment. | [🚜 Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/install-isobus-environment-docs/en/latest/) |
+| **Wiki 2** | **ISOBUS Virtual Terminal**<br> User interfaces, ISO Designer & VT objects. | [🖥️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) |
+| **Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, pneumatics, motors, high-voltage technology, gearboxes & machine safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/en/latest/) |
+| **Wiki 4** | **Visual Programming Languages** <br> Low-code development, IEC 61499 & 4diac IDE (main curriculum topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) |
+| **Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for crimping technology, soldering stations, oscilloscopes & microscopes. | [🛠️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
 
 **Wiki 4**
 ... ---

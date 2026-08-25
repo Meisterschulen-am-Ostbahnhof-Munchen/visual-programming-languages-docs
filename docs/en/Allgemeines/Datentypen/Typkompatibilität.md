@@ -26,19 +26,19 @@ This means: the target type must be equal to or greater than the source type.
 
 | Source → | SINT | INT | DINT | LINT |
 |----------|:----:|:---:|:----:|:----:|
-**SINT** | ✓ | ✓ | ✓ | ✓ |
-**INT** | ✗ | ✓ | ✓ | ✓ |
-**DINT** | ✗ | ✗ | ✓ | ✓ |
-**LINT** | ✗ | ✗ | ✗ | ✓ |
+| **SINT** | ✓ | ✓ | ✓ | ✓ |
+| **INT** | ✗ | ✓ | ✓ | ✓ |
+| **DINT** | ✗ | ✗ | ✓ | ✓ |
+| **LINT** | ✗ | ✗ | ✗ | ✓ |
 
 ### Unsigned
 
 | Source → | USINT | UINT | UDINT | ULINT |
 |----------|:-----:|:----:|:-----:|:-----:|
-**USINT** | ✓ | ✓ | ✓ | ✓ |
-**UINT** | ✗ | ✓ | ✓ | ✓ |
-**UDINT** | ✗ | ✗ | ✓ | ✓ |
-**ULINT** | ✗ | ✗ | ✗ | ✓ |
+| **USINT** | ✓ | ✓ | ✓ | ✓ |
+| **UINT** | ✗ | ✓ | ✓ | ✓ |
+| **UDINT** | ✗ | ✗ | ✓ | ✓ |
+| **ULINT** | ✗ | ✗ | ✗ | ✓ |
 
 > **Important:** There is **no** implicit conversion between Signed and Unsigned.
 
@@ -60,11 +60,11 @@ REAL and LREAL also accept certain integer types:
 
 | Source → | BOOL | BYTE | WORD | DWORD | LWORD |
 |----------|:----:|:----:|:----:|:-----:|:-----:|
-**BOOL** | ✓ | ✓ | ✓ | ✓ | ✓ |
-**BYTE** | ✗ | ✓ | ✓ | ✓ | ✓ |
-**WORD** | ✗ | ✗ | ✓ | ✓ | ✓ |
-**DWORD**| ✗ | ✗ | ✗ | ✓ | ✓ |
-**LWORD**| ✗ | ✗ | ✗ | ✗ | ✓ |
+| **BOOL** | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **BYTE** | ✗ | ✓ | ✓ | ✓ | ✓ |
+| **WORD** | ✗ | ✗ | ✓ | ✓ | ✓ |
+| **DWORD**| ✗ | ✗ | ✗ | ✓ | ✓ |
+| **LWORD**| ✗ | ✗ | ✗ | ✗ | ✓ |
 
 ## Characters and Strings
 

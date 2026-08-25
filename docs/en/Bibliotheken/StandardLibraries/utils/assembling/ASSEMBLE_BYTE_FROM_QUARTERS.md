@@ -63,7 +63,7 @@ The function block accepts four quarter bytes and combines them into a complete 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
+* [Exercise_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Conclusion
 

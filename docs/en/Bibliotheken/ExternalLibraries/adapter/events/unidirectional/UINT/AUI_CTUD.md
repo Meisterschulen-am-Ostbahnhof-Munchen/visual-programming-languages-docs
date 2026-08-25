@@ -14,17 +14,17 @@ The function block **AUI_CTUD** is an event-driven up/down counter in the adapte
 |----------|--------------|
 | **CU** | Increment counter by 1 (Count Up) |
 | **CD** | Decrease counter by 1 (Count Down) |
-**R** | Reset counter to 0 (Reset) |
-**LD** | Load counter with preset value (PV) (Load) |
+| **R** | Reset counter to 0 (Reset) |
+| **LD** | Load counter with preset value (PV) (Load) |
 
 ### **Event Outputs**
 
 | Event | Description |
 |----------|--------------|
-**CUO** | Acknowledgement of successful count-up operation |
-**CDO** | Acknowledgement of successful count-down operation |
-**RO** | Acknowledgement of successful reset |
-**LDO** | Acknowledgement of successful load operation |
+| **CUO** | Acknowledgement of successful count-up operation |
+| **CDO** | Acknowledgement of successful count-down operation |
+| **RO** | Acknowledgement of successful reset |
+| **LDO** | Acknowledgement of successful load operation |
 
 ### **Data Inputs**
 
@@ -85,11 +85,11 @@ This function block operates as an event-driven counter with a resolution of 0 t
 | **CD** | Decrement counter and output new value via CV adapter |
 | **R** | Reset counter to 0 and output new value via CV adapter |
 | **LD** | Load meter with PV and output new value via CV adapter |
-**UPDATE_PV** | Recalculate QU and QD after PV change (without meter change) |
-**CHECK_QU** | Check if QU has changed (comparison with QU_OLD) |
-**FIRE_QU** | If QU has changed: Update QU_OLD and send event to QU adapter |
-**CHECK_QD** | Check if QD has changed (comparison with QD_OLD) |
-**FIRE_QD** | If QD has changed: Update QD_OLD and send event to QD adapter |
+| **UPDATE_PV** | Recalculate QU and QD after PV change (without meter change) |
+| **CHECK_QU** | Check if QU has changed (comparison with QU_OLD) |
+| **FIRE_QU** | If QU has changed: Update QU_OLD and send event to QU adapter |
+| **CHECK_QD** | Check if QD has changed (comparison with QD_OLD) |
+| **FIRE_QD** | If QD has changed: Update QD_OLD and send event to QD adapter |
 
 The state transitions are controlled by the events and conditions `[QU.D1 <> QU_OLD]` and `[QD.D1 <> QD_OLD]`. After change detection is complete, the function block returns to the START state.
 

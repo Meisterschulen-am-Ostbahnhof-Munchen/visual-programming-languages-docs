@@ -1,6 +1,6 @@
 # Exercise_072c: Outputting GBSD to UT
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_072c`. It demonstrates a mathematical method for calculating the distance traveled from the speed (integration).
 ----
 ## Objective of the Exercise

@@ -33,7 +33,7 @@ The function block `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` converts a fieldbus sign
 |------|----------|-------|--------------------------|
 | AL | Socket | IN | Input Signal (LWORD) |
 | ALR | Plug | OUT | Output signal (scaled) |
-AX | Plug | VALID | Signal valid (TRUE/FALSE) |
+| AX | Plug | VALID | Signal valid (TRUE/FALSE) |
 
 ## Functionality
 

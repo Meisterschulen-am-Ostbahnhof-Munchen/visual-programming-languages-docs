@@ -70,9 +70,9 @@ The process is controlled by the following ECC states:
 |---------------|--------------------------------------------------------------|----------------------------------|
 | **START** | Waits for incoming events (CD, LD, PV.E1). | – |
 | **CD** | Executes the countdown algorithm. | `CD (CV--, Q aktualisieren)`, `CV.E1`, `CDO` |
-**LD** | Loads **PV** into **CV**. | `LOAD (CV:=PV; Q aktualisieren)`, `CV.E1`, `LDO` |
-**UPDATE_PV** | Recalculates **Q** when **PV** changes. | `UPDATE (Q aus CV berechnen)` |
-**EMIT_Q** | Saves the current **Q** value and triggers **Q.E1**. | `SAVE_Q (Q_OLD:=Q)`, `Q.E1` |
+| **LD** | Loads **PV** into **CV**. | `LOAD (CV:=PV; Q aktualisieren)`, `CV.E1`, `LDO` |
+| **UPDATE_PV** | Recalculates **Q** when **PV** changes. | `UPDATE (Q aus CV berechnen)` |
+| **EMIT_Q** | Saves the current **Q** value and triggers **Q.E1**. | `SAVE_Q (Q_OLD:=Q)`, `Q.E1` |
 
 **Transitions**:
 

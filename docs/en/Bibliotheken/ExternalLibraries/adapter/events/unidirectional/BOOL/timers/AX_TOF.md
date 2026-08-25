@@ -70,11 +70,11 @@ Compared to other timer blocks, AX_TOF offers:
 - Integrated reset functionality
 - Standardized TIME Data Types
 
-Comparison with [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md)]
+Comparison with [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020e_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e_AX.md)]
+* [Exercise_020e_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e_AX.md)
 
 ## Conclusion
 
@@ -84,4 +84,4 @@ The AX_TOF function block offers a reliable and standardized solution for turn-o
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
+* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

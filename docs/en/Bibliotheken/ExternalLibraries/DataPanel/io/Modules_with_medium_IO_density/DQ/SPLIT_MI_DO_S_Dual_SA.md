@@ -31,7 +31,7 @@ The function block **SPLIT_MI_DO_S_Dual_SA** is used to split a single data pane
 | Name | Type | Description |
 |-------|-----|--------------|
 | UP | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for forward, upward, clockwise, or counterclockwise rotation. |
-DOWN | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for reverse, downward, counterclockwise, or counterclockwise rotation. |
+| DOWN | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for reverse, downward, counterclockwise, or counterclockwise rotation. |
 
 ### **Adapter**
 

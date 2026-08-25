@@ -64,8 +64,8 @@ Similar function blocks might have fewer inputs or offer additional features lik
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)]
-* [Exercise_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)]
+* [Exercise_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
+* [Exercise_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
 
 ## Conclusion
 

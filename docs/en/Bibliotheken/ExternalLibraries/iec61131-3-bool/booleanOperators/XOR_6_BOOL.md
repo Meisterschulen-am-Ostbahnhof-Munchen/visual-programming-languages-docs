@@ -57,7 +57,7 @@ The function block is stateless (combinatory). It has no internal memory. The ou
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **`XOR` (2 inputs):** The standard XOR block with only two inputs. `XOR_6_BOOL` extends this functionality to six inputs without the need to connect multiple 2-input XOR blocks. See: [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)]
+* **`XOR` (2 inputs):** The standard XOR block with only two inputs. `XOR_6_BOOL` extends this functionality to six inputs without the need to connect multiple 2-input XOR blocks. See: [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)
 * **`AND_6_BOOL` / `OR_6_BOOL`:** Similar blocks for the logical AND and OR operations with six inputs. While these blocks test for "All" or "At least one," `XOR_6_BOOL` tests for "Odd number."
 * **Blocks with Variable Number of Inputs:** Some implementations may offer a `XOR` block to which any number of inputs can be assigned. In contrast, `XOR_6_BOOL` offers an explicit and fixed interface.
 

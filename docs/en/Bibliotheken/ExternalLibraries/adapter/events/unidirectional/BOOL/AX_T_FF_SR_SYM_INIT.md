@@ -73,13 +73,13 @@ The output `QO` is set to the current value of `QI` with each executed algorithm
 |---|---|---|---|
 | **START** | – | – | Waits for first INIT event. |
 | **Init** | `initialize` | INITO | Sets `QO := QI`; Then switch to SET or RESET depending on `Q_INIT`. |
-**DeInit** | `deInitialize` | INITO | Sets `QO := FALSE`; then returns to START. |
-**SET** | `SET` | Q.E1 | Sets `Q.D1 := TRUE` (if QI = TRUE) and `QO := QI`. |
-**RESET** | `RESET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
-**DeInit** | `RESET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
-**DeInit** | `Q_INIT = FALSE` | INITO | Sets `QO := FALSE` (if QI = TRUE) and `QO := QI`. |
-**Set** | `SET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
-**Set** | `Q_INIT = FALSE` | Q.E1 | **Transitions** (excerpt):
+| **DeInit** | `deInitialize` | INITO | Sets `QO := FALSE`; then returns to START. |
+| **SET** | `SET` | Q.E1 | Sets `Q.D1 := TRUE` (if QI = TRUE) and `QO := QI`. |
+| **RESET** | `RESET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
+| **DeInit** | `RESET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
+| **DeInit** | `Q_INIT = FALSE` | INITO | Sets `QO := FALSE` (if QI = TRUE) and `QO := QI`. |
+| **Set** | `SET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
+| **Set** | `Q_INIT = FALSE` | Q.E1 | **Transitions** (excerpt):
 
 - START → Init: `INIT[QI = TRUE]`
 - Init → SET: `Q_INIT = TRUE`

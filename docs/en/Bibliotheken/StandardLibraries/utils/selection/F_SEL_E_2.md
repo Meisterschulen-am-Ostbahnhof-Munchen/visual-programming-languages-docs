@@ -65,8 +65,8 @@ The function block `F_SEL_E_2` selects between two input variables based on the 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_019](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)]
-* [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)]
+* [Exercise_019](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
+* [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
 
 ## Conclusion
 

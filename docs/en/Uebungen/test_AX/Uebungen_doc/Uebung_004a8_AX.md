@@ -1,6 +1,6 @@
 # Exercise_004a8_AX: with E_SPLIT_2
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a8_AX`. This is a variant of `Uebung_004a4_AX`, which uses a specific function block `E_SPLIT_2` explicitly designed for two outputs.
 ----
 ## Objective of the Exercise

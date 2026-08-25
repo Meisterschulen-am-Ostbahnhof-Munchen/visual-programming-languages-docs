@@ -71,9 +71,9 @@ The **F_SUB_TOD_TOD** function block is a standards-compliant function block for
 
 | Feature | F_SUB_TOD_TOD | F_SUB_DT_DT | F_SUB_TIME |
 |---------------|---------------|---------------|--------------|
-Input Types | TOD - TOD | DT - DT | TIME - TIME |
-Output Type | TIME | TIME | TIME |
-Special Features | 24-hour circular | Calendar-based | Simple difference |
+| Input Types | TOD - TOD | DT - DT | TIME - TIME |
+| Output Type | TIME | TIME | TIME |
+| Special Features | 24-hour circular | Calendar-based | Simple difference |
 
 ## Conclusion
 

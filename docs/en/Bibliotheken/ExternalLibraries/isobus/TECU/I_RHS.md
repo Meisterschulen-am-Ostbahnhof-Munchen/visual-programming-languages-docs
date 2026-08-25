@@ -37,10 +37,10 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 |-----------|------|--------------|-----|------------|------------|
 | `REAR_HITCH_POSITION` | USINT | Coupling position | 1873 | 8 | 0.4 %/bit |
 | `REAR_HITCH_WORK_INDICATION` | BYTE | Operating State | 1877 | 2 | 4 states/2 bits |
-REAR_HITCH_POS_LIMIT_STATUS` | BYTE | Position Limitation | 5151 | 3 | 8 states/3 bits |
-REAR_HITCH_NOMINAL_LOWER_LINK_FORCE` | USINT | Lower Link Force | 1881 | 8 | 0.8%/bit (-100% Offset) |
-REAR_HITCH_DRAFT` | UINT | Tensile Force | 1879 | 16 | 10 N/bit (-320kN Offset) |
-REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6 bits |
+| REAR_HITCH_POS_LIMIT_STATUS` | BYTE | Position Limitation | 5151 | 3 | 8 states/3 bits |
+| REAR_HITCH_NOMINAL_LOWER_LINK_FORCE` | USINT | Lower Link Force | 1881 | 8 | 0.8%/bit (-100% Offset) |
+| REAR_HITCH_DRAFT` | UINT | Tensile Force | 1879 | 16 | 10 N/bit (-320kN Offset) |
+| REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6 bits |
 
 ## Functionality
 
@@ -100,7 +100,7 @@ REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
+* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

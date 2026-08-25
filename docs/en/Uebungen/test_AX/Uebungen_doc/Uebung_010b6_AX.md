@@ -1,6 +1,6 @@
 # Exercise_010b6_AX: Toggle Flip-Flop with IE SoftKey_F1 SK_PRESSED
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010b6_AX`.
 ## 🎧 Podcast
 

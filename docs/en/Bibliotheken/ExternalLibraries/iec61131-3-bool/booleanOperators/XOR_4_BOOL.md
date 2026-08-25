@@ -53,7 +53,7 @@ The function block has no internal state (memory-free, combinatorial). Its behav
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **Standard XOR (2 Inputs):** A classic XOR block with only two inputs. The `XOR_4_BOOL` consolidates the functionality of several such blocks. See: [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)]
+* **Standard XOR (2 Inputs):** A classic XOR block with only two inputs. The `XOR_4_BOOL` consolidates the functionality of several such blocks. See: [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)
 * **OR_4_BOOL / AND_4_BOOL:** These blocks calculate the logical OR or AND operation across four inputs. The XOR operation differs fundamentally, as it evaluates the case where all inputs are `TRUE` as `FALSE`.
 * **Parity Check Blocks:** Specialized blocks for parity calculation often exist for data words (BYTE, WORD). `XOR_4_BOOL` provides this function for individual bits/Bool values.
 

@@ -48,8 +48,8 @@ This function block primarily uses adapters for communication but also provides 
 
 | Name | Type | Comment |
 | :--- | :--- | :--- |
-**Right** | adapter::types::unidirectional::AX | **Right Rotation**: Output signal for rightward movement. |
-**Left** | adapter::types::unidirectional::AX | **Left Rotation**: Output signal for leftward movement. |
+| **Right** | adapter::types::unidirectional::AX | **Right Rotation**: Output signal for rightward movement. |
+| **Left** | adapter::types::unidirectional::AX | **Left Rotation**: Output signal for leftward movement. |
 
 ## Functionality
 
@@ -79,9 +79,9 @@ The ECC (Execution Control Chart) defines the following states:
 | :--- | :--- | :--- |
 | **START** | - | Initial state. Waiting for the `EIN` signal. |
 | **clockwise rotation** | `Set_Rechts_TRUE`, `Set_Links_FALSE`, Status update | Enables adapter `Rechts`, disables `Links`. |
-**Right Rotation_Pause** | `Set_Rechts_FALSE`, `Set_Links_FALSE`, Status update | Both outputs off. The system remembers that it was last in right rotation. |
-**Left Rotation** | `Set_Rechts_FALSE`, `Set_Links_TRUE`, Status update | Enables adapter `Links`, disables `Rechts`. |
-**Left Rotation_Pause** | `Set_Rechts_FALSE`, `Set_Links_FALSE`, Status update | Both outputs off. The system remembers that it was last on the left. |
+| **Right Rotation_Pause** | `Set_Rechts_FALSE`, `Set_Links_FALSE`, Status update | Both outputs off. The system remembers that it was last in right rotation. |
+| **Left Rotation** | `Set_Rechts_FALSE`, `Set_Links_TRUE`, Status update | Enables adapter `Links`, disables `Rechts`. |
+| **Left Rotation_Pause** | `Set_Rechts_FALSE`, `Set_Links_FALSE`, Status update | Both outputs off. The system remembers that it was last on the left. |
 
 ## Application Scenarios
 

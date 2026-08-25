@@ -34,7 +34,7 @@ This component uses the adapter type `adapter::types::unidirectional::AX`. This 
 | :--- | :--- | :--- | :--- |
 | **Q1** | AX | Plug (Output) | The output of the flip-flop (status). |
 | **SET** | AX | Socket (Input) | The set input. When active, the output `Q1` is set to TRUE (unless `RESET1` is active). |
-**RESET1** | AX | Socket (Input) | The reset input. When active, the output `Q1` is set to FALSE. This input has priority over `SET`. |
+| **RESET1** | AX | Socket (Input) | The reset input. When active, the output `Q1` is set to FALSE. This input has priority over `SET`. |
 
 ## Functionality
 

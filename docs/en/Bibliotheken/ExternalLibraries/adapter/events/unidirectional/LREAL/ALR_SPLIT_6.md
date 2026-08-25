@@ -29,12 +29,12 @@ None
 | Name | Type | Direction | Description |
 |------|-----|----------|--------------|
 | IN | `adapter::types::unidirectional::ALR` | Socket (Input) | ALR input signal copied to all outputs |
-OUT1 | `adapter::types::unidirectional::ALR` | Plug (Output) | First ALR output |
-OUT2 | `adapter::types::unidirectional::ALR` | Plug (Output) | Second ALR output |
-OUT3 | `adapter::types::unidirectional::ALR` | Plug (Output) | Third ALR output |
-OUT4 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fourth ALR output |
-OUT5 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fifth ALR output |
-OUT6 | `adapter::types::unidirectional::ALR` | Plug (Output) | Sixth ALR Output |
+| OUT1 | `adapter::types::unidirectional::ALR` | Plug (Output) | First ALR output |
+| OUT2 | `adapter::types::unidirectional::ALR` | Plug (Output) | Second ALR output |
+| OUT3 | `adapter::types::unidirectional::ALR` | Plug (Output) | Third ALR output |
+| OUT4 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fourth ALR output |
+| OUT5 | `adapter::types::unidirectional::ALR` | Plug (Output) | Fifth ALR output |
+| OUT6 | `adapter::types::unidirectional::ALR` | Plug (Output) | Sixth ALR Output |
 
 ## Functionality
 

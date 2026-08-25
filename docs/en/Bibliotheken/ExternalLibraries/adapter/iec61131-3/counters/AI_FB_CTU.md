@@ -85,10 +85,10 @@ The function block has no sequential states beyond these data dependencies.
 
 | Function Block | Properties |
 |----------|---------------|
-**AI_FB_CTU** | Adapter-based, uses IEC 61131-3 CTU, triggers on every input |
-**Standard CTU (IEC 61131)** | Inputs as events + data, no adapter concept, often directly bound to hardware |
-**CTUD (Up/Down Counter)** | Offers additional down counting, has a more complex interface |
-**AX_CTU** (hypothetical) | Could offer optimized event triggering (only on change) |
+| **AI_FB_CTU** | Adapter-based, uses IEC 61131-3 CTU, triggers on every input |
+| **Standard CTU (IEC 61131)** | Inputs as events + data, no adapter concept, often directly bound to hardware |
+| **CTUD (Up/Down Counter)** | Offers additional down counting, has a more complex interface |
+| **AX_CTU** (hypothetical) | Could offer optimized event triggering (only on change) |
 
 The **AI_FB_CTU** impresses with its simple adapter connection, but may require an external filter to avoid unnecessary calls.
 

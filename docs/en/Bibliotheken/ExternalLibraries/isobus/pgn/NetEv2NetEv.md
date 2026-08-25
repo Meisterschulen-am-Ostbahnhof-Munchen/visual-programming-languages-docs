@@ -69,9 +69,9 @@ The function block has no internal state or memory. Its behavior is purely combi
 
 ## 🛠️ Related Exercises
 
-* [Exercise_128](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)]
-* [Exercise_128b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)]
-* [Exercise_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)]
+* [Exercise_128](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
+* [Exercise_128b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
+* [Exercise_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 
 ## Conclusion
 

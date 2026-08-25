@@ -1,6 +1,6 @@
 # Exercise_003b: DigitalInput_I1-2-3-4 to DigitalOutput_Q1-2-3-4
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003b`. This exercise extends the modular control concept from `Uebung_003a` to a total of four independent channels.
 ----
 ## Objective of the Exercise

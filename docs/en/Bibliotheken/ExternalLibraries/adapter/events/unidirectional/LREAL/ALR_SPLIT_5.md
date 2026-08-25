@@ -36,7 +36,7 @@ The module has one socket (input) and five plugs (outputs):
 | Output | OUT2 | `adapter::types::unidirectional::ALR` | Second output with the identical ALR signal |
 | Output | OUT3 | `adapter::types::unidirectional::ALR` | Third output with the identical ALR signal |
 | Output | OUT4 | `adapter::types::unidirectional::ALR` | Fourth output with the identical ALR signal |
-Output | OUT5 | `adapter::types::unidirectional::ALR` | Fifth output with the identical ALR signal |
+| Output | OUT5 | `adapter::types::unidirectional::ALR` | Fifth output with the identical ALR signal |
 
 ## Functionality
 

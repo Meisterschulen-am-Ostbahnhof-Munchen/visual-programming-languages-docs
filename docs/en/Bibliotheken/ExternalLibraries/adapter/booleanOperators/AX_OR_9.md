@@ -69,7 +69,7 @@ The function block has no internal state and operates stateless. The output is c
 
 Compared to standard OR function blocks with fewer inputs, AX_OR_9 offers the ability to process up to nine signals simultaneously, simplifying the wiring of more complex logic. Unlike configurable OR function blocks, this block has a fixed number of inputs, simplifying configuration for known requirements.
 
-Comparison with [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)]
+Comparison with [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)
 
 ## Change Detection
 

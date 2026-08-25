@@ -78,9 +78,9 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 | 0 | VT_E_NO_ERR | Update successful |
 | -6 | VT_E_OVERFLOW | String too long or buffer full |
 | -8 | VT_E_NOACT | VT not ready |
--21 | VT_E_NO_INSTANCE | No VT client available |
--129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
--130 | VT_E_NOT_ALIVE | VT not active |
+| -21 | VT_E_NO_INSTANCE | No VT client available |
+| -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
+| -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
 
@@ -100,7 +100,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 
 ## 🛠️ Related Exercises
 
-* [Exercise_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)]
+* [Exercise_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
 
 ## Conclusion
 

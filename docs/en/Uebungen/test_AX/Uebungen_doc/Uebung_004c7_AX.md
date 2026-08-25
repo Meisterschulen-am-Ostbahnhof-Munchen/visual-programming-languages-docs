@@ -1,6 +1,6 @@
 # Exercise_004c7_AX: Toggle Flip-Flop with IE using BUTTON_PRESS_END
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004c7_AX`. Here, `logiBUS_IE2` is also used to adjust the duration for a "long press".
 ----
 ## Objective of the Exercise

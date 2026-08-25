@@ -1,6 +1,6 @@
 # Exercise_004a7_AX: SR and T Flip-Flop with IE and E_REND (Rendezvous)
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004a7_AX`. It combines the rendezvous pattern with an extended flip-flop type that provides set and reset functionality.
 ----
 ## Objective of the Exercise

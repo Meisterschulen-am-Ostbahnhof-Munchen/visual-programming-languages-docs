@@ -68,7 +68,7 @@ The function block has no internal state (memoryless). The output signal `OUT` i
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **`OR_2_BOOL` / `OR_4_BOOL`:** These blocks offer the same OR functionality, but for a smaller number of inputs (2 and 4, respectively). `OR_10_BOOL` is intended for applications with a higher number of signals to be linked. See: [OR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_10.md)]
+* **`OR_2_BOOL` / `OR_4_BOOL`:** These blocks offer the same OR functionality, but for a smaller number of inputs (2 and 4, respectively). `OR_10_BOOL` is intended for applications with a higher number of signals to be linked. See: [OR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_10.md)
 * **`AND_10_BOOL`:** Performs the logical AND operation. The result is only `TRUE` if *all* inputs are `TRUE`, whereas for `OR_10_BOOL`, it is sufficient if *at least one* input is `TRUE`.
 * **`XOR_10_BOOL`:** Performs the exclusive OR operation. The result is `TRUE` if an odd number of inputs are `TRUE`, which is fundamentally different from inclusive OR logic.
 * **Blocks with variable input count:** Some libraries offer OR blocks where the number of inputs is configurable. `OR_10_BOOL`, however, offers a fixed, explicit interface.

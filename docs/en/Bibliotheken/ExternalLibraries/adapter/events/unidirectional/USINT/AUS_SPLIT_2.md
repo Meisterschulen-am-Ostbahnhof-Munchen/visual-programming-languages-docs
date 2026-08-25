@@ -28,9 +28,9 @@ No data outputs available.
 
 | Direction | Name | Type | Description |
 |----------|------|------------------|----------------------------------------------------|
-Sockets | IN | OFF (unidirectional) | Input adapter that receives the signal to be distributed |
-Plugs | OUT1 | OFF (unidirectional) | First output adapter, identical to the input signal |
-Plugs | OUT2 | OFF (unidirectional) | Second output adapter, identical to the input signal |
+| Sockets | IN | OFF (unidirectional) | Input adapter that receives the signal to be distributed |
+| Plugs | OUT1 | OFF (unidirectional) | First output adapter, identical to the input signal |
+| Plugs | OUT2 | OFF (unidirectional) | Second output adapter, identical to the input signal |
 
 ## Functionality
 

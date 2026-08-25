@@ -66,9 +66,9 @@ The function block does not have its own explicit states, but delegates to the i
 | Function Block | Properties |
 |----------|---------------|
 | **Simple D-FF** | No hysteresis, no delay – instantly responds to every clock edge. |
-**D-FF with Hysteresis** | Contains only the hysteresis band, no time limit between outputs. |
-**D-FF with Tmin** | Minimum dwell time only, without hysteresis – can still switch quickly in noisy environments. |
-**AULI_D_FF_HYS_TMIN** | Combines hysteresis and minimum dwell time – more robust against noise and protects downstream components from excessively fast switching. |
+| **D-FF with Hysteresis** | Contains only the hysteresis band, no time limit between outputs. |
+| **D-FF with Tmin** | Minimum dwell time only, without hysteresis – can still switch quickly in noisy environments. |
+| **AULI_D_FF_HYS_TMIN** | Combines hysteresis and minimum dwell time – more robust against noise and protects downstream components from excessively fast switching. |
 
 The **AULI_D_FF_HYS_TMIN** offers a reliable combination of hysteresis and time limiting for clock-controlled signal takeovers. It is particularly suitable for industrial control systems where interference must be suppressed and actuators protected. The modular adapter interface facilitates integration into existing IEC 61499 applications.
 

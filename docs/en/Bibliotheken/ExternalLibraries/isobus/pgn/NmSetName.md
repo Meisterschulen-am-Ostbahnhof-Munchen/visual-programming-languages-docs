@@ -63,7 +63,7 @@ The block then returns directly to the wait state (1).
 
 ## 🛠️ Related Exercises
 
-* [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)]
+* [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
 
 ## Conclusion
 

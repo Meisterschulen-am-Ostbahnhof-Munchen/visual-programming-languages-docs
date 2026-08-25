@@ -89,7 +89,7 @@ These states are transparent to the user.
 |----------|---------|
 | **E_D_FF** (Standard D Flip-Flop) | No time limit; each event is output immediately. |
 | **E_D_FF_ANY_TMIN** | Same behavior, but without adapter encapsulation; Direct event-/data-based connection. |
-**AUI_D_FF_TMIN** (this block) | Combines D flip-flop functionality with time-based throttling and provides an adapter-based interface. |
+| **AUI_D_FF_TMIN** (this block) | Combines D flip-flop functionality with time-based throttling and provides an adapter-based interface. |
 
 ## Conclusion
 

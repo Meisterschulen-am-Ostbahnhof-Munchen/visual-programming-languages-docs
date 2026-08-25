@@ -48,7 +48,7 @@ Selection of signals.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)]
+* [Exercise_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)
 
 ## Conclusion
 

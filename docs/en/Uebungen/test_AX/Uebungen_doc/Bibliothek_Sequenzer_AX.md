@@ -92,11 +92,11 @@ Specialized block for applications such as conveyor belts or diverters that need
 
 | Connection | Type | Description |
 | :--- | :--- | :--- |
-**Plugs (Outputs)** | `adapter::types::unidirectional::AX` | Bundled outputs for data and events. |
-**START_S1** | `Event` | Starts the sequence in the first step. |
-**RESET** | `Event` | Immediately resets the sequence to the initial state (START). |
-**STATE_NR** | `SINT` | Current step number (0 = START, 1 = S1, ...). |
-**timeOut** | `adapter` | Adapter for connecting a timeout management system. |
+| **Plugs (Outputs)** | `adapter::types::unidirectional::AX` | Bundled outputs for data and events. |
+| **START_S1** | `Event` | Starts the sequence in the first step. |
+| **RESET** | `Event` | Immediately resets the sequence to the initial state (START). |
+| **STATE_NR** | `SINT` | Current step number (0 = START, 1 = S1, ...). |
+| **timeOut** | `adapter` | Adapter for connecting a timeout management system. |
 
 ---
 

@@ -79,7 +79,7 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
+* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

@@ -80,8 +80,8 @@ The function block behaves purely reactively (event-driven):
 | :--- | :--- | :--- |
 | **Interface Type** | Adapter-based (`AI`) | Standard Data and Event Pins |
 | **Number of Inputs** | Fixed (4) | Variable / Fixed (usually 2) |
-**Wiring Effort** | Very low (only 5 connections) | High (separate event and data lines) |
-**Typing** | Generic via adapter | Explicit via FB typing (e.g., `ADD_REAL`) |
+| **Wiring Effort** | Very low (only 5 connections) | High (separate event and data lines) |
+| **Typing** | Generic via adapter | Explicit via FB typing (e.g., `ADD_REAL`) |
 
 ## Change Detection
 

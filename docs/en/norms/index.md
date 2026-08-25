@@ -55,10 +55,10 @@ Standardized symbols are essential for designing human-machine interfaces (HMIs)
 * **ISO 7010:** Specific safety signs and colors for accident prevention.
 
 **Resource:**
-All registered symbols can be viewed in the ISO Online Browsing Platform (OBP) [](https://www.iso.org/obp)].
+All registered symbols can be viewed in the ISO Online Browsing Platform (OBP) [](https://www.iso.org/obp).
 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
+* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

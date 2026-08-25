@@ -37,7 +37,7 @@ The function block `BasicOne_AX` is a basic IEC 61499 block of type *Basic Funct
 | Direction | Name | Type | Comment |
 |----------|------|-----|-----------|
 | Plug (Output) | `DO1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for data transmission (AX interface) |
-Socket (input) | `DI1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for receiving data (AX interface) |
+| Socket (input) | `DI1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for receiving data (AX interface) |
 
 ## Functionality
 

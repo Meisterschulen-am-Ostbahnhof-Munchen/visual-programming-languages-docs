@@ -62,7 +62,7 @@ The FB does not have its own state machine. Its behavior is purely combinatorial
 
 | Function Block | Input Type | Output Type | Special Feature |
 |----------|-------------|-------------|--------------|
-**AL_TO_AS** | LWORD (Adapter) | SINT (Adapter) | Composite; uses `F_LWORD_TO_SINT` |
+| **AL_TO_AS** | LWORD (Adapter) | SINT (Adapter) | Composite; uses `F_LWORD_TO_SINT` |
 | `F_LWORD_TO_SINT` | LWORD (Data) | SINT (Data) | Data converter only, no adapter integration |
 | `F_LWORD_TO_DINT` | LWORD | DINT | Conversion to 32-bit integer |
 | `F_SINT_TO_LWORD` | SINT | LWORD | Reverse direction (if available) |

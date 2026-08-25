@@ -1,6 +1,6 @@
 # Exercise_072: Outputting GBSD to UT
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_072`. In agricultural engineering, there are various sources for speed; here, the two most important ones are compared.
 ## 🎧 Podcast
 

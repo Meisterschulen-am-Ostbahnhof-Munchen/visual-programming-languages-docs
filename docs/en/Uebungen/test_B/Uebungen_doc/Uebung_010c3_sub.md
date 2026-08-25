@@ -13,4 +13,4 @@ It bundles the building blocks `Softkey_IX`, `GreenWhiteBackground`, and `Digita
 
 ## 🛠️ Related Exercises
 
-* [Exercise_010c3](Uebung_010c3.md)]
+* [Exercise_010c3](Uebung_010c3.md)

@@ -29,9 +29,9 @@ None.
 | Type | Direction | Name | Description |
 |------|----------|--------------|--------------|
 | Socket (Input) | Input | IN | Unidirectional adapter input, which is distributed to the three outputs. |
-Plug (Output) | Output | OUT1 | First output with duplicated adapter signal. |
-Plug (Output) | Output | OUT2 | Second output with duplicated adapter signal. |
-Plug (Output) | Output | OUT3 | Third output with duplicated adapter signal. |
+| Plug (Output) | Output | OUT1 | First output with duplicated adapter signal. |
+| Plug (Output) | Output | OUT2 | Second output with duplicated adapter signal. |
+| Plug (Output) | Output | OUT3 | Third output with duplicated adapter signal. |
 
 All adapters are of type `adapter::types::unidirectional::AD`.
 

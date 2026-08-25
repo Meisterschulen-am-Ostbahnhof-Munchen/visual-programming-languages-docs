@@ -65,11 +65,11 @@ The AX_FB_TP block functions as a pulse generator:
 
 ## ⚖️ Comparison with similar function blocks
 
-Compared to [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md)], AX_FB_TP offers the classic IEC 61131-3 TP characteristic, including the ET status output.
+Compared to [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md), AX_FB_TP offers the classic IEC 61131-3 TP characteristic, including the ET status output.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)]
+* [Exercise_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Conclusion
 

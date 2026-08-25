@@ -82,7 +82,7 @@ The logical mapping of the output, depending on the selector `G`, is as follows:
 
 | State of `G` (selector) | Active path | Data value to `OUT.D1` | Event to `OUT.E1` |
 | :--- | :--- | :--- | :--- |
-`FALSE` | `IN0` | Value of `IN0.D1` | Triggered by events at `IN0.E1` or `G.E1` |
+| `FALSE` | `IN0` | Value of `IN0.D1` | Triggered by events at `IN0.E1` or `G.E1` |
 | `TRUE` | `IN1` | Value of `IN1.D1` | Triggered by events at `IN1.E1` or `G.E1` |
 
 * **Switching Analog Values with Status (formatted as WSTRING):** Redundant sensor systems where, in case of a fault, the system should switch from sensor 1 (`IN0`) to a backup sensor 2 (`IN1`).

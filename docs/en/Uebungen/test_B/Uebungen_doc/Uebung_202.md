@@ -18,8 +18,8 @@ The logical input signals are read via digital inputs, and the output signals ar
 | DigitalInput\_I2 | `logiBUS::io::DI::logiBUS_IX` | Digital input – reads the signal from **Input_I2** (e.g., "Down" button) |
 | ILOCK | `logiBUS::signalprocessing::interlock::ILOCK_BLOCK_PROTECT` | Interlock block with protection time – locks the outputs and enforces a minimum switching delay (parameter `DT_PROTECT = T#1s`) |
 | DigitalOutput\_Q1 | `logiBUS::io::DQ::logiBUS_QX` | Digital Output – Controls **Output_Q1** (e.g., Relay "On") |
-DigitalOutput_Q2 | `logiBUS::io::DQ::logiBUS_QX` | Digital Output – Controls **Output_Q2** (e.g., Relay "Off") |
-E\_TimeOut | `iec61499::events::E_TimeOut` | Event-driven timer – provides the time base for the protection time (connected as an adapter) |
+| DigitalOutput_Q2 | `logiBUS::io::DQ::logiBUS_QX` | Digital Output – Controls **Output_Q2** (e.g., Relay "Off") |
+| E\_TimeOut | `iec61499::events::E_TimeOut` | Event-driven timer – provides the time base for the protection time (connected as an adapter) |
 
 ### Function Block Parameters
 

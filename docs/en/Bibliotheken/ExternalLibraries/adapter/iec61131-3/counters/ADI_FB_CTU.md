@@ -12,11 +12,11 @@ The function block does not have direct event or data interfaces, but only adapt
 
 | Direction | Name | Adapter Type | Description |
 |----------|------|-------------|--------------|
-**Input (Socket)** | `CU` | `AX` | Count pulse input (event + data) |
-**Input (Socket)** | `R` | `AX` | Reset input (event + data) |
-**Input (Socket)** | `PV` | `ADI` | Preset value for comparison |
-**Output (Plug)** | `Q` | `AX` | Output signal – active when meter reading ≥ PV |
-**Output (Plug)** | `CV` | `ADI` | Current meter reading |
+| **Input (Socket)** | `CU` | `AX` | Count pulse input (event + data) |
+| **Input (Socket)** | `R` | `AX` | Reset input (event + data) |
+| **Input (Socket)** | `PV` | `ADI` | Preset value for comparison |
+| **Output (Plug)** | `Q` | `AX` | Output signal – active when meter reading ≥ PV |
+| **Output (Plug)** | `CV` | `ADI` | Current meter reading |
 
 The adapters `AX` (event adapter) and `ADI` (data adapter) are unidirectional. Both events and their associated data values are transmitted via these adapters.
 

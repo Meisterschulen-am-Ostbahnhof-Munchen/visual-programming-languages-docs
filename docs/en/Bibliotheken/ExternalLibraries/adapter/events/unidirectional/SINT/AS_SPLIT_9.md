@@ -32,13 +32,13 @@ The function block **AS_SPLIT_9** is used to split an incoming **AS adapter** (u
 | **Socket** | `IN` | `adapter::types::unidirectional::AS` | Input Adapter (AS Interface) |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AS` | First Output Adapter |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AS` | Second Output Adapter |
-**Plug** | `OUT3` | `adapter::types::unidirectional::AS` | Third Output Adapter |
-**Plug** | `OUT4` | `adapter::types::unidirectional::AS` | Fourth Output Adapter |
-**Plug** | `OUT5` | `adapter::types::unidirectional::AS` | Fifth Output Adapter |
-**Plug** | `OUT6` | `adapter::types::unidirectional::AS` | Sixth Output Adapter |
-**Plug** | `OUT7` | `adapter::types::unidirectional::AS` | Seventh Output Adapter |
-**Plug** | `OUT8` | `adapter::types::unidirectional::AS` | Eighth Output Adapter |
-**Plug** | `OUT9` | `adapter::types::unidirectional::AS` | Ninth Output Adapter |
+| **Plug** | `OUT3` | `adapter::types::unidirectional::AS` | Third Output Adapter |
+| **Plug** | `OUT4` | `adapter::types::unidirectional::AS` | Fourth Output Adapter |
+| **Plug** | `OUT5` | `adapter::types::unidirectional::AS` | Fifth Output Adapter |
+| **Plug** | `OUT6` | `adapter::types::unidirectional::AS` | Sixth Output Adapter |
+| **Plug** | `OUT7` | `adapter::types::unidirectional::AS` | Seventh Output Adapter |
+| **Plug** | `OUT8` | `adapter::types::unidirectional::AS` | Eighth Output Adapter |
+| **Plug** | `OUT9` | `adapter::types::unidirectional::AS` | Ninth Output Adapter |
 
 ## Functionality
 

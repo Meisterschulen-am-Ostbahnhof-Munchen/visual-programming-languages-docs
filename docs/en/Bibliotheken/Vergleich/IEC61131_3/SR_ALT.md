@@ -5,9 +5,9 @@ The function block **SR** is a bistable element (flip-flop) where setting takes 
 
 | Type | Name | Data Type | Description |
 | :--- | :--- | :--- | :--- |
-**Input** | S1 | BOOL | Set Input |
-**Input** | R | BOOL | Reset Input |
-**Output** | Q1 | BOOL | Output State |
+| **Input** | S1 | BOOL | Set Input |
+| **Input** | R | BOOL | Reset Input |
+| **Output** | Q1 | BOOL | Output State |
 
 ## Function
 

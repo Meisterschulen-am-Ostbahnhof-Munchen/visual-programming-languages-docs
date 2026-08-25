@@ -67,8 +67,8 @@ The component does not have a state machine. Processing occurs directly without 
 | Component | Function | Special Feature |
 |-----------|-------------------------------------------------|---------------------------------------|
 | AI_TO_AR | Pass-through from INT to REAL via adapter | No dedicated logic, pure adapter switching |
-REAL_TO_INT | Conversion from REAL to INT (usually with rounding) | Often includes its own algorithm |
-ADAPTER_COUPLER | General adapter coupling without type conversion | Requires identical data types |
+| REAL_TO_INT | Conversion from REAL to INT (usually with rounding) | Often includes its own algorithm |
+| ADAPTER_COUPLER | General adapter coupling without type conversion | Requires identical data types |
 
 Unlike dedicated converters, **AI_TO_AR** does not perform active value conversion but relies on the compatibility of the connected adapters.
 

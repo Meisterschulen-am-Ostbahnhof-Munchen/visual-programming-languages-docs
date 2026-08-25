@@ -70,7 +70,7 @@ Since this is a composite function block without its own Execution Control Chart
 
 | State Selector (`G.D1`) | Trigger Event | Output Activity (`OUT`) |
 |:---|:---|:---|
-`0` / `FALSE` | Any (`G.E1`, `IN0.E1`, `IN1.E1`) | Returns the value of `IN0.D1`; triggers `OUT.E1`. |
+| `0` / `FALSE` | Any (`G.E1`, `IN0.E1`, `IN1.E1`) | Returns the value of `IN0.D1`; triggers `OUT.E1`. |
 | `1` / `TRUE` | Any (`G.E1`, `IN0.E1`, `IN1.E1`) | Returns the value of `IN1.D1`; Triggers `OUT.E1`. |
 
 * **Setpoint Switching:** Dynamic switching of a target variable (e.g., a speed or stage of type `USINT`) between automatic operation (`IN1`) and manual operation (`IN0`).

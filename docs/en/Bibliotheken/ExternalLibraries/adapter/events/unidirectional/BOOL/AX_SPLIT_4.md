@@ -64,7 +64,7 @@ The function block operates statelessly – incoming data and events are immedia
 
 Compared to simple split function blocks, AX_SPLIT_4 offers a specific 1:4 split for AX adapters. Other split variants may support different numbers of outputs or other adapter types.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Change Detection
 

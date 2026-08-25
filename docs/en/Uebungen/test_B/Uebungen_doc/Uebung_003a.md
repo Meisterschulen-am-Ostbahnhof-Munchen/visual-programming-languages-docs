@@ -1,6 +1,6 @@
 # Exercise_003a: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2 - with typed Subapp
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a`. It demonstrates an advanced approach to structuring IEC 61499 applications: encapsulating logic in reusable, typed sub-applications ("Typed SubApps").
 ----
 ## Objective of the Exercise

@@ -25,14 +25,14 @@ The function block **NVS_AB2** enables the loading and saving of `REAL` data in 
 | Name | Type | Description |
 |----------------|--------|--------------|
 | `QI` | BOOL | Qualifier for the initialization event (e.g., enabling processing). |
-KEY` | STRING | Name of the key under which the value is stored in the NVS. |
-DEFAULT_VALUE` | REAL | Value returned if no value exists in the NVS for the specified key. |
+| KEY` | STRING | Name of the key under which the value is stored in the NVS. |
+| DEFAULT_VALUE` | REAL | Value returned if no value exists in the NVS for the specified key. |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
 |----------|--------|--------------|
-QO` | BOOL | Qualifier for the output event – signals success (`TRUE`) or failure (`FALSE`). |
+| QO` | BOOL | Qualifier for the output event – signals success (`TRUE`) or failure (`FALSE`). |
 | `STATUS` | STRING | Detailed status message (e.g., error text or confirmation). |
 
 ### **Adapter**

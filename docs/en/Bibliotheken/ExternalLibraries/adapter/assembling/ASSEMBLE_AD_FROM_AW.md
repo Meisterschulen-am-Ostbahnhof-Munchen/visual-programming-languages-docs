@@ -23,7 +23,7 @@ Data is read in via the two socket adapters:
 | Adapter | Type | Description |
 |---------|-----|---------------|
 | `WORD_00` | `adapter::types::unidirectional::AW` | First 16-bit word (lower-order part of the double word) |
-WORD_01` | `adapter::types::unidirectional::AW` | Second 16-bit word (higher-order part of the double word) |
+| WORD_01` | `adapter::types::unidirectional::AW` | Second 16-bit word (higher-order part of the double word) |
 
 Each of these adapters provides a data output (`D1`) containing the actual WORD value.
 
@@ -33,7 +33,7 @@ The output is via a plug adapter:
 
 | Adapter | Type | Description |
 |---------|-----|---------------|
-OUT` | `adapter::types::unidirectional::AD` | Composite 32-bit Double Word (DWORD) |
+| OUT` | `adapter::types::unidirectional::AD` | Composite 32-bit Double Word (DWORD) |
 
 The adapter `OUT` has one data input (`D1`) that is internally connected to the stored result.
 

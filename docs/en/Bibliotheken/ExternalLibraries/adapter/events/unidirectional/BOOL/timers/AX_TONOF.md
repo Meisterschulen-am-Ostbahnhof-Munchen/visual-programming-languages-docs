@@ -65,11 +65,11 @@ The function block can assume the following states:
 
 Compared to simple timer function blocks like TON or TOF, AX_TONOF offers the combined functionality of both timer types in a single block. The use of adapters instead of direct inputs/outputs allows for more flexible integration into complex control structures.
 
-Comparison with [E_TONOF](../../../../../../StandardLibraries/events/timers/E_TONOF.md)]
+Comparison with [E_TONOF](../../../../../../StandardLibraries/events/timers/E_TONOF.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020g_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020g_AX.md)]
+* [Exercise_020g_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020g_AX.md)
 
 ## Conclusion
 

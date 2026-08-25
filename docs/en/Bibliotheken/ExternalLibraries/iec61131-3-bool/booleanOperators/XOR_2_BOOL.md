@@ -61,7 +61,7 @@ The function block does not have an internal state in the sense of a memory. Its
 *
 ## ⚖️ Comparison with similar building blocks
 
-Compared to other basic logic function blocks like `AND_2_BOOL` or `OR_2_BOOL`, `XOR_2_BOOL` is the only one that returns a `TRUE` result when the inputs are *different*. Blocks like `NOT` only invert a single input. `XOR_2_BOOL` can be considered a special case of an inequality comparison (`NE_BOOL`) for two Boolean values. See: [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)]
+Compared to other basic logic function blocks like `AND_2_BOOL` or `OR_2_BOOL`, `XOR_2_BOOL` is the only one that returns a `TRUE` result when the inputs are *different*. Blocks like `NOT` only invert a single input. `XOR_2_BOOL` can be considered a special case of an inequality comparison (`NE_BOOL`) for two Boolean values. See: [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)
 
 ## Conclusion
 

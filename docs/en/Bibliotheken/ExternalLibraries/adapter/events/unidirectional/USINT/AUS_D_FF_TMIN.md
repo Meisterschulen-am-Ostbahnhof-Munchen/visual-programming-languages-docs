@@ -35,8 +35,8 @@ No direct data outputs – output data is provided exclusively via the **Adapter
 
 | Direction | Name | Type | Comment |
 |----------|------|-----|-----------|
-Socket | I | adapter::types::unidirectional::OFF | Value to be transferred (contains event E1 and data D1) |
-Plug | Q | adapter::types::unidirectional::OFF | Transferred output value (contains event E1 and data D1) |
+| Socket | I | adapter::types::unidirectional::OFF | Value to be transferred (contains event E1 and data D1) |
+| Plug | Q | adapter::types::unidirectional::OFF | Transferred output value (contains event E1 and data D1) |
 
 ## Functionality
 

@@ -1,6 +1,6 @@
 # Exercise_020d_AX: DigitalInput_I1 to DigitalOutput_Q1; TOF Off-Delay; resolved
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020d_AX`. Here, an off-delay (TOF) is constructed using discrete event and memory blocks.
 ----
 ## Objective of the Exercise

@@ -95,9 +95,9 @@ Used as a basic building block for implementing delay elements or clock locks in
 
 | Building Block | Special Feature |
 ---------------------|-------------------------------------------------------------------|
-**AUDI_D_FF** | Pure D flip-flop without a time limit between EO events. |
-**E_D_FF_ANY** | Standard D flip-flop with universal data types, but without a minimum delay. |
-**AUDI_D_FF_TMIN** | Like AUDI_D_FF, but with the additional `Tmin` parameter to control the minimum pause between output events. |
+| **AUDI_D_FF** | Pure D flip-flop without a time limit between EO events. |
+| **E_D_FF_ANY** | Standard D flip-flop with universal data types, but without a minimum delay. |
+| **AUDI_D_FF_TMIN** | Like AUDI_D_FF, but with the additional `Tmin` parameter to control the minimum pause between output events. |
 
 ## Conclusion
 

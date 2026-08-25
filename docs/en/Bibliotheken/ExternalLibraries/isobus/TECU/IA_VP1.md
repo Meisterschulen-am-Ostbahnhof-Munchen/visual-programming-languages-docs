@@ -38,8 +38,8 @@ The function block **IA_VP1** is an ISOBUS adapter for Vehicle Position 1 (VP1) 
 | Adapter | Type | Comment |
 |---------|-----|-----------|
 | LAT | adapter::types::unidirectional::AR | Latitude |
-LON | adapter::types::unidirectional::AR | Longitude |
-TIMEOUT | adapter::types::unidirectional::AX | Timeout Status |
+| LON | adapter::types::unidirectional::AR | Longitude |
+| TIMEOUT | adapter::types::unidirectional::AX | Timeout Status |
 
 ## Functionality
 

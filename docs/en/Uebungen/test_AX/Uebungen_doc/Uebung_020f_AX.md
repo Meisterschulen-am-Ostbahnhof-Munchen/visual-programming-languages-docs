@@ -1,6 +1,6 @@
 # Exercise_020f_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_TP; Pulse Shaping
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020f_AX`. Here, a pulse timer (TP - Timer Pulse) is used to enforce a defined on-time.
 ----
 ## Objective of the Exercise

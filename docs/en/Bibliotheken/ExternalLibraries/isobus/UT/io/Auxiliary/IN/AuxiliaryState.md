@@ -50,12 +50,12 @@ The defined constants include the following states:
 | `AuxDisabled` | 0 | Off - reverse, down, left, or not pressed |
 | `AuxDisabled_START` | 0 | Off - reverse, down, left, or not pressed (with bCyclic=FALSE) |
 | `AuxEnabled` | 1 | On - forward, up, right, or pressed |
-AuxEnabled_START` | 1 | On - forward, up, right, or pressed (with bCyclic=FALSE) |
-AuxHeld` | 2 | Held (forward, up, or right) |
-AuxHeld_START` | 2 | Held (forward, up, or right) (with bCyclic=FALSE) |
-AuxEnabledBackwards` | 4 | Currently on - backward, down, or left |
-AuxHeldBackwards` | 8 | Held (backward, down, or left) |
-AuxHeldBackwards_START` | 8 | Held (backward, down, or left) (with bCyclic=FALSE) |
+| AuxEnabled_START` | 1 | On - forward, up, right, or pressed (with bCyclic=FALSE) |
+| AuxHeld` | 2 | Held (forward, up, or right) |
+| AuxHeld_START` | 2 | Held (forward, up, or right) (with bCyclic=FALSE) |
+| AuxEnabledBackwards` | 4 | Currently on - backward, down, or left |
+| AuxHeldBackwards` | 8 | Held (backward, down, or left) |
+| AuxHeldBackwards_START` | 8 | Held (backward, down, or left) (with bCyclic=FALSE) |
 | `AuxDefault` | 9 | Default value |
 | `Invalid` | 255 | Invalid value |
 

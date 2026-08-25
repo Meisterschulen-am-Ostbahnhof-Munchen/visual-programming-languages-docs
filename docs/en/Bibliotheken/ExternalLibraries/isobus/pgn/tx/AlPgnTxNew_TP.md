@@ -82,7 +82,7 @@ The function block has internally implicit states defined by the availability of
 *
 ## 🛠️ Related Exercises
 
-* [Exercise_128b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)]
+* [Exercise_128b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
 
 ## Conclusion
 

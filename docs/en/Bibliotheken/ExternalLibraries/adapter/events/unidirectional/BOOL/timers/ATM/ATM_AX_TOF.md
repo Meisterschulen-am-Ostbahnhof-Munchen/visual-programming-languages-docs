@@ -59,8 +59,8 @@ The function block goes through the following operating states:
 |-----------------|-----------------------------------|-------|---------------|
 | **Idle** | IN.D1 = FALSE, timer is not running | FALSE | Idle state after expiration or reset |
 | **Active** | IN.D1 = TRUE | TRUE | Input active, output immediately TRUE |
-**Timing** | IN.D1 changes from TRUE to FALSE, timer active | TRUE | Delay phase: Output remains TRUE for the duration of the delay phase |
-**Resetting** | Event R during Timing or Active | FALSE | Timer is stopped immediately, output goes to FALSE |
+| **Timing** | IN.D1 changes from TRUE to FALSE, timer active | TRUE | Delay phase: Output remains TRUE for the duration of the delay phase |
+| **Resetting** | Event R during Timing or Active | FALSE | Timer is stopped immediately, output goes to FALSE |
 
 ## Application Scenarios
 

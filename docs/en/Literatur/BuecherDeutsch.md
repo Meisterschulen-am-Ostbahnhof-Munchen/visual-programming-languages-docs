@@ -35,4 +35,4 @@ This work was written by experts in the field of automation technology (includin
 
 ### Links and Resources
 
-* [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)]
+* [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)

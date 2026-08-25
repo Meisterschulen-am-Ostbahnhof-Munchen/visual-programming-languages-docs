@@ -62,9 +62,9 @@ Since it is a purely pass-through composite function block without an internal s
 
 ## 🛠️ Related Exercises
 
-* [Exercise_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)]
-* [Exercise_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)]
-* [Exercise_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)]
+* [Exercise_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+* [Exercise_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Exercise_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Conclusion
 

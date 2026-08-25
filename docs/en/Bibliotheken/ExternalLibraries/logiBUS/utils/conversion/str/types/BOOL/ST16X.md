@@ -41,12 +41,12 @@ The structure of the ST16X data type is defined as follows:
 | X_07 | BOOL | BIT 07 |
 | X_08 | BOOL | BIT 08 |
 | X_09 | BOOL | BIT 9 |
-B_10 | BOOL | BIT 10 |
-B_11 | BOOL | BIT 11 |
-B_12 | BOOL | BIT 12 |
-B_13 | BOOL | BIT 13 |
-B_14 | BOOL | BIT 14 |
-B_15 | BOOL | BIT 15 |
+| B_10 | BOOL | BIT 10 |
+| B_11 | BOOL | BIT 11 |
+| B_12 | BOOL | BIT 12 |
+| B_13 | BOOL | BIT 13 |
+| B_14 | BOOL | BIT 14 |
+| B_15 | BOOL | BIT 15 |
 
 ## Functionality
 

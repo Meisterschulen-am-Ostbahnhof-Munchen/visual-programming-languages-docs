@@ -60,7 +60,7 @@ Since it is a combinational logic block, the AX_AND_4 has no internal states. Th
 - Linking enable signals in process controllers
 - Logical linking of control commands
 
-Comparison with [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_4.md)]
+Comparison with [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_4.md)
 
 ## ⚖️ Comparison with similar function blocks
 

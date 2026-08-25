@@ -12,16 +12,16 @@ The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Blo
 
 | Event | Comment | With |
 |-------|-----------|------------|
-**INIT** | Service Initialization | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis |
-**REQ** | Service Request (Measurement Retrieval) | QI |
+| **INIT** | Service Initialization | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis |
+| **REQ** | Service Request (Measurement Retrieval) | QI |
 
 ### **Event Outputs**
 
 | Event | Comment | With |
 |-------|-----------|------------|
-**INITO** | Initialization Acknowledgement | QO, STATUS |
-**CNF** | Service Request Acknowledgement | QO, STATUS, IN |
-**IND** | Indication of a New Measured Value from the Resource | QO, STATUS, IN |
+| **INITO** | Initialization Acknowledgement | QO, STATUS |
+| **CNF** | Service Request Acknowledgement | QO, STATUS, IN |
+| **IND** | Indication of a New Measured Value from the Resource | QO, STATUS, IN |
 
 ### **Data Inputs**
 

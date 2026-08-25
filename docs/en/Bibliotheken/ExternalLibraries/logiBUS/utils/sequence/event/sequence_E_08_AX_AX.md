@@ -39,10 +39,10 @@ None (state transitions are controlled exclusively via events).
 |------|------|-----------|
 | `DO_S1` | adapter::types::unidirectional::AX | Output active when `State_01` is active |
 | `DO_S2` | adapter::types::unidirectional::AX | Output active when `State_02` is active |
-DO_S3` | adapter::types::unidirectional::AX | Output active when `State_03` is active |
-DO_S4` | adapter::types::unidirectional::AX | Output active when `State_04` is active |
-DO_S5` | adapter::types::unidirectional::AX | Output active when `State_05` is active |
-DO_S6` | adapter::types::unidirectional::AX | Output active when `State_06` is active |
+| DO_S3` | adapter::types::unidirectional::AX | Output active when `State_03` is active |
+| DO_S4` | adapter::types::unidirectional::AX | Output active when `State_04` is active |
+| DO_S5` | adapter::types::unidirectional::AX | Output active when `State_05` is active |
+| DO_S6` | adapter::types::unidirectional::AX | Output active when `State_06` is active |
 | `DO_S7` | adapter::types::unidirectional::AX | Output active when `State_07` is active |
 | `DO_S8` | adapter::types::unidirectional::AX | Output active when `State_08` is active |
 
@@ -81,7 +81,7 @@ The function block operates on the principle of an event-driven step sequence. A
 | `sState_04` | Fourth Step | Sets `DO_S4.D1` to `DI_S4.D1`; `STATE_NR=4` |
 | `sState_05` | Fifth Step | Sets `DO_S5.D1` to `DI_S5.D1`; `STATE_NR=5` |
 | `sState_06` | Sixth Step | Sets `DO_S6.D1` to `DI_S6.D1`; `STATE_NR=6` |
-sState_07` | Seventh Step | Sets `DO_S7.D1` to `DI_S7.D1`; `STATE_NR=7` |
+| sState_07` | Seventh Step | Sets `DO_S7.D1` to `DI_S7.D1`; `STATE_NR=7` |
 | `sState_08` | Eighth Step | Sets `DO_S8.D1` to `DI_S8.D1`; `STATE_NR=8` |
 | `sState_00` | Idle State After Sequence Iteration or Reset | No Output; `STATE_NR=0` |
 | `sRESET` | Intermediate State on Reset | Sets **all** `DO_Sx.D1` to`FALSE`; then transition to `sState_00` |

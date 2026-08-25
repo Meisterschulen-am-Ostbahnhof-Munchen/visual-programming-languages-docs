@@ -37,9 +37,9 @@ The function block **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distanc
 
 | Adapter | Type | Comment |
 |----------|-----|-----------|
-SPEED | adapter::types::unidirectional::AUI | Wheel-based machine speed (unidirectional, analog value) |
-DISTANCE | adapter::types::unidirectional::AUDI | Wheel-based machine distance (unidirectional) |
-TIMEOUT | adapter::types::unidirectional::AX | Timeout status (unidirectional) |
+| SPEED | adapter::types::unidirectional::AUI | Wheel-based machine speed (unidirectional, analog value) |
+| DISTANCE | adapter::types::unidirectional::AUDI | Wheel-based machine distance (unidirectional) |
+| TIMEOUT | adapter::types::unidirectional::AX | Timeout status (unidirectional) |
 
 ## Functionality
 

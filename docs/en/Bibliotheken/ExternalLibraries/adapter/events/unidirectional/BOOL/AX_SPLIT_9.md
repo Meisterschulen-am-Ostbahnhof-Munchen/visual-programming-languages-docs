@@ -61,7 +61,7 @@ The function block has a simple state: When the input adapter is activated, all 
 
 Compared to simpler splitter blocks, AX_SPLIT_9 offers a higher number of outputs (9 instead of the typical 2-4). Compared to serial distributors, it allows simultaneous activation of all outputs without sequential delay.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Change Detection
 

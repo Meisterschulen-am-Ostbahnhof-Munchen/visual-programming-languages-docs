@@ -53,8 +53,8 @@ The `E_DEMUX_8` (Event Demultiplexer) is a function block according to IEC 61499
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)]
-* [Exercise_041](../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)]
+* [Exercise_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+* [Exercise_041](../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Conclusion
 

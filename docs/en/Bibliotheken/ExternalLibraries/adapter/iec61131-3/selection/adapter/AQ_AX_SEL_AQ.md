@@ -71,7 +71,7 @@ Since `AQ_AX_SEL_AQ` is a purely data- and event-driven combination block withou
 | Selector (`G.D1`) | Value `IN0.D1` | Value `IN1.D1` | Output (`OUT.D1`) | Behavior of the Output Event (`OUT.E1`) |
 | :---: | :---: | :---: | :---: | :--- |
 | **FALSE** | `Wert_A` | `Wert_B` | **`Wert_A`** | Fires as soon as an event occurs at `IN0.E1`, `IN1.E1`, or `G.E1`. |
-**TRUE** | `Wert_A` | `Wert_B` | **`Wert_B`** | Fires as soon as an event occurs at `IN0.E1`, `IN1.E1`, or `G.E1`. |
+| **TRUE** | `Wert_A` | `Wert_B` | **`Wert_B`** | Fires as soon as an event occurs at `IN0.E1`, `IN1.E1`, or `G.E1`. |
 
 * **Sensor Redundancy / Switchover**: Automatic or manual switching between a primary sensor (`IN0`) and a secondary/backup sensor (`IN1`) in case of a fault via the control signal `G`.
 * **Manual/Automatic Operation**: Selection of setpoints for actuators. In automatic mode (`G = TRUE`), the calculated controller value (`IN1`) is used; in manual mode (`G = FALSE`), a predefined fixed value or a manually specified parameter (`IN0`) is used.

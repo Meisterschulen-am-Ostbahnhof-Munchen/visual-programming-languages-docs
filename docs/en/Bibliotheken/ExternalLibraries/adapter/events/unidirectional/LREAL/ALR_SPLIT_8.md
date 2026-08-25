@@ -23,12 +23,12 @@ None
 | Name | Type | Direction | Description |
 |-------------|-----|-----------|--------------|
 | **IN** | `adapter::types::unidirectional::ALR` | Socket | Input signal that is routed to all outputs |
-**OUT1** | `adapter::types::unidirectional::ALR` | Plug | Output 1 – duplicated signal |
-**OUT2** | `adapter::types::unidirectional::ALR` | Plug | Output 2 – duplicated signal |
-**OUT3** | `adapter::types::unidirectional::ALR` | Plug | Output 3 – duplicated signal |
-**OUT4** | `adapter::types::unidirectional::ALR` | Plug | Output 4 – duplicated signal |
-**OUT5** | `adapter::types::unidirectional::ALR` | Plug | Output 5 – duplicated signal |
-**OUT6** | `adapter::types::unidirectional::ALR` | Plug | Output 6 – Duplicated Signal |
+| **OUT1** | `adapter::types::unidirectional::ALR` | Plug | Output 1 – duplicated signal |
+| **OUT2** | `adapter::types::unidirectional::ALR` | Plug | Output 2 – duplicated signal |
+| **OUT3** | `adapter::types::unidirectional::ALR` | Plug | Output 3 – duplicated signal |
+| **OUT4** | `adapter::types::unidirectional::ALR` | Plug | Output 4 – duplicated signal |
+| **OUT5** | `adapter::types::unidirectional::ALR` | Plug | Output 5 – duplicated signal |
+| **OUT6** | `adapter::types::unidirectional::ALR` | Plug | Output 6 – Duplicated Signal |
 | **OUT7** | `adapter::types::unidirectional::ALR` | Plug | Output 7 – Duplicated Signal |
 | **OUT8** | `adapter::types::unidirectional::ALR` | Plug | Output 8 – Duplicated Signal |
 

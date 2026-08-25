@@ -65,7 +65,7 @@ The block has a simple state: In its idle state, it waits for incoming events at
 
 Compared to simple split components, the AX_SPLIT_5 offers a fixed number of five outputs. Other split variants can offer different numbers of outputs or configurable distribution logics. The focus here is on the simple, fixed 1:5 distribution.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Change Detection
 

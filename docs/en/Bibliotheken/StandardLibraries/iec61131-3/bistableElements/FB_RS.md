@@ -69,10 +69,10 @@ The `FB_RS` evaluates the inputs at `REQ`:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e2.md)]
-* [Exercise_006e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e2_AX.md)]
-* [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)]
-* [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)]
+* [Exercise_006e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e2.md)
+* [Exercise_006e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e2_AX.md)
+* [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
+* [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Conclusion
 

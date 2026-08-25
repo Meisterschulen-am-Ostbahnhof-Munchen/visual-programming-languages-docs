@@ -13,14 +13,14 @@ The function block **E_T_FF_SR_SYM** is an event-driven, bistable toggle switch 
 | Name | Type | Comment |
 |------|-----|-----------|
 | S | Event | Set output Q (to TRUE) |
-R | Event | Reset output Q (to FALSE) |
-CLK | Event | Clock to toggle output Q |
+| R | Event | Reset output Q (to FALSE) |
+| CLK | Event | Clock to toggle output Q |
 
 ### **Event Outputs**
 
 | Name | Type | With Variable | Comment |
 |------|-----|--------------|-----------|
-EO | Event | Q | Output Q has changed |
+| EO | Event | Q | Output Q has changed |
 
 ### **Data Inputs**
 
@@ -30,7 +30,7 @@ None.
 
 | Name | Type | Comment |
 |------|-----|-----------|
-Q | BOOL | Flip-flop value (TRUE = set, FALSE = reset) |
+| Q | BOOL | Flip-flop value (TRUE = set, FALSE = reset) |
 
 ### **Adapters**
 
@@ -77,7 +77,7 @@ The **toggle** behavior is implemented by ensuring that a CLK event always toggl
 | START | CLK | SET |
 | SET | R | RESET |
 | SET | CLK | RESET |
-RESET | S | SET |
+| RESET | S | SET |
 | RESET | CLK | SET |
 
 Note: S events remaining in the SET state or R events remaining in the RESET state are not explicitly mapped – the state is retained, and no EO output is generated.

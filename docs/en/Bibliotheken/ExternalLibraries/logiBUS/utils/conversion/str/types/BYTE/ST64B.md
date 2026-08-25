@@ -25,7 +25,7 @@ The structure `ST64B` consists of the following 64 byte variables:
 | B\_02 | BYTE | BYTE 02 |
 | B\_03 | BYTE | BYTE 03 |
 | B\_04 | BYTE | BYTE 04 |
-B\_05 | BYTE | BYTE 05 |
+| B\_05 | BYTE | BYTE 05 |
 | B\_06 | BYTE | BYTE 06 |
 | B\_07 | BYTE | BYTE 07 |
 | B\_08 | BYTE | BYTE 08 |

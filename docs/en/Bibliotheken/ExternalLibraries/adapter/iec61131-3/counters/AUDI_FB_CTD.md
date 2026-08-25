@@ -17,14 +17,14 @@ This function block does not have direct event inputs. All events are supplied v
 | Socket (Adapter) | Type | Description |
 |------------------|-------|-------------------------------------------|
 | `CD` | `AX` | Countdown Event |
-LD` | `AX` | Load Event |
-PV` | `AUDI` | Preset Value Event |
+| LD` | `AX` | Load Event |
+| PV` | `AUDI` | Preset Value Event |
 
 ### **Event Outputs**
 
 | Name | Type | Description |
 |------|--------|----------------------------------------------------|
-CNF` | Event | Acknowledge event after each processing step |
+| CNF` | Event | Acknowledge event after each processing step |
 
 ### **Data Inputs**
 

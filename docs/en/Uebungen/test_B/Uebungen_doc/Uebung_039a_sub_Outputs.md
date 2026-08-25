@@ -83,4 +83,4 @@ Uebung_039a_sub_Outputs` represents a complete function block that links a softk
 
 ## 🛠️ Related Exercises
 
-* [Exercise_039a](Uebung_039a.md)]
+* [Exercise_039a](Uebung_039a.md)

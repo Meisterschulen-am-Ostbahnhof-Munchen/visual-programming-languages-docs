@@ -71,7 +71,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 | 0 | VT_E_NO_ERR | Successful execution |
 | -6 | VT_E_OVERFLOW | Macro too complex |
 | -8 | VT_E_NOACT | VT not ready |
--129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
+| -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
 
 ## Application Scenarios
 

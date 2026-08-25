@@ -108,8 +108,8 @@ Retrieving string parameters from a central configuration service.
 |----------|----------|--------------|
 | `BOOL_IS` | BOOL | Simple Boolean inputs (e.g., switches) |
 | `INT_IS` | INT | Integer inputs (e.g., counter readings) |
-REAL_IS` | REAL | Floating-point inputs (e.g., measured values) |
-StringValue_IS` | STRING | Strings – for names, descriptions, irregularly formatted data |
+| REAL_IS` | REAL | Floating-point inputs (e.g., measured values) |
+| StringValue_IS` | STRING | Strings – for names, descriptions, irregularly formatted data |
 
 StringValue_IS` expands the family of input SIFBs with the flexible data type `STRING`, which is characterized by variable length and content.
 

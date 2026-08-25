@@ -68,7 +68,7 @@ The block has no internal state and operates stateless. All incoming signals are
 
 Compared to other split blocks, AX_SPLIT_8 offers a fixed number of eight outputs and operates exclusively at the adapter level. Other split components can have a variable number of outputs or operate at the data or event level.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Change Detection
 
@@ -83,4 +83,4 @@ The AX_SPLIT_8 function block provides a simple and efficient solution for distr
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
+* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

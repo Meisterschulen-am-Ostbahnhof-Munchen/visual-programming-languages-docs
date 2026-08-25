@@ -96,10 +96,10 @@ In a sequence control, *E_T_FF_INIT* is used as a flip-flop for a step. Initiali
 
 | Component | Special Feature |
 -----------------|-----------------------------------------------------------------------------|
-**E_T_FF** | Pure T flip-flop without initialization logic. Always starts in the RESET state. |
-**E_FF** | S-R or D flip-flop – allows setting and resetting via separate events. |
-**E_SR** | Memory component (set-reset) without toggle functionality. |
-**E_T_FF_INIT** | Combines toggle functionality with a freely selectable initial state and enable via *QI*. |
+| **E_T_FF** | Pure T flip-flop without initialization logic. Always starts in the RESET state. |
+| **E_FF** | S-R or D flip-flop – allows setting and resetting via separate events. |
+| **E_SR** | Memory component (set-reset) without toggle functionality. |
+| **E_T_FF_INIT** | Combines toggle functionality with a freely selectable initial state and enable via *QI*. |
 
 Unlike *E_T_FF*, *E_T_FF_INIT* can set the output to TRUE during initialization and provides explicit enable for toggle operation via *QI*.
 

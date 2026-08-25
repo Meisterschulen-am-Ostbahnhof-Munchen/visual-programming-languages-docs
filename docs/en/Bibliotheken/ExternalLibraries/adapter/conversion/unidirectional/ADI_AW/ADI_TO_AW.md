@@ -79,8 +79,8 @@ Since this is a purely structured composite FB without its own Execution Control
 | Block | Function | Difference |
 |----------|----------|-------------|
 | `F_DINT_TO_WORD` | Direct DINT to Word conversion | No adapter encapsulation; must be manually integrated into a network |
-ADI_TO_AW` | Adapter-based encapsulation of the same conversion | Provides ready-to-use adapter interfaces; simplifies reuse |
-WORD_TO_DINT` | Reverse conversion | Other direction; requires a custom adapter type |
+| ADI_TO_AW` | Adapter-based encapsulation of the same conversion | Provides ready-to-use adapter interfaces; simplifies reuse |
+| WORD_TO_DINT` | Reverse conversion | Other direction; requires a custom adapter type |
 
 The `ADI_TO_AW` is specifically optimized for environments where adapters are required as standardized interfaces.
 

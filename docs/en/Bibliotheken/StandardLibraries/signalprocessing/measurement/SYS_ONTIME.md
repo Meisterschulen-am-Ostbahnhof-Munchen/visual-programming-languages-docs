@@ -79,7 +79,7 @@ Compared to other Service Interface function blocks, SYS_ONTIME offers specializ
 
 ## 🛠️ Related Exercises
 
-* [Exercise_140](../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)]
+* [Exercise_140](../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)
 
 ## Conclusion
 

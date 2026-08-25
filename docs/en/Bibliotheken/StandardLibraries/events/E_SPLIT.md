@@ -63,9 +63,9 @@ The **E_SPLIT** is a standards-compliant function block (IEC 61499-1 Annex A) fo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a4](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a4.md)]
-* [Exercise_004a4_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a4_AX.md)]
-* [Exercise_080b](../../../Uebungen/test_B/Uebungen_doc/Uebung_080b.md)]
+* [Exercise_004a4](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a4.md)
+* [Exercise_004a4_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a4_AX.md)
+* [Exercise_080b](../../../Uebungen/test_B/Uebungen_doc/Uebung_080b.md)
 
 ## Conclusion
 

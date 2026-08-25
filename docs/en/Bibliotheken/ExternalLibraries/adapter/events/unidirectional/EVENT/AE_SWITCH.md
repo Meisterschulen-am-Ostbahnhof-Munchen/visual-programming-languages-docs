@@ -31,8 +31,8 @@ The **AE_SWITCH** function block acts as an event demultiplexer. It forwards an 
 | Direction | Name | Type (unidirectional) | Comment |
 |-----------|-------|---------------------------------------------|------------------------------------------------|
 | **Socket** (Input) | `EI` | `adapter::types::unidirectional::AE` | Event input that is switched. |
-**Plug** (Output) | `EO0` | `adapter::types::unidirectional::AE` | Event output, active at `G = 0` |
-**Plug** (Output) | `EO1` | `adapter::types::unidirectional::AE` | Event output, active at `G = 1` |
+| **Plug** (Output) | `EO0` | `adapter::types::unidirectional::AE` | Event output, active at `G = 0` |
+| **Plug** (Output) | `EO1` | `adapter::types::unidirectional::AE` | Event output, active at `G = 1` |
 
 ## Functionality
 
@@ -57,7 +57,7 @@ The function block is initially in the **START** state.
 | START | Wait for an event at `EI` or `EIG` | – |
 | G0 | Event at `EI` with `G = 0` – forward to `EO0` | `EO0.E1` |
 | G1 | Event at `EI` with `G = 1` – forward to `EO1` | `EO1.E1` |
-Event at `EI` with `G = 1` – forward to `EO1` | `EO1.E1` |
+| Event at `EI` with `G = 1` – forward to `EO1` | `EO1.E1` |
 ... **Transitions:**
 
 - START → G0 : `EI.E1[NOT G]`

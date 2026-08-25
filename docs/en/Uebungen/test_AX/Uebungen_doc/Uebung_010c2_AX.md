@@ -1,6 +1,6 @@
 # Exercise_010c2_AX: SoftKey_F1 on DigitalOutput_Q1 with GreenWhiteBackground with Subapp
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010c2_AX`.
 ----
 ## Goal of the Exercise

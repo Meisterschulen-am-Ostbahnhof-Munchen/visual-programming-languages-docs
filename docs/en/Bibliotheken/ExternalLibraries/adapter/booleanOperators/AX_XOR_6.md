@@ -67,7 +67,7 @@ Since this is a purely combinational function block without event control, the A
 
 Compared to standard XOR function blocks with fewer inputs, the AX_XOR_6 offers the ability to process up to six signals simultaneously. While simple XOR blocks typically only have two inputs, this function block enables more complex logical operations without the need for additional nesting of multiple blocks.
 
-Comparison with [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)]
+Comparison with [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)
 
 ## Change Detection
 

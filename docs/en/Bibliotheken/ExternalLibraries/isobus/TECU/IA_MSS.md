@@ -64,8 +64,8 @@ Since the function block does not have its own execution state (ECC), the state 
 | State | Description |
 |---------|--------------|
 | **Not Initialized** | After system startup or after a failed initialization. `INIT` can be triggered. |
-**Initialized** | After successful execution of `INIT` → `INITO` with `QO` set. The adapters deliver valid values. |
-**Error/Timeout** | If the internal initialization fails or a timeout is detected, this is signaled via `STATUS` and the `TIMEOUT` adapter. |
+| **Initialized** | After successful execution of `INIT` → `INITO` with `QO` set. The adapters deliver valid values. |
+| **Error/Timeout** | If the internal initialization fails or a timeout is detected, this is signaled via `STATUS` and the `TIMEOUT` adapter. |
 
 ## Application Scenarios
 

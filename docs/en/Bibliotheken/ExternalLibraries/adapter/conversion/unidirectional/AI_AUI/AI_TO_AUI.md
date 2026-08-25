@@ -28,8 +28,8 @@ No separate data outputs are available. The converted value is provided via the 
 
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-Socket (Input) | `AI_IN` | `adapter::types::unidirectional::AI` | INT adapter input. Returns the event `E1` and the data value `D1` (INT). |
-Plug (Output) | `AUI_OUT` | `adapter::types::unidirectional::AUI` | UINT adapter output. Provides the event `E1` and the data value `D1` (UINT). |
+| Socket (Input) | `AI_IN` | `adapter::types::unidirectional::AI` | INT adapter input. Returns the event `E1` and the data value `D1` (INT). |
+| Plug (Output) | `AUI_OUT` | `adapter::types::unidirectional::AUI` | UINT adapter output. Provides the event `E1` and the data value `D1` (UINT). |
 
 ## Functionality
 

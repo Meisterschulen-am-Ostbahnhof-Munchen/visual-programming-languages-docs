@@ -11,10 +11,10 @@ This exercise implements an upward counter (count-up) based on the standard func
 | Block Name | Type | Parameters | Event Inputs/Outputs | Data Inputs/Outputs |
 |---|---|---|---|---|
 | **FB_CTU** | `iec61131::counters::FB_CTU` | PV = INT#5 | REQ (Input), CNF (Output) | CU (Input), R (Input), Q (Output), CV (Output) |
-**Input_CU** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I1 | IND (Output) | IN (Output) |
-**Input_R** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I2 | IND (Output) | IN (Output) |
-**Output_Q1** | `logiBUS::io::DQ::logiBUS_QX` | QI = TRUE, Output = Output_Q1 | REQ (Input) | OUT (Input) |
-**F_INT_TO_UDINT** | `iec61131::conversion::F_INT_TO_UDINT` | – | REQ (Input), CNF (Output) | IN (Input), OUT (Output) |
+| **Input_CU** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I1 | IND (Output) | IN (Output) |
+| **Input_R** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I2 | IND (Output) | IN (Output) |
+| **Output_Q1** | `logiBUS::io::DQ::logiBUS_QX` | QI = TRUE, Output = Output_Q1 | REQ (Input) | OUT (Input) |
+| **F_INT_TO_UDINT** | `iec61131::conversion::F_INT_TO_UDINT` | – | REQ (Input), CNF (Output) | IN (Input), OUT (Output) |
 | **Q_NumericValue** | `isobus::UT::Q::Q_NumericValue` | u16ObjId = OutputNumber_N1 | REQ (Input) | u32NewValue (Input) |
 
 ### Functionality of the Individual Function Blocks

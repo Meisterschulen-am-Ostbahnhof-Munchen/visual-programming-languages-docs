@@ -100,7 +100,7 @@ The function block goes through the following states:
 | **Hysteresis** (of this FB) | Provides symmetrical hysteresis around a mean value, flexible adjustment of width and switching point, strict switch-off condition. |
 | **Simple Threshold Switch** | No hysteresis; switches at the exact threshold, which can lead to oscillation. |
 | **Schmitt Trigger** | Has two fixed thresholds (upper and lower); Similar to hysteresis, but often without adjustable width. |
-**Comparator with Flip-Flop** | Combines a comparator with a flip-flop; also implements hysteresis, but requires more logic. |
+| **Comparator with Flip-Flop** | Combines a comparator with a flip-flop; also implements hysteresis, but requires more logic. |
 
 ## Conclusion
 

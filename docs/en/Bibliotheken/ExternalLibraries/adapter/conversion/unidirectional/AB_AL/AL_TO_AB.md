@@ -52,8 +52,8 @@ The function block does not have its own state machine. The entire process contr
 | Component | Function | Difference |
 |----------|----------|-------------|
 | `LWORD_TO_BYTE` | Pure data type conversion without adapters | No adapter interface; direct data and event ports |
-AB_TO_AL` | Reverse conversion (BYTE → LWORD) | Opposite direction; also composite with adapters |
-WORD_TO_BYTE` | Conversion from WORD (16-bit) to BYTE | Different data type; similar structure, but different adapter types |
+| AB_TO_AL` | Reverse conversion (BYTE → LWORD) | Opposite direction; also composite with adapters |
+| WORD_TO_BYTE` | Conversion from WORD (16-bit) to BYTE | Different data type; similar structure, but different adapter types |
 
 The **AL_TO_AB** is specifically designed for use with the unidirectional adapters `AL` and `AB` and offers clean, reusable encapsulation.
 

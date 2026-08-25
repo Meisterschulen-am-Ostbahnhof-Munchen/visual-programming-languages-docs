@@ -66,8 +66,8 @@ The FB_TOF function block can be used in various industrial control applications
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)]
-* [Exercise_020e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)]
+* [Exercise_020e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)
+* [Exercise_020e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
 
 ## Conclusion
 

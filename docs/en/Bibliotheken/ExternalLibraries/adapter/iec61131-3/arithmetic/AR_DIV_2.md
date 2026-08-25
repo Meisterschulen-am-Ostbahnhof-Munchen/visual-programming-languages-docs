@@ -33,8 +33,8 @@ Since it is a purely adapter-based function block, `AR_DIV_2` has no direct, tra
 | Type | Name | Adapter Type | Description |
 | :--- | :--- | :--- | :--- |
 | **Socket** (Input) | `IN1` | `adapter::types::unidirectional::AR` | First input value (dividend) for the division. |
-**Socket** (Input) | `IN2` | `adapter::types::unidirectional::AR` | Second input value (divisor) for the division. |
-**Plug** (Output) | `OUT` | `adapter::types::unidirectional::AR` | The result of the division (quotient). |
+| **Socket** (Input) | `IN2` | `adapter::types::unidirectional::AR` | Second input value (divisor) for the division. |
+| **Plug** (Output) | `OUT` | `adapter::types::unidirectional::AR` | The result of the division (quotient). |
 
 ## Functionality
 

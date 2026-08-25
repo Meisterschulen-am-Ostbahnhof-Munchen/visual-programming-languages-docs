@@ -28,8 +28,8 @@ The function block `logiBUS_IE2A` is a composite block (FB) for processing event
 | QI | BOOL | Event Input Qualifier | – |
 | PARAMS | STRING | Service Parameter | – |
 | Input | `logiBUS::io::DI::logiBUS_DI_S` | Digital input identification (e.g., Input_I1..I8) | `logiBUS_DI::Invalid` |
-InputEvent | `logiBUS::io::DI::logiBUS_DI_Events_S` | Event identification (Down, Up, Single-Click, Double-Click, etc.) | `logiBUS_DI_Events::Invalid` |
-arg | UINT | Event data: Long press time or number of multiple clicks (depending on the event) | 65535 |
+| InputEvent | `logiBUS::io::DI::logiBUS_DI_Events_S` | Event identification (Down, Up, Single-Click, Double-Click, etc.) | `logiBUS_DI_Events::Invalid` |
+| arg | UINT | Event data: Long press time or number of multiple clicks (depending on the event) | 65535 |
 
 ### **Data Outputs**
 

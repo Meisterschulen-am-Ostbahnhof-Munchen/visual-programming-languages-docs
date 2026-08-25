@@ -76,7 +76,7 @@ The **F_MULTIME** function block is a standards-compliant function block for mul
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)]
+* [Exercise_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
 
 ## Conclusion
 

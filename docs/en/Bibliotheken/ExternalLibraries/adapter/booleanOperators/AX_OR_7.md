@@ -68,7 +68,7 @@ Since it is a purely combinational function block without event control, the AX_
 
 Compared to standard OR blocks, the AX_OR_7 offers the unique feature of seven inputs, which simplifies wiring because fewer blocks need to be connected in series. The use of adapters instead of direct data connections allows for more flexible integration into various system architectures.
 
-Comparison with [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)]
+Comparison with [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)
 
 ## Change Detection
 

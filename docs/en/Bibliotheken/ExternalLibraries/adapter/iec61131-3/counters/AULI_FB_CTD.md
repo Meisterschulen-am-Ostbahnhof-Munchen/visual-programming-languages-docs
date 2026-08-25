@@ -60,9 +60,9 @@ Data is output via the **Plug Adapters**:
 |----------|-----------------------|--------------------------------------|
 | Socket | `AX` (bidirectional) | Countdown control (Event + BOOL) |
 | Socket | `AX` (bidirectional) | Load Control (Event + BOOL) |
-Socket | `AULI` (bidirectional) | Preset Value (Event + ULINT) |
-Plug | `AX` (bidirectional) | Output Q (Event + BOOL) |
-Plug | `AULI` (bidirectional) | Counter Value Output (Event + ULINT) |
+| Socket | `AULI` (bidirectional) | Preset Value (Event + ULINT) |
+| Plug | `AX` (bidirectional) | Output Q (Event + BOOL) |
+| Plug | `AULI` (bidirectional) | Counter Value Output (Event + ULINT) |
 
 ## Functionality
 

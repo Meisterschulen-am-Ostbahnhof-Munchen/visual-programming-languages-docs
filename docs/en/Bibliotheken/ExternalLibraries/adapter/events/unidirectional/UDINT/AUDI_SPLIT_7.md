@@ -29,12 +29,12 @@ None
 | Name | Type | Direction |
 |--------|--------------------------------|----------|
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) |
-OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 | `OUT7` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
 All adapters are of the unidirectional type `AUDI` and transmit data exclusively from the socket to the plugs.

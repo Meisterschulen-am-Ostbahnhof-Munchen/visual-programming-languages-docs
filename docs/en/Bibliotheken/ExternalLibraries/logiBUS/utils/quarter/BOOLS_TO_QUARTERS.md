@@ -56,7 +56,7 @@ As a composite function block without its own explicit state machine, `BOOLS_TO_
 *
 * **Compared to `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` is essentially an array of 16 `BOOL_TO_QUARTER` blocks with a hard-wired serial event chain. While `BOOL_TO_QUARTER` performs a single conversion, `BOOLS_TO_QUARTERS` aggregates many such conversions into a reusable building block.
 * **Compared to Generic Pack Blocks (e.g., `BOOLx_TO_BYTE`):** Blocks like `BOOL8_TO_BYTE` pack multiple BOOL values into the bits of a single byte. In contrast, `BOOLS_TO_QUARTERS` generates a separate (albeit only partially used) byte for each input. There is no bit packing into a shared byte, but rather a one-to-one mapping to a special encoding format.
-* [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)]
+* [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 The `BOOLS_TO_QUARTERS`The function block offers a convenient and pre-configured solution for serially converting a large number of Boolean signals to the quarter-byte format. Its composite nature makes it easy to understand and use, as it abstracts the wiring of 16 individual blocks and their event logic. Serial processing is a crucial feature that must be considered for real-time applications. The block is ideal for specific applications requiring the quarter-byte format, but less suitable for general bit packing or unpacking operations.
 

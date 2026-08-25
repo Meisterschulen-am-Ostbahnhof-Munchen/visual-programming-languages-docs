@@ -70,8 +70,8 @@ Compared to simple analog input function blocks, logiBUS_AI_ID offers extended f
 
 ## 🛠️ Related Exercises
 
-* [Exercise_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)]
-* [Exercise_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)]
+* [Exercise_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
+* [Exercise_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Conclusion
 

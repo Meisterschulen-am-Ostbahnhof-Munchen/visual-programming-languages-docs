@@ -30,8 +30,8 @@ None.
 
 | Direction | Name | Type | Description |
 |----------|------|------|-------------|
-**Sockets** (Inputs) | QUARTER_BYTE_00 … QUARTER_BYTE_15 | `adapter::types::unidirectional::AQ` | 16 identical adapters, each providing an 8-bit data value (quarter/byte) and a corresponding event (`E1`). |
-**Plug** (Output) | OUT | `adapter::types::unidirectional::AD` | Output adapter providing the DWORD (`D1`) composed of the 16 quarter values and an event (`E1`). |
+| **Sockets** (Inputs) | QUARTER_BYTE_00 … QUARTER_BYTE_15 | `adapter::types::unidirectional::AQ` | 16 identical adapters, each providing an 8-bit data value (quarter/byte) and a corresponding event (`E1`). |
+| **Plug** (Output) | OUT | `adapter::types::unidirectional::AD` | Output adapter providing the DWORD (`D1`) composed of the 16 quarter values and an event (`E1`). |
 
 ## Functionality
 

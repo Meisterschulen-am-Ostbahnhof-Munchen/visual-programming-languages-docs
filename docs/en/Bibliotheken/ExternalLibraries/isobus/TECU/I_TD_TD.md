@@ -37,9 +37,9 @@ The function block **I_TD_TD** is a wrapper around the base block `I_TD` and gen
 | Q_timeout | BOOL | Timeout Flag |
 | timestamp_timeout | DINT | Timeout Timestamp |
 | timestamp_data | DINT | Timestamp of valid data |
-TD | DT | Combined time/date (IEC 61131-3 `DT`) |
-LOCAL_MINUTE_OFFSET | SINT | Local minute offset (SPN 1601, Unit: 1 min/bit, Offset -125) |
-LOCAL_HOUR_OFFSET | SINT | Local hour offset (SPN 1602, Unit: 1 h/bit, Offset -125) |
+| TD | DT | Combined time/date (IEC 61131-3 `DT`) |
+| LOCAL_MINUTE_OFFSET | SINT | Local minute offset (SPN 1601, Unit: 1 min/bit, Offset -125) |
+| LOCAL_HOUR_OFFSET | SINT | Local hour offset (SPN 1602, Unit: 1 h/bit, Offset -125) |
 
 ### **Adapter**
 

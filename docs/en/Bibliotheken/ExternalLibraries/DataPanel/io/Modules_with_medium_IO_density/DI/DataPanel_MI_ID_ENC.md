@@ -28,17 +28,17 @@ The **DataPanel_MI_ID_ENC** function block is an input service interface functio
 | Name | Type | Initial Value | Description |
 |------|-----|--------------|--------------|
 | QI | BOOL | – | Event Input Qualifier |
-PARAMS | STRING | – | Service Parameter |
-u8SAMember | USINT | MI::MI_00 | Node Address (range 224..239) |
-Input | DataPanel::io::MI::DI::DataPanel_MI_DI_S | Invalid | Input Identifier (usually 7A for a 7A+8A pair) |
-PulseDelta | DWORD | – | Number of pulses after which an IND is triggered |
-TimeDelta | DWORD | – | Time in milliseconds after which an IND is triggered |
+| PARAMS | STRING | – | Service Parameter |
+| u8SAMember | USINT | MI::MI_00 | Node Address (range 224..239) |
+| Input | DataPanel::io::MI::DI::DataPanel_MI_DI_S | Invalid | Input Identifier (usually 7A for a 7A+8A pair) |
+| PulseDelta | DWORD | – | Number of pulses after which an IND is triggered |
+| TimeDelta | DWORD | – | Time in milliseconds after which an IND is triggered |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
 |------|-----|---------------|
-QO | BOOL | Event Output Qualifier |
+| QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Service Status |
 | IN | DWORD | Current Encoder Counter Value |
 

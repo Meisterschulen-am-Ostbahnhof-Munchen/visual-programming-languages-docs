@@ -1,6 +1,6 @@
 # Exercise_093: Example for E_TABLE
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_093`. Here, a complex timing pattern for events is defined.
 ## 🎧 Podcast
 

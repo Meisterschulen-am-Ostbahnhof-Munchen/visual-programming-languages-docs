@@ -37,7 +37,7 @@ The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-d
 | Direction | Adapter Type | Comment |
 |----------|------------|-----------|
 | **Socket** `IN` | `adapter::types::unidirectional::AX` | Input adapter – receives the binary control signal (e.g., via event `E1` and data `D1`). |
-**Plug** `Q` | `adapter::types::unidirectional::AX` | Output adapter – forwards the time-delayed output signal (via event `E1` and data `D1`). |
+| **Plug** `Q` | `adapter::types::unidirectional::AX` | Output adapter – forwards the time-delayed output signal (via event `E1` and data `D1`). |
 
 ## Functionality
 

@@ -77,7 +77,7 @@ Unlike generic CAN receive blocks, `AlPgnRxNew8Bcylc` is specifically tailored t
 
 ## 🛠️ Related Exercises
 
-* [Exercise_131](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)]
+* [Exercise_131](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)
 
 ## Conclusion
 

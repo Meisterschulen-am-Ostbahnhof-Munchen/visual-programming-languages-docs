@@ -64,7 +64,7 @@ Since it is a combinational function block without event control, the AX_OR_4 do
 
 Compared to simpler OR function blocks, the AX_OR_4 offers the advantage of four inputs in a single block, which simplifies wiring and saves space. Compared to event-driven function blocks, AX_OR_4 operates continuously without explicit trigger events.
 
-Comparison with [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)]
+Comparison with [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)
 
 ## Change Detection
 

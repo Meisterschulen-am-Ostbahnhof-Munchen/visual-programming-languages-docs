@@ -38,7 +38,7 @@ The function block encapsulates the necessary steps of the physical conversion a
 | `u32OldValue` | `UDINT` | Original raw value of the object before the change. |
 | `s16result` | `INT` | Return value (see `Q_NumericValue`). |
 | `xOver` | `BOOL` | `TRUE` if the physical value exceeds the upper ISOBUS limit. |
-xUnder` | `BOOL` | `TRUE` if the physical value falls below the lower ISOBUS limit. |
+| xUnder` | `BOOL` | `TRUE` if the physical value falls below the lower ISOBUS limit. |
 
 ### **Adapter**
 
@@ -75,7 +75,7 @@ The function block does not have an explicit state machine in the sense of an EC
 |------------------|--------------|
 | **Initialization** | After a `INIT` event, the object properties are stored internally. Then, `INITO` is sent. |
 | **Send Command** | After a `REQ` event, the physical value is converted, the command is issued, and upon completion, `CNF` is sent with the result data. |
-**Error Handling** | If an overflow/underflow occurs during the conversion, `xOver` or `xUnder`, respectively, are set before the command is issued. An erroneous command is signaled by `s16result` and the status message. |
+| **Error Handling** | If an overflow/underflow occurs during the conversion, `xOver` or `xUnder`, respectively, are set before the command is issued. An erroneous command is signaled by `s16result` and the status message. |
 
 ## Application Scenarios
 

@@ -75,8 +75,8 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 |------|-------------------------|------------------------------------|
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
--8 | VT_E_NOACT | Invalid State |
--128 | VT_E_HANDLE_INVALID | Invalid Object ID |
+| -8 | VT_E_NOACT | Invalid State |
+| -128 | VT_E_HANDLE_INVALID | Invalid Object ID |
 
 ## Application Scenarios
 
@@ -95,8 +95,8 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 
 ## 🛠️ Related Exercises
 
-* [Exercise_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)]
-* [Exercise_016a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)]
+* [Exercise_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+* [Exercise_016a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Conclusion
 

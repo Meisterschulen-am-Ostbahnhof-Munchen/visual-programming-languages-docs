@@ -59,9 +59,9 @@ Since the ATM adapter has no internal state machine (stateless adapter), a state
 | Feature | ATM (this adapter) | Other unidirectional adapters (e.g., with multiple events/data) |
 |---------|----------------------|----------------------------------------------------------------|
 | Events | 1 (E1) | Usually multiple (e.g., INIT, REQ, IND, RSP) |
-Data | 1 (TIME) | Often multiple data or different types |
-Complexity | Low | Medium to high |
-Application | Simple time transmission | Complex process scripts |
+| Data | 1 (TIME) | Often multiple data or different types |
+| Complexity | Low | Medium to high |
+| Application | Simple time transmission | Complex process scripts |
 
 Compared to more general adapters, ATM is limited to the essentials – ideal when only one event with a single time value needs to be exchanged.
 

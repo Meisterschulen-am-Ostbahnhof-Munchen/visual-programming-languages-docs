@@ -29,7 +29,7 @@ The function block **A2X_SPLIT_7** is used to distribute an incoming A2X adapter
 | Type | Name | Description |
 |-----|------|---------------|
 | A2X (Socket) | **IN** | Input adapter for the A2X signal to be distributed |
-A2X (Plug) | **OUT1** … **OUT7** | Seven output adapters, each providing an identical copy of the input signal |
+| A2X (Plug) | **OUT1** … **OUT7** | Seven output adapters, each providing an identical copy of the input signal |
 
 ## Functionality
 

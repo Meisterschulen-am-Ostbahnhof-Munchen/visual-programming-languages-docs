@@ -57,9 +57,9 @@ The adapter itself has no internal state. It serves solely as an interface defin
 
 | Component | Events | Data | Direction | Special Feature |
 |----------|------------|-------|----------|------------|
-**AIWS** | 1 Output | 1 WSTRING | Unidirectional | Simplest adapter for WSTRING |
-**AI** (hypothetical) | 1 Output | 1 ANY (generic) | Unidirectional | Flexible data type, but more complex |
-**BIWS** (bidirectional) | 2 Events (in/out) | 2 WSTRING in both directions | Bidirectional | Requires handshake |
+| **AIWS** | 1 Output | 1 WSTRING | Unidirectional | Simplest adapter for WSTRING |
+| **AI** (hypothetical) | 1 Output | 1 ANY (generic) | Unidirectional | Flexible data type, but more complex |
+| **BIWS** (bidirectional) | 2 Events (in/out) | 2 WSTRING in both directions | Bidirectional | Requires handshake |
 
 The **AIWS** stands out due to its minimal interface and is particularly suitable for simple, clearly defined point-to-point connections where no return channel is required.
 

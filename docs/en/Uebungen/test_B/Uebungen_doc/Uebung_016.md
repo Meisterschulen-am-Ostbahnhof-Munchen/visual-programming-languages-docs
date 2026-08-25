@@ -1,6 +1,6 @@
 # Exercise_016: Switching Background Color
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_016`. It demonstrates how to change the background color of objects (e.g., softkeys) at runtime to visualize their states.
 ## 🎧 Podcast
 

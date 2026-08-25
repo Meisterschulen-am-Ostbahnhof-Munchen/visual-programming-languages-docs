@@ -63,8 +63,8 @@ Compared to simple OR blocks with only two inputs, OR_3 offers the possibility o
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)]
-* [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)]
+* [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+* [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Conclusion
 

@@ -76,10 +76,10 @@ The function block has four operating states: **STOP**, **UP**, **DOWN**, and **
 
 | State | DO_UP | DO_DOWN | DO_TRIP | Description |
 |---------|-------|---------|---------|-------------|
-**STOP** | FALSE | FALSE | FALSE | Idle state, no direction active |
-**UP** | TRUE | FALSE | FALSE | Upward direction active |
-**DOWN** | FALSE | TRUE | FALSE | Downward direction active |
-**TRIP** | FALSE | FALSE | TRUE | Conflict/lock active |
+| **STOP** | FALSE | FALSE | FALSE | Idle state, no direction active |
+| **UP** | TRUE | FALSE | FALSE | Upward direction active |
+| **DOWN** | FALSE | TRUE | FALSE | Downward direction active |
+| **TRIP** | FALSE | FALSE | TRUE | Conflict/lock active |
 
 ## Application Scenarios
 

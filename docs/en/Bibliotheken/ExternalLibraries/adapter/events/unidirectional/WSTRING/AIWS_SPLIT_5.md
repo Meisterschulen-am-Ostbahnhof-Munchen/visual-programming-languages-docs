@@ -30,10 +30,10 @@ No data outputs are available. Output is via the plug adapters.
 |-----|-------------|-----------|-------------|
 | **Socket (Input)** | IN | Input | `adapter::types::unidirectional::AIWS` |
 | **Plug (Output)** | OUT1 | Output | `adapter::types::unidirectional::AIWS` |
-**Plug (Output)** | OUT2 | Output | `adapter::types::unidirectional::AIWS` |
-**Plug (Output)** | OUT3 | Output | `adapter::types::unidirectional::AIWS` |
-**Plug (Output)** | OUT4 | Output | `adapter::types::unidirectional::AIWS` |
-**Plug (Output)** | OUT5 | Output | `adapter::types::unidirectional::AIWS` |
+| **Plug (Output)** | OUT2 | Output | `adapter::types::unidirectional::AIWS` |
+| **Plug (Output)** | OUT3 | Output | `adapter::types::unidirectional::AIWS` |
+| **Plug (Output)** | OUT4 | Output | `adapter::types::unidirectional::AIWS` |
+| **Plug (Output)** | OUT5 | Output | `adapter::types::unidirectional::AIWS` |
 
 The function block contains a single **socket** (`IN`) and five **plugs** (`OUT1` … `OUT5`), all of the same unidirectional **AIWS adapter type**.
 
@@ -62,9 +62,9 @@ The **AIWS_SPLIT_5** does not have an explicit state machine. Its functionality 
 | Component | Number of Outputs | Type | Special Feature |
 |----------|-----------------|-----|--------------|
 | **AIWS_SPLIT_5** | 5 | AIWS Adapter | Generic, no events/data |
-AIWS_SPLIT_2 | 2 | AIWS Adapter | Same functionality, minimal distribution |
-AIWS_SPLIT_3 | 3 | AIWS Adapter | Medium number of outputs |
-AIWS_SPLIT_4 | 4 | AIWS Adapter | Alternative to **5** |
+| AIWS_SPLIT_2 | 2 | AIWS Adapter | Same functionality, minimal distribution |
+| AIWS_SPLIT_3 | 3 | AIWS Adapter | Medium number of outputs |
+| AIWS_SPLIT_4 | 4 | AIWS Adapter | Alternative to **5** |
 
 All split variants are based on the same principle and differ only in the number of output adapters. The **AIWS_SPLIT_5** covers a medium distribution requirement and is particularly advantageous when exactly five parallel outputs are needed.
 

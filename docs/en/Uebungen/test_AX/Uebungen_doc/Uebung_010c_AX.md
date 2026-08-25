@@ -1,6 +1,6 @@
 # Exercise_010c_AX: SoftKey_F1 on DigitalOutput_Q1 with GreenWhiteBackground
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010c_AX`. So far, the keys have only switched inputs. Now they should also light up.
 ## 🎧 Podcast
 

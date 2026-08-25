@@ -28,23 +28,23 @@ No direct data outputs. The resulting 16-bit word (WORD) is output via the AW ad
 
 | Type | Name | Description |
 |------|------|--------------|
-**Socket (Input)** | `BIT_00` | AX Adapter, Bool Bit 0 |
-**Socket (Input)** | `BIT_01` | AX Adapter, Bool Bit 1 |
-**Socket (Input)** | `BIT_02` | AX Adapter, Bool Bit 2 |
-**Socket (Input)** | `BIT_03` | AX Adapter, Bool Bit 3 |
-**Socket (Input)** | `BIT_04` | AX Adapter, Bool Bit 4 |
-**Socket (Input)** | `BIT_05` | AX Adapter, Bool Bit 5 |
-**Socket (Input)** | `BIT_06` | AX Adapter, Bool Bit 6 |
-**Socket (Input)** | `BIT_07` | AX Adapter, Bool Bit 7 |
-**Socket (Input)** | `BIT_08` | AX Adapter, Bool Bit 8 |
-**Socket (Input)** | `BIT_09` | AX Adapter, Bool Bit 9 |
-**Socket (Input)** | `BIT_10` | AX Adapter, Bool Bit 10 |
+| **Socket (Input)** | `BIT_00` | AX Adapter, Bool Bit 0 |
+| **Socket (Input)** | `BIT_01` | AX Adapter, Bool Bit 1 |
+| **Socket (Input)** | `BIT_02` | AX Adapter, Bool Bit 2 |
+| **Socket (Input)** | `BIT_03` | AX Adapter, Bool Bit 3 |
+| **Socket (Input)** | `BIT_04` | AX Adapter, Bool Bit 4 |
+| **Socket (Input)** | `BIT_05` | AX Adapter, Bool Bit 5 |
+| **Socket (Input)** | `BIT_06` | AX Adapter, Bool Bit 6 |
+| **Socket (Input)** | `BIT_07` | AX Adapter, Bool Bit 7 |
+| **Socket (Input)** | `BIT_08` | AX Adapter, Bool Bit 8 |
+| **Socket (Input)** | `BIT_09` | AX Adapter, Bool Bit 9 |
+| **Socket (Input)** | `BIT_10` | AX Adapter, Bool Bit 10 |
 | **Socket (Input)** | `BIT_11` | AX Adapter, Bool Bit 11 |
-**Socket (Input)** | `BIT_12` | AX Adapter, Bool Bit 12 |
-**Socket (Input)** | `BIT_13` | AX Adapter, Bool Bit 13 |
-**Socket (Input)** | `BIT_14` | AX Adapter, Bool Bit 14 |
-**Socket (Input)** | `BIT_15` | AX Adapter, Bool Bit 15 |
-**Plug (Output)** | `OUT` | AW Adapter, WORD Output |
+| **Socket (Input)** | `BIT_12` | AX Adapter, Bool Bit 12 |
+| **Socket (Input)** | `BIT_13` | AX Adapter, Bool Bit 13 |
+| **Socket (Input)** | `BIT_14` | AX Adapter, Bool Bit 14 |
+| **Socket (Input)** | `BIT_15` | AX Adapter, Bool Bit 15 |
+| **Plug (Output)** | `OUT` | AW Adapter, WORD Output |
 
 ## Functionality
 

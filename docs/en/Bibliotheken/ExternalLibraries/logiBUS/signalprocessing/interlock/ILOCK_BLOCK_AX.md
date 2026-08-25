@@ -65,10 +65,10 @@ The algorithms set the output signals:
 | State | Description | Output signals |
 |---------|--------------|-----------------|
 | **STOP** | Idle state, no direction active | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
-**UP** | Up direction active | `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE` |
-**DOWN** | Down direction active | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = TRUE` |
-**UP_STOP** | Disable UP (exit immediately) | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
-**DOWN_STOP** | Disable DOWN (exit immediately) | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
+| **UP** | Up direction active | `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE` |
+| **DOWN** | Down direction active | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = TRUE` |
+| **UP_STOP** | Disable UP (exit immediately) | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
+| **DOWN_STOP** | Disable DOWN (exit immediately) | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
 
 **Transitions:**
 

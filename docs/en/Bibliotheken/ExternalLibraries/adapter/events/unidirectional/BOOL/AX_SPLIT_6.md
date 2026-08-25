@@ -70,7 +70,7 @@ The block has a simple state:
 
 Compared to other splitter blocks, AX_SPLIT_6 offers a fixed number of six outputs, which is advantageous for specific applications. Other splitters can offer more or fewer outputs, but may be more complex to configure.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Change Detection
 

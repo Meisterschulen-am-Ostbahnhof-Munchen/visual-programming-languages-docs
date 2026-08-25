@@ -57,7 +57,7 @@ The function block does not have an internal state in the sense of a memory. It 
 
 ## ⚖️ Comparison with Similar Function Blocks
 
-* **`OR_2_BOOL`, `OR_8_BOOL`:** These are identical OR function blocks with a smaller number of inputs (2 and 8, respectively). `OR_16_BOOL` extends this series for applications with a higher number of inputs. See: [OR_16](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_16.md)]
+* **`OR_2_BOOL`, `OR_8_BOOL`:** These are identical OR function blocks with a smaller number of inputs (2 and 8, respectively). `OR_16_BOOL` extends this series for applications with a higher number of inputs. See: [OR_16](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_16.md)
 * **`AND_16_BOOL`:** Performs the logical AND operation. The result is only `TRUE` if *all* inputs are `TRUE`, whereas for `OR_16_BOOL`, it is sufficient if *at least one* input is `TRUE`.
 * **Blocks with variable input count:** Some libraries offer OR blocks where the number of inputs is configurable. `OR_16_BOOL`, on the other hand, offers a fixed, optimized interface for exactly 16 signals.
 

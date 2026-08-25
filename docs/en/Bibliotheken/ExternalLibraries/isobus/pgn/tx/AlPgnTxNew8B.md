@@ -74,8 +74,8 @@ The block implicitly goes through the following main states:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_124](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)]
-* [Exercise_128](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)]
+* [Exercise_124](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
+* [Exercise_128](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
 
 ## Conclusion
 

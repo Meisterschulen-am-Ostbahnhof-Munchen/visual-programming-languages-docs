@@ -29,12 +29,12 @@ None available.
 | Direction | Name | Type | Description |
 |----------|-------|----------------------------------|---------------------------------------------------|
 | Input | IN | `adapter::types::unidirectional::AIS` | Incoming AIS signal to be distributed. |
-Output | OUT1 | `adapter::types::unidirectional::AIS` | First output channel (identical to IN). |
-Output | OUT2 | `adapter::types::unidirectional::AIS` | Second output channel (identical to IN). |
-Output | OUT3 | `adapter::types::unidirectional::AIS` | Third output channel (identical to IN). |
-Output | OUT4 | `adapter::types::unidirectional::AIS` | Fourth output channel (identical to IN). |
-Output | OUT5 | `adapter::types::unidirectional::AIS` | Fifth output channel (identical to IN). |
-Output | OUT6 | `adapter::types::unidirectional::AIS` | Sixth output channel (identical to IN). |
+| Output | OUT1 | `adapter::types::unidirectional::AIS` | First output channel (identical to IN). |
+| Output | OUT2 | `adapter::types::unidirectional::AIS` | Second output channel (identical to IN). |
+| Output | OUT3 | `adapter::types::unidirectional::AIS` | Third output channel (identical to IN). |
+| Output | OUT4 | `adapter::types::unidirectional::AIS` | Fourth output channel (identical to IN). |
+| Output | OUT5 | `adapter::types::unidirectional::AIS` | Fifth output channel (identical to IN). |
+| Output | OUT6 | `adapter::types::unidirectional::AIS` | Sixth output channel (identical to IN). |
 | Output | OUT7 | `adapter::types::unidirectional::AIS` | Seventh output channel (identical to IN). |
 | Output | OUT8 | `adapter::types::unidirectional::AIS` | Eighth output channel (identical to IN). |
 

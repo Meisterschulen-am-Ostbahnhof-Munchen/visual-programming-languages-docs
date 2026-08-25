@@ -1,6 +1,6 @@
 # Exercise_002a5b: DigitalInput_I1-3 with OR on DigitalOutput_Q1-3
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_002a5b`. This exercise combines two concepts: a logical OR operation with three inputs and the simultaneous distribution (fan-out) of the result to three digital outputs.
 ----
 ## Objective of the Exercise

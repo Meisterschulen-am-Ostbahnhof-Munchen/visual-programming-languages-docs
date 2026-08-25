@@ -80,8 +80,8 @@ Since the function block does not have its own state diagram (the logic resides 
 |------------------------------|-------------------------------------------------------------------------------|
 | Standard D Flip-Flop | Latches on every rising edge without hysteresis or time limit. |
 | `E_D_FF_HYS` (without Tmin) | Hysteresis only, no time debouncing. |
-E_D_FF_TMIN` (without Hys) | Minimum time only, no hysteresis. |
-AUS_D_FF_HYS_TMIN` | Combines hysteresis **and** minimum time – more robust against noise and bursts. |
+| E_D_FF_TMIN` (without Hys) | Minimum time only, no hysteresis. |
+| AUS_D_FF_HYS_TMIN` | Combines hysteresis **and** minimum time – more robust against noise and bursts. |
 
 This component is therefore particularly suitable when both effects (signal tolerance and time limiting) are required simultaneously.
 

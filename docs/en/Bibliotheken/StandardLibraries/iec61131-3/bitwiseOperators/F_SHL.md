@@ -58,7 +58,7 @@ The function block `F_SHL` performs a bitwise left shift of the input value `IN`
 
 ## 🛠️ Related Exercises
 
-* [Exercise_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)]
+* [Exercise_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Conclusion
 

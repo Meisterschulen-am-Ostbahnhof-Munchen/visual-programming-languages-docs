@@ -1,6 +1,6 @@
 # Exercise_002a2_AX: DigitalInput_I1/_I2 with F_AND (bitwise) on DigitalOutput_Q1
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_002a2_AX`. It demonstrates how to convert adapter signals into Boolean values for processing with standard logic blocks.
 ----
 ## Objective of the Exercise

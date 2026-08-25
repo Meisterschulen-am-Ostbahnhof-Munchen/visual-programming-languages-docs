@@ -52,9 +52,9 @@ The CLIENT_0_1 block establishes a connection via INIT. It requests data from th
 | Attribute | Value |
 | :--- | :--- |
 | Copyright | © 2017, 2025 fortiss GmbH, JKU Linz |
-License | EPL-2.0 |
-Version | 3.0 (2025-19-26, Alois Zoitl) |
-4diac Package | iec61499::net |
+| License | EPL-2.0 |
+| Version | 3.0 (2025-19-26, Alois Zoitl) |
+| 4diac Package | iec61499::net |
 
 --
 

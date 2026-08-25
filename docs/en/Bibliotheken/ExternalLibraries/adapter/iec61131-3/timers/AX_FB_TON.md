@@ -63,7 +63,7 @@ The AX_FB_TON block functions as a power-on delay timer. The internal timer star
 
 ## ⚖️ Comparison with similar function blocks
 
-Compared to [AX_TON](../../events/unidirectional/BOOL/timers/AX_TON.md)], AX_FB_TON additionally offers the **ET** output for the elapsed time and strictly follows the behavior of the IEC 61131-3 TON block, while AX_TON is optimized more for the IEC 61499 E_TON.
+Compared to [AX_TON](../../events/unidirectional/BOOL/timers/AX_TON.md), AX_FB_TON additionally offers the **ET** output for the elapsed time and strictly follows the behavior of the IEC 61131-3 TON block, while AX_TON is optimized more for the IEC 61499 E_TON.
 
 ## 🛠️ Related Exercises
 

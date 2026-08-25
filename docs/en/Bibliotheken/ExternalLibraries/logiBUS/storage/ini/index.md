@@ -55,7 +55,7 @@ A `SET` event writes the current value of the `VALUE` input under the configured
 
 * **Type Flexibility**: The data inputs/outputs `VALUE`, `DEFAULT_VALUE`, and `VALUEO` use the generic data type `ANY_ELEMENTARY`. This allows the storage of various elementary data types (e.g., numbers, Boolean values, strings) using the same function block.
 * **Persistence**: The data is stored in text-based INI files (`settings.ini` for writable values, `settingsReadOnly.ini` for read-only factory settings).
-* **Write Protection & Factory Defaults**: Keys in `settingsReadOnly.ini` override values in `settings.ini` and reject write attempts (`SET`) (`STATUS = "Key is read-only"`). For details, see [Read-Only Settings (settingsReadOnly.ini) ](./settingsReadOnly.md)].
+* **Write Protection & Factory Defaults**: Keys in `settingsReadOnly.ini` override values in `settings.ini` and reject write attempts (`SET`) (`STATUS = "Key is read-only"`). For details, see [Read-Only Settings (settingsReadOnly.ini) ](./settingsReadOnly.md).
 * **Error Handling**: The output of `STATUS` provides textual feedback on the success or failure of the operation, facilitating debugging.
 * **Package**: The block is included in the package `eclipse4diac::storage`.
 

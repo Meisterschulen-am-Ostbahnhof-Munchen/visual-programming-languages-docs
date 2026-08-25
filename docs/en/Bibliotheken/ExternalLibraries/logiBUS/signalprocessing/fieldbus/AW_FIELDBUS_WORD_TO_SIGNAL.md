@@ -62,7 +62,7 @@ The function block itself does not have an explicit state machine. The internal 
 | State | Meaning |
 |---------|-----------|
 | `VALID = FALSE` | The output value is invalid (old data or initial state). |
-VALID = TRUE` | The output value is valid and was recognized as valid during the last processing cycle. |
+| VALID = TRUE` | The output value is valid and was recognized as valid during the last processing cycle. |
 
 ## Application Scenarios
 

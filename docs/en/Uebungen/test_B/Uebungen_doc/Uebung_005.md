@@ -1,6 +1,6 @@
 # Exercise_005: Toggle Flip-Flop with IX
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_005`. It demonstrates how a state-based hardware input (`IX`) can be used to control an event-based toggle flip-flop.
 ## 🎧 Podcast
 

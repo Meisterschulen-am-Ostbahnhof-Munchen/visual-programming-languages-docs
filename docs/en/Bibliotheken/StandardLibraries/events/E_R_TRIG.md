@@ -66,7 +66,7 @@ According to the XML specification, the block consists of:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)]
+* [Exercise_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
 
 ## Conclusion
 

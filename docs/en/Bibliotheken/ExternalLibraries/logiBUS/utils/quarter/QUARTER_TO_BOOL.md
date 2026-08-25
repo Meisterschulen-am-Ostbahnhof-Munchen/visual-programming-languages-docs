@@ -80,8 +80,8 @@ The ECC (Execution Control Chart) consists of six states:
 *
 ## 🛠️ Related Exercises
 
-* [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
-* [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
+* [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Conclusion
 

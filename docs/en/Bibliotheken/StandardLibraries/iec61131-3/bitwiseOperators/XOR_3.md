@@ -65,7 +65,7 @@ Compared to XOR_3 offers the ability to process three inputs simultaneously, unl
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)]
+* [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Conclusion
 

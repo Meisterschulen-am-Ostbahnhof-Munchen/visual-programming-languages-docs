@@ -99,10 +99,10 @@ Unlike simple timer blocks (`TON`) or pure state machines (`E_SR`), `sequence_ET
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)]
-* [Exercise_035b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)]
-* [Exercise_035c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)]
-* [Exercise_036](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)]
+* [Exercise_035](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
+* [Exercise_035b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+* [Exercise_035c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
+* [Exercise_036](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
 
 ## Conclusion
 

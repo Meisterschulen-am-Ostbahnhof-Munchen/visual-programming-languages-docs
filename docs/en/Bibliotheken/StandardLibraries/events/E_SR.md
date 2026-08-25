@@ -38,7 +38,7 @@ The `E_SR` block functions as a simple latch:
 
 ## Technical Features and Standards Comparison
 
-According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this function block is identical to [E_RS](E_RS.md)]. Both function blocks (`E_SR` and `E_RS`) exist to maintain consistency with the types in IEC 61131-3, even though IEC 61499 does not have an inherent "dominance" of events, as is the case with level-controlled inputs in classic PLC programming.
+According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this function block is identical to [E_RS](E_RS.md). Both function blocks (`E_SR` and `E_RS`) exist to maintain consistency with the types in IEC 61131-3, even though IEC 61499 does not have an inherent "dominance" of events, as is the case with level-controlled inputs in classic PLC programming.
 
 - **Comparison to IEC 61131-3**: See [SR (Bistable, set first)](../../Vergleich/IEC61131_3/SR_ALT.md). While in IEC 61131-3 the `SR` function block has a defined "set dominance" (if S and R are TRUE simultaneously, S wins), in IEC 61499 the behavior with closely spaced events depends on the processing order of the runtime environment (ECC). Since events are transient, there is no permanent conflict between two static signals.
 - **Functional Identity**: `E_SR` and `E_RS` are technically identical. Their graphical representation and naming conventions simply follow established naming conventions to aid developers.

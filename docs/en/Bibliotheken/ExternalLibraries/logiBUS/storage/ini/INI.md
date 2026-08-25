@@ -14,7 +14,7 @@ The **INI** function block is used for the secure reading and writing of configu
 |--------|---------|----------------------------------------------|
 | INIT | EInit | Initializes the function block and opens the INI file |
 | SET | Event | Writes the value of `VALUE` for the current key |
-GET | Event | Reads the value of the current key |
+| GET | Event | Reads the value of the current key |
 
 ### **Event Outputs**
 
@@ -59,7 +59,7 @@ The execution of each event is acknowledged by the respective output (INITO, SET
 ## Technical Features
 
 - **Generic Data Types** – `VALUE` and `DEFAULT_VALUE` are declared as `ANY`. The function block can therefore work with various data types (e.g., BOOL, INT, REAL, STRING), provided the runtime environment supports them.
-- **Write Protection (Factory Default)** – In addition to `settings.ini`, the system also supports the write-protected default file `settingsReadOnly.ini`. Parameters from this file override modifiable values and reject write attempts using `STATUS = "Key is read-only"`. See also [Read-only settings (`settingsReadOnly.ini`)](./settingsReadOnly.md)].
+- **Write Protection (Factory Default)** – In addition to `settings.ini`, the system also supports the write-protected default file `settingsReadOnly.ini`. Parameters from this file override modifiable values and reject write attempts using `STATUS = "Key is read-only"`. See also [Read-only settings (`settingsReadOnly.ini`)](./settingsReadOnly.md).
 - **Event-based control** – All actions are triggered by events. The function block can therefore be fully integrated into an event-driven system (e.g., IEC 61499).
 - **Error handling** – The output qualifier `QO` and the `STATUS` string enable easy error diagnosis (e.g., for read-only keys, missing file, or invalid section).
 

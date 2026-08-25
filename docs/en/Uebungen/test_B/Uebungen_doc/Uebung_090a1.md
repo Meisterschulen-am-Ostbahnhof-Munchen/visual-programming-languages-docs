@@ -1,6 +1,6 @@
 # Exercise_090a1: Example for F_MUX_2
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_090a1`. It demonstrates the selection of a data value based on an address.
 ----
 ## Objective of the Exercise

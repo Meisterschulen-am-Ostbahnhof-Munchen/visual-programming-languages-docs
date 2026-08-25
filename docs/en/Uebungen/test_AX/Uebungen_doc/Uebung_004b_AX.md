@@ -1,6 +1,6 @@
 # Exercise_004b_AX: Toggle Flip-Flop with IE / E_SWITCH + E_SR
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_004b_AX`. This exercise demonstrates an alternative implementation of a latching switch using data-to-event conversion and switches.
 ![Uebung_004b_AX_network](./Uebung_004b_AX_network.svg)
 > **Note:** This solution is considered "not recommended" (see comment in the code) because it is unnecessarily complex. It serves here as a teaching example for the function blocks `AX_SWITCH`, `AX_BOOL_TO_X`, and `AX_X_TO_BOOL`.

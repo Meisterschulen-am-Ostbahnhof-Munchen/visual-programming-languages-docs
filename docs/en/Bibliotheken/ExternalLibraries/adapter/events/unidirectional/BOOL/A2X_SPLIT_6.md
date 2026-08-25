@@ -32,9 +32,9 @@ None.
 | Output (Plug) 1 | `OUT1` | `adapter::types::unidirectional::A2X` | First outgoing A2X adapter |
 | Output (Plug) 2 | `OUT2` | `adapter::types::unidirectional::A2X` | Second outgoing A2X adapter |
 | Output (Plug) 3 | `OUT3` | `adapter::types::unidirectional::A2X` | Third outgoing A2X adapter |
-Output (Plug) 4 | `OUT4` | `adapter::types::unidirectional::A2X` | Fourth outgoing A2X adapter |
-Output (Plug) 5 | `OUT5` | `adapter::types::unidirectional::A2X` | Fifth outgoing A2X adapter |
-Output (Plug) 6 | `OUT6` | `adapter::types::unidirectional::A2X` | Sixth outgoing A2X adapter |
+| Output (Plug) 4 | `OUT4` | `adapter::types::unidirectional::A2X` | Fourth outgoing A2X adapter |
+| Output (Plug) 5 | `OUT5` | `adapter::types::unidirectional::A2X` | Fifth outgoing A2X adapter |
+| Output (Plug) 6 | `OUT6` | `adapter::types::unidirectional::A2X` | Sixth outgoing A2X adapter |
 
 ## Functionality
 

@@ -1,6 +1,6 @@
 # Exercise_003_AX: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2 - Flat with Adapter
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003_AX`. In this exercise, two independent signal paths are implemented, where each digital input directly controls an associated digital output.
 ----
 ## Objective of the Exercise

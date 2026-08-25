@@ -65,11 +65,11 @@ The AX_FB_TOF block functions as a turn-off delay timer:
 
 ## ⚖️ Comparison with similar function blocks
 
-Compared to event-based timers such as [AX_TOF](../../events/unidirectional/BOOL/timers/AX_TOF.md)], this function block follows classic PLC behavior according to IEC 61131-3 and additionally offers the ET status output.
+Compared to event-based timers such as [AX_TOF](../../events/unidirectional/BOOL/timers/AX_TOF.md), this function block follows classic PLC behavior according to IEC 61131-3 and additionally offers the ET status output.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020e2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)]
+* [Exercise_020e2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
 
 ## Conclusion
 

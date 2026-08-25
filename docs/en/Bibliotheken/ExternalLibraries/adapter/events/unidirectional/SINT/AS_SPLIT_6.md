@@ -29,12 +29,12 @@ The function block **AS_SPLIT_6** is used to split a single incoming AS adapter 
 | Direction | Name | Type |
 |----------|------|-----|
 | SOCKET | IN | unidirectional::AS (generic) |
-PLUG | OUT1 | unidirectional::AS (generic) |
-PLUG | OUT2 | unidirectional::AS (generic) |
-PLUG | OUT3 | unidirectional::AS (generic) |
-PLUG | OUT4 | unidirectional::AS (generic) |
-PLUG | OUT5 | unidirectional::AS (generic) |
-PLUG | OUT6 | unidirectional::AS (generic) |
+| PLUG | OUT1 | unidirectional::AS (generic) |
+| PLUG | OUT2 | unidirectional::AS (generic) |
+| PLUG | OUT3 | unidirectional::AS (generic) |
+| PLUG | OUT4 | unidirectional::AS (generic) |
+| PLUG | OUT5 | unidirectional::AS (generic) |
+| PLUG | OUT6 | unidirectional::AS (generic) |
 
 ## Functionality
 

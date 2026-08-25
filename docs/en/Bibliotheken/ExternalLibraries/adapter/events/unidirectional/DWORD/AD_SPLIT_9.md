@@ -29,15 +29,15 @@ No data outputs available.
 | Name | Type | Direction |
 |------|-----|----------|
 | IN | adapter::types::unidirectional::AD | Socket (Input) |
-OUT1 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT2 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT3 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT4 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT5 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT6 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT7 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT8 | adapter::types::unidirectional::AD | Plug (Output) |
-OUT9 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT1 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT2 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT3 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT4 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT5 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT6 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT7 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT8 | adapter::types::unidirectional::AD | Plug (Output) |
+| OUT9 | adapter::types::unidirectional::AD | Plug (Output) |
 
 ## Functionality
 

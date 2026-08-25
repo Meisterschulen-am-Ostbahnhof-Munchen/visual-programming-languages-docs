@@ -93,9 +93,9 @@ Typical applications for this function block include:
 | Function Block | Feature |
 |------------------------|------------------------------------------------------|
 | **ALI_D_FF** (without hysteresis) | Simple D flip-flop without noise suppression |
-**ALI_D_FF_HYS** (this one) | D flip-flop with configurable hysteresis for noise filtering |
-Schmitt trigger function block | Similar function, but often with fixed thresholds |
-**E_D_FF_ANY_HYS** | Internal logic, generic type (no adapter format) |
+| **ALI_D_FF_HYS** (this one) | D flip-flop with configurable hysteresis for noise filtering |
+| Schmitt trigger function block | Similar function, but often with fixed thresholds |
+| **E_D_FF_ANY_HYS** | Internal logic, generic type (no adapter format) |
 
 The advantage of **ALI_D_FF_HYS** lies in its direct adapter connection, enabling seamless integration into existing IEC 61499 adapter networks.
 

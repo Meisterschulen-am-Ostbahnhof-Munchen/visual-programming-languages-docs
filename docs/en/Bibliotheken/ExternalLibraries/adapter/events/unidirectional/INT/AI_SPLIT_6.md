@@ -32,7 +32,7 @@ No data outputs available.
 | Output (Plug) | OUT3 | `adapter::types::unidirectional::AI` | Third Output |
 | Output (Plug) | OUT4 | `adapter::types::unidirectional::AI` | Fourth Output |
 | Output (Plug) | OUT5 | `adapter::types::unidirectional::AI` | Fifth Output |
-Output (Plug) | OUT6 | `adapter::types::unidirectional::AI` | Sixth Output |
+| Output (Plug) | OUT6 | `adapter::types::unidirectional::AI` | Sixth Output |
 
 ## Functionality
 

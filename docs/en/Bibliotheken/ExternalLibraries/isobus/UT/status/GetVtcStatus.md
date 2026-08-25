@@ -69,14 +69,14 @@ If `QI` is FALSE during the REQ call, the service is not executed and a correspo
 | 2 | VT_HND | CF handle of the VT |
 | 3 | CF_SOURCE_ADDRESS | Source address of the VT client |
 | 4 | CF_HND | CF handle of the VT client |
-6 | ID_VISIBLE_DATA_MASK | Data mask open on the VT |
-7 | ID_VISIBLE_SOFTKEY_MASK | Softkey mask open on the VT |
-8 | VT_BUSY_CODE | Busy code of the VT status message |
-9 | AUXUNITS_TYPE1_ONBUS | TRUE if a Type 1 auxiliary device is on the bus |
-11 | VT_ALIVE | VT unreachable for more than 3 seconds |
-12 | VT_DOWNLOAD_FINISHED | Full announcement completed |
-13 | VT_POOL_ACTIVE_onVT | Pool (selected) active on the VT |
-14 | VT_STATEOFANNOUNCING | Announcing status |
+| 6 | ID_VISIBLE_DATA_MASK | Data mask open on the VT |
+| 7 | ID_VISIBLE_SOFTKEY_MASK | Softkey mask open on the VT |
+| 8 | VT_BUSY_CODE | Busy code of the VT status message |
+| 9 | AUXUNITS_TYPE1_ONBUS | TRUE if a Type 1 auxiliary device is on the bus |
+| 11 | VT_ALIVE | VT unreachable for more than 3 seconds |
+| 12 | VT_DOWNLOAD_FINISHED | Full announcement completed |
+| 13 | VT_POOL_ACTIVE_onVT | Pool (selected) active on the VT |
+| 14 | VT_STATEOFANNOUNCING | Announcing status |
 | 15 | WS_VERSION_NR | Working Set version number |
 | 16 | VT_NUMBOFVERSIONSTRINGS | Number of VT version strings sent |
 | 17 | VT_NAVSOFTKEYS | Navigation softkeys (version 4) |

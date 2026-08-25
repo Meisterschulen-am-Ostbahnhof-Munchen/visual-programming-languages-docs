@@ -64,9 +64,9 @@ The AI_TO_ADI has no internal state machine (ECC). It behaves passively and imme
 
 | Function Block | Type Conversion | Interface | Use Case |
 |-----------------|------------------|-------------------------------------|------------------------------------|
-AI_TO_ADI | INT -> DINT | Adapter (Socket/Plug) | Bridge between adapter-based components |
-INT_TO_DINT | INT -> DINT | Direct inputs/outputs (e.g., DI1, DO1) | Simple data conversion without adapters |
-CONV_ANY_TO_ANY | Generic | Flexible inputs/outputs | Universal conversion (often more complex) |
+| AI_TO_ADI | INT -> DINT | Adapter (Socket/Plug) | Bridge between adapter-based components |
+| INT_TO_DINT | INT -> DINT | Direct inputs/outputs (e.g., DI1, DO1) | Simple data conversion without adapters |
+| CONV_ANY_TO_ANY | Generic | Flexible inputs/outputs | Universal conversion (often more complex) |
 
 While function blocks like `INT_TO_DINT` offer direct data conversion with their own inputs and outputs, AI_TO_ADI seamlessly integrates the conversion into an adapter-based architecture, thus facilitating the reuse of existing adapter definitions.
 

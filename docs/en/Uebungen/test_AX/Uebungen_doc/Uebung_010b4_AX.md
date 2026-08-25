@@ -1,6 +1,6 @@
 # Exercise_010b4_AX: SoftKey_F1-8 on DigitalOutput_Q1-8
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010b4_AX`.
 ## 🎧 Podcast
 

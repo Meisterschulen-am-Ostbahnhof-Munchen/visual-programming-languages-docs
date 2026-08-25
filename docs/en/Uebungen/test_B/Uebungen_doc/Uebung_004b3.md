@@ -1,6 +1,6 @@
 # Exercise_004b3: Toggle Flip-Flop with IE / Split / Interlock
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004b3`. This exercise extends the two-channel system with mutual interlocking: Only one lamp can be illuminated at a time.
 ----
 ## Objective of the Exercise

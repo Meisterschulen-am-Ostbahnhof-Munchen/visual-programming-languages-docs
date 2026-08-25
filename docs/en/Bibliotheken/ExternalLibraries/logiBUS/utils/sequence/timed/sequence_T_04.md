@@ -72,9 +72,9 @@ The FB operates as a Basic Function Block (BFB) with a defined Execution Control
 | **xSTART** | Initial Idle State. | None | `START_S1` |
 | **sState_01** | First Active Step. | `DO_S1=1`, `STATE_NR=1` | `timeOut.TimeOut` (after DT_S1_S2) |
 | **sState_02** | Second Active Step. | `DO_S2=1`, `STATE_NR=2` | `timeOut.TimeOut` (after DT_S2_S3) |
-**sState_03** | Third active step. | `DO_S3=1`, `STATE_NR=3` | `timeOut.TimeOut` (after DT_S3_S4) |
-**sState_04** | Fourth active step. | `DO_S4=1`, `STATE_NR=4` | `timeOut.TimeOut` (after DT_S4_START) |
-**sState_00** | Idle state after sequence completion. | `STATE_NR=0` | `START_S1` (for new cycle) |
+| **sState_03** | Third active step. | `DO_S3=1`, `STATE_NR=3` | `timeOut.TimeOut` (after DT_S3_S4) |
+| **sState_04** | Fourth active step. | `DO_S4=1`, `STATE_NR=4` | `timeOut.TimeOut` (after DT_S4_START) |
+| **sState_00** | Idle state after sequence completion. | `STATE_NR=0` | `START_S1` (for new cycle) |
 | **sRESET** | Intermediate state for reset operation. | None | Always (`Condition=1`) |
 
 **Global transition condition**: From states sState_01 to sState_04, a `RESET`-Event always returns to the sRESET state.

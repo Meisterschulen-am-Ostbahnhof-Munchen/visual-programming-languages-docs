@@ -13,12 +13,12 @@ The sub-app uses the following function blocks:
 | Block Name | Type | Description |
 |----------------------|------------------------------------------|------------------------------------------------------------------------------|
 | DigitalInput_I1 | `logiBUS::io::DI::logiBUS_IX` | Digital input for sensor I1 (e.g., "Up" button). |
-DigitalInput_I2 | `logiBUS::io::DI::logiBUS_IX` | Digital input for sensor I2 (e.g., "Down" button). |
-ILOCK | `logiBUS::signalprocessing::interlock::ILOCK_BLOCK` | Interlock block: locks the two directions against each other. |
-Choking | `logiBUS::io::DQ::logiBUS_QX` | Digital output for clockwise rotation (Q5). |
-Counterclockwise | `logiBUS::io::DQ::logiBUS_QX` | Digital output for counterclockwise rotation (Q6). |
-LowSide_Driver | `logiBUS::io::DQ::logiBUS_QX` | Digital output for the low-side driver (Q56). |
-OR_2_BOOL | `iec61131::bitwiseOperators::OR_2_BOOL` | Logical OR: activates the low-side driver for clockwise or counterclockwise rotation. |
+| DigitalInput_I2 | `logiBUS::io::DI::logiBUS_IX` | Digital input for sensor I2 (e.g., "Down" button). |
+| ILOCK | `logiBUS::signalprocessing::interlock::ILOCK_BLOCK` | Interlock block: locks the two directions against each other. |
+| Choking | `logiBUS::io::DQ::logiBUS_QX` | Digital output for clockwise rotation (Q5). |
+| Counterclockwise | `logiBUS::io::DQ::logiBUS_QX` | Digital output for counterclockwise rotation (Q6). |
+| LowSide_Driver | `logiBUS::io::DQ::logiBUS_QX` | Digital output for the low-side driver (Q56). |
+| OR_2_BOOL | `iec61131::bitwiseOperators::OR_2_BOOL` | Logical OR: activates the low-side driver for clockwise or counterclockwise rotation. |
 
 ### Instance Parameters
 

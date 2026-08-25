@@ -69,7 +69,7 @@ Since it is a combinational logic block without memory, the AX_XOR_5 has no inte
 
 Compared to standard XOR blocks with fewer inputs, the AX_XOR_5 offers the ability to process up to five signals simultaneously. While simple XOR blocks typically have only two inputs, this function block enables more complex logical operations without additional nesting.
 
-Comparison with [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)]
+Comparison with [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)
 
 ## Change Detection
 

@@ -79,7 +79,7 @@ The function block has no internal state machine. It operates event-driven and i
 | Function Block | Function | Difference |
 |----------|----------|-------------|
 | **BYTE_TO_DWORD** | Converts a single 4-byte array into a DWORD. | Requires separate calls for each 4-byte segment. |
-**ARR08B_TO_DWORDS** | Converts an 8-byte array into two DWORDs at once. | Integrated splitting in a single step reduces the number of calls and code. |
+| **ARR08B_TO_DWORDS** | Converts an 8-byte array into two DWORDs at once. | Integrated splitting in a single step reduces the number of calls and code. |
 
 This function block thus offers a more compact solution than combining several basic conversion blocks.
 

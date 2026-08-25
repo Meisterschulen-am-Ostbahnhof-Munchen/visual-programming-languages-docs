@@ -13,14 +13,14 @@ The function block **ILOCK_SWITCH** serves as a priority-controlled switch with 
 | Event | with Data | Description |
 |----------|------------|--------------|
 | **EI_UP** | DI_UP | Event for requesting the up/forward direction. |
-**EI_DOWN** | DI_DOWN | Event for requesting the down/backward direction. |
+| **EI_DOWN** | DI_DOWN | Event for requesting the down/backward direction. |
 
 ### **Event Outputs**
 
 | Event | with data | Description |
 |----------|-----------|--------------|
-**EO_UP** | DO_UP | Triggered when the up direction is activated or when exiting the UP state. |
-**EO_DOWN** | DO_DOWN | Triggered when the down direction is activated or when exiting the DOWN state. |
+| **EO_UP** | DO_UP | Triggered when the up direction is activated or when exiting the UP state. |
+| **EO_DOWN** | DO_DOWN | Triggered when the down direction is activated or when exiting the DOWN state. |
 
 ### **Data Inputs**
 

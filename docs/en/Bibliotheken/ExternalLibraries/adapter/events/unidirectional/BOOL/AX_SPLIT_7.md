@@ -67,7 +67,7 @@ The function block has a simple state: In the active state, it immediately forwa
 
 Compared to simpler splitter components, AX_SPLIT_7 offers a fixed number of seven outputs, which is optimized for specific use cases with exactly seven receivers. Compared to variable splitters, this component has the advantage of fixed interfaces.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Change Detection
 

@@ -71,7 +71,7 @@ The function block can go through the following basic states:
 | **INIT_PENDING** | Initialization is being performed; upon completion, `INITO` is sent. |
 | **READY** | Ready for `REQ` after successful initialization. |
 | **REQ_PENDING** | Pool reloading is in progress; Upon completion, `CNF` is sent. |
-**ERROR** | If initialization or reloading fails, an error status is reported, and the function block remains in the error state until it is re-initialized. |
+| **ERROR** | If initialization or reloading fails, an error status is reported, and the function block remains in the error state until it is re-initialized. |
 
 ## Application Scenarios
 
@@ -83,9 +83,9 @@ The function block can go through the following basic states:
 
 | Function Block | Description |
 |----------|--------------|
-PoolLoader` | Loads the pool only at system startup; no reloading at runtime. |
-PoolActivate` | Switches between already loaded pools, but requires prior loading. |
-PoolReload` | Combines loading and updating in one step and enables dynamic reloading during runtime. |
+| PoolLoader` | Loads the pool only at system startup; no reloading at runtime. |
+| PoolActivate` | Switches between already loaded pools, but requires prior loading. |
+| PoolReload` | Combines loading and updating in one step and enables dynamic reloading during runtime. |
 
 ## Conclusion
 

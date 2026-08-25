@@ -1,6 +1,6 @@
 # Exercise_090a1_AX: Example for AX_MUX_2
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_090a1_AX`.
 ----
 ## Objective of the exercise

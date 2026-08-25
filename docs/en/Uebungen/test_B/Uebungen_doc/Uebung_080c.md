@@ -1,6 +1,6 @@
 # Exercise_080c: Example for E_CTU with Terminal Output
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_080c`. Here, the opposite of the previous exercise is demonstrated: reducing the number of events by half.
 ----
 ## Objective of the Exercise

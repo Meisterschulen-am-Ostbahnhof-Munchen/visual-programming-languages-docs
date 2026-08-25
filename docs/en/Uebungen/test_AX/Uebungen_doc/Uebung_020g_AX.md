@@ -1,6 +1,6 @@
 # Exercise_020g_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_TONOF; On/Off Delay
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_020g_AX`. Here, the combined delay block `AX_TONOF` is used.
 ----
 ## Objective of the Exercise

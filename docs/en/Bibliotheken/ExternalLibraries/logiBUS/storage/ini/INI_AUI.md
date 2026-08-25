@@ -25,16 +25,16 @@ The function block `INI_AUI` is used to read and store **UINT data** (more preci
 | Name | Type | Short Description |
 |----------------|--------|---------------------------------------------------------------|
 | QI | BOOL | Qualifier for the event input (enables processing) |
-SECTION | STRING | Name of the section in `settings.ini` (e.g., `[MySection]`) |
-KEY | STRING | Key name within the section |
-DEFAULT_VALUE | UDINT | Value returned if no entry exists |
+| SECTION | STRING | Name of the section in `settings.ini` (e.g., `[MySection]`) |
+| KEY | STRING | Key name within the section |
+| DEFAULT_VALUE | UDINT | Value returned if no entry exists |
 
 ### **Data Outputs**
 
 | Name | Type | Short Description |
 |--------|--------|--------------------------------------------------------------|
-QO | BOOL | Qualifier for the event output (indicates successful execution) |
-STATUS | STRING | Status message (e.g., Error or Success) |
+| QO | BOOL | Qualifier for the event output (indicates successful execution) |
+| STATUS | STRING | Status message (e.g., Error or Success) |
 
 ### **Adapters**
 

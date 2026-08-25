@@ -1,6 +1,6 @@
 # Exercise_055: DigitalInput_I1 to DigitalOutput_Q1
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_055`. It introduces a key logiBUS concept for transmitting extended status information: the "Quarter" (2-bit information).
 ----
 ## Objective of the Exercise

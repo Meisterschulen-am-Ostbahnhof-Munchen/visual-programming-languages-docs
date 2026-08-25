@@ -47,7 +47,7 @@ The AX_SR function block operates as a set-reset flip-flop with the following pr
 As with all event-driven bistable elements in IEC 61499 (see also Note 8 in Table A.1 of DIN EN 61499-1), there is no inherent "dominance" of one input, as is known from IEC 61131-3.
 
 - **Comparison to IEC 61131-3**: See [SR (Bistable, set with priority)](../../../../../Vergleich/IEC61131_3/SR_ALT.md). While in the classic PLC world, if S1 and R are TRUE simultaneously, the set takes precedence, in IEC 61499, each event is processed sequentially. The final state depends on which event was processed last in the execution chain (ECC).
-- **Functional Identity**: `AX_SR` is functionally identical to [AX_RS](AX_RS.md)]. The different naming and pin arrangement are solely for the convenience of developers familiar with IEC 61131-3.
+- **Functional Identity**: `AX_SR` is functionally identical to [AX_RS](AX_RS.md). The different naming and pin arrangement are solely for the convenience of developers familiar with IEC 61131-3.
 - **Adapter Communication**: The device makes its status available via the adapter `Q`.
 
 ## State Overview
@@ -83,14 +83,14 @@ Compared to other memory elements, AX_SR offers:
 - Event-driven state changes
 - Simple and robust state management
 
-Comparison with [E_SR](../../../../../StandardLibraries/events/E_SR.md)]
+Comparison with [E_SR](../../../../../StandardLibraries/events/E_SR.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)]
-* [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)]
-* [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)]
-* [Exercise_006_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006_AX.md)]
+* [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+* [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+* [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+* [Exercise_006_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006_AX.md)
 * [Exercise_006d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006d_AX.md)
 * [Exercise_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
 * [Exercise_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)

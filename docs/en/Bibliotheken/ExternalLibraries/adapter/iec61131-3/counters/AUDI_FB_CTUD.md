@@ -33,13 +33,13 @@ There are no direct data outputs at the top level. The result data is output via
 | Direction | Name | Type | Comment |
 |----------|------|-----|-----------|
 | **Socket (Input)** | `CU` | `adapter::types::unidirectional::AX` | Count up – Event and data (BOOL) for counting up |
-**Socket (Input)** | `CD` | `adapter::types::unidirectional::AX` | Count down – Event and data (BOOL) for counting down |
-**Socket (Input)** | `R` | `adapter::types::unidirectional::AX` | Reset – Event and data (BOOL) for resetting the counter |
-**Socket (Input)** | `LD` | `adapter::types::unidirectional::AX` | Load – Event and data (BOOL) for loading the preset value |
-**Socket (Input)** | `PV` | `adapter::types::unidirectional::AUDI` | Preset value – Event and data (UDINT) for the default value |
-**Plug (Output)** | `QU` | `adapter::types::unidirectional::AX` | Output Up – Event and data (BOOL), active when the current count reaches 0 |
-**Plug (Output)** | `QD` | `adapter::types::unidirectional::AX` | Output Down – Event and data (BOOL), active when the current count reaches >= PV |
-**Plug (Output)** | `CV` | `adapter::types::unidirectional::AUDI` | Count value – Event and data (UDINT) with the current count value |
+| **Socket (Input)** | `CD` | `adapter::types::unidirectional::AX` | Count down – Event and data (BOOL) for counting down |
+| **Socket (Input)** | `R` | `adapter::types::unidirectional::AX` | Reset – Event and data (BOOL) for resetting the counter |
+| **Socket (Input)** | `LD` | `adapter::types::unidirectional::AX` | Load – Event and data (BOOL) for loading the preset value |
+| **Socket (Input)** | `PV` | `adapter::types::unidirectional::AUDI` | Preset value – Event and data (UDINT) for the default value |
+| **Plug (Output)** | `QU` | `adapter::types::unidirectional::AX` | Output Up – Event and data (BOOL), active when the current count reaches 0 |
+| **Plug (Output)** | `QD` | `adapter::types::unidirectional::AX` | Output Down – Event and data (BOOL), active when the current count reaches >= PV |
+| **Plug (Output)** | `CV` | `adapter::types::unidirectional::AUDI` | Count value – Event and data (UDINT) with the current count value |
 
 ## Functionality
 
@@ -83,7 +83,7 @@ The internal `FB_CTUD_UDINT` cycles through the following states, depending on t
 | **Data format** | UDINT (via AUDI adapter) | UDINT (direct) |
 | **Event behavior** | Every incoming event triggers all outputs | Event is only output when relevant changes occur |
 | **Flexibility** | Higher through adapter-based cabling | Lower, but simpler in classic PLC environments |
-**Recommended filter** | Additional `AX_D_FF` for edge-triggered output | No filter needed, as it is edge-sensitive |
+| **Recommended filter** | Additional `AX_D_FF` for edge-triggered output | No filter needed, as it is edge-sensitive |
 
 ## Conclusion
 

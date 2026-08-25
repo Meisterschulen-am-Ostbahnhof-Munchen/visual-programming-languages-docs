@@ -68,4 +68,4 @@ Uebung_039_sub_Outputs_AX` is the AX-optimized version of the output control. Th
 
 ## 🛠️ Related Exercises
 
-* [Exercise_039_AX](Uebung_039_AX.md)]
+* [Exercise_039_AX](Uebung_039_AX.md)

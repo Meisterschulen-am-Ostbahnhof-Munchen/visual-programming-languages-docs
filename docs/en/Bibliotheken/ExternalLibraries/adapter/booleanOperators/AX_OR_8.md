@@ -74,7 +74,7 @@ The function block is stateless and performs the OR operation immediately upon a
 
 Compared to simple OR function blocks with fewer inputs, AX_OR_8 offers the ability to directly link up to eight signals without additional chaining of multiple function blocks. The use of adapters instead of direct data connections enables more flexible integration into various system architectures.
 
-Comparison with [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)]
+Comparison with [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)
 
 ## Change Detection
 

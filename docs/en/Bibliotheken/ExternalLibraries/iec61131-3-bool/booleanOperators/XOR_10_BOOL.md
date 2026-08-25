@@ -59,7 +59,7 @@ The function block does not have an internal state in the sense of a memory. Its
 *
 ## ⚖️ Comparison with Similar Blocks
 
-* **Standard XOR Blocks (e.g., 2-Input XOR):** This block extends the classic 2-input XOR function to up to ten inputs in a single block, improving clarity when dealing with many signals. See: [XOR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_10.md)]
+* **Standard XOR Blocks (e.g., 2-Input XOR):** This block extends the classic 2-input XOR function to up to ten inputs in a single block, improving clarity when dealing with many signals. See: [XOR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_10.md)
 * **Blocks with Variable Input Count:** Some libraries offer XOR blocks to which inputs can be dynamically added. `XOR_10_BOOL` has a fixed, explicitly declared interface, which can simplify code analysis.
 * **Combinatorial Logic in SFC/ST:** The same functionality could also be implemented in Structured Text (ST) using an expression like `OUT := IN1 XOR IN2 XOR ... XOR IN10;`. The advantage of the FB lies in its clear encapsulation and event-driven interface, which integrates better into FB networks.
 

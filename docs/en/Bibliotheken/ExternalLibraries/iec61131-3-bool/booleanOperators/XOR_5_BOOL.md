@@ -58,7 +58,7 @@ The block has no internal state (memory-free). Its output depends solely on the 
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **Standard XOR (2 Inputs):** Library blocks often only offer the XOR operation for two operands. For five operands, several of these blocks would have to be chained together (e.g., `((IN1 XOR IN2) XOR (IN3 XOR IN4)) XOR IN5`). `XOR_5_BOOL` summarizes this logic in a single, concise block. See: [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)]
+* **Standard XOR (2 Inputs):** Library blocks often only offer the XOR operation for two operands. For five operands, several of these blocks would have to be chained together (e.g., `((IN1 XOR IN2) XOR (IN3 XOR IN4)) XOR IN5`). `XOR_5_BOOL` summarizes this logic in a single, concise block. See: [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)
 * **OR / AND Blocks:** While OR (`OR`) returns `TRUE` with at least one `TRUE` input, and AND (`AND`) only with all `TRUE` inputs, XOR specifically responds to an odd number of `TRUE` values.
 * **Generic XOR Blocks:** Generic blocks could exist that handle a variable number of inputs via arrays or repeated inputs. `XOR_5_BOOL` is a fixed, specific instance for exactly five inputs.
 

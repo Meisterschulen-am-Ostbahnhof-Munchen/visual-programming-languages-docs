@@ -79,8 +79,8 @@ The function block does not have its own explicit state chain (Execution Control
 
 | Trigger Event | State Selector (`G.D1`) | Resulting Behavior | Output Event |
 | :--- | :--- | :--- | :--- |
-Event on `G.E1`, `IN0.E1`, or `IN1.E1` | `FALSE` | Value of `IN0.D1` is copied to `OUT.D1` | `OUT.E1` |
-Event on `G.E1`, `IN0.E1`, or `IN1.E1` | `TRUE` | Value of `IN1.D1` is copied to `OUT.D1` | `OUT.E1` |
+| Event on `G.E1`, `IN0.E1`, or `IN1.E1` | `FALSE` | Value of `IN0.D1` is copied to `OUT.D1` | `OUT.E1` |
+| Event on `G.E1`, `IN0.E1`, or `IN1.E1` | `TRUE` | Value of `IN1.D1` is copied to `OUT.D1` | `OUT.E1` |
 
 `| ] | ... ## Application Scenarios
 

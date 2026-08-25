@@ -40,10 +40,10 @@ No direct data outputs. State output is provided via the adapters:
 | Direction | Name | Type | Description |
 |----------|------|-----|--------------|
 | Socket | `UP_IN` | `adapter::types::unidirectional::AX` | Input for the "Up/Forward" request. Contains event `E1` and Boolean data `D1`. |
-Socket | `DOWN_IN` | `adapter::types::unidirectional::AX` | Input for the "Down/Backward" request. |
-Plug | `UP_OUT` | `adapter::types::unidirectional::AX` | Output for the Up direction. |
-Plug | `DOWN_OUT` | `adapter::types::unidirectional::AX` | Output for the Down direction. |
-Plug | `timeOut` | `iec61499::events::ATimeOut` | Timer adapter for implementing dead time. Controls the event `TimeOut` after `DT_PROTECT` has elapsed. |
+| Socket | `DOWN_IN` | `adapter::types::unidirectional::AX` | Input for the "Down/Backward" request. |
+| Plug | `UP_OUT` | `adapter::types::unidirectional::AX` | Output for the Up direction. |
+| Plug | `DOWN_OUT` | `adapter::types::unidirectional::AX` | Output for the Down direction. |
+| Plug | `timeOut` | `iec61499::events::ATimeOut` | Timer adapter for implementing dead time. Controls the event `TimeOut` after `DT_PROTECT` has elapsed. |
 
 ## Functionality
 

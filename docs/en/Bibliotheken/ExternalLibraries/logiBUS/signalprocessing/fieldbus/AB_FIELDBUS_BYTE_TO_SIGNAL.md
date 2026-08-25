@@ -76,7 +76,7 @@ The component does not have an explicit state machine at the top level; the stat
 |---------|---------------|
 | **Idle** | Waiting for an event at `IN.E1`. |
 | **Processing** | Internal `FIELDBUS_BYTE_TO_SIGNAL` processes the byte; `OUT` and `VALID` are updated. |
-**Valid stable** | After the flip-flop has been clocked, `VALID.D1` remains stable until the next event. |
+| **Valid stable** | After the flip-flop has been clocked, `VALID.D1` remains stable until the next event. |
 
 The state is cycled through in each cycle.
 

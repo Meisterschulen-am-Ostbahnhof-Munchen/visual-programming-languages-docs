@@ -1,6 +1,6 @@
 # Exercise_004a3: same as Exercise_004a2 but without E_MERGE
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_004a3`. This exercise demonstrates a simplification compared to `Uebung_004a2`: In IEC 61499, multiple event sources can often be directly connected to the same event input.
 ----
 ## Objective of the Exercise

@@ -64,7 +64,7 @@ The block does not have an internal state in the sense of a memory. Its behavior
 
 ## ⚖️ Comparison with Similar Function Blocks
 
-* **`AND` (2 inputs):** The standard AND block with only two inputs. `AND_9_BOOL` is a special, extended version for exactly nine inputs. See: [AND_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_9.md)]
+* **`AND` (2 inputs):** The standard AND block with only two inputs. `AND_9_BOOL` is a special, extended version for exactly nine inputs. See: [AND_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_9.md)
 * **`GEN_AND`:** The underlying generic function block that can be instantiated with a configurable number of inputs. `AND_9_BOOL` is a predefined instance of it.
 * **`OR_*` / `XOR_*` function blocks:** Perform other basic logic operations (OR, exclusive OR) with a fixed number of inputs.
 

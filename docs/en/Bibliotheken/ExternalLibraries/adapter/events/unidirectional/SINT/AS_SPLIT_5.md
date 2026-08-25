@@ -28,12 +28,12 @@ No data outputs defined.
 
 | Role | Name | Type | Description |
 |-------|------|-----|--------------|
-Socket | IN | adapter::types::unidirectional::AS | Input adapter that receives the AS signal to be distributed. |
-Plug | OUT1 | adapter::types::unidirectional::AS | First output adapter for the distributed signal. |
-Plug | OUT2 | adapter::types::unidirectional::AS | Second output adapter. |
-Plug | OUT3 | adapter::types::unidirectional::AS | Third output adapter. |
-Plug | OUT4 | adapter::types::unidirectional::AS | Fourth output adapter. |
-Plug | OUT5 | adapter::types::unidirectional::AS | Fifth output adapter. |
+| Socket | IN | adapter::types::unidirectional::AS | Input adapter that receives the AS signal to be distributed. |
+| Plug | OUT1 | adapter::types::unidirectional::AS | First output adapter for the distributed signal. |
+| Plug | OUT2 | adapter::types::unidirectional::AS | Second output adapter. |
+| Plug | OUT3 | adapter::types::unidirectional::AS | Third output adapter. |
+| Plug | OUT4 | adapter::types::unidirectional::AS | Fourth output adapter. |
+| Plug | OUT5 | adapter::types::unidirectional::AS | Fifth output adapter. |
 
 ## Functionality
 

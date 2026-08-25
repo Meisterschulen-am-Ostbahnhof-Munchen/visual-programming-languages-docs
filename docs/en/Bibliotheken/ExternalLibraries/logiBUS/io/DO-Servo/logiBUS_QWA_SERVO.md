@@ -77,9 +77,9 @@ The function block (FB) does not have an explicitly modeled state machine; howev
 | **Idle** | – | Waiting for `INIT` |
 | **Initialize**| Received `INIT` | Internal FB is started |
 | **Ready** | `INITO` sent | Ready for requests via the adapter |
-**Busy** | `OUT.E1` received | Action is being executed (`REQ` is running) |
-**Done** | `CNF` sent | Action completed, returning to **Ready** |
-**Error** | Error during initialization or action | `STATUS` contains error description; reinitialization may be necessary |
+| **Busy** | `OUT.E1` received | Action is being executed (`REQ` is running) |
+| **Done** | `CNF` sent | Action completed, returning to **Ready** |
+| **Error** | Error during initialization or action | `STATUS` contains error description; reinitialization may be necessary |
 
 ## Application Scenarios
 

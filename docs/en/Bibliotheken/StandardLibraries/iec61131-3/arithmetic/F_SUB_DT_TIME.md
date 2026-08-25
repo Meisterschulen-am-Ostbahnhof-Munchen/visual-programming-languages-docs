@@ -68,8 +68,8 @@ The **F_SUB_DT_TIME** function block is a standards-compliant function block for
 | Feature | F_SUB_DT_TIME | F_ADD_DT_TIME | F_SUB_DT_DT |
 |----------------|----------------|---------------|--------------|
 | Operation | Time - Interval | Time + Interval | Time - Time |
-Result | DATE_AND_TIME | DATE_AND_TIME | TIME |
-Accuracy | Microseconds | Microseconds | Microseconds |
+| Result | DATE_AND_TIME | DATE_AND_TIME | TIME |
+| Accuracy | Microseconds | Microseconds | Microseconds |
 
 ## Conclusion
 

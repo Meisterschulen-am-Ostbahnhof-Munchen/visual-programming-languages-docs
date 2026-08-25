@@ -1,6 +1,6 @@
 # Exercise_003d_AX: DigitalInput_I1/_I2 to DigitalOutput_Q1/_I2
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_003d_AX`. This exercise is structurally almost identical to `Uebung_003_AX` and serves to reinforce the understanding of parallel signal paths.
 ----
 ## Objective of the Exercise

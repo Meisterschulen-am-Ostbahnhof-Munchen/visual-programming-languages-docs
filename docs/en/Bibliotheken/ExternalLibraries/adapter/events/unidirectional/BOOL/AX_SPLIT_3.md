@@ -63,13 +63,13 @@ The function block has a simple state: In the operating state, it forwards incom
 
 Compared to other distribution function blocks, AX_SPLIT_3 stands out due to its specific focus on AX adapters. While general distribution function blocks can support various adapter types, this function block is specifically optimized for AX adapters.
 
-Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
+Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a5b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)]
-* [Exercise_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)]
-* [Exercise_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)]
+* [Exercise_002a5b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+* [Exercise_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+* [Exercise_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
 
 ## Change Detection
 

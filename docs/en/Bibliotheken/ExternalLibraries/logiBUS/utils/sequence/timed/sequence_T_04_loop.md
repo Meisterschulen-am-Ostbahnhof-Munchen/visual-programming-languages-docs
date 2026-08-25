@@ -85,7 +85,7 @@ An event `RESET` from any state leads to state `sRESET`. There, all outputs (`DO
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)]
+* [Exercise_035a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
 
 ## Conclusion
 

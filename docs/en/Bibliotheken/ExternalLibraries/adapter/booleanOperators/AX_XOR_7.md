@@ -67,7 +67,7 @@ The function block has no internal state and operates stateless. The output is c
 
 Compared to standard XOR blocks with fewer inputs, AX_XOR_7 offers the ability to perform XOR operations with up to seven inputs. While simple XOR blocks typically process only two inputs, this function block enables more complex logic operations within a single block.
 
-Comparison with [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)]
+Comparison with [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
 
 ## Change Detection
 

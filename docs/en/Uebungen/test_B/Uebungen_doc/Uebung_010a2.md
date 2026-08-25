@@ -1,6 +1,6 @@
 # Exercise_010a2: Button_A1 on DigitalOutput_Q1
 
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+[![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_010a2`. In addition to the softkeys on the side, ISOBUS also has "buttons" located directly within the workspace.
 ----
 ## Objective of the Exercise

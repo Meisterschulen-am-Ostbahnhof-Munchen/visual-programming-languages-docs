@@ -71,8 +71,8 @@ Since this is a composite block without its own ECC (Execution Control Chart), t
 | Block | Input Type | Output Type | Function |
 |----------|------------|------------|-----------|
 | **AUI_TO_AX** | AUI (UINT) | AX (BOOL) | Inequality with Zero |
-*AUI_TO_AX_INV* (hypothetical) | AUI (UINT) | AX (BOOL) | Equality with Zero (inverted) |
-*CONV_UINT_TO_BOOL* (direct) | UINT (Data) | BOOL (Data) | Direct data converter, no adapter |
+| *AUI_TO_AX_INV* (hypothetical) | AUI (UINT) | AX (BOOL) | Equality with Zero (inverted) |
+| *CONV_UINT_TO_BOOL* (direct) | UINT (Data) | BOOL (Data) | Direct data converter, no adapter |
 
 This function block stands out from simple data converters due to its full adapter compliance and integrated event handling.
 

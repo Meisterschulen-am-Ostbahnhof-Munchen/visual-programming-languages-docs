@@ -10,7 +10,7 @@
 carrying the remaining time (`PT - ET`) as a REAL seconds value. Several applications need not
 just "has the timer elapsed" (`Q`) or "how much time has passed" (`ET`), but "how much time is
 left" for a countdown display — computing that from `PT`/`ET` externally means repeating the same
-four-block chain (`ATM_SUB` → `ATM_IN_S_TO_ALR` → `ALR_TO_AR`) at every call site. This block
+adapter chain (`ATM_SUB` → `ATM_IN_S_TO_ALR` → `ALR_TO_AR`) at every call site. This block
 does it once, internally, so the caller gets `REST` as a single ready-to-publish adapter plug.
 
 ## Interface Structure
@@ -85,9 +85,7 @@ around applies to any adapter type, not just `AX`/`ATM`/`AR`.
 ## State Overview
 
 Same four states as `AX_ATM_FB_TON`, with `REST` following `PT - ET` throughout:
-
-1. **Idle**: `IN` is FALSE, `Q` is FALSE, `ET` is 0, `REST` equals `PT`.
-2. **Timing**: `IN` is TRUE, `ET` climbs toward `PT`, `REST` counts down, `Q` stays FALSE.
+1. **Idle**: `IN` is FALSE, `Q` is FALSE, `ET` is 0, `REST` equals `PT` converted to seconds.
 3. **Triggered**: `ET` has reached `PT`, `REST` reaches 0, `Q` becomes TRUE.
 4. **Reset**: `IN` goes FALSE, `Q` becomes FALSE, `ET` becomes 0, `REST` returns to `PT`.
 

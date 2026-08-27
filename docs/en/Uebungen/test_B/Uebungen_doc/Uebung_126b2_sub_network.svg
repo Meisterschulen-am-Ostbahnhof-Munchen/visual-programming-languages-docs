@@ -2,9 +2,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="2268.0" height="570.0" viewBox="0 0 2268.0 570.0">
 <defs>
-</defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 <rect x="0" y="0" width="2268.0" height="570.0" fill="#ffffff" />
-<text x="1134.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_126b2_sub:  SINUS-Funktion Plotten auf PCAN Explorer</text>
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text x="1134.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_126b2_sub:  SINUS-Funktion Plotten auf PCAN Explorer</text>
 <path d="M1686.3953488372094,223.86046511627907 C1763.9767441860465,223.86046511627907,1867.418604651163,244.7906976744186,1945.0,244.7906976744186" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M1296.860465116279,244.7906976744186 C1365.7209302325582,244.7906976744186,1457.5348837209303,223.86046511627907,1526.3953488372094,223.86046511627907" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M2105.0,244.7906976744186 C2693.0,244.7906976744186,-443.0,208.0,145.0,208.0" stroke="#404040" stroke-width="1.5" fill="none" />
@@ -13,115 +65,327 @@
 <path d="M1686.3953488372094,304.8604651162791 C1763.9767441860465,304.8604651162791,1867.418604651163,325.7906976744186,1945.0,325.7906976744186" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M275.0,341.0 C320.0,341.0,351.16279069767444,283.93023255813955,396.16279069767444,283.93023255813955" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M606.1627906976744,283.93023255813955 C750.3720930232557,283.93023255813955,942.6511627906978,325.7906976744186,1086.860465116279,325.7906976744186" stroke="#404040" stroke-width="1.5" fill="none" />
-<rect x="1948.0" y="205.7906976744186" width="160" height="164" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1945.0,202.7906976744186 H2105.0 V268.7906976744186 H2099.0 V308.7906976744186 H2105.0 V366.7906976744186 H1945.0 V308.7906976744186 H1951.0 V268.7906976744186 H1945.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1945.0,232.7906976744186 L2105.0,232.7906976744186" stroke="#000000" stroke-width="1" />
-<text x="2025.0" y="286.7906976744186" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">CallbackFB</text>
-<text x="2025.0" y="300.7906976744186" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">CallbackFB</text>
-<text x="2025.0" y="312.7906976744186" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">DI1=(data := [16#FF, 16#FF, 16#FF, 16#FF, 16#FF, 16#FF, 16#FF, 16#FF])</text>
+<path d="M 1948.0 202.7906976744186
+            L 2102.0 202.7906976744186
+            A 3 3 0 0 1 2105.0 205.7906976744186
+            L 2105.0 265.7906976744186
+            A 3 3 0 0 1 2102.0 268.7906976744186
+            L 2099.0 268.7906976744186
+            L 2099.0 308.7906976744186
+            L 2102.0 308.7906976744186
+            A 3 3 0 0 1 2105.0 311.7906976744186
+            L 2105.0 363.7906976744186
+            A 3 3 0 0 1 2102.0 366.7906976744186
+            L 1948.0 366.7906976744186
+            A 3 3 0 0 1 1945.0 363.7906976744186
+            L 1945.0 311.7906976744186
+            A 3 3 0 0 1 1948.0 308.7906976744186
+            L 1951.0 308.7906976744186
+            L 1951.0 268.7906976744186
+            L 1948.0 268.7906976744186
+            A 3 3 0 0 1 1945.0 265.7906976744186
+            L 1945.0 205.7906976744186
+            A 3 3 0 0 1 1948.0 202.7906976744186
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1974.5 279.7906976744186
+            L 1990.5 279.7906976744186
+            A 1 1 0 0 1 1991.5 280.7906976744186
+            L 1991.5 284.2906976744186
+            L 1989.5 284.2906976744186
+            L 1989.5 287.2906976744186
+            L 1991.5 287.2906976744186
+            L 1991.5 296.7906976744186
+            A 1 1 0 0 1 1990.5 297.7906976744186
+            L 1974.5 297.7906976744186
+            A 1 1 0 0 1 1973.5 296.7906976744186
+            L 1973.5 287.2906976744186
+            L 1975.5 287.2906976744186
+            L 1975.5 284.2906976744186
+            L 1973.5 284.2906976744186
+            L 1973.5 280.7906976744186
+            A 1 1 0 0 1 1974.5 279.7906976744186
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1982.5" y="293.7906976744186" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1996.5" y="293.7906976744186" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">CallbackFB</text>
+<text x="2025.0" y="308.7906976744186" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">CallbackFB</text>
+<text x="2025.0" y="312.7906976744186" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">DI1=(data := [16#FF, 16#FF, 16#FF, 16#FF, 16#FF, 16#FF, 16#FF, 16#FF])</text>
 <path d="M1940.0,239.7906976744186 L1940.0,249.7906976744186 L1945.0,244.7906976744186 Z" fill="#63B31F" stroke="none" />
-<text x="1957.0" y="248.7906976744186" font-size="12" text-anchor="start" font-family="Consolas, monospace">CNF</text>
-<text x="1930.0" y="247.7906976744186" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1940.0,320.7906976744186 L1940.0,330.7906976744186 L1945.0,325.7906976744186 Z" fill="#000000" stroke="none" />
-<text x="1957.0" y="329.7906976744186" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI1</text>
-<text x="1930.0" y="328.7906976744186" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">CAN_MSG</text>
+<text x="1957.0" y="248.7906976744186" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="1930.0" y="247.7906976744186" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1940.0,320.7906976744186 L1940.0,330.7906976744186 L1945.0,325.7906976744186 Z" fill="#3366FF" stroke="none" />
+<text x="1957.0" y="329.7906976744186" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DI1</text>
+<text x="1930.0" y="328.7906976744186" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">CAN_MSG</text>
 <path d="M2110.0,239.7906976744186 L2110.0,249.7906976744186 L2105.0,244.7906976744186 Z" fill="#63B31F" stroke="none" />
-<text x="2093.0" y="248.7906976744186" font-size="12" text-anchor="end" font-family="Consolas, monospace">REQ</text>
-<text x="2120.0" y="247.7906976744186" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<rect x="2100.0" y="320.7906976744186" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="2093.0" y="329.7906976744186" font-size="12" text-anchor="end" font-family="Consolas, monospace">PLUG1</text>
-<text x="2120.0" y="328.7906976744186" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">Callback</text>
-<rect x="1529.3953488372094" y="184.86046511627907" width="160" height="176" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1526.3953488372094,181.86046511627907 H1686.3953488372094 V247.86046511627907 H1680.3953488372094 V287.8604651162791 H1686.3953488372094 V357.8604651162791 H1526.3953488372094 V287.8604651162791 H1532.3953488372094 V247.86046511627907 H1526.3953488372094 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1526.3953488372094,211.86046511627907 L1686.3953488372094,211.86046511627907" stroke="#000000" stroke-width="1" />
-<text x="1606.3953488372094" y="265.8604651162791" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">STRUCT_MUX</text>
-<text x="1606.3953488372094" y="279.8604651162791" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">STRUCT_MUX</text>
-<text x="1606.3953488372094" y="291.8604651162791" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u16DaSize=0</text>
-<text x="1606.3953488372094" y="303.8604651162791" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u8Priority=7</text>
+<text x="2093.0" y="248.7906976744186" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="2120.0" y="247.7906976744186" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M 2100.0 320.7906976744186
+            L 2102.5 320.7906976744186
+            L 2102.5 322.4573643410853
+            L 2105.0 322.4573643410853
+            L 2105.0 320.7906976744186
+            L 2110.0 320.7906976744186
+            L 2110.0 330.7906976744186
+            L 2105.0 330.7906976744186
+            L 2105.0 329.1240310077519
+            L 2102.5 329.1240310077519
+            L 2102.5 330.7906976744186
+            L 2100.0 330.7906976744186
+            Z" fill="#845DAF" stroke="none" />
+<text x="2093.0" y="329.7906976744186" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">PLUG1</text>
+<text x="2120.0" y="328.7906976744186" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Callback</text>
+<path d="M 1529.3953488372094 181.86046511627907
+            L 1683.3953488372094 181.86046511627907
+            A 3 3 0 0 1 1686.3953488372094 184.86046511627907
+            L 1686.3953488372094 244.86046511627907
+            A 3 3 0 0 1 1683.3953488372094 247.86046511627907
+            L 1680.3953488372094 247.86046511627907
+            L 1680.3953488372094 287.8604651162791
+            L 1683.3953488372094 287.8604651162791
+            A 3 3 0 0 1 1686.3953488372094 290.8604651162791
+            L 1686.3953488372094 354.8604651162791
+            A 3 3 0 0 1 1683.3953488372094 357.8604651162791
+            L 1529.3953488372094 357.8604651162791
+            A 3 3 0 0 1 1526.3953488372094 354.8604651162791
+            L 1526.3953488372094 290.8604651162791
+            A 3 3 0 0 1 1529.3953488372094 287.8604651162791
+            L 1532.3953488372094 287.8604651162791
+            L 1532.3953488372094 247.86046511627907
+            L 1529.3953488372094 247.86046511627907
+            A 3 3 0 0 1 1526.3953488372094 244.86046511627907
+            L 1526.3953488372094 184.86046511627907
+            A 3 3 0 0 1 1529.3953488372094 181.86046511627907
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1555.8953488372094 258.8604651162791
+            L 1571.8953488372094 258.8604651162791
+            A 1 1 0 0 1 1572.8953488372094 259.8604651162791
+            L 1572.8953488372094 263.3604651162791
+            L 1570.8953488372094 263.3604651162791
+            L 1570.8953488372094 266.3604651162791
+            L 1572.8953488372094 266.3604651162791
+            L 1572.8953488372094 275.8604651162791
+            A 1 1 0 0 1 1571.8953488372094 276.8604651162791
+            L 1555.8953488372094 276.8604651162791
+            A 1 1 0 0 1 1554.8953488372094 275.8604651162791
+            L 1554.8953488372094 266.3604651162791
+            L 1556.8953488372094 266.3604651162791
+            L 1556.8953488372094 263.3604651162791
+            L 1554.8953488372094 263.3604651162791
+            L 1554.8953488372094 259.8604651162791
+            A 1 1 0 0 1 1555.8953488372094 258.8604651162791
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1563.8953488372094" y="272.8604651162791" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1577.8953488372094" y="272.8604651162791" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">STRUCT_MUX</text>
+<text x="1606.3953488372094" y="287.8604651162791" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">STRUCT_MUX</text>
+<text x="1606.3953488372094" y="291.8604651162791" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16DaSize=0</text>
+<text x="1606.3953488372094" y="303.8604651162791" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u8Priority=7</text>
 <path d="M1521.3953488372094,218.86046511627907 L1521.3953488372094,228.86046511627907 L1526.3953488372094,223.86046511627907 Z" fill="#63B31F" stroke="none" />
-<text x="1538.3953488372094" y="227.86046511627907" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1511.3953488372094" y="226.86046511627907" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1538.3953488372094" y="227.86046511627907" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1511.3953488372094" y="226.86046511627907" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1691.3953488372094,218.86046511627907 L1691.3953488372094,228.86046511627907 L1686.3953488372094,223.86046511627907 Z" fill="#63B31F" stroke="none" />
-<text x="1674.3953488372094" y="227.86046511627907" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="1701.3953488372094" y="226.86046511627907" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1691.3953488372094,299.8604651162791 L1691.3953488372094,309.8604651162791 L1686.3953488372094,304.8604651162791 Z" fill="#000000" stroke="none" />
-<text x="1674.3953488372094" y="308.8604651162791" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="1701.3953488372094" y="307.8604651162791" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY_STRUCT</text>
-<rect x="1089.860465116279" y="205.7906976744186" width="210" height="164" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1086.860465116279,202.7906976744186 H1296.860465116279 V268.7906976744186 H1290.860465116279 V308.7906976744186 H1296.860465116279 V366.7906976744186 H1086.860465116279 V308.7906976744186 H1092.860465116279 V268.7906976744186 H1086.860465116279 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1086.860465116279,232.7906976744186 L1296.860465116279,232.7906976744186" stroke="#000000" stroke-width="1" />
-<text x="1191.860465116279" y="286.7906976744186" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">BYTES_TO_ARR08B</text>
-<text x="1191.860465116279" y="300.7906976744186" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">DWORDS_TO_ARR08B</text>
-<text x="1191.860465116279" y="312.7906976744186" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">IN_01=16#00</text>
+<text x="1674.3953488372094" y="227.86046511627907" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="1701.3953488372094" y="226.86046511627907" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1691.3953488372094,299.8604651162791 L1691.3953488372094,309.8604651162791 L1686.3953488372094,304.8604651162791 Z" fill="#3366FF" stroke="none" />
+<text x="1674.3953488372094" y="308.8604651162791" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="1701.3953488372094" y="307.8604651162791" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY_STRUCT</text>
+<path d="M 1089.860465116279 202.7906976744186
+            L 1293.860465116279 202.7906976744186
+            A 3 3 0 0 1 1296.860465116279 205.7906976744186
+            L 1296.860465116279 265.7906976744186
+            A 3 3 0 0 1 1293.860465116279 268.7906976744186
+            L 1290.860465116279 268.7906976744186
+            L 1290.860465116279 308.7906976744186
+            L 1293.860465116279 308.7906976744186
+            A 3 3 0 0 1 1296.860465116279 311.7906976744186
+            L 1296.860465116279 363.7906976744186
+            A 3 3 0 0 1 1293.860465116279 366.7906976744186
+            L 1089.860465116279 366.7906976744186
+            A 3 3 0 0 1 1086.860465116279 363.7906976744186
+            L 1086.860465116279 311.7906976744186
+            A 3 3 0 0 1 1089.860465116279 308.7906976744186
+            L 1092.860465116279 308.7906976744186
+            L 1092.860465116279 268.7906976744186
+            L 1089.860465116279 268.7906976744186
+            A 3 3 0 0 1 1086.860465116279 265.7906976744186
+            L 1086.860465116279 205.7906976744186
+            A 3 3 0 0 1 1089.860465116279 202.7906976744186
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1121.360465116279 279.7906976744186
+            L 1137.360465116279 279.7906976744186
+            A 1 1 0 0 1 1138.360465116279 280.7906976744186
+            L 1138.360465116279 284.2906976744186
+            L 1136.360465116279 284.2906976744186
+            L 1136.360465116279 287.2906976744186
+            L 1138.360465116279 287.2906976744186
+            L 1138.360465116279 296.7906976744186
+            A 1 1 0 0 1 1137.360465116279 297.7906976744186
+            L 1121.360465116279 297.7906976744186
+            A 1 1 0 0 1 1120.360465116279 296.7906976744186
+            L 1120.360465116279 287.2906976744186
+            L 1122.360465116279 287.2906976744186
+            L 1122.360465116279 284.2906976744186
+            L 1120.360465116279 284.2906976744186
+            L 1120.360465116279 280.7906976744186
+            A 1 1 0 0 1 1121.360465116279 279.7906976744186
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1129.360465116279" y="293.7906976744186" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1143.360465116279" y="293.7906976744186" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">BYTES_TO_ARR08B</text>
+<text x="1191.860465116279" y="308.7906976744186" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">DWORDS_TO_ARR08B</text>
+<text x="1191.860465116279" y="312.7906976744186" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">IN_01=16#00</text>
 <path d="M1081.860465116279,239.7906976744186 L1081.860465116279,249.7906976744186 L1086.860465116279,244.7906976744186 Z" fill="#63B31F" stroke="none" />
-<text x="1098.860465116279" y="248.7906976744186" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1071.860465116279" y="247.7906976744186" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1081.860465116279,320.7906976744186 L1081.860465116279,330.7906976744186 L1086.860465116279,325.7906976744186 Z" fill="#000000" stroke="none" />
-<text x="1098.860465116279" y="329.7906976744186" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN_00</text>
-<text x="1071.860465116279" y="328.7906976744186" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="1098.860465116279" y="248.7906976744186" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1071.860465116279" y="247.7906976744186" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1081.860465116279,320.7906976744186 L1081.860465116279,330.7906976744186 L1086.860465116279,325.7906976744186 Z" fill="#3366FF" stroke="none" />
+<text x="1098.860465116279" y="329.7906976744186" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN_00</text>
+<text x="1071.860465116279" y="328.7906976744186" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
 <path d="M1301.860465116279,239.7906976744186 L1301.860465116279,249.7906976744186 L1296.860465116279,244.7906976744186 Z" fill="#63B31F" stroke="none" />
-<text x="1284.860465116279" y="248.7906976744186" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="1311.860465116279" y="247.7906976744186" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1301.860465116279,320.7906976744186 L1301.860465116279,330.7906976744186 L1296.860465116279,325.7906976744186 Z" fill="#000000" stroke="none" />
-<text x="1284.860465116279" y="329.7906976744186" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="1311.860465116279" y="328.7906976744186" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<rect x="148.0" y="143.0" width="130" height="330" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M145.0,140.0 H275.0 V258.0 H269.0 V298.0 H275.0 V470.0 H145.0 V298.0 H151.0 V258.0 H145.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M145.0,170.0 L275.0,170.0" stroke="#000000" stroke-width="1" />
-<text x="210.0" y="276.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">GEN_SIN</text>
-<text x="210.0" y="290.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">GEN_SIN</text>
-<text x="210.0" y="302.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">PT=T#10s</text>
-<text x="210.0" y="314.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AM=10.0</text>
-<text x="210.0" y="326.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">OS=5.0</text>
-<text x="210.0" y="338.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">DL=0.0</text>
+<text x="1284.860465116279" y="248.7906976744186" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="1311.860465116279" y="247.7906976744186" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1301.860465116279,320.7906976744186 L1301.860465116279,330.7906976744186 L1296.860465116279,325.7906976744186 Z" fill="#3366FF" stroke="none" />
+<text x="1284.860465116279" y="329.7906976744186" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="1311.860465116279" y="328.7906976744186" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
+<path d="M 148.0 140.0
+            L 272.0 140.0
+            A 3 3 0 0 1 275.0 143.0
+            L 275.0 255.0
+            A 3 3 0 0 1 272.0 258.0
+            L 269.0 258.0
+            L 269.0 298.0
+            L 272.0 298.0
+            A 3 3 0 0 1 275.0 301.0
+            L 275.0 467.0
+            A 3 3 0 0 1 272.0 470.0
+            L 148.0 470.0
+            A 3 3 0 0 1 145.0 467.0
+            L 145.0 301.0
+            A 3 3 0 0 1 148.0 298.0
+            L 151.0 298.0
+            L 151.0 258.0
+            L 148.0 258.0
+            A 3 3 0 0 1 145.0 255.0
+            L 145.0 143.0
+            A 3 3 0 0 1 148.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 171.5 269.0
+            L 187.5 269.0
+            A 1 1 0 0 1 188.5 270.0
+            L 188.5 273.5
+            L 186.5 273.5
+            L 186.5 276.5
+            L 188.5 276.5
+            L 188.5 286.0
+            A 1 1 0 0 1 187.5 287.0
+            L 171.5 287.0
+            A 1 1 0 0 1 170.5 286.0
+            L 170.5 276.5
+            L 172.5 276.5
+            L 172.5 273.5
+            L 170.5 273.5
+            L 170.5 270.0
+            A 1 1 0 0 1 171.5 269.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="179.5" y="283.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="193.5" y="283.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">GEN_SIN</text>
+<text x="210.0" y="298.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">GEN_SIN</text>
+<text x="210.0" y="302.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">PT=T#10s</text>
+<text x="210.0" y="314.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AM=10.0</text>
+<text x="210.0" y="326.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">OS=5.0</text>
+<text x="210.0" y="338.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">DL=0.0</text>
 <path d="M140.0,177.0 L140.0,187.0 L145.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">EINIT</text>
-<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EINIT</text>
+<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M140.0,203.0 L140.0,213.0 L145.0,208.0 Z" fill="#63B31F" stroke="none" />
-<text x="157.0" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="130.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="157.0" y="212.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="130.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M140.0,229.0 L140.0,239.0 L145.0,234.0 Z" fill="#63B31F" stroke="none" />
-<text x="157.0" y="238.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">RST</text>
-<text x="130.0" y="237.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M140.0,310.0 L140.0,320.0 L145.0,315.0 Z" fill="#0000FF" stroke="none" />
-<text x="157.0" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PT</text>
-<text x="130.0" y="318.0" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="157.0" y="238.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">RST</text>
+<text x="130.0" y="237.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M140.0,310.0 L140.0,320.0 L145.0,315.0 Z" fill="#3366FF" stroke="none" />
+<text x="157.0" y="319.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">PT</text>
+<text x="130.0" y="318.0" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
 <path d="M140.0,336.0 L140.0,346.0 L145.0,341.0 Z" fill="#DBB418" stroke="none" />
-<text x="157.0" y="345.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">AM</text>
-<text x="130.0" y="344.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="157.0" y="345.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">AM</text>
+<text x="130.0" y="344.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
 <path d="M140.0,362.0 L140.0,372.0 L145.0,367.0 Z" fill="#DBB418" stroke="none" />
-<text x="157.0" y="371.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">OS</text>
-<text x="130.0" y="370.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="157.0" y="371.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">OS</text>
+<text x="130.0" y="370.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
 <path d="M140.0,388.0 L140.0,398.0 L145.0,393.0 Z" fill="#DBB418" stroke="none" />
-<text x="157.0" y="397.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">DL</text>
-<text x="130.0" y="396.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="157.0" y="397.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DL</text>
+<text x="130.0" y="396.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
 <path d="M280.0,177.0 L280.0,187.0 L275.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="263.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="290.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="263.0" y="186.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="290.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M280.0,203.0 L280.0,213.0 L275.0,208.0 Z" fill="#63B31F" stroke="none" />
-<text x="263.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="290.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M280.0,310.0 L280.0,320.0 L275.0,315.0 Z" fill="#9FA48A" stroke="none" />
-<text x="263.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
-<text x="290.0" y="318.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="263.0" y="212.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="290.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M280.0,310.0 L280.0,320.0 L275.0,315.0 Z" fill="#A3B08F" stroke="none" />
+<text x="263.0" y="319.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q</text>
+<text x="290.0" y="318.0" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M280.0,336.0 L280.0,346.0 L275.0,341.0 Z" fill="#DBB418" stroke="none" />
-<text x="263.0" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">Out</text>
-<text x="290.0" y="344.0" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<rect x="399.16279069767444" y="163.93023255813955" width="210" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M396.16279069767444,160.93023255813955 H606.1627906976744 V226.93023255813955 H600.1627906976744 V266.93023255813955 H606.1627906976744 V302.93023255813955 H396.16279069767444 V266.93023255813955 H402.16279069767444 V226.93023255813955 H396.16279069767444 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M396.16279069767444,190.93023255813955 L606.1627906976744,190.93023255813955" stroke="#000000" stroke-width="1" />
-<text x="501.16279069767444" y="244.93023255813955" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_REAL_TO_DWORD</text>
-<text x="501.16279069767444" y="258.93023255813955" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">F_REAL_TO_DWORD</text>
+<text x="263.0" y="345.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Out</text>
+<text x="290.0" y="344.0" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
+<path d="M 399.16279069767444 160.93023255813955
+            L 603.1627906976744 160.93023255813955
+            A 3 3 0 0 1 606.1627906976744 163.93023255813955
+            L 606.1627906976744 223.93023255813955
+            A 3 3 0 0 1 603.1627906976744 226.93023255813955
+            L 600.1627906976744 226.93023255813955
+            L 600.1627906976744 266.93023255813955
+            L 603.1627906976744 266.93023255813955
+            A 3 3 0 0 1 606.1627906976744 269.93023255813955
+            L 606.1627906976744 299.93023255813955
+            A 3 3 0 0 1 603.1627906976744 302.93023255813955
+            L 399.16279069767444 302.93023255813955
+            A 3 3 0 0 1 396.16279069767444 299.93023255813955
+            L 396.16279069767444 269.93023255813955
+            A 3 3 0 0 1 399.16279069767444 266.93023255813955
+            L 402.16279069767444 266.93023255813955
+            L 402.16279069767444 226.93023255813955
+            L 399.16279069767444 226.93023255813955
+            A 3 3 0 0 1 396.16279069767444 223.93023255813955
+            L 396.16279069767444 163.93023255813955
+            A 3 3 0 0 1 399.16279069767444 160.93023255813955
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 430.66279069767444 237.93023255813955
+            L 446.66279069767444 237.93023255813955
+            A 1 1 0 0 1 447.66279069767444 238.93023255813955
+            L 447.66279069767444 242.43023255813955
+            L 445.66279069767444 242.43023255813955
+            L 445.66279069767444 245.43023255813955
+            L 447.66279069767444 245.43023255813955
+            L 447.66279069767444 254.93023255813955
+            A 1 1 0 0 1 446.66279069767444 255.93023255813955
+            L 430.66279069767444 255.93023255813955
+            A 1 1 0 0 1 429.66279069767444 254.93023255813955
+            L 429.66279069767444 245.43023255813955
+            L 431.66279069767444 245.43023255813955
+            L 431.66279069767444 242.43023255813955
+            L 429.66279069767444 242.43023255813955
+            L 429.66279069767444 238.93023255813955
+            A 1 1 0 0 1 430.66279069767444 237.93023255813955
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="438.66279069767444" y="251.93023255813955" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="452.66279069767444" y="251.93023255813955" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">F_REAL_TO_DWORD</text>
+<text x="501.16279069767444" y="266.93023255813955" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">F_REAL_TO_DWORD</text>
 <path d="M391.16279069767444,197.93023255813955 L391.16279069767444,207.93023255813955 L396.16279069767444,202.93023255813955 Z" fill="#63B31F" stroke="none" />
-<text x="408.16279069767444" y="206.93023255813955" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="381.16279069767444" y="205.93023255813955" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="408.16279069767444" y="206.93023255813955" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="381.16279069767444" y="205.93023255813955" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M391.16279069767444,278.93023255813955 L391.16279069767444,288.93023255813955 L396.16279069767444,283.93023255813955 Z" fill="#DBB418" stroke="none" />
-<text x="408.16279069767444" y="287.93023255813955" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
-<text x="381.16279069767444" y="286.93023255813955" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="408.16279069767444" y="287.93023255813955" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="381.16279069767444" y="286.93023255813955" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
 <path d="M611.1627906976744,197.93023255813955 L611.1627906976744,207.93023255813955 L606.1627906976744,202.93023255813955 Z" fill="#63B31F" stroke="none" />
-<text x="594.1627906976744" y="206.93023255813955" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="621.1627906976744" y="205.93023255813955" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="594.1627906976744" y="206.93023255813955" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="621.1627906976744" y="205.93023255813955" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M611.1627906976744,278.93023255813955 L611.1627906976744,288.93023255813955 L606.1627906976744,283.93023255813955 Z" fill="#82A3A9" stroke="none" />
-<text x="594.1627906976744" y="287.93023255813955" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="621.1627906976744" y="286.93023255813955" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="594.1627906976744" y="287.93023255813955" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="621.1627906976744" y="286.93023255813955" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 </svg>

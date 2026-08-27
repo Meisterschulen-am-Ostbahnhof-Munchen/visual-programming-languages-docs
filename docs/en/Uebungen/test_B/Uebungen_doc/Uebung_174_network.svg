@@ -2,21 +2,113 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="415.0" height="408.0" viewBox="0 0 415.0 408.0">
 <defs>
-</defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 <rect x="0" y="0" width="415.0" height="408.0" fill="#ffffff" />
-<text x="207.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_174: Exercise for E_RESTART</text>
-<rect x="103.0" y="143.0" width="170" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M100.0,140.0 H270.0 V258.0 H264.0 V298.0 H270.0 V308.0 H100.0 V298.0 H106.0 V258.0 H100.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M100.0,170.0 L270.0,170.0" stroke="#000000" stroke-width="1" />
-<text x="185.0" y="276.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_RESTART_1</text>
-<text x="185.0" y="290.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">E_RESTART</text>
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text x="207.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_174: Exercise for E_RESTART</text>
+<path d="M 103.0 140.0
+            L 267.0 140.0
+            A 3 3 0 0 1 270.0 143.0
+            L 270.0 255.0
+            A 3 3 0 0 1 267.0 258.0
+            L 264.0 258.0
+            L 264.0 298.0
+            L 267.0 298.0
+            A 3 3 0 0 1 270.0 301.0
+            L 270.0 305.0
+            A 3 3 0 0 1 267.0 308.0
+            L 103.0 308.0
+            A 3 3 0 0 1 100.0 305.0
+            L 100.0 301.0
+            A 3 3 0 0 1 103.0 298.0
+            L 106.0 298.0
+            L 106.0 258.0
+            L 103.0 258.0
+            A 3 3 0 0 1 100.0 255.0
+            L 100.0 143.0
+            A 3 3 0 0 1 103.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 130.5 269.0
+            L 146.5 269.0
+            A 1 1 0 0 1 147.5 270.0
+            L 147.5 273.5
+            L 145.5 273.5
+            L 145.5 276.5
+            L 147.5 276.5
+            L 147.5 286.0
+            A 1 1 0 0 1 146.5 287.0
+            L 130.5 287.0
+            A 1 1 0 0 1 129.5 286.0
+            L 129.5 276.5
+            L 131.5 276.5
+            L 131.5 273.5
+            L 129.5 273.5
+            L 129.5 270.0
+            A 1 1 0 0 1 130.5 269.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="138.5" y="283.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="152.5" y="283.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">E_RESTART_1</text>
+<text x="185.0" y="298.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">E_RESTART</text>
 <path d="M275.0,177.0 L275.0,187.0 L270.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="258.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">COLD</text>
-<text x="285.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="258.0" y="186.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">COLD</text>
+<text x="285.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M275.0,203.0 L275.0,213.0 L270.0,208.0 Z" fill="#63B31F" stroke="none" />
-<text x="258.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">WARM</text>
-<text x="285.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="258.0" y="212.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">WARM</text>
+<text x="285.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M275.0,229.0 L275.0,239.0 L270.0,234.0 Z" fill="#63B31F" stroke="none" />
-<text x="258.0" y="238.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STOP</text>
-<text x="285.0" y="237.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="258.0" y="238.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STOP</text>
+<text x="285.0" y="237.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 </svg>

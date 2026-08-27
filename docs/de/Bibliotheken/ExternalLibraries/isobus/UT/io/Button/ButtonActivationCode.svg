@@ -1,11 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1320" height="135" viewBox="-540 -20 1320 135">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="240" height="85" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H240 V30 H234 V70 H240 V85 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L240,30" stroke="#000000" stroke-width="1" />
-<text x="120.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ButtonActivationCode</text>
-<text x="120.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 237 0
+            A 3 3 0 0 1 240 3
+            L 240 27
+            A 3 3 0 0 1 237 30
+            L 234 30
+            L 234 70
+            L 237 70
+            A 3 3 0 0 1 240 73
+            L 240 82
+            A 3 3 0 0 1 237 85
+            L 3 85
+            A 3 3 0 0 1 0 82
+            L 0 73
+            A 3 3 0 0 1 3 70
+            L 6 70
+            L 6 30
+            L 3 30
+            A 3 3 0 0 1 0 27
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 29.5 41.0
+            L 45.5 41.0
+            A 1 1 0 0 1 46.5 42.0
+            L 46.5 45.5
+            L 44.5 45.5
+            L 44.5 48.5
+            L 46.5 48.5
+            L 46.5 58.0
+            A 1 1 0 0 1 45.5 59.0
+            L 29.5 59.0
+            A 1 1 0 0 1 28.5 58.0
+            L 28.5 48.5
+            L 30.5 48.5
+            L 30.5 45.5
+            L 28.5 45.5
+            L 28.5 42.0
+            A 1 1 0 0 1 29.5 41.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="37.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="51.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">ButtonActivationCode</text>
+<text x="120.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
 </svg>

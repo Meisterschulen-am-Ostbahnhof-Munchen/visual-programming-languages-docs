@@ -1,60 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1396" height="301" viewBox="-548 -20 1396 301">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="300" height="251" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H300 V92 H294 V132 H300 V251 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L300,30" stroke="#000000" stroke-width="1" />
-<text x="150.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_NumericValue_PHYSA_LREAL</text>
-<text x="150.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 297 0
+            A 3 3 0 0 1 300 3
+            L 300 89
+            A 3 3 0 0 1 297 92
+            L 294 92
+            L 294 132
+            L 297 132
+            A 3 3 0 0 1 300 135
+            L 300 248
+            A 3 3 0 0 1 297 251
+            L 3 251
+            A 3 3 0 0 1 0 248
+            L 0 135
+            A 3 3 0 0 1 3 132
+            L 6 132
+            L 6 92
+            L 3 92
+            A 3 3 0 0 1 0 89
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 35.5 103.0
+            L 51.5 103.0
+            A 1 1 0 0 1 52.5 104.0
+            L 52.5 107.5
+            L 50.5 107.5
+            L 50.5 110.5
+            L 52.5 110.5
+            L 52.5 120.0
+            A 1 1 0 0 1 51.5 121.0
+            L 35.5 121.0
+            A 1 1 0 0 1 34.5 120.0
+            L 34.5 110.5
+            L 36.5 110.5
+            L 36.5 107.5
+            L 34.5 107.5
+            L 34.5 104.0
+            A 1 1 0 0 1 35.5 103.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="43.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
+<text x="57.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Q_NumericValue_PHYSA_LREAL</text>
+<text x="150.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">lrPhys</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">ALR</text>
-<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Physical LREAL value input</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#000000" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">stObj</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NumericObjectPool_S</text>
-<text x="-153" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Object pool properties (u16ObjId, scale, offset,</text>
-<text x="-153" y="190" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">decimals)</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
+<path d="M -5.0 144.0
+            L 0.0 144.0
+            L 0.0 145.66666666666666
+            L 2.5 145.66666666666666
+            L 2.5 144.0
+            L 5.0 144.0
+            L 5.0 154.0
+            L 2.5 154.0
+            L 2.5 152.33333333333334
+            L 0.0 152.33333333333334
+            L 0.0 154.0
+            L -5.0 154.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">lrPhys</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ALR</text>
+<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Physical LREAL value input</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#3366FF" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">stObj</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">NumericObjectPool_S</text>
+<text x="-153" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Object pool properties (u16ObjId, scale, offset,</text>
+<text x="-153" y="190" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">decimals)</text>
 <path d="M300,37 L300,47 L305,42 Z" fill="#63B31F" stroke="none" />
-<text x="288" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="323" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="393" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<text x="288" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="323" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="393" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
 <path d="M300,63 L300,73 L305,68 Z" fill="#63B31F" stroke="none" />
-<text x="288" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="323" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="393" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
-<rect x="295.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="288" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">xOver</text>
-<text x="323" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="393" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Physical value exceeds upper ISOBUS limit</text>
-<rect x="295.0" y="170.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="288" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">xUnder</text>
-<text x="323" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="393" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Physical value below lower ISOBUS limit</text>
+<text x="288" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="323" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="393" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirmation of Requested Service</text>
+<path d="M 295.0 144.0
+            L 297.5 144.0
+            L 297.5 145.66666666666666
+            L 300.0 145.66666666666666
+            L 300.0 144.0
+            L 305.0 144.0
+            L 305.0 154.0
+            L 300.0 154.0
+            L 300.0 152.33333333333334
+            L 297.5 152.33333333333334
+            L 297.5 154.0
+            L 295.0 154.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="288" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">xOver</text>
+<text x="323" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="393" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Physical value exceeds upper ISOBUS limit</text>
+<path d="M 295.0 170.0
+            L 297.5 170.0
+            L 297.5 171.66666666666666
+            L 300.0 171.66666666666666
+            L 300.0 170.0
+            L 305.0 170.0
+            L 305.0 180.0
+            L 300.0 180.0
+            L 300.0 178.33333333333334
+            L 297.5 178.33333333333334
+            L 297.5 180.0
+            L 295.0 180.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="288" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">xUnder</text>
+<text x="323" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="393" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Physical value below lower ISOBUS limit</text>
 <path d="M300,196 L300,206 L305,201 Z" fill="#BD8663" stroke="none" />
-<text x="288" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="323" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<text x="393" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<text x="288" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="323" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<text x="393" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
 <path d="M300,222 L300,232 L305,227 Z" fill="#18519E" stroke="none" />
-<text x="288" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
-<text x="323" y="230" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
-<text x="393" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">retval see Q_NumericValue</text>
-<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
+<text x="288" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">s16result</text>
+<text x="323" y="230" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">INT</text>
+<text x="393" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">retval see Q_NumericValue</text>
+<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#000000" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#404040" />
+<path d="M-12,175 L-5,175" stroke="#000000" />
 <rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,68 L312,227" stroke="#404040" stroke-width="1" />
-<path d="M300,68 L312,68" stroke="#404040" />
+<path d="M312,68 L312,227" stroke="#000000" stroke-width="1" />
+<path d="M300,68 L312,68" stroke="#000000" />
 <rect x="310" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,201 L305,201" stroke="#404040" />
+<path d="M312,201 L305,201" stroke="#000000" />
 <rect x="310" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,227 L305,227" stroke="#404040" />
+<path d="M312,227 L305,227" stroke="#000000" />
 <rect x="310" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
 </svg>

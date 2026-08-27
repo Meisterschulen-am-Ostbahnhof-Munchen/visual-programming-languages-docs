@@ -1,73 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1256" height="353" viewBox="-548 -20 1256 353">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="160" height="303" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H160 V66 H154 V106 H160 V303 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L160,30" stroke="#000000" stroke-width="1" />
-<text x="80.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">CALIBRATE_3P</text>
-<text x="80.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 157 0
+            A 3 3 0 0 1 160 3
+            L 160 63
+            A 3 3 0 0 1 157 66
+            L 154 66
+            L 154 106
+            L 157 106
+            A 3 3 0 0 1 160 109
+            L 160 300
+            A 3 3 0 0 1 157 303
+            L 3 303
+            A 3 3 0 0 1 0 300
+            L 0 109
+            A 3 3 0 0 1 3 106
+            L 6 106
+            L 6 66
+            L 3 66
+            A 3 3 0 0 1 0 63
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 21.5 77.0
+            L 37.5 77.0
+            A 1 1 0 0 1 38.5 78.0
+            L 38.5 81.5
+            L 36.5 81.5
+            L 36.5 84.5
+            L 38.5 84.5
+            L 38.5 94.0
+            A 1 1 0 0 1 37.5 95.0
+            L 21.5 95.0
+            A 1 1 0 0 1 20.5 94.0
+            L 20.5 84.5
+            L 22.5 84.5
+            L 22.5 81.5
+            L 20.5 81.5
+            L 20.5 78.0
+            A 1 1 0 0 1 21.5 77.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="29.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">S</text>
+<text x="43.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">CALIBRATE_3P</text>
+<text x="80.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-113" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-113" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Normal Execution Request</text>
 <path d="M-5,118 L-5,128 L0,123 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">X</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-113" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Raw Input</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">C_MIN</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-113" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Calibrate Min Point</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">C_MID</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-113" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Calibrate Mid Point (Center)</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">C_MAX</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-113" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Calibrate Max Point</text>
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">X</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
+<text x="-113" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Raw Input</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">C_MIN</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="-113" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Calibrate Min Point</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">C_MID</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="-113" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Calibrate Mid Point (Center)</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">C_MAX</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="-113" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Calibrate Max Point</text>
 <path d="M-5,222 L-5,232 L0,227 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">MIN_REF</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-113" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Target value for Min</text>
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">MIN_REF</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
+<text x="-113" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Target value for Min</text>
 <path d="M-5,248 L-5,258 L0,253 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">MID_REF</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-113" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Target value for Mid</text>
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">MID_REF</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
+<text x="-113" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Target value for Mid</text>
 <path d="M-5,274 L-5,284 L0,279 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">MAX_REF</text>
-<text x="-23" y="282" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-113" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Target value for Max</text>
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">MAX_REF</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
+<text x="-113" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Target value for Max</text>
 <path d="M160,37 L160,47 L165,42 Z" fill="#63B31F" stroke="none" />
-<text x="148" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="183" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="253" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
+<text x="148" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="183" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="253" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Execution Confirmation</text>
 <path d="M160,118 L160,128 L165,123 Z" fill="#DBB418" stroke="none" />
-<text x="148" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">Y</text>
-<text x="183" y="126" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="253" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Calibrated Output</text>
-<path d="M-12,42 L-12,279" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
+<text x="148" y="127" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Y</text>
+<text x="183" y="126" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
+<text x="253" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Calibrated Output</text>
+<path d="M-12,42 L-12,279" stroke="#000000" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#000000" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#404040" />
+<path d="M-12,123 L-5,123" stroke="#000000" />
 <rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#404040" />
+<path d="M-12,149 L-5,149" stroke="#000000" />
 <rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#404040" />
+<path d="M-12,175 L-5,175" stroke="#000000" />
 <rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#404040" />
+<path d="M-12,201 L-5,201" stroke="#000000" />
 <rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#404040" />
+<path d="M-12,227 L-5,227" stroke="#000000" />
 <rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,253 L-5,253" stroke="#404040" />
+<path d="M-12,253 L-5,253" stroke="#000000" />
 <rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,279 L-5,279" stroke="#404040" />
+<path d="M-12,279 L-5,279" stroke="#000000" />
 <rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M172,42 L172,123" stroke="#404040" stroke-width="1" />
-<path d="M160,42 L172,42" stroke="#404040" />
+<path d="M172,42 L172,123" stroke="#000000" stroke-width="1" />
+<path d="M160,42 L172,42" stroke="#000000" />
 <rect x="170" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M172,123 L165,123" stroke="#404040" />
+<path d="M172,123 L165,123" stroke="#000000" />
 <rect x="170" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
 </svg>

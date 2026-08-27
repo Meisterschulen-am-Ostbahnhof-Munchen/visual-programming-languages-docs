@@ -2,9 +2,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="2382.0" height="1365.25" viewBox="0 0 2382.0 1365.25">
 <defs>
-</defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 <rect x="0" y="0" width="2382.0" height="1365.25" fill="#ffffff" />
-<text x="1191.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_028: Analog-Eingang</text>
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text x="1191.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_028: Analog-Eingang</text>
 <path d="M397.0,234.0 C679.9375,234.0,1057.1875,292.375,1340.125,292.375" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M1429.375,965.25 C1596.6625,965.25,1819.7125,1025.75,1987.0,1025.75" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M1429.375,599.625 C1588.225,599.625,1800.025,660.125,1958.875,660.125" stroke="#404040" stroke-width="1.5" fill="none" />
@@ -15,221 +67,461 @@
 <path d="M397.0,367.0 C679.9375,367.0,1057.1875,425.375,1340.125,425.375" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M1429.375,1098.25 C1596.6625,1098.25,1819.7125,1106.75,1987.0,1106.75" stroke="#404040" stroke-width="1.5" fill="none" />
 <path d="M1429.375,732.625 C1588.225,732.625,1800.025,741.125,1958.875,741.125" stroke="#404040" stroke-width="1.5" fill="none" />
-<rect x="1343.125" y="227.375" width="220" height="292" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1340.125,224.375 H1560.125 V316.375 H1554.125 V356.375 H1560.125 V516.375 H1340.125 V356.375 H1346.125 V316.375 H1340.125 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1340.125,254.375 L1560.125,254.375" stroke="#000000" stroke-width="1" />
-<text x="1450.125" y="334.375" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalOutput_Q1</text>
-<text x="1450.125" y="348.375" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_QX</text>
-<text x="1450.125" y="360.375" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
-<text x="1450.125" y="372.375" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">PARAMS=</text>
-<text x="1450.125" y="384.375" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Output=Output_Q1</text>
+<path d="M 1343.125 224.375
+            L 1557.125 224.375
+            A 3 3 0 0 1 1560.125 227.375
+            L 1560.125 313.375
+            A 3 3 0 0 1 1557.125 316.375
+            L 1554.125 316.375
+            L 1554.125 356.375
+            L 1557.125 356.375
+            A 3 3 0 0 1 1560.125 359.375
+            L 1560.125 513.375
+            A 3 3 0 0 1 1557.125 516.375
+            L 1343.125 516.375
+            A 3 3 0 0 1 1340.125 513.375
+            L 1340.125 359.375
+            A 3 3 0 0 1 1343.125 356.375
+            L 1346.125 356.375
+            L 1346.125 316.375
+            L 1343.125 316.375
+            A 3 3 0 0 1 1340.125 313.375
+            L 1340.125 227.375
+            A 3 3 0 0 1 1343.125 224.375
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1375.625 327.375
+            L 1391.625 327.375
+            A 1 1 0 0 1 1392.625 328.375
+            L 1392.625 331.875
+            L 1390.625 331.875
+            L 1390.625 334.875
+            L 1392.625 334.875
+            L 1392.625 344.375
+            A 1 1 0 0 1 1391.625 345.375
+            L 1375.625 345.375
+            A 1 1 0 0 1 1374.625 344.375
+            L 1374.625 334.875
+            L 1376.625 334.875
+            L 1376.625 331.875
+            L 1374.625 331.875
+            L 1374.625 328.375
+            A 1 1 0 0 1 1375.625 327.375
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1383.625" y="341.375" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1397.625" y="341.375" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">DigitalOutput_Q1</text>
+<text x="1450.125" y="356.375" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_QX</text>
+<text x="1450.125" y="360.375" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="1450.125" y="372.375" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">PARAMS=</text>
+<text x="1450.125" y="384.375" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q1</text>
 <path d="M1335.125,261.375 L1335.125,271.375 L1340.125,266.375 Z" fill="#63B31F" stroke="none" />
-<text x="1352.125" y="270.375" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="1325.125" y="269.375" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1352.125" y="270.375" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="1325.125" y="269.375" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1335.125,287.375 L1335.125,297.375 L1340.125,292.375 Z" fill="#63B31F" stroke="none" />
-<text x="1352.125" y="296.375" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1325.125" y="295.375" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1335.125,368.375 L1335.125,378.375 L1340.125,373.375 Z" fill="#9FA48A" stroke="none" />
-<text x="1352.125" y="377.375" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="1325.125" y="376.375" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="1352.125" y="296.375" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1325.125" y="295.375" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1335.125,368.375 L1335.125,378.375 L1340.125,373.375 Z" fill="#A3B08F" stroke="none" />
+<text x="1352.125" y="377.375" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
+<text x="1325.125" y="376.375" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M1335.125,394.375 L1335.125,404.375 L1340.125,399.375 Z" fill="#BD8663" stroke="none" />
-<text x="1352.125" y="403.375" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
-<text x="1325.125" y="402.375" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M1335.125,420.375 L1335.125,430.375 L1340.125,425.375 Z" fill="#9FA48A" stroke="none" />
-<text x="1352.125" y="429.375" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT</text>
-<text x="1325.125" y="428.375" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M1335.125,446.375 L1335.125,456.375 L1340.125,451.375 Z" fill="#000000" stroke="none" />
-<text x="1352.125" y="455.375" font-size="12" text-anchor="start" font-family="Consolas, monospace">Output</text>
-<text x="1325.125" y="454.375" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DO_S</text>
+<text x="1352.125" y="403.375" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">PARAMS</text>
+<text x="1325.125" y="402.375" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<path d="M1335.125,420.375 L1335.125,430.375 L1340.125,425.375 Z" fill="#A3B08F" stroke="none" />
+<text x="1352.125" y="429.375" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="1325.125" y="428.375" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<path d="M1335.125,446.375 L1335.125,456.375 L1340.125,451.375 Z" fill="#3366FF" stroke="none" />
+<text x="1352.125" y="455.375" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Output</text>
+<text x="1325.125" y="454.375" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">logiBUS_DO_S</text>
 <path d="M1565.125,261.375 L1565.125,271.375 L1560.125,266.375 Z" fill="#63B31F" stroke="none" />
-<text x="1548.125" y="270.375" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="1575.125" y="269.375" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1548.125" y="270.375" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="1575.125" y="269.375" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1565.125,287.375 L1565.125,297.375 L1560.125,292.375 Z" fill="#63B31F" stroke="none" />
-<text x="1548.125" y="296.375" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="1575.125" y="295.375" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1565.125,368.375 L1565.125,378.375 L1560.125,373.375 Z" fill="#9FA48A" stroke="none" />
-<text x="1548.125" y="377.375" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="1575.125" y="376.375" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="1548.125" y="296.375" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="1575.125" y="295.375" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1565.125,368.375 L1565.125,378.375 L1560.125,373.375 Z" fill="#A3B08F" stroke="none" />
+<text x="1548.125" y="377.375" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
+<text x="1575.125" y="376.375" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M1565.125,394.375 L1565.125,404.375 L1560.125,399.375 Z" fill="#BD8663" stroke="none" />
-<text x="1548.125" y="403.375" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="1575.125" y="402.375" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<rect x="190.0" y="143.0" width="210" height="292" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M187.0,140.0 H397.0 V258.0 H391.0 V298.0 H397.0 V432.0 H187.0 V298.0 H193.0 V258.0 H187.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M187.0,170.0 L397.0,170.0" stroke="#000000" stroke-width="1" />
-<text x="292.0" y="276.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalInput_I1</text>
-<text x="292.0" y="290.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_IX</text>
-<text x="292.0" y="302.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
-<text x="292.0" y="314.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">PARAMS=</text>
-<text x="292.0" y="326.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Input=Input_I1</text>
+<text x="1548.125" y="403.375" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="1575.125" y="402.375" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<path d="M 190.0 140.0
+            L 394.0 140.0
+            A 3 3 0 0 1 397.0 143.0
+            L 397.0 255.0
+            A 3 3 0 0 1 394.0 258.0
+            L 391.0 258.0
+            L 391.0 298.0
+            L 394.0 298.0
+            A 3 3 0 0 1 397.0 301.0
+            L 397.0 429.0
+            A 3 3 0 0 1 394.0 432.0
+            L 190.0 432.0
+            A 3 3 0 0 1 187.0 429.0
+            L 187.0 301.0
+            A 3 3 0 0 1 190.0 298.0
+            L 193.0 298.0
+            L 193.0 258.0
+            L 190.0 258.0
+            A 3 3 0 0 1 187.0 255.0
+            L 187.0 143.0
+            A 3 3 0 0 1 190.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 221.5 269.0
+            L 237.5 269.0
+            A 1 1 0 0 1 238.5 270.0
+            L 238.5 273.5
+            L 236.5 273.5
+            L 236.5 276.5
+            L 238.5 276.5
+            L 238.5 286.0
+            A 1 1 0 0 1 237.5 287.0
+            L 221.5 287.0
+            A 1 1 0 0 1 220.5 286.0
+            L 220.5 276.5
+            L 222.5 276.5
+            L 222.5 273.5
+            L 220.5 273.5
+            L 220.5 270.0
+            A 1 1 0 0 1 221.5 269.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="229.5" y="283.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="243.5" y="283.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">DigitalInput_I1</text>
+<text x="292.0" y="298.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IX</text>
+<text x="292.0" y="302.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="292.0" y="314.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">PARAMS=</text>
+<text x="292.0" y="326.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I1</text>
 <path d="M182.0,177.0 L182.0,187.0 L187.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="199.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="172.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="199.0" y="186.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="172.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M182.0,203.0 L182.0,213.0 L187.0,208.0 Z" fill="#63B31F" stroke="none" />
-<text x="199.0" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="172.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M182.0,310.0 L182.0,320.0 L187.0,315.0 Z" fill="#9FA48A" stroke="none" />
-<text x="199.0" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="172.0" y="318.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="199.0" y="212.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="172.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M182.0,310.0 L182.0,320.0 L187.0,315.0 Z" fill="#A3B08F" stroke="none" />
+<text x="199.0" y="319.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
+<text x="172.0" y="318.0" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M182.0,336.0 L182.0,346.0 L187.0,341.0 Z" fill="#BD8663" stroke="none" />
-<text x="199.0" y="345.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
-<text x="172.0" y="344.0" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M182.0,362.0 L182.0,372.0 L187.0,367.0 Z" fill="#000000" stroke="none" />
-<text x="199.0" y="371.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">Input</text>
-<text x="172.0" y="370.0" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DI_S</text>
+<text x="199.0" y="345.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">PARAMS</text>
+<text x="172.0" y="344.0" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<path d="M182.0,362.0 L182.0,372.0 L187.0,367.0 Z" fill="#3366FF" stroke="none" />
+<text x="199.0" y="371.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Input</text>
+<text x="172.0" y="370.0" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">logiBUS_DI_S</text>
 <path d="M402.0,177.0 L402.0,187.0 L397.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="385.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="412.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="385.0" y="186.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="412.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M402.0,203.0 L402.0,213.0 L397.0,208.0 Z" fill="#63B31F" stroke="none" />
-<text x="385.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="412.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="385.0" y="212.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="412.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M402.0,229.0 L402.0,239.0 L397.0,234.0 Z" fill="#63B31F" stroke="none" />
-<text x="385.0" y="238.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
-<text x="412.0" y="237.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M402.0,310.0 L402.0,320.0 L397.0,315.0 Z" fill="#9FA48A" stroke="none" />
-<text x="385.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="412.0" y="318.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="385.0" y="238.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
+<text x="412.0" y="237.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M402.0,310.0 L402.0,320.0 L397.0,315.0 Z" fill="#A3B08F" stroke="none" />
+<text x="385.0" y="319.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
+<text x="412.0" y="318.0" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M402.0,336.0 L402.0,346.0 L397.0,341.0 Z" fill="#BD8663" stroke="none" />
-<text x="385.0" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="412.0" y="344.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M402.0,362.0 L402.0,372.0 L397.0,367.0 Z" fill="#9FA48A" stroke="none" />
-<text x="385.0" y="371.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
-<text x="412.0" y="370.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<rect x="1174.375" y="508.625" width="258" height="394" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1171.375,505.625 H1429.375 V623.625 H1423.375 V663.625 H1429.375 V899.625 H1171.375 V663.625 H1177.375 V623.625 H1171.375 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1171.375,535.625 L1429.375,535.625" stroke="#000000" stroke-width="1" />
-<text x="1300.375" y="641.625" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AnalogInput_I4</text>
-<text x="1300.375" y="655.625" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_AI_ID</text>
-<text x="1300.375" y="667.625" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
-<text x="1300.375" y="679.625" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Input=logiBUS::io::AI::logiBUS_AI::AnalogInput_I4</text>
-<text x="1300.375" y="691.625" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AnalogInput_hysteresis=50</text>
-<text x="1300.375" y="703.625" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">TimeDelta=250</text>
-<text x="1300.375" y="715.625" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">TimeRateLimit=100</text>
+<text x="385.0" y="345.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="412.0" y="344.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<path d="M402.0,362.0 L402.0,372.0 L397.0,367.0 Z" fill="#A3B08F" stroke="none" />
+<text x="385.0" y="371.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="412.0" y="370.0" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<path d="M 1174.375 505.625
+            L 1426.375 505.625
+            A 3 3 0 0 1 1429.375 508.625
+            L 1429.375 620.625
+            A 3 3 0 0 1 1426.375 623.625
+            L 1423.375 623.625
+            L 1423.375 663.625
+            L 1426.375 663.625
+            A 3 3 0 0 1 1429.375 666.625
+            L 1429.375 896.625
+            A 3 3 0 0 1 1426.375 899.625
+            L 1174.375 899.625
+            A 3 3 0 0 1 1171.375 896.625
+            L 1171.375 666.625
+            A 3 3 0 0 1 1174.375 663.625
+            L 1177.375 663.625
+            L 1177.375 623.625
+            L 1174.375 623.625
+            A 3 3 0 0 1 1171.375 620.625
+            L 1171.375 508.625
+            A 3 3 0 0 1 1174.375 505.625
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1233.875 634.625
+            L 1249.875 634.625
+            A 1 1 0 0 1 1250.875 635.625
+            L 1250.875 639.125
+            L 1248.875 639.125
+            L 1248.875 642.125
+            L 1250.875 642.125
+            L 1250.875 651.625
+            A 1 1 0 0 1 1249.875 652.625
+            L 1233.875 652.625
+            A 1 1 0 0 1 1232.875 651.625
+            L 1232.875 642.125
+            L 1234.875 642.125
+            L 1234.875 639.125
+            L 1232.875 639.125
+            L 1232.875 635.625
+            A 1 1 0 0 1 1233.875 634.625
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1241.875" y="648.625" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1255.875" y="648.625" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AnalogInput_I4</text>
+<text x="1300.375" y="663.625" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_AI_ID</text>
+<text x="1300.375" y="667.625" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="1300.375" y="679.625" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=logiBUS::io::AI::logiBUS_AI::AnalogInput_I4</text>
+<text x="1300.375" y="691.625" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AnalogInput_hysteresis=50</text>
+<text x="1300.375" y="703.625" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">TimeDelta=250</text>
+<text x="1300.375" y="715.625" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">TimeRateLimit=100</text>
 <path d="M1166.375,542.625 L1166.375,552.625 L1171.375,547.625 Z" fill="#63B31F" stroke="none" />
-<text x="1183.375" y="551.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="1156.375" y="550.625" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1183.375" y="551.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="1156.375" y="550.625" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1166.375,568.625 L1166.375,578.625 L1171.375,573.625 Z" fill="#63B31F" stroke="none" />
-<text x="1183.375" y="577.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1156.375" y="576.625" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1166.375,675.625 L1166.375,685.625 L1171.375,680.625 Z" fill="#9FA48A" stroke="none" />
-<text x="1183.375" y="684.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="1156.375" y="683.625" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="1183.375" y="577.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1156.375" y="576.625" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1166.375,675.625 L1166.375,685.625 L1171.375,680.625 Z" fill="#A3B08F" stroke="none" />
+<text x="1183.375" y="684.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
+<text x="1156.375" y="683.625" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M1166.375,701.625 L1166.375,711.625 L1171.375,706.625 Z" fill="#BD8663" stroke="none" />
-<text x="1183.375" y="710.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
-<text x="1156.375" y="709.625" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M1166.375,727.625 L1166.375,737.625 L1171.375,732.625 Z" fill="#000000" stroke="none" />
-<text x="1183.375" y="736.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">Input</text>
-<text x="1156.375" y="735.625" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_AI_S</text>
+<text x="1183.375" y="710.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">PARAMS</text>
+<text x="1156.375" y="709.625" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<path d="M1166.375,727.625 L1166.375,737.625 L1171.375,732.625 Z" fill="#3366FF" stroke="none" />
+<text x="1183.375" y="736.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Input</text>
+<text x="1156.375" y="735.625" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">logiBUS_AI_S</text>
 <path d="M1166.375,753.625 L1166.375,763.625 L1171.375,758.625 Z" fill="#82A3A9" stroke="none" />
-<text x="1183.375" y="762.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">AnalogInput_hysteresis</text>
-<text x="1156.375" y="761.625" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1183.375" y="762.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">AnalogInput_hysteresis</text>
+<text x="1156.375" y="761.625" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M1166.375,779.625 L1166.375,789.625 L1171.375,784.625 Z" fill="#82A3A9" stroke="none" />
-<text x="1183.375" y="788.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">TimeDelta</text>
-<text x="1156.375" y="787.625" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1183.375" y="788.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">TimeDelta</text>
+<text x="1156.375" y="787.625" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M1166.375,805.625 L1166.375,815.625 L1171.375,810.625 Z" fill="#82A3A9" stroke="none" />
-<text x="1183.375" y="814.625" font-size="12" text-anchor="start" font-family="Consolas, monospace">TimeRateLimit</text>
-<text x="1156.375" y="813.625" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1183.375" y="814.625" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">TimeRateLimit</text>
+<text x="1156.375" y="813.625" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M1434.375,542.625 L1434.375,552.625 L1429.375,547.625 Z" fill="#63B31F" stroke="none" />
-<text x="1417.375" y="551.625" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="1444.375" y="550.625" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1417.375" y="551.625" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="1444.375" y="550.625" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1434.375,568.625 L1434.375,578.625 L1429.375,573.625 Z" fill="#63B31F" stroke="none" />
-<text x="1417.375" y="577.625" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="1444.375" y="576.625" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1417.375" y="577.625" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="1444.375" y="576.625" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1434.375,594.625 L1434.375,604.625 L1429.375,599.625 Z" fill="#63B31F" stroke="none" />
-<text x="1417.375" y="603.625" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
-<text x="1444.375" y="602.625" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1434.375,675.625 L1434.375,685.625 L1429.375,680.625 Z" fill="#9FA48A" stroke="none" />
-<text x="1417.375" y="684.625" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="1444.375" y="683.625" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="1417.375" y="603.625" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
+<text x="1444.375" y="602.625" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1434.375,675.625 L1434.375,685.625 L1429.375,680.625 Z" fill="#A3B08F" stroke="none" />
+<text x="1417.375" y="684.625" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
+<text x="1444.375" y="683.625" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M1434.375,701.625 L1434.375,711.625 L1429.375,706.625 Z" fill="#BD8663" stroke="none" />
-<text x="1417.375" y="710.625" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="1444.375" y="709.625" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="1417.375" y="710.625" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="1444.375" y="709.625" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
 <path d="M1434.375,727.625 L1434.375,737.625 L1429.375,732.625 Z" fill="#82A3A9" stroke="none" />
-<text x="1417.375" y="736.625" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
-<text x="1444.375" y="735.625" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
-<rect x="1174.375" y="874.25" width="258" height="394" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1171.375,871.25 H1429.375 V989.25 H1423.375 V1029.25 H1429.375 V1265.25 H1171.375 V1029.25 H1177.375 V989.25 H1171.375 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1171.375,901.25 L1429.375,901.25" stroke="#000000" stroke-width="1" />
-<text x="1300.375" y="1007.25" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AnalogInput_I7</text>
-<text x="1300.375" y="1021.25" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_AI_ID</text>
-<text x="1300.375" y="1033.25" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
-<text x="1300.375" y="1045.25" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Input=logiBUS::io::AI::logiBUS_AI::AnalogInput_I7</text>
-<text x="1300.375" y="1057.25" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AnalogInput_hysteresis=50</text>
-<text x="1300.375" y="1069.25" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">TimeDelta=250</text>
-<text x="1300.375" y="1081.25" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">TimeRateLimit=100</text>
+<text x="1417.375" y="736.625" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="1444.375" y="735.625" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
+<path d="M 1174.375 871.25
+            L 1426.375 871.25
+            A 3 3 0 0 1 1429.375 874.25
+            L 1429.375 986.25
+            A 3 3 0 0 1 1426.375 989.25
+            L 1423.375 989.25
+            L 1423.375 1029.25
+            L 1426.375 1029.25
+            A 3 3 0 0 1 1429.375 1032.25
+            L 1429.375 1262.25
+            A 3 3 0 0 1 1426.375 1265.25
+            L 1174.375 1265.25
+            A 3 3 0 0 1 1171.375 1262.25
+            L 1171.375 1032.25
+            A 3 3 0 0 1 1174.375 1029.25
+            L 1177.375 1029.25
+            L 1177.375 989.25
+            L 1174.375 989.25
+            A 3 3 0 0 1 1171.375 986.25
+            L 1171.375 874.25
+            A 3 3 0 0 1 1174.375 871.25
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1233.875 1000.25
+            L 1249.875 1000.25
+            A 1 1 0 0 1 1250.875 1001.25
+            L 1250.875 1004.75
+            L 1248.875 1004.75
+            L 1248.875 1007.75
+            L 1250.875 1007.75
+            L 1250.875 1017.25
+            A 1 1 0 0 1 1249.875 1018.25
+            L 1233.875 1018.25
+            A 1 1 0 0 1 1232.875 1017.25
+            L 1232.875 1007.75
+            L 1234.875 1007.75
+            L 1234.875 1004.75
+            L 1232.875 1004.75
+            L 1232.875 1001.25
+            A 1 1 0 0 1 1233.875 1000.25
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1241.875" y="1014.25" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1255.875" y="1014.25" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AnalogInput_I7</text>
+<text x="1300.375" y="1029.25" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_AI_ID</text>
+<text x="1300.375" y="1033.25" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="1300.375" y="1045.25" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=logiBUS::io::AI::logiBUS_AI::AnalogInput_I7</text>
+<text x="1300.375" y="1057.25" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AnalogInput_hysteresis=50</text>
+<text x="1300.375" y="1069.25" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">TimeDelta=250</text>
+<text x="1300.375" y="1081.25" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">TimeRateLimit=100</text>
 <path d="M1166.375,908.25 L1166.375,918.25 L1171.375,913.25 Z" fill="#63B31F" stroke="none" />
-<text x="1183.375" y="917.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="1156.375" y="916.25" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1183.375" y="917.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="1156.375" y="916.25" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1166.375,934.25 L1166.375,944.25 L1171.375,939.25 Z" fill="#63B31F" stroke="none" />
-<text x="1183.375" y="943.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1156.375" y="942.25" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1166.375,1041.25 L1166.375,1051.25 L1171.375,1046.25 Z" fill="#9FA48A" stroke="none" />
-<text x="1183.375" y="1050.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="1156.375" y="1049.25" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="1183.375" y="943.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1156.375" y="942.25" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1166.375,1041.25 L1166.375,1051.25 L1171.375,1046.25 Z" fill="#A3B08F" stroke="none" />
+<text x="1183.375" y="1050.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
+<text x="1156.375" y="1049.25" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M1166.375,1067.25 L1166.375,1077.25 L1171.375,1072.25 Z" fill="#BD8663" stroke="none" />
-<text x="1183.375" y="1076.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
-<text x="1156.375" y="1075.25" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M1166.375,1093.25 L1166.375,1103.25 L1171.375,1098.25 Z" fill="#000000" stroke="none" />
-<text x="1183.375" y="1102.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">Input</text>
-<text x="1156.375" y="1101.25" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_AI_S</text>
+<text x="1183.375" y="1076.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">PARAMS</text>
+<text x="1156.375" y="1075.25" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<path d="M1166.375,1093.25 L1166.375,1103.25 L1171.375,1098.25 Z" fill="#3366FF" stroke="none" />
+<text x="1183.375" y="1102.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Input</text>
+<text x="1156.375" y="1101.25" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">logiBUS_AI_S</text>
 <path d="M1166.375,1119.25 L1166.375,1129.25 L1171.375,1124.25 Z" fill="#82A3A9" stroke="none" />
-<text x="1183.375" y="1128.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">AnalogInput_hysteresis</text>
-<text x="1156.375" y="1127.25" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1183.375" y="1128.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">AnalogInput_hysteresis</text>
+<text x="1156.375" y="1127.25" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M1166.375,1145.25 L1166.375,1155.25 L1171.375,1150.25 Z" fill="#82A3A9" stroke="none" />
-<text x="1183.375" y="1154.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">TimeDelta</text>
-<text x="1156.375" y="1153.25" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1183.375" y="1154.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">TimeDelta</text>
+<text x="1156.375" y="1153.25" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M1166.375,1171.25 L1166.375,1181.25 L1171.375,1176.25 Z" fill="#82A3A9" stroke="none" />
-<text x="1183.375" y="1180.25" font-size="12" text-anchor="start" font-family="Consolas, monospace">TimeRateLimit</text>
-<text x="1156.375" y="1179.25" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1183.375" y="1180.25" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">TimeRateLimit</text>
+<text x="1156.375" y="1179.25" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M1434.375,908.25 L1434.375,918.25 L1429.375,913.25 Z" fill="#63B31F" stroke="none" />
-<text x="1417.375" y="917.25" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="1444.375" y="916.25" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1417.375" y="917.25" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="1444.375" y="916.25" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1434.375,934.25 L1434.375,944.25 L1429.375,939.25 Z" fill="#63B31F" stroke="none" />
-<text x="1417.375" y="943.25" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="1444.375" y="942.25" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1417.375" y="943.25" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="1444.375" y="942.25" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1434.375,960.25 L1434.375,970.25 L1429.375,965.25 Z" fill="#63B31F" stroke="none" />
-<text x="1417.375" y="969.25" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
-<text x="1444.375" y="968.25" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M1434.375,1041.25 L1434.375,1051.25 L1429.375,1046.25 Z" fill="#9FA48A" stroke="none" />
-<text x="1417.375" y="1050.25" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="1444.375" y="1049.25" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="1417.375" y="969.25" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
+<text x="1444.375" y="968.25" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M1434.375,1041.25 L1434.375,1051.25 L1429.375,1046.25 Z" fill="#A3B08F" stroke="none" />
+<text x="1417.375" y="1050.25" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
+<text x="1444.375" y="1049.25" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M1434.375,1067.25 L1434.375,1077.25 L1429.375,1072.25 Z" fill="#BD8663" stroke="none" />
-<text x="1417.375" y="1076.25" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="1444.375" y="1075.25" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="1417.375" y="1076.25" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="1444.375" y="1075.25" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
 <path d="M1434.375,1093.25 L1434.375,1103.25 L1429.375,1098.25 Z" fill="#82A3A9" stroke="none" />
-<text x="1417.375" y="1102.25" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
-<text x="1444.375" y="1101.25" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
-<rect x="1990.0" y="986.75" width="250" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1987.0,983.75 H2237.0 V1049.75 H2231.0 V1089.75 H2237.0 V1125.75 H1987.0 V1089.75 H1993.0 V1049.75 H1987.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1987.0,1013.75 L2237.0,1013.75" stroke="#000000" stroke-width="1" />
-<text x="2112.0" y="1067.75" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_DWORD_TO_UDINT_I7</text>
-<text x="2112.0" y="1081.75" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">F_DWORD_TO_UDINT</text>
+<text x="1417.375" y="1102.25" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="1444.375" y="1101.25" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
+<path d="M 1990.0 983.75
+            L 2234.0 983.75
+            A 3 3 0 0 1 2237.0 986.75
+            L 2237.0 1046.75
+            A 3 3 0 0 1 2234.0 1049.75
+            L 2231.0 1049.75
+            L 2231.0 1089.75
+            L 2234.0 1089.75
+            A 3 3 0 0 1 2237.0 1092.75
+            L 2237.0 1122.75
+            A 3 3 0 0 1 2234.0 1125.75
+            L 1990.0 1125.75
+            A 3 3 0 0 1 1987.0 1122.75
+            L 1987.0 1092.75
+            A 3 3 0 0 1 1990.0 1089.75
+            L 1993.0 1089.75
+            L 1993.0 1049.75
+            L 1990.0 1049.75
+            A 3 3 0 0 1 1987.0 1046.75
+            L 1987.0 986.75
+            A 3 3 0 0 1 1990.0 983.75
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 2025.5 1060.75
+            L 2041.5 1060.75
+            A 1 1 0 0 1 2042.5 1061.75
+            L 2042.5 1065.25
+            L 2040.5 1065.25
+            L 2040.5 1068.25
+            L 2042.5 1068.25
+            L 2042.5 1077.75
+            A 1 1 0 0 1 2041.5 1078.75
+            L 2025.5 1078.75
+            A 1 1 0 0 1 2024.5 1077.75
+            L 2024.5 1068.25
+            L 2026.5 1068.25
+            L 2026.5 1065.25
+            L 2024.5 1065.25
+            L 2024.5 1061.75
+            A 1 1 0 0 1 2025.5 1060.75
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="2033.5" y="1074.75" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="2047.5" y="1074.75" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">F_DWORD_TO_UDINT_I7</text>
+<text x="2112.0" y="1089.75" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">F_DWORD_TO_UDINT</text>
 <path d="M1982.0,1020.75 L1982.0,1030.75 L1987.0,1025.75 Z" fill="#63B31F" stroke="none" />
-<text x="1999.0" y="1029.75" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1972.0" y="1028.75" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1999.0" y="1029.75" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1972.0" y="1028.75" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1982.0,1101.75 L1982.0,1111.75 L1987.0,1106.75 Z" fill="#82A3A9" stroke="none" />
-<text x="1999.0" y="1110.75" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
-<text x="1972.0" y="1109.75" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1999.0" y="1110.75" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="1972.0" y="1109.75" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M2242.0,1020.75 L2242.0,1030.75 L2237.0,1025.75 Z" fill="#63B31F" stroke="none" />
-<text x="2225.0" y="1029.75" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="2252.0" y="1028.75" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="2225.0" y="1029.75" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="2252.0" y="1028.75" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M2242.0,1101.75 L2242.0,1111.75 L2237.0,1106.75 Z" fill="#18519E" stroke="none" />
-<text x="2225.0" y="1110.75" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="2252.0" y="1109.75" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
-<rect x="1961.875" y="621.125" width="250" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M1958.875,618.125 H2208.875 V684.125 H2202.875 V724.125 H2208.875 V760.125 H1958.875 V724.125 H1964.875 V684.125 H1958.875 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M1958.875,648.125 L2208.875,648.125" stroke="#000000" stroke-width="1" />
-<text x="2083.875" y="702.125" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_DWORD_TO_UDINT_I4</text>
-<text x="2083.875" y="716.125" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">F_DWORD_TO_UDINT</text>
+<text x="2225.0" y="1110.75" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="2252.0" y="1109.75" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UDINT</text>
+<path d="M 1961.875 618.125
+            L 2205.875 618.125
+            A 3 3 0 0 1 2208.875 621.125
+            L 2208.875 681.125
+            A 3 3 0 0 1 2205.875 684.125
+            L 2202.875 684.125
+            L 2202.875 724.125
+            L 2205.875 724.125
+            A 3 3 0 0 1 2208.875 727.125
+            L 2208.875 757.125
+            A 3 3 0 0 1 2205.875 760.125
+            L 1961.875 760.125
+            A 3 3 0 0 1 1958.875 757.125
+            L 1958.875 727.125
+            A 3 3 0 0 1 1961.875 724.125
+            L 1964.875 724.125
+            L 1964.875 684.125
+            L 1961.875 684.125
+            A 3 3 0 0 1 1958.875 681.125
+            L 1958.875 621.125
+            A 3 3 0 0 1 1961.875 618.125
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1997.375 695.125
+            L 2013.375 695.125
+            A 1 1 0 0 1 2014.375 696.125
+            L 2014.375 699.625
+            L 2012.375 699.625
+            L 2012.375 702.625
+            L 2014.375 702.625
+            L 2014.375 712.125
+            A 1 1 0 0 1 2013.375 713.125
+            L 1997.375 713.125
+            A 1 1 0 0 1 1996.375 712.125
+            L 1996.375 702.625
+            L 1998.375 702.625
+            L 1998.375 699.625
+            L 1996.375 699.625
+            L 1996.375 696.125
+            A 1 1 0 0 1 1997.375 695.125
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="2005.375" y="709.125" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="2019.375" y="709.125" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">F_DWORD_TO_UDINT_I4</text>
+<text x="2083.875" y="724.125" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">F_DWORD_TO_UDINT</text>
 <path d="M1953.875,655.125 L1953.875,665.125 L1958.875,660.125 Z" fill="#63B31F" stroke="none" />
-<text x="1970.875" y="664.125" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="1943.875" y="663.125" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="1970.875" y="664.125" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="1943.875" y="663.125" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M1953.875,736.125 L1953.875,746.125 L1958.875,741.125 Z" fill="#82A3A9" stroke="none" />
-<text x="1970.875" y="745.125" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
-<text x="1943.875" y="744.125" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">DWORD</text>
+<text x="1970.875" y="745.125" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="1943.875" y="744.125" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DWORD</text>
 <path d="M2213.875,655.125 L2213.875,665.125 L2208.875,660.125 Z" fill="#63B31F" stroke="none" />
-<text x="2196.875" y="664.125" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="2223.875" y="663.125" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="2196.875" y="664.125" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="2223.875" y="663.125" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M2213.875,736.125 L2213.875,746.125 L2208.875,741.125 Z" fill="#18519E" stroke="none" />
-<text x="2196.875" y="745.125" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="2223.875" y="744.125" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="2196.875" y="745.125" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="2223.875" y="744.125" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UDINT</text>
 </svg>

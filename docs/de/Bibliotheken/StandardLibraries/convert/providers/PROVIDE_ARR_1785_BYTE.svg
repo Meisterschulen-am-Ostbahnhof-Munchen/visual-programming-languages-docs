@@ -1,19 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1346" height="171" viewBox="-548 -20 1346 171">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="250" height="121" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H250 V66 H244 V106 H250 V121 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L250,30" stroke="#000000" stroke-width="1" />
-<text x="125.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">PROVIDE_ARR_1785_BYTE</text>
-<text x="125.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.1</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 247 0
+            A 3 3 0 0 1 250 3
+            L 250 63
+            A 3 3 0 0 1 247 66
+            L 244 66
+            L 244 106
+            L 247 106
+            A 3 3 0 0 1 250 109
+            L 250 118
+            A 3 3 0 0 1 247 121
+            L 3 121
+            A 3 3 0 0 1 0 118
+            L 0 109
+            A 3 3 0 0 1 3 106
+            L 6 106
+            L 6 66
+            L 3 66
+            A 3 3 0 0 1 0 63
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 30.5 77.0
+            L 46.5 77.0
+            A 1 1 0 0 1 47.5 78.0
+            L 47.5 81.5
+            L 45.5 81.5
+            L 45.5 84.5
+            L 47.5 84.5
+            L 47.5 94.0
+            A 1 1 0 0 1 46.5 95.0
+            L 30.5 95.0
+            A 1 1 0 0 1 29.5 94.0
+            L 29.5 84.5
+            L 31.5 84.5
+            L 31.5 81.5
+            L 29.5 81.5
+            L 29.5 78.0
+            A 1 1 0 0 1 30.5 77.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="38.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
+<text x="52.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">PROVIDE_ARR_1785_BYTE</text>
+<text x="125.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.1</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
 <path d="M250,37 L250,47 L255,42 Z" fill="#63B31F" stroke="none" />
-<text x="238" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="273" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="343" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<text x="238" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="273" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="343" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
 </svg>

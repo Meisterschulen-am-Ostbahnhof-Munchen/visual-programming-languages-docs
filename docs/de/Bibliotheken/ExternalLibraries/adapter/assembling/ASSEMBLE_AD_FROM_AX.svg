@@ -1,143 +1,604 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1310" height="967" viewBox="-540 -20 1310 967">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="230" height="917" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H230 V30 H224 V70 H230 V917 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L230,30" stroke="#000000" stroke-width="1" />
-<text x="115.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ASSEMBLE_AD_FROM_AX</text>
-<text x="115.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_00</text>
-<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 0</text>
-<rect x="-5.0" y="108.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="117" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_01</text>
-<text x="-15" y="116" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 1</text>
-<rect x="-5.0" y="134.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="143" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_02</text>
-<text x="-15" y="142" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="142" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 2</text>
-<rect x="-5.0" y="160.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="169" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_03</text>
-<text x="-15" y="168" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="168" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 3</text>
-<rect x="-5.0" y="186.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="195" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_04</text>
-<text x="-15" y="194" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="194" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 4</text>
-<rect x="-5.0" y="212.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="221" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_05</text>
-<text x="-15" y="220" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="220" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 5</text>
-<rect x="-5.0" y="238.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="247" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_06</text>
-<text x="-15" y="246" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="246" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 6</text>
-<rect x="-5.0" y="264.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="273" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_07</text>
-<text x="-15" y="272" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="272" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 7</text>
-<rect x="-5.0" y="290.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="299" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_08</text>
-<text x="-15" y="298" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="298" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 8</text>
-<rect x="-5.0" y="316.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="325" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_09</text>
-<text x="-15" y="324" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="324" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 9</text>
-<rect x="-5.0" y="342.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="351" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_10</text>
-<text x="-15" y="350" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="350" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 10</text>
-<rect x="-5.0" y="368.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="377" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_11</text>
-<text x="-15" y="376" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="376" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 11</text>
-<rect x="-5.0" y="394.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="403" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_12</text>
-<text x="-15" y="402" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="402" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 12</text>
-<rect x="-5.0" y="420.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="429" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_13</text>
-<text x="-15" y="428" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="428" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 13</text>
-<rect x="-5.0" y="446.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="455" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_14</text>
-<text x="-15" y="454" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="454" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 14</text>
-<rect x="-5.0" y="472.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="481" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_15</text>
-<text x="-15" y="480" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="480" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 15</text>
-<rect x="-5.0" y="498.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="507" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_16</text>
-<text x="-15" y="506" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="506" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 16</text>
-<rect x="-5.0" y="524.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="533" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_17</text>
-<text x="-15" y="532" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="532" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 17</text>
-<rect x="-5.0" y="550.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="559" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_18</text>
-<text x="-15" y="558" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="558" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 18</text>
-<rect x="-5.0" y="576.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="585" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_19</text>
-<text x="-15" y="584" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="584" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 19</text>
-<rect x="-5.0" y="602.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="611" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_20</text>
-<text x="-15" y="610" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="610" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 20</text>
-<rect x="-5.0" y="628.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="637" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_21</text>
-<text x="-15" y="636" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="636" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 21</text>
-<rect x="-5.0" y="654.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="663" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_22</text>
-<text x="-15" y="662" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="662" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 22</text>
-<rect x="-5.0" y="680.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="689" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_23</text>
-<text x="-15" y="688" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="688" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 23</text>
-<rect x="-5.0" y="706.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="715" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_24</text>
-<text x="-15" y="714" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="714" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 24</text>
-<rect x="-5.0" y="732.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="741" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_25</text>
-<text x="-15" y="740" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="740" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 25</text>
-<rect x="-5.0" y="758.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="767" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_26</text>
-<text x="-15" y="766" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="766" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 26</text>
-<rect x="-5.0" y="784.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="793" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_27</text>
-<text x="-15" y="792" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="792" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 27</text>
-<rect x="-5.0" y="810.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="819" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_28</text>
-<text x="-15" y="818" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="818" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 28</text>
-<rect x="-5.0" y="836.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="845" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_29</text>
-<text x="-15" y="844" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="844" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 29</text>
-<rect x="-5.0" y="862.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="871" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_30</text>
-<text x="-15" y="870" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="870" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 30</text>
-<rect x="-5.0" y="888.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="897" font-size="12" text-anchor="start" font-family="Consolas, monospace">BIT_31</text>
-<text x="-15" y="896" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-78" y="896" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 31</text>
-<rect x="225.0" y="82.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="218" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="245" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AD</text>
-<text x="315" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">DWORD Output</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 227 0
+            A 3 3 0 0 1 230 3
+            L 230 27
+            A 3 3 0 0 1 227 30
+            L 224 30
+            L 224 70
+            L 227 70
+            A 3 3 0 0 1 230 73
+            L 230 914
+            A 3 3 0 0 1 227 917
+            L 3 917
+            A 3 3 0 0 1 0 914
+            L 0 73
+            A 3 3 0 0 1 3 70
+            L 6 70
+            L 6 30
+            L 3 30
+            A 3 3 0 0 1 0 27
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 28.5 41.0
+            L 44.5 41.0
+            A 1 1 0 0 1 45.5 42.0
+            L 45.5 45.5
+            L 43.5 45.5
+            L 43.5 48.5
+            L 45.5 48.5
+            L 45.5 58.0
+            A 1 1 0 0 1 44.5 59.0
+            L 28.5 59.0
+            A 1 1 0 0 1 27.5 58.0
+            L 27.5 48.5
+            L 29.5 48.5
+            L 29.5 45.5
+            L 27.5 45.5
+            L 27.5 42.0
+            A 1 1 0 0 1 28.5 41.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="36.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
+<text x="50.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">ASSEMBLE_AD_FROM_AX</text>
+<text x="115.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M -5.0 82.0
+            L 0.0 82.0
+            L 0.0 83.66666666666667
+            L 2.5 83.66666666666667
+            L 2.5 82.0
+            L 5.0 82.0
+            L 5.0 92.0
+            L 2.5 92.0
+            L 2.5 90.33333333333333
+            L 0.0 90.33333333333333
+            L 0.0 92.0
+            L -5.0 92.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_00</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 0</text>
+<path d="M -5.0 108.0
+            L 0.0 108.0
+            L 0.0 109.66666666666667
+            L 2.5 109.66666666666667
+            L 2.5 108.0
+            L 5.0 108.0
+            L 5.0 118.0
+            L 2.5 118.0
+            L 2.5 116.33333333333333
+            L 0.0 116.33333333333333
+            L 0.0 118.0
+            L -5.0 118.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="117" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_01</text>
+<text x="-15" y="116" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 1</text>
+<path d="M -5.0 134.0
+            L 0.0 134.0
+            L 0.0 135.66666666666666
+            L 2.5 135.66666666666666
+            L 2.5 134.0
+            L 5.0 134.0
+            L 5.0 144.0
+            L 2.5 144.0
+            L 2.5 142.33333333333334
+            L 0.0 142.33333333333334
+            L 0.0 144.0
+            L -5.0 144.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="143" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_02</text>
+<text x="-15" y="142" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="142" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 2</text>
+<path d="M -5.0 160.0
+            L 0.0 160.0
+            L 0.0 161.66666666666666
+            L 2.5 161.66666666666666
+            L 2.5 160.0
+            L 5.0 160.0
+            L 5.0 170.0
+            L 2.5 170.0
+            L 2.5 168.33333333333334
+            L 0.0 168.33333333333334
+            L 0.0 170.0
+            L -5.0 170.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="169" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_03</text>
+<text x="-15" y="168" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="168" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 3</text>
+<path d="M -5.0 186.0
+            L 0.0 186.0
+            L 0.0 187.66666666666666
+            L 2.5 187.66666666666666
+            L 2.5 186.0
+            L 5.0 186.0
+            L 5.0 196.0
+            L 2.5 196.0
+            L 2.5 194.33333333333334
+            L 0.0 194.33333333333334
+            L 0.0 196.0
+            L -5.0 196.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="195" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_04</text>
+<text x="-15" y="194" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="194" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 4</text>
+<path d="M -5.0 212.0
+            L 0.0 212.0
+            L 0.0 213.66666666666666
+            L 2.5 213.66666666666666
+            L 2.5 212.0
+            L 5.0 212.0
+            L 5.0 222.0
+            L 2.5 222.0
+            L 2.5 220.33333333333334
+            L 0.0 220.33333333333334
+            L 0.0 222.0
+            L -5.0 222.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="221" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_05</text>
+<text x="-15" y="220" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="220" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 5</text>
+<path d="M -5.0 238.0
+            L 0.0 238.0
+            L 0.0 239.66666666666666
+            L 2.5 239.66666666666666
+            L 2.5 238.0
+            L 5.0 238.0
+            L 5.0 248.0
+            L 2.5 248.0
+            L 2.5 246.33333333333334
+            L 0.0 246.33333333333334
+            L 0.0 248.0
+            L -5.0 248.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="247" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_06</text>
+<text x="-15" y="246" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="246" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 6</text>
+<path d="M -5.0 264.0
+            L 0.0 264.0
+            L 0.0 265.6666666666667
+            L 2.5 265.6666666666667
+            L 2.5 264.0
+            L 5.0 264.0
+            L 5.0 274.0
+            L 2.5 274.0
+            L 2.5 272.3333333333333
+            L 0.0 272.3333333333333
+            L 0.0 274.0
+            L -5.0 274.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="273" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_07</text>
+<text x="-15" y="272" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="272" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 7</text>
+<path d="M -5.0 290.0
+            L 0.0 290.0
+            L 0.0 291.6666666666667
+            L 2.5 291.6666666666667
+            L 2.5 290.0
+            L 5.0 290.0
+            L 5.0 300.0
+            L 2.5 300.0
+            L 2.5 298.3333333333333
+            L 0.0 298.3333333333333
+            L 0.0 300.0
+            L -5.0 300.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="299" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_08</text>
+<text x="-15" y="298" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="298" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 8</text>
+<path d="M -5.0 316.0
+            L 0.0 316.0
+            L 0.0 317.6666666666667
+            L 2.5 317.6666666666667
+            L 2.5 316.0
+            L 5.0 316.0
+            L 5.0 326.0
+            L 2.5 326.0
+            L 2.5 324.3333333333333
+            L 0.0 324.3333333333333
+            L 0.0 326.0
+            L -5.0 326.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="325" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_09</text>
+<text x="-15" y="324" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="324" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 9</text>
+<path d="M -5.0 342.0
+            L 0.0 342.0
+            L 0.0 343.6666666666667
+            L 2.5 343.6666666666667
+            L 2.5 342.0
+            L 5.0 342.0
+            L 5.0 352.0
+            L 2.5 352.0
+            L 2.5 350.3333333333333
+            L 0.0 350.3333333333333
+            L 0.0 352.0
+            L -5.0 352.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="351" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_10</text>
+<text x="-15" y="350" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="350" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 10</text>
+<path d="M -5.0 368.0
+            L 0.0 368.0
+            L 0.0 369.6666666666667
+            L 2.5 369.6666666666667
+            L 2.5 368.0
+            L 5.0 368.0
+            L 5.0 378.0
+            L 2.5 378.0
+            L 2.5 376.3333333333333
+            L 0.0 376.3333333333333
+            L 0.0 378.0
+            L -5.0 378.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="377" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_11</text>
+<text x="-15" y="376" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="376" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 11</text>
+<path d="M -5.0 394.0
+            L 0.0 394.0
+            L 0.0 395.6666666666667
+            L 2.5 395.6666666666667
+            L 2.5 394.0
+            L 5.0 394.0
+            L 5.0 404.0
+            L 2.5 404.0
+            L 2.5 402.3333333333333
+            L 0.0 402.3333333333333
+            L 0.0 404.0
+            L -5.0 404.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="403" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_12</text>
+<text x="-15" y="402" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="402" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 12</text>
+<path d="M -5.0 420.0
+            L 0.0 420.0
+            L 0.0 421.6666666666667
+            L 2.5 421.6666666666667
+            L 2.5 420.0
+            L 5.0 420.0
+            L 5.0 430.0
+            L 2.5 430.0
+            L 2.5 428.3333333333333
+            L 0.0 428.3333333333333
+            L 0.0 430.0
+            L -5.0 430.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="429" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_13</text>
+<text x="-15" y="428" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="428" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 13</text>
+<path d="M -5.0 446.0
+            L 0.0 446.0
+            L 0.0 447.6666666666667
+            L 2.5 447.6666666666667
+            L 2.5 446.0
+            L 5.0 446.0
+            L 5.0 456.0
+            L 2.5 456.0
+            L 2.5 454.3333333333333
+            L 0.0 454.3333333333333
+            L 0.0 456.0
+            L -5.0 456.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="455" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_14</text>
+<text x="-15" y="454" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="454" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 14</text>
+<path d="M -5.0 472.0
+            L 0.0 472.0
+            L 0.0 473.6666666666667
+            L 2.5 473.6666666666667
+            L 2.5 472.0
+            L 5.0 472.0
+            L 5.0 482.0
+            L 2.5 482.0
+            L 2.5 480.3333333333333
+            L 0.0 480.3333333333333
+            L 0.0 482.0
+            L -5.0 482.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="481" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_15</text>
+<text x="-15" y="480" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="480" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 15</text>
+<path d="M -5.0 498.0
+            L 0.0 498.0
+            L 0.0 499.6666666666667
+            L 2.5 499.6666666666667
+            L 2.5 498.0
+            L 5.0 498.0
+            L 5.0 508.0
+            L 2.5 508.0
+            L 2.5 506.3333333333333
+            L 0.0 506.3333333333333
+            L 0.0 508.0
+            L -5.0 508.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="507" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_16</text>
+<text x="-15" y="506" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="506" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 16</text>
+<path d="M -5.0 524.0
+            L 0.0 524.0
+            L 0.0 525.6666666666666
+            L 2.5 525.6666666666666
+            L 2.5 524.0
+            L 5.0 524.0
+            L 5.0 534.0
+            L 2.5 534.0
+            L 2.5 532.3333333333334
+            L 0.0 532.3333333333334
+            L 0.0 534.0
+            L -5.0 534.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="533" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_17</text>
+<text x="-15" y="532" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="532" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 17</text>
+<path d="M -5.0 550.0
+            L 0.0 550.0
+            L 0.0 551.6666666666666
+            L 2.5 551.6666666666666
+            L 2.5 550.0
+            L 5.0 550.0
+            L 5.0 560.0
+            L 2.5 560.0
+            L 2.5 558.3333333333334
+            L 0.0 558.3333333333334
+            L 0.0 560.0
+            L -5.0 560.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="559" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_18</text>
+<text x="-15" y="558" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="558" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 18</text>
+<path d="M -5.0 576.0
+            L 0.0 576.0
+            L 0.0 577.6666666666666
+            L 2.5 577.6666666666666
+            L 2.5 576.0
+            L 5.0 576.0
+            L 5.0 586.0
+            L 2.5 586.0
+            L 2.5 584.3333333333334
+            L 0.0 584.3333333333334
+            L 0.0 586.0
+            L -5.0 586.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="585" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_19</text>
+<text x="-15" y="584" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="584" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 19</text>
+<path d="M -5.0 602.0
+            L 0.0 602.0
+            L 0.0 603.6666666666666
+            L 2.5 603.6666666666666
+            L 2.5 602.0
+            L 5.0 602.0
+            L 5.0 612.0
+            L 2.5 612.0
+            L 2.5 610.3333333333334
+            L 0.0 610.3333333333334
+            L 0.0 612.0
+            L -5.0 612.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="611" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_20</text>
+<text x="-15" y="610" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="610" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 20</text>
+<path d="M -5.0 628.0
+            L 0.0 628.0
+            L 0.0 629.6666666666666
+            L 2.5 629.6666666666666
+            L 2.5 628.0
+            L 5.0 628.0
+            L 5.0 638.0
+            L 2.5 638.0
+            L 2.5 636.3333333333334
+            L 0.0 636.3333333333334
+            L 0.0 638.0
+            L -5.0 638.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="637" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_21</text>
+<text x="-15" y="636" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="636" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 21</text>
+<path d="M -5.0 654.0
+            L 0.0 654.0
+            L 0.0 655.6666666666666
+            L 2.5 655.6666666666666
+            L 2.5 654.0
+            L 5.0 654.0
+            L 5.0 664.0
+            L 2.5 664.0
+            L 2.5 662.3333333333334
+            L 0.0 662.3333333333334
+            L 0.0 664.0
+            L -5.0 664.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="663" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_22</text>
+<text x="-15" y="662" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="662" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 22</text>
+<path d="M -5.0 680.0
+            L 0.0 680.0
+            L 0.0 681.6666666666666
+            L 2.5 681.6666666666666
+            L 2.5 680.0
+            L 5.0 680.0
+            L 5.0 690.0
+            L 2.5 690.0
+            L 2.5 688.3333333333334
+            L 0.0 688.3333333333334
+            L 0.0 690.0
+            L -5.0 690.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="689" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_23</text>
+<text x="-15" y="688" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="688" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 23</text>
+<path d="M -5.0 706.0
+            L 0.0 706.0
+            L 0.0 707.6666666666666
+            L 2.5 707.6666666666666
+            L 2.5 706.0
+            L 5.0 706.0
+            L 5.0 716.0
+            L 2.5 716.0
+            L 2.5 714.3333333333334
+            L 0.0 714.3333333333334
+            L 0.0 716.0
+            L -5.0 716.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="715" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_24</text>
+<text x="-15" y="714" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="714" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 24</text>
+<path d="M -5.0 732.0
+            L 0.0 732.0
+            L 0.0 733.6666666666666
+            L 2.5 733.6666666666666
+            L 2.5 732.0
+            L 5.0 732.0
+            L 5.0 742.0
+            L 2.5 742.0
+            L 2.5 740.3333333333334
+            L 0.0 740.3333333333334
+            L 0.0 742.0
+            L -5.0 742.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="741" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_25</text>
+<text x="-15" y="740" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="740" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 25</text>
+<path d="M -5.0 758.0
+            L 0.0 758.0
+            L 0.0 759.6666666666666
+            L 2.5 759.6666666666666
+            L 2.5 758.0
+            L 5.0 758.0
+            L 5.0 768.0
+            L 2.5 768.0
+            L 2.5 766.3333333333334
+            L 0.0 766.3333333333334
+            L 0.0 768.0
+            L -5.0 768.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="767" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_26</text>
+<text x="-15" y="766" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="766" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 26</text>
+<path d="M -5.0 784.0
+            L 0.0 784.0
+            L 0.0 785.6666666666666
+            L 2.5 785.6666666666666
+            L 2.5 784.0
+            L 5.0 784.0
+            L 5.0 794.0
+            L 2.5 794.0
+            L 2.5 792.3333333333334
+            L 0.0 792.3333333333334
+            L 0.0 794.0
+            L -5.0 794.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="793" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_27</text>
+<text x="-15" y="792" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="792" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 27</text>
+<path d="M -5.0 810.0
+            L 0.0 810.0
+            L 0.0 811.6666666666666
+            L 2.5 811.6666666666666
+            L 2.5 810.0
+            L 5.0 810.0
+            L 5.0 820.0
+            L 2.5 820.0
+            L 2.5 818.3333333333334
+            L 0.0 818.3333333333334
+            L 0.0 820.0
+            L -5.0 820.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="819" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_28</text>
+<text x="-15" y="818" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="818" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 28</text>
+<path d="M -5.0 836.0
+            L 0.0 836.0
+            L 0.0 837.6666666666666
+            L 2.5 837.6666666666666
+            L 2.5 836.0
+            L 5.0 836.0
+            L 5.0 846.0
+            L 2.5 846.0
+            L 2.5 844.3333333333334
+            L 0.0 844.3333333333334
+            L 0.0 846.0
+            L -5.0 846.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="845" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_29</text>
+<text x="-15" y="844" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="844" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 29</text>
+<path d="M -5.0 862.0
+            L 0.0 862.0
+            L 0.0 863.6666666666666
+            L 2.5 863.6666666666666
+            L 2.5 862.0
+            L 5.0 862.0
+            L 5.0 872.0
+            L 2.5 872.0
+            L 2.5 870.3333333333334
+            L 0.0 870.3333333333334
+            L 0.0 872.0
+            L -5.0 872.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="871" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_30</text>
+<text x="-15" y="870" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="870" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 30</text>
+<path d="M -5.0 888.0
+            L 0.0 888.0
+            L 0.0 889.6666666666666
+            L 2.5 889.6666666666666
+            L 2.5 888.0
+            L 5.0 888.0
+            L 5.0 898.0
+            L 2.5 898.0
+            L 2.5 896.3333333333334
+            L 0.0 896.3333333333334
+            L 0.0 898.0
+            L -5.0 898.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="897" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BIT_31</text>
+<text x="-15" y="896" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="-78" y="896" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bool Bit 31</text>
+<path d="M 225.0 82.0
+            L 227.5 82.0
+            L 227.5 83.66666666666667
+            L 230.0 83.66666666666667
+            L 230.0 82.0
+            L 235.0 82.0
+            L 235.0 92.0
+            L 230.0 92.0
+            L 230.0 90.33333333333333
+            L 227.5 90.33333333333333
+            L 227.5 92.0
+            L 225.0 92.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="218" y="91" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="245" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AD</text>
+<text x="315" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">DWORD Output</text>
 </svg>

@@ -1,33 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1280" height="275" viewBox="-540 -20 1280 275">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="200" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H200 V118 H194 V158 H200 V225 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L200,30" stroke="#000000" stroke-width="1" />
-<text x="100.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ILOCK_T_FF_SR_AX</text>
-<text x="100.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 197 0
+            A 3 3 0 0 1 200 3
+            L 200 115
+            A 3 3 0 0 1 197 118
+            L 194 118
+            L 194 158
+            L 197 158
+            A 3 3 0 0 1 200 161
+            L 200 222
+            A 3 3 0 0 1 197 225
+            L 3 225
+            A 3 3 0 0 1 0 222
+            L 0 161
+            A 3 3 0 0 1 3 158
+            L 6 158
+            L 6 118
+            L 3 118
+            A 3 3 0 0 1 0 115
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 25.5 129.0
+            L 41.5 129.0
+            A 1 1 0 0 1 42.5 130.0
+            L 42.5 133.5
+            L 40.5 133.5
+            L 40.5 136.5
+            L 42.5 136.5
+            L 42.5 146.0
+            A 1 1 0 0 1 41.5 147.0
+            L 25.5 147.0
+            A 1 1 0 0 1 24.5 146.0
+            L 24.5 136.5
+            L 26.5 136.5
+            L 26.5 133.5
+            L 24.5 133.5
+            L 24.5 130.0
+            A 1 1 0 0 1 25.5 129.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="33.5" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
+<text x="47.5" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">ILOCK_T_FF_SR_AX</text>
+<text x="100.0" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">S</text>
-<text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-114" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Set output Q</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S</text>
+<text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-114" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Set output Q</text>
 <path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">R</text>
-<text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-114" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset output Q</text>
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">R</text>
+<text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-114" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset output Q</text>
 <path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">CLK</text>
-<text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-114" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Clock for triggering a output toggle</text>
-<rect x="-5.0" y="170.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">ILOCK_IN</text>
-<text x="-15" y="178" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AE2</text>
-<rect x="195.0" y="170.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="188" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">ILOCK_OUT</text>
-<text x="215" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AE2</text>
-<rect x="195.0" y="196.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="188" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
-<text x="215" y="204" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="285" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output</text>
+<text x="12" y="98" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">CLK</text>
+<text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-114" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Clock for triggering a output toggle</text>
+<path d="M -5.0 170.0
+            L 0.0 170.0
+            L 0.0 171.66666666666666
+            L 2.5 171.66666666666666
+            L 2.5 170.0
+            L 5.0 170.0
+            L 5.0 180.0
+            L 2.5 180.0
+            L 2.5 178.33333333333334
+            L 0.0 178.33333333333334
+            L 0.0 180.0
+            L -5.0 180.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ILOCK_IN</text>
+<text x="-15" y="178" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AE2</text>
+<path d="M 195.0 170.0
+            L 197.5 170.0
+            L 197.5 171.66666666666666
+            L 200.0 171.66666666666666
+            L 200.0 170.0
+            L 205.0 170.0
+            L 205.0 180.0
+            L 200.0 180.0
+            L 200.0 178.33333333333334
+            L 197.5 178.33333333333334
+            L 197.5 180.0
+            L 195.0 180.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="188" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ILOCK_OUT</text>
+<text x="215" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AE2</text>
+<path d="M 195.0 196.0
+            L 197.5 196.0
+            L 197.5 197.66666666666666
+            L 200.0 197.66666666666666
+            L 200.0 196.0
+            L 205.0 196.0
+            L 205.0 206.0
+            L 200.0 206.0
+            L 200.0 204.33333333333334
+            L 197.5 204.33333333333334
+            L 197.5 206.0
+            L 195.0 206.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="188" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q</text>
+<text x="215" y="204" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<text x="285" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output</text>
 </svg>

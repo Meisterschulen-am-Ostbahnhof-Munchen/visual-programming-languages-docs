@@ -38,5 +38,6 @@ Here you will find function blocks that map network communication (publish/subsc
 * [AUS_SUBSCRIBE_1](AUS_SUBSCRIBE_1.md)
 * [AW_PUBLISH_1](AW_PUBLISH_1.md)
 * [AW_SUBSCRIBE_1](AW_SUBSCRIBE_1.md)
+* [AX_CLIENT_1_0](AX_CLIENT_1_0.md)
 * [AX_PUBLISH_1](AX_PUBLISH_1.md)
 * [AX_SUBSCRIBE_1](AX_SUBSCRIBE_1.md)

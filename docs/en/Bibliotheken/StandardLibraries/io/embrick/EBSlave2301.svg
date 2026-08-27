@@ -1,92 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1020" height="431" viewBox="-548 -20 1020 431">
+     width="1270" height="431" viewBox="-548 -20 1270 431">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="166" height="381" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H166 V92 H160 V132 H166 V381 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L166,30" stroke="#000000" stroke-width="1" />
-<text x="83.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">EBSlave2301</text>
-<text x="83.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 163 0
+            A 3 3 0 0 1 166 3
+            L 166 89
+            A 3 3 0 0 1 163 92
+            L 160 92
+            L 160 132
+            L 163 132
+            A 3 3 0 0 1 166 135
+            L 166 378
+            A 3 3 0 0 1 163 381
+            L 3 381
+            A 3 3 0 0 1 0 378
+            L 0 135
+            A 3 3 0 0 1 3 132
+            L 6 132
+            L 6 92
+            L 3 92
+            A 3 3 0 0 1 0 89
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 28.5 103.0
+            L 44.5 103.0
+            A 1 1 0 0 1 45.5 104.0
+            L 45.5 107.5
+            L 43.5 107.5
+            L 43.5 110.5
+            L 45.5 110.5
+            L 45.5 120.0
+            A 1 1 0 0 1 44.5 121.0
+            L 28.5 121.0
+            A 1 1 0 0 1 27.5 120.0
+            L 27.5 110.5
+            L 29.5 110.5
+            L 29.5 107.5
+            L 27.5 107.5
+            L 27.5 104.0
+            A 1 1 0 0 1 28.5 103.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="36.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
+<text x="50.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">EBSlave2301</text>
+<text x="83.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">3.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">MAP</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Map Pins</text>
-<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">BusAdapterIn</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">EBBusAdapter</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">MAP</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Map Pins</text>
+<path d="M -5.0 144.0
+            L 0.0 144.0
+            L 0.0 145.66666666666666
+            L 2.5 145.66666666666666
+            L 2.5 144.0
+            L 5.0 144.0
+            L 5.0 154.0
+            L 2.5 154.0
+            L 2.5 152.33333333333334
+            L 0.0 152.33333333333334
+            L 0.0 154.0
+            L -5.0 154.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BusAdapterIn</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">EBBusAdapter</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="-153" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
 <path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">Relay_1</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Relay_1</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
 <path d="M-5,222 L-5,232 L0,227 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">Relay_2</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Relay_2</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
 <path d="M-5,248 L-5,258 L0,253 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">Relay_3</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Relay_3</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
 <path d="M-5,274 L-5,284 L0,279 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">Relay_4</text>
-<text x="-23" y="282" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Relay_4</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
 <path d="M-5,300 L-5,310 L0,305 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">Relay_5</text>
-<text x="-23" y="308" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Relay_5</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
 <path d="M-5,326 L-5,336 L0,331 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">Relay_6</text>
-<text x="-23" y="334" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="12" y="335" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Relay_6</text>
+<text x="-23" y="334" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
 <path d="M-5,352 L-5,362 L0,357 Z" fill="#18519E" stroke="none" />
-<text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">UpdateInterval</text>
-<text x="-23" y="360" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<text x="-138" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Update interval of slave module in Hz (inherited from Master)</text>
+<text x="12" y="361" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">UpdateInterval</text>
+<text x="-23" y="360" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
+<text x="-153" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Update interval of slave module in Hz (inherited</text>
+<text x="-153" y="372" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">from Master)</text>
 <path d="M166,37 L166,47 L171,42 Z" fill="#63B31F" stroke="none" />
-<text x="154" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">MAPO</text>
-<text x="197" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="267" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirm Pin Mapping</text>
+<text x="154" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">MAPO</text>
+<text x="197" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="267" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirm Pin Mapping</text>
 <path d="M166,63 L166,73 L171,68 Z" fill="#63B31F" stroke="none" />
-<text x="154" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
-<text x="197" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="267" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
-<rect x="161.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="154" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">BusAdapterOut</text>
-<text x="197" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">EBBusAdapter</text>
-<path d="M166,170 L166,180 L171,175 Z" fill="#9FA48A" stroke="none" />
-<text x="154" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="197" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="267" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<text x="154" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
+<text x="197" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="267" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Indication from Resource</text>
+<path d="M 161.0 144.0
+            L 163.5 144.0
+            L 163.5 145.66666666666666
+            L 166.0 145.66666666666666
+            L 166.0 144.0
+            L 171.0 144.0
+            L 171.0 154.0
+            L 166.0 154.0
+            L 166.0 152.33333333333334
+            L 163.5 152.33333333333334
+            L 163.5 154.0
+            L 161.0 154.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="154" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">BusAdapterOut</text>
+<text x="197" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">EBBusAdapter</text>
+<path d="M166,170 L166,180 L171,175 Z" fill="#A3B08F" stroke="none" />
+<text x="154" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
+<text x="197" y="178" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="267" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
 <path d="M166,196 L166,206 L171,201 Z" fill="#BD8663" stroke="none" />
-<text x="154" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="197" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<text x="267" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
-<path d="M-12,42 L-12,331" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
+<text x="154" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="197" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
+<text x="267" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
+<path d="M-12,42 L-12,331" stroke="#000000" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#000000" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#404040" />
+<path d="M-12,201 L-5,201" stroke="#000000" />
 <rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#404040" />
+<path d="M-12,227 L-5,227" stroke="#000000" />
 <rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,253 L-5,253" stroke="#404040" />
+<path d="M-12,253 L-5,253" stroke="#000000" />
 <rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,279 L-5,279" stroke="#404040" />
+<path d="M-12,279 L-5,279" stroke="#000000" />
 <rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,305 L-5,305" stroke="#404040" />
+<path d="M-12,305 L-5,305" stroke="#000000" />
 <rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,331 L-5,331" stroke="#404040" />
+<path d="M-12,331 L-5,331" stroke="#000000" />
 <rect x="-14" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#404040" />
+<path d="M-12,175 L-5,175" stroke="#000000" />
 <rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M178,42 L178,175" stroke="#404040" stroke-width="1" />
-<path d="M166,42 L178,42" stroke="#404040" />
+<path d="M178,42 L178,175" stroke="#000000" stroke-width="1" />
+<path d="M166,42 L178,42" stroke="#000000" />
 <rect x="176" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M178,175 L171,175" stroke="#404040" />
+<path d="M178,175 L171,175" stroke="#000000" />
 <rect x="176" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M186,68 L186,201" stroke="#404040" stroke-width="1" />
-<path d="M166,68 L186,68" stroke="#404040" />
+<path d="M186,68 L186,201" stroke="#000000" stroke-width="1" />
+<path d="M166,68 L186,68" stroke="#000000" />
 <rect x="184" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M186,175 L171,175" stroke="#404040" />
+<path d="M186,175 L171,175" stroke="#000000" />
 <rect x="184" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M186,201 L171,201" stroke="#404040" />
+<path d="M186,201 L171,201" stroke="#000000" />
 <rect x="184" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
 </svg>

@@ -1,189 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1189" height="405" viewBox="-596 -20 1189 405">
+     width="1439" height="405" viewBox="-596 -20 1439 405">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="247" height="355" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H247 V222 H241 V262 H247 V355 H0 V262 H6 V222 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L247,30" stroke="#000000" stroke-width="1" />
-<text x="123.5" y="240.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">SchieberVerriegelung</text>
-<text x="123.5" y="254.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 244 0
+            A 3 3 0 0 1 247 3
+            L 247 219
+            A 3 3 0 0 1 244 222
+            L 241 222
+            L 241 262
+            L 244 262
+            A 3 3 0 0 1 247 265
+            L 247 352
+            A 3 3 0 0 1 244 355
+            L 3 355
+            A 3 3 0 0 1 0 352
+            L 0 265
+            A 3 3 0 0 1 3 262
+            L 6 262
+            L 6 222
+            L 3 222
+            A 3 3 0 0 1 0 219
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 33.0 233.0
+            L 49.0 233.0
+            A 1 1 0 0 1 50.0 234.0
+            L 50.0 237.5
+            L 48.0 237.5
+            L 48.0 240.5
+            L 50.0 240.5
+            L 50.0 250.0
+            A 1 1 0 0 1 49.0 251.0
+            L 33.0 251.0
+            A 1 1 0 0 1 32.0 250.0
+            L 32.0 240.5
+            L 34.0 240.5
+            L 34.0 237.5
+            L 32.0 237.5
+            L 32.0 234.0
+            A 1 1 0 0 1 33.0 233.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="41.0" y="247.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="55.0" y="247.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">SchieberVerriegelung</text>
+<text x="123.5" y="262.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="-71" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-141" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Initialization Request</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="-71" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-151" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Request</text>
 <path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_Hauptschieber_Open</text>
-<text x="-71" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI_Hauptschieber_Open</text>
+<text x="-71" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_Hauptschieber_Close</text>
-<text x="-71" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="12" y="98" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI_Hauptschieber_Close</text>
+<text x="-71" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberLinks_Open</text>
-<text x="-71" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="12" y="124" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI_SchieberLinks_Open</text>
+<text x="-71" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberLinks_Close</text>
-<text x="-71" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="12" y="150" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI_SchieberLinks_Close</text>
+<text x="-71" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M-5,167 L-5,177 L0,172 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="176" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberRechts_Open</text>
-<text x="-71" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="12" y="176" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI_SchieberRechts_Open</text>
+<text x="-71" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M-5,193 L-5,203 L0,198 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="202" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberRechts_Close</text>
-<text x="-71" y="201" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-71" y="282" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-141" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input event qualifier</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_LINKS_GESPERRT</text>
-<text x="-71" y="308" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_RECHTS_GESPERRT</text>
-<text x="-71" y="334" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="12" y="202" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI_SchieberRechts_Close</text>
+<text x="-71" y="201" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
+<text x="-71" y="282" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="-151" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Input event qualifier</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DI_LINKS_GESPERRT</text>
+<text x="-71" y="308" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#A3B08F" stroke="none" />
+<text x="12" y="335" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DI_RECHTS_GESPERRT</text>
+<text x="-71" y="334" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
 <path d="M247,37 L247,47 L252,42 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="318" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="388" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<text x="235" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="318" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="388" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
 <path d="M247,63 L247,73 L252,68 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_Hauptschieber_Open</text>
-<text x="318" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="235" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_Hauptschieber_Open</text>
+<text x="318" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M247,89 L247,99 L252,94 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_Hauptschieber_Close</text>
-<text x="318" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="235" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_Hauptschieber_Close</text>
+<text x="318" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M247,115 L247,125 L252,120 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberLinks_Open</text>
-<text x="318" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="235" y="124" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_SchieberLinks_Open</text>
+<text x="318" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M247,141 L247,151 L252,146 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberLinks_Close</text>
-<text x="318" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="235" y="150" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_SchieberLinks_Close</text>
+<text x="318" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M247,167 L247,177 L252,172 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="176" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberRechts_Open</text>
-<text x="318" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="235" y="176" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_SchieberRechts_Open</text>
+<text x="318" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
 <path d="M247,193 L247,203 L252,198 Z" fill="#63B31F" stroke="none" />
-<text x="235" y="202" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberRechts_Close</text>
-<text x="318" y="201" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,274 L247,284 L252,279 Z" fill="#9FA48A" stroke="none" />
-<text x="235" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="318" y="282" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="388" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output event qualifier</text>
-<path d="M247,300 L247,310 L252,305 Z" fill="#9FA48A" stroke="none" />
-<text x="235" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_LINKS_GESPERRT</text>
-<text x="318" y="308" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M247,326 L247,336 L252,331 Z" fill="#9FA48A" stroke="none" />
-<text x="235" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_RECHTS_GESPERRT</text>
-<text x="318" y="334" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M-12,42 L-12,331" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
+<text x="235" y="202" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_SchieberRechts_Close</text>
+<text x="318" y="201" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M247,274 L247,284 L252,279 Z" fill="#A3B08F" stroke="none" />
+<text x="235" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
+<text x="318" y="282" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<text x="388" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output event qualifier</text>
+<path d="M247,300 L247,310 L252,305 Z" fill="#A3B08F" stroke="none" />
+<text x="235" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_LINKS_GESPERRT</text>
+<text x="318" y="308" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<path d="M247,326 L247,336 L252,331 Z" fill="#A3B08F" stroke="none" />
+<text x="235" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_RECHTS_GESPERRT</text>
+<text x="318" y="334" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
+<path d="M-12,42 L-12,331" stroke="#000000" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#000000" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,279 L-5,279" stroke="#404040" />
+<path d="M-12,279 L-5,279" stroke="#000000" />
 <rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,305 L-5,305" stroke="#404040" />
+<path d="M-12,305 L-5,305" stroke="#000000" />
 <rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,331 L-5,331" stroke="#404040" />
+<path d="M-12,331 L-5,331" stroke="#000000" />
 <rect x="-14" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,68 L-20,331" stroke="#404040" stroke-width="1" />
-<path d="M0,68 L-20,68" stroke="#404040" />
+<path d="M-20,68 L-20,331" stroke="#000000" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#000000" />
 <rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,279 L-5,279" stroke="#404040" />
+<path d="M-20,279 L-5,279" stroke="#000000" />
 <rect x="-22" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,305 L-5,305" stroke="#404040" />
+<path d="M-20,305 L-5,305" stroke="#000000" />
 <rect x="-22" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,331 L-5,331" stroke="#404040" />
+<path d="M-20,331 L-5,331" stroke="#000000" />
 <rect x="-22" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,94 L-28,331" stroke="#404040" stroke-width="1" />
-<path d="M0,94 L-28,94" stroke="#404040" />
+<path d="M-28,94 L-28,331" stroke="#000000" stroke-width="1" />
+<path d="M0,94 L-28,94" stroke="#000000" />
 <rect x="-30" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,279 L-5,279" stroke="#404040" />
+<path d="M-28,279 L-5,279" stroke="#000000" />
 <rect x="-30" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,305 L-5,305" stroke="#404040" />
+<path d="M-28,305 L-5,305" stroke="#000000" />
 <rect x="-30" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,331 L-5,331" stroke="#404040" />
+<path d="M-28,331 L-5,331" stroke="#000000" />
 <rect x="-30" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-36,120 L-36,331" stroke="#404040" stroke-width="1" />
-<path d="M0,120 L-36,120" stroke="#404040" />
+<path d="M-36,120 L-36,331" stroke="#000000" stroke-width="1" />
+<path d="M0,120 L-36,120" stroke="#000000" />
 <rect x="-38" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-36,279 L-5,279" stroke="#404040" />
+<path d="M-36,279 L-5,279" stroke="#000000" />
 <rect x="-38" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-36,305 L-5,305" stroke="#404040" />
+<path d="M-36,305 L-5,305" stroke="#000000" />
 <rect x="-38" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-36,331 L-5,331" stroke="#404040" />
+<path d="M-36,331 L-5,331" stroke="#000000" />
 <rect x="-38" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-44,146 L-44,331" stroke="#404040" stroke-width="1" />
-<path d="M0,146 L-44,146" stroke="#404040" />
+<path d="M-44,146 L-44,331" stroke="#000000" stroke-width="1" />
+<path d="M0,146 L-44,146" stroke="#000000" />
 <rect x="-46" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-44,279 L-5,279" stroke="#404040" />
+<path d="M-44,279 L-5,279" stroke="#000000" />
 <rect x="-46" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-44,305 L-5,305" stroke="#404040" />
+<path d="M-44,305 L-5,305" stroke="#000000" />
 <rect x="-46" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-44,331 L-5,331" stroke="#404040" />
+<path d="M-44,331 L-5,331" stroke="#000000" />
 <rect x="-46" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-52,172 L-52,331" stroke="#404040" stroke-width="1" />
-<path d="M0,172 L-52,172" stroke="#404040" />
+<path d="M-52,172 L-52,331" stroke="#000000" stroke-width="1" />
+<path d="M0,172 L-52,172" stroke="#000000" />
 <rect x="-54" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-52,279 L-5,279" stroke="#404040" />
+<path d="M-52,279 L-5,279" stroke="#000000" />
 <rect x="-54" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-52,305 L-5,305" stroke="#404040" />
+<path d="M-52,305 L-5,305" stroke="#000000" />
 <rect x="-54" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-52,331 L-5,331" stroke="#404040" />
+<path d="M-52,331 L-5,331" stroke="#000000" />
 <rect x="-54" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-60,198 L-60,331" stroke="#404040" stroke-width="1" />
-<path d="M0,198 L-60,198" stroke="#404040" />
+<path d="M-60,198 L-60,331" stroke="#000000" stroke-width="1" />
+<path d="M0,198 L-60,198" stroke="#000000" />
 <rect x="-62" y="196" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-60,279 L-5,279" stroke="#404040" />
+<path d="M-60,279 L-5,279" stroke="#000000" />
 <rect x="-62" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-60,305 L-5,305" stroke="#404040" />
+<path d="M-60,305 L-5,305" stroke="#000000" />
 <rect x="-62" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-60,331 L-5,331" stroke="#404040" />
+<path d="M-60,331 L-5,331" stroke="#000000" />
 <rect x="-62" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M259,42 L259,331" stroke="#404040" stroke-width="1" />
-<path d="M247,42 L259,42" stroke="#404040" />
+<path d="M259,42 L259,331" stroke="#000000" stroke-width="1" />
+<path d="M247,42 L259,42" stroke="#000000" />
 <rect x="257" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M259,279 L252,279" stroke="#404040" />
+<path d="M259,279 L252,279" stroke="#000000" />
 <rect x="257" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M259,305 L252,305" stroke="#404040" />
+<path d="M259,305 L252,305" stroke="#000000" />
 <rect x="257" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M259,331 L252,331" stroke="#404040" />
+<path d="M259,331 L252,331" stroke="#000000" />
 <rect x="257" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M267,68 L267,331" stroke="#404040" stroke-width="1" />
-<path d="M247,68 L267,68" stroke="#404040" />
+<path d="M267,68 L267,331" stroke="#000000" stroke-width="1" />
+<path d="M247,68 L267,68" stroke="#000000" />
 <rect x="265" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M267,305 L252,305" stroke="#404040" />
+<path d="M267,305 L252,305" stroke="#000000" />
 <rect x="265" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M267,331 L252,331" stroke="#404040" />
+<path d="M267,331 L252,331" stroke="#000000" />
 <rect x="265" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M275,94 L275,331" stroke="#404040" stroke-width="1" />
-<path d="M247,94 L275,94" stroke="#404040" />
+<path d="M275,94 L275,331" stroke="#000000" stroke-width="1" />
+<path d="M247,94 L275,94" stroke="#000000" />
 <rect x="273" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M275,305 L252,305" stroke="#404040" />
+<path d="M275,305 L252,305" stroke="#000000" />
 <rect x="273" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M275,331 L252,331" stroke="#404040" />
+<path d="M275,331 L252,331" stroke="#000000" />
 <rect x="273" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M283,120 L283,331" stroke="#404040" stroke-width="1" />
-<path d="M247,120 L283,120" stroke="#404040" />
+<path d="M283,120 L283,331" stroke="#000000" stroke-width="1" />
+<path d="M247,120 L283,120" stroke="#000000" />
 <rect x="281" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M283,305 L252,305" stroke="#404040" />
+<path d="M283,305 L252,305" stroke="#000000" />
 <rect x="281" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M283,331 L252,331" stroke="#404040" />
+<path d="M283,331 L252,331" stroke="#000000" />
 <rect x="281" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M291,146 L291,331" stroke="#404040" stroke-width="1" />
-<path d="M247,146 L291,146" stroke="#404040" />
+<path d="M291,146 L291,331" stroke="#000000" stroke-width="1" />
+<path d="M247,146 L291,146" stroke="#000000" />
 <rect x="289" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M291,305 L252,305" stroke="#404040" />
+<path d="M291,305 L252,305" stroke="#000000" />
 <rect x="289" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M291,331 L252,331" stroke="#404040" />
+<path d="M291,331 L252,331" stroke="#000000" />
 <rect x="289" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M299,172 L299,331" stroke="#404040" stroke-width="1" />
-<path d="M247,172 L299,172" stroke="#404040" />
+<path d="M299,172 L299,331" stroke="#000000" stroke-width="1" />
+<path d="M247,172 L299,172" stroke="#000000" />
 <rect x="297" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M299,305 L252,305" stroke="#404040" />
+<path d="M299,305 L252,305" stroke="#000000" />
 <rect x="297" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M299,331 L252,331" stroke="#404040" />
+<path d="M299,331 L252,331" stroke="#000000" />
 <rect x="297" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M307,198 L307,331" stroke="#404040" stroke-width="1" />
-<path d="M247,198 L307,198" stroke="#404040" />
+<path d="M307,198 L307,331" stroke="#000000" stroke-width="1" />
+<path d="M247,198 L307,198" stroke="#000000" />
 <rect x="305" y="196" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M307,305 L252,305" stroke="#404040" />
+<path d="M307,305 L252,305" stroke="#000000" />
 <rect x="305" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M307,331 L252,331" stroke="#404040" />
+<path d="M307,331 L252,331" stroke="#000000" />
 <rect x="305" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
 </svg>

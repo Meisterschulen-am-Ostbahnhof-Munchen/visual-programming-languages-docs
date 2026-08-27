@@ -1,90 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1094" height="327" viewBox="-556 -20 1094 327">
+     width="1344" height="327" viewBox="-556 -20 1344 327">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="240" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H240 V92 H234 V132 H240 V277 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L240,30" stroke="#000000" stroke-width="1" />
-<text x="120.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_ChangePolygonPoint</text>
-<text x="120.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 237 0
+            A 3 3 0 0 1 240 3
+            L 240 89
+            A 3 3 0 0 1 237 92
+            L 234 92
+            L 234 132
+            L 237 132
+            A 3 3 0 0 1 240 135
+            L 240 274
+            A 3 3 0 0 1 237 277
+            L 3 277
+            A 3 3 0 0 1 0 274
+            L 0 135
+            A 3 3 0 0 1 3 132
+            L 6 132
+            L 6 92
+            L 3 92
+            A 3 3 0 0 1 0 89
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 29.5 103.0
+            L 45.5 103.0
+            A 1 1 0 0 1 46.5 104.0
+            L 46.5 107.5
+            L 44.5 107.5
+            L 44.5 110.5
+            L 46.5 110.5
+            L 46.5 120.0
+            A 1 1 0 0 1 45.5 121.0
+            L 29.5 121.0
+            A 1 1 0 0 1 28.5 120.0
+            L 28.5 110.5
+            L 30.5 110.5
+            L 30.5 107.5
+            L 28.5 107.5
+            L 28.5 104.0
+            A 1 1 0 0 1 29.5 103.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="37.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
+<text x="51.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Q_ChangePolygonPoint</text>
+<text x="120.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
+<text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-161" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
 <path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-161" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Request</text>
 <path d="M-5,144 L-5,154 L0,149 Z" fill="#18519E" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
-<text x="-31" y="152" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<text x="-134" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Object ID of the Output Polygon object to change </text>
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">u16ObjId</text>
+<text x="-31" y="152" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
+<text x="-161" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Object ID of the Output Polygon object to change </text>
 <path d="M-5,170 L-5,180 L0,175 Z" fill="#18519E" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8PointIndex</text>
-<text x="-31" y="178" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
-<text x="-101" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Point index of the point to replace.</text>
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">u8PointIndex</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">USINT</text>
+<text x="-161" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Point index of the point to replace.</text>
 <path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16NewXValue</text>
-<text x="-31" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<text x="-155" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New X value of a point relative to the top left corner of the polygon </text>
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">u16NewXValue</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
+<text x="-161" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">New X value of a point relative to the top left</text>
+<text x="-161" y="216" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">corner of the polygon </text>
 <path d="M-5,222 L-5,232 L0,227 Z" fill="#18519E" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16NewYValue</text>
-<text x="-31" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<text x="-155" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New Y value of a point relative to the top left corner of the polygon </text>
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">u16NewYValue</text>
+<text x="-31" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
+<text x="-161" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">New Y value of a point relative to the top left</text>
+<text x="-161" y="242" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">corner of the polygon </text>
 <path d="M240,37 L240,47 L245,42 Z" fill="#63B31F" stroke="none" />
-<text x="228" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="263" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="333" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<text x="228" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
+<text x="263" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="333" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
 <path d="M240,63 L240,73 L245,68 Z" fill="#63B31F" stroke="none" />
-<text x="228" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="263" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="333" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
+<text x="228" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="263" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="333" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirmation of Requested Service</text>
 <path d="M240,144 L240,154 L245,149 Z" fill="#BD8663" stroke="none" />
-<text x="228" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="263" y="152" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<text x="333" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<text x="228" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
+<text x="263" y="152" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
+<text x="333" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
 <path d="M240,170 L240,180 L245,175 Z" fill="#18519E" stroke="none" />
-<text x="228" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldPointIndex</text>
-<text x="263" y="178" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
-<text x="333" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old point index of the point to replace.</text>
+<text x="228" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">u8OldPointIndex</text>
+<text x="263" y="178" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">USINT</text>
+<text x="333" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Old point index of the point to replace.</text>
 <path d="M240,196 L240,206 L245,201 Z" fill="#18519E" stroke="none" />
-<text x="228" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">u16OldXValue</text>
-<text x="263" y="204" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<text x="333" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old X value of a point relative to the top left corner of the polygon </text>
+<text x="228" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">u16OldXValue</text>
+<text x="263" y="204" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
+<text x="333" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Old X value of a point relative to the top left</text>
+<text x="333" y="216" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">corner of the polygon </text>
 <path d="M240,222 L240,232 L245,227 Z" fill="#18519E" stroke="none" />
-<text x="228" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">u16OldYValue</text>
-<text x="263" y="230" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<text x="333" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old Y value of a point relative to the top left corner of the polygon </text>
+<text x="228" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">u16OldYValue</text>
+<text x="263" y="230" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
+<text x="333" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Old Y value of a point relative to the top left</text>
+<text x="333" y="242" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">corner of the polygon </text>
 <path d="M240,248 L240,258 L245,253 Z" fill="#18519E" stroke="none" />
-<text x="228" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
-<text x="263" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
-<text x="333" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">retval see description</text>
-<path d="M-12,42 L-12,149" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
+<text x="228" y="257" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">s16result</text>
+<text x="263" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">INT</text>
+<text x="333" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">retval see description</text>
+<path d="M-12,42 L-12,149" stroke="#000000" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#000000" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#404040" />
+<path d="M-12,149 L-5,149" stroke="#000000" />
 <rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,68 L-20,227" stroke="#404040" stroke-width="1" />
-<path d="M0,68 L-20,68" stroke="#404040" />
+<path d="M-20,68 L-20,227" stroke="#000000" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#000000" />
 <rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,175 L-5,175" stroke="#404040" />
+<path d="M-20,175 L-5,175" stroke="#000000" />
 <rect x="-22" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,201 L-5,201" stroke="#404040" />
+<path d="M-20,201 L-5,201" stroke="#000000" />
 <rect x="-22" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,227 L-5,227" stroke="#404040" />
+<path d="M-20,227 L-5,227" stroke="#000000" />
 <rect x="-22" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,68 L252,253" stroke="#404040" stroke-width="1" />
-<path d="M240,68 L252,68" stroke="#404040" />
+<path d="M252,68 L252,253" stroke="#000000" stroke-width="1" />
+<path d="M240,68 L252,68" stroke="#000000" />
 <rect x="250" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,149 L245,149" stroke="#404040" />
+<path d="M252,149 L245,149" stroke="#000000" />
 <rect x="250" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,253 L245,253" stroke="#404040" />
+<path d="M252,253 L245,253" stroke="#000000" />
 <rect x="250" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,175 L245,175" stroke="#404040" />
+<path d="M252,175 L245,175" stroke="#000000" />
 <rect x="250" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,201 L245,201" stroke="#404040" />
+<path d="M252,201 L245,201" stroke="#000000" />
 <rect x="250" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,227 L245,227" stroke="#404040" />
+<path d="M252,227 L245,227" stroke="#000000" />
 <rect x="250" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
 </svg>

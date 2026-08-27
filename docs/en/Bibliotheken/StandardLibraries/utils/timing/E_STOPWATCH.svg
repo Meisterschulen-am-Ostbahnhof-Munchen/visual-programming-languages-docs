@@ -1,58 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1004" height="275" viewBox="-540 -20 1004 275">
+     width="1254" height="275" viewBox="-540 -20 1254 275">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
 <defs>
-</defs>
-<rect x="3" y="3" width="150" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H150 V144 H144 V184 H150 V225 H0 V184 H6 V144 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L150,30" stroke="#000000" stroke-width="1" />
-<text x="75.0" y="162.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_STOPWATCH</text>
-<text x="75.0" y="176.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 147 0
+            A 3 3 0 0 1 150 3
+            L 150 141
+            A 3 3 0 0 1 147 144
+            L 144 144
+            L 144 184
+            L 147 184
+            A 3 3 0 0 1 150 187
+            L 150 222
+            A 3 3 0 0 1 147 225
+            L 3 225
+            A 3 3 0 0 1 0 222
+            L 0 187
+            A 3 3 0 0 1 3 184
+            L 6 184
+            L 6 144
+            L 3 144
+            A 3 3 0 0 1 0 141
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 20.5 155.0
+            L 36.5 155.0
+            A 1 1 0 0 1 37.5 156.0
+            L 37.5 159.5
+            L 35.5 159.5
+            L 35.5 162.5
+            L 37.5 162.5
+            L 37.5 172.0
+            A 1 1 0 0 1 36.5 173.0
+            L 20.5 173.0
+            A 1 1 0 0 1 19.5 172.0
+            L 19.5 162.5
+            L 21.5 162.5
+            L 21.5 159.5
+            L 19.5 159.5
+            L 19.5 156.0
+            A 1 1 0 0 1 20.5 155.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="28.5" y="169.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="42.5" y="169.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">E_STOPWATCH</text>
+<text x="75.0" y="184.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">3.0</text>
 <path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">START</text>
-<text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-85" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Start the stopwatch</text>
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">START</text>
+<text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Start the stopwatch</text>
 <path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">ET</text>
-<text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-85" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Trigger the Time output</text>
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ET</text>
+<text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Trigger the Time output</text>
 <path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOP</text>
-<text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-85" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Stop the stopwatch</text>
+<text x="12" y="98" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">STOP</text>
+<text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-101" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Stop the stopwatch</text>
 <path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">RESET</text>
-<text x="-15" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-85" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset the stopwatch to 0</text>
+<text x="12" y="124" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">RESET</text>
+<text x="-15" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="-101" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset the stopwatch to 0</text>
 <path d="M150,37 L150,47 L155,42 Z" fill="#63B31F" stroke="none" />
-<text x="138" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO</text>
-<text x="189" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="259" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output</text>
+<text x="138" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO</text>
+<text x="189" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="259" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output</text>
 <path d="M150,63 L150,73 L155,68 Z" fill="#63B31F" stroke="none" />
-<text x="138" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">ETO</text>
-<text x="189" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="259" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Trigger the Time output  confirm</text>
+<text x="138" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ETO</text>
+<text x="189" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="259" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Trigger the Time output  confirm</text>
 <path d="M150,89 L150,99 L155,94 Z" fill="#63B31F" stroke="none" />
-<text x="138" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">RESETO</text>
-<text x="189" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="259" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Reset the stopwatch to 0  confirm</text>
-<path d="M150,196 L150,206 L155,201 Z" fill="#0000FF" stroke="none" />
-<text x="138" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">TD</text>
-<text x="189" y="204" font-size="11" text-anchor="start" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="259" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">The measured time difference in milliseconds</text>
-<path d="M162,42 L162,201" stroke="#404040" stroke-width="1" />
-<path d="M150,42 L162,42" stroke="#404040" />
+<text x="138" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RESETO</text>
+<text x="189" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<text x="259" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset the stopwatch to 0  confirm</text>
+<path d="M150,196 L150,206 L155,201 Z" fill="#3366FF" stroke="none" />
+<text x="138" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TD</text>
+<text x="189" y="204" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
+<text x="259" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">The measured time difference in milliseconds</text>
+<path d="M162,42 L162,201" stroke="#000000" stroke-width="1" />
+<path d="M150,42 L162,42" stroke="#000000" />
 <rect x="160" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M162,201 L155,201" stroke="#404040" />
+<path d="M162,201 L155,201" stroke="#000000" />
 <rect x="160" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M170,68 L170,201" stroke="#404040" stroke-width="1" />
-<path d="M150,68 L170,68" stroke="#404040" />
+<path d="M170,68 L170,201" stroke="#000000" stroke-width="1" />
+<path d="M150,68 L170,68" stroke="#000000" />
 <rect x="168" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M170,201 L155,201" stroke="#404040" />
+<path d="M170,201 L155,201" stroke="#000000" />
 <rect x="168" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M178,94 L178,201" stroke="#404040" stroke-width="1" />
-<path d="M150,94 L178,94" stroke="#404040" />
+<path d="M178,94 L178,201" stroke="#000000" stroke-width="1" />
+<path d="M150,94 L178,94" stroke="#000000" />
 <rect x="176" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M178,201 L155,201" stroke="#404040" />
+<path d="M178,201 L155,201" stroke="#000000" />
 <rect x="176" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
 </svg>

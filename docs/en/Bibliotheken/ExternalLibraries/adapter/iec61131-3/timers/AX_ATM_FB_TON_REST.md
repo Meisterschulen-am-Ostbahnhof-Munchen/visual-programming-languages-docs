@@ -65,9 +65,13 @@ legal here — the fix is therefore to bridge through the plain-variable pair at
 re-emits it as a Plug feeding the wrapped timer's `IN` Socket; symmetrically,
 [AX_X_TO_BOOL](../../conversion/unidirectional/BOOL/AX_X_TO_BOOL.md) reads the wrapped timer's
 `Q` Plug and re-emits it onto this block's own `Q` Plug. The same pattern applies to `PT`/`ET`
-(`ATM_TIME_TO_TM`/`ATM_TM_TO_TIME`) and to the final `AR` handoff onto `REST`
-(`AR_R_TO_REAL`/its counterpart) — the same Socket-can-only-be-fed-by-a-Plug rule this works
-around applies to any adapter type, not just `AX`/`ATM`/`AR`.
+(`ATM_TIME_TO_TM`/`ATM_TM_TO_TIME`), each pair bridging one direction in and one direction out
+because the wrapped timer's socket and plug both need a bound value. `REST` only needs the
+outbound half of that pattern — it is computed purely internally and never fed from outside — so
+just [AR_R_TO_REAL](../../conversion/unidirectional/REAL/AR_R_TO_REAL.md) is used: it reads the
+internally computed `AR` (via its own `AR_IN` Socket, fed by `ALR_TO_R`'s Plug) and re-emits the
+plain `REAL` onto `REST`'s own Plug pins. The same Socket-can-only-be-fed-by-a-Plug rule this
+works around applies to any adapter type, not just `AX`/`ATM`/`AR`.
 
 ## Technical Details
 

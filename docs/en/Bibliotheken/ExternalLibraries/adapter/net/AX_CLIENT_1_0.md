@@ -8,7 +8,7 @@
 
 The **AX_CLIENT_1_0** function block is a composite function block that encapsulates the network-based `CLIENT_1_0` function block from the IEC 61499 standard library and maps its interface to a unidirectional **AX adapter**. A **BOOL** value present at the adapter socket `IN` is buffered via an internal D flip-flop (E_D_FF) and then sent via `CLIENT_1_0` as an OPC UA **write** to the remote node configured in `ID`.
 
-Unlike **AX_PUBLISH_1** (local publish/subscribe), `CLIENT_1_0` actively writes to a **remote** server – per the OPC UA addressing table in `opcua.adoc`, this is the correct block for a remote `WRITE`, whereas `PUBLISH_1`/`AX_PUBLISH_1` can only publish locally.
+The generic `CLIENT_1_0` network client writes to a **remote** server identified by an `ID` that corresponds to a connection on the server block. For OPC UA, an `ID` such as `opc_ua[WRITE;opc.tcp://192.168.1.12:4840#;...]` is a transport-specific example, not a requirement; unlike **AX_PUBLISH_1** (local publish/subscribe), `CLIENT_1_0` can write to a remote server.
 
 ## Interface Structure
 

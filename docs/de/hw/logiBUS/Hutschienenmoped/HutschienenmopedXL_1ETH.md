@@ -55,14 +55,13 @@ Spannungsteiler ist im Controller:
 
 | Signal:    | PIN (ESP32S3) |
 |------------|---------------|
-| LEDC_IO_0  | 12            |
-| LEDC_IO_1  | 11            |
 | RGB        | 38            |
 
 `GPIO_STR_NUM: 1` (ESP32-S3-DevKitC-1 mit ESP32-S3-WROOM-2-N32R8V)
 
-⚠️ Pin-Sharing: `LEDC_IO_0` (GPIO12) liegt auf demselben Pin wie `Input_I2`. Diese
-Funktionen können nur abwechselnd genutzt werden, nicht gleichzeitig.
+Servo-PWM (LEDC) gibt es hier nicht mehr als eigene Pins — Servo-Ausgänge werden
+jetzt direkt auf normale `Output_Qx`-Pins gelegt (jeder Ausgang kann per Software
+als Servo statt als reiner Digitalausgang konfiguriert werden).
 
 ## 🌐 Ethernet
 
@@ -77,11 +76,6 @@ W5500 (SPI) — externer Ethernet-Chip, anders als beim internen EMAC des ESP32-
 | CS         | 46            |
 | INT        | 48            |
 | PHY Reset  | 16            |
-
-⚠️ **Pin-Konflikt:** `LEDC_IO_1` (GPIO11, siehe LED-Strip-Tabelle oben) liegt auf
-demselben Pin wie das SPI-MOSI-Signal des W5500. Wird `LEDC_IO_1` angesteuert,
-während Ethernet aktiv ist, stören sich beide Funktionen gegenseitig. Auf dieser
-Variante darf `LEDC_IO_1` daher **nicht** genutzt werden.
 
 ## Weitere Infos
 

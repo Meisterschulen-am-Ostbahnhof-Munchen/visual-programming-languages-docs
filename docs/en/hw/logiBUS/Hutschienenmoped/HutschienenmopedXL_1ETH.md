@@ -52,14 +52,13 @@ Link to the devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/
 
 | Signal:   | PIN (ESP32S3) |
 |-----------|---------------|
-| LEDC_IO_0 | 12            |
-| LEDC_IO_1 | 11            |
 | RGB       | 38            |
 
 `GPIO_STR_NUM: 1` (ESP32-S3-DevKitC-1 with ESP32-S3-WROOM-2-N32R8V)
 
-⚠️ Pin sharing: `LEDC_IO_0` (GPIO12) is on the same pin as `Input_I2`. These
-functions can only be used alternately, not at the same time.
+Servo PWM (LEDC) no longer has dedicated pins here -- servo outputs are now driven
+directly on regular `Output_Qx` pins (any output can be configured in software as
+a servo instead of a plain digital output).
 
 ## 🌐 Ethernet
 
@@ -74,11 +73,6 @@ APIXON Node-ISO 20).
 | CS        | 46            |
 | INT       | 48            |
 | PHY Reset | 16            |
-
-⚠️ **Pin conflict:** `LEDC_IO_1` (GPIO11, see LED strip table above) is on the same
-pin as the W5500's SPI MOSI signal. Driving `LEDC_IO_1` while Ethernet is active
-will interfere with both functions. `LEDC_IO_1` must therefore **not** be used on
-this variant.
 
 ## More Information
 

@@ -54,13 +54,13 @@ Compared to the Hutschienenmoped XL, Q3/Q4 are on different pins (11/10 instead 
 
 | Signal:   | PIN (ESP32S3) |
 |-----------|---------------|
-| LEDC_IO_0 | 12            |
-| LEDC_IO_1 | 11            |
 | RGB       | 38            |
 
 `GPIO_STR_NUM: 1` (ESP32-S3-DevKitC-1 with ESP32-S3-WROOM-2-N32R8V)
 
-⚠️ Pin sharing: `LEDC_IO_0` (GPIO12) is on the same pin as `Input_I2`, `LEDC_IO_1` (GPIO11) is on the same pin as `Output_Q3`. These functions can only be used alternately, not at the same time.
+Servo PWM (LEDC) no longer has dedicated pins here -- servo outputs are now driven
+directly on regular `Output_Qx` pins (any output can be configured in software as
+a servo instead of a plain digital output).
 
 ## More Information
 

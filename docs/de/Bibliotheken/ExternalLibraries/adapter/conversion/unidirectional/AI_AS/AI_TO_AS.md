@@ -35,7 +35,7 @@ Der FB besitzt keine eigenen Daten-Ausgänge. Der konvertierte `SINT`-Wert wird 
 
 ## Funktionsweise
 
-Der Baustein führt eine **Typkonvertierung von `INT` nach `SINT`** durch.  
+Der Baustein führt eine **Typkonvertierung von `INT` nach `SINT`** durch.
 Sobald am Adapter-Eingang `AI_IN` ein Ereignis `E1` eintrifft, wird der zugehörige Datenwert `D1` (INT) ausgelesen. Dieser Wert wird dem internen Baustein `F_INT_TO_SINT` übergeben. Die Konvertierung erfolgt gemäß der IEC 61131-3-Definition; dabei wird der `INT`-Wert auf den Wertebereich von `SINT` (-128...127) begrenzt. Nach erfolgreicher Umwandlung wird am Adapter-Ausgang `AS_OUT` das Ereignis `E1` erzeugt und der konvertierte `SINT`-Wert über `D1` übergeben.
 
 ## Technische Besonderheiten

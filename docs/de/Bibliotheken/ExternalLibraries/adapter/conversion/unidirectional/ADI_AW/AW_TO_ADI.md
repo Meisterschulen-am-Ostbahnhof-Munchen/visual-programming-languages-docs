@@ -12,22 +12,22 @@ Der Funktionsblock **AW_TO_ADI** ist ein Composite-Baustein, der einen unidirekt
 
 ### **Ereignis-Eingänge**
 
-- **Keine direkten Ereignis-Eingänge**  
+- **Keine direkten Ereignis-Eingänge**
 Der Baustein besitzt keine eigenständigen Ereignis-Eingänge. Das auslösende Ereignis wird über den Socket-Adapter `AW_IN` bereitgestellt.
 
 ### **Ereignis-Ausgänge**
 
-- **Keine direkten Ereignis-Ausgänge**  
+- **Keine direkten Ereignis-Ausgänge**
 Der Baustein besitzt keine eigenständigen Ereignis-Ausgänge. Das Ergebnis-Ereignis wird über den Plug-Adapter `ADI_OUT` weitergegeben.
 
 ### **Daten-Eingänge**
 
-- **Keine direkten Daten-Eingänge**  
+- **Keine direkten Daten-Eingänge**
 Der zu konvertierende WORD-Wert wird über den Socket-Adapter `AW_IN` empfangen.
 
 ### **Daten-Ausgänge**
 
-- **Keine direkten Daten-Ausgänge**  
+- **Keine direkten Daten-Ausgänge**
 Der konvertierte DINT-Wert wird über den Plug-Adapter `ADI_OUT` ausgegeben.
 
 ### **Adapter**

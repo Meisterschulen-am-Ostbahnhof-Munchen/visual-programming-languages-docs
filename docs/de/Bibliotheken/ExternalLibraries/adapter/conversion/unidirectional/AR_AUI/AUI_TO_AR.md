@@ -45,7 +45,7 @@ Daten-Ausgänge werden über den **AR_OUT**-Adapter zur Verfügung gestellt:
 
 Der Baustein **AUI_TO_AR** fungiert als reine Durchschleif-Komponente. Er verbindet 1:1:
 
-- **AUI_IN.E1** → **AR_OUT.E1**  
+- **AUI_IN.E1** → **AR_OUT.E1**
 - **AUI_IN.D1** → **AR_OUT.D1**
 
 Das bedeutet: Sobald ein Ereignis am AUI_IN-Eingang eintrifft, wird das zugehörige **UINT**-Datum ohne zusätzliche Verarbeitung oder Typumwandlung zum **AR_OUT**-Ausgang weitergeleitet. Die eigentliche Konvertierung von **UINT** nach **REAL** muss entweder durch den sendenden Adapter oder durch einen nachgeschalteten Baustein erfolgen – der **AUI_TO_AR** selbst führt keine arithmetische Wandlung durch. Er stellt lediglich sicher, dass die Ereignis- und Datenpfade zwischen den beiden unterschiedlichen Adapter-Typen kompatibel sind.

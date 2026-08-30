@@ -41,20 +41,20 @@ Der Funktionsblock `AD_TO_AUI` ist ein Composite-Baustein, der einen AD-Adapter 
 | `adapter::types::unidirectional::AD` | `AD_IN` | Socket (Eingang) | Nimmt DWORD-Werte und zugehörige Ereignisse entgegen. |
 | `adapter::types::unidirectional::AUI` | `AUI_OUT` | Plug (Ausgang) | Gibt konvertierte UINT-Werte und zugehörige Ereignisse aus. |
 
-Der Adapter `AD_IN` stellt ein Ereignis `E1` und ein Daten-Element `D1` (Typ DWORD) bereit.  
-Der Adapter `AUI_OUT` erwartet ein Ereignis `E1` und ein Daten-Element `D1` (Typ UINT).  
+Der Adapter `AD_IN` stellt ein Ereignis `E1` und ein Daten-Element `D1` (Typ DWORD) bereit.
+Der Adapter `AUI_OUT` erwartet ein Ereignis `E1` und ein Daten-Element `D1` (Typ UINT).
 Die Zuordnung erfolgt wie in der Funktionsweise beschrieben.
 
 ## Funktionsweise
 
 Der FB enthält eine Instanz des Standard-Konvertierungsbausteins `iec61131::conversion::F_DWORD_TO_UINT`. Die interne Verschaltung:
 
-1. **Ereignissteuerung**:  
-   - Das Ereignis `AD_IN.E1` wird direkt an den Konvertierungsbaustein (`Convert.REQ`) weitergeleitet.  
+1. **Ereignissteuerung**:
+   - Das Ereignis `AD_IN.E1` wird direkt an den Konvertierungsbaustein (`Convert.REQ`) weitergeleitet.
    - Nach erfolgreicher Konvertierung signalisiert `Convert.CNF` das Ereignis an `AUI_OUT.E1`.
 
-2. **Datenfluss**:  
-   - Der Datenwert `AD_IN.D1` (DWORD) wird an den Eingang `Convert.IN` übergeben.  
+2. **Datenfluss**:
+   - Der Datenwert `AD_IN.D1` (DWORD) wird an den Eingang `Convert.IN` übergeben.
    - Der Ausgang `Convert.OUT` liefert den umgewandelten Wert (UINT) an `AUI_OUT.D1`.
 
 Der FB führt somit eine ereignisgesteuerte, unidirektionale Typkonvertierung von DWORD nach UINT durch. Die Wandlung erfolgt nach der IEC 61131-3 Standardfunktion `DWORD_TO_UINT`.

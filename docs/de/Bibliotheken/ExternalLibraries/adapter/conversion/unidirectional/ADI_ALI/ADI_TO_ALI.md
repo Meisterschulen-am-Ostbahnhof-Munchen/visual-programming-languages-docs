@@ -28,27 +28,27 @@ Keine
 
 ### **Adapter**
 
-- **ADI_IN** (Socket) – Typ: `adapter::types::unidirectional::ADI`  
+- **ADI_IN** (Socket) – Typ: `adapter::types::unidirectional::ADI`
   Nimmt einen DINT-Wert (32‑Bit) sowie ein zugehöriges Ereignis entgegen.
 
-- **ALI_OUT** (Plug) – Typ: `adapter::types::unidirectional::ALI`  
+- **ALI_OUT** (Plug) – Typ: `adapter::types::unidirectional::ALI`
   Gibt den konvertierten LINT-Wert (64‑Bit) sowie das weitergeleitete Ereignis aus.
 
 ## Funktionsweise
 
-Der Baustein realisiert eine direkte Durchschleifung:  
+Der Baustein realisiert eine direkte Durchschleifung:
 
-- Das Ereignis `E1` vom ADI_IN-Socket wird ohne Verzögerung an den ALI_OUT-Plug weitergegeben.  
-- Gleichzeitig wird der Datenwert `D1` (DINT) übertragen; dabei erfolgt eine implizite Typumwandlung von 32‑Bit Integer (DINT) auf 64‑Bit Integer (LINT).  
+- Das Ereignis `E1` vom ADI_IN-Socket wird ohne Verzögerung an den ALI_OUT-Plug weitergegeben.
+- Gleichzeitig wird der Datenwert `D1` (DINT) übertragen; dabei erfolgt eine implizite Typumwandlung von 32‑Bit Integer (DINT) auf 64‑Bit Integer (LINT).
 - Es findet keine Zwischenspeicherung oder Verarbeitungslogik statt – jede ankommende Ereignis‑Daten‑Kombination wird sofort an die Ausgabeseite weitergeleitet.
 
 ## Technische Besonderheiten
 
 - **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
 
-- **Kein interner Zustand** – Der Baustein ist vollständig kombinatorisch und besitzt kein Gedächtnis.  
-- **Automatische Typkonvertierung** durch die Datenverbindung; der Wertebereich von DINT wird von LINT vollständig abgedeckt, sodass keine Informationsverluste auftreten.  
-- **Adapterbasierte Kommunikation** gemäß IEC 61499‑2 ermöglicht lose Kopplung und Wiederverwendbarkeit.  
+- **Kein interner Zustand** – Der Baustein ist vollständig kombinatorisch und besitzt kein Gedächtnis.
+- **Automatische Typkonvertierung** durch die Datenverbindung; der Wertebereich von DINT wird von LINT vollständig abgedeckt, sodass keine Informationsverluste auftreten.
+- **Adapterbasierte Kommunikation** gemäß IEC 61499‑2 ermöglicht lose Kopplung und Wiederverwendbarkeit.
 - Der Baustein ist als Composite ausgeführt, d. h. sein Verhalten wird allein durch das interne FBNetzwerk (eine Ereignis‑ und eine Datenverbindung) definiert.
 
 ## Zustandsübersicht
@@ -57,8 +57,8 @@ Der Baustein besitzt keinen Zustandsautomaten. Die Funktionalität beschränkt s
 
 ## Anwendungsszenarien
 
-- **Systemmigration** von 32‑Bit auf 64‑Bit Datenverarbeitung, z. B. bei der Modernisierung von Steuerungen.  
-- **Integration älterer Komponenten**, die DINT‑Werte liefern, in neue Module, die LINT‑Schnittstellen voraussetzen.  
+- **Systemmigration** von 32‑Bit auf 64‑Bit Datenverarbeitung, z. B. bei der Modernisierung von Steuerungen.
+- **Integration älterer Komponenten**, die DINT‑Werte liefern, in neue Module, die LINT‑Schnittstellen voraussetzen.
 - **Adapter‑Brücke** in heterogenen Netzwerken, um unterschiedliche Integer‑Typen zwischen Funktionsblöcken anzupassen.
 
 ## Vergleich mit ähnlichen Bausteinen

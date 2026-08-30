@@ -33,7 +33,7 @@ Keine direkten Daten-Ausgänge. Der Daten-Ausgang des Bausteins wird über den P
 | Socket   | AX_IN  | `AX`          | Boolescher Eingangsadapter (BOOL)  |
 | Plug     | AI_OUT | `AI`          | Integer-Ausgangsadapter (INT)      |
 
-Der Adapter `AX` stellt einen Ereignis-Eingang `E1` und einen Daten-Eingang `D1` (BOOL) zur Verfügung.  
+Der Adapter `AX` stellt einen Ereignis-Eingang `E1` und einen Daten-Eingang `D1` (BOOL) zur Verfügung.
 Der Adapter `AI` stellt einen Ereignis-Ausgang `E1` und einen Daten-Ausgang `D1` (INT) zur Verfügung.
 
 ## Funktionsweise

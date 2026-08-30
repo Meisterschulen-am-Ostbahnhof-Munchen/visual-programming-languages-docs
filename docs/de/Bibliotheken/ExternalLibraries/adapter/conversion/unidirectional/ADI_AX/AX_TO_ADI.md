@@ -45,7 +45,7 @@ Der Baustein besitzt keine direkten Daten-Ausgänge. Die Datenausgabe erfolgt ü
 
 Der Baustein nutzt intern den IEC 61131-3 Konverter `F_BOOL_TO_DINT`. Sobald am **AX_IN.E1** ein Ereignis eintrifft, wird der aktuelle Wert von **AX_IN.D1** ausgelesen und dem Konverter übergeben. Der Konverter setzt bei FALSE den Wert 0 und bei TRUE den Wert 1. Nach Abschluss der Konvertierung wird der Ergebniswert an **ADI_OUT.D1** weitergegeben und gleichzeitig ein Ereignis an **ADI_OUT.E1** gesendet.
 
-Die Ereigniskette ist damit vollständig durchgeschliffen:  
+Die Ereigniskette ist damit vollständig durchgeschliffen:
 `AX_IN.E1` → Konvertierung → `ADI_OUT.E1`.
 
 ## Technische Besonderheiten

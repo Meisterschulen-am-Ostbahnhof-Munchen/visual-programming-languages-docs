@@ -54,8 +54,8 @@ Da es sich um einen Composite-FB handelt, werden alle internen Verbindungen zur 
 
 - **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
 
-- **Composite-Typ**: Der Baustein ist ein reiner Netzwerk-FB ohne eigene Algorithmen. Die Konvertierung wird durch die Verbindung zweier unterschiedlicher Adaptertypen erreicht.  
-- **Typkonvertierung**: Die Umwandlung von `BOOL` zu `BYTE` ist standardkonform und nutzt die implizite Cast-Funktion der 4diac-IDE. Dadurch entfällt der Einsatz eines separaten Konvertierungsbausteins.  
+- **Composite-Typ**: Der Baustein ist ein reiner Netzwerk-FB ohne eigene Algorithmen. Die Konvertierung wird durch die Verbindung zweier unterschiedlicher Adaptertypen erreicht.
+- **Typkonvertierung**: Die Umwandlung von `BOOL` zu `BYTE` ist standardkonform und nutzt die implizite Cast-Funktion der 4diac-IDE. Dadurch entfällt der Einsatz eines separaten Konvertierungsbausteins.
 - **Versionierung**: Der FB ist mit Version `1.0` vom 17.02.2026 versehen und für die Nutzung im Package `adapter::conversion::unidirectional` vorgesehen.
 
 ## Zustandsübersicht

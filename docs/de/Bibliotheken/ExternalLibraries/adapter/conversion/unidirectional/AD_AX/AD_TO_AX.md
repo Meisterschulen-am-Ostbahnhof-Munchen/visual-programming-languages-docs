@@ -50,9 +50,9 @@ Der FB `AD_TO_AX` ist als Composite FB realisiert. Er enthält eine Instanz des 
 4. Über eine Datenverbindung gelangt dieses Ergebnis an `AX_OUT.D1`.
 5. Gleichzeitig signalisiert `F_NE.CNF` das Ende der Berechnung und triggert `AX_OUT.E1`.
 
-Somit wird aus einem DWORD-Wert ein BOOL-Wert abgeleitet:  
+Somit wird aus einem DWORD-Wert ein BOOL-Wert abgeleitet:
 
-- `DWORD = 0` → Ausgabe `FALSE`  
+- `DWORD = 0` → Ausgabe `FALSE`
 - `DWORD ≠ 0` → Ausgabe `TRUE`
 
 ## Technische Besonderheiten

@@ -35,10 +35,10 @@ Es existieren keine direkten Daten-Ausgänge. Die konvertierten Daten (USINT) we
 
 ## Funktionsweise
 
-1. Ein Ereignis an `AB_IN.E1` löst die Verarbeitung aus.  
-2. Der Wert von `AB_IN.D1` (BYTE) wird an den internen Konverter **F_BYTE_TO_USINT** übergeben.  
-3. Der Konverter wandelt das BYTE in einen USINT-Wert um.  
-4. Das Ergebnis wird auf `AUS_OUT.D1` (USINT) ausgegeben.  
+1. Ein Ereignis an `AB_IN.E1` löst die Verarbeitung aus.
+2. Der Wert von `AB_IN.D1` (BYTE) wird an den internen Konverter **F_BYTE_TO_USINT** übergeben.
+3. Der Konverter wandelt das BYTE in einen USINT-Wert um.
+4. Das Ergebnis wird auf `AUS_OUT.D1` (USINT) ausgegeben.
 5. Gleichzeitig wird ein Ereignis auf `AUS_OUT.E1` erzeugt, um die nachfolgende Verarbeitung zu signalisieren.
 
 Die gesamte Konvertierung erfolgt ereignisgesteuert und in einem Schritt.
@@ -47,9 +47,9 @@ Die gesamte Konvertierung erfolgt ereignisgesteuert und in einem Schritt.
 
 - **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
 
-- **Unidirektionale Adapterkopplung**: Der FB verbindet zwei unidirektionale Adapter (AB → AUS) und stellt sicher, dass die Datenflussrichtung klar definiert ist.  
-- **Wiederverwendbare IEC-Konvertierung**: Intern wird der standardisierte Baustein `iec61131::conversion::F_BYTE_TO_USINT` verwendet.  
-- **Composite-Architektur**: Die Konvertierungslogik ist gekapselt und kann leicht in andere Projekte eingebunden oder durch alternative Konverter ersetzt werden.  
+- **Unidirektionale Adapterkopplung**: Der FB verbindet zwei unidirektionale Adapter (AB → AUS) und stellt sicher, dass die Datenflussrichtung klar definiert ist.
+- **Wiederverwendbare IEC-Konvertierung**: Intern wird der standardisierte Baustein `iec61131::conversion::F_BYTE_TO_USINT` verwendet.
+- **Composite-Architektur**: Die Konvertierungslogik ist gekapselt und kann leicht in andere Projekte eingebunden oder durch alternative Konverter ersetzt werden.
 - **Kein interner Zustand**: Der FB besitzt keinen eigenen Zustandsautomaten; er leitet Ereignisse und Daten direkt weiter.
 
 ## Zustandsübersicht
@@ -58,8 +58,8 @@ Der **AB_TO_AUS**-Baustein besitzt keinen eigenen Zustandsautomaten. Die Funktio
 
 ## Anwendungsszenarien
 
-- **Systemintegration**: Verbindung eines Geräts, das Messwerte als BYTE über den AB-Adapter bereitstellt, mit einer Steuerung, die USINT-Daten über den AUS-Adapter erwartet.  
-- **Protokollanpassung**: Umwandlung von BYTE-kodierten Befehlen in USINT-kodierte Werte für die Weiterverarbeitung in Bibliotheken, die ausschließlich USINT unterstützen.  
+- **Systemintegration**: Verbindung eines Geräts, das Messwerte als BYTE über den AB-Adapter bereitstellt, mit einer Steuerung, die USINT-Daten über den AUS-Adapter erwartet.
+- **Protokollanpassung**: Umwandlung von BYTE-kodierten Befehlen in USINT-kodierte Werte für die Weiterverarbeitung in Bibliotheken, die ausschließlich USINT unterstützen.
 - **Modulare Wiederverwendung**: Kapselung der Konvertierung als eigenständigen Baustein, um die Übersichtlichkeit in großen Automatisierungsprojekten zu erhöhen.
 
 ## Vergleich mit ähnlichen Bausteinen

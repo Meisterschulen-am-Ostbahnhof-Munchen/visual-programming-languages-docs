@@ -28,10 +28,10 @@ Der Funktionsblock **AX_TO_AUDI** ist ein zusammengesetzter Baustein (Composite 
 
 ### **Adapter**
 
-- **AX_IN** – Socket‑Adapter vom Typ `adapter::types::unidirectional::AX`  
+- **AX_IN** – Socket‑Adapter vom Typ `adapter::types::unidirectional::AX`
   Nimmt einen Booleschen Wert (und ein zugehöriges Ereignis) entgegen.
 
-- **AUDI_OUT** – Plug‑Adapter vom Typ `adapter::types::unidirectional::AUDI`  
+- **AUDI_OUT** – Plug‑Adapter vom Typ `adapter::types::unidirectional::AUDI`
   Stellt den konvertierten UDINT‑Wert (und ein quittierendes Ereignis) bereit.
 
 ## Funktionsweise

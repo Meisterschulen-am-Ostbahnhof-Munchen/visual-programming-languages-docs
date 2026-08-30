@@ -12,25 +12,25 @@ Der Composite-Funktionsbaustein **AI_TO_AD** dient der Konvertierung eines INT-b
 
 ### **Ereignis-Eingänge**
 
-Der Baustein besitzt keine direkten Ereignis-Eingänge. Die ereignisgesteuerte Auslösung erfolgt über den Adapter **AI_IN** (Socket).  
+Der Baustein besitzt keine direkten Ereignis-Eingänge. Die ereignisgesteuerte Auslösung erfolgt über den Adapter **AI_IN** (Socket).
 
 - **E1 (über AI_IN)**: Auslöseereignis zur Konvertierung des anliegenden INTEGER-Wertes.
 
 ### **Ereignis-Ausgänge**
 
-Der Baustein besitzt keine direkten Ereignis-Ausgänge. Die Bestätigung der Konvertierung erfolgt über den Adapter **AD_OUT** (Plug).  
+Der Baustein besitzt keine direkten Ereignis-Ausgänge. Die Bestätigung der Konvertierung erfolgt über den Adapter **AD_OUT** (Plug).
 
 - **E1 (über AD_OUT)**: Bestätigungsereignis nach erfolgreicher Umwandlung.
 
 ### **Daten-Eingänge**
 
-Der Baustein besitzt keine direkten Daten-Eingänge. Der zu konvertierende INTEGER-Wert wird über den Adapter **AI_IN** bereitgestellt.  
+Der Baustein besitzt keine direkten Daten-Eingänge. Der zu konvertierende INTEGER-Wert wird über den Adapter **AI_IN** bereitgestellt.
 
 - **D1 (über AI_IN)**: Eingangswert vom Typ `INT`.
 
 ### **Daten-Ausgänge**
 
-Der Baustein besitzt keine direkten Daten-Ausgänge. Der konvertierte DWORD-Wert wird über den Adapter **AD_OUT** ausgegeben.  
+Der Baustein besitzt keine direkten Daten-Ausgänge. Der konvertierte DWORD-Wert wird über den Adapter **AD_OUT** ausgegeben.
 
 - **D1 (über AD_OUT)**: Ausgangswert vom Typ `DWORD`.
 
@@ -41,7 +41,7 @@ Der Baustein besitzt keine direkten Daten-Ausgänge. Der konvertierte DWORD-Wert
 
 ## Funktionsweise
 
-Der Baustein ist als Composite ausgeführt. Intern wird der IEC‑61131-konforme Funktionsbaustein **F_INT_TO_DWORD** verwendet.  
+Der Baustein ist als Composite ausgeführt. Intern wird der IEC‑61131-konforme Funktionsbaustein **F_INT_TO_DWORD** verwendet.
 Der Ablauf:
 
 1. Ein Ereignis am Eingangsadapter **AI_IN.E1** löst die Datenübernahme aus.

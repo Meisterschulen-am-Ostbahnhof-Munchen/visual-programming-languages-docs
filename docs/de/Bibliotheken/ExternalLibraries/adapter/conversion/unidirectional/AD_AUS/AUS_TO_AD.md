@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der Funktionsbaustein **AUS_TO_AD** ist ein Composite-Baustein, der eine einfache Konvertierung von einem USINT-Adapter (Typ AUS) zu einem DWORD-Adapter (Typ AD) durchführt.  
+Der Funktionsbaustein **AUS_TO_AD** ist ein Composite-Baustein, der eine einfache Konvertierung von einem USINT-Adapter (Typ AUS) zu einem DWORD-Adapter (Typ AD) durchführt.
 Er kapselt die Umwandlung eines vorzeichenlosen 8‑Bit‑Wertes (USINT) in einen 32‑Bit‑DWORD‑Wert und macht diese über standardisierte Adapter‑Schnittstellen zugänglich.
 
 ## Schnittstellenstruktur
@@ -73,7 +73,7 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Das Verhalten ist rein daten
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **F_USINT_TO_DWORD:** Der zugrunde liegende Konvertierungsbaustein ist ein reiner Datenkonverter ohne Adapter‑Schnittstelle. Er setzt direkte Daten‑ und Ereignisverbindungen voraus.  
+- **F_USINT_TO_DWORD:** Der zugrunde liegende Konvertierungsbaustein ist ein reiner Datenkonverter ohne Adapter‑Schnittstelle. Er setzt direkte Daten‑ und Ereignisverbindungen voraus.
   `AUS_TO_AD` hingegen kapselt diese Funktion und bietet eine standardisierte Adapter‑Schnittstelle an.
 
 - **Andere Adapter‑Konverter (z. B. BYTE_TO_DWORD, WORD_TO_DWORD):** Ähnliche Bausteine existieren für andere Datentypen, setzen aber meist andere Adapter‑Typen voraus. `AUS_TO_AD` ist speziell für die Kombination der Adapter `AUS` (USINT) und `AD` (DWORD) optimiert.

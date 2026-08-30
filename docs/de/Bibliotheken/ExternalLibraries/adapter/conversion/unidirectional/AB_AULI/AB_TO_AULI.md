@@ -28,10 +28,10 @@ Der Funktionsblock **AB_TO_AULI** ist ein zusammengesetzter Baustein (Composite 
 
 ### **Adapter**
 
-- **Socket „AB_IN“** – Typ: `adapter::types::unidirectional::AB`  
+- **Socket „AB_IN“** – Typ: `adapter::types::unidirectional::AB`
   Unidirektionaler Eingangsadapter für den Datentyp BYTE.
 
-- **Plug „AULI_OUT“** – Typ: `adapter::types::unidirectional::AULI`  
+- **Plug „AULI_OUT“** – Typ: `adapter::types::unidirectional::AULI`
   Unidirektionaler Ausgangsadapter für den Datentyp ULINT.
 
 ## Funktionsweise

@@ -32,13 +32,13 @@ Der Adapter `AUDI_OUT` erwartet ein Ereignis `E1` und einen Daten-Ausgang `D1` v
 
 Der Baustein enthält intern eine Instanz des Konvertierungsbausteins `F_REAL_TO_UDINT` aus der Bibliothek `iec61131::conversion`. Die Signalverbindungen realisieren einen einfachen Datenfluss:
 
-1. **Ereignis vom Eingangsadapter**  
+1. **Ereignis vom Eingangsadapter**
    Das Ereignis `AR_IN.E1` triggert den Konvertierungsbaustein über dessen Ereigniseingang `REQ`.
 
-2. **Datenkonvertierung**  
+2. **Datenkonvertierung**
    Gleichzeitig wird der REAL‑Wert von `AR_IN.D1` an den Dateneingang `IN` von `F_REAL_TO_UDINT` übergeben. Die Konvertierung erfolgt ohne Verzögerung innerhalb des Ereigniszyklus.
 
-3. **Ausgangsereignis und Ergebnis**  
+3. **Ausgangsereignis und Ergebnis**
    Nach erfolgreicher Konvertierung sendet `F_REAL_TO_UDINT` ein Bestätigungsereignis (`CNF`) an den Ausgangsadapter (`AUDI_OUT.E1`). Der konvertierte UDINT‑Wert wird über den Datenausgang `OUT` an `AUDI_OUT.D1` weitergeleitet.
 
 Die Umsetzung ist synchron: Jedes eingehende Ereignis löst genau eine Ausgabe aus.

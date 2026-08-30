@@ -46,8 +46,8 @@ Der gesamte Ablauf erfolgt ohne Zwischenspeicherung oder Verzögerung – jeder 
 
 - **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
 
-- **Stateless Design**: Der Baustein besitzt keinen internen Zustandsspeicher, jede Konvertierung ist unabhängig von vorherigen.  
-- **Einheitliche Adatperschnittstelle**: Durch die Verwendung von unidirektionalen Standardadaptern (AR und AUI) ist der FB leicht in verschiedene Architekturen integrierbar.  
+- **Stateless Design**: Der Baustein besitzt keinen internen Zustandsspeicher, jede Konvertierung ist unabhängig von vorherigen.
+- **Einheitliche Adatperschnittstelle**: Durch die Verwendung von unidirektionalen Standardadaptern (AR und AUI) ist der FB leicht in verschiedene Architekturen integrierbar.
 - **Keine Nebenwirkungen**: Es werden keine globalen Variablen oder Systemressourcen beeinflusst.
 
 ## Zustandsübersicht

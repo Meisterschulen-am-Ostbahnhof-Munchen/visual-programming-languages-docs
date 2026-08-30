@@ -28,9 +28,9 @@ Daten-Eingänge sind ausschließlich über den **Socket-Adapter `AUDI_IN`** verf
 
 Daten-Ausgänge werden über den **Plug-Adapter `AS_OUT`** bereitgestellt:
 
-- **`D1`** (Datentyp `SINT`): Der konvertierte 8‑Bit‑Wert (Wertebereich -128…127).  
+- **`D1`** (Datentyp `SINT`): Der konvertierte 8‑Bit‑Wert (Wertebereich -128…127).
 
-> Hinweis: Ein `UDINT`-Wert größer als 127 wird durch die Konvertierung abgeschnitten oder interpretiert (abhängig von der Implementierung von `F_UDINT_TO_SINT`).  
+> Hinweis: Ein `UDINT`-Wert größer als 127 wird durch die Konvertierung abgeschnitten oder interpretiert (abhängig von der Implementierung von `F_UDINT_TO_SINT`).
 
 ### **Adapter**
 

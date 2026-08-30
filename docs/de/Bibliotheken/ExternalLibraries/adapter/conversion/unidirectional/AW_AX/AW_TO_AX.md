@@ -51,9 +51,9 @@ Das Verhalten ist ereignisgesteuert und folgt der 61499-Ausführungssemantik: Ei
 
 - **Paritäts-/LSB-Test** (ungerader Wert ⇒ TRUE), kein Zahlenwert und keine vollständige Bit-Kopie.
 
-- Der Baustein ist als **Composite-Funktionsblock** realisiert, d.h. seine Funktionalität wird durch ein inneres Netzwerk aus einem einzelnen **F_NE**-Baustein abgebildet.  
-- Er verwendet einen **unidirektionalen Adapter** (AW und AX) gemäß der Adapterdefinition der 4diac-IDE.  
-- Die Vergleichslogik stammt aus der IEC 61131-Bibliothek (`iec61131::comparison::F_NE`).  
+- Der Baustein ist als **Composite-Funktionsblock** realisiert, d.h. seine Funktionalität wird durch ein inneres Netzwerk aus einem einzelnen **F_NE**-Baustein abgebildet.
+- Er verwendet einen **unidirektionalen Adapter** (AW und AX) gemäß der Adapterdefinition der 4diac-IDE.
+- Die Vergleichslogik stammt aus der IEC 61131-Bibliothek (`iec61131::comparison::F_NE`).
 - Es handelt sich um eine reine Signalumsetzung ohne Zustandsbehaftung.
 
 ## Zustandsübersicht

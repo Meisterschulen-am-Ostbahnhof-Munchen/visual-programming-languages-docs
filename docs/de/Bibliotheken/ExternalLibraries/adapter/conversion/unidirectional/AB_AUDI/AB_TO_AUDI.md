@@ -30,10 +30,10 @@ Der Baustein besitzt keine direkten Ereignis- oder Datenein-/ausgänge auf der o
 
 ### **Adapter**
 
-- **`AB_IN`** (Socket) – Typ: `adapter::types::unidirectional::AB`  
+- **`AB_IN`** (Socket) – Typ: `adapter::types::unidirectional::AB`
   Nimmt ein BYTE-Signal entgegen. Der Adapter stellt ein Ereignis `E1` und einen Datenwert `D1` (BYTE) bereit.
 
-- **`AUDI_OUT`** (Plug) – Typ: `adapter::types::unidirectional::AUDI`  
+- **`AUDI_OUT`** (Plug) – Typ: `adapter::types::unidirectional::AUDI`
   Gibt das konvertierte UDINT-Signal aus. Der Adapter erwartet ein Ereignis `E1` und einen Datenwert `D1` (UDINT).
 
 ## Funktionsweise

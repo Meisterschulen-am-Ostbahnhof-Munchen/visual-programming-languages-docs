@@ -14,22 +14,22 @@ Da es sich um einen Composite-Baustein handelt, werden alle Ein- und Ausgänge �
 
 ### **Ereignis-Eingänge**
 
-- Keine direkten Ereignis-Eingänge auf der obersten Ebene.  
+- Keine direkten Ereignis-Eingänge auf der obersten Ebene.
   Der über den **Socket ALR_IN** angebundene Adapter besitzt jedoch den Ereignis-Eingang **E1**, der die Konvertierung auslöst.
 
 ### **Ereignis-Ausgänge**
 
-- Keine direkten Ereignis-Ausgänge auf der obersten Ebene.  
+- Keine direkten Ereignis-Ausgänge auf der obersten Ebene.
   Der über den **Plug AUS_OUT** angebundene Adapter stellt den Ereignis-Ausgang **E1** bereit, der den Abschluss der Konvertierung signalisiert.
 
 ### **Daten-Eingänge**
 
-- Keine direkten Daten-Eingänge auf der obersten Ebene.  
+- Keine direkten Daten-Eingänge auf der obersten Ebene.
   Der Adapter **ALR_IN** führt den Daten-Eingang **D1** (Typ: LREAL), der den zu konvertierenden Gleitkommawert bereitstellt.
 
 ### **Daten-Ausgänge**
 
-- Keine direkten Daten-Ausgänge auf der obersten Ebene.  
+- Keine direkten Daten-Ausgänge auf der obersten Ebene.
   Der Adapter **AUS_OUT** führt den Daten-Ausgang **D1** (Typ: USINT), der das konvertierte Ganzzahlergebnis ausgibt.
 
 ### **Adapter**

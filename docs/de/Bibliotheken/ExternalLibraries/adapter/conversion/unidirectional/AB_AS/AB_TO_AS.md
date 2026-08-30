@@ -14,22 +14,22 @@ Der FB besitzt keine eigenen Ereignis- oder Datenports auf der obersten Ebene. D
 
 ### **Ereignis-Eingänge**
 
-- **E1** (über **AB_IN**, Socket, Typ `adapter::types::unidirectional::AB`)  
+- **E1** (über **AB_IN**, Socket, Typ `adapter::types::unidirectional::AB`)
   Dieses Ereignis wird vom angeschlossenen Quell-Adapter empfangen und löst die Konvertierung eines BYTE-Wertes in einen SINT-Wert aus.
 
 ### **Ereignis-Ausgänge**
 
-- **E1** (über **AS_OUT**, Plug, Typ `adapter::types::unidirectional::AS`)  
+- **E1** (über **AS_OUT**, Plug, Typ `adapter::types::unidirectional::AS`)
   Dieses Ereignis wird nach erfolgreicher Konvertierung an den Ziel-Adapter gesendet, um den neuen SINT-Wert zu signalisieren.
 
 ### **Daten-Eingänge**
 
-- **D1** (BYTE, über **AB_IN**-Adapter)  
+- **D1** (BYTE, über **AB_IN**-Adapter)
   Enthält den zu konvertierenden BYTE-Wert. Er wird über das Ereignis **E1** am Eingang abgetastet.
 
 ### **Daten-Ausgänge**
 
-- **D1** (SINT, über **AS_OUT**-Adapter)  
+- **D1** (SINT, über **AS_OUT**-Adapter)
   Stellt den konvertierten SINT-Wert bereit. Er wird nach Abschluss der Konvertierung mit dem Ereignis **E1** am Ausgang gültig.
 
 ### **Adapter**

@@ -6,8 +6,8 @@
 
 ## Einleitung
 
-Der Funktionsblock **ALI_TO_AX** ist ein zusammengesetzter (Composite) Baustein, der einen Adapter vom Typ **ALI** (enthält einen LINT-Wert) in einen Adapter vom Typ **AX** (enthält einen BOOL-Wert) umwandelt.  
-Die Konvertierung erfolgt nach der Regel: Ein LINT-Wert ungleich 0 wird als BOOL-Wert **TRUE** interpretiert, ein Wert gleich 0 als **FALSE**.  
+Der Funktionsblock **ALI_TO_AX** ist ein zusammengesetzter (Composite) Baustein, der einen Adapter vom Typ **ALI** (enthält einen LINT-Wert) in einen Adapter vom Typ **AX** (enthält einen BOOL-Wert) umwandelt.
+Die Konvertierung erfolgt nach der Regel: Ein LINT-Wert ungleich 0 wird als BOOL-Wert **TRUE** interpretiert, ein Wert gleich 0 als **FALSE**.
 Der Baustein dient als bidirektionale Brücke zwischen Adaptern, die auf unterschiedlichen Datentypen basieren.
 
 ## Schnittstellenstruktur
@@ -46,8 +46,8 @@ Der Baustein verwendet intern den Vergleichsbaustein **F_NE** („Not Equal“) 
 1. Über den Socket `ALI_IN` wird ein LINT-Wert empfangen.
 2. Das Ereignis `ALI_IN.E1` triggert den Baustein `F_NE` über dessen `REQ`-Eingang.
 3. Im `F_NE` wird der Eingangswert (`IN1`) mit dem konstanten Wert `LINT#0` (`IN2`) verglichen.
-4. Das Ergebnis `OUT` ist ein BOOL:  
-   - **TRUE**, wenn `IN1 ≠ 0`  
+4. Das Ergebnis `OUT` ist ein BOOL:
+   - **TRUE**, wenn `IN1 ≠ 0`
    - **FALSE**, wenn `IN1 = 0`
 5. Nach Abschluss des Vergleichs sendet `F_NE` ein `CNF`-Ereignis, das den Ausgangsadapter `AX_OUT` über dessen `E1` triggert.
 6. Gleichzeitig wird der BOOL-Wert auf `AX_OUT.D1` ausgegeben.
@@ -87,6 +87,6 @@ Es gibt keine Schleifen, zeitlichen Verzögerungen oder Fehlerzustände – die 
 
 ## Fazit
 
-Der Baustein **ALI_TO_AX** bietet eine einfache und zuverlässige Methode, um einen LINT-Adapterwert in einen BOOL-Adapterwert zu übersetzen.  
-Dank des klaren Logikaufbaus und der ereignisgesteuerten Architektur ist er sowohl für den Produktiveinsatz als auch für schnelle Prototypen geeignet.  
+Der Baustein **ALI_TO_AX** bietet eine einfache und zuverlässige Methode, um einen LINT-Adapterwert in einen BOOL-Adapterwert zu übersetzen.
+Dank des klaren Logikaufbaus und der ereignisgesteuerten Architektur ist er sowohl für den Produktiveinsatz als auch für schnelle Prototypen geeignet.
 Die Verwendung des Composite-Konzepts fördert die Modularität und Wiederverwendbarkeit in IEC 61499-basierten Steuerungsanwendungen.

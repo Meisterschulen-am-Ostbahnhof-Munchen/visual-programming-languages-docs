@@ -12,30 +12,30 @@ Der Funktionsblock AUI_TO_ALR ist ein zusammengesetzter Baustein (Composite), de
 
 ### **Ereignis-Eingänge**
 
-- **Ereignis über Socket AUI_IN (E1)** – Ereigniseingang vom AUI‑Adapter.  
+- **Ereignis über Socket AUI_IN (E1)** – Ereigniseingang vom AUI‑Adapter.
   Wird intern direkt mit dem Ereignisausgang des ALR‑Adapters verbunden.
 
 ### **Ereignis-Ausgänge**
 
-- **Ereignis über Plug ALR_OUT (E1)** – Ereignisausgang zum ALR‑Adapter.  
+- **Ereignis über Plug ALR_OUT (E1)** – Ereignisausgang zum ALR‑Adapter.
   Entspricht dem durchgeleiteten Ereignis vom Socket AUI_IN.
 
 ### **Daten-Eingänge**
 
-- **Datenwert über Socket AUI_IN (D1)** – Dateneingang vom AUI‑Adapter (Typ UINT).  
+- **Datenwert über Socket AUI_IN (D1)** – Dateneingang vom AUI‑Adapter (Typ UINT).
   Wird intern direkt mit dem Datenausgang des ALR‑Adapters verbunden.
 
 ### **Daten-Ausgänge**
 
-- **Datenwert über Plug ALR_OUT (D1)** – Datenausgang zum ALR‑Adapter (Typ LREAL).  
+- **Datenwert über Plug ALR_OUT (D1)** – Datenausgang zum ALR‑Adapter (Typ LREAL).
   Entspricht dem durchgeleiteten Datenwert vom Socket AUI_IN.
 
 ### **Adapter**
 
-- **Socket: AUI_IN** – Quelle (Typ `adapter::types::unidirectional::AUI`)  
+- **Socket: AUI_IN** – Quelle (Typ `adapter::types::unidirectional::AUI`)
   Nimmt die Eingangssignale (Ereignis + UINT‑Daten) entgegen.
 
-- **Plug: ALR_OUT** – Senke (Typ `adapter::types::unidirectional::ALR`)  
+- **Plug: ALR_OUT** – Senke (Typ `adapter::types::unidirectional::ALR`)
   Stellt die Ausgangssignale (Ereignis + LREAL‑Daten) bereit.
 
 ## Funktionsweise

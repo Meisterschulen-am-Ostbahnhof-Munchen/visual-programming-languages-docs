@@ -14,12 +14,12 @@ Die Schnittstelle des Bausteins besteht ausschließlich aus Adaptern, die sowohl
 
 ### **Ereignis-Eingänge**
 
-- **AR_IN.E1** – Ereigniseingang über den AR‑Adapter  
+- **AR_IN.E1** – Ereigniseingang über den AR‑Adapter
   Löst die Konvertierung des anliegenden REAL‑Wertes aus.
 
 ### **Ereignis-Ausgänge**
 
-- **ADI_OUT.E1** – Ereignisausgang über den ADI‑Adapter  
+- **ADI_OUT.E1** – Ereignisausgang über den ADI‑Adapter
   Wird nach erfolgreicher Konvertierung aktiviert.
 
 ### **Daten-Eingänge**
@@ -39,7 +39,7 @@ Die Schnittstelle des Bausteins besteht ausschließlich aus Adaptern, die sowohl
 
 ## Funktionsweise
 
-Der Baustein ist als Composite‑FB realisiert. Im Inneren befindet sich eine Instanz des IEC‑61131‑Standardbausteins `F_REAL_TO_DINT`.  
+Der Baustein ist als Composite‑FB realisiert. Im Inneren befindet sich eine Instanz des IEC‑61131‑Standardbausteins `F_REAL_TO_DINT`.
 Sobald am Ereigniseingang **AR_IN.E1** ein Ereignis eintrifft, wird der über **AR_IN.D1** anliegende REAL‑Wert an den internen Konverter übergeben. Nach abgeschlossener Konvertierung wird das Ergebnis an **ADI_OUT.D1** weitergeleitet und das Ereignis **ADI_OUT.E1** ausgelöst.
 
 ## Technische Besonderheiten

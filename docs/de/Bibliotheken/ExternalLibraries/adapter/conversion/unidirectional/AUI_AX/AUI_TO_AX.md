@@ -28,11 +28,11 @@ Keine direkten Daten-Ausgänge. Das BOOL-Ergebnis wird über den Plug-Adapter **
 
 ### **Adapter**
 
-- **AUX_IN (Socket)** – Typ: *adapter::types::unidirectional::AUI*  
-  - Ereignis: E1 (auslösendes Ereignis für den Vergleich)  
-  - Daten: D1 (UINT-Wert, der mit 0 verglichen wird)  
-- **AX_OUT (Plug)** – Typ: *adapter::types::unidirectional::AX*  
-  - Ereignis: E1 (Bestätigungsereignis nach erfolgtem Vergleich)  
+- **AUX_IN (Socket)** – Typ: *adapter::types::unidirectional::AUI*
+  - Ereignis: E1 (auslösendes Ereignis für den Vergleich)
+  - Daten: D1 (UINT-Wert, der mit 0 verglichen wird)
+- **AX_OUT (Plug)** – Typ: *adapter::types::unidirectional::AX*
+  - Ereignis: E1 (Bestätigungsereignis nach erfolgtem Vergleich)
   - Daten: D1 (BOOL-Ergebnis: TRUE wenn D1 ≠ 0, sonst FALSE)
 
 ## Funktionsweise
@@ -45,19 +45,19 @@ Der Baustein enthält intern eine Instanz des Vergleichsbausteins *iec61131::com
 4. Das Ergebnis-Event **F_NE.CNF** wird an den Plug **AX_OUT.E1** weitergeleitet.
 5. Das BOOL-Ergebnis wird gleichzeitig über die Datenverbindung an **AX_OUT.D1** übergeben.
 
-Somit gilt:  
+Somit gilt:
 
-- AUI_IN.D1 = 0 → AX_OUT.D1 = FALSE  
+- AUI_IN.D1 = 0 → AX_OUT.D1 = FALSE
 - AUI_IN.D1 ≠ 0 → AX_OUT.D1 = TRUE
 
 ## Technische Besonderheiten
 
 - **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
 
-- **Lizenz:** Eclipse Public License 2.0 (EPL-2.0)  
-- **Autor:** Franz Höpfinger, HR Agrartechnik GmbH  
-- **Paket:** `adapter::conversion::unidirectional`  
-- **Interner Baustein:** `iec61131::comparison::F_NE` mit Parameter `IN2 = UINT#0`  
+- **Lizenz:** Eclipse Public License 2.0 (EPL-2.0)
+- **Autor:** Franz Höpfinger, HR Agrartechnik GmbH
+- **Paket:** `adapter::conversion::unidirectional`
+- **Interner Baustein:** `iec61131::comparison::F_NE` mit Parameter `IN2 = UINT#0`
 - Der Baustein ist ein reines Composite, enthält keine eigene Zustandsmaschine. Die gesamte Logik wird durch den eingebetteten F_NE realisiert.
 
 ## Zustandsübersicht
@@ -66,8 +66,8 @@ Da es sich um einen Composite-Baustein ohne eigene ECC (Execution Control Chart)
 
 ## Anwendungsszenarien
 
-- **Schwellwertdetektion:** Überführung eines analogen (UINT-)Sensorwerts in ein digitales Signal (BOOL), z. B. „Wert ungleich Null“ als Alarm- oder Steuersignal.  
-- **Adapter-Konvertierung:** Einsatz in Systemen, die unterschiedliche Adapterstandards (AUI ↔ AX) verwenden, um Kompatibilität zwischen Komponenten herzustellen.  
+- **Schwellwertdetektion:** Überführung eines analogen (UINT-)Sensorwerts in ein digitales Signal (BOOL), z. B. „Wert ungleich Null“ als Alarm- oder Steuersignal.
+- **Adapter-Konvertierung:** Einsatz in Systemen, die unterschiedliche Adapterstandards (AUI ↔ AX) verwenden, um Kompatibilität zwischen Komponenten herzustellen.
 - **Einfache Logikverkettung:** Verwendung als binäre Entscheidungsstufe in größeren Composite-Funktionsblöcken.
 
 ## Vergleich mit ähnlichen Bausteinen

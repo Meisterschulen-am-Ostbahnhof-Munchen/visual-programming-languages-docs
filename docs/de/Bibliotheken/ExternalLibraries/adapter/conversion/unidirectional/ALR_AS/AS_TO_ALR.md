@@ -45,9 +45,9 @@ Der Funktionsblock **AS_TO_ALR** ist ein zusammengesetzter Baustein (Composite F
 
 ## Funktionsweise
 
-Der **AS_TO_ALR**-Baustein leitet die eingehenden Ereignisse und Datenwerte direkt und ohne weitere Verarbeitung an die Ausgangsseite weiter.  
+Der **AS_TO_ALR**-Baustein leitet die eingehenden Ereignisse und Datenwerte direkt und ohne weitere Verarbeitung an die Ausgangsseite weiter.
 
-- Das Ereignis **E1** am Socket `AS_IN` wird unverzögert an den Plug `ALR_OUT` übergeben.  
+- Das Ereignis **E1** am Socket `AS_IN` wird unverzögert an den Plug `ALR_OUT` übergeben.
 - Der Datenwert **D1** vom Typ SINT wird an den Ausgang gleichen Namens weitergeleitet. Die Umwandlung von SINT nach LREAL erfolgt implizit durch die Laufzeitumgebung – der Funktionsblock selbst führt keine arithmetische Operation aus.
 
 Der Baustein besitzt keine eigene Zustandsmaschine (ECC) und keine internen Algorithmen; seine gesamte Funktionalität wird durch die enthaltenen Verbindungen realisiert.

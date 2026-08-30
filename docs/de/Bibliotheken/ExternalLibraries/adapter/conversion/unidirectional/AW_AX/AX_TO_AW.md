@@ -61,7 +61,7 @@ Da es sich um einen Composite FB ohne eigenen ECC handelt, existieren keine expl
 ## Vergleich mit ähnlichen Bausteinen
 
 - **AW_TO_AX (theoretisch):** Wäre die inverse Konvertierung von WORD zu BOOL – würde eine Reduktion des Wertebereichs erfordern (z. B. nur Bit 0 wird ausgewertet).
-- **TYPCONV-Bausteine:** In der Regel bieten IEC-61499-Bibliotheken explizite Typkonverter (z. B. `BOOL_TO_WORD`), die jedoch als normale Funktionsblöcke mit Ereignis- und Dateneingängen arbeiten und nicht als Adapter-Konverter. 
+- **TYPCONV-Bausteine:** In der Regel bieten IEC-61499-Bibliotheken explizite Typkonverter (z. B. `BOOL_TO_WORD`), die jedoch als normale Funktionsblöcke mit Ereignis- und Dateneingängen arbeiten und nicht als Adapter-Konverter.
 - **Direkte Adapter-Kopplung:** Ohne `AX_TO_AW` müssten die Adapter-Typen identisch sein oder eine separate Konvertierung in der Netzwerkebene erfolgen.
 
 ## Fazit

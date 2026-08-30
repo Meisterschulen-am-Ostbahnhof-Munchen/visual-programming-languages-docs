@@ -14,22 +14,22 @@ Da **AI_TO_AR** keine eigenständigen Ereignis- oder Datenschnittstellen besitzt
 
 ### **Ereignis-Eingänge**
 
-– nicht vorhanden –  
+– nicht vorhanden –
 Die Ereignissteuerung erfolgt über den eingehenden Adapter **AI_IN**.
 
 ### **Ereignis-Ausgänge**
 
-– nicht vorhanden –  
+– nicht vorhanden –
 Die Ereignisweiterleitung erfolgt über den ausgehenden Adapter **AR_OUT**.
 
 ### **Daten-Eingänge**
 
-– nicht vorhanden –  
+– nicht vorhanden –
 Die Daten werden über den **AI_IN**‑Adapter als Integer-Wert bereitgestellt.
 
 ### **Daten-Ausgänge**
 
-– nicht vorhanden –  
+– nicht vorhanden –
 Die Daten werden über den **AR_OUT**‑Adapter als Real-Wert ausgegeben.
 
 ### **Adapter**

@@ -55,7 +55,7 @@ Der Baustein empfängt über den Socket `AUDI_IN` einen UDINT‑Wert zusammen mi
 
 ## Zustandsübersicht
 
-Der Baustein besitzt keine eigenen internen Zustände. Sein Verhalten ist rein reaktiv:  
+Der Baustein besitzt keine eigenen internen Zustände. Sein Verhalten ist rein reaktiv:
 Auf ein Ereignis am Eingang folgt stets ein Ereignis am Ausgang – sofern die Daten gültig sind. Eine dedizierte Zustandsmaschine existiert nicht.
 
 ## Anwendungsszenarien
@@ -67,7 +67,7 @@ Auf ein Ereignis am Eingang folgt stets ein Ereignis am Ausgang – sofern die D
 ## Vergleich mit ähnlichen Bausteinen
 
 - **DINT_TO_AUDI**: Führt die umgekehrte Konvertierung (DINT → UDINT) durch.
-- **F_UDINT_TO_DINT**: Direkte Verwendung des Konvertierungs‑FBs ohne Adapter‑Kapselung.  
+- **F_UDINT_TO_DINT**: Direkte Verwendung des Konvertierungs‑FBs ohne Adapter‑Kapselung.
   Der vorliegende Baustein kapselt die Datentypwandlung in einen Adapter‑Kontext und vereinfacht so die Verschaltung von Komponenten, die auf Adapter‑Schnittstellen angewiesen sind.
 
 ## Fazit

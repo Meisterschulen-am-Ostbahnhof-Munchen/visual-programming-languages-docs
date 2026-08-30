@@ -12,22 +12,22 @@ Der Funktionsblock AI_TO_ALI ist ein Composite-Funktionsblock, der einen Eingang
 
 ### **Ereignis-Eingänge**
 
-Keine eigenen Ereignis-Eingänge. Die Ereignisübertragung erfolgt über den Eingangsadapter AI_IN.  
+Keine eigenen Ereignis-Eingänge. Die Ereignisübertragung erfolgt über den Eingangsadapter AI_IN.
 Adapter AI_IN stellt den Ereignis-Eingang E1 bereit.
 
 ### **Ereignis-Ausgänge**
 
-Keine eigenen Ereignis-Ausgänge. Die Ereignisweitergabe erfolgt über den Ausgangsadapter ALI_OUT.  
+Keine eigenen Ereignis-Ausgänge. Die Ereignisweitergabe erfolgt über den Ausgangsadapter ALI_OUT.
 Adapter ALI_OUT stellt den Ereignis-Ausgang E1 bereit.
 
 ### **Daten-Eingänge**
 
-Keine eigenen Daten-Eingänge. Die Datenübertragung erfolgt über den Eingangsadapter AI_IN.  
+Keine eigenen Daten-Eingänge. Die Datenübertragung erfolgt über den Eingangsadapter AI_IN.
 Adapter AI_IN stellt den Daten-Eingang D1 (Datentyp INT) bereit.
 
 ### **Daten-Ausgänge**
 
-Keine eigenen Daten-Ausgänge. Die Datenweitergabe erfolgt über den Ausgangsadapter ALI_OUT.  
+Keine eigenen Daten-Ausgänge. Die Datenweitergabe erfolgt über den Ausgangsadapter ALI_OUT.
 Adapter ALI_OUT stellt den Daten-Ausgang D1 (Datentyp LINT) bereit.
 
 ### **Adapter**

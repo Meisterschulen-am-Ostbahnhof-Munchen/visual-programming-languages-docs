@@ -35,7 +35,7 @@ Keine direkten Daten-Ausgänge vorhanden. Die umgewandelten Daten werden über d
 
 ## Funktionsweise
 
-Der Baustein enthält im Inneren die Instanz `Convert` vom Typ `iec61131::conversion::F_LINT_TO_DINT`.  
+Der Baustein enthält im Inneren die Instanz `Convert` vom Typ `iec61131::conversion::F_LINT_TO_DINT`.
 Die Ereignis- und Datenverbindungen sind wie folgt geschaltet:
 
 - Das Ereignis `ALI_IN.E1` triggert die Umwandlung über `Convert.REQ`.

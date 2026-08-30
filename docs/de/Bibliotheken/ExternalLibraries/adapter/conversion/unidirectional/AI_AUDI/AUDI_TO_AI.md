@@ -33,7 +33,7 @@ Keine direkten Daten-Ausgänge. Der Plug `AI_OUT` gibt über seinen Daten-Ausgan
 
 ## Funktionsweise
 
-Der FB ist als Composite-Baustein realisiert. Intern wird der Socket `AUDI_IN` mit dem Standard-Konvertierungsbaustein `iec61131::conversion::F_UDINT_TO_INT` verbunden, dessen Ausgang wiederum mit dem Plug `AI_OUT` verknüpft ist.  
+Der FB ist als Composite-Baustein realisiert. Intern wird der Socket `AUDI_IN` mit dem Standard-Konvertierungsbaustein `iec61131::conversion::F_UDINT_TO_INT` verbunden, dessen Ausgang wiederum mit dem Plug `AI_OUT` verknüpft ist.
 Wird über den Adapter-Eingang `AUDI_IN.E1` ein Ereignis empfangen, wird der zugehörige Datenwert `AUDI_IN.D1` an den Konvertierungsbaustein übergeben. Nach erfolgreicher Umwandlung von `UDINT` nach `INT` wird das Ereignis `Convert.CNF` erzeugt und über `AI_OUT.E1` ausgegeben. Gleichzeitig steht der konvertierte Wert an `AI_OUT.D1` zur Verfügung.
 
 ## Technische Besonderheiten

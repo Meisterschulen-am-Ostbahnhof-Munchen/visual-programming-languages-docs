@@ -51,7 +51,7 @@ Damit wird eine synchrone, ereignisgesteuerte Umsetzung von BOOL in LINT realisi
 
 - **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
 
-- **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.  
+- **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.
   Copyright © 2026 HR Agrartechnik GmbH.
 
 - **Autor & Version**: Entwickelt von Franz Höpfinger, Version 1.0, Stand 2026‑02‑17.

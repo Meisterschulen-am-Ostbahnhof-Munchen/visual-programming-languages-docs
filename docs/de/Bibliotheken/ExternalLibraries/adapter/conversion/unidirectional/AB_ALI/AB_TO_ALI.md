@@ -28,10 +28,10 @@ Keine direkten Daten-Ausgänge des Funktionsblocks. Daten werden über den Plug-
 
 ### **Adapter**
 
-- **Socket `AB_IN`** (Typ: `adapter::types::unidirectional::AB`)  
+- **Socket `AB_IN`** (Typ: `adapter::types::unidirectional::AB`)
   Empfängt ein BYTE-Signal (über den Datenport `D1`) sowie ein Ereignis (über den Ereignisport `E1`).
 
-- **Plug `ALI_OUT`** (Typ: `adapter::types::unidirectional::ALI`)  
+- **Plug `ALI_OUT`** (Typ: `adapter::types::unidirectional::ALI`)
   Sendet ein LINT-Signal (über den Datenport `D1`) sowie ein Ereignis (über den Ereignisport `E1`).
 
 ## Funktionsweise

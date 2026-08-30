@@ -48,10 +48,10 @@ Somit stellt der FB die vom Eingangsadapter bereitgestellten Daten in konvertier
 
 - **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
 
-- **IEC-61131-3-Konvertierung**: Die eigentliche Umwandlung erfolgt mittels des standardisierten Funktionsbausteins `F_LINT_TO_WORD`, der eine verlustbehaftete Konvertierung von 64‑Bit (LINT) auf 16‑Bit (WORD) durchführt (Abschneiden oder Bereichsprüfung abhängig von der Implementierung).  
-- **Adapterbasierte Schnittstelle**: Der Baustein ist vollständig in die Adaptertechnologie von 4diac eingebettet und eignet sich für unidirektionale Kommunikationspfade (package `adapter::conversion::unidirectional`).  
-- **Versionierung**: Version 1.0, bereitgestellt unter der Eclipse Public License 2.0 (EPL‑2.0).  
-- **Keine eigenen Zustände**: Der FB delegiert die Zustandslogik vollständig an den inneren `F_LINT_TO_WORD`.  
+- **IEC-61131-3-Konvertierung**: Die eigentliche Umwandlung erfolgt mittels des standardisierten Funktionsbausteins `F_LINT_TO_WORD`, der eine verlustbehaftete Konvertierung von 64‑Bit (LINT) auf 16‑Bit (WORD) durchführt (Abschneiden oder Bereichsprüfung abhängig von der Implementierung).
+- **Adapterbasierte Schnittstelle**: Der Baustein ist vollständig in die Adaptertechnologie von 4diac eingebettet und eignet sich für unidirektionale Kommunikationspfade (package `adapter::conversion::unidirectional`).
+- **Versionierung**: Version 1.0, bereitgestellt unter der Eclipse Public License 2.0 (EPL‑2.0).
+- **Keine eigenen Zustände**: Der FB delegiert die Zustandslogik vollständig an den inneren `F_LINT_TO_WORD`.
 
 ## Zustandsübersicht
 

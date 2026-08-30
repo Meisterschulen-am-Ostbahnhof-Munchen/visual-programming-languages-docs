@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der Funktionsblock **AULI_TO_AR** dient als konvertierender Composite-Baustein, der einen **AULI**-Adapter (ULINT) in einen **AR**-Adapter (REAL) umwandelt.  
+Der Funktionsblock **AULI_TO_AR** dient als konvertierender Composite-Baustein, der einen **AULI**-Adapter (ULINT) in einen **AR**-Adapter (REAL) umwandelt.
 Er ermöglicht die einfache Integration von Komponenten, die mit unterschiedlichen Datentypen arbeiten, und stellt die Typanpassung über standardisierte Adapter-Schnittstellen bereit.
 
 ## Schnittstellenstruktur
@@ -38,7 +38,7 @@ Der FB besitzt keine direkten Ereignis- oder Datenein-/ausgänge, sondern kommun
 
 ## Funktionsweise
 
-Der FB ist als Composite-Baustein realisiert und enthält eine Instanz des Konvertierungs-FBs `F_ULINT_TO_REAL` aus der IEC‑61131‑Bibliothek.  
+Der FB ist als Composite-Baustein realisiert und enthält eine Instanz des Konvertierungs-FBs `F_ULINT_TO_REAL` aus der IEC‑61131‑Bibliothek.
 
 Ablauf:
 
@@ -69,8 +69,8 @@ Der FB besitzt **keine eigene Zustandsmaschine**. Die Konvertierung erfolgt rein
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AULI_TO_LREAL** – analoge Konvertierung zu `LREAL` (Doppelgenauigkeit).  
-- **Direkte Konvertierungs-FBs** (z. B. `F_ULINT_TO_REAL`): Diese arbeiten auf Datenebene, erfordern aber manuelle Verdrahtung von Ereignissen und Daten. Der **AULI_TO_AR** kapselt diese Verdrahtung und bietet eine kompakte Adapter-Schnittstelle.  
+- **AULI_TO_LREAL** – analoge Konvertierung zu `LREAL` (Doppelgenauigkeit).
+- **Direkte Konvertierungs-FBs** (z. B. `F_ULINT_TO_REAL`): Diese arbeiten auf Datenebene, erfordern aber manuelle Verdrahtung von Ereignissen und Daten. Der **AULI_TO_AR** kapselt diese Verdrahtung und bietet eine kompakte Adapter-Schnittstelle.
 - **Andere Adapter-Konverter** – es existieren entsprechende Bausteine für andere Typkombinationen (z. B. `LINT_TO_AR`), die ähnlich aufgebaut sind.
 
 ## Fazit

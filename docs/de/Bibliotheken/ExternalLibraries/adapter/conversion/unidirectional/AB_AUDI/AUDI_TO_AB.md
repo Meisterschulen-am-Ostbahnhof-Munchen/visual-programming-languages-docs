@@ -43,11 +43,11 @@ Der **AUDI_TO_AB** Funktionsblock ist ein zusammengesetzter Baustein (Composite 
 
 ## Funktionsweise
 
-1. Ein externes System sendet ein Ereignis über den Adapter `AUDI_IN` (E1).  
-2. Dieses Ereignis triggert den internen Konvertierungsbaustein `F_UDINT_TO_BYTE` (aus der IEC 61131‑Bibliothek) über dessen `REQ`‑Eingang.  
-3. Gleichzeitig wird der aktuelle Datenwert von `AUDI_IN.D1` an den `IN`‑Eingang des Konvertierungsbausteins übergeben.  
-4. Der Konvertierungsbaustein wandelt den UDINT‑Wert in einen BYTE‑Wert um und legt das Ergebnis an seinem `OUT`‑Ausgang an.  
-5. Nach Abschluss der Konvertierung sendet der `F_UDINT_TO_BYTE` ein Bestätigungsereignis (`CNF`), das an den `AB_OUT`‑Adapter (E1) weitergeleitet wird.  
+1. Ein externes System sendet ein Ereignis über den Adapter `AUDI_IN` (E1).
+2. Dieses Ereignis triggert den internen Konvertierungsbaustein `F_UDINT_TO_BYTE` (aus der IEC 61131‑Bibliothek) über dessen `REQ`‑Eingang.
+3. Gleichzeitig wird der aktuelle Datenwert von `AUDI_IN.D1` an den `IN`‑Eingang des Konvertierungsbausteins übergeben.
+4. Der Konvertierungsbaustein wandelt den UDINT‑Wert in einen BYTE‑Wert um und legt das Ergebnis an seinem `OUT`‑Ausgang an.
+5. Nach Abschluss der Konvertierung sendet der `F_UDINT_TO_BYTE` ein Bestätigungsereignis (`CNF`), das an den `AB_OUT`‑Adapter (E1) weitergeleitet wird.
 6. Gleichzeitig wird der konvertierte BYTE‑Wert an `AB_OUT.D1` ausgegeben und steht dem empfangenden System zur Verfügung.
 
 Die gesamte Verarbeitung erfolgt ereignisgesteuert und ohne Zwischenspeicherung – jedes eingehende Ereignis erzeugt genau ein ausgehendes Ereignis.
@@ -56,9 +56,9 @@ Die gesamte Verarbeitung erfolgt ereignisgesteuert und ohne Zwischenspeicherung 
 
 - **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
 
-- **Composite‑Struktur**: Der Baustein ist als Netzwerk von Unterbausteinen realisiert. Er nutzt den vordefinierten Konvertierungsbaustein `F_UDINT_TO_BYTE` aus der IEC 61131‑Bibliothek, wodurch eine standardisierte und testbare Konvertierung gewährleistet wird.  
-- **Unidirektionale Adapter**: Sowohl der Eingangs‑ als auch der Ausgangsadapter sind unidirektional. Dies reduziert die Kopplung und ermöglicht eine einfache Integration in Datenflüsse, die nur eine Richtung benötigen.  
-- **Keine Zustandsspeicherung**: Der Baustein ist rein kombinatorisch (keine internen Zustände). Er reagiert auf jedes eingehende Ereignis sofort und gibt das Ergebnis ohne Verzögerung aus.  
+- **Composite‑Struktur**: Der Baustein ist als Netzwerk von Unterbausteinen realisiert. Er nutzt den vordefinierten Konvertierungsbaustein `F_UDINT_TO_BYTE` aus der IEC 61131‑Bibliothek, wodurch eine standardisierte und testbare Konvertierung gewährleistet wird.
+- **Unidirektionale Adapter**: Sowohl der Eingangs‑ als auch der Ausgangsadapter sind unidirektional. Dies reduziert die Kopplung und ermöglicht eine einfache Integration in Datenflüsse, die nur eine Richtung benötigen.
+- **Keine Zustandsspeicherung**: Der Baustein ist rein kombinatorisch (keine internen Zustände). Er reagiert auf jedes eingehende Ereignis sofort und gibt das Ergebnis ohne Verzögerung aus.
 - **Kompatibilität**: Erfüllt den Standard IEC 61499‑2 und kann in Umgebungen eingesetzt werden, die unidirektionale Adapter (AUDI/AB) unterstützen.
 
 ## Zustandsübersicht
@@ -67,8 +67,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Er arbeitet ereignisge
 
 ## Anwendungsszenarien
 
-- **Datenanpassung in Adapter‑basierten Systemen**: Wenn eine Komponente oder ein Protokoll einen UDINT‑Wert über einen AUDI‑Adapter liefert, der nachgeschaltete Baustein aber einen BYTE‑Wert über einen AB‑Adapter erwartet, kann dieser Baustein zur nahtlosen Kopplung eingesetzt werden.  
-- **Übergang von 32‑Bit auf 8‑Bit Schnittstellen**: Beispielsweise in der Sensor‑Aktor‑Kommunikation, wo ein Sensor 32‑Bit Rohdaten liefert, das Stellglied aber nur 8‑Bit Kommandos verarbeitet.  
+- **Datenanpassung in Adapter‑basierten Systemen**: Wenn eine Komponente oder ein Protokoll einen UDINT‑Wert über einen AUDI‑Adapter liefert, der nachgeschaltete Baustein aber einen BYTE‑Wert über einen AB‑Adapter erwartet, kann dieser Baustein zur nahtlosen Kopplung eingesetzt werden.
+- **Übergang von 32‑Bit auf 8‑Bit Schnittstellen**: Beispielsweise in der Sensor‑Aktor‑Kommunikation, wo ein Sensor 32‑Bit Rohdaten liefert, das Stellglied aber nur 8‑Bit Kommandos verarbeitet.
 - **Test- und Simulationsumgebungen**: Erlaubt das einfache Austauschen von Adaptern, ohne die gesamte Datenpfadlogik ändern zu müssen.
 
 ## Vergleich mit ähnlichen Bausteinen

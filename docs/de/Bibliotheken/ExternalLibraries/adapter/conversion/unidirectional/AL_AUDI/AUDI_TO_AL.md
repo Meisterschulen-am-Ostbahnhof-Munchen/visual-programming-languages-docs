@@ -12,25 +12,25 @@ Der Funktionsblock **AUDI_TO_AL** ist ein zusammengesetzter (Composite) Baustein
 
 ### **Ereignis-Eingänge**
 
-Der Baustein besitzt keine eigenen Ereignis-Eingänge. Die ereignisgesteuerte Verarbeitung erfolgt über den **AUDI_IN**-Socket:  
+Der Baustein besitzt keine eigenen Ereignis-Eingänge. Die ereignisgesteuerte Verarbeitung erfolgt über den **AUDI_IN**-Socket:
 
 - **E1** : Ereignisseingang des AUDI-Adapters – löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 
-Der Baustein besitzt keine eigenen Ereignis-Ausgänge. Die Ergebnisweitergabe erfolgt über den **AL_OUT**-Plug:  
+Der Baustein besitzt keine eigenen Ereignis-Ausgänge. Die Ergebnisweitergabe erfolgt über den **AL_OUT**-Plug:
 
 - **E1** : Ereignisausgang des AL-Adapters – signalisiert abgeschlossene Konvertierung.
 
 ### **Daten-Eingänge**
 
-Der Baustein besitzt keine eigenen Daten-Eingänge. Die zu konvertierenden Daten werden über den **AUDI_IN**-Socket bereitgestellt:  
+Der Baustein besitzt keine eigenen Daten-Eingänge. Die zu konvertierenden Daten werden über den **AUDI_IN**-Socket bereitgestellt:
 
 - **D1** : Dateneingang des AUDI-Adapters (Typ: UDINT) – der zu konvertierende Wert.
 
 ### **Daten-Ausgänge**
 
-Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte Ergebnis wird über den **AL_OUT**-Plug bereitgestellt:  
+Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte Ergebnis wird über den **AL_OUT**-Plug bereitgestellt:
 
 - **D1** : Datenausgang des AL-Adapters (Typ: LWORD) – der konvertierte Wert.
 
@@ -43,7 +43,7 @@ Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte Ergebnis wi
 
 ## Funktionsweise
 
-Der Baustein bildet eine reine Kapselung der IEC‑61131‑Funktion `F_UDINT_TO_LWORD`.  
+Der Baustein bildet eine reine Kapselung der IEC‑61131‑Funktion `F_UDINT_TO_LWORD`.
 Bei einem Ereignis am **AUDI_IN.E1** wird der interne Funktionsbaustein **Convert** (Typ `F_UDINT_TO_LWORD`) über dessen Ereigniseingang **REQ** aktiviert. Gleichzeitig wird der an **AUDI_IN.D1** anliegende UDINT-Wert an den Dateneingang **IN** von **Convert** übergeben. Nach Abschluss der Konvertierung signalisiert **Convert** über seinen Ereignisausgang **CNF** die Fertigstellung. Dieses Ereignis wird direkt an **AL_OUT.E1** weitergeleitet, und der konvertierte LWORD-Wert wird von **Convert.OUT** auf **AL_OUT.D1** ausgegeben.
 
 Der gesamte Ablauf ist ereignisgesteuert und ohne zusätzliche Laufzeitlogik innerhalb des Composite-Bausteins.
@@ -53,7 +53,7 @@ Der gesamte Ablauf ist ereignisgesteuert und ohne zusätzliche Laufzeitlogik inn
 - **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
 
 - Der Baustein ist als **Composite-Funktionsblock** realisiert und verwendet ausschließlich die standardisierte IEC‑61131‑Konvertierungsfunktion `F_UDINT_TO_LWORD`.
-- Die Konvertierung erfolgt direkt: **UDINT** (32‑Bit unsigned integer) wird auf **LWORD** (64‑Bit logical word) abgebildet.  
+- Die Konvertierung erfolgt direkt: **UDINT** (32‑Bit unsigned integer) wird auf **LWORD** (64‑Bit logical word) abgebildet.
   Hinweis: Bei der Umwandlung eines 32‑Bit‑Werts in ein 64‑Bit‑Wort werden die oberen 32 Bits auf Null gesetzt.
 
 - Der Baustein ist unter der **Eclipse Public License 2.0** lizenziert.

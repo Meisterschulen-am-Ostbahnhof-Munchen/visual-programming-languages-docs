@@ -46,10 +46,10 @@ Die Übertragung erfolgt streng sequenziell: erst Ereignis, dann Datenfluss – 
 
 - **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
 
-- **Composite-Baustein**: Der ALR_TO_AR kapselt die Konvertierungslogik und vereinfacht die Wiederverwendung in verschiedenen Projekten.  
-- **IEC 61131‑Funktion**: Die eigentliche Typumwandlung basiert auf der standardisierten Bibliotheksfunktion `F_LREAL_TO_REAL`.  
-- **Adapter‑Typen**: Beide Adapter sind unidirektional ausgelegt und erlauben eine klare Trennung von Ein‑ und Ausgabeseite.  
-- **Keine Zustandsmaschine**: Der Baustein arbeitet rein ereignisgesteuert ohne internen Zustandsspeicher.  
+- **Composite-Baustein**: Der ALR_TO_AR kapselt die Konvertierungslogik und vereinfacht die Wiederverwendung in verschiedenen Projekten.
+- **IEC 61131‑Funktion**: Die eigentliche Typumwandlung basiert auf der standardisierten Bibliotheksfunktion `F_LREAL_TO_REAL`.
+- **Adapter‑Typen**: Beide Adapter sind unidirektional ausgelegt und erlauben eine klare Trennung von Ein‑ und Ausgabeseite.
+- **Keine Zustandsmaschine**: Der Baustein arbeitet rein ereignisgesteuert ohne internen Zustandsspeicher.
 
 ## Zustandsübersicht
 

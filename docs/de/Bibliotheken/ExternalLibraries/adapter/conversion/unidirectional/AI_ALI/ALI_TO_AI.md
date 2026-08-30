@@ -43,12 +43,12 @@ Der Funktionsblock **ALI_TO_AI** ist ein zusammengesetzter Baustein (Composite F
 
 ## Funktionsweise
 
-Der Baustein arbeitet als reine Kopplung eines ALI‑Sockets mit einem AI‑Plug. Im Inneren wird der intern verfügbare Konvertierungsbaustein **F_LINT_TO_INT** verwendet.  
+Der Baustein arbeitet als reine Kopplung eines ALI‑Sockets mit einem AI‑Plug. Im Inneren wird der intern verfügbare Konvertierungsbaustein **F_LINT_TO_INT** verwendet.
 
-1. Ein eingehendes Ereignis am **ALI_IN.E1** triggert den Konvertierungsbaustein.  
-2. Gleichzeitig wird der aktuelle Wert von **ALI_IN.D1** an den Eingang des Konverters übergeben.  
-3. Nach Abschluss der Konvertierung wird das Ergebnis an **AI_OUT.D1** weitergeleitet.  
-4. Ein Bestätigungsereignis wird über **AI_OUT.E1** ausgegeben.  
+1. Ein eingehendes Ereignis am **ALI_IN.E1** triggert den Konvertierungsbaustein.
+2. Gleichzeitig wird der aktuelle Wert von **ALI_IN.D1** an den Eingang des Konverters übergeben.
+3. Nach Abschluss der Konvertierung wird das Ergebnis an **AI_OUT.D1** weitergeleitet.
+4. Ein Bestätigungsereignis wird über **AI_OUT.E1** ausgegeben.
 
 Der gesamte Ablauf erfolgt atomar innerhalb eines Zyklus – Verzögerungen entstehen nur durch die Laufzeit des Konvertierungsbausteins.
 
@@ -56,22 +56,22 @@ Der gesamte Ablauf erfolgt atomar innerhalb eines Zyklus – Verzögerungen ents
 
 - **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
 
-- **Reine Adapterkopplung**: Der Baustein enthält keine eigene Zustandslogik oder Zeitsteuerung.  
-- **Verwendung von IEC‑61131‑Konvertierung**: Die eigentliche Typumwandlung erfolgt durch den standardisierten Baustein `F_LINT_TO_INT`.  
-- **Einfache Zusammensetzung**: Alle Verbindungen sind direkt und ohne zwischengeschaltete Logik.  
+- **Reine Adapterkopplung**: Der Baustein enthält keine eigene Zustandslogik oder Zeitsteuerung.
+- **Verwendung von IEC‑61131‑Konvertierung**: Die eigentliche Typumwandlung erfolgt durch den standardisierten Baustein `F_LINT_TO_INT`.
+- **Einfache Zusammensetzung**: Alle Verbindungen sind direkt und ohne zwischengeschaltete Logik.
 - **Typ‑ und ereignisgetrieben**: Die Konvertierung wird nur bei einem Ereignis am ALI‑Eingang ausgeführt.
 
 ## Zustandsübersicht
 
-Als zusammengesetzter Baustein ohne eigenes Zustandsdiagramm hat **ALI_TO_AI** keinen eigenen Zustandsautomaten. Der interne Konvertierungsbaustein `F_LINT_TO_INT` arbeitet nach dem einfachen Muster:  
+Als zusammengesetzter Baustein ohne eigenes Zustandsdiagramm hat **ALI_TO_AI** keinen eigenen Zustandsautomaten. Der interne Konvertierungsbaustein `F_LINT_TO_INT` arbeitet nach dem einfachen Muster:
 
-- **IDLE**: Warten auf ein Ereignis.  
-- **CONVERT**: Ausführen der Konvertierung und Ausgabe des Ergebnisses.  
+- **IDLE**: Warten auf ein Ereignis.
+- **CONVERT**: Ausführen der Konvertierung und Ausgabe des Ergebnisses.
 
 ## Anwendungsszenarien
 
-- **Systemkopplung**: Wenn ein Sensormodul LINT‑Werte über einen ALI‑Adapter liefert, das Steuerungssystem jedoch INT‑Werte über einen AI‑Adapter erwartet.  
-- **Protokoll‑ oder Schnittstellenanpassung**: Integration von Komponenten unterschiedlicher Hersteller, die verschiedene Adaptertypen verwenden.  
+- **Systemkopplung**: Wenn ein Sensormodul LINT‑Werte über einen ALI‑Adapter liefert, das Steuerungssystem jedoch INT‑Werte über einen AI‑Adapter erwartet.
+- **Protokoll‑ oder Schnittstellenanpassung**: Integration von Komponenten unterschiedlicher Hersteller, die verschiedene Adaptertypen verwenden.
 - **Bereinigung von Datenpfaden**: Vereinfachung des Signalflusses durch definierte Konvertierung an einer zentralen Stelle.
 
 ## Vergleich mit ähnlichen Bausteinen

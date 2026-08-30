@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="420.0" height="408.0" viewBox="0 0 420.0 408.0">
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<rect x="0" y="0" width="420.0" height="408.0" fill="#ffffff" />
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text x="210.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">AND_AUF: Logisches UND (IN1 AND IN2) für AUF-Bedingung</text>
+<path d="M 148.0 140.0
+            L 272.0 140.0
+            A 3 3 0 0 1 275.0 143.0
+            L 275.0 203.0
+            A 3 3 0 0 1 272.0 206.0
+            L 269.0 206.0
+            L 269.0 246.0
+            L 272.0 246.0
+            A 3 3 0 0 1 275.0 249.0
+            L 275.0 305.0
+            A 3 3 0 0 1 272.0 308.0
+            L 148.0 308.0
+            A 3 3 0 0 1 145.0 305.0
+            L 145.0 249.0
+            A 3 3 0 0 1 148.0 246.0
+            L 151.0 246.0
+            L 151.0 206.0
+            L 148.0 206.0
+            A 3 3 0 0 1 145.0 203.0
+            L 145.0 143.0
+            A 3 3 0 0 1 148.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 179.5 217.0
+            L 195.5 217.0
+            A 1 1 0 0 1 196.5 218.0
+            L 196.5 221.5
+            L 194.5 221.5
+            L 194.5 224.5
+            L 196.5 224.5
+            L 196.5 234.0
+            A 1 1 0 0 1 195.5 235.0
+            L 179.5 235.0
+            A 1 1 0 0 1 178.5 234.0
+            L 178.5 224.5
+            L 180.5 224.5
+            L 180.5 221.5
+            L 178.5 221.5
+            L 178.5 218.0
+            A 1 1 0 0 1 179.5 217.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="187.5" y="231.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="201.5" y="231.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AND_2</text>
+<text x="210.0" y="246.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AND_2</text>
+<path d="M140.0,177.0 L140.0,187.0 L145.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
+<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M140.0,258.0 L140.0,268.0 L145.0,263.0 Z" fill="#3366FF" stroke="none" />
+<text x="157.0" y="267.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN1</text>
+<text x="130.0" y="266.0" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
+<path d="M140.0,284.0 L140.0,294.0 L145.0,289.0 Z" fill="#3366FF" stroke="none" />
+<text x="157.0" y="293.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN2</text>
+<text x="130.0" y="292.0" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
+<path d="M280.0,177.0 L280.0,187.0 L275.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="263.0" y="186.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
+<text x="290.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
+<path d="M280.0,258.0 L280.0,268.0 L275.0,263.0 Z" fill="#3366FF" stroke="none" />
+<text x="263.0" y="267.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="290.0" y="266.0" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
+</svg>

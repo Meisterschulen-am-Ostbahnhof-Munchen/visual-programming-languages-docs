@@ -4,7 +4,7 @@
 Questions/Suggestions:
 Go here:
 [Discussion Forum ](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)
-<img src="img/powerdby4diac_large_light.png" />
+<img src="img/powerdby4diac_large_light.png" alt="Powered by Eclipse 4diac logo" width="400px" />
 
 ---
 

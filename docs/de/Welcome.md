@@ -7,7 +7,7 @@ hier lang:
 
 [Discussion Forum](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)
 
-<img src="img/powerdby4diac_large_light.png" />
+<img src="img/powerdby4diac_large_light.png" alt="Powered by Eclipse 4diac Logo" width="400px" />
 
 ---
 

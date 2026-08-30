@@ -63,7 +63,7 @@ Have you ever wondered how to create programs visually? Here you will find resou
 
 **Eclipse 4diac** is the leading open-source development environment for this standard. It enables the efficient modeling and distribution of complex industrial applications.
 
-<p align="center"><img src="img/powerdby4diac_large_light.png" width="400px" /></p>
+<p align="center"><img src="img/powerdby4diac_large_light.png" alt="Powered by Eclipse 4diac logo" width="400px" /></p>
 
 ---
 

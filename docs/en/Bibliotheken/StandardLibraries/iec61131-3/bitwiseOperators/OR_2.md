@@ -3,7 +3,7 @@
 ![OR_2](https://user-images.githubusercontent.com/116869307/214144026-378fb776-128a-41b0-ad4c-4d23d70d12d0.png)
 A common use case is a soft AI and an AUX button.
 TRUE dominates, so as soon as an input is TRUE, the output is set to TRUE.
-![](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
+![OR_2 logic circuit with two inputs](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
 
 * * * * * * * * * *
 

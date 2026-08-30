@@ -1,6 +1,6 @@
 # QX
 
-![](https://user-images.githubusercontent.com/69573151/210781265-4dabab2d-a9e3-4da6-a14b-8df0a8ed36e5.png)
+![QX (Output Bit) Baustein Schnittstelle](https://user-images.githubusercontent.com/69573151/210781265-4dabab2d-a9e3-4da6-a14b-8df0a8ed36e5.png)
 
 * * * * * * * * * *
 

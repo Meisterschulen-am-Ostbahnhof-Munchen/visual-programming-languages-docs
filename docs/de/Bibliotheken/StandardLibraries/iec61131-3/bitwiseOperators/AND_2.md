@@ -4,7 +4,7 @@
 
 OUT wird nur geschalten wenn an IN1 und IN2 ein Bool (Signal anliegt) Z.b. von einem Schalter
 
-![](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
+![AND_2 Logikschaltung mit zwei Eingängen](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
 
 bei allen anderen "AND" Bausteinen selbe prinzip nur dass immer alle IN eingänge immer True sein müssen
 

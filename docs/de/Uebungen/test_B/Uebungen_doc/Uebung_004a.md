@@ -6,7 +6,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a`. In dieser Übung v
 
 ----
 
-![](Uebung_004a.png)
+![Schaltplan der Übung 004a Toggle Flip-Flop](Uebung_004a.png)
 
 ## Ziel der Übung
 

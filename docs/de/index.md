@@ -63,7 +63,7 @@ Die **IEC 61499** ist eine internationale Norm für die Echtzeit-Verarbeitung in
 
 **Eclipse 4diac** ist die führende Open-Source-Entwicklungsumgebung für diesen Standard. Sie ermöglicht es, komplexe industrielle Anwendungen effizient zu modellieren und zu verteilen.
 
-<p align="center"><img src="img/powerdby4diac_large_light.png" width="400px" /></p>
+<p align="center"><img src="img/powerdby4diac_large_light.png" alt="Powered by Eclipse 4diac Logo" width="400px" /></p>
 
 ---
 

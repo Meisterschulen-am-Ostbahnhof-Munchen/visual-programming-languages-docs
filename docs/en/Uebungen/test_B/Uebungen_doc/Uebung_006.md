@@ -4,7 +4,7 @@
 This article describes the logiBUS® exercise `Uebung_006`. Here, a classic self-holding memory with separate pushbuttons for on and off is implemented
 ----
 
-![](Uebung_006.png)
+![Schematic of Exercise 006 SR Flip-Flop](Uebung_006.png)
 
 ## Objective of the Exercise
 

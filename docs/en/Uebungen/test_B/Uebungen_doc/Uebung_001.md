@@ -11,9 +11,9 @@ This article describes the basic logiBUS® exercise `Uebung_001`. It demonstrate
 
 ----
 
-![](Uebung_001_Gemini.jpg)
+![Setup of Exercise 001 Digital Input to Output](Uebung_001_Gemini.jpg)
 
-![](Uebung_001.png)
+![Network schematic of Exercise 001](Uebung_001.png)
 
 ## Objective of the exercise
 

@@ -4,8 +4,8 @@
 This article describes the basic logiBUS® exercise `Uebung_001_AX`, in which a digital input is directly connected to a digital output using the AX adapter
 ----
 
-![](Uebung_001_AX_Gemini.jpg)
-![](Uebung_001_AX.png)
+![Setup of Exercise 001 AX](Uebung_001_AX_Gemini.jpg)
+![Network diagram of Exercise 001 AX](Uebung_001_AX.png)
 
 The main objective of this exercise is to demonstrate the basic principle of direct signal transmission from a physical digital input to a physical digital output. This is achieved using the "Plug and Socket" concept of IEC 61499 via an adapter interface. The logic is quite simple: The state of the output should always correspond to the state of the input.
 

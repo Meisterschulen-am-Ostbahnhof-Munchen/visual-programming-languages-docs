@@ -6,7 +6,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006a`. Hier wird ein hoch
 
 ----
 
-![](Uebung_006a.png)
+![Schaltplan der Übung 006a Kombinations-Flip-Flop](Uebung_006a.png)
 
 ## Ziel der Übung
 

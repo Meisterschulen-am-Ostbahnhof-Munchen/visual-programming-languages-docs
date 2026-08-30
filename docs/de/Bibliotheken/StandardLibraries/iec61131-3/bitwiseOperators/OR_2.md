@@ -6,7 +6,7 @@ Ein häufiger Anwendungsfall ist ein Soft KI und ein AUX Button
 
 TRUE dominiert, also sobald an einem IN ein TRUE anliegt wird der OUT auf TRUE geschalten
 
-![](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
+![OR_2 Logikschaltung mit zwei Eingängen](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
 
 * * * * * * * * * *
 

@@ -4,7 +4,7 @@
 This article describes the logiBUS® exercise `Uebung_006a`. It uses a highly flexible memory module that combines three different operating modes
 ----
 
-![](Uebung_006a.png)
+![Schematic of Exercise 006a Combined Flip-Flop](Uebung_006a.png)
 
 ## Objective of the Exercise
 

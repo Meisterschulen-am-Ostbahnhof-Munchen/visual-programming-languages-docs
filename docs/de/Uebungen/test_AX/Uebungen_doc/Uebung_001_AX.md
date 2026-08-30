@@ -6,9 +6,9 @@ Dieser Artikel beschreibt die grundlegende logiBUS®-Übung `Uebung_001_AX`, bei
 
 ----
 
-![](Uebung_001_AX_Gemini.jpg)
+![Aufbau der Übung 001 AX](Uebung_001_AX_Gemini.jpg)
 
-![](Uebung_001_AX.png)
+![Netzwerkdiagramm der Übung 001 AX](Uebung_001_AX.png)
 
 ## Ziel der Übung
 

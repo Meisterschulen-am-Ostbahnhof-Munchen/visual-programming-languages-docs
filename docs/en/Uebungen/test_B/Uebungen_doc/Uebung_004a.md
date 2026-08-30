@@ -4,7 +4,7 @@
 This article describes the logiBUS® exercise `Uebung_004a`. In this exercise, we move beyond simple data forwarding and use events to implement a memory function: a classic impulse switch
 ----
 
-![](Uebung_004a.png)
+![Schematic of Exercise 004a Toggle Flip-Flop](Uebung_004a.png)
 
 ## Objective of the Exercise
 

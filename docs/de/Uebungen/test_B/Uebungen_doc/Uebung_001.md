@@ -12,9 +12,9 @@ Dieser Artikel beschreibt die grundlegende logiBUS®-Übung `Uebung_001`. Hier w
 
 ----
 
-![](Uebung_001_Gemini.jpg)
+![Aufbau der Übung 001 Digital Input auf Output](Uebung_001_Gemini.jpg)
 
-![](Uebung_001.png)
+![Netzwerkschaltplan der Übung 001](Uebung_001.png)
 
 ## Ziel der Übung
 

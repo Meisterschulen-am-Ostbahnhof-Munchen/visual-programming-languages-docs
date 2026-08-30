@@ -6,7 +6,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006`. Hier wird ein klass
 
 ----
 
-![](Uebung_006.png)
+![Schaltplan der Übung 006 SR-Flip-Flop](Uebung_006.png)
 
 ## Ziel der Übung
 

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1414.0" height="382.0" viewBox="0 0 1414.0 382.0">
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<rect x="0" y="0" width="1414.0" height="382.0" fill="#ffffff" />
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text x="707.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">AX_2_2: AX_OR and AX_SPLIT for a 2-to-2 Connection</text>
+<path d="M257.0,227.0 C518.0,227.0,866.0,227.0,1127.0,227.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M 1130.0 140.0
+            L 1284.0 140.0
+            A 3 3 0 0 1 1287.0 143.0
+            L 1287.0 167.0
+            A 3 3 0 0 1 1284.0 170.0
+            L 1281.0 170.0
+            L 1281.0 210.0
+            L 1284.0 210.0
+            A 3 3 0 0 1 1287.0 213.0
+            L 1287.0 279.0
+            A 3 3 0 0 1 1284.0 282.0
+            L 1130.0 282.0
+            A 3 3 0 0 1 1127.0 279.0
+            L 1127.0 213.0
+            A 3 3 0 0 1 1130.0 210.0
+            L 1133.0 210.0
+            L 1133.0 170.0
+            L 1130.0 170.0
+            A 3 3 0 0 1 1127.0 167.0
+            L 1127.0 143.0
+            A 3 3 0 0 1 1130.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 1156.5 181.0
+            L 1172.5 181.0
+            A 1 1 0 0 1 1173.5 182.0
+            L 1173.5 185.5
+            L 1171.5 185.5
+            L 1171.5 188.5
+            L 1173.5 188.5
+            L 1173.5 198.0
+            A 1 1 0 0 1 1172.5 199.0
+            L 1156.5 199.0
+            A 1 1 0 0 1 1155.5 198.0
+            L 1155.5 188.5
+            L 1157.5 188.5
+            L 1157.5 185.5
+            L 1155.5 185.5
+            L 1155.5 182.0
+            A 1 1 0 0 1 1156.5 181.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="1164.5" y="195.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="1178.5" y="195.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AX_SPLIT_2</text>
+<text x="1207.0" y="210.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AX_SPLIT_2</text>
+<path d="M 1122.0 222.0
+            L 1127.0 222.0
+            L 1127.0 223.66666666666666
+            L 1129.5 223.66666666666666
+            L 1129.5 222.0
+            L 1132.0 222.0
+            L 1132.0 232.0
+            L 1129.5 232.0
+            L 1129.5 230.33333333333334
+            L 1127.0 230.33333333333334
+            L 1127.0 232.0
+            L 1122.0 232.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="1139.0" y="231.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
+<text x="1112.0" y="230.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<path d="M 1282.0 222.0
+            L 1284.5 222.0
+            L 1284.5 223.66666666666666
+            L 1287.0 223.66666666666666
+            L 1287.0 222.0
+            L 1292.0 222.0
+            L 1292.0 232.0
+            L 1287.0 232.0
+            L 1287.0 230.33333333333334
+            L 1284.5 230.33333333333334
+            L 1284.5 232.0
+            L 1282.0 232.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="1275.0" y="231.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT1</text>
+<text x="1302.0" y="230.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<path d="M 1282.0 248.0
+            L 1284.5 248.0
+            L 1284.5 249.66666666666666
+            L 1287.0 249.66666666666666
+            L 1287.0 248.0
+            L 1292.0 248.0
+            L 1292.0 258.0
+            L 1287.0 258.0
+            L 1287.0 256.3333333333333
+            L 1284.5 256.3333333333333
+            L 1284.5 258.0
+            L 1282.0 258.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="1275.0" y="257.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT2</text>
+<text x="1302.0" y="256.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<path d="M 130.0 140.0
+            L 254.0 140.0
+            A 3 3 0 0 1 257.0 143.0
+            L 257.0 167.0
+            A 3 3 0 0 1 254.0 170.0
+            L 251.0 170.0
+            L 251.0 210.0
+            L 254.0 210.0
+            A 3 3 0 0 1 257.0 213.0
+            L 257.0 279.0
+            A 3 3 0 0 1 254.0 282.0
+            L 130.0 282.0
+            A 3 3 0 0 1 127.0 279.0
+            L 127.0 213.0
+            A 3 3 0 0 1 130.0 210.0
+            L 133.0 210.0
+            L 133.0 170.0
+            L 130.0 170.0
+            A 3 3 0 0 1 127.0 167.0
+            L 127.0 143.0
+            A 3 3 0 0 1 130.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 153.5 181.0
+            L 169.5 181.0
+            A 1 1 0 0 1 170.5 182.0
+            L 170.5 185.5
+            L 168.5 185.5
+            L 168.5 188.5
+            L 170.5 188.5
+            L 170.5 198.0
+            A 1 1 0 0 1 169.5 199.0
+            L 153.5 199.0
+            A 1 1 0 0 1 152.5 198.0
+            L 152.5 188.5
+            L 154.5 188.5
+            L 154.5 185.5
+            L 152.5 185.5
+            L 152.5 182.0
+            A 1 1 0 0 1 153.5 181.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="161.5" y="195.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="175.5" y="195.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AX_OR_2</text>
+<text x="192.0" y="210.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AX_OR_2</text>
+<path d="M 122.0 222.0
+            L 127.0 222.0
+            L 127.0 223.66666666666666
+            L 129.5 223.66666666666666
+            L 129.5 222.0
+            L 132.0 222.0
+            L 132.0 232.0
+            L 129.5 232.0
+            L 129.5 230.33333333333334
+            L 127.0 230.33333333333334
+            L 127.0 232.0
+            L 122.0 232.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="139.0" y="231.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN1</text>
+<text x="112.0" y="230.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<path d="M 122.0 248.0
+            L 127.0 248.0
+            L 127.0 249.66666666666666
+            L 129.5 249.66666666666666
+            L 129.5 248.0
+            L 132.0 248.0
+            L 132.0 258.0
+            L 129.5 258.0
+            L 129.5 256.3333333333333
+            L 127.0 256.3333333333333
+            L 127.0 258.0
+            L 122.0 258.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="139.0" y="257.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN2</text>
+<text x="112.0" y="256.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+<path d="M 252.0 222.0
+            L 254.5 222.0
+            L 254.5 223.66666666666666
+            L 257.0 223.66666666666666
+            L 257.0 222.0
+            L 262.0 222.0
+            L 262.0 232.0
+            L 257.0 232.0
+            L 257.0 230.33333333333334
+            L 254.5 230.33333333333334
+            L 254.5 232.0
+            L 252.0 232.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="245.0" y="231.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="272.0" y="230.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
+</svg>

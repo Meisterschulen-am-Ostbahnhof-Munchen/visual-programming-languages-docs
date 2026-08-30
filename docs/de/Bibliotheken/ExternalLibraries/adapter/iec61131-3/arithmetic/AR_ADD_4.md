@@ -31,7 +31,7 @@ Der Funktionsblock **AR_ADD_4** ist ein generischer Baustein zur arithmetischen 
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | **IN1** | `adapter::types::unidirectional::AR` | Socket (Eingang) | Erster Summand der Addition |
 | **IN2** | `adapter::types::unidirectional::AR` | Socket (Eingang) | Zweiter Summand |
 | **IN3** | `adapter::types::unidirectional::AR` | Socket (Eingang) | Dritter Summand |
@@ -71,7 +71,7 @@ Aufgrund der rein datengetriebenen und ereignislosen Arbeitsweise besitzt der Ba
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Eingänge | Besonderheit |
-|----------|----------------|--------------|
+| ---------- | ---------------- | -------------- |
 | **AR_ADD_4** | 4 | Adapterbasiert, generisch, keine Ereignisse |
 | **AR_ADD_2** (hypothetisch) | 2 | Reduzierte Eingänge, gleiche Konzeption |
 | **F_ADD** (aus IEC 61131) | 2 | Standard-Datentypen, ereignisgesteuert (via ENABLE/ENO) |

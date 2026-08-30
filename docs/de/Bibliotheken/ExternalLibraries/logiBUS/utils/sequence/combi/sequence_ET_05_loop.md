@@ -5,6 +5,7 @@
 ![sequence_ET_05_loop_ecc](./sequence_ET_05_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_ET_05_loop` implementiert eine zyklische Sequenz mit fünf Zuständen. Der Übergang zwischen den einzelnen Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Baustein ist für Anwendungen konzipiert, bei denen ein Prozess schrittweise durchlaufen und dabei verschiedene Aktionen in einer festen Reihenfolge ausgelöst werden müssen, wie beispielsweise in Verpackungsmaschinen, Montageprozessen oder Waschprogrammen.

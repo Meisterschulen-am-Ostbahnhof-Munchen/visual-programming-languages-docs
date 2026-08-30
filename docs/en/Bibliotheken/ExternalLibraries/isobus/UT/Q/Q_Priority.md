@@ -3,6 +3,7 @@
 ![Q_Priority](https://user-images.githubusercontent.com/116869307/214148302-f10f051a-fad7-42af-a3e0-9f5e0eedbaf3.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_Priority** is a standards-compliant function block for priority control of alarm masks in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.40) specification for VT alarm management.
@@ -42,13 +43,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with alarm mask ID
 - `INITO` confirms operational readiness
-2. **Priority change**:
+1. **Priority change**:
+
 - `REQ` with new priority value
 - Updates the alarm display order
 - `CNF` provides result status and previous value
-3. **Priority logic**:
+1. **Priority logic**:
+
 - Lower numbers = Higher priority
 - Affects alarm display order
 
@@ -63,7 +67,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Priority Reference
 
 | Priority | Typical Use |
-|-----------|-----------------------------|
+| ----------- | ----------------------------- |
 | 0-31 | Critical System Alarms |
 | 32-63 | Important Process Alarms |
 | 64-127 | Standard Warnings |
@@ -72,7 +76,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful Change |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT Not Ready |
@@ -90,7 +94,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_Priority | VtAlarmPriority | VtEventManager |
-|---------------|------------|-----------------|----------------|
+| --------------- | ------------ | ----------------- | ---------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Real-time effect | ✔ | ✔ | ✖ |
 | Value range | 0-255 | 0-127 | 0-31 |

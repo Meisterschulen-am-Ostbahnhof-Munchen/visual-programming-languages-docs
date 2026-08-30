@@ -1,8 +1,9 @@
 # Exercise_020c: DigitalInput_I1 to DigitalOutput_Q1; E_TON; Power-On Delay
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_020c`.
+This article describes the logiBUS® exercise `Uebung_020c`
 ----
+
 ## Objective of the Exercise
 
 Using the standardized timer block `E_TON`.

@@ -6,6 +6,7 @@
 
 The function block `OR_10_BOOL` is a generic block for calculating the logical OR operation. It performs the OR operation on up to ten separate Boolean input values and outputs the result on a single output. This block is classified according to the IEC 61131-3 standard and serves as a standard function for bitwise operations in control applications.
 ![OR_10_BOOL](OR_10_BOOL.svg)
+
 ## Interface Structure
 
 The function block follows the standard I/O and event model of the 4diac IDE.
@@ -74,6 +75,7 @@ The function block has no internal state (memoryless). The output signal `OUT` i
 - **Blocks with variable input count:** Some libraries offer OR blocks where the number of inputs is configurable. `OR_10_BOOL`, however, offers a fixed, explicit interface.
 
 **`OR_10_BOOL`:**
+
 ## Conclusion
 
 The `OR_10_BOOL` is a robust and easy-to-use basic building block for logical signal processing in IEC 61131-3-based control applications. Its strength lies in its clear interface with ten inputs and the reliable, event-driven calculation of the inclusive OR function. It represents an optimal solution for applications that require combining multiple Boolean sources into a single signal.

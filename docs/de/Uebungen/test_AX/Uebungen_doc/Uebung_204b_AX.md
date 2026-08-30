@@ -3,6 +3,7 @@
 ![Uebung_204b_AX_network](./Uebung_204b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung des Funktionsbausteins **ILOCK_CONFLICT_TRIP_AX** zur sicherheitsgerichteten Motorabschaltung. Es wird eine Interlock-Logik realisiert, bei der zwei gegensätzliche Anforderungen (z. B. Rechts- und Linkslauf) überwacht und bei einem Konflikt ein Trip ausgelöst wird. Die gesamte Steuerung erfolgt über Adapterverbindungen und einen zwischengeschalteten SubApp (AX_2_TO_3), der die Aufteilung der Signale auf die Ausgänge vornimmt.

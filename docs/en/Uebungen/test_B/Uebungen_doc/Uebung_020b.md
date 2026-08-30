@@ -1,8 +1,9 @@
 # Exercise_020b: DigitalInput_I1 to DigitalOutput_Q1; TON Switch-on Delay; resolved
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_020b`. Here, a switch-on delay (TON) is manually constructed from basic building blocks.
+This article describes the logiBUS® exercise `Uebung_020b`. Here, a switch-on delay (TON) is manually constructed from basic building blocks
 ----
+
 ## Objective of the Exercise
 
 Understanding time control through event delay (`E_DELAY`). It demonstrates how a timer behavior ("light only switches on after 2 seconds") is implemented by selectively delaying and canceling events.

@@ -3,6 +3,7 @@
 <img width="951" height="257" alt="SCALE_LIM" src="https://github.com/user-attachments/assets/9cc71e27-9ab8-454a-a6fc-01b86dfde68e" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock SCALE_LIM ist ein Skalierungsbaustein mit zusätzlichen Limitierungsfunktionen. Er ermöglicht die lineare Skalierung eines Eingangswerts innerhalb eines definierten Bereichs und bietet zusätzlich die Möglichkeit, Ausgangswerte zu fixieren, wenn bestimmte Eingangsgrenzwerte überschritten werden.
@@ -45,6 +46,7 @@ Der FB führt folgende Operationen durch:
 2. Falls IN < MIN_IN_LIM: Ausgabe von MIN_OUT_FIX
 3. Falls IN > MAX_IN_LIM: Ausgabe von MAX_OUT_FIX
 4. Im normalen Betriebsbereich: Lineare Skalierung des Eingangswerts nach der Formel:
+
    ```
    (IN - MIN_IN) * (MAX_OUT - MIN_OUT) / (MAX_IN - MIN_IN) + MIN_OUT
    ```

@@ -3,6 +3,7 @@
 ![Uebung_007c_network](./Uebung_007c_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the creation of a simple flasher using the IEC 61499 function blocks `E_CYCLE` and `E_T_FF`.
@@ -18,7 +19,7 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameters | Description |
-|-----------------------|-------------------------------|---------------------------------------------|--------------|
+| ----------------------- | ------------------------------- | --------------------------------------------- | -------------- |
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#10ms` | Generates an event at its output `EO` every 10 ms. |
 | `E_SPLIT_3` | `iec61499::events::E_SPLIT_3` | – | Distributes an incoming event to three identical outputs (`EO1`, `EO2`, `EO3`). |
 | `E_MERGE_3` | `iec61499::events::E_MERGE_3` | – | Combines three incoming events (`EI1`, `EI2`, `EI3`) into a single output `EO`. |

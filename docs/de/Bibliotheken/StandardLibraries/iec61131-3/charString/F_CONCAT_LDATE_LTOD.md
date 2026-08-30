@@ -3,6 +3,7 @@
 ![F_CONCAT_LDATE_LTOD](F_CONCAT_LDATE_LTOD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_CONCAT_LDATE_LTOD` verkettet ein Datum (`LDATE`) und eine Tageszeit (`LTIME_OF_DAY`) zu einem kombinierten `LDATE_AND_TIME`-Zeitstempel. Er ist das `L`-präfigierte (64-Bit-Auflösung) Gegenstück zu `F_CONCAT_DATE_TOD`.

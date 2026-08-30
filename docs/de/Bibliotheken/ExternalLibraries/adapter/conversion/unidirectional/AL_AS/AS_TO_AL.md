@@ -3,6 +3,7 @@
 ![AS_TO_AL](./AS_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AS_TO_AL** ist ein Composite-Baustein, der einen SINT-Adapter (AS) in einen LWORD-Adapter (AL) umwandelt. Er dient als Brücke zwischen unterschiedlichen Adaptertypen in einer unidirektionalen Kommunikationsstrecke. Der Baustein kapselt die Konvertierungslogik und macht sie für den Anwender als zusammengesetzte Einheit nutzbar.

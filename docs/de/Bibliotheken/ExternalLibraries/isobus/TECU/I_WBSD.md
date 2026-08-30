@@ -28,7 +28,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 ### **Daten-Ausgänge**
 
 | Parameter | Typ | SPN | Bit | Skalierung | Bereich | Beschreibung |
-|-----------|-----|-----|-----|------------|---------|--------------|
+| ----------- | ----- | ----- | ----- | ------------ | --------- | -------------- |
 | `QO` | BOOL | - | 1 | - | TRUE/FALSE | Ereignisqualifier |
 | `STATUS` | STRING | - | - | - | - | Systemstatusmeldung |
 | `WHEELBASEDMACHINESPEED` | UINT | 1862 | 16 | 0.001 m/s/bit | 0-65.535 m/s | Radbasierte Geschwindigkeit |
@@ -42,7 +42,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 ## Fahrtrichtungszustände
 
 | Code | Zustand | Beschreibung |
-|------|---------|--------------|
+| ------ | --------- | -------------- |
 | 0 | Stillstand | Keine Bewegung |
 | 1 | Vorwärts | Vorwärtsfahrt |
 | 2 | Rückwärts | Rückwärtsfahrt |
@@ -79,7 +79,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 ## Zustandscodes
 
 | Parameter | Code | Bedeutung |
-|-----------|------|-----------|
+| ----------- | ------ | ----------- |
 | `KEYSWITCHSTATE` | 0 | Aus |
 | | 1 | Ein |
 | | 2 | Start |
@@ -92,7 +92,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 ## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_WBSD | Standard | GPS-basiert |
-|---------|--------|----------|-------------|
+| --------- | -------- | ---------- | ------------- |
 | Genauigkeit | ±0.5% | ±2% | ±5% |
 | Niedriggeschwindigkeit | Gut | Ausgezeichnet | Schlecht |
 | Signalstabilität | Hoch | Mittel | Niedrig |

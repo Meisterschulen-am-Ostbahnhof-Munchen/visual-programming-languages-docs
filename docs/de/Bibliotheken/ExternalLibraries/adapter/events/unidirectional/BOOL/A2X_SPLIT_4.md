@@ -3,6 +3,7 @@
 ![A2X_SPLIT_4](./A2X_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **A2X_SPLIT_4** dient der Aufteilung eines eingehenden A2X-Adaptersignals auf vier identische A2X-Ausgänge. Er ist als generischer Baustein ausgelegt und ermöglicht so eine flexible Verwendung in unterschiedlichsten Automatisierungsumgebungen, in denen ein A2X-Signal mehrfach benötigt wird.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Bezeichner | Typ | Beschreibung |
-|----------|------------|-----|--------------|
+| ---------- | ------------ | ----- | -------------- |
 | **Socket (Eingang)** | IN | `adapter::types::unidirectional::A2X` | Ein eingehendes A2X-Signal (unidirektional) |
 | **Plug (Ausgang 1)** | OUT1 | `adapter::types::unidirectional::A2X` | Erster ausgehender A2X-Kanal |
 | **Plug (Ausgang 2)** | OUT2 | `adapter::types::unidirectional::A2X` | Zweiter ausgehender A2X-Kanal |

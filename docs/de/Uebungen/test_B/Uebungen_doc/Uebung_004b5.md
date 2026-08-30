@@ -3,6 +3,7 @@
 ![Uebung_004b5_network](./Uebung_004b5_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Realisierung eines Toggle-Flipflops (T-FF) mithilfe der Funktionsbausteine `E_R_TRIG` (Flankenerkennung steigend) und `E_T_FF` (Toggle-Flipflop). Ein digitaler Eingang (IX) wird als Taster verwendet – jede steigende Flanke am Eingang schaltet den digitalen Ausgang (QX) um (toggle). Der Aufbau eignet sich z. B. zum Ein- und Ausschalten einer Leuchte mit einem einzelnen Taster.

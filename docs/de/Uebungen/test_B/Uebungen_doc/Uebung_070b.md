@@ -3,6 +3,7 @@
 ![Uebung_070b_network](./Uebung_070b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe der radbasierten Maschinengeschwindigkeit (Wheel‑based Machine Speed, WBSD) auf ein ISOBUS‑Universal Terminal (UT). Dabei wird der Qualifier‑Eingang **QI** des WBSD‑Bausteins über einen T‑Flipflop gesteuert, der mit einem Digitaleingang (Taster I2) getoggelt wird. Die Ausgabe des aktuellen Geschwindigkeitswerts erfolgt über den UT‑Baustein **Q_NumericValue**.

@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_035a3_AX` based on the provided data.
+
 # Exercise_035a3_AX: Traffic Light System Austria (AX) with Flashing Indicators
 
 ![Uebung_035a3_AX_network](./Uebung_035a3_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a traffic light system based on the Austrian model ("Traffic Light System Austria (AX) with Flashing Indicators"). Unlike standard traffic light systems, this sequence includes the "green-flashing" phase before changing to yellow, as well as the "red-yellow" phase before changing to green. Control is achieved via a sequential function block, which is triggered by a push button.
@@ -57,23 +59,28 @@ This function block generates the blink signal for the green phase.
 The process is started by a single click on the button (`Input_I1`), which triggers the event `START_S1` at the sequence block **Seq**. The following loop then runs:
 
 1. **Red Phase (S1 - 6s)**:
+
 - Output `DO_S1` is active.
 - Signal goes to `OR_Red` -> `Light_Red_Q1` (Red on).
-2. **Red-Yellow Phase (S2 - 2s)**:
+1. **Red-Yellow Phase (S2 - 2s)**:
+
 - Output `DO_S2` is active.
 - Signal goes to `AX_SPLIT_2`.
 - From there, it is split as follows:
 - `OR_Red` -> `Light_Red_Q1` (Red remains on).
 - `OR_Yellow` -> `Light_Yellow_Q2` (Yellow turns on).
-3. **Green Phase (S3 - 6s)**:
+1. **Green Phase (S3 - 6s)**:
+
 - Output `DO_S3` is active.
 - Signal goes to `OR_Green` -> `Light_Green_Q3` (Green on).
-4. **Green Flashing Phase (S4 - 4s)**:
+1. **Green Flashing Phase (S4 - 4s)**:
+
 - Output `DO_S4` is active.
 - Signal triggers the **Flasher** block via `AX_R_TRIG`.
 - The flasher sends a pulse sequence to `OR_Green`.
 - Result: The green light (`Light_Green_Q3`) flashes 4 times (for a total of 4 seconds).
-5. **Yellow Phase (S5 - 2s)**:
+1. **Yellow Phase (S5 - 2s)**:
+
 - Output `DO_S5` is active.
 - Signal goes to `OR_Yellow` -> `Light_Yellow_Q2` (yellow light on).
 

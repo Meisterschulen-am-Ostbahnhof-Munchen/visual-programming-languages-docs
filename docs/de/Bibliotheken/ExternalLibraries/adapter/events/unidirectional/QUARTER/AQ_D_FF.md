@@ -3,6 +3,7 @@
 ![AQ_D_FF](./AQ_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AQ_D_FF` realisiert ein Datenspeicherglied (D-Latch) auf Basis des Adapterkonzepts der IEC 61499. Er übernimmt einen eingehenden Datenwert bei einem eingehenden Ereignis und stellt diesen bis zum nächsten Ereignis am Ausgang bereit. Der Baustein kapselt die Latch-Funktionalität vollständig in einer Adapter-Schnittstelle und ermöglicht so eine modulare Integration in systemweit genutzte Daten- und Ereignispfade.
@@ -67,7 +68,7 @@ Der `AQ_D_FF` besitzt keinen expliziten Zustandsautomaten. Sein Verhalten lässt
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | `E_D_FF` (direkte IOs) | Gleiche Latch-Funktionalität, aber mit separaten Ereignis- und Dateneingängen/-ausgängen. Keine Adapter. |
 | `E_SR_FF` | Set/Reset-Flipflop mit zwei getrennten Eingangsereignissen. Hier kein Datenwert, sondern binäre Zustände. |
 | `AQ_D_FF` | Ermöglicht die Einbettung der Latch-Funktion in bestehende Adapter-Schnittstellen, ohne zusätzliche Verdrahtung auf FB-Ebene. |

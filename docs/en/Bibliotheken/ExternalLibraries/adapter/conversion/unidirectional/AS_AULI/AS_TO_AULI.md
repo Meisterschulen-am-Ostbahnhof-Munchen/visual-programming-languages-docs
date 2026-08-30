@@ -1,10 +1,11 @@
 # AS_TO_AULI
 
 ---
+
 ## Introduction
 
 ![AS_TO_AULI](./AS_TO_AULI.svg)
-The composite function block `AS_TO_AULI` converts an **AS (SINT) adapter** to an **AULI (ULINT) adapter**. Internally, it uses the IEC 61131 conversion block `F_SINT_TO_ULINT` to perform the actual type conversion from SINT to ULINT. The block is designed as part of a unidirectional adapter library for communication between different data types.
+The composite function block `AS_TO_AULI` converts an **AS (SINT) adapter** to an **AULI (ULINT) adapter**. Internally, it uses the IEC 61131 conversion block `F_SINT_TO_ULINT` to perform the actual type conversion from SINT to ULINT. The block is designed as part of a unidirectional adapter library for communication between different data types
 ---
 
 ## Interface Structure
@@ -36,7 +37,7 @@ The module has **no direct data outputs**. Data output is via the **Plug adapter
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|-----------|--------------|
+| --------- | ----- | ----------- | -------------- |
 | `AS_IN` | `adapter::types::unidirectional::AS` (Socket) | Input | Receives SINT values and trigger event `E1`. |
 | `AULI_OUT` | `adapter::types::unidirectional::AULI` (Plug) | Output | Sends ULINT values and acknowledgment event `E1`. |
 
@@ -47,9 +48,9 @@ The module has **no direct data outputs**. Data output is via the **Plug adapter
 1. The function block expects an event at the socket adapter `AS_IN.E1`. Simultaneously, the data value `AS_IN.D1` (type SINT) must be present.
 ... 2. The event is forwarded to the internal function block `F_SINT_TO_ULINT` (as `REQ`).
 
-3. The internal function block performs the conversion **SINT → ULINT**.
-4. After successful conversion, `F_SINT_TO_ULINT` sends an acknowledgment event (`CNF`) to the plug adapter `AULI_OUT.E1`.
-5. The converted value (type ULINT) is output via `AULI_OUT.D1`.
+2. The internal function block performs the conversion **SINT → ULINT**.
+3. After successful conversion, `F_SINT_TO_ULINT` sends an acknowledgment event (`CNF`) to the plug adapter `AULI_OUT.E1`.
+4. The converted value (type ULINT) is output via `AULI_OUT.D1`.
 
 The conversion is performed according to the IEC 61131-3 standard: The SINT value (8-bit signed) is converted into an unsigned 64-bit value (ULINT). Negative SINT values result in a negative ULINT representation (two's complement conversion to 64 bits).
 
@@ -87,7 +88,7 @@ Error handling is not explicitly modeled; the inner function block outputs a def
 ## Comparison with Similar Function Blocks
 
 | Function Block | Target Type | Source Type | Special Feature |
-|----------|---------|-----------|-------------|
+| ---------- | --------- | ----------- | ------------- |
 | `AS_TO_AULI` | ULINT | SINT | SINT to ULINT conversion |
 | AS_TO_AUDI` | UDINT | SINT | SINT to UDINT conversion (32-bit) |
 | AS_TO_AWORD` | WORD | SINT | SINT to WORD conversion (16-bit) |

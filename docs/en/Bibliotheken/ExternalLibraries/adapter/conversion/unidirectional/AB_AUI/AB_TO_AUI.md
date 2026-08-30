@@ -3,9 +3,11 @@
 ![AB_TO_AUI](./AB_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_TO_AUI** serves as an adapter converter between an AB adapter (BYTE-based) and an AUI adapter (UINT-based). It performs a unidirectional conversion from BYTE to UINT data type. The block is implemented as a composite FB and internally uses the IEC 61131-3 conversion function `F_BYTE_TO_UINT`. It is specifically designed for connecting sensors or actuators that deliver their data in BYTE format but must be processed in a UINT-based environment.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,9 +29,9 @@ The FB has no direct data outputs at the top level. Data is output via the conne
 ### **Adapters**
 
 | Direction | Name | Adapter Type | Description |
-|----------|-------|-------------------------------|-------------------------------------------------|
+| ---------- | ------- | ------------------------------- | ------------------------------------------------- |
 | Socket | AB_IN | `adapter::types::unidirectional::AB` | Input adapter for BYTE data (source adapter) |
-| Plug | AUI_OUT| `adapter::types::unidirectional::AUI` | Output adapter for UINT data (destination adapter) |
+| Plug | AUI_OUT | `adapter::types::unidirectional::AUI` | Output adapter for UINT data (destination adapter) |
 
 **Note:** Adapters of type `AB` and `AUI` each have an event input (`E1`), an event output (`E1`), a data input (`D1` of type BYTE or UINT), and a data output (`D1` of type BYTE or UINT). See the corresponding adapter definitions for complete details.
 

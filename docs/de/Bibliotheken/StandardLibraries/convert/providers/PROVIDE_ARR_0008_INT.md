@@ -3,6 +3,7 @@
 ![PROVIDE_ARR_0008_INT](PROVIDE_ARR_0008_INT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `PROVIDE_ARR_0008_INT` stellt einen `INT`-Array-Container fester Größe 8 als `InOut`-Variable `D1` bereit. Er gehört zur generischen `GEN_INIT_ARR`-Familie: eine Reihe baugleicher Bausteine, die sich nur in Array-Größe und Datentyp unterscheiden, und dient dazu, ein zur Entwurfszeit mit Startwerten vorbelegbares Array in einer 4diac-Anwendung verfügbar zu machen.

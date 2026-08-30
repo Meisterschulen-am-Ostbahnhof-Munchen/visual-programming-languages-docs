@@ -5,6 +5,7 @@
 *Kein Bild verfügbar.*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_LINT) mit Terminalausgabe des aktuellen Zählerwerts. Der Zähler wird durch einen digitalen Eingang (CU) hochgezählt und über einen weiteren digitalen Eingang (R) zurückgesetzt. Der Zählerstand wird nach jedem Zählereignis über eine Typkonvertierung (LINT → LREAL) auf einem Terminalbaustein (LogiBUS Utility) ausgegeben. Gleichzeitig wird ein digitaler Ausgang gesetzt, sobald der Zähler den voreingestellten Wert (PV = 5) erreicht hat.

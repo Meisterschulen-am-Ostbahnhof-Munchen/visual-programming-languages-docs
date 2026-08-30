@@ -6,6 +6,7 @@
 
 The SYS_ONTIME function block serves as a service interface for communication between an application and a resource. It enables the transfer of operating time data in decimal minutes (0.01 hours) from the resource to the application.
 ![SYS_ONTIME](SYS_ONTIME.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,13 +50,13 @@ The block operates with an industrial time base (0.6-minute increments) instead 
 ## Conversion Examples
 
 | Industrial minutes | Standard time |
-|------------------|------------------|
+| ------------------ | ------------------ |
 | 1 | 0.6 min (36 s) |
 | 10 | 6 min |
 | 100 | 60 min (1 h) |
 | 150 | 90 min (1.5 h) |
 
-### Technical Background:
+### Technical Background
 
 - This time standard originates from process automation
 - Enables integer representation of typical time intervals

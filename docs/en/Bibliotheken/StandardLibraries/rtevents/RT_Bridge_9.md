@@ -1,9 +1,11 @@
 # RT_Bridge_9
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_9 function block serves as a decoupling bridge for 9 data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

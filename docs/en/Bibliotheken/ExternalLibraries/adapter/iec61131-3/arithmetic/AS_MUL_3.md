@@ -3,6 +3,7 @@
 ![AS_MUL_3](./AS_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_MUL_3` is a generic function block (FB) for the 4diac IDE, used to perform arithmetic multiplication with three input values. It is based on the use of unidirectional adapters (`adapter::types::unidirectional::AS`), which enables clean structuring and encapsulation of data and control flows in IEC 61499 applications.

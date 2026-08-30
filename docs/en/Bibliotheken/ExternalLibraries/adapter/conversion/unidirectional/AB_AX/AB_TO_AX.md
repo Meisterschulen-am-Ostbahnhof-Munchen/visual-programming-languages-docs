@@ -3,9 +3,11 @@
 ![AB_TO_AX](./AB_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_TO_AX** is a composite function block (FB) for converting a BYTE signal (via the AB adapter) into a BOOL signal (via the AX adapter). It serves as a converter between two different adapter types of the unidirectional adapter family.
+
 ## Interface Structure
 
 ### **Adapter (Input)**

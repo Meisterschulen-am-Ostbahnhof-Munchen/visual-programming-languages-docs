@@ -3,9 +3,11 @@
 ![ALR_TO_ADI](./ALR_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALR_TO_ADI** function block is a composite block that enables conversion between two different adapter types. It translates an **ALR adapter** (which provides LREAL data) into an **ADI adapter** (which provides DINT data). It is used in environments based on the IEC 61499 standard to standardize communication between components with different data type interfaces.
+
 ## Interface Structure
 
 The function block does not have any independent event or data inputs/outputs at the top level. All communication takes place via the two adapter interfaces.
@@ -29,7 +31,7 @@ The FB has no direct data outputs. Data is sent via the **ADI_OUT** plug.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | ALR_IN | Socket | adapter::types::unidirectional::ALR | Returns an event (E1) and a data value (D1) of type LREAL. |
 | ADI_OUT | Plug | adapter::types::unidirectional::ADI | Expects an event (E1) and outputs a data value (D1) of type DINT. |
 
@@ -67,6 +69,7 @@ There are no delays or error handling – the conversion is instantaneous and al
 - **Adapter Adaptation**: If one component only supports ALR adapters, but another component expects ADI adapters, this function block can act as an intermediary.
 - **Protocol Conversion**: In standalone subsystems connected via adapters, this function block enables clean type conversion without changing the original adapter definition.
 -
+
 ## Comparison with Similar Function Blocks
 
 - **F_LREAL_TO_DINT (Direct Function Block)**: This function block performs the conversion itself but requires its own event and data interfaces and no adapters. `ALR_TO_ADI` encapsulates this function block to make it compatible with adapter-based connections.

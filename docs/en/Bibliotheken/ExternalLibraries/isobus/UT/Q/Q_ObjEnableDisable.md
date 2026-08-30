@@ -3,6 +3,7 @@
 ![Q_ObjEnableDisable](https://user-images.githubusercontent.com/116869307/214148082-167eae93-48d4-40cd-96e2-d0983e475187.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/disabling input objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.4) specification for VT input elements.
@@ -41,13 +42,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Status Change**:
+1. **Status Change**:
+
 - `REQ` with desired activation state
 - Changes the object's interaction capability
 - `CNF` returns operational status and previous state
-3. **Special Cases**:
+1. **Special Cases**:
+
 - VT_E_HANDLE_INVALID is returned for invalid object IDs
 
 ## Technical Features
@@ -67,7 +71,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful Execution |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -86,7 +90,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_ObjEnableDisable | VtInputControl | VtObjectState |
-|---------------|--------------------|----------------|---------------|
+| --------------- | -------------------- | ---------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Binary Control | ✔ | ✔ | ✖ |
 | Feedback | ✔ | ✖ | ✔ |

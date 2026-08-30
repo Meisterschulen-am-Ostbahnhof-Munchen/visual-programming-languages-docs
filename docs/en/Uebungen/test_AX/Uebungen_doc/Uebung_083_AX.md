@@ -1,10 +1,11 @@
 # Exercise_083_AX: Example for AUDI_CTUD_UDINT (Adapter-Based)
 
-This article describes the logiBUS® exercise `Uebung_083_AX`. It is the adapter-based version of exercise 083 and demonstrates an up/down counter (`AUDI_CTUD_UDINT`) for unsigned 32-bit integers in an AX environment.
+This article describes the logiBUS® exercise `Uebung_083_AX`. It is the adapter-based version of exercise 083 and demonstrates an up/down counter (`AUDI_CTUD_UDINT`) for unsigned 32-bit integers in an AX environment
 ----
+
 ## Objective of the Exercise
 
-To learn how to control a high-performance counter using an adapter and display the counter value on an ISOBUS terminal. This exercise demonstrates the use of AX adapters for the inputs (`CU`, `CD`, `R`, `LD`) and the counter value (`CV`), as well as for controlling the numeric display.
+To learn how to control a high-performance counter using an adapter and display the counter value on an ISOBUS terminal. This exercise demonstrates the use of AX adapters for the inputs (`CU`, `CD`, `R`, `LD`) and the counter value (`CV`), as well as for controlling the numeric display
 -----
 
 ## Description and Components

@@ -1,12 +1,15 @@
 # SliderColorStruct
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `SchieberColorStruct` is a structured data structure used to manage color values for different states of a slider (e.g., a valve, flap, or closure). It defines a consistent color coding for the visual representation of the states `Unbekannt`, `Geschlossen`, `Öffnend`, `Geöffnet`, and `Schließend` in a user interface or display.
+
 ## Interface Structure
 
 The data type is a structure (`STRUCT`) and does not contain any events or adapters. Its interface consists exclusively of data elements.
+
 ### **Data Inputs**
 
 This structure does not have event inputs in the conventional sense, as it is a data type. The following elements are the structure's member variables, which can be written to or assigned values during instantiation.
@@ -19,11 +22,11 @@ This structure does not have event outputs. The member variables represent the s
 
 | Name | Data Type | Comment | Initial Value |
 | :------- | :------- | :--------------------------------- | :---------------- |
-| `Unknown`| `USINT` | u8Colour for Unknown State | `COLOR_WHITE` |
+| `Unknown` | `USINT` | u8Colour for Unknown State | `COLOR_WHITE` |
 | `Closed` | `USINT` | u8Colour for Closed State | `COLOR_WHITE` |
-| `Opening`| `USINT` | u8Colour for Opening State | `COLOR_WHITE` |
+| `Opening` | `USINT` | u8Colour for Opening State | `COLOR_WHITE` |
 | `Opened` | `USINT` | u8Colour for Opened State | `COLOR_WHITE` |
-| `Closing`| `USINT` | u8Colour for Closing State | `COLOR_WHITE` |
+| `Closing` | `USINT` | u8Colour for Closing State | `COLOR_WHITE` |
 
 ### **Adapters**
 
@@ -48,7 +51,8 @@ Because it is a static data type, ``SchieberColorStruct`` itself does not have a
 - **Visualization in HMIs:** Passing the color configuration to visualization components to correctly display the state of a slider using color (e.g., red for "Closed," green for "Open").
 - **Function Block Configuration:** A function block that controls a physical slider can have an instance of this type as a configurable input to enable user-defined colors for state feedback.
 - **Data Encapsulation:** Bundling all state-related color information into a single parameter that can be exchanged between different software modules (e.g., controller and visualization).
-*
+-
+
 ## ⚖️ Comparison with Similar Building Blocks
 
 Unlike function blocks (FBs) such as `E_SR` or `E_D_FF`, which implement logic, `SchieberColorStruct` is a pure **data type** (STRUCT). Similar structured types could be, for example, `MotorConfigStruct` (for configuration data) or `AxisPositionStruct` (for multidimensional positions). Its specific function is to define a color scheme for a predefined set of states.

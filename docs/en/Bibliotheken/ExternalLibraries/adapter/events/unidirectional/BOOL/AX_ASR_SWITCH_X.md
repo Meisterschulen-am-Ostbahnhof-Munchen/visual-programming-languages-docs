@@ -1,10 +1,12 @@
 # AX_ASR_SWITCH_X
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_ASR_SWITCH_X** is a composite function block responsible for converting between two different adapter types. It converts signals from an **AX** adapter (Boolean Event) into signals from an **ASR** adapter (Asynchronous Set/Reset).
 The special feature of this function block is the **"Crossed Mapping"** indicated by the suffix "X" and the comment. Unlike a standard mapping, this function block inverts the logic: A `TRUE` signal at the input results in a `RESET` event at the output, while a `FALSE` signal triggers a `SET` event.
+
 ## Interface Structure
 
 The function block interacts primarily via adapter interfaces.
@@ -39,6 +41,7 @@ The **AX_ASR_SWITCH_X** internally uses a standard `E_SWITCH` block (`iec61499::
 1. An event at input adapter **G** (event `E1`) triggers processing.
 2. The data value from input adapter **G** (data `D1`) is evaluated.
 3. **Logic Inversion (Crossed Mapping):**
+
 - If **G.D1 = TRUE**: The internal switch forwards the event to its output `EO1`. This output is connected to **Q.RESET**.
 - If **G.D1 = FALSE**: The internal switch forwards the event to its output `EO0`. This output is connected to **Q.SET**.
 - In summary:

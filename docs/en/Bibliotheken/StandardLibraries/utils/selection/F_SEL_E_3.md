@@ -3,6 +3,7 @@
 ![F_SEL_E_3](https://github.com/user-attachments/assets/7dbef3ab-5e30-406e-8013-d5f2bfadb120)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `F_SEL_E_3` is an event-based selector that selects one of three input variables based on the triggering event and passes it to the output. It is part of the `eclipse4diac::utils::selection` package and complies with the IEC 61131-3 standard for standard selection functions.
@@ -39,6 +40,7 @@ No adapters available.
 The function block waits for an incoming event (`REQ0`, `REQ1`, or `REQ2`). Upon the occurrence of such an event, the corresponding input variable (`IN0`, `IN1`, or `IN2`) is selected and forwarded to the output `OUT`. Simultaneously, the acknowledgment event `CNF` is triggered.
 
 When such an event occurs, the corresponding input variable (`IN0`, `IN1`, or `IN2`) is selected and forwarded to the output `OUT`.
+
 ## Technical Features
 
 - Supports the ANY data type for maximum flexibility

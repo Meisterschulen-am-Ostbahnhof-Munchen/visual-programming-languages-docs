@@ -1,6 +1,7 @@
 # I_RHS
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_RHS** (Rear Hitch Status) is a standards-compliant function block for monitoring rear hitch parameters, developed under the EPL-2.0 license.
@@ -34,7 +35,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 ## Coupling parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-|-----------|------|--------------|-----|------------|------------|
+| ----------- | ------ | -------------- | ----- | ------------ | ------------ |
 | `REAR_HITCH_POSITION` | USINT | Coupling position | 1873 | 8 | 0.4 %/bit |
 | `REAR_HITCH_WORK_INDICATION` | BYTE | Operating State | 1877 | 2 | 4 states/2 bits |
 | REAR_HITCH_POS_LIMIT_STATUS` | BYTE | Position Limitation | 5151 | 3 | 8 states/3 bits |
@@ -45,12 +46,15 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with `QI`=TRUE starts system calibration
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-2. **Data Provision**:
+1. **Data Provision**:
+
 - `IND` provides all coupling parameters with timestamps
 - Automatic updates upon state changes
-3. **Error Handling**:
+1. **Error Handling**:
+
 - `TIMEOUT` in case of communication problems
 - Detailed error codes in `REAR_HITCH_EXIT_REASON_CODE`
 
@@ -67,7 +71,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 ## Coupling characteristics
 
 | Feature | Description |
-|---------|--------------|
+| --------- | -------------- |
 | Position range | 0-100% (0 = fully down) |
 | Force measurement | ±100% of rated load |
 | Tensile force range | -320kN to +350kN |
@@ -76,7 +80,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 ## Return codes (REAR_HITCH_EXIT_REASON_CODE)
 
 | Code range | Meaning |
-|------------|-----------|
+| ------------ | ----------- |
 | 0-15 | System error |
 | 16-31 | Position Error |
 | 32-47 | Force Measurement Error |
@@ -92,7 +96,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 ## ⚖️ Comparison with Similar Components
 
 | Feature | I_RHS | Standard | Premium |
-|---------|-------|----------|---------|
+| --------- | ------- | ---------- | --------- |
 | Accuracy | ±0.4% | ±2% | ±0.2% |
 | Force Measurement | Bidirectional | Traction Only | Triaxial |
 | Diagnostic Codes | 64 | 8 | 128 |

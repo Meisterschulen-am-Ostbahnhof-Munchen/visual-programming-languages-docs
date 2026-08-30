@@ -3,6 +3,7 @@
 ![Uebung_203b_AX_network](./Uebung_203b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements **motor reversing with interlock** using the function block `ILOCK_SWITCH_AX`. The circuit prevents both directions of rotation from being activated simultaneously and passes the prioritized signals via an adapter to a downstream logic module `AX_2_TO_3`. This logic module converts the two direction signals into three outputs – one for clockwise rotation, one for counterclockwise rotation, and a common low-side driver, as is typical for H-bridge control circuits.
@@ -22,6 +23,7 @@ Two digital inputs (I1, I2) serve as control signals for the direction of rotati
 - `DOWN_OUT` → Counterclockwise rotation
 - `OR_OUT` → Low-side driver (active as soon as a direction is active)
 - The internal implementation is defined in the file `AX_2_TO_3.subapp` and is used as a black box in this exercise.
+
 ### Further Function Blocks
 
 - **DigitalInput_I1**, **DigitalInput_I2**
@@ -60,10 +62,11 @@ The logical flow follows a clear chain:
 1. **Input Signals**: The two digital inputs (`Input_I1`, `Input_I2`) are converted into adapter signals via the function blocks `DigitalInput_I1` and `DigitalInput_I2`.
 2. **Interlock**: These signals reach `ILOCK_AX` via the adapter connections. Priority logic is applied there. Outputs `UP_OUT` (for clockwise rotation) and `DOWN_OUT` (for counterclockwise rotation) are enabled – but never simultaneously.
 3. **Signal Distribution**: The prioritized signals are forwarded to the sub-module `AX_2_TO_3`. This generates three outputs from the two direction signals:
+
 - `UP_OUT` → `Rechtslauf` (Q5)
 - `DOWN_OUT` → `Linkslauf` (Q6)
 - `OR_OUT` → `LowSide_Treiber` (Q56) – becomes active as soon as a direction is active.
-4. **Output Stages**: The three output modules of type `logiBUS_QXA` convert the signals to the physical outputs of the logiBUS hardware.
+1. **Output Stages**: The three output modules of type `logiBUS_QXA` convert the signals to the physical outputs of the logiBUS hardware.
 
 **Adapter Connections** (defined in the XML as `AdapterConnections`):
 

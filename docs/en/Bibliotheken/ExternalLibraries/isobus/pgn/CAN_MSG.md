@@ -1,12 +1,15 @@
 # CAN_MSG
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `CAN_MSG` is a structured type definition (struct) for representing a classic CAN message frame (without a transport protocol, TP). It serves as a container for the essential attributes of a CAN message, including priority, payload length, and the actual data buffer. This type is intended for use in function blocks that implement CAN communication in an IEC 61499 system.
+
 ## Interface Structure
 
 Since `CAN_MSG` is a data type and not a function block, there are no event or adapter interfaces. The structure is defined exclusively by its data members.
+
 ### **Data Inputs**
 
 *(Not applicable – Data Type)*

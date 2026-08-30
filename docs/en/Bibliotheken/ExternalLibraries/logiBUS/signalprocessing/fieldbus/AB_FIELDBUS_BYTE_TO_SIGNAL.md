@@ -3,15 +3,17 @@
 ![AB_FIELDBUS_BYTE_TO_SIGNAL](./AB_FIELDBUS_BYTE_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_FIELDBUS_BYTE_TO_SIGNAL** mirrors an incoming byte signal (via the adapter *IN*) to the output (*OUT*) if the signal is recognized as valid. Validity is indicated by a separate output (*VALID*). The block encapsulates the processing of a fieldbus byte signal and ensures that only valid data is passed on to the subsequent logic. It is based on an internal `FIELDBUS_BYTE_TO_SIGNAL` block, supplemented by a D flip-flop for stable output of the validity signal.
+
 ## Interface Structure
 
 The function block has **no** direct event or data inputs/outputs at the top level. All communication takes place via three **adapter interfaces**:
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AB` | Input adapter for the byte signal and its associated event. |
 | `OUT` | Plug | `adapter::types::unidirectional::AB` | Output adapter for the mirrored byte signal. |
 | `VALID` | Plug | `adapter::types::unidirectional::AX` | Output adapter indicating the signal's validity status. |
@@ -73,7 +75,7 @@ Thus, the byte is always passed to `OUT` when it is valid. The validity state is
 The component does not have an explicit state machine at the top level; the states result from the interaction of the internal components:
 
 | State | Description |
-|---------|---------------|
+| --------- | --------------- |
 | **Idle** | Waiting for an event at `IN.E1`. |
 | **Processing** | Internal `FIELDBUS_BYTE_TO_SIGNAL` processes the byte; `OUT` and `VALID` are updated. |
 | **Valid stable** | After the flip-flop has been clocked, `VALID.D1` remains stable until the next event. |

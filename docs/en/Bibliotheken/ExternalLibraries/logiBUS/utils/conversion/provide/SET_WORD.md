@@ -3,9 +3,11 @@
 ![SET_WORD](./SET_WORD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The SET_WORD function block writes a WORD value from its data input IN to an InOut variable OUT. It is used to overwrite an output or a globally accessible WORD variable with a specific value.
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -16,7 +16,7 @@ Die Übung bildet einen typischen Anwendungsfall eines IEC-Zählbausteins ab und
 
 Die gesamte Schaltung besteht aus einem SubApp‑Typ (SubAppType) mit der Bezeichnung "Uebung_215". Im FBNetzwerk sind folgende Bausteine enthalten:
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### `FB_CTD` (Typ: `iec61131::counters::FB_CTD`)
 

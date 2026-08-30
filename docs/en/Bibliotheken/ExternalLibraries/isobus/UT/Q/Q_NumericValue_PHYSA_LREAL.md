@@ -3,9 +3,11 @@
 ![Q_NumericValue_PHYSA_LREAL](./Q_NumericValue_PHYSA_LREAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_NumericValue_PHYSA_LREAL** serves as a command for changing a numeric value in the ISOBUS context (ISO 11783-6). It receives a physical LREAL value via the **ALR** adapter and handles the actual processing via the embedded function block **Q_NumericValue_PHYS_LREAL**. The function block uses adapter interfaces for physical value input as well as for signaling when the permissible range limits are exceeded or fallen below.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The function block **Q_NumericValue_PHYSA_LREAL** serves as a command for changi
 ### **Event Outputs**
 
 | Name | Type | Comment |
-|-------|-------|--------------------------------------------------|
+| ------- | ------- | -------------------------------------------------- |
 | INITO | EInit | Confirmation of successful initialization. |
 | CNF | Event | Confirmation of the requested value change (contains STATUS and s16result). |
 
@@ -30,7 +32,7 @@ The function block **Q_NumericValue_PHYSA_LREAL** serves as a command for changi
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|-----------|--------|--------------------------------------------------------------------------|
+| ----------- | -------- | -------------------------------------------------------------------------- |
 | STATUS | STRING | Service status message. |
 | s16result | INT | Return value – see Q_NumericValue (result of the value change request). |
 
@@ -45,7 +47,7 @@ The function block **Q_NumericValue_PHYSA_LREAL** serves as a command for changi
 **Plugs (Output Adapters)**
 
 | Name | Type | Comment |
-|--------|-------------------------|---------------------------------------------------------------|
+| -------- | ------------------------- | --------------------------------------------------------------- |
 | xOver | AX (unidirectional) | Signals that the physical value exceeds the upper ISOBUS limit. |
 | xUnder | AX (unidirectional) | Signals that the physical value falls below the lower ISOBUS limit. |
 

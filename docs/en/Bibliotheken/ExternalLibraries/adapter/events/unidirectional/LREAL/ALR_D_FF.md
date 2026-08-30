@@ -3,9 +3,11 @@
 ![ALR_D_FF](./ALR_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALR_D_FF** implements a data-driven flip-flop (D-latch) with an adapter-based interface. It takes a data value on a clock event and makes it available at the output. The block encapsulates the IEC 61499 standard function `E_D_FF_ANY` and offers a unidirectional adapter connection for modular system integration.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs. All communication takes place via two adapters:
@@ -29,7 +31,7 @@ The function block has no direct event or data inputs/outputs. All communication
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|----------|--------------------------|----------|----------------------------------|
+| ---------- | -------------------------- | ---------- | ---------------------------------- |
 | `I` | adapter::types::unidirectional::ALR | Socket (Input) | Returns the clock event and the data value. |
 | `Q` | adapter::types::unidirectional::ALR | Plug (Output) | Outputs the output event and the latched value. |
 

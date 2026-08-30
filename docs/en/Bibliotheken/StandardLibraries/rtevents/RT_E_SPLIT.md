@@ -1,10 +1,12 @@
 # RT_E_SPLIT
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_SPLIT block. Splits one event into multiple events.
 ![RT_E_SPLIT](RT_E_SPLIT.svg)
+
 ## Metadata
 
 | Attribute | Value |

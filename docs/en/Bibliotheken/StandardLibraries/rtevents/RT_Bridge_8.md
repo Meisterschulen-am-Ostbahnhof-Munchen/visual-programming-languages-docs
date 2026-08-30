@@ -1,9 +1,11 @@
 # RT_Bridge_8
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_8 function block serves as a decoupling bridge for 8 data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

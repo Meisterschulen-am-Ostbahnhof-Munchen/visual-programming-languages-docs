@@ -57,7 +57,7 @@ Es existiert kein Zustandsdiagramm (ECC), da der Baustein keine sequentielle Log
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgänge | Besonderheit |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `ASR_SPLIT_2` | 2 | Zweifach-Split |
 | `ASR_SPLIT_4` | 4 | Vierfach-Split |
 | **`ASR_SPLIT_6`** | **6** | **Sechsfach-Split (dieser Baustein)** |

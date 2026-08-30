@@ -4,9 +4,11 @@
 ![ST08B_TO_BYTES](./ST08B_TO_BYTES.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block extracts the individual 8 bytes of a specific 8-byte structure (`ST08B`) and provides them as separate byte outputs. It enables detailed segmentation and further processing of structured 8-byte data.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -48,6 +50,7 @@ OUT_04 := IN.B_04;
 OUT_05 := IN.B_05;
 OUT_06 := IN.B_06;
 OUT_07 := IN.B_07;
+
 ## Technical Features
 
 This function block specializes in decomposing the user-defined structure `ST08B`. Type assignment is performed directly without additional conversion logic, as both the source and target types (members of the structure and outputs) are of type `BYTE`. This ensures efficient and lossless data splitting. The block is deterministic and stateless, as it does not store any internal states that could influence the outcome of future executions.

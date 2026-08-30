@@ -3,6 +3,7 @@
 ![Uebung_222b_ALR_network](./Uebung_222b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up/down counter based on the adapted IEC 61131-3 function block `ALI_FB_CTUD` (type LINT).
@@ -84,20 +85,24 @@ Accepts the physical value and outputs it to the configured terminal element (`O
 The logical connections (via adapters) establish the data flow:
 
 1. **Inputs to the Counter**
+
 - `Input_CU.IN` → `ALI_FB_CTUD.CU`
 - `Input_CD.IN` → `ALI_FB_CTUD.CD`
 - `Input_R.IN` → `ALI_FB_CTUD.R`
 - `Input_LD.IN` → `ALI_FB_CTUD.LD`
-2. **Start Value (PV)**
+1. **Start Value (PV)**
+
 - `Input_LD.INITO` (Event) → `ALI_LINT_TO_LI.REQ`
 - `ALI_LINT_TO_LI.ALI_OUT` → `ALI_FB_CTUD.PV`
 
 The starting value is set on the loading screen (edge at `LD`).
 
-3. **Counter Outputs**
+1. **Counter Outputs**
+
 - `ALI_FB_CTUD.QU` → `Output_QU.OUT`
 - `ALI_FB_CTUD.QD` → `Output_QD.OUT`
-4. **Counter Reading Output (Terminal)**
+1. **Counter Reading Output (Terminal)**
+
 - `ALI_FB_CTUD.CV` → `ALI_TO_ALR.ALI_IN`
 - `ALI_TO_ALR.ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys`
 

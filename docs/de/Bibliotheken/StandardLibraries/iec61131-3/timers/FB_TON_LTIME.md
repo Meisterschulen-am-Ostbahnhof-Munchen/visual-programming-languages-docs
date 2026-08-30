@@ -3,6 +3,7 @@
 ![FB_TON_LTIME](FB_TON_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FB_TON_LTIME` ist die `LTIME`-Variante (64-Bit-Zeitdauer, Nanosekunden-Auflösung) des Standard-Timer-Bausteins `FB_TON` (Einschaltverzögerung). Er verhält sich funktional identisch zu `FB_TON`, verwendet für `PT`/`ET` jedoch den Datentyp `LTIME` statt `TIME`.

@@ -5,6 +5,7 @@
 ![ARR_MAX](./ARR_MAX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ARR_MAX` berechnet den Maximalwert eines eindimensionalen Arrays vom Typ `INT`. Die Implementierung ist in Structured Text (ST) gemäß IEC 61131-3 gehalten und stammt aus dem Package `logiBUS::utils::dyn_arr`. Der Baustein eignet sich für dynamische Arrays beliebiger Größe, wobei die untere und obere Grenze zur Laufzeit ermittelt werden.
@@ -73,7 +74,7 @@ Eine explizite Zustandsgrafik entfällt daher.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied zu ARR_MAX |
-|----------|----------|------------------------|
+| ---------- | ---------- | ------------------------ |
 | `ARR_MIN` | Minimum eines Arrays | Analog, aber Minimum statt Maximum. |
 | `ARR_SUM` | Summe der Array-Elemente | Andere mathematische Operation; kein Vergleich zwischen Elementen. |
 | `ARR_MEAN` | Arithmetischer Mittelwert | Erfordert zusätzlich Division durch die Anzahl; nicht nur Vergleich. |

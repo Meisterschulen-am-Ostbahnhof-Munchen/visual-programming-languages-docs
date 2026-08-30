@@ -3,9 +3,11 @@
 ![A2X_SPLIT_2](./A2X_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `A2X_SPLIT_2` splits an incoming A2X adapter signal into two identical output adapters. It is implemented as a generic function block (`GEN_A2X_SPLIT`) and allows an A2X signal to be forwarded to two independent target function blocks without signal loss or modification.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::A2X` | `IN` | Socket | Input adapter that receives the A2X signal to be distributed. |
 | `adapter::types::unidirectional::A2X` | `OUT1` | Plug | First output adapter that provides an identical copy of the input signal. |
 | `adapter::types::unidirectional::A2X` | `OUT2` | Plug | Second output adapter that provides an identical copy of the input signal. |

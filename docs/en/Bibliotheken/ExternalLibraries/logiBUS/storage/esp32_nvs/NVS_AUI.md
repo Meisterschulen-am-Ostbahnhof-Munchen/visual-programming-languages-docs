@@ -3,9 +3,11 @@
 ![NVS_AUI](./NVS_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NVS_AUI** is used to load and store UINT data in non-volatile memory (NVS) using a key. It encapsulates access to the NVS and provides a standardized AUI adapter interface for outputting read values and receiving values to be stored. Typical applications include embedded systems that need to persistently store configuration or status data.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **NVS_AUI** is used to load and store UINT data in non-volati
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|-----------------|--------|-----------|
+| ----------------- | -------- | ----------- |
 | `QI` | BOOL | Qualifier for the input event |
 | `KEY` | STRING | Key name for NVS access |
 | `DEFAULT_VALUE` | UDINT | Value to be read if no entry exists in the NVS |
@@ -31,14 +33,14 @@ The function block **NVS_AUI** is used to load and store UINT data in non-volati
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | `QO` | BOOL | Qualifier for the output event |
 | `STATUS` | STRING | Service status message |
 
 ### **Adapters**
 
 | Adapter | Type / Direction | Comment |
-|------------|----------------------------------------|-----------|
+| ------------ | ---------------------------------------- | ----------- |
 | `AUI_IN` | **Socket** (Input) – Type: `adapter::types::unidirectional::AUI` | Returns the value to be stored (SET) |
 | `AUI_OUT` | **Plug** (Output) – Type: `adapter::types::unidirectional::AUI` | Returns the retrieved value (GETO) |
 
@@ -48,11 +50,11 @@ The function block **NVS_AUI** is used to load and store UINT data in non-volati
 
 A `INIT` event triggers the connection to the non-volatile memory. The key (`KEY`) and the default value (`DEFAULT_VALUE`) are passed. After successful initialization, `INITO` is acknowledged with the result (`QO` / `STATUS`).
 
-2. **Reading Data**
+1. **Reading Data**
 
 After initialization, the stored value for the specified key is automatically read internally and provided as an event (E1) and data (D1) via the output adapter `AUI_OUT`. If no entry exists, `DEFAULT_VALUE` is output.
 
-3. **Storing Data**
+1. **Storing Data**
 
 A new value can be received via the input adapter `AUI_IN`. An incoming event (E1) with the associated data (D1) is forwarded to the internal NVS function block, which persistently stores the value under the initialized key.
 

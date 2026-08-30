@@ -3,6 +3,7 @@
 ![Uebung_022b_AX2_network](./Uebung_022b_AX2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **mirror sequence** for two pneumatic cylinders (Cyl_1 and Cyl_2) using softkeys as controls and AX_SR function blocks to control the digital outputs. The sequence is controlled by three keys (F1, F2, F3): F1 extends cylinder 1, F2 retracts cylinder 1 and simultaneously extends cylinder 2, and F3 retracts cylinder 2. This exercise teaches the use of set-reset adapter blocks and their integration with events and data outputs.
@@ -14,44 +15,51 @@ This exercise implements a **mirror sequence** for two pneumatic cylinders (Cyl_
 The exercise consists of five function blocks that are wired in the SubApp network:
 
 1. **SoftKey_UP_F1**
+
 - **Type**: `isobus::UT::io::Softkey::Softkey_IE`
 - **Parameters**:
 - `QI` = `TRUE`
 - `u16ObjId` = `SoftKey_F1`
 - `InputEvent` = `SK_RELEASED` (Event triggered when the F1 key is released)
 - **Event Output**: `IND` (Triggered when the key is pressed)
-2. **SoftKey_F2_DOWN**
+1. **SoftKey_F2_DOWN**
+
 - **Type**: `Softkey_IE`
 - **Parameters**:
 - `QI` = `TRUE`
 - `u16ObjId` = `SoftKey_F2`
 - `InputEvent` = `SK_PRESSED` (Event on pressing the F2 key)
 - **Event Output**: `IND`
-3. **SoftKey_F3_DOWN**
+1. **SoftKey_F3_DOWN**
+
 - **Type**: `Softkey_IE`
 - **Parameters**:
 - `QI` = `TRUE`
 - `u16ObjId` = `SoftKey_F3`
 - `InputEvent` = `SK_PRESSED` (Event on pressing the F3 key)
 - **Event output**: `IND`
-4. **AX_SR_Extend_Cyl_1**
+1. **AX_SR_Extend_Cyl_1**
+
 - **Type**: `adapter::events::unidirectional::AX_SR` (Set-Reset function block)
 - **Adapter**: unidirectional, output `Q` provides `TRUE` when set
 - **Event inputs**:
 - `S` – Set (Output Q = TRUE)
 - `R` – Reset (Output Q = FALSE)
-5. **AX_SR_Extend_Cyl_2**
+1. **AX_SR_Extend_Cyl_2**
+
 - **Type**: `AX_SR` (identical to Cyl_1)
 - **Event Inputs**:
 - `S` – Set
 - `R` – Reset
-6. **DigitalOutput_Q1**
+1. **DigitalOutput_Q1**
+
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE` (Output enabled)
 - `Output` = `Output_Q1` (physical output)
 - **Adapter input**: `OUT` – controls the output at `TRUE`
-7. **DigitalOutput_Q2**
+1. **DigitalOutput_Q2**
+
 - **Type**: `logiBUS_QXA`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -72,20 +80,20 @@ The control follows a fixed sequence:
 
 → Sets `AX_SR_Ausfahren_Cyl_1.S` → **Cylinder 1 extends** (DigitalOutput_Q1 = TRUE).
 
-2. **Press F2 key** → Event from `SoftKey_F2_DOWN.IND`
+1. **Press F2 key** → Event from `SoftKey_F2_DOWN.IND`
 
 → Distributed to two destinations:
 
 - `AX_SR_Ausfahren_Cyl_1.R` → **Cylinder 1 retracts** (Q1 = FALSE).
 - `AX_SR_Ausfahren_Cyl_2.S` → **Cylinder 2 extends** (Q2 = TRUE).
-3. **Press F3** → Event from `SoftKey_F3_DOWN.IND`
+1. **Press F3** → Event from `SoftKey_F3_DOWN.IND`
 
 → Sets `AX_SR_Ausfahren_Cyl_2.R` → **Cylinder 2 retracts** (Q2 = FALSE).
 
 The connections in detail:
 
 | From | To | Type |
-|-----|------|-----|
+| ----- | ------ | ----- |
 | `SoftKey_UP_F1.IND` | `AX_SR_Ausfahren_Cyl_1.S` | Event |
 | `SoftKey_F2_DOWN.IND` | `AX_SR_Ausfahren_Cyl_1.R` | Event |
 | `SoftKey_F2_DOWN.IND` | `AX_SR_Ausfahren_Cyl_2.S` | Event |

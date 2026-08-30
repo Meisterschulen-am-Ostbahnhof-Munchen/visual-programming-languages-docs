@@ -4,9 +4,11 @@
 ![ARR08B_TO_ST08B](./ARR08B_TO_ST08B.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function converts an 8-byte array into an 8-byte structure. It is used to convert linear byte data into a structured format.
+
 ## Interface Structure
 
 ### **Event Inputs**

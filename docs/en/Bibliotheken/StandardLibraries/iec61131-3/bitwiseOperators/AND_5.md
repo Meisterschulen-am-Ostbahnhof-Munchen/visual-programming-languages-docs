@@ -3,6 +3,7 @@
 ![AND_5](https://user-images.githubusercontent.com/116869307/214143938-1327eafa-96be-4137-8e06-2ba9a8d6c92e.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AND_5 function block is a generic function block for calculating bitwise logical AND operations with five inputs. It implements a standard bitwise operation according to IEC 61131-3 and can work with any bit data type.

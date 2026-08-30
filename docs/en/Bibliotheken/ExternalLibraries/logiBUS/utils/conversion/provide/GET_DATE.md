@@ -3,9 +3,11 @@
 ![GET_DATE](./GET_DATE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_DATE** function block reads a DATE value from an InOut variable and provides it as a buffered output. When requested by an event, the current value of the source is copied into an internal buffer and then output to the output as well as to the InOut variable itself.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The **GET_DATE** function block reads a DATE value from an InOut variable and pr
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | OUT | DATE | Buffered Output Value |
 | IN | DATE | Source Variable (InOut) – also output with CNF |
 

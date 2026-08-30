@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_8](./AIWS_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIWS_SPLIT_8** splits an incoming AIWS adapter signal into eight identical outputs. It functions as a generic splitter for unidirectional adapter connections and enables the parallel forwarding of a signal to multiple subsequent function blocks.
+
 ## Interface Structure
 
 The function block has neither event nor data inputs or outputs. All communication takes place exclusively via adapters.
@@ -29,7 +31,7 @@ None.
 ### Adapters
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Input (Socket) | IN | adaptor::types::unidirectional::AIWS | Incoming AIWS signal to be split. |
 | Output (Plug) | OUT1 | adaptor::types::unidirectional::AIWS | First parallel output of the signal. |
 | Output (Plug) | OUT2 | adaptor::types::unidirectional::AIWS | Second parallel output of the signal. |

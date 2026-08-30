@@ -3,6 +3,7 @@
 <img width="1572" height="241" alt="image" src="https://github.com/user-attachments/assets/b637a4d2-b75e-4f3d-b5a9-99b2c93d33eb" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_NOT_BOOL` implementiert die logische NICHT-Funktion (Negation) für den Datentyp `BOOL`. Er invertiert den logischen Zustand eines binären Eingangssignals. Dieser Baustein gehört zu den Standard-Bit-Operatoren gemäß IEC 61131-3 und ist für die Verwendung in Steuerungsanwendungen konzipiert, in denen logische Verknüpfungen benötigt werden.

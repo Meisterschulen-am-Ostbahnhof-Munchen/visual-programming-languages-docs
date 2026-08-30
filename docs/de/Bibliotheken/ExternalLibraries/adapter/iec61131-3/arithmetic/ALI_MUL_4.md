@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_MUL_4` dient zur Durchführung einer arithmetischen Multiplikation von vier Eingangswerten. Es handelt sich um einen generischen Funktionsbaustein (Generic FB), der auf der Verwendung von unidirektionalen Adaptern (`ALI`) basiert. Durch die Nutzung von Adaptern anstelle von klassischen Daten- und Ereignispins wird die Verdrahtung in 4diac-ide übersichtlicher und modularer gestaltet.
@@ -33,6 +34,7 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Das Ergebnis wird über den Au
 #### **Sockets (Eingangs-Adapter)**
 
 Die Sockets dienen als Eingänge für die zu multiplizierenden Werte.
+
 - **IN1** (Typ: `adapter::types::unidirectional::ALI`): Erster Faktor für die Multiplikation.
 - **IN2** (Typ: `adapter::types::unidirectional::ALI`): Zweiter Faktor für die Multiplikation.
 - **IN3** (Typ: `adapter::types::unidirectional::ALI`): Dritter Faktor für die Multiplikation.
@@ -41,6 +43,7 @@ Die Sockets dienen als Eingänge für die zu multiplizierenden Werte.
 #### **Plugs (Ausgangs-Adapter)**
 
 Der Plug gibt das berechnete Ergebnis aus.
+
 - **OUT** (Typ: `adapter::types::unidirectional::ALI`): Das berechnete Produkt der vier Eingangs-Adapter.
 
 ---
@@ -79,6 +82,7 @@ Der Funktionsbaustein ist zustandslos (zustandsfreie, rein kombinatorische Verar
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-Multiplikationsbaustein (`MUL`) nach IEC 61131-3, der meist nur zwei direkte Dateneingänge besitzt, bietet `ALI_MUL_4`:
+
 1. Die direkte Multiplikation von **vier** Faktoren in einem einzigen Schritt (weniger Bausteine auf dem Control-Canvas nötig).
 2. Die Nutzung von **Adaptern** statt Einzelverdrahtungen, was die Übersichtlichkeit des Gesamtprogramms signifikant erhöht.
 

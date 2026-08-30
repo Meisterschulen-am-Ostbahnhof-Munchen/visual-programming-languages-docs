@@ -14,30 +14,30 @@
 
 ![](https://user-images.githubusercontent.com/113907476/212979811-deadc740-e1f7-4815-a421-7d4b1edd067f.png)
 
-3. Confirm the workspace with Launch. -> The workspace opens if an existing one is selected. If a new one is created, the 4Diac start page opens.
+1. Confirm the workspace with Launch. -> The workspace opens if an existing one is selected. If a new one is created, the 4Diac start page opens.
 
 ![](https://user-images.githubusercontent.com/113907476/212980748-9a46691d-f7fe-4e64-9a20-73502b833b91.png)
 
-4. To create a new project, click the "Hide" button (highlighted in the image) in the top right corner. -> A new workspace opens.
+1. To create a new project, click the "Hide" button (highlighted in the image) in the top right corner. -> A new workspace opens.
 
 ![](https://user-images.githubusercontent.com/113907476/212981529-ac822fb3-5df2-4912-8857-0f7c4c5f2cde.png)
 
-5. To create a new project, right-click in the highlighted area in the image. -> A window opens; select "New" -> then select "4diac IDE Project..."
+1. To create a new project, right-click in the highlighted area in the image. -> A window opens; select "New" -> then select "4diac IDE Project..."
 
 ![](https://user-images.githubusercontent.com/113907476/212982388-dc8191de-7e9e-4451-9762-8c94da51cd54.png)
 
-6. Enter the project name. (The program must be named "test" if the controller is to automatically restart whenever the DIN rail module is connected.)
-7. After entering the name, confirm with "Finish". -> The new project appears in the selection tree on the left under "test".
+1. Enter the project name. (The program must be named "test" if the controller is to automatically restart whenever the DIN rail module is connected.)
+2. After entering the name, confirm with "Finish". -> The new project appears in the selection tree on the left under "test".
 
 ![](https://user-images.githubusercontent.com/113907476/212984431-23b4a7f2-edf4-4399-be3b-f4079403ee7d.png)
 
-8. Open the "test" project in the selection tree on the left. -> "test" expands. Right-click on the lower "test" entry -> a window opens. Select "New" -> another window opens. Select "Application..."
+1. Open the "test" project in the selection tree on the left. -> "test" expands. Right-click on the lower "test" entry -> a window opens. Select "New" -> another window opens. Select "Application..."
 
 -> A window opens with "New Application".
 
 ![](https://user-images.githubusercontent.com/113907476/212984600-42e91f6c-5baf-4c19-b352-ee5a0369f9e4.png)
 
-9. Assign an application name mapping and confirm with Finish. -> Application created.
+1. Assign an application name mapping and confirm with Finish. -> Application created.
 
 Mapping can now begin. Further instructions can be found in File > Create New Controller.
 

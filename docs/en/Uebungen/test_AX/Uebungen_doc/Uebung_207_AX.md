@@ -3,6 +3,7 @@
 ![Uebung_207_AX_network](./Uebung_207_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an event-driven bistable relay with mutual interlock.
@@ -11,7 +12,7 @@ Using the function block `ILOCK_2_E_AX`, a simple two-channel set/reset system i
 ## Function Blocks Used
 
 | FB Name | Type | Description |
-|----------|------|----------------|
+| ---------- | ------ | ---------------- |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IE` | Digital input, parameterized with `Input_I1` and event `BUTTON_SINGLE_CLICK` |
 | `DigitalInput_I2` | `logiBUS::io::DI::logiBUS_IE` | Digital input, parameterized with `Input_I2` and event `BUTTON_SINGLE_CLICK` |
 | `DigitalInput_I3` | `logiBUS::io::DI::logiBUS_IE` | Digital input, parameterized with `Input_I3` and event `BUTTON_SINGLE_CLICK` |
@@ -26,15 +27,18 @@ This exercise does not use any user-defined sub-function blocks – all function
 ## Program Flow and Connections
 
 1. **Event Linking**
+
 - The event outputs `IND` of the three `logiBUS_IE` inputs are connected to `ILOCK_2_E_AX` as follows:
 - `DigitalInput_I1.IND` → `ILOCK_AX.CLK1` (Set Channel 1)
 - `DigitalInput_I2.IND` → `ILOCK_AX.CLK2` (Set Channel 2)
 - `DigitalInput_I3.IND` → `ILOCK_AX.R` (Common Reset)
-2. **Adapter Connections**
+1. **Adapter Connections**
+
 - The outputs of the interlock module are passed to the digital outputs via adapter connections:
 - `ILOCK_AX.OUT1` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX.OUT2` → `DigitalOutput_Q2.OUT`
-3. **How it Works**
+1. **How it Works**
+
 - An event (single-click) on `I1` sets the output `Q1` and simultaneously clears `Q2` (mutual interlock).
 - An event on `I2` sets `Q2` and clears `Q1`.
 - An event on `I3` resets both outputs (`R = Reset`).

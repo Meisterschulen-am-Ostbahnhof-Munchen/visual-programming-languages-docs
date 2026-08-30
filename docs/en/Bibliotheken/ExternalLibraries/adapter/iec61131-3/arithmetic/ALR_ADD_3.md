@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_ADD_3` is a generic arithmetic block for the 4diac IDE, used to add three input values. It conforms to the standard arithmetic functions according to IEC 61131-3, but uses an adapter-based interface design. Instead of individual data and event pins, this block uses unidirectional adapters to enable clean encapsulation and clearer wiring within the application.

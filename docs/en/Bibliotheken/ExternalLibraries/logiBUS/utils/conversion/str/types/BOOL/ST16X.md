@@ -1,12 +1,15 @@
 # ST16X
 
 * * * * * * * * * *
+
 ## Introduction
 
 ST16X is a user-defined data type that defines a structure of 16 individual BOOL values. It serves to encapsulate a collection of binary states or flags in a single, organized unit. Although it is a data type and not a function block, its structure and usage are described here. The data type was created to provide a clear and type-safe way to manage 16 logical states.
+
 ## Interface Structure
 
 Because ST16X is a data type and not a function block, it does not have classic interfaces in the sense of event or data inputs/outputs. Instead, its 'structure' defines the internal members, which are detailed below.
+
 ### **Event Inputs**
 
 Not applicable to a data type.
@@ -59,7 +62,7 @@ A data type like ST16X does not have an active 'function' in the sense of an alg
 - **Comment:** Each variable is assigned a comment ("BIT xx") that clarifies the bit position.
 - **Modularity:** Promotes code modularity and reusability by bundling complex status information.
 
-## State Overview: As a pure data type, ST16X itself does not have a 'state overview' in the sense of a finite automaton or internal logic. The 'state' is represented by the current values of the 16 included BOOL variables, each of which can be either `TRUE` or `FALSE`. The combination of these 16 Boolean values results in 2^16 (65,536) possible states for an instance of the data type.
+## State Overview: As a pure data type, ST16X itself does not have a 'state overview' in the sense of a finite automaton or internal logic. The 'state' is represented by the current values of the 16 included BOOL variables, each of which can be either `TRUE` or `FALSE`. The combination of these 16 Boolean values results in 2^16 (65,536) possible states for an instance of the data type
 
 ## Application Scenarios
 

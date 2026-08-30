@@ -3,6 +3,7 @@
 ![ALR_MUL_2](./ALR_MUL_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_MUL_2` is a generic arithmetic function block designed for multiplying two values. It is based on the IEC 61499 architecture and uses adapter interfaces to encapsulate and transmit data and events. This enables clean structuring and reduces wiring effort in 4diac IDE applications, as data and associated control flows are bundled in common connections (adapters).

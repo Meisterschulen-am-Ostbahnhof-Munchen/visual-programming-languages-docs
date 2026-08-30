@@ -39,6 +39,7 @@ The function block has no internal state. The conversion is performed anew with 
 - Similar function blocks might offer additional parameters or error handling, but this function block is limited to basic conversion.
 
 The `F_WSTRING_AS_DWORD` function block offers a simple and efficient way to convert WSTRING values to DWORD values. Its simplicity makes it particularly suitable for applications where direct conversion without additional complexity is required.
+
 ## Technical Features
 
 ## State Overview

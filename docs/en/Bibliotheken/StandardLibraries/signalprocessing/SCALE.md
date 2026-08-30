@@ -5,6 +5,7 @@
 ## Introduction
 
 The SCALE function block is used to scale an input value from an input range to an output range. This is particularly useful in signal processing when values from one measurement range need to be transformed into another.
+
 ## Interface Structure
 
 ### **Event Inputs**

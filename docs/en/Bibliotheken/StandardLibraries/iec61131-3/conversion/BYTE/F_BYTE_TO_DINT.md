@@ -6,6 +6,7 @@
 
 The function block `F_BYTE_TO_DINT` converts a `BYTE` value to a `DINT` value. It is part of the `iec61131::conversion` library and enables simple and efficient type conversion between these two data types.
 ![F_BYTE_TO_DINT](F_BYTE_TO_DINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_012`. It demonstrates how numeric values are not only displayed but also stored in the controller (NVS - Non-Volatile Storage) in a power-failure-proof manner.
+
 ## 🎧 Podcast
 
 ![Uebung_012_network](./Uebung_012_network.svg)

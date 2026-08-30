@@ -3,6 +3,7 @@
 ![CSV_WRITER_2](https://github.com/user-attachments/assets/3c2f2095-ba2e-4a3a-9484-9f5c310500e9)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der CSV_WRITER_2 ist ein Funktionsblock, der dazu dient, Daten in eine CSV-Datei zu schreiben. Er bietet eine einfache Schnittstelle für die Initialisierung und den Schreibvorgang, wobei zwei verschiedene Datenfelder unterstützt werden. Der Funktionsblock ist besonders nützlich für Anwendungen, bei denen Daten persistent gespeichert oder für weitere Analysen exportiert werden müssen.

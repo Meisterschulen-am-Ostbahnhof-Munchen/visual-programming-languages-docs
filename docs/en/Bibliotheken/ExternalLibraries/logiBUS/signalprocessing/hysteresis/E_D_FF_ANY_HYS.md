@@ -3,9 +3,11 @@
 ![E_D_FF_ANY_HYS](./E_D_FF_ANY_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **E_D_FF_ANY_HYS** implements a data latch flip-flop with adjustable hysteresis. It takes a numeric input value `D` and outputs `Q`, but only if the difference between the current output `Q` and the new input `D` exceeds a predefined threshold (`HYSTERESIS`). This effectively suppresses small, unwanted fluctuations (e.g., noise).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **E_D_FF_ANY_HYS** implements a data latch flip-flop with adj
 ### **Data Inputs**
 
 | Name | Type | Description |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | `D` | ANY\_NUM | The value to be latched. |
 | `HYSTERESIS` | ANY\_NUM | Hysteresis band; the minimum absolute change between `Q` and `D` that triggers a takeover. |
 
@@ -62,7 +64,7 @@ Only if this condition is **true** is the algorithm `LATCH` executed again (Q :=
 The function block contains a very simple two-state automatic state machine:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | `START` | Initial state after the block starts. Waits for the first `CLK` event. |
 | `SET` | Operating state. The hysteresis condition is evaluated on each `CLK` event. |
 
@@ -82,7 +84,7 @@ The function block contains a very simple two-state automatic state machine:
 ## Comparison with similar function blocks
 
 | Function block | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | `E_D_FF` | Standard D flip-flop (Boolean values only) | Takes over each clock cycle immediately, no hysteresis, only `BOOL` type. |
 | `E_D_FF_ANY` | D flip-flop for any data type (no hysteresis) | Same function as `E_D_FF`, but generic. Takes over each clock cycle immediately. |
 | `E_D_FF_ANY_HYS` (this block) | D flip-flop with hysteresis for any numeric type | Only accepts when there is a sufficient deviation. |

@@ -3,6 +3,7 @@
 ![AS_D_FF](./AS_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AS_D_FF** realisiert ein einfaches Datenlatch (D-Flipflop) auf Basis von Adaptern. Er speichert einen eingehenden Datenwert bei jedem eingehenden Ereignis und gibt den gespeicherten Wert als Ausgangssignal weiter. Der Baustein kapselt die Logik des 4diac-Standardbausteins `E_D_FF_ANY` und stellt seine Schnittstellen ausschließlich über unidirektionale Adapter vom Typ `adapter::types::unidirectional::AS` bereit. Dies ermöglicht eine modulare und standardisierte Einbindung in komplexere Systeme.
@@ -71,7 +72,7 @@ Der Zustand wird durch ein Ereignis auf `I.E1` umgeschaltet (sofern sich der Dat
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied zu AS_D_FF |
-|----------|-------------|------------------------|
+| ---------- | ------------- | ------------------------ |
 | **SR_FF** | Set-Reset-Flipflop | Hat separate Set- und Reset-Eingänge, kein Taktsignal. |
 | **E_D_FF_ANY** | Reines D-Flipflop mit direkten E/A | Bietet keine Adapter-Schnittstelle; erfordert direkte Verbindungen. |
 | **AS_FF_RS** (hypothetisch) | RS-Flipflop mit Adaptern | Verwendet zwei Adapter für Set und Reset, kein Taktsignal. |

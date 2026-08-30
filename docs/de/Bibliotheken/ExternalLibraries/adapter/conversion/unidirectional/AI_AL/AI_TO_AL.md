@@ -3,6 +3,7 @@
 ![AI_TO_AL](./AI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite-Funktionsbaustein **AI_TO_AL** dient zur Umwandlung eines INT-Werts, der über den unidirektionalen AI-Adapter (Typ `adapter::types::unidirectional::AI`) bereitgestellt wird, in einen LWORD-Wert, der über den unidirektionalen AL-Adapter (Typ `adapter::types::unidirectional::AL`) ausgegeben wird. Der Baustein kapselt die Konvertierungslogik und ermöglicht so eine saubere Trennung zwischen INT- und LWORD-basierten Adapter-Schnittstellen.

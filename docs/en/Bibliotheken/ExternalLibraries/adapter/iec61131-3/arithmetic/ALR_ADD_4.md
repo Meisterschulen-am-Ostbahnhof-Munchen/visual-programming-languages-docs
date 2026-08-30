@@ -3,6 +3,7 @@
 ![ALR_ADD_4](./ALR_ADD_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) **ALR_ADD_4** is a generic arithmetic block for performing an addition operation. It is classified as a standard arithmetic function according to the IEC 61131-3 standard. The block allows up to four input values, provided via unidirectional adapters of type `ALR`, to be added and the result passed to a corresponding output adapter.

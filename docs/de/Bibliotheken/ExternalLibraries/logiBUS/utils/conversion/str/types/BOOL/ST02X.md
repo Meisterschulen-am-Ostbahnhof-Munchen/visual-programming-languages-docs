@@ -3,6 +3,7 @@
 *(Kein Bild verfügbar für diesen Datentyp.)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp **ST02X** ist ein strukturierter Datentyp, der darauf ausgelegt ist, zwei boolesche Werte zu kapseln. Er dient als einfache Datenstruktur, um zwei individuelle Bits oder boolesche Zustände in einer einzigen Einheit zu organisieren und zu transportieren. Der Name "ST02X" deutet auf eine "Struktur mit 2 [Booleschen Werten]" hin.

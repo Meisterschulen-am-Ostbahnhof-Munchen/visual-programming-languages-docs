@@ -1,8 +1,9 @@
-# Exercise_001c: DigitalInput_I1 to DigitalOutput_Q1 --> Querying the input during boot.
+# Exercise_001c: DigitalInput_I1 to DigitalOutput_Q1 --> Querying the input during boot
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_001c`. It demonstrates how to query a digital input immediately after system startup (boot process) to transfer the initial state to a digital output using standard event and data connections.
+This article describes the logiBUS® exercise `Uebung_001c`. It demonstrates how to query a digital input immediately after system startup (boot process) to transfer the initial state to a digital output using standard event and data connections
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to understand the initialization process in IEC 61499. It aims to ensure that the output adopts the correct current state of the hardware input as soon as the controller starts up, even if no state change (edge) has yet occurred.
@@ -40,11 +41,13 @@ The logic combines normal signal forwarding with an initialization loop. The str
 The process is divided into two phases:
 
 1. **Initialization Phase (Boot)**:
+
 - At system startup, the function block `DigitalInput_I1` is initialized and sends a `INITO` event.
 - This event is fed back to its own `REQ` input.
 - As a result, the function block immediately reads the physical state and acknowledges this with a `CNF` event.
 - The `CNF` event finally triggers `DigitalOutput_Q1.REQ`, so that the output already receives the correct value at startup.
-2. **Operating Phase (Runtime)**:
+1. **Operating Phase (Runtime)**:
+
 - Any subsequent change to the input directly triggers the output via `IND -> REQ`, as in Exercise 001.
 
 -----

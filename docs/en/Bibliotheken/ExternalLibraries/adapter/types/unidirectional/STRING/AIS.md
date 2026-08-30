@@ -4,9 +4,11 @@
 **Unidirectional Adapter for 1 Event and 1 String**
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AIS** (Adapter Interface String) adapter provides a unidirectional interface through which exactly one event (E1) along with its associated string (D1) can be transmitted from a plug instance to a socket instance. It is used to implement simple, directed data flows where no feedback or additional control is required.
+
 ## Interface Structure
 
 ### **Event Inputs**

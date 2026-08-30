@@ -3,6 +3,7 @@
 ![Uebung_004a11a_AX_network](./Uebung_004a11a_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Toggle-Flip-Flop (T-Flip-Flop) zur Ansteuerung eines digitalen Ausgangs über einen einzelnen Tastendruck. Der letzte Zustand des Ausgangs wird beim Start der Applikation automatisch aus einem nichtflüchtigen Speicher geladen und beibehalten. Dadurch bleibt der Schaltzustand auch nach einem Neustart erhalten. Die Eingabe erfolgt über einen Taster mit Entprellung, der ein **BUTTON_SINGLE_CLICK**-Ereignis auslöst.

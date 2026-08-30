@@ -3,6 +3,7 @@
 ![Uebung_004a2_2_AX_network](./Uebung_004a2_2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert ein Toggle-Flipflop (T-FF), das durch zwei unabhängige Taster (Eingänge I1 und I2) umgeschaltet wird. Jeder Taster löst ein Ereignis „BUTTON_SINGLE_CLICK“ aus. Die beiden Ereignisse werden mithilfe eines `E_MERGE_2`-Bausteins zusammengeführt und dienen als Taktsignal für das T-FF. Der Ausgang des T-FF steuert einen digitalen Ausgang (Q1).

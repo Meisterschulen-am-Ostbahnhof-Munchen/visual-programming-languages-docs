@@ -3,6 +3,7 @@
 ![AR_TO_AS](./AR_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_TO_AS** ist ein Composite-Baustein, der einen **REAL-Adapter** (AR) in einen **SINT-Adapter** (AS) umwandelt. Er ermöglicht die einfache und standardisierte Konvertierung zwischen den Adaptertypen und kapselt die dafür notwendige Logik in einem wiederverwendbaren Baustein.

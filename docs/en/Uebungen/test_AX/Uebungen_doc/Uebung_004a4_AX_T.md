@@ -3,6 +3,7 @@
 ![Uebung_004a4_AX_T_network](./Uebung_004a4_AX_T_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of a **toggle flip-flop (AX_FB_T_FF)** with the help of adapters.
@@ -30,7 +31,7 @@ The sub-app contains the following function blocks:
 - Parameters: `QI = TRUE`, `Output = Output_Q1`
 - *Connects the flip-flop output to the physical output Output_Q1.*
 
-### Sub-Building Blocks:
+### Sub-Building Blocks
 
 No other SubApp building blocks were used within this exercise.
 
@@ -44,12 +45,12 @@ DigitalInput_RST.IN` → `T_FF.RST`
 
 *A signal on input Input_I1 resets the flip-flop (Q1 = FALSE).*
 
-2. **Clock Signal (CLK):**
+1. **Clock Signal (CLK):**
 
 DigitalInput_CLK.IN` → `T_FF.CLK`
 *Each rising edge on Input_I2 toggles output Q1 (from TRUE to FALSE or vice versa).*
 
-3. **Output (Q1):**
+1. **Output (Q1):**
 
 T_FF.Q1` → `DigitalOutput_Q1.OUT`
 *The current state of the flip-flop is displayed on the physical output Output_Q1 Output.*

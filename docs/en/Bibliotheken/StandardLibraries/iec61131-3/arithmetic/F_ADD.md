@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_ADD](F_ADD.svg)
+
 ## Introduction
 
 The **F_ADD** is a standards-compliant arithmetic function block according to IEC 61131-3, developed by TU Wien ACIN under the EPL-2.0 license. Version 1.0 enables type-safe addition of values (ANY_MAGNITUDE) for industrial control applications.
@@ -30,17 +31,21 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 ## Functionality
 
 1. **Activation**:
+
 - Triggered by the `REQ` event
 - Processes both input values simultaneously
-2. **Type Handling**:
+1. **Type Handling**:
+
 - Supports all ANY_MAGNITUDE types:
 - Numeric types (INT, DINT, REAL, LREAL)
 - Time types (TIME, LTIME)
 - Automatic type conversion
-3. **Computation**:
+1. **Computation**:
+
 - Executes IN1 + IN2
 - Maintains the highest input accuracy
-4. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with computation result
 - Latency: One execution cycle
 
@@ -54,7 +59,7 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 ## Supported Data Types
 
 | Category | Examples |
------------------|--------------------------|
+----------------- | -------------------------- |
 | Integers | INT, DINT, UINT, UDINT |
 | Floating Point | REAL, LREAL |
 | Time | TIME, LTIME |
@@ -70,7 +75,7 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_ADD | F_SUB | F_MUL |
-|--------------|---------|---------|---------|
+| -------------- | --------- | --------- | --------- |
 | Operation | Addition | Subtraction | Multiplication |
 | Input Types | ANY_MAGNITUDE | ANY_MAGNITUDE | ANY_NUM |
 | Output Type | Equals Input Type | Equals | Equals |

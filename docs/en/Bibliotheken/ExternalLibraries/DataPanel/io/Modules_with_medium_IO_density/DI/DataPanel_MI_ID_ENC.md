@@ -3,22 +3,24 @@
 ![DataPanel_MI_ID_ENC](./DataPanel_MI_ID_ENC.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **DataPanel_MI_ID_ENC** function block is an input service interface function block for acquiring encoder pulse data. It is designed to process a 7A+8A encoder pair and outputs the current counter reading and status information. Initialization is performed via parameters such as the node address (SA member), the input configuration, and thresholds for pulse- and time-based event triggering.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Description | Accompanying Data |
-|----------|---------------|-------------------|
+| ---------- | --------------- | ------------------- |
 | INIT | Service Initialization | QI, PARAMS, u8SAMember, Input, ImpulseDelta, TimeDelta |
 | REQ | Service Request | QI |
 
 ### **Event Outputs**
 
 | Event | Description | Accompanying Data |
-|----------|--------------|-------------------|
+| ---------- | -------------- | ------------------- |
 | INITO | Initialization Acknowledgement | QO, STATUS |
 | CNF | Requested Action Acknowledgement | QO, STATUS, IN |
 | IND | Asynchronous Event Display (Pulse or Timeout) | QO, STATUS, IN |
@@ -26,7 +28,7 @@ The **DataPanel_MI_ID_ENC** function block is an input service interface functio
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | QI | BOOL | – | Event Input Qualifier |
 | PARAMS | STRING | – | Service Parameter |
 | u8SAMember | USINT | MI::MI_00 | Node Address (range 224..239) |
@@ -37,7 +39,7 @@ The **DataPanel_MI_ID_ENC** function block is an input service interface functio
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Service Status |
 | IN | DWORD | Current Encoder Counter Value |
@@ -52,11 +54,11 @@ None.
 
 The function block is configured with the parameters `PARAMS`, the node address `u8SAMember`, the input specification `Input`, and the threshold values `ImpulseDelta` and `TimeDelta`. After successful initialization, the event `INITO` is acknowledged with `QO` and `STATUS`.
 
-2. **Request (REQ → CNF)**
+1. **Request (REQ → CNF)**
 
 The function block `REQ` triggers a targeted query of the current counter reading. The block responds with `CNF` and provides the current encoder value via `IN`, along with status information.
 
-3. **Asynchronous Events (IND)**
+1. **Asynchronous Events (IND)**
 
 Regardless of an explicit request, `IND` is triggered as soon as either the number of encoder pulses specified in `ImpulseDelta` has been exceeded or the time interval defined in `TimeDelta` has expired. This enables event-driven processing without continuous polling.
 
@@ -71,7 +73,7 @@ The output `IN` contains the current 32-bit counter value of the encoder for eac
 ## State Overview
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | IDLE | Waiting for INIT or REQ |
 | INIT | Initialization in progress, parameters are being applied |
 | ACTIVE | Initialization complete, ready for REQ and IND |

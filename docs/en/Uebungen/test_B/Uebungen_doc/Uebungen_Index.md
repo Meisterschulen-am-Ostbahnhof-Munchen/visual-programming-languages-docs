@@ -1,6 +1,7 @@
 # 🛠️ Exercises (Workspace test_B)
 
 Here you will find the documentation for the exercises for logiBUS® without the **AX adapter**. The exercises are grouped by topic to optimally support your learning progress.
+
 ## Topics
 
 ## 🎧 Podcast

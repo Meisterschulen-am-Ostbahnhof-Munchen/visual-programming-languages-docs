@@ -5,6 +5,7 @@
 ![AnlagenSequenz_06](AnlagenSequenz_06.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AnlagenSequenz_06` ist ein zeitgesteuerter Ring-Sequenzer für die geordnete

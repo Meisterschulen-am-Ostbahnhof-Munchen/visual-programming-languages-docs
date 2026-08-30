@@ -3,6 +3,7 @@
 <img width="1186" height="212" alt="image" src="https://github.com/user-attachments/assets/9a52222d-13af-45a6-94bb-67de45036241" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `CYCLE_TIME` dient zur Berechnung der verstrichenen Zeit zwischen zwei aufeinanderfolgenden Aufrufen. Er ist ein nützliches Werkzeug zur Überwachung und Diagnose von Zykluszeiten in Echtzeitanwendungen, beispielsweise zur Leistungsanalyse oder zur Erkennung von unerwarteten Verzögerungen in einem Steuerungssystem.

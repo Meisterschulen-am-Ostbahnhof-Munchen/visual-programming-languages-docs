@@ -3,9 +3,11 @@
 ![STATES](./STATES.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The global constant declaration `STATES` defines a collection of predefined state labels as strings (STRING). These constants are typically used to name operating states in a control sequence, especially for processes with alternating direction (clockwise/counterclockwise) and integrated pauses. It serves as a central and consistent source for these state names within a project.
+
 ## Interface Structure
 
 Global constants are not function blocks with event or data interfaces. Instead, they declare constant values that are available project-wide.

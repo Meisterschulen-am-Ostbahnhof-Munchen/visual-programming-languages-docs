@@ -6,6 +6,7 @@
 
 - [IEC 61499: The E_SR Function Block Decoded – Simplicity Meets Event Control ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Der-E_SR-Baustein-entschlsselt--Einfachheit-trifft-Ereignissteuerung-e3682bo)
 - [Decoding the E_SR Function Block: The Unsung Hero of Industrial Automation ](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-the-E_SR-Function-Block-The-Unsung-Hero-of-Industrial-Automation-e3681qo)
+
 ## Introduction
 
 The `E_SR` (Event-driven SR Flip-Flop) is an event-driven, bistable function block according to IEC 61499. It serves as a basic memory element controlled by separate "Set" and "Reset" events. Its output, `Q`, retains its state until an opposing event occurs.
@@ -56,6 +57,7 @@ According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this 
 - **`E_D_FF`**: Also stores a state, but on a clock-based basis. `E_D_FF` takes the value from the `D` input when a `CLK` event occurs.
 
 E_D_FF`
+
 ## 🛠️ Related exercises
 
 - [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)

@@ -3,6 +3,7 @@
 ![Uebung_219_network](./Uebung_219_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 61131-3 mit dem Funktionsbaustein `FB_CTD_ULINT` (Datentyp ULINT). Der Zähler wird über zwei digitale Eingänge gesteuert: **CD** (Count Down) dekrementiert den Zählerstand, **LD** (Load) lädt den voreingestellten Wert (PV). Der aktuelle Zählerstand wird auf einem Terminal (NumericValue) ausgegeben. Zusätzlich wird ein digitaler Ausgang gesetzt, wenn der Zählerstand null erreicht.

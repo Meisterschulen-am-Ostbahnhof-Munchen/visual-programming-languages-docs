@@ -3,10 +3,12 @@
 ![F_SEL_E_4](https://github.com/user-attachments/assets/2deb1c98-9daf-4a3c-b155-a719bb97771b)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The F_SEL_E_4 function block is an event-based selector that selects one input from up to four inputs and forwards it to the output. It is classified according to the IEC 61131-3 standard and serves as a standard selection function in automation systems.
 ![F_SEL_E_4](F_SEL_E_4.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

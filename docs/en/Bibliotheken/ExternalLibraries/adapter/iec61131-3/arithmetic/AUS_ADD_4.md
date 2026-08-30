@@ -62,11 +62,13 @@ The block behaves like a combinational component (or a stateless function block)
 - **Signal Summation:** Combining and adding four analog sensor values (e.g., determining the total flow rate from four individual flow meters or the total power consumption of four electrical devices).
 - **Average Preparation:** Summing four measurement points as a preparatory step for subsequent division to calculate the average.
 - **Combinatorial Control Logic:** Aggregating weighted control signals in more complex distributed systems.
+
 - ## Comparison with Similar Function Blocks
 
 Compared to a standard adder (e.g., the classic `ADD` function block from the IEC 61131-3 library), which works directly with elementary data types (such as `REAL` or `INT`), `AUS_ADD_4` relies entirely on adapter coupling. This saves time during instantiation and wiring, but requires that the source and destination signals are encapsulated in the adapter type `AUS`.
 
 The `AUS_ADD_4` is a specialized and efficient auxiliary function block for structured application development in 4diac. It is ideally suited for cleanly structured control applications where signal processing is to be consistently implemented via adapter pipelines.
+
 ## Technical Features
 
 ## State Overview

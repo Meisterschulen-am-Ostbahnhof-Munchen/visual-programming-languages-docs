@@ -3,9 +3,11 @@
 ![GET_TIME](./GET_TIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **GET_TIME** allows you to read a TIME value from an InOut variable and provide it as a buffered output value. It serves as a simple interface for incorporating an external time value into the block structure.
+
 ## Interface Structure
 
 ### **Event Inputs**

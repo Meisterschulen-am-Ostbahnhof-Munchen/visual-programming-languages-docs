@@ -4,6 +4,7 @@
 ![NmSetNameField](./NmSetNameField.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `NmSetNameField` converts an ISO NAME, as defined in ISO 11783-5 (section 5.1.2), into a structured representation. An ISO NAME is an 8-byte identifier used in agricultural and forestry machinery (ISOBUS) for the unique identification of electronic control units (ECUs). This function block extracts the individual fields from the byte array and populates a corresponding data structure (`NAMEFIELD_T`). This facilitates further processing and evaluation of the device information in an IEC 61499 application.
@@ -39,7 +40,7 @@ When the `REQ` event is triggered, the function block processes the incoming byt
 - **Bit Manipulation:** This block uses logical AND operations (`AND`), shift operations (`SHL`, `SHR`), and type conversions (`BYTE_TO_WORD`, `BYTE_TO_DWORD`) to isolate the relevant bits from the input array.
 - **Library Dependency:** This block depends on the data types `CF_NAME_T` and `NAMEFIELD_T` from the `isobus::pgn` library. The exact definition of these types (e.g., the field names in `NAMEFIELD_T`) is outside this block.
 - **Library Dependency:** This block depends on the data types `CF_NAME_T` and `NAMEFIELD_T` from the `isobus::pgn` library. The precise definition of these types (e.g., the field names in `NAMEFIELD_T`) is outside this block.
-- * **Deterministic:** The operation is purely data-driven and has no internal state. With the same input, it always produces the same output.
+- - **Deterministic:** The operation is purely data-driven and has no internal state. With the same input, it always produces the same output.
 
 ## State Overview
 
@@ -55,11 +56,13 @@ The function block has no persistent internal state. It behaves like a pure func
 - **Diagnostics and Logging:** For clear display and logging of device names in a human-readable, structured format instead of the raw 8-byte value.
 - **Filtering and Addressing:** As a preprocessing step to make decisions about further communication based on specific fields (such as device class or manufacturer code).
 - **ISOBUS Device Identification:**
+
 ## ⚖️ Comparison with Similar Components
 
 - **Counterpart `NmGetIsoName`:** A hypothetical complementary component would perform the reverse operation: It would take a `NAMEFIELD_T` structure as input and generate the corresponding 8-byte `CF_NAME_T` array. `NmSetNameField` is the decoder; its counterpart would be the encoder.
 - **Generic Byte Parsers:** Unlike generic byte-to-structure converters, this block is specifically tailored to the ISO NAME format and contains the exact bit logic of the standard. Using this specialized block reduces errors and increases maintainability in the ISOBUS context.
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)

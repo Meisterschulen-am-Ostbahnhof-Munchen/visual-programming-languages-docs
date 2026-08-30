@@ -3,9 +3,11 @@
 ![ALR_D_FF_HYS_TMIN](./ALR_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALR_D_FF_HYS_TMIN** implements a clock-controlled D-latch (flip-flop) with adjustable hysteresis for data acquisition and a minimal time delay between successive output events. It processes an analog or Boolean value via an adapter input and outputs the buffered value via an adapter output. The hysteresis prevents unintended switching due to fluctuating input values, while the minimum time (Tmin) limits the event frequency at the output.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **ALR_D_FF_HYS_TMIN** implements a clock-controlled D-latch (
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|------------|-------|-------------------------------------------------|
+| ------------ | ------- | ------------------------------------------------- |
 | HYSTERESIS | LREAL | Hysteresis band for data transfer |
 | Tmin | TIME | Minimum time between two output events |
 
@@ -34,7 +36,7 @@ The FB does not have its own data outputs. The latched value is provided via the
 ### **Adapter**
 
 | Direction | Name | Type (unidirectional) | Comment |
-|----------|------|----------------------|------------------------------------|
+| ---------- | ------ | ---------------------- | ------------------------------------ |
 | Socket | I | ALR | Input value to be latched |
 | Plug | Q | ALR | Output value (latched) |
 
@@ -62,9 +64,10 @@ Since the function block consists of several internal states (e.g., waiting for 
 1. **Initialized** (after INIT and INITO)
 2. **Ready** – waits for an event at input `I.E1`
 3. **Hysteresis Check** – compares the new value with the latched value
+
 - If the hysteresis limit is exceeded: the new value is adopted, and the process transitions to **Waiting for Minimum Time**
 - Otherwise: returns to **Ready** without output
-4. **Waiting for Minimum Time** – after the minimum time has elapsed, the output event `Q.E1` is generated, and the latched value is displayed at `Q.D1`Output; then return to **Ready**
+1. **Waiting for Minimum Time** – after the minimum time has elapsed, the output event `Q.E1` is generated, and the latched value is displayed at `Q.D1`Output; then return to **Ready**
 
 ## Application Scenarios
 
@@ -76,7 +79,7 @@ Since the function block consists of several internal states (e.g., waiting for 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties | Difference to ALR_D_FF_HYS_TMIN |
------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------|
+----------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------ |
 | Simple D flip-flop (D_FF) | No hysteresis, no timing | No signal stabilization or frequency limiting |
 | Schmitt trigger (e.g., S_TRIG) | Hysteresis only, no timing, often only binary | Differs with analog values and forced pauses |
 | Edge-triggered latch with dead time | Timing (dead time) present, but usually without hysteresis | Combination of both effects (hysteresis + Tmin) |

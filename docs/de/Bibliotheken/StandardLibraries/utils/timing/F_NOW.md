@@ -59,7 +59,7 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 ## ⚖️ Vergleich mit ähnlichen Funktionen
 
 | Feature | F_NOW | NOW | TIME() |
-|---------|-------|-----|--------|
+| --------- | ------- | ----- | -------- |
 | Rückgabetyp | DATE_AND_TIME | DATE_AND_TIME | TIME |
 | Zeitzone | Lokal | Lokal | System |
 | Genauigkeit | Sekunden | Sekunden | Millisekunden |

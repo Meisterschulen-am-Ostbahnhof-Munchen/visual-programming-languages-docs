@@ -3,6 +3,7 @@
 ![AULI_SPLIT_7](./AULI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_SPLIT_7** dient als generischer Splitter, der ein eingehendes AULI-Adapter-Signal (unidirektional) auf sieben separate AULI-Ausgänge verteilt. Er ist speziell für die Aufteilung eines Befehls- oder Datenstroms (AULI-Protokoll) ausgelegt und ermöglicht die gleichzeitige Versorgung mehrerer nachgeschalteter Bausteine mit dem gleichen Signal.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | IN | `adapter::types::unidirectional::AULI` | Empfängt das aufzuteilende AULI-Signal |
 | Plug (Ausgang) | OUT1 | `adapter::types::unidirectional::AULI` | Erster Ausgang für das AULI-Signal |
 | Plug (Ausgang) | OUT2 | `adapter::types::unidirectional::AULI` | Zweiter Ausgang |

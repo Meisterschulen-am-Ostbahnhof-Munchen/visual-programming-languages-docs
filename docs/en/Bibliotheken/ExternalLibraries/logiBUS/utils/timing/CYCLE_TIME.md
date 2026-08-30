@@ -6,6 +6,7 @@
 
 The function block `CYCLE_TIME` is used to calculate the elapsed time between two consecutive calls. It is a useful tool for monitoring and diagnosing cycle times in real-time applications, for example, for performance analysis or for detecting unexpected delays in a control system.
 ![CYCLE_TIME](CYCLE_TIME.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

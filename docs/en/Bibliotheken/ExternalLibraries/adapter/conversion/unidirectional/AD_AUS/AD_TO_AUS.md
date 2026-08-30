@@ -3,9 +3,11 @@
 ![AD_TO_AUS](./AD_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AD_TO_AUS** is a composite function block (FB) that converts a DWORD adapter (AD) into a USINT adapter (AUS). It serves as a unidirectional interface for converting a 32-bit data value into an 8-bit value. The block encapsulates the IEC 61131 conversion function `F_DWORD_TO_USINT` and provides the adapter interfaces, allowing it to be seamlessly integrated into an adapter-based communication structure.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The adapter output **AUS_OUT** provides the converted USINT value (8-bit) via th
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | **AD_IN** | `adapter::types::unidirectional::AD` | Input (Socket) | Receives DWORD data and control events. |
 | **AUS_OUT** | `adapter::types::unidirectional::AUS` | Output (Plug) | Outputs USINT data and acknowledgment events. |
 

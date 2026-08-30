@@ -1,8 +1,9 @@
 # Exercise_000_AX: Simple Addition
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_000_AX`, the absolute basic example for calculations.
+This article describes the logiBUS® exercise `Uebung_000_AX`, the absolute basic example for calculations
 ----
+
 ## Objective of the Exercise
 
 The objective is to place and parameterize a standard function block from the IEC 61131 library within an IEC 61499 network.

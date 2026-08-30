@@ -3,6 +3,7 @@
 ![Uebung_221b_network](./Uebung_221b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen kombinierten Vor-/Rückwärtszähler nach IEC 61131-3 (Typ `FB_CTUD_DINT`) und gibt den aktuellen Zählerstand sowie die Zählerstatus (Überlauf/Unterlauf) über digitale Ausgänge und eine Terminalausgabe (PHYS) aus. Der Zähler kann über vier digitale Eingänge gesteuert werden: Vorwärtszählen (CU), Rückwärtszählen (CD), Rücksetzen (R) und Laden des Startwertes (LD).

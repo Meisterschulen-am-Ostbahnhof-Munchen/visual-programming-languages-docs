@@ -72,7 +72,7 @@ Da der FB das Verhalten über einen internen Baustein realisiert, ergibt sich ke
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | Einfaches D‑Flip‑Flop (z. B. `E_D_FF`) | Latch ohne Hysterese – jede Änderung am Eingang wird sofort übernommen. |
 | D‑Flip‑Flop mit Totband (`E_D_FF_TOTBAND`) | Hat ein Totband, das Änderungen blockiert, solange der Wert innerhalb des Bandes bleibt. |
 | **ALR_D_FF_HYS** | Hysterese wird nur in einer Richtung wirksam (Schwellwertverhalten), typisch zur Vermeidung von Flattern. |

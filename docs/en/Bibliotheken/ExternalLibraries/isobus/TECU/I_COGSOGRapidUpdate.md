@@ -6,6 +6,7 @@
 
 The function block `I_COGSOGRapidUpdate` implements the processing of the NMEA 2000 Parameter Group Number (PGN) 129026 "COG & SOG, Rapid Update". This block is used to receive and provide navigation data, specifically the current course over ground (COG) and speed over ground (SOG) at a high update rate. It is designed for use in maritime or mobile machinery control systems based on the ISOBUS standard.
 ![I_COGSOGRapidUpdate](I_COGSOGRapidUpdate.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -42,6 +43,7 @@ This function block has no adapter interfaces.
 The block acts as a passive receiver for the NMEA 2000 PGN 129026. After initialization via `INIT` with `QI=TRUE`, it waits for incoming data frames. Upon receiving a valid frame, the contained data (COG, SOG, reference, SID) is decoded and made available via the `IND` output along with the associated data values. Simultaneously, `Q_timeout` is set to `FALSE`. If no new data frame occurs within a configured time window, a `TIMEOUT` event is generated, and `Q_timeout` is set to `TRUE`. The `STATUS` output can be used for diagnostic purposes.
 
 STATUS`
+
 ## Technical Features
 
 - **NMEA 2000 Compliance**: Implements the specification for PGN 129026 exactly.
@@ -60,7 +62,7 @@ STATUS`
 - **Maritime Navigation**: Displays current heading and speed on a multifunction display (MFD).
 - **Autonomous Control**: Provides basic navigation data for autopilots or routing algorithms of construction machinery.
 - **Data Logging**: Logs vehicle movement data with high temporal resolution.
-- * **Sensor Fusion**: Combining COG/SOG data with other position and motion sensors (e.g., GNSS, gyroscope) to improve overall accuracy.
+- - **Sensor Fusion**: Combining COG/SOG data with other position and motion sensors (e.g., GNSS, gyroscope) to improve overall accuracy.
 
 ## ⚖️ Comparison with Similar Components
 

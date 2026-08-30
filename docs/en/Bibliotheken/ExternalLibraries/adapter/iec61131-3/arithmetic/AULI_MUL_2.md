@@ -5,6 +5,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AULI_MUL_2` is used to perform an arithmetic multiplication of two values. It is a generic function block (`GEN_AULI_MUL`) whose interfaces are implemented entirely via adapters of type `AULI` (unidirectional). This allows for clean encapsulation of data and events and reduces the wiring effort within the 4diac IDE.
@@ -58,6 +59,7 @@ The result and the corresponding update event are then output via the output ada
 - **Generic Function Block:** The type is declared as `GEN_AULI_MUL`, which allows for flexible reusability for various numeric data types, provided they are supported by the adapter type.
 - **Adapter Encapsulation:** By using unidirectional adapters (`AULI`), data and the associated trigger event are bundled in a single connection. This prevents "spaghetti code" and loose event-data pairs in the function plan.
 - **Package Membership:** The function block is organized in the `adapter::iec61131::arithmetic` namespace.
+
 - ---
 
 ## State Overview

@@ -3,6 +3,7 @@
 ![FB_TP_LTIME](FB_TP_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FB_TP_LTIME` ist die `LTIME`-Variante (64-Bit-Zeitdauer, Nanosekunden-Auflösung) des Standard-Timer-Bausteins `FB_TP` (Impuls). Er verhält sich funktional identisch zu `FB_TP`, verwendet für `PT`/`ET` jedoch den Datentyp `LTIME` statt `TIME`.

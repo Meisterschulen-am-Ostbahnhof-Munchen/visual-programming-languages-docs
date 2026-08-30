@@ -3,6 +3,7 @@
 ![Uebung_023b_AX2_network](./Uebung_023b_AX2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **mirror sequence** for two double-acting cylinders (cylinder 1 and cylinder 2) using AX-SR modules (unidirectional adapters).
@@ -18,7 +19,7 @@ The SubAppType does not have its own input/output interfaces but communicates ex
 ## Function Blocks Used (FBs)
 
 | Block Name | Type | Description |
-|--------------|-----|--------------|
+| -------------- | ----- | -------------- |
 | SoftKey_UP_F1 | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F1 – triggered when **key is released** (SK_RELEASED) |
 | SoftKey_F2_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F2 – triggered when **key is pressed** (SK_PRESSED) |
 | SoftKey_F3_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F3 – triggered when **key is pressed** (SK_PRESSED) |
@@ -56,10 +57,12 @@ The control system is divided into two independent cycles:
 ### Cylinder Extension
 
 1. **Extend Cylinder 1**
+
 - Release softkey **F1** → The event at the `IND` output of `SoftKey_UP_F1` is forwarded to the `S` input of `AX_SR_Ausfahren_Cyl_1`.
 - Press softkey **F2** → The event at `SoftKey_F2_DOWN.IND` is forwarded to the `R` input of `AX_SR_Ausfahren_Cyl_1`.
 - The state `Q` of `AX_SR_Ausfahren_Cyl_1` is passed via the adapter to the OUT input of `DigitalOutput_Q1` → **Output Q1** switches.
-2. **Extend cylinder 2**
+1. **Extend cylinder 2**
+
 - Press softkey **F2** → The event from `SoftKey_F2_DOWN.IND` is routed to the `S` input of `AX_SR_Ausfahren_Cyl_2`.
 - Press softkey **F3** → The event from `SoftKey_F3_DOWN.IND` is routed to the `R` input of `AX_SR_Ausfahren_Cyl_2`.
 - The state `Q` from `AX_SR_Ausfahren_Cyl_2` is passed to `DigitalOutput_Q2` → **Output Q2** switches.
@@ -67,10 +70,12 @@ The control system is divided into two independent cycles:
 ### Retracting the Cylinders
 
 1. **Retract Cylinder 1**
+
 - Press softkey **F8** → The event from `SoftKey_F8_DOWN.IND` is passed to the `S` input of `AX_SR_Einfahren_Cyl_1`.
 - Press softkey **F9** → The event from `SoftKey_F9_DOWN.IND` is passed to the `R` input of `AX_SR_Einfahren_Cyl_1`.
 - The state `Q` from `AX_SR_Einfahren_Cyl_1` is passed to `DigitalOutput_Q4` → **Output Q4** switches.
-2. **Retract cylinder 2**
+1. **Retract cylinder 2**
+
 - Press softkey **F7** → The event from `SoftKey_F7_UP.IND` is forwarded to the `S` input of `AX_SR_Einfahren_Cyl_2`.
 - Press softkey **F8** → The event from `SoftKey_F8_DOWN.IND` is forwarded to the `R` input of `AX_SR_Einfahren_Cyl_2`.
 - The state `Q` from `AX_SR_Einfahren_Cyl_2` is passed to `DigitalOutput_Q3` → **Output Q3** switches.

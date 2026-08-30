@@ -4,6 +4,7 @@
 ![sequence_T_08_ecc](./sequence_T_08_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_T_08` is a time-controlled sequencer with eight outputs. It implements a fixed sequence of states, with the transition between individual states controlled by adjustable time delays. This block is designed for applications where process steps or machine states need to be activated sequentially for a defined duration, such as in packaging machines, conveyor systems, or washing systems.
@@ -25,6 +26,7 @@ The function block `sequence_T_08` is a time-controlled sequencer with eight out
 
 - `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the dwell time for each state. This value determines how long the function block remains in the respective state before the automatic transition to the next state occurs. The default value, `NO_TIME`, disables the timed transition, so the function block remains in the state until `RESET` occurs.
 - `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the dwell time for each state.
+
 ### **Data Outputs**
 
 - `STATE_NR` (Type `SINT`): Outputs the current state number. `0` corresponds to state `START`, `1` to `8` correspond to the active states `State_01` to `State_08`.

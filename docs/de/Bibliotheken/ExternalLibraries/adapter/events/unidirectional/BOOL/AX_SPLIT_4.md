@@ -3,6 +3,7 @@
 <img width="705" height="331" alt="image" src="https://github.com/user-attachments/assets/66b5a8a2-0227-4af4-8d00-17e48bfbe98c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SPLIT_4 Funktionsblock ist ein generischer Baustein, der einen AX-Adapter-Eingang auf vier separate AX-Adapter-Ausgänge aufteilt. Der Baustein dient als Verteiler für unidirektionale AX-Adapter und ermöglicht die Weitergabe von Daten und Ereignissen an mehrere Empfänger.

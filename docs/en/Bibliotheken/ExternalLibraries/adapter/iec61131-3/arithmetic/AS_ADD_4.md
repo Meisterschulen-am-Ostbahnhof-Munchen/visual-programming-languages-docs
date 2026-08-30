@@ -5,6 +5,7 @@
 *(Image of function block not available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_ADD_4` is a generic function block (FB) designed to perform an arithmetic addition of four input values. The unique feature of this block lies in the use of unidirectional adapters (`AS`) for the inputs and outputs, enabling structured and clean encapsulation of data and associated events in IEC 61499 applications.
@@ -56,6 +57,7 @@ The calculation is typically triggered as soon as a corresponding update event a
 
 - **Generic Nature:** The function block is declared as a generic function block (`GEN_AS_ADD`). This allows for flexible handling of different data types (e.g., `INT`, `REAL`, `DINT`), depending on how the underlying adapter types are defined.
 - **Adapter Coupling:** By using unidirectional adapters, the risk of incorrect pin wiring in the 4diac IDE is reduced, as data and events are transmitted together in a single connection.
+
 - ---
 
 ## State Overview

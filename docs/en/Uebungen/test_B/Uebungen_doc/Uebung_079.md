@@ -1,8 +1,9 @@
 # Exercise_079: All TECU Function Blocks
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_079`. This is a comprehensive exercise that introduces all available function blocks for acquiring tractor information.
+This article describes the logiBUS® exercise `Uebung_079`. This is a comprehensive exercise that introduces all available function blocks for acquiring tractor information
 ----
+
 ## Objective of the Exercise
 
 To learn the entire range of TECU interface function blocks. An ISOBUS tractor reports a variety of physical values via the CAN bus, which can be used directly as function blocks in 4diac.

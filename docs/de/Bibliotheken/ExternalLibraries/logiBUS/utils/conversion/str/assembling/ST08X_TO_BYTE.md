@@ -5,6 +5,7 @@
 ![ST08X_TO_BYTE](./ST08X_TO_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ST08X_TO_BYTE` dient der Konvertierung einer speziellen Datenstruktur, die acht einzelne boolesche Werte (BOOL) enthält, in einen einzigen Byte-Wert (BYTE). Diese Operation ist nützlich, um kompakte digitale Signale für die Übertragung oder Speicherung zu bündeln oder um sie mit Systemen zu verbinden, die Daten im Byte-Format erwarten.

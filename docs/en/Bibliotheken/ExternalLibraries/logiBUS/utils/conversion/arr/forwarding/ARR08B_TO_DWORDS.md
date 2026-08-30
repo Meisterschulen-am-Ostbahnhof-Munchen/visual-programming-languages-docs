@@ -4,6 +4,7 @@ This function block converts an 8-byte array into two 32-bit data words (DWORDs)
 ![ARR08B_TO_DWORDS](./ARR08B_TO_DWORDS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ARR08B_TO_DWORDS** is a pure conversion function block that creates two separate DWORD values from an incoming 8-byte array. The conversion is performed byte by byte, with the first four bytes assigned to the first output (OUT_00) and the last four bytes to the second output (OUT_01). The function block is triggered by an event (REQ) and outputs a confirmation event (CNF) after the conversion is complete.
@@ -31,7 +32,7 @@ The **ARR08B_TO_DWORDS** is a pure conversion function block that creates two se
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-|---------|----------|--------------|
+| --------- | ---------- | -------------- |
 | **OUT_00** | DWORD | First DWORD (bytes 0–3 of the array). |
 | **OUT_01** | DWORD | Second DWORD (bytes 4–7 of the array). |
 
@@ -77,7 +78,7 @@ The function block has no internal state machine. It operates event-driven and i
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **BYTE_TO_DWORD** | Converts a single 4-byte array into a DWORD. | Requires separate calls for each 4-byte segment. |
 | **ARR08B_TO_DWORDS** | Converts an 8-byte array into two DWORDs at once. | Integrated splitting in a single step reduces the number of calls and code. |
 

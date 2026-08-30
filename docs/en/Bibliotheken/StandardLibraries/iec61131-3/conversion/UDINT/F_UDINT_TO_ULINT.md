@@ -6,6 +6,7 @@
 
 The function block `F_UDINT_TO_ULINT` converts a 32-bit unsigned integer (UDINT) value to a 64-bit unsigned integer (ULINT). This block is particularly useful when exchanging data between systems or components that use different integer sizes.
 ![F_UDINT_TO_ULINT](F_UDINT_TO_ULINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,6 +38,7 @@ The algorithm is implemented as follows:
 ALGORITHM REQ
 OUT := IN;
 END_ALGORITHM
+
 ## Technical Features
 
 - **Lossless Conversion**: Since ULINT can represent all values of UDINT, there is no data loss.

@@ -3,9 +3,11 @@
 ![ASSEMBLE_AD_FROM_AB](./ASSEMBLE_AD_FROM_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AD_FROM_AB** is used to combine four individual byte values, received via unidirectional **AB** adapters (bytes), into a 32-bit **DWORD** value and output it via a unidirectional **AD** adapter. The bytes are combined in the order BYTE_00 (least significant byte) to BYTE_03 (most significant byte). The function block uses an internal combiner and an edge-triggered flip-flop to update the output only after the combination is complete.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ There is no direct data output. The merged DWORD value is output via the **Plug 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (least significant byte) |
 | BYTE_01 | `adapter::types::unidirectional::AB` | Socket | Byte 1 |
 | BYTE_02 | `adapter::types::unidirectional::AB` | Socket | Byte 2 |

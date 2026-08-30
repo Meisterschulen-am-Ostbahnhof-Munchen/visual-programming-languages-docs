@@ -3,9 +3,11 @@
 ![AUI_TO_AR](./AUI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUI_TO_AR** function block is a composite component that converts an AUI adapter (UINT) into an AR adapter (REAL). It enables the seamless integration of an unsigned integer signal into systems that expect a REAL value by passing the event and data value through one-to-one.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ Data outputs are provided via the **AR_OUT** adapter:
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|-----|-----------|--------------|
+| ------------- | ----- | ----------- | -------------- |
 | **AUI_IN** | `adapter::types::unidirectional::AUI` | Input (Socket) | Provides a UINT signal and an associated event. |
 | **AR_OUT** | `adapter::types::unidirectional::AR` | Output (Plug) | Outputs the converted REAL signal and an event. |
 
@@ -67,7 +69,7 @@ Since the function block is implemented as a pure interconnection network withou
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **AUI_TO_AR** | Adapter switching UINT → REAL | Pass-through only; no type conversion, expects compatible data. |
 | **AR_TO_AUI** | Adapter switching REAL → UINT | Reverse direction, also pass-through only. |
 | **CONV_UINT_TO_REAL** | Type conversion from UINT to REAL | Performs actual conversion, but requires direct data inputs/outputs instead of an adapter. |

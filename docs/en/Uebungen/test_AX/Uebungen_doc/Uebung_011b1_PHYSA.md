@@ -3,20 +3,23 @@
 ![Uebung_011b1_PHYSA_network](./Uebung_011b1_PHYSA_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of physical measured values (e.g., voltage, current, speed) using an arithmetic operation. Two input values from defined physical sources are combined using an addition block, and the result is passed to a physical output. The focus is on the correct wiring of the adapter interfaces between the function blocks (FBs) for signal coupling with real I/O channels.
+
 ## Function Blocks (FBs) Used
 
 The exercise consists of four directly instantiated function blocks. No further sub-blocks (SubApps) are included.
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | `NumericValue_PHYSA_I3` | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Reads the physical value from the hardware interface `InputNumber_I3` and provides it as a physical quantity (rPhys). |
 | `NumericValue_PHYSA_I4` | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Same function as above, but for the interface `InputNumber_I4`. |
 | `AR_ADD_2` | `adapter::iec61131::arithmetic::AR_ADD_2` | Performs an addition of two physical values (IN1 + IN2) and outputs the result as OUT. |
 | `Q_NumericValue_PHYSA` | `isobus::UT::Q::Q_NumericValue_PHYSA` | Writes the passed physical value to the hardware interface `OutputNumber_N3`.
 ...
+
 ### Parameters of Individual Instances
 
 **NumericValue_PHYSA_I3**
@@ -43,11 +46,11 @@ The network connects the function blocks exclusively via adapter channels (type 
 
 The function blocks `NumericValue_PHYSA_I3` and `NumericValue_PHYSA_I4` continuously read the actual physical values of their respective hardware channels (`InputNumber_I3`, `InputNumber_I4`) and make them available at their adapter output `rPhys`.
 
-2. **Arithmetic Operation**:
+1. **Arithmetic Operation**:
 
 The function block `AR_ADD_2` receives the two physical values via the adapter inputs `IN1` (from `NumericValue_PHYSA_I3.rPhys`) and `IN2` (from `NumericValue_PHYSA_I4.rPhys`) and adds them together. The result is output at the adapter output `OUT`.
 
-3. **Output**:
+1. **Output**:
 
 The adapter output `AR_ADD_2.OUT` is connected to the adapter input `Q_NumericValue_PHYSA.rPhys`. The output function block takes this value and writes it to the hardware interface `OutputNumber_N3`.
 

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010a4_AX`.
+
 ## 🎧 Podcast
 
 ![Uebung_010a4_AX_network](./Uebung_010a4_AX_network.svg)

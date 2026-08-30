@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AS` | IN | Socket | Eingehender AS-Signalpfad (Eingang) |
 | `adapter::types::unidirectional::AS` | OUT1 | Plug | Erster Ausgang (identisch zu IN) |
 | `adapter::types::unidirectional::AS` | OUT2 | Plug | Zweiter Ausgang (identisch zu IN) |

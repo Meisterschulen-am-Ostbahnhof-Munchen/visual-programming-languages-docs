@@ -6,6 +6,7 @@
 
 The function block `XOR_2_BOOL` is a standard function block for calculating the logical exclusive OR (XOR) operation of two Boolean input signals. It belongs to the category of bitwise operators and is implemented as a generic function block used in control applications according to IEC 61131-3. The block waits for an execution request, calculates the result, and returns it along with an acknowledgment.
 ![XOR_2_BOOL](XOR_2_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,7 +37,7 @@ The `XOR_2_BOOL` block operates in an event-driven manner. Upon the arrival of t
 The truth table of the operation is:
 
 | IN1 | IN2 | OUT |
-|-----|-----|-----|
+| ----- | ----- | ----- |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
@@ -58,7 +59,8 @@ The function block does not have an internal state in the sense of a memory. Its
 - **Parity Check**: Simple check for an odd number of `TRUE` signals with two inputs.
 - **Control Logic**: Implementation of special branches in sequential control systems where a decision must be made when the inputs are different.
 - **Safety-Critical Circuits**: Generates signals that are only active when two monitored variables contradict each other (e.g., in emergency stop circuits).
-*
+-
+
 ## ⚖️ Comparison with similar building blocks
 
 Compared to other basic logic function blocks like `AND_2_BOOL` or `OR_2_BOOL`, `XOR_2_BOOL` is the only one that returns a `TRUE` result when the inputs are *different*. Blocks like `NOT` only invert a single input. `XOR_2_BOOL` can be considered a special case of an inequality comparison (`NE_BOOL`) for two Boolean values. See: [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)

@@ -4,6 +4,7 @@ No image available.
 ![DataPanel_MI_IW_DutyCycle](./DataPanel_MI_IW_DutyCycle.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `DataPanel_MI_IW_DutyCycle` is a service interface function block (FB) for acquiring and processing frequency input signals (type 7A/8A) in the hardware system. It calculates the duty cycle from the incoming frequency signal and outputs it as a percentage. The block supports initial parameterization as well as event-driven outputs upon significant value changes or time-controlled queries.
@@ -13,14 +14,14 @@ The function block `DataPanel_MI_IW_DutyCycle` is a service interface function b
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-|----------|-----|----------------|-----------|
+| ---------- | ----- | ---------------- | ----------- |
 | `INIT` | EInit | QI, PARAMS, u8SAMember, Input, FreqDelta, TimeDelta | Service Initialization |
 | `REQ` | Event | QI | Service Request |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Comment |
-|----------|-----|---------------|------------|
+| ---------- | ----- | --------------- | ------------ |
 | `INITO` | EInit | QO, STATUS | Initialization Acknowledgement |
 | `CNF` | Event | QO, STATUS, IN | Requested Action Acknowledgement |
 | `IND` | Event | QO, STATUS, IN | Resource indication (upon value change/timer) |
@@ -28,7 +29,7 @@ The function block `DataPanel_MI_IW_DutyCycle` is a service interface function b
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `QI` | BOOL | Event input qualifier |
 | `PARAMS` | STRING | Service parameter (e.g., configuration string) |
 | `u8SAMember` | USINT | Node address (SA 224..239, default: MI::MI_00) |
@@ -39,7 +40,7 @@ The function block `DataPanel_MI_IW_DutyCycle` is a service interface function b
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `QO` | BOOL | Event output qualifier |
 | `STATUS` | STRING | Service status (failure/success message) |
 | `IN` | WORD | Measured duty cycle in percent (0..100) |

@@ -3,6 +3,7 @@
 ![Q_LockUnlockMask](https://user-images.githubusercontent.com/116869307/214148004-903a6233-7e3e-43eb-a611-03d82d451bf4.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_LockUnlockMask** is a standards-compliant function block for controlling the locking state of masks in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.46) specification for VT systems from version 4 onwards.
@@ -45,13 +46,16 @@ ID_NULL (65535) is not a valid command target — the command is answered by the
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` without parameters
 - `INITO` confirms operational readiness
-2. **Mask Locking**:
+1. **Mask Locking**:
+
 - `REQ` with lock command, mask ID, and timeout
 - Controls the screen refresh of the mask
 - `CNF` provides operating status and previous values
-3. **Timeout Behavior**:
+1. **Timeout Behavior**:
+
 - Automatic unlocking after expiration
 
 ## Technical Features
@@ -64,14 +68,14 @@ ID_NULL (65535) is not a valid command target — the command is answered by the
 ## Command Reference
 
 | u8LockCmd | Function |
-|-----------|------------------------------|
+| ----------- | ------------------------------ |
 | 0 | Unlock mask |
 | 1 | Lock mask |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful execution |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -89,7 +93,7 @@ ID_NULL (65535) is not a valid command target — the command is answered by the
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_LockUnlockMask | VtMaskControl | VtScreenLock |
----------------|------------------|----------------|--------------|
+--------------- | ------------------ | ---------------- | -------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Timeout | ✔ | ✖ | ✔ |
 | Mask-Specific | ✔ | ✔ | ✖ |

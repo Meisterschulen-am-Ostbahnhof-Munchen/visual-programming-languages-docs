@@ -3,6 +3,7 @@
 ![AUI_SUB_2](./AUI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_SUB_2` is used to perform arithmetic subtraction within an IEC 61499 application. It is a generic function block (FB) specifically designed for interaction with adapter interfaces. It allows subtraction operations to be implemented modularly and in a structured manner via standardized adapter connections, instead of using discrete individual wires for data and events.
@@ -70,7 +71,7 @@ The function block itself does not manage a complex internal state (stateless in
 
 **Encapsulation:** 2. **Calculation:** After an event occurs, the data values are read and the subtraction is performed.
 
-3. **Output:** The new difference value is applied to `OUT`, and the adapter's output event is triggered.
+1. **Output:** The new difference value is applied to `OUT`, and the adapter's output event is triggered.
 
 ---
 
@@ -79,6 +80,7 @@ The function block itself does not manage a complex internal state (stateless in
 - **Differential Pressure/Differential Temperature Measurement:** Calculation of the deviation between two analog sensors whose values are already available as structured adapter signals.
 - **Setpoint-Actual Value Comparison:** Subtraction of an actual value from a setpoint to determine the control deviation in control loops.
 - **Zero Point Compensation (Offset Calculation):** Subtraction of a static or dynamic offset value (via `IN2`) from a raw signal (via `IN1`).
+
 - ---
 
 ## Comparison with Similar Building Blocks

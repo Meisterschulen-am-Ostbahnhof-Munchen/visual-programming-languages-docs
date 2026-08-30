@@ -1,8 +1,9 @@
 # Exercise_002a7_AX: DigitalInput_I1-3 with XOR to DigitalOutput_Q1, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a7_AX`. In this exercise, an exclusive OR (XOR) operation with three inputs is implemented. The output is activated when an odd number of inputs are active.
+This article describes the logiBUS® exercise `Uebung_002a7_AX`. In this exercise, an exclusive OR (XOR) operation with three inputs is implemented. The output is activated when an odd number of inputs are active
 ----
+
 ## Objective of the Exercise
 
 ![Uebung_002a7_AX_network](./Uebung_002a7_AX_network.svg)

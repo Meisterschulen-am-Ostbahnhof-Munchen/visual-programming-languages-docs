@@ -4,9 +4,11 @@
 ![ARR08X_TO_BYTE](./ARR08X_TO_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ARR08X_TO_BYTE` converts an array of eight Boolean values (`BOOL`) into a single byte value (`BYTE`). Each bit in the resulting byte corresponds to an element of the input array. This operation is useful for bundling multiple binary signals (e.g., switch states or error flags) to save space and preparing them for further processing or communication.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -39,6 +41,7 @@ ARR08X_TO_BYTE.0 := IN[0];
 ARR08X_TO_BYTE.1 := IN[1];
 ...
 ARR08X_TO_BYTE.7 := IN[7];
+
 ## Technical Features
 
 - **Hard-wired size:** This block is specifically designed for converting exactly 8 Boolean values. Different blocks are required for other array sizes.

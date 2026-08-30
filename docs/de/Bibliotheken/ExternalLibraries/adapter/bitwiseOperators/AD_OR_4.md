@@ -3,6 +3,7 @@
 ![AD_OR_4](./AD_OR_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_OR_4** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 4 Eingangswerten vom Typ `DWORD` (32-Bit-Bitmuster (Doppelwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

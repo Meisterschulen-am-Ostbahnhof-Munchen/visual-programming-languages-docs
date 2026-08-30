@@ -3,9 +3,11 @@
 ![AL_SPLIT_6](./AL_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_6** is used to split a single unidirectional AL adapter input (socket) into six identical AL adapter outputs (plugs). It enables simple signal distribution within a 4diac application without requiring additional logic or a state machine.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Identifier | Type | Description |
-|----------|------------|-------------------------------|---------------------------------------------------|
+| ---------- | ------------ | ------------------------------- | --------------------------------------------------- |
 | In | IN | adapter::types::unidirectional::AL | Unidirectional AL adapter as input signal. |
 | Out | OUT1 | adapter::types::unidirectional::AL | First output channel (identical to IN). |
 | Out | OUT2 | adapter::types::unidirectional::AL | Second output channel. |

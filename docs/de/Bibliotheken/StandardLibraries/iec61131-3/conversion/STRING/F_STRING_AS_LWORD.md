@@ -3,6 +3,7 @@
 <img width="1478" height="213" alt="F_STRING_AS_LWORD" src="https://github.com/user-attachments/assets/e11ef5e8-2080-4d17-b504-b066c795a15d" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_STRING_AS_LWORD` dient der Konvertierung eines `STRING`-Werts in einen `LWORD`-Wert. Er ist Teil des `iec61131::conversion`-Pakets und ermöglicht die einfache Umwandlung zwischen diesen beiden Datentypen.

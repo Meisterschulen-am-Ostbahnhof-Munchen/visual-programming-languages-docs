@@ -3,9 +3,11 @@
 ![A2X_SPLIT_5](./A2X_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **A2X_SPLIT_5** is used to split an incoming A2X adapter into five identical A2X outputs. It is provided as a generic block that can be configured via attributes.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|----------------|--------------------------------------|
+| ---------- | ------ | ---------------- | -------------------------------------- |
 | Socket | IN | A2X (unidirectional) | Input adapter (split) |
 | Plug | OUT1 | A2X (unidirectional) | First output adapter |
 | Plug | OUT2 | A2X (unidirectional) | Second output adapter |

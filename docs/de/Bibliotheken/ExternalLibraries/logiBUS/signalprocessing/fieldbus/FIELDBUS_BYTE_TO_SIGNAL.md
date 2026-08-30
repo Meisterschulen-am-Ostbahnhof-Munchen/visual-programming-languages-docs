@@ -3,6 +3,7 @@
 ![FIELDBUS_BYTE_TO_SIGNAL](./FIELDBUS_BYTE_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_BYTE_TO_SIGNAL** dient der einfachen Validierung eines BYTE-Signals aus einem Feldbus. Er gibt den Eingangswert nur dann unverändert an den Ausgang weiter, wenn dieser innerhalb eines definierten gültigen Bereichs liegt. Das Ergebnis der Validierung wird über einen separaten booleschen Ausgang signalisiert.

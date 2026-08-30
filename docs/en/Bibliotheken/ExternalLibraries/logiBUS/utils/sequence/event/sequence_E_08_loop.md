@@ -4,6 +4,7 @@
 ![sequence_E_08_loop_ecc](./sequence_E_08_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_08_loop` is a sequencer with eight output states that operates in a loop. It is used to control sequential processes where each step is triggered by an external event. The block is implemented as a Basic Function Block (BasicFB) according to IEC 61499 and is suitable for applications that require a clear, event-driven state machine.

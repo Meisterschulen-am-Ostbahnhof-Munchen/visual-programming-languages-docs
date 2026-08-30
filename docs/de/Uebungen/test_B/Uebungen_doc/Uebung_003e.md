@@ -3,6 +3,7 @@
 ![Uebung_003e_network](./Uebung_003e_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung werden vier digitale Eingangssignale (I1–I4) direkt auf vier digitale Ausgänge (Q1–Q4) durchgeschaltet. Dazwischen liegt jeweils ein Bypass-Baustein, der eine zusätzliche Funktionalität bietet: Die Bypass-Blöcke sind kaskadenartig miteinander verbunden und führen über ein gemeinsames Bypass-Ventil (Ausgang Q8). Die Schaltung realisiert eine einfache Durchschleifung mit der Möglichkeit, den Signalfluss durch ein Druckumlaufventil zu beeinflussen.

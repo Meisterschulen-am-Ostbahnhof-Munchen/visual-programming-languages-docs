@@ -87,7 +87,7 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 **Zusammenfassung der Verbindungen (Adapter‑ und Ereignis‑Connections):**
 
 | Quelle | Ziel | Art |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `Input_CD.IN` | `AULI_FB_CTD.CD` | Adapter |
 | `Input_LD.IN` | `AULI_FB_CTD.LD` | Adapter |
 | `AULI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter |

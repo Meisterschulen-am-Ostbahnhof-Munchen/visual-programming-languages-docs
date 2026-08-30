@@ -64,7 +64,7 @@ Der Baustein besitzt **keine eigene Zustandsmaschine**. Er arbeitet transparent:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | AUS_TO_ALR | Typische Konvertierungs‑FBs (z. B. USINT_TO_LREAL) |
-|---------|------------|-----------------------------------------------------|
+| --------- | ------------ | ----------------------------------------------------- |
 | Eingang / Ausgang | Adapter‑Schnittstellen | Einzelne Daten‑Eingänge/-Ausgänge |
 | Ereignisverarbeitung | Durchleitung über Adapter | Eigene Ereignis‑E/K‑Paare |
 | Implementierung | Composite (nur Verbindungen) | Ausführbare Algorithmen |

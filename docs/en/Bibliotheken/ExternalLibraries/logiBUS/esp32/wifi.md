@@ -3,9 +3,11 @@
 ![wifi](./wifi.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The "wifi" function block is a Service Interface Function Block (SIFB) for controlling a WLAN connection. It provides the INIT, START, and STOP events for initializing, starting, and stopping the WLAN. The connection status is returned as a string via the STATUS output. The block is designed for use in automation systems that require a wireless network connection.
+
 ## Interface Structure
 
 ### **Event Inputs**

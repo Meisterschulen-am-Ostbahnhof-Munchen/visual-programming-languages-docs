@@ -3,6 +3,7 @@
 ![Uebung_221b_ALR_network](./Uebung_221b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärts-/Rückwärtszähler (Up/Down Counter) nach IEC 61131‑3 (Typ `ADI_FB_CTUD`). Der Zähler wird über digitale Eingänge gesteuert und gibt den aktuellen Zählerstand sowohl über digitale Ausgänge (als Grenzwert‑Signale) als auch über eine Terminal‑Ausgabe (physikalischer Wert) aus. Der Zählbereich arbeitet mit 32‑Bit Ganzzahlen (DINT), wobei auch negative Werte möglich sind.
@@ -41,7 +42,7 @@ Die Übung besteht aus einer flachen Netzwerkstruktur ohne weitere Sub‑Applika
 ### Parameterdetails ausgewählter Bausteine
 
 | Baustein | Parameter | Wert |
-|----------|-----------|------|
+| ---------- | ----------- | ------ |
 | `ADI_DINT_TO_DI` | `OUT` | `DINT#5` |
 | `Input_CU` | `QI` | `TRUE` |
 | | `Input` | `Input_I1` |

@@ -3,6 +3,7 @@
 ![SET_DATE_AND_TIME](./SET_DATE_AND_TIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock SET_DATE_AND_TIME dient dazu, einen eingehenden DATE_AND_TIME-Wert auf eine Zielvariable zu schreiben. Die Zielvariable wird als InOut-Parameter übergeben, sodass sie sowohl gelesen als auch beschrieben werden kann. Der Baustein realisiert eine einfache Zuweisungsoperation, die durch ein Ereignis ausgelöst wird.

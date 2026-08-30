@@ -3,6 +3,7 @@
 ![AUS_D_FF](./AUS_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AUS_D_FF** realisiert ein Data Latch (D‑Flip‑Flop) für den Datentyp `AUS`. Er speichert bei einem eingehenden Ereignis den anliegenden Datenwert und gibt diesen gespeicherten Wert über einen Adapter‑Ausgang aus. Die Kommunikation erfolgt ausschließlich über unidirektionale Adapter.

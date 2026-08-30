@@ -3,9 +3,11 @@
 ![IA_VDS](./IA_VDS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **IA_VDS** function block is an ISOBUS adapter for vehicle direction and speed according to ISO 11783-7 (PGN 65256). It encapsulates access to the corresponding CAN bus data and provides it as modern 4diac adapter interfaces. The block is initialized via an INIT event and subsequently provides continuous navigation speed, compass direction, altitude, and a timeout status.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,14 +31,14 @@ The **IA_VDS** function block is an ISOBUS adapter for vehicle direction and spe
 ### **Data Outputs**
 
 | Name | Type | Description |
-|--------|--------|--------------|
+| -------- | -------- | -------------- |
 | QO | BOOL | Event Output Qualifier (TRUE = Initialization OK). |
 | STATUS | STRING | Message text (e.g., error description or "Ready"). |
 
 ### **Adapter**
 
 | Adapter | Type | Description |
-|--------------|------|--------------|
+| -------------- | ------ | -------------- |
 | NAV_SPEED | AUI | Navigation-based vehicle speed (unidirectional, receiver). |
 | BEARING | AUI | Compass direction (unidirectional, receiver). |
 | ALTITUDE | AUI | Altitude above sea level (unidirectional, receiver). |

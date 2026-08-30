@@ -1,9 +1,11 @@
 # 📏 Standards and Norms
 
 In industrial automation, standards form the foundation for interoperability, safety, and efficiency. They ensure that systems from different manufacturers can work together and that software remains portable.
+
 ## IEC 61499: The Standard for Distributed Systems
 
 IEC 61499 is the central standard for this project. It extends the IEC 61131-3 model with a system-wide architecture for distributed control systems.
+
 ### Structure of the Standard
 
 The standard is divided into several parts, each covering different aspects:

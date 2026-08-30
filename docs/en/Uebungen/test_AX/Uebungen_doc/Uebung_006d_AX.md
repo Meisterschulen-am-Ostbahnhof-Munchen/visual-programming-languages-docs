@@ -1,8 +1,9 @@
-# Exercise_006d_AX: SR Flip-Flop with 2x IE and Double-Click.
+# Exercise_006d_AX: SR Flip-Flop with 2x IE and Double-Click
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_006d_AX`.
+This article describes the logiBUS® exercise `Uebung_006d_AX`
 ----
+
 ## Objective of the Exercise
 
 Combining input events and memory elements.

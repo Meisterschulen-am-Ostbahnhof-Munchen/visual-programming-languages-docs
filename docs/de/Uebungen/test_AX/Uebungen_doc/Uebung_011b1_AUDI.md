@@ -3,6 +3,7 @@
 ![Uebung_011b1_AUDI_network](./Uebung_011b1_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung von zwei numerischen ISOBUS-Eingangswerten und deren Addition mithilfe spezieller Adapterbausteine. Die beiden eingehenden Werte (ganze Zahlen) werden über einen `AD_TO_AUDI`-Adapter in einen „AUDI“‑kompatiblen Typ konvertiert, anschließend in einem Additionsbaustein (`AUDI_ADD_2`) aufsummiert und das Ergebnis über einen Ausgabebaustein (`Q_NumericValue_AUDI`) als ISOBUS-Ausgangsobjekt bereitgestellt.

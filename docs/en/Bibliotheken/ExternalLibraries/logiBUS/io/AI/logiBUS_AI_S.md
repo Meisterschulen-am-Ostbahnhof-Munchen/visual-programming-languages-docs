@@ -1,12 +1,15 @@
 # logiBUS_AI_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `logiBUS_AI_S` is a structured data type (struct) used to configure an analog input (AI) channel within the logiBUS library. It defines the basic parameter structure required to address a physical pin of a logiBUS hardware module for acquiring analog signals.
+
 ## Interface Structure
 
 This is a structured data type (struct), therefore it does not have event or adapter interfaces in the conventional sense of an executable function block. Its structure consists of a single data element.
+
 ### **Data Inputs**
 
 The structure itself contains the following data element, which serves as an input parameter for a configuring function block (e.g., `logiBUS_AI`):

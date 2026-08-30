@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_AX_SEL_AUDI` serves as a binary selector (selection switch) for unidirectional communication adapters. Based on the state of a control signal at a selector adapter, it allows the data and event stream between two alternative input adapters to be redirected to a single output adapter.
@@ -61,17 +62,17 @@ The internal behavior of the function block is implemented by a network of stand
 
 The signals received via the sockets (`IN0`, `IN1`, `G`) are first processed through edge- or level-triggered D flip-flops (`E_D_FF` and `E_D_FF_ANY`). This ensures that data values (`D1`) and events (`E1`) are processed synchronously.
 
-2. **Data Conversion**:
+1. **Data Conversion**:
 
 The synchronized data values from the two inputs are transferred to the selection block via two transfer blocks (`F_MOVE` with the data type `UDINT`).
 
-3. **Selection Control**:
+1. **Selection Control**:
 
 The function block `F_SEL` (IEC 61131-3 Selection) performs the actual logical switching:
 
 - If the control signal of the adapter `G` is `0` (`FALSE`), the value of `IN0` is selected.
 - If the control signal of the adapter `G` is `1` (`TRUE`), the value of `IN1` is selected.
-4. **Output**:
+1. **Output**:
 
 The selected result is transferred via another transfer block (`F_MOVE_OUT`) to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop generates the output event `OUT.E1` and makes the selected data value available to `OUT.D1`.
 
@@ -101,6 +102,7 @@ Since the function block is structured as a function block network, it does not 
 - **Setpoint Switching**: Switching between an automatic setpoint (e.g., from a PID controller at `IN1`) and a manual setpoint (e.g., from a visualization at `IN0`) via a selection signal at `G`.
 - **Sensor Redundancy**: Fail-safe switching between a primary sensor and a backup sensor in case of signal interference.
 - **Recipe Control**: Selection of different predefined parameter profiles during operation.
+
 - ---
 
 ## Comparison with Similar Function Blocks

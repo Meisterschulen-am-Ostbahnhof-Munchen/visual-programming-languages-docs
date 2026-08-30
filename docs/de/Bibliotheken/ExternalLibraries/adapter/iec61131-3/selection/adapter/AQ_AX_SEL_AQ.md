@@ -4,6 +4,7 @@
 ![AQ_AX_SEL_AQ](./AQ_AX_SEL_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AQ_AX_SEL_AQ` dient der binären Auswahl (Selektion) zwischen zwei analogen oder wertbasierten Eingangssignalen, die über Adapter bereitgestellt werden. Die Steuerung, welcher der beiden Eingänge an den Ausgang durchgeschaltet wird, erfolgt über einen Selektor-Adapter. Der Baustein kapselt die klassische Auswahl-Logik und bereitet sie für die ereignisgesteuerte Ausführung in IEC 61499-Umgebungen auf.

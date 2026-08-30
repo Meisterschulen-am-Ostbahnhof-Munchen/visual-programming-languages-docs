@@ -3,9 +3,11 @@
 ![AQ_TO_AB](./AQ_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AQ_TO_AB` converts an AQ adapter (Quarter Byte) to an AB adapter (BYTE). It enables the seamless connection of components using different adapter interfaces by passing the signals through unchanged. The block is implemented as a pure "pass-through" function block that does not manipulate any data.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The FB has no explicit top-level data outputs. Data transmission occurs via the 
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AQ` | IN | Input (Socket) | AQ adapter as input interface for quarter-byte data |
 | `adapter::types::unidirectional::AB` | OUT | Output (Plug) | AB adapter as output interface for byte data |
 

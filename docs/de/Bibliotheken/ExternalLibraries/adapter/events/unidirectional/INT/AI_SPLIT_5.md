@@ -3,6 +3,7 @@
 ![AI_SPLIT_5](./AI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_SPLIT_5** dient dazu, ein eingehendes analogen Signal (AI) auf fünf identische Ausgänge zu verteilen. Es handelt sich um einen generischen Baustein, der speziell für die Aufteilung eines Analogwerts in mehrere parallele Pfade ausgelegt ist. Die Anwendung erfolgt über unidirektionale Adapter vom Typ `AI`.

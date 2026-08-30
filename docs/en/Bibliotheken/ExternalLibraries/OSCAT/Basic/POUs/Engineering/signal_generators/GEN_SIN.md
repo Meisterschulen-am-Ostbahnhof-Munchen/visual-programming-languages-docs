@@ -1,4 +1,5 @@
 ![GEN_SIN](GEN_SIN.svg)
+
 # GEN_SIN
 
 this signal generator generates a sine wave output

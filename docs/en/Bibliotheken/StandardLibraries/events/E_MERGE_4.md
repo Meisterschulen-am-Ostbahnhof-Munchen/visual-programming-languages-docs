@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_MERGE_4` is a fundamental function block of the IEC 61499 standard that combines four event streams (`EI1` to `EI4`) into a single output (`EO`). This logical OR operation of events is essential for control logic in industrial automation systems.

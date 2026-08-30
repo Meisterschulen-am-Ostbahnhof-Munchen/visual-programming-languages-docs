@@ -1,6 +1,7 @@
 ![ALR](ALR.svg)
-#ALR (LREAL)
+# ALR (LREAL)
 unidirectional Adapter Interface for 1 Event and 1 Lreal
+
 # ALR (LREAL)
 
 ## Interface
@@ -11,9 +12,10 @@ unidirectional Adapter Interface for 1 Event and 1 Lreal
 | :--- | :--- | :--- |
 | E1 | Indication (or Request) | D1 |
 
-###Data
+### Data
 
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | LREAL | Indication (or Request) Data from Plug |
+
 ### Data

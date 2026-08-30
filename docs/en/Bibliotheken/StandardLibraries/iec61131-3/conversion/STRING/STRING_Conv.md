@@ -2,6 +2,7 @@
 
 Here you will find functions for converting the STRING data type.
 String Conversions ...
+
 ## 🛠️ Related exercises
 
 - [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)

@@ -3,6 +3,7 @@
 ![initval_AR](initval_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AR` ist der konfigurierbare Initialisierungsbaustein für den [AR](../AR.md)-Adapter (Datentyp `REAL`, 32-Bit-Gleitkommazahl): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AR`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

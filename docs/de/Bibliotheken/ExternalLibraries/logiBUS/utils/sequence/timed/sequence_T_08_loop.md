@@ -5,6 +5,7 @@
 ![sequence_T_08_loop_ecc](./sequence_T_08_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_T_08_loop` ist ein zeitgesteuerter Sequenzer mit acht Ausgangszuständen. Er realisiert eine zyklische Abfolge von Zuständen, wobei der Übergang zwischen den einzelnen Zuständen durch einstellbare Zeitverzögerungen gesteuert wird. Der Baustein ist für Anwendungen konzipiert, in denen Prozessschritte oder Maschinenzustände nacheinander für eine definierte Dauer aktiviert werden müssen, beispielsweise in Förderanlagen, Verpackungsmaschinen oder automatisierten Montageprozessen.

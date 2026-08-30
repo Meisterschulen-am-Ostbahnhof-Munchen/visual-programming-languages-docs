@@ -3,6 +3,7 @@
 ![AE_SPLIT_4](./AE_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AE_SPLIT_4** verteilt ein eingehendes Ereignis eines unidirektionalen **AE-Adapters** auf vier identische Ausgangsadapter. Er wird als generischer Baustein (Generic FB) ausgeführt und kann daher für beliebige Datentypen des Adapters verwendet werden. Die Verteilung erfolgt ohne Verzögerung oder Zustandsänderung – das ankommende Ereignis wird gleichzeitig an alle vier Ausgänge weitergeleitet.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | **IN** | `adapter::types::unidirectional::AE` | Empfängt ein unidirektionales Adapter-Ereignis (Ereignis + zugehörige Daten). |
 | Plug (Ausgang) | **OUT1** | `adapter::types::unidirectional::AE` | Erster Ausgang – erhält das gleiche Ereignis und dieselben Daten wie am Eingang. |
 | Plug (Ausgang) | **OUT2** | `adapter::types::unidirectional::AE` | Zweiter Ausgang. |

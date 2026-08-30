@@ -3,9 +3,11 @@
 ![logiBUS_PI_IDA](./logiBUS_PI_IDA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **logiBUS_PI_IDA** is a composite function block (FB) for processing double-word input data (DWORD). It serves as an interface between a logiBUS fieldbus and the control logic. The FB enables parameterizable monitoring of pulse and time changes at a digital input. By configuring pulse delta, time delta, and a rate limit, the signaling behavior can be precisely tailored to the application. The block initializes the internal sub-block `logiBUS_PI_ID` and provides its results via a unidirectional adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -24,7 +26,7 @@ The **logiBUS_PI_IDA** is a composite function block (FB) for processing double-
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-|------|-----|-------------|-----------|
+| ------ | ----- | ------------- | ----------- |
 | QI | BOOL | – | Event Input Qualifier (Enable/Disable) |
 | PARAMS | STRING | – | Service Parameters (e.g., bus address, channel configuration) |
 | Input | logiBUS::io::PI::logiBUS_PI_S | `Invalid` | Identifies the physical input (Input_I1..I8) |
@@ -35,7 +37,7 @@ The **logiBUS_PI_IDA** is a composite function block (FB) for processing double-
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | QO | BOOL | Event Output Qualifier – Status of the last processing |
 | STATUS | STRING | Service Status – Error or Diagnostic Message |
 
@@ -55,11 +57,12 @@ The function block (FB) operates as a composite, delegating all initialization a
 
 Upon arrival of `INIT`, the parameters `QI`, `PARAMS`, `Input`, `ImpulseDelta`, `TimeDelta`, and `TimeRateLimit` are forwarded to the internal FB. This FB configures the hardware input and starts monitoring. After successful initialization, `INITO` is output.
 
-2. **Processing (REQ):**
+1. **Processing (REQ):**
 
 An event `REQ` triggers a query of the input value. The internal function block checks whether the configured thresholds (pulse counter, time limit) have been reached or exceeded. If so, the events `IND` and/or `CNF` are sent to the downstream logic via the adapter `IN`.
 
-3. **Reporting Behavior:**
+1. **Reporting Behavior:**
+
 - **Pulse-Dependent:** If `ImpulseDelta > 0` occurs, an internal pulse counter is incremented after each change in the input signal. When the counter reaches the value of `ImpulseDelta`, an indication (`IND`) is triggered and the counter is reset.
 
 - **Time-dependent:** Additionally or alternatively, a periodic indication is generated after `TimeDelta` milliseconds.
@@ -100,7 +103,7 @@ Transitions are triggered by `INIT`, `REQ`, and internal errors. The internal fu
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-|----------|-------------|
+| ---------- | ------------- |
 | `logiBUS_PI` | Simpler input function block without pulse and time-delta filters; only raw value changes. |
 | `logiBUS_PI_ID` | Predecessor without composite structure and without adapter interface; direct event outputs. |
 | `logiBUS_PI_IDA` (this function block) | Additionally offers an **adapter** for flexible further processing and combines pulse, time, and rate logic in a composite. |

@@ -1,8 +1,9 @@
 # Exercise_004a5_AX: same as Exercise_004a4 but without E_SPLIT
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_004a5_AX`. Similar to `Uebung_004a3_AX` (Implicit Merge), this exercise demonstrates that an event split is often possible without an explicit function block.
+This article describes the logiBUS® exercise `Uebung_004a5_AX`. Similar to `Uebung_004a3_AX` (Implicit Merge), this exercise demonstrates that an event split is often possible without an explicit function block
 ----
+
 ## Objective of the Exercise
 
 Demonstration of the "fan-out" capability of event connections in 4diac. A source event can be connected to multiple target events.

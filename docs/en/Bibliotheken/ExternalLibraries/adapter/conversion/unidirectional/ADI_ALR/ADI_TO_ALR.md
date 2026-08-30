@@ -3,9 +3,11 @@
 ![ADI_TO_ALR](./ADI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ADI_TO_ALR** is a composite function block (FB) that converts an ADI adapter (data type DINT) into an ALR adapter (data type LREAL). It serves as a unidirectional converter between two standardized adapter interfaces and enables the seamless integration of integer values into systems that require floating-point numbers.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The converted value is output via the **ALR_OUT** adapter (see Adapter section).
 #### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|--------------------------------------------|----------|------------------------------------|
+| ------------- | -------------------------------------------- | ---------- | ------------------------------------ |
 | **ADI_IN** | `adapter::types::unidirectional::ADI` | Socket | Input: DINT value and event |
 | **ALR_OUT** | `adapter::types::unidirectional::ALR` | Plug | Output: LREAL Value and Event |
 
@@ -70,7 +72,7 @@ The block has **no state machine**. It is purely combinatorial (event-driven) an
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type Conversion | Event Behavior |
-|------------------------|----------------------|-----------------------------------------------------|
+| ------------------------ | ---------------------- | ----------------------------------------------------- |
 | **ADI_TO_ALR** | DINT → LREAL | Direct Pass-Through without Delay |
 | `INT_TO_REAL` (4diac) | INT → REAL | Standalone function block with its own event interface |
 | Individual converters | Any number of | Often with state machines or parameterization |

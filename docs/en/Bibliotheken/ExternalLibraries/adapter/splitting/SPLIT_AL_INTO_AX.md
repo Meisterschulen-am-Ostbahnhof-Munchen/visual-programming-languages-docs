@@ -3,9 +3,11 @@
 ![SPLIT_AL_INTO_AX](./SPLIT_AL_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **SPLIT_AL_INTO_AX** function block decomposes a value encoded as an LWORD (64-bit) into 64 individual BOOL signals. The input value is provided via an **AL adapter** (analog longword), and the output is provided via 64 separate **AX adapters** (analog bits). Each output adapter provides the status of a bit along with a corresponding event. This function block is particularly suitable for processing digital signals from a compact data word, e.g., for the parallel control of 64 discrete outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**

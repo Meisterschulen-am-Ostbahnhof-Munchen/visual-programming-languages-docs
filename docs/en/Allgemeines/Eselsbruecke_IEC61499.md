@@ -3,6 +3,7 @@
 How can you reliably remember the number of the standard **IEC 61499** (Function Blocks for Industrial-Process Measurement and Control Systems) – the standard on which
 4diac/FORTE, and thus this entire project, is based?
 Answer: with a tractor.
+
 ## The mnemonic in one sentence
 
 > **Case IH 1455** – everyone knows it. A 6-cylinder tractor. You already have the **6** and the
@@ -12,7 +13,7 @@ Answer: with a tractor.
 ## Step by step
 
 | Component | Origin | Result |
-|---|---|---|
+| --- | --- | --- |
 | **6** | Case IH 1455 is a **6-cylinder** tractor | `6 _ _ _ _` |
 | **14** | The first two digits of **14**55 | `6 1 4 _ _` |
 | **99** | The **55** at the end of 1455 becomes **99** | `6 1 4 9 9` |

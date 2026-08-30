@@ -3,9 +3,11 @@
 ![ILOCK_FB_RS](./ILOCK_FB_RS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (reset-dominant flip-flop). It extends a simple RS flip-flop with a bidirectional coupling interface, enabling multiple such blocks to be chained together in an interlock chain. The output state is set by the Set input (S) and reset by the Reset input (R1) – also taking into account signals from adjacent blocks.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | `S` | BOOL | Set (active high) |
 | `R1` | BOOL | Reset (active high) – Reset-dominant |
 
@@ -36,7 +38,7 @@ The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|-------------|----------|---------------------|--------------|
+| ------------- | ---------- | --------------------- | -------------- |
 | `ILOCK_IN` | Socket | bidirectional::AX2 | Receives signals from the previous component in the chain (event EO1, data DO1) |
 | `ILOCK_OUT` | Plug | bidirectional::AX2 | Sends signals to the next component in the chain (event EI1, data DI1) |
 
@@ -70,7 +72,7 @@ Internally, the component consists of an RS flip-flop (`FB_RS`, reset-dominant),
 The internal RS flip-flop has the following state table (reset-dominant):
 
 | S | R1_eff | Q1 (new) | Description |
-|---|---|----------|--------------|
+| --- | --- | ---------- | -------------- |
 | 0 | 0 | Q1_old | Hold |
 | 1 | 0 | 1 | Set |
 | 0 | 1 | 0 | Reset |
@@ -87,7 +89,7 @@ The output `R1_eff` is the result of the OR operation on `R1`, `ILOCK_IN.DO1`, a
 ## Comparison with Similar Components
 
 | Component | Properties |
-|----------|---------------|
+| ---------- | --------------- |
 | `FB_RS` (IEC 61131) | Simple reset-dominant RS flip-flop without adapter, no cascading |
 | `ILOCK_FB_RS` | Same core function, but with bidirectional adapters for cascading and additional reset signal linking |
 

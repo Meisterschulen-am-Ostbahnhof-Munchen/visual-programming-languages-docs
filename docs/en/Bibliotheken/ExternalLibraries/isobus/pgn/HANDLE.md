@@ -3,9 +3,11 @@
 ![HANDLE](./HANDLE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `HANDLE` constant is a global constant definition for the 4diac IDE, used in the context of ISOBUS protocol and parameter group number (PGN) processing. It defines special values to identify invalid or global addressing targets within an ISOBUS network. These constants serve as central reference values for function blocks that use handle-based communication.
+
 ## Interface Structure
 
 This is a global constant definition and therefore does not have event or data interfaces in the conventional sense of a function block. Instead, it provides named constants that can be used in other blocks.

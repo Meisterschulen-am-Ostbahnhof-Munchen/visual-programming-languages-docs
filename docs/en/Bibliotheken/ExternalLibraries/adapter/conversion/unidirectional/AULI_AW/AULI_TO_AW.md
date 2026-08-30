@@ -3,9 +3,11 @@
 ![AULI_TO_AW](./AULI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_TO_AW** is a composite function block (FB) that converts a ULINT adapter interface (AULI) to a WORD adapter interface (AW). It is used where a unidirectional data type conversion from unsigned 64-bit integer to 16-bit word is required.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block **AULI_TO_AW** is a composite function block (FB) that conver
 ### **Adapters**
 
 | Type | Role | Name | Comment |
-|-----|-------|------|-----------|
+| ----- | ------- | ------ | ----------- |
 | **adapter::types::unidirectional::AULI** | Socket | AULI_IN | ULINT Adapter Input |
 | **adapter::types::unidirectional::AW** | Plug | AW_OUT | WORD Adapter Output |
 

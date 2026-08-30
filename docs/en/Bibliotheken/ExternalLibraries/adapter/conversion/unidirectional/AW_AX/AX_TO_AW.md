@@ -4,9 +4,11 @@ No image available.
 ![AX_TO_AW](./AX_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AX_TO_AW` is a composite function block (FB) for converting a unidirectional BOOL adapter (type `AX`) into a unidirectional WORD adapter (type `AW`). It acts as an interface converter, forwarding an incoming event and a BOOL data value directly to the output adapter, with the BOOL value being implicitly converted into a WORD.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +30,7 @@ This function block does not have separate data outputs. The output data (WORD) 
 ### **Adapter**
 
 | Direction | Label | Type | Comment |
-|----------|-------------|-----|-----------|
+| ---------- | ------------- | ----- | ----------- |
 | **Socket** | `AX_IN` | `adapter::types::unidirectional::AX` | BOOL adapter input (consisting of event `E1` and data `D1:BOOL`) |
 | **Plug** | `AW_OUT` | `adapter::types::unidirectional::AW` | WORD adapter output (consisting of event `E1` and data `D1:WORD`) |
 

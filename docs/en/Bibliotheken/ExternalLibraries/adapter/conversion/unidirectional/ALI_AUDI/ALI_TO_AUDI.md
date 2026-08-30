@@ -3,9 +3,11 @@
 ![ALI_TO_AUDI](./ALI_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_TO_AUDI** is a composite block that converts an ALI adapter (LINT) into an AUDI adapter (UDINT). It serves as a unidirectional converter between two different data type adapters for the IEC 61499 profile interface. The conversion is performed using an internal block *F_LINT_TO_UDINT* from the IEC 61131 library.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs. All communication takes place via two adapter interfaces.
@@ -29,7 +31,7 @@ No dedicated data outputs are available. The converted data value is output via 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|-----------|--------------|
+| --------- | ----- | ----------- | -------------- |
 | ALI_IN | `adapter::types::unidirectional::ALI` | Socket (Input) | Returns the LINT value (64-bit signed) and the associated event. |
 | AUDI_OUT | `adapter::types::unidirectional::AUDI` | Plug (Output) | Provides the converted UDINT value (32-bit unsigned) and the acknowledgment event. |
 

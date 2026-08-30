@@ -78,7 +78,7 @@ Da es sich um einen Composite FB ohne eigenen Ablaufzustand handelt, ergibt sich
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingangstyp | Ausgangstyp | Besonderheit |
-|----------|-------------|-------------|--------------|
+| ---------- | ------------- | ------------- | -------------- |
 | `AX_TO_ALR` | BOOL (Adapter) | LREAL (Adapter) | Adapter‑basiert, feste Werte 0.0 / 1.0 |
 | `BOOL_TO_REAL` | BOOL (direkt) | REAL (direkt) | Konventioneller IEC‑Baustein, Werte frei konfigurierbar |
 | `SEL` / `F_SEL` | BOOL + 2x ANY | ANY | Allgemeine Auswahl ohne Adapter, Werte parameterisierbar |

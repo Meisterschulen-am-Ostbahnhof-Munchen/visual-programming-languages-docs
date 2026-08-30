@@ -3,6 +3,7 @@
 ![Uebung_171_ASR_network](./Uebung_171_ASR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the application of an asynchronous set-reset flip-flop (ASR) in the 4diac IDE. Two pushbuttons connected to the digital inputs I1 and I2 control the setting and resetting of a memory chip, whose output switches a digital output Q1. The exercise teaches fundamental concepts of event processing and the coupling of hardware inputs with an RS memory module.
@@ -55,16 +56,18 @@ This exercise demonstrates the application of an asynchronous set-reset flip-flo
 The flow is determined by the event and data connections in the SubApp network:
 
 1. **Input Events**:
+
 - Pressing a key on `Input_I1` triggers the event `IND` in the block `DigitalInput_CLK_I1`. This event is then routed to the event input `SET` of the converter `ASR_2EVENTS_TO_SR`.
 - Pressing a key on `Input_I2` triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
 
 ` ``  triggers the event `IND` in the block `DigitalInput_CLK_I2`. This event is then routed to the event input `RESET` of the converter.
 
-2. **Adapter Processing**:
+1. **Adapter Processing**:
 
 - The converter `ASR_2EVENTS_TO_SR` sets the output adapter `ASR_OUT` according to the last incoming event (SET or RESET).
 - The adapter output is connected to the adapter input `S_R` of the ASR module `ASR_AX_SR_1`.
-3. **Memory and Output**:
+1. **Memory and Output**:
+
 - The ASR module responds to the incoming adapter signal and updates its output `Q`.
 - The output `Q` is connected to the data input `OUT` of the digital output module `DigitalOutput_Q1`. This switches the physical output Q1 on or off accordingly.
 - **Learning Objectives**: Understanding event control, working with adapter modules, simple memory function (RS flip-flop).

@@ -3,6 +3,7 @@
 ![Uebung_071b_AUI_network](./Uebung_071b_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe von Wheel‑Based Speed (WBSD) und Wheel‑Based Distance (WBD) auf einem Universal Terminal (UT). Zusätzlich wird ein wegabhängiger Impuls erzeugt: Alle 10 Meter (5 Meter HIGH, 5 Meter LOW) schaltet ein digitaler Ausgang um. Die Realisierung erfolgt über Adapter‑Schnittstellen und zeigt die typische Datenverarbeitungskette von der ISOBUS‑Sensorerfassung bis zur UT‑Anzeige und logiBUS‑Ausgabe.

@@ -6,6 +6,7 @@
 
 The function block `F_USINT_TO_DWORD` converts a `USINT` value (8-bit unsigned integer) to a `DWORD` value (32-bit unsigned integer). This conversion is particularly useful when data needs to be exchanged or processed between systems with different word lengths.
 ![F_USINT_TO_DWORD](F_USINT_TO_DWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

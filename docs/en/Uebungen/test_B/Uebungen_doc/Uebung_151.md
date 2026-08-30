@@ -1,10 +1,12 @@
 Here is the documentation for Exercise 151 based on the provided data.
+
 # Exercise_151: Pulse Counter
 
 ![Uebung_151_network](./Uebung_151_network.svg)
 *(Insert image of the exercise here, if available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a sub-application (`SubAppType`) named **Exercise_151**. The goal of the exercise is to acquire and process pulse signals via a hardware interface. The incoming raw data is converted, and then the derivative (rate of change) is calculated using a mathematical function block. This is typically used to determine a speed or frequency from a counter reading.
@@ -46,6 +48,7 @@ The exercise flow is defined by the event and data chain:
 
 1. **Signal Acquisition**: The function block `logiBUS_PI_ID` acquires signals at input `PulseInput_I8`. As soon as new data is available, event `IND` is triggered, and the data value is made available at output `IN`.
 2. **Type Conversion**:
+
 - The signal first passes to function block `F_DWORD_TO_UDINT`.
 - The result is forwarded to `F_UDINT_TO_REAL`.
 - This chain ensures that the signal is converted from a raw binary format (`DWORD`) into a floating-point number (`REAL`).

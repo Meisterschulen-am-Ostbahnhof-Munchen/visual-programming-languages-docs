@@ -4,6 +4,7 @@
 ![sequence_ET_05_ecc](./sequence_ET_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_ET_05` implements sequential control with five defined states (State_01 to State_05) and a start state (START). The transition between states can occur either through an external event or after an adjustable time. The block is designed for applications that require a step-by-step sequence of actions with flexible transition conditions.
@@ -44,7 +45,7 @@ The function block `sequence_ET_05` implements sequential control with five defi
 - **`DO_S1`** (BOOL): Is `TRUE` when State_01 is active.
 - **`DO_S2`** (BOOL): Is `TRUE` when State_02 is active.
 - **`DO_S3`** (BOOL): Is `TRUE` when State_03 is active.
-- * **`DO_S4`** (BOOL): Is `TRUE` when State_04 is active.
+- - **`DO_S4`** (BOOL): Is `TRUE` when State_04 is active.
 - **`DO_S5`** (BOOL): Is `TRUE` when State_05 is active.
 
 ### **Adapter**
@@ -58,7 +59,7 @@ The function block operates as a Basic function block with an Execution Control 
 1. The `timeOut` adapter is stopped.
 2. The output of the previous state is deactivated (exit algorithm `X`).
 3. The state number `STATE_NR` is updated, and the dwell time for the *next* transition is passed to the timer (confirmation algorithm `C`). The `CNF` event is then triggered.
-2. The output of the previous state is deactivated (exit algorithm `X`). 4. The output of the current state is activated (entry algorithm `E`). The corresponding `EO_Sx` event is triggered.
+4. The output of the previous state is deactivated (exit algorithm `X`). 4. The output of the current state is activated (entry algorithm `E`). The corresponding `EO_Sx` event is triggered.
 5. The `timeOut` adapter with the previously set time is started.
 
 A state change can now occur in two ways:

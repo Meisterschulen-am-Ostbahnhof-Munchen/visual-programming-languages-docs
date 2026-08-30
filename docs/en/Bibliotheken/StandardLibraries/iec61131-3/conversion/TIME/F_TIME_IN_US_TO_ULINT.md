@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_US_TO_ULINT` converts a time value in microseconds (`TIME`) into an unsigned 64-bit integer value (`ULINT`). This is particularly useful when time values need to be converted for numerical calculations or further processing.
 ![F_TIME_IN_US_TO_ULINT](F_TIME_IN_US_TO_ULINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +29,7 @@ The function block `F_TIME_IN_US_TO_ULINT` converts a time value in microseconds
 
 - No adapters are available.
 
-## **Inputs**: ... #
+## **Inputs**: #
 
 The function block uses the algorithm `REQ` to convert the incoming `TIME` value into a `ULINT` value in microseconds. The conversion is performed by the function `TIME_IN_US_TO_ULINT(IN)`. Once the conversion is complete, the event `CNF` is triggered to signal successful completion.
 

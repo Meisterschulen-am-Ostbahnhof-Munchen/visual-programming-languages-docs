@@ -3,6 +3,7 @@
 <img width="1095" height="143" alt="SYS_ONTIME" src="https://github.com/user-attachments/assets/154ba5c7-4a31-4dc3-8dbc-c6a731fdf46b" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der SYS_ONTIME Funktionsblock dient als Service Interface für die Kommunikation zwischen einer Anwendung und einer Ressource. Er ermöglicht die Übertragung von Betriebszeitdaten in dezimalen Minuten (0,01 Stunden) von der Ressource zur Anwendung.
@@ -58,7 +59,7 @@ Der Baustein arbeitet mit einer industriellen Zeitbasis (0,6-Minuten-Takt) statt
 | 100              | 60 min (1h)      |
 | 150              | 90 min (1,5h)    |
 
-### Technischer Hintergrund:
+### Technischer Hintergrund
 
 - Dieser Zeitstandard stammt aus der Prozessautomatisierung
 - Ermöglicht ganzzahlige Darstellung typischer Zeitintervalle

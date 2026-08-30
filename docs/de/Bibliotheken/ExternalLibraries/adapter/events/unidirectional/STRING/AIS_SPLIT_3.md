@@ -29,7 +29,7 @@ Nicht vorhanden – die Ausgangsdaten werden ausschließlich über die Adapter-P
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AIS` | IN | Socket (Eingang) | Empfängt einen AIS-Datenstrom. |
 | `adapter::types::unidirectional::AIS` | OUT1 | Plug (Ausgang) | Erster Ausgangskanal – identische Kopie des Eingangs. |
 | `adapter::types::unidirectional::AIS` | OUT2 | Plug (Ausgang) | Zweiter Ausgangskanal – identische Kopie des Eingangs. |
@@ -58,7 +58,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Sein Verhalten entspri
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Besonderheit |
-|----------|------------------|--------------|
+| ---------- | ------------------ | -------------- |
 | AIS_SPLIT_2 | 2 | Verteilt auf zwei Kanäle. |
 | **AIS_SPLIT_3** | **3** | **Standard-Splitter mit drei Ausgängen.** |
 | AIS_SPLIT_N | variabel | Generische Version mit konfigurierbarer Ausgangsanzahl (sofern verfügbar). |

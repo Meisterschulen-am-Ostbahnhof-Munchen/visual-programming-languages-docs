@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_MUL_4` is a generic function block (Generic FB) for IEC 61499, designed for the arithmetic multiplication of four input values. Instead of traditional data and event pins, this block uses adapter connections (`AS` - unidirectional) to transmit data and the associated execution control in encapsulated form. This results in a cleaner design in the 4diac IDE, as the number of visible connection lines is drastically reduced.

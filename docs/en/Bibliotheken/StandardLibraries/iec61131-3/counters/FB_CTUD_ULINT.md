@@ -6,6 +6,7 @@
 
 The function block `FB_CTUD_ULINT` is a counter with up and down counting functionality for the data type `ULINT` (unsigned 64-bit integer). It offers additional functions such as reset, loading a default value, and status outputs for the counting direction.
 ![FB_CTUD_ULINT](FB_CTUD_ULINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,9 +38,10 @@ The counter performs the following operations on the `REQ` event:
 1. When `R` (Reset) is active, the counter is reset to 0.
 2. When `LD` (Load) is active, the default value `PV` is loaded into the counter.
 3. If neither Reset nor Load is active:
+
 - When `CU` is active (and not simultaneously `CD`), the counter is incremented (up to the maximum value). 18446744073709551615)
 - When `CD` is active (and not simultaneously `CU`), the counter counts down (to the minimum value of 0).
-4. The outputs `QU` and `QD` are updated according to the current counter value.
+1. The outputs `QU` and `QD` are updated according to the current counter value.
 
 ## Technical Features
 

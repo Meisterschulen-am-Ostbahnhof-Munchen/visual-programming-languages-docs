@@ -6,6 +6,7 @@
 
 The FB_CTUD (Up Down Counter) is a function block that acts as a counter with up and down counting capabilities. It allows events to be counted in both directions and offers additional functions such as reset and loading a predefined value.
 ![FB_CTUD](FB_CTUD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -41,10 +42,12 @@ The function block FB_CTUD performs the following operations:
 1. **Reset (R)**: When R is enabled, the counter value (CV) is set to 0.
 2. **Load (LD)**: When LD is enabled, the predefined value (PV) is loaded into the counter (CV).
 3. **Count (CU/CD)**:
+
 - When CU is enabled and the counter value (CV) is less than 32767, CV is incremented by 1.
 - When CD is enabled and the counter value (CV) is greater than -32768, CV is decremented by 1.
 - CU and CD cannot be enabled simultaneously.
-4. **Outputs (QU/QD)**:
+1. **Outputs (QU/QD)**:
+
 - QU is enabled when CV is greater than or equal to PV.
 - QD is enabled when CV is less than or equal to 0.
 

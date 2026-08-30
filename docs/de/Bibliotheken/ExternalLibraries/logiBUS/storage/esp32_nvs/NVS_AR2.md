@@ -3,6 +3,7 @@
 ![NVS_AR2](./NVS_AR2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein NVS_AR2 dient zum Speichern und Laden von REAL-Werten (Gleitkommazahlen) in einen nichtflüchtigen Speicher (NVS – Non-Volatile Storage) über einen Schlüssel (Key). Er kapselt die Logik des zugrundeliegenden NVS-Bausteins und bietet eine bidirektionale Adapterschnittstelle vom Typ AR2 für eine asynchrone Kommunikation. Dadurch kann der Baustein in eine ereignisgesteuerte Umgebung integriert werden, bei der Lese- und Schreiboperationen asynchron ausgelöst werden.

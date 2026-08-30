@@ -3,9 +3,11 @@
 ![AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** converts a 16-bit word received via a fieldbus into a scaled signal value. The word is multiplied byte by byte by different scaling factors, an offset is added, and the result is output as a normalized signal. Additionally, a validity signal is provided to indicate whether the incoming value is valid.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** converts a 16-b
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------------|------|-------------|-------------------------------------------|
+| ------------ | ------ | ------------- | ------------------------------------------- |
 | SCALE_HIGH | REAL | 0.256 | Scaling factor for the upper byte |
 | SCALE_LOW | REAL | 0.001 | Scaling factor for the lower byte |
 | OFFSET | DINT | 0 | Additive offset after scaling |
@@ -35,7 +37,7 @@ The FB does not have its own data outputs. The output data is provided via the a
 ### **Adapters**
 
 | Adapter | Type (Direction) | Description |
-|---------|-------------------------------------|---------------------------------------|
+| --------- | ------------------------------------- | --------------------------------------- |
 | IN | `adapter::types::unidirectional::AW` | Incoming 16-bit word |
 | OUT | `adapter::types::unidirectional::AR` | Output signal (scaled) |
 | VALID | `adapter::types::unidirectional::AX` | Validation signal (TRUE = valid) |
@@ -48,15 +50,15 @@ After successful initialization (INIT event → INITO), the FB begins responding
 
 The upper byte (bits 15…8) is multiplied by `SCALE_HIGH`, the lower byte (bits 7…0) by `SCALE_LOW`.
 
-2. **Offset addition**
+1. **Offset addition**
 
 The sum of both scaled byte values is incremented by the configured `OFFSET`.
 
-3. **Output**
+1. **Output**
 
 The result is passed to the **OUT** adapter (event **OUT.E1** with data **OUT.D1**).
 
-4. **Validity Handling**
+1. **Validity Handling**
 
 An internal flip-flop (`E_D_FF`) is clocked in parallel. The validity status (signal **VALID**) is taken from the internal **VALID** output of the scaling module and is retained until the next valid signal.
 
@@ -85,7 +87,7 @@ Before first use, the function block (FB) must be initialized with the INIT even
 The FB has an internal state represented by the flip-flop `E_D_FF`:
 
 | State | Description |
-|---------|-------------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------- |
 | UNVALID | No valid signal. The **VALID** output returns FALSE. |
 | VALID | Valid signal detected. The **VALID** output displays TRUE. |
 

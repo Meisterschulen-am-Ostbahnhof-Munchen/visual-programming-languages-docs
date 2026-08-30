@@ -3,6 +3,7 @@
 ![E_SR_SYM_ecc](./E_SR_SYM_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_SR_SYM` (Event-driven SR Flip-Flop, symmetrisches Start-Up-Verhalten) ist funktional identisch zu [E_RS_SYM](E_RS_SYM.md) — beide Bausteine existieren, analog zu [E_RS](../E_RS.md)/[E_SR](../E_SR.md), lediglich zur Wahrung der Namenskonvention aus der IEC 61131-3 (`SR` = Set-dominant benannt, `RS` = Reset-dominant benannt), ohne dass in der IEC 61499 eine echte Dominanz zwischen Ereignissen existiert.
@@ -37,7 +38,7 @@ Identisch zu [E_RS_SYM](E_RS_SYM.md): Die ECC besitzt die Zustände `START`, `SE
 ## Zustandsübersicht
 
 | Zustand | Bedeutung |
-|---|---|
+| --- | --- |
 | START | Anfangszustand, wartet symmetrisch auf `S` oder `R` |
 | SET | `Q = TRUE` |
 | RESET | `Q = FALSE` |

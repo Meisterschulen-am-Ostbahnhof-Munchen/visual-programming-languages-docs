@@ -3,6 +3,7 @@
 ![AX_TO_AUS](./AX_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_TO_AUS** ist ein Composite-Baustein, der einen booleschen Eingangsadapter (Typ `AX`) in einen ganzzahligen Ausgangsadapter (Typ `AUS`) konvertiert. Er dient als Brücke zwischen Komponenten, die mit unterschiedlichen Datentypen arbeiten, und ermöglicht eine nahtlose Integration in Steuerungsanwendungen nach IEC 61499.

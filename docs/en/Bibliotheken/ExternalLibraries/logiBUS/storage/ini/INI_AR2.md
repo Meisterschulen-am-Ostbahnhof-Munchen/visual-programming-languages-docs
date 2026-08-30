@@ -3,9 +3,11 @@
 ![INI_AR2](./INI_AR2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The INI_AR2 function block is used to read and write real values to and from a settings.ini file using a section and key name. It encapsulates an INI function block and provides a bidirectional AR2 adapter interface. Upon initialization, the value for the specified section and key name is read and output via the adapter. Simultaneously, new values can be received via the adapter and written back to the file.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,6 +53,7 @@ The FB INI_AR2 is a composite function block that internally uses an INI functio
 - Error handling is handled via the STATUS output and QO.
 - The INITO event is only triggered after the initial read operation, not after write operations via the adapter. Write operations are only acknowledged via the adapter.
 -
+
 ## State Overview
 
 Since this is a composite function block, there is no explicit internal state machine. The process is determined by the event network:

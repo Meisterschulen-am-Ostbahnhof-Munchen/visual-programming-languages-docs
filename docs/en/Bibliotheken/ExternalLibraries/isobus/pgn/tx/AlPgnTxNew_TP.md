@@ -1,10 +1,12 @@
 # AlPgnTxNew_TP
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AlPgnTxNew_TP** is used to transmit data over the ISOBUS/CAN bus based on Parameter Group Numbers (PGN). It enables the registration of a specific PGN and the subsequent transmission of data packets whenever a local request event (REQ) occurs. The block is part of the `isobus::pgn::tx` package and is specifically designed for handling transport protocols or generic PGN transmissions.
 ![AlPgnTxNew_TP](AlPgnTxNew_TP.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -46,10 +48,12 @@ The function block **AlPgnTxNew_TP** is used to transmit data over the ISOBUS/CA
 The module operates in two main phases:
 
 1. **Configuration (Installation):**
+
 - First, the module must be initialized via `INIT`.
 - Then, the PGN is configured via the event `install`. This process defines the PGN ID (`u32Pgn`), the target (`NmDestin`), the size (`u16DaSize`), and the priority (`u8Priority`).
 - After successful installation, the event `installO` is triggered, and a `PGN_handle` handle is provided. This handle represents the registered PGN in the system.
-2. **Data Transfer:**
+1. **Data Transfer:**
+
 - Data must be provided in the `Data` array before it can be sent.
 - The `REQ` event triggers the sending process.
 - `CNF` is triggered upon successful transmission.
@@ -79,7 +83,8 @@ The function block has internally implicit states defined by the availability of
 
 - **AlPgnTx vs. AlPgnTxNew_TP:** While older or simpler versions may only support static PGNs, the "New_TP" suffix indicates a revised version that may offer better support for transport protocols (TP) or utilize more modern memory management (via `InOut` variables).
 - **Standard CAN_WRITE:** Compared to a generic `CAN_WRITE` function block, `AlPgnTxNew_TP` abstracts the complexity of PGN management (priority, data length, handle management) and is more specifically tailored to the J1939/ISOBUS protocol.
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_128b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)

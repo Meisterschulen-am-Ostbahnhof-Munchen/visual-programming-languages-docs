@@ -3,6 +3,7 @@
 ![ALI_DIV_2](./ALI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_DIV_2` is a generic arithmetic function block for IEC 61499, designed for performing division operations. The unique feature of this block is the use of unidirectional adapters (`ALI`) instead of traditional data and event interfaces. This enables a modular and clear structuring of data flows within the 4diac IDE.
@@ -48,7 +49,7 @@ Because it is a generic function block (`GEN_ALI_DIV`), the block can flexibly w
 
 - **Generic Implementation:** By assigning it to the generic class `GEN_ALI_DIV`, the function block is not limited to a fixed data type (such as `REAL` or `INT`). It dynamically adapts to the type definitions of the connected adapters.
 - **Adapter Encapsulation:** The use of unidirectional `ALI` adapters drastically reduces cabling in the 4diac IDE, as data and associated trigger events are bundled and transmitted in a single connection.
-- * **Division by Zero:** During implementation and in the runtime environment, care must be taken to handle the value of `0` at input `IN2` to prevent system crashes (e.g., by default returning `NaN`, infinity, or by intercepting the error via adapter error handling).
+- - **Division by Zero:** During implementation and in the runtime environment, care must be taken to handle the value of `0` at input `IN2` to prevent system crashes (e.g., by default returning `NaN`, infinity, or by intercepting the error via adapter error handling).
 
 ## State Overview
 
@@ -56,9 +57,9 @@ Since `ALI_DIV_2` is a data- and event-driven block, it does not have a complex 
 
 1. **Waiting for Trigger:** The block waits for an update event at input adapters `IN1` or `IN2`.
 
-# State Overview 2. **Calculation:** Upon signal reception, the data is read and divided.
+# State Overview 2. **Calculation:** Upon signal reception, the data is read and divided
 
-3. **Output:** The result is assigned to `OUT`, and the corresponding event is signaled via the output adapter.
+1. **Output:** The result is assigned to `OUT`, and the corresponding event is signaled via the output adapter.
 
 ## Application Scenarios
 

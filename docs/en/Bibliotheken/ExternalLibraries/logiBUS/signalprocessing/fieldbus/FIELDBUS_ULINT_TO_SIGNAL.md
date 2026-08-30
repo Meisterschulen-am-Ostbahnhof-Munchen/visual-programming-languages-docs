@@ -3,6 +3,7 @@
 ![FIELDBUS_ULINT_TO_SIGNAL](./FIELDBUS_ULINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_ULINT_TO_SIGNAL** serves as a filter block for fieldbus signals of type `ULINT`. It checks whether an incoming value lies within the valid signal range and, depending on the result, either outputs it unchanged or sets the output to a defined invalid value. The VALID output signal indicates the signal validity status.
@@ -33,7 +34,7 @@ This block is particularly suitable for use in safety-critical or quality-monito
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-|-------|-------|----------------------------|--------------|
+| ------- | ------- | ---------------------------- | -------------- |
 | OUT | ULINT | `16#0000000000000000` | Filtered output value – corresponds to IN if valid, otherwise 0. |
 | VALID | BOOL | `FALSE` | Signal validity – `TRUE` if valid input, otherwise `FALSE`. |
 
@@ -49,10 +50,12 @@ After an event at the **REQ** input, the following algorithm is executed:
 
 VALID_SIGNAL_LW` is an imported constant from the `FIELDBUS_SIGNAL` library and defines the upper limit of the valid value range.
 
-2. **Case – Valid Input** (Condition met):
+1. **Case – Valid Input** (Condition met):
+
 - `OUT` := `IN`
 - `VALID` := `TRUE`
-3. **Case – Invalid Input** (Condition not met):
+1. **Case – Invalid Input** (Condition not met):
+
 - `OUT` := `0`
 - `VALID` := `FALSE`
 

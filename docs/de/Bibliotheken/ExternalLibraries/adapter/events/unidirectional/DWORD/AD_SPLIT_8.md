@@ -29,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | **IN** | `adapter::types::unidirectional::AD` | Eingangsadapter – aufzuteilendes Signal |
 | Plug | **OUT1** | `adapter::types::unidirectional::AD` | Erster Ausgang |
 | Plug | **OUT2** | `adapter::types::unidirectional::AD` | Zweiter Ausgang |

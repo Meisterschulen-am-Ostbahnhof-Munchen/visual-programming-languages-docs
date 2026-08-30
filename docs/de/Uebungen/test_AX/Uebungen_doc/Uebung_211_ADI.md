@@ -3,6 +3,7 @@
 ![Uebung_211_ADI_network](./Uebung_211_ADI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Standard IEC 61131-3 Vorwärtszähler (Counter Up, CTU) als Adapter-Version für den Datentyp DINT. Der Zählerstand wird zusätzlich über ein Terminal ausgegeben. Die Hardware-Eingänge (CU und R) werden über logiBUS DI-Bausteine eingelesen, der Ausgang Q steuert eine logiBUS DO-Klemme. Der Zählerendwert (PV) wird durch einen konstanten Wert von 5 festgelegt.

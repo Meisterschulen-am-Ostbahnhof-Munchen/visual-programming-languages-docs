@@ -6,6 +6,7 @@
 
 The function block `F_SHL` performs a left shift on any bit data type. The bits of the input value are shifted left by a specified number of positions, and the resulting free positions on the right are padded with zeros. This block is classified according to the IEC 61131-3 standard and is suitable for bitwise operations.
 ![F_SHL](F_SHL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

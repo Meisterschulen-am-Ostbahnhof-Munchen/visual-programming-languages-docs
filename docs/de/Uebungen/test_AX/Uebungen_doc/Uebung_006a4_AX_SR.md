@@ -3,6 +3,7 @@
 ![Uebung_006a4_AX_SR_network](./Uebung_006a4_AX_SR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung führt in den Funktionsbaustein `AX_FB_SR_T_FF` (Set-Dominant Toggle Flip-Flop) ein, der über Adapter angebunden wird. Ziel ist es, das Verhalten eines setzdominanten Toggle-Flipflops zu verstehen und in einer einfachen Steuerung zu testen.
@@ -14,7 +15,7 @@ Der Baustein wird mit drei digitalen Eingängen (SET, RESET, CLK) und einem digi
 In dieser Übung werden folgende Funktionsbausteine eingesetzt:
 
 | FB-Name | Typ | Parameter |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | `DigitalInput_SET` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I1` |
 | `DigitalInput_RESET` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I2` |
 | `DigitalInput_CLK` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I3` |

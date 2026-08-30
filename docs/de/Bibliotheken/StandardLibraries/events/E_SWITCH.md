@@ -52,10 +52,10 @@ Das Ereignis am Eingang `EI` wird also immer an genau einen der beiden Ausgänge
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_SWITCH | E_SELECT | E_DEMUX |
-|---------------|----------|----------|---------|
+| Feature | E_SWITCH | E_SELECT | E_DEMUX |
+| --------------- | ---------- | ---------- | --------- |
 | Auswahlkriterium | Boolesch (`G`) | Boolesch (`G`) | Index (`K`) |
-| Richtung      | 1:2 (Demultiplexer) | 2:1 (Multiplexer) | 1:n (Demultiplexer) |
+| Richtung | 1:2 (Demultiplexer) | 2:1 (Multiplexer) | 1:n (Demultiplexer) |
 | Zustandsmodell | BasicFB | BasicFB | BasicFB/Generic |
 
 ## 🛠️ Zugehörige Übungen

@@ -3,6 +3,7 @@
 ![AX_T_FF_SR_SYM_STORE](./AX_T_FF_SR_SYM_STORE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AX_T_FF_SR_SYM_STORE` realisiert ein ereignisgesteuertes, bistabiles Kippglied (Flipflop) mit Setz- (S), Rücksetz- (R) und Toggle-Funktion (CLK). Seine Besonderheit ist das symmetrische Startverhalten: Über einen speziellen Adapter (`Q_INIT`) kann der Anfangszustand beim Systemstart definiert und gespeichert werden.

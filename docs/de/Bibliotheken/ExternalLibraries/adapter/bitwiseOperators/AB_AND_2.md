@@ -3,6 +3,7 @@
 ![AB_AND_2](./AB_AND_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AB_AND_2** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 2 Eingangswerten vom Typ `BYTE` (8-Bit-Bitmuster (Byte)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

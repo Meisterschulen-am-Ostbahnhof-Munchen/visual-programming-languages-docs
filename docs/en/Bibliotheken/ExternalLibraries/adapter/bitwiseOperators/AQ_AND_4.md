@@ -3,6 +3,7 @@
 ![AQ_AND_4](./AQ_AND_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AQ_AND_4** is a generic function block for the bitwise AND operation across 4 input values of type `BYTE` (2-bit value (quarter byte, transmitted as a byte)). Unlike the Boolean operation on single truth values (as in the `AX_AND` blocks), every bit of the data word is combined independently here.

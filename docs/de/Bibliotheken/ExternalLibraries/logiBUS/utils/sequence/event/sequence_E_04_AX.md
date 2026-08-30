@@ -3,6 +3,7 @@
 ![sequence_E_04_AX_ecc](./sequence_E_04_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `sequence_E_04_AX` ist eine Variante des `sequence_E_04`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte Sequenz mit 4 Ausgabezuständen.

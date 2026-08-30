@@ -4,6 +4,7 @@
 ![AUDI_SUB_2](./AUDI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) `AUDI_SUB_2` ist ein generischer Funktionsbaustein zur Durchführung einer arithmetischen Subtraktion. Er basiert auf der generischen Klasse `GEN_AUDI_SUB` und nutzt unidirektionale Adapter vom Typ `AUDI` zur strukturierten und ereignisgesteuerten Datenübertragung. Dadurch wird eine saubere Kapselung von Daten und Events erreicht, was die Komplexität der Verkabelung in IEC 61499 Anwendungen reduziert.

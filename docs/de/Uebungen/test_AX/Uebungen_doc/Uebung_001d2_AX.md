@@ -3,6 +3,7 @@
 ![Uebung_001d2_AX_network](./Uebung_001d2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert eine alternative, verschaltete Ansteuerung zweier Digitalausgänge (Q1, Q2) durch zwei Digitaleingänge (I1, I2). Die Schaltung bildet eine verriegelte (gegenseitig ausschließende) Zuordnung mit Hilfe von Logikgattern und Flip-Flops, jedoch ohne Verwendung eines expliziten ECC (Execution Control Chart). Sie dient als Beispiel für eine komplexere Kopplung von Eingangs- und Ausgangssignalen basierend auf dem logiBUS-IO-System.

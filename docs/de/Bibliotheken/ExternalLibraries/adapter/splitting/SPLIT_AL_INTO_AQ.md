@@ -3,6 +3,7 @@
 ![SPLIT_AL_INTO_AQ](./SPLIT_AL_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AL_INTO_AQ** ist ein zusammengesetzter Baustein (Composite-FB), der einen eingehenden LWORD-Wert (über einen `AL`-Adapter) in 32 separate 2‑Bit‑Werte aufteilt und diese jeweils über einen eigenen `AQ`-Adapter (Quarter-Byte) ausgibt. Die Aufteilung erfolgt synchron zu einem Ereignis, das über den Eingangsadapter bereitgestellt wird. Der Baustein dient als Schnittstelle zwischen einem breiten Datenwort und mehreren schmalen, ereignisgesteuerten Teilsegmenten.
@@ -72,7 +73,7 @@ Jedes Flipflop speichert den letzten geladenen 2‑Bit‑Wert. Ein neues Eingang
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgabeformat | Anzahl Ausgänge | Synchronisation |
-|----------|---------------|----------------|-----------------|
+| ---------- | --------------- | ---------------- | ----------------- |
 | `SPLIT_AL_INTO_AQ` | 2‑Bit‑AQ‑Adapter | 32 | Gemeinsames Ereignis |
 | `SPLIT_LWORD_INTO_BYTES` (hypothetisch) | 8‑Bit‑Adapter | 8 | Ereignis |
 | `SPLIT_LWORD_INTO_WORDS` (hypothetisch) | 16‑Bit‑Adapter | 4 | Ereignis |

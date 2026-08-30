@@ -3,6 +3,7 @@
 ![GET_STRING](./GET_STRING.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `GET_STRING` dient dazu, einen Stringwert aus einer InOut-Variable auszulesen und als gepufferten Ausgang bereitzustellen. Er wird typischerweise verwendet, um den aktuellen Wert einer externen Variablen zu einem bestimmten Zeitpunkt zu erfassen und für die Weiterverarbeitung bereitzustellen.

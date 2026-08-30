@@ -3,6 +3,7 @@
 ![AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED](./AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED` dient der Aufbereitung eines digitalen Feldbus-Signals (DWORD) zu einem skalierten analogen Ausgangswert. Er spiegelt den Eingangswert auf den Ausgang, sofern die Signalvalidität gegeben ist, und wendet dabei eine lineare Skalierung mit Offset an. Die gültige Signalzustandsinformation wird über einen flankengetriggerten Flip-Flop synchronisiert und als separates Ausgangssignal bereitgestellt.
@@ -35,7 +36,7 @@ Der Baustein besitzt keine direkten Datenausgänge. Alle Ausgangsdaten werden ü
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | AD (unidirektional) | Socket | Eingangsadapter für den DWORD-Wert (Feldbussignal) |
 | OUT | ALR (unidirektional) | Plug | Ausgangsadapter für den skalierten Analogwert |
 | VALID | AX (unidirektional) | Plug | Ausgangsadapter für die Signalvalidität (TRUE = gültig) |

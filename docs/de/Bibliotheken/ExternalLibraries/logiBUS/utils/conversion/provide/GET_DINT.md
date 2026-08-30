@@ -3,6 +3,7 @@
 ![GET_DINT](./GET_DINT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **GET_DINT** liest einen DINT-Wert aus einer InOut-Variable und stellt diesen als gepufferten Ausgangswert bereit. Die Variable wird dabei nicht verändert; der Baustein dient als reiner Lese- und Pufferbaustein.

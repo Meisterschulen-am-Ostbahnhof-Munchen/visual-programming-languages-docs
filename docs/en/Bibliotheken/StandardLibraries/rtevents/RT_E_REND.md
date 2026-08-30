@@ -1,10 +1,12 @@
 # RT_E_REND
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_REND block (Rendezvous). Waits for two events.
 ![RT_E_REND](RT_E_REND.svg)
+
 ## Metadata
 
 | Attribute | Value |

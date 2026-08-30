@@ -3,9 +3,11 @@
 ![AuxiliaryState](./AuxiliaryState.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 AuxiliaryState is a collection of global constants for auxiliary inputs in ISOBUS systems. These constants define various states of auxiliary inputs, typically used for control functions in agricultural and mobile machinery.
+
 ## Interface Structure
 
 AuxiliaryState consists of global constants and is not a function block in the traditional sense. Therefore, this component does not have any event or data interfaces.
@@ -46,7 +48,7 @@ AuxiliaryState defines a set of predefined constants for the data type `Auxiliar
 The defined constants include the following states:
 
 | Constant | Value | Description |
-|-----------|------|--------------|
+| ----------- | ------ | -------------- |
 | `AuxDisabled` | 0 | Off - reverse, down, left, or not pressed |
 | `AuxDisabled_START` | 0 | Off - reverse, down, left, or not pressed (with bCyclic=FALSE) |
 | `AuxEnabled` | 1 | On - forward, up, right, or pressed |

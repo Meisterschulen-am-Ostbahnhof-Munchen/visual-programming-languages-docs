@@ -3,6 +3,7 @@
 ![FIELDBUS_WORD_TO_SIGNAL_SCALED](./FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_WORD_TO_SIGNAL_SCALED** dient dazu, einen digitalen Feldbus-Rohwert (16‑Bit WORD) in einen skalierten physikalischen Signalwert (REAL) umzurechnen. Dabei wird nur dann ein gültiger Ausgang geliefert, wenn der eingehende Wert als gültiges Signal erkannt wird. Der Baustein prüft die Gültigkeit anhand einer vordefinierten Konstanten (`VALID_SIGNAL_W`) und kann unsichere oder „nicht verfügbare“ Werte zuverlässig unterdrücken.
@@ -91,7 +92,7 @@ Der FB kennt keine weiteren Zustände; nach jedem Ereignis kehrt er in den entsp
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschiede |
-|----------|-------------|
+| ---------- | ------------- |
 | **FIELDBUS_WORD_TO_SIGNAL** (ohne Skalierung) | Bildet den Rohwert 1:1 ab, ohne Multiplikation/Addition. |
 | **WORD_TO_REAL** (Standard‑IEC‑Baustein) | Reine Typumwandlung ohne Gültigkeitsprüfung und Skalierung. |
 | **SCALING_FB** | Meist mit separatem Gültigkeits- und Skalierungszweig; dieser FB vereint beides in einem Schritt. |

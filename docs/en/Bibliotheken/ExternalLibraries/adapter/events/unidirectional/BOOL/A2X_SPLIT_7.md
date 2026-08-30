@@ -3,9 +3,11 @@
 ![A2X_SPLIT_7](./A2X_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **A2X_SPLIT_7** is used to distribute an incoming A2X adapter signal to seven identical outputs. It is provided as a generic FB and enables efficient signal multiplication within 4diac IDE projects.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **A2X_SPLIT_7** is used to distribute an incoming A2X adapter
 ### **Adapter**
 
 | Type | Name | Description |
-|-----|------|---------------|
+| ----- | ------ | --------------- |
 | A2X (Socket) | **IN** | Input adapter for the A2X signal to be distributed |
 | A2X (Plug) | **OUT1** … **OUT7** | Seven output adapters, each providing an identical copy of the input signal |
 

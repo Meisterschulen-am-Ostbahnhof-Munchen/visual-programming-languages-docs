@@ -36,6 +36,7 @@ The eIWconfig function block serves as a service interface for configuring eIO i
 The function block receives via The CONF event is a configuration request along with the parameters ST, BT, and GRAD. These parameters are transmitted to the eIO instance via the eIW adapter. After successful configuration, the block confirms the process with the CNF event and provides status feedback via STATUS.
 
 Conf event.
+
 ## Technical Features
 
 - Uses WORD data types for all numeric inputs

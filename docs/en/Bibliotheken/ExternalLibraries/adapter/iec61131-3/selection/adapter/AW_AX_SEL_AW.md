@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AW_AX_SEL_AW` is used for binary selection between two analog or word-based input signals via a binary selector. The block is specifically designed for use with adapter-based interfaces in 4diac-ide (IEC 61499). It encapsulates the classic selection logic (`SEL`) and makes it available via unidirectional adapters for `WORD` data (`AW`) and binary control signals (`AX`).
@@ -50,9 +51,10 @@ The module is internally based on a network of standard function blocks to imple
 1. **Signal Buffering:** Events (`E1`) and data (`D1`) received via the adapters `IN0`, `IN1`, and `G` are buffered using D flip-flops (`E_D_FF` and `E_D_FF_ANY`, respectively). This ensures that the data is consistently available as soon as an event occurs.
 2. **Data Forwarding:** The data from the WORD adapters is passed to the central selection block via `F_MOVE` blocks (configured to the data type `WORD`).
 3. **Selection Logic (F_SEL):** The block `F_SEL` (standard selection function) evaluates the state of the selector `G`:
+
 - If `G.Q` = `FALSE`, the value of `IN0` is passed to the output.
 - If `G.Q` = `TRUE`, the value of `IN1` is passed to the output.
-4. **Output Triggering:** Any change to the inputs or the selector triggers the process via the event connections. The selected value is passed from the output buffer `E_D_FF_ANY_OUT` to the output plug `OUT`, and the corresponding output event `OUT.E1` is triggered.
+1. **Output Triggering:** Any change to the inputs or the selector triggers the process via the event connections. The selected value is passed from the output buffer `E_D_FF_ANY_OUT` to the output plug `OUT`, and the corresponding output event `OUT.E1` is triggered.
 
 ## Technical Features
 

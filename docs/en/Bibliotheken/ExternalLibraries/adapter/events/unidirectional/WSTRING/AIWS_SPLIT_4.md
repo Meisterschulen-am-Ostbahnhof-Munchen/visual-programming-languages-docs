@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_4](./AIWS_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AIWS_SPLIT_4` is used to split an incoming unidirectional **AIWS** adapter connection into four parallel outputs. It acts as a passive splitter, forwarding the values received via the socket to all four plugs without processing events or data itself.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AIWS` | Socket | **IN** | Input adapter for the AIWS connection to be distributed |
 | `adapter::types::unidirectional::AIWS` | Plug | **OUT1** | First output adapter |
 | `adapter::types::unidirectional::AIWS` | Plug | **OUT2** | Second output adapter |

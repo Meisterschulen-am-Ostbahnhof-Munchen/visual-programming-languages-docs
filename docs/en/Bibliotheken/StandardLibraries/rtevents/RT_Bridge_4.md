@@ -1,9 +1,11 @@
 # RT_Bridge_4
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_4 function block serves as a decoupling bridge for four data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

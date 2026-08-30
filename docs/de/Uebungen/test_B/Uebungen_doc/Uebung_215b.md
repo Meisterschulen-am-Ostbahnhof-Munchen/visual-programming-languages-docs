@@ -3,6 +3,7 @@
 ![Uebung_215b_network](./Uebung_215b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen **Rückwärtszähler** gemäß IEC 61131-3 (Funktionsbaustein `FB_CTD`) mit einem Preset-Wert von **10**. Der Zähler wird über zwei digitale Eingänge (CD – Count Down, LD – Load) gesteuert. Der aktuelle Zählerstand wird auf einem Terminal (PHYS) ausgegeben, und der Ausgang Q zeigt an, ob der Zählerstand Null erreicht hat.

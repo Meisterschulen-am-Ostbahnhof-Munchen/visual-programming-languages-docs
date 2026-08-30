@@ -3,6 +3,7 @@
 ![ARR08B_TO_WORDS](./ARR08B_TO_WORDS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ARR08B_TO_WORDS** dient der Aufteilung eines 8‑Byte‑Arrays in vier 16‑Bit‑Wörter (WORD). Er wird typischerweise in der Datenvorverarbeitung eingesetzt, wenn rohe Byte‑Daten aus Sensoren oder Kommunikationsschnittstellen in ganzzahlige Werte umgewandelt werden müssen. Die Umwandlung erfolgt byteweise unter Berücksichtigung der Little‑Endian‑Bytereihenfolge.

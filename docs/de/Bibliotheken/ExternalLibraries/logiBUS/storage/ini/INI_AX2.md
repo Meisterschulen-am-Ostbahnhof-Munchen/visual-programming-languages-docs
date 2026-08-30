@@ -25,7 +25,7 @@ Der Funktionsblock INI_AX2 dient dem Lesen und Speichern von REAL-Daten aus eine
 ### **Daten-Eingänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | QI | BOOL | Eingangsqualifikator zur Steuerung der Verarbeitung. |
 | SECTION | STRING | Name des Abschnitts in der settings.ini-Datei. |
 | KEY | STRING | Name des Schlüssels innerhalb des Abschnitts. |

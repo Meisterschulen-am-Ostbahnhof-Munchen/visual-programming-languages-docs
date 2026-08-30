@@ -3,6 +3,7 @@
 ![Uebung_214b_network](./Uebung_214b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up counter according to IEC 61131-3 (FB_CTU_ULINT). The counter increments by one on each rising edge at the CU (Count Up) input, provided the reset input R is not active. When the preset value (PV) is reached or exceeded, the output Q is set to TRUE. The current counter value is output as a ULINT (unsigned 64-bit integer), converted to LREAL via a conversion block, and passed to a terminal output block, which displays the value on a connected terminal.
@@ -76,6 +77,7 @@ The physical inputs and outputs are connected to the logiBUS terminals Input_I1,
 2. **Reset (R)**: A signal at the digital input Input_I2 is routed analogously via `Input_R` to the `R` input of the counter. With an active signal, the counter is reset to 0.
 3. **Counter Processing**: The counter increments its internal value on each rising edge at `CU`, as long as `R` = FALSE. When the preset value (PV = 5) is reached, the output `Q` is set to TRUE.
 4. **Counter Reading Output (CV)**: After each counting or reset operation, `FB_CTU_ULINT` signals completion via `CNF`. This event simultaneously triggers two branches:
+
 - **Digital Output**: The event `CNF` starts the function block `Output_Q1`. The value of `Q` (TRUE/FALSE) is written to the physical output Output_Q1.
 - **Terminal Output**: The conversion function block `F_ULINT_TO_LREAL` is also triggered via `CNF`. This converts the current counter reading (`CV`, ULINT) into LREAL. After the conversion is complete, the terminal output module `Q_NumericValue_PHYS_LREAL` is activated and the converted value is displayed.
 

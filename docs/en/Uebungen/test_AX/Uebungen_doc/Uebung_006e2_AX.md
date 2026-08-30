@@ -1,9 +1,11 @@
 Here is the documentation page for exercise `Uebung_006e2_AX`, based on the provided XML data.
+
 # Exercise_006e2_AX: RS Flip-Flop with 2x IXA
 
 ![Uebung_006e2_AX_network](./Uebung_006e2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_006e2_AX** implements an RS flip-flop (reset dominant) using adapter connections (AX). The goal of the exercise is to use two digital inputs to set or reset a digital output. The logic block library for bistable elements is used and abstracted from the hardware via the logiBUS system.
@@ -41,12 +43,15 @@ The sub-application reads two external signals via the logiBUS adapters, process
 The program flow is implemented through adapter connections (`AdapterConnections`), which encapsulate both data and events.
 
 1. **Setting the Memory (Set):**
+
 - The adapter `DigitalInput_I1.IN` is connected to the adapter input `AX_FB_RS.SET`.
 - When the input `Input_I1` is activated, the RS flip-flop is set.
-2. **Reset the Memory:**
+1. **Reset the Memory:**
+
 - Adapter `DigitalInput_I2.IN` is connected to adapter input `AX_FB_RS.RESET1`.
 - When input `Input_I2` is activated, the RS flip-flop is reset.
-3. **State Output:**
+1. **State Output:**
+
 - Adapter output `AX_FB_RS.Q1` is connected to adapter `DigitalOutput_Q1.OUT`.
 - The current state of the flip-flop is thus directly passed to the physical output `Output_Q1`.
 

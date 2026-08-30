@@ -4,6 +4,7 @@
 ![AX_RS_ecc](./AX_RS_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_RS function block is an event-driven bistable element (flip-flop) based on the RS principle. It is a Basic Function Block that implements a set-reset mechanism and communicates via adapter interfaces.

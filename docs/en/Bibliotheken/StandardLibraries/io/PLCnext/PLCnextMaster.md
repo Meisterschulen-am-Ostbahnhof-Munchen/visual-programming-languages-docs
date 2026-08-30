@@ -1,10 +1,12 @@
 # PLCnextMaster
 
 * * * * * * * * * *
+
 ## Introduction
 
 The PLCnextMaster is a Service Interface Function Block that serves as the master component for communication with PLCnext systems. This block enables the initialization and control of bus communication in PLCnext-based automation solutions.
 ![PLCnextMaster](PLCnextMaster.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

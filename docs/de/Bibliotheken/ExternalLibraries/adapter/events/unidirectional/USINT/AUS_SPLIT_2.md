@@ -3,6 +3,7 @@
 ![AUS_SPLIT_2](./AUS_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AUS_SPLIT_2** dient dazu, ein eingehendes AUS-Signal auf zwei identische Ausgänge zu verteilen. Er ist als generischer Baustein (generic FB) realisiert und eignet sich für Anwendungen, bei denen ein universelles Steuersignal mehrfach benötigt wird. Der Baustein arbeitet rein adapterbasiert und besitzt keine eigenen Ereignis- oder Dateneingänge.

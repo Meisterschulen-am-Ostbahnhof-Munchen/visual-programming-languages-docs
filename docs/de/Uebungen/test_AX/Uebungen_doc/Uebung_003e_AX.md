@@ -10,7 +10,7 @@ Die Übung realisiert eine einfache Durchschaltung von vier digitalen Eingängen
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### DigitalInput_Ix (x=1..4)
 
@@ -45,6 +45,7 @@ Die gesamte Verschaltung erfolgt über **Adapterverbindungen** (keine Daten‑ o
   Jeder Digitaleingang (`Input_I1` … `Input_I4`) ist über den `IN`‑Port des zugehörigen `BYPASS_AX`‑Blocks mit dem `OUT`‑Port verbunden, der zum entsprechenden Digitalausgang (`Output_Q1` … `Output_Q4`) führt.
 
 - **Bypass‑Pfad (kaskadiert)**:
+
   ```
   BYPASS_AX_1.BY_OUT → BYPASS_AX_2.BY_IN
   BYPASS_AX_2.BY_OUT → BYPASS_AX_3.BY_IN

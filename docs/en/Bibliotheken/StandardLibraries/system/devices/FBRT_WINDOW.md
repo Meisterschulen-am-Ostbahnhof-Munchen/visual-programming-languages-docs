@@ -1,9 +1,11 @@
 # FBRT_WINDOW
 
 * * * * * * * * * *
+
 ## Introduction
 
 This device represents an FBRT (Function Block RunTime) window application.
+
 ## Metadata
 
 | Attribute | Value |

@@ -6,6 +6,7 @@
 
 The function block `XOR_10_BOOL` is a generic function block for calculating the logical exclusive OR (XOR) operation on up to ten Boolean input signals. It complies with the IEC 61131-3 standard and is designed for use in the 4diac IDE. The function block evaluates all connected inputs for each request and returns the corresponding result.
 ![XOR_10_BOOL](XOR_10_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,7 +57,8 @@ The function block does not have an internal state in the sense of a memory. Its
 - **Parity Check:** Detects whether an odd number of signals (e.g., error messages, switch positions) are active.
 - **Control Logic:** Implements special logic logic in sequence controls where a state change should only occur with an odd activation pattern.
 - **Encoding/Decoding:** Simple cryptographic or coding tasks based on the XOR operation.
-*
+-
+
 ## ⚖️ Comparison with Similar Blocks
 
 - **Standard XOR Blocks (e.g., 2-Input XOR):** This block extends the classic 2-input XOR function to up to ten inputs in a single block, improving clarity when dealing with many signals. See: [XOR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_10.md)

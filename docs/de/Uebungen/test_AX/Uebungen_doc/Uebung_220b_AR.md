@@ -5,6 +5,7 @@
 *Bild nicht vorhanden*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Vorwärts-/Rückwärtszähler (CTUD) nach IEC 61131-3 in einer Adapter-Version. Der Zählerwert (Integer) wird über einen digitalen Preset-Wert (PV) initialisiert und kann über vier digitale Eingänge gesteuert werden. Der aktuelle Zählerstand wird über einen Analogausgang auf einem Terminal ausgegeben (physikalische Darstellung). Die Übung demonstriert die Verwendung von Adapter-basierten Funktionsbausteinen sowie die Umwandlung und Ausgabe von Zählerdaten.

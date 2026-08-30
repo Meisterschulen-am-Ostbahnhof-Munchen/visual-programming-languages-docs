@@ -1,9 +1,11 @@
 # Config_EMB_RES
 
 * * * * * * * * * *
+
 ## Introduction
 
 A configurable embedded resource for running IEC 61499 applications.
+
 ## Metadata
 
 | Attribute | Value |

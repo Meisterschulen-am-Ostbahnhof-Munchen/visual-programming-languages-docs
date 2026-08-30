@@ -3,6 +3,7 @@
 ![Uebung_001d_AX_network](./Uebung_001d_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how to switch a digital input signal (Input_I1) to a digital output (Output_Q1).
@@ -56,13 +57,14 @@ The signal flow in the sub-application occurs exclusively via **adapter connecti
 
 Since both inputs receive the same event simultaneously, the AND gate always results in an event at output `OUT`.
 
-4. The output event of `AX_AND_2` is transferred to the adapter input `OUT` of the **DigitalOutput_Q1** module, which then sets the physical output **Output_Q1**.
+1. The output event of `AX_AND_2` is transferred to the adapter input `OUT` of the **DigitalOutput_Q1** module, which then sets the physical output **Output_Q1**.
 
 As a result, the digital input **I1** is directly mapped to the digital output **Q1**. The intermediate `AX_SPLIT_2` and `AX_AND_2` serve only to demonstrate adapter connections and have no logical effect on the switching behavior.
 
-4. The output event of `AX_SPLIT_2` and `AX_AND_2` is for demonstration purposes only and has no logical effect on the switching behavior.
+1. The output event of `AX_SPLIT_2` and `AX_AND_2` is for demonstration purposes only and has no logical effect on the switching behavior.
 
 As a result, the digital input **I1** is directly mapped to the digital output **Q1**. The intermediate `AX_SPLIT_2` and `AX_AND_2` serves only to demonstrate adapter connections and has no logical effect on the switching behavior.
+
 ## Summary
 
 Exercise `Uebung_001d_AX` demonstrates how to couple events between function blocks using **plug-and-socket connections** (adapter blocks) without using direct data lines.

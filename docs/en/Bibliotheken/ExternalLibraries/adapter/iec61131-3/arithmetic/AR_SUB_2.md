@@ -3,6 +3,7 @@
 ![AR_SUB_2](./AR_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_SUB_2` is used to perform an arithmetic subtraction (subtrahend of minuend). It is a generic function block (`GEN_AR_SUB`) that does not use classic discrete inputs and outputs for the calculation, but is based entirely on an adapter-based interface structure. The values and the associated control logic are transferred via unidirectional adapters of type `AR`.

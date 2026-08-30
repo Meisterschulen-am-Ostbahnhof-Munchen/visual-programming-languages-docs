@@ -6,6 +6,7 @@
 
 The function block `F_LREAL_TO_USINT` converts an LREAL value (64-bit floating-point number) to a USINT value (8-bit unsigned integer). This conversion is particularly useful when floating-point numbers need to be converted to unsigned integers, for example, for controlling hardware registers or communicating with systems that can only process integers.
 ![F_LREAL_TO_USINT](F_LREAL_TO_USINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

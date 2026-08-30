@@ -5,6 +5,7 @@
 ![sequence_E_05_ecc](./sequence_E_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_E_05` ist ein sequenzieller Zustandsautomat, der eine feste Abfolge von fünf Zuständen durchläuft. Der Übergang zwischen den einzelnen Zuständen erfolgt ausschließlich durch externe Ereignisse. Der Baustein ist für Steuerungsaufgaben konzipiert, bei denen eine schrittweise Abarbeitung einer Prozesssequenz erforderlich ist, wie z.B. in Handhabungs- oder Verpackungsanlagen. Jeder aktive Zustand setzt einen eigenen binären Ausgang und bestätigt die Ausführung.

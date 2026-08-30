@@ -3,6 +3,7 @@
 ![NOOP](./NOOP.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock NOOP („No Operation“) dient als reiner Durchlaufbaustein. Er kopiert den am Dateneingang `IN` anliegenden BOOL-Wert auf den Datenausgang `OUT`, sobald ein Ereignis am Eingang `REQ` eintritt. Anschließend wird der Ausgang `CNF` ausgelöst. Der FB führt keine logische oder arithmetische Operation aus, sondern leitet das Signal unverändert weiter.

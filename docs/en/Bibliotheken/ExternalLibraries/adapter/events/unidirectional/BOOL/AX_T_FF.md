@@ -4,6 +4,7 @@
 ![AX_T_FF_ecc](./AX_T_FF_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_T_FF (Toggle Flip-Flop) is a fundamental memory component in 4diac that functions as a toggle flip-flop. With each clock event, the output value toggles between its two possible states. The component implements a simple switching behavior where the output value is toggled on each clock pulse.

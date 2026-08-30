@@ -4,6 +4,7 @@
 ![sequence_T_08_loop_ecc](./sequence_T_08_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_T_08_loop` is a time-controlled sequencer with eight output states. It implements a cyclic sequence of states, with the transition between individual states controlled by adjustable time delays. This block is designed for applications where process steps or machine states need to be activated sequentially for a defined duration, for example, in conveyor systems, packaging machines, or automated assembly processes.
@@ -26,7 +27,7 @@ The function block `sequence_T_08_loop` is a time-controlled sequencer with eigh
 
 Eight time-based data inputs of type `TIME`, defining the duration in each state. The default value is `NO_TIME` (no time, immediate transition).
 
-### * `DT_S1_S2`: Retention time in `State_01` before transition to `State_02`.
+### * `DT_S1_S2`: Retention time in `State_01` before transition to `State_02`
 
 - `DT_S2_S3`: Retention time in `State_02` before transition to `State_03`.
 - `DT_S3_S4`: Retention time in `State_03` before transition to `State_04`.

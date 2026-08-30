@@ -3,6 +3,7 @@
 ![AUDI_SPLIT_2](./AUDI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_SPLIT_2** ist ein generischer Baustein zur Signalverteilung. Er empfängt über einen einzelnen **AUDI**-Adapter (unidirektional) ein Signal und leitet es an zwei identische **AUDI**-Ausgangsadapter weiter. Der FB wird als **generic FB** deklariert, d.h. der konkrete Signaltyp kann zur Projektierungszeit über das Attribut `GenericClassName` festgelegt werden. Entwickelt wurde er von der HR Agrartechnik GmbH (Version 1.0, 2025-01-24).
@@ -28,10 +29,10 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AUDI` | Eingehender unidirektionaler AUDI-Adapter (Signalquelle). |
-| **Plug**   | `OUT1` | `adapter::types::unidirectional::AUDI` | Erster Ausgang – leitet das Eingangssignal weiter. |
-| **Plug**   | `OUT2` | `adapter::types::unidirectional::AUDI` | Zweiter Ausgang – leitet das Eingangssignal weiter. |
+| **Plug** | `OUT1` | `adapter::types::unidirectional::AUDI` | Erster Ausgang – leitet das Eingangssignal weiter. |
+| **Plug** | `OUT2` | `adapter::types::unidirectional::AUDI` | Zweiter Ausgang – leitet das Eingangssignal weiter. |
 
 ## Funktionsweise
 

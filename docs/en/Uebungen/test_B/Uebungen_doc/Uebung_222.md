@@ -3,6 +3,7 @@
 ![Uebung_222_network](./Uebung_222_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a forward/down counter according to IEC 61131-3 (type `FB_CTUD_LINT`) with a value range of type `LINT`. The counter readings are controlled via a logiBUS I/O connection to digital inputs (pushbuttons) and output to digital outputs (signal lights). Additionally, the current counter reading is displayed via a numeric terminal output (`Q_NumericValue`). This exercise demonstrates the use of a complex counter and the conversion of `LINT` to `UDINT` for output, with a comment indicating the limitation of the conversion (negative values cannot be represented).
@@ -97,6 +98,7 @@ After successful conversion, `F_LINT_TO_UDINT.CNF` triggers the event `Q_Numeric
 **Note**: This exercise requires basic knowledge of the 4diac IDE and logiBUS configuration. The inputs must be connected to real or simulated pushbuttons; the outputs to lights or status indicators.
 
 **
+
 ## Summary
 
 Exercise 222 implements a universal forward/downward counter (FB_CTUD_LINT) with a 64-bit counting range, controlled by four push-button inputs. Two digital outputs indicate the states `QU` (maximum reached) and `QD` (minimum reached), while a terminal outputs the current numerical value. The necessary type conversion from `LINT` to `UDINT` is deliberately documented as a problem case to highlight the potential misinterpretation of negative values. The design adheres to the IEC 61131-3 standard and allows for easy extension to include other counting parameters.

@@ -1,10 +1,12 @@
 # RT_E_CYCLE
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_E_CYCLE function block implements periodic event generation (cycle) with real-time capabilities. It allows you to define deadlines and execution times (WCET).
 ![RT_E_CYCLE](RT_E_CYCLE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

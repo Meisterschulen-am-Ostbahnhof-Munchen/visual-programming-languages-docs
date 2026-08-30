@@ -3,6 +3,7 @@
 <img width="1370" height="337" alt="image" src="https://github.com/user-attachments/assets/d3d2531f-35f3-4013-86ae-fbe3da61ed57" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_5_BOOL` ist ein Standardbaustein zur Berechnung der logischen ODER-Verknüpfung. Er führt eine ODER-Operation über fünf separate boolesche Eingangssignale aus. Der Baustein gehört zur Kategorie der Standard-Booleschen Funktionen gemäß IEC 61131-3 und ist als generischer Baustein implementiert.

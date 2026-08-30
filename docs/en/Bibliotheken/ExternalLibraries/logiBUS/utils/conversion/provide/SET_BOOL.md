@@ -3,9 +3,11 @@
 ![SET_BOOL](./SET_BOOL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SET_BOOL` is used to write a Boolean input value (`IN`) to an InOut variable (`OUT`). It provides simple assignment logic for BOOL data and is controlled by an event.
+
 ## Interface Structure
 
 ### **Event Inputs**

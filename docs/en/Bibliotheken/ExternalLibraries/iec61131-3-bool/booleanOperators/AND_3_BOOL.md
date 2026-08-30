@@ -6,6 +6,7 @@
 
 The function block `AND_3_BOOL` is a standardized building block for calculating the logical AND operation for three Boolean input signals. It complies with the IEC 61131-3 standard for basic Boolean functions and operates according to the 4diac real-time execution control model, where the calculation is triggered by an incoming event.
 ![AND_3_BOOL](AND_3_BOOL.svg)
+
 ## Interface Structure
 
 The interface of the `AND_3_BOOL` block is clear and simple, consisting of one event input, one event output, three data inputs, and one data output.

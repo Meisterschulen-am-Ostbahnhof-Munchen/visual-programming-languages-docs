@@ -3,6 +3,7 @@
 ![AUDI_D_FF](./AUDI_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_D_FF** realisiert ein taktgesteuertes D‑Flip‑Flop (Data Latch) auf Basis von IEC 61499‑Adaptern. Er übernimmt bei einem Ereignis am Eingangsadapter den anliegenden Datenwert, speichert ihn und gibt ihn über den Ausgangsadapter aus. Der Baustein kapselt die gesamte Steuerlogik in einem kompakten, adapterbasierten Interface und erlaubt so eine saubere Trennung von Ereignis- und Datenkommunikation.
@@ -28,9 +29,9 @@ Keine – die Datenausgabe erfolgt ausschließlich über den Plug‑Adapter.
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung | Beschreibung |
-|------------|-----|----------|--------------|
-| **I**      | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | Liefert das Taktereignis (E1) und den zu übernehmenden Datenwert (D1). |
-| **Q**      | `adapter::types::unidirectional::AUDI` | Plug (Ausgang)  | Gibt das Ausgangsereignis (E1) und den gespeicherten Datenwert (D1) aus. |
+| ------------ | ----- | ---------- | -------------- |
+| **I** | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | Liefert das Taktereignis (E1) und den zu übernehmenden Datenwert (D1). |
+| **Q** | `adapter::types::unidirectional::AUDI` | Plug (Ausgang) | Gibt das Ausgangsereignis (E1) und den gespeicherten Datenwert (D1) aus. |
 
 Beide Adapter sind vom gleichen unidirektionalen Typ **AUDI**, der ein Ereignis und einen Datenwert gemeinschaftlich transportiert. Der Socket **I** dient als Quelle, der Plug **Q** als Senke.
 

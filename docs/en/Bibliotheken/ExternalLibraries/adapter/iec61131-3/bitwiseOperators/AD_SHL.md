@@ -3,9 +3,11 @@
 ![AD_SHL](./AD_SHL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_SHL** performs a bitwise left shift of an input value. It is designed as a generic function block that communicates via adapter interfaces and supports any integer data type (ANY_INT). The actual shift operation is implemented internally by a predefined function block `F_SHL`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ No direct data outputs. The result of the shift is provided via the adapter `OUT
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AD` | Receives the value to be shifted via the adapter channel. |
 | Plug | `OUT` | `adapter::types::unidirectional::AD` | Provides the result of the left shift. |
 
@@ -40,16 +42,17 @@ No direct data outputs. The result of the shift is provided via the adapter `OUT
 The FB operates as a composite function block that delegates the actual operation to the block `F_SHL`. Internally, the following logic is implemented:
 
 1. **Event Triggering**
+
 - An incoming event from `UPDATE` or from the adapter `IN.E1` triggers the input `REQ` of the internal block `F_SHL`.
 - The value of `N` is directly passed to the input `F_SHL.N`.
 
 - The data value provided via the adapter `IN` (`IN.D1`) is forwarded to the `F_SHL.IN` input.
 
-2. **Calculation**
+1. **Calculation**
 
 The internal function block `F_SHL` (type `iec61131::bitwiseOperators::F_SHL`) performs a bitwise left shift of the input value by the number of times specified in `N`.
 
-3. **Output**
+1. **Output**
 
 The result of the calculation (`F_SHL.OUT`) is transferred to the data output of the plug adapter `OUT.D1`. Simultaneously, the event `F_SHL.CNF` signals the availability of the new result to the plug adapter (`OUT.E1`).
 

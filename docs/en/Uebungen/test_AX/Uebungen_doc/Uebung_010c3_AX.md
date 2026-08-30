@@ -1,8 +1,9 @@
 # Exercise_010c3_AX: SoftKey_F1 on DigitalOutput_Q1 with GreenWhiteBackground using a Typed Subapp
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_010c3_AX`.
+This article describes the logiBUS® exercise `Uebung_010c3_AX`
 ----
+
 ## Goal of the Exercise
 
 Reusability through typing.

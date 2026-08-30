@@ -1,7 +1,8 @@
 # 📚 Libraries: Sequencer (AX Adapter)
 
-This section describes the sequencer blocks available in the logiBUS® library that are optimized for use with the **AX Adapter**.
+This section describes the sequencer blocks available in the logiBUS® library that are optimized for use with the **AX Adapter**
 ---
+
 ## ℹ️ General Information
 
 The sequencer blocks enable the implementation of sequential function charts (SFCs). The AX versions are distinguished by their use of **AX Adapters** (plug/socket) for controlling the outputs. This significantly reduces wiring effort, as status events and data bits are bundled in a single connection.

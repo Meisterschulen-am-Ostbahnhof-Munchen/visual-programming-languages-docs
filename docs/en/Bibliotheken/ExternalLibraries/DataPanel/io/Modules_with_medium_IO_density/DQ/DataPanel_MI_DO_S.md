@@ -1,10 +1,12 @@
 # DataPanel_MI_DO_S
 
 DataPanel Modules with medium IO density DO Struct
-##Structure
+## Structure
+
 | Name | Type | Initial Value |
 | :--- | :--- | :--- |
 | Pin | USINT | 255 |
+
 - [Uebung_003b2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
 - [Uebung_003b2_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
 - [Uebung_003b3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)

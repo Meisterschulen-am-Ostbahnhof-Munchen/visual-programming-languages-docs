@@ -3,6 +3,7 @@
 ![Uebung_006f_SR_network](./Uebung_006f_SR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung dient dem Verständnis und der Anwendung eines **set-dominanten Toggle-Flipflops** (FB_SR_T_FF). Der Baustein kombiniert die Eigenschaften eines SR-Flipflops mit einer Toggle-Funktion, wobei der Set-Eingang (S1) Vorrang vor dem Reset-Eingang (R) hat. Die Übung demonstriert die grundlegende Verschaltung von digitalen Eingängen, dem Flipflop und einem digitalen Ausgang in der 4diac-IDE unter Verwendung der logiBUS-Bibliothek.

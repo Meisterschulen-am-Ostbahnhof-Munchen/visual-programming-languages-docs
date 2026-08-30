@@ -6,6 +6,7 @@
 
 The NVS (Non-Volatile Storage) function block enables persistent storage and loading of data on an ESP32 microcontroller. It utilizes the ESP32's non-volatile storage (NVS) to store values under a defined key and retrieve them as needed. This block is particularly suitable for applications where configuration data, calibration values, or status information must be retained across device restarts.
 ![NVS](NVS.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -26,7 +27,8 @@ The NVS (Non-Volatile Storage) function block enables persistent storage and loa
 - **KEY** (STRING): The unique key name under which the value is stored in the NVS or from which it is read. This value must be set during the INIT phase.
 - **VALUE** (ANY_ELEMENTARY): The data record to be stored. It can be any elementary data type (e.g., BOOL, INT, REAL, STRING).
 - **DEFAULT_VALUE** (ANY_ELEMENTARY): The default value returned during a read operation (INIT or GET) if no value is yet stored in the NVS under the specified key.
-*
+-
+
 ### **Data Outputs**
 
 - **QO** (BOOL): Reflects the current operating state of the function block (`TRUE` = ready/successful, `FALSE` = not ready/error).

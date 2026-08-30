@@ -3,6 +3,7 @@
 ![AUDI_SUB_2](./AUDI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) `AUDI_SUB_2` is a generic function block for performing arithmetic subtraction. It is based on the generic class `GEN_AUDI_SUB` and uses unidirectional adapters of type `AUDI` for structured and event-driven data transmission. This achieves clean encapsulation of data and events, reducing the complexity of wiring in IEC 61499 applications.

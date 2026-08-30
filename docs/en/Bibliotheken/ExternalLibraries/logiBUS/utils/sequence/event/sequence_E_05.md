@@ -4,6 +4,7 @@
 ![sequence_E_05_ecc](./sequence_E_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_05` is a sequential state machine that cycles through a fixed sequence of five states. The transition between individual states occurs exclusively through external events. This block is designed for control tasks requiring the step-by-step execution of a process sequence, such as in handling or packaging systems. Each active state sets its own binary output and confirms execution.
@@ -67,7 +68,8 @@ When exiting an active state, an *Exit Step* (e.g., `State_01_X`) is executed, w
 - **Explicit Reset Logic:** The reset process is modeled as a separate ECC state (`sRESET`), ensuring that all five outputs (`DO_S1` to `DO_S5`) are properly deactivated during a reset, regardless of their current state.
 - **Separate Entry/Exit Actions:** The logic for setting and resetting the outputs is divided into separate algorithms (E for Entry, X for Exit). This promotes a clear and maintainable structure.
 - **Constants for State Numbers:** The values for `STATE_NR` are retrieved from an imported library (`sequence::State_01`, etc.), facilitating reusability and centralized maintenance.
-*
+-
+
 ## State Overview
 
 1. **xSTART:** Initial state after startup. Waiting for `START_S1`.

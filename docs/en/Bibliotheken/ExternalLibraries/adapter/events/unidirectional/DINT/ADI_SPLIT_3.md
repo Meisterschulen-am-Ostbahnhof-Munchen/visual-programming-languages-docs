@@ -3,9 +3,11 @@
 ![ADI_SPLIT_3](./ADI_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ADI_SPLIT_3** is used to distribute an incoming ADI data stream (adapter interface) to three identical outputs. It is designed as a generic function block and enables simple signal multiplication in adapter-based 4diac applications.
+
 ## Interface Structure
 
 The function block has only adapter interfaces – neither event nor data inputs/outputs are present.
@@ -29,7 +31,7 @@ None.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::ADI` | Socket (Input) | Incoming ADI data stream that is split. |
 | `OUT1` | `adapter::types::unidirectional::ADI` | Plug (Output) | First outgoing ADI data stream (copy of the input). |
 | `OUT2` | `adapter::types::unidirectional::ADI` | Plug (Output) | Second outgoing ADI data stream. |

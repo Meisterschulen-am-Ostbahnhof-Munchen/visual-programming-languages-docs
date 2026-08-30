@@ -3,9 +3,11 @@
 ![SPLIT_DWORD_INTO_BOOLS](https://github.com/user-attachments/assets/6450d832-86ef-4de3-96ad-82a9b4c7bb3e)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_DWORD_INTO_BOOLS` is used to split a 32-bit DWORD into its individual bits and output them as separate BOOL values. This is particularly useful when compressed data needs to be processed in a controller and the individual bits need to be addressed separately.
+
 ## Interface Structure
 
 ### **Event Inputs**

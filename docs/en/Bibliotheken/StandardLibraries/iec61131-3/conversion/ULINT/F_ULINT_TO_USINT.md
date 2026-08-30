@@ -34,6 +34,7 @@ The function block has a simple state machine:
 
 1. **Idle**: Waits for the `REQ` event.
 2. **Processing**: Performs the conversion and triggers `CNF`.
+
 - Type conversion in control systems where data is in different formats.
 - Reducing data storage size when only small value ranges are needed.
 - Similar function blocks such as `F_DINT_TO_INT` or `F_LREAL_TO_REAL` perform similar type conversions, but for different data types.

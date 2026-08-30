@@ -3,6 +3,7 @@
 ![Uebung_034a1_Q2_AX_network](./Uebung_034a1_Q2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Kopplung eines numerischen Eingabewerts (über einen iSoBUS-Numeric-Value-Dienst) mit einem PWM‑Ausgang (logiBUS). Der vom Anwender eingegebene Zahlenwert wird direkt in ein PWM‑Signal umgesetzt und am Ausgang `Output_Q2` ausgegeben. Die Kommunikation zwischen den beiden Funktionsbausteinen erfolgt über eine Adapterverbindung, was eine modulare und flexible Verschaltung ermöglicht.

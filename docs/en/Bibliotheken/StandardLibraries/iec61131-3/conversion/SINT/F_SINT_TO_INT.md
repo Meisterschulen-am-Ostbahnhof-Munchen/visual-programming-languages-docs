@@ -6,6 +6,7 @@
 
 The function block `F_SINT_TO_INT` converts a `SINT` value (8-bit signed integer) to a `INT` value (16-bit signed integer count). This block is particularly useful in scenarios where type conversion between different integer formats is required.
 ![F_SINT_TO_INT](F_SINT_TO_INT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,6 +38,7 @@ The algorithm is defined as follows:
 ALGORITHM REQ
 OUT := IN;
 END_ALGORITHM
+
 ## Technical Features
 
 - The conversion is lossless, as the value range of `SINT` (-128 to 127) fits completely within the value range of `INT` (-32768 to 32767).

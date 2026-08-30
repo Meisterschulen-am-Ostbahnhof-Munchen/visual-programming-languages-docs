@@ -6,6 +6,7 @@
 
 The function block `F_MUX_3` is a multiplexer that selects three input signals based on a control signal and forwards them to the output. It is part of the IEC 61131-3 standard library and is used for signal selection in automation applications.
 ![F_MUX_3](F_MUX_3.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,9 +3,11 @@
 ![AULI_FB_CTD](./AULI_FB_CTD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_FB_CTD** implements a **down counter** based on the data type `ULINT` (unsigned long integer). It is implemented as an **adapter version** and encapsulates the standard function block `FB_CTD_ULINT` from the IEC 61131-3 library. The block allows modular connection via the adapter interfaces CD (Count Down), LD (Load), and PV (Preset Value), as well as the output of the current count value (CV) and a binary signal (Q) via corresponding plug adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -13,7 +15,7 @@ The function block **AULI_FB_CTD** implements a **down counter** based on the da
 The function block has **no direct event inputs**. Triggering occurs exclusively via the **event channels of the socket adapters**:
 
 | Adapter | Event Port | Description |
-|-----------|------------|-------------------------------------|
+| ----------- | ------------ | ------------------------------------- |
 | **CD** | CD.E1 | Count Down Pulse |
 | **LD** | LD.E1 | Load Preset Value Pulse |
 | **PV** | PV.E1 | Preset Value Update |
@@ -29,7 +31,7 @@ The function block has **no direct event inputs**. Triggering occurs exclusively
 Additionally, the plug adapters provide **two event outputs**:
 
 | Adapter | Event Port | Description |
-|---------|------------|--------------------------------------------------|
+| --------- | ------------ | -------------------------------------------------- |
 | **Q** | Q.E1 | Outputs with every processing |
 | **CV** | CV.E1 | Outputs with every processing |
 
@@ -40,7 +42,7 @@ Additionally, the plug adapters provide **two event outputs**:
 Data is also provided via the **socket adapters**:
 
 | Adapter | Data Port | Data Type | Description |
-|---------|------------|----------|-------------------------------------------|
+| --------- | ------------ | ---------- | ------------------------------------------- |
 | **CD** | CD.D1 | `BOOL` | Count pulse (rising edge) |
 | **LD** | LD.D1 | `BOOL` | Load command (rising edge) |
 | **PV** | PV.D1 | `ULINT` | Preset value (loaded during LD or PV update) |
@@ -50,14 +52,14 @@ Data is also provided via the **socket adapters**:
 Data is output via the **Plug Adapters**:
 
 | Adapter | Data Port | Data Type | Description |
-|---------|------------|----------|-------------------------------------------|
+| --------- | ------------ | ---------- | ------------------------------------------- |
 | **Q** | Q.D1 | `BOOL` | Counter reading = 0 (output signal) |
 | **CV** | CV.D1 | `ULINT` | Current counter reading |
 
 ### **Adapter**
 
 | Direction | Adapter type | Short description |
-|----------|-----------------------|--------------------------------------|
+| ---------- | ----------------------- | -------------------------------------- |
 | Socket | `AX` (bidirectional) | Countdown control (Event + BOOL) |
 | Socket | `AX` (bidirectional) | Load Control (Event + BOOL) |
 | Socket | `AULI` (bidirectional) | Preset Value (Event + ULINT) |
@@ -72,11 +74,11 @@ This function block encapsulates the IEC 61131-3 function `FB_CTD_ULINT`. The in
 
 On a rising edge of `CD.D1` and a simultaneous event on `CD.E1`, the counter value is decremented by 1 (provided it is > 0). The new value is output at plug `CV`.
 
-2. **LD Event (Load):**
+1. **LD Event (Load):**
 
 On a rising edge of `LD.D1` and an event on `LD.E1`, the current preset value (`PV.D1`) is loaded into the counter. The counter value is then set to the preset value.
 
-3. **PV Event (Preset Value Update):**
+1. **PV Event (Preset Value Update):**
 
 An event on `PV.E1` updates the internally stored preset value (without changing the counter). This is useful for dynamically changing the preset during operation.
 
@@ -107,7 +109,7 @@ The function block itself does not have its own state machine; the state logic (
 Internally, the function block only manages the **counter value** (CV) and the **current preset value** (PV). There is no explicit state machine. The possible actions are:
 
 | State / Action | Trigger | Result |
-|------------------|---------------------------|---------------------------------------------------------|
+| ------------------ | --------------------------- | --------------------------------------------------------- |
 | Count Down | CD Event & CD.D1=TRUE | CV := CV - 1 (if CV>0) |
 | Load | LD event & LD.D1=TRUE | CV := PV (current preset) |
 | Preset Update | PV event | PV is overwritten (CV remains unchanged) |
@@ -135,9 +137,9 @@ Integration into larger control architectures that rely entirely on adapter comm
 ## Comparison with Similar Components
 
 | Component | Data Type | Interface | Special Feature |
-|----------------------|----------|-----------------------|------------------------------------------------|
+| ---------------------- | ---------- | ----------------------- | ------------------------------------------------ |
 | `FB_CTD_ULINT` | ULINT | Standard I/O | Basic down counter without adapter |
-| **AULI_FB_CTD** | ULINT | Adapter (AX, AULI) | Adapter-encapsulated, all events result in an update|
+| **AULI_FB_CTD** | ULINT | Adapter (AX, AULI) | Adapter-encapsulated, all events result in an update |
 | `FB_CTD` (Standard) | INT/UINT | Standard I/O | Usually 16-bit or 32-bit, fixed event logic |
 
 The **AULI_FB_CTD** offers more flexible integration into complex networks due to its adapter coupling, but has the "side effect" that output events are sent even if the values remain unchanged. For applications that should only fire upon a value change, the basic function block `FB_CTD_ULINT` or a combination with an edge detector (`AX_D_FF`) is preferable.

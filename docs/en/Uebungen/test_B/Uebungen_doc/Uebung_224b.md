@@ -3,9 +3,11 @@
 ![Uebung_224b_network](./Uebung_224b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up/down counter according to IEC 61131-3 (function block `FB_CTUD_ULINT`) with the data type `ULINT`. The current counter value is converted into a physical value (`LREAL`) via a converter and displayed on a terminal output (e.g., a control panel). Control is achieved via four digital inputs (CU, CD, R, LD), and two digital outputs indicate the limit signals (QU, QD).
+
 ## Function Blocks (FBs) Used
 
 - **`FB_CTUD_ULINT`** (Type: `iec61131::counters::FB_CTUD_ULINT`)

@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_006e1_AX` based on the provided data.
+
 # Exercise_006e1_AX: SR Flip-Flop with 2x IXA
 
 ![Uebung_006e1_AX_network](./Uebung_006e1_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an **SR flip-flop** (bistable flip-flop) using **adapter technology** (AX/IX/QX). The logic is used to set a digital output via one input and reset it via a second input. Using adapters bundles data and event flows into individual connections, improving clarity in the schematic.
@@ -41,12 +43,15 @@ Here are the internal function blocks that are interconnected in this network:
 The network implements a memory function using an SR flip-flop. The process and adapter connections are as follows:
 
 1. **Set:**
+
 - The adapter output `IN` of **DigitalInput_I1** is connected to the adapter input `SET1` of the **AX_FB_SR** module.
 - When `Input_I1` is active, the flip-flop is set.
-2. **Reset:**
+1. **Reset:**
+
 - The adapter output `IN` of **DigitalInput_I2** is connected to the adapter input `RESET` of the **AX_FB_SR** module.
 - When `Input_I2` is active, the flip-flop is reset.
-3. **Output:**
+1. **Output:**
+
 - The adapter output `Q1` of the **AX_FB_SR** block is connected to the adapter input `OUT` of **DigitalOutput_Q1**.
 - The flip-flop status is passed directly to the physical output `Output_Q1`.
 
@@ -57,7 +62,7 @@ Instead of using separate event and data lines, adapter connections (represented
 Since this is an SR component, the following typically applies: If only set is active, the output is
 
 1. If only reset is active, the output is
-0. If both inputs are active simultaneously, the component type determines the dominance (for SR components according to IEC 61131, set often takes precedence, but this is implementation-dependent, as specified in `AX_FB_SR`).
+2. If both inputs are active simultaneously, the component type determines the dominance (for SR components according to IEC 61131, set often takes precedence, but this is implementation-dependent, as specified in `AX_FB_SR`).
 
 ## Summary
 

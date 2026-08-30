@@ -5,6 +5,7 @@
 ![E_CTUD_ecc](./E_CTUD_ecc.svg)
 
 - [E_CTUD: Bidirectional Counter in IEC 61499 Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
+
 ----
 <img width="1139" height="259" alt="E_CTUD" src="https://user-images.githubusercontent.com/113907528/204895474-3f88876a-7ce5-406e-8f44-765c1b97226c.png">
 
@@ -61,10 +62,10 @@ After each of these actions, the status flags `QU` and `QD` are updated based on
 - **Storage Location Management**: Counting incoming and outgoing pallets.
 
 | Feature | E_CTUD (Up/Down) | E_CTU (Up) | E_CTD (Down) |
---------------|------------------|-----------------|------------------|
+-------------- | ------------------ | ----------------- | ------------------ |
 | Counting Direction | Up & Down | Up Only | Down Only |
-| Reset (to 0)| Yes (`R`) | Yes (`R`) | No |
-| Load (to PV)| Yes (`LD`) | No | Yes (`LD`) |
+| Reset (to 0) | Yes (`R`) | Yes (`R`) | No |
+| Load (to PV) | Yes (`LD`) | No | Yes (`LD`) |
 | Top Status | `QU` (`CV >= PV`) | `Q` (`CV >= PV`) | No |
 | Bottom Status | `QD` (`CV = 0`) | No | `Q` (`CV = 0`) |
 

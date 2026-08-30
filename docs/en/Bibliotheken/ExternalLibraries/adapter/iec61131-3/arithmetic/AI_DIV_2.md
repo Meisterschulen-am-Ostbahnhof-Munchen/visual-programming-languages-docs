@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AI_DIV_2` is a generic arithmetic block for the 4diac platform. It is used to perform mathematical division (DIV) of two analog values. Unlike classic arithmetic blocks, this block uses standardized, unidirectional adapters of type `AI` (Analog Input) for its inputs and outputs. This enables structured, modular, and clear signal wiring within IEC 61499 applications.

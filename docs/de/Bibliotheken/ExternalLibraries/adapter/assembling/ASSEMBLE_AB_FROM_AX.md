@@ -29,7 +29,7 @@ Keine. Alle Daten werden über den Adapter‑Plug ausgegeben.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Eingang) | `BIT_00` | `adapter::types::unidirectional::AX` | Boolescher Wert für Bit 0 (niederwertigstes Bit) |
 | | `BIT_01` | `adapter::types::unidirectional::AX` | Boolescher Wert für Bit 1 |
 | | `BIT_02` | `adapter::types::unidirectional::AX` | Boolescher Wert für Bit 2 |
@@ -78,7 +78,7 @@ Der Funktionsblock besitzt keine eigene Zustandsmaschine; er ist als reines Netz
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung | Unterschied |
-|----------|--------------|-------------|
+| ---------- | -------------- | ------------- |
 | `ASSEMBLE_BYTE_FROM_BOOLS` | Interner Baustein, der aus 8 Bool‑Eingängen ein Byte erzeugt (ohne Adapter) | `ASSEMBLE_AB_FROM_AX` kapselt diesen Baustein und verwendet Adapter für die Anbindung. |
 | `eclipse4diac::utils::assembling::ASSEMBLE_BYTE_FROM_BOOLS` | Gleiche Funktion, aber mit direkten Ereignis‑/Datenports | `ASSEMBLE_AB_FROM_AX` bietet eine adapterbasierte Schnittstelle und fügt ein D‑Flipflop zur Synchronisation hinzu. |
 | Selbst erstellter Byte‑Assembler | Beliebig realisierbar, z. B. mit ST‑Algorithmus | Adapter `AX`/`AB` sind vordefinierte Standard‑Typen in 4diac, die Wiederverwendbarkeit und Austauschbarkeit fördern. |

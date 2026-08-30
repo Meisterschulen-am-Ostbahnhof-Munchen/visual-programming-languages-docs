@@ -3,9 +3,11 @@
 ![ASR_SPLIT_7](./ASR_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_SPLIT_7** is a generic function block that distributes a single ASR adapter input to seven ASR adapter outputs. It acts as a 1:7 splitter for ASR data and enables the parallel transmission of a signal to multiple downstream components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Input (Socket) | **IN** | `adapter::types::unidirectional::ASR` | Source adapter whose data is distributed to all outputs. |
 | Output (Plug) | **OUT1** | `adapter::types::unidirectional::ASR` | First output, receives the duplicated data from `IN`. |
 | Output (Plug) | **OUT2** | `adapter::types::unidirectional::ASR` | Second output. |

@@ -3,6 +3,7 @@
 ![NOOP_INIT](./NOOP_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NOOP_INIT** (No Operation with INIT) dient als einfacher Durchschalt- oder Platzhalterbaustein. Er ermöglicht die Initialisierung sowie die normale Datenweitergabe eines Booleschen Signals von einem Eingang zu einem Ausgang. Die Besonderheit liegt in der zusätzlichen Behandlung des INIT-Ereignisses, das sowohl eine Bestätigung (INITO) als auch eine Datenweitergabe auslöst.

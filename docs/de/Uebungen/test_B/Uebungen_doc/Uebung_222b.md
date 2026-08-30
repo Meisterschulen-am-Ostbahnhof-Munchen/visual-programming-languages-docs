@@ -11,7 +11,7 @@ Diese Übung realisiert einen standardkonformen IEC 61131-3 Vor-/Rückwärtszäh
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter | Beschreibung |
-|--------------|-----|-----------|--------------|
+| -------------- | ----- | ----------- | -------------- |
 | `FB_CTUD_LINT` | `iec61131::counters::FB_CTUD_LINT` | PV = `LINT#10` | Vor-/Rückwärtszähler (LINT). Zählt bei CU-Ereignissen hoch, bei CD-Ereignissen runter. Ein R-Ereignis setzt den Zähler auf 0, ein LD-Ereignis lädt den Presetwert PV. |
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I1` | Digitaler Eingang (logiBUS) – Signal zum Hochzählen. |
 | `Input_CD` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I2` | Digitaler Eingang – Signal zum Herunterzählen. |

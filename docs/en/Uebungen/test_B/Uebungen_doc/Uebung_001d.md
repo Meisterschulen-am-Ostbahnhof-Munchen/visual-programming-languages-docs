@@ -3,9 +3,11 @@
 ![Uebung_001d_network](./Uebung_001d_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the basic connection of a digital input (Input_I1) to a digital output (Output_Q1) using a logic AND gate. The goal is to switch the input signal directly to the output – using the AND gate to learn how event and data flows work within the 4diac IDE.
+
 ## Function Blocks Used (FBs)
 
 - **DigitalInput_I1** (Type: `logiBUS::io::DI::logiBUS_IX`)
@@ -36,8 +38,8 @@ This exercise demonstrates the basic connection of a digital input (Input_I1) to
 
 OUT = IN1 AND IN2 = IN (da beide Eingänge gleich sind)`.
 
-5. After the calculation, the event `CNF` is triggered and forwarded to the **DigitalOutput_Q1** block (event input `REQ`).
-6. The data value `OUT` of the AND_2 block is transferred to the data input `OUT` of the output block. This sets the physical output `Output_Q1` to the same value as the input `Input_I1`.
+1. After the calculation, the event `CNF` is triggered and forwarded to the **DigitalOutput_Q1** block (event input `REQ`).
+2. The data value `OUT` of the AND_2 block is transferred to the data input `OUT` of the output block. This sets the physical output `Output_Q1` to the same value as the input `Input_I1`.
 
 **Result:** The signal from the digital input is passed through to the digital output unchanged – the AND gate of two identical signals does not change the value.
 

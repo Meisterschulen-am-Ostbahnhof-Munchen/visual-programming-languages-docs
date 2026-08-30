@@ -57,18 +57,23 @@ The function block `E_TMIN` monitors the forwarding of this event to the output 
 
 - **Generic Data Types (`ANY_NUM`):** By using the generic data type `ANY_NUM` for `D`, `HYSTERESIS`, and `Q`, the function block is highly reusable and can be used for various numeric types (e.g., `INT`, `REAL`, `LREAL`).
 - **Combined Filtering:** The function block combines amplitude filtering (hysteresis) and time filtering (Tmin) in a single component.
+
 1. **Uninitialized:** The function block is waiting for the event `INIT`.
 2. **Initialized / Ready:** The function block has configured `Tmin` and is waiting for events at input `CLK`.
 3. **Value Change Blocked (Hysteresis):** A `CLK` event arrives, but the change in `D` is too small. `Q` remains unchanged; there is no `EO`.
 4. **Value Change Active (Time Delay/Filtering):** A `CLK` event arrives, and the change is large enough. When `Tmin` expires, `Q` is updated and `EO` is immediately output. If `Tmin` is still active, the timer's protection function is activated.
+
 - **Analog Sensor Value Processing:** Attenuation and noise reduction for noisy analog measurements (e.g., temperature, pressure, or fill level).
 - **Network-Friendly Data Transmission:** Reduction of publish events in IoT or SCADA systems (e.g., MQTT). Data is only sent when a value has changed significantly, but at most every "X" seconds.
 - **Resource Efficiency in PLC Controllers:** Relieving the CPU of cyclic calculations that would be triggered by high-frequency signal changes.
+
 - ## Comparison with Similar Components
+
 - **`E_D_FF`:** Stores values directly at each clock cycle without hysteresis or time limiting. This results in extremely high event density with turbulent signals.
 - **`E_D_FF_ANY_HYS`:** While it does have hysteresis, it offers no protection against rapid, continuous signal changes (e.g., during fast ramps), which would still generate too many events. `E_D_FF_ANY_HYS_TMIN` solves this problem with the integrated `Tmin` component.
 
 The `E_D_FF_ANY_HYS_TMIN` is an extremely useful component for signal conditioning in industrial environments. It combines value-based filtering with time-based rate limiting. This makes it ideal for stable control architectures where sensor values need to be precisely acquired, but downstream systems must be protected from overload.
+
 ## Technical Features
 
 ## State Overview

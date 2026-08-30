@@ -3,9 +3,11 @@
 ![ARR08B_TO_WORDS_BE](./ARR08B_TO_WORDS_BE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ARR08B_TO_WORDS_BE` extracts four 16-bit words (WORD) from an 8-byte array (big-endian). It is primarily used to convert binary data streams stored in an ascending byte array and interpret them as an ordered word sequence. This block belongs to the package group `logiBUS::utils::conversion::arr::forwarding`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The function block `ARR08B_TO_WORDS_BE` extracts four 16-bit words (WORD) from a
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `OUT_00` | `WORD` | Word from byte 0 (high) and byte 1 (low) |
 | `OUT_01` | `WORD` | Word from byte 2 (high) and byte 3 (low) |
 | `OUT_02` | `WORD` | Word consisting of byte 4 (high) and byte 5 (low) |
@@ -62,7 +64,7 @@ The output event is then The event ``CNF`` is triggered, indicating the validity
 The function block does not have its own state machine. It is triggered by the **event `REQ`** and outputs **`CNF`** after data processing. Execution occurs within a single cycle.
 
 | State | Description |
-|---------|-------------|
+| --------- | ------------- |
 | *Idle* | Waiting for `REQ`; outputs retain the last value. |
 | *Processing* | `REQ` received – data is being processed. |
 | *Completed* | `CNF` is being sent, outputs are valid. The module immediately returns to idle state. |
@@ -77,7 +79,7 @@ The function block does not have its own state machine. It is triggered by the *
 ## Comparison with Similar Building Blocks
 
 | Building Block | Difference |
-|----------|-------------|
+| ---------- | ------------- |
 | `ARR08B_TO_WORDS_LE` | Uses little-endian order (Byte[0] = low byte). |
 | `ARR04B_TO_WORD` | Works with a 4-byte array and creates only one WORD. |
 | `BYTE_TO_WORD` | Converts two individual bytes into one WORD; requires separate concatenation. |

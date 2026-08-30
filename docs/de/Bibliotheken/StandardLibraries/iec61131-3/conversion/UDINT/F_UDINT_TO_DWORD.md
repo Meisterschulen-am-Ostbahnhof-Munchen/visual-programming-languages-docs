@@ -3,6 +3,7 @@
 <img width="1464" height="212" alt="F_UDINT_TO_DWORD" src="https://github.com/user-attachments/assets/2a17af0b-98a8-4d4b-ac10-de4278c1451a" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_UDINT_TO_DWORD` dient der Konvertierung eines `UDINT`-Wertes (32-Bit unsignierte Ganzzahl) in einen `DWORD`-Wert (32-Bit Datenwort). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen numerische Werte als Bitmuster weiterverarbeitet oder übertragen werden müssen.
@@ -36,6 +37,7 @@ Keine Adapter vorhanden.
 Bei Auslösung des `REQ`-Ereignisses wird der Wert am Eingang `IN` vom Typ `UDINT` in einen `DWORD`-Wert konvertiert und am Ausgang `OUT` ausgegeben. Das `CNF`-Ereignis signalisiert den erfolgreichen Abschluss der Konvertierung.
 
 Der zugrundeliegende Algorithmus ist in Structured Text (ST) implementiert:
+
 ```ST
 ALGORITHM REQ
 OUT := UDINT_TO_DWORD(IN);

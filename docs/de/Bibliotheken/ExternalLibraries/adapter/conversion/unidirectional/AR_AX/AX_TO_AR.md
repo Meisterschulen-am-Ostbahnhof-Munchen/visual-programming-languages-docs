@@ -3,6 +3,7 @@
 ![AX_TO_AR](./AX_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AX_TO_AR** ist ein Composite-Funktionsbaustein, der ein boolesches Signal aus einem AX-Adapter (Typ `adapter::types::unidirectional::AX`) in einen REAL-Wert (0.0 oder 1.0) umwandelt und über einen AR-Adapter (Typ `adapter::types::unidirectional::AR`) ausgibt. Die Konvertierung erfolgt mithilfe des IEC‑61131‑Bausteins **F_SEL**.

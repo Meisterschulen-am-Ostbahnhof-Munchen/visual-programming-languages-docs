@@ -31,7 +31,7 @@ This function block does not use any adapters.
 Whenever a `REQ` event occurs, the function block reads the current values at the four Boolean data inputs. It then calculates the logical AND of these four values according to the following truth table:
 
 | IN1 | IN2 | IN3 | IN4 | OUT |
-|:---:|:---:|:---:|:---:|:---:|
+| :---: | :---: | :---: | :---: | :---: |
 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 0 | 1 | 0 |
 | ... | ... | ... | ... | ... |
@@ -58,6 +58,7 @@ The `AND_4_BOOL` function block is a simple, robust, and standards-compliant blo
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
+
 ## Functionality
 
 ## Technical Features

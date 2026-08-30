@@ -3,6 +3,7 @@
 ![initval_AIWS](initval_AIWS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AIWS` is the configurable initialization block for the [AIWS](../AIWS.md) adapter (data type `WSTRING`, wide (Unicode) character string): it accepts a start value as a data input at initialization time and writes it to a `AIWS` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

@@ -3,9 +3,11 @@
 ![Uebung_219_network](./Uebung_219_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a down counter (counter) according to IEC 61131-3 using the function block `FB_CTD_ULINT` (data type ULINT). The counter is controlled via two digital inputs: **CD** (Count Down) decrements the counter value, and **LD** (Load) loads the preset value (PV). The current counter value is output to a terminal (NumericValue). Additionally, a digital output is set when the counter value reaches zero.
+
 ## Function Blocks (FBs) Used
 
 ### FB_CTD_ULINT (IEC 61131-3 Down Counter)
@@ -70,9 +72,11 @@ This exercise implements a down counter (counter) according to IEC 61131-3 using
 The flow is controlled via event connections:
 
 1. **Processing input signals**:
+
 - If a change occurs at **Input_I1** (CD) or **Input_I2** (LD), the corresponding input block (`Input_CD.IND` or `Input_LD.IND`) triggers an event.
 - Both events are connected to the **REQ** input of the counter `FB_CTD_ULINT`. This triggers a counting operation at each of the two inputs.
-2. **Counter Operation**:
+1. **Counter Operation**:
+
 - The counter `FB_CTD_ULINT` executes the following depending on the state of the data lines:
 - If `LD` = TRUE, the value from `PV` (ULINT#10) is loaded.
 - If `CD` = TRUE (and `LD` = FALSE), the counter value is decremented by 1.

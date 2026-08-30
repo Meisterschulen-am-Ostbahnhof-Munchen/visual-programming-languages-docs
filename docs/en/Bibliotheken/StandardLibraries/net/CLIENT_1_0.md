@@ -1,10 +1,12 @@
 # CLIENT_1_0
 
 * * * * * * * * * *
+
 ## Introduction
 
 The CLIENT_1_0 function block is used to communicate with a corresponding server block (e.g., SERVER_0_1) via a network connection. It is specifically designed for **sending** data to the server without receiving any data (Send Only Client).
 ![CLIENT_1_0](CLIENT_1_0.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

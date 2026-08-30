@@ -5,6 +5,7 @@
 ![ARR08X_TO_BOOLS](./ARR08X_TO_BOOLS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ARR08X_TO_BOOLS** dient der Umwandlung eines 8-elementigen BOOL-Arrays in acht einzelne BOOL-Signale. Er extrahiert jedes Bit aus dem Eingangsarray und stellt es über einen eigenen, benannten Datenausgang zur Verfügung. Dieser Baustein ist besonders nützlich, um kompakte Array-Daten aus übergeordneten Systemen oder Kommunikationsschnittstellen in einzelne, leicht zu verarbeitende logische Signale aufzuschlüsseln.
@@ -43,6 +44,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 ## Funktionsweise
 
 Die Funktionsweise ist deterministisch und nicht-zustandsbehaftet. Bei jedem Eintreffen des `REQ`-Ereignisses führt der Baustein eine direkte Zuweisung durch. Jedes Element des Eingangsarrays `IN` wird seinem entsprechenden, einzeln benannten Ausgangsvariable zugewiesen. Die Logik entspricht folgender ST-Zuweisung:
+
 ```iec61131-3
 OUT_00 := IN[0];
 OUT_01 := IN[1];
@@ -53,6 +55,7 @@ OUT_05 := IN[5];
 OUT_06 := IN[6];
 OUT_07 := IN[7];
 ```
+
 Unmittelbar nach Abschluss dieser Operation wird das `CNF`-Ereignis mit den neuen Werten generiert.
 
 ## Technische Besonderheiten

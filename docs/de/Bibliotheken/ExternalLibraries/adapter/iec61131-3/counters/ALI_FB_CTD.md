@@ -3,6 +3,7 @@
 ![ALI_FB_CTD](./ALI_FB_CTD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ALI_FB_CTD** ist ein Abwärtszähler (Down Counter) für LINT-Werte (64‑Bit Integer) mit Adapter‑Schnittstellen nach IEC 61499. Er ist speziell für die Verwendung mit den unidirektionalen Adaptern `AX` (Ereignis‑/Bool‑Träger) und `ALI` (LINT‑Wert‑Träger) ausgelegt. Der Baustein kapselt den Standard‑FB `FB_CTD_LINT` aus der Bibliothek `iec61131::counters` und erweitert ihn um eine adapterbasierte Anbindung, die eine lose Kopplung zwischen den Funktionsbausteinen ermöglicht.
@@ -74,7 +75,7 @@ Der ALI_FB_CTD realisiert einen Abwärtszähler mit Laden. Die interne Logik wir
 Der ALI_FB_CTD besitzt **keinen expliziten Zustandsautomaten** im FB‑Netzwerk. Sein Verhalten ist rein ereignisgesteuert und kombinatorisch:
 
 | Eingangsereignis | Aktion |
-|------------------|--------|
+| ------------------ | -------- |
 | LD aktiviert | Zählerstand = Preset‑Wert |
 | CD aktiviert | Zählerstand dekrementieren (falls > 0) |
 | PV aktiviert | Keine Zähleränderung, aber Ereignis CNF wird gesendet. Der Datenwert von PV wird nicht unmittelbar übernommen – ein LD ist erforderlich. |
@@ -90,7 +91,7 @@ Der aktuelle Zählerstand und der Bool‑Ausgang werden nach jedem Schritt aktua
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Besonderheit |
-|----------|--------------|
+| ---------- | -------------- |
 | **ALI_FB_CTD** (dieser Baustein) | Verwendet AX‑ und ALI‑Adapter; immer‑auslösend; geeignet für adapterbasierte Architekturen. |
 | **FB_CTD_LINT** (Standard) | Reiner Daten‑/Ereignis‑FB ohne Adapter; Ereignisauslösung direkt über die Schnittstellen. |
 | **CTU** (Aufwärtszähler) | Zählt aufwärts, anstatt abwärts; andere Anwendungslogik. |

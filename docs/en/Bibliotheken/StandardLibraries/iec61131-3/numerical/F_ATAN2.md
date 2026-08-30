@@ -3,6 +3,7 @@
 ![F_ATAN2](F_ATAN2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_ATAN2` computes the principal value of the arc tangent of `Y/X`, taking into account the signs of both arguments (two-parameter arc tangent). Unlike the plain `ATAN` function (which takes only one argument), `F_ATAN2` returns the angle in the correct quadrant across the full angular range from `-π` to `+π`.

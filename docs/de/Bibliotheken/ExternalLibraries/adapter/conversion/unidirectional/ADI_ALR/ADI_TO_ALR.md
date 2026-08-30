@@ -3,6 +3,7 @@
 ![ADI_TO_ALR](./ADI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_ALR** ist ein zusammengesetzter Baustein (Composite FB), der einen ADI‑Adapter (Datentyp DINT) in einen ALR‑Adapter (Datentyp LREAL) umwandelt. Er dient als unidirektionaler Konverter zwischen zwei standardisierten Adapter‑Schnittstellen und ermöglicht die nahtlose Integration von ganzzahligen Werten in Systeme, die Gleitkommazahlen benötigen.

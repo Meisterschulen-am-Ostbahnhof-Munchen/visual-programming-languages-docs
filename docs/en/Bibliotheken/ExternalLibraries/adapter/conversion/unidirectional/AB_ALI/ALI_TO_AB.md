@@ -3,6 +3,7 @@
 ![ALI_TO_AB](./ALI_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_TO_AB** function block is a composite function block (FB) according to IEC 61499-2, used to convert a LINT value (64-bit integer) into a BYTE value (8-bit). The conversion is performed via two unidirectional adapter interfaces: The ALI_receiver (socket) receives a LINT value, and the AB_sender (plug) transmits the converted BYTE value. Internally, the conversion block `F_LINT_TO_BYTE` from the IEC 61131 library is used.
@@ -44,7 +45,7 @@ The FB has no direct data outputs. Data is output exclusively via the **AB_OUT**
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **ALI_IN** | Socket (Input) | `adapter::types::unidirectional::ALI` | Receives the LINT value and an associated event. |
 | **AB_OUT** | Plug (Output) | `adapter::types::unidirectional::AB` | Outputs the converted BYTE value and an acknowledgment event. |
 

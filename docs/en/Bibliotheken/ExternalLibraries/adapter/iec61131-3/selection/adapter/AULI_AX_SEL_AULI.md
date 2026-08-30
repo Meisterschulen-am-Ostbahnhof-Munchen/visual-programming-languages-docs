@@ -38,7 +38,7 @@ Since this function block is entirely adapter-based, it has no direct, tradition
 
 The selector channel. The signal present here controls which of the two inputs is routed to the output.
 
-### * **IN0** (Type: `adapter::types::unidirectional::AULI`):
+### * **IN0** (Type: `adapter::types::unidirectional::AULI`)
 
 The first selectable input channel. This value is passed to the output when the selector `G` is in the state `FALSE` (0).
 
@@ -59,9 +59,10 @@ Internally, the module is based on a network of standard function blocks from IE
 1. **Event Acquisition:** As soon as an event arrives at one of the inputs (`IN0.E1`, `IN1.E1`) or at the selector (`G.E1`), it is intercepted via edge-triggered event flip-flops (`E_D_FF` and `E_D_FF_ANY`, respectively), and the current data value (`D1`) is temporarily stored.
 2. **Data Conversion & Transport:** The input data values are transferred to the central selection block via conversion blocks (`F_MOVE` with the data type `ULINT`).
 3. **Selection Logic (Multiplexing):** The block `F_SEL` (Standard Selection) evaluates the state of the selector:
+
 - If the value of `G` is equal to `FALSE`, the value of `IN0` is selected.
 - If the value of `G` is equal to `TRUE`, the value of `IN1` is selected.
-4. **Output:** After successful selection, the result is sent via a further conversion block (`F_MOVE_OUT`) to the output flip-flop (`E_D_FF_ANY_OUT`). This triggers the output event `OUT.E1` and assigns the selected value to `OUT.D1`.
+1. **Output:** After successful selection, the result is sent via a further conversion block (`F_MOVE_OUT`) to the output flip-flop (`E_D_FF_ANY_OUT`). This triggers the output event `OUT.E1` and assigns the selected value to `OUT.D1`.
 
 ## Technical Features
 
@@ -87,9 +88,11 @@ The function block does not have its own explicit state chain (Execution Control
 - **Sensor Redundancy:** Switching between a primary sensor (`IN0`) and a backup sensor (`IN1`) based on a status signal (`G`).
 - **Setpoint Switching:** Switching between an automatic setpoint (e.g., from a recipe control system) and a manually set user-defined setpoint.
 - **Operating Mode Switching:** Routing of different data streams depending on the active system status (e.g., normal operation vs. maintenance mode).
+
 - ## Comparison with Similar Components
 
 Compared to the classic standard selector block `F_SEL`, `AULI_AX_SEL_AULI` offers the following advantages:
+
 - **No manual wiring of events:** With `F_SEL`, data and event lines must be manually synchronized. Here, this happens automatically within the block through the use of adapters.
 - **Increased type safety & clarity:** Connection errors in the higher-level control diagram are minimized because adapters can only be connected to matching counterparts.
 

@@ -3,6 +3,7 @@
 ![E_RS_SYM_INIT](./E_RS_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **E_RS_SYM_INIT** ist ein ereignisgesteuerter, bistabiler Kippschalter (Flipflop) mit symmetrischem Startverhalten und expliziter Initialisierung. Er realisiert die bekannte RS-Flipflop-Logik, wobei der Ausgang **Q** bei einer Initialisierung (Ereignis **INIT**) wahlweise auf TRUE oder FALSE gesetzt werden kann – je nach Wert des Parameters **Q_INIT**. Dies ermöglicht ein definiertes Verhalten nach einem Systemstart oder einer Reinitialisierung.
@@ -92,7 +93,7 @@ Der **E_RS_SYM_INIT** arbeitet als Zustandsautomat mit fünf Zuständen: **START
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied zu E_RS_SYM_INIT |
-|----------|-------------------------------|
+| ---------- | ------------------------------- |
 | **E_RS** (Standard RS-Flipflop) | Kein explizites Startverhalten; bei INIT wird **Q** nicht definiert. **Q_INIT** fehlt. |
 | **E_SR** (Set-Dominant-Flipflop) | Dominanz von Set über Reset; kein initialisierbarer Startzustand. |
 | **E_RS_SYM** | Symmetrische RS-Logik ohne INIT-Funktion; kein Startverhalten. |

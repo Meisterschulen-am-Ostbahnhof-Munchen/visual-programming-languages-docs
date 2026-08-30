@@ -3,9 +3,11 @@
 ![ADI_TO_AL](./ADI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_TO_AL` serves as a composite block for converting an ADI adapter (DINT) to an AL adapter (LWORD). It encapsulates a type conversion from a 32-bit integer value to a 64-bit word and provides the connection via unidirectional adapters. The block is ideal for systems where different data type representations between components need to be bridged.
+
 ## Interface Structure
 
 The block has no direct event or data inputs/outputs. All communication takes place via two adapter interfaces:
@@ -37,7 +39,7 @@ The output data is provided via the AL adapter `AL_OUT.D1` (data type: LWORD).
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|-------------|-----|----------|-----------|
+| ------------- | ----- | ---------- | ----------- |
 | `ADI_IN` | `adapter::types::unidirectional::ADI` | Socket (Input) | Returns a DINT value and controls processing via event `E1`. |
 | `AL_OUT` | `adapter::types::unidirectional::AL` | Plug (Output) | Outputs the converted LWORD value and acknowledges it via event `E1`. |
 

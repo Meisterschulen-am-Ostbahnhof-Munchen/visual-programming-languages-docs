@@ -3,29 +3,31 @@
 ![logiBUS_QDA_PWM](./logiBUS_QDA_PWM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **logiBUS_QDA_PWM** function block is a composite block for controlling a PWM (Double Word) output via a logiBUS system. It encapsulates the initialization and triggering of an internal PWM output block and provides an adapter interface for receiving commands (events and data) from external sources. The block was developed for use in agricultural technology and is licensed under EPL 2.0.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | INIT | EInit | Service Initialization |
 | *no further event input* | | *All triggers are handled via the adapter* |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | INITO | EInit | Initialization Acknowledgement |
 | CNF | Event | Acknowledgement of a requested service |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QI | BOOL | Input Qualifier (Enable Initialization) |
 | PARAMS | STRING | Service Parameter (e.g., Addressing, Configuration) |
 | Output | logiBUS::io::DQ::logiBUS_DO_S | Output Identification (e.g., Output_Q1..Q8); Initial Value: *Invalid* |
@@ -33,7 +35,7 @@ The **logiBUS_QDA_PWM** function block is a composite block for controlling a PW
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QO | BOOL | Output Qualifier (Initialization Status) |
 | STATUS | STRING | Service Status (Failure/Success Message) |
 
@@ -51,7 +53,7 @@ The function block is implemented as a composite and contains an internal instan
 
 An INIT event at the input triggers the initialization of the internal function block. The data inputs *QI*, *PARAMS*, and *Output* are then forwarded to the internal function block. After successful initialization, the event *INITO* is output, along with the output data *QO* and *STATUS*.
 
-2. **Triggering via Adapter:**
+1. **Triggering via Adapter:**
 
 The adapter *OUT* receives an external event *E1* and a data value *D1*. The event is forwarded to the internal function block as a *REQ* (Request), and the data *D1* as an *OUT* value. The internal function block processes this request and acknowledges it with the event *CNF*, which is then output to the external system via the *CNF* output. The associated output data *QO* and *STATUS* are updated.
 
@@ -85,6 +87,7 @@ The internal function block switches between these states depending on the event
 **ERROR:** Error state, indicated by *QO = FALSE* or *STATUS* with an error message.
 
 **The internal function block switches between these states depending on the events and data.**
+
 ## Application Scenarios
 
 - **Agricultural Machinery:** Control of PWM-driven actuators (e.g., hydraulic valves, engine speed) via a logiBUS network.
@@ -94,7 +97,7 @@ The internal function block switches between these states depending on the event
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Special Feature |
-|----------|-----|---------------|
+| ---------- | ----- | --------------- |
 | logiBUS_QD_PWM | Composite/Basic | Directly controllable via INIT, REQ, CNF; without an adapter interface. |
 | **logiBUS_QDA_PWM** | Composite | Like logiBUS_QD_PWM, but with an adapter for external triggering and data supply. |
 | logiBUS_DO (simple) | Basic | Simple digital output, no PWM function. |

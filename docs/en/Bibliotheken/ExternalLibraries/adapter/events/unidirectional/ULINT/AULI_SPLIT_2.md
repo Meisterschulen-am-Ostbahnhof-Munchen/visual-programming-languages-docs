@@ -3,9 +3,11 @@
 ![AULI_SPLIT_2](./AULI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_SPLIT_2** is used to distribute an incoming AULI adapter (unidirectional) to two identical outputs. It is implemented as a generic function block and enables simple signal multiplication in IEC 61499-based systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket (Input)** | IN | AULI (unidirectional) | Incoming AULI data stream |
 | **Plug (Output)** | OUT1 | AULI (unidirectional) | First output, identical copy of IN |
 | **Plug (Output)** | OUT2 | AULI (unidirectional) | Second output, identical copy of IN |
@@ -55,7 +57,7 @@ Since the function block contains no internal logic or state machine, there is n
 ## Comparison with Similar Components
 
 | Component | Function |
-|----------|----------|
+| ---------- | ---------- |
 | **AULI_SPLIT_2** | Split to two outputs (identical to IN) |
 | **AULI_SPLIT_N** | Generalized variant with a configurable number of outputs |
 | **AULI_MERGE** | Merging multiple inputs into one output |

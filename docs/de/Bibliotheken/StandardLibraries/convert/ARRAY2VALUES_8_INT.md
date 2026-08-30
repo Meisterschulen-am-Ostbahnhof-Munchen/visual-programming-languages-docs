@@ -3,6 +3,7 @@
 ![ARRAY2VALUES_8_INT](ARRAY2VALUES_8_INT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ARRAY2VALUES_8_INT` zerlegt ein `INT`-Array der Größe 8 in 8 einzelne Skalarvariablen `OUT_1`…`OUT_8`. Er gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [ARRAY2VALUES_2_LREAL](ARRAY2VALUES_2_LREAL.md)) und dient der Umwandlung von Array-Daten in diskrete Einzelwerte.

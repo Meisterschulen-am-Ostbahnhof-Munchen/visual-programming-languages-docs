@@ -39,20 +39,22 @@ The `Q_INTERLOCK_2` is implemented as a Basic Function Block (BFB) and has an Ex
 
 1. **Initial State (`START`)**: Both outputs are `FALSE`.
 2. **State Transitions**: Upon the occurrence of an event, the corresponding transition is evaluated in the ECC.
+
 - `SET1` or `CLK1` result in state `SET1`.
 - `SET2` or `CLK2` lead to state `SET2`.
 - `R` leads to state `RESET`.
-3. **Algorithm Execution**: In the target state, the corresponding algorithm is executed, setting the output variables.
+1. **Algorithm Execution**: In the target state, the corresponding algorithm is executed, setting the output variables.
+
 - `SET2` or `CLK2` leads to state `SET2`.
 - `R` leads to state `RESET`.
 
 **Algorithm Execution**: In the target state, the corresponding algorithm is executed, setting the output variables.
 
-- * **Algorithm `SET1`**: `OUT1 := TRUE; OUT2 := FALSE;`
+- - **Algorithm `SET1`**: `OUT1 := TRUE; OUT2 := FALSE;`
 - **Algorithm `SET2`**: `OUT1 := FALSE; OUT2 := TRUE;`
 - **Algorithm `RESET`**: `OUT1 := FALSE; OUT2 := FALSE;`
-4. **Event Output**: After the algorithm executes, the output event `EO` is triggered to inform subsequent blocks of the change.
-5. **Return**: After the algorithm executes and `EO` is sent, the ECC always returns to the `START` state.
+1. **Event Output**: After the algorithm executes, the output event `EO` is triggered to inform subsequent blocks of the change.
+2. **Return**: After the algorithm executes and `EO` is sent, the ECC always returns to the `START` state.
 
 The **toggle function** is implemented through the events `CLK1` and `CLK2`. A `CLK1` event always triggers the execution of `SET1`. If `OUT1` was already `TRUE`, this results in no visible change (it remains `TRUE`). However, if `OUT1` was `FALSE`, it is set to `TRUE`. The behavior for `CLK2` is analogous. Mutual interlock is hard-coded in the algorithms `SET1` and `SET2`: If one output is set, the other is always explicitly reset.
 
@@ -85,7 +87,7 @@ After exiting the active states (`SET1`, `SET2`, `RESET`), an automatic, uncondi
 - **E_SR (Set-Reset)**: The classic SR flip-flop has separate `S1`/`S2` and `R1`/`R2` inputs. `Q_INTERLOCK_2` combines this with toggle functionality (`CLK1`/`CLK2`) and enforces mutual exclusivity internally. With `E_SR`, setting both inputs simultaneously could result in an undefined state, which is prevented by the interlock.
 - **E_RS (Reset-Set)**: Similar to `E_SR`, but with a prioritized reset. `Q_INTERLOCK_2` has a global reset `R` with the highest priority, but the set inputs are equal to each other (the last triggered set or toggle event takes precedence).
 - **E_RS (Reset-Set)**: Similar to `E_SR`, but with a prioritized reset. `Q_INTERLOCK_2` has a global reset `R` with the highest priority, but the set inputs are equal (the last triggered set or toggle event takes precedence).
-- * **E_T (T-Flip-flop)**: A pure toggle block without a set function and without a second, locked output. `Q_INTERLOCK_2` extends this with the dual, latched structure.
+- - **E_T (T-Flip-flop)**: A pure toggle block without a set function and without a second, locked output. `Q_INTERLOCK_2` extends this with the dual, latched structure.
 
 ## Conclusion
 

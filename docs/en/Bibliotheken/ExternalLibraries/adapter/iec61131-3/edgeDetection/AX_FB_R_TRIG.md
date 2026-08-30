@@ -3,6 +3,7 @@
 ![AX_FB_R_TRIG_ecc](./AX_FB_R_TRIG_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_FB_R_TRIG** (Rising Trigger with AX Adapter) is used to detect the rising edge of a Boolean signal. Unlike the standard `R_TRIG` block according to IEC 61131-3, this block uses **AX adapters** for input and output. It encapsulates the edge detection logic in an adapter-based architecture, which simplifies integration into systems that use `adapter::types::unidirectional::AX`.
@@ -40,10 +41,11 @@ The component implements the classic logic of a "Rising Edge Detector":
 1. The component waits for an event at the adapter input `CLK` (signal `CLK.E1`).
 2. As soon as the event occurs, the algorithm `REQ` is executed.
 3. The algorithm checks the current value of the data input (`CLK.D1`) and compares it to the stored state from the previous cycle (`MEM`).
+
 - **Logic:** `Q.D1 := CLK.D1 AND NOT MEM`
-4. If `CLK.D1` is true (`TRUE`) and the stored value `MEM` was false (`FALSE`), the output `Q.D1` is set to `TRUE`. In all other cases, `Q.D1` is `FALSE`.
-5. The internal memory `MEM` is then updated with the current value of `CLK.D1`.
-6. Finally, the event is triggered at the output adapter `Q` (`Q.E1`) to inform subsequent function blocks.
+1. If `CLK.D1` is true (`TRUE`) and the stored value `MEM` was false (`FALSE`), the output `Q.D1` is set to `TRUE`. In all other cases, `Q.D1` is `FALSE`.
+2. The internal memory `MEM` is then updated with the current value of `CLK.D1`.
+3. Finally, the event is triggered at the output adapter `Q` (`Q.E1`) to inform subsequent function blocks.
 
 ## Technical Features
 

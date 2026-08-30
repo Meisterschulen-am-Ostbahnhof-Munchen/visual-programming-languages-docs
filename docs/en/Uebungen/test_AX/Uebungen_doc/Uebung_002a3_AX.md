@@ -1,8 +1,9 @@
 # Exercise_002a3_AX: DigitalInput_I1/_I2 with OR on DigitalOutput_Q1, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a3_AX`. In this exercise, a logical OR gate is implemented, in which a digital output is activated as soon as at least one of two digital inputs is in the "True" (HIGH) state.
+This article describes the logiBUS® exercise `Uebung_002a3_AX`. In this exercise, a logical OR gate is implemented, in which a digital output is activated as soon as at least one of two digital inputs is in the "True" (HIGH) state
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to demonstrate the functionality of an OR gate in automation technology. It shows how alternative conditions (inputs) can be used to trigger the same action (output). This is a standard requirement for systems that must be operable from multiple locations.

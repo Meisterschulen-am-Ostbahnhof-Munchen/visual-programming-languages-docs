@@ -4,6 +4,7 @@
 ![AI_SUB_2](./AI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_SUB_2` ist ein generischer, arithmetischer Funktionsbaustein zur Durchführung einer Subtraktion. Er ist speziell für den Einsatz mit analogen Schnittstellen-Adaptern konzipiert. Der Baustein berechnet die Differenz zwischen zwei analogen Eingangswerten und stellt das Ergebnis an einem analogen Ausgangs-Adapter zur Verfügung. Durch die Verwendung von Adaptern wird das Schnittstellendesign in der 4diac-ide übersichtlich gehalten.

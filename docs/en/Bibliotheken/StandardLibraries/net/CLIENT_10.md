@@ -3,6 +3,7 @@
 ![CLIENT_10](CLIENT_10.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `CLIENT_10` function block is the generic client variant with 10 send and 10 receive data fields for communicating with a matching [SERVER_10](SERVER_10.md) block. It transmits 10 data values (`SD_1` `SD_2` `SD_3` `SD_4` `SD_5` `SD_6` `SD_7` `SD_8` `SD_9` `SD_10`) to the server and receives 10 data values (`RD_1` `RD_2` `RD_3` `RD_4` `RD_5` `RD_6` `RD_7` `RD_8` `RD_9` `RD_10`) back. Like all `CLIENT_*` blocks, it is based on the generic `GEN_CLIENT` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

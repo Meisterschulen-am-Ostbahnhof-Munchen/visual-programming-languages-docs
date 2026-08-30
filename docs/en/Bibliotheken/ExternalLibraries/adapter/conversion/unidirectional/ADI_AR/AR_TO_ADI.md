@@ -3,9 +3,11 @@
 ![AR_TO_ADI](./AR_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_TO_ADI** is a composite block that converts a REAL adapter (AR) into a DINT adapter (ADI). It is used to mediate between interfaces with different data types, with the conversion occurring in an event-driven manner.
+
 ## Interface Structure
 
 The block's interface consists exclusively of adapters that bundle both events and data. There are no separate inputs or outputs.
@@ -33,7 +35,7 @@ Activated after successful conversion.
 ### **Adapters**
 
 | Adapter | Name | Direction | Description |
-|---------|------|----------|-------------|
+| --------- | ------ | ---------- | ------------- |
 | AR | AR_IN | Socket (Input) | Unidirectional REAL adapter that provides the input signal. |
 | ADI | ADI_OUT | Plug (Output) | Unidirectional DINT adapter that forwards the converted signal. |
 

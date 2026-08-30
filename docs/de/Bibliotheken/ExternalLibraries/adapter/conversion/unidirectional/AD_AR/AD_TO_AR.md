@@ -3,6 +3,7 @@
 ![AD_TO_AR](./AD_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_TO_AR** ist ein Composite-Baustein zur Umwandlung eines DWORD-Werts aus einem unidirektionalen AD-Adapter (Socket) in einen REAL-Wert, der über einen AR-Adapter (Plug) ausgegeben wird. Er kapselt die Konvertierungslogik und ermöglicht so eine einfache Adapter-basierte Datenübertragung zwischen unterschiedlichen Datentypen.

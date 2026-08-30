@@ -1,10 +1,11 @@
 # Exercise_011_AUDI: Numeric Value Input
 
-This article describes the logiBUS® exercise `Uebung_011_AUDI`. It is the adapter-based version of exercise 011 and demonstrates how numeric values can be processed efficiently and clearly.
+This article describes the logiBUS® exercise `Uebung_011_AUDI`. It is the adapter-based version of exercise 011 and demonstrates how numeric values can be processed efficiently and clearly
 ----
+
 ## Objective of the Exercise
 
-To learn modern, adapter-based processing of ISOBUS terminal inputs. Using adapters makes the block network more compact, and the separation of event and data flow is implicit within the adapter structure.
+To learn modern, adapter-based processing of ISOBUS terminal inputs. Using adapters makes the block network more compact, and the separation of event and data flow is implicit within the adapter structure
 -----
 
 ## Description and Components

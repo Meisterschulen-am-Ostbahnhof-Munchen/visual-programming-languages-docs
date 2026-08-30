@@ -3,9 +3,11 @@
 ![AUDI_FIELDBUS_UDINT_TO_SIGNAL](./AUDI_FIELDBUS_UDINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_FIELDBUS_UDINT_TO_SIGNAL` mirrors an incoming `UDINT` value (via the `IN` adapter) to the `OUT` adapter, provided the incoming signal is recognized as valid. Additionally, the validity signal is output via the `VALID` adapter. This function block acts as a filter, allowing only valid data packets to pass through and providing their status synchronously.
+
 ## Interface Structure
 
 This function block has no direct input/output events or data, but operates exclusively via adapters that transport both events and data.
@@ -31,7 +33,7 @@ This function block has no direct input/output events or data, but operates excl
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket | Signal input (reads data and events) |
 | `OUT` | `adapter::types::unidirectional::AUDI` | Plug | Filtered signal output |
 | `VALID` | `adapter::types::unidirectional::AX` | Plug | Validation Indicator (Output for Boolean & Event) |
@@ -69,7 +71,7 @@ Thus, the validity signal is only updated and output after the signal processing
 The function block does not have its own state machine; its behavior is determined by the internal D flip-flop. This flip-flop has two states:
 
 | State | Q (Output) | Meaning |
-|---------|-------------|-----------|
+| --------- | ------------- | ----------- |
 | 0 | `FALSE` | Signal currently invalid |
 | 1 | `TRUE` | Signal valid |
 
@@ -84,7 +86,7 @@ The state changes on each rising clock edge (`CLK`) to the current value of `D`.
 ## Comparison with similar function blocks
 
 | Function block | Feature |
-|----------|---------|
+| ---------- | --------- |
 | `FIELDBUS_UDINT_TO_SIGNAL` alone | Passes the invalid signal on immediately – without validity synchronization. |
 | `AUDI_FIELDBUS_UDINT_TO_SIGNAL` (this function block) | **Additional synchronization** of the validity signal via a D flip-flop, so that `VALID` is only updated with the next clock cycle. |
 | Other validation function blocks | Often without dynamic synchronization; this function block is particularly suitable for cyclic bus systems where data and validity may arrive with a time delay. |

@@ -3,6 +3,7 @@
 ![XOR_4](https://user-images.githubusercontent.com/116869307/214143769-c8306099-6b4d-4e74-ad33-3cd11198e36d.png)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der XOR_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen XOR-Verknüpfung mit vier Eingängen. Er implementiert die exklusive ODER-Operation auf Bitebene gemäß dem IEC 61131-3 Standard und kann mit verschiedenen Bit-Datentypen arbeiten.
@@ -37,9 +38,11 @@ Der Funktionsblock verwendet keine Adapter.
 ## Funktionsweise
 
 Bei Eintreffen des REQ-Ereignisses führt der XOR_4-Block eine bitweise XOR-Operation auf allen vier Eingängen durch. Die Operation wird gemäß der folgenden Logik ausgeführt:
+
 ```
 OUT = IN1 XOR IN2 XOR IN3 XOR IN4
 ```
+
 Nach Abschluss der Berechnung wird das CNF-Ereignis zusammen mit dem Ergebnis an OUT ausgegeben.
 
 ## Technische Besonderheiten

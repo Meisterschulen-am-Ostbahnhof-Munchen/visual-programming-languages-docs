@@ -3,9 +3,11 @@
 ![AR_TO_AUDI](./AR_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_TO_AUDI` is a composite function block (FB) that receives a REAL value from a unidirectional **AR** adapter, converts it to a **UDINT** value, and outputs it via an **AUDI** adapter. It encapsulates the type conversion `REAL_TO_UDINT` and simplifies integration into adapter-based communication structures.
+
 ## Interface Structure
 
 The function block has no dedicated event or data inputs/outputs. All communication takes place via two adapters (socket and plug).
@@ -34,11 +36,11 @@ The function block internally contains an instance of the conversion function bl
 
 The event `AR_IN.E1` triggers the conversion function block via its event input `REQ`.
 
-2. **Data Conversion**
+1. **Data Conversion**
 
 Simultaneously, the REAL value of `AR_IN.D1` is transferred to the data input `IN` of `F_REAL_TO_UDINT`. The conversion occurs without delay within the event cycle.
 
-3. **Output Event and Result**
+1. **Output Event and Result**
 
 After successful conversion, `F_REAL_TO_UDINT` sends an acknowledgment event (`CNF`) to the output adapter (`AUDI_OUT.E1`). The converted UDINT value is forwarded to `AUDI_OUT.D1` via the data output `OUT`.
 

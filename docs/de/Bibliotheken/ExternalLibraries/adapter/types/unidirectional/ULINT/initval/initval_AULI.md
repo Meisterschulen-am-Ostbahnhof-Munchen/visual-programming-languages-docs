@@ -3,6 +3,7 @@
 ![initval_AULI](initval_AULI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AULI` ist der konfigurierbare Initialisierungsbaustein für den [AULI](../AULI.md)-Adapter (Datentyp `ULINT`, 64-Bit-Ganzzahl (vorzeichenlos)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AULI`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

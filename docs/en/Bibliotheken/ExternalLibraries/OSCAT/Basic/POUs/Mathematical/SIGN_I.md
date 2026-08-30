@@ -1,6 +1,7 @@
 # SIGN_I
 
 this function returns true if the integer input is negative
+
 ## Interface
 
 ### Event inputs

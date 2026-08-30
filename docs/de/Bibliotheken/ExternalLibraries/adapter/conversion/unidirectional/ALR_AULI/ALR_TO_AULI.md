@@ -3,6 +3,7 @@
 ![ALR_TO_AULI](./ALR_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_TO_AULI** ist ein **Composite FB** zur unidirektionalen Umwandlung eines **LREAL-Adapter-Signals** (Typ `ALR`) in ein **ULINT-Adapter-Signal** (Typ `AULI`). Durch die interne Verwendung des IEC‑61131‑Standard-FBs `F_LREAL_TO_ULINT` wird die Gleitkommazahl (LREAL) in eine vorzeichenlose Ganzzahl (ULINT) konvertiert und über einen Ausgangsadapter bereitgestellt. Der Baustein eignet sich besonders für die Integration von Gleitkomma-Datenquellen in Systeme, die eine ganzzahlige Adapter-Schnittstelle erwarten.

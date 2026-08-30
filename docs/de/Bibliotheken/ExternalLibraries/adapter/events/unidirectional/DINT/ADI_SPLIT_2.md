@@ -29,7 +29,7 @@ Keine – dieser Funktionsblock besitzt keine separaten Daten-Ausgänge. Alle Da
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::ADI` | `IN` | Socket | Eingehender ADI-Adapter, der auf die beiden Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::ADI` | `OUT1` | Plug | Erster Ausgangs-Adapter (Duplikat des Eingangs). |
 | `adapter::types::unidirectional::ADI` | `OUT2` | Plug | Zweiter Ausgangs-Adapter (Duplikat des Eingangs). |

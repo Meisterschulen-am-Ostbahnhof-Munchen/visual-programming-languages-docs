@@ -3,6 +3,7 @@
 ![AUDI_AX_SEL_AUDI](./AUDI_AX_SEL_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_AX_SEL_AUDI** realisiert eine binäre Auswahl (binary selection) zwischen zwei Eingabewerten. Er fungiert als Multiplexer, der abhängig von einem Selektorsignal einen der beiden Eingänge an den Ausgang durchschaltet. Die Kommunikation erfolgt ausschließlich über unidirektionale Adapter, die sowohl Ereignis- als auch Datensignale kapseln. Dadurch wird eine flexible und typengebundene Einbindung in existierende Signalpfade ermöglicht.
@@ -38,11 +39,11 @@ Der FB besitzt keine dedizierten Daten-Ausgänge. Der ausgewählte Datenwert wir
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Kommentar |
-|---------|----------|-----|-----------|
+| --------- | ---------- | ----- | ----------- |
 | **IN0** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster auswählbarer Eingang |
 | **IN1** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter auswählbarer Eingang |
-| **G**   | Socket (Eingang) | `adapter::types::unidirectional::AX`   | Selektor (Ereignis + Daten) |
-| **OUT** | Plug (Ausgang)  | `adapter::types::unidirectional::AUDI` | Ausgangsfeld mit Ereignis und Daten |
+| **G** | Socket (Eingang) | `adapter::types::unidirectional::AX` | Selektor (Ereignis + Daten) |
+| **OUT** | Plug (Ausgang) | `adapter::types::unidirectional::AUDI` | Ausgangsfeld mit Ereignis und Daten |
 
 ## Funktionsweise
 
@@ -85,7 +86,7 @@ Die Verwendung benutzerdefinierter Adaptertypen (`AUDI`, `AX`) erlaubt eine einf
 ## Vergleich mit ähnlichen Bausteinen
 
 | Kriterium | **AUDI_AX_SEL_AUDI** | Einfacher Bool-MUX (z. B. `F_SEL`) |
-|-----------|------------------------|---------------------------------------|
+| ----------- | ------------------------ | --------------------------------------- |
 | **Schnittstelle** | Reine Adapter (Ereignis+Daten gekapselt) | Getrennte Ein-/Ausgangspins |
 | **Datentyp** | Benutzerdefinierte Typen (`AUDI`, `AX`) | Beliebig (parametrierbar) |
 | **Selektor** | Ereignisgesteuert (über Adapter) | Datenbasiert, ohne extra Ereignis |

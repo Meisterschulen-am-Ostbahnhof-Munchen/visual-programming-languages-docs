@@ -1,9 +1,11 @@
 # ST01X
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `ST01X` is a simple structured data type that encapsulates a single Boolean value (BOOL). It serves to provide a clearly defined structure for a single binary state, which can improve standardization and readability in more complex applications.
+
 ## Interface Structure
 
 The "interface structure" of a data type refers to its internal members, which form the definition of the data type. The data type `ST01X` has the following internal structure:

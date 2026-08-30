@@ -3,9 +3,11 @@
 ![AW_TO_ADI](./AW_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AW_TO_ADI** function block is a composite block that converts a unidirectional WORD adapter (AW) into a unidirectional DINT adapter (ADI). It enables the seamless integration of components that work with WORD data into systems that expect DINT values. Internally, the block uses the standard conversion block `F_WORD_TO_DINT` from the IEC 61131 library.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,9 +37,9 @@ The converted DINT value is output via the plug adapter `ADI_OUT`.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|---------|-----------------------------|----------|--------------|
+| --------- | ----------------------------- | ---------- | -------------- |
 | `AW_IN` | `adapter::types::unidirectional::AW` | Socket (Input) | WORD adapter as input. Returns the trigger event (E1) and the WORD data value (D1). |
-| `ADI_OUT`| `adapter::types::unidirectional::ADI` | Plug (Output) | DINT adapter as output. Returns the acknowledgment event (E1) and the converted DINT value (D1). |
+| `ADI_OUT` | `adapter::types::unidirectional::ADI` | Plug (Output) | DINT adapter as output. Returns the acknowledgment event (E1) and the converted DINT value (D1). |
 
 ## Functionality
 

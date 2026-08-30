@@ -21,7 +21,7 @@ None
 #### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|-----------|--------------|
+| ------------- | ----- | ----------- | -------------- |
 | **IN** | `adapter::types::unidirectional::ALR` | Socket | Input signal that is routed to all outputs |
 | **OUT1** | `adapter::types::unidirectional::ALR` | Plug | Output 1 – duplicated signal |
 | **OUT2** | `adapter::types::unidirectional::ALR` | Plug | Output 2 – duplicated signal |

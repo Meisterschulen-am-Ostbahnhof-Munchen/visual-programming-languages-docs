@@ -3,6 +3,7 @@
 ![Uebung_080f_network](./Uebung_080f_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the event-driven increment counter `E_CTU` according to IEC 61499. The counter is incremented and decremented using two pushbuttons. The current counter value is displayed on a numeric display as an animated horse (single frames). A digital output is set as soon as the counter reaches the predefined limit.
@@ -64,16 +65,19 @@ This exercise is suitable for users who want to take their first steps with coun
 The flow is controlled by events:
 
 1. **Counter Input**
+
 - A click on button I1 generates an event `IND` at the block `DigitalInput_CLK_I1`.
 - This event is directly routed to input `CU` of `E_CTU`. The counter increments by 1.
-2. **Reset**
+1. **Reset**
+
 - Clicking button I2 generates an event `IND` at `DigitalInput_CLK_I2`.
 - This event is routed to input `R` of `E_CTU`. The counter is reset to 0.
-3. **Event Merging**
+1. **Event Merging**
+
 - Both the output `CUO` (after counter increment) and `RO` (after reset) of `E_CTU` are connected to the inputs `EI1` and `EI2` of `E_MERGE_2`.
 - The merged output `EO` is activated with every counter change.
 
-4. **Display and Output Update**
+1. **Display and Output Update**
 
 - The common event `EO` is forwarded in parallel to two components:
 - **Multiplexer**: The event reaches the `REQ` input of `F_MUX_32`. The current counter value `CV` (data connection from `E_CTU.CV` to `F_MUX_32.K`) selects the appropriate frame. The multiplexer outputs the selected frame at its output `OUT`.
@@ -104,4 +108,4 @@ Prerequisites: Basic knowledge of IEC 61499 event processing and the 4diac IDE. 
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 - [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
-*
+-

@@ -5,6 +5,7 @@
 ![sequence_E_04_ecc](./sequence_E_04_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_E_04` ist ein Sequenzer, der eine lineare Abfolge von vier Zuständen (State_01 bis State_04) mit einem definierten Startzustand (START) und einem Endzustand (State_00) realisiert. Der Übergang zwischen den einzelnen Zuständen erfolgt ausschließlich durch externe Ereignisse. Der Baustein ist für Steuerungsaufgaben konzipiert, bei denen eine schrittweise, ereignisgesteuerte Abarbeitung erforderlich ist, wie z.B. in einfachen Prozess- oder Montageabläufen.

@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_080`. It introduces the basic principle of event counting.
+
 ## 🎧 Podcast
 
 ![Uebung_080_network](./Uebung_080_network.svg)

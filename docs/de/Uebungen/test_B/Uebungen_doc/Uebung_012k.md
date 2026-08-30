@@ -1,6 +1,7 @@
 # Uebung_012k: String Input und Speichern INI mit Subapp
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert das Einlesen eines String-Wertes von einer Eingabequelle (z. B. einem Touch-Eingabefeld) und das dauerhafte Speichern dieses Wertes in einer INI-Datei. Die gesamte Funktionalität ist in einer Subapp gekapselt, die als wiederverwendbarer Baustein zur Verfügung steht. Der gespeicherte Wert steht nach jedem Lese- oder Speichervorgang als Ausgang zur Verfügung und wird gleichzeitig an eine Ausgabekomponente (z. B. Display) übermittelt.

@@ -40,6 +40,7 @@ OUT_00 := IN[0];
 OUT_01 := IN[1];
 ...
 OUT_07 := IN[7];
+
 - **Fixed Size:** The block is specifically designed for arrays with exactly 8 elements (`ARR08B`). Separate blocks are required for arrays of other lengths.
 - **Synchronous Processing:** Processing occurs in a single cycle without delay. The latency between `REQ` and `CNF` is minimal.
 - **No Internal State:** The block has no internal memory. The output is a direct function of the current input at any given time.
@@ -48,14 +49,16 @@ The function block has no internal states in the sense of a state machine. Its b
 
 1. **Idle State:** Waiting for the `REQ` event.
 2. **Execution State:** At `REQ`, the data is transferred and the `CNF` event is immediately generated. The block then returns to its idle state.
+
 - **Data Distribution:** Splitting a received data packet (e.g., from a communication interface) into its individual byte components for further processing in the application.
 - **Interface Adapter:** Connecting function blocks that work with array structures to blocks that expect individual byte inputs.
 - **Data Logging and Visualization:** Separating array data to selectively display or store individual bytes in HMIs or logging systems.
-*
+-
+
 - **`SEL_n` / `MUX` blocks:** These blocks select an element from an array based on an index. `ARR08B_TO_BYTES`, on the other hand, extracts **all** elements simultaneously and in parallel.
 - **`BYTES_TO_ARR08B`:** This is the inverse block, which combines eight individual byte inputs into an 8-byte array.
 - **Generic Array Splitting Blocks:** More generic blocks might exist that take the array length as a parameter. `ARR08B_TO_BYTES`, due to its fixed size, is simpler, faster, and requires no configuration.
-*
+-
 
 The `ARR08B_TO_BYTES` function block is a specialized, efficient, and reliable building block for the fundamental operation of array decomposition. Its strength lies in its simplicity and unambiguity for the specific use case of an 8-byte array. For control applications where this data structure is common, it offers an optimized and maintainable solution compared to manual indexing in more complex blocks.
 

@@ -1,9 +1,11 @@
 # RT_Bridge_1
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_1 function block serves as a decoupling bridge for a data connection between real-time event chains. It enables secure data exchange between different execution contexts.
+
 ## Interface Structure
 
 ### **Event Inputs**

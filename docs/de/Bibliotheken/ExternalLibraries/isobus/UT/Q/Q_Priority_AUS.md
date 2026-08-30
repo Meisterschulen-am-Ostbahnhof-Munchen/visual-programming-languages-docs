@@ -19,7 +19,7 @@ Der Funktionsblock Q_Priority_AUS dient zur Änderung der Priorität einer Alarm
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Beschreibung |
-|----------|-----|-------------|
+| ---------- | ----- | ------------- |
 | INITO | EInit | Bestätigung der erfolgreichen Initialisierung. |
 | CNF | Event | Bestätigung des angeforderten Dienstes; wird mit `STATUS` und `s16result` ausgegeben. |
 
@@ -32,7 +32,7 @@ Der Funktionsblock Q_Priority_AUS dient zur Änderung der Priorität einer Alarm
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | STATUS | STRING | Status des Dienstes (z. B. Fehler- oder Erfolgsmeldung) |
 | s16result | INT | Rückgabewert gemäß Beschreibung (siehe Funktionsweise) |
 

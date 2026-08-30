@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_MUL_3` ist ein generischer arithmetischer Baustein, der für die Multiplikation von drei Eingangswerten entwickelt wurde. Er entspricht der Klassifizierung für Standard-Arithmetikfunktionen nach IEC 61131-3 und nutzt das Adapter-Konzept von 4diac. Durch die Kapselung der Signale in Adaptern wird die visuelle Komplexität im Funktionsplan erheblich reduziert.

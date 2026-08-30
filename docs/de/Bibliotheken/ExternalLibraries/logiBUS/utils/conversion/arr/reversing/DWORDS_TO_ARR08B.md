@@ -3,6 +3,7 @@
 ![DWORDS_TO_ARR08B](./DWORDS_TO_ARR08B.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **DWORDS_TO_ARR08B** wandelt zwei 32‑Bit‑DWORD-Werte in ein Array von acht Bytes (BYTE) um. Die Konvertierung erfolgt im Little‑Endian‑Format (Intel‑Standard), d. h. das niederwertigste Byte eines DWORDs wird an die kleinste Indexposition des Ausgangsarrays geschrieben. Der Baustein ist für den Einsatz auf PC‑basierten Steuerungen (z. B. Beckhoff, Wago, B&R, Raspberry Pi) optimiert.

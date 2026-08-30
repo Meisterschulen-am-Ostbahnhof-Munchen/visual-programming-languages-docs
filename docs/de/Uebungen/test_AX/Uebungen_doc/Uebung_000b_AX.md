@@ -3,6 +3,7 @@
 ![Uebung_000b_AX_network](./Uebung_000b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung von **Adapter-Funktionsbausteinen** zur Realisierung einer logischen UND-Verknüpfung. Innerhalb der SubApp werden Boolesche Werte über Adapterverbindungen zwischen Konvertierungsbausteinen und einem logischen UND-Baustein ausgetauscht. Sie lernen die grundlegende Struktur von Adaptern und deren Zusammenspiel in einer SubApp kennen.

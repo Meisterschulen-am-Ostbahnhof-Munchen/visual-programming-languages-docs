@@ -3,6 +3,7 @@
 ![AUDI_FB_CTU](./AUDI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AUDI_FB_CTU** ist ein Aufwärtszähler (Up Counter) für den Datentyp **UDINT** (32‑Bit vorzeichenlos), der über standardisierte **AUDI‑Adapter** angebunden wird. Der Baustein kapselt die IEC 61131‑Zählfunktion in einer adapterbasierten Architektur und erlaubt das Triggern von Zählimpulsen, Reset‑ und Preset‑Operationen über Adapter‑Events. Jeder zählrelevante Vorgang (Zählimpuls, Reset, Setzen des Presetwerts) löst zwingend einen Ausgangs‑Event aus – unabhängig davon, ob sich der Zählerstand oder der Ausgangswert ändert. Soll eine reine Änderungsauslösung (on‑change) realisiert werden, muss ein nachgeschalteter AX_D_FF‑Baustein verwendet werden.
@@ -46,7 +47,7 @@ Auch die Daten werden **über die Adapter‑Sockets** bereitgestellt:
 ### **Adapter**
 
 | Adapter-Typ | Richtung | Name | Kurzbeschreibung |
-|-------------|----------|------|------------------|
+| ------------- | ---------- | ------ | ------------------ |
 | `AX` (unidirectional) | Socket (Eingang) | CU | Liefert das Zählimpuls‑Ereignis und einen flankenbewerteten Datenwert. |
 | `AX` (unidirectional) | Socket (Eingang) | R | Liefert das Reset‑Ereignis und den Resetschalter. |
 | `AUDI` (unidirectional) | Socket (Eingang) | PV | Liefert das Preset‑Ereignis und den Preset‑Zahlenwert. |

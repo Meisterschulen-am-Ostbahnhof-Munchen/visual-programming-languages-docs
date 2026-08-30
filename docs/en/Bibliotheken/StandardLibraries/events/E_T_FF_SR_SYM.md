@@ -3,6 +3,7 @@
 ![E_T_FF_SR_SYM_ecc](./E_T_FF_SR_SYM_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_T_FF_SR_SYM` combines the functionality of [E_RS_SYM](E_RS_SYM.md) (bistable set/reset with symmetric start-up) and a toggle flip-flop in a single block: in addition to the `S` and `R` inputs, it has a clock input `CLK` that toggles output `Q` independently of `S`/`R`.
@@ -38,7 +39,7 @@ From the initial state `START`, `S`, `R`, **and** `CLK` all lead to a defined fo
 ## State Overview
 
 | State | Meaning |
-|---|---|
+| --- | --- |
 | START | Initial state, reacts symmetrically to `S`, `R`, `CLK` |
 | SET | `Q = TRUE`; `R`→RESET, `CLK`→RESET |
 | RESET | `Q = FALSE`; `S`→SET, `CLK`→SET |

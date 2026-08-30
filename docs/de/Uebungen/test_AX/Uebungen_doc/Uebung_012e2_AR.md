@@ -3,6 +3,7 @@
 ![Uebung_012e2_AR_network](./Uebung_012e2_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination eines logiBUS-Digital-Eingangs, einer parametrierbaren Zeitbasis und eines über einen Sub-App-Baustein konfigurierten Timerwerts, der aus einem NVS (Non-Volatile Storage) geladen wird. Ein digitales Eingangssignal startet einen Timer, dessen Ablaufzeit über einen gespeicherten numerischen Wert (INI) eingestellt wird. Der Timerausgang schaltet einen digitalen Ausgang. Die Besonderheit liegt in der AR-Adapter-Verknüpfung zwischen dem Speicherbaustein, der arithmetischen Einheit und dem Timer.

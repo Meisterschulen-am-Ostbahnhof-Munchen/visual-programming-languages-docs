@@ -3,6 +3,7 @@
 ![ILOCK_CONFLICT_TRIP](./ILOCK_CONFLICT_TRIP.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ILOCK_CONFLICT_TRIP** dient der **priorisierten Verriegelung** mit **Konflikterkennung**. Er wertet zwei gegensätzliche Binärsignale (z. B. „Vor“ und „Zurück“) aus und gibt nur einen der beiden Befehle aktiv weiter, solange diese nicht gleichzeitig anliegen. Bei gleichzeitiger Aktivität beider Eingänge wird ein **Trip-Zustand** (Fehler/Sperre) ausgelöst, der nur durch einen expliziten Reset (bei inaktiven Eingängen) aufgehoben werden kann. Der Baustein ist speziell für sicherheitskritische Anwendungen ausgelegt, bei denen widersprüchliche Steuerbefehle zuverlässig erkannt werden müssen.
@@ -12,16 +13,16 @@ Der Funktionsblock **ILOCK_CONFLICT_TRIP** dient der **priorisierten Verriegelun
 ### **Ereignis-Eingänge**
 
 | Ereignis | Beschreibung |
-|----------|--------------|
-| **EI_UP**   | Ereignis zur Verarbeitung einer „Aufwärts“-Anforderung (mit Daten `DI_UP`) |
+| ---------- | -------------- |
+| **EI_UP** | Ereignis zur Verarbeitung einer „Aufwärts“-Anforderung (mit Daten `DI_UP`) |
 | **EI_DOWN** | Ereignis zur Verarbeitung einer „Abwärts“-Anforderung (mit Daten `DI_DOWN`) |
 | **EI_RESET** | Ereignis zum Zurücksetzen des Trip-Zustands (liest beide Dateneingänge) |
 
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Beschreibung |
-|----------|--------------|
-| **EO_UP**   | Bestätigt die Ausgabe des „Aufwärts“-Befehls (bei aktivem Zustand UP) |
+| ---------- | -------------- |
+| **EO_UP** | Bestätigt die Ausgabe des „Aufwärts“-Befehls (bei aktivem Zustand UP) |
 | **EO_DOWN** | Bestätigt die Ausgabe des „Abwärts“-Befehls (bei aktivem Zustand DOWN) |
 | **EO_TRIP** | Zeigt an, dass ein Trip-Zustand vorliegt (bei aktivem Zustand TRIP) |
 
@@ -79,11 +80,11 @@ Der Funktionsblock besitzt vier Betriebszustände: **STOP**, **UP**, **DOWN** un
 ## Zustandsübersicht
 
 | Zustand | DO_UP | DO_DOWN | DO_TRIP | Beschreibung |
-|---------|-------|---------|---------|--------------|
+| --------- | ------- | --------- | --------- | -------------- |
 | **STOP** | FALSE | FALSE | FALSE | Ruhezustand, keine Richtung aktiv |
-| **UP**   | TRUE  | FALSE | FALSE | Aufwärts-Richtung aktiv |
-| **DOWN** | FALSE | TRUE  | FALSE | Abwärts-Richtung aktiv |
-| **TRIP** | FALSE | FALSE | TRUE  | Konflikt/Sperre aktiv |
+| **UP** | TRUE | FALSE | FALSE | Aufwärts-Richtung aktiv |
+| **DOWN** | FALSE | TRUE | FALSE | Abwärts-Richtung aktiv |
+| **TRIP** | FALSE | FALSE | TRUE | Konflikt/Sperre aktiv |
 
 ## Anwendungsszenarien
 

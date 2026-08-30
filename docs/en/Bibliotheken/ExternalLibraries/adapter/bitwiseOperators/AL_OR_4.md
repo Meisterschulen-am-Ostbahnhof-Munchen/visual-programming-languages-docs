@@ -3,6 +3,7 @@
 ![AL_OR_4](./AL_OR_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AL_OR_4** is a generic function block for the bitwise OR operation across 4 input values of type `LWORD` (64-bit bit pattern (long word)). Unlike the Boolean operation on single truth values (as in the `AX_OR` blocks), every bit of the data word is combined independently here.

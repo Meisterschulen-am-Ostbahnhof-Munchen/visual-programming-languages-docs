@@ -5,6 +5,7 @@
 ![BYTE_TO_ARR08X](./BYTE_TO_ARR08X.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `BYTE_TO_ARR08X` dient der Konvertierung eines einzelnen Byte-Wertes in ein Array von acht booleschen Werten (BOOL). Jedes Bit des Eingangsbytes wird einem separaten Element im Ausgangsarray zugeordnet. Dieser Baustein ist besonders nützlich, um kompakte digitale Informationen, die in einem Byte gespeichert sind, für die individuelle Verarbeitung oder Visualisierung aufzuschlüsseln.

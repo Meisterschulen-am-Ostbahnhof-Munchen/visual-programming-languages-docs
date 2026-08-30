@@ -3,9 +3,11 @@
 ![IA_GBSD](./IA_GBSD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **IA_GBSD** serves as an adapter wrapper for the ISOBUS-compatible module **I_GBSD** ("Ground Based Speed and Distance"). It encapsulates the initialization and data communication of a ground-based speed and distance sensor according to ISO 11783-7 (PGN 65097) and provides the values via unidirectional adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,14 +31,14 @@ The function block **IA_GBSD** serves as an adapter wrapper for the ISOBUS-compa
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|--------|------------------------------|
+| -------- | -------- | ------------------------------ |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Status Information |
 
 ### **Adapters**
 
 | Name | Type | Comment |
-|----------|-------------------------------|----------------------------------------|
+| ---------- | ------------------------------- | ---------------------------------------- |
 | SPEED | adapter::types::unidirectional::AUI | Ground-based machine speed |
 | DISTANCE | adapter::types::unidirectional::AUDI | Ground-based machine distance |
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout status |

@@ -6,6 +6,7 @@
 
 The function block `F_OR` implements a bitwise OR operation according to the IEC 61131-3 standard. It performs a logical OR operation on two input variables of type `ANY_BIT` and outputs the result.
 ![F_OR](F_OR.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,15 +3,17 @@
 ![ILOCK_T_FF_SR](./ILOCK_T_FF_SR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ILOCK_T_FF_SR` is a composite function block (FB) that implements a latchable toggle flip-flop with set and reset functionality. It has an adapter interface (AE2) that enables bidirectional communication with other instances and serves for interlock chaining. The flip-flop toggles its output `Q` on every rising edge of the clock input `CLK`, provided no reset or set event is present. Latching is achieved via the adapters, which can be set by external function blocks.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Description |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | `S` | Event | Sets output `Q` to TRUE |
 | `R` | Event | Sets output `Q` to FALSE |
 | `CLK` | Event | Clock event – triggers a toggle on output `Q` |
@@ -35,7 +37,7 @@ None.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|-------------|
+| ------ | ----- | ---------- | ------------- |
 | `ILOCK_IN` | AE2 (bidirectional) | Socket (input) | Allows the reception of latching signals from upstream devices |
 | `ILOCK_OUT` | AE2 (bidirectional) | Plug (output) | Sends interlock signals to downstream components |
 
@@ -65,6 +67,7 @@ After each state change, the event output `EO` is triggered.
 - **No Data Inputs:** The function block operates purely event-driven; its state is only changed by events.
 
 **No Data Inputs:**
+
 ## State Overview
 
 The internal flip-flop `E_SR` has two states:
@@ -77,7 +80,7 @@ A set event (`S`) always results in the state TRUE, regardless of the current st
 A reset event (`R`) always results in the state FALSE, regardless of the current state.
 
 | Current State | Event | New State | Output Actions |
-|-------------------|----------|---------------|------------------|
+| ------------------- | ---------- | --------------- | ------------------ |
 | FALSE | `S` | TRUE | `EO` is triggered |
 | FALSE | `R` | FALSE | `EO` is triggered |
 | FALSE | `CLK` | TRUE | `EO` is triggered |

@@ -3,6 +3,7 @@
 ![Uebung_204_network](./Uebung_204_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert eine Interlock-Funktion mit Konflikterkennung und Trip-Auslösung, die durch einen Reset zurückgesetzt werden kann. Sie zeigt den typischen Einsatz eines Interlock-Bausteins zur Vermeidung gleichzeitiger, widersprüchlicher Ansteuerungen (z. B. Auf/Ab-Bewegung). Der ILOCK_CONFLICT_TRIP erzeugt bei einem Konflikt einen Trip (Störausgang) und sperrt die Ausgänge, bis ein explizites Rücksetzsignal anliegt.
@@ -43,7 +44,7 @@ Die Übung besteht aus folgenden Funktionsbausteinen, die über Ereignis- und Da
 Die Übung ist als SubAppType angelegt, in der die gesamte Logik abläuft. Die Verbindungen sind wie folgt:
 
 | Ereignisverbindung | Quelle | Ziel | Datenverbindung | Quelle | Ziel |
-|-------------------|--------|------|-----------------|--------|------|
+| ------------------- | -------- | ------ | ----------------- | -------- | ------ |
 | IND → EI_UP | DigitalInput_I1 | ILOCK | IN → DI_UP | DigitalInput_I1 | ILOCK |
 | IND → EI_DOWN | DigitalInput_I2 | ILOCK | IN → DI_DOWN | DigitalInput_I2 | ILOCK |
 | IND → EI_RESET | DigitalInput_Reset | ILOCK | – | – | – |

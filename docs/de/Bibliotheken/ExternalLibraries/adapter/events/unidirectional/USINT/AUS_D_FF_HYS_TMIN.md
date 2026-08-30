@@ -3,6 +3,7 @@
 ![AUS_D_FF_HYS_TMIN](./AUS_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_D_FF_HYS_TMIN** realisiert ein datengetriggertes Flip-Flop (D‑Flip‑Flop) mit einer Hysterese und einer minimalen Zwischenereigniszeit. Er ist als Sub‑Applikation (FB‑Netzwerk) aufgebaut, die die eigentliche Logik an den inneren Baustein `logiBUS::signalprocessing::hysteresis::E_D_FF_ANY_HYS_TMIN` delegiert. Der Baustein dient dazu, einen analogen oder diskreten Wert mit vorgegebenem Hystereseband zu latchen und gleichzeitig die Rate der Ereignisse (über den Adapter‑Eingang) auf einen konfigurierbaren Mindestabstand zu begrenzen.

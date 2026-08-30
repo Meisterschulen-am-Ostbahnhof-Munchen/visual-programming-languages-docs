@@ -3,9 +3,11 @@
 ![AUI_TO_AUDI](./AUI_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUI_TO_AUDI** function block is a composite function block that converts an AUI adapter (UINT) into an AUDI adapter (UDINT). It serves to transfer data and events from one adapter type to another, where the underlying data types differ (UINT → UDINT). The conversion is performed by simply passing the signals through, without any additional logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No dedicated data outputs: This function block has no direct data outputs. Data 
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | AUI_IN | `adapter::types::unidirectional::AUI` | Socket (Input) | Receives UINT data and associated event |
 | AUDI_OUT | `adapter::types::unidirectional::AUDI` | Plug (Output) | Sends UINT data and associated event |
 

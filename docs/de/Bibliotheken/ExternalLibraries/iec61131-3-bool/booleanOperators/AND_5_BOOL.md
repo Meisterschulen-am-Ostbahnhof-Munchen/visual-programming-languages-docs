@@ -3,6 +3,7 @@
 <img width="1383" height="334" alt="image" src="https://github.com/user-attachments/assets/26c969c4-f1f2-4142-9188-57cd244d9cd6" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AND_5_BOOL` ist ein Standard-Baustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über fünf separate boolesche Eingangswerte aus. Der Block folgt dem Echtzeit- und Ereignisverarbeitungsmodell von IEC 61499, bei dem die Berechnung durch ein eingehendes Ereignis ausgelöst und mit einem ausgehenden Ereignis bestätigt wird.

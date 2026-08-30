@@ -41,7 +41,7 @@ Der Funktionsblock **AUDI_LE** realisiert einen Vergleich zweier Werte auf „kl
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `IN1` | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | Aufnahme des ersten Wertes (Ereignis + Daten). |
 | `IN2` | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | Aufnahme des zweiten Wertes (Ereignis + Daten). |
 | `OUT` | `adapter::types::unidirectional::AX` | Plug (Ausgang) | Ausgabe des Vergleichsergebnisses (Ereignis + Daten). |
@@ -72,7 +72,7 @@ Der FB besitzt keinen eigenen gerichteten Zustandsautomaten, da er rein kombinat
 ## Vergleich mit ähnlichen Bausteinen
 
 | FB | Funktion | Unterschied zu AUDI_LE |
-|----|----------|------------------------|
+| ---- | ---------- | ------------------------ |
 | `AUDI_LT` | Kleiner als (`<`) | Nicht inklusive Gleichheit. |
 | `AUDI_EQ` | Gleichheit (`=`) | Prüft nur auf exakte Übereinstimmung. |
 | `AUDI_GE` | Größer oder gleich (`≥`) | Umgekehrte Vergleichsrichtung. |

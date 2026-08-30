@@ -3,9 +3,11 @@
 ![AS_LT](./AS_LT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_LT** compares two values of type `SINT` (8-bit signed integer) and checks whether the first value (IN1) is less than the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously. The comparison follows the usual numeric ordering.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
@@ -31,7 +33,7 @@ The function block has no direct event or data inputs and outputs, but communica
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `AS` (Socket) | Input | Adapter for the first comparison value and its associated event |
 | IN2 | `AS` (Socket) | Input | Adapter for the second comparison value and its associated event |
 | OUT | `AX` (Plug) | Output | Adapter for the comparison result and the output event |

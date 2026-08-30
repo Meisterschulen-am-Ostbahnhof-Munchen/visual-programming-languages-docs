@@ -3,6 +3,7 @@
 ![E_T_FF_SR_SYM_INIT_ecc](./E_T_FF_SR_SYM_INIT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_T_FF_SR_SYM_INIT` erweitert [E_T_FF_SR_SYM](E_T_FF_SR_SYM.md) um eine explizite `INIT`/`INITO`-Schnittstelle: Der Startwert von `Q` wird nicht durch das erste `S`-, `R`- oder `CLK`-Ereignis bestimmt, sondern gezielt über `Q_INIT` vorgegeben.
@@ -45,7 +46,7 @@ Der `E_T_FF_SR_SYM_INIT` erweitert [E_T_FF_SR_SYM](E_T_FF_SR_SYM.md) um eine exp
 ## Zustandsübersicht
 
 | Zustand | Bedeutung |
-|---|---|
+| --- | --- |
 | START | Unkonfigurierter Anfangszustand |
 | Init | Initialisierung läuft, `QO := QI` |
 | DeInit | Deinitialisierung läuft, `QO := FALSE` |

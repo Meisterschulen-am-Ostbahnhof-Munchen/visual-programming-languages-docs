@@ -27,7 +27,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | IN | `adapter::types::unidirectional::AI` | Einzige analoge Eingangsadapter (Quelle) |
 | Ausgang (Plug) | OUT1 | `adapter::types::unidirectional::AI` | Erster Ausgang (1:1-Weiterleitung von IN) |
 | Ausgang (Plug) | OUT2 | `adapter::types::unidirectional::AI` | Zweiter Ausgang |

@@ -4,9 +4,11 @@
 ![BOOLS_TO_ARR08X](./BOOLS_TO_ARR08X.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `BOOLS_TO_ARR08X` converts eight individual Boolean (`BOOL`) input signals into a Boolean array (`ARRAY[0..7] OF BOOL`). It is a fundamental building block for signal aggregation and data structuring in control applications, especially when discrete digital signals need to be bundled for compact processing or transmission.
+
 ## Interface Structure
 
 ### **Event Inputs**

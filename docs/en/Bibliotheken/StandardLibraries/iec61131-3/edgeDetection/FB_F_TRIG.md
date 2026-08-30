@@ -31,11 +31,14 @@ The function block stores the previous state of the `CLK` signal in an internal 
 
 - The function block uses an internal memory variable (`MEM`) to store the previous state of the `CLK` signal.
 - The logic for detecting the falling edge is implemented in an ST algorithm.
+
 1. **Initialization**: `MEM` is initialized with `TRUE`.
 2. **Falling Edge Detection**:
+
 - When `CLK` transitions from `TRUE` to `FALSE`, `Q` is set to `TRUE`.
 - In all other cases, `Q` is set to `FALSE`.
-3. **Saving the Current State**: The current state of `CLK` is saved to `MEM`.
+1. **Saving the Current State**: The current state of `CLK` is saved to `MEM`.
+
 - Detection of button or switch actuations in control systems.
 - Synchronization of processes upon signal changes.
 - Triggering of actions on falling edges in time-critical applications.

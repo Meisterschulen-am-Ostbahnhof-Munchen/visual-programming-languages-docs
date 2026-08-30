@@ -3,6 +3,7 @@
 ![Uebung_009_AUDI_network](./Uebung_009_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a **ticker** based on **AX adapters** (adapter event interfaces) in the 4diac IDE.
@@ -54,19 +55,19 @@ The exercise flow can be described as follows:
 
 AE_CYCLE` generates an event (EO) every 1 second.
 
-2. **Event Combining**
+1. **Event Combining**
 
 This event is combined with the signal from `AX_SPLIT_3.OUT1` (see step 4) via `AX_AE_MERGE`. The result is forwarded to `AX_SWITCH.G` (gate input).
 
-3. **Switching Operation**
+1. **Switching Operation**
 
 AX_SWITCH` reacts to the incoming event and switches between its two outputs, `EO0` and `EO1`. This simulates a manual or logical switching operation.
 
-4. **Set-Reset Circuit**
+1. **Set-Reset Circuit**
 
 EO0` goes to `AX_SR.S` (Set), `EO1` to `AX_SR.R` (Reset). The output `Q` of the SR circuit is active while set and deactivated upon reset.
 
-5. **Signal Distribution**
+1. **Signal Distribution**
 
 The signal from `AX_SR.Q` is sent to `AX_SPLIT_3.IN` and distributed to three outputs:
 
@@ -75,11 +76,11 @@ The signal from `AX_SR.Q` is sent to `AX_SPLIT_3.IN` and distributed to three ou
 - `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
 
 - `OUT3` → to `AX_PERMIT.PERMIT`.
-6. **Allowance and Counter**
+1. **Allowance and Counter**
 
 AX_PERMIT` only forwards the event to `EO` if an event is present at the `PERMIT` input. This event is then sent to the counter `AUDI_CTUD_UDINT.CU`. The counter increments its value with each event.
 
-7. **Numerical Output**
+1. **Numerical Output**
 
 The current counter reading (`CV`) is passed to the `Q_NumericValue_AUDI` block and output as a numeric value on the isobus network (object ID `OutputNumber_N1`).
 

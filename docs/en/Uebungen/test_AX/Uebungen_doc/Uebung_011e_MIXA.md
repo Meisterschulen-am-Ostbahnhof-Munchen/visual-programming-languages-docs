@@ -1,8 +1,9 @@
-# Exercise_011e_MIXA: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly!
+# Exercise_011e_MIXA: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly
 
 ![Uebung_011e_MIXA_network](./Uebung_011e_MIXA_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the incorrect passing through of a numeric input value from **InputNumber_I1** to **OutputNumber_N3**. The value is passed without correct scaling (software scale) because the namespaces used, `DefaultPool` and `DefaultPool_Numeric`, are incompatible. The goal is to raise awareness of the problem of correctly mapping source and target objects.

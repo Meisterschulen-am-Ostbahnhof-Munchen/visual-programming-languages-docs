@@ -3,6 +3,7 @@
 ![initval_AW](initval_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AW` ist der konfigurierbare Initialisierungsbaustein für den [AW](../AW.md)-Adapter (Datentyp `WORD`, 16-Bit-Bitmuster): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AW`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

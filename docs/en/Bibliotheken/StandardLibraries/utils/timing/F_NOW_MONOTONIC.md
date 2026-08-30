@@ -3,6 +3,7 @@
 ![F_NOW_MONOTONIC](https://github.com/user-attachments/assets/ae1652e1-fcca-44f4-aa16-c1cfa5a794cd)
 
 * * * * * * * * * *
+
 ## Introduction
 
 F_NOW_MONOTONIC` is an IEC 61499-compliant function that returns a monotonic timestamp.
@@ -46,11 +47,13 @@ Return value of type `TIME`, representing the current value of the monotonic clo
 
 The function is activated by the event `REQ`. Resources are not persistently stored, as this is a stateless computation.
 
-2. **Macro Execution**:
+1. **Macro Execution**:
+
 - Calls the system-level function `NOW_MONOTONIC()`.
 - Assigns the return value to the output variable `TIME`.
 - Triggers the event `CNF`.
-3. **Error Handling**:
+1. **Error Handling**:
+
 - No specific error handling, as the function has no external dependencies.
 - In case of hardware/OS errors, the return value is undefined.
 
@@ -92,7 +95,7 @@ Reliable timers for critical processes.
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Function | `F_NOW_MONOTONIC` | `NOW()` | `NOW_SYSTEM()` |
-|---------------------|-----------------------|-----------------------|-----------------------|
+| --------------------- | ----------------------- | ----------------------- | ----------------------- |
 | **Time Source** | Monotonous (Hardware) | System Time | System Time (UTC) |
 | **Influenceable** | No | Yes (NTP, Time Zone) | Yes (NTP) |
 | **Use Case** | Real-time Measurements | General Timestamps | Global Timestamps |

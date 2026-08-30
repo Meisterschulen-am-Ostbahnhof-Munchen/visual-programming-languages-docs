@@ -3,6 +3,7 @@
 ![E_T_FF_SR_SYM_ecc](./E_T_FF_SR_SYM_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_T_FF_SR_SYM` vereint in einem Baustein die Funktionalität von [E_RS_SYM](E_RS_SYM.md) (bistabiles Set/Reset mit symmetrischem Start-Up) und eines Toggle-Flipflops: Zusätzlich zu den Eingängen `S` und `R` besitzt er einen Takteingang `CLK`, der den Ausgang `Q` unabhängig von `S`/`R` umschaltet.
@@ -38,7 +39,7 @@ Aus dem Anfangszustand `START` führen `S`, `R` **und** `CLK` zu einem definiert
 ## Zustandsübersicht
 
 | Zustand | Bedeutung |
-|---|---|
+| --- | --- |
 | START | Anfangszustand, reagiert symmetrisch auf `S`, `R`, `CLK` |
 | SET | `Q = TRUE`; `R`→RESET, `CLK`→RESET |
 | RESET | `Q = FALSE`; `S`→SET, `CLK`→SET |

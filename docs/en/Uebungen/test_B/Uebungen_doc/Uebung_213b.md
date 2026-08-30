@@ -3,6 +3,7 @@
 ![Uebung_213b_network](./Uebung_213b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up counter according to IEC 61131-3 (FB_CTU_UDINT) with a preset value of 5. The counting pulses are provided via two digital inputs:
@@ -55,6 +56,7 @@ The flow is controlled by **event connections**:
 1. A change to **Input_CU** (button I1) generates the **IND** event, which triggers the counter module via its **REQ** input.
 2. Similarly, a change to **Input_R** (button I2) generates an **IND** event, which also reaches the **REQ** input of the counter – thus, the same counter is addressed by both inputs.
 3. After processing, the counter outputs a **CNF** event. This is forwarded in parallel to two function blocks:
+
 - to **Output_Q1** (Output Q1)
 - to **Q_NumericValue_PHYS_LREAL** (Terminal Output)
 

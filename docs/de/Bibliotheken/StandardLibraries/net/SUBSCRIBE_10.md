@@ -3,6 +3,7 @@
 <img width="775" height="412" alt="image" src="https://github.com/user-attachments/assets/ac0698e2-c9c3-4335-bb7b-9d6afdab86ca" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der SUBSCRIBE_10 Funktionsblock dient als Abonnent in einem Publish-Subscribe-Kommunikationsmuster und ermöglicht das Empfangen von Daten von einem PUBLISH_10 Block. Der Block kann bis zu 10 verschiedene Datenwerte gleichzeitig empfangen und verarbeiten.

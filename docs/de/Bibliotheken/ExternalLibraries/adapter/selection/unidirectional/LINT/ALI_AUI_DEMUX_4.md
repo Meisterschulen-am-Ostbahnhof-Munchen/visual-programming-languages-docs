@@ -3,6 +3,7 @@
 ![ALI_AUI_DEMUX_4](ALI_AUI_DEMUX_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ALI_AUI_DEMUX_4` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `LINT`. Anders als `ALI_DEMUX_4` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.

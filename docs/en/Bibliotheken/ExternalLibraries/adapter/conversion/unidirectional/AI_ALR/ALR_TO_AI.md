@@ -69,7 +69,7 @@ As a composite FB, **ALR_TO_AI** does not have its own state diagram. The intern
 - **Interface Adaptation**: Used in agricultural control systems (e.g., HR Agricultural Technology – general), where LREAL values from sensors are mapped to a CAN-based INT adapter interface.
 
 | FB | Function | Difference |
-|----|----------|-------------|
+| ---- | ---------- | ------------- |
 | **ALR_TO_AI** | Converts LREAL → INT via adapter | Composite, no dedicated state machine; uses IEC 61131 converter |
 | `F_LREAL_TO_INT` | Pure data conversion without adapter | Direct FB, requires separate adapter connection |
 | `AI_TO_ALR` | Reverse direction INT → LREAL | Different data type and conversion direction |

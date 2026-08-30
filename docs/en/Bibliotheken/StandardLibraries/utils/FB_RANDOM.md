@@ -1,10 +1,12 @@
 # FB_RANDOM
 
 * * * * * * * * * *
+
 ## Introduction
 
 The FB_RANDOM function block generates a random REAL number between 0 and 1.
 ![FB_RANDOM](FB_RANDOM.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

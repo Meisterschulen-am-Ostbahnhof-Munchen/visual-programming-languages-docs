@@ -31,7 +31,7 @@ Der Funktionsblock `ARR08B_TO_WORDS_BE` extrahiert aus einem 8‑Byte‑Array (B
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | `OUT_00` | `WORD` | Wort aus Byte 0 (High) und Byte 1 (Low) |
 | `OUT_01` | `WORD` | Wort aus Byte 2 (High) und Byte 3 (Low) |
 | `OUT_02` | `WORD` | Wort aus Byte 4 (High) und Byte 5 (Low) |
@@ -64,7 +64,7 @@ Anschließend wird das Ausgangsereignis `CNF` ausgelöst, das die Gültigkeit al
 Der Baustein besitzt keinen eigenen Zustandsautomaten. Er wird durch das **Ereignis `REQ`** getriggert und gibt nach der Datenverarbeitung **`CNF`** aus. Die Ausführung erfolgt innerhalb eines einzigen Zyklus.
 
 | Zustand | Beschreibung |
-|---------|-------------|
+| --------- | ------------- |
 | *Idle* | Warten auf `REQ`; Ausgänge behalten den letzten Wert. |
 | *Processing* | `REQ` eingetroffen – Daten werden umgesetzt. |
 | *Completed* | `CNF` wird gesendet, Ausgänge sind gültig. Baustein kehrt sofort in den Ruhezustand zurück. |
@@ -79,7 +79,7 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Er wird durch das **Ereig
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
-|----------|-------------|
+| ---------- | ------------- |
 | `ARR08B_TO_WORDS_LE` | Verwendet Little‑Endian‑Reihenfolge (Byte[0] = Low‑Byte). |
 | `ARR04B_TO_WORD` | Arbeitet mit einem 4‑Byte‑Array und erzeugt nur ein WORD. |
 | `BYTE_TO_WORD` | Konvertiert zwei einzelne Bytes in ein WORD; benötigt separate Zusammenstellung. |

@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_9](./AIWS_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AIWS_SPLIT_9` dient der Aufteilung eines eingehenden `AIWS`-Adapter-Signals in neun separate, identisch typisierte Ausgänge. Er wird als generischer Baustein (generic FB) bereitgestellt und ermöglicht die Verteilung eines einzelnen Adapter-Datenstroms an mehrere nachfolgende Funktionseinheiten. Der Block ist unidirektional ausgelegt und benötigt keine Ereignis- oder Dateneingänge, da die Datenübertragung ausschließlich über die Adapter-Schnittstellen erfolgt.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AIWS` | Eingehendes AIWS-Signal, das auf die neun Ausgänge verteilt wird. |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AIWS` | Erster ausgehender AIWS-Ausgang. |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AIWS` | Zweiter ausgehender AIWS-Ausgang. |

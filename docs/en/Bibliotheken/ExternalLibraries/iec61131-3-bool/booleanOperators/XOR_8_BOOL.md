@@ -55,6 +55,7 @@ The function block does not have an internal state in the sense of a memory. Its
 1. **Idle state:** Waits for the arrival of the `REQ` event.
 2. **Computation state:** Upon `REQ`, all inputs are read and the XOR operation is performed.
 3. **Output State:** The result is output to `OUT`, and the `CNF` event is generated. The block then returns to its idle state.
+
 - **Parity Check:** Detects whether an odd number of signals (e.g., error messages, limit exceedances) are active in a group.
 - **Toggle Logic:** Control where an action is only executed if exactly one of several possible control signals is active (e.g., selection between manual and automatic mode).
 - **Basic Encryption and Coding Functions:** As a basic building block for simple cryptographic operations or error detection codes.

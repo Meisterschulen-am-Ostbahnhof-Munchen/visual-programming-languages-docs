@@ -3,6 +3,7 @@
 ![Uebung_201b_network](./Uebung_201b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert eine **Interlock-Schaltung** für einen Motor mit Rechts- und Linkslauf. Zusätzlich wird ein **Low-Side Treiber** angesteuert. Die Verriegelung (Interlock) verhindert, dass beide Richtungen gleichzeitig aktiv werden. Die Logik basiert auf dem speziellen Funktionsbaustein `ILOCK_BLOCK`.

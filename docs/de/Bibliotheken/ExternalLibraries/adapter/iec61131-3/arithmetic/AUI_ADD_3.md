@@ -4,6 +4,7 @@
 ![AUI_ADD_3](./AUI_ADD_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_ADD_3` ist ein generischer arithmetischer Funktionsbaustein für die IEC 61499 Entwicklungsumgebung (4diac-ide). Seine primäre Aufgabe ist die Addition von drei Eingangswerten, die über standardisierte, unidirektionale Adapterschnittstellen übergeben werden. Das Ergebnis der Addition wird ebenfalls über einen entsprechenden Adapter ausgegeben. Durch die Kapselung von Daten und Steuerungsereignissen in Adaptern wird die Verdrahtung im Applikationseditor erheblich vereinfacht und die Übersichtlichkeit im Systemdesign verbessert.

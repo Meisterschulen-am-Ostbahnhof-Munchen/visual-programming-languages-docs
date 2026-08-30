@@ -3,9 +3,11 @@
 ![AUS_D_FF_HYS](./AUS_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_D_FF_HYS` implements a data latch (D flip-flop) with hysteresis (threshold band). It serves to receive an incoming data value on an edge-triggered basis and make it available at the output. The hysteresis ensures stable switching behavior even with noisy or fluctuating input signals. The block uses generic adapters (`AUS`) that enable unidirectional data transmission with event-driven control, making it usable with any data type.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ The FB has no direct data outputs. The latched value is provided via the adapter
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|------|----------------------------------------------|-----------|----------------|
+| ------ | ---------------------------------------------- | ----------- | ---------------- |
 | `I` | `adapter::types::unidirectional::AUS` | Socket | Value to latch |
 | `Q` | `adapter::types::unidirectional::AUS` | Plug | Latched value |
 
@@ -68,7 +70,7 @@ Since the FB does not explicitly expose a state machine, its behavior is determi
 State transitions occur only when the respective hysteresis thresholds are exceeded:
 
 | Transition | Condition (Input Value) |
-|----------|----------------------------------------------|
+| ---------- | ---------------------------------------------- |
 | 0 → 1 | Input exceeds upper threshold |
 | 1 → 0 | Input falls below lower threshold |
 
@@ -84,7 +86,7 @@ The thresholds are offset by the hysteresis value relative to a mean or referenc
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties | Difference to `AUS_D_FF_HYS` |
-----------|---------------|-------------------------------|
+---------- | --------------- | ------------------------------- |
 | Standard D flip-flop (`E_D_FF`) | Transfers data on clock edge, no hysteresis | No noise suppression; state changes on every edge. |
 | Schmitt trigger (`E_D_FF_ANY_HYS`) | Flip-flop with hysteresis, but usually data-type specific | `AUS_D_FF_HYS` encapsulates the generic adapter and provides a uniform interface for arbitrary types. |
 | SR flip-flop (`E_SR_FF`) | Set/reset function without clock | No edge-triggered data transfer; Hysteresis not directly integrated. |

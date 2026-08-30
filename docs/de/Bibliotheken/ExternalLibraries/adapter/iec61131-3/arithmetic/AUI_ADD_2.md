@@ -6,6 +6,7 @@
 *Keine Abbildung verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_ADD_2` ist ein generischer Funktionsbaustein (Generic FB), der für die Durchführung einer arithmetischen Addition entwickelt wurde. Er nutzt unidirektionale Adapter vom Typ `AUI` (Adapter Unidirectional Interface), um zwei Eingangswerte zu addieren und das Ergebnis auszugeben. Da es sich um einen generischen Baustein handelt, der auf der Klasse `GEN_AUI_ADD` basiert, kann er flexibel für verschiedene Datentypen eingesetzt werden, die von den entsprechenden Adaptern unterstützt werden.

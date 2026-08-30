@@ -3,6 +3,7 @@
 ![ASSEMBLE_AD_FROM_AW](./ASSEMBLE_AD_FROM_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASSEMBLE_AD_FROM_AW** dient der Kombination zweier Wort-Werte (WORD) aus je einem unidirektionalen AW‑Adapter zu einem Doppelwort (DWORD), das über einen unidirektionalen AD‑Adapter ausgegeben wird. Der Baustein kapselt die logische Verknüpfung von zwei 16‑Bit‑Eingängen zu einem 32‑Bit‑Ausgang und speichert das Ergebnis über ein flankengesteuertes D‑Flipflop zwischen.
@@ -66,7 +67,7 @@ Auf diese Weise wird sichergestellt, dass der Ausgangswert nur bei tatsächliche
 Der FB selbst besitzt keinen expliziten Zustandsautomaten. Der interne Ablauf lässt sich aber durch die Zustände des D‑Flipflops charakterisieren:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **Warten auf Ereignis** | Das Flipflop hält den zuletzt berechneten Wert; es liegt kein neues Eingangsereignis an. |
 | **Berechnung aktiv** | Ein Ereignis von WORD_00 oder WORD_01 triggert die Zusammenführung und das Flipflop wird getaktet. |
 | **Ausgabe aktiv** | Nach dem Takt wird der neue Wert an `OUT` weitergegeben und das Ausgangsereignis wird gesendet. |

@@ -3,6 +3,7 @@
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL](./AULI_FIELDBUS_ULINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_FIELDBUS_ULINT_TO_SIGNAL** dient als zusammengesetzter Baustein zur Verarbeitung eines ULINT-Wertes aus einem Feldbus. Er spiegelt den eingehenden Wert auf den Ausgang, sofern das Signal als gültig („Valid“) erkannt wird, und gibt zusätzlich ein synchronisiertes Gültigkeitssignal aus. Der Baustein kombiniert einen internen Feldbus-Konverter mit einem D-Flipflop, um eine getaktete, zuverlässige Signalweitergabe zu gewährleisten.
@@ -40,7 +41,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenports auf oberster Eb
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket (Eingang) | `adapter::types::unidirectional::AULI` | Nimmt den ULINT-Wert und das zugehörige Ereignis entgegen. |
 | `OUT` | Plug (Ausgang) | `adapter::types::unidirectional::AULI` | Gibt den verarbeiteten ULINT-Wert und ein Ereignis aus. |
 | `VALID` | Plug (Ausgang) | `adapter::types::unidirectional::AX` | Stellt das Gültigkeitssignal (BOOL) und ein Ereignis bereit. |

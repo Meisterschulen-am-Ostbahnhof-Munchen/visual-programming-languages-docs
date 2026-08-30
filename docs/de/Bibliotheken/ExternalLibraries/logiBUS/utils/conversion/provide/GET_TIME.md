@@ -3,6 +3,7 @@
 ![GET_TIME](./GET_TIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **GET_TIME** ermöglicht das Auslesen eines TIME-Werts aus einer InOut-Variable und stellt diesen als gepufferten Ausgangswert zur Verfügung. Er dient als einfache Schnittstelle, um einen externen Zeitwert in die Bausteinstruktur zu übernehmen.

@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_SUB_2` ist ein generischer Baustein zur Durchführung von mathematischen Subtraktionen innerhalb einer IEC 61499-Entwicklungsumgebung (wie 4diac IDE). Anstatt direkte Daten- und Ereignispins zu nutzen, basiert dieser Baustein auf einer adaptergesteuerten Architektur. Dies ermöglicht eine strukturierte und saubere Kapselung von Signalen und vereinfacht die Verdrahtung in komplexen Steuerungsanwendungen.

@@ -4,6 +4,7 @@
 *Image of the function block: not available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_FIELDBUS_UDINT_TO_SIGNAL_SCALED** is used to convert a received UDINT value (unsigned 32-bit integer) from a fieldbus protocol into a scaled signal and only forward it to the output if the input signal is marked as valid. It represents a combined solution for scaling and signal validity checking and is primarily used in automation technology for LogiBUS applications.
@@ -25,7 +26,7 @@ The function block **AUDI_FIELDBUS_UDINT_TO_SIGNAL_SCALED** is used to convert a
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-|--------|-------|------------------------------------|------------------|
+| -------- | ------- | ------------------------------------ | ------------------ |
 | SCALE | LREAL | Scaling Factor | LREAL#1.0 |
 | OFFSET | DINT | Offset Added After Scaling | DINT#0 |
 
@@ -36,7 +37,7 @@ No separate data outputs – the scaled data is provided via the adapter output 
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|-------|------------------|----------|-------------------------------|
+| ------- | ------------------ | ---------- | ------------------------------- |
 | IN | unidirectional::AUDI | Input | Fieldbus UDINT input signal |
 | OUT | unidirectional::ALR | Output | Scaled signal (if valid) |
 | VALID | unidirectional::AX | Output | Validation flag (TRUE = valid) |

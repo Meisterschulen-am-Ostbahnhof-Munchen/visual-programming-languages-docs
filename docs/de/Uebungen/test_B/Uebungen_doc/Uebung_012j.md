@@ -3,6 +3,7 @@
 ![Uebung_012j_network](./Uebung_012j_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung und Speicherung eines String-Werts mittels eines **INI-Funktionsbausteins**.

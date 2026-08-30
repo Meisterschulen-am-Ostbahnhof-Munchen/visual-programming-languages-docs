@@ -3,9 +3,11 @@
 ![AD_SPLIT_6](./AD_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_SPLIT_6** distributes an incoming adapter of type `adapter::types::unidirectional::AD` to six separate output adapters of the same type. It is designed as a generic function block that implements a simple 1:6 split without additional logic or state management.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|-----------|--------------|
+| ----- | ------ | ----------- | -------------- |
 | `adapter::types::unidirectional::AD` | IN | Socket | Input adapter that distributes the signal to the six outputs. |
 | `adapter::types::unidirectional::AD` | OUT1 | Plug | First output adapter (identical to IN). |
 | `adapter::types::unidirectional::AD` | OUT2 | Plug | Second output adapter. |

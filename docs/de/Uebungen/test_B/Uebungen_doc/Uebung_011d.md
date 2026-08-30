@@ -22,7 +22,7 @@ Die Übung zeigt die grundlegende Handhabung der `NumericValue`-Schnittstelle un
 Im Netzwerk der Übung werden drei Funktionsbausteine eingesetzt. Es sind keine Sub‑Bausteine vorhanden.
 
 | Name | Typ | Parameter |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `InputNumber_I1` | `isobus::UT::io::NumericValue::NumericValue_ID` | `QI = TRUE`, `u16ObjId = "InputNumber_I1"` |
 | `F_DWORD_TO_UDINT` | `iec61131::conversion::F_DWORD_TO_UDINT` | (keine Parameter) |
 | `Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = "OutputNumber_N3"` |

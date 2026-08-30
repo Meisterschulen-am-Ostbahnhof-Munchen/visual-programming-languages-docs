@@ -3,6 +3,7 @@
 ![PROVIDE_ARR_1024_BYTE](PROVIDE_ARR_1024_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `PROVIDE_ARR_1024_BYTE` stellt einen `BYTE`-Array-Container fester Größe 1024 als `InOut`-Variable `D1` bereit. Er gehört zur generischen `GEN_INIT_ARR`-Familie: eine Reihe baugleicher Bausteine, die sich nur in Array-Größe und Datentyp unterscheiden, und dient dazu, ein zur Entwurfszeit mit Startwerten vorbelegbares Array in einer 4diac-Anwendung verfügbar zu machen.

@@ -3,9 +3,11 @@
 ![AE_SPLIT_6](./AE_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_SPLIT_6** distributes an incoming AE adapter (type `adapter::types::unidirectional::AE`) to six identical outputs. It is a generic function block that can be reused for various AE types. The name derives from the 1:6 split: one input is split into six outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | **Socket (Input)** | IN | `adapter::types::unidirectional::AE` | Incoming AE adapter, whose signal is duplicated to all outputs. |
 | **Plug (Output)** | OUT1 | `adapter::types::unidirectional::AE` | First output, identical copy of the input signal. |
 | **Plug (Output)** | OUT2 | `adapter::types::unidirectional::AE` | Second output, identical copy of the input signal. |

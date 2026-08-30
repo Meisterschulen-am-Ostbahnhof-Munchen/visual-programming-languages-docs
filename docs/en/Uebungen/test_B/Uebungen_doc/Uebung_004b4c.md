@@ -3,6 +3,7 @@
 ![Uebung_004b4c_network](./Uebung_004b4c_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates a chain of three mutually interlocked toggle flip-flops. Each flip-flop is toggled by its own single-click button. The interlocking ensures that only one output is active at any given time – similar to a ring counter with mutual locking. The connection between the individual stages is made via a bidirectional AE2 adapter, so that only a single connection per link is sufficient for all communication.

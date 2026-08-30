@@ -3,9 +3,11 @@
 ![AE_AX_SWITCH](./AE_AX_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_AX_SWITCH** implements event-driven switching (demultiplexing). An incoming event is forwarded to one of two event outputs – depending on the Boolean value of a separate data input.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,11 +31,11 @@ No direct data outputs. Output is exclusively via the event adapters.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `EI` | `AE` (Event Adapter) | Socket | Receives the event to be switched. |
 | `G` | `AX` (Data Adapter) | Socket | Returns the switching state (boolean). |
-| `EO0`| `AE` | Plug | Outputs the event if `G=0` was present. |
-| `EO1`| `AE` | Plug | Outputs the event if `G=1` was present. |
+| `EO0` | `AE` | Plug | Outputs the event if `G=0` was present. |
+| `EO1` | `AE` | Plug | Outputs the event if `G=1` was present. |
 
 ## Functionality
 
@@ -54,7 +56,7 @@ An additional event at adapter `G` (signal `G.E1`) does not trigger any action �
 ## State Overview
 
 | State | Description | Output Action |
-|---------|---------------|--------------|
+| --------- | --------------- | -------------- |
 | `START` | Waiting for an event at `EI`. | – |
 | `G0` | Event from `EI` processed at `G.D1=0`. | `EO0.E1` |
 | `G1` | Event from `EI` processed at `G.D1=1`. | `EO1.E1` |

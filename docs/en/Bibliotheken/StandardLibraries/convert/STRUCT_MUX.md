@@ -6,6 +6,7 @@
 
 The function block (FB) `STRUCT_MUX` is a generic multiplexer for structured data types. It functions as the counterpart to `STRUCT_DEMUX` and is responsible for combining individual data values from multiple inputs into a single data structure at the output.
 ![STRUCT_MUX](STRUCT_MUX.svg)
+
 ## Interface Structure
 
 The interface of the `STRUCT_MUX` function block is defined generically. The actual data inputs are only determined during the instantiation of the block.
@@ -38,6 +39,7 @@ The image above illustrates this exact case.
 
 
 ...
+
 ### **Data Outputs**
 
 - **OUT** (Type: `ANY_STRUCT`): The output data structure, which is assembled from the values of the inputs.

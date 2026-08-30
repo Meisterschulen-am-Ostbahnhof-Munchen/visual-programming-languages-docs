@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUS_MUL_4` ist ein generischer Baustein (Generic FB) zur Durchführung einer arithmetischen Multiplikation (`MUL`) mit bis zu vier Eingangswerten. Er basiert auf der IEC 61499-Architektur und nutzt unidirektionale Adapter, um Daten und die dazugehörigen Steuerungsereignisse sauber gekapselt zu übertragen.
@@ -81,6 +82,7 @@ Der Funktionsbaustein verhält sich wie ein klassischer, zustandsloser mathemati
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu Standard-Multiplikationsbausteinen (wie dem klassischen `MUL` der IEC 61131-3), die mit einzelnen Pins für Events und Daten arbeiten, bietet der `AUS_MUL_4` folgende Vorteile:
+
 -   **Weniger Verbindungen:** Vier separate Eingänge und ein Ausgang würden im klassischen Modell mindestens 10 Verbindungen (5 Events, 5 Datenleitungen) erfordern. Durch die Adapter-Technologie wird dies auf 5 Adapter-Verbindungen reduziert.
 -   **Kompaktheit:** Das Kaskadieren von mehreren 2-fach Multiplizierern entfällt, da direkt vier Operanden in einem einzigen Baustein verarbeitet werden können.
 

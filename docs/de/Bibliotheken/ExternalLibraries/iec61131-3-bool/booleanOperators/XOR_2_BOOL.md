@@ -3,6 +3,7 @@
 <img width="1186" height="216" alt="image" src="https://github.com/user-attachments/assets/7c34009d-7063-4900-b45e-5b35629a05c0" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_2_BOOL` ist ein Standardbaustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) zweier boolescher Eingangssignale. Er gehört zur Kategorie der bitweisen Operatoren und ist als generischer Funktionsblock implementiert, der in Steuerungsanwendungen nach IEC 61131-3 eingesetzt wird. Der Baustein wartet auf eine Ausführungsanforderung, berechnet das Ergebnis und gibt dieses zusammen mit einer Bestätigung zurück.

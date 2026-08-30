@@ -3,6 +3,7 @@
 ![ATM_AX_TP](./ATM_AX_TP.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ATM_AX_TP** ist ein spezieller Timer-Funktionsblock, der aus einem Eingangssignal einen zeitlich begrenzten Impuls erzeugt. Er implementiert die Funktionalität eines **nicht-nachtriggerbaren Impulsformers** (non‑retriggerable pulse). Der Baustein wird über einen AX‑Adapter angesteuert und gibt das Ergebnis ebenfalls über einen AX‑Adapter aus; die Impulsdauer wird über einen separaten ATM‑Adapter vorgegeben. Durch die Adapter‑Schnittstellen lässt er sich besonders einfach in modular aufgebaute Automatisierungssysteme integrieren.

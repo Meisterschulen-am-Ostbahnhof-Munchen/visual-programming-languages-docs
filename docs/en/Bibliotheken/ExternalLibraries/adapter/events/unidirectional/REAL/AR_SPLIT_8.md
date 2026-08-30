@@ -3,9 +3,11 @@
 ![AR_SPLIT_8](./AR_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AR_SPLIT_8 function block is used to split a single unidirectional AR adapter signal into eight identical AR outputs. It is implemented as a generic function block and enables simple signal distribution without additional logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Name | Type | Direction |
-|-------------|-----|----------|
+| ------------- | ----- | ---------- |
 | **IN** | `adapter::types::unidirectional::AR` | Socket (Input) |
 | **OUT1** – **OUT8** | `adapter::types::unidirectional::AR` | Plug (Output) |
 

@@ -3,6 +3,7 @@
 ![AX_TO_AB](./AX_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite-Funktionsblock `AX_TO_AB` dient zur Umwandlung eines BOOL-Adaptersignals vom Typ `AX` in ein BYTE-Adaptersignal vom Typ `AB`. Er kapselt die Typkonvertierung und das Durchreichen von Ereignissen in einer wiederverwendbaren Einheit.

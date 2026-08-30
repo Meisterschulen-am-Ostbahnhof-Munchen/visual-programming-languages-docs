@@ -3,6 +3,7 @@
 ![AL_TO_AX](./AL_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AL_TO_AX` ist ein Composite-Baustein, der eine unidirektionale Adapterkonvertierung von einem `AL`-Adapter (Datentyp `LWORD`) zu einem `AX`-Adapter (Datentyp `BOOL`) durchführt. Er ermöglicht die einfache Umwandlung eines LWORD-Signals in ein boolesches Signal, das dann typischerweise an nachfolgende BOOL-basierte Adapter oder Funktionsblöcke weitergegeben wird. Der Baustein prüft, ob der eingehende LWORD-Wert ungleich Null ist, und liefert als Ergebnis `TRUE`, wenn dies zutrifft.

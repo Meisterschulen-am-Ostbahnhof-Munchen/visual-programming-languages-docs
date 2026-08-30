@@ -10,6 +10,7 @@ According to DIN EN 61131-3, data types are divided into the following groups:
 - **Floating Point Numbers**: REAL, LREAL
 - **Time and Date**: TIME, DATE, TOD, DT
 - **Strings**: STRING, WSTRING
+
 ## 💾 Data Types 2
 
 [Integer (Data Type) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
@@ -43,12 +44,12 @@ See also: IEC 61499, Table E.1
 | UINT | UI | 2 | 16 bits | 0 | 65,535 |
 | UDINT | UDI | 4 | 32 bits | 0 | 4,294,967,295 |
 | ULINT | ULI | 8 | 64 bit | 0 | 18,446,744,073,709,551,615 |
-| REAL | R | 4 | 32 bits |   |   |
-| LREAL | LR | 8 | 64 bit |   |   |
-| DATE | D | 8 | 64 bit |   |   |
-| TIME | T | 8 | 64 bit |   |   |
-| TIME\_OF\_DAY | DEATH | 12 | 96 bits | 1970-01-01-00:00:00.000 |   |
-| DATE\_AND\_TIME | DT | 20 | 160 bits | 1970-01-01-00:00:00.000 |   |
+| REAL | R | 4 | 32 bits | | |
+| LREAL | LR | 8 | 64 bit | | |
+| DATE | D | 8 | 64 bit | | |
+| TIME | T | 8 | 64 bit | | |
+| TIME\_OF\_DAY | DEATH | 12 | 96 bits | 1970-01-01-00:00:00.000 | |
+| DATE\_AND\_TIME | DT | 20 | 160 bits | 1970-01-01-00:00:00.000 | |
 
 #### 💾 Data types for I/O (Input / Output)
 

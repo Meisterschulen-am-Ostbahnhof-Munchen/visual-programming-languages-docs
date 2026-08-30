@@ -66,8 +66,8 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 
 ## ⚖️ Vergleich mit E_DELAY
 
-| Feature        | E_RDELAY | E_DELAY |
-|---------------|----------|---------|
+| Feature | E_RDELAY | E_DELAY |
+| --------------- | ---------- | --------- |
 | Reset-Funktion | ✔️ (durch START) | ❌ |
 | Mehrfach-Trigger | Nur 1 EO | Nur 1 EO |
 | Service-Sequenzen | 3 definiert (`event_delay`, `delay_canceled`, `reload_delay`) | 3 definiert (`event_delay`, `delay_canceled`, `no_multiple_delay`) |

@@ -25,7 +25,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
 ### Weitere Funktionsbausteine
 
 | Bausteinname | Typ | Parameter | Beschreibung |
-|--------------|-----|-----------|--------------|
+| -------------- | ----- | ----------- | -------------- |
 | `AnalogInput_I7` | `logiBUS::io::AI::logiBUS_AI_IDA` | QI=TRUE, Input="AnalogInput_I7", AnalogInput_hysteresis=50, TimeDelta=250, TimeRateLimit=100 | Analoger Eingang, liefert einen Adapter `AD_IN` (Analog-/Digitalwert). |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I1" | Digitaler Eingang I1, steuert über Adapter `AX_SPLIT_2` zwei Ausgänge (Q1 und SREQ am AnalogInput). |
 | `DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I2" | Digitaler Eingang I2 (Calibrate On/Off). |

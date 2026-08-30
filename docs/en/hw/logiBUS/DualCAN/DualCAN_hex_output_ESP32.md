@@ -4,12 +4,13 @@
 
 CAN TX 21
 CAN RX 35
+
 ## 🔌 OK
 
 ### Analogue inputs
 
 | Entrance: | PIN (ESP32) |
-|----------------|---------------|
+| ---------------- | --------------- |
 | AnalogInput_I1 | 39 |
 | AnalogInput_I2 | 36 |
 | AnalogInput_I3 | 34 |
@@ -21,10 +22,11 @@ ADC1_CHANNEL_3,     /*!< ADC1 channel 3 is GPIO39 */
 ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO33 */
 ADC1_CHANNEL_6,     /*!< ADC1 channel 6 is GPIO34 */
 ```
+
 ### Digital Inputs
 
 | Input: | PIN (ESP32) |
-|----------|---------------|
+| ---------- | --------------- |
 | Input_I1 | 39 |
 | Input_I2 | 36 |
 | Input_I3 | 34 |
@@ -40,7 +42,7 @@ These inputs have a voltage divider in the controller: 47/13 --> and a Schmitt t
 ### Digital Outputs
 
 | Output: | PIN (ESP32) |
-|------------|---------------|
+| ------------ | --------------- |
 | Output_Q01 | 22 |
 | Output_Q02 | 4 |
 | Output_Q03 | 2 |

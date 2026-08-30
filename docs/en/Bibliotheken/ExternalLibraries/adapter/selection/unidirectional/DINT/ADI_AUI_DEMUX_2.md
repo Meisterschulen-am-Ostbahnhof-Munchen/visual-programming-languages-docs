@@ -3,6 +3,7 @@
 ![ADI_AUI_DEMUX_2](ADI_AUI_DEMUX_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ADI_AUI_DEMUX_2` is the adapter-based variant of the generic demultiplexer for data type `DINT`. Unlike `ADI_DEMUX_2`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.

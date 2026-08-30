@@ -11,7 +11,7 @@ Diese Übung zeigt, wie ein Geschwindigkeitswert aus dem VDS (Vehicle Data Serve
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter | Kurzbeschreibung |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **IA_VDS** | `isobus::tecu::IA_VDS` | QI = TRUE | Stellt die Verbindung zum VDS her und liefert den Wert für die radbasierte Maschinengeschwindigkeit über den Adapterausgang `NAV_SPEED`. |
 | **CONV_VDS** | `adapter::conversion::unidirectional::AUI_TO_AUDI` | – | Konvertiert das AUI‑Adapter-Interface in ein AUDI‑Interface, sodass der Datenwert an nachfolgende UT‑Bausteine weitergegeben werden kann. |
 | **Q_NumericValue_VDS** | `isobus::UT::Q::Q_NumericValue_AUDI` | u16ObjId = `NumberVariable_Wheel_based_machine_speed` | Zeigt den erhaltenen numerischen Wert auf dem UT‑Display an. Die Objekt‑ID verweist auf die Variable für die radbasierte Maschinengeschwindigkeit. |

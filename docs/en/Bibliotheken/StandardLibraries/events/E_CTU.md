@@ -5,6 +5,7 @@
 ![E_CTU_ecc](./E_CTU_ecc.svg)
 
 - [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
+
 ## 🎧 Podcast
 
 - [The E_CTU in IEC 61499: Event-driven counting and why the minimalist solution is convincing in mechanical engineering](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
@@ -17,6 +18,7 @@
 <img width="1139" height="202" alt="E_CTU" src="https://user-images.githubusercontent.com/113907528/204894537-54f1c9c9-de57-4beb-ad38-697fff012b4b.png">
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_CTU` (Event-Driven Up Counter) is an event-driven up counter according to the IEC 61499 standard. Its function is to increment an internal counter value with each incoming counting event and compare this value to a predefined limit. The block can be reset at any time.
@@ -70,7 +72,7 @@ If `CV >= PV` is the current value, the output `Q` is set to `TRUE`; otherwise, 
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_CTU (Up Counter) | E_CTD (Down Counter) | E_CTUD (Up/Down Counter) |
-|------------------|--------------------|----------------------|--------------------------|
+| ------------------ | -------------------- | ---------------------- | -------------------------- |
 | Counting Direction | Up | Down | Both |
 | Event-Driven | Yes | Yes | Yes |
 | Reset Function | R (Reset to 0) | LD (Set to PV) | R (Reset to 0) |

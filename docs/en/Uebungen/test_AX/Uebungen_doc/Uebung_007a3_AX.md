@@ -1,8 +1,9 @@
 # Exercise_007a3_AX: Turn Signal with E_CYCLE, E_SWITCH, and E_SR
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_007a3_AX`. This exercise demonstrates the "clean" solution for a switchable turn signal.
+This article describes the logiBUS® exercise `Uebung_007a3_AX`. This exercise demonstrates the "clean" solution for a switchable turn signal
 ----
+
 ## Objective of the Exercise
 
 Ensure that the turn signal always stops in the "OFF" state.
@@ -27,6 +28,7 @@ But most importantly: The `STOP` input is **additionally** directly connected to
 
 1. **Start/Blinking**: `START` presses the button and starts `AE_CYCLE`. When `E_SR.Q` is active, the loop through `E_SWITCH` (triggered by `AX_AE_MERGE`) causes the toggling.
 2. **Stop**: When `STOP` is pressed:
+
 - `AE_CYCLE` stops (no new clock cycles).
 - The `E_SR` is **reset**. This forces the output `Q`, and therefore the lamp `Q1`, to be set to FALSE.
 

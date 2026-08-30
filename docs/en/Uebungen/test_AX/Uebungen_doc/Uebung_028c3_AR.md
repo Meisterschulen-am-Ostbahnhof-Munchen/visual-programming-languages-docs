@@ -54,17 +54,20 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - **Functionality**: Converts a constant real value into an AR signal. Serves as the threshold (THRESHOLD = 50.5) and hysteresis width (HYSTERESIS = 15.3) for the hysteresis controller.
 - **INIT** (Type: `iec61131::bitwiseOperators::INIT`)
 - **Functionality**: Generates a one-time initialization event (INITO) at system startup. This event triggers the two AR_REAL_TO_R blocks to set the constant values.
+
 1. **Initialization**: At startup, the INIT block triggers the two AR_REAL_TO_R blocks, which set the constant threshold values (50.5 and 15.3) on the analog bus.
 2. **Analog Value Acquisition**: The AnalogInput_I7 reads the raw value from input I7. This raw value is transferred to the CALIBRATE block via the conversion chain AD_TO_AUDI and AUDI_TO_AR.
 3. **Calibration**: The digital inputs I2 (CO) and I3 (CS) control the calibration:
+
 - When CS (I3 = TRUE), a new calibration cycle is started: The current raw value (X) is measured, and the offset and scaling are calculated.
 - When CO (I2 = TRUE), the calculated values are written to the INI file (via INI_OFFSET and INI_SCALE).
 - The calibrated output Y is routed to the splitter AR_SPLIT_2.
-4. **Signal Distribution**:
+1. **Signal Distribution**:
+
 - AR_SPLIT_2.OUT1 routes the calibrated value to the display (Q_NumericValue_PHYSA).
 - AR_SPLIT_2.OUT2 routes the calibrated value to the hysteresis controller (Hysteresis_AR_AX).
-5. **Hysteresis Control**: The hysteresis controller compares the calibrated input value with the threshold (50.5) and the hysteresis value (15.3). The output becomes active when the value exceeds 50.5 + 15.3/2 (depending on the implementation; typically: activation at > 50.5, reset at < 50.5 - 15.3), and switches the digital output Q2.
-6. **Enable Signal**: The digital input I1 is routed via the splitter AX_SPLIT_2 to output Q1 (directly forwarded) and simultaneously to AnalogInput_I7 (as a trigger for the measurement). Therefore, the analog value can only be read when I1 is active.
+1. **Hysteresis Control**: The hysteresis controller compares the calibrated input value with the threshold (50.5) and the hysteresis value (15.3). The output becomes active when the value exceeds 50.5 + 15.3/2 (depending on the implementation; typically: activation at > 50.5, reset at < 50.5 - 15.3), and switches the digital output Q2.
+2. **Enable Signal**: The digital input I1 is routed via the splitter AX_SPLIT_2 to output Q1 (directly forwarded) and simultaneously to AnalogInput_I7 (as a trigger for the measurement). Therefore, the analog value can only be read when I1 is active.
 
 **Note**: Comments on the network indicate that the double conversion (AD_TO_AUDI → AUDI_TO_AR) is necessary to ensure correct signal representation. A direct AD_TO_AR would perform the bit interpretation of the analog-to-digital converter without going through the audio bus, which can lead to incorrect values.
 

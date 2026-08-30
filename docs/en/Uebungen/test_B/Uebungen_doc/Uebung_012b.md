@@ -1,8 +1,9 @@
 # Exercise_012b: Numeric Value Input and Storage in INI
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_012b`. It introduces an alternative method for storing data: the use of INI files.
+This article describes the logiBUS® exercise `Uebung_012b`. It introduces an alternative method for storing data: the use of INI files
 ----
+
 ## Objective of the Exercise
 
 Using the `INI` block for structured data storage. Unlike simple NVS key-value storage, the INI format allows for structuring into sections and keys, which is more organized when dealing with large amounts of data.

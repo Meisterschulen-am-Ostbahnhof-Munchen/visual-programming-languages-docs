@@ -3,6 +3,7 @@
 ![Uebung_001e_AX_network](./Uebung_001e_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert eine einfache boolesche Negation: Der Zustand des digitalen Eingangs **Input_I1** wird negiert und auf den digitalen Ausgang **Output_Q1** ausgegeben. Sie dient als Einstieg in die Signalverarbeitung mit 4diac und zeigt die grundlegende Verschaltung eines Eingangsmoduls, eines logischen Negationsbausteins und eines Ausgangsmoduls über Adapterverbindungen.

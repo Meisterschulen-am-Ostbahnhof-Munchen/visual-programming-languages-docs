@@ -3,6 +3,7 @@
 ![Uebung_214_AULI_network](./Uebung_214_AULI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler gemäß IEC 61131-3 (Typ **AULI_FB_CTU**) als Adapter-Version. Der Zähler arbeitet mit dem Datentyp **ULINT** und gibt seinen aktuellen Zählerstand sowie den Überlauf (Q) an eine Terminal-Ausgabe (Numerische Anzeige) und einen digitalen Ausgang weiter. Zusätzlich wird der Startwert (PV) über einen Konvertierungsbaustein gesetzt. Die Übung demonstriert den Einsatz von Adapter-FBs, I/O-Anbindung und Datenkonvertierung.

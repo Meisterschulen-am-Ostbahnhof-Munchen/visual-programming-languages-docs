@@ -3,6 +3,7 @@
 <img width="1174" height="182" alt="STRUCT_MUX" src="https://github.com/user-attachments/assets/f133152d-9c9e-4f60-83b9-425cf3f873dd" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock (FB) `STRUCT_MUX` ist ein generischer Multiplexer für strukturierte Datentypen. Er fungiert als Gegenstück zum `STRUCT_DEMUX` und hat die Aufgabe, einzelne Datenwerte von mehreren Eingängen zu einer einzigen Datenstruktur am Ausgang zusammenzufügen.

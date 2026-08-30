@@ -7,7 +7,8 @@
 - [IEC 61499 Distributed Control](https://www.youtube.com/playlist?list=PLD-CHxmB4P7dD6R8jOnamCuvV4NwSgrQT)
 - [Advanced 4diac Topics](https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi)
 - [IES IEEE Webinar on IEC 61499](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
-*
+-
+
 ### More YouTube Resources
 
 - [Video: IEC 61499 Overview](https://www.youtube.com/watch?v=quCrTcl8qSc)

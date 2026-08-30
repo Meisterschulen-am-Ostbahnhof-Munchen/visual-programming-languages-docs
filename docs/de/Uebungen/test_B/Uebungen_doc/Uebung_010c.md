@@ -25,7 +25,7 @@ Rückmeldung an den Bediener durch Farbumschlag der virtuellen Taste.
 ### Funktionsbausteine (FBs)
 
   - **`SoftKey_F1`**: Eingabe-Baustein.
-  - **`GreenWhiteBackground` (SubApp)**: Ein Baustein aus der Bibliothek `MyLib::sys`. [cite_start]Er sorgt dafür, dass sich der Hintergrund des Softkeys auf dem Terminal ändert (Grün bei Aktivierung, Weiß im Ruhezustand)[cite: 1].
+  - **`GreenWhiteBackground` (SubApp)**: Ein Baustein aus der Bibliothek `MyLib::sys`. [cite_start]Er sorgt dafür, dass sich der Hintergrund des Softkeys auf dem Terminal ändert [Grün bei Aktivierung, Weiß im Ruhezustand](cite: 1).
   - **`DigitalOutput_Q1`**: Der physische Ausgang.
 
 -----

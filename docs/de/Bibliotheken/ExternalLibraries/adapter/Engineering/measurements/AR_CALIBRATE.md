@@ -36,7 +36,7 @@ Der FB hat keine direkten Daten-Ausgänge. Die berechneten Werte werden über di
 **Plugs (bereitstellende Schnittstellen):**
 
 | Adapter | Typ | Beschreibung |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `Y` | `adapter::types::unidirectional::AR` | Kalibrierter Ausgang (Daten + Ereignis) |
 | `OFFSET` | `adapter::types::bidirectional::AR2` | Liefert den berechneten Offsetwert (bidirektional) |
 | `SCALE` | `adapter::types::bidirectional::AR2` | Liefert den berechneten Skalenfaktor (bidirektional) |
@@ -44,7 +44,7 @@ Der FB hat keine direkten Daten-Ausgänge. Die berechneten Werte werden über di
 **Sockets (nutzende Schnittstellen):**
 
 | Adapter | Typ | Beschreibung |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `X` | `adapter::types::unidirectional::AR` | Analoger Eingangswert (unidirektional) |
 | `CO` | `adapter::types::unidirectional::AX` | Trigger für Offset-Kalibrierung (Ereignis + Daten) |
 | `CS` | `adapter::types::unidirectional::AX` | Trigger für Skalen-Kalibrierung (Ereignis + Daten) |
@@ -90,7 +90,7 @@ Die Übergänge zwischen den Zuständen sind wie folgt definiert:
 ## Zustandsübersicht
 
 | Zustand | Beschreibung | Aktion |
-|---------|--------------|--------|
+| --------- | -------------- | -------- |
 | **REQ** | Normalbetrieb – Berechnung des kalibrierten Ausgangs | Führt Algorithmus `REQ` aus, sendet Ereignis auf `Y.E1` |
 | **CO** | Offset-Kalibrierung | Führt Algorithmus `CO` aus, sendet Ereignis auf `OFFSET.EO1` |
 | **CS** | Skalen-Kalibrierung | Führt Algorithmus `CS` aus, sendet Ereignis auf `SCALE.EO1` |

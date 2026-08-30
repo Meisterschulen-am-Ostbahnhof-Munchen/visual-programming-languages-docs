@@ -81,7 +81,7 @@ Der interne FB `E_D_FF_ANY_TMIN` besitzt einen impliziten Zustandsautomaten:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | `E_D_FF` | Einfaches D‑Flipflop ohne Zeitbegrenzung | Fehlende Kontrolle über die maximale Ausgabefrequenz. |
 | `SR_FF` | Set‑Reset‑Flipflop | Keine flankengesteuerte Datenübernahme. |
 | `E_D_FF_ANY_TMIN` (direkt) | Wie AW_D_FF_TMIN, aber reiner Ereignis‑/Daten‑FB | Besitzt kein Adapter‑Interface; die Variante mit Adapter erhöht die Austauschbarkeit und Kapselung in steckbaren Komponenten. |

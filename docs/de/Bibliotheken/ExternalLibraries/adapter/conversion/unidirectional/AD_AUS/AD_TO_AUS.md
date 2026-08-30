@@ -3,6 +3,7 @@
 ![AD_TO_AUS](./AD_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_TO_AUS** ist ein zusammengesetzter Funktionsblock (Composite FB), der einen DWORD-Adapter (AD) in einen USINT-Adapter (AUS) umwandelt. Er dient als unidirektionale Schnittstelle zur Konvertierung eines 32‑Bit‑Datenwerts in einen 8‑Bit‑Wert. Der Baustein kapselt die IEC‑61131‑Konvertierungsfunktion `F_DWORD_TO_USINT` und stellt die Adapter‑Schnittstellen bereit, sodass er nahtlos in eine Adapter‑basierte Kommunikationsstruktur eingebunden werden kann.

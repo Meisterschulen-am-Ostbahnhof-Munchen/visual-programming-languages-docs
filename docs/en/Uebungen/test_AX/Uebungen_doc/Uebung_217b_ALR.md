@@ -3,6 +3,7 @@
 ![Uebung_217b_ALR_network](./Uebung_217b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an IEC 61131-3 compliant down counter (CTD) in adapter format (ALI) with the LINT data type. The counter value is decremented via an input button, and another button loads a predefined preset value. The current counter value is output to a terminal via a conversion chain (LINT → LREAL). The counter output (Q) switches a digital output.
@@ -64,13 +65,13 @@ This exercise illustrates the use of adapter interfaces, signal conversion betwe
 
 ... 3. **Decrement**: Each key press on `Input_I1` (input `Input_CD`) generates an event that is routed via the adapter `IN` to the counter's decrement input `CD`. The counter reading decreases by 1.
 
-4. **Output Q**: When the counter reading is ≤ 0, the adapter output `Q` of the counter becomes active. This signal is then passed to the digital output `Output_Q1` (switching a load or display).
-5. **Displaying the Counter Value**: The current counter value `CV` (type LINT) is displayed on the terminal as a floating-point number via the conversion chain `ALI_TO_ALR` and `Q_NumericValue_PHYSA_LREAL`. The comments indicate that negative values can also occur here and that, in the case of rapid event sequences, an AX_D_FF can be useful to reduce terminal updates.
+1. **Output Q**: When the counter reading is ≤ 0, the adapter output `Q` of the counter becomes active. This signal is then passed to the digital output `Output_Q1` (switching a load or display).
+2. **Displaying the Counter Value**: The current counter value `CV` (type LINT) is displayed on the terminal as a floating-point number via the conversion chain `ALI_TO_ALR` and `Q_NumericValue_PHYSA_LREAL`. The comments indicate that negative values can also occur here and that, in the case of rapid event sequences, an AX_D_FF can be useful to reduce terminal updates.
 
 **Connection Overview** (Adapter and Event Connections):
 
 | Source | Destination | Type |
-|-------------------------------|--------------------------------|-----------------|
+| ------------------------------- | -------------------------------- | ----------------- |
 | `Input_CD.IN` | `ALI_FB_CTD.CD` | Adapter (IN) |
 | `Input_LD.IN` | `ALI_FB_CTD.LD` | Adapter (IN) |
 | ALI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter (OUT) |

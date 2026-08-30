@@ -3,9 +3,11 @@
 ![Uebung_214b_ALR_network](./Uebung_214b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up counter (CTU) according to IEC 61131-3 as an adapter version. The counter uses the data type `ULINT`. The current counter value is output to a terminal via a physical output (`PHYSA_LREAL`). The preset value is initially set to 5.
+
 ## Function Blocks (FBs) Used
 
 ### AULI_FB_CTU
@@ -83,7 +85,8 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 as an adap
 
 When the controller starts up, `Input_R.INITO` triggers an event that activates the converter `AULI_ULINT_TO_ULI.REQ`. This converter transforms the static value `ULINT#5` and passes it as a preset (`PV`) to the counter `AULI_FB_CTU`.
 
-2. **Counting Process**
+1. **Counting Process**
+
 - Each rising edge at the digital input `Input_I1` (connected to `Input_CU`) increments the counter `AULI_FB_CTU` by 1.
 - The counter outputs the current count value (`CV`) as `ULINT`.
 - When `CV >= PV` (here ≥ 5) is reached, the output `Q` is set to `TRUE`. This activates the digital output `Output_Q1`.
@@ -92,7 +95,8 @@ When the controller starts up, `Input_R.INITO` triggers an event that activates 
 
 A signal at digital input `Input_I2` (connected to `Input_R`) resets the counter to 0.
 
-4. **Output to Terminal**
+1. **Output to Terminal**
+
 - The counter value (`CV`) is converted into a floating-point number (`LREAL`) by the converter `AULI_TO_AUDI` of type `AULI_TO_ALR`.
 - This is passed to the function block `Q_NumericValue_PHYSA_LREAL`, which displays the value on the terminal (object `OutputNumber_N3`).
 

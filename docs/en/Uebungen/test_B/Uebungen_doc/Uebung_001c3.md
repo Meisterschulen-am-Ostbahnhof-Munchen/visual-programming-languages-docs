@@ -1,8 +1,9 @@
-# Exercise_001c3: DigitalInput_I1 to DigitalOutput_Q1 --> Query input on boot.
+# Exercise_001c3: DigitalInput_I1 to DigitalOutput_Q1 --> Query input on boot
 
 ![Uebung_001c3_network](./Uebung_001c3_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates reading a digital input (Input I1) and directly outputting it to a digital output (Output Q1) during the controller's startup.
@@ -25,13 +26,15 @@ A special feature is the use of a negation of the input signal and a special eve
 The flow is defined by the event and data connections in the SubApp network:
 
 1. **Initialization**
+
 - Upon booting, `DigitalInput_I1` sends the event `INITO` to its own `REQ` input. This causes the input to be read once immediately after startup.
-2. **Input Reading and Negation**
+1. **Input Reading and Negation**
+
 - Each time a new value is present at the input, `DigitalInput_I1` sends the event `IND`.
 - The event `IND` (as well as `CNF`) is connected to the `REQ` input of `F_NOT_BOOL`.
 - Simultaneously, the data value `IN` (from the input) is transferred to the `IN` input of `F_NOT_BOOL`. **Important:** This data connection has the property `Negated = true`, which performs a negation at the connection level. This inverts the input value before the NOT operation.
 
-3. **Output**
+1. **Output**
 
 - After the calculation, `F_NOT_BOOL` sends the event `CNF` to the `REQ` input of `DigitalOutput_Q1`.
 - The negated data value `OUT` from `F_NOT_BOOL` is placed on the data input `OUT` of the output block.

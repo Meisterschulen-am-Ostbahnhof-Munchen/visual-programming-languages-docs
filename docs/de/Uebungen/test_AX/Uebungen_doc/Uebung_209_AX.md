@@ -3,6 +3,7 @@
 ![Uebung_209_AX_network](./Uebung_209_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert den Aufbau einer **gegenseitigen Verriegelung (Interlock)** zwischen zwei reset-dominanten RS-Latches. Die Schaltung verhindert, dass beide Ausgänge gleichzeitig aktiv werden – ein typisches Sicherheitsmerkmal in der Steuerungstechnik. Die Realisierung erfolgt über zwei **ILOCK_FB_RS_AX**-Blöcke, die über einen AX/AX2-Adapter miteinander verbunden sind. Jeweils ein Setz- und ein Rücksetzeingang steuern die Latches, während die Ausgänge die digitalen Ausgänge Q1 und Q2 ansteuern.

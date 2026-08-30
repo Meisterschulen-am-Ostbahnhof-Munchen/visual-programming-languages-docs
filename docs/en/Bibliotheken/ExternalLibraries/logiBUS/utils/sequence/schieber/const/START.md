@@ -5,6 +5,7 @@
 ![START](./START.svg)
 
 - [Events and IEC 61499: The Starting Signal for Intelligent Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
+
 ## Introduction
 
 The `START` constant declaration defines a set of integer constants (of type `UINT`) for use in control programs. These constants represent specific states typically used in sequence controls, such as for sliders. They improve code readability and maintainability by replacing numeric values with meaningful names.

@@ -3,9 +3,11 @@
 ![AUDI_TO_ALI](./AUDI_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUDI_TO_ALI** function block is a composite module that bridges an **AUDI** adapter (of type *UDINT*) and an **ALI** adapter (of type *LINT*). It converts incoming UDINT values to LINT values using a standardized conversion function and forwards them to the output adapter. This module is typically used in applications that need to connect different address or integer types within a 4diac adapter concept.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AUDI_TO_ALI** function block is a composite module that bridges an **AUDI*
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | **AUDI** (unidirectional) | `AUDI_IN` | Socket (Input) | UDINT data adapter that provides a value based on event E1 and date D1. |
 | **ALI** (unidirectional) | `ALI_OUT` | Plug (Output) | LINT data adapter that outputs the converted value based on event E1 and date D1. |
 
@@ -71,7 +73,7 @@ As a composite block, `AUDI_TO_ALI` does not have its own states. The state logi
 ## Comparison with similar modules
 
 | Module | Type | Special Feature |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | `F_UDINT_TO_LINT` | Pure converter | No adapters, direct data I/O; no event handling via adapters, requires its own control. |
 | `AUDI_TO_ALI` (this one) | Adapter converter | Encapsulates the conversion in an adapter-based interface; events and data are automatically routed via the adapters. |
 | `ALI_TO_AUDI` (hypothetical) | Adapter converter | Would convert LINT backwards to UDINT (potentially lossy). |

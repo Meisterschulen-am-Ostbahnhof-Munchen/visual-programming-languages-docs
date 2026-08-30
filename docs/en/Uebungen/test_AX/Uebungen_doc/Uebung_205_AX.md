@@ -3,6 +3,7 @@
 ![Uebung_205_AX_network](./Uebung_205_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_205_AX** implements a safe switching control with priority and protection time.
@@ -80,8 +81,8 @@ The adapter outputs `IN`** of these function blocks are connected to the **adapt
 - `UP_OUT` → connected to the **OUT input** of **DigitalOutput_Q1**
 - `DOWN_OUT` → connected to the **OUT input** of **DigitalOutput_Q2**
 - `timeOut` → connected to the **TimeOutSocket** of the **E_TimeOut** block
-4. **DigitalOutput_Q1** and **DigitalOutput_Q2** set the corresponding physical outputs (`Output_Q1`, `Output_Q2`).
-5. The **E_TimeOut** block can optionally be used for time monitoring (e.g., to trigger an alarm in case of a prolonged timeout).
+1. **DigitalOutput_Q1** and **DigitalOutput_Q2** set the corresponding physical outputs (`Output_Q1`, `Output_Q2`).
+2. The **E_TimeOut** block can optionally be used for time monitoring (e.g., to trigger an alarm in case of a prolonged timeout).
 
 **Learning Objective**:
 

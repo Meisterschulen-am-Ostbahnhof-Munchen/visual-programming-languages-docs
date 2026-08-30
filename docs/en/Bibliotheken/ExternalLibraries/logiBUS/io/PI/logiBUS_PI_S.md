@@ -1,12 +1,15 @@
 # logiBUS_PI_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `logiBUS_PI_S` is a structured data type used to configure a digital input (PI - likely "Peripheral Input") within the logiBUS framework. It defines the necessary parameters to address a specific physical pin of an I/O module or controller. This data type is typically used as an input parameter for corresponding I/O function blocks.
+
 ## Interface Structure
 
 As a data type (STRUCT), `logiBUS_PI_S` does not have event-driven interfaces, but defines only data fields.
+
 ### **Data Inputs**
 
 Not applicable – this is a data type, not an executable function block.
@@ -51,6 +54,7 @@ This structured data type is used to centralize and ensure type safety in the co
 - **Simple Data Types (e.g., USINT directly):** Using a structured `logiBUS_PI_S` variable is preferable to directly using a `USINT` variable for the pin number because it is semantically clearer and can be more easily extended when the configuration is expanded (e.g., to include filter time or inversion) without having to change all call points.
 - **logiBUS_PO_S (Digital Output):** A complementary data type `logiBUS_PO_S` for configuring digital outputs (PO - Peripheral Output) with an identical or very similar structure likely exists.
 - **logiBUS_PO_S (Digital Output):**
+
 ## Conclusion
 
 The `logiBUS_PI_S` data type is a fundamental, specific configuration block for connecting digital input signals in logiBUS-based IEC 61499 applications. Its simple, single-parameter structure enables clear and centralized hardware configuration and forms the basis for the corresponding functionality in the executing I/O function blocks.

@@ -3,9 +3,11 @@
 *(No image available, as this is a data type and not a function block.)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `ST32X` is a user-defined structure data type consisting of 32 individual BOOL variables. It serves to bundle a collection of Boolean states or flags into a single, coherent data structure, which can simplify the handling and passing of status information. The name `ST32X` is derived from "Structure (ST) with 32 X/B (Boolean) bits".
+
 ## Interface Structure
 
 Since `ST32X` is a data type and not a function block, it does not have event- or data-related inputs and outputs in the sense of a function block. Its "structure" merely defines its internal elements.
@@ -81,7 +83,7 @@ As a passive data type, `ST32X` does not have its own state machine. Its "state"
 - **Status Flag Bundling:** When a system needs to manage a large amount of binary status information (e.g., error codes, component operating states, sensor flags), `ST32X` can be used to pass or store it in a single variable.
 - **Interface Optimization:** Instead of passing 32 separate BOOL signals to a function block, an instance of `ST32X` can be transmitted over a single data connection.
 - **Bit Mapping:** Although the elements are defined as `BOOL`, this structure could be used in conjunction with conversion function blocks (e.g., to convert to `DINT`) to access or manipulate the bits of a 32-bit word.
-- * **PLC-like I/O mappings:** In environments similar to PLC programming, such a structure can be used to map digital inputs or outputs.
+- - **PLC-like I/O mappings:** In environments similar to PLC programming, such a structure can be used to map digital inputs or outputs.
 
 ## ⚖️ Comparison with similar function blocks
 

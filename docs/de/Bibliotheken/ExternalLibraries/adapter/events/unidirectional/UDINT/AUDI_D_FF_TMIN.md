@@ -3,6 +3,7 @@
 ![AUDI_D_FF_TMIN](./AUDI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_D_FF_TMIN** realisiert ein D‑Flipflop (Data Latch) mit einer minimalen Sperrzeit zwischen aufeinanderfolgenden Ausgangsereignissen. Er dient dazu, einen über einen Adapter eingehenden Wert zu übernehmen und über einen zweiten Adapter auszugeben, wobei die Weitergabe des Ausgangsereignisses zeitlich gesteuert wird.

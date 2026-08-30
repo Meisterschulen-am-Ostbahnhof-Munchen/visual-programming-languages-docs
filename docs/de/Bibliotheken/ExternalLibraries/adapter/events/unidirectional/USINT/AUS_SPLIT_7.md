@@ -5,6 +5,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_SPLIT_7** ist ein generischer Baustein zur Verteilung eines einzelnen AUS-Adapter-Signals auf sieben identische AUS-Ausgänge. Er dient als Signalvervielfacher in Steuerungsanwendungen, die auf der IEC 61499-Norm basieren. Der Baustein besitzt keine ereignis- oder datenbasierten Schnittstellen, sondern kommuniziert ausschließlich über Adapter des Typs `adapter::types::unidirectional::AUS`. Die eigentliche Typisierung des Signals wird erst zur Laufzeit über das generische Attribut `GenericClassName` festgelegt.

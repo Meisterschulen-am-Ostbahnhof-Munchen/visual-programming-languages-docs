@@ -4,6 +4,7 @@
 *(Insert image of function block here)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASR_SPLIT_8` is used to distribute a single incoming **ASR** adapter signal unchanged to eight identical outputs. It is defined as a generic function block and is particularly suitable for applications where a sensor or control signal is required multiple times – for example, in agricultural automation technology.
@@ -29,7 +30,7 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-------|-------------------------------|---------------------------------------------------|
+| ---------- | ------- | ------------------------------- | --------------------------------------------------- |
 | Socket | IN | `adapter::types::unidirectional::ASR` | Incoming ASR signal distributed to all outputs. |
 | Plug | OUT1 | `adapter::types::unidirectional::ASR` | First output with the signal from IN. |
 | Plug | OUT2 | `adapter::types::unidirectional::ASR` | Second output with the signal from IN. |
@@ -65,7 +66,7 @@ The `ASR_SPLIT_8` has **no internal states**. The output is a direct function of
 ## Comparison with Similar Blocks
 
 | Block | Outputs | Special Features |
-|------------------------|----------|------------------------------------------------|
+| ------------------------ | ---------- | ------------------------------------------------ |
 | `ASR_SPLIT_8` | 8 | Provides the maximum possible number of ASR copies in one block. |
 | `ASR_SPLIT_4` | 4 | More compact alternative for smaller distribution systems. |
 | `ASR_SPLIT_2` | 2 | Minimal splitter for point-to-point transmission. |

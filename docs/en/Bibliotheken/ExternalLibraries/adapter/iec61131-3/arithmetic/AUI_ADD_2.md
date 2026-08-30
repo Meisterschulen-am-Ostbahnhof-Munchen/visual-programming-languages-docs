@@ -5,6 +5,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_ADD_2` is a generic function block (Generic FB) designed to perform arithmetic addition. It uses unidirectional adapters of type `AUI` (Adapter Unidirectional Interface) to add two input values and output the result. Because it is a generic block based on the class `GEN_AUI_ADD`, it can be flexibly used for various data types supported by the corresponding adapters.

@@ -4,6 +4,7 @@
 *Image of the function block: [Insert here if available]*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_SPLIT_8** serves as a generic distributor for one unidirectional adapter input (AE) to eight identical adapter outputs. It allows the multiple use of an incoming signal without modifying it.
@@ -29,7 +30,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AE` | Incoming unidirectional AE adapter |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AE` | First outgoing AE adapter |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AE` | Second outgoing AE adapter |

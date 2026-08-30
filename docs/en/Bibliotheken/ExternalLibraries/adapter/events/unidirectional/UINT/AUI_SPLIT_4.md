@@ -3,9 +3,11 @@
 ![AUI_SPLIT_4](./AUI_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_SPLIT_4** serves as a generic distributor for AUI signals. It accepts a single AUI input (socket) and routes it to four separate AUI outputs (plugs). This block is typically used in automation technology when a unidirectional signal is required multiple times in parallel.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|--------|----------------------------|--------------------------------------------|
+| ---------- | -------- | ---------------------------- | -------------------------------------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AUI` | Input signal (AUI) |
 | Plug | `OUT1` | `adapter::types::unidirectional::AUI` | First output (identical to IN) |
 | Plug | `OUT2` | `adapter::types::unidirectional::AUI` | Second output (identical to IN) |

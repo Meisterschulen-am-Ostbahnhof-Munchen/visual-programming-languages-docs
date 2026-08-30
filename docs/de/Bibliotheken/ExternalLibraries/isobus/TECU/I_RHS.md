@@ -36,7 +36,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 ## Kupplungsparameter
 
 | Parameter | Typ | Beschreibung | SPN | Bit-Länge | Skalierung |
-|-----------|------|--------------|-----|-----------|------------|
+| ----------- | ------ | -------------- | ----- | ----------- | ------------ |
 | `REAR_HITCH_POSITION` | USINT | Kupplungsposition | 1873 | 8 | 0.4 %/bit |
 | `REAR_HITCH_WORK_INDICATION` | BYTE | Arbeitszustand | 1877 | 2 | 4 Zustände/2 bit |
 | `REAR_HITCH_POS_LIMIT_STATUS` | BYTE | Positionslimitierung | 5151 | 3 | 8 Zustände/3 bit |
@@ -68,7 +68,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 ## Kupplungseigenschaften
 
 | Feature | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | Positionsbereich | 0-100% (0 = ganz unten) |
 | Kraftmessung | ±100% der Nennlast |
 | Zugkraftbereich | -320kN bis +350kN |
@@ -77,7 +77,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 ## Rückgabecodes (REAR_HITCH_EXIT_REASON_CODE)
 
 | Codebereich | Bedeutung |
-|------------|-----------|
+| ------------ | ----------- |
 | 0-15 | Systemfehler |
 | 16-31 | Positionsfehler |
 | 32-47 | Kraftmessfehler |
@@ -93,7 +93,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature | I_RHS | Standard | Premium |
-|---------|-------|----------|---------|
+| --------- | ------- | ---------- | --------- |
 | Genauigkeit | ±0.4% | ±2% | ±0.2% |
 | Kraftmessung | Bidirektional | Nur Zug | Triaxial |
 | Diagnosecodes | 64 | 8 | 128 |

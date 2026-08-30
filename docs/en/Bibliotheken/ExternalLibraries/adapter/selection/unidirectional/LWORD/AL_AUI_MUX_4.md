@@ -3,6 +3,7 @@
 ![AL_AUI_MUX_4](AL_AUI_MUX_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `AL_AUI_MUX_4` is the adapter-based variant of the generic multiplexer for data type `LWORD`. Unlike `AL_MUX_4`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.

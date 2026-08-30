@@ -77,7 +77,7 @@ Der Baustein arbeitet also als **lesender und schreibender Speicherzugriff mit a
 Der interne NVS-Baustein besitzt einen eigenen Zustandsautomaten. Für den Anwender relevant sind folgende Abläufe:
 
 | Phase | Zustand |
-|-------|---------|
+| ------- | --------- |
 | 1 | Warten auf INIT-Ereignis. |
 | 2 | INIT ausgeführt → NVS initialisiert → GET gestartet. |
 | 3 | GET abgeschlossen → Wert über AS_OUT gesendet → Bereit für Schreibaufträge über AS_IN. |

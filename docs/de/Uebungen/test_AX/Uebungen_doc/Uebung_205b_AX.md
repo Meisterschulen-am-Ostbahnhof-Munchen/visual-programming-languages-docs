@@ -3,6 +3,7 @@
 ![Uebung_205b_AX_network](./Uebung_205b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung behandelt die Motorreversierung mit Schutzzeit unter Verwendung eines Interlock-Bausteins (ILOCK_SWITCH_PROTECT_AX). Ziel ist es, einen Motor über zwei Eingänge (Aufwärts/Abwärts) zu steuern, wobei eine festgelegte Schutzzeit (hier 1 Sekunde) das gleichzeitige Einschalten beider Richtungen verhindert und einen zu schnellen Richtungswechsel blockiert. Die Steuerung erfolgt über Adapter-Schnittstellen, was die Wiederverwendbarkeit des Subapplikationstyps erhöht.

@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_6](./AIWS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AIWS_SPLIT_6 function block is used to distribute an incoming AIWS signal (adapter type) to six identical outputs. It is designed as a generic function block and enables simple signal multiplication in control applications based on the 4diac IDE framework.
+
 ## Interface Structure
 
 ### **Event Inputs**

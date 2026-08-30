@@ -4,6 +4,7 @@
 ![FB_T_FF](./FB_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **FB_T_FF** (Toggle Flip-Flop) implements an edge-triggered, asynchronously resettable frequency divider or toggle switch. On each rising clock edge at the **CLK** input, the output **Q** is inverted (toggled). A high level at the **RST** input immediately resets **Q** to `FALSE`. This function block is particularly suitable for binary state transitions in control sequences.
@@ -45,7 +46,7 @@ This function block is called using the **REQ** event. On each call, the interna
 
 1. **Reset priority:** If `RST = TRUE` is active, `Q` is immediately set to `FALSE`.
 2. **Edge detection:** If `RST` is not active and the condition `CLK AND NOT EDGE` is met, there is a **rising edge** of `CLK`. In this case, `Q` is inverted to `Q := NOT Q`.
-2. **Edge detection:** If `RST` is not active and the condition `CLK AND NOT EDGE` is met, there is a **rising edge** of `CLK`. In this case, `Q` is inverted to `Q := NOT Q`. 3. **Storage:** After evaluation, `EDGE := CLK` is set so that the edge can be detected on the next call.
+3. **Edge detection:** If `RST` is not active and the condition `CLK AND NOT EDGE` is met, there is a **rising edge** of `CLK`. In this case, `Q` is inverted to `Q := NOT Q`. 3. **Storage:** After evaluation, `EDGE := CLK` is set so that the edge can be detected on the next call.
 
 The algorithm is executed in the internal **REQ** state; after the algorithm, the **CNF** event is sent.
 
@@ -75,8 +76,8 @@ The state is immediately reactivated after processing; there are no wait or foll
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-|----------------|-----------------------------------------------------------------------------|
-| **SR Flip-Flop**| Set and reset via separate inputs; no toggle behavior. |
+| ---------------- | ----------------------------------------------------------------------------- |
+| **SR Flip-Flop** | Set and reset via separate inputs; no toggle behavior. |
 | **D-Flip-Flop** | Takes the value of `D` on the clock edge; no toggle, no reset integrated. |
 | **FB_T_FF** | Inverts the output on each rising edge; asynchronous reset possible. |
 

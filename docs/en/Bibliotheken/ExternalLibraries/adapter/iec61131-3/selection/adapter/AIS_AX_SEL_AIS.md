@@ -65,13 +65,13 @@ The data arriving at the adapters `IN0`, `IN1`, and `G` are temporarily stored i
 
 The function blocks `F_MOVE_IN0` and `F_MOVE_IN1` copy the cached data (interpreted as data type `STRING`) and forward it to the actual selection core.
 
-3. **Selection Process (F_SEL):**
+1. **Selection Process (F_SEL):**
 
 The core function block `F_SEL` (type `iec61131::selection::F_SEL`) evaluates the state of the selector `G`:
 
 - If `G` = `FALSE`, the value of `IN0` is selected.
 - If `G` = `TRUE`, the value of `IN1` is selected.
-4. **Output Transfer:**
+1. **Output Transfer:**
 
 The selection result is transferred via the function block `F_MOVE_OUT` to the output flip-flop `E_D_FF_ANY_OUT`. This triggers the event `E1` at the output adapter `OUT` and places the selected data value at the output `D1`.
 

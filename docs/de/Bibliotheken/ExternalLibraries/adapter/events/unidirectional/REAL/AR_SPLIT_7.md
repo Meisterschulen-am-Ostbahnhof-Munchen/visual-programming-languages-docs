@@ -3,6 +3,7 @@
 ![AR_SPLIT_7](./AR_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AR_SPLIT_7** ist ein generischer Funktionsblock, der einen eingehenden AR‑Adapter-Socket (vom Typ `adapter::types::unidirectional::AR`) auf sieben separate AR‑Adapter-Plugs verteilt. Er dient dazu, ein AR‑Signal an bis zu sieben verschiedene Empfänger weiterzuleiten, ohne dass die Daten mehrfach bereitgestellt werden müssen.

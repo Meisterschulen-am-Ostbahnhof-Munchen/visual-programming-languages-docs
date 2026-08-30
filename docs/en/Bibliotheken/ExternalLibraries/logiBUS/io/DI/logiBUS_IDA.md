@@ -3,15 +3,17 @@
 ![logiBUS_IDA](./logiBUS_IDA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **logiBUS_IDA** is a composite function block (CFB) for digital double-word input processing. It encapsulates an internal **logiBUS_ID** block and provides a uniform interface for initialization, parameterization, and event-driven data querying. The block is designed for use in logiBUS-based automation systems and supports the selection of an input channel as well as the configuration of the repeat event.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description |
-|----------|-------|---------------|
+| ---------- | ------- | --------------- |
 | INIT | EInit | Service initialization; expects valid parameters (QI, PARAMS, Input, InputEvent) |
 | REQ | Event | Service request; triggers a new data query at the internal function block |
 
@@ -24,7 +26,7 @@ The **logiBUS_IDA** is a composite function block (CFB) for digital double-word 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------------|-----------------------------|--------------|
+| ---------------- | ----------------------------- | -------------- |
 | QI | BOOL | Qualifier for the event input; controls the execution |
 | PARAMS | STRING | Service parameter (e.g., configuration string) |
 | Input | logiBUS_DI_S | Selection of the digital input channel (I1…I8); Default value: *Invalid* |
@@ -33,7 +35,7 @@ The **logiBUS_IDA** is a composite function block (CFB) for digital double-word 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|---------------|--------|--------------|
+| --------------- | -------- | -------------- |
 | QO | BOOL | Qualifier of the output event |
 | STATUS | STRING | Service status (e.g., error messages or operating state) |
 
@@ -64,10 +66,12 @@ A cyclic or one-time read operation is triggered via the **REQ** event. The inte
 The function block goes through the following main states:
 
 1. **Initialization (INIT)**
+
 - Entry: Event **INIT** is activated.
 - Action: Internal function block is parameterized and started.
 - Output: **INITO** with QO/STATUS.
-2. **Operation (REQ)**
+1. **Operation (REQ)**
+
 - Entry: Event **REQ** is activated.
 - Action: Data query at the internal function block; value is provided via adapter **IN**.
 - Cyclic repetition is possible if *InputEvent* is set to *REPEAT*.

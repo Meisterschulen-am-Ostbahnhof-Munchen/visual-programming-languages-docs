@@ -6,6 +6,7 @@
 
 The function block `AX_INTERLOCK_2` is an event-driven, bistable function block with toggle functionality and a dual interlock mechanism. It controls two independent, but mutually exclusive, outputs. The block combines set, reset, and toggle functions for two channels and ensures that only one of the two outputs can be active at any given time.
 ![AX_INTERLOCK_2](AX_INTERLOCK_2.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -48,18 +49,23 @@ The `AX_INTERLOCK_2` is implemented as a Basic Function Block (BFB) and has an E
 - **Dual Interlock**: The mutual exclusivity of the outputs is hard-coded at the state transition. In state `SET1`, `RESET2` is always called, and vice versa.
 - **Priority**: A global reset event (`R`) takes precedence and resets both outputs, regardless of other pending events or the current state.
 - **Adapter-Based Output**: The output values are not provided via classic data output pins, but via unidirectional adapters. This enables a clean, typed interface for connecting other components.
-*
+-
+
 ## State Transition
 
 1. **START** (both outputs FALSE)
+
 - For `SET1` or `CLK1` -> **SET1** (OUT1=TRUE, OUT2=FALSE)
 - For `SET2` or `CLK2` -> **SET2** (OUT1=FALSE, OUT2=TRUE)
 - For `R` -> **RESET** (OUT1=FALSE, OUT2=FALSE)
-2. **SET1** (OUT1=TRUE, OUT2=FALSE)
+1. **SET1** (OUT1=TRUE, OUT2=FALSE)
+
 - Automatic transition -> **START**
-3. **SET2** (OUT1=FALSE, OUT2=TRUE)
+1. **SET2** (OUT1=FALSE, OUT2=TRUE)
+
 - Automatic transition -> **START**
-4. **RESET** (both outputs FALSE)
+1. **RESET** (both outputs FALSE)
+
 - Automatic transition -> **START**
 
 ## Application Scenarios

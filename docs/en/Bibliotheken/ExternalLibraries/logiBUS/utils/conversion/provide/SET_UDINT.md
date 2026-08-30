@@ -3,9 +3,11 @@
 ![SET_UDINT](./SET_UDINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_UDINT** is used to write a value from the data input `IN` to the InOut variable `OUT`. The operation is triggered by an event at the input `REQ`, and after successful assignment, the output `CNF` is activated. The function block is specifically designed for the UDINT data type, thus enabling efficient and type-safe data transfer to a shared variable.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **SET_UDINT** is used to write a value from the data input `I
 ### **Data Inputs**
 
 | Identifier | Data Type | Initial Value | Comment |
-|------------|----------|-------------|-----------|
+| ------------ | ---------- | ------------- | ----------- |
 | `IN` | UDINT | 0 | Value to be written to the target variable. |
 | `OUT` (InOut) | UDINT | 0 | Target variable that functions as both an input (readable) and an output (writable). |
 

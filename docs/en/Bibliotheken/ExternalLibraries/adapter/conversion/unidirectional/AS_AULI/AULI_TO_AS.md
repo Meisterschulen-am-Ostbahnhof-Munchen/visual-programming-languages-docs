@@ -3,9 +3,11 @@
 ![AULI_TO_AS](./AULI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AULI_TO_AS** function block is a composite module for converting a unidirectional **AULI** adapter (ULINT) to a unidirectional **AS** adapter (SINT). It encapsulates the type conversion of unsigned 64-bit integers to signed 8-bit integers and provides seamless connectivity between components with different data type requirements in the 4diac framework.
+
 ## Interface Structure
 
 The module does not have separate event or data ports at the top level. All communication takes place exclusively via two adapters.
@@ -13,7 +15,7 @@ The module does not have separate event or data ports at the top level. All comm
 ## **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `AULI_IN` | Socket (Input) | `adapter::types::unidirectional::AULI` | Provides an event `E1` and a data value `D1` of type `ULINT`. |
 | `AS_OUT` | Plug (Output) | `adapter::types::unidirectional::AS` | Provides an event `E1` and a data value `D1` of type `SINT`. |
 
@@ -55,6 +57,7 @@ The block does not have an explicit state machine or internal state registers. I
 - **Protocol Adaptation:** Heterogeneous automation systems where adapters use different data types can be connected using this function block in a type-compatible manner.
 - **Data Reduction:** Targeted conversion of large numerical ranges into smaller formats to save memory or bus bandwidth (at the expense of accuracy).
 - **Sensor Integration:**
+
 ## Comparison with Similar Function Blocks
 
 - **`AULI_TO_INT`** – Converts to `INT` (16-bit, -32768 … 32767), larger value range than SINT, but still lossy with large numbers.

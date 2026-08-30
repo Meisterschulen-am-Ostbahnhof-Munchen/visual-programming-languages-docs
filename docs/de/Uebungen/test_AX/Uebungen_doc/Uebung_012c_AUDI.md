@@ -14,7 +14,7 @@ Diese Übung demonstriert die Realisierung einer numerischen Werteingabe mit ans
 - **Verwendete interne FBs**: Die internen FBs dieses Bausteins sind nicht im Detail einsehbar, da es sich um einen vordefinierten Baustein aus der Bibliothek `MyLib::sys` handelt. Er besteht vermutlich aus einer Kette von Bausteinen für die Wertaufnahme, Konvertierung und die NVS-Speicherung.
 - **Funktionsweise**: Der Baustein liest einen numerischen Wert aus dem `DefaultPool` unter der Objekt-ID `InputNumber_I1` (importiert aus `Uebungen::const::UT::DefaultPool`). Diesen Wert speichert er im nichtflüchtigen Speicher (NVS) unter dem Schlüssel `KEY_I1_STORE` in der Sektion `SECTION_I1_STORE` (beide importiert aus `Uebungen::const::NVS::NVS_Keys`). Die Parameter `KEY`, `SECTION` und `u16ObjId` werden der SubApp beim Einfügen übergeben.
 
-#### Parameter des Sub-Bausteins:
+#### Parameter des Sub-Bausteins
 
 | Parameter    | Wert                  | Quelle / Bedeutung                                       |
 |--------------|-----------------------|----------------------------------------------------------|

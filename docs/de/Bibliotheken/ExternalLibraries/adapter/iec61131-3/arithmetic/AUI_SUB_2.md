@@ -6,6 +6,7 @@
 ![AUI_SUB_2](./AUI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_SUB_2` dient zur Durchführung einer arithmetischen Subtraktion innerhalb einer IEC 61499-Anwendung. Es handelt sich hierbei um einen generischen Funktionsbaustein (Generic FB), der speziell für die Interaktion mit Adapter-Schnittstellen entwickelt wurde. Er ermöglicht es, Subtraktionsoperationen modular und strukturiert über standardisierte Adapterverbindungen abzubilden, anstatt diskrete Einzeldrähte für Daten und Ereignisse zu verwenden.

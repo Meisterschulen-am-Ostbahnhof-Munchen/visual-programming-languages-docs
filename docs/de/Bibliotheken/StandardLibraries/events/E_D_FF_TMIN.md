@@ -1,6 +1,7 @@
 # E_D_FF_TMIN
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_D_FF_TMIN` kombiniert `E_D_FF` (taktgesteuertes `BOOL`-Latch mit Änderungserkennung) mit [E_TMIN](E_TMIN.md) (Mindestabstandszeit): Änderungen von `Q` werden weiterhin sofort in `Q` übernommen, das Änderungsereignis `EO` wird jedoch zusätzlich auf höchstens eine Auslösung pro `Tmin`-Intervall begrenzt.

@@ -55,10 +55,10 @@ Der **E_MERGE** ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_MERGE | E_DEMUX | E_SWITCH |
-|---------------|---------|---------|----------|
+| Feature | E_MERGE | E_DEMUX | E_SWITCH |
+| --------------- | --------- | --------- | ---------- |
 | Funktionsprinzip | ODER-Verknüpfung | Verteilung | Bedingte Weiterleitung |
-| Richtung      | n:1     | 1:n     | 1:1      |
+| Richtung | n:1 | 1:n | 1:1 |
 | Ereignisfluss | Kombination | Aufteilung | Selektion |
 
 ## Ähnliche Bausteine

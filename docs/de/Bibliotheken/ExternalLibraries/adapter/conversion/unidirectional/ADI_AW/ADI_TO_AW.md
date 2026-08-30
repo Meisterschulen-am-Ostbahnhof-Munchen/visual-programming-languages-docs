@@ -77,7 +77,7 @@ Da es sich um einen rein strukturierten Composite-FB ohne eigene ECC (Execution 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | `F_DINT_TO_WORD` | Direkte Konvertierung DINT → WORD | Keine Adapter-Kapselung; muss manuell in ein Netzwerk integriert werden |
 | `ADI_TO_AW` | Adapterbasierte Kapselung derselben Konvertierung | Bietet sofort einsatzbereite Adapter-Schnittstellen; vereinfacht die Wiederverwendung |
 | `WORD_TO_DINT` | Umgekehrte Konvertierung | Andere Richtung; eigener Adapter-Typ erforderlich |

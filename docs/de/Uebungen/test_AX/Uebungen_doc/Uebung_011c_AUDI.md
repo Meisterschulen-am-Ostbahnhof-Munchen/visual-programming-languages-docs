@@ -3,6 +3,7 @@
 ![Uebung_011c_AUDI_network](./Uebung_011c_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert das Durchschleifen eines numerischen Werts von einem Eingangsbaustein (`InputNumber_I3`) auf einen Ausgangsbaustein (`Q_NumericValue_AUDI`) unter Verwendung eines Adapterbausteins (`AD_TO_AUDI`). Der Wert wird dabei unverändert übertragen („Durchschleifen“). Die SubApplikation ist als wiederverwendbare Komponente für ISOBUS‑Anwendungen konzipiert.

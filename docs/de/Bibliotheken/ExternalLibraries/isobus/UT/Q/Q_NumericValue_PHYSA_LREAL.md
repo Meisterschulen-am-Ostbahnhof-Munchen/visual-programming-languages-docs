@@ -3,6 +3,7 @@
 ![Q_NumericValue_PHYSA_LREAL](./Q_NumericValue_PHYSA_LREAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **Q_NumericValue_PHYSA_LREAL** dient als Kommando zum Ändern eines numerischen Werts im ISOBUS-Kontext (ISO 11783-6). Er nimmt einen physikalischen LREAL-Wert über den **ALR**-Adapter entgegen und wickelt die eigentliche Verarbeitung über den eingebetteten Baustein **Q_NumericValue_PHYS_LREAL** ab. Der FB nutzt Adapter-Schnittstellen für die physikalische Werteingabe sowie für die Signalisierung von Über- und Unterschreitungen der zulässigen Bereichsgrenzen.

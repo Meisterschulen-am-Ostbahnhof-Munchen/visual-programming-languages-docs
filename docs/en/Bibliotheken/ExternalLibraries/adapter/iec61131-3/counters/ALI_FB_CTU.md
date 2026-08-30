@@ -3,9 +3,11 @@
 ![ALI_FB_CTU](./ALI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_FB_CTU** is a 64-bit integer counter (LINT). It serves as an adapter wrapper for the IEC 61131 counter module *FB_CTU_LINT* and provides all input and output signals via standardized adapter interfaces (AX and ALI). This ensures a clear separation of event and data flows and facilitates reuse in different project environments.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,7 +38,7 @@ The module does not have separate, discrete data outputs. The output data is pro
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Sockets** (Inputs) | CU | AX | Count-Up: Event + BOOL signal |
 | | R | AX | Reset: Event + BOOL signal |
 | | PV | ALI | Preset value: Event + LINT value |
@@ -65,7 +67,7 @@ After each processing operation, the internal block outputs a CNF event. This is
 The internal state is determined by the counter reading (64-bit integer) and the Boolean output Q. There is no explicit state machine; the function block operates in an event-driven manner:
 
 | State Component | Possible Values | Description |
-|--------------------|----------------|--------------|
+| -------------------- | ---------------- | -------------- |
 | Counter Reading (CV) | 0 … 2⁶³‑1 | Current Count Value |
 | Output Q | FALSE / TRUE | TRUE if CV ≥ PV |
 

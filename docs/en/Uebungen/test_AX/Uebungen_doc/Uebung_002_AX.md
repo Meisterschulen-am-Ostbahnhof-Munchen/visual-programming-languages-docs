@@ -1,8 +1,9 @@
 # Exercise_002_AX: DigitalInput_I1 to DigitalOutput_Q1/_Q2, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002_AX`, in which a single digital input signal is distributed to two different digital outputs. This exercise utilizes the concept of adapter branching.
+This article describes the logiBUS® exercise `Uebung_002_AX`, in which a single digital input signal is distributed to two different digital outputs. This exercise utilizes the concept of adapter branching
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to demonstrate how adapter connections can be branched according to IEC 61499. Since a "plug" (output of an adapter) in 4diac can often only be connected to one "socket" (input of an adapter) (depending on the version and configuration), a special splitter module is used to cleanly distribute a signal to multiple receivers.

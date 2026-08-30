@@ -3,6 +3,7 @@
 ![AX_TO_AUI](./AX_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_TO_AUI ist ein Composite Funktionsblock (FB), der einen BOOL-Wert aus einem AX-Adapter in einen UINT-Wert für einen AUI-Adapter umwandelt. Er kapselt die Konvertierungslogik und ermöglicht eine nahtlose Integration zwischen unidirektionalen Adaptern unterschiedlicher Datentypen. Die Umwandlung erfolgt ereignisgesteuert über einen internen IEC 61131 Konvertierungsbaustein.

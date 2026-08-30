@@ -1,8 +1,9 @@
 # Exercise_004a7: SR and T Flip-Flop with IE and E_REND (Rendezvous)
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004a7`. Here, the rendezvous pattern is combined with an extended flip-flop type that has a dedicated reset function.
+This article describes the logiBUS® exercise `Uebung_004a7`. Here, the rendezvous pattern is combined with an extended flip-flop type that has a dedicated reset function
 ----
+
 ## Objective of the Exercise
 
 Demonstration of the interaction between complex event logic (`E_REND`) and a flip-flop with set/reset priority (`E_T_FF_SR`). The goal is a controller that only becomes active after multiple confirmations but can be safely deactivated at any time.
@@ -38,6 +39,7 @@ Demonstration of the interaction between complex event logic (`E_REND`) and a fl
 
 1. To toggle the light (`Q1`), both buttons `I1` and `I2` must be pressed. The rendezvous then fires the clock signal (`CLK`) for the flip-flop.
 2. The button `I3` acts as an **all-off button**:
+
 - It immediately resets the flip-flop `E_T_FF_SR` (output becomes `FALSE`).
 - It simultaneously clears the memory of `E_REND`. Therefore, if only one button (`I1` or `I2`) was pressed, this partial information is deleted.
 

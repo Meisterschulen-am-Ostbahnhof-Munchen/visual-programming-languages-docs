@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_049`. This exercise is designed to practice creating extensive point-to-point connections.
+
 ## 🎧 Podcast
 
 ![Uebung_049_network](./Uebung_049_network.svg)
@@ -16,7 +17,7 @@ This article describes the logiBUS® exercise `Uebung_049`. This exercise is des
 
 ## Overview
 
-[cite_start]In IEC 61499, four digital inputs (QZMsdocsQZ to QZMsdocsQZ) are directly mapped to four digital outputs (QZMsdocsQZ to QZMsdocsQZ)[cite: 1]. This is the basic form of signal routing without logic or structuring, where each channel has its own event and data connections. It primarily serves as training for manual wiring in the 4diac IDE.
+[cite_start]In IEC 61499, four digital inputs (QZMsdocsQZ to QZMsdocsQZ) are directly mapped to four digital outputs [QZMsdocsQZ to QZMsdocsQZ](cite: 1). This is the basic form of signal routing without logic or structuring, where each channel has its own event and data connections. It primarily serves as training for manual wiring in the 4diac IDE.
 
 ---
 

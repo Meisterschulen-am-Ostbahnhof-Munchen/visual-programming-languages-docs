@@ -4,6 +4,7 @@
 ![sequence_ET_08_ecc](./sequence_ET_08_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_ET_08` is a sequencer with eight outputs. It allows the execution of a fixed sequence of steps, where the transition from one step to the next can be triggered either by an external event or by an adjustable time interval. This block is particularly suitable for control tasks requiring a cyclic or time-controlled sequence of actions.
@@ -33,7 +34,8 @@ The function block `sequence_ET_08` is a sequencer with eight outputs. It allows
 
 - `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the duration for the automatic transition from the current to the next state. If the value is set to `NO_TIME`, the timed transition for this step is disabled, and an event is required.
 
-*
+-
+
 ### **Data Outputs**
 
 - `STATE_NR` (Type `SINT`): Outputs the current state number (`START = 0`, `State_01 = 1`, ..., `State_08 = 8`).
@@ -86,6 +88,7 @@ The `RESET` event leads to a dedicated reset state (`sRESET`), which switches of
 Compared to simpler sequencers (e.g., `E_SR` or `E_CTU` in series), `sequence_ET_08` offers a fully predefined step sequence with integrated timing and dedicated outputs for each step. Unlike a custom-programmed SFC (Sequential Function Chart), the logic is hard-coded, making it easier to use but also less flexible. Components like `E_DELAY` would need to be added externally, whereas here the timing functionality is integrated.
 
 Compared to simpler sequencers (e.g., `E_DELAY`), `sequence_ET_08` offers a fully predefined step sequence with integrated timing and dedicated outputs for each step.
+
 ## Conclusion
 
 The `sequence_ET_08` is a robust and easy-to-configure sequencer block for IEC 61499. Its strength lies in its combined event and time control, as well as its clear, step-defined interface. It is ideally suited for standardized control sequences with up to eight steps where a high degree of predictability and simple parameterization are desired. For processes with a variable number of steps or more complex branching, more flexible solutions such as composite function blocks or custom SFCs are preferable.

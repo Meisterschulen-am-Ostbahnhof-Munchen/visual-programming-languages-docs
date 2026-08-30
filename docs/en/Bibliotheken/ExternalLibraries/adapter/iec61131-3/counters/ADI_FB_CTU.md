@@ -3,15 +3,17 @@
 ![ADI_FB_CTU](./ADI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ADI_FB_CTU is an up-counter for DINT integers, whose inputs and outputs are provided via standardized adapters (AX and ADI). It encapsulates the standard function block `FB_CTU_DINT` and enables its integration into modular, adapter-based systems. This function block is suitable for general counting tasks in automation technology.
+
 ## Interface Structure
 
 The function block does not have direct event or data interfaces, but only adapters for connection. The following table explains the available adapters, their type, and their function.
 
 | Direction | Name | Adapter Type | Description |
-|----------|------|-------------|--------------|
+| ---------- | ------ | ------------- | -------------- |
 | **Input (Socket)** | `CU` | `AX` | Count pulse input (event + data) |
 | **Input (Socket)** | `R` | `AX` | Reset input (event + data) |
 | **Input (Socket)** | `PV` | `ADI` | Preset value for comparison |
@@ -93,7 +95,7 @@ Output `Q` (via the adapter) is set as soon as `Zähler ≥ PV` is reached. The 
 ## Comparison with similar components
 
 | Component | Properties |
-|----------|---------------|
+| ---------- | --------------- |
 | `CTU` (Standard, without adapter) | Same counting function, but with direct event and data inputs/outputs. Easier to use in classic IEC 61499 networks. |
 | `ADI_FB_CTUD` | Up/down counter, also adapter-based. Additionally offers a down count input. |
 | `FB_CTU_DINT`(Internal) | Same counting logic, but without adapter encapsulation. The adapter version offers a uniform, modular interface. |

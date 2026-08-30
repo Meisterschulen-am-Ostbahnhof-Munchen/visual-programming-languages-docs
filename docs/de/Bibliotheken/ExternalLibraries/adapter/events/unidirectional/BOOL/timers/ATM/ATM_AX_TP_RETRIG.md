@@ -3,6 +3,7 @@
 ![ATM_AX_TP_RETRIG](./ATM_AX_TP_RETRIG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ATM_AX_TP_RETRIG` ist ein retriggerbarer Impuls-Timer-Funktionsblock. Er erzeugt einen Impuls von definierter Dauer am Ausgang, wenn der Eingang auf TRUE wechselt. Während des laufenden Impulses können weitere Trigger den Timer neu starten (Retrigger-Funktion). Ein Reset-Eingang beendet den Impuls sofort. Der Baustein verwendet standardisierte Adapter für Ein- und Ausgang, was eine flexible Anbindung in modularen Steuerungssystemen ermöglicht.

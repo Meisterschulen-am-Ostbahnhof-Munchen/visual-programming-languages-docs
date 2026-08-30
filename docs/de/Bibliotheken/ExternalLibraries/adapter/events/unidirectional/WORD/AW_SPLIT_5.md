@@ -3,6 +3,7 @@
 ![AW_SPLIT_5](./AW_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_SPLIT_5** dient dazu, einen eingehenden AW‑Adapter („Aktor/Wege“) auf fünf separate, identische AW‑Ausgänge zu verteilen. Er ist als generischer Baustein ausgelegt und kann in Steuerungsarchitekturen eingesetzt werden, in denen ein einzelnes Signal oder eine Datenverbindung auf mehrere parallele Pfade aufgeteilt werden muss.

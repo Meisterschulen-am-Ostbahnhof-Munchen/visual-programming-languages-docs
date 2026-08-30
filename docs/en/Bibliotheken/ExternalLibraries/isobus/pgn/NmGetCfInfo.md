@@ -6,6 +6,7 @@
 
 The function block `NmGetCfInfo` is used within an ISOBUS network to retrieve information about connected communication partners (Connected CFs). It allows both internal and external participants in the network to be identified and their details to be recorded. This block is part of ISOBUS PGN communication and is typically used for network management tasks.
 ![NmGetCfInfo](NmGetCfInfo.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -47,7 +48,8 @@ This function block does not use any adapter interfaces.
 - The function block implements a request-response protocol (`IND`/`RSP`) for reliable communication.
 - The use of a bit-based `mask` enables flexible search queries, e.g., for participants of a specific device class.
 - The data types (`ISONETEVENT_T`, `CF_INFO_T`, `NAMEFIELD_T`) are specific to ISOBUS PGN communication and contain structured information according to the ISO 11783 standard.
-*
+-
+
 ## Status Overview
 
 1. **Inactive**: Before initialization.
@@ -65,6 +67,7 @@ This function block does not use any adapter interfaces.
 Unlike simple read or query modules, `NmGetCfInfo` is specifically designed for querying ISOBUS-specific network information. It offers more context (through `member`, `address`, `mask`) and structured result data (`CF_INFO_T`) than a generic communication module. Modules like `E_SWITCH` or `E_DEMUX` only forward events, while `NmGetCfInfo` performs active network communication and protocol handling.
 
 Modules like `E_SWITCH` or `E_DEMUX` only forward events, while `NmGetCfInfo` performs active network communication and protocol execution.
+
 ## 🛠️ Related exercises
 
 - [Uebung_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)

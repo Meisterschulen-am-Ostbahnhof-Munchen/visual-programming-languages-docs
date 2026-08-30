@@ -1,12 +1,15 @@
 # ST64B
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `ST64B` data type is a structured data type used to encapsulate 64 individual byte values. It was developed to provide a fixed 64-byte data structure that can be used for various use cases where a precisely defined size and direct access to individual bytes are required. The original XML definition contained a comment that incorrectly stated 16 bytes; the correct value is 64 bytes.
+
 ## Structure Definition
 
 The `ST64B` data type is a composite structure consisting exclusively of individual byte variables. It has no event- or adapter-based interfaces, as it is a pure data structure.
+
 ### **Event Inputs**
 
 Not applicable, as `ST64B` is a data type and not a function block.

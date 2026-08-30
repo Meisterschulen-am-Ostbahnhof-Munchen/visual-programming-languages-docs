@@ -3,13 +3,15 @@
 ![Uebung_210_network](./Uebung_210_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an upward counter (count-up) based on the standard function block **FB_CTU** according to IEC 61131-3. The counter uses a data type `INT` (16-bit integer) and has a terminal output that numerically displays the current count. Digital inputs and a digital output of the logiBUS system serve as the hardware interface.
+
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameters | Event Inputs/Outputs | Data Inputs/Outputs |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **FB_CTU** | `iec61131::counters::FB_CTU` | PV = INT#5 | REQ (Input), CNF (Output) | CU (Input), R (Input), Q (Output), CV (Output) |
 | **Input_CU** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I1 | IND (Output) | IN (Output) |
 | **Input_R** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I2 | IND (Output) | IN (Output) |
@@ -31,8 +33,9 @@ The flow is controlled by event connections:
 
 1. **Counting Pulses**: When a change occurs at the digital input *Input_I1*, `Input_CU.IND` sends an event to `FB_CTU.REQ`. Simultaneously, the signal state is forwarded via `Input_CU.IN` → `FB_CTU.CU`.
 2. **Reset**: Similarly, a change at *Input_I2* triggers an event from `Input_R.IND`, which is also sent to `FB_CTU.REQ`. The value of `Input_R.IN` is then passed to the reset input `FB_CTU.R`.
-2. **Reset**: Similarly, a change at *Input_I2* triggers an event from `Input_R.IND`, which is also sent to `FB_CTU.REQ`. The value of `Input_R.IN` is passed to the reset input `FB_CTU.R`.
-3. **Set Output**: After each processing step of the counter (event output `FB_CTU.CNF`), two actions are triggered in parallel:
+3. **Reset**: Similarly, a change at *Input_I2* triggers an event from `Input_R.IND`, which is also sent to `FB_CTU.REQ`. The value of `Input_R.IN` is passed to the reset input `FB_CTU.R`.
+4. **Set Output**: After each processing step of the counter (event output `FB_CTU.CNF`), two actions are triggered in parallel:
+
 - The output value *Q* is passed via `FB_CTU.Q` → `Output_Q1.OUT` to the digital output *Output_Q1* and output via `Output_Q1.REQ`.
 - The current counter value *CV* is converted via `FB_CTU.CV` → `F_INT_TO_UDINT.IN`. The converted `UDINT` value (`F_INT_TO_UDINT.OUT`) is passed to `Q_NumericValue.u32NewValue`. Another event (`F_INT_TO_UDINT.CNF`) activates `Q_NumericValue.REQ` to update the terminal display.
 
@@ -44,6 +47,7 @@ The flow is controlled by event connections:
 **Notes from the design:**
 
 - The conversion of `INT` to `UDINT` is not optimal, as negative counter values cannot be represented.
+
 ## Summary
 
 This exercise provides practical experience with the IEC 61131-3 counter function block **FB_CTU** in the 4diac IDE. Learning objectives include:

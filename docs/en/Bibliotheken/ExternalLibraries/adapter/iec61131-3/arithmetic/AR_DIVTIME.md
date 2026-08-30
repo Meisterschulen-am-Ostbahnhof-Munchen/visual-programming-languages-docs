@@ -3,9 +3,11 @@
 ![AR_DIVTIME](./AR_DIVTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_DIVTIME** is used to divide a time value (type TIME) by a numeric value. The divisor is supplied via an adapter, allowing the block to be used flexibly in different contexts. The result is likewise output via an adapter. The block is classified as a standard arithmetic function according to IEC 61131-3.
+
 ## Interface Structure
 
 ### **Event Inputs**

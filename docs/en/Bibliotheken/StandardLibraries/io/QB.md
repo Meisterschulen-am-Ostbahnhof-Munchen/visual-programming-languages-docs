@@ -3,6 +3,7 @@
 ![](https://user-images.githubusercontent.com/69573151/210781164-b9fa5de3-e61e-47b8-b34f-86fa3bd398ff.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The QB function block is an output service interface for byte output data. It serves as an interface between the control logic and physical output devices or resources, enabling the output of byte data to external hardware.

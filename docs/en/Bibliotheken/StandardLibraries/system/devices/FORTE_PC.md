@@ -1,9 +1,11 @@
 # FORTE_PC
 
 * * * * * * * * * *
+
 ## Introduction
 
 This device represents a FORTE runtime environment on a standard PC (Windows or Linux).
+
 ## Metadata
 
 | Attribute | Value |

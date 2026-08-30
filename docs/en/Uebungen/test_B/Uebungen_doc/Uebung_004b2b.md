@@ -3,6 +3,7 @@
 ![Uebung_004b2b_network](./Uebung_004b2b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements two independent toggle flip-flops.
@@ -48,10 +49,11 @@ With each button press, the corresponding output toggles its state (on/off).
 If `Q = FALSE` (G=0), the event is forwarded to `EO0` and thus to the set input (`S`) of `E_SR`.
 
 - If `Q = TRUE` (G=1), the event is forwarded to `EO1` and thus to the reset input (`R`) of `E_SR`.
-3. `E_SR` then changes its state:
+1. `E_SR` then changes its state:
+
 - On a set event, `Q = TRUE`.
 - On a reset event, `Q = FALSE`.
-4. After the state change, an event is generated at output `EO`, and the new value of `Q` is made available via the output of the sub-application.
+1. After the state change, an event is generated at output `EO`, and the new value of `Q` is made available via the output of the sub-application.
 
 This results in **toggle behavior**: Each incoming event changes the initial state.
 
@@ -77,6 +79,7 @@ This structure allows the sub-application's logic to be used twice without havin
 
 Uebung_004b2b_sub1.Q` → `DigitalOutput_Q1.OUT`
 ...
+
 ## Summary
 
 - **Learning Objectives**:

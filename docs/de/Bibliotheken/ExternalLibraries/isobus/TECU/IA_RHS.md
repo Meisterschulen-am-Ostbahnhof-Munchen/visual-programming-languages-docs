@@ -3,6 +3,7 @@
 ![IA_RHS](./IA_RHS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_RHS** (ISOBUS Adapter for Rear Hitch Status) dient als Schnittstelle zwischen dem ISOBUS-System (gemäß ISO 11783-7, PGN 65093) und einem Anwendungsnetzwerk. Er kapselt die Kommunikation mit dem internen Baustein I_RHS und stellt die gemessenen Heckkraftheber-Daten (Position, Kraft, Zugkraft) sowie den Timeout-Status über standardisierte, unidirektionale Adapter zur Verfügung. Der Baustein wird hauptsächlich in Traktor- und Landmaschinensteuerungen eingesetzt.

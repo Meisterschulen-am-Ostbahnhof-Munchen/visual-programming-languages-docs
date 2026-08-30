@@ -3,9 +3,11 @@
 ![SPLIT_DWORD_INTO_WORDS](https://github.com/user-attachments/assets/393aad99-3222-4c5f-981b-4795868b5052)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_DWORD_INTO_WORDS` is used to split a 32-bit DWORD into two 16-bit WORDs. This functionality is particularly useful when working with data that is stored as a DWORD but needs to be further processed in separate WORD parts.
+
 ## Interface Structure
 
 ### **Event Inputs**

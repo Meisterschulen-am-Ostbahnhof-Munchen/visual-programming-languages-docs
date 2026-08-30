@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_ADD_3` is a generic arithmetic addition block for the 4diac IDE. It is used to add the values from three input adapters (`IN1`, `IN2`, and `IN3`) and output the result via an output adapter (`OUT`). The block uses unidirectional adapters of type `AUS` for this purpose.
@@ -32,6 +33,7 @@ The function block `AUS_ADD_3` is a generic arithmetic addition block for the 4d
 The module communicates exclusively via adapter interfaces:
 
 **Sockets (Input Adapters):**
+
 - **IN1** (Type: `adapter::types::unidirectional::AUS`): First addend for addition.
 - **IN2** (Type: `adapter::types::unidirectional::AUS`): Second addend for addition.
 - **IN3** (Type: `adapter::types::unidirectional::AUS`): Third addend for addition.

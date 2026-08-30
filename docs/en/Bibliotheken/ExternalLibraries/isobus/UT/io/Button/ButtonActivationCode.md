@@ -3,9 +3,11 @@
 ![ButtonActivationCode](./ButtonActivationCode.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 ButtonActivationCode is a collection of global constants for processing button activations in ISOBUS-compatible systems. These constants define various states and events that can occur when buttons are pressed and are primarily used in agricultural applications.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -42,7 +44,7 @@ The ButtonActivationCode constants define various button activation states as st
 ## State Overview
 
 | Constant | Code | Description |
-|-----------|------|--------------|
+| ----------- | ------ | -------------- |
 | BT_RELEASED_UNLATCHED | 0 | Key has been unlocked or released (state change) |
 | BT_PRESSED_LATCHED | 1 | Button was "pressed" or locked (state change) |
 | BT_STILL_HELD | 2 | Button is still being held (lockable buttons do not repeat) |

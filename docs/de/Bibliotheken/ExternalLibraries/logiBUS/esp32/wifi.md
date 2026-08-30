@@ -3,6 +3,7 @@
 ![wifi](./wifi.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock "wifi" ist ein Service-Interface-Funktionsblock (SIFB) zur Steuerung einer WLAN-Verbindung. Er bietet die Ereignisse INIT, START und STOP zur Initialisierung, zum Starten und Stoppen des WLANs. Der Status der Verbindung wird über den Ausgang STATUS als Zeichenkette zurückgegeben. Der Baustein ist für den Einsatz in Automatisierungssystemen konzipiert, die eine drahtlose Netzwerkverbindung benötigen.

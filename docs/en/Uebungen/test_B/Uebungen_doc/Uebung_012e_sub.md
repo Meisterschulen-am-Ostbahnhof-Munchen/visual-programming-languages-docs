@@ -3,6 +3,7 @@
 ![Uebung_012e_sub_network](./Uebung_012e_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how to read a physical numeric value (Numeric Value) using a function block, save it to an INI file, and process it using a quality block (Q). All functionality is encapsulated in a SubApp (SubAppType `Uebung_012e_sub`). The SubApp has the inputs `KEY`, `SECTION`, and `stObj`, as well as the output `VALUEO`. A successful completion event, `IND`, signals the completion of the process.
@@ -29,17 +30,17 @@ The subapp contains three predefined function blocks:
 
 When the function block `NumeriValue_PHYS` provides a new physical value, it sends the event `IND`. This is linked to the `SET` event of the `INI` block. This saves the current value (`rPhys`) in the INI file under the specified `KEY` and `SECTION`.
 
-2. **Feedback After Saving**
+1. **Feedback After Saving**
 
 After saving, `INI` signals with `SETO` that the process is complete. This event is directly forwarded to the output `IND` of the SubApp (with the property `Visible=false`, i.e., hidden in the diagram).
 
-3. **Reading and Quality Checking the Value from the INI**
+1. **Reading and Quality Checking the Value from the INI**
 
 After saving (or after initialization), the event `GETO` of the `INI` block is triggered. It is linked to the `REQ` event of the `Q_NumericValue_PHYS` block. This reads the stored value from the INI and performs a quality check.
 
 Additionally, `GETO` is also forwarded to the output `IND`, so the SubApp outputs a signal even after the read operation.
 
-4. **Initialization**
+1. **Initialization**
 
 The `INI` block also has its own `INIT` event, which is directly linked to the `GET` event. This ensures that when the subapp starts, the value stored in the INI file is automatically read and then processed through the `GETO` flow of the quality block.
 

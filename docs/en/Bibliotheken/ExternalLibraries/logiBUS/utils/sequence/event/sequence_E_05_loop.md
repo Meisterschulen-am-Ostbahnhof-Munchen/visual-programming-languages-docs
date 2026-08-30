@@ -4,6 +4,7 @@
 ![sequence_E_05_loop_ecc](./sequence_E_05_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_05_loop` implements a cyclic sequence with five states. The transition between the individual states occurs exclusively via external events. The block is designed for applications in which a process step may only begin after the completion of a previous step and the arrival of a specific enable signal. The sequence can be reset to the initial start state from any state.
@@ -79,7 +80,7 @@ The ECC consists of the following states and possible transitions:
 - **sState_03:** Third active state. Transitions to `sState_04` via `S3_S4` or to `sRESET` via `RESET`.
 - **sState_04:** Fourth active state. Transitions to `sState_05` via `S4_S5` or to `sRESET` via `RESET`.
 - **sState_05:** Fifth active state. Transitions to `sState_01` via `S5_S1` (cycle) or to `sRESET` via `RESET`.
-- * **sRESET:** Reset state. Executes reset actions and then unconditionally reverts to `xSTART`.
+- - **sRESET:** Reset state. Executes reset actions and then unconditionally reverts to `xSTART`.
 
 ## Application Scenarios
 

@@ -5,10 +5,12 @@
 ![QUARTER_TO_STR_STATUS_ecc](./QUARTER_TO_STR_STATUS_ecc.svg)
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 <img width="1745" height="212" alt="image" src="https://github.com/user-attachments/assets/52b6d758-7780-49a2-98e0-8be5f868339f" />
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `QUARTER_TO_STR_STATUS` converts a 2-bit status value (also known as a "quarter byte") into a human-readable text string. It is part of the `logiBUS::utils::quarter` library and is typically used to convert compact status information from controllers or devices into an understandable text format for display, logging, or diagnostic purposes.
@@ -79,6 +81,7 @@ The ECC consists of six states:
 - **Simple `STRING` assignment:** A direct assignment in ST code could achieve something similar, but the `QUARTER_TO_STR_STATUS` block encapsulates the logic, promotes reusability, and enforces the use of standardized constants, thus increasing consistency across the entire project.
 
 **`STRING` assignment:** A direct assignment in ST code could accomplish something similar, but the `QUARTER_TO_STR_STATUS` block encapsulates the logic, promotes reusability, and enforces the use of standardized constants, increasing consistency throughout the project.
+
 ## 🛠️ Related Exercises
 
 - [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)

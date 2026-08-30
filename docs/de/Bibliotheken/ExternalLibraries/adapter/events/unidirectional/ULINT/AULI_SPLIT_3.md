@@ -3,6 +3,7 @@
 ![AULI_SPLIT_3](./AULI_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_SPLIT_3** dient der Verteilung eines einzelnen AULI-Adaptersignals auf drei identische Ausgänge. Er fungiert als einfacher Splitter für unidirektionale AULI-Verbindungen und ermöglicht den Broadcast eines Signals an mehrere nachfolgende Komponenten. Der Baustein ist generisch ausgelegt und kann für verschiedene AULI-Typen instantiiert werden.
@@ -12,19 +13,23 @@ Der Funktionsblock **AULI_SPLIT_3** dient der Verteilung eines einzelnen AULI-Ad
 ### **Ereignis-Eingänge**
 
 Keine.
+
 ### **Ereignis-Ausgänge**
 
 Keine.
+
 ### **Daten-Eingänge**
 
 Keine.
+
 ### **Daten-Ausgänge**
 
 Keine.
+
 ### **Adapter**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | IN | AULI (unidirectional) | Eingangsadapter – empfängt das zu verteilende Signal. |
 | OUT1 | AULI (unidirectional) | Erster Ausgangsadapter. |
 | OUT2 | AULI (unidirectional) | Zweiter Ausgangsadapter. |

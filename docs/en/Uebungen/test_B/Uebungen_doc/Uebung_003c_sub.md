@@ -1,8 +1,9 @@
 # Exercise_003c_sub: IX on QX (generic)
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the sub-application type `Uebung_003c_sub`. This function block serves as a bridge between local hardware and the ISOBUS auxiliary input system.
+This article describes the sub-application type `Uebung_003c_sub`. This function block serves as a bridge between local hardware and the ISOBUS auxiliary input system
 ----
+
 ## Purpose of the Exercise
 
 Encapsulation of ISOBUS communication. The function block encapsulates the details of the ISOBUS protocol and provides a simple interface for mapping physical buttons to logical AUX numbers.

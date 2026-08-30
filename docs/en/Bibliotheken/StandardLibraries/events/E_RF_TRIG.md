@@ -1,6 +1,7 @@
 # E_RF_TRIG
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_RF_TRIG` (rising/falling trigger) detects both rising and falling edges of a `BOOL` value and reports them via two separate output events. It combines the functionality of `E_R_TRIG` (rising edge) and `E_F_TRIG` (falling edge) in a single block.

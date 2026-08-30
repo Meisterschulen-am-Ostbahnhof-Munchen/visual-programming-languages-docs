@@ -3,22 +3,24 @@
 ![BasicOne](./BasicOne.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **BasicOne** function block is a basic, event-driven block according to IEC 61499. It serves as a simple sequence element for initialization, execution of a main operation, and proper deinitialization. The block is particularly suitable for control sequences where a resource state (e.g., device ready) needs to be monitored and reset. The block is included in the package `logiBUS::utils::sequence::one`.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Accompanying Data | Description |
-|----------|-----|-------------------|--------------|
+| ---------- | ----- | ------------------- | -------------- |
 | `INIT` | EInit | `QI` | Initialization request; the transition depends on the value of the qualifier `QI`. |
 | `REQ` | Event | `QI`, `DI1` | Normal execution request; starts the main operation. |
 
 ### **Event Outputs**
 
 | Event | Type | Accompanying Data | Description |
-|----------|-----|-------------------|--------------|
+| ---------- | ----- | ------------------- | -------------- |
 | `INITO` | Initialization | `QO` | Confirmation of successful initialization or deinitialization. |
 | `CNF` | Event | `QO`, `DO1` | Confirmation of normal execution; outputs the current state. |
 
@@ -53,6 +55,7 @@ The normalOperation* algorithm sets `QO := QI` (still `TRUE`) and transfers the 
 Important: The normal operation is only executed if `QI = TRUE` is present. In the `REQ` event, the algorithm is executed, but `DO1` remains unchanged (it is not set to `DI1`; instead, the last value or the default value `FALSE` remains as defined by the algorithm – in `QI = FALSE`, the IF condition is not met, therefore `DO1` does not change).
 
 `QI = FALSE``
+
 ## Technical Features
 
 - **Event Dependency of QI**: The transitions `INIT[TRUE = QI]` and `INIT[FALSE = QI]` demonstrate that the same event, `INIT`, triggers different state transitions depending on the value of `QI`. This enables compact control of initialization and deinitialization via a single event.
@@ -62,7 +65,7 @@ Important: The normal operation is only executed if `QI = TRUE` is present. In t
 ## State Overview
 
 | State | Description | Possible Actions |
-|---------|--------------|-------------------|
+| --------- | -------------- | ------------------- |
 | `START` | Initial idle state after system startup or deinitialization. | Waits for `INIT` with `QI = TRUE`. |
 | `Init` | Initialization phase; sets `QO = QI`. | Executes the *initialize* algorithm, sends `INITO`. |
 | `Initialized` | Waiting state after successful initialization. | Can respond to `REQ` (starts NormalOp) or to `INIT` with `QI = FALSE` (starts DeInit). |

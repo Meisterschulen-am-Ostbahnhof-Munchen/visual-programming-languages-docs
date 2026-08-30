@@ -59,11 +59,14 @@ The function block is implemented internally as a function block network and ope
 1. **Event Acquisition**: As soon as an event `E1` arrives at one of the inputs (`IN0`, `IN1`) or the selector (`G`), it is intercepted and synchronized via edge- or value-triggered auxiliary function blocks (`E_D_FF` and `E_D_FF_ANY`).
 2. **Data Buffering**: The current values of the adapter inputs are buffered in the internal network using function blocks `F_MOVE` and formatted according to the specified type.
 3. **Selection Logic**: The internal core function block `F_SEL` (based on the standardized selection function according to IEC 61131-3) evaluates the state of the selector:
+
 - If `G.D1` is set to `FALSE`, the value of `IN0` is passed through.
 - If `G.D1` is set to `TRUE`, the value of `IN1` is passed through.
-4. **Output**: The selected value is passed to the output plug `OUT.D1`. Simultaneously, the output event `OUT.E1` is triggered to inform subsequent program components in the control network about the value change.
+1. **Output**: The selected value is passed to the output plug `OUT.D1`. Simultaneously, the output event `OUT.E1` is triggered to inform subsequent program components in the control network about the value change.
+
 - **Event-Data Consistency**: The use of internal D flip-flops ensures that the data values are read and processed at the exact moment the corresponding change event occurs.
 - **Typing**: The function block internally uses `F_MOVE` with the data type `BYTE` to encapsulate and assign the adapter data. This means that the `AQ` interfaces used transmit binary- or byte-compatible data structures.
+
 - ## State Overview
 
 Since `AQ_AX_SEL_AQ` is a purely data- and event-driven combination block without its own internal state machine (ECC), its behavior can be described using the following logical table:
@@ -76,11 +79,14 @@ Since `AQ_AX_SEL_AQ` is a purely data- and event-driven combination block withou
 - **Sensor Redundancy / Switchover**: Automatic or manual switching between a primary sensor (`IN0`) and a secondary/backup sensor (`IN1`) in case of a fault via the control signal `G`.
 - **Manual/Automatic Operation**: Selection of setpoints for actuators. In automatic mode (`G = TRUE`), the calculated controller value (`IN1`) is used; in manual mode (`G = FALSE`), a predefined fixed value or a manually specified parameter (`IN0`) is used.
 - **Recipe-Controlled Parameterization**: Dynamic switching of process limits during operation.
+
 - ## Comparison with Similar Components
+
 - **Standard `SEL` (IEC 61131-3)**: The classic `SEL` component has no event control and reacts purely cyclically to incoming data. `AQ_AX_SEL_AQ` extends this functionality with the event-based paradigm of IEC 61499.
 - **Classic Multiplexers (MUX)**: While a multiplexer usually selects from a large number of inputs, this component is specifically limited to efficient 1-out-of-2 selection (binary selection), which minimizes parameterization and wiring effort.
 
 The `AQ_AX_SEL_AQ` is a useful infrastructure component for modular 4diac applications. By completely encapsulating the signals in adapter connections, it significantly contributes to clarity in the application window and ensures robust, event-driven signal forwarding.
+
 ## Technical Features
 
 ## State Overview

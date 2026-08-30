@@ -3,6 +3,7 @@
 ![Uebung_034a1_Q4_AX_network](./Uebung_034a1_Q4_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Steuerung eines PWM-Ausgangs (logiBUS Output Q4) durch einen numerischen Eingabewert. Die Kommunikation zwischen dem Eingabebaustein und dem Ausgabebaustein erfolgt über Adapter-Verbindungen („Adapter Version“). Ein integrierter Kommentar weist darauf hin, dass das Ereignis für die Wertübernahme erst ausgelöst wird, wenn der eingegebene numerische Wert mit „OK“ bestätigt wird – nicht bereits bei einem Tastendruck.

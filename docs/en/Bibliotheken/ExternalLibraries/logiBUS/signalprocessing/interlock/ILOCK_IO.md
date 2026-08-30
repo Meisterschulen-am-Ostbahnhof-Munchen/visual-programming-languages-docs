@@ -3,9 +3,11 @@
 ![ILOCK_IO](./ILOCK_IO.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_IO** implements a cascadable, momentary (non-resettable) interlock with a BOOL interface. It is used to ensure that, in a chain of multiple function blocks, only one block sets its output to TRUE at a time, as long as its input is active and no other block in the chain is already active. This function block is particularly suitable for controllers where competing requirements must be handled exclusively.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block **ILOCK_IO** implements a cascadable, momentary (non-resettab
 ### **Adapters**
 
 | Label | Type | Direction | Description |
-|-------------|------------------------------|----------|-------------|
+| ------------- | ------------------------------ | ---------- | ------------- |
 | ILOCK_IN | adapter::types::bidirectional::AX2 | Socket | Input adapter for receiving locking information from the chain (from the predecessor) |
 | ILOCK_OUT | adapter::types::bidirectional::AX2 | Plug | Output adapter for sending locking information to the chain (to the successor) |
 
@@ -46,10 +48,12 @@ The adapters of type `AX2` are bidirectional and contain the data points `DI1` (
 The function block operates as a **momentary latch with interlock**. The following algorithm is executed each time the event `REQ` is called:
 
 1. The output `OUT` is set to TRUE if the input `IN` is TRUE **and** no other function block in the chain is active. The activity of other blocks is queried via the adapters:
+
 - `ILOCK_IN.DO1`: Signal from the predecessor (whether it is active)
 - `ILOCK_OUT.DI1`: Signal from the successor (whether it is active)
 - Logic: `OUT := IN AND NOT (ILOCK_IN.DO1 OR ILOCK_OUT.DI1)`
-2. Subsequently, the current state is propagated to its neighbors via the adapters:
+1. Subsequently, the current state is propagated to its neighbors via the adapters:
+
 - `ILOCK_IN.DI1 := OUT` – writes the state back to the predecessor
 - `ILOCK_OUT.DO1 := OUT` – writes the state to the successor
 

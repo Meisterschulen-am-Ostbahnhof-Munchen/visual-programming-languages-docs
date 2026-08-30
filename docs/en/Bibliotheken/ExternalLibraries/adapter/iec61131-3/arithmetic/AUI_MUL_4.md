@@ -5,6 +5,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_MUL_4` is a generic block for performing an arithmetic multiplication of four input values. It uses unidirectional adapters of type `AUI` (Adapter Unit Interface) to transmit data and associated events in a bundled manner. This enables clean and clear modeling in the 4diac-ide.

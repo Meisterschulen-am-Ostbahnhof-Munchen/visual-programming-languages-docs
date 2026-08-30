@@ -3,9 +3,11 @@
 ![INI_AIS](./INI_AIS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **INI_AIS** is used to load and save strings (STRING) from a `settings.ini` file. The desired value is accessed via a section name and a key. The interface is implemented using unidirectional AIS adapters, allowing the block to both read and write values.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **INI_AIS** is used to load and save strings (STRING) from a 
 ### **Data Inputs**
 
 | Name | Type | Description |
-|---------------|--------|----------------------------------------------------------|
+| --------------- | -------- | ---------------------------------------------------------- |
 | QI | BOOL | Qualifier for the event input |
 | SECTION | STRING | Name of the section in the configuration file |
 | KEY | STRING | Name of the key in the specified section |
@@ -32,14 +34,14 @@ The function block **INI_AIS** is used to load and save strings (STRING) from a 
 ### **Data Outputs**
 
 | Name | Type | Description |
-|--------|--------|--------------------------------------|
+| -------- | -------- | -------------------------------------- |
 | QO | BOOL | Qualifier for the event output |
 | STATUS | STRING | Status message (e.g., error text) |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|---------|------------------------------|------------|----------------------------------------------------------|
+| --------- | ------------------------------ | ------------ | ---------------------------------------------------------- |
 | AIS_OUT | adapter::types::unidirectional::AIS | Plug | Output for the read value (GETO) |
 | AIS_IN | adapter::types::unidirectional::AIS | Socket | Input for the value to be stored (SET) |
 
@@ -48,16 +50,19 @@ The function block **INI_AIS** is used to load and save strings (STRING) from a 
 The function block internally contains an instance of the function block `INI` (from the library `eclipse4diac::storage`). The process is as follows:
 
 1. **Initialization (INIT)**
+
 - The data `QI`, `SECTION`, `KEY`, and `DEFAULT_VALUE` are forwarded to the internal INI block.
 - The INIT event pulse starts the INI block.
 - Upon completion, INI returns the event `INITO`, which is output externally as `INITO` of the INI_AIS. Simultaneously, the outputs `QO` and `STATUS` are also received.
 
 - Immediately after initialization, the `GET` service is automatically triggered in the INI block to read the value from `settings.ini`.
 
-2. **Reading a Value (via AIS_OUT)**
+1. **Reading a Value (via AIS_OUT)**
+
 - The read value appears at the data output `VALUEO` of the INI block and is assigned to the data output `D1` of the adapter plug `AIS_OUT`.
 - The event `GETO` of the INI block is transferred to the event input `E1` of `AIS_OUT`, allowing the receiving block to retrieve the value.
-3. **Writing a Value (via AIS_IN)**
+1. **Writing a Value (via AIS_IN)**
+
 - An external function block can send a value (event `E1` with data `D1`) to the INI_AIS via the adapter socket `AIS_IN`.
 - This event triggers the `SET` service of the internal INI function block. The incoming value is passed to the data input `VALUE` of INI.
 - After successful writing, INI sends the event `SETO`, which is forwarded to the event output `E1` of `AIS_OUT`. The written value is simultaneously returned via `VALUEO`, so the writing block receives confirmation of the value.
@@ -86,7 +91,7 @@ The function block has no explicitly programmed states. The internal INI block h
 ## Comparison with Similar Modules
 
 | Module | Description |
-|---------------|--------------------------------------------------------------------------------|
+| --------------- | -------------------------------------------------------------------------------- |
 | INI | Direct access to INI files with separate GET and SET events. |
 | **INI_AIS** | INI extends the INI function block with an adapter-based interface that simplifies the coupling of other function blocks and integrates the handling of read and write operations. |
 

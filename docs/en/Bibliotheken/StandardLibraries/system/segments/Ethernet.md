@@ -1,9 +1,11 @@
 # Ethernet
 
 * * * * * * * * * *
+
 ## Introduction
 
 An Ethernet network segment for connecting devices.
+
 ## Metadata
 
 | Attribute | Value |

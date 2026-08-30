@@ -3,22 +3,24 @@
 ![DataPanel_MI_IW_Ratio](./DataPanel_MI_IW_Ratio.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **DataPanel_MI_IW_Ratio** is a service interface function block (SIFB) for acquiring analog input data with ratiometric conversion. It provides the interface to a sensor connected to a node (SA 224..239) whose measured value is output as a 16-bit word (WORD). This block is part of the library `DataPanel::io::MI::AI` and is typically used in automation technology, particularly in agricultural engineering.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-|----------|-----|---------------|-----------|
+| ---------- | ----- | --------------- | ----------- |
 | INIT | EInit | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis | Service Initialization |
 | REQ | Event | QI | Service Request |
 
 ### **Event Outputs**
 
 | Event | Type | With Variables | Comment |
-|----------|-----|---------------|------------|
+| ---------- | ----- | --------------- | ------------ |
 | INITO | EInit | QO, STATUS | Initialization Confirmation |
 | CNF | Event | QO, STATUS, IN | Confirmation of Requested Service |
 | IND | Event | QO, STATUS, IN | Indication from Resource |
@@ -26,7 +28,7 @@ The function block **DataPanel_MI_IW_Ratio** is a service interface function blo
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Comment |
-|----------|-----|-------------|-----------|
+| ---------- | ----- | ------------- | ----------- |
 | QI | BOOL | – | Event Input Qualifier |
 | PARAMS | STRING | – | Service Parameters |
 | u8SAMember | USINT | MI::MI_00 | Node SA 224..239 |
@@ -53,11 +55,11 @@ The function block operates as a state-controlled service interface block:
 
 The function block is configured via the INIT event. The inputs `PARAMS`, `u8SAMember`, `Input`, and `AnalogInput_hysteresis` define the bus/node address, the analog channel, and the hysteresis. The `QI` input must be set to TRUE to start initialization. After successful configuration, the INITO event is output with `QO = TRUE` and `STATUS = "OK"` (or similar).
 
-2. **Measurement Request (REQ)**:
+1. **Measurement Request (REQ)**:
 
 The REQ event requests a new measurement from the sensor. The function block evaluates the hardware and returns the result via the CNF event at output `IN`. Here too, `QO` indicates the validity of the value.
 
-3. **Indication (IND)**:
+1. **Indication (IND)**:
 
 If the hardware supports asynchronous events (e.g., cyclic updates), the IND event is used to report the current measurement value without prompting.
 
@@ -91,7 +93,7 @@ In case of an error, `QO = FALSE` is set and `STATUS` contains a corresponding e
 ## Comparison with Similar Modules
 
 | Module | Feature |
-|----------|---------|
+| ---------- | --------- |
 | `DataPanel_MI_AI` | Standard analog input without explicit ratiometric design. |
 | `DataPanel_MI_IW_Voltage` | Voltage measurement with absolute values (e.g., mV). |
 | **DataPanel_MI_IW_Ratio** | Specifically optimized for ratiometric sensors. |

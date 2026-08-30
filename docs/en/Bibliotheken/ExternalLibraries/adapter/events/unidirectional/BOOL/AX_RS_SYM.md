@@ -3,9 +3,11 @@
 ![AX_RS_SYM](./AX_RS_SYM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_RS_SYM** is an event-driven, bistable function block (RS flip-flop) with symmetrical start-up behavior. It has two event inputs, `R` (Reset) and `S` (Set), each of which sets the state of the output `Q`. The output is provided as a unidirectional adapter, through which both a data value (D1) and an event (E1) can be transmitted.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +55,7 @@ The special feature is the **symmetrical start-up behavior**: Immediately after 
 The internal state machine consists of the following states and transitions:
 
 | State | Meaning | Action on entry |
-|---------|-----------|---------------------|
+| --------- | ----------- | --------------------- |
 | START | Initial state after power-on | No action (waits for first event) |
 | SET | Output `Q.D1` is `TRUE` | Executes algorithm `SET`: `Q.D1 := TRUE` and fires `Q.E1` |
 | RESET | Output `Q.D1` is `FALSE` | Executes algorithm `RESET`: `Q.D1 := FALSE` and fires `Q.E1` |

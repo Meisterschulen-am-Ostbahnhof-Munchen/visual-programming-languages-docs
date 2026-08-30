@@ -29,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Rolle | Name | Typ | Beschreibung |
-|-------|------|-----|--------------|
+| ------- | ------ | ----- | -------------- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AE` | Empfängt ein unidirektionales Ereignis, das auf beide Ausgänge verteilt wird. |
 | Plug (Ausgang 1) | `OUT1` | `adapter::types::unidirectional::AE` | Erster Ausgang für das duplizierte Ereignis. |
 | Plug (Ausgang 2) | `OUT2` | `adapter::types::unidirectional::AE` | Zweiter Ausgang für das duplizierte Ereignis. |

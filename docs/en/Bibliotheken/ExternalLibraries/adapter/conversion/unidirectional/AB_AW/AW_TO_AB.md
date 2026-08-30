@@ -3,9 +3,11 @@
 ![AW_TO_AB](./AW_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AW_TO_AB` is a composite block that converts a unidirectional WORD adapter (`AW`) into a unidirectional BYTE adapter (`AB`). It serves as an interface converter between components based on different data types. The conversion is performed by the integrated standard function block `F_WORD_TO_BYTE`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block does not have its own data outputs. The converted BYTE result
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|------|----------|-----|-------------|
+| ------ | ---------- | ----- | ------------- |
 | `AW_IN` | Socket (Input) | `adapter::types::unidirectional::AW` | WORD adapter with one event `E1` and one data value `D1` (WORD) |
 | `AB_OUT` | Plug (Output) | `adapter::types::unidirectional::AB` | BYTE adapter with one event `E1` and one data value `D1` (BYTE) |
 

@@ -3,6 +3,7 @@
 <img width="1378" height="391" alt="image" src="https://github.com/user-attachments/assets/731f9ca4-e163-4c46-8eda-5b826a199574" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_7_BOOL` ist ein generischer Baustein zur Berechnung der logischen Exklusiv-ODER (XOR) Verknüpfung. Er verarbeitet sieben boolesche Eingangssignale und liefert das Ergebnis der XOR-Operation als ein boolesches Ausgangssignal. Der Block folgt dem IEC 61131-3 Standard und ist für den Einsatz in Steuerungsanwendungen konzipiert, bei denen eine ungerade Paritätsprüfung oder eine logische Antivalenz über mehrere Signale erforderlich ist.

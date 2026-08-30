@@ -3,6 +3,7 @@
 ![TIMESTAMP_NS](https://github.com/user-attachments/assets/4c753c7c-ff7e-40de-87ed-fbcf46d758a9)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **TIMESTAMP_NS** is an IEC 61499-compliant function block for generating high-resolution timestamps in nanoseconds.
@@ -51,13 +52,16 @@ Timestamp in nanoseconds since the defined `startDate`.
 ## Functionality
 
 1. **Initialization**:
+
 - Activated by the `REQ` event.
 - Uses the current system time (`NOW()`).
-2. **Calculation**:
+1. **Calculation**:
+
 - Subtracts `startDate` from the current system time.
 - Converts the difference to nanoseconds via `TIME_IN_NS_TO_ULINT()`.
 - Outputs the result as `ULINT` and triggers `CNF`.
-3. **Error Handling**:
+1. **Error Handling**:
+
 - No explicit error message, but overflow is possible in the case of:
 - Extremely large time differences (>584 years).
 - Invalid `startDate` (e.g., future date).
@@ -87,11 +91,11 @@ Timestamp in nanoseconds since the defined `startDate`.
 
 Synchronization of events in distributed systems.
 
-2. **Real-Time Measurements**:
+1. **Real-Time Measurements**:
 
 Runtime analysis with nanosecond precision.
 
-3. **User-Defined Time Periods**:
+1. **User-Defined Time Periods**:
 
 Calculation of intervals from arbitrary reference points.
 
@@ -100,7 +104,7 @@ Calculation of intervals from arbitrary reference points.
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Function | `TIMESTAMP_NS` | `NOW()` | `F_NOW_MONOTONIC` |
-|---------------------|-----------------------|-----------------------|-----------------------|
+| --------------------- | ----------------------- | ----------------------- | ----------------------- |
 | **Output Format** | Nanoseconds (ULINT) | Time Interval (TIME) | Time Interval (TIME) |
 | **Reference Point** | Configurable | System Startup | Hardware Dependent |
 | **Precision** | 1 ns | 1 ms | 1 ns (typical) |

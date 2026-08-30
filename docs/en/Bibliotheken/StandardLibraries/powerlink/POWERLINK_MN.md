@@ -1,10 +1,12 @@
 # POWERLINK_MN
 
 * * * * * * * * * *
+
 ## Introduction
 
 The POWERLINK_MN function block is used to configure the openPOWERLINK fieldbus. It acts as a Managing Node (MN) and initializes the network.
 ![POWERLINK_MN](POWERLINK_MN.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

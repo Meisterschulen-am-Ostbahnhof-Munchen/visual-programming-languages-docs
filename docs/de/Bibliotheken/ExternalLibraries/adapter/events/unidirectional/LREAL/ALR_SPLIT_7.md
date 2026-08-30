@@ -31,7 +31,7 @@ Keine
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::ALR` | Socket (Eingang) | Eingehendes ALR-Signal, das auf die Ausgänge verteilt wird. |
 | OUT1 | `adapter::types::unidirectional::ALR` | Plug (Ausgang) | Erster Ausgang des geteilten Signals. |
 | OUT2 | `adapter::types::unidirectional::ALR` | Plug (Ausgang) | Zweiter Ausgang des geteilten Signals. |
@@ -64,7 +64,7 @@ Der Funktionsblock besitzt keinen internen Zustandsautomaten. Es gibt keine Zust
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Besonderheit |
-|----------|------------------|--------------|
+| ---------- | ------------------ | -------------- |
 | `ALR_SPLIT_2` | 2 | Einfache Zweifachverteilung |
 | `ALR_SPLIT_4` | 4 | Vierfachverteilung |
 | `ALR_SPLIT_7` | 7 | Siebenfachverteilung (dieser Baustein) |

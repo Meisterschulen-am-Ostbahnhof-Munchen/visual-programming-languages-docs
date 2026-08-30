@@ -3,6 +3,7 @@
 ![Uebung_071_AUI_network](./Uebung_071_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinierten SubApp, um die **Wheel Based Machine Speed (WBSD)** von einem ISOBUS-IA-WBSD-Baustein über den **Universal Task (UT)** auszugeben und gleichzeitig einen digitalen Ausgang Q1 zu schalten, sobald die Geschwindigkeit größer als 0 ist. Die gesamte Kommunikation erfolgt über Adapter-Schnittstellen, was eine modulare und typsichere Verbindung der Funktionsbausteine ermöglicht.

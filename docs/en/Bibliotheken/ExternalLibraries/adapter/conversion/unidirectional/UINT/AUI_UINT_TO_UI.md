@@ -4,6 +4,7 @@
 
 The AUI_UINT_TO_UI function block is a composite function block used to convert a UINT value to the AUI adapter format.
 ![AUI_UINT_TO_UI](AUI_UINT_TO_UI.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

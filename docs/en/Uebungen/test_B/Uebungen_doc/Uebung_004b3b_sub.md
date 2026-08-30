@@ -3,6 +3,7 @@
 ![Uebung_004b3b_sub_network](./Uebung_004b3b_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This sub-application implements a toggle flip-flop with an external RESET input and a SET output for latching. It serves as a reusable component for applications where an output state is toggled with each event and can be reset as needed.
@@ -66,8 +67,8 @@ The sub-application has two event inputs (`IND` and `RESET`), two event outputs 
 
 - If `Q` = FALSE, the event is passed on to `EO0`, setting `E_SR` (Q becomes TRUE) and simultaneously activating the output `SET`.
 - If `Q` = TRUE, the event is passed on to `EO1`, resetting `E_SR` (Q becomes FALSE).
-3. After each state change of `E_SR`, an event is output to `EO`.
-4. An external event at input `RESET` forces the reset of `E_SR` (regardless of its current state) and also triggers an event at `EO`.
+1. After each state change of `E_SR`, an event is output to `EO`.
+2. An external event at input `RESET` forces the reset of `E_SR` (regardless of its current state) and also triggers an event at `EO`.
 
 This allows the sub-application to implement a toggle function: Each event at `IND` toggles the output `Q`. The output `SET` is activated when it changes from FALSE to TRUE and can be used for interlocking (e.g., setting another function block). The input `RESET` resets the state without affecting the toggle cycle.
 

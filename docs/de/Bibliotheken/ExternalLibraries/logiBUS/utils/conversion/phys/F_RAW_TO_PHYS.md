@@ -3,6 +3,7 @@
 ![F_RAW_TO_PHYS](./F_RAW_TO_PHYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **F_RAW_TO_PHYS** konvertiert einen ISOBUS‑Rohwert vom Typ `UDINT` in einen physikalischen `REAL`-Wert. Die Umrechnung erfolgt nach der standardisierten ISOBUS‑Formel:

@@ -3,6 +3,7 @@
 ![AUI_UDINT_AX_SEL](./AUI_UDINT_AX_SEL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_UDINT_AX_SEL** führt eine binäre Auswahl („binary selection“) zwischen zwei Eingangswerten durch. Er ist als Komposition eines internen IEC‑61131‑Bausteins `F_SEL` und eines unidirektionalen Adapters `AX` realisiert. Der über den Adapter bereitgestellte Selektor entscheidet, welcher der beiden Daten-Eingänge an den Ausgang weitergegeben wird. Der FB eignet sich für einfache Umschaltlogiken, bei denen die Wahl zwischen zwei Signalen von einem externen (z. B. per Adapter eingekoppelten) Kriterium abhängt.

@@ -3,6 +3,7 @@
 ![Uebung_012d_AR_network](./Uebung_012d_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the acquisition of a numeric value via a physical input (PHYS), the storage of the value in non-volatile memory (NVS), and the subsequent output. Communication between the function blocks is handled via an AR adapter (adapter interface), without the use of sub-blocks.

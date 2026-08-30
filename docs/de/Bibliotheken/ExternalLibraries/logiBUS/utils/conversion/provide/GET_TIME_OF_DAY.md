@@ -3,6 +3,7 @@
 ![GET_TIME_OF_DAY](./GET_TIME_OF_DAY.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `GET_TIME_OF_DAY` dient dem Auslesen eines Tageszeitwertes (Typ `TIME_OF_DAY`) aus einer InOut‑Variablen. Der gelesene Wert wird intern gepuffert und über einen Datenausgang bereitgestellt. Auf diese Weise wird eine konsistente, einmalig gelesene Tageszeit weitergereicht – auch wenn sich die Quellvariable zwischenzeitlich ändert.

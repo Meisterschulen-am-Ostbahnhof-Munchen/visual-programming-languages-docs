@@ -48,7 +48,7 @@ AuxiliaryState definiert eine Reihe von vordefinierten Konstanten für den Daten
 Die definierten Konstanten umfassen folgende Zustände:
 
 | Konstante | Wert | Beschreibung |
-|-----------|------|--------------|
+| ----------- | ------ | -------------- |
 | `AuxDisabled` | 0 | Aus - rückwärts, unten, links oder nicht gedrückt |
 | `AuxDisabled_START` | 0 | Aus - rückwärts, unten, links oder nicht gedrückt (mit bCyclic=FALSE) |
 | `AuxEnabled` | 1 | Ein - vorwärts, oben, rechts oder gedrückt |

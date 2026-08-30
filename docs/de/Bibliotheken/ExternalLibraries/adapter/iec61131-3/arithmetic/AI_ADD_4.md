@@ -13,6 +13,7 @@
 ![AI_ADD_4](./AI_ADD_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_ADD_4` ist ein generischer Arithmetik-Baustein für die 4diac-IDE, der zur Addition von vier analogen bzw. numerischen Werten dient. Die Besonderheit dieses Bausteins liegt in der Verwendung von unidirektionalen Adaptern des Typs `AI` (Analog Input/Arithmetic Input) anstelle von klassischen diskreten Daten- und Ereigniseingängen. Dies ermöglicht eine saubere, modulare und übersichtliche Strukturierung von Signalflüssen in IEC 61499 Anwendungen.

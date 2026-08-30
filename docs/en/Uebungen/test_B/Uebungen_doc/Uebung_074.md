@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_074`. Here, the speed of the rear PTO (Power Take-Off) is read in.
+
 ## 🎧 Podcast
 
 ![Uebung_074_network](./Uebung_074_network.svg)

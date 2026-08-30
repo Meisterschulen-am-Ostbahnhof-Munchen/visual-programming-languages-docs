@@ -1,12 +1,15 @@
 # logiBUS_2_CAN_DI_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `logiBUS_2_CAN_DI_S` is a structured data type (struct) used to configure a digital input (DI) for a logiBUS-CAN system. It defines the basic parameters required to address and use a physical input pin on a logiBUS-CAN module. This data type typically serves as input for higher-level function blocks that handle the actual communication via the CAN protocol.
+
 ## Interface Structure
 
 This is a structured data type (struct) and therefore has no event or adapter interfaces. Its structure consists of a single data element.
+
 ## **Data Inputs**
 
 Since it is a data type, these elements are used as input data within a higher-level function block.
@@ -40,7 +43,8 @@ The data type `logiBUS_2_CAN_DI_S` functions as a configuration container. The v
 - **Data type `USINT`:** The use of `USINT` (0 to 255) for the pin suggests that the logiBUS hardware can theoretically address up to 256 digital inputs per configuration structure. The value 255 is reserved as the default initial value.
 - **Initial value 255:** This value serves as an indicator for an inactive or undefined configuration. It should be replaced with a valid pin number in the application.
 - **Package name:** The data type is organized in the package `logiBUS::io::DI_CAN`, which clearly indicates its association with logiBUS CAN input communication.
-*
+-
+
 ## State Overview
 
 *(Not applicable for a structured data type. The "state" is simply the stored value of the `Pin` variable.)*
@@ -52,7 +56,8 @@ This structure type is used in scenarios where digital signals (e.g., switches, 
 - Machine controllers with decentralized, CAN-networked sensors.
 - Mobile applications (vehicles, robots) with a robust bus system.
 - Systems where digital input signals are distributed over long distances.
-*
+-
+
 ## ⚖️ Comparison with Similar Function Blocks
 
 Unlike direct I/O function blocks (such as `E_SR` or `E_D_FF`), which process logical states, `logiBUS_2_CAN_DI_S` is a pure **configuration data type**. It is comparable to other structured hardware configuration types in 4diac (e.g., for serial interfaces or other fieldbuses) that encapsulate parameters for hardware connectivity. Its counterpart for digital outputs would be a corresponding struct type (e.g., `logiBUS_2_CAN_DO_S`).

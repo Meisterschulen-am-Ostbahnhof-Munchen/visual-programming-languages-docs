@@ -4,6 +4,7 @@
 ![sequence_T_04_ecc](./sequence_T_04_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_T_04` is a time-controlled sequencer with four defined states (State_01 to State_04) and a start state (START). It enables the cyclical or one-time execution of a fixed sequence, with the dwell time in each state controlled by configurable time values. The transition between states occurs automatically after the set time has elapsed. This function block is ideally suited for time-controlled sequences, such as those found in conveyor systems, packaging machines, or washing processes.
@@ -50,14 +51,15 @@ The FB operates as a Basic Function Block (BFB) with a defined Execution Control
 
 1. **Start**: A `START_S1` event (from states `xSTART` or `sState_00`) activates State_01.
 2. **State Activation**: Upon entering a state (State_01-04), the following actions are performed:
+
 - The corresponding data output (`DO_Sx`) is set to TRUE (Entry Algorithm `State_x_E`).
 - The associated event (`EO_Sx`) is triggered.
 - The state number (`STATE_NR`) is updated (Confirmation Algorithm `State_x_C`).
 - The time configured for the next transition (`DT_...`) is passed to the `timeOut` adapter, and the timer is started.
 - The general confirmation event (`CNF`) is triggered.
-3. **Time-Controlled Transition**: After the time set in the timer has elapsed, the adapter triggers the `TimeOut` event. This is the condition for transitioning to the next state in the sequence.
-4. **State Exit**: When exiting a state, the corresponding data output (`DO_Sx`) is reset to FALSE by the exit algorithm (`State_x_X`).
-5. **Cycle End and Reset**: After State_04, the function block switches to the state `sState_00` (idle state). From here, the sequence can be restarted by another `START_S1` event. A `RESET` event from any state immediately leads to state `sRESET`, disables all outputs, and then transitions to `sState_00`.
+1. **Time-Controlled Transition**: After the time set in the timer has elapsed, the adapter triggers the `TimeOut` event. This is the condition for transitioning to the next state in the sequence.
+2. **State Exit**: When exiting a state, the corresponding data output (`DO_Sx`) is reset to FALSE by the exit algorithm (`State_x_X`).
+3. **Cycle End and Reset**: After State_04, the function block switches to the state `sState_00` (idle state). From here, the sequence can be restarted by another `START_S1` event. A `RESET` event from any state immediately leads to state `sRESET`, disables all outputs, and then transitions to `sState_00`.
 
 ## Technical Features
 

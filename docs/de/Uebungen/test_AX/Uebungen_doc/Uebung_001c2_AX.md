@@ -1,8 +1,9 @@
-# Uebung_001c2_AX: DigitalInput_I1 negiert auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
+# Uebung_001c2_AX: DigitalInput_I1 negiert auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot
 
 ![Uebung_001c2_AX_network](./Uebung_001c2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Negation eines digitalen Eingangssignals auf einen digitalen Ausgang mithilfe eines logischen Negationsadapters. Ein besonderer Fokus liegt auf dem initialen Verhalten nach dem Booten der Steuerung: durch eine Event-Rückkopplung wird sichergestellt, dass der Ausgang sofort den korrekten negierten Zustand des Eingangs annimmt.

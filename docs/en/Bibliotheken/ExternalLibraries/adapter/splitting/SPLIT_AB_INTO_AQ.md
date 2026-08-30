@@ -3,9 +3,11 @@
 ![SPLIT_AB_INTO_AQ](./SPLIT_AB_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_AB_INTO_AQ` is used to split a data byte received via a `AB` adapter (byte) into four individual 2-bit quartets and output each of these via a `AQ` adapter (quarter). It encapsulates the decomposition of a byte into manageable partial values and makes them available for further processing via standardized unidirectional adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ No direct data outputs; the quartets are provided via the data interfaces of the
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|--------------------|-----|----------|--------------|
+| -------------------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AB` | Socket (Input) | Receives the byte to be parsed, including the event. |
 | `QUARTER_BYTE_00` | `adapter::types::unidirectional::AQ` | Plug (Output) | Outputs the quartet 0 (least significant 2 bits). |
 | `QUARTER_BYTE_01` | `adapter::types::unidirectional::AQ` | Plug (Output) | Outputs the quartet 1. |

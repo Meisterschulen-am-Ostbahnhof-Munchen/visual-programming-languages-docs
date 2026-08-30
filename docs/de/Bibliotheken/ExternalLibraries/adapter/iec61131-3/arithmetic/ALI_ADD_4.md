@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_ADD_4` ist ein generischer arithmetischer Funktionsbaustein nach dem IEC 61131-3 Standard. Seine Hauptaufgabe besteht darin, die Summe von vier Eingangswerten zu berechnen. Im Gegensatz zu klassischen arithmetischen Bausteinen, die mit elementaren Datentypen und standardmäßigen Event-Eingängen/-Ausgängen arbeiten, nutzt dieser Baustein unidirektionale Adapter-Verbindungen des Typs `ALI` (Analog Line Interface). Dies ermöglicht eine gekapselte und übersichtliche Signalübertragung von Daten und den dazugehörigen Trigger-Ereignissen innerhalb der 4diac-ide.

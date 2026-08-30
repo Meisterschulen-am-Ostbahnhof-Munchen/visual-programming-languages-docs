@@ -6,6 +6,7 @@
 
 The function block `SYS_ONTIME` is a Service Interface Function Block (SIFB). Its main task is to read and provide the uptime (ontime) of the resource in which it is executed. It serves as a standardized interface between the application logic and the system-level services of the runtime environment.
 ![SYS_ONTIME](SYS_ONTIME.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,6 +37,7 @@ The `SYS_ONTIME` block acts as a client for an internal system service. After re
 The block then continuously monitors the system resource. As soon as the uptime changes (typically due to a system tick or similar mechanism), the resource manager triggers an indication. The `SYS_ONTIME` block receives this, updates its internal `ONTIME` value, and forwards the `IND` event, along with the new value, to the connected application logic.
 
 The block then continuously monitors the system resource. As soon as the uptime changes (typically due to a system tick or similar mechanism), the resource manager triggers an indication.
+
 ## Technical Features
 
 - **Service Interface FB**: As a SIFB, its implementation is specific to the respective 4diac runtime (FORTE) and the underlying hardware/platform. The exact method of time measurement (e.g., based on processor startup time or the runtime environment) is runtime-defined.

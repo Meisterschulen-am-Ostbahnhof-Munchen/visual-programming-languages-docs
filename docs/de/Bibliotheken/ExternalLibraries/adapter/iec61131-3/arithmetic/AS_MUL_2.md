@@ -4,6 +4,7 @@
 ![AS_MUL_2](./AS_MUL_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_MUL_2` ist ein generischer, arithmetischer Multiplikationsbaustein für IEC 61499-Anwendungen in der 4diac-IDE. Er dient dazu, zwei Eingangswerte miteinander zu multiplizieren. Die Besonderheit dieses Bausteins liegt in der Verwendung von Adapterschnittstellen anstelle von klassischen, diskreten Event- und Datenkanälen. Dies ermöglicht eine strukturierte und übersichtliche Signalübertragung.
@@ -57,6 +58,7 @@ Da der Baustein generisch ausgelegt ist (`GenericClassName = 'GEN_AS_MUL'`), pas
 ## Zustandsübersicht
 
 Der Baustein verhält sich rein ereignisgesteuert:
+
 1. **Wartestatus:** Der Baustein wartet auf ein Ereignis an den Sockets `IN1` oder `IN2`.
 2. **Berechnung:** Nach Eintreffen eines Ereignisses werden die aktuellen Werte aus `IN1` und `IN2` gelesen und multipliziert.
 3. **Ausgabe:** Das Ergebnis wird an `OUT` angelegt, und ein Ausgangsereignis wird über den Plug `OUT` emittiert.

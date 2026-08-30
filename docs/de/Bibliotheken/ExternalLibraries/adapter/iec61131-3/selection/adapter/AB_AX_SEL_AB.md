@@ -4,6 +4,7 @@
 ![AB_AX_SEL_AB](./AB_AX_SEL_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AB_AX_SEL_AB` ist ein zusammengesetzter Funktionsbaustein (Composite Function Block) für die IEC 61499, der eine binäre Auswahl (Selektion) auf Adapter-Ebene realisiert. Er dient dazu, basierend auf einem Steuersignal eines Selektor-Adapters (`G`), zwischen den Signalen zweier Eingangs-Adapter (`IN0` und `IN1`) auszuwählen und das ausgewählte Signal an einen Ausgangs-Adapter (`OUT`) weiterzuleiten.
@@ -40,6 +41,7 @@ Da es sich um einen adapterbasierten Funktionsbaustein handelt, sind die klassis
 | **G** | Socket (Provider) | `adapter::types::unidirectional::AX` | Selektor-Adapter (Steuersignal für die Auswahl). |
 
 *Hinweis zu den Adaptertypen:*
+
 - `AB` steht für einen unidirektionalen Adapter, der ein Byte-Datensignal (`D1`/`D`) und ein Ereignis (`E1`) führt.
 - `AX` steht für einen unidirektionalen Adapter, der ein boolesches Datensignal (`D1`/`D`) und ein Ereignis (`E1`) führt.
 
@@ -85,6 +87,7 @@ Im Inneren des Funktionsblocks befindet sich ein Netzwerk aus Standard-Funktions
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zum Standard-Funktionsbaustein `F_SEL` arbeitet `AB_AX_SEL_AB` direkt auf Adapter-Ebene.
+
 - Während bei `F_SEL` diskrete Datenleitungen und separate Trigger-Ereignisse manuell verdrahtet werden müssen, kapselt `AB_AX_SEL_AB` diese Logik.
 - Das spart Engineering-Zeit, reduziert die Anzahl sichtbarer Verbindungen im 4diac-IDE Application Editor und minimiert Fehlerquellen bei der Verknüpfung von Daten- und Ereignisströmen.
 

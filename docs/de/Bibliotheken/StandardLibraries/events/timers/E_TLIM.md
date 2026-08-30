@@ -1,6 +1,7 @@
 # E_TLIM
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_TLIM` (Time-Limiting) begrenzt, wie lange `Q` maximal `TRUE` bleiben kann: Sobald `IN` auf `TRUE` wechselt, wird `Q` ebenfalls `TRUE`; bleibt `IN` länger als `PT` auf `TRUE`, schaltet `Q` nach Ablauf von `PT` automatisch auf `FALSE` (Timeout). Fällt `IN` vor Ablauf von `PT` bereits zurück auf `FALSE`, folgt `Q` sofort.
@@ -38,7 +39,7 @@ Der `E_TLIM` (Time-Limiting) begrenzt, wie lange `Q` maximal `TRUE` bleiben kann
 ## Zustandsübersicht
 
 | Zustand (implizit über `E_SR`/`E_DELAY`) | Bedeutung |
-|---|---|
+| --- | --- |
 | Q = FALSE, Timer inaktiv | Ruhezustand, `IN = FALSE` |
 | Q = TRUE, Timer läuft | `IN` ist `TRUE`, `PT` noch nicht abgelaufen |
 | Q = FALSE (Timeout) | `IN` war länger als `PT` `TRUE`, automatisch zurückgesetzt |

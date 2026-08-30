@@ -3,9 +3,11 @@
 ![ALI_TO_AD](./ALI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_TO_AD` is a composite block for converting a LINT adapter interface (ALI) to a DWORD adapter interface (AD). It serves as a unidirectional translator between two different data types within an adapter-based communication structure.
+
 ## Interface Structure
 
 The block has no independent event or data inputs/outputs. All communication takes place exclusively via predefined adapters.
@@ -29,7 +31,7 @@ None. Output data is transmitted via the plug adapter `AD_OUT`.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|---------|----------------------------------------|----------------------------------------|
+| ---------- | --------- | ---------------------------------------- | ---------------------------------------- |
 | Socket | ALI_IN | `adapter::types::unidirectional::ALI` | Input adapter of type LINT |
 | Plug | AD_OUT | `adapter::types::unidirectional::AD` | Output Adapter of Type DWORD |
 

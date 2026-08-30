@@ -3,9 +3,11 @@
 ![AW_SPLIT_9](./AW_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AW_SPLIT_9` serves as a generic distributor for one incoming adapter of type `AW` to nine identically configured output adapters. It enables the multiple use of a single adapter signal without duplicating the original data source. The designation "SPLIT 1 AW into 9 AW" describes the core function: One AW input is distributed to nine AW outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|------|------|----------|-------------|
+| ------ | ------ | ---------- | ------------- |
 | `adapter::types::unidirectional::AW` | `IN` | Socket (Input) | Incoming AW adapter that is distributed to all outputs. |
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug (Output) | First outgoing AW adapter. |
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug (Output) | Second outgoing AW adapter. |

@@ -4,6 +4,7 @@
 ![SchieberControl_ecc](./SchieberControl_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SchieberControl` is a basic function block (FB) according to IEC 61499 for controlling a slide actuator (e.g., pneumatic). It implements a complete state control (ECC) that manages the movement (open/close), holding states, and fault states of a slide. The block offers a comprehensive interface for parameterization, operation via pushbuttons, softkeys, and auxiliary controls, as well as for outputting control signals to the actuators.
@@ -62,7 +63,7 @@ The `SchieberControl` FB operates as a state-controlled sequence. The internal c
 
 - **State Initialization**: The desired initial state (State_01, State_02, or State_03) can be specified via the `START` input after `INIT`. This requires the subsequent arrival of the `INPUT_DATA` event.
 - **Adapter Usage**: The timing control is completely outsourced to the `timeOut` adapter, enabling a clear separation of functionality and potential reusability.
-- * **Data Configuration**: The output values for user interfaces (`Button`, `Softkey`, `Auxiliary`) are not hard-coded, but configured via corresponding input structures (`BT`, `SK`, `AUXC`), allowing for flexible adaptation to various HMIs.
+- - **Data Configuration**: The output values for user interfaces (`Button`, `Softkey`, `Auxiliary`) are not hard-coded, but configured via corresponding input structures (`BT`, `SK`, `AUXC`), allowing for flexible adaptation to various HMIs.
 - **Power Signal**: The signal `DO_POWERED` is only activated in states `Opening` and `Opened`, indicating a specific pneumatic control logic (e.g., maintaining compressed air in the open state).
 
 ## State Overview

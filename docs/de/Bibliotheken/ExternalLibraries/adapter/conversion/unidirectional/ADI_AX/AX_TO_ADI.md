@@ -3,6 +3,7 @@
 ![AX_TO_ADI](./AX_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_TO_ADI** ist ein zusammengesetzter Baustein (Composite FB), der einen AX-Adapter mit boolescher Schnittstelle (BOOL) in einen ADI-Adapter mit ganzzahliger Schnittstelle (DINT) umwandelt. Er dient als Konverter zwischen unidirektionalen Adaptern und ermöglicht die nahtlose Integration von binären Signalen in Systeme, die integerbasierte Adapter verwenden.

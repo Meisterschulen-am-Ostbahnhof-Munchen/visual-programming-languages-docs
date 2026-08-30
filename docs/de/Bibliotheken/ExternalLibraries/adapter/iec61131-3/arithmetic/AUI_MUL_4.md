@@ -6,6 +6,7 @@
 *Kein Bild verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_MUL_4` ist ein generischer Baustein zur Durchführung einer arithmetischen Multiplikation von vier Eingangswerten. Er nutzt unidirektionale Adapter vom Typ `AUI` (Adapter Unit Interface), um Daten und zugehörige Ereignisse gebündelt zu übertragen. Dies ermöglicht eine saubere und übersichtliche Modellierung in der 4diac-ide.
@@ -57,6 +58,7 @@ Das berechnete Ergebnis wird an den Ausgangs-Adapter `OUT` übergeben, und ein e
 ## Zustandsübersicht
 
 Der Baustein arbeitet rein ereignisgesteuert und besitzt keinen internen Zustand, der über die Dauer eines Berechnungszyklus hinaus bestehen bleibt (zustandsloser / statischer Baustein).
+
 - **Wartezustand:** Der Baustein wartet auf ein Aktualisierungsereignis an einem der Sockets (`IN1` bis `IN4`).
 - **Berechnung:** Nach Eintreffen eines Ereignisses wird die Multiplikation durchgeführt.
 - **Ausgabe:** Das Ergebnis wird an `OUT` angelegt, ein Ereignis am Plug ausgelöst und der Baustein kehrt sofort in den Wartezustand zurück.

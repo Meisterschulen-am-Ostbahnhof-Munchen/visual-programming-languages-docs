@@ -1,4 +1,4 @@
-## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten.
+## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten
 
 # Übungsaufgaben
 

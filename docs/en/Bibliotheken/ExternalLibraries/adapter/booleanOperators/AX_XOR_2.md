@@ -6,6 +6,7 @@
 
 The AX_XOR_2 function block is a generic function block for calculating the Boolean XOR operation (exclusive OR). It processes two input signals and outputs the logical XOR result.
 ![AX_XOR_2](AX_XOR_2.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

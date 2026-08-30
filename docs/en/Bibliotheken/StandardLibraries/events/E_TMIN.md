@@ -1,6 +1,7 @@
 # E_TMIN
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_TMIN` (minimum inter-arrival time) is a composite function block that only forwards incoming events at `EI` to `EO` if at least the time span `Tmin` has passed since the last forwarded event. It acts as an event throttle (rate limiter) for arbitrary event streams.

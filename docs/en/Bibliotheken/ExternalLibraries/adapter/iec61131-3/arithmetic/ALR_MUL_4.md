@@ -3,6 +3,7 @@
 ![ALR_MUL_4](./ALR_MUL_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_MUL_4` performs an arithmetic multiplication of four input values. It is a generic function block (FB) for the 4diac IDE, based on the IEC 61499 standard. Signal transmission and processing are handled via special unidirectional analog adapters, enabling clean encapsulation of the data streams.

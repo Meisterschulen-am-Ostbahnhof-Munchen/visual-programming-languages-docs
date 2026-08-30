@@ -3,6 +3,7 @@
 ![Uebung_004b4c_AX_network](./Uebung_004b4c_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung befasst sich mit der Realisierung einer Kette aus drei gegenseitig verriegelten Toggle-Flip-Flops. Die Verriegelung erfolgt über AE2-Adapter (bidirektionale Schnittstellen), sodass jeder Sub-Baustein seinen Zustand nur dann wechseln kann, wenn die vorgängigen Flip-Flops inaktiv sind. Dadurch wird sichergestellt, dass zu jedem Zeitpunkt nur ein Ausgang aktiv sein kann. Die Eingänge werden über logiBUS-Taster (Single-Click-Ereignis) angesteuert, die Ausgänge über logiBUS-LEDs ausgegeben.

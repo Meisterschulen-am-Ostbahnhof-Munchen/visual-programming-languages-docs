@@ -6,6 +6,7 @@
 
 The function block `LOG_16` is a ring logger designed for the cyclic recording of data of any type (`ANY`). It serves to hold incoming values in a buffer with 16 memory locations, overwriting older entries on new calls (ring buffer principle). This block is particularly suitable for logging process data or states in real-time controllers.
 ![LOG_16](LOG_16.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,7 +44,8 @@ LOG_16` implements a fixed-size, first-in-first-out (FIFO) ring buffer with 16 e
 - **Generic Data Type**: The use of the `ANY` data type for inputs and outputs makes the function block extremely flexible. It can be instantiated and used with any data type (e.g., `BOOL`, `INT`, `REAL`, `STRING`, or even structured types).
 - **Fixed Buffer Size**: The buffer size is fixed at 16 entries and is not configurable.
 - **Immediate Output**: During each logging operation, the entire buffer content is updated at the outputs and confirmed with the `CNF` event.
-*
+-
+
 ## State Overview
 
 The function block does not possess a persistent internal state in the sense of a state machine, apart from the ring buffer itself. Its behavior is purely reactive: A `REQ` event is always followed by a buffer update and the output of `CNF` with the current data.
@@ -54,7 +56,8 @@ The function block does not possess a persistent internal state in the sense of 
 - **Error History**: Storage of the last 16 error codes or alarm messages.
 - **Data Preprocessing**: Provision of a sliding window of the last 16 values for subsequent calculations (e.g., in another function block).
 - **Debugging**: Easy monitoring of variable behavior during development and commissioning.
-*
+-
+
 ## ⚖️ Comparison with similar modules
 
 - **`E_DELAY` / Delay Modules**: These modules output an input value only after a defined delay. The `LOG_16`, on the other hand, stores a history of multiple values and outputs them immediately, but in order of recency.

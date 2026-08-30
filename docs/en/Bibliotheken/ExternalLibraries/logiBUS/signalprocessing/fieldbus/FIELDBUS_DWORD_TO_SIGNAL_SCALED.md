@@ -6,24 +6,24 @@
 The function block **FIELDBUS_DWORD_TO_SIGNAL_SCALED** converts a fieldbus DWORD signal into a scaled LREAL value. It checks the validity of the input signal against a predefined range and, if the signal is valid, calculates the output value by multiplying it by a scaling factor and adding an offset. If the signal is invalid, the output is set to 0 and the validity flag is set to FALSE.
 
 | Event | Type | Description |
-|----------|-----|---------------|
+| ---------- | ----- | --------------- |
 | INIT | EInit | Initialization request; passes scaling parameters |
 | REQ | Event | Normal execution request for processing the input |
 | Event | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | INITO | EInit | Initialization Acknowledgement |
 | CNF | Event | Execution Acknowledgement; returns scaled output and validity flag |
 | Name | Type | Initial Value | Description |
-|--------|-------|-----------------------|--------------|
+| -------- | ------- | ----------------------- | -------------- |
 | IN | DWORD | NOT_AVAILABLE_DWM | Input value from the fieldbus |
 | SCALE | LREAL | LREAL#1.0 | Scaling factor (multiplier) |
 | OFFSET | DINT | DINT#0 | Offset added after scaling |
 | Name | Type | Initial Value | Description |
-|-------|-------|--------------|--------------|
+| ------- | ------- | -------------- | -------------- |
 | OUT | LREAL | LREAL#0.0 | Scaled output value |
 | VALID | BOOL | FALSE | TRUE if the input signal is valid |
 
-##**Adapters**
+## **Adapters**
 No adapters available.
 
 ### **Adapter**
@@ -46,14 +46,17 @@ The function block has two states: **INIT** and **REQ**.
 
 - **INIT state**: Triggered by the INIT event. The associated algorithm is empty, meaning no further actions are performed. The INITO output confirms the completion of the initialization.
 - **REQ state**: Triggered by the REQ event. The REQ algorithm performs the following steps:
+
 1. Checks whether the input value IN, interpreted as a UDINT, is less than or equal to the constant `VALID_SIGNAL_DW`.
 2. If this condition is met, the signal is considered valid:
+
 - `OUT` is calculated as: `UDINT_TO_LREAL(DWORD_TO_UDINT(IN)) * SCALE + DINT_TO_LREAL(OFFSET)`
 - `VALID` is set to `TRUE`.
-3. Otherwise (signal invalid):
+1. Otherwise (signal invalid):
+
 - `OUT` is set to `0.0`.
 - `VALID` is set to `FALSE`.
-4. The CNF event is then triggered, providing the results (OUT, VALID).
+1. The CNF event is then triggered, providing the results (OUT, VALID).
 
 The constants `NOT_AVAILABLE_DWM` and `VALID_SIGNAL_DW` are taken from imported libraries and define which DWORD values are considered "not available" and "valid," respectively.
 
@@ -65,7 +68,7 @@ The constants `NOT_AVAILABLE_DWM` and `VALID_SIGNAL_DW` are taken from imported 
 - The function block is implemented as a SimpleFB and is suitable for cyclic processing.
 
 | State | Trigger | Action | Output |
-|---------|----------|---------|---------|
+| --------- | ---------- | --------- | --------- |
 | INIT | INIT Event | INIT Algorithm (empty) | INITO |
 | REQ | REQ Event | REQ Algorithm (calculation and validation) | CNF |
 

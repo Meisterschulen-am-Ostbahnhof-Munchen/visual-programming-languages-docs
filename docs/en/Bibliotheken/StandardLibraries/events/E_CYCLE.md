@@ -4,6 +4,7 @@
 
 The `E_CYCLE` is a function block according to IEC 61499 that serves as a periodic event generator. After starting, the block repeatedly fires an output event (`EO`) at a defined time interval (`DT`). It is the fundamental tool for creating clocks and cyclic sequences.
 ![E_CYCLE](E_CYCLE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -25,13 +26,16 @@ The `E_CYCLE` is a function block according to IEC 61499 that serves as a period
 The functionality of `E_CYCLE` is internally based on a feedback loop with a `E_DELAY` block.
 
 1. **Starting the Cycle**:
+
 - A `START` event at the input triggers the internal timer with the duration specified at the `DT` input.
 - After this time `DT` has elapsed, the first `EO` event is triggered at the output.
-2. **Cyclic Operation**:
+1. **Cyclic Operation**:
+
 - The triggered `EO` event is immediately fed back internally to the timer's start input.
 - This immediately restarts the timer, and after another time interval `DT`, the next `EO` event is triggered.
 - This process repeats continuously, generating a periodic sequence of `EO` events at intervals of `DT`.
-3. **Stopping the Cycle**:
+1. **Stopping the Cycle**:
+
 - A `STOP` event at the input breaks the internal feedback loop.
 - The timer stops, and no further `EO` events are generated until another `START` event occurs.
 
@@ -51,7 +55,7 @@ The functionality of `E_CYCLE` is internally based on a feedback loop with a `E_
 ## ⚖️ Comparison with similar components
 
 | Feature | E_CYCLE | E_DELAY | E_PULSE (hypothetical) |
-|--------------|-------------------------|------------------------------|------------------------------|
+| -------------- | ------------------------- | ------------------------------ | ------------------------------ |
 | Function | Periodic Clock | Single Delay | Single Pulse of Fixed Duration |
 | Repetition | Continuous | Once per `START` event | Once per `REQ` event |
 | Control | START/STOP | START/STOP | REQ |

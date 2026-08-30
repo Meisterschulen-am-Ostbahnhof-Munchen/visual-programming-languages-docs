@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_MUL_2` ist ein generischer arithmetischer Multiplikationsbaustein für die 4diac-IDE, der auf dem IEC 61499-Standard basiert. Er dient dazu, zwei Eingangswerte miteinander zu multiplizieren. Die Besonderheit dieses Bausteins liegt in der Verwendung von unidirektionalen Adaptern (`ADI`) zur Datenübertragung anstelle von klassischen Daten- und Ereignis-Anschlüssen. Dies ermöglicht eine modulare und lose gekoppelte Signalverarbeitung.

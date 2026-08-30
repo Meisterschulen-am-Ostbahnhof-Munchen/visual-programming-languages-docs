@@ -1,8 +1,9 @@
 # Exercise_002a2: DigitalInput_I1/_I2 with AND (old) on DigitalOutput_Q1
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a2`. This exercise is functionally identical to `Uebung_002a`, but demonstrates the use of the generic function block `F_AND` instead of the type-specific `AND_2`.
+This article describes the logiBUS® exercise `Uebung_002a2`. This exercise is functionally identical to `Uebung_002a`, but demonstrates the use of the generic function block `F_AND` instead of the type-specific `AND_2`
 -----
+
 ## Objective of the Exercise
 
 The objective is to understand the use of generic function blocks (F-FBs) in IEC 61499. It demonstrates that different block types can perform the same logical operation (AND) while maintaining the same event-based execution model.

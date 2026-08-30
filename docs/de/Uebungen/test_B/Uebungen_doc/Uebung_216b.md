@@ -3,6 +3,7 @@
 ![Uebung_216b_network](./Uebung_216b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen **Rückwärtszähler (CTD)** gemäß IEC 61131-3 mit dem Datentyp `DINT` und einer Terminalausgabe des aktuellen Zählwerts als physikalische Größe (`PHYS_LREAL`). Der Zähler wird über zwei digitale Eingänge gesteuert (**CD** = Count Down, **LD** = Load) und gibt das Zählersignal (`Q`) auf einen digitalen Ausgang aus. Parallel dazu wird der aktuelle Zählerstand über einen numerischen Ausgangsbaustein auf einem Terminal visualisiert.
@@ -45,7 +46,7 @@ Die Steuerung erfolgt rein ereignisgesteuert über die **IND**-Ereignisse der Ei
 **Zusammenfassung der Verbindungen:**
 
 | Sender | Empfänger | Art |
-|--------|-----------|-----|
+| -------- | ----------- | ----- |
 | `Input_CD.IND` | `FB_CTD_DINT.REQ` | Ereignis |
 | `Input_LD.IND` | `FB_CTD_DINT.REQ` | Ereignis |
 | `FB_CTD_DINT.CNF` | `Output_Q1.REQ` | Ereignis |

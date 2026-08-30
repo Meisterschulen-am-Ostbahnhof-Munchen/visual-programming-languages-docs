@@ -3,6 +3,7 @@
 ![AUI_TO_AS](./AUI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_TO_AS` is a composite block that enables the conversion of an **AUI (UINT)** adapter to an **AS (SINT)** adapter.
@@ -35,7 +36,7 @@ There are also **no direct data outputs**. The converted data (data type `SINT`)
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|--------|----------------------------------------|----------------------------------|
+| ---------- | -------- | ---------------------------------------- | ---------------------------------- |
 | Socket | AUI_IN | `adapter::types::unidirectional::AUI` | Input adapter (UINT data) |
 | Plug | AS_OUT | `adapter::types::unidirectional::AS` | Output adapter (SINT data) |
 

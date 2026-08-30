@@ -3,9 +3,11 @@
 ![NVS_AUDI](./NVS_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **NVS_AUDI** function block enables the storage and loading of **UDINT** data in the **Non-Volatile Storage (NVS)** of an ESP32 microcontroller. The data is addressed using a unique **key (KEY)**. The block uses a **unidirectional AUDI adapter interface** to communicate with the NVS: The value to be stored is received via an input adapter (socket), and the read value is provided via an output adapter (plug).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The **NVS_AUDI** function block enables the storage and loading of **UDINT** dat
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|---------------|--------|---------------------------------------------------|
+| --------------- | -------- | --------------------------------------------------- |
 | QI | BOOL | Event Input Qualifier |
 | KEY | STRING | Key Name for NVS Access |
 | DEFAULT_VALUE | UDINT | Default value if no value exists in NVS |
@@ -31,16 +33,16 @@ The **NVS_AUDI** function block enables the storage and loading of **UDINT** dat
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|--------|------------------------------|
+| -------- | -------- | ------------------------------ |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Service Status (Error/OK) |
 
 ### **Adapter**
 
 | Name | Type | Comment |
-|----------|--------------------------------------|------------------------------------|
+| ---------- | -------------------------------------- | ------------------------------------ |
 | AUDI_IN | adapter::types::unidirectional::AUDI | Value to be stored (SET) |
-| AUDI_OUT | adapter::types::unidirectional::AUDI | Stored/loaded value (GETO)|
+| AUDI_OUT | adapter::types::unidirectional::AUDI | Stored/loaded value (GETO) |
 
 ## Functionality
 
@@ -66,8 +68,8 @@ Since no explicit state machine is defined in the XML, the process is derived fr
 
 Afterwards: Ready (waiting for SET or another GET by re-INIT).
 
-2. **Storage Phase** – Event via AUDI_IN (E1) → NVS-SET → Value is written.
-3. **Read Operation** – Automatically after INIT or by re-INIT.
+1. **Storage Phase** – Event via AUDI_IN (E1) → NVS-SET → Value is written.
+2. **Read Operation** – Automatically after INIT or by re-INIT.
 
 Output via AUDI_OUT occurs after each read or write operation.
 

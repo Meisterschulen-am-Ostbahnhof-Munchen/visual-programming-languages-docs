@@ -1,9 +1,11 @@
 # AE_DELAY
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AE_DELAY** function block is a wrapper for the standard IEC 61499 function block `E_DELAY`, specifically designed for use with **Event Adapters (AE)**. It enables the delayed forwarding of events within an adapter-based architecture. Instead of conventional event pins, this function block uses adapter sockets and plugs to receive start and stop signals and output the delayed event.
+
 ## Interface Structure
 
 The function block encapsulates the functionality of an on-delay timer in adapter interfaces.

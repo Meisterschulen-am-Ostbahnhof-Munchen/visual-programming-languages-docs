@@ -19,7 +19,7 @@ Der Funktionsblock **I_TD_TD** ist ein Wrapper um den Basisbaustein `I_TD` und e
 ### **Ereignis-Ausgänge**
 
 | Name | Typ | Mitgeführte Daten |
-|------|-----|--------------------|
+| ------ | ----- | -------------------- |
 | INITO | EInit | `QO`, `STATUS` |
 | IND | Event | `QO`, `timestamp_data`, `STATUS`, `Q_timeout`, `LOCAL_MINUTE_OFFSET`, `LOCAL_HOUR_OFFSET` |
 | TIMEOUT | Event | `timestamp_timeout`, `STATUS`, `Q_timeout` |
@@ -33,7 +33,7 @@ Der Funktionsblock **I_TD_TD** ist ein Wrapper um den Basisbaustein `I_TD` und e
 ### **Daten-Ausgänge**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | QO | BOOL | Ausgangsqualifier (Status der Verarbeitung) |
 | STATUS | STRING | Statusmeldung |
 | Q_timeout | BOOL | Zeitüberschreitungs-Flag |

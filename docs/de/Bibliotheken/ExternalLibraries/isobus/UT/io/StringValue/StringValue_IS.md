@@ -13,14 +13,14 @@ Der Funktionsblock **StringValue_IS** ist ein Eingangs-Service-Interface-Funktio
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
-|---------|------|-------------|-------------------|
+| --------- | ------ | ------------- | ------------------- |
 | `INIT` | EInit | Initialisierung des Service-Interface-Bausteins | `QI`, `PARAMS`, `u16ObjId` |
 | `REQ` | Event | Anforderung zur Datenabfrage oder -aktualisierung | `QI` |
 
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
-|---------|------|-------------|-------------------|
+| --------- | ------ | ------------- | ------------------- |
 | `INITO` | EInit | Bestätigung der erfolgreichen Initialisierung | `QO`, `STATUS` |
 | `CNF` | Event | Bestätigung der ausgeführten Anforderung | `QO`, `STATUS`, `IN` |
 | `IND` | Event | Asynchrone Indikation – neue Eingangsdaten von der Ressource | `QO`, `STATUS`, `IN` |
@@ -28,7 +28,7 @@ Der Funktionsblock **StringValue_IS** ist ein Eingangs-Service-Interface-Funktio
 ### **Daten-Eingänge**
 
 | Name | Typ | Anfangswert | Beschreibung |
-|------|-----|-------------|-------------|
+| ------ | ----- | ------------- | ------------- |
 | `QI` | BOOL | – | Ereignisqualifizierer: Steuert die Ausführung der zugehörigen Ereignisse |
 | `PARAMS` | STRING | – | Service-Parameter (z. B. Konfiguration des Zugriffs auf die Ressource) |
 | `u16ObjId` | UINT | `ID_NULL` | Objekt-ID, die den zu lesenden String in der Ressource identifiziert |
@@ -36,7 +36,7 @@ Der Funktionsblock **StringValue_IS** ist ein Eingangs-Service-Interface-Funktio
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | `QO` | BOOL | Ereignisqualifizierer: Zeigt an, ob der Ausgang gültige Daten liefert |
 | `STATUS` | STRING | Statusmeldung des Service (z. B. Fehlercodes oder Erfolgsmeldung) |
 | `IN` | STRING | Empfangene Zeichenkette von der Ressource |
@@ -97,7 +97,7 @@ Der Baustein durchläuft folgende grundlegende Zustände (nicht im XML explizit 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Datentyp | Besonderheit |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `BOOL_IS` | BOOL | Einfache boolesche Eingänge (z. B. Schalter) |
 | `INT_IS` | INT | Ganzzahlige Eingänge (z. B. Zählerstände) |
 | `REAL_IS` | REAL | Gleitkomma-Eingänge (z. B. Messwerte) |

@@ -6,6 +6,7 @@
 
 The function block `F_LREAL_TO_REAL` converts an LREAL value (64-bit floating-point number) to a REAL value (32-bit floating-point number). This block is particularly useful in scenarios where type conversion between these two numeric data types is required.
 ![F_LREAL_TO_REAL](F_LREAL_TO_REAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

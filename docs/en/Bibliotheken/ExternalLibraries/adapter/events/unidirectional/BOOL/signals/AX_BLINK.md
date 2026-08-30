@@ -1,10 +1,12 @@
 # AX_BLINK
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_BLINK is a function block that outputs a flashing signal via an AX adapter.
 ![AX_BLINK](AX_BLINK.svg)
+
 ## Interface Structure
 
 ### **Data Inputs**

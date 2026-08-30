@@ -3,6 +3,7 @@
 ![AL_SPLIT_6](./AL_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_SPLIT_6** dient dazu, einen einzelnen unidirektionalen AL‑Adapter‑Eingang (Socket) auf sechs identische AL‑Adapter‑Ausgänge (Plugs) aufzuteilen. Er ermöglicht eine einfache Signalverteilung innerhalb einer 4diac‑Applikation, ohne dass zusätzliche Logik oder eine Zustandsmaschine erforderlich ist.

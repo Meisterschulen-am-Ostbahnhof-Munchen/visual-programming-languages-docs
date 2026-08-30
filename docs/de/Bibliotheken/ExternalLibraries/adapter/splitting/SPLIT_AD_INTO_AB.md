@@ -3,6 +3,7 @@
 ![SPLIT_AD_INTO_AB](./SPLIT_AD_INTO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AD_INTO_AB** dient der Aufteilung eines 32‑Bit-Datenworts (AD‑Adapter) in vier einzelne Bytes. Die vier Bytes werden über jeweils separate unidirektionale AB‑Adapter ausgegeben. Der Baustein ist als Composite‑FB realisiert und nutzt dazu einen SPLIT_DWORD_INTO_BYTES sowie mehrere flankengesteuerte D‑Flipflops (E_D_FF_ANY).
@@ -20,7 +21,7 @@ Der FB besitzt keine klassischen Ereignis‑ oder Datenschnittstellen. Die gesam
 ### **Adapter (Plugs)**
 
 | Adapter | Typ | Kommentar |
-|---------|-----|------------|
+| --------- | ----- | ------------ |
 | BYTE_00 | `adapter::types::unidirectional::AB` | Byte 0 (niederwertigstes Byte) |
 | BYTE_01 | `adapter::types::unidirectional::AB` | Byte 1 |
 | BYTE_02 | `adapter::types::unidirectional::AB` | Byte 2 |

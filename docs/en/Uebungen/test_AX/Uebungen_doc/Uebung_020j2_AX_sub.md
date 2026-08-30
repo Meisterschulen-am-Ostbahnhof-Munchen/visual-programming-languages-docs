@@ -3,6 +3,7 @@
 ![Uebung_020j2_AX_sub_network](./Uebung_020j2_AX_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This subapplication serves as a building block for controlling two outputs (`Q1`, `Q2`) with time-delayed pulses. It is controlled via a single input (`IN`) and allows individual adjustment of the pulse durations for each output (via the parameters `TQ1` and `TQ2`). The subapplication encapsulates the logic for splitting an input event and timing two independent output signals.
@@ -44,10 +45,12 @@ The flow within the subapplication is as follows:
 
 - `AX_SPLIT_2.OUT1` → connected to `AX_TP_Q1.IN`
 - `AX_SPLIT_2.OUT2` → connected to `AX_TP_Q2.IN`
-3. Simultaneously, the time values are passed from the data parameters of the subapplication:
+1. Simultaneously, the time values are passed from the data parameters of the subapplication:
+
 - `TQ1` (data input of the subapplication) → `AX_TP_Q1.PT`
 - `TQ2` (data input of the subapplication) → `AX_TP_Q2.PT`
-4. Each timer generates an output event after its respective time has elapsed:
+1. Each timer generates an output event after its respective time has elapsed:
+
 - `AX_TP_Q1.Q` → connected to adapter output `Q1`
 - `AX_TP_Q2.Q` → connected to adapter output `Q2`
 

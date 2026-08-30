@@ -3,9 +3,11 @@
 ![AUI_D_FF_TMIN](./AUI_D_FF_TMIN.svg)
 
 * * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_D_FF_TMIN** implements a data-locking D flip-flop (data latch) with a minimum inter-disposal time between two consecutive output events. It serves to receive values via the unidirectional **AUI** adapter and pass them on with a defined minimum delay to prevent an excessively rapid sequence of events at the output.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ The function block **AUI_D_FF_TMIN** implements a data-locking D flip-flop (data
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | **Plug** (Output) | **Q** | `adapter::types::unidirectional::AUI` | Provides the locked data value (event and data line). |
 | **Socket** (Input) | **I** | `adapter::types::unidirectional::AUI` | Receives the data value to be locked (event and data line). |
 
@@ -43,19 +45,19 @@ The function block **AUI_D_FF_TMIN** implements a data-locking D flip-flop (data
 
 The block is initialized via the event input `INIT`, and the minimum time is set via `Tmin`.
 
-2. **Data Transfer**
+1. **Data Transfer**
 
 Every event arriving at the adapter input `I` via the event line `I.E1` transfers the corresponding data value `I.D1` to the flip-flop. The transferred value is immediately stored internally.
 
-3. **Output with Minimum Time Delay**
+1. **Output with Minimum Time Delay**
 
 The stored value is only output as an event on `Q.E1` and as a data value on `Q.D1` if at least `Tmin` of time has elapsed since the last output event. If a new transfer event occurs before this time has elapsed, the new value is stored, and the output is further delayed until the minimum time has been met.
 
-3. **Output with Minimum Time Delay**
+1. **Output with Minimum Time Delay**
 
 The output of the stored value occurs only as an event on `Q.E1` and as a data value on `Q.D1` if at least `Tmin` of time has passed since the last output event. If a new transfer event occurs before this time has elapsed, the new value is stored, and the output is further delayed until the minimum time has been met.
 
-4. **State Protection**
+1. **State Protection**
 
 The block behaves like an edge-triggered D flip-flop, where each valid clock cycle (event on `I.E1`) takes over the current data value, but the actual transmission is time-limited.
 
@@ -70,7 +72,7 @@ The block behaves like an edge-triggered D flip-flop, where each valid clock cyc
 The function block does not have an externally visible state machine (ECC). Internally, the used `E_D_FF_ANY_TMIN` can have the following implicit states:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Idle** | Waiting for an event at input `I`. |
 | **Timed** | Data has been received; output is held back until `Tmin` expires. |
 | **Output** | Minimum time has been met – output event is sent. |
@@ -86,7 +88,7 @@ These states are transparent to the user.
 ## Comparison with Similar Components
 
 | Component | Feature |
-|----------|---------|
+| ---------- | --------- |
 | **E_D_FF** (Standard D Flip-Flop) | No time limit; each event is output immediately. |
 | **E_D_FF_ANY_TMIN** | Same behavior, but without adapter encapsulation; Direct event-/data-based connection. |
 | **AUI_D_FF_TMIN** (this block) | Combines D flip-flop functionality with time-based throttling and provides an adapter-based interface. |

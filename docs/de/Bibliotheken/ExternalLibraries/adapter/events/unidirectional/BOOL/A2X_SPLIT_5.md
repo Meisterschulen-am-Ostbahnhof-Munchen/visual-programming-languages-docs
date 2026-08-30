@@ -3,6 +3,7 @@
 ![A2X_SPLIT_5](./A2X_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **A2X_SPLIT_5** dient dazu, einen eingehenden A2X-Adapter in fünf identische A2X-Ausgänge aufzuteilen. Er wird als generischer Baustein bereitgestellt, der über Attribute konfiguriert werden kann.

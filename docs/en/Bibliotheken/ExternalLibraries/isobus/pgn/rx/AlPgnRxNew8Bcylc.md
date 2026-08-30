@@ -6,6 +6,7 @@
 
 The function block `AlPgnRxNew8Bcylc` is used for the cyclical reception of data via an ISOBUS network according to the Parameter Group Number (PGN) protocol. It enables the configuration and monitoring of receive channels for specific PGNs, including the handling of timeouts and error conditions. The block is designed for use in control systems that require reliable and monitored communication with other ISOBUS devices.
 ![AlPgnRxNew8Bcylc](AlPgnRxNew8Bcylc.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

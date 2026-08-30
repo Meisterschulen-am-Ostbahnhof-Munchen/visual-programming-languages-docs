@@ -3,6 +3,7 @@
 ![SPLIT_AD_INTO_AX](./SPLIT_AD_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock SPLIT_AD_INTO_AX dient dazu, ein über einen AD-Adapter (DWORD) eingehendes 32‑Bit‑Datenwort in 32 separate AX‑Adapter (BOOL) aufzutrennen. Jeder AX‑Adapter repräsentiert dabei ein einzelnes Bit des ursprünglichen DWORD‑Wertes. Der Baustein kapselt die erforderliche Ereignissteuerung und Datenspeicherung in einem modularen, einfach nutzbaren Funktionsblock.

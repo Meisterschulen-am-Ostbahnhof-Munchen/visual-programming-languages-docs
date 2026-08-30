@@ -1,10 +1,12 @@
 # AX_OR_10
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_OR_10 is a generic function block for calculating the logical OR operation of 10 inputs.
 ![AX_OR_10](AX_OR_10.svg)
+
 ## Interface Structure
 
 ### **Adapters**

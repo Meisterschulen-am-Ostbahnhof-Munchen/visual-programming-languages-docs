@@ -3,6 +3,7 @@
 ![ASR_SWITCH](./ASR_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASR_SWITCH** dient als Demultiplexer für **ASR-Ereignisse** (SET/RESET). Er leitet die über den Adapter-Socket `EI` empfangenen Ereignisse wahlweise an den Adapter-Plug `EO0` oder `EO1` weiter – abhängig vom booleschen Wert des Eingangs `G`. Dadurch lassen sich zwei verschiedene Signalpfade in einer Automatisierungsanwendung umschalten.

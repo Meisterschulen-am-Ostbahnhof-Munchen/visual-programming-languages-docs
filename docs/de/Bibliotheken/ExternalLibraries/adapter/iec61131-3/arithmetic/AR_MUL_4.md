@@ -4,6 +4,7 @@
 ![AR_MUL_4](./AR_MUL_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_MUL_4` ist ein generischer arithmetischer Baustein, der zur Multiplikation von vier Eingangswerten dient. Er basiert auf einer Adapter-Schnittstelle, die eine saubere Kapselung und Strukturierung von Daten und dazugehörigen Ereignissen ermöglicht. Durch seine generische Natur (`GEN_AR_MUL`) kann sich der Baustein flexibel an verschiedene numerische Datentypen anpassen.

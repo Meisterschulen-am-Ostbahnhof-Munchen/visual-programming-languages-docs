@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_004b_AX_ASR` based on the provided information.
+
 # Exercise_004b_AX_ASR: Toggle Flip-Flop with IE / E_SWITCH + E_SR
 
 ![Uebung_004b_AX_ASR_network](./Uebung_004b_AX_ASR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_004b_AX_ASR** implements a toggle flip-flop logic circuit, but using special adapter components instead of classic Boolean logic components. The goal is to toggle the state of a digital output (Q1) (On/Off) each time a button (I1) is pressed.
@@ -11,6 +13,7 @@ Exercise **Exercise_004b_AX_ASR** implements a toggle flip-flop logic circuit, b
 This exercise primarily serves demonstration purposes to show the functionality and chaining of adapter events and data. As noted in the source code, this implementation is **not recommended** for simple switching tasks in practice due to the high complexity and number of components.
 
 [Note: The original text contains a separate, unrelated comment and is omitted from the translation.]
+
 ## Function Blocks (FBs) Used
 
 This sub-application uses various function blocks from the `logiBUS` and `adapter` libraries to implement the logic.
@@ -21,7 +24,7 @@ This sub-application uses various function blocks from the `logiBUS` and `adapte
 - Serves as an input event.
 - **Parameters**: `Input` = `Input_I1` (Logical Input 1), `InputEvent` = `BUTTON_SINGLE_CLICK` (Responds to a single click).
 - **Function**: Provides an event signal when the button is pressed.
-- * **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`)
+- - **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`)
 - Serves as an output interface.
 - **Parameters**: `Output` = `Output_Q1`.
 - **Function**: Controls the physical output based on the adapter signal.
@@ -38,7 +41,7 @@ These blocks process signals via adapter connections (`AX_...`), which encapsula
 - **Function**: Routes incoming signals to different outputs (`EO0`, `EO1`) based on their state. Used here to switch between setting and resetting the flip-flop.
 - **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`)
 - **Type**: Signal splitter.
-- * **Function**: Splits the flip-flop's adapter output into two paths: one for the physical output and one for feedback.
+- - **Function**: Splits the flip-flop's adapter output into two paths: one for the physical output and one for feedback.
 - **AX_BOOL_TO_X** (`adapter::conversion::unidirectional::AX_BOOL_TO_X`)
 - **Type**: Converter.
 - **Function**: Converts a standard event and data signal into an adapter signal to control the `AX_SWITCH`.
@@ -53,11 +56,13 @@ The flow simulates a T-flip-flop using a feedback loop:
 1. **Input Signal**: The event `IND` from the button **DigitalInput_CLK_I1** triggers the function block **AX_BOOL_TO_X**.
 2. **Status Detection**: The current system status is determined via a feedback loop. The output of the flip-flop (**AX_SR**) is fed back via **AX_SPLIT_2** and **AX_X_TO_BOOL** and fed into **AX_BOOL_TO_X**.
 3. **Switching Logic**:
+
 - The **AX_SWITCH** receives the signal.
 - Depending on the current state (feedback), either output `EO0` (connected to `AX_SR.S` -> Set) or `EO1` (connected to `AX_SR.R` -> Reset) is activated.
-4. **Storage**: The **AX_SR** block changes its state accordingly (toggling).
-5. **Output**: The new state is available at the adapter output `Q` of **AX_SR**.
-6. **Distribution**:
+1. **Storage**: The **AX_SR** block changes its state accordingly (toggling).
+2. **Output**: The new state is available at the adapter output `Q` of **AX_SR**.
+3. **Distribution**:
+
 - The signal is sent via **AX_SPLIT_2** to **DigitalOutput_Q1**, which switches the lamp/actuator.
 - Simultaneously, the signal for the next click is fed back into the feedback loop.
 

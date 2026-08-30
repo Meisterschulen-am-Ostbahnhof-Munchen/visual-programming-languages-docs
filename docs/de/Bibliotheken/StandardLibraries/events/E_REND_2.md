@@ -1,6 +1,7 @@
 # E_REND_2
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_REND_2` ist die generische 2-Eingangs-Variante des Rendezvous-Bausteins `E_REND` (2 Eingänge). Er löst `EO` erst aus, wenn er von **allen** 2 Eingängen (`EI1`, `EI2`) mindestens ein Ereignis seit dem letzten Reset empfangen hat — eine logische UND-Verknüpfung über 2 asynchrone Ereignisströme.

@@ -3,6 +3,7 @@
 ![Uebung_007d2_network](./Uebung_007d2_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Blinker unter Verwendung von `E_CYCLE` und `E_D_FF_TMIN`. Der Blinker erzeugt ein zufälliges Ein-/Ausschaltverhältnis, wobei ein Flipflop mit minimaler Einschaltzeit von 3 Sekunden sicherstellt, dass der Ausgang nach einem Einschalten nicht zu früh wieder ausschaltet.

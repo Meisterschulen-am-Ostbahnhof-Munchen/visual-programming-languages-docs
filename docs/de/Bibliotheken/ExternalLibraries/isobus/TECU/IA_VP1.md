@@ -3,6 +3,7 @@
 ![IA_VP1](./IA_VP1.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_VP1** ist ein ISOBUS-Adapter für die Vehicle Position 1 (VP1) gemäß ISO 11783-7 (PGN 65267). Er kapselt die Kommunikation zur Fahrzeugposition und stellt die empfangenen Daten über unidirektionale Adapter-Schnittstellen für die weitere Verarbeitung in der 4diac-IDE bereit.
@@ -37,7 +38,7 @@ Der Funktionsblock **IA_VP1** ist ein ISOBUS-Adapter für die Vehicle Position 1
 ### **Adapter**
 
 | Adapter | Typ | Kommentar |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | LAT | adapter::types::unidirectional::AR | Latitude |
 | LON | adapter::types::unidirectional::AR | Longitude |
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout Status |

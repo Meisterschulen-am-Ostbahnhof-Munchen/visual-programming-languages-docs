@@ -3,6 +3,7 @@
 ![AB_XOR_3](./AB_XOR_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AB_XOR_3** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 3 Eingangswerten vom Typ `BYTE` (8-Bit-Bitmuster (Byte)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

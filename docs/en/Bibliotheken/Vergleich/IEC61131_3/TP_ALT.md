@@ -1,6 +1,7 @@
 # TP (Pulse) - IEC 61131-3
 
 The **TP** (Timer Pulse) function block implements a pulse generator (monoflop). It generates an output pulse of defined duration.
+
 ## Interface
 
 | Type | Name | Data Type | Description |

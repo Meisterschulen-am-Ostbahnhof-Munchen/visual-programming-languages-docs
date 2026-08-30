@@ -3,6 +3,7 @@
 ![ALI_SPLIT_7](./ALI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ALI_SPLIT_7** ist ein generischer Splitter, der einen eingehenden ALI-Adapter (Socket `IN`) auf sieben ausgehende ALI-Adapter (Plugs `OUT1`…`OUT7`) verteilt. Er dient zur 1:7-Verteilung von Daten und Ereignissen innerhalb eines unidirektionalen ALI-Kommunikationspfades.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-------------------|-------------|
+| ---------- | ------ | ------------------- | ------------- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::ALI` | Eingangsadapter, dessen Daten und Ereignisse verteilt werden. |
 | Plug (Ausgang) | `OUT1` | `adapter::types::unidirectional::ALI` | Erster Ausgangsadapter. |
 | Plug (Ausgang) | `OUT2` | `adapter::types::unidirectional::ALI` | Zweiter Ausgangsadapter. |

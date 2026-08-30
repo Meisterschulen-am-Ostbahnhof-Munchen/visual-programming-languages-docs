@@ -29,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Eingang) | `IN` | `adapter::types::unidirectional::AB` | Unidirektionaler AB-Adapter, der das Eingangssignal bereitstellt. |
 | **Plug** (Ausgang) | `OUT1` | `adapter::types::unidirectional::AB` | Erster unidirektionaler AB-Adapter-Ausgang. |
 | **Plug** (Ausgang) | `OUT2` | `adapter::types::unidirectional::AB` | Zweiter unidirektionaler AB-Adapter-Ausgang. |
@@ -62,7 +62,7 @@ Es existiert kein Zustandsautomat. Der Baustein arbeitet kontinuierlich und gibt
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Besonderheit |
-|----------|-----------------|--------------|
+| ---------- | ----------------- | -------------- |
 | `AB_SPLIT_2` | 2 | Einfache 1:2-Verteilung |
 | `AB_SPLIT_3` | 3 | 1:3-Verteilung |
 | `AB_SPLIT_5` | 5 | 1:5-Verteilung (dieser Baustein) |

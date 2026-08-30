@@ -3,6 +3,7 @@
 ![Uebung_011a_AUDI_network](./Uebung_011a_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of a digital input (pushbutton) with repeat detection (`BUTTON_PRESS_REPEAT_DONE`) to output a numeric value to an ISOBUS Virtual Terminal.
@@ -10,6 +11,7 @@ The incoming button press is captured via a logiBUS IBA interface, converted int
 
 This exercise is based on the IEC 61499 standard and uses the predefined libraries `logiBUS` and `isobus`. It is suitable for beginners to the 4diac IDE who want to familiarize themselves with linking physical inputs and ISOBUS VT components.
 ...
+
 ## Function Blocks Used (FBs)
 
 Three function blocks are used in the subapp `Uebung_011a_AUDI`:
@@ -39,16 +41,16 @@ Three function blocks are used in the subapp `Uebung_011a_AUDI`:
 
 Pressing the button (defined as `Input_I1`) with repeat detection generates the event `BUTTON_PRESS_REPEAT_DONE`. This event activates the function block `logiBUS_IBA`.
 
-2. **Input Reading**
+1. **Input Reading**
 
 logiBUS_IBA` reads the current state of the digital input and provides it as AB format via the adapter output `IN`.
 
-3. **Format Conversion**
+1. **Format Conversion**
 
 The adapter `AB_TO_AUDI` converts the AB format to the AUDI format. The connection is established via an adapter connection (`AdapterConnections`):
 
 - `Source="logiBUS_IBA.IN"` → `Destination="AB_TO_AUDI.AB_IN"`
-4. **Output on the Virtual Terminal**
+1. **Output on the Virtual Terminal**
 
 The converted value (AUDI format) is provided at output `AUDI_OUT` by `AB_TO_AUDI` and passed to the module `Q_NumericValue_AUDI` via another adapter connection:
 

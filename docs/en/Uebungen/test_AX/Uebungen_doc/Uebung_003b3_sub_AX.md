@@ -1,9 +1,11 @@
 Here is the documentation for the exercise based on the provided XML file:
+
 # Exercise_003b3_sub_AX: IX to QX (generic)
 
 ![Uebung_003b3_sub_AX_network](./Uebung_003b3_sub_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise describes a sub-application (`SubAppType`) that establishes a generic connection between a digital input (IX) and a digital output (QX). The function block acts as a bridge to forward signals from an input module (e.g., a wireless switch) directly to an output module (e.g., a data panel).
@@ -45,12 +47,15 @@ This block represents the output page. It receives the address (`u8SAMember`) an
 The logic of this sub-application is based on the direct transmission of signals via adapter connections.
 
 1. **Interface Definition**:
+
 - **Input**: Defines the source of the signal (e.g., `DigitalInput_Key_01`).
 - **u8SAMember**: Determines the network node (Node SA 224..239) for the output module.
 - **Output**: Defines the specific output on the DataPanel (e.g., `DigitalOutput_1A..8B`).
-2. **Data Flow**:
+1. **Data Flow**:
+
 - The configuration data is forwarded directly from the inputs of the sub-application to the internal function blocks `IXA` and `QXA`.
-3. **Signal Flow (Adapter)**:
+1. **Signal Flow (Adapter)**:
+
 - There is a direct **adapter connection** between `IXA.IN` and `QXA.OUT`.
 - This connection maps the logical state of the input directly to the output. When the defined input is active, the corresponding output on the DataPanel is switched.
 

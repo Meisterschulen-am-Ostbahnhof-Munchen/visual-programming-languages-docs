@@ -3,6 +3,7 @@
 ![ALR_SPLIT_6](./ALR_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ALR_SPLIT_6 ist ein generischer 1:6-Splitter für den Adaptertyp `adapter::types::unidirectional::ALR`. Er verteilt ein eingehendes ALR-Signal unverändert auf sechs Ausgänge und dient als passiver Signalverteiler ohne Datenmanipulation.
@@ -28,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::ALR` | Socket (Eingang) | ALR-Eingangssignal, das auf alle Ausgänge kopiert wird |
 | OUT1 | `adapter::types::unidirectional::ALR` | Plug (Ausgang) | Erster ALR-Ausgang |
 | OUT2 | `adapter::types::unidirectional::ALR` | Plug (Ausgang) | Zweiter ALR-Ausgang |

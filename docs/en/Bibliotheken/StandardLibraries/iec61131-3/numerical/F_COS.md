@@ -3,6 +3,7 @@
 ![F_COS](https://user-images.githubusercontent.com/116869307/214145027-b4a8a395-2535-4bd6-853c-644685e13ade.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The F_COS function block calculates the cosine of an input value in radians. It is a standard function for numerical calculations according to IEC 61131-3.

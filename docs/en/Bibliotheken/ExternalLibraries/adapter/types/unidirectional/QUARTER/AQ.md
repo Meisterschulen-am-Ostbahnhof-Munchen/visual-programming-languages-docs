@@ -3,9 +3,11 @@
 ![AQ](./AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `AQ` adapter provides a unidirectional interface (plug side) for transmitting an event and a byte value (used for 2 bits). It serves as a standard definition for communication between function blocks according to IEC 61499-1 and enables simple, directed data transfer.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,7 +58,7 @@ The adapter itself has no internal state. The sending function block controls th
 ## Comparison with Similar Function Blocks
 
 | Feature | AQ (this adapter) | Other adapters (e.g., with multiple events) |
-|---------|---------------------|--------------------------------------------|
+| --------- | --------------------- | -------------------------------------------- |
 | Events | 1 output | Often multiple inputs/outputs |
 | Data | 1 byte (2 bits used) | Frequently multiple variables or complex types |
 | Alignment | Unidirectional (Plug-side) | Bidirectional or pure socket-side |

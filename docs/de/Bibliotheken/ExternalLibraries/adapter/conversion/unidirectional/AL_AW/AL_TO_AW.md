@@ -3,6 +3,7 @@
 ![AL_TO_AW](./AL_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AL_TO_AW ist ein zusammengesetzter (Composite) Baustein, der einen LWORD-Eingangsadaper vom Typ AL (unidirektional) in einen WORD-Ausgangsadaper vom Typ AW (unidirektional) umwandelt. Er kapselt die Konvertierungsfunktion und stellt eine einfache Schnittstelle für die Umwandlung von 64‑Bit‑Daten auf 16‑Bit‑Daten in der 4diac‑IDE bereit.

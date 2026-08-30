@@ -3,6 +3,7 @@
 ![Uebung_213c_network](./Uebung_213c_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an upward counter according to IEC 61131-3 (FB_CTU_UDINT) with a count limit of 31. The counter value is updated cyclically and transmitted to a numeric terminal output (PHYS_LREAL) via a multiplexer. Additionally, an animated object ("horse") is controlled by showing/hiding it. The exercise illustrates the combination of IEC 61131-3 function blocks with event-driven 4diac logic and terminal output.
@@ -96,7 +97,7 @@ Displays a graphics container object (it becomes visible with `REQ`). This objec
 
 1. **Start**: Pressing button **I1** generates the event `START.IND`. This starts the cyclic timer `E_CYCLE` and simultaneously displays the object `Container_Horse` over `Q_ObjHideShow`.
 2. **Cyclic Clock**: `E_CYCLE` generates an event `EO` every 100 ms. This clocks the T flip-flop `E_T_FF`, whose output `Q` changes its state with every second event. This results in a 200 ms clock at the flip-flop's output.
-2. **Cyclic Clock**: `E_CYCLE` generates an event `EO` every 100 ms. This clocks the T flip-flop `E_T_FF`, whose output `Q` changes its state with every second event. 3. **Counting**: The output `E_T_FF.Q` is connected to the counter input `CU` of `FB_CTU_UDINT`. On each rising edge (change from 0 to 1), the counter `CV` increments by 1.
+3. **Cyclic Clock**: `E_CYCLE` generates an event `EO` every 100 ms. This clocks the T flip-flop `E_T_FF`, whose output `Q` changes its state with every second event. 3. **Counting**: The output `E_T_FF.Q` is connected to the counter input `CU` of `FB_CTU_UDINT`. On each rising edge (change from 0 to 1), the counter `CV` increments by 1.
 4. **Reset**: Once the counter reaches its final value of 31, `Q` is set. This state is fed back to the reset input `R` and then to the enable input `E_PERMIT.PERMIT`. This automatically resets the counter and simultaneously enables further processing.
 5. **Data Selection**: The current counter value `CV` (before reset) is sent as selection `K` to the multiplexer `F_MUX_32`. The multiplexer selects the corresponding `frame_xx` (0…31).
 6. **Terminal Output**: The `frame_xx` provided by the multiplexer is passed to the numeric value output module `Q_NumericValue` and displayed on the connected terminal (e.g., as characters or graphics).

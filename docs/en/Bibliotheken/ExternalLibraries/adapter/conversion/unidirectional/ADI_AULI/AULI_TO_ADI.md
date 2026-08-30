@@ -3,9 +3,11 @@
 ![AULI_TO_ADI](./AULI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AULI_TO_ADI** function block is a composite module for converting an **AULI** adapter (unsigned 64-bit value) into an **ADI** adapter (signed 32-bit value). It enables simple conversion between two unidirectional adapter interfaces and internally utilizes an IEC 61131 type conversion function.
+
 ## Interface Structure
 
 The module has no event or data inputs/outputs of its own. All communication takes place exclusively via the two adapters.
@@ -29,7 +31,7 @@ None (exclusively via adapter).
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AULI` | `AULI_IN` | Socket / Input | Receives a ULINT value via event and data channels (E1, D1) |
 | `adapter::types::unidirectional::ADI` | `ADI_OUT` | Plug / Output | Provides the converted DINT value via event and data channels (E1, D1) |
 

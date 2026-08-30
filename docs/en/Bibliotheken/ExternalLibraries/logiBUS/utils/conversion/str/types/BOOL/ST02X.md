@@ -3,9 +3,11 @@
 *(No image available for this data type.)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ST02X** data type is a structured data type designed to encapsulate two Boolean values. It serves as a simple data structure for organizing and transporting two individual bits, or Boolean states, in a single unit. The name "ST02X" suggests a "structure with 2 [Boolean values]".
+
 ## Interface Structure
 
 Because ST02X is a data type and not a function block, it does not have external event or data inputs/outputs in the usual sense of a function block. Its "structure" refers to the definition of its internal components, which represent the actual data.
@@ -68,7 +70,7 @@ Since ST02X itself has no active logic, it does not have a "state" in the sense 
 
 **ARRAY OF BOOL:** An array like `ARRAY[0..1] OF BOOL` could also hold two Boolean values. However, ST02X offers the advantage of named accesses (`.X_00`, `.X_01`), which can improve readability compared to indexed accesses (`[0]`, `[1]`).
 
-- * **Other Structured Types:** Depending on the application, more complex structured data types with more Boolean values (e.g., ST04X, ST08X) or mixed data types might be more suitable if more or different information needs to be grouped. ST02X is specifically optimized for the case of exactly two Boolean values.
+- - **Other Structured Types:** Depending on the application, more complex structured data types with more Boolean values (e.g., ST04X, ST08X) or mixed data types might be more suitable if more or different information needs to be grouped. ST02X is specifically optimized for the case of exactly two Boolean values.
 
 ## Conclusion
 

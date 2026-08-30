@@ -6,6 +6,7 @@
 
 The function block `XOR_6_BOOL` is a generic block for calculating the logical exclusive OR (XOR) operation for up to six Boolean input values. It complies with the IEC 61131-3 standard and is designed for use in control and automation applications. The block waits for a trigger event, calculates the result of the XOR operation across all active inputs, and outputs it along with an acknowledgment event.
 ![XOR_6_BOOL](XOR_6_BOOL.svg)
+
 ## Interface Structure
 
 The function block has an event-driven input/output mechanism with six Boolean data inputs and one Boolean data output.
@@ -45,6 +46,7 @@ When triggered by the `REQ` event, the function block calculates the logical XOR
 - **Fixed Number of Inputs:** Unlike blocks with a variable number of inputs, `XOR_6_BOOL` has exactly six fixed inputs. Unused inputs should be set to a defined logic level (e.g., `FALSE`).
 - **Package Assignment:** The block is assigned to the package `iec61131::bitwiseOperators`, which underlines its classification as a bitwise/logical operation.
 - **Fixed Number of Inputs:**
+
 ## State Overview
 
 The function block is stateless (combinatory). It has no internal memory. The output `OUT` is a pure function of the current input values at the time of the `REQ` event. There is no dependency on previous calculations or states.

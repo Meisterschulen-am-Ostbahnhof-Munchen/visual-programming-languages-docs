@@ -31,7 +31,7 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` dient der filternden Weitergabe
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AL` | Empfängt das Ereignis- und Datensignal von einem vorgeschalteten Baustein. |
 | `OUT` | Plug | `adapter::types::unidirectional::AL` | Sendet das gefilterte Signal und zugehöriges Ereignis an nachfolgende Bausteine. |
 | `VALID` | Plug | `adapter::types::unidirectional::AX` | Sendet den Gültigkeitsstatus als booleschen Wert und ein Bestätigungsereignis. |

@@ -6,6 +6,7 @@
 
 The function block `strip_set_pixel` is used to control an RGB LED strip. Its main function is to set the color of a single pixel (a single LED) on the strip or to turn off the entire strip. It is designed for use in control systems that require precise, pixel-by-pixel control of RGB LEDs.
 ![strip_set_pixel](strip_set_pixel.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,12 +61,14 @@ The `clear` event sets all pixels of the strip to black (off), which is equivale
 - **Status Indicators**: Individual LEDs can be used as status or warning lights (e.g., machine in operation, fault at position X).
 - **Simple Lighting Effects**: By sequentially setting individual pixels, chasing or flashing effects can be implemented.
 - **Visualization of Process Data**: The color or brightness of a pixel can represent a process value (e.g., temperature, fill level).
-*
+-
+
 ## ⚖️ Comparison with Similar Components
 
 Compared to components that transfer entire color patterns or images to an LED matrix (e.g., `strip_show` or `matrix_display`), `strip_set_pixel` operates at a very granular, pixel-by-pixel level. It offers maximum control over each individual LED but is less efficient for transferring complex images. Components like `strip_fill` typically set an entire area or all LEDs to a single color at once, while `strip_set_pixel` addresses each LED individually.
 
 Compared to components that transfer entire color patterns or images to an LED matrix (e.g., `strip_show` or `matrix_display`), `strip_set_pixel` operates at a very granular, pixel-by-pixel level. It offers maximum control over each individual LED but is less efficient for transferring complex images. Components like `strip_fill` typically set an entire area or all LEDs to a single color at once, while `strip_set_pixel` addresses LEDs individually.
+
 ## 🛠️ Related Exercises
 
 - [Exercise_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)

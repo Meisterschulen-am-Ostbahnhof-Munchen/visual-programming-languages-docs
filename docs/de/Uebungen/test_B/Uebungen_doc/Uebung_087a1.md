@@ -10,7 +10,7 @@ Diese Übung demonstriert die Verwendung des E_DEMUX_4-Bausteins in einem Steuer
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Hauptbausteine:
+### Hauptbausteine
 
 - **E_DEMUX_4**: Ereignis-Demultiplexer mit 4 Ausgängen
 - **ADD_3**: Addierer mit 3 Eingängen
@@ -19,7 +19,7 @@ Diese Übung demonstriert die Verwendung des E_DEMUX_4-Bausteins in einem Steuer
 - **logiBUS_IX**: Digitale Eingänge (4 Instanzen)
 - **logiBUS_QX**: Digitale Ausgänge (4 Instanzen)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 - **logiBUS_IX** (Digitale Eingänge)
   - **Typ**: Hardware-Eingangsbaustein
@@ -36,7 +36,7 @@ Diese Übung demonstriert die Verwendung des E_DEMUX_4-Bausteins in einem Steuer
 
 ## Programmablauf und Verbindungen
 
-### Signalfluss:
+### Signalfluss
 
 1. **Eingangsverarbeitung**: 
    - Drei digitale Eingänge (I2, I3, I4) werden über F_BOOL_TO_UINT in UINT-Werte konvertiert
@@ -56,12 +56,12 @@ Diese Übung demonstriert die Verwendung des E_DEMUX_4-Bausteins in einem Steuer
 4. **Ausgangssteuerung**:
    - Vier T-Flipflops (E_T_FF) schalten die entsprechenden Ausgänge (Q1-Q4) bei jedem Takt-Ereignis
 
-### Verbindungen:
+### Verbindungen
 
 - **Ereignisverbindungen**: Verknüpfen IND-Ereignisse der Eingänge mit REQ-Ereignissen der Konverter und weiter zum ADD_3 und E_DEMUX_4
 - **Datenverbindungen**: Übertragen die Eingangszustände durch die Konvertierung zur Addition und weiter zum Demultiplexer
 
-### Lernziele:
+### Lernziele
 
 - Verständnis des E_DEMUX_4-Bausteins
 - Kombination von Ereignis- und Datenverarbeitung

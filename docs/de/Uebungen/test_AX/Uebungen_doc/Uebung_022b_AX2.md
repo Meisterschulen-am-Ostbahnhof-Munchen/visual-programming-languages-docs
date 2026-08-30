@@ -90,7 +90,7 @@ Die Steuerung folgt einer festen Abfolge:
 Die Verbindungen im Detail:
 
 | Von | Nach | Typ |
-|-----|------|-----|
+| ----- | ------ | ----- |
 | `SoftKey_UP_F1.IND` | `AX_SR_Ausfahren_Cyl_1.S` | Ereignis |
 | `SoftKey_F2_DOWN.IND` | `AX_SR_Ausfahren_Cyl_1.R` | Ereignis |
 | `SoftKey_F2_DOWN.IND` | `AX_SR_Ausfahren_Cyl_2.S` | Ereignis |

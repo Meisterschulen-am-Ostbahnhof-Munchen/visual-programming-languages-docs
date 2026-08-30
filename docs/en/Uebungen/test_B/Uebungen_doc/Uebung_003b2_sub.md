@@ -1,8 +1,9 @@
 # Exercise_003b2_sub: IX to QX (generic)
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the sub-application type `Uebung_003b2_sub`. This component serves as a universal coupler between a wireless remote control and a CAN bus output module (DataPanel).
+This article describes the sub-application type `Uebung_003b2_sub`. This component serves as a universal coupler between a wireless remote control and a CAN bus output module (DataPanel)
 ----
+
 ## Purpose of the Exercise
 
 Abstraction of wireless signals. The component allows wireless buttons to be handled as easily as directly wired inputs and mapped to a decentralized output module.

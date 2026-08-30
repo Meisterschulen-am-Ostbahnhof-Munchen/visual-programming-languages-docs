@@ -6,6 +6,7 @@
 
 The function block `F_BYTE_TO_WORD` converts a `BYTE` data type to a `WORD` data type. This conversion is useful when data of different sizes needs to be processed or transferred.
 ![F_BYTE_TO_WORD](F_BYTE_TO_WORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

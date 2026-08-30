@@ -3,15 +3,17 @@
 ![AX_T_FF_SR_SYM_INIT](./AX_T_FF_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_T_FF_SR_SYM_INIT** implements an event-driven bistable flip-flop with **Set**, **Reset**, and **Toggle** functionality. It features **symmetrical start-up behavior**, where the output state after the INIT event can be defined via the parameter `Q_INIT`. The block is designed according to IEC 61499-1 Annex A and is suitable for applications requiring a resettable, set, or toggleable binary state with an initializable preset.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-|-------|---------|-----------------------------------------------|
+| ------- | --------- | ----------------------------------------------- |
 | INIT | EInit | Initialization Request |
 | S | Event | Set output Q (dependent on QI) |
 | R | Event | Reset output Q (dependent on QI) |
@@ -26,7 +28,7 @@ The function block **AX_T_FF_SR_SYM_INIT** implements an event-driven bistable f
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|-----------|--------|------------------------------------------------|
+| ----------- | -------- | ------------------------------------------------ |
 | QI | BOOL | Event Qualifier (Enable Actions) |
 | Q_INIT | BOOL | Value of Q on the INIT event |
 
@@ -70,7 +72,7 @@ The output `QO` is set to the current value of `QI` with each executed algorithm
 ## State Overview
 
 | State | Action | Output/Event | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **START** | – | – | Waits for first INIT event. |
 | **Init** | `initialize` | INITO | Sets `QO := QI`; Then switch to SET or RESET depending on `Q_INIT`. |
 | **DeInit** | `deInitialize` | INITO | Sets `QO := FALSE`; then returns to START. |
@@ -100,7 +102,7 @@ The output `QO` is set to the current value of `QI` with each executed algorithm
 ## Comparison with Similar Function Blocks
 
 | Function Block | Special Feature |
-|---|---|
+| --- | --- |
 | `E_SR` (Standard IEC 61499) | Pure set/reset flip-flop without toggle and without INIT symmetry. |
 | `E_RS` | Like E_SR, but Reset takes precedence. |
 | `E_Toggle` | Toggle function only, no Set/Reset, no Initialization. |

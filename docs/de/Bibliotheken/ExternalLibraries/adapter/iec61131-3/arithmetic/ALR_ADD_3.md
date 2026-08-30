@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_ADD_3` ist ein generischer Arithmetik-Baustein für die 4diac-IDE, der zur Addition von drei Eingangswerten dient. Er entspricht den Standard-Arithmetikfunktionen nach IEC 61131-3, nutzt jedoch ein adapterbasiertes Schnittstellendesign. Anstatt mit einzelnen Daten- und Ereignispins arbeitet dieser Baustein mit unidirektionalen Adaptern, um eine saubere Kapselung und eine übersichtlichere Verdrahtung innerhalb der Anwendung zu ermöglichen.

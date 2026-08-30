@@ -1,8 +1,9 @@
 # Exercise_010a3_AX: Button_L1 (Latching) on DigitalOutput_Q1
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_010a3_AX`.
+This article describes the logiBUS® exercise `Uebung_010a3_AX`
 ----
+
 ## Objective of the Exercise
 
 Working with latching buttons.

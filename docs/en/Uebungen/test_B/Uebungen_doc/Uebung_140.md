@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_140`. It demonstrates how to record system runtime.
+
 ## 🎧 Podcast
 
 ![Uebung_140_network](./Uebung_140_network.svg)
@@ -22,7 +23,7 @@ Using the function block `SYS_ONTIME`. The goal is to record the cumulative time
 
 ### Function Blocks (FBs)
 
-- **`SYS_ONTIME`**: Type `logiBUS::signalprocessing::measurement::SYS_ONTIME`. [cite_start]This block measures the time since the last system start or the cumulative total time (depending on the implementation)[cite: 1].
+- **`SYS_ONTIME`**: Type `logiBUS::signalprocessing::measurement::SYS_ONTIME`. [cite_start]This block measures the time since the last system start or the cumulative total time [depending on the implementation](cite: 1).
 
 ----
 

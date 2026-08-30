@@ -1,6 +1,7 @@
 # I_MSS
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_MSS** (Machine Selected Speed) is a standards-compliant function block for controlling and monitoring the machine-selected speed, developed under the EPL-2.0 license.
@@ -34,7 +35,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## Speed parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-|-----------|------|--------------|-----|------------|------------|
+| ----------- | ------ | -------------- | ----- | ------------ | ------------ |
 | `SELECTEDMACHINESPEED` | UINT | Machine speed | 4305 | 16 | 0.001 m/s/bit (LSB), 0.256 m/s/bit (MSB) |
 | `SELECTEDMACHINEDISTANCE` | UDINT | Distance Traveled | 4306 | 32 | 0.001 m/bit |
 | `SELECTEDMACHINELIMITSTATUS` | BYTE | Speed Limit Status | 4307 | 3 | 8 states/3 bits |
@@ -45,7 +46,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## Direction of Travel States
 
 | Value | State | Description |
-|------|---------|--------------|
+| ------ | --------- | -------------- |
 | 0 | Stationary | No movement detected |
 | 1 | Forward | Moving forward |
 | 2 | Reverse | Moving backward |
@@ -54,12 +55,15 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with `QI`=TRUE starts system initialization
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-2. **Data Provision**:
+1. **Data Provision**:
+
 - `IND` provides all speed parameters with timestamps
 - Automatic updates upon state changes
-3. **Error Handling**:
+1. **Error Handling**:
+
 - `TIMEOUT` in case of communication problems
 - Detailed error codes in `SELECTEDMACHINE_EXIT_REASON_CODE`
 
@@ -81,7 +85,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## Speed Sources
 
 | Code | Source | Typical Application |
-|------|--------|---------------------|
+| ------ | -------- | --------------------- |
 | 0 | Undefined | System startup |
 | 1 | Wheel sensor | Standard operation |
 | 2 | Soil sensor | Precision agriculture |
@@ -91,7 +95,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise spe
 ## ⚖️ Comparison with similar systems
 
 | Feature | I_MSS | Standard | GPS-based |
----------|-------|----------|------------|
+--------- | ------- | ---------- | ------------ |
 | Accuracy | ±0.2% | ±1-2% | ±5-10% |
 | Response Time | <100ms | 200ms | 1-2s |
 | Source Flexibility | 8 | 1-2 | 1 |

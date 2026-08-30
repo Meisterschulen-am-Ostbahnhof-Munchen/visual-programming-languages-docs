@@ -3,6 +3,7 @@
 ![logiBUS_IDA](./logiBUS_IDA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **logiBUS_IDA** ist ein Composite-Funktionsblock (CFB) zur digitalen Doppelwort-Eingangsverarbeitung. Er kapselt einen internen **logiBUS_ID**-Baustein und stellt eine einheitliche Schnittstelle zur Initialisierung, Parametrierung und ereignisgesteuerten Datenabfrage bereit. Der Block ist für den Einsatz in logiBUS-basierten Automatisierungssystemen vorgesehen und unterstützt die Auswahl eines Eingangskanals sowie die Konfiguration des Wiederholereignisses.

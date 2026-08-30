@@ -3,6 +3,7 @@
 ![ATimeOut](https://user-images.githubusercontent.com/116869307/214142228-09857ba5-6164-4597-bb66-8a99e74f4d14.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ATimeOut** adapter is a standardized interface (AdapterType) according to IEC 61499 for implementing timeout services. It defines the communication between a service user (PLUG) and a time service provider (SOCKET). Unlike `ARTimeOut`, this adapter is designed for simple, non-retriggerable timeouts.
@@ -29,9 +30,11 @@ The interface is defined from the perspective of the **plug**:
 The adapter supports two basic processes:
 
 1. **Timeout Expiration**:
+
 - The plug sends `START` with a value for `DT`.
 - The socket processes the time and sends back `TimeOut` after the time expires.
-2. **Premature Termination**:
+1. **Premature Termination**:
+
 - The plug sends `START`.
 - Before the time expires, the plug sends `STOP`. The socket terminates the timer; no `TimeOut` event occurs.
 
@@ -48,7 +51,7 @@ The adapter supports two basic processes:
 ## ⚖️ Comparison with ARTimeOut
 
 | Feature | ATimeOut (this) | ARTimeOut |
-|----------------|-------------------|-----------|
+| ---------------- | ------------------- | ----------- |
 | Type | Adapter | Adapter |
 | Retriggerable | No | Yes |
 | Event START | Start Timer | Start/Reset Timer |

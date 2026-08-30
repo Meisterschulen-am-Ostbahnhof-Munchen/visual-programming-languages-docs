@@ -3,9 +3,11 @@
 ![NOOP](./NOOP.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The NOOP function block ("No Operation") serves as a simple pass-through block. It copies the BOOL value present at data input `IN` to data output `OUT` as soon as an event occurs at input `REQ`. The output `CNF` is then triggered. The function block does not perform any logical or arithmetic operation; it simply passes the signal on unchanged.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,6 +53,7 @@ Thus, the behavior corresponds exactly to a passthrough: `OUT := IN`.
 - The data paths are explicitly designed for `BOOL`. Extending it to other data types would be possible by modifying the `F_MOVE` attribute, but this is not included in the current design.
 - No side effects such as delays or state changes beyond pure signal transmission are implemented.
 ...
+
 ## State Overview
 
 Since the function block does not have its own state machine, the process can be viewed as a simple two-step operation:

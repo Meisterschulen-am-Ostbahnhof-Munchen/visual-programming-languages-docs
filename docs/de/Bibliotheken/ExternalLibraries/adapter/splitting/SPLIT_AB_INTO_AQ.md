@@ -3,6 +3,7 @@
 ![SPLIT_AB_INTO_AQ](./SPLIT_AB_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_AB_INTO_AQ` dient dazu, ein über einen `AB`‑Adapter (Byte) eingehendes Datenbyte in vier einzelne 2‑Bit‑Quartette aufzuteilen und diese jeweils über `AQ`‑Adapter (Quarter) auszugeben. Er kapselt die Zerlegung eines Bytes in handhabbare Teilwerte und stellt sie über standardisierte unidirektionale Adapter‑Schnittstellen für die weitere Verarbeitung zur Verfügung.
@@ -31,13 +32,13 @@ Keine direkten Datenausgänge; die Quartette werden über die Daten‑Schnittste
 
 ### **Adapter**
 
-| Name               | Typ | Richtung | Beschreibung |
-|--------------------|-----|----------|--------------|
-| `IN`               | `adapter::types::unidirectional::AB` | Socket (Eingang) | Empfängt das zu zerlegende Byte inkl. Ereignis. |
-| `QUARTER_BYTE_00`  | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 0 (niederwertigste 2 Bits) aus. |
-| `QUARTER_BYTE_01`  | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 1 aus. |
-| `QUARTER_BYTE_02`  | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 2 aus. |
-| `QUARTER_BYTE_03`  | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 3 (höchstwertigste 2 Bits) aus. |
+| Name | Typ | Richtung | Beschreibung |
+| -------------------- | ----- | ---------- | -------------- |
+| `IN` | `adapter::types::unidirectional::AB` | Socket (Eingang) | Empfängt das zu zerlegende Byte inkl. Ereignis. |
+| `QUARTER_BYTE_00` | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 0 (niederwertigste 2 Bits) aus. |
+| `QUARTER_BYTE_01` | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 1 aus. |
+| `QUARTER_BYTE_02` | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 2 aus. |
+| `QUARTER_BYTE_03` | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | Gibt das Quartett 3 (höchstwertigste 2 Bits) aus. |
 
 ## Funktionsweise
 

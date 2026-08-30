@@ -1,9 +1,11 @@
 # RT_Bridge_11
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_11 function block serves as a decoupling bridge for 11 data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

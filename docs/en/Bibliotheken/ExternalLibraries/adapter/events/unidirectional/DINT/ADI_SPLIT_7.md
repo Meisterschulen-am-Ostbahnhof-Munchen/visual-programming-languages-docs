@@ -28,7 +28,7 @@ None – the data is not output via separate data outputs, but rather via the ad
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | IN | Socket | adi (unidirectional) | Input adapter that receives the data to be distributed. |
 | OUT1 | Plug | adi (unidirectional) | First output adapter (identical to IN). |
 | OUT2 | Plug | adi (unidirectional) | Second output adapter (identical to IN). |
@@ -53,7 +53,7 @@ The module has **no state machine** (ECC). It is stateless, meaning it does not 
 - **Test and Simulation Environments** – an incoming signal is split for different test instances.
 
 | Function Block | Number of Outputs | Properties |
-|----------|-----------------|---------------|
+| ---------- | ----------------- | --------------- |
 | ADI_SPLIT_2 | 2 | Distributes 1 ADI to 2 outputs |
 | ADI_SPLIT_4 | 4 | Distributes 1 ADI to 4 outputs |
 | ADI_SPLIT_7 | 7 | Distributes 1 ADI to 7 outputs |

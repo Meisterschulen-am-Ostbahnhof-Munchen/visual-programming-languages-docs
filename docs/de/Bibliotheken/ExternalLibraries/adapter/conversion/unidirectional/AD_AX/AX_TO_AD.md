@@ -3,6 +3,7 @@
 ![AX_TO_AD](./AX_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite FB `AX_TO_AD` dient der Konvertierung eines Bool-Adapters (AX) in einen DWORD-Adapter (AD). Er leitet Ereignis- und Datensignale vom Eingangsadapter direkt an den Ausgangsadapter weiter und wandelt implizit den Datentyp von BOOL nach DWORD um.

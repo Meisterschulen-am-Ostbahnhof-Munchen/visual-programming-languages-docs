@@ -36,7 +36,7 @@ Output data (LWORD) is provided via the plug adapter **AL_OUT** (data point D1).
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **ALI_IN** | Socket | `adapter::types::unidirectional::ALI` | Receives a LINT value and an event. |
 | **AL_OUT** | Plug | `adapter::types::unidirectional::AL` | Sends an LWORD value and an event. |
 

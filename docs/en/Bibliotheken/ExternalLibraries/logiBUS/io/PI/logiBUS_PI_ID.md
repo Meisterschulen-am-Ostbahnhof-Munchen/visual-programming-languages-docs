@@ -6,6 +6,7 @@
 
 The function block `logiBUS_PI_ID` is an input service interface module for 32-bit DWORD input data. It serves as an interface to a physical input module (presumably part of the logiBUS system) and enables the initialization, cyclic polling, and event-driven (interrupt) output of digital input values. The module can be configured to report status changes either after a specific number of pulses or after a defined time interval.
 ![logiBUS_PI_ID](logiBUS_PI_ID.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -24,7 +25,7 @@ The function block `logiBUS_PI_ID` is an input service interface module for 32-b
 - **`PARAMS` (STRING)**: Contains service-specific parameters for initialization (e.g., hardware address, channel configuration).
 - **`Input` (logiBUS_PI_S)**: Identifies the specific physical input (e.g., I1..I8). The initial value is `logiBUS_PI::Invalid`.
 - **`ImpulseDelta` (DWORD)**: Defines after how many consecutive state changes (pulses) a `IND` event should be generated.
-- * **`TimeDelta` (DWORD)**: Defines the time interval in milliseconds after which a `IND` event should be generated if the value has changed.
+- - **`TimeDelta` (DWORD)**: Defines the time interval in milliseconds after which a `IND` event should be generated if the value has changed.
 
 ### **Data Outputs**
 
@@ -64,12 +65,13 @@ Initialization (`INIT`) is a prerequisite for both operating modes. During initi
 - **Reading Counter Signals**: Acquiring pulses from a rotary encoder or rotary switch, using `ImpulseDelta` for preprocessing (e.g., reporting every 10th revolution).
 - **Monitoring Status Groups**: Reading a 32-bit status word from a connected device, where changes only need to be reported at specific intervals (`TimeDelta`) to reduce CPU load.
 - **Cyclic Polling of Switch Banks**: Polling multiple digital inputs grouped into a DWORD via regular `REQ` events.
-*
+-
+
 ## ⚖️ Comparison with similar function blocks
 
 - **Compared to `E_DEMUX` or `E_SELECT`**: These function blocks forward events or select data. `logiBUS_PI_ID` is specific to hardware communication and includes driver logic and initialization.
 - **Compared to generic I/O function blocks (e.g., `WAGO_750_5xx_DI`)**: Similar function, but manufacturer-specific (here, logiBUS). Configuration is done via the structured parameters `Input` and `PARAMS` instead of fixed channel numbers.
-- * **Compared to simpler input blocks**: Offers advanced features such as filtering event generation (`IND`) via `ImpulseDelta`/`TimeDelta`, which are typically not available in simple "Read" blocks.
+- - **Compared to simpler input blocks**: Offers advanced features such as filtering event generation (`IND`) via `ImpulseDelta`/`TimeDelta`, which are typically not available in simple "Read" blocks.
 
 ## 🛠️ Related exercises
 

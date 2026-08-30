@@ -4,6 +4,7 @@
 ![ALR_AX_SEL_ALR](./ALR_AX_SEL_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_AX_SEL_ALR` dient zur binären Auswahl (Selektion) zwischen zwei analogen Eingangssignalen, die über Adapter des Typs `ALR` bereitgestellt werden. Gesteuert wird diese Auswahl durch einen Selektor-Adapter des Typs `AX`. Das ausgewählte Signal wird an einen Ausgangs-Adapter des Typs `ALR` weitergegeben.

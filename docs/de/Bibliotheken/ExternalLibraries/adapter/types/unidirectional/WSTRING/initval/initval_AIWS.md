@@ -3,6 +3,7 @@
 ![initval_AIWS](initval_AIWS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AIWS` ist der konfigurierbare Initialisierungsbaustein für den [AIWS](../AIWS.md)-Adapter (Datentyp `WSTRING`, Wide-Zeichenkette (Unicode)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AIWS`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

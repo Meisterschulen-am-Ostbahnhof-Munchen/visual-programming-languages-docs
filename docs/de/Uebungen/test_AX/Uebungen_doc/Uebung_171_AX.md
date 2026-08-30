@@ -12,7 +12,7 @@ Diese Übung behandelt die Verwendung von Adaptern im Kontext von Set/Reset-Logi
 
 In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-Konvertierung und Ausgabesteuerung verwendet.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 ### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 

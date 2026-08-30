@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 The function block `SPLIT_WORD_INTO_BOOLS` is used to decompose a 16-bit word into its individual bits. Each bit of the input word is mapped to a separate BOOL output. This is particularly useful when individual bits of a word need to be further processed or monitored.
+
 - `REQ` (Normal Execution Request): Starts the decomposition of the input word. It is linked to the data input `IN`.
 - `CNF` (Execution Confirmation): Confirms successful word decomposition. Linked to all 16 BOOL outputs.
 - `IN` (WORD): The 16-bit word to be decomposed into individual bits.

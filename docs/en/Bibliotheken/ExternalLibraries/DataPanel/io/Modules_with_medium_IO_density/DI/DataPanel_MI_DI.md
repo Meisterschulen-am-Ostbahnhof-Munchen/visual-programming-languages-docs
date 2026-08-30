@@ -3,9 +3,11 @@
 ![DataPanel_MI_DI](./DataPanel_MI_DI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 DataPanel_MI_DI is a global constant definition for medium I/O density DataPanel modules for digital inputs (DI). This constant defines the pin assignments for various digital input channels of a DataPanel system.
+
 ## Interface Structure
 
 ### **Event Inputs**

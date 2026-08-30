@@ -3,9 +3,11 @@
 ![WORDS_TO_ARR08B](./WORDS_TO_ARR08B.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **WORDS_TO_ARR08B** is used to concatenate four 16-bit words (type `WORD`) into a byte array of length 8 (type `ARRAY[0..7] OF BYTE`). It uses the little-endian format (Intel standard), which stores the least significant bytes first. The block is controlled via an event input and is particularly suitable for PC-based controllers (e.g., Beckhoff, Wago, B&R, Raspberry Pi).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **WORDS_TO_ARR08B** is used to concatenate four 16-bit words 
 ### **Data Inputs**
 
 | Name | Type | Description |
-|--------|------|----------------------------------|
+| -------- | ------ | ---------------------------------- |
 | `IN_00` | WORD | First Word (Bytes 0 and 1) |
 | `IN_01` | WORD | Second Word (Bytes 2 and 3) |
 | `IN_02` | WORD | Third Word (Bytes 4 and 5) |
@@ -44,14 +46,14 @@ No adapters defined.
 When a rising edge is detected at the event input `REQ`, the function block performs the following mapping (described in the Structured Text Implementation):
 
 | Index `OUT` | Source | Meaning |
-|-------------|-----------------|-------------------------------------|
+| ------------- | ----------------- | ------------------------------------- |
 | `OUT[0]` | `IN_00.%B0` | Low-order byte of word 0 |
 | `OUT[1]` | `IN_00.%B1` | High-order byte of word 0 |
 | `OUT[2]` | `IN_01.%B0` | Low-order byte of word 1 |
 | `OUT[3]` | `IN_01.%B1` | Higher-order byte of word 1 |
 | `OUT[4]` | `IN_02.%B0` | Low-order byte of word 2 |
 | `OUT[5]` | `IN_02.%B1` | Higher-order byte of word 2 |
-| `OUT[6]    | `IN_03.%B0` | Low-order byte of word 3 |
+| `OUT[6] | `IN_03.%B0` | Low-order byte of word 3 |
 | `OUT[7]` | `IN_03.%B1` | Higher-order byte of word 3 |
 
 After the assignments are complete, the output pulse `CNF` is generated.

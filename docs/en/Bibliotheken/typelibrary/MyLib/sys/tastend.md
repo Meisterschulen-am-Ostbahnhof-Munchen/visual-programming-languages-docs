@@ -5,6 +5,7 @@
 ## Introduction
 
 This exercise deals with creating and using a sub-application type in the 4diac IDE. The "touch-sensitive" function block serves as a sub-application and implements a unidirectional adapter connection between input and output adapters.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-block: touch-sensitive

@@ -3,6 +3,7 @@
 ![AL_D_FF_TMIN](./AL_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AL_D_FF_TMIN implementiert ein flankengesteuertes D‑Flip‑Flop (Data Latch) mit einer einstellbaren minimalen Verweilzeit zwischen den Ausgangsereignissen (Minimum inter‑disposal time). Er übernimmt einen Datenwert bei einem eingehenden Ereignis, speichert diesen und gibt ihn – zusammen mit einem eigenen Ereignis – erst nach Ablauf der vorgegebenen Mindestzeit wieder aus. So wird eine Begrenzung der Ausgabeereignisrate erreicht.

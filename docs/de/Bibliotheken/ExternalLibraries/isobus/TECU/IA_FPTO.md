@@ -40,7 +40,7 @@ Der Funktionsblock **IA_FPTO** dient als ISOBUS-Adapter für die Frontzapfwelle 
 ### **Adapter**
 
 | Adapter | Typ | Beschreibung |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | SPEED | adapter::types::unidirectional::AUI | Ausgangsdrehzahl der Frontzapfwellenwelle (Istwert) |
 | SPEED_SET | adapter::types::unidirectional::AUI | Sollwert der Frontzapfwellendrehzahl |
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout-Status der Kommunikation |

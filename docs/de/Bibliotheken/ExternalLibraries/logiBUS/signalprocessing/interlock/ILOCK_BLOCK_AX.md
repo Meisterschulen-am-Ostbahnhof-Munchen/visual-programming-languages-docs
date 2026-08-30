@@ -3,6 +3,7 @@
 ![ILOCK_BLOCK_AX](./ILOCK_BLOCK_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ILOCK_BLOCK_AX** realisiert eine Verriegelung (Interlock) für zwei gegenläufige Richtungen (aufwärts/abwärts oder vorwärts/rückwärts). Er priorisiert den ersten aktiven Eingang und stellt sicher, dass nur eine Richtung gleichzeitig aktiv sein kann. Der Block ist als Basis-Baustein (Basic FB) gemäß IEC 61499-2 implementiert.
@@ -64,7 +65,7 @@ Die Algorithmen setzen die Ausgangssignale:
 ## Zustandsübersicht
 
 | Zustand | Beschreibung | Ausgangssignale |
-|---------|--------------|-----------------|
+| --------- | -------------- | ----------------- |
 | **STOP** | Ruhezustand, keine Richtung aktiv | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
 | **UP** | Aufwärts-Richtung aktiv | `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE` |
 | **DOWN** | Abwärts-Richtung aktiv | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = TRUE` |

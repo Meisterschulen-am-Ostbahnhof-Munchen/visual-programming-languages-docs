@@ -3,9 +3,11 @@
 ![AULI_TO_AUDI](./AULI_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_TO_AUDI** is a composite block that converts an AULI adapter (ULINT data) to an AUDI adapter (UDINT data). It serves as a unidirectional bridge between two different adapter types and enables the seamless integration of components based on different integer widths.
+
 ## Interface Structure
 
 ### **Event Inputs**

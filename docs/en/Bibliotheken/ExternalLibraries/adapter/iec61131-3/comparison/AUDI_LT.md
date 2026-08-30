@@ -3,9 +3,11 @@
 ![AUDI_LT](./AUDI_LT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_LT` performs a "less than" comparison between two input values. It is frequently used in automation technology to monitor thresholds or make logical decisions. The block is classified as a "standard comparison function" according to IEC 61131-3 and uses adapters for flexible connection of different data types.
+
 ## Interface Structure
 
 ### **Event Inputs**

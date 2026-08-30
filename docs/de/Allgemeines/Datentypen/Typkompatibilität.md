@@ -6,7 +6,7 @@ Die Regeln für erlaubte Datenverbindungen basieren auf dem Prinzip
 ## Zentrale Dateien in der Codebasis
 
 | Datei | Zweck |
-|-------|-------|
+| ------- | ------- |
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/data/impl/DataTypeAnnotations.java` | Definiert `isAssignableFrom(DataType other)` für jeden IEC 61131-3 Typ |
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/validation/LinkConstraints.java:200` | Prüft Verbindungen mit `targetType.isAssignableFrom(sourceType)` |
 | `tests/.../datatype/helper/ElementaryDataTypeCompatibilityTest.java` | Vollständige Test-Matrix aller impliziten Zuweisungen |
@@ -26,7 +26,7 @@ Das bedeutet: der Target-Typ muss gleich oder *größer/allgemeiner* sein als de
 ### Signed
 
 | Source → | SINT | INT | DINT | LINT |
-|----------|:----:|:---:|:----:|:----:|
+| ---------- | :----: | :---: | :----: | :----: |
 | **SINT** | ✓ | ✓ | ✓ | ✓ |
 | **INT** | ✗ | ✓ | ✓ | ✓ |
 | **DINT** | ✗ | ✗ | ✓ | ✓ |
@@ -35,7 +35,7 @@ Das bedeutet: der Target-Typ muss gleich oder *größer/allgemeiner* sein als de
 ### Unsigned
 
 | Source → | USINT | UINT | UDINT | ULINT |
-|----------|:-----:|:----:|:-----:|:-----:|
+| ---------- | :-----: | :----: | :-----: | :-----: |
 | **USINT** | ✓ | ✓ | ✓ | ✓ |
 | **UINT** | ✗ | ✓ | ✓ | ✓ |
 | **UDINT** | ✗ | ✗ | ✓ | ✓ |
@@ -59,12 +59,12 @@ REAL und LREAL akzeptieren außerdem bestimmte Ganzzahl-Typen:
 ## Bit-Typen
 
 | Source → | BOOL | BYTE | WORD | DWORD | LWORD |
-|----------|:----:|:----:|:----:|:-----:|:-----:|
+| ---------- | :----: | :----: | :----: | :-----: | :-----: |
 | **BOOL** | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **BYTE** | ✗ | ✓ | ✓ | ✓ | ✓ |
 | **WORD** | ✗ | ✗ | ✓ | ✓ | ✓ |
-| **DWORD**| ✗ | ✗ | ✗ | ✓ | ✓ |
-| **LWORD**| ✗ | ✗ | ✗ | ✗ | ✓ |
+| **DWORD** | ✗ | ✗ | ✗ | ✓ | ✓ |
+| **LWORD** | ✗ | ✗ | ✗ | ✗ | ✓ |
 
 ## Zeichen und Strings
 
@@ -104,6 +104,7 @@ Für das Kopieren bzw. Weiterleiten von Werten desselben Typs muss stattdessen d
 Da `F_MOVE` generisch ist, muss er in XML-Netzwerkdateien über das Attribut `DataType` auf den gewünschten Zieldatentyp konfiguriert werden.
 
 **Beispiel-Konfiguration in der XML:**
+
 ```xml
 <FB Name="MeinFMove" Type="iec61131::selection::F_MOVE">
     <Attribute Name="DataType" Value="BOOL"/> <!-- Hier Datentyp konfigurieren -->
@@ -133,6 +134,7 @@ Wenn in einem `DWORD` ein numerischer Ganzzahlwert (z. B. 123) abgelegt ist und 
   - *Erklärung:* Dies kopiert die Bits von 123 direkt in das Float-Bitmuster. Nach IEEE-754 wird dies als eine extrem kleine, fast unendlich nahe Null interpretiert, was mathematisch falsch ist.
 - **Richtig (doppelte Konvertierung):**
   - *In ST:*
+
     ```pascal
     real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
     ```
@@ -163,7 +165,7 @@ In IEC 61131-3 / IEC 61499 sind folgende direkten Konvertierungen **nicht defini
 Stattdessen müssen Sie über den passenden vorzeichenlosen Integer-Typen konvertieren:
 
 | Quelle | Ziel | Korrekte Umwandlung |
-|--------|------|---------------------|
+| -------- | ------ | --------------------- |
 | BYTE | REAL | `BYTE` → `USINT` → `REAL` |
 | WORD | REAL | `WORD` → `UINT` → `REAL` |
 | DWORD | REAL | `DWORD` → `UDINT` → `REAL` |

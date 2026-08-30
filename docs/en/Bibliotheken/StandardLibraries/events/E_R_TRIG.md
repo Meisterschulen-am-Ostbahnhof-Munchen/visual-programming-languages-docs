@@ -3,6 +3,7 @@
 ![E_R_TRIG Funktionsbaustein](https://user-images.githubusercontent.com/113907528/204903134-9fbf33a3-4041-428e-9a9a-10a573c0b6f2.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **E_R_TRIG** (Rising Edge Trigger) is a fundamental function block according to IEC 61499 for detecting rising edges in digital signals. Based on the XML specification, it implements reliable edge detection for industrial control systems.
@@ -34,10 +35,12 @@ According to the XML specification, the block consists of:
 ## Functionality
 
 1. **Edge Detection**:
+
 - With each `EI` event, the current `QI` value is compared with the stored state from the previous cycle.
 - A rising edge occurs when `QI` transitions from `FALSE` to `TRUE`.
 - Upon detection of such an edge, the `EO` event should be triggered.
-2. **Internal Structure and Faulty Behavior**:
+1. **Internal Structure and Faulty Behavior**:
+
 - The function block is internally composed of a `E_D_FF` and a `E_SWITCH`.
 - **Caution: Faulty Implementation!** The internal logic of the function block (as of `events-3.0.0`) is faulty and actually implements a **falling edge detector (`E_F_TRIG`)** instead of a rising one.
 - The `EO` event is triggered when `QI` transitions from `TRUE` to `FALSE`.
@@ -59,7 +62,7 @@ According to the XML specification, the block consists of:
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_R_TRIG (this one) | E_F_TRIG | E_D_FF |
-|---------------|----------|----------|---------|
+| --------------- | ---------- | ---------- | --------- |
 | Detected Edge | Rising (named), Falling (implemented) | Falling (named), Rising (implemented) | Clock Edge |
 | Event Output | Yes | Yes | Yes |
 | Memory Behavior | Yes | Yes | Yes |

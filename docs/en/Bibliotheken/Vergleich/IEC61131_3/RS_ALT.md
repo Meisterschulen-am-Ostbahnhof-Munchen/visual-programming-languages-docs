@@ -1,6 +1,7 @@
 # RS (Bistable, Priority Reset) - IEC 61131-3
 
 The function block **RS** is a bistable element (flip-flop) where resetting takes precedence over setting.
+
 ## Interface
 
 | Type | Name | Data Type | Description |

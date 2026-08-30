@@ -3,6 +3,7 @@
 ![AUS_TO_AX](./AUS_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AUS_TO_AX** ist ein Composite-FB zur Konvertierung eines **AUS**-Adapters (Daten vom Typ USINT) in einen **AX**-Adapter (Daten vom Typ BOOL).

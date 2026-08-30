@@ -6,6 +6,7 @@
 
 The function block `OR_9_BOOL` is a standardized building block according to IEC 61131-3 for calculating the logical OR operation. It performs the OR operation via nine separate Boolean inputs. The block follows the event-driven execution model of the 4diac IDE: The calculation is triggered by an incoming event, and the result is output along with an acknowledgment event.
 ![OR_9_BOOL](OR_9_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -61,7 +62,8 @@ The block has no internal state or memory. Its behavior is purely combinatorial 
 - **Monitoring Logic**: Combination of multiple error or status messages (e.g., from nine sensors), where even a single message (`TRUE`) triggers a collective alarm message (`OUT = TRUE`).
 - **Enable Logic**: In safety circuits, where one of several possible enable conditions is sufficient to start a process step.
 - **Simplification of Logic Networks**: Replaces multiple cascaded two-input OR gates, improving clarity in a function block diagram (FBD).
-*
+-
+
 ## ⚖️ Comparison with similar building blocks
 
 - **`OR_2_BOOL`, `OR_4_BOOL` etc.**: These blocks offer the same OR functionality, but for a smaller number of inputs (2, 4, ...). `OR_9_BOOL` is optimized for applications with nine signals to be combined. See: [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)

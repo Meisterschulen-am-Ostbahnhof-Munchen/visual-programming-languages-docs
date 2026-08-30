@@ -4,9 +4,11 @@
 ![BYTES_TO_ARR08B](./BYTES_TO_ARR08B.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `BYTES_TO_ARR08B` converts eight individual `BYTE` values into an array of type `BYTE` with eight elements. It is part of a collection of helper functions for data conversion and array operations.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,6 +19,7 @@ The function block `BYTES_TO_ARR08B` converts eight individual `BYTE` values int
 
 - **CNF**: This event is generated after successful processing and assignment of the values to the output array. It indicates the availability of the result.
 ...
+
 ### **Data Inputs**
 
 - **IN_00** (`BYTE`): Value for the array element at index 0.
@@ -63,7 +66,8 @@ The function block is stateless. Each `REQ` call is independent of previous call
 - **`CONCAT` Blocks:** General-purpose blocks for concatenating strings are not directly comparable, as they are designed for the `STRING` data type.
 - **Manual Assignment in ST:** The functionality could be implemented directly in an ST program using assignments. However, the function block encapsulates this logic for improved reusability, readability, and maintainability within FBD/LD diagrams.
 - **Custom Array Blocks:** Unlike general-purpose array blocks that have index inputs, `BYTES_TO_ARR08B` is optimized for a specific, fixed task and is therefore easier and faster to use.
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_126b_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)

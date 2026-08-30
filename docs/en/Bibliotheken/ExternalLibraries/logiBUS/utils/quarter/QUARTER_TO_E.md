@@ -5,10 +5,12 @@
 ![QUARTER_TO_E_ecc](./QUARTER_TO_E_ecc.svg)
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 <img width="1487" height="288" alt="image" src="https://github.com/user-attachments/assets/b4e62664-7544-420c-a039-36905d34d735" />
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `QUARTER_TO_E` is used to translate a 2-bit state value (a so-called "quarter byte") into four different, unique events. It is an auxiliary block frequently used in conjunction with blocks that report more than the usual two states (ON/OFF), such as status messages from devices that can also indicate error or unavailability states.

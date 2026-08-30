@@ -5,6 +5,7 @@
 ![sequence_T_08_ecc](./sequence_T_08_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_T_08` ist ein zeitgesteuerter Sequenzer mit acht Ausgängen. Er realisiert eine feste Abfolge von Zuständen, wobei der Übergang zwischen den einzelnen Zuständen durch einstellbare Zeitverzögerungen gesteuert wird. Der Baustein ist für Anwendungen konzipiert, in denen Prozessschritte oder Maschinenzustände nacheinander für eine definierte Dauer aktiviert werden müssen, wie z.B. in Verpackungsmaschinen, Förderstrecken oder Waschanlagen.

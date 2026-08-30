@@ -1,8 +1,9 @@
 # Exercise_009: Ticker
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_009`. Here, we connect the time base with a counter function and a numeric display.
+This article describes the logiBUS® exercise `Uebung_009`. Here, we connect the time base with a counter function and a numeric display
 ----
+
 ## Objective of the Exercise
 
 To learn event-based counting (`E_CTUD`) and how to display values on a terminal.

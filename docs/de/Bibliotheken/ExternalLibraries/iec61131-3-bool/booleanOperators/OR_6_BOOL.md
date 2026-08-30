@@ -3,6 +3,7 @@
 <img width="1370" height="361" alt="image" src="https://github.com/user-attachments/assets/2144a80e-12ae-4dc2-8412-36059eace342" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_6_BOOL` ist ein generischer Baustein zur Berechnung der logischen ODER-Verknüpfung. Er führt eine ODER-Operation über sechs separate BOOL-Eingänge durch und gibt das Ergebnis auf einem einzigen Ausgang aus. Der Baustein folgt dem IEC 61131-3 Standard und ist für den Einsatz in Steuerungsanwendungen konzipiert, in denen mehrere Bedingungen kombiniert werden müssen, um eine Aktion auszulösen.

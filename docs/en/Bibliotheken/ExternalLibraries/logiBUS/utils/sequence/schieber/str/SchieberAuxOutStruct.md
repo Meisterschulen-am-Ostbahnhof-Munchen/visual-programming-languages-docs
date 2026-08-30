@@ -1,12 +1,15 @@
 # SliderAuxOutStruct
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data block `SchieberAuxOutStruct` defines a structure for configuring the visual representation of an AUX output element. It is used to specify both the image to be displayed and its background color. This block is part of a functionality for controlling screen displays, typically in agricultural or mobile machinery.
+
 ## Interface Structure
 
 The block is a structured data type (STRUCT) and has no event or adapter interfaces. It consists exclusively of data elements.
+
 ### **Data Inputs**
 
 The structure itself has no inputs in the conventional sense, as it is a data type. Its elements are populated with values when an instance of this type is created.
@@ -29,7 +32,8 @@ The `SchieberAuxOutStruct` is purely a data storage structure. It encapsulates t
 - **Initialization:** The structure uses predefined constants (`ID_NULL`, `COLOR_WHITE`) from imported namespaces for the initial values. This ensures consistency and simplifies maintenance.
 - **Typing:** Explicit typing (`UINT` for the image ID, `USINT` for the color) enables rigorous checks by the compiler and increases reliability.
 - **Usage:** This STRUCT is typically used as a data type for inputs or outputs of function blocks (FBs) that interact with graphical user interfaces or display devices.
-*
+-
+
 ## State Overview
 
 Since it is a passive data type, `SchieberAuxOutStruct` does not have an internal state machine. Its "state" is entirely defined by the currently stored values in `Picture` and `u8Colour`.

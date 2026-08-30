@@ -5,6 +5,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `ADI_MUL_3` function block is a generic arithmetic function block for the 4diac IDE. It is used to multiply three numeric input values, which are transmitted via standardized, unidirectional adapters. By encapsulating the mathematical operation in an adapter interface, this function block is particularly suitable for modular and clean application architectures within the IEC 61499 standard.

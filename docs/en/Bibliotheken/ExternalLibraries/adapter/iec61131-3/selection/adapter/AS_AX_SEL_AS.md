@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_AX_SEL_AS` is used for binary selection between two input signals provided via adapters. Based on the state of a selection adapter (`G`), either the value of input `IN0` or input `IN1` is passed to output `OUT`.
@@ -69,9 +70,10 @@ Inside the function block is a network of standard function blocks that processe
 1. **Signal Storage (Latch):** The data received via the adapters (`G.D1`, `IN0.D1`, `IN1.D1`) is temporarily stored in event-triggered D flip-flops (`E_D_FF` and `E_D_FF_ANY`, respectively) upon the occurrence of the respective event (`E1`).
 2. **Data Conversion & Forwarding:** The cached data of types `IN0` and `IN1` are transferred to the central selection block via `F_MOVE` blocks. Internally, these operations are configured for the data type `SINT` (Short Integer).
 3. **Selection Logic (`F_SEL`):** The block `F_SEL` (IEC 61131-3 Selection) performs the actual selection:
+
 - If the state of selector `G` is equal to `FALSE`, the value of `IN0` is passed through.
 - If the state of selector `G` is equal to `TRUE`, the value of `IN1` is passed through.
-4. **Output Triggering:** After successful selection, the result is passed via another `F_MOVE` block to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop generates the output event `OUT.E1` and places the selected value on `OUT.D1`.
+1. **Output Triggering:** After successful selection, the result is passed via another `F_MOVE` block to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop generates the output event `OUT.E1` and places the selected value on `OUT.D1`.
 
 ```
        +-------+

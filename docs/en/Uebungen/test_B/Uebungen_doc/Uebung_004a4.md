@@ -1,8 +1,9 @@
 # Exercise_004a4: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_SPLIT
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004a4`. It demonstrates how a single event can be used to sequentially trigger multiple independent processes using a `E_SPLIT` function block.
+This article describes the logiBUS® exercise `Uebung_004a4`. It demonstrates how a single event can be used to sequentially trigger multiple independent processes using a `E_SPLIT` function block
 -----
+
 ## Objective of the Exercise
 
 The objective is to understand sequential event processing. The `E_SPLIT` function block receives a single input event and then fires its outputs one after the other. This allows an action to be distributed across multiple targets while defining the order of execution.

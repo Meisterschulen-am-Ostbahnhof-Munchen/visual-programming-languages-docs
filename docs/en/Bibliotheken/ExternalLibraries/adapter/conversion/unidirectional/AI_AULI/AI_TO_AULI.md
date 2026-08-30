@@ -3,9 +3,10 @@
 ![AI_TO_AULI](./AI_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
-The function block **AI_TO_AULI** serves as a composite block for converting a unidirectional adapter of type `AI` (based on the data type `INT`) into a unidirectional adapter of type `AULI` (based on `ULINT`). It enables the seamless integration of components that use different integer data types without requiring the user to implement the conversion logic.
+The function block **AI_TO_AULI** serves as a composite block for converting a unidirectional adapter of type `AI` (based on the data type `INT`) into a unidirectional adapter of type `AULI` (based on `ULINT`). It enables the seamless integration of components that use different integer data types without requiring the user to implement the conversion logic
 ---
 
 ## Interface Structure
@@ -91,7 +92,7 @@ Since the component is implemented as a pure composite without its own stateful 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Source Type | Target Type | Adapter-Based | Custom States |
-|-------------------|----------|---------|----------------|-----------------|
+| ------------------- | ---------- | --------- | ---------------- | ----------------- |
 | `F_INT_TO_ULINT` | `INT` | `ULINT` | No (pure function block) | No |
 | `AI_TO_AULI` | `AI` | `AULI` | Yes (adapter) | No |
 | `ANY_TO_ANY` | variable | variable | possible | depending on implementation |

@@ -3,9 +3,11 @@
 ## Description
 
 The **WSTRING** (Wide String) data type represents a string of "wide" characters (16 bits), usually in Unicode format (UTF-16).
+
 ## Normative Definition
 
 According to **DIN EN 61131-3** (Table 10, No. 16b):
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | 16 bits per character |

@@ -3,6 +3,7 @@
 ![INI_AUDI](./INI_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **INI_AUDI** ermöglicht das Lesen und Speichern von UDINT-Daten aus einer `settings.ini`-Datei. Dabei wird der Zugriff auf die Datei über einen internen `INI`-Baustein realisiert. Die Kommunikation mit der Umgebung erfolgt über zwei **AUDI-Adapter** (unidirektional), die als Plug (`AUDI_OUT`) und Socket (`AUDI_IN`) ausgeführt sind. Dies erlaubt eine modulare Anbindung an andere Bausteine, die über denselben Adaptertyp verfügen.

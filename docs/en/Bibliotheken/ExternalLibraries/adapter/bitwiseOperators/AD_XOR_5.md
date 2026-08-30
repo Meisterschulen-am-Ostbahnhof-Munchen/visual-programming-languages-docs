@@ -3,6 +3,7 @@
 ![AD_XOR_5](./AD_XOR_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AD_XOR_5** is a generic function block for the bitwise XOR (exclusive OR) operation across 5 input values of type `DWORD` (32-bit bit pattern (double word)). Unlike the Boolean operation on single truth values (as in the `AX_XOR` blocks), every bit of the data word is combined independently here.

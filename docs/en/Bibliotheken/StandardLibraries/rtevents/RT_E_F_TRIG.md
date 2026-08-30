@@ -1,10 +1,12 @@
 # RT_E_F_TRIG
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_F_TRIG block (Falling Edge).
 ![RT_E_F_TRIG](RT_E_F_TRIG.svg)
+
 ## Metadata
 
 | Attribute | Value |

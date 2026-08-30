@@ -3,6 +3,7 @@
 ![AUDI_AUI_DEMUX_4](AUDI_AUI_DEMUX_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `AUDI_AUI_DEMUX_4` is the adapter-based variant of the generic demultiplexer for data type `UDINT`. Unlike `AUDI_DEMUX_4`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.

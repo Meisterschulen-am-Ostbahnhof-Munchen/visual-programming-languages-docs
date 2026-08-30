@@ -3,6 +3,7 @@
 ![AULI_SPLIT_6](./AULI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AULI_SPLIT_6** dient dazu, einen einzelnen AULI-Adapter-Eingang (unidirektional) auf sechs identische AULI-Ausgänge zu verteilen. Er stellt eine generische Lösung dar, um ein AULI-Signal an mehrere nachfolgende Bausteine weiterzuleiten, ohne die Signalintegrität zu beeinträchtigen.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | IN | Socket (Eingang) | adapter::types::unidirectional::AULI | Empfängt das zu verteilende AULI-Signal. |
 | OUT1 | Plug (Ausgang) | adapter::types::unidirectional::AULI | Erster identischer Ausgang des verteilten Signals. |
 | OUT2 | Plug (Ausgang) | adapter::types::unidirectional::AULI | Zweiter identischer Ausgang. |
@@ -63,7 +64,7 @@ Da der Baustein keine Ereignissteuerung besitzt und keine internen Zustände ver
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Besonderheit |
-|----------|------------------|--------------|
+| ---------- | ------------------ | -------------- |
 | AULI_SPLIT_6 | 6 | Fester Splitter für AULI-Adapter |
 | AULI_SPLIT_2 | 2 | Kleinere Variante für zwei Ausgänge |
 | AULI_SPLIT_4 | 4 | Mittlere Variante für vier Ausgänge |

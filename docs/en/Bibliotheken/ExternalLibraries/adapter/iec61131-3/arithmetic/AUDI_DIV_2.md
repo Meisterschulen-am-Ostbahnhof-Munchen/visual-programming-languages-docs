@@ -3,6 +3,7 @@
 ![AUDI_DIV_2](./AUDI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) **AUDI_DIV_2** is used to perform arithmetic division. It is a generic function block (`GEN_AUDI_DIV`) that can flexibly work with various data types within the adapter structure. Unlike classic mathematical function blocks, which have dedicated data inputs, this block uses adapter connections to encapsulate signals and control flows.

@@ -3,6 +3,7 @@
 ![ButtonActivationCode](./ButtonActivationCode.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 ButtonActivationCode ist eine Sammlung von globalen Konstanten für die Verarbeitung von Tastenaktivierungen in ISOBUS-kompatiblen Systemen. Diese Konstanten definieren verschiedene Zustände und Ereignisse, die bei der Bedienung von Tasten auftreten können, und werden hauptsächlich in landwirtschaftlichen Anwendungen eingesetzt.
@@ -43,7 +44,7 @@ Die ButtonActivationCode-Konstanten definieren verschiedene Tastenaktivierungszu
 ## Zustandsübersicht
 
 | Konstante | Code | Beschreibung |
-|-----------|------|--------------|
+| ----------- | ------ | -------------- |
 | BT_RELEASED_UNLATCHED | 0 | Taste wurde entriegelt oder losgelassen (Zustandsänderung) |
 | BT_PRESSED_LATCHED | 1 | Taste wurde "gedrückt" oder verriegelt (Zustandsänderung) |
 | BT_STILL_HELD | 2 | Taste wird weiterhin gehalten (verriegelbare Tasten wiederholen sich nicht) |

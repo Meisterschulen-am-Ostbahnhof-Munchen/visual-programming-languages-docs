@@ -3,6 +3,7 @@
 ![FIELDBUS_UDINT_TO_SIGNAL](./FIELDBUS_UDINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_UDINT_TO_SIGNAL** dient dazu, einen eingehenden UDINT-Wert auf Gültigkeit zu prüfen und diesen bei bestandener Prüfung unverändert an den Ausgang weiterzuleiten. Ist der Wert ungültig, wird der Ausgang auf einen definierten Fehlerwert (0) gesetzt und die Gültigkeitsanzeige deaktiviert. Der Baustein wird typischerweise in der Feldbus-Signalverarbeitung eingesetzt, um nur valide Mess- oder Steuerwerte an nachfolgende Logik weiterzugeben.

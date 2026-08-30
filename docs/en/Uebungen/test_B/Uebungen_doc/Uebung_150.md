@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_150` based on the provided data.
+
 # Exercise_150: Pulse Counter
 
 ![Uebung_150_network](./Uebung_150_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_150** implements a sub-application (SubApp) that functions as a "pulse counter." It is used to configure and integrate a hardware-based pulse input via the logiBUS system. The goal is to establish an interface to a physical input (`PulseInput_I8`) and define parameters for data acquisition.

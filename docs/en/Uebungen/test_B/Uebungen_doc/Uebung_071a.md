@@ -1,8 +1,9 @@
 # Exercise_071a: Output WBSD to UT, Switch Q1 when Speed > 0
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_071a`.
+This article describes the logiBUS® exercise `Uebung_071a`
 ----
+
 ## Overview
 
 [cite_start]This variant of exercise 071 uses a D flip-flop (`E_D_FF`) for time synchronization of the switching signal[cite: 1].

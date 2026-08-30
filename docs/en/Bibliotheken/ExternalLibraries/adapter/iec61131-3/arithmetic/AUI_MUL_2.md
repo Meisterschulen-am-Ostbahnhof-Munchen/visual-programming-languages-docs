@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_MUL_2` is a generic arithmetic function block for the 4diac-ide development environment, used to perform the multiplication of two input values.
@@ -61,6 +62,7 @@ After successful calculation, the result is passed to the output adapter `OUT`, 
 
 - **Generic Behavior:** The function block is linked to the value `'GEN_AUI_MUL'` via the compiler attribute `GenericClassName`. This means that the function block can operate independently of the data type (e.g., for `INT`, `REAL`, `LREAL`, etc.), depending on the specific data type defined by the connected adapters.
 - **Efficient Wiring:** By encapsulating the function block in `AUI` adapters (Unidirectional Interface Adapters), the number of connections in the function plan is drastically reduced, as data and event flows are combined.
+
 - ---
 
 ## State Overview

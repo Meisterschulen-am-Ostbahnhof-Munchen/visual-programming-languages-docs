@@ -29,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|------|------|----------|-------------|
+| ------ | ------ | ---------- | ------------- |
 | `adapter::types::unidirectional::AW` | `IN` | Socket (Eingang) | Eingehender AW‑Adapter, der auf alle Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug (Ausgang) | Erster ausgehender AW‑Adapter. |
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug (Ausgang) | Zweiter ausgehender AW‑Adapter. |

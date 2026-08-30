@@ -3,6 +3,7 @@
 ![Override_K_Select](Override_K_Select.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `Override_K_Select` function block converts a pair of boolean override signals
@@ -34,7 +35,7 @@ None of its own. The result is emitted through the `K` adapter plug.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|-----------|------|------|--------------|
+| ----------- | ------ | ------ | -------------- |
 | Socket (input) | `Aktiv` | `adapter::types::unidirectional::AX` | `Override.Aktiv` |
 | Socket (input) | `Wert` | `adapter::types::unidirectional::AX` | `Override.Wert` |
 | Plug (output) | `K` | `adapter::types::unidirectional::AUI` | 0=Normal (`Aktiv`=FALSE), 1=Force FALSE (`Aktiv`=TRUE, `Wert`=FALSE), 2=Force TRUE (`Aktiv`=TRUE, `Wert`=TRUE) |

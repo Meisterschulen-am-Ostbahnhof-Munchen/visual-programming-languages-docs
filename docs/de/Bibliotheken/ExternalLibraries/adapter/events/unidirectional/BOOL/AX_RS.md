@@ -5,6 +5,7 @@
 ![AX_RS_ecc](./AX_RS_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_RS Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Flop) nach dem RS-Prinzip. Es handelt sich um einen Basic Function Block, der einen Set-Reset-Mechanismus implementiert und über Adapter-Schnittstellen kommuniziert.

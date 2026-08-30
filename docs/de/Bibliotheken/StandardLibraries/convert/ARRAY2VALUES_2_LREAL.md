@@ -3,6 +3,7 @@
 <img width="1227" height="178" alt="image" src="https://github.com/user-attachments/assets/1fda84e9-cd29-43f7-a566-6a8e259fa26f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ARRAY2VALUES_2_LREAL` ist ein Dienstschnittstellen-Baustein, der darauf ausgelegt ist, ein Array von zwei `LREAL`-Werten in zwei separate `LREAL`-Ausgangsvariablen aufzuteilen. Er dient der einfachen Umwandlung von einem strukturierten Array-Format in individuelle Datenpunkte.

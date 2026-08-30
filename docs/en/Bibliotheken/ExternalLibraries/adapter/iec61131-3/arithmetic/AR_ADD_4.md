@@ -4,6 +4,7 @@
 *Note: A graphical symbol for the function block is not available.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_ADD_4** is a generic function block for the arithmetic addition of multiple values. It is designed according to the IEC 61499-2 standard and allows the flexible processing of up to four additive operands via adapter interfaces. The function block is typically used in automation systems where numerical summation of multiple signals is required.
@@ -29,7 +30,7 @@ The function block **AR_ADD_4** is a generic function block for the arithmetic a
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | **IN1** | `adapter::types::unidirectional::AR` | Socket (Input) | First Addend of the Addition |
 | **IN2** | `adapter::types::unidirectional::AR` | Socket (Input) | Second Addend |
 | **IN3** | `adapter::types::unidirectional::AR` | Socket (Input) | Third Addend |
@@ -70,7 +71,7 @@ Due to its purely data-driven and eventless operation, the component has **no in
 ## Comparison with similar function blocks
 
 | Function block | Number of inputs | Special feature |
-|----------|----------------|--------------|
+| ---------- | ---------------- | -------------- |
 | **AR_ADD_4** | 4 | Adapter-based, generic, no events |
 | **AR_ADD_2** (hypothetical) | 2 | Reduced inputs, same concept |
 | **F_ADD** (from IEC 61131) | 2 | Standard data types, event-driven (via ENABLE/ENO) |

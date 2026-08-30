@@ -3,15 +3,17 @@
 ![sequence_E_08_AX_DM](./sequence_E_08_AX_DM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_08_AX_DM` implements an event-driven sequence control with eight sequentially switchable outputs. It is based on a finite state machine with nine states and allows switching between states via explicit events. An integrated deadman switch (DM) allows monitoring and controlled reset of the outputs. The function block is specifically designed for use in safety-critical or monitored control sequences in agricultural technology.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Description |
-|----------|---------------|
+| ---------- | --------------- |
 | `START_S1` | Transition from start state to state 1 (State_01) |
 | S1_S2` | Transition from state 1 to state 2 (State_02) |
 | S2_S3` | Transition from state 2 to state 3 (State_03) |
@@ -42,7 +44,7 @@ No data inputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Plug | `DO_S1` | unidirectional::AX | Output for state 1 (State_01 active) |
 | Plug | `DO_S2` | unidirectional::AX | Output for State 2 (State_02 active) |
 | Plug | `DO_S3` | unidirectional::AX | Output for State 3 (State_03 active) |
@@ -75,7 +77,7 @@ The function block operates as a finite automaton with the following states: `xS
 ## State Overview
 
 | State | Label | Output Active | Transitions |
-|---------|-------------|---------------|--------------|
+| --------- | ------------- | --------------- | -------------- |
 | `xSTART` | Initial state | none | → `sState_01` at `START_S1`; Self-transition at `DM.E1` |
 | `sState_01` | Sequence step 1 | `DO_S1` | → `sState_02` at `S1_S2`; Self-transition at `DM.E1`; → `sRESET` at `RESET` |
 | `sState_02` | Sequence step 2 | `DO_S2` | → `sState_03` at `S2_S3`; Self-translation at `DM.E1`; → `sRESET` at `RESET` |

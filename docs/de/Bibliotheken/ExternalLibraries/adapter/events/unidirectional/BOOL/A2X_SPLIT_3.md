@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::A2X` | **IN** | Socket (Eingang) | Quell-Adapter, dessen Datenstrom aufgeteilt wird. |
 | `adapter::types::unidirectional::A2X` | **OUT1** | Plug (Ausgang) | Erster identischer Ausgang. |
 | `adapter::types::unidirectional::A2X` | **OUT2** | Plug (Ausgang) | Zweiter identischer Ausgang. |

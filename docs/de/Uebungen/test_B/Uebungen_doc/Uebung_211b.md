@@ -3,6 +3,7 @@
 ![Uebung_211b_network](./Uebung_211b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung wird der IEC 61131-3 Standard-Funktionsbaustein **FB_CTU_DINT** (Vorwärtszähler mit `DINT`-Datentyp) verwendet. Der Zähler wird durch einen Taster an einem Digitaleingang erhöht und über einen zweiten Taster zurückgesetzt. Der aktuelle Zählerstand wird zusätzlich über einen Terminal-Ausgabebaustein als physikalischer `LREAL`-Wert ausgegeben.
@@ -14,7 +15,7 @@ Ziel ist es, das Zusammenspiel zwischen einem Zähler, digitalen Ein-/Ausgängen
 Im SubApp-Netzwerk werden fünf Instanzen von vordefinierten Bausteintypen verwendet. Es sind keine weiteren Sub-Bausteine definiert.
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `Input_CU` | `logiBUS_IX` | Digitaler Eingang (logiBUS), der den Zählimpuls (CU) bereitstellt. |
 | `Input_R` | `logiBUS_IX` | Digitaler Eingang, der das Rücksetzsignal (R) bereitstellt. |
 | `FB_CTU_DINT` | `FB_CTU_DINT` | Vorwärtszähler (Counter Up) mit `DINT`-Datentyp. |

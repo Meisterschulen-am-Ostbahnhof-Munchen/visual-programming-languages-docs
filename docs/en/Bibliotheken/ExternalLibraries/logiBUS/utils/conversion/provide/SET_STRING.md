@@ -3,9 +3,11 @@
 ![SET_STRING](./SET_STRING.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SET_STRING` is used to write a string value (STRING) provided via the data input `IN` to an input-output variable `OUT`. Execution is triggered by an event at the input `REQ`. After writing, an acknowledgment event is sent at the output `CNF`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -42,16 +44,18 @@ No adapters are available.
 
 1. An incoming event at input `REQ` starts the processing.
 2. The code stored in algorithm `REQ` is executed:
+
 - `OUT := IN;`
 
 The value of the input variable `IN` is copied to the input-output variable `OUT`.
 
-3. Subsequently, the event at output `CNF` is sent to signal successful execution.
+1. Subsequently, the event at output `CNF` is sent to signal successful execution.
 
 ## Technical Features
 
 - The function block contains only a single state (`REQ`) in which all processing takes place. It is a **simple function block** (SimpleFB) without sequential state machines.
-3. The event is then sent at output `CNF` to signal successful execution. - The input-output variable ``OUT`` allows the function block to be directly linked to a persistently writable variable (e.g., a global data object or a linked hardware address) without requiring a separate output variable.
+1. The event is then sent at output `CNF` to signal successful execution. - The input-output variable ``OUT`` allows the function block to be directly linked to a persistently writable variable (e.g., a global data object or a linked hardware address) without requiring a separate output variable.
+
 - The algorithm is trivial and performs no type or range checks.
 
 ## State Overview

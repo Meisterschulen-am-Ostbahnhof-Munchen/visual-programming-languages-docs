@@ -3,6 +3,7 @@
 ![Uebung_074_AUI_network](./Uebung_074_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe der Drehzahl der hinteren Zapfwelle (Rear PTO) auf ein User Terminal (UT) unter Verwendung von Adaptern. Sie implementiert eine sogenannte „Fendt-Schaltung“, die bei einem Timeout des PTO-Signals auf dem UT den Wert 0 anzeigt. Dadurch wird ein sicheres Verhalten bei Sensorausfall oder Kommunikationsstörungen erreicht.

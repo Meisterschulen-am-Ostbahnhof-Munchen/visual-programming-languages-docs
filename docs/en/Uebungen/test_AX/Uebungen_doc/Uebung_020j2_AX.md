@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_020j2_AX`, based on the provided XML data.
+
 # Exercise_020j2_AX: DigitalInput_I1 to DigitalOutput_Q1/2; 2xAX_TP; Pulse Shaping with SUB
 
 ![Uebung_020j2_AX_network](./Uebung_020j2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of signals using adapter connections (AX) within an IEC 61499 application. A digital input signal (`DigitalInput_I1`) is used to drive two separate digital outputs (`DigitalOutput_Q1` and `DigitalOutput_Q2`). The unique aspect of this exercise lies in the use of an encapsulated sub-application (`Uebung_020j2_AX_sub`) that splits the input signal and controls two independent pulse timers.
@@ -50,13 +52,15 @@ The exercise proceeds as follows:
 
 The system reads the state of the digital input `Input_I1` via the function block `DigitalInput_I1`.
 
-2. **Processing in the Sub-Application**:
+1. **Processing in the Sub-Application**:
+
 - The adapter connection of the input is forwarded to the sub-application `Uebung_020j2_AX_sub`.
 - Within the sub-application, the signal is split.
 - Two independent timers are started, their time values defined via parameters in the main network:
 - **Path 1**: Duration `T#800ms` (parameter `TQ1`).
 - **Path 2**: Duration `T#1200ms` (parameter `TQ2`).
-3. **Signal Output**:
+1. **Signal Output**:
+
 - The output `Q1` of the sub-application (800ms pulse) controls `DigitalOutput_Q1`.
 - The output `Q2` of the sub-application (1200ms pulse) controls `DigitalOutput_Q2`.
 

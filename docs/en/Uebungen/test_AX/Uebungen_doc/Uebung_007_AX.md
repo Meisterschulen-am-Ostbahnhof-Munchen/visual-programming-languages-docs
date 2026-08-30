@@ -1,8 +1,9 @@
 # Exercise_007_AX: Flasher with E_CYCLE and E_T_FF
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_007_AX`. It demonstrates how to generate time-controlled events.
+This article describes the logiBUS® exercise `Uebung_007_AX`. It demonstrates how to generate time-controlled events
 ----
+
 ## Objective of the Exercise
 
 Generating a periodic flashing signal.

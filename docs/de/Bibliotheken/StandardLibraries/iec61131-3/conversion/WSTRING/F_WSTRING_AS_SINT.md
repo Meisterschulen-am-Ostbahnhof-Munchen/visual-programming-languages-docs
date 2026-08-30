@@ -3,6 +3,7 @@
 <img width="1481" height="214" alt="F_WSTRING_AS_SINT" src="https://github.com/user-attachments/assets/5c42bc49-eddd-4518-b97f-197880155b0d" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_WSTRING_AS_SINT` dient der Konvertierung eines WSTRING-Wertes in einen SINT-Wert (8-Bit Ganzzahl). Der Block ist besonders nützlich in Szenarien, wo Zeichenketten in numerische Werte umgewandelt werden müssen.

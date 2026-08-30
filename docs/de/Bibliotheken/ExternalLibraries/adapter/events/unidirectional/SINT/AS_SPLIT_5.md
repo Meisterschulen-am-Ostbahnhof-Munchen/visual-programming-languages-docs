@@ -29,7 +29,7 @@ Keine Daten-Ausgänge definiert.
 ### **Adapter**
 
 | Rolle | Name | Typ | Beschreibung |
-|-------|------|-----|--------------|
+| ------- | ------ | ----- | -------------- |
 | Socket | IN | adapter::types::unidirectional::AS | Eingangs-Adapter, der das zu verteilende AS-Signal empfängt. |
 | Plug | OUT1 | adapter::types::unidirectional::AS | Erster Ausgangs-Adapter für das verteilte Signal. |
 | Plug | OUT2 | adapter::types::unidirectional::AS | Zweiter Ausgangs-Adapter. |

@@ -58,14 +58,18 @@ Since `AI_MUL_4` is a purely mathematical, data- and event-driven function block
 1. **Wait:** The function block waits for an update event at one of the sockets (`IN1` to `IN4`).
 2. **Calculate:** Upon triggering, the current values of all four inputs are multiplied.
 3. **Output:** The result is applied to the plug `OUT`, and the output event is triggered. The module immediately returns to standby mode.
+
 - **Scaling and Calibration:** Calculation of compound correction factors for analog sensor values (e.g., sensor value \cdot $ calibration factor \cdot $ temperature compensation \cdot $ unit conversion).
 - **Physical Calculations:** Calculation of values that depend on multiple analog factors, such as volumetric flow rates or electrical power, taking into account different efficiencies.
 - **Cascaded Gains:** Use in control loops where multiple gains must be applied sequentially to an analog signal.
+
 - ## Comparison with Similar Function Blocks
+
 - **Standard MUL (IEC 61131-3):** Classic multiplication function blocks typically only work with elementary data types (e.g., `REAL`, `INT`) and require separate event lines (`REQ` / `CNF`). Furthermore, they often only support two inputs by default. `AI_MUL_4`, on the other hand, directly processes four inputs and uses adapters for encapsulation, resulting in a clearer network layout.
 - **AI_MUL_2:** A similar adapter-based function block, but only for two inputs. `AI_MUL_4` saves additional wiring effort and function block instances for more complex calculations with up to four factors.
 
 The `AI_MUL_4` function block offers an efficient and clean way to implement complex multiplication tasks with up to four analog signals in 4diac-IDE. The consistent use of unidirectional adapters minimizes cabling effort and significantly improves the readability of the application design.
+
 ## Technical Features
 
 ## State Overview

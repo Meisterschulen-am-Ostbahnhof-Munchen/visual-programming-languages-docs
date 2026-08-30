@@ -3,9 +3,11 @@
 ![AUS_TO_AW](./AUS_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUS_TO_AW** function block is a composite function block that enables the simple and standardized conversion of a **USINT** value (0–255) to a **WORD** value (16 bits) via adapter interfaces. It acts as an intermediary between systems that provide or expect different data types via unidirectional adapters.
+
 ## Interface Structure
 
 The function block itself has no direct inputs or outputs. All communication takes place via the two integrated adapters.

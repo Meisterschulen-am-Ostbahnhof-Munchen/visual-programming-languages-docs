@@ -3,6 +3,7 @@
 ![Uebung_007a3_AE_network](./Uebung_007a3_AE_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise describes the implementation of a flasher that periodically switches a digital output (Output_Q1) on and off. It is controlled by two pushbuttons (Start/Stop). The key components used are the function blocks `AE_CYCLE` (Timer), `AX_SWITCH` (Changeover Switch), `AX_SR` (Set-Reset Flip-Flop), and other adapter blocks. A special feature of this circuit is that the output remains permanently off when switched off – there is no unintended activation.
@@ -40,7 +41,8 @@ This event is combined with the adapter signal from `AX_SR` (`Q`) via `AX_AE_MER
 
 ... 4. **Switching** – `AX_SWITCH` forwards the incoming signal (from the merge) to either `G`, depending on its level, to `EO0` (connected to `S` of `AX_SR`) or to `EO1` (connected to `R` of `AX_SR`). This toggles the flip-flop's state with each timer pulse.
 
-5. **Output** – The output `Q` from `AX_SR` is distributed via `AX_SPLIT_2` in two ways:
+1. **Output** – The output `Q` from `AX_SR` is distributed via `AX_SPLIT_2` in two ways:
+
 - `OUT1` goes back to `AX_AE_MERGE` (via `IN_AX`) to close the feedback loop.
 - `OUT2` is routed to the input `OUT` of `DigitalOutput_Q1` and switches the physical output (Output_Q1).
 

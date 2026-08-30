@@ -6,6 +6,7 @@
 
 The function block `F_TIME_AS_WSTRING` converts a TIME value to a WSTRING value. This is particularly useful when time values are needed for display or logging in a human-readable format.
 ![F_TIME_AS_WSTRING](F_TIME_AS_WSTRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

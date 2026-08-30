@@ -3,10 +3,12 @@
 ![AUDI_SPLIT_8](./AUDI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_SPLIT_8** is used to distribute an incoming unidirectional **AUDI** adapter signal to eight parallel outputs.
 It is implemented as a generic function block (FB) and allows for the simple forwarding of an adapter signal to up to eight receivers.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +30,7 @@ None.
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | adapter::types::unidirectional::AUDI` | Socket (Input) | `IN` | Input adapter that receives the signal to be distributed. |
 | adapter::types::unidirectional::AUDI` | Plug (Output) | `OUT1` .. `OUT8` | Eight output adapters, each providing the identical signal of the input. |
 

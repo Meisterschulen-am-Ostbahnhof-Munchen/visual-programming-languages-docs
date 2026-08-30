@@ -29,7 +29,8 @@ The `E_SWITCH` (Event Switch) is a basic function block according to IEC 61499 t
 ## Functionality
 
 1. **Event Reception**: The function block waits for an event at input `EI`.
-3. **Conditional Forwarding**:
+2. **Conditional Forwarding**:
+
 - **If `G` = `FALSE`**: The event is forwarded to output `EO0`.
 - **If `G` = `TRUE`**: The event is forwarded to output `EO1`.
 
@@ -42,7 +43,7 @@ The event at input `EI` is always routed to exactly one of the two outputs, depe
 - **Error Handling**: Route a sensor event either to the normal processing logic (`G=FALSE` for "no error") or to an error handling routine (`G=TRUE` for "error detected").
 
 | Feature | E_SWITCH | E_SELECT | E_DEMUX |
-|---------------|----------|----------|----------|
+| --------------- | ---------- | ---------- | ---------- |
 | Selection Criterion | Boolean (`G`) | Boolean (`G`) | Index (`K`) |
 | Direction | 1:2 (Demultiplexer) | 2:1 (Multiplexer) | 1:n (Demultiplexer) |
 | State Model | BasicFB | BasicFB | BasicFB/Generic |

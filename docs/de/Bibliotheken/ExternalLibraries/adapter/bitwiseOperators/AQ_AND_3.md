@@ -3,6 +3,7 @@
 ![AQ_AND_3](./AQ_AND_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AQ_AND_3** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 3 Eingangswerten vom Typ `BYTE` (2-Bit-Wert (Viertel-Byte, als Byte übertragen)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

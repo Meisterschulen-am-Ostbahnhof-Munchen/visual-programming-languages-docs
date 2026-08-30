@@ -3,9 +3,11 @@
 ![ALI_SPLIT_7](./ALI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_SPLIT_7** is a generic splitter that distributes one incoming ALI adapter (socket `IN`) to seven outgoing ALI adapters (plugs `OUT1`…`OUT7`). It is used for a 1:7 distribution of data and events within a unidirectional ALI communication path.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-------------------|-------------|
+| ---------- | ------ | ------------------- | ------------- |
 | Socket (Input) | `IN` | `adapter::types::unidirectional::ALI` | Input adapter whose data and events are distributed. |
 | Plug (Output) | `OUT1` | `adapter::types::unidirectional::ALI` | First output adapter. |
 | Plug (Output) | `OUT2` | `adapter::types::unidirectional::ALI` | Second output adapter. |
@@ -37,6 +39,7 @@ None.
 | Plug (Output) | `OUT6` | `adapter::types::unidirectional::ALI` | Sixth Output Adapter. |
 | Plug (Output) | `OUT7` | `adapter::types::unidirectional::ALI` | Seventh Output Adapter. |
 ...
+
 ## Functionality
 
 The function block forwards all incoming ALI signals (both data and events) via socket `IN` unchanged to all seven output adapters `OUT1`…`OUT7`. This results in a strict 1:7 parallel distribution without delay or buffering. The function block behaves purely combinatorially; no processing or filtering of the contents takes place.

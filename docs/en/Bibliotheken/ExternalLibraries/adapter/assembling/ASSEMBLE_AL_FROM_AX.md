@@ -4,6 +4,7 @@
 ![ASSEMBLE_AL_FROM_AX](./ASSEMBLE_AL_FROM_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AL_FROM_AX** is used to combine up to 64 Boolean signals from **AX adapters** (type: `adapter::types::unidirectional::AX`) into a single **LWORD** value and output it via an **AL adapter** (type: `adapter::types::unidirectional::AL`). The block encapsulates the logic for bit combination and provides the result stably as soon as one of the input bits returns an event.
@@ -45,7 +46,7 @@ The combined result is output as a 64-bit word via the AL adapter.
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AX` | Socket (input) | `BIT_00` … `BIT_63` | Boolean Input Adapter |
 | `adapter::types::unidirectional::AL` | Plug (Output) | `OUT` | LWORD Output Adapter |
 
@@ -88,7 +89,7 @@ Event-driven behavior:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Inputs | Output Type | Special Feature |
-|----------|----------------|-------------|--------------|
+| ---------- | ---------------- | ------------- | -------------- |
 | **ASSEMBLE_AL_FROM_AX** | 64 BOOL (AX) | LWORD (AL) | Adapter-based with flip-flop buffering |
 | `ASSEMBLE_DWORD_FROM_BOOLS` | 32 BOOL | DWORD | Classic data input/output, without adapter |
 | `ASSEMBLE_WORD_FROM_BOOLS` | 16 BOOL | WORD | As above, for 16-bit word |

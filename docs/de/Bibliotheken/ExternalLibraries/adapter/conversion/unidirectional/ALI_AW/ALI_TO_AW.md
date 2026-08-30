@@ -3,6 +3,7 @@
 ![ALI_TO_AW](./ALI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_TO_AW** ist ein zusammengesetzter Baustein (Composite FB), der einen LINT-Wert (ALI-Adapter) in einen WORD-Wert (AW-Adapter) umwandelt. Er kapselt die Konvertierungslogik des IEC-61131-3-Funktionsbausteins `F_LINT_TO_WORD` in einer adapterbasierten Schnittstelle. Der Baustein ist für den Einsatz in unidirektionalen Adapter-Kommunikationspfaden vorgesehen und ermöglicht eine saubere Trennung von Datenformat und Anwendung.

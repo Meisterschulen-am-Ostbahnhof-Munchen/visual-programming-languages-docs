@@ -3,6 +3,7 @@
 ![AUS_TO_AL](./AUS_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_TO_AL** ist ein zusammengesetzter Baustein (Composite FB), der einen unidirektionalen **AUS**-Adapter (USINT-Datentyp) in einen unidirektionalen **AL**-Adapter (LWORD-Datentyp) umwandelt. Er dient als Brücke zwischen unterschiedlichen Datenformaten in einer 4diac-IDE-Umgebung, wobei die Konvertierung intern durch den IEC‑61131‑FB `F_USINT_TO_LWORD` realisiert wird. Der Baustein erleichtert die Integration von Komponenten, die auf verschiedenen Adaptertypen basieren.

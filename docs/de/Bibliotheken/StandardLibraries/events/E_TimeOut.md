@@ -53,11 +53,11 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 
 ## ⚖️ Vergleich mit E_RTimeOut
 
-| Feature        | E_TimeOut (dieser) | E_RTimeOut |
-|---------------|-----------|----------|
+| Feature | E_TimeOut (dieser) | E_RTimeOut |
+| --------------- | ----------- | ---------- |
 | Interner Baustein | E_DELAY | E_RDELAY |
 | `START` bei lfd. Timer | Ignoriert | Startet Timer neu |
-| Adaptertyp    | ATimeOut  | ARTimeOut |
+| Adaptertyp | ATimeOut | ARTimeOut |
 
 ## 🛠️ Zugehörige Übungen
 

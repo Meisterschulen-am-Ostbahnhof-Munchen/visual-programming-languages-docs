@@ -3,6 +3,7 @@
 ![Uebung_001g_AX_network](./Uebung_001g_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals (I1) unter Verwendung einer Negation und einer zeitlichen Verzögerung. Der Eingangswert wird nach einem initialen Ereignis und einer definierten Verzögerung negiert auf einen digitalen Ausgang (Q1) ausgegeben. Ein besonderer Fokus liegt auf dem Verhalten des Negationsbausteins, der auch dann einen gültigen Wert (TRUE) liefert, wenn der Eingang beim Systemstart noch nicht abgefragt wurde.

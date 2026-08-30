@@ -3,6 +3,7 @@
 ![all_colours](./all_colours.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der GlobalConstants-Baustein **all_colours** stellt eine umfangreiche Farbpalette mit 256 definierten Farben (0 bis 255) bereit. Jede Farbe ist als Konstante vom Typ `USINT` angelegt und besitzt einen festen Zahlenwert. Die Kommentare enthalten den zugehörigen Hexadezimal-Code, den RGB-Wert sowie englische und deutsche Farbbezeichnungen. Die Farben 0 bis 231 entsprechen dem standardisierten ISOBUS-Farbraum, während die Farben 232 bis 255 für herstellerspezifische Zwecke reserviert und mit einem neutralen Grau belegt sind.
@@ -12,15 +13,19 @@ Der GlobalConstants-Baustein **all_colours** stellt eine umfangreiche Farbpalett
 ### **Ereignis-Eingänge**
 
 Keine.
+
 ### **Ereignis-Ausgänge**
 
 Keine.
+
 ### **Daten-Eingänge**
 
 Keine.
+
 ### **Daten-Ausgänge**
 
 Die Farben werden nicht über dedizierte Ausgangsvariablen bereitgestellt, sondern als globale Konstanten (`COLOR_0` … `COLOR_255`) deklariert. Diese können von anderen Bausteinen direkt referenziert werden.
+
 ### **Adapter**
 
 Keine.

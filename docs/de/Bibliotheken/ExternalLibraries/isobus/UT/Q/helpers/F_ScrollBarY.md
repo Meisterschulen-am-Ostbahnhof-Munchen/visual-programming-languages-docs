@@ -3,6 +3,7 @@
 ![F_ScrollBarY](F_ScrollBarY.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die Funktion `F_ScrollBarY` berechnet aus der aktuellen Scroll-Position (in Zeilen) die

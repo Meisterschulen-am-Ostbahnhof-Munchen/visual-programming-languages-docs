@@ -5,6 +5,7 @@
 *(Image of the function block temporarily unavailable)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `AULI_ADD_3` function block is a generic arithmetic function block for IEC 61499 systems, specifically designed for adding three input values. Unlike traditional mathematical function blocks, this block uses `AULI` (unidirectional) adapter connections to transmit data and associated control signals in a bundled manner. This significantly reduces wiring complexity within the development environment (4diac IDE).
@@ -79,7 +80,7 @@ The function block operates as a stateless (or purely event-driven) arithmetic b
 
 **Ready (Idle):** The block waits for value changes or trigger signals at the input adapters `IN1`, `IN2`, or `IN3`. 2. **Evaluation:** After a signal arrives, the values are read and summed.
 
-3. **Output:** The sum is passed to `OUT`, and the corresponding event in the adapter is triggered. The function block immediately returns to the *Ready* state.
+1. **Output:** The sum is passed to `OUT`, and the corresponding event in the adapter is triggered. The function block immediately returns to the *Ready* state.
 
 ---
 
@@ -95,6 +96,7 @@ The function block operates as a stateless (or purely event-driven) arithmetic b
 
 - **Standard Adder (IEC 61131-3):** The classic `ADD` component requires explicit `REQ` and `CNF` event lines, as well as individual data lines. `AULI_ADD_3` replaces these with just four adapter connections, which simplifies the visual programming interface.
 - **Cascaded Adders (e.g., 2x `AULI_ADD_2`):** To add three values with classic two-way adders, two components would have to be connected in series. `AULI_ADD_3` eliminates the need for an entire function block and the associated intermediate wiring.
+
 - ---
 
 ## Change Detection

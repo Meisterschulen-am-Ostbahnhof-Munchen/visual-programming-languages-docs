@@ -1,9 +1,11 @@
 # RT_Bridge_2
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_2 function block serves as a decoupling bridge for two data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

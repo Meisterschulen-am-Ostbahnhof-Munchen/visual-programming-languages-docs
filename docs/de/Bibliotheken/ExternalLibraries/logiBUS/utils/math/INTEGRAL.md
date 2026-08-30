@@ -3,6 +3,7 @@
 <img width="1755" height="158" alt="image" src="https://github.com/user-attachments/assets/4eac3645-d857-4c04-9bc3-7692be451a96" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `INTEGRAL` berechnet näherungsweise das zeitliche Integral eines Eingangssignals. Die Integration erfolgt durch die Summation von Teilflächen, die sich aus dem Produkt des Eingangswertes und der seit dem letzten Aufruf verstrichenen Zeit ergeben. Der Baustein ist nützlich für Anwendungen, in denen kumulative Werte wie verbrauchte Energie, geförderte Mengen oder zurückgelegte Wege bestimmt werden müssen.

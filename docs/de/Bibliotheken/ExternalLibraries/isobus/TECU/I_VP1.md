@@ -3,6 +3,7 @@
 <img width="1306" height="390" alt="image" src="https://github.com/user-attachments/assets/0d8b45f8-4fd0-475e-a261-694c0e7ecac1" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `I_VP1` dient zur Verarbeitung und Bereitstellung von Fahrzeugpositionsdaten gemäß dem ISO-11783-Standard (ISOBUS). Er implementiert speziell die Funktion "Vehicle Position 1", die durch das Parameter Group Number (PGN) 65267 definiert ist. Der Baustein empfängt Positionsdaten von einer Ressource (z. B. einem GNSS-Empfänger) und stellt diese über standardisierte Schnittstellen für nachgelagerte Steuerungs- und Anzeigefunktionen in einem landwirtschaftlichen oder mobilen Arbeitsmaschinen-Netzwerk zur Verfügung.
@@ -43,10 +44,10 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 1.  **Initialisierung**: Durch das Senden eines `INIT`-Ereignisses mit `QI=TRUE` wird der Baustein aktiviert. Er meldet den erfolgreichen Start mit dem `INITO`-Ausgangsereignis zurück, begleitet von `QO=TRUE` und einem `STATUS`-String.
 2.  **Datenempfang und -verarbeitung**: Im aktiven Zustand überwacht der Baustein eine angeschlossene Ressource (z. B. einen ISOBUS-Datenstrom) auf das Eintreffen von Positionsdaten gemäß PGN
-65267. Bei Empfang gültiger Daten werden diese dekodiert, die Skalierung und der Offset werden angewendet, und die resultierenden `Latitude`- und `Longitude`-Werte werden berechnet.
-3.  **Datenausgabe**: Bei erfolgreicher Verarbeitung löst der Baustein das `IND`-Ereignis aus. Gleichzeitig werden die berechneten Positionsdaten (`Latitude`, `Longitude`), ein zugehöriger Zeitstempel (`timestamp_data`), der aktive Zustand (`QO=TRUE`) und ein Status über die Ausgangsvariablen bereitgestellt. `Q_timeout` wird auf `FALSE` gesetzt.
-4.  **Timeout-Überwachung**: Der Baustein überwacht kontinuierlich den Datenstrom. Wenn für einen konfigurierten Zeitraum keine neuen Positionsdaten empfangen werden, löst er das `TIMEOUT`-Ereignis aus. Dabei werden `Q_timeout=TRUE`, ein Zeitstempel (`timestamp_timeout`) und ein entsprechender `STATUS` gesetzt.
-5.  **Deaktivierung**: Ein `INIT`-Ereignis mit `QI=FALSE` setzt den Baustein in einen inaktiven Zustand zurück, was durch `INITO` mit `QO=FALSE` quittiert wird.
+3. Bei Empfang gültiger Daten werden diese dekodiert, die Skalierung und der Offset werden angewendet, und die resultierenden `Latitude`- und `Longitude`-Werte werden berechnet.
+4.  **Datenausgabe**: Bei erfolgreicher Verarbeitung löst der Baustein das `IND`-Ereignis aus. Gleichzeitig werden die berechneten Positionsdaten (`Latitude`, `Longitude`), ein zugehöriger Zeitstempel (`timestamp_data`), der aktive Zustand (`QO=TRUE`) und ein Status über die Ausgangsvariablen bereitgestellt. `Q_timeout` wird auf `FALSE` gesetzt.
+5.  **Timeout-Überwachung**: Der Baustein überwacht kontinuierlich den Datenstrom. Wenn für einen konfigurierten Zeitraum keine neuen Positionsdaten empfangen werden, löst er das `TIMEOUT`-Ereignis aus. Dabei werden `Q_timeout=TRUE`, ein Zeitstempel (`timestamp_timeout`) und ein entsprechender `STATUS` gesetzt.
+6.  **Deaktivierung**: Ein `INIT`-Ereignis mit `QI=FALSE` setzt den Baustein in einen inaktiven Zustand zurück, was durch `INITO` mit `QO=FALSE` quittiert wird.
 
 ## Technische Besonderheiten
 

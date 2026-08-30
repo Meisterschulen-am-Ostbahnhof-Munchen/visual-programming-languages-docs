@@ -19,7 +19,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals unter 
 ### Übersicht aller verwendeten Funktionsbausteine
 
 | Name | Typ | Parameter (Auswahl) |
-|------|-----|----------------------|
+| ------ | ----- | ---------------------- |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | `Input = Input_I1` |
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `Output = Output_Q1` |
 | `AnalogInput_I4` | `logiBUS::io::AI::logiBUS_AI_IDA` | `AnalogInput_hysteresis=50`, `TimeDelta=250`, `TimeRateLimit=100` |

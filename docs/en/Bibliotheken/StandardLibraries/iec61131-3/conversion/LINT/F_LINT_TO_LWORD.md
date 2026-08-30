@@ -6,6 +6,7 @@
 
 The function block `F_LINT_TO_LWORD` converts a LINT data type (64-bit signed integer) to an LWORD data type (64-bit bit string). This block is particularly useful in scenarios where numeric values need to be converted to their binary representation.
 ![F_LINT_TO_LWORD](F_LINT_TO_LWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

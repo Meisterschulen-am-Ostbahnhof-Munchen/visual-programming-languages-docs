@@ -6,6 +6,7 @@
 
 The function block `F_BYTE_AS_STRING` is used to convert a BYTE value into a STRING. This functionality is particularly useful when numeric data needs to be converted into a text format suitable for display or logging.
 ![F_BYTE_AS_STRING](F_BYTE_AS_STRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

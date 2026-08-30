@@ -3,6 +3,7 @@
 ![ALR_TO_AUI](./ALR_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_TO_AUI** ist ein zusammengesetzter Baustein (Composite FB), der einen LREAL-Wert, der über einen **ALR**-Adapter (unidirektional) anliegt, in einen UINT-Wert umwandelt und über einen **AUI**-Adapter (unidirektional) bereitstellt. Die Konvertierung erfolgt mittels des internen IEC‑61131‑Bausteins `F_LREAL_TO_UINT`. Der Baustein kapselt die Adapterwandlung und bietet eine saubere Schnittstelle für den Austausch zwischen den beiden Adaptertypen.
@@ -76,7 +77,7 @@ Da es sich um einen zusammengesetzten Baustein ohne eigenen ECC (Execution Contr
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingangstyp | Ausgangstyp | Beschreibung |
-|----------|-------------|-------------|--------------|
+| ---------- | ------------- | ------------- | -------------- |
 | **ALR_TO_AUI** | ALR (LREAL) | AUI (UINT) | Adapter‑basierte Konvertierung LREAL→UINT. |
 | `F_LREAL_TO_UINT` | LREAL | UINT | Reine Datenkonvertierung ohne Adapter. |
 | `LREAL_TO_INT` | LREAL | INT | Konvertierung in einen vorzeichenbehafteten Integer. |

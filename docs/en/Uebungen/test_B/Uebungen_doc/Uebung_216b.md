@@ -3,9 +3,11 @@
 ![Uebung_216b_network](./Uebung_216b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **down counter (CTD)** according to IEC 61131-3 with the data type `DINT` and a terminal output of the current count value as a physical quantity (`PHYS_LREAL`). The counter is controlled via two digital inputs (**CD** = Count Down, **LD** = Load) and outputs the counter signal (`Q`) to a digital output. Simultaneously, the current counter value is visualized on a terminal via a numeric output block.
+
 ## Function Blocks (FBs) Used
 
 - **FB_CTD_DINT** – Type: `iec61131::counters::FB_CTD_DINT`
@@ -34,13 +36,13 @@ Control is purely event-driven via the **IND** events of the inputs:
 
 A rising edge at `Input_I1` is detected by the function block `Input_CD` and triggers the event `IND`. This is connected to the `REQ` event of the counter `FB_CTD_DINT`. Simultaneously, the physical input value (`IN`) is transmitted to the counter input via the data connection `Input_CD.IN → FB_CTD_DINT.CD`.
 
-2. **Charge Input (LD):**
+1. **Charge Input (LD):**
 
 Similarly, a rising edge at `Input_I2` is detected via `Input_LD` and also connected to the `REQ` of the counter. The input value (`IN`) is forwarded to the charge input `FB_CTD_DINT.LD`.
 
 Similarly, a rising edge at `Input_I2` is detected via `Input_LD` and also connected to the `REQ` of the counter. *Note*: Both events (CD and LD) use the same `REQ` event of the counter. The counter internally evaluates the respective data lines to distinguish between the operation (counting or loading).
 
-3. **Output Q1 and Terminal Display:**
+1. **Output Q1 and Terminal Display:**
 
 After the counter processing is complete, the `CNF` event is triggered. This is sent in parallel to the `REQ` inputs of `Output_Q1` and `Q_NumericValue_PHYS_LREAL`.
 
@@ -51,7 +53,7 @@ After the counter processing is complete, the `CNF` event is triggered. This is 
 **Summary of Connections:**
 
 | Sender | Receiver | Type |
-|--------|-----------|-----|
+| -------- | ----------- | ----- |
 | `Input_CD.IND` | `FB_CTD_DINT.REQ` | Event |
 | `Input_LD.IND` | `FB_CTD_DINT.REQ` | Event |
 | `FB_CTD_DINT.CNF` | `Output_Q1.REQ` | Event |

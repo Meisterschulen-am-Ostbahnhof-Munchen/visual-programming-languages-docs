@@ -6,6 +6,7 @@
 
 The function block `AlPgnTxNew8Bcycl_REQ` is used for the cyclic transmission of data over an ISOBUS network. Its main purpose is the installation and management of a Parameter Group Number (PGN) transmit object (TX) that sends data at a defined time interval. A key feature is the integration of a callback adapter, which enables flexible data provisioning.
 ![AlPgnTxNew8Bcycl_REQ](AlPgnTxNew8Bcycl_REQ.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -45,9 +46,10 @@ The function block `AlPgnTxNew8Bcycl_REQ` is used for the cyclic transmission of
 2. **PGN Installation**: The `install` event triggers the configuration of a new cyclic transmission PGN. The values present at the data inputs (`u32Pgn`, `NmDestin`, etc.) are used to register the PGN in the ISOBUS stack.
 3. **Handle Return**: Upon successful installation, the `installO` event is triggered, and the generated `PGN_handle` is made available at the data output. This handle must be saved for later operations (e.g., uninstallation, modification).
 4. **Cyclic Send Operation**: If `u16DefRepRate` > 0, the function block begins sending data at the defined interval.
+
 - Before each send operation, the block requests the current payload data via the `CB` adapter.
 - After successful transmission, the `CNF` event is triggered.
-5. **Error Handling**: If an error occurs (e.g., invalid configuration, communication problem), either `dataERR` or `pgnERR` is triggered and the corresponding error code is set.
+1. **Error Handling**: If an error occurs (e.g., invalid configuration, communication problem), either `dataERR` or `pgnERR` is triggered and the corresponding error code is set.
 
 ## Technical Features
 
@@ -76,7 +78,8 @@ The function block implicitly goes through the following main states:
 
 Vs. Blocks with Internal Data Storage: The use of a callback adapter distinguishes this block from those where the data is directly provided at an input. This makes it more flexible when the data changes frequently or originates from complex sources.
 
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_126](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)

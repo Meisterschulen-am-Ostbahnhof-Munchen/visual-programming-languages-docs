@@ -4,6 +4,7 @@
 ![sequence_T_05_ecc](./sequence_T_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_T_05` is a time-controlled sequencer with five output states. It cycles through a fixed sequence of states (State_01 to State_05), with the transition between each state controlled by adjustable time delays. The block is designed for applications where process steps or actions need to be activated sequentially for a defined duration.
@@ -64,7 +65,7 @@ The block operates as a Basic Function Block with a defined Execution Control Ch
 
 1. **`xSTART`**: Initial ECC state at system startup.
 2. **`sState_00`**: Inactive sleep state. All outputs are `FALSE`. The sequence can be started from here with `START_S1`. 3. **`sState_01` to `sState_05`**: Active sequence states. The respective output `DO_Sx` is `TRUE`. The transition to the next state is time-controlled.
-4. **`sRESET`**: Intermediate state that is accessed from any active state upon a `RESET` event. It deactivates all outputs and then switches to `sState_00`.
+3. **`sRESET`**: Intermediate state that is accessed from any active state upon a `RESET` event. It deactivates all outputs and then switches to `sState_00`.
 
 ## Application Scenarios
 

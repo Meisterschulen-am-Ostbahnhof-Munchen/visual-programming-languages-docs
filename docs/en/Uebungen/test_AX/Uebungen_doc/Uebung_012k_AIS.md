@@ -1,9 +1,11 @@
 # Exercise_012k_AIS: String Input and Storage INI with Subapp (AIS Adapter)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The exercise *Exercise_012k_AIS* demonstrates how to store an entered string (e.g., user input or sensor value) in non-volatile memory (NVS). Access is via an AIS adapter (Application Interface Subapp), which simplifies communication with the memory logic. The goal is to learn how to work with persistent data and adapter-based subapplications in the 4diac IDE.
+
 ## Function Blocks (FBs) Used
 
 The exercise consists of a single subapplication that encapsulates all the necessary functions.

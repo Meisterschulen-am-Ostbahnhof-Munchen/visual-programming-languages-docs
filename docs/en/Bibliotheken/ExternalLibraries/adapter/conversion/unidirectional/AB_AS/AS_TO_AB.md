@@ -3,6 +3,7 @@
 ![AS_TO_AB](./AS_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_TO_AB** is a composite function block that converts an AS adapter (SINT) into an AB adapter (BYTE).
@@ -40,7 +41,7 @@ Since the function block does not have direct event or data ports, inputs and ou
 ### **Adapter**
 
 | Label | Type | Direction | Comment |
-|-------------|-----|-----------|-----------|
+| ------------- | ----- | ----------- | ----------- |
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Input) | SINT Adapter Input |
 | `AB_OUT` | `adapter::types::unidirectional::AB` | Plug (Output) | BYTE Adapter Output |
 

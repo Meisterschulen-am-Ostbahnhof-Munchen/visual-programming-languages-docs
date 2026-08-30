@@ -1,10 +1,12 @@
 # RT_E_MERGE
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_MERGE block. Merges multiple events.
 ![RT_E_MERGE](RT_E_MERGE.svg)
+
 ## Metadata
 
 | Attribute | Value |

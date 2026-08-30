@@ -1,4 +1,5 @@
 Here is the documentation for exercise `Uebung_040_2` based on the provided XML data.
+
 # Exercise_040_2: Running Light 8
 
 ![Uebung_040_2_network](./Uebung_040_2_network.svg)
@@ -50,17 +51,21 @@ A button press increments the counter. The value is adjusted (step 1 becomes ind
 The program is designed to implement a guided sequence of 8 steps.
 
 1. **Start and Reset**:
+
 - The running light is started via the **I1** button (`START_S1`) (state 1 active, Q1 illuminates).
 - The system can be reset at any time via the **I4** button (`RESET`). This resets both the sequence block and the counters (`E_CTU_0`, `E_CTU_1`).
-2. **Sequence Control Part 1 (Steps 1 to 5)**:
+1. **Sequence Control Part 1 (Steps 1 to 5)**:
+
 - The **I2** button is responsible for the first four transitions.
 - With each click, `E_CTU_0` increments.
 - The demultiplexer `E_DEMUX_0` distributes these events sequentially to the inputs `S1_S2`, `S2_S3`, `S3_S4`, and `S4_S5` of the loop module.
 - When step 4 is reached (output EO4 of the demux), the counter is automatically reset.
-3. **Sequence Control Part 2 (Steps 5 to 1)**:
+1. **Sequence Control Part 2 (Steps 5 to 1)**:
+
 - The button **I3** takes over control for the second half.
 - It controls the transitions `S5_S6`, `S6_S7`, `S7_S8`, and finally `S8_S1` (back to the beginning) via `E_CTU_1` and `E_DEMUX_1`.
-4. **Output**:
+1. **Output**:
+
 - Depending on its internal state, the `sequence_E_08_loop` block activates exactly one of the outputs **Q1 to Q8**.
 - Simultaneously, the current state number (`STATE_NR`) is sent via the converter `F_SINT_TO_UINT` to the display element `OutputNumber_N1` to show the user the current step.
 

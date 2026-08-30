@@ -3,6 +3,7 @@
 ![SERVER_2](SERVER_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `SERVER_2` function block is the generic server variant with 2 send and 2 receive data fields for communicating with a matching [CLIENT_2](CLIENT_2.md) block. It transmits 2 data values (`SD_1` `SD_2`) to the client and receives 2 data values (`RD_1` `RD_2`) back. Like all `SERVER_*` blocks, it is based on the generic `GEN_SERVER` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

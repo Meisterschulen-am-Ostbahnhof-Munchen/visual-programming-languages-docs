@@ -70,7 +70,7 @@ Der Ausgang `QO` wird bei jedem ausgeführten Algorithmus auf den aktuellen Wert
 ## Zustandsübersicht
 
 | Zustand | Aktion | Ausgang/Ereignis | Beschreibung |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **START** | – | – | Wartet auf erstes INIT‑Ereignis. |
 | **Init** | `initialize` | INITO | Setzt `QO := QI`; danach Wechsel zu SET oder RESET je nach `Q_INIT`. |
 | **DeInit** | `deInitialize` | INITO | Setzt `QO := FALSE`; danach Rücksprung zu START. |
@@ -98,7 +98,7 @@ Der Ausgang `QO` wird bei jedem ausgeführten Algorithmus auf den aktuellen Wert
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Besonderheit |
-|---|---|
+| --- | --- |
 | `E_SR` (Standard IEC 61499) | Reines Set/Reset‑Flip‑Flop ohne Toggle und ohne INIT‑Symmetrie. |
 | `E_RS` | Wie E_SR, aber Reset hat Vorrang. |
 | `E_Toggle` | Nur Toggle‑Funktion, kein Set/Reset, keine Initialisierung. |

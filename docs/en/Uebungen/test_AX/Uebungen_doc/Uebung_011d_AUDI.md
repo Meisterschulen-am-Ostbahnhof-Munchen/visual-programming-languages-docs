@@ -3,6 +3,7 @@
 ![Uebung_011d_AUDI_network](./Uebung_011d_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates passing a numeric input value (I1) to an output (N3) using an offset/scale effect. The incoming value is converted via an adapter and passed to an output function block.

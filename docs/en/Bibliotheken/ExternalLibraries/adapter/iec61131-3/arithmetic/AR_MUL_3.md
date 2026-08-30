@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_MUL_3` is a generic arithmetic block used to multiply three input values. It is based on the use of unidirectional adapters of type `AR` (Arithmetic), which enables structured and clear signal transmission within the 4diac IDE. As it is a generic block, it can be used flexibly with various numeric data types.

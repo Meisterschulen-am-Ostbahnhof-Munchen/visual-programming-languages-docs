@@ -28,7 +28,8 @@ The E_PERMIT (Event Permit) is a fundamental function block according to IEC 614
 ## Functionality
 
 1. **Event Reception**: The function block waits for an event at input `EI`.
-3. **Conditional Forwarding**:
+2. **Conditional Forwarding**:
+
 - **If `PERMIT` = `TRUE`**: The event is allowed through and output at `EO`.
 - **If `PERMIT` = `FALSE`**: The event is blocked, and nothing happens. Output `EO` is not triggered.
 

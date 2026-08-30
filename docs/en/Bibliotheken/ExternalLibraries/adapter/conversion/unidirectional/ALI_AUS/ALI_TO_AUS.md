@@ -3,9 +3,11 @@
 ![ALI_TO_AUS](./ALI_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_TO_AUS** is a composite function block according to IEC 61499, used to convert an **ALI adapter** (data of type **LINT**, Long Integer) into an **AUS adapter** (data of type **USINT**, Unsigned Short Integer). The block encapsulates the necessary conversion logic to enable a simple and type-safe connection between differently typed adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The **ALI_TO_AUS** is a composite function block according to IEC 61499, used to
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket (Input)** | ALI_IN | adapter::types::unidirectional::ALI | Receives the LINT data value and the associated event |
 | **Plug (Output)** | OFF_OUT | adapter::types::unidirectional::OFF | Provides the converted USINT value and the confirmation event |
 

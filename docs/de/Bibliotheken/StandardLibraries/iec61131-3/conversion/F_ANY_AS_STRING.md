@@ -3,6 +3,7 @@
 ![F_ANY_AS_STRING](F_ANY_AS_STRING.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_ANY_AS_STRING` wandelt einen Wert beliebigen Datentyps (`ANY`) in seine textuelle Darstellung als `STRING` um. Er dient als generischer "Zu-Text"-Konverter, etwa für Diagnose- oder Logging-Zwecke, ohne für jeden Datentyp eine eigene, spezifische Konvertierungsfunktion aufrufen zu müssen.

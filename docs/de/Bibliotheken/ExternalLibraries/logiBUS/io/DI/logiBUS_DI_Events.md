@@ -26,7 +26,7 @@ Doku zu den einzelnen Events: <https://components.espressif.com/components/espre
 Die Ereigniskonstanten decken folgende Zustände ab:
 
 | EType | Konstante | Beschreibung |
-|-------|-----------|--------------|
+| ------- | ----------- | -------------- |
 | 0 | BUTTON_PRESS_DOWN | Taster gedrückt |
 | 1 | BUTTON_PRESS_UP | Taster losgelassen |
 | 2 | BUTTON_PRESS_REPEAT | Taster wiederholt gedrückt |

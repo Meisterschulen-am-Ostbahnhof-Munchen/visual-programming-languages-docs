@@ -3,6 +3,7 @@
 ## 🎧 Podcast
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 <img width="1211" height="473" alt="image" src="https://github.com/user-attachments/assets/3736c2d1-1312-41dd-8375-2cf4ab9c7c50" />
 * * * * * * * * * *
@@ -65,7 +66,8 @@ As a Composite Function Block, `QUARTERS_TO_BOOLS` does not have its own complex
 
 - **`QUARTER_TO_BOOL`**: This is the basic block that converts a single 2-bit input. `QUARTERS_TO_BOOLS` combines 16 instances of this block into a single unit. Using the composite block is more efficient for handling multiple channels, while the single block offers maximum flexibility in individual placement and wiring.
 - **`BYTE_TO_BOOL` blocks**: Conventional blocks that split an entire byte into 8 individual bits. `QUARTERS_TO_BOOLS` is more specialized, as it assumes that each byte is already divided into four independent 2-bit units that must be interpreted separately.
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)

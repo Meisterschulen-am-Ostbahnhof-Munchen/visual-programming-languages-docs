@@ -13,7 +13,7 @@ Dieses Feature dient dazu, Werkseinstellungen, herstellerseitige Systemparameter
 Das Steuergerät unterscheidet zwei Ebenen der Konfigurationsspeicherung:
 
 | Datei | Zweck | Schreibbar? | Typische Inhalte |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **`settingsReadOnly.ini`** | Werkseinstellungen & Systemvorgaben | ❌ Nein (Schreibschutz) | ISOBUS-Quelladressen (Node-SAs), Hardware-Pinbelegungen, fest vorgegebene Boot-Zeiten |
 | **`settings.ini`** | Benutzer- & Laufzeiteinstellungen | ✅ Ja (Lesen & Schreiben) | Benutzerpräferenzen, dynamische Betriebsparameter, wählbare Grenzwert-Skalierungen |
 
@@ -78,7 +78,7 @@ Falls keine `settingsReadOnly.ini` auf dem Steuergerät vorhanden ist, startet d
 
 ## Praktisches Beispiel
 
-### Beispieldatei `settingsReadOnly.ini` (Werkseinstellungen):
+### Beispieldatei `settingsReadOnly.ini` (Werkseinstellungen)
 
 ```ini
 [CF-A]
@@ -89,7 +89,7 @@ bootTimeVT = 90
 DeviceName = LOGIBUS-NODE-01
 ```
 
-### Beispieldatei `settings.ini` (Benutzereinstellungen):
+### Beispieldatei `settings.ini` (Benutzereinstellungen)
 
 ```ini
 [CF-A]
@@ -110,7 +110,7 @@ OperatorID = 42
 ## Zusammenfassung & Best Practices
 
 | Ziel | Empfohlene Vorgehensweise |
-|---|---|
+| --- | --- |
 | **Werkseinstellungen sichern** | Legen Sie alle unveränderlichen Parameter (z. B. Bus-Adressen, Sicherheitsgrenzen) in `settingsReadOnly.ini` an und spielen Sie diese auf das Steuergerät auf. |
 | **Benutzereinstellungen erlauben** | Halten Sie Parameter, die vom Bediener angepasst werden dürfen (z. B. Sprache, Betriebsmodi, Zählerstände), ausschließlich in `settings.ini`. |
 | **Parameter freigeben** | Um einen Parameter wieder beschreibbar zu machen, entfernen Sie den betreffenden Schlüssel aus `settingsReadOnly.ini` und starten Sie das Steuergerät neu. |

@@ -62,10 +62,13 @@ Since it is a generic function block (`GEN_AUI_DIV`), the function block can ada
 - **Generic Type:** The attribute `GenericClassName` with the value `'GEN_AUI_DIV'` allows the function block to be used flexibly and is not restricted to a specific data type.
 - **Interface Encapsulation:** The use of unidirectional adapters (`AUI`) significantly reduces wiring effort in the 4diac IDE, as event and data lines are bundled into a single connection.
 - **Division by Zero:** When using this function block, it must be ensured that the value of `IN2` is not zero to avoid runtime errors or infinite values (NaN/Inf) in the control system.
+
 - ## Status Overview
+
 1. **Waiting State (IDLE):** The function block waits for incoming events via the adapters `IN1` or `IN2`.
 2. **Calculation (EVALUATE):** After receiving an event, the data from the adapters is read and the division is performed.
 3. **Output (DISPATCH):** The result and the associated event are provided via the adapter `OUT`.
+
 - **Scaling of Sensor Values:** Division of raw values by scaling factors in modular control architectures.
 - **Calculation of Averages:** Use in mathematical computing networks where data streams are transmitted in a structured manner via adapters.
 - **Signal Processing:** Reduction of signal strength or frequency divisions in distributed systems.
@@ -73,6 +76,7 @@ Since it is a generic function block (`GEN_AUI_DIV`), the function block can ada
 Compared to a classic standard DIV function block (e.g., from the IEC 61131-3 standard library), which uses individual pins for `REQ`, `CNF`, `IN1`, `IN2`, and `OUT`, the `AUI_DIV_2` offers a significantly cleaner visual representation in the function block diagram. Encapsulation in adapters minimizes the potential for errors when manually wiring event-to-data mappings.
 
 The `AUI_DIV_2` is a modern, modular, and reusable function block for division. Through the consistent use of unidirectional adapters, it is ideally suited for complex, distributed control applications in 4diac where clarity and easy maintainability of the code are paramount.
+
 ## Technical Features
 
 ## State Overview

@@ -3,6 +3,7 @@
 ![FIELDBUS_UINT_TO_SIGNAL_SCALED](./FIELDBUS_UINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_UINT_TO_SIGNAL_SCALED** dient der Aufbereitung eines über einen Fieldbus empfangenen UINT-Wertes. Er prüft die Gültigkeit des Eingangssignals und skaliert dieses bei gültigem Wert mittels einer Multiplikationskonstante (SCALE) und eines additiven Offsets (OFFSET) zu einem REAL-Ausgang. Bei ungültigem Signal wird der Ausgang auf Null gesetzt und ein Validitäts-Flag auf FALSE gesetzt. Typische Anwendung ist die Umrechnung roher Feldbus-Daten in physikalische Größen mit gleichzeitiger Erkennung von Ausnahmezuständen wie Drahtbruch oder Sensorfehlern.

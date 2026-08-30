@@ -82,6 +82,7 @@ Der Baustein besitzt keine eigene explizite Zustandskette (Execution Control Cha
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zum klassischen Standard-Auswahlbaustein `F_SEL` bietet `AULI_AX_SEL_AULI` folgende Vorteile:
+
 - **Kein manuelles Verdrahten von Events:** Bei `F_SEL` müssen Daten- und Eventleitungen manuell synchronisiert werden. Hier geschieht dies automatisch im Inneren des Bausteins durch die Verwendung der Adapter.
 - **Erhöhte Typsicherheit & Übersichtlichkeit:** Verbindungsfehler im übergeordneten Steuerungsdiagramm werden minimiert, da Adapter nur mit passenden Gegenstücken verbunden werden können.
 

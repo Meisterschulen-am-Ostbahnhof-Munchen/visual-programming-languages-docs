@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_131`. Here, message reception is enhanced with a timeout monitoring feature.
+
 ## 🎧 Podcast
 
 ![Uebung_131_network](./Uebung_131_network.svg)

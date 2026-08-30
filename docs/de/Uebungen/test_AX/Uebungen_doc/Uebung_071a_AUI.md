@@ -21,7 +21,7 @@ Diese Übung demonstriert die Verwendung von Adapter-Interfaces (AUI/AUDI) in 4d
 ### Weitere verwendete Funktionsbausteine
 
 | Bausteinname | Typ | Parameter | Kurzbeschreibung |
-|--------------|-----|-----------|------------------|
+| -------------- | ----- | ----------- | ------------------ |
 | `IA_WBSD` | `isobus::tecu::IA_WBSD` | `QI` = TRUE | Liefert die radbasierte Maschinengeschwindigkeit über ein AUI-Interface. |
 | `AUI_SPLIT_2` | `adapter::events::unidirectional::AUI_SPLIT_2` | – | Verteilt ein eingehendes AUI-Signal auf zwei identische Ausgänge. |
 | `CONV_AUI_AUDI` | `adapter::conversion::unidirectional::AUI_TO_AUDI` | – | Konvertiert ein AUI-Signal in das AUDI-Format, das von UT-Anzeigebausteinen erwartet wird. |

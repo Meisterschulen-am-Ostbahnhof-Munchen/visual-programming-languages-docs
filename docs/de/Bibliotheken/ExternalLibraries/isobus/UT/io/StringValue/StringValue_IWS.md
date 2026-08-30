@@ -97,8 +97,8 @@ Eine explizite Zustandsmaschine ist im XML nicht definiert, jedoch ergibt sich a
 
 ## Vergleich mit ähnlichen Bausteinen
 
-| Funktionsblock | Typ   | Unterschied |
-|----------------|-------|-------------|
+| Funktionsblock | Typ | Unterschied |
+| ---------------- | ------- | ------------- |
 | `StringValue_IWS` (vorliegend) | `WSTRING` | Empfängt UTF‑16‑kodierte Zeichenketten. |
 | `StringValue_IWS` (normale Variante) | `STRING` | Empfängt ASCII‑/UTF‑8‑Strings, geringere Zeichenabdeckung. |
 | `AnalogInput_IWS` | `REAL` | Empfängt analoge Messwerte, keine Zeichenketten. |

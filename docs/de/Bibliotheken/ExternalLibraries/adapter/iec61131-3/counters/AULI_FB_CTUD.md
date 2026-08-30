@@ -105,7 +105,7 @@ Nach Reset (`R`) oder Load (`LD`) kann der Zähler sofort in einen dieser Zustä
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | `FB_CTUD_ULINT` | Gleiche Zählerlogik, aber mit separaten Ereignis‑ und Dateneingängen/-ausgängen (keine Adapter). |
 | `AULI_FB_CTU` | Nur Aufwärtszähler, als Adapterversion. |
 | `AULI_FB_CTD` | Nur Abwärtszähler, als Adapterversion. |

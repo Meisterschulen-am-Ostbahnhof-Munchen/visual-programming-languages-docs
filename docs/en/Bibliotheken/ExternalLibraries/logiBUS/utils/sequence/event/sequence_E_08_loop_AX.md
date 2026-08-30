@@ -3,10 +3,12 @@
 ![sequence_E_08_loop_AX_ecc](./sequence_E_08_loop_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 sequence_E_08_loop_AX` is a variant of `sequence_E_08_loop` that additionally uses adapters (`AX`) for the outputs. It controls a purely event-driven, cyclic sequence with 8 output states.
 ![sequence_E_08_loop_AX](sequence_E_08_loop_AX.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

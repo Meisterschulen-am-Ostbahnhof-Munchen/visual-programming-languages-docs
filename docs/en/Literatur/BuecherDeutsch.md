@@ -5,6 +5,7 @@
 ### About the Book
 
 This comprehensive textbook is dedicated to the IEC 61499 standard and its application in modern industrial automation. The third edition explains the theoretical foundations of function blocks in detail and links them to practical examples. The book bridges the gap between classic PLC programming approaches and modern, object-oriented, and distributed system architectures. It is an essential standard work for engineers and students involved in the digitalization of production and "smart factories."
+
 ### About the Author
 
 **Valeriy Vyatkin** is an internationally recognized expert in the field of industrial automation and computer science. He holds professorships at Aalto University in Finland and Luleå University of Technology in Sweden. Vyatkin has made significant contributions to the further development and standardization of IEC 61499. His research focuses on the formal verification of control programs, distributed intelligent systems, and the application of computer science methods in industrial practice.

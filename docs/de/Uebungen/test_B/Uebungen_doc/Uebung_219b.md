@@ -3,6 +3,7 @@
 ![Uebung_219b_network](./Uebung_219b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert einen nach IEC 61131-3 standardisierten Rückwärtszähler (FB_CTD_ULINT) mit einem Zählbereich von ULINT (0 … 18.446.744.073.709.551.615). Der Zähler wird über zwei digitale Eingänge angesteuert: **CD** (Count Down) dekrementiert den aktuellen Zählwert bei jeder steigenden Flanke, **LD** (Load) setzt den Zählwert auf den vorgegebenen Preset-Wert (PV = 10) zurück. Der aktuelle Zählwert wird über eine Typkonvertierung in eine physikalische Gleitkommazahl (PHYS_LREAL) gewandelt und auf einem Terminal ausgegeben. Gleichzeitig wird ein digitaler Ausgang gesetzt, wenn der Zählwert den Wert 0 erreicht.
@@ -10,7 +11,7 @@ Diese Übung demonstriert einen nach IEC 61131-3 standardisierten Rückwärtszä
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter / Einstellungen |
-|---|---|---|
+| --- | --- | --- |
 | **FB_CTD_ULINT** | `iec61131::counters::FB_CTD_ULINT` | `PV = ULINT#10` |
 | **Input_CD** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` |
 | **Input_LD** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` |
@@ -21,7 +22,7 @@ Diese Übung demonstriert einen nach IEC 61131-3 standardisierten Rückwärtszä
 **Funktionsweise der einzelnen Bausteine:**
 
 | Baustein | Beschreibung |
-|---|---|
+| --- | --- |
 | **FB_CTD_ULINT** | Rückwärtszähler (CTD) für vorzeichenlose lange Ganzzahlen (ULINT). Beim Ereignis **REQ** wird abhängig vom aktuell aktiven Eingang (CD oder LD) entweder der Zählwert dekrementiert oder der Preset-Wert geladen. Der aktuelle Zählwert steht am Ausgang **CV**, der Nullstand am Ausgang **Q** zur Verfügung. |
 | **Input_CD** | Digitaler Eingangsbaustein, der das physische Signal `Input_I1` (Taster/Schalter) einliest und bei einer positiven Flanke das Ereignis **IND** auslöst. |
 | **Input_LD** | Digitaler Eingangsbaustein, der das physische Signal `Input_I2` einliest und bei einer positiven Flanke das Ereignis **IND** auslöst. |

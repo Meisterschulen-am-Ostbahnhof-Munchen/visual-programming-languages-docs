@@ -3,6 +3,7 @@
 <img width="1383" height="275" alt="image" src="https://github.com/user-attachments/assets/e4d9d0a5-5b7b-41c6-9187-4cb9a9380a03" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AND_3_BOOL` ist ein standardisierter Baustein zur Berechnung der logischen UND-Verknüpfung für drei boolesche Eingangssignale. Er folgt dem IEC 61131-3 Standard für grundlegende boolesche Funktionen und arbeitet nach dem Echtzeit-Execution-Control-Modell von 4diac, bei dem die Berechnung durch ein eingehendes Ereignis gestartet wird.

@@ -3,9 +3,11 @@
 ![AIS_SPLIT_6](./AIS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_SPLIT_6** is used to distribute an incoming AIS (Automation Interface Signal) signal to six separate AIS outputs. It acts as a generic splitter, forwarding the incoming signal to all connected outputs without delay or manipulation.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available (data transmission occurs exclusively via the adapter)
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AIS` | Input (Socket) | IN | Incoming AIS signal, which is distributed to all outputs. |
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT1 | First output with the split AIS signal. |
 | `adapter::types::unidirectional::AIS` | Output (Plug) | OUT2 | Second output with the split AIS signal. |

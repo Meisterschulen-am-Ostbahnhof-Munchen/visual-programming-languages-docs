@@ -14,7 +14,7 @@ Die `Uebung_170` ist eine Sub-Applikation, die sich mit der Handhabung von ZeitÃ
 
 In dieser Ãœbung wird eine Instanz eines Ereignis-Bausteins aus der Standardbibliothek verwendet.
 
-### Enthaltene Bausteine:
+### Enthaltene Bausteine
 
 - **ARTimeOut_1**
     - **Typ**: `iec61499::events::E_RTimeOut`

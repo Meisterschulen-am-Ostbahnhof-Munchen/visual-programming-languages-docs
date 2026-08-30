@@ -15,6 +15,7 @@
 ![AUI_ADD_4](./AUI_ADD_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_ADD_4` ist ein generischer Arithmetik-Baustein für die Entwicklungsumgebung 4diac-IDE. Er dient zur Addition von bis zu vier numerischen Eingangswerten, die über standardisierte, unidirektionale Adapter vom Typ `AUI` (Analog Universal Interface) bereitgestellt werden. Das berechnete Summengebnis wird über einen entsprechenden Ausgangs-Adapter ausgegeben.

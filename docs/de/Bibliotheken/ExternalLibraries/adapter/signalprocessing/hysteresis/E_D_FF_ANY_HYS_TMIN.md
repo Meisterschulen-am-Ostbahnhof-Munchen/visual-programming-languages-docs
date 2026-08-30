@@ -48,10 +48,12 @@ Dieser Funktionsbaustein verwendet keine Adapter.
 ## Funktionsweise
 
 Der Baustein kombiniert intern zwei spezialisierte Funktionsbausteine:
+
 1. Einen Hysterese-Speicherbaustein (`E_D_FF_ANY_HYS`)
 2. Einen zeitlichen Ereignisbegrenzer (`E_TMIN`)
 
 Sobald ein Ereignis am Eingang `CLK` eintrifft, liest der interne Baustein `E_D_FF_ANY_HYS` den aktuellen Wert von `D` ein.
+
 - Liegt die Differenz zwischen dem neuen Wert `D` und dem aktuell gespeicherten Wert `Q` außerhalb des durch `HYSTERESIS` definierten Bereichs, wird `Q` mit dem neuen Wert aktualisiert und ein internes Ereignis an den Begrenzer `E_TMIN` weitergeleitet.
 - Liegt die Änderung innerhalb des Hysteresebands, bleibt der Wert unverändert und es wird kein Ereignis weitergeleitet.
 

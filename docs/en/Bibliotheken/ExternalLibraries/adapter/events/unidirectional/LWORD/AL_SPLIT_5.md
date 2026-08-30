@@ -3,9 +3,11 @@
 ![AL_SPLIT_5](./AL_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_5** serves as a generic splitter for a unidirectional adapter of type `AL`. It splits an incoming signal (via the `IN` socket) into five separate outputs (`OUT1` to `OUT5`). The block is marked as generic, which allows the specific adapter type to be defined when using it.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-|----------|----------|------|-------------------------------------|
+| ---------- | ---------- | ------ | ------------------------------------- |
 | Socket | Input | IN | Unidirectional `AL` adapter input |
 | Plug | Output | OUT1 | First output (unidirectional `AL`) |
 | Plug | Output | OUT2 | Second output (unidirectional `AL`) |

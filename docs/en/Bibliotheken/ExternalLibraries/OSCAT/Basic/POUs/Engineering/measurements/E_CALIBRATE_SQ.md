@@ -5,6 +5,7 @@
 ![E_CALIBRATE_SQ](E_CALIBRATE_SQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_CALIBRATE_SQ` is the variant of [E_CALIBRATE](E_CALIBRATE.md) with **enforced ordering**: scale calibration (`EICS`) only becomes reachable after offset calibration (`EICO`) has run at least once. It also uses a more robust formula that computes `Y` correctly after offset calibration regardless of the current `SCALE` value.
@@ -55,7 +56,7 @@
 **Example** (4-20 mA pressure sensor via logiBUS, normalized to `0.0..1.0`, desired output range `0.0..500.0`):
 
 | Step | Action | Result |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Apply 4 mA (`X=0.0`), `Y_Offset=0.0`, fire `EICO` | `OFFSET = 0/1 - 0 = 0` |
 | 2 | Apply 20 mA (`X=1.0`), `Y_Scale=500.0`, fire `EICS` | `SCALE = 500/(1+0) = 500` |
 
@@ -87,7 +88,7 @@ WAIT_CS --EICS----> CS       --1--> START     (scale calibrated, done)
 ## ⚖️ Comparison with Similar Blocks
 
 | Feature | [CALIBRATE](CALIBRATE.md) | [E_CALIBRATE](E_CALIBRATE.md) | `E_CALIBRATE_SQ` |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | CO formula | `OFFSET := Y_Offset - X` | `OFFSET := Y_Offset - X` | `OFFSET := Y_Offset / SCALE - X` |
 | Y after CO | correct only when `SCALE = 1` | correct only when `SCALE = 1` | always correct |
 | Order enforced | No (`SimpleFB`) | No (ECC, both from `REQ`) | Yes (ECC: `EICS` only from `WAIT_CS`) |

@@ -3,6 +3,7 @@
 ![AI_ADD_3](./AI_ADD_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AI_ADD_3` is a generic, arithmetic addition block for the 4diac-ide development environment. It is used to add the values of three analog inputs (AI) and output the result to an analog output. The use of unidirectional adapters ensures clean encapsulation of data and associated events.

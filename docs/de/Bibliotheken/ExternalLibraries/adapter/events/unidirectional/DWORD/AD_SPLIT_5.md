@@ -3,6 +3,7 @@
 ![AD_SPLIT_5](./AD_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AD_SPLIT_5` ist ein generischer Baustein, der einen eingehenden unidirektionalen Adapter (Typ `adapter::types::unidirectional::AD`) auf fünf identische Ausgangsadapter aufteilt. Er dient dazu, ein Adaptersignal parallel an mehrere nachfolgende Bausteine weiterzuleiten, ohne dass der Eingang mehrfach verbunden werden muss.
@@ -28,7 +29,7 @@ Keine vorhanden. Die Ausgaben erfolgen ausschließlich über die Adapter-Plugs.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AD` | `IN` | Socket (Eingang) | Eingehendes Adaptersignal, welches auf alle Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AD` | `OUT1` | Plug (Ausgang) | Erster ausgehender Adapter, identisch zum Eingangssignal. |
 | `adapter::types::unidirectional::AD` | `OUT2` | Plug (Ausgang) | Zweiter ausgehender Adapter. |

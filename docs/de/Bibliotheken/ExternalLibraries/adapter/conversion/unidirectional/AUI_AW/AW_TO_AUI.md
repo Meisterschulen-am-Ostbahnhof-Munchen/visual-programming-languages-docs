@@ -3,6 +3,7 @@
 ![AW_TO_AUI](./AW_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_TO_AUI** ist ein zusammengesetzter Baustein (Composite FB), der einen **AW (WORD)**-Adapter in einen **AUI (UINT)**-Adapter umwandelt. Er ermöglicht die nahtlose Anbindung von Komponenten, die unterschiedliche Datentypen über unidirektionale Adapter nutzen. Intern verwendet er den Standard-Konvertierungsbaustein `F_WORD_TO_UINT` zur Typumwandlung.

@@ -3,9 +3,11 @@
 ![AL_TO_AI](./AL_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AL_TO_AI function block is a composite block that converts a unidirectional AL adapter (LWORD) into a unidirectional AI adapter (INT). It serves as an interface converter for adapter-based communication and enables easy integration between components that use different data types. The conversion is performed internally using the standardized IEC 61131-3 function block F_LWORD_TO_INT.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The FB has no explicit data outputs. The converted data is output as an INT via 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|-------------|
+| --------- | ---------- | ----- | ------------- |
 | **AL_IN** | Socket (Input) | `adapter::types::unidirectional::AL` | Provides an LWORD (via data port D1) and an event (E1). |
 | **AI_OUT** | Plug (Output) | `adapter::types::unidirectional::AI` | Provides an INT (via data port D1) and an event (E1). |
 

@@ -4,6 +4,7 @@
 ![sequence_T_05_loop_ecc](./sequence_T_05_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_T_05_loop` is a time-controlled sequencer that implements a cyclical sequence of five states (State_01 to State_05). The transition from one state to the next occurs after an adjustable time delay. This function block is designed for applications where actions or process steps need to be activated sequentially for a defined duration, for example, in automated handling or manufacturing processes.

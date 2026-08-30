@@ -35,6 +35,7 @@ The basic idea is:
 1. A click event arrives.
 2. Where should it go? -> To "turn on" (`S`) or to "turn off" (`R`)?
 3. This is decided by `AX_SWITCH` based on the *current* state.
+
 - If the lamp is off (`G=0`), the event goes to `EO0` -> `E_SR.S` (set).
 - If the lamp is on (`G=1`), the event goes to `EO1` -> `E_SR.R` (reset).
 

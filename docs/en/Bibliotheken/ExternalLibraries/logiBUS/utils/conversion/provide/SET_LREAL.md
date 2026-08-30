@@ -6,17 +6,17 @@
 The function block **SET_LREAL** is used to pass a value of type LREAL to an InOut variable. The input value is written to the target variable on a rising edge of the REQ event, and the operation is acknowledged via the CNF event.
 
 | Event | With Variables | Description |
-|----------|---------------|--------------|
+| ---------- | --------------- | -------------- |
 | REQ | IN, OUT | Normal execution request. Triggers writing the input value to the target variable. |
 | Event | With Variables | Description |
-|----------|---------------|--------------|
+| ---------- | --------------- | -------------- |
 | CNF | OUT | Confirmation of successful execution. The target variable has been updated. |
 | Name | Type | Initial Value | Description |
-|------|-------|-------------|----------------------------------|
+| ------ | ------- | ------------- | ---------------------------------- |
 | IN | LREAL | 0.0 | Value to be written to the target variable. |
 | OUT | LREAL | 0.0 | (InOut) Input side of the target variable. The current value can be read. |
 | Name | Type | Initial Value | Description |
-|------|-------|-------------|----------------------------------------|
+| ------ | ------- | ------------- | ---------------------------------------- |
 | OUT | LREAL | 0.0 | (InOut) Output side of the target variable. After execution, the value of IN is output here. |
 
 ### Data Outputs

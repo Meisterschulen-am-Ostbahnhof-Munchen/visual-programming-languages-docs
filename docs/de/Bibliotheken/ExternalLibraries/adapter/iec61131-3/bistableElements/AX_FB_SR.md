@@ -47,6 +47,7 @@ Der Baustein kommuniziert ausschließlich über Adapter-Schnittstellen. Klassisc
 Der interne Algorithmus implementiert die Logik eines SR-Flip-Flops mit Vorrang auf Setzen. Die Logik wird ausgeführt, sobald ein Ereignis an einem der Adapter-Eingänge (`SET1.E1` oder `RESET.E1`) empfangen wird.
 
 Die logische Gleichung lautet (in ST-Syntax):
+
 ```st
 Q1.D1 := SET1.D1 OR ((NOT RESET.D1) AND Q1.D1);
 ```

@@ -1,6 +1,7 @@
 # SchieberAuxOutStruct
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datenbaustein `SchieberAuxOutStruct` definiert eine Struktur zur Konfiguration der visuellen Darstellung eines AUX-Ausgabeelements. Er wird verwendet, um sowohl das anzuzeigende Bild als auch dessen Hintergrundfarbe festzulegen. Dieser Baustein ist Teil einer Funktionalität zur Steuerung von Bildschirmanzeigen, typischerweise in landwirtschaftlichen oder mobilen Arbeitsmaschinen.

@@ -3,6 +3,7 @@
 ![AQ_TO_AX](./AQ_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AQ_TO_AX` dient der Konvertierung eines AQ-Adapters (Quarter Byte) in einen AX-Adapter (BOOL) unter Verwendung einer STATUS-Logik. Er ermöglicht die einfache Integration von AQ-basierten Signalen in Systeme, die ausschließlich mit AX-Schnittstellen arbeiten. Intern nutzt er den Baustein `QUARTER_TO_BOOL`, um die Datenkonvertierung durchzuführen.

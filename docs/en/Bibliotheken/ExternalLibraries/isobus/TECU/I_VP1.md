@@ -6,6 +6,7 @@
 
 The function block `I_VP1` is used to process and provide vehicle position data according to the ISO 11783 standard (ISOBUS). It specifically implements the "Vehicle Position 1" function, which is defined by the parameter Group Number (PGN) 65267. The block receives position data from a resource (e.g., a GNSS receiver) and makes it available via standardized interfaces for downstream control and display functions in an agricultural or mobile machinery network.
 ![I_VP1](I_VP1.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -40,10 +41,10 @@ This function block does not use any adapter interfaces.
 
 1. **Initialization**: Sending a `INIT` event with `QI=TRUE` activates the function block. It reports a successful start with the `INITO` output event, accompanied by `QO=TRUE` and a `STATUS` string.
 2. **Data Reception and Processing**: In the active state, the function block monitors a connected resource (e.g., an ISOBUS data stream) for the arrival of position data according to PGN
-65267. Upon receiving valid data, it is decoded, scaling and offset are applied, and the resulting `Latitude` and `Longitude` values are calculated.
-3. **Data Output**: Upon successful processing, the function block triggers the `IND` event. Simultaneously, the calculated position data (`Latitude`, `Longitude`), a corresponding timestamp (`timestamp_data`), the active state (`QO=TRUE`), and a status are provided via the output variables. `Q_timeout` is set to `FALSE`.
-4. **Timeout Monitoring**: The function block continuously monitors the data stream. If no new position data is received for a configured period, it triggers the `TIMEOUT` event. This sets `Q_timeout=TRUE`, a timestamp (`timestamp_timeout`), and a corresponding `STATUS`.
-5. **Deactivation**: A `INIT` event with `QI=FALSE` resets the module to an inactive state, which is acknowledged by `INITO` with `QO=FALSE`.
+3. Upon receiving valid data, it is decoded, scaling and offset are applied, and the resulting `Latitude` and `Longitude` values are calculated.
+4. **Data Output**: Upon successful processing, the function block triggers the `IND` event. Simultaneously, the calculated position data (`Latitude`, `Longitude`), a corresponding timestamp (`timestamp_data`), the active state (`QO=TRUE`), and a status are provided via the output variables. `Q_timeout` is set to `FALSE`.
+5. **Timeout Monitoring**: The function block continuously monitors the data stream. If no new position data is received for a configured period, it triggers the `TIMEOUT` event. This sets `Q_timeout=TRUE`, a timestamp (`timestamp_timeout`), and a corresponding `STATUS`.
+6. **Deactivation**: A `INIT` event with `QI=FALSE` resets the module to an inactive state, which is acknowledged by `INITO` with `QO=FALSE`.
 
 ## Technical Features
 

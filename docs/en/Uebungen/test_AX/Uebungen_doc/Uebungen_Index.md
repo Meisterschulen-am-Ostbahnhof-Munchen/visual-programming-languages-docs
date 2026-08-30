@@ -1,6 +1,7 @@
 # 🛠️ Exercises (Workspace test_AX)
 
 Here you will find the documentation for the exercises for logiBUS® with the **AX Adapter**. The exercises are grouped by topic to optimally support your learning progress.
+
 ## Topics
 
 ## 🎧 Podcast

@@ -3,6 +3,7 @@
 ## 🎧 Podcast
 
 - [Miniware TS101: The Mobile Soldering All-Rounder – Strengths, Weaknesses, and the USB-C Revolution](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Miniware-TS101-Das-mobile-Lt-Multitalent--Strken--Schwchen-und-die-USB-C-Revolution-e368lka)
+
 ## Introduction
 
 The IW (Input Word) function block is a service interface function block for processing word input data in 4diac systems. It serves as an interface between the control logic and external input devices or resources that provide word data (16-bit).

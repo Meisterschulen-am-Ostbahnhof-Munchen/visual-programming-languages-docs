@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_MUL_4` ist ein generischer, adapterbasierter Baustein für die IEC 61499, der zur Durchführung von arithmetischen Multiplikationen dient. Er berechnet das Produkt aus vier Eingangsgrößen, die über unidirektionale ADI-Adapter (`adapter::types::unidirectional::ADI`) bereitgestellt werden, und gibt das Ergebnis über einen entsprechenden Ausgangs-Adapter aus. Durch die Kapselung von Signalen in Adaptern sorgt dieser Baustein für ein übersichtlicheres Anwendungsdiagramm in der 4diac-IDE.

@@ -3,6 +3,7 @@
 ![SET_DWORD](./SET_DWORD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `SET_DWORD` dient dazu, einen DWORD-Wert über einen Eingang in eine als InOut deklarierte Zielvariable zu schreiben. Er stellt eine einfache und effiziente Möglichkeit dar, Werte im laufenden Betrieb zu setzen, ohne dass eine separate Zuweisung im Programm erfolgen muss.

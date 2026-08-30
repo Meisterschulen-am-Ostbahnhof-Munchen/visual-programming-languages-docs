@@ -3,9 +3,11 @@
 ![AB_SPLIT_8](./AB_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_SPLIT_8** is used to multiply an incoming adapter signal of type `AB` into eight identical outputs. It functions as a passive splitter for unidirectional data exchange via the standardized interface `adapter::types::unidirectional::AB`. The block is designed as a generic function block and is typically used in automation technology to forward an AB signal in parallel to multiple downstream components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. Outgoing information is provided via the plug adapters.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------|---------------------------------------|----------|------------------------------------------------|
+| ------- | --------------------------------------- | ---------- | ------------------------------------------------ |
 | `IN` | `adapter::types::unidirectional::AB` | Socket | Input adapter that receives the signal to be distributed. |
 | `OUT1` | `adapter::types::unidirectional::AB` | Plug | First output adapter (identical to the input signal). |
 | `OUT2` | `adapter::types::unidirectional::AB` | Plug | Second output adapter. |

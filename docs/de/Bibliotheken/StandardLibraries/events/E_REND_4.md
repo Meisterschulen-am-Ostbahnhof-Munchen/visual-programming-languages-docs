@@ -1,6 +1,7 @@
 # E_REND_4
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_REND_4` ist die generische 4-Eingangs-Variante des Rendezvous-Bausteins `E_REND` (2 Eingänge). Er löst `EO` erst aus, wenn er von **allen** 4 Eingängen (`EI1`, `EI2`, `EI3`, `EI4`) mindestens ein Ereignis seit dem letzten Reset empfangen hat — eine logische UND-Verknüpfung über 4 asynchrone Ereignisströme.

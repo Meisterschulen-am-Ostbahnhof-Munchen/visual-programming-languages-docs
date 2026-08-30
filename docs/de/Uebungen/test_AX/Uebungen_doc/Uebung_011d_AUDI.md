@@ -3,6 +3,7 @@
 ![Uebung_011d_AUDI_network](./Uebung_011d_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert das Durchschleifen eines numerischen Eingangswerts (I1) auf einen Ausgang (N3) unter Verwendung eines Offset-/Scale-Effekts. Der eingehende Wert wird über einen Adapter gewandelt und an einen Ausgangs-Funktionsbaustein weitergegeben.

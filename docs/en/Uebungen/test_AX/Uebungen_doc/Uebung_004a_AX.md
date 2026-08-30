@@ -1,8 +1,9 @@
 # Exercise_004a_AX: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_004a_AX`. In this exercise, we move beyond simple data forwarding and use events to implement a memory function: a classic impulse switch.
+This article describes the logiBUS® exercise `Uebung_004a_AX`. In this exercise, we move beyond simple data forwarding and use events to implement a memory function: a classic impulse switch
 ----
+
 ## Objective of the Exercise
 
 The objective is to understand the difference between state-oriented (level) and event-oriented (edge) programming. While a simple push button is only "on" as long as it is pressed, here each press of the button should change the state of the output (toggling: Off -> On -> Off -> ...).

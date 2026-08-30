@@ -3,6 +3,7 @@
 ![F_UPPER_BOUND](F_UPPER_BOUND.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_UPPER_BOUND` returns the upper index bound of a selected dimension of an array of arbitrary type. Together with [F_LOWER_BOUND](F_LOWER_BOUND.md), it forms the basis for generic, size-independent array processing — e.g. `F_LEN_ARRAY` (see `utils::arrays`) is computed from both bounds.

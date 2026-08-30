@@ -4,6 +4,7 @@
 ![ASR_AX_SR_ecc](./ASR_AX_SR_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ASR_AX_SR is an event-driven bistable function block (flip-flop) that operates according to the set-reset principle. It is used to store a binary state and is controlled via adapter interfaces.
@@ -54,6 +55,7 @@ Upon a SET event via the S_R adapter, the block switches to the SET state and se
 START → SET:    bei S_R.SET Ereignis
 SET → RESET:    bei S_R.RESET Ereignis
 RESET → SET:    bei S_R.SET Ereignis
+
 ## Algorithms
 
 - **SET**: Sets the output value Q.D1 to TRUE

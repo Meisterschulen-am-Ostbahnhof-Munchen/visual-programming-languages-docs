@@ -3,6 +3,7 @@
 ![ASSEMBLE_AL_FROM_AQ](./ASSEMBLE_AL_FROM_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_AL_FROM_AQ` dient dazu, 32 unidirektionale AQ‑Adapater („Quarter“) zu einem einzelnen AL‑Adapater (LWORD) zusammenzufassen.
@@ -65,7 +66,7 @@ Die Zustandslogik wird durch die internen Blöcke `ASSEMBLE_LWORD_FROM_QUARTERS`
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktionsprinzip | Anzahl Eingänge | Ausgangstyp | Besonderheit |
-|----------|------------------|----------------|-------------|--------------|
+| ---------- | ------------------ | ---------------- | ------------- | -------------- |
 | `ASSEMBLE_AL_FROM_AQ` | Adapter‑basierte Zusammenstellung | 32 × 2‑Bit (AQ) | 1 × LWORD (AL) | Flankengesteuerte Ausgabe, reine Komposition |
 | `ASSEMBLE_LWORD_FROM_QUARTERS` (intern) | Daten‑orientierte Kombination | 32 × 2‑Bit (direkt) | LWORD (Daten) | Keine Adapter, kein Flip‑Flop |
 | Klassischer Multiplexer (z. B. MUX) | Auswahl eines Eingangs über Steuerleitung | n Eingänge, 1 Auswahl | Einfacher Datentyp | Erfordert dezidierte Adresssignale |

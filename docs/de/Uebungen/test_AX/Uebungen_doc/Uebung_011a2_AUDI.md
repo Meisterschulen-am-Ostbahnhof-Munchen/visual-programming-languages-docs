@@ -3,6 +3,7 @@
 ![Uebung_011a2_AUDI_network](./Uebung_011a2_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe eines numerischen Werts unter Verwendung eines Tastendruck-Ereignisses (BUTTON_LONG_PRESS_UP). Dabei wird ein digitaler Eingangsbaustein (logiBUS_IDA) verwendet, der bei einem langen Tastendruck ein Ereignis auslöst. Dieses Ereignis wird über einen Adapter in ein Format konvertiert, das der Ausgabebaustein Q_NumericValue_AUDI verarbeiten kann – dieser gibt dann den vordefinierten numerischen Wert auf dem ISOBUS aus.

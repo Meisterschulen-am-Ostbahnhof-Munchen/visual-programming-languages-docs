@@ -3,6 +3,7 @@
 ![F_MUX_8](F_MUX_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_MUX_8` is the generic 8-input variant of the standard multiplexer block `F_MUX` (cf. `F_MUX_2`/`F_MUX_3`/`F_MUX_4`). Based on the selector `K`, it picks one of 8 input values (`IN1`, `IN2`, `IN3`, `IN4`, `IN5`, `IN6`, `IN7`, `IN8`) and outputs it via `OUT`.

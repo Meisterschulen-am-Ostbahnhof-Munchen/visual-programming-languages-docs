@@ -3,6 +3,7 @@
 ![AW_TO_AS](./AW_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung  
 
 Der Funktionsblock `AW_TO_AS` ist ein Composite-Baustein, der einen WORD-basierten Adapter (AW) in einen SINT-basierten Adapter (AS) umwandelt. Er kapselt die notwendige Typkonvertierung und ermöglicht so die einfache Integration unterschiedlicher Adapter-Schnittstellen in der Automatisierungstechnik.

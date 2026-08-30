@@ -1,12 +1,15 @@
 # SlideStruct
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `SchieberStruct` is a structured data type used to represent all possible states of a slide (e.g., a valve, flap, or closure) within a control system. It serves as a central container for the object identifiers (IDs) assigned to the various states of the slide. This data type is typically used in conjunction with function blocks that implement state machines or sequences for slide control.
+
 ## Interface Structure
 
 The `SchieberStruct` is a data type and therefore does not have event or adapter interfaces in the conventional sense. Its structure consists exclusively of data fields.
+
 ## **Data Inputs**
 
 Not applicable. The structure defines a data type, not function block interfaces.

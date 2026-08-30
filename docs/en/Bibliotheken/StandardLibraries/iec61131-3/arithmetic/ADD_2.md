@@ -3,6 +3,7 @@
 ![ADD_2](https://user-images.githubusercontent.com/116869307/214142966-3facb074-7909-40e0-a9c9-4588e1bfc938.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADD_2** is a generic function block for adding two values, developed under the EPL-2.0 license. Version 1.0 supports various numeric data types according to the IEC 61131-3 standard.
@@ -30,11 +31,14 @@ The **ADD_2** is a generic function block for adding two values, developed under
 ## Functionality
 
 1. **Calculation Request**:
+
 - `REQ` event with Values for IN1 and IN2
-2. **Addition**:
+1. **Addition**:
+
 - Type-preserving calculation (IN1 + IN2)
 - Supported types: INT, DINT, REAL, LREAL, etc.
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with calculated OUT value
 - Automatic type adjustment
 
@@ -48,7 +52,7 @@ The **ADD_2** is a generic function block for adding two values, developed under
 ## Supported Data Types
 
 | Type | Example |
-|----------|--------------------|
+| ---------- | -------------------- |
 | INT | 123 + 456 = 579 |
 | REAL | 1.23 + 4.56 = 5.79 |
 | TIME | T#1s + T#2s = T#3s |
@@ -64,7 +68,7 @@ The **ADD_2** is a generic function block for adding two values, developed under
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | ADD_2 | ADD_4 | MUL_2 |
-|---------------|--------|--------|--------|
+| --------------- | -------- | -------- | -------- |
 | Operation | Addition | Addition | Multiplication |
 | Inputs | 2 | 4 | 2 |
 | Type Support | ANY_MAG | ANY_MAG | ANY_MAG |

@@ -3,10 +3,12 @@
 ![AUS_TO_AX](./AUS_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **OFF_TO_AX** is a composite FB for converting an **OFF** adapter (USINT data) into an **AX** adapter (BOOL data).
 It compares the incoming USINT value with zero and outputs the result as a Boolean signal. This enables the simple conversion of counter or sensor data into a binary status signal.
+
 ## Interface Structure
 
 The FB does not offer direct event or data connections, but only adapter interfaces.
@@ -30,7 +32,7 @@ No direct data outputs. The data signal (BOOL) is output via the adapter **AX\_O
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-|------|----------|-----|-----------|
+| ------ | ---------- | ----- | ----------- |
 | AUS\_IN | Socket | adapter::types::unidirectional::AUS | USINT input value and event |
 | AX\_OUT | Plug | adapter::types::unidirectional::AX | BOOL output value and event |
 

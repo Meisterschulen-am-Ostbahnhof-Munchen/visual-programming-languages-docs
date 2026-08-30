@@ -1,9 +1,11 @@
 # TypeHash
 
 * * * * * * * * * *
+
 ## Introduction
 
 The attribute declaration `TypeHash` defines a fixed type hash for function blocks.
+
 ## Technical Details
 
 - **Base Data Type:** `STRING`

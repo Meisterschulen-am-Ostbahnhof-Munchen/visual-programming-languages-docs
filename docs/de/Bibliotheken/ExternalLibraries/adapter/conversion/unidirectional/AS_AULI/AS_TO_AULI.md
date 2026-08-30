@@ -89,7 +89,7 @@ Eine Fehlerbehandlung ist nicht explizit modelliert; der innere Baustein gibt be
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Zieltyp | Quelltyp | Besonderheit |
-|----------|---------|----------|--------------|
+| ---------- | --------- | ---------- | -------------- |
 | `AS_TO_AULI` | ULINT | SINT | Konvertierung SINT → ULINT |
 | `AS_TO_AUDI` | UDINT | SINT | Konvertierung SINT → UDINT (32 Bit) |
 | `AS_TO_AWORD` | WORD | SINT | Konvertierung SINT → WORD (16 Bit) |

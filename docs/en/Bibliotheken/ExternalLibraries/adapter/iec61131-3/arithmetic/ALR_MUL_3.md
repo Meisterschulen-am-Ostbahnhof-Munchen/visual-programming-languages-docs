@@ -5,6 +5,7 @@
 *(Symbolic representation of the function block)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_MUL_3` is a generic block from the `adapter::iec61131::arithmetic` library, designed for the arithmetic multiplication of three input values. Instead of classic, discrete data inputs, this block uses unidirectional adapters of type `ALR` to encapsulate and transmit data and control events. This enables structured, modular, and clear wiring within the 4diac IDE.
@@ -57,7 +58,7 @@ Since this is a generic function block (Generic class: `GEN_ALR_MUL`), the actua
 
 - **Generic Design:** By assigning the attribute `GenericClassName = 'GEN_ALR_MUL'`, the function block can be used flexibly for various data types, provided the adapters used support them.
 - **Adapter-Based Coupling:** Using adapters instead of loose event/data connections drastically reduces the wiring effort (routing) within the 4diac application and improves clarity.
-- * **Unidirectionality:** The `ALR` adapters used are defined as unidirectional, ensuring a clear and feedback-free data flow from the sources (sockets) to the sink (plug).
+- - **Unidirectionality:** The `ALR` adapters used are defined as unidirectional, ensuring a clear and feedback-free data flow from the sources (sockets) to the sink (plug).
 
 ---
 

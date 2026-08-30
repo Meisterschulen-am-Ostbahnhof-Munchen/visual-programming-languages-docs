@@ -44,18 +44,20 @@ This is the central logic block of the exercise.
 The exercise sequence is determined by the interaction of the buttons with the sequencer module:
 
 1. **Sequence Control**:
+
 - Button **I1** is connected to input `START_S1`. A click starts the sequence.
 - Button **I2** interacts with transition `S2_S3`.
 - Button **I3** interacts with transition `S4_START`.
 - Button **I4** is connected to input `RESET` and stops/resets the entire sequence.
-- 2. **Signal Output**:
+- 1. **Signal Output**:
 - The sequencer `sequence_04` switches the outputs depending on the active step:
 - Step 1 activates **Q1**.
 - Step 2 activates **Q2**.
 - Step 3 activates **Q3**.
 - Step 4 activates **Q4**.
 - The time parameters (T#2s) in the sequencer indicate that the steps have a defined runtime or that automatic transitions occur after 2 seconds, provided they are not overdriven by the inputs.
-3. **Visualization**:
+1. **Visualization**:
+
 - The current step number (`STATE_NR` from the sequencer) is sent to the converter `F_SINT_TO_UINT`.
 - The converted value (`u32NewValue`) is passed to the function block `Q_NumericValue` to display the active step number on the display (object `OutputNumber_N1`).
 

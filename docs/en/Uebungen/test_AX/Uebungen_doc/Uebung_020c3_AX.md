@@ -1,7 +1,8 @@
 # Exercise_020c3_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_FB_TON; Power-On Delay
 
-This article describes the logiBUS® exercise `Uebung_020c3_AX`. It uses the adapter-based IEC 61131-3 timer block `AX_FB_TON`, which requires regular triggering (clock) to update its internal status (ET).
+This article describes the logiBUS® exercise `Uebung_020c3_AX`. It uses the adapter-based IEC 61131-3 timer block `AX_FB_TON`, which requires regular triggering (clock) to update its internal status (ET)
 ----
+
 ## Objective of the Exercise
 
 The objective is to implement a power-on delay using classic PLC behavior (including an ET output) in an event-driven environment. Since `AX_FB_TON` expects cyclic behavior for timing calculations, a clock generator (`E_CYCLE`) is used.

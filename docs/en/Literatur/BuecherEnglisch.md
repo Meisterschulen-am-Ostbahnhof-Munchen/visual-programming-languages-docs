@@ -5,6 +5,7 @@
 ### About the Book
 
 This book is considered the definitive English-language standard work on the IEC 61499 standard. It examines the paradigm shift from centralized PLC control to distributed, component-based automation. The author provides a thorough introduction to the architectural model, execution semantics, and service interface function blocks. It is an invaluable resource for software architects and control engineers designing the next generation of industrial IoT (IIoT) systems.
+
 ### About the Author
 
 **Valeriy Vyatkin** is a professor of computer science in industrial automation. With professorships at Aalto University (Finland) and Luleå University of Technology (Sweden), he is a leading academic voice in the advancement of intelligent, distributed automation. His work was crucial in demonstrating how formal methods and distributed intelligence can make automation systems more flexible and reliable.

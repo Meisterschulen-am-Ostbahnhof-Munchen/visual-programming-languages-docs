@@ -4,6 +4,7 @@
 ![sequence_ET_04_ecc](./sequence_ET_04_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_ET_04` is a sequencer with four output states. It enables the control of a cyclic sequence of four steps (State_01 to State_04), where the transition between states can occur either through an external event or after an adjustable time. This function block is designed for applications where process steps must be executed sequentially with time-based or event-driven flexibility.
@@ -41,7 +42,7 @@ The function block `sequence_ET_04` is a sequencer with four output states. It e
 
 - **`STATE_NR`** (Type: `SINT`): Current state number according to the constant `sequence::State_XX` (START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4).
 
-### Data Outputs * **`DO_S1`** (Type: `BOOL`): Is `TRUE` when `State_01` is active.
+### Data Outputs * **`DO_S1`** (Type: `BOOL`): Is `TRUE` when `State_01` is active
 
 - **`DO_S2`** (Type: `BOOL`): Is `TRUE` when `State_02` is active.
 - **`DO_S3`** (Type: `BOOL`): Is `TRUE` when `State_03` is active.
@@ -70,6 +71,7 @@ A state change can occur in two ways:
 
 After `State_04`, the block switches to the `State_00` state (from where the sequence can be restarted with `START_S1`) or directly back to the `START` state via `RESET`. A `RESET` event immediately deactivates all active outputs and returns the block to its initial state.
 ...
+
 ## Technical Features
 
 - **Hybrid Transitions**: Each state transition can be individually configured as purely event-driven, purely time-driven, or a combination of both. A time-driven transition takes precedence unless the time is `NO_TIME`.

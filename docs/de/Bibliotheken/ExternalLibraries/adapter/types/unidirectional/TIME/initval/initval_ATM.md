@@ -3,6 +3,7 @@
 ![initval_ATM](initval_ATM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_ATM` ist der konfigurierbare Initialisierungsbaustein für den [ATM](../ATM.md)-Adapter (Datentyp `TIME`, Zeitdauer): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `ATM`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

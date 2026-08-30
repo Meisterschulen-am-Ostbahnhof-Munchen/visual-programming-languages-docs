@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_MUX_8` (Event Multiplexer) is a function block according to IEC 61499 that combines eight event inputs (`EI1` to `EI8`) into a single event output (`EO`). In addition to combining the inputs, the block outputs a data output, `K`, indicating which input triggered the event. It is the counterpart to the `E_DEMUX_8`.

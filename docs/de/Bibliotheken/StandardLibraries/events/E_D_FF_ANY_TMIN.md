@@ -1,6 +1,7 @@
 # E_D_FF_ANY_TMIN
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_D_FF_ANY_TMIN` ist die generisch typisierte Variante von [E_D_FF_TMIN](E_D_FF_TMIN.md): Er kombiniert [E_D_FF_ANY](E_D_FF_ANY.md) (änderungserkennendes Latch für beliebige Datentypen) mit [E_TMIN](E_TMIN.md) (Mindestabstandszeit) und eignet sich damit für alle Datentypen, nicht nur `BOOL`.

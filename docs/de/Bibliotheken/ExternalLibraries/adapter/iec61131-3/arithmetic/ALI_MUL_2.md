@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_MUL_2` dient zur Durchführung einer arithmetischen Multiplikation zweier Werte. Es handelt sich um einen generischen Funktionsbaustein, der für eine saubere und modulare Architektur in IEC 61499-Systemen konzipiert ist. Anstelle von klassisch diskreten Daten- und Ereignisports nutzt dieser Baustein unidirektionale Adapter, um Steuerungsereignisse und Datenwerte gebündelt zu übertragen.

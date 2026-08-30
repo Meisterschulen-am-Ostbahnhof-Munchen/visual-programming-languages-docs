@@ -3,6 +3,7 @@
 ![Uebung_211b_ALR_network](./Uebung_211b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (ADI_FB_CTU) im Adapter-Format. Der Zählerwert wird auf einem Terminal (PHYS) ausgegeben. Die Konfiguration ermöglicht das Zählen von Impulsen, Rücksetzen des Zählers und die Darstellung des aktuellen Zählwertes inklusive negativer Werte.

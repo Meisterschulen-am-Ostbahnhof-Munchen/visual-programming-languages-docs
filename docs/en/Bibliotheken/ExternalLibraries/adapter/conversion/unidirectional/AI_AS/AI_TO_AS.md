@@ -3,9 +3,11 @@
 ![AI_TO_AS](./AI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_TO_AS** is a composite block that converts an adapter of type `AI` (based on `INT`) into an adapter of type `AS` (based on `SINT`). It serves as an interface converter between different data formats in the IEC 61499 architecture.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The FB does not have its own data outputs. The converted `SINT` value is output 
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `AI_IN` | Input (Socket) | `adapter::types::unidirectional::AI` | INT-based adapter input; provides the event `E1` and the data value `D1` (type `INT`). |
 | `AS_OUT` | Output (Plug) | `adapter::types::unidirectional::AS` | SINT-based adapter output; receives the event `E1` and passes on the converted data value `D1` (type `SINT`). |
 
@@ -48,7 +50,7 @@ As soon as an event `E1` arrives at the adapter input `AI_IN`, the corresponding
 The function block does not have its own state machine. The internal logic follows the simple sequence of function block `F_INT_TO_SINT`:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Idle** | Waiting for an event at `AI_IN.E1`. |
 | **Convert** | Upon arrival of `E1`, the value from `AI_IN.D1` is read, converted, and passed to `AS_OUT.D1`. Then, `AS_OUT.E1` is triggered. The function block immediately returns to the idle state. |
 

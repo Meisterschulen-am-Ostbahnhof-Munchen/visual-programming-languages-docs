@@ -18,7 +18,7 @@ Der SubAppType besitzt keine eigenen Ein-/Ausgangs-Schnittstellen, sondern kommu
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Beschreibung |
-|--------------|-----|--------------|
+| -------------- | ----- | -------------- |
 | SoftKey_UP_F1 | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F1 – ausgelöst bei **Taste loslassen** (SK_RELEASED) |
 | SoftKey_F2_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F2 – ausgelöst bei **Taste drücken** (SK_PRESSED) |
 | SoftKey_F3_DOWN | `isobus::UT::io::Softkey::Softkey_IE` | Softkey F3 – ausgelöst bei **Taste drücken** (SK_PRESSED) |

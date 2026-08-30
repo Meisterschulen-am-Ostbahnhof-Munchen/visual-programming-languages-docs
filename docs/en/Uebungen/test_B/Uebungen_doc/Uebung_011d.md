@@ -3,6 +3,7 @@
 ![Uebung_011d_network](./Uebung_011d_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 In this exercise, a numeric value is read from an input device (I1) and passed unchanged to an output device (N3). Using a conversion block, the incoming 32-bit value of `DWORD` is converted to `UDINT`. This type conversion results in an offset/scaling effect, which shifts the output relative to the raw value.
@@ -21,7 +22,7 @@ This exercise demonstrates the basic handling of the `NumericValue` interface an
 Three function blocks are used in the exercise network. No sub-blocks are present.
 
 | Name | Type | Parameters |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `InputNumber_I1` | `isobus::UT::io::NumericValue::NumericValue_ID` | `QI = TRUE`, `u16ObjId = "InputNumber_I1"` |
 | `F_DWORD_TO_UDINT` | `iec61131::conversion::F_DWORD_TO_UDINT` | (no parameters) |
 | `Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = "OutputNumber_N3"` |
@@ -39,6 +40,7 @@ Reads a raw numeric value from input I1 as `DWORD` (32-bit) and outputs it to da
 Processing is event-driven:
 
 1. **Event Chain**
+
 - `InputNumber_I1` sends the event `IND` when a new input value is received.
 - This triggers the `REQ` input of `F_DWORD_TO_UDINT` via an event connection.
 - After conversion, `F_DWORD_TO_UDINT` sends the event `CNF`, which in turn triggers the `REQ` input of `Q_NumericValue`.

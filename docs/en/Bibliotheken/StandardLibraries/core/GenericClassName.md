@@ -1,9 +1,11 @@
 # GenericClassName
 
 * * * * * * * * * *
+
 ## Introduction
 
 The attribute declaration `GenericClassName` defines the class name for generic types in 4diac.
+
 ## Technical Details
 
 - **Base Data Type:** `STRING`

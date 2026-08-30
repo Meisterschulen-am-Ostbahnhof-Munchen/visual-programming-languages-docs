@@ -3,9 +3,11 @@
 ![AE_SPLIT_3](./AE_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_SPLIT_3** is used to distribute an incoming adapter data stream (of type `AE`) to three identical outputs. It is implemented as a generic function block and allows for the flexible use of different adapter types through design-time configuration.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | IN | `adapter::types::unidirectional::AE` | Incoming adapter data stream, distributed to the three outputs. |
 | Connector (Output) | OUT1 | `adapter::types::unidirectional::AE` | First output – receives the same data as the input. |
 | Connector (Output) | OUT2 | `adapter::types::unidirectional::AE` | Second output – receives the same data as the input. |
@@ -59,7 +61,7 @@ The function block does not have an internal state diagram (ECC). It operates **
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Outputs | Special Features |
-|----------|-----------------|--------------|
+| ---------- | ----------------- | -------------- |
 | `AE_SPLIT_2` | 2 | Distributed to two outputs. |
 | `AE_SPLIT_3` | 3 | Distributed to three outputs (existing FB). |
 | `AE_SPLIT_N` (hypothetical) | variable | Flexible number via parameters – requires more configuration effort. |

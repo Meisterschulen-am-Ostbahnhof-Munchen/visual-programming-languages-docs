@@ -3,6 +3,7 @@
 ![Uebung_210b_AR_network](./Uebung_210b_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung zeigt die Verwendung eines IEC 61131-3 Vorwärtszählers (CTU) in einer Adapter-Version. Der Zähler wird über zwei digitale Eingänge (CU für Zählimpulse, R für Reset) gesteuert. Der aktuelle Zählerstand wird über einen Analogausgang auf ein Terminal ausgegeben (PHYS). Ein Voreinstellwert (PV) wird beim Start auf 5 gesetzt. Der Ausgang Q des Zählers wird auf einen digitalen Ausgang geführt.

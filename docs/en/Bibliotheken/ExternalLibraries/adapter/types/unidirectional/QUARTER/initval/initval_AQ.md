@@ -3,6 +3,7 @@
 ![initval_AQ](initval_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AQ` is the configurable initialization block for the [AQ](../AQ.md) adapter (data type `BYTE`, 2-bit value (transmitted as a byte)): it accepts a start value as a data input at initialization time and writes it to a `AQ` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

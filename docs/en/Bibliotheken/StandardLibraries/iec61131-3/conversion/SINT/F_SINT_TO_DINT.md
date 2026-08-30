@@ -6,6 +6,7 @@
 
 The function block `F_SINT_TO_DINT` converts a `SINT` value (8-bit signed count) to a `DINT` value (32-bit signed count). This block is particularly useful in scenarios where type conversion is required to prepare data for further processing.
 ![F_SINT_TO_DINT](F_SINT_TO_DINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

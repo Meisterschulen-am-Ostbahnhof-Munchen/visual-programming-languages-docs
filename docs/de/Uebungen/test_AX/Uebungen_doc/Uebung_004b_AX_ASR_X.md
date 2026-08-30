@@ -16,7 +16,7 @@ Besonderheit dieser Übung ist der Hinweis im Quellcode, dass dieser Lösungsweg
 
 In dieser Sub-Application kommen verschiedene Bausteine aus der `logiBUS` Bibliothek für die IO-Anbindung sowie Bausteine aus der `adapter` Bibliothek für die logische Verarbeitung zum Einsatz.
 
-### Haupt-Bausteine:
+### Haupt-Bausteine
 
 #### **DigitalInput_CLK_I1**
 

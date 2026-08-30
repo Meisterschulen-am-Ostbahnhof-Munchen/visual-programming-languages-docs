@@ -69,14 +69,17 @@ Since this function block is a purely functional/mathematical coupler, it typica
 1. **Idle State:** The function block waits for signal updates at `IN1` or `IN2`.
 2. **Evaluate:** When an event is received at one of the sockets, the data values are added.
 3. **Output (Propagate):** The added value is output via the plug `OUT`, triggering the corresponding event.
+
 - **Measurement Aggregation:** Addition of two analog process values (e.g., two parallel flow sensors to determine the total flow rate).
 - **Setpoint Offset:** Applying a correction value or offset (via `IN2`) to a primary setpoint (via `IN1`).
 - **Signal Bundling:** Structured mathematical signal processing in complex plant control systems using standardized adapter interfaces to reduce wiring effort.
+
 - ## Comparison with Similar Components
 
 Compared to a standard add-in component (such as the IEC 61131-3 compliant `ADD` component), which uses discrete pins for `REQ`, `CNF`, `IN1`, `IN2`, and `OUT`, the `AULI_ADD_2` eliminates the need for explicit wiring of control flows (events) and data lines. This significantly improves clarity in the 4diac development environment, as only a single adapter line needs to be drawn per signal source.
 
 The `AULI_ADD_2` is a highly efficient, modular auxiliary component for analog signal processing. Through the consistent use of unidirectional adapters, it facilitates the design of cleanly structured and maintainable control applications according to the IEC 61499 standard.
+
 ## Technical Features
 
 ## State Overview

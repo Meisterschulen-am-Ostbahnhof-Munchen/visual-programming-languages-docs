@@ -5,6 +5,7 @@
 *[Image of the function block]*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_AX_SEL_ALI` is a binary selection block designed for use with unidirectional adapters. It allows you to select between two input signals based on a selector signal and then output the selected signal. This block encapsulates the standard selection logic and adapts it to an event-driven adapter interface.
@@ -50,9 +51,10 @@ The function block operates as a multiplexer for the adapter signals:
 1. **Event Detection**: As soon as an event (`IN0`, `IN1`) is received by one of the input adapters (`G`) or the selector adapter (`G`), it is intercepted via internal edge-triggered flip-flops (`E_D_FF` and `E_D_FF_ANY`, respectively).
 2. **Data Buffering**: The data from the inputs (`IN0.D1` and `IN1.D1`) are passed via internal `F_MOVE` function blocks (configured to the data type `LINT`) to the central selection function block `F_SEL`.
 3. **Selection**: The function block `F_SEL` evaluates the state of the selector `G.D1`:
+
 - If `G.D1` is set to `FALSE`, the value of `IN0` is selected.
 - If `G.D1` is set to `TRUE`, the value of `IN1` is selected.
-4. **Output**: The selected value is passed to the flip-flop `E_D_FF_ANY_OUT`. This updates the output data point `OUT.D1` and simultaneously triggers the output event `OUT.E1`.
+1. **Output**: The selected value is passed to the flip-flop `E_D_FF_ANY_OUT`. This updates the output data point `OUT.D1` and simultaneously triggers the output event `OUT.E1`.
 
 ---
 

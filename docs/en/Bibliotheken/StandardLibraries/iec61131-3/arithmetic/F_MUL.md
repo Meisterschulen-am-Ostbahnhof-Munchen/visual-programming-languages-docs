@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_MUL](F_MUL.svg)
+
 ## Introduction
 
 The **F_MUL** is a standards-compliant function block for multiplying numeric values, developed under the EPL-2.0 license. Version 1.0 enables type-safe multiplication of various numeric data types according to the IEC 61131-3 standard.
@@ -30,15 +31,18 @@ The **F_MUL** is a standards-compliant function block for multiplying numeric va
 ## Operating Principle
 
 1. **Calculation Trigger**:
+
 - `REQ` event with values for IN1 and IN2
 - Both inputs must be of type ANY_NUM be
-2. **Multiplication**:
+1. **Multiplication**:
+
 - Type-preserving calculation (IN1 × IN2)
 - Supported types:
 - Integers (INT, DINT)
 - Floating-point numbers (REAL, LREAL)
 - Mixed types (automatic conversion)
-3. **Result output**:
+1. **Result output**:
+
 - `CNF` event with calculated product
 - Result in the "largest" input type
 
@@ -69,7 +73,7 @@ The **F_MUL** is a standards-compliant function block for multiplying numeric va
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_MUL | F_ADD | F_DIV |
-|---------------|--------|--------|--------|
+| --------------- | -------- | -------- | -------- |
 | Operation | Multiplication | Addition | Division |
 | Inputs | 2 | 2 | 2 |
 | Type support | ANY_NUM | ANY_NUM | ANY_NUM |

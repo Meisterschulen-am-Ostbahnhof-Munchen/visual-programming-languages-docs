@@ -1,6 +1,7 @@
 # AX_BLINK
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_BLINK ist ein Funktionsblock, der ein blinkendes Signal über einen AX-Adapter ausgibt.

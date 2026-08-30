@@ -3,6 +3,7 @@
 ![FIELDBUS_DWORD_TO_SIGNAL_SCALED](./FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_DWORD_TO_SIGNAL_SCALED** dient der Konvertierung eines Feldbus-DWORD-Signals in einen skalierten LREAL-Wert. Er prüft die Gültigkeit des Eingangssignals anhand eines vordefinierten Bereichs und berechnet bei gültigem Signal den Ausgangswert durch Multiplikation mit einem Skalierungsfaktor und Addition eines Offsets. Bei ungültigem Signal wird der Ausgang auf 0 gesetzt und die Gültigkeitsflagge auf FALSE gesetzt.

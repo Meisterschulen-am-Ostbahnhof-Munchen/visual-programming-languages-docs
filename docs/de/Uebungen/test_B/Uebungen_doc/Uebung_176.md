@@ -7,6 +7,7 @@ Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XM
 ![Uebung_176_network](./Uebung_176_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die `Uebung_176` ist eine Übungseinheit, die sich mit der Ereigniserzeugung bei steigenden Flanken beschäftigt. Der Fokus liegt auf dem Verständnis und der Anwendung des `E_TRIG` (Edge Trigger) Bausteins innerhalb einer IEC 61499 Anwendung. Die Übung stellt ein Grundgerüst bereit, welches durch den Benutzer vervollständigt werden muss.
@@ -34,12 +35,12 @@ In dieser Sub-Application wird der folgende Funktionsbaustein verwendet, um die 
 
 Diese Übung ist als Vorlage konzipiert. Aktuell sind im Netzwerk keine Verbindungen definiert, jedoch ist der zentrale Baustein `E_TRIG_1` platziert.
 
-### Lernziele und Aufgaben:
+### Lernziele und Aufgaben
 
 -   **Verständnis der Flankenerkennung**: Lernen, wie Signale auf Zustandsänderungen überwacht werden.
 -   **TODO**: Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt "TODO". Dies weist darauf hin, dass der Lernende die notwendigen Ereignis- und Datenverbindungen herstellen muss, um die Funktionalität zu gewährleisten.
 
-### Start der Übung:
+### Start der Übung
 
 1.  Öffnen Sie die `Uebung_176` in der 4diac IDE.
 2.  Beachten Sie den platzierten `E_TRIG_1` Baustein an den Koordinaten (-3000, -1000).

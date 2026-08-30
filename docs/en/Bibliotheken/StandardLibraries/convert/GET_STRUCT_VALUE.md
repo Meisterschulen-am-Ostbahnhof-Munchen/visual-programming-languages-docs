@@ -6,25 +6,26 @@
 
 The function block (FB) `GET_STRUCT_VALUE` is a service interface module designed to dynamically read specific values from a given data structure. It provides a flexible way to access structure members whose names or paths are determined at runtime.
 ![GET_STRUCT_VALUE](GET_STRUCT_VALUE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Description | Data with |
 | :--- | :---- | :------------------------------- | :-------- |
-| `REQ`| `Event`| Requests the retrieval of a value from the structure. | `member`, `in_struct` |
+| `REQ` | `Event` | Requests the retrieval of a value from the structure. | `member`, `in_struct` |
 
 ### **Event Outputs**
 
 | Name | Type | Description | Data with |
 | :--- | :---- | :------------------------------- | :-------- |
-| `CNF`| `Event`| Confirms the completion of the `REQ` event. | `QO`, `output` |
+| `CNF` | `Event` | Confirms the completion of the `REQ` event. | `QO`, `output` |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
 | :-------- | :------- | :------------------------------------------------------------------------------------------------------- |
-| `in_struct`| `ANY` | The data structure from which a value is to be read. |
+| `in_struct` | `ANY` | The data structure from which a value is to be read. |
 | `member` | `STRING` | The name of the member of the structure to be retrieved. Inner members are accessed using the dot operator (`.`). |
 
 ### **Data Outputs**

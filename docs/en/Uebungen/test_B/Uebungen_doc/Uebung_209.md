@@ -3,6 +3,7 @@
 ![Uebung_209_network](./Uebung_209_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **mutual interlock** between two reset-dominant RS latches. The function blocks `ILOCK_FB_RS` are connected via an AX2 adapter, ensuring that only one of the two outputs can be active at any given time. As soon as one latch is set, the other is forcibly reset. The inputs and outputs are connected to digital logiBUS hardware (inputs I1–I4, outputs Q1 and Q2).
@@ -11,7 +12,7 @@ This exercise teaches the use of special interlock blocks, which are used in con
 ## Function Blocks Used (FBs)
 
 | Block Name | Type | Parameters / Connections |
-|--------------|-----|------------------------|
+| -------------- | ----- | ------------------------ |
 | `DigitalInput_S1` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I1` (Power-On Signal 1) |
 | `DigitalInput_R1` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I2` (Reset Signal 1) |
 | `DigitalInput_S2` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I3` (Power-on signal 2) |
@@ -33,24 +34,24 @@ The system is **event-driven**:
 
 A signal on a digital input (e.g., `Input_I1` for setting Latch 1) generates an event `IND` at the corresponding `DigitalInput` function block.
 
-2. **Process in the Latch**
+1. **Process in the Latch**
 
 This event is forwarded to the `REQ` input of the associated `ILOCK_RS` function block. Simultaneously, the data values (`S` and `R1`) from the digital input are transferred to the latch.
 
 The block processes the signals (reset dominant) and outputs a `CNF` event upon completion.
 
-3. **Output**
+1. **Output**
 
 The `CNF` event activates the `DigitalOutput` block, which sets the current state of the latch to the physical output (e.g., `Output_Q1`).
 
-4. **Locking**
+1. **Locking**
 
 The adapter output `ILOCK_RS_1.ILOCK_OUT` is connected to the adapter input `ILOCK_RS_2.ILOCK_IN`. When Latch 1 is set, Latch 2 receives an active signal via the adapter line, which resets it (and vice versa). This prevents both `Q1` and `Q2` from being HIGH simultaneously.
 
 **Connection Overview:**
 
 | Source | Destination | Type |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `DigitalInput_S1.IND` | `ILOCK_RS_1.REQ` | Event |
 | `DigitalInput_R1.IND` | `ILOCK_RS_1.REQ` | Event |
 | `DigitalInput_S2.IND` | `ILOCK_RS_2.REQ` | Event |

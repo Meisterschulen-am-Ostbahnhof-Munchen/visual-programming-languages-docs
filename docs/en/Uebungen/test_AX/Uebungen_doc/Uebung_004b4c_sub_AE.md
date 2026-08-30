@@ -3,6 +3,7 @@
 ![Uebung_004b4c_sub_AE_network](./Uebung_004b4c_sub_AE_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This sub-application implements a latching toggle flip-flop that can be controlled via an **AE2 adapter (socket)** and receive feedback via an **AE2 adapter (plug)** and an **AX adapter (Q)**. The flip-flop is toggled by an incoming event at input `IND`. It can also be reset via the AE2 adapter, which represents the **latching** function. The current state of the flip-flop is output via the AX adapter.
@@ -38,7 +39,7 @@ Converts the flip-flop's Boolean output `Q` into an AX adapter signal, which is 
 
 The incoming event at input `IND` is directly forwarded to the event input `EI` of the turnout `E_SWITCH_I1`.
 
-2. **Turnout Control via Flip-Flop State**
+1. **Turnout Control via Flip-Flop State**
 
 The output `Q` of the flip-flop `E_SR_I1` is connected to the control input `G` of the turnout.
 
@@ -46,13 +47,15 @@ The output `Q` of the flip-flop `E_SR_I1` is connected to the control input `G` 
 
 The output `Q` of the flip-flop `E_SR_I1` is connected to the control input `G` of the turnout. - If `Q = TRUE` is present, it switches to `EO1`.
 
-3. **Toggle Function**
+1. **Toggle Function**
+
 - `EO0` is connected to the set input `S` of the flip-flop → sets `Q` to `TRUE`.
 - `EO1` is connected to the reset input `R` of the flip-flop → sets `Q` to `FALSE`.
 
 This causes the flip-flop to toggle with each incoming event.
 
-4. **Integration of the AE2 Adapter**
+1. **Integration of the AE2 Adapter**
+
 - The event from `EO0` is also routed to the `REQ` inputs of **both** adapter converters (`AE2_EVENT_TO_E` and `AE2_E_TO_EVENT`).
 - The converters are interconnected:
 - The `CNF` output of `AE2_EVENT_TO_E` triggers the `REQ` input of `AE2_E_TO_EVENT` and simultaneously goes to the reset input `R` of the flip-flop.

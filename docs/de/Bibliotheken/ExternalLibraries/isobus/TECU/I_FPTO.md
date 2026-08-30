@@ -36,7 +36,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 ## FPTO-Parameter
 
 | Parameter | Typ | Beschreibung | SPN | Bit-Länge | Skalierung |
-|-----------|------|--------------|-----|-----------|------------|
+| ----------- | ------ | -------------- | ----- | ----------- | ------------ |
 | `FRONT_PTO_OUTP_SHAFT_SPEED` | UINT | Aktuelle Drehzahl der FPTO-Welle | 1882 | 16 | 0.125 1/min/bit |
 | `FRONT_PTO_OUTP_SH_SPEED_SET` | UINT | Soll-Drehzahl der FPTO-Welle | 1884 | 16 | 0.125 1/min/bit |
 | `FRONT_PTO_ENGAGEMENT` | BYTE | Zustand der FPTO-Kupplung | 1888 | 2 | 4 Zustände/2 bit |
@@ -78,10 +78,10 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | I_FPTO | Standard_PTO | Advanced_PTO |
-|---------------|--------|--------------|--------------|
-| ISO-Standard  | ✔ (ISO 11783-7) | ✔ | ✖ |
-| Front-PTO     | ✔ | ✖ | ✔ |
+| Feature | I_FPTO | Standard_PTO | Advanced_PTO |
+| --------------- | -------- | -------------- | -------------- |
+| ISO-Standard | ✔ (ISO 11783-7) | ✔ | ✖ |
+| Front-PTO | ✔ | ✖ | ✔ |
 | Economy-Modus | ✔ | ✖ | ✔ |
 | Diagnosecodes | ✔ | ✖ | ✔ |
 

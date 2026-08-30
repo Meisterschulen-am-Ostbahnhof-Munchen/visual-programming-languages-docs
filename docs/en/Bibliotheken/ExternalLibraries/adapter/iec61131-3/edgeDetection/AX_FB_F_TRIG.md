@@ -4,6 +4,7 @@
 *Insert placeholder for the function block image here, if available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_FB_F_TRIG** function block (Falling Edge Trigger with AX Adapter) is used to detect a falling edge (signal change from TRUE to FALSE) within an adapter-based architecture. It implements the logic of a standard IEC 61131-3 function block (`F_TRIG`), but uses **AX Adapters** to encapsulate data and event signals, thus reducing wiring complexity in IEC 61499 applications.
@@ -40,8 +41,8 @@ The function block does not use traditional separate event and data pins, but in
 The function block monitors the logical state of the data input in adapter `CLK` (field `D1`). For each event at input `CLK` (`E1`), the following algorithm is executed:
 
 1. The function block checks whether a transition from **TRUE** (High) to **FALSE** (Low) has occurred. 2. An internal memory (`MEM`) is used to store the inverted state of the last cycle.
-3. The logic is: `Q.D1 := NOT CLK.D1 AND NOT MEM`.
-4. The memory is updated: `MEM := NOT CLK.D1`.
+2. The logic is: `Q.D1 := NOT CLK.D1 AND NOT MEM`.
+3. The memory is updated: `MEM := NOT CLK.D1`.
 
 **Behavior:**
 

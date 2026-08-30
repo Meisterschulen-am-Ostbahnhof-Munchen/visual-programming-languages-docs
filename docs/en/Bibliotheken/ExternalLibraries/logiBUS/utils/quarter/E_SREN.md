@@ -4,6 +4,7 @@
 ![E_SREN_ecc](./E_SREN_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The E_SREN (Event-driven quad-state) is an event-driven function block that controls an output with four defined states. It reacts to various input events and sets its output accordingly to one of the four states: Enabled (`SET`), Disabled (`RESET`), Error (`ERROR`), or No Action (`NONE`). This function block is particularly suitable for applications where a signal must represent multiple operating states, such as in monitoring or control systems.
@@ -55,9 +56,9 @@ The ECC (Execution Control Chart) consists of six states:
 
 1. **START:** Initial and idle state.
 2. **SET:** Activated by the `S` event. 3. **RESET:** Activated on event `Q=TRUE`, `QB=COMMAND_ENABLE`.
-4. **Error:** Activated on event `R`. Sets `Q=FALSE`, `QB=COMMAND_DISABLE`.
-5. **none:** Activated on event `ERR`. Sets `Q=FALSE`, `QB=STATUS_ERROR`.
-6. **none:** Activated on event `NONE`. Sets `QB=COMMAND_NO_ACTION`. `Q` remains unchanged.
+3. **Error:** Activated on event `R`. Sets `Q=FALSE`, `QB=COMMAND_DISABLE`.
+4. **none:** Activated on event `ERR`. Sets `Q=FALSE`, `QB=STATUS_ERROR`.
+5. **none:** Activated on event `NONE`. Sets `QB=COMMAND_NO_ACTION`. `Q` remains unchanged.
 6. **FireEvent:** This event is only triggered if `Q` or `QB` has changed. It saves the new values and triggers `EO`.
 
 ## Application Scenarios

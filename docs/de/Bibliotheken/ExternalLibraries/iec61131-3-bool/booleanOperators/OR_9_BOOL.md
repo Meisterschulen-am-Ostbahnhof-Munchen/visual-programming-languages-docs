@@ -3,6 +3,7 @@
 <img width="1370" height="457" alt="image" src="https://github.com/user-attachments/assets/8371b695-a421-40f0-9019-239b40fdc3ee" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_9_BOOL` ist ein standardisierter Baustein gemäß IEC 61131-3 zur Berechnung der logischen ODER-Verknüpfung. Er führt die ODER-Operation über neun separate boolesche Eingänge aus. Der Block folgt dem ereignisgesteuerten Ausführungsmodell der 4diac-IDE: Die Berechnung wird durch ein eingehendes Ereignis ausgelöst, und das Ergebnis wird zusammen mit einem Bestätigungsereignis ausgegeben.

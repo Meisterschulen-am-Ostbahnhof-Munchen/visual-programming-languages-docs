@@ -6,6 +6,7 @@
 
 The function block `OR_3_BOOL` is a standardized block according to IEC 61131-3 for performing a logical OR operation. It calculates the logical OR (disjunction) of three Boolean input signals. The block is implemented as a generic function and is executed on every trigger event.
 ![OR_3_BOOL](OR_3_BOOL.svg)
+
 ## Interface Structure
 
 The function block has one event input, one event output, three data inputs, and one data output. No adapter interfaces are available.
@@ -39,7 +40,7 @@ Whenever the event `REQ` occurs, the function block performs a logical OR operat
 The logical function can be described by the following truth table:
 
 | IN1 | IN2 | IN3 | OUT (IN1 OR IN2 OR IN3) |
-|:---:|:---:|:---:|:-----------------------:|
+| :---: | :---: | :---: | :-----------------------: |
 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 1 |
 | 0 | 1 | 0 | 1 |
@@ -47,7 +48,7 @@ The logical function can be described by the following truth table:
 | 1 | 0 | 0 | 1 |
 | 1 | 0 | 1 | 1 |
 | 1 | 1 | 1 | 1 |
-| 0 ...| 0 | 1 | 1 | 1 | 1 |
+| 0 ... | 0 | 1 | 1 | 1 | 1 |
 | 0 | 0 | 1 | 1 | 1 | 1 |
 | The output `OUT` is `TRUE` (1) if and only if at least one of the three inputs is `TRUE`.
 

@@ -3,12 +3,14 @@
 ![Uebung_070c_network](./Uebung_070c_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how to read the wheel-based machine speed (WBSD) from a fieldbus, convert it into a physical value, and display it as a numerical value on a Universal Terminal (UT).
 The raw integer value (UINT) is converted into a real numerical value (e.g., m/s) using scaling and then transmitted to the UT.
 
 * * * * * * * * * *
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: I_WBSD
@@ -61,6 +63,7 @@ For example, mm/s is converted to m/s using `SCALE = 0.001` and `OFFSET = 0`.
 The block displays the passed physical value (REAL) on the Universal Terminal via the ISOBUS UT standard. The specific representation (e.g., unit, decimal places) is determined by the object definition `NumberVariable_Wheel_based_machine_speed` referenced in the pool.
 
 * * * * * * * * * *
+
 ## Program Flow and Connections
 
 The three function blocks are linked in a cascade via event and data connections:
@@ -71,7 +74,7 @@ I_WBSD.IND` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.REQ` → `FIELDBUS_UINT_TO_SIGNA
 
 - The fieldbus block generates the event `IND` when a new wheel speed value is received, which triggers the conversion.
 - After successful conversion, `CNF` signals the UT block to display the updated value.
-2. **Data Flow**
+1. **Data Flow**
 
 I_WBSD.WHEELBASEDMACHINESPEED` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.IN`
 
@@ -92,6 +95,7 @@ FIELDBUS_UINT_TO_SIGNAL_SCALED.OUT` → `Q_NumericValue.rPhys`
 Import the SubApp into your 4diac project and integrate it into a suitable application (e.g., with an event-driven cycle). Ensure that the referenced UT object definition `NumberVariable_Wheel_based_machine_speed` is present in the corresponding pool.
 
 * * * * * * * * * *
+
 ## Summary
 
 Exercise **Exercise_070c** demonstrates a complete data path from fieldbus data acquisition (WBSD) through scaled conversion to display on a Universal Terminal. The use of standardized ISOBUS components enables easy integration into agricultural control systems and shows how physical values can be derived from raw bus data.

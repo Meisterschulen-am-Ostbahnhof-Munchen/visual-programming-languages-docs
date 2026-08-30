@@ -3,9 +3,11 @@
 ![ISOUSERHOME_e](./ISOUSERHOME_e.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ISOUSERHOME_e` is a **constant definition** (GlobalConstants) and not an executable function block in the traditional sense. It defines an enumeration of integer constants used to describe the network origin or destination of an event or message in an ISOBUS context (ISO 11783). These constants are typically used in other function blocks to identify the source or receiver of data within a controller network.
+
 ## Interface Structure
 
 Because it is a constant definition, `ISOUSERHOME_e` does not have event- or dataflow-based interfaces like a standard function block. Instead, it provides named constants.
@@ -59,6 +61,7 @@ These constants are primarily used in ISOBUS-compliant control systems in agricu
 - **Message Construction:** A sender block can set this value to identify the intended recipient of a sent message.
 - **Status Feedback:** A block can return the status `notdef` if the origin or destination of a message cannot be determined.
 - **Message Construction:**
+
 ## ⚖️ Comparison with Similar Building Blocks
 
 - **`E_SR` or `E_RESTART`:** These are executable basic function blocks with event logic. `ISOUSERHOME_e`, on the other hand, is a pure data definition without logic.

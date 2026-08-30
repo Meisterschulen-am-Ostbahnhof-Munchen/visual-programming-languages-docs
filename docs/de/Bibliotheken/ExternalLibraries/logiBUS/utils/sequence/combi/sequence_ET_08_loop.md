@@ -5,6 +5,7 @@
 ![sequence_ET_08_loop_ecc](./sequence_ET_08_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_ET_08_loop` ist ein Sequenzer mit acht Ausgangszuständen, der in einer Schleife arbeitet. Er ermöglicht den Übergang zwischen den Zuständen entweder durch ein externes Ereignis oder zeitgesteuert nach einem einstellbaren Zeitintervall. Der Baustein ist für Steuerungsaufgaben konzipiert, bei denen eine festgelegte Abfolge von Aktionen (repräsentiert durch die Ausgänge `DO_S1` bis `DO_S8`) durchlaufen werden muss. Ein zentrales Merkmal ist die Möglichkeit, jeden Zustandsübergang individuell als ereignis- oder zeitgesteuert zu konfigurieren.

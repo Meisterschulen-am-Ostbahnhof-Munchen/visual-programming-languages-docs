@@ -3,10 +3,12 @@
 ![CSV_WRITER_6](https://github.com/user-attachments/assets/f5ac4221-a93b-49d5-b7b3-280d171a347a)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `CSV_WRITER_6` is used to write data to a CSV file. It allows the storage of up to six different data values in a comma-separated format. The block is particularly useful for data acquisition and logging in automation systems.
 ![CSV_WRITER_6](CSV_WRITER_6.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

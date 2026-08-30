@@ -3,9 +3,11 @@
 ![ALI_SPLIT_9](./ALI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_SPLIT_9** is a generic function block (FB) within the 4diac IDE, used to split an incoming **ALI** adapter signal (unidirectional) into up to nine separate output adapters. The block is implemented as a generic type ("Generic FB") and is typically customized using the type parameters `eclipse4diac::core::GenericClassName` and `eclipse4diac::core::TypeHash`. The goal is flexible signal distribution without additional logic, purely at the adapter level.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | IN | `ALI` (unidirectional) | Input of the ALI signal to be distributed |
 | Plug (Output 1) | OUT1 | `ALI` (unidirectional) | First output – identical copy of the input signal |
 | Plug (Output 2) | OUT2 | `ALI` (unidirectional) | Second output |

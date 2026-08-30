@@ -4,6 +4,7 @@
 ![AW_D_FF_TMIN](./AW_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AW_D_FF_TMIN** is a composed IEC 61499 function block (a type of data latch flip-flop) that receives an incoming data value on an adapter, takes over upon an event, and passes it on to an output adapter with a minimal delay between two consecutive output events. It serves as a reliable buffer, extending the output events to a minimum time defined by the parameter `Tmin`.
@@ -35,7 +36,7 @@ The function block (FB) has no direct data outputs; the latching value is provid
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | `Socket` | `I` | `adapter::types::unidirectional::AW` | Value to be latched (input adapter). Contains the event and data interfaces `I.E1` and `I.D1`. |
 | `Plug` | `Q` | `adapter::types::unidirectional::AW` | Latched value (output adapter). Contains the event and data interfaces `Q.E1` and `Q.D1`. |
 
@@ -47,15 +48,15 @@ The **AW_D_FF_TMIN** encapsulates the IEC 61499 standard function block `E_D_FF_
 
 The parameter `Tmin` is passed to the inner function block via the event input `INIT`. After successful initialization, `INITO` is output.
 
-2. **Data Latching**
+1. **Data Latching**
 
 When an event arrives at the adapter input `I.E1`, the data value simultaneously present at `I.D1` is adopted (edge-triggered D flip-flop).
 
-3. **Output with Minimum Time**
+1. **Output with Minimum Time**
 
 The latched value is output at the adapter output `Q.D1`. Simultaneously, an event is generated on `Q.E1` – but only if at least the time `Tmin` has elapsed since the last event on `Q.E1`. This ensures that the output events do not follow each other faster than allowed by `Tmin`.
 
-4. **Further Cycles**
+1. **Further Cycles**
 
 Each new event on `I.E1` repeats the latching and the timed output.
 
@@ -83,7 +84,7 @@ The internal function block `E_D_FF_ANY_TMIN` has an implicit state machine:
 ## Comparison with Similar Components
 
 | Component | Feature | Difference |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | `E_D_FF` | Simple D flip-flop without a time limit | No control over the maximum output frequency. |
 | `SR_FF` | Set-Reset flip-flop | No edge-triggered data transfer. |
 | `E_D_FF_ANY_TMIN` (direct) | Like AW_D_FF_TMIN, but a pure event/data function block | Does not have an adapter interface; the variant with an adapter increases interchangeability and encapsulation in pluggable components. |

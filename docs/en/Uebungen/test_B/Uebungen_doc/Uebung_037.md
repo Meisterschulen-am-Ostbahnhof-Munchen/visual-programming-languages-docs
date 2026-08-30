@@ -1,8 +1,9 @@
 # Exercise_037: Mirror Sequence V2 with Continuous Step Chain
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_037`. Here, a cyclically repeating sequence is programmed.
+This article describes the logiBUS® exercise `Uebung_037`. Here, a cyclically repeating sequence is programmed
 ----
+
 ## Overview
 
 ![Uebung_037_network](./Uebung_037_network.svg)

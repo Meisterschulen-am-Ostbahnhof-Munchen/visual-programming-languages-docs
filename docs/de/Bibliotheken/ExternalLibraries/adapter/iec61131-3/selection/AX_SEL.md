@@ -3,6 +3,7 @@
 <img width="1242" height="224" alt="image" src="https://github.com/user-attachments/assets/70f03e26-14b2-40a3-9eff-056402fef00e" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SEL Funktionsblock ist ein binärer Selektor, der zur Auswahl zwischen zwei Eingangswerten dient. Er gehört zur Kategorie der Standard-Selektionsfunktionen gemäß IEC 61131-3 und ermöglicht die flexible Auswahl von Daten basierend auf einem Steuersignal.

@@ -3,6 +3,7 @@
 ![AI_TO_ADI](./AI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein AI_TO_ADI ist ein Composite-Funktionsblock, der einen AI-Adapter (Integer-Werte, Typ INT) in einen ADI-Adapter (Double-Integer-Werte, Typ DINT) umwandelt. Er dient als Brücke zwischen Komponenten, die unterschiedliche Adapter-Schnittstellen verwenden.

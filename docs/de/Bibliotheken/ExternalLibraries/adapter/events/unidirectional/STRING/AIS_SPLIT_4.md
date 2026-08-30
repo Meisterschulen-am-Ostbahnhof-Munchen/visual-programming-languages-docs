@@ -3,6 +3,7 @@
 ![AIS_SPLIT_4](./AIS_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIS_SPLIT_4** dient dazu, ein eingehendes AIS-Adaptersignal (Typ `adapter::types::unidirectional::AIS`) auf vier separate Ausgänge zu verteilen. Er realisiert eine 1‑zu‑4‑Aufteilung ohne Veränderung der Daten. Der Baustein ist generisch ausgeführt und kann über den generischen Klassennamen an unterschiedliche Signaltypen angepasst werden.

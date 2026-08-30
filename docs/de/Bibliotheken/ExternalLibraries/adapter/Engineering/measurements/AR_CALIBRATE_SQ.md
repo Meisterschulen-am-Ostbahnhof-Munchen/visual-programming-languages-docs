@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_CALIBRATE_SQ` ist ein adapterbasierter, sequenzieller Baustein zur Zwei-Punkt-Kalibrierung (Offset- und anschließende Skalierungs-Kalibrierung). Er stellt sicher, dass die Kalibrierungsschritte in einer fest definierten mathematischen und logischen Reihenfolge ablaufen. Über den internen Zustandsautomaten (ECC) wird erzwungen, dass die Offset-Kalibrierung (CO) zwingend vor der Skalierungs-Kalibrierung (CS) durchgeführt werden muss.

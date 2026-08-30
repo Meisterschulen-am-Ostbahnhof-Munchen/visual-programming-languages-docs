@@ -1,9 +1,11 @@
 # ℹ️ General
 
 This section explains fundamental concepts that are important for programming according to IEC 61131-3 and IEC 61499, as well as for general computer science.
+
 ## Identifiers (Naming Conventions)
 
 Names of variables, function blocks, programs, and other elements are called **identifiers**. To ensure clean and portable code, the IEC 61131-3 standard establishes strict rules.
+
 ### Basic Rules of the Standard
 
 1. **Character Set:** Identifiers may only consist of letters (A-Z, a-z), digits (0-9), and the underscore (_).

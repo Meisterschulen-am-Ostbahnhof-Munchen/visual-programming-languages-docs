@@ -4,6 +4,7 @@
 ![ALI_DIV_2](./ALI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_DIV_2` ist ein generischer arithmetischer Funktionsbaustein für die IEC 61499, der für die Durchführung von Divisionsoperationen entwickelt wurde. Die Besonderheit dieses Bausteins liegt in der Verwendung von unidirektionalen Adaptern (`ALI`) anstelle von klassischen Daten- und Ereignis-Schnittstellen. Dies ermöglicht eine modulare und übersichtliche Strukturierung von Datenflüssen innerhalb der 4diac-IDE.
@@ -52,6 +53,7 @@ Da es sich um einen generischen Funktionsbaustein (`GEN_ALI_DIV`) handelt, kann 
 ## Zustandsübersicht
 
 Da es sich bei `ALI_DIV_2` um einen daten- und ereignisgesteuerten Rechenbaustein handelt, besitzt er keine komplexe interne Zustandsmaschine (keinen klassischen ECC). Er verhält sich wie ein funktionaler Block:
+
 1. **Warten auf Trigger:** Der Baustein wartet auf ein Aktualisierungsereignis an den Eingangs-Adaptern `IN1` oder `IN2`.
 2. **Berechnung:** Bei Signalempfang werden die Daten ausgelesen und dividiert.
 3. **Ausgabe:** Das Ergebnis wird an `OUT` angelegt und das zugehörige Ereignis über den Ausgangs-Adapter signalisiert.

@@ -3,6 +3,7 @@
 ![Uebung_001f_network](./Uebung_001f_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Negation eines digitalen Eingangssignals mithilfe des Funktionsbausteins `F_NOT_BOOL_INIT`. Der digitale Eingang `Input_I1` wird gelesen, invertiert und auf den digitalen Ausgang `Output_Q1` geschrieben. Dabei wird deutlich, dass der Negationsbaustein bereits beim Systemstart (BOOT) einen definierten Wert ausgibt, auch wenn der Eingang zu diesem Zeitpunkt noch nicht gelesen wird.

@@ -57,6 +57,7 @@ The function block follows a typical service interface pattern with initializati
 
 Compared to simple Boolean output blocks, Aux_QX offers extended service functionality with initialization sequences, parameter configuration, and detailed status management. Specific addressing via iInpNr enables integration into complex device pools.
 ...
+
 ## 🛠️ Related Exercises
 
 - [Exercise_003c_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003c_sub.md)

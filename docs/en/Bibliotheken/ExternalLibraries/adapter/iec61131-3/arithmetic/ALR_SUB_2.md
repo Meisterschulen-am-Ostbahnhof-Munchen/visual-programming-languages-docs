@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_SUB_2` is a generic block for performing mathematical subtractions within an IEC 61499 development environment (such as 4diac IDE). Instead of using direct data and event pins, this block is based on an adapter-driven architecture. This enables structured and clean signal encapsulation and simplifies wiring in complex control applications.

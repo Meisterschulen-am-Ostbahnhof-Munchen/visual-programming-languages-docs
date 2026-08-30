@@ -26,6 +26,7 @@ The image above illustrates this exact case.
 
 
 ...
+
 ### Data Outputs
 
 ### Data Inputs
@@ -51,6 +52,7 @@ The `STRUCT_DEMUX` is a stateless function block that operates according to a si
 1. **Ready**: Waits for a `REQ` event.
 2. **Executing**: Reads the input structure, extracts the member values, and sets the corresponding outputs.
 3. **Completed**: Triggers the `CNF` event and returns to the ready state.
+
 - **Complex Data Splitting**: Decomposing complex data structures (e.g., sensor data, status information) into individual signals for further processing.
 - **Improved Readability**: Instead of accessing structure members via `GET_STRUCT_VALUE`, the members can be used directly as separate data lines in the logic.
 - **Interface Adaptation**: Adapting data arriving as a single structure from a function block to multiple function blocks that expect individual inputs.

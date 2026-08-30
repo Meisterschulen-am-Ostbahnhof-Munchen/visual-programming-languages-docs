@@ -3,6 +3,7 @@
 ![Q_FillAttributes](https://user-images.githubusercontent.com/116869307/214147532-6ef11045-1dcb-4c4d-bdf3-84d87ed73257.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_FillAttributes** is a standards-compliant function module for modifying fill attributes in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.32) specification for VT systems.
@@ -46,13 +47,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object ID
 - `INITO` confirms operational readiness
-2. **Attribute Change**:
+1. **Attribute Change**:
+
 - `REQ` with new fill attributes
 - Changes Object Fill Properties
 - `CNF` provides result status and previous values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -68,7 +72,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Attribute Properties
 
 | Feature | Description |
-|---------------|----------------------------------|
+| --------------- | ---------------------------------- |
 | Fill types | According to ISO 11783-6 B.14.4 |
 | Color palette | 8-bit color index |
 | Patterns | 16-bit pattern references |
@@ -77,7 +81,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful change |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -95,7 +99,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_FillAttributes | VtSetColor | VtPatternManager |
----------------|------------------|------------|------------------|
+--------------- | ------------------ | ------------ | ------------------ |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Color Control | ✔ | ✔ | ✖ |
 | Pattern Control | ✔ | ✖ | ✔ |

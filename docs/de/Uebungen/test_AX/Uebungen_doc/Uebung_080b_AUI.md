@@ -3,6 +3,7 @@
 ![Uebung_080b_AUI_network](./Uebung_080b_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert den Einsatz eines aufwärtszählenden Zählers (E_CTU) mit Ereignisverdoppelung durch einen E_SPLIT-Funktionsbaustein. Zwei Hardware-Taster (an Input_I1 und Input_I2) dienen als Zählimpulsgeber und Rücksetzsignal. Der aktuelle Zählerstand wird über einen Adapter-Ausgang (CV) ausgegeben und auf einem numerischen Terminal (OutputNumber_N1) dargestellt. Ein zusätzlicher digitaler Ausgang (Output_Q1) signalisiert den Q-Zustand des Zählers.
@@ -79,7 +80,7 @@ Folgende Funktionsbausteine werden im SubApp-Netzwerk eingesetzt:
 **Zusammenfassung der Verbindungen** (aus dem XML):
 
 | Quelle | Ziel | Typ |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `DigitalInput_CLK_I1.IND` | `E_SPLIT.EI` | Event |
 | `E_SPLIT.EO1` | `E_CTU.CU` | Event |
 | `E_SPLIT.EO2` | `E_CTU.CU` | Event |

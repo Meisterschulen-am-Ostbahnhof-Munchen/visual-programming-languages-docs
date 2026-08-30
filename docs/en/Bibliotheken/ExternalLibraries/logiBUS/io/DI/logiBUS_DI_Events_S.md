@@ -1,12 +1,15 @@
 # logiBUS_DI_Events_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The structured data type `logiBUS_DI_Events_S` is used to configure events for digital inputs (DI) within the logiBUS framework. It defines the event type that can be assigned to a specific digital input channel. This data type is an essential component for parameterizing logiBUS I/O function blocks.
+
 ## Interface Structure
 
 This block is a pure structured type and does not have any event or adapter interfaces in the conventional sense of a function block. Its structure is used as an input or output data parameter in other function blocks.
+
 ### **Data Inputs**
 
 Not applicable – This is a data type.

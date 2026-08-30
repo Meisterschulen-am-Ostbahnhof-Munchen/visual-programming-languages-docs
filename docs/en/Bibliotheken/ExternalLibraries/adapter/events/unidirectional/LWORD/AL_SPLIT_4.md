@@ -3,9 +3,11 @@
 ![AL_SPLIT_4](./AL_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_4** is a generic function block that splits a single adapter input (socket) of type `adapter::types::unidirectional::AL` into four separate outputs (plugs) of the same type. It serves to distribute an incoming adapter data stream to multiple parallel consumers without modifying the data itself.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AL` | **IN** | Socket (Input) | Incoming adapter data stream, distributed to all outputs. |
 | `adapter::types::unidirectional::AL` | **OUT1** | Plug (Output) | First output – receives an identical copy of the input data stream. |
 | `adapter::types::unidirectional::AL` | **OUT2** | Plug (Output) | Second output – receives an identical copy of the input data stream. |

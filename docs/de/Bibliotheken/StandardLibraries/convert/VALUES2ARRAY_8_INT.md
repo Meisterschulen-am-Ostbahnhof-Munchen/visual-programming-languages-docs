@@ -3,6 +3,7 @@
 ![VALUES2ARRAY_8_INT](VALUES2ARRAY_8_INT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `VALUES2ARRAY_8_INT` fasst 8 einzelne `INT`-Skalarvariablen `IN_1`…`IN_8` zu einem `INT`-Array der Größe 8 zusammen. Er ist die Umkehrung von `ARRAY2VALUES_8_INT` und gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [VALUES2ARRAY_2_LREAL](VALUES2ARRAY_2_LREAL.md)).

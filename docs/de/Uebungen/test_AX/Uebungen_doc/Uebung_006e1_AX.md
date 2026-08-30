@@ -65,7 +65,7 @@ Anstatt separate Ereignis- (Events) und Datenleitungen zu ziehen, werden hier Ad
 Da es sich um einen SR-Baustein handelt, gilt typischerweise: Ist nur Setzen aktiv, ist der Ausgang
 
 1. Ist nur Rücksetzen aktiv, ist der Ausgang
-0. Sind beide Eingänge gleichzeitig aktiv, bestimmt der Bausteintyp die Dominanz (bei SR-Bausteinen nach IEC 61131 hat oft das Setzen Vorrang, dies ist jedoch implementationabhängig vom spezifischen `AX_FB_SR`).
+2. Sind beide Eingänge gleichzeitig aktiv, bestimmt der Bausteintyp die Dominanz (bei SR-Bausteinen nach IEC 61131 hat oft das Setzen Vorrang, dies ist jedoch implementationabhängig vom spezifischen `AX_FB_SR`).
 
 ## Zusammenfassung
 

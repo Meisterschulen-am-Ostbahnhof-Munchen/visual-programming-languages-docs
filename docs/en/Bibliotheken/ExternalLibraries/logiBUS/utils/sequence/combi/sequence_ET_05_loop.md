@@ -4,6 +4,7 @@
 ![sequence_ET_05_loop_ecc](./sequence_ET_05_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_ET_05_loop` implements a cyclic sequence with five states. The transition between the individual states can occur either through an external event or after a configurable time has elapsed. This block is designed for applications where a process must be executed step by step, triggering various actions in a fixed sequence, such as in packaging machines, assembly processes, or washing programs.
@@ -75,7 +76,8 @@ The sequence cycles through states 1 to 5 and then jumps from `State_05` back to
 - **Safe State Outputs:** The Boolean outputs (`DO_Sx`) are explicitly reset via an exit algorithm (`State_XX_X`) when a state is exited. This prevents the unintentional persistence of the `TRUE` signal.
 - **Explicit Timer Control:** The timer is restarted and stopped with each state change, ensuring precise and deterministic timing.
 - **Constants:** The function block uses defined constants (`sequence::State_XX`, `NO_TIME`) from imported libraries, which improves the maintainability and readability of the code.
-*
+-
+
 ## State Overview
 
 The ECC consists of seven states:

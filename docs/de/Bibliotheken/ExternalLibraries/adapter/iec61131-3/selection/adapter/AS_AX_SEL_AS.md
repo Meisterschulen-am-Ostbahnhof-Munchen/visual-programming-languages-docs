@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_AX_SEL_AS` dient der binären Auswahl (Selektion) zwischen zwei über Adapter bereitgestellten Eingangssignalen. Basierend auf dem Zustand eines Selektions-Adapters (`G`) wird entweder der Wert des Eingangs `IN0` oder des Eingangs `IN1` an den Ausgang `OUT` weitergeleitet.

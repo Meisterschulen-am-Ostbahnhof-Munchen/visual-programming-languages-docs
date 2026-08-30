@@ -3,9 +3,11 @@
 ![AUDI_TO_AR](./AUDI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_TO_AR` is a composite function block (FB) that converts a UDINT-sized integer received via a unidirectional AUDI adapter into a REAL value and outputs it via a unidirectional AR adapter. It encapsulates the conversion logic, thus enabling clean interface adaptation between different adapter types.
+
 ## Interface Structure
 
 This FB has no direct event or data inputs/outputs. All communication takes place exclusively via adapter interfaces.
@@ -29,7 +31,7 @@ None.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `AUDI_IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Returns a UDINT value and an associated event. The adapter provides an internal event output `E1` and a data output `D1` (UDINT data type). |
 | `AR_OUT` | `adapter::types::unidirectional::AR` | Plug (Output) | Outputs the converted REAL value. The adapter has an internal event input `E1` and a data input `D1` (data type REAL).
 

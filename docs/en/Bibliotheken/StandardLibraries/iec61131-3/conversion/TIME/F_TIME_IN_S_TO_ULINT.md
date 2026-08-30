@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_S_TO_ULINT` converts a TIME value in seconds to a ULINT value. This is particularly useful when time values need to be converted into numerical formats for use in calculations or further processing.
 ![F_TIME_IN_S_TO_ULINT](F_TIME_IN_S_TO_ULINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![AX_FB_TP_LTIME](./AX_FB_TP_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer-Pulse) gemäß IEC 61131-3, erweitert um einen uni-direktionalen **AX-Adapter**. Er wird in der 4diac-IDE verwendet, um zeitlich begrenzte Impulse zu erzeugen und die Ausgangssignale über einen Adapter an die Anwendung zu übergeben. Das Verhalten entspricht einem **TP**-Timer, der bei einem steigenden Flanke am Eingang den Ausgang für eine vorgegebene Zeit auf TRUE setzt.
@@ -70,7 +71,7 @@ Der Baustein besteht intern aus zwei Komponenten:
 Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsverhalten für den Gesamtbaustein:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Kein Impuls aktiv. Der Adapterausgang `Q.D1` ist FALSE. |
 | **TIMING** | Ein Puls läuft – der interne Timer zählt hoch. `ET` steigt, `Q.D1` ist TRUE (sobald das Flipflop beim Start oder nach dem ersten CNF getaktet wurde). |
 | **DONE** | Der Puls ist abgeschlossen. `CNF` wurde ausgegeben, `ET` ist gleich `PT`, `Q.D1` wird mit dem nächsten `CNF` auf FALSE gesetzt. Bei einem neuen `REQ` oder `IN.E1` beginnt der Zyklus von vorn. |
@@ -84,7 +85,7 @@ Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsver
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | **FB_TP_LTIME** (Standard) | TP‑Timer | Kein Adapter, nur Standard‑Events und Signale. |
 | **AX_FB_TP_LTIME** (dieser FB) | TP‑Timer mit AX‑Adapter | Ermöglicht Einbindung in adapterbasierte Architekturen, enthält D‑Flipflop zur Signalstabilisierung. |
 | **FB_TON_LTIME** | Einschaltverzögerung | Verzögert das Einschalten eines Ausgangs. |

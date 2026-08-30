@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_MUL_4` is used to perform an arithmetic multiplication of four input values. It is a generic function block (Generic FB) based on the use of unidirectional adapters (`ALI`). By using adapters instead of classic data and event pins, the wiring in 4diac-ide is made clearer and more modular.

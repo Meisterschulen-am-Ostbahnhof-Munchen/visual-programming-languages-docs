@@ -3,6 +3,7 @@
 ![AULI_FB_CTU](./AULI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_FB_CTU** realisiert einen Aufwärtszähler (Up Counter) auf Basis des Datentyps ULINT (unsigned long integer). Er ist als IEC 61499-konformer Baustein mit einer **AULI-Adapter-Schnittstelle** ausgelegt. Der Zähler verwendet intern einen standardisierten IEC 61131-3-CTU-Baustein (`FB_CTU_ULINT`) und stellt dessen Funktionalität über Adapterports zur Verfügung. Die Ereignisauslösung erfolgt bei jedem Update – unabhängig von einer Wertänderung.
@@ -30,11 +31,11 @@ Keine direkten Daten-Ausgänge. Die Ergebniswerte (aktueller Zählerstand CV und
 ### **Adapter**
 
 | Richtung | Adapter‑Name | Typ | Kommentar |
-|----------|--------------|-----|-----------|
+| ---------- | -------------- | ----- | ----------- |
 | **Socket (Eingang)** | CU | `adapter::types::unidirectional::AX` | Count‑Up‑Impuls (Ereignis + Daten) |
-| **Socket (Eingang)** | R  | `adapter::types::unidirectional::AX` | Reset‑Impuls (Ereignis + Daten) |
+| **Socket (Eingang)** | R | `adapter::types::unidirectional::AX` | Reset‑Impuls (Ereignis + Daten) |
 | **Socket (Eingang)** | PV | `adapter::types::unidirectional::AULI` | Preset‑Wert (Vergleichswert für Q‑Ausgang) |
-| **Plug (Ausgang)** | Q  | `adapter::types::unidirectional::AX` | Zählerstand ≥ Preset? (Bool‑Status) |
+| **Plug (Ausgang)** | Q | `adapter::types::unidirectional::AX` | Zählerstand ≥ Preset? (Bool‑Status) |
 | **Plug (Ausgang)** | CV | `adapter::types::unidirectional::AULI` | Aktueller Zählerstand (ULINT) |
 
 ## Funktionsweise

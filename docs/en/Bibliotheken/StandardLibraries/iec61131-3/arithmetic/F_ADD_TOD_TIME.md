@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_ADD_TOD_TIME](F_ADD_TOD_TIME.svg)
+
 ## Introduction
 
 The **F_ADD_TOD_TIME** function block is a specialized function module for adding time values to times of day, developed under the EPL 2.0 license. Version 1.0 enables precise time calculations using TIME_OF_DAY and TIME data types.
@@ -30,14 +31,17 @@ The **F_ADD_TOD_TIME** function block is a specialized function module for addin
 ## Functionality
 
 1. **Activation**:
+
 - Triggered by the `REQ` event
 - Processes TIME_OF_DAY and TIME values
-2. **Calculation**:
+1. **Calculation**:
+
 - Adds time duration (IN2) to time of day (IN1)
 - Automatically takes into account:
 - Day transitions (24-hour format)
 - Millisecond accuracy
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with new TIME_OF_DAY
 - Format: TOD#23:59:59.999
 
@@ -67,7 +71,7 @@ The **F_ADD_TOD_TIME** function block is a specialized function module for addin
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_ADD_TOD_TIME | F_ADD_DT_TIME |
-----------------|----------------|---------------|
+---------------- | ---------------- | --------------- |
 | Input Type 1 | TIME_OF_DAY | DATE_AND_TIME |
 | Output Type | TIME_OF_DAY | DATE_AND_TIME |
 | Range | Daily Cycle | Absolute Date |

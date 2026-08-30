@@ -5,6 +5,7 @@
 *(Bild des Funktionsblocks nicht verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AL_SPLIT_7** dient als generischer Verteiler (Splitter) für einen unidirektionalen Adapter vom Typ `AL`. Er nimmt an seinem Socket `IN` einen einzigen Adapter entgegen und leitet die ankommenden Daten und Ereignisse unverändert an sieben identische Adapter-Ausgänge (`OUT1` … `OUT7`) weiter. Der Baustein ist als generischer Typ (`GEN_AL_SPLIT`) implementiert und ermöglicht so eine flexible Verwendung in Steuerungs- und Automatisierungsanwendungen.

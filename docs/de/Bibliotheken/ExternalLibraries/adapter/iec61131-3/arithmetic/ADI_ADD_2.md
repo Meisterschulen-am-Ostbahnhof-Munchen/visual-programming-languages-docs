@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_ADD_2` ist ein generischer Funktionsbaustein zur Durchführung von arithmetischen Additionsoperationen. Im Gegensatz zu herkömmlichen mathematischen Funktionsbausteinen nutzt dieser Baustein ein adapterbasiertes Schnittstellenkonzept (unidirektionale `ADI`-Adapter), um Daten und zugehörige Steuerungssignale gebündelt zu übertragen. Er ermöglicht die Addition von zwei Eingangswerten zu einem Ausgangswert.
@@ -65,6 +66,7 @@ Da es sich um einen generischen Baustein (`GEN_ADI_ADD`) handelt, richtet sich d
 ## Zustandsübersicht
 
 Der Baustein verhält sich wie ein zustandsloser (bzw. rein ereignisgesteuerter kombinatorischer) Baustein:
+
 1.  **Warten auf Datenaktualisierung:** Der Baustein verharrt im Ruhezustand, bis über `IN1` oder `IN2` neue Werte signalisiert werden.
 2.  **Berechnung:** Bei Eintreffen eines Ereignisses an den Eingängen wird die mathematische Summe gebildet.
 3.  **Ausgabe:** Das Ergebnis wird direkt an den Ausgangs-Adapter `OUT` übergeben und das zugehörige Trigger-Ereignis ausgelöst.

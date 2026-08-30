@@ -3,6 +3,7 @@
 ![GET_DATE_AND_TIME](./GET_DATE_AND_TIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_DATE_AND_TIME** dient dazu, einen Wert vom Typ `DATE_AND_TIME` aus einer als InOut deklarierten Variable auszulesen und als gepufferten (gebufferten) Ausgang bereitzustellen. Bei jeder Anforderung wird der aktuelle Wert der Quelle (InOut-Variable) auf den Ausgang kopiert.

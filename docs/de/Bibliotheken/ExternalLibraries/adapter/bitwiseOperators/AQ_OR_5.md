@@ -3,6 +3,7 @@
 ![AQ_OR_5](./AQ_OR_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AQ_OR_5** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 5 Eingangswerten vom Typ `BYTE` (2-Bit-Wert (Viertel-Byte, als Byte übertragen)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

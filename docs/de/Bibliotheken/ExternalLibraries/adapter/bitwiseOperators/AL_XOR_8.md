@@ -3,6 +3,7 @@
 ![AL_XOR_8](./AL_XOR_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AL_XOR_8** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 8 Eingangswerten vom Typ `LWORD` (64-Bit-Bitmuster (Langwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

@@ -3,9 +3,11 @@
 ![AUS_SPLIT_6](./AUS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **OFF_SPLIT_6** is a generic block that distributes an incoming OFF signal (e.g., a uniform control signal or event) to six identical outputs. It serves as a splitter in IEC 61499 communication via adapters and enables simple multiple use of a signal without additional logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **OFF_SPLIT_6** is a generic block that distributes an incomi
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AUS` | **IN** | Socket | Incoming output signal distributed to all outputs. |
 | `adapter::types::unidirectional::AUS` | **OUT1** | Plug | First output – identical to **IN**. |
 | `adapter::types::unidirectional::AUS` | **OUT2** | Plug | Second output – identical to **IN**. |

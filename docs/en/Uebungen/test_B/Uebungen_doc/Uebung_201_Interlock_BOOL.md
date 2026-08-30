@@ -3,6 +3,7 @@
 ![Uebung_201_Interlock_BOOL_network](./Uebung_201_Interlock_BOOL_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise teaches the basic functionality of an **interlock circuit** (interlock) using Boolean signals. Four digital inputs (`I1` to `I4`) control four digital outputs (`Q1` to `Q4`) via special interlock blocks. The interlock blocks are arranged in a chain, so that a subsequent output can only be enabled once the previous interlock block has been activated. This allows for the implementation of a safe, sequential control system.
@@ -35,11 +36,11 @@ There are no nested sub-blocks (sub-applications).
 
 Each digital input (e.g., `DigitalInput_I1`) generates an event (`IND`) as soon as the input value changes. This event is sent directly to the corresponding interlock block (e.g., `ILOCK_1.REQ`).
 
-2. **Data Transfer**
+1. **Data Transfer**
 
 The value of the digital input (`IN` data port) is transferred to the corresponding interlock block (`ILOCK_x.IN`) in parallel with the event.
 
-3. **Interlock Chain**
+1. **Interlock Chain**
 
 The interlock blocks are cascaded via adapter connections:
 
@@ -49,7 +50,7 @@ The interlock blocks are cascaded via adapter connections:
 
 This chaining ensures that an interlock block only provides a valid output if the preceding block has also been activated.
 
-4. **Output Control**
+1. **Output Control**
 
 After internal processing, each interlock block outputs an acknowledgment event (`CNF`) that controls the corresponding digital output (e.g., `DigitalOutput_Q1.REQ`). Simultaneously, the data value (`OUT`) is transmitted to the output.
 

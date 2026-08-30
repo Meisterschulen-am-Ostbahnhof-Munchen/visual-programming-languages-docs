@@ -3,6 +3,7 @@
 ![NVS_AB](NVS_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `NVS_AB` loads and stores a `BYTE` value under a key (`KEY`) in the ESP32's non-volatile storage (NVS). Unlike the bidirectional [NVS_AB2](NVS_AB2.md), it uses two separate unidirectional `AB` adapters: a socket for writing (`AB_IN`) and a plug for reading/confirming (`AB_OUT`).

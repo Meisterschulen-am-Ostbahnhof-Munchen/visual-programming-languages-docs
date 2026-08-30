@@ -4,9 +4,11 @@
 ![ARR08X_TO_BOOLS](./ARR08X_TO_BOOLS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ARR08X_TO_BOOLS** function block converts an 8-element BOOL array into eight individual BOOL signals. It extracts each bit from the input array and makes it available via its own named data output. This block is particularly useful for breaking down compact array data from higher-level systems or communication interfaces into individual, easily processed logical signals.
+
 ## Interface Structure
 
 The block has a simple, unidirectional interface with a request/acknowledgment event pair.

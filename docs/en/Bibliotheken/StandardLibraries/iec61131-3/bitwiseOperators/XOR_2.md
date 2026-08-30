@@ -3,6 +3,7 @@
 ![XOR_2](https://user-images.githubusercontent.com/116869307/214143689-2a5c46a2-8706-400e-9fc7-fc74efa57eea.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The XOR_2 function block is a generic function block for calculating the bitwise Boolean XOR operation. It performs an exclusive OR operation between two input values and outputs the result. The function block is suitable for all ANY_BIT data types, thus enabling flexible use with different bit lengths.
@@ -41,6 +42,7 @@ Upon receiving the REQ event, the XOR_2 block performs a bitwise XOR operation b
 After the calculation is complete, the result is output via the OUT output, and the CNF event is sent to confirm execution.
 
 - If the bits are different, the result bit is set to 1.
+
 ## Technical Features
 
 - **Generic Implementation**: Supports all ANY_BIT data types (BOOL, BYTE, WORD, DWORD, LWORD)

@@ -33,7 +33,7 @@ Optimierung der Bedienlogik aus Übung 040. Es wird gezeigt, wie man durch die K
 1.  **Initialisierung**: Ein Klick auf **I1** startet das Lauflicht bei `Q1`.
 2.  **Manueller Durchlauf**: Jeder Klick auf **I2** erhöht den internen Zähler. Der Demultiplexer sorgt dafür, dass das erste Event an `S1_S2` geht, das zweite an `S2_S3` und so weiter.
 3.  **Überlauf**: Nach dem
-8. Schritt setzt sich die Logik automatisch zurück und beginnt (beim nächsten Klick) wieder von vorn.
+4. Schritt setzt sich die Logik automatisch zurück und beginnt (beim nächsten Klick) wieder von vorn.
 
 Dies ermöglicht eine vollständige Prozesskontrolle mit minimaler Hardware-Anforderung.
 

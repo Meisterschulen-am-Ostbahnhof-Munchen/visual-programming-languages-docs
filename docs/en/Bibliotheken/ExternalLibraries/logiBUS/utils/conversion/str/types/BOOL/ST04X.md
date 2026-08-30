@@ -1,12 +1,15 @@
 # ST04X
 
 * * * * * * * * * *
+
 ## Introduction
 
 ST04X is a structured data type that groups four Boolean values. It serves to organize and manage a collection of four individual bits in a single structure.
+
 ## Interface Structure
 
 Since ST04X is a data type and not a function block, it does not have event or data inputs/outputs in the sense of a function block or adapter. Instead, it defines an internal structure of data fields.
+
 ### **Event Inputs**
 
 Not applicable to a data type.

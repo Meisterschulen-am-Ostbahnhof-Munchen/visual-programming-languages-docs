@@ -3,6 +3,7 @@
 <img width="1219" height="160" alt="image" src="https://github.com/user-attachments/assets/57ce3ad0-2da9-4075-8d37-abf71840b469" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock (FB) `ARRAY2ARRAY_2_LREAL` ist ein Service-Interface-Funktionsblock, der darauf ausgelegt ist, Werte von einem Eingangs-Array auf ein Ausgangs-Array zu kopieren. Er dient als einfache und ereignisgesteuerte Schnittstelle für die Übertragung von Daten zwischen Arrays innerhalb einer 4diac-Anwendung.

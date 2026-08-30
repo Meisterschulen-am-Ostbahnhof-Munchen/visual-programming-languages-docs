@@ -3,6 +3,7 @@
 ![AUS_TO_AR](./AUS_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_TO_AR** ist ein Composite FB zur Umwandlung eines AUS-Adapter-Interfaces (basierend auf USINT) in ein AR-Adapter-Interface (basierend auf REAL). Laut Beschreibung dient er zur Konvertierung zwischen diesen beiden Adaptertypen. Die aktuelle Implementierung (Version 1.0) leitet Ereignis- und Datenwerte lediglich durch, ohne eine explizite Umrechnung vorzunehmen – die eigentliche Typwandlung muss entweder durch die Adapter-Definitionen selbst oder durch nachträgliche Erweiterungen realisiert werden.
@@ -28,7 +29,7 @@ Keine separaten Daten-Ausgänge vorhanden. Daten werden ausschließlich über de
 ### **Adapter**
 
 | Typ | Name | Richtung | Kommentar |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `adapter::types::unidirectional::AUS` | AUS_IN | Socket (Eingang) | USINT-basierter Adapter-Eingang |
 | `adapter::types::unidirectional::AR` | AR_OUT | Plug (Ausgang) | REAL-basierter Adapter-Ausgang |
 

@@ -3,9 +3,11 @@
 ![AUDI_GT](./AUDI_GT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AUDI_GT function block performs a "greater than" comparison of two values. It is designed as an IEC 61131-3 compliant comparison block and uses an adapter-based interface to transmit values and events. The block is part of the iec61131::comparison library.
+
 ## Interface Structure
 
 ### **Event Inputs**

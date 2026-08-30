@@ -6,6 +6,7 @@
 
 The function block `SET_STRUCT_VALUE` is a service interface function block used to set a specific value within a data structure. It enables the dynamic manipulation of structure elements by assigning a new value to a named member of the structure.
 ![SET_STRUCT_VALUE](SET_STRUCT_VALUE.svg)
+
 ## Interface Structure
 
 The function block has event and data interfaces to enable its functionality.

@@ -5,6 +5,7 @@
 *Bild nicht vorhanden*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärts-/Rückwärtszähler nach IEC 61131-3 (CTUD) im Adapter-Format. Der Zähler wird über digitale Eingänge (logiBUS) gesteuert und gibt seinen aktuellen Zählwert über ein Terminal aus. Der Preset-Wert (PV) wird auf LINT#5 gesetzt und beim Setzen des LD-Eingangs geladen. Die Ausgänge QU (Überlauf) und QD (Unterlauf) werden auf digitale Ausgänge geschaltet.

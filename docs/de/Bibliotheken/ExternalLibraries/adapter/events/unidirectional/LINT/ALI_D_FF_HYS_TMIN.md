@@ -3,6 +3,7 @@
 ![ALI_D_FF_HYS_TMIN](./ALI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_D_FF_HYS_TMIN** realisiert ein datengesteuertes D-Flip-Flop mit einer einstellbaren Hysteresebreite (Schwellwertband) und einer minimalen Wartezeit zwischen zwei aufeinanderfolgenden Ausgangsereignissen. Er dient zur Entprellung und Stabilisierung von Signalsprüngen in der industriellen Automatisierungstechnik, insbesondere wenn ein Signal erst dann als gültig übernommen werden soll, wenn es einen definierten Toleranzbereich verlassen hat und eine Mindestzeit seit der letzten gültigen Flanke vergangen ist.
@@ -84,7 +85,7 @@ Eine formale Zustandsmaschine ist nicht über die XML‑Schnittstelle sichtbar, 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Hysterese | Mindestzeit | Adapterschnittstelle |
-|----------|-----------|-------------|----------------------|
+| ---------- | ----------- | ------------- | ---------------------- |
 | `E_D_FF` (einfach) | Nein | Nein | Nein (direkte I/O) |
 | `E_D_FF_HYS` | Ja | Nein | Nein |
 | `ALI_D_FF_HYS_TMIN` | Ja | Ja | Ja (Adapternutzung) |

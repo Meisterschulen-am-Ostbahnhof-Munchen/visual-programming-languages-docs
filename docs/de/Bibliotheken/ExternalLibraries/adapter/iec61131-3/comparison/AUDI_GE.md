@@ -3,6 +3,7 @@
 ![AUDI_GE](./AUDI_GE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_GE` führt einen Vergleich zweier Werte auf „größer oder gleich“ durch. Er stellt das Ergebnis als booleschen Wert bereit. Der Baustein ist als Komposition realisiert und nutzt intern den Standard‑Vergleichsbaustein `F_GE` aus der IEC 61131-3‑Bibliothek. Die Ein‑ und Ausgabe erfolgt ausschließlich über unidirektionale Adapter.
@@ -33,7 +34,7 @@ Die Datenwerte, die verglichen werden sollen, werden über die Adapter bezogen:
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN1` | Socket | `adapter::types::unidirectional::AUDI` | Erster Eingabewert |
 | `IN2` | Socket | `adapter::types::unidirectional::AUDI` | Zweiter Eingabewert |
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Ausgabe: `IN1 >= IN2` (boolesch) |

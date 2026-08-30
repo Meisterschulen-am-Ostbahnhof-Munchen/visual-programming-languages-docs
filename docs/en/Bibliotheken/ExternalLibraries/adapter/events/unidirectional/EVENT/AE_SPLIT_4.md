@@ -3,9 +3,11 @@
 ![AE_SPLIT_4](./AE_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_SPLIT_4** distributes an incoming event from a unidirectional **AE adapter** to four identical output adapters. It is executed as a generic function block (Generic FB) and can therefore be used for any data type of the adapter. The distribution occurs without delay or state change – the incoming event is forwarded to all four outputs simultaneously.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | **IN** | `adapter::types::unidirectional::AE` | Receives a unidirectional adapter event (event + associated data). |
 | Plug (Output) | **OUT1** | `adapter::types::unidirectional::AE` | First output – receives the same event and data as the input. |
 | Plug (Output) | **OUT2** | `adapter::types::unidirectional::AE` | Second output. |

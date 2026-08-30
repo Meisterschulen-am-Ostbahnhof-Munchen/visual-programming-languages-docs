@@ -3,6 +3,7 @@
 ![ASSEMBLE_AL_FROM_AD](./ASSEMBLE_AL_FROM_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASSEMBLE_AL_FROM_AD** dient dazu, zwei über AD-Adapter (DWORD) bereitgestellte 32‑Bit-Werte zu einem 64‑Bit-LWORD zusammenzuführen und diesen über einen AL-Adapter auszugeben. Er kapselt die Kombinationslogik und stellt eine gepufferte, ereignisgesteuerte Schnittstelle für 64‑Bit-Daten bereit.

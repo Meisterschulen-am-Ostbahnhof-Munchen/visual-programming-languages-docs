@@ -6,6 +6,7 @@
 
 The `CallbackFB` is a composite function block that simplifies the use of the callback mechanism in subapplications. It serves as a wrapper block to provide a standardized interface for asynchronous communication via a callback adapter. Its primary purpose is to decouple and provide structured handling of acknowledgment messages (`CNF`) and requests (`REQ`) within a function block network.
 ![CallbackFB](CallbackFB.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +54,8 @@ Since it is a purely pass-through composite function block without an internal s
 - **Structuring Subapplications**: In complex subapplications, the `CallbackFB` can be used to provide a clean and reusable interface for callback communication.
 - **Decoupling Components**: It enables loose coupling between a service provider (providing the socket) and a service user (using this function block), which improves maintainability and testability.
 - **ISOBUS Communication**: A specific application in control systems for agricultural machinery to asynchronously acknowledge or request the transmission of CAN messages (PGNs).
-*
+-
+
 ## ⚖️ Comparison with Similar Building Blocks
 
 - **Direct Adapter Connection**: Instead of directly integrating a `Callback` adapter into a network, the `CallbackFB` offers a bundled, named interface (`CNF`/`REQ`/`DI1`) that may be more readable in some designs.

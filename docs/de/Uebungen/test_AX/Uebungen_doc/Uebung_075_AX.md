@@ -3,13 +3,14 @@
 ![Uebung_075_AX_network](./Uebung_075_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ansteuerung digitaler Ausgänge über einen ISOBUS-Lichtadapter. Das SubApp-Element „Uebung_075_AX“ verarbeitet die Blinkersignale (rechts/links) eines Fahrzeugs und leitet sie auf entsprechende digitale Ausgänge (z. B. logiBUS-Ausgänge) weiter. Der Kommentar „LD auf Q“ deutet auf die Übertragung von Lichtdaten (LD) auf die Ausgänge (Q) hin.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### IA_Lighting
 

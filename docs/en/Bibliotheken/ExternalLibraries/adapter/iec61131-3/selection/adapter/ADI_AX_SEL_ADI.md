@@ -64,17 +64,17 @@ The internal structure of `ADI_AX_SEL_ADI` operates purely event-driven:
 
 When an event (`E1`) arrives at one of the inputs (`IN0`, `IN1`) or at the selector (`G`), the corresponding internal data value (`D1`) is acquired via event-driven memory elements (`E_D_FF_ANY` or `E_D_FF`).
 
-2. **Data Buffering**:
+1. **Data Buffering**:
 
 The function blocks `F_MOVE_IN0` and `F_MOVE_IN1` copy the data (interpreted as data type `DINT`) to the central selection function block `F_SEL`.
 
-3. **Selection Logic**:
+1. **Selection Logic**:
 
 The function block `F_SEL` (corresponding to the classic `SEL` standard function block from IEC 61131-3) evaluates the control signal `G`:
 
 - If the signal from adapter `G` is equal to `FALSE`, the signal from `IN0` is selected.
 - If the signal from adapter `G` is equal to `TRUE`, the signal from `IN1` is selected.
-4. **Output**:
+1. **Output**:
 
 The selected value is passed via `F_MOVE_OUT` to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop sets the value `D1` on output adapter `OUT` and immediately triggers the corresponding event `OUT.E1` to inform downstream components about the data change.
 
@@ -85,6 +85,7 @@ The selected value is passed via `F_MOVE_OUT` to the output flip-flop `E_D_FF_AN
 - **Adapter Encapsulation**: By using adapters (`ADI` and `AX`), the number of visible connection lines in the 4diac application diagram is drastically reduced, improving clarity and maintainability.
 - **Data Type Specification**: The internal copy operations (`F_MOVE_IN0`, `F_MOVE_IN1`, and `F_MOVE_OUT`) are permanently configured for the data type `DINT` (Double Integer).
 - **Real-Time Pass-Through**: The function block responds instantly to every edge of the input signals as well as the selection signal.
+
 - ---
 
 ## State Overview

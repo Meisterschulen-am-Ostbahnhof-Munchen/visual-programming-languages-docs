@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) `AUS_SUB_2` is a generic block for performing arithmetic subtraction operations within 4diac-based control systems. The block uses unidirectional adapters of type `AUS` to encapsulate and transmit input and output signals. Due to its generic design (compilation class `GEN_AUS_SUB`), it can be flexibly used in various control scenarios to calculate the difference between two values.
@@ -56,7 +57,7 @@ Since this is a generic function block (`GEN_AUS_SUB`), the mathematical process
 
 - **Generic Type (`GEN_AUS_SUB`):** The function block is not limited to a single data type (such as only `INT` or `REAL`), but supports the data types defined by the adapter structure.
 - **Unidirectional Adapters:** Using the `unidirectional::AUS` type ensures a clear, one-way data and signal flow. This minimizes the complexity of signal tracing within the system.
-- * **Encapsulation:** By eliminating traditional event and data pins, the visual layout in the 4diac-ide Application Editor remains extremely compact and clear.
+- - **Encapsulation:** By eliminating traditional event and data pins, the visual layout in the 4diac-ide Application Editor remains extremely compact and clear.
 
 ---
 
@@ -77,6 +78,7 @@ Since this module is designed as a purely functional, stateless calculation bloc
 ## Comparison with Similar Function Blocks
 
 Compared to a classic IEC 61131-3 `SUB` function block, which works directly with elementary data types, the `AUS_SUB_2` offers the following advantages:
+
 - **Reduced Wiring Effort:** Event and data lines do not need to be run separately, as they are bundled in the `AUS` adapter.
 - **Increased Modularity:** It is ideally suited for service-oriented architectures in IEC 61499, where subsystems typically communicate via adapters.
 

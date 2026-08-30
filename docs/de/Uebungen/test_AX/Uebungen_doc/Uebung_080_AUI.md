@@ -76,9 +76,9 @@ Die Übung ist als Subapplikation (`Uebung_080_AUI`) angelegt und benötigt kein
 
 1. Nach dem Start der Applikation ist der Zählerstand 0.
 2. Jeder Druck auf `Input_I1` erhöht den Zähler um
-1. Der neue Wert wird sofort auf dem Terminal angezeigt.
-3. Wird der voreingestellte Schwellwert (PV) erreicht, wird `Output_Q1` auf `TRUE` gesetzt.
-4. Ein Druck auf `Input_I2` setzt den Zähler zurück auf 0 (auch der Ausgang wird wieder `FALSE`).
+3. Der neue Wert wird sofort auf dem Terminal angezeigt.
+4. Wird der voreingestellte Schwellwert (PV) erreicht, wird `Output_Q1` auf `TRUE` gesetzt.
+5. Ein Druck auf `Input_I2` setzt den Zähler zurück auf 0 (auch der Ausgang wird wieder `FALSE`).
 
 ## Zusammenfassung
 

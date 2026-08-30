@@ -71,7 +71,7 @@ ID_NULL (65535) ist kein gültiges Kommandoziel für die neue aktive Maske. Jede
 ## Rückgabecodes (s16result)
 
 | Code | Konstante | Bedeutung |
-|------|-----------|-----------|
+| ------ | ----------- | ----------- |
 | 0 | VT_E_NO_ERR | Erfolgreich |
 | -6 | VT_E_OVERFLOW | Pufferüberlauf |
 | -8 | VT_E_NOACT | Ungültiger Zustand |

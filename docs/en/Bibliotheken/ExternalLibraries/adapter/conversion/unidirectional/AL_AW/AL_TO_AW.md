@@ -3,9 +3,11 @@
 ![AL_TO_AW](./AL_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AL_TO_AW function block is a composite module that converts an LWORD input adapter of type AL (unidirectional) into a WORD output adapter of type AW (unidirectional). It encapsulates the conversion function and provides a simple interface for converting 64-bit data to 16-bit data in the 4diac IDE.
+
 ## Interface Structure
 
 The module has no discrete event or data ports, but only adapter interfaces (socket/plug). The following overview shows the available adapters:

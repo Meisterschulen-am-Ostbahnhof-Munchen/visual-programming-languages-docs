@@ -3,9 +3,11 @@
 ![ASR_SPLIT_9](./ASR_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_SPLIT_9** is used to split a single incoming ASR adapter (Application Specific Resource) into nine separate ASR outputs. It is implemented as a generic function block (Generic FB) and allows the distribution of an ASR signal to up to nine independent receivers.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ No separate data outputs. The data is output via the ASR adapters **OUT1** to **
 **Plugs (Outputs):**
 
 | Name | Type | Direction |
-|-------|-----|----------|
+| ------- | ----- | ---------- |
 | OUT1 | `adapter::types::unidirectional::ASR` | Plug |
 | OUT2 | `adapter::types::unidirectional::ASR` | Plug |
 | OUT3 | `adapter::types::unidirectional::ASR` | Plug |

@@ -3,6 +3,7 @@
 ![Uebung_011g1_network](./Uebung_011g1_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the parallel use of multiple `IOObserver` for a common numeric input value. Three instances of the function block `NumericValue_ID` monitor the same object identifier (`InputNumber_I1`). The returned `DWORD` values are each converted to the type `UDINT` using a conversion block. The exercise shows how multiple observers can be connected to a common data source without the values affecting each other.
@@ -30,7 +31,7 @@ The SubApp consists directly of the following function blocks:
 The network contains three identical pairs of these building blocks:
 
 | Observer (NumericValue_ID) | Converter (F_DWORD_TO_UDINT) |
-|----------------------------|-------------------------------|
+| ---------------------------- | ------------------------------- |
 | `InputNumber_I1_1` | `F_DWORD_TO_UDINT` |
 | `InputNumber_I1_2` | `F_DWORD_TO_UDINT_1` |
 | `InputNumber_I1_3` | `F_DWORD_TO_UDINT_2` |
@@ -41,15 +42,15 @@ The network contains three identical pairs of these building blocks:
 
 Each observer (`IND`) is connected to the corresponding converter (`REQ`). As soon as a new value arrives from the ISOBUS gateway, the corresponding conversion process is triggered.
 
-2. **Data Connections**:
+1. **Data Connections**:
 
 The data output `IN` of each observer is directly connected to the data input `IN` of the corresponding converter. The three data paths are completely isolated from each other; each converter operates with the value of its assigned observer.
 
-3. **Common Source**:
+1. **Common Source**:
 
 All three `NumericValue_ID` blocks obtain their data from the same ISOBUS object (`InputNumber_I1`). The observers can operate independently because each receives its own copy of the current value.
 
-4. **Conversion**:
+1. **Conversion**:
 
 The outputs `OUT` of the three `F_DWORD_TO_UDINT` blocks represent the same numerical signal as `UDINT` – for different consumers within the application.
 

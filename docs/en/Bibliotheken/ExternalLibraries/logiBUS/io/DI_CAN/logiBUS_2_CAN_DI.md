@@ -3,9 +3,11 @@
 ![logiBUS_2_CAN_DI](./logiBUS_2_CAN_DI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The logiBUS_2_CAN_DI GlobalConstants define constants for configuring digital inputs (DIs) in the logiBUS system via CAN bus. These constants are used for pin assignment for digital input channels and provide a standardized interface for hardware configuration.
+
 ## Interface Structure
 
 ### **Constant Definitions**

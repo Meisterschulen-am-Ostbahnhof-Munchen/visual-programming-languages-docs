@@ -5,6 +5,7 @@
 ## Number Systems
 
 - [ISOBUS Terminals: Understanding Numbers – NumberVariable, InputNumber & OutputNumber explained ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
+
 ### Decimal System (Base 10)
 
 The familiar system with the digits 0 to 9. It is mostly used in programming for human-readable values such as setpoints, counters, or time values.
@@ -43,6 +44,7 @@ Values with decimal places or in scientific notation.
 - `1.234`
 - `-0.5`
 - `1.0E-3` (equivalent to 0.001)
+
 ### Floating Point Numbers (Real)
 
 ### Integer Numbers

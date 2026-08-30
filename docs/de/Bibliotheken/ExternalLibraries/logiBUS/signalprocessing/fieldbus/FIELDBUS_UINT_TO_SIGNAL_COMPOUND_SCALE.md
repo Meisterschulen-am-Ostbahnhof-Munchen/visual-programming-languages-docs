@@ -94,7 +94,7 @@ Der FB ist als SimpleFB implementiert; es gibt keine weiteren Zustände wie IDLE
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | `SCALE` (z. B. nach IEC 61131) | Linearer Faktor und Offset auf den gesamten Wert | Keine Aufteilung in Bytes, keine Gültigkeitsprüfung |
 | `LINEAR` (Feldbus‑Standard) | Gleitender Mittelwert oder einfache lineare Transformation | Kein Compound‑Ansatz |
 | `UINT_TO_REAL` | Direkte Typumwandlung | Keine Skalierung, keine Fehlererkennung |

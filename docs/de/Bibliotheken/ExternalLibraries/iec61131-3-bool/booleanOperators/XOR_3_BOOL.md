@@ -3,6 +3,7 @@
 <img width="1186" height="241" alt="image" src="https://github.com/user-attachments/assets/a3d5273a-10df-4b36-b9ea-460635fa84fc" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_3_BOOL` ist ein standardisierter Baustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für drei boolesche Eingangswerte. Er ist als generischer Baustein implementiert und führt seine Operation bei jedem eingehenden Ausführungsereignis durch.

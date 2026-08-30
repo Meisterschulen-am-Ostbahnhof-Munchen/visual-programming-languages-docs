@@ -1,8 +1,9 @@
 # Exercise_019a: Switching a Mask
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_019a`. Here, mask switching is extended to include a safety function: the alarm.
+This article describes the logiBUS® exercise `Uebung_019a`. Here, mask switching is extended to include a safety function: the alarm
 ----
+
 ## Objective of the Exercise
 
 Learning how to work with alarm masks. In the ISOBUS standard, alarms take precedence over normal data masks and can often only be exited by an explicit acknowledgment (ACK).

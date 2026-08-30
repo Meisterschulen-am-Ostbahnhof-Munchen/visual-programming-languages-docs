@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_S_TO_UDINT` converts a TIME value in seconds to a UDINT value. This conversion is useful when time values are needed in numerical operations or for further processing steps.
 ![F_TIME_IN_S_TO_UDINT](F_TIME_IN_S_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

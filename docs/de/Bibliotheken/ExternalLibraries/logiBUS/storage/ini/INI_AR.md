@@ -3,6 +3,7 @@
 ![INI_AR](./INI_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock INI_AR dient zum Laden und Speichern von REAL-Daten aus einer settings.ini-Datei. Er greift über einen Sektions- und Schlüsselnamen auf die Konfigurationsdatei zu und stellt die gelesenen bzw. zu speichernden Werte über einen unidirektionalen Adapter zur Verfügung. Dies ermöglicht eine flexible Einbindung in modulare Speicher- und Steuerungsarchitekturen.

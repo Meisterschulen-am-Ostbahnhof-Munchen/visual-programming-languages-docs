@@ -11,6 +11,7 @@
 <img width="1521" height="186" alt="image" src="https://github.com/user-attachments/assets/90319dba-980a-464e-aa11-c9c9729af26a" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `QUARTER_TO_STR_MEASURED` dient der Konvertierung eines 4-Zustands-Signals (kodiert in den unteren zwei Bits eines BYTE-Wertes) in einen menschenlesbaren Text-String (STRING). Er ist besonders für die Anzeige oder Protokollierung von Statusinformationen in Steuerungssystemen geeignet, wo diskrete Zustände wie "Eingeschaltet", "Ausgeschaltet", "Fehler" oder "Nicht verfügbar" in eine textuelle Form überführt werden müssen.

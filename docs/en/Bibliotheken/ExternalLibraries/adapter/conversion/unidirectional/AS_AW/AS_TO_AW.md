@@ -3,9 +3,11 @@
 ![AS_TO_AW](./AS_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_TO_AW** is a composite block that converts a unidirectional **SINT** adapter (AS) into a unidirectional **WORD** adapter (AW). It serves as a bridge between different adapter types and enables the further processing of SINT signals as WORD data in a 4diac environment.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block has a **plug** of type `AW`, which indirectly provides an eve
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-|------|------|----------|-----------|
+| ------ | ------ | ---------- | ----------- |
 | `AS` (unidirectional) | **AS_IN** | Socket (input) | SINT Adapter input |
 | `AW` (unidirectional) | **AW_OUT** | Plug (output) | WORD Adapter output |
 
@@ -80,7 +82,7 @@ The function block is not stateful in the sense of a state machine – the inter
 ## Comparison with Similar Blocks
 
 | Block | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **AS_TO_AW** | SINT → WORD | Specific conversion for unidirectional adapters |
 | **General Converters** (e.g., `F_SINT_TO_WORD`) | Pure data conversion without adapter encapsulation | AS_TO_AW provides a ready-made adapter interface and can be used directly in adapter-based networks |
 | **Other Adapter Converters** (e.g., `BOOL_TO_BYTE`) | Other data types | AS_TO_AW specializes in SINT ↔ WORD |

@@ -3,6 +3,7 @@
 ![ALR_TO_AX](./ALR_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_TO_AX** ist ein Composite-Baustein zur Umwandlung eines LREAL-Werts (über den unidirektionalen ALR-Adapter) in einen BOOL-Wert (über den unidirektionalen AX-Adapter). Er wird typischerweise eingesetzt, um ein analoges Eingangssignal in ein digitales Ausgangssignal zu konvertieren – beispielsweise zur Erkennung einer Schwellwertüberschreitung. Der Baustein basiert auf einem einfachen Null-Vergleich und löst das Ausgangsereignis aus, sobald ein gültiger Wert am Eingang anliegt.

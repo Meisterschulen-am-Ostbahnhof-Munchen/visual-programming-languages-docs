@@ -3,9 +3,11 @@
 ![Uebung_216b_ALR_network](./Uebung_216b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-3 using an adapter-based function block `ADI_FB_CTD`. The counter value is output to an alphanumeric terminal (PHYS) via an adapter conversion chain. Additionally, a digital output is set when the counter value reaches zero. This exercise illustrates the integration of logiBUS inputs, adapter conversions, and terminal output in a compact sub-application.
+
 ## Function Blocks (FBs) Used
 
 ### Internal Function Blocks
@@ -59,7 +61,7 @@ Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-
 ### Connection Overview (Adapter Connections)
 
 | From (Source) | To (Destination) | Comment |
-|--------------|-------------|------------|
+| -------------- | ------------- | ------------ |
 | `Input_CD.IN` | `ADI_FB_CTD.CD` | Counting Pulses |
 | `Input_LD.IN` | `ADI_FB_CTD.LD` | Load Signal |
 | `ADI_FB_CTD.Q` | `Output_Q1.OUT` | Initial status (CV=0) |

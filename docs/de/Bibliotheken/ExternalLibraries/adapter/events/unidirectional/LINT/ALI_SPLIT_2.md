@@ -3,6 +3,7 @@
 ![ALI_SPLIT_2](./ALI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_SPLIT_2** dient als generischer Verteiler für einen unidirektionalen ALI‑Adapter (Application Layer Interface). Er kopiert alle eingehenden Daten und Ereignisse von einem einzelnen Eingangs‑Socket auf zwei Ausgangs‑Plugs. Dadurch kann ein Signal oder eine Datenquelle an zwei unabhängige Empfänger weitergegeben werden.
@@ -28,7 +29,7 @@ Keine dedizierten Daten-Ausgänge. Die verteilten Daten werden über die beiden 
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | **Socket** | `IN` | Eingang | Unidirektionaler ALI‑Adapter, der die eingehenden Daten/Ereignisse empfängt. |
 | **Plug** | `OUT1` | Ausgang | Erster unidirektionaler ALI‑Adapter, an den die Daten/Ereignisse weitergeleitet werden. |
 | **Plug** | `OUT2` | Ausgang | Zweiter unidirektionaler ALI‑Adapter, an den die Daten/Ereignisse weitergeleitet werden. |
@@ -58,7 +59,7 @@ Da der Baustein keine Ereignis‑Eingänge/Ausgänge oder internen Zustände bes
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **ALI_SPLIT_2** | Verteilt einen ALI‑Eingang auf zwei ALI‑Ausgänge. | – |
 | **ALI_SPLIT_3** (hypothetisch) | Verteilt auf drei Ausgänge. | Höhere Ausgangszahl. |
 | **ALI_MERGE_2** | Fasst zwei ALI‑Eingänge zu einem ALI‑Ausgang zusammen. | Gegenteilige Funktion (Join). |

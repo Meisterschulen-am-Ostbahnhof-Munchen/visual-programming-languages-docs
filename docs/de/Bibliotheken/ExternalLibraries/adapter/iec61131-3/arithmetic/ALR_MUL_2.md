@@ -4,6 +4,7 @@
 ![ALR_MUL_2](./ALR_MUL_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_MUL_2` ist ein generischer, arithmetischer Baustein, der für die Multiplikation zweier Werte konzipiert ist. Er basiert auf der IEC 61499-Architektur und nutzt Adapter-Schnittstellen zur Kapselung und Übertragung von Daten und Ereignissen. Dadurch ermöglicht er eine saubere Strukturierung und verringert den Verdrahtungsaufwand in 4diac-IDE-Anwendungen, da Daten und zugehörige Kontrollflüsse in gemeinsamen Verbindungen (Adaptern) gebündelt werden.

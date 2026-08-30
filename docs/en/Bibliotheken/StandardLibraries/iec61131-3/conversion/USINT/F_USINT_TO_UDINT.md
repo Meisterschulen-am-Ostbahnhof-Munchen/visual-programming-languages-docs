@@ -6,6 +6,7 @@
 
 The function block `F_USINT_TO_UDINT` converts a `USINT` value (8-bit unsigned integer) to a `UDINT` value (32-bit unsigned integer). This block is particularly useful in scenarios where type conversion without data loss is required.
 ![F_USINT_TO_UDINT](F_USINT_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

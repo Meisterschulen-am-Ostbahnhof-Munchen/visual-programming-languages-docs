@@ -6,6 +6,7 @@
 *(Symbolische Darstellung des Funktionsbausteins)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_MUL_3` ist ein generischer Baustein aus der Bibliothek `adapter::iec61131::arithmetic`, der für die arithmetische Multiplikation von drei Eingangswerten entwickelt wurde. Anstelle von klassischen, diskreten Dateneingängen nutzt dieser Baustein unidirektionale Adapter des Typs `ALR` zur Kapselung und Übertragung der Daten und Steuerungsereignisse. Dies ermöglicht eine strukturierte, modulare und übersichtliche Verdrahtung innerhalb der 4diac-IDE.

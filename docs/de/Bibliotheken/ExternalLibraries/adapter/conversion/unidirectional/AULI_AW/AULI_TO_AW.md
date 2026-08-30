@@ -3,6 +3,7 @@
 ![AULI_TO_AW](./AULI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_AW** ist ein zusammengesetzter Baustein (Composite FB), der eine ULINT‑Adapter-Schnittstelle (AULI) in eine WORD‑Adapter-Schnittstelle (AW) umwandelt. Er wird dort eingesetzt, wo ein unidirektionaler Datentyp‑Wechsel von vorzeichenloser 64‑Bit‑Ganzzahl auf 16‑Bit‑Wort erforderlich ist.

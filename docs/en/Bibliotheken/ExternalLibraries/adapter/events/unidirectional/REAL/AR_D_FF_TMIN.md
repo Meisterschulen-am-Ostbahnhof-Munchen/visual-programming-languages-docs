@@ -3,9 +3,11 @@
 ![AR_D_FF_TMIN](./AR_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_D_FF_TMIN** implements a data latch (D flip-flop) with one input and one output adapter. It is characterized by the optional specification of a minimum time (`Tmin`) between successive event outputs. The core of the function block is based on the standard function block `E_D_FF_ANY_TMIN`, which handles the actual flip-flop logic and the timing.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No standalone data outputs; the value is output via the `Q` adapter.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|---------------------------------------------------|-------------------------|
+| ---------- | ------ | --------------------------------------------------- | ------------------------- |
 | Socket | I | `adapter::types::unidirectional::AR` | Value to be transferred |
 | Plug | Q | `adapter::types::unidirectional::AR` | Latched value |
 
@@ -47,8 +49,8 @@ The function block works internally with the function block `E_D_FF_ANY_TMIN`:
 
 The adapter `INITO` is output. 2. **Flip-flop operation**: An event at the adapter input `I.E1` (socket) is forwarded to the **CLK** input of the internal flip-flop. Simultaneously, the data value `I.D1` is passed to the **D** input of the flip-flop.
 
-3. **Output**: The internally generated state (`Q`) and the associated event (`EO`) are passed to the adapter output `Q` (plug) – after adhering to the set minimum time `Tmin`. The event `Q.E1` and the data value `Q.D1` represent the latched value.
-4. **Timing**: The parameter `Tmin` defines the minimum time that must elapse between two consecutive `EO` events. If the frequency of input events exceeds this limit, the output is delayed or blocked accordingly.
+1. **Output**: The internally generated state (`Q`) and the associated event (`EO`) are passed to the adapter output `Q` (plug) – after adhering to the set minimum time `Tmin`. The event `Q.E1` and the data value `Q.D1` represent the latched value.
+2. **Timing**: The parameter `Tmin` defines the minimum time that must elapse between two consecutive `EO` events. If the frequency of input events exceeds this limit, the output is delayed or blocked accordingly.
 
 ## Technical Features
 

@@ -3,9 +3,11 @@
 ![FB_RS_T_FF](./FB_RS_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with an additional toggle function. It combines the properties of an RS flip-flop (set and reset) with the ability to toggle the output on each rising edge of the clock signal. The reset input has priority, followed by the set input, and then the toggle function.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|----------|-------|-----------|
+| ---------- | ------- | ----------- |
 | `S` | BOOL | Set – sets the output `Q1` to `TRUE`, provided `R1` is not active at the same time. |
 | `R1` | BOOL | Reset (dominant) – sets the output `Q1` to `FALSE` and takes precedence over `S` and Toggle. |
 | `CLK` | BOOL | Clock – clock generator for the Toggle function; on a rising edge, `Q1` is inverted if neither Reset nor Set is active. |
@@ -59,6 +61,7 @@ ELSIF CLK AND NOT EDGE THEN
 Q1 := NOT Q1;
 END_IF;
 EDGE := CLK;
+
 ## Technical Features
 
 - **Reset Dominance**: The R1 input has the highest priority; when set, it overrides both Set and Toggle commands.
@@ -71,11 +74,11 @@ EDGE := CLK;
 The function block does not have an explicit state machine; the state is implicitly represented by the internal variables `Q1` and `EDGE`. A state table summarizes the behavior:
 
 | Current `Q1` | `R1` | `S` | `CLK` (rising edge) | New `Q1` |
-----------------|------|-----|---------------------------|-------------|
+---------------- | ------ | ----- | --------------------------- | ------------- |
 | x | TRUE | x | x | FALSE |
-| x | FALSE| TRUE| x | TRUE |
-| x | FALSE| FALSE| TRUE (and previously FALSE) | NOT Q1 |
-| x | FALSE| FALSE| FALSE or no edge | unchanged |
+| x | FALSE | TRUE | x | TRUE |
+| x | FALSE | FALSE | TRUE (and previously FALSE) | NOT Q1 |
+| x | FALSE | FALSE | FALSE or no edge | unchanged |
 
 ## Application Scenarios
 

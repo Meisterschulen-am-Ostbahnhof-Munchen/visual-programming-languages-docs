@@ -3,9 +3,11 @@
 ![GET_WSTRING](./GET_WSTRING.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **GET_WSTRING** is used to read a WSTRING variable via an InOut parameter and provides the buffered value as a data output. It is typically used to transfer an external WSTRING value into the internal processing of an application module without modifying the original value.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -68,7 +70,7 @@ The FB has only one active state:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Data Type | Special Feature |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | GET_STRING | STRING | Analog function block for ASCII strings (not Unicode). |
 | GET_DINT | DINT | For 32-bit integers. |
 | FORCE | Any type | Forces a value regardless of the source, often with an additional reset mechanism. |

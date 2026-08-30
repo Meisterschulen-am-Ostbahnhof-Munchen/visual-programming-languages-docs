@@ -3,6 +3,7 @@
 ![ALR_TO_ALI](./ALR_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ALR_TO_ALI** ist ein Composite-Baustein, der eine Adapter-Konvertierung von **ALR (LREAL)** nach **ALI (LINT)** realisiert. Er ermöglicht die einfache und strukturierte Integration einer LREAL-basierten Adapter-Schnittstelle in eine LINT-basierte Umgebung, ohne dass die Konvertierungslogik selbst implementiert werden muss. Der Baustein ist für den Einsatz in IEC 61499 basierten Industriesteuerungen konzipiert und nutzt den internen Funktionbaustein `F_LREAL_TO_LINT` nach IEC 61131-3.

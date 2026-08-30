@@ -3,6 +3,7 @@
 ![CbVtStatus](https://user-images.githubusercontent.com/116869307/214146846-2d9f0694-b5f4-4e70-aae0-dc64540eb356.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **CbVtStatus** is a standardized callback module for virtual terminal page changes, developed under the EPL 2.0 license. Version 1.0 supports ISO 11783-6 (ISOBUS) in agricultural tax systems.
@@ -29,12 +30,15 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 ## Functionality
 
 1. **Initialization**:
+
 - Event `INIT` starts setup
 - Event `INITO` confirms with STATUS
-2. **Page Change**:
+1. **Page Change**:
+
 - Event `IND` is triggered on screen change
 - Returns: Page ID, Active Status, Instance Number
-3. **Operation**:
+1. **Operation**:
+
 - Real-time monitoring of the VT status
 - Multi-ECU capable architecture
 
@@ -48,7 +52,7 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 ## Supported Operating Modes
 
 | Mode | Description |
-|---------------|----------------------------------|
+| --------------- | ---------------------------------- |
 | Single device | Standard operation with u8Instance=0 |
 | Multi-ECU | Parallel Instances (1-255) |
 | Diagnostics | STATUS Messages for Service |
@@ -63,7 +67,7 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 ## ⚖️ Comparison with Similar Modules
 
 | Feature | CbVtStatus | VtPageManager | VtEventLogger |
-|----------------|-------------|---------------|---------------|
+| ---------------- | ------------- | --------------- | --------------- |
 | Page Switch | ✔ | ✔ | ✖ |
 | Multi-ECU | ✔ | ✖ | ✖ |
 | STATUS feedback | ✔ | ✖ | ✔ |

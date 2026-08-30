@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) **AR_MUL_2** ist ein generischer Arithmetik-Baustein für die 4diac-IDE. Er dient zur Multiplikation von zwei Werten, die über unidirektionale Adapter übertragen werden. Durch die Kapselung der mathematischen Operation in eine Adapter-Schnittstelle ermöglicht dieser Baustein eine saubere, modulare und übersichtliche Modellierung von Berechnungen innerhalb von IEC 61499 Anwendungen.
@@ -62,6 +63,7 @@ Da es sich um einen generischen Funktionsbaustein (`GEN_AR_MUL`) handelt, ist di
 ## Zustandsübersicht
 
 Da dieser Funktionsbaustein primär datenflussgesteuert über Adapter arbeitet, besitzt er kein komplexes internes Zustandsdiagramm (ECC). Er agiert als zustandsloses Übertragungsglied:
+
 1. **Warten:** Baustein wartet auf Datenaktualisierungen an den Adaptern `IN1` und/oder `IN2`.
 2. **Berechnung:** Bei Wertänderung wird das Produkt gebildet.
 3. **Ausgabe:** Das Ergebnis wird direkt an den Ausgang `OUT` weitergeleitet.
@@ -79,6 +81,7 @@ Da dieser Funktionsbaustein primär datenflussgesteuert über Adapter arbeitet, 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu Standard-Multiplikationsbausteinen (wie dem klassischen `MUL`-Baustein nach IEC 61131-3), die mit elementaren Datentypen (z.B. `INT`, `REAL`) arbeiten, nutzt `AR_MUL_2` strukturierte **Adapter**. Dies hat folgende Vorteile:
+
 -   **Geringerer Verdrahtungsaufwand:** Signale und dazugehörige Steuerungsereignisse werden in einer einzigen Adapterverbindung gebündelt.
 -   **Bessere Lesbarkeit:** Komplexe Steuerungsdiagramme bleiben übersichtlich, da weniger Einzelverbindungen auf der Arbeitsfläche gezogen werden müssen.
 

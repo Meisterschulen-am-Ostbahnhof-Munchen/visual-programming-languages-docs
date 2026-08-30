@@ -4,9 +4,11 @@
 ![ST08X_TO_BYTE](./ST08X_TO_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ST08X_TO_BYTE` converts a special data structure containing eight individual Boolean values (BOOL) into a single byte value (BYTE). This operation is useful for bundling compact digital signals for transmission or storage, or for connecting them to systems that expect data in byte format.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,7 +61,8 @@ The function block does not have an internal state in the sense of a state machi
 - **Communication with Byte-Oriented Interfaces**: Preparing data for transmission via serial bus systems (e.g., Modbus, Profibus), networks, or communication protocols that expect data in byte blocks.
 - **Compact Storage**: Bundling multiple digital switching states (e.g., from limit switches, machine states) into a single byte to optimize storage space.
 - **Data Preparation for Visualization or Logging**: Converting structured BOOL signals into a byte format that is easier for display systems or data storage to handle.
-*
+-
+
 ## ⚖️ Comparison with Similar Blocks
 
 - **`BOOL_TO_BYTE` (or similar blocks from standard libraries)**: Many IEC 61499 or IEC 61131-3 libraries offer blocks that directly convert eight separate `BOOL` inputs into a single `BYTE`. `ST08X_TO_BYTE` differs in that the input values are already bundled into a structured variable (`ST08X`), which can simplify wiring in the application diagram.

@@ -79,7 +79,7 @@ Als Composite-FB besitzt **ALR_TO_AI** kein eigenes Zustandsdiagramm. Der intern
 ## Vergleich mit ähnlichen Bausteinen
 
 | FB | Funktion | Unterschied |
-|----|----------|-------------|
+| ---- | ---------- | ------------- |
 | **ALR_TO_AI** | Konvertiert LREAL → INT über Adapter | Composite, keine eigene Zustandsmaschine; verwendet IEC 61131-Konverter |
 | `F_LREAL_TO_INT` | Reine Datenkonvertierung ohne Adapter | Direkter FB, benötigt separate Adapter-Anbindung |
 | `AI_TO_ALR` | Umgekehrte Richtung INT → LREAL | Anderer Datentyp und Konvertierungsrichtung |

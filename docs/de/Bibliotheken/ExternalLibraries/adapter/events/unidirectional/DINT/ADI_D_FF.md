@@ -62,7 +62,7 @@ Der FB besitzt keine expliziten Zustände im Sinne einer Zustandsmaschine. Das V
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschiede |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `ADI_SR_FF` | Set‑Reset‑Flipflop | Speichert aufgrund von Setzen/Rücksetzen, nicht taktgesteuert. |
 | `ADI_T_FF` | T‑Flipflop | Schaltet den Zustand bei jedem Takt um (Toggle). |
 | `ADI_D_FF` | D‑Flipflop | Speichert den anliegenden Datenwert bei Taktflanke (wie hier beschrieben). |

@@ -3,15 +3,17 @@
 ![sequence_E_08_AX_AX](./sequence_E_08_AX_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **sequence_E_08_AX_AX** implements a sequential control loop with eight output stages. It enables the step-by-step switching of states, with each state being exited by an event via an AX adapter input. An AX adapter provides a unidirectional interface with a data value (`D1`) that is transferred from the input adapter to the corresponding output adapter upon entering a state. The block is designed for use in automation systems that require a clear, event-driven sequence of steps.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `S8_START` | Event | Jumps from `State_08` back to the initial state `START` |
 | `RESET` | Event | Resets from any state back to the initial state `START` |
 
@@ -36,7 +38,7 @@ None (state transitions are controlled exclusively via events).
 **Plugs (Outputs – Unidirectional AX Adapter)**
 
 | Name | Type | Comment |
-|------|------|-----------|
+| ------ | ------ | ----------- |
 | `DO_S1` | adapter::types::unidirectional::AX | Output active when `State_01` is active |
 | `DO_S2` | adapter::types::unidirectional::AX | Output active when `State_02` is active |
 | DO_S3` | adapter::types::unidirectional::AX | Output active when `State_03` is active |
@@ -49,7 +51,7 @@ None (state transitions are controlled exclusively via events).
 **Sockets (Inputs – Unidirectional AX Adapter)**
 
 | Name | Type | Comment |
-|------|------|-----------|
+| ------ | ------ | ----------- |
 | `DI_S1` | adapter::types::unidirectional::AX | Jumps from `START` to `State_01` |
 | `DI_S2` | adapter::types::unidirectional::AX | Jumps from `State_01` to `State_02` |
 | `DI_S3` | adapter::types::unidirectional::AX | Jumps from `State_02` to `State_03` |
@@ -73,7 +75,7 @@ The function block operates on the principle of an event-driven step sequence. A
 ## State Overview
 
 | State (ECC) | Meaning | Actions |
-|---------------|-----------|----------|
+| --------------- | ----------- | ---------- |
 | `xSTART` | Initial sleep state after activation | No output, expects `DI_S1` |
 | `sState_01` | First step of the sequence | Sets `DO_S1.D1` to `DI_S1.D1`; output `STATE_NR=1` |
 | `sState_02` | Second step | Sets `DO_S2.D1` to `DI_S2.D1`; `STATE_NR=2` |

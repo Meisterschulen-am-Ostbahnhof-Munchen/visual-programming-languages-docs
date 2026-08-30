@@ -3,6 +3,7 @@
 ![Uebung_012c_sub_network](./Uebung_012c_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how to read a numeric value via an object ID (e.g., from a CAN bus), convert it into a `UDINT`, and store it permanently using an INI storage function. The stored value can then be output via a `Q_NumericValue` block. The subapp provides the interfaces `KEY`, `SECTION`, `u16ObjId` (inputs) and `VALUEO` (output), as well as the event `IND`.
@@ -55,25 +56,29 @@ This component is typically used to persistently store configuration data or mea
 The subapp operates in several steps, linked together via event and data connections.
 
 1. **Read and Convert Value**
+
 - The module `ID` waits for a new value for object ID `u16ObjId`. As soon as a value arrives, it sends the event `IND`.
 - This event is forwarded to the conversion module `F_DWORD_TO_UDINT.REQ`.
 - Simultaneously, the read DWORD value from `ID.IN` is passed to `F_DWORD_TO_UDINT.IN`.
 - After successful conversion, `F_DWORD_TO_UDINT` sends the event `CNF`, and the converted UDINT value appears at `OUT`.
-2. **Save Value**
+1. **Save Value**
+
 - The event `F_DWORD_TO_UDINT.CNF` triggers the `INI.SET` input.
 - The converted value is passed from `F_DWORD_TO_UDINT.OUT` to `INI.VALUE` via the data connection.
 - The key (`KEY`) and section (`SECTION`) are passed directly from the SubApp inputs to the INI block.
 
 - After saving, `INI` sends the event `SETO`, which is forwarded to the subapp output `IND` (there, it appears as the visible output of the subapp).
 
-3. **Output/Update Saved Value**
+1. **Output/Update Saved Value**
+
 - When the subapp is initialized (implicitly or via an external initialization event), `INI.INITO` is triggered and directly connected to `INI.GET` (see event connection `INI.INITO -> INI.GET`). This reads the last saved value.
 - The read value appears at `INI.VALUEO`.
 - The event `GETO` is simultaneously passed to two locations:
 - To the function block `Q_NumericValue.REQ`, which takes the value (`INI.VALUEO` → `Q_NumericValue.u32NewValue`).
 - To the subapp output `IND` (invisible connection), so that the parent application is informed of the update.
 - The object ID for `Q_NumericValue` comes from the subapp input `u16ObjId`.
-4. **Subapp Output**
+1. **Subapp Output**
+
 - The stored value `VALUEO` is passed through in parallel to the subapp output `VALUEO`.
 
 The following diagram (schematic) shows the essential connections:
@@ -93,6 +98,7 @@ INI.VALUEO ───> VALUEO (SubApp Ausgang)
 INI.GETO ───> Q_NumericValue.REQ
 INI.GETO ───> IND (SubApp Ausgang)
 INI.INITO ───> INI.GET (intern)
+
 ## Summary
 
 In this exercise, a sub-application was implemented that reads a numeric value via an object ID, converts it to a `UDINT`, stores it in an INI-like memory structure, and then outputs the stored value. The following concepts were used:

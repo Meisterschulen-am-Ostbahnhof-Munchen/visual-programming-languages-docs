@@ -3,9 +3,11 @@
 ![AD_SPLIT_9](./AD_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_SPLIT_9** distributes an incoming unidirectional adapter (AD) signal to nine identical outputs. It is implemented as a generic function block and is suitable for reusing an adapter signal in various downstream components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Name | Type | Direction |
-|------|-----|----------|
+| ------ | ----- | ---------- |
 | IN | adapter::types::unidirectional::AD | Socket (Input) |
 | OUT1 | adapter::types::unidirectional::AD | Plug (Output) |
 | OUT2 | adapter::types::unidirectional::AD | Plug (Output) |

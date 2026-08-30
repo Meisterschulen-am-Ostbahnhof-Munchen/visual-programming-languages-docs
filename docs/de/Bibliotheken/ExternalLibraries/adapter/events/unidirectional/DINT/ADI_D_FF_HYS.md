@@ -3,6 +3,7 @@
 ![ADI_D_FF_HYS](./ADI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_D_FF_HYS** realisiert ein datengetaktetes (D‑) Flipflop mit einer einstellbaren Hysterese. Er empfängt Werte über einen unidirektionalen Adapter-Eingang `I` und gibt den mit Hysterese übernommenen Zustand über den Adapter-Ausgang `Q` aus. Die Hysterese-Bandbreite wird beim Initialisierungsereignis `INIT` gesetzt.

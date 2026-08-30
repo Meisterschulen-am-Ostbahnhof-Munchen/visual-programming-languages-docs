@@ -3,9 +3,11 @@
 ![A2X_SPLIT_8](./A2X_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The A2X_SPLIT_8 function block serves as a generic building block to distribute an incoming A2X adapter (socket) to eight identical A2X adapter outputs (plugs). It is used in industrial automation when a signal is required multiple times.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,6 +25,7 @@ Not present.
 ### **Data Outputs**
 
 Not present.
+
 ### **Adapters**
 
 The FB has the following adapter interfaces:

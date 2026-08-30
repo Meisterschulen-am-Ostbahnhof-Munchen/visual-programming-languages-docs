@@ -56,16 +56,20 @@ Since this is a mathematical calculation function block, its behavior is essenti
 1. **Waiting:** The function block waits for a trigger event at one of the input adapters (`IN1` or `IN2`).
 2. **Calculation:** Upon event input, the data values are read and subtracted.
 3. **Output:** The calculated value is written to the adapter `OUT`, triggering the corresponding send event.
+
 - **Control Engineering:** Calculation of a control deviation ($e = w - x$), where the setpoint ($w$) and actual value ($x$) are transmitted via standardized ADI interfaces.
 - **Measurement Processing:** Differential pressure measurement or offset correction of sensor values integrated into the application via adapters.
 - **Signal Preprocessing:** Reduction of signal values by fixed or variable limits before forwarding them to actuators.
+
 - ## Comparison with Similar Blocks
 
 Compared to a standard subtraction block (such as the classic `SUB` block according to IEC 61131-3), which uses direct data and event pins, `ADI_SUB_2` offers the following advantages:
+
 - **Fewer connection lines:** Data and events are bundled in the `ADI` adapter, making the application diagram in 4diac clearer.
 - **Standardized interfaces:** Facilitates the exchange of calculation and processing blocks, as only the adapters need to be connected.
 
 The `ADI_SUB_2` is an efficient auxiliary block for structured IEC 61499 control applications. It is ideally suited for demanding architectures where clarity and standardized adapter interfaces are paramount.
+
 ## Technical Features
 
 ## State Overview

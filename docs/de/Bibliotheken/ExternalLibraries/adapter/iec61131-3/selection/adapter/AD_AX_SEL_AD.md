@@ -4,6 +4,7 @@
 ![AD_AX_SEL_AD](./AD_AX_SEL_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AD_AX_SEL_AD` dient der binären Auswahl (Selektion) zwischen zwei Eingangssignalen, die über Adapterstrukturen bereitgestellt werden. Basierend auf dem Zustand eines Selektions-Signals (G) wird entweder der Wert des Eingangs `IN0` oder des Eingangs `IN1` an den Ausgang `OUT` weitergeleitet. Der Baustein ist intern als Composite-Funktionsbaustein realisiert und nutzt standardisierte IEC 61499- und IEC 61131-Mechanismen, um eine ereignisgesteuerte, typsichere Signalweiterleitung zu gewährleisten.
@@ -40,6 +41,7 @@ Die Schnittstellen dieses Funktionsbausteins sind vollständig über Adapter rea
 ## Funktionsweise
 
 Der Baustein kapselt ein internes Netzwerk aus Steuer- und Konvertierungsbausteinen:
+
 1. **Signalpufferung und Erfassung:** Sobald sich an den Adaptern `IN0`, `IN1` oder `G` Daten ändern, triggert das entsprechende Adapter-Ereignis `E1` die internen Flip-Flops (`E_D_FF` bzw. `E_D_FF_ANY`).
 2. **Datenweiterleitung:** Die Datenwerte (`D1`) der Eingänge `IN0` und `IN1` werden über interne Datenkonverter (`F_MOVE` vom Typ `DWORD`) eingelesen und dem Auswahlbaustein `F_SEL` zur Verfügung gestellt.
 3. **Auswahllogik (`F_SEL`):**
@@ -56,6 +58,7 @@ Der Baustein kapselt ein internes Netzwerk aus Steuer- und Konvertierungsbaustei
 ## Zustandsübersicht
 
 Der Baustein besitzt als Composite-FB kein eigenes Execution Control Chart (ECC). Das Verhalten ist rein daten- und ereignisgesteuert durch das interne Zusammenspiel der Standard-FBs:
+
 - **Ereignis auf `IN0` oder `IN1`:** Aktualisiert den jeweiligen internen Wertpuffer. Falls der betroffene Eingang gerade aktiv geschaltet ist, wird der neue Wert sofort an `OUT` ausgegeben.
 - **Ereignis auf `G`:** Wechselt den aktiven Kanal und gibt den Wert des neu gewählten Kanals an `OUT` aus.
 

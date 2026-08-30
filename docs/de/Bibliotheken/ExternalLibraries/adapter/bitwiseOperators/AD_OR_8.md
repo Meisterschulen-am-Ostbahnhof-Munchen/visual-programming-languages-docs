@@ -3,6 +3,7 @@
 ![AD_OR_8](./AD_OR_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_OR_8** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 8 Eingangswerten vom Typ `DWORD` (32-Bit-Bitmuster (Doppelwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

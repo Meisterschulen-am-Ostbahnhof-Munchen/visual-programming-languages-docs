@@ -3,9 +3,11 @@
 ![ILOCK_IO_AX](./ILOCK_IO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_IO_AX** implements a chainable momentary latch with interlock functionality. It ensures that only one element in a chain is active at any given time – as soon as another function block in the chain becomes active, it is reset. The function block is specifically designed for use with AX/AX2 adapter interfaces.
+
 ## Interface Structure
 
 The block does not have any traditional event or data inputs/outputs at the function block level. All communication takes place via **adapter interfaces**. The signals transmitted via the adapters are detailed below.
@@ -13,7 +15,7 @@ The block does not have any traditional event or data inputs/outputs at the func
 ### **Event Inputs**
 
 | Signal | Adapter | Description |
-|--------|---------|--------------|
+| -------- | --------- | -------------- |
 | `IN.E1` | IN (AX) | Trigger for processing the input signal. |
 | `ILOCK_IN.EO1` | ILOCK_IN (AX2) | Event from the parent function block in the chain (e.g., when a different output becomes active there). |
 | `ILOCK_OUT.EI1` | ILOCK_OUT (AX2) | Event from the child function block in the chain (e.g., when it becomes active). |
@@ -21,7 +23,7 @@ The block does not have any traditional event or data inputs/outputs at the func
 ### **Event Outputs**
 
 | Signal | Adapter | Description |
-|--------|---------|--------------|
+| -------- | --------- | -------------- |
 | `OUT.E1` | OUT (AX) | Confirmation that processing is complete. |
 | `ILOCK_IN.EI1` | ILOCK_IN (AX2) | Event sent to the parent FB (sent with each processing cycle). |
 | `ILOCK_OUT.EO1` | ILOCK_OUT (AX2) | Event sent to the child FB (sent with each processing cycle). |
@@ -29,7 +31,7 @@ The block does not have any traditional event or data inputs/outputs at the func
 ### **Data Inputs**
 
 | Signal | Adapter | Description |
-|--------|---------|--------------|
+| -------- | --------- | -------------- |
 | `IN.D1` | IN (AX) | Set input (BOOL) – if TRUE and no other FB in the chain is active, the output becomes active. |
 | `ILOCK_IN.DO1` | ILOCK_IN (AX2) | State of the parent FB (TRUE means that the output is active there). |
 | `ILOCK_OUT.DI1` | ILOCK_OUT (AX2) | State of the child function block (TRUE means that its output is active). |
@@ -37,7 +39,7 @@ The block does not have any traditional event or data inputs/outputs at the func
 ### **Data Outputs**
 
 | Signal | Adapter | Description |
-|--------|---------|--------------|
+| -------- | --------- | -------------- |
 | `OUT.D1` | OUT (AX) | Output signal (BOOL) – active when `IN.D1` is set and no other function block in the chain is active. |
 | `ILOCK_IN.DI1` | ILOCK_IN (AX2) | Passes its own output signal to the parent function block. |
 | `ILOCK_OUT.DO1` | ILOCK_OUT (AX2) | The output signal is passed on to the subordinate function block. |
@@ -45,7 +47,7 @@ The block does not have any traditional event or data inputs/outputs at the func
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket (Input) | `adapter::types::unidirectional::AX` | Input signal from the user (set input and event). |
 | `OUT` | Plug (Output) | `adapter::types::unidirectional::AX` | Output signal to the user (output value and confirmation). |
 | `ILOCK_IN` | Socket (Input) | `adapter::types::bidirectional::AX2` | Connection to the **parent** function block in the chain. |
@@ -88,7 +90,7 @@ In state `REQ`, the algorithm `REQ` and the event outputs are executed. This sta
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference to ILOCK_IO_AX |
-|----------|---------------|----------------------------|
+| ---------- | --------------- | ---------------------------- |
 | **SR Flip-Flop** | Sets output on SET, resets on RESET. | No interlock – multiple function blocks (FBs) can be active simultaneously. |
 | **Simple Latch (e.g., LATCH_AX)** | Holds the value until triggered again. | No coupling with other FBs. |
 | **ILOCK_IO_AX** | Exclusive activation in a chain. | Enforces that only one FB is active – ideal for line control systems. |

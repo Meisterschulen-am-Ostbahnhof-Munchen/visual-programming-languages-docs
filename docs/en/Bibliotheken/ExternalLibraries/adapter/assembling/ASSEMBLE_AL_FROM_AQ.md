@@ -3,6 +3,7 @@
 ![ASSEMBLE_AL_FROM_AQ](./ASSEMBLE_AL_FROM_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_AL_FROM_AQ` is used to combine 32 unidirectional AQ adapters ("quarters") into a single AL adapter (LWORD).
@@ -37,7 +38,7 @@ The composite LWORD is output via the AL plug adapter (D1).
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AQ` | `QUARTER_BYTE_00` … `QUARTER_BYTE_31` | Socket (Input) | 32 identical adapters, each providing a 2-bit value (“quarter”). Each socket has an event output (E1) and a data output (D1). |
 | `adapter::types::unidirectional::AL` | `OUT` | Plug (Output) | Output adapter that passes a 64-bit LWORD (D1) and an associated event (E1). |
 
@@ -70,7 +71,7 @@ The state logic is implemented by the internal blocks `ASSEMBLE_LWORD_FROM_QUART
 ## Comparison with Similar Components
 
 | Component | Operating Principle | Number of Inputs | Output Type | Special Feature |
-|----------|------------------|----------------|-------------|--------------|
+| ---------- | ------------------ | ---------------- | ------------- | -------------- |
 | `ASSEMBLE_AL_FROM_AQ` | Adapter-Based Composition | 32 × 2-Bit (AQ) | 1 × LWORD (AL) | Edge-Triggered Output, Pure Composition |
 | `ASSEMBLE_LWORD_FROM_QUARTERS` (internal) | Data-Oriented Composition | 32 × 2-Bit (direct) | LWORD (Data) | No adapters, no flip-flop |
 | Classic multiplexer (e.g., MUX) | Input selection via control line | n inputs, 1 selection | Simple data type | Requires dedicated address signals |

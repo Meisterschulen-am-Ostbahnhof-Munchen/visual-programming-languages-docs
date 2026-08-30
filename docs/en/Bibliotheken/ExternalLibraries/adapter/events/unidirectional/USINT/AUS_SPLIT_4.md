@@ -24,7 +24,7 @@ None.
 The function block communicates exclusively via adapters of type `adapter::types::unidirectional::AUS`. This is a unidirectional adapter that transmits a Boolean signal (OFF command).
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket (Input)** | `IN` | `adapter::types::unidirectional::AUS` | Receives the original OFF signal. |
 | **Plug (Output)** | `OUT1` | `adapter::types::unidirectional::AUS` | First outgoing OFF path. |
 | **Plug (Output)** | `OUT2` | `adapter::types::unidirectional::AUS` | Second outgoing OFF path. |
@@ -49,7 +49,7 @@ The module does not have a state machine. The output signals follow the input si
 - **Testing and Simulation**: For simultaneously controlling multiple simulated components with the same signal.
 
 | Function Block | Function | Special Feature |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `AUS_SPLIT_2` | Distributes an OFF signal to two outputs | Fewer ports, more compact. |
 | `AUS_SPLIT_4` | Distributes to four outputs | This function block. |
 | `AUS_SPLIT_N` | Configurable splitter (e.g., via generic adapter lists) | More flexible number, but more complex to configure. |

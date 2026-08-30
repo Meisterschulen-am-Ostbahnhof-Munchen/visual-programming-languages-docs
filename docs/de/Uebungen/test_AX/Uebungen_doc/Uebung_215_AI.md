@@ -3,6 +3,7 @@
 ![Uebung_215_AI_network](./Uebung_215_AI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 61131-3 mit Adapter-Schnittstelle (AI_FB_CTD) und gibt den aktuellen Zählerwert auf einem Terminal aus. Der Zähler wird über digitale Eingänge dekrementiert und geladen.

@@ -29,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AD` | IN | Socket | Eingangsadapter, der auf die sechs Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AD` | OUT1 | Plug | Erster Ausgangsadapter (identisch zu IN). |
 | `adapter::types::unidirectional::AD` | OUT2 | Plug | Zweiter Ausgangsadapter. |

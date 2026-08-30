@@ -3,9 +3,11 @@
 ![AX_NOT_INIT](./AX_NOT_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_NOT_INIT** implements a Boolean negation (NOT function) based on an adapter type. Unlike classic NOT blocks, it operates via a standardized adapter interface and is specifically designed for use in modular automation systems. Initialization occurs via the INIT event input, which triggers the first calculation.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ This function block has no direct data outputs. Output data is provided via the 
 ### **Adapters**
 
 | Name | Type | Comment | Direction |
-|------|--------------------------------------------------|----------------------|----------|
+| ------ | -------------------------------------------------- | ---------------------- | ---------- |
 | IN | adapter::types::unidirectional::AX | Input Value | Socket |
 | OUT | adapter::types::unidirectional::AX | Output Value (Negated) | Plug |
 

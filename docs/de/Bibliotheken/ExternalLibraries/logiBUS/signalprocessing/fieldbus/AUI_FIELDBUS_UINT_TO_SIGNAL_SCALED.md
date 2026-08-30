@@ -3,6 +3,7 @@
 ![AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED](./AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED dient der skalieren Übertragung eines eingehenden UINT-Wertes (Feldbus-Signal) auf einen analogen REAL-Ausgang. Er arbeitet nur dann, wenn das eingehende Signal als gültig markiert ist (VALID-Signal). Eine zusätzliche Initialisierungsschnittstelle erlaubt das Zurücksetzen der internen Logik. Der Baustein ist als Composite ausgeführt und kombiniert einen skalierenden Unterbaustein mit einem D-Flipflop zur Gültigkeitsspeicherung.
@@ -35,7 +36,7 @@ Der Funktionsblock AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED dient der skalieren Übert
 ### **Adapter**
 
 | Typ | Name | Richtung | Kommentar |
-|-----|------|----------|-----------|
+| ----- | ------ | ---------- | ----------- |
 | adapter::types::unidirectional::AUI | IN | Socket | UINT-Eingang (Feldbus-Signal) |
 | adapter::types::unidirectional::AR | OUT | Plug | Skalierter REAL-Ausgang |
 | adapter::types::unidirectional::AX | VALID | Plug | Gültigkeitssignal (TRUE = gültig) |

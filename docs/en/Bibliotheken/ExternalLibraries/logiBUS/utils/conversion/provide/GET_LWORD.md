@@ -3,9 +3,11 @@
 ![GET_LWORD](./GET_LWORD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_LWORD** function block is used for the consistent retrieval of an LWORD value from an **InOut variable**. It buffers the current value of the source variable and makes it available at the output `OUT`. This is particularly useful when the content of a shared variable needs to be saved at a defined point in time without being affected by subsequent write operations from other function blocks.
+
 ## Interface Structure
 
 ### **Event Inputs**

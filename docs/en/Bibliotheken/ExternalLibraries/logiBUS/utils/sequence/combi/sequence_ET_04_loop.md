@@ -4,6 +4,7 @@
 ![sequence_ET_04_loop_ecc](./sequence_ET_04_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_ET_04_loop` implements a cyclic sequence with four states. The transition between states can occur either through an external event or after a configurable time has elapsed. The block is designed to implement recurring processes in control applications where actions must be executed sequentially in a loop.
@@ -27,7 +28,8 @@ The function block `sequence_ET_04_loop` implements a cyclic sequence with four 
 - `EO_S2`: Triggered upon entering `State_02`. Transmits the output value `DO_S2`.
 - `EO_S3`: Triggered upon entering `State_03`. Transmits the output value `DO_S3`.
 - `EO_S4`: Triggered upon entering `State_04`. Transmits the output value `DO_S4`.
-- * ...
+- - ...
+
 ### **Data Inputs**
 
 - `DT_S1_S2` (TIME): Time for the automatic transition from `State_01` to `State_02`. A value of `NO_TIME` disables the time transition.
@@ -74,14 +76,14 @@ The ECC consists of six states:
 
 1. **xSTART**: Initial, inactive state. Waits for `START_S1`.
 2. **sState_01**: Active state
-1. Sets `DO_S1`. Can switch to `sState_02` via a `S1_S2` event or timeout.
-3. **sState_02**: Active State
-2. Sets `DO_S2`. Can transition to `sState_03` via the `S2_S3` event or timeout.
-4. **sState_03**: Active State
-3. Sets `DO_S3`. Can transition to `sState_04` via the `S3_S4` event or timeout.
-5. **sState_04**: Active State
-4. Sets `DO_S4`. Can transition back to `sState_01` via the `S4_S1` event or timeout (loop).
-6. **sRESET**: Reset state. Switches off all outputs, sets `STATE_NR` to 0, and automatically switches back to `xSTART`.
+3. Sets `DO_S1`. Can switch to `sState_02` via a `S1_S2` event or timeout.
+4. **sState_02**: Active State
+5. Sets `DO_S2`. Can transition to `sState_03` via the `S2_S3` event or timeout.
+6. **sState_03**: Active State
+7. Sets `DO_S3`. Can transition to `sState_04` via the `S3_S4` event or timeout.
+8. **sState_04**: Active State
+9. Sets `DO_S4`. Can transition back to `sState_01` via the `S4_S1` event or timeout (loop).
+10. **sRESET**: Reset state. Switches off all outputs, sets `STATE_NR` to 0, and automatically switches back to `xSTART`.
 
 ## Application Scenarios
 

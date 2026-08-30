@@ -3,9 +3,11 @@
 ![SPLIT_AW_INTO_AQ](./SPLIT_AW_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AW_INTO_AQ** divides the eight quarter adapters (AQ) of a word adapter (AW). The incoming word (16 bits) is split into eight quarter units (2 bits each) and output via the corresponding AQ plugs.
+
 ## Interface Structure
 
 ### **Event Inputs**

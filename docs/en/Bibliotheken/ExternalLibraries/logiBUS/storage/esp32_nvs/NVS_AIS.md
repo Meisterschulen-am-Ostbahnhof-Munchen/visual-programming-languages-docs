@@ -3,9 +3,11 @@
 ![NVS_AIS](./NVS_AIS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `NVS_AIS` is used to store and load strings (STRING) in the non-volatile storage (NVS) of an ESP32 microcontroller. The data is addressed via a key (KEY) and exchanged via AIS (Acyclic Information Service) adapters. The block encapsulates the NVS initialization as well as the basic read and write operations and provides a standardized interface for integration into industrial control applications.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `NVS_AIS` is used to store and load strings (STRING) in the n
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-|---------------|----------|--------------------------------------------------------------------------------------------------|
+| --------------- | ---------- | -------------------------------------------------------------------------------------------------- |
 | QI | BOOL | **Event Input Qualifier** – Controls the behavior during the INIT phase (e.g., activation). |
 | KEY | STRING | **Key name** – The key under which the value is stored/retrieved in the NVS. |
 | DEFAULT_VALUE | STRING | **Default value** – Value that is read if no entry exists in the NVS for the specified KEY. |
@@ -31,14 +33,14 @@ The function block `NVS_AIS` is used to store and load strings (STRING) in the n
 ### **Data Outputs**
 
 | Name | Data type | Description |
-|--------|----------|------------------------------------------------------------------------------|
+| -------- | ---------- | ------------------------------------------------------------------------------ |
 | QO | BOOL | **Event Output Qualifier** – Indicates the success of the last operation. |
 | STATUS | STRING | **Service Status** – Feedback on the NVS driver status (e.g., error messages). |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-|----------|-----------------------------------------------|------------------------------------------------------------------------------------------------------|
+| ---------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | AIS_IN | `adapter::types::unidirectional::AIS` (Socket) | **Value to store (SET)** – Receives a STRING value to be stored via the AIS protocol. |
 | AIS_OUT | `adapter::types::unidirectional::AIS` (Plug) | **Stored value output (GETO)** – Sends the read STRING value from the NVS via the AIS protocol. |
 
@@ -48,15 +50,15 @@ The function block `NVS_AIS` is used to store and load strings (STRING) in the n
 
 An event at the `INIT` input starts the internal logic. The function block calls the embedded `NVS` function block, which prepares the non-volatile memory. The supplied data (`QI`, `KEY`, `DEFAULT_VALUE`) are forwarded to the internal function block.
 
-2. **Read Operation**
+1. **Read Operation**
 
 After a successful INIT phase (event `INITO` of the internal NVS), the `GET` event input of the internal NVS is automatically activated. The read value (or the `DEFAULT_VALUE` entry if no entry exists) is output via the `AIS_OUT` adapter as the `E1` event and `D1` data.
 
-3. **Write Operation**
+1. **Write Operation**
 
 A new value can be received via the `AIS_IN` adapter. The associated `SET` event (E1) is routed to the internal NVS module, which stores the received value (D1) under the previously set `KEY`. The acknowledgment (`SETO`) is then sent via the `AIS_OUT` adapter.
 
-4. **Feedback**
+1. **Feedback**
 
 After both reading and writing, the module outputs the status (`QO`, `STATUS`) as well as the `INITO` event. The status can be used for error diagnosis.
 

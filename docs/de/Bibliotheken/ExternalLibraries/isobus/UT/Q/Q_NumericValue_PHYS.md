@@ -38,7 +38,7 @@ Der Baustein kapselt drei Unterbausteine:
 ### **Daten-Ausgänge**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `STATUS` | STRING | Statusmeldung des Dienstes (z.B. Fehler‑ oder Erfolgsmeldung) |
 | `u32OldValue` | UDINT | Alter Rohwert des ISOBUS‑Objekts vor der Änderung |
 | `s16result` | INT | Rückgabewert der Schreiboperation (siehe `Q_NumericValue`) |
@@ -99,7 +99,7 @@ Während der Ausführung eines Durchlaufs ist der Baustein nicht für neue Ereig
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied zu `Q_NumericValue_PHYS` |
-|----------|----------|--------------------------------------|
+| ---------- | ---------- | -------------------------------------- |
 | `Q_NumericValue` (aus `isobus::UT::Q`) | Schreiben eines rohen (bereits umgerechneten) Werts | Erwartet `u32NewValue` direkt – ohne physikalische Umrechnung und ohne Grenzprüfung |
 | `F_PHYS_TO_RAW` | Reine Umrechnung physikalisch → roh | Liefert nur `xOver`, `xUnder` und den Rohwert – keine ISOBUS‑Kommunikation |
 | `Q_NumericValue_PHYS` | Kombinierte Umrechnung + Schreibzugriff | Bietet eine vollständige Schnittstelle für physikalische Werte in einem Schritt |

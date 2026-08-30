@@ -1,9 +1,11 @@
 # BeagleBoneBlack
 
 * * * * * * * * * *
+
 ## Introduction
 
 This device represents a FORTE runtime environment on a BeagleBone Black board.
+
 ## Metadata
 
 | Attribute | Value |

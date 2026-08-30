@@ -3,9 +3,11 @@
 ![AB_TO_AQ](./AB_TO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_TO_AQ** converts a unidirectional adapter of type **AB (BYTE)** to an adapter of type **AQ (Quarter Byte)**. It directly passes an event and a data value from the input interface to the output interface, implicitly reducing the data width from 8 bits to 2 bits.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **AB_TO_AQ** converts a unidirectional adapter of type **AB (
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **IN** | Socket | `adapter::types::unidirectional::AB` | BYTE input adapter (8 bits) |
 | **OUT** | Plug | `adapter::types::unidirectional::AQ` | Quarter-byte output adapter (2 bits) |
 

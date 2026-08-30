@@ -47,16 +47,21 @@ The function block does not have traditional discrete inputs and outputs for dat
 The module's internal logic controls the data and event flow as follows:
 
 1. **Event Control & Data Acquisition:**
+
 - Each time an event (`E1`) arrives at one of the input adapters (`IN0`, `IN1`, or `G`), the corresponding data element (`D1`) is temporarily stored via internal edge- or event-triggered memory modules (`E_D_FF` and `E_D_FF_ANY`).
-- * Internal `F_MOVE` function blocks convert and pass the values (as data type `INT`) to the central selection function block.
-2. **Selection Logic:**
+- - Internal `F_MOVE` function blocks convert and pass the values (as data type `INT`) to the central selection function block.
+1. **Selection Logic:**
+
 - The core function block `F_SEL` (a standardized IEC 61131-3 selection function block) evaluates the control signal `G`.
 - If the control signal `G` is `FALSE`, the value of `IN0` is selected.
-- * If the control signal `G` is on `TRUE`, the value of `IN1` is selected.
-3. **Output:**
+- - If the control signal `G` is on `TRUE`, the value of `IN1` is selected.
+1. **Output:**
+
 - After successful selection, the selected value is passed via another `F_MOVE` block and an output flip-flop (`E_D_FF_ANY_OUT`) to the output plug `OUT`.
 - Simultaneously, the output event `OUT.E1` is triggered to inform subsequent blocks about the value change.
+
 - ---
+
 - **Data Type Specification:** Internally, the function block uses the data type `INT` (integer) for analog values, which is defined by the parameterization of the internal `F_MOVE` instances.
 - **Adapter-Based Architecture:** By encapsulating events and data in the adapters `AI` (Analog Input) and `AX` (Auxiliary Control), the number of connection lines in the higher-level system diagram is drastically reduced.
 - **Event-Driven Propagation:** Every update of an input (regardless of whether it is the data or the selector) triggers the recalculation and output of an event at the output.
@@ -84,6 +89,7 @@ The function block operates purely on an event- and data-flow-driven basis. Ther
 ---
 
 The `AI_AX_SEL_AI` module provides an elegant, adapter-based solution for the binary selection of analog signals in distributed control systems. Thanks to the clean separation and encapsulation of the interfaces in standardized adapters, it is ideally suited for use in modular and service-oriented automation architectures within Eclipse 4diac.
+
 ## Technical Features
 
 ## State Overview

@@ -3,6 +3,7 @@
 ![Uebung_221_network](./Uebung_221_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a combined up/down counter based on the IEC 61131-3 standard function block `FB_CTUD_DINT`. The counted value is stored as an integer (DINT) and, after conversion, displayed on a numeric display (terminal). Additionally, two binary outputs are set to indicate whether the counter has reached the upper (QU) or lower (QD) limit.
@@ -42,14 +43,16 @@ Control is achieved via four digital inputs (CU, CD, Reset, Load Initial Value) 
 
 → All inputs are directly connected to the same `REQ` event of the counter. This means that the counter is reprocessed whenever any input changes.
 
-2. **Data Linking**:
+1. **Data Linking**:
+
 - The input values `IN` of the digital inputs are routed to the corresponding data inputs of the counter: `CU`, `CD`, `R`, `LD`.
 - After the counter processing (`CNF` event):
 - The outputs `QU` and `QD` are forwarded to the output blocks `Output_QU` and `Output_QD`. These set the physical outputs.
 
 - The current counter value `CV` is converted to an unsigned value via `F_DINT_TO_UDINT` and passed to `Q_NumericValue`, which displays the value on the terminal.
 
-3. **Process**:
+1. **Process**:
+
 - A rising edge at CU increments the counter by 1.
 - A rising edge at CD decrements the counter by 1.
 - A rising edge at R resets the counter to 0.

@@ -3,6 +3,7 @@
 ![Uebung_006a5_AX_network](./Uebung_006a5_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The exercise `Uebung_006a5_AX` shows how a **single physical pushbutton** (`Input_I1`) can be used to realize both **latching** (switch-like) and **momentary** (toggle-like) operating behavior. Unlike `Uebung_006a_AX`, which needs three separate pushbuttons (`I1`, `I2`, `I3`) for Set, Reset, and Toggle, this exercise evaluates different button gestures on a single input — long press, release after long press, and short click — and feeds them into the `AX_T_FF_SR` block.
@@ -16,7 +17,7 @@ This allows a single pushbutton to:
 ## Function Blocks (FBs) Used
 
 | FB Name | Type | Parameters |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | `BUTTON_LONG_PRESS_START` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_LONG_PRESS_START` |
 | `BUTTON_LONG_PRESS_UP` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_LONG_PRESS_UP` |
 | `BUTTON_SINGLE_CLICK` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_SINGLE_CLICK` |

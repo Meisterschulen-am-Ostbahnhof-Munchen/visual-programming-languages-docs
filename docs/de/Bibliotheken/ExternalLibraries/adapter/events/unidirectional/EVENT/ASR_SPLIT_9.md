@@ -3,6 +3,7 @@
 ![ASR_SPLIT_9](./ASR_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ASR_SPLIT_9** dient dazu, einen einzelnen eingehenden ASR-Adapter (Application Specific Resource) auf neun separate ASR-Ausgänge aufzuteilen. Er ist als generischer Baustein (Generic FB) implementiert und ermöglicht die Verteilung eines ASR-Signals an bis zu neun unabhängige Empfänger.
@@ -35,17 +36,17 @@ Keine separaten Datenausgänge. Die Daten werden über die ASR-Adapter **OUT1** 
 
 **Plugs (Ausgänge):**
 
-| Name  | Typ | Richtung |
-|-------|-----|----------|
-| OUT1  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT2  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT3  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT4  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT5  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT6  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT7  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT8  | `adapter::types::unidirectional::ASR` | Plug |
-| OUT9  | `adapter::types::unidirectional::ASR` | Plug |
+| Name | Typ | Richtung |
+| ------- | ----- | ---------- |
+| OUT1 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT2 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT3 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT4 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT5 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT6 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT7 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT8 | `adapter::types::unidirectional::ASR` | Plug |
+| OUT9 | `adapter::types::unidirectional::ASR` | Plug |
 
 ## Funktionsweise
 

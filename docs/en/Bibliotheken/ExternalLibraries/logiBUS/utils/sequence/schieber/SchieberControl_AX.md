@@ -4,6 +4,7 @@
 ![SchieberControl_AX_ecc](./SchieberControl_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SlideControl_AX** is used to control a slide valve (valve, flap, or similar actuator) within a 61499-based control system. It implements a state machine that not only manages the logical states (Open, Closed, Opening, Closing) but also handles the timing of the movements and provides corresponding visualization data (buttons, softkeys) for an HMI.
@@ -69,16 +70,17 @@ This module operates as an event-controlled logic controller (ECC) that controls
 
 Upon startup (`INIT`), the initial state of the slider is checked (defined by `START`). Possible states include "Closed," "Opened," or "Unknown."
 
-2. **Movement Sequence:**
+1. **Movement Sequence:**
+
 - When the command `Open` is executed, the function block switches to the **Opening** state. This activates the adapters `POWERED` and `OPEN`, and starts the timer with `DT_Opening`.
 - After the specified time (`timeOut.TimeOut`), the state automatically switches to **Opened**.
-- * If the command `Close` is issued, the function block switches to **Closing**. The adapter `CLOSE` is activated (while `POWERED` and `OPEN` are deactivated), and the timer is started with `DT_Closing`.
+- - If the command `Close` is issued, the function block switches to **Closing**. The adapter `CLOSE` is activated (while `POWERED` and `OPEN` are deactivated), and the timer is started with `DT_Closing`.
 - After the specified time has elapsed, the state changes to **Closed**.
-3. **Interruption:**
+1. **Interruption:**
 
 If the command `Close` (or vice versa) is issued during the opening process, the process is stopped (`STOP` states), the outputs are reset, and the reverse process is initiated.
 
-4. **Visualization:**
+1. **Visualization:**
 
 In each state (Closed, Opening, Opened, Closing, Unknown), the outputs `Button`, `Softkey`, and `Auxiliary` are populated with the values from the input structures (`BT`, `SK`, `AUXC`) corresponding to the respective state. This enables dynamic adaptation of the user interface.
 

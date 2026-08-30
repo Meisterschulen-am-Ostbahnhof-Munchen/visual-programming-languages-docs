@@ -3,9 +3,11 @@
 ![NOOP_INIT](./NOOP_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NOOP_INIT** (No Operation with INIT) serves as a simple pass-through or placeholder block. It enables the initialization and normal data transmission of a Boolean signal from an input to an output. Its special feature lies in the additional handling of the INIT event, which triggers both an acknowledgment (INITO) and data transmission.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -18,7 +20,7 @@ The function block **NOOP_INIT** (No Operation with INIT) serves as a simple pas
 ### **Event Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | INITO | EInit | Initialization Acknowledgement |
 | CNF | Event | Execution Acknowledgement (connected to OUT) |
 
@@ -43,9 +45,11 @@ No adapters available.
 The function block processes incoming events as follows:
 
 1. **INIT Event**:
+
 - An **INITO** event is immediately triggered.
 - Simultaneously, the `F_MOVE` function block is triggered internally, which copies the value from `IN` to `OUT`. Upon completion of this copy operation, the **CNF** event is triggered.
-2. **REQ Event**:
+1. **REQ Event**:
+
 - The same `F_MOVE` function block is activated, which transfers `IN` to `OUT`. Upon completion, **CNF** is triggered.
 
 As a result, data is transferred during both INIT and REQ, and an acknowledgment event is generated in each case. The data output `OUT` always corresponds to the last received value of the input `IN`.

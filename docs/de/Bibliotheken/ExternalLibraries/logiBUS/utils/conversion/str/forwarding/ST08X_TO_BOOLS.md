@@ -5,6 +5,7 @@
 ![ST08X_TO_BOOLS](./ST08X_TO_BOOLS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Funktionsblock dient dazu, acht individuelle BOOL-Werte aus einer einzelnen Eingangsstruktur vom Typ `ST08X` zu extrahieren. Er ermöglicht die einfache Zerlegung einer gebündelten 8-BOOL-Struktur in ihre einzelnen Komponenten.

@@ -3,6 +3,7 @@
 ![GET_LREAL](./GET_LREAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `GET_LREAL` dient dem lesenden Zugriff auf eine `LREAL`-Variable (64‑Bit‑Gleitkommazahl), die als InOut‑Parameter übergeben wird. Der gelesene Wert wird intern gepuffert und am Ausgang `OUT` zur Verfügung gestellt. Die Ausführung wird über ein Ereignis gesteuert.

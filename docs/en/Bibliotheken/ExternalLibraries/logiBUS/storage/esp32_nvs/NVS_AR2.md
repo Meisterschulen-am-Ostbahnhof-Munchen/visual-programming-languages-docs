@@ -3,9 +3,11 @@
 ![NVS_AR2](./NVS_AR2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The NVS_AR2 function block is used to store and load real values (floating-point numbers) into non-volatile storage (NVS) using a key. It encapsulates the logic of the underlying NVS block and provides a bidirectional AR2 adapter interface for asynchronous communication. This allows the block to be integrated into an event-driven environment where read and write operations are triggered asynchronously.
+
 ## Interface Structure
 
 ### **Event Inputs**

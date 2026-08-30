@@ -1,9 +1,11 @@
 # RT_Bridge_6
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_6 function block serves as a decoupling bridge for six data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

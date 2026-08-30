@@ -5,6 +5,7 @@ Analog-Eingang auf PWM Ausgang (Adapter Version)
 ![Uebung_034_AD_network](./Uebung_034_AD_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines analogen Eingangs zur Ansteuerung eines PWM-Ausgangs über eine Adapterverbindung. Das Signal des analogen Eingangs wird zuerst durch eine Bitverschiebung (Shift Left) verarbeitet, bevor es an den PWM-Ausgang weitergegeben wird. Die Initialisierung des PWM-Ausgangs erfolgt über ein Ereignis, das vom analogen Eingang ausgelöst wird.

@@ -3,6 +3,7 @@
 ![AB_SPLIT_6](./AB_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AB_SPLIT_6** ist ein generischer Adapter-Splitter. Er dient dazu, einen eingehenden unidirektionalen Adapterdatenstrom (Typ `AB`) gleichzeitig auf sechs separate Ausgänge zu verteilen. Dadurch können die Daten eines einzelnen Adapters mehreren nachgeschalteten Bausteinen ohne Datenverlust zur Verfügung gestellt werden.
@@ -28,7 +29,7 @@ Es existieren keine expliziten Daten-Ausgänge. Die aufgeteilten Daten werden ü
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AB` | `IN` | Socket | Eingangsadapter, der die zu verteilenden Daten liefert. |
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug | Erster Ausgangsadapter – erhält eine Kopie der Eingangsdaten. |
 | `adapter::types::unidirectional::AB` | `OUT2` | Plug | Zweiter Ausgangsadapter. |

@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_MUL_4` ist ein generischer Funktionsbaustein (Generic FB) für die IEC 61499, der für die arithmetische Multiplikation von vier Eingangswerten entwickelt wurde. Anstelle von klassischen Daten- und Ereignispins nutzt dieser Baustein Adapterverbindungen (`AS` - unidirektional), um Daten und die zugehörige Ausführungssteuerung gekapselt zu übertragen. Dies sorgt für ein übersichtlicheres Design in der 4diac-IDE, da die Anzahl der sichtbaren Verbindungslinien drastisch reduziert wird.

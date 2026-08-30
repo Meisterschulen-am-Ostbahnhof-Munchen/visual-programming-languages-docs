@@ -3,9 +3,11 @@
 ![ASSEMBLE_WORD_FROM_BOOLS](https://github.com/user-attachments/assets/0f9e88ae-3645-4364-a8e7-183caf4f1bb0)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_WORD_FROM_BOOLS` combines 16 Boolean input values into a single WORD output value. Each Boolean input represents a single bit in the resulting WORD.
+
 ## Interface Structure
 
 ### **Event Inputs**

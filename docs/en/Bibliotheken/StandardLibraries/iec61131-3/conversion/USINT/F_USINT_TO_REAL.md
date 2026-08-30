@@ -30,14 +30,17 @@ The function block performs the conversion by directly converting the USINT valu
 
 - The conversion is performed without additional scaling or rounding.
 - The block is optimized for simple conversions and does not provide error handling for invalid values.
+
 1. **Idle**: Waits for the `REQ` event.
 2. **Processing**: Performs the conversion.
 3. **Completed**: Sends the `CNF` event and outputs the converted value.
+
 - Conversion of sensor values (e.g., raw ADC data) into floating-point values for further calculations.
 - Compared to generic conversion blocks, `F_USINT_TO_REAL` is specialized and therefore more efficient for this specific conversion.
 - Other blocks, such as `F_INT_TO_REAL` or `F_DINT_TO_REAL`, are designed for other integer data types.
 
 The `F_USINT_TO_REAL` function block is a simple and efficient function block for converting unsigned 8-bit integers to floating-point values. Its simplicity and direct operation make it ideal for applications requiring fast and reliable type conversion.
+
 ## Functionality
 
 ## Technical Features

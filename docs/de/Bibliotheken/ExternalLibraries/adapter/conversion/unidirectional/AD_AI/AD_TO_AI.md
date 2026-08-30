@@ -33,7 +33,7 @@ Auch diese werden ausschließlich über die Adapter bereitgestellt:
 ### **Adapter**
 
 | Adaptertyp | Richtung | Typ | Beschreibung |
-|-----------|----------|-----|--------------|
+| ----------- | ---------- | ----- | -------------- |
 | Socket | Eingang | `adapter::types::unidirectional::AD` | Empfängt einen DWORD‑Wert (über Ereignis E1 und Daten D1). |
 | Plug | Ausgang | `adapter::types::unidirectional::AI` | Stellt den konvertierten INT‑Wert bereit (Ereignis E1, Daten D1). |
 

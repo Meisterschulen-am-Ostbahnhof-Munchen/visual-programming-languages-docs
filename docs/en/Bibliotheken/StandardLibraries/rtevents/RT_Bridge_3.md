@@ -1,9 +1,11 @@
 # RT_Bridge_3
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_3 function block serves as a decoupling bridge for three data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

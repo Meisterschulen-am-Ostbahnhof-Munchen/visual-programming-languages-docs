@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_DIV_2` ist ein generischer Funktionsbaustein (Generic FB) zur Durchführung von arithmetischen Divisionen. Er ist im Package `adapter::iec61131::arithmetic` definiert und basiert auf der generischen Klasse `GEN_ALR_DIV`.

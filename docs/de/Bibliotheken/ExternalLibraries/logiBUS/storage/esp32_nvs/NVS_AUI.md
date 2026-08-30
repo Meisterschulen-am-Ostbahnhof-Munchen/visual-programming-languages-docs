@@ -3,6 +3,7 @@
 ![NVS_AUI](./NVS_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NVS_AUI** dient dem Laden und Speichern von UINT-Daten in einem nichtflüchtigen Speicher (NVS) mittels eines Schlüssels (Key). Er kapselt die Zugriffe auf den NVS und stellt eine standardisierte AUI‑Adapter‑Schnittstelle bereit, über die gelesene Werte ausgegeben und zu speichernde Werte entgegengenommen werden. Typische Einsatzorte sind eingebettete Systeme, die Konfigurations- oder Zustandsdaten persistent ablegen müssen.

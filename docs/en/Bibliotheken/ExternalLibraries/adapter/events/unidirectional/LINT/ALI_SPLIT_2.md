@@ -3,9 +3,11 @@
 ![ALI_SPLIT_2](./ALI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_SPLIT_2** function block serves as a generic distributor for a unidirectional ALI (Application Layer Interface) adapter. It copies all incoming data and events from a single input socket to two output plugs. This allows a signal or data source to be passed on to two independent receivers.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No dedicated data outputs. The distributed data is provided via the two outgoing
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | **Socket** | `IN` | Input | Unidirectional ALI adapter that receives incoming data/events. |
 | **Plug** | `OUT1` | Output | First unidirectional ALI adapter to which the data/events are forwarded. |
 | **Plug** | `OUT2` | Output | Second unidirectional ALI adapter to which the data/events are forwarded. |
@@ -57,7 +59,7 @@ Since the module has no event inputs/outputs or internal states, there is no sta
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **ALI_SPLIT_2** | Distributes one ALI input to two ALI outputs. | – |
 | **ALI_SPLIT_3** (hypothetical) | Distributes to three outputs. | Higher number of outputs. |
 | **ALI_MERGE_2** | Combines two ALI inputs into one ALI output. | Opposite function (Join). |

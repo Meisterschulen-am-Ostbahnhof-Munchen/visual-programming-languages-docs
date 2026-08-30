@@ -44,6 +44,7 @@ The logic is implemented using two parallel connections. The structure shown in 
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 ```
+
 ## Application Example
 
 A **light switch in the house**:

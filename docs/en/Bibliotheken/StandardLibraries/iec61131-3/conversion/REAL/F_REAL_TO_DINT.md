@@ -6,6 +6,7 @@
 
 The function block `F_REAL_TO_DINT` converts a REAL value (floating-point number) into a DINT value (32-bit integer). This conversion is performed by rounding the REAL value down to the nearest integer.
 ![F_REAL_TO_DINT](F_REAL_TO_DINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

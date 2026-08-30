@@ -3,6 +3,7 @@
 ![initval_AIS](initval_AIS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AIS` is the configurable initialization block for the [AIS](../AIS.md) adapter (data type `STRING`, character string): it accepts a start value as a data input at initialization time and writes it to a `AIS` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

@@ -3,6 +3,7 @@
 ![initval_AQ](initval_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AQ` ist der konfigurierbare Initialisierungsbaustein für den [AQ](../AQ.md)-Adapter (Datentyp `BYTE`, 2-Bit-Wert (als Byte übertragen)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AQ`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

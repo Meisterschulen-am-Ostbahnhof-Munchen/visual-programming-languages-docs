@@ -3,6 +3,7 @@
 ![F_CONCAT_LTOD](F_CONCAT_LTOD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_CONCAT_LTOD` fügt einzelne Zeit-/Datumsbestandteile (`HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) zu einem zusammengesetzten `LTIME_OF_DAY`-Wert zusammen. Er ist die Umkehrung von [F_SPLIT_LTOD](F_SPLIT_LTOD.md), das denselben `LTIME_OF_DAY`-Wert wieder in seine Einzelbestandteile zerlegt.

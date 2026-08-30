@@ -13,6 +13,7 @@
 ![AUI_DIV_2](./AUI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_DIV_2` ist ein generischer Funktionsbaustein zur Durchführung einer arithmetischen Division zweier Eingangswerte. Der Baustein nutzt ein adapterbasiertes Konzept, bei dem die Daten- und Ereignisströme in unidirektionalen Adaptern gebündelt werden. Dies ermöglicht eine saubere, modularisierte und übersichtliche Modellierung innerhalb von IEC 61499 Anwendungen in 4diac.

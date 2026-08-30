@@ -3,9 +3,11 @@
 ![AUDI_ADD_3](./AUDI_ADD_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_ADD_3` performs an arithmetic addition of three input values. It is a generic block that receives the values via adapter interfaces and outputs the result via another adapter. The function block is designed as part of the 4diac IDE for IEC 61499-2.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs available. The result is provided via the adapter output.
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket (Input) | ADD input 1 |
 | IN2 | `adapter::types::unidirectional::AUDI` | Socket (Input) | ADD input 2 |
 | IN3 | `adapter::types::unidirectional::AUDI` | Socket (Input) | ADD input 3 |

@@ -3,6 +3,7 @@
 ![Q_StringValue](https://user-images.githubusercontent.com/69573151/212334298-f7c6215c-a80c-491c-ad3e-6ba0e539f0d0.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_StringValue** is a standards-compliant function block for dynamic text updates in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.24) specification for VT text objects.
@@ -43,13 +44,16 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Text Update**:
+1. **Text Update**:
+
 - `REQ` with new text string
 - Immediately updates the VT text object
 - `CNF` returns operational status and previous text
-3. **String Requirements**:
+1. **String Requirements**:
+
 - Maximum `ISO_VTC_CMD_STR_MAX_LENGTH` including null termination
 - Must be null-terminated
 
@@ -66,7 +70,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## String format
 
 | Parameters | Requirements |
-|--------------------|----------------------------------|
+| -------------------- | ---------------------------------- |
 | Maximum length | ISO_VTC_CMD_STR_MAX_LENGTH |
 | Termination | '\0' at the end is mandatory |
 | Character set | ISO-8859-1 (Latin-1) recommended |
@@ -74,7 +78,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Update successful |
 | -6 | VT_E_OVERFLOW | String too long or buffer full |
 | -8 | VT_E_NOACT | VT not ready |
@@ -92,7 +96,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_StringValue | VtTextUpdate | VtStringManager |
-|--------------|---------------|--------------|------------------|
+| -------------- | --------------- | -------------- | ------------------ |
 | ISO Standard | ✔ | ✖ | ✖ |
 | FIFO Update | ✔ | ✖ | ✔ |
 | Length Check | ✔ | ✔ | ✖ |

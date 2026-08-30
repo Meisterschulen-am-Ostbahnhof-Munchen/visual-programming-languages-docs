@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_SUB_2` ist ein generischer Funktionsbaustein (Generic FB) für die Entwicklungsumgebung 4diac-ide. Er dient der Durchführung einer arithmetischen Subtraktion ($OUT = IN1 - IN2$).

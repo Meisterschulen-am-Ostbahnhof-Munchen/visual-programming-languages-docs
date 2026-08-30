@@ -6,6 +6,7 @@
 ![AI_ADD_3](./AI_ADD_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_ADD_3` ist ein generischer, arithmetischer Additionsbaustein für die Entwicklungsumgebung 4diac-ide. Er dient dazu, die Werte von drei analogen Eingängen (AI) zu addieren und das Ergebnis an einem analogen Ausgang bereitzustellen. Durch die Verwendung von unidirektionalen Adaptern wird eine saubere Kapselung von Daten und den dazugehörigen Ereignissen erreicht.
@@ -65,6 +66,7 @@ Nach erfolgreicher Berechnung wird der Ergebniswert an den Ausgangs-Plug `OUT` �
 ## Zustandsübersicht
 
 Der Baustein arbeitet rein ereignisgesteuert:
+
 1.  **Bereitschaftszustand (Idle):** Der Baustein wartet auf eingehende Ereignisse an den Sockets `IN1`, `IN2` oder `IN3`.
 2.  **Berechnungsphase:** Ein Event triggert die Addition der anliegenden Werte.
 3.  **Aktualisierungsphase:** Das Ergebnis wird an `OUT` angelegt und das Ausgangs-Event getriggert. Der Baustein kehrt sofort in den Bereitschaftszustand zurück.

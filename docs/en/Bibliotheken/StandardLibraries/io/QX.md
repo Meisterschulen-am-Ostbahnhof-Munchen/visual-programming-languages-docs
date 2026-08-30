@@ -3,6 +3,7 @@
 ![](https://user-images.githubusercontent.com/69573151/210781265-4dabab2d-a9e3-4da6-a14b-8df0a8ed36e5.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The QX function block is an output service interface function block for Boolean output data. It serves as an interface between the control logic and physical output devices and enables the output of digital signals to external resources.
@@ -40,6 +41,7 @@ No adapter interfaces are available.
 The QX block processes two main operations: initialization and service requests. The INIT event initializes the service with the specified parameters. The REQ event outputs the Boolean OUT value to the connected resource. Each operation generates a corresponding acknowledgment (INITO or CNF) containing status information.
 
 The INIT event initializes the service with the specified parameters.
+
 ## Technical Features
 
 - Specialized for Boolean output data

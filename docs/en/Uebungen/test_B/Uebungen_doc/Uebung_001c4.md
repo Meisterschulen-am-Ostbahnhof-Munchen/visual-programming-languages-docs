@@ -1,11 +1,13 @@
-# Exercise_001c4: DigitalInput_I1 to DigitalOutput_Q1 --> Query input at boot.
+# Exercise_001c4: DigitalInput_I1 to DigitalOutput_Q1 --> Query input at boot
 
 ![Uebung_001c4_network](./Uebung_001c4_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the basic use of a digital input and a digital output on a logiBUS system. The input **Input_I1** is queried at system startup (boot), and its state is directly transferred to the output **Output_Q1**. The exercise shows how the initialization event connection (INITO → REQ) ensures that the output assumes the correct value during startup. Additionally, the **NOOP** block is used as a simple pass-through block to connect the event and data paths.
+
 ## Function Blocks Used (FBs)
 
 In this exercise, three predefined function blocks are used directly in the SubApp network. There are no other sub-blocks.
@@ -32,14 +34,14 @@ The exercise proceeds as follows:
 2. **Cyclic Reading**: After the read request, `DigitalInput_I1` acknowledges the operation with a `CNF` event. Simultaneously, it generates a `IND` event for every change in the input signal. Both events (`CNF` and `IND`) are forwarded to the event input `REQ` of the **NOOP** block.
 ... 3. **Data Passthrough**: The read input value (data output `IN` of DigitalInput_I1) is routed to the data input `IN` of the NOOP function block. The NOOP then forwards this value unchanged to its data output `OUT`.
 
-4. **Setting the Output**: As soon as the NOOP receives an event at its `REQ` input (from `DigitalInput_I1`), it sends an acknowledgment event at its output `CNF`. This `CNF` event triggers the event input `REQ` of the **DigitalOutput_Q1** function block. Simultaneously, the passed-through data value from NOOP is present at the data input `OUT` of the output block. Subsequently, `DigitalOutput_Q1` sets the physical output `Output_Q1` to the corresponding value.
+3. **Setting the Output**: As soon as the NOOP receives an event at its `REQ` input (from `DigitalInput_I1`), it sends an acknowledgment event at its output `CNF`. This `CNF` event triggers the event input `REQ` of the **DigitalOutput_Q1** function block. Simultaneously, the passed-through data value from NOOP is present at the data input `OUT` of the output block. Subsequently, `DigitalOutput_Q1` sets the physical output `Output_Q1` to the corresponding value.
 
 ### Visualization of Connections
 
 The following table shows the essential connections in the network:
 
 | From | To | Type |
-|-----|------|-----|
+| ----- | ------ | ----- |
 | `DigitalInput_I1.INITO` | `DigitalInput_I1.REQ` | Event |
 | `DigitalInput_I1.IND` | `NOOP.REQ` | Event |
 | `DigitalInput_I1.CNF` | `NOOP.REQ` | Event |

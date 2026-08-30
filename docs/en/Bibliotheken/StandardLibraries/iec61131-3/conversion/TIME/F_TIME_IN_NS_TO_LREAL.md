@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_NS_TO_LREAL` is used to convert a time value in nanoseconds (`TIME`) into a floating-point value (`LREAL`). This conversion is particularly useful in control applications where time values need to be used in mathematical calculations.
 ![F_TIME_IN_NS_TO_LREAL](F_TIME_IN_NS_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

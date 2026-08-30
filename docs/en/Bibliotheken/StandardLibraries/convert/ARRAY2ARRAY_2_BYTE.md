@@ -3,6 +3,7 @@
 ![ARRAY2ARRAY_2_BYTE](ARRAY2ARRAY_2_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ARRAY2ARRAY_2_BYTE` is a service interface function block that copies a `BYTE` array of size 2 unchanged from `IN` to `OUT`. It belongs to the generic `GEN_ARRAY2ARRAY` family (cf. [ARRAY2ARRAY_2_LREAL](ARRAY2ARRAY_2_LREAL.md)) and serves as a pure type/interface bridge between two `BYTE` arrays of the same size.

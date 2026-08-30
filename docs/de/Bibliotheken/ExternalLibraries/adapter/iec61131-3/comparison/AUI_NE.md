@@ -3,6 +3,7 @@
 ![AUI_NE](./AUI_NE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUI_NE` realisiert einen Ungleich-Vergleich (not equal) für zwei Eingangswerte. Er ist als Composite-FB (zusammengesetzter Baustein) aus dem IEC-61131-3-Vergleichsbaustein `F_NE` aufgebaut. Die Kommunikation mit der Umgebung erfolgt über standardisierte Adapter-Schnittstellen (`AUI` für die Eingänge, `AX` für den Ausgang). Dadurch lässt er sich in adapterbasierte Architekturen der 4diac-IDE nahtlos integrieren.
@@ -82,7 +83,7 @@ Der FB `AUI_NE` selbst besitzt keinen eigenen Zustandsautomaten. Das Verhalten w
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Vergleichsfunktion | Besonderheit |
-|----------|---------------------|--------------|
+| ---------- | --------------------- | -------------- |
 | `AUI_EQ` | Gleichheit (equal) | Ergebnis `TRUE` bei gleichen Werten |
 | `AUI_NE` | Ungleichheit (not equal) | Ergebnis `TRUE` bei unterschiedlichen Werten |
 | `AUI_GT` | Größer (greater than) | Ergebnis `TRUE` wenn IN1 > IN2 |

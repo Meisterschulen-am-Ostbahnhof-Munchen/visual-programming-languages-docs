@@ -3,6 +3,7 @@
 <img width="668" height="239" alt="SCALE" src="https://github.com/user-attachments/assets/b3a2d282-98ec-47f2-a311-70f4d8aa9d90" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der SCALE-Funktionsblock dient zur Skalierung eines Eingangswertes von einem Eingangsbereich auf einen Ausgangsbereich. Dies ist besonders nützlich in der Signalverarbeitung, wenn Werte aus einem Messbereich in einen anderen Bereich transformiert werden müssen.
@@ -36,9 +37,11 @@ Keine Adapter vorhanden.
 ## Funktionsweise
 
 Der SCALE-Funktionsblock berechnet den skalierten Wert nach folgender Formel:
+
 ```
 SCALE := (IN - MIN_IN) * (MAX_OUT - MIN_OUT) / (MAX_IN - MIN_IN) + MIN_OUT;
 ```
+
 Diese Formel transformiert den Eingangswert linear vom Eingangsbereich [MIN_IN, MAX_IN] auf den Ausgangsbereich [MIN_OUT, MAX_OUT].
 
 ## Technische Besonderheiten

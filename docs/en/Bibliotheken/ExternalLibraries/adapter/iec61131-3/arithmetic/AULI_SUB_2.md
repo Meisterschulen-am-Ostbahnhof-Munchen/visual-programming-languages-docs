@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AULI_SUB_2` is a generic function block (Generic FB) designed to perform arithmetic subtraction (`OUT = IN1 - IN2`). Instead of traditional data and event pins, this block uses adapter interfaces of type `unidirectional::AULI`. This enables structured and modularized signal transmission in IEC 61499 applications.
@@ -66,7 +67,7 @@ The block behaves purely combinatorially or event-driven:
 
 **Unidirectional Adapters:** 2. **Calculation:** Subtraction is performed upon signal change/event.
 
-3. **Output:** The result is immediately transferred to the plug `OUT`, triggering the output event.
+1. **Output:** The result is immediately transferred to the plug `OUT`, triggering the output event.
 
 ---
 
@@ -81,6 +82,7 @@ The block behaves purely combinatorially or event-driven:
 ## Comparison with Similar Function Blocks
 
 Compared to a standard subtraction function block (e.g., `SUB` from the IEC 61131-3 standard library), `AULI_SUB_2` offers the following advantages:
+
 - **Reduced Complexity:** Instead of separate lines for event (REQ/CNF) and data (IN1, IN2, OUT), the `AULI` adapters bundle all relevant information into a single connection.
 - **Modularity:** The design is ideally suited for service-oriented architectures in distributed systems.
 

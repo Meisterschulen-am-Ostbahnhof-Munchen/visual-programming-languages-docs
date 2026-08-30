@@ -29,7 +29,7 @@ Es gibt keinen direkten Daten-Ausgang. Der zusammengeführte DWORD‑Wert wird �
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (niederwertigstes Byte) |
 | BYTE_01 | `adapter::types::unidirectional::AB` | Socket | Byte 1 |
 | BYTE_02 | `adapter::types::unidirectional::AB` | Socket | Byte 2 |

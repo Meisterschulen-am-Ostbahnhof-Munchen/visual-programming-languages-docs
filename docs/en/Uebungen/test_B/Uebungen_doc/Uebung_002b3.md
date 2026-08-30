@@ -3,9 +3,11 @@
 ![Uebung_002b3_network](./Uebung_002b3_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of digital input signals and their logical combination to control a digital output. The circuit combines AND and OR logic gates to implement specific logic between three inputs and one output.
+
 ## Function Blocks (FBs) Used
 
 ### DigitalInput_I1, DigitalInput_I2, DigitalInput_I3

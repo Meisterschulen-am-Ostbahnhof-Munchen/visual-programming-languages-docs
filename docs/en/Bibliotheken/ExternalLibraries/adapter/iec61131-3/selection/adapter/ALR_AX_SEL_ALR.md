@@ -37,6 +37,7 @@ Since this component is designed as an adapter coupler, it does not have any cla
 - `G` (Type: `adapter::types::unidirectional::AX`): Selector input for controlling channel selection.
 - **Plugs (Output Interfaces):**
 - `OUT` (Type: `adapter::types::unidirectional::ALR`): Output carrying the selected signal.
+
 - ## Functionality
 
 This module implements a software-controlled 1-out-of-2 selection based on adapters:
@@ -44,9 +45,11 @@ This module implements a software-controlled 1-out-of-2 selection based on adapt
 1. **Event Buffering:** Incoming events and data at sockets `IN0`, `IN1`, and `G` are buffered via internal event D flip-flops (`E_D_FF` and `E_D_FF_ANY`, respectively) to ensure consistent data transfer.
 2. **Value Transfer:** Data values are prepared for the data type `LREAL` via internal assignment elements (`F_MOVE`).
 3. **Selection Logic (`F_SEL`):** Selection is performed using the standard selection block:
+
 - If the signal at `G.D1` equals `FALSE`, the value of `IN0.D1` is passed to the output.
 - If the signal at `G.D1` equals `TRUE`, the value of `IN1.D1` is passed to the output.
-4. **Output Triggering:** Any change to one of the inputs or the selector triggers an update of the output adapter `OUT`, signaled by the event `OUT.E1` and the new data value `OUT.D1`.
+1. **Output Triggering:** Any change to one of the inputs or the selector triggers an update of the output adapter `OUT`, signaled by the event `OUT.E1` and the new data value `OUT.D1`.
+
 - **Precise Data Processing (LREAL):** The internal data paths are designed for the data type `LREAL`, enabling lossless transmission of highly accurate analog measurements.
 - **Adapter Encapsulation:** The use of standardized adapters (`ALR`, `AX`) eliminates the need for complex individual wiring of data and event pins in the application editor.
 - **Event-driven:** The output reacts dynamically and without delay to value changes and triggers at the inputs.
@@ -65,6 +68,7 @@ The behavior of the function block is determined by the data and event flow in t
 Compared to a classic IEC 61131-3 `SEL` function block, `ALR_AX_SEL_ALR` completely encapsulates the signal paths in adapter structures. This significantly reduces the visual complexity in 4diac application diagrams, as only structured adapter lines need to be drawn instead of multiple individual connections.
 
 The `ALR_AX_SEL_ALR` is a robust and reusable function block for structured signal switching in IEC 61499. Through the consistent use of adapters and the support of high-resolution `LREAL` data, it is ideally suited for modern control concepts in industrial automation.
+
 ## Functionality
 
 ## Technical Features

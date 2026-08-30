@@ -67,6 +67,7 @@ The function block operates in an event-driven manner and has no internal, persi
 
 1. **Waiting for Update:** The function block waits for an update event at the input sockets (`IN1`, `IN2`, or `IN3`).
 2. **Calculation:** Upon receiving an event, the current values are read and multiplied.
+
 - ... 3. **Output:** The result is passed to the `OUT` plug and the corresponding output event is triggered.
 
 ---

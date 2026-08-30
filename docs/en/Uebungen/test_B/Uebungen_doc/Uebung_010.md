@@ -48,6 +48,7 @@ Communication is achieved via the standard separation of trigger and value:
 <Connection Source="SoftKey_F1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </DataConnections>
 ```
+
 ## Application Example
 
 **Manually Controlling a Hydraulic Valve**:

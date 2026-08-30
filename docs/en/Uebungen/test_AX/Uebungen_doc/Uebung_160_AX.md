@@ -1,8 +1,9 @@
 # Exercise_160_AX: Motor Left/Right Rotation
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_160_AX`.
+This article describes the logiBUS® exercise `Uebung_160_AX`
 ----
+
 ## Objective of the Exercise
 
 Combination of individual outputs and a collective message.

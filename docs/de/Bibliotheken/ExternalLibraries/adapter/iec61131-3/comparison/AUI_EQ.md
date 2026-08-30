@@ -3,6 +3,7 @@
 ![AUI_EQ](./AUI_EQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AUI_EQ führt einen Gleichheitsvergleich zwischen zwei analogen Werten durch. Er ist als standard comparison function nach IEC 61131-3 klassifiziert und nutzt Adapter für die typsichere Kommunikation mit der Umgebung. Das Ergebnis wird als boolescher Wert ausgegeben, der genau dann `true` ist, wenn beide Eingangswerte gleich sind.

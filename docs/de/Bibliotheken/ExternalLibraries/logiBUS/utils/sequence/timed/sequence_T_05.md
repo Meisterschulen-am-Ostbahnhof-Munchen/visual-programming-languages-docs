@@ -5,6 +5,7 @@
 ![sequence_T_05_ecc](./sequence_T_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_T_05` ist ein zeitgesteuerter Sequenzer mit fünf Ausgangszuständen. Er durchläuft eine feste Abfolge von Zuständen (State_01 bis State_05), wobei der Übergang zwischen den einzelnen Zuständen durch einstellbare Zeitverzögerungen gesteuert wird. Der Block ist für Anwendungen konzipiert, in denen Prozessschritte oder Aktionen nacheinander und für eine definierte Dauer aktiviert werden müssen.

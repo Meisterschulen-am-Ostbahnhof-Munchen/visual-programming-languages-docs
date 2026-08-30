@@ -3,9 +3,11 @@
 ![AUI_LE](./AUI_LE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_LE** performs a less-than-equal-to comparison of two analog input values. It is implemented as a composite block that internally uses the IEC 61131-3 block `F_LE`. The result (a BOOL value) is provided via an output adapter. The function block is suitable for event-driven limit monitoring in automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**

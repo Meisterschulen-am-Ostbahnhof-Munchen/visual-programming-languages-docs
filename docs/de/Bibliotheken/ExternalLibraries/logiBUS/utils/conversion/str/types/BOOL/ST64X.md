@@ -3,6 +3,7 @@
 *(Kein Bild vorhanden, da dies ein Datentyp und kein Funktionsblock ist.)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die bereitgestellte XML-Definition beschreibt einen **Datentyp (DataType)** namens `ST64X`, nicht einen Funktionsblock (FB). Dieser strukturierte Datentyp dient als Container für eine Sammlung von 64 einzelnen binären Werten (BOOL-Variablen). Er ermöglicht es, 64 unabhängige Schalter, Flags oder Statusbits unter einem einzigen Namen zu gruppieren und einzeln über benannte Felder anzusprechen. Obwohl der interne XML-Kommentar "A Structure with 16 BOOLS" angibt, enthält die tatsächliche Definition 64 BOOL-Variablen.

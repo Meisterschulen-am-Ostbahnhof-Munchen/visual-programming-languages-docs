@@ -20,7 +20,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_10V** ist ein service-orientierter Schnit
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Mitgeführte Daten | Beschreibung |
-|----------|-----|-------------------|--------------|
+| ---------- | ----- | ------------------- | -------------- |
 | `INITO` | `EInit` | `QO`, `STATUS` | Bestätigung der Initialisierung |
 | `CNF` | `Event` | `QO`, `STATUS`, `IN` | Bestätigung der Messwertabfrage |
 | `IND` | `Event` | `QO`, `STATUS`, `IN` | Asynchrone Anzeige (z. B. spontane Messwertaktualisierung aus der Ressource) |
@@ -28,7 +28,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_10V** ist ein service-orientierter Schnit
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Beschreibung |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | `QI` | `BOOL` | – | Eingangsqualifizierer (steuert die Ausführung) |
 | `PARAMS` | `STRING` | – | Dienstparameter (z. B. Kommunikationskonfiguration) |
 | `u8SAMember` | `USINT` | `MI::MI_00` | Knoten‑SA-Adresse (gültiger Bereich 224…239) |
@@ -38,7 +38,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_10V** ist ein service-orientierter Schnit
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `QO` | `BOOL` | Ausgangsqualifizierer (zeigt gültige Verarbeitung an) |
 | `STATUS` | `STRING` | Dienststatus (Fehler-/Erfolgsmeldung) |
 | `IN` | `WORD` | Digitalisierter Analogwert (0…10 V, roher WORD‑Wert) |
@@ -86,7 +86,7 @@ Eine detaillierte Zustandsmaschine (ECC) liegt im XML‑Modell nicht vor, das be
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Spannungsbereich | Plattform | Besonderheiten |
-|----------|------------------|-----------|----------------|
+| ---------- | ------------------ | ----------- | ---------------- |
 | `DataPanel_MI_IW_0_10V` | 0‑10 V | HR DataPanel MI | Hysterese, SA‑Adressierung |
 | `DataPanel_MI_IW_4_20mA` | 4‑20 mA | HR DataPanel MI | Analoge Stromeingänge |
 | `GenericAnalogInput` | variabel | Standard IEC 61131 | Allgemeiner Eingang, keine Hysterese |

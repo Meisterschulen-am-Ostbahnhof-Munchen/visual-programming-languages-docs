@@ -6,6 +6,7 @@
 
 The function block `XOR_9` is used for bitwise calculation of the XOR operation with up to nine inputs. It is part of the standard bit operations according to IEC 61131-3 and enables the processing of any bit data type (`ANY_BIT`).
 ![XOR_9](XOR_9.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -57,7 +58,7 @@ OUT = IN1 XOR IN2 XOR ... XOR IN9`
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | XOR_9 | Standard XOR (2 inputs) |
-|---------------|-------------|----------------------------|
+| --------------- | ------------- | ---------------------------- |
 | Number of inputs | 9 | 2 |
 | Data type | ANY_BIT | Type-dependent (e.g., BOOL) |
 | Flexibility | High | Low |

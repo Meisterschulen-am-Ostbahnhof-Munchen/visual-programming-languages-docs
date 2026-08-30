@@ -6,6 +6,7 @@
 ![AR_SUB_2](./AR_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_SUB_2` dient zur Durchführung einer arithmetischen Subtraktion (Subtrahend von Minuend). Es handelt sich um einen generischen Funktionsbaustein (`GEN_AR_SUB`), der für die Berechnung keine klassischen diskreten Ein- und Ausgänge nutzt, sondern vollständig auf einer adapterbasierten Schnittstellenstruktur aufbaut. Die Werte und die dazugehörige Steuerungslogik werden über unidirektionale Adapter vom Typ `AR` übertragen.

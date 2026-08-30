@@ -3,6 +3,7 @@
 ![AI_SUB_2](./AI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AI_SUB_2` is a generic arithmetic function block for performing subtraction. It is specifically designed for use with analog interface adapters. The block calculates the difference between two analog input values and outputs the result to an analog output adapter. Using adapters keeps the interface design in the 4diac-ide clear and concise.

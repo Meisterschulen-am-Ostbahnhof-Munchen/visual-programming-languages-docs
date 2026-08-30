@@ -3,9 +3,11 @@
 ![FIELDBUS_UINT_TO_SIGNAL_SCALED](./FIELDBUS_UINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_UINT_TO_SIGNAL_SCALED** processes a UINT value received via a fieldbus. It checks the validity of the input signal and, if valid, scales it to a REAL output using a multiplication constant (SCALE) and an additive offset (OFFSET). If the signal is invalid, the output is set to zero and a validity flag is set to FALSE. A typical application is the conversion of raw fieldbus data into physical quantities while simultaneously detecting exceptional conditions such as wire breaks or sensor errors.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +23,7 @@ The function block **FIELDBUS_UINT_TO_SIGNAL_SCALED** processes a UINT value rec
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|--------|-------|----------------------------------|-----------------------------------------------------------|
+| -------- | ------- | ---------------------------------- | ----------------------------------------------------------- |
 | IN | UINT | WORD_TO_UINT(NOT_AVAILABLE_WM) | Raw value from the fieldbus to be scaled. |
 | SCALE | REAL | REAL#1.0 | Scaling factor (multiplication). |
 | OFFSET | DINT | DINT#0 | Additive offset to be added after scaling. |
@@ -29,7 +31,7 @@ The function block **FIELDBUS_UINT_TO_SIGNAL_SCALED** processes a UINT value rec
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-|--------|-------|--------------|-----------------------------------------------------------|
+| -------- | ------- | -------------- | ----------------------------------------------------------- |
 | OUT | REAL | REAL#0.0 | Scaled output value. 0.0 if the signal is invalid. |
 | VALID | BOOL | FALSE | Validation flag: TRUE if the input signal is valid. |
 
@@ -47,12 +49,14 @@ The FB has two operating states, which are controlled by the corresponding event
 
 1. Check whether the input value `IN` is less than or equal to a predefined validity threshold. This threshold is given by the imported constant `VALID_SIGNAL_W` (from the namespace `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`).
 2. **Valid (`IN <= VALID_SIGNAL_W`)**:
+
 - `OUT := UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`
 - `VALID := TRUE`
-3. **Invalid (`IN > VALID_SIGNAL_W`)**:
+1. **Invalid (`IN > VALID_SIGNAL_W`)**:
+
 - `OUT := 0.0`
 - `VALID := FALSE`
-4. Subsequently, the event `CNF` is sent with the current values of `OUT` and `VALID`.
+1. Subsequently, the event `CNF` is sent with the current values of `OUT` and `VALID`.
 
 The validity threshold is provided as part of the imported library and must be defined according to the fieldbus standard used. The initial value of `IN` is `WORD_TO_UINT(NOT_AVAILABLE_WM)`, which, by default, results in an invalid signal being detected if no data is passed.
 
@@ -68,7 +72,7 @@ The validity threshold is provided as part of the imported library and must be d
 The FB has exactly two EC states:
 
 | State | Input | Algorithm | Output Event |
-|---------|---------|-------------|------------------|
+| --------- | --------- | ------------- | ------------------ |
 | INIT | INIT | – (empty) | INITO |
 | REQ | REQ | REQ | CNF |
 

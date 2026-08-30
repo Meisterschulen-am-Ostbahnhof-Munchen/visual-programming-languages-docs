@@ -3,9 +3,11 @@
 ![AW_TO_ALI](./AW_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AW_TO_ALI** function block is a composite function block that converts a unidirectional adapter of type **AW** (WORD) into an adapter of type **ALI** (LINT). It is used to convert data between different adapter interfaces without requiring the user to implement the actual conversion logic. Internally, the function block uses the IEC 61131 function block `F_WORD_TO_LINT` and provides typical event/data control via the supplied adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -70,7 +72,7 @@ Since this is a composite function block without its own state machine (ECC), th
 ## Comparison with Similar Blocks
 
 | Block | Input (adapter) | Output (adapter) | Conversion | Special Features |
-|----------|-------------------|-------------------|---------------|----------------|
+| ---------- | ------------------- | ------------------- | --------------- | ---------------- |
 | **AW_TO_ALI** | AW (WORD) | ALI (LINT) | WORD → LINT | Unidirectional, Composite |
 | `F_WORD_TO_LINT` (IEC 61131) | Single REQ input, IN (WORD) | Single CNF output, OUT (LINT) | WORD → LINT | Standard FB, no adapter |
 | `ALI_TO_AW` (hypothetical) | ALI (LINT) | AW (WORD) | LINT → WORD | Reverse direction |

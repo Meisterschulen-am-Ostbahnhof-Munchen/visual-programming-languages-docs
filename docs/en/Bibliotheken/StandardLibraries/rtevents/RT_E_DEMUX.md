@@ -1,10 +1,12 @@
 # RT_E_DEMUX
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_DEMUX block. Forwards an input event to one of several outputs.
 ![RT_E_DEMUX](RT_E_DEMUX.svg)
+
 ## Metadata
 
 | Attribute | Value |

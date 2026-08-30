@@ -3,8 +3,9 @@
 ![Uebung_218b_ALR_network](./Uebung_218b_ALR_network.svg)
 
 * * * * * * * * * *
+
 This exercise implements a **down counter (CTD)** according to IEC 61131-3 using an **AUDI_FB_CTD** (adapter version, data type **UDINT**). The current counter value is output to **PHYSA_LREAL** via a terminal. Additionally, a digital output (**Output_Q1**) is provided, indicating the counter's status (Q).
-The implementation also allows **negative count values** – a corresponding message on the network indicates this. To reduce the event rate during rapid counting pulses, an **AX_D_FF** (flip-flop) could optionally be implemented.
+The implementation also allows **negative count values** – a corresponding message on the network indicates this. To reduce the event rate during rapid counting pulses, an **AX_D_FF** (flip-flop) could optionally be implemented
 ---
 
 ## Function Blocks Used (FBs)
@@ -124,13 +125,16 @@ The block receives the converted LREAL value and outputs it to the terminal (Out
 
 After the system starts, the function block `Input_LD` is initialized. This generates a `INITO` event, which triggers the function block `AUDI_UDINT_TO_UDI` (`REQ`). This block passes the fixed value **UDINT#10** to the counter's preset input.
 
-2. **Counting Operation**
+1. **Counting Operation**
+
 - Each positive signal at **Input_I1** (→ `Input_CD`) generates a **CD** event at the counter → the counter value is decremented by 1.
 - A signal at **Input_I2** (→ `Input_LD`) generates an **LD** event → the counter is reset to the last loaded preset value (initial 10).
-3. **Outputs**
+1. **Outputs**
+
 - The counter output **Q** is connected to the digital output **Output_Q1** via an adapter. The output lamp will then light up when the counter is ≤ 0.
 - The current counter value **CV** is converted to an LREAL value via `AUDI_TO_ALR` and output to the terminal (OutputNumber_N3) by `Q_NumericValue_PHYSA_LREAL`.
-4. **Notes from the Comments**
+1. **Notes from the Comments**
+
 - *“Negative values are possible here!”* – The counter can go below zero with continued CD events. The terminal output also displays negative LREAL values.
 - *“If necessary, add an AX_D_FF here to reduce the number of events.”* – For very fast pulses, a preceding flip-flop can dampen the event rate and prevent unwanted counts.
 

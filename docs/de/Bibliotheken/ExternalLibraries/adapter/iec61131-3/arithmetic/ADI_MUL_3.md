@@ -6,6 +6,7 @@
 *Kein Bild verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_MUL_3` ist ein generischer Arithmetik-Baustein für die 4diac-IDE. Er dient zur Multiplikation von drei numerischen Eingangswerten, die über standardisierte, unidirektionale Adapter übertragen werden. Durch die Kapselung der mathematischen Operation in einer Adapter-Schnittstelle eignet sich dieser Baustein besonders für modulare und saubere Anwendungsarchitekturen innerhalb des IEC 61499-Standards.

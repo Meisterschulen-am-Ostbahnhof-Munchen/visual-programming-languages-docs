@@ -3,6 +3,7 @@
 ![AR_SPLIT_8](./AR_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AR_SPLIT_8 dient zur Aufteilung eines einzelnen unidirektionalen AR-Adapter-Signals auf acht identische AR-Ausgänge. Er ist als generischer Baustein implementiert und ermöglicht eine einfache Signalverteilung ohne zusätzliche Logik.
@@ -12,15 +13,19 @@ Der Funktionsblock AR_SPLIT_8 dient zur Aufteilung eines einzelnen unidirektiona
 ### **Ereignis-Eingänge**
 
 Keine.
+
 ### **Ereignis-Ausgänge**
 
 Keine.
+
 ### **Daten-Eingänge**
 
 Keine.
+
 ### **Daten-Ausgänge**
 
 Keine.
+
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung |

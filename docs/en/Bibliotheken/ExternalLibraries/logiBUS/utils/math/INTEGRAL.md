@@ -6,6 +6,7 @@
 
 The function block `INTEGRAL` approximates the time integral of an input signal. The integration is performed by summing partial areas that result from the product of the input value and the time elapsed since the last call. This block is useful for applications where cumulative values such as energy consumed, quantities conveyed, or distances traveled need to be determined.
 ![INTEGRAL](INTEGRAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -25,7 +26,7 @@ The function block `INTEGRAL` approximates the time integral of an input signal.
 ### **Data Outputs**
 
 - **OUT** (`REAL`, initial value: `0.0`): The current value of the integral. It is calculated by summing all partial integrals (`IN * TM`). The unit is `[IN] * Sekunden` because the time value `TM` is internally converted from milliseconds to seconds.
-- * **OVERFLOW** (`BOOL`, initial value: `FALSE`): Indicates an overflow. If this output is `TRUE`, the value of `OUT` has exceeded the representable range of the `REAL` data type. The integration function is blocked until it is reinitialized by a `RESET` event.
+- - **OVERFLOW** (`BOOL`, initial value: `FALSE`): Indicates an overflow. If this output is `TRUE`, the value of `OUT` has exceeded the representable range of the `REAL` data type. The integration function is blocked until it is reinitialized by a `RESET` event.
 
 ### **Adapters**
 
@@ -39,7 +40,7 @@ The `INTEGRAL` function block has two primary operating states, which are contro
 
 If the value of the partial integral would exceed the limits of the `REAL` data type (approximately ±1.0E38), then `OVERFLOW` is set to `TRUE`. Otherwise, and only if the time difference `TM` is greater than 0, the partial integral is calculated, converted to seconds (`/ 1000.0`), and added to the total integral `OUT`.
 
-2. **Reset (`RESET`)**: Upon a `RESET` event, the algorithm `RESET` is executed. This resets the integral value `OUT` to `0.0` and the overflow flag `OVERFLOW` to `FALSE`.
+1. **Reset (`RESET`)**: Upon a `RESET` event, the algorithm `RESET` is executed. This resets the integral value `OUT` to `0.0` and the overflow flag `OVERFLOW` to `FALSE`.
 
 After the execution of each algorithm, an output event `CNF` containing the current values is always generated.
 

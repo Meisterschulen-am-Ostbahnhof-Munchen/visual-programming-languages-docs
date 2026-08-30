@@ -31,15 +31,18 @@ The function block uses the algorithm `REQ` to convert the `WORD` value at input
 
 - The function block has a simple structure and requires no additional parameters or complex logic.
 - The conversion is performed directly without intermediate steps.
+
 1. **Initialization**: The function block waits for the event `REQ`.
 2. **Processing**: Upon receiving `REQ`, the value of `IN` is converted.
 3. **Completion**: After the conversion, `CNF` is triggered and the value is output to `OUT`.
+
 - Displaying numeric values in user interfaces.
 - Logging `WORD` values in a readable format.
 - Further processing of numeric values in systems that expect `STRING` data.
 - Compared to generic conversion blocks, `F_WORD_AS_STRING` specializes in converting `WORD` to `STRING` and is therefore more efficient for this specific use case.
 
 The `F_WORD_AS_STRING` function block is a simple and efficient tool for converting `WORD` values to `STRING`. Its clear interface and direct functionality make it ideal for applications requiring fast and straightforward conversion.
+
 ## Technical Features
 
 ## State Overview

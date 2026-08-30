@@ -3,6 +3,7 @@
 ![FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Funktionsbaustein bildet einen 16‑Bit‑Wort‑Eingang auf einen skalierten Realwert ab. Dabei wird das eingehende Wort zunächst auf Gültigkeit geprüft. Ist das Signal gültig, werden das obere und das untere Byte mit jeweils eigenen Skalierungsfaktoren multipliziert und mit einem Offset addiert. Das Ergebnis wird als Skalierung des ursprünglichen Feldbussignals ausgegeben.
@@ -22,7 +23,7 @@ Dieser Funktionsbaustein bildet einen 16‑Bit‑Wort‑Eingang auf einen skalie
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Beschreibung |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | `IN` | WORD | `NOT_AVAILABLE_WM` | Das zu verarbeitende 16‑Bit‑Feldbussignal. |
 | `SCALE_HIGH` | REAL | 0.256 | Skalierungsfaktor für das obere Byte (High‑Byte). |
 | `SCALE_LOW` | REAL | 0.001 | Skalierungsfaktor für das untere Byte (Low‑Byte). |
@@ -61,6 +62,7 @@ Der Baustein arbeitet in zwei Schritten, gesteuert durch die Ereignisse:
      - `VALID` wird auf `FALSE` gesetzt.
 
 Der folgende ST‑Code verdeutlicht die interne Logik:
+
 ```pascal
 IF (WORD_TO_UINT(IN) <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN
     temp := SHR(IN, SINT#8);

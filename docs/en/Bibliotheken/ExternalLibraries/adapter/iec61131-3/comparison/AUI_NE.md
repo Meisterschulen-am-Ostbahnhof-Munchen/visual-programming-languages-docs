@@ -3,9 +3,11 @@
 ![AUI_NE](./AUI_NE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_NE` performs a not equal comparison for two input values. It is built as a composite function block (FB) from the IEC 61131-3 comparison block `F_NE`. Communication with the environment is via standardized adapter interfaces (`AUI` for the inputs, `AX` for the output). This allows it to be seamlessly integrated into adapter-based architectures of the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -13,7 +15,7 @@ The function block `AUI_NE` performs a not equal comparison for two input values
 The FB does not have direct event inputs. Events are received via the **socket adapters** `IN1` and `IN2`:
 
 | Adapter | Event | Description |
-|---------|----------|--------------|
+| --------- | ---------- | -------------- |
 | `IN1` | Event via adapter input E1 | Starts the comparison when the value is available at `IN1`. |
 | `IN2` | Event via adapter input E1 | Starts the comparison when the value is available at `IN2`. |
 
@@ -32,7 +34,7 @@ The FB has no direct event outputs. The result is output via the **Plug Adapter*
 Data is also provided via the socket adapters:
 
 | Adapter | Data Point | Type | Description |
-|---------|------------|-----|--------------|
+| --------- | ------------ | ----- | -------------- |
 | `IN1` | D1 | ANY (via AUI) | First comparison value |
 | `IN2` | D2 | ANY (via AUI) | Second comparison value |
 
@@ -49,7 +51,7 @@ The result value is output via the plug adapter:
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN1` | Socket | `adapter::types::unidirectional::AUI` | Receiver adapter for the first input value. |
 | `IN2` | Socket | `adapter::types::unidirectional::AUI` | Receiver adapter for the second input value. |
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Output adapter for the comparison result. |
@@ -81,7 +83,7 @@ The FB `AUI_NE` itself does not have its own state machine. Its behavior is enti
 ## Comparison with Similar Blocks
 
 | Block | Comparison Function | Special Feature |
-|----------|---------------------|--------------|
+| ---------- | --------------------- | -------------- |
 | `AUI_EQ` | Equal | Result `TRUE` for equal values |
 | `AUI_NE` | Not equal | Result `TRUE` for different values |
 | `AUI_GT` | Greater than | Result `TRUE` if IN1 > IN2 |

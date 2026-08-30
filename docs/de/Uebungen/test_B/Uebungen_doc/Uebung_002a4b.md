@@ -15,7 +15,7 @@ Ziel ist es, die Konfiguration und Verschaltung von Ein‑/Ausgangsbausteinen de
 Die Übung besteht aus folgenden direkt im Netzwerk verwendeten Funktionsbausteinen (es gibt keine Sub‑Bausteine):
 
 | Baustein | Typ | Parameter |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | **DigitalInput_I1** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` |
 | **DigitalInput_I2** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` |
 | **AND_2_BOOL** | `iec61131::bitwiseOperators::AND_2_BOOL` | (keine Parameter) |

@@ -3,9 +3,11 @@
 ![Uebung_215_AI_network](./Uebung_215_AI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a down counter according to IEC 61131-3 with an adapter interface (AI_FB_CTD) and outputs the current counter value to a terminal. The counter is decremented and loaded via digital inputs.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: AI_FB_CTD
@@ -67,6 +69,7 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 **Data Output/Input**: AI_IN (INT), AUDI_OUT (AUDI)
 
 **Functionality**: Converts the integer counter value (CV) to the AUDI format required by the terminal.
+
 ### Sub-Blocks: Q_NumericValue_AUDI
 
 - **Type**: isobus::UT::Q::Q_NumericValue_AUDI

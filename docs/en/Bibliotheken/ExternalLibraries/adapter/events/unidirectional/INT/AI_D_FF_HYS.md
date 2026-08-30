@@ -3,9 +3,11 @@
 ![AI_D_FF_HYS](./AI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_D_FF_HYS** implements a clock-controlled D flip-flop (data latch) with configurable hysteresis. It serves to stably lock a binary or analog input signal and filter out disturbances in the signal waveform. The hysteresis prevents constant switching due to minor signal changes (bouncing, noise), thus ensuring a clean, latency-free output state.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ This function block does not have direct data outputs. The locked value is provi
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|----------|---------------------------------------------------|
+| ------------- | ----- | ---------- | --------------------------------------------------- |
 | I | AI | Socket | Input adapter: Clock signal (**E1**) and data (**D1**) |
 | Q | AI | Plug | Output adapter: Latched value (**D1**) and associated event (**E1**) |
 
@@ -45,7 +47,7 @@ The adapter type used, `adapter::types::unidirectional::AI`, is a unidirectional
 
 The module is activated by the **INIT** event. The passed value **HYSTERESIS** is stored as the hysteresis band. After successful initialization, **INITO** is triggered.
 
-2. **Data Latching**
+1. **Data Latching**
 
 After initialization, the module waits for a clock signal at adapter **I** (event **I.E1**). With each clock event, the current data value **I.D1** is read.
 
@@ -80,7 +82,7 @@ The actual flip-flop with hysteresis is implemented by the internal function blo
 The function block (FB) does not have explicit states in the sense of a finite automaton. After the **INIT** operation, it is in an operating state where it waits for clock events. A subsequent **INIT** call resets the hysteresis and initializes the internal logic.
 
 | State | Description |
-|----------------------|-----------------------------------------------|
+| ---------------------- | ----------------------------------------------- |
 | Initialized | Ready for processing after a successful **INIT** |
 | Waiting for Clock | Expecting an **I.E1** event at the input adapter |
 | Data Processing | Upon **I.E1**: Hysteresis comparison and, if necessary, acceptance |
@@ -106,7 +108,7 @@ This adapter allows the connection of components with different event clocks by 
 ## Comparison with Similar Components
 
 | Component | Hysteresis | Clock Input | Output Type | Special Feature |
--------------------|-----------|-------------|-----------------------|----------------------------------|
+------------------- | ----------- | ------------- | ----------------------- | ---------------------------------- |
 | **AI_D_FF_HYS** | Yes | Yes | Adapter (AI) | Flexible Adapter Coupling | ... Standard D-FF (61499) | No | Yes | Direct Data Outputs | No Noise Suppression |
 | SR Flip-Flop | No | No | Direct | Set/Reset, No Clock |
 | Schmitt Trigger | Yes | No | Analog Threshold | Threshold Only, No Memory |

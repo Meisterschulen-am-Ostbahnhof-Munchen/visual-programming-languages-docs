@@ -3,9 +3,11 @@
 ![Uebung_028a_network](./Uebung_028a_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of an analog input signal with calibration. Digital pushbuttons are used to calibrate the offset and scaling, and the determined calibration parameters are stored non-volatilely. The exercise shows how to work with analog input blocks, type conversion, calibration functions, and memory blocks in the 4diac IDE.
+
 ## Function Blocks (FBs) Used
 
 - **DigitalOutput_Q1** (logiBUS_QX): Digital output Q1.
@@ -32,11 +34,12 @@ The flow is controlled by events:
 2. **AnalogInput_I4** detects an analog value and outputs it as a DWORD at its output `IN`. At the same time, a `IND` event is sent, which activates the conversion block **F_DWORD_TO_UDINT_I4**.
 3. **F_DWORD_TO_UDINT_I4** converts the DWORD value to REAL and passes the result to the calibration block **CALIBRATE** via its input `X`.
 4. The user can manually trigger calibration:
+
 - **DigitalInput_I2** (button) sends a `IND` event to `EICO` from **CALIBRATE** → triggers offset calibration.
 - **DigitalInput_I3** (button) sends a `IND` event to `EICS` from **CALIBRATE** → triggers scaling calibration.
-5. **CALIBRATE** calculates the corrected value from the raw value and the current calibration parameters (offset and scaling). The new parameters are output at `OFFSET` and `SCALE`.
-6. These new parameters are written to the memory blocks **INI_OFFSET** and **INI_SCALE** via data connections (event `SET` is sent by **CALIBRATE** via `EOCO` and `EOCS`, respectively).
-7. After initialization (`INITO` → `GET`), the stored values are passed back to **CALIBRATE** via **SET_REAL_OFFSET** and **SET_REAL_SCALE**, thus ensuring the calibration is permanently maintained.
+1. **CALIBRATE** calculates the corrected value from the raw value and the current calibration parameters (offset and scaling). The new parameters are output at `OFFSET` and `SCALE`.
+2. These new parameters are written to the memory blocks **INI_OFFSET** and **INI_SCALE** via data connections (event `SET` is sent by **CALIBRATE** via `EOCO` and `EOCS`, respectively).
+3. After initialization (`INITO` → `GET`), the stored values are passed back to **CALIBRATE** via **SET_REAL_OFFSET** and **SET_REAL_SCALE**, thus ensuring the calibration is permanently maintained.
 
 The data flows connect:
 

@@ -3,23 +3,29 @@
 ![AD_TO_AULI](./AD_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AD_TO_AULI function block is a composite FB for converting a DWORD adapter (AD) to a ULINT adapter (AULI). It uses the IEC 61131 conversion function F_DWORD_TO_ULINT and encapsulates the event and data connections for easy adapter-based conversion.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 None
+
 ### **Event Outputs**
 
 None
+
 ### **Data Inputs**
 
 None
+
 ### **Data Outputs**
 
 None
+
 ### **Adapter**
 
 - **AD_IN** (Socket): Type AD (DWORD), unidirectional input adapter for the DWORD.

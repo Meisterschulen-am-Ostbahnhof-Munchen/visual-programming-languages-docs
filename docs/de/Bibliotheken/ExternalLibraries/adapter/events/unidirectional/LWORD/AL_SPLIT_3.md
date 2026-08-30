@@ -3,6 +3,7 @@
 ![AL_SPLIT_3](./AL_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_SPLIT_3** dient der Aufteilung eines eingehenden unidirektionalen Adapter-Signals (AL – Adapter Label) auf drei gleichartige Ausgangs-Adapter. Er ist als generischer Baustein konzipiert und ermöglicht die mehrfache Weiterleitung eines Adapter-basierten Daten- oder Ereignisflusses innerhalb einer IEC 61499 Anwendung.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AL` | IN | Socket | Eingangs-Adapter, der das zu verteilende Signal bereitstellt. |
 | `adapter::types::unidirectional::AL` | OUT1 | Plug | Erster Ausgangs-Adapter – identische Kopie des Eingangssignals. |
 | `adapter::types::unidirectional::AL` | OUT2 | Plug | Zweiter Ausgangs-Adapter – identische Kopie des Eingangssignals. |

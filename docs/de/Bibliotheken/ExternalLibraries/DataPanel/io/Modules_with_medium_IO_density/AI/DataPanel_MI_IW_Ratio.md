@@ -20,7 +20,7 @@ Der Funktionsblock **DataPanel_MI_IW_Ratio** ist ein Service-Interface-Funktions
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Mit-Variablen | Kommentar |
-|----------|-----|---------------|-----------|
+| ---------- | ----- | --------------- | ----------- |
 | INITO | EInit | QO, STATUS | Initialization Confirm |
 | CNF | Event | QO, STATUS, IN | Confirmation of Requested Service |
 | IND | Event | QO, STATUS, IN | Indication from Resource |
@@ -28,7 +28,7 @@ Der Funktionsblock **DataPanel_MI_IW_Ratio** ist ein Service-Interface-Funktions
 ### **Daten-Eingänge**
 
 | Variable | Typ | Initialwert | Kommentar |
-|----------|-----|-------------|-----------|
+| ---------- | ----- | ------------- | ----------- |
 | QI | BOOL | – | Event Input Qualifier |
 | PARAMS | STRING | – | Service Parameters |
 | u8SAMember | USINT | MI::MI_00 | Node SA 224..239 |
@@ -38,7 +38,7 @@ Der Funktionsblock **DataPanel_MI_IW_Ratio** ist ein Service-Interface-Funktions
 ### **Daten-Ausgänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Service Status |
 | IN | WORD | Input data from resource |
@@ -90,7 +90,7 @@ Im Fehlerfall wird `QO = FALSE` gesetzt und `STATUS` enthält einen entsprechend
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Merkmal |
-|----------|---------|
+| ---------- | --------- |
 | `DataPanel_MI_AI` | Standardanaloger Eingang ohne explizite ratiometrische Auslegung. |
 | `DataPanel_MI_IW_Voltage` | Spannungsmessung mit absoluten Werten (z. B. mV). |
 | **DataPanel_MI_IW_Ratio** | Speziell für ratiometrische Sensoren optimiert. |

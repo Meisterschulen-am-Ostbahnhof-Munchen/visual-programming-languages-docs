@@ -3,6 +3,7 @@
 ![VALUES2ARRAY_2_BYTE](VALUES2ARRAY_2_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `VALUES2ARRAY_2_BYTE` combines 2 individual `BYTE` scalar variables `IN_1`…`IN_2` into a `BYTE` array of size 2. It is the reverse of `ARRAY2VALUES_2_BYTE` and belongs to the generic `GEN_ARRAY2ARRAY` family (cf. [VALUES2ARRAY_2_LREAL](VALUES2ARRAY_2_LREAL.md)).

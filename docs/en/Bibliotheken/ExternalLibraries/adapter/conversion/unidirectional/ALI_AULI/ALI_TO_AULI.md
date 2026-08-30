@@ -3,9 +3,11 @@
 ![ALI_TO_AULI](./ALI_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_TO_AULI` is a composite block that implements bidirectional adapter conversion between the LINT adapter (ALI) and the ULINT adapter (AULI). It serves as a standardized interface for converting a signed 64-bit integer value (LINT) into an unsigned 64-bit integer value (ULINT). The block encapsulates the IEC 61131-3 conversion block `F_LINT_TO_ULINT` and simplifies integration into adapter-based architectures.
+
 ## Interface Structure
 
 The block does not have its own event or data interfaces, but only two adapter connections (socket and plug). The internal logic is handled by the embedded sub-module and the direct connection of the adapter signals.
@@ -29,7 +31,7 @@ The block does not have its own event or data interfaces, but only two adapter c
 ### **Adapter**
 
 | Adapter Type | Direction | Name | Comment |
-|------------|----------|------|-----------|
+| ------------ | ---------- | ------ | ----------- |
 | `adapter::types::unidirectional::ALI` | Socket (Input) | `ALI_IN` | LINT adapter input (provides an event and a LINT value) |
 | `adapter::types::unidirectional::AULI` | Plug (output) | `AULI_OUT` | ULINT adapter output (passes on an event and a ULINT value) |
 

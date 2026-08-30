@@ -4,6 +4,7 @@
 ![Beispiel](https://user-images.githubusercontent.com/113907471/204320176-773a1f69-281c-4d83-873a-671f1680081a.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_BackgroundColour** is a standards-compliant function block for controlling background colors in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.20) specification for agricultural tax systems.
@@ -43,12 +44,15 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object ID
 - `INITO` confirms operational readiness
-2. **Color Change**:
+1. **Color Change**:
+
 - `REQ` triggers with new color code (0-255)
 - `CNF` returns result and previous color value
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -62,7 +66,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Standard color palette (excerpt)
 
 | Code | Color | RGB equivalent |
-|------|-------------|----------------|
+| ------ | ------------- | ---------------- |
 | 0 | Black | #000000 |
 | 1 | Red | #FF0000 |
 | 2 | Green | #00FF00 |
@@ -72,7 +76,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | Invalid State |
@@ -88,7 +92,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_BackgroundColour | VtColourManager | VtDynamicStyle |
----------------|-------------------|-----------------|----------------|
+--------------- | ------------------- | ----------------- | ---------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Color Palette | Standard | Extended | User Defined |
 | Object Binding | Explicit | Implicit | Stylesheet |

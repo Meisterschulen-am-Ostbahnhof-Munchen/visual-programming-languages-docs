@@ -4,6 +4,7 @@
 ![ADI_DIV_2](./ADI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_DIV_2` dient zur Durchführung einer arithmetischen Division (DIV) von zwei Eingangswerten über Adapterverbindungen. Es handelt sich hierbei um einen generischen Funktionsbaustein (Generic FB), der auf dem Typ `GEN_ADI_DIV` basiert. Durch die konsequente Nutzung von unidirektionalen Adaptern des Typs `ADI` wird eine saubere Kapselung von Daten und Ereignissen erreicht. Dies vereinfacht das Applikationsdesign in der 4diac-IDE, da die Anzahl der sichtbaren Verbindungslinien signifikant reduziert wird.
@@ -53,6 +54,7 @@ Die Berechnung wird getriggert, sobald an den Eingangs-Adaptern entsprechende Ak
 ## Zustandsübersicht
 
 Der Funktionsbaustein verhält sich zustandslos (bzw. rein reaktiv):
+
 1.  **Wartezustand:** Der Baustein wartet auf Ereignisse an den Sockets `IN1` oder `IN2`.
 2.  **Berechnung:** Nach Erhalt gültiger Daten/Ereignisse an den Eingängen wird die Division ausgeführt.
 3.  **Aktualisierung:** Das Ergebnis wird an den Ausgangs-Plug `OUT` übergeben und das dortige Sende-Ereignis ausgelöst.
@@ -66,6 +68,7 @@ Der Funktionsbaustein verhält sich zustandslos (bzw. rein reaktiv):
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen, standardmäßigen `DIV`-Funktionsbaustein (nach IEC 61131-3), der mit diskreten Daten-Pins (`IN1`, `IN2`, `OUT`) und expliziten Event-Pins (`REQ`, `CNF`) arbeitet:
+
 -   **Vorteile von `ADI_DIV_2`:** Deutlich aufgeräumteres Erscheinungsbild im Funktionsplan (FBD) von 4diac. Datenkonsistenz wird durch die Kopplung im Adapter direkt erzwungen.
 -   **Nachteile:** Ein direkter Einsatz mit Standard-Datenströmen ohne Adapter-Kapselung ist nicht möglich. Es müssen dedizierte Konverterbausteine verwendet werden, falls die Signalquelle keine Adapter unterstützt.
 

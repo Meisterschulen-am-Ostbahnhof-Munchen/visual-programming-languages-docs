@@ -24,13 +24,13 @@ The `E_DEMUX_2` (Event Demultiplexer) is a function block according to IEC 61499
 ## Functionality
 
 1. **Event Reception**: The function block waits for an event at input `EI`.
-3. **Forwarding**:
+2. **Forwarding**:
 
 If `K` = 0, the event is forwarded to `EO1`.
 
 If `K` = 1, the event is forwarded to `EO2`.
 
-4. **Invalid Index**: If the value of `K` is outside the valid range [0, 1], no output event is triggered.
+1. **Invalid Index**: If the value of `K` is outside the valid range [0, 1], no output event is triggered.
 
 The input event is therefore always forwarded exclusively to exactly one output, provided the index `K` is valid.
 

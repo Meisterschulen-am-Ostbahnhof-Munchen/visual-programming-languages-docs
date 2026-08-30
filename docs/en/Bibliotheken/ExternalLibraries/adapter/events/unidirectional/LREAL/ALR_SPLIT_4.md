@@ -3,9 +3,11 @@
 ![ALR_SPLIT_4](./ALR_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALR_SPLIT_4** splits an incoming ALR adapter signal into four identical outputs. It is a generic function block (FB) that can be used with various ALR adapter types.
+
 ## Interface Structure
 
 ### **Event Inputs**

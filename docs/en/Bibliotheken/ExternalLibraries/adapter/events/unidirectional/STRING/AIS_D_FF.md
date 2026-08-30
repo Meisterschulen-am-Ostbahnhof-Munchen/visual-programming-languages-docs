@@ -3,9 +3,11 @@
 ![AIS_D_FF](./AIS_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `AIS_D_FF` function block implements a clock-edge-triggered D flip-flop (data latch). It is used to store and output a data value upon receiving a clock event. Communication is exclusively via AIS adapters (unidirectional), allowing the function block to be integrated into adapter-based component architectures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. The stored value is output via the plug adapter **Q** (d
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | **I** | `adapter::types::unidirectional::AIS` | Socket | Input adapter: Clock signal (event `E1`) and data input (data `D1`) |
 | **Q** | `adapter::types::unidirectional::AIS` | Plug | Output adapter: Acknowledge event (event `E1`) and stored data value (data `D1`) |
 
@@ -46,7 +48,7 @@ This component encapsulates the IEC 61499 standard component `E_D_FF_ANY`. On a 
 Since the component implements the behavior of a D flip-flop, two states can be distinguished:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Idle State** | The stored value remains constant. No output event is generated. |
 | **Takeover** | Upon the arrival of a clock event, the current input value is taken, the output is updated, and an output event is sent. |
 

@@ -3,9 +3,11 @@
 ![ASSEMBLE_AW_FROM_AX](./ASSEMBLE_AW_FROM_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_AW_FROM_AX` combines 16 Boolean signals, provided by separate AX adapters, into a 16-bit word (WORD) and outputs it via an AW adapter. It enables the conversion of a discrete group of digital signals into a uniform data word value for further processing.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. The resulting 16-bit word (WORD) is output via the AW ad
 ### **Adapters**
 
 | Type | Name | Description |
-|------|------|--------------|
+| ------ | ------ | -------------- |
 | **Socket (Input)** | `BIT_00` | AX Adapter, Bool Bit 0 |
 | **Socket (Input)** | `BIT_01` | AX Adapter, Bool Bit 1 |
 | **Socket (Input)** | `BIT_02` | AX Adapter, Bool Bit 2 |

@@ -4,6 +4,7 @@
 ![sequence_E_08_ecc](./sequence_E_08_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_08` is an eight-output sequencer controlled by events. It implements a linear state machine with a defined start state and eight active states. The transition from one state to the next occurs exclusively upon the occurrence of a specific event. This block is suitable for control tasks where process steps must be executed sequentially and in response to events, such as in handling or assembly processes.

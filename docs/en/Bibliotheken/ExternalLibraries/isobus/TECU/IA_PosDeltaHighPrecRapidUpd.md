@@ -3,9 +3,11 @@
 ![IA_PosDeltaHighPrecRapidUpd](./IA_PosDeltaHighPrecRapidUpd.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `IA_PosDeltaHighPrecRapidUpd` is an ISOBUS adapter module for high-precision, rapidly updated position deltas according to the NMEA 2000 standard (PGN 129027). It encapsulates the internal core module `I_PosDeltaHighPrecRapidUpd` and makes its output data available via adapter interfaces. This allows position changes (time, latitude, and longitude deltas) as well as a timeout status to be seamlessly integrated into automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,14 +31,14 @@ The function block `IA_PosDeltaHighPrecRapidUpd` is an ISOBUS adapter module for
 ### **Data Outputs**
 
 | Name | Type | Description |
-|----------|----------|-----------------------------------|
+| ---------- | ---------- | ----------------------------------- |
 | `QO` | `BOOL` | Output qualifier (Initialization successful?). |
 | `STATUS` | `STRING` | Initialization status message. |
 
 ### **Adapters**
 
 | Adapter name | Type (Adapter) | Description |
-|--------------------|----------------------------------|-----------------------------------------|
+| -------------------- | ---------------------------------- | ----------------------------------------- |
 | `TIME_DELTA` | `adapter::types::unidirectional::AUI` | Returns the time delta (unsigned integer). |
 | LAT_DELTA` | `adapter::types::unidirectional::AI` | Returns the latitude delta (signed integer). |
 | LON_DELTA` | `adapter::types::unidirectional::AI` | Returns the longitude delta (signed integer). |

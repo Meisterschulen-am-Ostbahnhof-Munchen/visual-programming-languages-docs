@@ -3,6 +3,7 @@
 ![E_RS_SYM](./E_RS_SYM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **E_RS_SYM** ist ein ereignisgesteuertes, bistabiles Flipflop mit symmetrischem Startverhalten. Er realisiert eine Set-Reset-Funktionalität, bei der der Ausgang Q sowohl durch ein Set- als auch durch ein Reset-Ereignis definiert geschaltet wird. Im Gegensatz zu einem klassischen RS‑Flipflop besitzt der Baustein einen expliziten Startzustand, der auf beide Ereignisse gleichermaßen reagiert.
@@ -78,7 +79,7 @@ Der FB besitzt drei Zustände:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | **E_RS** | Klassisches RS-Flipflop mit meist asymmetrischem Startverhalten (Q initial FALSE). |
 | **E_RS_SYM** | Wie E_RS, aber mit symmetrischem Startverhalten – kein voreingestellter Wert, Startzustand akzeptiert beide Ereignisse gleich. |
 | **SR-Flipflop** | Ähnliche Funktion, jedoch häufig mit Priorität für Set oder Reset; E_RS_SYM ist prioritätsneutral. |

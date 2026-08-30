@@ -3,29 +3,31 @@
 ![FIELDBUS_ULINT_TO_SIGNAL_SCALED](./FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used to convert a raw ULINT value (e.g., from a fieldbus) into a scaled LREAL value. The validity of the input signal is checked against a constant threshold (`VALID_SIGNAL_LW`). If the input is valid, linear scaling is performed (multiplication by a factor and addition of an offset); otherwise, the output is set to 0,0 and the validity is negated.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | With Variables |
-|----------|-----|--------------|---------------|
+| ---------- | ----- | -------------- | --------------- |
 | **INIT** | EInit | Initialization Request | SCALE, OFFSET |
 | **REQ** | Event | Normal Execution Request | IN |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Variables |
-|----------|-----|---------------|---------------|
+| ---------- | ----- | --------------- | --------------- |
 | **INITO** | EInit | Initialization Acknowledgement | – |
 | **CNF** | Event | Execution Acknowledgement | OUT, VALID |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-|----------|-----|-------------|--------------|
+| ---------- | ----- | ------------- | -------------- |
 | **IN** | ULINT | `LWORD_TO_ULINT(NOT_AVAILABLE_LWM)` | Raw value from the fieldbus |
 | **SCALE** | LREAL | `1.0` | Scaling factor |
 | **OFFSET** | DINT | `0` | Offset added after scaling |
@@ -33,7 +35,7 @@ The function block **FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used to convert a raw 
 ### **Data Outputs**
 
 | Variable | Type | Initial value | Description |
-|----------|-----|--------------|--------------|
+| ---------- | ----- | -------------- | -------------- |
 | **OUT** | LREAL | `0.0` | Scaled output value (valid only if VALID = TRUE) |
 | **VALID** | BOOL | `FALSE` | Validation signal: TRUE if IN ≤ `VALID_SIGNAL_LW`, otherwise FALSE |
 
@@ -51,7 +53,7 @@ When the INIT event arrives, the algorithm `INIT` is executed (currently empty).
 
 The **SCALE** and **OFFSET** parameters can be set via the inputs connected to INIT.
 
-2. **REQ State**
+1. **REQ State**
 
 When a REQ event occurs, the algorithm `REQ` is executed:
 
@@ -83,7 +85,7 @@ The constants `NOT_AVAILABLE_LWM` and `VALID_SIGNAL_LW` are taken from the impor
 ## State Overview
 
 | State | Description | Trigger | Output Event |
-|---------|--------------|----------|-----------------|
+| --------- | -------------- | ---------- | ----------------- |
 | **INIT** | Initialization (no action) | INIT | INITO |
 | **REQ** | Input signal processing (scaling or error handling) | REQ | CNF |
 

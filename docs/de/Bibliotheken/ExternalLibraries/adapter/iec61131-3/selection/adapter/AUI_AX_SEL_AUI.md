@@ -6,6 +6,7 @@
 *Kein Bild verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_AX_SEL_AUI` ist ein zusammengesetzter Funktionsbaustein (Composite Function Block) für 4diac-ide. Er dient der binären Auswahl (Selektion) zwischen zwei analogen bzw. numerischen Eingangssignalen, die über Adapter bereitgestellt werden. Basierend auf dem Zustand eines Selektions-Adapters schaltet der Baustein eines der beiden Eingangssignale auf den Ausgang auf.
@@ -74,7 +75,7 @@ Im Inneren des Bausteins befindet sich ein definiertes Netzwerk aus Standard-Fun
 Da es sich um einen Composite-FB handelt, besitzt der Baustein keine eigene Zustandsmaschine (ECC). Das Verhalten ist rein daten- und ereignisgesteuert:
 
 | Zustand Selektor `G` (Wert von D1) | Ausgang `OUT` (Wert von D1) | Triggerung von `OUT.E1` |
-|:---|:---|:---|
+| :--- | :--- | :--- |
 | `FALSE` (0) | Entspricht dem Wert von `IN0` | Ja, bei Änderung/Ereignis an `IN0` oder `G` |
 | `TRUE` (1) | Entspricht dem Wert von `IN1` | Ja, bei Änderung/Ereignis an `IN1` oder `G` |
 

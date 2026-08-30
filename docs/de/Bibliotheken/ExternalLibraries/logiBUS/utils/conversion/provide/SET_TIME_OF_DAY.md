@@ -3,6 +3,7 @@
 ![SET_TIME_OF_DAY](./SET_TIME_OF_DAY.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `SET_TIME_OF_DAY` dient dazu, einen über den Dateneingang `IN` bereitgestellten Tageszeitwert in eine als InOut-Variable deklarierte Zielvariable `OUT` zu schreiben. Der Baustein ist als einfacher FB (SimpleFB) realisiert und entspricht der Norm IEC 61499-1.

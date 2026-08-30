@@ -3,6 +3,7 @@
 ![AUS_FIELDBUS_USINT_TO_SIGNAL](./AUS_FIELDBUS_USINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUS_FIELDBUS_USINT_TO_SIGNAL` dient der Weitergabe eines USINT-Signals von einem Feldbus-Adapter unter Berücksichtigung einer Gültigkeitsprüfung. Er spiegelt den Eingangswert auf den Ausgang, sofern das Signal als gültig erkannt wird. Ein zusätzlicher Adapter gibt den Gültigkeitsstatus aus. Die interne Logik verwendet einen dedizierten Fieldbus-Umwandlungsbaustein und ein flankengesteuertes D-Flip-Flop zur Synchronisation.
@@ -38,7 +39,7 @@ Der Funktionsblock `AUS_FIELDBUS_USINT_TO_SIGNAL` dient der Weitergabe eines USI
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AUS` | Socket | Empfängt das Rohsignal (Ereignis + Daten) vom Feldbus. |
 | `OUT` | `adapter::types::unidirectional::AUS` | Plug | Gibt das validierte Signal an nachgelagerte Komponenten weiter. |
 | `VALID` | `adapter::types::unidirectional::AX` | Plug | Stellt den Gültigkeitsstatus (Ereignis + BOOL) zur Verfügung. |

@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_2](./AIWS_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIWS_SPLIT_2** is used to split an incoming AIWS adapter signal into two identical outputs. It is designed as a generic function block and allows multiple uses of an AIWS signal within the same application without requiring separate signal distribution programming.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | **IN** | `adapter::types::unidirectional::AIWS` | Incoming AIWS signal, which is distributed to both outputs. |
 | Plug (Output) | **OUT1** | `adapter::types::unidirectional::AIWS` | First output – identical signal to the input. |
 | Plug (Output) | **OUT2** | `adapter::types::unidirectional::AIWS` | Second output – identical signal to the input. |

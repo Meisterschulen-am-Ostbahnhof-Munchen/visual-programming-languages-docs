@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_030`. It demonstrates the advanced capabilities of LED control using pulse width modulation (PWM).
+
 ## 🎧 Podcast
 
 ![Uebung_030_network](./Uebung_030_network.svg)

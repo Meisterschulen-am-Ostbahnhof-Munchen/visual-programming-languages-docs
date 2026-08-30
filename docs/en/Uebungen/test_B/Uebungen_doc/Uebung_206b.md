@@ -3,9 +3,11 @@
 ![Uebung_206b_network](./Uebung_206b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an application using three mutually interlocked toggle flip-flops. Three pushbuttons (digital inputs) each control an ILOCK_T_FF, which toggles its output with each button press. The three flip-flops are bidirectionally connected via an adapter chain, ensuring that only one output can be active at a time (interlock). The outputs are routed to three digital outputs (e.g., LEDs).
+
 ## Function Blocks (FBs) Used
 
 ### Digital Input: logiBUS_IE
@@ -30,6 +32,7 @@ Each block detects a button and generates an event (IND) at its event output upo
 A toggle flip-flop that switches its output **Q** on every event at the input **CLK**. It has two adapter interfaces: **ILOCK_IN** and **ILOCK_OUT**. These adapters allow multiple ILOCK_T_FF flip-flops to be chained together, ensuring that only one flip-flop in the chain can set its output to TRUE at any given time (mutual interlocking). When another flip-flop is activated, the previously active one is automatically reset.
 
 A toggle flip-flop that switches its output **Q** on every event at its input **CLK**.
+
 ### Digital Output: logiBUS_QX
 
 - **Type**: logiBUS::io::DQ::logiBUS_QX
@@ -47,7 +50,7 @@ This function block sets a digital output (e.g., an LED) to the value present at
 
 Three pushbuttons are connected to the logiBUS inputs *Input_I1*, *Input_I2*, and *Input_I3*. Each key press (single click) generates an event on the associated logiBUS_IE, which is forwarded via the event output **IND** to the **CLK** input of the corresponding ILOCK_T_FF.
 
-2. **Interlock**:
+1. **Interlock**:
 
 The three ILOCK_T_FFs are connected via their adapter interfaces:
 
@@ -56,14 +59,14 @@ The three ILOCK_T_FFs are connected via their adapter interfaces:
 
 This chain ensures that only one of the three flip-flops can set its output **Q** to TRUE. As soon as another flip-flop changes its state, the previously active one is reset.
 
-3. **Output Signals**:
+1. **Output Signals**:
 
 The outputs **Q** of the flip-flops are connected to the data inputs **OUT** of the digital output modules. The **EO** event of each ILOCK_T_FF (triggered upon a state change) triggers the **REQ** input of the associated logiBUS_QX, thus updating the output.
 
 **Connections at a Glance (Events & Data):**
 
 | Source | Destination | Type |
-|--------|------|------|
+| -------- | ------ | ------ |
 | DigitalInput_CLK_I1.IND | ILOCK_T_FF_1.CLK | Event |
 | DigitalInput_CLK_I2.IND | ILOCK_T_FF_2.CLK | Event |
 | DigitalInput_CLK_I3.IND | ILOCK_T_FF_3.CLK | Event |
@@ -77,7 +80,7 @@ The outputs **Q** of the flip-flops are connected to the data inputs **OUT** of 
 **Adapter Connections (Bidirectional):**
 
 | Source | Destination |
-|--------|------|
+| -------- | ------ |
 | ILOCK_T_FF_1.ILOCK_OUT | ILOCK_T_FF_2.ILOCK_IN |
 | ILOCK_T_FF_2.ILOCK_OUT | ILOCK_T_FF_3.ILOCK_IN |
 

@@ -3,6 +3,7 @@
 ![Uebung_001d_network](./Uebung_001d_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die grundlegende Verknüpfung eines digitalen Eingangs (Input_I1) mit einem digitalen Ausgang (Output_Q1) unter Verwendung einer logischen UND-Verknüpfung. Ziel ist es, das Signal des Eingangs direkt auf den Ausgang zu schalten – hierbei wird das UND-Gatter genutzt, um die Funktionsweise von Ereignis- und Datenflüssen innerhalb der 4diac-IDE kennenzulernen.

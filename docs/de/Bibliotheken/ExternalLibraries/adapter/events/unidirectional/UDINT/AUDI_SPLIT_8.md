@@ -3,6 +3,7 @@
 ![AUDI_SPLIT_8](./AUDI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_SPLIT_8** dient dazu, ein eingehendes unidirektionales **AUDI**-Adapter-Signal auf acht parallele Ausgänge zu verteilen.

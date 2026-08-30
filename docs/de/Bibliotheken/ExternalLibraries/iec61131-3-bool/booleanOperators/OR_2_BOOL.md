@@ -3,6 +3,7 @@
 <img width="1568" height="281" alt="image" src="https://github.com/user-attachments/assets/8ebdc4b4-c155-45d6-81bb-875ba03dc816" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_2_BOOL` führt eine logische ODER-Verknüpfung (Disjunktion) auf zwei boolesche Eingangswerte aus. Es handelt sich um einen generischen Baustein, der gemäß der IEC 61131-3 Norm für Standard-Boolesche Funktionen klassifiziert ist. Der Block wartet auf eine Ausführungsanforderung, berechnet das Ergebnis und signalisiert dessen Verfügbarkeit.

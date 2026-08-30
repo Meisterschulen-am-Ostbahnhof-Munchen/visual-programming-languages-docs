@@ -16,7 +16,7 @@ Dies entspricht einer klassischen Wechselschaltung oder Stromstoßschaltung in d
 
 In dieser SubApp werden verschiedene Funktionsbausteine verschaltet, um die gewünschte Logik zu realisieren.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 

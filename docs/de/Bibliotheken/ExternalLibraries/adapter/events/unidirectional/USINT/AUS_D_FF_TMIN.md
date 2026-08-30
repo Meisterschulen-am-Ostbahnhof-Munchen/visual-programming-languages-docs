@@ -3,6 +3,7 @@
 ![AUS_D_FF_TMIN](./AUS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_D_FF_TMIN** realisiert ein taktgesteuertes D‑Latch (Data Flip‑Flop) mit einer minimalen Wartezeit zwischen zwei aufeinanderfolgenden Ausgabe‑Ereignissen (Minimum inter‑disposal Time between EO). Er eignet sich besonders für Anwendungen, bei denen ein eingehender Wert (über einen Adapter‑Socket) übernommen und erst nach Ablauf einer einstellbaren Mindestzeit wieder ausgegeben werden darf. Die Initialisierung erfolgt über den Standard‑Ereigniseingang **INIT**.
@@ -67,7 +68,7 @@ Der interne FB **E_D_FF_ANY_TMIN** besitzt einen Speicher für den zuletzt über
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | **E_D_FF** (einfaches D‑Flip‑Flop) | Übernimmt Wert sofort bei jedem Takt, keine Zeitsteuerung. |
 | **AUS_D_FF_TMIN** | Wie **E_D_FF**, aber mit zusätzlicher Mindestzeit zwischen den Ausgabeereignissen. |
 | **R_TRIG / F_TRIG** | Erkennen Flanken, speichern aber keinen Datenwert. |

@@ -3,6 +3,7 @@
 <img width="1186" height="283" alt="image" src="https://github.com/user-attachments/assets/0d8ae9ee-ae15-400f-8e0f-459aa54db0db" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_5_BOOL` ist ein Standardbaustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für fünf boolesche Eingangswerte. Er folgt dem IEC 61131-3 Standard und ist als generischer Baustein implementiert. Die Operation wird bei jedem eingehenden Ausführungsereignis durchgeführt und das Ergebnis über ein Bestätigungsereignis ausgegeben.

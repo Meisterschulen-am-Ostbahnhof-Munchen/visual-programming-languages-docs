@@ -3,6 +3,7 @@
 ![Q_NumericValueAux_AUDI](./Q_NumericValueAux_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock realisiert das Kommando **Change Numeric Value** gemäß ISO 11783‑6 (Part 6, F.22). Er dient dazu, den numerischen Wert eines Objekts zu ändern und eignet sich nur für Objekte, die ein numerisches Wertattribut besitzen.

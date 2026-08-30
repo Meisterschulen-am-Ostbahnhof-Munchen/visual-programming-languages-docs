@@ -3,6 +3,7 @@
 ![AW_TO_ALI](./AW_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_TO_ALI** ist ein zusammengesetzter (Composite) Baustein, der einen unidirektionalen Adapter vom Typ **AW** (WORD) in einen Adapter vom Typ **ALI** (LINT) umwandelt. Er wird eingesetzt, um Daten zwischen verschiedenen Adapterschnittstellen zu konvertieren, ohne dass der Anwender die eigentliche Konvertierungslogik implementieren muss. Der Baustein nutzt intern den IEC 61131‑Funktionsbaustein `F_WORD_TO_LINT` und stellt die typische Ereignis‑/Datensteuerung über die mitgelieferten Adapter‑Schnittstellen bereit.
@@ -71,7 +72,7 @@ Da es sich um einen zusammengesetzten Baustein ohne eigenen Zustandsautomaten (E
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingang(sadapter) | Ausgang(sadapter) | Konvertierung | Besonderheiten |
-|----------|-------------------|-------------------|---------------|----------------|
+| ---------- | ------------------- | ------------------- | --------------- | ---------------- |
 | **AW_TO_ALI** | AW (WORD) | ALI (LINT) | WORD → LINT | Unidirektional, Composite |
 | `F_WORD_TO_LINT` (IEC 61131) | Einzelner REQ‑Eingang, IN (WORD) | Einzelner CNF‑Ausgang, OUT (LINT) | WORD → LINT | Standard‑FB, kein Adapter |
 | `ALI_TO_AW` (hypothetisch) | ALI (LINT) | AW (WORD) | LINT → WORD | Umgekehrte Richtung |

@@ -3,9 +3,11 @@
 ![Q_ObjEnableDisable_AB](./Q_ObjEnableDisable_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `Q_ObjEnableDisable_AB` serves as a wrapper that enables the control of a binary object (switching on/off) via a unidirectional **AB adapter (BYTE)**. It encapsulates the logic of the block `isobus::UT::Q::Q_ObjEnableDisable` and provides its functionality via the standardized adapter interfaces `qAbility` (socket) and `qOldAbility` (plug). The function block is suitable for connecting to adapter-based systems, e.g., for the remote control of actuators.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No dedicated data outputs – output data is provided via the adapter plug.
 ### **Adapter**
 
 | Adapter Type | Direction | Description |
-|--------------------------------------|-------------|-------------|
+| -------------------------------------- | ------------- | ------------- |
 | **Socket** `qAbility` | Input | Unidirectional AB adapter: receives the command (BYTE). `0` = disable, `1` = enable, `0xFF` = undefined. |
 | **Plug** `qOldAbility` | Output | Unidirectional AB adapter: returns the previous state of the object (same encoding). |
 
@@ -54,13 +56,13 @@ The FB acts as a bridge between an AB adapter (BYTE) and the internal function b
 
 An INIT event with a valid object ID (`u16ObjId`) is forwarded to the internal FB. The internal FB is initialized and reports this via `INITO`.
 
-2. **Control**
+1. **Control**
 
 A BYTE value is received via socket `qAbility`. The event `qAbility.E1` triggers the internal FB (event `REQ`). The data value from `qAbility.D1` is passed to the internal function block (FB).
 
 The internal FB processes the command and sets the object's state accordingly. The previous state is passed via the internal connection to the plug `qOldAbility`. The event `CNF` of the internal FB is output as `qOldAbility.E1`.
 
-3. **Feedback**
+1. **Feedback**
 
 The plug `qOldAbility` provides the object's previous state (BYTE) and the associated event, allowing a downstream function block to react to state changes.
 
@@ -87,7 +89,7 @@ Control is exclusively via the events of the adapter socket. No state change occ
 The function block does not have its own explicit state machine – the state logic resides entirely within the internal function block `Q_ObjEnableDisable`. Nevertheless, the following operating states can be derived:
 
 | State | Description |
-|-----------------|-------------|
+| ----------------- | ------------- |
 | **Idle** | After successful initialization (INITO sent), the function block (FB) waits for an event at socket `qAbility`. |
 | **Processing** | An incoming event at `qAbility.E1` is processed; the internal FB executes the switchover. |
 | **Completed** | Processing complete – the new (or old) state is available at the plug, and event `qOldAbility.E1` is output. |
@@ -111,7 +113,7 @@ The FB serves as a converter between an AB adapter (e.g., from an HMI or remote 
 ## Comparison with Similar Blocks
 
 | Block | Difference |
-|----------|------------|
+| ---------- | ------------ |
 | `Q_ObjEnableDisable` (direct) | Requires native event and data interfaces without adapters. `Q_ObjEnableDisable_AB` adds adapter compatibility. |
 | `Q_ObjEnableDisable_BB` (hypothetical) | Would use a bidirectional BB adapter. This FB uses the simpler unidirectional AB adapter. |
 | Generic "CommandOnOff" | Is typically not targeted to a specific object (ID) and does not provide status feedback via adapters. |

@@ -3,6 +3,7 @@
 ![AX_NOOP](./AX_NOOP.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AX_NOOP** (No Operation) dient als reine Durchleitungsfunktion. Er verbindet einen eingehenden Adapter (`IN`) direkt mit einem ausgehenden Adapter (`OUT`), ohne Daten zu verändern oder Ereignisse zu verarbeiten. Der FB ist als Basisbaustein für Test-, Debugging- und Platzhalterzwecke konzipiert.
@@ -66,7 +67,7 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Sein Verhalten ist statisch 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung | Unterschied |
-|----------|--------------|-------------|
+| ---------- | -------------- | ------------- |
 | `E_NOP` | Ereignis-NOP mit direkten Ereignis-/Daten-Ein-/Ausgängen | Verwendet Standard-I/O statt Adapter |
 | `MUX` | Auswahl zwischen mehreren Datenquellen | Bietet Auswahl, kein reiner Durchgriff |
 | `BYE` | Explizite End-of-Service-Markierung | Besitzt spezielle Semantik, kein Durchgriff |

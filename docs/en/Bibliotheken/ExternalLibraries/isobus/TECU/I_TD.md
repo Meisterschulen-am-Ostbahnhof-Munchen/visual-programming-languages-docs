@@ -3,9 +3,11 @@
 ![I_TD](./I_TD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_TD** (Time/Date) function block is a special component for ISOBUS that enables the processing of time and date information according to the ISO 11783-7 standard (PGN 65254). It receives and processes the current time and date transmitted over the ISOBUS network. The output data corresponds to the defined SPNs (Suspect Parameter Numbers) of the protocol and is provided including the associated scaling and offsets.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The **I_TD** (Time/Date) function block is a special component for ISOBUS that e
 ### **Event Outputs**
 
 | Event | With variables | Description |
-|------------|---------------|--------------|
+| ------------ | --------------- | -------------- |
 | `INITO` | `QO`, `STATUS` | Confirmation of successful initialization. |
 | `IND` | `QO`, `timestamp_data`, `STATUS`, `Q_timeout`, `SECONDS`, `MINUTES`, `HOURS`, `MONTH`, `DAY`, `YEAR`, `LOCAL_MINUTE_OFFSET`, `LOCAL_HOUR_OFFSET` | Display of a received time/date telegram. |
 | `TIMEOUT` | `timestamp_timeout`, `STATUS`, `Q_timeout` | Timeout event if no valid telegram arrives within an expected timeframe. |
@@ -31,7 +33,7 @@ The **I_TD** (Time/Date) function block is a special component for ISOBUS that e
 ### **Data Outputs**
 
 | Variable | Type | Description (with ISOBUS attributes) |
-|-----------------------|--------|--------------------------------------|
+| ----------------------- | -------- | -------------------------------------- |
 | `QO` | BOOL | Output qualifier (TRUE = Operational). |
 | `STATUS` | STRING | Status message (e.g., error or success). |
 | `Q_timeout` | BOOL | Indicates whether a timeout occurred. |

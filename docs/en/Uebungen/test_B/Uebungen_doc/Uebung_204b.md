@@ -3,6 +3,7 @@
 ![Uebung_204b_network](./Uebung_204b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **motor safety shutdown with reset**. It is based on the function block `ILOCK_CONFLICT_TRIP`, which implements an interlock for two opposing motor directions (clockwise and counterclockwise). If a conflict occurs (both directions active simultaneously), the motor is stopped and an alarm (trip) is triggered. A separate reset input allows the trip state to be reset.
@@ -63,7 +64,8 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DigitalInput_I1` provides the clockwise rotation request (BOOL) and an event `IND`.
 - `DigitalInput_I2` provides the counterclockwise rotation request and an event `IND`.
 - `DigitalInput_Reset` provides the reset signal and an event `IND`.
-2. **Processing in the ILOCK block**:
+1. **Processing in the ILOCK block**:
+
 - The block `ILOCK` receives the events from the following inputs:
 - `EI_UP` is triggered by `DigitalInput_I1.IND`.
 - `EI_DOWN` is triggered by `DigitalInput_I2.IND`.
@@ -72,7 +74,8 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DI_UP` from `DigitalInput_I1.IN`
 - `DI_DOWN` from `DigitalInput_I2.IN`
 - The function block decides, based on its internal state logic, whether the request is valid, a conflict exists, or a reset is performed.
-3. **Output of Motor Directions**:
+1. **Output of Motor Directions**:
+
 - If a clockwise rotation request is valid, `ILOCK` generates an event `EO_UP` and sets the data output `DO_UP` to TRUE.
 - If a reverse scrolling request is valid, `ILOCK` generates an event `EO_DOWN` and sets `DO_DOWN` to TRUE.
 - In case of an error (conflict), `ILOCK` generates an event `EO_TRIP` and sets `DO_TRIP` to TRUE.
@@ -84,7 +87,8 @@ The three digital inputs (I1, I2, I3) are read via the corresponding `logiBUS_IX
 - `DO_UP` → `Rechtslauf.OUT`
 - `DO_DOWN` → `Linkslauf.OUT`
 - `DO_TRIP` → `Trip_Anzeige.OUT`
-4. **Low-Side Driver**:
+1. **Low-Side Driver**:
+
 - The low-side driver (output Q56) is activated as soon as either clockwise or counterclockwise rotation is active.
 - For this purpose, the events `EO_UP` and `EO_DOWN` (both) are routed to the function block `OR_2_BOOL.REQ`.
 - The data values `DO_UP` and `DO_DOWN` are routed to the inputs `IN1` and `IN2`, respectively, of the OR gate.
@@ -111,6 +115,7 @@ Advanced – Basic knowledge of the 4diac IDE and working with function blocks i
 
 
 ...``
+
 ### Prerequisites
 
 - Fundamentals of IEC 61499

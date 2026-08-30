@@ -3,6 +3,7 @@
 ![Uebung_224_AULI_network](./Uebung_224_AULI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Vorwärts-/Rückwärtszähler gemäß IEC 61131-3 (Typ CTUD) im Adapter-Format. Der Zähler verwendet den Datentyp ULINT (Unsigned Long Integer) und gibt den aktuellen Zählerstand sowie die Überlauf-/Unterlauf-Signale an physische Ausgänge aus. Zusätzlich wird der Zählerstand über ein Terminal (isobus) ausgegeben. Der Preset-Wert (PV) wird initial auf 5 gesetzt.

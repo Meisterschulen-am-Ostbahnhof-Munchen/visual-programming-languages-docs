@@ -3,6 +3,7 @@
 ![AR_SPLIT_6](./AR_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_SPLIT_6** dient dazu, einen einzelnen AR-Adapter-Eingang auf sechs separate AR-Adapter-Ausgänge zu verteilen. Er ist als generischer Baustein (Generic FB) ausgelegt und ermöglicht eine einfache Vervielfachung einer AR-Schnittstelle ohne Datenverlust oder protokollspezifische Umwandlung.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|-------------|
+| ----- | ------ | ---------- | ------------- |
 | `adapter::types::unidirectional::AR` | **IN** | Socket (Eingang) | Ein eingehender AR-Adapter, der auf alle Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AR` | **OUT1** | Plug (Ausgang) | Erster ausgehender AR-Adapter (identisch mit IN). |
 | `adapter::types::unidirectional::AR` | **OUT2** | Plug (Ausgang) | Zweiter ausgehender AR-Adapter (identisch mit IN). |

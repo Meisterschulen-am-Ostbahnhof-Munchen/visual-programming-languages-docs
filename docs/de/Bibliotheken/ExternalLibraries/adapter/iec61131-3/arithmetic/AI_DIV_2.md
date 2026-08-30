@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_DIV_2` ist ein generischer Arithmetik-Baustein für die 4diac-Plattform. Er dient zur Durchführung einer mathematischen Division (DIV) von zwei analogen Werten. Im Gegensatz zu klassischen Arithmetikbausteinen nutzt dieser Baustein standardisierte, unidirektionale Adapter vom Typ `AI` (Analog Input) für die Ein- und Ausgänge. Dies ermöglicht eine strukturierte, modulare und übersichtliche Signalverdrahtung innerhalb von IEC 61499 Anwendungen.

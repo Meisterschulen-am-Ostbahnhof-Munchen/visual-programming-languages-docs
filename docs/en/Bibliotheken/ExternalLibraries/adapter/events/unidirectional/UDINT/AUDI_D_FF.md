@@ -3,9 +3,11 @@
 ![AUDI_D_FF](./AUDI_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_D_FF** implements a clock-controlled D flip-flop (data latch) based on IEC 61499 adapters. Upon an event at the input adapter, it receives the incoming data value, stores it, and outputs it via the output adapter. The block encapsulates all control logic in a compact, adapter-based interface, thus allowing for a clean separation of event and data communication.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None – data output is exclusively via the plug adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------------|-----|----------|--------------|
+| ------------ | ----- | ---------- | -------------- |
 | **I** | `adapter::types::unidirectional::AUDI` | Socket (Input) | Provides the clock event (E1) and the data value to be received (D1). |
 | **Q** | `adapter::types::unidirectional::AUDI` | Plug (Output) | Outputs the output event (E1) and the stored data value (D1). |
 
@@ -73,6 +75,7 @@ A graphical representation as a state machine is not required, as the logic is d
 - **AUDI Adapter-Based Function Blocks (e.g., `AUDI_D_FF_2`)**: Other implementations might include additional logic such as asynchronous reset. This function block implements the minimal D flip-flop without additional control functions.
 
 **SR Flip-Flop (Set-Reset)**
+
 ## Conclusion
 
 The **AUDI_D_FF** represents a cleanly encapsulated, adapter-based implementation of a D flip-flop. By using the unidirectional `AUDI` adapter type, the interface is reduced to the essentials – one event and one data value per side. The internal use of the proven `E_D_FF_ANY` function block ensures robust, standards-compliant functionality. The function block is particularly suitable for modular architectures that rely on adapter connectivity and facilitates reuse in various control projects.

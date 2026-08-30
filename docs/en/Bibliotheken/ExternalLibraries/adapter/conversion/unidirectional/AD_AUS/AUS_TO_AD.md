@@ -3,6 +3,7 @@
 ![AUS_TO_AD](./AUS_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUS_TO_AD** is a composite block that performs a simple conversion from a USINT adapter (type AUS) to a DWORD adapter (type AD).
@@ -37,7 +38,7 @@ It encapsulates the conversion of an unsigned 8-bit value (USINT) to a 32-bit DW
 ### **Adapter**
 
 | Role | Name | Type | Direction | Description |
-|-------|------|-----|----------|--------------|
+| ------- | ------ | ----- | ---------- | -------------- |
 | Socket | `AUS_IN` | `adapter::types::unidirectional::AUS` | Input | Receives the USINT value and the associated event. |
 | Plug | `AD_OUT` | `adapter::types::unidirectional::AD` | Output | Provides the DWORD value and the acknowledgment event. |
 

@@ -31,7 +31,7 @@ Keine.
 Der Baustein kommuniziert ausschließlich über Adapter vom Typ `adapter::types::unidirectional::AUS`. Es handelt sich um einen unidirektionalen Adapter, der ein boolesches Signal (AUS-Kommando) überträgt.
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket (Eingang)** | `IN` | `adapter::types::unidirectional::AUS` | Empfängt das ursprüngliche AUS-Signal. |
 | **Plug (Ausgang)** | `OUT1` | `adapter::types::unidirectional::AUS` | Erster ausgehender AUS-Pfad. |
 | **Plug (Ausgang)** | `OUT2` | `adapter::types::unidirectional::AUS` | Zweiter ausgehender AUS-Pfad. |
@@ -66,7 +66,7 @@ Der Baustein besitzt keine Zustandsmaschine. Die Ausgangssignale folgen direkt d
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Besonderheit |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `AUS_SPLIT_2` | Verteilt ein AUS-Signal auf zwei Ausgänge | Weniger Ports, kompakter. |
 | `AUS_SPLIT_4` | Verteilt auf vier Ausgänge | Dieses FB. |
 | `AUS_SPLIT_N` | Parametrierbarer Splitter (z. B. durch generische Adapterlisten) | Flexiblere Anzahl, aber aufwändiger in der Konfiguration. |

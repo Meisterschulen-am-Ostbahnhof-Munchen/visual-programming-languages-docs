@@ -5,6 +5,7 @@
 ## Introduction
 
 The "GreenWhiteBackground" exercise demonstrates the use of background colors in an ISOBUS-compliant system. The sub-application allows switching between a green and white background color for a specific object based on a selector signal.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: GreenWhiteBackground

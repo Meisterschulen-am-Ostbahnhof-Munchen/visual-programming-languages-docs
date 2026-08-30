@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) `AS_DIV_2` ist ein generischer Baustein zur Durchführung einer arithmetischen Division im Kontext der IEC 61499-Architektur. Er nutzt ein adapterbasiertes Konzept zur Datenübertragung und ermöglicht eine saubere und strukturierte Signalverarbeitung, indem er Eingangsdaten über standardisierte Adapter entgegennimmt, die Division berechnet und das Ergebnis an einen Ausgangsadapter übergibt.

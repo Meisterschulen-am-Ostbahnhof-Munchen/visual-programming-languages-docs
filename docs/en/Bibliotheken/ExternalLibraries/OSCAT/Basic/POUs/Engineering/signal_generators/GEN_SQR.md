@@ -1,4 +1,5 @@
 ![GEN_SQR](GEN_SQR.svg)
+
 # GEN_SQR
 
 this signal generator generates a square wave output

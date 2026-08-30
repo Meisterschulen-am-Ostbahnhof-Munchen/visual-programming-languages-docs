@@ -37,6 +37,7 @@ The function block `F_MID` extracts a substring from the input string `IN`. The 
 1. **Initialization**: The function block waits for a request via `REQ`.
 2. **Processing**: Upon receiving `REQ`, the input data is processed and the substring is extracted.
 3. **Output**: The extracted substring is output via `OUT`, and `CNF` is triggered.
+
 - Extraction of substrings from longer texts or data strings.
 - Use in string processing routines, e.g., for parsing data formats.
 - Similar function blocks like `F_LEFT` or `F_RIGHT` extract substrings from the beginning or end of a string, while `F_MID` allows for flexible extraction from any position.

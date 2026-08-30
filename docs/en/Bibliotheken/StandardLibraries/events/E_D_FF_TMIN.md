@@ -1,6 +1,7 @@
 # E_D_FF_TMIN
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_D_FF_TMIN` combines `E_D_FF` (clocked `BOOL` latch with change detection) with [E_TMIN](E_TMIN.md) (minimum spacing time): changes to `Q` are still latched immediately, but the change event `EO` is additionally limited to at most one trigger per `Tmin` interval.

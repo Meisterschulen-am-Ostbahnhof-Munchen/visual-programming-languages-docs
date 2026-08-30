@@ -3,15 +3,17 @@
 ![DataPanel_MI_IW_0_5V](./DataPanel_MI_IW_0_5V.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **DataPanel_MI_IW_0_5V** is a service interface function block (SIFB) for acquiring analog input signals in the voltage range **0 ... 5 V**. It provides the interface to an analog input channel of the DataPanel-MI-IW series and enables initialization, cyclic querying, and asynchronous reception of measured values via a bus system. The block is implemented as an IEC 61499-compliant FB and uses system-specific data types from the package `DataPanel::io::MI::AI`.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | With Variables |
-|----------|-----|--------------|---------------|
+| ---------- | ----- | -------------- | --------------- |
 | `INIT` | EInit | Initializes the service connection | `QI`, `PARAMS`, `u8SAMember`, `Input`, `AnalogInput_hysteresis` |
 | `REQ` | Event | Requests a current measurement value | `QI` |
 
@@ -25,7 +27,7 @@ The function block **DataPanel_MI_IW_0_5V** is a service interface function bloc
 ### **Data Inputs**
 
 | Variable | Type | Description | Initial Value |
-|----------|-----|--------------|-------------|
+| ---------- | ----- | -------------- | ------------- |
 | `QI` | BOOL | Qualifier for Event Inputs | – |
 | `PARAMS` | STRING | Service Parameter (e.g., Communication Address) | – |
 | `u8SAMember` | USINT | Node SA Address (224 … 239) | `MI::MI_00` |
@@ -35,7 +37,7 @@ The function block **DataPanel_MI_IW_0_5V** is a service interface function bloc
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | `QO` | BOOL | Output qualifier (indicates valid status) |
 | `STATUS` | STRING | Service status message (e.g., error text) |
 | `IN` | WORD | Measured analog value (raw value) from the resource |
@@ -52,11 +54,11 @@ The function block operates according to the **service interface principle**: It
 
 A `INIT` event (with `QI` set) initiates the connection. The parameters `PARAMS`, `u8SAMember`, `Input`, and `AnalogInput_hysteresis` define the target address and channel configuration. After successful initialization, `INITO` is triggered, and `QO` is set to `TRUE` and `STATUS` to the corresponding text.
 
-2. **Measurement Request (`REQ`)**
+1. **Measurement Request (`REQ`)**
 
 Once the function block (FB) is initialized, a current measurement value can be requested via `REQ`. The function block (FB) sends the request to the resource and signals upon receiving the result with ``CNF``. The raw value is provided in the output variable ``IN`` (type ``WORD``).
 
-3. **Asynchronous Indication (`IND`)**
+1. **Asynchronous Indication (`IND`)**
 
 The resource can independently report changes in measured values or alarms. These are reported via the ``IND`` event with the corresponding value in ``IN``.
 
@@ -81,7 +83,7 @@ The analog input channel is selected via the ``Input`` parameter. Valid values a
 Since the XML definition does not contain an ECC (Execution Control Chart), the state logic is derived from the typical behavior of a SIFB (Single-Integrated Function Block). An abstract state machine can be described as follows:
 
 | State | Description | Event | Action |
-|---------|---------------|----------|---------|
+| --------- | --------------- | ---------- | --------- |
 | **IDLE** | Waiting for Initialization | `INIT` (QI=TRUE) | Starting connection |
 | **INIT** | Initialization in progress | – | Waiting for resource confirmation |
 | **READY** | Ready for requests | `INITO` | Set QO=TRUE |
@@ -100,7 +102,7 @@ Asynchronous `IND` events can occur in the **READY** or **BUSY** states and resu
 ## Comparison with Similar Function Blocks
 
 | Feature | DataPanel_MI_IW_0_5V | Generic Analog Input (e.g., IEC 61499 standard) |
-|---------|----------------------|------------------------------------------------------|
+| --------- | ---------------------- | ------------------------------------------------------ |
 | Voltage Range | 0 – 5V | Usually configurable (0-10V, 4-20mA, etc.) |
 | Channel Selection | Specific type `DataPanel_MI_AI_S` | Usually `INT` or `STRING` parameter |
 | Hysteresis | Separate Variable (`WORD`) | Often not included |

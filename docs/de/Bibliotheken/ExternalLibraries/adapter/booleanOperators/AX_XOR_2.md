@@ -3,6 +3,7 @@
 <img width="1009" height="261" alt="image" src="https://github.com/user-attachments/assets/8e5ec6ce-d2bb-4517-ac38-d14a7e43976b" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_XOR_2 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Operation (exklusives ODER). Er verarbeitet zwei Eingangssignale und gibt das logische XOR-Ergebnis aus.

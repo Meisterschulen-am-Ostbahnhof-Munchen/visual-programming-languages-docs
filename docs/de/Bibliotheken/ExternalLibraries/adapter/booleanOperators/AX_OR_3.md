@@ -3,6 +3,7 @@
 <img width="963" height="297" alt="image" src="https://github.com/user-attachments/assets/3f0679d7-bd35-40d5-92eb-f7f1122507de" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_OR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der logischen ODER-Verknüpfung mit drei Eingängen. Er dient zur Verarbeitung von booleschen Signalen in Steuerungsanwendungen und ermöglicht die flexible Kombination mehrerer Eingangssignale zu einem Ausgangssignal.

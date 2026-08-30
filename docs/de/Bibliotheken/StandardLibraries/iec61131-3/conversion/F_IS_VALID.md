@@ -3,6 +3,7 @@
 ![F_IS_VALID](F_IS_VALID.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_IS_VALID` prüft, ob ein Gleitkommawert (`REAL`/`LREAL`) ein gültiger, endlicher Wert ist — also weder `NaN` (Not a Number) noch `+/-Infinity`. Er dient der Absicherung numerischer Berechnungen gegen ungültige Zwischenergebnisse.

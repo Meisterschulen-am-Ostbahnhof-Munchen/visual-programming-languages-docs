@@ -14,6 +14,7 @@
 ![AULI_ADD_2](./AULI_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_ADD_2` ist ein generischer Arithmetikbaustein für die IEC 61499-Umgebung (4diac-ide). Er dient zur Durchführung einer mathematischen Addition zweier Eingangswerte, die über standardisierte, unidirektionale Adapter übertragen werden. Das berechnete Ergebnis wird an einen entsprechenden Ausgangs-Adapter übergeben.

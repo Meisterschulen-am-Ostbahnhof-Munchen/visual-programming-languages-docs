@@ -3,6 +3,7 @@
 ![Q_ObjHideShow](https://user-images.githubusercontent.com/116869307/214148121-b8115f93-fc92-499d-ae8f-b207656d64c0.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ObjHideShow** is a standards-compliant function block for controlling the visibility of container objects in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.2) specification for VT containers.
@@ -41,13 +42,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with container object ID
 - `INITO` confirms operational readiness
-2. **Visibility Change**:
+1. **Visibility Change**:
+
 - `REQ` with desired visibility status
 - Changes the display of the container and all contained objects
 - `CNF` returns operational status and previous state
-3. **Special Cases**:
+1. **Special Cases**:
+
 - VT_E_HANDLE_INVALID is returned for invalid object IDs
 
 ## Technical Features
@@ -67,7 +71,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful execution |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready | | -21 | VT_E_NO_INSTANCE | No VT client available |
@@ -85,7 +89,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with similar components
 
 | Feature | Q_ObjHideShow | VtContainerControl | VtVisibilityManager |
-|---------------|---------------|--------------------|---------------------|
+| --------------- | --------------- | -------------------- | --------------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Container Focus | ✔ | ✔ | ✖ |
 | Cascading | ✔ | ✖ | ✔ |

@@ -3,9 +3,11 @@
 ![LED_COLOURS](./LED_COLOURS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 LED_COLOURS is a global constant definition that provides standardized color values for LED displays. These constants are used in logiBUS systems for the uniform control of colored LED outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**

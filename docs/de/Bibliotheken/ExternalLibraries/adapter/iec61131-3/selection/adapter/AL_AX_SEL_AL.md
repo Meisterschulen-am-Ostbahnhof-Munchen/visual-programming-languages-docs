@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AL_AX_SEL_AL` ist ein ereignisgesteuerter Selektor (Binäre Auswahl) für IEC 61499-Systeme in der 4diac-IDE. Er dient als Multiplexer, der basierend auf dem Zustand eines Auswahlsignals (Selector) Daten von einem von zwei Eingangs-Adaptern an einen Ausgangs-Adapter weiterleitet. Der Baustein nutzt konsequent die Vorteile von Adaptern, um Daten- und Ereignisströme sauber zu kapseln und die Komplexität der Verkabelung im Anwendungsdiagramm zu minimieren.
@@ -92,6 +93,7 @@ Der Baustein realisiert eine klassische Multiplexer-Logik (Äquivalent zu `SEL` 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-`SEL`-Funktionsbaustein aus der IEC 61131-3 Bibliothek bietet `AL_AX_SEL_AL` folgende Vorteile:
+
 - **Weniger Verdrahtungsaufwand:** Durch die Kapselung in Adaptern müssen Ereignis- und Datenleitungen nicht einzeln gezogen werden. Ein einziger Verbindungspfad pro Kanal genügt.
 - **Ereignis-Kopplung:** Der Baustein reagiert inhärent auf die in den Adaptern integrierten Event-Trigger, was eine manuelle ereignisseitige Verknüpfung im FBD (Function Block Diagram) überflüssig macht.
 

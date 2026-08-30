@@ -3,9 +3,11 @@
 ## Description
 
 The **STRING** data type represents a string consisting of 8-bit characters (usually ISO/IEC 10646-1 or ASCII).
+
 ## Normative Definition
 
 According to **DIN EN 61131-3** (Table 10, No. 16a):
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | 8 bits per character |

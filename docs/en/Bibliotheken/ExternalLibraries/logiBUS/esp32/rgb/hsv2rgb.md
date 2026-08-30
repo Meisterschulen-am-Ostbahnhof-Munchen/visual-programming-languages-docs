@@ -40,10 +40,11 @@ The function block has a simple, stateless sequence:
 1. **Wait State:** The block waits for the `REQ` event.
 2. **Calculation State:** At `REQ`, the input data is read and the conversion is performed. This state is transient.
 3. **Output State:** The results are written to the outputs and the `CNF` event is generated. The module immediately returns to standby mode.
+
 - **Color Control of RGB LEDs:** User-friendly color selection via HSV parameters (e.g., rotary encoder or touch interface) with subsequent conversion for LED control.
 - **Visualization Systems:** Conversion of alarm or status colors defined in HSV for display on RGB monitors or panels.
 - **Industrial Lighting:** Dynamic lighting control in production or logistics environments, where color transitions are intuitively defined via brightness and saturation.
-*
+-
 
 Unlike general-purpose computing blocks (such as `MUL`, `ADD`) or scalers, `hsv2rgb` is an application-specific block that encapsulates a complex, non-linear algorithm. It saves the user the time-consuming and error-prone implementation of the conversion to Structured Text or other languages. A direct counterpart, `rgb2hsv`, for the reverse conversion would be a similarly specialized block.
 

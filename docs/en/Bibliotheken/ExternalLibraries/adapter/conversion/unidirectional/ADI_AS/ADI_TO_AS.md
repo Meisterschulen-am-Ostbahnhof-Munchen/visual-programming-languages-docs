@@ -3,9 +3,11 @@
 ![ADI_TO_AS](./ADI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block **ADI_TO_AS** is used to convert a **DINT adapter signal** (type `ADI`) into a **SINT adapter signal** (type `AS`). It is used when data and event exchange is required via unidirectional adapters and a data type conversion from DINT (32-bit signed integer) to SINT (8-bit signed integer) is necessary.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No separate data outputs – the converted value is output via the **AS-OUT adap
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-|---------|----------|-----|-----------|
+| --------- | ---------- | ----- | ----------- |
 | **ADI_IN** | Socket (Input) | `adapter::types::unidirectional::ADI` | DINT Adapter Input |
 | **AS_OUT** | Plug (Output) | `adapter::types::unidirectional::AS` | SINT Adapter Output |
 

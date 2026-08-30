@@ -5,6 +5,7 @@
 ![ARR08B_TO_BYTES](./ARR08B_TO_BYTES.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ARR08B_TO_BYTES` dient der Zerlegung eines 8-Elemente-Byte-Arrays (`ARR08B`) in acht einzelne Byte-Ausgänge. Er ist ein Hilfsbaustein für die Datenkonvertierung und -weiterleitung innerhalb von Steuerungsapplikationen, insbesondere wenn strukturierte Daten aus einem Array in diskrete Signale aufgeteilt werden müssen.
@@ -43,6 +44,7 @@ Dieser Funktionsblock verfügt über keine Adapter-Schnittstellen.
 Die Funktionsweise ist deterministisch und einfach: Bei jedem Eintreffen des `REQ`-Ereignisses liest der Baustein das komplette Eingangsarray `IN`. Anschließend wird jedes Element des Arrays einem spezifischen Byte-Ausgang zugewiesen. Die Zuordnung erfolgt direkt entsprechend dem Array-Index. Nachdem alle Zuweisungen durchgeführt wurden, wird das `CNF`-Ereignis ausgelöst, um den erfolgreichen Abschluss der Operation an nachfolgende Blöcke zu melden.
 
 Der enthaltene ST-Code (Structured Text) zeigt die direkte Implementierung:
+
 ```iecst
 OUT_00 := IN[0];
 OUT_01 := IN[1];

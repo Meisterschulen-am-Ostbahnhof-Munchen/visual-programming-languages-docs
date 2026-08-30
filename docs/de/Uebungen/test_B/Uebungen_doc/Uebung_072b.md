@@ -1,4 +1,4 @@
-# Uebung_072b: GBSD auf UT ausgeben, mit Impulsen.
+# Uebung_072b: GBSD auf UT ausgeben, mit Impulsen
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 

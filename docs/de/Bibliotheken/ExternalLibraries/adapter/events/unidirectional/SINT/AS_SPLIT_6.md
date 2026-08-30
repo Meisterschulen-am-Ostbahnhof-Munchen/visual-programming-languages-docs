@@ -3,6 +3,7 @@
 ![AS_SPLIT_6](./AS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AS_SPLIT_6** dient der Aufteilung eines einzelnen eingehenden AS-Adapter-Signals auf sechs separate AS-Adapter-Ausgänge. Er ist als generischer Baustein realisiert und kann mit unterschiedlichen unidirektionalen AS-Adapter-Typen (z. B. Sensor- oder Aktor-Adaptern) verwendet werden.

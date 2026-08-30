@@ -6,6 +6,7 @@
 *[Bild des Funktionsblocks]*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ALI_AX_SEL_ALI` ist ein binärer Auswahlbaustein (Selection Block), der für die Verwendung mit unidirektionalen Adaptern konzipiert ist. Er ermöglicht es, basierend auf einem Auswahlsignal (Selector), zwischen zwei Eingangssignalen zu wählen und das ausgewählte Signal an einen Ausgang weiterzuleiten. Dieser Baustein kapselt die Standard-Auswahllogik und passt sie an eine ereignisgesteuerte Adapter-Schnittstelle an.

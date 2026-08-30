@@ -35,6 +35,7 @@ Der **Q_SelectColourMap** ist ein standardkonformer Funktionsbaustein zur Verwal
 ## Gültige Objekt-IDs
 
 `u16ObjIdColourMap` adressiert (Bytes 2,3) laut Annex F.60:
+
 - **ColourMap**: 39000 – 39999 (VT ab Version 4)
 - **ColourPalette**: 45000 – 45999 (VT ab Version 6, Annex F.60)
 - **FFFF16**: stellt die Standard-Farbtabelle wieder her (A.3)

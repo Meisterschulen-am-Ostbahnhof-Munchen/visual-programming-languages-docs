@@ -1,8 +1,9 @@
 # Exercise_003c_AX: DigitalInput_I1-2-3-4 on AUX
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_003c_AX`. This exercise demonstrates connecting local digital inputs to the ISOBUS system as "Auxiliary Inputs." This enables the use of local switches to control ISOBUS devices.
+This article describes the logiBUS® exercise `Uebung_003c_AX`. This exercise demonstrates connecting local digital inputs to the ISOBUS system as "Auxiliary Inputs." This enables the use of local switches to control ISOBUS devices
 ----
+
 ## Objective of the Exercise
 
 The objective is to make local hardware inputs (`I1` to `I4`) available to the ISOBUS network. In the ISOBUS environment, input devices (joysticks, switch panels) can be defined as "Auxiliary Inputs," which can then be flexibly mapped to machine functions by the user.

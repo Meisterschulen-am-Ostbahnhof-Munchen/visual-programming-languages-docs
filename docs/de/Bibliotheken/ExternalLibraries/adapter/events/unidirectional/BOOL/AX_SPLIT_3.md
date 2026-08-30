@@ -3,6 +3,7 @@
 <img width="711" height="299" alt="image" src="https://github.com/user-attachments/assets/79f5b696-e66f-481a-8642-b19ac2f35cb4" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SPLIT_3 ist ein generischer Funktionsblock, der einen AX-Adapter-Eingang auf drei separate AX-Adapter-Ausgänge aufteilt. Der Baustein ermöglicht die Verteilung eines eingehenden AX-Signals an drei verschiedene Empfänger innerhalb eines 4diac-Systems.

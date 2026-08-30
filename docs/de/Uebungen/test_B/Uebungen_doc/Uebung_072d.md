@@ -3,6 +3,7 @@
 ![Uebung_072d_network](./Uebung_072d_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung zeigt, wie die arbeitsbreitenbezogene Maschinengeschwindigkeit (WBSD – Working Width Based Ground Speed) auf einem Universal Terminal (UT) ausgegeben werden kann. Die Ausgabe erfolgt gesteuert über einen Qualitätsindikator (QI), der über einen Taster ein- und ausgeschaltet wird. Der QI bestimmt, ob die aktuelle Geschwindigkeit an das UT gesendet wird oder nicht. Der Taster (Digital Input) steuert über einen T-Flipflop sowohl den QI als auch einen digitalen Ausgang (Q2) zur Statusanzeige.

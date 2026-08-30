@@ -1,10 +1,12 @@
 # RT_E_SWITCH
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_SWITCH block. Turns the event flow on or off.
 ![RT_E_SWITCH](RT_E_SWITCH.svg)
+
 ## Metadata
 
 | Attribute | Value |

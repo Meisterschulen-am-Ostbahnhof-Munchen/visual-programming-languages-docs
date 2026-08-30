@@ -81,7 +81,7 @@ stateDiagram-v2
 ## Beispielwerte
 
 | Operation | Ergebnis (TD) |
-|-----------|---------------|
+| ----------- | --------------- |
 | START -> STOP nach 1,5s | T#1s500ms |
 | START -> ET nach 750ms -> STOP nach 1,5s | T#750ms (ETO), T#1s500ms (EO) |
 | RESET während Messung | T#0s |
@@ -89,7 +89,7 @@ stateDiagram-v2
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature | E_STOPWATCH | Standard-Timer | High-Res-Timer |
-|---------|-------------|----------------|----------------|
+| --------- | ------------- | ---------------- | ---------------- |
 | Genauigkeit | 1ms | 10ms | 1μs |
 | Trigger während Lauf | Ja | Nein | Ja |
 | Monotone Zeit | Ja | Nein | Ja |

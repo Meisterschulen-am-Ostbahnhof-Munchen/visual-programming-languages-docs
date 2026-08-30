@@ -6,6 +6,7 @@
 *(Bild des Funktionsbausteins temporär nicht verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_ADD_3` ist ein generischer Arithmetik-Baustein für IEC 61499-Systeme, der speziell für die Addition von drei Eingangswerten entwickelt wurde. Im Gegensatz zu klassischen mathematischen Funktionsbausteinen nutzt dieser Baustein Adapterverbindungen des Typs `AULI` (unidirektional), um Daten und zugehörige Kontrollsignale gebündelt zu übertragen. Dies reduziert den Verdrahtungsaufwand innerhalb der Entwicklungsumgebung (4diac IDE) erheblich.
@@ -33,6 +34,7 @@ Der Funktionsbaustein `AULI_ADD_3` ist ein generischer Arithmetik-Baustein für 
 #### **Sockets (Eingangs-Adapter)**
 
 Die Sockets dienen als Empfänger für die zu addierenden Werte.
+
 -   **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Summand der arithmetischen Addition.
 -   **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Summand der arithmetischen Addition.
 -   **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Summand der arithmetischen Addition.
@@ -40,6 +42,7 @@ Die Sockets dienen als Empfänger für die zu addierenden Werte.
 #### **Plugs (Ausgangs-Adapter)**
 
 Der Plug dient als Sender für das berechnete Ergebnis.
+
 -   **OUT** (Typ: `adapter::types::unidirectional::AULI`): Ausgang für das Ergebnis der Addition ($IN1 + IN2 + IN3$).
 
 ---
@@ -66,6 +69,7 @@ Das berechnete Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergebe
 ## Zustandsübersicht
 
 Der Funktionsbaustein arbeitet als zustandsloser (bzw. rein ereignisgesteuerter) arithmetischer Baustein:
+
 1.  **Bereitschaft (Idle):** Baustein wartet auf Wertänderungen oder Trigger-Signale an den Eingangs-Adaptern `IN1`, `IN2` oder `IN3`.
 2.  **Berechnung (Evaluation):** Nach dem Eintreffen eines Signals werden die Werte ausgelesen und summiert.
 3.  **Aktualisierung (Output):** Die Summe wird an `OUT` übergeben und das zugehörige Event im Adapter getriggert. Der Baustein kehrt sofort in den Zustand *Bereitschaft* zurück.

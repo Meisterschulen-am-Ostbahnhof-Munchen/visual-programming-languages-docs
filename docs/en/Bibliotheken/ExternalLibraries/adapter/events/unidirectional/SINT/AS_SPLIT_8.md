@@ -3,9 +3,11 @@
 ![AS_SPLIT_8](./AS_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_SPLIT_8** is used to split an incoming *Application Specific* (AS) adapter data stream into eight identical outputs. It is provided as a generic function block (generic FB) and is specifically designed for distributing adapter data within an IEC 61499-based control application.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | adapter::types::unidirectional::AS` | IN | Socket (Input) | Receives the AS data stream to be distributed. |
 | adapter::types::unidirectional::AS` | OUT1 | Plug (Output) | First copy of the incoming AS data stream. |
 | adapter::types::unidirectional::AS` | OUT2 | Plug (Output) | Second copy of the incoming AS data stream. |

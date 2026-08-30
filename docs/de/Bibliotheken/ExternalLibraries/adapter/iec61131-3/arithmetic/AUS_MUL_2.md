@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUS_MUL_2` ist ein generischer Arithmetikbaustein für die 4diac-IDE, der zur Multiplikation zweier Werte dient. Im Gegensatz zu klassischen mathematischen Funktionsbausteinen nutzt dieser Baustein ein adapterbasiertes Konzept zur Datenübertragung. Dadurch wird eine strukturierte, modulare und übersichtliche Signalverdrahtung in komplexen IEC 61499 Anwendungen ermöglicht.

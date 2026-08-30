@@ -3,6 +3,7 @@
 ![initval_AULI](initval_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AULI` is the configurable initialization block for the [AULI](../AULI.md) adapter (data type `ULINT`, 64-bit unsigned integer): it accepts a start value as a data input at initialization time and writes it to a `AULI` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

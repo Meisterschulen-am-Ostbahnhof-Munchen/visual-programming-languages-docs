@@ -25,7 +25,7 @@ Der Funktionsblock **E_D_FF_ANY_HYS** realisiert ein Daten-Latch-Flipflop mit ei
 ### **Daten-Eingänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | `D` | ANY\_NUM | Der zu latchende Wert. |
 | `HYSTERESIS` | ANY\_NUM | Hysterese-Band; die minimale absolute Änderung zwischen `Q` und `D`, die eine Übernahme auslöst. |
 
@@ -85,7 +85,7 @@ Es gibt keinen Übergang zurück nach `START` – der Automat bleibt nach dem er
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | `E_D_FF` | Standard-D-Flipflop (nur boolesche Werte) | Übernimmt jeden Takt sofort, keine Hysterese, nur `BOOL`-Typ. |
 | `E_D_FF_ANY` | D-Flipflop für beliebige Datentypen (ohne Hysterese) | Gleiche Funktion wie `E_D_FF`, aber generisch. Übernimmt jeden Takt sofort. |
 | `E_D_FF_ANY_HYS` (dieser Baustein) | D-Flipflop mit Hysterese für beliebige numerische Typen | Übernimmt nur bei ausreichender Abweichung. |

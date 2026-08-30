@@ -3,9 +3,11 @@
 ![AIS_D_FF_TMIN](./AIS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_D_FF_TMIN** implements a data-dependent flip-flop (D flip-flop) with a minimum inter-disposal time (MIT) between two consecutive output events (EOs). It latches an incoming data value via an AIS adapter and outputs it only when the minimum time specified by the parameter `Tmin` has elapsed since the last EO. This suppresses excessively rapid signal changes and ensures a defined signal delay.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ The FB has no data outputs of its own. Output is exclusively via the adapter plu
 ### **Adapter**
 
 | Direction | Label | Adapter Type | Comment |
-|----------|-------------|------------|-----------|
+| ---------- | ------------- | ------------ | ----------- |
 | **Plug** (Output) | `Q` | `adapter::types::unidirectional::AIS` | Latched output value |
 | **Socket** (Input) | `I` | `adapter::types::unidirectional::AIS` | Input value to be latched |
 
@@ -48,6 +50,7 @@ Processing proceeds as follows:
 1. **Initialization**: Upon the event `INIT`, the parameter `Tmin` is forwarded to the internal function block, which is then initialized. Subsequently, `INITO` is triggered.
 2. **Latch Operation**: An event `E1` arriving at **socket `I`** (connected to the internal `CLK`) transfers the simultaneously received data value `D1` (connected to `D`) into the flip-flop.
 3. **Minimum Delay**: The internal function block checks whether at least the time `Tmin` has elapsed since the last output event (`EO`).
+
 - If the condition is met, the latched data is output via the **plug `Q`** (event `E1` and data value `D1`).
 - Otherwise, the value is held back until the required waiting time has elapsed.
 

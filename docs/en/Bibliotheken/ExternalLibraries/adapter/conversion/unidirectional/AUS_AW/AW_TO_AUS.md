@@ -3,9 +3,11 @@
 ![AW_TO_AUS](./AW_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AW_TO_AUS` converts a `WORD` adapter signal into a `USINT` adapter signal. It encapsulates the IEC 61131-3 standard function `F_WORD_TO_USINT` in an adapter-coupled environment, thus enabling seamless integration between different adapter types.
+
 ## Interface Structure
 
 The function block has no independent event or data ports at the function block interface level. All communication takes place exclusively via the two adapters.
@@ -29,7 +31,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | `AW_IN` | `adapter::types::unidirectional::AW` | Expects a `WORD` value via data port `D1` and an event via `E1`. |
 | Plug (Output) | `AUS_OUT` | `adapter::types::unidirectional::AUS` | Returns the converted `USINT` value via data port `D1` and an acknowledgment event via `E1`.
 

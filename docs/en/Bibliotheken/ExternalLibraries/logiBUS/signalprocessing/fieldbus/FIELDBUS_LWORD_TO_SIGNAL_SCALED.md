@@ -3,29 +3,31 @@
 ![FIELDBUS_LWORD_TO_SIGNAL_SCALED](./FIELDBUS_LWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_LWORD_TO_SIGNAL_SCALED** converts a raw fieldbus signal in **LWORD** format into a scaled **LREAL** output value. It mirrors the input signal to the output, provided the signal is valid, and applies linear scaling. This function block is designed for use in industrial automation, particularly in the context of fieldbus systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | Accompanying Data |
-|----------|-----|---------------|-------------------|
+| ---------- | ----- | --------------- | ------------------- |
 | INIT | EInit | Initialization Request: Set Scale Factor (SCALE) and Offset (OFFSET) | SCALE, OFFSET |
 | REQ | Event | Normal Execution Request: Process Input Signal (IN) | IN |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Accompanying Data |
-|----------|-----|--------------|-------------------|
+| ---------- | ----- | -------------- | ------------------- |
 | INITO | EInit | Initialization Acknowledge | – |
 | CNF | Event | Execution Acknowledge | OUT, VALID |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|----------|--------|-----------------------|-----------------------------------------------|
+| ---------- | -------- | ----------------------- | ----------------------------------------------- |
 | IN | LWORD | NOT_AVAILABLE_LWM | Fieldbus Raw Signal (LWORD) |
 | SCALE | LREAL | LREAL#1.0 | Scaling Factor (Multiplication) |
 | OFFSET | DINT | DINT#0 | Offset added after scaling |
@@ -33,7 +35,7 @@ The function block **FIELDBUS_LWORD_TO_SIGNAL_SCALED** converts a raw fieldbus s
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-|--------|-------|-------------|--------------------------------------------------------------|
+| -------- | ------- | ------------- | -------------------------------------------------------------- |
 | OUT | LREAL | LREAL#0.0 | Scaled Output Value (LREAL) |
 | VALID | BOOL | FALSE | Indicates whether the input signal is valid (TRUE = valid) |
 
@@ -47,6 +49,7 @@ The module has two algorithms that are triggered by the **INIT** and **REQ** eve
 
 - **INIT** (on event `INIT`): The algorithm is empty, but sets the output event `INITO`. This allows the scaling parameters (SCALE and OFFSET) to be initialized via the INIT call without immediate processing.
 - **REQ** (on event `REQ`): Performs the actual signal processing:
+
 1. The input signal `IN` (LWORD) is interpreted as an unsigned integer value (`LWORD_TO_ULINT`).
 2. This value is compared to an internally defined valid threshold value, **VALID_SIGNAL_LW** (also an LWORD, imported constant). The comparison is performed at the ULINT level.
 
@@ -54,10 +57,11 @@ The module has two algorithms that are triggered by the **INIT** and **REQ** eve
 
 - `OUT` = `(ULINT_TO_LREAL(IN)) * SCALE + DINT_TO_LREAL(OFFSET)`
 - `VALID` = `TRUE`
-4. **Invalidity**: Otherwise, the signal is considered invalid:
+1. **Invalidity**: Otherwise, the signal is considered invalid:
+
 - `OUT` = `0.0`
 - `VALID` = `FALSE`
-5. After the calculation, the output event `CNF` is sent.
+1. After the calculation, the output event `CNF` is sent.
 
 The scaling is linear: `OUT = IN_als_LREAL * SCALE + OFFSET`. The default value of `SCALE` is 1.0, and that of `OFFSET` is 0, so identical transmission occurs without adjustment.
 
@@ -77,7 +81,7 @@ The comparison is performed by converting both LWORD values to ULINT, so that ne
 ## State Overview
 
 | State | Triggered by | Output Algorithm | Event Output | Description |
-|---------|----------------|--------------------|-----------------|--------------|
+| --------- | ---------------- | -------------------- | ----------------- | -------------- |
 | INIT | Event INIT | INIT | INITO | Initialization: Adopt Scaling Parameters |
 | REQ | Event REQ | REQ | CNF | Signal Processing: Scaling and Validation Check |
 

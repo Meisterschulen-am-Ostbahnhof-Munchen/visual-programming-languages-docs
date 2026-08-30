@@ -3,6 +3,7 @@
 ![AS_TO_AX](./AS_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AS_TO_AX** ist ein Composite-Baustein, der einen SINT-Adapter (AS) in einen BOOL-Adapter (AX) umwandelt. Er prüft den ankommenden SINT-Wert auf Ungleichheit zu Null und gibt das Ergebnis als BOOL-Signal aus. Der Baustein eignet sich für die einfache Signalkonvertierung in einer IEC 61499-ANWENDUNG.
@@ -36,7 +37,7 @@ Der Funktionsblock **AS_TO_AX** ist ein Composite-Baustein, der einen SINT-Adapt
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|-------------|
+| ------ | ----- | ---------- | ------------- |
 | AS_IN | adapter::types::unidirectional::AS | Socket (Input) | SINT-Adapter für den Eingangswert und das zugehörige Ereignis. |
 | AX_OUT | adapter::types::unidirectional::AX | Plug (Output) | BOOL-Adapter für den Ausgabewert und das zugehörige Ereignis. |
 

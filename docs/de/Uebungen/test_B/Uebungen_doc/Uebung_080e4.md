@@ -11,7 +11,7 @@ Diese Übung demonstriert den Einsatz eines **E_CTU** (Event-Zählers) in Kombin
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter / Bemerkung |
-|-------------|------|-----------------------|
+| ------------- | ------ | ----------------------- |
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` |
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` |
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` (Taktgeber für Zählimpulse) |

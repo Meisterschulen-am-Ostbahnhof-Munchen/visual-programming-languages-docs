@@ -3,6 +3,7 @@
 ![Uebung_224b_network](./Uebung_224b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vor-/Rückwärtszähler nach IEC 61131-3 (Funktionsbaustein `FB_CTUD_ULINT`) mit dem Datentyp `ULINT`. Der aktuelle Zählerstand wird über einen Konverter in einen physikalischen Wert (`LREAL`) umgewandelt und auf einer Terminalausgabe (z. B. einem Bedienpanel) angezeigt. Die Steuerung erfolgt über vier digitale Eingänge (CU, CD, R, LD), zwei digitale Ausgänge zeigen die Grenzwertsignale (QU, QD) an.

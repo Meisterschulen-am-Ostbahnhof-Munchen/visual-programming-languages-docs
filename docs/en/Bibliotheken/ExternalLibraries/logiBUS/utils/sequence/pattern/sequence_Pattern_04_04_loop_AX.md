@@ -3,6 +3,7 @@
 ![sequence_Pattern_04_04_loop_AX_ecc](./sequence_Pattern_04_04_loop_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **sequence_Pattern_04_04_loop_AX** is a sequencer (step switch) that controls a sequence of four states in an endless loop. It functions similarly to an electronic cam switch. A specific output pattern can be defined for each of the four steps, controlling four outputs (Q1 to Q4).
@@ -56,15 +57,17 @@ The function block implements a state machine (ECC) that cycles through four act
 
 1. **Initialization**: The function block starts in state `xSTART`. Upon the event `START_S1`, it transitions to state `sState_01`.
 2. **State Processing**: In each state (`sState_01` to `sState_04`):
+
 - The timer (`timeOut`) is stopped and restarted with the corresponding time (`DT_xx`).
 - The current state number (`STATE_NR`) is updated and sent (`CNF`).
 - The outputs (`Q1` to `Q4`) are set based on the corresponding input byte (`P_Sx`). The mapping is bitwise (bit 0 -> Q1, bit 1 -> Q2, etc.).
 - The outputs (`Q1` to `Q4`) are set based on the corresponding input byte (`P_Sx`). * Events are fired at the adapters `Qx` (`Qx.E1`) to signal the data change.
-3. **Transitions**: A transition to the next step occurs either:
+1. **Transitions**: A transition to the next step occurs either:
+
 - **Automatic**: When the configured time (`DT_...`) has expired (`timeOut.TimeOut`).
 - **Manual**: When the explicit transition event (e.g., `S1_S2`) arrives.
-4. **Loop**: After `sState_04`, the transition back to `sState_01` (loop) occurs, unless a reset is triggered.
-5. **Reset**: The `RESET` event causes all outputs to be set to `FALSE`, `STATE_NR` to be reset to 0, and the function block to wait for a new start command in the `xSTART` state.
+1. **Loop**: After `sState_04`, the transition back to `sState_01` (loop) occurs, unless a reset is triggered.
+2. **Reset**: The `RESET` event causes all outputs to be set to `FALSE`, `STATE_NR` to be reset to 0, and the function block to wait for a new start command in the `xSTART` state.
 
 ## Technical Features
 

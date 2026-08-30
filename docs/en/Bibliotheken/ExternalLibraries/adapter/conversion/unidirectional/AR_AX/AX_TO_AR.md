@@ -3,9 +3,11 @@
 ![AX_TO_AR](./AX_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_TO_AR** function block is a composite function block that converts a Boolean signal from an AX adapter (type `adapter::types::unidirectional::AX`) into a REAL value (0.0 or 1.0) and outputs it via an AR adapter (type `adapter::types::unidirectional::AR`). The conversion is performed using the IEC 61131 function block **F_SEL**.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -44,10 +46,11 @@ The function block operates in an event-driven manner:
 1. An incoming event at the AX_IN adapter (E1) triggers the internal F_SEL function block via its REQ input.
 2. Simultaneously, the Boolean signal (AX_IN.D1) is applied to the G input of F_SEL.
 3. F_SEL selects the following depending on G:
+
 - For `G = FALSE` => Output of **IN0** (value `REAL#0.0`).
 - For `G = TRUE` => Output of **IN1** (value `REAL#1.0`).
-4. The result is passed via output OUT to data input D1 of the AR_OUT adapter.
-5. The CNF event of F_SEL triggers output event E1 of the AR_OUT adapter, allowing the connected logic to accept the new data.
+1. The result is passed via output OUT to data input D1 of the AR_OUT adapter.
+2. The CNF event of F_SEL triggers output event E1 of the AR_OUT adapter, allowing the connected logic to accept the new data.
 
 ## Technical Features
 

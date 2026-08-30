@@ -1,4 +1,4 @@
-# Uebung_001c4: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
+# Uebung_001c4: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot
 
 ![Uebung_001c4_network](./Uebung_001c4_network.svg)
 
@@ -45,7 +45,7 @@ Der Ablauf der Übung ist wie folgt:
 Die folgende Tabelle zeigt die wesentlichen Verbindungen im Netzwerk:
 
 | Von | Nach | Typ |
-|-----|------|-----|
+| ----- | ------ | ----- |
 | `DigitalInput_I1.INITO` | `DigitalInput_I1.REQ` | Ereignis |
 | `DigitalInput_I1.IND` | `NOOP.REQ` | Ereignis |
 | `DigitalInput_I1.CNF` | `NOOP.REQ` | Ereignis |

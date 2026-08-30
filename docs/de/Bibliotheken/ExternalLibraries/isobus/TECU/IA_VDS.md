@@ -3,6 +3,7 @@
 ![IA_VDS](./IA_VDS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_VDS** ist ein ISOBUS-Adapter für die Fahrzeugrichtung und -geschwindigkeit (Vehicle Direction/Speed) gemäß ISO 11783-7 (PGN 65256). Er kapselt den Zugriff auf die entsprechenden CAN-Bus-Daten und stellt sie als zeitgemäße 4diac‑Adapter-Schnittstellen zur Verfügung. Der Baustein wird über ein INIT-Ereignis initialisiert und liefert anschließend kontinuierlich Navigationsgeschwindigkeit, Kompassrichtung, Höhe sowie einen Timeout-Status.

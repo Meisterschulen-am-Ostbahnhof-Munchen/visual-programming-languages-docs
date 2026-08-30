@@ -3,6 +3,7 @@
 ![AW_D_FF](./AW_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_D_FF** realisiert ein datengesteuertes Flipflop (D‑Latch) nach IEC 61499. Er übernimmt einen binären Datenwert an seinem Eingang und gibt diesen taktgesteuert an seinem Ausgang weiter. Die Schnittstelle erfolgt ausschließlich über Adapter, was eine modulare und flexible Einbindung in bestehende Komponenten ermöglicht.
@@ -73,7 +74,7 @@ Es gibt keinen internen weiteren Zustandsautomaten; die Funktionalität ist rein
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied zu AW_D_FF |
-|----------|-------------|------------------------|
+| ---------- | ------------- | ------------------------ |
 | **RS‑Flipflop** | Setzt/rücksetzt asynchron | AW_D_FF benötigt Takt, keine getrennten Set‑/Reset‑Eingänge. |
 | **T‑Flipflop** | Toggelt bei Takt | AW_D_FF übernimmt den Wert von D, keine Toggle‑Funktion. |
 | **JK‑Flipflop** | Universell (Set, Reset, Toggle) | AW_D_FF ist einfacher (nur D‑Eingang), kein Toggle‑Modus. |

@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_ADD_3` is a generic arithmetic block for adding three values. It is based on the IEC 61131-3 standard for arithmetic functions. Instead of classic, separate data and event connections, this block uses unidirectional adapters of type `ALI` to enable structured and clear signal transmission in 4diac-ide.

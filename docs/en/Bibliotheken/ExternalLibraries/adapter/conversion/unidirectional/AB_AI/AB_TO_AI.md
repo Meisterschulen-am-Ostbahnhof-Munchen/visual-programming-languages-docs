@@ -3,9 +3,11 @@
 ![AB_TO_AI](./AB_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AB_TO_AI** is a composite function block for converting an **AB adapter (BYTE)** to an **AI adapter (INT)**. It enables the seamless integration of BYTE-based adapter interfaces into systems that expect INT values. Internally, the block uses the IEC 61131 conversion block `F_BYTE_TO_INT`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The FB has no direct data outputs. The output value is provided via the adapter 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | **AB_IN** | `adapter::types::unidirectional::AB` | Socket (Input) | BYTE adapter that provides the value to be converted and the start event. |
 | **AI_OUT** | `adapter::types::unidirectional::AI` | Plug (Output) | INT adapter that provides the converted value and the confirmation event. |
 

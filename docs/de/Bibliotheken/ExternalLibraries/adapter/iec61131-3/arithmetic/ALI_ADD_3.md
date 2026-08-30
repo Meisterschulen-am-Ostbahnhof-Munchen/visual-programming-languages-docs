@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_ADD_3` ist ein generischer, arithmetischer Baustein zur Addition von drei Werten. Er basiert auf dem Standard IEC 61131-3 für arithmetische Funktionen. Anstelle von klassischen, separaten Daten- und Ereignisanschlüssen nutzt dieser Baustein unidirektionale Adapter des Typs `ALI`, um eine strukturierte und übersichtliche Signalübertragung in 4diac-ide zu ermöglichen.

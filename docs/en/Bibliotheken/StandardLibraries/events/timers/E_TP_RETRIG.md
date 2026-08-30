@@ -1,6 +1,7 @@
 # E_TP_RETRIG
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_TP_RETRIG` is the retriggerable variant of the standard timer `E_TP`: on every rising edge of `IN`, it generates a `TRUE` pulse of duration `PT` on `Q` — unlike `E_TP`, however, a new rising edge during a running pulse restarts it instead of being ignored.

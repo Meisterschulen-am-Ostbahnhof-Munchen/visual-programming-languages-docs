@@ -3,6 +3,7 @@
 <img width="963" height="265" alt="image" src="https://github.com/user-attachments/assets/3c1d3b81-2420-46cc-b7cf-fc6828db919c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_OR_2 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen ODER-Verknüpfung. Er verarbeitet zwei Eingangssignale und gibt das logische ODER-Ergebnis aus. Der Baustein ist speziell für die Verwendung in Automatisierungssystemen konzipiert.

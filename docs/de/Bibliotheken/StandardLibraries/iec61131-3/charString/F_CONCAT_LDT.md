@@ -3,6 +3,7 @@
 ![F_CONCAT_LDT](F_CONCAT_LDT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_CONCAT_LDT` fügt einzelne Zeit-/Datumsbestandteile (`YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) zu einem zusammengesetzten `LDATE_AND_TIME`-Wert zusammen. Er ist die Umkehrung von [F_SPLIT_LDT](F_SPLIT_LDT.md), das denselben `LDATE_AND_TIME`-Wert wieder in seine Einzelbestandteile zerlegt.

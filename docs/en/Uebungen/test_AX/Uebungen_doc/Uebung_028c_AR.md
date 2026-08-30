@@ -3,11 +3,13 @@
 ![Uebung_028c_AR_network](./Uebung_028c_AR_network.svg)
 *Image of the exercise to follow*
 ---
+
 ## Introduction
 
 This exercise demonstrates the calibration of an analog input (AnalogInput_I7) using offset and scaling adapters (AR_CALIBRATE). The calibration values are persistently stored via INI function blocks (INI_AR2). Additionally, a hysteresis controller is applied to the calibrated analog signal, with the threshold and hysteresis also loaded via INI (SubApp THRESHOLD and HYSTERESIS). The hysteresis result is output to a digital output (Output_Q2), while the calibrated value is simultaneously displayed on a screen (Q_NumericValue_PHYSA). Digital inputs control the calibration (Calibrate On/Off and Calibrate Set) as well as an additional digital output (Output_Q1).
 
 ...)) ) ``) ``) ``) ``) ` control the calibration (`Calibrate On/Off (Calibrate On/Off, (Calibrate Set)) as well as an additional digital output
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `THRESHOLD` and `HYSTERESIS`
@@ -24,7 +26,7 @@ Reads the data under [missing information] for initialization. The function bloc
 ### Other Function Blocks
 
 | Function Block Name | Type | Parameters | Description |
-|--------------|-----|------------|--------------|
+| -------------- | ----- | ------------ | -------------- |
 | `AnalogInput_I7` | `logiBUS::io::AI::logiBUS_AI_IDA` | QI=TRUE, Input="AnalogInput_I7", AnalogInput_hysteresis=50, TimeDelta=250, TimeRateLimit=100 | Analog input, provides an adapter `AD_IN` (analog/digital value). |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I1" | Digital input I1, controls two outputs (Q1 and SREQ on the analog input) via adapter `AX_SPLIT_2`. |
 | `DigitalInput_I2_CO` | `logiBUS::io::DI::logiBUS_IXA` | QI=TRUE, Input="Input_I2" | Digital input I2 (Calibrate On/Off). |
@@ -47,26 +49,27 @@ Reads the data under [missing information] for initialization. The function bloc
 
 AnalogInput_I7` continuously provides the raw value of the analog input on adapter `IN`. This raw value is converted into an AR adapter (real value) via `AD_TO_AUDI` and `AUDI_TO_AR` and passed to input `X` of the calibration adapter `CALIBRATE`.
 
-2. **Calibration**:
+1. **Calibration**:
 
 The digital inputs `Input_I2` (CO = Calibrate On) and `Input_I3` (CS = Calibrate Set) control the calibration process. Pressing CS while CO is active takes the current measured value and calculates the offset and scaling so that the output value `Y` corresponds to the desired setpoint. The determined values `OFFSET` and `SCALE` are stored via the INI blocks `INI_OFFSET` and `INI_SCALE`.
 
 *Note*: The INI blocks are configured with `SECTION` = `'Uebung_028a_AR'`.
 
-3. **Value Distribution**:
+1. **Value Distribution**:
 
 The calibrated value `Y` is distributed via `AR_SPLIT_2` to two paths:
 
 - Path 1 to `Q_NumericValue_PHYSA` (display)
 - Path 2 to the hysteresis block `Hysteresis_AR_AX` (input `INPUT`)
-4. **Hysteresis**:
+1. **Hysteresis**:
 
 The subapps `THRESHOLD` and `HYSTERESIS` read the parameters (threshold and hysteresis band) from the INI configuration (section `'HYSTERESIS'`). These values are passed to the hysteresis block. The hysteresis block compares the calibrated value with the threshold, taking the hysteresis band into account, and outputs a digital signal (`OUTPUT`).
 
-5. **Digital Outputs**:
+1. **Digital Outputs**:
+
 - `DigitalInput_I1` is split via `AX_SPLIT_2`: One branch controls `DigitalOutput_Q1`, the other branch triggers the analog input (`SREQ`) to initiate a sample.
 - The result of the hysteresis (`Hysteresis_AR_AX.OUTPUT`) is directly fed to `DigitalOutput_Q2`.
-6. **Special Feature**:
+1. **Special Feature**:
 
 The double conversion (`AD_TO_AUDI` → `AUDI_TO_AR`) is necessary because the analog (AD) value cannot be directly converted into an AR adapter. The AUDI adapter serves as an intermediate format.
 

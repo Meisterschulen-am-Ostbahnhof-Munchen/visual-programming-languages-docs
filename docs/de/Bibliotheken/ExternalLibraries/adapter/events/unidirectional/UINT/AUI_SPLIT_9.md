@@ -5,6 +5,7 @@
 ![AUI_SPLIT_9](./AUI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AUI_SPLIT_9** dient als generischer Splitter für unidirektionale AUI-Adapterverbindungen. Er empfängt ein eingehendes AUI-Signal über den Socket `IN` und verteilt dieses identisch auf neun separate Ausgangs-Plugs (`OUT1` bis `OUT9`). Der Baustein ist typisiert als generischer FB (`GEN_AUI_SPLIT`) und kann in verschiedenen Automatisierungsumgebungen eingesetzt werden, in denen ein AUI-Signal an mehrere nachfolgende Komponenten weitergegeben werden muss.

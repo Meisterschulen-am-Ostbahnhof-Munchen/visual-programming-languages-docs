@@ -12,7 +12,7 @@ Mithilfe des Funktionsbausteins `ILOCK_2_E_AX` wird ein einfaches Zwei-Kanal-Set
 ## Verwendete Funktionsbausteine (FBs)
 
 | FB-Name | Typ | Beschreibung |
-|----------|------|---------------|
+| ---------- | ------ | --------------- |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IE` | Digitaler Eingang, parametriert mit `Input_I1` und Ereignis `BUTTON_SINGLE_CLICK` |
 | `DigitalInput_I2` | `logiBUS::io::DI::logiBUS_IE` | Digitaler Eingang, parametriert mit `Input_I2` und Ereignis `BUTTON_SINGLE_CLICK` |
 | `DigitalInput_I3` | `logiBUS::io::DI::logiBUS_IE` | Digitaler Eingang, parametriert mit `Input_I3` und Ereignis `BUTTON_SINGLE_CLICK` |

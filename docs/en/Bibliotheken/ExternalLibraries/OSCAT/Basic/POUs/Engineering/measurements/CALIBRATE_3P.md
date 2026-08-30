@@ -3,6 +3,7 @@
 ![CALIBRATE_3P](CALIBRATE_3P.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `CALIBRATE_3P` is a three-point calibration for raw inputs with a center position, as typically found on joysticks. Instead of a single linear scale like [CALIBRATE](CALIBRATE.md), it interpolates piecewise linearly between three stored reference points (Min, Mid, Max), which also compensates for a center position that doesn't sit exactly in the middle of the raw range.
@@ -52,7 +53,7 @@ The three calibration points can be calibrated in **any order** and repeated ind
 **Example** (joystick with center drift, raw range `0..1000`, desired output range `-100..0..100`):
 
 | Step | Action | Result |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Move joystick to **minimum**, `C_MIN=TRUE` | `X_MIN = 50` (drift from ideal `0`) |
 | 2 | Move joystick to **center**, `C_MID=TRUE` | `X_MID = 520` (drift from ideal `500`) |
 | 3 | Move joystick to **maximum**, `C_MAX=TRUE` | `X_MAX = 980` (drift from ideal `1000`) |

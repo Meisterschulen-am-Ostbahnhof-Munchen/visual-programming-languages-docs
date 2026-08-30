@@ -3,9 +3,11 @@
 ![AUDI_SPLIT_2](./AUDI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_SPLIT_2** is a generic block for signal distribution. It receives a signal via a single **AUDI** adapter (unidirectional) and forwards it to two identical **AUDI** output adapters. The function block is declared as a **generic FB**, meaning the specific signal type can be defined during project configuration using the attribute `GenericClassName`. It was developed by HR Agrartechnik GmbH (Version 1.0, 2025-01-24).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AUDI` | Incoming unidirectional AUDIO adapter (signal source). |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AUDI` | First output – forwards the input signal. |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AUDI` | Second output – forwards the input signal. |

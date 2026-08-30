@@ -3,6 +3,7 @@
 ![ASSEMBLE_AL_FROM_AB](./ASSEMBLE_AL_FROM_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_AL_FROM_AB` fasst acht einzelne Byte-Informationen aus Adaptern des Typs `AB` (unidirektional) zu einem zusammenhängenden 64-Bit-Datenwort (LWORD) zusammen. Das Ergebnis wird über einen Ausgangsadapter des Typs `AL` ausgegeben. Der Baustein dient als zentrale Sammelstelle für Byte-orientierte Daten und ermöglicht eine modulare und übersichtliche Datenstrukturierung.
@@ -30,7 +31,7 @@ Keine. Das zusammengesetzte LWORD wird über den Adapter `OUT` ausgegeben.
 **Sockets (Eingangsadapter)**
 
 | Name | Datentyp | Beschreibung |
-|------|----------|--------------|
+| ------ | ---------- | -------------- |
 | `BYTE_00` | `adapter::types::unidirectional::AB` | Byte 0 (niederwertigstes Byte) |
 | `BYTE_01` | `adapter::types::unidirectional::AB` | Byte 1 |
 | `BYTE_02` | `adapter::types::unidirectional::AB` | Byte 2 |

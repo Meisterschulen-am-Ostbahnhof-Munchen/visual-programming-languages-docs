@@ -38,14 +38,14 @@ Diese Übung demonstriert die Verwendung des Multiplexer-Funktionsbausteins F_MU
 
 ## Programmablauf und Verbindungen
 
-### Ereignisverbindungen:
+### Ereignisverbindungen
 
 - DigitalInput_I4.IND → F_BOOL_TO_UINT_I4.REQ
 - F_MUX_3.CNF → DigitalOutput_Q1.REQ
 - DigitalInput_I1.IND → F_MUX_3.REQ
 - DigitalInput_I2.IND → F_MUX_3.REQ
 
-### Datenverbindungen:
+### Datenverbindungen
 
 - F_MUX_3.OUT → DigitalOutput_Q1.OUT
 - DigitalInput_I1.IN → F_MUX_3.IN1
@@ -53,7 +53,7 @@ Diese Übung demonstriert die Verwendung des Multiplexer-Funktionsbausteins F_MU
 - DigitalInput_I4.IN → F_BOOL_TO_UINT_I4.IN
 - F_BOOL_TO_UINT_I4.OUT → F_MUX_3.K
 
-### Funktionsweise:
+### Funktionsweise
 
 Der Multiplexer F_MUX_3 wählt basierend auf dem Steuersignal K (von F_BOOL_TO_UINT_I4) einen der drei Eingänge aus und gibt diesen am Ausgang OUT weiter. Die digitalen Eingänge I1 und I2 werden als wählbare Eingänge verwendet, während IN3 auf FALSE festgelegt ist. Der Eingang I4 dient als Steuersignal, das über den Konverter F_BOOL_TO_UINT in den Steuereingang K des Multiplexers umgewandelt wird.
 

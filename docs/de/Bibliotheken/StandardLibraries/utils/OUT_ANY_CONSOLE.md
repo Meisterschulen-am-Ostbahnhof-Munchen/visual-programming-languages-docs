@@ -24,7 +24,7 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 ### **Daten-Eingänge**
 
 | Parameter | Typ | Beschreibung |
-|-----------|-----|--------------|
+| ----------- | ----- | -------------- |
 | `QI` | BOOL | Aktiviert die Ausgabe bei TRUE |
 | `LABEL` | STRING | Optionaler Beschreibungstext |
 | `IN` | ANY | Beliebiger auszugebender Wert |
@@ -66,7 +66,7 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 ## Beispielausgaben
 
 | LABEL | IN (Wert) | Konsolenausgabe |
-|-------|----------|-----------------|
+| ------- | ---------- | ----------------- |
 | "Temperatur" | 23.5 | "Temperatur: 23.5" |
 | "Status" | TRUE | "Status: TRUE" |
 | "" | 42 | "42" |
@@ -74,7 +74,7 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature | OUT_ANY_CONSOLE | Standard-Debug | Erweitertes Logging |
-|---------|-----------------|----------------|---------------------|
+| --------- | ----------------- | ---------------- | --------------------- |
 | Datentypen | Beliebig (ANY) | Begrenzt | Begrenzt |
 | Beschriftung | Optional | Nein | Ja |
 | Integration | 4diac-spezifisch | Systemabhängig | Framework-abhängig |

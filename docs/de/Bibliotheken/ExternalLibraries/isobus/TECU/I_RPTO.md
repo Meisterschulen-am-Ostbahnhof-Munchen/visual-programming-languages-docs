@@ -36,7 +36,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die
 ## Zapfwellenparameter
 
 | Parameter | Typ | Beschreibung | SPN | Bit-Länge | Skalierung |
-|-----------|------|--------------|-----|-----------|------------|
+| ----------- | ------ | -------------- | ----- | ----------- | ------------ |
 | `REAR_PTO_OUTP_SHAFT_SPEED` | UINT | Aktuelle Drehzahl | 1883 | 16 | 0.125 1/min/bit |
 | `REAR_PTO_OUTP_SH_SPEED_SET` | UINT | Soll-Drehzahl | 1885 | 16 | 0.125 1/min/bit |
 | `REAR_PTO_ENGAGEMENT` | BYTE | Kupplungszustand | 2408 | 2 | 4 Zustände/2 bit |
@@ -51,7 +51,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die
 ## Betriebsmodi
 
 | Code | Modus | Beschreibung |
-|------|-------|--------------|
+| ------ | ------- | -------------- |
 | 0 | Standby | Bereitschaftsmodus |
 | 1 | Geschwindigkeitsmodus | Konstante Drehzahl |
 | 2 | Lastmodus | Lastabhängige Regelung |
@@ -88,7 +88,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die
 ## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_RPTO | Standard | Premium |
-|---------|--------|----------|---------|
+| --------- | -------- | ---------- | --------- |
 | Drehzahlgenauigkeit | ±0.2% | ±1% | ±0.1% |
 | Betriebsmodi | 4 | 2 | 6 |
 | Diagnoseumfang | 64 Codes | 8 Codes | 128 Codes |

@@ -3,6 +3,7 @@
 ![SPLIT_AW_INTO_AX](./SPLIT_AW_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_AW_INTO_AX` dient dazu, ein 16‑Bit Wort (Typ `AW`) in 16 einzelne Binärsignale (Typ `AX`) aufzuteilen. Jeder der 16 Ausgänge repräsentiert ein Bit des eingehenden Wortes und wird als eigenständiger Adapter mit Ereignis- und Datenleitung bereitgestellt. Die Aufteilung erfolgt synchron bei Eintreffen eines Ereignisses am Eingangsadapter.

@@ -6,6 +6,7 @@
 
 The function block `F_AND` is a standardized bitwise Boolean AND operator according to IEC 61131-3. It performs a bitwise AND operation on two input variables and outputs the result. This block is particularly useful for logical operations in control applications.
 ![F_AND](F_AND.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

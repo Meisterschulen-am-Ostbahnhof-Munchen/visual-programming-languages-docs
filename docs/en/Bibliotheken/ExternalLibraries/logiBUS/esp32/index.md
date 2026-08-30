@@ -3,6 +3,7 @@
 ## 📺 Video
 
 - [The ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)
+
 ## 🎧 Podcast
 
 - [ESP32 as an Industrial PLC: Revolution with Eclipse 4diac and logiBUS®](https://podcasters.spotify.com/pod/show/logibus/episodes/ESP32-als-Industrie-SPS-Revolution-mit-Eclipse-4diac-und-logiBUS-e375dp6)

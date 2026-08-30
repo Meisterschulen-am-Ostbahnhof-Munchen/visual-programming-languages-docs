@@ -6,6 +6,7 @@
 
 The function block `F_BOOL_TO_UINT` converts a Boolean value (`BOOL`) into an unsigned integer value (`UINT`). This conversion is particularly useful when Boolean signals need to be converted into numerical values, for example, for further calculations or control purposes.
 ![F_BOOL_TO_UINT](F_BOOL_TO_UINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

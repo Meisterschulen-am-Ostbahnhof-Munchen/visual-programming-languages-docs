@@ -3,6 +3,7 @@
 ![F_NOT](https://user-images.githubusercontent.com/116869307/214144000-4586686b-f3a0-4caa-9896-3dfb75baa550.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The F_NOT function block implements a bitwise logical NOT operation according to the IEC 61131-3 standard. It performs a bitwise inversion of the input value and outputs the result.

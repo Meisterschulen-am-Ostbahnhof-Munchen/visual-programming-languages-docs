@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) **AI_ADD_2** ist ein generischer Baustein zur Durchführung einer arithmetischen Addition zweier analoger Eingangswerte. Er basiert auf dem Konzept generischer Funktionsbausteine (`GEN_AI_ADD`) und nutzt Adapter-Schnittstellen anstelle von klassischen, lose gekoppelten Daten- und Ereignis-Anschlüssen. Dies ermöglicht eine strukturierte, übersichtliche und modulare Signalverarbeitung innerhalb von 4diac-ide-basierten Steuerungsanwendungen.

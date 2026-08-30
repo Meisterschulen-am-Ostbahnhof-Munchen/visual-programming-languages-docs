@@ -3,9 +3,11 @@
 ![ASR_SPLIT_5](./ASR_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_SPLIT_5** is used to split a single unidirectional ASR adapter (Agricultural Standardized Interface) into five identical ASR outputs. It is designed as a generic module, thus enabling the simple distribution of an ASR signal to multiple downstream components or controllers.
+
 ## Interface Structure
 
 The module does not have any traditional event or data inputs/outputs. All communication takes place via adapter interfaces of type `adapter::types::unidirectional::ASR`.
@@ -29,7 +31,7 @@ None
 ### **Adapter**
 
 | Name | Type | Direction |
-|-------------|----------------------------|----------|
+| ------------- | ---------------------------- | ---------- |
 | `IN` | `adapter::types::unidirectional::ASR` | Socket (Input) |
 | `OUT1` | `adapter::types::unidirectional::ASR` | Plug (Output) |
 | `OUT2` | `adapter::types::unidirectional::ASR` | Plug (Output) |

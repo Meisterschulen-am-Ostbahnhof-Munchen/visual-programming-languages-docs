@@ -3,6 +3,7 @@
 ![E_SR_SYM_INIT_ecc](./E_SR_SYM_INIT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_SR_SYM_INIT` is functionally identical to [E_RS_SYM_INIT](E_RS_SYM_INIT.md) — analogous to [E_SR_SYM](E_SR_SYM.md)/[E_RS_SYM](E_RS_SYM.md), it exists purely to preserve the `SR` naming convention (set listed first) and extends [E_SR_SYM](E_SR_SYM.md) with an `INIT`/`INITO` interface.
@@ -43,7 +44,7 @@ See [E_RS_SYM_INIT](E_RS_SYM_INIT.md) — identical behaviour, only the `S`/`R` 
 ## State Overview
 
 | State | Meaning |
-|---|---|
+| --- | --- |
 | START | Unconfigured initial state |
 | Init | Initialization in progress, `QO := QI` |
 | DeInit | Deinitialization in progress, `QO := FALSE` |

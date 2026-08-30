@@ -3,9 +3,11 @@
 ![Q_StringValue_AIS](./Q_StringValue_AIS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_StringValue_AIS** implements the "Command Change String Value" service according to ISO 11783-6 (Part 6, Section F.24). It is used to send a new string value to a connected device via an ISOBUS network. The block encapsulates all the logic for initialization, sending the command, and returning the result. The new string value is input via a unidirectional adapter (AIS), which provides the actual data.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The function block **Q_StringValue_AIS** implements the "Command Change String V
 ### **Event Outputs**
 
 | Event | Type | Comment |
-|----------|-------|---------------------------------------------------|
+| ---------- | ------- | --------------------------------------------------- |
 | INITO | EInit | Confirmation of successful initialization |
 | CNF | Event | Confirmation of the requested service (result) |
 
@@ -30,7 +32,7 @@ The function block **Q_StringValue_AIS** implements the "Command Change String V
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|-----------|-------|----------------------------------------------------|
+| ----------- | ------- | ---------------------------------------------------- |
 | STATUS | STRING | Service status (e.g., "IDLE", "BUSY", "ERROR") |
 | s16result | INT | Return value (see service description) |
 

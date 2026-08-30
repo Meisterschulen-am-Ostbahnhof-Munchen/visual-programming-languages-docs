@@ -28,7 +28,7 @@ No separate data outputs. Data output is via the connected adapters.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-------------------------------------|----------------------------------|-------------------------------------------|
+| ---------- | ------------------------------------- | ---------------------------------- | ------------------------------------------- |
 | Socket | **AUI_IN** | adapter::types::unidirectional::AUI | UINT input adapter (source) |
 | Plug | **AUS_OUT** | adapter::types::unidirectional::AUS | USINT output adapter (destination) |
 

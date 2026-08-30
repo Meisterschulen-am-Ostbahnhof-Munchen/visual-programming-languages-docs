@@ -3,15 +3,17 @@
 ![E_RS_SYM_INIT](./E_RS_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **E_RS_SYM_INIT** is an event-driven, bistable toggle switch (flip-flop) with symmetrical startup behavior and explicit initialization. It implements the familiar RS flip-flop logic, where the output **Q** can be set to either TRUE or FALSE during initialization (event **INIT**) – depending on the value of the parameter **Q_INIT**. This enables defined behavior after a system startup or reinitialization.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | **INIT** | EInit | Initialization Request; Takes the values of **QI** and **Q_INIT** |
 | **R** | Event | Resets output **Q** |
 | **S** | Event | Sets output **Q** |
@@ -19,21 +21,21 @@ The function block **E_RS_SYM_INIT** is an event-driven, bistable toggle switch 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | **INITO** | EInit | Initialization confirmation; passes the value of **QO** |
 | **EO** | Event | Indicates that output **Q** has changed |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|----------|-------|-----------|
+| ---------- | ------- | ----------- |
 | **QI** | BOOL | Event Qualifier: Set/reset operations are only executed if *QI=TRUE*. During initialization, *QI* sets the value of **QO**. |
 | **Q_INIT** | BOOL | Sets the initial value of **Q**, which is inherited during initialization. |
 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|----------|-------|-----------|
+| ---------- | ------- | ----------- |
 | **QO** | BOOL | Output Qualifier: Indicates whether an operation was valid (inheritance of **QI**). |
 | **Q** | BOOL | The actual flip-flop output. |
 
@@ -63,7 +65,7 @@ The **E_RS_SYM_INIT** operates as a state machine with five states: **START**, *
 ## State Overview
 
 | State | Description | Action on Entry | Exit Event |
-|-----------|-----------------------------------------------------------------------------|----------------------|------------------|
+| ----------- | ----------------------------------------------------------------------------- | ---------------------- | ------------------ |
 | **START** | Initial sleep state after system startup or deinitialization | none | – |
 | **INIT** | Initialization requested (**INIT** with **QI=TRUE**) | sets **QO** = **QI** | INITO |
 | **DeInit** | Deinitialization requested (**INIT** with **QI=FALSE**) | sets **QO** = FALSE | INITO |
@@ -99,11 +101,11 @@ The **E_RS_SYM_INIT** operates as a state machine with five states: **START**, *
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference to E_RS_SYM_INIT |
-|----------|-------------------------------|
+| ---------- | ------------------------------- |
 | **E_RS** (Standard RS Flip-Flop) | No explicit start behavior; **Q** is not defined during INIT. **Q_INIT** is missing. |
 | **E_SR** (Set-Dominant Flip-Flop) | Set dominates over Reset; no initializable start state. |
 | **E_RS_SYM** | Symmetric RS logic without an INIT function; no start behavior. |
-| **E_RS_SYM**| **E_RS_SYM_INIT** (this one) | Combines symmetrical RS logic with selectable initial value and deinitialization. |
+| **E_RS_SYM** | **E_RS_SYM_INIT** (this one) | Combines symmetrical RS logic with selectable initial value and deinitialization. |
 
 ## Conclusion
 

@@ -3,6 +3,7 @@
 ![logiBUS_QWA_SERVO](./logiBUS_QWA_SERVO.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **logiBUS_QWA_SERVO** is a composite function block (CFB) for outputting servo control words via a logiBUS. It encapsulates the initialization, parameterization, and output based on an internal function block (`logiBUS_QW_SERVO`) and provides a standardized interface. Developed under the Eclipse Public License 2.0 (Copyright 2026 HR Agrartechnik GmbH).
@@ -19,24 +20,24 @@ The **logiBUS_QWA_SERVO** is a composite function block (CFB) for outputting ser
 ### **Event Outputs**
 
 | Event | Type | With Variables | Description |
-|----------|-------|----------------|---------------------------------------|
+| ---------- | ------- | ---------------- | --------------------------------------- |
 | `INITO` | EInit | `QO`, `STATUS` | Initialization Confirmation |
-| `CNF` | Event | `QO`, `STATUS` | Confirmation of a Requested Action|
+| `CNF` | Event | `QO`, `STATUS` | Confirmation of a Requested Action |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|----------|--------------|-------------|---------------------------------------------------|
+| ---------- | -------------- | ------------- | --------------------------------------------------- |
 | `QI` | `BOOL` | – | Event Input Qualifier |
 | `PARAMS` | `STRING` | – | Service Parameter (e.g., Bus Configuration) |
-| `Output` | `logiBUS::io::DQ::logiBUS_DO_S` | `Invalid` | Identifies the output (`Output_Q1` … `Output_Q8`)|
+| `Output` | `logiBUS::io::DQ::logiBUS_DO_S` | `Invalid` | Identifies the output (`Output_Q1` … `Output_Q8`) |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-|----------|----------|---------------------------------|
+| ---------- | ---------- | --------------------------------- |
 | `QO` | `BOOL` | Event Output Qualifier |
-| `STATUS` | `STRING` | Status Message (Error, OK, etc.)|
+| `STATUS` | `STRING` | Status Message (Error, OK, etc.) |
 
 ### **Adapters**
 
@@ -49,12 +50,15 @@ The **logiBUS_QWA_SERVO** is a composite function block (CFB) for outputting ser
 The function block operates as a composite:
 
 1. **Initialization** (`INIT`):
+
 - Qualifier `QI`, parameter string `PARAMS`, and the desired output (`Output`) are passed.
 - The internal function block `logiBUS_QW_SERVO` is initialized; after successful initialization, `INITO` is sent.
-2. **Execution** (via adapter `OUT`):
+1. **Execution** (via adapter `OUT`):
+
 - The event `OUT.E1` is received by the adapter and forwarded to the internal function block (FB) as `REQ`.
 - Simultaneously, the data is transferred to the internal FB (`QX.OUT`) via `OUT.D1`.
-3. **Feedback**:
+1. **Feedback**:
+
 - The internal FB signals completion via `CNF`, which is forwarded to the external output `CNF`.
 - Status and qualifier are output via `QO` and `STATUS`.
 
@@ -73,9 +77,9 @@ The actual control of the servo hardware is handled via the adapter `OUT`, which
 The function block (FB) does not have an explicitly modeled state machine; however, the following implicit state logic results from the event sequences:
 
 | State | Trigger | Response |
-|---------------|-------------------------|----------------------------------------------|
+| --------------- | ------------------------- | ---------------------------------------------- |
 | **Idle** | – | Waiting for `INIT` |
-| **Initialize**| Received `INIT` | Internal FB is started |
+| **Initialize** | Received `INIT` | Internal FB is started |
 | **Ready** | `INITO` sent | Ready for requests via the adapter |
 | **Busy** | `OUT.E1` received | Action is being executed (`REQ` is running) |
 | **Done** | `CNF` sent | Action completed, returning to **Ready** |

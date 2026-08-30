@@ -3,9 +3,11 @@
 ![AW_EQ](./AW_EQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_EQ** compares two values of type `WORD` (16-bit bit pattern (word)) and checks whether the first value (IN1) is equal to the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously. The bit patterns are interpreted as unsigned integers and compared numerically.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
@@ -31,7 +33,7 @@ The function block has no direct event or data inputs and outputs, but communica
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `AW` (Socket) | Input | Adapter for the first comparison value and its associated event |
 | IN2 | `AW` (Socket) | Input | Adapter for the second comparison value and its associated event |
 | OUT | `AX` (Plug) | Output | Adapter for the comparison result and the output event |

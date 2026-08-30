@@ -4,6 +4,7 @@
 ![Uebung_006a2b_AX_network](./Uebung_006a2b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the application of SR and T flip-flops in combination with a common reset signal ("janitor off").
@@ -73,11 +74,11 @@ The circuit operates according to the following principle:
 
 Each press of button I1 generates an event at the `CLK` input of `AX_T_FF_SR_Q1`. The flip-flop toggles its output state. The same applies to button I2 and `AX_T_FF_SR_Q2`.
 
-2. **Central Reset ("Janitor Off")**:
+1. **Central Reset ("Janitor Off")**:
 
 When button I3 is pressed, the event is distributed via the splitter `AX_SPLIT_2` to the `RESET1` inputs of both flip-flops. Both outputs (`Q1`, `Q2`) are immediately reset.
 
-3. **Output**:
+1. **Output**:
 
 The internal states of `Q1` and `Q2` are output via the digital outputs `Output_Q1` and `Output_Q2`.
 

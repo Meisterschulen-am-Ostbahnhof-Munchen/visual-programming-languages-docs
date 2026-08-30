@@ -3,6 +3,7 @@
 ![AULI_TO_ALI](./AULI_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_ALI** ist ein Composite-Baustein, der eine Adapter-Konvertierung von **AULI** (ULINT-Adapter) nach **ALI** (LINT-Adapter) durchführt. Er dient dazu, einen vorzeichenlosen 64‑Bit‑Ganzzahlwert (ULINT) in einen vorzeichenbehafteten 64‑Bit‑Ganzzahlwert (LINT) zu wandeln und über die entsprechenden Adapter-Schnittstellen weiterzuleiten.

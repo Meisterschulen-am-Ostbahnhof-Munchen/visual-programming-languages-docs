@@ -4,6 +4,7 @@
 ![AX_T_FF_SR_ecc](./AX_T_FF_SR_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_T_FF_SR is an event-driven bistable function block with toggle functionality. It is a flip-flop element that can operate as both a set-reset flip-flop and a toggle flip-flop. The component combines the properties of an SR flip-flop with additional toggle functionality via a clock input.
@@ -78,6 +79,7 @@ RESET (Q.D1 = FALSE)
 ├── S ────→ SET (Q.D1 = TRUE)
 │
 └── CLK ─→ SET (Q.D1 = TRUE)
+
 ## Application Scenarios
 
 - State storage in control applications

@@ -1,6 +1,7 @@
 # ⚖️ Difference between IEC 61131-3 and IEC 61499
 
 The standards **IEC 61131-3** and **IEC 61499** both define standards for programming industrial control systems, but they follow different approaches regarding architecture and implementation.
+
 ## 1. Architectural Model
 
 ### IEC 61131-3: Centralized Control

@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_CALIBRATE_SQ` is an adapter-based, sequential block for two-point calibration (offset and subsequent scaling calibration). It ensures that the calibration steps are performed in a precisely defined mathematical and logical sequence. The internal state machine (ECC) enforces that the offset calibration (CO) must be performed before the scaling calibration (CS).

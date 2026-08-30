@@ -33,7 +33,7 @@ Kombination von repetierenden Ereignissen (`HOLD`) und Zählern zur Steuerung ei
 1.  **Steigern**: Der Bediener hält **I1** gedrückt. Der Zähler zählt alle 200ms einen Schritt hoch. Die Lampe an `Q1` wird stufenweise heller.
 2.  **Senken**: Der Bediener hält **I2** gedrückt. Die Lampe wird stufenweise dunkler.
 3.  **Schnell-Wahl**: Taster **I3** (Stopp) setzt den Wert sofort auf
-0. Taster **I4** (Full) lädt den Zähler sofort auf das Maximum.
+4. Taster **I4** (Full) lädt den Zähler sofort auf das Maximum.
 
 Dies ermöglicht eine sehr feinfühlige Steuerung von Antrieben oder Beleuchtungen über einfache digitale Taster.
 

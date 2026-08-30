@@ -24,6 +24,7 @@ When an event arrives at input `EI`, the function block immediately triggers the
 1. First, `EO1` is triggered.
 2. Immediately afterward, `EO2` is triggered.
 3. Immediately afterward, `EO3` is triggered.
+
 - **1-to-3 Sequence**: Splits an event into a guaranteed sequence of three events.
 - **Stateless**: The function block has no internal memory beyond a single transaction.
 - **Generic Building Block**: The functionality is provided by the generic class `GEN_E_SPLIT`.
@@ -33,6 +34,7 @@ When an event arrives at input `EI`, the function block immediately triggers the
 - [Exercise_004a9_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a9_AX.md)
 
 The `E_SPLIT_3` block is a useful tool for generating a fixed, short event sequence of three steps from a single trigger. Its simplicity and guaranteed execution order make it a robust component for sequence control in IEC 61499 applications.
+
 ## Technical Features
 
 ## Application Scenarios

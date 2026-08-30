@@ -4,6 +4,7 @@
 ![sequence_Pattern_08_08_loop_AX_ecc](./sequence_Pattern_08_08_loop_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **sequence_Pattern_08_08_loop_AX** is a sequencer (step chain) that implements a configurable cam switch with 8 states (steps) and 8 outputs. It is designed to operate cyclically (loop behavior), transitioning from step 8 back to step 1.
@@ -18,6 +19,7 @@ This block allows the definition of bit patterns for each of the 8 steps, which 
 - **S1_S2** to **S8_S1**: Manual trigger events to immediately switch from the current state to the next (e.g., `S1_S2` jumps from state 1 to 2).
 - **RESET**: Resets the function block from any state to the initial state (`START`) and disables all outputs.
 - **S1_S2** to **S8_S1**: Manual trigger events to immediately switch from the current state to the next (e.g., `S1_S2` jumps from state 1 to 2).
+
 ### **Event Outputs**
 
 - **CNF**: Execution Confirmation event. It fires as soon as a new state is reached and the outputs are updated.
@@ -46,16 +48,18 @@ The component operates as a finite state machine with a cyclic structure:
 
 1. **Initialization**: The sequence is started by the event `START_S1`. The configured time values and bit patterns are read in. The state machine transitions to **State_01**.
 2. **State Logic**: In each state (`State_01` to `State_08`), the corresponding byte pattern (`P_Sn`) is parsed.
+
 - If bit 0 of `P_S1` is set, `Q1.D1` is set to TRUE.
 
 - If bit 1 of `P_S1` is set, `Q2.D1` is set to TRUE, and so on.
 
 - Simultaneously, the event `E1` is triggered on all adapters `Q1` through `Q8` to signal the change.
-3. **Transitions**: The transition to the next state occurs when:
+1. **Transitions**: The transition to the next state occurs when:
+
 - The explicit event is received (e.g., `S1_S2`).
 - OR the configured time (`DT_S1_S2`) has expired (via the `timeOut` adapter).
-- 4. **Cycle**: After **State_08**, the process transitions back to **State_01** (`S8_S1` or timeout), creating an infinite loop.
-5. **Reset**: The event `RESET` immediately interrupts the process, sets all outputs (`Q1` to `Q8`) to `FALSE`, and sets the state number to 0.
+- 1. **Cycle**: After **State_08**, the process transitions back to **State_01** (`S8_S1` or timeout), creating an infinite loop.
+1. **Reset**: The event `RESET` immediately interrupts the process, sets all outputs (`Q1` to `Q8`) to `FALSE`, and sets the state number to 0.
 
 ## Technical Features
 
@@ -84,7 +88,8 @@ The component operates as a finite state machine with a cyclic structure:
 - **Cam Switches**: Control of mechanical processes where multiple actuators (cylinders, valves) must be activated in a fixed sequence.
 - **Traffic Light Controls**: Cyclic sequence of red-yellow-green phases.
 - **Cleaning Cycles**: Rinsing, washing, and drying at recurring intervals.
-*
+-
+
 ## ⚖️ Comparison with Similar Function Blocks
 
 Unlike linear sequencers (without a loop), this function block is explicitly designed for recurring processes. It differs from simple counters in that an individual output pattern and time can be defined for each step. The use of AX adapters distinguishes it from standard IEC 61499 function blocks, which mostly use direct Boolean outputs, and makes it ideal for structured, object-oriented control designs.

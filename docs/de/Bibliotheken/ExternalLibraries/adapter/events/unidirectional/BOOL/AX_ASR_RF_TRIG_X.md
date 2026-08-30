@@ -3,6 +3,7 @@
 ![AX_ASR_RF_TRIG_X](./AX_ASR_RF_TRIG_X.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_ASR_RF_TRIG_X** dient der Erkennung von steigenden und fallenden Flanken eines booleschen Signals. Er bildet die erkannten Flanken auf ein Set/Reset-Ausgangssignal ab, wobei eine gekreuzte Zuordnung („crossed mapping“) verwendet wird: Die steigende Flanke löst einen Reset-Vorgang aus, die fallende Flanke einen Set-Vorgang. Der Baustein ist als reiner Adapterbaustein realisiert und nutzt intern den Standard-Funktionsblock `E_RF_TRIG`.

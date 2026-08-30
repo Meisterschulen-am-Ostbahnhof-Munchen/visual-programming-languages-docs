@@ -1,8 +1,9 @@
 # Exercise_110: Exercise on Integer Overflow
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_110`. It demonstrates an important phenomenon in digital data processing: variable overflow.
+This article describes the logiBUS® exercise `Uebung_110`. It demonstrates an important phenomenon in digital data processing: variable overflow
 ----
+
 ## Objective of the Exercise
 
 Understanding the limitations of data types. It shows what happens when the result of a calculation exceeds the maximum value range of a data type.
@@ -11,7 +12,7 @@ Understanding the limitations of data types. It shows what happens when the resu
 
 ## Description and Components
 
-[cite_start]The subapplication `Uebung_110.SUB` uses the data type `USINT` (Unsigned Short Integer)[cite: 1]. This has a value range from 0 to 255.
+[cite_start]The subapplication `Uebung_110.SUB` uses the data type `USINT` [Unsigned Short Integer](cite: 1). This has a value range from 0 to 255.
 
 ### Function Blocks (FBs)
 
@@ -32,8 +33,8 @@ Understanding the limitations of data types. It shows what happens when the resu
 
 **`USINT`** 3. The result in the controller is `400 - 256 = 144`.
 
-4. The comparison `144 > 200` fails (returns `FALSE`).
-5. The lamp on `Q1` remains off, even though a "true" value would be expected based on the logic.
+1. The comparison `144 > 200` fails (returns `FALSE`).
+2. The lamp on `Q1` remains off, even though a "true" value would be expected based on the logic.
 
 -----
 

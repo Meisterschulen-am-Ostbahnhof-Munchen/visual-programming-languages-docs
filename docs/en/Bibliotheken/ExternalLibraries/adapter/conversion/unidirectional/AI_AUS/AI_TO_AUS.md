@@ -4,6 +4,7 @@
 *Image of the function block – not included in the XML, therefore no automatically generated image is available.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AI_TO_AUS** function block is a composite function block that converts an **AI adapter** (data stream of type `INT`) into an **AUS adapter** (data stream of type `USINT`). It serves as a bridge between components that use different data types for analog input and output signals. The implementation uses the internal function block `F_INT_TO_USINT` from the `iec61131::conversion` library.

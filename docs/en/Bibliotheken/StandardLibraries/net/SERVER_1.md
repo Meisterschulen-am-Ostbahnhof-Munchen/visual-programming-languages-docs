@@ -37,6 +37,7 @@ The SERVER_1 block manages server-client connections through two main operations
 
 1. **Initialization/Deactivation**: The INIT event with the corresponding QI value activates or deactivates the server. Upon successful operation, INITO is triggered with status information.
 2. **Data Communication**:
+
 - Receiving: Incoming data from the client triggers the IND event and is available via RD_1.
 - Sending: The RSP event enables sending data via SD_1 to the connected client.
 

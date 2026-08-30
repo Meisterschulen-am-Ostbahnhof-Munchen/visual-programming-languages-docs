@@ -11,6 +11,7 @@
 <img width="1745" height="212" alt="image" src="https://github.com/user-attachments/assets/52b6d758-7780-49a2-98e0-8be5f868339f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `QUARTER_TO_STR_STATUS` dient der Konvertierung eines 2-Bit-Statuswerts (auch als "Quarter Byte" bezeichnet) in einen menschenlesbaren Text-String. Er ist Teil der `logiBUS::utils::quarter`-Bibliothek und wird typischerweise verwendet, um kompakte Statusinformationen aus Steuerungen oder Geräten für Anzeige-, Protokollierungs- oder Diagnosezwecke in eine verständliche Textform zu überführen.

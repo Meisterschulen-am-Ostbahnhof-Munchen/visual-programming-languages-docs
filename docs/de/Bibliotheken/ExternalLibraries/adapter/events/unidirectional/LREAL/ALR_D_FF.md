@@ -3,6 +3,7 @@
 ![ALR_D_FF](./ALR_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_D_FF** implementiert ein datengesteuertes Flip-Flop (D-Latch) mit Adapter‑basierter Schnittstelle. Er übernimmt einen Datenwert bei einem Taktereignis und stellt diesen am Ausgang zur Verfügung. Der Baustein kapselt die IEC‑61499‑Standardfunktion `E_D_FF_ANY` und bietet eine unidirektionale Adapter‑Anbindung für eine modulare Systemintegration.

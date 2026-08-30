@@ -3,6 +3,7 @@
 ![AL_SPLIT_8](./AL_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AL_SPLIT_8` verteilt ein eingehendes unidirektionales AL-Signal (Socket `IN`) auf acht identische Ausgänge (Plugs `OUT1` bis `OUT8`). Er wird als generischer Baustein deklariert und dient der einfachen Signalvervielfachung in 4diac‑Anwendungen.

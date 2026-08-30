@@ -3,9 +3,11 @@
 ![ATM_AX_TP](./ATM_AX_TP.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ATM_AX_TP** is a special timer function block that generates a time-limited pulse from an input signal. It implements the functionality of a **non-retriggerable pulse shaper**. The block is controlled via an AX adapter and outputs the result via another AX adapter; the pulse duration is specified via a separate ATM adapter. The adapter interfaces make it particularly easy to integrate into modular automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ No direct data outputs. The output value (Q) is provided via the **Q** adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|--------|----------|--------------------------------------------------|
+| ------------- | -------- | ---------- | -------------------------------------------------- |
 | **Q** | AX | Plug | Output: Provides the pulse signal |
 | **IN** | AX | Socket | Input: Receives the triggering signal |
 | **PT** | ATM | Socket | Input: Provides the pulse duration (pulse time) |
@@ -80,7 +82,7 @@ After the timer expires, E_TP automatically switches from ACTIVE to IDLE.
 ## Comparison with similar function blocks
 
 | Function block | Properties | Difference from ATM_AX_TP |
------------------|-------------------------------------------------------------------------------|------|
+----------------- | ------------------------------------------------------------------------------- | ------ |
 | **E_TP** (Standard) | Direct event/data connections, no adapter. | ATM_AX_TP encapsulates E_TP and provides adapters. |
 | **E_R_TRIG** | Edge detection without pulse extension. | Generates only a very short pulse, no time control. |
 | **E_CYCLE** | Cyclic timer, repeats pulses. | Single pulse. |

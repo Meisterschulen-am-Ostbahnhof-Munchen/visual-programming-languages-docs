@@ -3,9 +3,11 @@
 ![ATM_SPLIT_3](./ATM_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ATM_SPLIT_3** is a generic function block that splits an incoming adapter of type `adapter::types::unidirectional::ATM` into 3 separate outputs (OUT1, OUT2, OUT3). It serves to forward a time signal to 3 subsequent function blocks without modifying the data. The function block is implemented as a generic type (`GEN_ATM_SPLIT`) and is parameterized at runtime.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::ATM` | IN | Socket | Input signal (ATM) |
 | `adapter::types::unidirectional::ATM` | OUT1 | Plug | Output 1 (identical to IN) |
 | `adapter::types::unidirectional::ATM` | OUT2 | Plug | Output 2 (identical to IN) |

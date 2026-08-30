@@ -4,6 +4,7 @@
 ![AX_F_TRIG](./AX_F_TRIG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AX_F_TRIG** (Boolean falling edge detection) dient der Erkennung einer fallenden Flanke (Wechsel von TRUE auf FALSE) basierend auf einem Adapter-Interface. Er ist speziell für die Verwendung mit dem unidirektionalen Adaptertyp `AX` ausgelegt.

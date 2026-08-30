@@ -3,9 +3,11 @@
 ![ATM_AR_MULTIME](./ATM_AR_MULTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_AR_MULTIME** multiplies a time value (type TIME) by a numeric value -- the fully adapter-based variant of [AR_MULTIME](AR_MULTIME.md). Unlike AR_MULTIME, the time value (IN1) is also supplied via an adapter (type `ATM`) instead of a fixed data input. The block is classified as a standard arithmetic function according to IEC 61131-3.
+
 ## Interface Structure
 
 ### **Event Inputs**

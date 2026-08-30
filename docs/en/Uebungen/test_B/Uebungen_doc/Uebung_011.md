@@ -44,6 +44,7 @@ The logic waits for confirmation of the input at the terminal:
 <Connection Source="InputNumber_I1.IN" Destination="F_DWORD_TO_UDINT.IN"/>
 </DataConnections>
 ```
+
 ## Application Example
 
 **Setting Target Values**:

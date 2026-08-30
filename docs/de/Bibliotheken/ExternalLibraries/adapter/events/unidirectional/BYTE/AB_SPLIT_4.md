@@ -3,6 +3,7 @@
 ![AB_SPLIT_4](./AB_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AB_SPLIT_4** dient dazu, eine einzelne eingehende unidirektionale Adapterverbindung vom Typ `AB` auf vier parallele ausgehende Adapterverbindungen gleichen Typs zu verteilen. Er ist als generischer Baustein konzipiert und ermöglicht die Aufteilung eines Daten- oder Signalflusses auf mehrere nachgeschaltete Komponenten.
@@ -28,12 +29,12 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
-| Socket   | `IN` | `adapter::types::unidirectional::AB` | Eingehende unidirektionale Adapterverbindung |
-| Plug     | `OUT1` | `adapter::types::unidirectional::AB` | Erste ausgehende Adapterverbindung |
-| Plug     | `OUT2` | `adapter::types::unidirectional::AB` | Zweite ausgehende Adapterverbindung |
-| Plug     | `OUT3` | `adapter::types::unidirectional::AB` | Dritte ausgehende Adapterverbindung |
-| Plug     | `OUT4` | `adapter::types::unidirectional::AB` | Vierte ausgehende Adapterverbindung |
+| ---------- | ------ | ----- | -------------- |
+| Socket | `IN` | `adapter::types::unidirectional::AB` | Eingehende unidirektionale Adapterverbindung |
+| Plug | `OUT1` | `adapter::types::unidirectional::AB` | Erste ausgehende Adapterverbindung |
+| Plug | `OUT2` | `adapter::types::unidirectional::AB` | Zweite ausgehende Adapterverbindung |
+| Plug | `OUT3` | `adapter::types::unidirectional::AB` | Dritte ausgehende Adapterverbindung |
+| Plug | `OUT4` | `adapter::types::unidirectional::AB` | Vierte ausgehende Adapterverbindung |
 
 ## Funktionsweise
 

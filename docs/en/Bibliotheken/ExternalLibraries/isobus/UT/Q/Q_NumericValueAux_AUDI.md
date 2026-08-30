@@ -3,9 +3,11 @@
 ![Q_NumericValueAux_AUDI](./Q_NumericValueAux_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block implements the **Change Numeric Value** command according to ISO 11783-6 (Part 6, F.22). It is used to change the numeric value of an object and is only suitable for objects that have a numeric value attribute.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ This function block implements the **Change Numeric Value** command according to
 ### **Event Outputs**
 
 | Event | Type | Comment | Carried Variable |
-|----------|--------|-----------------------------------|-----------------------|
+| ---------- | -------- | ----------------------------------- | ----------------------- |
 | `INITO` | EInit | Initialization Acknowledgement | – |
 | `CNF` | Event | Acknowledgement of Requested Service | `STATUS`, `s16result` |
 
@@ -30,14 +32,14 @@ This function block implements the **Change Numeric Value** command according to
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|-------------|--------|----------------------------|
+| ------------- | -------- | ---------------------------- |
 | `STATUS` | STRING | Service Status |
 | `s16result` | INT | Return Value (see description) |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-|-----------------|----------|--------------------------------------|-----------------------------|
+| ----------------- | ---------- | -------------------------------------- | ----------------------------- |
 | `u32OldValue` | Plug | `adapter::types::unidirectional::AUDI` | Old Value of ID |
 | `u32NewValue` | Socket | `adapter::types::unidirectional::AUDI` | New ID Value |
 

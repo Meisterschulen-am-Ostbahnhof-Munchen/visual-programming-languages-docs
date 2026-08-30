@@ -3,9 +3,11 @@
 ![AL_SPLIT_2](./AL_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_2** is used to split an incoming unidirectional adapter signal into two identical outputs. It is designed as a generic function block, so the specific adapter type is only determined during use.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **AL_SPLIT_2** is used to split an incoming unidirectional ad
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AL` | **Socket** (Input) | `IN` | Input signal distributed to both outputs |
 | `adapter::types::unidirectional::AL` | **Plug** (Output) | `OUT1` | First output with the same adapter signal as `IN` |
 | `adapter::types::unidirectional::AL` | **Plug** (Output) | `OUT2` | Second output with the same adapter signal as `IN` |
@@ -57,7 +59,7 @@ The function block does not have its own state management. It can be considered 
 The 4diac IDE offers various splitter components for different signal types:
 
 | Component | Signal Type | Outputs | Special Feature |
-|----------|-----------|-----------|-------------|
+| ---------- | ----------- | ----------- | ------------- |
 | `AL_SPLIT_2` | Adapter (unidirectional) | 2 | Generic, no data/events |
 | `SPLIT` | Events | 2 | Distributes events without data |
 | `E_SPLIT` | Events (with data) | 2 | Distributes events along with accompanying data |

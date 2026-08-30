@@ -3,6 +3,7 @@
 ![AB_OR_10](./AB_OR_10.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AB_OR_10** is a generic function block for the bitwise OR operation across 10 input values of type `BYTE` (8-bit bit pattern (byte)). Unlike the Boolean operation on single truth values (as in the `AX_OR` blocks), every bit of the data word is combined independently here.

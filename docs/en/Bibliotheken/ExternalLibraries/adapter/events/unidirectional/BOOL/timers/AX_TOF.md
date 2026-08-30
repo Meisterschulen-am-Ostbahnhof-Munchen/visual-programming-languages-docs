@@ -40,6 +40,7 @@ The AX_TOF function block is a standard timer function block for off-delay timin
 
 The AX_TOF block implements an off-delay. When an incoming signal is received via the IN adapter, the output is activated immediately. When the input signal is switched off, the timer starts and keeps the output active for the set time PT before it is deactivated.
 ...
+
 ## Technical Features
 
 - Internally uses the E_TOF standard timer block

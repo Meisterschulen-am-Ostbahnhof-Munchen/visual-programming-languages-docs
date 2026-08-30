@@ -1,12 +1,15 @@
 # ST01B
 
 * * * * * * * * * *
+
 ## Introduction
 
 The provided XML file describes the 4diac **data type** `ST01B` (Structure with 1 BYTE), not a function block (FB). This data type defines a simple data structure containing a single byte field. The following documentation attempts to apply the requested structure for a function block as closely as possible, although many sections are not applicable to a pure data type.
+
 ## Interface Structure
 
 Since `ST01B` is a data type and not a function block, it does not have event or data interfaces in the sense of a function block. Instead, it defines an internal structure for data.
+
 ## **Event Inputs**
 
 Not applicable, as `ST01B` is a data type and not a function block.

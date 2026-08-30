@@ -3,9 +3,11 @@
 ![AUS_TO_AB](./AUS_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **OFF_TO_AB** is a composite function block for converting a unidirectional **OFF adapter** (USINT data type) to an **AB adapter** (BYTE data type). It serves as a bridge between different adapter interfaces in automation systems and enables the seamless integration of components based on different data types. Internally, the block uses the standard conversion block *F_USINT_TO_BYTE* from the IEC 61131 library.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ Data is passed through the **AB_OUT** adapter:
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-----------|----------------------------------------|----------|--------------|
+| ----------- | ---------------------------------------- | ---------- | -------------- |
 | **AUS_IN** | `adapter::types::unidirectional::AUS` | Socket | Input adapter for USINT data and events. |
 | **AB_OUT** | `adapter::types::unidirectional::AB` | Plug | Output adapter for BYTE data and events. |
 

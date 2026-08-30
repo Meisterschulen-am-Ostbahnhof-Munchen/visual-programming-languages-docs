@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) **AR_MUL_2** is a generic arithmetic block for the 4diac IDE. It is used to multiply two values that are transmitted via unidirectional adapters. By encapsulating the mathematical operation in an adapter interface, this block enables clean, modular, and clear modeling of calculations within IEC 61499 applications.
@@ -55,6 +56,7 @@ Since this is a generic function block (`GEN_AR_MUL`), its implementation is fle
 - **Generic Function Block:** The attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AR_MUL'` allows the function block to be used for various numeric data types, provided the adapters support them.
 - **Unidirectional Adapters:** Using the type `unidirectional::AR` ensures a clean data flow without feedback loops, which increases application stability and minimizes latency.
 - **Compiler Affiliation:** The function block is assigned to the package `adapter::iec61131::arithmetic` and conforms to the IEC 61499-2 standard.
+
 - ---
 
 ## State Overview

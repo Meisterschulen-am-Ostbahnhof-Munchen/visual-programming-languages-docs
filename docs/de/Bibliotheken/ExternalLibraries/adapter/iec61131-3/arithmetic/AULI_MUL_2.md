@@ -6,6 +6,7 @@
 *Kein Bild verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_MUL_2` dient zur Durchführung einer arithmetischen Multiplikation von zwei Werten. Es handelt sich hierbei um einen generischen Funktionsbaustein (`GEN_AULI_MUL`), dessen Schnittstellen vollständig über Adapter des Typs `AULI` (unidirektional) realisiert sind. Dies ermöglicht eine saubere Kapselung von Daten und Events und reduziert den Verdrahtungsaufwand innerhalb der 4diac-IDE.

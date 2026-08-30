@@ -1,10 +1,12 @@
 Here is the documentation for the exercise based on the provided XML data:
+
 # Exercise_176: Exercise for E_TRIG
 
 ![Image of the exercise, if available]
 ![Uebung_176_network](./Uebung_176_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `Uebung_176` exercise focuses on generating events on rising edges. The emphasis is on understanding and applying the `E_TRIG` (Edge Trigger) function block within an IEC 61499 application. The exercise provides a basic framework that must be completed by the user.
@@ -33,12 +35,12 @@ The `E_TRIG` block is used to forward or generate events only when the Boolean i
 
 This exercise is designed as a template. Currently, no connections are defined in the network, but the central block `E_TRIG_1` is in place.
 
-### Learning Objectives and Tasks:
+### Learning Objectives and Tasks
 
 - **Understanding Edge Detection**: Learn how signals are monitored for state changes.
 - **TODO**: The network contains a comment block with the content "TODO". This indicates that the learner must establish the necessary event and data connections to ensure functionality.
 
-### Starting the Exercise:
+### Starting the Exercise
 
 1. Open `Uebung_176` in the 4diac IDE.
 2. Note the `E_TRIG_1` block placed at coordinates (-3000, -1000).

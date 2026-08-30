@@ -6,7 +6,7 @@
 This exercise demonstrates the use of an **E_CTU** (event counter) in combination with an **event brake**, implemented using an **E_D_FF_ANY** (E_D flip-flop with hysteresis and minimum time). The goal is to only forward the counter result to a numerical output if the counter value remains stable for a specific period. This suppresses bounce or short-term fluctuations.
 
 | Block Name | Type | Parameter / Remark |
-|-------------|------|-----------------------|
+| ------------- | ------ | ----------------------- |
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` |
 | DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` |
 | E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` (Clock generator for counting pulses) |
@@ -34,17 +34,17 @@ The clock generator `E_CYCLE` is started as soon as `DigitalInput_CLK_I1` sends 
 
 The clock generator `E_CYCLE` is started as soon as `DigitalInput_CLK_I1` sends an event (`IND`). It is stopped by an event from `DigitalInput_CLK_I2`. The cyclic event output `EO` from `E_CYCLE` triggers the **counter input `CU`** from `E_CTU`.
 
-2. **Counter Reset**
+1. **Counter Reset**
 
 An event from `DigitalInput_CLK_I2` is additionally routed to the **Reset Input `R`** from `E_CTU`.
 
-3. **Counter Outputs**
+1. **Counter Outputs**
 
 The counter outputs two events:
 
 - `CUO` (Counter Overflow) – becomes active when the counter value `CV` reaches the parameter `PV` (here 5).
 - `RO` (Reset Overflow) – is activated when the counter is reset and exceeds its range (not relevant here, but both events are used).
-4. **Event Distribution and Merging**
+1. **Event Distribution and Merging**
 
 CUO` and `RO` are jointly routed to input `EI` of `E_SPLIT_4`.
 
@@ -52,17 +52,17 @@ E_SPLIT_4` distributes each incoming event to all four outputs `EO1`…`EO4`. Th
 
 **Effect:** Every event from `E_CTU` (whether `CUO` or `RO`) is immediately passed to the output `EO` of `E_MERGE_4` – creating a **logical OR** connection between the two events.
 
-5. **Event Brake via `E_D_FF_ANY`**
+1. **Event Brake via `E_D_FF_ANY`**
 
 The combined event feeds the **clock input `CLK`** from `E_D_FF_ANY`. This function block only passes the **data value `D`** (the current counter reading `CV`) to the output `Q` if the value remains stable for at least `Tmin = 1s` (hysteresis of `25` units).
 
 This filters out short spikes in the counter reading.
 
-6. **Numerical Output**
+1. **Numerical Output**
 
 The stable counter value `Q` from `E_D_FF_ANY` is passed via the data connection to input `u32NewValue` of `Q_NumericValue`. The event `EO` from `E_D_FF_ANY` triggers the output via input `REQ`.
 
-7. **Digital Output**
+1. **Digital Output**
 
 Simultaneously, the same combined event from `E_MERGE_4` is also routed to the **clock input `CLK`** of a standard `E_D_FF`. This output takes the **binary data value `Q`** from `E_CTU` (the counter status: whether the threshold has been reached) and passes it via `EO` to `DigitalOutput_Q1`.
 
@@ -78,6 +78,7 @@ The output `DigitalOutput_Q1` is therefore always activated when the counter rea
 - Fundamentals of the 4diac IDE: Creating sub-applications, connecting function blocks.
 - Understanding of event and data edges.
 - Experience with logiBUS and isobus libraries (when using hardware simulation).
+
 1. Import the sub-application `Uebung_080e4` into your 4diac project.
 2. Ensure that the required libraries (`logiBUS`, `iec61499`, `isobus`) are available.
 3. Assign the inputs/outputs `Input_I1`, `Input_I2`, `Output_Q1`, and `OutputNumber_N1` to appropriate hardware or simulation addresses.

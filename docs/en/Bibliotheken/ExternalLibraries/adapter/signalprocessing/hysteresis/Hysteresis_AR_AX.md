@@ -3,6 +3,7 @@
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `Hysteresis_AR_AX` is a basic function block (BFB) for event-driven signal processing according to IEC 61499. It performs analog-to-digital conversion of an analog input signal, taking into account an adjustable hysteresis. This prevents small signal fluctuations or noise around a threshold value from causing rapid, unwanted switching back and forth of the digital output (oscillation).
@@ -50,7 +51,7 @@ The output switches on (`OUTPUT.D1 := TRUE`) when the input value reaches or exc
 
 $$\text{INPUT.D1} \ge \text{THRESHOLD.D1} + \frac{|\text{HYSTERESIS.D1}|}{2.0}$$
 
-2. **Switch-off Condition:**
+1. **Switch-off Condition:**
 
 The output switches off (`OUTPUT.D1 := FALSE`) when the input value falls well below the lower limit of the hysteresis band:
 
@@ -77,6 +78,7 @@ The behavior is controlled via the following states in the Execution Control Cha
 - **Two-Point Temperature Control:** Controls a heating system. The heating system switches on when the temperature falls below the setpoint minus half the hysteresis and switches off again only when the temperature exceeds the setpoint plus half the hysteresis.
 - **Level Control:** Switches pumps in tanks on and off. Prevents the pumps from switching continuously due to turbulent liquid surfaces (wave motion).
 - **Limit Monitoring in Process Areas:** Converts noisy analog sensor values (e.g., pressure, flow rate) into stable digital alarm signals.
+
 - ## Comparison with Similar Components
 
 Unlike classic comparator components (such as `GT` or `LT`), which react immediately to even the slightest threshold violation, the `Hysteresis_AR_AX` buffers the signal through the defined band.

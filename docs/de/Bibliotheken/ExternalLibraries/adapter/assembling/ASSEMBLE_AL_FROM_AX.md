@@ -90,7 +90,7 @@ Ein ereignisgesteuertes Verhalten:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Eingänge | Ausgangstyp | Besonderheit |
-|----------|----------------|-------------|--------------|
+| ---------- | ---------------- | ------------- | -------------- |
 | **ASSEMBLE_AL_FROM_AX** | 64 BOOL (AX) | LWORD (AL) | Adapter‑basiert mit Flip‑Flop‑Pufferung |
 | `ASSEMBLE_DWORD_FROM_BOOLS` | 32 BOOL | DWORD | Klassische Daten‑Ein‑/Ausgänge, ohne Adapter |
 | `ASSEMBLE_WORD_FROM_BOOLS` | 16 BOOL | WORD | Wie oben, für 16‑Bit‑Wort |

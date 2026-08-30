@@ -3,9 +3,11 @@
 ![GET_LTIME](./GET_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **GET_LTIME** is used to read the current value of an LTIME variable and provide it as a buffered output value. It accesses the source via an InOut interface and makes the read value available at the output as soon as an event occurs. This enables controlled, one-time reading of a time variable.
+
 ## Interface Structure
 
 ### **Event Inputs**

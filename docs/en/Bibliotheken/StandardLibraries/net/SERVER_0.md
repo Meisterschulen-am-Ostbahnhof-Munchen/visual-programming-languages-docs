@@ -1,10 +1,12 @@
 # SERVER_0
 
 * * * * * * * * * *
+
 ## Introduction
 
 The SERVER_0 function block serves as the counterpart to a CLIENT_0 block. It enables the establishment of a server-client connection without exchanging user data via data inputs/outputs.
 ![SERVER_0](SERVER_0.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,6 +35,7 @@ The SERVER_0 block manages the connection.
 
 1. **Initialization**: Activation via INIT.
 2. **Synchronization**:
+
 - When the client sends a request (REQ), the IND event is triggered on the server.
 - The server can then respond with RSP, which triggers the CNF event on the client.
 

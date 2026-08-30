@@ -4,6 +4,7 @@ Hysteresis function
 This hysteresis function switches the output high if the input signal reaches obove val + hys/2
 and will switch to low when the input falls back below val - hys/2 value.
 a separate output mid is set if the input stays between low and high value.
+
 ## Interface
 
 ### Event inputs

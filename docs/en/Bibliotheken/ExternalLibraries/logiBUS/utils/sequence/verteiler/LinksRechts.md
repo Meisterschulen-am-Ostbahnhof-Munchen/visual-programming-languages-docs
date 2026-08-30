@@ -4,6 +4,7 @@
 ![LinksRechts_ecc](./LinksRechts_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `LinksRechts` is a fundamental building block for controlling bidirectional motion, such as a drive that can operate in both clockwise and counterclockwise directions. It implements a simple prioritization logic where clockwise rotation takes precedence over counterclockwise rotation unless a specific counterclockwise command is active. The block also allows pausing the motion.
@@ -50,6 +51,7 @@ The priority logic is defined as follows: If `EIN` is active (`TRUE`), `DI_Recht
 - **Pause States**: There are two separate pause states (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction. Upon reactivation (`EIN=TRUE`), the last active direction is resumed, unless a specific run command (`DI_Rechts`/`DI_Links`) is pending.
 
 **Pause States**: Two separate pause states exist (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction.
+
 ## State Overview
 
 The ECC (Execution Control Chart) of the function block comprises five states:

@@ -3,6 +3,7 @@
 ![GET_WORD](./GET_WORD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_WORD** dient dem Auslesen eines WORD-Werts aus einer InOut-Variablen und stellt diesen als gepufferten Ausgang zur Verfügung. Er wird typischerweise eingesetzt, um einen aktuellen Wert von einer Hardware-peripherie oder einer gemeinsam genutzten Speicherstelle zu erfassen und für die weitere Verarbeitung im Steuerungsprogramm bereitzustellen.

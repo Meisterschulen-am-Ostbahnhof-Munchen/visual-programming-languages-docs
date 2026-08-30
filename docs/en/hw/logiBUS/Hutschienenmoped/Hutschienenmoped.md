@@ -3,6 +3,7 @@
 ## 🎧 Podcast
 
 - [DIN Rail Moped XL: ISOBUS ECU Development ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hutschienenmoped-XL-ISOBUS-ECU-Entwicklung-e368hdg)
+
 ## 🔌 I/O
 
 ### Analog Inputs
@@ -20,7 +21,7 @@ The voltage divider is NOT in the controller but in the Angle! Caution: If you c
 ### Digital Inputs
 
 | Input: | PIN (ESP32) | Wire | Knob |
-|----------|---------------|-------|-------|
+| ---------- | --------------- | ------- | ------- |
 | Input_I1 | 26 | yellow | red |
 | Input_I2 | 32 | white | blue |
 | Input_I3 | 39 | - | gray |
@@ -32,7 +33,7 @@ The voltage divider is NOT in the controller but in the Angle! Caution: If you c
 ### Digital Outputs
 
 | Output: | PIN (ESP32) |
-|-----------|---------------|
+| ----------- | --------------- |
 | Output_Q1 | 19 |
 | Output_Q2 | 23 |
 | Output_Q3 | 33 |

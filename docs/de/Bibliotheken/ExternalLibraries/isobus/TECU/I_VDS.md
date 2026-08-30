@@ -28,7 +28,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 ### **Daten-Ausgänge**
 
 | Parameter | Typ | SPN | Bit | Skalierung | Bereich | Beschreibung |
-|-----------|-----|-----|-----|------------|---------|--------------|
+| ----------- | ----- | ----- | ----- | ------------ | --------- | -------------- |
 | `QO` | BOOL | - | 1 | - | TRUE/FALSE | Ereignisqualifier |
 | `STATUS` | STRING | - | - | - | - | Systemstatusmeldung |
 | `CompassBearing` | UINT | 165 | 16 | 1/128°/bit | 0-360° | Kompassrichtung |
@@ -67,7 +67,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 ## Datenformate
 
 | Parameter | Beispielwert | Bedeutung |
-|-----------|--------------|-----------|
+| ----------- | -------------- | ----------- |
 | `CompassBearing` | 16384 | 128° (16384 × 1/128) |
 | `NavigationBasedVehicleSpeed` | 12800 | 50 km/h (12800 × 1/256) |
 | `Pitch` | 0xFFFF | Nicht verwendet |
@@ -76,7 +76,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 ## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_VDS | Standard-GPS | Premium-Navi |
-|---------|-------|-------------|--------------|
+| --------- | ------- | ------------- | -------------- |
 | Genauigkeit | ±0.1° Richtung | ±5° | ±0.05° |
 | Geschwindigkeit | ±0.1% | ±2% | ±0.05% |
 | Update-Rate | 10Hz | 1Hz | 20Hz |

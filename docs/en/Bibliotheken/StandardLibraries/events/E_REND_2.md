@@ -1,6 +1,7 @@
 # E_REND_2
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_REND_2` is the generic 2-input variant of the rendezvous block `E_REND` (2 inputs). It only triggers `EO` once it has received at least one event since the last reset from **all** 2 inputs (`EI1`, `EI2`) — a logical AND across 2 asynchronous event streams.

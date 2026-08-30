@@ -3,6 +3,7 @@
 ![ADI_SPLIT_8](./ADI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ADI_SPLIT_8` dient dazu, einen einzelnen unidirektionalen ADI-Adapter (Application Data Interface) auf acht baugleiche Ausgangs-Adapter aufzuteilen. Er ist als generischer Baustein realisiert, der durch die Angabe eines `GenericClassName`-Attributs an verschiedene ADI-Kontexte angepasst werden kann. Der FB vereinfacht die Signaldistribution in Steuerungsanwendungen, indem er einen eingehenden Adapter-Pfad ohne Datenverlust auf mehrere Empfänger verteilt.

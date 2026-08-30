@@ -1,10 +1,11 @@
 # Exercise_020e2_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_FB_TOF; Switch-Off Delay
 
-This article describes the logiBUS® exercise `Uebung_020e2_AX`. It uses the adapter-based IEC 61131-3 timer block `AX_FB_TOF`, which requires regular triggering (clocking).
+This article describes the logiBUS® exercise `Uebung_020e2_AX`. It uses the adapter-based IEC 61131-3 timer block `AX_FB_TOF`, which requires regular triggering (clocking)
 ----
+
 ## Objective of the Exercise
 
-Implementation of a switch-off delay that also updates its status (`ET`) during the overrun time.
+Implementation of a switch-off delay that also updates its status (`ET`) during the overrun time
 -----
 
 ## Description and Components

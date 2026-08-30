@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_SUB_2` ist ein generischer Funktionsbaustein (Generic FB), der für die Durchführung einer arithmetischen Subtraktion (`OUT = IN1 - IN2`) entwickelt wurde. Anstatt klassischer Daten- und Ereignispins nutzt dieser Baustein Adapter-Schnittstellen des Typs `unidirectional::AULI`. Dies ermöglicht eine strukturierte und modularisierte Signalübertragung in IEC 61499 Applikationen.
@@ -61,6 +62,7 @@ Da es sich um einen generischen Baustein (`GEN_AULI_SUB`) handelt, kann sich die
 ## Zustandsübersicht
 
 Der Baustein verhält sich rein kombinatorisch bzw. ereignisgesteuert:
+
 1.  **Warten auf Input:** Der Baustein verbleibt im Ruhezustand, bis ein Ereignis an einem der Eingangs-Adapter (`IN1` oder `IN2`) signalisiert wird.
 2.  **Berechnung:** Bei Signaländerung/Ereignis wird die Subtraktion durchgeführt.
 3.  **Ausgabe:** Das Ergebnis wird unmittelbar an den Plug `OUT` übergeben und das Ausgangsereignis ausgelöst.
@@ -78,6 +80,7 @@ Der Baustein verhält sich rein kombinatorisch bzw. ereignisgesteuert:
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-Subtraktionsbaustein (z. B. `SUB` aus der IEC 61131-3 Standardbibliothek) bietet `AULI_SUB_2` folgende Vorteile:
+
 -   **Reduzierte Komplexität:** Statt einzelner Leitungen für Event (REQ/CNF) und Daten (IN1, IN2, OUT) bündeln die `AULI`-Adapter alle relevanten Informationen in einer einzigen Verbindung.
 -   **Modularität:** Das Design eignet sich hervorragend für serviceorientierte Architekturen in verteilten Systemen.
 

@@ -3,6 +3,7 @@
 ![Uebung_218b_network](./Uebung_218b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a down counter according to IEC 61131-3 of type **FB_CTD_UDINT** (count value as UDINT).
@@ -18,9 +19,10 @@ This exercise consists of a subapplication (SubAppType) containing five function
 
 All FBs used are described below.
 
-### Sub-Blocks:
+### Sub-Blocks
 
 1. **FB_CTD_UDINT** (IEC 61131-3 Down Counter)
+
 - **Type**: `iec61131::counters::FB_CTD_UDINT`
 - **Parameters**:
 - `PV` = `UDINT#10` (default value)
@@ -55,7 +57,7 @@ CV` (UDINT) – current counter reading
 
 Provides the physical digital input I1 (e.g., push button or sensor) in the system. The IND event is triggered when the state changes.
 
-3. **Input_LD** (Digital Input I2)
+1. **Input_LD** (Digital Input I2)
 
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**:
@@ -69,7 +71,7 @@ Provides the physical digital input I1 (e.g., push button or sensor) in the syst
 
 Identical to Input_CD, but connected to physical input I2 – serves as a load pulse for the counter.
 
-4. **Output_Q1** (Digital Output Q1)
+1. **Output_Q1** (Digital Output Q1)
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
@@ -83,7 +85,8 @@ Identical to Input_CD, but connected to physical input I2 – serves as a load p
 
 Sets the physical digital output Q1 to the value present at the data input OUT. Q1 becomes active as soon as the counter Q = TRUE.
 
-5. **Q_NumericValue_PHYS_LREAL** (Terminal Output)
+1. **Q_NumericValue_PHYS_LREAL** (Terminal Output)
+
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYS_LREAL`
 - **Parameters**:
 - `stObj` = `OutputNumber_N3` (Reference to the terminal output object)
@@ -122,6 +125,7 @@ The flow is controlled by the event and data connections in the SubAppNetwork:
 - **Difficulty Level**: Easy to medium – suitable for getting started with counter logic and the use of physical output blocks.
 - **Prerequisites**: Basic knowledge of the 4diac IDE and simple IEC 61131-3 components.
 - **Operation**:
+
 1. Connect the physical inputs I1 (down count button) and I2 (load button).
 2. Output Q1 switches on as soon as the counter reading reaches zero.
 3. The terminal (OutputNumber_N3) displays the current counter reading as a real-time value.

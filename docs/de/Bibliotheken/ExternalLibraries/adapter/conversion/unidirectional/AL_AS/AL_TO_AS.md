@@ -3,6 +3,7 @@
 ![AL_TO_AS](./AL_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_TO_AS** ist ein Composite-Baustein, der einen unidirektionalen AL-Adapter (Daten vom Typ LWORD) in einen unidirektionalen AS-Adapter (Daten vom Typ SINT) umwandelt. Er ermöglicht die nahtlose Integration von Komponenten, die mit unterschiedlichen Datentypen arbeiten, indem er die Signale konvertiert und über die jeweiligen Adapter-Schnittstellen weiterreicht.
@@ -62,7 +63,7 @@ Der FB besitzt keinen eigenen Zustandsautomaten. Sein Verhalten ist rein kombina
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingangstyp | Ausgangstyp | Besonderheit |
-|----------|-------------|-------------|--------------|
+| ---------- | ------------- | ------------- | -------------- |
 | **AL_TO_AS** | LWORD (Adapter) | SINT (Adapter) | Composite; verwendet `F_LWORD_TO_SINT` |
 | `F_LWORD_TO_SINT` | LWORD (Daten) | SINT (Daten) | Reiner Datenkonverter, keine Adaptereinbindung |
 | `F_LWORD_TO_DINT` | LWORD | DINT | Konvertierung zu 32‑Bit-Integer |

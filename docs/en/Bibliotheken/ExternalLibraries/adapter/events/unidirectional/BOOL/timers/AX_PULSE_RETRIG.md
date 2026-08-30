@@ -3,15 +3,17 @@
 ![AX_PULSE_RETRIG](./AX_PULSE_RETRIG.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_PULSE_RETRIG** function block is a retriggerable pulse shaper with an AX adapter interface. It generates a pulse with a predefined duration (PT) at its output. A restart command within the pulse duration resets the timer and extends the pulse. This block is typically used to generate precisely timed, extendable output signals in automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | **REQ** | EVENT | Service request to start or restart the timer (connected to PT) |
 | **R** | EVENT | Reset Timer (End Pulse Immediately) |
 
@@ -55,7 +57,7 @@ This function block does not have direct data outputs. Output data is provided v
 This function block maps the states of the internal `E_PULSE_RETRIG`:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | No pulse active; output Q = FALSE |
 | **PULSE** | Pulse running; output Q = TRUE; timer running. A REQ event returns to PULSE with a new timer start. |
 
@@ -71,7 +73,7 @@ This function block maps the states of the internal `E_PULSE_RETRIG`:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-|----------|-------------|
+| ---------- | ------------- |
 | **E_PULSE** | Simple pulse without retrigger – one-time timer start, no restart upon subsequent request. |
 | **AX_PULSE_RETRIG** | Retriggerable version with AX adapter (event + data). |
 | **TON / TOF** | Delay blocks (turn-on delay / turn-off delay) – no pulse shaper. |

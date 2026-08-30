@@ -3,6 +3,7 @@
 ![AUS_SPLIT_9](./AUS_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_SPLIT_9** ist ein generischer Baustein, der ein eingehendes AUS‑Signal auf neun separate Ausgänge verteilt. Er dient als Fan‑out für unidirektionale Adapterverbindungen und eignet sich besonders für Anwendungen, in denen ein Signal parallel an mehrere Empfänger weitergeleitet werden muss.
@@ -55,7 +56,7 @@ Der Baustein besitzt keine eigenen Zustände oder eine Ereignisablaufsteuerung (
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Ausgänge | Besonderheit |
-|----------|-----|----------|--------------|
+| ---------- | ----- | ---------- | -------------- |
 | AUS_SPLIT_9 | Adapter | 9 | Generisch, für unidirektionale AUS‑Adapter |
 | AUS_SPLIT_4 | Adapter | 4 | Geringere Ausgangsanzahl |
 | SPLIT_1_2 (z.B. für Daten) | Daten | beliebig | Arbeitet mit Daten‑Ereignis‑Kombinationen |

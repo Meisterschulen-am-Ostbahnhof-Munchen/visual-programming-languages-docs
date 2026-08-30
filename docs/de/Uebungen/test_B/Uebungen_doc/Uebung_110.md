@@ -14,7 +14,7 @@ Verständnis der Begrenzung von Datentypen. Es wird gezeigt, was passiert, wenn 
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_110.SUB` nutzt den Datentyp `USINT` (Unsigned Short Integer)[cite: 1]. Dieser hat einen Wertebereich von 0 bis 255.
+[cite_start]Die Subapplikation `Uebung_110.SUB` nutzt den Datentyp `USINT` [Unsigned Short Integer](cite: 1). Dieser hat einen Wertebereich von 0 bis 255.
 
 ### Funktionsbausteine (FBs)
 

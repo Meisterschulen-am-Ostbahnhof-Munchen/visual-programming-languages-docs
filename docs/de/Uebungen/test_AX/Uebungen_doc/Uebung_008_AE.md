@@ -3,6 +3,7 @@
 ![Uebung_008_AE_network](./Uebung_008_AE_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen einfachen Blinker (Wechselblinker) unter Verwendung von Adapter-Funktionsbausteinen (FBs) für die ereignisgesteuerte Logik. Der Kern besteht aus einem Zyklusgeber (AE_CYCLE), einem Umschalter (AX_SWITCH) und einem SR-Flipflop (AX_SR). Über einen Aufteiler (AX_SPLIT_2) und einen Zusammenführer (AX_AE_MERGE) wird die Rückkopplung und die Ausgabe auf einen digitalen Ausgang realisiert. Die Übung demonstriert die Nutzung von Ereignis- und Adapterverbindungen in der 4diac-IDE.

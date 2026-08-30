@@ -3,6 +3,7 @@
 ![IA_WBSD](./IA_WBSD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distance) dient als Schnittstellen‑Wrapper für die ISOBUS‑Kommunikation radbasierter Geschwindigkeits‑ und Distanzwerte gemäß ISO 11783‑7. Er kapselt den internen Baustein `I_WBSD` und stellt dessen Funktionalität über standardisierte Adapter‑Anschlüsse bereit.

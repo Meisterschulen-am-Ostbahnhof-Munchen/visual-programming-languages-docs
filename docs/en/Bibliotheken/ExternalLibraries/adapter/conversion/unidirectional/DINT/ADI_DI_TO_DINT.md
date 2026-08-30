@@ -4,6 +4,7 @@
 
 The ADI_DI_TO_DINT function block is a composite function block used to convert the ADI adapter format to a DINT value.
 ![ADI_DI_TO_DINT](ADI_DI_TO_DINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

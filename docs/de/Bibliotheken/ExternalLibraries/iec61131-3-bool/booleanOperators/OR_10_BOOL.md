@@ -3,6 +3,7 @@
 <img width="1189" height="416" alt="image" src="https://github.com/user-attachments/assets/fcefab43-d591-4163-96ce-61260ebfac5d" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_10_BOOL` ist ein generischer Baustein zur Berechnung der logischen ODER-Verknüpfung. Er führt die ODER-Operation über bis zu zehn separate boolesche Eingangswerte aus und gibt das Ergebnis auf einem einzigen Ausgang aus. Dieser Baustein ist gemäß der Norm IEC 61131-3 klassifiziert und dient als Standardfunktion für bitweise Operationen in Steuerungsanwendungen.

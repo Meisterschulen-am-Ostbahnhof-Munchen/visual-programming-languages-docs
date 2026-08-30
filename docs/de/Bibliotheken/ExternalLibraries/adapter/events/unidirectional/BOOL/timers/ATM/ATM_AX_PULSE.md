@@ -5,6 +5,7 @@
 *Bild nicht verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ATM_AX_PULSE** ist ein standardisierter Timerbaustein zur Erzeugung eines nicht nachtriggerbaren Impulses (non‑retriggerable). Er wird über die Adapter-Schnittstellen **PT** (ATM) und **Q** (AX) konfiguriert und ausgelesen. Der Baustein entspricht der IEC 61499‑2 Norm und ist Teil der Bibliothek **adapter::events::unidirectional::timers**.

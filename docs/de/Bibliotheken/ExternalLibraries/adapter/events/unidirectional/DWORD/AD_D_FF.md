@@ -3,6 +3,7 @@
 ![AD_D_FF](./AD_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_D_FF** realisiert ein **Data-Latch (D‑Flipflop)**. Er übernimmt einen Datenwert bei einem eingehenden Ereignis und hält diesen Wert bis zur nächsten Übernahme bereit. Die Schnittstelle ist ausschließlich über standardisierte **Adapter** definiert, was eine flexible Verkabelung in komplexen Automatisierungssystemen ermöglicht.

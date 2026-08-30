@@ -3,6 +3,7 @@
 ![AE_SPLIT_9](./AE_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AE_SPLIT_9 dient dazu, ein eingehendes unidirektionales Adapter-Event (AE) auf neun identische Ausgänge aufzuteilen. Er ist als generischer Baustein implementiert und ermöglicht die Verteilung von Ereignissen an mehrere nachgeschaltete Funktionsblöcke.

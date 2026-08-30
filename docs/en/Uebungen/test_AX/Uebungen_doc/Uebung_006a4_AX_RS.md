@@ -3,6 +3,7 @@
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the **Reset-Dominant Toggle Flip-Flop (AX_FB_RS_T_FF)** with an adapter interface in the 4diac IDE.
@@ -20,7 +21,7 @@ The goal is to understand the behavior of a **reset-dominant** toggle flip-flop 
 ### Parameter
 
 | FB | Parameter | Value |
-|----|-----------|------|
+| ---- | ----------- | ------ |
 | DigitalInput_SET | `QI` | `TRUE` |
 | DigitalInput_SET | `Input` | `Input_I1` |
 | DigitalInput_RESET | `QI` | `TRUE` |

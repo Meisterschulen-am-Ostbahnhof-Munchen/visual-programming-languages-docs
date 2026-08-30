@@ -1,10 +1,12 @@
 # XOR_9_BOOL
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `XOR_9_BOOL` is a generic block for calculating the logical exclusive OR (XOR) operation for up to nine Boolean input signals. It implements an n-ary XOR function where the output is `TRUE` if and only if there is an odd number of active inputs, such as `TRUE`. The block complies with the IEC 61131-3 standard and is designed for use in control applications that require checking for odd parity or specific selection or monitoring logic.
 ![XOR_9_BOOL](XOR_9_BOOL.svg)
+
 ## Interface Structure
 
 The function block has a simple event-driven interface with a request event and an acknowledge event.
@@ -59,13 +61,14 @@ The function block does not have an internal state in the sense of a memory. Its
 - **Selection or Toggle Logic:** Control where an action is executed only when the state of an odd number of conditions has changed.
 - **Error Detection in Redundant Systems:** Simple plausibility check in systems with multiple redundant channels.
 - **Encryption and Coding Methods:** As a fundamental component in simple cryptographic or error-correcting codes.
-*
+-
+
 ## ⚖️ Comparison with Similar Blocks
 
 - **Standard XOR blocks (e.g., XOR, E_XOR):** These typically have only two inputs. `XOR_9_BOOL` extends this functionality to up to nine inputs in a single block.
 - **OR blocks (OR) / AND blocks (AND):** Return a `TRUE` if at least one or all inputs are `TRUE`. The XOR logic is more specific (odd number).
 - **Parity blocks:** Specialized blocks for parity calculation, often working directly with data words (BYTE, WORD). `XOR_9_BOOL` works with individual Boolean bits and is more flexible in terms of the number of inputs.
-- * **Combinatorial Logic Blocks (GEN_AND, GEN_OR):** Similar generic blocks for other basic logical operations.
+- - **Combinatorial Logic Blocks (GEN_AND, GEN_OR):** Similar generic blocks for other basic logical operations.
 
 ## Conclusion
 

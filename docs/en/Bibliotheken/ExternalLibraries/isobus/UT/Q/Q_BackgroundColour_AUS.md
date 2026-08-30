@@ -3,6 +3,7 @@
 ![Q_BackgroundColour_AUS](./Q_BackgroundColour_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_BackgroundColour_AUS** is used to change the background color of an object in the ISOBUS Virtual Terminal (VT). It encapsulates the corresponding command interface according to ISO 11783-6 (Part 6 – F.20).
@@ -19,7 +20,7 @@ The block is supplied with the new color via a socket and returns the previous c
 ### **Event Outputs**
 
 | Name | Type | Comment | With Variables |
-|---------|-------|----------------------------------------|-----------------------------|
+| --------- | ------- | ---------------------------------------- | ----------------------------- |
 | `INITO` | EInit | Initialization Acknowledgement | – |
 | `CNF` | Event | Acknowledgement of Requested Service | `STATUS`, `s16result` |
 
@@ -32,7 +33,7 @@ The block is supplied with the new color via a socket and returns the previous c
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-|-------------|----------|---------------------------------------------------------|
+| ------------- | ---------- | --------------------------------------------------------- |
 | `STATUS` | STRING | Service status (e.g., error message or "OK") |
 | `s16result` | INT | Return value (see description – error codes) |
 
@@ -65,17 +66,18 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 
 An event `INIT` starts the function block. The passed object ID (`u16ObjId`) is forwarded to the internal function block `Q_BackgroundColour` and initialized there. After successful initialization, `INITO` is output.
 
-2. **Triggering a Color Change**
+1. **Triggering a Color Change**
 
 As soon as an event arrives at socket `u8Colour` (via the adapter path `E1`), the internal function block is triggered with `REQ`. The color value (`u8Colour.D1`) is passed to `Q_BackgroundColour.u8Colour`.
 
-3. **Feedback**
+1. **Feedback**
 
 After the command is completed, the internal module sends a `CNF` event.
 
 - The outputs `STATUS` and `s16result` are set accordingly and are valid at the event output `CNF`.
 - Simultaneously, the previous color value (data `D1`) and an acknowledgment event (`E1`) are output via the plug `u8OldColour`.
-*
+-
+
 ## Technical Features
 
 - The module implements the "Change Background Colour" command according to ISO 11783-6, section F.20.
@@ -115,7 +117,8 @@ Responding to user input or system states to dynamically adjust the visual displ
 
 The `u8OldColour` plugin allows you to save the previous color value or use it for later restoration.
 
-*
+-
+
 ## Comparison with Similar Function Blocks
 
 - **`Q_BackgroundColour`** (without `_AUS`):

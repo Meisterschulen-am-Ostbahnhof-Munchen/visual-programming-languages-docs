@@ -3,6 +3,7 @@
 ![SERVER_6_0](SERVER_6_0.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `SERVER_6_0`-Funktionsblock ist die generische Server-Variante mit 6 Sende- und 0 Empfangsdatenfeldern für die Kommunikation mit einem passenden [CLIENT_0_6](CLIENT_0_6.md)-Block. Er überträgt 6 Datenwerte (`SD_1` `SD_2` `SD_3` `SD_4` `SD_5` `SD_6`) an den Client, ohne Rückgabedaten zu empfangen. Wie alle `SERVER_*`-Bausteine basiert er auf der generischen `GEN_SERVER`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

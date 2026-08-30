@@ -6,6 +6,7 @@
 
 The function block `F_REAL_AS_WSTRING` converts a `REAL` value into a `WSTRING` value. This block is particularly useful when numeric values need to be converted into a string suitable for output or further processing.
 ![F_REAL_AS_WSTRING](F_REAL_AS_WSTRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,6 +38,7 @@ The conversion algorithm is implemented as a simple ST (Structured Text) stateme
 ALGORITHM REQ
 OUT := REAL_AS_WSTRING(IN);
 END_ALGORITHM
+
 ## Technical Features
 
 - The function block is part of the `iec61131::conversion` package.

@@ -1,10 +1,12 @@
 # RT_E_PERMIT
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_PERMIT block. Allows an event only if the condition (PERMIT) is true.
 ![RT_E_PERMIT](RT_E_PERMIT.svg)
+
 ## Metadata
 
 | Attribute | Value |

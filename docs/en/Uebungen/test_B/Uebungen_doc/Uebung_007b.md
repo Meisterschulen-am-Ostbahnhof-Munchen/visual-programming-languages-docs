@@ -3,6 +3,7 @@
 ![Uebung_007b_network](./Uebung_007b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a simple flasher controlled by two pushbuttons. An E_CYCLE function block generates periodic events, which are distributed to multiple paths via an E_SPLIT_4. All four outputs of the splitter are merged in an E_MERGE_4, so that each period sends a single event to the toggle flip-flop (E_T_FF). The flip-flop's output switches a digital output (logiBUS Q1). The clock generator can be started via one pushbutton (I1) and stopped via a second pushbutton (I2).
@@ -99,17 +100,20 @@ The subapplication consists of the following function blocks:
 The following description explains the signal flow within the subapplication.
 
 1. **Start/Stop of the Clock Generator**
+
 - Pressing a key at I1 triggers an event at the output `IND` of `DigitalInput_CLK_I1`. This event is connected to the event input `START` of `E_CYCLE` → the cycle generator starts.
 - Pressing a key at I2 triggers an event at the output `IND` of `DigitalInput_CLK_I2`. This event is connected to the event input `STOP` of `E_CYCLE` → the cycle generator stops.
 
-2. **Cycle and Distribution**
+1. **Cycle and Distribution**
 
 - The `E_CYCLE` generates an event at its output `EO` every 10 ms.
 - This event is fed to the input `EI` of the `E_SPLIT_4`. The splitter distributes the event to all four outputs (`EO1` to `EO4`).
-3. **Combination**
+1. **Combination**
+
 - The four outputs of the splitter are connected to the four inputs (`EI1` to `EI4`) of the `E_MERGE_4`. This ensures that every event, regardless of the path it takes, is immediately forwarded to the output `EO` of the merger.
 - The connection from the splitter to the merger via all four paths serves here purely as passthrough (redundancy), but could be used for future expansions.
-4. **Toggle Flip-Flop**
+1. **Toggle Flip-Flop**
+
 - The output event of `E_MERGE_4` is fed to the clock input `CLK` of `E_T_FF`.
 - With each clock cycle, the output `Q` of the flip-flop toggles its state (0 → 1 → 0 → …).
 - Simultaneously, an event is triggered at the output `EO` of the flip-flop.
@@ -124,6 +128,7 @@ This means that 4.
 - The flip-flop's current value `Q` is assigned to the output block's data input `OUT`.
 - At each clock cycle, output Q1 is set to the current flip-flop state – this produces a blinking signal with a period of 20 ms (10 ms on, 10 ms off if the cycle time is 10 ms).
 ...
+
 ### Data Connections
 
 - `E_T_FF.Q` → `DigitalOutput_Q1.OUT`
@@ -133,7 +138,7 @@ Transfers the toggling value (0/1) to the output block.
 ### Event Connections (Summary)
 
 | Source | Destination |
-|---------------------------|---------------------------|
+| --------------------------- | --------------------------- |
 | `DigitalInput_CLK_I1.IND` | `E_CYCLE.START` |
 | `DigitalInput_CLK_I2.IND` | `E_CYCLE.STOP` |
 | `E_CYCLE.EO` | `E_SPLIT_4.EI` |

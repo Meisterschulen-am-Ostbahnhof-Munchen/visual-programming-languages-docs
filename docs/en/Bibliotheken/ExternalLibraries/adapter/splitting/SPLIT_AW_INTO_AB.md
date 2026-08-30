@@ -3,9 +3,11 @@
 ![SPLIT_AW_INTO_AB](./SPLIT_AW_INTO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AW_INTO_AB** is used to split a word data packet (type AW, 16 bits) into two separate byte data packets (type AB, 8 bits each). The input data is received via a socket and output via two separate plugs. This function block is typically used in environments that rely on adapter-based communication, e.g., in automation technology when decomposing word-based protocols.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The FB has no direct data outputs. Data output is indirect via the **BYTE_00** a
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **IN** | Socket | `adapter::types::unidirectional::AW` | Receives a 16-bit word (WORD). The adapter provides the data and an associated event. |
 | **BYTE_00** | Plug | `adapter::types::unidirectional::AB` | Outputs the least significant byte (byte 0). |
 | **BYTE_01** | Plug | `adapter::types::unidirectional::AB` | Outputs the most significant byte (byte 1). |

@@ -3,6 +3,7 @@
 ![ALR_SPLIT_4](./ALR_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ALR_SPLIT_4** dient der Aufteilung eines eingehenden ALR-Adapter-Signals auf vier identische Ausgänge. Es handelt sich um einen generischen Baustein (generic FB), der mit verschiedenen ALR-Adaptertypen verwendet werden kann.

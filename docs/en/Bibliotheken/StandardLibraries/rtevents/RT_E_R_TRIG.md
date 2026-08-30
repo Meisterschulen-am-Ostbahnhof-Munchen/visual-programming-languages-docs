@@ -1,10 +1,12 @@
 # RT_E_R_TRIG
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time variant of the E_R_TRIG function block (rising edge).
 ![RT_E_R_TRIG](RT_E_R_TRIG.svg)
+
 ## Metadata
 
 | Attribute | Value |

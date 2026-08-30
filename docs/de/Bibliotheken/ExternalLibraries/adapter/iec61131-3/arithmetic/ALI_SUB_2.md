@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) `ALI_SUB_2` ist ein generischer, arithmetischer Funktionsbaustein zur Durchführung einer Subtraktion. Er entspricht dem IEC 61131-3-Standard für standardmäßige arithmetische Funktionen. Der Baustein verwendet Adapter-Verbindungen (`ALI` - Arithmetic Logical Interface), um die Eingangsdaten entgegenzunehmen und das Ergebnis der Subtraktion auszugeben.

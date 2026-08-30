@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) **AI_ADD_2** is a generic block for performing the arithmetic addition of two analog input values. It is based on the concept of generic function blocks (`GEN_AI_ADD`) and uses adapter interfaces instead of classic, loosely coupled data and event connections. This enables structured, clear, and modular signal processing within 4diac-ide-based control applications.
@@ -52,7 +53,7 @@ Since this is a generic function block (`GEN_AI_ADD`), the underlying data type 
 
 - **Generic Type (`GEN_AI_ADD`):** The function block is not tied to a specific data type, which increases its reusability for different analog signal ranges.
 - **Unidirectional Adapters:** Using the `adapter::types::unidirectional::AI` type drastically reduces wiring complexity in the 4diac-ide, as values and events are bundled in a single connection.
-- * **Clean Encapsulation:** No loose event and data lines on the surface of the function block.
+- - **Clean Encapsulation:** No loose event and data lines on the surface of the function block.
 
 ## State Overview
 

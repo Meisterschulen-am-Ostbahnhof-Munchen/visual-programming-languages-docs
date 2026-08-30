@@ -3,15 +3,17 @@
 ![AUI_UDINT_AX_SEL](./AUI_UDINT_AX_SEL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_UDINT_AX_SEL** performs a binary selection between two input values. It is implemented as a combination of an internal IEC 61131 function block `F_SEL` and a unidirectional adapter `AX`. The selector provided by the adapter determines which of the two data inputs is passed to the output. The function block is suitable for simple switching logic where the choice between two signals depends on an external criterion (e.g., coupled in via an adapter).
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
-|----------|----------|-----------|
+| ---------- | ---------- | ----------- |
 | `EI0` | Event | Sets the value of `IN0` and triggers a selection. |
 | `EI1` | Event | Sets the value of `IN1` and triggers a selection. |
 
@@ -24,9 +26,9 @@ The function block **AUI_UDINT_AX_SEL** performs a binary selection between two 
 ### **Data Inputs**
 
 | Variable | Data Type | Comment |
-|----------|-----------------|-----------|
+| ---------- | ----------------- | ----------- |
 | `IN0` | `UINT` | Selectable input value (first alternative). |
-| `IN1` | `ANY_ELEMENTARY`| Selectable input value (second alternative). |
+| `IN1` | `ANY_ELEMENTARY` | Selectable input value (second alternative). |
 
 *Note:* `IN1` is declared as an arbitrary elementary data type (`ANY_ELEMENTARY`). Actual compatibility with the output type `UINT` depends on the elementary type used (implicit or explicit conversion is required depending on the target system).
 
@@ -52,7 +54,7 @@ This function block encapsulates the IEC 61131 function block `F_SEL` (binary se
 
 - If `G.D1 = 0` is false (i.e., logically incorrect), the value of `IN0` is passed to `OUT`.
 - If `G.D1 ≠ 0` is true (i.e., logically correct), the value of `IN1` is passed to `OUT`.
-3. After the selection is complete, `F_SEL` confirms with the event `CNF`, which is then forwarded as the output event of the entire function block.
+1. After the selection is complete, `F_SEL` confirms with the event `CNF`, which is then forwarded as the output event of the entire function block.
 
 The adapter `G` is connected to the application as a unidirectional socket and continuously provides the selection signal.
 

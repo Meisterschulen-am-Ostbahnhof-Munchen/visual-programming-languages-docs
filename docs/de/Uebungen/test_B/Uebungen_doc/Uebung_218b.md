@@ -16,7 +16,7 @@ Die Übung zeigt die direkte Verbindung von UDINT auf LREAL ohne manuelle Konver
 Die Übung besteht aus einer SubApplikation (SubAppType), die fünf Funktionsbausteine enthält.
 Nachfolgend werden alle verwendeten FBs beschrieben.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 1. **FB_CTD_UDINT** (IEC 61131‑3 Rückwärtszähler)
    - **Typ**: `iec61131::counters::FB_CTD_UDINT`

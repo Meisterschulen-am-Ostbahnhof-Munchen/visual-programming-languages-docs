@@ -3,6 +3,7 @@
 ![ALI_SPLIT_6](./ALI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ALI_SPLIT_6 dient dazu, ein eingehendes unidirektionales ALI-Adapter-Signal (Application Layer Interface) auf sechs identische Ausgänge zu verteilen. Er ist als generischer Baustein konzipiert und ermöglicht eine einfache Signalvervielfachung ohne zusätzliche Logik.
@@ -28,7 +29,7 @@ Der Funktionsblock ALI_SPLIT_6 dient dazu, ein eingehendes unidirektionales ALI-
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::ALI` | `IN` | Socket (Eingang) | Ein ALI-Adapter, dessen Signal auf alle Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::ALI` | `OUT1` | Plug (Ausgang) | Erster Ausgang mit dem Signal des Eingangs. |
 | `adapter::types::unidirectional::ALI` | `OUT2` | Plug (Ausgang) | Zweiter Ausgang mit dem Signal des Eingangs. |
@@ -60,7 +61,7 @@ Der FB besitzt keine eigenen Zustände oder Verhaltensmodi, da er nur eine struk
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgänge | Besonderheit |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | ALI_SPLIT_2 | 2 | Zweifachverteilung |
 | ALI_SPLIT_4 | 4 | Vierfachverteilung |
 | **ALI_SPLIT_6** | **6** | **Sechsfachverteilung, generisch** |

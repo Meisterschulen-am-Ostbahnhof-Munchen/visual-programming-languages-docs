@@ -3,6 +3,7 @@
 ![ILOCK_T_FF](./ILOCK_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ILOCK_T_FF** ist ein zusammengesetzter Funktionsblock (Composite FB), der einen sperrbaren Toggle-Flipflop (T-Flipflop) realisiert. Er erweitert ein einfaches T-Flipflop um eine bidirektionale Interlock-Schnittstelle, die das Verketten mehrerer Bausteine zu einer Verriegelungskette erlaubt. Der Baustein eignet sich vor allem für sicherheitsgerichtete Steuerungen, bei denen einmal geschaltete Zustände blockiert und an nachfolgende Glieder weitergegeben werden müssen.
@@ -88,7 +89,7 @@ Ein aktiver Lock liegt vor, sobald eines der Adapter‑Ereignisse (ILOCK_IN.EO1 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften | Unterschied zum ILOCK_T_FF |
-|----------|---------------|----------------------------|
+| ---------- | --------------- | ---------------------------- |
 | **T‑Flipflop (z.B. `E_TOGGLE`)** | Reine Toggle‑Funktion ohne Sperrlogik. | Fehlende Lock‑/Interlock‑Fähigkeit, kein Adapter‑Interface. |
 | **RS‑Flipflop (z.B. `E_SR`)** | Set‑Reset mit zwei Eingängen, kein Toggle. | Kann mit externer Logik zum Toggle erweitert werden, aber ohne integrierte Lock‑Propagation. |
 | **Einfacher Interlock‑Baustein** | Nur Lock‑Weitergabe, kein Toggle. | Der ILOCK_T_FF kombiniert Toggle und Lock‑Propagation in einem Baustein. |

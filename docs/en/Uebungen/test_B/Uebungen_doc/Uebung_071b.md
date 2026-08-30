@@ -1,8 +1,9 @@
 # Exercise_071b: Output WBSD to UT, Switch Q1 when Speed > 0
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_071b`. Here, we control an output not via speed, but via the distance traveled.
+This article describes the logiBUS® exercise `Uebung_071b`. Here, we control an output not via speed, but via the distance traveled
 ----
+
 ## Objective of the Exercise
 
 Use of the function block `RangeBasedPulse`. It demonstrates how to generate a periodic pulse signal that is not time-dependent (every X seconds), but distance-dependent (every X meters).

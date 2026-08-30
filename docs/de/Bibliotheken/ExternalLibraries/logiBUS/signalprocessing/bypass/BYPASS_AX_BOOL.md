@@ -3,6 +3,7 @@
 ![BYPASS_AX_BOOL](./BYPASS_AX_BOOL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `BYPASS_AX_BOOL` realisiert eine Bypass-Funktionalität für ein boolesches Signal. Er leitet den Wert des Eingangs `IN` direkt zum Ausgang `OUT` weiter und erzeugt parallel dazu einen über einen Adapter angebundenen Bypass-Pfad. Dieser Pfad erlaubt das Einblenden eines externen Signals (`BY_IN.D1`) in die interne Logik und gibt das Ergebnis über den Ausgangsadapter `BY_OUT` aus.

@@ -3,10 +3,12 @@
 ## Introduction
 
 The global constants `Computers` provide a collection of predefined network addresses (IP addresses and ports) as strings (`WSTRING`). They serve to centrally manage connection information for various computers or stations within a logiBUS project. Using these constants improves the maintainability and readability of the code, as changes to network addresses only need to be made in one central location.
+
 ## Interface Structure
 
 Global constants are not function blocks in the traditional sense; therefore, no event or data interfaces exist. Instead, constant declarations are provided that are available project-wide.
 ![Computers](./Computers.svg)
+
 ### **Data Inputs**
 
 *Not applicable.* Constants are fixed values and have no inputs.
@@ -37,7 +39,7 @@ The constants are defined when the project is compiled. Each constant is assigne
 ## Application Scenarios
 
 1. **Simplified Address Configuration:** In a distributed control system with multiple controllers (e.g., main controller, floor controller), the IP addresses of the individual devices can be stored centrally here. 2. **Portability between environments:** By simply swapping the values in this constant file, a program can be quickly adapted between different network environments (e.g., development local host, test network, production network).
-3. **Typo prevention:** Using the constant name `C_ET` is less error-prone than repeatedly typing the string `"192.168.5.1:61499"`.
+2. **Typo prevention:** Using the constant name `C_ET` is less error-prone than repeatedly typing the string `"192.168.5.1:61499"`.
 
 ## ⚖️ Comparison with similar components
 

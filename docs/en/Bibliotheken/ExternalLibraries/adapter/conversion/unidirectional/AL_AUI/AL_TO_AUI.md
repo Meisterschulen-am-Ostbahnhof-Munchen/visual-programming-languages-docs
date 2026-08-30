@@ -3,9 +3,11 @@
 ![AL_TO_AUI](./AL_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AL_TO_AUI** function block is a composite component that converts an LWORD adapter (AL) into a UINT adapter (AUI). It enables the seamless integration of LWORD-based interfaces into systems that expect UINT data by encapsulating the conversion within a standardized adapter structure.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No standalone data outputs. The plug **AUI_OUT** provides the converted `UINT` v
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | Socket | Input | **AL_IN** | Adapter type `adapter::types::unidirectional::AL` – provides an LWORD data and an event to trigger the conversion. |
 | Plug | Output | **AUI_OUT** | Adapter type `adapter::types::unidirectional::AUI` – receives the converted UINT data and forwards the confirmation event. |
 
@@ -43,6 +45,7 @@ The module consists of an internal network with a single conversion module `F_LW
 This completes the entire conversion in a single, unidirectional pass.
 
 ...
+
 ## Technical Features
 
 - **Composite Structure**: The function block (FB) does not contain its own state machine but delegates all functionality to the embedded conversion block.
@@ -69,7 +72,7 @@ A detailed state description of the conversion block can be found in the IEC 611
 ## Comparison with Similar Function Blocks
 
 | Function Block | Output Type | Special Feature |
-|----------|--------------|--------------|
+| ---------- | -------------- | -------------- |
 | `AL_TO_AUI` | UINT | Direct Adapter Converter, Unidirectional, Composite |
 | `AL_TO_AUD` | DINT | Converts LWORD to DINT (32-bit) |
 | `AUI_TO_AL` | LWORD | Reverse conversion from UINT to LWORD (not included, would need to be implemented separately) |

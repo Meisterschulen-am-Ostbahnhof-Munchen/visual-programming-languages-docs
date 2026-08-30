@@ -3,9 +3,11 @@
 ![AD_TO_AW](./AD_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_TO_AW** is a composite function block that converts a DWORD adapter (type `AD`) into a WORD adapter (type `AW`). It encapsulates the conversion of a DWORD value to a WORD value and provides the corresponding event and data forwarding. The implementation is based on an internal call to the standard conversion block `F_DWORD_TO_WORD` from the IEC 61131 library.
+
 ## Interface Structure
 
 The block has no direct input/output events or data ports. All signals are routed via the connected adapters (socket and plug).
@@ -29,9 +31,9 @@ The block has no direct input/output events or data ports. All signals are route
 ### **Adapters**
 
 | Role | Name | Type | Direction | Comment |
-|-------|-------|-----|----------|-----------|
+| ------- | ------- | ----- | ---------- | ----------- |
 | Socket | AD_IN | `adapter::types::unidirectional::AD` | Input (DWORD) | Returns DWORD data and event. |
-| Plug | AW_OUT| `adapter::types::unidirectional::AW` | Output (WORD) | Provides WORD data and event. |
+| Plug | AW_OUT | `adapter::types::unidirectional::AW` | Output (WORD) | Provides WORD data and event. |
 
 Both adapters are of type *unidirectional*, i.e., Communication is unidirectional.
 
@@ -56,6 +58,7 @@ The entire process is event-driven and synchronous.
 As a composite block without its own ECC, **AD_TO_AW** has no internal states. Execution is purely event-driven and occurs atomically with each incoming event at the socket.
 
 **AD_TO_AW**
+
 ## Application Scenarios
 
 - **Adapter Adaptation**: When a control system provides data via a DWORD adapter, but a connected module or component expects a WORD adapter.

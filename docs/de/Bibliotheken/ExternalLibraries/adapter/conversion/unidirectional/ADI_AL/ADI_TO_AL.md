@@ -3,6 +3,7 @@
 ![ADI_TO_AL](./ADI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ADI_TO_AL` dient als Composite-Baustein zur Konvertierung eines ADI-Adapters (DINT) in einen AL-Adapter (LWORD). Er kapselt eine Typumwandlung von einem 32‑Bit‑Ganzzahlwert in ein 64‑Bit‑Wort und stellt die Verbindung über unidirektionale Adapter bereit. Der Baustein ist ideal für Systeme, in denen eine unterschiedliche Datentypdarstellung zwischen Komponenten überbrückt werden muss.

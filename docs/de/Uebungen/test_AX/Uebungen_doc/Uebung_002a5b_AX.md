@@ -3,6 +3,7 @@
 ![Uebung_002a5b_AX_network](./Uebung_002a5b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die grundlegende Verknüpfung von mehreren digitalen Eingängen mit mehreren digitalen Ausgängen. Dabei wird eine logische OR-Operation eingesetzt, um die Zustände der Eingänge zu verknüpfen. Das Ergebnis dieser Verknüpfung wird anschließend über einen Signalverteiler auf verschiedene digitale Ausgänge verteilt. Die Implementierung nutzt dabei das Konzept von Adapter-Funktionsbausteinen, um die boolesche Logik und die Signalverteilung zu realisieren.

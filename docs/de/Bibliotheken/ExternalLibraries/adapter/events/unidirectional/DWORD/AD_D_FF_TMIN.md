@@ -3,6 +3,7 @@
 ![AD_D_FF_TMIN](./AD_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_D_FF_TMIN** realisiert ein datenrückhaltendes Flip-Flop (D‑Latch) auf Basis von Adaptern mit unidirektionaler Schnittstelle. Er zeichnet sich durch eine konfigurierbare Mindestverweilzeit (*Minimum inter-disposal Time*) zwischen zwei aufeinanderfolgenden Ereignissen aus und eignet sich damit für zeitkritische Signalverarbeitungen.
@@ -72,7 +73,7 @@ Der Baustein selbst besitzt keinen expliziten Zustandsautomaten (keine ECC‑Def
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | **E_D_FF** | Standard‑D‑Flip‑Flop | Keine zeitliche Einschränkung; jedes Taktereignis wird verarbeitet. |
 | **E_CTD** / **E_CTU** | Zähler | Andere Grundfunktion; zählt Ereignisse. |
 | **AD_D_FF_TMIN** | D‑Flip‑Flop mit *Minimum inter‑disposal Time* | Verhindert zu schnelle Taktfolgen durch parametrierbare Sperrzeit. |

@@ -3,6 +3,7 @@
 ![INI_AS](./INI_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus einer `settings.ini`‑Datei. Er greift über einen Abschnittsnamen (`SECTION`) und einen Schlüssel (`KEY`) auf einen Konfigurationswert zu. Über die Adapter‑Schnittstelle `AS` kann der Wert sowohl gelesen als auch geschrieben werden. Der Baustein kapselt den internen `INI`‑Funktionsblock und erweitert ihn um eine einheitliche Adapter‑Schnittstelle.

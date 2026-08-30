@@ -3,6 +3,7 @@
 ![SPLIT_AW_INTO_AQ](./SPLIT_AW_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AW_INTO_AQ** teilt die acht Quarter-Adapter (AQ) eines Word-Adapters (AW) auf. Das eingehende Word (16 Bit) wird in acht Quarter-Einheiten (je 2 Bit) zerlegt und über die entsprechenden AQ-Plugs ausgegeben.

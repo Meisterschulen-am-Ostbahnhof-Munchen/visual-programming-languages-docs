@@ -6,6 +6,7 @@
 
 The function block `AND_10_BOOL` is a generic block for calculating the logical AND operation. It performs a bitwise AND operation on up to ten separate BOOL inputs. The block is classified according to the IEC 61131-3 standard and belongs to the category of standard Boolean functions. It is typically used in control logic to link conditions where all input signals must be true (TRUE) to activate an output signal.
 ![AND_10_BOOL](AND_10_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,9 +3,11 @@
 ![Uebung_221b_network](./Uebung_221b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a combined forward/backward counter according to IEC 61131-3 (type `FB_CTUD_DINT`) and outputs the current counter value as well as the counter status (overflow/underflow) via digital outputs and a terminal output (PHYS). The counter can be controlled via four digital inputs: count up (CU), count down (CD), reset (R), and load the initial value (LD).
+
 ## Function Blocks (FBs) Used
 
 - **`FB_CTUD_DINT`** (Type: `iec61131::counters::FB_CTUD_DINT`)
@@ -35,6 +37,7 @@ The system operates in an event-driven manner:
 1. **Input Processing**: Each of the four input function blocks (Input_CU, Input_CD, Input_R, Input_LD) generates an event (`IND`) upon a signal change.
 2. **Counter Calculation**: All four events are connected to the `REQ` input of the counter `FB_CTUD_DINT`. This ensures the counter is evaluated with each new input signal.
 3. **Output Update**: After the meter calculation (`CNF`) is complete, the output function blocks (FBs) and the terminal FB are triggered simultaneously:
+
 - `Output_QU` receives the value from `QU`
 - `Output_QD` receives the value from `QD`
 - `Q_NumericValue_PHYS_LREAL` receives the current meter reading from `CV`

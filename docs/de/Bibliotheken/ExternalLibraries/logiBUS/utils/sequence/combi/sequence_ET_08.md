@@ -5,6 +5,7 @@
 ![sequence_ET_08_ecc](./sequence_ET_08_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_ET_08` ist ein Sequenzer mit acht Ausgängen. Er ermöglicht die Abarbeitung einer festen Schrittkette, wobei der Übergang von einem Schritt zum nächsten entweder durch ein externes Ereignis oder durch einen einstellbaren Zeitablauf erfolgen kann. Der Baustein ist besonders für Steuerungsaufgaben geeignet, bei denen eine zyklische oder zeitgesteuerte Abfolge von Aktionen benötigt wird.

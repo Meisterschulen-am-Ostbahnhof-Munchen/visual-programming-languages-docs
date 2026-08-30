@@ -3,9 +3,11 @@
 ![ASSEMBLE_AW_FROM_AQ](./ASSEMBLE_AW_FROM_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_AW_FROM_AQ` combines eight individual **AQ (Quarter)** adapters into a single **AW (Word)** adapter. Each quarter represents a 4-bit data packet (half a byte). The block assembles these eight quarter data packets—a total of 32 bits—into a complete word (WORD, 32 bits) and makes it available via a single AW output adapter. Typical applications include the reconstruction of wide data buses from serially or partially arriving fragments.
+
 ## Interface Structure
 
 The function block has only **adapter interfaces**: There are no direct event or data inputs/outputs at the top level. All communication takes place via the connected adapters.
@@ -33,16 +35,16 @@ The function block has only **adapter interfaces**: There are no direct event or
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|-------------------|-----------------------|----------|-----------------------------|
+| ------------------- | ----------------------- | ---------- | ----------------------------- |
 | `OUT` | adapter::AW | Plug | Word output (4 bytes) |
-| `QUARTER_BYTE_00` | adapter::AQ | Socket | Quarter 0 (least significant)|
+| `QUARTER_BYTE_00` | adapter::AQ | Socket | Quarter 0 (least significant) |
 | `QUARTER_BYTE_01` | adapter::AQ | Socket | Quarter 1 |
 | `QUARTER_BYTE_02` | adapter::AQ | Socket | Quarter 2 |
 | `QUARTER_BYTE_03` | adapter::AQ | socket | Quarter 3 |
 | `QUARTER_BYTE_04` | adapter::AQ | socket | Quarter 4 |
 | `QUARTER_BYTE_05` | adapter::AQ | socket | Quarter 5 |
 | `QUARTER_BYTE_06` | adapter::AQ | socket | Quarter 6 |
-| `QUARTER_BYTE_07` | adapter::AQ | socket | Quarter 7 (highest value)|
+| `QUARTER_BYTE_07` | adapter::AQ | socket | Quarter 7 (highest value) |
 
 ## Functionality
 
@@ -65,6 +67,7 @@ Process:
 - **Adapter-Based Interface**: All inputs and outputs are handled via adapters, making the function block particularly suitable for modular, typed data flow architectures in 4diac.
 - **Synchronous Processing**: Processing is triggered by each incoming event of a quarter, but only generates an output event when the calculation is complete.
 - **Adapter-Based Interface**:
+
 ## Status Overview
 
 The function block (FB) does not have its own execution control chart (ECC) – the internal logic is implemented entirely by the included function blocks `ASSEMBLE_WORD_FROM_QUARTERS` and `E_D_FF_ANY`. The function block therefore behaves like a combinational circuit with an edge-triggered memory stage.

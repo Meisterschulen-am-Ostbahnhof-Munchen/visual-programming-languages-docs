@@ -4,6 +4,7 @@
 ![ALR_ADD_2](./ALR_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_ADD_2` ist ein generischer, arithmetischer Additionsbaustein für die 4diac-IDE, der der Norm IEC 61131-3 entspricht. Er dient dazu, zwei Eingangswerte mathematisch zu addieren. Die Besonderheit dieses Bausteins liegt in der Verwendung von unidirektionalen Adaptern (`ALR`), die sowohl Daten als auch die zugehörige Kontrolllogik kapseln, um eine saubere und modulare Signalverarbeitung zu ermöglichen.

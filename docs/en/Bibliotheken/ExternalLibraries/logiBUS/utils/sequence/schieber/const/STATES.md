@@ -1,6 +1,7 @@
 # STATES
 
 States (Closed, Opened, Transitions)
+
 ## Global Constants
 
 | Name | Type | Initial Value |

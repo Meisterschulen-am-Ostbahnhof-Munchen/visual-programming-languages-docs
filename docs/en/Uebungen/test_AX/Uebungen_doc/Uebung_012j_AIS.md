@@ -3,6 +3,7 @@
 ![Uebung_012j_AIS_network](./Uebung_012j_AIS_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates reading a string value via a virtual input, storing it in non-volatile memory (NVS), and then outputting the stored value. It shows how to use the adapter interfaces of the 4diac IDE and how to utilize predefined constants for memory areas.

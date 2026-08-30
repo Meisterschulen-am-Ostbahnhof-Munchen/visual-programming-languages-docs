@@ -3,6 +3,7 @@
 ![Uebung_004d_T_network](./Uebung_004d_T_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the application of the function block **FB_T_FF** (Toggle Flip-Flop).
@@ -55,11 +56,12 @@ Output = Output_Q1`
 ## Program Flow and Connections
 
 1. **Event Chaining**:
+
 - Both digital inputs (`DigitalInput_RST` and `DigitalInput_CLK`) are connected via their event output `IND` to the event input `REQ` of `T_FF`.
 - This means: Any change to either input triggers processing of the T-FF.
 - After processing of the T-FF, the event output `CNF` is connected to the `REQ` input of `DigitalOutput_Q1`, so that the output value is immediately passed on to the hardware.
 
-2. **Data Chaining**:
+1. **Data Chaining**:
 
 - The value read from the reset input (`DigitalInput_RST.IN`) is connected to the `RST` input of the T-FF.
 - The value read from the clock input (`DigitalInput_CLK.IN`) is connected to the `CLK` input of the T-FF.

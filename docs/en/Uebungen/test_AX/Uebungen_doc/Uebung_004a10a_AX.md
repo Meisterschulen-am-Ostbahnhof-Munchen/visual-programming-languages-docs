@@ -3,13 +3,14 @@
 ![Uebung_004a10a_AX_network](./Uebung_004a10a_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a toggle flip-flop (T-FF) with an initial value of `FALSE`. The initial state is toggled with each single button press (event `BUTTON_SINGLE_CLICK`). Control is achieved via the logiBUS hardware, using one digital input (`Input_I1`) and one digital output (`Output_Q1`).
 
 ## Function Blocks (FBs) Used
 
-### Sub-Blocks:
+### Sub-Blocks
 
 #### Block `DigitalInput_CLK_I1`
 

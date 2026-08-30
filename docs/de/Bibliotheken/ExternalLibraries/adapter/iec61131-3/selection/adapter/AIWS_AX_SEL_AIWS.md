@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AIWS_AX_SEL_AIWS` dient der binären Auswahl (Selektion) zwischen zwei unidirektionalen Adaptersignalen vom Typ `AIWS`. Die Steuerung, welcher der beiden Eingänge auf den Ausgang geschaltet wird, erfolgt über einen Steueradapter vom Typ `AX`.

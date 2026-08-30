@@ -3,9 +3,11 @@
 ![IA_RHS](./IA_RHS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **IA_RHS** (ISOBUS Adapter for Rear Hitch Status) serves as an interface between the ISOBUS system (according to ISO 11783-7, PGN 65093) and an application network. It encapsulates the communication with the internal module I_RHS and provides the measured rear hitch data (position, force, tractive force) as well as the timeout status via standardized, unidirectional adapters. This module is primarily used in tractor and agricultural machinery control systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,15 +31,15 @@ The function block **IA_RHS** (ISOBUS Adapter for Rear Hitch Status) serves as a
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|--------|--------------------------|
+| -------- | -------- | -------------------------- |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Status Message |
 
 ### **Adapters**
 
 | Name | Type | Comment |
-|---------|----------|-------------------------------------------|
-| POSITION| OFF | Rear Hitch Position |
+| --------- | ---------- | ------------------------------------------- |
+| POSITION | OFF | Rear Hitch Position |
 | FORCE | OFF | Rear Nominal Lower Link Force |
 | DRAFT | AUI | Rear Draft |
 | TIMEOUT | AX | Timeout Status |

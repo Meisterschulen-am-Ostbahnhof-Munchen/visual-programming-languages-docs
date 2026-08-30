@@ -5,10 +5,12 @@
 ![QUARTER_TO_BOOL_ecc](./QUARTER_TO_BOOL_ecc.svg)
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 <img width="1424" height="183" alt="image" src="https://github.com/user-attachments/assets/81acd0ec-c837-49d1-9ed8-3000cb65786e" />
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `QUARTER_TO_BOOL` converts a quad-state signal, encoded in the lower two bits of a byte value, into a simple BOOL signal. It is particularly useful for connecting to systems that provide status information with more than two states, which should be further processed using simple binary logic.
@@ -52,7 +54,7 @@ The specific mapping of the input values to the output logic is as follows:
 
 - **State Handling**: The function block is implemented as a Basic Function Block and It has an explicit state machine (ECC). The states `SET`, `RESET`, `ERROR`, and `none` are pure algorithm states, while the state `ok` is responsible for outputting the acknowledgment event.
 - **Value Preservation**: In the case of state `STATUS_NOT_AVAILABLE`, the algorithm `NONE` is executed, which explicitly does not modify the current value of the output `Q`. This enables "don't care" or "hold" behavior.
-- * **Initialization**: The data output `Q` is initialized to `FALSE` at startup.
+- - **Initialization**: The data output `Q` is initialized to `FALSE` at startup.
 
 ## State Overview
 
@@ -77,7 +79,8 @@ The ECC (Execution Control Chart) consists of six states:
 
 - **Standard Converters (e.g., `BYTE_TO_BOOL`)**: A simple `BYTE_TO_BOOL` converter would typically use a threshold (e.g., anything >0 becomes TRUE). `QUARTER_TO_BOOL`, on the other hand, interprets specific, named states and provides defined behavior for each one, including the option to leave the output unchanged for a given state.
 - **`E_SELECT` or `E_DEMUX` Building Blocks**: These could be used to activate different event paths based on an input value. `QUARTER_TO_BOOL` encapsulates this logic specifically for converting 4-state signals and directly returns the Boolean result.
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)

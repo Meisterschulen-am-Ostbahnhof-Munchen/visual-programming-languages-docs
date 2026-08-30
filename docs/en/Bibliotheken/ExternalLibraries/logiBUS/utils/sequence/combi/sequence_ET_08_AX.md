@@ -3,10 +3,12 @@
 ![sequence_ET_08_AX_ecc](./sequence_ET_08_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 sequence_ET_08_AX` is a variant of `sequence_ET_08` that additionally uses adapters (`AX`) for the outputs. It controls a sequence with 8 output states.
 ![sequence_ET_08_AX](sequence_ET_08_AX.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

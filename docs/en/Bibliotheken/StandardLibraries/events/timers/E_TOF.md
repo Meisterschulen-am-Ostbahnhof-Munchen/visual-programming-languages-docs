@@ -1,4 +1,5 @@
 ![E_TOF](E_TOF.svg)
+
 # E_TOF
 
 ## 🎧 Podcast
@@ -16,7 +17,7 @@ The E_TOF function block is a **Composite Function Block (CFB)** specified accor
 
 ### Der Baustein E_TOF in der IEC 61499: Ein Überblick
 
-## Beschreibung:
+## Beschreibung
 
 ##### Interface
 
@@ -86,4 +87,5 @@ The **E_TOF** (Event-driven Off-Delay Timer) is a function block according to IE
 A key advantage of the E_TOF function block is that it **does not need to be called cyclically** to function correctly. Since the internal **E_DELAY** block operates independently of the cyclic call of the parent block, the E_TOF block can also be used in systems that do not operate cyclically, such as event-driven or distributed control systems. This makes the E_TOF block particularly flexible and suitable for modern, distributed control architectures where cyclic calls are not always guaranteed.
 
 In summary, the FB_TOF block, with its **ET** output, enables detailed monitoring of elapsed time but requires a cyclic call. The E_TOF block, on the other hand, does without the **ET** output but offers the flexibility to operate independently of cyclic calls, making it ideal for event-driven systems.
+
 ### Kapitel 2: Der E_TOF-Baustein

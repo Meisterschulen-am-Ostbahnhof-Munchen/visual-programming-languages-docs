@@ -3,9 +3,11 @@
 ![AIS_SPLIT_4](./AIS_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_SPLIT_4** is used to distribute an incoming AIS adapter signal (type `adapter::types::unidirectional::AIS`) to four separate outputs. It implements a 1-to-4 split without modifying the data. The block is implemented generically and can be adapted to different signal types via the generic class name.
+
 ## Interface Structure
 
 ### **Event Inputs**

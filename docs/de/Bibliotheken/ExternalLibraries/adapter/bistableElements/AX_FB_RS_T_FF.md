@@ -39,7 +39,7 @@ Die folgenden Adapter-Ereignisse lösen die Verarbeitung aus:
 ### **Adapter**
 
 | Adapter | Typ | Rolle | Kommentar |
-|--------|------|-------|-----------|
+| -------- | ------ | ------- | ----------- |
 | `SET` | adapter::types::unidirectional::AX | Eingang | Setzen |
 | `RESET1` | adapter::types::unidirectional::AX | Eingang | Zurücksetzen |
 | `CLK` | adapter::types::unidirectional::AX | Eingang | Takt |

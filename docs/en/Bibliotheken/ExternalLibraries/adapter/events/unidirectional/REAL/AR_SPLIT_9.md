@@ -3,9 +3,11 @@
 ![AR_SPLIT_9](./AR_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_SPLIT_9** splits an incoming AR adapter (type `unidirectional`) into nine separate AR outputs. It serves as a distributor for an AR signal to multiple downstream components. The block is designed to be completely generic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Adapter | Type | Description |
-|----------|---------|-----|--------------|
+| ---------- | --------- | ----- | -------------- |
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AR` | Incoming AR signal that is distributed. |
 | **Plug** (Output) | `OUT1` … `OUT9` | `adapter::types::unidirectional::AR` | Nine identical outputs that forward the incoming AR signal. |
 
@@ -54,7 +56,7 @@ The function block has no internal state (no state machine). The output signal c
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Outputs | Remarks |
-|----------|------------------|-----------|
+| ---------- | ------------------ | ----------- |
 | `AR_SPLIT_4` | 4 | Same functionality, but only four outputs. |
 | `AR_SPLIT_9` | 9 | Presented function block (nine outputs). |
 | `AR_SPLIT_2` | 2 | Minimal splitter for two paths. |

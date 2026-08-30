@@ -3,9 +3,11 @@
 ![AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED](./AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED function block is used for the scalable transmission of an incoming UINT value (fieldbus signal) to an analog REAL output. It only operates if the incoming signal is marked as valid (VALID signal). An additional initialization interface allows the internal logic to be reset. The block is implemented as a composite and combines a scalable sub-block with a D flip-flop for validity storage.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED function block is used for the scalable t
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-|------|-----|-------------|-----------|
+| ------ | ----- | ------------- | ----------- |
 | SCALE | REAL | REAL#1.0 | Scaling Factor |
 | OFFSET | DINT | DINT#0 | Offset after Scaling |
 
@@ -34,7 +36,7 @@ The AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED function block is used for the scalable t
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-|-----|------|----------|-----------|
+| ----- | ------ | ---------- | ----------- |
 | adapter::types::unidirectional::AUI | IN | Socket | UINT input (fieldbus signal) |
 | adapter::types::unidirectional::AR | OUT | Plug | Scaled REAL output |
 | adapter::types::unidirectional::AX | VALID | Plug | Validation signal (TRUE = valid) |

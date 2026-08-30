@@ -3,6 +3,7 @@
 ![NVS_AUDI](./NVS_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NVS_AUDI** ermöglicht das Speichern und Laden von **UDINT**-Daten im **Non-Volatile Storage (NVS)** eines ESP32-Mikrocontrollers. Die Daten werden über einen eindeutigen **Schlüssel (KEY)** adressiert. Der Baustein verwendet ein **unidirektionales AUDI-Adapter-Interface** zur Kommunikation mit dem NVS: Über einen Eingangsadapter (Socket) wird der zu speichernde Wert empfangen, über einen Ausgangsadapter (Plug) wird der gelesene Wert bereitgestellt.

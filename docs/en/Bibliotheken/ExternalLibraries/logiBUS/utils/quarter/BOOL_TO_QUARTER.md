@@ -5,6 +5,7 @@
 ![BOOL_TO_QUARTER](./BOOL_TO_QUARTER.svg)
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 <img width="1677" height="214" alt="image" src="https://github.com/user-attachments/assets/78d7da91-c9c9-424a-a08b-2ac7b67c5662" />
 
@@ -38,7 +39,7 @@ When triggered by the `REQ` event, the block evaluates the value at the input `I
 
 - If `I` has the value `BOOL#TRUE`, the output `QB` is set to the constant `quarter::COMMAND_ENABLE`.
 
-#** ... * In all other cases (i.e., by default with `FALSE`), the output `QB` is set to the constant `quarter::COMMAND_DISABLE`.
+# ** ... * In all other cases (i.e., by default with `FALSE`), the output `QB` is set to the constant `quarter::COMMAND_DISABLE`.
 
 Immediately after the assignment, the `CNF` event is output along with the new value of `QB`.
 
@@ -51,7 +52,8 @@ The block does not have an internal state in the sense of a memory. It behaves p
 - **Actuator Control**: Conversion of a simple enable signal (`BOOL`) into a device-specific enable/disable command, which is sent as a byte via a fieldbus protocol.
 - **Interface Adaptation**: Connection of logic blocks that work with BOOL values to control components that expect commands in quarter-byte format.
 - **Code Standardization**: Ensuring that the same centrally defined constants for enable/disable commands are always used in a project.
-*
+-
+
 - **`BOOL_TO_BYTE`**: A generic converter that typically maps `TRUE` to `1` and `FALSE` to `0`. `BOOL_TO_QUARTER` is more specialized and uses project-specific, semantic constants instead of numeric values.
 - **Direct assignment**: The functionality could also be replicated by direct assignment in ST code (`QB := I`), but this would eliminate the advantages of centralized constant definition and a clear interface (events).
 - [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)

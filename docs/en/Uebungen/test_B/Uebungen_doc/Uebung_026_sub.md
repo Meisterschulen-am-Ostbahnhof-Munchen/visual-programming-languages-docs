@@ -1,8 +1,9 @@
 # Exercise_026_sub: Mirror Sequence (6)
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the sub-application type `Uebung_026_sub`. This function block serves as a standardized interface for actuators within a complex sequence of steps.
+This article describes the sub-application type `Uebung_026_sub`. This function block serves as a standardized interface for actuators within a complex sequence of steps
 ----
+
 ## Purpose of the Exercise
 
 Encapsulation of the output logic. The function block separates the execution logic (when must something happen) from the hardware logic (how is the cylinder controlled).

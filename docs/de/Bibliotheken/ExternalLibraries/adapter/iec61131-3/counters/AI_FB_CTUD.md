@@ -3,6 +3,7 @@
 ![AI_FB_CTUD](./AI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_FB_CTUD** realisiert einen Aufwärts-/Abwärtszähler (Up-Down-Counter) vom Datentyp **INT** in einer Adapter-basierten Variante. Er kapselt den IEC 61131‑3 Standardbaustein `FB_CTUD` und stellt dessen Funktionalität über die Adapter-Schnittstellen (`AX` und `AI`) der 4diac‑IDE zur Verfügung. Der Baustein eignet sich besonders für den Einsatz in industriellen Steuerungssystemen, die auf ereignisgesteuerte Kommunikation setzen.

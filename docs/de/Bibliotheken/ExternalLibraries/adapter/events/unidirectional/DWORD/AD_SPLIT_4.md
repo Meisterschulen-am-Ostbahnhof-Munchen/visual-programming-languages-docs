@@ -3,6 +3,7 @@
 ![AD_SPLIT_4](./AD_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_SPLIT_4** dient dazu, einen eingehenden unidirektionalen AD-Adapter (Adapter Definition) auf vier identische Ausgänge zu verteilen. Es handelt sich um einen generischen Baustein, der speziell für die Aufteilung eines einzelnen AD-Signals in bis zu vier separate Pfade konzipiert ist.

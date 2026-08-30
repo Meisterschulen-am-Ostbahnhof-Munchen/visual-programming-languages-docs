@@ -6,6 +6,7 @@
 ![AS_ADD_2](./AS_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_ADD_2` ist ein generischer arithmetischer Baustein, der für die Addition zweier Werte konzipiert ist. Im Gegensatz zu klassischen mathematischen Funktionsbausteinen nutzt dieser Baustein ein adapterbasiertes Schnittstellenkonzept. Durch die Verwendung von unidirektionalen Adaptern werden Daten und die dazugehörigen Steuerungsereignisse gekapselt übertragen, was zu einem aufgeräumten und modularen Anwendungsdesign in der IEC 61499 Entwicklungsumgebung (wie 4diac IDE) beiträgt.
@@ -55,6 +56,7 @@ Aufgrund seiner generischen Natur (`GEN_AS_ADD`) kann der Baustein flexibel mit 
 ## Zustandsübersicht
 
 Als rein mathematischer Kombinationsbaustein besitzt `AS_ADD_2` kein komplexes internes Zustandsdiagramm (ECC). Sein Verhalten lässt sich in drei zyklische Schritte unterteilen:
+
 1.  **Warten (Idle):** Der Baustein wartet auf ein Ereignis an einem der Eingangs-Adapter (`IN1` oder `IN2`).
 2.  **Berechnen:** Bei Event-Eingang werden die aktuellen Werte aus beiden Adaptern gelesen und addiert.
 3.  **Senden:** Das Additionsergebnis wird in den Ausgangs-Adapter `OUT` geschrieben und ein Ausgangsereignis getriggert.

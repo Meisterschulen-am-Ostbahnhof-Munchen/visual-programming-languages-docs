@@ -3,6 +3,7 @@
 ![AQ_XOR_6](./AQ_XOR_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AQ_XOR_6** is a generic function block for the bitwise XOR (exclusive OR) operation across 6 input values of type `BYTE` (2-bit value (quarter byte, transmitted as a byte)). Unlike the Boolean operation on single truth values (as in the `AX_XOR` blocks), every bit of the data word is combined independently here.

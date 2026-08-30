@@ -6,6 +6,7 @@
 *(Bild des Funktionsblocks nicht verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_ADD_4` dient zur Durchführung einer arithmetischen Addition von bis zu vier Werten. Es handelt sich hierbei um einen generischen Funktionsbaustein (Generic FB), der auf dem unidirektionalen Adaptertyp `ADI` basiert. Er ermöglicht eine übersichtliche und modularisierte Addition innerhalb von IEC 61499 Anwendungen in der 4diac-IDE.
@@ -57,6 +58,7 @@ Das berechnete Resultat sowie das zugehörige Trigger-Ereignis werden direkt üb
 ## Zustandsübersicht
 
 Da es sich um einen adapterbasierten Baustein zur reinen arithmetischen Datenverarbeitung handelt, besitzt der `ADI_ADD_4` keine komplexe interne Zustandsmaschine (ECC). Seine Ausführung verhält sich rein reaktiv:
+
 -   **Trigger an einem der Eingänge (`IN1` - `IN4`):** Berechnung der Summe aller vier Eingänge und unmittelbare Weiterleitung des Ergebnisses an `OUT`.
 
 ## Anwendungsszenarien

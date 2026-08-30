@@ -6,6 +6,7 @@
 
 The function block `F_WORD_TO_UDINT` converts a `WORD` data type to a `UDINT` data type. This function block is particularly useful in scenarios where type conversion is required to prepare data for further processing.
 ![F_WORD_TO_UDINT](F_WORD_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 <img width="1330" height="284" alt="image" src="https://github.com/user-attachments/assets/305f0854-9d3f-48c9-b61a-c134ab546dec" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_PI_ID` ist ein Eingabeservice-Interface-Baustein für 32-Bit-DWORT-Eingabedaten. Er dient als Schnittstelle zu einem physischen Eingabemodul (vermutlich Teil des logiBUS-Systems) und ermöglicht die Initialisierung, zyklische Abfrage (Polling) und ereignisgesteuerte (Interrupt) Ausgabe von digitalen Eingangswerten. Der Baustein kann so konfiguriert werden, dass er Statusänderungen entweder nach einer bestimmten Anzahl von Impulsen oder nach einem definierten Zeitintervall meldet.

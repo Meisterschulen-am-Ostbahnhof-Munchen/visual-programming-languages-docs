@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | **IN** | `adapter::types::unidirectional::ASR` | Quelladapter, dessen Daten auf alle Ausgänge verteilt werden. |
 | Ausgang (Plug) | **OUT1** | `adapter::types::unidirectional::ASR` | Erster Ausgang, erhält die duplizierten Daten von `IN`. |
 | Ausgang (Plug) | **OUT2** | `adapter::types::unidirectional::ASR` | Zweiter Ausgang. |

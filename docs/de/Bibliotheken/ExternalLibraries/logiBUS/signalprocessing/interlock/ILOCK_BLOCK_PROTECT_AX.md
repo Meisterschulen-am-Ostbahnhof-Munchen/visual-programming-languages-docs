@@ -3,6 +3,7 @@
 ![ILOCK_BLOCK_PROTECT_AX](./ILOCK_BLOCK_PROTECT_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ILOCK_BLOCK_PROTECT_AX` realisiert eine priorisierte Verriegelung (Interlock) für zwei gegenläufige Richtungen (UP/DOWN) unter Berücksichtigung einer konfigurierbaren Schutz-Totzeit. Der Baustein ist als Adapter-Version ausgeführt, d. h. die Ein- und Ausgänge werden über IEC 61499-Adapter bereitgestellt. Ziel ist die sichere Steuerung von Aktoren, bei denen nur eine Richtung gleichzeitig aktiv sein darf, beispielsweise bei Hebe- oder Schwenkbewegungen. Der erste aktivierte Eingang erhält den Vorrang; ein Wechsel der Richtung erfolgt erst nach Ablauf der Schutzzeit und einer erneuten Bewertung.

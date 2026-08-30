@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_TRIG` is a special service function block according to IEC 61499. Its function is to programmatically trigger *unconnected* event inputs of a specific type (name) within a resource. This enables advanced control and initialization scenarios.

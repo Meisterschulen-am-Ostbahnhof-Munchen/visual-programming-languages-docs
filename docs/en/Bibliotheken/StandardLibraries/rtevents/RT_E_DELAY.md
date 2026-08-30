@@ -1,10 +1,12 @@
 # RT_E_DELAY
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_E_DELAY function block delays an event by a defined time (DT) while adhering to real-time requirements.
 ![RT_E_DELAY](RT_E_DELAY.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![F_SPLIT_LDT](F_SPLIT_LDT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_SPLIT_LDT` splits a `LDATE_AND_TIME` value into its individual date/time components (`YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`). It is the reverse of [F_CONCAT_LDT](F_CONCAT_LDT.md), which combines the same individual components back into a `LDATE_AND_TIME` value.

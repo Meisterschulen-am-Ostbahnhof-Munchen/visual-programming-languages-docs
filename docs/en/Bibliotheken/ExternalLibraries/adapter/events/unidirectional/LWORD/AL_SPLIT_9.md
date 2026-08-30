@@ -3,9 +3,11 @@
 ![AL_SPLIT_9](./AL_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_9** is a generic function block that splits an incoming adapter of type `AL` into nine identical outgoing adapters. It is used to distribute a signal or data flow arriving via a single adapter to multiple downstream components. The function block is defined as a generic type (`GEN_AL_SPLIT`) and must be bound to the specific adapter type before use.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No separate data outputs – the output data is provided via the nine outgoing a
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AL` | An incoming adapter that provides the signal or data to be distributed. |
 | **Plug** (Output) | `OUT1` … `OUT9` | `adapter::types::unidirectional::AL` | Nine outgoing adapters, each outputting a copy of the input signal. |
 
@@ -64,6 +66,7 @@ The function block has no internal state machine. It operates statelessly and is
 **Simple Coupling (e.g., Direct Connection):** Without the Split component, the sender would have to provide multiple adapter connections themselves. The Split component encapsulates this logic and simplifies the overall architecture.
 
 **
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.

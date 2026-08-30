@@ -6,6 +6,7 @@
 
 The function block `F_WSTRING_AS_BYTE` is used to convert a WSTRING data type to a BYTE data type. This block is particularly useful in scenarios where converting wide strings into individual bytes is required.
 ![F_WSTRING_AS_BYTE](F_WSTRING_AS_BYTE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

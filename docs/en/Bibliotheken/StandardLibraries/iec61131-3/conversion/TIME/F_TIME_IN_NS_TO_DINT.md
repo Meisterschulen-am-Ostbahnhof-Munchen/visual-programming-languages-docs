@@ -30,9 +30,11 @@ No adapters are included.
 Upon receiving an incoming `REQ` event, the function block converts the TIME value `IN` to a DINT value `OUT`. The conversion is performed using the function `TIME_IN_NS_TO_DINT`. After successful conversion, the `CNF` event is triggered.
 
 - The function block has a simple structure and contains only one algorithm for the conversion.
+
 1. **Waiting for REQ**: The function block waits for an incoming `REQ` event.
 2. **Conversion**: Upon `REQ`, the TIME value `IN` is converted to DINT.
 3. **Output**: After successful conversion, the `CNF` event is triggered.
+
 - Conversion of time values for numerical calculations.
 - Integration into control systems where time values are required as numerical values.
 

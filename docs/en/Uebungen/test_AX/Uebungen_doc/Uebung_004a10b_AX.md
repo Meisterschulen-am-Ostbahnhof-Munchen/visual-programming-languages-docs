@@ -3,6 +3,7 @@
 ![Uebung_004a10b_AX_network](./Uebung_004a10b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an asynchronous toggle flip-flop (T-FF) using a logiBUS input block with the event `BUTTON_SINGLE_CLICK` and a logiBUS output block. The function block is initially set to `TRUE` – the output is enabled immediately after startup. Pressing the input `I1` clears the output; another press enables it again (toggle behavior).
@@ -34,11 +35,12 @@ This exercise implements an asynchronous toggle flip-flop (T-FF) using a logiBUS
 
 1. **Startup Behavior**: The function block `AX_T_FF` has `Q_INIT = TRUE`. This means that output `Q` is active immediately after startup. The value is then passed to the output function block via the adapter connection `AX_T_FF.Q → DigitalOutput_Q1.OUT`, so that the physical output `Q1` is immediately switched on – this is indicated by the comment "ON right at the start!".
 2. **Toggle Flow**:
+
 - If the button on `I1` is briefly pressed, `DigitalInput_CLK_I1` generates an event at output `IND`.
 - This event is forwarded to the clock input of the T-FF via the event connection `DigitalInput_CLK_I1.IND → AX_T_FF.CLK`.
 - The T-FF then toggles its internal state: `TRUE` becomes `FALSE` (or vice versa).
 - The new state is transmitted to the output module via the adapter connection, which then sets the physical output accordingly.
-3. **Repeated Pressing**: Each subsequent press of `BUTTON_SINGLE_CLICK` triggers another toggle, so the output switches back and forth between `TRUE` and `FALSE`.
+1. **Repeated Pressing**: Each subsequent press of `BUTTON_SINGLE_CLICK` triggers another toggle, so the output switches back and forth between `TRUE` and `FALSE`.
 
 **Connection Overview**:
 

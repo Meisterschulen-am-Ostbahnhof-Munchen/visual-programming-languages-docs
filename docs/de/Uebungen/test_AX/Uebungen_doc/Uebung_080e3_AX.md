@@ -3,6 +3,7 @@
 ![Uebung_080e3_AX_network](./Uebung_080e3_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert den Einsatz des universellen Aufwärtszählers **E_CTU** in Kombination mit einer **Eventbremse**, realisiert durch die Funktionsbausteine **AX_D_FF** (D-Flipflop) und **AUI_D_FF_HYS** (D-Flipflop mit Hysterese). Ziel ist es, den Zählerstand zu stabilisieren und auszugeben, sowie einen digitalen Ausgang bei Erreichen eines Zählerüberlaufs zu setzen.
@@ -12,7 +13,7 @@ Diese Übung demonstriert den Einsatz des universellen Aufwärtszählers **E_CTU
 Die Übung verwendet ausschließlich primitive Funktionsbausteine (keine Sub-Applikationen). Nachfolgend sind alle eingesetzten Bausteine mit ihren Parametern und Verbindungen aufgeführt.
 
 | Bausteinname | Typ | Parameter | Kurzbeschreibung |
-|:---|:---|:---|:---|
+| :--- | :--- | :--- | :--- |
 | DigitalInput_CLK_I1 | logiBUS_IXA | QI = TRUE, Input = Input_I1 | Digitaler Eingang für das Taktsignal (CLK) |
 | DigitalInput_RST_I2 | logiBUS_IXA | QI = TRUE, Input = Input_I2 | Digitaler Eingang für den Rücksetzimpuls (RST) |
 | X_TO_B_I1 | AX_X_TO_BOOL | – | Konvertiert den Adapter-Eingang (AX) in einen Booleschen Wert |

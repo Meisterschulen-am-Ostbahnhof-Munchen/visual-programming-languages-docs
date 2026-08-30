@@ -3,9 +3,11 @@
 ![AX_TO_AI](./AX_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_TO_AI** is a composite function block that converts a BOOL adapter (AX) into an INT adapter (AI). It serves as a bridge between interfaces that process Boolean signals (TRUE / FALSE) and those that expect integer values. The conversion is performed via an internal call to the function block `F_BOOL_TO_INT` from the IEC 61131 library.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. The data output of the function block is implemented via
 ### **Adapters**
 
 | Direction | Name | Type (Adapter) | Explanation |
-|----------|--------|----------------|------------------------------------|
+| ---------- | -------- | ---------------- | ------------------------------------ |
 | Socket | AX_IN | `AX` | Boolean Input Adapter (BOOL) |
 | Plug | AI_OUT | `AI` | Integer Output Adapter (INT) |
 
@@ -75,7 +77,7 @@ This behavior is implicitly controlled by the event cabling in the network.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference from AX_TO_AI |
-|---------------------|-------------------------------------------|-------------------------------------------------------------|
+| --------------------- | ------------------------------------------- | ------------------------------------------------------------- |
 | `DI_TO_AI` | Converts digital input to INT adapter | Requires separate input/output ports; no adapter interface |
 | `AX_TO_DINT` | BOOL adapter → DINT adapter | Returns a 32-bit integer; 16-bit INT is used here |
 | `F_BOOL_TO_INT` | Standard conversion (BOOL→INT) | No adapter wrapper; available only as an internal block |

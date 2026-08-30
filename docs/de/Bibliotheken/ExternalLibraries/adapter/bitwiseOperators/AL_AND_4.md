@@ -3,6 +3,7 @@
 ![AL_AND_4](./AL_AND_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AL_AND_4** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 4 Eingangswerten vom Typ `LWORD` (64-Bit-Bitmuster (Langwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

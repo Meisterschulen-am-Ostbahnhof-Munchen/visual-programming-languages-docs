@@ -3,6 +3,7 @@
 ![AUI_LE](./AUI_LE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_LE** führt einen Vergleich zweier analoger Eingangswerte auf „kleiner oder gleich“ (less or equal) durch. Er ist als Composite-Baustein realisiert, der intern den IEC‑61131‑3 Baustein `F_LE` verwendet. Das Ergebnis (ein BOOL‑Wert) wird über einen Ausgangsadapter bereitgestellt. Der FB eignet sich für ereignisgesteuerte Grenzwertüberwachungen in Automatisierungssystemen.

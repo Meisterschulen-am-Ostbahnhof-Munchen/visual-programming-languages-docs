@@ -6,6 +6,7 @@
 
 The function block `F_DINT_TO_BYTE` converts a 32-bit integer value (DINT) to an 8-bit integer value (BYTE). This conversion is particularly useful when data needs to be exchanged or processed between systems with different word lengths.
 ![F_DINT_TO_BYTE](F_DINT_TO_BYTE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,6 +36,7 @@ When the event input `REQ` is triggered, the algorithm is executed, converting t
 The algorithm used is:
 
 OUT := DINT_TO_BYTE(IN);
+
 ## Technical Features
 
 - Converting `DINT` to `BYTE` can result in data loss if the original value is outside the representable range of `BYTE` (0 to 255).

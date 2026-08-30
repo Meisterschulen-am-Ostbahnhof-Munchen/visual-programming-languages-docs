@@ -55,6 +55,7 @@ The result and the associated processing event are then output via the output ad
 The function block is essentially stateless. Computation is purely reactive, based on the values and events present at the input adapters. No internal historical states are stored.
 
 - ## Application Scenarios
+
 - **Sensor Value Scaling:** Calculation of corrected measured values where a raw value must be multiplied by several calibration, correction, or conversion factors.
 - **Volume and Mass Calculation:** Physical calculations in process engineering that require the product of several variables (e.g., $V = l \times b \times h$ taking into account an additional density factor).
 - **Structured Signal Processing:** Use in more complex control applications where data is distributed modularly via adapter structures.
@@ -63,6 +64,7 @@ The function block is essentially stateless. Computation is purely reactive, bas
 - **Cascaded Dual Multipliers:** To multiply four values using standard components, three conventional `MUL` components would need to be cascaded. `AULI_MUL_4` consolidates this logic into a single function block, saving resources and improving clarity.
 
 The `AULI_MUL_4` is a practical and modern function block for multiplying four numeric values using the IEC 61499 adapter concept. It is ideally suited for cleanly structured, readable, and maintainable control applications in the 4diac IDE.
+
 ## Technical Features
 
 ## State Overview

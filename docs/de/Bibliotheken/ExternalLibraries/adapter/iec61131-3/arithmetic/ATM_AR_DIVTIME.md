@@ -3,6 +3,7 @@
 ![ATM_AR_DIVTIME](./ATM_AR_DIVTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ATM_AR_DIVTIME** dividiert einen Zeitwert (Typ TIME) durch einen numerischen Wert – die vollständig adapterbasierte Variante von [AR_DIVTIME](AR_DIVTIME.md). Anders als bei AR_DIVTIME wird auch der zu dividierende Zeitwert (IN1) über einen Adapter (Typ `ATM`) statt über einen festen Dateneingang eingespeist. Der Baustein ist gemäß IEC 61131-3 als standard arithmetic function klassifiziert.

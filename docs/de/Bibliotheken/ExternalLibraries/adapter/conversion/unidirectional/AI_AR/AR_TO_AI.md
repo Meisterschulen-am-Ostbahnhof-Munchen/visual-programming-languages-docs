@@ -3,6 +3,7 @@
 ![AR_TO_AI](./AR_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_TO_AI** ist ein Composite-Baustein, der einen unidirektionalen AR‑Adapter (Eingang mit dem Datentyp REAL) in einen unidirektionalen AI‑Adapter (Ausgang mit dem Datentyp INT) umwandelt. Er dient zur numerischen Typkonvertierung innerhalb von 4diac‑Netzwerken und kapselt einen IEC‑61131‑Konvertierungsbaustein.

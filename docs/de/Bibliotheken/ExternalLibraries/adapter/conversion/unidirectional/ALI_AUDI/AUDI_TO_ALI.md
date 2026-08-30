@@ -3,6 +3,7 @@
 ![AUDI_TO_ALI](./AUDI_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_TO_ALI** ist ein Composite-Baustein, der eine Brücke zwischen einem **AUDI**-Adapter (vom Typ *UDINT*) und einem **ALI**-Adapter (vom Typ *LINT*) bereitstellt. Er wandelt eingehende UDINT-Werte über eine standardisierte Konvertierungsfunktion in LINT-Werte um und leitet sie an den Ausgangsadapter weiter. Der Baustein wird typischerweise in Anwendungen eingesetzt, die unterschiedliche Adress- oder Integertypen innerhalb eines 4diac-Adapterkonzepts verbinden müssen.
@@ -72,7 +73,7 @@ Als Composite-Baustein besitzt `AUDI_TO_ALI` keine eigenen Zustände. Die Zustan
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | `F_UDINT_TO_LINT` | reiner Konverter | keine Adapter, direkte Daten-E/A; kein Ereignis-Handling über Adapter, erfordert eigene Ansteuerung. |
 | `AUDI_TO_ALI` (dieser) | Adapter-Konverter | kapselt die Konvertierung in einer adapterbasierten Schnittstelle; Ereignisse und Daten werden automatisch über die Adapter weitergeleitet. |
 | `ALI_TO_AUDI` (hypothetisch) | Adapter-Konverter | würde LINT rückwärts nach UDINT wandeln (potenziell verlustbehaftet). |

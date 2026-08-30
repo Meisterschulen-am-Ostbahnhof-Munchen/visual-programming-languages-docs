@@ -3,6 +3,7 @@
 ![ALR_D_FF_TMIN](./ALR_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_D_FF_TMIN** realisiert einen taktflankengesteuerten Data-Latch-Flipflop (D-Flipflop) mit einer minimalen Verzögerungszeit zwischen zwei aufeinanderfolgenden Ereignisausgängen (Minimum inter-disposal Time). Er ermöglicht das latchen eines Datenwerts bei Empfang eines Ereignisses und stellt sicher, dass der Ausgangsereignis-Stoß nicht schneller als ein definierbares Zeitintervall erfolgt. Dies ist besonders nützlich, um nachgeschaltete Systeme vor Überlastung zu schützen oder zeitliche Mindestabstände in der Ereigniskommunikation einzuhalten.

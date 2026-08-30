@@ -3,9 +3,11 @@
 ![SET_DATE](./SET_DATE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **SET_DATE** function block is used to write a date value (data type `DATE`) from an input to an InOut variable. The InOut variable is written directly and is available with the new value after execution. This enables efficient transfer of date values without an additional output variable.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The **SET_DATE** function block is used to write a date value (data type `DATE`)
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-------|--------------|
+| ---------- | ------- | -------------- |
 | IN | DATE | Value to be written to the target variable |
 | OUT | DATE | Target variable (InOut) – initial value can be read but will be overwritten |
 

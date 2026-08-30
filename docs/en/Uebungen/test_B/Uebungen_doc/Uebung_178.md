@@ -1,9 +1,11 @@
 Here is the documentation for Exercise 178, based on the provided XML data.
+
 # Exercise_178: Example for FB_F_TRIG (Falling Edge Detection)
 
 ![Uebung_178_network](./Uebung_178_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise_178 deals with the detection of falling edges in signal processing. The goal is to trigger an event precisely when an input signal changes from `TRUE` (High) to `FALSE` (Low). This event is also used to generate a time-limited pulse.
@@ -32,19 +34,19 @@ The program flow for this exercise is as follows:
 
 The function block `DigitalInput_I1` reads the status of the hardware input `Input_I1`. As soon as a signal is present (e.g., a button is pressed) or changes, this is transmitted via the event `IND` and the data connection `IN`.
 
-2. **Edge Detection:**
+1. **Edge Detection:**
 
 The input signal (`IN` from `DigitalInput_I1`) is connected to the clock input (`CLK`) of `FB_F_TRIG`.
 
 - `FB_F_TRIG` monitors this signal.
 - If the module detects a change from **High to Low** (e.g., releasing a button), the output `Q` briefly switches to `TRUE`.
-- 3. **Time Control (Pulse):**
+- 1. **Time Control (Pulse):**
 
 The output signal `Q` of the edge trigger is connected to the input `IN` of the timer `E_TP`.
 
 - As soon as the falling edge is detected, the timer `E_TP` starts.
 - The timer generates a pulse with a duration of **1 second** (defined by `PT = T#1s`).
-4. **Signal Output:**
+1. **Signal Output:**
 
 The output `Q` of the timer controls the input `OUT` of the timer `DigitalOutput_Q1`.
 

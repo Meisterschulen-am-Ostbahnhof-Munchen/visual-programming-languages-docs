@@ -53,11 +53,13 @@ Since this is a purely mathematical calculation function block, it is stateless.
 - **Signal Scaling:** Calibration or adjustment of sensor values where multiple factors (e.g., base value, gain, correction factor, unit conversion) need to be multiplied.
 - **Physical Calculations:** Calculation of more complex quantities such as volumetric flow rates, electrical power, or energy flows, involving multiple measured variables and constant factors.
 - **Cascade Avoidance:** Consolidating multiple multiplication steps into a single block to improve clarity in the application diagram.
+
 - ## Comparison with Similar Function Blocks
 
 Compared to conventional IEC 61131-3 `MUL` function blocks, which often only have two inputs and use direct data and event pins, the `AR_MUL_4` offers a significantly cleaner visual representation in the control program by combining four inputs and using adapters. It eliminates the need to cascade multiple multipliers.
 
 The `AR_MUL_4` is a practical auxiliary function block for arithmetic operations in the IEC 61499 environment. Through the consistent use of adapters, it significantly contributes to the clarity and modularity of control programs, especially when processing more complex mathematical formulas.
+
 ## Technical Features
 
 ## State Overview

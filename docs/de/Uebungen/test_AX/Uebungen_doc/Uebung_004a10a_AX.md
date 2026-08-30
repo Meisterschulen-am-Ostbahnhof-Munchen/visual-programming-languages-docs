@@ -10,7 +10,7 @@ Diese Übung realisiert ein Toggle-Flip-Flop (T-FF) mit einem Initialwert von `F
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### Baustein `DigitalInput_CLK_I1`
 

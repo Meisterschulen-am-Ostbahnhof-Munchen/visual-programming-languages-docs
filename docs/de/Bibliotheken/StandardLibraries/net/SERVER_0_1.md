@@ -3,6 +3,7 @@
 ![SERVER_0_1](SERVER_0_1.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `SERVER_0_1`-Funktionsblock ist die generische Server-Variante mit 0 Sende- und 1 Empfangsdatenfeldern für die Kommunikation mit einem passenden [CLIENT_1_0](CLIENT_1_0.md)-Block. Er empfängt 1 Datenwerte (`RD_1`) vom Client, ohne selbst Nutzdaten zu senden. Wie alle `SERVER_*`-Bausteine basiert er auf der generischen `GEN_SERVER`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

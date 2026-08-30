@@ -3,6 +3,7 @@
 <img width="1383" height="452" alt="image" src="https://github.com/user-attachments/assets/2b74e859-7af1-4a33-9ae1-94290210600c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AND_9_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über neun separate boolesche Eingänge durch. Der Block folgt dem IEC 61131-3 Standard und ist für den Einsatz in der 4diac-IDE konzipiert.

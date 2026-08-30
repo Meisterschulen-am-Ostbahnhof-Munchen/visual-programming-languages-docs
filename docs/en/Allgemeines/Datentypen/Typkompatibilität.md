@@ -2,10 +2,11 @@
 
 The rules for allowed data connections are based on the principle:
 **"Target must be able to accept Source"**.
+
 ## Central Files in the Codebase
 
 | File | Purpose |
-|-------|-------|
+| ------- | ------- |
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/data/impl/DataTypeAnnotations.java` | Defines `isAssignableFrom(DataType other)` for each IEC 61131-3 type |
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/validation/LinkConstraints.java:200` | Tests connections with `targetType.isAssignableFrom(sourceType)` |
 | `tests/.../datatype/helper/ElementaryDataTypeCompatibilityTest.java` | Complete test matrix of all implicit assignments |
@@ -25,7 +26,7 @@ This means: the target type must be equal to or greater than the source type.
 ### Signed
 
 | Source → | SINT | INT | DINT | LINT |
-|----------|:----:|:---:|:----:|:----:|
+| ---------- | :----: | :---: | :----: | :----: |
 | **SINT** | ✓ | ✓ | ✓ | ✓ |
 | **INT** | ✗ | ✓ | ✓ | ✓ |
 | **DINT** | ✗ | ✗ | ✓ | ✓ |
@@ -34,7 +35,7 @@ This means: the target type must be equal to or greater than the source type.
 ### Unsigned
 
 | Source → | USINT | UINT | UDINT | ULINT |
-|----------|:-----:|:----:|:-----:|:-----:|
+| ---------- | :-----: | :----: | :-----: | :-----: |
 | **USINT** | ✓ | ✓ | ✓ | ✓ |
 | **UINT** | ✗ | ✓ | ✓ | ✓ |
 | **UDINT** | ✗ | ✗ | ✓ | ✓ |
@@ -59,12 +60,12 @@ REAL and LREAL also accept certain integer types:
 ## Bit Types
 
 | Source → | BOOL | BYTE | WORD | DWORD | LWORD |
-|----------|:----:|:----:|:----:|:-----:|:-----:|
+| ---------- | :----: | :----: | :----: | :-----: | :-----: |
 | **BOOL** | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **BYTE** | ✗ | ✓ | ✓ | ✓ | ✓ |
 | **WORD** | ✗ | ✗ | ✓ | ✓ | ✓ |
-| **DWORD**| ✗ | ✗ | ✗ | ✓ | ✓ |
-| **LWORD**| ✗ | ✗ | ✗ | ✗ | ✓ |
+| **DWORD** | ✗ | ✗ | ✗ | ✓ | ✓ |
+| **LWORD** | ✗ | ✗ | ✗ | ✗ | ✓ |
 
 ## Characters and Strings
 
@@ -119,11 +120,12 @@ If an assignment (in ST) or a connection (in the FB network) is not implicitly a
 
 - **In Structured Text (ST):** Use a conversion function of the form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` (e.g., `DINT_TO_UDINT`).
 - **In the graphical FB network:** Insert the corresponding conversion function block (e.g., block `DINT_TO_UDINT`) between the output and input.
+
 ### ⚠️ Important Special Case: Bit Strings to Numeric Types (reinterpret_cast)
 
 In FORTE / 4diac, conversions of bit strings (such as `DWORD`, `WORD`, `BYTE`) to numeric types (`REAL`, `INT`, `DINT`, etc.) are performed at the bit level **`reinterpret_cast`**. This means that the bit patterns are copied directly without adjusting the mathematical value. This applies equally to ST function calls and graphical conversion blocks.
 
-#### Scenario A: A numeric value (e.g., UDINT) is stored in the DWORD.
+#### Scenario A: A numeric value (e.g., UDINT) is stored in the DWORD
 
 If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is to be output as a floating-point number (`REAL`):
 
@@ -133,6 +135,7 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
 - *Explanation:* This copies the bits of 123 directly into the float bit pattern. According to IEEE-754, this is interpreted as an extremely small, almost infinitely close zero, which is mathematically incorrect.
 - **Correct (double conversion):**
 - *In ST:*
+
     ```pascal
     real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
     ```
@@ -142,7 +145,7 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
 
 - *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
 
-#### Scenario B: An IEEE-754 float bit pattern is already stored in the DWORD.
+#### Scenario B: An IEEE-754 float bit pattern is already stored in the DWORD
 
 If `DWORD` directly contains the raw bit pattern of a floating-point number (e.g., read in via a Modbus register or a network connection):
 
@@ -163,7 +166,7 @@ The following direct conversions are **not defined** in IEC 61131-3 / IEC 61499:
 Instead, you must convert using the appropriate unsigned integer type:
 
 | Source | Destination | Correct Conversion |
-|--------|------|---------------------|
+| -------- | ------ | --------------------- |
 | BYTE | REAL | `BYTE` → `USINT` → `REAL` |
 | WORD | REAL | `WORD` → `UINT` → `REAL` |
 | DWORD | REAL | `DWORD` → `UDINT` → `REAL` |

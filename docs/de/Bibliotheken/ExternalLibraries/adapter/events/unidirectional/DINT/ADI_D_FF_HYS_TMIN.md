@@ -3,6 +3,7 @@
 ![ADI_D_FF_HYS_TMIN](./ADI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_D_FF_HYS_TMIN** realisiert ein Daten-Latch (D-Flipflop) mit einer Hysterese und einer minimalen Zeitverzögerung zwischen aufeinanderfolgenden Ausgangsereignissen. Er dient der stabilen und entstörten Signalweitergabe in industriellen Steuerungsanwendungen, die auf unidirektionalen Adaptern basieren.

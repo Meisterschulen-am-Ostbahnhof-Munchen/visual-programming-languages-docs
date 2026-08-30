@@ -1,9 +1,11 @@
 # RT_Bridge_5
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_5 function block serves as a decoupling bridge for 5 data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**

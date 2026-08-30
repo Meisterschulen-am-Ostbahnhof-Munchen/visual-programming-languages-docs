@@ -5,6 +5,7 @@
 ![Uebung_004b3c_network](./Uebung_004b3c_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung wird eine Schaltung aus zwei verriegelten Toggle-Flip-Flops realisiert. Jedes Flip-Flop wird über einen eigenen Taster (Eingang I1 bzw. I2) umgeschaltet. Die Besonderheit liegt in der gegenseitigen Verriegelung: Immer nur eines der beiden Flip-Flops kann den logischen Zustand `TRUE` annehmen. Sobald ein Flip-Flop auf `TRUE` gesetzt wird, setzt es automatisch das andere zurück. Die Kommunikation zwischen den beiden Sub-Applikationen erfolgt über einen einzigen bidirektionalen Adapter (Typ AE2), wodurch eine sehr kompakte Verbindungsstruktur entsteht.

@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_8](./AIWS_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AIWS_SPLIT_8** teilt ein eingehendes AIWS-Adapter-Signal auf acht identische Ausgänge auf. Er fungiert als generischer Splitter für unidirektionale Adapterverbindungen und ermöglicht die parallele Weiterleitung eines Signals an mehrere nachfolgende Funktionsbausteine.
@@ -30,7 +31,7 @@ Keine.
 ### Adapter
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | IN | adapater::types::unidirectional::AIWS | Eingehendes AIWS-Signal, das aufgeteilt werden soll. |
 | Ausgang (Plug) | OUT1 | adapater::types::unidirectional::AIWS | Erster paralleler Ausgang des Signals. |
 | Ausgang (Plug) | OUT2 | adapater::types::unidirectional::AIWS | Zweiter paralleler Ausgang des Signals. |

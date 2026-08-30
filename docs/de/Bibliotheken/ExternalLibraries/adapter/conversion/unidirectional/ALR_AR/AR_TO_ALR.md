@@ -3,6 +3,7 @@
 ![AR_TO_ALR](./AR_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Composite-Funktionsblock zur Konvertierung eines AR-Adapters (REAL) in einen ALR-Adapter (LREAL). Er dient der Anpassung von Datenformaten in IEC‑61499‑2‑Umgebungen und ist unter der Eclipse Public License 2.0 lizenziert.

@@ -63,7 +63,7 @@ Der **AB_TO_AUS**-Baustein besitzt keinen eigenen Zustandsautomaten. Die Funktio
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung |
-|----------|--------------|
+| ---------- | -------------- |
 | **F_BYTE_TO_USINT** | Einfacher IEC-Konverter ohne Adapteranbindung. Muss manuell mit Ereignis- und Datenverbindungen verdrahtet werden. |
 | **AB_TO_AUS** | Composite-FB, der die gesamte Adapterkonvertierung inklusive Ereignisweitergabe kapselt und dadurch eine saubere, abstrahierte Schnittstelle bietet. |
 | **AUS_TO_AB** (hypothetisch) | Reverse-Conversion von USINT zu BYTE – spiegelbildliche Funktionalität für die Gegenrichtung. |

@@ -14,6 +14,7 @@
 ![AUS_ADD_4](./AUS_ADD_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUS_ADD_4` dient der arithmetischen Addition von vier Eingangswerten. Es handelt sich hierbei um einen generischen Funktionsbaustein (Generic FB), der speziell für die Verwendung mit unidirektionalen Adaptern entwickelt wurde. Durch die Kapselung der Signale in Adaptern ermöglicht der Baustein eine saubere und übersichtliche Strukturierung von Datenflüssen innerhalb von IEC 61499 Applikationen.

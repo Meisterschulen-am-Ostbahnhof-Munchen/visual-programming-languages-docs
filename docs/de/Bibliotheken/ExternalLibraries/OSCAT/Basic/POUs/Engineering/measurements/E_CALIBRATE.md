@@ -5,6 +5,7 @@
 ![E_CALIBRATE](E_CALIBRATE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `E_CALIBRATE` ist die ereignisgesteuerte Variante von [CALIBRATE](CALIBRATE.md): Die Zwei-Punkt-Kalibrierung (`Y = (X + OFFSET) * SCALE`) wird nicht über boolesche Datenwerte, sondern über die eigenen Ereignisse `EICO`/`EICS` ausgelöst, mit jeweils eigenem Bestätigungsereignis. Reihenfolge (Offset vor Skalierung) wird auch hier nicht erzwungen -- dafür siehe [E_CALIBRATE_SQ](E_CALIBRATE_SQ.md).
@@ -51,7 +52,7 @@ Da sowohl `EICO` als auch `EICS` jederzeit aus `REQ` heraus erreichbar sind, erz
 **Beispiel** (4-20-mA-Drucksensor über logiBUS, normiert auf `0.0..1.0`, gewünschter Ausgabebereich `0.0..500.0`):
 
 | Schritt | Aktion | Ergebnis |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 4 mA anlegen (`X=0.0`), `Y_Offset=0.0`, `EICO` feuern | `OFFSET = 0` |
 | 2 | 20 mA anlegen (`X=1.0`), `Y_Scale=500.0`, `EICS` feuern | `SCALE = 500` |
 

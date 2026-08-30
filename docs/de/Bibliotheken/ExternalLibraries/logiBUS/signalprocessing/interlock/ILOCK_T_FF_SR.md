@@ -3,6 +3,7 @@
 ![ILOCK_T_FF_SR](./ILOCK_T_FF_SR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ILOCK_T_FF_SR` ist ein zusammengesetzter Baustein (Composite FB), der ein verriegelbares Toggle-Flipflop mit Set- und Reset-Funktionalität realisiert. Er besitzt eine Adapter-Schnittstelle (AE2), die eine bidirektionale Kommunikation mit anderen Instanzen ermöglicht und zur Interlock-Verkettung dient. Das Flipflop schaltet seinen Ausgang `Q` bei jedem steigenden Flanke des Clock-Eingangs `CLK` um, sofern kein Reset- oder Set-Ereignis anliegt. Die Verriegelung erfolgt über die Adapter, die von externen Bausteinen gesetzt werden können.
@@ -12,9 +13,9 @@ Der Funktionsblock `ILOCK_T_FF_SR` ist ein zusammengesetzter Baustein (Composite
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
-| `S`   | Event | Setzt den Ausgang `Q` auf TRUE |
-| `R`   | Event | Setzt den Ausgang `Q` auf FALSE |
+| ------ | ----- | ------------- |
+| `S` | Event | Setzt den Ausgang `Q` auf TRUE |
+| `R` | Event | Setzt den Ausgang `Q` auf FALSE |
 | `CLK` | Event | Clock-Ereignis – löst einen Toggle des Ausgangs `Q` aus |
 
 ### **Ereignis-Ausgänge**

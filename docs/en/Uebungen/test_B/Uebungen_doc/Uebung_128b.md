@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_128b` based on the provided data.
+
 # Exercise_128b: ISOBUS Send Message GLOBAL TP BAM
 
 ![Uebung_128b_network](./Uebung_128b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates sending an ISOBUS message using the **Transport Protocol (TP)** with the **Broadcast Announce Message (BAM)** method. A message is sent to the global address (Broadcast). Since the data size exceeds 8 bytes (here 32 bytes), the use of the Transport Protocol is necessary.
@@ -29,7 +31,7 @@ In this exercise, various function blocks are interconnected to implement networ
 - **Function**: It converts the network event of the local device into an event configured for global transmission (broadcast).
 - **isobus::pgn::tx::AlPgnTxNew_TP** (`AlPgnTxNew_TP`)
 - The actual send block for PGNs using the Transport Protocol (TP).
-- * **Parameters**:
+- - **Parameters**:
 - `u32Pgn`: `61184` (Proprietary A PGN).
 - `u16DaSize`: `0` (Dynamic overwrites).
 - `u8Priority`: `3`.
@@ -63,13 +65,14 @@ The following blocks are used to break down structures for diagnostic purposes:
 The exercise proceeds as follows:
 
 1. **Initialization**:
+
 - The block `NmGetCfInfo_1` provides information about its own network node. The `IND` event triggers the subsequent steps.
 - The network information (`sNetEv`) is forwarded to `NetEv2NetEv`.
 - Simultaneously, `INIT_ARR_0032_BYTE` provides a 32-byte data packet and initializes the data input of `AlPgnTxNew_TP`.
-- 2. **Sender Configuration**:
+- 1. **Sender Configuration**:
 - The block `NetEv2NetEv` is configured with the handle `GLOBAL_A`. This means it prepares the send block to send to the global address (255).
 - The result of `NetEv2NetEv` is placed at the input `NmDestin` of `AlPgnTxNew_TP` and acknowledged via the event `install`. This tells the sender to send a broadcast telegram.
-- 3. **Transmitting Process (TP BAM)**:
+- 1. **Transmitting Process (TP BAM)**:
 - Pressing the button `Input_I1` (single click) on the module `DigitalInput_CLK_I1` triggers the event `REQ` on the transmitting module `AlPgnTxNew_TP`.
 - Since the data length (32 bytes) is greater than 8 bytes and the destination is the global address, the module automatically uses the **BAM protocol** (Broadcast Announce Message) to transmit the data in segments.
 - The PGN 61184 (Proprietary A) is transmitted with priority 3.

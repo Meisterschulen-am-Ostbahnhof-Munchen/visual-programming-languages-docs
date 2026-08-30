@@ -3,6 +3,7 @@
 ![AL_D_FF](./AL_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_D_FF** realisiert ein Data-Latch-Flipflop (D-Flipflop). Er dient dazu, einen digitalen Datenwert bei jedem eingehenden Ereignis zu speichern und den gespeicherten Wert über einen Adapterausgang zur Verfügung zu stellen. Der Baustein kapselt die wiederkehrende Aufgabe eines D-Flipflops und bietet über Adapter eine saubere, typisierte Schnittstelle für Ereignis- und Datenaustausch.

@@ -57,6 +57,7 @@ Since this is a purely data-flow and adapter-based function block, it does not h
 Compared to classic mathematical components of IEC 61131-3 (such as a standard `MUL` component with discrete `REQ` / `CNF` events and separate data lines), the `ALI_MUL_2` eliminates the need for manual linking of event and data paths. This prevents errors in event data mapping and results in a significantly cleaner and more readable application diagram in 4diac-ide.
 
 The `ALI_MUL_2` is a modern and efficient function block for multiplication. Thanks to the consistent use of unidirectional adapters, it is ideally suited for service-oriented and modular control systems where clarity and ease of maintenance are paramount.
+
 ## Technical Features
 
 ## State Overview

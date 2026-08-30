@@ -3,6 +3,7 @@
 ![VALUES2ARRAY_4_BYTE](VALUES2ARRAY_4_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `VALUES2ARRAY_4_BYTE` fasst 4 einzelne `BYTE`-Skalarvariablen `IN_1`…`IN_4` zu einem `BYTE`-Array der Größe 4 zusammen. Er ist die Umkehrung von `ARRAY2VALUES_4_BYTE` und gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [VALUES2ARRAY_2_LREAL](VALUES2ARRAY_2_LREAL.md)).

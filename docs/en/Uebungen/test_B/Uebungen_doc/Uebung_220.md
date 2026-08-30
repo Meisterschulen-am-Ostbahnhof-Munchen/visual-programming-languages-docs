@@ -3,9 +3,11 @@
 ![Uebung_220_network](./Uebung_220_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a combined up/down counter according to IEC 61131-3 (FB CTUD) with a preset threshold of 10. The counter values are output via digital outputs as well as a numerical value on a terminal. The inputs are provided via logiBUS input blocks.
+
 ## Function Blocks (FBs) Used
 
 - **FB_CTUD** (Type: `iec61131::counters::FB_CTUD`): Standard IEC 61131-3 Up/Down Counter.

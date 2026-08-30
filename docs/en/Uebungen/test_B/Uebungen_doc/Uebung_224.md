@@ -3,6 +3,7 @@
 ![Uebung_224_network](./Uebung_224_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a combined forward/down counter according to IEC 61131-3 (type `FB_CTUD_ULINT`) with 64-bit preselection (ULINT). The counter value is output to a numeric display via the terminal block `Q_NumericValue`. The inputs are provided via logiBUS digital inputs, and the outputs via logiBUS digital outputs.
@@ -55,22 +56,24 @@ Each digital input (Input_CU…Input_LD) generates an event (`IND`) upon a state
 
 *Note:* Since simultaneous events from multiple inputs are (or may not be) combined into a single call, undesirable behavior may occur. The comment therefore recommends including one or two `E_D_FF` (Event DFlipFlops) to reduce the number of events.
 
-2. **Data Connections**
+1. **Data Connections**
+
 - The digital input values (`IN`) are routed directly to the corresponding counter inputs (`CU`, `CD`, `R`, `LD`).
 - The counter's outputs `QU` and `QD` are connected to the digital outputs (`Output_QU`, `Output_QD`).
 - The current counter value `CV` is reduced to 32 bits via the conversion block `F_ULINT_TO_UDINT` and passed to the terminal block `Q_NumericValue`.
 - The event chain `FB_CTUD_ULINT.CNF` simultaneously triggers the output function blocks and the conversion. After the conversion, `Q_NumericValue` is updated.
 
-3. **Parameters**
+1. **Parameters**
 
 The preset value `PV` is set to `ULINT#10` – a comparison with this value sets the outputs `QU`/`QD`.
 
-4. **Learning Objectives**
+1. **Learning Objectives**
+
 - Familiarity with the IEC 61131-3 counter `FB_CTUD_ULINT`.
 - Handling digital inputs/outputs via logiBUS.
 - Use of conversion blocks and terminal output.
 - Awareness of event collisions and possible solutions using `E_D_FF`.
-5. **Difficulty Level:** Medium
+1. **Difficulty Level:** Medium
 
 **Prerequisites:** Basic knowledge of the 4diac IDE, experience with logiBUS I/O modules, and event wiring.
 

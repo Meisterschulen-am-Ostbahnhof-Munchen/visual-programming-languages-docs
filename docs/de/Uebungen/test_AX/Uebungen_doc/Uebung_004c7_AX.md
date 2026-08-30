@@ -14,7 +14,7 @@ Definition einer spezifischen Haltezeit.
 
 ## Beschreibung und Komponenten
 
-[cite_start]Die Subapplikation `Uebung_004c7_AX.SUB` nutzt `logiBUS_IE2` mit `InputEvent = BUTTON_LONG_PRESS_START` und `arg = 3000` (ms)[cite: 1].
+[cite_start]Die Subapplikation `Uebung_004c7_AX.SUB` nutzt `logiBUS_IE2` mit `InputEvent = BUTTON_LONG_PRESS_START` und `arg = 3000` [ms](cite: 1).
 
 -----
 

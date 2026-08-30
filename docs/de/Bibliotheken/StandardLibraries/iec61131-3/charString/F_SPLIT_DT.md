@@ -3,6 +3,7 @@
 ![F_SPLIT_DT](F_SPLIT_DT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_SPLIT_DT` zerlegt einen `DATE_AND_TIME`-Wert in seine einzelnen Zeit-/Datumsbestandteile (`YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`). Er ist die Umkehrung von [F_CONCAT_DT](F_CONCAT_DT.md), das dieselben Einzelbestandteile wieder zu einem `DATE_AND_TIME`-Wert zusammenfügt.

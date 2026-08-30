@@ -1,6 +1,7 @@
 # E_PULSE_RETRIG
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_PULSE_RETRIG` ist die retriggerbare Variante von `E_PULSE`: Er erzeugt einen `TRUE`-Impuls der Dauer `PT` an `Q`, startet den Impuls jedoch bei jedem erneuten `REQ`-Ereignis von vorne, statt ein laufendes Intervall zu ignorieren.

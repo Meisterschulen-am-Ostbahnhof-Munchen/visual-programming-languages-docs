@@ -3,9 +3,11 @@
 ![AB_SPLIT_6](./AB_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_SPLIT_6** is a generic adapter splitter. It serves to distribute an incoming unidirectional adapter data stream (type `AB`) simultaneously to six separate outputs. This allows the data from a single adapter to be made available to multiple downstream blocks without data loss.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ There are no explicit data outputs. The distributed data is provided via the ada
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AB` | `IN` | Socket | Input adapter that supplies the data to be distributed. |
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug | First output adapter – receives a copy of the input data. |
 | adapter::types::unidirectional::AB` | `OUT2` | Plug | Second output adapter. |

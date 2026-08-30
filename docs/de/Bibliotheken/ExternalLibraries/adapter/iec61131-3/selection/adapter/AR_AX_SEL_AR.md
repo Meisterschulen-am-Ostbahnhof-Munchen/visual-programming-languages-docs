@@ -6,6 +6,7 @@
 ![AR_AX_SEL_AR](./AR_AX_SEL_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_AX_SEL_AR` dient der binären Auswahl (Selektion) zwischen zwei analogen Eingangssignalen, die über Adapter übertragen werden. Basierend auf dem Zustand eines Auswahlsignals (Selector) wird einer der beiden Eingänge auf den Ausgang durchgeschaltet.

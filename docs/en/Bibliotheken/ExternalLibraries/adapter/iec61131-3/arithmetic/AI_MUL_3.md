@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AI_MUL_3` is a generic arithmetic function block designed for multiplying three input values. It conforms to the classification for standard arithmetic functions according to IEC 61131-3 and utilizes the 4diac adapter concept. Encapsulating the signals in adapters significantly reduces the visual complexity of the function block diagram.
@@ -69,7 +70,7 @@ The function block does not have a complex internal state diagram (stateless). I
 
 - **Measurement Scaling:** Multiplication of an analog raw value (`IN1`) by a calibration factor (`IN2`) and a further correction factor (`IN3`).
 - **Physical Calculations:** Calculation of volumes (V = l × b × h) or power, where three factors must be multiplied directly together.
-- * **Cascaded Amplifications:** Signal processing chains in which a signal passes through two amplification stages sequentially.
+- - **Cascaded Amplifications:** Signal processing chains in which a signal passes through two amplification stages sequentially.
 
 ---
 

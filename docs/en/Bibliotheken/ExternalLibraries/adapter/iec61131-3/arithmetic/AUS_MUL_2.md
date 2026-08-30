@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_MUL_2` is a generic arithmetic block for the 4diac IDE, used for multiplying two values. Unlike classic mathematical function blocks, this block uses an adapter-based concept for data transmission. This enables structured, modular, and clear signal wiring in complex IEC 61499 applications.
@@ -56,6 +57,7 @@ The result of the calculation and the corresponding confirmation event are then 
 
 - **Generic Nature:** The function block is declared as a generic type (`GenericClassName = 'GEN_AUS_MUL'`). This allows for flexible handling of various numeric data types (e.g., `INT`, `REAL`, `LREAL`) defined by the adapter structure.
 - **Adapter Focus:** Reducing the number of traditional pins to adapters significantly minimizes the wiring effort in the function block diagram and ensures a clean, object-oriented design.
+
 - ---
 
 ## State Overview

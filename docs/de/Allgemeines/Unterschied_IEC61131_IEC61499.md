@@ -48,7 +48,7 @@ Die Ausführung in IEC 61499 basiert auf **Ereignissen (Events)**.
 | **Schnittstelle** | Nur Daten (VAR_INPUT, VAR_OUTPUT) | Ereignisse (Events) und Daten |
 | **Ausführung** | Wird durch den Aufruf im Programm (Zyklus) getriggert | Wird durch eingehende Ereignisse getriggert |
 | **Interne Logik** | Code-Rumpf (in ST, KOP, FBS, etc.) | Explizite Zustandsmaschine (**ECC**) oder verschaltetes Netzwerk |
-| **Datensynchronisation**| Implizit (beim Aufruf) | Explizit durch **WITH-Qualifier** (verbindet Daten mit Ereignissen) |
+| **Datensynchronisation** | Implizit (beim Aufruf) | Explizit durch **WITH-Qualifier** (verbindet Daten mit Ereignissen) |
 
 ## Zusammenfassung
 

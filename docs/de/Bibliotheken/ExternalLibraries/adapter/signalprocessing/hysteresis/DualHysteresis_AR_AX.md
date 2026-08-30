@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `DualHysteresis_AR_AX` dient der zweitwegigen (dualen) Analog-Digital-Wandlung mit Hystereseverhalten. Er vergleicht ein analoges Eingangssignal mit einem definierten Mittelpunkt (`MI`), um über zwei separate Digitalausgänge (UP und DOWN) Steuerbefehle auszugeben. Dies entspricht der Funktionsweise eines klassischen Dreipunktreglers mit Totband und Hystereseschwellen. Der Baustein ist für die Signalverarbeitung im Rahmen von Regelungs- und Steuerungsaufgaben konzipiert und nutzt Adapter für eine strukturierte Kopplung der Signale.

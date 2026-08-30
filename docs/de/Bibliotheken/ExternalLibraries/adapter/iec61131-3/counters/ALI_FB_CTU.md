@@ -3,6 +3,7 @@
 ![ALI_FB_CTU](./ALI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ALI_FB_CTU** ist ein Aufwärtszähler (Counter Up) mit 64‑Bit‑Ganzzahlauflösung (LINT). Er dient als Adapter‑Wrapper für den IEC‑61131‑Zählerbaustein *FB_CTU_LINT* und stellt alle Ein‑ und Ausgangssignale über standardisierte Adapter‑Schnittstellen (AX und ALI) bereit. Dadurch wird eine klare Trennung von Ereignis‑ und Datenflüssen erreicht und die Wiederverwendung in unterschiedlichen Projektumgebungen erleichtert.
@@ -37,12 +38,12 @@ Der Baustein besitzt keine separaten, diskreten Daten‑Ausgänge. Die Ausgangsd
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Sockets** (Eingänge) | CU | AX | Count‑Up: Ereignis + BOOL‑Signal |
-|                        | R  | AX | Reset: Ereignis + BOOL‑Signal |
-|                        | PV | ALI | Preset‑Wert: Ereignis + LINT‑Wert |
-| **Plugs** (Ausgänge)  | Q  | AX | Ausgangssignal: Ereignis + BOOL‑Wert |
-|                        | CV | ALI | Zählerstand: Ereignis + LINT‑Wert |
+| | R | AX | Reset: Ereignis + BOOL‑Signal |
+| | PV | ALI | Preset‑Wert: Ereignis + LINT‑Wert |
+| **Plugs** (Ausgänge) | Q | AX | Ausgangssignal: Ereignis + BOOL‑Wert |
+| | CV | ALI | Zählerstand: Ereignis + LINT‑Wert |
 
 ## Funktionsweise
 

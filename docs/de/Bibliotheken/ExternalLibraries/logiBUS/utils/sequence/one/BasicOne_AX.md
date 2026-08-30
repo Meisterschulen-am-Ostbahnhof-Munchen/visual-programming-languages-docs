@@ -66,7 +66,7 @@ Zusammenfassend arbeitet der Baustein als *getriggerte Durchschaltung*: Der Adap
 Der ECC (Execution Control Chart) des Bausteins umfasst fünf Zustände:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | `START` | Wartet auf erstes `INIT`-Ereignis mit `QI=TRUE`. |
 | `Init` | Führt Initialisierungsalgorithmus aus, setzt `QO=QI` und sendet `INITO`. |
 | `Initialized` | Ruhezustand nach erfolgreicher Initialisierung; wartet auf `DI1.E1` oder erneutes `INIT` (mit `QI=FALSE`). |

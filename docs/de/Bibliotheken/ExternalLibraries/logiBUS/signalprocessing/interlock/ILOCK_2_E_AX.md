@@ -3,6 +3,7 @@
 ![ILOCK_2_E_AX](./ILOCK_2_E_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ILOCK_2_E_AX** stellt zwei bistabile Ausgänge mit gegenseitiger Verriegelung (Interlock) sowie einer Toggle-Funktion bereit. Er wird über Ereignisse gesteuert und gibt seine Zustände über zwei Adapter (Typ `AX`) aus. Der Baustein eignet sich für Anwendungen, bei denen zwei sich gegenseitig ausschließende Signale benötigt werden, z. B. für die Ansteuerung von Weichen, Ventilen oder Motoren.

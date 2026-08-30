@@ -3,9 +3,11 @@
 ![AVG](./AVG.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AVG** (Array Average) function block calculates the arithmetic mean (average) of all elements in an integer array. It is designed for use in control engineering and enables rapid statistical analysis of measured values or process data.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -66,7 +68,7 @@ Since this is a **combinatorial function block**, there are no explicit states. 
 ## Comparison with Similar Function Blocks
 
 | Feature | **AVG** | Typical IEC 61131-3 AVG Function Block |
-|---|---|---|
+| --- | --- | --- |
 | **Parameterization** | Dynamic via array (no limit) | Often static array size or lists |
 | **Event-driven** | Yes (REQ/CNF) | No (pure function) |
 | **Output type** | `REAL` | Usually `REAL` or `LREAL` |

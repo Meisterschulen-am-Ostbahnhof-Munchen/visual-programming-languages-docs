@@ -3,6 +3,7 @@
 ![FB_TON_LTIME](FB_TON_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `FB_TON_LTIME` is the `LTIME` variant (64-bit duration, nanosecond resolution) of the standard timer block `FB_TON` (on-delay). It behaves functionally identically to `FB_TON`, but uses data type `LTIME` instead of `TIME` for `PT`/`ET`.

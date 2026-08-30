@@ -3,15 +3,17 @@
 ![logiBUS_IBA](./logiBUS_IBA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **logiBUS_IBA** function block is a composite block for processing byte input data via the logiBUS protocol. It encapsulates the initialization, configuration, and event control of a logiBUS input block and provides the data via an adapter. The block is designed for use in agricultural control systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description |
-|----------|-----|---------------|
+| ---------- | ----- | --------------- |
 | INIT | EInit | Service initialization; takes over the configuration parameters (QI, PARAMS, Input, InputEvent) |
 | REQ | Event | Service request to execute a function (dependent on QI) |
 
@@ -24,7 +26,7 @@ The **logiBUS_IBA** function block is a composite block for processing byte inpu
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QI | BOOL | Qualifier for event inputs; controls the activation of event processing |
 | PARAMS | STRING | Service parameter (e.g., configuration data for the logiBUS driver) |
 | Input | logiBUS::io::DI::logiBUS_DI_S | Selection of the physical input (e.g., Input_I1..I8); Default value: `logiBUS_DI::Invalid` |

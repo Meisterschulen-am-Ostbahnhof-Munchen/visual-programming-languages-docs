@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) `AUS_SUB_2` ist ein generischer Baustein zur Durchführung von arithmetischen Subtraktionsoperationen innerhalb von 4diac-basierten Steuerungssystemen. Der Baustein nutzt unidirektionale Adapter vom Typ `AUS` zur Kapselung und Übertragung von Eingangs- und Ausgangssignalen. Durch sein generisches Design (Kompilierungsklasse `GEN_AUS_SUB`) kann er flexibel in verschiedenen Steuerungsszenarien eingesetzt werden, um die Differenz zweier Werte zu bilden.
@@ -78,6 +79,7 @@ Da dieser Baustein als rein funktionaler bzw. zustandsloser Berechnungsblock kon
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen IEC 61131-3 `SUB`-Baustein, der direkt mit elementaren Datentypen arbeitet, bietet der `AUS_SUB_2` folgende Vorteile:
+
 - **Weniger Verdrahtungsaufwand:** Ereignis- und Datenleitungen müssen nicht separat gezogen werden, da sie im `AUS`-Adapter gebündelt sind.
 - **Höhere Modularität:** Er eignet sich ideal für serviceorientierte Architekturen in der IEC 61499, in denen Subsysteme standardmäßig über Adapter kommunizieren.
 

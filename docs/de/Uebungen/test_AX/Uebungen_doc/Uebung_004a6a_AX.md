@@ -3,6 +3,7 @@
 ![Uebung_004a6a_AX_network](./Uebung_004a6a_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen **Toggle-Flip-Flop** (Wechselschalter) unter Verwendung von **Ereignis-Eingängen** (IE) und einem **Rendezvous-Baustein** (`RT_E_REND`).
@@ -82,7 +83,7 @@ Die SubApp verwendet folgende (Sub-)Bausteine:
 **Zusammenfassende Verbindungstabelle:**
 
 | Quelle | Ziel |
-|--------|------|
+| -------- | ------ |
 | `DigitalInput_CLK_I1.IND` | `RT_E_REND.EI1` |
 | `DigitalInput_CLK_I2.IND` | `RT_E_REND.EI2` |
 | `DigitalInput_CLK_I3.IND` | `RT_E_REND.R` |

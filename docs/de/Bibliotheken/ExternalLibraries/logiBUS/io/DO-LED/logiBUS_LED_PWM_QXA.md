@@ -3,6 +3,7 @@
 ![logiBUS_LED_PWM_QXA](./logiBUS_LED_PWM_QXA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_LED_PWM_QXA` ist ein Composite-Baustein zur Steuerung einer PWM-gesteuerten LED über den logiBUS. Er fasst die Konfiguration und Ausgabe eines LED-PWM-Signals zusammen und stellt eine einheitliche Schnittstelle für Initialisierung, Parametrierung und Betrieb bereit.

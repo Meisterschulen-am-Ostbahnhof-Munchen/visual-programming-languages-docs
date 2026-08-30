@@ -3,9 +3,11 @@
 ![AUI_D_FF_HYS](./AUI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_D_FF_HYS` implements a data latch (D flip-flop) with a hysteresis function. It serves to reliably acquire an analog or digital value, suppressing small fluctuations (noise) through an adjustable hysteresis band. The block is designed for use in automation technology and complies with the IEC 61499-1 Annex A standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No dedicated data outputs; the latched value is provided via the `Q` adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|------|--------------------------------------|----------|--------------------------|
+| ------ | -------------------------------------- | ---------- | -------------------------- |
 | I | adapter::types::unidirectional::AUI | Socket | Latch Value |
 | Q | adapter::types::unidirectional::AUI | Plug | Latched Value |
 

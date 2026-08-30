@@ -1,6 +1,7 @@
 # NumericValue_IDA
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NumericValue_IDA** is a service interface function block specifically designed for processing numeric input data (double word input data) in the context of ISOBUS universal terminals (UTs). It serves to transfer changes to numeric values made on a user interface (e.g., a tractor terminal) into the control logic.
@@ -46,6 +47,7 @@ The **NumericValue_IDA** acts as a wrapper for the internal block `NumericValue_
 1. **Initialization:** The connection to the specific object on the ISOBUS terminal is established via the event `INIT` and the data inputs `PARAMS` and `u16ObjId`.
 2. **Data Reception:** When the value of the referenced object on the terminal changes or is updated by the system, the internal block receives this information.
 3. **Forwarding:** The internal block forwards the new value (`IN`) and the associated event to the adapter `IN` of the **NumericValue_IDA**.
+
 - The adapter's event `E1` is triggered.
 - The adapter's data point `D1` provides the numerical value.
 
@@ -63,7 +65,7 @@ Since this is a composite function block, its status is primarily determined by 
 
 - **Not Initialized:** After startup or during `QI=FALSE` and `INIT`.
 - **Initialized / Ready:** After successful `INIT` (`QO=TRUE`). The function block listens for updates from the terminal.
-- * **Error:** If `QO=FALSE` and `STATUS` contain an error message (e.g., invalid object ID).
+- - **Error:** If `QO=FALSE` and `STATUS` contain an error message (e.g., invalid object ID).
 
 ## Application Scenarios
 
@@ -75,7 +77,8 @@ Since this is a composite function block, its status is primarily determined by 
 
 - **NumericValue_ID:** This is the internal base function block. It offers the same functionality but provides the data via classic `IND`/`CNF` events and a `IN` data output. **NumericValue_IDA** is the adapter version of this function block.
 - **Other `_IDA` function blocks:** Similar to `Button_IDA` (for buttons) or `String_IDA` (for text), this function block follows the design pattern of providing terminal input via adapters.
-*
+-
+
 ## 🛠️ Related Exercises
 
 - [Exercise_011_AUDI](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_011_AUDI.md)

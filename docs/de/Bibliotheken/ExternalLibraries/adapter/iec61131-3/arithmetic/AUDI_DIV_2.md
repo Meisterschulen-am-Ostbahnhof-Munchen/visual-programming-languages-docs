@@ -6,6 +6,7 @@
 ![AUDI_DIV_2](./AUDI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) **AUDI_DIV_2** dient zur Durchführung einer arithmetischen Division. Es handelt sich hierbei um einen generischen Funktionsbaustein (`GEN_AUDI_DIV`), der flexibel mit verschiedenen Datentypen innerhalb der Adapter-Struktur arbeiten kann. Im Gegensatz zu klassischen mathematischen Bausteinen, die über dedizierte Dateneingänge verfügen, nutzt dieser Baustein Adapterverbindungen zur Kapselung von Signalen und Steuerungsflüssen.

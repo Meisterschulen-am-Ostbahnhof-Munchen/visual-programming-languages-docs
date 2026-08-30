@@ -3,6 +3,7 @@
 ![AR_AUI_MUX_5](AR_AUI_MUX_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `AR_AUI_MUX_5` is the adapter-based variant of the generic multiplexer for data type `REAL`. Unlike `AR_MUX_5`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.

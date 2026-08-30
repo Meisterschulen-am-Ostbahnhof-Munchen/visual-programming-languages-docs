@@ -6,6 +6,7 @@
 
 The function block `OR_2_BOOL` performs a logical OR operation (disjunction) on two Boolean input values. It is a generic function block classified according to the IEC 61131-3 standard for standard Boolean functions. The block waits for an execution request, calculates the result, and signals its availability.
 ![OR_2_BOOL](OR_2_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -42,7 +43,7 @@ The operation is event-driven and follows a simple request-acknowledgment cycle:
 The truth table of the operation is:
 
 | IN1 | IN2 | OUT (IN1 OR IN2) |
-|:---:|:---:|:----------------:|
+| :---: | :---: | :----------------: |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |

@@ -3,6 +3,7 @@
 <img width="705" height="397" alt="image" src="https://github.com/user-attachments/assets/1b0e2281-e41d-47e1-bad4-9690070e18e8" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SPLIT_6 Funktionsblock ist ein generischer Baustein, der dazu dient, einen einzelnen AX-Adapter in sechs separate AX-Ausgänge aufzuteilen. Der Baustein ermöglicht die Verteilung von Signalen und Datenströmen von einer zentralen Quelle zu mehreren Verbrauchern.

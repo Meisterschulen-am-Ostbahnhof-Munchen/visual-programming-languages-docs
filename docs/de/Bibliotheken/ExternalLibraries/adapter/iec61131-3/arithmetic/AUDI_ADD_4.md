@@ -29,12 +29,12 @@ Der Baustein besitzt keine direkten Datenausgänge. Das Ergebnis wird über eine
 ### **Adapter**
 
 | Bezeichnung | Richtung | Typ | Beschreibung |
-|-------------|----------|-----|--------------|
-| `IN1`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster Summand |
-| `IN2`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter Summand |
-| `IN3`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Dritter Summand |
-| `IN4`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Vierter Summand |
-| `OUT`  | Plug (Ausgang)  | `adapter::types::unidirectional::AUDI` | Ergebnis der Addition |
+| ------------- | ---------- | ----- | -------------- |
+| `IN1` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster Summand |
+| `IN2` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter Summand |
+| `IN3` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Dritter Summand |
+| `IN4` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Vierter Summand |
+| `OUT` | Plug (Ausgang) | `adapter::types::unidirectional::AUDI` | Ergebnis der Addition |
 
 ## Funktionsweise
 

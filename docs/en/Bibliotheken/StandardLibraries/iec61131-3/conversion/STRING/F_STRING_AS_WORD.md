@@ -6,6 +6,7 @@
 
 The function block `F_STRING_AS_WORD` is used to convert a `STRING` value to a `WORD` value. This functionality is particularly useful in scenarios where strings need to be converted into numeric values for use in further calculations or control logic.
 ![F_STRING_AS_WORD](F_STRING_AS_WORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

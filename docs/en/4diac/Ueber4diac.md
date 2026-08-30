@@ -44,7 +44,7 @@ Guerickestr. 25 · 80805 Munich · Germany
 
 [https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/)
 
-## History:
+## History
 
 The first version of 4diac was presented by ACIN TU Vienna on July 7, 2007.
 

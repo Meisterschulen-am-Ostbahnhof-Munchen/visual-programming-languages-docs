@@ -4,9 +4,11 @@
 ![BYTE_TO_ST08X](./BYTE_TO_ST08X.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block (FB) is used to break down a single byte value into a structure of eight individual BOOL values. Each bit of the input byte is assigned to a separate BOOL field in the output structure, which simplifies the handling of bitwise information.
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -13,15 +13,19 @@ Der Funktionsblock A2X_SPLIT_8 dient als generischer Baustein, um einen eingehen
 ### **Ereignis-Eingänge**
 
 Nicht vorhanden.
+
 ### **Ereignis-Ausgänge**
 
 Nicht vorhanden.
+
 ### **Daten-Eingänge**
 
 Nicht vorhanden.
+
 ### **Daten-Ausgänge**
 
 Nicht vorhanden.
+
 ### **Adapter**
 
 Der FB besitzt folgende Adapter-Schnittstellen:

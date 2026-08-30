@@ -3,6 +3,7 @@
 ![AX_TO_AS](./AX_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AX_TO_AS` ist ein Composite-FB, der einen BOOL-Adapter (Typ AX) in einen SINT-Adapter (Typ AS) umwandelt. Er kapselt die Konvertierung eines binären Signals in einen vorzeichenbehafteten 8‑Bit‑Wert und stellt diese über eine standardisierte Adapterschnittstelle bereit.

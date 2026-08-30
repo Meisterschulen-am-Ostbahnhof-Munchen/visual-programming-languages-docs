@@ -3,15 +3,17 @@
 ![AUI_CTUD](./AUI_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_CTUD** is an event-driven up/down counter in the adapter version. It is based on the standard function block E_CTUD and extends it with "On-Change" triggering for the output states. The counter value (CV), the preset value (PV), and the comparison results (QU, QD) are exchanged with other function blocks via the adapter interfaces. The function block is intended for use in IEC 61499 applications where loose coupling via adapters is desired.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | **CU** | Increment counter by 1 (Count Up) |
 | **CD** | Decrease counter by 1 (Count Down) |
 | **R** | Reset counter to 0 (Reset) |
@@ -20,7 +22,7 @@ The function block **AUI_CTUD** is an event-driven up/down counter in the adapte
 ### **Event Outputs**
 
 | Event | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | **CUO** | Acknowledgement of successful count-up operation |
 | **CDO** | Acknowledgement of successful count-down operation |
 | **RO** | Acknowledgement of successful reset |
@@ -54,19 +56,20 @@ This function block operates as an event-driven counter with a resolution of 0 t
 
 1. An **input event** (CU, CD, R, or LD) triggers a transition from the start state to the corresponding processing state.
 2. **Calculation**: In each algorithm, the internal counter (`CV.D1`) is updated, and the output adapters QU and QD are recalculated:
+
 - **CU**: `CV.D1 := CV.D1 + 1` (only if the previous value < 65535)
 - **CD**: `CV.D1 := CV.D1 - 1` (nur, wenn der Wert vorher > was 0)
 - **R**: `CV.D1 := 0`
 - **LD**: `CV.D1 := PV.D1`
 - Subsequently, `QU.D1 := (CV.D1 >= PV.D1)` and `QD.D1 := (CV.D1 <= 0)` are set.
-3. **Counter Value Output**: After each value change, the event `CV.E1` is sent to propagate the new counter value via the adapter.
+1. **Counter Value Output**: After each value change, the event `CV.E1` is sent to propagate the new counter value via the adapter.
 
 **CU**: ** ... 4. **On-Change Triggering**:
 
 - After each counting operation or after a change to the PV (event from the PV adapter), the state of QU and QD is checked.
 - The internal variables `QU_OLD` and `QD_OLD` store the previous state. Only if the value has changed is the corresponding adapter event (`QU.E1` or `QD.E1`) triggered.
 - This behavior prevents unnecessary event flooding with constant threshold values.
-5. **Processing of PV Changes**: An incoming event on the PV adapter (`PV.E1`) results in the state `UPDATE_PV`, in which only the comparison results are recalculated (without changing the counter). The on-change check is also performed afterward.
+1. **Processing of PV Changes**: An incoming event on the PV adapter (`PV.E1`) results in the state `UPDATE_PV`, in which only the comparison results are recalculated (without changing the counter). The on-change check is also performed afterward.
 
 ## Technical Features
 
@@ -79,7 +82,7 @@ This function block operates as an event-driven counter with a resolution of 0 t
 ## State Overview
 
 | State | Description |
-|----------------|--------------|
+| ---------------- | -------------- |
 | **START** | Waiting for an input event (CU, CD, R, LD) or a PV change |
 | **CU** | Increment counter and output new value via CV adapter |
 | **CD** | Decrement counter and output new value via CV adapter |
@@ -106,7 +109,7 @@ The state transitions are controlled by the events and conditions `[QU.D1 <> QU_
 The standard function block **E_CTUD** (from the IEC 61499 library) also offers an up/down counter with event control, but with the following features:
 
 | Feature | **E_CTUD** (Standard) | **AUI_CTUD** (Adapter Version) |
-|-----------------------|-----------------------------------------------|-------------------------------------------------|
+| ----------------------- | ----------------------------------------------- | ------------------------------------------------- |
 | Interface | Fixed event and data ports (e.g., CV as BOOL) | Loose coupling via adapter (plug/socket) |
 | Output: Counter value | Data port: CV (INT/UDINT) | Adapter CV (Type AUI) |
 | Limit output | Bool ports QU, QD | Adapter QU, QD (Type AX) |

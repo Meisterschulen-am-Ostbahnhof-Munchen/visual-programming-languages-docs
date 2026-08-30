@@ -3,6 +3,7 @@
 ![Uebung_006a5_AX_network](./Uebung_006a5_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die Übung `Uebung_006a5_AX` zeigt, wie sich mit **einem einzigen physischen Taster** (`Input_I1`) sowohl ein **rastendes** (schaltendes) als auch ein **tastendes** (umschaltendes) Bedienverhalten realisieren lässt. Anders als `Uebung_006a_AX`, die für Set, Reset und Toggle drei getrennte Taster (`I1`, `I2`, `I3`) benötigt, wertet diese Übung an einem einzigen Eingang unterschiedliche Tasten-Gesten aus – langes Drücken, Loslassen nach langem Drücken und kurzer Klick – und speist diese in den Baustein `AX_T_FF_SR` ein.
@@ -16,7 +17,7 @@ Damit lässt sich mit einem einzigen Taster ein Ausgang:
 ## Verwendete Funktionsbausteine (FBs)
 
 | FB-Name | Typ | Parameter |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | `BUTTON_LONG_PRESS_START` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_LONG_PRESS_START` |
 | `BUTTON_LONG_PRESS_UP` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_LONG_PRESS_UP` |
 | `BUTTON_SINGLE_CLICK` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_SINGLE_CLICK` |

@@ -3,9 +3,11 @@
 ![ADI_TO_AUS](./ADI_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ADI_TO_AUS function block acts as an adapter converter from a DINT adapter (ADI) to a USINT adapter (AUS). It converts a DINT value to a USINT value and enables the seamless integration of components with different data types in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**

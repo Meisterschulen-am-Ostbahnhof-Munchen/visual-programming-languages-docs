@@ -3,6 +3,7 @@
 ![AX_RF_TRIG](./AX_RF_TRIG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AX_RF_TRIG** dient der Erkennung von steigenden und fallenden Flanken eines booleschen Signals. Er empfängt den Signalwert über einen Adapter und gibt bei einer Flankenänderung entsprechende Ereignisse aus. Der Baustein kapselt die Standardlogik der IEC‑61499 Flankenerkennung (E_RF_TRIG) und stellt sie über eine einheitliche Adapterschnittstelle bereit.

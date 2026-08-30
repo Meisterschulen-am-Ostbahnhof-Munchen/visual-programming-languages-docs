@@ -3,6 +3,7 @@
 ![ASR_SPLIT_4](./ASR_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASR_SPLIT_4** ist ein generischer Baustein, der einen eingehenden unidirektionalen ASR-Adapter (Antriebs-Steuerungs-Adapter) auf vier separate, identische ASR-Ausgänge verteilt. Er ermöglicht die gleichzeitige Ansteuerung von bis zu vier unabhängigen Aktoren oder Subsystemen mit demselben Signal, ohne dass die Signalintegrität beeinträchtigt wird. Der Baustein ist für den Einsatz in verteilten Automatisierungssystemen nach IEC 61499 konzipiert.
@@ -18,7 +19,7 @@ Der Funktionsblock **ASR_SPLIT_4** ist ein generischer Baustein, der einen einge
 ### **Adapter-Ausgänge (Plugs)**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | OUT1 | `adapter::types::unidirectional::ASR` | Erster Ausgangs-Adapter (identische Kopie des Eingangs). |
 | OUT2 | `adapter::types::unidirectional::ASR` | Zweiter Ausgangs-Adapter. |
 | OUT3 | `adapter::types::unidirectional::ASR` | Dritter Ausgangs-Adapter. |

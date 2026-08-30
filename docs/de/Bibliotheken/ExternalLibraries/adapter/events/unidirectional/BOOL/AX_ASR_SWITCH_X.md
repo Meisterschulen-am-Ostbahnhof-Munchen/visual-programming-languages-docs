@@ -4,6 +4,7 @@
 ![AX_ASR_SWITCH_X](./AX_ASR_SWITCH_X.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_ASR_SWITCH_X** ist ein zusammengesetzter Baustein (Composite Function Block), der für die Konvertierung zwischen zwei verschiedenen Adaptertypen zuständig ist. Er wandelt Signale eines **AX**-Adapters (Boolean Event) in Signale eines **ASR**-Adapters (Asynchronous Set/Reset) um.

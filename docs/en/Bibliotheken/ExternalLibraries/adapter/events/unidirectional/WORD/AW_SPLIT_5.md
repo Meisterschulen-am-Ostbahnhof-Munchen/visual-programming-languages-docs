@@ -3,9 +3,11 @@
 ![AW_SPLIT_5](./AW_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_SPLIT_5** is used to distribute an incoming AW adapter ("actuator/paths") to five separate, identical AW outputs. It is designed as a generic function block and can be used in control architectures where a single signal or data connection needs to be split across multiple parallel paths.
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,9 +3,11 @@
 ![NVS_AR](./NVS_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `NVS_AR` is used to load and store REAL data in non-volatile storage (NVS) using a key. It provides unidirectional communication with other IEC 61499 function blocks via two AR adapter interfaces. The block encapsulates the internal `NVS` function block and extends its functionality with a standardized adapter connection.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -40,7 +42,7 @@ The function block operates as follows:
 2. **After Initialization**: Once `NVS` completes initialization (event `INITO`), a **read command** (`GET`) is automatically sent to `NVS`. The read value (or the default value) is then output via the adapter output `AR_OUT`.
 ... 3. **Save**: An event received via the adapter input `AR_IN` (`AR_IN.E1`) triggers a **save command** (`SET`) in the internal `NVS`. The value to be saved is taken from the adapter data channel (`AR_IN.D1`).
 
-4. **Feedback**: After both a read and a save operation, the result (success/error) is reported via the adapter event `AR_OUT.E1` and via the data outputs `QO`/`STATUS`.
+3. **Feedback**: After both a read and a save operation, the result (success/error) is reported via the adapter event `AR_OUT.E1` and via the data outputs `QO`/`STATUS`.
 
 ## Technical Features
 
@@ -66,7 +68,7 @@ The `NVS_AR` block does not have an explicit state engine in its XML definition.
 ## Comparison with Similar Blocks
 
 | Feature | `NVS_AR` | Direct `NVS` block |
----------|-----------|-------------------------|
+--------- | ----------- | ------------------------- |
 | Interface | AR adapter (unidirectional) | Standard event/data inputs |
 | Intended use | Easy integration into adapter-based networks | Flexible, but more complex wiring |
 | Data type | REAL | Multiple types (via generic parameter) |

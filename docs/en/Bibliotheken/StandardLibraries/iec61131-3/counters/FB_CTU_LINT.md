@@ -6,6 +6,7 @@
 
 The function block `FB_CTU_LINT` is a counter-up function for large integers. It increments with each incoming counting event and can be reset to a predefined value. The block uses the data type `LINT` (64-bit integer) for the counter value and the setpoint.
 ![FB_CTU_LINT](FB_CTU_LINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![Uebung_011b1_PHYSA_network](./Uebung_011b1_PHYSA_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung von physikalischen Messwerten (z.B. Spannung, Strom, Drehzahl) durch eine arithmetische Operation. Zwei Eingangswerte aus definierten physikalischen Quellen werden mittels eines Additionsbausteins verknüpft und das Ergebnis an einen physikalischen Ausgang weitergegeben. Der Fokus liegt auf der korrekten Verdrahtung der Adapter-Schnittstellen zwischen den Funktionsbausteinen (FBs) zur Signalkopplung mit realen I/O-Kanälen.
@@ -12,7 +13,7 @@ Diese Übung demonstriert die Verarbeitung von physikalischen Messwerten (z.B. S
 Die Übung besteht aus vier direkt instanziierten Funktionsbausteinen. Es sind keine weiteren Sub-Bausteine (SubApp) enthalten.
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `NumericValue_PHYSA_I3` | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Liest den physikalischen Wert von der Hardwareschnittstelle `InputNumber_I3` und stellt ihn als physikalische Größe (rPhys) bereit. |
 | `NumericValue_PHYSA_I4` | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Gleiche Funktion wie oben, jedoch für die Schnittstelle `InputNumber_I4`. |
 | `AR_ADD_2` | `adapter::iec61131::arithmetic::AR_ADD_2` | Führt eine Addition zweier physikalischer Werte durch (IN1 + IN2) und gibt das Ergebnis als OUT aus. |
@@ -60,6 +61,7 @@ Die Verbindungen im Detail:
 Die Übung **Uebung_011b1_PHYSA** veranschaulicht den Aufbau einer typischen Messwertverarbeitungskette in der 4diac‑IDE unter Einbeziehung physikalischer I/O‑Kanäle. Sie zeigt, wie zwei analoge Eingangswerte (z.B. Spannungen) aus unterschiedlichen Kanälen eingelesen, addiert und auf einen analogen Ausgang geschrieben werden. Die komplette Signalverkettung erfolgt ausschließlich über Adapterverbindungen – ein wesentliches Konzept für modulare und hardwareunabhängige Automatisierungslösungen.
 
 ***Lernziele***:
+
 - Verständnis der Adapter‑Schnittstellen `rPhys` und `stObj`
 - Zusammenspiel von Eingabe‑, Rechen‑ und Ausgabebausteinen über Adapterverbindungen
 - Umgang mit parametrierbaren I/O‑Objekten (`InputNumber_I3`, `OutputNumber_N3`)

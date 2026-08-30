@@ -3,9 +3,11 @@
 ![Uebung_028a_AR_network](./Uebung_028a_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the calibration of an analog input signal using adapters and the storage of calibration parameters (offset and scaling) in an INI file. The function block `AR_CALIBRATE` performs the linear calibration. The parameters are controlled via two digital inputs (`Input_I2`, `Input_I3`), and the results are stored in two separate memory blocks (`INI_AR2`). The conversion between analog and strongly typed data is performed using special adapter converters.
+
 ## Function Blocks Used
 
 This exercise uses only directly instantiated function blocks (no sub-applications). All blocks, their parameters, and functions are described below.

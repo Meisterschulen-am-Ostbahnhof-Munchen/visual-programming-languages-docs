@@ -3,6 +3,7 @@
 ![Uebung_221b_ALR_network](./Uebung_221b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up/down counter according to IEC 61131-3 (type `ADI_FB_CTUD`). The counter is controlled via digital inputs and outputs the current counter value via both digital outputs (as limit signals) and a terminal output (physical value). The counting range uses 32-bit integers (DINT), and negative values are also possible.
@@ -47,7 +48,7 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 ### Parameter Details of Selected Function Blocks
 
 | Function Block | Parameter | Value |
-|----------|-----------|------|
+| ---------- | ----------- | ------ |
 | `ADI_DINT_TO_DI` | `OUT` | `DINT#5` |
 | `Input_CU` | `QI` | `TRUE` |
 | | `Input` | `Input_I1` |
@@ -69,16 +70,19 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 
 1. **Inputs**: The four digital inputs (`I1`–`I4`) are read into the controller via the logiBUS adapters `Input_CU`, `Input_CD`, `Input_R`, and `Input_LD`.
 2. **Counter Control**:
+
 - `CU` (Count Up) from `Input_CU`: Each event at input `I1` increments the counter by 1.
 - `CD` (Count Down) from `Input_CD`: An event at `I2` decrements the counter by 1.
 - `R` (Reset) from `Input_R`: An event at `I3` resets the counter to 0.
 - `LD` (Load) from `Input_LD`: An event on `I4` loads the preset value (PV) into the counter.
-3. **Preset Value (PV)**: The function block `ADI_DINT_TO_DI` is activated on the INIT event of `Input_LD` (event connection `Input_LD.INITO → ADI_DINT_TO_DI.REQ`). It passes the constant value `DINT#5` to the adapter input `PV` of the counter. Thus, the counter is set to 5 with each load.
-4. **Outputs**:
+1. **Preset Value (PV)**: The function block `ADI_DINT_TO_DI` is activated on the INIT event of `Input_LD` (event connection `Input_LD.INITO → ADI_DINT_TO_DI.REQ`). It passes the constant value `DINT#5` to the adapter input `PV` of the counter. Thus, the counter is set to 5 with each load.
+2. **Outputs**:
+
 - `QU` (Count Up Overflow): outputs to `TRUE` when the counter reaches or exceeds its maximum value → outputs to `Output_Q1`.
 - `QD` (Count Down Overflow): outputs to `TRUE` when the minimum value is undershot → outputs to `Output_Q2`.
 - `CV` (Current Value): converted to an LREAL signal via `ADI_TO_ALR` and passed to `Q_NumericValue_PHYSA_LREAL`. This outputs the current counter value as a numerical value on the terminal (physical output).
 ...`` 4. **Output**:**
+
 ### Notes on the Setup
 
 - **Network Comments**:

@@ -3,9 +3,11 @@
 ![AULI_D_FF_TMIN](./AULI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_D_FF_TMIN** implements a data latch (D flip-flop) with an adjustable minimum delay time between successive event outputs. It serves as a memory element for asynchronous event/data interfaces and ensures that a defined time interval elapses after a data transfer before another event is triggered. The block operates exclusively via adapter interfaces of type `AULI` (unidirectional) and is therefore particularly suitable for modular and distributed control architectures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ None
 ### **Adapters**
 
 | Name | Role | Type | Comment |
-|------|-----------|----------|--------------------------------------------|
+| ------ | ----------- | ---------- | -------------------------------------------- |
 | I | Socket | AULI | Input: value to latch (event E1, data D1) |
 | Q | Plug | AULI | Output: latching value (event E1, data D1) |
 
@@ -43,10 +45,11 @@ This function block encapsulates an internal `E_D_FF_ANY_TMIN` function block fr
 
 1. **Initialization** – An event at the `INIT` input resets the internal state and assigns the parameter `Tmin`. The output `INITO` acknowledges the initialization.
 2. **Event-driven data transfer** –
+
 - An event at the adapter input `I.E1` (as a clock signal) transfers the current data value `I.D1` to the internal flip-flop.
 - Simultaneously, the minimum time `Tmin` is started.
 - After `Tmin` has elapsed, an event is triggered at the adapter output `Q.E1`, and the transferred data value `Q.D1` is output.
-3. **Lockout time** – While `Tmin` is still active, a subsequent input event is ignored or buffered (depending on the internal implementation). Only after the specified time has elapsed can the next value be processed.
+1. **Lockout time** – While `Tmin` is still active, a subsequent input event is ignored or buffered (depending on the internal implementation). Only after the specified time has elapsed can the next value be processed.
 
 ## Technical Features
 

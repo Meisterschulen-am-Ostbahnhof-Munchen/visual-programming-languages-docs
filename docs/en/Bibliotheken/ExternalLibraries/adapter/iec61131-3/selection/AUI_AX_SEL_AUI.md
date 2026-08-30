@@ -4,9 +4,11 @@ Binary selection
 ![AUI_AX_SEL_AUI](./AUI_AX_SEL_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_AX_SEL_AUI** implements a binary selection between two input values of type **AUI**. The decision as to which input is passed to the output is made via a third adapter of type **AX**, which serves as a selector. The block encapsulates the function **F_SEL** defined in IEC 61131-3 and provides it as an adapter-based component.
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![AW_TO_AD](./AW_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AW_TO_AD** ist ein zusammengesetzter Baustein (Composite FB), der einen unidirektionalen WORD-Adapter (AW) in einen unidirektionalen DWORD-Adapter (AD) umwandelt. Er dient als Schnittstellenkonverter und ermöglicht die Anbindung von Komponenten, die unterschiedliche Adaptertypen verwenden. Der FB leitet Ereignisse und Daten direkt vom Eingangs- zum Ausgangsadapter weiter, wobei implizit eine Typkonvertierung von 16‑Bit-WORD auf 32‑Bit-DWORD erfolgt.
@@ -62,7 +63,7 @@ Da der FB als Composite ohne ECC realisiert ist, existiert kein interner Zustand
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung |
-|----------|--------------|
+| ---------- | -------------- |
 | `WORD_TO_DWORD` | Reine Datenkonvertierung ohne Adapter-Schnittstelle |
 | `AW_TO_AD` | Konvertiert komplette unidirektionale Adapter (Ereignis + Daten) |
 | `AD_TO_AW` (nicht vorhanden) | Theoretischer Baustein für die umgekehrte Richtung |

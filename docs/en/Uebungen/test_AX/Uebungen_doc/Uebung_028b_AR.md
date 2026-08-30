@@ -3,9 +3,11 @@
 ![Uebung_028b_AR_network](./Uebung_028b_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the calibration of an analog input signal using adapters and INI-based storage of the calibration parameters. The calibrated signal is then passed through a hysteresis controller, whose threshold values are also read from an INI file. The exercise demonstrates the integration of analog and digital inputs/outputs, adapter conversions, and the persistent storage of parameters.
+
 ## Function Blocks (FBs) Used
 
 ### Main FBs
@@ -72,17 +74,22 @@ Conversion adapter (type `adapter::conversion::unidirectional::AD_TO_AUDI` or `A
 ## Program Flow and Connections
 
 1. **Event Control**: The digital input **DigitalInput_I1** provides an event that is distributed via **AX_SPLIT_2** to two paths:
+
 - Path 1: directly to the digital output **DigitalOutput_Q1** (e.g., as an acknowledgment).
 - Path 2: to the analog input **AnalogInput_I4** (via the `SREQ` connection) to trigger a measurement.
-2. **Analog Value Processing**:
+1. **Analog Value Processing**:
+
 - The measured value from **AnalogInput_I4** (adapter `AD`) is converted via **AD_TO_AUDI** and **AUDI_TO_AR** into the representation suitable for the calibration adapter (`AR`).
 - The converted value is sent to input `X` of the calibration adapter **CALIBRATE**.
-3. **Calibration**:
+1. **Calibration**:
+
 - The digital inputs **DigitalInput_I2_CO** and **DigitalInput_I3_CS** serve as control signals for calibration (`CO` = calibration offset, `CS` = calibration scale).
 - **CALIBRATE** calculates the corrected values from the raw value and the reference points and outputs them as `Y` (calibrated measured value), `OFFSET`, and `SCALE`.
-4. **Persistent Storage**:
+1. **Persistent Storage**:
+
 - The values `OFFSET` and `SCALE` are stored by **INI_OFFSET** and **INI_SCALE** in the INI file (section `Uebung_028a_AR`).
-5. **Hysteresis Function**:
+1. **Hysteresis Function**:
+
 - The calibrated measurement `Y` is passed to the input `INPUT` of the hysteresis controller **Hysteresis_AR_AX**.
 - The threshold values `THRESHOLD` and `HYSTERESIS` are read from the INI file (section `HYSTERESIS`) by the sub-functions **THRESHOLD** and **HYSTERESIS** and applied to the corresponding terminals of the controller.
 - The output `OUTPUT` of the hysteresis controller controls the digital output **DigitalOutput_Q2**.

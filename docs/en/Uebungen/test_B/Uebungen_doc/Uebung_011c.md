@@ -3,9 +3,11 @@
 ![Uebung_011c_network](./Uebung_011c_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the simple pass-through of a numeric value from an ISOBUS input object (InputNumber_I3) to an output object (OutputNumber_N3). The DWORD value coming from the bus is converted to a UDINT before being passed to the output object. This exercise is a basic example of using the **4diac-IDE** in the context of ISOBUS (ISO 11783) and shows how function blocks are interconnected for data processing and forwarding.
+
 ## Function Blocks (FBs) Used
 
 ### InputNumber_I3
@@ -42,14 +44,17 @@ This exercise demonstrates the simple pass-through of a numeric value from an IS
 - **Functionality**: This function block writes a new value (UDINT) to the ISOBUS object with the ID `OutputNumber_N3`. When an event occurs at `REQ`, the corresponding value is transmitted to the bus.
 
 ...
+
 ## Program Flow and Connections
 
 The connections are made in a simple event and data chain:
 
 1. **Event Connections**:
+
 - `InputNumber_I3.IND` → `F_DWORD_TO_UDINT.REQ`
 - `F_DWORD_TO_UDINT.CNF` → `Q_NumericValue.REQ`
-2. **Data Connections**:
+1. **Data Connections**:
+
 - `InputNumber_I3.IN` → `F_DWORD_TO_UDINT.IN`
 - `F_DWORD_TO_UDINT.OUT` → `Q_NumericValue.u32NewValue`
 

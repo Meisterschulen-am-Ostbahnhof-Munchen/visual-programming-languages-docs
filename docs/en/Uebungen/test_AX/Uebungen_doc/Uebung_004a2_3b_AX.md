@@ -3,6 +3,7 @@
 ![Uebung_004a2_3b_AX_network](./Uebung_004a2_3b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a toggle flip-flop controlled by three buttons (BUTTON_SINGLE_CLICK). The button events are combined into a single clock signal using E_MERGE_3. The flip-flop toggles its initial state with each button press and outputs the result to a digital output.

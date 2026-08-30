@@ -1,6 +1,7 @@
 # Uebung_012k_AIS: String Input und Speichern INI mit Subapp (AIS Adapter)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die Übung *Uebung_012k_AIS* demonstriert, wie ein eingegebener String (z. B. Benutzereingabe oder Sensorwert) in einem nichtflüchtigen Speicher (NVS) abgelegt wird. Der Zugriff erfolgt über einen AIS-Adapter (Application Interface Subapp), der die Kommunikation mit der Speicherlogik vereinfacht. Ziel ist es, den Umgang mit persistenten Daten und Adapter-basierten Subapplikationen in der 4diac-IDE zu erlernen.

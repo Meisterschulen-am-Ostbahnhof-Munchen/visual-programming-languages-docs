@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_ADD_3` ist ein generischer arithmetischer Baustein, der zur Addition von drei Eingangswerten dient. Er basiert auf dem Standard IEC 61499-2 und nutzt ein adapterbasiertes Kommunikationsmodell. Durch die Verwendung von unidirektionalen Adaptern vom Typ `ADI` (Adapter für Datenintegration/Interaktion) ermöglicht der Baustein eine strukturierte und saubere Signal- und Datenführung innerhalb von 4diac-ide.
@@ -62,6 +63,7 @@ Das berechnete Ergebnis sowie das zugehörige Aktualisierungsereignis werden ans
 ## Zustandsübersicht
 
 Der Funktionsbaustein verhält sich rein zustandslos (reaktiv):
+
 1. **Wartezustand (Idle):** Der Baustein wartet auf Trigger-Signale der Eingangs-Sockets.
 2. **Berechnung & Weiterleitung:** Bei Triggerung an `IN1`, `IN2` oder `IN3` wird die Summe instantan gebildet und über den Plug `OUT` ausgegeben.
 

@@ -13,7 +13,7 @@ Die logischen Eingangssignale werden über digitale Eingänge eingelesen und die
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Beschreibung |
-|--------------|-----|--------------|
+| -------------- | ----- | -------------- |
 | DigitalInput\_I1 | `logiBUS::io::DI::logiBUS_IX` | Digitaler Eingang – liest das Signal von **Input_I1** (z. B. Taster „Auf“) |
 | DigitalInput\_I2 | `logiBUS::io::DI::logiBUS_IX` | Digitaler Eingang – liest das Signal von **Input_I2** (z. B. Taster „Ab“) |
 | ILOCK | `logiBUS::signalprocessing::interlock::ILOCK_BLOCK_PROTECT` | Interlock-Baustein mit Schutzzeit – verriegelt die Ausgänge und erzwingt eine minimale Umschaltverzögerung (Parameter `DT_PROTECT = T#1s`) |

@@ -3,6 +3,7 @@
 ![Uebung_001f_network](./Uebung_001f_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the negation of a digital input signal using the function block `F_NOT_BOOL_INIT`. The digital input `Input_I1` is read, inverted, and written to the digital output `Output_Q1`. It becomes clear that the negation block outputs a defined value even at system startup (BOOT), even if the input is not yet being read at that time.
@@ -32,9 +33,11 @@ The exercise consists of three function blocks placed directly in the network. N
 The exercise network operates using event-driven logic:
 
 1. **Event Connections:**
+
 - The output events `IND` and `CNF` of DigitalInput_I1 are both routed to the event input `REQ` of F_NOT_BOOL_INIT.
 - The acknowledgment event `CNF` of F_NOT_BOOL_INIT is routed to the event input `REQ` of DigitalOutput_Q1.
-2. **Data Connections:**
+1. **Data Connections:**
+
 - The data output `IN` of DigitalInput_I1 is connected to the data input `IN` of F_NOT_BOOL_INIT.
 - The data output `OUT` of F_NOT_BOOL_INIT is connected to the data input `OUT` of DigitalOutput_Q1.
 

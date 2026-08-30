@@ -3,6 +3,7 @@
 ![Q_ObjSelectInput](https://user-images.githubusercontent.com/116869307/214148166-50d7f308-5767-4b09-b5a9-cd6f4e61bd5b.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ObjSelectInput** is a standards-compliant function block for the programmatic selection of input fields in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.6) specification for VT input elements.
@@ -41,13 +42,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Field selection**:
+1. **Field selection**:
+
 - `REQ` with selection option
 - Sets focus on the input field
 - `CNF` returns operational status and previous option
-3. **Options**:
+1. **Options**:
+
 - `0xFF`: Standard selection (VT version 3+)
 - `0x00`: Extended selection (VT version 4+ only)
 
@@ -61,14 +65,14 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Option Reference
 
 | u8Option | Description | VT Version |
-|----------|----------------------------|------------|
+| ---------- | ---------------------------- | ------------ |
 | 0xFF | Standard selection | 3+ |
 | 0x00 | Extended selection | 4+ |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful execution |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT Not Ready |
@@ -86,7 +90,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_ObjSelectInput | VtFocusControl | VtInputSelector |
-|---------------|------------------|----------------|-----------------|
+| --------------- | ------------------ | ---------------- | ----------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | VT Version 4+ | ✔ | ✖ | ✔ |
 | Option Control | ✔ | ✖ | ✖ |

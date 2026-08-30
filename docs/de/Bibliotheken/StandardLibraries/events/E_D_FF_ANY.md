@@ -3,6 +3,7 @@
 ![E_D_FF_ANY_ecc](./E_D_FF_ANY_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_D_FF_ANY` ist die generisch typisierte Variante von `E_D_FF`: Während `E_D_FF` nur `BOOL`-Werte zwischenspeichert, akzeptiert `E_D_FF_ANY` einen Eingang `D` vom Datentyp `ANY` und kann so für beliebige Datentypen (z. B. `TIME`, `DINT`, `REAL`, `STRING`) als taktgesteuertes Latch mit integrierter Änderungserkennung verwendet werden.
@@ -42,7 +43,7 @@ Bei jedem `CLK`-Ereignis vergleicht die ECC den neuen Wert `D` mit dem aktuell g
 ## Zustandsübersicht
 
 | Zustand | Bedeutung |
-|---|---|
+| --- | --- |
 | START | Anfangszustand, erster `CLK` übernimmt `D` unbedingt |
 | SET | `Q` enthält den zuletzt übernommenen Wert; weitere `CLK`-Ereignisse lösen nur bei `NE(Q, D)` erneut `EO` aus |
 

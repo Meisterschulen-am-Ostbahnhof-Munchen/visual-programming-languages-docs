@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_051`. It demonstrates how to combine many individual signals into a single packet (structure) to route them more efficiently through the program.
+
 ## 🎧 Podcast
 
 ![Uebung_051_network](./Uebung_051_network.svg)

@@ -3,9 +3,11 @@
 ![INI_AUDI](./INI_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **INI_AUDI** function block enables reading and saving UDINT data from a `settings.ini` file. Access to the file is implemented via an internal `INI` function block. Communication with the environment is handled via two **AUDI adapters** (unidirectional), implemented as a plug (`AUDI_OUT`) and a socket (`AUDI_IN`). This allows for modular integration with other function blocks that use the same adapter type.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The **INI_AUDI** function block enables reading and saving UDINT data from a `se
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|----------------|--------|-----------------------------------------------------|
+| ---------------- | -------- | ----------------------------------------------------- |
 | QI | BOOL | Event Input Qualifier |
 | SECTION | STRING | Section name in settings.ini |
 | KEY | STRING | Key name in settings.ini |
@@ -32,14 +34,14 @@ The **INI_AUDI** function block enables reading and saving UDINT data from a `se
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|--------|------------------|
+| -------- | -------- | ------------------ |
 | QO | BOOL | Output Qualifier |
 | STATUS | STRING | Service Status |
 
 ## **Adapter**
 
 | Name | Type | Direction | Comment |
-|----------|----------|----------------|---------------------------------|
+| ---------- | ---------- | ---------------- | --------------------------------- |
 | AUDI_OUT | AUDI | Plug (Output) | Output of the read value |
 | AUDI_IN | AUDI | Socket (Input) | Input of the value to be stored |
 
@@ -48,13 +50,16 @@ The **INI_AUDI** function block enables reading and saving UDINT data from a `se
 This function block works in conjunction with the internal `INI` function block. The basic sequence is:
 
 1. **Initialization (`INIT` event)**
+
 - The input data associated with `INIT` (`QI`, `SECTION`, `KEY`, `DEFAULT_VALUE`) is forwarded to the internal `INI` module.
 - `INI` is started and acknowledged with `INITO`.
-2. **Reading a Value**
+1. **Reading a Value**
+
 - After INIT confirmation, the `GET` command of the `INI` block is automatically triggered.
 - The read value (or `DEFAULT_VALUE`) is output to the `AUDI_OUT.D1` adapter via `INI.VALUEO`.
 - Simultaneously, the event `AUDI_OUT.E1` is sent to notify the connected block.
-3. **Writing a Value**
+1. **Writing a Value**
+
 - If the adapter `AUDI_IN` receives an event `E1` with a data value `D1`, `INI_AUDI` forwards this to the `INI` block as a `SET` command.
 - The internal `INI` block stores the value in the INI file under the specified section and key and acknowledges it with `SETO`.
 - The acknowledgment event is output via `AUDI_OUT.E1`.

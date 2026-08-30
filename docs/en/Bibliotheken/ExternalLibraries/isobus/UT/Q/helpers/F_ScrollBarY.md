@@ -3,6 +3,7 @@
 ![F_ScrollBarY](F_ScrollBarY.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `F_ScrollBarY` function computes, from the current scroll position (in rows), the Y offset

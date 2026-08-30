@@ -3,6 +3,7 @@
 ![Uebung_011b3_PHYSA_network](./Uebung_011b3_PHYSA_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung von physikalischen Werten (Physical Values) in einer einfachen Additionsschaltung. Zwei numerische Eingänge liefern physikalische Größen, die mittels eines Additionsbausteins verrechnet werden. Das Ergebnis wird als physikalischer Wert ausgegeben. Ziel ist es, den Umgang mit Adapterverbindungen zwischen **NumericValue_PHYSA**-Bausteinen und dem standardisierten **AR_ADD_2**-Baustein zu erlernen.
@@ -10,7 +11,7 @@ Diese Übung demonstriert die Verwendung von physikalischen Werten (Physical Val
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Kurzbeschreibung |
-|--------------|-----|------------------|
+| -------------- | ----- | ------------------ |
 | **InputNumber_I3** | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Physikalische Werteingabe (z. B. mit Einheit). Parameter: `QI` = TRUE, `stObj` = "InputNumber_I3". Stellt den eingegebenen physikalischen Wert über den Adapterausgang `rPhys` bereit. |
 | **InputNumber_I4** | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Gleicher Typ wie InputNumber_I3. Parameter: `QI` = TRUE, `stObj` = "InputNumber_I4". |
 | **AR_ADD_2** | `adapter::iec61131::arithmetic::AR_ADD_2` | Addierer aus der IEC-61131-Arithmetikbibliothek. Nimmt zwei physikalische Werte an den Adaptereingängen `IN1` und `IN2` entgegen und liefert die Summe am Adapterausgang `OUT`. |

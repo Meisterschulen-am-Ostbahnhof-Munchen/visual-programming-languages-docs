@@ -1,9 +1,11 @@
-#logiBUS®
+# logiBUS®
+
 # logiBUS®
 
 ## 📺 Video
 
 - [LogiBUS project update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
+
 ## 🎧 Podcast
 
 - [Digital memories: The SR flip-flop in the logiBUS® system explained](https://podcasters.spotify.com/pod/show/logibus/episodes/Digitale-Gedchtnisse-Das-SR-Flip-Flop-im-logiBUS-System-erklrt-e36vksj)

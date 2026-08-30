@@ -3,6 +3,7 @@
 ![AUDI_MUL_3](./AUDI_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_MUL_3** ist ein generischer Baustein zur Multiplikation von drei Eingangswerten. Die Werte werden über unidirektionale Adapter vom Typ **AUDI** bereitgestellt und das Ergebnis über einen gleichartigen Adapter ausgegeben. Der Baustein ist für den Einsatz in IEC 61499‑basierten Steuerungssystemen konzipiert.
@@ -28,7 +29,7 @@ Nicht vorhanden – das Ergebnis wird über den **Plug OUT** als Adapter ausgege
 ### **Adapter**
 
 | Name | Richtung | Typ | Beschreibung |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | **IN1** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster Multiplikationsfaktor. |
 | **IN2** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter Multiplikationsfaktor. |
 | **IN3** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Dritter Multiplikationsfaktor. |

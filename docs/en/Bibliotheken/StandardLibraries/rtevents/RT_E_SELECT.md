@@ -1,10 +1,12 @@
 # RT_E_SELECT
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_SELECT block. Selects one of two input events based on a selector.
 ![RT_E_SELECT](RT_E_SELECT.svg)
+
 ## Metadata
 
 | Attribute | Value |

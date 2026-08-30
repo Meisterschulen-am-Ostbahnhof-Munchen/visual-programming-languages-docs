@@ -14,7 +14,7 @@ Die **Uebung_174** ist eine Sub-Application, die sich mit dem Initialisierungsve
 
 In dieser Übung wird primär ein spezifischer Event-Baustein aus der Standardbibliothek verwendet.
 
-### Enthaltene Bausteine:
+### Enthaltene Bausteine
 
 -   **E_RESTART_1**
     -   **Typ**: `iec61499::events::E_RESTART`

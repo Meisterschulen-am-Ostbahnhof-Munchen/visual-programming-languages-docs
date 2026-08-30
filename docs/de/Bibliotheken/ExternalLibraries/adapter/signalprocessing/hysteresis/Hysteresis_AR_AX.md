@@ -4,6 +4,7 @@
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `Hysteresis_AR_AX` ist ein Basic-Funktionsblock (BFB) für die ereignisgesteuerte Signalverarbeitung in der IEC 61499. Er dient der Analog-Digital-Wandlung eines analogen Eingangssignals unter Berücksichtigung einer einstellbaren Hysterese. Dadurch wird verhindert, dass kleine Signalschwankungen oder Rauschen um einen Schwellenwert herum zu einem schnellen, unerwünschten Hin- und Herschalten des digitalen Ausgangs (Oszillation) führen.

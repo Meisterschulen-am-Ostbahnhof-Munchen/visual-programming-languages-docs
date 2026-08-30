@@ -3,6 +3,7 @@
 ![XOR_4](https://user-images.githubusercontent.com/116869307/214143769-c8306099-6b4d-4e74-ad33-3cd11198e36d.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The XOR_4 function block is a generic function block for calculating bitwise XOR operations with four inputs. It implements the exclusive OR operation at the bit level according to the IEC 61131-3 standard and can work with various bit data types.
@@ -40,6 +41,7 @@ Upon arrival of the REQ event, the XOR_4 block performs a bitwise XOR operation 
 OUT = IN1 XOR IN2 XOR IN3 XOR IN4
 Once the calculation is complete, the CNF event, along with the result, is output to OUT.
 ...
+
 ## Technical Features
 
 - **Generic Data Type**: Uses ANY_BIT, enabling use with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)

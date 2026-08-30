@@ -6,6 +6,7 @@
 
 The function block `F_BOOL_TO_UDINT` converts a `BOOL` value to a `UDINT` value. This conversion is useful when Boolean values are used in calculations or storage operations that require a larger numeric data type.
 ![F_BOOL_TO_UDINT](F_BOOL_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

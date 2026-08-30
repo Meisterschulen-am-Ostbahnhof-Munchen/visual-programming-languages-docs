@@ -3,6 +3,7 @@
 <img width="1383" height="422" alt="image" src="https://github.com/user-attachments/assets/6babe236-7f4e-4a2f-abde-9d35eaf1ef76" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AND_8_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation auf acht boolesche Eingangswerte aus und liefert das Ergebnis auf einen einzigen booleschen Ausgang. Der Baustein folgt dem ereignisgesteuerten Ausführungsmodell von IEC 61499.
@@ -43,7 +44,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 Die Funktionsweise ist deterministisch und folgt der klassischen booleschen Logik. Bei Auslösung durch das Ereignis `REQ` wertet der Block die Zustände aller acht Eingänge (`IN1` bis `IN8`) aus. Die logische Operation wird gemäß der folgenden Wahrheitstabelle ausgeführt:
 
 | IN1 | IN2 | IN3 | IN4 | IN5 | IN6 | IN7 | IN8 | OUT |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 0 | X | X | X | X | X | X | X | 0 |
 | 1 | 0 | X | X | X | X | X | X | 0 |
 | 1 | 1 | 0 | X | X | X | X | X | 0 |

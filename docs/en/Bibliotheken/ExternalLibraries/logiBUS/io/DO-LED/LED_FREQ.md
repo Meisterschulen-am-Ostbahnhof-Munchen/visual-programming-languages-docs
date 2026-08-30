@@ -3,9 +3,11 @@
 ![LED_FREQ](./LED_FREQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 LED_FREQ is a collection of global constants for controlling LED blinking patterns with priority management. The constants define various blinking frequencies and operating modes for LEDs with assigned priority values that can be used in control applications.
+
 ## Interface Structure
 
 ### **Event Inputs**

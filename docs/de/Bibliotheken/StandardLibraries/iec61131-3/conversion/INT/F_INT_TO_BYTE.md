@@ -3,6 +3,7 @@
 <img width="1222" height="184" alt="F_INT_TO_BYTE" src="https://github.com/user-attachments/assets/abc57835-6182-406b-9b56-87c0a227a94c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_INT_TO_BYTE` dient zur Konvertierung eines Integer-Werts (`INT`) in einen Byte-Wert (`BYTE`). Er ist Teil des Pakets `iec61131::conversion` und bietet eine einfache und effiziente Möglichkeit, Datentypen innerhalb von IEC 61499-Systemen umzuwandeln.
@@ -36,6 +37,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 Bei Empfang eines Ereignisses am Eingang `REQ` wird der Algorithmus ausgeführt, der den Wert von `IN` von `INT` zu `BYTE` konvertiert und das Ergebnis an `OUT` ausgibt. Anschließend wird das Ereignis `CNF` ausgelöst, um den erfolgreichen Abschluss der Konvertierung zu signalisieren.
 
 Der Algorithmus ist wie folgt definiert:
+
 ```ST
 ALGORITHM REQ
 OUT := INT_TO_BYTE(IN);

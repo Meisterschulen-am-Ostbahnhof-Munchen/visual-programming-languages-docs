@@ -3,6 +3,7 @@
 ![AW_TO_AUDI](./AW_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AW_TO_AUDI` ist ein Composite-Baustein, der einen über einen WORD-Adapter (`AW`) eingehenden Datenwert in einen UDINT-Wert konvertiert und über einen UDINT-Adapter (`AUDI`) ausgibt. Die Konvertierung erfolgt mittels des intern genutzten Bausteins `F_WORD_TO_UDINT` aus der IEC‑61131‑Bibliothek. Der FB kapselt die Adapter‑Schnittstellen und ermöglicht eine saubere Trennung zwischen verschiedenen Datenformaten in einem System.
@@ -74,7 +75,7 @@ Der Gesamt‑FB spiegelt dieses Verhalten nach außen wider.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingangsadapter | Ausgangsadapter | Konvertierung | Bemerkung |
-|----------|-----------------|-----------------|---------------|-----------|
+| ---------- | ----------------- | ----------------- | --------------- | ----------- |
 | `AW_TO_AUDI` | `AW` (WORD) | `AUDI` (UDINT) | WORD → UDINT | Composite, kapselt `F_WORD_TO_UDINT` |
 | Direkte Nutzung von `F_WORD_TO_UDINT` | Keine Adapter | Kein Adapter | WORD → UDINT | Standard‑Funktionsbaustein ohne Adapter‑Schnittstellen |
 | `AW_TO_ADINT` (hypothetisch) | `AW` (WORD) | `ADINT` (DINT) | WORD → DINT | analoge Konvertierung mit Vorzeichen |

@@ -64,13 +64,13 @@ As soon as an event (`E1`) arrives at one of the sockets (`E_D_FF_ANY` or `E_D_F
 
 The data from inputs `IN0` and `IN1` are buffered via two `F_MOVE` function blocks (configured to the data type `TIME`) and made available for the selection logic.
 
-3. **Selection**:
+1. **Selection**:
 
 The function block `F_SEL` (a standard selection block according to IEC 61131-3) evaluates the state of selector `G`:
 
 - If the signal from `G` is equal to `FALSE`, the value from `IN0` is selected.
 - If the signal from `G` is equal to `TRUE`, the value from `IN1` is selected.
-4. **Output**:
+1. **Output**:
 
 The selected value is passed via another `F_MOVE` module to the output adapter `OUT`, whereupon the output event (`OUT.E1`) is triggered simultaneously.
 
@@ -105,7 +105,7 @@ Since this is a composite function block network (FB), the function block does n
 ## Comparison with Similar Function Blocks
 
 - **Standard `F_SEL`**: The classic `F_SEL` function block operates directly on elementary data types and does not have integrated event control for adapters. `ATM_AX_SEL_ATM` moves this logic to the structured adapter level.
-- * **Standard Multiplexer**: Unlike general-purpose multiplexers, which often feature complex bus structures, this component is highly specialized, extremely lightweight, and perfectly matched to the combination of `ATM` and `AX` adapters.
+- - **Standard Multiplexer**: Unlike general-purpose multiplexers, which often feature complex bus structures, this component is highly specialized, extremely lightweight, and perfectly matched to the combination of `ATM` and `AX` adapters.
 
 ---
 

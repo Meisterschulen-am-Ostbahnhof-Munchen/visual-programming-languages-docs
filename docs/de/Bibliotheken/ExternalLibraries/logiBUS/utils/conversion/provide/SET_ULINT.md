@@ -41,9 +41,11 @@ Keine.
 ## Funktionsweise
 
 Der Funktionsblock ist als einfacher Zustandsautomat (SimpleFB) realisiert. Ein einziger Zustand `REQ` führt bei Aktivierung den Algorithmus `REQ` aus:  
+
 ```
 OUT := IN;
 ```
+
 Anschließend wird der Ereignisausgang `CNF` gesendet. Der übergebene Wert `IN` wird also direkt in die InOut-Variable `OUT` kopiert. Da `OUT` als InOut deklariert ist, kann der Baustein den vorherigen Wert von `OUT` nicht lesen – es erfolgt eine reine Überschreibung.
 
 ## Technische Besonderheiten

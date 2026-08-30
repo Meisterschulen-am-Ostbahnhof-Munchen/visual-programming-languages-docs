@@ -3,6 +3,7 @@
 ![FB_CTUD_UDINT](FB_CTUD_UDINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `FB_CTUD_UDINT` is a combined up/down counter for data type `UDINT` (32-bit unsigned integer). It counts up on `CU` and down on `CD`, can be loaded with a preset value `PV` via `LD`, and reset to `0` via `R`.

@@ -3,6 +3,7 @@
 ![F_RAW_TO_PHYS_LREAL](./F_RAW_TO_PHYS_LREAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `F_RAW_TO_PHYS_LREAL` wandelt einen rohen ISOBUS-Integerwert (UDINT) in einen physikalischen Gleitkommawert (LREAL) um.  
@@ -84,11 +85,11 @@ Der Baustein besitzt keinen internen Zustandsautomaten, da es sich um eine reine
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Datentyp Eingang | Datentyp Ausgang | Besonderheit |
-|----------|------------------|------------------|--------------|
+| ---------- | ------------------ | ------------------ | -------------- |
 | `F_RAW_TO_PHYS_LREAL` | UDINT | LREAL | Doppelte Genauigkeit, LINT‑Zwischenschritt |
-| `F_RAW_TO_PHYS_REAL`  | UDINT | REAL | Einfache Genauigkeit, geringere Rechenlast |
-| `F_RAW_TO_PHYS_LINT`  | UDINT | LINT | Ausgabe als Integer, ohne Skalierung |
-| `F_RAW_TO_PHYS_INT`   | UINT  | REAL | Nur positive Rohwerte, geringerer Wertebereich |
+| `F_RAW_TO_PHYS_REAL` | UDINT | REAL | Einfache Genauigkeit, geringere Rechenlast |
+| `F_RAW_TO_PHYS_LINT` | UDINT | LINT | Ausgabe als Integer, ohne Skalierung |
+| `F_RAW_TO_PHYS_INT` | UINT | REAL | Nur positive Rohwerte, geringerer Wertebereich |
 
 Der vorliegende Baustein bietet die höchste Präzision und ist für Anwendungen empfohlen, die große Wertebereiche oder feine Abstufungen erfordern.
 

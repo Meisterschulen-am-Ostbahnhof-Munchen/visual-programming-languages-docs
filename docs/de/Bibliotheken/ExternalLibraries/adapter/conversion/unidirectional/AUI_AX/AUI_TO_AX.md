@@ -3,6 +3,7 @@
 ![AUI_TO_AX](./AUI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_TO_AX** ist ein Composite-Baustein, der einen AUI-Adapter (Typ *AUI* mit einem UINT-Wert) in einen AX-Adapter (Typ *AX* mit einem BOOL-Wert) umwandelt. Er dient als bidirektionale Konvertierungsschnittstelle zwischen zwei unterschiedlichen Adaptertypen und wird typischerweise eingesetzt, um digitale Vergleichsergebnisse für die Weiterverarbeitung in BOOL-basierten Adaptern bereitzustellen.
@@ -70,7 +71,7 @@ Da es sich um einen Composite-Baustein ohne eigene ECC (Execution Control Chart)
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingabetyp | Ausgabetyp | Funktion |
-|----------|------------|------------|----------|
+| ---------- | ------------ | ------------ | ---------- |
 | **AUI_TO_AX** | AUI (UINT) | AX (BOOL) | Ungleichheit mit Null |
 | *AUI_TO_AX_INV* (hypothetisch) | AUI (UINT) | AX (BOOL) | Gleichheit mit Null (invertiert) |
 | *CONV_UINT_TO_BOOL* (direkt) | UINT (Data) | BOOL (Data) | Direkter Datenwandler, kein Adapter |

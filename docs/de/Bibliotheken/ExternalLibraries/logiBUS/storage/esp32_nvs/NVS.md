@@ -3,6 +3,7 @@
 <img width="1739" height="315" alt="image" src="https://github.com/user-attachments/assets/58cbe71a-173a-41eb-848d-c641fafb502f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der NVS-Funktionsblock (Non-Volatile Storage) ermöglicht das persistente Speichern und Laden von Daten auf einem ESP32-Mikrocontroller. Er nutzt den nichtflüchtigen Speicher (NVS) des ESP32, um Werte unter einem definierten Schlüssel (Key) abzulegen und bei Bedarf wieder abzurufen. Dieser Baustein ist besonders für Anwendungen geeignet, bei denen Konfigurationsdaten, Kalibrierwerte oder Zustandsinformationen über einen Neustart des Geräts hinweg erhalten bleiben müssen.

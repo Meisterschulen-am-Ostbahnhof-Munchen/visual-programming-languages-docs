@@ -6,6 +6,7 @@
 
 The function block `F_WSTRING_AS_LWORD` is used to convert a WSTRING data type to an LWORD data type. This functionality is particularly useful in scenarios where strings need to be converted into a binary form suitable for further processing.
 ![F_WSTRING_AS_LWORD](F_WSTRING_AS_LWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

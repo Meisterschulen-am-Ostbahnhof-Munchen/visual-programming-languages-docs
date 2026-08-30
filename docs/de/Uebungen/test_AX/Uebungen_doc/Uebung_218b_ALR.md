@@ -3,6 +3,7 @@
 ![Uebung_218b_ALR_network](./Uebung_218b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen **Rückwärtszähler (CTD)** nach IEC 61131‑3 mit einem **AUDI_FB_CTD** (Adapter‑Version, Datentyp **UDINT**). Der aktuelle Zählerstand wird über ein Terminal in **PHYSA_LREAL** ausgegeben. Zusätzlich ist ein digitaler Ausgang (**Output_Q1**) vorhanden, der den Zustand des Zählers (Q) anzeigt.

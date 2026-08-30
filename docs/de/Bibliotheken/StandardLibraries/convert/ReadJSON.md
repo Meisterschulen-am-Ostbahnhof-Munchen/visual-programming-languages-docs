@@ -3,6 +3,7 @@
 ![ReadJSON](ReadJSON.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ReadJSON`-Funktionsblock extrahiert den Wert eines benannten Felds aus einem JSON-String. Er dient als einfacher, ereignisgesteuerter JSON-Decoder für Anwendungsfälle, in denen ein einzelnes Feld aus einer JSON-Struktur ausgelesen werden soll, ohne die gesamte Struktur in dedizierte IEC-61131-3-Datentypen abbilden zu müssen.

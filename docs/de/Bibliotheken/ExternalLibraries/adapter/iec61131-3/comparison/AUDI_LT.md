@@ -3,6 +3,7 @@
 ![AUDI_LT](./AUDI_LT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_LT` realisiert einen „Kleiner-als“-Vergleich (less than) zwischen zwei Eingangswerten. Er wird in der Automatisierungstechnik häufig eingesetzt, um Schwellwerte zu überwachen oder logische Entscheidungen zu treffen. Der Baustein ist nach IEC 61131‑3 als „standard comparison function“ klassifiziert und verwendet Adapter für eine flexible Anbindung unterschiedlicher Datentypen.

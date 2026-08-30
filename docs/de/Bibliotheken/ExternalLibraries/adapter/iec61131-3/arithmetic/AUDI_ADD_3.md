@@ -3,6 +3,7 @@
 ![AUDI_ADD_3](./AUDI_ADD_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_ADD_3` führt eine arithmetische Addition von drei Eingangswerten durch. Es handelt sich um einen generischen Baustein, der über Adapter-Schnittstellen die Werte aufnimmt und das Ergebnis über einen weiteren Adapter ausgibt. Der FB ist als Teil der 4diac-IDE für IEC 61499-2 konzipiert.
@@ -28,7 +29,7 @@ Keine direkten Daten-Ausgänge vorhanden. Das Ergebnis wird über den Adapter-Au
 ### **Adapter**
 
 | Name | Typ | Richtung | Kommentar |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | ADD input 1 |
 | IN2 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | ADD input 2 |
 | IN3 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | ADD input 3 |

@@ -17,7 +17,7 @@ Die Übung dient dem Kennenlernen von:
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub‑Bausteine:
+### Sub‑Bausteine
 
 #### **AUDI_FB_CTU**
 
@@ -125,7 +125,7 @@ Die Übung dient dem Kennenlernen von:
 ### Verbindungsübersicht (aus dem Netzwerk)
 
 | Quelle | Ziel | Art |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `Input_CU.IN` | `AUDI_FB_CTU.CU` | Adapter (Daten) |
 | `Input_R.IN` | `AUDI_FB_CTU.R` | Adapter (Daten) |
 | `Input_R.INITO` | `AUDI_UDINT_TO_UDI.REQ` | Ereignis |

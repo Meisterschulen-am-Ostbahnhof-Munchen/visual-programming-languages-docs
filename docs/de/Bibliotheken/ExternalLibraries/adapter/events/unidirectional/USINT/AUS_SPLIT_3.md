@@ -3,6 +3,7 @@
 ![AUS_SPLIT_3](./AUS_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_SPLIT_3** dient als universeller Verteiler für eingehende Adapter-Signale vom Typ `adapter::types::unidirectional::AUS`. Er nimmt ein solches Signal entgegen und leitet es unverändert an drei baugleiche Ausgangsadapter weiter. Dadurch lassen sich Steuerungs-, Alarm- oder Statusinformationen einfach auf mehrere nachfolgende Bausteine aufteilen.
@@ -28,7 +29,7 @@ Keine – die Daten werden über die Adapter `OUT1`, `OUT2`, `OUT3` ausgegeben.
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AUS` | Socket (eingehend) | Empfängt ein AUS-Signal. |
 | `OUT1` | `adapter::types::unidirectional::AUS` | Plug (ausgehend) | Erste Ausgabe des eingehenden Signals. |
 | `OUT2` | `adapter::types::unidirectional::AUS` | Plug (ausgehend) | Zweite Ausgabe des eingehenden Signals. |

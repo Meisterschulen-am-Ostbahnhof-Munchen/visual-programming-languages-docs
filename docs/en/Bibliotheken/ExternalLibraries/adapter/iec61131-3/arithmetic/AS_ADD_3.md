@@ -76,6 +76,7 @@ The function block operates in an event-driven manner and does not have a comple
 - **Measurement Summing:** Addition of three analog sensor values (e.g., three flow meters to calculate a total flow rate).
 - **Setpoint Offset Calculation:** Calculation of an overall setpoint based on a base setpoint, a user offset, and a correction value from a higher-level controller.
 - **Signal Source Combination:** Combining three partial signals in process automation using standardized adapter structures.
+
 - ---
 
 ## Comparison with Similar Components

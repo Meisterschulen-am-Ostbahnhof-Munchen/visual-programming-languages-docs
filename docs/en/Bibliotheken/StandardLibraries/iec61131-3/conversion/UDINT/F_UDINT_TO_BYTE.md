@@ -31,8 +31,10 @@ The function block performs the conversion when the event `REQ` is received. The
 
 - The conversion is performed by the function `UDINT_TO_BYTE`, which maps the UDINT value to a BYTE value. Data loss can occur if the original value is outside the representable range of a BYTE (0 to 255).
 - The function block is implemented as a simple function block (SimpleFB) and uses an ST algorithm for the conversion.
+
 1. **Idle State**: The function block waits for the event `REQ`.
 2. **Conversion State**: Upon receiving `REQ`, the conversion is performed, and `CNF` is triggered.
+
 - **Data Reduction**: When only the lower 8 bits of a 32-bit value are relevant.
 - **Interface Adaptation**: For communication with systems that can only process BYTE data.
 - **Memory Optimization**: In environments with limited memory.

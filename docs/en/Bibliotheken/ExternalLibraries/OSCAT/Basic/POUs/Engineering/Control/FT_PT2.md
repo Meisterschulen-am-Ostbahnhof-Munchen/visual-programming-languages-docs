@@ -1,6 +1,7 @@
 ![FT_PT2](FT_PT2.svg)
-#FT_PT2
+# FT_PT2
 2nd grade filter with programmable times
+
 # FT_PT2
 
 ## Interface

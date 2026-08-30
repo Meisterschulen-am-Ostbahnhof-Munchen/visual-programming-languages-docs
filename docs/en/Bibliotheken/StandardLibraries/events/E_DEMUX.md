@@ -4,6 +4,7 @@
 
 The `E_DEMUX` (Event Demultiplexer) is a function block according to IEC 61499 that forwards a single input event (`EI`) to one of several outputs. The selection of the specific output is determined by the value of an input variable (`K`). This version of the block is a 1-to-4 demultiplexer.
 ![E_DEMUX](E_DEMUX.svg)
+
 ## Interface Structure
 
 ![E_DEMUX_ecc](./E_DEMUX_ecc.svg)
@@ -29,11 +30,12 @@ The `E_DEMUX` (Event Demultiplexer) is a function block according to IEC 61499 t
 1. **Event Reception**: The function block waits for an event at input `EI`.
 2. **Selection**: When the `EI` event arrives, the value of the data variable `K` is evaluated.
 3. **Forwarding**:
+
 - If `K` = 0, the event is forwarded to `EO0`.
 - If `K` = 1, the event is forwarded to `EO1`.
 - If `K` = 2, the event is forwarded to `EO2`.
 - If `K` = 3, the event is forwarded to `EO3`.
-4. **Invalid Index**: If the value of `K` is outside the valid range [0, 3], no output event is triggered, and the `EI` event is discarded.
+1. **Invalid Index**: If the value of `K` is outside the valid range [0, 3], no output event is triggered, and the `EI` event is discarded.
 
 The input event is therefore always forwarded exclusively to exactly one output, provided the index `K` is valid.
 
@@ -53,7 +55,7 @@ The input event is therefore always forwarded exclusively to exactly one output,
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_DEMUX (this) | E_MUX | E_SWITCH |
-----------------|------------------|----------------|------------------|
+---------------- | ------------------ | ---------------- | ------------------ |
 | Operating principle | 1:4 distribution | n:1 merging | 1:2 distribution |
 | Control | Index `K` [0-3] | Index `K` | `BOOL` condition `G` |
 | Event flow | Splitting | Merging | Conditional switch |

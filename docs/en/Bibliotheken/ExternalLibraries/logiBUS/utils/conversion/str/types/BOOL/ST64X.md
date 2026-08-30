@@ -3,9 +3,11 @@
 *(No image available because this is a data type and not a function block.)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The provided XML definition describes a **DataType** named `ST64X`, not a function block (FB). This structured data type serves as a container for a collection of 64 individual binary values (BOOL variables). It allows 64 independent switches, flags, or status bits to be grouped under a single name and addressed individually via named fields. Although the internal XML comment states "A Structure with 16 BOOLs," the actual definition contains 64 BOOL variables.
+
 ## Interface Structure
 
 Since `ST64X` is a data type and not a function block, it does not have direct event or data inputs and outputs in the sense of an FB. Instead, it defines an internal structure of components that can be used as a unified variable within a function block (e.g., as an input or output parameter).
@@ -118,7 +120,8 @@ Not applicable for a data type, as it has no internal logic or state machine. Th
 - **Hardware Interfaces:** Can be used to map registers or I/O ports where individual bits represent specific functions or states.
 - **Compact Data Transmission:** When a large number of BOOL values need to be transmitted efficiently, this type can provide a compact representation.
 - **Abstract States:** Represents complex states resulting from the combination of 64 binary features.
-*
+-
+
 ## ⚖️ Comparison with Similar Building Blocks
 
 Since `ST64X` is a data type, it is not directly compared to function blocks, but rather to other ways of structuring BOOL values:

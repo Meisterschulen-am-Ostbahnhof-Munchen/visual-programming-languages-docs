@@ -3,9 +3,11 @@
 ## Description
 
 The **TIME_OF_DAY** data type (abbreviated **TOD**) is used to represent the time of day.
+
 ## Normative Definition
 
 According to **DIN EN 61131-3** (Table 10, No. 14a):
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | Usually 32 bits (implementation dependent) |

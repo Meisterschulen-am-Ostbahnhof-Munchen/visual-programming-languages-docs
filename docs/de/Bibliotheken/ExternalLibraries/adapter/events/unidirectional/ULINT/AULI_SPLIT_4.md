@@ -3,6 +3,7 @@
 ![AULI_SPLIT_4](./AULI_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_SPLIT_4** dient dazu, einen eingehenden **AULI**-Adapter in vier separate, identische Ausgänge aufzuteilen. Er ist als generischer Baustein (Generic FB) ausgelegt und wird unter der Eclipse Public License 2.0 vertrieben. Entwickelt wurde er für die Verwendung in der Automatisierungstechnik, insbesondere im Umfeld der HR Agrartechnik GmbH.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AULI` | `IN` | Socket | Eingangsadapter für das zu verteilende AULI-Signal |
 | `adapter::types::unidirectional::AULI` | `OUT1` | Plug | Erster Ausgangsadapter (identisch zum Eingang) |
 | `adapter::types::unidirectional::AULI` | `OUT2` | Plug | Zweiter Ausgangsadapter |

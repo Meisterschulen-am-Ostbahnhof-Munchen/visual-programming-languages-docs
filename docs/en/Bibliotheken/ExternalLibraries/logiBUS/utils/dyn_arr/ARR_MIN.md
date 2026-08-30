@@ -3,9 +3,11 @@
 ![ARR_MIN](./ARR_MIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ARR_MIN** determines the minimum of all elements in a one-dimensional array of type `INT`. The block expects a dynamic array (`ARRAY[*]`) as an input/output parameter and outputs the smallest element found via a separate data output. The calculation is triggered by the event `REQ`; the result is acknowledged upon completion with the event `CNF`.
+
 ## Interface Structure
 
 ### **Event Inputs**

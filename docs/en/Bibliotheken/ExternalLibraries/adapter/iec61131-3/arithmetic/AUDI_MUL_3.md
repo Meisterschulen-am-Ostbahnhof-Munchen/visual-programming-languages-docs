@@ -3,9 +3,11 @@
 ![AUDI_MUL_3](./AUDI_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_MUL_3** is a generic function block for multiplying three input values. The values are provided via unidirectional adapters of type **AUDI**, and the result is output via a similar adapter. The function block is designed for use in IEC 61499-based control systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ Not present – the result is output via **Plug OUT** as an adapter.
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | **IN1** | Socket (Input) | `adapter::types::unidirectional::AUDI` | First multiplication factor. |
 | **IN2** | Socket (Input) | `adapter::types::unidirectional::AUDI` | Second multiplication factor. |
 | **IN3** | Socket (Input) | `adapter::types::unidirectional::AUDI` | Third multiplication factor. |

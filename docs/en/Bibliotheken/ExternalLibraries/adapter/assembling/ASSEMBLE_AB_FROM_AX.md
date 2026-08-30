@@ -3,9 +3,11 @@
 ![ASSEMBLE_AB_FROM_AX](./ASSEMBLE_AB_FROM_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ASSEMBLE_AB_FROM_AX** function block combines eight Boolean signals, provided via AX adapters (unidirectional, Bool), into a single byte and outputs it via an AB adapter (unidirectional, BYTE). It encapsulates the logic for byte generation and provides a modular, adapter-based interface for processing 8 bits.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None. All data is output via the adapter plug.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Input) | `BIT_00` | `adapter::types::unidirectional::AX` | Boolean value for bit 0 (least significant bit) |
 | | `BIT_01` | `adapter::types::unidirectional::AX` | Boolean value for bit 1 |
 | | `BIT_02` | `adapter::types::unidirectional::AX` | Boolean value for bit 2 |
@@ -76,7 +78,7 @@ The functional block does not have its own state machine; It is structured as a 
 ## Comparison with similar modules
 
 | Module | Description | Difference |
-|----------|--------------|-------------|
+| ---------- | -------------- | ------------- |
 | `ASSEMBLE_BYTE_FROM_BOOLS` | Internal block that generates a byte from 8 Boolean inputs (without adapters) | `ASSEMBLE_AB_FROM_AX` encapsulates this block and uses adapters for connectivity. |
 | `eclipse4diac::utils::assembling::ASSEMBLE_BYTE_FROM_BOOLS` | Same function, but with direct event/data ports | `ASSEMBLE_AB_FROM_AX` provides an adapter-based interface and adds a D flip-flop for synchronization. |
 | Custom-built byte assembler | Can be implemented as desired, e.g., using the ST algorithm | Adapters `AX`/`AB` are predefined standard types in 4diac that promote reusability and interchangeability. |

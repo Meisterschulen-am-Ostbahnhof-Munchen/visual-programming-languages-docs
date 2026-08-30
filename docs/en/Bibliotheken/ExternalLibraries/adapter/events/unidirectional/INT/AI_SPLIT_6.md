@@ -4,6 +4,7 @@
 
 ![AI_SPLIT_6](./AI_SPLIT_6.svg)
 The function block **AI_SPLIT_6** serves as a generic splitter that distributes an analog input value (AI) to six identical outputs. It implements a 1:6 distribution of an AI adapter without modifying any data or events. The block is defined as a generic FB (GenericClassName: `GEN_AI_SPLIT`) and operates purely on an adapter basis.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -25,7 +26,7 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Input (Socket) | IN | `adapter::types::unidirectional::AI` | Single Analog Input Adapter (Source) |
 | Output (Plug) | OUT1 | `adapter::types::unidirectional::AI` | First Output (1:1 pass-through from IN) |
 | Output (Plug) | OUT2 | `adapter::types::unidirectional::AI` | Second Output |

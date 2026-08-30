@@ -3,9 +3,11 @@
 ![GET_LINT](./GET_LINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **GET_LINT** reads a value of type **LINT** from an InOut variable and makes this buffered value available at its output. The block is part of the library `logiBUS::utils::conversion::provide` and implements a simple read-buffer functionality.
+
 ## Interface Structure
 
 ### **Event Inputs**

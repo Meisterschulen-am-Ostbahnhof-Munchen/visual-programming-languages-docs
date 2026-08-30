@@ -62,7 +62,7 @@ Der Baustein verwendet intern den FB `E_D_FF_ANY_HYS_TMIN`, der die eigentliche 
 Der Baustein besitzt keine expliziten eigenen Zustände, sondern delegiert an den internen FB. Die wesentlichen Verhaltensweisen lassen sich jedoch wie folgt beschreiben:
 
 | Phase | Beschreibung |
-|-------|--------------|
+| ------- | -------------- |
 | **Initial** | Nach dem Einschalten werden `HYSTERESIS` und `Tmin` noch nicht angewendet. Ein `INIT`‑Ereignis muss die Parameter setzen. |
 | **Bereit** | Nach erfolgreicher Initialisierung wartet der FB auf Taktereignisse am Eingang `I.E1`. |
 | **Sperre (Tmin aktiv)** | Nach einem Ausgangsereignis wird für die Dauer `Tmin` jede weitere Übernahme blockiert. |
@@ -77,7 +77,7 @@ Der Baustein besitzt keine expliziten eigenen Zustände, sondern delegiert an de
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | **Einfaches D‑FF** | Keine Hysterese, keine Verzögerung – übernimmt jede Taktflanke sofort. |
 | **D‑FF mit Hysterese** | Enthält nur das Hystereseband, keine zeitliche Begrenzung zwischen Ausgaben. |
 | **D‑FF mit Tmin** | Nur Mindestzeit ohne Hysterese – kann bei Rauschen trotzdem schnell schalten. |

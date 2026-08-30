@@ -3,6 +3,7 @@
 ![ADD_4](https://user-images.githubusercontent.com/116869307/214143055-ad68b786-ea59-490e-9e7b-c43c007e0ae7.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADD_4** is a powerful function block for summing four values, developed under the EPL-2.0 license. As part of the GEN_ADD class, version 1.0 offers a type-safe implementation according to the IEC 61131-3 standard.
@@ -32,12 +33,15 @@ The **ADD_4** is a powerful function block for summing four values, developed un
 ## Functional Features
 
 1. **Calculation Triggering**:
+
 - A single `REQ` event processes all four inputs
 - Parallel value acquisition
-2. **Type Handling**:
+1. **Type Handling**:
+
 - Automatic type conversion for mixed inputs
 - Result in the "largest" input type
-3. **Calculation Order**:
+1. **Calculation Order**:
+
 - Mathematically associative (IN1+(IN2+(IN3+IN4)))
 - Guaranteed reproducible results
 
@@ -52,7 +56,7 @@ The **ADD_4** is a powerful function block for summing four values, developed un
 ## Supported Data Types
 
 | Category | Examples |
-----------------|-------------------------|
+---------------- | ------------------------- |
 | Integers | INT, DINT, UDINT |
 | Floating Point | REAL, LREAL |
 | Time Values | TIME, LTIME |
@@ -68,7 +72,7 @@ The **ADD_4** is a powerful function block for summing four values, developed un
 ## ⚖️ Comparison with Other Adders
 
 | Function Block | Inputs | Advantages |
-|----------|----------|----------|
+| ---------- | ---------- | ---------- |
 | ADD_2 | 2 | Simplest Variant |
 | ADD_3 | 3 | Compromise |
 | ADD_4 | 4 | Maximum Integration |

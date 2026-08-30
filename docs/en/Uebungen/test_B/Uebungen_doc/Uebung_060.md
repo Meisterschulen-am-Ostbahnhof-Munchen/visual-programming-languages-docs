@@ -2,6 +2,7 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_060`. This is a high-level exercise for professional ISOBUS applications in the field of precision farming.
+
 ## 🎧 Podcast
 
 ![Uebung_060_network](./Uebung_060_network.svg)
@@ -25,7 +26,7 @@ Connection to an ISOBUS Task Controller (TC). It demonstrates how automatic sect
 - **`TC_ID`**: Receives commands from the tractor's Task Controller (e.g., "Activate section 5").
 - **`TC_QD`**: Reports data back to the Task Controller (e.g., "Section 5 is now active").
 - **Quarter Logic**: The section states are transmitted as quarters (2-bit) to also report error states (e.g., a broken wire at the valve) to the Task Controller.
-- * **DDI (Data Dictionary Identifier)**: Specific codes (e.g., `SETPOINT_CONDENSED_WORK_STATE`) that define which information is currently being transmitted.
+- - **DDI (Data Dictionary Identifier)**: Specific codes (e.g., `SETPOINT_CONDENSED_WORK_STATE`) that define which information is currently being transmitted.
 
 -----
 

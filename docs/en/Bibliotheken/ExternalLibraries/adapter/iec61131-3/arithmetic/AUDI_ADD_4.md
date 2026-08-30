@@ -3,9 +3,11 @@
 ![AUDI_ADD_4](./AUDI_ADD_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_ADD_4` is a generic function block for calculating the arithmetic addition of four input values. It is implemented as a purely adapter-based function block without event or data interfaces. The use of adapters enables flexible coupling with other function blocks that use the same adapter type, `adapter::types::unidirectional::AUDI`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block has no direct data outputs. The result is passed on via an ad
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|-------------|----------|-----|--------------|
+| ------------- | ---------- | ----- | -------------- |
 | `IN1` | Socket (Input) | `adapter::types::unidirectional::AUDI` | First Addend |
 | `IN2` | Socket (Input) | `adapter::types::unidirectional::AUDI` | Second Addend |
 | `IN3` | Socket (Input) | `adapter::types::unidirectional::AUDI` | Third Addend |

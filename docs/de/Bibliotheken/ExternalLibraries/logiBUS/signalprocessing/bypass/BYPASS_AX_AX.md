@@ -3,6 +3,7 @@
 ![BYPASS_AX_AX](./BYPASS_AX_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **BYPASS_AX_AX** dient zur Weiterleitung und parallelen Bypass-Verarbeitung von AX‑Signalen. Er kombiniert einen direkten Durchgang vom Eingang **IN** zum Ausgang **OUT** mit einer booleschen Oder‑Verknüpfung der eingehenden Daten, die über ein flankengesteuertes D‑Flipflop auf den Bypass‑Ausgang **BY_OUT** gegeben wird.

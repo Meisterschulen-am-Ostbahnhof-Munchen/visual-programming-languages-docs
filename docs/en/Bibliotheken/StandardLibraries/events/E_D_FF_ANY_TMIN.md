@@ -1,6 +1,7 @@
 # E_D_FF_ANY_TMIN
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_D_FF_ANY_TMIN` is the generically-typed variant of [E_D_FF_TMIN](E_D_FF_TMIN.md): it combines [E_D_FF_ANY](E_D_FF_ANY.md) (change-detecting latch for arbitrary data types) with [E_TMIN](E_TMIN.md) (minimum spacing time), making it suitable for any data type, not just `BOOL`.

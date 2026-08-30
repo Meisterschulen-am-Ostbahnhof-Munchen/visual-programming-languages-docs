@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_MUL_4` is a generic function block (Generic FB) for performing an arithmetic multiplication (`MUL`) with up to four input values. It is based on the IEC 61499 architecture and uses unidirectional adapters to transmit data and the associated control events in a clean, encapsulated manner.

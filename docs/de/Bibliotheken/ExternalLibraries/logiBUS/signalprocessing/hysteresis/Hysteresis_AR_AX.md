@@ -3,6 +3,7 @@
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `Hysteresis_AR_AX` realisiert eine analog‑digitale Schwellwertschaltung mit Hysterese. Er wandelt einen analogen Eingangswert (über einen AR‑Adapter) in einen booleschen Ausgang (über einen AX‑Adapter) um, wobei ein definiertes Hysterese‑Band um einen Mittelwert (Threshold) herum angelegt wird. Das Schaltverhalten ist wie folgt definiert:

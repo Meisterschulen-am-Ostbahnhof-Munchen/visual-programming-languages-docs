@@ -3,9 +3,11 @@
 ![AUDI_SPLIT_6](./AUDI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_SPLIT_6** serves as a generic splitter for a unidirectional AUDI adapter. It receives an incoming adapter data stream via a socket and forwards it unchanged to six separate output adapters (plugs). The block is designed generically, so the specific adapter type can be configured via the attribute `GenericClassName`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | **IN** | `adapter::types::unidirectional::AUDI` | Incoming adapter for the data stream to be distributed. |
 | Plug | **OUT1** | `adapter::types::unidirectional::AUDI` | First output adapter (copy of the input). |
 | Plug | **OUT2** | `adapter::types::unidirectional::AUDI` | Second output adapter. |

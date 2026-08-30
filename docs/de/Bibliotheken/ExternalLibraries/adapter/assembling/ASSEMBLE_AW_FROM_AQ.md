@@ -3,6 +3,7 @@
 ![ASSEMBLE_AW_FROM_AQ](./ASSEMBLE_AW_FROM_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_AW_FROM_AQ` dient dazu, acht einzelne **AQ (Quarter)**-Adapter zu einem zusammenhängenden **AW (Word)**-Adapter zu kombinieren. Ein Quarter repräsentiert jeweils ein 4-Bit-Datenpaket (halbes Byte). Der Baustein setzt diese acht Quarter-Daten – insgesamt 32 Bit – zu einem vollständigen Wort (WORD, 32 Bit) zusammen und stellt es über einen einzigen AW-Ausgangsadapter bereit. Typische Anwendungen sind die Rekonstruktion breiter Datenbusse aus seriell oder partiell ankommenden Bruchstücken.

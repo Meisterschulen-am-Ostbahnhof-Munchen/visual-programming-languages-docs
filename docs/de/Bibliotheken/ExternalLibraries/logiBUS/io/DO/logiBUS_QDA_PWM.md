@@ -3,6 +3,7 @@
 ![logiBUS_QDA_PWM](./logiBUS_QDA_PWM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **logiBUS_QDA_PWM** ist ein Composite-Baustein zur Ansteuerung eines PWM-Ausgangs (Double Word) über ein logiBUS-System. Er kapselt die Initialisierung und die Triggerung eines internen PWM-Ausgangsbausteins und stellt eine Adapter-Schnittstelle zur Verfügung, um von außerhalb Aufträge (Ereignis und Daten) zu empfangen. Der Baustein wurde für den Einsatz in der Agrartechnik entwickelt und ist unter der EPL 2.0 lizenziert.
@@ -26,7 +27,7 @@ Der Funktionsblock **logiBUS_QDA_PWM** ist ein Composite-Baustein zur Ansteuerun
 ### **Daten-Eingänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QI | BOOL | Eingangs-Qualifier (Initialisierung freigeben) |
 | PARAMS | STRING | Service-Parameter (z. B. Adressierung, Konfiguration) |
 | Output | logiBUS::io::DQ::logiBUS_DO_S | Identifikation des Ausgangs (z. B. Output_Q1..Q8); Initialwert: *Invalid* |
@@ -83,7 +84,7 @@ Der interne FB wechselt zwischen diesen Zuständen abhängig von den Ereignissen
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | logiBUS_QD_PWM | Composite/ Basic | Direkt ansteuerbar über INIT, REQ, CNF; ohne Adapter-Schnittstelle. |
 | **logiBUS_QDA_PWM** | Composite | Wie logiBUS_QD_PWM, aber mit Adapter für externe Triggerung und Datenversorgung. |
 | logiBUS_DO (einfach) | Basic | Einfacher digitaler Ausgang, keine PWM-Funktion. |

@@ -3,9 +3,11 @@
 ![Uebung_004b5_network](./Uebung_004b5_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a toggle flip-flop (T-FF) using the function blocks `E_R_TRIG` (rising edge detection) and `E_T_FF` (toggle flip-flop). A digital input (IX) is used as a push button – each rising edge at the input toggles the digital output (QX). This setup is suitable, for example, for switching a light on and off with a single push button.
+
 ## Function Blocks Used (FBs)
 
 The subapplication consists of four function blocks:
@@ -44,7 +46,7 @@ The subapplication is implemented as an event-driven chain:
 
 E_R_TRIG` checks whether the value of `QI` has a rising edge (change from FALSE to TRUE). If this is the case, an event is generated at the output `EO`.
 
-3. **Toggle Flip-Flop**: The event `EO` from `E_R_TRIG` triggers the clock input `CLK` from `E_T_FF` (**Event Connection**: `E_R_TRIG.EO → E_T_FF.CLK`). The flip-flop's state toggles with each clock cycle. The result is available at the data output `Q`. Simultaneously, the output event `EO` is triggered by `E_T_FF`.
+1. **Toggle Flip-Flop**: The event `EO` from `E_R_TRIG` triggers the clock input `CLK` from `E_T_FF` (**Event Connection**: `E_R_TRIG.EO → E_T_FF.CLK`). The flip-flop's state toggles with each clock cycle. The result is available at the data output `Q`. Simultaneously, the output event `EO` is triggered by `E_T_FF`.
 
 Event `EO` is triggered by `E_T_FF`. 4. **Setting the Output**: The event `EO` from `E_T_FF` is forwarded to the `REQ` input of `DigitalOutput_Q1` (**Event Connection**: `E_T_FF.EO → DigitalOutput_Q1.REQ`). The flip-flop state (`E_T_FF.Q`) is passed as a setpoint to the data input `OUT` of `DigitalOutput_Q1` (**Data Connection**: `E_T_FF.Q → DigitalOutput_Q1.OUT`). This sets the physical output accordingly.
 

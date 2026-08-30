@@ -3,9 +3,11 @@
 ![ALI_TO_AUI](./ALI_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_TO_AUI** is a composite block for converting an ALI adapter (LINT data type) into an AUI adapter (UINT data type). It allows the seamless integration of components with different adapter definitions in a 4diac environment. The block is based on the internal conversion block `F_LINT_TO_UINT` from the IEC 61131 library.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,6 +61,7 @@ The function block itself does not have its own state machine. The state logic i
 - **Prototyping:** Quickly replace adapters during the development phase without having to change the underlying data flow logic.
 
 **Prototyping:**
+
 ## Comparison with Similar Components
 
 Analog converter components exist, such as `ALI_TO_UDI` (LINT → UDINT) or `DINT_TO_UINT`. This component specializes in combining the unidirectional ALI and AUI adapters. Unlike directly connecting the adapters via data type conversion at the network layer, this composite function block offers a compact, reusable solution with clearly defined event signals.

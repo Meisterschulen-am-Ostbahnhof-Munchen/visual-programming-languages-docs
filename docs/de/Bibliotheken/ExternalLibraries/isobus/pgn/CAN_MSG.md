@@ -1,6 +1,7 @@
 # CAN_MSG
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `CAN_MSG` ist eine strukturierte Typdefinition (Struct) zur Repräsentation eines klassischen CAN-Nachrichtenrahmens (ohne Transportprotokoll, TP). Er dient als Container für die wesentlichen Attribute einer CAN-Nachricht, einschließlich Priorität, Nutzdatenlänge und dem eigentlichen Datenpuffer. Dieser Typ ist für den Einsatz in Funktionsblöcken vorgesehen, die CAN-Kommunikation in einem IEC 61499-System implementieren.

@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_172`, based on the provided data.
+
 # Exercise_172: Exercise for E_MUX_2
 
 ![Uebung_172_network](./Uebung_172_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The sub-application **Exercise_172** is an exercise unit that deals with the function block `E_MUX_2`. It serves as a template or starting point for learning and implementing the functionality of the event multiplexer (E_MUX) within the IEC 61499 standard.

@@ -3,9 +3,11 @@
 ![AW_TO_AULI](./AW_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AW_TO_AULI` converts a unidirectional adapter of type `AW` (WORD data format) into an adapter of type `AULI` (ULINT data format). The conversion is performed internally using the standard function block `F_WORD_TO_ULINT` from the IEC 61131 library.
+
 ## Interface Structure
 
 ### **Event Inputs**

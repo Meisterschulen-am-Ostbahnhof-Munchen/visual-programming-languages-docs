@@ -3,6 +3,7 @@
 ![AD_SHL](./AD_SHL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_SHL** führt eine bitweise Linksverschiebung (Shift Left) eines Eingangswertes durch. Er ist als generischer Baustein konzipiert, der über Adapter-Schnittstellen kommuniziert und beliebige ganzzahlige Datentypen (ANY_INT) unterstützt. Die eigentliche Verschiebeoperation wird intern durch einen vordefinierten Baustein `F_SHL` realisiert.

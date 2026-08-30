@@ -3,9 +3,11 @@
 ![AR_D_FF_HYS_TMIN](./AR_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR_D_FF_HYS_TMIN** function block implements a data latch (D flip-flop) with a hysteresis function and a minimal delay between successive output events at the output adapter. It serves for the stable acquisition and transmission of analog values via unidirectional AR adapters, suppressing edge noise and limiting the output frequency.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The **AR_D_FF_HYS_TMIN** function block implements a data latch (D flip-flop) wi
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|-------------|------|--------------|
+| ------------- | ------ | -------------- |
 | HYSTERESIS | REAL | Hysteresis band: A change in the input value must exceed this amount for a new value to be latched. |
 | Tmin | TIME | Minimum time between two output events (inter-disposal time). Prevents overly rapid switching. |
 
@@ -34,7 +36,7 @@ The FB does not have its own data outputs; the output data is provided via the *
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-------------------------------------------------|----------|--------------|
+| ------------- | ------------------------------------------------- | ---------- | -------------- |
 | **I** | adapter::types::unidirectional::AR (Socket) | Input | Provides the value to be latched via **I.D1** and the clock signal via **I.E1**. |
 | **Q** | adapter::types::unidirectional::AR (Plug) | Output | Provides the latched value via **Q.D1** and signals an update via **Q.E1**. |
 
@@ -44,9 +46,11 @@ The function block works internally with a sub-function block of type `logiBUS::
 
 1. **Initialization**: During the **INIT** event, the parameters **HYSTERESIS** and **Tmin** are passed to the internal logic. After successful initialization, **INITO** is output.
 2. **Data Acquisition**: At each clock event on adapter **I.E1**, the currently present value **I.D1** is compared with the last stored value.
+
 - A change is only made if the absolute difference between **I.D1** and the stored value is greater than **HYSTERESIS**.
 - If the difference is smaller, the old value remains unchanged (hysteresis function).
-3. **Time-Limited Output**: As soon as the new value has been acquired, the output signal **Q.D1** is updated. However, the corresponding event **Q.E1** is only sent if at least the time interval **Tmin** has elapsed since the last **Q.E1**. This limits the maximum output frequency.
+1. **Time-Limited Output**: As soon as the new value has been acquired, the output signal **Q.D1** is updated. However, the corresponding event **Q.E1** is only sent if at least the time interval **Tmin** has elapsed since the last **Q.E1**. This limits the maximum output frequency.
+
 - A change is only made if the time interval **Tmin** has elapsed since the last **Q.E1**. The entire behavior can be viewed as a clock-controlled, hysteresis-enabled signal-hold block with output blocking.
 
 ## Technical Features

@@ -3,6 +3,7 @@
 ![SUM](./SUM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SUM** ermöglicht die Berechnung der Summe aller Elemente eines dynamischen Arrays. Er wird durch ein Ereignis am Eingang REQ angestoßen und gibt nach erfolgreicher Berechnung das Ergebnis über den Datenausgang sowie ein Bestätigungsereignis über CNF aus.

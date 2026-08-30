@@ -3,6 +3,7 @@
 ![SET_SINT](./SET_SINT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_SINT** dient dazu, einen SINT-Wert von seinem Dateneingang **IN** in eine InOut-Variable **OUT** zu schreiben. Er wird verwendet, um einen SINT-Wert an einem bestimmten Punkt der Ablaufsteuerung gezielt zu setzen. Der Baustein realisiert eine einfache, ereignisgesteuerte Zuweisung.
@@ -38,9 +39,11 @@ Keine Adapter vorhanden.
 ## Funktionsweise
 
 Ein **REQ**-Ereignis startet die Ausführung des Algorithmus. Im Algorithmus wird der aktuelle Wert von **IN** direkt der InOut-Variable **OUT** zugewiesen:
+
 ```
 OUT := IN;
 ```
+
 Nach Abschluss der Zuweisung wird das Ereignis **CNF** ausgegeben. Die InOut-Variable **OUT** dient gleichzeitig als Eingabe und Ausgabe – ihr Wert wird überschrieben und steht danach für nachfolgende Bausteine zur Verfügung.
 
 ## Technische Besonderheiten

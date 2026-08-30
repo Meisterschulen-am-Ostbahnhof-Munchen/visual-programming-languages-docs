@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_020j_AX` based on the provided XML data.
+
 # Exercise_020j_AX: DigitalInput_I1 to DigitalOutput_Q1/2; 2xAX_TP; Pulse Shaping
 
 ![Uebung_020j_AX_network](./Uebung_020j_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_020j_AX** demonstrates the use of adapter connections for signal processing. A digital input signal (`Input_I1`) is read, split, and used to control two digital outputs (`Output_Q1` and `Output_Q2`). Pulse-shaping timers are used, communicating via adapter interfaces.
@@ -64,10 +66,12 @@ The exercise proceeds as follows:
 1. **Signal Input**: The signal is retrieved into the system via the function block `DigitalInput_I1` (resource `Input_I1`).
 2. **Signal Distribution**: The adapter connection from the input (`IN`) goes to the input of the `AX_SPLIT_2` function block. This duplicates the adapter information to two outputs (`OUT1` and `OUT2`).
 3. **Signal Processing Path 1**:
+
 - The splitter's output `OUT1` is connected to the timer `AX_TP_Q1`.
 - As soon as a signal event occurs, this timer generates a pulse of **800 ms**.
 - The timer's output (`Q`) directly controls the `DigitalOutput_Q1`.
-4. **Signal Processing Path 2**:
+1. **Signal Processing Path 2**:
+
 - The splitter's output `OUT2` is connected to the timer `AX_TP_Q2`.
 - This timer is configured for a duration of **1200 m** (minutes).
 - The output of this timer (`Q`) controls the `DigitalOutput_Q2`.

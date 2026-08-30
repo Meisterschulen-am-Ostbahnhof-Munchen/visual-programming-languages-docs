@@ -3,9 +3,11 @@
 ![GET_BYTE](./GET_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_BYTE** function block is used to read a variable `BYTE`, which is provided via an **InOut** parameter. The read value is buffered at the output `OUT` and is available after execution. This function block is typically used to retrieve a current `BYTE` value from an external source (e.g., a shared data area) without modifying the source itself.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -70,7 +72,7 @@ There are no wait states or branches.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference to GET_BYTE |
-|------------|--------------------------------------------------------|--------------------------------------------------------------|
+| ------------ | -------------------------------------------------------- | -------------------------------------------------------------- |
 | GET_VALUE | Reads a value from an InOut parameter (type-independent) | GET_BYTE is specific to the data type `BYTE` and is therefore more type-safe. |
 | MOVE | Copies a value from an input to an output | MOVE requires separate inputs and does not provide a buffer – GET_BYTE uses InOut. |
 | READ_BYTE | Reads a byte via a hardware address | GET_BYTE operates at the variable level, not at hardware addresses. |

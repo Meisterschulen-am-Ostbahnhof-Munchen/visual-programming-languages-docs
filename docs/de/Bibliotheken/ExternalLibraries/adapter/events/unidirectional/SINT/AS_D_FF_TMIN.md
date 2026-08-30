@@ -3,6 +3,7 @@
 ![AS_D_FF_TMIN](./AS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AS_D_FF_TMIN** realisiert ein datenverriegelndes D‑Flipflop, das einen über einen Adapter zugeführten Datenwert bei Eintreffen eines Ereignisses übernimmt und über einen weiteren Adapter ausgibt. Die Besonderheit liegt in einer konfigurierbaren Mindestzeit (`Tmin`) zwischen zwei aufeinanderfolgenden Übernahmeereignissen. Dadurch werden zu schnelle Ereignisfolgen unterdrückt, was z. B. zur Entprellung oder zur Einhaltung von Prozessbeschränkungen genutzt werden kann.

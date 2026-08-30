@@ -3,6 +3,7 @@
 ![sequence_B_08_AX_AX](./sequence_B_08_AX_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **sequence_B_08_AX_AX** realisiert eine sequenzielle Ablaufsteuerung mit acht Ausgängen. Die Zustandsübergänge erfolgen pegelgesteuert über BOOL-Signale, die über einen AX-Adapter bereitgestellt werden. Der Baustein ist für unterbrechungssichere Anwendungen ausgelegt und erlaubt eine Wiederherstellung des laufenden Zustands nach einem Stromausfall. Er eignet sich besonders für Ablaufsteuerungen in der Automatisierungstechnik, bei denen mehrere Schaltvorgänge nacheinander ausgeführt werden müssen.
@@ -37,7 +38,7 @@ Der FB besitzt keine direkten Dateneingänge. Die Übergangsbedingungen werden a
 **Plugs (Ausgänge – Typ `adapter::types::unidirectional::AX`)**  
 
 | Name | Beschreibung |
-|------|--------------|
+| ------ | -------------- |
 | `DO_S1` | Ausgang aktiv, wenn Zustand 1 aktiv ist. |
 | `DO_S2` | Ausgang aktiv, wenn Zustand 2 aktiv ist. |
 | `DO_S3` | Ausgang aktiv, wenn Zustand 3 aktiv ist. |
@@ -50,7 +51,7 @@ Der FB besitzt keine direkten Dateneingänge. Die Übergangsbedingungen werden a
 **Sockets (Eingänge – Typ `adapter::types::unidirectional::AX`)**  
 
 | Name | Beschreibung |
-|------|--------------|
+| ------ | -------------- |
 | `DI_S1` | Signal für Übergang vom Startzustand zu Zustand 1. |
 | `DI_S2` | Signal für Übergang von Zustand 1 zu Zustand 2. |
 | `DI_S3` | Signal für Übergang von Zustand 2 zu Zustand 3. |
@@ -85,7 +86,7 @@ Nach einem Reset (`RESET`) durchläuft der Automat kurz den Zustand `sRESET`, de
 ## Zustandsübersicht
 
 | Zustand (ECC) | Zustandsnummer | Ausgang aktiv | Übergangsbedingung (zum nächsten Zustand) |
-|---------------|----------------|---------------|-------------------------------------------|
+| --------------- | ---------------- | --------------- | ------------------------------------------- |
 | `xSTART` | 0 | – | `DI_S1.D1` → sState_01<br>`DI_S2.D1` → sState_02<br>…<br>`DI_S8.D1` → sState_08<br> sonst → sState_00 |
 | `sState_01` | 1 | `DO_S1` | `DI_S2.D1` → sState_02<br>`RESET` → sState_00 |
 | `sState_02` | 2 | `DO_S2` | `DI_S3.D1` → sState_03<br>`RESET` → sState_00 |

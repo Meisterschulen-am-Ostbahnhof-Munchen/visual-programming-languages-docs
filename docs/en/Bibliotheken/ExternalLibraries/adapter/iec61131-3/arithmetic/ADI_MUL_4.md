@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_MUL_4` is a generic, adapter-based block for IEC 61499, used to perform arithmetic multiplications. It calculates the product of four input values provided via unidirectional ADI adapters (`adapter::types::unidirectional::ADI`) and outputs the result via a corresponding output adapter. By encapsulating signals in adapters, this block ensures a clearer application diagram in the 4diac IDE.

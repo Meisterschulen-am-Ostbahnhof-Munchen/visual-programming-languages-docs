@@ -3,9 +3,11 @@
 ![AS_TO_AL](./AS_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_TO_AL** is a composite block that converts a SINT adapter (AS) into an LWORD adapter (AL). It serves as a bridge between different adapter types in a unidirectional communication path. The block encapsulates the conversion logic and makes it usable for the user as a single, integrated unit.
+
 ## Interface Structure
 
 The block has **no direct event or data interfaces** at the top level. All input and output is handled via adapters.
@@ -29,7 +31,7 @@ The block has **no direct event or data interfaces** at the top level. All input
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|--------|----------------------------------------|----------|----------------------------------|
+| -------- | ---------------------------------------- | ---------- | ---------------------------------- |
 | AS_IN | adapter::types::unidirectional::AS | Socket | SINT adapter (input) |
 | AL_OUT | adapter::types::unidirectional::AL | Plug | LWORD adapter (output) |
 

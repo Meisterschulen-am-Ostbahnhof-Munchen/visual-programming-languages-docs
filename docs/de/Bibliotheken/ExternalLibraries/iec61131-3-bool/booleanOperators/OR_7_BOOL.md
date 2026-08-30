@@ -3,6 +3,7 @@
 <img width="1370" height="397" alt="image" src="https://github.com/user-attachments/assets/2570e3d4-32b7-4284-a7b2-d4cf9e42d644" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_7_BOOL` ist ein Standardbaustein zur Berechnung der logischen ODER-Verknüpfung. Er führt eine ODER-Operation über sieben separate boolesche Eingänge durch und stellt das Ergebnis an einem einzigen Ausgang zur Verfügung. Dieser Baustein ist Teil der IEC 61131-3-konformen Bibliothek für bitweise Operationen.

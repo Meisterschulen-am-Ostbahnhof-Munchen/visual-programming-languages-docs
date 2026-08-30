@@ -28,7 +28,7 @@ No direct data outputs. The latched value is provided via the **data channel of 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `I` (Socket) | Input | `adapter::types::unidirectional::AD` | Provides the clock signal (E1) and the data value to be stored (D1). |
 | `Q` (Plug) | Output | `adapter::types::unidirectional::AD` | Outputs the stored data value after the clock event (E1 as acknowledgment, D1 as data). |
 

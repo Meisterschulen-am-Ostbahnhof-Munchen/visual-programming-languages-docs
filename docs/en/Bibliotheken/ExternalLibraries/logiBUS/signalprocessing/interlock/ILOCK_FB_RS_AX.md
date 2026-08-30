@@ -4,6 +4,7 @@
 
 ![ILOCK_FB_RS_AX](./ILOCK_FB_RS_AX.svg)
 The function block **ILOCK_FB_RS_AX** implements a bistable, reset-dominant RS latch with an AX interface for set and reset signals, as well as a bidirectional AX2 interface for chaining multiple interlock blocks in a hierarchy. The block is designed for use in safety-related and interlock-based control environments.
+
 ## Interface Structure
 
 The block does not have separate event or data ports, but rather encapsulates all signal types via **adapters**. The following list groups the events and data received via the individual adapters.
@@ -37,7 +38,7 @@ The block does not have separate event or data ports, but rather encapsulates al
 ### Adapter
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `SET1` | Unidirectional AX | Socket | Set Input |
 | `RESET` | Unidirectional AX | Socket | Reset Input |
 | `ILOCK_IN` | Bidirectional AX2 | Socket | Interlock Input (from top) |
@@ -66,12 +67,13 @@ This creates a cascade in which a reset signal is passed on in both directions (
 - **Continuous Event Processing**: The function block reacts to every incoming event (set, reset, up/down interlock) and immediately updates all outputs. There are no state changes in the ECC (only one state, `REQ`); the logic is purely combinational with feedback via the stored latch value.
 
 **Reset Dominance**:
+
 ## State Overview
 
 The component has only one state, `REQ`, in its ECC, which is always active. The internal latch state is represented by the boolean value `Q1.D1`.The state overview therefore describes the behavior of the internal memory cell:
 
 | Current Q | SET1.D1 | RESET.D1 | Interlock active? | Next Q | Description |
-|-------------|----------|----------|------------------|------------|--------------|
+| ------------- | ---------- | ---------- | ------------------ | ------------ | -------------- |
 | FALSE | FALSE | FALSE | NO | FALSE | Latch remains reset |
 | FALSE | TRUE | FALSE | NO | TRUE | Latch is set |
 | FALSE | TRUE | TRUE | YES/NO | FALSE | Reset dominates |

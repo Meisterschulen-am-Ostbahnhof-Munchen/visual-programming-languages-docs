@@ -1,8 +1,9 @@
 # Read-Only Settings (`settingsReadOnly.ini`)
 
 In logiBUS® systems, configuration values and parameters are managed in INI files on the ECU's file system. In addition to the freely writable standard configuration file (`settings.ini`), the system supports a read-only settings file: **`settingsReadOnly.ini`**.
-This feature is used to permanently freeze factory settings, manufacturer-defined system parameters, fixed communication addresses, or critical hardware and security options. This prevents important parameters from being accidentally changed by operators or by the control system itself.
+This feature is used to permanently freeze factory settings, manufacturer-defined system parameters, fixed communication addresses, or critical hardware and security options. This prevents important parameters from being accidentally changed by operators or by the control system itself
 ---
+
 ## Introduction
 
 ## Concept of the Two Configuration Files
@@ -10,7 +11,7 @@ This feature is used to permanently freeze factory settings, manufacturer-define
 The ECU distinguishes between two levels of configuration storage:
 
 | File | Purpose | Writable? | Typical Contents |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **`settingsReadOnly.ini`** | Factory Settings & System Defaults | ❌ No (Write-protected) | ISOBUS source addresses (Node SAs), hardware pin assignments, fixed boot times |
 | **`settings.ini`** | User & Runtime Settings | ✅ Yes (Read & Write) | User preferences, dynamic operating parameters, selectable limit scaling |
 
@@ -75,7 +76,7 @@ If `settingsReadOnly.ini` is not present on the ECU, the system will start norma
 
 ## Einspielen und Verwalten der Werkseinstellungen
 
-### Example file `settingsReadOnly.ini` (factory settings):
+### Example file `settingsReadOnly.ini` (factory settings)
 
 [CF-A]
 UserLanguage = DE
@@ -91,12 +92,12 @@ OperatorID = 42
 
 ---
 
-### Beispieldatei `settings.ini` (Benutzereinstellungen):
+### Beispieldatei `settings.ini` (Benutzereinstellungen)
 
 ## Summary & Best Practices
 
 | Goal | Recommended Procedure |
-|---|---|
+| --- | --- |
 | **Save Factory Settings** | Create all immutable parameters (e.g., bus addresses, security limits) in `settingsReadOnly.ini` and upload them to the control unit. |
 | **Allow User Settings** | Keep parameters that the operator is allowed to adjust (e.g., language, operating modes, counter readings) exclusively in `settings.ini`. |
 | **Enable Parameters** | To make a parameter writable again, remove the corresponding key from `settingsReadOnly.ini` and restart the control unit. |

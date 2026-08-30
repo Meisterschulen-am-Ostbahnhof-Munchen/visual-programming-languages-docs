@@ -6,6 +6,7 @@
 ![AR_DIV_2](./AR_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_DIV_2` ist ein generischer arithmetischer Baustein, der für die Durchführung von Divisionsoperationen (`DIV`) in IEC 61499-basierten Systemen entwickelt wurde. Im Gegensatz zu klassischen Funktionsbausteinen nutzt dieser Baustein Adapter (`unidirectional::AR`), um Daten und Ereignisse zu bündeln. Dies sorgt für eine übersichtlichere und modularere visuelle Programmierung innerhalb der 4diac-IDE.

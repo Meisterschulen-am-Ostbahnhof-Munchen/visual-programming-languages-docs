@@ -3,6 +3,7 @@
 ![ADI_TO_AUI](./ADI_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_AUI** ist ein Composite-FB (zusammengesetzter Baustein), der eine Schnittstellenkonvertierung zwischen dem ADI-Adapter (DINT, 32‑Bit‑Ganzzahl) und dem AUI-Adapter (UINT, 16‑Bit‑Ganzzahl) realisiert. Er ermöglicht die unidirektionale Übertragung eines Wertes von einem DINT‑Adapter an einen UINT‑Adapter unter Verwendung eines standardisierten IEC 61131‑Konvertierungsbausteins.

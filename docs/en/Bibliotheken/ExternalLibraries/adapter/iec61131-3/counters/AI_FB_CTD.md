@@ -3,9 +3,11 @@
 ![AI_FB_CTD](./AI_FB_CTD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_FB_CTD** is a down counter for integer values, standardized according to IEC 61499-2. It consistently uses adapter interfaces (AX, AI) to transport events and data. The block is implemented as a wrapper around the classic IEC 61131 function block `FB_CTD` and enables a modular, adapter-based connection in 4diac IDE networks. Every incoming event via the counter controllers (CD, LD, PV) updates the internal counter and triggers an output event.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -13,7 +15,7 @@ The function block **AI_FB_CTD** is a down counter for integer values, standardi
 The function block does not have direct, separate event inputs. The necessary events are provided via the **Socket Adapters** (CD, LD, PV) – each of these modules carries an event (E1) that triggers the counter logic.
 
 | Socket | Event (in the adapter) | Description |
-|--------|-----------------------|------------------------------|
+| -------- | ----------------------- | ------------------------------ |
 | CD | E1 | Counting event (down counter) |
 | LD | E1 | Load event (set to PV) |
 | PV | E1 | Default update |
@@ -44,7 +46,7 @@ There are no direct data outputs. The output data is provided via the plug adapt
 ### **Adapters**
 
 | Label | Direction | Type | Description |
-|-------------|----------|-----------------------------------|------------------------------------------------------|
+| ------------- | ---------- | ----------------------------------- | ------------------------------------------------------ |
 | CD | Socket | `adapter::types::unidirectional::AX` | Counter input (event + data) for counting down |
 | LD | Socket | `adapter::types::unidirectional::AX` | Load input (event + data) for setting to PV |
 | PV | Socket | `adapter::types::unidirectional::AI` | Default input (event + data) for the preset value |
@@ -57,14 +59,17 @@ The function block internally contains a function block `iec61131::counters::FB_
 
 1. An event at **CD** (via `CD.E1`), **LD** (`LD.E1`), or **PV** (`PV.E1`) triggers the internal function block via its event input `REQ`.
 2. The internal function block evaluates the associated data:
+
 - On a **CD** event, the counter is decremented by 1 (if the associated date is TRUE).
 - On a **LD** event, the counter is set to the current value of **PV** (if the load date is TRUE).
 - In the event of a **PV** event, the default value is updated internally (the counter remains unchanged).
-3. After processing, the internal FB generates its `CNF` event. This is distributed to the external outputs:
+1. After processing, the internal FB generates its `CNF` event. This is distributed to the external outputs:
+
 - `CNF` (direct event output)
 - `Q.E1` (event of plug adapter Q)
 - `CV.E1` (event of plug adapter CV)
-4. Simultaneously, the following data is transferred:
+1. Simultaneously, the following data is transferred:
+
 - `FB_CTD.Q` (BOOL) → `Q.D1`
 - `FB_CTD.CV` (INT) → `CV.D1`
 
@@ -100,7 +105,7 @@ Therefore, a graphical state machine is not required.
 ## Comparison with Similar Components
 
 | Component | Counting Direction | Interfaces | Special Feature |
------------------|--------------|----------------------|---------------------------------------------------|
+----------------- | -------------- | ---------------------- | --------------------------------------------------- |
 | **AI_FB_CTD** | Downward | Adapters only (AX, AI) | Output on every update |
 | **AI_FB_CTU** | Upward | Adapters only (AX, AI) | Upward counter, analog structure |
 | **FB_CTD** (Standard) | Downward | Direct Events/Data | Classic Variable Connection, without Adapter |

@@ -16,7 +16,7 @@ Der Fokus liegt auf dem Baustein `AX_FB_R_TRIG`, der eine steigende Flanke erken
 
 In dieser Sub-Application kommen Hardware-Treiberbausteine sowie Logik- und Zeitbausteine zum Einsatz.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### 1. Hardware-Eingang
 

@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_6](./AIWS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AIWS_SPLIT_6 dient dazu, ein eingehendes AIWS-Signal (Adaptertyp) auf sechs identische Ausgänge zu verteilen. Er ist als generischer Baustein konzipiert und ermöglicht eine einfache Signalvervielfachung in Steuerungsanwendungen, die auf dem 4diac-IDE-Framework basieren.

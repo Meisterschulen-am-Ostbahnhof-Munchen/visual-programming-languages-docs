@@ -3,9 +3,11 @@
 ![AE_SPLIT_5](./AE_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_SPLIT_5** is used to duplicate an incoming adapter event. It receives an adapter event (AE) at its socket `IN` and forwards it identically to five separate output plugs (`OUT1` … `OUT5`). The block is implemented as a generic FB (GenericClassName `'GEN_AE_SPLIT'`), thus enabling easy reuse in different contexts.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AE` | A unidirectional adapter event whose content is forwarded to all outputs. |
 | Plug (Output 1) | `OUT1` | `adapter::types::unidirectional::AE` | First output that provides the incoming event. |
 | Plug (Output 2) | `OUT2` | `adapter::types::unidirectional::AE` | Second output providing the incoming event. |

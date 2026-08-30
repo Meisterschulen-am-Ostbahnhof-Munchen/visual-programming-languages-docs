@@ -4,6 +4,7 @@
 *No image available.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **DataPanel_MI_IW_FREQ** is a service interface function block (SIFB) that encapsulates access to a frequency input of a data panel (type 7A/8A). It is used for initialization, cyclic or event-driven querying, and asynchronous notification of frequency changes. The FB is part of a modular control environment for agricultural machinery (MI – machine interface).
@@ -13,14 +14,14 @@ The function block **DataPanel_MI_IW_FREQ** is a service interface function bloc
 ### **Event Inputs**
 
 | Event | Description | With |
-|----------|---------------|-----|
+| ---------- | --------------- | ----- |
 | **INIT** | Service Initialization | `QI`, `PARAMS`, `u8SAMember`, `Input`, `FreqDelta`, `TimeDelta` |
 | **REQ** | Service Request (Read Current Frequency) | `QI` |
 
 ### **Event Outputs**
 
 | Event | Description | With |
-|----------|--------------|-----|
+| ---------- | -------------- | ----- |
 | **INITO** | Initialization Confirmation | `QO`, `STATUS` |
 | **CNF** | Confirmation of a requested query | `QO`, `STATUS`, `IN` |
 | **IND** | Asynchronous indication (frequency change or time elapsed) | `QO`, `STATUS`, `IN` |
@@ -28,7 +29,7 @@ The function block **DataPanel_MI_IW_FREQ** is a service interface function bloc
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | `QI` | BOOL | – | Event input qualifier (controls processing) |
 | `PARAMS` | STRING | – | Service parameter (device-specific configuration) |
 | `u8SAMember` | USINT | `MI::MI_00` | Node address (SA) of the data collection module (value range 224…239) |
@@ -53,6 +54,7 @@ None available.
 1. **Initialization** – The event `INIT` establishes the connection to the configured frequency input. The parameters `PARAMS`, `u8SAMember`, `Input`, `FreqDelta`, and `TimeDelta` are adopted. After successful initialization, the output event `INITO` is triggered with `QO = TRUE` and a positive `STATUS`.
 2. **Query (REQ/CNF)** – An event `REQ` requests the current frequency value. The function block (FB) sends the request to the data panel and, upon response, returns the event `CNF` with the current value in `IN`. `QO` indicates whether the query was successful.
 3. **Asynchronous Indication (IND)** – The FB continuously monitors the frequency input. An event `IND` is triggered when:
+
 - the frequency value changes by at least `FreqDelta` [Hz], or
 - the time interval specified in `TimeDelta` [ms] has elapsed since the last event `IND`.
 
@@ -75,7 +77,7 @@ The events `INIT` and `REQ` are only executed if the corresponding qualifier `QI
 The function block (FB) internally cycles through the following logical states:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Waiting for `INIT` – no connection |
 | **INIT** | Establish connection to input and apply parameters |
 | **RUN** | Ready for operation – waiting for `REQ` or sending `IND` upon change/expiration |
@@ -92,7 +94,7 @@ A transition to the error state occurs when initialization fails. The only way t
 ## Comparison with similar function blocks
 
 | Function block | Type | Special feature |
-|----------------|-----|--------------|
+| ---------------- | ----- | -------------- |
 | `DataPanel_MI_IW_FREQ` | Frequency input (SIFB) | Event-driven, asynchronous IND, configurable thresholds and time values |
 | `DataPanel_MI_DI` | Digital input (SIFB) | Binary states only, no frequency-dependent triggers |
 | Generic `SIFB`with INIT/REQ/IND | General | No built-in frequency functions, must be developed in-house |

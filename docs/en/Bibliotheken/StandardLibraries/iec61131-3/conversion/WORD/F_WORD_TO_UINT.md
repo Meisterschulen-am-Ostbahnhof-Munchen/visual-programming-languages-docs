@@ -6,6 +6,7 @@
 
 The function block `F_WORD_TO_UINT` converts a `WORD` data type to a `UINT` data type. This conversion is particularly useful in scenarios where type conversion between these two data types is required, for example, in communication between different systems or when processing data from different sources.
 ![F_WORD_TO_UINT](F_WORD_TO_UINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

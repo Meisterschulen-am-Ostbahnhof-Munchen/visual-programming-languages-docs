@@ -3,6 +3,7 @@
 ![A2X_SPLIT_7](./A2X_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **A2X_SPLIT_7** dient dazu, ein eingehendes A2X-Adaptersignal auf sieben identische Ausgänge zu verteilen. Er wird als generischer FB (generic FB) bereitgestellt und ermöglicht eine effiziente Signalvervielfachung innerhalb von 4diac-IDE-Projekten.

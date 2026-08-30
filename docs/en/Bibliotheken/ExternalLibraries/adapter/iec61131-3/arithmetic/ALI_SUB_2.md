@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) `ALI_SUB_2` is a generic arithmetic function block for performing a subtraction. It conforms to the IEC 61131-3 standard for standard arithmetic functions. The block uses adapter connections (`ALI` - Arithmetic Logical Interface) to receive input data and output the result of the subtraction.
@@ -68,6 +69,7 @@ The function block behaves in a purely stateless and reactive manner. There is n
 - **Signal Processing and Scaling:** Calculation of deviations, such as the difference between a setpoint and an actual value (control deviation) in control applications.
 - **Offset Compensation:** Subtraction of zero-point errors or offsets from sensor data fed into the system via adapter structures.
 - **Modular System Architectures:** Use in complex, distributed control systems where a structured and transparent data flow is required through the use of adapters.
+
 - ---
 
 ## Comparison with Similar Function Blocks

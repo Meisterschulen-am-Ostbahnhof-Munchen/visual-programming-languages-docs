@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_ADD_3` is a generic arithmetic block used to add three input values. It is based on the IEC 61499-2 standard and uses an adapter-based communication model. By using unidirectional adapters of type `ADI` (adapters for data integration/interaction), the block enables structured and clean signal and data routing within 4diac-ide.
@@ -72,6 +73,7 @@ The function block operates in a purely stateless (reactive) state:
 - **Sensor Consolidation:** Summing of three different physical quantities (e.g., three partial flows in a system to determine the total flow).
 - **Setpoint Offset Calculation:** Combination of a main setpoint, a correction value, and an additional tolerance or offset value.
 - **Process Value Calculation:** Balancing of inflows at three different measuring points in process engineering.
+
 - ---
 
 ## Comparison with Similar Components

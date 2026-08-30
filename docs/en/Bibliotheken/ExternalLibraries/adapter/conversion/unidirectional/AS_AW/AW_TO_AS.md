@@ -3,9 +3,11 @@
 ![AW_TO_AS](./AW_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AW_TO_AS` is a composite block that converts a WORD-based adapter (AW) into a SINT-based adapter (AS). It encapsulates the necessary type conversion, thus enabling the easy integration of different adapter interfaces in automation technology.
+
 ## Interface Structure
 
 ### **Event Inputs**

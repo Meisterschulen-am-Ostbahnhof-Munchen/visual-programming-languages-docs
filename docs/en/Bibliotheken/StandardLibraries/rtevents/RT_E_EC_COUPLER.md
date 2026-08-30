@@ -1,10 +1,12 @@
 # RT_E_EC_COUPLER
 
 * * * * * * * * * *
+
 ## Introduction
 
 Couples event chains with real-time parameters.
 ![RT_E_EC_COUPLER](RT_E_EC_COUPLER.svg)
+
 ## Metadata
 
 | Attribute | Value |

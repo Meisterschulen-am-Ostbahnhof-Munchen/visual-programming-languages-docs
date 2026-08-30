@@ -1,8 +1,9 @@
 # Exercise_036: Mirror Sequence V2 with Step Chain
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_036`. Unlike exercise 035, the focus here is on manual advancement via events.
+This article describes the logiBUS® exercise `Uebung_036`. Unlike exercise 035, the focus here is on manual advancement via events
 ----
+
 ## Objective of the Exercise
 
 Implementation of a step chain without automatic time transitions.

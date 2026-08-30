@@ -6,6 +6,7 @@
 
 The function block `OR_4_BOOL` is a standard function block for calculating the logical OR operation. It performs an OR operation with up to four Boolean input values and outputs the result as a single Boolean value. The function block follows the IPO (Event-driven Processing) principle and is designed for use in control applications according to IEC 61131-3.
 ![OR_4_BOOL](OR_4_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,7 +55,8 @@ The function block has no internal state (memory-free). Its behavior is combinat
 - **Linking of Alarm Signals**: Combining multiple status or fault alarms where a single signal should trigger an action (e.g., "Stop machine if sensor A OR sensor B OR emergency stop is activated").
 - **Logic in Safety Controllers**: Implementing OR gates in safety circuits.
 - **Simplifying Control Logic**: As a clearly defined building block for structuring programs in function block diagrams (FBDs) or sequenced function charts (SFCs).
-*
+-
+
 ## ⚖️ Comparison with similar function blocks
 
 - **`OR_2_BOOL` / `OR_8_BOOL`**: These blocks perform the identical logical OR operation, but with a different number of inputs (2 and 8, respectively). The choice of function block depends on the required number of signals to be combined. See: [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)

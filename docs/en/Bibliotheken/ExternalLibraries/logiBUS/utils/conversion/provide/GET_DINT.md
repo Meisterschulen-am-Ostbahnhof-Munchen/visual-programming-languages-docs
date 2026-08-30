@@ -3,9 +3,11 @@
 ![GET_DINT](./GET_DINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **GET_DINT** reads a DINT value from an InOut variable and provides it as a buffered output value. The variable itself is not modified; the block serves purely as a read and buffer block.
+
 ## Interface Structure
 
 ### **Event Inputs**

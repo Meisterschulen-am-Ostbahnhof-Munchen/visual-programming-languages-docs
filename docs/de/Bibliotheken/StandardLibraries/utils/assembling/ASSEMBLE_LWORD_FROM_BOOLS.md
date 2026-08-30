@@ -3,6 +3,7 @@
 ![ASSEMBLE_LWORD_FROM_BOOLS](https://github.com/user-attachments/assets/9df93a68-feb4-4868-8fbd-9aecbaab21a2)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_LWORD_FROM_BOOLS` kombiniert 64 einzelne BOOL-Werte zu einem einzigen LWORD-Datentyp. Dies ist besonders nützlich, wenn mehrere binäre Zustände in einer kompakten Form verarbeitet oder übertragen werden müssen.

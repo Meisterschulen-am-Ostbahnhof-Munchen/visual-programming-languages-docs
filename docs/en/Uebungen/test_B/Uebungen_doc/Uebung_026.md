@@ -1,8 +1,9 @@
 # Exercise_026: Mirror Sequence (6)
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_026`.
+This article describes the logiBUS® exercise `Uebung_026`
 ----
+
 ## Overview
 
 [cite_start]In this exercise, the complex sequence logic from Exercise 025 is retained, but the control of the hardware outputs is outsourced to a typed sub-application `Uebung_026_sub`[cite: 1].

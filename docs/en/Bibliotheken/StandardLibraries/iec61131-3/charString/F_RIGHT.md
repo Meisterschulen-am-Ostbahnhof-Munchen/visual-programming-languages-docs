@@ -6,6 +6,7 @@
 
 The function block `F_RIGHT` is a standard function block for processing character strings according to the IEC 61131-3 standard. It extracts the rightmost characters `L` from the input string `IN` and outputs them as the result `OUT`. This function block is particularly useful in applications where parts of character strings need to be processed or analyzed.
 ![F_RIGHT](F_RIGHT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

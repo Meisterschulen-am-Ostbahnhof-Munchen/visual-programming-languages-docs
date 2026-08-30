@@ -3,6 +3,7 @@
 <img width="1397" height="485" alt="image" src="https://github.com/user-attachments/assets/2a69233b-010f-46f7-af45-759eb7f7fdb4" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_10_BOOL` ist ein generischer Baustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) über bis zu zehn boolesche Eingangssignale. Er folgt dem IEC 61131-3 Standard und ist für den Einsatz in der 4diac-IDE konzipiert. Der Baustein wertet bei jeder Anforderung alle verbundenen Eingänge aus und liefert das entsprechende Ergebnis.

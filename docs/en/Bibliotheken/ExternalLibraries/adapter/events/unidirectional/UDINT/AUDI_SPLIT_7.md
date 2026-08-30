@@ -3,9 +3,11 @@
 ![AUDI_SPLIT_7](./AUDI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_SPLIT_7` is used to distribute a single AUDI input signal to seven identical AUDI output signals. It is designed as a generic building block and is suitable for all unidirectional AUDI adapter types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapter**
 
 | Name | Type | Direction |
-|--------|--------------------------------|----------|
+| -------- | -------------------------------- | ---------- |
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) |
 | OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 | OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
@@ -62,7 +64,7 @@ The component does not contain a state machine (ECC). Its behavior is completely
 ## Comparison with Similar Components
 
 | Component | Distribution | Adapter Type |
-------------------|--------------------------|------------------------|
+------------------ | -------------------------- | ------------------------ |
 | `AUDI_SPLIT_7` | 1 input → 7 outputs | Unidirectional `AUDI` |
 | `SPLIT_1_TO_2` (analog) | 1 → 2 | Any (generic) |
 | `AUDI_MERGE` | Multiple Inputs → 1 | Unidirectional `AUDI` |

@@ -3,6 +3,7 @@
 <img width="1370" height="307" alt="image" src="https://github.com/user-attachments/assets/8a66daf2-c93b-4cfc-bd10-dba250315aaf" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_4_BOOL` ist ein Standardbaustein zur Berechnung der logischen ODER-Verknüpfung. Er führt eine ODER-Operation mit bis zu vier booleschen Eingangswerten durch und gibt das Ergebnis als einen einzigen booleschen Wert aus. Der Baustein folgt dem EVA-Prinzip (Ereignisgesteuerte Verarbeitung) und ist für den Einsatz in Steuerungsanwendungen nach IEC 61131-3 konzipiert.

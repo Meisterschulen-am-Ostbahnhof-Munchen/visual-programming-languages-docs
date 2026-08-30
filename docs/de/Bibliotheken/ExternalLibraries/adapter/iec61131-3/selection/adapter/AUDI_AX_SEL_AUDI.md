@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUDI_AX_SEL_AUDI` dient als binärer Selektor (Auswahlschalter) für unidirektionale Kommunikationsadapter. Er ermöglicht es, basierend auf dem Zustand eines Steuersignals an einem Selektor-Adapter, den Daten- und Ereignisstrom zwischen zwei alternativen Eingangs-Adaptern auf einen einzigen Ausgangs-Adapter umzuleiten.

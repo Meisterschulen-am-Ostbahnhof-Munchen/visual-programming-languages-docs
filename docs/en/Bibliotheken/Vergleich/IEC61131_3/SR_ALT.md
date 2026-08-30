@@ -1,6 +1,7 @@
 # SR (Bistable, Set Priority) - IEC 61131-3
 
 The function block **SR** is a bistable element (flip-flop) where setting takes precedence over resetting.
+
 ## Interface
 
 | Type | Name | Data Type | Description |

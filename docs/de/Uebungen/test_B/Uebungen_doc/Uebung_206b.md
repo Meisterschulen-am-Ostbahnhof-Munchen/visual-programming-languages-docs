@@ -3,6 +3,7 @@
 ![Uebung_206b_network](./Uebung_206b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Flip-Flops realisiert. Drei Taster (Digitaleingänge) steuern jeweils ein ILOCK_T_FF, welches seinen Ausgang bei jedem Tastendruck umschaltet. Die drei Flip-Flops sind über eine Adapter-Kette bidirektional miteinander verbunden, sodass immer nur ein Ausgang aktiv sein kann (Interlock). Die Ausgänge werden auf drei digitale Ausgänge (z. B. LEDs) geführt.
@@ -56,7 +57,7 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
 **Verbindungen im Überblick (Ereignisse & Daten):**
 
 | Quelle | Ziel | Art |
-|--------|------|------|
+| -------- | ------ | ------ |
 | DigitalInput_CLK_I1.IND | ILOCK_T_FF_1.CLK | Ereignis |
 | DigitalInput_CLK_I2.IND | ILOCK_T_FF_2.CLK | Ereignis |
 | DigitalInput_CLK_I3.IND | ILOCK_T_FF_3.CLK | Ereignis |

@@ -3,6 +3,7 @@
 ![Uebung_011c_network](./Uebung_011c_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert das einfache Durchschleifen eines numerischen Werts von einem ISOBUS-Input-Objekt (InputNumber_I3) zu einem Output-Objekt (OutputNumber_N3). Dabei wird der vom Bus kommende DWORD-Wert in einen UDINT konvertiert, bevor er an das Ausgangsobjekt weitergegeben wird. Die Übung ist ein grundlegendes Beispiel für den Umgang mit dem **4diac-IDE** im Kontext von ISOBUS (ISO 11783) und zeigt, wie Funktionsbausteine zur Datenverarbeitung und -weiterleitung verschaltet werden.

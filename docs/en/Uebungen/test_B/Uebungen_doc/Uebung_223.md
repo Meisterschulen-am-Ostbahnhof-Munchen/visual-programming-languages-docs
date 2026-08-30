@@ -3,6 +3,7 @@
 ![Uebung_223_network](./Uebung_223_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up/down counter (FB_CTUD_UDINT) according to IEC 61131-3 with data type UDINT. The counter is controlled via digital inputs and outputs the current counter value as well as two output signals (QU, QD) to digital outputs. Additionally, the counter value is displayed on a terminal (Q_NumericValue).
@@ -62,6 +63,7 @@ This exercise is implemented as a sub-app that does not have its own input/outpu
 **Note:** A comment on the network suggests adding one or two E_D_FF blocks to reduce the number of events when multiple inputs are triggered simultaneously.
 
 **Note:**
+
 ## Summary
 
 Exercise 223 demonstrates the practical application of an IEC 61131-3 forward/down counter (FB_CTUD_UDINT) in a 4diac IDE environment. By combining logiBUS inputs and outputs with a terminal output, a complete counter with a display is implemented. The exercise illustrates the connection of event and data flows between function blocks from different libraries.

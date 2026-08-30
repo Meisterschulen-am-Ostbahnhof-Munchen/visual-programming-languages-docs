@@ -3,9 +3,11 @@
 ![AULI_FB_CTUD](./AULI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_FB_CTUD** implements an up/down counter for unsigned 64-bit integers (ULINT). It exclusively uses adapter interfaces according to the IEC 61499-2 standard for event and data connections. The block encapsulates the standard FB `FB_CTUD_ULINT` and extends its inputs and outputs with adapter-based connections, enabling flexible and standardized integration into adapter-oriented architectures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,7 +51,7 @@ There are no separate data outputs. The output data is sent via the adapter plug
 ### **Adapter**
 
 | Adapter | Direction | Type | Purpose |
-|---------|----------|-------|-------|
+| --------- | ---------- | ------- | ------- |
 | **CU** | Socket | AX | Count Up – Event + Boolean enable |
 | **CD** | Socket | AX | Count Down – Event + Boolean enable |
 | **R** | Socket | AX | Reset – Event + Boolean enable |
@@ -103,7 +105,7 @@ After a reset (`R`) or load (`LD`), the counter can immediately jump to one of t
 ## Comparison with Similar Components
 
 | Component | Properties |
-|----------|---------------|
+| ---------- | --------------- |
 | `FB_CTUD_ULINT` | Same counter logic, but with separate event and data inputs/outputs (no adapters). |
 | AULI_FB_CTU` | Up counter only, as an adapter version. |
 | AULI_FB_CTD` | Down counter only, as an adapter version. |

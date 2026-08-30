@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUI_MUL_2` ist ein generischer arithmetischer Funktionsblock für die Entwicklungsumgebung 4diac-ide, der zur Durchführung einer Multiplikation von zwei Eingangswerten dient.
@@ -62,6 +63,7 @@ Nach erfolgreicher Berechnung wird das Ergebnis an den Ausgangsadapter `OUT` üb
 ## Zustandsübersicht
 
 Der Funktionsbaustein arbeitet rein ereignisgesteuert und zustandslos (reaktiv):
+
 1. **Bereitschaftszustand:** Der Baustein wartet auf eingehende Ereignisse über `IN1` oder `IN2`.
 2. **Berechnungsphase:** Ein eingehendes Ereignis triggert die interne Multiplikation der aktuellen Adapterdaten.
 3. **Ausgabephase:** Das berechnete Produkt wird an `OUT` angelegt und das Ausgabeereignis getriggert. Der Baustein kehrt sofort in den Bereitschaftszustand zurück.

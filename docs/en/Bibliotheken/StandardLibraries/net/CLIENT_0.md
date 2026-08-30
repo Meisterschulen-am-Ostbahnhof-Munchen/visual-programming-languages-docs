@@ -1,11 +1,13 @@
 # CLIENT_0
 
 * * * * * * * * * *
+
 ## Introduction
 
 The CLIENT_0 function block is used to communicate with a SERVER_0 block via a network connection. It enables the establishment and closure of connections. Unlike CLIENT_1, there is no explicit data exchange via data inputs/outputs; synchronization occurs primarily through events.
 
 - ![CLIENT_0](CLIENT_0.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

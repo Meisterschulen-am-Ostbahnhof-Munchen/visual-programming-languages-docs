@@ -1,6 +1,7 @@
 # ST04X
 
 * * * * * * * * * *
+
 ## Einleitung
 
 ST04X ist ein strukturierter Datentyp, der vier boolesche Werte gruppiert. Er dient dazu, eine Sammlung von vier einzelnen Bits in einer einzigen Struktur zu organisieren und zu handhaben.

@@ -4,6 +4,7 @@
 
 The `AUDI_CTUD_UDINT` is an event-driven up/down counter for unsigned 32-bit integers (UDINT), specifically designed for integration into adapter-based systems. It utilizes the `AUDI` adapter for passing the counter value and the default value, enabling a clean separation of event and data flow.
 ![AUDI_CTUD_UDINT](AUDI_CTUD_UDINT.svg)
+
 ## Interface Structure
 
 ![AUDI_CTUD_UDINT_ecc](./AUDI_CTUD_UDINT_ecc.svg)

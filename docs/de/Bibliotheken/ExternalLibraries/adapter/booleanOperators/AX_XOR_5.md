@@ -47,6 +47,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 Der Funktionsblock berechnet die XOR-Verknüpfung über alle fünf Eingänge. Die XOR-Operation (exklusives ODER) liefert genau dann ein "wahr"-Signal, wenn eine ungerade Anzahl der Eingänge aktiv ist. Bei einer geraden Anzahl aktiver Eingänge wird "falsch" ausgegeben.
 
 Die mathematische Formel lautet:
+
 ```
 OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5
 ```

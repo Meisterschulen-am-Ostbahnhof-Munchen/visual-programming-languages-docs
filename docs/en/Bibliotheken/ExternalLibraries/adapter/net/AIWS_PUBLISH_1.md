@@ -8,7 +8,7 @@
 
 The function block **AIWS_PUBLISH_1** is a composite function block that encapsulates the network-based `PUBLISH_1` function block from the IEC 61499 standard library and maps its interface to a unidirectional **AIWS adapter**. A **WSTRING** value present at the adapter socket `IN` is buffered via an internal D flip-flop (E_D_FF_ANY) and then sent to all associated `SUBSCRIBE_1` receivers via the configured publish channel.
 
- ## Interface Structure
+## Interface Structure
 
 ### **Event Inputs**
 

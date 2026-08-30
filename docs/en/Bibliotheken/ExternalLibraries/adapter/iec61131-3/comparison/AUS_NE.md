@@ -3,9 +3,11 @@
 ![AUS_NE](./AUS_NE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUS_NE** compares two values of type `USINT` (8-bit unsigned integer) and checks whether the first value (IN1) is not equal to the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously. The comparison follows the usual numeric ordering.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
@@ -31,7 +33,7 @@ The function block has no direct event or data inputs and outputs, but communica
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `AUS` (Socket) | Input | Adapter for the first comparison value and its associated event |
 | IN2 | `AUS` (Socket) | Input | Adapter for the second comparison value and its associated event |
 | OUT | `AX` (Plug) | Output | Adapter for the comparison result and the output event |

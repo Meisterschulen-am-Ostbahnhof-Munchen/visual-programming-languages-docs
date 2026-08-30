@@ -57,8 +57,8 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_DELAY | E_CYCLE | E_PULSE |
-|---------------|---------|---------|---------|
+| Feature | E_DELAY | E_CYCLE | E_PULSE |
+| --------------- | --------- | --------- | --------- |
 | Funktionsprinzip | Einmalverzögerung | Dauerzyklus | Einmalimpuls |
 | Abbruchmöglichkeit | Ja | Ja | Nein |
 | Zeitparameter | DT (Verzögerung) | DT (Zykluszeit) | PT (Impulsdauer) |

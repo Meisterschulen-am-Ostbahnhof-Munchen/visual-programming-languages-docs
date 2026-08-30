@@ -3,9 +3,11 @@
 ![AL_D_FF_TMIN](./AL_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AL_D_FF_TMIN function block implements an edge-triggered D flip-flop (data latch) with an adjustable minimum inter-disposal time. It receives a data value upon an incoming event, stores it, and outputs it—along with its own event—only after the specified minimum time has elapsed. This limits the output event rate.
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![logiBUS_IEA](./logiBUS_IEA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite-Funktionsblock `logiBUS_IEA` dient der ereignisgesteuerten Verarbeitung von digitalen Eingangsdaten in einem logiBUS-Feldbus-System. Er kapselt einen internen `logiBUS_IE`-Baustein und stellt dessen Funktionalität über eine einheitliche Schnittstelle zur Verfügung. Der FB ermöglicht die Initialisierung sowie die Abfrage von Ereignissen an einem digitalen Eingang und gibt die resultierenden Indikationen über einen Adapter an die Ressource weiter.
@@ -25,7 +26,7 @@ Der Composite-Funktionsblock `logiBUS_IEA` dient der ereignisgesteuerten Verarbe
 ### **Daten-Eingänge**
 
 | Name | Typ | Kommentar | Initialwert |
-|------|-----|-----------|-------------|
+| ------ | ----- | ----------- | ------------- |
 | `QI` | BOOL | Event Input Qualifier | – |
 | `PARAMS` | STRING | Service Parameters | – |
 | `Input` | `logiBUS::io::DI::logiBUS_DI_S` | Identifiziert den Eingang (z. B. Input_I1..I8) | `logiBUS_DI::Invalid` |
@@ -87,7 +88,7 @@ Die Zustandsübergänge werden durch die Ereignisse `IND` und `CNF` sichtbar und
 ## Vergleich mit ähnlichen Bausteinen
 
 | FB-Typ | Eigenschaft |
-|--------|-------------|
+| -------- | ------------- |
 | `logiBUS_DI` | Reiner Digitaleingang ohne Ereignisdetektion; einfacher Pegelabruf |
 | `logiBUS_IEA` | **Dieser FB:** Ereignisbasierte Eingabe mit Initialisierung und Adapter für Indikation |
 | `logiBUS_DI_Events` | Ereignisdetektion auf einem einzelnen Eingang, aber ohne Initialisierungslogik |

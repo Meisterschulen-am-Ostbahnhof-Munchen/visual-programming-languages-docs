@@ -6,6 +6,7 @@
 ![AI_MUL_4](./AI_MUL_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_MUL_4` ist ein generischer arithmetischer Baustein für 4diac-IDE, der der Norm IEC 61131-3 entspricht. Seine Hauptaufgabe besteht darin, das mathematische Produkt aus vier analogen Eingangswerten zu berechnen. Der Baustein nutzt unidirektionale Adapter vom Typ `AI` (Analog Input), um sowohl Daten als auch die dazugehörigen Ereignisse gekapselt zu übertragen. Dies reduziert den Verdrahtungsaufwand im Funktionsplan erheblich und sorgt für eine sauberere Strukturierung der Steuerungslogik.
@@ -59,6 +60,7 @@ Das Ergebnis dieser Berechnung wird an den Ausgangs-Adapter `OUT` übergeben, un
 ## Zustandsübersicht
 
 Da es sich bei `AI_MUL_4` um einen rein mathematischen, daten- und ereignisgesteuerten Funktionsbaustein handelt, besitzt er keinen internen Zustandsautomaten (ECC). Die Ausführung verhält sich rein zustandslos:
+
 1. **Warten:** Der Baustein wartet auf ein Aktualisierungsereignis an einem der Sockets (`IN1` bis `IN4`).
 2. **Berechnen:** Bei Triggerung werden die aktuellen Werte aller vier Eingänge multipliziert.
 3. **Ausgeben:** Das Ergebnis wird an den Plug `OUT` angelegt und das Ausgabeereignis getriggert. Der Baustein kehrt sofort in den Wartezustand zurück.

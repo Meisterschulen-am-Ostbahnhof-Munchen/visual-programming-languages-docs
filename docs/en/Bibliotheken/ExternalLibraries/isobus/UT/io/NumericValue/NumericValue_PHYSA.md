@@ -3,9 +3,11 @@
 ![NumericValue_PHYSA](./NumericValue_PHYSA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NumericValue_PHYSA** is an input service interface function block (SIFB) according to ISO 11783-6. Its function is to provide a physical REAL value via an AR adapter (adapter type *unidirectional::AR*). Internally, it encapsulates the block `NumericValue_PHYS` and all its logic for converting and providing the value.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -24,7 +26,7 @@ The function block **NumericValue_PHYSA** is an input service interface function
 ### **Data Inputs**
 
 | Name | Type | Description |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | QI | BOOL | Input qualifier (enables/controls processing) |
 | PARAMS | STRING | Parameters for the service (e.g., configuration string) |
 | stObj | *NumericObjectPool_S* | Object pool properties: Object ID (UINT16), scale, offset, decimal places |
@@ -32,9 +34,9 @@ The function block **NumericValue_PHYSA** is an input service interface function
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | QO | BOOL | Output qualifier (indicates successful processing) |
-| STATUS| STRING | Status message (OK or error text) |
+| STATUS | STRING | Status message (OK or error text) |
 
 ### **Adapter**
 

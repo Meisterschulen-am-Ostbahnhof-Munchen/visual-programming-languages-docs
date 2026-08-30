@@ -3,6 +3,7 @@
 ![AD_OR_3](./AD_OR_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_OR_3** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 3 Eingangswerten vom Typ `DWORD` (32-Bit-Bitmuster (Doppelwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

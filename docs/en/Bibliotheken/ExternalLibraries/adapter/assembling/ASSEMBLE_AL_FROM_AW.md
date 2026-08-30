@@ -3,9 +3,11 @@
 ![ASSEMBLE_AL_FROM_AW](./ASSEMBLE_AL_FROM_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_AL_FROM_AW` combines the data from four **AW (WORD)** adapter interfaces into one **AL (LWORD)** output value. It is used to combine multiple 16-bit words into a 64-bit word and output it via a clocked signal.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs – the result is output via the OUT adapter.
 ### **Adapters**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | **Sockets** | | |
 | `WORD_00` | `adapter::types::unidirectional::AW` | Word 0 (least significant 16-bit word) |
 | `WORD_01` | `adapter::types::unidirectional::AW` | Word 1 |
@@ -46,6 +48,7 @@ The module utilizes an internal network of two function blocks:
 The events from the four input adapters (`WORD_00.E1` … `WORD_03.E1`) are all connected to the `REQ` event input of `ASSEMBLE_LWORD_FROM_WORDS`. As soon as an event arrives at one of the input adapters, the combination is recalculated. Upon completion (`CNF`), `E_D_FF_ANY` is clocked, which then adopts the calculated value into its internal state and outputs it via `OUT.D1`. The event at the output adapter (`OUT.E1`) signals the availability of the new value.
 
 As soon as an event arrives at one of the input adapters, the combination is recalculated.
+
 ## Technical Features
 
 - **Clock Edge Triggered Output** – The use of the `E_D_FF_ANY` prevents unwanted intermediate values and ensures that only fully composed LWORDs are output.
@@ -65,7 +68,7 @@ The function block does not have its own ECC (Execution Control Chart), but cons
 ## Comparison with Similar Modules
 
 | Module | Description |
-|----------|-------------|
+| ---------- | ------------- |
 | `ASSEMBLE_AL_FROM_BYTES` | Combines multiple 8-bit values into an LWORD |
 | `ASSEMBLE_AL_FROM_DWORDS` | Combines two 32-bit double words into a 64-bit word |
 | `ASSEMBLE_AL_FROM_AW` (this one) | Combines four 16-bit words into an LWORD |

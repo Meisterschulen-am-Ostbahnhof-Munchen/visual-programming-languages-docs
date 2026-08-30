@@ -13,7 +13,7 @@ Diese Übung demonstriert die Verwendung eines Aufwärtszählers (E_CTU) in Komb
 Die Übung verwendet die folgenden vordefinierten Funktionsbausteine im Netzwerk:
 
 | Bausteinname | Typ | Parameter | Kurzbeschreibung |
-|--------------|-----|-----------|------------------|
+| -------------- | ----- | ----------- | ------------------ |
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` | Erzeugt ein Ereignis (`IND`) bei einfachem Tastendruck auf Eingang I1. |
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` | Erzeugt ein Ereignis (`IND`) bei einfachem Tastendruck auf Eingang I2. |
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` | Zyklischer Ereignisgenerator; erzeugt nach Start alle 1 ms ein Ereignis (`EO`) bis zum Stopp. |

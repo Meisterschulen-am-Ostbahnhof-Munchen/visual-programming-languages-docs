@@ -3,6 +3,7 @@
 ![AULI_SPLIT_9](./AULI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_SPLIT_9** dient als Verteiler für den unidirektionalen AULI‑Adapter. Er nimmt einen eingehenden AULI‑Datensatz über den Socket **IN** entgegen und leitet diesen unverändert an alle neun Ausgangs‑Adapter (**OUT1** bis **OUT9**) weiter. Der Baustein ist als generischer Splitter konzipiert und eignet sich für Anwendungen, in denen ein AULI‑Signal auf mehrere Verbraucher aufgeteilt werden muss.

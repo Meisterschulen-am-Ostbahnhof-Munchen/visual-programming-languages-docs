@@ -4,6 +4,7 @@
 **Image of the function block:** (not available)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `E_T_FF_SR_SYM_INIT` implements an event-driven, bistable flip-flop with set, reset, and toggle functionality. It features symmetrical startup behavior: Upon the initialization event (`INIT`), the output `Q` is set to the value specified at the input `Q_INIT`, provided the qualifier `QI` is active. The block combines the properties of an SR flip-flop and a toggle flip-flop in a single unit.
@@ -13,7 +14,7 @@ The function block `E_T_FF_SR_SYM_INIT` implements an event-driven, bistable fli
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|-------|--------|------------------------------------------|
+| ------- | -------- | ------------------------------------------ |
 | INIT | EInit | Initialization Request |
 | S | Event | Sets output Q (set) |
 | R | Event | Resets output Q |
@@ -22,21 +23,21 @@ The function block `E_T_FF_SR_SYM_INIT` implements an event-driven, bistable fli
 ### **Event Outputs**
 
 | Name | Type | Comment |
-|-------|--------|------------------------------------------|
+| ------- | -------- | ------------------------------------------ |
 | INITO | EInit | Initialization Acknowledgement |
 | EO | Event | Signals a change in Q |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|---------|-------|----------------------------------------------|
+| --------- | ------- | ---------------------------------------------- |
 | QI | BOOL | Event qualifier (controls execution) |
 | Q_INIT | BOOL | Value that Q should assume at INIT |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-------|------------------------------------------|
+| ------ | ------- | ------------------------------------------ |
 | QO | BOOL | Output qualifier (mirror of QI) |
 | Q | BOOL | Flip-flop value |
 
@@ -83,7 +84,7 @@ If the automaton is in state `SET`, it switches to `RESET` and vice versa. The r
 ## State Overview
 
 | State | Description | Action on Occurrence |
-|---------|----------------------------------------------|---------------------------------------------|
+| --------- | ---------------------------------------------- | --------------------------------------------- |
 | START | Waiting for initialization | – |
 | Init | Initializing QO | `QO := QI`; Triggering `INITO` |
 | DeInit | Deinitializing (if QI=false) | `QO := FALSE`; Triggering `INITO` |

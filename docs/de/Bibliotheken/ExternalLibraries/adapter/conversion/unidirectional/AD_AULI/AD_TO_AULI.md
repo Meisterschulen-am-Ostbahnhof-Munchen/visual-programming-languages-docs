@@ -3,6 +3,7 @@
 ![AD_TO_AULI](./AD_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein AD_TO_AULI ist ein Composite-FB zur Konvertierung eines DWORD-Adapters (AD) in einen ULINT-Adapter (AULI). Er verwendet die IEC 61131-Konvertierungsfunktion F_DWORD_TO_ULINT und kapselt die Ereignis- und Datenverbindungen für eine einfache adapterbasierte Umwandlung.
@@ -12,15 +13,19 @@ Der Funktionsbaustein AD_TO_AULI ist ein Composite-FB zur Konvertierung eines DW
 ### **Ereignis-Eingänge**
 
 Keine
+
 ### **Ereignis-Ausgänge**
 
 Keine
+
 ### **Daten-Eingänge**
 
 Keine
+
 ### **Daten-Ausgänge**
 
 Keine
+
 ### **Adapter**
 
 - **AD_IN** (Socket): Typ AD (DWORD), unidirektionaler Eingangsadapter für das DWORD.

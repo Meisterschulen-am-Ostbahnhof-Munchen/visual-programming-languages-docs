@@ -3,6 +3,7 @@
 ![AIS_SPLIT_2](./AIS_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIS_SPLIT_2** ist ein generischer Adapter-Baustein, der einen eingehenden unidirektionalen AIS‑Adapter (Application Interface Socket) auf zwei identische, ausgehende AIS‑Adapter aufteilt. Er dient als passiver Splitter ohne eigene Logik oder Ereignisverarbeitung.

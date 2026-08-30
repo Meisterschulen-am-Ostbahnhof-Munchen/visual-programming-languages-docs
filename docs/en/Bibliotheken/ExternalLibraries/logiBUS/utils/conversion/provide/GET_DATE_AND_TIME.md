@@ -3,9 +3,11 @@
 ![GET_DATE_AND_TIME](./GET_DATE_AND_TIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_DATE_AND_TIME** function block is used to read a value of type `DATE_AND_TIME` from a variable declared as InOut and provide it as a buffered output. On each request, the current value of the source (InOut variable) is copied to the output.
+
 ## Interface Structure
 
 ### **Event Inputs**

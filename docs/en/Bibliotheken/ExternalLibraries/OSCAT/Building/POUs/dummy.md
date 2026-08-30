@@ -1,6 +1,7 @@
 ![dummy](dummy.svg)
-#dummy
+# dummy
 does nothing
+
 # dummy
 
 ## Interface

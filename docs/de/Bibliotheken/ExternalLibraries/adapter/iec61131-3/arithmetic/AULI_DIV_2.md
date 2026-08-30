@@ -6,6 +6,7 @@
 *Kein Bild vorhanden*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_DIV_2` ist ein generischer Funktionsbaustein (Generic FB), der für die Durchführung einer arithmetischen Division (DIV) entwickelt wurde. Er basiert auf der IEC 61499-Norm und nutzt das Konzept von Adaptern, um Daten und die dazugehörige Steuerungslogik effizient zu übertragen. Der Baustein ist im Namensraum `adapter::iec61131::arithmetic` definiert und verwendet die generische Klasse `GEN_AULI_DIV`.

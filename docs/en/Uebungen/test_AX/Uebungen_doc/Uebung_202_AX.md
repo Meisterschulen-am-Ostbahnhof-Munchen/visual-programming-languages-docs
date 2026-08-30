@@ -3,6 +3,7 @@
 ![Uebung_202_AX_network](./Uebung_202_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of an interlock with a protection time using adapters. The function block `ILOCK_BLOCK_PROTECT_AX` is used to interlock two input signals (e.g., switches or sensors) and monitor them over a configurable protection time. The outputs control corresponding actuators. An additional timer (`E_TimeOut`) indicates when the protection time expires.
@@ -10,7 +11,7 @@ The network is implemented as a SubAppType and can be integrated into higher-lev
 
 ## Function Blocks (FBs) Used
 
-### Sub-Blocks:
+### Sub-Blocks
 
 #### DigitalInput_I1 / DigitalInput_I2 (each `logiBUS::io::DI::logiBUS_IXA`)
 
@@ -47,16 +48,18 @@ The network is implemented as a SubAppType and can be integrated into higher-lev
 The sub-app is connected as follows:
 
 1. **Inputs**: The two logiBUS digital input adapters (`DigitalInput_I1`, `DigitalInput_I2`) read the hardware signals from channels `Input_I1` and `Input_I2`. Your `IN` outputs are connected to the corresponding inputs of the interlock block via **adapter connections**:
+
 - `DigitalInput_I1.IN` → `ILOCK_AX.UP_IN`
 - `DigitalInput_I2.IN` → `ILOCK_AX.DOWN_IN`
-2. **Interlock Processing**: The FB `ILOCK_AX` evaluates the signals. As long as no interlock is active, the outputs `UP_OUT` and `DOWN_OUT` are set according to the inputs. If the switching time exceeds the set protection time (`DT_PROTECT`), the output `timeOut` becomes active.
-3. **Outputs**: The enabled signals are routed to the logiBUS digital output adapters via adapter connections:
+1. **Interlock Processing**: The FB `ILOCK_AX` evaluates the signals. As long as no interlock is active, the outputs `UP_OUT` and `DOWN_OUT` are set according to the inputs. If the switching time exceeds the set protection time (`DT_PROTECT`), the output `timeOut` becomes active.
+2. **Outputs**: The enabled signals are routed to the logiBUS digital output adapters via adapter connections:
+
 - `ILOCK_AX.UP_OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`
 
 Outputs `Output_Q1` and `Output_Q2` control the connected actuators.
 
-4. **Timer**: The timeout event of the interlock block (`ILOCK_AX.timeOut`) is connected to socket `E_TimeOut.TimeOutSocket`. The timer can be used in a higher-level application to generate an error or acknowledgment message.
+1. **Timer**: The timeout event of the interlock block (`ILOCK_AX.timeOut`) is connected to socket `E_TimeOut.TimeOutSocket`. The timer can be used in a higher-level application to generate an error or acknowledgment message.
 
 **Learning Objectives of the Exercise**:
 

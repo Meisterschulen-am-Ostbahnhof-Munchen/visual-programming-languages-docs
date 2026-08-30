@@ -3,6 +3,7 @@
 ![SPLIT_BYTE_INTO_BOOLS](https://github.com/user-attachments/assets/666a1be8-3ac9-4da7-b5ab-b11513e98c9c)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_BYTE_INTO_BOOLS` dient dazu, ein Byte in seine einzelnen Bits zu zerlegen und diese als separate BOOL-Werte auszugeben. Dies ist besonders nützlich, wenn mit Hardware gearbeitet wird, die einzelne Bits eines Bytes auswertet oder setzt.

@@ -3,6 +3,7 @@
 ![AB_SPLIT_2](./AB_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AB_SPLIT_2** dient der Aufteilung eines unidirektionalen Adapters vom Typ `AB` auf zwei separate Adapterausgänge. Er ist als generischer Baustein (Generic FB) implementiert und ermöglicht die gleichzeitige Weiterleitung des eingehenden Adapters an zwei unabhängige Zieladressaten. Dies vereinfacht die Topologie in Steuerungsapplikationen, wenn ein Signal mehrfach benötigt wird, ohne den ursprünglichen Datenfluss zu beeinträchtigen.

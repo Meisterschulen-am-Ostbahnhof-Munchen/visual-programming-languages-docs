@@ -6,6 +6,7 @@
 
 The function block `F_BYTE_TO_LINT` converts a `BYTE` value to a `LINT` value. This block is particularly useful in scenarios where a type conversion between these two data types is required.
 ![F_BYTE_TO_LINT](F_BYTE_TO_LINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

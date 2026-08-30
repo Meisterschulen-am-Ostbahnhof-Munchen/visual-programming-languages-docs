@@ -3,6 +3,7 @@
 ![Uebung_073c_AUI_network](./Uebung_073c_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe der Geschwindigkeitssignale **Ground Based Speed (GBSD)** und **Vehicle/Drive Speed (VDS)** auf einem Universal Terminal (UT) unter Verwendung physikalischer Adressen (PHYS). Die Signale werden über ISOBUS-Adapter (IA) empfangen, skaliert und mittels der `Q_NumericValue_PHYSA`-Bausteine auf dem UT dargestellt.
@@ -17,7 +18,7 @@ Die Übung vermittelt den Umgang mit Signal-Skalierung und dem Adapter-Konzept (
 Die Übung besteht aus sechs Funktionsbausteinen, die alle innerhalb der SubApp `Uebung_073c_AUI` angeordnet sind.
 
 | Bausteinname | Typ | Parameter | Beschreibung |
-|--------------|-----|-----------|--------------|
+| -------------- | ----- | ----------- | -------------- |
 | `IA_GBSD` | `isobus::tecu::IA_GBSD` | QI = TRUE | ISOBUS-Schnittstellenbaustein für die **bodenbezogene Geschwindigkeit** (Ground Based Speed). Liefert den Messwert als UINT am Ausgang `SPEED`. |
 | `IA_VDS` | `isobus::tecu::IA_VDS` | QI = TRUE | ISOBUS-Schnittstellenbaustein für die **fahrzeugbezogene Geschwindigkeit** (Vehicle/Drive Speed). Liefert den Messwert als UINT am Ausgang `NAV_SPEED`. |
 | `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` | `logiBUS::signalprocessing::fieldbus::AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED` | SCALE = 0.001, OFFSET = 0 | Skaliert den UINT-Wert von `IA_GBSD` auf einen REAL-Wert (Multiplikation mit 0.001). |

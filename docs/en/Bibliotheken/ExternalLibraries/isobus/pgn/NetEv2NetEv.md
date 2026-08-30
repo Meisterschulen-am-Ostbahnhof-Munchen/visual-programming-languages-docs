@@ -4,9 +4,11 @@
 ![NetEv2NetEv](./NetEv2NetEv.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `NetEv2NetEv` is used to manipulate network events (NetEv) within an ISOBUS-based system. Its primary purpose is to take an incoming network event record and overwrite a specific value—the network member handle. The block thus functions as a simple converter or adapter for ISONETEVENT_T data structures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -39,7 +41,7 @@ The operation of the `NetEv2NetEv` block is deterministic and simple:
 
 
 
-2. The entire contents of the input data structure `IN` are copied to the output data structure. 3. The field `.s16Handle` within this copied output structure is then overwritten with the value of the input `s16Handle`.
+3. The entire contents of the input data structure `IN` are copied to the output data structure. 3. The field `.s16Handle` within this copied output structure is then overwritten with the value of the input `s16Handle`.
 4. The `CNF` event is triggered to signal the output of the modified data set.
 
 This block only modifies the specified handle field. All other fields of the `ISONETEVENT_T` structure remain unchanged.

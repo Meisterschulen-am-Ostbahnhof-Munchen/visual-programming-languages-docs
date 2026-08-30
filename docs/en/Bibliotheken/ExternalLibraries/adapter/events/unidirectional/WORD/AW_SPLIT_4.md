@@ -3,9 +3,11 @@
 ![AW_SPLIT_4](./AW_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AW_SPLIT_4` distributes an incoming AW adapter (unidirectional) to four identical AW output adapters. The block is designed generically and can be used with different AW types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None (output occurs exclusively via the adapter plugs).
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AW` | `IN` | Socket | Input for the AW data stream to be distributed |
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug | First output (copy of the input) |
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug | Second output |

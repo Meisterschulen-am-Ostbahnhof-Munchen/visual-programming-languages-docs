@@ -3,6 +3,7 @@
 ![Uebung_011b1_PHYS_network](./Uebung_011b1_PHYS_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung wird eine Addition von zwei physikalischen Werten (REAL) mithilfe des NumericValue-Patterns aus der isobus-Bibliothek realisiert. Die Werte werden über die Bausteine `InputNumber_I3` und `InputNumber_I4` eingelesen, addiert und das Ergebnis über den Baustein `Q_NumericValue_PHYS` ausgegeben.

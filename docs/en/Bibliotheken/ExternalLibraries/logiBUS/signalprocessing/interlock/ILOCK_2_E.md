@@ -3,15 +3,17 @@
 ![ILOCK_2_E](./ILOCK_2_E.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_2_E** is an event-driven bistable toggle block with dual interlock. It is used to control two mutually exclusive outputs (OUT1, OUT2). In addition to explicit set and reset functions, the block offers an edge-triggered toggle function that allows a single toggle per activation. The block is particularly suitable for control logics where both outputs must never be TRUE simultaneously and a repeated toggle command only takes effect after being released again (e.g., by setting the other channel or resetting).
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Comment |
-|----------|-----------|
+| ---------- | ----------- |
 | `SET1` | Sets OUT1 to TRUE and OUT2 to FALSE. |
 | CLK1` | Toggles OUT1 (upon initial activation after a set/reset) and sets OUT2 to FALSE. |
 | SET2` | Sets OUT2 to TRUE and OUT1 to FALSE. |
@@ -21,7 +23,7 @@ The function block **ILOCK_2_E** is an event-driven bistable toggle block with d
 ### **Event Outputs**
 
 | Event | Comment |
-----------|-----------|
+---------- | ----------- |
 | EO` | Triggered after every output change (SET, TOGGLE, or RESET). Stores the current values of OUT1 and OUT2. |
 
 ### **Data Inputs**
@@ -57,7 +59,7 @@ The **toggle function** is edge-triggered: The internal variables `EDGE1` and `E
 ## Status Overview
 
 | Status | Description | Trigger | Algorithm Effect (Simplified) | Output |
-|-------------|-----------------------------|----------|---------------------------------------------------------|---------|
+| ------------- | ----------------------------- | ---------- | --------------------------------------------------------- | --------- |
 | `STOP` | Initial, waits for event | - | – | – |
 | `SET1` | Set Output 1 | `SET1` | OUT1=TRUE, OUT2=FALSE, EDGE1=FALSE, EDGE2=FALSE | `EO` |
 | `SET2` | Set Output 2 | `SET2` | OUT1=FALSE, OUT2=TRUE, EDGE1=FALSE, EDGE2=FALSE | `EO` |
@@ -77,7 +79,7 @@ All action states immediately revert to `STOP` after the algorithm is executed.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-|---------------|-------------------------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------------------------- |
 | `E_SR` | Simple set/reset flip-flop, no toggle, no dual locking. |
 | `SR-Flipflop` (two outputs) | Often only combinatorial or without edge detection. |
 | `ILOCK_2_E` | Offers both: **Set** (exclusive) and **edge-triggered toggle** with automatic locking. Ideal for advanced requirements. |

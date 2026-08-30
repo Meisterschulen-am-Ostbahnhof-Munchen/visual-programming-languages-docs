@@ -3,9 +3,11 @@
 ![ALR_D_FF_HYS](./ALR_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALR_D_FF_HYS** function block implements a data latch (D flip-flop) with adjustable hysteresis. It receives a data value via an adapter socket and outputs the latched value via an adapter plug. The hysteresis is set during the initialization event and serves to suppress noise or small fluctuations in the input signal.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ The FB has no direct data outputs. The latched value is output exclusively via t
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|-----------|--------------|
+| ------------- | ----- | ----------- | -------------- |
 | I (Socket) | `adapter::types::unidirectional::ALR` | Input | Receives the value to be latched via the event `I.E1` and the associated data value `I.D1`. |
 | Q (Plug) | `adapter::types::unidirectional::ALR` | Output | Outputs the latched value via the event `Q.E1` and the data value `Q.D1`. |
 
@@ -70,7 +72,7 @@ Since the FB implements the behavior via an internal block, there is no separate
 ## Comparison with Similar Components
 
 | Component | Property |
-|----------|-------------|
+| ---------- | ------------- |
 | Simple D flip-flop (e.g., `E_D_FF`) | Latch without hysteresis – any change at the input is immediately registered. |
 | D flip-flop with deadband (`E_D_FF_TOTBAND`) | It has a deadband that blocks changes as long as the value remains within the band. |
 | **ALR_D_FF_HYS** | Hysteresis is only effective in one direction (threshold behavior), typically used to prevent flutter. |

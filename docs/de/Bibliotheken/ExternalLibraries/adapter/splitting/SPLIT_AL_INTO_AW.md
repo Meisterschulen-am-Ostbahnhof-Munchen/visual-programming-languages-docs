@@ -3,6 +3,7 @@
 ![SPLIT_AL_INTO_AW](./SPLIT_AL_INTO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AL_INTO_AW** dient dazu, eine über einen AL-Adapter (LWORD) eingehende 64‑Bit‑Ganzzahl in vier separate 16‑Bit‑Werte aufzuteilen und diese über vier einzelne AW-Adapter auszugeben. Er realisiert eine festverdrahtete Aufteilung, die durch ein eingehendes Ereignis ausgelöst wird.

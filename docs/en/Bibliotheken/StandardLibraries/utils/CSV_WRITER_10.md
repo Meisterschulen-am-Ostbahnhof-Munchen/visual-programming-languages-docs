@@ -3,6 +3,7 @@
 ![CSV_WRITER_10](https://github.com/user-attachments/assets/e227277e-11fe-4910-be49-977cea7553d2)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The CSV_WRITER_10 function block is used to write data to a CSV file. It allows you to save up to 10 different data values in a structured text file. This block is particularly useful for data collection, logging, and exchanging data with other systems.

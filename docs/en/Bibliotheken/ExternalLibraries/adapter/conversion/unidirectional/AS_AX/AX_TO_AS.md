@@ -3,9 +3,11 @@
 ![AX_TO_AS](./AX_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AX_TO_AS` is a composite function block that converts a BOOL adapter (type AX) into a SINT adapter (type AS). It encapsulates the conversion of a binary signal into a signed 8-bit value and provides this via a standardized adapter interface.
+
 ## Interface Structure
 
 ### **Event Inputs**

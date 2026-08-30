@@ -3,6 +3,7 @@
 ![XOR_3](https://user-images.githubusercontent.com/116869307/214143735-3c0a538b-d39a-47e0-9cd3-1602d3640896.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The XOR_3 function block is a generic function block for calculating bitwise XOR operations with three inputs. It implements the logical exclusive OR operation at the bit level according to the IEC 61131-3 standard and can be used with various bit data types.

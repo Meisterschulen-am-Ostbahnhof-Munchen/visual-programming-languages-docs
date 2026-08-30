@@ -3,6 +3,7 @@
 ![ADI_TO_AD](./ADI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_AD** ist ein Composite-Baustein (zusammengesetzter FB), der eine Schnittstellenkonvertierung von einem **ADI**-Adapter (DINT-basiert) zu einem **AD**-Adapter (DWORD-basiert) realisiert. Er fungiert als unidirektionaler Wandler und ermöglicht die nahtlose Integration von Komponenten mit unterschiedlichen Datenadapter-Typen in der 4diac-IDE.

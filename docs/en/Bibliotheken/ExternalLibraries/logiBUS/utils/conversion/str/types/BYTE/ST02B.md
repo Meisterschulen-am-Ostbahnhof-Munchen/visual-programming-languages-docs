@@ -1,12 +1,15 @@
 # ST02B
 
 * * * * * * * * * *
+
 ## Introduction
 
 ST02B` is a user-defined, structured data type within the 4diac IDE. It defines a data structure that combines two individual bytes into a logical unit. This simplifies the handling of byte pairs.
+
 ## Structure Definition
 
 Since `ST02B` is a data type and not a function block, it has no interfaces in the sense of event inputs/outputs, data inputs/outputs, or adapters. Instead, the internal components of the data type are described here.
+
 ## **Components of the Structure**
 
 The structure `ST02B` consists of the following two byte variables:

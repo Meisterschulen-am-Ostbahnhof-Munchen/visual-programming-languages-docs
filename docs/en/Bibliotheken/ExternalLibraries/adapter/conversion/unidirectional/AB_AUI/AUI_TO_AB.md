@@ -4,6 +4,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUI_TO_AB** function block is a composite block that converts an AUI interface (UINT) to an AB interface (BYTE). It encapsulates the conversion using the internal IEC 61131 block `F_UINT_TO_BYTE` and provides a uniform, unidirectional data flow via adapters. This block was developed for use in automation systems that need to transfer different data types between adapters.
@@ -37,7 +38,7 @@ The **AUI_TO_AB** function block is a composite block that converts an AUI inter
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-|-----|------|----------|-----------|
+| ----- | ------ | ---------- | ----------- |
 | `adapter::types::unidirectional::AUI` | `AUI_IN` | Socket | UINT adapter input |
 | `adapter::types::unidirectional::AB` | `AB_OUT` | Plug | BYTE Adapter Output |
 

@@ -3,6 +3,7 @@
 ![Uebung_004b4d_AX_network](./Uebung_004b4d_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements three mutually interlocked toggle flip-flops connected in a chain via an AE2 adapter. The function block `ILOCK_T_FF_AX` allows a single click to toggle one output. This automatically resets all other outputs (interlocking). The chain ensures that only one output can be active at a time.
@@ -21,9 +22,11 @@ No sub-blocks are defined within this sub-app. All FB types used are from the li
 ## Program Flow and Connections
 
 1. **Event Chaining**
+
 - The three buttons (`DigitalInput_CLK_I1`, `I2`, `I3`) generate an event `IND` upon single-click.
 - This event is forwarded directly to the CLK input of the corresponding `ILOCK_T_FF_AX`.
-2. **Adapter Connections (Locking Chain)**
+1. **Adapter Connections (Locking Chain)**
+
 - `ILOCK_T_FF_AX1.ILOCK_OUT` → `ILOCK_T_FF_AX2.ILOCK_IN`
 - `ILOCK_T_FF_AX2.ILOCK_OUT` → `ILOCK_T_FF_AX3.ILOCK_IN`
 - This creates a cascade: If FB1 becomes active, it locks FB2; if FB2 becomes active, it locks FB3. A subsequent FB can only become active if the preceding one is inactive.
@@ -32,7 +35,8 @@ No sub-blocks are defined within this sub-app. All FB types used are from the li
 
 - Each `ILOCK_T_FF_AX` has an output adapter `Q`, which is connected to the corresponding digital output (`DigitalOutput_Q1`…`Q3`).
 - The outputs indicate the state of the active flip-flop.
-4. **Operation**
+1. **Operation**
+
 - Pressing button I1, I2, or I3 toggles the respective flip-flop.
 - When a flip-flop becomes active, all subsequent flip-flops in the chain are reset.
 - A previously active flip-flop remains active only as long as no upstream flip-flop is toggled.

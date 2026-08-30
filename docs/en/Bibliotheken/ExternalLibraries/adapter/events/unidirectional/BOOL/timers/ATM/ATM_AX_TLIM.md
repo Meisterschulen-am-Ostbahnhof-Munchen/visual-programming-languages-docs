@@ -3,9 +3,11 @@
 ![ATM_AX_TLIM](./ATM_AX_TLIM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_AX_TLIM** is a standardized time monitoring module (timer) with a special adapter interface. It implements time limiting (timeout) for Boolean input signals. The module communicates via adapters instead of individual event and data ports, enabling flexible and encapsulated integration into industrial control systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ Similarly, there are no direct data outputs. The result (Boolean value Q) is out
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|-------------|--------|-----------|--------------------------------------|
+| ------------- | -------- | ----------- | -------------------------------------- |
 | IN | AX | Input | Boolean Input (Adapter) |
 | PT | ATM | Input | Time Limit (Adapter) |
 | Q | AX | Output | Boolean Output (Adapter) |
@@ -43,7 +45,7 @@ The function block internally uses the standard function block **E_TLIM** and wr
 3. **Timeout**: If `IN` remains active longer than `PT`, `Q` is reset to **FALSE** (timeout).
 4. **Premature Termination**: If `IN` becomes **FALSE** before the time expires, the function block `Q` is immediately reset (also to **FALSE**).
 5. **Setting the Time Limit**: The event input **EIPT** allows you to specify the value of **PT** without triggering a new event. This is used to configure the time limit before the actual use.
-4. **Premature Termination**: The output adapter **Q** outputs an event on its `E1` port as soon as `Q` changes (rising or falling edge).
+6. **Premature Termination**: The output adapter **Q** outputs an event on its `E1` port as soon as `Q` changes (rising or falling edge).
 
 ## Technical Features
 
@@ -57,7 +59,7 @@ The function block internally uses the standard function block **E_TLIM** and wr
 The function block (FB) implicitly cycles through the following states:
 
 | State | Description |
-|------------|--------------------------------------------------------------|
+| ------------ | -------------------------------------------------------------- |
 | **Idle** | IN = FALSE, Q = FALSE, Timer is not running. |
 | **Timing** | IN = TRUE, Q = TRUE, Timer is running. |
 | **Timeout** | IN = TRUE, Timer expires, Q = FALSE (remains until IN = FALSE). |

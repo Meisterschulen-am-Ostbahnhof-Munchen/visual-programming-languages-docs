@@ -3,6 +3,7 @@
 ![Uebung_203_AX_network](./Uebung_203_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines **Interlock-Funktionsbausteins mit Prioritätsumschaltung** (ILOCK_SWITCH_AX). Zwei digitale Eingänge (Input_I1, Input_I2) steuern über einen Adapter-basierten Interlock-Baustein zwei digitale Ausgänge (Output_Q1, Output_Q2). Der Interlock sorgt dafür, dass immer nur ein Ausgang aktiv sein kann – bei gleichzeitigen Eingangssignalen setzt sich ein definierter Prioritätsmechanismus durch. Die Kommunikation mit der Peripherie erfolgt über logiBUS-Adapterschnittstellen.

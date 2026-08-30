@@ -4,9 +4,11 @@
 ![ST08X_TO_ARR08X](./ST08X_TO_ARR08X.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block (FB) is used to convert a specific structure of type `ST08X`, which contains eight individual BOOL values, into an array of eight BOOL values. It enables seamless adaptation of the data representation in automation applications.
+
 ## Interface Structure
 
 ### **Event Inputs**

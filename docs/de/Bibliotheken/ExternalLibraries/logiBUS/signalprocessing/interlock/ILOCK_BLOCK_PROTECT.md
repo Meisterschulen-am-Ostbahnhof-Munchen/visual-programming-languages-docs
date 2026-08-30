@@ -3,6 +3,7 @@
 ![ILOCK_BLOCK_PROTECT](./ILOCK_BLOCK_PROTECT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ILOCK_BLOCK_PROTECT` realisiert eine interlock-geschützte Richtungssteuerung mit einstellbarer Totzeit. Sobald ein aktiver Eingang (z. B. `EI_UP` mit `DI_UP = TRUE`) erkannt wird, wird dieser priorisiert und alle gegensätzlichen Signale werden solange ignoriert, bis der aktive Eingang zurückgesetzt wird. Nach dem Rücksetzen läuft eine konfigurierbare Schutzzeit (`DT_PROTECT`) ab, bevor eine neue Richtung aktiviert werden kann. Dadurch werden unerwünschte Richtungswechsel oder Kurzschlusszustände sicher verhindert.
@@ -97,7 +98,7 @@ Der Baustein arbeitet nach dem Prinzip der **ersten Priorität**:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | **SR-Flipflop** | Einfache Set/Reset-Logik, keine Totzeit, kein Schutz gegen gleichzeitige Signale |
 | **ILOCK_BLOCK_PROTECT** | Priorisierung des ersten aktiven Eingangs, Totzeit nach jedem Richtungswechsel, beide Ausgänge nie gleichzeitig `TRUE` |
 | **Interlock-Baustein ohne Timer** | Nur Sperrlogik, sofortige Umschaltung möglich, keine Schutzzeit |

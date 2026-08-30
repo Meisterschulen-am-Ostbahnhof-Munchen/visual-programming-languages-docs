@@ -4,9 +4,11 @@
 ![ST08X_TO_BOOLS](./ST08X_TO_BOOLS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block extracts eight individual BOOL values from a single input structure of type `ST08X`. It allows for the easy decomposition of a bundled 8-BOOL structure into its individual components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -50,7 +52,8 @@ As soon as an event is received at input `REQ`, the function block directly assi
 
 This function block is stateless. It does not store any internal data between calls, and its output depends solely on the current input values. Each execution is independent of previous executions.
 
-*
+-
+
 ## Application Scenarios
 
 - **Decomposition of Combined Signals:** Ideal for splitting a logically grouped 8-bit structure into its individual, independent BOOL signals.

@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_MUL_2` ist ein generischer arithmetischer Funktionsbaustein für die 4diac-IDE, der der Norm IEC 61131-3 entspricht. Seine Hauptaufgabe ist die Multiplikation von zwei Eingangswerten, die über unidirektionale Adapter bereitgestellt werden. Das Ergebnis dieser Multiplikation wird ebenfalls über einen unidirektionalen Adapter ausgegeben.
@@ -59,6 +60,7 @@ Sobald über die Eingangs-Adapter (`IN1` und/oder `IN2`) ein Aktualisierungserei
 ## Zustandsübersicht
 
 Der Baustein verhält sich im Wesentlichen zustandslos (analogen Charakter aufweisend):
+
 - **Initialisierung / Ruhezustand:** Der Baustein wartet auf eingehende Werte über die Adapter `IN1` und `IN2`.
 - **Berechnung:** Bei Eintreffen eines neuen Wertes oder Triggersignals an den Sockets wird das Produkt neu berechnet.
 - **Ausgabe:** Das Ergebnis wird unmittelbar an den Plug `OUT` übergeben und ein entsprechendes Ausgangsereignis im Adapter getriggert.

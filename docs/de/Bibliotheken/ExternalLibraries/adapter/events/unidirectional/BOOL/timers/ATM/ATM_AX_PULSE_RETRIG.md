@@ -3,6 +3,7 @@
 ![ATM_AX_PULSE_RETRIG](./ATM_AX_PULSE_RETRIG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ATM_AX_PULSE_RETRIG** erzeugt einen Impuls (Puls) definierter Dauer an seinem Ausgang. Er ist als retriggerbare Version ausgelegt, d.h. ein erneuter Startbefehl während eines laufenden Impulses setzt die Impulsdauer zurück. Die Steuerung und Parameterübergabe erfolgt ausschließlich über zwei standardisierte Adapter-Schnittstellen (ATM / AX), sodass der Baustein ohne direkte Daten-Ein-/Ausgänge auskommt.

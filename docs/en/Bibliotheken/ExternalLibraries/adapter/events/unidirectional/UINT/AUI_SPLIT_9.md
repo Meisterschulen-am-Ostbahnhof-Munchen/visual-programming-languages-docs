@@ -4,6 +4,7 @@
 ![AUI_SPLIT_9](./AUI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_SPLIT_9** serves as a generic splitter for unidirectional AUI adapter connections. It receives an incoming AUI signal via socket `IN` and distributes it identically to nine separate output plugs (`OUT1` to `OUT9`). The block is typed as a generic function block (`GEN_AUI_SPLIT`) and can be used in various automation environments where an AUI signal needs to be passed on to multiple downstream components.

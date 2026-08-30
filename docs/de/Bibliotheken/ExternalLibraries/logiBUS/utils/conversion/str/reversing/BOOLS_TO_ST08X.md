@@ -5,6 +5,7 @@
 ![BOOLS_TO_ST08X](./BOOLS_TO_ST08X.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Funktionsblock (FB) dient dazu, acht einzelne BOOL-Werte zu einer Struktur vom Typ `ST08X` zusammenzufassen. Er ermöglicht eine übersichtliche Gruppierung und Weitergabe von acht binären Informationen als eine einzige strukturierte Variable.

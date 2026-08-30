@@ -3,6 +3,7 @@
 ![CLIENT_8_0](CLIENT_8_0.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `CLIENT_8_0`-Funktionsblock ist die generische Client-Variante mit 8 Sende- und 0 Empfangsdatenfeldern für die Kommunikation mit einem passenden [SERVER_0_8](SERVER_0_8.md)-Block. Er überträgt 8 Datenwerte (`SD_1` `SD_2` `SD_3` `SD_4` `SD_5` `SD_6` `SD_7` `SD_8`) an den Server, ohne Rückgabedaten zu empfangen. Wie alle `CLIENT_*`-Bausteine basiert er auf der generischen `GEN_CLIENT`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

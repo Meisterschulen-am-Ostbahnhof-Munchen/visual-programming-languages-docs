@@ -1,9 +1,11 @@
 # EMB_RES
 
 * * * * * * * * * *
+
 ## Introduction
 
 A basic embedded resource for executing function block networks. By default, it includes an E_RESTART function block for start/stop events.
+
 ## Metadata
 
 | Attribute | Value |

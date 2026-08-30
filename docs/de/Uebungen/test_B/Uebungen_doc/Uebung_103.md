@@ -8,7 +8,7 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals zu ei
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Haupt-Funktionsbausteine:
+### Haupt-Funktionsbausteine
 
 - **DigitalInput_I1** (logiBUS_IXA): Liest digitale Eingangssignale von Input_I1
 - **DigitalOutput_Q1** (logiBUS_QXA): Schreibt digitale Ausgangssignale zu Output_Q1
@@ -18,7 +18,7 @@ Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals zu ei
 - **C1** (F_DWORD_TO_UDINT): Konvertiert DWORD zu UDINT
 - **C2** (F_UDINT_TO_UINT): Konvertiert UDINT zu UINT
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### Sub-Baustein: rastend
 

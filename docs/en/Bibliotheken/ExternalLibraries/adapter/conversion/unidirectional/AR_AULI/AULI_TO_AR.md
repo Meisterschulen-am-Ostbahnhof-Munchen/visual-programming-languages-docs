@@ -3,10 +3,12 @@
 ![AULI_TO_AR](./AULI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_TO_AR** serves as a converting composite block that transforms an **AULI** adapter (ULINT) into an **AR** adapter (REAL).
 It enables the easy integration of components that work with different data types and provides type conversion via standardized adapter interfaces.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs, but communicates exclusively via two adapter interfaces.
@@ -30,7 +32,7 @@ The function block has no direct event or data inputs/outputs, but communicates 
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|--------|----------|--------------------------------------------------|-------------------------------|
+| -------- | ---------- | -------------------------------------------------- | ------------------------------- |
 | AULI_IN | Socket | `adapter::types::unidirectional::AULI` (ULINT) | Input Value |
 | AR_OUT | Plug | `adapter::types::unidirectional::AR` (REAL) | Output Value (Converted) |
 

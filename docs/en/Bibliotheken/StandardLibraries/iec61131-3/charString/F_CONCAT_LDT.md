@@ -3,6 +3,7 @@
 ![F_CONCAT_LDT](F_CONCAT_LDT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_CONCAT_LDT` combines individual date/time components (`YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) into a composite `LDATE_AND_TIME` value. It is the reverse of [F_SPLIT_LDT](F_SPLIT_LDT.md), which splits the same `LDATE_AND_TIME` value back into its individual components.

@@ -3,6 +3,7 @@
 ![Uebung_012g_network](./Uebung_012g_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung veranschaulicht die Verwendung eines physischen numerischen Eingangs (`NumericValue_PHYS`) in Verbindung mit einer persistenten Speicherung über das INI-Dateiformat. Ziel ist es, einen eingegebenen numerischen Wert (z. B. von einem Sensor oder einer Benutzereingabe) einmalig zu speichern und bei Bedarf wieder auszulesen. Die Übung vermittelt grundlegende Konzepte der Ereignissteuerung, Datenflussverkettung und nichtflüchtigen Datenspeicherung in 4diac.

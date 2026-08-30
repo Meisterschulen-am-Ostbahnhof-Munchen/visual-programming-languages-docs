@@ -3,9 +3,11 @@
 ![ATM_AX_TONOF](./ATM_AX_TONOF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_AX_TONOF** implements a combined on/off delay timer. It is designed as a standard timer module according to IEC 61499 and uses only adapter interfaces for communication. This allows it to be flexibly integrated into various communication structures. The module processes a Boolean input signal and outputs the delayed signal – both the on delay (ON-Delay) and the off delay (OFF-Delay) are configured via separate adapters.
+
 ## Interface Structure
 
 ### Event Inputs
@@ -29,7 +31,7 @@ There are also no dedicated connections for data outputs. The current output sta
 ### Adapters
 
 | Name | Direction | Type | Description |
-|--------|----------|------------------|------------------------------------------------------------------------------------------------------|
+| -------- | ---------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
 | IN | Socket | AX (unidirectional) | Input adapter that triggers execution via its event E1 and provides the Boolean input value via its data D1. |
 | PT_ON | Socket | ATM (unidirectional) | Adapter for the power-on delay time (TIME). The value is provided via D1. |
 | PT_OFF | Socket | ATM (unidirectional) | Adapter for the power-off delay time (TIME). The value is provided via D1. |
@@ -75,6 +77,7 @@ The internal timer **E_TONOF** cycles through the following states:
 - **E_TONOF**: Combines both delays in one function block. The **ATM_AX_TONOF** extends this concept with an adapter interface, thus simplifying integration with other adapter-based components. It offers the same functionality but with increased flexibility in system integration.
 
 **E_TONOF**: Combines both delays in one function block.
+
 ## Conclusion
 
 The **ATM_AX_TONOF** is a powerful timer function block for delayed on/off switching operations. Its adapter-based interface allows it to be seamlessly integrated into modular automation solutions while remaining fully compliant with the IEC 61499 standard. Combining ON delay and OFF delay in a single block reduces wiring effort and simplifies application development. Thanks to its separate reset input and robust internal implementation, it is suitable for a wide range of industrial applications.

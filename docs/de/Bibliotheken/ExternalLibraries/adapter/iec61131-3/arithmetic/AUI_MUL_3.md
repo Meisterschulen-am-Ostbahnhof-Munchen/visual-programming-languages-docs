@@ -64,6 +64,7 @@ Da der Baustein als generisch (`GEN_AUI_MUL`) deklariert ist, passt er sich flex
 ## Zustandsübersicht
 
 Der Baustein arbeitet rein ereignisgesteuert:
+
 1. **Wartezustand:** Der Baustein wartet auf ein Trigger-Ereignis an einem der Sockets (`IN1`, `IN2`, `IN3`).
 2. **Berechnung:** Nach dem Eintreffen eines Ereignisses werden die Daten ausgelesen und multipliziert.
 3. **Ausgabe:** Das Ergebnis wird an den Plug `OUT` angelegt, das Sende-Ereignis des Plugs wird ausgelöst, und der Baustein kehrt in den Wartezustand zurück.
@@ -81,6 +82,7 @@ Der Baustein arbeitet rein ereignisgesteuert:
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen, nicht-generischen IEC 61131-3 `MUL`-Standardbaustein bietet der `AUI_MUL_3`:
+
 - **Weniger Kaskadierung:** Standard-Multiplizierer besitzen oft nur zwei Eingänge. Um drei Werte zu multiplizieren, müssten zwei Bausteine kaskadiert werden. `AUI_MUL_3` erledigt dies in einem Schritt.
 - **Bessere Übersicht:** Während klassische Bausteine getrennte Event- und Datenleitungen benötigen, vereinfacht das hier genutzte Adapterkonzept das visuelle Applikationsdesign in der 4diac-IDE erheblich.
 

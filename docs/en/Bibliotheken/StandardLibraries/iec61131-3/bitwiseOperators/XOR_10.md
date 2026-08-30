@@ -36,10 +36,12 @@ Upon receiving the REQ event, the function block calculates a bitwise XOR operat
 - All inputs must have the same data type
 - Unused inputs are treated as 0
 - Part of the `iec61131::bitwiseOperators` package
+
 1. **Wait State**: Waits for REQ event
 2. **Compute State**: Performs XOR operation
 3. **Output State**: Sends result and CNF event
 4. Returns to Wait State
+
 - Bitwise encryption operations
 - Parity checks
 - Error detection in digital systems
@@ -50,6 +52,7 @@ Upon receiving the REQ event, the function block calculates a bitwise XOR operat
 - Generic implementation as opposed to type-specific blocks (e.g., XOR_BOOL, XOR_WORD)
 
 The XOR_10 function block provides a flexible solution for complex bitwise XOR operations in IEC 61131-3-based control systems. Its generic nature and support for up to 10 inputs make it particularly suitable for applications requiring more than the traditional two inputs.
+
 ## Functionality
 
 ## Technical Features

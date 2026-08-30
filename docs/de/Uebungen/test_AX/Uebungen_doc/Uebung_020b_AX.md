@@ -22,7 +22,7 @@ Das Ziel dieser Übung ist es, das Verständnis für die zeitliche Steuerung von
 
   - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Signaleingang.
   - **`AX_SWITCH`**: [cite_start]Leitet das Ereignis bei steigender Flanke an `EO1` und bei fallender Flanke an `EO0` weiter[cite: 1].
-  - **`E_DELAY`**: [cite_start]Verzögert ein am `START`-Eingang eintreffendes Ereignis um die Zeit `DT` (hier 2 Sekunden)[cite: 1].
+  - **`E_DELAY`**: [cite_start]Verzögert ein am `START`-Eingang eintreffendes Ereignis um die Zeit `DT` [hier 2 Sekunden](cite: 1).
   - **`AX_RS`**: Der Ergebnisspeicher.
   - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
 

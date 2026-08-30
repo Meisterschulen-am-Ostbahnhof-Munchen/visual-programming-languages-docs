@@ -52,9 +52,9 @@ The `NVS` block simultaneously generates an event at output `GETO`, which is con
 1. As soon as the value of `InputString_S1` is changed externally (e.g., via an operator terminal), `StringValue_IS` generates an event at `IND`.
 2. This event is connected to the `SET` input of the `NVS` module.
 
-### ...##
+### ... ##
 
-4. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
+1. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
 
 `NVS``.
 

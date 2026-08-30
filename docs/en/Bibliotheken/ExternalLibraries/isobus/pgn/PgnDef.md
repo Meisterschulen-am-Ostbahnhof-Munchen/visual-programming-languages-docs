@@ -3,9 +3,11 @@
 ![PgnDef](./PgnDef.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 PgnDef` is a collection of global constants for the 4diac IDE that defines Parameter Group Numbers (PGNs) for ISOBUS and NMEA 2000 communication protocols. These constants represent numeric identifiers for specific message types used in agricultural and maritime vehicle networking. The collection serves as a central reference library for accessing standardized PGNs in IEC 61499 applications, thus improving code readability and maintainability.
+
 ## Interface Structure
 
 PgnDef` is a `GlobalConstants` element and therefore does not have event- or data-flow-based interfaces in the conventional sense of a function block. Instead, it provides a collection of constants that can be declared and used in other function blocks or programs.

@@ -3,6 +3,7 @@
 ![AL_XOR_5](./AL_XOR_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AL_XOR_5** is a generic function block for the bitwise XOR (exclusive OR) operation across 5 input values of type `LWORD` (64-bit bit pattern (long word)). Unlike the Boolean operation on single truth values (as in the `AX_XOR` blocks), every bit of the data word is combined independently here.

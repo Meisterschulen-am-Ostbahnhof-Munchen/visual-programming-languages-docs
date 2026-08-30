@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_NS_TO_ULINT` converts a `TIME` value in nanoseconds to a `ULINT` value. This conversion is particularly useful when time values are needed in numerical calculations or for further processing steps.
 ![F_TIME_IN_NS_TO_ULINT](F_TIME_IN_NS_TO_ULINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

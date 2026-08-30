@@ -3,9 +3,11 @@
 ![INI_AS](./INI_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **INI_AS** is used to load and save SINT data from a `settings.ini` file. It accesses a configuration value via a section name (`SECTION`) and a key (`KEY`). The value can be both read and written via the adapter interface `AS`. The block encapsulates the internal `INI` function block and extends it with a standardized adapter interface.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **INI_AS** is used to load and save SINT data from a `setting
 ### **Data Inputs**
 
 | Name | Data Type | Description |
-|---------------|----------|--------------|
+| --------------- | ---------- | -------------- |
 | `QI` | BOOL | Input qualifier (e.g., enable). |
 | `SECTION` | STRING | Name of the section in the INI file. |
 | `KEY` | STRING | Name of the key within the section. |
@@ -39,7 +41,7 @@ The function block **INI_AS** is used to load and save SINT data from a `setting
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|---------------------|----------|--------------|
+| ------------- | --------------------- | ---------- | -------------- |
 | `AS_IN` | `adapter::types::unidirectional::AS` | Input (Socket) | Receives a new value to be stored (SET operation). |
 | `AS_OUT` | `adapter::types::unidirectional::AS` | Output (Plug) | Outputs the currently read or stored value (GET operation). |
 
@@ -51,7 +53,7 @@ The parameters `SECTION`, `KEY`, and `DEFAULT_VALUE` are passed via the `INI` ev
 
 Subsequently (possibly within the same cycle), a `GET` event is automatically executed on the `INI` block, so that the read value is immediately available at the adapter.
 
-2. **Writing a Value (via the Adapter Input)**
+1. **Writing a Value (via the Adapter Input)**
 
 A new value (event `E1` and data `D1`) can be sent to the block via the socket `AS_IN`. This event is forwarded to the `SET` input of the internal `INI` block, which saves the value to the INI file. After successful saving, the `SETO` event of the `INI` block is triggered, which in turn serves the adapter output `AS_OUT` (event `E1`) and outputs the saved value via `D1`.
 

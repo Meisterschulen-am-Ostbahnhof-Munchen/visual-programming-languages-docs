@@ -1,4 +1,4 @@
-# Uebung_001c3: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
+# Uebung_001c3: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot
 
 ![Uebung_001c3_network](./Uebung_001c3_network.svg)
 

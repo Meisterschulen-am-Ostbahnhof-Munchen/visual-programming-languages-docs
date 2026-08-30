@@ -3,6 +3,7 @@
 <img width="1018" height="208" alt="DualHysteresis" src="https://github.com/user-attachments/assets/35798c6a-73cc-4b4d-b1ce-f9635b8f4546" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der DualHysteresis-Funktionsblock ermöglicht eine bidirektionale Umwandlung von analogen zu digitalen Signalen unter Verwendung einer Hysterese. Er ist besonders nützlich in Steuerungsanwendungen, wo eine zuverlässige Schaltpunktumsetzung mit Totband und Hysterese benötigt wird.

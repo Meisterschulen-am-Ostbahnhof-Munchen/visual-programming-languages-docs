@@ -38,7 +38,7 @@ The `AND_2_BOOL` block functions deterministically and follows classic Boolean l
 The operation can be described by the following truth table:
 
 | IN1 | IN2 | OUT (IN1 AND IN2) |
-|:---:|:---:|:-----------------:|
+| :---: | :---: | :-----------------: |
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |

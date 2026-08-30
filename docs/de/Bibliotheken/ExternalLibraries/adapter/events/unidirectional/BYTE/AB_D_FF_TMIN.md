@@ -3,6 +3,7 @@
 ![AB_D_FF_TMIN](./AB_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AB_D_FF_TMIN** ist ein Adapter-basierter Funktionsbaustein (FB) nach IEC 61499, der die Funktionalität eines Data-Latch (D-Flipflop) mit einer minimalen Zeitbedingung zwischen aufeinanderfolgenden Ausgangsereignissen realisiert. Er dient dazu, einen digitalen Datenwert von einem Adapter-Socket (Eingang) auf einen Adapter-Plug (Ausgang) zu übertragen und dabei sicherzustellen, dass die Ausgangsereignisse (EO) nicht schneller als durch einen konfigurierten Zeitparameter `Tmin` erlaubt auftreten. Der Baustein abstrahiert die reine D-Flipflop-Logik durch die Nutzung eines internen Flipflop-Bausteins und kapselt Daten und Ereignisse in Adapter-Schnittstellen.

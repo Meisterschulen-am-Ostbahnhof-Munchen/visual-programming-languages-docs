@@ -1,9 +1,11 @@
 # Exercise_012f_AR: Numeric Value Input PHYS and Storage in Non-Volatile Memory (NVS) with Subapp (AR Adapter)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise deals with reading a numeric value (physical quantity) and storing it in non-volatile memory (NVS) using an AR adapter. The subapp serves as a building block for applications that need to read a value once and store it permanently.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Block: `Uebung_012f_sub_AR`

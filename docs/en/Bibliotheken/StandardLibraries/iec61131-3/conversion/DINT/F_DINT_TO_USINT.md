@@ -29,8 +29,10 @@ When the event input `REQ` is triggered, the algorithm is executed. This algorit
 
 - The conversion is performed by the built-in function `DINT_TO_USINT`.
 - Please note that data loss may occur during the conversion from `DINT` to `USINT`, as the value range of `USINT` (0 to 255) is smaller than that of `DINT` (-2,147,483,648 to 2,147,483,647).
+
 1. **Idle State**: The function block is waiting for the event `REQ`.
 2. **Active State**: Upon receiving `REQ`, the conversion is performed and `CNF` is triggered.
+
 - Data conversion in control systems when different data types are used.
 - Reduction of memory usage when only small unsigned values are required.
 - Interface adaptation between different system components.

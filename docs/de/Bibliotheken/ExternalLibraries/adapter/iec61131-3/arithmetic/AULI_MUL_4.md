@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_MUL_4` ist ein generischer arithmetischer Baustein für die 4diac-ide. Er dient zur Multiplikation von vier Eingangswerten. Der Baustein nutzt ein adapterbasiertes Schnittstellenkonzept, um die Anzahl der einzelnen Event- und Datenverbindungen im Applikationsdiagramm zu minimieren und eine saubere Kapselung zu gewährleisten.

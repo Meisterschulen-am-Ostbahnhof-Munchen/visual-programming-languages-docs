@@ -13,16 +13,16 @@ Der Funktionsblock **FIELDBUS_BYTE_TO_SIGNAL_SCALED** dient der Umsetzung eines 
 ### **Ereignis-Eingänge**
 
 | Event | Typ | Beschreibung | Mitgeführte Daten |
-|-------|-----|-------------|-------------------|
+| ------- | ----- | ------------- | ------------------- |
 | `INIT` | EInit | Initialisierungsanforderung; setzt Skalierung und Offset | `SCALE`, `OFFSET` |
-| `REQ`  | Event | Normale Verarbeitungsanforderung; wertet den Eingang `IN` aus | `IN` |
+| `REQ` | Event | Normale Verarbeitungsanforderung; wertet den Eingang `IN` aus | `IN` |
 
 ### **Ereignis-Ausgänge**
 
 | Event | Typ | Beschreibung | Mitgeführte Daten |
-|-------|-----|-------------|-------------------|
+| ------- | ----- | ------------- | ------------------- |
 | `INITO` | EInit | Bestätigung der Initialisierung | – |
-| `CNF`   | Event | Bestätigung der Verarbeitung; liefert skalierten Wert und Gültigkeit | `OUT`, `VALID` |
+| `CNF` | Event | Bestätigung der Verarbeitung; liefert skalierten Wert und Gültigkeit | `OUT`, `VALID` |
 
 ### **Daten-Eingänge**
 

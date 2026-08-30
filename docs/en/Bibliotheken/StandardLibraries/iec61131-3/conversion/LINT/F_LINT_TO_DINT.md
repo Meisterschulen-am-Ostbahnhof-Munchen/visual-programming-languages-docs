@@ -6,6 +6,7 @@
 
 The function block `F_LINT_TO_DINT` converts a 64-bit integer value (LINT) to a 32-bit integer value (DINT). This conversion is useful when data needs to be exchanged between systems with different word widths or when memory space needs to be optimized.
 ![F_LINT_TO_DINT](F_LINT_TO_DINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![SPLIT_AB_INTO_AX](./SPLIT_AB_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AB_INTO_AX** dient dazu, ein Byte, das über einen unidirektionalen AB-Adapter empfangen wird, in seine acht einzelnen Bits aufzuspalten und diese über jeweils separate AX-Adapter bereitzustellen. Dabei erfolgt eine taktgesteuerte Übernahme der Bits mittels D-Flipflops, sodass die Ausgangswerte stabil bleiben, bis ein neues Byte verarbeitet wird.

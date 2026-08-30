@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_ADD_2` ist ein generischer arithmetischer Baustein zur Durchführung einer Addition (ADD) auf Basis des Standards IEC 61131-3. Er ist als Standard-Arithmetikfunktion klassifiziert und dient dazu, zwei Eingangswerte über eine Adapter-Schnittstelle zu addieren und das Ergebnis auszugeben.

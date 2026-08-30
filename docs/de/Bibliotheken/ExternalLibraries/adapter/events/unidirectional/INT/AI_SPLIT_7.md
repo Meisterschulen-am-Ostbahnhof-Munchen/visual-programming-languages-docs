@@ -3,6 +3,7 @@
 ![AI_SPLIT_7](./AI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_SPLIT_7** dient dazu, einen einzelnen analogen Eingang (AI) auf sieben identische analoge Ausgänge zu verteilen. Es handelt sich um einen generischen Baustein, der den eingehenden analogen Wert unverändert an alle sieben Ausgangsadapter weitergibt. Dadurch lassen sich mehrere Verbraucher aus einer Signalquelle versorgen, ohne das Signal mehrfach erfassen oder duplizieren zu müssen.

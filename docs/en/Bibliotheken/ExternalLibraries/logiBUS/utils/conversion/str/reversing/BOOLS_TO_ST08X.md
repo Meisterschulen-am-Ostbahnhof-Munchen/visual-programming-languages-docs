@@ -5,6 +5,7 @@
 
 * * * * * * * * * *
 This function block (FB) is used to combine eight individual BOOL values into a structure of type `ST08X`. It enables the clear grouping and transfer of eight binary pieces of information as a single structured variable.
+
 - **REQ** (Event): This event triggers the conversion and assignment of the input values to the output. All data inputs are connected to this event and are read upon its arrival.
 - **CNF** (Event): This confirmation event is triggered after the conversion is successfully completed and the output `OUT` has been updated. The data output `OUT` is associated with this event.
 - **IN_00** (BOOL): The value for bit 0 of the output structure.

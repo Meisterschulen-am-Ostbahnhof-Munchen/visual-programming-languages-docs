@@ -1,8 +1,9 @@
 # Exercise_034b: LONG_PRESS_HOLD Input to PWM Output with Terminal Output
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_034b`. Here, the PWM power is controlled via button interactions ("accelerating").
+This article describes the logiBUS® exercise `Uebung_034b`. Here, the PWM power is controlled via button interactions ("accelerating")
 ----
+
 ## Objective of the Exercise
 
 Combining repeating events (`HOLD`) and counters to control a PWM stage. The user can increase or decrease the power in steps by holding down a button.
@@ -30,7 +31,7 @@ Combining repeating events (`HOLD`) and counters to control a PWM stage. The use
 1. **Increase**: The operator holds down **I1**. The counter increments by one step every 200 ms. The lamp at `Q1` gradually brightens.
 2. **Decrease**: The operator holds down **I2**. The lamp gradually dims.
 3. **Quick Select**: Button **I3** (Stop) immediately resets the value to
-0. Button **I4** (Full) immediately loads the counter to its maximum.
+4. Button **I4** (Full) immediately loads the counter to its maximum.
 
 This enables very precise control of drives or lighting via simple digital buttons.
 

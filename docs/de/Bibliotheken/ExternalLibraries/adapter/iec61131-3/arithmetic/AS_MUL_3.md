@@ -4,6 +4,7 @@
 ![AS_MUL_3](./AS_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_MUL_3` ist ein generischer Funktionsblock (Generic FB) für die 4diac-IDE, der zur Durchführung einer arithmetischen Multiplikation mit drei Eingangswerten dient. Er basiert auf der Verwendung von unidirektionalen Adaptern (`adapter::types::unidirectional::AS`), was eine saubere Strukturierung und Kapselung von Daten und Kontrollflüssen in IEC 61499-Anwendungen ermöglicht.

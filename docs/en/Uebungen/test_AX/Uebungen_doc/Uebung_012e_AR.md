@@ -2,6 +2,7 @@
 
 * * * * * * * * * *
 This exercise demonstrates the input of a numeric value (PHYS) and its storage using a subapp that utilizes an AR adapter. The entered value is stored under a predefined key in non-volatile memory (NVS). The exercise shows how constants from a central pool (`DefaultPool_Numeric`) and NVS keys are imported and used in a subapp parameter.
+
 ## Function Blocks Used (FBs)
 
 ## Introduction

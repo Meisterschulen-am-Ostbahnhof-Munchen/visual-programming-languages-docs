@@ -3,6 +3,7 @@
 ![SPLIT_MI_DO_S_Octal_SA](./SPLIT_MI_DO_S_Octal_SA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_MI_DO_S_Octal_SA** dient dazu, einen einzelnen Datenwert vom Typ `DataPanel_MI_DO_S_Octal_SA` in acht separate Ausgänge vom Typ `DataPanel_MI_DO_S_Single_SA` aufzuteilen. Dabei wird der gemeinsame Anteil (`u8SAMember`) unverändert übernommen und die jeweiligen Port‑Informationen aus dem oktalen Eingang auf die einzelnen Ausgänge verteilt.

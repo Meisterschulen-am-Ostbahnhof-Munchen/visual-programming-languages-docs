@@ -10,6 +10,7 @@ IN4 =| [Socket]                |
 ![AI_ADD_4](./AI_ADD_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AI_ADD_4` is a generic arithmetic block for the 4diac IDE, used to add four analog or numeric values. The unique feature of this block is the use of unidirectional adapters of type `AI` (Analog Input/Arithmetic Input) instead of traditional discrete data and event inputs. This enables a clean, modular, and clear structuring of signal flows in IEC 61499 applications.

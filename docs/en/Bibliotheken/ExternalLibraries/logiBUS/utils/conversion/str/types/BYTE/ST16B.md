@@ -1,12 +1,15 @@
 # ST16B
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `ST16B` is a structured data component defined in the 4diac framework. Unlike a function block (FB), `ST16B` has no inherent logic or executable functions. Instead, it serves as a fixed container for 16 individual byte values. Its primary purpose is to provide a clearly defined structure for handling fixed-size raw data packets, which is particularly important in communication protocols or when interacting with low-level hardware interfaces.
+
 ## Interface Structure
 
 Since `ST16B` is a data type and not a function block, it does not have event or data interfaces in the conventional sense. Its "structure" refers to the definition of its internal components, i.e., the individual bytes that comprise it.
+
 ### **Event Inputs**
 
 Not applicable, as `ST16B` is a data type and not a function block, and therefore does not process events.

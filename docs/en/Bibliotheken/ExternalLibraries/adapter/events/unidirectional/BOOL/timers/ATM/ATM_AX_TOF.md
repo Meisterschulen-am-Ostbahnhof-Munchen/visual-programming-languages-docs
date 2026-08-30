@@ -3,9 +3,11 @@
 ![ATM_AX_TOF](./ATM_AX_TOF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ATM_AX_TOF` implements off-delay timing with a modular adapter interface based on the types `AX` and `ATM`. It is typically used to keep an output active for a defined period after an input signal is lost. The block is classified as a standard timer function block according to IEC 61499-2 and is implemented internally with the function block `E_TOF`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ No direct data outputs are available. The output is provided via the `Q` adapter
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|------|----------|------|--------------|
+| ------ | ---------- | ------ | -------------- |
 | IN | Socket | AX | Input adapter: Provides the Boolean trigger signal (D1: BOOL) and an event (E1) to trigger the timer function |
 | PT | Socket | ATM | Time adapter: Provides the delay time (D1: TIME) |
 | Q | Plug | AX | Output adapter: Provides the Boolean output signal (D1: BOOL) and an acknowledgment event (E1) |
@@ -56,7 +58,7 @@ The trigger is the event `IN.E1` – a new value at `IN.D1` is only applied afte
 The function block goes through the following operating states:
 
 | State | Conditions | Q.D1 | Description |
-|-----------------|-----------------------------------|-------|---------------|
+| ----------------- | ----------------------------------- | ------- | --------------- |
 | **Idle** | IN.D1 = FALSE, timer is not running | FALSE | Idle state after expiration or reset |
 | **Active** | IN.D1 = TRUE | TRUE | Input active, output immediately TRUE |
 | **Timing** | IN.D1 changes from TRUE to FALSE, timer active | TRUE | Delay phase: Output remains TRUE for the duration of the delay phase |
@@ -72,7 +74,7 @@ The function block goes through the following operating states:
 ## Comparison with Similar Function Blocks
 
 | Property | ATM_AX_TOF | E_TOF (Standard) |
-|-------------------------|------------------------------------------|--------------------------------------|
+| ------------------------- | ------------------------------------------ | -------------------------------------- |
 | Interface | Adapter (AX/ATM) | Direct Events/Data |
 | Reset Function | Yes (Event R) | Yes (Event R) |
 | Triggering | Event-driven via adapter event | Event-driven via REQ |

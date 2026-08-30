@@ -3,6 +3,7 @@
 ![Uebung_212_ALI_network](./Uebung_212_ALI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines Vorwärtszählers (CTU) nach IEC 61131-3 in der Adapter-Version (ALI_FB_CTU). Der Zähler zählt Eingangsimpulse (CU) aufwärts, kann über einen Rücksetzeingang (R) zurückgesetzt werden und gibt den aktuellen Zählerstand über eine Terminalausgabe aus. Zusätzlich wird ein Ausgangssignal (Q) gesetzt, sobald der Zählerstand den vorgegebenen Sollwert (PV) erreicht oder überschreitet.

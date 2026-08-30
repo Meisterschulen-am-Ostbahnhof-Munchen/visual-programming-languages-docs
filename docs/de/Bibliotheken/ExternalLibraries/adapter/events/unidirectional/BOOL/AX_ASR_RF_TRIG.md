@@ -71,7 +71,7 @@ Die Zustandsspeicherung erfolgt ausschließlich innerhalb des internen FB.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Flankenerkennung | Ausgangssignal | Schnittstelle |
-|----------|------------------|----------------|---------------|
+| ---------- | ------------------ | ---------------- | --------------- |
 | `E_RF_TRIG` | steigend + fallend | separate Ereignisausgänge | direkte Events |
 | `E_TRIG` | nur steigend | ein Ereignis | direkte Events |
 | `E_F_TRIG` | nur fallend | ein Ereignis | direkte Events |

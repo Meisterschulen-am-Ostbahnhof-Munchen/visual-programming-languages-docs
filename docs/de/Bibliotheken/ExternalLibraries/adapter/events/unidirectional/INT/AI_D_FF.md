@@ -58,7 +58,7 @@ Ein Ereignis an `I.E1` löst eine steigende Flanke am Takteingang des internen F
 Der interne Zustand des Flipflops wird durch den gespeicherten Wert `Q` bestimmt. Es existieren zwei stabile Zustände:
 
 | Takt (CLK) | D (Eingang) | Q (Ausgang) vorher | Q (Ausgang) nachher |
-|------------|-------------|---------------------|----------------------|
+| ------------ | ------------- | --------------------- | ---------------------- |
 | Kein Ereignis | - | Q_alt | Q_alt |
 | Ereignis (steigende Flanke) | 0 | X | 0 |
 | Ereignis (steigende Flanke) | 1 | X | 1 |

@@ -3,6 +3,7 @@
 ![Uebung_206_network](./Uebung_206_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the mutual interlocking of two toggle flip-flops. Each button (I1 and I2) controls a separate output (Q1 and Q2, respectively). The special feature is that the two flip-flops are connected via an adapter ("ILOCK"), so that only one of the two outputs can be active at any given time. When the other button is pressed, the previously active output is reset and the new output is set. This creates a simple alternating flashing circuit with mutual interlocking.
@@ -24,11 +25,11 @@ This exercise demonstrates the mutual interlocking of two toggle flip-flops. Eac
 
 Each button (I1, I2) is read via a `logiBUS_IE` function block. With each single click, the function block generates an event at output `IND`.
 
-2. **Toggle Flip-Flops**
+1. **Toggle Flip-Flops**
 
 The event from `DigitalInput_CLK_I1` is connected to input `CLK` of `ILOCK_T_FF_1`. Similarly, `DigitalInput_CLK_I2` is connected to `ILOCK_T_FF_2`. With each event, the output `Q` of the corresponding flip-flop toggles its state.
 
-3. **Mutual Interlock**
+1. **Mutual Interlock**
 
 The adapter output `ILOCK_OUT` of `ILOCK_T_FF_1` is connected to the adapter input `ILOCK_IN` of `ILOCK_T_FF_2` (bidirectional chain). This means that as soon as `ILOCK_T_FF_1` is set, the other module is reset. Simultaneously, the reverse is also achieved via this connection: If `ILOCK_T_FF_2` is set, `ILOCK_T_FF_1` is reset. Therefore, only one of the two outputs can have the value `TRUE` (i.e., be "active") at any given time.
 

@@ -3,6 +3,7 @@
 ![Q_BackgroundColour_AUS](./Q_BackgroundColour_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **Q_BackgroundColour_AUS** dient zum Ändern der Hintergrundfarbe eines Objekts im ISOBUS Virtual Terminal (VT). Er kapselt die entsprechende Kommando-Schnittstelle gemäß ISO 11783-6 (Part 6 – F.20).

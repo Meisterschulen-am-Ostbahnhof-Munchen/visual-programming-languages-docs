@@ -3,6 +3,7 @@
 ![sequence_ET_05_AX_ecc](./sequence_ET_05_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `sequence_ET_05_AX` ist eine Variante des `sequence_ET_05`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine Sequenz mit 5 Ausgabezuständen.

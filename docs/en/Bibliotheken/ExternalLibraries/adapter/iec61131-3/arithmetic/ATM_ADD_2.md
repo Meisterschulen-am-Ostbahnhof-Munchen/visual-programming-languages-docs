@@ -3,9 +3,11 @@
 ![ATM_ADD_2](./ATM_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_ADD_2** is used to calculate the arithmetic addition of two time values (type `TIME`). It is designed as a generic function block and implements the basic arithmetic operation via adapter interfaces. The block is platform-independent and complies with the IEC 61499 standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapters**
 
 | Name | Direction | Type | Comment |
-|-------------|----------|-----|-----------|
+| ------------- | ---------- | ----- | ----------- |
 | `IN1` | Socket | `adapter::types::unidirectional::ATM` | ADD input 1 |
 | `IN2` | Socket | `adapter::types::unidirectional::ATM` | ADD input 2 |
 | `OUT` | Plug | `adapter::types::unidirectional::ATM` | ADD result |

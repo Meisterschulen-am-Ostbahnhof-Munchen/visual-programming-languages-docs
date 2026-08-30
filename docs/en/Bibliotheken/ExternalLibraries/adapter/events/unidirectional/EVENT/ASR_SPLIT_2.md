@@ -3,9 +3,11 @@
 ![ASR_SPLIT_2](./ASR_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_SPLIT_2** splits an incoming unidirectional ASR (Application Service Request) adapter into two identical output adapters. It is designed as a generic function block and allows an ASR signal to be forwarded to two separate consumers or subsequent function blocks without changing the logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::ASR` | Input (Socket) | **IN** | Incoming ASR signal |
 | `adapter::types::unidirectional::ASR` | Output (Plug) | **OUT1** | First outgoing ASR path |
 | `adapter::types::unidirectional::ASR` | Output (Plug) | **OUT2** | Second outgoing ASR path |

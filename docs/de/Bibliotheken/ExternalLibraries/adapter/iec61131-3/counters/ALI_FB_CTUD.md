@@ -3,6 +3,7 @@
 ![ALI_FB_CTUD](./ALI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_FB_CTUD** realisiert einen Auf-/Abwärtszähler (Up-Down Counter) mit einem Wertebereich des Typs **LINT** (64‑Bit‑Ganzzahl). Er ist speziell für die Verwendung mit **ALI-Adaptern** ausgelegt und kapselt einen standardkonformen Zähler gemäß IEC 61131‑3 (FB_CTUD_LINT). Die Steuerung und Ausgabe erfolgt ausschließlich über Adapterschnittstellen, was eine flexible Einbindung in adapterbasierte Architekturen erlaubt.
@@ -54,15 +55,15 @@ Die Ergebnisdaten werden über die **Plugs** bereitgestellt:
 ### **Adapter**
 
 | Typ | Richtung | Adapter-Typ | Beschreibung |
-|------|----------|-------------|--------------|
+| ------ | ---------- | ------------- | -------------- |
 | **CU** | Socket | `adapter::types::unidirectional::AX` | Aufwärtszähl‑Eingang (Ereignis+BOOL) |
 | **CD** | Socket | `adapter::types::unidirectional::AX` | Abwärtszähl‑Eingang (Ereignis+BOOL) |
-| **R**  | Socket | `adapter::types::unidirectional::AX` | Reset‑Eingang (Ereignis+BOOL) |
+| **R** | Socket | `adapter::types::unidirectional::AX` | Reset‑Eingang (Ereignis+BOOL) |
 | **LD** | Socket | `adapter::types::unidirectional::AX` | Load‑Eingang (Ereignis+BOOL) |
 | **PV** | Socket | `adapter::types::unidirectional::ALI` | Preset‑Wert‑Eingang (Ereignis+LINT) |
-| **QU** | Plug   | `adapter::types::unidirectional::AX` | Aufwärts‑Ausgang (Ereignis+BOOL) |
-| **QD** | Plug   | `adapter::types::unidirectional::AX` | Abwärts‑Ausgang (Ereignis+BOOL) |
-| **CV** | Plug   | `adapter::types::unidirectional::ALI` | Zählerwert‑Ausgang (Ereignis+LINT) |
+| **QU** | Plug | `adapter::types::unidirectional::AX` | Aufwärts‑Ausgang (Ereignis+BOOL) |
+| **QD** | Plug | `adapter::types::unidirectional::AX` | Abwärts‑Ausgang (Ereignis+BOOL) |
+| **CV** | Plug | `adapter::types::unidirectional::ALI` | Zählerwert‑Ausgang (Ereignis+LINT) |
 
 ## Funktionsweise
 

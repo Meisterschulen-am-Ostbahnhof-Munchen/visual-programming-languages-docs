@@ -4,6 +4,7 @@
 
 All text on this page was created with [https://chat.openai.com/chat](https://chat.openai.com/chat)
 Amazing
+
 ## **Working with 2 Wi-Fi Connections in Windows 10**
 
 This video shows you how to work with two Wi-Fi connections in Windows 10. Whether you're at work or at home, you might need to connect to both a public and a private Wi-Fi network. Or perhaps you want to switch your internet connection between two different networks without interrupting the connection. This video will teach you how to set up and manage multiple Wi-Fi connections in Windows 10 to make your work more efficient and productive.
@@ -14,7 +15,7 @@ This video shows you how to work with two Wi-Fi connections in Windows 10. Wheth
 
 ---
 
-## ⚖️ Comparison test of various Wi-Fi adapters:
+## ⚖️ Comparison test of various Wi-Fi adapters
 
 This article tests several USB Wi-Fi adapters under Windows 10 and Ubuntu 22.04 LTS. The focus is on the functionality of the adapters and whether they are recognized immediately without installing a driver. This is a great advantage, as it saves time and effort by eliminating the need to search for, download, and install a separate driver. The article provides an overview of the test results and shows which adapters work without problems and which may require additional steps. Overall, this article will be a valuable resource for anyone who wants to use a USB Wi-Fi adapter under Windows 10 or Ubuntu 22.04 LTS.
 
@@ -54,7 +55,7 @@ These adapters are tested under both Windows 10 and Ubuntu 22.04 LTS to evaluate
 
 *EOL = End of Life, product no longer available.
 
-## Description of the Various Adapters:
+## Description of the Various Adapters
 
 ### Hama N150 Nano Wi-Fi USB Adapter, 2.4 GHz
 
@@ -71,6 +72,7 @@ The Edimax EW-7811Un V2 Wi-Fi 4 Nano adapter is a Wi-Fi adapter based on the 802
 The Edimax EW-7811UN Super Mini Wi-Fi USB Adapter is a small and lightweight Wi-Fi adapter that can be connected to a computer's USB port. With a data transfer rate of 150 Mbps, it is capable of establishing a fast and stable connection to a Wi-Fi network. This USB adapter is version 1 and supports the 802.11b/g/n Wi-Fi standards. It is easy to install and use and is perfect for use at home or in the office.
 
 The Edimax EW-7811UN Super Mini Wi-Fi USB Adapter is a small and lightweight Wi-Fi adapter that can be connected to a computer's USB port.
+
 ### Cudy WU650S AC 650 Mbps Wireless USB WiFi Adapter
 
 ![IMG20230123115748](https://user-images.githubusercontent.com/69573151/214024848-cc44983d-076c-4ea8-8d9a-a5e207298d80.jpg)
@@ -80,6 +82,7 @@ The Cudy WU650S AC 650 Mbps Wireless USB WiFi Adapter is a WiFi adapter that plu
 ``The Cudy WU650S AC 650 Mbps wireless USB Wi-Fi adapter is a Wi-Fi adapter that does not work under Linux (Ubuntu 22.04 LTS) without driver installation. This means that additional software or drivers must be installed for the adapter to be recognized and used by the system. This can be done either by using proprietary drivers or open-source drivers. It is important to select the correct drivers for the specific system and hardware to avoid problems and achieve optimal performance. It is also advisable to read the manufacturer's instructions or the product documentation before installing the drivers to ensure that you follow the correct steps.
 
 ...
+
 ### ALL-WA1200AC
 
 ![IMG20230123115856](https://user-images.githubusercontent.com/69573151/214024786-c8cccdff-1ce6-4757-8afe-759f69e19d85.jpg)
@@ -97,6 +100,7 @@ The ALL-WA0300AC is a USB Wi-Fi adapter based on the Wireless-AC standard, suppo
 The ALL-WA0300AC is a wireless USB Wi-Fi adapter that does not function under Linux (Ubuntu 22.04 LTS) without driver installation. This means that you need to install additional software or drivers for the USB adapter to be recognized and used by your system. This can be done either by using proprietary or open-source drivers. It's important to select the correct drivers for your specific system and hardware to avoid problems and achieve optimal performance. It's also advisable to read the manufacturer's instructions or the product documentation before installing the drivers to ensure you follow the correct steps. The ALL-WA0300AC supports dual-band Wi-Fi (2.4 and 5 GHz) and offers a high data transfer rate of up to 300 Mbps. It is compatible with most Wi-Fi routers and provides strong signal strength and good coverage.
 
 All-WA0300AC
+
 ### ALL-WA0150N (MTK7601)
 
 ![IMG20230123115948](https://user-images.githubusercontent.com/69573151/214024649-f7015bf1-1218-4b2a-9c84-e6a19243659a.jpg)

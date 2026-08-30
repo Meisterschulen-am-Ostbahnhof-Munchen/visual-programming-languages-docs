@@ -3,6 +3,7 @@
 ![FB_TOF_LTIME](FB_TOF_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FB_TOF_LTIME` ist die `LTIME`-Variante (64-Bit-Zeitdauer, Nanosekunden-Auflösung) des Standard-Timer-Bausteins `FB_TOF` (Ausschaltverzögerung). Er verhält sich funktional identisch zu `FB_TOF`, verwendet für `PT`/`ET` jedoch den Datentyp `LTIME` statt `TIME`.

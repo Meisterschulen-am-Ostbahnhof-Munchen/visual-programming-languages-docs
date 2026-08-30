@@ -3,9 +3,11 @@
 ![SET_DWORD](./SET_DWORD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SET_DWORD` is used to write a DWORD value to a target variable declared as InOut via an input. It provides a simple and efficient way to set values during operation without requiring a separate assignment in the program.
+
 ## Interface Structure
 
 ### **Event Inputs**

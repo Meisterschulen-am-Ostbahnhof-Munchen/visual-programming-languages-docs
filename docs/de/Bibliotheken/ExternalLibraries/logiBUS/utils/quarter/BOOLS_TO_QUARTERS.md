@@ -9,6 +9,7 @@
 <img width="1372" height="473" alt="image" src="https://github.com/user-attachments/assets/29cc86f3-ca17-48a7-8143-0a020e5cabcb" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `BOOLS_TO_QUARTERS` ist ein zusammengesetzter Baustein (Composite FB), der 16 einzelne boolesche Eingangssignale in ein spezielles 2-Bit-Format, genannt "Quarter Byte", umwandelt. Er dient als Bündelung und serielle Abarbeitung mehrerer grundlegender Konvertierungsfunktionen und ist für Anwendungen vorgesehen, in denen viele binäre Zustände in ein kompaktes, mehrwertiges Steuerformat überführt werden müssen.

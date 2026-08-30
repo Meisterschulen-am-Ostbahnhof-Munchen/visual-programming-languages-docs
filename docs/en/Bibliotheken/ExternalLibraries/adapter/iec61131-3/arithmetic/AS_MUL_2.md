@@ -3,6 +3,7 @@
 ![AS_MUL_2](./AS_MUL_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_MUL_2` is a generic, arithmetic multiplication block for IEC 61499 applications in the 4diac IDE. It is used to multiply two input values. The special feature of this block lies in the use of adapter interfaces instead of classic, discrete event and data channels. This enables structured and clear signal transmission.

@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_SPLIT_2` is a basic function block according to IEC 61499 that splits a single input event (`EI`) into a sequence of two output events (`EO1` and `EO2`). This block is functionally identical to `E_SPLIT`.

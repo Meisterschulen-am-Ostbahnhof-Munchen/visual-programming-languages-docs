@@ -12,7 +12,7 @@ Das Netzwerk ist als SubAppType realisiert und kann in übergeordnete Applikatio
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### DigitalInput_I1 / DigitalInput_I2 (je `logiBUS::io::DI::logiBUS_IXA`)
 

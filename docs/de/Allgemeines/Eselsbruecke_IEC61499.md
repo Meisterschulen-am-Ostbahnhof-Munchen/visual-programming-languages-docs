@@ -15,7 +15,7 @@ Antwort: mit einem Traktor.
 ## Schritt für Schritt
 
 | Baustein | Herkunft | Ergebnis |
-|---|---|---|
+| --- | --- | --- |
 | **6** | Case IH 1455 ist ein **6-Zylinder**-Traktor | `6 _ _ _ _` |
 | **14** | Die ersten beiden Ziffern von **14**55 | `6 1 4 _ _` |
 | **99** | Aus der **55** am Ende von 1455 wird eine **99** | `6 1 4 9 9` |

@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung | Beschreibung |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::ADI` | Socket (Eingang) | Eingehender ADI-Datenstrom, der aufgeteilt wird. |
 | `OUT1` | `adapter::types::unidirectional::ADI` | Plug (Ausgang) | Erster ausgehender ADI-Datenstrom (Kopie des Eingangs). |
 | `OUT2` | `adapter::types::unidirectional::ADI` | Plug (Ausgang) | Zweiter ausgehender ADI-Datenstrom. |

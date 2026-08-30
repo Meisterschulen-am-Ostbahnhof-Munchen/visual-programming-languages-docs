@@ -4,6 +4,7 @@
 *Image of the exercise not available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of an **interlock** (mutual interlock) using three toggle flip-flops (T-FF). Each flip-flop is toggled by a push button (single-click). The special feature: A bidirectional adapter chain ensures that only one output can be active at any given time – as soon as one flip-flop is set, the others are automatically reset.
@@ -13,7 +14,7 @@ This makes the circuit suitable for safety-critical applications, e.g., for the 
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Description |
-|---------------------|-----------------------------------------|----------------------------------------------|
+| --------------------- | ----------------------------------------- | ---------------------------------------------- |
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | Digital input for push button on channel I1 |
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | Digital input for push button on channel I2 |
 | `DigitalInput_CLK_I3` | `logiBUS::io::DI::logiBUS_IE` | Digital input for push button on channel I3 |
@@ -48,7 +49,7 @@ This makes the circuit suitable for safety-critical applications, e.g., for the 
 
 The three digital inputs (`DigitalInput_CLK_Ix`) convert button signals (single-click event) into events at the output `IND`. These are connected directly to the `CLK` input of the respective `ILOCK_T_FF_Ax` module.
 
-2. **Interlock Chain**
+1. **Interlock Chain**
 
 The three flip-flops are connected in a chain via their adapter interfaces:
 
@@ -58,7 +59,7 @@ The three flip-flops are connected in a chain via their adapter interfaces:
 
 This chaining ensures that when one flip-flop (e.g., No. 1) is set, its successor (No. 2) receives a block signal, which is then passed on to No. 3. As soon as an active blocking signal is present in the chain, the affected component immediately switches off its output `Q`.
 
-3. **Output Control**
+1. **Output Control**
 
 The outputs `Q` of the three flip-flops are connected to the digital outputs (`DigitalOutput_Q1` … `DigitalOutput_Q3`). These outputs transmit the state to the hardware channels Q1, Q2, and Q3.
 

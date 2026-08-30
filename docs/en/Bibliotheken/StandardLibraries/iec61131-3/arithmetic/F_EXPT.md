@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_EXPT](F_EXPT.svg)
+
 ## Introduction
 
 The **F_EXPT** function block is a mathematical function module for calculating power values, developed under the EPL-2.0 license. Version 1.0 enables the calculation of base-exponent combinations with ANY_REAL data types.
@@ -30,13 +31,16 @@ The **F_EXPT** function block is a mathematical function module for calculating 
 ## Functionality
 
 1. **Activation**:
+
 - Triggered by the `REQ` event
 - Processes two ANY_REAL values
-2. **Calculation**:
+1. **Calculation**:
+
 - Calculates IN1 raised to the power of IN2
 - Supports all REAL and LREAL combinations
 - Automatic type conversion (higher accuracy)
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with calculated power value
 - Result in the more accurate input type
 
@@ -77,9 +81,9 @@ The **F_EXPT** function block is a mathematical function module for calculating 
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | F_EXPT | F_LN | F_POWER |
-|----------------|---------|---------|---------|
+| ---------------- | --------- | --------- | --------- |
 | Function | a^b | ln(a) | a^b |
-| Input types | ANY_REAL| ANY_REAL| ANY_NUM |
+| Input types | ANY_REAL | ANY_REAL | ANY_NUM |
 | Accuracy | High | High | Medium |
 
 ## Conclusion

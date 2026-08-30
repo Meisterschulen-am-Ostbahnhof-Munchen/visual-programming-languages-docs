@@ -11,7 +11,7 @@ Diese Übung realisiert einen zufallsgesteuerten Blinker mit Hilfe der Funktions
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter | Kurzbeschreibung |
-|--------------|-----|-----------|------------------|
+| -------------- | ----- | ----------- | ------------------ |
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | DT = T#1ms | Erzeugt alle 1 ms ein Ereignis am Ausgang `EO`. |
 | `FB_RANDOM` | `eclipse4diac::utils::FB_RANDOM` | SEED = 0 | Liefert bei jedem `REQ`‑Ereignis einen neuen REAL‑Zufallswert zwischen 0 und 1 am Ausgang `VAL`. |
 | `E_D_FF_ANY_HYS` | `logiBUS::signalprocessing::hysteresis::E_D_FF_ANY_HYS` | HYSTERESIS = REAL#0.95 | Getaktetes Flip‑Flop mit Hysterese: Der Eingang `D` wird mit dem Ereignis an `CLK` übernommen. Der Ausgang `Q` schaltet erst um, wenn der Wert die Hysterese überschreitet. |

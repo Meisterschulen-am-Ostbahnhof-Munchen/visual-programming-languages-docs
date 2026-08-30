@@ -40,6 +40,7 @@ The function block is stateless and re-executes the conversion with each ``REQ``
 - `F_LINT_TO_WORD` is specific to converting 64-bit to 16-bit and does not offer additional functionality such as overflow checking.
 
 The `F_LINT_TO_WORD` function block is a simple yet effective tool for converting LINT to WORD data. It is particularly useful in scenarios where data width reduction is required without the need for additional validation.
+
 ## Technical Features
 
 ## State Overview

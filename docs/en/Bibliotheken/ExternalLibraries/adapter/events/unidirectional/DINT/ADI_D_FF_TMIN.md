@@ -3,9 +3,11 @@
 ![ADI_D_FF_TMIN](./ADI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ADI_D_FF_TMIN** implements a data latch (D flip-flop) with a configurable minimum dwell time between two consecutive transfer events. It serves to save a data value at a specific event time and only update it again when a predefined time interval (Tmin) has elapsed since the last transfer.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No direct data outputs – the latched value is provided via the adapter output 
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Socket (Input) | I | adapter::types::unidirectional::ADI | Value and event to latch |
 | Plug (Output) | Q | adapter::types::unidirectional::ADI | Latched Value and Associated Output Event |
 

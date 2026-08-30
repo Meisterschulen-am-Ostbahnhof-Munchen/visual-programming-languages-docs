@@ -5,6 +5,7 @@
 *(Graphical representation of the function block not available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_ADD_2` is a generic function block (Generic FB) for performing arithmetic addition. It is used to add two input signals and output the result. The special feature of this block lies in the use of standardized, unidirectional adapters (`AUS`), which greatly simplifies and encapsulates the signal and data wiring within Eclipse 4diac.
@@ -67,7 +68,7 @@ Since this component is essentially a mathematical operation, it does not have a
 
 - **Measurement Processing:** Adding two sensor values or applying an offset to a measured value, which is supplied via an adapter.
 - **Setpoint Calculation:** Combining base setpoints and correction values in process automation.
-- * **Structured Programming:** Used in complex control systems where data and event lines are bundled in adapters to improve clarity.
+- - **Structured Programming:** Used in complex control systems where data and event lines are bundled in adapters to improve clarity.
 
 ---
 

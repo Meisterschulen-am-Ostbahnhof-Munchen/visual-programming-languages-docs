@@ -6,6 +6,7 @@
 *(Bild des Funktionsbausteins nicht vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_ADD_4` ist ein generischer Funktionsbaustein (FB), der für die Durchführung einer arithmetischen Addition von vier Eingangswerten entwickelt wurde. Die Besonderheit dieses Bausteins liegt in der Verwendung von unidirektionalen Adaptern (`AS`) für die Ein- und Ausgänge, was eine strukturierte und saubere Kapselung von Daten und zugehörigen Ereignissen in IEC 61499-Anwendungen ermöglicht.
@@ -63,6 +64,7 @@ Die Berechnung wird typischerweise getriggert, sobald an einem oder mehreren der
 ## Zustandsübersicht
 
 Da es sich um einen algorithmischen Baustein zur Berechnung handelt, arbeitet der FB zustandslos bzw. ereignisgesteuert:
+
 1.  **Warten:** Der Baustein wartet auf ein Aktualisierungsereignis an den Eingangs-Adaptern `IN1` bis `IN4`.
 2.  **Berechnung:** Bei Eintreffen eines Ereignisses werden die aktuellen Werte der Eingänge addiert.
 3.  **Ausgabe:** Der neue Summenwert wird auf den Adapter `OUT` geschrieben, und das zugehörige Ausgangsereignis wird ausgelöst.
@@ -80,6 +82,7 @@ Da es sich um einen algorithmischen Baustein zur Berechnung handelt, arbeitet de
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen, standardmäßigen `ADD`-Baustein (nach IEC 61131-3):
+
 -   **Vorteil:** Weniger Verdrahtungsaufwand in der grafischen Oberfläche, da keine separaten Event- und Datenlinien gezogen werden müssen.
 -   **Nachteil:** Erfordert die Definition und Verwendung des spezifischen Adaptertyps `adapter::types::unidirectional::AS`. Ein direkter Anschluss von Standard-Datentypen (wie einfachen `REAL`- oder `INT`-Variablen) ohne Adapter ist nicht möglich.
 

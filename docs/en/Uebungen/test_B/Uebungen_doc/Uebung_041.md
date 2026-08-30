@@ -1,8 +1,9 @@
 # Exercise_041: 8-Step Sequence with One Button
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_041`. Here, the manual control of an 8-step sequence is reduced to a single button.
+This article describes the logiBUS® exercise `Uebung_041`. Here, the manual control of an 8-step sequence is reduced to a single button
 ----
+
 ## Objective of the Exercise
 
 Optimization of the operating logic from Exercise 040. It demonstrates how, by combining a counter (`E_CTU`) and a demultiplexer (`E_DEMUX_8`), all phases of a sequence can be cycled through sequentially with just a single button.

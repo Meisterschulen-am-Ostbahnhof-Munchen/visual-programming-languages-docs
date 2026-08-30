@@ -3,6 +3,7 @@
 ![F_CONCAT_LDATE_LTOD](F_CONCAT_LDATE_LTOD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_CONCAT_LDATE_LTOD` concatenates a date (`LDATE`) and a time of day (`LTIME_OF_DAY`) into a combined `LDATE_AND_TIME` timestamp. It is the `L`-prefixed (64-bit resolution) counterpart to `F_CONCAT_DATE_TOD`.

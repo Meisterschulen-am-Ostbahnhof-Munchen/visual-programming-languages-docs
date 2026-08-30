@@ -3,6 +3,7 @@
 <img width="1381" height="423" alt="image" src="https://github.com/user-attachments/assets/6d43c16c-0360-452c-bd8f-8caac2a5b590" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_8_BOOL` ist ein generischer Baustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) über bis zu acht boolesche Eingangswerte. Er folgt dem IEC 61131-3 Standard und ist für den Einsatz in der 4diac-IDE konzipiert. Der Block führt seine Operation ereignisgesteuert aus und liefert das Ergebnis über einen einzelnen booleschen Ausgang.

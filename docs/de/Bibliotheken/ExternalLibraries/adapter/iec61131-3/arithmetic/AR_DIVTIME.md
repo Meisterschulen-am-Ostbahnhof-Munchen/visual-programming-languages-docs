@@ -3,6 +3,7 @@
 ![AR_DIVTIME](./AR_DIVTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_DIVTIME** dient der Division eines Zeitwertes (Typ TIME) durch einen numerischen Wert. Die Eingabe des Divisors erfolgt über einen Adapter, sodass der Baustein flexibel in verschiedenen Kontexten eingesetzt werden kann. Die Ausgabe des Ergebnisses geschieht ebenfalls über einen Adapter. Der Baustein ist gemäß IEC 61131-3 als standard arithmetic function klassifiziert.

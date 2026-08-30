@@ -40,12 +40,13 @@ The `version` block operates in an extremely simple and deterministic manner. Up
 The function block `version` is stateless. It remains in a single, passive state until a `REQ` event occurs. The response to this event (copying the data and triggering `CNF`) is instantaneous and does not result in a different state.
 
 1. **Version Propagation**: In an application chain, a higher-level function block (e.g., a master or management function block) can pass its own version to this block to be sent to downstream diagnostic or logging functions.
-3. **Data Consolidation**: In conjunction with other function blocks, it can be used to provide version information from various sources in a central location (e.g., an HMI or a network service).
+2. **Data Consolidation**: In conjunction with other function blocks, it can be used to provide version information from various sources in a central location (e.g., an HMI or a network service).
+
 - **`E_SR` or `E_RS` (Flip-Flops)**: These blocks have an internal state (set/reset) that is changed by events. The `version` block does not have such a state.
 - **`E_MERGE`**: This block merges events from multiple inputs. The `version` block has only a single event input and does not process any event streams.
 - **Simple data blocks (e.g., `E_R_TRIG`)**: These react to signal edges or perform timing operations. The `version` block performs only data copying.
 - **Generic blocks like `COPY`**: A `COPY` block would perform a similar function (copying data from A to B) but is typically a pure data block without event control. The `version` block follows the standard IEC 61499 event/data flow paradigm.
-*
+-
 
 The `version` function block is a minimalist and specialized tool for passing string information within an event-driven control system. Its strength lies in the simplicity and clarity of its purpose. For simple data copying without event logic, alternative implementations might be suitable; however, it is well-suited for integration into a standards-compliant IEC 61499 application with a clearly defined event flow.
 

@@ -3,6 +3,7 @@
 ![ATM_IN_NS_TO_ALR](ATM_IN_NS_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ATM_IN_NS_TO_ALR** ist ein Composite-Baustein, der einen `TIME`-Wert (übertragen über den [ATM](../../../types/unidirectional/TIME/ATM.md)-Adapter) in Nanosekunden auf einen `LREAL`-Wert (64-Bit-Gleitkommazahl) umrechnet und über den [ALR](../../../types/unidirectional/LREAL/ALR.md)-Adapter ausgibt. Er gehört zur Blockfamilie `ATM_IN_<EINHEIT>_TO_<ZIELTYP>`, die dieselbe Umrechnung für alle vier Zeiteinheiten (MS, NS, S, US) und alle fünf Zielganzzahl-/Gleitkommatypen bereitstellt.
@@ -56,7 +57,7 @@ Der gesamte Vorgang erfolgt synchron und ohne Zwischenspeicherung – jede erfol
 Der Baustein besitzt keine eigene Zustandsmaschine. Der Ablauf lässt sich als einfacher Schritt beschreiben:
 
 | Schritt | Aktion |
-|---------|--------|
+| --------- | -------- |
 | 1 | Warten auf Ereignis an **IN.E1** |
 | 2 | Umrechnung des Datenwerts von `TIME` (Nanosekunden) nach `LREAL` über `F_TIME_IN_NS_TO_LREAL` |
 | 3 | Ausgabe des umgerechneten Werts an **OUT.D1** und Ereignis an **OUT.E1** |

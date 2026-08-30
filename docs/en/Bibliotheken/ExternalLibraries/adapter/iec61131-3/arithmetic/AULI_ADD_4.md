@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AULI_ADD_4` is a generic function block (FB) designed for the mathematical addition of four values. The unique feature of this block lies in its use of adapters of type `AULI` (unidirectional). By encapsulating data and event transmission within adapters, the block enables clear and modular wiring within IEC 61499 applications in the 4diac IDE.

@@ -22,6 +22,7 @@ The `E_T_FF` component is a simple toggle flip-flop:
 
 1. **State Change**: Upon each incoming `CLK` event, the output `Q` changes its state: If `Q` was `TRUE`, it becomes `FALSE`, and if `Q` was `FALSE`, it becomes `TRUE`.
 2. **Event Triggering**: Each state change of `Q` triggers the `EO` event.
+
 - **Impulse Switch Analogy**: The component behaves like an impulse switch: A short pulse (`CLK`) switches the light (`Q`) on, the next pulse switches it off.
 - **Memory Function**: `Q` stores the last state of the flip-flop.
 - **Stateless Between Clock Cycles**: Changes to the `CLK` input only affect `Q` at the time of the event.

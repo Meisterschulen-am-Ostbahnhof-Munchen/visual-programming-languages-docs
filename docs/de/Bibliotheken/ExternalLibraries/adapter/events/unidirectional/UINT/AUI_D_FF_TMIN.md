@@ -3,6 +3,7 @@
 ![AUI_D_FF_TMIN](./AUI_D_FF_TMIN.svg)
 
 * * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_D_FF_TMIN** realisiert ein datenverriegelndes D-Flipflop (Data Latch) mit einer minimalen zeitlichen Sperre zwischen zwei aufeinanderfolgenden Ausgabeereignissen (*Minimum inter‑disposal Time*). Er dient dazu, Werte über den unidirektionalen **AUI**‑Adapter zu übernehmen und mit einer definierten Mindestverzögerung weiterzugeben, um eine übermäßig schnelle Ereignisfolge am Ausgang zu vermeiden.
@@ -63,7 +64,7 @@ Der Funktionsblock **AUI_D_FF_TMIN** realisiert ein datenverriegelndes D-Flipflo
 Der Funktionsblock besitzt keinen extern sichtbaren Zustandsautomaten (ECC). Intern kann der verwendete `E_D_FF_ANY_TMIN` folgende implizite Zustände aufweisen:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **Idle** | Wartet auf ein Ereignis am Eingang `I`. |
 | **Getaktet** | Daten wurden übernommen; Ausgabe wird bis zum Ablauf von `Tmin` zurückgehalten. |
 | **Ausgabe** | Mindestzeit eingehalten – Ausgabeereignis wird gesendet. |
@@ -79,7 +80,7 @@ Diese Zustände sind für den Anwender transparent.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Merkmal |
-|----------|---------|
+| ---------- | --------- |
 | **E_D_FF** (Standard‑D‑Flipflop) | Keine Zeitbeschränkung; jedes Ereignis wird sofort ausgegeben. |
 | **E_D_FF_ANY_TMIN** | Gleiches Verhalten, jedoch ohne Adapter‑Kapselung; direkte ereignis‑/datenbasierte Anbindung. |
 | **AUI_D_FF_TMIN** (dieser Block) | Kombiniert die D‑Flipflop‑Funktionalität mit einer zeitlichen Drosselung und bietet eine adapterbasierte Schnittstelle. |

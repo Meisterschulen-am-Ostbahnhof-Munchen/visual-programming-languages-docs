@@ -3,6 +3,7 @@
 ![FIELDBUS_LWORD_TO_SIGNAL_SCALED](./FIELDBUS_LWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL_SCALED** dient der Umwandlung eines als **LWORD** vorliegenden Feldbus-Rohsignals in einen skalierten **LREAL**-Ausgangswert. Er spiegelt das Eingangssignal auf den Ausgang, sofern das Signal gültig ist, und wendet dabei eine lineare Skalierung an. Der Baustein ist für den Einsatz in der industriellen Automatisierung, insbesondere im Kontext von Feldbussystemen, konzipiert.

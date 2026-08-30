@@ -5,6 +5,7 @@
 
 * * * * * * * * * *
 This function block (FB) is used to convert an array of 8 BOOL values (ARR08X) into a corresponding structure of 8 BOOL values (ST08X). It enables easy conversion between these two data formats.
+
 - **REQ**: An event that triggers the conversion. When REQ is received, the value of input `IN` is processed, and the result is provided at output `OUT`.
 - **CNF**: An acknowledgment event that is triggered once the conversion is complete and the output `OUT` has been updated.
 - **IN**: An array of 8 BOOL values (BOOL[0..7]) representing the source data for the conversion.

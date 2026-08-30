@@ -3,9 +3,11 @@
 ![GET_SINT](./GET_SINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_SINT** function block is used to read a value of the data type `SINT` (signed short integer) from a variable declared as `InOut` and provide it as a buffered output. It is typically used to access a shared variable or a physical input without modifying the original value. The function block operates according to the **IEC 61499** standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -74,7 +76,7 @@ The function block uses a simple ECA state machine with exactly one state:
 ## Comparison with Similar Building Blocks
 
 | Building Block | Data Type | Special Feature |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `GET_BOOL` | BOOL | Same functionality, but for Boolean values. |
 | `GET_INT` | INT | Similar to `GET_SINT`, but with 16-bit integers. |
 | `GET_REAL` | REAL | For floating-point numbers. |

@@ -3,13 +3,15 @@
 ![Uebung_073_AUI_network](./Uebung_073_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how to output a speed value from the VDS (Vehicle Data Server) as a numerical value to the UT (Universal Terminal) via an adapter conversion. A special adapter block is used to convert the data type from AUI (Application User Interface) to AUDI (Application User Data Interface). The configuration is implemented as a subapplication.
+
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameters | Short Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **IA_VDS** | `isobus::tecu::IA_VDS` | QI = TRUE | Establishes the connection to the VDS and provides the value for the wheel-based machine speed via the adapter output `NAV_SPEED`. |
 | **CONV_VDS** | `adapter::conversion::unidirectional::AUI_TO_AUDI` | – | Converts the AUI adapter interface to an AUDI interface so that the data value can be passed on to subsequent UT blocks. |
 | **Q_NumericValue_VDS** | `isobus::UT::Q::Q_NumericValue_AUDI` | u16ObjId = `NumberVariable_Wheel_based_machine_speed` | Displays the received numeric value on the UT display. The object ID refers to the variable for the wheel-based machine speed. |

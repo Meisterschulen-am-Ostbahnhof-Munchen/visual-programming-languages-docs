@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_ADD_2` is a generic function block for performing arithmetic addition operations. Unlike conventional mathematical function blocks, this block uses an adapter-based interface concept (unidirectional `ADI` adapters) to transmit data and associated control signals in a bundled manner. It enables the addition of two input values to produce one output value.
@@ -59,6 +60,7 @@ Since this is a generic function block (`GEN_ADI_ADD`), the specific data type u
 
 - **Generic Type:** The function block is declared as `GEN_ADI_ADD`. This allows for flexible handling of different numeric data types, provided they are supported by the adapters used.
 - **Adapter-Based Design:** By using unidirectional adapters of type `ADI`, the number of explicit connection lines (wiring overhead in the 4diac IDE's Application Editor) is drastically reduced, as data and synchronization events are encapsulated in a single connection.
+
 - ---
 
 ## State Overview

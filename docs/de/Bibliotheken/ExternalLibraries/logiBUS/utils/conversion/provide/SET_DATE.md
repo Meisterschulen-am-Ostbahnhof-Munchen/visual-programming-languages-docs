@@ -3,6 +3,7 @@
 ![SET_DATE](./SET_DATE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_DATE** dient dazu, einen Datumswert (Datentyp `DATE`) von einem Eingang in eine InOut-Variable zu schreiben. Die InOut-Variable wird dabei direkt beschrieben und steht nach der Ausführung mit dem neuen Wert zur Verfügung. Dies ermöglicht eine effiziente Übergabe von Datumswerten ohne zusätzliche Ausgangsvariable.

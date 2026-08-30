@@ -3,6 +3,7 @@
 ![ATM_SUB](./ATM_SUB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ATM_SUB** subtrahiert zwei Zeitwerte (Typ TIME) über vollständig adapterbasierte Schnittstellen: `IN2` wird von `IN1` abgezogen, das Ergebnis wird nur bei tatsächlicher Wertänderung auf den Ausgangsadapter geschrieben. Im Gegensatz zu den generischen `ATM_ADD_*`-Bausteinen ist ATM_SUB als handverdrahtetes Composite-FB realisiert, das die Änderungserkennung explizit über eigene Bausteine abbildet.

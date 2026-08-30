@@ -3,9 +3,11 @@
 ![AX_FB_TOF_LTIME](./AX_FB_TOF_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-delay according to IEC 61131-3. It is specifically designed for use with an AX adapter and uses an internal timer module and a D flip-flop to precisely represent the timing behavior. The time base uses the data type `LTIME`, resulting in high temporal resolution.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-d
 ### **Adapter**
 
 | Direction | Adapter Type | Comment |
-|----------|------------|-----------|
+| ---------- | ------------ | ----------- |
 | **Socket** `IN` | `adapter::types::unidirectional::AX` | Input adapter – receives the binary control signal (e.g., via event `E1` and data `D1`). |
 | **Plug** `Q` | `adapter::types::unidirectional::AX` | Output adapter – forwards the time-delayed output signal (via event `E1` and data `D1`). |
 
@@ -67,7 +69,7 @@ The variable `ET` is taken directly from the timer and displays the currently el
 ## State overview
 
 | State | Input `IN` | Output `Q` | Elapsed time `ET` |
-|---------|--------------|--------------|------------------------|
+| --------- | -------------- | -------------- | ------------------------ |
 | Inactive / Ready | TRUE | TRUE | 0 (Zero) |
 | Delay in progress | FALSE → Return to TRUE possible | TRUE | 0 … PT |
 | Delay expired | FALSE | FALSE | PT (constant) |

@@ -3,9 +3,11 @@
 ![AX_FB_TON_LTIME](./AX_FB_TON_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_FB_TON_LTIME** function block implements an on-delay timer according to IEC 61131-3 with the data type `LTIME` and an integrated **AX adapter** interface. It is particularly suitable for time-critical control tasks where both events and data must be exchanged via standardized adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AX_FB_TON_LTIME** function block implements an on-delay timer according to
 ### **Adapter**
 
 | Type | Direction | Description |
-|-----|----------|-------------|
+| ----- | ---------- | ------------- |
 | `IN` | Socket (Input) | Unidirectional AX adapter for input data. Contains an event (`E1`) and a data value (`D1`). The event starts the timer; the data value determines the timer input (`IN`). |
 | `Q` | Plug (Output) | Unidirectional AX adapter for output data. Outputs the result of the time check: `1` if the elapsed time has reached the target time, otherwise `0`. |
 

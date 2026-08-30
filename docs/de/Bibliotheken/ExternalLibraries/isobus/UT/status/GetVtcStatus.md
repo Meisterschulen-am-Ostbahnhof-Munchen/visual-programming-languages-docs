@@ -27,7 +27,7 @@ Der Funktionsblock **GetVtcStatus** ist ein Service Interface Block (SIFB), der 
 ### **Daten-Eingänge**
 
 | Name | Typ | Anfangswert | Beschreibung |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | `QI` | BOOL | – | Qualitätseingang: TRUE aktiviert den Dienst. |
 | `u8Instance` | USINT | – | Identifikator der VT‑Client‑Instanz (0–255). |
 | `eVTInfo` | UINT | 0 | Art der abzufragenden Statusinformation (Werte aus der Enumeration `ISOVT_STATUS_e`). |
@@ -35,7 +35,7 @@ Der Funktionsblock **GetVtcStatus** ist ein Service Interface Block (SIFB), der 
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `QO` | BOOL | Qualitätsausgang: TRUE bei erfolgreicher Ausführung. |
 | `STATUS` | STRING | Dienststatus – enthält eine textuelle Rückmeldung. |
 | `wValue` | UINT | Der von `IsoVtcGetStatusInfo()` zurückgegebene Wert (abhängig von `eVTInfo`). |
@@ -64,7 +64,7 @@ Keine Adapter vorhanden.
 - Die möglichen Werte für `eVTInfo` (ISOVT_STATUS_e) sind:
 
 | Wert | Bezeichnung | Beschreibung |
-|------|-------------|--------------|
+| ------ | ------------- | -------------- |
 | 0 | VT_SOURCE_ADDRESS | Quelladresse des VT |
 | 2 | VT_HND | CF‑Handle des VT |
 | 3 | CF_SOURCE_ADDRESS | Quelladresse des VT‑Client |

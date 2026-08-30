@@ -3,9 +3,11 @@
 ![GET_BOOL](./GET_BOOL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_BOOL** function block reads a BOOL value from a variable declared as `InOut` and provides it as a buffered output value. This simple encapsulation allows a Boolean signal to be passed from any context without requiring direct read/write access to the source in the calling function block.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,6 +51,7 @@ The output `OUT` remains at the last read value until a new pulse `REQ` updates 
 - **Initial Values**: Both `IN` and `OUT` are pre-assigned to `FALSE`, so the function block exhibits defined behavior even without prior initialization.
 
 **Buffering**:**
+
 ## State Overview
 
 The function block has a single state:
@@ -68,7 +71,7 @@ After the algorithm is executed, the initial state is immediately exited (no hol
 ## Comparison with Similar Function Blocks
 
 | Function Block | Purpose | Data Type |
-|----------|-------|----------|
+| ---------- | ------- | ---------- |
 | GET_BOOL | Read a BOOL value via InOut | BOOL |
 | GET_INT | Read an INT value via InOut | INT |
 | GET_REAL | Read a REAL value via InOut | REAL |

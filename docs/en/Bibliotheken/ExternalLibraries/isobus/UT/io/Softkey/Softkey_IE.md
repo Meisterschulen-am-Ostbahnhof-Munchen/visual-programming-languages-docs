@@ -3,6 +3,7 @@
 ## 🎧 Podcast
 
 - [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+
 ## Introduction
 
 The Softkey_IE function block is an input service interface function block for event input data, specifically designed for processing softkey events according to ISO 11783-6. It serves as an interface between the application logic and the physical softkey input devices in agricultural and mobile machinery.

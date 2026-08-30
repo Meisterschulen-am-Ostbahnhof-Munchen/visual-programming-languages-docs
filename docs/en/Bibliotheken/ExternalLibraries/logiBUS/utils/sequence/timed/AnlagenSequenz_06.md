@@ -5,6 +5,7 @@
 ![AnlagenSequenz_06](AnlagenSequenz_06.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `AnlagenSequenz_06` function block is a time-controlled ring sequencer for the ordered

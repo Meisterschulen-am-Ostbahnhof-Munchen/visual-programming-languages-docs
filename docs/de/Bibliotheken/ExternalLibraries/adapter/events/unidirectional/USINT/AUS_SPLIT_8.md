@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Schnittstelle | Typ | Richtung | Beschreibung |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **IN** | `adapter::types::unidirectional::AUS` | Socket | Eingang – empfängt das zu verteilende AUS-Signal |
 | **OUT1** | `adapter::types::unidirectional::AUS` | Plug | Ausgang 1 – gibt das eingehende Signal weiter |
 | **OUT2** | `adapter::types::unidirectional::AUS` | Plug | Ausgang 2 – gibt das eingehende Signal weiter |

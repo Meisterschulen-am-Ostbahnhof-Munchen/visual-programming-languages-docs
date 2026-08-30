@@ -3,6 +3,7 @@
 ![ADI_TO_AULI](./ADI_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **ADI_TO_AULI** ist ein Composite-Funktionsblock (FB) gemäß IEC 61499. Er dient der Umwandlung eines DINT-Wertes (vorzeichenbehaftete 32‑Bit‑Ganzzahl), der über einen ADI‑Adapter (Input‑Schnittstelle) eingeht, in einen ULINT‑Wert (vorzeichenlose 64‑Bit‑Ganzzahl), der über einen AULI‑Adapter (Output‑Schnittstelle) ausgegeben wird. Intern wird der standardisierte Konvertierungsbaustein `F_DINT_TO_ULINT` aus der IEC‑61131‑Bibliothek verwendet. Der Baustein vereinfacht die Integration von Adaptern und die Typumwandlung in Automatisierungslösungen.

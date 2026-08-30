@@ -3,6 +3,7 @@
 ![E_RS_SYM_ecc](./E_RS_SYM_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_RS_SYM` (Event-driven RS Flip-Flop, symmetric start-up behaviour) is an event-driven, bistable memory element according to IEC 61499. It behaves functionally like [E_RS](../E_RS.md)/[E_SR](../E_SR.md), but differs in its initial state: while `E_RS`/`E_SR` only produce a defined output after the first `S` or `R` event, `E_RS_SYM` already reacts symmetrically to both events in its initial state `START` and immediately transitions into the matching `SET` or `RESET` state.
@@ -37,7 +38,7 @@ The ECC has three states: `START`, `SET`, and `RESET`. From `START`, both an `S`
 ## State Overview
 
 | State | Meaning |
-|---|---|
+| --- | --- |
 | START | Initial state, waits symmetrically for `S` or `R` |
 | SET | `Q = TRUE`, reachable from `START` (via `S`) or `RESET` (via `S`) |
 | RESET | `Q = FALSE`, reachable from `START` (via `R`) or `SET` (via `R`) |

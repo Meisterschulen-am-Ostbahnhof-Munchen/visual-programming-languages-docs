@@ -5,6 +5,7 @@
 *(Bild des Funktionsblocks hier einfügen)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASR_SPLIT_8` dient dazu, ein einzelnes eingehendes **ASR**-Adapter-Signal unverändert auf acht identische Ausgänge zu verteilen. Er wird als generischer Baustein definiert und eignet sich besonders für Anwendungen, in denen ein Sensorsignal oder Steuersignal mehrfach benötigt wird – beispielsweise in der landwirtschaftlichen Automatisierungstechnik.

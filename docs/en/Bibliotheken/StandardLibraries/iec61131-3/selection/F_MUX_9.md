@@ -3,6 +3,7 @@
 ![F_MUX_9](F_MUX_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_MUX_9` is the generic 9-input variant of the standard multiplexer block `F_MUX` (cf. `F_MUX_2`/`F_MUX_3`/`F_MUX_4`). Based on the selector `K`, it picks one of 9 input values (`IN1`, `IN2`, `IN3`, `IN4`, `IN5`, `IN6`, `IN7`, `IN8`, `IN9`) and outputs it via `OUT`.

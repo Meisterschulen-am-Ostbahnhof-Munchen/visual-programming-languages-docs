@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_MULTIME](F_MULTIME.svg)
+
 ## Introduction
 
 The **F_MULTIME** function block is a standards-compliant function block for multiplying time values by numerical factors, developed under the EPL-2.0 license. Version 1.0 enables type-safe scaling of time intervals according to the IEC 61131-3 standard.
@@ -30,13 +31,16 @@ The **F_MULTIME** function block is a standards-compliant function block for mul
 ## Functional Principle
 
 1. **Calculation Trigger**:
+
 - `REQ` event with time value (IN1) and factor (IN2)
 - IN1 must be of type TIME, IN2 must be of type ANY_NUM
-2. **Multiplication**:
+1. **Multiplication**:
+
 - Time value is converted to nanoseconds
 - Multiplication by a numeric factor
 - Conversion back to TIME data type
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with scaled time value
 - Result always of type TIME
 
@@ -69,7 +73,7 @@ The **F_MULTIME** function block is a standards-compliant function block for mul
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_MULTIME | F_MUL | F_DIVTIME |
-|----------------|-----------|---------|----------|
+| ---------------- | ----------- | --------- | ---------- |
 | Operation | Time Multiplication | Numeric Multiplication | Time Division |
 | Inputs | TIME × ANY_NUM | ANY_NUM × ANY_NUM | TIME ÷ ANY_NUM |
 | Output Type | TIME | ANY_NUM | TIME |

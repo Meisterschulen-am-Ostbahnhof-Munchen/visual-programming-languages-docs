@@ -70,7 +70,7 @@ Eine detaillierte Zustandsbeschreibung des Konvertierungsbausteins ist der IEC-6
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgangstyp | Besonderheit |
-|----------|-------------|--------------|
+| ---------- | ------------- | -------------- |
 | `AL_TO_AUI` | UINT | Direkter Adapter-Konverter, unidirektional, Composite |
 | `AL_TO_AUD` | DINT | Konvertiert LWORD in DINT (32-Bit) |
 | `AUI_TO_AL` | LWORD | Rückwärtskonvertierung von UINT nach LWORD (nicht vorhanden, müsste separat implementiert werden) |

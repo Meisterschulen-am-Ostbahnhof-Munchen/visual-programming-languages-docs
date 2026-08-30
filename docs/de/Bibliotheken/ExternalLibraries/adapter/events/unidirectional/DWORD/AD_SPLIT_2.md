@@ -3,6 +3,7 @@
 ![AD_SPLIT_2](./AD_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AD_SPLIT_2 dient dazu, einen eingehenden unidirektionalen Adapter (AD) auf zwei identische Ausgangsadapter aufzuteilen. Er ist als generischer Baustein implementiert und ermöglicht die einfache Verzweigung eines Adaptersignals in zwei parallele Pfade.

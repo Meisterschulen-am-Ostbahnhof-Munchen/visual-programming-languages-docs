@@ -3,6 +3,7 @@
 ![](https://user-images.githubusercontent.com/69573151/210781478-8f72e916-a5af-485b-9b70-0cb6ee45204e.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The QW function block is an output service interface module for outputting Word data. It serves as an interface between the control logic and physical output devices or resources, enabling the secure transfer of 16-bit data to external hardware.

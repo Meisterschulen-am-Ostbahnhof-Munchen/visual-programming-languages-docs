@@ -3,6 +3,7 @@
 ![F_CONCAT_DT](F_CONCAT_DT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_CONCAT_DT` combines individual date/time components (`YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) into a composite `DATE_AND_TIME` value. It is the reverse of [F_SPLIT_DT](F_SPLIT_DT.md), which splits the same `DATE_AND_TIME` value back into its individual components.

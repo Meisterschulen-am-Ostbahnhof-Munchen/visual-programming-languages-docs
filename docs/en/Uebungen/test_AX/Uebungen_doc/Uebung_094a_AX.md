@@ -1,8 +1,9 @@
 # Exercise_094a_AX: Example of QI instead of Permit
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_094a_AX`.
+This article describes the logiBUS® exercise `Uebung_094a_AX`
 ----
+
 ## Objective of the Exercise
 
 Using the `QI` (Qualifier Input) parameter for runtime control of function blocks.

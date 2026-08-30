@@ -4,6 +4,7 @@ No image available.
 ![AULI_TO_ALR](./AULI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AULI_TO_ALR** is a composite function block (FB) that converts an incoming AULI adapter (ULINT data) into an outgoing ALR adapter (LREAL data). It serves as a standardized interface between components that communicate different data types via adapters.
@@ -47,8 +48,8 @@ The function block operates according to the request-acknowledgment principle:
 
 1. As soon as an event arrives at **E1** on the input adapter **AULI_IN**, the internal function block **F_ULINT_TO_LREAL** (from the library `iec61131::conversion`) is called.
 2. The value **AULI_IN.D1** is fed to the input **IN** of the converter. 3. The converter performs the conversion from ULINT to LREAL (integer to floating-point number).
-4. After the conversion is complete, the result is forwarded to **ALR_OUT.D1**.
-5. Simultaneously, the event **ALR_OUT.E1** is triggered at the output adapter to signal the downstream function block that the data is being processed.
+3. After the conversion is complete, the result is forwarded to **ALR_OUT.D1**.
+4. Simultaneously, the event **ALR_OUT.E1** is triggered at the output adapter to signal the downstream function block that the data is being processed.
 
 All logic runs within a function block network and is transparent to the user.
 

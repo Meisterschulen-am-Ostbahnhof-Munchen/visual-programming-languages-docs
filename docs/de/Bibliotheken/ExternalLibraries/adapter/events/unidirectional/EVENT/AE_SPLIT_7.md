@@ -3,6 +3,7 @@
 ![AE_SPLIT_7](./AE_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AE_SPLIT_7** dient dazu, ein einzelnes eingehendes Adapter-Ereignis (AE) auf sieben gleichartige Ausgangsadapter zu verteilen. Es handelt sich um einen generischen Baustein, der für unidirektionale Adapter des Typs `adapter::types::unidirectional::AE` ausgelegt ist. Der FB ermöglicht eine sternförmige Weiterleitung eines Ereignissignals an mehrere nachgelagerte Bausteine, ohne dass die Ereignisse verändert oder verzögert werden.
@@ -28,15 +29,15 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AE` | **IN** | Socket | Eingangsadapter, der das zu verteilende Ereignis empfängt. |
-| `adapter::types::unidirectional::AE` | **OUT1** | Plug    | Erster Ausgangsadapter, das empfangene Ereignis wird hierhin weitergeleitet. |
-| `adapter::types::unidirectional::AE` | **OUT2** | Plug    | Zweiter Ausgangsadapter. |
-| `adapter::types::unidirectional::AE` | **OUT3** | Plug    | Dritter Ausgangsadapter. |
-| `adapter::types::unidirectional::AE` | **OUT4** | Plug    | Vierter Ausgangsadapter. |
-| `adapter::types::unidirectional::AE` | **OUT5** | Plug    | Fünfter Ausgangsadapter. |
-| `adapter::types::unidirectional::AE` | **OUT6** | Plug    | Sechster Ausgangsadapter. |
-| `adapter::types::unidirectional::AE` | **OUT7** | Plug    | Siebter Ausgangsadapter. |
+| `adapter::types::unidirectional::AE` | **OUT1** | Plug | Erster Ausgangsadapter, das empfangene Ereignis wird hierhin weitergeleitet. |
+| `adapter::types::unidirectional::AE` | **OUT2** | Plug | Zweiter Ausgangsadapter. |
+| `adapter::types::unidirectional::AE` | **OUT3** | Plug | Dritter Ausgangsadapter. |
+| `adapter::types::unidirectional::AE` | **OUT4** | Plug | Vierter Ausgangsadapter. |
+| `adapter::types::unidirectional::AE` | **OUT5** | Plug | Fünfter Ausgangsadapter. |
+| `adapter::types::unidirectional::AE` | **OUT6** | Plug | Sechster Ausgangsadapter. |
+| `adapter::types::unidirectional::AE` | **OUT7** | Plug | Siebter Ausgangsadapter. |
 
 ## Funktionsweise
 

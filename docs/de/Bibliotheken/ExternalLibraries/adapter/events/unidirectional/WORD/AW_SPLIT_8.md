@@ -3,6 +3,7 @@
 ![AW_SPLIT_8](./AW_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_SPLIT_8** ist ein generischer Baustein, der ein eingehendes unidirektionales AW-Adapter-Signal auf acht identische Ausgangssignale aufteilt. Der Baustein wurde als generischer FB (generic FB) implementiert und kann zur Laufzeit mit einem konkreten Typnamen und Typprüfcode versehen werden. Er dient als 1:8-Verteiler für AW-Datenströme und wird typischerweise in der Automatisierungstechnik eingesetzt, wenn ein Signal gleichzeitig an mehrere Senken weitergeleitet werden muss.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden. Die Ausgangsdaten werden über die Plug-Adapter
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|------|------|----------|--------------|
+| ------ | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AW` | `IN` | Socket (Eingang) | Quell-Adapter, der das aufzuteilende Signal liefert |
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug (Ausgang) | Erster Ausgang, identisch zum IN-Signal |
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug (Ausgang) | Zweiter Ausgang |

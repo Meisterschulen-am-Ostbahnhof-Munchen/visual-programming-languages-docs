@@ -3,6 +3,7 @@
 ![Uebung_080c_AUI_network](./Uebung_080c_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an up counter (E_CTU) in combination with a T flip-flop (AX_T_FF) and an event enable block (AX_PERMIT).
@@ -49,21 +50,22 @@ The current counter value is sent via a converter to a numeric output on a termi
 
 A button connected to `Input_I1` (configured to `BUTTON_SINGLE_CLICK`) triggers a single event at the output `IND` of `DigitalInput_CLK_I1` each time it is pressed.
 
-2. **Event Halving**
+1. **Event Halving**
 
 The event is forwarded to the clock input `CLK` of the T flip-flop `AX_T_FF`. This flip-flop changes its state (Q) with each clock cycle, thus only passing on every second button event as the active state.
 
-2. **Event Halving** 3. **Enabled by AX_PERMIT**
+1. **Event Halving** 3. **Enabled by AX_PERMIT**
 
 The output `Q` of `AX_T_FF` is connected to the `PERMIT` input of `AX_PERMIT`. As long as `PERMIT` is active, an incoming event at the internal input (not visible here) is passed through to the output `EO`. This halves the event frequency.
 
-4. **Counter E_CTU**
+1. **Counter E_CTU**
 
 The enabled event reaches the up counter via its input `CU`. The internal counter value is incremented by 1 with each event.
 
 A second button on `Input_I2` triggers an event that is directly connected via `DigitalInput_CLK_I2.IND` to the reset input `R` of `E_CTU` – when pressed, the counter is reset to 0.
 
-5. **Counter Reading Output**
+1. **Counter Reading Output**
+
 - The current counter value (`CV`) is converted into an analog data value via the converter `AUI_TO_AUDI`.
 - This value is passed to the data block `Q_NumericValue_AUDI`, which displays it on a terminal (e.g., via the configured `OutputNumber_N1`).
 - Simultaneously, the counter provides a binary output `Q`, which is active whenever the counter reading is greater than 0. This output is then forwarded to the digital output `DigitalOutput_Q1` (to `Output_Q1`).

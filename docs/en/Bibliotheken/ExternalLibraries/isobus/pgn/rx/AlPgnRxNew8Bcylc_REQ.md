@@ -6,6 +6,7 @@
 
 The function block `AlPgnRxNew8Bcylc_REQ` is used for the cyclical request of data via a CAN network according to the ISOBUS standard (ISO 11783). Its main purpose is the installation and management of receive parameters for specific Parameter Group Numbers (PGNs). The block enables the configuration of cyclical receive and monitors the data flow by triggering corresponding events upon successful receive, timeouts, or errors.
 ![AlPgnRxNew8Bcylc_REQ](AlPgnRxNew8Bcylc_REQ.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -64,6 +65,7 @@ This function block does not use any adapter interfaces.
 1. **Not Initialized**: After startup. Waiting for `INIT`.
 2. **Ready**: After `INITO`. Can receive `install` requests.
 3. **Installed**: After successful `installO`. Actively monitors the CAN bus for the configured PGN.
+
 - On reception: Transitions to the "Data Available" state (triggers `IND`), then returns to "Installed".
 - On timeout: Triggers `TIMEOUT`, remains in the "Installed" state (continues monitoring).
 - On error: Triggers `pgnERR`/`dataERR`, remains in the "Installed" state.

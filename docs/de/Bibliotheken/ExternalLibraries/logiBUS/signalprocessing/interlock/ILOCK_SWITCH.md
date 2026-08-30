@@ -3,6 +3,7 @@
 ![ILOCK_SWITCH](./ILOCK_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ILOCK_SWITCH** dient als prioritätsgesteuerte Weiche mit Verriegelungsfunktion. Er wertet zwei Ereignissignale (**EI_UP** und **EI_DOWN**) in Kombination mit zugehörigen booleschen Datenwerten aus und setzt die Ausgänge **DO_UP** und **DO_DOWN** entsprechend. Dabei wird stets der zuletzt aktive Eingang priorisiert – eine gleichzeitige Aktivierung beider Ausgänge ist ausgeschlossen. Die Logik verhindert Oszillationen und sorgt für einen definierten Zustand auch bei ungültigen oder widersprüchlichen Eingangsbelegungen.
@@ -71,7 +72,7 @@ Durch diese Logik wird sichergestellt, dass stets nur eine Richtung aktiv ist un
 ## Zustandsübersicht
 
 | Zustand | DO_UP | DO_DOWN | Erreicht durch |
-|---------|-------|---------|----------------|
+| --------- | ------- | --------- | ---------------- |
 | STOP | FALSE | FALSE | Start / nach UP_STOP und DOWN_STOP |
 | UP | TRUE | FALSE | EI_UP mit DI_UP=TRUE aus STOP oder DOWN |
 | DOWN | FALSE | TRUE | EI_DOWN mit DI_DOWN=TRUE aus STOP oder UP |

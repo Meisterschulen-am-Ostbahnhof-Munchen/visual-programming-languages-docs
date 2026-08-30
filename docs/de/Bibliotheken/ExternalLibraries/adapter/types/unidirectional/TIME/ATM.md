@@ -59,7 +59,7 @@ Da der ATM-Adapter keine interne Zustandsmaschine besitzt (zustandsloser Adapter
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | ATM (dieser Adapter) | Andere unidirektionale Adapter (z. B. mit mehreren Events/Daten) |
-|---------|----------------------|----------------------------------------------------------------|
+| --------- | ---------------------- | ---------------------------------------------------------------- |
 | Ereignisse | 1 (E1) | meist mehrere (z. B. INIT, REQ, IND, RSP) |
 | Daten | 1 (TIME) | oft mehrere Daten oder verschiedene Typen |
 | Komplexität | gering | mittel bis hoch |

@@ -3,6 +3,7 @@
 <img width="1324" height="243" alt="image" src="https://github.com/user-attachments/assets/b55df574-a026-4d8a-b907-32a7779df532" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 **Wichtiger Hinweis: Dieser Baustein funktioniert nur korrekt, wenn er zyklisch aufgerufen wird.**

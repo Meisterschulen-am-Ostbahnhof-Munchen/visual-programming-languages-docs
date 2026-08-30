@@ -5,6 +5,7 @@
 ## Introduction
 
 The SCALE_LIM function block is a scaling module with additional limiting functions. It enables the linear scaling of an input value within a defined range and also offers the option of fixing output values when certain input limits are exceeded.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -41,9 +42,10 @@ The function block performs the following operations:
 
 1. Checks whether the input value IN exceeds the defined limits MIN_IN_LIM or MAX_IN_LIM
 2. If IN exceeds MAX_IN_LIM: Outputs MAX_OUT_FIX
-4. In normal operating range: Linear scaling of the input value according to the formula:
+3. In normal operating range: Linear scaling of the input value according to the formula:
 
 (IN - MIN_IN) * (MAX_OUT - MIN_OUT) / (MAX_IN - MIN_IN) + MIN_OUT
+
 ## Technical Features
 
 - Implemented in Structured Text (ST)

@@ -64,8 +64,9 @@ The exercise `Uebung_002a5b_AX` implements a control logic in which the states o
 
 The `AX_OR_3` block logically combines these three Boolean values. The result (`TRUE`, if I1 OR I2 OR I3 is `TRUE`) is made available at its data output `AX_OR_3.OUT`.
 
-3. **Signal Distribution**: The data output of the OR gate (`AX_OR_3.OUT`) is connected to the data input of the signal distributor `AX_SPLIT_3` (`AX_SPLIT_3.IN`). The `AX_SPLIT_3` gate duplicates this single control signal and forwards it to its three data outputs (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`).
-4. **Output Control**: The outputs of the signal distributor are each connected to the inputs of the digital output modules:
+1. **Signal Distribution**: The data output of the OR gate (`AX_OR_3.OUT`) is connected to the data input of the signal distributor `AX_SPLIT_3` (`AX_SPLIT_3.IN`). The `AX_SPLIT_3` gate duplicates this single control signal and forwards it to its three data outputs (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`).
+2. **Output Control**: The outputs of the signal distributor are each connected to the inputs of the digital output modules:
+
 - `AX_SPLIT_3.OUT1` is connected to `DigitalOutput_Q1.OUT`.
 - `AX_SPLIT_3.OUT2` is connected to `DigitalOutput_Q2.OUT`.
 - `AX_SPLIT_3.OUT3` is connected to `DigitalOutput_Q3.OUT`.

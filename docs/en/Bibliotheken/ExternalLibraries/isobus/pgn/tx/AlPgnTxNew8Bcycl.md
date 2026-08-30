@@ -6,6 +6,7 @@
 
 The function block `AlPgnTxNew8Bcycl` is used for the cyclic transmission of data over a CAN network according to the ISOBUS standard (ISO 11783). Its main purpose is the installation, configuration, and regular transmission of Parameter Group Numbers (PGNs). It allows the definition of communication properties such as destination address, priority, and transmission interval, and ensures that data is transmitted reliably and at the configured frequency.
 ![AlPgnTxNew8Bcycl](AlPgnTxNew8Bcycl.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +54,7 @@ This function block does not use any adapter interfaces.
 
 - This block is designed for use in ISOBUS environments (agricultural machinery) and uses specific ISOBUS data types (`ISONETEVENT_T`, `CAN_MSG`).
 - Cyclical transmission can be deactivated by setting `u16DefRepRate` to 0, enabling on-demand operation.
-- * Error handling is structured via dedicated events (`dataERR`, `pgnERR`), enabling robust integration into higher-level controllers.
+- - Error handling is structured via dedicated events (`dataERR`, `pgnERR`), enabling robust integration into higher-level controllers.
 - Returning a `PGN_handle` event allows the management of multiple installed PGNs within a single system.
 
 ## State Overview

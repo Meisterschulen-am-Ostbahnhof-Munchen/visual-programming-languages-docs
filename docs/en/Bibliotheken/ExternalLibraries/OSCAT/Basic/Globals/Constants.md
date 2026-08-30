@@ -1,6 +1,7 @@
 # Constants
 
 Global constants
+
 ## Global Constants
 
 | Name | Type | Initial Value |

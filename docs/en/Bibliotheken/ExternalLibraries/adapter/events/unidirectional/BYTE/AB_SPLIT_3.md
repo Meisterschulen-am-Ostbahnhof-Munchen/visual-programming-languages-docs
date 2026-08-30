@@ -3,9 +3,11 @@
 ![AB_SPLIT_3](./AB_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_SPLIT_3** is used to split an incoming unidirectional data/signal adapter (type `AB`) into three identical output adapters. It is implemented as a generic function block and represents a simple 1-to-3 distribution without additional logic or delay.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AB` | `IN` | Socket (Input) | Receives a unidirectional AB-type adapter. |
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug (Output) | First output of the incoming signal. |
 | `adapter::types::unidirectional::AB` | `OUT2` | Plug (Output) | Second output of the incoming signal. |
@@ -59,7 +61,7 @@ The function block has **no explicit state machine**. The behavior is purely dat
 ## Comparison with Similar Function Blocks
 
 | Function Block | Behavior | Special Feature |
-|----------|------------|--------------|
+| ---------- | ------------ | -------------- |
 | `SPLIT_2` | 1-to-2 Distribution | Analog function block with two outputs. |
 | `AB_SPLIT_3` | 1-to-3 Distribution | This block. |
 | `AB_JOIN` | Combining Multiple Adapters | Counterpart to the splitter. |

@@ -3,6 +3,7 @@
 ![Uebung_004a4_AX_T_network](./Uebung_004a4_AX_T_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines **Toggle-Flipflops (AX_FB_T_FF)** mit Hilfe von Adaptern.
@@ -34,7 +35,7 @@ Die SubApp enthält folgende Funktionsbausteine:
   - Parameter: `QI = TRUE`, `Output = Output_Q1`
   - *Verbindet den Flipflop-Ausgang mit dem physischen Ausgang Output_Q1.*
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 Es wurden keine weiteren SubApp-Bausteine innerhalb dieser Übung verwendet.
 

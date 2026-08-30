@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AW_AX_SEL_AW` dient der binären Auswahl (Selektion) zwischen zwei analogen oder wortbasierten Eingangssignalen über einen binären Selektor. Der Baustein ist speziell für die Verwendung mit adapterbasierten Schnittstellen in 4diac-ide (IEC 61499) konzipiert. Er kapselt die klassische Selektionslogik (`SEL`) und stellt diese über unidirektionale Adapter für `WORD`-Daten (`AW`) und binäre Steuersignale (`AX`) zur Verfügung.

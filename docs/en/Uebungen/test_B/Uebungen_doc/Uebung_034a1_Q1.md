@@ -1,6 +1,7 @@
 # Exercise_034a1_Q1: Numeric Value Input to PWM Output
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
+
 ## Overview
 
 [cite_start]In this exercise, a numeric value is read directly from the ISOBUS terminal to control the duty cycle of a PWM output (`Q1`)[cite: 1].

@@ -3,6 +3,7 @@
 ![ASSEMBLE_AW_FROM_AX](./ASSEMBLE_AW_FROM_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_AW_FROM_AX` fasst 16 boolesche Einzelsignale, die von separaten AX-Adaptern bereitgestellt werden, zu einem 16‑Bit‑Wort (WORD) zusammen und gibt dieses über einen AW-Adapter aus. Er ermöglicht die Konvertierung einer diskreten digitalen Signalgruppe in einen einheitlichen Datenwort‑Wert für die weitere Verarbeitung.
@@ -28,7 +29,7 @@ Keine direkten Daten-Ausgänge. Das resultierende 16‑Bit‑Wort (WORD) wird ü
 ### **Adapter**
 
 | Typ | Name | Beschreibung |
-|------|------|--------------|
+| ------ | ------ | -------------- |
 | **Socket (Eingang)** | `BIT_00` | AX-Adapter, Bool Bit 0 |
 | **Socket (Eingang)** | `BIT_01` | AX-Adapter, Bool Bit 1 |
 | **Socket (Eingang)** | `BIT_02` | AX-Adapter, Bool Bit 2 |

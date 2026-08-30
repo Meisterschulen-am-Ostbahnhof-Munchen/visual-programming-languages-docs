@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUS_ADD_3` ist ein generischer arithmetischer Additionsbaustein für die 4diac-IDE. Er dient dazu, die Werte von drei Eingangs-Adaptern (`IN1`, `IN2` und `IN3`) zu addieren und das Ergebnis über einen Ausgangs-Adapter (`OUT`) bereitzustellen. Der Baustein nutzt dafür unidirektionale Adapter vom Typ `AUS`.
@@ -33,11 +34,13 @@ Der Funktionsbaustein `AUS_ADD_3` ist ein generischer arithmetischer Additionsba
 Der Baustein kommuniziert ausschließlich über Adapter-Schnittstellen:
 
 **Sockets (Eingangs-Adapter):**
+
 - **IN1** (Typ: `adapter::types::unidirectional::AUS`): Erster Summand für die Addition.
 - **IN2** (Typ: `adapter::types::unidirectional::AUS`): Zweiter Summand für die Addition.
 - **IN3** (Typ: `adapter::types::unidirectional::AUS`): Dritter Summand für die Addition.
 
 **Plugs (Ausgangs-Adapter):**
+
 - **OUT** (Typ: `adapter::types::unidirectional::AUS`): Ausgangsadapter, der das Ergebnis der Addition (`IN1 + IN2 + IN3`) führt.
 
 ## Funktionsweise
@@ -58,6 +61,7 @@ Nach erfolgreicher Berechnung wird das Ergebnis sowie das zugehörige Aktualisie
 ## Zustandsübersicht
 
 Da es sich um einen kombinatorischen (bzw. zustandslosen) Funktionsbaustein handelt, besitzt `AUS_ADD_3` keine komplexen internen Zustände (keine State Machine). Die Verarbeitung erfolgt rein ereignisgesteuert:
+
 1. **Wartezustand:** Der Baustein wartet auf ein Ereignis an einem der Eingänge (`IN1`, `IN2`, `IN3`).
 2. **Berechnung:** Bei Eintreffen eines Ereignisses werden die Daten ausgelesen und addiert.
 3. **Aktualisierung:** Das Ergebnis wird an `OUT` geschrieben und das entsprechende Ausgangsereignis am Adapter ausgelöst.

@@ -3,6 +3,7 @@
 ![F_SPLIT_LTOD](F_SPLIT_LTOD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_SPLIT_LTOD` zerlegt einen `LTIME_OF_DAY`-Wert in seine einzelnen Zeit-/Datumsbestandteile (`HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`). Er ist die Umkehrung von [F_CONCAT_LTOD](F_CONCAT_LTOD.md), das dieselben Einzelbestandteile wieder zu einem `LTIME_OF_DAY`-Wert zusammenfügt.

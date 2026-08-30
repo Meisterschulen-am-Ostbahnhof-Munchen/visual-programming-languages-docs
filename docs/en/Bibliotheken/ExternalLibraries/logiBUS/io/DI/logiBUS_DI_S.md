@@ -1,12 +1,15 @@
 # logiBUS_DI_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `logiBUS_DI_S` is a structured data type (struct) used to configure a digital input (DI) within the logiBUS framework. It defines the basic parameters necessary to control a physical or logical input point on a logiBUS-compatible I/O system. This data type is typically used as input for specific I/O function blocks.
+
 ## Interface Structure
 
 As a structured data type, `logiBUS_DI_S` does not have event or adapter interfaces in the conventional sense. Its structure consists of a single data element.
+
 ## **Data Inputs**
 
 The structure itself represents the configurable data inputs. It is passed as a whole to a higher-level function block.

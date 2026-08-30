@@ -3,9 +3,11 @@
 ![AX_TO_ALR](./AX_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_TO_ALR** is used to convert a BOOL adapter signal (AX) into an LREAL adapter signal (ALR). Internally, it uses the IEC 61131 standard function `F_SEL` (Selection) to generate a discrete LREAL value from a Boolean input. The block is implemented as a composite function block and is suitable for the simple, adapter-based conversion of digital states into numerical values.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block **AX_TO_ALR** is used to convert a BOOL adapter signal (AX) i
 ### **Adapters**
 
 | Direction | Label | Type | Description |
-|----------|-------------|-----|--------------|
+| ---------- | ------------- | ----- | -------------- |
 | Socket (Input) | `AX_IN` | `adapter::types::unidirectional::AX` | Receives a BOOL signal via the unidirectional AX adapter. |
 | Plug (Output) | `ALR_OUT` | `adapter::types::unidirectional::ALR` | Provides the converted LREAL signal via the unidirectional ALR adapter. |
 
@@ -46,9 +48,10 @@ The function block operates according to the following scheme:
 1. An incoming event at `AX_IN.E1` triggers the internal processing.
 2. The Boolean value of ``AX_IN.D1`` is passed to the gate input (G) of the embedded function ``F_SEL``.
 3. Depending on the Boolean value, ``F_SEL`` selects one of two constant values:
+
 - ``FALSE`` (G = 0) → Output of **0.0** (LREAL#0.0)
 - ``TRUE`` (G = 1) → Output of **1.0** (LREAL#1.0)
-4. The result is passed to ``ALR_OUT.D1``, and the acknowledgment event ``ALR_OUT.E1`` is simultaneously output.
+1. The result is passed to ``ALR_OUT.D1``, and the acknowledgment event ``ALR_OUT.E1`` is simultaneously output.
 
 `ALR_OUT.D1`` is passed to the gate input (G) of the embedded function ``ALR_OUT.E1``. The conversion is event-driven: Each incoming event causes exactly one conversion of the current BOOL value.
 
@@ -76,7 +79,7 @@ Since this is a composite function block (FB) without its own execution state, t
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Special Feature |
-|----------|-------------|-------------|--------------|
+| ---------- | ------------- | ------------- | -------------- |
 | `AX_TO_ALR` | BOOL (Adapter) | LREAL (Adapter) | Adapter-based, fixed values 0.0 / 1.0 |
 | `BOOL_TO_REAL` | BOOL (direct) | REAL (direct) | Conventional IEC function block, values freely configurable |
 | `SEL` / `F_SEL` | BOOL + 2x ANY | ANY | General selection without adapter, values configurable |

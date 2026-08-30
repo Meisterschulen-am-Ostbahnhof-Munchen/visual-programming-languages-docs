@@ -48,6 +48,7 @@ The result is immediately passed to the output adapter `OUT` and is available fo
 - **Generic Implementation:** The `GenericClassName = 'GEN_ADI_MUL'` attribute makes the function block data type independent.
 - **Adapter Encapsulation:** Using the unidirectional adapter `ADI` reduces the number of visible lines in the function block diagram because data and events are bundled and transferred in a single connection.
 - **Compiler Context:** The function block is organized in the package `adapter::iec61131::arithmetic` and imports the class `eclipse4diac::core::GenericClassName`.
+
 - ## State Overview
 
 The function block behaves in a purely stateless (or combinatorial) manner. There is no internal state machine (ECC). Each activation of the input adapters directly leads to the calculation of the output value and the updating of the output adapter `OUT`.
@@ -58,6 +59,7 @@ The function block behaves in a purely stateless (or combinatorial) manner. Ther
 Compared to a standard multiplication block (such as the classic `MUL` block from the IEC 61131-3 library), which uses explicit data pins (`IN1`, `IN2`, `OUT`) and events (`REQ`, `CNF`), the `ADI_MUL_2` eliminates the need for manual wiring of trigger events. This increases reusability and results in cleaner software design.
 
 The `ADI_MUL_2` is a modern, flexible, and easy-to-wire multiplication block. Through the consistent use of unidirectional adapters, it is ideally suited for service-oriented architectures in industrial automation and facilitates the creation of cleanly structured IEC 61499 applications.
+
 ## Technical Features
 
 ## State Overview

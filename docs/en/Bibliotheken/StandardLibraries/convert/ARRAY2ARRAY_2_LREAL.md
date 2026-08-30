@@ -39,7 +39,7 @@ The function block `ARRAY2ARRAY_2_LREAL` operates in an event-driven manner. As 
 
 - **Service Interface:** The function block is designed as a "Service Interface Function Block Type," indicating a standard interface for specific services.
 - **Generic Implementation:** Internally, this function block likely uses a generic implementation, as indicated by the attribute value `'GEN_ARRAY2ARRAY'`. This allows for the flexible creation of similar function blocks for different array sizes and data types.
-- * **Fixed Array Size:** The array size for `IN` and `OUT` is fixed at `2`, limiting its use to specific scenarios with this array dimension.
+- - **Fixed Array Size:** The array size for `IN` and `OUT` is fixed at `2`, limiting its use to specific scenarios with this array dimension.
 - **Data Type `LREAL`:** The function block is specialized for the data type `LREAL` (Long Real Number), making it ideal for processing high-precision floating-point numbers.
 
 ## State Overview
@@ -54,7 +54,7 @@ The function block typically exists in two main states:
 - **Data Routing:** Forwarding `LREAL` data packets of size 2 between different parts of a control system.
 - **Data Buffering:** Short-term storage or transmission of measured values or setpoints.
 - **Interface Adaptation:** If a function block outputs a `LREAL` array of size 2 and another function block requires the same array as input, this function block can act as a bridge.
-- * **Constant Data Transfer:** Transferring static or infrequently updated `LREAL` arrays from one point to another.
+- - **Constant Data Transfer:** Transferring static or infrequently updated `LREAL` arrays from one point to another.
 
 ## ⚖️ Comparison with Similar Building Blocks
 

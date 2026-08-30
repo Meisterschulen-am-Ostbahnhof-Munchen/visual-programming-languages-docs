@@ -3,6 +3,7 @@
 ![NVS_AIS](./NVS_AIS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `NVS_AIS` dient zum Speichern und Laden von Zeichenketten (STRING) im nichtflüchtigen Speicher (NVS – Non‑Volatile Storage) eines ESP32‑Mikrocontrollers. Die Daten werden über einen Schlüssel (KEY) adressiert und über AIS‑Adapter (Acyclic Information Service) ausgetauscht. Der Baustein kapselt die Initialisierung des NVS sowie die grundlegenden Lese‑ und Schreiboperationen und stellt eine standardisierte Schnittstelle für die Einbindung in industrielle Steuerungsanwendungen bereit.

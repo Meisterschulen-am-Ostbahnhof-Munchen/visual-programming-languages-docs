@@ -3,9 +3,11 @@
 ![AQ_SPLIT_2](./AQ_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AQ_SPLIT_2` serves as a fan-out block. It distributes an incoming AQ (Analog Quantity) signal unidirectionally to two identical outputs. It thus implements a simple 1:2 signal multiplication for analog quantities.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|------|------|----------|--------------|
+| ------ | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AQ` | `IN` | Socket (Input) | Input adapter for the AQ signal to be split. |
 | `adapter::types::unidirectional::AQ` | `OUT1` | Plug (Output) | First output – provides the unaltered input signal. |
 | `adapter::types::unidirectional::AQ` | `OUT2` | Plug (Output) | Second output – also provides the unaltered input signal. |

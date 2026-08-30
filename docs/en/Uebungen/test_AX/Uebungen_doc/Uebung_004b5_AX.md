@@ -3,9 +3,11 @@
 ![Uebung_004b5_AX_network](./Uebung_004b5_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a toggle flip-flop using a logiBUS input and output adapter (IXA/QXA) and the adapter function blocks AX_R_TRIG (edge detection) and AX_T_FF (toggle flip-flop). The behavior: On each rising edge of the digital input signal, the output toggles its state.
+
 ## Function Blocks Used (FBs)
 
 - **DigitalInput_I1** (Type: logiBUS::io::DI::logiBUS_IXA)
@@ -27,11 +29,11 @@ The program flow is defined via adapter and event connections in the network:
 
 The input signal is fed to the adapter input QI of the edge detector.
 
-2. **Event Connection** from `AX_R_TRIG.EO` to `AX_T_FF.CLK`:
+1. **Event Connection** from `AX_R_TRIG.EO` to `AX_T_FF.CLK`:
 
 On a rising edge at the input, AX_R_TRIG generates an event that clocks the toggle flip-flop.
 
-3. **Adapter Connection** from `AX_T_FF.Q` to `DigitalOutput_Q1.OUT`:
+1. **Adapter Connection** from `AX_T_FF.Q` to `DigitalOutput_Q1.OUT`:
 
 The current output state of the toggle flip-flop is transferred to the output adapter.
 

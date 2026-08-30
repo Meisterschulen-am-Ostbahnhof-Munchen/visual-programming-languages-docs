@@ -1,6 +1,7 @@
 # Eclipse 4diac™ IDE icon
 
 This is the list of icons already redesigned.
+
 ## Function Blocks
 
 - ![Type Info](figs/icons/application.png) Application
@@ -18,11 +19,13 @@ This is the list of icons already redesigned.
 - ![Type Info](figs/icons/system.png) System
 - ![Type Info](figs/icons/system_configuration.png) System Configuration
 
-##Device
+## Device
+
 - ![Type Info](figs/icons/device.png) Device
 - ![Type Info](figs/icons/resource.png) Resource
 
-##Event/Data/Adapters
+## Event/Data/Adapters
+
 - ![Event](figs/icons/event.png) Event
 - ![Event In](figs/icons/event_in.png) Event In
 - ![Event Out](figs/icons/event_out.png) Event Out
@@ -34,7 +37,8 @@ This is the list of icons already redesigned.
 - ![Adapter Out](figs/icons/adapter_out.png) Adapter Out
 - ![Interface](figs/icons/interface.png) Interface
 
-##ECC
+## ECC
+
 - ![ECC](figs/icons/ecc.png) ECC
 - ![ECC Action](figs/icons/ecc_action.png) ECC Action
 - ![ECC State](figs/icons/ecc_state.png) ECC State

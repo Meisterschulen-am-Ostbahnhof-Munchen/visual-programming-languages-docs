@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_ADD_2` is a generic arithmetic block for performing addition (ADD) based on the IEC 61131-3 standard. It is classified as a standard arithmetic function and serves to add two input values via an adapter interface and output the result.

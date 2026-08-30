@@ -3,6 +3,7 @@
 ![Uebung_004a2_3_AX_network](./Uebung_004a2_3_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert ein **Toggle Flip-Flop** (T-FF), das über zwei separate Taster (Eingänge I1 und I2) gesteuert wird. Die Taster werden als **BUTTON_SINGLE_CLICK** konfiguriert, d.h. jeder Tastendruck erzeugt genau ein Ereignis. Die Ereignisse beider Taster werden über einen **E_MERGE_3** Baustein zusammengeführt und an den Takteingang (CLK) des T-FF weitergeleitet. Der Ausgang Q des T-FF schaltet einen digitalen Ausgang (Q1). Das Schaltverhalten: Jeder Tastendruck (egal von welchem Taster) toggelt den Ausgangszustand.

@@ -3,6 +3,7 @@
 ![ARRAY2ARRAY_8_BYTE](ARRAY2ARRAY_8_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ARRAY2ARRAY_8_BYTE` ist ein Service-Interface-Funktionsblock, der ein `BYTE`-Array der Größe 8 unverändert von `IN` nach `OUT` kopiert. Er gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [ARRAY2ARRAY_2_LREAL](ARRAY2ARRAY_2_LREAL.md)) und dient als reine Typ-/Schnittstellenbrücke zwischen zwei `BYTE`-Arrays gleicher Größe.

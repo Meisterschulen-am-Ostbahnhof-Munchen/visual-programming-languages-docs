@@ -3,9 +3,11 @@
 ![logiBUS_LED_DO_QXA](./logiBUS_LED_DO_QXA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **logiBUS_LED_DO_QXA** is a composite function block (FB) that simplifies the control of a single LED via the logiBUS system. It receives a Boolean value (e.g., from a control logic) and configures the desired LED output (Q1–Q8) with an adjustable frequency and priority. The FB encapsulates the communication with the underlying hardware driver and provides a standardized interface.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -48,11 +50,11 @@ Wired data: `QO`, `STATUS`
 
 The FB is started by an INIT event. The supplied data (`QI`, `PARAMS`, `Output`, `FREQ`) are forwarded to the inner FB `logiBUS_LED_DO_QX`, which performs the actual logiBUS communication. If successful, `INITO` is sent with the output data `QO` and `STATUS`.
 
-2. **Operation**
+1. **Operation**
 
 After initialization, the function block waits for the event `OUT.E1`. This event is triggered by the connected resource as soon as a new Boolean value (`OUT.D1`) is present. The event is passed on to the internal function block as `REQ`. This block then updates the LED output according to the configured `Output` identification and the specified `FREQ`.
 
-3. **Confirmation**
+1. **Confirmation**
 
 After successful processing, the internal function block sends a `CNF` event, which is output externally as `CNF`. The outputs `QO` and `STATUS` indicate the current state.
 

@@ -3,6 +3,7 @@
 ![ATM_SUB](./ATM_SUB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_SUB** subtracts two time values (type TIME) via fully adapter-based interfaces: `IN2` is subtracted from `IN1`, and the result is written to the output adapter only on an actual value change. Unlike the generic `ATM_ADD_*` blocks, ATM_SUB is implemented as a hand-wired composite FB that maps change detection explicitly through its own sub-blocks.

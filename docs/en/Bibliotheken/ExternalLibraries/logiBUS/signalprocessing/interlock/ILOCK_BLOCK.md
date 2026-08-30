@@ -3,22 +3,24 @@
 ![ILOCK_BLOCK](./ILOCK_BLOCK.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_BLOCK** implements an interlock between two opposing signals. It prioritizes the first arriving active signal and ignores all subsequent conflicting signals until the initial signal is released. This ensures that two opposing actions (e.g., Up/Down, Right/Left) are never activated simultaneously.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | With Variable | Description |
-|----------|---------------|--------------|
+| ---------- | --------------- | -------------- |
 | `EI_UP` | `DI_UP` | Event to Set UP Direction |
 | `EI_DOWN` | `DI_DOWN` | Event to set the DOWN direction |
 
 ### **Event Outputs**
 
 | Event | With Variable | Description |
-|-----------|--------------|--------------|
+| ----------- | -------------- | -------------- |
 | `EO_UP` | `DO_UP` | Triggered when the UP direction is activated or deactivated |
 | `EO_DOWN` | `DO_DOWN` | Triggered when the DOWN direction is activated or deactivated |
 
@@ -32,7 +34,7 @@ The function block **ILOCK_BLOCK** implements an interlock between two opposing 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|------------|------|-----------|
+| ------------ | ------ | ----------- |
 | `DO_UP` | BOOL | TRUE = forward, upward, right, clockwise |
 | `DO_DOWN` | BOOL | TRUE = backward, downward, left, counterclockwise |
 
@@ -61,7 +63,7 @@ The module has two activation states (UP, DOWN) and two intermediate states (UP_
 ## State Overview
 
 | State | Description |
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **STOP** | Idle state. Both outputs FALSE. Waiting for activation. |
 | **UP** | UP direction active. DO_UP = TRUE, DO_DOWN = FALSE. Waiting for release by `EI_UP` with `DI_UP = FALSE`. |
 | **DOWN** | DOWN direction active. DO_UP = FALSE, DO_DOWN = TRUE. Waiting for release by `EI_DOWN` with `DI_DOWN = FALSE`. |

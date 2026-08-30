@@ -3,6 +3,7 @@
 <img width="1747" height="246" alt="image" src="https://github.com/user-attachments/assets/03bc479b-bcf2-4609-90d0-c235966f16a4" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OFFSET_UDINT` dient dazu, einen Offsetwert zu berechnen. Bei der ersten Ausführung mit einem Eingangswert größer als Null speichert der Baustein diesen Wert als Referenz (`FIRST`). Bei jedem Aufruf wird die Differenz zwischen dem aktuellen Eingangswert und diesem gespeicherten Referenzwert als Ausgang (`OUT`) berechnet. Dies ist besonders nützlich, um relative Änderungen gegenüber einem initialen Startwert zu ermitteln.

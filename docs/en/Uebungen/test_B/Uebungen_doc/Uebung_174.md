@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_174`, based on the provided XML data.
+
 # Exercise_174: Exercise for E_RESTART
 
 ![Uebung_174_network](./Uebung_174_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise_174 is a sub-application that deals with the initialization behavior of controllers in IEC 61499. Specifically, it focuses on working with the `E_RESTART` function block. This exercise provides a basic framework for implementing the logic for cold and warm starts.
@@ -12,7 +14,7 @@ Exercise_174 is a sub-application that deals with the initialization behavior of
 
 This exercise primarily uses a specific event block from the standard library.
 
-### Included Function Blocks:
+### Included Function Blocks
 
 - **E_RESTART_1**
 - **Type**: `iec61499::events::E_RESTART`
@@ -33,6 +35,7 @@ Currently, this exercise represents an empty network with a task.
 - Understanding the difference between the `COLD` and `WARM` start events.
 - Using the `E_RESTART` block to initialize variables or states when the controller starts.
 - **Procedure**:
+
 1. Open the exercise as a SubApp.
 2. Connect logic chains to the outputs of the `E_RESTART_1` block to define what should happen when the application starts (e.g., setting default values).
 

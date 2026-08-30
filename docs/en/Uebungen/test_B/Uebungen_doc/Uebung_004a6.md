@@ -1,8 +1,9 @@
 # Exercise_004a6: Toggle Flip-Flop with IE and E_REND (Rendezvous)
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004a6`. It introduces an advanced event pattern: the rendezvous. An event is only passed on when several different conditions have occurred independently of each other.
+This article describes the logiBUS® exercise `Uebung_004a6`. It introduces an advanced event pattern: the rendezvous. An event is only passed on when several different conditions have occurred independently of each other
 ----
+
 ## Objective of the Exercise
 
 ![Uebung_004a6_network](./Uebung_004a6_network.svg)
@@ -43,6 +44,7 @@ The functional sequence:
 2. If button 2 (`I2`) is pressed later, the condition is met (both were present). `E_REND` now triggers the event on `EO`.
 3. The flip-flop toggles the output state.
 4. After that, `E_REND` automatically resets and waits again for both inputs.
+
 - The reset button (`I3`) can be used at any time to clear the internal markers of `E_REND` (aborting the sequence).
 
 -----

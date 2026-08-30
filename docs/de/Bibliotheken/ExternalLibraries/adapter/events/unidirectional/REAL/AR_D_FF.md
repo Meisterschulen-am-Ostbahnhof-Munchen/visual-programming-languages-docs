@@ -75,7 +75,7 @@ Es gibt keine weiteren internen Zustände oder Verzweigungen.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied zu AR_D_FF |
-|----------|-------------|------------------------|
+| ---------- | ------------- | ------------------------ |
 | **AR_SR_FF** | Set‑Reset‑Flipflop | Latcht keinen Datenwert, sondern wird über Set/Reset gesetzt/rückgesetzt. Besitzt zwei Ereigniseingänge. |
 | **E_D_FF_ANY** | Standard‑D‑Flipflop ohne Adapter | Gleiche Kernlogik, aber direkte Ereignis‑/Datenanschlüsse; keine Adapter‑Kapselung. |
 | **AR_T_FF** | Toggle‑Flipflop | Schaltet bei jedem Taktimpuls den Ausgang um; kein Dateneingang. |

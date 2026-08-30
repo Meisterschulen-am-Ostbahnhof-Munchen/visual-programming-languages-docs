@@ -3,9 +3,11 @@
 ![ADDRESS](./ADDRESS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADDRESS` is a global constant block that defines special address constants for use in ISOBUS-based applications. It provides predefined values for source and destination addresses (SA), which are particularly important in ISOBUS communication. This block serves to make the source code more readable and maintainable by replacing magic numbers with meaningful names.
+
 ## Interface Structure
 
 This block is a `GlobalConstants` block and therefore does not have traditional event or data interfaces. Instead, it defines constants that can be used globally in other function blocks of the `isobus::pgn` package.

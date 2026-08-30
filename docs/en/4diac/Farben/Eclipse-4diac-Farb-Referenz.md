@@ -1,6 +1,7 @@
 # Eclipse 4diac Color Reference
 
 This reference lists the default colors used in Eclipse 4diac for various elements such as events, data types, and adapters.
+
 ## Events
 
 | Element | Color (Hex) | RGB | Description |

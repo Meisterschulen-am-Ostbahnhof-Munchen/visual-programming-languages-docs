@@ -30,35 +30,46 @@ The function block `F_UINT_TO_LINT` converts an unsigned 16-bit integer value (U
 ### **Adapters**
 
 - No adapters are available.
+
 * * * * * * * * * *
+
 ## Functionality
 
 The function block performs a direct assignment of the input value `IN` to the output `OUT`. Since `LINT` has a larger value range than `UINT`, the conversion is lossless. The block is activated by the event `REQ` and signals the completion of the operation with the event `CNF`.
 
 * * * * * * * * * *
+
 ## Technical Features
 
 - **Lossless Conversion**: Since `LINT` (64 bits) covers a larger value range than `UINT` (16 bits), no information is lost during the conversion.
 - **Simple Implementation**: The block uses a simple algorithm for direct value assignment.
+
 * * * * * * * * * * *
+
 ## State Overview
 
 1. **Idle State**: The block is waiting for the event `REQ`.
 2. **Activation State**: Upon receiving `REQ`, the input value `IN` is read and converted.
 3. **Acknowledgement State**: After successful conversion, the event `CNF` is triggered, and the block returns to the idle state.
+
 * * * * * * * * * *
+
 ## Application Scenarios
 
 - **Data Conversion**: In systems that need to process both 16-bit and 64-bit data.
 - **Interface Adaptation**: For communication between devices with different word widths.
 - **Data Processing**: In algorithms that require higher precision for calculations.
+
 * * * * * * * * * *
+
 ## ⚖️ Comparison with similar function blocks
 
 - **F_UINT_TO_INT**: Converts `UINT` to `INT` (16 bits), but with a signed value.
 - **F_UINT_TO_DINT**: Converts `UINT` to `DINT` (32 bits), offering a wider range of values than `INT`, but less than `LINT`.
 - **F_UINT_TO_ULINT**: Converts `UINT` to `ULINT` (64 bits), remaining unsigned.
+
 * * * * * * * * * *
+
 ## Conclusion
 
 The `F_UINT_TO_LINT` function block is a simple and efficient tool for converting 16-bit unsigned integer values to 64-bit signed integer values. Its lossless conversion and ease of use make it ideal for applications requiring higher precision or compatibility with 64-bit systems.

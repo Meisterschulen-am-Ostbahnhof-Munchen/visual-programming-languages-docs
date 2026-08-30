@@ -5,6 +5,7 @@
 ![AX_AX_SEL_AX](./AX_AX_SEL_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AX_AX_SEL_AX` dient der binären Auswahl (Selektion) zwischen zwei booleschen Signalen, die über standardisierte Adapter übertragen werden. Er stellt eine IEC 61499-konforme Kapselung der klassischen IEC 61131-3 `SEL`-Funktion dar. Durch die Verwendung von Adaptern werden sowohl die Datenwerte als auch die dazugehörigen Ereignisse gebündelt übertragen, was den Verdrahtungsaufwand im Control-Application-Design erheblich reduziert.

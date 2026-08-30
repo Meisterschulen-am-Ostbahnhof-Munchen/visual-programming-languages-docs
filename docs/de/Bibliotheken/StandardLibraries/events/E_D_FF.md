@@ -62,11 +62,11 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_D_FF | E_SR | E_R_TRIG |
-|---------------|--------|------|----------|
-| Speichertyp   | D-Flip-Flop | SR-Latch | Flankendetektor |
-| Taktung       | Erforderlich | Keine | Keine |
-| Datenhaltung  | Ja | Ja | Nein |
+| Feature | E_D_FF | E_SR | E_R_TRIG |
+| --------------- | -------- | ------ | ---------- |
+| Speichertyp | D-Flip-Flop | SR-Latch | Flankendetektor |
+| Taktung | Erforderlich | Keine | Keine |
+| Datenhaltung | Ja | Ja | Nein |
 | Ereignisausgang | Bei Änderung | Bei Set/Reset | Bei Flanke |
 
 ## 🛠️ Zugehörige Übungen

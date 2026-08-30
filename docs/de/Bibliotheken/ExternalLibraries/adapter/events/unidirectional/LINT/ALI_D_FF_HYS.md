@@ -3,6 +3,7 @@
 ![ALI_D_FF_HYS](./ALI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_D_FF_HYS** realisiert ein Datenlatch (D-Flipflop) mit einer Hysteresefunktion. Er dient der stabilen und entprellten Übertragung eines binären Signals: Ein eingehendes Datensignal wird bei einer steigenden Taktflanke übernommen und ausgegeben, wobei eine konfigurierbare Hysterese verhindert, dass kleine Signaländerungen (Rauschen) zu unerwünschten Ausgangsänderungen führen. Der Baustein ist speziell für die Verwendung der unidirektionalen **ALI**-Adapterstruktur in IEC 61499-Umgebungen ausgelegt.

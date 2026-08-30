@@ -4,9 +4,11 @@
 ![BYTE_TO_ARR08X](./BYTE_TO_ARR08X.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `BYTE_TO_ARR08X` converts a single byte value into an array of eight Boolean values (BOOL). Each bit of the input byte is assigned to a separate element in the output array. This block is particularly useful for breaking down compact digital information stored in a byte for individual processing or visualization.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -46,6 +48,7 @@ After these assignments are complete, the `CNF` event is output along with the p
 - `OUT[0]` receives the value of `IN.0`
 - `OUT[1]` receives the value of `IN.1`
 - `OUT[1]` receives the value of IN.1 ...
+
 ## Technical Features
 
 - **Direct Bit Access:** The implementation uses the direct bit addressing common in IEC 61131-3 ST (Structured Text) syntax (e.g., `IN.0`), enabling efficient and readable operation.

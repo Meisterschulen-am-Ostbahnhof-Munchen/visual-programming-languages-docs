@@ -33,7 +33,7 @@ Der Baustein besitzt keine direkten Ein-/Ausgangs-Ereignisse oder Daten, sondern
 ### **Adapter**
 
 | Adapter | Typ | Richtung | Beschreibung |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket | Signal-Eingang (liest Daten und Ereignisse) |
 | `OUT` | `adapter::types::unidirectional::AUDI` | Plug | Gefilterter Signal-Ausgang |
 | `VALID` | `adapter::types::unidirectional::AX` | Plug | Gültigkeitsanzeige (Ausgang für Bool & Ereignis) |
@@ -84,7 +84,7 @@ Der Zustandswechsel erfolgt bei jeder steigenden Taktflanke (`CLK`) auf den aktu
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Merkmal |
-|----------|---------|
+| ---------- | --------- |
 | `FIELDBUS_UDINT_TO_SIGNAL` allein | Gibt das Signal sofort ungültig weiter – ohne Synchronisation der Gültigkeit. |
 | `AUDI_FIELDBUS_UDINT_TO_SIGNAL` (dieser FB) | **Zusätzliche Synchronisation** des Gültigkeitssignals über ein D‑Flipflop, sodass `VALID` erst mit dem nächsten Takt aktualisiert wird. |
 | Andere Validierungs‑Bausteine | Oft ohne dynamische Synchronisation; dieser Baustein eignet sich besonders für zyklische Bus‑Systeme, bei denen Daten und Gültigkeit zeitlich versetzt ankommen können. |

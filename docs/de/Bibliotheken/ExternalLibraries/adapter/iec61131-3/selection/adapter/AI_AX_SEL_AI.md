@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_AX_SEL_AI` ist ein binärer Selektor (Multiplexer) für analoge Signale, der auf der IEC 61499-Architektur basiert. Er dient dazu, basierend auf einem Steuersignal (Selektor) eines von zwei analogen Eingangssignalen auszuwählen und an den Ausgang weiterzuleiten. Die Besonderheit dieses Bausteins liegt in der konsequenten Nutzung von Adaptern, was die Verkabelung innerhalb der Entwicklungsumgebung 4diac-ide erheblich vereinfacht und strukturiert.

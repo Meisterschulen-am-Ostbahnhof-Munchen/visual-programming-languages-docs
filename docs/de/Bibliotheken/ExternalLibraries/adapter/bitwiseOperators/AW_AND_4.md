@@ -3,6 +3,7 @@
 ![AW_AND_4](./AW_AND_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AW_AND_4** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 4 Eingangswerten vom Typ `WORD` (16-Bit-Bitmuster (Wort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

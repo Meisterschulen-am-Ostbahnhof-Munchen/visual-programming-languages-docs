@@ -6,6 +6,7 @@
 
 The function block `F_DINT_AS_STRING` converts a 32-bit integer value (DINT) into a string (STRING). This functionality is particularly useful when numeric values are needed for display or logging in a human-readable format.
 ![F_DINT_AS_STRING](F_DINT_AS_STRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

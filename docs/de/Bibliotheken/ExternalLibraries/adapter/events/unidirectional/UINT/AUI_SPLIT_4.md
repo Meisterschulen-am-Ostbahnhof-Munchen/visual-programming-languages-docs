@@ -3,6 +3,7 @@
 ![AUI_SPLIT_4](./AUI_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_SPLIT_4** dient als generischer Verteiler für AUI-Signale. Er nimmt einen einzelnen AUI-Eingang (Socket) entgegen und leitet ihn auf vier separate AUI-Ausgänge (Plugs) weiter. Dieser Baustein wird typischerweise in der Automatisierungstechnik eingesetzt, wenn ein unidirektionales Signal mehrfach parallel benötigt wird.

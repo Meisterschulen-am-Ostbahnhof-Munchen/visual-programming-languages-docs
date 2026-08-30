@@ -3,6 +3,7 @@
 ![AX_TO_ALI](./AX_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AX_TO_ALI** ist ein zusammengesetzter Funktionsblock (Composite FB), der einen unidirektionalen AX‑Adapter (BOOL) in einen unidirektionalen ALI‑Adapter (LINT) umwandelt. Er wurde entwickelt, um BOOL-Werte, die über einen AX‑Socket empfangen werden, in LINT-Werte zu konvertieren und über einen ALI‑Plug auszugeben. Der Baustein nutzt intern die IEC‑61131‑Konvertierungsfunktion `F_BOOL_TO_LINT`.

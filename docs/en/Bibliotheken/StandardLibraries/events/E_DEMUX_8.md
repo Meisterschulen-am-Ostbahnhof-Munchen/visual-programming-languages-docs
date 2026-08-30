@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_DEMUX_8` (Event Demultiplexer) is a function block according to IEC 61499 that forwards a single input event (`EI`) to one of eight outputs. The output selection is determined by the value of the input variable `K`.
@@ -34,9 +35,10 @@ The `E_DEMUX_8` (Event Demultiplexer) is a function block according to IEC 61499
 1. **Event Receipt**: The function block waits for an event at input `EI`.
 2. **Selection**: When the `EI` event arrives, the value of the data variable `K` is evaluated.
 3. **Forwarding**: The event is forwarded to output `EO(K+1)`. For example:
+
 - If `K` = 0, the event is forwarded to `EO1`.
 - If `K` = 7, the event is forwarded to `EO8`.
-4. **Invalid Index**: If the value of `K` is outside the valid range [0, 7], no output event is triggered.
+1. **Invalid Index**: If the value of `K` is outside the valid range [0, 7], no output event is triggered.
 
 ## Technical Features
 

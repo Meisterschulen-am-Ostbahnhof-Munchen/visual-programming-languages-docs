@@ -1,8 +1,9 @@
 # Exercise_002a2_AX: DigitalInput_I1/_I2 with F_AND (bitwise) on DigitalOutput_Q1
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a2_AX`. It demonstrates how to convert adapter signals into Boolean values for processing with standard logic blocks.
+This article describes the logiBUS® exercise `Uebung_002a2_AX`. It demonstrates how to convert adapter signals into Boolean values for processing with standard logic blocks
 ----
+
 ## Objective of the Exercise
 
 The main objective is to demonstrate interoperability. While specialized blocks like `AX_AND_2` operate directly on adapters, many standard libraries (such as the bitwise operators of IEC 61131) require elementary data types (BOOL). This exercise illustrates the path from hardware abstraction to classical logic and back.

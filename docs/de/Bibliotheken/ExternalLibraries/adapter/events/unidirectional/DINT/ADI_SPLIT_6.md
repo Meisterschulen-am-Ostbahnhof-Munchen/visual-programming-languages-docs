@@ -3,6 +3,7 @@
 ![ADI_SPLIT_6](./ADI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ADI_SPLIT_6 dient dazu, einen einzelnen ADI-Adapter-Eingang (unidirektional) auf sechs identische ADI-Adapter-Ausgänge zu verteilen. Er ist als generischer Baustein für das Eclipse 4diac Framework konzipiert und wird typischerweise eingesetzt, wenn ein ADI-Signal an mehrere nachfolgende Komponenten weitergeleitet werden muss.

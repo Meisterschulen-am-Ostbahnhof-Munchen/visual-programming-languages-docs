@@ -3,6 +3,7 @@
 *(Kein Bild vorhanden, da dies ein Datentyp und kein Funktionsblock ist.)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `ST32X` ist ein benutzerdefinierter Strukturdatentyp, der aus 32 einzelnen BOOL-Variablen besteht. Er dient dazu, eine Sammlung von booleschen Zuständen oder Flags in einer einzigen, zusammenhängenden Datenstruktur zu bündeln, was die Handhabung und Übergabe von Statusinformationen vereinfachen kann. Der Name `ST32X` leitet sich von "Structure (ST) with 32 X/B (Boolean) bits" ab.

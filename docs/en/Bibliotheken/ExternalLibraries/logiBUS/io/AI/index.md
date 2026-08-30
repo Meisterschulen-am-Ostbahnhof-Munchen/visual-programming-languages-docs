@@ -1,10 +1,12 @@
 ![AI](AI.svg)
+
 # AI
 
 ## 📺 Video
 
 - [AI: The Unknown Story](https://www.youtube.com/watch?v=9hD5RETI72w)
 - [The Silent Failure](https://www.youtube.com/watch?v=KBMog5sdWtA)
+
 ## 🎧 Podcast
 
 - [From Clicking Relays to Intelligent Code: How Software Revolutionized Industrial Control](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Von-klickenden-Relais-zum-intelligenten-Code-Wie-Software-die-Industriesteuerung-revolutionierte-e375en3)

@@ -5,6 +5,7 @@ Bild nicht verfügbar
 ![AW_SPLIT_6](./AW_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_SPLIT_6** dient dazu, einen eingehenden unidirektionalen **AW**-Adapter auf sechs identische Ausgangs-Adapter aufzuteilen. Er ist als generischer Baustein konzipiert, der in der 4diac-IDE zur Verteilung von AW-Signalen verwendet wird. Der Baustein ist für Anwendungen gedacht, bei denen ein Signalwert – z. B. ein analoger oder digitaler Wert – mehrfach parallel benötigt wird, ohne dass eine manuelle Vervielfältigung der Verbindungen erfolgen muss.

@@ -3,9 +3,11 @@
 ![AS_TO_AD](./AS_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_TO_AD** is a composite function block (FB) that converts a SINT adapter interface (AS) to a DWORD adapter interface (AD). It serves as a converter between two unidirectional adapter types and is typically used to adapt data from a SINT-based signal path to a DWORD-based signal path.
+
 ## Interface Structure
 
 The function block does not have its own event or data inputs/outputs, but provides only adapter interfaces.
@@ -33,7 +35,7 @@ After conversion is complete, the event **E1** is sent to the outgoing adapter.
 ### **Adapters**
 
 | Adapter Name | Direction | Type | Description |
-|-------------|----------|-----|--------------|
+| ------------- | ---------- | ----- | -------------- |
 | **AS_IN** | Socket (Input) | adapter::types::unidirectional::AS | Input adapter for the SINT value (including event E1) |
 | **AD_OUT** | Plug (Output) | adapter::types::unidirectional::AD | Output adapter for the converted DWORD value (including event E1) |
 

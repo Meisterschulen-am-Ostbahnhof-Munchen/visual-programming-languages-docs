@@ -4,6 +4,7 @@
 *Note: An image of the function block is not available here.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **LeftRight_AX** (from the package `logiBUS::utils::sequence::verteiler`) controls an alternating process with two directions (clockwise and counterclockwise rotation). It is designed to switch back and forth between two outputs, taking pause states into account.
@@ -59,6 +60,7 @@ The **LeftRight_AX** function block implements a state machine that alternates b
 2. **Activation (Run):** As long as the signal `EIN.D1` (data) is present together with an event `EIN.E1` as `TRUE`, the function block enters an active state (`Rechtslauf` or `Linkslauf`). The corresponding output adapter (`Rechts` or `Links`) is then set to `TRUE`.
 3. **Deactivation (Pause):** When `EIN.D1` changes to `FALSE` (switch off), the function block switches to the corresponding pause state (`Rechtslauf_Pause` or `Linkslauf_Pause`). The outputs are deactivated (`FALSE`).
 4. **Alternating Logic:**
+
 - If the function block is in `Rechtslauf_Pause` and is switched on again (`EIN` = TRUE), it switches to **counterclockwise** by default.
 - If the function block is in `Linkslauf_Pause` and is switched on again, it switches to **clockwise** by default.
 - If the function block is in `Linkslauf_Pause` and is switched on again, it switches to **clockwise** by default. 5. **Override Logic (Forcing):**
@@ -68,7 +70,7 @@ The **LeftRight_AX** function block implements a state machine that alternates b
 ## Technical Features
 
 - **AX Adapter:** This function block uses the generic `unidirectional::AX` type. This typically combines a Boolean data signal (`D1`) with an event (`E1`).
-- * **Prioritization:** According to the internal description, "clockwise rotation only takes precedence over counterclockwise rotation only," which is reflected in the start conditions. However, the sequence logic is primarily determined by the previous state (history).
+- - **Prioritization:** According to the internal description, "clockwise rotation only takes precedence over counterclockwise rotation only," which is reflected in the start conditions. However, the sequence logic is primarily determined by the previous state (history).
 - **Status Reporting:** Each state change updates the `STATE` variable and fires the `EO` event. The state names are obtained via an external enumeration (`STATES::...`).
 
 ## State Overview

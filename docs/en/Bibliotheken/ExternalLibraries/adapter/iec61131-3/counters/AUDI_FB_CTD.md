@@ -3,6 +3,7 @@
 ![AUDI_FB_CTD](./AUDI_FB_CTD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_FB_CTD** implements a down counter based on the UDINT data type. It is specifically designed for use with adapter interfaces and uses the types `AX` and `AUDI` for event-driven communication. The actual counting logic is executed by an internal function block of type `iec61131::counters::FB_CTD_UDINT`.
@@ -15,7 +16,7 @@ This function block fires an event on the output channel `CD`, `LD`, or `PV` wit
 This function block does not have direct event inputs. All events are supplied via the connected **sockets** (adapter inputs).
 
 | Socket (Adapter) | Type | Description |
-|------------------|-------|-------------------------------------------|
+| ------------------ | ------- | ------------------------------------------- |
 | `CD` | `AX` | Countdown Event |
 | LD` | `AX` | Load Event |
 | PV` | `AUDI` | Preset Value Event |
@@ -31,8 +32,8 @@ This function block does not have direct event inputs. All events are supplied v
 Data is transmitted via sockets as part of the adapter protocol.
 
 | Socket (Adapter) | Data Type | Meaning |
-------------------|-----------|-----------------------------------------|
-| `CD.D1` | BOOL | Countdown command (TRUE = count)|
+------------------ | ----------- | ----------------------------------------- |
+| `CD.D1` | BOOL | Countdown command (TRUE = count) |
 | `LD.D1` | BOOL | Load preset value command |
 | `PV.D1` | UDINT | Preset counter value |
 
@@ -48,7 +49,7 @@ The output data is displayed via the plugs.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-------|----------------------------------------|
+| ---------- | ------ | ------- | ---------------------------------------- |
 | Socket | `CD` | `AX` | Event-Driven Count Pulse (Down) |
 | Socket | `LD` | `AX` | Event-Driven Preset Loading |
 | Socket | `PV` | `AUDI` | Event-Driven Preset Selection |

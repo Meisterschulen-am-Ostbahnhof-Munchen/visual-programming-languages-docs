@@ -3,6 +3,7 @@
 ![GET_REAL](./GET_REAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_REAL** dient dazu, einen REAL-Wert aus einer **InOut-Variable** auszulesen und diesen in einem gepufferten Ausgang bereitzustellen. Der ausgelesene Wert wird beim Empfang eines Ereignisses am Eingang `REQ` aus der InOut-Variable `IN` gelesen und am Ausgang `OUT` ausgegeben. Nach der Ausführung wird das Bestätigungsereignis `CNF` gesendet.
@@ -43,6 +44,7 @@ Keine Adapter vorhanden.
 
 1. Ein eingehendes Ereignis am Eingang `REQ` triggert die Ausführung des internen Algorithmus `REQ`.
 2. Im Algorithmus wird der aktuelle Wert der InOut-Variable `IN` in die Ausgangsvariable `OUT` kopiert:
+
    ```structuredtext
    OUT := IN;
    ```

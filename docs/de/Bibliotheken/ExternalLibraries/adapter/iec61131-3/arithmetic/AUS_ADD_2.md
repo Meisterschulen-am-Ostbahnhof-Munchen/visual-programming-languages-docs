@@ -6,6 +6,7 @@
 *(Grafische Darstellung des Funktionsblocks nicht verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUS_ADD_2` ist ein generischer Baustein (Generic FB) zur Durchführung einer arithmetischen Addition. Er dient dazu, zwei Eingangssignale zu addieren und das Ergebnis auszugeben. Die Besonderheit dieses Bausteins liegt in der Verwendung von standardisierten, unidirektionalen Adaptern (`AUS`), wodurch die Signal- und Datenverdrahtung innerhalb von Eclipse 4diac stark vereinfacht und gekapselt wird.

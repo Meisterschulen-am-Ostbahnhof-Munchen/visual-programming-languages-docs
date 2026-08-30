@@ -3,6 +3,7 @@
 ![F_MAX](https://user-images.githubusercontent.com/116869307/214145353-715ae0b0-3c42-4651-b1ee-ec625ee25ad1.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The F_MAX function block is a standard selection function block according to IEC 61131-3 that determines the maximum value from two input values. The block compares any two elementary data types and returns the larger of the two values as the result.

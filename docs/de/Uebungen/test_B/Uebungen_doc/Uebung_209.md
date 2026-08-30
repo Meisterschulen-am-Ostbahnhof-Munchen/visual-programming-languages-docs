@@ -13,7 +13,7 @@ Die Übung vermittelt den Umgang mit speziellen Interlock-Bausteinen, die in der
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter / Anschlüsse |
-|--------------|-----|------------------------|
+| -------------- | ----- | ------------------------ |
 | `DigitalInput_S1` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I1` (Einschaltsignal 1) |
 | `DigitalInput_R1` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I2` (Rücksetzsignal 1) |
 | `DigitalInput_S2` | `logiBUS::io::DI::logiBUS_IX` | `QI` = TRUE, `Input` = `Input_I3` (Einschaltsignal 2) |
@@ -46,7 +46,7 @@ Das System ist **ereignisgesteuert** aufgebaut:
 **Verbindungsübersicht:**
 
 | Quelle | Ziel | Art |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `DigitalInput_S1.IND` | `ILOCK_RS_1.REQ` | Ereignis |
 | `DigitalInput_R1.IND` | `ILOCK_RS_1.REQ` | Ereignis |
 | `DigitalInput_S2.IND` | `ILOCK_RS_2.REQ` | Ereignis |

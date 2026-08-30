@@ -3,10 +3,12 @@
 ![CSV_WRITER_1](https://github.com/user-attachments/assets/4f7fdcfb-c9cf-4e0a-8347-ccdc85acd150)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `CSV_WRITER_1` serves as a service interface for writing data to a CSV file. It enables the initialization of the write operation and the controlled writing of data to a file with status feedback.
 ![CSV_WRITER_1](CSV_WRITER_1.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

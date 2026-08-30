@@ -3,6 +3,7 @@
 ![initval_ATM](initval_ATM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_ATM` is the configurable initialization block for the [ATM](../ATM.md) adapter (data type `TIME`, duration): it accepts a start value as a data input at initialization time and writes it to a `ATM` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

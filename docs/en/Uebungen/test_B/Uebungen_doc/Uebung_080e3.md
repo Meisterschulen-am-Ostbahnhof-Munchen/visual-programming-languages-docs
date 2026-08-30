@@ -3,6 +3,7 @@
 ![Uebung_080e3_network](./Uebung_080e3_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the function block **E_CTU** (up counter with event control) in combination with an **event brake**, implemented using an **E_D_FF_ANY** (flip-flop with hysteresis). Through the interplay of cyclic counting pulses, manual reset, and hysteresis on the counter value, an output signal is only triggered when a specific counter value is reached and the hysteresis threshold is exceeded. The exercise illustrates the use of event logic (E_SPLIT, E_MERGE), controlling a digital output, and passing a numeric value to an output number.
@@ -78,12 +79,12 @@ The exercise follows this sequence:
 1. **Initialization**: Pressing a key on **I1** generates an event `IND` from the function block `DigitalInput_CLK_I1`. This starts the **E_CYCLE**, which now continuously generates an event at its output `EO` every 1 ms.
 2. **Counting**: The periodic event from **E_CYCLE** is routed to the counter input `CU` of the **E_CTU**. The counter increments with each pulse. At each counting step, an event is output via output `CUO`, as well as when the counter reading reaches or exceeds the comparison value `PV` (5) (output `RO`).
 3. **Event Multiplication and Merging**: Both event outputs of the counter (`CUO` and `RO`) are split into four parallel channels via an **E_SPLIT_4**. These four channels are then merged back into a single event stream via an **E_MERGE_4**. Thus, each counting pulse and each PV exceedance pulse generates exactly one event at the MERGE output.
-3. **Event Multiplication and Merging**: 4. **Hysteresis-Controlled Flip-Flop**: This combined event is applied to the clock input `CLK` of the **E_D_FF_ANY**. The data input `D` receives the current counter value `CV` of the E_CTU. The **E_D_FF_ANY** only adopts this value if the value has changed by at least `HYSTERESIS` (25). Upon such a significant change, it outputs an event at `EO` and applies the smoothed value to `Q`.
+4. **Event Multiplication and Merging**: 4. **Hysteresis-Controlled Flip-Flop**: This combined event is applied to the clock input `CLK` of the **E_D_FF_ANY**. The data input `D` receives the current counter value `CV` of the E_CTU. The **E_D_FF_ANY** only adopts this value if the value has changed by at least `HYSTERESIS` (25). Upon such a significant change, it outputs an event at `EO` and applies the smoothed value to `Q`.
 
 The data input `D` receives the current counter value `CV` of the E_CTU. 5. **Value Output**: The event of **E_D_FF_ANY** is forwarded to input `REQ` of **Q_NumericValue**. This input takes the smoothed counter value (`u32NewValue`) from `E_D_FF_ANY.Q` and makes it available at output `N1` (e.g., for a numeric display).
 
-6. **Parallel Digital Output**: The merged event from **E_MERGE_4** is also sent to the clock input `CLK` of a standard **E_D_FF**. The data input `D` receives the Boolean status `Q` of E_CTU ("counter ≥ PV"). Thus, with each counting pulse, the current comparison status is stored in the flip-flop and output at `Q`. An event at the flip-flop's output `EO` controls the **DigitalOutput_Q1**, which sets the Boolean value to the physical output Q1.
-7. **Reset Function**: Pressing a button on **I2** (second input) generates an event `IND` of the **DigitalInput_CLK_I2**. This event is then sent to the reset input `R`.The E_CTU is connected to the `STOP` input of the E_CYCLE, thus halting the cyclical generation of clock pulses. This resets and stops the entire counting process.
+1. **Parallel Digital Output**: The merged event from **E_MERGE_4** is also sent to the clock input `CLK` of a standard **E_D_FF**. The data input `D` receives the Boolean status `Q` of E_CTU ("counter ≥ PV"). Thus, with each counting pulse, the current comparison status is stored in the flip-flop and output at `Q`. An event at the flip-flop's output `EO` controls the **DigitalOutput_Q1**, which sets the Boolean value to the physical output Q1.
+2. **Reset Function**: Pressing a button on **I2** (second input) generates an event `IND` of the **DigitalInput_CLK_I2**. This event is then sent to the reset input `R`.The E_CTU is connected to the `STOP` input of the E_CYCLE, thus halting the cyclical generation of clock pulses. This resets and stops the entire counting process.
 
 ## Summary
 

@@ -26,7 +26,7 @@ None available. Outputs are exclusively via the adapter plugs.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AD` | `IN` | Socket (Input) | Incoming adapter signal, which is distributed to all outputs. |
 | `adapter::types::unidirectional::AD` | `OUT1` | Plug (Output) | First outgoing adapter, identical to the input signal. |
 | `adapter::types::unidirectional::AD` | `OUT2` | Plug (Output) | Second outgoing adapter. |

@@ -3,9 +3,11 @@
 ![DWORDS_TO_ARR08B](./DWORDS_TO_ARR08B.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **DWORDS_TO_ARR08B** converts two 32-bit DWORD values into an eight-byte array (BYTE). The conversion is performed in little-endian format (Intel standard), meaning the least significant byte of a DWORD is written to the lowest index position of the output array. The function block is optimized for use on PC-based controllers (e.g., Beckhoff, Wago, B&R, Raspberry Pi).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -44,6 +46,7 @@ When a rising edge is detected at the event input `REQ`, the following logic is 
 1. The two input DWORDs `IN_00` and `IN_01` are read byte by byte.
 2. The system's internal byte accesses (e.g., `IN_00.%B0` for the least significant byte) are used.
 3. The bytes are copied into the output array `OUT` in **little-endian order**:
+
 - `OUT[0]` ← least significant byte of `IN_00`
 - `OUT[1]` ← second byte of `IN_00`
 - `OUT[2]` ← third byte of `IN_00`
@@ -52,7 +55,7 @@ When a rising edge is detected at the event input `REQ`, the following logic is 
 - `OUT[5]` ← second byte of `IN_01`
 - `OUT[6]` ← third byte of `IN_01`
 - `OUT[7]` ← most significant byte of `IN_01`
-4. After the assignments are complete, the event `CNF` is sent.
+1. After the assignments are complete, the event `CNF` is sent.
 
 ## Technical Details
 

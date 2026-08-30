@@ -3,6 +3,7 @@
 ![ATM_SPLIT_2](./ATM_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ATM_SPLIT_2** ist ein generischer Funktionsbaustein, der einen eingehenden Adapter vom Typ `adapter::types::unidirectional::ATM` auf 2 separate Ausgänge (OUT1, OUT2) aufteilt. Er dient zur Weiterleitung eines Zeitsignals an 2 nachfolgende Bausteine, ohne die Daten zu verändern. Der Baustein ist als generischer Typ (`GEN_ATM_SPLIT`) implementiert und wird zur Laufzeit parametrisiert.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::ATM` | IN | Socket | Eingangssignal (ATM) |
 | `adapter::types::unidirectional::ATM` | OUT1 | Plug | Ausgang 1 (identisch zu IN) |
 | `adapter::types::unidirectional::ATM` | OUT2 | Plug | Ausgang 2 (identisch zu IN) |

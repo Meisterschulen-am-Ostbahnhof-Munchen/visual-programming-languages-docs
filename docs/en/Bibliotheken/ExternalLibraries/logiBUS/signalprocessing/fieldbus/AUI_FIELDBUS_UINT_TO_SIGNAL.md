@@ -3,9 +3,11 @@
 ![AUI_FIELDBUS_UINT_TO_SIGNAL](./AUI_FIELDBUS_UINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_FIELDBUS_UINT_TO_SIGNAL** forwards a fieldbus signal encoded as `UINT` to a downstream AUI adapter, provided the signal is recognized as valid. It also provides a separate validity indicator (`VALID`). The block encapsulates a data converter and an edge-triggered D flip-flop, which buffers the validity signal until the next event.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block does not have separate data outputs. Output data is transmitt
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-------------------------|----------|----------------------------------------------------------------------------|
+| ------------- | ------------------------- | ---------- | ---------------------------------------------------------------------------- |
 | `IN` | AUI (unidirectional) | Socket | Receives the raw fieldbus signal as `UINT`. Provides event `E1` and data `D1`. |
 | `OUT` | AUI (unidirectional) | Plug | Outputs the filtered signal as `UINT`. Event `E1` signals incoming data. |
 | `VALID` | AX (unidirectional) | Plug | Provides a validity signal (`TRUE`/`FALSE`) via `D1`; event `E1` indicates an update. |
@@ -55,7 +57,7 @@ The function block does not have separate data outputs. Output data is transmitt
 The FB itself does not have an explicit state machine. However, its behavior can be described by its internal logic:
 
 | State | Description |
-|------------------------|-----------------------------------------------------------------------------|
+| ------------------------ | ----------------------------------------------------------------------------- |
 | **Idle** | No input event; the outputs `OUT` and `VALID` retain their last values. |
 | **Processing** | An event at `IN.E1` starts processing. |
 | **Output** | Upon completion, `OUT.D1` and `VALID.D1` are updated, and the events are sent to `OUT.E1` and `VALID.E1`. |
@@ -70,7 +72,7 @@ The FB itself does not have an explicit state machine. However, its behavior can
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference / Similarity |
-|--------------------------------|-----------------------------------------------------------------------------|
+| -------------------------------- | ----------------------------------------------------------------------------- |
 | `FIELDBUS_UINT_TO_SIGNAL` | Contains only the pure data conversion without a validity buffer. |
 | `AUI_SIGNAL_FILTER` | Filters signals but does not offer an explicit validity indicator. |
 | `E_D_FF` | Pure flip-flop without data conversion – used here as an auxiliary function block. |

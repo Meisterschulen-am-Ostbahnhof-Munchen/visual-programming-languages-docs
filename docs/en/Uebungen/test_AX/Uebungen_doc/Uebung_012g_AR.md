@@ -3,9 +3,11 @@
 ![Uebung_012g_AR_network](./Uebung_012g_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 In this exercise, a numeric value (REAL) is read via a physical input and permanently stored using the INI_AR adapter. The stored value can then be visualized via another output block. The exercise demonstrates the use of the AR adapter interface (adapter resource) for communication between a physical input block and a memory block, as well as a numeric output.
+
 ## Function Blocks Used (FBs)
 
 The following function blocks are used. The sub-app contains no other sub-blocks.
@@ -59,7 +61,7 @@ The function blocks are connected exclusively via **adapters**. The network cons
 
 The physical value read from the input module is directly transferred to the INI_AR memory module.
 
-2. **`INI_AR.AR_OUT` → `Q_NumericValue.rPhys`**
+1. **`INI_AR.AR_OUT` → `Q_NumericValue.rPhys`**
 
 The value read back from memory (either the newly stored or the last stored value) is forwarded to the output module.
 

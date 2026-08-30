@@ -25,7 +25,7 @@ This function block does not have traditional data outputs. The multiplication r
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-|------|------|----------|-----------|
+| ------ | ------ | ---------- | ----------- |
 | `adapter::types::unidirectional::AUDI` | IN1 | Input (Socket) | MUL input 1 |
 | `adapter::types::unidirectional::AUDI` | IN2 | Input (Socket) | MUL input 2 |
 | `adapter::types::unidirectional::AUDI` | IN3 | Input (Socket) | MUL input 3 |

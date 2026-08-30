@@ -3,6 +3,7 @@
 ![AL_TO_AUDI](./AL_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_TO_AUDI** ist ein Composite-Baustein, der einen LWORD-Adaptereingang (Typ `AL`) in einen UDINT-Adapterausgang (Typ `AUDI`) umwandelt. Er kapselt die IEC-61131-3-Konvertierungsfunktion `F_LWORD_TO_UDINT` und stellt eine saubere, adapterbasierte Schnittstelle für unidirektionale Datenflüsse bereit.

@@ -3,6 +3,7 @@
 ![E_BLINK Funktionsblock](https://github.com/user-attachments/assets/29d3de7c-a775-4796-9c22-096e97347a6e)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The E_BLINK function block simulates a flashing signal that alternates between the states TRUE and FALSE. The duration of each state can be configured individually. Unlike similar implementations, this function block always returns to FALSE upon the STOP event.

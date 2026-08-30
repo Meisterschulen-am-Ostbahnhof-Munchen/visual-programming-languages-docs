@@ -3,9 +3,11 @@
 ![INI_AX2](./INI_AX2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The INI_AX2 function block is used to read and write real data from a settings.ini file via an AX2 adapter. It combines the INI block with a bidirectional AX2 adapter to read values from or write them back to a configuration file. Initialization is performed via the INIT event, where the section and key are specified. The read value is offered via the adapter, and a write operation is triggered via the adapter event.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The INI_AX2 function block is used to read and write real data from a settings.i
 ### **Data Inputs**
 
 | Name | Type | Description |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | QI | BOOL | Input qualifier for controlling processing. |
 | SECTION | STRING | Name of the section in the settings.ini file. |
 | KEY | STRING | Name of the key within the section. |
@@ -32,7 +34,7 @@ The INI_AX2 function block is used to read and write real data from a settings.i
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | QO | BOOL | Output qualifier, indicates successful processing. |
 | STATUS | STRING | Service status message (e.g., error messages). |
 

@@ -3,6 +3,7 @@
 ![GET_LINT](./GET_LINT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **GET_LINT** dient dem Auslesen eines Wertes vom Typ **LINT** aus einer InOut-Variablen und stellt diesen Wert gepuffert an seinem Ausgang zur Verfügung. Der Baustein ist Teil der Bibliothek `logiBUS::utils::conversion::provide` und realisiert eine einfache Lese-Puffer-Funktionalität.

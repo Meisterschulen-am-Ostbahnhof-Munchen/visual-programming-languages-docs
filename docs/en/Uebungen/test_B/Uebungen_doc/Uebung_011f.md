@@ -3,6 +3,7 @@
 ![Uebung_011f_network](./Uebung_011f_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the direct pass-through of a numeric input value from the physical input I3 to the physical output N3.
@@ -40,6 +41,7 @@ The function block `Q_NumericValue_PHYS` then writes the received value to the p
 
 The entire subapplication thus functions as a transparent pass-through from I3 to N3.
 ...
+
 ## Program Flow and Connections
 
 - **Event Connection**: `NumericValue_PHYS.IND` → `Q_NumericValue_PHYS.REQ`

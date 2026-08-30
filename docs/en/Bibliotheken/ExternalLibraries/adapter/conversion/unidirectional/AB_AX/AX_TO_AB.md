@@ -3,9 +3,11 @@
 ![AX_TO_AB](./AX_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AX_TO_AB` converts a BOOL adapter signal of type `AX` into a BYTE adapter signal of type `AB`. It encapsulates the type conversion and event passing in a reusable unit.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The composite function block `AX_TO_AB` converts a BOOL adapter signal of type `
 ### **Adapter**
 
 | Type | Direction | Identifier | Comment |
-|-----|----------|------------|-----------|
+| ----- | ---------- | ------------ | ----------- |
 | `adapter::types::unidirectional::AX` | Socket (Input) | `AX_IN` | BOOL adapter that provides the input data and events. |
 | `adapter::types::unidirectional::AB` | Plug (Output) | `AB_OUT` | BYTE adapter that outputs the converted data and events. |
 

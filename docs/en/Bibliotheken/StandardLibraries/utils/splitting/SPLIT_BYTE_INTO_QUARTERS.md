@@ -3,10 +3,12 @@
 ## 🎧 Podcast
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 ![SPLIT_BYTE_INTO_QUARTERS](https://github.com/user-attachments/assets/9cbf32e0-f8c2-437f-88d3-8e29db1731dd)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_BYTE_INTO_QUARTERS` is used to split a byte into four quarter bytes. This function is particularly useful when individual parts of a byte need to be processed separately, for example, when decoding data or manipulating bits.

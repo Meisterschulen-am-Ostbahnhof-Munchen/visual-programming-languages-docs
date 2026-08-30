@@ -1,9 +1,11 @@
 # tactile_TON_5s
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of a time-delay relay (timer on-delay) with a fixed time setting of 5 seconds. The sub-application serves as a reusable component for time-delayed signal processing.
+
 ## Function Blocks Used (FBs)
 
 ### Sub-Blocks: tastend_TON_5s

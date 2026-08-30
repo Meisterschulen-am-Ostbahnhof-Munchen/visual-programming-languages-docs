@@ -60,17 +60,17 @@ Inside the function block `AR_AX_SEL_AR` is a network of standard IEC 61131-3 an
 
 As soon as an event `E1` arrives at one of the input adapters (`IN0`, `IN1`, or `G`), it is intercepted by internal edge-triggered flip-flops (`E_D_FF` or `E_D_FF_ANY`). The corresponding data values (`D1`) are temporarily stored.
 
-2. **Data Conversion:**
+1. **Data Conversion:**
 
 The values of the analog inputs are routed through conversion blocks of type `F_MOVE` (configured to data type `REAL`) to ensure consistent data processing.
 
-3. **Selection Logic (Multiplexing):**
+1. **Selection Logic (Multiplexing):**
 
 The standard selection block `F_SEL` performs the actual selection:
 
 - If the value of `G.D1` equals `FALSE`, the signal from `IN0` is passed to the output.
 - If the value of `G.D1` is equal to `TRUE`, the signal is passed on to `IN1`.
-4. **Output:**
+1. **Output:**
 
 The selected signal is passed via another `F_MOVE` block to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop generates the output event `E1` at plug `OUT` and makes the selected value available to `OUT.D1`.
 
@@ -102,6 +102,7 @@ Compared to the standard IEC 61131 function block `F_SEL`, `AR_AX_SEL_AR` offers
 ---
 
 The `AR_AX_SEL_AR` is an extremely useful auxiliary component for IEC 61499 applications. By abstracting the data and event streams into standardized adapter channels, it ensures a streamlined application design and simplifies the implementation of switching and redundancy logic for analog signals.
+
 ## Technical Features
 
 ## State Overview

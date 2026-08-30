@@ -3,6 +3,7 @@
 ![AULI_TO_AUI](./AULI_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_AUI** ist ein zusammengesetzter Baustein (Composite FB), der einen **AULI**-Adapter (basiert auf dem Datentyp `ULINT`) in einen **AUI**-Adapter (basiert auf dem Datentyp `UINT`) umwandelt. Er wird eingesetzt, wenn eine Schnittstelle mit 64‑Bit unsigned Integer (`ULINT`) auf eine 16‑Bit unsigned Integer (`UINT`) Schnittstelle abgebildet werden muss, z. B. bei der Anbindung unterschiedlicher Sensor‑ oder Aktorkomponenten in der Automatisierungstechnik.

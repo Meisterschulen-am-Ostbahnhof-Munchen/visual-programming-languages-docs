@@ -5,6 +5,7 @@
 ![BYTES_TO_ARR08B](./BYTES_TO_ARR08B.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `BYTES_TO_ARR08B` dient der Konvertierung von acht einzelnen `BYTE`-Werten in ein Array vom Typ `BYTE` mit acht Elementen. Er ist Teil einer Sammlung von Hilfsfunktionen für Datenkonvertierungen und Array-Operationen.

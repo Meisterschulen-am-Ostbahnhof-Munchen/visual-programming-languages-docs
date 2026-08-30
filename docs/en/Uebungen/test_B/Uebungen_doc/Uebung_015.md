@@ -6,6 +6,7 @@ Exercise_015: Switching Object Pointers
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 This article describes the logiBUS® exercise `Uebung_015`. It demonstrates an advanced ISOBUS technique: switching object pointers to dynamically exchange screen content.]
+
 ## 🎧 Podcast
 
 ![Uebung_015_network](./Uebung_015_network.svg)
@@ -32,6 +33,7 @@ Learn how to use `Object Pointer` objects. A pointer is a placeholder on the scr
 - **`SoftKey_UP_F1` & `F2`**: Control the selection.
 - **`F_SEL`**: A selection block. [cite_start]Depending on the input `G` (from memory `E_SR`), it outputs either the value `ID_NULL` (0) or the object ID of `Button_A1`[cite: 1].
 - **`Q_NumericValue`**: Used here for a different purpose, to send the ID to the pointer (since a pointer update technically involves sending a new ID to the pointer's object ID).
+
 - -----
 
 ## Functionality

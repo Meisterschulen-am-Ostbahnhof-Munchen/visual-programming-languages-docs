@@ -29,8 +29,8 @@ Keine.
 ### **Adapter**
 
 | Adapter | Typ | Richtung |
-|---------|-----|----------|
-| **IN**  | `adapter::types::unidirectional::AUI` | Socket (Eingang) |
+| --------- | ----- | ---------- |
+| **IN** | `adapter::types::unidirectional::AUI` | Socket (Eingang) |
 | **OUT1** | `adapter::types::unidirectional::AUI` | Plug (Ausgang) |
 | **OUT2** | `adapter::types::unidirectional::AUI` | Plug (Ausgang) |
 | **OUT3** | `adapter::types::unidirectional::AUI` | Plug (Ausgang) |

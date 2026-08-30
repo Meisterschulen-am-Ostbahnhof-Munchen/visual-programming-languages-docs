@@ -1,7 +1,9 @@
 ![AB2](AB2.svg)
+
 # AB2
 
 bidirectional adapter interface for 1 event and 1 byte
+
 ## Interface
 
 ### Event inputs

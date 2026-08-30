@@ -5,6 +5,7 @@
 ![sequence_ET_04_loop_ecc](./sequence_ET_04_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_ET_04_loop` implementiert eine zyklische Sequenz mit vier Zuständen. Der Übergang zwischen den Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Block ist darauf ausgelegt, wiederkehrende Abläufe in Steuerungsanwendungen zu realisieren, bei denen Aktionen nacheinander und in einer Schleife ausgeführt werden müssen.
@@ -77,14 +78,14 @@ Die ECC besteht aus sechs Zuständen:
 
 1.  **xSTART**: Initialer, inaktiver Zustand. Wartet auf `START_S1`.
 2.  **sState_01**: Aktiver Zustand
-1. Setzt `DO_S1`. Kann via `S1_S2`-Ereignis oder Timeout zu `sState_02` wechseln.
-3.  **sState_02**: Aktiver Zustand
-2. Setzt `DO_S2`. Kann via `S2_S3`-Ereignis oder Timeout zu `sState_03` wechseln.
-4.  **sState_03**: Aktiver Zustand
-3. Setzt `DO_S3`. Kann via `S3_S4`-Ereignis oder Timeout zu `sState_04` wechseln.
-5.  **sState_04**: Aktiver Zustand
-4. Setzt `DO_S4`. Kann via `S4_S1`-Ereignis oder Timeout zurück zu `sState_01` wechseln (Schleife).
-6.  **sRESET**: Reset-Zustand. Schaltet alle Ausgänge aus, setzt `STATE_NR` auf 0 und wechselt automatisch zurück zu `xSTART`.
+3. Setzt `DO_S1`. Kann via `S1_S2`-Ereignis oder Timeout zu `sState_02` wechseln.
+4.  **sState_02**: Aktiver Zustand
+5. Setzt `DO_S2`. Kann via `S2_S3`-Ereignis oder Timeout zu `sState_03` wechseln.
+6.  **sState_03**: Aktiver Zustand
+7. Setzt `DO_S3`. Kann via `S3_S4`-Ereignis oder Timeout zu `sState_04` wechseln.
+8.  **sState_04**: Aktiver Zustand
+9. Setzt `DO_S4`. Kann via `S4_S1`-Ereignis oder Timeout zurück zu `sState_01` wechseln (Schleife).
+10.  **sRESET**: Reset-Zustand. Schaltet alle Ausgänge aus, setzt `STATE_NR` auf 0 und wechselt automatisch zurück zu `xSTART`.
 
 ## Anwendungsszenarien
 

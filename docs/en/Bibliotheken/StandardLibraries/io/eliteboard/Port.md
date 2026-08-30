@@ -4,6 +4,7 @@
 
 - [The Technology Panorama of 1863: Lanz & Comp. and the Revolution of German Agriculture through Import, Innovation, and Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
 - [ESP32-S3-DevKitC-1 Document Analysis: The Memory Monster (32MB Flash/16MB PSRAM) and the Power of Dual USB Ports](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/ESP32-S3-DevKitC-1-Doku-Analyse-Das-Speicher-Monster-32MB-Flash16MB-PSRAM-und-die-Macht-der-Dual-USB-Ports-e39hamt)
+
 ## Introduction
 
 The Port Function Block serves as a Service Interface Function Block for configuring and managing digital inputs/outputs on an EliteBoard system. It enables the mapping of pin names to physical ports via an adapter mechanism.

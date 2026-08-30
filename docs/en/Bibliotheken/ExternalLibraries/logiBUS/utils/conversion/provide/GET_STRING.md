@@ -3,9 +3,11 @@
 ![GET_STRING](./GET_STRING.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `GET_STRING` is used to read a string value from an InOut variable and provide it as a buffered output. It is typically used to capture the current value of an external variable at a specific time and make it available for further processing.
+
 ## Interface Structure
 
 ### **Event Inputs**

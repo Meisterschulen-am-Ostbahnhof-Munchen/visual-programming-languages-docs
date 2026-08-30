@@ -1,8 +1,9 @@
-# Exercise_011e_MIX: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly mixed!
+# Exercise_011e_MIX: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly mixed
 
 ![Uebung_011e_MIX_network](./Uebung_011e_MIX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates an **incompatible interaction** between two different namespaces in the isobus context. The goal is to pass a numeric value from an input (I1) to an output (N3), deliberately using software scaling via `NumericObjectPool_S` – but with **incorrectly mixed** types. The exercise highlights the problems that can arise from using different data representations (raw values vs. physical values).
@@ -26,11 +27,11 @@ The flow is event-driven and takes place in three steps:
 
 When `InputNumber_I1` receives a new value (e.g., `10`), it sends an event via `IND` to the conversion function block `F_DWORD_TO_REAL.REQ`. Simultaneously, the read DWORD value is transferred via the data connection `InputNumber_I1.IN` → `F_DWORD_TO_REAL.IN`.
 
-2. **Conversion:**
+1. **Conversion:**
 
 F_DWORD_TO_REAL` converts the DWORD value into a REAL value (e.g., `10` → `10.0`). Upon completion, it sends an event via `CNF` to the output block `Q_NumericValue_PHYS.REQ`. The converted REAL value is then passed on via the data connection `F_DWORD_TO_REAL.OUT` → `Q_NumericValue_PHYS.rPhys`.
 
-3. **Write Output:**
+1. **Write Output:**
 
 Q_NumericValue_PHYS` receives the event and writes the physical REAL value to the pool object `OutputNumber_N3`. The control panel will then display, for example, `10.00`.
 

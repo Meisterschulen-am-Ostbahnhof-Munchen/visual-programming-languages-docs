@@ -6,6 +6,7 @@
 
 The function block `F_DINT_TO_SINT` converts a 32-bit integer value (DINT) to an 8-bit integer value (SINT). This block is particularly useful in scenarios where type conversion between integer data types of different sizes is required.
 ![F_DINT_TO_SINT](F_DINT_TO_SINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

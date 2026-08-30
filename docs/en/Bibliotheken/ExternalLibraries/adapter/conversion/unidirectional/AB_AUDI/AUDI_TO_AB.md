@@ -3,9 +3,11 @@
 ![AUDI_TO_AB](./AUDI_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUDI_TO_AB** function block is a composite function block (FB) that converts a UDINT interface (AUDI, 32-bit unsigned integer) into a BYTE interface (AB, 8-bit). It encapsulates the conversion logic and provides two unidirectional adapters: a socket for the AUDI input and a plug for the AB output. This function block is typically used to enable data communication between systems that use different data types via adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AUDI_TO_AB** function block is a composite function block (FB) that conver
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `AUDI_IN` | adapter::types::unidirectional::AUDI | Socket (Input) | Unidirectional adapter that provides events and data of type UDINT. |
 | `AB_OUT` | adapter::types::unidirectional::AB | Plug (Output) | Unidirectional adapter that outputs events and data of type BYTE. |
 
@@ -69,7 +71,7 @@ This function block does not have an explicit state machine. It operates event-d
 ## Comparison with similar function blocks
 
 | Function block | Description | Difference to AUDI_TO_AB |
-|----------|---------------|-----------------------------|
+| ---------- | --------------- | ----------------------------- |
 | `F_UDINT_TO_BYTE` | Direct conversion function without adapters | Expects standard event and data interfaces; AUDI_TO_AB encapsulates the conversion in adapter signatures. |
 | `UDINT_TO_BYTE` (Composite with standard ports) | Similar logic, but with a SOCKET/PLUG interface | May use different adapter types or bidirectional interfaces; AUDI_TO_AB is specialized for unidirectional adapters. |
 

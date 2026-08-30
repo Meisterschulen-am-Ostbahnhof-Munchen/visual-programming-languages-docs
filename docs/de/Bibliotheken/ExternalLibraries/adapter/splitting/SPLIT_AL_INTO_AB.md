@@ -3,6 +3,7 @@
 ![SPLIT_AL_INTO_AB](./SPLIT_AL_INTO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AL_INTO_AB** dient dazu, einen über einen **AL-Adapter** (Long Word) eingehenden 64-Bit-Wert (LWORD) in seine acht einzelnen Bytes aufzuteilen und diese über acht separate **AB-Adapter** (Byte) bereitzustellen. Die Aufteilung erfolgt synchron zu einem Ereignis am Eingangsadapter, und jedes Byte wird über ein eigenes Flipflop (E_D_FF_ANY) zwischengespeichert, bevor es am entsprechenden Ausgangsadapter anliegt. Der Baustein ist als **Adapter-Splitting-Komponente** konzipiert und eignet sich besonders für die strukturierte Datenzerlegung in IEC 61499-Systemen.

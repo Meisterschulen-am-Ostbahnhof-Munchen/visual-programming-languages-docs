@@ -3,6 +3,7 @@
 ![AULI_TO_ADI](./AULI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_ADI** ist ein zusammengesetzter Baustein zur Umwandlung eines **AULI**-Adapters (unsignierter 64‑Bit‑Wert) in einen **ADI**-Adapter (vorzeichenbehafteter 32‑Bit‑Wert). Er ermöglicht die einfache Konvertierung zwischen zwei unidirektionalen Adapterschnittstellen und nutzt intern eine IEC‑61131‑Typumwandlungsfunktion.

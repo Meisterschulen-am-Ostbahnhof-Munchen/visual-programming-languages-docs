@@ -3,6 +3,7 @@
 ![Uebung_210_network](./Uebung_210_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler (Count-Up) basierend auf dem Standardbaustein **FB_CTU** nach IEC 61131-3. Der Zähler arbeitet mit einem Datentyp `INT` (16‑Bit Ganzzahl) und verfügt über eine Terminal-Ausgabe, die den aktuellen Zählwert numerisch anzeigt. Als Hardware-Anbindung dienen digitale Eingänge und ein digitaler Ausgang des logiBUS-Systems.
@@ -10,7 +11,7 @@ Diese Übung implementiert einen Vorwärtszähler (Count-Up) basierend auf dem S
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter | Ereigniseingänge/-ausgänge | Dateneingänge/-ausgänge |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **FB_CTU** | `iec61131::counters::FB_CTU` | PV = INT#5 | REQ (Eingang), CNF (Ausgang) | CU (Eingang), R (Eingang), Q (Ausgang), CV (Ausgang) |
 | **Input_CU** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I1 | IND (Ausgang) | IN (Ausgang) |
 | **Input_R** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I2 | IND (Ausgang) | IN (Ausgang) |

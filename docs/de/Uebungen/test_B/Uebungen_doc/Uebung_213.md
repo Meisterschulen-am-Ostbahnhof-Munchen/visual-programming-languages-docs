@@ -3,6 +3,7 @@
 ![Uebung_213_network](./Uebung_213_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler nach IEC 61131-3 (Typ FB_CTU_UDINT) als Subapplikation. Der Zähler verfügt über zwei digitale Eingänge (Count-Up und Reset), einen digitalen Ausgang (Q) und eine Terminalausgabe für den aktuellen Zählwert. Die Eingänge werden über logiBUS-IO-Bausteine bereitgestellt, während der Ausgang und der numerische Wert auf konfigurierte logiBUS-Kanäle ausgegeben werden.

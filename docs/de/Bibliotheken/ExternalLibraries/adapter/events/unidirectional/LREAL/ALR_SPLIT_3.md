@@ -3,6 +3,7 @@
 ![ALR_SPLIT_3](./ALR_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_SPLIT_3** dient als generischer SPLIT-Baustein, der ein eingehendes ALR-Signal (Alarm- oder Ereignissignal) auf drei identische Ausgänge aufteilt. Er wird vor allem in Automatisierungssystemen eingesetzt, wo ein einzelnes Signal parallel an mehrere nachfolgende Komponenten verteilt werden muss, ohne die Signalqualität oder -logik zu verändern.

@@ -3,9 +3,11 @@
 ![Uebung_175_network](./Uebung_175_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_175** is a template for learning how to use table controls within the IEC 61499 architecture. The focus is specifically on the function block `E_TABLE_CTRL` (Event Table Control). The exercise provides a basic framework that must be completed by the user.
+
 ## Function Blocks Used
 
 This sub-application primarily uses an instance of a standard library function block.
@@ -32,9 +34,11 @@ The network for this exercise is designed as a **task (TODO)**.
 - Understanding the interfaces of `E_TABLE_CTRL`.
 - Interconnecting events and data to implement sequence control.
 - **Procedure**:
+
 1. Analyze the required inputs and outputs of `E_TABLE_CTRL`.
-- 2. Connect the necessary event and data lines according to the task description (implicitly given here by the "TODO").
-3. Configure the function block's parameters, if necessary.
+
+- 1. Connect the necessary event and data lines according to the task description (implicitly given here by the "TODO").
+1. Configure the function block's parameters, if necessary.
 
 ## Summary
 

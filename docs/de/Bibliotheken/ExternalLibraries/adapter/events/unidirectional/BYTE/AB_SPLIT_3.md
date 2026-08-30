@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AB` | `IN` | Socket (Eingang) | Empfängt einen unidirektionalen Adapter vom Typ AB. |
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug (Ausgang) | Erste Ausgabe des eingehenden Signals. |
 | `adapter::types::unidirectional::AB` | `OUT2` | Plug (Ausgang) | Zweite Ausgabe des eingehenden Signals. |
@@ -61,7 +61,7 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine**. Das Verhalten i
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Verhalten | Besonderheit |
-|----------|-----------|--------------|
+| ---------- | ----------- | -------------- |
 | `SPLIT_2` | 1-zu-2-Verteilung | Analoger Baustein mit zwei Ausgängen. |
 | `AB_SPLIT_3` | 1-zu-3-Verteilung | Dieser Baustein. |
 | `AB_JOIN` | Zusammenführen mehrerer Adapter | Gegenstück zum Splitter. |

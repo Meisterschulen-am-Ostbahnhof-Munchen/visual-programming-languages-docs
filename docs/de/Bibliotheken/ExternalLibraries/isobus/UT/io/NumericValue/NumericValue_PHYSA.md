@@ -3,6 +3,7 @@
 ![NumericValue_PHYSA](./NumericValue_PHYSA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NumericValue_PHYSA** ist ein Eingangs-Service-Interface-Funktionsblock (SIFB) nach ISO 11783-6. Seine Aufgabe besteht darin, einen physikalischen REAL-Wert über einen AR-Adapter (Adapter Typ *unidirectional::AR*) bereitzustellen. Intern kapselt er den Baustein `NumericValue_PHYS` und dessen gesamte Logik zur Umrechnung und Bereitstellung des Wertes.
@@ -25,9 +26,9 @@ Der Funktionsblock **NumericValue_PHYSA** ist ein Eingangs-Service-Interface-Fun
 ### **Daten-Eingänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|-------------|
-| QI    | BOOL   | Eingangsqualifizierer (aktiviert/steuert die Verarbeitung) |
-| PARAMS| STRING | Parameter für den Dienst (z. B. Konfigurationsstring) |
+| ------ | ----- | ------------- |
+| QI | BOOL | Eingangsqualifizierer (aktiviert/steuert die Verarbeitung) |
+| PARAMS | STRING | Parameter für den Dienst (z. B. Konfigurationsstring) |
 | stObj | *NumericObjectPool_S* | Objekt-Pool-Eigenschaften: Objekt-ID (UINT16), Skalierung, Offset, Dezimalstellen |
 
 ### **Daten-Ausgänge**

@@ -3,6 +3,7 @@
 ![Uebung_205b_network](./Uebung_205b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a **motor reversing interlock** with priority protection and a protection time. The function block `ILOCK_SWITCH_PROTECT` ensures that a motor cannot be switched to both directions of rotation (clockwise and counterclockwise) simultaneously. An additional low-side driver switches the common power supply. The protection time `DT_PROTECT` of 1 second prevents excessively rapid switching and protects the power electronics.
@@ -30,6 +31,7 @@ This exercise demonstrates the implementation of a **motor reversing interlock**
 - Adapter `timeOut` passes the timer status to the `E_TimeOut` block.
 
 ` internally, the protection timer qzms `qzms `qzms `qzms `000023qz
+
 ### Output Modules
 
 - **Right-Hand Rotation** (Type `logiBUS::io::DQ::logiBUS_QX`)
@@ -57,19 +59,23 @@ This exercise demonstrates the implementation of a **motor reversing interlock**
 ## Program Flow and Connections
 
 1. **Input Processing**
+
 - The digital inputs `Input_I1` (right) and `Input_I2` (left) are acquired via the function blocks `DigitalInput_I1` and `DigitalInput_I2`.
 - Upon an edge, an event (`IND`) is sent to the ILOCK.
-2. **Locking via ILOCK**
+1. **Locking via ILOCK**
+
 - The ILOCK checks whether a change of direction is permitted.
 - If a switching request is made, the 1-second protection time is started.
 - Only after the protection time has expired is the new direction enabled and the corresponding event (`EO_UP`/`EO_DOWN`) and the data value (`DO_UP`/`DO_DOWN`) are output.
 - The adapter `timeOut` delivers the timer status to `E_TimeOut`, which can be used, for example, in an HMI display.
-3. **Controlling the Outputs**
+1. **Controlling the Outputs**
+
 - `EO_UP` triggers the function block `Rechtslauf`, which sets the output `Output_Q5`.
 - `EO_DOWN` triggers the function block `Linkslauf`, which sets the output `Output_Q6`.
 - In parallel, the data outputs `DO_UP` and `DO_DOWN` are forwarded to the OR gate (`OR_2_BOOL`).
 - The OR signal activates `LowSide_Treiber`, which switches on the common power supply `Output_Q56`. This ensures that current only flows when at least one direction is active.
-4. **Protection Mechanism**
+1. **Protection Mechanism**
+
 - The protection time prevents the outputs from switching too quickly during rapid changes in requirements (contact bounce, incorrect operation), thus protecting the motor bridge.
 
 ## Summary

@@ -4,6 +4,7 @@
 ![AUS_MUL_3](./AUS_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) `AUS_MUL_3` dient der arithmetischen Multiplikation von drei Eingangswerten. Es handelt sich hierbei um einen generischen Funktionsbaustein (`Generic FB`), der auf der Verwendung von unidirektionalen Adaptern des Typs `AUS` basiert. Der Baustein berechnet das Produkt aus drei Eingangsgrößen und stellt das Ergebnis an einem Ausgangs-Adapter zur Verfügung.
@@ -57,6 +58,7 @@ Das berechnete Ergebnis wird zusammen mit einem entsprechenden Bestätigungserei
 ## Zustandsübersicht
 
 Der Baustein verhält sich rein zustandslos (bzw. reagiert ereignisgesteuert auf die eingehenden Adapter-Signale):
+
 1. **Wartezustand:** Der Baustein wartet auf ein Aktualisierungsereignis an den Sockets `IN1`, `IN2` oder `IN3`.
 2. **Berechnung:** Bei Eintreffen eines Ereignisses werden die Datenwerte der drei Eingangs-Adapter gelesen und miteinander multipliziert.
 3. **Ausgabe:** Das Ergebnis wird an den Plug `OUT` geschrieben und das dazugehörige Sende-Ereignis des Plugs ausgelöst.

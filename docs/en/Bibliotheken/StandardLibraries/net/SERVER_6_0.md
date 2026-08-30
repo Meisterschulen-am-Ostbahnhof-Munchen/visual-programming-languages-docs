@@ -3,6 +3,7 @@
 ![SERVER_6_0](SERVER_6_0.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `SERVER_6_0` function block is the generic server variant with 6 send and 0 receive data fields for communicating with a matching [CLIENT_0_6](CLIENT_0_6.md) block. It transmits 6 data values (`SD_1` `SD_2` `SD_3` `SD_4` `SD_5` `SD_6`) to the client without receiving any data back. Like all `SERVER_*` blocks, it is based on the generic `GEN_SERVER` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

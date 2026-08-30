@@ -3,6 +3,7 @@
 ![GET_BOOL](./GET_BOOL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_BOOL** dient dem Auslesen eines BOOL-Wertes aus einer als `InOut` deklarierten Variablen und stellt diesen als gepufferten Ausgangswert bereit. Diese einfache Kapselung ermöglicht das Weiterleiten eines booleschen Signals aus einem beliebigen Kontext, ohne dass im aufrufenden Baustein direkter Schreib-/Lesezugriff auf die Quelle notwendig ist.
@@ -68,9 +69,9 @@ Nach Ausführung des Algorithmus wird sofort der Ausgangszustand wieder verlasse
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Zweck | Datentyp |
-|----------|-------|----------|
+| ---------- | ------- | ---------- |
 | GET_BOOL | Lesen eines BOOL-Wertes über InOut | BOOL |
-| GET_INT  | Lesen eines INT-Wertes über InOut | INT |
+| GET_INT | Lesen eines INT-Wertes über InOut | INT |
 | GET_REAL | Lesen eines REAL-Wertes über InOut | REAL |
 | SET_BOOL | Schreiben eines BOOL-Wertes über InOut (schreibend) | BOOL |
 

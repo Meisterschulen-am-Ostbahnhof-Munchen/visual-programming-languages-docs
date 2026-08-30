@@ -3,6 +3,7 @@
 ![AUS_SPLIT_5](./AUS_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUS_SPLIT_5` verteilt ein eingehendes AUS-Ereignis (z. B. ein Signal oder eine Nachricht) auf fünf identische Ausgänge. Es handelt sich um einen generischen Baustein, der in der 4diac-IDE als Platzhalter für einen anwendungsspezifischen Typ (`GEN_AUS_SPLIT`) dient.
@@ -28,13 +29,13 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ |
-|----------|------|-----|
+| ---------- | ------ | ----- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AUS` |
-| Plug (Ausgang)   | `OUT1` | `adapter::types::unidirectional::AUS` |
-| Plug (Ausgang)   | `OUT2` | `adapter::types::unidirectional::AUS` |
-| Plug (Ausgang)   | `OUT3` | `adapter::types::unidirectional::AUS` |
-| Plug (Ausgang)   | `OUT4` | `adapter::types::unidirectional::AUS` |
-| Plug (Ausgang)   | `OUT5` | `adapter::types::unidirectional::AUS` |
+| Plug (Ausgang) | `OUT1` | `adapter::types::unidirectional::AUS` |
+| Plug (Ausgang) | `OUT2` | `adapter::types::unidirectional::AUS` |
+| Plug (Ausgang) | `OUT3` | `adapter::types::unidirectional::AUS` |
+| Plug (Ausgang) | `OUT4` | `adapter::types::unidirectional::AUS` |
+| Plug (Ausgang) | `OUT5` | `adapter::types::unidirectional::AUS` |
 
 ## Funktionsweise
 

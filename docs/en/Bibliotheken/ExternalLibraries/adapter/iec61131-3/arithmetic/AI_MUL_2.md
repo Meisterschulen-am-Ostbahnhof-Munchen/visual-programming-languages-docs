@@ -53,6 +53,7 @@ As soon as an update event is received via the input adapters (`IN1` and/or `IN2
 - **Generic Implementation:** The function block uses the class `GEN_AI_MUL`. This allows for high flexibility, as the specific data type is only determined when used in the system.
 - **Unidirectional Adapters:** The interfaces use the type `adapter::types::unidirectional::AI`. This means that the information flow is strictly unidirectional, which increases system stability and performance.
 - **Encapsulation:** The absence of individual signal pins keeps the application diagram clear and uncluttered, even with many mathematical operations.
+
 - ## State Overview
 
 The module essentially behaves in a stateless manner (exhibiting analog characteristics):
@@ -67,6 +68,7 @@ The module essentially behaves in a stateless manner (exhibiting analog characte
 Compared to the standard IEC 61131-3 component `MUL`, the `AI_MUL_2` eliminates the need for manual wiring of trigger events (as with `REQ` and `CNF`) and individual data pins. While a classic `MUL` block requires separate lines for data and events for each connection, the `AI_MUL_2` bundles these using the `AI` adapters. This is particularly suitable for advanced, object-oriented, or modularized software architectures in 4diac.
 
 The `AI_MUL_2` is a specialized, yet flexible, block for multiplying two values via adapter connections. It is ideally suited for clean, well-organized control architectures where analog signals need to be transmitted and processed in a standardized way using unidirectional adapters.
+
 ## Technical Features
 
 ## State Overview

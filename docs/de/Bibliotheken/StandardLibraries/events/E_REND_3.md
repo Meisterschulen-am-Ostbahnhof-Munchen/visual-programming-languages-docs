@@ -1,6 +1,7 @@
 # E_REND_3
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_REND_3` ist die generische 3-Eingangs-Variante des Rendezvous-Bausteins `E_REND` (2 Eingänge). Er löst `EO` erst aus, wenn er von **allen** 3 Eingängen (`EI1`, `EI2`, `EI3`) mindestens ein Ereignis seit dem letzten Reset empfangen hat — eine logische UND-Verknüpfung über 3 asynchrone Ereignisströme.

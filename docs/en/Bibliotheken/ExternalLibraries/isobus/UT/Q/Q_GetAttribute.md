@@ -3,6 +3,7 @@
 ![Q_GetAttribute](https://user-images.githubusercontent.com/116869307/214147879-2749e8c2-364e-4335-9c0e-0445694831e4.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_GetAttribute** is a standards-compliant function module for querying object attributes in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.58) specification for VT systems from version 4 onwards.
@@ -40,13 +41,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object ID
 - `INITO` confirms operational readiness
-2. **Attribute Query**:
+1. **Attribute Query**:
+
 - `REQ` with desired attribute ID
 - Reads current attribute value from VT
 - `CNF` returns result status and current value
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -60,7 +64,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Attribute Types
 
 | Category | Example IDs | Description |
-|----------------|--------------------------|----------------------------------|
+| ---------------- | -------------------------- | ---------------------------------- |
 | Basic Attributes | 0x01 - 0x0F | Visibility, Activity |
 | Appearance | 0x10 - 0x2F | Colors, Borders, Alignment |
 | Content | 0x30 - 0x4F | Text Values, Numeric Values |
@@ -69,7 +73,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Query successful |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -87,7 +91,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_GetAttribute | VtReadValue | VtObjectQuery |
-|---------------|----------------|-------------|---------------|
+| --------------- | ---------------- | ------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | VT Version | 4+ | All | All |
 | Attribute Width | Universal | Value-Only | Limited IDs |

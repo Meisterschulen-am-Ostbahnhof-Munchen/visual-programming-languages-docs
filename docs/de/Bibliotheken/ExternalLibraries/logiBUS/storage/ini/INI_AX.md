@@ -3,6 +3,7 @@
 ![INI_AX](INI_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `INI_AX` lädt und speichert einen `BOOL`-Wert in der `settings.ini`-Datei, adressiert über Abschnitt (`SECTION`) und Schlüssel (`KEY`). Er ist das boolesche Gegenstück zu [INI_AB](INI_AB.md) und das `settings.ini`-Gegenstück zu [NVS_AX](../esp32_nvs/NVS_AX.md).

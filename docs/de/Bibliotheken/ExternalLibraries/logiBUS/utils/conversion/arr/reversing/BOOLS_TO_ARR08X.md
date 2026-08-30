@@ -5,6 +5,7 @@
 ![BOOLS_TO_ARR08X](./BOOLS_TO_ARR08X.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `BOOLS_TO_ARR08X` dient der Konvertierung von acht einzelnen booleschen (`BOOL`) Eingangssignalen in ein boolesches Array (`ARRAY[0..7] OF BOOL`). Er ist ein grundlegender Baustein zur Signalzusammenführung und Datenstrukturierung in Steuerungsanwendungen, insbesondere wenn diskrete digitale Signale für eine kompakte Weiterverarbeitung oder Übertragung gebündelt werden müssen.

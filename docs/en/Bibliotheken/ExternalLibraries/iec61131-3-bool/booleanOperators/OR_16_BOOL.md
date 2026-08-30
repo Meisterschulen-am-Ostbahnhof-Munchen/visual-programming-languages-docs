@@ -6,6 +6,7 @@
 
 The function block `OR_16_BOOL` is a standard function block for calculating the logical OR operation. It performs the OR operation via 16 separate Boolean inputs and provides the result at a single output. This function block is part of the IEC 61131-3 compliant library for bitwise operations and is suitable for applications where a logical combination of multiple signals is required.
 ![OR_16_BOOL](OR_16_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,7 +38,7 @@ The operation is deterministic and event-driven:
 1. The block is activated when an event occurs at input `REQ`.
 2. The block reads the current values of all 16 inputs `IN1` to `IN16`.
 3. The logical OR operation is calculated on all read values: `OUT = IN1 OR IN2 OR ... OR IN16`. 4. The result is set at the data output `OUT`.
-5. Immediately after the calculation, the confirmation event `CNF` is output along with the new value of `OUT`.
+4. Immediately after the calculation, the confirmation event `CNF` is output along with the new value of `OUT`.
 
 ## Technical Features
 

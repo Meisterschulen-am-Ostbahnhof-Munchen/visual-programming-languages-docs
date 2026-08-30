@@ -3,6 +3,7 @@
 ![AR_SPLIT_2](./AR_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AR_SPLIT_2** ist ein generischer Funktionsbaustein, der einen eingehenden Adapter vom Typ `adapter::types::unidirectional::AR` auf zwei separate Ausgänge (OUT1, OUT2) aufteilt. Er dient zur Weiterleitung eines Signals an zwei nachfolgende Bausteine, ohne die Daten zu verändern. Der Baustein ist als generischer Typ (`GEN_AR_SPLIT`) implementiert und wird zur Laufzeit parametrisiert.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AR` | IN | Socket | Eingangssignal (AR) |
 | `adapter::types::unidirectional::AR` | OUT1 | Plug | Erster Ausgang (identisch zu IN) |
 | `adapter::types::unidirectional::AR` | OUT2 | Plug | Zweiter Ausgang (identisch zu IN) |

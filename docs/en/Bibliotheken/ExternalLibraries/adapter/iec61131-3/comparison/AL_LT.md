@@ -3,9 +3,11 @@
 ![AL_LT](./AL_LT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_LT** compares two values of type `LWORD` (64-bit bit pattern (long word)) and checks whether the first value (IN1) is less than the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously. The bit patterns are interpreted as unsigned integers and compared numerically.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
@@ -31,7 +33,7 @@ The function block has no direct event or data inputs and outputs, but communica
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `AL` (Socket) | Input | Adapter for the first comparison value and its associated event |
 | IN2 | `AL` (Socket) | Input | Adapter for the second comparison value and its associated event |
 | OUT | `AX` (Plug) | Output | Adapter for the comparison result and the output event |

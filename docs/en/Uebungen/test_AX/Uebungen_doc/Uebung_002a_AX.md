@@ -1,8 +1,9 @@
 # Exercise_002a_AX: DigitalInput_I1/_I2 with AND on DigitalOutput_Q1, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a_AX`. In this exercise, a classic AND gate is implemented, where a digital output is only activated if two digital inputs are simultaneously in the "True" (HIGH) state.
+This article describes the logiBUS® exercise `Uebung_002a_AX`. In this exercise, a classic AND gate is implemented, where a digital output is only activated if two digital inputs are simultaneously in the "True" (HIGH) state
 -----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to implement a basic logical decision structure. It demonstrates how signals from multiple sensors (inputs) can be combined to trigger an action at an actuator (output). This is a fundamental building block of any control programming.

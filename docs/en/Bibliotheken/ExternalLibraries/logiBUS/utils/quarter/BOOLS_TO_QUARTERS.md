@@ -3,6 +3,7 @@
 ## 🎧 Podcast
 
 - [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 <img width="1372" height="473" alt="image" src="https://github.com/user-attachments/assets/29cc86f3-ca17-48a7-8143-0a020e5cabcb" />
 * * * * * * * * * *
@@ -50,10 +51,12 @@ As a composite function block without its own explicit state machine, `BOOLS_TO_
 
 1. **Idle:** Waiting for a `REQ` event. All outputs retain their last value.
 2. **Processing:** A `REQ` event passes through the cascade of the 16 internal blocks. During this phase, the outputs are updated sequentially.
+
 - **Control of compact value-added actuators:** For actuators or drivers that expect control commands not as simple on/off signals, but as 2-bit commands (e.g., on/off/error reset/emergency stop).
 - **Data compression for bus communication:** Before transmission via fieldbuses, where many binary signals must be packed into a space-saving byte- or word-oriented protocol.
 - **Interface to legacy systems:** As an adapter between modern IEC 61499 controllers and older systems that expect or deliver data in a special quarter-byte format.
-*
+-
+
 - **Compared to `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` is essentially an array of 16 `BOOL_TO_QUARTER` blocks with a hard-wired serial event chain. While `BOOL_TO_QUARTER` performs a single conversion, `BOOLS_TO_QUARTERS` aggregates many such conversions into a reusable building block.
 - **Compared to Generic Pack Blocks (e.g., `BOOLx_TO_BYTE`):** Blocks like `BOOL8_TO_BYTE` pack multiple BOOL values into the bits of a single byte. In contrast, `BOOLS_TO_QUARTERS` generates a separate (albeit only partially used) byte for each input. There is no bit packing into a shared byte, but rather a one-to-one mapping to a special encoding format.
 - [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)

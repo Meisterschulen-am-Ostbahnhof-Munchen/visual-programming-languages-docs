@@ -1,8 +1,9 @@
 # Exercise_006a4: SR and T Flip-Flop with 3x IE and LeftRight Block
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_006a4`. Here, the motor control from the previous exercise is optimized by using a ready-made library block.
+This article describes the logiBUS® exercise `Uebung_006a4`. Here, the motor control from the previous exercise is optimized by using a ready-made library block
 ----
+
 ## Objective of the Exercise
 
 Using specialized service blocks to reduce diagram complexity.

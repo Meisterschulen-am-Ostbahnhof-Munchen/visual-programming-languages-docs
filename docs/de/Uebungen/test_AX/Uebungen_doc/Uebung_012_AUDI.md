@@ -3,6 +3,7 @@
 ![Uebung_012_AUDI_network](./Uebung_012_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Aufnahme eines numerischen Werts über den isobus I/O‑Stack, die Konvertierung in ein für die Audi‑Steuerung kompatibles Format und die persistente Speicherung des Werts im nichtflüchtigen Speicher (NVS). Der gespeicherte Wert wird anschließend über einen weiteren isobus‑Ausgabebaustein ausgegeben. Ziel ist das Verständnis des Datenflusses zwischen Eingabe, Konvertierung, Speicherung und Ausgabe.

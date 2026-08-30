@@ -3,6 +3,7 @@
 ![AX_RS_SYM](./AX_RS_SYM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AX_RS_SYM** ist ein ereignisgesteuerter, bistabiler Funktionsblock (RS‑Flip‑Flop) mit symmetrischem Start‑Up‑Verhalten. Er verfügt über zwei Ereigniseingänge `R` (Reset) und `S` (Set), die jeweils den Zustand des Ausgangs `Q` setzen. Der Ausgang wird als unidirektionaler Adapter bereitgestellt, über den sowohl ein Datenwert (D1) als auch ein Ereignis (E1) übertragen werden.
@@ -54,7 +55,7 @@ Das Besondere ist das **symmetrische Start‑Up‑Verhalten**: Unmittelbar nach 
 Die interne Zustandsmaschine besteht aus folgenden Zuständen und Transitionen:
 
 | Zustand | Bedeutung | Aktion bei Eintritt |
-|---------|-----------|---------------------|
+| --------- | ----------- | --------------------- |
 | START | Initialzustand nach dem Einschalten | Keine Aktion (wartet auf erstes Ereignis) |
 | SET | Ausgang `Q.D1` ist `TRUE` | Führt Algorithmus `SET` aus: `Q.D1 := TRUE` und feuert `Q.E1` |
 | RESET | Ausgang `Q.D1` ist `FALSE` | Führt Algorithmus `RESET` aus: `Q.D1 := FALSE` und feuert `Q.E1` |

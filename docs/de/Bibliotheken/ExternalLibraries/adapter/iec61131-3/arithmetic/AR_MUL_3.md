@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_MUL_3` ist ein generischer arithmetischer Baustein, der zur Multiplikation von drei Eingangswerten dient. Er basiert auf der Verwendung von unidirektionalen Adaptern des Typs `AR` (Arithmetic), was eine strukturierte und übersichtliche Signalübertragung innerhalb der 4diac-IDE ermöglicht. Da es sich um einen generischen Baustein handelt, ist er flexibel für verschiedene numerische Datentypen einsetzbar.
@@ -55,6 +56,7 @@ Sobald an den Eingangs-Adaptern ein Berechnungsereignis (z. B. eine Werteaktuali
 ## Zustandsübersicht
 
 Der Baustein verhält sich rein funktional und besitzt im Wesentlichen folgende logische Zustände:
+
 - **Warten (Idle):** Der Baustein wartet auf ein Trigger-Ereignis über die Eingangs-Adapter.
 - **Berechnen (Evaluation):** Nach dem Eintreffen eines Ereignisses werden die Eingangsdaten gelesen und multipliziert.
 - **Aktualisieren (Update):** Das berechnete Produkt wird an den Ausgang `OUT` angelegt und das Ausgangsereignis getriggert.

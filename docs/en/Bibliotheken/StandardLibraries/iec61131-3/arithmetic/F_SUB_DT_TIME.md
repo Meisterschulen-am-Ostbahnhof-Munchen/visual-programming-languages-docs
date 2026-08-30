@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_SUB_DT_TIME](F_SUB_DT_TIME.svg)
+
 ## Introduction
 
 The **F_SUB_DT_TIME** function block is a standards-compliant function block for subtracting time intervals from timestamps, developed under the EPL-2.0 license. Version 1.0 enables precise time calculations according to the IEC 61131-3 standard.
@@ -30,13 +31,16 @@ The **F_SUB_DT_TIME** function block is a standards-compliant function block for
 ## Functional Principle
 
 1. **Calculation Trigger**:
+
 - `REQ` event with DATE_AND_TIME and TIME value
 - Time range: DT#1970-01-01-00:00:00 to DT#2106-02-07-06:28:15
-2. **Time Calculation**:
+1. **Time Calculation**:
+
 - Conversion to epoch microseconds
 - Subtraction of the time interval
 - Calendar-accurate back-calculation
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with new timestamp
 - Automatic calendar correction (leap years, month ends)
 
@@ -66,7 +70,7 @@ The **F_SUB_DT_TIME** function block is a standards-compliant function block for
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_SUB_DT_TIME | F_ADD_DT_TIME | F_SUB_DT_DT |
-|----------------|----------------|---------------|--------------|
+| ---------------- | ---------------- | --------------- | -------------- |
 | Operation | Time - Interval | Time + Interval | Time - Time |
 | Result | DATE_AND_TIME | DATE_AND_TIME | TIME |
 | Accuracy | Microseconds | Microseconds | Microseconds |

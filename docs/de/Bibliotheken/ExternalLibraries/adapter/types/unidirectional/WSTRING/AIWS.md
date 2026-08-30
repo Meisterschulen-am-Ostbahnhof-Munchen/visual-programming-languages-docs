@@ -58,8 +58,8 @@ Der Adapter selbst besitzt keinen internen Zustand. Er dient ausschließlich als
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ereignisse | Daten | Richtung | Besonderheit |
-|----------|------------|-------|----------|--------------|
-| **AIWS** | 1 Output   | 1 WSTRING | Unidirektional | Einfachster Adapter für WSTRING |
+| ---------- | ------------ | ------- | ---------- | -------------- |
+| **AIWS** | 1 Output | 1 WSTRING | Unidirektional | Einfachster Adapter für WSTRING |
 | **AI** (hypothetisch) | 1 Output | 1 ANY (generisch) | Unidirektional | Flexibler Datentyp, aber aufwendiger |
 | **BIWS** (bidirektional) | 2 Events (in/out) | 2 WSTRING in beide Richtungen | Bidirektional | Erfordert Handshake |
 

@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_ADD_4` ist ein generischer Funktionsbaustein (FB), der für die mathematische Addition von vier Werten konzipiert ist. Die Besonderheit dieses Bausteins liegt in der Verwendung von Adaptern des Typs `AULI` (unidirektional). Durch die Kapselung der Daten- und Ereignisübertragung in Adaptern ermöglicht der Baustein eine übersichtliche und modulare Verdrahtung innerhalb von IEC 61499-Anwendungen in der 4diac IDE.
@@ -58,6 +59,7 @@ Das berechnete Ergebnis wird an den Ausgangs-Adapter `OUT` übergeben und gleich
 ## Zustandsübersicht
 
 Der Funktionsbaustein verhält sich ereignisgesteuert und zustandslos (bzw. besitzt keinen internen Speicher für historische Werte):
+
 1.  **Wartezustand:** Der FB wartet auf ein Ereignis an einem der Eingänge (`IN1` bis `IN4`).
 2.  **Berechnung:** Bei Eintreffen eines Ereignisses werden die Daten aller vier Eingänge summiert.
 3.  **Ausgabe:** Der berechnete Wert wird an `OUT` angelegt und das Ausgabeereignis ausgelöst. Der FB kehrt sofort in den Wartezustand zurück.

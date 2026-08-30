@@ -3,6 +3,7 @@
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `VALUES2ARRAY_2_LREAL` dient dazu, zwei einzelne Gleitkommazahlen vom Typ LREAL in ein Array desselben Typs zu konvertieren. Er ist als Service-Interface-Funktionsblock konzipiert, der eine einfache Schnittstelle für diese Umwandlungsaufgabe bietet.

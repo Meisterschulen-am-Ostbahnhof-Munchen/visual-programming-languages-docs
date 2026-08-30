@@ -3,6 +3,7 @@
 ![AULI_TO_AUS](./AULI_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_AUS** ist ein Composite-Baustein, der eine Konvertierung von einem **AULI-Adapter** (ulint, 64‑Bit unsigned) zu einem **AUS-Adapter** (usint, 8‑Bit unsigned) vornimmt. Er kapselt die IEC‑61131‑Funktion **F_ULINT_TO_USINT** in einer adapterbasierten Umgebung, sodass Daten über standardisierte Adapter ausgetauscht werden können.

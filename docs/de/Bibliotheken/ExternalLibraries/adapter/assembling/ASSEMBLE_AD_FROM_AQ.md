@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|------|-------------|
+| ---------- | ------ | ------ | ------------- |
 | **Sockets** (Eingänge) | QUARTER_BYTE_00 … QUARTER_BYTE_15 | `adapter::types::unidirectional::AQ` | 16 identische Adapter, die jeweils einen 8‑Bit-Datenwert (Quarter/Byte) sowie ein zugehöriges Ereignis (`E1`) liefern. |
 | **Plug** (Ausgang) | OUT | `adapter::types::unidirectional::AD` | Ausgangsadapter, der das aus den 16 Quarter-Werten zusammengesetzte DWORD (`D1`) und ein Ereignis (`E1`) bereitstellt. |
 
@@ -69,7 +69,7 @@ Im Ruhezustand (kein Ereignis an einem Quarter‑Socket) bleibt der Ausgangswert
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Eingänge | Ausgang | Synchronisation | Eigenschaften |
-|----------|-----------------|---------|----------------|--------------|
+| ---------- | ----------------- | --------- | ---------------- | -------------- |
 | `ASSEMBLE_AD_FROM_AQ` | 16 (AQ‑Adapter) | 1 (AD‑Adapter) | Ja (Flip‑Flop) | Für ereignisgesteuerte Byte‑Sammlung. |
 | `ASSEMBLE_DWORD_FROM_QUARTERS` (intern) | 16 Daten‑Eingänge (keine Adapter) | 1 DWORD‑Ausgang | Nein | Reine Daten‑Assemblierung ohne Ereignissynchronisation. |
 | Einfacher `MERGE`‑Baustein (fiktiv) | 2 … n Daten‑Eingänge | 1 Daten‑Ausgang | Oft nein | Nur Daten‑Verknüpfung, keine Adapter‑Struktur. |

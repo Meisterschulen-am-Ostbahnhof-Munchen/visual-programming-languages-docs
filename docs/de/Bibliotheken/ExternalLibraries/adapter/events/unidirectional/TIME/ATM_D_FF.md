@@ -3,6 +3,7 @@
 ![ATM_D_FF](./ATM_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ATM_D_FF` realisiert ein Data Latch (D‑Flipflop) zur Speicherung eines einzelnen Datenwertes. Die Kommunikation erfolgt ausschließlich über Adapter vom Typ `adapter::types::unidirectional::ATM`, sodass Ereignisse und Daten als gebündelte Schnittstelle übertragen werden. Der FB ist gemäß IEC 61499‑1 Annex A implementiert und steht unter der Eclipse Public License 2.0.

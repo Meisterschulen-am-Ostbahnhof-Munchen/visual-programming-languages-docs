@@ -3,9 +3,11 @@
 ![AULI_TO_AD](./AULI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AULI_TO_AD** function block is a composite function block that converts a unidirectional adapter of type **AULI** (ULINT) to a unidirectional adapter of type **AD** (DWORD). It serves as a bridge between components that provide data in ULINT format and those that expect a DWORD format. The conversion is performed using the IEC 61131 function `F_ULINT_TO_DWORD`.
+
 ## Interface Structure
 
 The function block does not have its own event or data inputs/outputs, but communicates exclusively via two adapters:
@@ -76,7 +78,7 @@ Since this is a composite block without its own algorithms, there is no explicit
 ## Comparison with Similar Modules
 
 | Module | Description |
------------------|------------------------------------------------------------------------------|
+----------------- | ------------------------------------------------------------------------------ |
 | `F_ULINT_TO_DWORD` | Simple conversion function, but without adapter integration. |
 | `AULI_TO_AD` | Same functionality, but as a composite block with adapter interfaces. |
 | Other adapter converters | Blocks exist for related types (e.g., LINT, DINT) that operate on the same principle. |

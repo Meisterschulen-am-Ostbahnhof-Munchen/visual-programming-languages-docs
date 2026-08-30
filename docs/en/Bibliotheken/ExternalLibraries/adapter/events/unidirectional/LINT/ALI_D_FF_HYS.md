@@ -3,9 +3,11 @@
 ![ALI_D_FF_HYS](./ALI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_D_FF_HYS** function block implements a data latch (D flip-flop) with a hysteresis function. It serves for the stable and debounced transmission of a binary signal: An incoming data signal is received and output on a rising clock edge, with configurable hysteresis preventing small signal changes (noise) from causing unwanted output changes. The component is specifically designed for use with the unidirectional **ALI** adapter structure in IEC 61499 environments.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No direct data outputs – output is via the adapter `Q`.
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|------|--------------------------------------------|-----------------------------|
+| ---------- | ------ | -------------------------------------------- | ----------------------------- |
 | Socket | `I` | `adapter::types::unidirectional::ALI` | Input value (data + clock) |
 | Plug | `Q` | `adapter::types::unidirectional::ALI` | Output value (latched value) |
 
@@ -52,14 +54,14 @@ The function block works internally with another function block **E_D_FF_ANY_HYS
 
 When the event `INIT` arrives, the value of `HYSTERESIS` is passed to the inner component, and the event is immediately acknowledged as `INITO`.
 
-2. **Data Processing**
+1. **Data Processing**
 
 The event and data connections are directly connected between the adapters and the internal module:
 
 - `I.E1` → **CLK** (Clock signal)
 - `I.D1` → **D** (Input data)
 - **Q** → `Q.D1` (Lagged output signal)
-3. **Hysteresis Behavior**
+1. **Hysteresis Behavior**
 
 At each clock cycle (`CLK`), the current data value `D` is evaluated. If `D` lies within the hysteresis band around the current output value `Q`, the output remains unchanged. If `D` exceeds the upper or lower threshold, the new value is adopted. This suppresses interference and ensures a clean, debounced signal.
 
@@ -91,7 +93,7 @@ Typical applications for this function block include:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature |
-|------------------------|------------------------------------------------------|
+| ------------------------ | ------------------------------------------------------ |
 | **ALI_D_FF** (without hysteresis) | Simple D flip-flop without noise suppression |
 | **ALI_D_FF_HYS** (this one) | D flip-flop with configurable hysteresis for noise filtering |
 | Schmitt trigger function block | Similar function, but often with fixed thresholds |

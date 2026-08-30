@@ -3,6 +3,7 @@
 ![AULI_D_FF_HYS](./AULI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_D_FF_HYS` realisiert ein Data-Latch (D-Flipflop) mit einstellbarer Hysterese. Er kapselt die Logik eines solchen Flipflops in einer adapterbasierten Schnittstelle und erlaubt die Weitergabe von Daten und Ereignissen über unidirektionale Adapter vom Typ `AULI`.

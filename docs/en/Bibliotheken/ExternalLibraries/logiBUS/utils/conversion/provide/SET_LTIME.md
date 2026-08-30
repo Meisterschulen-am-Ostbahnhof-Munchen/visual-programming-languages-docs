@@ -3,9 +3,11 @@
 ![SET_LTIME](./SET_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_LTIME** is used to write an input value of type `LTIME` to a variable declared as InOut. This allows you to directly set the value of an external reference (e.g., an instance variable or another function block). Using an InOut variable allows for efficient data transfer without requiring a separate data output.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -46,6 +48,7 @@ When an event occurs at the **REQ** input, the algorithm `REQ` is executed:
 The logic is very simple and consists of a single assignment:
 
 OUT := IN;
+
 ## Technical Features
 
 - The function block (FB) works exclusively with the **LTIME** data type (high-resolution time, according to IEC 61499).

@@ -3,9 +3,11 @@
 ![AULI_SPLIT_7](./AULI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AULI_SPLIT_7** function block serves as a generic splitter that distributes an incoming AULI adapter signal (unidirectional) to seven separate AULI outputs. It is specifically designed for splitting a command or data stream (AULI protocol) and allows multiple downstream components to be supplied with the same signal simultaneously.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | IN | `adapter::types::unidirectional::AULI` | Receives the AULI signal to be split |
 | Plug (Output) | OUT1 | `adapter::types::unidirectional::AULI` | First output for the AULI signal |
 | Plug (Output) | OUT2 | `adapter::types::unidirectional::AULI` | Second output |

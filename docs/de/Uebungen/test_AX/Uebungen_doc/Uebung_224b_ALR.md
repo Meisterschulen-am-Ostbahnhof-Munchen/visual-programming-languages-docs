@@ -3,6 +3,7 @@
 ![Uebung_224b_ALR_network](./Uebung_224b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Standard IEC 61131-3 Vorwärts-/Rückwärtszähler (CTUD) als Adapter-Version mit dem Datentyp ULINT. Der aktuelle Zählerstand wird über einen Terminal-Ausgang in Form des physischen Wertes (PHYSA_LREAL) ausgegeben. Die Steuerung erfolgt über vier digitale Eingänge, zwei digitale Ausgänge sowie Startwertvorgabe über einen ULINT-zu-ULI-Konverter.

@@ -1,8 +1,9 @@
 # Exercise_006a4_AX: SR and T Flip-Flop with 3x IE
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_006a4_AX`. It is an optimization of `Uebung_006a3_AX` using a pre-built module.
+This article describes the logiBUS® exercise `Uebung_006a4_AX`. It is an optimization of `Uebung_006a3_AX` using a pre-built module
 ----
+
 ## Objective of the Exercise
 
 Using libraries ("Don't reinvent the wheel").

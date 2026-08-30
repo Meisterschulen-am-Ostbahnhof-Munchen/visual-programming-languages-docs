@@ -3,6 +3,7 @@
 <img width="960" height="436" alt="image" src="https://github.com/user-attachments/assets/239ec61a-ac42-409e-9a51-94394f41ef93" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_OR_7 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen ODER-Verknüpfung. Er verfügt über sieben Eingänge und berechnet das logische ODER aller Eingangssignale.

@@ -3,9 +3,11 @@
 ![CommunicationPartners](./CommunicationPartners.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 CommunicationPartners` is a global constant data set used in the context of ISOBUS PGN (Parameter Group Number) communication. It serves to provide a predefined communication partner, in this case the global address, as a constant configuration for other function blocks. This simplifies the configuration of ISOBUS network components by defining frequently used addresses centrally and for reuse.
+
 ## Interface Structure
 
 Because it is a global constant data set, `CommunicationPartners` does not have event-driven or data-flow-based interfaces in the conventional sense of a function block. Instead, it provides a named, constant variable for the entire application.
@@ -41,7 +43,7 @@ During application compilation and execution, this constant is stored in memory 
 - **Data Type:** The constant is of type `isobus::pgn::CF_INFO_T`. This is likely a structured (STRUCT) or enumeration (ENUM) type specifically defined for the ISOBUS communication configuration.
 - **Initialization:** Initialization occurs directly in the declaration using the structured initialization `(s16Handle := GLOBAL_A)`.
 - **Import:** The data record imports an external constant (`GLOBAL_A`) from the package `isobus::pgn::ADDRESS`. This demonstrates a modular architecture where address definitions are maintained centrally.
-- * **Compilation:** The `CompilerInfo` tag indicates that this element is part of the `isobus::pgn` package and is relevant for code generation.
+- - **Compilation:** The `CompilerInfo` tag indicates that this element is part of the `isobus::pgn` package and is relevant for code generation.
 
 ## State Overview
 

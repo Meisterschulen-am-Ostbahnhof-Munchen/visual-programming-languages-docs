@@ -3,6 +3,7 @@
 ![GET_LWORD](./GET_LWORD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_LWORD** dient dem konsistenten Auslesen eines LWORD-Wertes aus einer **InOut-Variable**. Er puffert den aktuellen Wert der quellvariablen und stellt ihn am Ausgang `OUT` bereit. Dies ist besonders nützlich, wenn der Inhalt einer gemeinsam genutzten Variablen zu einem definierten Zeitpunkt festgehalten werden soll, ohne von nachfolgenden Schreibzugriffen anderer Bausteine beeinflusst zu werden.

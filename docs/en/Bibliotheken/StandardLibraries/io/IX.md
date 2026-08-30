@@ -4,6 +4,7 @@
 
 - [Infineon MOTIX BTM9020/9021EP: Datasheet Analysis for Automotive – Robust Motor Driver with Intelligent Diagnostics (HW vs. SPI) ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-MOTIX-BTM90209021EP-Datenblatt-Analyse-fr-Automotive--Robuster-Motortreiber-mit-intelligenter-Diagnose-HW-vs--SPI-e39av51)
 - [Integrated Full Bridge ICs MOTIX™ BTM9020EP ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/integrierten-Vollbrcken-ICs-MOTIX-BTM9020EP-e368kse)
+
 ## Introduction
 
 The IX function block is a service interface function block for Boolean input data. It serves as an interface for communication with input devices and enables the querying and processing of digital input signals in 4diac systems.

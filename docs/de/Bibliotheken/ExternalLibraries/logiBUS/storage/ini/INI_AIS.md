@@ -3,6 +3,7 @@
 ![INI_AIS](./INI_AIS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **INI_AIS** dient zum Laden und Speichern von Zeichenketten (STRING) aus einer `settings.ini`-Datei. Dabei wird über einen Abschnittsnamen (Section) und einen Schlüssel (Key) auf den gewünschten Wert zugegriffen. Die Schnittstelle ist über unidirektionale AIS-Adapter realisiert, sodass der Baustein sowohl Werte lesen als auch schreiben kann.

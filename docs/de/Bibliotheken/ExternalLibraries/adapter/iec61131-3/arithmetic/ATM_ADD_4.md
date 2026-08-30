@@ -29,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Bezeichnung | Richtung | Typ | Kommentar |
-|-------------|----------|-----|-----------|
+| ------------- | ---------- | ----- | ----------- |
 | `IN1` | Socket | `adapter::types::unidirectional::ATM` | ADD input 1 |
 | `IN2` | Socket | `adapter::types::unidirectional::ATM` | ADD input 2 |
 | `IN3` | Socket | `adapter::types::unidirectional::ATM` | ADD input 3 |

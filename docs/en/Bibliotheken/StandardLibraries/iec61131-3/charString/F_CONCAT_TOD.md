@@ -3,6 +3,7 @@
 ![F_CONCAT_TOD](F_CONCAT_TOD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_CONCAT_TOD` combines individual date/time components (`HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) into a composite `TIME_OF_DAY` value. It is the reverse of [F_SPLIT_TOD](F_SPLIT_TOD.md), which splits the same `TIME_OF_DAY` value back into its individual components.

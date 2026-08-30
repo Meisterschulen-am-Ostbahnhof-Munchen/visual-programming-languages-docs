@@ -3,6 +3,7 @@
 ![AULI_SPLIT_8](./AULI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_SPLIT_8` dient dazu, einen eingehenden unidirektionalen AULI‑Adapter (Socket `IN`) auf acht baugleiche AULI‑Ausgangsadapter (`OUT1` bis `OUT8`) aufzuteilen. Er arbeitet als reiner Verteiler – das eingehende Signal wird ohne Verzögerung oder Logikänderung an alle Ausgänge weitergegeben. Der Baustein ist generisch ausgelegt und kann mit verschiedenen AULI‑Typen verwendet werden (siehe Attribut `GenericClassName`).

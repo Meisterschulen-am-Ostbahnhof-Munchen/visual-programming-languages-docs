@@ -1,6 +1,7 @@
 # SoftKeyActivationCode_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `SoftKeyActivationCode_S` ist eine strukturierte Datenstruktur (Struct), die zur Konfiguration der Aktivierung eines Softkeys in einem ISOBUS-konformen System dient. Er definiert den spezifischen Aktivierungscode und ein Steuerflag für die Wiederholungsfrequenz der Tasteneingabe.

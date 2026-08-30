@@ -6,6 +6,7 @@
 
 The function block `F_STRING_AS_UDINT` converts a `STRING` value to a `UDINT` value (unsigned double integer). It is part of the `iec61131::conversion` package and enables the easy conversion of strings to numeric values.
 ![F_STRING_AS_UDINT](F_STRING_AS_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

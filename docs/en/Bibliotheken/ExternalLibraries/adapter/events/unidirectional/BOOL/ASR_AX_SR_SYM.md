@@ -3,9 +3,11 @@
 ![ASR_AX_SR_SYM](./ASR_AX_SR_SYM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_AX_SR_SYM** implements an event-driven, bistable flip-flop (SR flip-flop) with symmetric start behavior. It is implemented as a Basic FB according to IEC 61499-1 (Annex A) and operates exclusively via adapter interfaces – without direct event or data inputs. The block is suitable for applications where the initial state is determined by the first arriving event and neither input has priority.
+
 ## Interface Structure
 
 ### Event Inputs
@@ -34,7 +36,7 @@ The output value is provided via the plug adapter `Q`:
 ### Adapter
 
 | Name | Type | Direction | Description |
-|-------------|----------------------------------------|----------|-------------------------------------|
+| ------------- | ---------------------------------------- | ---------- | ------------------------------------- |
 | `S_R` | `adapter::types::unidirectional::ASR` | Socket | Set/Reset Events (Input) |
 | `Q` | `adapter::types::unidirectional::AX` | Plug | State Output (Event + Data) |
 
@@ -68,7 +70,7 @@ After the first transition, the function block remains in one of the two stable 
 *(Note: A graphical state diagram can be extracted from the ECC XML, but is not embedded here as an image.)*
 
 | State | Description | Action | Output |
-|---------|-----------------------------------|-----------------------|-------------------------------------------------|
+| --------- | ----------------------------------- | ----------------------- | ------------------------------------------------- |
 | START | Initial wait state | – | No output |
 | SET | Stored state "set" | `Q.D1 := TRUE` | Triggering `Q.E1` |
 | RESET | Saved state "reset" | `Q.D1 := FALSE` | Triggering `Q.E1` |

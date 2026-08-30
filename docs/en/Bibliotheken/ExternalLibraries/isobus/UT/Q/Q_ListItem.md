@@ -3,6 +3,7 @@
 ![Q_ListItem](https://user-images.githubusercontent.com/116869307/214147979-74d9863c-caa6-4953-8208-ae779dc6c71a.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ListItem** is a standards-compliant function module for managing list entries in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.42) specification for list input objects in VT systems.
@@ -47,13 +48,16 @@ ID_NULL (65535) is not a valid command target for `u16ObjId` but deactivates the
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with list object ID
 - `INITO` confirms operational readiness
-2. **List Change**:
+1. **List Change**:
+
 - `REQ` with index and new object ID
 - Updates the list entry
 - `CNF` returns result status and previous values
-3. **Special Case**:
+1. **Special Case**:
+
 - `u16NewObjId = 0xFFFF` creates an empty entry
 
 ## Technical Features
@@ -66,7 +70,7 @@ ID_NULL (65535) is not a valid command target for `u16ObjId` but deactivates the
 ## Index Reference
 
 | Index | Description |
-|-------|----------------------------|
+| ------- | ---------------------------- |
 | 0 | First list entry |
 | ... | |
 | 255 | Maximum index (uint8_t) |
@@ -74,7 +78,7 @@ ID_NULL (65535) is not a valid command target for `u16ObjId` but deactivates the
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful change |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -92,7 +96,7 @@ ID_NULL (65535) is not a valid command target for `u16ObjId` but deactivates the
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_ListItem | VtListManager | VtDynamicMenu |
-|---------------|-------------|---------------|---------------|
+| --------------- | ------------- | --------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Real-Time Change | ✔ | ✔ | ✖ |
 | Empty Entries | ✔ | ✖ | ✔ |

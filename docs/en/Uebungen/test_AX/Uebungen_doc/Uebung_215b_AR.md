@@ -3,6 +3,7 @@
 ![Uebung_215b_AR_network](./Uebung_215b_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a down counter (CTD) according to IEC 61131-3 as an adapter variant. The counter is controlled via two digital inputs (Count-Down and Load) and outputs a digital output (Q) as well as the current counter value (CV). The counter value is converted into a text representation via a converter and displayed on a terminal (PHYS). The preset value (PV) is permanently set to 10 and supplied to the counter via another adapter.
@@ -74,11 +75,13 @@ The program flow consists of an event-driven and a data-flow-driven part.
 
 1. **Initialization**: At startup, the converter `AI_INT_TO_I` (`REQ`) is triggered by the event output `INITO` from `Input_LD`. This converts the fixed integer value `10` into an adapter value and passes it to the `PV` input of `AI_FB_CTD`.
 2. **Counter Operation**:
+
 - A rising signal at `Input_I1` (CD) is forwarded via `Input_CD` to the `CD` adapter input of the counter. The counter decrements the current value.
 - A rising signal at `Input_I2` (LD) triggers `AI_INT_TO_I` again and loads the preset value into the counter.
 - The counter's output `Q` is directly connected to `Output_Q1`: As soon as the counter reaches 0, the output is set.
 - The current counter value `CV` is converted into an array via `AI_TO_AR` and passed to the terminal block, which displays the numerical value on the screen.
-3. **Notes from the comments**:
+1. **Notes from the comments**:
+
 - Negative values can also occur with this configuration (CD signals when CV=0).
 - If necessary, a `AX_D_FF` (edge marker) should be inserted to reduce the number of events if the counter counts too quickly.
 

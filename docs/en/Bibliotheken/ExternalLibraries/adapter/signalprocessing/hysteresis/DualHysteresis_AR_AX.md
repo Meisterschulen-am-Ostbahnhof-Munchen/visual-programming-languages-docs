@@ -5,11 +5,12 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `DualHysteresis_AR_AX` performs dual analog-to-digital conversion with hysteresis. It compares an analog input signal with a defined midpoint (`MI`) to output control commands via two separate digital outputs (UP and DOWN). This corresponds to the operation of a classic three-position controller with deadband and hysteresis thresholds. The block is designed for signal processing in control and regulation applications and uses adapters for structured signal coupling.
 
- ## Interface Structure
+## Interface Structure
 
 ### **Event Inputs**
 

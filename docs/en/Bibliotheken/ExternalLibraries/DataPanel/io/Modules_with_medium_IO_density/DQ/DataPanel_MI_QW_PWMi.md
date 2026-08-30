@@ -1,7 +1,9 @@
 ![DataPanel_MI_QW_PWMi](DataPanel_MI_QW_PWMi.svg)
+
 # DataPanel_MI_QW_PWMi
 
 Output service interface function block for Current Controlled PWM output data (Current Mode 4)
+
 ## Interface
 
 ### Event inputs

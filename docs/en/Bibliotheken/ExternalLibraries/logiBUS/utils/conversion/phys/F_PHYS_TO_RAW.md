@@ -3,9 +3,11 @@
 ![F_PHYS_TO_RAW](./F_PHYS_TO_RAW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **F_PHYS_TO_RAW** converts a physical REAL value into an ISOBUS raw value (UDINT). Saturation limits are taken into account, and overflow and underflow alarms are issued. The conversion is based on the ISOBUS formula: `Anzeige = (Rohwert + Offset) * Skalierung`. The inverse calculation is: `Rohwert = UDINT(DINT(physikalischer Wert / Skalierung) - Offset)`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,14 +25,14 @@ The function block **F_PHYS_TO_RAW** converts a physical REAL value into an ISOB
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-----|---------------|
+| ---------- | ----- | --------------- |
 | rPhys | REAL | The physical value to be converted. |
 | stObj | NumericObjectPool_S | Structure with the parameters `i32Offset` (DINT) and `r32Scale` (REAL) for the ISOBUS formula. |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | * | UDINT | The calculated ISOBUS raw value (function return value). Saturated to the range 0 to 4294967295. |
 | xOver | BOOL | TRUE if the physical value exceeds the upper limit. |
 | xUnder | BOOL | TRUE if the physical value falls below the lower limit. |

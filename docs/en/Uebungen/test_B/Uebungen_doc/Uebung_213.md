@@ -3,9 +3,11 @@
 ![Uebung_213_network](./Uebung_213_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an upward counter according to IEC 61131-3 (type FB_CTU_UDINT) as a sub-application. The counter has two digital inputs (count-up and reset), one digital output (Q), and a terminal output for the current counter value. The inputs are provided via logiBUS I/O blocks, while the output and the numeric value are output to configured logiBUS channels.
+
 ## Function Blocks (FBs) Used
 
 - **FB_CTU_UDINT** (Type: `iec61131::counters::FB_CTU_UDINT`)
@@ -37,6 +39,7 @@ The Subapplication This consists of a direct connection of the aforementioned fu
 2. **Counter Control**: The event `IND` from `Input_CU` is connected to the event input `REQ` of the counter `FB_CTU_UDINT`. The data connection sends `Input_CU.IN` to the counter input `CU` (Count-Up). This increments the counter on every rising edge at this input. The event from `Input_R` is also sent to the counter's `REQ` input, and the data value is applied to the `R` input (Reset). A reset sets the counter to zero.
 3. **Counter Behavior**: The counter counts upwards from the value 0. When the internal counter value reaches the parameter `PV` (here 5), the output `Q` is set to TRUE. The current counter value is available at output `CV` (data type UDINT).
 4. **Output**: After each counter processing, the counter outputs a confirmation event `CNF`. This event is routed to two output blocks:
+
 - **Output_Q1**: The event `REQ` of this block triggers the transfer of the data value from `FB_CTU_UDINT.Q` to the physical output `Output_Q1`.
 - **Q_NumericValue**: The event `REQ` of this function block takes the current counter value `CV` (as a 32-bit value) and outputs it to a terminal or display using the configured object ID `OutputNumber_N1`.
 

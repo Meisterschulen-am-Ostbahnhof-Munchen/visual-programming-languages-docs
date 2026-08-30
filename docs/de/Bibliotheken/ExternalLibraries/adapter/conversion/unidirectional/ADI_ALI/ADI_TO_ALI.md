@@ -3,6 +3,7 @@
 ![ADI_TO_ALI](./ADI_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_ALI** ist ein Composite-Baustein, der einen unidirektionalen ADI-Adapter (Datentyp DINT) in einen unidirektionalen ALI-Adapter (Datentyp LINT) umwandelt. Er dient der Anpassung der Datenbreite von 32‑Bit auf 64‑Bit und ermöglicht so die nahtlose Integration von Komponenten unterschiedlicher Integer-Typen in Automatisierungssystemen nach IEC 61499‑2. Der Baustein ist unter der Eclipse Public License 2.0 verfügbar.

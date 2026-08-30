@@ -3,6 +3,7 @@
 ![ASSEMBLE_AD_FROM_AX](./ASSEMBLE_AD_FROM_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASSEMBLE_AD_FROM_AX** dient dazu, bis zu 32 boolesche Einzelsignale, die über AX-Adapter (Typ: `adapter::types::unidirectional::AX`) bereitgestellt werden, zu einem 32-Bit-Doppelwort (DWORD) zusammenzufassen und über einen AD-Adapter (Typ: `adapter::types::unidirectional::AD`) auszugeben. Dies ermöglicht eine kompakte Übertragung mehrerer diskreter Binärsignale über eine einzige Datenverbindung.

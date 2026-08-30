@@ -3,6 +3,7 @@
 ![initval_AL](initval_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AL` ist der konfigurierbare Initialisierungsbaustein für den [AL](../AL.md)-Adapter (Datentyp `LWORD`, 64-Bit-Bitmuster): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AL`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

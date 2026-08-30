@@ -3,6 +3,7 @@
 <img width="971" height="474" alt="image" src="https://github.com/user-attachments/assets/768789e5-7784-41c2-9d5c-c9492d64a38b" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `LOG_16` ist ein Ring-Logger, der für den zyklischen Aufzeichnung von Daten beliebigen Typs (`ANY`) konzipiert ist. Er dient dazu, eingehende Werte in einem Puffer mit 16 Speicherplätzen zu halten, wobei ältere Einträge bei neuen Aufrufen überschrieben werden (Ringpuffer-Prinzip). Dieser Baustein ist besonders für die Protokollierung von Prozessdaten oder Zuständen in Echtzeitsteuerungen geeignet.

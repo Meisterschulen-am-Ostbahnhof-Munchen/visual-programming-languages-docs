@@ -3,9 +3,11 @@
 ![ASSEMBLE_AL_FROM_AD](./ASSEMBLE_AL_FROM_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AL_FROM_AD** is used to combine two 32-bit values provided via AD adapters (DWORD) into a 64-bit LWORD and output this LWORD via an AL adapter. It encapsulates the combination logic and provides a buffered, event-driven interface for 64-bit data.
+
 ## Interface Structure
 
 ### **Event Inputs**

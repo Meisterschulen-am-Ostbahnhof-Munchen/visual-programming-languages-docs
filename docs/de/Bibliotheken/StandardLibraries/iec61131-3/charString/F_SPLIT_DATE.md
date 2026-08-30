@@ -3,6 +3,7 @@
 ![F_SPLIT_DATE](F_SPLIT_DATE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_SPLIT_DATE` zerlegt einen `DATE`-Wert in seine einzelnen Zeit-/Datumsbestandteile (`YEAR`, `MONTH`, `DAY`). Er ist die Umkehrung von [F_CONCAT_DATE](F_CONCAT_DATE.md), das dieselben Einzelbestandteile wieder zu einem `DATE`-Wert zusammenfügt.

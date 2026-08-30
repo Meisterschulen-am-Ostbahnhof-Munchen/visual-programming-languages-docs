@@ -4,6 +4,7 @@
 ![sequence_ET_04_04_ecc](./sequence_ET_04_04_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `sequence_ET_04_04` function block is an 8-output sequencer used to control processes in automation technology. It implements a fixed sequence of states, with transitions between states triggered either by an external event or by an adjustable time interval. This block is particularly suitable for applications requiring cyclic or step-by-step activation of outputs.

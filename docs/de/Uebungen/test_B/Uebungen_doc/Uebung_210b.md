@@ -15,7 +15,7 @@ Die Übung demonstriert die grundlegende Funktionsweise eines industriellen Zäh
 In dieser Übung werden folgende Funktionsbausteine eingesetzt:
 
 | FB-Name | Typ | Parameter | Kurzbeschreibung |
-|---------|-----|-----------|------------------|
+| --------- | ----- | ----------- | ------------------ |
 | `FB_CTU` | `iec61131::counters::FB_CTU` | `PV = INT#5` | IEC 61131‑3 Vorwärtszähler, Zählbereich INT, Preset-Wert 5. |
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` | Digitaler Eingang, liefert den Zählimpuls (`CU`). |
 | `Input_R` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` | Digitaler Eingang, liefert das Rücksetzsignal (`R`). |

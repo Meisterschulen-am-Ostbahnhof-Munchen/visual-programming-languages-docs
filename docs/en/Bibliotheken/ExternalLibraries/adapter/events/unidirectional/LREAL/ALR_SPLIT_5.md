@@ -30,7 +30,7 @@ No data outputs are available.
 The module has one socket (input) and five plugs (outputs):
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Input | IN | `adapter::types::unidirectional::ALR` | Receives the ALR signal to be distributed |
 | Output | OUT1 | `adapter::types::unidirectional::ALR` | First output with the identical ALR signal |
 | Output | OUT2 | `adapter::types::unidirectional::ALR` | Second output with the identical ALR signal |

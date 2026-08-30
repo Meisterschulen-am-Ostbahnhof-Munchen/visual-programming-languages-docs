@@ -5,6 +5,7 @@
 ![AX_AX_SEL_AX](./AX_AX_SEL_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AX_AX_SEL_AX` is used for binary selection between two Boolean signals transmitted via standardized adapters. It represents an IEC 61499-compliant encapsulation of the classic IEC 61131-3 `SEL` function. By using adapters, both the data values and the associated events are transmitted together, which significantly reduces the wiring effort in control application design.
@@ -58,9 +59,10 @@ Internally, the `AX_AX_SEL_AX` is based on an event-driven network that processe
 1. **Event Detection:** Every arrival of an event (`E1`) at the adapters `IN0`, `IN1`, or `G` triggers an internal edge-triggered flip-flop (`E_D_FF` or `E_D_FF_ANY`, respectively).
 2. **Data Buffering & Transport:** The data values (`D1`) from the adapters are forwarded to the central selection block `F_SEL` via conversion blocks of type `F_MOVE` (configured to data type `BOOL`).
 3. **Selection Logic:**
+
 - If the signal at adapter `G` equals `FALSE`, the internal block `F_SEL` switches the value of `IN0` to the output.
-- * ... * If the signal at adapter `G` equals `TRUE`, the value of `IN1` is set to the output.
-4. **Output:** The selected value is passed to the flip-flop of the output adapter, which triggers the event `OUT.E1` and updates the data point `OUT.D1`.
+- - ... * If the signal at adapter `G` equals `TRUE`, the value of `IN1` is set to the output.
+1. **Output:** The selected value is passed to the flip-flop of the output adapter, which triggers the event `OUT.E1` and updates the data point `OUT.D1`.
 
 ---
 

@@ -40,6 +40,7 @@ The function block has no internal states. Execution occurs immediately upon rec
 - Other function blocks might offer additional parameters or error handling, but this function block is designed for simplicity and efficiency.
 
 The `F_WSTRING_AS_WORD` function block provides a simple and efficient way to convert `WSTRING` data to `WORD` values. Its clear interface and direct operation make it ideal for applications that require fast and reliable conversions.
+
 ## Technical Features
 
 ## State Overview

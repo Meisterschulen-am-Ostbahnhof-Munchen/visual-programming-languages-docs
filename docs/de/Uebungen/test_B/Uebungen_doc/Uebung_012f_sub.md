@@ -3,6 +3,7 @@
 ![Uebung_012f_sub_network](./Uebung_012f_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung eines numerischen Eingangswertes (Rohwert) in einen physikalischen Wert, dessen dauerhafte Speicherung im nichtflüchtigen Speicher (NVS) sowie das anschließende Auslesen und die Ausgabe des gespeicherten Wertes. Die Funktionalität ist in einer Subapplikation (SubApp) gekapselt.

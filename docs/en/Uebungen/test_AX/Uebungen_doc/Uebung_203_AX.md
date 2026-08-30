@@ -30,11 +30,14 @@ The subapp contains five function blocks from the logiBUS library:
 The following adapter connection structure underlies the flow:
 
 1. **Input Signals:**
+
 - `DigitalInput_I1.IN` → `ILOCK_AX.UP_IN`
 - `DigitalInput_I2.IN` → `ILOCK_AX.DOWN_IN`
-2. **Interlock Processing:**
+1. **Interlock Processing:**
+
 - The ILOCK_SWITCH_AX block evaluates the incoming signals and decides, based on priority, which output is set.
-3. **Output Signals:**
+1. **Output Signals:**
+
 - `ILOCK_AX.UP_OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`
 

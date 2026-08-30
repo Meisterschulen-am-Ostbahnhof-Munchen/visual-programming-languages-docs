@@ -3,9 +3,11 @@
 ![Uebung_218_AUDI_network](./Uebung_218_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) with a UDINT data type. The counter value is output via a terminal block. A separate conversion block sets the initial value (preset value) to 10. The exercise demonstrates the use of adapter-based function blocks and their interaction with input/output modules as well as a numeric terminal display.
+
 ## Function Blocks (FBs) Used
 
 - **AUDI_FB_CTD** – Type: `adapter::iec61131::counters::AUDI_FB_CTD`

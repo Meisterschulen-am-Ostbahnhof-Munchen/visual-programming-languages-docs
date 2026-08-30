@@ -3,9 +3,11 @@
 ![AULI_TO_AI](./AULI_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_TO_AI** is a composite function block (FB) that converts an incoming adapter of type **AULI** (ULINT-based) into an outgoing adapter of type **AI** (INT-based). It serves as an interface converter between components that use different data types for analog values.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ There are also no dedicated event outputs at this level; output events are passe
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|-----------|----------|------------------------------------------|--------------------------------------------|
+| ----------- | ---------- | ------------------------------------------ | -------------------------------------------- |
 | `AULI_IN` | Socket | `adapter::types::unidirectional::AULI` | ULINT input adapter (analog value) |
 | `AI_OUT` | Plug | `adapter::types::unidirectional::AI` | INT Output Adapter (Converted Value) |
 
@@ -68,7 +70,7 @@ Internal flow (simplified):
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Description |
----------------------|------------|------------|------------------------------------------------|
+--------------------- | ------------ | ------------ | ------------------------------------------------ |
 | `AULI_TO_AI` | AULI (ULINT) | AI (INT) | Converts entire adapter interfaces. |
 | `F_ULINT_TO_INT` | ULINT | INT | Data conversion only, no adapters. |
 | `AI_TO_AULI` (if applicable) | AI (INT) | AULI (ULINT) | Reverse direction (not available). |

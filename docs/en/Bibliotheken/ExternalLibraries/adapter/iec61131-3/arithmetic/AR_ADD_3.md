@@ -3,9 +3,11 @@
 ![AR_ADD_3](./AR_ADD_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_ADD_3` is used to calculate the arithmetic addition of three values. It is a generic function block (FB) according to IEC 61499-2, which operates via adapter interfaces. The block is designed to be used in conjunction with the adapter `adapter::types::unidirectional::AR` from the library `adapter::iec61131::arithmetic`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. The result is provided via an adapter output.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|-----------|------|--------------------------------------|-----------------|
+| ----------- | ------ | -------------------------------------- | ----------------- |
 | Sockets | IN1 | `adapter::types::unidirectional::AR` | ADD input 1 |
 | Sockets | IN2 | `adapter::types::unidirectional::AR` | ADD input 2 |
 | Sockets | IN3 | `adapter::types::unidirectional::AR` | ADD input 3 |

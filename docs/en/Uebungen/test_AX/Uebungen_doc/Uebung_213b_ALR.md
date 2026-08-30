@@ -3,6 +3,7 @@
 ![Uebung_213b_ALR_network](./Uebung_213b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an **up counter (CTU)** according to IEC 61131-3 with a **counting range of UDINT** (unsigned 32-bit integer) as an **adapter version**.
@@ -85,13 +86,16 @@ The following function blocks are used in the SubApp network:
 
 At startup, the **Input_R** block executes its INIT cycle. The **INITO** event triggers **AUDI_UDINT_TO_UDI** (REQ), which transfers the setpoint `UDINT#5` to the **PV** input of the counter.
 
-2. **Counter Operation**
+1. **Counter Operation**
+
 - Each rising edge at the digital input **I1** is forwarded via **Input_CU** to the **CU** input of the counter.
 - The counter increments its internal value (CV).
 - As soon as `CV ≥ PV` (=5), the output **Q** switches to TRUE and activates **Output_Q1** (hardware output Q1).
-3. **Reset**
+1. **Reset**
+
 - A signal at the digital input **I2** is routed via **Input_R** to the **R** input of the counter. This resets the counter to 0, and **Q** becomes FALSE.
-4. **Terminal Output**
+1. **Terminal Output**
+
 - The current counter value (CV) leaves the counter as an adapter signal and is first converted into a physical LREAL value via **AUDI_TO_ALR**.
 - This LREAL value is then passed to **Q_NumericValue_PHYSA_LREAL** and displayed on the configured terminal object `OutputNumber_N3`.
 

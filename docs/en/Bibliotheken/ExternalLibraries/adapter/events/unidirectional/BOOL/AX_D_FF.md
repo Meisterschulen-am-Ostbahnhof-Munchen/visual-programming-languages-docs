@@ -4,6 +4,7 @@
 ![AX_D_FF_ecc](./AX_D_FF_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_D_FF is a data latch flip-flop that serves as a basic building block in digital circuitry. It is a D-type flip-flop that stores the applied data value and outputs it upon certain events.

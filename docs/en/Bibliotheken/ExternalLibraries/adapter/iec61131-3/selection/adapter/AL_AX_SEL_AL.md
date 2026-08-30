@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AL_AX_SEL_AL` is an event-driven selector (binary selection) for IEC 61499 systems in the 4diac IDE. It acts as a multiplexer, forwarding data from one of two input adapters to an output adapter based on the state of a selector signal. The block consistently leverages the advantages of adapters to neatly encapsulate data and event streams and minimize the complexity of the wiring in the application diagram.
@@ -61,17 +62,17 @@ The component implements classic multiplexer logic (equivalent to `SEL` in IEC 6
 
 When an event occurs on one of the input adapters (`IN0`, `IN1`) or the selector adapter (`G`), internal D flip-flops (`E_D_FF` and `E_D_FF_ANY`, respectively) capture the data values and store them temporarily.
 
-2. **Data Type Conversion:**
+1. **Data Type Conversion:**
 
 The buffered data values are forwarded to the central selection block via internal transfer blocks (`F_MOVE` with the data type `LWORD`).
 
-3. **Selection Logic (`F_SEL`):**
+1. **Selection Logic (`F_SEL`):**
 
 The core of the network evaluates the state of the selector `G`:
 
 - If `G` equals `FALSE`, the signal from `IN0` is passed to the output.
 - If `G` equals `TRUE`, the signal from `IN1` is passed to the output.
-4. **Output:**
+1. **Output:**
 
 After a successful selection, the result is transferred via another flip-flop to the plug `OUT` and made available there simultaneously with an event (`OUT.E1`).
 
@@ -97,20 +98,21 @@ After a successful selection, the result is transferred via another flip-flop to
 
 - **Setpoint Switching:** Switching between a standard setpoint (`IN0`) and an alternative setpoint (`IN1`) based on an external control signal.
 - **Manual/Automatic Operation:** Switching a control signal for a valve or motor between a manually specified value (e.g., from a visualization) and the calculated value of an automatic controller.
-- * **Sensor Redundancy:** Dynamic switching to a backup sensor (`IN1`) if the primary sensor (`IN0`) is flagged as faulty via a diagnostic function (switching controlled by the fault bit on `G`).
+- - **Sensor Redundancy:** Dynamic switching to a backup sensor (`IN1`) if the primary sensor (`IN0`) is flagged as faulty via a diagnostic function (switching controlled by the fault bit on `G`).
 
 ---
 
 ## Comparison with Similar Function Blocks
 
 Compared to a standard `SEL` function block from the IEC 61131-3 library, `AL_AX_SEL_AL` offers the following advantages:
+
 - **Reduced Wiring Effort:** Encapsulation in adapters eliminates the need to run separate event and data lines. A single connection path per channel is sufficient.
 
 ---
 
 
 - **Reduced Wiring Effort:** Encapsulation in adapters eliminates the need for separate event and data lines. A single connection path per channel is sufficient.
-- * **Event Coupling:** The function block inherently responds to the event triggers integrated into the adapters, eliminating the need for manual event-based linking in the FBD (Function Block Diagram).
+- - **Event Coupling:** The function block inherently responds to the event triggers integrated into the adapters, eliminating the need for manual event-based linking in the FBD (Function Block Diagram).
 
 ---
 

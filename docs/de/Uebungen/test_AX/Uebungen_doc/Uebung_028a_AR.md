@@ -3,6 +3,7 @@
 ![Uebung_028a_AR_network](./Uebung_028a_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mithilfe von Adaptern und der Speicherung von Kalibrierungsparametern (Offset und Skalierung) in einer INI-Datei. Der Funktionsbaustein `AR_CALIBRATE` führt die lineare Kalibrierung durch. Die Parameter werden über zwei digitale Eingänge (`Input_I2`, `Input_I3`) gesteuert und die Ergebnisse in zwei separaten Speicherbausteinen (`INI_AR2`) abgelegt. Die Konvertierung zwischen analogen und stark typisierten Daten erfolgt über spezielle Adapterkonverter.

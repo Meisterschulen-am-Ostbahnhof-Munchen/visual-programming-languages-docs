@@ -61,11 +61,11 @@ The function block's internal network implements signal forwarding and event syn
 
 As soon as the event `E1` arrives at one of the sockets (`G`, `IN0`, or `IN1`), the corresponding data value `D1` is temporarily stored via an internal event-driven flip-flop (`E_D_FF` for the selector and `E_D_FF_ANY` for the data).
 
-2. **Data Conversion / Assignment:**
+1. **Data Conversion / Assignment:**
 
 The data from inputs `IN0` and `IN1` are transferred to the selection block via internal assignment elements (`F_MOVE`) of type `WSTRING`.
 
-3. **Selection Process (`F_SEL`):**
+1. **Selection Process (`F_SEL`):**
 
 The internal function block `F_SEL` (IEC 61131-3 `SEL`) evaluates the state of the selector from the adapter `G`:
 
@@ -88,11 +88,14 @@ The logical mapping of the output, depending on the selector `G`, is as follows:
 - **Switching Analog Values with Status (formatted as WSTRING):** Redundant sensor systems where, in case of a fault, the system should switch from sensor 1 (`IN0`) to a backup sensor 2 (`IN1`).
 - **Dynamic Text or Recipe Selection:** Switching configuration strings, log messages, or setpoints that are routed to an HMI or control unit via adapter structures.
 - **Signal Routing:** Flexible routing in modular industrial plants where data streams need to be redirected depending on the operating mode (e.g., automatic vs. manual operation).
+
 - ## Comparison with Similar Function Blocks
+
 - **Standard `SEL` (IEC 61131-3):** The classic `SEL` function block operates on elementary data types (e.g., `INT`, `REAL`, `STRING`) and does not have native event control or adapter support. `AIWS_AX_SEL_AIWS` extends this principle for IEC 61499 by providing direct switching for complex adapter types.
 - **Multiplexer (`MUX`):** A classic multiplexer allows selection from more than two channels via an integer index. The `AIWS_AX_SEL_AIWS` is optimized for fast and resource-efficient binary selection (2 channels).
 
 The `AIWS_AX_SEL_AIWS` is a highly specialized auxiliary module for IEC 61499 systems (such as 4diac-ide) that elegantly and deterministically switches complex data and event streams between two adapters. It significantly reduces "spaghetti code" and confusing wiring in graphical programming environments.
+
 ## Technical Features
 
 ## State Overview

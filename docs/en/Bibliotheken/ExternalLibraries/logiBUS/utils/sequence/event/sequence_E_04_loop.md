@@ -4,6 +4,7 @@
 ![sequence_E_04_loop_ecc](./sequence_E_04_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_04_loop` implements a cyclic sequence with four states. State transitions are triggered exclusively by external events. This block is designed for control tasks where a fixed sequence of actions (represented by outputs `DO_S1` to `DO_S4`) must be executed and a reset from any state is required.

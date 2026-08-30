@@ -50,6 +50,7 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 in an adap
 - **Function**: `QI = TRUE`, `Output = Output_Q1`
 - **Function**: `Output_Q1`
 - **Function**: q
+
 ### FB: Q_NumericValue_AUDI
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
@@ -59,19 +60,24 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 in an adap
 The circuit operates as follows:
 
 1. **Input Signals**:
+
 - The digital input `Input_I1` is forwarded via `Input_CU` as a count pulse (CU) to the counter `AI_FB_CTU`.
 - The digital input `Input_I2` is passed to the counter as a reset signal (R) via `Input_R`.
-2. **Preset Value**:
+1. **Preset Value**:
+
 - The function block `AI_INT_TO_I` provides a fixed value of 5. This is set once via an event connection from `Input_R.INITO` (initialization event) to `AI_INT_TO_I.REQ` and then passed to the counter as the preset value (PV).
-3. **Counter Behavior**:
+1. **Counter Behavior**:
+
 - On each rising edge at CU, the internal counter is incremented by 1.
 - A positive pulse at R resets the counter to 0.
 - When the counter value (CV) reaches the preset value (5), the output Q is set.
 - Output Q is routed via the adapter output to the digital output `Output_Q1`.
-4. **Terminal Output**:
+1. **Terminal Output**:
+
 - The current counter value (CV) is converted to AUDI format via `AI_TO_AUDI`.
 - The value is then displayed on the terminal via `Q_NumericValue_AUDI`.
-5. **Notes from the Comments**:
+1. **Notes from the Comments**:
+
 - The function block `AI_TO_AUDI` does not support negative numbers (this can lead to errors in certain applications).
 - To reduce the event rate, a `AX_D_FF` (D flip-flop) can optionally be inserted.
 

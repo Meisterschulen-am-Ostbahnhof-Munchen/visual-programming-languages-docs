@@ -4,6 +4,7 @@
 ![BYTES_TO_ST08B](./BYTES_TO_ST08B.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block combines eight individual byte values into a single 8-byte structure of type `ST08B`. It enables the orderly conversion of discrete byte values into a structured data format.

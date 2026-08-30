@@ -52,9 +52,11 @@ The function block behaves in a stateless (i.e., purely reactive) manner:
 1. **Wait State:** The function block waits for events at sockets `IN1` or `IN2`.
 2. **Calculation:** After receiving valid data/events at the inputs, the division is performed.
 3. **Update:** The result is passed to output plug `OUT`, and the corresponding send event is triggered.
+
 - **Measurement Scaling:** Normalization of analog sensor values (e.g., dividing a raw value by a scaling factor).
 - **Calculation of Ratios:** Determination of mixing ratios or percentages in process engineering plants.
 - **Average Calculations:** Division of a sum by the number of recorded values in simple mathematical computational networks.
+
 - ## Comparison with Similar Function Blocks
 
 Compared to a classic, standard `DIV` function block (according to IEC 61131-3), which uses discrete data pins (`IN1`, `IN2`, `OUT`) and explicit event pins (`REQ`, `CNF`):
@@ -63,6 +65,7 @@ Compared to a classic, standard `DIV` function block (according to IEC 61131-3),
 - **Disadvantages:** Direct use with standard data streams without adapter encapsulation is not possible. Dedicated converter modules must be used if the signal source does not support adapters.
 
 `ADI_DIV_2` is a specialized and efficient module for modern IEC 61499 architectures within 4diac. It is ideally suited for developers who rely on a clean, adapter-based, and modular software architecture and want to implement mathematical division in a clear and concise manner.
+
 ## Technical Features
 
 ## State Overview

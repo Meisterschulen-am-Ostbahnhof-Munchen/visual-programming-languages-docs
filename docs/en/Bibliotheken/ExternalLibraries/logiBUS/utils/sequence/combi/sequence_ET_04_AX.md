@@ -3,10 +3,12 @@
 ![sequence_ET_04_AX_ecc](./sequence_ET_04_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_ET_04_AX` is a variant of `sequence_ET_04`, which additionally uses adapters (`AX`) for the outputs. It controls a sequence with 4 output states, where transitions can be event-driven or time-controlled.
 ![sequence_ET_04_AX](sequence_ET_04_AX.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -3,6 +3,7 @@
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `Hysteresis_AR_AX` implements an analog-to-digital threshold circuit with hysteresis. It converts an analog input value (via an AR adapter) into a Boolean output (via an AX adapter), applying a defined hysteresis band around a mean value (threshold). The switching behavior is defined as follows:
@@ -67,7 +68,7 @@ Aktion: Ausführen von `alOff` – setzt `OUTPUT.D1 := FALSE; QO := QI`.
 - Bei wiederholtem Ereignis `INPUT.E1` **und** der Bedingung
 INPUT.D1 > = THRESHOLD.D1 + (ABS(HYSTERESIS.D1) / 2.0)) → **sON** (switch on).
 
-4. **sON**
+1. **sON**
 
 Action: Executing `alOn` – sets `OUTPUT.D1 := TRUE` if `QI = TRUE`; `QO` is set to `QI`.
 
@@ -78,7 +79,7 @@ Transitions:
 
 INPUT.D1 < THRESHOLD.D1 - (ABS(HYSTERESIS.D1) / 2.0)` → **sOFF** (Shutdown).
 
-5. **DeInit**
+1. **DeInit**
 
 Action: Execute `deInitialize` – sets `QO := FALSE; OUTPUT.D1 := FALSE`.
 
@@ -96,7 +97,7 @@ Hysteresis is always calculated using the absolute value of the hysteresis, so n
 ## State Overview
 
 | State | Description |
-|---------|------------------------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------ |
 | `START` | Idle state after reset; waits for first INIT. |
 | `Init` | Initialization; sets output to FALSE and confirms with INITO. |
 | `sOFF` | Off state; output is FALSE. |

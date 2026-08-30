@@ -1,8 +1,9 @@
 # Exercise_002a5_AX: DigitalInput_I1-3 with OR on DigitalOutput_Q1, with Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a5_AX`. In this exercise, a logical OR gate with three inputs is implemented. The digital output is activated as soon as at least one of the three monitored inputs carries a signal.
+This article describes the logiBUS® exercise `Uebung_002a5_AX`. In this exercise, a logical OR gate with three inputs is implemented. The digital output is activated as soon as at least one of the three monitored inputs carries a signal
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to extend the basic logic functions to more than two input signals. It illustrates the scalability of logic blocks in IEC 61499 and shows how multiple alternative switching conditions can be efficiently combined in a controller.

@@ -3,9 +3,11 @@
 ![ASR_SPLIT_3](./ASR_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASR_SPLIT_3` is used to distribute an incoming ASR (Application-Specific Resource) adapter to three identical outgoing ASR adapters. It is designed as a generic block and enables simple signal distribution within an adapter-based communication structure.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-|-------------|----------|------|--------------------------------------|
+| ------------- | ---------- | ------ | -------------------------------------- |
 | Socket | Input | IN | Incoming ASR signal adapter. |
 | Plug | Output | OUT1 | First outgoing ASR signal adapter. |
 | Plug | Output | OUT2 | Second outgoing ASR signal adapter. |
@@ -35,6 +37,7 @@ None.
 
 All adapters are of type `adapter::types::unidirectional::ASR`.
 ...
+
 ## Functionality
 
 This function block forwards all signals and events arriving via socket `IN` from the ASR adapter unchanged to the three plug channels `OUT1`, `OUT2`, and `OUT3`. No logical processing or buffering takes place – the distribution is passive and instantaneous. The function block acts as a simple splitter for ASR connections.

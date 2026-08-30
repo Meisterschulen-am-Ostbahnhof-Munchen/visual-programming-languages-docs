@@ -3,6 +3,7 @@
 ![E_T_FF_INIT_ecc](./E_T_FF_INIT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_T_FF_INIT` (Toggle-Flipflop mit Initialisierung) kombiniert das Umschaltverhalten eines Toggle-Flipflops (Ausgang `Q` wechselt bei jedem `CLK`-Ereignis den Zustand) mit einer expliziten `INIT`/`INITO`-Schnittstelle zum gezielten Setzen eines definierten Startwerts.
@@ -43,7 +44,7 @@ Der `E_T_FF_INIT` (Toggle-Flipflop mit Initialisierung) kombiniert das Umschaltv
 ## Zustandsübersicht
 
 | Zustand | Bedeutung |
-|---|---|
+| --- | --- |
 | START | Unkonfigurierter Anfangszustand |
 | Init | Initialisierung läuft, `QO := QI` |
 | DeInit | Deinitialisierung läuft, `QO := FALSE` |

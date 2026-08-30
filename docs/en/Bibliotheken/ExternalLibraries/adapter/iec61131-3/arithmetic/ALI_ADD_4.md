@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_ADD_4` is a generic arithmetic function block according to the IEC 61131-3 standard. Its main task is to calculate the sum of four input values. Unlike classic arithmetic blocks that work with elementary data types and standard event inputs/outputs, this block uses unidirectional adapter connections of type `ALI` (Analog Line Interface). This enables encapsulated and clear signal transmission of data and the associated trigger events within the 4diac-ide.

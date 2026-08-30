@@ -4,6 +4,7 @@
 *[Image of the function block, if available]*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **IA_FPTO** function block serves as an ISOBUS adapter for the front power take-off (FPTO) according to ISO 11783-7 (PGN 65092). It encapsulates the internal logic of the **I_FPTO** block and provides the relevant signals via standardized adapter interfaces. This enables seamless integration into ISOBUS-based control systems.
@@ -38,7 +39,7 @@ The **IA_FPTO** function block serves as an ISOBUS adapter for the front power t
 ## **Adapter**
 
 | Adapter | Type | Description |
-|---------|-----|---------------|
+| --------- | ----- | --------------- |
 | SPEED | adapter::types::unidirectional::AUI | Front PTO output speed (actual value) |
 | SPEED_SET | adapter::types::unidirectional::AUI | Front PTO setpoint speed |
 | TIMEOUT | adapter::types::unidirectional::AX | Communication timeout status |
@@ -66,7 +67,7 @@ The FB does not have an explicit state machine. Its behavior can be described as
 
 The FB does not have an explicit state machine. 2. **Active Phase**: After confirmation of the initialization (**INITO**), the current values are stably available at the **SPEED**, **SPEED_SET**, and **TIMEOUT** adapters.
 
-3. **Error State**: If a timeout occurs, the **TIMEOUT** adapter is set to TRUE. The speed values may remain at the last valid value until communication is restored.
+1. **Error State**: If a timeout occurs, the **TIMEOUT** adapter is set to TRUE. The speed values may remain at the last valid value until communication is restored.
 
 Reinitialization (another INIT pulse) can reset and restart the FB.
 

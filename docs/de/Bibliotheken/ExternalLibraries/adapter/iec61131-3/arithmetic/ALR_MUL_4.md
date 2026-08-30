@@ -4,6 +4,7 @@
 ![ALR_MUL_4](./ALR_MUL_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_MUL_4` dient der Durchführung einer arithmetischen Multiplikation von vier Eingangswerten. Es handelt sich hierbei um einen generischen Funktionsbaustein (Generic FB) für die 4diac-IDE, der auf dem IEC 61499-Standard basiert. Die Signalübertragung und -verarbeitung erfolgt über spezielle unidirektionale Analogadapter, was eine saubere Kapselung der Datenströme ermöglicht.

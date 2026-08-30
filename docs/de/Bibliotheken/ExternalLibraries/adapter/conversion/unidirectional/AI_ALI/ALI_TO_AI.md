@@ -3,6 +3,7 @@
 ![ALI_TO_AI](./ALI_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_TO_AI** ist ein zusammengesetzter Baustein (Composite FB), der einen **ALI-Adapter** (Eingang einer LINT‑Wert‑Schnittstelle) in einen **AI-Adapter** (Ausgang einer INT‑Wert‑Schnittstelle) umwandelt. Er dient dazu, Daten eines LINT‑basierten Adapters in den INT‑basierten Adaptertyp zu überführen, ohne dass der Anwender die Konvertierung selbst implementieren muss.

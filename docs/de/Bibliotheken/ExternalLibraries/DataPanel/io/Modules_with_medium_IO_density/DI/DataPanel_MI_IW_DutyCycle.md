@@ -22,7 +22,7 @@ Der Funktionsblock `DataPanel_MI_IW_DutyCycle` ist ein Service-Interface-FB zur 
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Mit Variablen | Kommentar |
-|----------|-----|---------------|-----------|
+| ---------- | ----- | --------------- | ----------- |
 | `INITO` | EInit | QO, STATUS | Bestätigung der Initialisierung |
 | `CNF` | Event | QO, STATUS, IN | Bestätigung der angeforderten Aktion |
 | `IND` | Event | QO, STATUS, IN | Indikation vom Ressourcen (bei Wertänderung/Timer) |
@@ -30,7 +30,7 @@ Der Funktionsblock `DataPanel_MI_IW_DutyCycle` ist ein Service-Interface-FB zur 
 ### **Daten-Eingänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `QI` | BOOL | Ereignis-Eingangsqualifizierer |
 | `PARAMS` | STRING | Dienstparameter (z. B. Konfigurationsstring) |
 | `u8SAMember` | USINT | Knotenadresse (SA 224..239, Standard: MI::MI_00) |
@@ -41,7 +41,7 @@ Der Funktionsblock `DataPanel_MI_IW_DutyCycle` ist ein Service-Interface-FB zur 
 ### **Daten-Ausgänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `QO` | BOOL | Ereignis-Ausgangsqualifizierer |
 | `STATUS` | STRING | Dienststatus (Fehler-/Erfolgsmeldung) |
 | `IN` | WORD | Gemessenes Tastverhältnis (Duty Cycle) in Prozent (0..100) |

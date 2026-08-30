@@ -3,6 +3,7 @@
 <img width="1199" height="417" alt="image" src="https://github.com/user-attachments/assets/4d96025b-aaf4-4e39-9442-2b07e0257699" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AND_10_BOOL` ist ein generischer Baustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über bis zu zehn separate BOOL-Eingänge durch. Der Baustein ist nach der Norm IEC 61131-3 klassifiziert und gehört zur Kategorie der Standard-Booleschen Funktionen. Er wird typischerweise in Steuerungslogik eingesetzt, um Bedingungen zu verknüpfen, bei denen alle Eingangssignale wahr (TRUE) sein müssen, um ein Ausgangssignal zu aktivieren.

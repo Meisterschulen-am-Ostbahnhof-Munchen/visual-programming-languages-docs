@@ -3,6 +3,7 @@
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert den Einsatz des **Reset-dominanten Toggle-Flipflops (AX_FB_RS_T_FF)** mit Adapter-Schnittstelle in der 4diac-IDE.
@@ -20,7 +21,7 @@ Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verste
 ### Parameter
 
 | FB | Parameter | Wert |
-|----|-----------|------|
+| ---- | ----------- | ------ |
 | DigitalInput_SET | `QI` | `TRUE` |
 | DigitalInput_SET | `Input` | `Input_I1` |
 | DigitalInput_RESET | `QI` | `TRUE` |

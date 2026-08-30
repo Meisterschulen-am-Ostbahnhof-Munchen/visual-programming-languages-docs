@@ -1,12 +1,15 @@
 # AuxiliaryState_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `AuxiliaryState_S` is a structured data structure (struct) that represents the state of an auxiliary input. It is used in the context of the ISOBUS interface (ISO 11783) for communication in agricultural and forestry machinery. This data type encapsulates both the actual value of the input and control information for its cyclic transmission.
+
 ## Interface Structure
 
 AuxiliaryState_S` is a structured data type (struct) and therefore does not have event or adapter interfaces in the conventional sense of a function block. Its structure consists of the following two data fields:
+
 ### **Data Inputs**
 
 *(Not applicable – This is a data type, not a function block)*

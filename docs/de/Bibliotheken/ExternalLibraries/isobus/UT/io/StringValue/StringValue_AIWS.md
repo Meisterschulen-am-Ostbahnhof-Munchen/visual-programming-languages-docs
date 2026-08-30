@@ -3,6 +3,7 @@
 ![StringValue_AIWS](./StringValue_AIWS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **StringValue_AIWS** ist ein Eingabe-Service-Interface-Baustein für die Verarbeitung von Wide-String-Daten (UTF‑16) in einem ISOBUS-Kontext. Er stellt eine Adapter-basierte Schnittstelle zur Verfügung, über die externe Ressourcen Zeichenketten eingeben können. Der Baustein dient als Wrapper für den internen Baustein *StringValue_IWS* und bietet eine standardisierte Initialisierungs- und Anforderungsschnittstelle.
@@ -12,9 +13,9 @@ Der Funktionsbaustein **StringValue_AIWS** ist ein Eingabe-Service-Interface-Bau
 ### **Ereignis-Eingänge**
 
 | Ereignis | Typ | Mit-Variablen | Kommentar |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `INIT` | EInit | `QI`, `PARAMS`, `u16ObjId` | Initialisierung des Dienstes |
-| `REQ`  | Event | `QI` | Dienstanforderung (Abfrage) |
+| `REQ` | Event | `QI` | Dienstanforderung (Abfrage) |
 
 ### **Ereignis-Ausgänge**
 
@@ -25,7 +26,7 @@ Der Funktionsbaustein **StringValue_AIWS** ist ein Eingabe-Service-Interface-Bau
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Kommentar |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `QI` | BOOL | – | Ereignis-Qualifier (Freigabe) |
 | `PARAMS` | STRING | – | Dienstparameter (z. B. Konfigurationsstring) |
 | `u16ObjId` | UINT | `ID_NULL` | Objekt‑ID (z. B. ISOBUS-Objektkennung) |
@@ -33,7 +34,7 @@ Der Funktionsbaustein **StringValue_AIWS** ist ein Eingabe-Service-Interface-Bau
 ### **Daten-Ausgänge**
 
 | Name | Typ | Kommentar |
-|---|---|---|
+| --- | --- | --- |
 | `QO` | BOOL | Ausgangs-Qualifier (Status der letzten Operation) |
 | `STATUS` | STRING | Statusmeldung (z. B. Fehlertext oder Erfolgsmeldung) |
 
@@ -78,7 +79,7 @@ Der Baustein besitzt keine explizite Zustandsmaschine, das Verhalten wird durch 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Schnittstelle | Besonderheit |
-|---|---|---|
+| --- | --- | --- |
 | `StringValue_AIWS` | Adapter (Eingang) | Empfängt Wide-Strings über den Adapter `AIWS` |
 | `StringValue_IWS` | Direkte Events/Daten | Interne Logik, keine Adapter-Schnittstelle |
 | `StringValue` (Standard) | Events/Daten | Einfacher Wide-String-Eingang (ohne Adapter) |

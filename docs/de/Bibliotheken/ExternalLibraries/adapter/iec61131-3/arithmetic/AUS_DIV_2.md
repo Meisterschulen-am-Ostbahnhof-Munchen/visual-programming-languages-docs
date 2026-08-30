@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) **AUS_DIV_2** ist ein generischer Baustein zur Durchführung der arithmetischen Division (DIV). Er ist für den Einsatz in IEC 61499-konformen Systemen (wie Eclipse 4diac) konzipiert. Der Baustein nutzt unidirektionale Adapter des Typs `AUS`, um die Eingangsdaten zu empfangen, die Division durchzuführen und das Ergebnis über einen entsprechenden Ausgangsadapter weiterzuleiten. Durch die Kapselung der Signale in Adaptern wird die Verdrahtung innerhalb der Entwicklungsumgebung erheblich vereinfacht.
@@ -69,6 +70,7 @@ Der Baustein besitzt kein komplexes internes Zustandsdiagramm (ECC). Seine Ausf�
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-Ganzzahl-Divisionsbaustein (wie dem IEC 61131-3 `DIV` Baustein) bietet `AUS_DIV_2` folgende Vorteile:
+
 - **Adapterbasierte Kopplung:** Standard-FBs benötigen separate Pins für Daten und Events (REQ/CNF). `AUS_DIV_2` bündelt diese logisch in den `AUS`-Adaptern.
 - **Datentyp-Flexibilität:** Während klassische Bausteine oft fest für z. B. `REAL` (e.g., `R_DIV`) definiert sind, passt sich dieser generische Baustein dem verwendeten Adaptertyp an.
 

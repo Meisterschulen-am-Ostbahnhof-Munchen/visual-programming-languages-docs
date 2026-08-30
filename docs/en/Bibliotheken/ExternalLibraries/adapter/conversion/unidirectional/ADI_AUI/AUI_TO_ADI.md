@@ -3,9 +3,11 @@
 ![AUI_TO_ADI](./AUI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AUI_TO_ADI function block is a composite module that converts a unidirectional AUI adapter (data type UINT) into a unidirectional ADI adapter (data type DINT). It serves as a standardized interface between components that use different data types for analog input or output values.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None. Data output is handled via the ADI adapter.
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | AUI_IN | Socket (Input) | `adapter::types::unidirectional::AUI` | UINT adapter for receiving input data and events. |
 | ADI_OUT | Plug (Output) | `adapter::types::unidirectional::ADI` | DINT adapter for sending the converted data and events. |
 

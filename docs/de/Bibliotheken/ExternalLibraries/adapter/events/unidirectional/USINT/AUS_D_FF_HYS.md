@@ -3,6 +3,7 @@
 ![AUS_D_FF_HYS](./AUS_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUS_D_FF_HYS` realisiert ein Data-Latch (D-Flipflop) mit einer Hysterese (Schwellwertband). Er dient dazu, einen eingehenden Datenwert flankengesteuert zu übernehmen und am Ausgang bereitzustellen, wobei durch die Hysterese ein stabiles Schaltverhalten bei rauschenden oder schwankenden Eingangssignalen erreicht wird. Der Baustein verwendet generische Adapter (`AUS`), die eine unidirektionale Datenübertragung mit Ereignissteuerung ermöglichen, und ist damit für beliebige Datentypen einsetzbar.
@@ -83,7 +84,7 @@ Die Schwellen sind um den Hysterese-Wert gegenüber einem Mittelwert oder Refere
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften | Unterschied zu `AUS_D_FF_HYS` |
-|----------|---------------|-------------------------------|
+| ---------- | --------------- | ------------------------------- |
 | Standard-D-Flipflop (`E_D_FF`) | Übernimmt Daten bei Taktflanke, keine Hysterese | Keine Rauschunterdrückung; Zustandswechsel bei jeder Flanke. |
 | Schmitt-Trigger (`E_D_FF_ANY_HYS`) | Flipflop mit Hysterese, aber meist datentypspezifisch | `AUS_D_FF_HYS` kapselt den generischen Adapter und bietet eine einheitliche Schnittstelle für beliebige Typen. |
 | SR-Flipflop (`E_SR_FF`) | Set-/Reset-Funktion ohne Takt | Keine flankengesteuerte Datenübernahme; Hysterese nicht direkt integriert. |

@@ -1,7 +1,9 @@
 ![DataPanel_MI_QW_PWMp](DataPanel_MI_QW_PWMp.svg)
+
 # DataPanel_MI_QW_PWMp
 
 Output service interface function block for PWM output data (Percent Mode 3)
+
 ## Interface
 
 ### Event inputs

@@ -1,12 +1,15 @@
 # SliderAuxInStruct
 
 * * * * * * * * * *
+
 ## Introduction
 
 The structured data type `SchieberAuxInStruct` is used to bundle information for the visual representation of an auxiliary element (AUX) in a slider control. It combines the specification of an image with a background color to define the graphical representation of an auxiliary input or element.
+
 ## Interface Structure
 
 This function block is a structured data type (struct) and therefore has no event or adapter interfaces. Its structure consists of the following two data elements:
+
 ### **Data Inputs**
 
 Since it is a data type, there are no direct inputs. The structure is used as a whole at the data inputs of other function blocks.

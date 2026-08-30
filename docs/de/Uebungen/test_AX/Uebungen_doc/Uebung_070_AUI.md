@@ -3,6 +3,7 @@
 ![Uebung_070_AUI_network](./Uebung_070_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe der radbasierten Maschinengeschwindigkeit (Wheel‑Based Machine Speed – WBSD) auf einem Universal Terminal (UT) unter Verwendung von Adaptern. Im Gegensatz zur Basisübung (Uebung_070) kommt hier eine Adapter‑basierte Verbindung zwischen dem Sensor‑Interface und dem Ausgabebaustein zum Einsatz. Die Kommunikation erfolgt über das proprietäre AUI‑Protokoll, welches für die Anbindung an den UT‑Baustein in ein AUDI‑Protokoll konvertiert werden muss.

@@ -3,6 +3,7 @@
 ![sequence_T_08_AX_ecc](./sequence_T_08_AX_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `sequence_T_08_AX` ist eine Variante des `sequence_T_08`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte Sequenz mit 8 Ausgabezuständen.

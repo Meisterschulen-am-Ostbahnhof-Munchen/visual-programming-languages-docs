@@ -3,9 +3,11 @@
 ![GET_INT](./GET_INT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_INT** function block is used to read the current value of an INT variable (defined as an InOut parameter) and provide it as a buffered value at the output. Buffering occurs with each execution cycle, ensuring the output value remains stable until the next request.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,8 +53,8 @@ The FB operates as a simple read buffer:
 ``structured text
 OUT := IN;
 
-2. The current value of the InOut variable **IN** is copied to the output **OUT**.
-3. The **CNF** event is then issued to signal the completion of the operation.
+1. The current value of the InOut variable **IN** is copied to the output **OUT**.
+2. The **CNF** event is then issued to signal the completion of the operation.
 
 Since **IN** is declared as an InOut parameter, the function block directly accesses the memory location of the parent application. The value is not modified, but simply read and temporarily stored.
 
@@ -81,7 +83,7 @@ The function block (FB) has a single state: **REQ**
 ## Comparison with similar function blocks
 
 | Function block | Input type | Buffering | Special feature |
-|----------|------------------|-----------|--------------|
+| ---------- | ------------------ | ----------- | -------------- |
 | **GET_INT** | InOut (INT) | Yes (one-time read on REQ) | Accesses the original variable, no additional variable required |
 | **MOVE** (e.g., IEC 61131-3) | Input (INT) | Yes (on every execution) | Copies the value from an explicit input to an output |
 | **F_TRIG / R_TRIG** | Input (BOOL) | No (edge detection only) | Works with Boolean values |

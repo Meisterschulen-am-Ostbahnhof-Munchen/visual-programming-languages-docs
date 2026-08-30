@@ -3,9 +3,11 @@
 ![AUI_TO_AW](./AUI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_TO_AW` is a composite module that converts an AUI adapter (data type UINT) into an AW adapter (data type WORD). It encapsulates the type conversion and provides it as a standardized adapter interface, enabling seamless integration of system components with different data types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block `AUI_TO_AW` is a composite module that converts an AUI adapte
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Socket (Input) | `AUI_IN` | `adapter::types::unidirectional::AUI` | UINT adapter as source |
 | Plug (Output) | `AW_OUT` | `adapter::types::unidirectional::AW` | WORD adapter as sink |
 

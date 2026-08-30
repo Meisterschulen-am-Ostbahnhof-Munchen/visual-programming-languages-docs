@@ -13,7 +13,7 @@ Die Hardware-Anbindung erfolgt über zwei digitale Eingänge (I1, I2) und einen 
 ## Verwendete Funktionsbausteine (FBs)
 
 | FB-Name | Typ | Beschreibung |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `FB_CTD_UDINT` | `iec61131::counters::FB_CTD_UDINT` | IEC 61131‑3 Rückwärtszähler mit Eingängen `CD`, `LD`, `PV` und Ausgängen `Q` und `CV`. Parameter: `PV = UDINT#10` (Startwert 10). |
 | `Input_CD` | `logiBUS::io::DI::logiBUS_IX` | Digitaler Eingang für das Zählsignal (Taster I1). Parameter: `QI=TRUE`, `Input=Input_I1`. |
 | `Input_LD` | `logiBUS::io::DI::logiBUS_IX` | Digitaler Eingang für das Laden des Zählers (Taster I2). Parameter: `QI=TRUE`, `Input=Input_I2`. |
@@ -38,7 +38,7 @@ Die Hardware-Anbindung erfolgt über zwei digitale Eingänge (I1, I2) und einen 
 ### Datenflüsse
 
 | Quelle | Ziel | Bedeutung |
-|--------|------|-----------|
+| -------- | ------ | ----------- |
 | `Input_CD.IN` | `FB_CTD_UDINT.CD` | Taster I1 als Zählimpuls (Rückwärtszählen). |
 | `Input_LD.IN` | `FB_CTD_UDINT.LD` | Taster I2 als Ladesignal (Setzen auf PV). |
 | `FB_CTD_UDINT.Q` | `Output_Q1.OUT` | Ausgang Q1 wird aktiv, sobald Zählerstand = 0 ist. |

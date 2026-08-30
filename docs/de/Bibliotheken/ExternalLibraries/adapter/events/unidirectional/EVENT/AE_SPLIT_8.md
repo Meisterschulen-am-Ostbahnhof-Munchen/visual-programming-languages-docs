@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AE` | Eingehender unidirektionaler AE-Adapter |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AE` | Erster ausgehender AE-Adapter |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AE` | Zweiter ausgehender AE-Adapter |

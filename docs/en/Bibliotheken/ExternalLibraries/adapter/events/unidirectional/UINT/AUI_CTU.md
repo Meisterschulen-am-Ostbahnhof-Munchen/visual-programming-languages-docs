@@ -4,6 +4,7 @@
 *Image of function block not available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AUI_CTU is an event-driven up counter with an adapter interface. It increments the counter on every positive edge event at input `CU` and outputs the count via adapter `CV`. The output `Q` indicates whether the counter value (`CV`) has reached or exceeded the set limit (`PV`). The special feature of this implementation is the "On-Change" triggering: The event on the adapter `Q.E1` is only triggered if the logical state of `Q` actually changes. This reduces unnecessary events in subsequent processing.
@@ -20,7 +21,7 @@ The AUI_CTU is an event-driven up counter with an adapter interface. It incremen
 ### **Event Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `CUO` | Event | Output after successful increment |
 | `RO` | Event | Output after successful reset |
 
@@ -35,7 +36,7 @@ Direct data outputs are not available. The current counter value (`CV`) and the 
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AX` | Plug (Output) | `Q` | Outputs `TRUE` if `CV >= PV`, otherwise `FALSE`. The event `Q.E1` is only sent on state changes. |
 | `adapter::types::unidirectional::AUI` | Plug (Output) | `CV` | Returns the current counter value (unsigned integer). The event `CV.E1` is triggered after each increment or reset. |
 | `adapter::types::unidirectional::AUI` | Socket (Input) | `PV` | Receives the threshold value of type `UINT`. Changing this value automatically recalculates `Q`. |
@@ -52,14 +53,16 @@ This function block implements a finite state machine (ECC) with the following a
 Process:
 
 1. **Event `CU`** (and `CV < 65535`): Transition to state `CU`. The counter is incremented, `Q` is recalculated, and `CV.E1` and the event `CUO` are output.
+
 - If `Q` has changed compared to the last stored value (`Q_OLD`), the state changes to `EMIT_Q`.
 - Otherwise, the function block returns to state `START`.
-2. **Event `R`**: Transition to state `R`. The counter is reset, `Q` is recalculated, and `CV.E1` and `RO` are output. Then, analogous to `CU`, a decision is made whether to reach `EMIT_Q` or return to `START`.
-3. **Adapter event `PV.E1`** (limit change): Transition to state `UPDATE_PV`. The algorithm `UPDATE` recalculates `Q`. Here too, the state `EMIT_Q` is only traversed when `Q` changes.
-4. **State `EMIT_Q`**: Executes the algorithm `SAVE_Q` (stores the new `Q` value in `Q_OLD`) and sends the event `Q.E1`. Afterward, the function block always returns to `START`.
+1. **Event `R`**: Transition to state `R`. The counter is reset, `Q` is recalculated, and `CV.E1` and `RO` are output. Then, analogous to `CU`, a decision is made whether to reach `EMIT_Q` or return to `START`.
+2. **Adapter event `PV.E1`** (limit change): Transition to state `UPDATE_PV`. The algorithm `UPDATE` recalculates `Q`. Here too, the state `EMIT_Q` is only traversed when `Q` changes.
+3. **State `EMIT_Q`**: Executes the algorithm `SAVE_Q` (stores the new `Q` value in `Q_OLD`) and sends the event `Q.E1`. Afterward, the function block always returns to `START`.
 4. **State `EMIT_Q`**: Executes the algorithm `SAVE_Q` (stores the new `Q` value in `Q_OLD`) and sends the event `Q.E1`.
 
 The function block then always returns to `START`.
+
 ## Technical Features
 
 - **On-Change Triggering for Adapter `Q`**: The event `Q.E1` is only triggered when the logical value of `Q` (true/false) changes. This is achieved through the internal status variable `Q_OLD`. This prevents unnecessary event flooding in the application.
@@ -70,7 +73,7 @@ The function block then always returns to `START`.
 ## State Overview
 
 | State | Description | Actions | Outgoing Transitions |
-|---------|--------------|----------|-------------------------|
+| --------- | -------------- | ---------- | ------------------------- |
 | `START` | Idle state, waiting for events | – | `CU` → `CU`, `R` → `R`, `PV.E1` → `UPDATE_PV` |
 | `CU` | Count up | `CU` algorithm, send `CV.E1` and `CUO` | `[Q != Q_OLD]` → `EMIT_Q`, `[Q == Q_OLD]` → `START` |
 | `R` | Reset | `R` algorithm, send `CV.E1` and `RO` | `[Q != Q_OLD]` → `EMIT_Q`, `[Q == Q_OLD]` → `START` |
@@ -94,7 +97,7 @@ The transitions are triggered by conditions:
 ## Comparison with Similar Function Blocks
 
 | Feature | `AUI_CTU` | Standard `CTU` (IEC 61131-3) | `CTUD` (Up/Down Counter) |
----------|-----------|------------------------------|------------------------------|
+--------- | ----------- | ------------------------------ | ------------------------------ |
 | Interface | Adapter-based | Direct Inputs/Outputs | Direct Inputs/Outputs |
 | Event on Q Change | Yes (On-Change) | No (Always on Counting Event) | No |
 | Response to PV Change | Automatic | Not Provided | Not Provided |

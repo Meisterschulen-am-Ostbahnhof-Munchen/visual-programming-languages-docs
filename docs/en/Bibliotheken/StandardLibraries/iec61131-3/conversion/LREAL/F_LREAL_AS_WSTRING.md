@@ -6,6 +6,7 @@
 
 The function block `F_LREAL_AS_WSTRING` converts an LREAL value (64-bit floating-point number) into a WSTRING (wide string). This is particularly useful when numeric values are needed for display or further processing as text.
 ![F_LREAL_AS_WSTRING](F_LREAL_AS_WSTRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

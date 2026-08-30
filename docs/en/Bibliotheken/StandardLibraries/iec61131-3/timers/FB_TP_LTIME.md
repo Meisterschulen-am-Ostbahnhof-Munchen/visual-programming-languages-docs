@@ -3,6 +3,7 @@
 ![FB_TP_LTIME](FB_TP_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `FB_TP_LTIME` is the `LTIME` variant (64-bit duration, nanosecond resolution) of the standard timer block `FB_TP` (pulse). It behaves functionally identically to `FB_TP`, but uses data type `LTIME` instead of `TIME` for `PT`/`ET`.

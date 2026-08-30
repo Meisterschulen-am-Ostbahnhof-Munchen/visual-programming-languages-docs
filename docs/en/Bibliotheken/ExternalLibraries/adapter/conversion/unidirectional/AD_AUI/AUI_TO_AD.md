@@ -3,9 +3,11 @@
 ![AUI_TO_AD](./AUI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_TO_AD** is a composite function block (FB) that converts an AUI adapter (UINT data type) into an AD adapter (DWORD data type). It serves as a unidirectional conversion interface within an IEC 61499-based control application. The block is implemented as an encapsulation of the standard converter `F_UINT_TO_DWORD` from the library `iec61131::conversion` and enables adapter-based data transfer.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block **AUI_TO_AD** is a composite function block (FB) that convert
 ### **Adapter**
 
 | Type | Name | Role |
-|-----|------|-------|
+| ----- | ------ | ------- |
 | `adapter::types::unidirectional::AUI` | AUI_IN | Socket – Input adapter for the UINT value and the associated event. |
 | `adapter::types::unidirectional::AD` | AD_OUT | Plug – Output adapter for the converted DWORD value and the confirmation event. |
 
@@ -57,6 +59,7 @@ The conversion is performed according to the IEC 61131-3 standard for the functi
 As a composite function block, **AUI_TO_AD** does not have its own state machine. The functional sequence is purely event-driven: An event at the input triggers the conversion, after which an event is generated at the output. There are no internal states between these events.
 
 -
+
 ## Application Scenarios
 
 - **Data Integration**: An AUI adapter provides a UINT value (e.g., from a sensor module) that is required in a system that processes only DWORD addresses (e.g., via an AD adapter).

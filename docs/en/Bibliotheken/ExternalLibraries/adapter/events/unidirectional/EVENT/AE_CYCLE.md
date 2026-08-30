@@ -1,9 +1,11 @@
 # AE_CYCLE
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_CYCLE** (Adapter Event Cycle) serves as a periodic event generator. It generates an output event at regular intervals, defined by a timer. Unlike the standard `E_CYCLE` block, this function block uses an adapter for signal output, making it particularly suitable for architectural patterns based on event adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -34,10 +36,11 @@ The **AE_CYCLE** is implemented as a Composite Function Block. Internally, its l
 1. **Start**: When the `START` event occurs, the internal `E_DELAY` block is started with a duration of `DT`.
 2. **Delay & Trigger**: After the time specified by `DT` has elapsed, the internal module generates an output event.
 3. **Feedback (Loop)**: This internal event performs two functions:
+
 - It is forwarded to the adapter **EO** to output the signal.
 - It is fed directly back to the `START` input of the internal `E_DELAY`.
-4. **Cycle**: This feedback immediately restarts the timer, creating a continuous loop.
-5. **Stop**: The `STOP` event immediately interrupts the internal `E_DELAY` module and ends the loop.
+1. **Cycle**: This feedback immediately restarts the timer, creating a continuous loop.
+2. **Stop**: The `STOP` event immediately interrupts the internal `E_DELAY` module and ends the loop.
 
 ## Technical Features
 

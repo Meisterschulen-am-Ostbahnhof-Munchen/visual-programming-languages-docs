@@ -18,8 +18,8 @@ Implementation of a delay behavior. The output should activate immediately when 
 ![Uebung_020d_network](./Uebung_020d_network.svg)
 
 1. **Power On**: The user presses `I1`. The switch forwards the event to `EO1`. This does two things:
-* The memory `E_RS` is set immediately (the light turns on).
-* Any delay timer that may still be running is stopped (`E_DELAY.STOP`).
+- The memory `E_RS` is set immediately (the light turns on).
+- Any delay timer that may still be running is stopped (`E_DELAY.STOP`).
 2. **Hold**: As long as the button is pressed, the state remains stable.
 3. **Switch Off**: The user releases `I1`. The switch moves to `EO0`. This triggers the delay timer (`E_DELAY.START`).
 4. **Run-On**: Only after 2 seconds have elapsed does the timer fire `E_DELAY.EO` ➡️ `E_RS.R`. The memory is reset, and the light turns off.

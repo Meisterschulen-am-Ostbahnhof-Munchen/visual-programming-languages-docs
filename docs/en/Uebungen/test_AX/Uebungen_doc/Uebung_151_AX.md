@@ -17,8 +17,8 @@ Calculation of a time-dependent change (differential quotient) from pulse values
 
 ![Uebung_151_AX_network](./Uebung_151_AX_network.svg)
 
-* **`logiBUS_PI_ID`**: Returns the current counter reading.
-* **`FT_DERIV`**: A function block from the **OSCAT** library for calculating the rate of change.
+- **`logiBUS_PI_ID`**: Returns the current counter reading.
+- **`FT_DERIV`**: A function block from the **OSCAT** library for calculating the rate of change.
 
 -----
 

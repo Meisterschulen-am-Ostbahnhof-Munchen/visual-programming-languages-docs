@@ -48,9 +48,9 @@ Often, a function like `DINT_TO_TIME` is needed to convert a numeric value (e.g.
 
 Use the block **`F_MULTIME`** (from the `arithmetic` category) for this purpose:
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 - Compared to other conversion blocks, `F_TIME_IN_NS_TO_DINT` specializes in converting TIME to DINT.
 - Similar blocks might offer other data types or additional functions, such as scaling or filtering.
 

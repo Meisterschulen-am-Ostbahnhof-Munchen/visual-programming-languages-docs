@@ -29,17 +29,17 @@ Diese Übung implementiert einen **Rückwärtszähler (CTD)** gemäß IEC 61131-
 
 Die Steuerung erfolgt rein ereignisgesteuert über die **IND**-Ereignisse der Eingänge:
 
-1. **Zähleingang (CD):**  
+1. **Zähleingang (CD):**
    Eine steigende Flanke an `Input_I1` wird über den Baustein `Input_CD` erfasst und löst das Ereignis `IND` aus. Dieses wird mit dem `REQ`-Ereignis des Zählers `FB_CTD_DINT` verbunden. Gleichzeitig wird der physikalische Eingangswert (`IN`) über die Datenverbindung `Input_CD.IN → FB_CTD_DINT.CD` an den Zähleingang übertragen.
 
-2. **Ladeeingang (LD):**  
-   Analog dazu wird eine steigende Flanke an `Input_I2` über `Input_LD` erfasst und ebenfalls mit dem `REQ` des Zählers verbunden. Der Eingangswert (`IN`) wird an den Ladeeingang `FB_CTD_DINT.LD` weitergeleitet.  
+2. **Ladeeingang (LD):**
+   Analog dazu wird eine steigende Flanke an `Input_I2` über `Input_LD` erfasst und ebenfalls mit dem `REQ` des Zählers verbunden. Der Eingangswert (`IN`) wird an den Ladeeingang `FB_CTD_DINT.LD` weitergeleitet.
    *Hinweis*: Beide Ereignisse (CD und LD) nutzen dasselbe `REQ`-Ereignis des Zählers. Der Zähler wertet intern die jeweiligen Datenleitungen aus, um die Operation (zählen oder laden) zu unterscheiden.
 
-3. **Ausgang Q1 und Terminalanzeige:**  
-   Nach Abschluss der Zählerverarbeitung wird das `CNF`-Ereignis ausgelöst. Dieses wird parallel an die `REQ`-Eingänge von `Output_Q1` und `Q_NumericValue_PHYS_LREAL` gesendet.  
+3. **Ausgang Q1 und Terminalanzeige:**
+   Nach Abschluss der Zählerverarbeitung wird das `CNF`-Ereignis ausgelöst. Dieses wird parallel an die `REQ`-Eingänge von `Output_Q1` und `Q_NumericValue_PHYS_LREAL` gesendet.
 
-   - Der Ausgangswert `FB_CTD_DINT.Q` (logisch, wenn Zählerstand ≤ 0) wird über die Datenverbindung an `Output_Q1.OUT` gelegt und somit am Hardware-Ausgang Q1 ausgegeben.  
+   - Der Ausgangswert `FB_CTD_DINT.Q` (logisch, wenn Zählerstand ≤ 0) wird über die Datenverbindung an `Output_Q1.OUT` gelegt und somit am Hardware-Ausgang Q1 ausgegeben.
    - Der aktuelle Zählerstand `FB_CTD_DINT.CV` (Typ `DINT`) wird an `Q_NumericValue_PHYS_LREAL.lrPhys` übergeben und als physikalischer `LREAL`-Wert auf dem Terminal dargestellt.
 
 **Zusammenfassung der Verbindungen:**
@@ -63,4 +63,4 @@ Die Übung 216b demonstriert die Anwendung eines IEC 61131-3 Rückwärtszählers
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

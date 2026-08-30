@@ -36,12 +36,12 @@ Daten werden über den Plug-Adapter ausgegeben:
 
 ### **Adapter**
 
-- **Socket AULI_IN**  
-  Typ: `adapter::types::unidirectional::AULI`  
+- **Socket AULI_IN**
+  Typ: `adapter::types::unidirectional::AULI`
   Empfängt den zu konvertierenden ULINT-Wert und das zugehörige Ereignis.
 
-- **Plug AUDI_OUT**  
-  Typ: `adapter::types::unidirectional::AUDI`  
+- **Plug AUDI_OUT**
+  Typ: `adapter::types::unidirectional::AUDI`
   Stellt den konvertierten UDINT-Wert und das Abschluss-Ereignis bereit.
 
 ## Funktionsweise
@@ -85,4 +85,4 @@ Der AULI_TO_AUDI ist ein kompakter, spezialisierter Composite-Baustein, der die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

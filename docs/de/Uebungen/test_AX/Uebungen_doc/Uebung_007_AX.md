@@ -20,9 +20,9 @@ Erzeugung eines periodischen Blinksignals.
 
 ![Uebung_007_AX_network](./Uebung_007_AX_network.svg)
 
-  * **`E_CYCLE`**: Ein Ereignis-Generator. Er sendet periodisch Events am Ausgang `EO`. Der Parameter `DT` bestimmt die Periodendauer (hier `T#1s`).
-  * **`AX_T_FF`**: Das Toggle-Flip-Flop.
-  * **`DigitalOutput_Q1`**: Die Lampe.
+  - **`E_CYCLE`**: Ein Ereignis-Generator. Er sendet periodisch Events am Ausgang `EO`. Der Parameter `DT` bestimmt die Periodendauer (hier `T#1s`).
+  - **`AX_T_FF`**: Das Toggle-Flip-Flop.
+  - **`DigitalOutput_Q1`**: Die Lampe.
 
 -----
 

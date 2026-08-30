@@ -43,9 +43,9 @@ The program flow follows this signal processing chain:
 
 This exercise demonstrates the implementation of a latching switching function with adapters for signal conversion. It shows the use of toggle flip-flops for state storage and structured signal processing via various function blocks. The solution is particularly suitable for applications where a signal should remain active after being released.
 
-* [Uebung_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
-* [Uebung_103c2](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
+- [Uebung_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
+- [Uebung_103c2](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 
 # Rastend
 

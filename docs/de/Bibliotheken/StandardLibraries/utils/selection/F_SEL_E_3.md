@@ -66,8 +66,8 @@ Der Funktionsblock wartet auf ein eingehendes Ereignis (`REQ0`, `REQ1` oder `REQ
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_015a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
-* [Uebung_016a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
+- [Uebung_015a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+- [Uebung_016a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Fazit
 
@@ -77,4 +77,4 @@ Der `F_SEL_E_3` ist ein effizienter und flexibler Baustein für Anwendungen, bei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

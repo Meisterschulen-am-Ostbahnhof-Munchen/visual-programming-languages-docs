@@ -57,8 +57,8 @@ Unlike simple timers, this function block works with distance values instead of 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Exercise_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Exercise_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Exercise_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
 
 ## Conclusion
 

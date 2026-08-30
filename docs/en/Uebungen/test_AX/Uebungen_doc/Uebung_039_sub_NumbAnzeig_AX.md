@@ -46,13 +46,13 @@ The event is forwarded to the module `F_SINT_TO_UINT`. This module reads the val
 
 Once the conversion is confirmed (event `CNF` from `F_SINT_TO_UINT`), the function block `Q_NumericValue` is activated.
 
-* It adopts the converted value at input `u32NewValue`.
-* The parameter `u16ObjId` is fixed to `OutputNumber_N1`, meaning that this is the field that will be updated in the user interface.
+- It adopts the converted value at input `u32NewValue`.
+- The parameter `u16ObjId` is fixed to `OutputNumber_N1`, meaning that this is the field that will be updated in the user interface.
 
 **Connection Overview:**
 
-* **Event**: `CNF` (Input) → `F_SINT_TO_UINT.REQ` → `F_SINT_TO_UINT.CNF` → `Q_NumericValue.REQ`.
-* **Data**: `STATE_NR` (Input) → `F_SINT_TO_UINT.IN` → `F_SINT_TO_UINT.OUT` → `Q_NumericValue.u32NewValue`.
+- **Event**: `CNF` (Input) → `F_SINT_TO_UINT.REQ` → `F_SINT_TO_UINT.CNF` → `Q_NumericValue.REQ`.
+- **Data**: `STATE_NR` (Input) → `F_SINT_TO_UINT.IN` → `F_SINT_TO_UINT.OUT` → `Q_NumericValue.u32NewValue`.
 
 ## Summary
 
@@ -60,4 +60,4 @@ The exercise **Exercise_039_sub_NumbDisplay_AX** demonstrates the encapsulation 
 
 ## 🛠️ Related exercises
 
-* [Uebung_039_AX](Uebung_039_AX.md)
+- [Uebung_039_AX](Uebung_039_AX.md)

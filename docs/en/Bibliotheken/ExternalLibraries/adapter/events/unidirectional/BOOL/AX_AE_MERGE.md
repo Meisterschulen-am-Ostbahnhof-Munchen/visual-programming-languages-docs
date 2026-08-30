@@ -41,6 +41,6 @@ In many exercises (e.g., with the blinker in `Uebung_007a3_AX`), a `AX_OR_2` was
 
 ## 🛠️ Related exercises
 
-* [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
-* [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
-* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
+- [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
+- [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)

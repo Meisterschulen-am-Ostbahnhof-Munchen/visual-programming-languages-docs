@@ -20,16 +20,16 @@ Kombination von Input-Events und Speichergliedern.
 
 ![Uebung_006d_AX_network](./Uebung_006d_AX_network.svg)
 
-  * **`I1` (Set)**: Konfiguriert auf `BUTTON_DOUBLE_CLICK`.
-  * **`I2` (Reset)**: Konfiguriert auf `BUTTON_SINGLE_CLICK`.
-  * **`AX_SR`**: Speicher.
+  - **`I1` (Set)**: Konfiguriert auf `BUTTON_DOUBLE_CLICK`.
+  - **`I2` (Reset)**: Konfiguriert auf `BUTTON_SINGLE_CLICK`.
+  - **`AX_SR`**: Speicher.
 
 -----
 
 ## Funktionsweise
 
-*   Zum **Einschalten** muss man den Taster `I1` **doppelt** klicken.
-*   Zum **Ausschalten** reicht ein **einfacher** Klick auf `I2`.
+-   Zum **Einschalten** muss man den Taster `I1` **doppelt** klicken.
+-   Zum **Ausschalten** reicht ein **einfacher** Klick auf `I2`.
 
 -----
 

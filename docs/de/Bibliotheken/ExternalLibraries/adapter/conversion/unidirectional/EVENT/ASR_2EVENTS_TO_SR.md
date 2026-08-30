@@ -58,7 +58,7 @@ Im Vergleich zu einfachen Ereignis-Funktionsblöcken bietet ASR_2EVENTS_TO_SR ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
+- [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
 

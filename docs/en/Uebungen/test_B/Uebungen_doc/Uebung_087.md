@@ -17,10 +17,10 @@ Using `E_DEMUX` (Event Demultiplexer). It shows how a central "execution event" 
 
 ![Uebung_087_network](./Uebung_087_network.svg)
 
-* **`I1` (Trigger)**: The event to be distributed.
-* **`I2`, `I3`, `I4` (Selector)**: Determine the destination.
-* **`ADD_3`**: Sums the states of buttons 2, 3, and 4.
-* **`E_DEMUX`**: Forwards the event from `I1` to the output whose number corresponds to the calculated sum.
+- **`I1` (Trigger)**: The event to be distributed.
+- **`I2`, `I3`, `I4` (Selector)**: Determine the destination.
+- **`ADD_3`**: Sums the states of buttons 2, 3, and 4.
+- **`E_DEMUX`**: Forwards the event from `I1` to the output whose number corresponds to the calculated sum.
 
 -----
 
@@ -28,10 +28,10 @@ Using `E_DEMUX` (Event Demultiplexer). It shows how a central "execution event" 
 
 The number of pressed "selector buttons" determines which lamp toggles when **I1** is clicked:
 
-* No selector button pressed ➡️ Total = 0 ➡️ Clicking I1 toggles **Q1**.
-* One selector button pressed ➡️ Total = 1 ➡️ Clicking I1 toggles **Q2**.
-* Two selector buttons pressed ➡️ Total = 2 ➡️ Clicking I1 toggles **Q3**.
-* All three selector buttons pressed ➡️ Total = 3 ➡️ Clicking I1 toggles **Q4**.
+- No selector button pressed ➡️ Total = 0 ➡️ Clicking I1 toggles **Q1**.
+- One selector button pressed ➡️ Total = 1 ➡️ Clicking I1 toggles **Q2**.
+- Two selector buttons pressed ➡️ Total = 2 ➡️ Clicking I1 toggles **Q3**.
+- All three selector buttons pressed ➡️ Total = 3 ➡️ Clicking I1 toggles **Q4**.
 
 ----
 

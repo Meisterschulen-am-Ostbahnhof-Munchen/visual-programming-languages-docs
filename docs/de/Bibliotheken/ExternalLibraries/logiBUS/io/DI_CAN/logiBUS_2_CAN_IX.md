@@ -84,4 +84,4 @@ Der `logiBUS_2_CAN_IX` Funktionsblock stellt eine robuste und zuverlässige Schn
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -50,7 +50,7 @@ Der logische Ablauf der Übung ist wie folgt:
 - Einbindung von Hardware-Ein-/Ausgängen über logiBUS-Adapter.
 - Analyse des zeitlichen Verhaltens bei unterschiedlichen Eingangskombinationen.
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Vorkenntnisse**: Grundlegender Umgang mit der 4diac-IDE, einfache digitale Logik.
 
 ## Zusammenfassung
@@ -61,4 +61,4 @@ Die Übung `Uebung_006a4_AX_SR` demonstriert die Verwendung des setzdominanten T
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

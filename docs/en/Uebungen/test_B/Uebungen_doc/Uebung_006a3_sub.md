@@ -18,4 +18,4 @@ It has an event input `EI`. Upon each occurrence of an event, the function block
 
 ![Uebung_006a3_sub_network](./Uebung_006a3_sub_network.svg)
 
-* [Exercise_006a3](Uebung_006a3.md)
+- [Exercise_006a3](Uebung_006a3.md)

@@ -29,14 +29,14 @@ The function block (FB) **ALR_ADD_4** is a generic arithmetic block for performi
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALR`): First input value (addend 1) for addition.
-* **IN2** (Type: `adapter::types::unidirectional::ALR`): Second input value (addend 2) for addition.
-* **IN3** (Type: `adapter::types::unidirectional::ALR`): Third input value (addend 3) for addition.
-* **IN4** (Type: `adapter::types::unidirectional::ALR`): Fourth input value (addend 4) for addition.
+- **IN1** (Type: `adapter::types::unidirectional::ALR`): First input value (addend 1) for addition.
+- **IN2** (Type: `adapter::types::unidirectional::ALR`): Second input value (addend 2) for addition.
+- **IN3** (Type: `adapter::types::unidirectional::ALR`): Third input value (addend 3) for addition.
+- **IN4** (Type: `adapter::types::unidirectional::ALR`): Fourth input value (addend 4) for addition.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALR`): The calculated result of the addition (sum).
+- **OUT** (Type: `adapter::types::unidirectional::ALR`): The calculated result of the addition (sum).
 
 ## Functionality
 
@@ -48,8 +48,8 @@ The result is immediately passed to the output plug `OUT`. Since this is a gener
 
 ## Technical Features
 
-* **Generic Class:** The function block is linked to the value `'GEN_ALR_ADD'` via the attribute `GenericClassName`, giving it high flexibility in processing various compatible data types within the adapter structures.
-* **Adapter-Based Coupling:** By exclusively using adapters, the number of connection lines in the 4diac IDE is drastically reduced, resulting in clearer application diagrams.
+- **Generic Class:** The function block is linked to the value `'GEN_ALR_ADD'` via the attribute `GenericClassName`, giving it high flexibility in processing various compatible data types within the adapter structures.
+- **Adapter-Based Coupling:** By exclusively using adapters, the number of connection lines in the 4diac IDE is drastically reduced, resulting in clearer application diagrams.
 
 ## State Overview
 
@@ -57,13 +57,13 @@ Since this function block performs a purely combinatorial, mathematical operatio
 
 ## Application Scenarios
 
-* **Measurement Aggregation:** Summing up to four energy, flow, or power values transmitted via standardized unidirectional adapters.
-* **Signal Merging:** Structured bundling of sensor signals in complex control architectures prior to further data processing.
+- **Measurement Aggregation:** Summing up to four energy, flow, or power values transmitted via standardized unidirectional adapters.
+- **Signal Merging:** Structured bundling of sensor signals in complex control architectures prior to further data processing.
 
 ## Comparison with Similar Components
 
-* **Standard Add-in Component:** A classic IEC 61131-3 `ADD` component uses direct data inputs (e.g., `REAL`, `INT`) and often requires explicit event connections (`REQ` / `CNF`). `ALR_ADD_4` encapsulates this data and these events in adapters, simplifying project design.
-* **Two-Way Adder (e.g., ALR_ADD_2):** Offers only two inputs. The `ALR_ADD_4` block eliminates the need to cascade multiple smaller adder blocks when summing three or four values.
+- **Standard Add-in Component:** A classic IEC 61131-3 `ADD` component uses direct data inputs (e.g., `REAL`, `INT`) and often requires explicit event connections (`REQ` / `CNF`). `ALR_ADD_4` encapsulates this data and these events in adapters, simplifying project design.
+- **Two-Way Adder (e.g., ALR_ADD_2):** Offers only two inputs. The `ALR_ADD_4` block eliminates the need to cascade multiple smaller adder blocks when summing three or four values.
 
 ## Change Detection
 

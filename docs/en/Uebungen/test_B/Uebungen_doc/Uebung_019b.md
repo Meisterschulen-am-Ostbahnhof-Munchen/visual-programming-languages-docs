@@ -17,16 +17,16 @@ Linking UI states with hardware memories. The goal is to ensure that an alarm st
 
 ![Uebung_019b_network](./Uebung_019b_network.svg)
 
-* **`E_SR`**: The alarm memory.
-* **`Alarmausgang`**: Switches a physical horn or warning light (`Q1`).
+- **`E_SR`**: The alarm memory.
+- **`Alarmausgang`**: Switches a physical horn or warning light (`Q1`).
 
 -----
 
 ## Functionality
 
-* **Trigger Alarm**: Pressing button `I3` triggers the alarm. The terminal switches to the alarm screen **AND** the memory `E_SR` is set ➡️ The physical horn sounds.
-* **Acknowledge**: The user presses **ACK** on the terminal. The control switches back to the normal screen **AND** clears the memory `E_SR.R` ➡️ The horn stops.
-* Interestingly, switching to a different normal mask (`I1`, `I2`) also clears the alarm memory in this implementation (reset branch on `E_SR`).
+- **Trigger Alarm**: Pressing button `I3` triggers the alarm. The terminal switches to the alarm screen **AND** the memory `E_SR` is set ➡️ The physical horn sounds.
+- **Acknowledge**: The user presses **ACK** on the terminal. The control switches back to the normal screen **AND** clears the memory `E_SR.R` ➡️ The horn stops.
+- Interestingly, switching to a different normal mask (`I1`, `I2`) also clears the alarm memory in this implementation (reset branch on `E_SR`).
 
 -----
 

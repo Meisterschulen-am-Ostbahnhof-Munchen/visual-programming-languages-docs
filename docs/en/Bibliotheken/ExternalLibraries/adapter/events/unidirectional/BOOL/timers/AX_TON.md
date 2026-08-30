@@ -65,8 +65,8 @@ Comparison with [E_TON](../../../../../../StandardLibraries/events/timers/E_TON.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)
-* [Exercise_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Exercise_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)
+- [Exercise_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Conclusion
 

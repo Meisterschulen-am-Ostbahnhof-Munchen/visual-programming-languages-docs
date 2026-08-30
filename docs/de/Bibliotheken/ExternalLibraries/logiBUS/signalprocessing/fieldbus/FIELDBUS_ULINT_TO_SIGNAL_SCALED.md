@@ -46,21 +46,21 @@ Keine Adapter vorhanden.
 
 Der Funktionsblock besitzt zwei Betriebszustände, die durch die Ereignisse **INIT** und **REQ** aktiviert werden:
 
-1. **INIT‑Zustand**  
-   Beim Eintreffen des INIT-Ereignisses wird der Algorithmus `INIT` ausgeführt (derzeit leer). Anschließend wird das Ereignis **INITO** gesendet.  
+1. **INIT‑Zustand**
+   Beim Eintreffen des INIT-Ereignisses wird der Algorithmus `INIT` ausgeführt (derzeit leer). Anschließend wird das Ereignis **INITO** gesendet.
    Über die mit INIT verbundenen Eingänge können die Parameter **SCALE** und **OFFSET** gesetzt werden.
 
-2. **REQ‑Zustand**  
+2. **REQ‑Zustand**
    Bei einem REQ-Ereignis wird der Algorithmus `REQ` ausgeführt:
 
-   - Prüfung: `IN ≤ LWORD_TO_ULINT(VALID_SIGNAL_LW)`  
-     - **Gültig** (Bedingung erfüllt):  
-       `OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`  
-       `VALID := TRUE`  
+   - Prüfung: `IN ≤ LWORD_TO_ULINT(VALID_SIGNAL_LW)`
+     - **Gültig** (Bedingung erfüllt):
+       `OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
+       `VALID := TRUE`
 
-     - **Ungültig** (Bedingung nicht erfüllt):  
-       `OUT := 0.0`  
-       `VALID := FALSE`  
+     - **Ungültig** (Bedingung nicht erfüllt):
+       `OUT := 0.0`
+       `VALID := FALSE`
 
    - Anschließend wird das Ereignis **CNF** mit den neuen Werten von **OUT** und **VALID** ausgegeben.
 
@@ -101,4 +101,4 @@ Der Funktionsblock **FIELDBUS_ULINT_TO_SIGNAL_SCALED** bietet eine kompakte, par
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

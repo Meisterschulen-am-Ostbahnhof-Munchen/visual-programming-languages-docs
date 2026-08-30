@@ -35,8 +35,8 @@ This exercise is designed as a template. Currently, no connections are defined i
 
 ### Learning Objectives and Tasks:
 
-* **Understanding Edge Detection**: Learn how signals are monitored for state changes.
-* **TODO**: The network contains a comment block with the content "TODO". This indicates that the learner must establish the necessary event and data connections to ensure functionality.
+- **Understanding Edge Detection**: Learn how signals are monitored for state changes.
+- **TODO**: The network contains a comment block with the content "TODO". This indicates that the learner must establish the necessary event and data connections to ensure functionality.
 
 ### Starting the Exercise:
 
@@ -52,6 +52,6 @@ Uebung_176` provides a compact environment for learning the `E_TRIG` block. Manu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

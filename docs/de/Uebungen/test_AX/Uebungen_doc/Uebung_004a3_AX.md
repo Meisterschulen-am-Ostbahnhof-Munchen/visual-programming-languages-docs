@@ -20,9 +20,9 @@ Das Ziel ist die Reduktion der visuellen Komplexität. Es wird demonstriert, das
 
 ![Uebung_004a3_AX_network](./Uebung_004a3_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1` & `I2`**: Die Event-Generatoren.
-  * **`E_T_FF`**: Das Toggle-Flip-Flop.
-  * **`DigitalOutput_Q1`**: Der Ausgang.
+  - **`DigitalInput_CLK_I1` & `I2`**: Die Event-Generatoren.
+  - **`E_T_FF`**: Das Toggle-Flip-Flop.
+  - **`DigitalOutput_Q1`**: Der Ausgang.
 
 Der Baustein `E_MERGE` fehlt hier bewusst.
 
@@ -54,4 +54,4 @@ Gleiches Beispiel wie zuvor (Wechselschaltung), jedoch mit effizienterem Code (w
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

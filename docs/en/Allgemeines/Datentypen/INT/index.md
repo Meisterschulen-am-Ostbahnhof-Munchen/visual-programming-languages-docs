@@ -20,7 +20,7 @@ When used as a literal, a prefix can be used, e.g., `INT#...`.
 
 ## 🛠️ Related exercises
 
-* [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039_sub_NumbAnsicht](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-* [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
-* [Uebung_060_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)
+- [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
+- [Uebung_039_sub_NumbAnsicht](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
+- [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_060_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)

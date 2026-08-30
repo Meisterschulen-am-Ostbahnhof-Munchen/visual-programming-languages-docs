@@ -20,11 +20,11 @@ Verwendung des Bausteins `SCALE`. In der Automatisierungstechnik müssen Rohwert
 
 ![Uebung_042_network](./Uebung_042_network.svg)
 
-  * **`SCALE`**: Der Umrechnungs-Baustein.
-  * **Parameter**:
-    * `MIN_IN` / `MAX_IN`: Der Quell-Bereich (hier 4.0 bis 20.0).
-    * `MIN_OUT` / `MAX_OUT`: Der Ziel-Bereich (hier 0.0 bis 100.0).
-    * `IN`: Der aktuelle Eingangswert (hier fest auf 10.0 gesetzt).
+  - **`SCALE`**: Der Umrechnungs-Baustein.
+  - **Parameter**:
+    - `MIN_IN` / `MAX_IN`: Der Quell-Bereich (hier 4.0 bis 20.0).
+    - `MIN_OUT` / `MAX_OUT`: Der Ziel-Bereich (hier 0.0 bis 100.0).
+    - `IN`: Der aktuelle Eingangswert (hier fest auf 10.0 gesetzt).
 
 -----
 

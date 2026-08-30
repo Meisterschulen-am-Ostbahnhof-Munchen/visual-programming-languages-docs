@@ -17,17 +17,17 @@ The main objective is to demonstrate scalability through typing. It shows how ea
 
 [cite_start]This component encapsulates the one-to-one routing from a digital input (`IX`) to a digital output (`QX`)[cite: 2]. It provides two configuration parameters:
 
-* **`Input`**: Selection of the physical input (e.g., `Input_I1` to `Input_I4`).
-* **`Output`**: Selection of the physical output (e.g., `Output_Q1` to `Output_Q4`).
+- **`Input`**: Selection of the physical input (e.g., `Input_I1` to `Input_I4`).
+- **`Output`**: Selection of the physical output (e.g., `Output_Q1` to `Output_Q4`).
 
 ### Instances in the Main Application
 
 In `Uebung_003b`, four instances (`F1` to `F4`) are used:
 
-* **`F1`**: `I1` ➡️ `Q1`
-* **`F2`**: `I2` ➡️ `Q2`
-* **`F3`**: `I3` ➡️ `Q3`
-* **`F4`**: `I4` ➡️ `Q4`
+- **`F1`**: `I1` ➡️ `Q1`
+- **`F2`**: `I2` ➡️ `Q2`
+- **`F3`**: `I3` ➡️ `Q3`
+- **`F4`**: `I4` ➡️ `Q4`
 
 -----
 

@@ -32,13 +32,13 @@ The module communicates exclusively via adapter interfaces.
 
 #### **Sockets (Inputs):**
 
-* **IN1** (Type: `adapter::types::unidirectional::AS`): First input for addition.
-* **IN2** (Type: `adapter::types::unidirectional::AS`): Second input for addition.
-* **IN3** (Type: `adapter::types::unidirectional::AS`): Third input for addition.
+- **IN1** (Type: `adapter::types::unidirectional::AS`): First input for addition.
+- **IN2** (Type: `adapter::types::unidirectional::AS`): Second input for addition.
+- **IN3** (Type: `adapter::types::unidirectional::AS`): Third input for addition.
 
 #### **Plugs (Outputs):**
 
-* **OUT** (Type: `adapter::types::unidirectional::AS`): Output providing the result of the addition (`IN1 + IN2 + IN3`).
+- **OUT** (Type: `adapter::types::unidirectional::AS`): Output providing the result of the addition (`IN1 + IN2 + IN3`).
 
 ---
 
@@ -56,8 +56,8 @@ As soon as new values and their corresponding events are signaled at the input a
 
 ## Technical Features
 
-* **Generic Type (Generic FB):** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AS_ADD'`. This allows for flexible adaptation to different data types without having to create a separate function block for each type.
-* **Encapsulation via Adapters:** By using unidirectional adapters (`AS`), data and the associated trigger events are encapsulated in a single connection. This ensures a clean and uncluttered user interface design in the 4diac IDE.
+- **Generic Type (Generic FB):** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AS_ADD'`. This allows for flexible adaptation to different data types without having to create a separate function block for each type.
+- **Encapsulation via Adapters:** By using unidirectional adapters (`AS`), data and the associated trigger events are encapsulated in a single connection. This ensures a clean and uncluttered user interface design in the 4diac IDE.
 
 ---
 
@@ -73,15 +73,15 @@ The function block operates in an event-driven manner and does not have a comple
 
 ## Application Scenarios
 
-* **Measurement Summing:** Addition of three analog sensor values (e.g., three flow meters to calculate a total flow rate).
-* **Setpoint Offset Calculation:** Calculation of an overall setpoint based on a base setpoint, a user offset, and a correction value from a higher-level controller.
-* **Signal Source Combination:** Combining three partial signals in process automation using standardized adapter structures.
-* ---
+- **Measurement Summing:** Addition of three analog sensor values (e.g., three flow meters to calculate a total flow rate).
+- **Setpoint Offset Calculation:** Calculation of an overall setpoint based on a base setpoint, a user offset, and a correction value from a higher-level controller.
+- **Signal Source Combination:** Combining three partial signals in process automation using standardized adapter structures.
+- ---
 
 ## Comparison with Similar Components
 
-* **Standard ADD Components (IEC 61131-3):** Classic ADD components use dedicated data pins (e.g., `IN1`, `IN2`) and separate event pins (`REQ`, `CNF`). `AS_ADD_3` minimizes the wiring effort in the FBD (Function Block Diagram) by using adapters.
-* **AS_ADD_2 (Two-Way Adder):** Compared to a variant with only two inputs, the `AS_ADD_3` saves an entire component and the associated intermediate wiring when adding three values.
+- **Standard ADD Components (IEC 61131-3):** Classic ADD components use dedicated data pins (e.g., `IN1`, `IN2`) and separate event pins (`REQ`, `CNF`). `AS_ADD_3` minimizes the wiring effort in the FBD (Function Block Diagram) by using adapters.
+- **AS_ADD_2 (Two-Way Adder):** Compared to a variant with only two inputs, the `AS_ADD_3` saves an entire component and the associated intermediate wiring when adding three values.
 
 ---
 

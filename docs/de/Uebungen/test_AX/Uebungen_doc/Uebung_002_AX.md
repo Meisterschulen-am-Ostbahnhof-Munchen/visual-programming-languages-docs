@@ -1,4 +1,4 @@
-# Uebung_002_AX: DigitalInput_I1 auf DigitalOutput_Q1/_Q2, mit Plug and Socket 
+# Uebung_002_AX: DigitalInput_I1 auf DigitalOutput_Q1/_Q2, mit Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
@@ -22,9 +22,9 @@ Folgende Bausteine kommen zum Einsatz:
 
 ![Uebung_002_AX_network](./Uebung_002_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Dieser Baustein liest den Hardware-Eingang `Input_I1`[cite: 1].
-  * **`AX_SPLIT`**: Eine Instanz des Typs `AX_SPLIT_2`. [cite_start]Dieser Baustein verfügt über einen Adapter-Eingang (`IN`) und zwei identische Adapter-Ausgänge (`OUT1`, `OUT2`) und fungiert somit als Signalvervielfältiger[cite: 1].
-  * **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QXA`. [cite_start]Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Dieser Baustein liest den Hardware-Eingang `Input_I1`[cite: 1].
+  - **`AX_SPLIT`**: Eine Instanz des Typs `AX_SPLIT_2`. [cite_start]Dieser Baustein verfügt über einen Adapter-Eingang (`IN`) und zwei identische Adapter-Ausgänge (`OUT1`, `OUT2`) und fungiert somit als Signalvervielfältiger[cite: 1].
+  - **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QXA`. [cite_start]Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 
@@ -67,4 +67,4 @@ Ein Sensor an einer Maschine (`I1`) soll nicht nur die interne Logik steuern, so
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

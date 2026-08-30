@@ -15,8 +15,8 @@ Demonstration of the "fan-out" capability of event connections in 4diac. A singl
 
 ![Uebung_004a5_network](./Uebung_004a5_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Button.
-* **`E_T_FF_Q1` & `Q2`**: Two independent flip-flops.
+- **`DigitalInput_CLK_I1`**: Button.
+- **`E_T_FF_Q1` & `Q2`**: Two independent flip-flops.
 
 -----
 
@@ -33,8 +33,8 @@ When `I1` fires an event, it is distributed to all connected targets. The proces
 
 **When to use which?**
 
-* Use **direct connections (fan-out)** when the processing order is irrelevant (as here when toggling two lamps simultaneously).
-* Use a **`E_SPLIT` block** when an exact sequence (first A, then B) is technically essential.
+- Use **direct connections (fan-out)** when the processing order is irrelevant (as here when toggling two lamps simultaneously).
+- Use a **`E_SPLIT` block** when an exact sequence (first A, then B) is technically essential.
 
 -----
 
@@ -42,8 +42,8 @@ When `I1` fires an event, it is distributed to all connected targets. The proces
 
 Same example as before (central off), but implemented in a more space-efficient way. This is the standard way in 4diac to duplicate signals.
 
-* ---
+- ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

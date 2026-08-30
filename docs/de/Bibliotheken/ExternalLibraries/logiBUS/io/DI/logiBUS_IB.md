@@ -84,8 +84,8 @@ Im Vergleich zu einfachen digitalen Eingabebausteinen bietet logiBUS_IB erweiter
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
-* [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
+- [Uebung_006c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+- [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Fazit
 

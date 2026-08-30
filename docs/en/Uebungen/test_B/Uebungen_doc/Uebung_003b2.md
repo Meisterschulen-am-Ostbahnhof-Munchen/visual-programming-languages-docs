@@ -15,9 +15,9 @@ The objective of this exercise is the efficient management of a large number of 
 
 [cite_start]This component serves as a universal "channel driver" for radio-to-CAN communication [cite: 2]. It has the following parameters:
 
-* **`Input`**: The name of the radio button (e.g., `Key_01`, `START`, `STOP`).
-* **`u8SAMember`**: The CAN address of the DataPanel (here fixed to `MI_00`).
-* **`Output`**: The name of the physical output on the DataPanel (e.g., `DigitalOutput_1A`).
+- **`Input`**: The name of the radio button (e.g., `Key_01`, `START`, `STOP`).
+- **`u8SAMember`**: The CAN address of the DataPanel (here fixed to `MI_00`).
+- **`Output`**: The name of the physical output on the DataPanel (e.g., `DigitalOutput_1A`).
 
 Internally, the module contains a `Funk_IX` for receiving radio signals and a `DataPanel_MI_QX` for sending CAN messages.
 
@@ -25,9 +25,9 @@ Internally, the module contains a `Funk_IX` for receiving radio signals and a `D
 
 In `Uebung_003b2`, the assignments are clearly defined:
 
-* `F1`: `STOP` ➡️ `Output_1A`
-* `F2`: `START` ➡️ `Output_1B`
-* `F3` to `F15`: `Key_01` to `Key_13` ➡️ `Output_2A` to `Output_8A`
+- `F1`: `STOP` ➡️ `Output_1A`
+- `F2`: `START` ➡️ `Output_1B`
+- `F3` to `F15`: `Key_01` to `Key_13` ➡️ `Output_2A` to `Output_8A`
 
 -----
 

@@ -77,7 +77,7 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Funk_IX erweiterte
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
+- [Uebung_003b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
 
 ## Fazit
 
@@ -87,4 +87,4 @@ Der Funk_IX Function Block stellt eine leistungsfähige und flexible Lösung fü
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

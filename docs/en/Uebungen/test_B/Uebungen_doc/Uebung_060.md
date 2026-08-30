@@ -6,7 +6,7 @@ This article describes the logiBUS® exercise `Uebung_060`. This is a high-level
 
 ![Uebung_060_network](./Uebung_060_network.svg)
 
-* [Automation Decoded: Controlling, Steering, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
+- [Automation Decoded: Controlling, Steering, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----
 
@@ -22,10 +22,10 @@ Connection to an ISOBUS Task Controller (TC). It demonstrates how automatic sect
 
 ### Function Blocks (FBs)
 
-* **`TC_ID`**: Receives commands from the tractor's Task Controller (e.g., "Activate section 5").
-* **`TC_QD`**: Reports data back to the Task Controller (e.g., "Section 5 is now active").
-* **Quarter Logic**: The section states are transmitted as quarters (2-bit) to also report error states (e.g., a broken wire at the valve) to the Task Controller.
-* * **DDI (Data Dictionary Identifier)**: Specific codes (e.g., `SETPOINT_CONDENSED_WORK_STATE`) that define which information is currently being transmitted.
+- **`TC_ID`**: Receives commands from the tractor's Task Controller (e.g., "Activate section 5").
+- **`TC_QD`**: Reports data back to the Task Controller (e.g., "Section 5 is now active").
+- **Quarter Logic**: The section states are transmitted as quarters (2-bit) to also report error states (e.g., a broken wire at the valve) to the Task Controller.
+- * **DDI (Data Dictionary Identifier)**: Specific codes (e.g., `SETPOINT_CONDENSED_WORK_STATE`) that define which information is currently being transmitted.
 
 -----
 

@@ -76,6 +76,6 @@ SPLIT_AW_INTO_AX` is a compact yet powerful converter that reliably and event-sy
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

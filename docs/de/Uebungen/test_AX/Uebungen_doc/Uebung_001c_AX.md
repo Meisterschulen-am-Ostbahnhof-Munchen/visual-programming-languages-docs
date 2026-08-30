@@ -22,8 +22,8 @@ In der Subapplikation werden zwei zentrale Bausteine verwendet:
 
 ![Uebung_001c_AX_network](./Uebung_001c_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Zusätzlich zur Standardfunktion wird hier der Ereignisausgang `INITO` (Initialization Output) genutzt, um eine einmalige Abfrage beim Start auszulösen[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein empfängt den initial abgefragten Wert über die Adapterverbindung und setzt den Ausgang `Output_Q1` entsprechend[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Zusätzlich zur Standardfunktion wird hier der Ereignisausgang `INITO` (Initialization Output) genutzt, um eine einmalige Abfrage beim Start auszulösen[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein empfängt den initial abgefragten Wert über die Adapterverbindung und setzt den Ausgang `Output_Q1` entsprechend[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 
@@ -67,4 +67,4 @@ Stellen Sie sich vor, eine Steuerung steuert eine Lüftungsklappe basierend auf 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

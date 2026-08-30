@@ -6,7 +6,7 @@ This article describes the logiBUS® exercise `Uebung_074`. Here, the speed of t
 
 ![Uebung_074_network](./Uebung_074_network.svg)
 
-* [Reverse Polarity Protection in Electronics: Why the Ideal Diode (LM74700) Beats MOSFETs and Schottky Diodes in Efficiency and Cost ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verpolungsschutz-in-der-Elektronik-Warum-die-ideale-Diode-LM74700-MOSFETs-und-Schottky-Dioden-in-Effizienz-und-Kosten-schlgt-e3a2487)
+- [Reverse Polarity Protection in Electronics: Why the Ideal Diode (LM74700) Beats MOSFETs and Schottky Diodes in Efficiency and Cost ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verpolungsschutz-in-der-Elektronik-Warum-die-ideale-Diode-LM74700-MOSFETs-und-Schottky-Dioden-in-Effizienz-und-Kosten-schlgt-e3a2487)
 
 ----
 
@@ -22,8 +22,8 @@ Using the module `I_RPTO` (Rear PTO). This section demonstrates how to handle a 
 
 ### Function Blocks (FBs)
 
-* **`I_RPTO`**: Outputs the engine speed at output `REAR_PTO_OUTP_SHAFT_SPEED`.
-* **`F_SEL_E_2`**: Selects between the measured value and a fixed zero.
+- **`I_RPTO`**: Outputs the engine speed at output `REAR_PTO_OUTP_SHAFT_SPEED`.
+- **`F_SEL_E_2`**: Selects between the measured value and a fixed zero.
 
 -----
 
@@ -45,4 +45,4 @@ A slurry agitator may only operate if the PTO shaft has reached at least 300 rpm
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Diode & Semiconductor Basics on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
+- [🌐 Diode & Semiconductor Basics on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)

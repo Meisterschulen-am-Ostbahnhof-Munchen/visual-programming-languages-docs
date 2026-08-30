@@ -57,8 +57,8 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation wird bei jede
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_015](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Uebung_015a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+- [Uebung_015](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Uebung_015a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
 
 ## Fazit
 

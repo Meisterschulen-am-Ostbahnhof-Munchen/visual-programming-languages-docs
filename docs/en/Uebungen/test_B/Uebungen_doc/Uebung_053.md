@@ -17,8 +17,8 @@ Combining bits into a byte. This is a low-level form of data bundling, often use
 
 ![Uebung_053_network](./Uebung_053_network.svg)
 
-* **`ASSEMBLE_BYTE_FROM_BOOLS`**: Converts 8 individual bits (4 are used here) into an 8-bit integer value (BYTE).
-* **`SPLIT_BYTE_INTO_BOOLS`**: Decomposes the byte back into its individual bits.
+- **`ASSEMBLE_BYTE_FROM_BOOLS`**: Converts 8 individual bits (4 are used here) into an 8-bit integer value (BYTE).
+- **`SPLIT_BYTE_INTO_BOOLS`**: Decomposes the byte back into its individual bits.
 
 -----
 

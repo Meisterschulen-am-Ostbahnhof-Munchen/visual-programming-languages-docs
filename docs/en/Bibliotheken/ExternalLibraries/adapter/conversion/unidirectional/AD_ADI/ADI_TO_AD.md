@@ -81,6 +81,6 @@ The **ADI_TO_AD** function block is a useful and clearly structured composite fu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

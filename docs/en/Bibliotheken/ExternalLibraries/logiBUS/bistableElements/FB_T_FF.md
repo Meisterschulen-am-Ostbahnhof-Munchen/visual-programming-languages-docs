@@ -90,6 +90,6 @@ The **FB_T_FF** is therefore ideal for simple switching tasks where a set/reset 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

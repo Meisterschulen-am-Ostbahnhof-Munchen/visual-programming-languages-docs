@@ -10,9 +10,9 @@ Die IEC 61499 ist die zentrale Norm für dieses Projekt. Sie erweitert das Model
 
 Die Norm ist in mehrere Teile gegliedert, die unterschiedliche Aspekte abdecken:
 
-*   **Teil 1: Architektur:** Definiert das grundlegende Modell für verteilte Systeme, einschließlich Funktionsbausteinen (Function Blocks), Ressourcen und Geräten.
-*   **Teil 2: Anforderungen an Software-Werkzeuge:** Legt fest, welche Eigenschaften Software-Werkzeuge (wie die 4diac IDE) besitzen müssen, um konforme Anwendungen zu erstellen.
-*   **Teil 4: Regeln für Compliance-Profile:** Definiert, wie spezifische Profile erstellt werden müssen, um die Interoperabilität zwischen verschiedenen Systemen (z. B. für eine bestimmte Branche) zu garantieren.
+-   **Teil 1: Architektur:** Definiert das grundlegende Modell für verteilte Systeme, einschließlich Funktionsbausteinen (Function Blocks), Ressourcen und Geräten.
+-   **Teil 2: Anforderungen an Software-Werkzeuge:** Legt fest, welche Eigenschaften Software-Werkzeuge (wie die 4diac IDE) besitzen müssen, um konforme Anwendungen zu erstellen.
+-   **Teil 4: Regeln für Compliance-Profile:** Definiert, wie spezifische Profile erstellt werden müssen, um die Interoperabilität zwischen verschiedenen Systemen (z. B. für eine bestimmte Branche) zu garantieren.
 
 ### Bezugsquellen
 
@@ -20,10 +20,10 @@ Normen sind in Deutschland klassischerweise über den **Beuth Verlag** (DIN) zu 
 
 **Links:**
 
-* [Wikipedia (DE): EN 61499](https://de.wikipedia.org/wiki/EN_61499)
-* [Wikipedia (EN): IEC 61499](https://en.wikipedia.org/wiki/IEC_61499)
-* [Beuth Verlag: DIN EN 61499](https://www.beuth.de/de/norm/din-en-61499-1/209152944)
-* [EVS Estland: EVS-EN 61499](https://www.evs.ee/en/evs-en-61499-1-2013)
+- [Wikipedia (DE): EN 61499](https://de.wikipedia.org/wiki/EN_61499)
+- [Wikipedia (EN): IEC 61499](https://en.wikipedia.org/wiki/IEC_61499)
+- [Beuth Verlag: DIN EN 61499](https://www.beuth.de/de/norm/din-en-61499-1/209152944)
+- [EVS Estland: EVS-EN 61499](https://www.evs.ee/en/evs-en-61499-1-2013)
 
 ---
 
@@ -31,11 +31,11 @@ Normen sind in Deutschland klassischerweise über den **Beuth Verlag** (DIN) zu 
 
 Bevor die IEC 61499 Einzug hielt, war (und ist) die IEC 61131-3 der weltweite Standard für Programmiersprachen von speicherprogrammierbaren Steuerungen (SPS). Sie definiert Sprachen wie:
 
-*   Anweisungsliste (AWL / IL)
-*   Strukturierter Text (ST)
-*   Kontaktplan (KOP / LD)
-*   Funktionsbausteinsprache (FBS / FBD)
-*   Ablaufsprache (AS / SFC)
+-   Anweisungsliste (AWL / IL)
+-   Strukturierter Text (ST)
+-   Kontaktplan (KOP / LD)
+-   Funktionsbausteinsprache (FBS / FBD)
+-   Ablaufsprache (AS / SFC)
 
 In modernen Systemen dient die IEC 61131-3 oft als Grundlage für die Logik innerhalb eines IEC 61499 Funktionsbausteins.
 
@@ -53,8 +53,8 @@ Die Norm ist extrem umfangreich und umfasst 14 Teile, von der physikalischen Sch
 
 Für die Gestaltung von Benutzeroberflächen (HMIs) und die Kennzeichnung von Hardware sind einheitliche Symbole unerlässlich.
 
-*   **ISO 7000 / IEC 60417:** Eine umfangreiche Sammlung grafischer Symbole für die Verwendung auf Geräten (z. B. "Ein/Aus", Warnhinweise).
-*   **ISO 7010:** Spezifische Sicherheitszeichen und -farben zur Unfallverhütung.
+-   **ISO 7000 / IEC 60417:** Eine umfangreiche Sammlung grafischer Symbole für die Verwendung auf Geräten (z. B. "Ein/Aus", Warnhinweise).
+-   **ISO 7010:** Spezifische Sicherheitszeichen und -farben zur Unfallverhütung.
 
 **Ressource:**
 Alle registrierten Symbole können in der [ISO Online Browsing Platform (OBP)](https://www.iso.org/obp) eingesehen werden.
@@ -63,4 +63,4 @@ Alle registrierten Symbole können in der [ISO Online Browsing Platform (OBP)](h
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

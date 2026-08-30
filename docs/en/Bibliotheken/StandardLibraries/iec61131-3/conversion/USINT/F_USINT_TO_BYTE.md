@@ -56,7 +56,7 @@ The function block performs the conversion as soon as the event `REQ` is receive
 
 ## 🛠️ Related Exercises
 
-* [Exercise_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+- [Exercise_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
 
 ## Conclusion
 

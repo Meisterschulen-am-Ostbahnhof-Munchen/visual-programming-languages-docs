@@ -45,8 +45,8 @@ Der Baustein arbeitet mit einem einfachen Algorithmus:
 
 1. Beim Eintreffen des Ereignisses **REQ** wird der eingehende Wert **IN** ausgelesen.
 2. Der Wert wird mittels `WORD_TO_UINT` in einen vorzeichenlosen Integer konvertiert.
-3. Dieser wird mit der externen Konstanten `VALID_SIGNAL_W` verglichen.  
-   – Ist der konvertierte Wert **kleiner oder gleich** `VALID_SIGNAL_W`, wird **IN** direkt an **OUT** übernommen und **VALID** auf `TRUE` gesetzt.  
+3. Dieser wird mit der externen Konstanten `VALID_SIGNAL_W` verglichen.
+   – Ist der konvertierte Wert **kleiner oder gleich** `VALID_SIGNAL_W`, wird **IN** direkt an **OUT** übernommen und **VALID** auf `TRUE` gesetzt.
    – Andernfalls wird **OUT** auf `16#0000` zurückgesetzt und **VALID** auf `FALSE`.
 
 4. Anschließend wird das Ereignis **CNF** ausgelöst.
@@ -88,4 +88,4 @@ Der Funktionsblock `FIELDBUS_WORD_TO_SIGNAL` bietet eine kompakte und zuverläss
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

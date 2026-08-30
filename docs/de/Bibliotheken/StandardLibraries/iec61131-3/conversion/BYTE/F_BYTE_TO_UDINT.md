@@ -56,7 +56,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
+- [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Fazit
 

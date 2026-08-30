@@ -39,9 +39,9 @@ Diese Übung demonstriert die Verwendung von Adapter-Interfaces (AUI/AUDI) in 4d
 3. Das Ergebnis der Prüfung (`AX_OUT`) wird an den Flip-Flop-Baustein `AX_D_FF` übergeben. Dieser stabilisiert das Signal und verhindert kurzzeitiges Flattern.
 4. Der Ausgang von `AX_D_FF` wird über eine Adapterverbindung an `DigitalOutput_Q1` geführt. Wenn die Geschwindigkeit > 0 ist, schaltet `DigitalOutput_Q1` den logiBUS-Ausgang Q1 ein; andernfalls bleibt Q1 aus.
 
-**Abhängigkeiten**:  
+**Abhängigkeiten**:
 
-- Die Konstanten `NumberVariable_Wheel_based_machine_speed` und `Output_Q1` müssen im Projekt als `Uebungen::const::UT::TECU::DefaultPool_TECU` bzw. `logiBUS::io::DQ::logiBUS_DO` definiert sein.  
+- Die Konstanten `NumberVariable_Wheel_based_machine_speed` und `Output_Q1` müssen im Projekt als `Uebungen::const::UT::TECU::DefaultPool_TECU` bzw. `logiBUS::io::DQ::logiBUS_DO` definiert sein.
 - Der Baustein `logiBUS_QXA` benötigt eine gültige logiBUS-Hardwarekonfiguration.
 
 ## Zusammenfassung
@@ -59,4 +59,4 @@ Nach erfolgreicher Bearbeitung versteht der Teilnehmer die Datenflussstruktur mi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

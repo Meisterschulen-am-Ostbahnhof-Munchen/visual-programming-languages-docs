@@ -9,9 +9,9 @@ The exercise `Uebung_006a5_AX` shows how a **single physical pushbutton** (`Inpu
 
 This allows a single pushbutton to:
 
-* **switch on firmly** (hold/long press → *latching*, like a switch),
-* **switch off firmly** (release after a long press),
-* **toggle** (short click → *momentary*, like a classic pushbutton).
+- **switch on firmly** (hold/long press → *latching*, like a switch),
+- **switch off firmly** (release after a long press),
+- **toggle** (short click → *momentary*, like a classic pushbutton).
 
 ## Function Blocks (FBs) Used
 
@@ -85,4 +85,4 @@ The exercise `Uebung_006a5_AX` shows how the all-in-one block `AX_T_FF_SR` can b
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

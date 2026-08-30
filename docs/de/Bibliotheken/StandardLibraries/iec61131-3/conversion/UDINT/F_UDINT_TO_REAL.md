@@ -56,10 +56,10 @@ Der Funktionsblock besitzt keine internen Zustände. Die Verarbeitung erfolgt un
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Uebung_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Uebung_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
 

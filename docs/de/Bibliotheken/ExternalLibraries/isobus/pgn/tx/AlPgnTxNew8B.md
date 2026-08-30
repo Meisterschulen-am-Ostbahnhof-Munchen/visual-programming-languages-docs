@@ -13,31 +13,31 @@ Der Funktionsblock `AlPgnTxNew8B` dient zum Senden von Daten über ein CAN-Netzw
 
 ### **Ereignis-Eingänge**
 
-*   **`INIT`**: Startet die Initialisierung des Funktionsblocks.
-*   **`install`**: Löst die Installation einer neuen Transmit-PGN (TX-PGN) aus. Die Installation wird mit den über `With` verknüpften Daten-Eingängen (`u32Pgn`, `NmDestin`, `u16DaSize`, `u8Priority`) konfiguriert.
-*   **`REQ`**: Löst den Sendevorgang für die zuvor installierte PGN aus. Die zu sendenden Daten werden über den mit `With` verknüpften Daten-Eingang `Data` bereitgestellt.
+-   **`INIT`**: Startet die Initialisierung des Funktionsblocks.
+-   **`install`**: Löst die Installation einer neuen Transmit-PGN (TX-PGN) aus. Die Installation wird mit den über `With` verknüpften Daten-Eingängen (`u32Pgn`, `NmDestin`, `u16DaSize`, `u8Priority`) konfiguriert.
+-   **`REQ`**: Löst den Sendevorgang für die zuvor installierte PGN aus. Die zu sendenden Daten werden über den mit `With` verknüpften Daten-Eingang `Data` bereitgestellt.
 
 ### **Ereignis-Ausgänge**
 
-*   **`INITO`**: Bestätigt den erfolgreichen Abschluss der Initialisierung (`INIT`).
-*   **`installO`**: Bestätigt den Abschluss der PGN-Installation. Liefert über `PGN_handle` einen Handle für die installierte PGN oder einen Fehlerwert.
-*   **`CNF`**: Bestätigt, dass die Daten erfolgreich gesendet wurden (Antwort auf `REQ`).
-*   **`dataERR`**: Zeigt einen Fehler im Zusammenhang mit den zu sendenden Daten (`Data`) an. Liefert einen Fehlercode über `dataERRC`.
-*   **`pgnERR`**: Zeigt einen Fehler im Zusammenhang mit der PGN-Installation oder -Verwendung an. Liefert einen Fehlercode über `pgnERRC`.
+-   **`INITO`**: Bestätigt den erfolgreichen Abschluss der Initialisierung (`INIT`).
+-   **`installO`**: Bestätigt den Abschluss der PGN-Installation. Liefert über `PGN_handle` einen Handle für die installierte PGN oder einen Fehlerwert.
+-   **`CNF`**: Bestätigt, dass die Daten erfolgreich gesendet wurden (Antwort auf `REQ`).
+-   **`dataERR`**: Zeigt einen Fehler im Zusammenhang mit den zu sendenden Daten (`Data`) an. Liefert einen Fehlercode über `dataERRC`.
+-   **`pgnERR`**: Zeigt einen Fehler im Zusammenhang mit der PGN-Installation oder -Verwendung an. Liefert einen Fehlercode über `pgnERRC`.
 
 ### **Daten-Eingänge**
 
-*   **`u32Pgn`** (UDINT): Die zu installierende Parameter Group Number (PGN). Gültiger Bereich: 0 bis 0x3FFFF (dezimal 262143).
-*   **`NmDestin`** (isobus::pgn::ISONETEVENT_T): Definiert den Kommunikationspartner (z.B. Broadcast, spezifische Adresse).
-*   **`u16DaSize`** (UINT): Die Datenlänge der PGN in Bytes. Gültiger Bereich: 0 bis 8.
-*   **`u8Priority`** (USINT): Die Priorität der Nachricht auf dem CAN-Bus. Bereich: 0 (höchste) bis 7 (niedrigste). Standardwert: 7.
-*   **`Data`** (isobus::pgn::CAN_MSG): Die zu sendenden Daten, strukturiert als CAN-Nachricht.
+-   **`u32Pgn`** (UDINT): Die zu installierende Parameter Group Number (PGN). Gültiger Bereich: 0 bis 0x3FFFF (dezimal 262143).
+-   **`NmDestin`** (isobus::pgn::ISONETEVENT_T): Definiert den Kommunikationspartner (z.B. Broadcast, spezifische Adresse).
+-   **`u16DaSize`** (UINT): Die Datenlänge der PGN in Bytes. Gültiger Bereich: 0 bis 8.
+-   **`u8Priority`** (USINT): Die Priorität der Nachricht auf dem CAN-Bus. Bereich: 0 (höchste) bis 7 (niedrigste). Standardwert: 7.
+-   **`Data`** (isobus::pgn::CAN_MSG): Die zu sendenden Daten, strukturiert als CAN-Nachricht.
 
 ### **Daten-Ausgänge**
 
-*   **`PGN_handle`** (INT): Ein Handle (Bezeichner) für die erfolgreich installierte PGN. Im Fehlerfall wird der Wert `HANDLE_UNVALID` ausgegeben.
-*   **`dataERRC`** (INT): Numerischer Fehlercode, der bei Auslösen des `dataERR`-Ereignisses gesetzt wird.
-*   **`pgnERRC`** (INT): Numerischer Fehlercode, der bei Auslösen des `pgnERR`-Ereignisses gesetzt wird.
+-   **`PGN_handle`** (INT): Ein Handle (Bezeichner) für die erfolgreich installierte PGN. Im Fehlerfall wird der Wert `HANDLE_UNVALID` ausgegeben.
+-   **`dataERRC`** (INT): Numerischer Fehlercode, der bei Auslösen des `dataERR`-Ereignisses gesetzt wird.
+-   **`pgnERRC`** (INT): Numerischer Fehlercode, der bei Auslösen des `pgnERR`-Ereignisses gesetzt wird.
 
 ### **Adapter**
 
@@ -51,10 +51,10 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Technische Besonderheiten
 
-*   Der Block ist für die Übertragung von Datenpaketen mit einer maximalen Länge von 8 Byte ausgelegt (typisch für klassische CAN-Frames).
-*   Er implementiert das unbestätigte Senden: Ein `CNF` bedeutet lediglich, dass die Nachricht zur Übertragung an die untere Protokollschicht übergeben wurde, nicht zwingend, dass sie den Empfänger erreicht hat.
-*   Die Fehlerbehandlung ist in zwei Kategorien unterteilt: PGN-bezogene Fehler (`pgnERR`) und Datenbezogene Fehler (`dataERR`), was die Fehlerdiagnose erleichtert.
-*   Der Block verwendet spezifische ISOBUS-Datentypen (`isobus::pgn::CAN_MSG`, `isobus::pgn::ISONETEVENT_T`).
+-   Der Block ist für die Übertragung von Datenpaketen mit einer maximalen Länge von 8 Byte ausgelegt (typisch für klassische CAN-Frames).
+-   Er implementiert das unbestätigte Senden: Ein `CNF` bedeutet lediglich, dass die Nachricht zur Übertragung an die untere Protokollschicht übergeben wurde, nicht zwingend, dass sie den Empfänger erreicht hat.
+-   Die Fehlerbehandlung ist in zwei Kategorien unterteilt: PGN-bezogene Fehler (`pgnERR`) und Datenbezogene Fehler (`dataERR`), was die Fehlerdiagnose erleichtert.
+-   Der Block verwendet spezifische ISOBUS-Datentypen (`isobus::pgn::CAN_MSG`, `isobus::pgn::ISONETEVENT_T`).
 
 ## Zustandsübersicht
 
@@ -67,19 +67,19 @@ Der Block durchläuft implizit folgende Hauptzustände:
 
 ## Anwendungsszenarien
 
-*   **Landmaschinensteuerung (ISOBUS)**: Senden von Maschinendaten (z.B. Arbeitsgeschwindigkeit, Zapfwellendrehzahl) an ein Terminal oder andere Steuergeräte im Traktor.
-*   **Nutzfahrzeugkommunikation**: Übertragung von Fahrzeugdaten (z.B. Drehmoment, Verbrauch) innerhalb eines Truck-Bussystems.
-*   **Industrielle Automatisierung**: Senden von Steuerbefehlen oder Statusinformationen über CAN-Netzwerke in Maschinen.
+-   **Landmaschinensteuerung (ISOBUS)**: Senden von Maschinendaten (z.B. Arbeitsgeschwindigkeit, Zapfwellendrehzahl) an ein Terminal oder andere Steuergeräte im Traktor.
+-   **Nutzfahrzeugkommunikation**: Übertragung von Fahrzeugdaten (z.B. Drehmoment, Verbrauch) innerhalb eines Truck-Bussystems.
+-   **Industrielle Automatisierung**: Senden von Steuerbefehlen oder Statusinformationen über CAN-Netzwerke in Maschinen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`E_SEND` (Standard 61499)**: Ein generischer Sende-Baustein. `AlPgnTxNew8B` ist spezialisiert auf ISOBUS/CAN mit PGN-Verwaltung, Priorisierung und Zieladressierung, während `E_SEND` protokollagnostisch ist und eine Adapterverbindung benötigt.
-*   **Bestätigte Sende-Bausteine**: `AlPgnTxNew8B` sendet unbestätigt (`CNF`). Für bestätigte Kommunikation (Request/Response) wären andere, spezifischere TX-PGN-Blöcke oder Protokollstapel erforderlich.
+-   **`E_SEND` (Standard 61499)**: Ein generischer Sende-Baustein. `AlPgnTxNew8B` ist spezialisiert auf ISOBUS/CAN mit PGN-Verwaltung, Priorisierung und Zieladressierung, während `E_SEND` protokollagnostisch ist und eine Adapterverbindung benötigt.
+-   **Bestätigte Sende-Bausteine**: `AlPgnTxNew8B` sendet unbestätigt (`CNF`). Für bestätigte Kommunikation (Request/Response) wären andere, spezifischere TX-PGN-Blöcke oder Protokollstapel erforderlich.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_124](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
-* [Uebung_128](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
+- [Uebung_124](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
+- [Uebung_128](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
 
 ## Fazit
 

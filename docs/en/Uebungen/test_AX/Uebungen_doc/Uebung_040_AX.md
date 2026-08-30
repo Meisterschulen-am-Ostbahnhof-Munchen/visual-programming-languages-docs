@@ -19,8 +19,8 @@ To avoid needing 8 buttons, a logic circuit was built using counters (`E_CTU`) a
 
 ![Uebung_040_AX_network](./Uebung_040_AX_network.svg)
 
-* **Button `I2`**: Controls steps 1-4. Each click increments the counter `E_CTU_0`. The demultiplexer then routes the event to the correct transition input (`S1_S2`, `S2_S3`, etc.).
-* **Button `I3`**: Controls steps 5-8 analogously.
+- **Button `I2`**: Controls steps 1-4. Each click increments the counter `E_CTU_0`. The demultiplexer then routes the event to the correct transition input (`S1_S2`, `S2_S3`, etc.).
+- **Button `I3`**: Controls steps 5-8 analogously.
 
 -----
 
@@ -43,4 +43,4 @@ This simulates a machine where the operator must manually enable each step ("ste
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -16,19 +16,19 @@ Der Baustein verzichtet auf klassische separate Ereignis- und Daten-Pins und nut
 
 ### **Ereignis-Eingänge**
 
-*   *Keine direkten Ereignis-Eingänge (gekapselt im Adapter `CLK`).*
+-   *Keine direkten Ereignis-Eingänge (gekapselt im Adapter `CLK`).*
 
 ### **Ereignis-Ausgänge**
 
-*   *Keine direkten Ereignis-Ausgänge (gekapselt im Adapter `Q`).*
+-   *Keine direkten Ereignis-Ausgänge (gekapselt im Adapter `Q`).*
 
 ### **Daten-Eingänge**
 
-*   *Keine direkten Daten-Eingänge (gekapselt im Adapter `CLK`).*
+-   *Keine direkten Daten-Eingänge (gekapselt im Adapter `CLK`).*
 
 ### **Daten-Ausgänge**
 
-*   *Keine direkten Daten-Ausgänge (gekapselt im Adapter `Q`).*
+-   *Keine direkten Daten-Ausgänge (gekapselt im Adapter `Q`).*
 
 ### **Adapter**
 
@@ -48,32 +48,32 @@ Der Baustein überwacht den logischen Zustand des Dateneingangs im Adapter `CLK`
 
 **Verhalten:**
 
-*   Wenn das Eingangssignal von 1 auf 0 wechselt, wird der Ausgang `Q.D1` für genau einen Zyklus auf TRUE gesetzt.
-*   In allen anderen Fällen (0->0, 0->1, 1->1) bleibt der Ausgang FALSE.
-*   Das Ergebnis wird über das Ereignis `Q.E1` signalisiert.
+-   Wenn das Eingangssignal von 1 auf 0 wechselt, wird der Ausgang `Q.D1` für genau einen Zyklus auf TRUE gesetzt.
+-   In allen anderen Fällen (0->0, 0->1, 1->1) bleibt der Ausgang FALSE.
+-   Das Ergebnis wird über das Ereignis `Q.E1` signalisiert.
 
 ## Technische Besonderheiten
 
-*   **Adapter-Technologie:** Durch die Verwendung des `AX`-Adapters (allgemeiner Datentyp, hier boolesch interpretiert) werden Ereignisfluss und Datenfluss gebündelt. Dies führt zu übersichtlicheren Funktionsplan-Diagrammen.
-*   **Interne Speicherung:** Der Baustein besitzt eine interne Variable `MEM` (Initialwert TRUE), um den vorherigen Zustand des Eingangssignals zu referenzieren.
-*   **Minimalistisches ECC:** Die Zustandsmaschine (ECC) besteht nur aus einem einzigen Zustand, was eine sehr schnelle und direkte Abarbeitung des Algorithmus gewährleistet.
+-   **Adapter-Technologie:** Durch die Verwendung des `AX`-Adapters (allgemeiner Datentyp, hier boolesch interpretiert) werden Ereignisfluss und Datenfluss gebündelt. Dies führt zu übersichtlicheren Funktionsplan-Diagrammen.
+-   **Interne Speicherung:** Der Baustein besitzt eine interne Variable `MEM` (Initialwert TRUE), um den vorherigen Zustand des Eingangssignals zu referenzieren.
+-   **Minimalistisches ECC:** Die Zustandsmaschine (ECC) besteht nur aus einem einzigen Zustand, was eine sehr schnelle und direkte Abarbeitung des Algorithmus gewährleistet.
 
 ## Zustandsübersicht
 
 Die Execution Control Chart (ECC) des Bausteins ist sehr einfach gehalten:
 
-*   **REQ (Zustand):** Dies ist der einzige Zustand.
-    *   **Transition:** Er wird durch das Ereignis `CLK.E1` (vom Eingangsadapter) ausgelöst.
-    *   **Aktion:** Führt den Algorithmus `REQ` aus und triggert anschließend das Ausgabeereignis `Q.E1`.
+-   **REQ (Zustand):** Dies ist der einzige Zustand.
+    -   **Transition:** Er wird durch das Ereignis `CLK.E1` (vom Eingangsadapter) ausgelöst.
+    -   **Aktion:** Führt den Algorithmus `REQ` aus und triggert anschließend das Ausgabeereignis `Q.E1`.
 
 ## Anwendungsszenarien
 
 Der **AX_FB_F_TRIG** eignet sich für diverse Steuerungsaufgaben, bei denen das "Abschalten" oder "Loslassen" erkannt werden muss:
 
-*   **Taster-Auswertung:** Erkennen, wann ein Taster losgelassen wird (negative Flanke).
-*   **Sensorik:** Auslösen einer Aktion, wenn ein Werkstück einen Sensorbereich verlässt (Lichtschranke wird frei).
-*   **Alarm-Rücksetzung:** Erkennung, wenn ein Fehlersignal nicht mehr anliegt.
-*   **Strukturierte Programmierung:** Einsatz in komplexen Anwendungen, die intensiv auf Adapter setzen, um "Spaghetti-Code" (viele einzelne Verbindungslinien) zu vermeiden.
+-   **Taster-Auswertung:** Erkennen, wann ein Taster losgelassen wird (negative Flanke).
+-   **Sensorik:** Auslösen einer Aktion, wenn ein Werkstück einen Sensorbereich verlässt (Lichtschranke wird frei).
+-   **Alarm-Rücksetzung:** Erkennung, wenn ein Fehlersignal nicht mehr anliegt.
+-   **Strukturierte Programmierung:** Einsatz in komplexen Anwendungen, die intensiv auf Adapter setzen, um "Spaghetti-Code" (viele einzelne Verbindungslinien) zu vermeiden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -91,4 +91,4 @@ Der **AX_FB_F_TRIG** ist ein essenzieller Baustein für Entwickler, die innerhal
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

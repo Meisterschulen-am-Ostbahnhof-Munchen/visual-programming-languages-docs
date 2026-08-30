@@ -17,9 +17,9 @@ Implementation of a "central off" function for multiple independent memory eleme
 
 ![Uebung_006a2_network](./Uebung_006a2_network.svg)
 
-* **2x `E_T_FF_SR`**: One for each light channel.
-* **`I1` & `I2`**: Buttons for individually switching the channels.
-* **`I3`**: Shared Reset Button.
+- **2x `E_T_FF_SR`**: One for each light channel.
+- **`I1` & `I2`**: Buttons for individually switching the channels.
+- **`I3`**: Shared Reset Button.
 
 ------
 
@@ -27,9 +27,9 @@ Implementation of a "central off" function for multiple independent memory eleme
 
 The logic uses the fan-out principle for events:
 
-* `I1` is connected to `CLK` of flip-flop 1.
-* `I2` is connected to `CLK` of flip-flop 2.
-* `I3` (Reset) is connected to the `R` inputs of **both** flip-flops.
+- `I1` is connected to `CLK` of flip-flop 1.
+- `I2` is connected to `CLK` of flip-flop 2.
+- `I3` (Reset) is connected to the `R` inputs of **both** flip-flops.
 
 Pressing `I3` immediately turns off all lamps in the system, regardless of their previous state.
 

@@ -26,9 +26,9 @@ The initial values of all fields are set to the constant ``ID_NULL``, indicating
 
 ## Technical Features
 
-* **Initialization:** All member variables are initialized with the default value `ID_NULL`. This ensures that the structure starts in a defined, neutral state before specific IDs are assigned.
-* **Type Safety:** Using a structured data type instead of individual, loosely coupled variables improves code maintainability and readability.
-* **Compilation Note:** The data type is defined in the package `logiBUS::utils::sequence::schieber` and imports the constant `ID_NULL` from the `isobus::UT::Q::const::IDs` namespace.
+- **Initialization:** All member variables are initialized with the default value `ID_NULL`. This ensures that the structure starts in a defined, neutral state before specific IDs are assigned.
+- **Type Safety:** Using a structured data type instead of individual, loosely coupled variables improves code maintainability and readability.
+- **Compilation Note:** The data type is defined in the package `logiBUS::utils::sequence::schieber` and imports the constant `ID_NULL` from the `isobus::UT::Q::const::IDs` namespace.
 
 ## State Overview
 
@@ -42,8 +42,8 @@ The structure explicitly maps the following five states of a slider:
 
 ## Application Scenarios
 
-* **State Management:** A higher-level control block can maintain an instance of this structure to centrally manage the currently valid object IDs for all slide states.
-* **Parameterization:** The structure can be passed as a configurable parameter to a function block, which then selects the corresponding ID from the structure based on its internal state and forwards it, for example, to a visualization system. * **Visualization:** An HMI or SCADA system can use the IDs stored in the structure to update the slider's graphical symbol according to its current state (e.g., color, symbol).
+- **State Management:** A higher-level control block can maintain an instance of this structure to centrally manage the currently valid object IDs for all slide states.
+- **Parameterization:** The structure can be passed as a configurable parameter to a function block, which then selects the corresponding ID from the structure based on its internal state and forwards it, for example, to a visualization system. * **Visualization:** An HMI or SCADA system can use the IDs stored in the structure to update the slider's graphical symbol according to its current state (e.g., color, symbol).
 
 ## ⚖️ Comparison with similar blocks
 
@@ -55,4 +55,4 @@ The `SchieberStruct` data type is a useful construct for the structured and type
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

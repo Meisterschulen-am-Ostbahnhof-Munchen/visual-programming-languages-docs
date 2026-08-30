@@ -40,7 +40,7 @@ Keine.
 
 ## Funktionsweise
 
-Der Block prüft bei jedem REQ-Ereignis den aktuellen BYTE-Eingangswert **IN** gegen eine vorgegebene Konstante **VALID_SIGNAL_B** (aus dem Import `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`).  
+Der Block prüft bei jedem REQ-Ereignis den aktuellen BYTE-Eingangswert **IN** gegen eine vorgegebene Konstante **VALID_SIGNAL_B** (aus dem Import `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`).
 Die Logik im Algorithmus lautet:
 
 ```structuredtext
@@ -60,9 +60,9 @@ Nach der Berechnung wird das Ereignis **CNF** ausgegeben. Der Initialwert von **
 
 ## Technische Besonderheiten
 
-- Der Filter basiert auf **zwei externen Konstanten** aus der Bibliothek `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`:  
-  - `NOT_AVAILABLE_B` – definiert den Wert für „Signal nicht verfügbar“ (Initialwert von IN).  
-  - `VALID_SIGNAL_B` – definiert die obere Grenze für gültige Signale.  
+- Der Filter basiert auf **zwei externen Konstanten** aus der Bibliothek `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`:
+  - `NOT_AVAILABLE_B` – definiert den Wert für „Signal nicht verfügbar“ (Initialwert von IN).
+  - `VALID_SIGNAL_B` – definiert die obere Grenze für gültige Signale.
 - Die Umwandlung `BYTE_TO_USINT` stellt sicher, dass die Werte als Zahlen 0…255 verglichen werden können.
 - Der Block ist als **SimpleFB** mit nur einem Zustand (**REQ**) realisiert – keine Zustandsmaschine mit mehreren Schritten.
 - Lizenz: Eclipse Public License 2.0.
@@ -97,4 +97,4 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

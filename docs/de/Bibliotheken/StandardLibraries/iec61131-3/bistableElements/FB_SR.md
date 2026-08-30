@@ -73,8 +73,8 @@ Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
-* [Uebung_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
+- [Uebung_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
+- [Uebung_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
 
 ## Fazit
 

@@ -11,22 +11,22 @@ Der Funktionsblock **AULI_SPLIT_9** dient als Verteiler für den unidirektionale
 
 ### Ereignis-Eingänge
 
-Keine Ereignis-Eingänge vorhanden.  
+Keine Ereignis-Eingänge vorhanden.
 Die Weiterleitung erfolgt rein datengetrieben.
 
 ### Ereignis-Ausgänge
 
-Keine Ereignis-Ausgänge vorhanden.  
+Keine Ereignis-Ausgänge vorhanden.
 Der Baustein erzeugt keine Steuerereignisse.
 
 ### Daten-Eingänge
 
-Keine Daten-Eingänge vorhanden.  
+Keine Daten-Eingänge vorhanden.
 Der gesamte Datenaustausch erfolgt über den Adapter **IN**.
 
 ### Daten-Ausgänge
 
-Keine Daten-Ausgänge vorhanden.  
+Keine Daten-Ausgänge vorhanden.
 Die Ausgabe der Daten erfolgt ausschließlich über die Adapter **OUT1** bis **OUT9**.
 
 ### Adapter
@@ -73,4 +73,4 @@ Der **AULI_SPLIT_9** ist ein einfacher, aber effektiver Verteilerbaustein für d
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

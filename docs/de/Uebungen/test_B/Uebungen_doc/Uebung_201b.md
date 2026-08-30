@@ -33,24 +33,24 @@ Die SubApp verwendet folgende Funktionsbausteine:
 
 ## Programmablauf und Verbindungen
 
-1. **Eingangssignale**  
-   Die digitalen Eingänge `DigitalInput_I1` und `DigitalInput_I2` lesen die physikalischen Signale der Taster oder Sensoren.  
+1. **Eingangssignale**
+   Die digitalen Eingänge `DigitalInput_I1` und `DigitalInput_I2` lesen die physikalischen Signale der Taster oder Sensoren.
    Die Ereignisausgänge `.IND` lösen die entsprechenden Ereignisseingänge des Interlock-Bausteins aus:
 
    - `I1.IND` → `ILOCK.EI_UP`
    - `I2.IND` → `ILOCK.EI_DOWN`
 
-2. **Interlock-Logik**  
-   Der Baustein `ILOCK` wertet die Daten-Eingänge `DI_UP` und `DI_DOWN` aus. Er stellt sicher, dass nie beide Ausgänge `DO_UP` und `DO_DOWN` gleichzeitig **TRUE** werden.  
+2. **Interlock-Logik**
+   Der Baustein `ILOCK` wertet die Daten-Eingänge `DI_UP` und `DI_DOWN` aus. Er stellt sicher, dass nie beide Ausgänge `DO_UP` und `DO_DOWN` gleichzeitig **TRUE** werden.
    Die Ereignisse `EO_UP` und `EO_DOWN` signalisieren, wenn eine Richtung aktiviert wird.
 
-3. **Ausgangsansteuerung**  
-   - `ILOCK.EO_UP` und das Daten-Signal `DO_UP` steuern den Ausgang **Rechtslauf** (Q5).  
-   - `ILOCK.EO_DOWN` und `DO_DOWN` steuern den Ausgang **Linkslauf** (Q6).  
-   - Beide Ereignisse `EO_UP` und `EO_DOWN` sind mit dem ODER-Baustein `OR_2_BOOL` verbunden. Sobald eine Richtung aktiv ist, triggert der ODER-Baustein den **LowSide_Treiber** (Q56).  
+3. **Ausgangsansteuerung**
+   - `ILOCK.EO_UP` und das Daten-Signal `DO_UP` steuern den Ausgang **Rechtslauf** (Q5).
+   - `ILOCK.EO_DOWN` und `DO_DOWN` steuern den Ausgang **Linkslauf** (Q6).
+   - Beide Ereignisse `EO_UP` und `EO_DOWN` sind mit dem ODER-Baustein `OR_2_BOOL` verbunden. Sobald eine Richtung aktiv ist, triggert der ODER-Baustein den **LowSide_Treiber** (Q56).
    - Gleichzeitig werden die Daten-Signale `DO_UP` und `DO_DOWN` auf die Eingänge `IN1` und `IN2` des ODER-Bausteins geführt. Der Ausgang `OR_2_BOOL.OUT` speist den Daten-Eingang des LowSide_Treibers.
 
-4. **Zusammenhang**  
+4. **Zusammenhang**
    Der Low-Side Treiber wird nur dann eingeschaltet, wenn entweder Rechts- oder Linkslauf aktiv ist. Dadurch wird die Stromversorgung des Motors nur in diesen Zuständen freigegeben.
 
 **Lernziele:**
@@ -72,4 +72,4 @@ Die Übung demonstriert eine sichere Ansteuerung eines Motors mit Rechts-/Linksl
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

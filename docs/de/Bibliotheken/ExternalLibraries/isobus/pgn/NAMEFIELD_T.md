@@ -41,9 +41,9 @@ Der Datentyp `NAMEFIELD_T` ist eine passive Datenstruktur. Seine Hauptaufgabe is
 
 ## Technische Besonderheiten
 
-*   **Bitgenaue Abbildung:** Die Struktur bildet das binäre Layout des ISO-NAME-Feldes direkt ab, was eine effiziente Serialisierung und Deserialisierung für die Kommunikation über das CAN-Bus-Protokoll ermöglicht.
-*   **Initialwerte:** Die gewählten Initialwerte (maximale Werte für die jeweiligen Datentypen) signalisieren klar einen nicht initialisierten oder Platzhalter-Zustand.
-*   **ISOBUS-Konformität:** Die Benennung und Aufteilung der Felder folgt strikt der ISO 11783-5 Spezifikation und den erweiterten IFM-Konventionen.
+-   **Bitgenaue Abbildung:** Die Struktur bildet das binäre Layout des ISO-NAME-Feldes direkt ab, was eine effiziente Serialisierung und Deserialisierung für die Kommunikation über das CAN-Bus-Protokoll ermöglicht.
+-   **Initialwerte:** Die gewählten Initialwerte (maximale Werte für die jeweiligen Datentypen) signalisieren klar einen nicht initialisierten oder Platzhalter-Zustand.
+-   **ISOBUS-Konformität:** Die Benennung und Aufteilung der Felder folgt strikt der ISO 11783-5 Spezifikation und den erweiterten IFM-Konventionen.
 
 ## Zustandsübersicht
 
@@ -53,17 +53,17 @@ Da es sich um einen Datentyp und nicht um einen Funktionsbaustein handelt, exist
 
 Der Datentyp `NAMEFIELD_T` wird primär in ISOBUS-konformen Steuerungsapplikationen verwendet, beispielsweise in der Land- und Forsttechnik oder im Baumaschinenbereich.
 
-*   **Geräteidentifikation:** Als Teil von Nachrichten (z.B. im Address Claim Prozess) zur Identifikation eines Teilnehmers im Netzwerk.
-*   **Datenhaltung:** Zur Speicherung der eigenen Geräteidentität innerhalb einer ECU-Software.
-*   **Filterung:** Zur Konfiguration von Nachrichtenfiltern basierend auf Geräteklasse, Funktion oder Hersteller.
-*   **Diagnose:** Zur eindeutigen Identifikation von Geräten in Diagnose- und Konfigurationstools.
+-   **Geräteidentifikation:** Als Teil von Nachrichten (z.B. im Address Claim Prozess) zur Identifikation eines Teilnehmers im Netzwerk.
+-   **Datenhaltung:** Zur Speicherung der eigenen Geräteidentität innerhalb einer ECU-Software.
+-   **Filterung:** Zur Konfiguration von Nachrichtenfiltern basierend auf Geräteklasse, Funktion oder Hersteller.
+-   **Diagnose:** Zur eindeutigen Identifikation von Geräten in Diagnose- und Konfigurationstools.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu Funktionsbausteinen (FBs) wie `E_SR` oder `E_CYCLE` ist `NAMEFIELD_T` ein reiner **Datentyp** (Structured Data Type). Er enthält keine Algorithmen, Ereignisse oder einen ausgeführten Code.
 
-*   **Ähnlichkeit zu anderen STRUCTs:** Er ist vergleichbar mit anderen strukturierten Datentypen in 4diac (z.B. für komplexe Messwerte), jedoch spezialisiert auf das ISOBUS-Protokoll.
-*   **Unterschied zu Basis-Datentypen:** Während Basistypen wie `INT` oder `BOOL` einzelne Werte halten, fasst `NAMEFIELD_T` mehrere logisch zusammengehörige Werte zu einer Einheit zusammen.
+-   **Ähnlichkeit zu anderen STRUCTs:** Er ist vergleichbar mit anderen strukturierten Datentypen in 4diac (z.B. für komplexe Messwerte), jedoch spezialisiert auf das ISOBUS-Protokoll.
+-   **Unterschied zu Basis-Datentypen:** Während Basistypen wie `INT` oder `BOOL` einzelne Werte halten, fasst `NAMEFIELD_T` mehrere logisch zusammengehörige Werte zu einer Einheit zusammen.
 
 ## Fazit
 
@@ -73,4 +73,4 @@ Der Datentyp `NAMEFIELD_T` ist ein essentielles Hilfsmittel für die Entwicklung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

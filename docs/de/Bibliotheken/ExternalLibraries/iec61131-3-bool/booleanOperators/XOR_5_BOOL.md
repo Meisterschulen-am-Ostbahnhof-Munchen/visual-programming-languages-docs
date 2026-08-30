@@ -13,23 +13,23 @@ Der Funktionsblock `XOR_5_BOOL` ist ein Standardbaustein zur Berechnung der logi
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Normal Execution Request):** Löst die Berechnung der XOR-Verknüpfung aus. Das Ereignis ist mit allen fünf Dateneingängen (`IN1` bis `IN5`) verknüpft.
+-   **REQ (Normal Execution Request):** Löst die Berechnung der XOR-Verknüpfung aus. Das Ereignis ist mit allen fünf Dateneingängen (`IN1` bis `IN5`) verknüpft.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Execution Confirmation):** Signalisiert den Abschluss der Berechnung. Dieses Ereignis ist mit dem Datenausgang `OUT` verknüpft und liefert das Ergebnis.
+-   **CNF (Execution Confirmation):** Signalisiert den Abschluss der Berechnung. Dieses Ereignis ist mit dem Datenausgang `OUT` verknüpft und liefert das Ergebnis.
 
 ### **Daten-Eingänge**
 
-*   **IN1 (XOR input 1):** Erster boolescher Operand (BOOL).
-*   **IN2 (XOR input 2):** Zweiter boolescher Operand (BOOL).
-*   **IN3 (XOR input 3):** Dritter boolescher Operand (BOOL).
-*   **IN4 (XOR input 4):** Vierter boolescher Operand (BOOL).
-*   **IN5 (XOR input 5):** Fünfter boolescher Operand (BOOL).
+-   **IN1 (XOR input 1):** Erster boolescher Operand (BOOL).
+-   **IN2 (XOR input 2):** Zweiter boolescher Operand (BOOL).
+-   **IN3 (XOR input 3):** Dritter boolescher Operand (BOOL).
+-   **IN4 (XOR input 4):** Vierter boolescher Operand (BOOL).
+-   **IN5 (XOR input 5):** Fünfter boolescher Operand (BOOL).
 
 ### **Daten-Ausgänge**
 
-*   **OUT (XOR result):** Das boolesche Ergebnis der XOR-Verknüpfung aller fünf Eingänge (BOOL).
+-   **OUT (XOR result):** Das boolesche Ergebnis der XOR-Verknüpfung aller fünf Eingänge (BOOL).
 
 ### **Adapter**
 
@@ -44,9 +44,9 @@ Das Ergebnis ist genau dann `TRUE` (1), wenn eine ungerade Anzahl der Eingänge 
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist durch das Attribut `eclipse4diac::core::GenericClassName` als generische Implementierung (`'GEN_XOR'`) gekennzeichnet. Dies ermöglicht eine flexible Wiederverwendung der Kernlogik.
-*   **Ereignisgesteuert:** Die Berechnung erfolgt ausschließlich ereignisgesteuert durch `REQ` und nicht zyklisch.
-*   **Fünf Eingänge:** Im Gegensatz zu Standard-XOR-Bausteinen mit typischerweise zwei Eingängen bietet dieser Block fünf fest verdrahtete Eingänge, was die Verkettung mehrerer Blöcke für eine höhere Anzahl von Operanden erspart.
+-   **Generischer Baustein:** Der Block ist durch das Attribut `eclipse4diac::core::GenericClassName` als generische Implementierung (`'GEN_XOR'`) gekennzeichnet. Dies ermöglicht eine flexible Wiederverwendung der Kernlogik.
+-   **Ereignisgesteuert:** Die Berechnung erfolgt ausschließlich ereignisgesteuert durch `REQ` und nicht zyklisch.
+-   **Fünf Eingänge:** Im Gegensatz zu Standard-XOR-Bausteinen mit typischerweise zwei Eingängen bietet dieser Block fünf fest verdrahtete Eingänge, was die Verkettung mehrerer Blöcke für eine höhere Anzahl von Operanden erspart.
 
 ## Zustandsübersicht
 
@@ -54,15 +54,15 @@ Der Baustein besitzt keinen internen Zustand (speicherfrei). Seine Ausgabe häng
 
 ## Anwendungsszenarien
 
-*   **Paritätsprüfung:** Überprüfung, ob eine ungerade Anzahl von Bedingungen (z.B. Fehlersignalen, Grenzwertüberschreitungen) in einer Gruppe von fünf Signalen aktiv ist.
-*   **Steuerungslogik:** Implementierung von speziellen Verknüpfungslogiken in SPS-Programmen, bei denen genau eine oder drei oder fünf von fünf möglichen Einzelbedingungen erfüllt sein müssen.
-*   **Signalvergleich:** Feststellen von Ungleichheit in einer Gruppe von fünf binären Signalen.
+-   **Paritätsprüfung:** Überprüfung, ob eine ungerade Anzahl von Bedingungen (z.B. Fehlersignalen, Grenzwertüberschreitungen) in einer Gruppe von fünf Signalen aktiv ist.
+-   **Steuerungslogik:** Implementierung von speziellen Verknüpfungslogiken in SPS-Programmen, bei denen genau eine oder drei oder fünf von fünf möglichen Einzelbedingungen erfüllt sein müssen.
+-   **Signalvergleich:** Feststellen von Ungleichheit in einer Gruppe von fünf binären Signalen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Standard XOR (2 Eingänge):** Bibliotheksbausteine bieten oft nur die XOR-Verknüpfung für zwei Operanden. Für fünf Operanden müssten mehrere dieser Blöcke verkettet werden (z.B. `((IN1 XOR IN2) XOR (IN3 XOR IN4)) XOR IN5`). `XOR_5_BOOL` fasst diese Logik in einem einzigen, übersichtlichen Block zusammen. Siehe: [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)
-*   **ODER / UND Bausteine:** Während ODER (`OR`) `TRUE` bei mindestens einem `TRUE`-Eingang liefert und UND (`AND`) nur bei allen `TRUE`-Eingängen, reagiert XOR spezifisch auf eine ungerade Anzahl von `TRUE`-Werten.
-*   **Generische XOR-Blöcke:** Es könnten generische Blöcke existieren, die eine variable Anzahl von Eingängen über Arrays oder wiederholte Eingänge handhaben. `XOR_5_BOOL` ist eine fest konfigurierte, spezifische Instanz für genau fünf Eingänge.
+-   **Standard XOR (2 Eingänge):** Bibliotheksbausteine bieten oft nur die XOR-Verknüpfung für zwei Operanden. Für fünf Operanden müssten mehrere dieser Blöcke verkettet werden (z.B. `((IN1 XOR IN2) XOR (IN3 XOR IN4)) XOR IN5`). `XOR_5_BOOL` fasst diese Logik in einem einzigen, übersichtlichen Block zusammen. Siehe: [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)
+-   **ODER / UND Bausteine:** Während ODER (`OR`) `TRUE` bei mindestens einem `TRUE`-Eingang liefert und UND (`AND`) nur bei allen `TRUE`-Eingängen, reagiert XOR spezifisch auf eine ungerade Anzahl von `TRUE`-Werten.
+-   **Generische XOR-Blöcke:** Es könnten generische Blöcke existieren, die eine variable Anzahl von Eingängen über Arrays oder wiederholte Eingänge handhaben. `XOR_5_BOOL` ist eine fest konfigurierte, spezifische Instanz für genau fünf Eingänge.
 
 ## Fazit
 
@@ -72,4 +72,4 @@ Der `XOR_5_BOOL` Funktionsblock ist ein spezialisierter und effizienter Baustein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

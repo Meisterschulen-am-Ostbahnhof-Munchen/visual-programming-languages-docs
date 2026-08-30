@@ -13,27 +13,27 @@ Der Funktionsblock `AUDI_LT` realisiert einen „Kleiner-als“-Vergleich (less 
 
 Über die Adapter-Sockets werden Ereignisse von außen an den FB weitergeleitet:
 
-*   `IN1.E1` – Ereignis, das die Vergleichsoperation anstößt, sobald ein neuer Wert an `IN1` anliegt.
-*   `IN2.E1` – Ereignis, das ebenfalls die Vergleichsoperation anstößt, sobald ein neuer Wert an `IN2` anliegt.
+-   `IN1.E1` – Ereignis, das die Vergleichsoperation anstößt, sobald ein neuer Wert an `IN1` anliegt.
+-   `IN2.E1` – Ereignis, das ebenfalls die Vergleichsoperation anstößt, sobald ein neuer Wert an `IN2` anliegt.
 
 ### **Ereignis-Ausgänge**
 
-*   `OUT.E1` – Ereignis, das nach Abschluss des Vergleichs ausgegeben wird und signalisiert, dass das Ergebnis am Datenausgang `OUT.D1` gültig ist.
+-   `OUT.E1` – Ereignis, das nach Abschluss des Vergleichs ausgegeben wird und signalisiert, dass das Ergebnis am Datenausgang `OUT.D1` gültig ist.
 
 ### **Daten-Eingänge**
 
-*   `IN1.D1` – Erster zu vergleichender Wert (Daten vom Typ des Adapters `AUDI`).
-*   `IN2.D1` – Zweiter zu vergleichender Wert (Daten vom Typ des Adapters `AUDI`).
+-   `IN1.D1` – Erster zu vergleichender Wert (Daten vom Typ des Adapters `AUDI`).
+-   `IN2.D1` – Zweiter zu vergleichender Wert (Daten vom Typ des Adapters `AUDI`).
 
 ### **Daten-Ausgänge**
 
-*   `OUT.D1` – Ergebnis des Vergleichs: `TRUE`, wenn `IN1 < IN2`, sonst `FALSE` (Daten vom Typ des Adapters `AX`).
+-   `OUT.D1` – Ergebnis des Vergleichs: `TRUE`, wenn `IN1 < IN2`, sonst `FALSE` (Daten vom Typ des Adapters `AX`).
 
 ### **Adapter**
 
-*   `IN1` – Socket (Eingang) vom Typ `adapter::types::unidirectional::AUDI`. Liefert ein Ereignis (`E1`) und einen Datenwert (`D1`) an den FB.
-*   `IN2` – Socket (Eingang) vom gleichen Typ `AUDI`. Stellt den zweiten Eingangswert bereit.
-*   `OUT` – Plug (Ausgang) vom Typ `adapter::types::unidirectional::AX`. Übernimmt das Ergebnisereignis (`E1`) und den Ergebnis-Datenwert (`D1`) zur Weitergabe an nachfolgende Bausteine.
+-   `IN1` – Socket (Eingang) vom Typ `adapter::types::unidirectional::AUDI`. Liefert ein Ereignis (`E1`) und einen Datenwert (`D1`) an den FB.
+-   `IN2` – Socket (Eingang) vom gleichen Typ `AUDI`. Stellt den zweiten Eingangswert bereit.
+-   `OUT` – Plug (Ausgang) vom Typ `adapter::types::unidirectional::AX`. Übernimmt das Ergebnisereignis (`E1`) und den Ergebnis-Datenwert (`D1`) zur Weitergabe an nachfolgende Bausteine.
 
 ## Funktionsweise
 

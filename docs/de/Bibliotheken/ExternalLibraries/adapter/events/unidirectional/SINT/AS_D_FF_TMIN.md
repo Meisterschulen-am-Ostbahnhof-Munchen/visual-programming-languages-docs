@@ -44,9 +44,9 @@ Die Adapter vom Typ `AS` bieten je einen Ereignis‑Ein‑/Ausgang (E1) und eine
 
 Nach einer erfolgreichen Initialisierung (INIT mit gültigem `Tmin`) arbeitet der Block wie ein getaktetes D‑Flipflop mit Zeitfilter:
 
-* Ein Ereignis am Adaptereingang **I.E1** wird als Takt (CLK) interpretiert.
-* Der Datenwert **I.D1** wird beim Eintreffen von I.E1 übernommen, **sofern der zeitliche Abstand zum letzten CLK‑Ereignis mindestens `Tmin` beträgt**. Andernfalls wird das Ereignis ignoriert.
-* Bei erfolgreicher Übernahme wird der gespeicherte Wert am Datenausgang **Q.D1** ausgegeben und ein Ereignis **Q.E1** ausgelöst.
+- Ein Ereignis am Adaptereingang **I.E1** wird als Takt (CLK) interpretiert.
+- Der Datenwert **I.D1** wird beim Eintreffen von I.E1 übernommen, **sofern der zeitliche Abstand zum letzten CLK‑Ereignis mindestens `Tmin` beträgt**. Andernfalls wird das Ereignis ignoriert.
+- Bei erfolgreicher Übernahme wird der gespeicherte Wert am Datenausgang **Q.D1** ausgegeben und ein Ereignis **Q.E1** ausgelöst.
 
 Die Zeitfilterung wird durch den intern verwendeten Baustein `E_D_FF_ANY_TMIN` realisiert, der das Taktereignis verzögert oder verwirft, falls die Mindestzeit nicht eingehalten wird.
 

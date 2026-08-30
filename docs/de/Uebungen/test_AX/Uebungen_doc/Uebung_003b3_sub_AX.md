@@ -19,12 +19,12 @@ In dieser Sub-Applikation werden spezifische Funktionsbausteine instanziiert und
 - **Typ**: `Funk::io::DI::Funk_IXA`
 - **Verwendete interne FBs**:
     - **Bausteinname**: IXA
-        - **Parameter**: 
+        - **Parameter**:
             - `QI` = `TRUE`
             - `PARAMS` = `""` (Attribut: Visible = false)
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `Input` (Verbunden mit dem SubApp-Eingang `Input`)
-- **Funktionsweise**: 
+- **Funktionsweise**:
   Dieser Baustein repräsentiert die Eingangsseite der Adapterverbindung. Er nimmt die Konfiguration des Eingangs (`Input`) entgegen und stellt die Schnittstelle für das Eingangssignal bereit.
 
 ### Sub-Bausteine: QXA
@@ -32,12 +32,12 @@ In dieser Sub-Applikation werden spezifische Funktionsbausteine instanziiert und
 - **Typ**: `DataPanel::io::MI::DQ::DataPanel_MI_QXA`
 - **Verwendete interne FBs**:
     - **Bausteinname**: QXA
-        - **Parameter**: 
+        - **Parameter**:
             - `QI` = `TRUE`
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `u8SAMember` (Verbunden mit dem SubApp-Eingang `u8SAMember`)
             - `Output` (Verbunden mit dem SubApp-Eingang `Output`)
-- **Funktionsweise**: 
+- **Funktionsweise**:
   Dieser Baustein repräsentiert die Ausgangsseite. Er empfängt die Adressierung (`u8SAMember`) und die Ausgangskonfiguration (`Output`) für das DataPanel und steuert den entsprechenden physischen Ausgang an.
 
 ## Programmablauf und Verbindungen
@@ -64,5 +64,4 @@ Die `Uebung_003b3_sub_AX` ist ein generischer Verbindungsbaustein, der einen dig
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b3_AX](Uebung_003b3_AX.md)
-
+- [Uebung_003b3_AX](Uebung_003b3_AX.md)

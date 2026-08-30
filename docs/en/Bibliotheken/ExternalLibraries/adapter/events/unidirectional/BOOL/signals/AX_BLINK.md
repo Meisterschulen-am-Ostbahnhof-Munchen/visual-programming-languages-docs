@@ -39,7 +39,7 @@ Flashing displays.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020f3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
+- [Exercise_020f3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
 
 ## Conclusion
 

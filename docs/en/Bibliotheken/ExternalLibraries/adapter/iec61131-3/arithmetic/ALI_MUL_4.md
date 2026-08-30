@@ -33,16 +33,16 @@ There are no direct data outputs. The result is provided via the output adapter.
 
 The sockets serve as inputs for the values to be multiplied.
 
-* **IN1** (Type: `adapter::types::unidirectional::ALI`): First factor for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::ALI`): Second factor for multiplication.
-* **IN3** (Type: `adapter::types::unidirectional::ALI`): Third factor for multiplication.
-* **IN4** (Type: `adapter::types::unidirectional::ALI`): Fourth factor for multiplication.
+- **IN1** (Type: `adapter::types::unidirectional::ALI`): First factor for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::ALI`): Second factor for multiplication.
+- **IN3** (Type: `adapter::types::unidirectional::ALI`): Third factor for multiplication.
+- **IN4** (Type: `adapter::types::unidirectional::ALI`): Fourth factor for multiplication.
 
 #### **Plugs (Output Adapters)**
 
 The plug outputs the calculated result.
 
-* **OUT** (Type: `adapter::types::unidirectional::ALI`): The calculated product of the four input adapters.
+- **OUT** (Type: `adapter::types::unidirectional::ALI`): The calculated product of the four input adapters.
 
 ---
 
@@ -58,8 +58,8 @@ The result and the associated update event are then output via the output adapte
 
 ## Technical Features
 
-* **Generic Function Block:** The attribute `GenericClassName` with the value `GEN_ALI_MUL` makes the function block data type-independent. Depending on the implementation of the `ALI` adapters, it can process various numeric data types (e.g., `INT`, `REAL`, `LREAL`).
-* **Adapter Coupling:** By using unidirectional `ALI` adapters, clean encapsulation of data and trigger events is achieved, reducing complexity in system design.
+- **Generic Function Block:** The attribute `GenericClassName` with the value `GEN_ALI_MUL` makes the function block data type-independent. Depending on the implementation of the `ALI` adapters, it can process various numeric data types (e.g., `INT`, `REAL`, `LREAL`).
+- **Adapter Coupling:** By using unidirectional `ALI` adapters, clean encapsulation of data and trigger events is achieved, reducing complexity in system design.
 
 ---
 
@@ -71,9 +71,9 @@ The function block is stateless (stateless, purely combinatorial processing). Th
 
 ## Application Scenarios
 
-* **Scaling and Weighting:** Calculation of composite scaling factors in process automation.
-* **Volume and Mass Calculation:** Continuous calculation of physical quantities (e.g., length × width × height × density).
-* **Multi-Stage Gain Control:** Cascaded signal amplification in measurement and control technology.
+- **Scaling and Weighting:** Calculation of composite scaling factors in process automation.
+- **Volume and Mass Calculation:** Continuous calculation of physical quantities (e.g., length × width × height × density).
+- **Multi-Stage Gain Control:** Cascaded signal amplification in measurement and control technology.
 
 --
 

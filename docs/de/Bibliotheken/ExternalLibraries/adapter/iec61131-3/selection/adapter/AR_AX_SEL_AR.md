@@ -8,7 +8,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsbaustein `AR_AX_SEL_AR` dient der binären Auswahl (Selektion) zwischen zwei analogen Eingangssignalen, die über Adapter übertragen werden. Basierend auf dem Zustand eines Auswahlsignals (Selector) wird einer der beiden Eingänge auf den Ausgang durchgeschaltet. 
+Der Funktionsbaustein `AR_AX_SEL_AR` dient der binären Auswahl (Selektion) zwischen zwei analogen Eingangssignalen, die über Adapter übertragen werden. Basierend auf dem Zustand eines Auswahlsignals (Selector) wird einer der beiden Eingänge auf den Ausgang durchgeschaltet.
 
 Durch die konsequente Verwendung von Adaptern anstelle von klassischen diskreten Daten- und Ereignispins wird die Komplexität der Verkabelung im übergeordneten IEC 61499 Applikationsdiagramm signifikant reduziert.
 
@@ -36,16 +36,16 @@ Da dieser Funktionsbaustein vollständig auf adapterbasierte Kommunikation setzt
 
 #### **Sockets (Eingangsschnittstellen)**
 
-* **G** (Typ: `adapter::types::unidirectional::AX`):
+- **G** (Typ: `adapter::types::unidirectional::AX`):
   Der Auswahladapter (Selector). Das hier anliegende Signal steuert, welcher der beiden Eingänge (`IN0` oder `IN1`) an den Ausgang weitergeleitet wird.
-* **IN0** (Typ: `adapter::types::unidirectional::AR`):
+- **IN0** (Typ: `adapter::types::unidirectional::AR`):
   Der erste auswählbare Signal-Eingang. Dieser Wert wird an den Ausgang `OUT` weitergegeben, wenn der Selektor `G` den Zustand `FALSE` (0) aufweist.
-* **IN1** (Typ: `adapter::types::unidirectional::AR`):
+- **IN1** (Typ: `adapter::types::unidirectional::AR`):
   Der zweite auswählbare Signal-Eingang. Dieser Wert wird an den Ausgang `OUT` weitergegeben, wenn der Selektor `G` den Zustand `TRUE` (1) aufweist.
 
 #### **Plugs (Ausgangsschnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AR`):
+- **OUT** (Typ: `adapter::types::unidirectional::AR`):
   Der selektierte Ausgangsadapter. Er liefert den Wert des jeweils aktiven Eingangs inklusive des dazugehörigen Aktualisierungsereignisses.
 
 ---
@@ -60,8 +60,8 @@ Im Inneren des Funktionsbausteins `AR_AX_SEL_AR` befindet sich ein Netzwerk aus 
    Die Werte der analogen Eingänge werden über Konvertierungsbausteine des Typs `F_MOVE` (konfiguriert auf den Datentyp `REAL`) geleitet, um eine konsistente Datenverarbeitung zu gewährleisten.
 3. **Auswahllogik (Multiplexing):**
    Der Standard-Auswahlbaustein `F_SEL` übernimmt die eigentliche Selektion:
-   * Ist der Wert von `G.D1` gleich `FALSE`, wird das Signal von `IN0` an den Ausgang weitergeleitet.
-   * Ist der Wert von `G.D1` gleich `TRUE`, wird das Signal von `IN1` weitergeleitet.
+   - Ist der Wert von `G.D1` gleich `FALSE`, wird das Signal von `IN0` an den Ausgang weitergeleitet.
+   - Ist der Wert von `G.D1` gleich `TRUE`, wird das Signal von `IN1` weitergeleitet.
 4. **Ausgabe:**
    Das ausgewählte Signal wird über einen weiteren `F_MOVE`-Baustein an das Ausgangs-Flip-Flop `E_D_FF_ANY_OUT` übergeben. Dieses generiert das Ausgangsereignis `E1` am Plug `OUT` und stellt den ausgewählten Wert an `OUT.D1` bereit.
 
@@ -69,9 +69,9 @@ Im Inneren des Funktionsbausteins `AR_AX_SEL_AR` befindet sich ein Netzwerk aus 
 
 ## Technische Besonderheiten
 
-* **Unidirektionale Adapterstruktur:** Der Baustein nutzt unidirektionale Adaptertypen (`AR` für analoge Werte, `AX` für binäre Werte), was eine klare und störungsfreie Signalrichtung im System gewährleistet.
-* **Typkonsistenz:** Intern arbeitet der Baustein mit dem Datentyp `REAL` für die analogen Signale (konfiguriert über die Attribute der `F_MOVE`-Bausteine).
-* **Ereignisgesteuert:** Eine Neuberechnung und Aktualisierung des Ausgangs erfolgt sofort, sobald sich entweder die Selektion `G` ändert oder neue Werte an den Eingängen `IN0` bzw. `IN1` signalisiert werden.
+- **Unidirektionale Adapterstruktur:** Der Baustein nutzt unidirektionale Adaptertypen (`AR` für analoge Werte, `AX` für binäre Werte), was eine klare und störungsfreie Signalrichtung im System gewährleistet.
+- **Typkonsistenz:** Intern arbeitet der Baustein mit dem Datentyp `REAL` für die analogen Signale (konfiguriert über die Attribute der `F_MOVE`-Bausteine).
+- **Ereignisgesteuert:** Eine Neuberechnung und Aktualisierung des Ausgangs erfolgt sofort, sobald sich entweder die Selektion `G` ändert oder neue Werte an den Eingängen `IN0` bzw. `IN1` signalisiert werden.
 
 ---
 
@@ -88,9 +88,9 @@ Das Verhalten lässt sich über folgende einfache Logiktabelle beschreiben:
 
 ## Anwendungsszenarien
 
-* **Sensorredundanz:** Umschalten zwischen einem primären und einem sekundären analogen Sensor (z. B. Temperatursensor oder Drucksensor) bei Ausfall des Primärsensors.
-* **Hand-/Automatik-Umschaltung:** Wahlweise Aufschaltung eines automatischen Regelwerts (z. B. berechnet durch einen PID-Regler) oder eines manuell vorgegebenen Sollwerts auf ein Stellglied.
-* **Signalrouting:** Dynamische Pfadauswahl in komplexeren verfahrenstechnischen oder agrartechnischen Steuerungsanwendungen.
+- **Sensorredundanz:** Umschalten zwischen einem primären und einem sekundären analogen Sensor (z. B. Temperatursensor oder Drucksensor) bei Ausfall des Primärsensors.
+- **Hand-/Automatik-Umschaltung:** Wahlweise Aufschaltung eines automatischen Regelwerts (z. B. berechnet durch einen PID-Regler) oder eines manuell vorgegebenen Sollwerts auf ein Stellglied.
+- **Signalrouting:** Dynamische Pfadauswahl in komplexeren verfahrenstechnischen oder agrartechnischen Steuerungsanwendungen.
 
 ---
 

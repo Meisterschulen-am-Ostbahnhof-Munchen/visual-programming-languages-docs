@@ -138,6 +138,6 @@ Nightly builds are automatically generated daily versions of software that inclu
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

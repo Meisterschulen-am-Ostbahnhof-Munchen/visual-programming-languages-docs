@@ -67,10 +67,10 @@ IEC 61499 is an international standard for modeling distributed industrial contr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_071a](../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
-* [Exercise_071b](../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Exercise_072b](../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Exercise_085](../../../Uebungen/test_B/Uebungen_doc/Uebung_085.md)
+- [Exercise_071a](../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+- [Exercise_071b](../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Exercise_072b](../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Exercise_085](../../../Uebungen/test_B/Uebungen_doc/Uebung_085.md)
 
 ## Conclusion
 

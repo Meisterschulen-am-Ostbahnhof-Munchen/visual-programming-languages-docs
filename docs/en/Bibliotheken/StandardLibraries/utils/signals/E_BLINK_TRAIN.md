@@ -42,7 +42,7 @@ The function block `E_BLINK_TRAIN` simulates a flashing signal that is switched 
 - Simulation of blink patterns for testing purposes.
 - **CODESYS BLINK FB**: Retains the last state when stopped, while `E_BLINK_TRAIN` always reverts to `FALSE`.
 - **Simple Timer FBs**: Do not offer an integrated limit on the number of cycles (`N`).
-* [Exercise_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Exercise_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
 
 The `E_BLINK_TRAIN` is a versatile function block for generating blinking signals with configurable times and a limited number of cycles. Its unique feature is that it reverts to `FALSE` when stopped, making it ideal for safety-critical applications. The clear interface structure and the internal use of proven timer FBs make it reliable and easy to use.
 

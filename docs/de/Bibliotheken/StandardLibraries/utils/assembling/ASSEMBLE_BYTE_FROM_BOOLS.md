@@ -64,8 +64,8 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
-* [Uebung_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
+- [Uebung_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
+- [Uebung_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
 
 ## Fazit
 

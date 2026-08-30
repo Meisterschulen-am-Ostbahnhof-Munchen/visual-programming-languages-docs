@@ -27,17 +27,17 @@ Keine separaten Daten-Ausgänge; die Datenausgabe erfolgt über den AS_OUT-Adapt
 
 ### **Adapter**
 
-- **AX_IN** (Socket):  
-  Typ `adapter::types::unidirectional::AX` (BOOL).  
+- **AX_IN** (Socket):
+  Typ `adapter::types::unidirectional::AX` (BOOL).
   Stellt das binäre Eingangssignal über den Ereignis-Port `E1` und den Daten-Port `D1` bereit.
 
-- **AS_OUT** (Plug):  
-  Typ `adapter::types::unidirectional::AS` (SINT).  
+- **AS_OUT** (Plug):
+  Typ `adapter::types::unidirectional::AS` (SINT).
   Gibt das konvertierte SINT-Signal über den Ereignis-Port `E1` und den Daten-Port `D1` aus.
 
 ## Funktionsweise
 
-Der FB besitzt ein internes Netzwerk, das aus einer Instanz des Standardbausteins `F_BOOL_TO_SINT` besteht.  
+Der FB besitzt ein internes Netzwerk, das aus einer Instanz des Standardbausteins `F_BOOL_TO_SINT` besteht.
 
 1. Ein eingehendes Ereignis am AX_IN‑Adapter (`E1`) triggert die Konvertierung.
 2. Der Datenwert von `AX_IN.D1` (BOOL) wird an den Eingang `IN` des Konvertierungsbausteins übergeben.
@@ -74,4 +74,4 @@ Der `AX_TO_AS` ist ein einfacher, aber nützlicher Composite‑FB für die Umwan
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

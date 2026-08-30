@@ -17,9 +17,9 @@ The objective is to transform a single, short event (e.g., a mouse click or butt
 
 ![Uebung_020h_AX_network](./Uebung_020h_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. Returns an event on a single click (`BUTTON_SINGLE_CLICK`).
-* **`AX_PULSE`**: [cite_start]Starts a timer when an event arrives at the `REQ` input. The output `Q` remains TRUE for `PT` (5 seconds) [cite: 1].
-* **`DigitalOutput_Q1`**: Type `logiBUS_QXA`.
+- **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. Returns an event on a single click (`BUTTON_SINGLE_CLICK`).
+- **`AX_PULSE`**: [cite_start]Starts a timer when an event arrives at the `REQ` input. The output `Q` remains TRUE for `PT` (5 seconds) [cite: 1].
+- **`DigitalOutput_Q1`**: Type `logiBUS_QXA`.
 
 -----
 

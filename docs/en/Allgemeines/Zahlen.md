@@ -4,7 +4,7 @@
 
 ## Number Systems
 
-* [ISOBUS Terminals: Understanding Numbers – NumberVariable, InputNumber & OutputNumber explained ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
+- [ISOBUS Terminals: Understanding Numbers – NumberVariable, InputNumber & OutputNumber explained ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
 ### Decimal System (Base 10)
 
 The familiar system with the digits 0 to 9. It is mostly used in programming for human-readable values such as setpoints, counters, or time values.
@@ -33,16 +33,16 @@ Literals are values hard-coded in the program code. Type prefixes can be used to
 
 Integers can be specified without decimal places.
 
-* `1234` (Decimal)
-* `-567` (Negative)
-* `16#ABCD` (Hexadecimal)
-* `2#1010_0101` (Binary, underscores for readability)
+- `1234` (Decimal)
+- `-567` (Negative)
+- `16#ABCD` (Hexadecimal)
+- `2#1010_0101` (Binary, underscores for readability)
 
 Values with decimal places or in scientific notation.
 
-* `1.234`
-* `-0.5`
-* `1.0E-3` (equivalent to 0.001)
+- `1.234`
+- `-0.5`
+- `1.0E-3` (equivalent to 0.001)
 ### Floating Point Numbers (Real)
 
 ### Integer Numbers
@@ -51,10 +51,10 @@ Values with decimal places or in scientific notation.
 
 Sometimes it is important to explicitly specify the data type to avoid ambiguity.
 
-* `INT#15`
-* `UINT#15`
-* `REAL#15.0`
-* `TIME#5s` (Duration of 5 seconds)
+- `INT#15`
+- `UINT#15`
+- `REAL#15.0`
+- `TIME#5s` (Duration of 5 seconds)
 
 ---
 
@@ -62,6 +62,6 @@ Sometimes it is important to explicitly specify the data type to avoid ambiguity
 
 For deeper insights into the set theory of numbers (natural, integer, real numbers), the following concepts provide a good foundation:
 
-* **Natural Numbers (ℕ):** Positive integers {1, 2, 3, ...} – often used as the basis for `UINT` (Unsigned Integer).
-* **Integers (ℤ):** Numbers without decimal places, including zero and negative numbers – basis for `INT`, `DINT`, `LINT`.
-* **Real Numbers (ℝ):** Numbers with decimal places – basis for `REAL` and `LREAL`.
+- **Natural Numbers (ℕ):** Positive integers {1, 2, 3, ...} – often used as the basis for `UINT` (Unsigned Integer).
+- **Integers (ℤ):** Numbers without decimal places, including zero and negative numbers – basis for `INT`, `DINT`, `LINT`.
+- **Real Numbers (ℝ):** Numbers with decimal places – basis for `REAL` and `LREAL`.

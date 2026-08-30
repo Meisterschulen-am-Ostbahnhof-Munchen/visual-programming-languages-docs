@@ -29,6 +29,6 @@ Adapting Sensor Pulses: A gear sensor delivers one pulse per wheel revolution, b
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

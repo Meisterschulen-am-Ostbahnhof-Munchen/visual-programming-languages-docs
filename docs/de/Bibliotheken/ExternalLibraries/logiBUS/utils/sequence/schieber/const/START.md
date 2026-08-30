@@ -4,7 +4,7 @@
 
 ![START](./START.svg)
 
-* [Ereignisse und IEC 61499: Der Startschuss für intelligente Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
+- [Ereignisse und IEC 61499: Der Startschuss für intelligente Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
 
 ## Einleitung
 
@@ -40,18 +40,18 @@ Die `START`-Konstantendeklaration weist den symbolischen Namen `STARTClosed`, `S
 
 ## Technische Besonderheiten
 
-*   **Typ:** Alle Konstanten sind vom Typ `UINT` (vorzeichenlose Ganzzahl).
-*   **Gültigkeitsbereich:** Die Konstanten sind global definiert (`VAR_GLOBAL CONSTANT`) und innerhalb des deklarierten Pakets (`logiBUS::utils::sequence::schieber::const`) verfügbar.
-*   **Unveränderlichkeit:** Als Konstanten (`CONSTANT`) können ihre Werte zur Laufzeit nicht geändert werden.
-*   **Paketstruktur:** Die Konstanten sind in einer spezifischen Pakethierarchie organisiert, die auf ihre Anwendungsdomäne (Hilfsfunktionen für Sequenzsteuerungen von Schiebern) hinweist.
+-   **Typ:** Alle Konstanten sind vom Typ `UINT` (vorzeichenlose Ganzzahl).
+-   **Gültigkeitsbereich:** Die Konstanten sind global definiert (`VAR_GLOBAL CONSTANT`) und innerhalb des deklarierten Pakets (`logiBUS::utils::sequence::schieber::const`) verfügbar.
+-   **Unveränderlichkeit:** Als Konstanten (`CONSTANT`) können ihre Werte zur Laufzeit nicht geändert werden.
+-   **Paketstruktur:** Die Konstanten sind in einer spezifischen Pakethierarchie organisiert, die auf ihre Anwendungsdomäne (Hilfsfunktionen für Sequenzsteuerungen von Schiebern) hinweist.
 
 ## Zustandsübersicht
 
 Die Konstanten selbst repräsentieren abstrakte Zustände:
 
-*   `STARTClosed` (Wert 5): Steht für den Zustand "geschlossen" oder "in Ausgangsposition".
-*   `STARTOpened` (Wert 6): Steht für den Zustand "geöffnet" oder "in Endposition".
-*   `STARTUnknown` (Wert 7): Steht für einen undefinierten, unbekannten oder Fehlerzustand.
+-   `STARTClosed` (Wert 5): Steht für den Zustand "geschlossen" oder "in Ausgangsposition".
+-   `STARTOpened` (Wert 6): Steht für den Zustand "geöffnet" oder "in Endposition".
+-   `STARTUnknown` (Wert 7): Steht für einen undefinierten, unbekannten oder Fehlerzustand.
 
 ## Anwendungsszenarien
 

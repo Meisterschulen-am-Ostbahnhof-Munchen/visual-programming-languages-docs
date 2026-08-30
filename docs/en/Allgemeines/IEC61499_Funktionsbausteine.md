@@ -12,8 +12,8 @@ A function block always consists of two parts:
 
 The interface is divided into two areas:
 
-* **Head:** This contains the **event inputs** and **event outputs**.
-* **Body Interface:** This is where the **Data Inputs** and **Data Outputs** are located.
+- **Head:** This contains the **event inputs** and **event outputs**.
+- **Body Interface:** This is where the **Data Inputs** and **Data Outputs** are located.
 
 **Important:** Data is always synchronized with events. The connection between an event and its associated data is defined by the **WITH Qualifier**. This means: "When event X occurs, data A and B are valid/updated."
 
@@ -27,8 +27,8 @@ There are three main types of function blocks in IEC 61499:
 
 This is the elementary block in which **algorithms** (code in ST, C, etc.) are executed.
 
-* A **state machine**, the so-called **ECC** (see below), controls *when* which algorithm is executed.
-* It has no internal parallel execution; it is always in exactly one state.
+- A **state machine**, the so-called **ECC** (see below), controls *when* which algorithm is executed.
+- It has no internal parallel execution; it is always in exactly one state.
 
 ### 2. Composite Function Block
 
@@ -38,8 +38,8 @@ This block does not contain any algorithms or ECCs. Instead, its core consists o
 
 This block provides the interface to the hardware or the operating system.
 
-* Examples: Reading/writing digital I/Os, network communication (UDP/TCP), accessing system time.
-* The internal implementation is usually not visible in IEC 61499 (black box).
+- Examples: Reading/writing digital I/Os, network communication (UDP/TCP), accessing system time.
+- The internal implementation is usually not visible in IEC 61499 (black box).
 
 ---
 
@@ -53,8 +53,8 @@ The ECC consists of three elements:
 
 A state represents a situation in which the component is located (e.g., `START`, `INIT`, `RUN`, `ERROR`).
 
-* The component is always active in exactly one state.
-* Each state can have one or more **EC actions** assigned to it.
+- The component is always active in exactly one state.
+- Each state can have one or more **EC actions** assigned to it.
 
 ### 2. EC Transitions
 
@@ -62,8 +62,8 @@ Transitions are the connections between states. They define when the component c
 
 A transition triggers (fires) when:
 
-* The associated **event** (e.g., `REQ`) occurs.
-* AND** an optional **guard condition** is true (e.g., `x > 10`).
+- The associated **event** (e.g., `REQ`) occurs.
+- AND** an optional **guard condition** is true (e.g., `x > 10`).
 
 *Example:* `REQ [x > 10]` -> Only change the state if event `REQ` occurs AND `x` is greater than 10.
 

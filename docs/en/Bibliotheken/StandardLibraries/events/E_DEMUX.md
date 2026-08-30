@@ -62,9 +62,9 @@ The input event is therefore always forwarded exclusively to exactly one output,
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Exercise_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Exercise_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Exercise_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Exercise_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Exercise_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
 
 ## Conclusion
 

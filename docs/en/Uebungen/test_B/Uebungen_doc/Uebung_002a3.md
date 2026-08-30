@@ -17,9 +17,9 @@ The main objective of this exercise is to demonstrate the functionality of an OR
 
 ![Uebung_002a3_network](./Uebung_002a3_network.svg)
 
-* **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IX`. [cite_start]These blocks capture the states of the physical inputs `Input_I1` and `Input_I2`[cite: 1].
-* **`OR_2`**: An instance of type `OR_2` (from the IEC 61131 library). [cite_start]This function block performs the logical OR operation. It has two data inputs (`IN1`, `IN2`) and one data output (`OUT`)[cite: 1]. Like the AND function block, it reacts to an event at port `REQ` and acknowledges it with `CNF`.
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. [cite_start]This function block sets the physical output `Output_Q1` based on the result of the OR operation[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IX`. [cite_start]These blocks capture the states of the physical inputs `Input_I1` and `Input_I2`[cite: 1].
+- **`OR_2`**: An instance of type `OR_2` (from the IEC 61131 library). [cite_start]This function block performs the logical OR operation. It has two data inputs (`IN1`, `IN2`) and one data output (`OUT`)[cite: 1]. Like the AND function block, it reacts to an event at port `REQ` and acknowledges it with `CNF`.
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. [cite_start]This function block sets the physical output `Output_Q1` based on the result of the OR operation[cite: 1].
 
 -----
 

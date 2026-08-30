@@ -8,13 +8,13 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_018`. Hier wird die Audio
 
 ![Uebung_018_network](./Uebung_018_network.svg)
 
-* [Der Katalog von 1863](https://www.youtube.com/watch?v=fk7tIjl2pTk)
+- [Der Katalog von 1863](https://www.youtube.com/watch?v=fk7tIjl2pTk)
 
 ## 🎧 Podcast
 
-* [Agrar-Revolution 1883: Wie Max Eyth Englands Landwirtschaft modernisierte](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Agrar-Revolution-1883-Wie-Max-Eyth-Englands-Landwirtschaft-modernisierte-e36faae)
-* [Apfelwein-Allzweckwaffe und Stickstoff-Revolution: Die Landwirtschaft Mittelfrankens 1892 im Zeitungs-Check](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Apfelwein-Allzweckwaffe-und-Stickstoff-Revolution-Die-Landwirtschaft-Mittelfrankens-1892-im-Zeitungs-Check-e39auu2)
-* [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft durch Import, Innovation und Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
+- [Agrar-Revolution 1883: Wie Max Eyth Englands Landwirtschaft modernisierte](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Agrar-Revolution-1883-Wie-Max-Eyth-Englands-Landwirtschaft-modernisierte-e36faae)
+- [Apfelwein-Allzweckwaffe und Stickstoff-Revolution: Die Landwirtschaft Mittelfrankens 1892 im Zeitungs-Check](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Apfelwein-Allzweckwaffe-und-Stickstoff-Revolution-Die-Landwirtschaft-Mittelfrankens-1892-im-Zeitungs-Check-e39auu2)
+- [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft durch Import, Innovation und Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
 
 ----
 
@@ -30,9 +30,9 @@ Erlernen der Ereignisverzögerung (`E_DELAY`) zur Erstellung von Sequenzen. Es w
 
 ### Funktionsbausteine (FBs)
 
-  * **`Q_CtrlAudioSignal_0`**: Erster Ton (440 Hz).
-  * **`E_DELAY`**: Ein Verzögerungs-Baustein. [cite_start]Er wartet nach einem Ereignis am Eingang `START` die Zeit `DT` ab (hier 250 ms), bevor er das Ereignis am Ausgang `EO` weitergibt[cite: 1].
-  * **`Q_CtrlAudioSignal_1`**: Zweiter Ton (880 Hz - eine Oktave höher).
+  - **`Q_CtrlAudioSignal_0`**: Erster Ton (440 Hz).
+  - **`E_DELAY`**: Ein Verzögerungs-Baustein. [cite_start]Er wartet nach einem Ereignis am Eingang `START` die Zeit `DT` ab (hier 250 ms), bevor er das Ereignis am Ausgang `EO` weitergibt[cite: 1].
+  - **`Q_CtrlAudioSignal_1`**: Zweiter Ton (880 Hz - eine Oktave höher).
 
 -----
 

@@ -9,7 +9,7 @@ Der Datentyp `ST01X` ist ein einfacher strukturierter Datentyp, der einen einzel
 
 Die "Schnittstellenstruktur" eines Datentyps bezieht sich auf seine internen Mitglieder, die die Definition des Datentyps bilden. Der Datentyp `ST01X` besitzt die folgende interne Struktur:
 
-*   **`X_00`**: Eine Variable vom Typ `BOOL`. Dieser Member dient als "BIT 00" innerhalb der Struktur, wie im Kommentar angegeben.
+-   **`X_00`**: Eine Variable vom Typ `BOOL`. Dieser Member dient als "BIT 00" innerhalb der Struktur, wie im Kommentar angegeben.
 
 ### **Ereignis-Eingänge**
 
@@ -37,9 +37,9 @@ Der Datentyp `ST01X` hat keine aktive Funktionsweise im Sinne eines Algorithmus 
 
 ## Technische Besonderheiten
 
-*   **Minimale Struktur:** `ST01X` ist einer der einfachsten strukturierten Datentypen, der nur ein einziges `BOOL`-Element enthält.
-*   **Kapselung:** Er kapselt einen einzelnen Booleschen Wert, der typischerweise einen Status, eine Flagge oder einen Zustand repräsentiert.
-*   **Standardisierung:** Dieser Datentyp kann zur Standardisierung der Verwendung von einzelnen Booleschen Werten in größeren Datenstrukturen oder bei der Definition von Kommunikationsprotokollen eingesetzt werden, um Konsistenz zu gewährleisten.
+-   **Minimale Struktur:** `ST01X` ist einer der einfachsten strukturierten Datentypen, der nur ein einziges `BOOL`-Element enthält.
+-   **Kapselung:** Er kapselt einen einzelnen Booleschen Wert, der typischerweise einen Status, eine Flagge oder einen Zustand repräsentiert.
+-   **Standardisierung:** Dieser Datentyp kann zur Standardisierung der Verwendung von einzelnen Booleschen Werten in größeren Datenstrukturen oder bei der Definition von Kommunikationsprotokollen eingesetzt werden, um Konsistenz zu gewährleisten.
 
 ## Zustandsübersicht
 
@@ -47,15 +47,15 @@ Ein Datentyp besitzt keine eigene "Zustandsübersicht" im Sinne eines Zustandsau
 
 ## Anwendungsszenarien
 
-*   **Statusflaggen:** Repräsentation eines einfachen Ein/Aus-Status, z.B. zur Anzeige, ob ein Gerät aktiv ist, ein Prozess läuft oder eine Bedingung erfüllt ist.
-*   **Kommunikationsprotokolle:** Als standardisierter Block innerhalb von Datenpaketen oder Telegrammen, um einen einzelnen Bit-Zustand zwischen Systemen zu übermitteln.
-*   **Strukturierte Datenhaltung:** Wenn ein Boolescher Wert in einer übergeordneten Struktur mit einem spezifischen Namen und Kommentar benötigt wird, um die Lesbarkeit und Wartbarkeit zu verbessern, besonders wenn viele einzelne Booleans in einer logischen Gruppe zusammengefasst werden sollen.
-*   **Typensicherheit:** Erzwingt die Verwendung eines explizit definierten Typs für bestimmte Boolesche Informationen, um Fehler durch versehentliche Typinkonsistenzen zu vermeiden.
+-   **Statusflaggen:** Repräsentation eines einfachen Ein/Aus-Status, z.B. zur Anzeige, ob ein Gerät aktiv ist, ein Prozess läuft oder eine Bedingung erfüllt ist.
+-   **Kommunikationsprotokolle:** Als standardisierter Block innerhalb von Datenpaketen oder Telegrammen, um einen einzelnen Bit-Zustand zwischen Systemen zu übermitteln.
+-   **Strukturierte Datenhaltung:** Wenn ein Boolescher Wert in einer übergeordneten Struktur mit einem spezifischen Namen und Kommentar benötigt wird, um die Lesbarkeit und Wartbarkeit zu verbessern, besonders wenn viele einzelne Booleans in einer logischen Gruppe zusammengefasst werden sollen.
+-   **Typensicherheit:** Erzwingt die Verwendung eines explizit definierten Typs für bestimmte Boolesche Informationen, um Fehler durch versehentliche Typinkonsistenzen zu vermeiden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Vergleich mit dem primitiven Typ `BOOL`:** Im Gegensatz zum einfachen `BOOL`-Typ, der nur den reinen Wert darstellt, bietet `ST01X` eine benannte Kapselung (`X_00`). Dies verbessert die Selbstbeschreibung und die Semantik des Wertes innerhalb einer größeren Struktur. Während `BOOL` ein elementarer Datentyp ist, ist `ST01X` ein zusammengesetzter (strukturierter) Datentyp.
-*   **Vergleich mit größeren Strukturen (z.B. `ST08X`, `ST16X`):** `ST01X` ist die elementarste Form dieser Art von Struktur, spezialisiert auf nur ein Bit. Größere Strukturen wie `ST08X` oder `ST16X` würden entsprechend 8 oder 16 Boolesche Werte enthalten und dienen der Bündelung mehrerer Flags.
+-   **Vergleich mit dem primitiven Typ `BOOL`:** Im Gegensatz zum einfachen `BOOL`-Typ, der nur den reinen Wert darstellt, bietet `ST01X` eine benannte Kapselung (`X_00`). Dies verbessert die Selbstbeschreibung und die Semantik des Wertes innerhalb einer größeren Struktur. Während `BOOL` ein elementarer Datentyp ist, ist `ST01X` ein zusammengesetzter (strukturierter) Datentyp.
+-   **Vergleich mit größeren Strukturen (z.B. `ST08X`, `ST16X`):** `ST01X` ist die elementarste Form dieser Art von Struktur, spezialisiert auf nur ein Bit. Größere Strukturen wie `ST08X` oder `ST16X` würden entsprechend 8 oder 16 Boolesche Werte enthalten und dienen der Bündelung mehrerer Flags.
 
 ## Fazit
 
@@ -65,4 +65,4 @@ Der Datentyp `ST01X` ist ein grundlegender, aber nützlicher Baustein in der 4di
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

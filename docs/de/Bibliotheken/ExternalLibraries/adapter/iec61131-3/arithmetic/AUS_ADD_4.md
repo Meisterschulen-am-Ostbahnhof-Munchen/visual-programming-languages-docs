@@ -40,14 +40,14 @@ Der Funktionsbaustein `AUS_ADD_4` dient der arithmetischen Addition von vier Ein
 
 #### **Sockets (Eingangs-Adapter)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AUS`): Erster Summand der Addition.
-* **IN2** (Typ: `adapter::types::unidirectional::AUS`): Zweiter Summand der Addition.
-* **IN3** (Typ: `adapter::types::unidirectional::AUS`): Dritter Summand der Addition.
-* **IN4** (Typ: `adapter::types::unidirectional::AUS`): Vierter Summand der Addition.
+- **IN1** (Typ: `adapter::types::unidirectional::AUS`): Erster Summand der Addition.
+- **IN2** (Typ: `adapter::types::unidirectional::AUS`): Zweiter Summand der Addition.
+- **IN3** (Typ: `adapter::types::unidirectional::AUS`): Dritter Summand der Addition.
+- **IN4** (Typ: `adapter::types::unidirectional::AUS`): Vierter Summand der Addition.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUS`): Schnittstelle zur Ausgabe des berechneten Additionsergebnisses.
+- **OUT** (Typ: `adapter::types::unidirectional::AUS`): Schnittstelle zur Ausgabe des berechneten Additionsergebnisses.
 
 ## Funktionsweise
 
@@ -59,9 +59,9 @@ Das Ergebnis dieser Berechnung wird unmittelbar an den Ausgangs-Plug `OUT` über
 
 ## Technische Besonderheiten
 
-* **Generischer Baustein:** Durch die Zuordnung zur generischen Klasse `GEN_AUS_ADD` ist der Baustein hochgradig wiederverwendbar und passt sich flexibel an die zugrundeliegenden Datentypen der Adapter an.
-* **Reduzierte Routing-Komplexität:** Durch die Verwendung von Adaptern statt einzelner Event- und Datenleitungen wird die Anzahl der Verbindungslinien in der 4diac-IDE drastisch reduziert, was die Lesbarkeit von großen Applikationsdiagrammen signifikant erhöht.
-* **Compiler-Zugehörigkeit:** Der Baustein ist im Package `adapter::iec61131::arithmetic` organisiert.
+- **Generischer Baustein:** Durch die Zuordnung zur generischen Klasse `GEN_AUS_ADD` ist der Baustein hochgradig wiederverwendbar und passt sich flexibel an die zugrundeliegenden Datentypen der Adapter an.
+- **Reduzierte Routing-Komplexität:** Durch die Verwendung von Adaptern statt einzelner Event- und Datenleitungen wird die Anzahl der Verbindungslinien in der 4diac-IDE drastisch reduziert, was die Lesbarkeit von großen Applikationsdiagrammen signifikant erhöht.
+- **Compiler-Zugehörigkeit:** Der Baustein ist im Package `adapter::iec61131::arithmetic` organisiert.
 
 ## Zustandsübersicht
 
@@ -69,9 +69,9 @@ Der Baustein verhält sich wie ein kombinatorisches Glied (bzw. ein zustandslose
 
 ## Anwendungsszenarien
 
-* **Signal-Summierung:** Zusammenführung und Addition von vier analogen Sensorwerten (z. B. Ermittlung des Gesamtvolumenstroms aus vier einzelnen Durchflussmessern oder der Gesamtleistung von vier elektrischen Verbrauchern).
-* **Mittelwertvorbereitung:** Aufsummierung von vier Messstellen als vorbereitender Schritt für eine anschließende Division zur Mittelwertberechnung.
-* **Kombinatorische Steuerungslogik:** Aggregation von gewichteten Steuersignalen in komplexeren verteilten Systemen.
+- **Signal-Summierung:** Zusammenführung und Addition von vier analogen Sensorwerten (z. B. Ermittlung des Gesamtvolumenstroms aus vier einzelnen Durchflussmessern oder der Gesamtleistung von vier elektrischen Verbrauchern).
+- **Mittelwertvorbereitung:** Aufsummierung von vier Messstellen als vorbereitender Schritt für eine anschließende Division zur Mittelwertberechnung.
+- **Kombinatorische Steuerungslogik:** Aggregation von gewichteten Steuersignalen in komplexeren verteilten Systemen.
 
 ## Vergleich mit ähnlichen Bausteinen
 

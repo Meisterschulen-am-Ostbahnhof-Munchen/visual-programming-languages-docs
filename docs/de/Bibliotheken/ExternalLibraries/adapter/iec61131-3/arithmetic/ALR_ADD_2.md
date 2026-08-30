@@ -30,12 +30,12 @@ Der Funktionsbaustein `ALR_ADD_2` ist ein generischer, arithmetischer Additionsb
 
 #### **Sockets (Eingangs-Adapter)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::ALR`): Der erste Summand der Additionsoperation.
-* **IN2** (Typ: `adapter::types::unidirectional::ALR`): Der zweite Summand der Additionsoperation.
+- **IN1** (Typ: `adapter::types::unidirectional::ALR`): Der erste Summand der Additionsoperation.
+- **IN2** (Typ: `adapter::types::unidirectional::ALR`): Der zweite Summand der Additionsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das Ergebnis der Addition ($OUT = IN1 + IN2$).
+- **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das Ergebnis der Addition ($OUT = IN1 + IN2$).
 
 ---
 
@@ -51,9 +51,9 @@ Das berechnete Ergebnis wird anschließend über den Ausgangs-Adapter `OUT` zusa
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_ALR_ADD`):** Der Baustein ist datentypunabhängig implementiert und passt sich den im ALR-Adapter definierten Datentypen an.
-* **Adapter-Kapselung:** Durch die Verwendung unidirektionaler Adapter wird die Anzahl der sichtbaren Verbindungen im Control-Flow-Diagramm der 4diac-IDE drastisch reduziert, was die Übersichtlichkeit und Wartbarkeit des Gesamtsystems erhöht.
-* **Konformität:** Entspricht den mathematischen Standards nach IEC 61131-3 für Standard-Arithmetikfunktionen.
+- **Generischer Typ (`GEN_ALR_ADD`):** Der Baustein ist datentypunabhängig implementiert und passt sich den im ALR-Adapter definierten Datentypen an.
+- **Adapter-Kapselung:** Durch die Verwendung unidirektionaler Adapter wird die Anzahl der sichtbaren Verbindungen im Control-Flow-Diagramm der 4diac-IDE drastisch reduziert, was die Übersichtlichkeit und Wartbarkeit des Gesamtsystems erhöht.
+- **Konformität:** Entspricht den mathematischen Standards nach IEC 61131-3 für Standard-Arithmetikfunktionen.
 
 ---
 
@@ -65,9 +65,9 @@ Da die Logik dieses Bausteins rein daten- und ereignisgesteuert über die Adapte
 
 ## Anwendungsszenarien
 
-* **Signalzusammenführung:** Addition von zwei analogen Sensorwerten (z. B. Ermittlung eines Gesamtvolumenstroms aus zwei einzelnen Durchflussmessern).
-* **Sollwert-Offset-Berechnung:** Beaufschlagung eines Basis-Sollwerts mit einem Korrekturoffset in verfahrenstechnischen Anlagen.
-* **Kompakte Programmierung:** Verwendung in komplexen Regelungsschleifen, bei denen ein übersichtliches Routing mittels Adaptern bevorzugt wird.
+- **Signalzusammenführung:** Addition von zwei analogen Sensorwerten (z. B. Ermittlung eines Gesamtvolumenstroms aus zwei einzelnen Durchflussmessern).
+- **Sollwert-Offset-Berechnung:** Beaufschlagung eines Basis-Sollwerts mit einem Korrekturoffset in verfahrenstechnischen Anlagen.
+- **Kompakte Programmierung:** Verwendung in komplexen Regelungsschleifen, bei denen ein übersichtliches Routing mittels Adaptern bevorzugt wird.
 
 ---
 

@@ -20,9 +20,9 @@ Verwendung des Bausteins `AlPgnRxNew8B`. Es wird demonstriert, wie man auf eine 
 
 ![Uebung_130_network](./Uebung_130_network.svg)
 
-  * **`NmGetCfInfo_1`**: Identifiziert den Absender der Nachricht (Source).
-  * **`AlPgnRxNew8B`**: Der Empfangs-Baustein. Er filtert alle CAN-Nachrichten und lässt nur die passende PGN durch.
-  * **`STRUCT_DEMUX`**: Zerlegt die empfangene 8-Byte Nachricht wieder in einzelne Signale.
+  - **`NmGetCfInfo_1`**: Identifiziert den Absender der Nachricht (Source).
+  - **`AlPgnRxNew8B`**: Der Empfangs-Baustein. Er filtert alle CAN-Nachrichten und lässt nur die passende PGN durch.
+  - **`STRUCT_DEMUX`**: Zerlegt die empfangene 8-Byte Nachricht wieder in einzelne Signale.
 
 -----
 

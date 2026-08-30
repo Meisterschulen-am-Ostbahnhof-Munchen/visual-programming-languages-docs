@@ -78,7 +78,7 @@ RESET → SET:    bei S_R.SET Ereignis
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
+- [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
 

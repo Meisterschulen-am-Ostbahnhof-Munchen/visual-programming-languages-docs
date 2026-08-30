@@ -20,12 +20,12 @@ Das Ziel ist die Implementierung eines Teach-In-Verfahrens. Anstatt die Zeit `PT
 
 ![Uebung_020i_AX_network](./Uebung_020i_AX_network.svg)
 
-  * **`DigitalInput_I2` (Teach-Taste)**: Typ `logiBUS_IXA`. Misst, wie lange der Taster gedrückt wird.
-  * **`AX_SWITCH`**: Wandelt das Drücken/Loslassen von `I2` in Start/Stopp-Signale für die Stoppuhr um.
-  * **`E_STOPWATCH`**: [cite_start]Misst die Zeit zwischen `START` und `STOP` und gibt die Dauer am Ausgang `TD` aus[cite: 1].
-  * **`AX_PULSE`**: Der Impuls-Baustein. Sein Zeitparameter `PT` ist mit dem gemessenen Wert `TD` der Stoppuhr verbunden.
-  * **`DigitalInput_CLK_I1` (Start-Taste)**: Typ `logiBUS_IE`. Löst den Puls aus.
-  * **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
+  - **`DigitalInput_I2` (Teach-Taste)**: Typ `logiBUS_IXA`. Misst, wie lange der Taster gedrückt wird.
+  - **`AX_SWITCH`**: Wandelt das Drücken/Loslassen von `I2` in Start/Stopp-Signale für die Stoppuhr um.
+  - **`E_STOPWATCH`**: [cite_start]Misst die Zeit zwischen `START` und `STOP` und gibt die Dauer am Ausgang `TD` aus[cite: 1].
+  - **`AX_PULSE`**: Der Impuls-Baustein. Sein Zeitparameter `PT` ist mit dem gemessenen Wert `TD` der Stoppuhr verbunden.
+  - **`DigitalInput_CLK_I1` (Start-Taste)**: Typ `logiBUS_IE`. Löst den Puls aus.
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
 
 -----
 
@@ -36,12 +36,12 @@ Die Anwendung erfolgt in zwei Schritten:
 1.  **Anlernen (Teach-In)**:
     Der Nutzer hält Taster `I2` für die gewünschte Dauer gedrückt (z.B. 3,5 Sekunden).
 
-    *   Beim Drücken startet `E_STOPWATCH`.
-    *   Beim Loslassen stoppt die Messung. Der Wert (3,5s) liegt nun am Eingang `PT` von `AX_PULSE` an.
+    -   Beim Drücken startet `E_STOPWATCH`.
+    -   Beim Loslassen stoppt die Messung. Der Wert (3,5s) liegt nun am Eingang `PT` von `AX_PULSE` an.
 2.  **Ausführen**:
     Der Nutzer klickt kurz auf Taster `I1`.
 
-    *   `AX_PULSE` wird getriggert und schaltet die Lampe `Q1` für exakt die zuvor gelernten 3,5 Sekunden ein.
+    -   `AX_PULSE` wird getriggert und schaltet die Lampe `Q1` für exakt die zuvor gelernten 3,5 Sekunden ein.
 
 Jedes neue Anlernen über `I2` überschreibt die gespeicherte Zeit für den nächsten Puls.
 

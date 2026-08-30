@@ -32,4 +32,4 @@ The function block receives a UDINT value at the OUT data input and converts it 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
+- [Exercise_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)

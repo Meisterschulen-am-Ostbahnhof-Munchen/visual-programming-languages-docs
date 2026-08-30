@@ -17,10 +17,10 @@ Implementation of an automatic sequence of 8 steps.
 
 ![Uebung_038_AX_network](./Uebung_038_AX_network.svg)
 
-* **`sequence_T_08_loop_AX`**: A complex function block that manages 8 states (`S1` to `S8`). The transition between states is time-controlled.
-* **Parameters `DT_S1_S2` etc.**: Define the dwell time in each step (e.g., 200 ms or 100 ms).
-* **`Q_NumericValue`**: Displays the current step number on the ISOBUS terminal.
-* **`E_TimeOut`**: Monitors the sequence (watchdog).
+- **`sequence_T_08_loop_AX`**: A complex function block that manages 8 states (`S1` to `S8`). The transition between states is time-controlled.
+- **Parameters `DT_S1_S2` etc.**: Define the dwell time in each step (e.g., 200 ms or 100 ms).
+- **`Q_NumericValue`**: Displays the current step number on the ISOBUS terminal.
+- **`E_TimeOut`**: Monitors the sequence (watchdog).
 
 -----
 

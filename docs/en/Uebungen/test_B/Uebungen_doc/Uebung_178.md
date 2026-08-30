@@ -12,17 +12,17 @@ Exercise_178 deals with the detection of falling edges in signal processing. The
 
 The following function blocks are used in this sub-application:
 
-* **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IX`):
-* Used to read the digital signal.
-* Configured to the hardware input `Input_I1`.
-* **FB_F_TRIG** (`iec61131::edgeDetection::FB_F_TRIG`):
-* Function block for detecting a falling edge (Falling Edge Trigger).
-* **E_TP** (`iec61499::events::timers::E_TP`):
-* A pulse timer.
-* Configured with a duration (`PT`) of 1 second (`T#1s`).
-* **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QX`):
-* Used to output the digital signal.
-* Configured to the hardware output `Output_Q1`.
+- **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IX`):
+- Used to read the digital signal.
+- Configured to the hardware input `Input_I1`.
+- **FB_F_TRIG** (`iec61131::edgeDetection::FB_F_TRIG`):
+- Function block for detecting a falling edge (Falling Edge Trigger).
+- **E_TP** (`iec61499::events::timers::E_TP`):
+- A pulse timer.
+- Configured with a duration (`PT`) of 1 second (`T#1s`).
+- **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QX`):
+- Used to output the digital signal.
+- Configured to the hardware output `Output_Q1`.
 
 ## Program Flow and Connections
 
@@ -36,19 +36,19 @@ The function block `DigitalInput_I1` reads the status of the hardware input `Inp
 
 The input signal (`IN` from `DigitalInput_I1`) is connected to the clock input (`CLK`) of `FB_F_TRIG`.
 
-* `FB_F_TRIG` monitors this signal.
-* If the module detects a change from **High to Low** (e.g., releasing a button), the output `Q` briefly switches to `TRUE`.
-* 3. **Time Control (Pulse):**
+- `FB_F_TRIG` monitors this signal.
+- If the module detects a change from **High to Low** (e.g., releasing a button), the output `Q` briefly switches to `TRUE`.
+- 3. **Time Control (Pulse):**
 
 The output signal `Q` of the edge trigger is connected to the input `IN` of the timer `E_TP`.
 
-* As soon as the falling edge is detected, the timer `E_TP` starts.
-* The timer generates a pulse with a duration of **1 second** (defined by `PT = T#1s`).
+- As soon as the falling edge is detected, the timer `E_TP` starts.
+- The timer generates a pulse with a duration of **1 second** (defined by `PT = T#1s`).
 4. **Signal Output:**
 
 The output `Q` of the timer controls the input `OUT` of the timer `DigitalOutput_Q1`.
 
-* This causes the hardware output `Output_Q1` (e.g., a lamp) to be activated for exactly 1 second after the input signal has dropped.
+- This causes the hardware output `Output_Q1` (e.g., a lamp) to be activated for exactly 1 second after the input signal has dropped.
 
 This causes the hardware output `Output_Q1` (e.g., a lamp) to be activated for exactly 1 second after the input signal has dropped. **Summary Data Flow:**
 

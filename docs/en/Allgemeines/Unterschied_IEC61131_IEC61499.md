@@ -7,15 +7,15 @@ The standards **IEC 61131-3** and **IEC 61499** both define standards for progra
 
 IEC 61131-3 was primarily developed for **programmable logic controllers (PLCs)**. The model assumes a central processing unit that executes a program.
 
-* **Structure:** Configuration -> Resource -> Task -> Program -> Function blocks/functions.
-* **Focus:** A single device controls a process.
+- **Structure:** Configuration -> Resource -> Task -> Program -> Function blocks/functions.
+- **Focus:** A single device controls a process.
 
 ### IEC 61499: Distributed Systems
 
 IEC 61499 extends the concepts of IEC 61131-3 for **distributed systems**. An application can be distributed across multiple devices and resources without requiring reprogramming of its functionality.
 
-* **Structure:** System -> Device -> Resource -> Application -> Function Blocks.
-* **Focus:** Functional units (software blocks) communicate via events and data, regardless of the hardware on which they run.
+- **Structure:** System -> Device -> Resource -> Application -> Function Blocks.
+- **Focus:** Functional units (software blocks) communicate via events and data, regardless of the hardware on which they run.
 
 ## 2. Execution Model
 
@@ -35,10 +35,10 @@ This cycle repeats continuously (e.g., every 10 ms). A function block is called 
 
 Execution in IEC 61499 is based on **events**.
 
-* A function block does **nothing** as long as no event arrives at one of its event inputs.
-* When an event arrives (e.g., `REQ` for Request), the block is "woken up."
-* The **Execution Control (ECC)** then decides which algorithms are executed and which output events (e.g., `CNF` for Confirmation) are fired.
-* There is no global cycle; the execution chain is determined by the flow of events.
+- A function block does **nothing** as long as no event arrives at one of its event inputs.
+- When an event arrives (e.g., `REQ` for Request), the block is "woken up."
+- The **Execution Control (ECC)** then decides which algorithms are executed and which output events (e.g., `CNF` for Confirmation) are fired.
+- There is no global cycle; the execution chain is determined by the flow of events.
 
 ## 3. Function Blocks in Comparison
 
@@ -51,7 +51,7 @@ Execution in IEC 61499 is based on **events**.
 
 ## Summary
 
-* Use **IEC 61131-3** when programming a single PLC and requiring cyclic, deterministic execution.
+- Use **IEC 61131-3** when programming a single PLC and requiring cyclic, deterministic execution.
 
 Use **IEC 61499** when designing distributed systems, requiring component-based software encapsulation, or mapping event-driven processes.
 

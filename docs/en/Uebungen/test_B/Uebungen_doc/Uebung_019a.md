@@ -17,10 +17,10 @@ Learning how to work with alarm masks. In the ISOBUS standard, alarms take prece
 
 ![Uebung_019a_network](./Uebung_019a_network.svg)
 
-* **`I1` & `I2`**: Normal screen selection (M1, M2).
-* **`I3`**: Alarm trigger.
-* **`ACK`**: A softkey on the terminal to acknowledge the alarm.
-* **`AlarmMask_A2_medium`**: A special alarm screen from the pool.
+- **`I1` & `I2`**: Normal screen selection (M1, M2).
+- **`I3`**: Alarm trigger.
+- **`ACK`**: A softkey on the terminal to acknowledge the alarm.
+- **`AlarmMask_A2_medium`**: A special alarm screen from the pool.
 
 -----
 

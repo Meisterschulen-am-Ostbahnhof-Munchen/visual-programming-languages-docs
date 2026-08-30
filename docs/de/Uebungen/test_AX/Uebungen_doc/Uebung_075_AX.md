@@ -17,7 +17,7 @@ Diese Übung demonstriert die Ansteuerung digitaler Ausgänge über einen ISOBUS
 - **Verwendete interne FBs**: keine
 - **Parameter**:
   - `QI` = TRUE (Freigabe)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Dieser Funktionsbaustein stellt ein ISOBUS-konformes Lichtsteuerinterface bereit. Über Adapterausgänge werden verschiedene Lichtfunktionen bereitgestellt, darunter Rechts- und Linksblinker (`RIGHT_TURN_SIGNAL_LIGHTS`, `LEFT_TURN_SIGNAL_LIGHTS`). Die Signale werden aktiv, sobald eine übergeordnete Steuerung die entsprechenden Lichtbefehle sendet.
 
 #### DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3
@@ -27,7 +27,7 @@ Diese Übung demonstriert die Ansteuerung digitaler Ausgänge über einen ISOBUS
 - **Parameter**:
   - `QI` = TRUE (Freigabe)
   - `Output` = `Output_Q1` / `Output_Q2` / `Output_Q3` (jeweils eigener Wert)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Diese Funktionsbausteine kapseln digitale Ausgänge der logiBUS-Hardware. Mit `QI = TRUE` sind sie aktiviert und schalten den angeschlossenen physischen Ausgang gemäß dem ankommenden Adaptersignal. Sie können z. B. für Lampen, Relais oder andere binäre Aktoren verwendet werden.
 
 ## Programmablauf und Verbindungen
@@ -35,24 +35,24 @@ Diese Übung demonstriert die Ansteuerung digitaler Ausgänge über einen ISOBUS
 Die Verdrahtung innerhalb des SubApp-Netzwerks erfolgt ausschließlich über **Adapterverbindungen**:
 
 1. Der Baustein `IA_Lighting` empfängt (aus einer übergeordneten Applikation) die Blinkerbefehle und stellt diese an seinen Adapterausgängen bereit.
-2. Die Verbindung  
-   - **`IA_Lighting.RIGHT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q1.OUT`**  
+2. Die Verbindung
+   - **`IA_Lighting.RIGHT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q1.OUT`**
      leitet das Signal für den rechten Blinker zum digitalen Ausgang Q1.
 
-   - **`IA_Lighting.LEFT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q2.OUT`**  
+   - **`IA_Lighting.LEFT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q2.OUT`**
      leitet das Signal für den linken Blinker zum digitalen Ausgang Q2.
 
 3. Der dritte Ausgangsbaustein `DigitalOutput_Q3` bleibt in dieser Übung ungenutzt (kann als Reserve oder für Erweiterungen dienen).
 
 Dank der Adaptertechnik entfällt eine aufwändige Parameterübergabe – die Signalpropagation erfolgt typisiert und automatisch.
 
-**Lernziele**:  
+**Lernziele**:
 
-- Verständnis von Adapterverbindungen (Socket/Plug) in 4diac IDE  
-- Einbindung eines ISOBUS-Lichtadapters und logiBUS-Digitalausgängen  
-- Erstellen wiederverwendbarer SubApp-Komponenten für Fahrzeuglichtsteuerungen  
+- Verständnis von Adapterverbindungen (Socket/Plug) in 4diac IDE
+- Einbindung eines ISOBUS-Lichtadapters und logiBUS-Digitalausgängen
+- Erstellen wiederverwendbarer SubApp-Komponenten für Fahrzeuglichtsteuerungen
 
-**Schwierigkeitsgrad**: Einfach (grundlegende Adapterkonfiguration)  
+**Schwierigkeitsgrad**: Einfach (grundlegende Adapterkonfiguration)
 **Vorkenntnisse**: Grundlagen der 4diac-IDE, Umgang mit Funktionsbausteinen und Netzwerken
 
 ## Zusammenfassung
@@ -63,4 +63,4 @@ Die Übung „Uebung_075_AX“ zeigt, wie ein ISOBUS-Lichtadapter über Adapterv
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

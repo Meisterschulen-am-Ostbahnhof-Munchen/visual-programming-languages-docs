@@ -20,9 +20,9 @@ Verwendung des Bausteins `RangeBasedPulse`. Es wird gezeigt, wie man ein periodi
 
 ![Uebung_071b_network](./Uebung_071b_network.svg)
 
-  * **`I_WBSD`**: Liefert den Wert `WHEELBASEDMACHINEDISTANCE`.
-  * **`RangeBasedPulse`**: [cite_start]Dieser Baustein erzeugt einen Pegelwechsel am Ausgang `Q`, sobald eine definierte Distanz (hier 5000 mm = 5 Meter) überschritten wurde[cite: 1].
-  * **`E_D_FF`**: Synchronisiert den Puls für den Hardware-Ausgang.
+  - **`I_WBSD`**: Liefert den Wert `WHEELBASEDMACHINEDISTANCE`.
+  - **`RangeBasedPulse`**: [cite_start]Dieser Baustein erzeugt einen Pegelwechsel am Ausgang `Q`, sobald eine definierte Distanz (hier 5000 mm = 5 Meter) überschritten wurde[cite: 1].
+  - **`E_D_FF`**: Synchronisiert den Puls für den Hardware-Ausgang.
 
 -----
 

@@ -78,10 +78,10 @@ The **ADD_2** is a generic function block for adding two values, developed under
 
 ## 🛠️ Related Exercises
 
-* [Exercise_000](../../../../Uebungen/test_B/Uebungen_doc/Uebung_000.md)
-* [Exercise_000_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_000_AX.md)
-* [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
-* [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
+- [Exercise_000](../../../../Uebungen/test_B/Uebungen_doc/Uebung_000.md)
+- [Exercise_000_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_000_AX.md)
+- [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
+- [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Conclusion
 

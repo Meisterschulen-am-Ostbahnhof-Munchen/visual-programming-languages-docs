@@ -43,10 +43,10 @@ Der Adapter `AUI` ist ein unidirektionaler Typ, der ein Ereignis und einen Daten
 
 ## Funktionsweise
 
-1. **Initialisierung**  
+1. **Initialisierung**
    Beim Ereignis `INIT` werden die Parameter `HYSTERESIS` (als UINT) und `Tmin` (als TIME) an den internen Baustein übergeben. Nach erfolgreicher Initialisierung wird `INITO` ausgelöst.
 
-2. **Betrieb**  
+2. **Betrieb**
    Der interne FB `E_D_FF_ANY_HYS_TMIN` arbeitet als getaktetes D‑Flip‑Flop mit Hysterese und Zeitbegrenzung:
 
    - Ein Ereignis an `I.E1` (Clock) übernimmt den momentanen Datenwert von `I.D1`.
@@ -54,7 +54,7 @@ Der Adapter `AUI` ist ein unidirektionaler Typ, der ein Ereignis und einen Daten
    - Zusätzlich wird der Wert mit einer Hysterese (band `HYSTERESIS`) geglättet: Kleine Änderungen unterhalb der Hystereseschwelle werden unterdrückt.
    - Der Ausgang wird über das Ereignis `Q.E1` signalisiert.
 
-3. **Ergebnis**  
+3. **Ergebnis**
    Der Ausgangsadapter `Q` liefert den zuletzt angenommenen, gefilterten Wert.
 
 ## Technische Besonderheiten
@@ -94,4 +94,4 @@ Der `AUI_D_FF_HYS_TMIN` bietet eine kompakte und zuverlässige Lösung zur signa
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

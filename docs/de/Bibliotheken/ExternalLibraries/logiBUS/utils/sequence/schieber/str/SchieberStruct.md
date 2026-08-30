@@ -29,9 +29,9 @@ Die Initialwerte aller Felder sind auf die Konstante `ID_NULL` gesetzt, was eine
 
 ## Technische Besonderheiten
 
-*   **Initialisierung:** Alle Mitgliedsvariablen werden standardmäßig mit dem Wert `ID_NULL` initialisiert. Dies stellt sicher, dass die Struktur in einem definierten, neutralen Zustand beginnt, bevor spezifische IDs zugewiesen werden.
-*   **Typensicherheit:** Durch die Verwendung eines strukturierten Datentyps anstelle einzelner, lose gekoppelter Variablen wird die Code-Wartbarkeit und Lesbarkeit verbessert.
-*   **Kompilierungshinweis:** Der Datentyp ist im Package `logiBUS::utils::sequence::schieber` definiert und importiert die Konstante `ID_NULL` aus dem `isobus::UT::Q::const::IDs`-Namespace.
+-   **Initialisierung:** Alle Mitgliedsvariablen werden standardmäßig mit dem Wert `ID_NULL` initialisiert. Dies stellt sicher, dass die Struktur in einem definierten, neutralen Zustand beginnt, bevor spezifische IDs zugewiesen werden.
+-   **Typensicherheit:** Durch die Verwendung eines strukturierten Datentyps anstelle einzelner, lose gekoppelter Variablen wird die Code-Wartbarkeit und Lesbarkeit verbessert.
+-   **Kompilierungshinweis:** Der Datentyp ist im Package `logiBUS::utils::sequence::schieber` definiert und importiert die Konstante `ID_NULL` aus dem `isobus::UT::Q::const::IDs`-Namespace.
 
 ## Zustandsübersicht
 
@@ -45,9 +45,9 @@ Die Struktur bildet explizit folgende fünf Zustände eines Schiebers ab:
 
 ## Anwendungsszenarien
 
-*   **Zustandsverwaltung:** Ein übergeordneter Steuerungsbaustein kann eine Instanz dieser Struktur halten, um die aktuell gültigen Objekt-IDs für alle Schieberzustände zentral zu verwalten.
-*   **Parametrierung:** Die Struktur kann als konfigurierbarer Parameter an einen Funktionsblock übergeben werden, der dann basierend auf seinem internen Zustand die entsprechende ID aus der Struktur auswählt und z. B. an ein Visualisierungssystem weiterleitet.
-*   **Visualisierung:** Ein HMI- oder SCADA-System kann die in der Struktur hinterlegten IDs nutzen, um das grafische Symbol des Schiebers entsprechend seines aktuellen Zustands (z. B. Farbe, Symbol) zu aktualisieren.
+-   **Zustandsverwaltung:** Ein übergeordneter Steuerungsbaustein kann eine Instanz dieser Struktur halten, um die aktuell gültigen Objekt-IDs für alle Schieberzustände zentral zu verwalten.
+-   **Parametrierung:** Die Struktur kann als konfigurierbarer Parameter an einen Funktionsblock übergeben werden, der dann basierend auf seinem internen Zustand die entsprechende ID aus der Struktur auswählt und z. B. an ein Visualisierungssystem weiterleitet.
+-   **Visualisierung:** Ein HMI- oder SCADA-System kann die in der Struktur hinterlegten IDs nutzen, um das grafische Symbol des Schiebers entsprechend seines aktuellen Zustands (z. B. Farbe, Symbol) zu aktualisieren.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -61,4 +61,4 @@ Der `SchieberStruct` Datentyp ist ein nützliches Hilfskonstrukt für die strukt
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -10,7 +10,7 @@ Hier ist die Dokumentationsseite für die bereitgestellte Übungsdatei.
 
 ## Einleitung
 
-Diese Dokumentation beschreibt die Sub-Applikation `Uebung_039_sub_Outputs`. Dieser Baustein ist Teil einer komplexeren Steuerung (vermutlich "Spiegelabfolge V2 mit Schrittkette") und dient als Schnittstelle zwischen der Steuerungslogik, der Hardware und der Benutzeroberfläche (ISOBUS VT). 
+Diese Dokumentation beschreibt die Sub-Applikation `Uebung_039_sub_Outputs`. Dieser Baustein ist Teil einer komplexeren Steuerung (vermutlich "Spiegelabfolge V2 mit Schrittkette") und dient als Schnittstelle zwischen der Steuerungslogik, der Hardware und der Benutzeroberfläche (ISOBUS VT).
 
 Der Hauptzweck dieses Moduls ist die Ansteuerung eines digitalen Ausgangs, wobei zwei Quellen das Signal aktivieren können: ein automatisches Signal aus dem Programm oder eine manuelle Betätigung über einen Softkey auf dem Terminal. Zusätzlich wird der Status visuell zurückgemeldet.
 
@@ -28,7 +28,7 @@ Dieser Baustein kapselt die Logik für einen einzelnen Aktor/Ausgang.
     - **QX**: `logiBUS::io::DQ::logiBUS_QX`
         - **Beschreibung**: Treiberbaustein für einen physikalischen digitalen Ausgang am logiBUS.
         - **Parameter**: `QI` = `TRUE` (Baustein ist aktiviert).
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `Output`: Verbunden mit dem externen Eingang `Output` (definiert die Hardware-Adresse).
             - `OUT`: Erhält das Schaltsignal vom `OR_2`-Baustein.
         - **Ereigniseingang**: `REQ` (Trigger zur Aktualisierung des Ausgangs).
@@ -42,14 +42,14 @@ Dieser Baustein kapselt die Logik für einen einzelnen Aktor/Ausgang.
 
     - **OR_2**: `iec61131::bitwiseOperators::OR_2`
         - **Beschreibung**: Logisches ODER-Gatter.
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `IN1`: Verbunden mit `IX.IN` (Softkey-Status).
             - `IN2`: Verbunden mit dem externen Eingang `OUT` (Steuersignal).
         - **Funktionsweise**: Der Ausgang wird TRUE, wenn entweder der Softkey gedrückt wird ODER das externe Steuersignal anliegt.
 
     - **GreenWhiteBackground**: `MyLib::sys::GreenWhiteBackground`
         - **Beschreibung**: Eine weitere Sub-Applikation (vermutlich zur Visualisierung), die den Hintergrund des Softkeys steuert (z.B. Grün bei Aktivität, Weiß bei Inaktivität).
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `DI1`: Verbunden mit dem Ergebnis der ODER-Logik (`OR_2.OUT`).
             - `u16ObjId`: Die ID des zu färbenden Objekts.
 
@@ -61,18 +61,18 @@ Dieser Baustein kapselt die Logik für einen einzelnen Aktor/Ausgang.
 Der Daten- und Ereignisfluss innerhalb der Sub-Applikation gestaltet sich wie folgt:
 
 1.  **Initialisierung und Trigger**:
-    *   Der Baustein reagiert auf das Ereignis `REQ` von außen oder auf ein `IND`-Ereignis des Softkeys (`IX`).
-    *   Die Objekt-ID für den Softkey (`u16ObjId`) und die Hardware-Adresse (`Output`) werden von außen in die internen Bausteine `IX`, `QX` und `GreenWhiteBackground` durchgeleitet.
+    -   Der Baustein reagiert auf das Ereignis `REQ` von außen oder auf ein `IND`-Ereignis des Softkeys (`IX`).
+    -   Die Objekt-ID für den Softkey (`u16ObjId`) und die Hardware-Adresse (`Output`) werden von außen in die internen Bausteine `IX`, `QX` und `GreenWhiteBackground` durchgeleitet.
 
 2.  **Logische Verknüpfung (OR)**:
-    *   Der Baustein `OR_2` nimmt zwei boolesche Signale entgegen:
-        *   `IN1`: Den Status des Softkeys (`IX.IN`).
-        *   `IN2`: Den externen Eingang `OUT` (z.B. von einer Schrittkette).
-    *   Sobald eines dieser Signale `TRUE` ist, schaltet der Ausgang des `OR_2` auf `TRUE`. Dies ermöglicht eine "Oder-Schaltung": Der Aktor läuft, wenn die Automatik es will **oder** der Bediener die Taste drückt.
+    -   Der Baustein `OR_2` nimmt zwei boolesche Signale entgegen:
+        -   `IN1`: Den Status des Softkeys (`IX.IN`).
+        -   `IN2`: Den externen Eingang `OUT` (z.B. von einer Schrittkette).
+    -   Sobald eines dieser Signale `TRUE` ist, schaltet der Ausgang des `OR_2` auf `TRUE`. Dies ermöglicht eine "Oder-Schaltung": Der Aktor läuft, wenn die Automatik es will **oder** der Bediener die Taste drückt.
 
 3.  **Ausgabe und Feedback**:
-    *   Das Ergebnis der ODER-Verknüpfung triggert den Hardware-Ausgang `QX`.
-    *   Gleichzeitig wird das Ergebnis an die Sub-Applikation `GreenWhiteBackground` weitergegeben. Sobald der Hardware-Ausgang aktiv ist (durch `QX.CNF` bestätigt), wird die Visualisierung aktualisiert (wahrscheinlich wird der Softkey grün hinterlegt).
+    -   Das Ergebnis der ODER-Verknüpfung triggert den Hardware-Ausgang `QX`.
+    -   Gleichzeitig wird das Ergebnis an die Sub-Applikation `GreenWhiteBackground` weitergegeben. Sobald der Hardware-Ausgang aktiv ist (durch `QX.CNF` bestätigt), wird die Visualisierung aktualisiert (wahrscheinlich wird der Softkey grün hinterlegt).
 
 ## Zusammenfassung
 
@@ -82,4 +82,4 @@ Die Übung bzw. der Baustein `Uebung_039_sub_Outputs` stellt ein robustes Modul 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

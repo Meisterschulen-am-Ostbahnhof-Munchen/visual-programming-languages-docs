@@ -50,16 +50,16 @@ Diese SubApp demonstriert die Erzeugung einer ISOBUS CAN-Nachricht mit einem ink
 
 Die SubApp arbeitet ereignisgesteuert. Der Ablauf startet, sobald der Baustein **CallbackFB** ein externes Ereignis erhält (nicht im SubApp‑Netzwerk dargestellt) und seinen `REQ`‑Ausgang auslöst. Dieses Ereignis triggert den Zähler **E_CTU** (über den Eingang `CU`). Da der Parameter `PV` auf `0` gesetzt ist, wird sofort der Überlauf (`CUO`) aktiviert.
 
-1. **Zählerstand in Byte umwandeln**:  
+1. **Zählerstand in Byte umwandeln**:
    Der Überlauf (`E_CTU.CUO`) triggert den Baustein `F_UINT_TO_BYTE`. Der aktuelle Zählerstand (`E_CTU.CV`) wird an den Dateneingang `IN` übergeben. Der Baustein konvertiert den UINT‑Wert in ein einzelnes Byte (`OUT`).
 
-2. **Byte‑Array aufbauen**:  
+2. **Byte‑Array aufbauen**:
    Das konvertierte Byte (`F_UINT_TO_BYTE.OUT`) wird an den Dateneingang `IN_00` des Bausteins **BYTES_TO_ARR08B** weitergeleitet. Die übrigen Eingänge (`IN_01` … `IN_07`) sind fest mit `16#00` belegt. Bei der Auslösung (`BYTES_TO_ARR08B.REQ`) wird ein Array von 8 Bytes erzeugt, wobei die Reihenfolge ggf. umgekehrt wird („reversing“). Das vollständige Array steht am Ausgang `OUT` zur Verfügung.
 
-3. **Nachrichtenstruktur multiplexen**:  
+3. **Nachrichtenstruktur multiplexen**:
    Der Baustein **STRUCT_MUX** empfängt das Byte‑Array über seinen Dateneingang `data`. Bei jedem Aufruf (`STRUCT_MUX.REQ`) erzeugt er eine Struktur vom Typ `CAN_MSG` mit den vorgegebenen Parametern (`u16DaSize=0`, `u8Priority=7`). Die fertige Nachricht wird am Ausgang `OUT` bereitgestellt.
 
-4. **Nachricht senden**:  
+4. **Nachricht senden**:
    Die erzeugte `CAN_MSG`‑Struktur wird in den Dateneingang `DI1` des **CallbackFB** geschrieben. Die Bestätigung des Multiplex (`STRUCT_MUX.CNF`) triggert den Bestätigungseingang `CallbackFB.CNF`. Der CallbackFB kann nun die Nachricht über den Adapter `PLUG1` an die ISOBUS‑Schnittstelle weiterleiten.
 
 **Datenflüsse** (vereinfacht):
@@ -85,5 +85,5 @@ Die Übung **Uebung_120x_sub** zeigt, wie aus einem einfachen Zählerwert eine v
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

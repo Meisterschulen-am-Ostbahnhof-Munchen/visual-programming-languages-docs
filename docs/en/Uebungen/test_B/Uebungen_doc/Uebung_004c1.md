@@ -17,8 +17,8 @@ Using the `BUTTON_DOUBLE_CLICK` event to control a memory function.
 
 ![Uebung_004c1_network](./Uebung_004c1_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. This is configured as `BUTTON_DOUBLE_CLICK` in the parameter `InputEvent`.
-* **`E_T_FF`**: The toggle flip-flop.
+- **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. This is configured as `BUTTON_DOUBLE_CLICK` in the parameter `InputEvent`.
+- **`E_T_FF`**: The toggle flip-flop.
 
 -----
 

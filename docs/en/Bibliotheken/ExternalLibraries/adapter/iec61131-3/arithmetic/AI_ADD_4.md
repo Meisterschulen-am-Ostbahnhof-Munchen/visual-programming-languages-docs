@@ -38,14 +38,14 @@ The block does not have any traditional event- or data-based inputs and outputs 
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AI`): First addend for the addition operation.
-* **IN2** (Type: `adapter::types::unidirectional::AI`): Second addend for the addition operation.
-* **IN3** (Type: `adapter::types::unidirectional::AI`): Third addend for the addition operation.
-* **IN4** (Type: `adapter::types::unidirectional::AI`): Fourth addend for the addition operation.
+- **IN1** (Type: `adapter::types::unidirectional::AI`): First addend for the addition operation.
+- **IN2** (Type: `adapter::types::unidirectional::AI`): Second addend for the addition operation.
+- **IN3** (Type: `adapter::types::unidirectional::AI`): Third addend for the addition operation.
+- **IN4** (Type: `adapter::types::unidirectional::AI`): Fourth addend for the addition operation.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AI`): Output adapter that provides the result of the addition (`IN1 + IN2 + IN3 + IN4`).
+- **OUT** (Type: `adapter::types::unidirectional::AI`): Output adapter that provides the result of the addition (`IN1 + IN2 + IN3 + IN4`).
 
 ## Functionality
 
@@ -57,8 +57,8 @@ The result is immediately passed to the output adapter `OUT`, and the correspond
 
 ## Technical Features
 
-* **Generic Design:** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AI_ADD'`. This makes it highly flexible and allows it to be applied to different numeric data types, provided the adapters used support this.
-* **Generic Design:** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AI_ADD'`. * **Unidirectional Adapters:** Using `unidirectional::AI` adapters drastically reduces wiring complexity in the function block diagram, as data and trigger events are bundled in a single connection.
+- **Generic Design:** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AI_ADD'`. This makes it highly flexible and allows it to be applied to different numeric data types, provided the adapters used support this.
+- **Generic Design:** The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AI_ADD'`. * **Unidirectional Adapters:** Using `unidirectional::AI` adapters drastically reduces wiring complexity in the function block diagram, as data and trigger events are bundled in a single connection.
 
 ## State Overview
 
@@ -70,9 +70,9 @@ The function block behaves purely reactively (event-driven):
 
 ## Application Scenarios
 
-* **Measurement Aggregation:** Summing of currents, powers, or flow rates from four different sources or sensors.
-* **Average Preparation:** Combining four analog measurement values for subsequent division (e.g., for moving average calculation or redundancy checks).
-* **Setpoint Offset Calculation:** Adding base setpoints, correction values, and user offsets in process engineering plants.
+- **Measurement Aggregation:** Summing of currents, powers, or flow rates from four different sources or sensors.
+- **Average Preparation:** Combining four analog measurement values for subsequent division (e.g., for moving average calculation or redundancy checks).
+- **Setpoint Offset Calculation:** Adding base setpoints, correction values, and user offsets in process engineering plants.
 
 ## Comparison with Similar Function Blocks
 

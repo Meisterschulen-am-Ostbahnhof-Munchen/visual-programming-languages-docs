@@ -11,26 +11,26 @@ This function block extracts the individual 8 bytes of a specific 8-byte structu
 
 ### **Event Inputs**
 
-* **REQ**: Triggers the function and initiates the extraction of the bytes from the data input `IN`.
+- **REQ**: Triggers the function and initiates the extraction of the bytes from the data input `IN`.
 
 #### **Event Outputs**
 
-* **CNF**: Sent after successful execution and updating of all output bytes. This event is associated with all `OUT_xx` data outputs.
+- **CNF**: Sent after successful execution and updating of all output bytes. This event is associated with all `OUT_xx` data outputs.
 
 ### **Data Inputs**
 
-* **IN** (`logiBUS::utils::conversion::types::ST08B`): The input containing the 8-byte structure from which the bytes are to be extracted.
+- **IN** (`logiBUS::utils::conversion::types::ST08B`): The input containing the 8-byte structure from which the bytes are to be extracted.
 
 ### **Data Outputs**
 
-* **OUT_00** (`BYTE`): The first extracted byte (byte 00).
-* **OUT_01** (`BYTE`): The second extracted byte (byte 01).
-* **OUT_02** (`BYTE`): The third extracted byte (byte 02).
-* **OUT_03** (`BYTE`): The fourth extracted byte (byte 03).
-* **OUT_04** (`BYTE`): The fifth extracted byte (Byte 04).
-* **OUT_05** (`BYTE`): The sixth extracted byte (Byte 05).
-* **OUT_06** (`BYTE`): The seventh extracted byte (Byte 06).
-* **OUT_07** (`BYTE`): The eighth extracted byte (Byte 07).
+- **OUT_00** (`BYTE`): The first extracted byte (byte 00).
+- **OUT_01** (`BYTE`): The second extracted byte (byte 01).
+- **OUT_02** (`BYTE`): The third extracted byte (byte 02).
+- **OUT_03** (`BYTE`): The fourth extracted byte (byte 03).
+- **OUT_04** (`BYTE`): The fifth extracted byte (Byte 04).
+- **OUT_05** (`BYTE`): The sixth extracted byte (Byte 05).
+- **OUT_06** (`BYTE`): The seventh extracted byte (Byte 06).
+- **OUT_07** (`BYTE`): The eighth extracted byte (Byte 07).
 
 ### **Adapter**
 
@@ -58,10 +58,10 @@ The function block `ST08B_TO_BYTES` is a pure converter without internal state. 
 
 ## Application Scenarios
 
-* **Data Logging and Analysis**: When an 8-byte structure is received, the individual bytes can be extracted for separate logging, monitoring, or use in specific analyses.
-* **Interface Adaptation**: Adapting data formats when an external interface provides an 8-byte structure, but subsequent components expect individual bytes.
-* **Bit-Level Manipulation**: Preparing data for bit-level operations where each byte must be addressed individually.
-* **Debugging**: Simplifies debugging data in 8-byte structures by making the contents of individual bytes visible.
+- **Data Logging and Analysis**: When an 8-byte structure is received, the individual bytes can be extracted for separate logging, monitoring, or use in specific analyses.
+- **Interface Adaptation**: Adapting data formats when an external interface provides an 8-byte structure, but subsequent components expect individual bytes.
+- **Bit-Level Manipulation**: Preparing data for bit-level operations where each byte must be addressed individually.
+- **Debugging**: Simplifies debugging data in 8-byte structures by making the contents of individual bytes visible.
 
 ## ⚖️ Comparison with Similar Components
 
@@ -75,4 +75,4 @@ The `ST08B_TO_BYTES` function block is a useful tool for decomposing a specific 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

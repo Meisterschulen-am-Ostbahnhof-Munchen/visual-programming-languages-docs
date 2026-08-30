@@ -40,6 +40,6 @@ If `S1` is TRUE, then `Q1` is TRUE, regardless of whether `R` is true.
 
 ## See also
 
-* [E_SR (IEC 61499)](../../StandardLibraries/events/E_SR.md): The event-driven equivalent in IEC 61499. Note that there is no guaranteed "dominance" for concurrent events.
+- [E_SR (IEC 61499)](../../StandardLibraries/events/E_SR.md): The event-driven equivalent in IEC 61499. Note that there is no guaranteed "dominance" for concurrent events.
 
 ]

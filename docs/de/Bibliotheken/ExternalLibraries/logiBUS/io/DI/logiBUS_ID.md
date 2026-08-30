@@ -77,7 +77,7 @@ Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
+- [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
 
 ## Fazit
 
@@ -87,4 +87,4 @@ Der logiBUS_ID Funktionsblock stellt eine spezialisierte Schnittstelle für logi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

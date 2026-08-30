@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_085`. Hier wird das Prinz
 
 ![Uebung_085_network](./Uebung_085_network.svg)
 
-* [Das Relais im Detail: Schaltverstärker, Schutz und die Geheimnisse von A1/A2, 85/86 und der Hysterese](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
+- [Das Relais im Detail: Schaltverstärker, Schutz und die Geheimnisse von A1/A2, 85/86 und der Hysterese](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
 
 ----
 
@@ -24,9 +24,9 @@ Verwendung des Bausteins `E_D_FF`. Ziel ist es, einen Datenwert (TRUE/FALSE) ers
 
 ### Funktionsbausteine (FBs)
 
-  * **`I1` (Data)**: Liefert den Soll-Zustand.
-  * **`I2` (Clock)**: Liefert den Übernahme-Impuls.
-  * **`E_D_FF`**: Der Speicherbaustein. [cite_start]Er übernimmt den Wert am Eingang `D` nur dann an den Ausgang `Q`, wenn ein Ereignis am Eingang `CLK` empfängt[cite: 1].
+  - **`I1` (Data)**: Liefert den Soll-Zustand.
+  - **`I2` (Clock)**: Liefert den Übernahme-Impuls.
+  - **`E_D_FF`**: Der Speicherbaustein. [cite_start]Er übernimmt den Wert am Eingang `D` nur dann an den Ausgang `Q`, wenn ein Ereignis am Eingang `CLK` empfängt[cite: 1].
 
 -----
 

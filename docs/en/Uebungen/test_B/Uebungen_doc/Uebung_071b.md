@@ -17,9 +17,9 @@ Use of the function block `RangeBasedPulse`. It demonstrates how to generate a p
 
 ![Uebung_071b_network](./Uebung_071b_network.svg)
 
-* **`I_WBSD`**: Returns the value `WHEELBASEDMACHINEDISTANCE`.
-* **`RangeBasedPulse`**: [cite_start]This block generates a level change at output `Q` as soon as a defined distance (here 5000 mm = 5 meters) has been exceeded[cite: 1].
-* **`E_D_FF`**: Synchronizes the pulse for the hardware output.
+- **`I_WBSD`**: Returns the value `WHEELBASEDMACHINEDISTANCE`.
+- **`RangeBasedPulse`**: [cite_start]This block generates a level change at output `Q` as soon as a defined distance (here 5000 mm = 5 meters) has been exceeded[cite: 1].
+- **`E_D_FF`**: Synchronizes the pulse for the hardware output.
 
 -----
 

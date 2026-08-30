@@ -14,12 +14,12 @@ This comprehensive textbook is dedicated to the IEC 61499 standard and its appli
 
 ### Links and Resources
 
-* [Official Product Page (ISA)](https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing)
-* [Amazon](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
-* [Preview on Yumpu](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
-* [FB61499 Project Page](https://www.fb61499.com/IEC61499German.html)
-* [Sample Page Preview (PDF)](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
-* [Order Directly](https://www.isa.org/IEC61499German)
+- [Official Product Page (ISA)](https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing)
+- [Amazon](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
+- [Preview on Yumpu](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
+- [FB61499 Project Page](https://www.fb61499.com/IEC61499German.html)
+- [Sample Page Preview (PDF)](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
+- [Order Directly](https://www.isa.org/IEC61499German)
 
 ---
 
@@ -35,4 +35,4 @@ This work was written by experts in the field of automation technology (includin
 
 ### Links and Resources
 
-* [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)
+- [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)

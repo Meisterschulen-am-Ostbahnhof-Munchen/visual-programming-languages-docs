@@ -48,7 +48,7 @@ Damit wird eine synchrone, ereignisgesteuerte Umsetzung von BOOL in LINT realisi
 
 ## Technische Besonderheiten
 
-- **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.  
+- **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.
   Copyright © 2026 HR Agrartechnik GmbH.
 
 - **Autor & Version**: Entwickelt von Franz Höpfinger, Version 1.0, Stand 2026‑02‑17.
@@ -78,4 +78,4 @@ Der AX_TO_ALI ist ein kompakter, lizenzkonformer Composite‑FB zur zuverlässig
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

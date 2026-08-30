@@ -31,17 +31,17 @@ The function block `ALR_SUB_2` is a generic block for performing mathematical su
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALR`):
+- **IN1** (Type: `adapter::types::unidirectional::ALR`):
 
 The first input value (minuend) of the subtraction. This adapter receives both the value and the triggering event.
 
-* **IN2** (Type: `adapter::types::unidirectional::ALR`):
+- **IN2** (Type: `adapter::types::unidirectional::ALR`):
 
 The second input value (subtrahend) to be subtracted from the first value.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALR`):
+- **OUT** (Type: `adapter::types::unidirectional::ALR`):
 
 The result of the subtraction (difference). This adapter outputs the calculated result along with the corresponding output event.
 
@@ -55,8 +55,8 @@ As soon as the values at the input adapters change or a corresponding trigger ev
 
 ## Technical Features
 
-* **Generic Behavior**: The module is defined as a generic type (`GEN_ALR_SUB`). It is therefore not rigidly bound to a single data type (such as only `REAL` or only `INT`), but adapts flexibly to the data types defined in the adapter `ALR`.
-* **Unidirectional Adapters**: By using unidirectional adapters (`unidirectional::ALR`), the data flow is clearly directed in one direction, which increases system stability and minimizes unnecessary communication overhead.
+- **Generic Behavior**: The module is defined as a generic type (`GEN_ALR_SUB`). It is therefore not rigidly bound to a single data type (such as only `REAL` or only `INT`), but adapts flexibly to the data types defined in the adapter `ALR`.
+- **Unidirectional Adapters**: By using unidirectional adapters (`unidirectional::ALR`), the data flow is clearly directed in one direction, which increases system stability and minimizes unnecessary communication overhead.
 
 ## State Overview
 
@@ -64,15 +64,15 @@ Since `ALR_SUB_2` is a purely mathematical, data-flow-oriented function block, i
 
 ## Application Scenarios
 
-* **Control Engineering (Calculation of Control Deviation)**:
+- **Control Engineering (Calculation of Control Deviation)**:
 
 Determining the difference between a setpoint (reference input at `IN1`) and an actual value (controlled variable at `IN2`) to provide the control deviation at output `OUT` for a downstream PID controller.
 
-* **Difference Measurements**:
+- **Difference Measurements**:
 
 Calculation of physical difference values, for example, to determine the pressure drop across a filter (pressure before the filter at `IN1` minus pressure after the filter at `IN2`).
 
-* **Offset Correction**:
+- **Offset Correction**:
 
 Subtracting a constant or variable correction value from a raw analog signal.
 

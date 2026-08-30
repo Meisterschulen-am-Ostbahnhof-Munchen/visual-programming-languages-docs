@@ -46,8 +46,8 @@ Der FB besitzt keine eigenständigen Ereignis-Ausgänge auf der obersten Ebene. 
 
 Der FB besitzt zwei Adapter-Schnittstellen:
 
-* **Socket (Eingang)**: `ALR_IN` – Adapter für unidirektionale LREAL-Daten (Typ `adapter::types::unidirectional::ALR`)
-* **Plug (Ausgang)**: `AI_OUT` – Adapter für unidirektionale INT-Daten (Typ `adapter::types::unidirectional::AI`)
+- **Socket (Eingang)**: `ALR_IN` – Adapter für unidirektionale LREAL-Daten (Typ `adapter::types::unidirectional::ALR`)
+- **Plug (Ausgang)**: `AI_OUT` – Adapter für unidirektionale INT-Daten (Typ `adapter::types::unidirectional::AI`)
 
 ## Funktionsweise
 
@@ -62,9 +62,9 @@ Der gesamte Ablauf erfolgt synchron in einem Schritt.
 
 ## Technische Besonderheiten
 
-* Der FB ist ein **Composite-Baustein** – er besitzt keine eigene Zustandsmaschine (ECC), sondern realisiert die Logik über ein internes Subnetzwerk.
-* Die Konvertierung folgt der IEC 61131-3-Funktion `LREAL_TO_INT`: Nachkommastellen werden abgeschnitten (Abschneiden gegen Null), Über- oder Unterläufe sind implementierungsabhängig.
-* Der Baustein ist als unidirektionale Adapter-Kopplung ausgelegt – es werden keine Rückkanäle unterstützt.
+- Der FB ist ein **Composite-Baustein** – er besitzt keine eigene Zustandsmaschine (ECC), sondern realisiert die Logik über ein internes Subnetzwerk.
+- Die Konvertierung folgt der IEC 61131-3-Funktion `LREAL_TO_INT`: Nachkommastellen werden abgeschnitten (Abschneiden gegen Null), Über- oder Unterläufe sind implementierungsabhängig.
+- Der Baustein ist als unidirektionale Adapter-Kopplung ausgelegt – es werden keine Rückkanäle unterstützt.
 
 ## Zustandsübersicht
 
@@ -72,9 +72,9 @@ Als Composite-FB besitzt **ALR_TO_AI** kein eigenes Zustandsdiagramm. Der intern
 
 ## Anwendungsszenarien
 
-* **Sensorwertaufbereitung**: Umwandlung eines LREAL-Signals (z. B. von einem analogen Sensoradapter) in ein INT-Signal, das von einer SPS oder einer Steuerung mit integer-basierten Adaptern weiterverarbeitet wird.
-* **Adapterbrücke**: Verbindung von Adaptertypen unterschiedlicher physikalischer Einheiten, wenn nur der Datentyp, nicht die Skalierung geändert werden muss.
-* **Schnittstellenanpassung**: Einsatz in landwirtschaftlichen Steuerungen (z. B. HR Agrartechnik – allgemein), wo LREAL-Werte aus Sensoren auf ein CAN-basiertes INT-Adapterinterface abgebildet werden.
+- **Sensorwertaufbereitung**: Umwandlung eines LREAL-Signals (z. B. von einem analogen Sensoradapter) in ein INT-Signal, das von einer SPS oder einer Steuerung mit integer-basierten Adaptern weiterverarbeitet wird.
+- **Adapterbrücke**: Verbindung von Adaptertypen unterschiedlicher physikalischer Einheiten, wenn nur der Datentyp, nicht die Skalierung geändert werden muss.
+- **Schnittstellenanpassung**: Einsatz in landwirtschaftlichen Steuerungen (z. B. HR Agrartechnik – allgemein), wo LREAL-Werte aus Sensoren auf ein CAN-basiertes INT-Adapterinterface abgebildet werden.
 
 ## Vergleich mit ähnlichen Bausteinen
 
@@ -94,4 +94,4 @@ Der **ALR_TO_AI** ist ein praktischer Composite-FB zur standardisierten Umwandlu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

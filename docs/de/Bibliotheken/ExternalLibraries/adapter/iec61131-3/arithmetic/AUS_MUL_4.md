@@ -34,20 +34,20 @@ Durch seinen generischen Charakter (`GEN_AUS_MUL`) ist der Baustein flexibel ein
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AUS`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
-*   **IN2** (Typ: `adapter::types::unidirectional::AUS`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
-*   **IN3** (Typ: `adapter::types::unidirectional::AUS`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
-*   **IN4** (Typ: `adapter::types::unidirectional::AUS`): Vierter Eingangswert (Multiplikand 4) für die Multiplikation.
+-   **IN1** (Typ: `adapter::types::unidirectional::AUS`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
+-   **IN2** (Typ: `adapter::types::unidirectional::AUS`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
+-   **IN3** (Typ: `adapter::types::unidirectional::AUS`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
+-   **IN4** (Typ: `adapter::types::unidirectional::AUS`): Vierter Eingangswert (Multiplikand 4) für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das berechnete Produkt (Ergebnis der Multiplikation).
+-   **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das berechnete Produkt (Ergebnis der Multiplikation).
 
 ---
 
 ## Funktionsweise
 
-Sobald an den Eingangs-Adaptern (`IN1` bis `IN4`) neue Datenwerte und die entsprechenden Triggereignisse anliegen, führt der Baustein die Multiplikation durch. 
+Sobald an den Eingangs-Adaptern (`IN1` bis `IN4`) neue Datenwerte und die entsprechenden Triggereignisse anliegen, führt der Baustein die Multiplikation durch.
 
 Die mathematische Berechnung folgt der Formel:
 
@@ -59,8 +59,8 @@ Das berechnete Ergebnis wird zusammen mit einem entsprechenden Ausgabe-Ereignis 
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Durch die Definition als `GEN_AUS_MUL` ist der Baustein nicht auf einen festen Datentyp fixiert, was die Wiederverwendbarkeit in verschiedenen Projekten drastisch erhöht.
-*   **Adapterbasierte Kommunikation:** Die Verwendung von unidirektionalen `AUS`-Adaptern sorgt für ein übersichtliches Anwendungsdiagramm, da Daten- und Eventleitungen in einer einzigen Verbindung gebündelt werden. Dies reduziert Verdrahtungsfehler in der Entwicklungsumgebung.
+-   **Generischer Baustein:** Durch die Definition als `GEN_AUS_MUL` ist der Baustein nicht auf einen festen Datentyp fixiert, was die Wiederverwendbarkeit in verschiedenen Projekten drastisch erhöht.
+-   **Adapterbasierte Kommunikation:** Die Verwendung von unidirektionalen `AUS`-Adaptern sorgt für ein übersichtliches Anwendungsdiagramm, da Daten- und Eventleitungen in einer einzigen Verbindung gebündelt werden. Dies reduziert Verdrahtungsfehler in der Entwicklungsumgebung.
 
 ---
 
@@ -72,17 +72,17 @@ Der Funktionsbaustein verhält sich wie ein klassischer, zustandsloser mathemati
 
 ## Anwendungsszenarien
 
-*   **Skalierung und Kalibrierung:** Berechnung von komplexeren physikalischen Werten, bei denen mehrere Faktoren (z. B. Sensorwert × Kalibrierungsfaktor × Temperaturkompensation × Einheitenumrechnung) multipliziert werden müssen.
-*   **Leistungsberechnung:** Kombination von mehreren Messgrößen in der Prozesstechnik.
-*   **Mehrstufige Verstärkungsregelungen:** Kaskadierung von Verstärkungsfaktoren in Steuerungsalgorithmen.
+-   **Skalierung und Kalibrierung:** Berechnung von komplexeren physikalischen Werten, bei denen mehrere Faktoren (z. B. Sensorwert × Kalibrierungsfaktor × Temperaturkompensation × Einheitenumrechnung) multipliziert werden müssen.
+-   **Leistungsberechnung:** Kombination von mehreren Messgrößen in der Prozesstechnik.
+-   **Mehrstufige Verstärkungsregelungen:** Kaskadierung von Verstärkungsfaktoren in Steuerungsalgorithmen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu Standard-Multiplikationsbausteinen (wie dem klassischen `MUL` der IEC 61131-3), die mit einzelnen Pins für Events und Daten arbeiten, bietet der `AUS_MUL_4` folgende Vorteile:
-*   **Weniger Verbindungen:** Vier separate Eingänge und ein Ausgang würden im klassischen Modell mindestens 10 Verbindungen (5 Events, 5 Datenleitungen) erfordern. Durch die Adapter-Technologie wird dies auf 5 Adapter-Verbindungen reduziert.
-*   **Kompaktheit:** Das Kaskadieren von mehreren 2-fach Multiplizierern entfällt, da direkt vier Operanden in einem einzigen Baustein verarbeitet werden können.
+-   **Weniger Verbindungen:** Vier separate Eingänge und ein Ausgang würden im klassischen Modell mindestens 10 Verbindungen (5 Events, 5 Datenleitungen) erfordern. Durch die Adapter-Technologie wird dies auf 5 Adapter-Verbindungen reduziert.
+-   **Kompaktheit:** Das Kaskadieren von mehreren 2-fach Multiplizierern entfällt, da direkt vier Operanden in einem einzigen Baustein verarbeitet werden können.
 
 ---
 

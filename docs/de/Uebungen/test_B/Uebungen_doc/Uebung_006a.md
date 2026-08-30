@@ -22,10 +22,10 @@ Einführung des `E_T_FF_SR` Bausteins. Dieser vereint die Funktionen eines Toggl
 
 ![Uebung_006a_network](./Uebung_006a_network.svg)
 
-  * **`I1` (Set)**: Schaltet den Ausgang ein.
-  * **`I2` (Reset)**: Schaltet den Ausgang aus.
-  * **`I3` (Toggle)**: Wechselt den aktuellen Zustand.
-  * **`E_T_FF_SR`**: Der Kombi-Baustein für alle drei Ereignistypen.
+  - **`I1` (Set)**: Schaltet den Ausgang ein.
+  - **`I2` (Reset)**: Schaltet den Ausgang aus.
+  - **`I3` (Toggle)**: Wechselt den aktuellen Zustand.
+  - **`E_T_FF_SR`**: Der Kombi-Baustein für alle drei Ereignistypen.
 
 -----
 
@@ -33,9 +33,9 @@ Einführung des `E_T_FF_SR` Bausteins. Dieser vereint die Funktionen eines Toggl
 
 Der Baustein reagiert auf jedes der drei Eingangs-Events individuell:
 
-*   Ein Event an `S` setzt den Zustand fest auf `TRUE`.
-*   Ein Event an `R` setzt den Zustand fest auf `FALSE`.
-*   Ein Event an `CLK` invertiert den aktuellen Zustand (Toggle).
+-   Ein Event an `S` setzt den Zustand fest auf `TRUE`.
+-   Ein Event an `R` setzt den Zustand fest auf `FALSE`.
+-   Ein Event an `CLK` invertiert den aktuellen Zustand (Toggle).
 
 Alle Ereignisse führen zu einer Aktualisierung des Ausgangs `Q` und feuern das Bestätigungs-Event `EO` ab, um die Hardware anzusteuern.
 
@@ -45,6 +45,6 @@ Alle Ereignisse führen zu einer Aktualisierung des Ausgangs `Q` und feuern das 
 
 **Gebäude-Lichtsteuerung**:
 
-*   **Vor Ort**: Ein Taster im Zimmer toggelt das Licht (`I3`).
-*   **Zentrale**: Am Hauseingang gibt es einen Taster "Gute Nacht", der alle Lichter per Reset (`I2`) ausschaltet.
-*   **Alarmanlage**: Im Falle eines Einbruchs setzt die Zentrale alle Lichter per Set (`I1`) dauerhaft ein.
+-   **Vor Ort**: Ein Taster im Zimmer toggelt das Licht (`I3`).
+-   **Zentrale**: Am Hauseingang gibt es einen Taster "Gute Nacht", der alle Lichter per Reset (`I2`) ausschaltet.
+-   **Alarmanlage**: Im Falle eines Einbruchs setzt die Zentrale alle Lichter per Set (`I1`) dauerhaft ein.

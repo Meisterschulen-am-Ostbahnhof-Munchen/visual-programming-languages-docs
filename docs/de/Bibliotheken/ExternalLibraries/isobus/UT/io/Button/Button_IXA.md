@@ -73,8 +73,8 @@ Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Button_IXA:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a2_AX.md)
-* [Uebung_010a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a3_AX.md)
+- [Uebung_010a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a2_AX.md)
+- [Uebung_010a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a3_AX.md)
 
 ## Fazit
 

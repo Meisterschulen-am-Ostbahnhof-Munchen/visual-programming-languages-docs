@@ -44,8 +44,8 @@ The **data output signal** is provided via plug `AI_OUT`:
 
 The function block has two adapter interfaces:
 
-* **Socket (Input)**: `ALR_IN` – Adapter for unidirectional LREAL data (Type `adapter::types::unidirectional::ALR`)
-* **Plug (Output)**: `AI_OUT` – Adapter for unidirectional INT data (Type `adapter::types::unidirectional::AI`)
+- **Socket (Input)**: `ALR_IN` – Adapter for unidirectional LREAL data (Type `adapter::types::unidirectional::ALR`)
+- **Plug (Output)**: `AI_OUT` – Adapter for unidirectional INT data (Type `adapter::types::unidirectional::AI`)
 
 ## Functionality
 
@@ -58,15 +58,15 @@ The **ALR_TO_AI** function block contains an internal conversion block `F_LREAL_
 
 The entire process is synchronous and performed in a single step.
 
-* The function block (FB) is a **composite function block** – it does not have its own state machine (ECC) but implements the logic via an internal subnetwork.
-* The conversion follows the IEC 61131-3 function `LREAL_TO_INT`: decimal places are truncated (truncation to zero), and overflows or underflows are implementation-dependent.
-* The function block is designed as a unidirectional adapter coupling – no feedback channels are supported.
+- The function block (FB) is a **composite function block** – it does not have its own state machine (ECC) but implements the logic via an internal subnetwork.
+- The conversion follows the IEC 61131-3 function `LREAL_TO_INT`: decimal places are truncated (truncation to zero), and overflows or underflows are implementation-dependent.
+- The function block is designed as a unidirectional adapter coupling – no feedback channels are supported.
 
 As a composite FB, **ALR_TO_AI** does not have its own state diagram. The internal converter `F_LREAL_TO_INT` operates in an event-driven manner: An event at input `REQ` triggers the conversion, and output `CNF` signals the end of the operation. The function block behaves like a transparent block for event and data forwarding.
 
-* **Sensor Value Processing**: Conversion of an LREAL signal (e.g., from an analog sensor adapter) into an INT signal, which is then processed by a PLC or a controller with integer-based adapters.
-* **Adapter Bridge**: Connecting adapter types of different physical units when only the data type, not the scaling, needs to be changed.
-* **Interface Adaptation**: Used in agricultural control systems (e.g., HR Agricultural Technology – general), where LREAL values from sensors are mapped to a CAN-based INT adapter interface.
+- **Sensor Value Processing**: Conversion of an LREAL signal (e.g., from an analog sensor adapter) into an INT signal, which is then processed by a PLC or a controller with integer-based adapters.
+- **Adapter Bridge**: Connecting adapter types of different physical units when only the data type, not the scaling, needs to be changed.
+- **Interface Adaptation**: Used in agricultural control systems (e.g., HR Agricultural Technology – general), where LREAL values from sensors are mapped to a CAN-based INT adapter interface.
 
 | FB | Function | Difference |
 |----|----------|-------------|
@@ -80,7 +80,7 @@ The **ALR_TO_AI** is a practical composite function block for the standardized c
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

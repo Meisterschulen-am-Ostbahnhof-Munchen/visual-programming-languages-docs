@@ -72,14 +72,14 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IE erweiterte Fu
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010b3](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b3.md)
-* [Uebung_010b3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b3_AX.md)
-* [Uebung_010bA2](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA2.md)
-* [Uebung_010bA2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA2_AX.md)
-* [Uebung_010bA3](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA3.md)
-* [Uebung_010bA3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA3_AX.md)
-* [Uebung_010bA4](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA4.md)
-* [Uebung_010bA4_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA4_AX.md)
+- [Uebung_010b3](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b3.md)
+- [Uebung_010b3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b3_AX.md)
+- [Uebung_010bA2](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA2.md)
+- [Uebung_010bA2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA2_AX.md)
+- [Uebung_010bA3](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA3.md)
+- [Uebung_010bA3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA3_AX.md)
+- [Uebung_010bA4](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA4.md)
+- [Uebung_010bA4_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA4_AX.md)
 
 ## Fazit
 

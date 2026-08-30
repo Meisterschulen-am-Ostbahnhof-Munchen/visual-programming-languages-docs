@@ -17,9 +17,9 @@ Generating a periodic flashing signal.
 
 ![Uebung_007_AX_network](./Uebung_007_AX_network.svg)
 
-* **`E_CYCLE`**: An event generator. It periodically sends events to output `EO`. The parameter `DT` determines the period (here `T#1s`).
-* **`AX_T_FF`**: The toggle flip-flop.
-* **`DigitalOutput_Q1`**: The lamp.
+- **`E_CYCLE`**: An event generator. It periodically sends events to output `EO`. The parameter `DT` determines the period (here `T#1s`).
+- **`AX_T_FF`**: The toggle flip-flop.
+- **`DigitalOutput_Q1`**: The lamp.
 
 -----
 

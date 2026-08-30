@@ -17,17 +17,17 @@ Programming a variable pulse duration using the `E_STOPWATCH` function block.
 
 ![Uebung_020i_network](./Uebung_020i_network.svg)
 
-* **`E_STOPWATCH`**: Measures the time between a start and a stop event.
-* **`E_PULSE`**: Generates the timed pulse.
-* **`I2` (Learn Button)**: A normal level input (`IX`).
-* **`I1` (Start Button)**: A click event input (`IE`).
+- **`E_STOPWATCH`**: Measures the time between a start and a stop event.
+- **`E_PULSE`**: Generates the timed pulse.
+- **`I2` (Learn Button)**: A normal level input (`IX`).
+- **`I1` (Start Button)**: A click event input (`IE`).
 
 -----
 
 ## Operation
 
 1. **Learn Mode**: The user presses and holds button `I2`.
-* Pressing the button (rising edge) starts the stopwatch.
+- Pressing the button (rising edge) starts the stopwatch.
 
 Releasing the button (falling edge) stops the stopwatch.
 

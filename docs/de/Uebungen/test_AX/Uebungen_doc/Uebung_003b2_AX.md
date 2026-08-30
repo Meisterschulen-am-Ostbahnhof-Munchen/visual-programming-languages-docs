@@ -20,17 +20,17 @@ Das Ziel dieser Übung ist es, eine große Anzahl von gleichartigen Verbindungen
 
 [cite_start]Dieser Sub-Baustein verbindet einen Funkeingang (`Funk_IXA`) mit einem DataPanel-Ausgang (`DataPanel_MI_QXA`)[cite: 2]. Er verfügt über Parameter zur Konfiguration:
 
-  * **`Input`**: Der Funk-Taster (z.B. `DigitalInput_Key_START`).
-  * **`Output`**: Der physische Ausgang (z.B. `DigitalOutput_1B`).
-  * **`u8SAMember`**: Die Adresse des DataPanels.
+  - **`Input`**: Der Funk-Taster (z.B. `DigitalInput_Key_START`).
+  - **`Output`**: Der physische Ausgang (z.B. `DigitalOutput_1B`).
+  - **`u8SAMember`**: Die Adresse des DataPanels.
 
 ### Mapping
 
 Die Übung mappt folgende Signale:
 
-*   `STOP` -> (nicht belegt/intern)
-*   `START` -> `F2`
-*   `Key_01` bis `Key_13` -> `F3` bis `F15`
+-   `STOP` -> (nicht belegt/intern)
+-   `START` -> `F2`
+-   `Key_01` bis `Key_13` -> `F3` bis `F15`
 
 (Hinweis: Die genaue Zuordnung der Parameter ist in der `.SUB`-Datei für `Uebung_003b2_AX` im Gegensatz zu `Uebung_003b3_AX` nicht explizit sichtbar, da hier untypisierte oder eingebettete SubApps verwendet wurden, bei denen die Parameter im Inneren gesetzt sind oder Default-Werte nutzen. In `Uebung_003b3_AX` sind die Parameter explizit nach außen geführt.)
 

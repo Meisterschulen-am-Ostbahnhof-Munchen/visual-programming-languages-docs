@@ -61,7 +61,7 @@ Compared to other logical operations such as F_AND or F_OR, F_NOT performs only 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006a3_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3_sub.md)
+- [Exercise_006a3_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3_sub.md)
 
 ## Conclusion
 

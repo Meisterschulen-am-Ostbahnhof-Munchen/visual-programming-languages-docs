@@ -50,7 +50,7 @@ Diese Übung demonstriert den Einsatz des Funktionsbausteins `ILOCK_SWITCH_PROTE
 - Einbindung eines Zeitgeber-Adapters zur Überwachung der Schutzzeit.
 - Konfiguration von Hardware-Ein-/Ausgängen (`logiBUS_IX`, `logiBUS_QX`).
 
-**Schwierigkeitsgrad:** Mittel  
+**Schwierigkeitsgrad:** Mittel
 **Vorkenntnisse:** Grundlagen der Ereignissteuerung in 4diac, Umgang mit Ein-/Ausgangsbausteinen.
 
 ## Zusammenfassung
@@ -61,4 +61,4 @@ Die Übung **Uebung_205** zeigt die praktische Anwendung eines Interlocks mit Sc
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

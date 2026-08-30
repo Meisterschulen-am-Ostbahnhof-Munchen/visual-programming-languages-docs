@@ -87,7 +87,7 @@ Die Sub-Applikation arbeitet nach folgendem Ablauf:
 - Verwendung von Adapter-Konvertern zur bidirektionalen Ereigniskommunikation über AE2-Schnittstellen.
 - Rückkopplung von Ereignissen über mehrere Konverterstufen.
 
-**Schwierigkeitsgrad:** Fortgeschritten  
+**Schwierigkeitsgrad:** Fortgeschritten
 **Vorkenntnisse:** Funktionsweise von SR-Flip-Flops, Ereignisgesteuerte Bausteine, Adapter-Konzepte in 4diac.
 
 ## Zusammenfassung
@@ -100,5 +100,5 @@ Die Übung 004b4c_sub zeigt den Aufbau eines verriegelbaren Toggle-Flip-Flops, d
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

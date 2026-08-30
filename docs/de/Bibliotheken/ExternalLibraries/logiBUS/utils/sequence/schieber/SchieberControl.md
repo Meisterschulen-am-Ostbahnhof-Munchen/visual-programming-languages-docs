@@ -15,45 +15,45 @@ Der Funktionsblock `SchieberControl` ist ein Basis-Funktionsblock (Basic FB) gem
 
 ### **Ereignis-Eingänge**
 
-*   **`INIT`**: Initialisierungsanforderung. Setzt alle Werte. Ein vollständiges De-Initialisieren wird nicht vollständig unterstützt. Wird mit den Daten `QI`, `DT_Opening`, `DT_Closing` und `START` verknüpft.
-*   **`Open`**: Startet den Öffnungsvorgang des Schiebers.
-*   **`Close`**: Startet den Schließvorgang des Schiebers.
-*   **`RESET`**: Setzt den internen Zustand auf "Unknown" (Unbekannt) zurück.
-*   **`INPUT_DATA`**: Überträgt die konfigurierten Eingangsdaten für Taster, Softkeys und Hilfssteuerung. Wird mit den Daten `BT`, `SK` und `AUXC` verknüpft.
+-   **`INIT`**: Initialisierungsanforderung. Setzt alle Werte. Ein vollständiges De-Initialisieren wird nicht vollständig unterstützt. Wird mit den Daten `QI`, `DT_Opening`, `DT_Closing` und `START` verknüpft.
+-   **`Open`**: Startet den Öffnungsvorgang des Schiebers.
+-   **`Close`**: Startet den Schließvorgang des Schiebers.
+-   **`RESET`**: Setzt den internen Zustand auf "Unknown" (Unbekannt) zurück.
+-   **`INPUT_DATA`**: Überträgt die konfigurierten Eingangsdaten für Taster, Softkeys und Hilfssteuerung. Wird mit den Daten `BT`, `SK` und `AUXC` verknüpft.
 
 ### **Ereignis-Ausgänge**
 
-*   **`INITO`**: Initialisierungsbestätigung. Wird mit dem Datenausgang `QO` verknüpft.
-*   **`EO`**: Allgemeines Ausgangsereignis, das den aktuellen Systemzustand und die konfigurierten Ausgangswerte liefert. Wird mit `Button`, `Softkey`, `Auxiliary` und `STATE` verknüpft.
-*   **`EO_POWERED`**: Steuersignal zum Betätigen des "Öffnen"-Ventils für die Pneumatik. Wird mit `DO_POWERED` verknüpft.
-*   **`EO_OPEN`**: Steuersignal zum Betätigen des "Öffnen"-Ventils. Wird mit `DO_OPEN` verknüpft.
-*   **`EO_CLOSE`**: Steuersignal zum Betätigen des "Schließen"-Ventils. Wird mit `DO_CLOSE` verknüpft.
-*   **`EO1`**: Zusätzliches Ausgangsereignis ohne Daten.
+-   **`INITO`**: Initialisierungsbestätigung. Wird mit dem Datenausgang `QO` verknüpft.
+-   **`EO`**: Allgemeines Ausgangsereignis, das den aktuellen Systemzustand und die konfigurierten Ausgangswerte liefert. Wird mit `Button`, `Softkey`, `Auxiliary` und `STATE` verknüpft.
+-   **`EO_POWERED`**: Steuersignal zum Betätigen des "Öffnen"-Ventils für die Pneumatik. Wird mit `DO_POWERED` verknüpft.
+-   **`EO_OPEN`**: Steuersignal zum Betätigen des "Öffnen"-Ventils. Wird mit `DO_OPEN` verknüpft.
+-   **`EO_CLOSE`**: Steuersignal zum Betätigen des "Schließen"-Ventils. Wird mit `DO_CLOSE` verknüpft.
+-   **`EO1`**: Zusätzliches Ausgangsereignis ohne Daten.
 
 ### **Daten-Eingänge**
 
-*   **`QI` (BOOL)**: Qualifizierer für das INIT-Ereignis.
-*   **`BT` (SchieberStruct)**: Konfiguration für die Taster-Bedienelemente.
-*   **`SK` (SchieberStruct)**: Konfiguration für die Softkey-Bedienelemente.
-*   **`AUXC` (SchieberAuxInStruct)**: Konfiguration für die Hilfssteuerung (Bild und Farbe).
-*   **`DT_Opening` (TIME)**: Zeitdauer für den Öffnungsvorgang.
-*   **`DT_Closing` (TIME)**: Zeitdauer für den Schließvorgang.
-*   **`START` (UINT)**: Definiert den gewünschten Startzustand nach der Initialisierung (z. B. `START::STARTClosed`, `START::STARTOpened`, `START::STARTUnknown`).
+-   **`QI` (BOOL)**: Qualifizierer für das INIT-Ereignis.
+-   **`BT` (SchieberStruct)**: Konfiguration für die Taster-Bedienelemente.
+-   **`SK` (SchieberStruct)**: Konfiguration für die Softkey-Bedienelemente.
+-   **`AUXC` (SchieberAuxInStruct)**: Konfiguration für die Hilfssteuerung (Bild und Farbe).
+-   **`DT_Opening` (TIME)**: Zeitdauer für den Öffnungsvorgang.
+-   **`DT_Closing` (TIME)**: Zeitdauer für den Schließvorgang.
+-   **`START` (UINT)**: Definiert den gewünschten Startzustand nach der Initialisierung (z. B. `START::STARTClosed`, `START::STARTOpened`, `START::STARTUnknown`).
 
 ### **Daten-Ausgänge**
 
-*   **`QO` (BOOL)**: Qualifizierer für das INITO-Ereignis.
-*   **`Button` (UINT)**: Aktueller Wert für die Taster-Ausgabe, abhängig vom Zustand.
-*   **`Softkey` (UINT)**: Aktueller Wert für die Softkey-Ausgabe, abhängig vom Zustand.
-*   **`Auxiliary` (SchieberAuxOutStruct)**: Aktuelle Werte für die Hilfssteuerungs-Ausgabe (Bild und Farbe).
-*   **`DO_POWERED` (BOOL)**: Binäres Signal zum Betätigen des "Öffnen"-Ventils für die Pneumatik.
-*   **`DO_OPEN` (BOOL)**: Binäres Signal zum Betätigen des "Öffnen"-Ventils.
-*   **`DO_CLOSE` (BOOL)**: Binäres Signal zum Betätigen des "Schließen"-Ventils.
-*   **`STATE` (STRING)**: Zeichenkette, die den aktuellen internen Zustand des FB beschreibt (z. B. "Closed", "Opening").
+-   **`QO` (BOOL)**: Qualifizierer für das INITO-Ereignis.
+-   **`Button` (UINT)**: Aktueller Wert für die Taster-Ausgabe, abhängig vom Zustand.
+-   **`Softkey` (UINT)**: Aktueller Wert für die Softkey-Ausgabe, abhängig vom Zustand.
+-   **`Auxiliary` (SchieberAuxOutStruct)**: Aktuelle Werte für die Hilfssteuerungs-Ausgabe (Bild und Farbe).
+-   **`DO_POWERED` (BOOL)**: Binäres Signal zum Betätigen des "Öffnen"-Ventils für die Pneumatik.
+-   **`DO_OPEN` (BOOL)**: Binäres Signal zum Betätigen des "Öffnen"-Ventils.
+-   **`DO_CLOSE` (BOOL)**: Binäres Signal zum Betätigen des "Schließen"-Ventils.
+-   **`STATE` (STRING)**: Zeichenkette, die den aktuellen internen Zustand des FB beschreibt (z. B. "Closed", "Opening").
 
 ### **Adapter**
 
-*   **`timeOut` (ATimeOut)**: Ein Stecker-Adapter vom Typ `ATimeOut`. Wird zur Realisierung der zeitgesteuerten Zustandsübergänge (Öffnen/Schließen) verwendet. Der FB startet (`START`) und stoppt (`STOP`) den Timer und reagiert auf dessen `TimeOut`-Ereignis.
+-   **`timeOut` (ATimeOut)**: Ein Stecker-Adapter vom Typ `ATimeOut`. Wird zur Realisierung der zeitgesteuerten Zustandsübergänge (Öffnen/Schließen) verwendet. Der FB startet (`START`) und stoppt (`STOP`) den Timer und reagiert auf dessen `TimeOut`-Ereignis.
 
 ## Funktionsweise
 
@@ -61,10 +61,10 @@ Der `SchieberControl`-FB arbeitet als zustandsgesteuerte Sequenz. Der interne Ab
 
 ## Technische Besonderheiten
 
-*   **Zustandsinitialisierung**: Über den `START`-Eingang kann nach `INIT` der gewünschte Anfangszustand (`Closed`, `Opened` oder `Unknown`) vorgegeben werden. Dies erfordert das nachfolgende Eintreffen des `INPUT_DATA`-Ereignisses.
-*   **Adapter-Nutzung**: Die Zeitsteuerung ist vollständig in den Adapter `timeOut` ausgelagert, was eine klare Trennung der Funktionalität und potenzielle Wiederverwendbarkeit ermöglicht.
-*   **Datenkonfiguration**: Die Ausgabewerte für Benutzerschnittstellen (`Button`, `Softkey`, `Auxiliary`) werden nicht hartkodiert, sondern über entsprechende Eingangsstrukturen (`BT`, `SK`, `AUXC`) konfiguriert, was eine flexible Anpassung an verschiedene HMI erlaubt.
-*   **Power-Signal**: Das Signal `DO_POWERED` wird nur in den Zuständen `Opening` und `Opened` aktiviert, was auf eine spezifische pneumatische Ansteuerlogik hindeutet (z. B. Halten der Druckluft im geöffneten Zustand).
+-   **Zustandsinitialisierung**: Über den `START`-Eingang kann nach `INIT` der gewünschte Anfangszustand (`Closed`, `Opened` oder `Unknown`) vorgegeben werden. Dies erfordert das nachfolgende Eintreffen des `INPUT_DATA`-Ereignisses.
+-   **Adapter-Nutzung**: Die Zeitsteuerung ist vollständig in den Adapter `timeOut` ausgelagert, was eine klare Trennung der Funktionalität und potenzielle Wiederverwendbarkeit ermöglicht.
+-   **Datenkonfiguration**: Die Ausgabewerte für Benutzerschnittstellen (`Button`, `Softkey`, `Auxiliary`) werden nicht hartkodiert, sondern über entsprechende Eingangsstrukturen (`BT`, `SK`, `AUXC`) konfiguriert, was eine flexible Anpassung an verschiedene HMI erlaubt.
+-   **Power-Signal**: Das Signal `DO_POWERED` wird nur in den Zuständen `Opening` und `Opened` aktiviert, was auf eine spezifische pneumatische Ansteuerlogik hindeutet (z. B. Halten der Druckluft im geöffneten Zustand).
 
 ## Zustandsübersicht
 
@@ -81,19 +81,19 @@ Die ECC umfasst folgende Hauptzustände:
 
 ## Anwendungsszenarien
 
-*   **Steuerung pneumatischer Schieber** in Verpackungs-, Förder- oder Sortieranlagen.
-*   **Integration in übergeordnete Sequenzer** für Materialfluss-Steuerungen.
-*   **Anbindung an Bedienpanels (HMI)**, da strukturierte Daten für Taster, Softkeys und Anzeigen bereitgestellt werden.
-*   **Protokollierung und Visualisierung** des Schieberzustands über den `STATE`-String-Ausgang.
+-   **Steuerung pneumatischer Schieber** in Verpackungs-, Förder- oder Sortieranlagen.
+-   **Integration in übergeordnete Sequenzer** für Materialfluss-Steuerungen.
+-   **Anbindung an Bedienpanels (HMI)**, da strukturierte Daten für Taster, Softkeys und Anzeigen bereitgestellt werden.
+-   **Protokollierung und Visualisierung** des Schieberzustands über den `STATE`-String-Ausgang.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfacheren binären Aktor-Bausteinen (z. B. einem einfachen Zylinder-FB) bietet `SchieberControl` eine deutlich höhere Funktionalität:
 
-*   **Vollständige Zustandsmaschine** mit Bewegungs-, End- und Stopp-Zuständen.
-*   **Integrierte Zeitsteuerung** für die Bewegung.
-*   **Umfangreiche HMI-Schnittstelle** zur Konfiguration von Bedienelementen.
-*   **Explizite Behandlung eines "Unbekannt"-Zustands** (`RESET`-Funktionalität).
+-   **Vollständige Zustandsmaschine** mit Bewegungs-, End- und Stopp-Zuständen.
+-   **Integrierte Zeitsteuerung** für die Bewegung.
+-   **Umfangreiche HMI-Schnittstelle** zur Konfiguration von Bedienelementen.
+-   **Explizite Behandlung eines "Unbekannt"-Zustands** (`RESET`-Funktionalität).
 Er ist spezialisierter und komplexer als ein generischer `E_SR` (Flip-Flop) oder ein einfacher Timer-Baustein, da er diese Funktionalitäten kombiniert und auf die Steuerung eines Schieberantriebs zuschneidet.
 
 ## Fazit

@@ -27,16 +27,16 @@ Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
 
-* **IN** – *Socket* (Eingang) vom Typ `adapter::types::unidirectional::ALR`  
+- **IN** – *Socket* (Eingang) vom Typ `adapter::types::unidirectional::ALR`
   Nimmt das zu verteilende ALR-Signal entgegen.
 
-* **OUT1** – *Plug* (Ausgang 1) vom Typ `adapter::types::unidirectional::ALR`  
+- **OUT1** – *Plug* (Ausgang 1) vom Typ `adapter::types::unidirectional::ALR`
   Gibt das eingehende Signal unverändert weiter.
 
-* **OUT2** – *Plug* (Ausgang 2) vom Typ `adapter::types::unidirectional::ALR`  
+- **OUT2** – *Plug* (Ausgang 2) vom Typ `adapter::types::unidirectional::ALR`
   Gibt das eingehende Signal unverändert weiter.
 
-* **OUT3** – *Plug* (Ausgang 3) vom Typ `adapter::types::unidirectional::ALR`  
+- **OUT3** – *Plug* (Ausgang 3) vom Typ `adapter::types::unidirectional::ALR`
   Gibt das eingehende Signal unverändert weiter.
 
 ## Funktionsweise
@@ -45,9 +45,9 @@ Der Baustein arbeitet als reiner Signalverteiler. Sobald am Adapter-Socket **IN*
 
 ## Technische Besonderheiten
 
-* **Generischer Funktionsblock** – Über die Attribute `eclipse4diac::core::GenericClassName` und `eclipse4diac::core::TypeHash` kann der Baustein als generische Instanz angelegt werden. Dies erlaubt eine einfache Wiederverwendung und Parametrisierung in verschiedenen Projekten.
-* **Keine eigene Zustandsmaschine** – Der Baustein besitzt kein ECC (Execution Control Chart), da das Verhalten rein durch die Adapter-Konnektivität definiert wird.
-* **Unidirektionale Adapter** – Alle verwendeten ALR-Adapter sind vom Typ `unidirectional`; die Signalrichtung ist festgelegt (Eingang → Ausgänge).
+- **Generischer Funktionsblock** – Über die Attribute `eclipse4diac::core::GenericClassName` und `eclipse4diac::core::TypeHash` kann der Baustein als generische Instanz angelegt werden. Dies erlaubt eine einfache Wiederverwendung und Parametrisierung in verschiedenen Projekten.
+- **Keine eigene Zustandsmaschine** – Der Baustein besitzt kein ECC (Execution Control Chart), da das Verhalten rein durch die Adapter-Konnektivität definiert wird.
+- **Unidirektionale Adapter** – Alle verwendeten ALR-Adapter sind vom Typ `unidirectional`; die Signalrichtung ist festgelegt (Eingang → Ausgänge).
 
 ## Zustandsübersicht
 
@@ -55,15 +55,15 @@ Der Baustein definiert keine internen Zustände. Das Ausgangssignal entspricht s
 
 ## Anwendungsszenarien
 
-* **Alarmverteilung** – Ein zentraler Alarmmelder (z. B. übergeordnetes Leitsystem) wird auf drei unabhängige Steuerungseinheiten aufgeschaltet, die parallel auf den Alarm reagieren sollen.
-* **Signal-Multiplex** – Ein boolesches oder wertbasiertes Signal aus einem Sensor wird an mehrere Aktoren oder Visualisierungen verteilt.
-* **Redundanzarchitekturen** – Das gleiche Signal wird an zwei oder drei unabhängige Pfade geschickt, um eine Ausfallsicherheit zu erreichen.
+- **Alarmverteilung** – Ein zentraler Alarmmelder (z. B. übergeordnetes Leitsystem) wird auf drei unabhängige Steuerungseinheiten aufgeschaltet, die parallel auf den Alarm reagieren sollen.
+- **Signal-Multiplex** – Ein boolesches oder wertbasiertes Signal aus einem Sensor wird an mehrere Aktoren oder Visualisierungen verteilt.
+- **Redundanzarchitekturen** – Das gleiche Signal wird an zwei oder drei unabhängige Pfade geschickt, um eine Ausfallsicherheit zu erreichen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **ALR_SPLIT_2** – Verteilt ein Signal auf zwei Ausgänge (identische Funktion, aber weniger Ausgänge).
-* **ALR_SPLIT_4** – Verteilt ein Signal auf vier Ausgänge.
-* **Manuelle Kopplung** – Ohne SPLIT-Baustein müsste das Signal mehrfach in der Applikation abgegriffen oder über eine Sammelleitung verteilt werden, was die Übersichtlichkeit und Wartbarkeit verschlechtert.
+- **ALR_SPLIT_2** – Verteilt ein Signal auf zwei Ausgänge (identische Funktion, aber weniger Ausgänge).
+- **ALR_SPLIT_4** – Verteilt ein Signal auf vier Ausgänge.
+- **Manuelle Kopplung** – Ohne SPLIT-Baustein müsste das Signal mehrfach in der Applikation abgegriffen oder über eine Sammelleitung verteilt werden, was die Übersichtlichkeit und Wartbarkeit verschlechtert.
 
 ## Änderungserkennung
 
@@ -77,4 +77,4 @@ Der **ALR_SPLIT_3** ist ein einfacher, aber nützlicher generischer Baustein zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

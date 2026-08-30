@@ -49,7 +49,7 @@ Suppose several function blocks in a resource have an unconnected input named `I
 
 ## 🛠️ Related Exercises
 
-* [Exercise_176](../../../Uebungen/test_B/Uebungen_doc/Uebung_176.md)
+- [Exercise_176](../../../Uebungen/test_B/Uebungen_doc/Uebung_176.md)
 
 ## Conclusion
 
@@ -59,4 +59,4 @@ The `E_TRIG` building block is a tool for advanced use cases and for developers 
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

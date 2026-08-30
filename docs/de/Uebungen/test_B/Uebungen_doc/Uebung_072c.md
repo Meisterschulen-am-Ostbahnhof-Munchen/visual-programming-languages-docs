@@ -20,10 +20,10 @@ Verwendung des Bausteins `INTEGRAL`. Es wird demonstriert, wie man einen Wegwert
 
 ![Uebung_072c_network](./Uebung_072c_network.svg)
 
-  * **`I_GBSD`**: Liefert die aktuelle Geschwindigkeit.
-  * **`CYCLE_TIME`**: Misst die Zeit zwischen zwei Geschwindigkeits-Nachrichten (`TM`).
-  * **`INTEGRAL`**: Summiert das Produkt aus Geschwindigkeit und Zeit (`v * dt`) auf.
-  * **`OFFSET_UDINT`**: Erlaubt das Addieren eines Startwerts oder das Zurücksetzen der Zählung.
+  - **`I_GBSD`**: Liefert die aktuelle Geschwindigkeit.
+  - **`CYCLE_TIME`**: Misst die Zeit zwischen zwei Geschwindigkeits-Nachrichten (`TM`).
+  - **`INTEGRAL`**: Summiert das Produkt aus Geschwindigkeit und Zeit (`v * dt`) auf.
+  - **`OFFSET_UDINT`**: Erlaubt das Addieren eines Startwerts oder das Zurücksetzen der Zählung.
 
 -----
 

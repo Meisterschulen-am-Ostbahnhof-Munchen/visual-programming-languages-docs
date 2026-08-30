@@ -17,8 +17,8 @@ Demonstration of the "fan-out" capability of event connections in 4diac. A sourc
 
 ![Uebung_004a5_AX_network](./Uebung_004a5_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Button.
-* **`E_T_FF_Q1` & `Q2`**: Flip-flops.
+- **`DigitalInput_CLK_I1`**: Button.
+- **`E_T_FF_Q1` & `Q2`**: Flip-flops.
 
 -----
 
@@ -43,4 +43,4 @@ Same example as before (central off), but implemented in a more space-efficient 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

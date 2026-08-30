@@ -78,10 +78,10 @@ Compared to simple digital input modules, logiBUS_IE2 offers enhanced functional
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004c6](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c6.md)
-* [Exercise_004c6_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c6_AX.md)
-* [Exercise_004c7](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c7.md)
-* [Exercise_004c7_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c7_AX.md)
+- [Exercise_004c6](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c6.md)
+- [Exercise_004c6_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c6_AX.md)
+- [Exercise_004c7](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c7.md)
+- [Exercise_004c7_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c7_AX.md)
 
 ## Conclusion
 

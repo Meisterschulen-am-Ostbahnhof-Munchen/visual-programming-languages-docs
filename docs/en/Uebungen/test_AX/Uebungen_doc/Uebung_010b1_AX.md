@@ -17,7 +17,7 @@ Processing Auxiliary Inputs (e.g., joystick buttons).
 
 ![Uebung_010b1_AX_network](./Uebung_010b1_AX_network.svg)
 
-* **`AuxFunction2_X1`**: Type `isobus::UT::io::Auxiliary::IN::Aux_IXA`. This block listens for ISOBUS AUX messages for the defined function.
+- **`AuxFunction2_X1`**: Type `isobus::UT::io::Auxiliary::IN::Aux_IXA`. This block listens for ISOBUS AUX messages for the defined function.
 
 -----
 

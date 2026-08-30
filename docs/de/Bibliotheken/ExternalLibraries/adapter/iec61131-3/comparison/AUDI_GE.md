@@ -11,12 +11,12 @@ Der Funktionsblock `AUDI_GE` führt einen Vergleich zweier Werte auf „größer
 
 ### **Ereignis‑Eingänge**
 
-- **Keine direkten Ereignisseingänge**  
+- **Keine direkten Ereignisseingänge**
   Die Auslösung des Vergleichs erfolgt über die **Socket‑Adapter** `IN1` und `IN2`. Jeder dieser Adapter liefert ein Ereignis an den internen Baustein, sobald gültige Daten anliegen.
 
 ### **Ereignis‑Ausgänge**
 
-- **Keine direkten Ereignisausgänge**  
+- **Keine direkten Ereignisausgänge**
   Das Ergebnis des Vergleichs wird über den **Plug‑Adapter** `OUT` als Ereignis weitergereicht, sobald die Auswertung abgeschlossen ist.
 
 ### **Daten‑Eingänge**
@@ -83,4 +83,4 @@ Der Baustein selbst besitzt keinen expliziten Zustandsautomaten – die gesamte 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

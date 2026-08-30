@@ -63,8 +63,8 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
-* [Uebung_178_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
+- [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
+- [Uebung_178_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
 
 ## Fazit
 

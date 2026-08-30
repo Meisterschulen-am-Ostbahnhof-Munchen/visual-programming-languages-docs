@@ -4,16 +4,16 @@
 
 ![LO](./LO.svg)
 
-* [4diac IDE: Your "Hello World" of Automation – The Blinking Tutorial Local](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
-* [Eclipse 4diac and FORTE: Unlocking Next-Gen Industrial Automation with Open-Source Power](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Eclipse-4diac-and-FORTE-Unlocking-Next-Gen-Industrial-Automation-with-Open-Source-Power-e3682iu)
-* [Field Devices: Eyes, Ears, and Hands of Industrial Automation – Why This Invisible Technology Is So Crucial](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Feldgerte-Augen--Ohren-und-Hnde-der-industriellen-Automatisierung--Warum-diese-unsichtbare-Technologie-so-entscheidend-ist-e375g6u)
-* [Future Automation Unlocked: Powering "Plug & Produce" and Protecting Your Privacy](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Future-Automation-Unlocked-Powering-Plug--Produce-and-Protecting-Your-Privacy-e376pbc)
-* [Industrial Revolution Reloaded: Unpacking Plug & Produce, Data Privacy, and ETFA 2025](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Industrial-Revolution-Reloaded-Unpacking-Plug--Produce--Data-Privacy--and-ETFA-2025-e376pid)
+- [4diac IDE: Your "Hello World" of Automation – The Blinking Tutorial Local](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
+- [Eclipse 4diac and FORTE: Unlocking Next-Gen Industrial Automation with Open-Source Power](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Eclipse-4diac-and-FORTE-Unlocking-Next-Gen-Industrial-Automation-with-Open-Source-Power-e3682iu)
+- [Field Devices: Eyes, Ears, and Hands of Industrial Automation – Why This Invisible Technology Is So Crucial](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Feldgerte-Augen--Ohren-und-Hnde-der-industriellen-Automatisierung--Warum-diese-unsichtbare-Technologie-so-entscheidend-ist-e375g6u)
+- [Future Automation Unlocked: Powering "Plug & Produce" and Protecting Your Privacy](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Future-Automation-Unlocked-Powering-Plug--Produce-and-Protecting-Your-Privacy-e376pbc)
+- [Industrial Revolution Reloaded: Unpacking Plug & Produce, Data Privacy, and ETFA 2025](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Industrial-Revolution-Reloaded-Unpacking-Plug--Produce--Data-Privacy--and-ETFA-2025-e376pid)
 
 ## 📺 Video
 
-* [The Catalog of 1863](https://www.youtube.com/watch?v=fk7tIjl2pTk)
-* [LogiBUS Project Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
+- [The Catalog of 1863](https://www.youtube.com/watch?v=fk7tIjl2pTk)
+- [LogiBUS Project Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
 
 ## Introduction
 
@@ -75,6 +75,6 @@ LO constants offer a structured and centralized way to define hardware addresses
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

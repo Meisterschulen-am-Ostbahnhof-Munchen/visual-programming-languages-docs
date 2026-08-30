@@ -30,9 +30,9 @@ As a structured data type (STRUCT), `ST08B` acts as a composite container. It gr
 
 ## Technical Features
 
-* **Fixed Size:** The structure has a fixed and predictable size of exactly 8 bytes, which is advantageous for memory allocation and communication protocols.
-* **Sequential Arrangement:** The bytes are arranged in the order `B_00` to `B_07`. This order is crucial for interpreting the data, for example, when converting it to larger data types such as `WORD`, `DWORD`, or `LWORD`.
-* **TypeHash Attribute:** The data type contains the attribute `eclipse4diac::core::TypeHash` with an empty value (`''`). This indicates that type-safe validation via hash value has not (yet) been configured for this user-defined type.
+- **Fixed Size:** The structure has a fixed and predictable size of exactly 8 bytes, which is advantageous for memory allocation and communication protocols.
+- **Sequential Arrangement:** The bytes are arranged in the order `B_00` to `B_07`. This order is crucial for interpreting the data, for example, when converting it to larger data types such as `WORD`, `DWORD`, or `LWORD`.
+- **TypeHash Attribute:** The data type contains the attribute `eclipse4diac::core::TypeHash` with an empty value (`''`). This indicates that type-safe validation via hash value has not (yet) been configured for this user-defined type.
 
 ## State Overview
 
@@ -47,9 +47,9 @@ Since this is a passive data type and not an active function block, there is no 
 
 ## ⚖️ Comparison with Similar Building Blocks
 
-* **Simple Byte Array:** An array of 8 `BYTE` (`ARRAY[0..7] OF BYTE`) could perform a similar function. However, `ST08B` offers the advantage of named access paths (`B_01`), which, unlike index-based access (`Array[1]`), improve code readability and maintainability.
-* **LWORD:** The data type `LWORD` also represents 8 bytes (64 bits), but as a single, undivided numeric value. `ST08B` allows targeted access to each individual byte within these 64 bits.
-* **Other STRUCT Types:** Similar structured types such as `ST04B` (4 bytes) or `ST16B` (16 bytes) serve the same purpose, but for different amounts of data. `ST08B` fills the gap for 8-byte structured data.
+- **Simple Byte Array:** An array of 8 `BYTE` (`ARRAY[0..7] OF BYTE`) could perform a similar function. However, `ST08B` offers the advantage of named access paths (`B_01`), which, unlike index-based access (`Array[1]`), improve code readability and maintainability.
+- **LWORD:** The data type `LWORD` also represents 8 bytes (64 bits), but as a single, undivided numeric value. `ST08B` allows targeted access to each individual byte within these 64 bits.
+- **Other STRUCT Types:** Similar structured types such as `ST04B` (4 bytes) or `ST16B` (16 bytes) serve the same purpose, but for different amounts of data. `ST08B` fills the gap for 8-byte structured data.
 
 ## Conclusion
 
@@ -59,6 +59,6 @@ The `ST08B` is a simple yet extremely useful structured data type for IEC 61499 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

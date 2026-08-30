@@ -31,4 +31,4 @@ Suppression of bounce effects or coarse scaling of fast sensor signals to reduce
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

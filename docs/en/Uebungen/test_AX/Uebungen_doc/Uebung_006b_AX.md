@@ -17,7 +17,7 @@ Understand the difference between SR (Set Priority) and RS (Reset Priority).
 
 ![Uebung_006b_AX_network](./Uebung_006b_AX_network.svg)
 
-* **`AX_RS`**: An RS flip-flop.
+- **`AX_RS`**: An RS flip-flop.
 
 -----
 
@@ -25,12 +25,12 @@ Understand the difference between SR (Set Priority) and RS (Reset Priority).
 
 Functionally very similar to `AX_SR`. The difference lies in the behavior when a set and a reset event arrive **simultaneously** (in the same PLC cycle) (or when both inputs are TRUE for level-controlled function blocks).
 
-* **SR**: Set takes precedence -> output becomes TRUE.
-* **RS**: Reset takes precedence -> output becomes FALSE.
+- **SR**: Set takes precedence -> output becomes TRUE.
+- **RS**: Reset takes precedence -> output becomes FALSE.
 
 In IEC 61499 with event processing, "simultaneity" is more subtle, as events are often processed sequentially. However, if, for example, both events arrive in the same "step" via a `E_SPLIT`, the function block's internal logic decides. With `AX_RS`, the reset event takes precedence in case of doubt.
 
-* **RS**: Reset takes precedence -> output becomes FALSE. -----
+- **RS**: Reset takes precedence -> output becomes FALSE. -----
 
 ## Application Example
 

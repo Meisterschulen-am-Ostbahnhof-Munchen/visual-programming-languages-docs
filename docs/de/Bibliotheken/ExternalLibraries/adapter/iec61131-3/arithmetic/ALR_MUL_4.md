@@ -30,14 +30,14 @@ Der Funktionsbaustein `ALR_MUL_4` dient der Durchführung einer arithmetischen M
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::ALR`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
-*   **IN2** (Typ: `adapter::types::unidirectional::ALR`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
-*   **IN3** (Typ: `adapter::types::unidirectional::ALR`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
-*   **IN4** (Typ: `adapter::types::unidirectional::ALR`): Vierter Eingangswert (Multiplikand 4) für die Multiplikation.
+-   **IN1** (Typ: `adapter::types::unidirectional::ALR`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
+-   **IN2** (Typ: `adapter::types::unidirectional::ALR`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
+-   **IN3** (Typ: `adapter::types::unidirectional::ALR`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
+-   **IN4** (Typ: `adapter::types::unidirectional::ALR`): Vierter Eingangswert (Multiplikand 4) für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::ALR`): Ausgang für das berechnete Produkt der vier Eingangswerte.
+-   **OUT** (Typ: `adapter::types::unidirectional::ALR`): Ausgang für das berechnete Produkt der vier Eingangswerte.
 
 ## Funktionsweise
 
@@ -51,8 +51,8 @@ Da es sich um einen generischen Funktionsbaustein handelt, der die Klasse `GEN_A
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein**: Durch das Attribut `GenericClassName` mit dem Wert `GEN_ALR_MUL` kann sich der Baustein zur Laufzeit bzw. beim Kompilieren flexibel an die konkrete Datentyp-Ausprägung der verwendeten Adapter anpassen.
-*   **Kapselung durch Adapter**: Die Verwendung des unidirektionalen Adapters `ALR` (`adapter::types::unidirectional::ALR`) sorgt dafür, dass Datenwerte und gegebenenfalls zugehörige Status- oder Triggerereignisse kompakt in einer einzigen Verbindung gebündelt werden. Dies reduziert den Verdrahtungsaufwand im Funktionsplan erheblich.
+-   **Generischer Baustein**: Durch das Attribut `GenericClassName` mit dem Wert `GEN_ALR_MUL` kann sich der Baustein zur Laufzeit bzw. beim Kompilieren flexibel an die konkrete Datentyp-Ausprägung der verwendeten Adapter anpassen.
+-   **Kapselung durch Adapter**: Die Verwendung des unidirektionalen Adapters `ALR` (`adapter::types::unidirectional::ALR`) sorgt dafür, dass Datenwerte und gegebenenfalls zugehörige Status- oder Triggerereignisse kompakt in einer einzigen Verbindung gebündelt werden. Dies reduziert den Verdrahtungsaufwand im Funktionsplan erheblich.
 
 ## Zustandsübersicht
 
@@ -60,14 +60,14 @@ Der Baustein besitzt kein internes Zustandsverhalten (keine State Machine / ECC)
 
 ## Anwendungsszenarien
 
-*   **Physikalische Berechnungen**: Berechnung von komplexeren Größen, die das Produkt mehrerer Variablen darstellen (z. B. Leistung, Energieberechnungen oder Volumenströme unter Berücksichtigung von Korrekturfaktoren).
-*   **Kaskadierte Skalierung**: Anwendung von mehreren Skalierungs- oder Korrekturfaktoren auf ein analoges Eingangssignal in einem einzigen Schritt.
-*   **Signalverarbeitung**: Vorverarbeitung von Sensorwerten in Steuerungssystemen, bevor die Daten an Visualisierungen oder Aktoren weitergegeben werden.
+-   **Physikalische Berechnungen**: Berechnung von komplexeren Größen, die das Produkt mehrerer Variablen darstellen (z. B. Leistung, Energieberechnungen oder Volumenströme unter Berücksichtigung von Korrekturfaktoren).
+-   **Kaskadierte Skalierung**: Anwendung von mehreren Skalierungs- oder Korrekturfaktoren auf ein analoges Eingangssignal in einem einzigen Schritt.
+-   **Signalverarbeitung**: Vorverarbeitung von Sensorwerten in Steuerungssystemen, bevor die Daten an Visualisierungen oder Aktoren weitergegeben werden.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard-MUL-Bausteine (IEC 61131-3)**: Klassische Multiplikationsbausteine arbeiten in der Regel direkt mit Standard-Datentypen (z. B. `REAL`) und erfordern separate Event-Verbindungen (`REQ`/`CNF`). `ALR_MUL_4` vereinfacht dies durch die Nutzung von Adaptern.
-*   **ALR_MUL_2 / ALR_MUL_3**: Diese Bausteine sind für die Multiplikation von nur zwei oder drei Werten ausgelegt. Der `ALR_MUL_4` spart bei der Notwendigkeit von vier Multiplikanden zusätzliche Zwischenschritte und zusätzliche Bausteinkaskaden ein, was die Performance und Übersichtlichkeit des Steuerungsprogramms verbessert.
+-   **Standard-MUL-Bausteine (IEC 61131-3)**: Klassische Multiplikationsbausteine arbeiten in der Regel direkt mit Standard-Datentypen (z. B. `REAL`) und erfordern separate Event-Verbindungen (`REQ`/`CNF`). `ALR_MUL_4` vereinfacht dies durch die Nutzung von Adaptern.
+-   **ALR_MUL_2 / ALR_MUL_3**: Diese Bausteine sind für die Multiplikation von nur zwei oder drei Werten ausgelegt. Der `ALR_MUL_4` spart bei der Notwendigkeit von vier Multiplikanden zusätzliche Zwischenschritte und zusätzliche Bausteinkaskaden ein, was die Performance und Übersichtlichkeit des Steuerungsprogramms verbessert.
 
 ## Änderungserkennung
 

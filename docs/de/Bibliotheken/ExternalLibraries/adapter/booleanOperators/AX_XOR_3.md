@@ -73,7 +73,7 @@ Vergleich mit [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
+- [Uebung_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Änderungserkennung
 

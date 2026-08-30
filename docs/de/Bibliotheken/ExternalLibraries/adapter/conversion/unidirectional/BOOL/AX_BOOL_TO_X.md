@@ -64,11 +64,11 @@ Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_BOOL_TO_X durc
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_001_AX_b](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
-* [Uebung_002a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
-* [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
-* [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
-* [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+- [Uebung_001_AX_b](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
+- [Uebung_002a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
+- [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+- [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+- [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
 
 ## Fazit
 

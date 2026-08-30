@@ -33,15 +33,15 @@ The `AULI_ADD_3` function block is a generic arithmetic function block for IEC 6
 
 The sockets serve as receivers for the values to be added.
 
-* **IN1** (Type: `adapter::types::unidirectional::AULI`): First addend of the arithmetic addition.
-* **IN2** (Type: `adapter::types::unidirectional::AULI`): Second addend of the arithmetic addition.
-* **IN3** (Type: `adapter::types::unidirectional::AULI`): Third addend of the arithmetic addition.
+- **IN1** (Type: `adapter::types::unidirectional::AULI`): First addend of the arithmetic addition.
+- **IN2** (Type: `adapter::types::unidirectional::AULI`): Second addend of the arithmetic addition.
+- **IN3** (Type: `adapter::types::unidirectional::AULI`): Third addend of the arithmetic addition.
 
 #### **Plugs (Output Adapters)**
 
 The plug serves as a transmitter for the calculated result.
 
-* **OUT** (Type: `adapter::types::unidirectional::AULI`): Output for the result of the addition ($IN1 + IN2 + IN3$).
+- **OUT** (Type: `adapter::types::unidirectional::AULI`): Output for the result of the addition ($IN1 + IN2 + IN3$).
 
 ---
 
@@ -59,9 +59,9 @@ The calculated result is immediately passed to the output adapter `OUT` and is a
 
 ## Technical Features
 
-* **Generic Function Block:** The function block is declared as a generic type in the 4diac IDE (`GenericClassName = 'GEN_AULI_ADD'`). This enables flexible processing of various data types (e.g., INT, REAL, LREAL), supported by the definition of the `AULI` adapter.
-* **Adapter Encapsulation:** Using adapters instead of standard data and event channels makes the system design more modular and transparent.
-* **Resource Efficiency:** Computations are performed directly based on adapter events, ensuring high-performance execution.
+- **Generic Function Block:** The function block is declared as a generic type in the 4diac IDE (`GenericClassName = 'GEN_AULI_ADD'`). This enables flexible processing of various data types (e.g., INT, REAL, LREAL), supported by the definition of the `AULI` adapter.
+- **Adapter Encapsulation:** Using adapters instead of standard data and event channels makes the system design more modular and transparent.
+- **Resource Efficiency:** Computations are performed directly based on adapter events, ensuring high-performance execution.
 
 ---
 
@@ -85,17 +85,17 @@ The function block operates as a stateless (or purely event-driven) arithmetic b
 
 ## Application Scenarios
 
-* **Measurement Summing:** Summarizing three analog measurements (e.g., three partial currents to determine the total current) in process automation.
-* **Setpoint Generation:** Adding base setpoints with two different correction or offset values.
-* **Structured Data Processing:** Used in complex IEC 61499 control applications where consistent use of adapters is required to improve clarity.
+- **Measurement Summing:** Summarizing three analog measurements (e.g., three partial currents to determine the total current) in process automation.
+- **Setpoint Generation:** Adding base setpoints with two different correction or offset values.
+- **Structured Data Processing:** Used in complex IEC 61499 control applications where consistent use of adapters is required to improve clarity.
 
 ---
 
 ## Comparison with Similar Components
 
-* **Standard Adder (IEC 61131-3):** The classic `ADD` component requires explicit `REQ` and `CNF` event lines, as well as individual data lines. `AULI_ADD_3` replaces these with just four adapter connections, which simplifies the visual programming interface.
-* **Cascaded Adders (e.g., 2x `AULI_ADD_2`):** To add three values with classic two-way adders, two components would have to be connected in series. `AULI_ADD_3` eliminates the need for an entire function block and the associated intermediate wiring.
-* ---
+- **Standard Adder (IEC 61131-3):** The classic `ADD` component requires explicit `REQ` and `CNF` event lines, as well as individual data lines. `AULI_ADD_3` replaces these with just four adapter connections, which simplifies the visual programming interface.
+- **Cascaded Adders (e.g., 2x `AULI_ADD_2`):** To add three values with classic two-way adders, two components would have to be connected in series. `AULI_ADD_3` eliminates the need for an entire function block and the associated intermediate wiring.
+- ---
 
 ## Change Detection
 

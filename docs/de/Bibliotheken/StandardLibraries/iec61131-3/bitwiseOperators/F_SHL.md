@@ -61,7 +61,7 @@ Der Funktionsblock `F_SHL` führt eine bitweise Linksverschiebung des Eingabewer
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Fazit
 

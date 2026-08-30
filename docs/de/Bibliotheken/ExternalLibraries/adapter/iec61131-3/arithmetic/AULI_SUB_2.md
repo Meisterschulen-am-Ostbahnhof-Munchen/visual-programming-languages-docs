@@ -32,29 +32,29 @@ Der Funktionsbaustein `AULI_SUB_2` ist ein generischer Funktionsbaustein (Generi
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AULI`):
-    *   Beschreibung: Der erste Eingang (Minuend) für die Subtraktion.
-*   **IN2** (Typ: `adapter::types::unidirectional::AULI`):
-    *   Beschreibung: Der zweite Eingang (Subtrahend) für die Subtraktion.
+-   **IN1** (Typ: `adapter::types::unidirectional::AULI`):
+    -   Beschreibung: Der erste Eingang (Minuend) für die Subtraktion.
+-   **IN2** (Typ: `adapter::types::unidirectional::AULI`):
+    -   Beschreibung: Der zweite Eingang (Subtrahend) für die Subtraktion.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AULI`):
-    *   Beschreibung: Der Ausgang (Differenz) der arithmetischen Subtraktion.
+-   **OUT** (Typ: `adapter::types::unidirectional::AULI`):
+    -   Beschreibung: Der Ausgang (Differenz) der arithmetischen Subtraktion.
 
 ---
 
 ## Funktionsweise
 
-Sobald über die Eingangs-Adapter `IN1` und `IN2` Werte und die dazugehörigen Ereignisse eintreffen, führt der Baustein die mathematische Operation `OUT = IN1 - IN2` aus. 
+Sobald über die Eingangs-Adapter `IN1` und `IN2` Werte und die dazugehörigen Ereignisse eintreffen, führt der Baustein die mathematische Operation `OUT = IN1 - IN2` aus.
 Da es sich um einen generischen Baustein (`GEN_AULI_SUB`) handelt, kann sich die konkrete Datentyp-Verarbeitung nach den im Adapter definierten Datentypen richten (z. B. Ganzzahlen oder Gleitkommazahlen). Das Ergebnis wird zusammen mit dem entsprechenden Trigger-Ereignis über den Ausgangs-Adapter `OUT` weitergeleitet.
 
 ---
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Durch das Attribut `GenericClassName` mit dem Wert `'GEN_AULI_SUB'` ist der Baustein flexibel für verschiedene Datentypen einsetzbar, sofern die verwendeten Adapter dies unterstützen.
-*   **Unidirektionale Adapter:** Die Verwendung des Typs `AULI` sorgt für eine klare Trennung der Signalflussrichtungen (unidirektional) und reduziert den Verdrahtungsaufwand im 4diac-Editor drastisch.
+-   **Generischer Baustein:** Durch das Attribut `GenericClassName` mit dem Wert `'GEN_AULI_SUB'` ist der Baustein flexibel für verschiedene Datentypen einsetzbar, sofern die verwendeten Adapter dies unterstützen.
+-   **Unidirektionale Adapter:** Die Verwendung des Typs `AULI` sorgt für eine klare Trennung der Signalflussrichtungen (unidirektional) und reduziert den Verdrahtungsaufwand im 4diac-Editor drastisch.
 
 ---
 
@@ -69,17 +69,17 @@ Der Baustein verhält sich rein kombinatorisch bzw. ereignisgesteuert:
 
 ## Anwendungsszenarien
 
-*   **Soll-Ist-Wert-Vergleich:** Berechnung von Regeldifferenzen in der Prozesstechnik (z. B. `Regeldifferenz = Sollwert - Istwert`).
-*   **Offset-Kompensation:** Abzug von Nullpunktfehlern oder Offsets bei analogen Sensorwerten.
-*   **Kaskadierte Berechnungen:** Mathematische Berechnungen in modularen Anlagensteuerungen, bei denen Messwerte strukturiert über Adapter transportiert werden.
+-   **Soll-Ist-Wert-Vergleich:** Berechnung von Regeldifferenzen in der Prozesstechnik (z. B. `Regeldifferenz = Sollwert - Istwert`).
+-   **Offset-Kompensation:** Abzug von Nullpunktfehlern oder Offsets bei analogen Sensorwerten.
+-   **Kaskadierte Berechnungen:** Mathematische Berechnungen in modularen Anlagensteuerungen, bei denen Messwerte strukturiert über Adapter transportiert werden.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-Subtraktionsbaustein (z. B. `SUB` aus der IEC 61131-3 Standardbibliothek) bietet `AULI_SUB_2` folgende Vorteile:
-*   **Reduzierte Komplexität:** Statt einzelner Leitungen für Event (REQ/CNF) und Daten (IN1, IN2, OUT) bündeln die `AULI`-Adapter alle relevanten Informationen in einer einzigen Verbindung.
-*   **Modularität:** Das Design eignet sich hervorragend für serviceorientierte Architekturen in verteilten Systemen.
+-   **Reduzierte Komplexität:** Statt einzelner Leitungen für Event (REQ/CNF) und Daten (IN1, IN2, OUT) bündeln die `AULI`-Adapter alle relevanten Informationen in einer einzigen Verbindung.
+-   **Modularität:** Das Design eignet sich hervorragend für serviceorientierte Architekturen in verteilten Systemen.
 
 ---
 

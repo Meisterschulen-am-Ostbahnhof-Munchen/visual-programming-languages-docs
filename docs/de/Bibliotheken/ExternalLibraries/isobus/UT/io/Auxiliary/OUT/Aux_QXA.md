@@ -78,7 +78,7 @@ Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QXA:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003c_sub_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
+- [Uebung_003c_sub_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
 
 ## Fazit
 

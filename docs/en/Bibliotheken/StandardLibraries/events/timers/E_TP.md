@@ -56,7 +56,7 @@ The **E_TP** function block is a useful tool in IEC 61499-based control technolo
 The **E_TP** function block is a useful tool in IEC 61499-based control technology for implementing time-controlled actions.
 ## 🛠️ Related exercises
 
-* [Uebung_020f](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f.md)
-* [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
-* [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
-* [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
+- [Uebung_020f](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f.md)
+- [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
+- [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)

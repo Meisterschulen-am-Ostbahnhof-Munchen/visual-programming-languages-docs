@@ -117,8 +117,8 @@ Without this attribute or with an empty value, the function block is invalid and
 
 If an assignment (in ST) or a connection (in the FB network) is not implicitly allowed (see matrix above), an explicit conversion must be performed:
 
-* **In Structured Text (ST):** Use a conversion function of the form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` (e.g., `DINT_TO_UDINT`).
-* **In the graphical FB network:** Insert the corresponding conversion function block (e.g., block `DINT_TO_UDINT`) between the output and input.
+- **In Structured Text (ST):** Use a conversion function of the form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` (e.g., `DINT_TO_UDINT`).
+- **In the graphical FB network:** Insert the corresponding conversion function block (e.g., block `DINT_TO_UDINT`) between the output and input.
 ### ⚠️ Important Special Case: Bit Strings to Numeric Types (reinterpret_cast)
 
 In FORTE / 4diac, conversions of bit strings (such as `DWORD`, `WORD`, `BYTE`) to numeric types (`REAL`, `INT`, `DINT`, etc.) are performed at the bit level **`reinterpret_cast`**. This means that the bit patterns are copied directly without adjusting the mathematical value. This applies equally to ST function calls and graphical conversion blocks.
@@ -127,29 +127,29 @@ In FORTE / 4diac, conversions of bit strings (such as `DWORD`, `WORD`, `BYTE`) t
 
 If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is to be output as a floating-point number (`REAL`):
 
-* **Incorrect:**
-* *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
-* *In the FB network:* Direct connection via the conversion block `DWORD_TO_REAL`.
-* *Explanation:* This copies the bits of 123 directly into the float bit pattern. According to IEEE-754, this is interpreted as an extremely small, almost infinitely close zero, which is mathematically incorrect.
-* **Correct (double conversion):**
-* *In ST:*
+- **Incorrect:**
+- *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
+- *In the FB network:* Direct connection via the conversion block `DWORD_TO_REAL`.
+- *Explanation:* This copies the bits of 123 directly into the float bit pattern. According to IEEE-754, this is interpreted as an extremely small, almost infinitely close zero, which is mathematically incorrect.
+- **Correct (double conversion):**
+- *In ST:*
     ```pascal
     real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
     ```
 
-* *In the FB network:* Sequential insertion of two conversion modules:
+- *In the FB network:* Sequential insertion of two conversion modules:
     `[DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.
 
-* *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
+- *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
 
 #### Scenario B: An IEEE-754 float bit pattern is already stored in the DWORD.
 
 If `DWORD` directly contains the raw bit pattern of a floating-point number (e.g., read in via a Modbus register or a network connection):
 
-* **Correct:**
-* *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
-* *In the FB network:* Insert the conversion block `DWORD_TO_REAL`.
-* *Explanation:* Here, the direct cast via `reinterpret_cast` is exactly what's needed to interpret the raw bits directly as a floating-point number.
+- **Correct:**
+- *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
+- *In the FB network:* Insert the conversion block `DWORD_TO_REAL`.
+- *Explanation:* Here, the direct cast via `reinterpret_cast` is exactly what's needed to interpret the raw bits directly as a floating-point number.
 
 ## Type Conversions (Casting)
 
@@ -207,4 +207,4 @@ This applies in particular to:
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

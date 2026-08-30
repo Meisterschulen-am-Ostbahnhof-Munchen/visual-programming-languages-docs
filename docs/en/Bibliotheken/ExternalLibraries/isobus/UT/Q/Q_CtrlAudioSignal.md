@@ -93,9 +93,9 @@ The F.10 command addresses the VT's **audio device** directly — it does **not 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
-* [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
-* [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
+- [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
+- [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+- [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Conclusion
 

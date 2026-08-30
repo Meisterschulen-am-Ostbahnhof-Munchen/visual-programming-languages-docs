@@ -56,10 +56,10 @@ Ein Datentyp wie ST16X hat keine aktive 'Funktionsweise' im Sinne eines Algorith
 
 ## Technische Besonderheiten
 
-*   **Strukturierte Anordnung:** Der Datentyp fasst 16 unabhängige BOOL-Werte zu einer logischen Einheit zusammen.
-*   **Eindeutige Benennung:** Jedes Bit ist über einen individuellen Namen (`X_00` bis `B_15`) anstatt über einen Index ansprechbar, was die Lesbarkeit des Codes verbessert.
-*   **Kommentar:** Jeder Variable ist ein Kommentar zugeordnet ("BIT xx"), der die Bitposition verdeutlicht.
-*   **Modularität:** Fördert die Modularität und Wiederverwendbarkeit von Code, indem komplexe Statusinformationen gebündelt werden.
+-   **Strukturierte Anordnung:** Der Datentyp fasst 16 unabhängige BOOL-Werte zu einer logischen Einheit zusammen.
+-   **Eindeutige Benennung:** Jedes Bit ist über einen individuellen Namen (`X_00` bis `B_15`) anstatt über einen Index ansprechbar, was die Lesbarkeit des Codes verbessert.
+-   **Kommentar:** Jeder Variable ist ein Kommentar zugeordnet ("BIT xx"), der die Bitposition verdeutlicht.
+-   **Modularität:** Fördert die Modularität und Wiederverwendbarkeit von Code, indem komplexe Statusinformationen gebündelt werden.
 
 ## Zustandsübersicht
 
@@ -67,18 +67,18 @@ Als reiner Datentyp hat ST16X selbst keine 'Zustandsübersicht' im Sinne eines e
 
 ## Anwendungsszenarien
 
-*   **Statusregister:** Darstellung des Zustands von bis zu 16 verschiedenen Komponenten, Sensoren oder Funktionen (z.B. "Motor EIN", "Fehler aktiv", "Grenzwert erreicht").
-*   **Bit-Flags:** Speicherung von Konfigurations-Flags oder Fehlerindikatoren in Steuerungsanwendungen.
-*   **Digitale Ein-/Ausgangssignale:** Bündelung von digitalen Ein- oder Ausgängen eines Moduls, um sie als eine einzige Datenstruktur zu übergeben.
-*   **Datenpaketierung:** Vereinfachte Übergabe von mehreren binären Informationen zwischen Funktionsblöcken oder über Kommunikationsschnittstellen.
+-   **Statusregister:** Darstellung des Zustands von bis zu 16 verschiedenen Komponenten, Sensoren oder Funktionen (z.B. "Motor EIN", "Fehler aktiv", "Grenzwert erreicht").
+-   **Bit-Flags:** Speicherung von Konfigurations-Flags oder Fehlerindikatoren in Steuerungsanwendungen.
+-   **Digitale Ein-/Ausgangssignale:** Bündelung von digitalen Ein- oder Ausgängen eines Moduls, um sie als eine einzige Datenstruktur zu übergeben.
+-   **Datenpaketierung:** Vereinfachte Übergabe von mehreren binären Informationen zwischen Funktionsblöcken oder über Kommunikationsschnittstellen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Da ST16X ein Datentyp ist, kann er nicht direkt mit einem 'Baustein' im Sinne eines Funktionsblocks verglichen werden. Er kann jedoch mit anderen Möglichkeiten zur Speicherung von Binärdaten verglichen werden:
 
-*   **Einzelne BOOL-Variablen:** ST16X bietet den Vorteil, 16 BOOLs als eine Einheit zu behandeln, was die Datenstrukturierung und Übergabe vereinfacht und die Anzahl der deklarierten Variablen reduziert.
-*   **ARRAY OF BOOL:** Ein `ARRAY [0..15] OF BOOL` bietet eine ähnliche Funktionalität. ST16X hat den Vorteil, dass die einzelnen Bits über sprechende Namen (z.B. `meineST16XVariable.X_00`) adressiert werden können, was die Lesbarkeit verbessert, anstatt über Indizes (`meinARRAY[0]`).
-*   **WORD/INT-Typen:** Diese können ebenfalls zur Speicherung von Bits verwendet werden. ST16X bietet eine typsichere und selbstdokumentierende Möglichkeit, Bits zu verwalten, ohne manuelle Bit-Maskierungsoperationen oder typische Umwandlungsfehler.
+-   **Einzelne BOOL-Variablen:** ST16X bietet den Vorteil, 16 BOOLs als eine Einheit zu behandeln, was die Datenstrukturierung und Übergabe vereinfacht und die Anzahl der deklarierten Variablen reduziert.
+-   **ARRAY OF BOOL:** Ein `ARRAY [0..15] OF BOOL` bietet eine ähnliche Funktionalität. ST16X hat den Vorteil, dass die einzelnen Bits über sprechende Namen (z.B. `meineST16XVariable.X_00`) adressiert werden können, was die Lesbarkeit verbessert, anstatt über Indizes (`meinARRAY[0]`).
+-   **WORD/INT-Typen:** Diese können ebenfalls zur Speicherung von Bits verwendet werden. ST16X bietet eine typsichere und selbstdokumentierende Möglichkeit, Bits zu verwalten, ohne manuelle Bit-Maskierungsoperationen oder typische Umwandlungsfehler.
 
 ## Fazit
 
@@ -88,4 +88,4 @@ Der Datentyp ST16X stellt eine effiziente und übersichtliche Methode dar, um ei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

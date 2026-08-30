@@ -92,10 +92,10 @@ ID_NULL (65535) is not a valid command target for the new active mask. Any ID ou
 
 ## 🛠️ Related Exercises
 
-* [Exercise_019](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
-* [Exercise_019a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
-* [Exercise_019b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
-* [Exercise_019c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
+- [Exercise_019](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
+- [Exercise_019a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
+- [Exercise_019b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+- [Exercise_019c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
 
 ## Conclusion
 

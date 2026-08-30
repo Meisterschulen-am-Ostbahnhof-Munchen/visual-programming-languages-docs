@@ -50,14 +50,14 @@ The flow within the subapplication is purely event- and signal-driven via the ad
 2. **Triggering**: `AX_SWITCH` detects the signal at input `G` and fires an event at output `EO1`.
 3. **State Change**: This event serves as the clock signal (`CLK`) for `AX_T_FF`, which then toggles its internal state `Q`.
 4. **Signal Distribution**: The signal from `Q` is passed on to the splitter `AX_SPLIT_2`.
-* **Path A (Right)**: The output `OUT1` of the splitter forwards the signal directly to the plug `Rechts`.
-* **Path B (Left)**: The output `OUT2` of the splitter forwards the signal to the inverter `AX_NOT`. The inverted signal is then output to the plug `Links`.
+- **Path A (Right)**: The output `OUT1` of the splitter forwards the signal directly to the plug `Rechts`.
+- **Path B (Left)**: The output `OUT2` of the splitter forwards the signal to the inverter `AX_NOT`. The inverted signal is then output to the plug `Links`.
 
 **Interfaces:**
 
-* `IN` (Socket): Input for the control signal.
-* `Rechts` (Plug): Output corresponding to the current state of the flip-flop.
-* `Links` (Plug): Output corresponding to the inverted state of the flip-flop.
+- `IN` (Socket): Input for the control signal.
+- `Rechts` (Plug): Output corresponding to the current state of the flip-flop.
+- `Links` (Plug): Output corresponding to the inverted state of the flip-flop.
 
 ## Summary
 

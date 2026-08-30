@@ -40,17 +40,17 @@ This function block generates the blink signal for the green phase.
 
 ### Logic and Auxiliary Blocks
 
-* **OR_Red, OR_Yellow, OR_Green** (`adapter::booleanOperators::AX_OR_2`): OR gates to route different sequence steps to the same lamp (e.g., red lights up alone in S1, but also together with yellow in S2).
-* **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`): A signal splitter that divides an input signal into two paths.
-* **AX_R_TRIG** (`adapter::events::unidirectional::AX_R_TRIG`): Rising trigger for precise start of the blinker.
-* **E_TimeOut** (`iec61499::events::E_TimeOut`): Handles sequence timeouts.
+- **OR_Red, OR_Yellow, OR_Green** (`adapter::booleanOperators::AX_OR_2`): OR gates to route different sequence steps to the same lamp (e.g., red lights up alone in S1, but also together with yellow in S2).
+- **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`): A signal splitter that divides an input signal into two paths.
+- **AX_R_TRIG** (`adapter::events::unidirectional::AX_R_TRIG`): Rising trigger for precise start of the blinker.
+- **E_TimeOut** (`iec61499::events::E_TimeOut`): Handles sequence timeouts.
 
 ### Input/Output Blocks
 
-* **DigitalInput_CLK_I1** (`logiBUS::io::DI::logiBUS_IE`): Reads the button `Input_I1` (Event: `BUTTON_SINGLE_CLICK`).
-* **Light_Red_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Controls the red lamp (`Output_Q1`).
-* **Light_Yellow_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Controls the yellow lamp (`Output_Q2`).
-* **Light_Green_Q3** (`logiBUS::io::DQ::logiBUS_QXA`): Controls the green lamp (`Output_Q3`).
+- **DigitalInput_CLK_I1** (`logiBUS::io::DI::logiBUS_IE`): Reads the button `Input_I1` (Event: `BUTTON_SINGLE_CLICK`).
+- **Light_Red_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Controls the red lamp (`Output_Q1`).
+- **Light_Yellow_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Controls the yellow lamp (`Output_Q2`).
+- **Light_Green_Q3** (`logiBUS::io::DQ::logiBUS_QXA`): Controls the green lamp (`Output_Q3`).
 
 ## Program Flow and Connections
 

@@ -75,8 +75,8 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
-* [Exercise_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Exercise_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Exercise_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
 
 ## Conclusion
 

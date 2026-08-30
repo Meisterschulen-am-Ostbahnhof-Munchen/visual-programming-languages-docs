@@ -62,20 +62,20 @@ The circuit implements a logical AND operation at the timing level (synchronizat
 
 1. **Input Acquisition**: The three input blocks `DigitalInput_CLK_I1`, `_I2`, and `_I3` send a `IND` event upon activation (single click).
 2. **Rendezvous (Synchronization)**: These three events are routed to the block `E_REND_3`.
-* The function block internally stores which inputs have already been activated.
-* Only when **all three** inputs (I1, I2, and I3) have sent a signal at least once is the output event `EO` of `E_REND_3` triggered.
+- The function block internally stores which inputs have already been activated.
+- Only when **all three** inputs (I1, I2, and I3) have sent a signal at least once is the output event `EO` of `E_REND_3` triggered.
 3. **Processing (Toggle)**: The `EO` event of the Rendezvous function block triggers the `CLK` input of `E_T_FF_SR`.
-* The flip-flop changes its state (from FALSE to TRUE or vice versa).
-* The new state `Q` is passed to the output `DigitalOutput_Q1`, which turns the lamp (Q1) on or off.
+- The flip-flop changes its state (from FALSE to TRUE or vice versa).
+- The new state `Q` is passed to the output `DigitalOutput_Q1`, which turns the lamp (Q1) on or off.
 4. **Reset**: The input `DigitalInput_R_I4` is connected to the reset inputs (`R`) of both `E_REND_3` and `E_T_FF_SR`.
-* A signal at I4 clears the internal memory of the Rendezvous module (all three buttons must be pressed again).
-* Simultaneously, the flip-flop is reset, causing output Q1 to immediately switch to `FALSE` (Off).
+- A signal at I4 clears the internal memory of the Rendezvous module (all three buttons must be pressed again).
+- Simultaneously, the flip-flop is reset, causing output Q1 to immediately switch to `FALSE` (Off).
 
 **Learning Objectives:**
 
-* Understanding the `E_REND` pattern (waiting for multiple events).
-* Combining event control and state storage (flip-flop).
-* Implementing a central reset logic.
+- Understanding the `E_REND` pattern (waiting for multiple events).
+- Combining event control and state storage (flip-flop).
+- Implementing a central reset logic.
 
 ## Summary
 

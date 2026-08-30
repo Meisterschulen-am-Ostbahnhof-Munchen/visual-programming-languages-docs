@@ -17,8 +17,8 @@ Understanding time control through event delay (`E_DELAY`). It demonstrates how 
 
 ![Uebung_020b_network](./Uebung_020b_network.svg)
 
-* **`E_DELAY`**: Waits for the time `DT` (2 seconds).
-* **`E_SWITCH`**: Controls the start and stop of the timer.
+- **`E_DELAY`**: Waits for the time `DT` (2 seconds).
+- **`E_SWITCH`**: Controls the start and stop of the timer.
 
 -----
 

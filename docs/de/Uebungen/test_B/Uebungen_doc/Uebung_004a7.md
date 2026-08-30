@@ -20,10 +20,10 @@ Demonstration der Interaktion zwischen komplexer Ereignis-Logik (`E_REND`) und e
 
 ![Uebung_004a7_network](./Uebung_004a7_network.svg)
 
-  * **`I1` & `I2`**: Eingänge für das Rendezvous (Scharfschalten).
-  * **`I3`**: Zentraler Reset-Eingang.
-  * **`E_REND`**: Synchronisiert die Ereignisse von `I1` und `I2`.
-  * **`E_T_FF_SR`**: Ein Toggle-Flip-Flop, das zusätzlich einen `R` (Reset) Eingang besitzt, um den Zustand definiert auf `FALSE` zu setzen.
+  - **`I1` & `I2`**: Eingänge für das Rendezvous (Scharfschalten).
+  - **`I3`**: Zentraler Reset-Eingang.
+  - **`E_REND`**: Synchronisiert die Ereignisse von `I1` und `I2`.
+  - **`E_T_FF_SR`**: Ein Toggle-Flip-Flop, das zusätzlich einen `R` (Reset) Eingang besitzt, um den Zustand definiert auf `FALSE` zu setzen.
 
 -----
 
@@ -43,8 +43,8 @@ Demonstration der Interaktion zwischen komplexer Ereignis-Logik (`E_REND`) und e
 
 1.  Um das Licht (`Q1`) umzuschalten, müssen beide Taster `I1` und `I2` betätigt worden sein. Das Rendezvous feuert dann den Takt (`CLK`) für das Flip-Flop.
 2.  Der Taster `I3` fungiert als **Alles-Aus-Taste**:
-    *   Er setzt das Flip-Flop `E_T_FF_SR` sofort zurück (Ausgang wird `FALSE`).
-    *   Er löscht gleichzeitig das Gedächtnis von `E_REND`. Falls also nur ein Taster (`I1` oder `I2`) gedrückt war, wird diese Teil-Information gelöscht.
+    -   Er setzt das Flip-Flop `E_T_FF_SR` sofort zurück (Ausgang wird `FALSE`).
+    -   Er löscht gleichzeitig das Gedächtnis von `E_REND`. Falls also nur ein Taster (`I1` oder `I2`) gedrückt war, wird diese Teil-Information gelöscht.
 
 -----
 

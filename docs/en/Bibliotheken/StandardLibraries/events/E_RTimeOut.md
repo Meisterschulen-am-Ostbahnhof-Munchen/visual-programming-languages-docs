@@ -66,8 +66,8 @@ The block uses a **socket** of type `ARTimeOut`. Since it is a socket, the signa
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
-* [Exercise_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)
+- [Exercise_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+- [Exercise_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)
 
 ## Conclusion
 

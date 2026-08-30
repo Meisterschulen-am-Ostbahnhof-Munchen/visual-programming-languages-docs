@@ -20,7 +20,7 @@ Umgang mit rastenden Tasten (Latching Buttons).
 
 ![Uebung_010a3_AX_network](./Uebung_010a3_AX_network.svg)
 
-  * **`Button_L1`**: Ein Button, der im ISOBUS-Pool als "Latching" definiert ist.
+  - **`Button_L1`**: Ein Button, der im ISOBUS-Pool als "Latching" definiert ist.
 
 -----
 

@@ -15,9 +15,9 @@ The main objective of this exercise is to implement a logical decision structure
 
 ![Uebung_002a4_network](./Uebung_002a4_network.svg)
 
-* **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IX`. [cite_start]These represent the two hardware inputs being monitored[cite: 1].
-* **`AND_2_BOOL`**: An instance of type `AND_2_BOOL` (from the IEC 61131 library). [cite_start]This block performs the logical AND operation specifically for Boolean values. It has two data inputs (`IN1`, `IN2`) and one data output (`OUT`)[cite: 1]. Like all standard logic blocks, it responds to an event at port `REQ` and signals completion at port `CNF`.
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. [cite_start]This block controls the hardware output `Output_Q1`[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IX`. [cite_start]These represent the two hardware inputs being monitored[cite: 1].
+- **`AND_2_BOOL`**: An instance of type `AND_2_BOOL` (from the IEC 61131 library). [cite_start]This block performs the logical AND operation specifically for Boolean values. It has two data inputs (`IN1`, `IN2`) and one data output (`OUT`)[cite: 1]. Like all standard logic blocks, it responds to an event at port `REQ` and signals completion at port `CNF`.
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QX`. [cite_start]This block controls the hardware output `Output_Q1`[cite: 1].
 
 -----
 

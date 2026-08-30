@@ -10,8 +10,8 @@ Dieses Buch gilt als das maßgebliche englischsprachige Standardwerk zur Norm IE
 
 **Valeriy Vyatkin** ist Professor für Informatik in der industriellen Automatisierung. Mit Professuren an der Aalto-Universität (Finnland) und der Technischen Universität Luleå (Schweden) ist er eine führende akademische Stimme bei der Förderung intelligenter, dezentraler Automatisierung. Seine Arbeit war entscheidend dafür, zu zeigen, wie formale Methoden und verteilte Intelligenz Automatisierungssysteme flexibler und zuverlässiger machen können.
 
-* [Amazon](https://www.amazon.de/Function-Embedded-Distributed-Control-Systems/dp/1936007932)
-* [Musterseiten (PDF)](http://www.vyatkin.org/book/Pages%20from%20IEC%2061499%20Vyatkin%20Second%20Edition.pdf)
+- [Amazon](https://www.amazon.de/Function-Embedded-Distributed-Control-Systems/dp/1936007932)
+- [Musterseiten (PDF)](http://www.vyatkin.org/book/Pages%20from%20IEC%2061499%20Vyatkin%20Second%20Edition.pdf)
 
 ---
 
@@ -26,7 +26,7 @@ Dieser praxisorientierte Leitfaden konzentriert sich auf die Anwendungsebene der
 **Alois Zoitl** ist Professor für Cyber-Physical Systems an der Johannes Kepler Universität (JKU) Linz. Er ist einer der Gründerväter des Projekts Eclipse 4diac und hat seine Karriere der Entwicklung hochwertiger Open-Source-Werkzeuge für die IEC 61499 gewidmet, um diese der Industrie zugänglich zu machen.
 **Thomas Strasser** ist Senior Scientist am AIT (Austrian Institute of Technology) mit den Schwerpunkten Smart Grids und verteilte Energiesysteme, wo er IEC 61499-Konzepte zur Modernisierung von Stromnetzen anwendet.
 
-* [Amazon](https://www.amazon.de/Distributed-Control-Applications-Application-Information/dp/1138892955)
+- [Amazon](https://www.amazon.de/Distributed-Control-Applications-Application-Information/dp/1138892955)
 
 ---
 
@@ -40,10 +40,10 @@ Dieses Werk bietet einen tiefen Einblick in die Modellierungsaspekte industriell
 
 **Robert W. Lewis** ist ein Veteran auf dem Gebiet der SPS-Programmierung und industrieller Softwarestandards. Gemeinsam mit **Alois Zoitl** kombiniert er jahrzehntelange Industrieerfahrung mit akademischer Strenge, um einen umfassenden Blick darauf zu werfen, wie Modellierung komplexe technische Herausforderungen in der Automatisierung lösen kann.
 
-* [Amazon](https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601)
+- [Amazon](https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601)
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

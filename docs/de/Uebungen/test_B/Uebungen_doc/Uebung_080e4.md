@@ -27,33 +27,33 @@ Diese Übung demonstriert den Einsatz eines **E_CTU** (Event-Zählers) in Kombin
 
 ### Ereignis- und Datenfluss
 
-1. **Zählimpulse generieren**  
-   Der Taktgeber `E_CYCLE` wird gestartet, sobald `DigitalInput_CLK_I1` ein Ereignis (`IND`) sendet. Stoppt wird er durch ein Ereignis von `DigitalInput_CLK_I2`.  
+1. **Zählimpulse generieren**
+   Der Taktgeber `E_CYCLE` wird gestartet, sobald `DigitalInput_CLK_I1` ein Ereignis (`IND`) sendet. Stoppt wird er durch ein Ereignis von `DigitalInput_CLK_I2`.
    Der zyklische Ereignisausgang `EO` von `E_CYCLE` triggert den **Zähleingang `CU`** von `E_CTU`.
 
-2. **Zähler rücksetzen**  
+2. **Zähler rücksetzen**
    Ein Ereignis von `DigitalInput_CLK_I2` wird zusätzlich an den **Reset-Eingang `R`** von `E_CTU` geleitet.
 
-3. **Zählerausgänge**  
+3. **Zählerausgänge**
    Der Zähler gibt zwei Ereignisse aus:
 
    - `CUO` (Counter Overflow) – wird aktiv, wenn der Zählerstand `CV` den Parameter `PV` (hier 5) erreicht.
    - `RO` (Reset Overflow) – wird aktiv, wenn der Zähler zurückgesetzt wird und dabei den Bereich übersteigt (hier nicht relevant, aber beide Ereignisse werden verwendet).
 
-4. **Ereignisverteilung und -zusammenführung**  
-   `CUO` und `RO` werden gemeinsam auf den Eingang `EI` von `E_SPLIT_4` geschaltet.  
-   `E_SPLIT_4` verteilt jedes ankommende Ereignis auf alle vier Ausgänge `EO1`…`EO4`. Diese vier Ausgänge sind mit den vier Eingängen `EI1`…`EI4` von `E_MERGE_4` verbunden.  
+4. **Ereignisverteilung und -zusammenführung**
+   `CUO` und `RO` werden gemeinsam auf den Eingang `EI` von `E_SPLIT_4` geschaltet.
+   `E_SPLIT_4` verteilt jedes ankommende Ereignis auf alle vier Ausgänge `EO1`…`EO4`. Diese vier Ausgänge sind mit den vier Eingängen `EI1`…`EI4` von `E_MERGE_4` verbunden.
    **Effekt:** Jedes Ereignis von `E_CTU` (egal ob `CUO` oder `RO`) wird sofort an den Ausgang `EO` von `E_MERGE_4` weitergegeben – es entsteht eine **logische ODER-Verknüpfung** der beiden Ereignisse.
 
-5. **Eventbremse durch `E_D_FF_ANY`**  
-   Das zusammengeführte Ereignis speist den **Taktingang `CLK`** von `E_D_FF_ANY`. Dieser Baustein übernimmt den **Datenwert `D`** (den aktuellen Zählerstand `CV`) nur dann an den Ausgang `Q`, wenn der Wert für mindestens `Tmin = 1s` stabil bleibt (Hysterese von `25` Einheiten).  
+5. **Eventbremse durch `E_D_FF_ANY`**
+   Das zusammengeführte Ereignis speist den **Taktingang `CLK`** von `E_D_FF_ANY`. Dieser Baustein übernimmt den **Datenwert `D`** (den aktuellen Zählerstand `CV`) nur dann an den Ausgang `Q`, wenn der Wert für mindestens `Tmin = 1s` stabil bleibt (Hysterese von `25` Einheiten).
    Dadurch werden kurze Spitzen auf dem Zählerstand gefiltert.
 
-6. **Numerische Ausgabe**  
+6. **Numerische Ausgabe**
    Der stabile Zählerstand `Q` von `E_D_FF_ANY` wird über die Datenverbindung an den Eingang `u32NewValue` von `Q_NumericValue` übergeben. Das Ereignis `EO` von `E_D_FF_ANY` triggert die Ausgabe über den `REQ`-Eingang.
 
-7. **Digitaler Ausgang**  
-   Parallel dazu wird das gleiche zusammengeführte Ereignis von `E_MERGE_4` auch an den **Taktingang `CLK`** eines normalen `E_D_FF` geleitet. Dieser übernimmt den **binären Datenwert `Q`** von `E_CTU` (den Zählerstatus: ob Schwelle erreicht) und gibt ihn über `EO` an `DigitalOutput_Q1` weiter.  
+7. **Digitaler Ausgang**
+   Parallel dazu wird das gleiche zusammengeführte Ereignis von `E_MERGE_4` auch an den **Taktingang `CLK`** eines normalen `E_D_FF` geleitet. Dieser übernimmt den **binären Datenwert `Q`** von `E_CTU` (den Zählerstatus: ob Schwelle erreicht) und gibt ihn über `EO` an `DigitalOutput_Q1` weiter.
    Der Ausgang `DigitalOutput_Q1` schaltet also immer dann ein, wenn der Zähler gerade seinen Endwert erreicht oder zurückgesetzt wird.
 
 ### Lernziele
@@ -88,6 +88,6 @@ Die Übung veranschaulicht, wie ein **E_CTU** mit Hilfe von **E_D_FF_ANY** und *
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

@@ -17,7 +17,7 @@ Implementation of exclusive selection logic. Switching on one channel must neces
 
 ![Uebung_004b3_network](./Uebung_004b3_network.svg)
 
-* Identical to 004b2: Pushbuttons `I1`/`I2`, Turnouts `E_SWITCH_I1`/`I2`, Memory `E_SR_I1`/`I2`.
+- Identical to 004b2: Pushbuttons `I1`/`I2`, Turnouts `E_SWITCH_I1`/`I2`, Memory `E_SR_I1`/`I2`.
 
 -----
 

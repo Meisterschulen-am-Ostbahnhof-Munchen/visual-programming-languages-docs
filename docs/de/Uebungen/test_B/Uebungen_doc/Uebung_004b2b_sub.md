@@ -30,12 +30,12 @@ Diese Übung implementiert ein **Toggle-Flip-Flop** (auch bekannt als Umschaltgl
 
   - Ist `G = FALSE`, wird das Ereignis auf `EO0` (Set) gegeben.
   - Ist `G = TRUE`, wird das Ereignis auf `EO1` (Reset) gegeben.
-  
+
   Der `E_SR` reagiert auf die Ereignisse an seinen Set- und Reset-Eingängen:
 
   - Ein Ereignis auf `S` setzt den Ausgang `Q = TRUE`.
   - Ein Ereignis auf `R` setzt `Q = FALSE`.
-  
+
   Der Ausgang `Q` wird zurück an den Gate-Eingang `G` des `E_SWITCH` geführt. Dadurch wird bei jedem neuen Ereignis `IND` der aktuelle Zustand invertiert – es entsteht ein **Toggle-Flip-Flop**. Der Ausgang `Q` wird gleichzeitig an den äußeren Ausgang der Subapplikation weitergeleitet.
 
 ## Programmablauf und Verbindungen
@@ -46,14 +46,14 @@ Diese Übung implementiert ein **Toggle-Flip-Flop** (auch bekannt als Umschaltgl
 
 **Verbindungen im Überblick** (intern):
 
-- Ereignisverbindungen:  
-  `IND` → `E_SWITCH.EI`  
-  `E_SWITCH.EO0` → `E_SR.S`  
-  `E_SWITCH.EO1` → `E_SR.R`  
+- Ereignisverbindungen:
+  `IND` → `E_SWITCH.EI`
+  `E_SWITCH.EO0` → `E_SR.S`
+  `E_SWITCH.EO1` → `E_SR.R`
   `E_SR.EO` → `EO` (äußerer Ausgang)
 
-- Datenverbindungen:  
-  `E_SR.Q` → `E_SWITCH.G` (Rückkopplung)  
+- Datenverbindungen:
+  `E_SR.Q` → `E_SWITCH.G` (Rückkopplung)
   `E_SR.Q` → `Q` (äußerer Ausgang)
 
 **Lernziele**:
@@ -76,4 +76,4 @@ Die Übung 004b2b demonstriert die einfache Realisierung eines Toggle-Flip-Flops
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

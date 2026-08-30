@@ -17,10 +17,10 @@ To build a control system for forward and reverse operation with software interl
 
 ![Uebung_006a3_network](./Uebung_006a3_network.svg)
 
-* **`E_T_FF_SR`**: Determines whether the motor is running (On/Off).
-* **`LinksRechts_T_FF` (SubApp)**: An internal marker that changes the direction every time the motor starts.
-* **2x `AND_2_BOOL`**: Link the "On" signal to the selected direction.
-* **`Q1` (Counter-clockwise) & `Q2` (Counter-clockwise)**: The hardware outputs.
+- **`E_T_FF_SR`**: Determines whether the motor is running (On/Off).
+- **`LinksRechts_T_FF` (SubApp)**: An internal marker that changes the direction every time the motor starts.
+- **2x `AND_2_BOOL`**: Link the "On" signal to the selected direction.
+- **`Q1` (Counter-clockwise) & `Q2` (Counter-clockwise)**: The hardware outputs.
 
 -----
 

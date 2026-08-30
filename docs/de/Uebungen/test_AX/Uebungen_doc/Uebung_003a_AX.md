@@ -20,21 +20,21 @@ Das Hauptziel ist es zu zeigen, wie redundanter Code vermieden werden kann. Anst
 
 [cite_start]Dieser Baustein kapselt die grundlegende Logik: "Lies einen Eingang und schreibe auf einen Ausgang"[cite: 2]. Er verfügt über Schnittstellen zur Parametrierung:
 
-  * **`Input`**: Bestimmt, welcher physische Eingang gelesen werden soll (z.B. `Input_I1`).
-  * **`Output`**: Bestimmt, welcher physische Ausgang geschaltet werden soll (z.B. `Output_Q1`).
+  - **`Input`**: Bestimmt, welcher physische Eingang gelesen werden soll (z.B. `Input_I1`).
+  - **`Output`**: Bestimmt, welcher physische Ausgang geschaltet werden soll (z.B. `Output_Q1`).
 
 Intern enthält dieser Sub-Typ:
 
-  * Einen `logiBUS_IXA` Baustein zum Lesen des Eingangs.
-  * Einen `logiBUS_QXA` Baustein zum Schreiben des Ausgangs.
-  * Eine Adapter-Verbindung, die beide direkt verknüpft.
+  - Einen `logiBUS_IXA` Baustein zum Lesen des Eingangs.
+  - Einen `logiBUS_QXA` Baustein zum Schreiben des Ausgangs.
+  - Eine Adapter-Verbindung, die beide direkt verknüpft.
 
 ### Instanzen in der Hauptanwendung
 
 In `Uebung_003a_AX` werden zwei Instanzen dieses Typs erzeugt:
 
-  * **`F1`**: [cite_start]Konfiguriert für `Input_I1` auf `Output_Q1`[cite: 1].
-  * **`F2`**: [cite_start]Konfiguriert für `Input_I2` auf `Output_Q2`[cite: 1].
+  - **`F1`**: [cite_start]Konfiguriert für `Input_I1` auf `Output_Q1`[cite: 1].
+  - **`F2`**: [cite_start]Konfiguriert für `Input_I2` auf `Output_Q2`[cite: 1].
 
 -----
 

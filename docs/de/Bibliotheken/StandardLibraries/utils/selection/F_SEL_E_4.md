@@ -63,9 +63,9 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_019a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
-* [Uebung_019b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
-* [Uebung_019c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
+- [Uebung_019a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
+- [Uebung_019b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+- [Uebung_019c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
 
 ## Fazit
 

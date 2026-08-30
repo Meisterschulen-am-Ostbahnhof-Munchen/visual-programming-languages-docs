@@ -17,9 +17,9 @@ Starting and stopping the flasher.
 
 ![Uebung_007a1_AX_network](./Uebung_007a1_AX_network.svg)
 
-* **`START` (I1)**: Starts the cycle.
-* **`STOP` (I2)**: Stops the cycle.
-* **`E_CYCLE`**: Generates events only when it is started.
+- **`START` (I1)**: Starts the cycle.
+- **`STOP` (I2)**: Stops the cycle.
+- **`E_CYCLE`**: Generates events only when it is started.
 
 -----
 

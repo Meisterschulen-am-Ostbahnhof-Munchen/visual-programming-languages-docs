@@ -15,9 +15,9 @@ To become familiar with the specific splitter function blocks. `E_SPLIT` is ofte
 
 ![Uebung_004a8_AX_network](./Uebung_004a8_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Button.
-* **`E_SPLIT_2`**: Distributes input `EI` sequentially to `EO1` and `EO2`.
-* **`AX_T_FF_Q1` & `Q2`**: Two flip-flops for the outputs `Q1` and `Q2`.
+- **`DigitalInput_CLK_I1`**: Button.
+- **`E_SPLIT_2`**: Distributes input `EI` sequentially to `EO1` and `EO2`.
+- **`AX_T_FF_Q1` & `Q2`**: Two flip-flops for the outputs `Q1` and `Q2`.
 
 -----
 

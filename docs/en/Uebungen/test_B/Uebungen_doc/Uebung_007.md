@@ -17,9 +17,9 @@ Using the `E_CYCLE` function block to generate a time base. It demonstrates how 
 
 ![Uebung_007_network](./Uebung_007_network.svg)
 
-* **`E_CYCLE`**: An event generator. [cite_start]It periodically sends events at output `EO`. The parameter `DT` determines the time interval (here `T#1s` = 1 second)[cite: 1].
-* **`E_T_FF`**: The toggle flip-flop, which inverts its state with each clock cycle.
-* **`DigitalOutput_Q1`**: The physical lamp.
+- **`E_CYCLE`**: An event generator. [cite_start]It periodically sends events at output `EO`. The parameter `DT` determines the time interval (here `T#1s` = 1 second)[cite: 1].
+- **`E_T_FF`**: The toggle flip-flop, which inverts its state with each clock cycle.
+- **`DigitalOutput_Q1`**: The physical lamp.
 
 -----
 

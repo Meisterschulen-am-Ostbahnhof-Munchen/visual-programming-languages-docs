@@ -10,8 +10,8 @@ The function block `AL_TO_AX` is a composite function block that performs a unid
 
 The function block does not have its own event or data inputs/outputs, but uses only adapter interfaces:
 
-* **Socket (Input):** `AL_IN` – Receives a `AL` adapter (contains an LWORD and an event).
-* **Plug (Output):** `AX_OUT` – Provides a `AX` adapter (contains a BOOL and an event).
+- **Socket (Input):** `AL_IN` – Receives a `AL` adapter (contains an LWORD and an event).
+- **Plug (Output):** `AX_OUT` – Provides a `AX` adapter (contains a BOOL and an event).
 
 Internal connections are handled via the adapter elements:
 
@@ -19,25 +19,25 @@ Internal connections are handled via the adapter elements:
 
 (via the AL_IN adapter)
 
-* **`AL_IN.E1`** – Event input; triggers the conversion.
+- **`AL_IN.E1`** – Event input; triggers the conversion.
 
 ### **Event Outputs**
 
 (via the AX_OUT adapter)
 
-* **`AX_OUT.E1`** – Event output; signals the completion of the conversion.
+- **`AX_OUT.E1`** – Event output; signals the completion of the conversion.
 
 ### **Data Inputs**
 
 (via the AL_IN adapter)
 
-* **`AL_IN.D1`** (`LWORD`) – The LWORD value to be converted.
+- **`AL_IN.D1`** (`LWORD`) – The LWORD value to be converted.
 
 ### **Data Outputs**
 
 (via the AX_OUT adapter)
 
-* **`AX_OUT.D1`** (`BOOL`) – The result of the conversion: `TRUE` if `AL_IN.D1 ≠ 0`; otherwise `FALSE`.
+- **`AX_OUT.D1`** (`BOOL`) – The result of the conversion: `TRUE` if `AL_IN.D1 ≠ 0`; otherwise `FALSE`.
 
 ### **Adapter**
 
@@ -87,6 +87,6 @@ The `AL_TO_AX` function block offers a simple and reliable way to convert a unid
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

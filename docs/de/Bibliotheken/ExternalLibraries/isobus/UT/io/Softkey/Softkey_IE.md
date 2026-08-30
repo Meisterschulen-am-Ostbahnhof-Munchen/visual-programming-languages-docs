@@ -2,7 +2,7 @@
 
 ## 🎧 Podcast
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ## Einleitung
 
@@ -67,31 +67,31 @@ Im Vergleich zu generischen Eingabebausteinen bietet Softkey_IE spezifische ISO 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010b2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b2.md)
-* [Uebung_010b2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b2_AX.md)
-* [Uebung_010b6](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b6.md)
-* [Uebung_010b6_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b6_AX.md)
-* [Uebung_013](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_013.md)
-* [Uebung_013_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_013_AX.md)
-* [Uebung_014](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_014.md)
-* [Uebung_015](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Uebung_015a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
-* [Uebung_016](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
-* [Uebung_016a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
-* [Uebung_017](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
-* [Uebung_018](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
-* [Uebung_018a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
-* [Uebung_019a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
-* [Uebung_019b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
-* [Uebung_021](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_021.md)
-* [Uebung_022](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_022.md)
-* [Uebung_023](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_023.md)
-* [Uebung_024](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
-* [Uebung_025](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
-* [Uebung_026](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
-* [Uebung_039](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
-* [Uebung_039a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
-* [Uebung_039a_sub_Outputs](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_010b2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b2.md)
+- [Uebung_010b2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b2_AX.md)
+- [Uebung_010b6](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b6.md)
+- [Uebung_010b6_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b6_AX.md)
+- [Uebung_013](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_013.md)
+- [Uebung_013_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_013_AX.md)
+- [Uebung_014](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_014.md)
+- [Uebung_015](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Uebung_015a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+- [Uebung_016](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+- [Uebung_016a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
+- [Uebung_017](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
+- [Uebung_018](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+- [Uebung_018a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
+- [Uebung_019a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
+- [Uebung_019b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+- [Uebung_021](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_021.md)
+- [Uebung_022](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_022.md)
+- [Uebung_023](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_023.md)
+- [Uebung_024](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
+- [Uebung_025](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+- [Uebung_026](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
+- [Uebung_039](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
+- [Uebung_039a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
+- [Uebung_039a_sub_Outputs](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 
 ## Fazit
 

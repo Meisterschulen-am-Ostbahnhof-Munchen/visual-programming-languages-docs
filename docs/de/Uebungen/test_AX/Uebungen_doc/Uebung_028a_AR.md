@@ -11,82 +11,82 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mithil
 
 Die Übung verwendet ausschließlich direkt instanziierte Funktionsbausteine (keine Unter-Applikationen). Nachfolgend sind alle Bausteine mit ihren Parametern und Aufgaben beschrieben.
 
-- **DigitalInput_I1**  
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `Input` = `Input_I1` (physischer digitaler Eingang)  
+- **DigitalInput_I1**
+  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `Input` = `Input_I1` (physischer digitaler Eingang)
   - **Funktionsweise**: Liest den Zustand eines digitalen Eingangs (Taster/Schalter) und gibt ihn über den Ausgangsadapter `IN` weiter. Dient als Trigger-Eingang für den Messzyklus.
 
-- **DigitalOutput_Q1**  
-  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `Output` = `Output_Q1` (physischer digitaler Ausgang)  
+- **DigitalOutput_Q1**
+  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `Output` = `Output_Q1` (physischer digitaler Ausgang)
   - **Funktionsweise**: Schaltet einen digitalen Ausgang entsprechend dem empfangenen Signal. Hier wird das Signal von `DigitalInput_I1` über eine Split-Struktur durchgeschleift.
 
-- **AnalogInput_I4**  
-  - **Typ**: `logiBUS::io::AI::logiBUS_AI_IDA`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `Input` = `AnalogInput_I4` (physischer analoger Eingang)  
-    - `AnalogInput_hysteresis` = 50  
-    - `TimeDelta` = 250 ms  
-    - `TimeRateLimit` = 100  
+- **AnalogInput_I4**
+  - **Typ**: `logiBUS::io::AI::logiBUS_AI_IDA`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `Input` = `AnalogInput_I4` (physischer analoger Eingang)
+    - `AnalogInput_hysteresis` = 50
+    - `TimeDelta` = 250 ms
+    - `TimeRateLimit` = 100
   - **Funktionsweise**: Liest einen analogen Strom-/Spannungswert und stellt ihn als Adapterschnittstelle (`IN`) bereit. Die Parameter dienen der Filterung (Hysterese, Abtastrate, Ratenbegrenzung).
 
-- **CALIBRATE**  
-  - **Typ**: `adapter::Engineering::measurements::AR_CALIBRATE`  
-  - **Parameter**:  
-    - `Y_Offset` = 100.0  
-    - `Y_Scale` = 600.0  
+- **CALIBRATE**
+  - **Typ**: `adapter::Engineering::measurements::AR_CALIBRATE`
+  - **Parameter**:
+    - `Y_Offset` = 100.0
+    - `Y_Scale` = 600.0
   - **Funktionsweise**: Führt eine lineare Kalibrierung des analogen Eingangswerts (als `X`) durch. Die Formel lautet `Y = (X * Y_Scale) / 1000 + Y_Offset` (Annahme, da nicht explizit). Über die Adaptereingänge `CO` (Calibrate Offset) und `CS` (Calibrate Scale) kann die Kalibrierung ausgelöst werden. Die berechneten Offset- und Skalierungswerte werden an `OFFSET` und `SCALE` ausgegeben.
 
-- **INI_OFFSET**  
-  - **Typ**: `eclipse4diac::storage::INI_AR2`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `SECTION` = `'Uebung_028a_AR'`  
-    - `KEY` = `'OFFSET'`  
-    - `DEFAULT_VALUE` = 0.0  
+- **INI_OFFSET**
+  - **Typ**: `eclipse4diac::storage::INI_AR2`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `SECTION` = `'Uebung_028a_AR'`
+    - `KEY` = `'OFFSET'`
+    - `DEFAULT_VALUE` = 0.0
   - **Funktionsweise**: Liest oder schreibt den Wert für den Offset in einer INI-Datei (Abschnitt `Uebung_028a_AR`, Schlüssel `OFFSET`). Liefert den aktuellen Wert am Ausgang `VAL` bzw. ermöglicht das Speichern eines neuen Werts über den Eingang `VAL`.
 
-- **INI_SCALE**  
-  - **Typ**: `eclipse4diac::storage::INI_AR2`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `SECTION` = `'Uebung_028a_AR'`  
-    - `KEY` = `'SCALE'`  
-    - `DEFAULT_VALUE` = 1.0  
+- **INI_SCALE**
+  - **Typ**: `eclipse4diac::storage::INI_AR2`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `SECTION` = `'Uebung_028a_AR'`
+    - `KEY` = `'SCALE'`
+    - `DEFAULT_VALUE` = 1.0
   - **Funktionsweise**: Analog zu `INI_OFFSET`, jedoch für den Skalierungsfaktor (Schlüssel `SCALE`).
 
-- **DigitalInput_I2_CO**  
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `Input` = `Input_I2`  
+- **DigitalInput_I2_CO**
+  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `Input` = `Input_I2`
   - **Funktionsweise**: Liest den digitalen Eingang für die Offset-Kalibrierung (`CO`).
 
-- **DigitalInput_I3_CS**  
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
-  - **Parameter**:  
-    - `QI` = TRUE  
-    - `Input` = `Input_I3`  
+- **DigitalInput_I3_CS**
+  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+  - **Parameter**:
+    - `QI` = TRUE
+    - `Input` = `Input_I3`
   - **Funktionsweise**: Liest den digitalen Eingang für die Skalierungs-Kalibrierung (`CS`).
 
-- **AX_SPLIT_2**  
-  - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`  
-  - **Parameter**: Keine  
+- **AX_SPLIT_2**
+  - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
+  - **Parameter**: Keine
   - **Funktionsweise**: Ein Adapter-Splitter, der ein eingehendes (Adapter-)Signal auf zwei Ausgänge verteilt. Hier wird das Signal von `DigitalInput_I1` gleichzeitig zum Ausgang `DigitalOutput_Q1` und zur Trigger-Anforderung (`SREQ`) des Analog-Eingangs geschickt.
 
-- **AD_TO_AUDI**  
-  - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`  
-  - **Parameter**: Keine  
+- **AD_TO_AUDI**
+  - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`
+  - **Parameter**: Keine
   - **Funktionsweise**: Konvertiert den analogen Adaptertyp (vermutlich `AnalogData`) in einen universellen `AUDI`-Adapter (allgemeiner Analogwert). Notwendig zur Typpassung zwischen unterschiedlichen Adapterdefinitionen.
 
-- **AUDI_TO_AR**  
-  - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_AR`  
-  - **Parameter**: Keine  
+- **AUDI_TO_AR**
+  - **Typ**: `adapter::conversion::unidirectional::AUDI_TO_AR`
+  - **Parameter**: Keine
   - **Funktionsweise**: Konvertiert den `AUDI`-Adapter zurück in den für `AR_CALIBRATE` benötigten Analogeingangsadapter (`AR`). Diese doppelte Konvertierung ist erforderlich, da ein direkter `AD_TO_AR`-Adapter einem „reinterpret_cast“ gleichkäme und die Typinformation verloren ginge.
 
 ## Programmablauf und Verbindungen
@@ -117,4 +117,4 @@ Die Übung `Uebung_028a_AR` implementiert eine vollständige Analog-Eingangs-Kal
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -83,7 +83,7 @@ Im Vergleich zu einfachen Eingabeblöcken bietet TC_ID:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 

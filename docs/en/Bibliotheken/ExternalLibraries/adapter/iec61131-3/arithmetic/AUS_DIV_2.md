@@ -46,26 +46,26 @@ Since it is a generic function block (identified by the attribute `GEN_AUS_DIV`)
 
 As soon as a new data event is signaled at the input adapters `IN1` or `IN2`, the function block performs the division and updates the value at the output adapter `OUT`, followed by a corresponding release event via the output plug.
 
-* **Generic Type (`GEN_AUS_DIV`):** Enables flexible reuse for different numeric data types without the need to create separate function blocks for `INT`, `REAL`, or `LREAL`.
-* **Unidirectional Adapters:** Using the `adapter::types::unidirectional::AUS` type ensures clean data and event encapsulation. This reduces visual complexity in system design (less "spaghetti code" due to loosely connected event and data lines).
-* **Division by Zero:** When implementing on the target platform (runtime), it is important to consider how the function block reacts to a divisor of `0` (e.g., outputting `NaN`/`INF` for floating-point numbers or a system error for integers).
+- **Generic Type (`GEN_AUS_DIV`):** Enables flexible reuse for different numeric data types without the need to create separate function blocks for `INT`, `REAL`, or `LREAL`.
+- **Unidirectional Adapters:** Using the `adapter::types::unidirectional::AUS` type ensures clean data and event encapsulation. This reduces visual complexity in system design (less "spaghetti code" due to loosely connected event and data lines).
+- **Division by Zero:** When implementing on the target platform (runtime), it is important to consider how the function block reacts to a divisor of `0` (e.g., outputting `NaN`/`INF` for floating-point numbers or a system error for integers).
 
 The function block does not have a complex internal state diagram (ECC). Its execution is purely transactional:
 
 1. **Wait State:** The function block waits for an update event at sockets `IN1` or `IN2`.
 2. **Calculation:** Upon receiving an event, the values are read and divided.
 3. **Output:** The result is written to the plug `OUT` and the output event is triggered. The function block immediately returns to the wait state.
-* **Measurement Scaling:** Division of sensor values by constant factors distributed across the system via adapter structures.
-* **Average Calculation:** Use in mathematical computation networks within distributed control systems.
-* **Ratio Control:** Calculation of ratios (e.g., air-fuel ratio in burner controls) where the input signals are already available as standardized `AUS` adapters.
+- **Measurement Scaling:** Division of sensor values by constant factors distributed across the system via adapter structures.
+- **Average Calculation:** Use in mathematical computation networks within distributed control systems.
+- **Ratio Control:** Calculation of ratios (e.g., air-fuel ratio in burner controls) where the input signals are already available as standardized `AUS` adapters.
 
 Compared to a standard integer division function block (such as the IEC 61131-3 `DIV` block), `AUS_DIV_2` offers the following advantages:
 
-* **Adapter-Based Coupling:** Standard function blocks require separate pins for data and events (REQ/CNF). `AUS_DIV_2` logically combines these in the `AUS` adapters.
-* **Data Type Flexibility:** While classic function blocks are often rigidly defined for, e.g., `REAL` (e.g., `R_DIV`), this generic function block adapts to the adapter type used.
-* **Adapter-Based Coupling:** Standard function blocks require separate pins for data and events (REQ/CNF). `AUS_DIV_2` logically combines these in the `AUS` adapters.
-* **Data Type Flexibility:** While classic function blocks are often fixed for, e.g., `REAL` (e.g., `R_DIV`), this generic function block adapts to the adapter type used.
-* ## Conclusion
+- **Adapter-Based Coupling:** Standard function blocks require separate pins for data and events (REQ/CNF). `AUS_DIV_2` logically combines these in the `AUS` adapters.
+- **Data Type Flexibility:** While classic function blocks are often rigidly defined for, e.g., `REAL` (e.g., `R_DIV`), this generic function block adapts to the adapter type used.
+- **Adapter-Based Coupling:** Standard function blocks require separate pins for data and events (REQ/CNF). `AUS_DIV_2` logically combines these in the `AUS` adapters.
+- **Data Type Flexibility:** While classic function blocks are often fixed for, e.g., `REAL` (e.g., `R_DIV`), this generic function block adapts to the adapter type used.
+- ## Conclusion
 
 The function block `AUS_DIV_2` is a highly efficient, reusable auxiliary block for arithmetic calculations in modern, adapter-based IEC 61499 architectures. It significantly improves the clarity of application diagrams by consolidating the signal and event flows for mathematical divisions in standardized adapters.
 ## Technical Features

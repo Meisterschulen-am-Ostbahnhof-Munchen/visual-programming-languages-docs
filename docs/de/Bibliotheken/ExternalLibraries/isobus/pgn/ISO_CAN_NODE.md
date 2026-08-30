@@ -31,9 +31,9 @@ Der Wert `INVALID` (255) stellt einen reservierten Wert dar, der typischerweise 
 
 ## Technische Besonderheiten
 
-*   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was auf eine Verwendung im Kontext des ISO-Bus (ISOBUS, Landtechnik) und Parameter Group Numbers (PGN) hindeutet.
-*   **Datentyp:** Alle Konstanten sind vom Typ `USINT`, was einen Wertebereich von 0 bis 255 ermöglicht und für CAN-Knotenadressen üblich ist.
-*   **Hexadezimale Notation:** Der Wert für `INVALID` wird in hexadezimaler Schreibweise (`16#FF`) definiert, was der dezimalen Zahl 255 entspricht.
+-   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was auf eine Verwendung im Kontext des ISO-Bus (ISOBUS, Landtechnik) und Parameter Group Numbers (PGN) hindeutet.
+-   **Datentyp:** Alle Konstanten sind vom Typ `USINT`, was einen Wertebereich von 0 bis 255 ermöglicht und für CAN-Knotenadressen üblich ist.
+-   **Hexadezimale Notation:** Der Wert für `INVALID` wird in hexadezimaler Schreibweise (`16#FF`) definiert, was der dezimalen Zahl 255 entspricht.
 
 ## Zustandsübersicht
 
@@ -41,14 +41,14 @@ Da es sich um statische Konstanten handelt, existiert kein Zustandsautomat.
 
 ## Anwendungsszenarien
 
-*   **Multi-CAN-Systeme:** In Steuerungen, die mit mehreren unabhängigen CAN-Bussen kommunizieren (z.B. ein Hauptbus und ein Antriebsbus), um die Busse eindeutig zu adressieren.
-*   **ISOBUS-Anwendungen:** Zur Konfiguration von virtuellen Terminals (VT), Task-Controllern (TC) oder anderen Geräten in einem landtechnischen ISOBUS-Netzwerk.
-*   **Fehlerbehandlung:** Die Konstante `INVALID` kann als Rückgabewert oder Initialwert in Funktionsblöcken dienen, um anzuzeigen, dass kein gültiger CAN-Knoten ausgewählt oder erkannt wurde.
+-   **Multi-CAN-Systeme:** In Steuerungen, die mit mehreren unabhängigen CAN-Bussen kommunizieren (z.B. ein Hauptbus und ein Antriebsbus), um die Busse eindeutig zu adressieren.
+-   **ISOBUS-Anwendungen:** Zur Konfiguration von virtuellen Terminals (VT), Task-Controllern (TC) oder anderen Geräten in einem landtechnischen ISOBUS-Netzwerk.
+-   **Fehlerbehandlung:** Die Konstante `INVALID` kann als Rückgabewert oder Initialwert in Funktionsblöcken dienen, um anzuzeigen, dass kein gültiger CAN-Knoten ausgewählt oder erkannt wurde.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Direkte Werte:** Der alternative Ansatz wäre die direkte Verwendung numerischer Literale (0, 1, 2, ...) im Code. Die Verwendung von `ISO_CAN_NODE` ist diesem Ansatz in puncto Codequalität und Wartbarkeit überlegen.
-*   **Enumerations (ENUM):** In einigen Programmiersprachen oder FB-Typen könnten ähnliche Konstrukte als Enumeration definiert werden. Globale Konstanten sind in IEC 61499 ein einfaches und weit verbreitetes Mittel, um dieses Muster umzusetzen.
+-   **Direkte Werte:** Der alternative Ansatz wäre die direkte Verwendung numerischer Literale (0, 1, 2, ...) im Code. Die Verwendung von `ISO_CAN_NODE` ist diesem Ansatz in puncto Codequalität und Wartbarkeit überlegen.
+-   **Enumerations (ENUM):** In einigen Programmiersprachen oder FB-Typen könnten ähnliche Konstrukte als Enumeration definiert werden. Globale Konstanten sind in IEC 61499 ein einfaches und weit verbreitetes Mittel, um dieses Muster umzusetzen.
 
 ## Fazit
 
@@ -58,4 +58,4 @@ Die `ISO_CAN_NODE` Konstantendatei ist ein einfaches, aber wertvolles Hilfsmitte
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

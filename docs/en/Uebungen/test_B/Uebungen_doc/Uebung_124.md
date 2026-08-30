@@ -17,11 +17,11 @@ Using the function block `AlPgnTxNew8B`. It demonstrates how to define a proprie
 
 ![Uebung_124_network](./Uebung_124_network.svg)
 
-* **`NmGetCfInfo_1`**: Searches for the target partner (here, a virtual terminal).
-* **`AlPgnTxNew8B`**: The send block for 8-byte messages.
-* **Parameters**:
-* `u32Pgn`: The message number (here, `61184` = Proprietary A).
-* `Data`: The message content (8 bytes of hexadecimal data).
+- **`NmGetCfInfo_1`**: Searches for the target partner (here, a virtual terminal).
+- **`AlPgnTxNew8B`**: The send block for 8-byte messages.
+- **Parameters**:
+- `u32Pgn`: The message number (here, `61184` = Proprietary A).
+- `Data`: The message content (8 bytes of hexadecimal data).
 
 -----
 

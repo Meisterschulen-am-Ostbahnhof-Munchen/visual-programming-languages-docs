@@ -17,9 +17,9 @@ Controlling a clock generator using start and stop events.
 
 ![Uebung_007a1_network](./Uebung_007a1_network.svg)
 
-* **`START` (I1)**: Sends an event to `E_CYCLE.START`.
-* **`STOP` (I2)**: Sends an event to `E_CYCLE.STOP`.
-* **`E_CYCLE`**: Starts or stops the generation of clock events.
+- **`START` (I1)**: Sends an event to `E_CYCLE.START`.
+- **`STOP` (I2)**: Sends an event to `E_CYCLE.STOP`.
+- **`E_CYCLE`**: Starts or stops the generation of clock events.
 
 -----
 

@@ -13,32 +13,32 @@ Der Funktionsblock `VALUES2ARRAY_2_LREAL` dient dazu, zwei einzelne Gleitkommaza
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Typ: `Event`)
-    *   Kommentar: Service Request
-    *   Verbundene Daten: `IN_1`, `IN_2`
-    *   Beschreibung: Dieses Ereignis löst die Konvertierung der beiden Eingangswerte `IN_1` und `IN_2` in das Array `OUT` aus.
+-   **REQ** (Typ: `Event`)
+    -   Kommentar: Service Request
+    -   Verbundene Daten: `IN_1`, `IN_2`
+    -   Beschreibung: Dieses Ereignis löst die Konvertierung der beiden Eingangswerte `IN_1` und `IN_2` in das Array `OUT` aus.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Typ: `Event`)
-    *   Kommentar: Confirmation of Requested Service
-    *   Verbundene Daten: `OUT`
-    *   Beschreibung: Dieses Ereignis wird ausgelöst, nachdem die Konvertierung erfolgreich abgeschlossen wurde und das Ausgangsarray `OUT` aktualisiert ist.
+-   **CNF** (Typ: `Event`)
+    -   Kommentar: Confirmation of Requested Service
+    -   Verbundene Daten: `OUT`
+    -   Beschreibung: Dieses Ereignis wird ausgelöst, nachdem die Konvertierung erfolgreich abgeschlossen wurde und das Ausgangsarray `OUT` aktualisiert ist.
 
 ### **Daten-Eingänge**
 
-*   **IN_1** (Typ: `LREAL`)
-    *   Kommentar: input number 1
-    *   Beschreibung: Die erste Gleitkommazahl, die in das Array aufgenommen werden soll.
-*   **IN_2** (Typ: `LREAL`)
-    *   Kommentar: input number 2
-    *   Beschreibung: Die zweite Gleitkommazahl, die in das Array aufgenommen werden soll.
+-   **IN_1** (Typ: `LREAL`)
+    -   Kommentar: input number 1
+    -   Beschreibung: Die erste Gleitkommazahl, die in das Array aufgenommen werden soll.
+-   **IN_2** (Typ: `LREAL`)
+    -   Kommentar: input number 2
+    -   Beschreibung: Die zweite Gleitkommazahl, die in das Array aufgenommen werden soll.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (Typ: `LREAL`, Größe: `2`)
-    *   Kommentar: Array output
-    *   Beschreibung: Ein Array vom Typ LREAL, das die Werte von `IN_1` und `IN_2` enthält. `IN_1` belegt den ersten, `IN_2` den zweiten Index des Arrays.
+-   **OUT** (Typ: `LREAL`, Größe: `2`)
+    -   Kommentar: Array output
+    -   Beschreibung: Ein Array vom Typ LREAL, das die Werte von `IN_1` und `IN_2` enthält. `IN_1` belegt den ersten, `IN_2` den zweiten Index des Arrays.
 
 ### **Adapter**
 
@@ -50,9 +50,9 @@ Wenn ein `REQ`-Ereignis am Eingang des Funktionsblocks empfangen wird, liest der
 
 ## Technische Besonderheiten
 
-*   Der Funktionsblock ist auf die Konvertierung von genau zwei LREAL-Werten spezialisiert.
-*   Das Ausgangsarray `OUT` ist fest auf die Größe 2 definiert.
-*   Die Verarbeitung ist ereignisgesteuert, was eine explizite Anforderung des Konvertierungsprozesses ermöglicht.
+-   Der Funktionsblock ist auf die Konvertierung von genau zwei LREAL-Werten spezialisiert.
+-   Das Ausgangsarray `OUT` ist fest auf die Größe 2 definiert.
+-   Die Verarbeitung ist ereignisgesteuert, was eine explizite Anforderung des Konvertierungsprozesses ermöglicht.
 
 ## Zustandsübersicht
 
@@ -60,9 +60,9 @@ Der `VALUES2ARRAY_2_LREAL` ist ein zustandsloser Funktionsblock. Jede `REQ`-Anfo
 
 ## Anwendungsszenarien
 
-*   **Datenbündelung**: Wenn zwei separate LREAL-Werte als ein zusammenhängendes Datenpaket (Array) an andere Funktionsblöcke übergeben werden müssen, die Arrays als Eingabe erwarten.
-*   **Kompatibilität mit Array-Schnittstellen**: Anpassung von skalaren Daten an Schnittstellen, die explizit Arrays erfordern.
-*   **Vorverarbeitung für mathematische Operationen**: Vorbereitung von Datenpaaren für Operationen, die auf Array-Basis arbeiten, wie z.B. Vektoraddition oder Skalierung.
+-   **Datenbündelung**: Wenn zwei separate LREAL-Werte als ein zusammenhängendes Datenpaket (Array) an andere Funktionsblöcke übergeben werden müssen, die Arrays als Eingabe erwarten.
+-   **Kompatibilität mit Array-Schnittstellen**: Anpassung von skalaren Daten an Schnittstellen, die explizit Arrays erfordern.
+-   **Vorverarbeitung für mathematische Operationen**: Vorbereitung von Datenpaaren für Operationen, die auf Array-Basis arbeiten, wie z.B. Vektoraddition oder Skalierung.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -85,4 +85,4 @@ Der `VALUES2ARRAY_2_LREAL` ist ein nützlicher und effizienter Funktionsblock f�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

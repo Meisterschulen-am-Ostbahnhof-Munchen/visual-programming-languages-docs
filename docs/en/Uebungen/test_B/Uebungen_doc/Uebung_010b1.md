@@ -17,7 +17,7 @@ Connecting AUX input devices (e.g., ISOBUS joystick).
 
 ![Uebung_010b1_network](./Uebung_010b1_network.svg)
 
-* **`AuxFunction2_X1`**: Type `isobus::UT::io::Auxiliary::IN::Aux_IX`. This block listens for AUX messages from "Function 2".
+- **`AuxFunction2_X1`**: Type `isobus::UT::io::Auxiliary::IN::Aux_IX`. This block listens for AUX messages from "Function 2".
 
 -----
 
@@ -29,6 +29,6 @@ Unlike softkeys, which are fixed screen elements, an AUX function is a logical o
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

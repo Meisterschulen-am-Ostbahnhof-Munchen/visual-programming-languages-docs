@@ -27,8 +27,8 @@ This sub-application defines the scope of the exercise.
 
 Currently, this exercise represents a framework that must be completed by the user.
 
-* **Status**: The sub-application contains an instance of `E_MUX_2`, but no connections (event or data flows) yet.
-* **Notes**: There is a comment field in the network with the content **"TODO"** (at x=-1900, y=-400). This indicates that the logic, inputs, and outputs still need to be wired.
+- **Status**: The sub-application contains an instance of `E_MUX_2`, but no connections (event or data flows) yet.
+- **Notes**: There is a comment field in the network with the content **"TODO"** (at x=-1900, y=-400). This indicates that the logic, inputs, and outputs still need to be wired.
 
 **Purpose of the exercise**: The goal is presumably to connect two different event sources to the `E_MUX_2` function block and process the resulting output event to understand the principle of event merging (multiplexing).
 

@@ -56,7 +56,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt unmittel
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+- [Uebung_006c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
 
 ## Fazit
 

@@ -83,10 +83,10 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
-* [Uebung_012a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a.md)
-* [Uebung_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
-* [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
+- [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+- [Uebung_012a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a.md)
+- [Uebung_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
+- [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
 
 ## Fazit
 

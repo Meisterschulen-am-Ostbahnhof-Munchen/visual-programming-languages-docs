@@ -33,28 +33,28 @@ Diese Übung demonstriert einen nach IEC 61131-3 standardisierten Rückwärtszä
 
 Der Ablauf wird durch Ereignis- und Datenverbindungen gesteuert:
 
-1. **Eingangssignale erfassen**  
-   - `Input_CD.IND` (steigende Flanke an `Input_I1`) wird mit `FB_CTD_ULINT.REQ` verbunden.  
-   - `Input_LD.IND` (steigende Flanke an `Input_I2`) wird ebenfalls mit `FB_CTD_ULINT.REQ` verbunden.  
+1. **Eingangssignale erfassen**
+   - `Input_CD.IND` (steigende Flanke an `Input_I1`) wird mit `FB_CTD_ULINT.REQ` verbunden.
+   - `Input_LD.IND` (steigende Flanke an `Input_I2`) wird ebenfalls mit `FB_CTD_ULINT.REQ` verbunden.
 
    → Der Zähler wird bei **jeder** positiven Flanke an einem der beiden Eingänge aktiviert. Die Unterscheidung, ob dekrementiert oder geladen wird, erfolgt über die Datenverbindungen.
 
-2. **Datenwerte zuweisen**  
-   - `Input_CD.IN` → `FB_CTD_ULINT.CD` (Count Down)  
-   - `Input_LD.IN` → `FB_CTD_ULINT.LD` (Load)  
+2. **Datenwerte zuweisen**
+   - `Input_CD.IN` → `FB_CTD_ULINT.CD` (Count Down)
+   - `Input_LD.IN` → `FB_CTD_ULINT.LD` (Load)
 
-   → Die logischen Zustände der beiden Eingänge bestimmen die Aktion:  
+   → Die logischen Zustände der beiden Eingänge bestimmen die Aktion:
 
-     - Ist **CD = TRUE** und **LD = FALSE**, wird der Zählwert dekrementiert.  
+     - Ist **CD = TRUE** und **LD = FALSE**, wird der Zählwert dekrementiert.
      - Ist **LD = TRUE** (unabhängig von CD), wird der Preset-Wert (10) geladen.
 
-3. **Ausgabe nach Verarbeitung**  
-   Nach Abschluss der Zähleroperation wird das Ereignis **CNF** des Zählers ausgelöst. Dieses ist mit zwei nachfolgenden Bausteinen verbunden:  
+3. **Ausgabe nach Verarbeitung**
+   Nach Abschluss der Zähleroperation wird das Ereignis **CNF** des Zählers ausgelöst. Dieses ist mit zwei nachfolgenden Bausteinen verbunden:
 
-   - `Output_Q1.REQ`: Der aktuelle Zustand von `FB_CTD_ULINT.Q` (Zählerstand = 0 → TRUE) wird auf den digitalen Ausgang `Output_Q1` geschrieben.  
+   - `Output_Q1.REQ`: Der aktuelle Zustand von `FB_CTD_ULINT.Q` (Zählerstand = 0 → TRUE) wird auf den digitalen Ausgang `Output_Q1` geschrieben.
    - `F_ULINT_TO_LREAL.REQ`: Der aktuelle Zählwert (`FB_CTD_ULINT.CV`) wird in eine LREAL-Zahl umgewandelt.
 
-4. **Terminal-Ausgabe**  
+4. **Terminal-Ausgabe**
    Nach der Konvertierung triggert `F_ULINT_TO_LREAL.CNF` den Baustein `Q_NumericValue_PHYS_LREAL.REQ`. Der konvertierte Wert (`F_ULINT_TO_LREAL.OUT`) wird als physikalische Gleitkommazahl am Terminal unter `OutputNumber_N3` angezeigt.
 
 Die gesamte Logik arbeitet **ereignisgesteuert**: Jede Änderung an einem der Eingänge löst eine vollständige Verarbeitungskette aus – vom Einlesen über die Zählerlogik bis zur Ausgabe des aktuellen Zählwerts und des digitalen Signals.
@@ -74,4 +74,4 @@ Der Schwerpunkt liegt auf dem Verständnis von Ereignis‑ und Datenflüssen sow
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -17,10 +17,10 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ![Uebung_004a9_AX_network](./Uebung_004a9_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Pushbutton.
-* **`E_SPLIT_3`**: Distributes input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
-* **`AX_T_FF_Q1`, `Q2`, `Q3`**: Three flip-flops.
-* **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three lamps.
+- **`DigitalInput_CLK_I1`**: Pushbutton.
+- **`E_SPLIT_3`**: Distributes input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
+- **`AX_T_FF_Q1`, `Q2`, `Q3`**: Three flip-flops.
+- **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three lamps.
 
 -----
 

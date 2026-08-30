@@ -17,14 +17,14 @@ Die Übung besteht aus einer einzigen Subapplikation, die alle notwendigen Funkt
   - `KEY` = `KEY_I1_STORE` (Konstante aus `Uebungen::const::NVS::NVS_Keys`)
   - `SECTION` = `SECTION_I1_STORE` (Konstante aus `Uebungen::const::NVS::NVS_Keys`)
   - `u16ObjId` = `InputString_S1` (Konstante aus `Uebungen::const::UT::DefaultPool`)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Dieser Sub-Baustein empfängt über einen AIS-Adapter einen String-Eingangswert. Beim Eintreffen eines entsprechenden Ereignisses (vermutlich vom Adapter) wird der Wert unter der angegebenen Section und dem Key im NVS gespeichert. Die Objekt-ID (`u16ObjId`) identifiziert dabei den konkreten Eingangskanal. Nach erfolgreichem Speichern wird ein Bestätigungssignal (z. B. `INIT` oder `CNF`) zurückgegeben.
 
 ## Programmablauf und Verbindungen
 
-1. **Initialisierung**: Die Subapp `Uebung_012k_sub_AIS` wird mit den vordefinierten Konstanten parametriert.  
-2. **Datenfluss**: Ein String wird über den AIS-Adapter an den Sub-Baustein übergeben.  
-3. **Speicherung**: Der Sub-Baustein speichert den String persistent in der INI‑ähnlichen NVS-Struktur unter der Section `SECTION_I1_STORE` und dem Schlüssel `KEY_I1_STORE`.  
+1. **Initialisierung**: Die Subapp `Uebung_012k_sub_AIS` wird mit den vordefinierten Konstanten parametriert.
+2. **Datenfluss**: Ein String wird über den AIS-Adapter an den Sub-Baustein übergeben.
+3. **Speicherung**: Der Sub-Baustein speichert den String persistent in der INI‑ähnlichen NVS-Struktur unter der Section `SECTION_I1_STORE` und dem Schlüssel `KEY_I1_STORE`.
 4. **Rückmeldung**: Nach Abschluss der Speicherung wird ein Ereignis ausgelöst (z. B. `CNF`), das den erfolgreichen Abschluss signalisiert.
 
 Die Übung enthält keine weiteren Verbindungen oder Ereignisverknüpfungen – die gesamte Logik ist im Typ `INI_IN_AND_STORE_AIS` gekapselt. Dadurch wird eine klare Trennung zwischen Applikationslogik und Speicherzugriff erreicht und die Wiederverwendbarkeit erhöht.
@@ -43,4 +43,4 @@ Nach Abschluss der Übung kann der Entwickler dieses Muster auf eigene Anwendung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

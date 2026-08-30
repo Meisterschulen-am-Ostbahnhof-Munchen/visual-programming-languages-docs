@@ -14,7 +14,7 @@ This function block does not have direct event inputs. Events are received via t
 
 ### **Event Outputs**
 
-* **EO**: (Event Output) Confirmation that a rising edge (or a high signal) has been detected.
+- **EO**: (Event Output) Confirmation that a rising edge (or a high signal) has been detected.
 
 ### **Data Inputs**
 
@@ -26,8 +26,8 @@ This function block has no direct data outputs.
 
 ### **Adapters**
 
-* **QI** (Socket): Of type `adapter::types::unidirectional::AX`. This adapter provides the value to be checked (Boolean) and the corresponding event.
-* Typically expects an event (e.g., `E1`) and a Boolean value (e.g., `D1`).
+- **QI** (Socket): Of type `adapter::types::unidirectional::AX`. This adapter provides the value to be checked (Boolean) and the corresponding event.
+- Typically expects an event (e.g., `E1`) and a Boolean value (e.g., `D1`).
 
 ## Functionality
 
@@ -43,8 +43,8 @@ Technically, the function block acts as a gate that only allows the adapter even
 
 ## Technical Features
 
-* **Internal Structure:** Uses standard IEC 61499 function blocks (`E_D_FF`, `E_SWITCH`).
-* **Adapter-based:** Unlike classic trigger blocks, which have separate `CLK` and `QI` inputs, this block encapsulates the signals in a `AX` adapter.
+- **Internal Structure:** Uses standard IEC 61499 function blocks (`E_D_FF`, `E_SWITCH`).
+- **Adapter-based:** Unlike classic trigger blocks, which have separate `CLK` and `QI` inputs, this block encapsulates the signals in a `AX` adapter.
 
 ## State Overview
 
@@ -52,14 +52,14 @@ Since this is a Composite Function Block, it does not have its own state machine
 
 ## Application Scenarios
 
-* **Signal Filtering:** Forwarding of events only when a specific state is active.
-* **Adapter Logic:** Use in systems that rely heavily on adapter connections to minimize wiring complexity.
-* **Start Trigger:** Triggers processes as soon as a Boolean flag within an adapter structure changes to `TRUE`.
+- **Signal Filtering:** Forwarding of events only when a specific state is active.
+- **Adapter Logic:** Use in systems that rely heavily on adapter connections to minimize wiring complexity.
+- **Start Trigger:** Triggers processes as soon as a Boolean flag within an adapter structure changes to `TRUE`.
 
 ## ⚖️ Comparison with similar function blocks
 
-* **E_R_TRIG:** The standard function block for event-based rising edge detection with separate event and data inputs. `AX_R_TRIG` is the equivalent for adapter connections.
-* **R_TRIG:** The classic PLC function block (IEC 61131-3) that is polled cyclically. `AX_R_TRIG`, on the other hand, operates purely event-driven.
+- **E_R_TRIG:** The standard function block for event-based rising edge detection with separate event and data inputs. `AX_R_TRIG` is the equivalent for adapter connections.
+- **R_TRIG:** The classic PLC function block (IEC 61131-3) that is polled cyclically. `AX_R_TRIG`, on the other hand, operates purely event-driven.
 
 ## Conclusion
 
@@ -69,4 +69,4 @@ The **AX_R_TRIG** is a specialized component for the 4diac environment that seam
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

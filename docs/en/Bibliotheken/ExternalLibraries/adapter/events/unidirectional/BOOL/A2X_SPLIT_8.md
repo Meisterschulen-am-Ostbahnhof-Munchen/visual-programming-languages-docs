@@ -70,6 +70,6 @@ The A2X_SPLIT_8 is a simple yet useful function block for multiplying A2X signal
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
 
 ]

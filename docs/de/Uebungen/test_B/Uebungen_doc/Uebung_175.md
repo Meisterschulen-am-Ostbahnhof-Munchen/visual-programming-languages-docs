@@ -26,16 +26,16 @@ In dieser Sub-Applikation wird primär ein Instanz eines Standard-Bibliotheksbau
 
 Das Netzwerk dieser Übung ist als **Aufgabe (TODO)** konzipiert.
 
-*   **Status des Netzwerks**:
-    *   Der Baustein `E_TABLE_CTRL_1` wurde im Netzwerk bei den Koordinaten `x=-3000, y=-1000` platziert.
-    *   Es existieren aktuell **keine Verbindungen** (weder Daten noch Ereignisse) zwischen Bausteinen oder Schnittstellen.
-    *   Ein großer Kommentarblock mit dem Inhalt **"TODO"** (bei `x=-3100, y=-100`) weist darauf hin, dass die eigentliche Implementierung der Steuerungslogik noch erfolgen muss.
+-   **Status des Netzwerks**:
+    -   Der Baustein `E_TABLE_CTRL_1` wurde im Netzwerk bei den Koordinaten `x=-3000, y=-1000` platziert.
+    -   Es existieren aktuell **keine Verbindungen** (weder Daten noch Ereignisse) zwischen Bausteinen oder Schnittstellen.
+    -   Ein großer Kommentarblock mit dem Inhalt **"TODO"** (bei `x=-3100, y=-100`) weist darauf hin, dass die eigentliche Implementierung der Steuerungslogik noch erfolgen muss.
 
-*   **Lernziele**:
-    *   Verständnis der Schnittstellen des `E_TABLE_CTRL`.
-    *   Verschaltung von Ereignissen und Daten zur Realisierung einer Sequenzsteuerung.
+-   **Lernziele**:
+    -   Verständnis der Schnittstellen des `E_TABLE_CTRL`.
+    -   Verschaltung von Ereignissen und Daten zur Realisierung einer Sequenzsteuerung.
 
-*   **Vorgehensweise**:
+-   **Vorgehensweise**:
     1.  Analysieren Sie die benötigten Ein- und Ausgänge des `E_TABLE_CTRL`.
     2.  Verbinden Sie die notwendigen Ereignis- und Datenleitungen gemäß der Aufgabenstellung (die hier implizit durch das "TODO" gegeben ist).
     3.  Konfigurieren Sie die Parameter des Bausteins, falls notwendig.

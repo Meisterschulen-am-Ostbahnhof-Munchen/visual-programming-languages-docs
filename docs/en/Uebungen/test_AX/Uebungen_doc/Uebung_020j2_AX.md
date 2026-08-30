@@ -12,10 +12,10 @@ This exercise demonstrates the processing of signals using adapter connections (
 
 The following blocks are used in the main network:
 
-* **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IXA`): Represents the physical input `Input_I1`.
-* **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Represents the physical output `Output_Q1`.
-* **DigitalOutput_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Represents the physical output `Output_Q2`.
-* **Exercise_020j2_AX_sub** (`Uebungen::Uebung_020j2_AX_sub`): A user-defined sub-application containing the logic for pulse shaping and signal distribution.
+- **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IXA`): Represents the physical input `Input_I1`.
+- **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Represents the physical output `Output_Q1`.
+- **DigitalOutput_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Represents the physical output `Output_Q2`.
+- **Exercise_020j2_AX_sub** (`Uebungen::Uebung_020j2_AX_sub`): A user-defined sub-application containing the logic for pulse shaping and signal distribution.
 
 ### Sub-Blocks: Exercise_020j2_AX_sub
 
@@ -51,14 +51,14 @@ The exercise proceeds as follows:
 The system reads the state of the digital input `Input_I1` via the function block `DigitalInput_I1`.
 
 2. **Processing in the Sub-Application**:
-* The adapter connection of the input is forwarded to the sub-application `Uebung_020j2_AX_sub`.
-* Within the sub-application, the signal is split.
-* Two independent timers are started, their time values defined via parameters in the main network:
-* **Path 1**: Duration `T#800ms` (parameter `TQ1`).
-* **Path 2**: Duration `T#1200ms` (parameter `TQ2`).
+- The adapter connection of the input is forwarded to the sub-application `Uebung_020j2_AX_sub`.
+- Within the sub-application, the signal is split.
+- Two independent timers are started, their time values defined via parameters in the main network:
+- **Path 1**: Duration `T#800ms` (parameter `TQ1`).
+- **Path 2**: Duration `T#1200ms` (parameter `TQ2`).
 3. **Signal Output**:
-* The output `Q1` of the sub-application (800ms pulse) controls `DigitalOutput_Q1`.
-* The output `Q2` of the sub-application (1200ms pulse) controls `DigitalOutput_Q2`.
+- The output `Q1` of the sub-application (800ms pulse) controls `DigitalOutput_Q1`.
+- The output `Q2` of the sub-application (1200ms pulse) controls `DigitalOutput_Q2`.
 
 This allows a single input signal to activate two outputs, which remain active for different durations (pulse shaping).
 

@@ -3,7 +3,7 @@
 
 ## 🎧 Podcast
 
-* [E_TON in Industrial Automation: How a Simple Timer Creates Safety and Stability ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
+- [E_TON in Industrial Automation: How a Simple Timer Creates Safety and Stability ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
 ## Image
 
 ![image](https://github.com/user-attachments/assets/cc035168-0f10-4159-bbe5-941ec9919630)
@@ -81,7 +81,7 @@ The **E_TON** function block is a simple yet powerful tool in IEC 61499 for impl
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
-* [Exercise_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
-* [Exercise_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
-* [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
+- [Exercise_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
+- [Exercise_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
+- [Exercise_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)

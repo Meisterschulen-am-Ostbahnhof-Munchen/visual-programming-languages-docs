@@ -4,7 +4,7 @@
 
 ![E_CTD_ecc](./E_CTD_ecc.svg)
 
-* [E_CTD: Ereignisgesteuerter Abwärtszähler nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTD-Ereignisgesteuerter-Abwrtszhler-nach-IEC-61499-e368lli)
+- [E_CTD: Ereignisgesteuerter Abwärtszähler nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTD-Ereignisgesteuerter-Abwrtszhler-nach-IEC-61499-e368lli)
 
 ## Einleitung
 
@@ -73,7 +73,7 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_081](../../../Uebungen/test_B/Uebungen_doc/Uebung_081.md)
+- [Uebung_081](../../../Uebungen/test_B/Uebungen_doc/Uebung_081.md)
 
 ## Fazit
 
@@ -83,4 +83,4 @@ Der **E_CTD**-Baustein ist ein wesentliches Element in der IEC 61499, das eine z
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

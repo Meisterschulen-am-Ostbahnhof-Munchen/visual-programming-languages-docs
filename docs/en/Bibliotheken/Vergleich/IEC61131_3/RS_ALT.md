@@ -33,4 +33,4 @@ If ``R1`` is TRUE, the expression ``NOT R1`` becomes FALSE, and thus ``Q1`` inev
 
 ## See also
 
-* [E_RS (IEC 61499)](../../StandardLibraries/events/E_RS.md): The event-driven equivalent in IEC 61499. Note that there is no guaranteed "dominance" for concurrent events.
+- [E_RS (IEC 61499)](../../StandardLibraries/events/E_RS.md): The event-driven equivalent in IEC 61499. Note that there is no guaranteed "dominance" for concurrent events.

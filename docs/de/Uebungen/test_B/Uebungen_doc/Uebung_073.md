@@ -20,7 +20,7 @@ Verwendung des Bausteins `I_VDS` (Vehicle Direction and Speed).
 
 ![Uebung_073_network](./Uebung_073_network.svg)
 
-  * **`I_VDS`**: Dieser Baustein empfängt Daten vom GPS-Empfänger des Traktors (`NavigationBasedVehicleSpeed`).
+  - **`I_VDS`**: Dieser Baustein empfängt Daten vom GPS-Empfänger des Traktors (`NavigationBasedVehicleSpeed`).
 
 -----
 

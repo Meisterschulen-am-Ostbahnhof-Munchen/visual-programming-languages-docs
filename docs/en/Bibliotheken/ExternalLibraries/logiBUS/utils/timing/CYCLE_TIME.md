@@ -10,20 +10,20 @@ The function block `CYCLE_TIME` is used to calculate the elapsed time between tw
 
 ### **Event Inputs**
 
-* **REQ**: Starts the cycle time calculation. The algorithm is executed upon this event.
+- **REQ**: Starts the cycle time calculation. The algorithm is executed upon this event.
 
 ### **Event Outputs**
 
-* **CNF**: Triggered as soon as the calculation is complete. This event confirms execution and delivers the calculated values to the data outputs.
+- **CNF**: Triggered as soon as the calculation is complete. This event confirms execution and delivers the calculated values to the data outputs.
 
 ### **Data Inputs**
 
-* **TM** (DINT): Provides the current timestamp at the time of the call. This value is typically supplied by a system clock or a timer block. The initial value is `0`.
+- **TM** (DINT): Provides the current timestamp at the time of the call. This value is typically supplied by a system clock or a timer block. The initial value is `0`.
 
 ### **Data Outputs**
 
-* **CYCLE** (DINT): Contains the calculated cycle time, i.e., the difference between the current (`TM`) and the previous timestamp (`LAST`). The initial value is `0`.
-* **LAST** (DINT): Stores the timestamp of the last call (`TM`). This value is used for the next calculation. The initial value is `0`.
+- **CYCLE** (DINT): Contains the calculated cycle time, i.e., the difference between the current (`TM`) and the previous timestamp (`LAST`). The initial value is `0`.
+- **LAST** (DINT): Stores the timestamp of the last call (`TM`). This value is used for the next calculation. The initial value is `0`.
 
 ### **Adapters**
 
@@ -40,9 +40,9 @@ Immediately after the algorithm executes, the `CNF` event is triggered with the 
 
 ## Technical Features
 
-* The function block is a **Simple Function Block (Basic FB)** according to IEC 61499.
-* The data types used (`DINT`) are signed 32-bit integers suitable for representing large time values (e.g., in milliseconds or microseconds).
-* The initial values of `TM`, `CYCLE`, and `LAST` are set to `0`. The first valid `CYCLE` value after startup is therefore the difference `TM - 0`. This should be taken into account in the application's initialization logic.
+- The function block is a **Simple Function Block (Basic FB)** according to IEC 61499.
+- The data types used (`DINT`) are signed 32-bit integers suitable for representing large time values (e.g., in milliseconds or microseconds).
+- The initial values of `TM`, `CYCLE`, and `LAST` are set to `0`. The first valid `CYCLE` value after startup is therefore the difference `TM - 0`. This should be taken into account in the application's initialization logic.
 
 ## State Overview
 
@@ -50,10 +50,10 @@ The function block has a single Execution Control State (EC State) named `REQ`. 
 
 ## Application Scenarios
 
-* **Cycle Time Monitoring**: Continuous measurement of the execution time of a program or a specific program segment.
-* **Performance Monitoring**: Identification of bottlenecks or unusually long cycle times in a control application.
-* **Diagnostics**: Logging cycle times for analysis or to generate system runtime statistics.
-* **Adaptive Control**: Providing the current cycle time for algorithms whose behavior depends on the available processing time.
+- **Cycle Time Monitoring**: Continuous measurement of the execution time of a program or a specific program segment.
+- **Performance Monitoring**: Identification of bottlenecks or unusually long cycle times in a control application.
+- **Diagnostics**: Logging cycle times for analysis or to generate system runtime statistics.
+- **Adaptive Control**: Providing the current cycle time for algorithms whose behavior depends on the available processing time.
 
 ## ⚖️ Comparison with similar modules
 
@@ -61,7 +61,7 @@ Compared to generic timing modules (such as `E_DELAY` or `E_CYCLE`), `CYCLE_TIME
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

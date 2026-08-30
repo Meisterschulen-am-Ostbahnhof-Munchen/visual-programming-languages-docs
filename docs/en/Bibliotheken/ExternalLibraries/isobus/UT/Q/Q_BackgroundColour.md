@@ -95,8 +95,8 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 
 ## 🛠️ Related Exercises
 
-* [Exercise_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
-* [Exercise_016a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
+- [Exercise_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+- [Exercise_016a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Conclusion
 

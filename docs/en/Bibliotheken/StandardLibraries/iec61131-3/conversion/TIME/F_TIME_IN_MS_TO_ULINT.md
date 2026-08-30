@@ -51,9 +51,9 @@ Often, a function like `DINT_TO_TIME` is sought to convert a numeric value (e.g.
 
 For this purpose, use the function block **`F_MULTIME`** (from the category `arithmetic`):
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 - Unlike generic conversion blocks, this function block is specialized for converting `TIME` to `ULINT`.
 - Other blocks might offer additional options, such as conversion to other data types, but are less specific.
 

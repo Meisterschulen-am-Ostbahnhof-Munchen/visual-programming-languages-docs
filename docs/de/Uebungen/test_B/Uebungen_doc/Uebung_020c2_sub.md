@@ -10,5 +10,4 @@
 
 ![Uebung_020c2_sub_network](./Uebung_020c2_sub_network.svg)
 
-* [Uebung_020c2](Uebung_020c2.md)
-
+- [Uebung_020c2](Uebung_020c2.md)

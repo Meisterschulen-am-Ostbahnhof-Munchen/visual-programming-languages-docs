@@ -61,9 +61,9 @@ Nach der Berechnung des neuen Zustands wird das Ereignis am Ausgangsadapter (`Q1
 
 ## Technische Besonderheiten
 
-*   **Adapter-basiert:** Der Hauptvorteil dieses Bausteins ist die Reduktion von Verbindungslinien im Funktionsplan, da Daten und Ereignisse über eine einzige Adapter-Verbindung gebündelt werden.
-*   **Ereignisgesteuert:** Der Baustein reagiert sofort auf eingehende Ereignisse an den `SET1` oder `RESET` Adaptern und leitet das Ergebnis sofort weiter.
-*   **Zustandsmaschine (ECC):** Die Execution Control Chart (ECC) ist minimal gehalten. Sie besteht aus einem einzigen Zustand `REQ`, der auf Eingangsereignisse wartet und den Algorithmus `REQ` ausführt.
+-   **Adapter-basiert:** Der Hauptvorteil dieses Bausteins ist die Reduktion von Verbindungslinien im Funktionsplan, da Daten und Ereignisse über eine einzige Adapter-Verbindung gebündelt werden.
+-   **Ereignisgesteuert:** Der Baustein reagiert sofort auf eingehende Ereignisse an den `SET1` oder `RESET` Adaptern und leitet das Ergebnis sofort weiter.
+-   **Zustandsmaschine (ECC):** Die Execution Control Chart (ECC) ist minimal gehalten. Sie besteht aus einem einzigen Zustand `REQ`, der auf Eingangsereignisse wartet und den Algorithmus `REQ` ausführt.
 
 ## Zustandsübersicht
 
@@ -79,15 +79,15 @@ Die folgende Wahrheitstabelle beschreibt das Verhalten des Bausteins (wobei `Q_n
 
 ## Anwendungsszenarien
 
-*   **Adapter-basierte Steuerungssysteme:** Ideal für Projekte, die konsequent die Adapter-Technologie von 4diac nutzen, um den "Spaghetti-Code" von parallelen Event- und Datenleitungen zu vermeiden.
-*   **Start/Stop-Logik:** Realisierung von Maschinensteuerungen, bei denen das "Ein"-Signal (Setzen) Priorität hat oder eine dauerhafte Aktivierung sichergestellt werden muss, solange der Taster gedrückt ist.
-*   **Alarm-Handling:** Speichern von Alarmzuständen, die manuell quittiert (zurückgesetzt) werden müssen.
+-   **Adapter-basierte Steuerungssysteme:** Ideal für Projekte, die konsequent die Adapter-Technologie von 4diac nutzen, um den "Spaghetti-Code" von parallelen Event- und Datenleitungen zu vermeiden.
+-   **Start/Stop-Logik:** Realisierung von Maschinensteuerungen, bei denen das "Ein"-Signal (Setzen) Priorität hat oder eine dauerhafte Aktivierung sichergestellt werden muss, solange der Taster gedrückt ist.
+-   **Alarm-Handling:** Speichern von Alarmzuständen, die manuell quittiert (zurückgesetzt) werden müssen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **SR (Standard):** Der `AX_FB_SR` entspricht logisch dem Standard-`SR` Baustein der IEC 61131-3, unterscheidet sich jedoch durch die Nutzung von `AX`-Adaptern anstelle von diskreten `BOOL`- und `EVENT`-Pins.
-*   **AX_FB_RS:** Dies ist das Gegenstück mit **Rücksetz-Dominanz**. Beim `AX_FB_RS` würde bei gleichzeitigem Anliegen von SET und RESET der Ausgang auf `FALSE` gehen.
-*   **E_SR:** Ein ereignisgesteuertes Standard-SR-Flip-Flop ohne Adapter.
+-   **SR (Standard):** Der `AX_FB_SR` entspricht logisch dem Standard-`SR` Baustein der IEC 61131-3, unterscheidet sich jedoch durch die Nutzung von `AX`-Adaptern anstelle von diskreten `BOOL`- und `EVENT`-Pins.
+-   **AX_FB_RS:** Dies ist das Gegenstück mit **Rücksetz-Dominanz**. Beim `AX_FB_RS` würde bei gleichzeitigem Anliegen von SET und RESET der Ausgang auf `FALSE` gehen.
+-   **E_SR:** Ein ereignisgesteuertes Standard-SR-Flip-Flop ohne Adapter.
 
 ## Fazit
 
@@ -97,4 +97,4 @@ Der **AX_FB_SR** ist ein spezialisierter Baustein für die strukturierte, adapte
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

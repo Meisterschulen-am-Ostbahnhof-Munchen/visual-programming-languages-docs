@@ -62,7 +62,7 @@ Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bes
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
 
 ## Fazit
 

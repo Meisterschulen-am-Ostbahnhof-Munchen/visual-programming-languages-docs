@@ -13,19 +13,19 @@ Der Funktionsblock `NmSetNameField` dient der Konvertierung eines ISO-NAME gemä
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Startet die Verarbeitung. Bei Empfang dieses Ereignisses wird der an `au8IsoName` anliegende Wert verarbeitet.
+-   **REQ**: Startet die Verarbeitung. Bei Empfang dieses Ereignisses wird der an `au8IsoName` anliegende Wert verarbeitet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Wird ausgelöst, sobald die Konvertierung abgeschlossen ist und die strukturierten Daten am Ausgang bereitstehen.
+-   **CNF**: Wird ausgelöst, sobald die Konvertierung abgeschlossen ist und die strukturierten Daten am Ausgang bereitstehen.
 
 ### **Daten-Eingänge**
 
-*   **au8IsoName** (`isobus::pgn::CF_NAME_T`): Ein 8-Byte langes Array, das den rohen ISO-NAME gemäß ISO 11783-5 enthält.
+-   **au8IsoName** (`isobus::pgn::CF_NAME_T`): Ein 8-Byte langes Array, das den rohen ISO-NAME gemäß ISO 11783-5 enthält.
 
 ### **Daten-Ausgänge**
 
-*   **(kein expliziter Name)** (`isobus::pgn::NAMEFIELD_T`): Die Ausgabevariable enthält die strukturierte Aufschlüsselung des ISO-NAME. Der genaue Aufbau der `NAMEFIELD_T`-Struktur wird durch die verwendete `isobus::pgn`-Bibliothek definiert.
+-   **(kein expliziter Name)** (`isobus::pgn::NAMEFIELD_T`): Die Ausgabevariable enthält die strukturierte Aufschlüsselung des ISO-NAME. Der genaue Aufbau der `NAMEFIELD_T`-Struktur wird durch die verwendete `isobus::pgn`-Bibliothek definiert.
 
 ### **Adapter**
 
@@ -37,9 +37,9 @@ Bei Auslösung des `REQ`-Ereignisses verarbeitet der Baustein das anliegende Byt
 
 ## Technische Besonderheiten
 
-*   **Bitmanipulation:** Der Block verwendet logische UND-Operationen (`AND`), Schiebeoperationen (`SHL`, `SHR`) und Typkonvertierungen (`BYTE_TO_WORD`, `BYTE_TO_DWORD`), um die relevanten Bits aus dem Eingabe-Array zu isolieren.
-*   **Bibliotheksabhängigkeit:** Der Block ist von den Datentypen `CF_NAME_T` und `NAMEFIELD_T` der `isobus::pgn`-Bibliothek abhängig. Die genaue Definition dieser Typen (z.B. die Feldnamen in `NAMEFIELD_T`) liegt außerhalb dieses Blocks.
-*   **Deterministisch:** Die Operation ist rein datengetrieben und hat keinen internen Zustand. Bei gleicher Eingabe erzeugt sie stets die gleiche Ausgabe.
+-   **Bitmanipulation:** Der Block verwendet logische UND-Operationen (`AND`), Schiebeoperationen (`SHL`, `SHR`) und Typkonvertierungen (`BYTE_TO_WORD`, `BYTE_TO_DWORD`), um die relevanten Bits aus dem Eingabe-Array zu isolieren.
+-   **Bibliotheksabhängigkeit:** Der Block ist von den Datentypen `CF_NAME_T` und `NAMEFIELD_T` der `isobus::pgn`-Bibliothek abhängig. Die genaue Definition dieser Typen (z.B. die Feldnamen in `NAMEFIELD_T`) liegt außerhalb dieses Blocks.
+-   **Deterministisch:** Die Operation ist rein datengetrieben und hat keinen internen Zustand. Bei gleicher Eingabe erzeugt sie stets die gleiche Ausgabe.
 
 ## Zustandsübersicht
 
@@ -51,21 +51,21 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sic
 
 ## Anwendungsszenarien
 
-*   **ISOBUS-Geräteerkennung:** In einem ISOBUS-Netzwerkmanager, der eingehende NAME-Daten von angeschlossenen ECUs decodieren muss, um Gerätetyp, Hersteller und Instanz zu identifizieren.
-*   **Diagnose und Protokollierung:** Zur übersichtlichen Darstellung und Protokollierung von Gerätenamen in menschenlesbarer, strukturierter Form anstelle des rohen 8-Byte-Wertes.
-*   **Filterung und Adressierung:** Als Vorverarbeitungsschritt, um basierend auf spezifischen Feldern (wie Geräteklasse oder Herstellercode) Entscheidungen über die weitere Kommunikation zu treffen.
+-   **ISOBUS-Geräteerkennung:** In einem ISOBUS-Netzwerkmanager, der eingehende NAME-Daten von angeschlossenen ECUs decodieren muss, um Gerätetyp, Hersteller und Instanz zu identifizieren.
+-   **Diagnose und Protokollierung:** Zur übersichtlichen Darstellung und Protokollierung von Gerätenamen in menschenlesbarer, strukturierter Form anstelle des rohen 8-Byte-Wertes.
+-   **Filterung und Adressierung:** Als Vorverarbeitungsschritt, um basierend auf spezifischen Feldern (wie Geräteklasse oder Herstellercode) Entscheidungen über die weitere Kommunikation zu treffen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Gegenstück `NmGetIsoName`:** Ein hypothetischer komplementärer Baustein würde die umgekehrte Operation durchführen: Er nähme eine `NAMEFIELD_T`-Struktur als Eingabe und erzeugte daraus das entsprechende 8-Byte-`CF_NAME_T`-Array. `NmSetNameField` ist der Dekodierer, sein Gegenstück wäre der Kodierer.
-*   **Generische Byte-Parser:** Im Gegensatz zu generischen Byte-zu-Struktur-Konvertern ist dieser Block spezifisch auf das ISO-NAME-Format zugeschnitten und enthält die exakte Bitlogik der Norm. Die Verwendung dieses spezialisierten Blocks reduziert Fehler und erhöht die Wartbarkeit im ISOBUS-Kontext.
+-   **Gegenstück `NmGetIsoName`:** Ein hypothetischer komplementärer Baustein würde die umgekehrte Operation durchführen: Er nähme eine `NAMEFIELD_T`-Struktur als Eingabe und erzeugte daraus das entsprechende 8-Byte-`CF_NAME_T`-Array. `NmSetNameField` ist der Dekodierer, sein Gegenstück wäre der Kodierer.
+-   **Generische Byte-Parser:** Im Gegensatz zu generischen Byte-zu-Struktur-Konvertern ist dieser Block spezifisch auf das ISO-NAME-Format zugeschnitten und enthält die exakte Bitlogik der Norm. Die Verwendung dieses spezialisierten Blocks reduziert Fehler und erhöht die Wartbarkeit im ISOBUS-Kontext.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
-* [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
-* [Uebung_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
-* [Uebung_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
+- [Uebung_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
+- [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+- [Uebung_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+- [Uebung_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
 
 ## Fazit
 
@@ -75,4 +75,4 @@ Der `NmSetNameField`-Funktionsblock ist ein essenzielles Hilfsmittel für die Ar
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

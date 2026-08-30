@@ -75,7 +75,7 @@ Exercise `Uebung_040_2` demonstrates a complex, manually clocked running light. 
 
 --
 
-* [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ### Weitere Bausteine
 

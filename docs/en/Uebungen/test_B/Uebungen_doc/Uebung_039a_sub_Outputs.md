@@ -57,25 +57,25 @@ The flow within this sub-application can be described as follows:
 
 1. **Initialization**: The sub-application receives an external `u16ObjId` (which key/UI element is being controlled) and a reference to a physical `Output`.
 2. **User Interaction (Toggle Logic)**:
-* When the user presses and releases the corresponding softkey, the **IE** block fires an event.
-* This event is sent to the **E_SWITCH**.
-* The **E_SWITCH** checks the current state of the system (feedback from **E_SR.Q** to **E_SWITCH.G**).
-* If the output is currently OFF (Q=FALSE), the event is sent to the **Set** input of the **E_SR** -> The output is switched ON.
-* If the output is currently ON (Q=TRUE), the event is routed to the **Reset** input of the **E_SR** -> The output is switched OFF.
+- When the user presses and releases the corresponding softkey, the **IE** block fires an event.
+- This event is sent to the **E_SWITCH**.
+- The **E_SWITCH** checks the current state of the system (feedback from **E_SR.Q** to **E_SWITCH.G**).
+- If the output is currently OFF (Q=FALSE), the event is sent to the **Set** input of the **E_SR** -> The output is switched ON.
+- If the output is currently ON (Q=TRUE), the event is routed to the **Reset** input of the **E_SR** -> The output is switched OFF.
 3. **External Control**:
-* The state of the **E_SR** block can be directly manipulated via the external event inputs `SET` and `RESET`, independent of softkey activation.
+- The state of the **E_SR** block can be directly manipulated via the external event inputs `SET` and `RESET`, independent of softkey activation.
 4. **Output Control**:
-* Every state change at the **E_SR** triggers the **QX** block, which writes the value to the hardware output.
+- Every state change at the **E_SR** triggers the **QX** block, which writes the value to the hardware output.
 5. **Visual Feedback**:
-* After the **QX** block sends the confirmation (`CNF`), the sub-application **GreenWhiteBackground** is triggered.
-* This receives the current state (`E_SR.Q` connected to `DI1`) and updates the display on the terminal.
+- After the **QX** block sends the confirmation (`CNF`), the sub-application **GreenWhiteBackground** is triggered.
+- This receives the current state (`E_SR.Q` connected to `DI1`) and updates the display on the terminal.
 
 ### Learning Objectives and Special Features
 
-* Creation of a reusable component (sub-application) for UI elements.
-* Implementation of a **toggle function** (on/off with a button) using standard events (E_SWITCH and E_SR).
-* Synchronization of hardware outputs and UI display.
-* Handling ISOBUS softkey events.
+- Creation of a reusable component (sub-application) for UI elements.
+- Implementation of a **toggle function** (on/off with a button) using standard events (E_SWITCH and E_SR).
+- Synchronization of hardware outputs and UI display.
+- Handling ISOBUS softkey events.
 
 ## Summary
 
@@ -83,4 +83,4 @@ Uebung_039a_sub_Outputs` represents a complete function block that links a softk
 
 ## 🛠️ Related Exercises
 
-* [Exercise_039a](Uebung_039a.md)
+- [Exercise_039a](Uebung_039a.md)

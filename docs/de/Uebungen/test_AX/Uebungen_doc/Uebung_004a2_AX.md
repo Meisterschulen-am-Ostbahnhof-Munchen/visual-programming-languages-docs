@@ -20,10 +20,10 @@ Das Ziel ist es zu lernen, wie man asynchrone Ereignisströme vereint. Wenn zwei
 
 ![Uebung_004a2_AX_network](./Uebung_004a2_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1` & `I2`**: Zwei `logiBUS_IE` Bausteine, konfiguriert auf `BUTTON_SINGLE_CLICK`. [cite_start]Sie erzeugen Ereignisse bei Betätigung von Taster 1 oder 2[cite: 1].
-  * **`E_MERGE`**: Typ `E_MERGE`. [cite_start]Dieser Baustein besitzt zwei Ereigniseingänge (`EI1`, `EI2`) und einen Ereignisausgang (`EO`). Egal welcher Eingang ein Event empfängt, es wird sofort an den Ausgang weitergeleitet[cite: 1].
-  * **`E_T_FF`**: Das Toggle-Flip-Flop, das den Zustand speichert.
-  * **`DigitalOutput_Q1`**: Der Ausgang für die Lampe.
+  - **`DigitalInput_CLK_I1` & `I2`**: Zwei `logiBUS_IE` Bausteine, konfiguriert auf `BUTTON_SINGLE_CLICK`. [cite_start]Sie erzeugen Ereignisse bei Betätigung von Taster 1 oder 2[cite: 1].
+  - **`E_MERGE`**: Typ `E_MERGE`. [cite_start]Dieser Baustein besitzt zwei Ereigniseingänge (`EI1`, `EI2`) und einen Ereignisausgang (`EO`). Egal welcher Eingang ein Event empfängt, es wird sofort an den Ausgang weitergeleitet[cite: 1].
+  - **`E_T_FF`**: Das Toggle-Flip-Flop, das den Zustand speichert.
+  - **`DigitalOutput_Q1`**: Der Ausgang für die Lampe.
 
 -----
 

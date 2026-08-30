@@ -59,6 +59,5 @@ Derivative with variable window size (0..9 periods)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
-
+- [Uebung_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)

@@ -5,7 +5,7 @@
 
 The CLIENT_0 function block is used to communicate with a SERVER_0 block via a network connection. It enables the establishment and closure of connections. Unlike CLIENT_1, there is no explicit data exchange via data inputs/outputs; synchronization occurs primarily through events.
 
-* ![CLIENT_0](CLIENT_0.svg)
+- ![CLIENT_0](CLIENT_0.svg)
 ## Interface Structure
 
 ### **Event Inputs**
@@ -69,6 +69,6 @@ The CLIENT_0 block initializes a network connection to the SERVER_0 block via th
 
 ### 🌐 Related subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

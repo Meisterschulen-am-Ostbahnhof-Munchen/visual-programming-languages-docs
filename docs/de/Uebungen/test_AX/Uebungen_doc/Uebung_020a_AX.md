@@ -20,10 +20,10 @@ Das Hauptziel dieser Übung ist es, die Kombination von Ereignis-Weichen (`AX_SW
 
 ![Uebung_020a_AX_network](./Uebung_020a_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Liest den physischen Eingang `Input_I1`.
-  * **`AX_SWITCH`**: Eine Ereignis-Weiche. [cite_start]Leitet das eintreffende Adapter-Event je nach logischem Zustand des Eingangs `G` an den Ausgang `EO1` (TRUE) oder `EO0` (FALSE) weiter[cite: 1].
-  * **`AX_RS`**: Ein RS-Flip-Flop mit Adapter-Schnittstelle. Es speichert den Zustand zwischen den Ereignissen.
-  * **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Setzt den physischen Ausgang `Output_Q1`.
+  - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Liest den physischen Eingang `Input_I1`.
+  - **`AX_SWITCH`**: Eine Ereignis-Weiche. [cite_start]Leitet das eintreffende Adapter-Event je nach logischem Zustand des Eingangs `G` an den Ausgang `EO1` (TRUE) oder `EO0` (FALSE) weiter[cite: 1].
+  - **`AX_RS`**: Ein RS-Flip-Flop mit Adapter-Schnittstelle. Es speichert den Zustand zwischen den Ereignissen.
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Setzt den physischen Ausgang `Output_Q1`.
 
 -----
 

@@ -17,10 +17,10 @@ Dynamic selection between different processing logics (momentary, latching, dela
 
 ![Uebung_103_network](./Uebung_103_network.svg)
 
-* **`InputNumber_I1`**: An input field on the ISOBUS terminal. The user enters 1, 2, or 3 here.
-* **`AX_DEMUX_3`**: Distributes the signal from the button `I1` to one of three outputs.
-* **`AX_MUX_3`**: Collects the result from the three branches and passes it on to `Q1`.
-* **The three branches**:
+- **`InputNumber_I1`**: An input field on the ISOBUS terminal. The user enters 1, 2, or 3 here.
+- **`AX_DEMUX_3`**: Distributes the signal from the button `I1` to one of three outputs.
+- **`AX_MUX_3`**: Collects the result from the three branches and passes it on to `Q1`.
+- **The three branches**:
 1. `tastend`: Direct forwarding (1:1).
 2. `rastend`: Converts the push button to a toggle switch.
 3. `tastend_TON_5s`: Forwards the signal with a 5-second turn-on delay.

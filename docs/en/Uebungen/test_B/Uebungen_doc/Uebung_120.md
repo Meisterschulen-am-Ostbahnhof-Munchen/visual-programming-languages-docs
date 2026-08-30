@@ -17,9 +17,9 @@ Using the function block `NmGetCfInfo`. Every ISOBUS device has a globally uniqu
 
 ![Uebung_120_network](./Uebung_120_network.svg)
 
-* **`NmGetCfInfo`**: Scans the bus for devices.
-* **`NmSetNameField`**: Parses the 64-bit raw value into the standardized ISOBUS fields.
-* **`STRUCT_DEMUX`**: Makes the individual fields (manufacturer code, device series, instance, etc.) accessible to the program logic.
+- **`NmGetCfInfo`**: Scans the bus for devices.
+- **`NmSetNameField`**: Parses the 64-bit raw value into the standardized ISOBUS fields.
+- **`STRUCT_DEMUX`**: Makes the individual fields (manufacturer code, device series, instance, etc.) accessible to the program logic.
 
 -----
 

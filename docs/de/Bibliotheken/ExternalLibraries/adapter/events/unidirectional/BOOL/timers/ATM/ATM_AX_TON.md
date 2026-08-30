@@ -39,19 +39,19 @@ Der FB hat keine expliziten Daten-Ausgänge. Ausgabedaten werden über den Adapt
 
 Der **ATM_AX_TON** kapselt einen standardmäßigen On-Delay-Timer (E_TON) aus der IEC 61499-Bibliothek. Die Funktionsweise im Detail:
 
-1. **Start der Zeitmessung:**  
+1. **Start der Zeitmessung:**
    Der Eingangsadapter **IN** liefert über sein Ereignis **E1** den Startimpuls (REQ) und über sein Datensignal **D1** den boolschen Wert **IN**. Wenn **IN.D1** auf WAHR wechselt, wird der Timer gestartet.
 
-2. **Verzögerungszeit:**  
+2. **Verzögerungszeit:**
    Die gewünschte Verzögerungszeit wird über den Adapter **PT** bereitgestellt (über **PT.D1**). Sobald der Timer läuft, wird nach Ablauf dieser Zeit der Ausgang **Q.D1** auf WAHR gesetzt.
 
-3. **Ausgangssignal und Bestätigung:**  
+3. **Ausgangssignal und Bestätigung:**
    Der Ausgangsadapter **Q** gibt über **Q.D1** den aktuellen Timer-Zustand aus (WAHR, wenn die Verzögerungszeit abgelaufen ist, FALSE, wenn der Eingang auf FALSE geht). Das Ereignis **Q.E1** wird nach jeder Zustandsänderung gesendet (CNF des internen E_TON).
 
-4. **Setzen der Vorlaufzeit ohne Auslösung:**  
+4. **Setzen der Vorlaufzeit ohne Auslösung:**
    Der Ereignis-Eingang **EIPT** dient laut Spezifikation dazu, die Vorlaufzeit **PT** zu setzen, ohne den Timer zu starten. Im vorliegenden FBNetzwerk wird dieser Eingang jedoch nicht intern verbunden – er steht für externe Nutzung zur Verfügung, falls eine Anwendung eine Vorabsetzung der Zeit benötigt.
 
-5. **Rückfall:**  
+5. **Rückfall:**
    Wenn **IN** auf FALSE geht, wird der Timer sofort zurückgesetzt und **Q.D1** wird FALSE (unverzögert).
 
 ## Technische Besonderheiten
@@ -99,4 +99,4 @@ Der **ATM_AX_TON** ist ein fertig konfektionierter On-Delay-Timer mit einer mode
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

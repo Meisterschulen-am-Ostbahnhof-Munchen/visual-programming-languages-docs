@@ -66,7 +66,7 @@ Im Vergleich zu Standard-UND-Bausteinen mit nur zwei Eingängen bietet AND_3 die
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
+- [Uebung_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Fazit
 

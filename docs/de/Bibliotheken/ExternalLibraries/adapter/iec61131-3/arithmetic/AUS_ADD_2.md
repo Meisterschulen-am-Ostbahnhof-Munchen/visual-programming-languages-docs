@@ -32,12 +32,12 @@ Der Funktionsbaustein `AUS_ADD_2` ist ein generischer Baustein (Generic FB) zur 
 
 #### **Sockets (Eingangs-Adapter / Buchsen)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Summand der Addition.
-* **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Summand der Addition.
+- **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Summand der Addition.
+- **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Summand der Addition.
 
 #### **Plugs (Ausgangs-Adapter / Stecker)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das Ergebnis der Addition (Summe aus `IN1` und `IN2`).
+- **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das Ergebnis der Addition (Summe aus `IN1` und `IN2`).
 
 ---
 
@@ -53,8 +53,8 @@ Das Ergebnis wird zusammen mit dem entsprechenden Trigger-Ereignis über den Aus
 
 ## Technische Besonderheiten
 
-* **Generischer Baustein:** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AUS_ADD'` ist der Baustein als generischer Typ definiert. Dies ermöglicht eine flexible Anpassung an unterschiedliche Datentypen, die durch die Adapterstrukturen definiert werden.
-* **Kapselung:** Durch die Verwendung von Adaptern anstelle von einzelnen Event- und Data-Pins wird das Systemdesign übersichtlicher und weniger fehleranfällig für Verdrahtungsfehler.
+- **Generischer Baustein:** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AUS_ADD'` ist der Baustein als generischer Typ definiert. Dies ermöglicht eine flexible Anpassung an unterschiedliche Datentypen, die durch die Adapterstrukturen definiert werden.
+- **Kapselung:** Durch die Verwendung von Adaptern anstelle von einzelnen Event- und Data-Pins wird das Systemdesign übersichtlicher und weniger fehleranfällig für Verdrahtungsfehler.
 
 ---
 
@@ -66,9 +66,9 @@ Da es sich bei diesem Baustein im Wesentlichen um eine mathematische Verknüpfun
 
 ## Anwendungsszenarien
 
-* **Messwertverarbeitung:** Addition von zwei Sensorwerten oder die Beaufschlagung eines Messwerts mit einem Offset, der über einen Adapter eingespeist wird.
-* **Sollwertberechnung:** Zusammenführung von Basis-Sollwerten und Korrekturwerten in der Prozessautomatisierung.
-* **Strukturierte Programmierung:** Einsatz in komplexen Steuerungen, bei denen Daten- und Eventleitungen zur Erhöhung der Übersichtlichkeit in Adaptern gebündelt sind.
+- **Messwertverarbeitung:** Addition von zwei Sensorwerten oder die Beaufschlagung eines Messwerts mit einem Offset, der über einen Adapter eingespeist wird.
+- **Sollwertberechnung:** Zusammenführung von Basis-Sollwerten und Korrekturwerten in der Prozessautomatisierung.
+- **Strukturierte Programmierung:** Einsatz in komplexen Steuerungen, bei denen Daten- und Eventleitungen zur Erhöhung der Übersichtlichkeit in Adaptern gebündelt sind.
 
 ---
 

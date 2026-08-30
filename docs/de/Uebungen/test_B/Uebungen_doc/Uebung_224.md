@@ -54,26 +54,26 @@ Diese Übung implementiert einen kombinierten Vor-/Rückwärtszähler nach IEC 6
 
 ## Programmablauf und Verbindungen
 
-1. **Ereignissteuerung**  
-   Jeder digitale Eingang (Input_CU…Input_LD) erzeugt bei Zustandsänderung ein Ereignis (`IND`). Alle diese Ereignisse sind auf den `REQ`‑Eingang des Zählers `FB_CTUD_ULINT` geschaltet. Dadurch wird der Zähler bei jedem Tastendruck an einem der vier Eingänge aufgerufen.  
+1. **Ereignissteuerung**
+   Jeder digitale Eingang (Input_CU…Input_LD) erzeugt bei Zustandsänderung ein Ereignis (`IND`). Alle diese Ereignisse sind auf den `REQ`‑Eingang des Zählers `FB_CTUD_ULINT` geschaltet. Dadurch wird der Zähler bei jedem Tastendruck an einem der vier Eingänge aufgerufen.
    *Hinweis:* Da gleichzeitige Ereignisse mehrerer Eingänge zu einem einzigen Aufruf zusammengefasst werden (oder auch nicht), kann es zu unerwünschtem Verhalten kommen. Im Kommentar wird daher empfohlen, ggf. einen oder zwei `E_D_FF` (Event‑DFlipFlop) einzubauen, um die Ereignisse zu reduzieren.
 
-2. **Datenverbindungen**  
-   - Die digitalen Eingangswerte (`IN`) werden direkt auf die entsprechenden Zählereingänge (`CU`, `CD`, `R`, `LD`) geführt.  
-   - Die Ausgänge `QU` und `QD` des Zählers sind mit den Digitalausgängen (`Output_QU`, `Output_QD`) verbunden.  
-   - Der aktuelle Zählerwert `CV` wird über den Konvertierungsbaustein `F_ULINT_TO_UDINT` auf 32 Bit reduziert und an den Terminal‑Baustein `Q_NumericValue` übergeben.  
+2. **Datenverbindungen**
+   - Die digitalen Eingangswerte (`IN`) werden direkt auf die entsprechenden Zählereingänge (`CU`, `CD`, `R`, `LD`) geführt.
+   - Die Ausgänge `QU` und `QD` des Zählers sind mit den Digitalausgängen (`Output_QU`, `Output_QD`) verbunden.
+   - Der aktuelle Zählerwert `CV` wird über den Konvertierungsbaustein `F_ULINT_TO_UDINT` auf 32 Bit reduziert und an den Terminal‑Baustein `Q_NumericValue` übergeben.
    - Die Ereigniskette: `FB_CTUD_ULINT.CNF` löst gleichzeitig die Ausgangs‑FBs und die Konvertierung aus. Nach der Konvertierung wird `Q_NumericValue` aktualisiert.
 
-3. **Parameter**  
+3. **Parameter**
    Der Vorwahlwert `PV` ist auf `ULINT#10` gesetzt – ein Vergleich mit diesem Wert setzt die Ausgänge `QU`/`QD`.
 
-4. **Lernziele**  
-   - Kennenlernen des IEC‑61131‑3‑Zählers `FB_CTUD_ULINT`.  
-   - Umgang mit digitalen Ein‑/Ausgängen über logiBUS.  
-   - Verwendung von Konvertierungsbausteinen und Terminalausgabe.  
+4. **Lernziele**
+   - Kennenlernen des IEC‑61131‑3‑Zählers `FB_CTUD_ULINT`.
+   - Umgang mit digitalen Ein‑/Ausgängen über logiBUS.
+   - Verwendung von Konvertierungsbausteinen und Terminalausgabe.
    - Bewusstsein für Ereigniskollisionen und mögliche Abhilfe durch `E_D_FF`.
 
-5. **Schwierigkeitsgrad:** Mittel  
+5. **Schwierigkeitsgrad:** Mittel
    **Voraussetzungen:** Grundlegende Kenntnisse der 4diac‑IDE, Umgang mit logiBUS‑E/A‑Bausteinen und Ereignisverkabelung.
 
 ## Zusammenfassung
@@ -84,4 +84,4 @@ Die Übung 224 realisiert einen vollständigen Vor‑/Rückwärtszähler mit 64�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

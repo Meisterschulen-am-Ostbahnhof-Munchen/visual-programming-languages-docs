@@ -46,17 +46,17 @@ $$\text{OUT} = \frac{\text{IN1}}{\text{IN2}}$$
 
 Since this is a generic function block, the exact data type of the mathematical operation is determined at runtime or during instantiation by the specific data type used by the underlying `ALR` adapter. Data transmission is unidirectional, from the sockets (`IN1` and `IN2`) to the plug (`OUT`).
 
-* **Generic Block:** The property `GenericClassName = "GEN_ALR_DIV"` allows the block to be used flexibly for various data types, provided they are supported by the adapter type.
-* **Adapter Coupling:** Using adapters instead of individual pins minimizes the graphical wiring effort in the 4diac IDE and improves clarity in the application editor.
-* **Division by Zero:** During implementation and use, ensure that the value on the adapter `IN2` is not zero to avoid runtime errors or undefined system behavior.
-* ## State Overview
+- **Generic Block:** The property `GenericClassName = "GEN_ALR_DIV"` allows the block to be used flexibly for various data types, provided they are supported by the adapter type.
+- **Adapter Coupling:** Using adapters instead of individual pins minimizes the graphical wiring effort in the 4diac IDE and improves clarity in the application editor.
+- **Division by Zero:** During implementation and use, ensure that the value on the adapter `IN2` is not zero to avoid runtime errors or undefined system behavior.
+- ## State Overview
 
 This module does not have a complex internal state diagram (ECC). It operates as a purely functional processing module that calculates the result when values change at the input adapters (`IN1` or `IN2`) and forwards it via the output adapter (`OUT`).
 
-* **Signal Scaling:** Division of analog measured values by constant factors for unit conversion within an adapter-based signal processing chain.
-* **Averaging and Ratio Control:** Calculation of ratios (e.g., air-fuel ratio) in control systems where signal paths are implemented modularly via adapters.
-* **Standardization:** Use in complex control architectures to reduce the number of interconnects.
-* ## Comparison with Similar Components
+- **Signal Scaling:** Division of analog measured values by constant factors for unit conversion within an adapter-based signal processing chain.
+- **Averaging and Ratio Control:** Calculation of ratios (e.g., air-fuel ratio) in control systems where signal paths are implemented modularly via adapters.
+- **Standardization:** Use in complex control architectures to reduce the number of interconnects.
+- ## Comparison with Similar Components
 
 Compared to the standard IEC 61131-3 compact component `DIV`, the `ALR_DIV_2` has no direct data pins (unlike `IN1`, `IN2`, and `ANY_NUM`). While the standard `DIV` component is optimized for simple, point-to-point calculations, the `ALR_DIV_2` is primarily suited for service-oriented architectures and applications that consistently rely on loose coupling via adapter structures.
 

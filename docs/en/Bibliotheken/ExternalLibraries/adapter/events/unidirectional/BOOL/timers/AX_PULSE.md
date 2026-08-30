@@ -40,8 +40,8 @@ Signaling
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020h_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020h_AX.md)
-* [Exercise_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+- [Exercise_020h_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020h_AX.md)
+- [Exercise_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Conclusion
 

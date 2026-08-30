@@ -15,11 +15,11 @@ Ziel ist es, das Zusammenspiel von monostabilen Elementen (R_IO) mit Hardware-Ei
 ### Sub-Bausteine: logiBUS-IXA (Digitaleingänge)
 
 - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
-- **Verwendet als**: 
+- **Verwendet als**:
   - `DigitalInput_CLK_I1` – Eingang I1 (Set für Q1)
   - `DigitalInput_CLK_I2` – Eingang I2 (Set für Q2)
   - `DigitalInput_CLK_I3` – Eingang I3 (gemeinsames Reset)
-- **Parameter**: 
+- **Parameter**:
   - `QI` = `TRUE` (aktiviert)
   - `Input` = `Input_I1`, `Input_I2`, `Input_I3` (Hardware-Kanäle)
   - `PARAMS` = leer (nicht sichtbar)
@@ -28,10 +28,10 @@ Ziel ist es, das Zusammenspiel von monostabilen Elementen (R_IO) mit Hardware-Ei
 ### Sub-Bausteine: logiBUS-QXA (Digitalausgänge)
 
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
-- **Verwendet als**: 
+- **Verwendet als**:
   - `DigitalOutput_Q1` – Ausgang Q1
   - `DigitalOutput_Q2` – Ausgang Q2
-- **Parameter**: 
+- **Parameter**:
   - `QI` = `TRUE` (freigegeben)
   - `Output` = `Output_Q1`, `Output_Q2` (Hardware-Kanäle)
 - **Funktionsweise**: Setzt einen physikalischen Ausgang (z. B. Lampe, Relais) entsprechend dem anliegenden Adaptersignal am Adaptereingang `OUT`.
@@ -39,7 +39,7 @@ Ziel ist es, das Zusammenspiel von monostabilen Elementen (R_IO) mit Hardware-Ei
 ### Sub-Baustein: AX_FB_R_IO (monostabiles Element mit Reset)
 
 - **Typ**: `adapter::monostableElements::AX_FB_R_IO`
-- **Verwendet als**: 
+- **Verwendet als**:
   - `AX_FB_R_IO_Q1` – für Q1
   - `AX_FB_R_IO_Q2` – für Q2
 - **Verwendete interne FBs**: Keine weiteren sichtbaren internen FBs – es handelt sich um einen vorgefertigten Baustein.
@@ -60,30 +60,30 @@ Ziel ist es, das Zusammenspiel von monostabilen Elementen (R_IO) mit Hardware-Ei
 
 ## Programmablauf und Verbindungen
 
-1. **Signalfluss**:  
-   - Die Taster an `Input_I1` und `Input_I2` steuern jeweils einen `AX_FB_R_IO`-Baustein (Set).  
-   - Die Ausgänge dieser Bausteine verbinden die Digitalausgänge `Output_Q1` und `Output_Q2`.  
+1. **Signalfluss**:
+   - Die Taster an `Input_I1` und `Input_I2` steuern jeweils einen `AX_FB_R_IO`-Baustein (Set).
+   - Die Ausgänge dieser Bausteine verbinden die Digitalausgänge `Output_Q1` und `Output_Q2`.
    - Der dritte Taster an `Input_I3` dient als gemeinsames Rücksetzsignal: Er wird über `AX_SPLIT_2` gleichzeitig auf die `RESET1`-Eingänge beider `AX_FB_R_IO`-Bausteine verteilt.
 
-2. **Funktionsweise**:  
-   - Durch Drücken von I1 oder I2 wird der zugehörige Ausgang eingeschaltet und bleibt an (self‑holding).  
-   - Durch Drücken von I3 werden beide Ausgänge ausgeschaltet („Hausmeister-Aus“).  
+2. **Funktionsweise**:
+   - Durch Drücken von I1 oder I2 wird der zugehörige Ausgang eingeschaltet und bleibt an (self‑holding).
+   - Durch Drücken von I3 werden beide Ausgänge ausgeschaltet („Hausmeister-Aus“).
    - Im Netzwerk ist vermerkt, dass I3 ein **rastender** Schalter sein sollte, da sonst der Ausgang nur während des Tastendrucks aus ist. Alternativ könnte man durch eine AND‑Verknüpfung einen Zustimmschalter realisieren (siehe Kommentare).
 
-3. **Besonderheiten**:  
-   - Die logiBUS‑Bausteine benötigen ein `QI`-Signal (`TRUE`), um aktiv zu sein.  
+3. **Besonderheiten**:
+   - Die logiBUS‑Bausteine benötigen ein `QI`-Signal (`TRUE`), um aktiv zu sein.
    - Der `AX_FB_R_IO` kann auch ohne angeschlossenen Reset betrieben werden – dann bleibt der Ausgang nach einmaligem Setzen dauerhaft an (wie ein RS‑Flipflop ohne Reset).
 
-**Lernziele**:  
+**Lernziele**:
 
-- Verständnis von Rücksetz‑Set‑Funktionsbausteinen (`AX_FB_R_IO`)  
-- Umgang mit Hardware‑Ein‑/Ausgangsbausteinen (logiBUS)  
-- Signalverteilung mit `AX_SPLIT_2`  
+- Verständnis von Rücksetz‑Set‑Funktionsbausteinen (`AX_FB_R_IO`)
+- Umgang mit Hardware‑Ein‑/Ausgangsbausteinen (logiBUS)
+- Signalverteilung mit `AX_SPLIT_2`
 - Einfache Verknüpfung von digitalen Signalen zu einer Steuerung
 
 **Schwierigkeitsgrad**: Mittel – grundlegende Kenntnisse der 4diac-IDE und des IEC 61499-Modells werden vorausgesetzt.
 
-**Übung starten**:  
+**Übung starten**:
 Laden Sie die Datei `Uebung_003a2b_AX.fbt` in die 4diac-IDE. Die übrigen Bausteine (logiBUS‑Treiber, `AX_FB_R_IO`, `AX_SPLIT_2`) müssen im Projekt vorhanden sein. Verbinden Sie die Hardware-Kanäle entsprechend der Parameter (I1, I2, I3, Q1, Q2).
 
 ## Zusammenfassung
@@ -94,4 +94,4 @@ Die Übung zeigt eine robuste Schaltung zur Steuerung zweier Ausgänge mit einem
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -17,10 +17,10 @@ The objective is to understand sequential event processing. In IEC 61499, an eve
 
 ![Uebung_004a4_AX_network](./Uebung_004a4_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: The event generator (push button).
-* **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
-* **`E_T_FF_Q1` & `Q2`**: Two independent flip-flops.
-* **`DigitalOutput_Q1` & `Q2`**: Two lamps.
+- **`DigitalInput_CLK_I1`**: The event generator (push button).
+- **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
+- **`E_T_FF_Q1` & `Q2`**: Two independent flip-flops.
+- **`DigitalOutput_Q1` & `Q2`**: Two lamps.
 
 -----
 

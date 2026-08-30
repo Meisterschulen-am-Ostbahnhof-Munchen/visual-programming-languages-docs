@@ -13,23 +13,23 @@ The function block `LinksRechts` is a fundamental building block for controlling
 
 ### **Event Inputs**
 
-* **`EI_ON`**: The central control event. Upon arrival, it triggers an evaluation of the current input data and a potential state transition.
+- **`EI_ON`**: The central control event. Upon arrival, it triggers an evaluation of the current input data and a potential state transition.
 
 ### **Event Outputs**
 
-* **`EO`**: This event is triggered on every state change. It provides the updated output data `Rechts`, `Links`, and `STATE`.
+- **`EO`**: This event is triggered on every state change. It provides the updated output data `Rechts`, `Links`, and `STATE`.
 
 ### **Data Inputs**
 
-* **`EIN`** (BOOL): General enable/enable command. `TRUE` allows operation, while `FALSE` puts the block into a pause state.
-* **`DI_Rechts`** (BOOL): Command for "Right-Hand Rotation Only". Enforces right-hand rotation if `EIN` is active.
-* **`DI_Links`** (BOOL): Command for "Left Rotation Only". Enforces left rotation if `EIN` is active and no `DI_Rechts` command is present.
+- **`EIN`** (BOOL): General enable/enable command. `TRUE` allows operation, while `FALSE` puts the block into a pause state.
+- **`DI_Rechts`** (BOOL): Command for "Right-Hand Rotation Only". Enforces right-hand rotation if `EIN` is active.
+- **`DI_Links`** (BOOL): Command for "Left Rotation Only". Enforces left rotation if `EIN` is active and no `DI_Rechts` command is present.
 
 ### **Data Outputs**
 
-* **`Rechts`** (BOOL): Control signal for right rotation. Is `TRUE` when the block is in state `Rechtslauf`.
-* **`Links`** (BOOL): Control signal for left rotation. Is `TRUE` when the block is in state `Linkslauf`.
-* **`STATE`** (STRING): Displays the current internal state of the function block as readable text (e.g., "Right Rotation", "Left Rotation_Pause").
+- **`Rechts`** (BOOL): Control signal for right rotation. Is `TRUE` when the block is in state `Rechtslauf`.
+- **`Links`** (BOOL): Control signal for left rotation. Is `TRUE` when the block is in state `Linkslauf`.
+- **`STATE`** (STRING): Displays the current internal state of the function block as readable text (e.g., "Right Rotation", "Left Rotation_Pause").
 
 ### **Adapters**
 
@@ -45,9 +45,9 @@ The priority logic is defined as follows: If `EIN` is active (`TRUE`), `DI_Recht
 
 ## Technical Features
 
-* **Priority**: The specification emphasizes that "Forward scrolling only" (`DI_Rechts`) takes precedence over "Left scrolling only" (`DI_Links`). This is implemented in the ECC transition from `START` to `Rechtslauf`, which only requires `EIN`, while the transition to `Linkslauf` additionally requires `DI_Links`.
-* **Status Output**: The output `STATE` is of type `STRING` and is fed from an imported enumeration `STATES`, which facilitates diagnosis and visualization.
-* **Pause States**: There are two separate pause states (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction. Upon reactivation (`EIN=TRUE`), the last active direction is resumed, unless a specific run command (`DI_Rechts`/`DI_Links`) is pending.
+- **Priority**: The specification emphasizes that "Forward scrolling only" (`DI_Rechts`) takes precedence over "Left scrolling only" (`DI_Links`). This is implemented in the ECC transition from `START` to `Rechtslauf`, which only requires `EIN`, while the transition to `Linkslauf` additionally requires `DI_Links`.
+- **Status Output**: The output `STATE` is of type `STRING` and is fed from an imported enumeration `STATES`, which facilitates diagnosis and visualization.
+- **Pause States**: There are two separate pause states (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction. Upon reactivation (`EIN=TRUE`), the last active direction is resumed, unless a specific run command (`DI_Rechts`/`DI_Links`) is pending.
 
 **Pause States**: Two separate pause states exist (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction.
 ## State Overview
@@ -66,9 +66,9 @@ The transitions between states are triggered exclusively by the event `EI_ON` in
 
 Typical applications include:
 
-* Controlling a dual-direction AC motor.
-* Controlling a horizontally moving unit (e.g., a carriage, a gate).
-* Any application where forward/reverse movement needs to be controlled with a general enable and individual direction commands.
+- Controlling a dual-direction AC motor.
+- Controlling a horizontally moving unit (e.g., a carriage, a gate).
+- Any application where forward/reverse movement needs to be controlled with a general enable and individual direction commands.
 
 ## ⚖️ Comparison with Similar Function Blocks
 
@@ -76,7 +76,7 @@ Compared to a simple `SR` or `RS` flip-flop, `LinksRechts` offers a higher level
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a4.md)
+- [Exercise_006a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a4.md)
 
 ## Conclusion
 

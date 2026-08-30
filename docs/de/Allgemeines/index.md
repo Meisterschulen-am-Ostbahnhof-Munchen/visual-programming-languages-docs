@@ -17,12 +17,12 @@ Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werde
 
 ### Best Practices (Empfehlungen)
 
-*   **Unterstriche:** Vermeiden Sie einfache Unterstriche am Anfang von Namen, da diese häufig für systeminterne Bibliotheksfunktionen reserviert sind.
-*   **Doppelte Unterstriche:** Diese sind in vielen Systemen reserviert oder verboten.
-*   **Klarheit:** Namen sollten selbsterklärend sein. Verwenden Sie lieber `Temperatur_Sensor_1` statt `T_S1`.
-*   **Schreibweisen:**
-    *   **CamelCase:** `MaxTemperatur`
-    *   **Snake_Case:** `Max_Temperatur` (in der SPS-Welt sehr verbreitet)
+-   **Unterstriche:** Vermeiden Sie einfache Unterstriche am Anfang von Namen, da diese häufig für systeminterne Bibliotheksfunktionen reserviert sind.
+-   **Doppelte Unterstriche:** Diese sind in vielen Systemen reserviert oder verboten.
+-   **Klarheit:** Namen sollten selbsterklärend sein. Verwenden Sie lieber `Temperatur_Sensor_1` statt `T_S1`.
+-   **Schreibweisen:**
+    -   **CamelCase:** `MaxTemperatur`
+    -   **Snake_Case:** `Max_Temperatur` (in der SPS-Welt sehr verbreitet)
 
 | Erlaubt | Verboten | Grund |
 | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werde
 
 Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von Literalen im Code sind für die Steuerungsprogrammierung essenziell.
 
-*   Detaillierte Informationen finden Sie hier: **[Zahlen und Zahlensysteme](Zahlen.md)**
+-   Detaillierte Informationen finden Sie hier: **[Zahlen und Zahlensysteme](Zahlen.md)**
 
 ---
 
@@ -45,9 +45,9 @@ Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von
 
 Datentypen legen fest, welche Art von Information eine Variable speichern kann (z. B. eine ganze Zahl, eine Fließkommazahl oder ein Wahrheitswert).
 
-*   Eine Übersicht finden Sie hier: **[Datentypen](Datentypen/index.md)**
-*   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY-Typen.md)**
-*   Welche Typen miteinander verbunden werden dürfen: **[Typkompatibilität](Datentypen/Typkompatibilität.md)**
+-   Eine Übersicht finden Sie hier: **[Datentypen](Datentypen/index.md)**
+-   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY-Typen.md)**
+-   Welche Typen miteinander verbunden werden dürfen: **[Typkompatibilität](Datentypen/Typkompatibilität.md)**
 
 ---
 
@@ -55,5 +55,4 @@ Datentypen legen fest, welche Art von Information eine Variable speichern kann (
 
 Wer sich die Nummer **IEC 61499** partout nicht merken kann, findet hier eine Gedächtnisstütze:
 
-*   **[Eselsbrücke: IEC 61499](Eselsbruecke_IEC61499.md)**
-
+-   **[Eselsbrücke: IEC 61499](Eselsbruecke_IEC61499.md)**

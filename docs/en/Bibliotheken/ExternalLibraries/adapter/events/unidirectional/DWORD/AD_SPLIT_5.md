@@ -55,7 +55,7 @@ The function block `AD_SPLIT_5` is a simple yet useful tool for multiplying adap
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## Technical Features
 

@@ -11,30 +11,30 @@ The function block `Hysteresis_AR_AX` is a basic function block (BFB) for event-
 
 ### **Event Inputs**
 
-* **INIT**: Initialization request (`EInit`). Enables or disables the block in conjunction with the input `QI`.
+- **INIT**: Initialization request (`EInit`). Enables or disables the block in conjunction with the input `QI`.
 
 ### **Event Outputs**
 
-* **INITO**: Initialization Confirmation (`EInit`). Signals the completion of initialization or deinitialization in conjunction with `QO`.
+- **INITO**: Initialization Confirmation (`EInit`). Signals the completion of initialization or deinitialization in conjunction with `QO`.
 
 ### **Data Inputs**
 
-* **QI** (BOOL): Input Event Qualifier. Determines whether the function block should be active (`TRUE`) or deinitialized (`FALSE`).
+- **QI** (BOOL): Input Event Qualifier. Determines whether the function block should be active (`TRUE`) or deinitialized (`FALSE`).
 
 ### **Data Outputs**
 
-* **QO** (BOOL): Output Event Qualifier. Displays the current status of the function block activation.
+- **QO** (BOOL): Output Event Qualifier. Displays the current status of the function block activation.
 
 ### **Adapters**
 
 The function block uses standardized, unidirectional adapters for clean, modular coupling of data and events.
 
-* **Sockets (Input Adapters):**
-* **INPUT** (`adapter::types::unidirectional::AR`): The analog input value to be monitored. The value is present at `INPUT.D1`; the evaluation is triggered by the event `INPUT.E1`.
-* **THRESHOLD** (`adapter::types::unidirectional::AR`): The midpoint of the hysteresis band (`THRESHOLD.D1`).
-* **HYSTERESIS** (`adapter::types::unidirectional::AR`): The total width of the hysteresis band (`HYSTERESIS.D1`).
-* **Plugs (Output Adapters):**
-* **OUTPUT** (`adapter::types::unidirectional::AX`): The digital output signal. Outputs the switching result at data point `OUTPUT.D1` (BOOL) and triggers the output via the event `OUTPUT.E1`.
+- **Sockets (Input Adapters):**
+- **INPUT** (`adapter::types::unidirectional::AR`): The analog input value to be monitored. The value is present at `INPUT.D1`; the evaluation is triggered by the event `INPUT.E1`.
+- **THRESHOLD** (`adapter::types::unidirectional::AR`): The midpoint of the hysteresis band (`THRESHOLD.D1`).
+- **HYSTERESIS** (`adapter::types::unidirectional::AR`): The total width of the hysteresis band (`HYSTERESIS.D1`).
+- **Plugs (Output Adapters):**
+- **OUTPUT** (`adapter::types::unidirectional::AX`): The digital output signal. Outputs the switching result at data point `OUTPUT.D1` (BOOL) and triggers the output via the event `OUTPUT.E1`.
 
 ## Functionality
 
@@ -58,9 +58,9 @@ $$\text{INPUT.D1} < \text{THRESHOLD.D1} - \frac{|\text{HYSTERESIS.D1}|}{2.0}$$
 
 ## Technical Features
 
-* **Oscillation Prevention:** By using a A strict inequality ($<$) when switching off and a soft inequality ($\ge$) when switching on guarantees stable behavior at the exact limits of the hysteresis band.
-* **Absolute Hysteresis:** By using the `ABS` function in the Execution Control Chart (ECC), the function block also functions correctly if a negative value is incorrectly passed for the hysteresis width.
-* **Adapter-Based Architecture:** The use of unidirectional adapters (`AR` / `AX`) consolidates data and event lines. This significantly improves clarity in the application diagram.
+- **Oscillation Prevention:** By using a A strict inequality ($<$) when switching off and a soft inequality ($\ge$) when switching on guarantees stable behavior at the exact limits of the hysteresis band.
+- **Absolute Hysteresis:** By using the `ABS` function in the Execution Control Chart (ECC), the function block also functions correctly if a negative value is incorrectly passed for the hysteresis width.
+- **Adapter-Based Architecture:** The use of unidirectional adapters (`AR` / `AX`) consolidates data and event lines. This significantly improves clarity in the application diagram.
 
 ## State Overview
 
@@ -74,10 +74,10 @@ The behavior is controlled via the following states in the Execution Control Cha
 
 ## Application Scenarios
 
-* **Two-Point Temperature Control:** Controls a heating system. The heating system switches on when the temperature falls below the setpoint minus half the hysteresis and switches off again only when the temperature exceeds the setpoint plus half the hysteresis.
-* **Level Control:** Switches pumps in tanks on and off. Prevents the pumps from switching continuously due to turbulent liquid surfaces (wave motion).
-* **Limit Monitoring in Process Areas:** Converts noisy analog sensor values (e.g., pressure, flow rate) into stable digital alarm signals.
-* ## Comparison with Similar Components
+- **Two-Point Temperature Control:** Controls a heating system. The heating system switches on when the temperature falls below the setpoint minus half the hysteresis and switches off again only when the temperature exceeds the setpoint plus half the hysteresis.
+- **Level Control:** Switches pumps in tanks on and off. Prevents the pumps from switching continuously due to turbulent liquid surfaces (wave motion).
+- **Limit Monitoring in Process Areas:** Converts noisy analog sensor values (e.g., pressure, flow rate) into stable digital alarm signals.
+- ## Comparison with Similar Components
 
 Unlike classic comparator components (such as `GT` or `LT`), which react immediately to even the slightest threshold violation, the `Hysteresis_AR_AX` buffers the signal through the defined band.
 

@@ -46,10 +46,10 @@ Der Baustein nimmt am Socket `IN` ein AIWS-Adapter-Signal entgegen und leitet di
 
 ## Technische Besonderheiten
 
-- **Generischer Funktionsblock**: Der Baustein ist als generischer `GEN_AIWS_SPLIT` gekennzeichnet. Dadurch kann er in verschiedenen Kontexten wiederverwendet werden, indem der konkrete Adapter-Typ zur Entwurfszeit festgelegt wird.  
-- **Unidirektionalität**: Sowohl der Eingang als auch alle Ausgänge sind unidirektional (`adapter::types::unidirectional::AIWS`), d.h. Daten fließen nur vom Socket zu den Plugs.  
-- **Keine Ereignissteuerung**: Der Split-Block arbeitet ohne Ereignisse – die Datenweitergabe erfolgt implizit über die Adapter-Verbindungen.  
-- **Keine Zustandsmaschine**: Es existiert kein ECC (Execution Control Chart), daher ist der Block zustandslos und benötigt keine Initialisierung.  
+- **Generischer Funktionsblock**: Der Baustein ist als generischer `GEN_AIWS_SPLIT` gekennzeichnet. Dadurch kann er in verschiedenen Kontexten wiederverwendet werden, indem der konkrete Adapter-Typ zur Entwurfszeit festgelegt wird.
+- **Unidirektionalität**: Sowohl der Eingang als auch alle Ausgänge sind unidirektional (`adapter::types::unidirectional::AIWS`), d.h. Daten fließen nur vom Socket zu den Plugs.
+- **Keine Ereignissteuerung**: Der Split-Block arbeitet ohne Ereignisse – die Datenweitergabe erfolgt implizit über die Adapter-Verbindungen.
+- **Keine Zustandsmaschine**: Es existiert kein ECC (Execution Control Chart), daher ist der Block zustandslos und benötigt keine Initialisierung.
 - **Typ-Hash**: Ein optionales Attribut `eclipse4diac::core::TypeHash` kann für Identifikations- und Versionierungszwecke gesetzt werden, ist aber im vorliegenden Fall leer.
 
 ## Zustandsübersicht
@@ -58,15 +58,15 @@ Der Funktionsblock besitzt keine internen Zustände. Er ist rein kombinatorisch 
 
 ## Anwendungsszenarien
 
-- **Signalverteilung in Automatisierungssystemen**: Wenn ein Sensor- oder Steuerungssignal (z.B. ein AIWS-konformer Temperatur- oder Druckwert) an mehrere unabhängige Module weitergegeben werden muss.  
-- **Redundante Verarbeitung**: Ein Signal wird an identische, parallel arbeitende Algorithmen oder Sicherheitslogiken verteilt.  
-- **Test- und Simulationsumgebungen**: Ein einzelnes AIWS-Signal soll auf mehrere Prüf- oder Überwachungsblöcke aufgeteilt werden.  
+- **Signalverteilung in Automatisierungssystemen**: Wenn ein Sensor- oder Steuerungssignal (z.B. ein AIWS-konformer Temperatur- oder Druckwert) an mehrere unabhängige Module weitergegeben werden muss.
+- **Redundante Verarbeitung**: Ein Signal wird an identische, parallel arbeitende Algorithmen oder Sicherheitslogiken verteilt.
+- **Test- und Simulationsumgebungen**: Ein einzelnes AIWS-Signal soll auf mehrere Prüf- oder Überwachungsblöcke aufgeteilt werden.
 - **Architekturvereinfachung**: Erspart die manuelle Verkabelung mehrerer Split-Blöcke und reduziert die Komplexität des Applikationsdiagramms.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AIWS_SPLIT_n (z.B. AIWS_SPLIT_4)**: Andere Varianten mit einer unterschiedlichen Anzahl von Ausgängen (z.B. 2, 4, 8). Der vorliegende Block spezialisiert sich auf eine Aufteilung in genau neun Stränge.  
-- **Manueller Split mit mehreren FB-Instanzen**: Ohne diesen Baustein müsste man das AIWS-Signal durch Hintereinanderschaltung mehrerer 2- oder 3-fach-Split-Blöcke realisieren, was die Übersichtlichkeit verringert.  
+- **AIWS_SPLIT_n (z.B. AIWS_SPLIT_4)**: Andere Varianten mit einer unterschiedlichen Anzahl von Ausgängen (z.B. 2, 4, 8). Der vorliegende Block spezialisiert sich auf eine Aufteilung in genau neun Stränge.
+- **Manueller Split mit mehreren FB-Instanzen**: Ohne diesen Baustein müsste man das AIWS-Signal durch Hintereinanderschaltung mehrerer 2- oder 3-fach-Split-Blöcke realisieren, was die Übersichtlichkeit verringert.
 - **Datenverteiler auf Basis von Ereignissen**: Bausteine, die über Ereignisse gesteuert werden, benötigen zusätzliche Event-Verdrahtung und sind für reine Datenweiterleitung weniger effizient.
 
 ## Änderungserkennung
@@ -81,4 +81,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

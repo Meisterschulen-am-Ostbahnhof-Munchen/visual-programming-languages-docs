@@ -15,8 +15,8 @@ The subapplication `Uebung_011_AUDI.SUB` uses an adapter-based input block.
 
 ![Uebung_011_AUDI_network](./Uebung_011_AUDI_network.svg)
 
-* **`InputNumber_I1`**: Type `NumericValue_IDA`. This function block represents a numeric input field on the ISOBUS terminal. Unlike the standard version (`_ID`), this function block uses an AX-based adapter output (`IN`) that combines both the event and the DWORD value.
-* **`F_DWORD_TO_UDINT`**: This uses the new function block type `AD_TO_AUDI`. It receives the `AD` adapter and outputs a `AUDI` adapter, which carries the value as `UDINT`.
+- **`InputNumber_I1`**: Type `NumericValue_IDA`. This function block represents a numeric input field on the ISOBUS terminal. Unlike the standard version (`_ID`), this function block uses an AX-based adapter output (`IN`) that combines both the event and the DWORD value.
+- **`F_DWORD_TO_UDINT`**: This uses the new function block type `AD_TO_AUDI`. It receives the `AD` adapter and outputs a `AUDI` adapter, which carries the value as `UDINT`.
 
 -----
 

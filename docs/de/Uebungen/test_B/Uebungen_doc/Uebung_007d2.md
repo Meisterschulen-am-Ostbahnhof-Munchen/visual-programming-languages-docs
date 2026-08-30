@@ -9,29 +9,29 @@ Diese Übung realisiert einen Blinker unter Verwendung von `E_CYCLE` und `E_D_FF
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **E_CYCLE**  
-  *Typ*: `iec61499::events::E_CYCLE`  
-  *Parameter*: `DT` = `T#1ms` (Zykluszeit 1 ms)  
+- **E_CYCLE**
+  *Typ*: `iec61499::events::E_CYCLE`
+  *Parameter*: `DT` = `T#1ms` (Zykluszeit 1 ms)
   Ein zyklischer Ereignisgenerator, der periodisch ein Ereignis auslöst.
 
-- **FB_RANDOM**  
-  *Typ*: `eclipse4diac::utils::FB_RANDOM`  
-  *Parameter*: `SEED` = `0` (Startwert für Zufallszahl)  
+- **FB_RANDOM**
+  *Typ*: `eclipse4diac::utils::FB_RANDOM`
+  *Parameter*: `SEED` = `0` (Startwert für Zufallszahl)
   Erzeugt einen Zufallswert im Bereich 0..1.
 
-- **F_GT**  
-  *Typ*: `iec61131::comparison::F_GT`  
-  *Parameter*: `IN2` = `REAL#0.49` (fester Vergleichswert)  
+- **F_GT**
+  *Typ*: `iec61131::comparison::F_GT`
+  *Parameter*: `IN2` = `REAL#0.49` (fester Vergleichswert)
   Vergleicht die Werte `IN1 > IN2` und liefert einen booleschen Ausgang.
 
-- **E_D_FF_TMIN**  
-  *Typ*: `iec61499::events::E_D_FF_TMIN`  
-  *Parameter*: `Tmin` = `T#3s` (minimale Einschaltzeit)  
+- **E_D_FF_TMIN**
+  *Typ*: `iec61499::events::E_D_FF_TMIN`
+  *Parameter*: `Tmin` = `T#3s` (minimale Einschaltzeit)
   Ein D-Flipflop, das nach einem steigenden Takt den Dateneingang übernimmt und den Ausgang für mindestens `Tmin` auf TRUE hält.
 
-- **DigitalOutput_Q1**  
-  *Typ*: `logiBUS::io::DQ::logiBUS_QX`  
-  *Parameter*: `QI` = `TRUE` (Aktivierung des Ausgangs), `Output` = `Output_Q1` (physikalischer Ausgang)  
+- **DigitalOutput_Q1**
+  *Typ*: `logiBUS::io::DQ::logiBUS_QX`
+  *Parameter*: `QI` = `TRUE` (Aktivierung des Ausgangs), `Output` = `Output_Q1` (physikalischer Ausgang)
   Digitaler Ausgang auf dem logiBUS-System.
 
 ## Programmablauf und Verbindungen
@@ -65,4 +65,4 @@ Vorausgesetzt werden Grundkenntnisse der Ereignisbehandlung nach IEC 61499 und
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

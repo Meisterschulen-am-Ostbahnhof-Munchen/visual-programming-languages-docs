@@ -19,8 +19,8 @@ The function block has no direct event outputs. Events are output via the **adap
 ### **Data Inputs**
 
 - **`G`** (adapter type `adapter::types::unidirectional::AX`) – Boolean value that controls the switching.
-* `G=0` → Event is routed to `EO0`
-* `G=1` → Event is routed to `EO1`
+- `G=0` → Event is routed to `EO0`
+- `G=1` → Event is routed to `EO1`
 
 ### **Data Outputs**
 
@@ -80,4 +80,4 @@ The `AE_AX_SWITCH` is a compact, efficient demultiplexer for events based on a B
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

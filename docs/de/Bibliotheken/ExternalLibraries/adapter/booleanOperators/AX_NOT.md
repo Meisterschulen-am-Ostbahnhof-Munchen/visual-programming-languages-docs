@@ -63,7 +63,7 @@ Vergleich mit [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_N
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006a3_sub_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
+- [Uebung_006a3_sub_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
 
 ## Fazit
 

@@ -31,14 +31,14 @@ The function block `AS_ADD_4` is a generic function block (FB) designed to perfo
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AS`): First input value (addend 1) for addition.
-* **IN2** (Type: `adapter::types::unidirectional::AS`): Second input value (addend 2) for addition.
-* **IN3** (Type: `adapter::types::unidirectional::AS`): Third input value (addend 3) for addition.
-* **IN4** (Type: `adapter::types::unidirectional::AS`): Fourth input value (addend 4) for the addition.
+- **IN1** (Type: `adapter::types::unidirectional::AS`): First input value (addend 1) for addition.
+- **IN2** (Type: `adapter::types::unidirectional::AS`): Second input value (addend 2) for addition.
+- **IN3** (Type: `adapter::types::unidirectional::AS`): Third input value (addend 3) for addition.
+- **IN4** (Type: `adapter::types::unidirectional::AS`): Fourth input value (addend 4) for the addition.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AS`): Output adapter for displaying the calculated addition result.
+- **OUT** (Type: `adapter::types::unidirectional::AS`): Output adapter for displaying the calculated addition result.
 
 ---
 
@@ -54,9 +54,9 @@ The calculation is typically triggered as soon as a corresponding update event a
 
 ## Technical Features
 
-* **Generic Nature:** The function block is declared as a generic function block (`GEN_AS_ADD`). This allows for flexible handling of different data types (e.g., `INT`, `REAL`, `DINT`), depending on how the underlying adapter types are defined.
-* **Adapter Coupling:** By using unidirectional adapters, the risk of incorrect pin wiring in the 4diac IDE is reduced, as data and events are transmitted together in a single connection.
-* ---
+- **Generic Nature:** The function block is declared as a generic function block (`GEN_AS_ADD`). This allows for flexible handling of different data types (e.g., `INT`, `REAL`, `DINT`), depending on how the underlying adapter types are defined.
+- **Adapter Coupling:** By using unidirectional adapters, the risk of incorrect pin wiring in the 4diac IDE is reduced, as data and events are transmitted together in a single connection.
+- ---
 
 ## State Overview
 
@@ -70,9 +70,9 @@ Since this is an algorithmic function block for calculations, the FB operates st
 
 ## Application Scenarios
 
-* **Measurement Value Summation:** Summarizing four analog sensor values (e.g., flow rates or power) into a single total value.
-* **Setpoint Generation:** Adding base setpoints with various correction or offset values in a cascade control system.
-* **Structured Signal Processing:** Used in complex control architectures where a strict separation of logic and data flow is required through adapter structures.
+- **Measurement Value Summation:** Summarizing four analog sensor values (e.g., flow rates or power) into a single total value.
+- **Setpoint Generation:** Adding base setpoints with various correction or offset values in a cascade control system.
+- **Structured Signal Processing:** Used in complex control architectures where a strict separation of logic and data flow is required through adapter structures.
 
 ---
 
@@ -80,8 +80,8 @@ Since this is an algorithmic function block for calculations, the FB operates st
 
 Compared to a classic, standard `ADD` component (according to IEC 61131-3):
 
-* **Advantage:** Reduced wiring effort in the graphical user interface, as separate event and data lines do not need to be drawn.
-* **Disadvantage:** Requires the definition and use of the specific adapter type `adapter::types::unidirectional::AS`. Direct connection of standard data types (such as simple `REAL` or `INT` variables) without an adapter is not possible.
+- **Advantage:** Reduced wiring effort in the graphical user interface, as separate event and data lines do not need to be drawn.
+- **Disadvantage:** Requires the definition and use of the specific adapter type `adapter::types::unidirectional::AS`. Direct connection of standard data types (such as simple `REAL` or `INT` variables) without an adapter is not possible.
 
 ---
 

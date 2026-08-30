@@ -20,9 +20,9 @@ Das Ziel ist es, ein einzelnes, kurzes Ereignis (z.B. einen Mausklick oder Taste
 
 ![Uebung_020h_AX_network](./Uebung_020h_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE`. Liefert ein Ereignis bei einem Einfachklick (`BUTTON_SINGLE_CLICK`).
-  * **`AX_PULSE`**: [cite_start]Startet einen Timer bei Eintreffen eines Ereignisses am `REQ`-Eingang. Der Ausgang `Q` bleibt für die Zeit `PT` (5 Sekunden) auf TRUE[cite: 1].
-  * **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`.
+  - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE`. Liefert ein Ereignis bei einem Einfachklick (`BUTTON_SINGLE_CLICK`).
+  - **`AX_PULSE`**: [cite_start]Startet einen Timer bei Eintreffen eines Ereignisses am `REQ`-Eingang. Der Ausgang `Q` bleibt für die Zeit `PT` (5 Sekunden) auf TRUE[cite: 1].
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`.
 
 -----
 

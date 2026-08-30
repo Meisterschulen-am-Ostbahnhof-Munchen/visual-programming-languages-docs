@@ -17,7 +17,7 @@ Configuration of a multi-click operation.
 
 ![Uebung_004c6_AX_network](./Uebung_004c6_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Type `logiBUS_IE2`. This type has the additional input `arg`.
+- **`DigitalInput_CLK_I1`**: Type `logiBUS_IE2`. This type has the additional input `arg`.
 
 -----
 

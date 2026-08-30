@@ -6,8 +6,8 @@ This article describes the logiBUS® exercise `Uebung_021`. This is an introduct
 
 ![Uebung_021_network](./Uebung_021_network.svg)
 
-* [Infineon MOTIX BTM9020/9021EP: Datasheet Analysis for Automotive – Robust Motor Driver with Intelligent Diagnostics (HW vs. SPI)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-MOTIX-BTM90209021EP-Datenblatt-Analyse-fr-Automotive--Robuster-Motortreiber-mit-intelligenter-Diagnose-HW-vs--SPI-e39av51)
-* [JBC Soldering Tips C470 vs. C245 vs. C210 vs. C115: Which Tip is the All-Rounder and When Do You Need the Nano Specialist?](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBC-Ltspitzen-C470-vs--C245-vs--C210-vs--C115-Welche-Spitze-ist-der-Allrounder-und-wann-brauchst-du-den-Nano-Spezialisten-e39ak58)
+- [Infineon MOTIX BTM9020/9021EP: Datasheet Analysis for Automotive – Robust Motor Driver with Intelligent Diagnostics (HW vs. SPI)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-MOTIX-BTM90209021EP-Datenblatt-Analyse-fr-Automotive--Robuster-Motortreiber-mit-intelligenter-Diagnose-HW-vs--SPI-e39av51)
+- [JBC Soldering Tips C470 vs. C245 vs. C210 vs. C115: Which Tip is the All-Rounder and When Do You Need the Nano Specialist?](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBC-Ltspitzen-C470-vs--C245-vs--C210-vs--C115-Welche-Spitze-ist-der-Allrounder-und-wann-brauchst-du-den-Nano-Spezialisten-e39ak58)
 
 ----
 
@@ -23,10 +23,10 @@ Implementation of a simple sequence control: A process is started and stops auto
 
 ### Function Blocks (FBs)
 
-* **`SoftKey_UP_F1`**: Functions as a **START button**. [cite_start]It is configured on `SK_RELEASED`[cite: 1].
-* **`SoftKey_F2_DOWN`**: Simulates the **limit switch**. [cite_start]It reacts immediately when pressed (`SK_PRESSED`)[cite: 1].
-* **`E_SR`**: The memory for the movement state.
-* **`DigitalOutput_Q1`**: The output for the cylinder valve.
+- **`SoftKey_UP_F1`**: Functions as a **START button**. [cite_start]It is configured on `SK_RELEASED`[cite: 1].
+- **`SoftKey_F2_DOWN`**: Simulates the **limit switch**. [cite_start]It reacts immediately when pressed (`SK_PRESSED`)[cite: 1].
+- **`E_SR`**: The memory for the movement state.
+- **`DigitalOutput_Q1`**: The output for the cylinder valve.
 
 -----
 
@@ -48,6 +48,6 @@ In a production line, a package is to be pushed off the conveyor belt at the pus
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Interactive JBC Soldering Tip Guide & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)
+- [🌐 Interactive JBC Soldering Tip Guide & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)
 
 ]

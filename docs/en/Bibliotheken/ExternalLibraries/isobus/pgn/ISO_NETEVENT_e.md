@@ -36,10 +36,10 @@ This file declares a set of constants of type `USINT` (Unsigned Short Integer, 8
 
 ## Technical Details
 
-* **Type:** All constants are of type `USINT`.
-* **Initialization:** Each constant is initialized with a unique value (0 to 9) upon declaration.
-* **Conditional Compilation:** The constants `Isonet_HsiActive` and `Isonet_HsiInactive` are marked as conditional constants (originally from C code). Their use may depend on the definition of a preprocessor symbol (`CCI_HSI`).
-* **Package Assignment:** The constants are assigned to the package `isobus::pgn`, indicating their use in the context of ISOBUS protocol handling (Parameter Group Number).
+- **Type:** All constants are of type `USINT`.
+- **Initialization:** Each constant is initialized with a unique value (0 to 9) upon declaration.
+- **Conditional Compilation:** The constants `Isonet_HsiActive` and `Isonet_HsiInactive` are marked as conditional constants (originally from C code). Their use may depend on the definition of a preprocessor symbol (`CCI_HSI`).
+- **Package Assignment:** The constants are assigned to the package `isobus::pgn`, indicating their use in the context of ISOBUS protocol handling (Parameter Group Number).
 
 ## State Overview
 
@@ -65,6 +65,6 @@ The `ISO_NETEVENT_e` is an essential resource for the structured development of 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

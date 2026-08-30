@@ -35,12 +35,12 @@ Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer
 
 ### **Adapter**
 
-- **Stecker (Plugs):**  
-  - **Q**: Ausgangsadapter vom Typ `adapter::types::unidirectional::AX`.  
+- **Stecker (Plugs):**
+  - **Q**: Ausgangsadapter vom Typ `adapter::types::unidirectional::AX`.
     Über diesen Adapter wird das boolesche Ausgangssignal `Q.D1` sowie das Ereignis `Q.E1` an die Anwendung weitergegeben.
 
-- **Buchse (Sockets):**  
-  - **IN**: Eingangsadapter vom Typ `adapter::types::unidirectional::AX`.  
+- **Buchse (Sockets):**
+  - **IN**: Eingangsadapter vom Typ `adapter::types::unidirectional::AX`.
     Über diesen Adapter empfängt der Baustein das Start-Ereignis (über `IN.E1`) und ggf. ein boolesches Signal (über `IN.D1`), das intern als Freigabe oder Zusatzbedingung genutzt wird (hier nicht direkt mit der Timerlogik verbunden, sondern zu einem internen Standard-Timer geführt).
 
 ## Funktionsweise
@@ -100,4 +100,4 @@ Der **AX_FB_TP_LTIME** ist ein robuster und präziser Puls‑Timer für die 4dia
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

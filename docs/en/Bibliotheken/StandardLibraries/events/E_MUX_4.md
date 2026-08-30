@@ -50,7 +50,7 @@ In this way, the event flow is merged while preserving information about the eve
 
 ## 🛠️ Related Exercises
 
-* [Exercise_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
+- [Exercise_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
 
 ## Conclusion
 

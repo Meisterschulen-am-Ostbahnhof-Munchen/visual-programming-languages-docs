@@ -15,7 +15,7 @@ Lernziele:
 - Steuerung von logiBUS-Ein- und Ausgängen
 - Ausgabe numerischer Werte auf einem Terminal
 
-Schwierigkeitsgrad: Fortgeschritten  
+Schwierigkeitsgrad: Fortgeschritten
 Vorkenntnisse: Grundlagen der IEC 61131-3, 4diac-IDE, Adapterkonzept
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -93,4 +93,4 @@ Die Übung zeigt die Realisierung eines Abwärtszählers nach IEC 61131-3 unter 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

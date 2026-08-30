@@ -15,34 +15,34 @@ Der Funktionsblock `sequence_E_08_loop` ist ein Sequenzer mit acht Ausgangszust�
 
 ### **Ereignis-Eingänge**
 
-*   `START_S1`: Wechselt vom Startzustand (`START`) in den Zustand `State_01`.
-*   `S1_S2`: Wechselt von `State_01` zu `State_02`.
-*   `S2_S3`: Wechselt von `State_02` zu `State_03`.
-*   `S3_S4`: Wechselt von `State_03` zu `State_04`.
-*   `S4_S5`: Wechselt von `State_04` zu `State_05`.
-*   `S5_S6`: Wechselt von `State_05` zu `State_06`.
-*   `S6_S7`: Wechselt von `State_06` zu `State_07`.
-*   `S7_S8`: Wechselt von `State_07` zu `State_08`.
-*   `S8_S1`: Wechselt von `State_08` zurück zum Zustand `State_01` (Schleife).
-*   `RESET`: Setzt von jedem beliebigen Zustand zurück in den Startzustand (`START`).
+-   `START_S1`: Wechselt vom Startzustand (`START`) in den Zustand `State_01`.
+-   `S1_S2`: Wechselt von `State_01` zu `State_02`.
+-   `S2_S3`: Wechselt von `State_02` zu `State_03`.
+-   `S3_S4`: Wechselt von `State_03` zu `State_04`.
+-   `S4_S5`: Wechselt von `State_04` zu `State_05`.
+-   `S5_S6`: Wechselt von `State_05` zu `State_06`.
+-   `S6_S7`: Wechselt von `State_06` zu `State_07`.
+-   `S7_S8`: Wechselt von `State_07` zu `State_08`.
+-   `S8_S1`: Wechselt von `State_08` zurück zum Zustand `State_01` (Schleife).
+-   `RESET`: Setzt von jedem beliebigen Zustand zurück in den Startzustand (`START`).
 
 ### **Ereignis-Ausgänge**
 
-*   `CNF` (Execution Confirmation): Wird bei jedem Zustandswechsel ausgelöst und liefert die aktuelle Zustandsnummer (`STATE_NR`).
-*   `EO_S1` ... `EO_S8`: Werden beim Eintritt in den jeweiligen Zustand (`State_01` bis `State_08`) ausgelöst und liefern den zugehörigen booleschen Datenausgang (`DO_S1` ... `DO_S8`).
+-   `CNF` (Execution Confirmation): Wird bei jedem Zustandswechsel ausgelöst und liefert die aktuelle Zustandsnummer (`STATE_NR`).
+-   `EO_S1` ... `EO_S8`: Werden beim Eintritt in den jeweiligen Zustand (`State_01` bis `State_08`) ausgelöst und liefern den zugehörigen booleschen Datenausgang (`DO_S1` ... `DO_S8`).
 
 ### **Daten-Eingänge**
 
-*   Keine vorhanden.
+-   Keine vorhanden.
 
 ### **Daten-Ausgänge**
 
-*   `STATE_NR` (SINT): Die Nummer des aktiven Zustands. `START` = 0, `State_01` = 1, `State_02` = 2, usw.
-*   `DO_S1` ... `DO_S8` (BOOL): Logische Ausgänge, die `TRUE` sind, wenn der entsprechende Zustand aktiv ist.
+-   `STATE_NR` (SINT): Die Nummer des aktiven Zustands. `START` = 0, `State_01` = 1, `State_02` = 2, usw.
+-   `DO_S1` ... `DO_S8` (BOOL): Logische Ausgänge, die `TRUE` sind, wenn der entsprechende Zustand aktiv ist.
 
 ### **Adapter**
 
-*   Keine Adapterschnittstellen vorhanden.
+-   Keine Adapterschnittstellen vorhanden.
 
 ## Funktionsweise
 
@@ -58,25 +58,25 @@ Die Sequenz durchläuft die Zustände 1 bis 8 linear. Von `State_08` aus führt 
 
 ## Technische Besonderheiten
 
-*   **Reiner Event-Trigger**: Zustandsübergänge erfolgen ausschließlich durch externe Ereignisse, nicht durch Bedingungen oder Zeitgeber.
-*   **Explizite Reset-Logik**: Der Reset-Vorgang nutzt einen eigenen Zustand (`sRESET`), in dem alle möglichen Exit-Aktionen aufgerufen werden, um sicherzustellen, dass alle Ausgänge deaktiviert werden, bevor der Startzustand erreicht wird.
-*   **Zustandsbestätigung**: Das `CNF`-Ereignis und der `STATE_NR`-Ausgang bieten eine klare Rückmeldung über den aktuellen Systemstatus.
-*   **Konsistente Namensgebung**: Die Namen der Ereignisse, Zustände und Algorithmen folgen einem durchgängigen Schema (z.B. `S1_S2`, `sState_01`, `State_01_C`), was die Lesbarkeit und Wartung erleichtert.
+-   **Reiner Event-Trigger**: Zustandsübergänge erfolgen ausschließlich durch externe Ereignisse, nicht durch Bedingungen oder Zeitgeber.
+-   **Explizite Reset-Logik**: Der Reset-Vorgang nutzt einen eigenen Zustand (`sRESET`), in dem alle möglichen Exit-Aktionen aufgerufen werden, um sicherzustellen, dass alle Ausgänge deaktiviert werden, bevor der Startzustand erreicht wird.
+-   **Zustandsbestätigung**: Das `CNF`-Ereignis und der `STATE_NR`-Ausgang bieten eine klare Rückmeldung über den aktuellen Systemstatus.
+-   **Konsistente Namensgebung**: Die Namen der Ereignisse, Zustände und Algorithmen folgen einem durchgängigen Schema (z.B. `S1_S2`, `sState_01`, `State_01_C`), was die Lesbarkeit und Wartung erleichtert.
 
 ## Zustandsübersicht
 
 Die ECC (Execution Control Chart) umfasst folgende Zustände:
 
-*   `xSTART`: Initialer, inaktiver Wartezustand (Zustandsnummer 0).
-*   `sState_01` bis `sState_08`: Die acht aktiven Sequenzzustände (Zustandsnummern 1-8). Jeder aktiviert seinen spezifischen Ausgang.
-*   `sRESET`: Dedizierter Reset-Zustand. Beim Eintreten werden alle potenziell aktiven Ausgänge (`DO_S1` bis `DO_S8`) deaktiviert, die Zustandsnummer auf 0 gesetzt und ein Übergang zu `xSTART` ausgeführt.
+-   `xSTART`: Initialer, inaktiver Wartezustand (Zustandsnummer 0).
+-   `sState_01` bis `sState_08`: Die acht aktiven Sequenzzustände (Zustandsnummern 1-8). Jeder aktiviert seinen spezifischen Ausgang.
+-   `sRESET`: Dedizierter Reset-Zustand. Beim Eintreten werden alle potenziell aktiven Ausgänge (`DO_S1` bis `DO_S8`) deaktiviert, die Zustandsnummer auf 0 gesetzt und ein Übergang zu `xSTART` ausgeführt.
 
 ## Anwendungsszenarien
 
-*   Steuerung von zyklischen Fertigungs- oder Montageprozessen mit manueller oder sensorischer Freigabe für den nächsten Schritt.
-*   Steuerung von Testsequenzen, bei denen jeder Testschritt manuell gestartet wird.
-*   Überwachung und Steuerung von Batch-Prozessen, bei denen ein Operator die nächste Phase einleitet.
-*   Als zentraler Steuerbaustein in Maschinen, die einen klar definierten, schrittweisen Arbeitsablauf haben.
+-   Steuerung von zyklischen Fertigungs- oder Montageprozessen mit manueller oder sensorischer Freigabe für den nächsten Schritt.
+-   Steuerung von Testsequenzen, bei denen jeder Testschritt manuell gestartet wird.
+-   Überwachung und Steuerung von Batch-Prozessen, bei denen ein Operator die nächste Phase einleitet.
+-   Als zentraler Steuerbaustein in Maschinen, die einen klar definierten, schrittweisen Arbeitsablauf haben.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -84,9 +84,9 @@ Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_040](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Uebung_040_2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Uebung_041](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Uebung_040](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Uebung_040_2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Uebung_041](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Fazit
 
@@ -96,4 +96,4 @@ Der `sequence_E_08_loop` ist ein spezialisierter, zuverlässiger und einfach zu 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

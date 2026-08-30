@@ -53,10 +53,10 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
-* [Uebung_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
-* [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
-* [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
+- [Uebung_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
+- [Uebung_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
+- [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+- [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
 
 ## Fazit
 

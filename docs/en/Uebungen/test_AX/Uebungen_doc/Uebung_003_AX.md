@@ -19,8 +19,8 @@ Two pairs of input and output blocks are used:
 
 ![Uebung_003_AX_network](./Uebung_003_AX_network.svg)
 
-* **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (channel 1). [cite_start]Connects hardware input `I1` to hardware output `Q1`[cite: 1].
-* **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (channel 2). Connects hardware input `I2` to hardware output `Q2`[cite: 1].
+- **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (channel 1). [cite_start]Connects hardware input `I1` to hardware output `Q1`[cite: 1].
+- **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (channel 2). Connects hardware input `I2` to hardware output `Q2`[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 
@@ -56,6 +56,6 @@ In a pumping station, there are two identical pumps, each operated by its own lo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

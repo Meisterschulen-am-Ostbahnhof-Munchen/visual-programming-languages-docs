@@ -11,20 +11,20 @@ Der Funktionsblock **AB_TO_AX** ist ein zusammengesetzter Baustein (Composite FB
 
 ### **Adapter (Eingang)**
 
-- **AB_IN** (Typ: `adapter::types::unidirectional::AB`):  
+- **AB_IN** (Typ: `adapter::types::unidirectional::AB`):
   Nimmt einen BYTE-Wert sowie ein zugehöriges Ereignis entgegen. Der Adapter stellt die Daten über die internen Kanäle D1 (BYTE) und E1 (Ereignis) bereit.
 
 ### **Adapter (Ausgang)**
 
-- **AX_OUT** (Typ: `adapter::types::unidirectional::AX`):  
+- **AX_OUT** (Typ: `adapter::types::unidirectional::AX`):
   Gibt einen BOOL-Wert sowie ein auslösendes Ereignis aus. Der Adapter liefert das Ergebnis über D1 (BOOL) und E1 (Ereignis).
 
 ## Funktionsweise
 
-Der Baustein verwendet intern einen `F_NE`-Vergleichsbaustein (ungleich). Das eingehende BYTE-Signal (AB_IN.D1) wird mit dem konstanten Wert `BYTE#0` verglichen.  
+Der Baustein verwendet intern einen `F_NE`-Vergleichsbaustein (ungleich). Das eingehende BYTE-Signal (AB_IN.D1) wird mit dem konstanten Wert `BYTE#0` verglichen.
 
-- Wenn der BYTE-Wert ungleich 0 ist, liefert der Vergleich `TRUE`.  
-- Wenn der BYTE-Wert gleich 0 ist, liefert der Vergleich `FALSE`.  
+- Wenn der BYTE-Wert ungleich 0 ist, liefert der Vergleich `TRUE`.
+- Wenn der BYTE-Wert gleich 0 ist, liefert der Vergleich `FALSE`.
 
 Der Ablauf wird durch das Ereignis `AB_IN.E1` gestartet. Dieses triggert den `F_NE`-Baustein. Nach Abschluss des Vergleichs wird das Ereignis `AX_OUT.E1` ausgelöst und das Ergebnis (BOOL) über `AX_OUT.D1` ausgegeben.
 
@@ -57,4 +57,4 @@ Der **AB_TO_AX**-Baustein bietet eine saubere und einfache Methode, um ein BYTE-
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

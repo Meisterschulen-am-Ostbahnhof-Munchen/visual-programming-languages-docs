@@ -17,11 +17,11 @@ The objective of this exercise is to analyze the off-delay at the logic level. U
 
 ### Function Blocks (FBs)
 
-* **`DigitalInput_I1`**: Type `logiBUS_IXA`. Signal input.
-* **`AX_SWITCH`**: [cite_start]Separates rising (`EO1`) and falling (`EO0`) edges.[cite: 1]
-* **`AX_RS`**: The result memory.
-* **`E_DELAY`**: [cite_start]Delays the reset event by 2 seconds (`DT = T#2S`)[cite: 1].
-* **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
+- **`DigitalInput_I1`**: Type `logiBUS_IXA`. Signal input.
+- **`AX_SWITCH`**: [cite_start]Separates rising (`EO1`) and falling (`EO0`) edges.[cite: 1]
+- **`AX_RS`**: The result memory.
+- **`E_DELAY`**: [cite_start]Delays the reset event by 2 seconds (`DT = T#2S`)[cite: 1].
+- **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
 
 -----
 

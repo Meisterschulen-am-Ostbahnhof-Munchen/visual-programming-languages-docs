@@ -58,10 +58,10 @@ Somit wird nach jedem eingehenden Ereignis am Socket automatisch ein konvertiert
 
 ## Zustandsübersicht
 
-Da es sich um einen Composite‑FB ohne eigene Zustandsmaschine handelt, gibt es keine expliziten Zustände. Der Baustein verhält sich wie ein transparenter Konverter:  
+Da es sich um einen Composite‑FB ohne eigene Zustandsmaschine handelt, gibt es keine expliziten Zustände. Der Baustein verhält sich wie ein transparenter Konverter:
 
-- **Idle:** Wartet auf ein Ereignis am Socket.  
-- **Processing:** Nach Ereigniseingang wird die Konvertierung gestartet; in dieser Phase sind keine weiteren Ereignisse aktiv.  
+- **Idle:** Wartet auf ein Ereignis am Socket.
+- **Processing:** Nach Ereigniseingang wird die Konvertierung gestartet; in dieser Phase sind keine weiteren Ereignisse aktiv.
 - **Done:** Nach der Konvertierung wird das Ausgangsereignis ausgegeben; der Baustein kehrt in den Idle‑Zustand zurück.
 
 Der interne FB `F_DWORD_TO_INT` besitzt eine eigene, vom System definierte Zustandslogik, die jedoch durch die Kapselung im Composite‑FB nicht sichtbar ist.
@@ -86,4 +86,4 @@ Der Composite‑FB **AD_TO_AI** ist ein nützliches Werkzeug zur Typanpassung zw
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

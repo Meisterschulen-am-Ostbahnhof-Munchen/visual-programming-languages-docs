@@ -20,8 +20,8 @@ Nutzung von spezialisierten Dienstbausteinen zur Reduktion der Diagramm-Komplexi
 
 ![Uebung_006a4_network](./Uebung_006a4_network.svg)
 
-  * **`LinksRechts`**: Typ `logiBUS::utils::sequence::verteiler::LinksRechts`. [cite_start]Dieser Baustein übernimmt die komplette Verwaltung der zwei Ausgänge inklusive der internen Richtungs-Logik[cite: 1].
-  * **`E_T_FF_SR`**: Liefert weiterhin das Startsignal an den Eingang `EI_ON`.
+  - **`LinksRechts`**: Typ `logiBUS::utils::sequence::verteiler::LinksRechts`. [cite_start]Dieser Baustein übernimmt die komplette Verwaltung der zwei Ausgänge inklusive der internen Richtungs-Logik[cite: 1].
+  - **`E_T_FF_SR`**: Liefert weiterhin das Startsignal an den Eingang `EI_ON`.
 
 -----
 

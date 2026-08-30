@@ -2,9 +2,9 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ![SPLIT_LWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/673b8e11-a630-41ed-ab74-5c16e3fe349b)
 

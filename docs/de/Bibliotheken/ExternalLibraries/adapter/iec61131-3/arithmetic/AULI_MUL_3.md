@@ -33,13 +33,13 @@ Der Funktionsbaustein `AULI_MUL_3` ist ein generischer Funktionsbaustein (Generi
 
 #### **Sockets (Eingangs-Adapter)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
-* **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
-* **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
+- **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
+- **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
+- **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Eingangswert (Multiplikand 3) für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AULI`): Ausgang für das berechnete Produkt der drei Eingangswerte.
+- **OUT** (Typ: `adapter::types::unidirectional::AULI`): Ausgang für das berechnete Produkt der drei Eingangswerte.
 
 ---
 
@@ -55,15 +55,15 @@ Da es sich um einen generischen Baustein (`GEN_AULI_MUL`) handelt, der auf unidi
 
 ## Technische Besonderheiten
 
-* **Generischer Typ:** Der Baustein ist als generischer Typ deklariert (`GenericClassName` = `"GEN_AULI_MUL"`). Dies erlaubt eine flexible Handhabung je nach zugrundeliegendem Datentyp der verwendeten Adapter.
-* **Adapter-Kapselung:** Durch die Verwendung von Adaptern des Typs `AULI` werden Daten und zugehörige Kontrollflüsse (Events) in einer einzigen Verbindung gebündelt, was den Verdrahtungsaufwand im Funktionsplan erheblich reduziert.
-* **Unidirektionalität:** Die Schnittstellen nutzen das unidirektionale Profil, wodurch ein klarer Informationsfluss von den Eingängen zum Ausgang gewährleistet ist.
+- **Generischer Typ:** Der Baustein ist als generischer Typ deklariert (`GenericClassName` = `"GEN_AULI_MUL"`). Dies erlaubt eine flexible Handhabung je nach zugrundeliegendem Datentyp der verwendeten Adapter.
+- **Adapter-Kapselung:** Durch die Verwendung von Adaptern des Typs `AULI` werden Daten und zugehörige Kontrollflüsse (Events) in einer einzigen Verbindung gebündelt, was den Verdrahtungsaufwand im Funktionsplan erheblich reduziert.
+- **Unidirektionalität:** Die Schnittstellen nutzen das unidirektionale Profil, wodurch ein klarer Informationsfluss von den Eingängen zum Ausgang gewährleistet ist.
 
 ---
 
 ## Zustandsübersicht
 
-Der Baustein arbeitet ereignisgesteuert und besitzt keinen internen, persistenten Zustand (zustandslos / kombinatorisch). 
+Der Baustein arbeitet ereignisgesteuert und besitzt keinen internen, persistenten Zustand (zustandslos / kombinatorisch).
 
 1. **Warten auf Aktualisierung:** Der Baustein wartet auf ein Aktualisierungsereignis an den Eingangs-Sockets (`IN1`, `IN2` oder `IN3`).
 2. **Berechnung:** Nach Erhalt eines Ereignisses werden die aktuellen Werte gelesen und multipliziert.
@@ -73,16 +73,16 @@ Der Baustein arbeitet ereignisgesteuert und besitzt keinen internen, persistente
 
 ## Anwendungsszenarien
 
-* **Volumenberechnung:** Berechnung von dreidimensionalen Größen (z. B. Länge × Breite × Höhe) in der Prozessautomatisierung.
-* **Skalierung und Gewichtung:** Anwendung von zwei aufeinanderfolgenden Skalierungsfaktoren auf einen Messwert (z. B. Sensorwert × Kalibrierungsfaktor × Einheitenumrechnung).
-* **Leistungsberechnung:** Dreiphasige oder mehrstufige Berechnungen, bei denen drei physikalische Größen multiplikativ verknüpft werden müssen.
+- **Volumenberechnung:** Berechnung von dreidimensionalen Größen (z. B. Länge × Breite × Höhe) in der Prozessautomatisierung.
+- **Skalierung und Gewichtung:** Anwendung von zwei aufeinanderfolgenden Skalierungsfaktoren auf einen Messwert (z. B. Sensorwert × Kalibrierungsfaktor × Einheitenumrechnung).
+- **Leistungsberechnung:** Dreiphasige oder mehrstufige Berechnungen, bei denen drei physikalische Größen multiplikativ verknüpft werden müssen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Standard-MUL (IEC 61131-3):** Der klassische `MUL`-Baustein arbeitet mit direkten Daten- und Ereignispins. `AULI_MUL_3` unterscheidet sich dadurch, dass er genau drei Eingänge besitzt und diese vollständig über Adapter (`AULI`) kapselt, was zu einer übersichtlicheren Architektur führt.
-* **AULI_MUL_2 (falls vorhanden):** Ein hypothetischer Baustein mit nur zwei Eingängen. `AULI_MUL_3` spart bei der Multiplikation von drei Werten einen kompletten Kaskadierungsbaustein ein.
+- **Standard-MUL (IEC 61131-3):** Der klassische `MUL`-Baustein arbeitet mit direkten Daten- und Ereignispins. `AULI_MUL_3` unterscheidet sich dadurch, dass er genau drei Eingänge besitzt und diese vollständig über Adapter (`AULI`) kapselt, was zu einer übersichtlicheren Architektur führt.
+- **AULI_MUL_2 (falls vorhanden):** Ein hypothetischer Baustein mit nur zwei Eingängen. `AULI_MUL_3` spart bei der Multiplikation von drei Werten einen kompletten Kaskadierungsbaustein ein.
 
 ---
 

@@ -17,8 +17,8 @@ Using specialized service blocks to reduce diagram complexity.
 
 ![Uebung_006a4_network](./Uebung_006a4_network.svg)
 
-* **`LinksRechts`**: Type `logiBUS::utils::sequence::verteiler::LinksRechts`. [cite_start]This block handles the complete management of the two outputs, including the internal direction logic[cite: 1].
-* **`E_T_FF_SR`**: Also provides the start signal to the input `EI_ON`.
+- **`LinksRechts`**: Type `logiBUS::utils::sequence::verteiler::LinksRechts`. [cite_start]This block handles the complete management of the two outputs, including the internal direction logic[cite: 1].
+- **`E_T_FF_SR`**: Also provides the start signal to the input `EI_ON`.
 
 -----
 

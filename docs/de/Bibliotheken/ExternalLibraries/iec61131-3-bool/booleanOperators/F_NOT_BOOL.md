@@ -13,19 +13,19 @@ Der Funktionsblock `F_NOT_BOOL` implementiert die logische NICHT-Funktion (Negat
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Service Request)**: Dieses Ereignis löst die Ausführung der logischen Negation aus. Bei seinem Eintreffen wird der aktuelle Wert am Daten-Eingang `IN` verarbeitet und das Ergebnis an `OUT` ausgegeben.
+-   **REQ (Service Request)**: Dieses Ereignis löst die Ausführung der logischen Negation aus. Bei seinem Eintreffen wird der aktuelle Wert am Daten-Eingang `IN` verarbeitet und das Ergebnis an `OUT` ausgegeben.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Confirmation of Requested Service)**: Dieses Ereignis signalisiert die Beendigung der Operation. Es wird gleichzeitig mit der Ausgabe des berechneten Wertes am Daten-Ausgang `OUT` erzeugt.
+-   **CNF (Confirmation of Requested Service)**: Dieses Ereignis signalisiert die Beendigung der Operation. Es wird gleichzeitig mit der Ausgabe des berechneten Wertes am Daten-Ausgang `OUT` erzeugt.
 
 ### **Daten-Eingänge**
 
-*   **IN (Input)**: Datentyp `BOOL`. Dies ist der binäre Eingangswert, der negiert werden soll. Gültige Werte sind `TRUE` (1) oder `FALSE` (0).
+-   **IN (Input)**: Datentyp `BOOL`. Dies ist der binäre Eingangswert, der negiert werden soll. Gültige Werte sind `TRUE` (1) oder `FALSE` (0).
 
 ### **Daten-Ausgänge**
 
-*   **OUT (Output)**: Datentyp `BOOL`. Dies ist das Ergebnis der logischen Negation. Der Ausgangswert entspricht dem logischen Gegenteil des Eingangswertes `IN`.
+-   **OUT (Output)**: Datentyp `BOOL`. Dies ist das Ergebnis der logischen Negation. Der Ausgangswert entspricht dem logischen Gegenteil des Eingangswertes `IN`.
 
 ### **Adapter**
 
@@ -44,9 +44,9 @@ Die logische Operation lässt sich durch folgende Tabelle beschreiben:
 
 ## Technische Besonderheiten
 
-*   **Standardkonformität**: Der Baustein ist als Standardfunktion nach IEC 61131-3 klassifiziert.
-*   **E/A-Verzögerung**: Die Verarbeitung von `REQ` bis zur Ausgabe von `CNF` und `OUT` erfolgt innerhalb eines Zyklus der ausführenden Ressource. Es gibt keine inhärenten Verzögerungen.
-*   **Initialisierung**: Die Ausgangsvariablen werden bei der Initialisierung des Funktionsblocks auf ihren Standardwert (`FALSE` für `BOOL`) gesetzt.
+-   **Standardkonformität**: Der Baustein ist als Standardfunktion nach IEC 61131-3 klassifiziert.
+-   **E/A-Verzögerung**: Die Verarbeitung von `REQ` bis zur Ausgabe von `CNF` und `OUT` erfolgt innerhalb eines Zyklus der ausführenden Ressource. Es gibt keine inhärenten Verzögerungen.
+-   **Initialisierung**: Die Ausgangsvariablen werden bei der Initialisierung des Funktionsblocks auf ihren Standardwert (`FALSE` für `BOOL`) gesetzt.
 
 ## Zustandsübersicht
 
@@ -54,10 +54,10 @@ Der Baustein besitzt keinen internen Zustand im Sinne einer Zustandsmaschine. Se
 
 ## Anwendungsszenarien
 
-*   **Invertierung von Sensorsignalen**: Umwandlung eines aktiven-Low-Sensorsignals (z.B. "Taste gedrückt" = FALSE) in ein aktives-High-Signal für die weitere Logik.
-*   **Sicherheitslogik**: Erzeugung eines Sperrsignals aus einem Freigabesignal oder umgekehrt.
-*   **Steuerungslogik**: Als grundlegender Baustein in komplexeren logischen Ausdrücken und Bedingungen innerhalb von Ablaufsteuerungen.
-*   **Statusanzeige**: Umkehrung eines internen Status für die Ansteuerung einer Lampe (z.B. "Maschine bereit" = TRUE, aber "Störungslampe leuchtet" bei FALSE).
+-   **Invertierung von Sensorsignalen**: Umwandlung eines aktiven-Low-Sensorsignals (z.B. "Taste gedrückt" = FALSE) in ein aktives-High-Signal für die weitere Logik.
+-   **Sicherheitslogik**: Erzeugung eines Sperrsignals aus einem Freigabesignal oder umgekehrt.
+-   **Steuerungslogik**: Als grundlegender Baustein in komplexeren logischen Ausdrücken und Bedingungen innerhalb von Ablaufsteuerungen.
+-   **Statusanzeige**: Umkehrung eines internen Status für die Ansteuerung einer Lampe (z.B. "Maschine bereit" = TRUE, aber "Störungslampe leuchtet" bei FALSE).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

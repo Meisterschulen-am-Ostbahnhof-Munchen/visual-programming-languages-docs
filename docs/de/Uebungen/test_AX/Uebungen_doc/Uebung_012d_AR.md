@@ -10,23 +10,23 @@ Diese Übung demonstriert die Erfassung eines numerischen Werts über einen phys
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **InputNumber_I3**  
-  - **Typ**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`  
+- **InputNumber_I3**
+  - **Typ**: `isobus::UT::io::NumericValue::NumericValue_PHYSA`
   - **Parameter**:
     - `QI` = `TRUE` (Aktivierung des Bausteins)
     - `stObj` = `InputNumber_I3` (Referenz auf das physische Eingangsobjekt)
   - **Funktion**: Liest einen numerischen Wert von einer physischen Eingangsschnittstelle und stellt ihn über den Ausgangsadapter `rPhys` bereit.
 
-- **NVS_AR**  
-  - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AR`  
+- **NVS_AR**
+  - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AR`
   - **Parameter**:
     - `QI` = `TRUE` (Aktivierung)
     - `KEY` = `KEY_I1_STORE` (Speicher-Schlüssel im NVS)
     - `DEFAULT_VALUE` = `REAL#0.0` (Standardwert, falls noch kein Wert gespeichert ist)
   - **Funktion**: Speichert einen eingehenden Wert im nichtflüchtigen Speicher (NVS) und gibt den gespeicherten (oder standardmäßigen) Wert über den Ausgangsadapter `AR_OUT` weiter. Der Adaptereingang `AR_IN` nimmt Eingabedaten entgegen.
 
-- **Q_NumericValue**  
-  - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`  
+- **Q_NumericValue**
+  - **Typ**: `isobus::UT::Q::Q_NumericValue_PHYSA`
   - **Parameter**:
     - `stObj` = `OutputNumber_N3` (Referenz auf das physische Ausgangsobjekt)
   - **Funktion**: Gibt einen empfangenen numerischen Wert über eine physische Ausgangsschnittstelle aus. Die Daten werden über den Adaptereingang `rPhys` bereitgestellt.
@@ -45,7 +45,7 @@ Die Funktionsbausteine sind über Adapter-Schnittstellen verbunden:
 - Kombination von physischer Ein-/Ausgabe mit nichtflüchtiger Speicherung.
 - Parametrierung von Speicherbausteinen (NVS) mit Schlüsseln und Standardwerten.
 
-**Schwierigkeitsgrad:** Mittel  
+**Schwierigkeitsgrad:** Mittel
 **Vorkenntnisse:** Grundlegende Kenntnisse der 4diac-IDE, Verständnis von Funktionsbausteinen und Adaptern.
 
 ## Zusammenfassung
@@ -56,4 +56,4 @@ Die Übung `Uebung_012d_AR` realisiert eine einfache Pipeline: physikalischer Ei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

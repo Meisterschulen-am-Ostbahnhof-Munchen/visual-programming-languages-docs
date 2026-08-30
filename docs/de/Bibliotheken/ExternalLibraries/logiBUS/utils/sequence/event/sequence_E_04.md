@@ -15,36 +15,36 @@ Der Funktionsblock `sequence_E_04` ist ein Sequenzer, der eine lineare Abfolge v
 
 ### **Ereignis-Eingänge**
 
-*   **START_S1**: Wechselt vom Zustand START oder State_00 in den Zustand State_01.
-*   **S1_S2**: Wechselt vom Zustand State_01 in den Zustand State_02.
-*   **S2_S3**: Wechselt vom Zustand State_02 in den Zustand State_03.
-*   **S3_S4**: Wechselt vom Zustand State_03 in den Zustand State_04.
-*   **S4_START**: Wechselt vom Zustand State_04 in den Zustand State_00.
-*   **RESET**: Setzt den Baustein von jedem beliebigen Zustand (State_01 bis State_04) in den Zustand State_00 zurück.
+-   **START_S1**: Wechselt vom Zustand START oder State_00 in den Zustand State_01.
+-   **S1_S2**: Wechselt vom Zustand State_01 in den Zustand State_02.
+-   **S2_S3**: Wechselt vom Zustand State_02 in den Zustand State_03.
+-   **S3_S4**: Wechselt vom Zustand State_03 in den Zustand State_04.
+-   **S4_START**: Wechselt vom Zustand State_04 in den Zustand State_00.
+-   **RESET**: Setzt den Baustein von jedem beliebigen Zustand (State_01 bis State_04) in den Zustand State_00 zurück.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Bestätigungsereignis, das bei jedem Zustandswechsel ausgelöst wird. Es liefert die aktuelle Zustandsnummer über `STATE_NR`.
-*   **EO_S1**: Wird beim Eintritt in den Zustand State_01 ausgelöst und liefert den Wert von `DO_S1` (TRUE).
-*   **EO_S2**: Wird beim Eintritt in den Zustand State_02 ausgelöst und liefert den Wert von `DO_S2` (TRUE).
-*   **EO_S3**: Wird beim Eintritt in den Zustand State_03 ausgelöst und liefert den Wert von `DO_S3` (TRUE).
-*   **EO_S4**: Wird beim Eintritt in den Zustand State_04 ausgelöst und liefert den Wert von `DO_S4` (TRUE).
+-   **CNF**: Bestätigungsereignis, das bei jedem Zustandswechsel ausgelöst wird. Es liefert die aktuelle Zustandsnummer über `STATE_NR`.
+-   **EO_S1**: Wird beim Eintritt in den Zustand State_01 ausgelöst und liefert den Wert von `DO_S1` (TRUE).
+-   **EO_S2**: Wird beim Eintritt in den Zustand State_02 ausgelöst und liefert den Wert von `DO_S2` (TRUE).
+-   **EO_S3**: Wird beim Eintritt in den Zustand State_03 ausgelöst und liefert den Wert von `DO_S3` (TRUE).
+-   **EO_S4**: Wird beim Eintritt in den Zustand State_04 ausgelöst und liefert den Wert von `DO_S4` (TRUE).
 
 ### **Daten-Eingänge**
 
-*   Keine vorhanden.
+-   Keine vorhanden.
 
 ### **Daten-Ausgänge**
 
-*   **STATE_NR** (SINT): Gibt die Nummer des aktuellen Zustands aus. Die Kodierung lautet: START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4.
-*   **DO_S1** (BOOL): Ist TRUE, wenn der Zustand State_01 aktiv ist.
-*   **DO_S2** (BOOL): Ist TRUE, wenn der Zustand State_02 aktiv ist.
-*   **DO_S3** (BOOL): Ist TRUE, wenn der Zustand State_03 aktiv ist.
-*   **DO_S4** (BOOL): Ist TRUE, wenn der Zustand State_04 aktiv ist.
+-   **STATE_NR** (SINT): Gibt die Nummer des aktuellen Zustands aus. Die Kodierung lautet: START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4.
+-   **DO_S1** (BOOL): Ist TRUE, wenn der Zustand State_01 aktiv ist.
+-   **DO_S2** (BOOL): Ist TRUE, wenn der Zustand State_02 aktiv ist.
+-   **DO_S3** (BOOL): Ist TRUE, wenn der Zustand State_03 aktiv ist.
+-   **DO_S4** (BOOL): Ist TRUE, wenn der Zustand State_04 aktiv ist.
 
 ### **Adapter**
 
-*   Keine vorhanden.
+-   Keine vorhanden.
 
 ## Funktionsweise
 
@@ -58,10 +58,10 @@ Ein `RESET`-Ereignis führt alle notwendigen Exit-Algorithmen der aktiven Zustä
 
 ## Technische Besonderheiten
 
-*   **Ereignisbasierte Transition**: Zustandswechsel sind ausschließlich durch externe Ereignisse möglich. Es gibt keine zeit- oder datengesteuerten Übergänge.
-*   **Explizite Zustandskodierung**: Die Zustandsnummern sind als Konstanten aus der Bibliothek `sequence` definiert, was die Wiederverwendung und Lesbarkeit des Codes verbessert.
-*   **Sauberer Reset**: Der Reset-Vorgang deaktiviert alle aktiven Ausgänge, bevor der Endzustand erreicht wird, um ein klares und definiertes Systemverhalten zu gewährleisten.
-*   **Initialzustand**: Der FB startet im Zustand `xSTART`. Der erste Übergang in die operative Sequenz erfolgt durch das Ereignis `START_S1`.
+-   **Ereignisbasierte Transition**: Zustandswechsel sind ausschließlich durch externe Ereignisse möglich. Es gibt keine zeit- oder datengesteuerten Übergänge.
+-   **Explizite Zustandskodierung**: Die Zustandsnummern sind als Konstanten aus der Bibliothek `sequence` definiert, was die Wiederverwendung und Lesbarkeit des Codes verbessert.
+-   **Sauberer Reset**: Der Reset-Vorgang deaktiviert alle aktiven Ausgänge, bevor der Endzustand erreicht wird, um ein klares und definiertes Systemverhalten zu gewährleisten.
+-   **Initialzustand**: Der FB startet im Zustand `xSTART`. Der erste Übergang in die operative Sequenz erfolgt durch das Ereignis `START_S1`.
 
 ## Zustandsübersicht
 
@@ -75,9 +75,9 @@ Ein `RESET`-Ereignis führt alle notwendigen Exit-Algorithmen der aktiven Zustä
 
 ## Anwendungsszenarien
 
-*   **Schrittkettensteuerungen**: Steuerung von Maschinen oder Anlagen, die einen festen, schrittweisen Arbeitsablauf haben (z.B. Pick-and-Place, Füllanlagen).
-*   **Taktung von Prozessen**: Synchronisation von Teilprozessen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben wird.
-*   **Manuelle Bedienabläufe**: Umsetzung von geführten Bediensequenzen, bei denen der Operator jeden Schritt bestätigen muss.
+-   **Schrittkettensteuerungen**: Steuerung von Maschinen oder Anlagen, die einen festen, schrittweisen Arbeitsablauf haben (z.B. Pick-and-Place, Füllanlagen).
+-   **Taktung von Prozessen**: Synchronisation von Teilprozessen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben wird.
+-   **Manuelle Bedienabläufe**: Umsetzung von geführten Bediensequenzen, bei denen der Operator jeden Schritt bestätigen muss.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

@@ -18,55 +18,55 @@ Das Hauptmerkmal dieser Übung ist die Trennung von Kommunikationsmanagement (im
 
 Im Hauptnetzwerk werden folgende Bausteine verwendet, um die Kommunikation zu initiieren:
 
-*   **NmGetCfInfo_1** (`isobus::pgn::NmGetCfInfo`):
-    *   Dient zum Abrufen von Netzwerkinformationen und Filtern der Zieladresse.
-    *   Parameter:
-        *   `u8CanIdx` = `NODE1`
-        *   `member` = `network`
-        *   `address` = `PEAK_ADD`
-        *   `mask` = `PEAK_FLT`
+-   **NmGetCfInfo_1** (`isobus::pgn::NmGetCfInfo`):
+    -   Dient zum Abrufen von Netzwerkinformationen und Filtern der Zieladresse.
+    -   Parameter:
+        -   `u8CanIdx` = `NODE1`
+        -   `member` = `network`
+        -   `address` = `PEAK_ADD`
+        -   `mask` = `PEAK_FLT`
 
-*   **AlPgnTxNew8Bcycl_REQ** (`isobus::pgn::tx::AlPgnTxNew8Bcycl_REQ`):
-    *   Dieser Baustein ist für das zyklische Senden einer 8-Byte großen Nachricht zuständig.
-    *   Er verfügt über einen Adapter-Anschluss (`CB`), über den die Datenanforderung (Callback) abgewickelt wird.
-    *   Parameter:
-        *   `u32Pgn` = `61184` (Die verwendete Parameter Group Number)
-        *   `u16DaSize` = `8` (Datenlänge in Bytes)
-        *   `u8Priority` = `3` (Priorität der Nachricht)
-        *   `u16DefRepRate` = `500` (Zykluszeit in Millisekunden)
+-   **AlPgnTxNew8Bcycl_REQ** (`isobus::pgn::tx::AlPgnTxNew8Bcycl_REQ`):
+    -   Dieser Baustein ist für das zyklische Senden einer 8-Byte großen Nachricht zuständig.
+    -   Er verfügt über einen Adapter-Anschluss (`CB`), über den die Datenanforderung (Callback) abgewickelt wird.
+    -   Parameter:
+        -   `u32Pgn` = `61184` (Die verwendete Parameter Group Number)
+        -   `u16DaSize` = `8` (Datenlänge in Bytes)
+        -   `u8Priority` = `3` (Priorität der Nachricht)
+        -   `u16DefRepRate` = `500` (Zykluszeit in Millisekunden)
 
-*   **DataSupply** (`Uebungen::Uebung_126b_sub`):
-    *   Eine Sub-Application, welche die Logik zur Datenerzeugung (Sinus-Kurve) enthält.
+-   **DataSupply** (`Uebungen::Uebung_126b_sub`):
+    -   Eine Sub-Application, welche die Logik zur Datenerzeugung (Sinus-Kurve) enthält.
 
 ### Sub-Bausteine: DataSupply (Uebung_126b_sub)
 
 Diese Sub-Application kapselt die Logik zur Berechnung der Sinuswerte.
 
-*   **Typ**: SubApp
-*   **Verwendete interne FBs**:
-    *   **CallbackFB**: `isobus::pgn::tx::CallbackFB`
-        *   Dieser Baustein dient als Schnittstelle zum zyklischen Sender. Wenn der Sender Daten benötigt, triggert dieser FB die Berechnungskette.
-        *   Parameter: `DI1` (Eingang für die berechneten Datenstruktur)
-    *   **GEN_SIN**: `OSCAT::Basic::POUs::Engineering::signal_generators::GEN_SIN`
-        *   Erzeugt ein sinusförmiges Signal.
-        *   Parameter:
-            *   `PT` = `T#10s` (Periodendauer)
-            *   `AM` = `10.0` (Amplitude)
-            *   `OS` = `5.0` (Offset/Verschiebung)
-            *   `DL` = `0.0`
-    *   **F_LREAL_TO_USINT**: `iec61131::conversion::F_LREAL_TO_USINT`
-        *   Konvertiert den Gleitkommawert des Sinus-Generators in eine vorzeichenlose kleine Ganzzahl (USINT).
-    *   **F_USINT_TO_BYTE**: `iec61131::conversion::F_USINT_TO_BYTE`
-        *   Wandelt den USINT-Wert in ein Byte um.
-    *   **BYTES_TO_ARR08B**: `logiBUS::utils::conversion::arr::reversing::BYTES_TO_ARR08B`
-        *   Erstellt ein Byte-Array aus 8 Einzelbytes.
-        *   Der berechnete Sinus-Wert wird an `IN_00` angelegt.
-        *   Parameter `IN_01` bis `IN_07` sind statisch `16#00`.
-    *   **STRUCT_MUX**: `eclipse4diac::convert::STRUCT_MUX`
-        *   Verpackt das Byte-Array in die `isobus::pgn::CAN_MSG` Struktur.
-        *   Attribut: `StructuredType` = `isobus::pgn::CAN_MSG`
+-   **Typ**: SubApp
+-   **Verwendete interne FBs**:
+    -   **CallbackFB**: `isobus::pgn::tx::CallbackFB`
+        -   Dieser Baustein dient als Schnittstelle zum zyklischen Sender. Wenn der Sender Daten benötigt, triggert dieser FB die Berechnungskette.
+        -   Parameter: `DI1` (Eingang für die berechneten Datenstruktur)
+    -   **GEN_SIN**: `OSCAT::Basic::POUs::Engineering::signal_generators::GEN_SIN`
+        -   Erzeugt ein sinusförmiges Signal.
+        -   Parameter:
+            -   `PT` = `T#10s` (Periodendauer)
+            -   `AM` = `10.0` (Amplitude)
+            -   `OS` = `5.0` (Offset/Verschiebung)
+            -   `DL` = `0.0`
+    -   **F_LREAL_TO_USINT**: `iec61131::conversion::F_LREAL_TO_USINT`
+        -   Konvertiert den Gleitkommawert des Sinus-Generators in eine vorzeichenlose kleine Ganzzahl (USINT).
+    -   **F_USINT_TO_BYTE**: `iec61131::conversion::F_USINT_TO_BYTE`
+        -   Wandelt den USINT-Wert in ein Byte um.
+    -   **BYTES_TO_ARR08B**: `logiBUS::utils::conversion::arr::reversing::BYTES_TO_ARR08B`
+        -   Erstellt ein Byte-Array aus 8 Einzelbytes.
+        -   Der berechnete Sinus-Wert wird an `IN_00` angelegt.
+        -   Parameter `IN_01` bis `IN_07` sind statisch `16#00`.
+    -   **STRUCT_MUX**: `eclipse4diac::convert::STRUCT_MUX`
+        -   Verpackt das Byte-Array in die `isobus::pgn::CAN_MSG` Struktur.
+        -   Attribut: `StructuredType` = `isobus::pgn::CAN_MSG`
 
-*   **Funktionsweise**:
+-   **Funktionsweise**:
     Sobald der `CallbackFB` ein Event empfängt (getriggert durch den zyklischen Sender im Hauptprogramm), aktiviert er den `GEN_SIN`. Der aktuelle Sinuswert wird berechnet, konvertiert (LREAL -> USINT -> BYTE) und in das erste Byte eines Arrays geschrieben. Dieses Array wird in eine CAN-Nachricht-Struktur verpackt und über den `CallbackFB` zurück an das Hauptprogramm gegeben.
 
 ## Programmablauf und Verbindungen
@@ -74,23 +74,23 @@ Diese Sub-Application kapselt die Logik zur Berechnung der Sinuswerte.
 1.  **Initialisierung**: Der Baustein `NmGetCfInfo_1` ermittelt beim Start die notwendigen Netzwerkinformationen.
 2.  **Konfiguration**: Sobald die Netzwerkinformationen verfügbar sind (`IND` Event), wird der Senderbaustein `AlPgnTxNew8Bcycl_REQ` installiert (`install`).
 3.  **Zyklischer Betrieb**:
-    *   Der `AlPgnTxNew8Bcycl_REQ` Baustein ist auf eine Wiederholrate von 500ms eingestellt.
-    *   Alle 500ms löst er über den Adapter-Anschluss `CB` (verbunden mit `DataSupply.PLUG1`) eine Anfrage aus.
+    -   Der `AlPgnTxNew8Bcycl_REQ` Baustein ist auf eine Wiederholrate von 500ms eingestellt.
+    -   Alle 500ms löst er über den Adapter-Anschluss `CB` (verbunden mit `DataSupply.PLUG1`) eine Anfrage aus.
 4.  **Datenberechnung**:
-    *   Innerhalb der Sub-App `DataSupply` empfängt der `CallbackFB` die Anfrage.
-    *   Dies triggert die Signalkette: Der Sinus-Generator `GEN_SIN` berechnet den nächsten Wert basierend auf der aktuellen Zeit.
-    *   Aufgrund der Parameter (Amplitude 10, Offset 5) erzeugt der Generator Werte im Bereich von -5.0 bis +15.0. Da die Konvertierung auf `USINT` erfolgt, werden negative Werte typischerweise auf 0 geklemmt.
+    -   Innerhalb der Sub-App `DataSupply` empfängt der `CallbackFB` die Anfrage.
+    -   Dies triggert die Signalkette: Der Sinus-Generator `GEN_SIN` berechnet den nächsten Wert basierend auf der aktuellen Zeit.
+    -   Aufgrund der Parameter (Amplitude 10, Offset 5) erzeugt der Generator Werte im Bereich von -5.0 bis +15.0. Da die Konvertierung auf `USINT` erfolgt, werden negative Werte typischerweise auf 0 geklemmt.
 5.  **Rückgabe und Senden**:
-    *   Der berechnete Wert landet im ersten Byte der Nutzdaten.
-    *   Die Daten werden über den Adapter zurück an `AlPgnTxNew8Bcycl_REQ` geleitet.
-    *   Der Baustein sendet die PGN 61184 mit den aktuellen Daten auf den CAN-Bus.
+    -   Der berechnete Wert landet im ersten Byte der Nutzdaten.
+    -   Die Daten werden über den Adapter zurück an `AlPgnTxNew8Bcycl_REQ` geleitet.
+    -   Der Baustein sendet die PGN 61184 mit den aktuellen Daten auf den CAN-Bus.
 
 **Lernziele:**
 
-*   Verständnis des Adapter-Konzepts (Plugs/Sockets) in 4diac.
-*   Nutzung von Callback-Mechanismen für "Just-in-Time" Datenerzeugung bei zyklischen Sendern.
-*   Verwendung von OSCAT-Bibliotheksbausteinen (`GEN_SIN`) zur Signalsimulation.
-*   Datenkonvertierung und Strukturierung für ISOBUS/CAN-Nachrichten.
+-   Verständnis des Adapter-Konzepts (Plugs/Sockets) in 4diac.
+-   Nutzung von Callback-Mechanismen für "Just-in-Time" Datenerzeugung bei zyklischen Sendern.
+-   Verwendung von OSCAT-Bibliotheksbausteinen (`GEN_SIN`) zur Signalsimulation.
+-   Datenkonvertierung und Strukturierung für ISOBUS/CAN-Nachrichten.
 
 ## Zusammenfassung
 
@@ -100,4 +100,4 @@ Die Übung 126b zeigt eine elegante Methode, um Simulationsdaten (hier eine Sinu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

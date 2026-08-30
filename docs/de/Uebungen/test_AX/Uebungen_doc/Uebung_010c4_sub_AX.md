@@ -20,14 +20,14 @@ In diesem Netzwerk werden verschiedene spezialisierte Funktionsbausteine verwend
 
 Folgende Funktionsbausteine sind direkt im Netzwerk verschaltet:
 
-*   **SoftKey_F1** (`isobus::UT::io::Softkey::Softkey_IXA`):
-    *   Dient als Eingabeschnittstelle für eine Softtaste auf dem Universal Terminal (UT).
-    *   Parameter `QI` ist auf `TRUE` gesetzt.
-*   **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`):
-    *   Repräsentiert den physikalischen digitalen Ausgang.
-    *   Parameter `QI` ist auf `TRUE` gesetzt.
-*   **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`):
-    *   Ein Adapter-Baustein, der ein eingehendes Signal aufspaltet, um es an zwei verschiedene Ziele weiterzuleiten (Splitter).
+-   **SoftKey_F1** (`isobus::UT::io::Softkey::Softkey_IXA`):
+    -   Dient als Eingabeschnittstelle für eine Softtaste auf dem Universal Terminal (UT).
+    -   Parameter `QI` ist auf `TRUE` gesetzt.
+-   **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`):
+    -   Repräsentiert den physikalischen digitalen Ausgang.
+    -   Parameter `QI` ist auf `TRUE` gesetzt.
+-   **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`):
+    -   Ein Adapter-Baustein, der ein eingehendes Signal aufspaltet, um es an zwei verschiedene Ziele weiterzuleiten (Splitter).
 
 ### Sub-Bausteine: GreenWhiteBackground_AX
 
@@ -35,7 +35,7 @@ Innerhalb dieser Übung wird eine weitere Sub-Applikation instanziiert.
 
 - **Typ**: `MyLib::sys::GreenWhiteBackground_AX`
 - **Verwendete interne FBs**:
-    *   *Hinweis: Die interne Struktur dieses Sub-Bausteins ist nicht im bereitgestellten XML enthalten. Basierend auf der Verschaltung im übergeordneten Netzwerk lässt sich folgende Schnittstellennutzung ableiten:*
+    -   *Hinweis: Die interne Struktur dieses Sub-Bausteins ist nicht im bereitgestellten XML enthalten. Basierend auf der Verschaltung im übergeordneten Netzwerk lässt sich folgende Schnittstellennutzung ableiten:*
     - **Ereignisausgang/-eingang**:
         - Eingang `DI1`: Verbunden mit dem Splitter-Ausgang `OUT2`.
     - **Datenausgang/-eingang**:
@@ -48,15 +48,15 @@ Innerhalb dieser Übung wird eine weitere Sub-Applikation instanziiert.
 Der Ablauf innerhalb der `Uebung_010c4_sub_AX` wird durch Adapter- und Datenverbindungen gesteuert:
 
 1.  **Datenfluss (Initialisierung):**
-    *   Die Objekt-ID (`u16ObjId`) wird von der Schnittstelle der Sub-Applikation an `SoftKey_F1` und `GreenWhiteBackground_AX` weitergeleitet. Dies definiert, welches GUI-Objekt angesprochen wird.
-    *   Die Variable `Output` wird an `DigitalOutput_Q1` übergeben, um den korrekten physikalischen Ausgang zu adressieren.
+    -   Die Objekt-ID (`u16ObjId`) wird von der Schnittstelle der Sub-Applikation an `SoftKey_F1` und `GreenWhiteBackground_AX` weitergeleitet. Dies definiert, welches GUI-Objekt angesprochen wird.
+    -   Die Variable `Output` wird an `DigitalOutput_Q1` übergeben, um den korrekten physikalischen Ausgang zu adressieren.
 
 2.  **Signalfluss (Laufzeit):**
-    *   Wenn der **SoftKey_F1** betätigt wird, sendet er ein Signal über seinen Adapter-Anschluss `IN`.
-    *   Dieses Signal gelangt zum Splitter-Baustein **AX_SPLIT_2**.
-    *   Der Splitter teilt das Signal auf zwei Pfade auf:
-        *   **Pfad 1 (`OUT1`):** Geht an `DigitalOutput_Q1.OUT`. Dies schaltet den digitalen Ausgang.
-        *   **Pfad 2 (`OUT2`):** Geht an `GreenWhiteBackground_AX.DI1`. Dies löst die Änderung der Hintergrundfarbe (visuelles Feedback) aus.
+    -   Wenn der **SoftKey_F1** betätigt wird, sendet er ein Signal über seinen Adapter-Anschluss `IN`.
+    -   Dieses Signal gelangt zum Splitter-Baustein **AX_SPLIT_2**.
+    -   Der Splitter teilt das Signal auf zwei Pfade auf:
+        -   **Pfad 1 (`OUT1`):** Geht an `DigitalOutput_Q1.OUT`. Dies schaltet den digitalen Ausgang.
+        -   **Pfad 2 (`OUT2`):** Geht an `GreenWhiteBackground_AX.DI1`. Dies löst die Änderung der Hintergrundfarbe (visuelles Feedback) aus.
 
 Diese Struktur stellt sicher, dass Hardware-Schaltung und visuelles Feedback synchron zur Tastenbetätigung erfolgen.
 

@@ -33,12 +33,12 @@ All communication (data and associated trigger events) is implemented via unidir
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AUS`): The first multiplicand (input 1).
-* **IN2** (Type: `adapter::types::unidirectional::AUS`): The second multiplicand (input 2).
+- **IN1** (Type: `adapter::types::unidirectional::AUS`): The first multiplicand (input 1).
+- **IN2** (Type: `adapter::types::unidirectional::AUS`): The second multiplicand (input 2).
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUS`): The result of the multiplication ($IN1 × IN2$).
+- **OUT** (Type: `adapter::types::unidirectional::AUS`): The result of the multiplication ($IN1 × IN2$).
 
 --
 
@@ -54,9 +54,9 @@ The result of the calculation and the corresponding confirmation event are then 
 
 ## Technical Features
 
-* **Generic Nature:** The function block is declared as a generic type (`GenericClassName = 'GEN_AUS_MUL'`). This allows for flexible handling of various numeric data types (e.g., `INT`, `REAL`, `LREAL`) defined by the adapter structure.
-* **Adapter Focus:** Reducing the number of traditional pins to adapters significantly minimizes the wiring effort in the function block diagram and ensures a clean, object-oriented design.
-* ---
+- **Generic Nature:** The function block is declared as a generic type (`GenericClassName = 'GEN_AUS_MUL'`). This allows for flexible handling of various numeric data types (e.g., `INT`, `REAL`, `LREAL`) defined by the adapter structure.
+- **Adapter Focus:** Reducing the number of traditional pins to adapters significantly minimizes the wiring effort in the function block diagram and ensures a clean, object-oriented design.
+- ---
 
 ## State Overview
 
@@ -70,9 +70,9 @@ The function block operates in an event-driven manner based on the state changes
 
 ## Application Scenarios
 
-* **Measurement Scaling:** Multiplication of a raw value (e.g., from a sensor adapter) by a calibration factor.
-* **Power Calculation:** Multiplication of current and voltage values read in via standardized adapter interfaces.
-* **Modular Signal Processing:** Use in complex control loops where signal chains are neatly encapsulated by adapters to maintain clarity in the control diagram.
+- **Measurement Scaling:** Multiplication of a raw value (e.g., from a sensor adapter) by a calibration factor.
+- **Power Calculation:** Multiplication of current and voltage values read in via standardized adapter interfaces.
+- **Modular Signal Processing:** Use in complex control loops where signal chains are neatly encapsulated by adapters to maintain clarity in the control diagram.
 
 ---
 

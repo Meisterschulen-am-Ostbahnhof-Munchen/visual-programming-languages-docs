@@ -4,7 +4,7 @@
 
 ![Uebung_010c3_sub_network](./Uebung_010c3_sub_network.svg)
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 ## Overview
 
 [cite_start]This sub-app type combines softkey input with automatic visual feedback on the terminal[cite: 1].
@@ -13,4 +13,4 @@ It bundles the building blocks `Softkey_IX`, `GreenWhiteBackground`, and `Digita
 
 ## 🛠️ Related Exercises
 
-* [Exercise_010c3](Uebung_010c3.md)
+- [Exercise_010c3](Uebung_010c3.md)

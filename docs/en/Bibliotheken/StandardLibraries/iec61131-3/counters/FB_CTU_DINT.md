@@ -6,7 +6,7 @@
 
 The FB_CTU_DINT is an up counter for the DINT data type (32-bit count). It increments with each count pulse and can be reset to a predefined value. This function block is particularly suitable for applications requiring large count ranges.
 
-* ![FB_CTU_DINT](FB_CTU_DINT.svg)
+- ![FB_CTU_DINT](FB_CTU_DINT.svg)
 
 ## Interface Structure
 
@@ -73,4 +73,4 @@ The FB_CTU_DINT is a robust and easy-to-use increment counter for applications w
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -17,10 +17,10 @@ Using the `QI` (Qualifier Input) parameter for runtime control of function block
 
 ![Uebung_094a_AX_network](./Uebung_094a_AX_network.svg)
 
-* **`DigitalInput_CLK_I2`**: Toggles the "Active/Inactive" state via a flip-flop.
-* **`DigitalInput_I1`**: The actual signal input. Its parameter `QI` is variable.
-* **`DigitalOutput_Q1`**: Dependent on `I1`.
-* **`DigitalOutput_Q2`**: Displays the "Active" status.
+- **`DigitalInput_CLK_I2`**: Toggles the "Active/Inactive" state via a flip-flop.
+- **`DigitalInput_I1`**: The actual signal input. Its parameter `QI` is variable.
+- **`DigitalOutput_Q1`**: Dependent on `I1`.
+- **`DigitalOutput_Q2`**: Displays the "Active" status.
 
 -----
 

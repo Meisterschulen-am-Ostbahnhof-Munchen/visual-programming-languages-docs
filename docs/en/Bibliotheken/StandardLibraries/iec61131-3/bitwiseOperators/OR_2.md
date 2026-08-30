@@ -68,20 +68,20 @@ Compared to other Boolean operations like AND or XOR, OR_2 offers the specific p
 
 ## 🛠️ Related exercises
 
-* [Uebung_002a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a3.md)
-* [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
-* [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_035a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
-* [Uebung_035a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
-* [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
-* [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
-* [Exercise_035a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
-* [Exercise_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Exercise_089](../../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
-* [Exercise_160_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
-* [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
-* [Exercise_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+- [Uebung_002a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a3.md)
+- [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
+- [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_035a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
+- [Uebung_035a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
+- [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+- [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Exercise_035a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+- [Exercise_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Exercise_089](../../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
+- [Exercise_160_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
+- [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Exercise_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
 ## Conclusion
 

@@ -2,9 +2,9 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 <img width="1372" height="473" alt="image" src="https://github.com/user-attachments/assets/29cc86f3-ca17-48a7-8143-0a020e5cabcb" />
 
@@ -19,19 +19,19 @@ Der Funktionsblock `BOOLS_TO_QUARTERS` ist ein zusammengesetzter Baustein (Compo
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Normal Execution Request):** Startet die Verarbeitungskette. Bei einem eingehenden REQ-Ereignis werden alle mitgeführten Daten-Eingänge (`I_00` bis `I_15`) eingelesen und die Konvertierung initiiert.
+-   **REQ (Normal Execution Request):** Startet die Verarbeitungskette. Bei einem eingehenden REQ-Ereignis werden alle mitgeführten Daten-Eingänge (`I_00` bis `I_15`) eingelesen und die Konvertierung initiiert.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Execution Confirmation):** Dieses Ereignis wird ausgegeben, nachdem alle 16 internen Konvertierungen abgeschlossen sind. Es bestätigt die Beendigung der Operation und liefert die berechneten Quarter-Byte-Werte (`QB_00` bis `QB_15`) an die nachgelagerte Applikation.
+-   **CNF (Execution Confirmation):** Dieses Ereignis wird ausgegeben, nachdem alle 16 internen Konvertierungen abgeschlossen sind. Es bestätigt die Beendigung der Operation und liefert die berechneten Quarter-Byte-Werte (`QB_00` bis `QB_15`) an die nachgelagerte Applikation.
 
 ### **Daten-Eingänge**
 
-*   **I_00 bis I_15 (BOOL Input):** 16 unabhängige boolesche Eingänge (`BOOL`). Jeder repräsentiert einen binären Schaltzustand (TRUE/FALSE). Der Initialwert aller Eingänge ist `FALSE`.
+-   **I_00 bis I_15 (BOOL Input):** 16 unabhängige boolesche Eingänge (`BOOL`). Jeder repräsentiert einen binären Schaltzustand (TRUE/FALSE). Der Initialwert aller Eingänge ist `FALSE`.
 
 ### **Daten-Ausgänge**
 
-*   **QB_00 bis QB_15 (2bit (quarter Byte) Output):** 16 Ausgänge vom Typ `BYTE`. Jeder Ausgang kodiert das Ergebnis der Konvertierung des entsprechenden booleschen Eingangs in ein Quarter-Byte. Ein Quarter-Byte nutzt nur die unteren zwei Bits eines Bytes und kann theoretisch vier Zustände darstellen. In dieser Implementierung werden primär zwei Zustände genutzt, die durch die Konstanten `quarter::COMMAND_DISABLE` und ihr Gegenstück definiert sind. Der Initialwert aller Ausgänge ist `quarter::COMMAND_DISABLE`.
+-   **QB_00 bis QB_15 (2bit (quarter Byte) Output):** 16 Ausgänge vom Typ `BYTE`. Jeder Ausgang kodiert das Ergebnis der Konvertierung des entsprechenden booleschen Eingangs in ein Quarter-Byte. Ein Quarter-Byte nutzt nur die unteren zwei Bits eines Bytes und kann theoretisch vier Zustände darstellen. In dieser Implementierung werden primär zwei Zustände genutzt, die durch die Konstanten `quarter::COMMAND_DISABLE` und ihr Gegenstück definiert sind. Der Initialwert aller Ausgänge ist `quarter::COMMAND_DISABLE`.
 
 ### **Adapter**
 
@@ -53,9 +53,9 @@ Die Datenpfade sind parallel organisiert: Jeder boolesche Eingang `I_xx` ist dir
 
 ## Technische Besonderheiten
 
-*   **Serielle Ausführung:** Die 16 Konvertierungen werden nacheinander, nicht parallel, ausgeführt. Dies führt zu einer definierten, aber nicht gleichzeitigen Aktualisierung der Ausgänge. Die Gesamtzykluszeit ist die Summe der Ausführungszeiten aller 16 internen Blöcke.
-*   **Konstanten-Nutzung:** Die Initialwerte und die konkreten Ausgabewerte der Konvertierung basieren auf vordefinierten Konstanten aus dem `quarter`-Namespace (z.B. `quarter::COMMAND_DISABLE`). Die genaue Semantik der möglichen Quarter-Byte-Zustände (z.B. `COMMAND_DISABLE` vs. `COMMAND_ENABLE`) muss der Dokumentation des zugrundeliegenden `BOOL_TO_QUARTER`-Blocks oder der `quarter`-Bibliothek entnommen werden.
-*   **Komposite Struktur:** Der Block dient primär der Bündelung und Vereinfachung der Verdrahtung in übergeordneten Applikationen. Die eigentliche Logik liegt in den eingebetteten `BOOL_TO_QUARTER`-Funktionsblöcken.
+-   **Serielle Ausführung:** Die 16 Konvertierungen werden nacheinander, nicht parallel, ausgeführt. Dies führt zu einer definierten, aber nicht gleichzeitigen Aktualisierung der Ausgänge. Die Gesamtzykluszeit ist die Summe der Ausführungszeiten aller 16 internen Blöcke.
+-   **Konstanten-Nutzung:** Die Initialwerte und die konkreten Ausgabewerte der Konvertierung basieren auf vordefinierten Konstanten aus dem `quarter`-Namespace (z.B. `quarter::COMMAND_DISABLE`). Die genaue Semantik der möglichen Quarter-Byte-Zustände (z.B. `COMMAND_DISABLE` vs. `COMMAND_ENABLE`) muss der Dokumentation des zugrundeliegenden `BOOL_TO_QUARTER`-Blocks oder der `quarter`-Bibliothek entnommen werden.
+-   **Komposite Struktur:** Der Block dient primär der Bündelung und Vereinfachung der Verdrahtung in übergeordneten Applikationen. Die eigentliche Logik liegt in den eingebetteten `BOOL_TO_QUARTER`-Funktionsblöcken.
 
 ## Zustandsübersicht
 
@@ -66,18 +66,18 @@ Als Composite FB ohne eigene, explizite Zustandsmaschine besitzt `BOOLS_TO_QUART
 
 ## Anwendungsszenarien
 
-*   **Ansteuerung von kompakten Mehrwert-Aktoren:** Bei Aktoren oder Treibern, die Steuerbefehle nicht als einfache Ein-/Aus-Signale, sondern als 2-Bit-Kommandos (z.B. Ein/Aus/Fehlerreset/Notstop) erwarten.
-*   **Datenkomprimierung für Bus-Kommunikation:** Vor der Übertragung über Feldbusse, wo viele binäre Signale in ein platzsparendes Byte- oder Wort-orientiertes Protokoll gepackt werden müssen.
-*   **Schnittstelle zu Legacy-Systemen:** Als Adapter zwischen modernen IEC 61499-Steuerungen und älteren Systemen, die Daten in einem speziellen Quarter-Byte-Format erwarten oder liefern.
+-   **Ansteuerung von kompakten Mehrwert-Aktoren:** Bei Aktoren oder Treibern, die Steuerbefehle nicht als einfache Ein-/Aus-Signale, sondern als 2-Bit-Kommandos (z.B. Ein/Aus/Fehlerreset/Notstop) erwarten.
+-   **Datenkomprimierung für Bus-Kommunikation:** Vor der Übertragung über Feldbusse, wo viele binäre Signale in ein platzsparendes Byte- oder Wort-orientiertes Protokoll gepackt werden müssen.
+-   **Schnittstelle zu Legacy-Systemen:** Als Adapter zwischen modernen IEC 61499-Steuerungen und älteren Systemen, die Daten in einem speziellen Quarter-Byte-Format erwarten oder liefern.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Gegenüber `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` ist im Wesentlichen ein Array aus 16 `BOOL_TO_QUARTER`-Blöcken mit einer fest verdrahteten seriellen Ereigniskette. Während `BOOL_TO_QUARTER` eine einzelne Konvertierung durchführt, aggregiert `BOOLS_TO_QUARTERS` viele solcher Konvertierungen in einem wiederverwendbaren Baustein.
-*   **Gegenüber generischen Pack-Blöcken (z.B. `BOOLx_TO_BYTE`):** Blöcke wie `BOOL8_TO_BYTE` packen mehrere BOOL-Werte in die Bits eines einzelnen BYTEs. `BOOLS_TO_QUARTERS` hingegen erzeugt für jeden Eingang ein eigenes (wenn auch nur teilweise genutztes) BYTE. Es findet keine Bit-Packung in ein gemeinsames Byte statt, sondern eine 1:1-Abbildung auf ein spezielles Kodierungsformat.
+-   **Gegenüber `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` ist im Wesentlichen ein Array aus 16 `BOOL_TO_QUARTER`-Blöcken mit einer fest verdrahteten seriellen Ereigniskette. Während `BOOL_TO_QUARTER` eine einzelne Konvertierung durchführt, aggregiert `BOOLS_TO_QUARTERS` viele solcher Konvertierungen in einem wiederverwendbaren Baustein.
+-   **Gegenüber generischen Pack-Blöcken (z.B. `BOOLx_TO_BYTE`):** Blöcke wie `BOOL8_TO_BYTE` packen mehrere BOOL-Werte in die Bits eines einzelnen BYTEs. `BOOLS_TO_QUARTERS` hingegen erzeugt für jeden Eingang ein eigenes (wenn auch nur teilweise genutztes) BYTE. Es findet keine Bit-Packung in ein gemeinsames Byte statt, sondern eine 1:1-Abbildung auf ein spezielles Kodierungsformat.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 

@@ -41,7 +41,7 @@ The inputs are logically ORed and forwarded without delay.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a2_3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_3.md)
+- [Exercise_004a2_3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_3.md)
 
 ## Conclusion
 
@@ -51,4 +51,4 @@ The `E_MERGE_3` is a simple yet useful building block for linking up to three ev
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

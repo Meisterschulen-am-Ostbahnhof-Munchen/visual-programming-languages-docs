@@ -15,9 +15,9 @@ The objective is to model a complex I/O structure. It demonstrates how informati
 
 ![Uebung_002a5b_network](./Uebung_002a5b_network.svg)
 
-* **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They monitor the hardware inputs `Input_I1`, `Input_I2`, and `Input_I3`[cite: 1].
-* **`OR_3_BOOL`**: An instance of type `OR_3_BOOL` (from the IEC 61131 library). This function block performs an OR operation on three Boolean inputs. It responds to `REQ` and acknowledges with `CNF`.
-* **`DigitalOutput_Q1` to `Q3`**: Three instances of type `logiBUS_QX`. They control the physical outputs `Output_Q1`, `Output_Q2`, and `Output_Q3`.
+- **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They monitor the hardware inputs `Input_I1`, `Input_I2`, and `Input_I3`[cite: 1].
+- **`OR_3_BOOL`**: An instance of type `OR_3_BOOL` (from the IEC 61131 library). This function block performs an OR operation on three Boolean inputs. It responds to `REQ` and acknowledges with `CNF`.
+- **`DigitalOutput_Q1` to `Q3`**: Three instances of type `logiBUS_QX`. They control the physical outputs `Output_Q1`, `Output_Q2`, and `Output_Q3`.
 
 -----
 

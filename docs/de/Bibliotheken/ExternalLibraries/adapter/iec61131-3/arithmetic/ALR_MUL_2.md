@@ -30,15 +30,15 @@ Der Funktionsbaustein `ALR_MUL_2` ist ein generischer, arithmetischer Baustein, 
 
 Der Baustein kommuniziert ausschließlich über Adapter-Verbindungen des Typs `ALR` (unidirektional):
 
-*   **IN1 (Socket / Buchse)**:
-    *   **Typ**: `adapter::types::unidirectional::ALR`
-    *   **Beschreibung**: Erster Eingang (Multiplikand 1) für die Multiplikation.
-*   **IN2 (Socket / Buchse)**:
-    *   **Typ**: `adapter::types::unidirectional::ALR`
-    *   **Beschreibung**: Zweiter Eingang (Multiplikand 2) für die Multiplikation.
-*   **OUT (Plug / Stecker)**:
-    *   **Typ**: `adapter::types::unidirectional::ALR`
-    *   **Beschreibung**: Ausgang für das berechnete Multiplikationsergebnis.
+-   **IN1 (Socket / Buchse)**:
+    -   **Typ**: `adapter::types::unidirectional::ALR`
+    -   **Beschreibung**: Erster Eingang (Multiplikand 1) für die Multiplikation.
+-   **IN2 (Socket / Buchse)**:
+    -   **Typ**: `adapter::types::unidirectional::ALR`
+    -   **Beschreibung**: Zweiter Eingang (Multiplikand 2) für die Multiplikation.
+-   **OUT (Plug / Stecker)**:
+    -   **Typ**: `adapter::types::unidirectional::ALR`
+    -   **Beschreibung**: Ausgang für das berechnete Multiplikationsergebnis.
 
 ---
 
@@ -48,7 +48,7 @@ Der Baustein `ALR_MUL_2` führt eine mathematische Multiplikation nach folgendem
 
 $$\text{OUT} = \text{IN1} \times \text{IN2}$$
 
-Sobald an den Eingangs-Adaptern `IN1` und/oder `IN2` ein neues Ereignis signalisiert wird, das auf die Aktualisierung der Daten hinweist, nimmt der Baustein die entsprechenden Werte entgegen, multipliziert sie und gibt das Ergebnis sowie ein entsprechendes Aktualisierungsereignis über den Ausgangs-Adapter `OUT` weiter. 
+Sobald an den Eingangs-Adaptern `IN1` und/oder `IN2` ein neues Ereignis signalisiert wird, das auf die Aktualisierung der Daten hinweist, nimmt der Baustein die entsprechenden Werte entgegen, multipliziert sie und gibt das Ergebnis sowie ein entsprechendes Aktualisierungsereignis über den Ausgangs-Adapter `OUT` weiter.
 
 Da es sich um einen generischen Baustein (`GEN_ALR_MUL`) handelt, passt sich die zugrundeliegende Berechnung an den im Adapter definierten Datentyp an.
 
@@ -56,9 +56,9 @@ Da es sich um einen generischen Baustein (`GEN_ALR_MUL`) handelt, passt sich die
 
 ## Technische Besonderheiten
 
-*   **Generische Implementierung**: Der Baustein ist als `GEN_ALR_MUL` klassifiziert. Dies erlaubt eine flexible Nutzung mit verschiedenen numerischen Datentypen, die durch das Adapterprofil `ALR` definiert sind.
-*   **Kapselung durch Adapter**: Durch die Verwendung von unidirektionalen Adaptern wird der Kontrollfluss (Events) direkt mit dem Datenfluss (Values) verknüpft. Dies verhindert Synchronisationsfehler zwischen Daten und Ereignissen.
-*   **Compiler-Paket**: Der Baustein ist im Paket `adapter::iec61131::arithmetic` deklariert und nutzt die Kernbibliothek `eclipse4diac::core::GenericClassName`.
+-   **Generische Implementierung**: Der Baustein ist als `GEN_ALR_MUL` klassifiziert. Dies erlaubt eine flexible Nutzung mit verschiedenen numerischen Datentypen, die durch das Adapterprofil `ALR` definiert sind.
+-   **Kapselung durch Adapter**: Durch die Verwendung von unidirektionalen Adaptern wird der Kontrollfluss (Events) direkt mit dem Datenfluss (Values) verknüpft. Dies verhindert Synchronisationsfehler zwischen Daten und Ereignissen.
+-   **Compiler-Paket**: Der Baustein ist im Paket `adapter::iec61131::arithmetic` deklariert und nutzt die Kernbibliothek `eclipse4diac::core::GenericClassName`.
 
 ---
 
@@ -74,16 +74,16 @@ Der Baustein verhält sich wie ein klassischer, zustandsloser (bzw. rein funktio
 
 ## Anwendungsszenarien
 
-*   **Signalverarbeitung in verteilten Systemen**: Wenn Sensorwerte bereits als Adapterstrukturen vorliegen und skaliert oder miteinander verrechnet werden müssen (z. B. Berechnung von Leistung aus Strom und Spannung).
-*   **Modularer Steuerungsentwurf**: Reduzierung von Linienkreuzungen im Funktionsplan von 4diac-Anwendungen durch den Einsatz von Adaptern anstelle von getrennten Event- und Datenleitungen.
-*   **Kaskadierte Berechnungen**: Einfache Verkettung mehrerer mathematischer Operationen ohne zusätzlichen Overhead für die Event-Verdrahtung.
+-   **Signalverarbeitung in verteilten Systemen**: Wenn Sensorwerte bereits als Adapterstrukturen vorliegen und skaliert oder miteinander verrechnet werden müssen (z. B. Berechnung von Leistung aus Strom und Spannung).
+-   **Modularer Steuerungsentwurf**: Reduzierung von Linienkreuzungen im Funktionsplan von 4diac-Anwendungen durch den Einsatz von Adaptern anstelle von getrennten Event- und Datenleitungen.
+-   **Kaskadierte Berechnungen**: Einfache Verkettung mehrerer mathematischer Operationen ohne zusätzlichen Overhead für die Event-Verdrahtung.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard `MUL` Baustein (IEC 61131-3)**: Der klassische `MUL`-Baustein nutzt separate Event-Eingänge (z.B. `REQ`) und Daten-Eingänge (z.B. `IN1`, `IN2` als REAL/INT). `ALR_MUL_2` vereinfacht dies, indem er diese Kanäle in Adaptern bündelt.
-*   **ALR_ADD_2 / ALR_SUB_2**: Diese Bausteine arbeiten nach demselben Adapter-Prinzip, führen jedoch Additionen oder Subtraktionen anstelle einer Multiplikation aus.
+-   **Standard `MUL` Baustein (IEC 61131-3)**: Der klassische `MUL`-Baustein nutzt separate Event-Eingänge (z.B. `REQ`) und Daten-Eingänge (z.B. `IN1`, `IN2` als REAL/INT). `ALR_MUL_2` vereinfacht dies, indem er diese Kanäle in Adaptern bündelt.
+-   **ALR_ADD_2 / ALR_SUB_2**: Diese Bausteine arbeiten nach demselben Adapter-Prinzip, führen jedoch Additionen oder Subtraktionen anstelle einer Multiplikation aus.
 
 ---
 

@@ -19,8 +19,8 @@ The main objective is to avoid redundant code. -----
 
 [cite_start]This component encapsulates the basic logic of signal routing[cite: 2]. It has two parameters for hardware assignment:
 
-* **`Input`**: Determines the physical input (e.g., `Input_I1`).
-* **`Output`**: Determines the physical output (e.g., `Output_Q1`).
+- **`Input`**: Determines the physical input (e.g., `Input_I1`).
+- **`Output`**: Determines the physical output (e.g., `Output_Q1`).
 
 Inside the type are a `logiBUS_IX` and a `logiBUS_QX` block, which are permanently connected via an event and a data connection.
 
@@ -28,8 +28,8 @@ Inside the type are a `logiBUS_IX` and a `logiBUS_QX` block, which are permanent
 
 Two instances of this type are placed in `Uebung_003a`:
 
-* **`F1`**: [cite_start]Parameterized for the path `I1` to `Q1`[cite: 1].
-* **`F2`**: [cite_start]Parameterized for the path `I2` to `Q2`[cite: 1].
+- **`F1`**: [cite_start]Parameterized for the path `I1` to `Q1`[cite: 1].
+- **`F2`**: [cite_start]Parameterized for the path `I2` to `Q2`[cite: 1].
 
 -----
 

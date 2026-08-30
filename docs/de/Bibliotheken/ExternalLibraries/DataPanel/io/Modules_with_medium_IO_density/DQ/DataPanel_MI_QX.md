@@ -77,8 +77,8 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_MI_QX erwei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
-* [Uebung_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)
+- [Uebung_003b2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
+- [Uebung_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)
 
 ## Fazit
 

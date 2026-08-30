@@ -6,7 +6,7 @@ This article describes the logiBUS® exercise `Uebung_005`. It demonstrates how 
 
 ![Uebung_005_network](./Uebung_005_network.svg)
 
-* [Automation Decoded: Control, Control, Regulate – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
+- [Automation Decoded: Control, Control, Regulate – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----
 
@@ -22,9 +22,9 @@ Understanding edge detection using event switches. This section demonstrates how
 
 ### Function Blocks (FBs)
 
-* **`DigitalInput_I1`**: Type `logiBUS_IX`. Provides an event on each level change (press and release).
-* **`E_SWITCH`**: Serves as a gate to allow only one of the two edges to pass.
-* **`E_T_FF`**: The Toggle Flip-Flop.
+- **`DigitalInput_I1`**: Type `logiBUS_IX`. Provides an event on each level change (press and release).
+- **`E_SWITCH`**: Serves as a gate to allow only one of the two edges to pass.
+- **`E_T_FF`**: The Toggle Flip-Flop.
 
 -----
 

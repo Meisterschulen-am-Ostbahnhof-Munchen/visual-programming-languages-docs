@@ -20,11 +20,11 @@ Optimierung der Bedienlogik aus Übung 040. Es wird gezeigt, wie man durch die K
 
 ![Uebung_041_network](./Uebung_041_network.svg)
 
-  * **`I1` (Start)**: Setzt die Sequenz auf den ersten Schritt.
-  * **`I2` (Step)**: Der einzige Taster zum Weiterschalten.
-  * **`E_CTU_0`**: Zählt die Klicks auf `I2`.
-  * **`E_DEMUX_0`**: Leitet das Klick-Ereignis basierend auf dem Zählerstand an den passenden Transitions-Eingang der Schrittkette weiter.
-  * **`I4` (Reset)**: Löscht sowohl die Schrittkette als auch den Zähler.
+  - **`I1` (Start)**: Setzt die Sequenz auf den ersten Schritt.
+  - **`I2` (Step)**: Der einzige Taster zum Weiterschalten.
+  - **`E_CTU_0`**: Zählt die Klicks auf `I2`.
+  - **`E_DEMUX_0`**: Leitet das Klick-Ereignis basierend auf dem Zählerstand an den passenden Transitions-Eingang der Schrittkette weiter.
+  - **`I4` (Reset)**: Löscht sowohl die Schrittkette als auch den Zähler.
 
 -----
 
@@ -48,4 +48,4 @@ Ein einziger Knopf am Joystick dient zum Durchblättern von 8 verschiedenen Betr
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

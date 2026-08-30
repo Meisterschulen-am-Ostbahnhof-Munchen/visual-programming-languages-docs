@@ -50,19 +50,19 @@ Since the block is defined as a generic function block (`GEN_AI_MUL`), it can pr
 
 As soon as an update event is received via the input adapters (`IN1` and/or `IN2`), the function block performs the multiplication internally and signals the update of the result via the output adapter `OUT`.
 
-* **Generic Implementation:** The function block uses the class `GEN_AI_MUL`. This allows for high flexibility, as the specific data type is only determined when used in the system.
-* **Unidirectional Adapters:** The interfaces use the type `adapter::types::unidirectional::AI`. This means that the information flow is strictly unidirectional, which increases system stability and performance.
-* **Encapsulation:** The absence of individual signal pins keeps the application diagram clear and uncluttered, even with many mathematical operations.
-* ## State Overview
+- **Generic Implementation:** The function block uses the class `GEN_AI_MUL`. This allows for high flexibility, as the specific data type is only determined when used in the system.
+- **Unidirectional Adapters:** The interfaces use the type `adapter::types::unidirectional::AI`. This means that the information flow is strictly unidirectional, which increases system stability and performance.
+- **Encapsulation:** The absence of individual signal pins keeps the application diagram clear and uncluttered, even with many mathematical operations.
+- ## State Overview
 
 The module essentially behaves in a stateless manner (exhibiting analog characteristics):
 
-* **Initialization / Idle State:** The module waits for incoming values via the adapters `IN1` and `IN2`.
-* **Calculation:** Upon arrival of a new value or trigger signal at the sockets, the product is recalculated.
-* **Output:** The result is immediately passed to the plug `OUT`, triggering a corresponding output event in the adapter.
-* **Scaling of Sensor Values:** Multiplication of a raw analog value (e.g., from a 4–20 mA current input) by a scaling factor to convert it into a physical quantity.
-* **Scaling of Sensor Values:** * **Calculation of physical quantities:** Calculation of power ($P = U \times I$) from measured voltage and current, provided these are supplied via appropriate adapter structures.
-* **Amplifiers in control loops:** Use as a proportional gain factor (P-element) in software-based control.
+- **Initialization / Idle State:** The module waits for incoming values via the adapters `IN1` and `IN2`.
+- **Calculation:** Upon arrival of a new value or trigger signal at the sockets, the product is recalculated.
+- **Output:** The result is immediately passed to the plug `OUT`, triggering a corresponding output event in the adapter.
+- **Scaling of Sensor Values:** Multiplication of a raw analog value (e.g., from a 4–20 mA current input) by a scaling factor to convert it into a physical quantity.
+- **Scaling of Sensor Values:** * **Calculation of physical quantities:** Calculation of power ($P = U \times I$) from measured voltage and current, provided these are supplied via appropriate adapter structures.
+- **Amplifiers in control loops:** Use as a proportional gain factor (P-element) in software-based control.
 
 Compared to the standard IEC 61131-3 component `MUL`, the `AI_MUL_2` eliminates the need for manual wiring of trigger events (as with `REQ` and `CNF`) and individual data pins. While a classic `MUL` block requires separate lines for data and events for each connection, the `AI_MUL_2` bundles these using the `AI` adapters. This is particularly suitable for advanced, object-oriented, or modularized software architectures in 4diac.
 

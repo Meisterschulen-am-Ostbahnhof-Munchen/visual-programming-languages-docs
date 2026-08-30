@@ -78,12 +78,12 @@ Im Vergleich zu anderen logischen Verknüpfungsblöcken:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
-* [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
-* [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Uebung_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
+- [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+- [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Fazit
 

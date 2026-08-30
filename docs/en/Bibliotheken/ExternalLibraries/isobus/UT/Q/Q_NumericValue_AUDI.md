@@ -56,5 +56,5 @@ The function block is initialized via the `INIT` event with the object ID `u16Ob
 
 ## 🛠️ Related exercises
 
-* [Exercise_009_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Exercise_083_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
+- [Exercise_009_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Exercise_083_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)

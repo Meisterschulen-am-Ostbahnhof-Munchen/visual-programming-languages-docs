@@ -74,7 +74,7 @@ Compared to simple scaling function blocks, SCALE_LIM additionally offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_043](../../../Uebungen/test_B/Uebungen_doc/Uebung_043.md)
+- [Exercise_043](../../../Uebungen/test_B/Uebungen_doc/Uebung_043.md)
 
 ## Conclusion
 
@@ -84,4 +84,4 @@ SCALE_LIM is a versatile function block for applications that require both scali
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

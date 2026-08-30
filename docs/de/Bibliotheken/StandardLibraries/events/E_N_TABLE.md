@@ -62,7 +62,7 @@ Der `E_N_TABLE` (Event N-Table) ist ein Funktionsbaustein nach IEC 61499, der ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_093b](../../../Uebungen/test_B/Uebungen_doc/Uebung_093b.md)
+- [Uebung_093b](../../../Uebungen/test_B/Uebungen_doc/Uebung_093b.md)
 
 ## Fazit
 

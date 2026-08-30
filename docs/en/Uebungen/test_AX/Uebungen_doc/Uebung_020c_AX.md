@@ -17,8 +17,8 @@ To become familiar with the timer block `AX_TON`.
 
 ![Uebung_020c_AX_network](./Uebung_020c_AX_network.svg)
 
-* **`AX_TON`**: Timer On-Delay.
-* **Parameter `PT`**: Preset Time (here 5 seconds).
+- **`AX_TON`**: Timer On-Delay.
+- **Parameter `PT`**: Preset Time (here 5 seconds).
 
 -----
 

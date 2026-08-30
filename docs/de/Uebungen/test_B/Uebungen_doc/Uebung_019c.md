@@ -20,9 +20,9 @@ Implementierung einer bedingten Navigationssteuerung. Der Wechsel der Bildschirm
 
 ![Uebung_019c_network](./Uebung_019c_network.svg)
 
-  * **`Alarmeingang`**: Ein physischer Sensor (`I3`). Solange dieser `TRUE` ist, herrscht Alarmzustand.
-  * **`E_SWITCH` (diverse)**: Prüfen vor jeder Aktion, ob der Alarmeingang aktiv ist.
-  * **`ACK`**: Ein physischer Quittier-Taster (`I4`) anstelle eines Softkeys.
+  - **`Alarmeingang`**: Ein physischer Sensor (`I3`). Solange dieser `TRUE` ist, herrscht Alarmzustand.
+  - **`E_SWITCH` (diverse)**: Prüfen vor jeder Aktion, ob der Alarmeingang aktiv ist.
+  - **`ACK`**: Ein physischer Quittier-Taster (`I4`) anstelle eines Softkeys.
 
 -----
 
@@ -32,8 +32,8 @@ Die Weichen blockieren die normalen Navigations-Befehle:
 
 1.  Drückt der Nutzer `I1` (Maske 1), geht das Event zuerst an einen `E_SWITCH`.
 2.  Die Weiche prüft den `Alarmeingang`.
-    *   Ist **kein** Alarm vorhanden (`G=FALSE`), wird das Event zu `EO0` ➡️ `F_SEL_E_4` durchgelassen. Die Seite wechselt.
-    *   Ist ein Alarm aktiv (`G=TRUE`), landet das Event bei `EO1` (nicht verbunden). Der Seitenwechsel wird **ignoriert**.
+    -   Ist **kein** Alarm vorhanden (`G=FALSE`), wird das Event zu `EO0` ➡️ `F_SEL_E_4` durchgelassen. Die Seite wechselt.
+    -   Ist ein Alarm aktiv (`G=TRUE`), landet das Event bei `EO1` (nicht verbunden). Der Seitenwechsel wird **ignoriert**.
 3.  Tritt ein Alarm ein, schaltet das System sofort auf die Alarmmaske und aktiviert die Hupe.
 4.  Erst wenn der Alarm-Sensor (`I3`) wieder FALSE ist **UND** der Nutzer den Quittier-Taster (`I4`) drückt, wird der Speicher zurückgesetzt und die Navigation wieder freigegeben.
 

@@ -17,9 +17,9 @@ Encapsulation of the output logic. The function block separates the execution lo
 
 ![Uebung_026_sub_network](./Uebung_026_sub_network.svg)
 
-* **`E_SR`**: Stores whether the actuator should currently be active.
-* **`QX`**: Type `logiBUS_QX`. Controls the physical port.
-* **`E_SWITCH`**: Serves as a feedback gate. [cite_start]Only if the memory is actually set to TRUE is the confirmation event passed on at output `EO1`[cite: 1].
+- **`E_SR`**: Stores whether the actuator should currently be active.
+- **`QX`**: Type `logiBUS_QX`. Controls the physical port.
+- **`E_SWITCH`**: Serves as a feedback gate. [cite_start]Only if the memory is actually set to TRUE is the confirmation event passed on at output `EO1`[cite: 1].
 
 -----
 
@@ -27,12 +27,12 @@ Encapsulation of the output logic. The function block separates the execution lo
 
 [cite_start]The block offers a clear event interface[cite: 1]:
 
-* **`SET`**: Switches the actuator on.
-* **`RESET`**: Switches the actuator off.
-* **`EO1`**: Reports successful execution of the power-on command (acknowledgment).
+- **`SET`**: Switches the actuator on.
+- **`RESET`**: Switches the actuator off.
+- **`EO1`**: Reports successful execution of the power-on command (acknowledgment).
 
 In the main application, this type allows for very clear wiring of the phase transitions, as the details of memory management and hardware addressing remain hidden internally.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_026](Uebung_026.md)
+- [Exercise_026](Uebung_026.md)

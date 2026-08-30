@@ -22,9 +22,9 @@ Folgende Bausteine werden verwendet:
 
 ![Uebung_002a_AX_network](./Uebung_002a_AX_network.svg)
 
-  * **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese repräsentieren die beiden Hardware-Eingänge, die überwacht werden[cite: 1].
-  * **`AX_AND_2`**: Eine Instanz des Typs `AX_AND_2`. [cite_start]Dieser Baustein führt die logische UND-Operation direkt auf den Adapter-Schnittstellen aus. Er besitzt zwei Adapter-Eingänge (`IN1`, `IN2`) und einen Adapter-Ausgang (`OUT`)[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1` basierend auf dem Ergebnis der Logik[cite: 1].
+  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese repräsentieren die beiden Hardware-Eingänge, die überwacht werden[cite: 1].
+  - **`AX_AND_2`**: Eine Instanz des Typs `AX_AND_2`. [cite_start]Dieser Baustein führt die logische UND-Operation direkt auf den Adapter-Schnittstellen aus. Er besitzt zwei Adapter-Eingänge (`IN1`, `IN2`) und einen Adapter-Ausgang (`OUT`)[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1` basierend auf dem Ergebnis der Logik[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 

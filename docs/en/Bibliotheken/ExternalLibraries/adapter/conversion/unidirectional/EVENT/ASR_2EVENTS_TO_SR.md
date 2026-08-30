@@ -56,7 +56,7 @@ Compared to simple event function blocks, ASR_2EVENTS_TO_SR offers a specific in
 
 ## 🛠️ Related Exercises
 
-* [Exercise_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
+- [Exercise_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Conclusion
 

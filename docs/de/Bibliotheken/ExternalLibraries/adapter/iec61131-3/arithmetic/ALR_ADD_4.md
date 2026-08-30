@@ -30,14 +30,14 @@ Der Funktionsbaustein (FB) **ALR_ADD_4** ist ein generischer arithmetischer Baus
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::ALR`): Erster Eingangswert (Summand 1) für die Addition.
-*   **IN2** (Typ: `adapter::types::unidirectional::ALR`): Zweiter Eingangswert (Summand 2) für die Addition.
-*   **IN3** (Typ: `adapter::types::unidirectional::ALR`): Dritter Eingangswert (Summand 3) für die Addition.
-*   **IN4** (Typ: `adapter::types::unidirectional::ALR`): Vierter Eingangswert (Summand 4) für die Addition.
+-   **IN1** (Typ: `adapter::types::unidirectional::ALR`): Erster Eingangswert (Summand 1) für die Addition.
+-   **IN2** (Typ: `adapter::types::unidirectional::ALR`): Zweiter Eingangswert (Summand 2) für die Addition.
+-   **IN3** (Typ: `adapter::types::unidirectional::ALR`): Dritter Eingangswert (Summand 3) für die Addition.
+-   **IN4** (Typ: `adapter::types::unidirectional::ALR`): Vierter Eingangswert (Summand 4) für die Addition.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das berechnete Ergebnis der Addition (Summe).
+-   **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das berechnete Ergebnis der Addition (Summe).
 
 ## Funktionsweise
 
@@ -49,8 +49,8 @@ Das Ergebnis wird unmittelbar an den Ausgangs-Plug `OUT` übergeben. Da es sich 
 
 ## Technische Besonderheiten
 
-*   **Generische Klasse:** Der Baustein ist über das Attribut `GenericClassName` mit dem Wert `'GEN_ALR_ADD'` verknüpft, was ihm eine hohe Flexibilität bei der Verarbeitung verschiedener kompatibler Datentypen innerhalb der Adapterstrukturen verleiht.
-*   **Adapterbasierte Kopplung:** Durch die ausschließliche Nutzung von Adaptern wird die Anzahl der Verbindungslinien in der 4diac-IDE drastisch reduziert, was zu übersichtlicheren Applikationsdiagrammen führt.
+-   **Generische Klasse:** Der Baustein ist über das Attribut `GenericClassName` mit dem Wert `'GEN_ALR_ADD'` verknüpft, was ihm eine hohe Flexibilität bei der Verarbeitung verschiedener kompatibler Datentypen innerhalb der Adapterstrukturen verleiht.
+-   **Adapterbasierte Kopplung:** Durch die ausschließliche Nutzung von Adaptern wird die Anzahl der Verbindungslinien in der 4diac-IDE drastisch reduziert, was zu übersichtlicheren Applikationsdiagrammen führt.
 
 ## Zustandsübersicht
 
@@ -58,13 +58,13 @@ Da dieser Funktionsbaustein eine rein kombinatorische, mathematische Operation a
 
 ## Anwendungsszenarien
 
-*   **Messwert-Aggregation:** Aufsummierung von bis zu vier Energie-, Durchfluss- oder Leistungswerten, die über standardisierte unidirektionale Adapter übertragen werden.
-*   **Signalzusammenführung:** Strukturierte Bündelung von Sensorsignalen in komplexen Steuerungsarchitekturen vor der weiteren Datenverarbeitung.
+-   **Messwert-Aggregation:** Aufsummierung von bis zu vier Energie-, Durchfluss- oder Leistungswerten, die über standardisierte unidirektionale Adapter übertragen werden.
+-   **Signalzusammenführung:** Strukturierte Bündelung von Sensorsignalen in komplexen Steuerungsarchitekturen vor der weiteren Datenverarbeitung.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard-ADD-Baustein:** Ein klassischer IEC 61131-3 `ADD`-Baustein nutzt direkte Dateneingänge (z. B. `REAL`, `INT`) und benötigt oft explizite Event-Verbindungen (`REQ` / `CNF`). `ALR_ADD_4` kapselt diese Daten und Events in Adaptern, was die Projektierung vereinfacht.
-*   **Zwei-Wege-Addierer (z.B. ALR_ADD_2):** Bietet nur zwei Eingänge. `ALR_ADD_4` spart bei der Summierung von drei oder vier Werten das Kaskadieren mehrerer kleinerer Addierer-Bausteine ein.
+-   **Standard-ADD-Baustein:** Ein klassischer IEC 61131-3 `ADD`-Baustein nutzt direkte Dateneingänge (z. B. `REAL`, `INT`) und benötigt oft explizite Event-Verbindungen (`REQ` / `CNF`). `ALR_ADD_4` kapselt diese Daten und Events in Adaptern, was die Projektierung vereinfacht.
+-   **Zwei-Wege-Addierer (z.B. ALR_ADD_2):** Bietet nur zwei Eingänge. `ALR_ADD_4` spart bei der Summierung von drei oder vier Werten das Kaskadieren mehrerer kleinerer Addierer-Bausteine ein.
 
 ## Änderungserkennung
 

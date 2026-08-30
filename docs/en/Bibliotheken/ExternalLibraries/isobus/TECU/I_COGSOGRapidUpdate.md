@@ -10,28 +10,28 @@ The function block `I_COGSOGRapidUpdate` implements the processing of the NMEA 2
 
 ### **Event Inputs**
 
-* **INIT**: Initializes the function block. Triggered together with the qualifier `QI`.
+- **INIT**: Initializes the function block. Triggered together with the qualifier `QI`.
 
 ### **Event Outputs**
 
-* **INITO**: Confirms successful initialization. Triggers the outputs `QO` and `STATUS`.
-* **IND**: Indicates successful reception and processing of new COG/SOG data. Triggers the corresponding data outputs.
-* **TIMEOUT**: Triggered if a timeout occurs during data reception.
+- **INITO**: Confirms successful initialization. Triggers the outputs `QO` and `STATUS`.
+- **IND**: Indicates successful reception and processing of new COG/SOG data. Triggers the corresponding data outputs.
+- **TIMEOUT**: Triggered if a timeout occurs during data reception.
 
 ### **Data Inputs**
 
-* **QI** (BOOL): Qualifier for the INIT event input. Controls the initialization (`TRUE` = start).
+- **QI** (BOOL): Qualifier for the INIT event input. Controls the initialization (`TRUE` = start).
 
 ### **Data Outputs**
 
-* **QO** (BOOL): Qualifier for the INITO and IND event outputs. Indicates the general operating status.
-* **STATUS** (STRING): Status message providing additional information (e.g., error descriptions).
-* **Q_timeout** (BOOL): Indicates whether the last received event was a timeout (`TRUE`) or valid data (`FALSE`).
-* **timestamp_timeout** (DINT): Timestamp associated with the TIMEOUT event.
-* **timestamp_data** (DINT): Timestamp of the last received valid COG/SOG data.
-* **SID** (USINT): Sequence identifier. Enables synchronization of this data with other PGNs sent by the vessel in the same cycle.
-* **COGReference** (BYTE): Reference direction for the course over ground. The value `0` represents the "True North" reference. * **CourseOverGround** (UINT): Course over ground (COG). The unit is 1x10 radians.
-* **SpeedOverGround** (UINT): Speed over ground (SOG). The unit is 1x10 meters per second.
+- **QO** (BOOL): Qualifier for the INITO and IND event outputs. Indicates the general operating status.
+- **STATUS** (STRING): Status message providing additional information (e.g., error descriptions).
+- **Q_timeout** (BOOL): Indicates whether the last received event was a timeout (`TRUE`) or valid data (`FALSE`).
+- **timestamp_timeout** (DINT): Timestamp associated with the TIMEOUT event.
+- **timestamp_data** (DINT): Timestamp of the last received valid COG/SOG data.
+- **SID** (USINT): Sequence identifier. Enables synchronization of this data with other PGNs sent by the vessel in the same cycle.
+- **COGReference** (BYTE): Reference direction for the course over ground. The value `0` represents the "True North" reference. * **CourseOverGround** (UINT): Course over ground (COG). The unit is 1x10 radians.
+- **SpeedOverGround** (UINT): Speed over ground (SOG). The unit is 1x10 meters per second.
 
 ### **Adapter**
 
@@ -44,9 +44,9 @@ The block acts as a passive receiver for the NMEA 2000 PGN 129026. After initial
 STATUS`
 ## Technical Features
 
-* **NMEA 2000 Compliance**: Implements the specification for PGN 129026 exactly.
-* **Resolution**: The physical values for heading and speed are encoded in the fixed resolutions defined in the NMEA standard (COG: 0.0001 rad/LSB, SOG: 0.01 m/s/LSB). Conversion to more common units (degrees, knots) must be performed in subsequent blocks, if necessary.
-* **Sequencing**: The `SID` supports the correlation of data sent simultaneously in different PGNs.
+- **NMEA 2000 Compliance**: Implements the specification for PGN 129026 exactly.
+- **Resolution**: The physical values for heading and speed are encoded in the fixed resolutions defined in the NMEA standard (COG: 0.0001 rad/LSB, SOG: 0.01 m/s/LSB). Conversion to more common units (degrees, knots) must be performed in subsequent blocks, if necessary.
+- **Sequencing**: The `SID` supports the correlation of data sent simultaneously in different PGNs.
 
 ## Status Overview
 
@@ -57,19 +57,19 @@ STATUS`
 
 ## Application Scenarios
 
-* **Maritime Navigation**: Displays current heading and speed on a multifunction display (MFD).
-* **Autonomous Control**: Provides basic navigation data for autopilots or routing algorithms of construction machinery.
-* **Data Logging**: Logs vehicle movement data with high temporal resolution.
-* * **Sensor Fusion**: Combining COG/SOG data with other position and motion sensors (e.g., GNSS, gyroscope) to improve overall accuracy.
+- **Maritime Navigation**: Displays current heading and speed on a multifunction display (MFD).
+- **Autonomous Control**: Provides basic navigation data for autopilots or routing algorithms of construction machinery.
+- **Data Logging**: Logs vehicle movement data with high temporal resolution.
+- * **Sensor Fusion**: Combining COG/SOG data with other position and motion sensors (e.g., GNSS, gyroscope) to improve overall accuracy.
 
 ## ⚖️ Comparison with Similar Components
 
-* **Compared to Generic CAN Receiver Blocks**: `I_COGSOGRapidUpdate` is specialized for PGN 129026. It handles the complete decoding of the raw data according to the NMEA specification and provides the physical values directly. A generic receiver would only deliver the raw bytes.
-* **Compared to PGN 129025 (COG/SOG)**: PGN 129026 is the "Rapid Update" variant, optimized for a higher update rate and lower latency, while PGN 129025 can contain additional fields such as timestamps. The choice of function block depends on the application's requirements for data timeliness and scope.
+- **Compared to Generic CAN Receiver Blocks**: `I_COGSOGRapidUpdate` is specialized for PGN 129026. It handles the complete decoding of the raw data according to the NMEA specification and provides the physical values directly. A generic receiver would only deliver the raw bytes.
+- **Compared to PGN 129025 (COG/SOG)**: PGN 129026 is the "Rapid Update" variant, optimized for a higher update rate and lower latency, while PGN 129025 can contain additional fields such as timestamps. The choice of function block depends on the application's requirements for data timeliness and scope.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

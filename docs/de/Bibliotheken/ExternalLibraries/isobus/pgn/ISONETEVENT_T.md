@@ -11,18 +11,18 @@ Die Struktur `ISONETEVENT_T` besteht aus den folgenden sechs Elementen:
 
 ### **Daten-Elemente**
 
-*   **`eNetEvent`** (Typ: `USINT`, Initialwert: `ISO_NETEVENT_e::Isonet_Last`)
-    *   **Beschreibung:** Gibt an, welches spezifische Ereignis in der Netzwerk-Mitgliederverwaltung aufgetreten ist (z.B. Verbindungsaufbau, -abbruch, Adressänderung).
-*   **`eMemberRefer`** (Typ: `SINT`, Initialwert: `ISOUSERHOME_e::notdef`)
-    *   **Beschreibung:** Identifiziert, welches Netzwerkmitglied von dem Ereignis betroffen ist. Spezifiziert, ob es sich um den Besitzer des Callbacks, eine andere interne oder eine externe Control Function (CF) handelt.
-*   **`s16OwnCfHnd`** (Typ: `INT`)
-    *   **Beschreibung:** Das CF-Handle des Eintrags, für den der Callback ausgelöst wurde. Dies identifiziert die lokale Repräsentation des betroffenen Netzwerkteilnehmers.
-*   **`s16Handle`** (Typ: `INT`)
-    *   **Beschreibung:** Das Netzwerk-Mitglieder-Handle der beteiligten Control Function bzw. des Benutzers. Dies ist das Handle der CF, die das Ereignis verursacht hat (Event Source CF Handle).
-*   **`u8SAMember`** (Typ: `USINT`)
-    *   **Beschreibung:** Die aktuelle Quelladresse (Source Address, SA) des Netzwerkmitglieds zum Zeitpunkt des Ereignisses.
-*   **`cfName`** (Typ: `isobus::pgn::CF_NAME_T`)
-    *   **Beschreibung:** Der ISOBUS-Name der beteiligten Control Function. Dieser Name ist eine eindeutige Identifikation gemäß ISOBUS-Standard.
+-   **`eNetEvent`** (Typ: `USINT`, Initialwert: `ISO_NETEVENT_e::Isonet_Last`)
+    -   **Beschreibung:** Gibt an, welches spezifische Ereignis in der Netzwerk-Mitgliederverwaltung aufgetreten ist (z.B. Verbindungsaufbau, -abbruch, Adressänderung).
+-   **`eMemberRefer`** (Typ: `SINT`, Initialwert: `ISOUSERHOME_e::notdef`)
+    -   **Beschreibung:** Identifiziert, welches Netzwerkmitglied von dem Ereignis betroffen ist. Spezifiziert, ob es sich um den Besitzer des Callbacks, eine andere interne oder eine externe Control Function (CF) handelt.
+-   **`s16OwnCfHnd`** (Typ: `INT`)
+    -   **Beschreibung:** Das CF-Handle des Eintrags, für den der Callback ausgelöst wurde. Dies identifiziert die lokale Repräsentation des betroffenen Netzwerkteilnehmers.
+-   **`s16Handle`** (Typ: `INT`)
+    -   **Beschreibung:** Das Netzwerk-Mitglieder-Handle der beteiligten Control Function bzw. des Benutzers. Dies ist das Handle der CF, die das Ereignis verursacht hat (Event Source CF Handle).
+-   **`u8SAMember`** (Typ: `USINT`)
+    -   **Beschreibung:** Die aktuelle Quelladresse (Source Address, SA) des Netzwerkmitglieds zum Zeitpunkt des Ereignisses.
+-   **`cfName`** (Typ: `isobus::pgn::CF_NAME_T`)
+    -   **Beschreibung:** Der ISOBUS-Name der beteiligten Control Function. Dieser Name ist eine eindeutige Identifikation gemäß ISOBUS-Standard.
 
 ## Funktionsweise
 
@@ -30,19 +30,19 @@ Die Struktur `ISONETEVENT_T` fungiert als ein Container oder Nachrichtenobjekt. 
 
 ## Technische Besonderheiten
 
-*   **Typisierung:** Es handelt sich um einen `StructuredType` innerhalb der 4diac IDE.
-*   **Initialwerte:** Zwei Elemente (`eNetEvent`, `eMemberRefer`) besitzen definierte Initialwerte, die auf enumerierte Typen (`ISO_NETEVENT_e`, `ISOUSERHOME_e`) verweisen. Dies stellt einen definierten Ausgangszustand sicher.
-*   **ISOBUS-Integration:** Die Struktur ist spezifisch für den ISOBUS-Kontext entworfen, was sich in der Verwendung des typspezifischen `CF_NAME_T` und der Parameterbezeichnungen (SA, CF) zeigt.
-*   **Compiler-Paket:** Der Datentyp ist dem Paket `isobus::pgn` zugeordnet, was auf seine Zugehörigkeit zur ISOBUS Parameter Group Number (PGN) Verarbeitung hindeutet.
+-   **Typisierung:** Es handelt sich um einen `StructuredType` innerhalb der 4diac IDE.
+-   **Initialwerte:** Zwei Elemente (`eNetEvent`, `eMemberRefer`) besitzen definierte Initialwerte, die auf enumerierte Typen (`ISO_NETEVENT_e`, `ISOUSERHOME_e`) verweisen. Dies stellt einen definierten Ausgangszustand sicher.
+-   **ISOBUS-Integration:** Die Struktur ist spezifisch für den ISOBUS-Kontext entworfen, was sich in der Verwendung des typspezifischen `CF_NAME_T` und der Parameterbezeichnungen (SA, CF) zeigt.
+-   **Compiler-Paket:** Der Datentyp ist dem Paket `isobus::pgn` zugeordnet, was auf seine Zugehörigkeit zur ISOBUS Parameter Group Number (PGN) Verarbeitung hindeutet.
 
 ## Anwendungsszenarien
 
 Dieser Datentyp wird primär in Szenarien verwendet, in denen eine Applikation über dynamische Änderungen im ISOBUS-Netzwerk informiert werden muss. Beispiele sind:
 
-*   Überwachung des Erscheinens oder Verschwindens von Steuergeräten (ECUs) im Netzwerk.
-*   Reaktion auf Adressänderungen von Netzwerkteilnehmern.
-*   Implementierung von benutzerdefinierter Logik beim Verbindungsaufbau oder -abbau zu einer bestimmten CF.
-*   Protokollierung von Netzwerkaktivitäten für Diagnosezwecke.
+-   Überwachung des Erscheinens oder Verschwindens von Steuergeräten (ECUs) im Netzwerk.
+-   Reaktion auf Adressänderungen von Netzwerkteilnehmern.
+-   Implementierung von benutzerdefinierter Logik beim Verbindungsaufbau oder -abbau zu einer bestimmten CF.
+-   Protokollierung von Netzwerkaktivitäten für Diagnosezwecke.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -56,4 +56,4 @@ Der Datentyp `ISONETEVENT_T` ist ein essentielles Hilfsmittel für die Entwicklu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

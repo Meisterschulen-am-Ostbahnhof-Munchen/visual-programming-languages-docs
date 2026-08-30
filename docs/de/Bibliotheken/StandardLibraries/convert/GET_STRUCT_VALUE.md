@@ -47,9 +47,9 @@ Der `GET_STRUCT_VALUE` Funktionsblock wird durch ein `REQ`-Ereignis aktiviert. B
 
 ## Technische Besonderheiten
 
-*   **Dynamischer Member-Zugriff:** Der Baustein ermöglicht den Zugriff auf Strukturmember über einen `STRING`-Eingang, was eine hohe Flexibilität bei der Datenverarbeitung bietet.
-*   **Verschachtelte Strukturen:** Über den Punkt-Operator (`.`) in der `member`-Zeichenkette können auch Member in verschachtelten Strukturen effizient adressiert werden.
-*   **Typunabhängigkeit:** Die Ein- und Ausgänge `in_struct` und `output` sind vom Typ `ANY`, was bedeutet, dass der Baustein mit beliebigen Datenstrukturen und Member-Datentypen umgehen kann.
+-   **Dynamischer Member-Zugriff:** Der Baustein ermöglicht den Zugriff auf Strukturmember über einen `STRING`-Eingang, was eine hohe Flexibilität bei der Datenverarbeitung bietet.
+-   **Verschachtelte Strukturen:** Über den Punkt-Operator (`.`) in der `member`-Zeichenkette können auch Member in verschachtelten Strukturen effizient adressiert werden.
+-   **Typunabhängigkeit:** Die Ein- und Ausgänge `in_struct` und `output` sind vom Typ `ANY`, was bedeutet, dass der Baustein mit beliebigen Datenstrukturen und Member-Datentypen umgehen kann.
 
 ## Zustandsübersicht
 
@@ -57,10 +57,10 @@ Der `GET_STRUCT_VALUE` ist ein nicht-zustandsbehafteter Service-Baustein, der ei
 
 ## Anwendungsszenarien
 
-*   **Dynamische Konfiguration:** Auslesen von Konfigurationsparametern aus einer zentralen Struktur, wobei die benötigten Parameter zur Laufzeit ermittelt werden.
-*   **Generische Datenverarbeitung:** Entwicklung von generischen Algorithmen oder Logiken, die basierend auf externen Eingaben oder Regeln auf verschiedene Teile einer Datenstruktur zugreifen müssen.
-*   **Protokollierung und Diagnose:** Extrahieren spezifischer Statusinformationen oder Messwerte aus einer komplexen Systemzustandsstruktur für Überwachungs- oder Diagnosezwecke.
-*   **Schnittstellen zu externen Systemen:** Anpassung an Datenformate externer Systeme, bei denen die Feldnamen dynamisch übergeben werden.
+-   **Dynamische Konfiguration:** Auslesen von Konfigurationsparametern aus einer zentralen Struktur, wobei die benötigten Parameter zur Laufzeit ermittelt werden.
+-   **Generische Datenverarbeitung:** Entwicklung von generischen Algorithmen oder Logiken, die basierend auf externen Eingaben oder Regeln auf verschiedene Teile einer Datenstruktur zugreifen müssen.
+-   **Protokollierung und Diagnose:** Extrahieren spezifischer Statusinformationen oder Messwerte aus einer komplexen Systemzustandsstruktur für Überwachungs- oder Diagnosezwecke.
+-   **Schnittstellen zu externen Systemen:** Anpassung an Datenformate externer Systeme, bei denen die Feldnamen dynamisch übergeben werden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -77,7 +77,7 @@ Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktion
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
+- [Uebung_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
 
 ## Fazit
 
@@ -87,4 +87,4 @@ Der `GET_STRUCT_VALUE` Funktionsblock ist ein wertvolles Werkzeug für Entwickle
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

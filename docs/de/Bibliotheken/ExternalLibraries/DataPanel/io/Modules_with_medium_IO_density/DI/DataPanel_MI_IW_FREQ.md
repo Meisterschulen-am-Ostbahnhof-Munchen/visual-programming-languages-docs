@@ -59,7 +59,7 @@ Keine vorhanden.
 3. **Asynchrone Indikation (IND)** – Der FB überwacht den Frequenzeingang kontinuierlich. Eine `IND` wird ausgelöst, wenn:
    - sich der Frequenzwert um mindestens `FreqDelta` [Hz] ändert, oder
    - seit der letzten `IND` die in `TimeDelta` [ms] festgelegte Zeitspanne verstrichen ist.
-  
+
    Dies ermöglicht sowohl schwellwertbasierte als auch zeitgesteuerte Aktualisierungen.
 
 Die Ereignisse `INIT` und `REQ` werden nur ausgeführt, wenn der zugehörige Qualifizierer `QI` den Wert `TRUE` hat. Die Ausgangsqualifizierer `QO` signalisieren die erfolgreiche Durchführung.
@@ -109,4 +109,4 @@ Der **DataPanel_MI_IW_FREQ** ist ein leistungsfähiger und flexibler Service-Int
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

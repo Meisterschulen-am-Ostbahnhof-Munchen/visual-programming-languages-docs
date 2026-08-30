@@ -108,7 +108,7 @@ Anschlag-Übergang.
 
 ## 🛠️ Zugehörige Übungen
 
-* Kein eigenständiges Übungsbeispiel — siehe `Workspace_Scroll/SCROLL_KONZEPT.md` (Projekt
+- Kein eigenständiges Übungsbeispiel — siehe `Workspace_Scroll/SCROLL_KONZEPT.md` (Projekt
   `4diac_training1`).
 
 ## Fazit

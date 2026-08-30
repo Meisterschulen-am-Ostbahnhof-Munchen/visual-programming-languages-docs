@@ -31,12 +31,12 @@ The function block `AUS_ADD_2` is a generic function block (Generic FB) for perf
 
 #### **Sockets (Input Adapters / Jacks)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AUS`): The first addend of the addition.
-* **IN2** (Type: `adapter::types::unidirectional::AUS`): The second addend of the addition.
+- **IN1** (Type: `adapter::types::unidirectional::AUS`): The first addend of the addition.
+- **IN2** (Type: `adapter::types::unidirectional::AUS`): The second addend of the addition.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUS`): The result of the addition (sum of `IN1` and `IN2`).
+- **OUT** (Type: `adapter::types::unidirectional::AUS`): The result of the addition (sum of `IN1` and `IN2`).
 
 ---
 
@@ -52,8 +52,8 @@ The result, along with the corresponding trigger event, is output via the output
 
 ## Technical Features
 
-* **Generic Function Block:** The attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AUS_ADD'` defines the function block as a generic type. This allows for flexible adaptation to different data types defined by the adapter structures.
-* **Encapsulation:** By using adapters instead of individual event and data pins, the system design becomes clearer and less prone to wiring errors.
+- **Generic Function Block:** The attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AUS_ADD'` defines the function block as a generic type. This allows for flexible adaptation to different data types defined by the adapter structures.
+- **Encapsulation:** By using adapters instead of individual event and data pins, the system design becomes clearer and less prone to wiring errors.
 
 ---
 
@@ -65,9 +65,9 @@ Since this component is essentially a mathematical operation, it does not have a
 
 ## Application Scenarios
 
-* **Measurement Processing:** Adding two sensor values or applying an offset to a measured value, which is supplied via an adapter.
-* **Setpoint Calculation:** Combining base setpoints and correction values in process automation.
-* * **Structured Programming:** Used in complex control systems where data and event lines are bundled in adapters to improve clarity.
+- **Measurement Processing:** Adding two sensor values or applying an offset to a measured value, which is supplied via an adapter.
+- **Setpoint Calculation:** Combining base setpoints and correction values in process automation.
+- * **Structured Programming:** Used in complex control systems where data and event lines are bundled in adapters to improve clarity.
 
 ---
 

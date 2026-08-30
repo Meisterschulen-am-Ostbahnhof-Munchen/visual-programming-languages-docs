@@ -19,9 +19,9 @@ The following blocks are used:
 
 ![Uebung_002a_AX_network](./Uebung_002a_AX_network.svg)
 
-* **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. [cite_start]These represent the two hardware inputs that are monitored[cite: 1].
-* **`AX_AND_2`**: An instance of type `AX_AND_2`. [cite_start]This block performs the logical AND operation directly on the adapter interfaces. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`)[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This component controls the hardware output `Output_Q1` based on the result of the logic[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. [cite_start]These represent the two hardware inputs that are monitored[cite: 1].
+- **`AX_AND_2`**: An instance of type `AX_AND_2`. [cite_start]This block performs the logical AND operation directly on the adapter interfaces. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`)[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This component controls the hardware output `Output_Q1` based on the result of the logic[cite: 1].
 
 ### Adapter interface: `AX.adp`
 

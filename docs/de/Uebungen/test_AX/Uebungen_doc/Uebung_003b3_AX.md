@@ -24,12 +24,12 @@ Das Ziel ist maximale Wiederverwendbarkeit und Übersichtlichkeit. Durch die Ver
 
 Die Zuweisung ist in der Datei klar lesbar:
 
-*   **`F1`**: `STOP` -> `Output_1A` (Achtung: Logik prüfen, ob STOP ggf. invertiert oder speziell behandelt wird)
-*   **`F2`**: `START` -> `Output_1B`
-*   **`F3`**: `Key_01` -> `Output_2A`
-*   **`F4`**: `Key_02` -> `Output_2B`
-*   ...
-*   **`F15`**: `Key_13` -> `Output_8A`
+-   **`F1`**: `STOP` -> `Output_1A` (Achtung: Logik prüfen, ob STOP ggf. invertiert oder speziell behandelt wird)
+-   **`F2`**: `START` -> `Output_1B`
+-   **`F3`**: `Key_01` -> `Output_2A`
+-   **`F4`**: `Key_02` -> `Output_2B`
+-   ...
+-   **`F15`**: `Key_13` -> `Output_8A`
 
 Alle Instanzen nutzen `MI_00` als `u8SAMember` (Adresse des DataPanels).
 

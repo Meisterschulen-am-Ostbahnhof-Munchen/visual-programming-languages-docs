@@ -70,8 +70,8 @@ Compared to simple Boolean input blocks, Button_IXA offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_010a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a2_AX.md)
-* [Exercise_010a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a3_AX.md)
+- [Exercise_010a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a2_AX.md)
+- [Exercise_010a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a3_AX.md)
 
 ## Conclusion
 

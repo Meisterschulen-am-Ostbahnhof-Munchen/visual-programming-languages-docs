@@ -17,7 +17,7 @@ Understanding reset priority.
 
 ![Uebung_006b_network](./Uebung_006b_network.svg)
 
-* **`E_RS`**: An event-based RS flip-flop (reset dominant).
+- **`E_RS`**: An event-based RS flip-flop (reset dominant).
 
 -----
 

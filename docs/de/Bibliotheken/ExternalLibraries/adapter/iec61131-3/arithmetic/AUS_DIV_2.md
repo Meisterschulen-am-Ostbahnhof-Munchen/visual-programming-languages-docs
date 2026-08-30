@@ -48,9 +48,9 @@ Sobald an den Eingangs-Adaptern `IN1` oder `IN2` ein neues Datenereignis signali
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_AUS_DIV`):** Ermöglicht eine flexible Wiederverwendung für unterschiedliche numerische Datentypen, ohne dass separate Bausteine für `INT`, `REAL` oder `LREAL` angelegt werden müssen.
-* **Unidirektionale Adapter:** Die Verwendung des Typs `adapter::types::unidirectional::AUS` sorgt für eine saubere Daten- und Event-Kapselung. Dies reduziert die visuelle Komplexität im Systementwurf (weniger "Spaghetti-Code" durch lose Event- und Datenlinien).
-* **Division durch Null:** Bei der Implementierung auf der Zielplattform (Runtime) ist darauf zu achten, wie der Baustein auf einen Divisor von `0` reagiert (z. B. Ausgabe von `NaN`/`INF` bei Gleitkommazahlen oder Systemfehler bei Ganzzahlen).
+- **Generischer Typ (`GEN_AUS_DIV`):** Ermöglicht eine flexible Wiederverwendung für unterschiedliche numerische Datentypen, ohne dass separate Bausteine für `INT`, `REAL` oder `LREAL` angelegt werden müssen.
+- **Unidirektionale Adapter:** Die Verwendung des Typs `adapter::types::unidirectional::AUS` sorgt für eine saubere Daten- und Event-Kapselung. Dies reduziert die visuelle Komplexität im Systementwurf (weniger "Spaghetti-Code" durch lose Event- und Datenlinien).
+- **Division durch Null:** Bei der Implementierung auf der Zielplattform (Runtime) ist darauf zu achten, wie der Baustein auf einen Divisor von `0` reagiert (z. B. Ausgabe von `NaN`/`INF` bei Gleitkommazahlen oder Systemfehler bei Ganzzahlen).
 
 ## Zustandsübersicht
 
@@ -62,15 +62,15 @@ Der Baustein besitzt kein komplexes internes Zustandsdiagramm (ECC). Seine Ausf�
 
 ## Anwendungsszenarien
 
-* **Messwertskalierung:** Division von Sensorwerten durch konstante Faktoren, die über Adapterstrukturen im System verteilt werden.
-* **Mittelwertberechnung:** Einsatz in mathematischen Berechnungsnetzwerken innerhalb von verteilten Steuerungssystemen.
-* **Verhältnissteuerung:** Berechnung von Verhältnissen (z. B. Luft-Brennstoff-Verhältnis in Brennersteuerungen), bei denen die Eingangssignale bereits als standardisierte `AUS`-Adapter vorliegen.
+- **Messwertskalierung:** Division von Sensorwerten durch konstante Faktoren, die über Adapterstrukturen im System verteilt werden.
+- **Mittelwertberechnung:** Einsatz in mathematischen Berechnungsnetzwerken innerhalb von verteilten Steuerungssystemen.
+- **Verhältnissteuerung:** Berechnung von Verhältnissen (z. B. Luft-Brennstoff-Verhältnis in Brennersteuerungen), bei denen die Eingangssignale bereits als standardisierte `AUS`-Adapter vorliegen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-Ganzzahl-Divisionsbaustein (wie dem IEC 61131-3 `DIV` Baustein) bietet `AUS_DIV_2` folgende Vorteile:
-* **Adapterbasierte Kopplung:** Standard-FBs benötigen separate Pins für Daten und Events (REQ/CNF). `AUS_DIV_2` bündelt diese logisch in den `AUS`-Adaptern.
-* **Datentyp-Flexibilität:** Während klassische Bausteine oft fest für z. B. `REAL` (e.g., `R_DIV`) definiert sind, passt sich dieser generische Baustein dem verwendeten Adaptertyp an.
+- **Adapterbasierte Kopplung:** Standard-FBs benötigen separate Pins für Daten und Events (REQ/CNF). `AUS_DIV_2` bündelt diese logisch in den `AUS`-Adaptern.
+- **Datentyp-Flexibilität:** Während klassische Bausteine oft fest für z. B. `REAL` (e.g., `R_DIV`) definiert sind, passt sich dieser generische Baustein dem verwendeten Adaptertyp an.
 
 ## Änderungserkennung
 

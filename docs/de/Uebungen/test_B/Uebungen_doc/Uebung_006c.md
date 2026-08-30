@@ -20,9 +20,9 @@ Erlernen der adressierten Ereignisverteilung. Anstatt für jeden Kanal eine eige
 
 ![Uebung_006c_network](./Uebung_006c_network.svg)
 
-  * **`logiBUS_IB`**: Ein spezieller Eingangsbaustein für "Input Byte". Er liefert einen Zahlenwert (0-255), der meist von einem Multi-Funktions-Bedienelement (z.B. einem ISOBUS-Joystick mit vielen Tasten) stammt.
-  * **`E_DEMUX_8`**: Ein Ereignis-Demultiplexer. Er hat einen Ereignis-Eingang `EI` und einen Daten-Eingang `K` (Selector). Je nach Wert von `K` leitet er das Event an einen der acht Ausgänge `EO1` bis `EO8` weiter.
-  * **8x `E_SR`**: Speicher für die Ausgänge `Q1` bis `Q8`.
+  - **`logiBUS_IB`**: Ein spezieller Eingangsbaustein für "Input Byte". Er liefert einen Zahlenwert (0-255), der meist von einem Multi-Funktions-Bedienelement (z.B. einem ISOBUS-Joystick mit vielen Tasten) stammt.
+  - **`E_DEMUX_8`**: Ein Ereignis-Demultiplexer. Er hat einen Ereignis-Eingang `EI` und einen Daten-Eingang `K` (Selector). Je nach Wert von `K` leitet er das Event an einen der acht Ausgänge `EO1` bis `EO8` weiter.
+  - **8x `E_SR`**: Speicher für die Ausgänge `Q1` bis `Q8`.
 
 -----
 

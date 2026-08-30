@@ -51,10 +51,10 @@ According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
-* [Exercise_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
-* [Exercise_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
-* [Exercise_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
+- [Exercise_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
+- [Exercise_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
+- [Exercise_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+- [Exercise_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
 
 ## Conclusion
 

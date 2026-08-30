@@ -20,10 +20,10 @@ Nutzung des `QI` (Qualifier Input) Parameters zur Laufzeit-Steuerung von Funktio
 
 ![Uebung_094a_AX_network](./Uebung_094a_AX_network.svg)
 
-  * **`DigitalInput_CLK_I2`**: Toggelt über ein Flip-Flop den Zustand "Aktiv/Inaktiv".
-  * **`DigitalInput_I1`**: Der eigentliche Signaleingang. Sein `QI` Parameter ist variabel beschaltet.
-  * **`DigitalOutput_Q1`**: Hängt an `I1`.
-  * **`DigitalOutput_Q2`**: Zeigt den Status "Ist Aktiv" an.
+  - **`DigitalInput_CLK_I2`**: Toggelt über ein Flip-Flop den Zustand "Aktiv/Inaktiv".
+  - **`DigitalInput_I1`**: Der eigentliche Signaleingang. Sein `QI` Parameter ist variabel beschaltet.
+  - **`DigitalOutput_Q1`**: Hängt an `I1`.
+  - **`DigitalOutput_Q2`**: Zeigt den Status "Ist Aktiv" an.
 
 -----
 

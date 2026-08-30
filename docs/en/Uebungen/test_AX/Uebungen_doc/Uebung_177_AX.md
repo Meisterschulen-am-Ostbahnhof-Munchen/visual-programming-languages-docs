@@ -52,16 +52,16 @@ The circuit flow is as follows:
 
 1. **Signal Input**: The signal from `DigitalInput_I1` (input I1) is routed to the `CLK` input of the edge detection module `AX_FB_R_TRIG`.
 2. **Edge Detection**:
-* When the button at I1 is pressed, `AX_FB_R_TRIG` detects the rising edge.
-* The trigger's output `Q` is briefly activated.
+- When the button at I1 is pressed, `AX_FB_R_TRIG` detects the rising edge.
+- The trigger's output `Q` is briefly activated.
 3. **Time Control**: This signal is forwarded to the input `IN` of the timer `AX_TP`.
 4. **Output**: The timer activates its output `Q` for exactly **1 second** (`PT=T#1s`). This signal controls `DigitalOutput_Q1`.
 
 **Relationship of Connections:**
 
-* `DigitalInput_I1.IN` → `AX_FB_R_TRIG.CLK`
-* `AX_FB_R_TRIG.Q` → `AX_TP.IN`
-* `AX_TP.Q` → `DigitalOutput_Q1.OUT`
+- `DigitalInput_I1.IN` → `AX_FB_R_TRIG.CLK`
+- `AX_FB_R_TRIG.Q` → `AX_TP.IN`
+- `AX_TP.Q` → `DigitalOutput_Q1.OUT`
 
 ## Summary
 

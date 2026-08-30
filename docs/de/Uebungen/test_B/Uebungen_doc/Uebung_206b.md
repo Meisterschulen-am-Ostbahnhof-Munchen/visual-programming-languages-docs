@@ -11,46 +11,46 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
 
 ### Digitaleingang: logiBUS_IE
 
-- **Typ**: logiBUS::io::DI::logiBUS_IE  
-- **Verwendete Instanzen**: DigitalInput_CLK_I1, DigitalInput_CLK_I2, DigitalInput_CLK_I3  
-- **Parameter**:  
-  - QI = TRUE  
-  - Input = Input_I1 / Input_I2 / Input_I3  
-  - InputEvent = BUTTON_SINGLE_CLICK  
-- **Funktionsweise**:  
+- **Typ**: logiBUS::io::DI::logiBUS_IE
+- **Verwendete Instanzen**: DigitalInput_CLK_I1, DigitalInput_CLK_I2, DigitalInput_CLK_I3
+- **Parameter**:
+  - QI = TRUE
+  - Input = Input_I1 / Input_I2 / Input_I3
+  - InputEvent = BUTTON_SINGLE_CLICK
+- **Funktionsweise**:
   Jeder Baustein erfasst einen Taster (Button) und erzeugt bei einem einzelnen Klick ein Ereignis (IND) an seinem Ereignisausgang.
 
 ### Interlock-Toggle-Flip-Flop: ILOCK_T_FF
 
-- **Typ**: logiBUS::signalprocessing::interlock::ILOCK_T_FF  
-- **Verwendete Instanzen**: ILOCK_T_FF_1, ILOCK_T_FF_2, ILOCK_T_FF_3  
-- **Parameter**: keine spezifischen Parameter im XML  
-- **Funktionsweise**:  
+- **Typ**: logiBUS::signalprocessing::interlock::ILOCK_T_FF
+- **Verwendete Instanzen**: ILOCK_T_FF_1, ILOCK_T_FF_2, ILOCK_T_FF_3
+- **Parameter**: keine spezifischen Parameter im XML
+- **Funktionsweise**:
   Ein Toggle-Flip-Flop, das bei jedem Ereignis am Eingang **CLK** seinen Ausgang **Q** umschaltet. Es besitzt zwei Adapter-Schnittstellen: **ILOCK_IN** und **ILOCK_OUT**. Über diese Adapter können mehrere ILOCK_T_FF zu einer Kette verbunden werden, wodurch sichergestellt wird, dass immer nur ein Flip-Flop in der Kette seinen Ausgang auf TRUE setzen kann (gegenseitige Verriegelung). Bei Aktivierung eines anderen Flip-Flops wird das zuvor aktive automatisch zurückgesetzt.
 
 ### Digitalausgang: logiBUS_QX
 
-- **Typ**: logiBUS::io::DQ::logiBUS_QX  
-- **Verwendete Instanzen**: DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3  
-- **Parameter**:  
-  - QI = TRUE  
-  - Output = Output_Q1 / Output_Q2 / Output_Q3  
-- **Funktionsweise**:  
+- **Typ**: logiBUS::io::DQ::logiBUS_QX
+- **Verwendete Instanzen**: DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3
+- **Parameter**:
+  - QI = TRUE
+  - Output = Output_Q1 / Output_Q2 / Output_Q3
+- **Funktionsweise**:
   Der Baustein setzt einen digitalen Ausgang (z. B. eine LED) auf den Wert, der am Dateneingang **OUT** anliegt. Die Ausgabe erfolgt bei einem Ereignis am **REQ**-Eingang.
 
 ## Programmablauf und Verbindungen
 
-1. **Eingangssignale**:  
+1. **Eingangssignale**:
    Drei Taster sind an die logiBUS-Eingänge *Input_I1*, *Input_I2* und *Input_I3* angeschlossen. Jeder Tastendruck (Single Click) erzeugt ein Ereignis am zugehörigen logiBUS_IE, das über den Ereignisausgang **IND** an den **CLK**-Eingang des entsprechenden ILOCK_T_FF weitergeleitet wird.
 
-2. **Verriegelung (Interlock)**:  
-   Die drei ILOCK_T_FF sind über ihre Adapter-Schnittstellen verbunden:  
+2. **Verriegelung (Interlock)**:
+   Die drei ILOCK_T_FF sind über ihre Adapter-Schnittstellen verbunden:
 
-   - ILOCK_T_FF_1.ILOCK_OUT → ILOCK_T_FF_2.ILOCK_IN  
-   - ILOCK_T_FF_2.ILOCK_OUT → ILOCK_T_FF_3.ILOCK_IN  
+   - ILOCK_T_FF_1.ILOCK_OUT → ILOCK_T_FF_2.ILOCK_IN
+   - ILOCK_T_FF_2.ILOCK_OUT → ILOCK_T_FF_3.ILOCK_IN
    Diese Kette bewirkt, dass nur eines der drei Flip-Flops seinen Ausgang **Q** auf TRUE setzen kann. Sobald ein anderes Flip-Flop seinen Zustand ändert, wird das vorher aktive zurückgesetzt.
 
-3. **Ausgangssignale**:  
+3. **Ausgangssignale**:
    Die Ausgänge **Q** der Flip-Flops sind mit den Dateneingängen **OUT** der Digitalausgangsbausteine verbunden. Das Ereignis **EO** jedes ILOCK_T_FF (wird bei Zustandsänderung ausgelöst) triggert den **REQ**-Eingang des zugehörigen logiBUS_QX, sodass die Ausgabe aktualisiert wird.
 
 **Verbindungen im Überblick (Ereignisse & Daten):**
@@ -82,4 +82,4 @@ Diese Übung demonstriert die Verwendung des ILOCK_T_FF-Bausteins zur Realisieru
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

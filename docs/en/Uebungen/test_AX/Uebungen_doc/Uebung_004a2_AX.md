@@ -15,10 +15,10 @@ The objective is to learn how to combine asynchronous event streams. If two even
 
 ![Uebung_004a2_AX_network](./Uebung_004a2_AX_network.svg)
 
-* **`DigitalInput_CLK_I1` & `I2`**: Two `logiBUS_IE` function blocks, configured to `BUTTON_SINGLE_CLICK`. [cite_start]They generate events when button 1 or 2 is pressed[cite: 1].
-* **`E_MERGE`**: Type `E_MERGE`. [cite_start]This component has two event inputs (`EI1`, `EI2`) and one event output (`EO`). Regardless of which input receives an event, it is immediately forwarded to the corresponding output [cite: 1].
-* **`E_T_FF`**: The toggle flip-flop that stores the state.
-* **`DigitalOutput_Q1`**: The output for the lamp.
+- **`DigitalInput_CLK_I1` & `I2`**: Two `logiBUS_IE` function blocks, configured to `BUTTON_SINGLE_CLICK`. [cite_start]They generate events when button 1 or 2 is pressed[cite: 1].
+- **`E_MERGE`**: Type `E_MERGE`. [cite_start]This component has two event inputs (`EI1`, `EI2`) and one event output (`EO`). Regardless of which input receives an event, it is immediately forwarded to the corresponding output [cite: 1].
+- **`E_T_FF`**: The toggle flip-flop that stores the state.
+- **`DigitalOutput_Q1`**: The output for the lamp.
 
 -----
 

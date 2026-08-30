@@ -41,19 +41,19 @@ Here are the internal function blocks that are interconnected in this network:
 The network implements a memory function using an SR flip-flop. The process and adapter connections are as follows:
 
 1. **Set:**
-* The adapter output `IN` of **DigitalInput_I1** is connected to the adapter input `SET1` of the **AX_FB_SR** module.
-* When `Input_I1` is active, the flip-flop is set.
+- The adapter output `IN` of **DigitalInput_I1** is connected to the adapter input `SET1` of the **AX_FB_SR** module.
+- When `Input_I1` is active, the flip-flop is set.
 2. **Reset:**
-* The adapter output `IN` of **DigitalInput_I2** is connected to the adapter input `RESET` of the **AX_FB_SR** module.
-* When `Input_I2` is active, the flip-flop is reset.
+- The adapter output `IN` of **DigitalInput_I2** is connected to the adapter input `RESET` of the **AX_FB_SR** module.
+- When `Input_I2` is active, the flip-flop is reset.
 3. **Output:**
-* The adapter output `Q1` of the **AX_FB_SR** block is connected to the adapter input `OUT` of **DigitalOutput_Q1**.
-* The flip-flop status is passed directly to the physical output `Output_Q1`.
+- The adapter output `Q1` of the **AX_FB_SR** block is connected to the adapter input `OUT` of **DigitalOutput_Q1**.
+- The flip-flop status is passed directly to the physical output `Output_Q1`.
 
 **Special feature of the adapters:**
 Instead of using separate event and data lines, adapter connections (represented by the double arrows/wider lines in the IDE) are used. This drastically reduces the number of visible lines.
 
-* **Logical Behavior (SR Dominance):**
+- **Logical Behavior (SR Dominance):**
 Since this is an SR component, the following typically applies: If only set is active, the output is
 
 1. If only reset is active, the output is

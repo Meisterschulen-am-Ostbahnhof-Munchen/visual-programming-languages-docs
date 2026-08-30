@@ -6,9 +6,9 @@ Visuelle Programmiersprachen (VPL) ermöglichen die Erstellung von Programmen du
 
 Diese Sprachen dienen oft als Einstieg in die Logik der Programmierung. Sie abstrahieren komplexe Syntaxregeln in farbige Blöcke, die wie Puzzleteile zusammengesteckt werden.
 
-*   **Scratch:** Die wohl bekannteste Sprache für Kinder und Jugendliche. Sie vermittelt spielerisch Konzepte wie Schleifen, Bedingungen und Variablen.
-*   **Blockly (Google):** Eine Bibliothek, die visuelle Blöcke in textuellen Code (z. B. Python oder JavaScript) übersetzt.
-*   **M5Stack / UIFlow:** Eine industrielle Anwendung von Blockly. Hier werden Mikrocontroller (ESP32) visuell programmiert, was den Prototypenbau extrem beschleunigt.
+-   **Scratch:** Die wohl bekannteste Sprache für Kinder und Jugendliche. Sie vermittelt spielerisch Konzepte wie Schleifen, Bedingungen und Variablen.
+-   **Blockly (Google):** Eine Bibliothek, die visuelle Blöcke in textuellen Code (z. B. Python oder JavaScript) übersetzt.
+-   **M5Stack / UIFlow:** Eine industrielle Anwendung von Blockly. Hier werden Mikrocontroller (ESP32) visuell programmiert, was den Prototypenbau extrem beschleunigt.
 
 ---
 
@@ -16,7 +16,7 @@ Diese Sprachen dienen oft als Einstieg in die Logik der Programmierung. Sie abst
 
 Bevor Code geschrieben wird, nutzen Informatiker oft grafische Modelle, um Architekturen zu planen.
 
-*   **UML (Unified Modeling Language):** Ein Standard zur Visualisierung von Softwaresystemen. Klassendiagramme oder Zustandsdiagramme sind hierbei die bekanntesten Werkzeuge.
+-   **UML (Unified Modeling Language):** Ein Standard zur Visualisierung von Softwaresystemen. Klassendiagramme oder Zustandsdiagramme sind hierbei die bekanntesten Werkzeuge.
 
 ---
 
@@ -24,7 +24,7 @@ Bevor Code geschrieben wird, nutzen Informatiker oft grafische Modelle, um Archi
 
 In der Mess- und Regelungstechnik haben visuelle Sprachen eine dominierende Rolle, da sie den Fluss von Signalen und Daten intuitiv abbilden.
 
-*   **LabVIEW (National Instruments):** Eine mächtige Umgebung, in der "Virtuelle Instrumente" (VIs) durch das Verdrahten von Funktionsblöcken erstellt werden. Sie wird weltweit in Laboren und Prüfständen eingesetzt.
+-   **LabVIEW (National Instruments):** Eine mächtige Umgebung, in der "Virtuelle Instrumente" (VIs) durch das Verdrahten von Funktionsblöcken erstellt werden. Sie wird weltweit in Laboren und Prüfständen eingesetzt.
 
 ---
 
@@ -57,13 +57,13 @@ Die Automatisierungspyramide zeigt, dass auf den unteren Ebenen (Feld- und Steue
 
 ### Weiterführende Ressourcen
 
-*   [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
-*   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
-*   [M5Stack UIFlow Dokumentation](https://m5stack.github.io/UIFlow_doc/en/)
+-   [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
+-   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
+-   [M5Stack UIFlow Dokumentation](https://m5stack.github.io/UIFlow_doc/en/)
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

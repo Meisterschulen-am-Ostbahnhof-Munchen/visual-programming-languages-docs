@@ -36,21 +36,21 @@ The interface of this function block is implemented entirely via adapters. There
 
 #### **Plugs (Connectors - Outputs)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ADI`):
+- **OUT** (Type: `adapter::types::unidirectional::ADI`):
 
 The selected output. Sends the selected data signal (`D1`) and the associated update event (`E1`).
 
 #### **Sockets (Inputs)**
 
-* **IN0** (Type: `adapter::types::unidirectional::ADI`):
+- **IN0** (Type: `adapter::types::unidirectional::ADI`):
 
 First selectable input. This value is passed through to the output when the selection signal `G` is set to `FALSE` (0).
 
-* **IN1** (Type: `adapter::types::unidirectional::ADI`):
+- **IN1** (Type: `adapter::types::unidirectional::ADI`):
 
 Second selectable input. This value is passed through to the output when the selection signal `G` is set to `TRUE` (1).
 
-* **G** (Type: `adapter::types::unidirectional::AX`):
+- **G** (Type: `adapter::types::unidirectional::AX`):
 
 The selector (gate) for controlling the selection process. A change in state controls the switching between `IN0` and `IN1`.
 
@@ -72,8 +72,8 @@ The function blocks `F_MOVE_IN0` and `F_MOVE_IN1` copy the data (interpreted as 
 
 The function block `F_SEL` (corresponding to the classic `SEL` standard function block from IEC 61131-3) evaluates the control signal `G`:
 
-* If the signal from adapter `G` is equal to `FALSE`, the signal from `IN0` is selected.
-* If the signal from adapter `G` is equal to `TRUE`, the signal from `IN1` is selected.
+- If the signal from adapter `G` is equal to `FALSE`, the signal from `IN0` is selected.
+- If the signal from adapter `G` is equal to `TRUE`, the signal from `IN1` is selected.
 4. **Output**:
 
 The selected value is passed via `F_MOVE_OUT` to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop sets the value `D1` on output adapter `OUT` and immediately triggers the corresponding event `OUT.E1` to inform downstream components about the data change.
@@ -82,10 +82,10 @@ The selected value is passed via `F_MOVE_OUT` to the output flip-flop `E_D_FF_AN
 
 ## Technical Features
 
-* **Adapter Encapsulation**: By using adapters (`ADI` and `AX`), the number of visible connection lines in the 4diac application diagram is drastically reduced, improving clarity and maintainability.
-* **Data Type Specification**: The internal copy operations (`F_MOVE_IN0`, `F_MOVE_IN1`, and `F_MOVE_OUT`) are permanently configured for the data type `DINT` (Double Integer).
-* **Real-Time Pass-Through**: The function block responds instantly to every edge of the input signals as well as the selection signal.
-* ---
+- **Adapter Encapsulation**: By using adapters (`ADI` and `AX`), the number of visible connection lines in the 4diac application diagram is drastically reduced, improving clarity and maintainability.
+- **Data Type Specification**: The internal copy operations (`F_MOVE_IN0`, `F_MOVE_IN1`, and `F_MOVE_OUT`) are permanently configured for the data type `DINT` (Double Integer).
+- **Real-Time Pass-Through**: The function block responds instantly to every edge of the input signals as well as the selection signal.
+- ---
 
 ## State Overview
 
@@ -100,16 +100,16 @@ Since this is a purely data-flow and event-driven network function block (Compos
 
 ## Application Scenarios
 
-* **Manual/Automatic Switching**: Selection between a manually specified setpoint (e.g., via an HMI at `IN1`) and an automatically calculated controller setpoint (at `IN0`).
-* **Sensor Redundancy**: Switching to a backup sensor (`IN1`) if diagnostic logic detects a fault in the main sensor (`IN0`) and sets the signal `G` to `TRUE`.
-* **Recipe Control**: Dynamic selection of various predefined process parameters during operation.
+- **Manual/Automatic Switching**: Selection between a manually specified setpoint (e.g., via an HMI at `IN1`) and an automatically calculated controller setpoint (at `IN0`).
+- **Sensor Redundancy**: Switching to a backup sensor (`IN1`) if diagnostic logic detects a fault in the main sensor (`IN0`) and sets the signal `G` to `TRUE`.
+- **Recipe Control**: Dynamic selection of various predefined process parameters during operation.
 
 ---
 
 ## Comparison with Similar Function Blocks
 
-* **Standard `F_SEL`**: The standard selection function block works with elementary data types and requires explicit event connections for triggers and confirmations. `ADI_AX_SEL_ADI` fully automates this process via structured adapter channels.
-* **Analog Multiplexers**: Unlike multiplexers with an indefinite number of channels, this function block specializes in fast and efficient binary selection (1 out of 2).
+- **Standard `F_SEL`**: The standard selection function block works with elementary data types and requires explicit event connections for triggers and confirmations. `ADI_AX_SEL_ADI` fully automates this process via structured adapter channels.
+- **Analog Multiplexers**: Unlike multiplexers with an indefinite number of channels, this function block specializes in fast and efficient binary selection (1 out of 2).
 
 ---
 

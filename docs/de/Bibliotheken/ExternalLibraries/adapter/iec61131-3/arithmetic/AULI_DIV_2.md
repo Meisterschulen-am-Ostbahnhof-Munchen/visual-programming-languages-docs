@@ -32,15 +32,15 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Das Berechnungsergebnis wird �
 
 Die gesamte Kommunikation des Bausteins wird über Adapter vom Typ `AULI` (unidirektional) realisiert:
 
-*   **IN1 (Socket / Buchse)**:
-    *   **Typ**: `adapter::types::unidirectional::AULI`
-    *   **Beschreibung**: Erster Eingang der Division (Dividend / Zähler).
-*   **IN2 (Socket / Buchse)**:
-    *   **Typ**: `adapter::types::unidirectional::AULI`
-    *   **Beschreibung**: Zweiter Eingang der Division (Divisor / Nenner).
-*   **OUT (Plug / Stecker)**:
-    *   **Typ**: `adapter::types::unidirectional::AULI`
-    *   **Beschreibung**: Ausgang, der das Ergebnis der Division (Quotient) liefert.
+-   **IN1 (Socket / Buchse)**:
+    -   **Typ**: `adapter::types::unidirectional::AULI`
+    -   **Beschreibung**: Erster Eingang der Division (Dividend / Zähler).
+-   **IN2 (Socket / Buchse)**:
+    -   **Typ**: `adapter::types::unidirectional::AULI`
+    -   **Beschreibung**: Zweiter Eingang der Division (Divisor / Nenner).
+-   **OUT (Plug / Stecker)**:
+    -   **Typ**: `adapter::types::unidirectional::AULI`
+    -   **Beschreibung**: Ausgang, der das Ergebnis der Division (Quotient) liefert.
 
 ## Funktionsweise
 
@@ -52,9 +52,9 @@ Da es sich um einen generischen Funktionsbaustein (`GEN_AULI_DIV`) handelt, kann
 
 ## Technische Besonderheiten
 
-*   **Generische Natur**: Durch das Attribut `GenericClassName` mit dem Wert `'GEN_AULI_DIV'` ist der Baustein flexibel einsetzbar und nicht starr auf einen einzigen Datentyp (wie z. B. nur `REAL` oder `INT`) festgelegt.
-*   **Kapselung durch Adapter**: Da keine klassischen Event- und Data-Ports genutzt werden, bleibt das visuelle Design im Funktionsplan (FBD) sehr übersichtlich. Die logische Zusammengehörigkeit von Daten und Triggern ist im `AULI`-Adapter gekapselt.
-*   **Unidirektionale Adapter**: Die Verwendung von `unidirectional::AULI` deutet darauf hin, dass der Informationsfluss strikt in eine Richtung (von den Sockets zum Baustein und vom Baustein zum Plug) verläuft.
+-   **Generische Natur**: Durch das Attribut `GenericClassName` mit dem Wert `'GEN_AULI_DIV'` ist der Baustein flexibel einsetzbar und nicht starr auf einen einzigen Datentyp (wie z. B. nur `REAL` oder `INT`) festgelegt.
+-   **Kapselung durch Adapter**: Da keine klassischen Event- und Data-Ports genutzt werden, bleibt das visuelle Design im Funktionsplan (FBD) sehr übersichtlich. Die logische Zusammengehörigkeit von Daten und Triggern ist im `AULI`-Adapter gekapselt.
+-   **Unidirektionale Adapter**: Die Verwendung von `unidirectional::AULI` deutet darauf hin, dass der Informationsfluss strikt in eine Richtung (von den Sockets zum Baustein und vom Baustein zum Plug) verläuft.
 
 ## Zustandsübersicht
 
@@ -69,15 +69,15 @@ Da es sich bei diesem Baustein um einen grundlegenden arithmetischen Baustein ha
 
 ## Anwendungsszenarien
 
-*   **Skalierung von Sensorwerten**: Division von analogen Rohwerten durch einen Skalierungsfaktor zur Umrechnung in physikalische Einheiten.
-*   **Verhältnismessung**: Berechnung von Verhältnissen in der Prozessautomatisierung (z. B. Durchflussverhältnis von zwei Medien).
-*   **Mittelwertbildung**: Verwendung in Berechnungsnetzwerken, bei denen Summenwerte durch eine Anzahl geteilt werden müssen.
-*   **Strukturierte Architekturen**: Einsatz in Systemen, die konsequent auf Adapter-basierte Kommunikation setzen, um die Anzahl der sichtbaren Verbindungslinien im Systemmodell zu minimieren.
+-   **Skalierung von Sensorwerten**: Division von analogen Rohwerten durch einen Skalierungsfaktor zur Umrechnung in physikalische Einheiten.
+-   **Verhältnismessung**: Berechnung von Verhältnissen in der Prozessautomatisierung (z. B. Durchflussverhältnis von zwei Medien).
+-   **Mittelwertbildung**: Verwendung in Berechnungsnetzwerken, bei denen Summenwerte durch eine Anzahl geteilt werden müssen.
+-   **Strukturierte Architekturen**: Einsatz in Systemen, die konsequent auf Adapter-basierte Kommunikation setzen, um die Anzahl der sichtbaren Verbindungslinien im Systemmodell zu minimieren.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard `DIV`-Baustein**: Ein klassischer IEC 61131-3 / IEC 61499 `DIV`-Baustein nutzt direkte Dateneingänge (`IN1`, `IN2`) und Event-Ports (`REQ`, `CNF`). Der `AULI_DIV_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung bei komplexen Signalstrukturen erheblich vereinfacht.
-*   **Andere AULI-Arithmetikbausteine** (z. B. `AULI_ADD`, `AULI_SUB`): Nutzen dieselbe Schnittstellenphilosophie mit Sockets und Plugs, führen jedoch andere mathematische Operationen aus.
+-   **Standard `DIV`-Baustein**: Ein klassischer IEC 61131-3 / IEC 61499 `DIV`-Baustein nutzt direkte Dateneingänge (`IN1`, `IN2`) und Event-Ports (`REQ`, `CNF`). Der `AULI_DIV_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung bei komplexen Signalstrukturen erheblich vereinfacht.
+-   **Andere AULI-Arithmetikbausteine** (z. B. `AULI_ADD`, `AULI_SUB`): Nutzen dieselbe Schnittstellenphilosophie mit Sockets und Plugs, führen jedoch andere mathematische Operationen aus.
 
 ## Änderungserkennung
 

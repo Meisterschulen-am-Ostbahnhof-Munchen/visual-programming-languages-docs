@@ -2,15 +2,15 @@
 
 ## 🎧 Podcast
 
-* [Eclipse 4diac: Innovationsmotor Forschung vs. Nutzerbedürfnisse – Was treibt die Entwicklung wirklich voran?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Innovationsmotor-Forschung-vs--Nutzerbedrfnisse--Was-treibt-die-Entwicklung-wirklich-voran-e38cke4)
-* [DIN EN 61499-1: Der digitale Lego-Baukasten für flexible Automatisierung und smarte Zukunft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Der-digitale-Lego-Baukasten-fr-flexible-Automatisierung-und-smarte-Zukunft-e3681pb)
-* [DIN EN 61499-1: Die Lego-Steine für flexible und ereignisgesteuerte Industriesteuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Die-Lego-Steine-fr-flexible-und-ereignisgesteuerte-Industriesteuerungen-e3681o1)
-* [IEC 61499: The DNA of Flexible Automation – Powering Industry 4.0 from Factories to the High Seas](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-The-DNA-of-Flexible-Automation--Powering-Industry-4-0-from-Factories-to-the-High-Seas-e376pi8)
-* [IEC 61499 vs. 61131: Unpacking the Architectural Revolution of Distributed Control and Industry 4.0](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/IEC-61499-vs--61131-Unpacking-the-Architectural-Revolution-of-Distributed-Control-and-Industry-4-0-e3ahbv5)
+- [Eclipse 4diac: Innovationsmotor Forschung vs. Nutzerbedürfnisse – Was treibt die Entwicklung wirklich voran?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Innovationsmotor-Forschung-vs--Nutzerbedrfnisse--Was-treibt-die-Entwicklung-wirklich-voran-e38cke4)
+- [DIN EN 61499-1: Der digitale Lego-Baukasten für flexible Automatisierung und smarte Zukunft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Der-digitale-Lego-Baukasten-fr-flexible-Automatisierung-und-smarte-Zukunft-e3681pb)
+- [DIN EN 61499-1: Die Lego-Steine für flexible und ereignisgesteuerte Industriesteuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Die-Lego-Steine-fr-flexible-und-ereignisgesteuerte-Industriesteuerungen-e3681o1)
+- [IEC 61499: The DNA of Flexible Automation – Powering Industry 4.0 from Factories to the High Seas](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-The-DNA-of-Flexible-Automation--Powering-Industry-4-0-from-Factories-to-the-High-Seas-e376pi8)
+- [IEC 61499 vs. 61131: Unpacking the Architectural Revolution of Distributed Control and Industry 4.0](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/IEC-61499-vs--61131-Unpacking-the-Architectural-Revolution-of-Distributed-Control-and-Industry-4-0-e3ahbv5)
 
 ## 📺 Video
 
-* [LogiBUS  Projekt Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
+- [LogiBUS  Projekt Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
 
 ## Einleitung
 
@@ -83,8 +83,8 @@ Im Vergleich zu anderen Eingabebausteinen:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
-* [Uebung_011a](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
+- [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+- [Uebung_011a](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Fazit
 
@@ -94,4 +94,4 @@ Der IB-Funktionsblock bietet eine effiziente und flexible Lösung für die Integ
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

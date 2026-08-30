@@ -4,9 +4,9 @@
 
 ![E_CTUD_ecc](./E_CTUD_ecc.svg)
 
-* [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
+- [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
 
----- 
+----
 
 <img width="1139" height="259" alt="E_CTUD" src="https://user-images.githubusercontent.com/113907528/204895474-3f88876a-7ce5-406e-8f44-765c1b97226c.png">
 
@@ -83,7 +83,7 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_082](../../../Uebungen/test_B/Uebungen_doc/Uebung_082.md)
+- [Uebung_082](../../../Uebungen/test_B/Uebungen_doc/Uebung_082.md)
 
 ## Fazit
 
@@ -93,4 +93,4 @@ Der `E_CTUD` ist ein universeller Zählerbaustein, der die Funktionalität eines
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

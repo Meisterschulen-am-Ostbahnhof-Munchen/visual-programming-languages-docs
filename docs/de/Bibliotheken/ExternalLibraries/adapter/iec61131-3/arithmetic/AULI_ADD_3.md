@@ -33,20 +33,20 @@ Der Funktionsbaustein `AULI_ADD_3` ist ein generischer Arithmetik-Baustein für 
 #### **Sockets (Eingangs-Adapter)**
 
 Die Sockets dienen als Empfänger für die zu addierenden Werte.
-*   **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Summand der arithmetischen Addition.
-*   **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Summand der arithmetischen Addition.
-*   **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Summand der arithmetischen Addition.
+-   **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Summand der arithmetischen Addition.
+-   **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Summand der arithmetischen Addition.
+-   **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Summand der arithmetischen Addition.
 
 #### **Plugs (Ausgangs-Adapter)**
 
 Der Plug dient als Sender für das berechnete Ergebnis.
-*   **OUT** (Typ: `adapter::types::unidirectional::AULI`): Ausgang für das Ergebnis der Addition ($IN1 + IN2 + IN3$).
+-   **OUT** (Typ: `adapter::types::unidirectional::AULI`): Ausgang für das Ergebnis der Addition ($IN1 + IN2 + IN3$).
 
 ---
 
 ## Funktionsweise
 
-Sobald an den Eingangs-Adaptern (`IN1`, `IN2`, `IN3`) neue Daten signalisiert werden, führt der Baustein die mathematische Addition aus. 
+Sobald an den Eingangs-Adaptern (`IN1`, `IN2`, `IN3`) neue Daten signalisiert werden, führt der Baustein die mathematische Addition aus.
 
 Die zugrunde liegende Berechnungsformel lautet:
 $$\text{OUT} = \text{IN1} + \text{IN2} + \text{IN3}$$
@@ -57,9 +57,9 @@ Das berechnete Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergebe
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Baustein ist in der 4diac-IDE als generischer Typ deklariert (`GenericClassName = 'GEN_AULI_ADD'`). Dies ermöglicht eine flexible Verarbeitung verschiedener Datentypen (z. B. INT, REAL, LREAL), die durch die Definition des `AULI`-Adapters gestützt werden.
-*   **Adapter-Kapselung:** Durch die Verwendung von Adaptern anstelle von Standard-Daten- und Eventkanälen wird das Systemdesign modularer und übersichtlicher. 
-*   **Ressourceneffizienz:** Die Berechnung erfolgt direkt auf Basis der Adapterereignisse, was eine performante Ausführung gewährleistet.
+-   **Generischer Baustein:** Der Baustein ist in der 4diac-IDE als generischer Typ deklariert (`GenericClassName = 'GEN_AULI_ADD'`). Dies ermöglicht eine flexible Verarbeitung verschiedener Datentypen (z. B. INT, REAL, LREAL), die durch die Definition des `AULI`-Adapters gestützt werden.
+-   **Adapter-Kapselung:** Durch die Verwendung von Adaptern anstelle von Standard-Daten- und Eventkanälen wird das Systemdesign modularer und übersichtlicher.
+-   **Ressourceneffizienz:** Die Berechnung erfolgt direkt auf Basis der Adapterereignisse, was eine performante Ausführung gewährleistet.
 
 ---
 
@@ -74,16 +74,16 @@ Der Funktionsbaustein arbeitet als zustandsloser (bzw. rein ereignisgesteuerter)
 
 ## Anwendungsszenarien
 
-*   **Messwert-Summierung:** Zusammenfassung von drei analogen Messwerten (z. B. drei Teilstromstärken zur Ermittlung des Gesamtstroms) in der Prozessautomatisierung.
-*   **Sollwert-Generierung:** Addition von Basis-Sollwerten mit zwei verschiedenen Korrektur- oder Offset-Werten.
-*   **Strukturierte Datenverarbeitung:** Einsatz in komplexen IEC 61499 Steuerungsanwendungen, bei denen ein konsistenter Einsatz von Adaptern zur Erhöhung der Übersichtlichkeit gefordert ist.
+-   **Messwert-Summierung:** Zusammenfassung von drei analogen Messwerten (z. B. drei Teilstromstärken zur Ermittlung des Gesamtstroms) in der Prozessautomatisierung.
+-   **Sollwert-Generierung:** Addition von Basis-Sollwerten mit zwei verschiedenen Korrektur- oder Offset-Werten.
+-   **Strukturierte Datenverarbeitung:** Einsatz in komplexen IEC 61499 Steuerungsanwendungen, bei denen ein konsistenter Einsatz von Adaptern zur Erhöhung der Übersichtlichkeit gefordert ist.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard-ADD (IEC 61131-3):** Der klassische `ADD`-Baustein benötigt explizite `REQ`- und `CNF`-Event-Leitungen sowie einzelne Datenleitungen. `AULI_ADD_3` ersetzt diese durch nur vier Adapter-Verbindungen, was das visuelle Programmierbild aufräumt.
-*   **Kaskadierte Addierer (z. B. 2x `AULI_ADD_2`):** Um drei Werte mit klassischen Zwei-Wege-Addierern zu addieren, müssten zwei Bausteine in Reihe geschaltet werden. `AULI_ADD_3` spart hierbei einen kompletten Funktionsblock sowie die dazugehörige Zwischenverdrahtung ein.
+-   **Standard-ADD (IEC 61131-3):** Der klassische `ADD`-Baustein benötigt explizite `REQ`- und `CNF`-Event-Leitungen sowie einzelne Datenleitungen. `AULI_ADD_3` ersetzt diese durch nur vier Adapter-Verbindungen, was das visuelle Programmierbild aufräumt.
+-   **Kaskadierte Addierer (z. B. 2x `AULI_ADD_2`):** Um drei Werte mit klassischen Zwei-Wege-Addierern zu addieren, müssten zwei Bausteine in Reihe geschaltet werden. `AULI_ADD_3` spart hierbei einen kompletten Funktionsblock sowie die dazugehörige Zwischenverdrahtung ein.
 
 ---
 

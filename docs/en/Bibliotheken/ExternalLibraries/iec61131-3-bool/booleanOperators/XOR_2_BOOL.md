@@ -10,20 +10,20 @@ The function block `XOR_2_BOOL` is a standard function block for calculating the
 
 ### **Event Inputs**
 
-* **REQ**: Normal execution request. Triggers the calculation of the XOR operation. The data associated with this event (`IN1`, `IN2`) are read during processing.
+- **REQ**: Normal execution request. Triggers the calculation of the XOR operation. The data associated with this event (`IN1`, `IN2`) are read during processing.
 
 ### **Event Outputs**
 
-* **CNF**: Execution Confirmation. This event is generated after the calculation and signals the availability of the result. It is associated with the data output `OUT`.
+- **CNF**: Execution Confirmation. This event is generated after the calculation and signals the availability of the result. It is associated with the data output `OUT`.
 
 ### **Data Inputs**
 
-* **IN1**: Boolean input 1 for the XOR operation.
-* **IN2**: Boolean input 2 for the XOR operation.
+- **IN1**: Boolean input 1 for the XOR operation.
+- **IN2**: Boolean input 2 for the XOR operation.
 
 ### **Data Outputs**
 
-* **OUT**: Boolean result of the XOR operation of `IN1` and `IN2`.
+- **OUT**: Boolean result of the XOR operation of `IN1` and `IN2`.
 
 ### **Adapters**
 
@@ -44,9 +44,9 @@ The truth table of the operation is:
 
 ## Technical Features
 
-* **Generic Block**: The block is identified with the generic class name `'GEN_XOR'`, which facilitates its reusability and potential integration into higher-level structures.
-* **Event-Driven Execution**: The functionality is strictly linked to the input events, enabling deterministic and energy-efficient processing in real-time systems.
-* **Simple Interface**: The block has a minimal and intuitive interface that corresponds to the classic XOR function commonly used in digital technology.
+- **Generic Block**: The block is identified with the generic class name `'GEN_XOR'`, which facilitates its reusability and potential integration into higher-level structures.
+- **Event-Driven Execution**: The functionality is strictly linked to the input events, enabling deterministic and energy-efficient processing in real-time systems.
+- **Simple Interface**: The block has a minimal and intuitive interface that corresponds to the classic XOR function commonly used in digital technology.
 
 ## State Overview
 
@@ -54,10 +54,10 @@ The function block does not have an internal state in the sense of a memory. Its
 
 ## Application Scenarios
 
-* **Comparison and Change Detection**: Detects when exactly one of two states (e.g., two limit switches) has changed.
-* **Parity Check**: Simple check for an odd number of `TRUE` signals with two inputs.
-* **Control Logic**: Implementation of special branches in sequential control systems where a decision must be made when the inputs are different.
-* **Safety-Critical Circuits**: Generates signals that are only active when two monitored variables contradict each other (e.g., in emergency stop circuits).
+- **Comparison and Change Detection**: Detects when exactly one of two states (e.g., two limit switches) has changed.
+- **Parity Check**: Simple check for an odd number of `TRUE` signals with two inputs.
+- **Control Logic**: Implementation of special branches in sequential control systems where a decision must be made when the inputs are different.
+- **Safety-Critical Circuits**: Generates signals that are only active when two monitored variables contradict each other (e.g., in emergency stop circuits).
 *
 ## ⚖️ Comparison with similar building blocks
 

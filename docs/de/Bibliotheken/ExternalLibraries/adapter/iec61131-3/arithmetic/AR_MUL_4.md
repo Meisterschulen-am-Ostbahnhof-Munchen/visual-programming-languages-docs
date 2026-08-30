@@ -30,14 +30,14 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Das Ergebnis der Multiplikatio
 
 Die Kommunikation mit anderen Bausteinen erfolgt ausschließlich über Adapter vom Typ `adapter::types::unidirectional::AR`:
 
-* **Sockets (Eingangs-Adapter):**
-  * `IN1`: Erster Multiplikand (Eingang 1).
-  * `IN2`: Zweiter Multiplikand (Eingang 2).
-  * `IN3`: Dritter Multiplikand (Eingang 3).
-  * `IN4`: Vierter Multiplikand (Eingang 4).
+- **Sockets (Eingangs-Adapter):**
+  - `IN1`: Erster Multiplikand (Eingang 1).
+  - `IN2`: Zweiter Multiplikand (Eingang 2).
+  - `IN3`: Dritter Multiplikand (Eingang 3).
+  - `IN4`: Vierter Multiplikand (Eingang 4).
 
-* **Plugs (Ausgangs-Adapter):**
-  * `OUT`: Das berechnete Produkt der vier Eingänge.
+- **Plugs (Ausgangs-Adapter):**
+  - `OUT`: Das berechnete Produkt der vier Eingänge.
 
 ## Funktionsweise
 
@@ -49,8 +49,8 @@ Das Ergebnis wird zusammen mit einem entsprechenden Aktualisierungsereignis übe
 
 ## Technische Besonderheiten
 
-* **Generisches Verhalten:** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `GEN_AR_MUL` ist der Baustein datentypunabhängig konzipiert. Er kann je nach Anwendung mit verschiedenen numerischen Datentypen (z. B. `INT`, `REAL`, `LREAL`) arbeiten, die vom Adaptertyp `AR` unterstützt werden.
-* **Adapter-Kopplung:** Die Verwendung von unidirektionalen Adaptern (`AR`) reduziert den Verdrahtungsaufwand in der 4diac-IDE erheblich, da Daten und Steuerungsereignisse in einer einzigen Verbindung gebündelt werden.
+- **Generisches Verhalten:** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `GEN_AR_MUL` ist der Baustein datentypunabhängig konzipiert. Er kann je nach Anwendung mit verschiedenen numerischen Datentypen (z. B. `INT`, `REAL`, `LREAL`) arbeiten, die vom Adaptertyp `AR` unterstützt werden.
+- **Adapter-Kopplung:** Die Verwendung von unidirektionalen Adaptern (`AR`) reduziert den Verdrahtungsaufwand in der 4diac-IDE erheblich, da Daten und Steuerungsereignisse in einer einzigen Verbindung gebündelt werden.
 
 ## Zustandsübersicht
 
@@ -58,9 +58,9 @@ Da es sich um einen rein mathematischen Berechnungsbaustein handelt, ist der Bau
 
 ## Anwendungsszenarien
 
-* **Signal-Skalierung:** Kalibrierung oder Anpassung von Sensorwerten, bei denen mehrere Faktoren (z. B. Grundwert, Verstärkung, Korrekturfaktor, Einheiten-Umrechnung) miteinander multipliziert werden müssen.
-* **Physikalische Berechnungen:** Berechnung von komplexeren Größen wie Volumenströmen, elektrischer Leistung oder Energieflüssen, bei denen mehrere Messgrößen und konstante Faktoren einfließen.
-* **Kaskaden-Vermeidung:** Zusammenfassung mehrerer Multiplikationsschritte in einem einzigen Baustein zur Erhöhung der Übersichtlichkeit im Applikationsdiagramm.
+- **Signal-Skalierung:** Kalibrierung oder Anpassung von Sensorwerten, bei denen mehrere Faktoren (z. B. Grundwert, Verstärkung, Korrekturfaktor, Einheiten-Umrechnung) miteinander multipliziert werden müssen.
+- **Physikalische Berechnungen:** Berechnung von komplexeren Größen wie Volumenströmen, elektrischer Leistung oder Energieflüssen, bei denen mehrere Messgrößen und konstante Faktoren einfließen.
+- **Kaskaden-Vermeidung:** Zusammenfassung mehrerer Multiplikationsschritte in einem einzigen Baustein zur Erhöhung der Übersichtlichkeit im Applikationsdiagramm.
 
 ## Vergleich mit ähnlichen Bausteinen
 

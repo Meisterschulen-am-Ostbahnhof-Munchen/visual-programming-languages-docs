@@ -31,12 +31,12 @@ The function block `ALI_ADD_3` is a generic arithmetic block for adding three va
 
 The module communicates exclusively via adapter interfaces:
 
-* **Sockets (Input Interfaces):**
-* `IN1` (Type: `adapter::types::unidirectional::ALI`): Interface for the first summand (input value 1).
-* `IN2` (Type: `adapter::types::unidirectional::ALI`): Interface for the second summand (input value 2).
-* `IN3` (Type: `adapter::types::unidirectional::ALI`): Interface for the third addend (input value 3).
-* **Plugs (Output Interfaces):**
-* `OUT` (Type: `adapter::types::unidirectional::ALI`): Interface for outputting the calculated result.
+- **Sockets (Input Interfaces):**
+- `IN1` (Type: `adapter::types::unidirectional::ALI`): Interface for the first summand (input value 1).
+- `IN2` (Type: `adapter::types::unidirectional::ALI`): Interface for the second summand (input value 2).
+- `IN3` (Type: `adapter::types::unidirectional::ALI`): Interface for the third addend (input value 3).
+- **Plugs (Output Interfaces):**
+- `OUT` (Type: `adapter::types::unidirectional::ALI`): Interface for outputting the calculated result.
 
 ## Functionality
 
@@ -48,8 +48,8 @@ The result and the corresponding update event are then passed on to the subseque
 
 ## Technical Features
 
-* **Generic Implementation:** The function block is declared as a generic type (`GEN_ALI_ADD`). This allows for flexible adaptation to various data types supported by the `ALI` adapter.
-* **Use of Adapters:** By encapsulating data and events in unidirectional adapters (`ALI`), the number of necessary connection lines in the 4diac-ide application editor is drastically reduced, resulting in improved clarity.
+- **Generic Implementation:** The function block is declared as a generic type (`GEN_ALI_ADD`). This allows for flexible adaptation to various data types supported by the `ALI` adapter.
+- **Use of Adapters:** By encapsulating data and events in unidirectional adapters (`ALI`), the number of necessary connection lines in the 4diac-ide application editor is drastically reduced, resulting in improved clarity.
 
 ## State Overview
 
@@ -57,14 +57,14 @@ The function block operates purely stateless. There is no internal state machine
 
 ## Application Scenarios
 
-* **Measurement Summing:** Summarizing three individual analog measurements (e.g., power consumption of three phases, flow rates from three pipes) into a total value.
-* **Average Preparation:** Summing three values for subsequent division by 3 in a subsequent function block.
-* **Structured Signal Processing:** Used in complex projects where analog signals need to be standardized and routed clearly via adapter channels.
+- **Measurement Summing:** Summarizing three individual analog measurements (e.g., power consumption of three phases, flow rates from three pipes) into a total value.
+- **Average Preparation:** Summing three values for subsequent division by 3 in a subsequent function block.
+- **Structured Signal Processing:** Used in complex projects where analog signals need to be standardized and routed clearly via adapter channels.
 
 ## Comparison with Similar Components
 
-* **Standard ADD (IEC 61131-3):** A standard ADD component uses classic data and event connections. `ALI_ADD_3`, on the other hand, encapsulates these interfaces in adapters, reducing visual complexity in system design.
-* **Cascaded Dual Adders:** To add three values with conventional dual adders, two components would have to be connected in series. `ALI_ADD_3` eliminates the need for one component as well as the intermediate instantiation and wiring.
+- **Standard ADD (IEC 61131-3):** A standard ADD component uses classic data and event connections. `ALI_ADD_3`, on the other hand, encapsulates these interfaces in adapters, reducing visual complexity in system design.
+- **Cascaded Dual Adders:** To add three values with conventional dual adders, two components would have to be connected in series. `ALI_ADD_3` eliminates the need for one component as well as the intermediate instantiation and wiring.
 
 ## Change Detection
 

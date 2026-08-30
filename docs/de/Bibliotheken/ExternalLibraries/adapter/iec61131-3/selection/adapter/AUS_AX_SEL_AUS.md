@@ -8,7 +8,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsbaustein **AUS_AX_SEL_AUS** ist ein binärer Selektor (Multiplexer) für IEC 61499-Systeme. Er dient dazu, basierend auf dem Zustand eines Auswahlsignals (Selector `G`), zwischen zwei Eingangsadaptern (`IN0` und `IN1`) zu wählen und den ausgewählten Wert an den Ausgangsadapter (`OUT`) weiterzuleiten. 
+Der Funktionsbaustein **AUS_AX_SEL_AUS** ist ein binärer Selektor (Multiplexer) für IEC 61499-Systeme. Er dient dazu, basierend auf dem Zustand eines Auswahlsignals (Selector `G`), zwischen zwei Eingangsadaptern (`IN0` und `IN1`) zu wählen und den ausgewählten Wert an den Ausgangsadapter (`OUT`) weiterzuleiten.
 
 Der Baustein nutzt unidirektionale Adapterstrukturen, was eine saubere Kapselung von Daten- und Ereignisströmen ermöglicht und das visuelle Routing innerhalb der Entwicklungsumgebung vereinfacht.
 
@@ -36,21 +36,21 @@ Da dieser Funktionsbaustein als Composite-Netzwerk realisiert ist und vollständ
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **G** (Typ: `adapter::types::unidirectional::AX`):
-    *   **Beschreibung:** Auswahlsignal (Selector).
-    *   **Inhalt:** Enthält das Auswahlerleignis `E1` und das dazugehörige Datensignal `D1` (üblicherweise boolesch interpretiert), das bestimmt, welcher Eingang durchgeschaltet wird.
-*   **IN0** (Typ: `adapter::types::unidirectional::AUS`):
-    *   **Beschreibung:** Erster auswählbarer Eingang. Wird an den Ausgang weitergeleitet, wenn der Selektor `G` den Zustand `FALSE` (bzw. `0`) aufweist.
-    *   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
-*   **IN1** (Typ: `adapter::types::unidirectional::AUS`):
-    *   **Beschreibung:** Zweiter auswählbarer Eingang. Wird an den Ausgang weitergeleitet, wenn der Selektor `G` den Zustand `TRUE` (bzw. `1`) aufweist.
-    *   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
+-   **G** (Typ: `adapter::types::unidirectional::AX`):
+    -   **Beschreibung:** Auswahlsignal (Selector).
+    -   **Inhalt:** Enthält das Auswahlerleignis `E1` und das dazugehörige Datensignal `D1` (üblicherweise boolesch interpretiert), das bestimmt, welcher Eingang durchgeschaltet wird.
+-   **IN0** (Typ: `adapter::types::unidirectional::AUS`):
+    -   **Beschreibung:** Erster auswählbarer Eingang. Wird an den Ausgang weitergeleitet, wenn der Selektor `G` den Zustand `FALSE` (bzw. `0`) aufweist.
+    -   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
+-   **IN1** (Typ: `adapter::types::unidirectional::AUS`):
+    -   **Beschreibung:** Zweiter auswählbarer Eingang. Wird an den Ausgang weitergeleitet, wenn der Selektor `G` den Zustand `TRUE` (bzw. `1`) aufweist.
+    -   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AUS`):
-    *   **Beschreibung:** Der ausgewählte Ausgang. Erhält die Daten und Ereignisse des jeweils durchgeschalteten Eingangs.
-    *   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
+-   **OUT** (Typ: `adapter::types::unidirectional::AUS`):
+    -   **Beschreibung:** Der ausgewählte Ausgang. Erhält die Daten und Ereignisse des jeweils durchgeschalteten Eingangs.
+    -   **Inhalt:** Ereignis `E1` und Datensignal `D1` (Daten-Typ: `USINT`).
 
 ## Funktionsweise
 
@@ -59,15 +59,15 @@ Der Baustein kapsele ein internes Netzwerk, welches die Adapter-Signale extrahie
 1.  **Datenerfassung:** Sobald an einem der Eingangs-Adapter (`G`, `IN0` oder `IN1`) ein Ereignis (`E1`) eintrifft, wird der entsprechende Datenwert (`D1`) mithilfe von Flip-Flops (`E_D_FF` bzw. `E_D_FF_ANY`) zwischengespeichert.
 2.  **Wertübergabe:** Die Werte der Eingänge `IN0` und `IN1` werden über Kopiervorgänge (`F_MOVE` mit dem Datentyp `USINT`) an den zentralen Selektionsbaustein weitergegeben.
 3.  **Selektion:** Der interne Baustein `F_SEL` (standardmäßiger IEC 61131-3 Selektor) entscheidet anhand des Zustands von `G.D1`:
-    *   Ist `G.D1` = `0` (bzw. `FALSE`), wird der Wert von `IN0` auf den Ausgang gelegt.
-    *   Ist `G.D1` = `1` (bzw. `TRUE`), wird der Wert von `IN1` auf den Ausgang gelegt.
+    -   Ist `G.D1` = `0` (bzw. `FALSE`), wird der Wert von `IN0` auf den Ausgang gelegt.
+    -   Ist `G.D1` = `1` (bzw. `TRUE`), wird der Wert von `IN1` auf den Ausgang gelegt.
 4.  **Ausgabe:** Das Ergebnis wird über ein weiteres Flip-Flop (`E_D_FF_ANY_OUT`) an den Ausgangs-Adapter `OUT` übergeben und triggert dort das Ereignis `OUT.E1` zeitgleich mit der Bereitstellung der Daten auf `OUT.D1`.
 
 ## Technische Besonderheiten
 
-*   **Ereignisgesteuert:** Der Ausgang wird bei jeder Änderung an den Eingängen oder des Selektors sofort aktualisiert und mit einem neuen Ereignis versehen.
-*   **Datentyp-Spezifisch:** Intern ist die Verarbeitung der Datenkanäle auf den Typ `USINT` ausgelegt (festgelegt über die Attribute der internen `F_MOVE`-Instanzen).
-*   **Adapter-Kapselung:** Erleichtert das saubere Design von Applikationsdiagrammen, da komplexe Daten- und Event-Paare als eine einzige Verbindung (Bus) dargestellt werden.
+-   **Ereignisgesteuert:** Der Ausgang wird bei jeder Änderung an den Eingängen oder des Selektors sofort aktualisiert und mit einem neuen Ereignis versehen.
+-   **Datentyp-Spezifisch:** Intern ist die Verarbeitung der Datenkanäle auf den Typ `USINT` ausgelegt (festgelegt über die Attribute der internen `F_MOVE`-Instanzen).
+-   **Adapter-Kapselung:** Erleichtert das saubere Design von Applikationsdiagrammen, da komplexe Daten- und Event-Paare als eine einzige Verbindung (Bus) dargestellt werden.
 
 ## Zustandsübersicht
 
@@ -80,9 +80,9 @@ Da es sich um einen Composite-Funktionsbaustein ohne eigene Execution Control Ch
 
 ## Anwendungsszenarien
 
-*   **Sollwert-Umschaltung:** Dynamisches Umschalten einer Zielgröße (z. B. einer Drehzahl oder Stufe vom Typ `USINT`) zwischen einem Automatikbetrieb (`IN1`) und einem Handbetrieb (`IN0`).
-*   **Rezepturwahl:** Auswahl zwischen zwei fest vorgegebenen Betriebsmodi oder Parametersätzen in einer Maschine über eine übergeordnete Steuerung.
-*   **Fehlersicherungen:** Schnelles Umschalten auf einen Ersatzwert (`IN0`), falls ein Hauptsignalweg gestört ist.
+-   **Sollwert-Umschaltung:** Dynamisches Umschalten einer Zielgröße (z. B. einer Drehzahl oder Stufe vom Typ `USINT`) zwischen einem Automatikbetrieb (`IN1`) und einem Handbetrieb (`IN0`).
+-   **Rezepturwahl:** Auswahl zwischen zwei fest vorgegebenen Betriebsmodi oder Parametersätzen in einer Maschine über eine übergeordnete Steuerung.
+-   **Fehlersicherungen:** Schnelles Umschalten auf einen Ersatzwert (`IN0`), falls ein Hauptsignalweg gestört ist.
 
 ## Vergleich mit ähnlichen Bausteinen
 

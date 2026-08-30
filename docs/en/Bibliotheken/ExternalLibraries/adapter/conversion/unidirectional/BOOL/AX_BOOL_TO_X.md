@@ -61,11 +61,11 @@ Compared to other conversion blocks, AX_BOOL_TO_X stands out due to its specific
 
 ## 🛠️ Related Exercises
 
-* [Exercise_001_AX_b](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
-* [Exercise_002a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
-* [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
-* [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
-* [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+- [Exercise_001_AX_b](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
+- [Exercise_002a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
+- [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+- [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+- [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
 
 ## Conclusion
 

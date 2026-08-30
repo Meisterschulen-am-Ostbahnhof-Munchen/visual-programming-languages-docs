@@ -52,7 +52,7 @@ Bei einem Ereignis am Eingang `REQ` wird der Algorithmus `REQ` ausgeführt:
    - `VALID` wird auf `FALSE` gesetzt.
 4. Nach der Verarbeitung wird das Ereignis `CNF` ausgelöst.
 
-Der Vergleich nutzt dabei die Semantik der importierten Konstanten:  
+Der Vergleich nutzt dabei die Semantik der importierten Konstanten:
 `DONT_CARE_2bit` definiert die Grenze, ab der Werte als „egal“ oder ungültig gelten. Der Initialwert von `IN` ist auf `NOT_AVAILABLE_2bit` gesetzt, der typischerweise oberhalb dieser Grenze liegt, sodass der Baustein beim Start einen definierten ungültigen Zustand ausgibt.
 
 ## Technische Besonderheiten
@@ -77,9 +77,9 @@ Es existiert nur ein Zustand:
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **`FIELDBUS_QUARTER_TO_SIGNAL`** ist spezialisiert auf die Unterscheidung zwischen gültigen und ungültigen Werten mittels eines festen Schwellwerts.  
-- Ein allgemeiner **Wertfilter** (z. B. `F_BAND`) könnte dagegen einen unteren und oberen Grenzwert abfragen.  
-- Ein **Gültigkeitsprüfer** (z. B. `VALIDITY_CHECK`) setzt oft zusätzlich Quality‑of‑Service‑Flags.  
+- **`FIELDBUS_QUARTER_TO_SIGNAL`** ist spezialisiert auf die Unterscheidung zwischen gültigen und ungültigen Werten mittels eines festen Schwellwerts.
+- Ein allgemeiner **Wertfilter** (z. B. `F_BAND`) könnte dagegen einen unteren und oberen Grenzwert abfragen.
+- Ein **Gültigkeitsprüfer** (z. B. `VALIDITY_CHECK`) setzt oft zusätzlich Quality‑of‑Service‑Flags.
 Der vorliegende Baustein besticht durch seine einfache, auf Feldbustypen zugeschnittene Logik.
 
 ## Fazit
@@ -90,4 +90,4 @@ Der vorliegende Baustein besticht durch seine einfache, auf Feldbustypen zugesch
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

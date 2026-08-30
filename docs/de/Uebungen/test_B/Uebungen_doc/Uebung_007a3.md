@@ -20,10 +20,10 @@ Realisierung eines Blinkers mit definiertem Stopp-Verhalten. Es wird demonstrier
 
 ![Uebung_007a3_network](./Uebung_007a3_network.svg)
 
-  * **`E_CYCLE`**: Der Taktgeber.
-  * **`E_SWITCH`**: Die Ereignis-Weiche zur Realisierung der Toggle-Funktion.
-  * **`E_SR`**: Der Speicherbaustein (Reset-dominant verschaltet).
-  * **`START` & `STOP`**: Die Bedien-Taster.
+  - **`E_CYCLE`**: Der Taktgeber.
+  - **`E_SWITCH`**: Die Ereignis-Weiche zur Realisierung der Toggle-Funktion.
+  - **`E_SR`**: Der Speicherbaustein (Reset-dominant verschaltet).
+  - **`START` & `STOP`**: Die Bedien-Taster.
 
 -----
 
@@ -47,8 +47,8 @@ Die Sicherheit wird durch eine doppelte Belegung des Stopp-Signals erreicht:
 
 1.  **Blinkbetrieb**: Der `E_CYCLE` triggert die `E_SWITCH/E_SR` Kombination, was zum periodischen Umschalten führt.
 2.  **Ausschalten**: Wenn der Nutzer `STOP` drückt, passieren zwei Dinge gleichzeitig:
-    *   Der `E_CYCLE` wird angehalten (keine neuen Takte mehr).
-    *   Der Speicher `E_SR` erhält einen **direkten Reset-Befehl**. Damit wird der Ausgang sofort auf `FALSE` gezwungen, egal ob das Flip-Flop gerade im "An"- oder "Aus"-Zustand war.
+    -   Der `E_CYCLE` wird angehalten (keine neuen Takte mehr).
+    -   Der Speicher `E_SR` erhält einen **direkten Reset-Befehl**. Damit wird der Ausgang sofort auf `FALSE` gezwungen, egal ob das Flip-Flop gerade im "An"- oder "Aus"-Zustand war.
 
 -----
 

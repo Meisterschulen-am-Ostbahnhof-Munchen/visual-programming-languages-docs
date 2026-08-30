@@ -39,8 +39,8 @@ When an event arrives at input `EI`, the function block immediately triggers the
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a8](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a8.md)
-* [Exercise_004a8_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
+- [Exercise_004a8](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a8.md)
+- [Exercise_004a8_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
 
 ## Conclusion
 
@@ -50,4 +50,4 @@ The `E_SPLIT_2` block is a useful tool for generating a fixed, short event seque
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

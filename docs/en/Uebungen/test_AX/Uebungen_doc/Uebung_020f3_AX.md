@@ -17,9 +17,9 @@ Using the `AX_BLINK` block for asymmetric flashing.
 
 ![Uebung_020f3_AX_network](./Uebung_020f3_AX_network.svg)
 
-* **`AX_BLINK`**: Generates a flashing signal.
-* **Parameter `TIMELOW`**: Time for "Off" (1 s).
-* **Parameter `TIMEHIGH`**: Time for "On" (1.2 s).
+- **`AX_BLINK`**: Generates a flashing signal.
+- **Parameter `TIMELOW`**: Time for "Off" (1 s).
+- **Parameter `TIMEHIGH`**: Time for "On" (1.2 s).
 
 ----
 

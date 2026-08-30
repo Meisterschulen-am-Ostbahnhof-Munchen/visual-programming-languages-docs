@@ -20,8 +20,8 @@ Das Hauptziel ist die Vermeidung von redundantem Code. Anstatt für jeden Kanal 
 
 [cite_start]Dieser Baustein kapselt die grundlegende Logik der Signalweiterleitung[cite: 2]. Er besitzt zwei Parameter zur Hardware-Zuordnung:
 
-  * **`Input`**: Bestimmt den physischen Eingang (z.B. `Input_I1`).
-  * **`Output`**: Bestimmt den physischen Ausgang (z.B. `Output_Q1`).
+  - **`Input`**: Bestimmt den physischen Eingang (z.B. `Input_I1`).
+  - **`Output`**: Bestimmt den physischen Ausgang (z.B. `Output_Q1`).
 
 Im Inneren des Typs befinden sich ein `logiBUS_IX` und ein `logiBUS_QX` Baustein, die über eine Event- und eine Data-Connection fest miteinander verbunden sind.
 
@@ -29,8 +29,8 @@ Im Inneren des Typs befinden sich ein `logiBUS_IX` und ein `logiBUS_QX` Baustein
 
 In `Uebung_003a` werden zwei Instanzen dieses Typs platziert:
 
-  * **`F1`**: [cite_start]Parametriert für den Pfad `I1` zu `Q1`[cite: 1].
-  * **`F2`**: [cite_start]Parametriert für den Pfad `I2` zu `Q2`[cite: 1].
+  - **`F1`**: [cite_start]Parametriert für den Pfad `I1` zu `Q1`[cite: 1].
+  - **`F2`**: [cite_start]Parametriert für den Pfad `I2` zu `Q2`[cite: 1].
 
 -----
 

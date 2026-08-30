@@ -77,11 +77,11 @@ The **F_SUB** is a standards-compliant function block for subtracting numeric va
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Exercise_040_2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Exercise_040_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Exercise_041](../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
-* [Exercise_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_040](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Exercise_040_2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Exercise_040_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Exercise_041](../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Exercise_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

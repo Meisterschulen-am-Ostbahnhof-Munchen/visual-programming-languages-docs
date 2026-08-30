@@ -79,6 +79,6 @@ In this exercise, a sub-application was created to implement a toggle flip-flop 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
 ]

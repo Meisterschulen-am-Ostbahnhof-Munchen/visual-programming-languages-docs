@@ -17,8 +17,8 @@ Encapsulation of ISOBUS communication. The function block encapsulates the detai
 
 ![Uebung_003c_sub_network](./Uebung_003c_sub_network.svg)
 
-* **`IX`**: Type `logiBUS_IX`. Reads the local hardware pin (`Input`).
-* **`QX`**: Type `Aux_QX`. Sends the status as an ISOBUS message for the selected function number (`iInpNr`).
+- **`IX`**: Type `logiBUS_IX`. Reads the local hardware pin (`Input`).
+- **`QX`**: Type `Aux_QX`. Sends the status as an ISOBUS message for the selected function number (`iInpNr`).
 
 -----
 
@@ -26,11 +26,11 @@ Encapsulation of ISOBUS communication. The function block encapsulates the detai
 
 [cite_start]The function block is configured via two parameters[cite: 1]:
 
-* **`Input`**: The physical button on the controller.
-* **`iInpNr`**: The sequential number (index) in the ISOBUS auxiliary pool.
+- **`Input`**: The physical button on the controller.
+- **`iInpNr`**: The sequential number (index) in the ISOBUS auxiliary pool.
 
 Any change to the local button immediately triggers a corresponding status message in the ISOBUS network, making the button visible to other devices (e.g., task controllers).
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003c](Uebung_003c.md)
+- [Exercise_003c](Uebung_003c.md)

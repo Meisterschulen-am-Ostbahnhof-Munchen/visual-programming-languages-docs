@@ -51,4 +51,4 @@ The output flags lim will signal that the output limits are active.
 
 ## 🛠️ Related exercises
 
-* [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)

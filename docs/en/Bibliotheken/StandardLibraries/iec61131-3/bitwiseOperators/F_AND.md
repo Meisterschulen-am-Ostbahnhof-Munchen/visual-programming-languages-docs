@@ -58,8 +58,8 @@ The `F_AND` block performs a bitwise AND operation between the input variables `
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a2.md)
-* [Exercise_002a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
+- [Exercise_002a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a2.md)
+- [Exercise_002a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
 
 ## Conclusion
 

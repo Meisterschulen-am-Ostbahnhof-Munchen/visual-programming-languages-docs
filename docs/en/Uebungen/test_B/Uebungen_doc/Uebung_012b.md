@@ -17,11 +17,11 @@ Using the `INI` block for structured data storage. Unlike simple NVS key-value s
 
 ![Uebung_012b_network](./Uebung_012b_network.svg)
 
-* **`INI`**: Type `eclipse4diac::storage::INI`. [cite_start]This block stores values in a file-based structure[cite: 1]. In addition to `KEY`, it requires `SECTION`.
-* **Parameters**:
-* `SECTION`: "SECTION_I1_STORE"
-* `KEY`: "KEY_I1_STORE"
-* `DEFAULT_VALUE`: 55 (loaded if no file exists).
+- **`INI`**: Type `eclipse4diac::storage::INI`. [cite_start]This block stores values in a file-based structure[cite: 1]. In addition to `KEY`, it requires `SECTION`.
+- **Parameters**:
+- `SECTION`: "SECTION_I1_STORE"
+- `KEY`: "KEY_I1_STORE"
+- `DEFAULT_VALUE`: 55 (loaded if no file exists).
 
 -----
 
@@ -39,6 +39,6 @@ INI files are particularly useful when parameters need to be read or edited exte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

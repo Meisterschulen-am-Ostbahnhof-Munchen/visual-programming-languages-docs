@@ -11,14 +11,14 @@ Der Funktionsbaustein **AS_TO_AW** ist ein zusammengesetzter Baustein (Composite
 
 ### **Ereignis-Eingänge**
 
-*Keine direkten Ereignis-Eingänge.*  
+*Keine direkten Ereignis-Eingänge.*
 Der Baustein besitzt einen **Socket** vom Typ `AS`, der indirekt einen Ereignis-Eingang bereitstellt:
 
 - **AS_IN.E1** – Ereignis-Eingang über den Socket; ein eingehendes Ereignis löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 
-*Keine direkten Ereignis-Ausgänge.*  
+*Keine direkten Ereignis-Ausgänge.*
 Der Baustein besitzt einen **Plug** vom Typ `AW`, der indirekt einen Ereignis-Ausgang bereitstellt:
 
 - **AW_OUT.E1** – Ereignis-Ausgang über den Plug; nach erfolgreicher Konvertierung wird ein Ereignis gesendet.
@@ -40,7 +40,7 @@ Der Baustein besitzt einen **Plug** vom Typ `AW`, der indirekt einen Ereignis-Au
 
 ## Funktionsweise
 
-Der Baustein enthält eine interne Instanz des Konvertierungsbausteins `iec61131::conversion::F_SINT_TO_WORD`.  
+Der Baustein enthält eine interne Instanz des Konvertierungsbausteins `iec61131::conversion::F_SINT_TO_WORD`.
 Die Verarbeitung erfolgt ereignisgesteuert:
 
 1. Ein Ereignis am **AS_IN.E1** (Socket) triggert den internen Baustein über seinen `REQ`-Eingang.
@@ -91,4 +91,4 @@ Der **AS_TO_AW** ist ein nützlicher, kompakter Konvertierungsbaustein, der die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

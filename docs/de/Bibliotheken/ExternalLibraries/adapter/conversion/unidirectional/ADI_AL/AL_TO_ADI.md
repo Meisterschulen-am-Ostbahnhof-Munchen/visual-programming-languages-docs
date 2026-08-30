@@ -30,12 +30,12 @@ Keine eigenen Daten-Ausgänge. Der konvertierte DINT-Wert wird über den Plug `A
 
 ### **Adapter**
 
-- **AL_IN (Socket)**  
-  Typ: `adapter::types::unidirectional::AL`  
+- **AL_IN (Socket)**
+  Typ: `adapter::types::unidirectional::AL`
   Aufnahme eines unidirektionalen LWORD-Adapters. Stellt das Auslöseereignis (`E1`) und den LWORD-Eingabewert (`D1`) bereit.
 
-- **ADI_OUT (Plug)**  
-  Typ: `adapter::types::unidirectional::ADI`  
+- **ADI_OUT (Plug)**
+  Typ: `adapter::types::unidirectional::ADI`
   Bereitstellung eines unidirektionalen DINT-Adapters. Liefert das Bestätigungsereignis (`E1`) und den konvertierten DINT-Ausgabewert (`D1`).
 
 ## Funktionsweise
@@ -78,4 +78,4 @@ Der Composite-FB `AL_TO_ADI` stellt eine saubere und standardisierte Lösung zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

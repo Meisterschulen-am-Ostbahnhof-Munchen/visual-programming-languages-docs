@@ -17,13 +17,13 @@ Implementation of a reversing contactor control with software interlock. "Left" 
 
 ![Uebung_006a3_AX_network](./Uebung_006a3_AX_network.svg)
 
-* **`I1` (Set)**: Turn on (in the last selected direction or default).
-* **`I2` (Reset)**: Turn off.
-* **`I3` (Toggle)**: Start/Stop.
-* **`AX_T_FF_SR`**: Main memory "Motor On/Off".
-* **`AX_SPLIT_3`**: Distributes the "Motor is on" signal.
-* **`AX_LinksRechts_T_FF` (SubApp)**: Stores the current *direction* (left or right).
-* **2x `AX_AND_2`**: Interlock gate.
+- **`I1` (Set)**: Turn on (in the last selected direction or default).
+- **`I2` (Reset)**: Turn off.
+- **`I3` (Toggle)**: Start/Stop.
+- **`AX_T_FF_SR`**: Main memory "Motor On/Off".
+- **`AX_SPLIT_3`**: Distributes the "Motor is on" signal.
+- **`AX_LinksRechts_T_FF` (SubApp)**: Stores the current *direction* (left or right).
+- **2x `AX_AND_2`**: Interlock gate.
 
 -----
 

@@ -61,9 +61,9 @@ The `E_TRAIN` (Event Train) is a function block according to IEC 61499 that gene
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
-* [Exercise_035a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
-* [Exercise_091](../../../Uebungen/test_B/Uebungen_doc/Uebung_091.md)
+- [Exercise_035a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
+- [Exercise_035a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+- [Exercise_091](../../../Uebungen/test_B/Uebungen_doc/Uebung_091.md)
 
 ## Conclusion
 
@@ -73,4 +73,4 @@ The `E_TRAIN` module is ideal for applications requiring a fixed number of event
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

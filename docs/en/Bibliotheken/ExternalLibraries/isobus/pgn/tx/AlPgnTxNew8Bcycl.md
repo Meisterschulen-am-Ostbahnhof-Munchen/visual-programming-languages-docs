@@ -10,33 +10,33 @@ The function block `AlPgnTxNew8Bcycl` is used for the cyclic transmission of dat
 
 ### **Event Inputs**
 
-* **INIT**: Initializes the function block.
-* **install**: Installs a new PGN (TX) to be transmitted, along with its associated configuration data. Triggers the processing of the included data inputs (`u32Pgn`, `NmDestin`, `u16DaSize`, `u8Priority`, `u16DefRepRate`, `Data`).
-* **UPD**: Updates the payload (`Data`) for the previously installed PGN to use it in the next cyclic transmission.
+- **INIT**: Initializes the function block.
+- **install**: Installs a new PGN (TX) to be transmitted, along with its associated configuration data. Triggers the processing of the included data inputs (`u32Pgn`, `NmDestin`, `u16DaSize`, `u8Priority`, `u16DefRepRate`, `Data`).
+- **UPD**: Updates the payload (`Data`) for the previously installed PGN to use it in the next cyclic transmission.
 
 ### **Event Outputs**
 
-* **INITO**: Confirms completion of initialization.
-* **installO**: Signals that the installation process is complete. Includes `PGN_handle` as an output value.
-* **UPDO**: Confirms that the payload update (`UPD`) was processed successfully.
-* **CNF**: Confirms that a data record was sent successfully.
-* **dataERR**: Indicates an error related to the payload (`Data`). It carries the error code `dataERRC`.
-* **pgnERR**: Indicates an error related to the PGN configuration or management. It carries the error code `pgnERRC`.
+- **INITO**: Confirms completion of initialization.
+- **installO**: Signals that the installation process is complete. Includes `PGN_handle` as an output value.
+- **UPDO**: Confirms that the payload update (`UPD`) was processed successfully.
+- **CNF**: Confirms that a data record was sent successfully.
+- **dataERR**: Indicates an error related to the payload (`Data`). It carries the error code `dataERRC`.
+- **pgnERR**: Indicates an error related to the PGN configuration or management. It carries the error code `pgnERRC`.
 
 ### **Data Inputs**
 
-* **u32Pgn** (UDINT): The parameter group number (PGN) to be sent. Valid range: 0 to 0x3FFFF.
-* **NmDestin** (isobus::pgn::ISONETEVENT_T): Defines the communication partner (destination address) for the message.
-* **u16DaSize** (UINT): The length of the data to be sent in bytes. Valid range: 0 to 8.
-* **u8Priority** (USINT): The priority of the message on the CAN bus (0 = highest, 7 = lowest). Default value: 7.
-* **u16DefRepRate** (UINT): The cyclic transmission interval in milliseconds (0 ... 0xFDFF ms). A value of 0 disables cyclic transmission. Default value: 0.
-* **Data** (isobus::pgn::CAN_MSG): The payload to be sent as a PGN.
+- **u32Pgn** (UDINT): The parameter group number (PGN) to be sent. Valid range: 0 to 0x3FFFF.
+- **NmDestin** (isobus::pgn::ISONETEVENT_T): Defines the communication partner (destination address) for the message.
+- **u16DaSize** (UINT): The length of the data to be sent in bytes. Valid range: 0 to 8.
+- **u8Priority** (USINT): The priority of the message on the CAN bus (0 = highest, 7 = lowest). Default value: 7.
+- **u16DefRepRate** (UINT): The cyclic transmission interval in milliseconds (0 ... 0xFDFF ms). A value of 0 disables cyclic transmission. Default value: 0.
+- **Data** (isobus::pgn::CAN_MSG): The payload to be sent as a PGN.
 
 ### **Data Outputs**
 
-* **PGN_handle** (INT): A handle (identifier) for the successfully installed PGN. In case of an error, an invalid handle value (`HANDLE_UNVALID`) is returned.
-* **dataERRC** (INT): An error code providing detailed information about a `dataERR` event.
-* **pgnERRC** (INT): An error code providing detailed information about a `pgnERR` event.
+- **PGN_handle** (INT): A handle (identifier) for the successfully installed PGN. In case of an error, an invalid handle value (`HANDLE_UNVALID`) is returned.
+- **dataERRC** (INT): An error code providing detailed information about a `dataERR` event.
+- **pgnERRC** (INT): An error code providing detailed information about a `pgnERR` event.
 
 ### **Adapter**
 
@@ -51,10 +51,10 @@ This function block does not use any adapter interfaces.
 
 ## Technical Features
 
-* This block is designed for use in ISOBUS environments (agricultural machinery) and uses specific ISOBUS data types (`ISONETEVENT_T`, `CAN_MSG`).
-* Cyclical transmission can be deactivated by setting `u16DefRepRate` to 0, enabling on-demand operation.
-* * Error handling is structured via dedicated events (`dataERR`, `pgnERR`), enabling robust integration into higher-level controllers.
-* Returning a `PGN_handle` event allows the management of multiple installed PGNs within a single system.
+- This block is designed for use in ISOBUS environments (agricultural machinery) and uses specific ISOBUS data types (`ISONETEVENT_T`, `CAN_MSG`).
+- Cyclical transmission can be deactivated by setting `u16DefRepRate` to 0, enabling on-demand operation.
+- * Error handling is structured via dedicated events (`dataERR`, `pgnERR`), enabling robust integration into higher-level controllers.
+- Returning a `PGN_handle` event allows the management of multiple installed PGNs within a single system.
 
 ## State Overview
 
@@ -66,18 +66,18 @@ This function block does not use any adapter interfaces.
 
 ## Application Scenarios
 
-* **ISOBUS-compliant Machine Control**: Cyclic transmission of machine data (e.g., speed, pressure, position) from an electronic control unit (ECU) to a terminal or other network participants.
-* **Diagnostic and Monitoring Systems**: Regular transmission of status and operating parameters for monitoring purposes.
-* **Implementation of ISOBUS "Fast Packet" protocols**: For PGNs that carry more than 8 bytes of data and therefore need to be transmitted in multiple CAN messages (supported by the `CAN_MSG` data type).
+- **ISOBUS-compliant Machine Control**: Cyclic transmission of machine data (e.g., speed, pressure, position) from an electronic control unit (ECU) to a terminal or other network participants.
+- **Diagnostic and Monitoring Systems**: Regular transmission of status and operating parameters for monitoring purposes.
+- **Implementation of ISOBUS "Fast Packet" protocols**: For PGNs that carry more than 8 bytes of data and therefore need to be transmitted in multiple CAN messages (supported by the `CAN_MSG` data type).
 
 ## ⚖️ Comparison with similar blocks
 
-* **Compared to simple `E_CYC` blocks**: `AlPgnTxNew8Bcycl` is specialized for ISOBUS PGNs and offers integrated handling of priority, target addressing, and error management, while a generic cyclic event generator (`E_CYC`) only provides timing.
-* **Compared to generic CAN transmit blocks**: This block abstracts the low-level CAN details (identifier calculation, data frames) and operates directly at the more logical PGN level according to the ISOBUS standard.
+- **Compared to simple `E_CYC` blocks**: `AlPgnTxNew8Bcycl` is specialized for ISOBUS PGNs and offers integrated handling of priority, target addressing, and error management, while a generic cyclic event generator (`E_CYC`) only provides timing.
+- **Compared to generic CAN transmit blocks**: This block abstracts the low-level CAN details (identifier calculation, data frames) and operates directly at the more logical PGN level according to the ISOBUS standard.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_127](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
+- [Exercise_127](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
 
 ## Conclusion
 

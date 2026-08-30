@@ -22,10 +22,10 @@ Erzeugung von zeitversetzten Impulsen basierend auf dem GBSD-Distanzwert.
 
 Alle Bausteine reagieren auf den gleichen Distanzwert vom Radar (`I_GBSD`). Sie unterscheiden sich jedoch im Parameter **`DIST_OFF`** (Offset):
 
-*   `Q1`: Offset 0 mm.
-*   `Q2`: Offset 1000 mm.
-*   `Q3`: Offset 2000 mm.
-*   `Q4`: Offset 3000 mm.
+-   `Q1`: Offset 0 mm.
+-   `Q2`: Offset 1000 mm.
+-   `Q3`: Offset 2000 mm.
+-   `Q4`: Offset 3000 mm.
 
 Dies bewirkt ein "Wander-Muster": Wenn die Maschine fährt, schalten die Ausgänge nacheinander ein und aus, jeweils um einen Meter versetzt zur gefahrenen Strecke.
 

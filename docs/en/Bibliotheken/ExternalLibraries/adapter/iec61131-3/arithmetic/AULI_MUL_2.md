@@ -31,15 +31,15 @@ The function block `AULI_MUL_2` is used to perform an arithmetic multiplication 
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AULI`):
-* First input value (multiplicand) for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::AULI`):
-* Second input value (multiplier) for multiplication.
+- **IN1** (Type: `adapter::types::unidirectional::AULI`):
+- First input value (multiplicand) for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::AULI`):
+- Second input value (multiplier) for multiplication.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AULI`):
-* Result of the multiplication ($OUT = IN1 × IN2$).
+- **OUT** (Type: `adapter::types::unidirectional::AULI`):
+- Result of the multiplication ($OUT = IN1 × IN2$).
 
 ---
 
@@ -55,10 +55,10 @@ The result and the corresponding update event are then output via the output ada
 
 ## Technical Features
 
-* **Generic Function Block:** The type is declared as `GEN_AULI_MUL`, which allows for flexible reusability for various numeric data types, provided they are supported by the adapter type.
-* **Adapter Encapsulation:** By using unidirectional adapters (`AULI`), data and the associated trigger event are bundled in a single connection. This prevents "spaghetti code" and loose event-data pairs in the function plan.
-* **Package Membership:** The function block is organized in the `adapter::iec61131::arithmetic` namespace.
-* ---
+- **Generic Function Block:** The type is declared as `GEN_AULI_MUL`, which allows for flexible reusability for various numeric data types, provided they are supported by the adapter type.
+- **Adapter Encapsulation:** By using unidirectional adapters (`AULI`), data and the associated trigger event are bundled in a single connection. This prevents "spaghetti code" and loose event-data pairs in the function plan.
+- **Package Membership:** The function block is organized in the `adapter::iec61131::arithmetic` namespace.
+- ---
 
 ## State Overview
 
@@ -72,9 +72,9 @@ Since this is a purely computational function block (arithmetic function), it do
 
 ## Application Scenarios
 
-* **Signal Processing:** Scaling of sensor values where a measured value needs to be multiplied by a constant or dynamic factor.
-* **Control Engineering:** Calculation of manipulated variables in control loops (e.g., the proportional component of a PID controller).
-* **Structured Control Architectures:** Use in complex systems where adapters are used uniformly to maintain the readability of the overall system.
+- **Signal Processing:** Scaling of sensor values where a measured value needs to be multiplied by a constant or dynamic factor.
+- **Control Engineering:** Calculation of manipulated variables in control loops (e.g., the proportional component of a PID controller).
+- **Structured Control Architectures:** Use in complex systems where adapters are used uniformly to maintain the readability of the overall system.
 
 --
 

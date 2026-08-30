@@ -31,12 +31,12 @@ Since this function block is based entirely on an adapter architecture, it does 
 
 #### Sockets (Input Adapters)
 
-* **IN1** (Type: `adapter::types::unidirectional::AI`): The first analog input value (minuend) for the subtraction operation.
-* **IN2** (Type: `adapter::types::unidirectional::AI`): The second analog input value (subtrahend), which is subtracted from `IN1`.
+- **IN1** (Type: `adapter::types::unidirectional::AI`): The first analog input value (minuend) for the subtraction operation.
+- **IN2** (Type: `adapter::types::unidirectional::AI`): The second analog input value (subtrahend), which is subtracted from `IN1`.
 
 #### Plugs (Output Adapters)
 
-* **OUT** (Type: `adapter::types::unidirectional::AI`): The result of the subtraction (difference: `IN1 - IN2`).
+- **OUT** (Type: `adapter::types::unidirectional::AI`): The result of the subtraction (difference: `IN1 - IN2`).
 
 ## Functionality
 
@@ -48,8 +48,8 @@ As soon as the input values at sockets `IN1` or `IN2` change, or a corresponding
 
 ## Technical Features
 
-* **Generic Block Type (`GEN_AI_SUB`)**: The block is internally defined as a generic type. This allows for flexible adaptation to the analog data types used by the adapters in the system.
-* **Adapter Encapsulation**: The use of unidirectional analog adapters (`unidirectional::AI`) consolidates data and event lines. This minimizes the wiring effort in the FBD (Function Block Diagram) and significantly improves clarity.
+- **Generic Block Type (`GEN_AI_SUB`)**: The block is internally defined as a generic type. This allows for flexible adaptation to the analog data types used by the adapters in the system.
+- **Adapter Encapsulation**: The use of unidirectional analog adapters (`unidirectional::AI`) consolidates data and event lines. This minimizes the wiring effort in the FBD (Function Block Diagram) and significantly improves clarity.
 
 ## State Overview
 
@@ -57,9 +57,9 @@ The block behaves like a purely functional block without internal memory (analog
 
 ## Application Scenarios
 
-* **Differential Pressure and Differential Temperature Measurement**: Calculation of physical differential values in process engineering (e.g., determining the pressure drop across a filter or the temperature difference between the flow and return lines).
-* **Control Deviation**: Calculation of the control deviation ($e = w - x$) in control loops where the setpoint and actual value are available as adapter structures.
-* **Zero Point Correction / Offset Subtraction**: Subtraction of a calibration or offset value from a continuous measurement signal.
+- **Differential Pressure and Differential Temperature Measurement**: Calculation of physical differential values in process engineering (e.g., determining the pressure drop across a filter or the temperature difference between the flow and return lines).
+- **Control Deviation**: Calculation of the control deviation ($e = w - x$) in control loops where the setpoint and actual value are available as adapter structures.
+- **Zero Point Correction / Offset Subtraction**: Subtraction of a calibration or offset value from a continuous measurement signal.
 
 ## Comparison with Similar Components
 

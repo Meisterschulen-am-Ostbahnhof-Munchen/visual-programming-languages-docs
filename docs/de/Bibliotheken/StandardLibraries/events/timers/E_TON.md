@@ -4,7 +4,7 @@
 
 ## 🎧 Podcast
 
-* [E_TON in der Industrieautomation: Wie ein simpler Timer Sicherheit und Stabilität schafft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
+- [E_TON in der Industrieautomation: Wie ein simpler Timer Sicherheit und Stabilität schafft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
 
 ## Bild
 
@@ -85,8 +85,7 @@ Der **E_TON**-Baustein ist ein einfaches, aber leistungsstarkes Werkzeug in der 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
-* [Uebung_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
-* [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
-* [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
-
+- [Uebung_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
+- [Uebung_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
+- [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)

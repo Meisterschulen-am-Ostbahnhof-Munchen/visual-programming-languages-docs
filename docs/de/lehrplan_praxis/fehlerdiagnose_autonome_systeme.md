@@ -1,13 +1,13 @@
 # 🔍 Fehlerdiagnose in automatisierten & autonomen Systemen
 
-> 📌 **Quellennachweis & Rechtsgrundlage:**  
-> **Quelle:** *Rahmenlehrplan für die Vorbereitung auf die Meisterprüfung im Land- und Baumaschinenmechatroniker-Handwerk*  
-> **Herausgeber:** LandBauTechnik-Bundesverband e. V., Alfredstraße 102, 45131 Essen (Stand: 25.02.2025)  
+> 📌 **Quellennachweis & Rechtsgrundlage:**
+> **Quelle:** *Rahmenlehrplan für die Vorbereitung auf die Meisterprüfung im Land- und Baumaschinenmechatroniker-Handwerk*
+> **Herausgeber:** LandBauTechnik-Bundesverband e. V., Alfredstraße 102, 45131 Essen (Stand: 25.02.2025)
 > **Verordnung:** *Meisterprüfungsverordnung (LandBauMechMstrV)* vom 09.09.2024 (BGBl. 2024 I Nr. 277, in Kraft ab 01.08.2025)
 
 ---
 
-**Rahmenlehrplan-Kategorie:** Teil I LE 2.6 (20 UE) | Teil II LE 1.3 (100 UStd.)  
+**Rahmenlehrplan-Kategorie:** Teil I LE 2.6 (20 UE) | Teil II LE 1.3 (100 UStd.)
 **Kernbereich:** Systematische Fehlersuche in visuellen Steuerungsarchitekturen.
 
 ---
@@ -35,5 +35,5 @@
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

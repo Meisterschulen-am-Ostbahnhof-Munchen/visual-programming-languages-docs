@@ -32,7 +32,7 @@ Die Übung besteht aus folgenden direkt im Netzwerk verwendeten Funktionsbaustei
 Die Logik der Übung ist wie folgt aufgebaut:
 
 1. Die digitalen Eingänge **I1** und **I2** werden über die Bausteine `DigitalInput_I1` und `DigitalInput_I2` gelesen.
-2. Das Signal von **I2** wird **negiert** (invertiert). Dies geschieht über eine **Negate Connection** (Attribut `Negated = "true"`) auf der Datenverbindung zwischen `DigitalInput_I2.IN` und `AND_2_BOOL.IN2`.  
+2. Das Signal von **I2** wird **negiert** (invertiert). Dies geschieht über eine **Negate Connection** (Attribut `Negated = "true"`) auf der Datenverbindung zwischen `DigitalInput_I2.IN` und `AND_2_BOOL.IN2`.
    *(Die Negation ist nur bei booleschen Datentypen möglich.)*
 
 3. Der Baustein `AND_2_BOOL` verknüpft das Signal von **I1** (an `IN1`) mit dem negierten Signal von **I2** (an `IN2`) mittels einer UND‑Operation.
@@ -42,7 +42,7 @@ Die Logik der Übung ist wie folgt aufgebaut:
    - Beide `IND`‑Ereignisse sind mit dem `REQ`‑Eingang des **AND_2_BOOL** verbunden, sodass die UND‑Verknüpfung bei jedem Eingangswechsel neu berechnet wird.
    - Der Ausgangsbaustein `DigitalOutput_Q1` erhält über sein `REQ`‑Ereignis vom `CNF`‑Ausgang des **AND_2_BOOL** den Befehl, den Ausgang zu aktualisieren.
 
-**Zusammenfassung der Logik:**  
+**Zusammenfassung der Logik:**
 `Q1 = I1 AND (NOT I2)`
 
 **Lernziele:**
@@ -52,7 +52,7 @@ Die Logik der Übung ist wie folgt aufgebaut:
 - Anwendung einer Datennegation (Not‑Verbindung) in 4diac.
 - Verständnis der Ereignissteuerung mit `IND` und `REQ`.
 
-**Schwierigkeitsgrad:** Einfach  
+**Schwierigkeitsgrad:** Einfach
 **Benötigte Vorkenntnisse:** Grundlagen der IEC‑61499‑Ereignissteuerung, einfache boolesche Logik.
 
 ## Zusammenfassung
@@ -63,4 +63,4 @@ Die Übung **Uebung_002a4b** realisiert eine einfache UND‑Verknüpfung mit neg
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

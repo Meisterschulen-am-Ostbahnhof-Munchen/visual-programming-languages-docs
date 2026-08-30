@@ -20,9 +20,9 @@ Verständnis von erweiterten Signalzuständen. In professionellen Steuerungen re
 
 ![Uebung_055_network](./Uebung_055_network.svg)
 
-  * **`BOOL_TO_Q`**: Wandelt ein Standard-Bit in ein 2-Bit Quartal um.
-  * **`Q_TO_BOOL`**: Extrahiert das Haupt-Signal (An/Aus) wieder aus dem Quartal.
-  * **`QUARTER_TO_STR_STATUS`**: Wandelt den 2-Bit Code in einen lesbaren Text um (z.B. "STATUS_OFF", "STATUS_ON").
+  - **`BOOL_TO_Q`**: Wandelt ein Standard-Bit in ein 2-Bit Quartal um.
+  - **`Q_TO_BOOL`**: Extrahiert das Haupt-Signal (An/Aus) wieder aus dem Quartal.
+  - **`QUARTER_TO_STR_STATUS`**: Wandelt den 2-Bit Code in einen lesbaren Text um (z.B. "STATUS_OFF", "STATUS_ON").
 
 -----
 

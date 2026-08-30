@@ -34,12 +34,12 @@ Der Baustein besitzt keine klassischen ereignis- oder datenbasierten Ein- und Au
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AR`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
-*   **IN2** (Typ: `adapter::types::unidirectional::AR`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
+-   **IN1** (Typ: `adapter::types::unidirectional::AR`): Erster Eingangswert (Multiplikand 1) für die Multiplikation.
+-   **IN2** (Typ: `adapter::types::unidirectional::AR`): Zweiter Eingangswert (Multiplikand 2) für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AR`): Ausgang für das berechnete Produkt der Multiplikation ($OUT = IN1 \times IN2$).
+-   **OUT** (Typ: `adapter::types::unidirectional::AR`): Ausgang für das berechnete Produkt der Multiplikation ($OUT = IN1 \times IN2$).
 
 ---
 
@@ -53,9 +53,9 @@ Da es sich um einen generischen Funktionsbaustein (`GEN_AR_MUL`) handelt, ist di
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AR_MUL'` ist der Baustein für verschiedene numerische Datentypen einsetzbar, sofern die Adapter diese unterstützen.
-*   **Unidirektionale Adapter:** Die Verwendung des Typs `unidirectional::AR` sorgt für einen klaren Datenfluss ohne Rückkopplungsschleifen, was die Stabilität der Applikation erhöht und die Latenz minimiert.
-*   **Compiler-Zugehörigkeit:** Der FB ist dem Package `adapter::iec61131::arithmetic` zugeordnet und konform zum Standard IEC 61499-2.
+-   **Generischer Baustein:** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AR_MUL'` ist der Baustein für verschiedene numerische Datentypen einsetzbar, sofern die Adapter diese unterstützen.
+-   **Unidirektionale Adapter:** Die Verwendung des Typs `unidirectional::AR` sorgt für einen klaren Datenfluss ohne Rückkopplungsschleifen, was die Stabilität der Applikation erhöht und die Latenz minimiert.
+-   **Compiler-Zugehörigkeit:** Der FB ist dem Package `adapter::iec61131::arithmetic` zugeordnet und konform zum Standard IEC 61499-2.
 
 ---
 
@@ -70,17 +70,17 @@ Da dieser Funktionsbaustein primär datenflussgesteuert über Adapter arbeitet, 
 
 ## Anwendungsszenarien
 
-*   **Messwertskalierung:** Multiplikation eines analogen Sensorwertes (z. B. einer Spannung) mit einem Skalierungsfaktor zur Umrechnung in eine physikalische Einheit.
-*   **Signalverstärkung:** Proportionale Verstärkung von Regelsignalen in der Prozessautomatisierung.
-*   **Mathematische Berechnungen:** Einsatz als modularer Baustein in komplexeren Berechnungsnetzwerken innerhalb von 4diac-Applikationen.
+-   **Messwertskalierung:** Multiplikation eines analogen Sensorwertes (z. B. einer Spannung) mit einem Skalierungsfaktor zur Umrechnung in eine physikalische Einheit.
+-   **Signalverstärkung:** Proportionale Verstärkung von Regelsignalen in der Prozessautomatisierung.
+-   **Mathematische Berechnungen:** Einsatz als modularer Baustein in komplexeren Berechnungsnetzwerken innerhalb von 4diac-Applikationen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu Standard-Multiplikationsbausteinen (wie dem klassischen `MUL`-Baustein nach IEC 61131-3), die mit elementaren Datentypen (z.B. `INT`, `REAL`) arbeiten, nutzt `AR_MUL_2` strukturierte **Adapter**. Dies hat folgende Vorteile:
-*   **Geringerer Verdrahtungsaufwand:** Signale und dazugehörige Steuerungsereignisse werden in einer einzigen Adapterverbindung gebündelt.
-*   **Bessere Lesbarkeit:** Komplexe Steuerungsdiagramme bleiben übersichtlich, da weniger Einzelverbindungen auf der Arbeitsfläche gezogen werden müssen.
+-   **Geringerer Verdrahtungsaufwand:** Signale und dazugehörige Steuerungsereignisse werden in einer einzigen Adapterverbindung gebündelt.
+-   **Bessere Lesbarkeit:** Komplexe Steuerungsdiagramme bleiben übersichtlich, da weniger Einzelverbindungen auf der Arbeitsfläche gezogen werden müssen.
 
 ---
 

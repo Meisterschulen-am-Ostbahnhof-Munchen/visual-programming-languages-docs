@@ -85,10 +85,10 @@ Der Preset-Wert wird bei der Initialisierung aus einem Konstanten-Baustein (LINT
 
 Die folgende Abbildung zeigt den logischen Daten- und Ereignisfluss:
 
-- **Initialisierung:** Beim Start (Ereignis INITO von Input_LD) wird der Baustein ALI_LINT_TO_LI über den Ereigniseingang REQ getriggert. Dieser liefert am Ausgang ALI_OUT den konstanten Wert LINT#10. Dieser ist mit dem PV-Eingang des Zählers verbunden.  
-- **Laden des Preset-Werts:** Ein Impuls an Input_LD (Eingang Input_I2) löst den Ereignisausgang INITO und gleichzeitig über den Adapter IN das Ladesignal LD des Zählers aus. Der Zähler übernimmt den Wert von PV und setzt CV = 10.  
-- **Count Down:** Ein Impuls an Input_CD (Eingang Input_I1) wirkt auf den Adapter CD des Zählers. Jeder Impuls verringert CV um 1.  
-- **Ausgabe Zählerstand:** Der aktuelle Zählerstand CV wird über den Adapter CV an ALI_TO_AUDI weitergeleitet. Dieser wandelt den Wert in den AUDI-Adapter um und übergibt ihn an Q_NumericValue_AUDI, der ihn auf dem Terminal anzeigt.  
+- **Initialisierung:** Beim Start (Ereignis INITO von Input_LD) wird der Baustein ALI_LINT_TO_LI über den Ereigniseingang REQ getriggert. Dieser liefert am Ausgang ALI_OUT den konstanten Wert LINT#10. Dieser ist mit dem PV-Eingang des Zählers verbunden.
+- **Laden des Preset-Werts:** Ein Impuls an Input_LD (Eingang Input_I2) löst den Ereignisausgang INITO und gleichzeitig über den Adapter IN das Ladesignal LD des Zählers aus. Der Zähler übernimmt den Wert von PV und setzt CV = 10.
+- **Count Down:** Ein Impuls an Input_CD (Eingang Input_I1) wirkt auf den Adapter CD des Zählers. Jeder Impuls verringert CV um 1.
+- **Ausgabe Zählerstand:** Der aktuelle Zählerstand CV wird über den Adapter CV an ALI_TO_AUDI weitergeleitet. Dieser wandelt den Wert in den AUDI-Adapter um und übergibt ihn an Q_NumericValue_AUDI, der ihn auf dem Terminal anzeigt.
 - **Ausgang Q:** Wenn CV = 0 erreicht, setzt der Zähler den Ausgang Q. Dieser wird über Output_Q1 als Feldbus-Signal (Output_Q1) ausgegeben.
 
 ### Verbindungsliste (Adapter- und Ereignisverbindungen)
@@ -117,4 +117,4 @@ Der Schwierigkeitsgrad ist **mittel**. Vorkenntnisse in der 4diac-IDE und grundl
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

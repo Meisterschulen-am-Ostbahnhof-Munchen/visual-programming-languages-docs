@@ -35,13 +35,13 @@ Nicht zutreffend, da `ST01B` ein Datentyp und kein Funktionsblock ist.
 
 Die Struktur enthält die folgende Variable:
 
-*   **B_00**: Ein `BYTE`-Feld, das als "BYTE 00" kommentiert ist.
+-   **B_00**: Ein `BYTE`-Feld, das als "BYTE 00" kommentiert ist.
 
 ## Technische Besonderheiten
 
-*   **Einfache Struktur**: Definiert eine minimale Struktur zur Kapselung eines einzelnen Bytes.
-*   **Verwendung in 4diac**: Dieser Datentyp kann in 4diac-Applikationen verwendet werden, um typisierte Datenvariablen zu deklarieren oder als Teil komplexerer Datentypen.
-*   **Paket**: Der Datentyp ist im Paket `logiBUS::utils::conversion::types` untergebracht.
+-   **Einfache Struktur**: Definiert eine minimale Struktur zur Kapselung eines einzelnen Bytes.
+-   **Verwendung in 4diac**: Dieser Datentyp kann in 4diac-Applikationen verwendet werden, um typisierte Datenvariablen zu deklarieren oder als Teil komplexerer Datentypen.
+-   **Paket**: Der Datentyp ist im Paket `logiBUS::utils::conversion::types` untergebracht.
 
 ## Zustandsübersicht
 
@@ -51,14 +51,14 @@ Nicht zutreffend, da `ST01B` ein Datentyp und kein ausführbarer Funktionsblock 
 
 Dieser Datentyp kann in verschiedenen Szenarien nützlich sein, in denen ein einzelnes Byte mit einem spezifischen semantischen Namen in einer strukturierten Weise gehandhabt werden muss, zum Beispiel:
 
-*   Als einheitlicher Typ für bestimmte Registerwerte.
-*   Zur Vereinheitlichung von Schnittstellen, die einzelne Byte-Werte übergeben.
-*   Als Baustein für komplexere Strukturen, die aus einer Reihe von Bytes bestehen.
+-   Als einheitlicher Typ für bestimmte Registerwerte.
+-   Zur Vereinheitlichung von Schnittstellen, die einzelne Byte-Werte übergeben.
+-   Als Baustein für komplexere Strukturen, die aus einer Reihe von Bytes bestehen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Direkte Verwendung von `BYTE`**: `ST01B` unterscheidet sich von der direkten Verwendung des primitiven `BYTE`-Typs dadurch, dass es einen spezifischen Namen und eine Kapselung bietet. Dies kann die Lesbarkeit und Wartbarkeit des Codes verbessern, insbesondere wenn das Byte eine spezielle Bedeutung hat, die über den generischen `BYTE`-Typ hinausgeht.
-*   **Andere strukturierte Datentypen**: Im Vergleich zu komplexeren strukturierten Datentypen ist `ST01B` sehr einfach gehalten und dient als grundlegender Baustein.
+-   **Direkte Verwendung von `BYTE`**: `ST01B` unterscheidet sich von der direkten Verwendung des primitiven `BYTE`-Typs dadurch, dass es einen spezifischen Namen und eine Kapselung bietet. Dies kann die Lesbarkeit und Wartbarkeit des Codes verbessern, insbesondere wenn das Byte eine spezielle Bedeutung hat, die über den generischen `BYTE`-Typ hinausgeht.
+-   **Andere strukturierte Datentypen**: Im Vergleich zu komplexeren strukturierten Datentypen ist `ST01B` sehr einfach gehalten und dient als grundlegender Baustein.
 
 ## Fazit
 
@@ -68,4 +68,4 @@ Dieser Datentyp kann in verschiedenen Szenarien nützlich sein, in denen ein ein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

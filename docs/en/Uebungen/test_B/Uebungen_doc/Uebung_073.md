@@ -17,7 +17,7 @@ Use of the function block `I_VDS` (Vehicle Direction and Speed).
 
 ![Uebung_073_network](./Uebung_073_network.svg)
 
-* **`I_VDS`**: This block receives data from the tractor's GPS receiver (`NavigationBasedVehicleSpeed`).
+- **`I_VDS`**: This block receives data from the tractor's GPS receiver (`NavigationBasedVehicleSpeed`).
 
 -----
 

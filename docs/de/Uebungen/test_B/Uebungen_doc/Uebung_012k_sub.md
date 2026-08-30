@@ -12,13 +12,13 @@ Diese Übung demonstriert die Verwendung einer Subapplikation zur Verarbeitung e
 
 Die Subapplikation besteht aus drei internen Funktionsbausteinen:
 
-- **StringValue_IS** (Typ: `isobus::UT::io::StringValue::StringValue_IS`)  
+- **StringValue_IS** (Typ: `isobus::UT::io::StringValue::StringValue_IS`)
   Liest einen String-Wert von einem externen Interface (z. B. Isobus). Wird aktiviert, wenn ein neuer String verfügbar ist.
 
-- **INI** (Typ: `eclipse4diac::storage::INI`)  
+- **INI** (Typ: `eclipse4diac::storage::INI`)
   Speichert einen String-Wert in einer INI-artigen Datenstruktur unter einem gegebenen Schlüssel (KEY) in einem Abschnitt (SECTION). Enthält eine Initialisierungslogik und kann Werte setzen und abrufen.
 
-- **Q_StringValue** (Typ: `isobus::UT::Q::Q_StringValue`)  
+- **Q_StringValue** (Typ: `isobus::UT::Q::Q_StringValue`)
   Ein Queue-Baustein für String-Werte. Er nimmt den gespeicherten String und die Objekt-ID entgegen und gibt ihn bei Anforderung weiter (z. B. für die Ausgabe auf den Bus).
 
 | Bausteinname      | Typ                                                    | Parameter / Bemerkung                |
@@ -83,4 +83,4 @@ Die Übung `Uebung_012k_sub` zeigt, wie eine Subapplikation aus mehreren vordefi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

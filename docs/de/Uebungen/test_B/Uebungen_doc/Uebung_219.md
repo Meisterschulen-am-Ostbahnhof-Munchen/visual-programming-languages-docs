@@ -70,20 +70,20 @@ Diese Übung implementiert einen Rückwärtszähler (Abwärtszähler) nach IEC 6
 
 Der Ablauf wird über Ereignisverbindungen gesteuert:
 
-1. **Eingangssignale verarbeiten**:  
-   - Tritt eine Änderung an **Input_I1** (CD) oder **Input_I2** (LD) auf, so löst der entsprechende Eingangsbaustein (`Input_CD.IND` bzw. `Input_LD.IND`) ein Ereignis aus.  
+1. **Eingangssignale verarbeiten**:
+   - Tritt eine Änderung an **Input_I1** (CD) oder **Input_I2** (LD) auf, so löst der entsprechende Eingangsbaustein (`Input_CD.IND` bzw. `Input_LD.IND`) ein Ereignis aus.
    - Beide Ereignisse sind mit dem **REQ**-Eingang des Zählers `FB_CTD_ULINT` verbunden. Das führt dazu, dass bei jedem der beiden Eingänge ein Zählvorgang ausgelöst wird.
 
-2. **Zähleroperation**:  
-   - Der Zähler `FB_CTD_ULINT` führt abhängig vom Zustand der Datenleitungen aus:  
-     - Ist `LD` = TRUE, wird der Wert aus `PV` (ULINT#10) geladen.  
-     - Ist `CD` = TRUE (und `LD` = FALSE), wird der Zählerstand um 1 dekrementiert.  
+2. **Zähleroperation**:
+   - Der Zähler `FB_CTD_ULINT` führt abhängig vom Zustand der Datenleitungen aus:
+     - Ist `LD` = TRUE, wird der Wert aus `PV` (ULINT#10) geladen.
+     - Ist `CD` = TRUE (und `LD` = FALSE), wird der Zählerstand um 1 dekrementiert.
    - Nach Ausführung wird der **CNF**-Ereignisausgang aktiviert.
 
-3. **Ausgang und Terminalausgabe**:  
-   - Das `CNF`-Ereignis wird an zwei Bausteine weitergeleitet:  
-     - **Output_Q1**: Der Datenausgang `Q` des Zählers (TRUE bei Zählerstand = 0) wird auf den Hardware-Ausgang `Output_Q1` gelegt.  
-     - **F_ULINT_TO_UDINT**: Der aktuelle Zählerwert `CV` (ULINT) wird in den Datentyp UDINT konvertiert, da die Terminalausgabe einen UDINT erwartet.  
+3. **Ausgang und Terminalausgabe**:
+   - Das `CNF`-Ereignis wird an zwei Bausteine weitergeleitet:
+     - **Output_Q1**: Der Datenausgang `Q` des Zählers (TRUE bei Zählerstand = 0) wird auf den Hardware-Ausgang `Output_Q1` gelegt.
+     - **F_ULINT_TO_UDINT**: Der aktuelle Zählerwert `CV` (ULINT) wird in den Datentyp UDINT konvertiert, da die Terminalausgabe einen UDINT erwartet.
    - Nach der Konvertierung löst `F_ULINT_TO_UDINT.CNF` die **Q_NumericValue**-Ausgabe aus, sodass der Zählerwert auf dem Terminal (Objekt `OutputNumber_N1`) erscheint.
 
 **Hinweise aus den Kommentaren**:
@@ -99,4 +99,4 @@ Die Übung **Uebung_219** demonstriert einen IEC 61131-3 konformen Rückwärtsz�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

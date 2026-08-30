@@ -64,12 +64,12 @@ klein gehalten, damit die Brücke nicht zu wackelig wird.
 
 ## Weiterführender Link
 
-* [Traktorenlexikon: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
-* [Traktorenlexikon: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
+- [Traktorenlexikon: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
+- [Traktorenlexikon: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
 
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

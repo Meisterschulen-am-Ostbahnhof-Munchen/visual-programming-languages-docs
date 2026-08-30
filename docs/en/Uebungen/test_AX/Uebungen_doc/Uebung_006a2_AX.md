@@ -17,18 +17,18 @@ Demonstration of a central off function.
 
 ![Uebung_006a2_AX_network](./Uebung_006a2_AX_network.svg)
 
-* **`I1`**: Toggles lamp 1.
-* **`I2`**: Toggles lamp 2.
-* **`I3`**: Resets both.
-* **2x `AX_T_FF_SR`**: One for each lamp.
+- **`I1`**: Toggles lamp 1.
+- **`I2`**: Toggles lamp 2.
+- **`I3`**: Resets both.
+- **2x `AX_T_FF_SR`**: One for each lamp.
 
 -----
 
 ## Functionality
 
-* `I1` is connected to `CLK` of FF1.
-* `I2` is connected to `CLK` of FF2.
-* `I3` is connected to `R` of **both** flip-flops (fan-out).
+- `I1` is connected to `CLK` of FF1.
+- `I2` is connected to `CLK` of FF2.
+- `I3` is connected to `R` of **both** flip-flops (fan-out).
 
 Pressing `I3` immediately turns off both lamps, regardless of their previous state.
 

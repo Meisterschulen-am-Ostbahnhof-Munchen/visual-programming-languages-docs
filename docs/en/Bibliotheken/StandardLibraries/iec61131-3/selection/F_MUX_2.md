@@ -72,7 +72,7 @@ Compared to other multiplexers, F_MUX_2 offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_090a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
+- [Exercise_090a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
 
 ## Conclusion
 

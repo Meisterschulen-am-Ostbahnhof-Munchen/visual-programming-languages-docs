@@ -72,7 +72,7 @@ Compared to simple Boolean input blocks, Aux_IXA offers:
 
 ## 🛠️ Related exercises
 
-* [Exercise_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
+- [Exercise_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
 
 ## Conclusion
 

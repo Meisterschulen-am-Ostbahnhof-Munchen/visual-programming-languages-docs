@@ -53,18 +53,18 @@ Since this is a simple function block, there are no complex states. The block re
 
 ## 🛠️ Related exercises
 
-* [Uebung_035](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
-* [Uebung_035b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
-* [Uebung_035c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
-* [Uebung_036](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
-* [Uebung_037](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_037.md)
-* [Uebung_038](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
-* [Uebung_038_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
-* [Uebung_039_sub_NumbAnsicht](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-* [Uebung_040](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Exercise_040_2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Exercise_040_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Exercise_041](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Uebung_035](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
+- [Uebung_035b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+- [Uebung_035c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
+- [Uebung_036](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
+- [Uebung_037](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_037.md)
+- [Uebung_038](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
+- [Uebung_038_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
+- [Uebung_039_sub_NumbAnsicht](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
+- [Uebung_040](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Exercise_040_2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Exercise_040_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Exercise_041](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Conclusion
 

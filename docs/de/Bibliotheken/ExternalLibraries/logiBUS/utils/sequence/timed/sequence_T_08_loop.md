@@ -15,35 +15,35 @@ Der Funktionsblock `sequence_T_08_loop` ist ein zeitgesteuerter Sequenzer mit ac
 
 ### **Ereignis-Eingänge**
 
-*   **`START_S1`**: Startet die Sequenz durch einen Sprung vom initialen `START`-Zustand in den ersten aktiven Zustand `State_01`. Löst die Ausführung der zugehörigen Algorithmen aus.
-*   **`RESET`**: Setzt die Sequenz unabhängig vom aktuellen Zustand sofort in den initialen `START`-Zustand zurück. Alle aktiven Ausgänge werden deaktiviert.
+-   **`START_S1`**: Startet die Sequenz durch einen Sprung vom initialen `START`-Zustand in den ersten aktiven Zustand `State_01`. Löst die Ausführung der zugehörigen Algorithmen aus.
+-   **`RESET`**: Setzt die Sequenz unabhängig vom aktuellen Zustand sofort in den initialen `START`-Zustand zurück. Alle aktiven Ausgänge werden deaktiviert.
 
 ### **Ereignis-Ausgänge**
 
-*   **`CNF`** (Execution Confirmation): Wird bei jedem Zustandswechsel ausgelöst und bestätigt die Ausführung. Überträgt die aktuelle Zustandsnummer `STATE_NR`.
-*   **`EO_S1` bis `EO_S8`**: Ereignisausgänge, die beim Eintritt in den jeweiligen Zustand `State_01` bis `State_08` ausgelöst werden. Sie übertragen den zugehörigen booleschen Datenwert (`DO_S1` bis `DO_S8`), der auf `TRUE` gesetzt wird.
+-   **`CNF`** (Execution Confirmation): Wird bei jedem Zustandswechsel ausgelöst und bestätigt die Ausführung. Überträgt die aktuelle Zustandsnummer `STATE_NR`.
+-   **`EO_S1` bis `EO_S8`**: Ereignisausgänge, die beim Eintritt in den jeweiligen Zustand `State_01` bis `State_08` ausgelöst werden. Sie übertragen den zugehörigen booleschen Datenwert (`DO_S1` bis `DO_S8`), der auf `TRUE` gesetzt wird.
 
 ### **Daten-Eingänge**
 
 Acht Zeitdaten-Eingänge vom Typ `TIME`, die die Verweildauer in jedem Zustand definieren. Der Standardwert ist `NO_TIME` (keine Zeit, sofortiger Übergang).
 
-*   `DT_S1_S2`: Verweildauer in `State_01` vor Übergang zu `State_02`.
-*   `DT_S2_S3`: Verweildauer in `State_02` vor Übergang zu `State_03`.
-*   `DT_S3_S4`: Verweildauer in `State_03` vor Übergang zu `State_04`.
-*   `DT_S4_S5`: Verweildauer in `State_04` vor Übergang zu `State_05`.
-*   `DT_S5_S6`: Verweildauer in `State_05` vor Übergang zu `State_06`.
-*   `DT_S6_S7`: Verweildauer in `State_06` vor Übergang zu `State_07`.
-*   `DT_S7_S8`: Verweildauer in `State_07` vor Übergang zu `State_08`.
-*   `DT_S8_S1`: Verweildauer in `State_08` vor dem zyklischen Übergang zurück zu `State_01`.
+-   `DT_S1_S2`: Verweildauer in `State_01` vor Übergang zu `State_02`.
+-   `DT_S2_S3`: Verweildauer in `State_02` vor Übergang zu `State_03`.
+-   `DT_S3_S4`: Verweildauer in `State_03` vor Übergang zu `State_04`.
+-   `DT_S4_S5`: Verweildauer in `State_04` vor Übergang zu `State_05`.
+-   `DT_S5_S6`: Verweildauer in `State_05` vor Übergang zu `State_06`.
+-   `DT_S6_S7`: Verweildauer in `State_06` vor Übergang zu `State_07`.
+-   `DT_S7_S8`: Verweildauer in `State_07` vor Übergang zu `State_08`.
+-   `DT_S8_S1`: Verweildauer in `State_08` vor dem zyklischen Übergang zurück zu `State_01`.
 
 ### **Daten-Ausgänge**
 
-*   **`STATE_NR`** (SINT): Gibt die Nummer des aktuell aktiven Zustands aus. `START` = 0, `State_01` = 1, ..., `State_08` = 8.
-*   **`DO_S1` bis `DO_S8`** (BOOL): Die physischen Ausgangssignale der Sequenz. Jeder Ausgang wird auf `TRUE` gesetzt, wenn der entsprechende Zustand aktiv ist, ansonsten ist er `FALSE`.
+-   **`STATE_NR`** (SINT): Gibt die Nummer des aktuell aktiven Zustands aus. `START` = 0, `State_01` = 1, ..., `State_08` = 8.
+-   **`DO_S1` bis `DO_S8`** (BOOL): Die physischen Ausgangssignale der Sequenz. Jeder Ausgang wird auf `TRUE` gesetzt, wenn der entsprechende Zustand aktiv ist, ansonsten ist er `FALSE`.
 
 ### **Adapter**
 
-*   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Ein Zeitgeber-Adapter, der für die Realisierung der zeitgesteuerten Zustandsübergänge verwendet wird. Der FB startet den Timer beim Eintritt in einen Zustand und wechselt bei Empfang des `TimeOut`-Ereignisses zum nächsten Zustand.
+-   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Ein Zeitgeber-Adapter, der für die Realisierung der zeitgesteuerten Zustandsübergänge verwendet wird. Der FB startet den Timer beim Eintritt in einen Zustand und wechselt bei Empfang des `TimeOut`-Ereignisses zum nächsten Zustand.
 
 ## Funktionsweise
 
@@ -60,32 +60,32 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt zum Zustand `sRESET`. Hier wer
 
 ## Technische Besonderheiten
 
-*   **Zyklus ohne Stopp**: Die Sequenz läuft nach dem Start endlos im Kreis, bis ein `RESET`-Signal empfangen wird. Es gibt keinen integrierten Stopp-Befehl.
-*   **Sofortige Zustandsübergänge**: Durch Setzen der Zeitwerte auf `NO_TIME` (Standard) kann der FB so konfiguriert werden, dass er sofort zum nächsten Zustand wechselt, sobald der Eintrittsalgorithmus des aktuellen Zustands abgearbeitet ist.
-*   **Deterministische Abarbeitung**: Die Algorithmen für Exit, Confirmation und Entry werden in genau dieser Reihenfolge und atomar beim Zustandseintritt ausgeführt.
-*   **Konstanten für Zustandsnummern**: Die `STATE_NR` wird über Konstanten aus dem Import `sequence` (z.B. `sequence::State_01`) gesetzt, was die Wartbarkeit und Lesbarkeit verbessert.
+-   **Zyklus ohne Stopp**: Die Sequenz läuft nach dem Start endlos im Kreis, bis ein `RESET`-Signal empfangen wird. Es gibt keinen integrierten Stopp-Befehl.
+-   **Sofortige Zustandsübergänge**: Durch Setzen der Zeitwerte auf `NO_TIME` (Standard) kann der FB so konfiguriert werden, dass er sofort zum nächsten Zustand wechselt, sobald der Eintrittsalgorithmus des aktuellen Zustands abgearbeitet ist.
+-   **Deterministische Abarbeitung**: Die Algorithmen für Exit, Confirmation und Entry werden in genau dieser Reihenfolge und atomar beim Zustandseintritt ausgeführt.
+-   **Konstanten für Zustandsnummern**: Die `STATE_NR` wird über Konstanten aus dem Import `sequence` (z.B. `sequence::State_01`) gesetzt, was die Wartbarkeit und Lesbarkeit verbessert.
 
 ## Zustandsübersicht
 
 Der ECC besteht aus 10 Zuständen:
 
-*   **`xSTART`**: Initialer, inaktiver Zustand. Wartet auf `START_S1`.
-*   **`sState_01` bis `sState_08`**: Die acht aktiven Sequenzzustände. Jeder verwaltet seinen eigenen Ausgang und die Zeit bis zum nächsten Zustand.
-*   **`sRESET`**: Reset-Zustand. Wird bei `RESET`-Ereignis von jedem Zustand aus angesprungen, deaktiviert alle Ausgänge und kehrt dann zu `xSTART` zurück.
+-   **`xSTART`**: Initialer, inaktiver Zustand. Wartet auf `START_S1`.
+-   **`sState_01` bis `sState_08`**: Die acht aktiven Sequenzzustände. Jeder verwaltet seinen eigenen Ausgang und die Zeit bis zum nächsten Zustand.
+-   **`sRESET`**: Reset-Zustand. Wird bei `RESET`-Ereignis von jedem Zustand aus angesprungen, deaktiviert alle Ausgänge und kehrt dann zu `xSTART` zurück.
 
 Die Übergangsbedingungen sind:
 
-*   `START_S1`: Von `xSTART` nach `sState_01`.
-*   `timeOut.TimeOut`: Von jedem Zustand `sState_XX` zum nächsten `sState_YY` (zyklisch von `sState_08` zu `sState_01`).
-*   `RESET`: Von jedem aktiven Zustand (`sState_01`-`sState_08`) nach `sRESET`.
-*   `1` (immer wahr): Von `sRESET` zurück zu `xSTART`.
+-   `START_S1`: Von `xSTART` nach `sState_01`.
+-   `timeOut.TimeOut`: Von jedem Zustand `sState_XX` zum nächsten `sState_YY` (zyklisch von `sState_08` zu `sState_01`).
+-   `RESET`: Von jedem aktiven Zustand (`sState_01`-`sState_08`) nach `sRESET`.
+-   `1` (immer wahr): Von `sRESET` zurück zu `xSTART`.
 
 ## Anwendungsszenarien
 
-*   **Steuerung von Rundtaktmaschinen**: Aktivierung verschiedener Werkzeuge oder Stationen in einer rotierenden Maschine für eine genau definierte Dauer.
-*   **Batch-Prozesse in der Verfahrenstechnik**: Schrittweise Steuerung von Ventilen, Pumpen und Heizungen in einem chemischen Prozess mit festen Zykluszeiten.
-*   **Automatisierte Prüfsequenzen**: Nacheinander Durchführung verschiedener Messungen oder Tests an einem Bauteil.
-*   **Licht- oder Signalanlagen**: Erzeugung von festen Blink- oder Lauflichtmustern.
+-   **Steuerung von Rundtaktmaschinen**: Aktivierung verschiedener Werkzeuge oder Stationen in einer rotierenden Maschine für eine genau definierte Dauer.
+-   **Batch-Prozesse in der Verfahrenstechnik**: Schrittweise Steuerung von Ventilen, Pumpen und Heizungen in einem chemischen Prozess mit festen Zykluszeiten.
+-   **Automatisierte Prüfsequenzen**: Nacheinander Durchführung verschiedener Messungen oder Tests an einem Bauteil.
+-   **Licht- oder Signalanlagen**: Erzeugung von festen Blink- oder Lauflichtmustern.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -93,7 +93,7 @@ Im Gegensatz zu einem `E_CYCLE`- oder `E_DELAY`-FB, die einfache periodische ode
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_038](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
+- [Uebung_038](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
 
 ## Fazit
 
@@ -103,4 +103,4 @@ Der `sequence_T_08_loop` ist ein robuster und einfach zu konfigurierender Funkti
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

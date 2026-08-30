@@ -17,8 +17,8 @@ Abstraction of wireless signals. The component allows wireless buttons to be han
 
 ![Uebung_003b2_sub_network](./Uebung_003b2_sub_network.svg)
 
-* **`IX`**: Type `Funk_IX`. Receives the signals from the radio button selected via `Input`.
-* **`QX`**: Type `DataPanel_MI_QX`. Sends CAN messages to the selected DataPanel (`u8SAMember`) and activates the physical port (`Output`) there.
+- **`IX`**: Type `Funk_IX`. Receives the signals from the radio button selected via `Input`.
+- **`QX`**: Type `DataPanel_MI_QX`. Sends CAN messages to the selected DataPanel (`u8SAMember`) and activates the physical port (`Output`) there.
 
 -----
 
@@ -26,12 +26,12 @@ Abstraction of wireless signals. The component allows wireless buttons to be han
 
 [cite_start]This module offers three configuration options[cite: 1]:
 
-* **`Input`**: Name of the radio button (e.g., `Key_01`).
-* **`u8SAMember`**: CAN bus address of the target module.
-* **`Output`**: Number of the output on the module (e.g., `DigitalOutput_1A`).
+- **`Input`**: Name of the radio button (e.g., `Key_01`).
+- **`u8SAMember`**: CAN bus address of the target module.
+- **`Output`**: Number of the output on the module (e.g., `DigitalOutput_1A`).
 
 By using this type, a complex radio remote control can be configured by simply entering the IDs in the main application.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003b2](Uebung_003b2.md)
+- [Exercise_003b2](Uebung_003b2.md)

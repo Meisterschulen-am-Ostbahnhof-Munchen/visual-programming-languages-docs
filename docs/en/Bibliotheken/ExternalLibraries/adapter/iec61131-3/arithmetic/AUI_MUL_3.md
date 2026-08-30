@@ -30,13 +30,13 @@ The function block `AUI_MUL_3` is used for the mathematical multiplication of th
 
 #### **Sockets (Input Interfaces)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AUI`): First multiplicand.
-* **IN2** (Type: `adapter::types::unidirectional::AUI`): Second multiplicand.
-* **IN3** (Type: `adapter::types::unidirectional::AUI`): Third multiplicand.
+- **IN1** (Type: `adapter::types::unidirectional::AUI`): First multiplicand.
+- **IN2** (Type: `adapter::types::unidirectional::AUI`): Second multiplicand.
+- **IN3** (Type: `adapter::types::unidirectional::AUI`): Third multiplicand.
 
 #### **Plugs (Output Interface)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUI`): Result of the multiplication ($OUT = IN1 \cdot IN2 \cdot IN3$).
+- **OUT** (Type: `adapter::types::unidirectional::AUI`): Result of the multiplication ($OUT = IN1 \cdot IN2 \cdot IN3$).
 
 ---
 
@@ -56,8 +56,8 @@ Since the function block is declared as generic (`GEN_AUI_MUL`), it adapts flexi
 
 ## Technical Features
 
-* **Generic Type:** By defining it as a generic function block, it can be flexibly used for various numeric data types without having to create a separate function block for each type.
-* **Encapsulation by Adapters:** The use of the unidirectional `AUI` adapters significantly reduces the number of visible connection lines in the 4diac editor, as data and trigger events are bundled in a single connection.
+- **Generic Type:** By defining it as a generic function block, it can be flexibly used for various numeric data types without having to create a separate function block for each type.
+- **Encapsulation by Adapters:** The use of the unidirectional `AUI` adapters significantly reduces the number of visible connection lines in the 4diac editor, as data and trigger events are bundled in a single connection.
 
 --
 
@@ -74,14 +74,14 @@ The function block operates purely event-driven:
 
 ## Application Scenarios
 
-* **Volume Calculation:** Calculation of a three-dimensional volume (length \cdot \cdot \bdot \cdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \c ... ---
+- **Volume Calculation:** Calculation of a three-dimensional volume (length \cdot \cdot \bdot \cdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \bdot \c ... ---
 
 ## Comparison with Similar Function Blocks
 
 Compared to a classic, non-generic IEC 61131-3 standard function block, the `MUL` offers:
 
-* **Less Cascading:** Standard multipliers often only have two inputs. To multiply three values, two function blocks would have to be cascaded. The `AUI_MUL_3` accomplishes this in a single step.
-* **Improved Overview:** While classic function blocks require separate event and data lines, the adapter concept used here significantly simplifies the visual application design in the 4diac IDE.
+- **Less Cascading:** Standard multipliers often only have two inputs. To multiply three values, two function blocks would have to be cascaded. The `AUI_MUL_3` accomplishes this in a single step.
+- **Improved Overview:** While classic function blocks require separate event and data lines, the adapter concept used here significantly simplifies the visual application design in the 4diac IDE.
 
 --
 

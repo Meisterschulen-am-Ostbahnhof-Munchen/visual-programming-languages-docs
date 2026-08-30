@@ -83,8 +83,8 @@ The block integrates navigation data for modern agricultural machinery and comme
 
 ## 🛠️ Related Exercises
 
-* [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

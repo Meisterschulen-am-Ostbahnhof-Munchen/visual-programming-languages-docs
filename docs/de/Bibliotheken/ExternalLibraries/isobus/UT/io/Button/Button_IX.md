@@ -77,8 +77,8 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010a2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a2.md)
-* [Uebung_010a3](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a3.md)
+- [Uebung_010a2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a2.md)
+- [Uebung_010a3](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a3.md)
 
 ## Fazit
 
@@ -88,4 +88,4 @@ Der Button_IX-Funktionsblock stellt eine robuste und flexible Lösung für die I
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

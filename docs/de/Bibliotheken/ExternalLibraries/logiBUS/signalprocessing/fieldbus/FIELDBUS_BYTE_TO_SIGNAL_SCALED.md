@@ -47,17 +47,17 @@ Keine.
 
 Der Funktionsblock wird durch zwei Ereignisse gesteuert:
 
-1. **Initialisierung (`INIT`)**  
+1. **Initialisierung (`INIT`)**
    Beim Eintreffen von `INIT` werden die Parameter `SCALE` und `OFFSET` übernommen. Der dazugehörige Algorithmus (`INIT`) führt keine weiteren Berechnungen durch. Nach erfolgreicher Initialisierung wird das Ereignis `INITO` gesendet.
 
-2. **Verarbeitung (`REQ`)**  
-   Bei `REQ` wird der Wert von `IN` mit einem festen Schwellwert `VALID_SIGNAL_B` verglichen. Dieser Schwellwert wird aus dem importierten Paket `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` bezogen.  
+2. **Verarbeitung (`REQ`)**
+   Bei `REQ` wird der Wert von `IN` mit einem festen Schwellwert `VALID_SIGNAL_B` verglichen. Dieser Schwellwert wird aus dem importierten Paket `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` bezogen.
 
-   - **Signal gültig:** Wenn `IN <= VALID_SIGNAL_B`, wird der Ausgangswert nach der Formel  
-     `OUT := IN * SCALE + OFFSET`  
-     berechnet und `VALID` auf `TRUE` gesetzt.  
+   - **Signal gültig:** Wenn `IN <= VALID_SIGNAL_B`, wird der Ausgangswert nach der Formel
+     `OUT := IN * SCALE + OFFSET`
+     berechnet und `VALID` auf `TRUE` gesetzt.
 
-   - **Signal ungültig:** Andernfalls wird `OUT` auf `0.0` und `VALID` auf `FALSE` gesetzt.  
+   - **Signal ungültig:** Andernfalls wird `OUT` auf `0.0` und `VALID` auf `FALSE` gesetzt.
 
    Anschließend wird das Ereignis `CNF` mit den aktuellen Werten von `OUT` und `VALID` gesendet.
 
@@ -83,24 +83,24 @@ Es gibt keine automatischen Zustandsübergänge; jeder Zustand wird ausschließl
 
 ## Anwendungsszenarien
 
-- **Austausch analoger Sensordaten über Feldbusse:**  
+- **Austausch analoger Sensordaten über Feldbusse:**
   Ein 8-Bit-Sensorwert (z. B. Temperatur 0…255) soll in physikalische Einheiten (z. B. °C) umgerechnet werden. Über `SCALE` und `OFFSET` wird die Kennlinie angepasst.
 
-- **Fehlererkennung bei der Datenübertragung:**  
+- **Fehlererkennung bei der Datenübertragung:**
   Wenn der Feldbus bestimmte Byte-Werte als ungültig definiert (z. B. `0xFF` für „Sensorfehler“), erkennt der Block diese anhand der Schranke `VALID_SIGNAL_B` und meldet sie über `VALID = FALSE`.
 
-- **Initialisierung von Konfigurationsparametern:**  
+- **Initialisierung von Konfigurationsparametern:**
   Vor der ersten Verarbeitung kann über `INIT` der gewünschte Skalierungsfaktor und Offset gesetzt werden.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **`FIELDBUS_BYTE_TO_SIGNAL`** (ohne Skalierung):  
+- **`FIELDBUS_BYTE_TO_SIGNAL`** (ohne Skalierung):
   Dieser Baustein gibt den Byte-Wert direkt als REAL aus, ohne Multiplikation oder Addition. Er eignet sich für Signale, die bereits in der richtigen Einheit vorliegen.
 
-- **`FIELDBUS_BYTE_TO_SIGNAL_SCALED`** (vorliegender Baustein):  
+- **`FIELDBUS_BYTE_TO_SIGNAL_SCALED`** (vorliegender Baustein):
   Bietet zusätzlich die lineare Skalierung und einen Offset. Der Anwender kann die Umrechnung flexibel anpassen, ohne den Algorithmus zu ändern.
 
-- **`FIELDBUS_WORD_TO_SIGNAL_SCALED`**:  
+- **`FIELDBUS_WORD_TO_SIGNAL_SCALED`**:
   Analoger Baustein für 16-Bit-Werte (WORD) mit identischer Skalierungslogik, jedoch anderem Eingangsdatentyp.
 
 ## Fazit
@@ -111,4 +111,4 @@ Der Funktionsblock `FIELDBUS_BYTE_TO_SIGNAL_SCALED` ist ein praktisches Werkzeug
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

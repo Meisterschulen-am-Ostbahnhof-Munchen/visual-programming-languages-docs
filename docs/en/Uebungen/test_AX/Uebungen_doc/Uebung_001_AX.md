@@ -20,8 +20,8 @@ Two central function blocks are instantiated in the sub-application:
 
 ![Uebung_001_AX_network](./Uebung_001_AX_network.svg)
 
-* **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. This block represents a physical digital input. [cite\_start]It is hardwired to the hardware input `logiBUS_DI::Input_I1` via the parameter `Input`[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This block represents a physical digital output. Its parameter `Output` references the hardware output `logiBUS_DO::Output_Q1`.
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. This block represents a physical digital input. [cite\_start]It is hardwired to the hardware input `logiBUS_DI::Input_I1` via the parameter `Input`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This block represents a physical digital output. Its parameter `Output` references the hardware output `logiBUS_DO::Output_Q1`.
 
 ### Adapter Interface: `AX.adp`
 
@@ -29,7 +29,7 @@ The connection between the two blocks is implemented using the adapter type `AX`
 
 The connection between the two blocks is implemented using the adapter type `AX`. This is a unidirectional interface defined to transmit exactly one event and its corresponding Boolean value. * [cite\_start]**Event `E1`**: An event that signals a change of state[cite: 2].
 
-* [cite\_start]**Variable `D1` (BOOL)**: The Boolean value (true/false) sent with the event `E1`[cite: 2].
+- [cite\_start]**Variable `D1` (BOOL)**: The Boolean value (true/false) sent with the event `E1`[cite: 2].
 
 -----
 
@@ -54,8 +54,8 @@ As a result, the **digital output Q1** reflects the state of the **digital input
 
 This configuration is the simplest form of a control application and often serves as a "Hello World" example for hardware integration in logiBUS®. A practical use case would be a simple **functional test** of the wiring:
 
-* A switch is connected to `Input_I1`.
-* A lamp is connected to `Output_Q1`.
+- A switch is connected to `Input_I1`.
+- A lamp is connected to `Output_Q1`.
 
 When the switch is activated, the lamp must light up immediately. This confirms that both the input and output channels are correctly configured and wired.
 

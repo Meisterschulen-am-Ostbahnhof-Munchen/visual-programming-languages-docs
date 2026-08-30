@@ -6,7 +6,7 @@ This article describes the logiBUS® exercise `Uebung_072`. In agricultural engi
 
 ![Uebung_072_network](./Uebung_072_network.svg)
 
-* [Eclipse 4diac 3.0: ST Interpreter, FBE, and 7200 Commits – The Turbo for Distributed Automation ](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
+- [Eclipse 4diac 3.0: ST Interpreter, FBE, and 7200 Commits – The Turbo for Distributed Automation ](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
 
 ----
 
@@ -22,8 +22,8 @@ Simultaneous processing of wheel-based (WBSD) and ground-based (GBSD) speed.
 
 ### Function Blocks (FBs)
 
-* **`I_WBSD`**: Wheel-based speed. This is usually derived from the transmission sensor.
-* **`I_GBSD`**: Ground-based speed. This is usually determined via a radar sensor or GPS receiver.
+- **`I_WBSD`**: Wheel-based speed. This is usually derived from the transmission sensor.
+- **`I_GBSD`**: Ground-based speed. This is usually determined via a radar sensor or GPS receiver.
 
 -----
 
@@ -35,6 +35,6 @@ On loose surfaces (e.g., wet fields), the wheels often slip. The wheel-based spe
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

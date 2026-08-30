@@ -20,7 +20,7 @@ Das Ziel ist die Platzierung und Parametrierung eines Standard-Bausteins der IEC
 
 ![Uebung_000_AX_network](./Uebung_000_AX_network.svg)
 
-  * **`ADD_2`**: Typ `iec61131::arithmetic::ADD_2`. [cite_start]Addiert zwei Ganzzahlen (`IN1` und `IN2`)[cite: 1].
+  - **`ADD_2`**: Typ `iec61131::arithmetic::ADD_2`. [cite_start]Addiert zwei Ganzzahlen (`IN1` und `IN2`)[cite: 1].
 
 -----
 

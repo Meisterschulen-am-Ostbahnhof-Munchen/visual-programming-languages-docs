@@ -44,9 +44,9 @@ The `GET_STRUCT_VALUE` function block is activated by a `REQ` event. Upon activa
 
 ## Technical Features
 
-* **Dynamic Member Access:** This function block allows access to structure members via a `STRING` input, offering high flexibility in data processing.
-* **Nested Structures:** Members in nested structures can also be efficiently addressed using the dot operator (`.`) in the string `member`.
-* **Type Independence:** The inputs and outputs `in_struct` and `output` are of type `ANY`, meaning that the function block can handle any data structure and member data type.
+- **Dynamic Member Access:** This function block allows access to structure members via a `STRING` input, offering high flexibility in data processing.
+- **Nested Structures:** Members in nested structures can also be efficiently addressed using the dot operator (`.`) in the string `member`.
+- **Type Independence:** The inputs and outputs `in_struct` and `output` are of type `ANY`, meaning that the function block can handle any data structure and member data type.
 
 ## State Overview
 
@@ -54,10 +54,10 @@ The `GET_STRUCT_VALUE` is a stateless service function block that implements sim
 
 ## Application Scenarios
 
-* **Dynamic Configuration:** Reading configuration parameters from a central structure, where the required parameters are determined at runtime.
-* **Generic Data Processing:** Developing generic algorithms or logic that need to access different parts of a data structure based on external inputs or rules.
-* **Logging and Diagnostics:** Extracting specific status information or measured values from a complex system state structure for monitoring or diagnostic purposes.
-* **Interfaces to External Systems:** Adapting to data formats of external systems where field names are passed dynamically.
+- **Dynamic Configuration:** Reading configuration parameters from a central structure, where the required parameters are determined at runtime.
+- **Generic Data Processing:** Developing generic algorithms or logic that need to access different parts of a data structure based on external inputs or rules.
+- **Logging and Diagnostics:** Extracting specific status information or measured values from a complex system state structure for monitoring or diagnostic purposes.
+- **Interfaces to External Systems:** Adapting to data formats of external systems where field names are passed dynamically.
 
 ## ⚖️ Comparison with Similar Building Blocks
 
@@ -74,7 +74,7 @@ There are no directly comparable function blocks in the 4diac standard library t
 
 ## 🛠️ Related Exercises
 
-* [Exercise_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
+- [Exercise_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
 
 ## Conclusion
 
@@ -84,4 +84,4 @@ The `GET_STRUCT_VALUE` function block is a valuable tool for developers who need
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

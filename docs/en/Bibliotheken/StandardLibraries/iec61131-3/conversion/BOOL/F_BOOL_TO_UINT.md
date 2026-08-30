@@ -57,12 +57,12 @@ The function block has no internal states. The conversion is performed anew with
 
 ## 🛠️ Related Exercises
 
-* [Exercise_087](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
-* [Exercise_087a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
-* [Exercise_090a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
-* [Exercise_090a1_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
-* [Exercise_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
-* [Exercise_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
+- [Exercise_087](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Exercise_087a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Exercise_090a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
+- [Exercise_090a1_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
+- [Exercise_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
+- [Exercise_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 
 ## Conclusion
 

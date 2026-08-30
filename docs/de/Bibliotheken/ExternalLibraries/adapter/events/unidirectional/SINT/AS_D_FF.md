@@ -34,13 +34,13 @@ Keine direkten Datenausgänge. Der gespeicherte Datenwert wird über den Adapter
 
 ## Funktionsweise
 
-Der Baustein **AS_D_FF** arbeitet als asynchroner Datenlatch.  
-Bei jedem positiven Ereignis auf `I.E1` wird der aktuelle Wert von `I.D1` im internen Speicher des Bausteins übernommen. Unmittelbar danach wird ein Ereignis auf `Q.E1` ausgelöst, und der gespeicherte Wert steht auf `Q.D1` zur Verfügung.  
+Der Baustein **AS_D_FF** arbeitet als asynchroner Datenlatch.
+Bei jedem positiven Ereignis auf `I.E1` wird der aktuelle Wert von `I.D1` im internen Speicher des Bausteins übernommen. Unmittelbar danach wird ein Ereignis auf `Q.E1` ausgelöst, und der gespeicherte Wert steht auf `Q.D1` zur Verfügung.
 Diese Logik wird durch den intern verwendeten Baustein `E_D_FF_ANY` realisiert:
 
-- `I.E1` → `E_D_FF_ANY.CLK`  
-- `I.D1` → `E_D_FF_ANY.D`  
-- `E_D_FF_ANY.EO` → `Q.E1`  
+- `I.E1` → `E_D_FF_ANY.CLK`
+- `I.D1` → `E_D_FF_ANY.D`
+- `E_D_FF_ANY.EO` → `Q.E1`
 - `E_D_FF_ANY.Q` → `Q.D1`
 
 Der Baustein verhält sich somit wie ein klassisches D-Flipflop, jedoch mit einer standardisierten Adapter-Schnittstelle anstelle von direkten Ein-/Ausgängen.
@@ -86,4 +86,4 @@ Der Funktionsbaustein **AS_D_FF** stellt eine praktische Kapselung eines D-Flipf
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -75,12 +75,12 @@ Compared to other logical operation blocks:
 
 ## 🛠️ Related exercises
 
-* [Exercise_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
-* [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
-* [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Exercise_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Exercise_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
+- [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+- [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Exercise_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Conclusion
 

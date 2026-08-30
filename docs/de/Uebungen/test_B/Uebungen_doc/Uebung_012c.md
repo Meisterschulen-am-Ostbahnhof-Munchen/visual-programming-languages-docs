@@ -18,8 +18,8 @@ Umgang mit dem Datentyp `STRING` bei der Speicherung.
 
 ### Funktionsbausteine (FBs)
 
-  * **`INI`**: Hier konfiguriert für den Datentyp `STRING`.
-  * **`Q_StringValue`**: Ein ISOBUS-Ausgangsbaustein, der speziell für die Anzeige von Texten (anstelle von Zahlen) gedacht ist.
+  - **`INI`**: Hier konfiguriert für den Datentyp `STRING`.
+  - **`Q_StringValue`**: Ein ISOBUS-Ausgangsbaustein, der speziell für die Anzeige von Texten (anstelle von Zahlen) gedacht ist.
 
 -----
 

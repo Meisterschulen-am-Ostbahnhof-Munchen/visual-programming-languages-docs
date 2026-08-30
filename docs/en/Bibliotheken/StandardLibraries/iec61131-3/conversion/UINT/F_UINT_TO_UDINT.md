@@ -54,8 +54,8 @@ The function block has no internal states. The operation is re-executed with eac
 
 ## 🛠️ Related Exercises
 
-* [Exercise_015](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Exercise_015a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+- [Exercise_015](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Exercise_015a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
 
 ## Conclusion
 

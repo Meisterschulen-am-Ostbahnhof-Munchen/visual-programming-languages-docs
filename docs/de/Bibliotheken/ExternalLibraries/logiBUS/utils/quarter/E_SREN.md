@@ -15,27 +15,27 @@ Der E_SREN (Event-driven quad-state) ist ein ereignisgesteuerter Funktionsblock,
 
 ### **Ereignis-Eingänge**
 
-*   **S (Set):** Setzt den Ausgang `Q` auf `TRUE` und `QB` auf den Zustand `COMMAND_ENABLE`.
-*   **R (Reset):** Setzt den Ausgang `Q` auf `FALSE` und `QB` auf den Zustand `COMMAND_DISABLE`.
-*   **ERR (Error):** Setzt den Ausgang `Q` auf `FALSE` und `QB` auf den Zustand `STATUS_ERROR`.
-*   **NONE:** Setzt den Ausgang `QB` auf den Zustand `COMMAND_NO_ACTION`. Der Ausgang `Q` bleibt unverändert.
+-   **S (Set):** Setzt den Ausgang `Q` auf `TRUE` und `QB` auf den Zustand `COMMAND_ENABLE`.
+-   **R (Reset):** Setzt den Ausgang `Q` auf `FALSE` und `QB` auf den Zustand `COMMAND_DISABLE`.
+-   **ERR (Error):** Setzt den Ausgang `Q` auf `FALSE` und `QB` auf den Zustand `STATUS_ERROR`.
+-   **NONE:** Setzt den Ausgang `QB` auf den Zustand `COMMAND_NO_ACTION`. Der Ausgang `Q` bleibt unverändert.
 
 ### **Ereignis-Ausgänge**
 
-*   **EO (Event Output):** Wird ausgelöst, wenn sich einer der Ausgangswerte (`Q` oder `QB`) geändert hat. Dieses Ereignis wird immer zusammen mit den aktuellen Werten der Datenausgänge `Q` und `QB` gesendet.
+-   **EO (Event Output):** Wird ausgelöst, wenn sich einer der Ausgangswerte (`Q` oder `QB`) geändert hat. Dieses Ereignis wird immer zusammen mit den aktuellen Werten der Datenausgänge `Q` und `QB` gesendet.
 
 ### **Daten-Eingänge**
 
-*   Dieser Funktionsblock besitzt keine Daten-Eingänge.
+-   Dieser Funktionsblock besitzt keine Daten-Eingänge.
 
 ### **Daten-Ausgänge**
 
-*   **Q (BOOL):** Einfacher boolescher Ausgang. Er ist nur `TRUE`, wenn das `S`-Ereignis eintrifft. Er ist `FALSE` bei den Ereignissen `R` und `ERR` und bleibt unverändert bei `NONE`.
-*   **QB (BYTE):** Ein Byte-Ausgang, der speziell zur Kodierung von vier Zuständen (2 Bit) dient. Die konkreten Werte (z.B. `COMMAND_ENABLE`) werden aus der importierten Bibliothek `quarter::const::quarter` bezogen.
+-   **Q (BOOL):** Einfacher boolescher Ausgang. Er ist nur `TRUE`, wenn das `S`-Ereignis eintrifft. Er ist `FALSE` bei den Ereignissen `R` und `ERR` und bleibt unverändert bei `NONE`.
+-   **QB (BYTE):** Ein Byte-Ausgang, der speziell zur Kodierung von vier Zuständen (2 Bit) dient. Die konkreten Werte (z.B. `COMMAND_ENABLE`) werden aus der importierten Bibliothek `quarter::const::quarter` bezogen.
 
 ### **Adapter**
 
-*   Dieser Funktionsblock verwendet keine Adapter.
+-   Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 
@@ -45,9 +45,9 @@ Anschließend prüft eine Bedingung, ob sich der neue Wert von `Q` oder `QB` geg
 
 ## Technische Besonderheiten
 
-*   **Zustandserkennung:** Der Baustein merkt sich den vorherigen Ausgangszustand in den internen Variablen `old_Q` und `old_QB`. Das Ausgangsereignis `EO` wird nur bei einer tatsächlichen Zustandsänderung generiert, was redundante Ereignisausgaben verhindert.
-*   **Bibliotheksabhängigkeit:** Die spezifischen Byte-Werte für den `QB`-Ausgang werden aus der Konstanten-Bibliothek `logiBUS::utils::quarter::const::quarter` importiert. Die korrekte Funktion setzt die Verfügbarkeit dieser Bibliothek voraus.
-*   **Vier-Zustands-Logik:** Die Logik des `NONE`-Ereignisses ist speziell: Während `QB` auf `COMMAND_NO_ACTION` gesetzt wird, bleibt der boolesche Ausgang `Q` explizit unverändert.
+-   **Zustandserkennung:** Der Baustein merkt sich den vorherigen Ausgangszustand in den internen Variablen `old_Q` und `old_QB`. Das Ausgangsereignis `EO` wird nur bei einer tatsächlichen Zustandsänderung generiert, was redundante Ereignisausgaben verhindert.
+-   **Bibliotheksabhängigkeit:** Die spezifischen Byte-Werte für den `QB`-Ausgang werden aus der Konstanten-Bibliothek `logiBUS::utils::quarter::const::quarter` importiert. Die korrekte Funktion setzt die Verfügbarkeit dieser Bibliothek voraus.
+-   **Vier-Zustands-Logik:** Die Logik des `NONE`-Ereignisses ist speziell: Während `QB` auf `COMMAND_NO_ACTION` gesetzt wird, bleibt der boolesche Ausgang `Q` explizit unverändert.
 
 ## Zustandsübersicht
 
@@ -62,14 +62,14 @@ Der ECC (Execution Control Chart) besteht aus sechs Zuständen:
 
 ## Anwendungsszenarien
 
-*   **Aktorsteuerung:** Steuerung eines Antriebs mit den Befehlen "Einschalten" (`S`), "Ausschalten" (`R`), "Störung" (`ERR`) und "Manuell/Extern gesteuert" (`NONE`).
-*   **Meldesysteme:** Darstellung des Status einer Maschine: "In Betrieb", "Stopp", "Fehler", "Wartung".
-*   **Sicherheitsrelevante Steuerungen:** Klare Trennung von normalen Betriebs- (`S`/`R`), Fehler- (`ERR`) und Wartungs-/Override-Zuständen (`NONE`).
+-   **Aktorsteuerung:** Steuerung eines Antriebs mit den Befehlen "Einschalten" (`S`), "Ausschalten" (`R`), "Störung" (`ERR`) und "Manuell/Extern gesteuert" (`NONE`).
+-   **Meldesysteme:** Darstellung des Status einer Maschine: "In Betrieb", "Stopp", "Fehler", "Wartung".
+-   **Sicherheitsrelevante Steuerungen:** Klare Trennung von normalen Betriebs- (`S`/`R`), Fehler- (`ERR`) und Wartungs-/Override-Zuständen (`NONE`).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **E_SR (Bistabile Funktion):** Der klassische Set-Reset-Flipflop kennt nur zwei stabile Zustände (`TRUE`/`FALSE`). Der E_SREN erweitert dieses Konzept um zwei weitere Zustände (`ERROR`, `NO_ACTION`), die über ein dediziertes Byte (`QB`) kodiert werden.
-*   **E_D_FF (D-Flipflop):** Übernimmt einen Datenwert bei einem Takt-Ereignis. Der E_SREN ist ereignisgesteuert (vier verschiedene Ereignisse) und hat keinen separaten Dateneingang. Die "Daten" sind in den auslösenden Ereignissen implizit enthalten.
+-   **E_SR (Bistabile Funktion):** Der klassische Set-Reset-Flipflop kennt nur zwei stabile Zustände (`TRUE`/`FALSE`). Der E_SREN erweitert dieses Konzept um zwei weitere Zustände (`ERROR`, `NO_ACTION`), die über ein dediziertes Byte (`QB`) kodiert werden.
+-   **E_D_FF (D-Flipflop):** Übernimmt einen Datenwert bei einem Takt-Ereignis. Der E_SREN ist ereignisgesteuert (vier verschiedene Ereignisse) und hat keinen separaten Dateneingang. Die "Daten" sind in den auslösenden Ereignissen implizit enthalten.
 
 ## Fazit
 

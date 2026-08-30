@@ -20,10 +20,10 @@ Verwendung des Bausteins `E_CTD` (Event Count Down). Es wird demonstriert, wie e
 
 ![Uebung_081_network](./Uebung_081_network.svg)
 
-  * **`I1` (Count Down)**: Verringert den Zählerstand bei jedem Klick.
-  * **`I2` (Load)**: Lädt den Zähler mit dem Vorgabewert (`PV`).
-  * **`E_CTD`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` ist auf 5 eingestellt[cite: 1].
-  * **`DigitalOutput_Q1`**: Signalisiert das Erreichen der Nullgrenze.
+  - **`I1` (Count Down)**: Verringert den Zählerstand bei jedem Klick.
+  - **`I2` (Load)**: Lädt den Zähler mit dem Vorgabewert (`PV`).
+  - **`E_CTD`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` ist auf 5 eingestellt[cite: 1].
+  - **`DigitalOutput_Q1`**: Signalisiert das Erreichen der Nullgrenze.
 
 -----
 

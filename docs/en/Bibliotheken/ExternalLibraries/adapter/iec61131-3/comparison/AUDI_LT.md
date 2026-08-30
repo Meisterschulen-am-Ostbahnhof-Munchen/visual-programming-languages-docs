@@ -12,27 +12,27 @@ The function block `AUDI_LT` performs a "less than" comparison between two input
 
 Events are forwarded to the function block from external sources via the adapter sockets:
 
-* `IN1.E1` – Event that triggers the comparison operation as soon as a new value is present at `IN1`.
-* `IN2.E1` – Event that also triggers the comparison operation as soon as a new value is present at `IN2`.
+- `IN1.E1` – Event that triggers the comparison operation as soon as a new value is present at `IN1`.
+- `IN2.E1` – Event that also triggers the comparison operation as soon as a new value is present at `IN2`.
 
 ### **Event Outputs**
 
-* `OUT.E1` – Event that is output after the comparison is complete and signals that the result at data output `OUT.D1` is valid.
+- `OUT.E1` – Event that is output after the comparison is complete and signals that the result at data output `OUT.D1` is valid.
 
 ### **Data Inputs**
 
-* `IN1.D1` – First value to be compared (data of the adapter type `AUDI`).
-* `IN2.D1` – Second value to be compared (data of the adapter type `AUDI`).
+- `IN1.D1` – First value to be compared (data of the adapter type `AUDI`).
+- `IN2.D1` – Second value to be compared (data of the adapter type `AUDI`).
 
 ### **Data Outputs**
 
-* `OUT.D1` – Comparison result: `TRUE` if `IN1 < IN2`, otherwise `FALSE` (data of the adapter type `AX`).
+- `OUT.D1` – Comparison result: `TRUE` if `IN1 < IN2`, otherwise `FALSE` (data of the adapter type `AX`).
 
 ### **Adapters**
 
-* `IN1` – Socket (input) of type `adapter::types::unidirectional::AUDI`. Sends an event (`E1`) and a data value (`D1`) to the FB.
-* `IN2` – Socket (input) of the same type as `AUDI`. Provides the second input value.
-* `OUT` – Plug (output) of type `adapter::types::unidirectional::AX`. Receives the result event (`E1`) and the result data value (`D1`) for passing to subsequent function blocks.
+- `IN1` – Socket (input) of type `adapter::types::unidirectional::AUDI`. Sends an event (`E1`) and a data value (`D1`) to the FB.
+- `IN2` – Socket (input) of the same type as `AUDI`. Provides the second input value.
+- `OUT` – Plug (output) of type `adapter::types::unidirectional::AX`. Receives the result event (`E1`) and the result data value (`D1`) for passing to subsequent function blocks.
 
 ## Functionality
 

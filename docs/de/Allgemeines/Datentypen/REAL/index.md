@@ -21,9 +21,8 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `REAL#...
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
-* [Uebung_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Uebung_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Uebung_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
-
+- [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Uebung_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Uebung_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Uebung_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)

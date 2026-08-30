@@ -44,23 +44,23 @@ Der Funktionsblock **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distanc
 
 ## Funktionsweise
 
-Der Baustein **IA_WBSD** ist ein reiner Adapter‑Wrapper. Er verbindet die externen Ereignis‑ und Datenschnittstellen sowie die drei Adapter direkt mit dem internen Funktionsblock `I_WBSD` (vom Typ `isobus::tecu::I_WBSD`).  
+Der Baustein **IA_WBSD** ist ein reiner Adapter‑Wrapper. Er verbindet die externen Ereignis‑ und Datenschnittstellen sowie die drei Adapter direkt mit dem internen Funktionsblock `I_WBSD` (vom Typ `isobus::tecu::I_WBSD`).
 
-- Über den **INIT**‑Eingang und das Qualifier‑Signal **QI** wird die Initialisierung des ISOBUS‑Dienstes angestoßen.  
-- Nach erfolgreicher Initialisierung wird **INITO** ausgelöst und **QO** auf `TRUE` gesetzt. **STATUS** enthält eine textuelle Rückmeldung.  
-- Die Adapter **SPEED** und **DISTANCE** liefern die aktuellen Messwerte für radbasierte Geschwindigkeit bzw. Distanz.  
+- Über den **INIT**‑Eingang und das Qualifier‑Signal **QI** wird die Initialisierung des ISOBUS‑Dienstes angestoßen.
+- Nach erfolgreicher Initialisierung wird **INITO** ausgelöst und **QO** auf `TRUE` gesetzt. **STATUS** enthält eine textuelle Rückmeldung.
+- Die Adapter **SPEED** und **DISTANCE** liefern die aktuellen Messwerte für radbasierte Geschwindigkeit bzw. Distanz.
 - Der Adapter **TIMEOUT** signalisiert, ob ein Timeout in der ISOBUS‑Kommunikation aufgetreten ist.
 
 Die interne Logik (Berechnung, Timeout‑Überwachung, ISOBUS‑Frame‑Handling) wird vollständig vom inneren FB `I_WBSD` übernommen; **IA_WBSD** stellt diese nach außen als IEC‑61499‑kompatible Adapter‑Schnittstelle zur Verfügung.
 
 ## Technische Besonderheiten
 
-- **Standard:** ISO 11783‑7 (ISOBUS) – PGN 65096  
-- **Entwicklungsgeschichte:**  
-  - Version 1.0: initiale Implementierung als Adapter‑Wrapper für `I_WBSD`  
-  - Version 1.1: Fehlerbehebung – korrekte Verbindung zwischen internen Pins und Adapter‑Plugs durch zusätzliche Konvertierungsbausteine  
-- **Compiler‑Paket:** `isobus::tecu`  
-- **Lizenz:** Eclipse Public License 2.0  
+- **Standard:** ISO 11783‑7 (ISOBUS) – PGN 65096
+- **Entwicklungsgeschichte:**
+  - Version 1.0: initiale Implementierung als Adapter‑Wrapper für `I_WBSD`
+  - Version 1.1: Fehlerbehebung – korrekte Verbindung zwischen internen Pins und Adapter‑Plugs durch zusätzliche Konvertierungsbausteine
+- **Compiler‑Paket:** `isobus::tecu`
+- **Lizenz:** Eclipse Public License 2.0
 - **Urheber:** - (nicht genannt)
 
 ## Zustandsübersicht
@@ -73,13 +73,13 @@ Der Baustein besitzt keine eigene explizite Zustandsmaschine. Das Verhalten wird
 
 ## Anwendungsszenarien
 
-- **Landwirtschaftliche Maschinensteuerung:** Einbindung radbasierter Geschwindigkeits‑ und Distanzsensoren in ein ISOBUS‑Steuerungssystem (z. B. für Traktoren, Erntemaschinen).  
-- **Positionierung ohne GPS:** Nutzung der Radsensoren zur relativen Positionsbestimmung in Feldarbeitsanwendungen.  
+- **Landwirtschaftliche Maschinensteuerung:** Einbindung radbasierter Geschwindigkeits‑ und Distanzsensoren in ein ISOBUS‑Steuerungssystem (z. B. für Traktoren, Erntemaschinen).
+- **Positionierung ohne GPS:** Nutzung der Radsensoren zur relativen Positionsbestimmung in Feldarbeitsanwendungen.
 - **Überwachung von Fahrzyklen:** Erfassung von Geschwindigkeits‑ und Distanzdaten für Diagnose oder Prozesssteuerung.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **IA_WBSD vs. direkter I_WBSD:** Der interne FB `I_WBSD` bietet die reine ISOBUS‑Implementierung, während **IA_WBSD** diese in ein IEC‑61499‑Adapter‑Interface kapselt. Dadurch wird die Wiederverwendung in verschiedenen Tools (z. B. 4diac‑IDE) und die lose Kopplung mit anderen Bausteinen erleichtert.  
+- **IA_WBSD vs. direkter I_WBSD:** Der interne FB `I_WBSD` bietet die reine ISOBUS‑Implementierung, während **IA_WBSD** diese in ein IEC‑61499‑Adapter‑Interface kapselt. Dadurch wird die Wiederverwendung in verschiedenen Tools (z. B. 4diac‑IDE) und die lose Kopplung mit anderen Bausteinen erleichtert.
 - **IA_WBSD vs. andere ISOBUS‑Adapter:** Spezifisch für die PGN 65096 (Wheel Based Speed and Distance). Adapter für andere PGNs (z. B. für GPS‑Position oder Motor‑Drehzahl) haben ähnliche Struktur, unterscheiden sich aber in den Datentypen und der internen Interpretation.
 
 ## Fazit
@@ -90,4 +90,4 @@ Der **IA_WBSD** ist ein praktischer Adapter‑Wrapper für den ISOBUS‑Baustein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

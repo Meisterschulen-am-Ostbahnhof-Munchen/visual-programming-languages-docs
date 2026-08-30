@@ -59,7 +59,7 @@ The `E_N_TABLE` (Event N-Table) is a function block according to IEC 61499 that 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_093b](../../../Uebungen/test_B/Uebungen_doc/Uebung_093b.md)
+- [Exercise_093b](../../../Uebungen/test_B/Uebungen_doc/Uebung_093b.md)
 
 ## Conclusion
 

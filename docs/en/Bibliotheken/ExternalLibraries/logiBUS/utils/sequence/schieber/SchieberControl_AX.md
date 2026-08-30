@@ -70,10 +70,10 @@ This module operates as an event-controlled logic controller (ECC) that controls
 Upon startup (`INIT`), the initial state of the slider is checked (defined by `START`). Possible states include "Closed," "Opened," or "Unknown."
 
 2. **Movement Sequence:**
-* When the command `Open` is executed, the function block switches to the **Opening** state. This activates the adapters `POWERED` and `OPEN`, and starts the timer with `DT_Opening`.
-* After the specified time (`timeOut.TimeOut`), the state automatically switches to **Opened**.
-* * If the command `Close` is issued, the function block switches to **Closing**. The adapter `CLOSE` is activated (while `POWERED` and `OPEN` are deactivated), and the timer is started with `DT_Closing`.
-* After the specified time has elapsed, the state changes to **Closed**.
+- When the command `Open` is executed, the function block switches to the **Opening** state. This activates the adapters `POWERED` and `OPEN`, and starts the timer with `DT_Opening`.
+- After the specified time (`timeOut.TimeOut`), the state automatically switches to **Opened**.
+- * If the command `Close` is issued, the function block switches to **Closing**. The adapter `CLOSE` is activated (while `POWERED` and `OPEN` are deactivated), and the timer is started with `DT_Closing`.
+- After the specified time has elapsed, the state changes to **Closed**.
 3. **Interruption:**
 
 If the command `Close` (or vice versa) is issued during the opening process, the process is stopped (`STOP` states), the outputs are reset, and the reverse process is initiated.
@@ -84,27 +84,27 @@ In each state (Closed, Opening, Opened, Closing, Unknown), the outputs `Button`,
 
 ## Technical Features
 
-* **AX Adapter Integration:** The direct use of `adapter::types::unidirectional::AX` indicates a standardized interface for hardware abstraction, making the function block reusable for various valve types, provided the adapter is compatible.
-* **Structure Mapping:** The function block acts as a "mapper." It accepts complex configuration structures (`SchieberStruct`) and outputs only the individual values relevant to the current state at runtime. This reduces the logic in the HMI.
-* **Stop Logic:** Explicit `STOP` states are implemented to ensure that, when changing direction, the outputs are briefly and precisely switched off (`timeOut.STOP`, Valves Off) before the new direction is initiated.
+- **AX Adapter Integration:** The direct use of `adapter::types::unidirectional::AX` indicates a standardized interface for hardware abstraction, making the function block reusable for various valve types, provided the adapter is compatible.
+- **Structure Mapping:** The function block acts as a "mapper." It accepts complex configuration structures (`SchieberStruct`) and outputs only the individual values relevant to the current state at runtime. This reduces the logic in the HMI.
+- **Stop Logic:** Explicit `STOP` states are implemented to ensure that, when changing direction, the outputs are briefly and precisely switched off (`timeOut.STOP`, Valves Off) before the new direction is initiated.
 
 ## State Overview
 
 The most important states in the ECC (Execution Control Chart) are:
 
-* **START / Init / DeInit:** Management states for the block's lifecycle.
-* **Unknown:** Error or initial state when the position is unknown.
-* **Closed:** The valve is fully closed. (`CLOSE`=False, `OPEN`=False).
-* **Opening:** The slider is currently opening. (`POWERED`=True, `OPEN`=True, timer running).
-* **Opened:** The slider is fully open. (`POWERED`=True, `OPEN`=False).
-* **Closing:** The slider is currently closing. (`CLOSE`=True, `POWERED`=False, timer running).
-* **..._STOP:** Intermediate states for cleanly stopping movements.
+- **START / Init / DeInit:** Management states for the block's lifecycle.
+- **Unknown:** Error or initial state when the position is unknown.
+- **Closed:** The valve is fully closed. (`CLOSE`=False, `OPEN`=False).
+- **Opening:** The slider is currently opening. (`POWERED`=True, `OPEN`=True, timer running).
+- **Opened:** The slider is fully open. (`POWERED`=True, `OPEN`=False).
+- **Closing:** The slider is currently closing. (`CLOSE`=True, `POWERED`=False, timer running).
+- **..._STOP:** Intermediate states for cleanly stopping movements.
 
 ## Application Scenarios
 
-* **Agricultural Machinery:** Control of slurry scrapers, metering flaps, or hydraulic booms.
-* **Process Automation:** Simple valve controls that do not have end-position sensors but operate based on time (`DT_Opening`/`DT_Closing`).
-* **HMI Integration:** Systems where the symbol or button color on the display must change depending on whether the valve is moving, open, or closed.
+- **Agricultural Machinery:** Control of slurry scrapers, metering flaps, or hydraulic booms.
+- **Process Automation:** Simple valve controls that do not have end-position sensors but operate based on time (`DT_Opening`/`DT_Closing`).
+- **HMI Integration:** Systems where the symbol or button color on the display must change depending on whether the valve is moving, open, or closed.
 
 ## Comparison with Similar Modules
 

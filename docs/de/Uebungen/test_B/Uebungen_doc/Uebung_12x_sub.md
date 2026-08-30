@@ -43,17 +43,17 @@ Der Ablauf innerhalb der Sub-Application bildet eine Rückkopplungsschleife, die
 1.  **Auslöser**: Der `CallbackFB` sendet ein Event über den Ausgang `REQ`.
 2.  **Zählen**: Dieses Event triggert den Eingang `CU` (Count Up) des Zählers `E_CTU`, wodurch der Zählerwert erhöht wird.
 3.  **Konvertierung**:
-    *   Der aktuelle Zählerwert (`CV`) wird an den Baustein `F_USINT_TO_BYTE` übergeben.
-    *   Nach erfolgreichem Zählen (`CUO`) wird die Konvertierung ausgelöst.
+    -   Der aktuelle Zählerwert (`CV`) wird an den Baustein `F_USINT_TO_BYTE` übergeben.
+    -   Nach erfolgreichem Zählen (`CUO`) wird die Konvertierung ausgelöst.
 4.  **Array-Erstellung**:
-    *   Das konvertierte Byte wird an den Eingang `IN_00` des `BYTES_TO_ARR08B` Bausteins geleitet. Dies ist das erste Byte der Nachricht.
-    *   Die Eingänge `IN_01` bis `IN_07` sind statisch mit `0x00` belegt.
+    -   Das konvertierte Byte wird an den Eingang `IN_00` des `BYTES_TO_ARR08B` Bausteins geleitet. Dies ist das erste Byte der Nachricht.
+    -   Die Eingänge `IN_01` bis `IN_07` sind statisch mit `0x00` belegt.
 5.  **Nachrichtenerstellung**:
-    *   Das erzeugte Byte-Array (`OUT`) wird an den Dateneingang `data` des `STRUCT_MUX` übergeben.
-    *   Der `STRUCT_MUX` erstellt daraus eine Struktur vom Typ `isobus::pgn::CAN_MSG`.
+    -   Das erzeugte Byte-Array (`OUT`) wird an den Dateneingang `data` des `STRUCT_MUX` übergeben.
+    -   Der `STRUCT_MUX` erstellt daraus eine Struktur vom Typ `isobus::pgn::CAN_MSG`.
 6.  **Rückführung**:
-    *   Die fertige Struktur (`OUT`) wird an den Eingang `DI1` des `CallbackFB` zurückgeführt.
-    *   Das Bestätigungs-Event (`CNF`) des Multiplexers triggert das `CNF` des `CallbackFB`, um die Datenaktualisierung abzuschließen.
+    -   Die fertige Struktur (`OUT`) wird an den Eingang `DI1` des `CallbackFB` zurückgeführt.
+    -   Das Bestätigungs-Event (`CNF`) des Multiplexers triggert das `CNF` des `CallbackFB`, um die Datenaktualisierung abzuschließen.
 
 Diese Übung demonstriert fortgeschrittene Datenmanipulation und Event-Ketten in 4diac, insbesondere wie Adapter-Callbacks genutzt werden können, um dynamisch veränderliche Daten (hier einen hochzählenden Wert) zu senden.
 
@@ -63,8 +63,8 @@ Die `Uebung_12x_sub` stellt eine Sub-Application dar, die einen ISOBUS-Callback-
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_125](Uebung_125.md)
-* [Uebung_126](Uebung_126.md)
+- [Uebung_125](Uebung_125.md)
+- [Uebung_126](Uebung_126.md)
 
 
 
@@ -72,5 +72,5 @@ Die `Uebung_12x_sub` stellt eine Sub-Application dar, die einen ISOBUS-Callback-
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

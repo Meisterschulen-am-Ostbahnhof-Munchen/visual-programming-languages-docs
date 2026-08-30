@@ -2,7 +2,7 @@
 
 ## 🎧 Podcast
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ## Einleitung
 
@@ -77,17 +77,17 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Softkey_IX erweite
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010.md)
-* [Uebung_010a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a.md)
-* [Uebung_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)
-* [Uebung_010b4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
-* [Uebung_010b5_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
-* [Uebung_010c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
-* [Uebung_010c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c3_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Uebung_010c4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Uebung_039_sub_Outputs](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Uebung_039b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Uebung_010](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010.md)
+- [Uebung_010a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a.md)
+- [Uebung_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)
+- [Uebung_010b4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
+- [Uebung_010b5_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
+- [Uebung_010c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
+- [Uebung_010c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+- [Uebung_010c3_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+- [Uebung_010c4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+- [Uebung_039_sub_Outputs](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Uebung_039b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
 
 ## Fazit
 

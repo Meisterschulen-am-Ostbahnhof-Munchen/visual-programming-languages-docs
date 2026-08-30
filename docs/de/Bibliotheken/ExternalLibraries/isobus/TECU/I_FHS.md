@@ -82,7 +82,7 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

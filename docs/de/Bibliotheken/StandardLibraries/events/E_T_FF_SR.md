@@ -4,8 +4,8 @@
 
 ![E_T_FF_SR_ecc](./E_T_FF_SR_ecc.svg)
 
-* [Der E_T_FF_SR-Baustein: Herzstück der IEC 61499 – Speichern, Umschalten, Reagieren](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_T_FF_SR-Baustein-Herzstck-der-IEC-61499--Speichern--Umschalten--Reagieren-e3682dm)
-* [Unpacking E_T_FF_SR: The Secret Toggle Switch of Industrial Control Systems](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Unpacking-E_T_FF_SR-The-Secret-Toggle-Switch-of-Industrial-Control-Systems-e367ntv)
+- [Der E_T_FF_SR-Baustein: Herzstück der IEC 61499 – Speichern, Umschalten, Reagieren](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_T_FF_SR-Baustein-Herzstck-der-IEC-61499--Speichern--Umschalten--Reagieren-e3682dm)
+- [Unpacking E_T_FF_SR: The Secret Toggle Switch of Industrial Control Systems](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Unpacking-E_T_FF_SR-The-Secret-Toggle-Switch-of-Industrial-Control-Systems-e367ntv)
 
 ## Einleitung
 
@@ -61,13 +61,13 @@ Der Baustein startet im `START`-Zustand (impliziert `Q` ist undefiniert/`FALSE`)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
-* [Uebung_006a](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a.md)
-* [Uebung_006a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a2.md)
-* [Uebung_006a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3.md)
-* [Uebung_006a4](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a4.md)
-* [Uebung_179](../../../Uebungen/test_B/Uebungen_doc/Uebung_179.md)
-* [Uebung_180](../../../Uebungen/test_B/Uebungen_doc/Uebung_180.md)
+- [Uebung_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
+- [Uebung_006a](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a.md)
+- [Uebung_006a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a2.md)
+- [Uebung_006a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3.md)
+- [Uebung_006a4](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a4.md)
+- [Uebung_179](../../../Uebungen/test_B/Uebungen_doc/Uebung_179.md)
+- [Uebung_180](../../../Uebungen/test_B/Uebungen_doc/Uebung_180.md)
 
 ## Fazit
 
@@ -77,4 +77,4 @@ Der `E_T_FF_SR`-Baustein bietet maximale Flexibilität für Speicher- und Steuer
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

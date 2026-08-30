@@ -70,8 +70,8 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
-* [Uebung_020f2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+- [Uebung_020f2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
+- [Uebung_020f2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Fazit
 

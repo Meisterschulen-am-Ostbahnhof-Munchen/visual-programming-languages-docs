@@ -48,21 +48,21 @@ Der Funktionsblock **INI_AUDI** ermöglicht das Lesen und Speichern von UDINT-Da
 
 Der Baustein arbeitet mit dem internen `INI`-Funktionsblock zusammen. Die grundlegende Abfolge ist:
 
-1. **Initialisierung (`INIT`-Ereignis)**  
+1. **Initialisierung (`INIT`-Ereignis)**
    - Die mit `INIT` verbundenen Eingabedaten (`QI`, `SECTION`, `KEY`, `DEFAULT_VALUE`) werden an den internen `INI`-Baustein weitergeleitet.
    - `INI` wird gestartet und bestätigt mit `INITO`.
 
-2. **Lesen eines Werts**  
+2. **Lesen eines Werts**
    - Nach der INIT-Bestätigung wird automatisch der `GET`-Befehl des `INI`-Bausteins ausgelöst.
    - Der gelesene Wert (oder der `DEFAULT_VALUE`) wird über `INI.VALUEO` an den Adapter `AUDI_OUT.D1` ausgegeben.
    - Gleichzeitig wird das Ereignis `AUDI_OUT.E1` gesendet, um den angeschlossenen Baustein zu benachrichtigen.
 
-3. **Schreiben eines Werts**  
+3. **Schreiben eines Werts**
    - Wird über den Adapter `AUDI_IN` ein Ereignis `E1` mit einem Datenwert `D1` empfangen, so leitet `INI_AUDI` diesen an den `INI`-Baustein als `SET`-Befehl weiter.
    - Der interne `INI`-Baustein speichert den Wert in der INI-Datei unter der angegebenen Section und Key und quittiert mit `SETO`.
    - Das Quittungsereignis wird über `AUDI_OUT.E1` ausgegeben.
 
-4. **Rückmeldung**  
+4. **Rückmeldung**
    - Die Statusausgänge `QO` und `STATUS` werden vom internen `INI`-Baustein direkt übernommen und stehen am Ausgang zur Verfügung.
 
 ## Technische Besonderheiten
@@ -104,4 +104,4 @@ Der `INI_AUDI`-Funktionsblock stellt eine kompakte und wiederverwendbare Lösung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

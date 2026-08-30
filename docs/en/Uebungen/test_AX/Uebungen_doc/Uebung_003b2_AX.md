@@ -15,22 +15,22 @@ The objective of this exercise is to efficiently manage a large number of simila
 
 [cite_start]This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`)[cite: 2]. It has the following configuration parameters:
 
-* **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
+- **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
 
 ### Sub-component: `Uebung_003b2_sub_AX`
 
 
-* **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
-* * **`Output`**: The physical output (e.g., `DigitalOutput_1B`).
-* **`u8SAMember`**: The address of the DataPanel.
+- **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
+- * **`Output`**: The physical output (e.g., `DigitalOutput_1B`).
+- **`u8SAMember`**: The address of the DataPanel.
 
 ### Mapping
 
 This exercise maps the following signals:
 
-* `STOP` -> (not assigned/internal)
-* `START` -> `F2`
-* `Key_01` to `Key_13` -> `F3` to `F15`
+- `STOP` -> (not assigned/internal)
+- `START` -> `F2`
+- `Key_01` to `Key_13` -> `F3` to `F15`
 
 (Note: The exact parameter mapping is not explicitly visible in the `.SUB` file for `Uebung_003b2_AX`, unlike `Uebung_003b3_AX`, because untyped or embedded subapps were used where the parameters are set internally or use default values.) (The parameters are explicitly exposed to the outside via `Uebung_003b3_AX`.)
 

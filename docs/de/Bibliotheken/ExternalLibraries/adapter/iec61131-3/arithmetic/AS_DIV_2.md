@@ -32,15 +32,15 @@ Der Funktionsbaustein (FB) `AS_DIV_2` ist ein generischer Baustein zur Durchfüh
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AS`): 
-    *   Repräsentiert den ersten Eingangswert der Division (Dividend).
-*   **IN2** (Typ: `adapter::types::unidirectional::AS`): 
-    *   Repräsentiert den zweiten Eingangswert der Division (Divisor).
+-   **IN1** (Typ: `adapter::types::unidirectional::AS`):
+    -   Repräsentiert den ersten Eingangswert der Division (Dividend).
+-   **IN2** (Typ: `adapter::types::unidirectional::AS`):
+    -   Repräsentiert den zweiten Eingangswert der Division (Divisor).
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AS`): 
-    *   Gibt das Ergebnis der Division (Quotient) aus.
+-   **OUT** (Typ: `adapter::types::unidirectional::AS`):
+    -   Gibt das Ergebnis der Division (Quotient) aus.
 
 ---
 
@@ -56,9 +56,9 @@ Sobald sich die Werte an den Eingangs-Adaptern `IN1` oder `IN2` ändern bzw. ein
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Durch das Attribut `GenericClassName = 'GEN_AS_DIV'` ist der Baustein als generischer Typ definiert. Dies erlaubt eine hohe Flexibilität bei der Verarbeitung unterschiedlicher numerischer Datentypen.
-*   **Kapselung durch Adapter:** Anstelle von losen Daten- und Ereignisleitungen nutzt dieser Baustein ausschließlich unidirektionale Adapter des Typs `AS`. Dies sorgt für ein aufgeräumtes und übersichtliches Anwendungsdiagramm in der 4diac-IDE.
-*   **Division durch Null:** Bei der Implementierung und Verwendung ist darauf zu achten, dass der Divisor (`IN2`) ungleich Null sein muss, um einen Laufzeitfehler (Division by Zero) zu vermeiden.
+-   **Generischer Baustein:** Durch das Attribut `GenericClassName = 'GEN_AS_DIV'` ist der Baustein als generischer Typ definiert. Dies erlaubt eine hohe Flexibilität bei der Verarbeitung unterschiedlicher numerischer Datentypen.
+-   **Kapselung durch Adapter:** Anstelle von losen Daten- und Ereignisleitungen nutzt dieser Baustein ausschließlich unidirektionale Adapter des Typs `AS`. Dies sorgt für ein aufgeräumtes und übersichtliches Anwendungsdiagramm in der 4diac-IDE.
+-   **Division durch Null:** Bei der Implementierung und Verwendung ist darauf zu achten, dass der Divisor (`IN2`) ungleich Null sein muss, um einen Laufzeitfehler (Division by Zero) zu vermeiden.
 
 ---
 
@@ -70,9 +70,9 @@ Da es sich um einen rein mathematischen/arithmetischen Funktionsbaustein handelt
 
 ## Anwendungsszenarien
 
-*   **Messwert-Skalierung:** Umrechnung und Normierung von analogen Sensorwerten (z. B. Division eines Rohwerts zur Umrechnung in eine physikalische Einheit).
-*   **Prozentuale Berechnungen:** Bestimmung von Verhältnissen oder prozentualen Anteilen in industriellen Prozessen.
-*   **Signalvorverarbeitung:** Mathematische Reduktion von Prozessdaten direkt an der Feldebene vor der Weiterleitung an übergeordnete Systeme.
+-   **Messwert-Skalierung:** Umrechnung und Normierung von analogen Sensorwerten (z. B. Division eines Rohwerts zur Umrechnung in eine physikalische Einheit).
+-   **Prozentuale Berechnungen:** Bestimmung von Verhältnissen oder prozentualen Anteilen in industriellen Prozessen.
+-   **Signalvorverarbeitung:** Mathematische Reduktion von Prozessdaten direkt an der Feldebene vor der Weiterleitung an übergeordnete Systeme.
 
 ---
 

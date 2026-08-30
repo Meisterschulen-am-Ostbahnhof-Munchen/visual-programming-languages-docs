@@ -20,7 +20,7 @@ Implementierung einer exklusiven Auswahl-Logik. Das Einschalten eines Kanals mus
 
 ![Uebung_004b3_network](./Uebung_004b3_network.svg)
 
-  * Identisch zu 004b2: Taster `I1`/`I2`, Weichen `E_SWITCH_I1`/`I2`, Speicher `E_SR_I1`/`I2`.
+  - Identisch zu 004b2: Taster `I1`/`I2`, Weichen `E_SWITCH_I1`/`I2`, Speicher `E_SR_I1`/`I2`.
 
 -----
 
@@ -33,10 +33,10 @@ Die Besonderheit liegt in der "Über-Kreuz-Verbindung" der Setz-Ereignisse:
     <!-- Normale Toggle-Logik Kanal 1 -->
     <Connection Source="E_SWITCH_I1.EO0" Destination="E_SR_I1.S"/>
     <Connection Source="E_SWITCH_I1.EO1" Destination="E_SR_I1.R"/>
-    
+
     <!-- Verriegelung: Wenn Kanal 1 einschaltet (EO0), schalte Kanal 2 aus! -->
     <Connection Source="E_SWITCH_I1.EO0" Destination="E_SR_I2.R"/>
-    
+
     <!-- Verriegelung: Wenn Kanal 2 einschaltet (EO0), schalte Kanal 1 aus! -->
     <Connection Source="E_SWITCH_I2.EO0" Destination="E_SR_I1.R"/>
 </EventConnections>

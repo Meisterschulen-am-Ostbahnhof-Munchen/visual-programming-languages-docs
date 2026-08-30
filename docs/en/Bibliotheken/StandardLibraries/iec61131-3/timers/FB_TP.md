@@ -68,8 +68,8 @@ When a rising edge is detected at the IN input, the timer starts and sets the Q 
 
 ## 🛠️ Related exercises
 
-* [Exercise_020f2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
-* [Exercise_020f2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+- [Exercise_020f2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
+- [Exercise_020f2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Conclusion
 

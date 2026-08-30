@@ -6,7 +6,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsbaustein `ALR_AX_SEL_ALR` dient zur binären Auswahl (Selektion) zwischen zwei analogen Eingangssignalen, die über Adapter des Typs `ALR` bereitgestellt werden. Gesteuert wird diese Auswahl durch einen Selektor-Adapter des Typs `AX`. Das ausgewählte Signal wird an einen Ausgangs-Adapter des Typs `ALR` weitergegeben. 
+Der Funktionsbaustein `ALR_AX_SEL_ALR` dient zur binären Auswahl (Selektion) zwischen zwei analogen Eingangssignalen, die über Adapter des Typs `ALR` bereitgestellt werden. Gesteuert wird diese Auswahl durch einen Selektor-Adapter des Typs `AX`. Das ausgewählte Signal wird an einen Ausgangs-Adapter des Typs `ALR` weitergegeben.
 
 Der Baustein basiert intern auf der IEC 61131-3 Auswahlfunktion `F_SEL` und ist für ereignisgesteuerte IEC 61499-Architekturen optimiert.
 
@@ -32,12 +32,12 @@ Da dieser Baustein als Adapter-Koppler aufgebaut ist, besitzt er keine klassisch
 
 ### **Adapter**
 
-* **Sockets (Eingangs-Schnittstellen):**
-  * `IN0` (Typ: `adapter::types::unidirectional::ALR`): Erster auswählbarer Eingangskanal (wird auf den Ausgang geschaltet, wenn der Selektor `G` den Wert `FALSE` aufweist).
-  * `IN1` (Typ: `adapter::types::unidirectional::ALR`): Zweiter auswählbarer Eingangskanal (wird auf den Ausgang geschaltet, wenn der Selektor `G` den Wert `TRUE` aufweist).
-  * `G` (Typ: `adapter::types::unidirectional::AX`): Selektor-Eingang zur Steuerung der Kanalauswahl.
-* **Plugs (Ausgangs-Schnittstellen):**
-  * `OUT` (Typ: `adapter::types::unidirectional::ALR`): Ausgang, der das ausgewählte Signal führt.
+- **Sockets (Eingangs-Schnittstellen):**
+  - `IN0` (Typ: `adapter::types::unidirectional::ALR`): Erster auswählbarer Eingangskanal (wird auf den Ausgang geschaltet, wenn der Selektor `G` den Wert `FALSE` aufweist).
+  - `IN1` (Typ: `adapter::types::unidirectional::ALR`): Zweiter auswählbarer Eingangskanal (wird auf den Ausgang geschaltet, wenn der Selektor `G` den Wert `TRUE` aufweist).
+  - `G` (Typ: `adapter::types::unidirectional::AX`): Selektor-Eingang zur Steuerung der Kanalauswahl.
+- **Plugs (Ausgangs-Schnittstellen):**
+  - `OUT` (Typ: `adapter::types::unidirectional::ALR`): Ausgang, der das ausgewählte Signal führt.
 
 ## Funktionsweise
 
@@ -46,15 +46,15 @@ Der Baustein realisiert eine softwaregesteuerte 1-aus-2-Auswahl auf Basis von Ad
 1. **Ereignispufferung:** Eintreffende Ereignisse und Daten an den Sockets `IN0`, `IN1` und `G` werden über interne Ereignis-D-Flip-Flops (`E_D_FF` bzw. `E_D_FF_ANY`) zwischengespeichert, um eine konsistente Datenübergabe zu gewährleisten.
 2. **Wertübertragung:** Die Datenwerte werden über interne Zuweisungsglieder (`F_MOVE`) für den Datentyp `LREAL` aufbereitet.
 3. **Auswahllogik (`F_SEL`):** Die Auswahl erfolgt über den Standard-Selektionsbaustein:
-   * Ist das Signal an `G.D1` gleich `FALSE`, wird der Wert von `IN0.D1` an den Ausgang weitergegeben.
-   * Ist das Signal an `G.D1` gleich `TRUE`, wird der Wert von `IN1.D1` an den Ausgang weitergegeben.
+   - Ist das Signal an `G.D1` gleich `FALSE`, wird der Wert von `IN0.D1` an den Ausgang weitergegeben.
+   - Ist das Signal an `G.D1` gleich `TRUE`, wird der Wert von `IN1.D1` an den Ausgang weitergegeben.
 4. **Ausgabe-Triggerung:** Jede Änderung an einem der Eingänge oder am Selektor führt zu einer Aktualisierung des Ausgangs-Adapters `OUT`, signalisiert durch das Ereignis `OUT.E1` und den neuen Datenwert `OUT.D1`.
 
 ## Technische Besonderheiten
 
-* **Präzise Datenverarbeitung (LREAL):** Die internen Datenpfade sind für den Datentyp `LREAL` ausgelegt, was eine verlustfreie Übertragung hochgenauer analoger Messwerte ermöglicht.
-* **Kapselung durch Adapter:** Durch die Verwendung von standardisierten Adaptern (`ALR`, `AX`) entfällt die komplexe Einzelverdrahtung von Daten- und Ereignis-Pins im Applikationseditor.
-* **Ereignisgesteuert:** Der Ausgang reagiert dynamisch und verzögerungsfrei auf Wertänderungen und Trigger an den Eingängen.
+- **Präzise Datenverarbeitung (LREAL):** Die internen Datenpfade sind für den Datentyp `LREAL` ausgelegt, was eine verlustfreie Übertragung hochgenauer analoger Messwerte ermöglicht.
+- **Kapselung durch Adapter:** Durch die Verwendung von standardisierten Adaptern (`ALR`, `AX`) entfällt die komplexe Einzelverdrahtung von Daten- und Ereignis-Pins im Applikationseditor.
+- **Ereignisgesteuert:** Der Ausgang reagiert dynamisch und verzögerungsfrei auf Wertänderungen und Trigger an den Eingängen.
 
 ## Zustandsübersicht
 
@@ -67,9 +67,9 @@ Das Verhalten des Bausteins wird durch den Daten- und Ereignisfluss im internen 
 
 ## Anwendungsszenarien
 
-* **Sensor-Redundanz / Failover:** Umschaltung zwischen einem Hauptsensor (`IN0`) und einem Backup-Sensor (`IN1`) bei Ausfall oder Signalstörung, gesteuert durch ein Diagnosesignal an `G`.
-* **Sollwertumschaltung:** Wechsel zwischen einem Automatik-Sollwert und einem manuellen Vorgabewert in verfahrenstechnischen Regelkreisen.
-* **Rezeptur- und Parametersatz-Auswahl:** Dynamische Zuweisung unterschiedlicher analoger Prozessparameter basierend auf dem aktuellen Anlagenzustand.
+- **Sensor-Redundanz / Failover:** Umschaltung zwischen einem Hauptsensor (`IN0`) und einem Backup-Sensor (`IN1`) bei Ausfall oder Signalstörung, gesteuert durch ein Diagnosesignal an `G`.
+- **Sollwertumschaltung:** Wechsel zwischen einem Automatik-Sollwert und einem manuellen Vorgabewert in verfahrenstechnischen Regelkreisen.
+- **Rezeptur- und Parametersatz-Auswahl:** Dynamische Zuweisung unterschiedlicher analoger Prozessparameter basierend auf dem aktuellen Anlagenzustand.
 
 ## Vergleich mit ähnlichen Bausteinen
 

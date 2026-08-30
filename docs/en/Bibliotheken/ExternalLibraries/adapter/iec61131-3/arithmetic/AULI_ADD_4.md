@@ -31,14 +31,14 @@ The function block `AULI_ADD_4` is a generic function block (FB) designed for th
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AULI`): First addend for the addition operation.
-* **IN2** (Type: `adapter::types::unidirectional::AULI`): Second addend for the addition operation.
-* **IN3** (Type: `adapter::types::unidirectional::AULI`): Third addend for the addition operation.
-* **IN4** (Type: `adapter::types::unidirectional::AULI`): Fourth addend for the addition operation.
+- **IN1** (Type: `adapter::types::unidirectional::AULI`): First addend for the addition operation.
+- **IN2** (Type: `adapter::types::unidirectional::AULI`): Second addend for the addition operation.
+- **IN3** (Type: `adapter::types::unidirectional::AULI`): Third addend for the addition operation.
+- **IN4** (Type: `adapter::types::unidirectional::AULI`): Fourth addend for the addition operation.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AULI`): Contains the result of the addition (`IN1 + IN2 + IN3 + IN4`) and the corresponding output event.
+- **OUT** (Type: `adapter::types::unidirectional::AULI`): Contains the result of the addition (`IN1 + IN2 + IN3 + IN4`) and the corresponding output event.
 
 ## Functionality
 
@@ -50,9 +50,9 @@ The calculated result is passed to the output adapter `OUT`, and simultaneously,
 
 ## Technical Features
 
-* **Generic Function Block:** The function block is based on the generic class `GEN_AULI_ADD`. This means that it can flexibly respond to different data types within the `AULI` adapter structure.
-* **Unidirectional Adapters:** Unidirectional adapters (`unidirectional::AULI`) are used. This simplifies data flow, as information and events flow exclusively in one direction (from inputs to output).
-* **Reduced wiring effort:** By using adapters, event and data lines do not need to be run separately. A single adapter channel bundles all relevant signals.
+- **Generic Function Block:** The function block is based on the generic class `GEN_AULI_ADD`. This means that it can flexibly respond to different data types within the `AULI` adapter structure.
+- **Unidirectional Adapters:** Unidirectional adapters (`unidirectional::AULI`) are used. This simplifies data flow, as information and events flow exclusively in one direction (from inputs to output).
+- **Reduced wiring effort:** By using adapters, event and data lines do not need to be run separately. A single adapter channel bundles all relevant signals.
 
 ## State overview
 
@@ -64,14 +64,14 @@ The function block behaves in an event-driven and stateless manner (i.e., it has
 
 ## Application Scenarios
 
-* **Measurement Summing:** Summarizing four individual sensor values (e.g., energy measurements from four consumers, flow rates from four pipes) into a single total value.
-* **Average Preparation:** Pre-summing four data points before subsequent division to calculate the average.
-* **Modular Control Architectures:** Use in complex systems where signals are already standardized as `AULI` adapters.
+- **Measurement Summing:** Summarizing four individual sensor values (e.g., energy measurements from four consumers, flow rates from four pipes) into a single total value.
+- **Average Preparation:** Pre-summing four data points before subsequent division to calculate the average.
+- **Modular Control Architectures:** Use in complex systems where signals are already standardized as `AULI` adapters.
 
 ## Comparison with Similar Function Blocks
 
-* **Standard ADD Function Blocks (e.g., `ADD` from IEC 61131-3):** These use direct data and event ports (such as `REQ`, `CNF`, `IN1`, `IN2`). `AULI_ADD_4`, on the other hand, completely encapsulates these interfaces in adapters, resulting in a cleaner control flow diagram.
-* **AULI_ADD_2:** A similar function block, but with only two inputs. `AULI_ADD_4` eliminates the need to cascade multiple individual addition function blocks when adding four values.
+- **Standard ADD Function Blocks (e.g., `ADD` from IEC 61131-3):** These use direct data and event ports (such as `REQ`, `CNF`, `IN1`, `IN2`). `AULI_ADD_4`, on the other hand, completely encapsulates these interfaces in adapters, resulting in a cleaner control flow diagram.
+- **AULI_ADD_2:** A similar function block, but with only two inputs. `AULI_ADD_4` eliminates the need to cascade multiple individual addition function blocks when adding four values.
 
 ## Change Detection
 

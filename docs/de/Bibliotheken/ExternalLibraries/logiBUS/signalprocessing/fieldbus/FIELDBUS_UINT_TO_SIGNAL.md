@@ -62,7 +62,7 @@ Die Konstanten `NOT_AVAILABLE_WM` (für den Initialwert von IN) und `VALID_SIGNA
 
 ## Zustandsübersicht
 
-Der Baustein besteht aus einem einzigen Zustand **REQ**.  
+Der Baustein besteht aus einem einzigen Zustand **REQ**.
 
 - **START** → **REQ**: Der Algorithmus wird ausgeführt, sobald das Ereignis REQ eintrifft. Nach Abarbeitung wird CNF ausgegeben und der Zustand bleibt in REQ (zyklische Verarbeitung).
 
@@ -84,4 +84,4 @@ Der Funktionsbaustein FIELDBUS_UINT_TO_SIGNAL bietet eine einfache und effizient
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

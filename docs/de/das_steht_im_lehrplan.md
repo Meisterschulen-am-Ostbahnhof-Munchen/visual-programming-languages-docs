@@ -1,8 +1,8 @@
 # 📋 Das steht im Lehrplan: Visuelle Programmiersprachen (IEC 61499) als Kernkompetenz
 
-> 📌 **Quellennachweis & Rechtsgrundlage:**  
-> **Quelle:** *Rahmenlehrplan für die Vorbereitung auf die Meisterprüfung im Land- und Baumaschinenmechatroniker-Handwerk*  
-> **Herausgeber:** LandBauTechnik-Bundesverband e. V., Alfredstraße 102, 45131 Essen (Stand: 25.02.2025)  
+> 📌 **Quellennachweis & Rechtsgrundlage:**
+> **Quelle:** *Rahmenlehrplan für die Vorbereitung auf die Meisterprüfung im Land- und Baumaschinenmechatroniker-Handwerk*
+> **Herausgeber:** LandBauTechnik-Bundesverband e. V., Alfredstraße 102, 45131 Essen (Stand: 25.02.2025)
 > **Verordnung:** *Meisterprüfungsverordnung (LandBauMechMstrV)* vom 09.09.2024 (BGBl. 2024 I Nr. 277, in Kraft ab 01.08.2025)
 
 ---
@@ -49,7 +49,7 @@ Moderne Land- und Baumaschinen sind hochgradig vernetzte, dezentrale mechatronis
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Hauptportal & Direktlinks zu den 6 Wikis
 
@@ -65,5 +65,5 @@ Moderne Land- und Baumaschinen sind hochgradig vernetzte, dezentrale mechatronis
 
 ---
 
-> 🌐 **Zentrales Portal der Meisterschulen München:**  
+> 🌐 **Zentrales Portal der Meisterschulen München:**
 > Visit the main platform: [**www.ms-muc-docs.de**](https://www.ms-muc-docs.de/) | [📋 Interaktiver Rahmenlehrplan 2025](https://www.ms-muc-docs.de/infos/interaktiver-rahmenlehrplan) | [📚 Wiki-Übersicht](https://www.ms-muc-docs.de/wikis) | [📄 PDF-Downloads](https://www.ms-muc-docs.de/wikis/alle-pdfs)

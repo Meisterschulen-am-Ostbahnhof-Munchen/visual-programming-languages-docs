@@ -100,7 +100,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

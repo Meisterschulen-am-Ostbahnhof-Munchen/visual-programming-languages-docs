@@ -4,8 +4,8 @@
 
 ![E_REND_ecc](./E_REND_ecc.svg)
 
-* [E_REND: Ereignissynchronisation in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_REND-Ereignissynchronisation-in-IEC-61499-e368co9)
-* [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_REND-Event-Synchronization-in-IEC-61499-e368cv2)
+- [E_REND: Ereignissynchronisation in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_REND-Ereignissynchronisation-in-IEC-61499-e368co9)
+- [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_REND-Event-Synchronization-in-IEC-61499-e368cv2)
 
 ## Einleitung
 
@@ -48,12 +48,12 @@ Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der al
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a6](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a6.md)
-* [Uebung_004a6_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a6_AX.md)
-* [Uebung_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
-* [Uebung_004a7_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
-* [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
-* [Uebung_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
+- [Uebung_004a6](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a6.md)
+- [Uebung_004a6_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a6_AX.md)
+- [Uebung_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
+- [Uebung_004a7_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+- [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+- [Uebung_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
 
 ## Fazit
 

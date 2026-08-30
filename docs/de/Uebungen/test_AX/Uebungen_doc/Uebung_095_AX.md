@@ -20,17 +20,17 @@ Auswahl einer Event-Quelle (Gegenteil von `E_SPLIT` oder `E_SWITCH`).
 
 ![Uebung_095_AX_network](./Uebung_095_AX_network.svg)
 
-  * **`I1`**: Wahlschalter (Gate `G`).
-  * **`I2`**: Event-Quelle A.
-  * **`I3`**: Event-Quelle B.
-  * **`E_SELECT`**: Leitet entweder A oder B an den Ausgang weiter.
+  - **`I1`**: Wahlschalter (Gate `G`).
+  - **`I2`**: Event-Quelle A.
+  - **`I3`**: Event-Quelle B.
+  - **`E_SELECT`**: Leitet entweder A oder B an den Ausgang weiter.
 
 -----
 
 ## Funktionsweise
 
-*   Ist `I1` aus (`G=FALSE`), werden Events von `I2` (`EI0`) zum Ausgang durchgelassen. Events von `I3` werden ignoriert.
-*   Ist `I1` an (`G=TRUE`), werden Events von `I3` (`EI1`) zum Ausgang durchgelassen. Events von `I2` werden ignoriert.
+-   Ist `I1` aus (`G=FALSE`), werden Events von `I2` (`EI0`) zum Ausgang durchgelassen. Events von `I3` werden ignoriert.
+-   Ist `I1` an (`G=TRUE`), werden Events von `I3` (`EI1`) zum Ausgang durchgelassen. Events von `I2` werden ignoriert.
 
 Der Ausgang triggert ein Flip-Flop (`Q1`). Man kann also wählen, *welcher* Taster das Licht schalten darf.
 

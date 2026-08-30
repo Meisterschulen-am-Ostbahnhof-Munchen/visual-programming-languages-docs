@@ -44,21 +44,21 @@ $$\text{OUT} = \frac{\text{IN1}}{\text{IN2}}$$
 
 The calculated result is then passed to the output adapter `OUT`, and the corresponding send event of the adapter is triggered to inform subsequent function blocks about the new value.
 
-* **Generic Type (`GEN_AR_DIV`):** The function block is internally declared as a generic type. This allows for flexible adaptation to various data types (e.g., `REAL`, `LREAL`, `INT`), depending on how the underlying `AR` adapter type is defined.
-* **Adapter Coupling:** Using unidirectional adapters (`unidirectional::AR`) drastically reduces the number of connection lines in the function block diagram, improving the readability of complex mathematical calculations.
-* **Protection Against Division by Zero:** System-integrated protection measures depend on the specific runtime environment. When using the function block, ensure that the divisor (`IN2`) is not zero to avoid calculation errors or runtime crashes.
-* ## State Overview
+- **Generic Type (`GEN_AR_DIV`):** The function block is internally declared as a generic type. This allows for flexible adaptation to various data types (e.g., `REAL`, `LREAL`, `INT`), depending on how the underlying `AR` adapter type is defined.
+- **Adapter Coupling:** Using unidirectional adapters (`unidirectional::AR`) drastically reduces the number of connection lines in the function block diagram, improving the readability of complex mathematical calculations.
+- **Protection Against Division by Zero:** System-integrated protection measures depend on the specific runtime environment. When using the function block, ensure that the divisor (`IN2`) is not zero to avoid calculation errors or runtime crashes.
+- ## State Overview
 
 The function block is essentially stateless and reacts in an event-driven manner:
 
 1. **Wait State (Idle):** The function block waits for an update event at the adapters `IN1` or `IN2`.
 2. **Calculation:** After an event arrives, the division is performed.
 3. **Update:** The result is applied to `OUT`, and the output event is triggered. The function block immediately returns to the wait state.
-* **Measurement Scaling:** Division of raw sensor data by a fixed scaling factor for conversion into physical units.
-* **Average Calculation:** Division of a sum by the number of measured values in more complex computational networks.
-* **Ratio Calculations:** Determining percentages or ratios in process engineering plants.
-* **Classic `DIV` Module:** The classic IEC 61131-3 `DIV` module has dedicated pins for `IN1`, `IN2`, and `OUT`, as well as the corresponding `REQ` and `CNF` events. `AR_DIV_2` bundles these signals in adapters, simplifying wiring in large projects.
-* **`AR_MUL_2` / `AR_ADD_2`:** These function blocks share the same adapter philosophy but perform multiplications and additions, respectively. They can be seamlessly chained with `AR_DIV_2` to form mathematical calculation trees.
+- **Measurement Scaling:** Division of raw sensor data by a fixed scaling factor for conversion into physical units.
+- **Average Calculation:** Division of a sum by the number of measured values in more complex computational networks.
+- **Ratio Calculations:** Determining percentages or ratios in process engineering plants.
+- **Classic `DIV` Module:** The classic IEC 61131-3 `DIV` module has dedicated pins for `IN1`, `IN2`, and `OUT`, as well as the corresponding `REQ` and `CNF` events. `AR_DIV_2` bundles these signals in adapters, simplifying wiring in large projects.
+- **`AR_MUL_2` / `AR_ADD_2`:** These function blocks share the same adapter philosophy but perform multiplications and additions, respectively. They can be seamlessly chained with `AR_DIV_2` to form mathematical calculation trees.
 
 The `AR_DIV_2` is a highly efficient, modular function block for arithmetic division. Through the consistent use of adapters, it is ideally suited for clean, well-organized software architectures in distributed automation according to the IEC 61499 standard.
 ## Technical Features

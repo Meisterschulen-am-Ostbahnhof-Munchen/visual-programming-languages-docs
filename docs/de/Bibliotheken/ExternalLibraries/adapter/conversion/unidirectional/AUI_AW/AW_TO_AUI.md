@@ -36,12 +36,12 @@ Der FB besitzt keine eigenständigen Daten-Ausgänge. Das Datum `D1` vom Typ `UI
 
 Der Funktionsblock fungiert als reine Konvertierungsschicht zwischen zwei unterschiedlichen Adaptertypen. Intern ist ein einziger Funktionsbaustein `F_WORD_TO_UINT` eingebettet:
 
-1. **Ereignissteuerung**:  
-   - Ein eingehendes Ereignis am Socket `AW_IN.E1` triggert den Konvertierungsvorgang (`Convert.REQ`).  
+1. **Ereignissteuerung**:
+   - Ein eingehendes Ereignis am Socket `AW_IN.E1` triggert den Konvertierungsvorgang (`Convert.REQ`).
    - Nach Abschluss der Konvertierung erzeugt der interne Baustein ein Bestätigungsereignis (`Convert.CNF`), das an den Plug `AUI_OUT.E1` weitergeleitet wird.
 
-2. **Datenfluss**:  
-   - Der vom Socket `AW_IN.D1` bereitgestellte `WORD`-Wert wird an den Eingang `Convert.IN` übergeben.  
+2. **Datenfluss**:
+   - Der vom Socket `AW_IN.D1` bereitgestellte `WORD`-Wert wird an den Eingang `Convert.IN` übergeben.
    - Der Ausgang `Convert.OUT` liefert den konvertierten `UINT`-Wert, der an den Plug `AUI_OUT.D1` weitergegeben wird.
 
 Die Umwandlung erfolgt nach der IEC 61131-3 Standardkonvertierung `WORD_TO_UINT`.
@@ -74,4 +74,4 @@ Der Funktionsblock `AW_TO_AUI` bietet eine kompakte und zuverlässige Lösung zu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

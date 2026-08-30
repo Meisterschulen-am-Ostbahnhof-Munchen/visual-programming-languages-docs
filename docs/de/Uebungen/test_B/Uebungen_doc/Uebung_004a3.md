@@ -20,9 +20,9 @@ Das Ziel ist die Reduktion der visuellen Komplexität im Netzwerk-Diagramm. Es w
 
 ![Uebung_004a3_network](./Uebung_004a3_network.svg)
 
-  * **`DigitalInput_CLK_I1` & `I2`**: Die ereignisbasierten Eingänge.
-  * **`E_T_FF`**: Das Toggle-Flip-Flop.
-  * **`DigitalOutput_Q1`**: Der Ausgang.
+  - **`DigitalInput_CLK_I1` & `I2`**: Die ereignisbasierten Eingänge.
+  - **`E_T_FF`**: Das Toggle-Flip-Flop.
+  - **`DigitalOutput_Q1`**: Der Ausgang.
 
 Der Baustein `E_MERGE` aus der vorherigen Übung fehlt hier bewusst.
 
@@ -53,4 +53,4 @@ Gleiches Beispiel wie zuvor (Wechselschaltung), jedoch mit schlankerem Code (wen
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

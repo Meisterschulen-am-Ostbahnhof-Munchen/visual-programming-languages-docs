@@ -36,18 +36,18 @@ Nicht vorhanden.
 
 Der Block definiert vier symbolische Konstanten vom Typ `SINT` (Short Integer):
 
-*   `intern` (Wert: 0): Kennzeichnet ein internes Control Function (CF) oder einen internen Benutzer innerhalb eines Geräts oder einer logischen Einheit.
-*   `network` (Wert: 1): Kennzeichnet ein externes CF oder einen externen Benutzer im Netzwerk.
-*   `thisMember` (Wert: 2): Spezifiziert, dass ein Ereignis oder eine Nachricht für dieses spezifische interne CF oder diesen Benutzer bestimmt ist.
-*   `notdef` (Wert: -1): Zeigt an, dass der Wert ungültig oder nicht definiert ist.
+-   `intern` (Wert: 0): Kennzeichnet ein internes Control Function (CF) oder einen internen Benutzer innerhalb eines Geräts oder einer logischen Einheit.
+-   `network` (Wert: 1): Kennzeichnet ein externes CF oder einen externen Benutzer im Netzwerk.
+-   `thisMember` (Wert: 2): Spezifiziert, dass ein Ereignis oder eine Nachricht für dieses spezifische interne CF oder diesen Benutzer bestimmt ist.
+-   `notdef` (Wert: -1): Zeigt an, dass der Wert ungültig oder nicht definiert ist.
 
 Diese Konstanten können in der gesamten Anwendung importiert und verwendet werden, um Code lesbarer und wartbarer zu machen, anstatt magische Zahlen (wie 0, 1, 2, -1) direkt zu verwenden.
 
 ## Technische Besonderheiten
 
-*   **Typ:** `GlobalConstants` gemäß IEC 61499-1.
-*   **Datenbereich:** Die Konstanten sind vom Typ `SINT` (8-Bit vorzeichenbehaftete Ganzzahl).
-*   **Paket:** Der Block ist Teil des Pakets `isobus::pgn`, was auf seine Verwendung im Kontext von ISOBUS Parameter Group Numbers (PGNs) hindeutet.
+-   **Typ:** `GlobalConstants` gemäß IEC 61499-1.
+-   **Datenbereich:** Die Konstanten sind vom Typ `SINT` (8-Bit vorzeichenbehaftete Ganzzahl).
+-   **Paket:** Der Block ist Teil des Pakets `isobus::pgn`, was auf seine Verwendung im Kontext von ISOBUS Parameter Group Numbers (PGNs) hindeutet.
 
 ## Zustandsübersicht
 
@@ -57,15 +57,15 @@ Nicht anwendbar, da es sich um eine statische Konstantendefinition ohne Zustands
 
 Die Konstanten werden primär in ISOBUS-konformen Steuerungssystemen in der Landtechnik verwendet, beispielsweise in Traktoren und deren Anbaugeräten. Typische Anwendungen sind:
 
-*   **Nachrichtenfilterung:** Ein Empfängerblock kann anhand des `ISOUSERHOME_e`-Werts entscheiden, ob eine eingehende ISOBUS-Nachricht für das eigene Gerät (`thisMember`), ein anderes Gerät im Netzwerk (`network`) oder für eine interne Verarbeitung (`intern`) bestimmt ist.
-*   **Nachrichtenkonstruktion:** Ein Senderblock kann den Wert setzen, um den beabsichtigten Empfänger einer ausgesendeten Nachricht zu kennzeichnen.
-*   **Statusrückmeldung:** Ein Block kann den Status `notdef` zurückgeben, wenn die Herkunft oder das Ziel einer Nachricht nicht ermittelt werden kann.
+-   **Nachrichtenfilterung:** Ein Empfängerblock kann anhand des `ISOUSERHOME_e`-Werts entscheiden, ob eine eingehende ISOBUS-Nachricht für das eigene Gerät (`thisMember`), ein anderes Gerät im Netzwerk (`network`) oder für eine interne Verarbeitung (`intern`) bestimmt ist.
+-   **Nachrichtenkonstruktion:** Ein Senderblock kann den Wert setzen, um den beabsichtigten Empfänger einer ausgesendeten Nachricht zu kennzeichnen.
+-   **Statusrückmeldung:** Ein Block kann den Status `notdef` zurückgeben, wenn die Herkunft oder das Ziel einer Nachricht nicht ermittelt werden kann.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`E_SR` oder `E_RESTART`:** Dies sind ausführbare Basis-Funktionsblöcke mit Ereignislogik. `ISOUSERHOME_e` ist hingegen eine reine Datendefinition ohne Logik.
-*   **Benutzerdefinierte Datentypen (DT):** Ähnlich wie ein strukturierter Datentyp (STRUCT) oder eine Aufzählung (ENUM) dient `ISOUSERHOME_e` dazu, semantische Bedeutung zu kodieren. Der Unterschied liegt in der IEC 61499-Spezifikation: `GlobalConstants` sind für unveränderliche Werte vorgesehen, die projektweit gültig sind.
-*   **Direkte Verwendung von Zahlenwerten:** Die Verwendung von `ISOUSERHOME_e.intern` ist im Code deutlich aussagekräftiger und weniger fehleranfällig als die direkte Verwendung der Zahl `0`.
+-   **`E_SR` oder `E_RESTART`:** Dies sind ausführbare Basis-Funktionsblöcke mit Ereignislogik. `ISOUSERHOME_e` ist hingegen eine reine Datendefinition ohne Logik.
+-   **Benutzerdefinierte Datentypen (DT):** Ähnlich wie ein strukturierter Datentyp (STRUCT) oder eine Aufzählung (ENUM) dient `ISOUSERHOME_e` dazu, semantische Bedeutung zu kodieren. Der Unterschied liegt in der IEC 61499-Spezifikation: `GlobalConstants` sind für unveränderliche Werte vorgesehen, die projektweit gültig sind.
+-   **Direkte Verwendung von Zahlenwerten:** Die Verwendung von `ISOUSERHOME_e.intern` ist im Code deutlich aussagekräftiger und weniger fehleranfällig als die direkte Verwendung der Zahl `0`.
 
 ## Fazit
 
@@ -75,4 +75,4 @@ Die Konstanten werden primär in ISOBUS-konformen Steuerungssystemen in der Land
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

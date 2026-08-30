@@ -65,7 +65,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_042](../../../Uebungen/test_B/Uebungen_doc/Uebung_042.md)
+- [Uebung_042](../../../Uebungen/test_B/Uebungen_doc/Uebung_042.md)
 
 ## Fazit
 

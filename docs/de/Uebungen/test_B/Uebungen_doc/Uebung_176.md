@@ -36,8 +36,8 @@ Diese Übung ist als Vorlage konzipiert. Aktuell sind im Netzwerk keine Verbindu
 
 ### Lernziele und Aufgaben:
 
-*   **Verständnis der Flankenerkennung**: Lernen, wie Signale auf Zustandsänderungen überwacht werden.
-*   **TODO**: Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt "TODO". Dies weist darauf hin, dass der Lernende die notwendigen Ereignis- und Datenverbindungen herstellen muss, um die Funktionalität zu gewährleisten.
+-   **Verständnis der Flankenerkennung**: Lernen, wie Signale auf Zustandsänderungen überwacht werden.
+-   **TODO**: Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt "TODO". Dies weist darauf hin, dass der Lernende die notwendigen Ereignis- und Datenverbindungen herstellen muss, um die Funktionalität zu gewährleisten.
 
 ### Start der Übung:
 
@@ -53,4 +53,4 @@ Die `Uebung_176` bietet eine kompakte Umgebung zum Erlernen des `E_TRIG` Baustei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

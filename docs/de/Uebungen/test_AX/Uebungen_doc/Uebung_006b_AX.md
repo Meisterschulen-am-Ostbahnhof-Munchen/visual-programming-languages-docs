@@ -20,7 +20,7 @@ Unterschied zwischen SR (Set Priority) und RS (Reset Priority) verstehen.
 
 ![Uebung_006b_AX_network](./Uebung_006b_AX_network.svg)
 
-  * **`AX_RS`**: Ein RS-Flip-Flop.
+  - **`AX_RS`**: Ein RS-Flip-Flop.
 
 -----
 
@@ -28,8 +28,8 @@ Unterschied zwischen SR (Set Priority) und RS (Reset Priority) verstehen.
 
 Funktional sehr ähnlich zu `AX_SR`. Der Unterschied liegt im Verhalten, wenn **gleichzeitig** (im selben SPS-Zyklus) ein Set- und ein Reset-Event eintreffen (oder wenn beide Eingänge TRUE sind bei pegelgesteuerten Bausteinen).
 
-*   **SR**: Setzen hat Vorrang -> Ausgang wird TRUE.
-*   **RS**: Rücksetzen hat Vorrang -> Ausgang wird FALSE.
+-   **SR**: Setzen hat Vorrang -> Ausgang wird TRUE.
+-   **RS**: Rücksetzen hat Vorrang -> Ausgang wird FALSE.
 
 In der IEC 61499 mit Event-Verarbeitung ist "Gleichzeitigkeit" subtiler, da Events oft sequenziell abgearbeitet werden. Wenn jedoch z.B. durch einen `E_SPLIT` beide Events im selben "Step" ankommen, entscheidet die interne Logik des Bausteins. Beim `AX_RS` gewinnt im Zweifel das Reset.
 

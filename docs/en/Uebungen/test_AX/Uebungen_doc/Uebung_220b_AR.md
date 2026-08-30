@@ -71,7 +71,7 @@ The function block **AI_FB_CTUD** functions as a counter: The counter is increme
 
 Exercise **Exercise_220b_AR** demonstrates the use of a standardized IEC 61131-3 counter (CTUD) in an adapter architecture. By connecting digital inputs (pushbuttons/sensors), digital outputs, and a terminal output, a complete counting process with visualization is implemented. The learner understands the functionality of up/down counters, adapter communication in 4diac, and the conversion of data formats (INT via AI_TO_AR). Additionally, the possibility of event reduction using flip-flops is explored.
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

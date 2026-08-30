@@ -108,7 +108,7 @@ In some systems, retain variables are also persistent. `NVS_AS` relies on low-le
 
 The **NVS_AS** function block provides a practical, adapter-based encapsulation of non-volatile memory for SINT values. By combining initialization logic, automatic value feedback, and an adapter interface, it is ideally suited for modular IEC 61499 projects that require persistent storage with minimal wiring. The limitation to the SINT type and the automatic GET post-initialization should be noted, but simultaneously simplify handling in many standard applications.
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 
 ## Technical Features
 

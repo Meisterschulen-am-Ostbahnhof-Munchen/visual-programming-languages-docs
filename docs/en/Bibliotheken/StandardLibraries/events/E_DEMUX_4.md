@@ -51,9 +51,9 @@ The `E_DEMUX_4` (Event Demultiplexer) is a function block according to IEC 61499
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Exercise_087a1](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
-* [Exercise_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
+- [Exercise_040_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Exercise_087a1](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Exercise_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
 
 ## Conclusion
 

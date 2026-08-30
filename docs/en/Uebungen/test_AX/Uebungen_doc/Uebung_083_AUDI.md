@@ -57,7 +57,7 @@ This exercise illustrates the use of an adapter-based up/down counter (`AUDI_CTU
 
 This exercise demonstrates the use of an adapter-based up/down counter (`AUDI_CTUD_UDINT`) in 4diac. Four push-button inputs serve as control signals (count up, count down, reset, and preset takeover). The output signals QU (limit reached) and QD (zero point) are routed to digital outputs, and the current counter value is displayed numerically. The adapter technology decouples event and data flows, enabling flexible and reusable circuitry.
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

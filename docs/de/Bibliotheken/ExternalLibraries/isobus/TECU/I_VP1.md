@@ -13,27 +13,27 @@ Der Funktionsblock `I_VP1` dient zur Verarbeitung und Bereitstellung von Fahrzeu
 
 ### **Ereignis-Eingänge**
 
-*   **`INIT`**: Initialisierungsereignis. Wird bei `QI=TRUE` ausgelöst, um den Baustein zu starten. Bei `QI=FALSE` wird der Baustein deaktiviert.
+-   **`INIT`**: Initialisierungsereignis. Wird bei `QI=TRUE` ausgelöst, um den Baustein zu starten. Bei `QI=FALSE` wird der Baustein deaktiviert.
 
 ### **Ereignis-Ausgänge**
 
-*   **`INITO`**: Bestätigt den Abschluss der Initialisierung. Wird als Antwort auf das `INIT`-Ereignis gesendet.
-*   **`IND`**: Indikationsereignis. Signalisiert den erfolgreichen Empfang neuer, gültiger Positionsdaten von der angeschlossenen Ressource.
-*   **`TIMEOUT`**: Zeitüberschreitungsereignis. Wird ausgelöst, wenn innerhalb eines konfigurierten Zeitrahmens keine neuen Positionsdaten empfangen wurden.
+-   **`INITO`**: Bestätigt den Abschluss der Initialisierung. Wird als Antwort auf das `INIT`-Ereignis gesendet.
+-   **`IND`**: Indikationsereignis. Signalisiert den erfolgreichen Empfang neuer, gültiger Positionsdaten von der angeschlossenen Ressource.
+-   **`TIMEOUT`**: Zeitüberschreitungsereignis. Wird ausgelöst, wenn innerhalb eines konfigurierten Zeitrahmens keine neuen Positionsdaten empfangen wurden.
 
 ### **Daten-Eingänge**
 
-*   **`QI` (BOOL)**: Qualifiziert das `INIT`-Ereignis. Steuert den Aktivierungszustand des Funktionsblocks (`TRUE` = aktivieren, `FALSE` = deaktivieren).
+-   **`QI` (BOOL)**: Qualifiziert das `INIT`-Ereignis. Steuert den Aktivierungszustand des Funktionsblocks (`TRUE` = aktivieren, `FALSE` = deaktivieren).
 
 ### **Daten-Ausgänge**
 
-*   **`QO` (BOOL)**: Qualifiziert die Ereignisausgänge `INITO` und `IND`. Gibt den aktuellen Betriebszustand des Bausteins wider (`TRUE` = aktiv und betriebsbereit).
-*   **`STATUS` (STRING)**: Stellt Status- oder Fehlermeldungen des Bausteins in lesbarer Form bereit.
-*   **`Q_timeout` (BOOL)**: Signalisiert, ob ein Timeout aufgetreten ist (`TRUE` = Timeout aktiv, `FALSE` = keine Zeitüberschreitung).
-*   **`timestamp_timeout` (DINT)**: Zeitstempel (z. B. in Millisekunden), der dem `TIMEOUT`-Ereignis zugeordnet ist.
-*   **`timestamp_data` (DINT)**: Zeitstempel der zuletzt empfangenen und über `IND` ausgegebenen Positionsdaten.
-*   **`Latitude` (REAL)**: Der geografische Breitengrad der Fahrzeugposition in Grad. Der Wert ist gemäß PGN 65267 (SPN 584) skaliert und beinhaltet einen Offset von -210°.
-*   **`Longitude` (REAL)**: Der geografische Längengrad der Fahrzeugposition in Grad. Der Wert ist gemäß PGN 65267 (SPN 585) skaliert und beinhaltet einen Offset von -210°.
+-   **`QO` (BOOL)**: Qualifiziert die Ereignisausgänge `INITO` und `IND`. Gibt den aktuellen Betriebszustand des Bausteins wider (`TRUE` = aktiv und betriebsbereit).
+-   **`STATUS` (STRING)**: Stellt Status- oder Fehlermeldungen des Bausteins in lesbarer Form bereit.
+-   **`Q_timeout` (BOOL)**: Signalisiert, ob ein Timeout aufgetreten ist (`TRUE` = Timeout aktiv, `FALSE` = keine Zeitüberschreitung).
+-   **`timestamp_timeout` (DINT)**: Zeitstempel (z. B. in Millisekunden), der dem `TIMEOUT`-Ereignis zugeordnet ist.
+-   **`timestamp_data` (DINT)**: Zeitstempel der zuletzt empfangenen und über `IND` ausgegebenen Positionsdaten.
+-   **`Latitude` (REAL)**: Der geografische Breitengrad der Fahrzeugposition in Grad. Der Wert ist gemäß PGN 65267 (SPN 584) skaliert und beinhaltet einen Offset von -210°.
+-   **`Longitude` (REAL)**: Der geografische Längengrad der Fahrzeugposition in Grad. Der Wert ist gemäß PGN 65267 (SPN 585) skaliert und beinhaltet einen Offset von -210°.
 
 ### **Adapter**
 
@@ -50,30 +50,30 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Technische Besonderheiten
 
-*   **ISOBUS-Konformität**: Der Baustein ist spezifisch für den Einsatz in ISO 11783 (ISOBUS)-Netzwerken entwickelt und verarbeitet Daten gemäß der offiziellen Spezifikation für PGN 65267.
-*   **Datenkodierung**: Die Rohdaten für Breiten- (`Latitude`, SPN 584) und Längengrad (`Longitude`, SPN 585) werden als 4-Byte-Werte empfangen. Der Baustein wendet die in den Attributen definierte Skalierung und einen Offset von -210 Grad an, um die finalen `REAL`-Werte zu berechnen.
-*   **Attribut-basierte Metadaten**: Die Ausgangsvariablen für die Positionsdaten sind mit detaillierten Attributen (SPN, Name, Länge, Offset, Referenz-Link) annotiert. Dies erleichtert die Konfiguration, Dokumentation und Wartung innerhalb einer IEC 61499-Entwicklungsumgebung.
+-   **ISOBUS-Konformität**: Der Baustein ist spezifisch für den Einsatz in ISO 11783 (ISOBUS)-Netzwerken entwickelt und verarbeitet Daten gemäß der offiziellen Spezifikation für PGN 65267.
+-   **Datenkodierung**: Die Rohdaten für Breiten- (`Latitude`, SPN 584) und Längengrad (`Longitude`, SPN 585) werden als 4-Byte-Werte empfangen. Der Baustein wendet die in den Attributen definierte Skalierung und einen Offset von -210 Grad an, um die finalen `REAL`-Werte zu berechnen.
+-   **Attribut-basierte Metadaten**: Die Ausgangsvariablen für die Positionsdaten sind mit detaillierten Attributen (SPN, Name, Länge, Offset, Referenz-Link) annotiert. Dies erleichtert die Konfiguration, Dokumentation und Wartung innerhalb einer IEC 61499-Entwicklungsumgebung.
 
 ## Zustandsübersicht
 
 Der Baustein kann vereinfacht in folgende Hauptzustände übergehen:
 
-*   **Inaktiv**: Ausgangszustand. `QO=FALSE`. Keine Datenverarbeitung.
-*   **Aktiv (Warten auf Daten)**: Nach erfolgreicher Initialisierung. `QO=TRUE`. Der Baustein überwacht den Eingangsdatenstrom.
-*   **Datenverarbeitung**: Bei Empfang eines neuen PGN 65267-Datenpakets. Dekodierung, Skalierung und Berechnung der Positionswerte.
-*   **Datenausgabe**: Auslösen des `IND`-Ereignisses und Setzen der Ausgangsvariablen.
-*   **Timeout**: Auslösen des `TIMEOUT`-Ereignisses bei ausbleibenden Daten.
+-   **Inaktiv**: Ausgangszustand. `QO=FALSE`. Keine Datenverarbeitung.
+-   **Aktiv (Warten auf Daten)**: Nach erfolgreicher Initialisierung. `QO=TRUE`. Der Baustein überwacht den Eingangsdatenstrom.
+-   **Datenverarbeitung**: Bei Empfang eines neuen PGN 65267-Datenpakets. Dekodierung, Skalierung und Berechnung der Positionswerte.
+-   **Datenausgabe**: Auslösen des `IND`-Ereignisses und Setzen der Ausgangsvariablen.
+-   **Timeout**: Auslösen des `TIMEOUT`-Ereignisses bei ausbleibenden Daten.
 
 ## Anwendungsszenarien
 
-*   **Precision Farming / Teilflächenmanagement**: Bereitstellung präziser Fahrzeugpositionen für Applikationskarten, Spurführungssysteme oder Dokumentationszwecke.
-*   **Maschinen- und Flottenmanagement**: Ortung von landwirtschaftlichen oder kommunalen Fahrzeugen innerhalb eines Betriebsgeländes.
-*   **Assistenzsysteme**: Grundlage für kollisionsvermeidende Systeme oder automatische Lenksysteme, die eine genaue und standardisierte Positionsinformation benötigen.
+-   **Precision Farming / Teilflächenmanagement**: Bereitstellung präziser Fahrzeugpositionen für Applikationskarten, Spurführungssysteme oder Dokumentationszwecke.
+-   **Maschinen- und Flottenmanagement**: Ortung von landwirtschaftlichen oder kommunalen Fahrzeugen innerhalb eines Betriebsgeländes.
+-   **Assistenzsysteme**: Grundlage für kollisionsvermeidende Systeme oder automatische Lenksysteme, die eine genaue und standardisierte Positionsinformation benötigen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Generische Eingangsbausteinen (z. B., `E_SR`, `E_RTRIG`)**: Diese bieten grundlegende Einlese- oder Triggerfunktionen, sind aber nicht auf die Verarbeitung eines spezifischen ISOBUS-PGNs ausgelegt. `I_VP1` hingegen enthält die komplette Logik zur Dekodierung, Skalierung und Fehlerbehandlung für PGN 65267.
-*   **Allgemeine ISOBUS-Eingangsbausteinen**: Es könnten allgemeinere Bausteinen existieren, die verschiedene PGNs einlesen. `I_VP1` ist spezialisiert und optimiert für die effiziente und zuverlässige Verarbeitung von Fahrzeugpositionsdaten, was die Konfiguration vereinfacht und die Fehleranfälligkeit verringert.
+-   **Generische Eingangsbausteinen (z. B., `E_SR`, `E_RTRIG`)**: Diese bieten grundlegende Einlese- oder Triggerfunktionen, sind aber nicht auf die Verarbeitung eines spezifischen ISOBUS-PGNs ausgelegt. `I_VP1` hingegen enthält die komplette Logik zur Dekodierung, Skalierung und Fehlerbehandlung für PGN 65267.
+-   **Allgemeine ISOBUS-Eingangsbausteinen**: Es könnten allgemeinere Bausteinen existieren, die verschiedene PGNs einlesen. `I_VP1` ist spezialisiert und optimiert für die effiziente und zuverlässige Verarbeitung von Fahrzeugpositionsdaten, was die Konfiguration vereinfacht und die Fehleranfälligkeit verringert.
 
 ## Fazit
 

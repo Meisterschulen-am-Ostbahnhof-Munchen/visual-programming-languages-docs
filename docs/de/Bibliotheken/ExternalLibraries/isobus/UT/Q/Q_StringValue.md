@@ -101,7 +101,7 @@ ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
+- [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
 
 ## Fazit
 

@@ -19,7 +19,7 @@ Dieser Baustein verfügt über keine direkten Ereignis-Eingänge. Die Ereignisse
 
 ### **Ereignis-Ausgänge**
 
-*   **EO**: (Event Output) Bestätigung, dass eine steigende Flanke (oder ein High-Signal) erkannt wurde.
+-   **EO**: (Event Output) Bestätigung, dass eine steigende Flanke (oder ein High-Signal) erkannt wurde.
 
 ### **Daten-Eingänge**
 
@@ -31,8 +31,8 @@ Dieser Baustein verfügt über keine direkten Daten-Ausgänge.
 
 ### **Adapter**
 
-*   **QI** (Socket): Vom Typ `adapter::types::unidirectional::AX`. Dieser Adapter liefert den zu prüfenden Wert (boolesch) und das dazugehörige Ereignis.
-    *   Erwartet typischerweise ein Ereignis (z. B. `E1`) und ein boolesches Datum (z. B. `D1`).
+-   **QI** (Socket): Vom Typ `adapter::types::unidirectional::AX`. Dieser Adapter liefert den zu prüfenden Wert (boolesch) und das dazugehörige Ereignis.
+    -   Erwartet typischerweise ein Ereignis (z. B. `E1`) und ein boolesches Datum (z. B. `D1`).
 
 ## Funktionsweise
 
@@ -48,8 +48,8 @@ Technisch gesehen fungiert der Baustein als Gate, das das Adapter-Ereignis nur p
 
 ## Technische Besonderheiten
 
-*   **Interne Struktur:** Verwendet Standard-IEC-61499-Bausteine (`E_D_FF`, `E_SWITCH`).
-*   **Adapter-basiert:** Im Gegensatz zu klassischen Trigger-Bausteinen, die separate `CLK` und `QI` Eingänge haben, kapselt dieser Baustein die Signale in einem `AX`-Adapter.
+-   **Interne Struktur:** Verwendet Standard-IEC-61499-Bausteine (`E_D_FF`, `E_SWITCH`).
+-   **Adapter-basiert:** Im Gegensatz zu klassischen Trigger-Bausteinen, die separate `CLK` und `QI` Eingänge haben, kapselt dieser Baustein die Signale in einem `AX`-Adapter.
 
 ## Zustandsübersicht
 
@@ -57,14 +57,14 @@ Da es sich um einen Composite Function Block handelt, besitzt dieser Baustein ke
 
 ## Anwendungsszenarien
 
-*   **Signalfilterung:** Weiterleitung von Ereignissen nur dann, wenn ein bestimmter Zustand aktiv ist.
-*   **Adapter-Logik:** Einsatz in Systemen, die stark auf Adapter-Verbindungen setzen, um den Verdrahtungsaufwand zu minimieren.
-*   **Start-Trigger:** Auslösen von Prozessen, sobald ein boolesches Flag innerhalb einer Adapter-Struktur auf `TRUE` wechselt.
+-   **Signalfilterung:** Weiterleitung von Ereignissen nur dann, wenn ein bestimmter Zustand aktiv ist.
+-   **Adapter-Logik:** Einsatz in Systemen, die stark auf Adapter-Verbindungen setzen, um den Verdrahtungsaufwand zu minimieren.
+-   **Start-Trigger:** Auslösen von Prozessen, sobald ein boolesches Flag innerhalb einer Adapter-Struktur auf `TRUE` wechselt.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **E_R_TRIG:** Der Standard-Baustein für Ereignis-basierte steigende Flankenerkennung mit separaten Ereignis- und Dateneingängen. `AX_R_TRIG` ist das Äquivalent für Adapter-Verbindungen.
-*   **R_TRIG:** Der klassische SPS-Baustein (IEC 61131-3), der zyklisch abgefragt wird. `AX_R_TRIG` arbeitet hingegen rein ereignisgesteuert.
+-   **E_R_TRIG:** Der Standard-Baustein für Ereignis-basierte steigende Flankenerkennung mit separaten Ereignis- und Dateneingängen. `AX_R_TRIG` ist das Äquivalent für Adapter-Verbindungen.
+-   **R_TRIG:** Der klassische SPS-Baustein (IEC 61131-3), der zyklisch abgefragt wird. `AX_R_TRIG` arbeitet hingegen rein ereignisgesteuert.
 
 ## Fazit
 
@@ -74,4 +74,4 @@ Der **AX_R_TRIG** ist ein spezialisierter Baustein für die 4diac-Umgebung, der 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

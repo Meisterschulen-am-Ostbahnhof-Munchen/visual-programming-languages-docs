@@ -20,11 +20,11 @@ Verständnis des `E_REND` Bausteins. Dieser Baustein fungiert wie ein "UND" für
 
 ### Funktionsbausteine (FBs)
 
-  * **`DigitalInput_CLK_I1` & `I2`**: Die beiden Bestätigungs-Taster.
-  * **`DigitalInput_CLK_I3`**: Ein Reset-Taster.
-  * **`E_REND`**: Der Rendezvous-Baustein mit Eingängen `EI1`, `EI2` und einem Reset `R`.
-  * **`E_T_FF`**: Das Flip-Flop.
-  * **`DigitalOutput_Q1`**: Die Lampe.
+  - **`DigitalInput_CLK_I1` & `I2`**: Die beiden Bestätigungs-Taster.
+  - **`DigitalInput_CLK_I3`**: Ein Reset-Taster.
+  - **`E_REND`**: Der Rendezvous-Baustein mit Eingängen `EI1`, `EI2` und einem Reset `R`.
+  - **`E_T_FF`**: Das Flip-Flop.
+  - **`DigitalOutput_Q1`**: Die Lampe.
 
 -----
 
@@ -46,7 +46,7 @@ Verständnis des `E_REND` Bausteins. Dieser Baustein fungiert wie ein "UND" für
 3.  Das Flip-Flop schaltet um, die Lampe ändert ihren Zustand.
 4.  `E_REND` vergisst den Status und wartet erneut auf beide Events.
 
-*   Der Reset-Taster (`I3`) kann genutzt werden, um den internen Merker des `E_REND` zu löschen, falls man z.B. nur Taster 1 gedrückt hat und den Vorgang abbrechen will.
+-   Der Reset-Taster (`I3`) kann genutzt werden, um den internen Merker des `E_REND` zu löschen, falls man z.B. nur Taster 1 gedrückt hat und den Vorgang abbrechen will.
 
 -----
 

@@ -17,9 +17,9 @@ Demonstration of converting data to events for control purposes.
 
 ![Uebung_005_AX_network](./Uebung_005_AX_network.svg)
 
-* **`DigitalInput_I1`**: Type `logiBUS_IXA`. Continuously returns TRUE when pressed.
-* **`AX_SWITCH`**: Serves as a gate here.
-* **`AX_T_FF`**: The toggle flip-flop.
+- **`DigitalInput_I1`**: Type `logiBUS_IXA`. Continuously returns TRUE when pressed.
+- **`AX_SWITCH`**: Serves as a gate here.
+- **`AX_T_FF`**: The toggle flip-flop.
 
 -----
 

@@ -79,7 +79,7 @@ Im Vergleich zu einfachen Skalierungsbausteinen bietet SCALE_LIM zusätzlich:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_043](../../../Uebungen/test_B/Uebungen_doc/Uebung_043.md)
+- [Uebung_043](../../../Uebungen/test_B/Uebungen_doc/Uebung_043.md)
 
 ## Fazit
 
@@ -89,4 +89,4 @@ SCALE_LIM ist ein vielseitiger Funktionsblock für Anwendungen, die sowohl Skali
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

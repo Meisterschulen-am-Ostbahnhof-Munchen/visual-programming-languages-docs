@@ -78,8 +78,8 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
-* [Uebung_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Uebung_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Uebung_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
 
 ## Fazit
 

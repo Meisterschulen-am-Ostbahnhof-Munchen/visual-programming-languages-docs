@@ -2,9 +2,9 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ![SPLIT_DWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/140e8baa-2ae9-4977-91b3-1a7b608f9f12)
 
@@ -62,7 +62,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 

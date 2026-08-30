@@ -15,12 +15,12 @@ Names of variables, function blocks, programs, and other elements are called **i
 
 ### Best Practices (Recommendations)
 
-* **Underscores:** Avoid single underscores at the beginning of names, as these are often reserved for internal library functions.
-* **Double Underscores:** These are reserved or forbidden in many systems.
-* **Clarity:** Names should be self-explanatory. Use `Temperatur_Sensor_1` instead of `T_S1`.
-* **Synonyms:**
-* **CamelCase:** `MaxTemperatur`
-* **SnakeCase:** `Max_Temperatur` (very common in the PLC world)
+- **Underscores:** Avoid single underscores at the beginning of names, as these are often reserved for internal library functions.
+- **Double Underscores:** These are reserved or forbidden in many systems.
+- **Clarity:** Names should be self-explanatory. Use `Temperatur_Sensor_1` instead of `T_S1`.
+- **Synonyms:**
+- **CamelCase:** `MaxTemperatur`
+- **SnakeCase:** `Max_Temperatur` (very common in the PLC world)
 
 | Allowed | Forbidden | Reason |
 | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ Names of variables, function blocks, programs, and other elements are called **i
 
 The representation of numbers (binary, hexadecimal, decimal) and the use of literals in code are essential for control programming.
 
-* Detailed information can be found here: **[Numbers and Number Systems ](Zahlen.md)**
+- Detailed information can be found here: **[Numbers and Number Systems ](Zahlen.md)**
 
 ---
 
@@ -43,9 +43,9 @@ The representation of numbers (binary, hexadecimal, decimal) and the use of lite
 
 Data types define what kind of information a variable can store (e.g., an integer, a floating-point number, or a Boolean value).
 
-* An overview can be found here: **[DataTypes](Datentypen/index.md)**
-* Information on generic data types: **[ANYTypes](Datentypen/GenerischeDatentypen/ANY-Typen.md)**
-* Which types can be combined: **[TypeCompatibility](Datentypen/Typkompatibilität.md)**
+- An overview can be found here: **[DataTypes](Datentypen/index.md)**
+- Information on generic data types: **[ANYTypes](Datentypen/GenerischeDatentypen/ANY-Typen.md)**
+- Which types can be combined: **[TypeCompatibility](Datentypen/Typkompatibilität.md)**
 
 ---
 
@@ -53,4 +53,4 @@ Data types define what kind of information a variable can store (e.g., an intege
 
 If you absolutely cannot remember the number **IEC 61499**, here's a memory aid:
 
-* **[Mnemonic: IEC 61499](Eselsbruecke_IEC61499.md)**
+- **[Mnemonic: IEC 61499](Eselsbruecke_IEC61499.md)**

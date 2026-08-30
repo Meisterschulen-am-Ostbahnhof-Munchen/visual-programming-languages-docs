@@ -72,8 +72,8 @@ Vergleich mit [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
-* [Uebung_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+- [Uebung_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+- [Uebung_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Änderungserkennung
 

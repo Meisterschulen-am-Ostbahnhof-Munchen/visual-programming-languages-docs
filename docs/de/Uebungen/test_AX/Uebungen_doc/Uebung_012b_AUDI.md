@@ -12,22 +12,22 @@ Diese Übung demonstriert die Aufnahme eines numerischen Werts über einen ISOBU
 
 Die Übung besteht aus einem Subapplikationsnetzwerk, das vier Funktionsbausteine sowie deren Adapterverbindungen enthält. Es werden keine weiteren Sub‑Bausteine (verschachtelte SubApplikationen) verwendet.
 
-- **InputNumber_I1** (Typ: `isobus::UT::io::NumericValue::NumericValue_IDA`)  
-  – Parameter: `QI = TRUE`, `u16ObjId = InputNumber_I1`  
-  – Eingang: Adapter‑Schnittstelle `IN`  
+- **InputNumber_I1** (Typ: `isobus::UT::io::NumericValue::NumericValue_IDA`)
+  – Parameter: `QI = TRUE`, `u16ObjId = InputNumber_I1`
+  – Eingang: Adapter‑Schnittstelle `IN`
   – Funktion: Liest einen numerischen Wert von einem ISOBUS‑Eingang (Object‑ID `InputNumber_I1`). Der ausgegebene Wert wird über den Adapter‑Ausgang `AD_IN` an die nächste Stufe weitergegeben.
 
-- **AD_TO_AUDI** (Typ: `adapter::conversion::unidirectional::AD_TO_AUDI`)  
+- **AD_TO_AUDI** (Typ: `adapter::conversion::unidirectional::AD_TO_AUDI`)
   – Funktion: Wandelt das Datenformat des vorherigen Adapters (`AD`‑Schnittstelle) in das AUDI‑Format um. Dadurch wird die Kompatibilität zwischen den unterschiedlichen Adaptertypen hergestellt.
 
-- **INI_AUDI** (Typ: `eclipse4diac::storage::INI_AUDI`)  
-  – Parameter: `QI = TRUE`, `SECTION = SECTION_I1_STORE`, `KEY = KEY_I1_STORE`, `DEFAULT_VALUE = UDINT#55`  
-  – Eingang: Adapter‑Schnittstelle `AUDI_IN`  
+- **INI_AUDI** (Typ: `eclipse4diac::storage::INI_AUDI`)
+  – Parameter: `QI = TRUE`, `SECTION = SECTION_I1_STORE`, `KEY = KEY_I1_STORE`, `DEFAULT_VALUE = UDINT#55`
+  – Eingang: Adapter‑Schnittstelle `AUDI_IN`
   – Funktion: Schreibt den übergebenen numerischen Wert in einen INI‑Speicher (Abschnitt `SECTION_I1_STORE`, Schlüssel `KEY_I1_STORE`). Wird kein gültiger Wert geliefert, wird der Defaultwert 55 verwendet. Der gespeicherte Wert wird über den Adapter‑Ausgang `AUDI_OUT` ausgegeben.
 
-- **Q_NumericValue_AUDI** (Typ: `isobus::UT::Q::Q_NumericValue_AUDI`)  
-  – Parameter: `u16ObjId = OutputNumber_N1`  
-  – Eingang: Datenanschluss `u32NewValue` (verbunden mit dem Adapter‑Ausgang von `INI_AUDI`)  
+- **Q_NumericValue_AUDI** (Typ: `isobus::UT::Q::Q_NumericValue_AUDI`)
+  – Parameter: `u16ObjId = OutputNumber_N1`
+  – Eingang: Datenanschluss `u32NewValue` (verbunden mit dem Adapter‑Ausgang von `INI_AUDI`)
   – Funktion: Setzt den übergebenen 32‑Bit‑Wert als neuen Ausgabewert für die ISOBUS‑Objekt‑ID `OutputNumber_N1`. Der Wert wird so auf dem ISOBUS‑Datenfeld ausgegeben.
 
 ### Compiler‑Importe
@@ -55,10 +55,10 @@ Die gesamte Datenkette ist unidirektional und arbeitet ohne explizite Ereignisst
 - Kennenlernen des INI‑Speicher‑Bausteins (`INI_AUDI`) zur persistenten Speicherung von Werten.
 - Anwendung von ISOBUS‑Ein‑/Ausgabe‑Bausteinen mit konfigurierbaren Objekt‑IDs.
 
-**Vorkenntnisse:**  
+**Vorkenntnisse:**
 Grundlagen der 4diac‑IDE, Erstellung von Subapplikationen, Umgang mit Adaptern.
 
-**Hinweise zur Übung:**  
+**Hinweise zur Übung:**
 Die Konstanten `SECTION_I1_STORE` und `KEY_I1_STORE` müssen im Projekt als NVS‑Konstanten definiert sein. Der Defaultwert von 55 dient als Fallback, falls noch kein Wert gespeichert wurde.
 
 ## Zusammenfassung
@@ -69,4 +69,4 @@ Die Übung **Uebung_012b_AUDI** zeigt einen vollständigen Datenpfad von der ISO
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

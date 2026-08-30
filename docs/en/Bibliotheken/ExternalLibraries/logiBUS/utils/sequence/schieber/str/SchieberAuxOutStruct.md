@@ -26,9 +26,9 @@ The `SchieberAuxOutStruct` is purely a data storage structure. It encapsulates t
 
 ## Technical Features
 
-* **Initialization:** The structure uses predefined constants (`ID_NULL`, `COLOR_WHITE`) from imported namespaces for the initial values. This ensures consistency and simplifies maintenance.
-* **Typing:** Explicit typing (`UINT` for the image ID, `USINT` for the color) enables rigorous checks by the compiler and increases reliability.
-* **Usage:** This STRUCT is typically used as a data type for inputs or outputs of function blocks (FBs) that interact with graphical user interfaces or display devices.
+- **Initialization:** The structure uses predefined constants (`ID_NULL`, `COLOR_WHITE`) from imported namespaces for the initial values. This ensures consistency and simplifies maintenance.
+- **Typing:** Explicit typing (`UINT` for the image ID, `USINT` for the color) enables rigorous checks by the compiler and increases reliability.
+- **Usage:** This STRUCT is typically used as a data type for inputs or outputs of function blocks (FBs) that interact with graphical user interfaces or display devices.
 *
 ## State Overview
 
@@ -38,9 +38,9 @@ Since it is a passive data type, `SchieberAuxOutStruct` does not have an interna
 
 This function block primarily serves to parameterize display elements in ISOBUS-compatible terminals (UTs). Specific applications include:
 
-* Configuration of sliders or status indicators in a user interface.
-* Dynamic change of symbols and their backgrounds depending on the machine state (e.g., warning, activity, error).
-* Standardization of data exchange between control logic and visualization function blocks.
+- Configuration of sliders or status indicators in a user interface.
+- Dynamic change of symbols and their backgrounds depending on the machine state (e.g., warning, activity, error).
+- Standardization of data exchange between control logic and visualization function blocks.
 
 ## ⚖️ Comparison with Similar Building Blocks
 
@@ -54,4 +54,4 @@ SchieberAuxOutStruct` is an essential, reusable data component for display appli
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

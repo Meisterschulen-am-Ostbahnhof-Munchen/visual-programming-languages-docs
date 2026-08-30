@@ -66,7 +66,7 @@ Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Mö
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
+- [Uebung_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Fazit
 
@@ -76,4 +76,4 @@ Der XOR_3 Funktionsblock stellt eine effiziente und flexible Lösung für bitwei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

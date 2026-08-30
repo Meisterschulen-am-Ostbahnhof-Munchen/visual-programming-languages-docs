@@ -62,4 +62,4 @@ The `Uebung_003b3_sub_AX` is a generic interconnect that maps a digital radio in
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003b3_AX](Uebung_003b3_AX.md)
+- [Exercise_003b3_AX](Uebung_003b3_AX.md)

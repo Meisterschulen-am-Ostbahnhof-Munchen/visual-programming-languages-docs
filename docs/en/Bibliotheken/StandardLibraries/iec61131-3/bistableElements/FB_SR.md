@@ -69,8 +69,8 @@ The state of the flip-flop (`Q1`) depends on the current values of `S1` and `R` 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
-* [Exercise_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
+- [Exercise_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
+- [Exercise_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
 
 ## Conclusion
 

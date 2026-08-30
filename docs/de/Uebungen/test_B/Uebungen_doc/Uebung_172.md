@@ -29,9 +29,9 @@ Diese Sub-Applikation definiert den Rahmen der Übung.
 
 Aktuell stellt die Übung ein Gerüst dar, das vom Anwender vervollständigt werden muss.
 
-*   **Status**: Die Sub-Applikation enthält eine Instanz des `E_MUX_2`, jedoch noch keine Verbindungen (Event- oder Datenflüsse).
-*   **Hinweise**: Im Netzwerk befindet sich ein Kommentar-Feld mit dem Inhalt **"TODO"** (bei x=-1900, y=-400). Dies signalisiert, dass die Logik, Eingänge und Ausgänge noch verdrahtet werden müssen.
-*   **Ziel der Übung**: Das Ziel ist vermutlich, zwei verschiedene Event-Quellen an den `E_MUX_2` anzuschließen und das resultierende Ausgangs-Event weiterzuverarbeiten, um das Prinzip der Ereignis-Zusammenführung (Multiplexing) zu verstehen.
+-   **Status**: Die Sub-Applikation enthält eine Instanz des `E_MUX_2`, jedoch noch keine Verbindungen (Event- oder Datenflüsse).
+-   **Hinweise**: Im Netzwerk befindet sich ein Kommentar-Feld mit dem Inhalt **"TODO"** (bei x=-1900, y=-400). Dies signalisiert, dass die Logik, Eingänge und Ausgänge noch verdrahtet werden müssen.
+-   **Ziel der Übung**: Das Ziel ist vermutlich, zwei verschiedene Event-Quellen an den `E_MUX_2` anzuschließen und das resultierende Ausgangs-Event weiterzuverarbeiten, um das Prinzip der Ereignis-Zusammenführung (Multiplexing) zu verstehen.
 
 ## Zusammenfassung
 

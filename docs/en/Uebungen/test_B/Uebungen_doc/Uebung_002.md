@@ -17,8 +17,8 @@ The main objective of this exercise is to demonstrate how event and data connect
 
 ![Uebung_002_network](./Uebung_002_network.svg)
 
-* **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. [cite_start]This block reads the hardware input `Input_I1`[cite: 1].
-* **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instances of type `logiBUS_QX`. [cite_start]These represent the physical outputs `Output_Q1` and `Output_Q2`[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. [cite_start]This block reads the hardware input `Input_I1`[cite: 1].
+- **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instances of type `logiBUS_QX`. [cite_start]These represent the physical outputs `Output_Q1` and `Output_Q2`[cite: 1].
 
 -----
 

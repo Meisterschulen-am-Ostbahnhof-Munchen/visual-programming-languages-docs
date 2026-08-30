@@ -20,9 +20,9 @@ Das Hauptziel dieser Übung ist die Implementierung einer logischen Entscheidung
 
 ![Uebung_002a4_network](./Uebung_002a4_network.svg)
 
-  * **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IX`. [cite_start]Diese repräsentieren die beiden Hardware-Eingänge, die überwacht werden[cite: 1].
-  * **`AND_2_BOOL`**: Eine Instanz des Typs `AND_2_BOOL` (aus der IEC 61131-Bibliothek). [cite_start]Dieser Baustein führt die logische UND-Operation speziell für boolesche Werte aus. Er besitzt zwei Dateneingänge (`IN1`, `IN2`) und einen Datenausgang (`OUT`)[cite: 1]. Wie alle Standard-Logikbausteine reagiert er auf ein Ereignis am Port `REQ` und signalisiert die Fertigstellung am Port `CNF`.
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`[cite: 1].
+  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IX`. [cite_start]Diese repräsentieren die beiden Hardware-Eingänge, die überwacht werden[cite: 1].
+  - **`AND_2_BOOL`**: Eine Instanz des Typs `AND_2_BOOL` (aus der IEC 61131-Bibliothek). [cite_start]Dieser Baustein führt die logische UND-Operation speziell für boolesche Werte aus. Er besitzt zwei Dateneingänge (`IN1`, `IN2`) und einen Datenausgang (`OUT`)[cite: 1]. Wie alle Standard-Logikbausteine reagiert er auf ein Ereignis am Port `REQ` und signalisiert die Fertigstellung am Port `CNF`.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`[cite: 1].
 
 -----
 

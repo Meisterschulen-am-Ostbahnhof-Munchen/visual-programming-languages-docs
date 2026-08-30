@@ -63,11 +63,11 @@ END_IF
 
 ## 🛠️ Related Exercises
 
-* [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
-* [Exercise_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
-* [Exercise_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
-* [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
-* [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
+- [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Exercise_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
+- [Exercise_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+- [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
+- [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Conclusion
 

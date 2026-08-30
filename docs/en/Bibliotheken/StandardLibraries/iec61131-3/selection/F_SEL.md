@@ -72,9 +72,9 @@ Compared to other selection blocks, F_SEL offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Exercise_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
-* [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Exercise_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Exercise_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+- [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Conclusion
 

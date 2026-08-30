@@ -13,26 +13,26 @@ Dieser Funktionsblock dient dazu, acht individuelle BOOL-Werte aus einer einzeln
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Ein Ereignis an diesem Eingang fordert die Konvertierung an. Es signalisiert dem Funktionsblock, die Daten vom Eingang `IN` zu verarbeiten.
+-   **REQ**: Ein Ereignis an diesem Eingang fordert die Konvertierung an. Es signalisiert dem Funktionsblock, die Daten vom Eingang `IN` zu verarbeiten.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Dieses Ereignis wird ausgegeben, sobald die Konvertierung abgeschlossen ist und alle Ausgangs-BOOL-Werte (`OUT_00` bis `OUT_07`) aktualisiert wurden.
+-   **CNF**: Dieses Ereignis wird ausgegeben, sobald die Konvertierung abgeschlossen ist und alle Ausgangs-BOOL-Werte (`OUT_00` bis `OUT_07`) aktualisiert wurden.
 
 ### **Daten-Eingänge**
 
-*   **IN** (Typ: `logiBUS::utils::conversion::types::ST08X`): Die Eingangsstruktur, die die acht zu extrahierenden BOOL-Werte enthält.
+-   **IN** (Typ: `logiBUS::utils::conversion::types::ST08X`): Die Eingangsstruktur, die die acht zu extrahierenden BOOL-Werte enthält.
 
 ### **Daten-Ausgänge**
 
-*   **OUT_00** (Typ: `BOOL`): Der erste extrahierte BOOL-Wert (Bit 00).
-*   **OUT_01** (Typ: `BOOL`): Der zweite extrahierte BOOL-Wert (Bit 01).
-*   **OUT_02** (Typ: `BOOL`): Der dritte extrahierte BOOL-Wert (Bit 02).
-*   **OUT_03** (Typ: `BOOL`): Der vierte extrahierte BOOL-Wert (Bit 03).
-*   **OUT_04** (Typ: `BOOL`): Der fünfte extrahierte BOOL-Wert (Bit 04).
-*   **OUT_05** (Typ: `BOOL`): Der sechste extrahierte BOOL-Wert (Bit 05).
-*   **OUT_06** (Typ: `BOOL`): Der siebte extrahierte BOOL-Wert (Bit 06).
-*   **OUT_07** (Typ: `BOOL`): Der achte extrahierte BOOL-Wert (Bit 07).
+-   **OUT_00** (Typ: `BOOL`): Der erste extrahierte BOOL-Wert (Bit 00).
+-   **OUT_01** (Typ: `BOOL`): Der zweite extrahierte BOOL-Wert (Bit 01).
+-   **OUT_02** (Typ: `BOOL`): Der dritte extrahierte BOOL-Wert (Bit 02).
+-   **OUT_03** (Typ: `BOOL`): Der vierte extrahierte BOOL-Wert (Bit 03).
+-   **OUT_04** (Typ: `BOOL`): Der fünfte extrahierte BOOL-Wert (Bit 04).
+-   **OUT_05** (Typ: `BOOL`): Der sechste extrahierte BOOL-Wert (Bit 05).
+-   **OUT_06** (Typ: `BOOL`): Der siebte extrahierte BOOL-Wert (Bit 06).
+-   **OUT_07** (Typ: `BOOL`): Der achte extrahierte BOOL-Wert (Bit 07).
 
 ### **Adapter**
 
@@ -44,9 +44,9 @@ Sobald ein Ereignis am Eingang `REQ` empfangen wird, führt der Funktionsblock e
 
 ## Technische Besonderheiten
 
-*   **Direkte Zuordnung:** Der Funktionsblock implementiert eine einfache und direkte 1:1-Zuordnung von den Feldern der `ST08X`-Struktur zu den einzelnen BOOL-Ausgängen.
-*   **Typensicherheit:** Durch die Verwendung des spezifischen Typs `ST08X` wird eine klare und typensichere Schnittstelle gewährleistet.
-*   **Effizienz:** Die Konvertierung ist hoch effizient, da keine komplexe Logik oder Berechnungen erforderlich sind.
+-   **Direkte Zuordnung:** Der Funktionsblock implementiert eine einfache und direkte 1:1-Zuordnung von den Feldern der `ST08X`-Struktur zu den einzelnen BOOL-Ausgängen.
+-   **Typensicherheit:** Durch die Verwendung des spezifischen Typs `ST08X` wird eine klare und typensichere Schnittstelle gewährleistet.
+-   **Effizienz:** Die Konvertierung ist hoch effizient, da keine komplexe Logik oder Berechnungen erforderlich sind.
 
 ## Zustandsübersicht
 
@@ -54,9 +54,9 @@ Dieser Funktionsblock ist zustandslos. Er speichert keine internen Daten zwische
 
 ## Anwendungsszenarien
 
-*   **Zerlegung von kombinierten Signalen:** Ideal, um eine logisch gruppierte 8-Bit-Struktur in ihre einzelnen, unabhängigen BOOL-Signale aufzuteilen.
-*   **Anpassung der Schnittstelle:** Ermöglicht die Anbindung an andere Funktionsblöcke oder Systeme, die einzelne BOOL-Eingänge anstelle einer Struktur erwarten.
-*   **Visualisierung und Diagnose:** Vereinfacht die separate Anzeige oder Überwachung jedes einzelnen Bits einer `ST08X`-Struktur.
+-   **Zerlegung von kombinierten Signalen:** Ideal, um eine logisch gruppierte 8-Bit-Struktur in ihre einzelnen, unabhängigen BOOL-Signale aufzuteilen.
+-   **Anpassung der Schnittstelle:** Ermöglicht die Anbindung an andere Funktionsblöcke oder Systeme, die einzelne BOOL-Eingänge anstelle einer Struktur erwarten.
+-   **Visualisierung und Diagnose:** Vereinfacht die separate Anzeige oder Überwachung jedes einzelnen Bits einer `ST08X`-Struktur.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -70,4 +70,4 @@ Der Funktionsblock `ST08X_TO_BOOLS` ist ein nützliches Werkzeug zur Zerlegung v
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

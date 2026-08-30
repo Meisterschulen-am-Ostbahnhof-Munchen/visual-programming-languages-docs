@@ -76,8 +76,8 @@ The circuit flow is as follows:
 ... 4. **Toggle**: The combined event reaches the `CLK` input of the `E_T_FF`. This causes the flip-flop to invert (toggle) its state `Q`.
 
 5. **Output**:
-* The data signal `Q` (TRUE/FALSE) is sent to the data input `OUT` of the output block `DigitalOutput_Q1`.
-* Simultaneously, the event output `EO` of the flip-flop triggers the `REQ` input of the output block to update the physical output.
+- The data signal `Q` (TRUE/FALSE) is sent to the data input `OUT` of the output block `DigitalOutput_Q1`.
+- Simultaneously, the event output `EO` of the flip-flop triggers the `REQ` input of the output block to update the physical output.
 *
 ## Summary
 

@@ -16,8 +16,8 @@ The interface consists solely of the defined global constants. Each constant is 
 
 The following constants are provided:
 
-* `PulseInput_I1` to `PulseInput_I9`: Represent the physical pulse inputs 1 to 9. The initial value sets the structure field `Pin` to the corresponding value (1-9).
-* `Invalid`: Represents an invalid or unused input. The initial value sets the structure field `Pin` to the value 255.
+- `PulseInput_I1` to `PulseInput_I9`: Represent the physical pulse inputs 1 to 9. The initial value sets the structure field `Pin` to the corresponding value (1-9).
+- `Invalid`: Represents an invalid or unused input. The initial value sets the structure field `Pin` to the value 255.
 
 ## Functionality
 
@@ -27,9 +27,9 @@ The constants are inserted into the application code at compile time. If another
 
 ## Technical Features
 
-* **Typing:** All constants are strictly of the structured data type `logiBUS_PI_S`. This enforces type-safe usage and prevents the unintentional assignment of simple integer values.
-* **Initialization:** The initial values are specified using the ST syntax `(Pin := X)`, indicating structured initialization.
-* **Invalid State:** The constant `Invalid` with pin value 255 provides a standardized way to indicate an unused or faulty channel.
+- **Typing:** All constants are strictly of the structured data type `logiBUS_PI_S`. This enforces type-safe usage and prevents the unintentional assignment of simple integer values.
+- **Initialization:** The initial values are specified using the ST syntax `(Pin := X)`, indicating structured initialization.
+- **Invalid State:** The constant `Invalid` with pin value 255 provides a standardized way to indicate an unused or faulty channel.
 
 ## State Overview
 
@@ -37,9 +37,9 @@ Since it is a constant block, `logiBUS_PI` has no internal state or state machin
 
 ## Application Scenarios
 
-* **Hardware Configuration:** Primarily used to configure logiBUS I/O modules that provide pulse inputs (e.g., for encoders, frequency, or speed measurement).
-* **Function Block Parameterization:** Simplified and readable parameterization of function blocks that require a specific pulse input. Instead of the magic number `3`, the self-explanatory constant `PulseInput_I3` is used.
-* **Maintenance and Readability:** Increases the maintainability and readability of the application code, as the hardware assignment is directly apparent in the constant name.
+- **Hardware Configuration:** Primarily used to configure logiBUS I/O modules that provide pulse inputs (e.g., for encoders, frequency, or speed measurement).
+- **Function Block Parameterization:** Simplified and readable parameterization of function blocks that require a specific pulse input. Instead of the magic number `3`, the self-explanatory constant `PulseInput_I3` is used.
+- **Maintenance and Readability:** Increases the maintainability and readability of the application code, as the hardware assignment is directly apparent in the constant name.
 
 ## ⚖️ Comparison with Similar Blocks
 

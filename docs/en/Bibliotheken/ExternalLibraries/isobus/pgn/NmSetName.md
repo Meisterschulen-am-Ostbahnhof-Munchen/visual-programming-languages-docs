@@ -11,19 +11,19 @@ The function block `NmSetName` converts a structured name field definition into 
 
 ### **Event Inputs**
 
-* **REQ**: This event triggers the conversion. Upon arrival, the incoming data is processed at input `psNameField`.
+- **REQ**: This event triggers the conversion. Upon arrival, the incoming data is processed at input `psNameField`.
 
 ### **Event Outputs**
 
-* **CNF**: This event signals the completion of processing. It is generated after the successful conversion of the input data.
+- **CNF**: This event signals the completion of processing. It is generated after the successful conversion of the input data.
 
 ### **Data Inputs**
 
-* **psNameField** (`isobus::pgn::NAMEFIELD_T`): The input structure containing all individual components of an ISOBUS name (such as manufacturer code, device class, function instance, etc.) in a format easily manageable for the programmer.
+- **psNameField** (`isobus::pgn::NAMEFIELD_T`): The input structure containing all individual components of an ISOBUS name (such as manufacturer code, device class, function instance, etc.) in a format easily manageable for the programmer.
 
 ### **Data Outputs**
 
-* **(Unnamed)** (`isobus::pgn::CF_NAME_T`): This output provides the resulting 8-byte ISO NAME array (`data[0]` to `data[7]`), which can be used directly in ISOBUS messages.
+- **(Unnamed)** (`isobus::pgn::CF_NAME_T`): This output provides the resulting 8-byte ISO NAME array (`data[0]` to `data[7]`), which can be used directly in ISOBUS messages.
 
 ### **Adapters**
 
@@ -35,10 +35,10 @@ The block operates as a pure data transformer. When triggered by the `REQ` event
 
 ## Technical Features
 
-* **Bitwise Processing:** The core functionality is based on precise bitwise operations to pack the complex structure of the ISO NAME into a compact byte array.
-* **Type Safety:** Explicit type conversions (e.g., `DWORD_TO_BYTE`, `WORD_TO_BYTE`) are used to ensure correct data handling.
-* **Standard Compliance:** The implementation strictly adheres to the bit mapping as defined in ISO 11783-5.
-* **Stateless:** The block has no internal state between calls. The output depends solely on the current input data.
+- **Bitwise Processing:** The core functionality is based on precise bitwise operations to pack the complex structure of the ISO NAME into a compact byte array.
+- **Type Safety:** Explicit type conversions (e.g., `DWORD_TO_BYTE`, `WORD_TO_BYTE`) are used to ensure correct data handling.
+- **Standard Compliance:** The implementation strictly adheres to the bit mapping as defined in ISO 11783-5.
+- **Stateless:** The block has no internal state between calls. The output depends solely on the current input data.
 
 ## State Overview
 
@@ -52,18 +52,18 @@ The block then returns directly to the wait state (1).
 
 ## Application Scenarios
 
-* **Initializing an ISOBUS Node:** When an electronic control unit (ECU) starts up in an ISOBUS network, its unique NAME must be constructed from configurable parameters (e.g., from an NVRAM) and entered into the communication stack.
-* **Dynamic Device Configuration:** In systems where device properties (e.g., function instance) can change at runtime, this block is used to generate the new, valid NAME.
-* **Test and Simulation Tools:** For generating correct ISO NAMEs for simulating various virtual devices in an ISOBUS network.
+- **Initializing an ISOBUS Node:** When an electronic control unit (ECU) starts up in an ISOBUS network, its unique NAME must be constructed from configurable parameters (e.g., from an NVRAM) and entered into the communication stack.
+- **Dynamic Device Configuration:** In systems where device properties (e.g., function instance) can change at runtime, this block is used to generate the new, valid NAME.
+- **Test and Simulation Tools:** For generating correct ISO NAMEs for simulating various virtual devices in an ISOBUS network.
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **Counterpart `NmGetName`:** While `NmSetName` packs a structured description into a byte array, a hypothetical `NmGetName` block would perform the reverse operation: It extracts the individual fields from a given ISO NAME byte array and presents them in a `NAMEFIELD_T` structure. `NmSetName` is thus the "encoder," and its counterpart would be the "decoder."
-* **Generic Byte Packers:** Unlike generic function blocks that serialize arbitrary data structures, `NmSetName` is specifically optimized for the ISO 11783 NAME structure, thus guaranteeing compliance with the standard without additional configuration.
+- **Counterpart `NmGetName`:** While `NmSetName` packs a structured description into a byte array, a hypothetical `NmGetName` block would perform the reverse operation: It extracts the individual fields from a given ISO NAME byte array and presents them in a `NAMEFIELD_T` structure. `NmSetName` is thus the "encoder," and its counterpart would be the "decoder."
+- **Generic Byte Packers:** Unlike generic function blocks that serialize arbitrary data structures, `NmSetName` is specifically optimized for the ISO 11783 NAME structure, thus guaranteeing compliance with the standard without additional configuration.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+- [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
 
 ## Conclusion
 

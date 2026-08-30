@@ -49,29 +49,29 @@ Der Funktionsblock verfügt über keine Adapter-Schnittstellen.
 
 Der **StringValue_IS** arbeitet nach dem üblichen Schema eines Service-Interface-Funktionsblocks für den Dateneingang:
 
-1. **Initialisierung (`INIT`)**  
+1. **Initialisierung (`INIT`)**
    Durch Anlegen eines `INIT`-Ereignisses wird der Baustein konfiguriert. Die Parameter `QI` (Qualifizierer), `PARAMS` (Service-Parameter) und `u16ObjId` (Objekt-ID) werden übergeben. Nach erfolgreicher Initialisierung bestätigt der Baustein mit dem Ereignis `INITO` und liefert den Status über `QO` und `STATUS`.
 
-2. **Anforderung (`REQ`)**  
+2. **Anforderung (`REQ`)**
    Ein `REQ`-Ereignis löst eine aktive Datenabfrage bei der Ressource aus. Der Qualifizierer `QI` wird ausgewertet. Die Antwort wird mit dem Ereignis `CNF` zurückgegeben. Der empfangene String steht dann am Ausgang `IN` zur Verfügung.
 
-3. **Asynchrone Indikation (`IND`)**  
+3. **Asynchrone Indikation (`IND`)**
    Die Ressource kann jederzeit neue Daten senden. Der Baustein signalisiert dies durch das Ereignis `IND`. Gleichzeitig werden die aktuellen Daten am Ausgang `IN` sowie der Status über `QO` und `STATUS` bereitgestellt.
 
 Die Ausgänge `IN`, `QO` und `STATUS` werden bei jedem der Ereignisse `CNF` und `IND` aktualisiert und können sofort von nachfolgenden Bausteinen verwendet werden.
 
 ## Technische Besonderheiten
 
-- **Objekt-ID:**  
+- **Objekt-ID:**
   Der Eingang `u16ObjId` ist mit dem Initialwert `ID_NULL` vordefiniert. Vor der ersten Nutzung muss eine gültige Objekt-ID gesetzt werden. Die tatsächliche Bedeutung der ID ist abhängig vom zugrundeliegenden Ressourcen-Protokoll (z. B. ISOBUS-Objektnummer).
 
-- **Service-Parameter (`PARAMS`):**  
+- **Service-Parameter (`PARAMS`):**
   Dieser String-Eingang dient der Übergabe konfigurationsspezifischer Parameter (z. B. Busadresse, Kommunikationspfad). Die genaue Syntax ist vom implementierten Treiber abhängig.
 
-- **Typische Ereignissequenz:**  
+- **Typische Ereignissequenz:**
   `INIT` → `INITO` → (ggf. wiederholte `REQ` ↔ `CNF` oder asynchrone `IND`).
 
-- **Fehlerbehandlung:**  
+- **Fehlerbehandlung:**
   Fehler werden über den `STATUS`-Ausgang signalisiert und können zur Fehlerdiagnose herangezogen werden.
 
 ## Zustandsübersicht
@@ -85,13 +85,13 @@ Der Baustein durchläuft folgende grundlegende Zustände (nicht im XML explizit 
 
 ## Anwendungsszenarien
 
-- **ISOBUS-Steuergeräte:**  
+- **ISOBUS-Steuergeräte:**
   Empfangen von Zeichenketten wie Gerätenamen, Variablenbezeichnungen oder Statusmeldungen von einem ISOBUS-Server.
 
-- **Benutzerschnittstellen:**  
+- **Benutzerschnittstellen:**
   Einlesen von Textdaten, die von einem externen HMI oder einem Bedienpanel gesendet werden.
 
-- **Konfigurationsdaten:**  
+- **Konfigurationsdaten:**
   Abrufen von String-Parametern aus einem zentralen Konfigurationsservice.
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -113,4 +113,4 @@ Der **StringValue_IS** ist ein wesentlicher Baustein für die Integration zeiche
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

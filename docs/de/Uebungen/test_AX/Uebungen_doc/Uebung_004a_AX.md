@@ -20,9 +20,9 @@ Das Ziel ist es, den Unterschied zwischen zustandsorientierter (Pegel) und ereig
 
 ![Uebung_004a_AX_network](./Uebung_004a_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE` (Input Event). [cite_start]Im Gegensatz zum `IXA` (Input Extended Adapter) liefert dieser Baustein kein kontinuierliches `BOOL`-Signal, sondern feuert ein einzelnes Ereignis (`IND`), wenn eine bestimmte Bedingung erfüllt ist. Hier ist er auf `BUTTON_SINGLE_CLICK` konfiguriert[cite: 1].
-  * **`E_T_FF`**: Typ `AX_T_FF` (Adapter Toggle Flip-Flop). [cite_start]Dieser Baustein hat einen Takteingang (`CLK`). Bei jedem empfangenen Ereignis wechselt er seinen internen Zustand und gibt diesen über den Adapter-Ausgang `Q` aus[cite: 1].
-  * **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. [cite_start]Schaltet den physischen Ausgang `Q1` basierend auf dem Zustand des Flip-Flops[cite: 1].
+  - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE` (Input Event). [cite_start]Im Gegensatz zum `IXA` (Input Extended Adapter) liefert dieser Baustein kein kontinuierliches `BOOL`-Signal, sondern feuert ein einzelnes Ereignis (`IND`), wenn eine bestimmte Bedingung erfüllt ist. Hier ist er auf `BUTTON_SINGLE_CLICK` konfiguriert[cite: 1].
+  - **`E_T_FF`**: Typ `AX_T_FF` (Adapter Toggle Flip-Flop). [cite_start]Dieser Baustein hat einen Takteingang (`CLK`). Bei jedem empfangenen Ereignis wechselt er seinen internen Zustand und gibt diesen über den Adapter-Ausgang `Q` aus[cite: 1].
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. [cite_start]Schaltet den physischen Ausgang `Q1` basierend auf dem Zustand des Flip-Flops[cite: 1].
 
 -----
 

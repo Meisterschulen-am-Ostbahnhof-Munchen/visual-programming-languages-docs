@@ -54,10 +54,10 @@ Die Übung enthält folgende Funktionsbausteine direkt auf der obersten Ebene (k
 
 Die Steuerung erfolgt über vier digitale Eingänge (logiBUS), die als Taster dienen:
 
-- **Input_I1** (CU): Aufwärtszählen  
-- **Input_I2** (CD): Abwärtszählen  
-- **Input_I3** (R): Zähler zurücksetzen auf 0  
-- **Input_I4** (LD): Zähler auf Voreinstellwert PV (=10) laden  
+- **Input_I1** (CU): Aufwärtszählen
+- **Input_I2** (CD): Abwärtszählen
+- **Input_I3** (R): Zähler zurücksetzen auf 0
+- **Input_I4** (LD): Zähler auf Voreinstellwert PV (=10) laden
 
 Jeder Eingangsbaustein erzeugt bei einer positiven Flanke ein Ereignis (`IND`). Diese Ereignisse werden auf den Ereigniseingang `REQ` des Zählerbausteins `FB_CTUD_LINT` geschaltet. Der Zähler reagiert dann auf den entsprechenden Dateneingang (`CU`, `CD`, `R`, `LD`).
 
@@ -70,7 +70,7 @@ Die Datenverbindungen übertragen die logischen Zustände der Taster:
 
 Nach einer Verarbeitung des Zählers wird das Bestätigungsereignis (`CNF`) an mehrere Ausgänge weitergeleitet:
 
-- `Output_QU.REQ` und `Output_QD.REQ` → aktualisiert die digitalen Ausgänge  
+- `Output_QU.REQ` und `Output_QD.REQ` → aktualisiert die digitalen Ausgänge
 - `F_LINT_TO_UDINT.REQ` → startet die Typumwandlung
 
 Die Datenausgänge `QU` und `QD` steuern die digitalen Ausgänge:
@@ -85,7 +85,7 @@ Der aktuelle Zählerstand (`CV`) wird über die Umwandlung `F_LINT_TO_UDINT` gel
 
 Nach erfolgreicher Umwandlung löst `F_LINT_TO_UDINT.CNF` das Ereignis `Q_NumericValue.REQ` aus, wodurch der Wert auf dem Terminal angezeigt wird.
 
-**Lernziele**: 
+**Lernziele**:
 
 - Einführung in IEC 61131-3 Zählerbausteine (CTUD) mit großer Datenbreite
 - Verwendung von logiBUS-Ein-/Ausgabebaugruppen
@@ -102,4 +102,4 @@ Die Übung 222 realisiert einen universellen Vor-/Rückwärtszähler (FB_CTUD_LI
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

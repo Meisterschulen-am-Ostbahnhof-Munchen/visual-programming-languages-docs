@@ -74,7 +74,7 @@ This exercise demonstrates a complete analog measurement chain: from reading the
 
 This exercise demonstrates a complete analog measurement chain: from reading the raw analog value and calibration with persistent storage to rule-based output via a hysteresis comparator. ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

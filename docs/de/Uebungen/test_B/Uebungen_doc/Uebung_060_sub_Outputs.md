@@ -36,20 +36,20 @@ Es befinden sich 8 Instanzen des Treibertyps im Netzwerk, die die Signale an die
 Der Ablauf innerhalb der Sub-Application ist rein ereignisgesteuert und dient der direkten Signalweiterleitung (Mapping).
 
 1.  **Ereignisverarbeitung (`CNF`)**:
-    *   Das Hauptereignis `CNF` (Confirmation) am Eingang der Sub-Application triggert den `REQ`-Eingang aller 8 enthaltenen DigitalOutput-Bausteine (`DigitalOutput_Q1` bis `DigitalOutput_Q8`).
-    *   Dies sorgt dafür, dass alle Ausgänge im gleichen Zyklus aktualisiert werden.
+    -   Das Hauptereignis `CNF` (Confirmation) am Eingang der Sub-Application triggert den `REQ`-Eingang aller 8 enthaltenen DigitalOutput-Bausteine (`DigitalOutput_Q1` bis `DigitalOutput_Q8`).
+    -   Dies sorgt dafür, dass alle Ausgänge im gleichen Zyklus aktualisiert werden.
 
 2.  **Datenmapping**:
     Die Eingangsvariablen werden mit einem Index-Versatz auf die Ausgänge gelegt:
 
-    *   Eingang `Q_00` steuert `DigitalOutput_Q1` (Ausgang 1).
-    *   Eingang `Q_01` steuert `DigitalOutput_Q2` (Ausgang 2).
-    *   Eingang `Q_02` steuert `DigitalOutput_Q3` (Ausgang 3).
-    *   Eingang `Q_03` steuert `DigitalOutput_Q4` (Ausgang 4).
-    *   Eingang `Q_04` steuert `DigitalOutput_Q5` (Ausgang 5).
-    *   Eingang `Q_05` steuert `DigitalOutput_Q6` (Ausgang 6).
-    *   Eingang `Q_06` steuert `DigitalOutput_Q7` (Ausgang 7).
-    *   Eingang `Q_07` steuert `DigitalOutput_Q8` (Ausgang 8).
+    -   Eingang `Q_00` steuert `DigitalOutput_Q1` (Ausgang 1).
+    -   Eingang `Q_01` steuert `DigitalOutput_Q2` (Ausgang 2).
+    -   Eingang `Q_02` steuert `DigitalOutput_Q3` (Ausgang 3).
+    -   Eingang `Q_03` steuert `DigitalOutput_Q4` (Ausgang 4).
+    -   Eingang `Q_04` steuert `DigitalOutput_Q5` (Ausgang 5).
+    -   Eingang `Q_05` steuert `DigitalOutput_Q6` (Ausgang 6).
+    -   Eingang `Q_06` steuert `DigitalOutput_Q7` (Ausgang 7).
+    -   Eingang `Q_07` steuert `DigitalOutput_Q8` (Ausgang 8).
 
     *Hinweis:* Die Variable `Q_08` ist in der Schnittstelle definiert, wird aber im internen Netzwerk laut vorliegender Konfiguration nicht weiterverbunden.
 
@@ -59,5 +59,4 @@ Die `Uebung_060_sub_Outputs` stellt eine Schnittstellen-Komponente dar, die eine
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](Uebung_060.md)
-
+- [Uebung_060](Uebung_060.md)

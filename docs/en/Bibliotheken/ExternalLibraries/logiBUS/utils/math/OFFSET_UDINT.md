@@ -10,20 +10,20 @@ The function block `OFFSET_UDINT` is used to calculate an offset value. On the f
 
 ### **Event Inputs**
 
-* **REQ**: Starts the normal execution of the algorithm. Linked to the data input `IN`.
+- **REQ**: Starts the normal execution of the algorithm. Linked to the data input `IN`.
 
 ### **Event Outputs**
 
-* **CNF**: Signals the completion of the calculation. Linked to the data outputs `OUT` and `FIRST`.
+- **CNF**: Signals the completion of the calculation. Linked to the data outputs `OUT` and `FIRST`.
 
 ### **Data Inputs**
 
-* **IN** (UDINT): The input value. On the first call with a value > 0, this value is stored in `FIRST`. The initial value is `0`.
+- **IN** (UDINT): The input value. On the first call with a value > 0, this value is stored in `FIRST`. The initial value is `0`.
 
 ### **Data Outputs**
 
-* **OUT** (UDINT): The result of the calculation `IN - FIRST`. The initial value is `0`.
-* **FIRST** (UDINT): The reference value stored on the first call (with `IN` > 0). The initial value is `0`.
+- **OUT** (UDINT): The result of the calculation `IN - FIRST`. The initial value is `0`.
+- **FIRST** (UDINT): The reference value stored on the first call (with `IN` > 0). The initial value is `0`.
 
 ### **Adapters**
 
@@ -39,31 +39,31 @@ The algorithm first checks whether the output `FIRST` still has the initial valu
 
 ## Technical Features
 
-* **Data Type:** The block works exclusively with unsigned 32-bit integers (`UDINT`).
-* **Initialization:** Both `FIRST` and `OUT` are initialized with `0`. The block is ready for operation immediately after startup.
-* **One-Time Setting:** The variable `FIRST` is set exactly once (on the first `REQ` with `IN` > 0) and then remains constant for the lifetime of the function block instance, unless the function block is reinitialized.
+- **Data Type:** The block works exclusively with unsigned 32-bit integers (`UDINT`).
+- **Initialization:** Both `FIRST` and `OUT` are initialized with `0`. The block is ready for operation immediately after startup.
+- **One-Time Setting:** The variable `FIRST` is set exactly once (on the first `REQ` with `IN` > 0) and then remains constant for the lifetime of the function block instance, unless the function block is reinitialized.
 *
 ## State Overview
 
 The function block has a single, stable state:
 
-* **REQ:** Waits for the incoming `REQ` event. Upon receipt, the algorithm is executed, and immediately afterward, the `CNF` event is triggered. The function block remains in the `REQ` state.
+- **REQ:** Waits for the incoming `REQ` event. Upon receipt, the algorithm is executed, and immediately afterward, the `CNF` event is triggered. The function block remains in the `REQ` state.
 
 ## Application Scenarios
 
-* **Reference Point Establishment in Measurement Chains:** In a system that provides absolute position values (e.g., from an encoder), this block can store the first valid measurement as the zero point (offset). All subsequent values are output relative to this starting point.
-* **Initial Value Compensation:** To eliminate a system-related default offset (e.g., a bias) during the first valid measurement.
-* **Counter Start Normalization:** If a counter does not start at 0, the first value can be stored and subtracted from all subsequent values to simulate counting from 0.
+- **Reference Point Establishment in Measurement Chains:** In a system that provides absolute position values (e.g., from an encoder), this block can store the first valid measurement as the zero point (offset). All subsequent values are output relative to this starting point.
+- **Initial Value Compensation:** To eliminate a system-related default offset (e.g., a bias) during the first valid measurement.
+- **Counter Start Normalization:** If a counter does not start at 0, the first value can be stored and subtracted from all subsequent values to simulate counting from 0.
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **SUB / DIF Blocks:** Standard subtraction blocks always calculate the difference between two variable inputs. `OFFSET_UDINT`, however, freezes one of the operands (`FIRST`) after the first operation and uses it as a fixed subtrahend thereafter.
-* **Shift Registers (FIFO) or Delay Blocks:** These store a history of values. `OFFSET_UDINT`, on the other hand, only permanently stores a single, initial value.
-* **Blocks with Markers (SR, RS):** These store a binary state. `OFFSET_UDINT` stores a specific numeric (`UDINT`) starting value.
+- **SUB / DIF Blocks:** Standard subtraction blocks always calculate the difference between two variable inputs. `OFFSET_UDINT`, however, freezes one of the operands (`FIRST`) after the first operation and uses it as a fixed subtrahend thereafter.
+- **Shift Registers (FIFO) or Delay Blocks:** These store a history of values. `OFFSET_UDINT`, on the other hand, only permanently stores a single, initial value.
+- **Blocks with Markers (SR, RS):** These store a binary state. `OFFSET_UDINT` stores a specific numeric (`UDINT`) starting value.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

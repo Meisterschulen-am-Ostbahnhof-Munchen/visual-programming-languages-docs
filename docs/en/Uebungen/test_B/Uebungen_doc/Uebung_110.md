@@ -17,9 +17,9 @@ Understanding the limitations of data types. It shows what happens when the resu
 
 ![Uebung_110_network](./Uebung_110_network.svg)
 
-* **`ADD_2`**: Adds two values.
-* **Parameters**: `IN1 = 200`, `IN2 = 200`.
-* **`F_GT`**: Checks if the result is greater than 200.
+- **`ADD_2`**: Adds two values.
+- **Parameters**: `IN1 = 200`, `IN2 = 200`.
+- **`F_GT`**: Checks if the result is greater than 200.
 
 -----
 

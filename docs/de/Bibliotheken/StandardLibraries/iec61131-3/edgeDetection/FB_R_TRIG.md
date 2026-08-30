@@ -57,8 +57,8 @@ Der Funktionsblock hat keinen komplexen Zustandsautomaten. Der Zustand wird ledi
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
-* [Uebung_177_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
+- [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
+- [Uebung_177_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
 
 ## Fazit
 

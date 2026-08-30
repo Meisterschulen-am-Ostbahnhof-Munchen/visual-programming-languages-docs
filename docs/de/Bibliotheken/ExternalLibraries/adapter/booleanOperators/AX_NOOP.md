@@ -11,22 +11,22 @@ Der Baustein **AX_NOOP** (No Operation) dient als reine Durchleitungsfunktion. E
 
 ### **Ereignis-Eingänge**
 
-Keine direkten Ereignis-Eingänge vorhanden.  
+Keine direkten Ereignis-Eingänge vorhanden.
 Ereignisse werden über den Adapter `IN` empfangen.
 
 ### **Ereignis-Ausgänge**
 
-Keine direkten Ereignis-Ausgänge vorhanden.  
+Keine direkten Ereignis-Ausgänge vorhanden.
 Ereignisse werden über den Adapter `OUT` weitergegeben.
 
 ### **Daten-Eingänge**
 
-Keine direkten Daten-Eingänge vorhanden.  
+Keine direkten Daten-Eingänge vorhanden.
 Daten werden über den Adapter `IN` empfangen.
 
 ### **Daten-Ausgänge**
 
-Keine direkten Daten-Ausgänge vorhanden.  
+Keine direkten Daten-Ausgänge vorhanden.
 Daten werden über den Adapter `OUT` weitergegeben.
 
 ### **Adapter**
@@ -80,4 +80,4 @@ Der **AX_NOOP** ist ein minimalistischer, aber nützlicher Baustein für die Arb
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

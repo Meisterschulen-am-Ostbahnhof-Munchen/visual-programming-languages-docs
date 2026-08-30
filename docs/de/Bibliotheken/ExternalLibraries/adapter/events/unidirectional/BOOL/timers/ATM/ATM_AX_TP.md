@@ -46,12 +46,12 @@ Der **ATM_AX_TP** arbeitet auf Basis des standardisierten IEC 61499‑Funktions
 - **Nicht-nachtriggerbar:** Während eines laufenden Impulses wird eine erneute steigende Flanke von IN ignoriert – der Impuls läuft in der ursprünglichen Länge weiter.
 - **Reset:** Ein Ereignis am Eingang **R** beendet den aktuellen Impuls sofort (Q = FALSE) und setzt den Timer zurück. Danach kann ein neuer Impuls gestartet werden.
 
-Die Verdrahtung intern:  
-`IN.E1 → E_TP.REQ`  
-`IN.D1 → E_TP.IN`  
-`PT.D1 → E_TP.PT`  
-`E_TP.CNF → Q.E1` (Ereignisausgabe bei Impulsende)  
-`E_TP.Q   → Q.D1` (Ausgangsdatenwert)  
+Die Verdrahtung intern:
+`IN.E1 → E_TP.REQ`
+`IN.D1 → E_TP.IN`
+`PT.D1 → E_TP.PT`
+`E_TP.CNF → Q.E1` (Ereignisausgabe bei Impulsende)
+`E_TP.Q   → Q.D1` (Ausgangsdatenwert)
 `R       → E_TP.R`
 
 ## Technische Besonderheiten
@@ -93,4 +93,4 @@ Der **ATM_AX_TP** ist ein nützlicher Funktionsbaustein zur Erzeugung eines nich
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

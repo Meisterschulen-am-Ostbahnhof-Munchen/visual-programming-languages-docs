@@ -16,27 +16,27 @@ In dieser Übung wird primär ein spezifischer Event-Baustein aus der Standardbi
 
 ### Enthaltene Bausteine:
 
-*   **E_RESTART_1**
-    *   **Typ**: `iec61499::events::E_RESTART`
-    *   **Beschreibung**: Dieser Funktionsbaustein stellt Ereignisse zur Verfügung, die ausgelöst werden, wenn die Ressource, auf der die Applikation läuft, gestartet wird.
-        *   **Ereignisausgang COLD**: Wird ausgelöst bei einem Kaltstart (erstmaliges Starten oder Reset).
-        *   **Ereignisausgang WARM**: Wird ausgelöst bei einem Warmstart (Wiederaufnahme des Betriebs, falls unterstützt).
-    *   **Funktionsweise**: Er dient als Trigger für Initialisierungsroutinen innerhalb der Applikation.
+-   **E_RESTART_1**
+    -   **Typ**: `iec61499::events::E_RESTART`
+    -   **Beschreibung**: Dieser Funktionsbaustein stellt Ereignisse zur Verfügung, die ausgelöst werden, wenn die Ressource, auf der die Applikation läuft, gestartet wird.
+        -   **Ereignisausgang COLD**: Wird ausgelöst bei einem Kaltstart (erstmaliges Starten oder Reset).
+        -   **Ereignisausgang WARM**: Wird ausgelöst bei einem Warmstart (Wiederaufnahme des Betriebs, falls unterstützt).
+    -   **Funktionsweise**: Er dient als Trigger für Initialisierungsroutinen innerhalb der Applikation.
 
 ## Programmablauf und Verbindungen
 
 Aktuell stellt diese Übung ein leeres Netzwerk mit einer Aufgabenstellung dar.
 
-*   **Aktueller Zustand**:
-    *   Der Baustein `E_RESTART_1` ist im Netzwerk platziert.
-    *   Es existieren noch keine Verbindungen zu anderen Bausteinen.
-    *   Ein Kommentarfeld mit dem Inhalt **"TODO"** weist auf den zu bearbeitenden Bereich hin.
+-   **Aktueller Zustand**:
+    -   Der Baustein `E_RESTART_1` ist im Netzwerk platziert.
+    -   Es existieren noch keine Verbindungen zu anderen Bausteinen.
+    -   Ein Kommentarfeld mit dem Inhalt **"TODO"** weist auf den zu bearbeitenden Bereich hin.
 
-*   **Lernziele**:
-    *   Verständnis des Unterschieds zwischen `COLD` und `WARM` Start-Events.
-    *   Nutzung des `E_RESTART` Bausteins zur Initialisierung von Variablen oder Zuständen beim Start der Steuerung.
+-   **Lernziele**:
+    -   Verständnis des Unterschieds zwischen `COLD` und `WARM` Start-Events.
+    -   Nutzung des `E_RESTART` Bausteins zur Initialisierung von Variablen oder Zuständen beim Start der Steuerung.
 
-*   **Vorgehensweise**:
+-   **Vorgehensweise**:
     1.  Die Übung wird als SubApp geöffnet.
     2.  An die Ausgänge des `E_RESTART_1` Bausteins sollen Logik-Ketten angeschlossen werden, die definieren, was beim Start der Applikation passieren soll (z.B. Setzen von Standardwerten).
 

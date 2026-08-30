@@ -34,19 +34,19 @@ Der Baustein verwendet ein adapterbasiertes Schnittstellendesign. Er besitzt kei
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster analoger Eingangswert für die Additionsoperation.
-*   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter analoger Eingangswert für die Additionsoperation.
-*   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter analoger Eingangswert für die Additionsoperation.
+-   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster analoger Eingangswert für die Additionsoperation.
+-   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter analoger Eingangswert für die Additionsoperation.
+-   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter analoger Eingangswert für die Additionsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AI`): Ausgangsadapter, der das berechnete Ergebnis der Addition bereitstellt.
+-   **OUT** (Typ: `adapter::types::unidirectional::AI`): Ausgangsadapter, der das berechnete Ergebnis der Addition bereitstellt.
 
 ---
 
 ## Funktionsweise
 
-Sobald an einem der Eingangs-Adapter (`IN1`, `IN2` oder `IN3`) ein Aktualisierungsereignis eintrifft, liest der Funktionsbaustein die analogen Werte der drei Sockets aus. 
+Sobald an einem der Eingangs-Adapter (`IN1`, `IN2` oder `IN3`) ein Aktualisierungsereignis eintrifft, liest der Funktionsbaustein die analogen Werte der drei Sockets aus.
 Es wird folgende mathematische Operation durchgeführt:
 
 $$\text{OUT} = \text{IN1} + \text{IN2} + \text{IN3}$$
@@ -57,8 +57,8 @@ Nach erfolgreicher Berechnung wird der Ergebniswert an den Ausgangs-Plug `OUT` �
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein (Generic FB):** Der Baustein ist intern als `GEN_AI_ADD` typisiert. Dies ermöglicht eine flexible Anpassung an unterschiedliche numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`), je nachdem, welcher konkrete Typ durch die verbundenen Adapter vorgegeben wird.
-*   **Adapter-Kopplung:** Durch die Nutzung von unidirektionalen Adaptern (`unidirectional::AI`) wird das Signal-Routing im Applikationsdiagramm stark vereinfacht. Daten und Trigger-Events werden in einer einzigen Verbindungslinie gebündelt.
+-   **Generischer Baustein (Generic FB):** Der Baustein ist intern als `GEN_AI_ADD` typisiert. Dies ermöglicht eine flexible Anpassung an unterschiedliche numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`), je nachdem, welcher konkrete Typ durch die verbundenen Adapter vorgegeben wird.
+-   **Adapter-Kopplung:** Durch die Nutzung von unidirektionalen Adaptern (`unidirectional::AI`) wird das Signal-Routing im Applikationsdiagramm stark vereinfacht. Daten und Trigger-Events werden in einer einzigen Verbindungslinie gebündelt.
 
 ---
 
@@ -73,15 +73,15 @@ Der Baustein arbeitet rein ereignisgesteuert:
 
 ## Anwendungsszenarien
 
-*   **Sensordaten-Fusion:** Zusammenführung und Aufsummierung von drei analogen Messwerten (z. B. Ermittlung eines Gesamtvolumenstroms aus drei einzelnen Teilströmen).
-*   **Sollwert-Kalkulation:** Berechnung eines Gesamtsollwerts, der sich aus einem Basissollwert und zwei Korrektur- oder Offsetwerten zusammensetzt.
-*   **Mischprozesse:** Gewichtung und Zusammenführung von analogen Steuerungssignalen in der Prozessautomatisierung.
+-   **Sensordaten-Fusion:** Zusammenführung und Aufsummierung von drei analogen Messwerten (z. B. Ermittlung eines Gesamtvolumenstroms aus drei einzelnen Teilströmen).
+-   **Sollwert-Kalkulation:** Berechnung eines Gesamtsollwerts, der sich aus einem Basissollwert und zwei Korrektur- oder Offsetwerten zusammensetzt.
+-   **Mischprozesse:** Gewichtung und Zusammenführung von analogen Steuerungssignalen in der Prozessautomatisierung.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-Im Vergleich zu klassischen IEC 61131-3 Addierern (wie z. B. `F_ADD`) oder Standard-IEC-61499-Funktionsbausteinen entfällt bei `AI_ADD_3` die manuelle und fehleranfällige Verdrahtung von separaten `REQ`- und `CNF`-Ereignisleitungen. 
+Im Vergleich zu klassischen IEC 61131-3 Addierern (wie z. B. `F_ADD`) oder Standard-IEC-61499-Funktionsbausteinen entfällt bei `AI_ADD_3` die manuelle und fehleranfällige Verdrahtung von separaten `REQ`- und `CNF`-Ereignisleitungen.
 
 Während Standard-Addierer meist nur zwei Eingänge unterstützen, spart der `AI_ADD_3` bei der Addition von drei Werten die Kaskadierung von zwei separaten Bausteinen ein, was die Ausführungszeit optimiert und die Übersichtlichkeit im System erhöht.
 

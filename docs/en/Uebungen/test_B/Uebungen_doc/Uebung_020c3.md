@@ -18,8 +18,8 @@ The objective is to implement a power-on delay using classic PLC behavior (inclu
 
 ### Function Blocks (FBs)
 
-* **`FB_TON`**: The classic TON block.
-* **`E_CYCLE`**: A timer that sends an event to the `REQ` input of the timer every 500 ms.
+- **`FB_TON`**: The classic TON block.
+- **`E_CYCLE`**: A timer that sends an event to the `REQ` input of the timer every 500 ms.
 
 -----
 

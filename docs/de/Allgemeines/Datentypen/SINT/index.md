@@ -21,5 +21,4 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `SINT#...
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039_sub_NumbAnzeig](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-
+- [Uebung_039_sub_NumbAnzeig](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)

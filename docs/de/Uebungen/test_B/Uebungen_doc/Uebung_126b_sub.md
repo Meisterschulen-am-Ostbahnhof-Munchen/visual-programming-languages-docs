@@ -23,22 +23,22 @@ Diese Übung demonstriert die Erzeugung eines Sinussignals mittels des Funktions
 
 Die gesamte Verarbeitungskette wird durch das Ereignis `CallbackFB.REQ` gestartet. Danach durchlaufen die Daten die folgenden Schritte:
 
-1. **Signalgenerierung**  
+1. **Signalgenerierung**
    `GEN_SIN` berechnet einen neuen Sinuswert und gibt diesen über den Datenausgang `Out` aus. Gleichzeitig wird das Ereignis `CNF` gesendet.
 
-2. **Typkonvertierung LREAL → USINT**  
+2. **Typkonvertierung LREAL → USINT**
    Der Ausgang `GEN_SIN.Out` ist mit `F_LREAL_TO_USINT.IN` verbunden. Der Funktionsbaustein `F_LREAL_TO_USINT` wird durch das Ereignis `CNF` von `GEN_SIN` aktiviert und wandelt den Wert um. Sein Datenausgang `OUT` speist den nächsten Baustein.
 
-3. **Typkonvertierung USINT → BYTE**  
+3. **Typkonvertierung USINT → BYTE**
    `F_USINT_TO_BYTE` erhält den `USINT`-Wert und gibt einen `BYTE`-Wert aus. Die Ereigniskette verläuft: `GEN_SIN.CNF` → `F_LREAL_TO_USINT.REQ` → `F_LREAL_TO_USINT.CNF` → `F_USINT_TO_BYTE.REQ`.
 
-4. **Zusammenstellung des Byte-Arrays**  
+4. **Zusammenstellung des Byte-Arrays**
    Der `BYTE`-Wert wird an `BYTES_TO_ARR08B.IN_00` angeschlossen. Die übrigen Eingänge (`IN_01 … IN_07`) sind auf `16#00` gesetzt. Der Baustein erzeugt ein 8‑Byte‑Array (Reihenfolge umkehrend) und signalisiert dies mit `CNF`.
 
-5. **Strukturierung zur CAN‑Nachricht**  
+5. **Strukturierung zur CAN‑Nachricht**
    `STRUCT_MUX` wird durch das Ereignis von `BYTES_TO_ARR08B.CNF` getriggert. Es baut aus dem empfangenen Datenarray (Eingang `data`) und den voreingestellten Parametern (`u8Priority = 7`, `u16DaSize = 0`) eine CAN‑Nachricht vom Typ `isobus::pgn::CAN_MSG` auf. Der strukturierte Ausgang `OUT` wird an `CallbackFB.DI1` weitergeleitet.
 
-6. **Senden über CAN**  
+6. **Senden über CAN**
    `CallbackFB` erhält das Ereignis `CNF` von `STRUCT_MUX` und sendet die Nachricht über den Adapter `PLUG1` an den PCAN Explorer. Danach wird das nächste Ereignis über `CallbackFB.REQ` ausgelöst, sodass der Zyklus von Neuem beginnt.
 
 Die Event‑ und Datenverbindungen sind im Diagramm der SubApp wie folgt realisiert (vereinfacht dargestellt):
@@ -52,7 +52,7 @@ BYTES_TO_ARR08B.CNF   →  STRUCT_MUX.REQ
 STRUCT_MUX.CNF        →  CallbackFB.CNF
 ```
 
-Datenflüsse:  
+Datenflüsse:
 `GEN_SIN.Out` → `F_LREAL_TO_USINT.IN` → `OUT` → `F_USINT_TO_BYTE.IN` → `OUT` → `BYTES_TO_ARR08B.IN_00` → `OUT` → `STRUCT_MUX.data` → `OUT` → `CallbackFB.DI1`
 
 ## Zusammenfassung
@@ -63,4 +63,4 @@ Die Übung veranschaulicht den gesamten Pfad von der analogen Signalgenerierung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

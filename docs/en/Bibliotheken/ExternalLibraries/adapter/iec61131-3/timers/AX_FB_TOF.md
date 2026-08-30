@@ -69,7 +69,7 @@ Compared to event-based timers such as [AX_TOF](../../events/unidirectional/BOOL
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020e2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+- [Exercise_020e2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
 
 ## Conclusion
 

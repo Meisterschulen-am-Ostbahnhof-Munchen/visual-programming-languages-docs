@@ -25,61 +25,61 @@ vorgeordneten Motoren berücksichtigt.
 
 ### **Ereignis-Eingänge**
 
-*   **`EIN`**: Startet die Vorlauf-Kette (Übergang `sAUS` → `sVOR1`). Nur wirksam, wenn
+-   **`EIN`**: Startet die Vorlauf-Kette (Übergang `sAUS` → `sVOR1`). Nur wirksam, wenn
     `EINSCHALTBEREIT = TRUE` (Bedingung `EIN[NOT (STOERUNG_M1 OR ... OR STOERUNG_M6)]`); quittiert
     dabei zugleich eine anstehende, verriegelte `STATUS_STOERUNG`-Anzeige.
-*   **`AUS`**: Löst die Stopp-Sequenz aus jedem Schritt der Vorlauf-Kette (`sVOR1`..`sVOR5`) oder
+-   **`AUS`**: Löst die Stopp-Sequenz aus jedem Schritt der Vorlauf-Kette (`sVOR1`..`sVOR5`) oder
     aus `sLAEUFT` aus. Springt auf den jeweiligen Spiegelpunkt der Nachlauf-Kette
     (`sVOR_k` → `sNACH_(6-k)`), da hier kein Motor-Fehler, sondern nur ein Bedienerwunsch vorliegt.
-*   **`EI_M1`**: Störungsstatus Motor 1 hat sich geändert. Führt (`With STOERUNG_M1`) aus jedem
+-   **`EI_M1`**: Störungsstatus Motor 1 hat sich geändert. Führt (`With STOERUNG_M1`) aus jedem
     Zustand vor `sNACH1` direkt dorthin.
-*   **`EI_M2`**: Störungsstatus Motor 2 hat sich geändert. Führt (`With STOERUNG_M2`) direkt nach
+-   **`EI_M2`**: Störungsstatus Motor 2 hat sich geändert. Führt (`With STOERUNG_M2`) direkt nach
     `sNACH2`.
-*   **`EI_M3`**: Störungsstatus Motor 3 hat sich geändert. Führt (`With STOERUNG_M3`) direkt nach
+-   **`EI_M3`**: Störungsstatus Motor 3 hat sich geändert. Führt (`With STOERUNG_M3`) direkt nach
     `sNACH3`.
-*   **`EI_M4`**: Störungsstatus Motor 4 hat sich geändert. Führt (`With STOERUNG_M4`) direkt nach
+-   **`EI_M4`**: Störungsstatus Motor 4 hat sich geändert. Führt (`With STOERUNG_M4`) direkt nach
     `sNACH4`.
-*   **`EI_M5`**: Störungsstatus Motor 5 hat sich geändert. Führt (`With STOERUNG_M5`) direkt nach
+-   **`EI_M5`**: Störungsstatus Motor 5 hat sich geändert. Führt (`With STOERUNG_M5`) direkt nach
     `sNACH5`.
-*   **`EI_M6`**: Störungsstatus Motor 6 hat sich geändert. Führt (`With STOERUNG_M6`) direkt nach
+-   **`EI_M6`**: Störungsstatus Motor 6 hat sich geändert. Führt (`With STOERUNG_M6`) direkt nach
     `sAUS` (M6 ist der letzte/äußerste Motor der Kette, es gibt keinen kürzeren Nachlauf-Schritt).
 
 ### **Ereignis-Ausgänge**
 
-*   **`CNF`**: Ausführungsbestätigung, ausgelöst bei jedem Zustandswechsel; liefert
+-   **`CNF`**: Ausführungsbestätigung, ausgelöst bei jedem Zustandswechsel; liefert
     `STATUS_BETRIEB`, `STATUS_STOERUNG`, `ZAEHLSTAND` und `EINSCHALTBEREIT`.
-*   **`EO_M1`**: Laufbefehl Motor 1 aktualisiert; liefert `DO_M1` (analog `EO_Sx` in
+-   **`EO_M1`**: Laufbefehl Motor 1 aktualisiert; liefert `DO_M1` (analog `EO_Sx` in
     `sequence_T_04`/`_08`).
-*   **`EO_M2`**: Laufbefehl Motor 2 aktualisiert; liefert `DO_M2`.
-*   **`EO_M3`**: Laufbefehl Motor 3 aktualisiert; liefert `DO_M3`.
-*   **`EO_M4`**: Laufbefehl Motor 4 aktualisiert; liefert `DO_M4`.
-*   **`EO_M5`**: Laufbefehl Motor 5 aktualisiert; liefert `DO_M5`.
-*   **`EO_M6`**: Laufbefehl Motor 6 aktualisiert; liefert `DO_M6`.
+-   **`EO_M2`**: Laufbefehl Motor 2 aktualisiert; liefert `DO_M2`.
+-   **`EO_M3`**: Laufbefehl Motor 3 aktualisiert; liefert `DO_M3`.
+-   **`EO_M4`**: Laufbefehl Motor 4 aktualisiert; liefert `DO_M4`.
+-   **`EO_M5`**: Laufbefehl Motor 5 aktualisiert; liefert `DO_M5`.
+-   **`EO_M6`**: Laufbefehl Motor 6 aktualisiert; liefert `DO_M6`.
 
 ### **Daten-Eingänge**
 
-*   **`ZE1_EIN` .. `ZE5_EIN`** (TIME): Verweildauer je Vorlauf-Schritt (`sVOR1`→`sVOR2` bis
+-   **`ZE1_EIN` .. `ZE5_EIN`** (TIME): Verweildauer je Vorlauf-Schritt (`sVOR1`→`sVOR2` bis
     `sVOR5`→`sLAEUFT`), bevor automatisch der nächste Motor dazugeschaltet wird. Initialwert:
     `NO_TIME`.
-*   **`ZE1_AUS` .. `ZE5_AUS`** (TIME): Verweildauer je Nachlauf-Schritt (`sNACH1`→`sNACH2` bis
+-   **`ZE1_AUS` .. `ZE5_AUS`** (TIME): Verweildauer je Nachlauf-Schritt (`sNACH1`→`sNACH2` bis
     `sNACH5`→`sAUS`), bevor automatisch der nächste Motor abgeschaltet wird. Initialwert:
     `NO_TIME`.
-*   **`STOERUNG_M1` .. `STOERUNG_M6`** (BOOL): Live-Störungssignal je Motor, dauerhaft (kein
+-   **`STOERUNG_M1` .. `STOERUNG_M6`** (BOOL): Live-Störungssignal je Motor, dauerhaft (kein
     Puls). Initialwert: `FALSE`.
 
 ### **Daten-Ausgänge**
 
-*   **`STATUS_BETRIEB`** (SINT): 0=Aus, 1=Hochfahren, 2=Läuft, 3=Herunterfahren.
-*   **`STATUS_STOERUNG`** (SINT): 0=keine, 4=aktiv — bleibt bis zur nächsten erfolgreichen
+-   **`STATUS_BETRIEB`** (SINT): 0=Aus, 1=Hochfahren, 2=Läuft, 3=Herunterfahren.
+-   **`STATUS_STOERUNG`** (SINT): 0=keine, 4=aktiv — bleibt bis zur nächsten erfolgreichen
     `EIN`-Quittierung verriegelt (siehe Technische Besonderheiten).
-*   **`EINSCHALTBEREIT`** (BOOL): `TRUE` nur wenn `ZAEHLSTAND = 0` (alle Motoren stehen) UND alle
+-   **`EINSCHALTBEREIT`** (BOOL): `TRUE` nur wenn `ZAEHLSTAND = 0` (alle Motoren stehen) UND alle
     sechs `STOERUNG_Mx` aktuell `FALSE` sind.
-*   **`ZAEHLSTAND`** (SINT): 0..6, Anzahl der aktuell laufenden Motoren.
-*   **`DO_M1` .. `DO_M6`** (BOOL): Laufbefehl je Motor.
+-   **`ZAEHLSTAND`** (SINT): 0..6, Anzahl der aktuell laufenden Motoren.
+-   **`DO_M1` .. `DO_M6`** (BOOL): Laufbefehl je Motor.
 
 ### **Adapter**
 
-*   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Standardisierter TimeOut-Adapter für
+-   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Standardisierter TimeOut-Adapter für
     die Zeitsteuerung der Vor- und Nachlauf-Schritte, analog zur Nutzung in `sequence_T_04`.
 
 ## Funktionsweise
@@ -112,29 +112,29 @@ als Ring aus zwei linearen Ketten:
 
 ## Technische Besonderheiten
 
-*   **`EINSCHALTBEREIT` ist bewusst NICHT an `STATUS_STOERUNG` gekoppelt.** `STATUS_STOERUNG`
+-   **`EINSCHALTBEREIT` ist bewusst NICHT an `STATUS_STOERUNG` gekoppelt.** `STATUS_STOERUNG`
     bleibt nach einer Störung bis zur nächsten erfolgreichen `EIN`-Quittierung verriegelt (dient
     der Anzeige in der Visu). Würde `EINSCHALTBEREIT` davon abhängen, könnte der `EIN`-Taster nach
     der allerersten jemals aufgetretenen Störung nie wieder freigegeben werden — echter Deadlock.
     `EINSCHALTBEREIT` prüft stattdessen die *live* `STOERUNG_Mx`-Signale direkt
     (`(ZAEHLSTAND = 0) AND NOT (STOERUNG_M1 OR ... OR STOERUNG_M6)`).
-*   **Der `sAUS → sVOR1`-Übergang trägt zusätzlich die volle Interlock-Bedingung im
+-   **Der `sAUS → sVOR1`-Übergang trägt zusätzlich die volle Interlock-Bedingung im
     Event-Bracket** (`EIN[NOT (STOERUNG_M1 OR ... OR STOERUNG_M6)]`), nicht nur eine Prüfung auf
     den berechneten Status. Ein reiner Statuswert wie `EINSCHALTBEREIT` erzwingt für sich genommen
     nichts — nur eine tatsächliche `ECTransition Condition` verhindert den Start bei anstehender
     Störung.
-*   **Events sind polar und werden nicht mit `AND`/`OR` verknüpft.** Alle Bedingungen, die ein
+-   **Events sind polar und werden nicht mit `AND`/`OR` verknüpft.** Alle Bedingungen, die ein
     Ereignis mit einer Datenbedingung kombinieren, nutzen ausschließlich die Klammer-Syntax
     `EventName[boolean_ausdruck]` (z. B. `EI_M3[STOERUNG_M3]`) — die einzige gültige Form dafür in
     IEC 61499.
-*   **Keine Selbstschleifen mehr im ECC.** Eine frühere Fassung nutzte ein zyklisches `EI_CYCLIC`
+-   **Keine Selbstschleifen mehr im ECC.** Eine frühere Fassung nutzte ein zyklisches `EI_CYCLIC`
     -Ereignis zum Nachfassen über mehrere Zyklen; das ist entfernt. `EI_CYCLIC_Auswertung` läuft
     stattdessen als Entry-Algorithmus in jedem aktiven Zustand mit und wertet
     `STOERUNG_M1..M6` bei jedem Zustandswechsel neu aus.
-*   **Direkte Ein-Schritt-Störungsdispatch statt Spiegelpunkt-Umweg.** Jeder Zustand vor einem
+-   **Direkte Ein-Schritt-Störungsdispatch statt Spiegelpunkt-Umweg.** Jeder Zustand vor einem
     `sNACH_x` hat eine eigene, direkte `EI_Mx`-Transition dorthin (51 Kanten insgesamt für die
     Störungs-Kaskade) — kein Zwischenschritt über einen Spiegelpunkt wie beim geplanten `AUS`.
-*   **`MaxBetriebRest`/Nachlauf-Reste (Demo-Server-Schema) sind noch nicht abgebildet** — bewusste,
+-   **`MaxBetriebRest`/Nachlauf-Reste (Demo-Server-Schema) sind noch nicht abgebildet** — bewusste,
     dokumentierte Vereinfachung der aktuellen Fassung (s. Kommentar im FB-Header).
 
 ## Zustandsübersicht
@@ -161,27 +161,27 @@ Direkt-Kanten, siehe Netzwerkdiagramm.
 
 ## Anwendungsszenarien
 
-*   **Getreideannahme-Förderkette**: Sechs in Reihe geschaltete Förderelemente (z. B. Elevator,
+-   **Getreideannahme-Förderkette**: Sechs in Reihe geschaltete Förderelemente (z. B. Elevator,
     Querförderer, Trog- und Schneckenförderer), die nur in einer festen Reihenfolge sicher an- und
     abgeschaltet werden dürfen, damit kein Element gegen einen stehenden Nachfolger fördert.
-*   **Mehrstufige Förderanlagen allgemein**: Jede Anlage mit einer festen Kaskade aus Motoren, bei
+-   **Mehrstufige Förderanlagen allgemein**: Jede Anlage mit einer festen Kaskade aus Motoren, bei
     der eine Störung an einer Stelle einen kontrollierten, aber sofortigen Rückzug der
     vorgeordneten Stufen erfordert.
-*   **Sicherheitskritische Ablaufketten**: Prozesse, bei denen ein einfacher zeitgesteuerter
+-   **Sicherheitskritische Ablaufketten**: Prozesse, bei denen ein einfacher zeitgesteuerter
     Sequenzer nicht ausreicht, weil zusätzlich eine verriegelte Störungsanzeige und ein
     Wiederanlauf-Interlock (`EINSCHALTBEREIT`) benötigt werden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **[sequence_T_04](sequence_T_04.md) / [sequence_T_08](sequence_T_08.md)**: Generische,
+-   **[sequence_T_04](sequence_T_04.md) / [sequence_T_08](sequence_T_08.md)**: Generische,
     lineare Zeitsequenzer mit 4 bzw. 8 Schritten und einem einzigen Reset-Pfad. `AnlagenSequenz_06`
     verwendet denselben `ATimeOut`-Adapter-Mechanismus, ist aber kein generischer Baustein — die
     Ring-Topologie (zwei gekoppelte lineare Ketten), das feste 6-Motoren-Muster je Schritt und die
     direkte Ein-Schritt-Störungs-Kaskade sind fest einprogrammiert, nicht konfigurierbar.
-*   **Einfache Timer-Ketten (TON-Verkettung)**: Müssten Zustandslogik, Motor-Muster je Schritt und
+-   **Einfache Timer-Ketten (TON-Verkettung)**: Müssten Zustandslogik, Motor-Muster je Schritt und
     Störungsbehandlung von Hand nachbilden. `AnlagenSequenz_06` kapselt das vollständig inklusive
     Interlock-Logik.
-*   **Zähler-/ereignisbasierte Sequenzer**: Schalten auf externe Trigger statt auf Zeit weiter.
+-   **Zähler-/ereignisbasierte Sequenzer**: Schalten auf externe Trigger statt auf Zeit weiter.
     `AnlagenSequenz_06` ist speziell für den Fall gedacht, dass die Verweildauer je Schritt fest
     vorgegeben ist (Anlaufzeit der Motoren), mit Störungen als einzigem asynchronen
     Unterbrechungspfad.

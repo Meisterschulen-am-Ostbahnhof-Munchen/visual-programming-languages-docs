@@ -23,7 +23,7 @@ Diese Sub-Applikation wird verwendet, um den Status des Ausgangs visuell auf dem
 - **Typ**: `MyLib::sys::GreenWhiteBackground`
 - **Verwendete interne FBs**:
     - *Hinweis: Da der interne Code dieses Bausteins hier nicht vorliegt, basiert die Beschreibung auf der Verschaltung.*
-- **Funktionsweise**: 
+- **Funktionsweise**:
     Dieser Baustein empfängt eine Objekt-ID (`u16ObjId`) und einen digitalen Status (`DI1`). Wenn der Ausgang geschaltet wird (Trigger über `REQ`), ändert dieser Baustein wahrscheinlich die Hintergrundfarbe des entsprechenden UI-Objekts (z.B. Grün für aktiv, Weiß für inaktiv).
 
 ### Weitere Bausteine
@@ -31,7 +31,7 @@ Diese Sub-Applikation wird verwendet, um den Status des Ausgangs visuell auf dem
 #### IE (Softkey Input Event)
 
 - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`
-- **Parameter**: 
+- **Parameter**:
     - `QI` = `TRUE`
     - `InputEvent` = `SK_RELEASED` (Reagiert auf das Loslassen der Taste)
     - `u16ObjId` = Verbunden mit dem Eingang `u16ObjId`
@@ -59,25 +59,25 @@ Der Ablauf innerhalb dieser Sub-Applikation lässt sich wie folgt beschreiben:
 
 1.  **Initialisierung**: Die Sub-Applikation erhält von außen eine `u16ObjId` (welche Taste/welches UI-Element gesteuert wird) und eine Referenz auf einen physikalischen `Output`.
 2.  **Benutzerinteraktion (Toggle-Logik)**:
-    *   Wenn der Benutzer den entsprechenden Softkey drückt und loslässt, feuert der Baustein **IE** ein Event.
-    *   Dieses Event gelangt zum **E_SWITCH**.
-    *   Der **E_SWITCH** prüft den aktuellen Zustand des Systems (Rückkopplung von **E_SR.Q** auf **E_SWITCH.G**).
-    *   Ist der Ausgang aktuell AUS (Q=FALSE), wird das Event an den **Set**-Eingang des **E_SR** geleitet -> Der Ausgang wird EIN geschaltet.
-    *   Ist der Ausgang aktuell EIN (Q=TRUE), wird das Event an den **Reset**-Eingang des **E_SR** geleitet -> Der Ausgang wird AUS geschaltet.
+    -   Wenn der Benutzer den entsprechenden Softkey drückt und loslässt, feuert der Baustein **IE** ein Event.
+    -   Dieses Event gelangt zum **E_SWITCH**.
+    -   Der **E_SWITCH** prüft den aktuellen Zustand des Systems (Rückkopplung von **E_SR.Q** auf **E_SWITCH.G**).
+    -   Ist der Ausgang aktuell AUS (Q=FALSE), wird das Event an den **Set**-Eingang des **E_SR** geleitet -> Der Ausgang wird EIN geschaltet.
+    -   Ist der Ausgang aktuell EIN (Q=TRUE), wird das Event an den **Reset**-Eingang des **E_SR** geleitet -> Der Ausgang wird AUS geschaltet.
 3.  **Externe Steuerung**:
-    *   Über die externen Event-Eingänge `SET` und `RESET` kann der Zustand des **E_SR** Bausteins direkt manipuliert werden, unabhängig von der Softkey-Betätigung.
+    -   Über die externen Event-Eingänge `SET` und `RESET` kann der Zustand des **E_SR** Bausteins direkt manipuliert werden, unabhängig von der Softkey-Betätigung.
 4.  **Ausgangssteuerung**:
-    *   Jede Zustandsänderung am **E_SR** triggert den **QX** Baustein, der den Wert auf den Hardware-Ausgang schreibt.
+    -   Jede Zustandsänderung am **E_SR** triggert den **QX** Baustein, der den Wert auf den Hardware-Ausgang schreibt.
 5.  **Visuelles Feedback**:
-    *   Nachdem der **QX** Baustein die Bestätigung (`CNF`) sendet, wird die Sub-Applikation **GreenWhiteBackground** getriggert.
-    *   Diese erhält den aktuellen Zustand (`E_SR.Q` verbunden mit `DI1`) und aktualisiert die Darstellung auf dem Terminal.
+    -   Nachdem der **QX** Baustein die Bestätigung (`CNF`) sendet, wird die Sub-Applikation **GreenWhiteBackground** getriggert.
+    -   Diese erhält den aktuellen Zustand (`E_SR.Q` verbunden mit `DI1`) und aktualisiert die Darstellung auf dem Terminal.
 
 ### Lernziele und Besonderheiten
 
-*   Erstellung einer wiederverwendbaren Komponente (Sub-Applikation) für UI-Elemente.
-*   Implementierung einer **Toggle-Funktion** (Ein/Aus mit einem Taster) mittels Standard-Events (E_SWITCH und E_SR).
-*   Synchronisation von Hardware-Ausgängen und UI-Darstellung.
-*   Umgang mit ISOBUS-Softkey-Events.
+-   Erstellung einer wiederverwendbaren Komponente (Sub-Applikation) für UI-Elemente.
+-   Implementierung einer **Toggle-Funktion** (Ein/Aus mit einem Taster) mittels Standard-Events (E_SWITCH und E_SR).
+-   Synchronisation von Hardware-Ausgängen und UI-Darstellung.
+-   Umgang mit ISOBUS-Softkey-Events.
 
 ## Zusammenfassung
 
@@ -85,5 +85,4 @@ Die `Uebung_039a_sub_Outputs` stellt einen kompletten Funktionsblock dar, der ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039a](Uebung_039a.md)
-
+- [Uebung_039a](Uebung_039a.md)

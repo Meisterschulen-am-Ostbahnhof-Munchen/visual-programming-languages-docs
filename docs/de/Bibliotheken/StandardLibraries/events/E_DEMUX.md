@@ -64,9 +64,9 @@ Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergele
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Uebung_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Uebung_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
 
 ## Fazit
 

@@ -13,35 +13,35 @@ The function block `SchieberVerriegelung` is used for the coordinated control an
 
 ### **Event Inputs**
 
-* **`INIT`**: Initialization request. Triggers the transition to the initialized state. Linked to the data `QI`, `DI_LINKS_GESPERRT`, and `DI_RECHTS_GESPERRT`.
-* **`EI_Hauptschieber_Open`**: Requests the main slider to open.
-* **`EI_Hauptschieber_Close`**: Requests the main slider to close.
-* **`EI_SchieberLinks_Open`**: Requests the left side slider to open.
-* **`EI_SchieberLinks_Close`**: Requests the left side slider to close.
-* **`EI_SchieberRechts_Open`**: Requests the right side slider to open.
-* **`EI_SchieberRechts_Close`**: Requests the right side slider to close.
+- **`INIT`**: Initialization request. Triggers the transition to the initialized state. Linked to the data `QI`, `DI_LINKS_GESPERRT`, and `DI_RECHTS_GESPERRT`.
+- **`EI_Hauptschieber_Open`**: Requests the main slider to open.
+- **`EI_Hauptschieber_Close`**: Requests the main slider to close.
+- **`EI_SchieberLinks_Open`**: Requests the left side slider to open.
+- **`EI_SchieberLinks_Close`**: Requests the left side slider to close.
+- **`EI_SchieberRechts_Open`**: Requests the right side slider to open.
+- **`EI_SchieberRechts_Close`**: Requests the right side slider to close.
 
 ### **Event Outputs**
 
-* **`INITO`**: Initialization confirmation. Triggered after completion of initialization (`INIT`) or deinitialization. Associated with the data `QO`, `DO_LINKS_GESPERRT`, and `DO_RECHTS_GESPERRT`.
-* **`EO_Hauptschieber_Open`**: Signals the command to open the main slide.
-* **`EO_Hauptschieber_Close`**: Signals the command to close the main slide.
-* **`EO_SchieberLinks_Open`**: Signals the command to open the left side slide.
-* **`EO_SchieberLinks_Close`**: Signals the command to close the left side slide.
-* **`EO_SchieberRechts_Open`**: Signals the command to open the right side slider.
-* **`EO_SchieberRechts_Close`**: Signals the command to close the right side slider.
+- **`INITO`**: Initialization confirmation. Triggered after completion of initialization (`INIT`) or deinitialization. Associated with the data `QO`, `DO_LINKS_GESPERRT`, and `DO_RECHTS_GESPERRT`.
+- **`EO_Hauptschieber_Open`**: Signals the command to open the main slide.
+- **`EO_Hauptschieber_Close`**: Signals the command to close the main slide.
+- **`EO_SchieberLinks_Open`**: Signals the command to open the left side slide.
+- **`EO_SchieberLinks_Close`**: Signals the command to close the left side slide.
+- **`EO_SchieberRechts_Open`**: Signals the command to open the right side slider.
+- **`EO_SchieberRechts_Close`**: Signals the command to close the right side slider.
 
 ### **Data Inputs**
 
-* **`QI` (BOOL)**: Qualifies the INIT event. `TRUE` starts initialization, `FALSE` starts deinitialization.
-* **`DI_LINKS_GESPERRT` (BOOL)**: Signals the locked state of the left side slider (`TRUE` = locked).
-* **`DI_RECHTS_GESPERRT` (BOOL)**: Signals the locked state of the right side slider (`TRUE` = locked).
+- **`QI` (BOOL)**: Qualifies the INIT event. `TRUE` starts initialization, `FALSE` starts deinitialization.
+- **`DI_LINKS_GESPERRT` (BOOL)**: Signals the locked state of the left side slider (`TRUE` = locked).
+- **`DI_RECHTS_GESPERRT` (BOOL)**: Signals the locked state of the right side slider (`TRUE` = locked).
 
 ### **Data Outputs**
 
-* **`QO` (BOOL)**: Status output reflecting the success of initialization/deinitialization.
-* **`DO_LINKS_GESPERRT` (BOOL)**: Outputs the internally processed or forwarded locked state for the left slider.
-* **`DO_RECHTS_GESPERRT` (BOOL)**: Outputs the internally processed or forwarded locked state for the right slider.
+- **`QO` (BOOL)**: Status output reflecting the success of initialization/deinitialization.
+- **`DO_LINKS_GESPERRT` (BOOL)**: Outputs the internally processed or forwarded locked state for the left slider.
+- **`DO_RECHTS_GESPERRT` (BOOL)**: Outputs the internally processed or forwarded locked state for the right slider.
 
 ### **Adapters**
 
@@ -63,10 +63,10 @@ The algorithm `normalOperation` copies the blocking states from the inputs (`DI_
 
 ## Technical Features
 
-* **State-Controlled Output**: Each operational state (`AlleZu`, `AlleAuf`, `LinksAuf`, `rechtsAuf`) immediately triggers a fixed combination of output events (`EO_*`) that define the desired slider position.
+- **State-Controlled Output**: Each operational state (`AlleZu`, `AlleAuf`, `LinksAuf`, `rechtsAuf`) immediately triggers a fixed combination of output events (`EO_*`) that define the desired slider position.
 ... * **Conditional Transitions**: The transition from `AlleZu` to `LinksAuf`/`rechtsAuf` is linked to the `EI_Hauptschieber_Open` event **and** the corresponding lock state (`DI_*_GESPERRT`). This represents low-level locking logic.
 
-* **Explicit Deinitialization**: A `INIT` event with `QI=FALSE` transitions from any state to the `DeInit` state and sets the output `QO` to `FALSE`.
+- **Explicit Deinitialization**: A `INIT` event with `QI=FALSE` transitions from any state to the `DeInit` state and sets the output `QO` to `FALSE`.
 
 ## State Overview
 
@@ -82,18 +82,18 @@ The algorithm `normalOperation` copies the blocking states from the inputs (`DI_
 
 Typical applications can be found in distribution and conveying systems, for example, in agricultural technology or material logistics:
 
-* **Grain or bulk material conveyors**: The main slide conducts the flow. The side gates can be opened as needed, for example, to distribute material into different silos. The interlock prevents both sides from being open simultaneously if this is mechanically or process-related impermissible.
-* **Switch control**: Analogous to a mechanical switch, where the position of one switch shoe blocks the other position.
+- **Grain or bulk material conveyors**: The main slide conducts the flow. The side gates can be opened as needed, for example, to distribute material into different silos. The interlock prevents both sides from being open simultaneously if this is mechanically or process-related impermissible.
+- **Switch control**: Analogous to a mechanical switch, where the position of one switch shoe blocks the other position.
 
 ## ⚖️ Comparison with similar components
 
 Compared to simple gate control components (e.g., individual `E_SR` flip-flops per gate), the `SchieberVerriegelung`-FB:
 
-* **Integrated Collision Avoidance**: The interlock logic is hard-coded within the state machine and does not require external wiring.
+- **Integrated Collision Avoidance**: The interlock logic is hard-coded within the state machine and does not require external wiring.
 
 ** **State-Based Coordination**: The output commands are always consistent sets (`Open`/`Close` combinations for all three slides).
 
-* **Explicit Lock Inputs**: The consideration of external lock signals (`DI_*_GESPERRT`) is an integral part of the control logic.
+- **Explicit Lock Inputs**: The consideration of external lock signals (`DI_*_GESPERRT`) is an integral part of the control logic.
 
 A disadvantage is the reduced flexibility. The logic is specific to exactly three slides with this particular locking relationship. For other numbers or dependencies, a new function block must be created.
 

@@ -14,32 +14,32 @@ Die interne Konvertierung erfolgt über den IEC‑61131-Baustein `F_DWORD_TO_SIN
 
 ### **Ereignis-Eingänge**
 
-Keine direkten Ereigniseingänge.  
+Keine direkten Ereigniseingänge.
 Der Baustein empfängt Ereignisse ausschließlich über den Adapter-Socket **AD_IN** (Ereignisport E1 des AD-Adapters).
 
 ### **Ereignis-Ausgänge**
 
-Keine direkten Ereignisausgänge.  
+Keine direkten Ereignisausgänge.
 Der Baustein sendet Ereignisse ausschließlich über den Adapter-Plug **AS_OUT** (Ereignisport E1 des AS-Adapters).
 
 ### **Daten-Eingänge**
 
-Keine direkten Dateneingänge.  
+Keine direkten Dateneingänge.
 Der Baustein empfängt Daten ausschließlich über den Adapter-Socket **AD_IN** (Datenport D1 des AD-Adapters, Datentyp **DWORD**).
 
 ### **Daten-Ausgänge**
 
-Keine direkten Datenausgänge.  
+Keine direkten Datenausgänge.
 Der Baustein sendet Daten ausschließlich über den Adapter-Plug **AS_OUT** (Datenport D1 des AS-Adapters, Datentyp **SINT**).
 
 ### **Adapter**
 
-- **Socket AD_IN**:  
-  Typ: `adapter::types::unidirectional::AD`  
+- **Socket AD_IN**:
+  Typ: `adapter::types::unidirectional::AD`
   Beschreibung: Empfängt einen DWORD-Wert sowie ein zugehöriges Ereignis.
 
-- **Plug AS_OUT**:  
-  Typ: `adapter::types::unidirectional::AS`  
+- **Plug AS_OUT**:
+  Typ: `adapter::types::unidirectional::AS`
   Beschreibung: Sendet einen SINT-Wert sowie ein zugehöriges Ereignis.
 
 ## Funktionsweise
@@ -87,4 +87,4 @@ Der Funktionsblock **AD_TO_AS** stellt eine kompakte und standardisierte Lösung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

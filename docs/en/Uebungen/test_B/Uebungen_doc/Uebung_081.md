@@ -17,10 +17,10 @@ Using the function block `E_CTD` (Event Count Down). It demonstrates how a count
 
 ![Uebung_081_network](./Uebung_081_network.svg)
 
-* **`I1` (Count Down)**: Decrements the counter value with each click.
-* **`I2` (Load)**: Loads the counter with the default value (`PV`).
-* **`E_CTD`**: The counter block. [cite_start]The parameter `PV` is set to 5[cite: 1].
-* **`DigitalOutput_Q1`**: Signals that the zero limit has been reached.
+- **`I1` (Count Down)**: Decrements the counter value with each click.
+- **`I2` (Load)**: Loads the counter with the default value (`PV`).
+- **`E_CTD`**: The counter block. [cite_start]The parameter `PV` is set to 5[cite: 1].
+- **`DigitalOutput_Q1`**: Signals that the zero limit has been reached.
 
 -----
 

@@ -27,5 +27,5 @@ Der Einsatz von **AX-Adaptern** zwischen dem Sequenzer und den Ausgangs-Sub-Apps
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039_sub_Outputs_AX](Uebung_039_sub_Outputs_AX.md)
-* [Uebung_039_sub_NumbAnzeig_AX](Uebung_039_sub_NumbAnzeig_AX.md)
+- [Uebung_039_sub_Outputs_AX](Uebung_039_sub_Outputs_AX.md)
+- [Uebung_039_sub_NumbAnzeig_AX](Uebung_039_sub_NumbAnzeig_AX.md)

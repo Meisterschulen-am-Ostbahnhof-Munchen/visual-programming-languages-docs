@@ -9,30 +9,30 @@ Diese Übung demonstriert die Aufnahme eines numerischen Werts über den isobus 
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **AD_TO_AUDI**  
-  - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`  
-  - **Parameter**: keine  
+- **AD_TO_AUDI**
+  - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`
+  - **Parameter**: keine
   - **Funktionsweise**: Wandelt das vom Eingabebaustein kommende Adapter‑Signal (isobus‑Seite) in ein adapter‑basiertes Signal für die Audi‑Komponenten um. Stellt die unidirektionale Verbindung zwischen dem isobus‑Adapter und dem NVS‑Adapter her.
 
-- **InputNumber_I1**  
-  - **Typ**: `isobus::UT::io::NumericValue::NumericValue_IDA`  
-  - **Parameter**:  
-    - `QI` = `TRUE`  
-    - `u16ObjId` = `InputNumber_I1`  
+- **InputNumber_I1**
+  - **Typ**: `isobus::UT::io::NumericValue::NumericValue_IDA`
+  - **Parameter**:
+    - `QI` = `TRUE`
+    - `u16ObjId` = `InputNumber_I1`
   - **Funktionsweise**: Empfängt einen numerischen Wert aus dem isobus‑Netzwerk (definiert durch die Objekt‑ID `InputNumber_I1`) und gibt diesen über seinen Adapter‑Ausgang (`IN`) an den Konvertierungsbaustein weiter.
 
-- **NVS_AUDI**  
-  - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AUDI`  
-  - **Parameter**:  
-    - `QI` = `TRUE`  
-    - `KEY` = `KEY_I1_STORE`  
-    - `DEFAULT_VALUE` = `UDINT#0`  
+- **NVS_AUDI**
+  - **Typ**: `logiBUS::storage::esp32_nvs::NVS_AUDI`
+  - **Parameter**:
+    - `QI` = `TRUE`
+    - `KEY` = `KEY_I1_STORE`
+    - `DEFAULT_VALUE` = `UDINT#0`
   - **Funktionsweise**: Speichert den an seinem Adapter‑Eingang anliegenden Wert persistent im nichtflüchtigen Speicher unter dem Schlüssel `KEY_I1_STORE`. Falls noch kein Wert gespeichert ist, wird der Default‑Wert `0` verwendet. Der gespeicherte Wert wird über den Adapter‑Ausgang bereitgestellt.
 
-- **Q_NumericValue_AUDI**  
-  - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`  
-  - **Parameter**:  
-    - `u16ObjId` = `OutputNumber_N1`  
+- **Q_NumericValue_AUDI**
+  - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
+  - **Parameter**:
+    - `u16ObjId` = `OutputNumber_N1`
   - **Funktionsweise**: Nimmt den vom NVS‑Baustein gelieferten numerischen Wert entgegen und gibt ihn unter der isobus‑Objekt‑ID `OutputNumber_N1` im Netzwerk aus.
 
 ## Programmablauf und Verbindungen
@@ -54,4 +54,4 @@ In dieser Übung wird der gesamte Pfad eines numerischen Werts von der isobus‑
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -56,7 +56,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_103](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Uebung_103](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
 
 ## Fazit
 

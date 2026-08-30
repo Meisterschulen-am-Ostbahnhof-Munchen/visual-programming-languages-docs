@@ -35,21 +35,21 @@ Because it is an adapter-based function block, the block itself does not have di
 
 #### **Sockets (Input Adapters)**
 
-* **`G`** (Type: `adapter::types::unidirectional::AX`):
+- **`G`** (Type: `adapter::types::unidirectional::AX`):
 
 The selector adapter. The data signal it contains determines which input is activated.
 
-* **`IN0`** (Type: `adapter::types::unidirectional::AIWS`):
+- **`IN0`** (Type: `adapter::types::unidirectional::AIWS`):
 
 The first selectable input adapter. This is passed through to the output when the selector signal is in the state `FALSE` (0).
 
-* **`IN1`** (Type: `adapter::types::unidirectional::AIWS`):
+- **`IN1`** (Type: `adapter::types::unidirectional::AIWS`):
 
 The second selectable input adapter. This is passed through to the output when the selector signal is in the state `TRUE` (1).
 
 #### **Plugs (Output Adapters)**
 
-* **`OUT`** (Type: `adapter::types::unidirectional::AIWS`):
+- **`OUT`** (Type: `adapter::types::unidirectional::AIWS`):
 
 The output adapter. It outputs the data and events of the currently selected input (`IN0` or `IN1`).
 
@@ -69,14 +69,14 @@ The data from inputs `IN0` and `IN1` are transferred to the selection block via 
 
 The internal function block `F_SEL` (IEC 61131-3 `SEL`) evaluates the state of the selector from the adapter `G`:
 
-* If the signal from `G` is in the state `FALSE`, the signal from `IN0` is passed to the output.
-* If the signal from `G` is in the state `TRUE`, the signal from `IN1` is passed to the output.
-* If the signal from `G` is in the state `TRUE`, the signal from `IN1` is passed to the output. 4. **Output:**
+- If the signal from `G` is in the state `FALSE`, the signal from `IN0` is passed to the output.
+- If the signal from `G` is in the state `TRUE`, the signal from `IN1` is passed to the output.
+- If the signal from `G` is in the state `TRUE`, the signal from `IN1` is passed to the output. 4. **Output:**
 
 The selected signal is passed via another `F_MOVE` block and an output flip-flop (`E_D_FF_ANY_OUT`) to data point `D1` of the output plug `OUT`. Simultaneously, the event `E1` is triggered at the output to inform subsequent blocks about the data update.
 
-* **Data type `WSTRING`:** The adapter data is processed internally via `F_MOVE` blocks with the data type `WSTRING`. This means that the user data within the `AIWS` adapter is transmitted and switched as wide strings.
-* **Event Decoupling:** By using flip-flops (`E_D_FF`), it is ensured that any change to the inputs or the selector results in an immediate and consistent update of the output.
+- **Data type `WSTRING`:** The adapter data is processed internally via `F_MOVE` blocks with the data type `WSTRING`. This means that the user data within the `AIWS` adapter is transmitted and switched as wide strings.
+- **Event Decoupling:** By using flip-flops (`E_D_FF`), it is ensured that any change to the inputs or the selector results in an immediate and consistent update of the output.
 
 The logical mapping of the output, depending on the selector `G`, is as follows:
 
@@ -85,12 +85,12 @@ The logical mapping of the output, depending on the selector `G`, is as follows:
 | `FALSE` | `IN0` | Value of `IN0.D1` | Triggered by events at `IN0.E1` or `G.E1` |
 | `TRUE` | `IN1` | Value of `IN1.D1` | Triggered by events at `IN1.E1` or `G.E1` |
 
-* **Switching Analog Values with Status (formatted as WSTRING):** Redundant sensor systems where, in case of a fault, the system should switch from sensor 1 (`IN0`) to a backup sensor 2 (`IN1`).
-* **Dynamic Text or Recipe Selection:** Switching configuration strings, log messages, or setpoints that are routed to an HMI or control unit via adapter structures.
-* **Signal Routing:** Flexible routing in modular industrial plants where data streams need to be redirected depending on the operating mode (e.g., automatic vs. manual operation).
-* ## Comparison with Similar Function Blocks
-* **Standard `SEL` (IEC 61131-3):** The classic `SEL` function block operates on elementary data types (e.g., `INT`, `REAL`, `STRING`) and does not have native event control or adapter support. `AIWS_AX_SEL_AIWS` extends this principle for IEC 61499 by providing direct switching for complex adapter types.
-* **Multiplexer (`MUX`):** A classic multiplexer allows selection from more than two channels via an integer index. The `AIWS_AX_SEL_AIWS` is optimized for fast and resource-efficient binary selection (2 channels).
+- **Switching Analog Values with Status (formatted as WSTRING):** Redundant sensor systems where, in case of a fault, the system should switch from sensor 1 (`IN0`) to a backup sensor 2 (`IN1`).
+- **Dynamic Text or Recipe Selection:** Switching configuration strings, log messages, or setpoints that are routed to an HMI or control unit via adapter structures.
+- **Signal Routing:** Flexible routing in modular industrial plants where data streams need to be redirected depending on the operating mode (e.g., automatic vs. manual operation).
+- ## Comparison with Similar Function Blocks
+- **Standard `SEL` (IEC 61131-3):** The classic `SEL` function block operates on elementary data types (e.g., `INT`, `REAL`, `STRING`) and does not have native event control or adapter support. `AIWS_AX_SEL_AIWS` extends this principle for IEC 61499 by providing direct switching for complex adapter types.
+- **Multiplexer (`MUX`):** A classic multiplexer allows selection from more than two channels via an integer index. The `AIWS_AX_SEL_AIWS` is optimized for fast and resource-efficient binary selection (2 channels).
 
 The `AIWS_AX_SEL_AIWS` is a highly specialized auxiliary module for IEC 61499 systems (such as 4diac-ide) that elegantly and deterministically switches complex data and event streams between two adapters. It significantly reduces "spaghetti code" and confusing wiring in graphical programming environments.
 ## Technical Features

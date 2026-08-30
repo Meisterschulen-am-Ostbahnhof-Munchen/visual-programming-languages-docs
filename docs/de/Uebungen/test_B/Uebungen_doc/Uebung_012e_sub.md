@@ -28,17 +28,17 @@ Die SubApp enthält drei vordefinierte Funktionsbausteine:
 
 ### Ereignisverbindungen
 
-1. **Eingelesener Wert auslösen**  
+1. **Eingelesener Wert auslösen**
    Wenn der FB `NumeriValue_PHYS` einen neuen physikalischen Wert bereitstellt, sendet er das Ereignis `IND`. Dieses wird mit dem `SET`-Ereignis des `INI`-Bausteins verbunden. Dadurch wird der aktuelle Wert (`rPhys`) in der INI-Datei unter dem angegebenen `KEY` und `SECTION` gespeichert.
 
-2. **Rückmeldung nach Speichern**  
+2. **Rückmeldung nach Speichern**
    Nach dem Speichern signalisiert `INI` mit `SETO`, dass der Vorgang abgeschlossen ist. Dieses Ereignis wird direkt an den Ausgang `IND` der SubApp weitergeleitet (mit der Eigenschaft `Visible=false`, d. h. im Diagramm ausgeblendet).
 
-3. **Wert aus INI lesen und qualitativ prüfen**  
-   Nach dem Speichern (oder nach einer Initialisierung) wird das Ereignis `GETO` des `INI`-Bausteins ausgelöst. Es ist mit dem `REQ`-Ereignis des `Q_NumericValue_PHYS`-Bausteins verbunden. Dadurch wird der gespeicherte Wert aus der INI gelesen und einer Qualitätsprüfung unterzogen.  
+3. **Wert aus INI lesen und qualitativ prüfen**
+   Nach dem Speichern (oder nach einer Initialisierung) wird das Ereignis `GETO` des `INI`-Bausteins ausgelöst. Es ist mit dem `REQ`-Ereignis des `Q_NumericValue_PHYS`-Bausteins verbunden. Dadurch wird der gespeicherte Wert aus der INI gelesen und einer Qualitätsprüfung unterzogen.
    Zusätzlich wird `GETO` auch noch einmal an den Ausgang `IND` weitergeleitet, sodass die SubApp auch nach dem Lesevorgang ein Signal abgibt.
 
-4. **Initialisierung**  
+4. **Initialisierung**
    Der `INI`-Baustein hat außerdem sein eigenes `INIT`-Ereignis, das direkt mit dem `GET`-Ereignis verbunden ist. Dadurch wird beim Start der SubApp automatisch der in der INI gespeicherte Wert gelesen und anschließend durch den `GETO`-Fluss der Qualitätsbaustein durchlaufen.
 
 ### Datenverbindungen
@@ -62,4 +62,4 @@ Sie ist als wiederverwendbarer Baustein konzipiert, der über die Parameter `KEY
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -17,8 +17,8 @@ To deepen the understanding of parallel, feedback logic structures. Each channel
 
 ![Uebung_004b2_network](./Uebung_004b2_network.svg)
 
-* **Channel 1**: Pushbutton `I1`, Switch `E_SWITCH_I1`, Memory `E_SR_I1`, Output `Q1`.
-* **Channel 2**: Pushbutton `I2`, Switch `E_SWITCH_I2`, Memory `E_SR_I2`, Output `Q2`.
+- **Channel 1**: Pushbutton `I1`, Switch `E_SWITCH_I1`, Memory `E_SR_I1`, Output `Q1`.
+- **Channel 2**: Pushbutton `I2`, Switch `E_SWITCH_I2`, Memory `E_SR_I2`, Output `Q2`.
 
 -----
 

@@ -17,8 +17,8 @@ Using libraries ("Don't reinvent the wheel").
 
 ![Uebung_006a4_AX_network](./Uebung_006a4_AX_network.svg)
 
-* **`LinksRechts`**: Type `logiBUS::utils::sequence::verteiler::LinksRechts_AX`. This block encapsulates the complete logic for direction control and interlocking.
-* **`AX_T_FF_SR`**: Continues to supply the "On/Off" signal to input `EIN` of the distributor.
+- **`LinksRechts`**: Type `logiBUS::utils::sequence::verteiler::LinksRechts_AX`. This block encapsulates the complete logic for direction control and interlocking.
+- **`AX_T_FF_SR`**: Continues to supply the "On/Off" signal to input `EIN` of the distributor.
 
 -----
 

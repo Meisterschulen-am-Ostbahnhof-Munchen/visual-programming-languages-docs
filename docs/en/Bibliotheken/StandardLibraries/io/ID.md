@@ -2,15 +2,15 @@
 
 ## 🎧 Podcast
 
-* [4diac IDE: Your "Hello World" of Automation – The Blinking Tutorial Local](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
-* [4diac IDE: Your Open-Source Toolkit for Distributed Industrial Automation according to IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
-* [4diac IDE: How the IEC 61499 Standard is Revolutionizing Industrial Automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Wie-der-IEC-61499-Standard-die-Industrieautomatisierung-revolutioniert-e36756a)
-* [From Pyramid to Plug-and-Play: The Rise of Self-Configurable Industrial Automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/From-Pyramid-to-Plug-and-Play-The-Rise-of-Self-Configurable-Industrial-Automation-e368lvk)
-* [Building Tomorrow's Factories: Bridging OT and IT with IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Building-Tomorrows-Factories-Bridging-OT-and-IT-with-IEC-61499-e376pia)
+- [4diac IDE: Your "Hello World" of Automation – The Blinking Tutorial Local](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
+- [4diac IDE: Your Open-Source Toolkit for Distributed Industrial Automation according to IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
+- [4diac IDE: How the IEC 61499 Standard is Revolutionizing Industrial Automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Wie-der-IEC-61499-Standard-die-Industrieautomatisierung-revolutioniert-e36756a)
+- [From Pyramid to Plug-and-Play: The Rise of Self-Configurable Industrial Automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/From-Pyramid-to-Plug-and-Play-The-Rise-of-Self-Configurable-Industrial-Automation-e368lvk)
+- [Building Tomorrow's Factories: Bridging OT and IT with IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Building-Tomorrows-Factories-Bridging-OT-and-IT-with-IEC-61499-e376pia)
 
 ## 📺 Video
 
-* [Ideal Diodes](https://www.youtube.com/watch?v=cPYHaOczu6s)
+- [Ideal Diodes](https://www.youtube.com/watch?v=cPYHaOczu6s)
 
 ## Introduction
 
@@ -84,26 +84,26 @@ Compared to ID offers simpler input blocks:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_011](../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)
-* [Exercise_011a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
-* [Exercise_012](../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
-* [Exercise_012a_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
-* [Exercise_012b](../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
-* [Exercise_012c](../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
-* [Uebung_020c2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
-* [Uebung_028](../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
-* [Uebung_034](../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
-* [Uebung_034a1_Q1](../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
-* [Uebung_034a1_Q2](../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
-* [Uebung_034a1_Q4](../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
-* [Uebung_060](../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
-* [Uebung_103](../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_150](../../../Uebungen/test_B/Uebungen_doc/Uebung_150.md)
-* [Exercise_150_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_150_AX.md)
-* [Exercise_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Exercise_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Exercise_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Exercise_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Exercise_011](../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)
+- [Exercise_011a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
+- [Exercise_012](../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+- [Exercise_012a_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
+- [Exercise_012b](../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
+- [Exercise_012c](../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
+- [Uebung_020c2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+- [Uebung_028](../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
+- [Uebung_034](../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_034a1_Q1](../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
+- [Uebung_034a1_Q2](../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
+- [Uebung_034a1_Q4](../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
+- [Uebung_060](../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_103](../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Uebung_150](../../../Uebungen/test_B/Uebungen_doc/Uebung_150.md)
+- [Exercise_150_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_150_AX.md)
+- [Exercise_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Exercise_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Exercise_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Exercise_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Conclusion
 
@@ -111,6 +111,6 @@ The ID function block provides a powerful and flexible interface for double-word
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Diode & Semiconductor Basics on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
-* [🌐 Smart Switch vs. Relay on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-ii/smart-switch/relais-vs-smart-switch/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Diode & Semiconductor Basics on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
+- [🌐 Smart Switch vs. Relay on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-ii/smart-switch/relais-vs-smart-switch/)

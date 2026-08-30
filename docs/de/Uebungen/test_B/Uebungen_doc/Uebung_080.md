@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_080`. Hier wird das grund
 
 ![Uebung_080_network](./Uebung_080_network.svg)
 
-* [800 PS Hightech-Riese: Was die Betriebsanleitung des ROPA Tiger 6S über moderne Landwirtschaft und extreme Sicherheit verrät](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/800-PS-Hightech-Riese-Was-die-Betriebsanleitung-des-ROPA-Tiger-6S-ber-moderne-Landwirtschaft-und-extreme-Sicherheit-verrt-e3aub4t)
+- [800 PS Hightech-Riese: Was die Betriebsanleitung des ROPA Tiger 6S über moderne Landwirtschaft und extreme Sicherheit verrät](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/800-PS-Hightech-Riese-Was-die-Betriebsanleitung-des-ROPA-Tiger-6S-ber-moderne-Landwirtschaft-und-extreme-Sicherheit-verrt-e3aub4t)
 
 ----
 
@@ -24,10 +24,10 @@ Verwendung des Bausteins `E_CTU` (Event Count Up). Es wird gezeigt, wie man eine
 
 ### Funktionsbausteine (FBs)
 
-  * **`DigitalInput_I1` (Count)**: Jeder Klick erhöht den Zähler.
-  * **`DigitalInput_I2` (Reset)**: Setzt den Zählerstand auf Null zurück.
-  * **`E_CTU`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` (Preset Value) ist auf 5 eingestellt[cite: 1].
-  * **`DigitalOutput_Q1`**: Zeigt den Status des Zählers an.
+  - **`DigitalInput_I1` (Count)**: Jeder Klick erhöht den Zähler.
+  - **`DigitalInput_I2` (Reset)**: Setzt den Zählerstand auf Null zurück.
+  - **`E_CTU`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` (Preset Value) ist auf 5 eingestellt[cite: 1].
+  - **`DigitalOutput_Q1`**: Zeigt den Status des Zählers an.
 
 -----
 
@@ -49,4 +49,4 @@ An einer Verpackungsmaschine werden die Kartons gezählt. Sobald 5 Kartons auf d
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

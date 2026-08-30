@@ -14,36 +14,36 @@ The function block `sequence_E_04_loop` implements a cyclic sequence with four s
 
 ### **Event Inputs**
 
-* **`START_S1`**: Changes from the initial state `START` to the first active state `State_01`.
-* **`S1_S2`**: Changes from `State_01` to `State_02`.
-* **`S2_S3`**: Changes from `State_02` to `State_03`.
-* **`S3_S4`**: Switches from `State_03` to `State_04`.
-* **`S4_S1`**: Switches from `State_04` back to `State_01`, thus closing the cycle.
-* **`RESET`**: Resets the function block from any active state (`State_01` to `State_04`) to the initial state `START`.
+- **`START_S1`**: Changes from the initial state `START` to the first active state `State_01`.
+- **`S1_S2`**: Changes from `State_01` to `State_02`.
+- **`S2_S3`**: Changes from `State_02` to `State_03`.
+- **`S3_S4`**: Switches from `State_03` to `State_04`.
+- **`S4_S1`**: Switches from `State_04` back to `State_01`, thus closing the cycle.
+- **`RESET`**: Resets the function block from any active state (`State_01` to `State_04`) to the initial state `START`.
 
 ### **Event Outputs**
 
-* **`CNF`**: Triggered on every state change and confirms execution. Transports the current status code for `STATE_NR`.
-* **`EO_S1`**: Triggered upon entering `State_01`. Transports the value `TRUE` for `DO_S1`.
-* **`EO_S2`**: Triggered upon entering `State_02`. Transports the value `TRUE` for `DO_S2`.
-* **`EO_S3`**: Triggered upon entering `State_03`. Transports the value `TRUE` for `DO_S3`.
-* **`EO_S4`**: Triggered upon entering `State_04`. Transports the value `TRUE` for `DO_S4`.
+- **`CNF`**: Triggered on every state change and confirms execution. Transports the current status code for `STATE_NR`.
+- **`EO_S1`**: Triggered upon entering `State_01`. Transports the value `TRUE` for `DO_S1`.
+- **`EO_S2`**: Triggered upon entering `State_02`. Transports the value `TRUE` for `DO_S2`.
+- **`EO_S3`**: Triggered upon entering `State_03`. Transports the value `TRUE` for `DO_S3`.
+- **`EO_S4`**: Triggered upon entering `State_04`. Transports the value `TRUE` for `DO_S4`.
 
 ### **Data Inputs**
 
-* This function block has no data inputs.
+- This function block has no data inputs.
 
 ### **Data Outputs**
 
-* **`STATE_NR`** (SINT): Outputs the number of the current state. The encoding is: START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4.
-* **`DO_S1`** (BOOL): Is `TRUE` when state `State_01` is active.
-* **`DO_S2`** (BOOL): Is `TRUE` when state `State_02` is active.
-* **`DO_S3`** (BOOL): Is `TRUE` when state `State_03` is active.
-* **`DO_S4`** (BOOL): Is `TRUE` when state `State_04` is active.
+- **`STATE_NR`** (SINT): Outputs the number of the current state. The encoding is: START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4.
+- **`DO_S1`** (BOOL): Is `TRUE` when state `State_01` is active.
+- **`DO_S2`** (BOOL): Is `TRUE` when state `State_02` is active.
+- **`DO_S3`** (BOOL): Is `TRUE` when state `State_03` is active.
+- **`DO_S4`** (BOOL): Is `TRUE` when state `State_04` is active.
 
 ### **Adapters**
 
-* This function block does not use any adapters.
+- This function block does not use any adapters.
 
 ## Functionality
 
@@ -59,9 +59,9 @@ A `RESET` event always leads to the `sRESET` state, where all outputs (`DO_S1` t
 
 ## Technical Features
 
-* **Event-driven transitions**: Unlike time- or condition-driven sequencers, all state transitions occur only upon the occurrence of the specific event. There are no automatic or time-controlled advances.
-* **Explicit Reset Logic**: The reset process is modeled as a separate state (`sRESET`) that cleanly resets all outputs before the initial state is reached again.
-* **State Encoding**: Using the constants from `sequence::State_xx` for assignment to `STATE_NR` improves the maintainability and readability of the code.
+- **Event-driven transitions**: Unlike time- or condition-driven sequencers, all state transitions occur only upon the occurrence of the specific event. There are no automatic or time-controlled advances.
+- **Explicit Reset Logic**: The reset process is modeled as a separate state (`sRESET`) that cleanly resets all outputs before the initial state is reached again.
+- **State Encoding**: Using the constants from `sequence::State_xx` for assignment to `STATE_NR` improves the maintainability and readability of the code.
 
 ## State Overview
 
@@ -76,9 +76,9 @@ The permitted transitions are: `START -> S1 -> S2 -> S3 -> S4 -> (S1)` and from 
 
 ## Application Scenarios
 
-* **Step-by-Step Controls**: Control of machine processes where each step must be enabled manually or by a sensor signal (e.g., manual assembly stations).
-* **Clock-Controlled Processes**: In production lines where a central clock signal (`Sx_Sy` events) signals the progress of the assembly from station to station.
-* **Test and commissioning sequences**: A structured sequence of tests that must be confirmed by the operator.
+- **Step-by-Step Controls**: Control of machine processes where each step must be enabled manually or by a sensor signal (e.g., manual assembly stations).
+- **Clock-Controlled Processes**: In production lines where a central clock signal (`Sx_Sy` events) signals the progress of the assembly from station to station.
+- **Test and commissioning sequences**: A structured sequence of tests that must be confirmed by the operator.
 
 ## ⚖️ Comparison with similar modules
 

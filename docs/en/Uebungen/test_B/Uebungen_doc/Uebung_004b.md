@@ -17,10 +17,10 @@ Understanding the internal logic of a memory block. Instead of using the pre-bui
 
 ![Uebung_004b_network](./Uebung_004b_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Returns an event with each key press.
-* **`E_SWITCH`**: An event switch. [cite_start]Depending on the state of the data input `G`, it forwards the event `EI` either to `EO0` (if FALSE) or to `EO1` (if TRUE)[cite: 1].
-* **`E_SR`**: An event-based SR (Set/Reset) memory.
-* **`DigitalOutput_Q1`**: The hardware output.
+- **`DigitalInput_CLK_I1`**: Returns an event with each key press.
+- **`E_SWITCH`**: An event switch. [cite_start]Depending on the state of the data input `G`, it forwards the event `EI` either to `EO0` (if FALSE) or to `EO1` (if TRUE)[cite: 1].
+- **`E_SR`**: An event-based SR (Set/Reset) memory.
+- **`DigitalOutput_Q1`**: The hardware output.
 
 ----
 

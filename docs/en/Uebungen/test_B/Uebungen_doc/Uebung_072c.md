@@ -17,10 +17,10 @@ Using the function block `INTEGRAL`. It demonstrates how to manually calculate a
 
 ![Uebung_072c_network](./Uebung_072c_network.svg)
 
-* **`I_GBSD`**: Returns the current speed.
-* **`CYCLE_TIME`**: Measures the time between two speed messages (`TM`).
-* **`INTEGRAL`**: Sums the product of speed and time (`v * dt`).
-* **`OFFSET_UDINT`**: Allows adding a starting value or resetting the counter.
+- **`I_GBSD`**: Returns the current speed.
+- **`CYCLE_TIME`**: Measures the time between two speed messages (`TM`).
+- **`INTEGRAL`**: Sums the product of speed and time (`v * dt`).
+- **`OFFSET_UDINT`**: Allows adding a starting value or resetting the counter.
 
 -----
 

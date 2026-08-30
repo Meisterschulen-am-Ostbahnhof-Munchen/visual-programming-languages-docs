@@ -42,17 +42,17 @@ Dieser Baustein erzeugt das Blinksignal für die Grün-Phase.
 
 ### Logik- und Hilfsbausteine
 
-*   **OR_Red, OR_Yellow, OR_Green** (`adapter::booleanOperators::AX_OR_2`): ODER-Verknüpfungen, um verschiedene Sequenzschritte auf dieselbe Lampe zu leiten (z.B. Rot leuchtet allein in S1, aber auch zusammen mit Gelb in S2).
-*   **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`): Ein Signalverteiler, der ein Eingangssignal auf zwei Pfade aufteilt.
-*   **AX_R_TRIG** (`adapter::events::unidirectional::AX_R_TRIG`): Flankenerkennung (Rising Trigger), um den Blinker präzise zu starten.
-*   **E_TimeOut** (`iec61499::events::E_TimeOut`): Behandelt Timeouts der Sequenz.
+-   **OR_Red, OR_Yellow, OR_Green** (`adapter::booleanOperators::AX_OR_2`): ODER-Verknüpfungen, um verschiedene Sequenzschritte auf dieselbe Lampe zu leiten (z.B. Rot leuchtet allein in S1, aber auch zusammen mit Gelb in S2).
+-   **AX_SPLIT_2** (`adapter::events::unidirectional::AX_SPLIT_2`): Ein Signalverteiler, der ein Eingangssignal auf zwei Pfade aufteilt.
+-   **AX_R_TRIG** (`adapter::events::unidirectional::AX_R_TRIG`): Flankenerkennung (Rising Trigger), um den Blinker präzise zu starten.
+-   **E_TimeOut** (`iec61499::events::E_TimeOut`): Behandelt Timeouts der Sequenz.
 
 ### Ein-/Ausgabe Bausteine
 
-*   **DigitalInput_CLK_I1** (`logiBUS::io::DI::logiBUS_IE`): Liest den Taster `Input_I1` (Event: `BUTTON_SINGLE_CLICK`).
-*   **Light_Red_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Steuert die rote Lampe (`Output_Q1`).
-*   **Light_Yellow_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Steuert die gelbe Lampe (`Output_Q2`).
-*   **Light_Green_Q3** (`logiBUS::io::DQ::logiBUS_QXA`): Steuert die grüne Lampe (`Output_Q3`).
+-   **DigitalInput_CLK_I1** (`logiBUS::io::DI::logiBUS_IE`): Liest den Taster `Input_I1` (Event: `BUTTON_SINGLE_CLICK`).
+-   **Light_Red_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Steuert die rote Lampe (`Output_Q1`).
+-   **Light_Yellow_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Steuert die gelbe Lampe (`Output_Q2`).
+-   **Light_Green_Q3** (`logiBUS::io::DQ::logiBUS_QXA`): Steuert die grüne Lampe (`Output_Q3`).
 
 ## Programmablauf und Verbindungen
 

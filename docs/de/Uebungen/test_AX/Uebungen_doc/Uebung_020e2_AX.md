@@ -18,10 +18,10 @@ Die Subapplikation `Uebung_020e2_AX.SUB` nutzt einen `E_CYCLE` Baustein für die
 
 ![Uebung_020e2_AX_network](./Uebung_020e2_AX_network.svg)
 
-  * **`AX_FB_TOF`**: Der Ausschaltverzögerungs-Timer.
-  * **`E_CYCLE`**: Liefert den Takt (500ms) für den Timer.
-  * **`AX_SWITCH_I1`**: Startet den Takt bei Aktivierung des Eingangs.
-  * **`AX_SWITCH_Q1`**: Stoppt den Takt erst dann, wenn auch der Ausgang des Timers wieder abgefallen ist (Nachlauf beendet).
+  - **`AX_FB_TOF`**: Der Ausschaltverzögerungs-Timer.
+  - **`E_CYCLE`**: Liefert den Takt (500ms) für den Timer.
+  - **`AX_SWITCH_I1`**: Startet den Takt bei Aktivierung des Eingangs.
+  - **`AX_SWITCH_Q1`**: Stoppt den Takt erst dann, wenn auch der Ausgang des Timers wieder abgefallen ist (Nachlauf beendet).
 
 -----
 

@@ -26,15 +26,15 @@ No data outputs available.
 
 ### **Adapter**
 
-* **IN** – *Socket* (Input) of type `adapter::types::unidirectional::ALR`
+- **IN** – *Socket* (Input) of type `adapter::types::unidirectional::ALR`
 Receives the ALR signal to be distributed.
 
-* **OUT1** – *Plug* (Output 1) of type `adapter::types::unidirectional::ALR`
+- **OUT1** – *Plug* (Output 1) of type `adapter::types::unidirectional::ALR`
 Passes the incoming signal on unchanged.
 
-* **OUT2** – *Plug* (Output 2) of type `adapter::types::unidirectional::ALR`
+- **OUT2** – *Plug* (Output 2) of type `adapter::types::unidirectional::ALR`
 
-* **OUT3** – *Plug* (Output 3) of type `adapter::types::unidirectional::ALR`
+- **OUT3** – *Plug* (Output 3) of type `adapter::types::unidirectional::ALR`
 
 ## Functionality
 
@@ -42,9 +42,9 @@ This module functions purely as a signal distributor. As soon as an ALR signal i
 
 ## Technical Features
 
-* **Generic Function Block** – The block can be created as a generic instance using the attributes `eclipse4diac::core::GenericClassName` and `eclipse4diac::core::TypeHash`. This allows for easy reuse and parameterization in different projects.
-* **No State Machine** – The block does not have an ECC (Execution Control Chart), as its behavior is defined solely by the adapter connectivity.
-* **Unidirectional Adapters** – All ALR adapters used are of type `unidirectional`; the signal direction is fixed (input → outputs).
+- **Generic Function Block** – The block can be created as a generic instance using the attributes `eclipse4diac::core::GenericClassName` and `eclipse4diac::core::TypeHash`. This allows for easy reuse and parameterization in different projects.
+- **No State Machine** – The block does not have an ECC (Execution Control Chart), as its behavior is defined solely by the adapter connectivity.
+- **Unidirectional Adapters** – All ALR adapters used are of type `unidirectional`; the signal direction is fixed (input → outputs).
 
 ## State Overview
 
@@ -52,15 +52,15 @@ The function block does not define any internal states. The output signal always
 
 ## Application Scenarios
 
-* **Alarm Distribution** – A central alarm detector (e.g., a higher-level control system) is connected to three independent control units that are intended to react to the alarm in parallel.
-* **Signal Multiplexing** – A Boolean or value-based signal from a sensor is distributed to multiple actuators or visualizations.
-* **Redundancy Architectures** – The same signal is sent to two or three independent paths to achieve fault tolerance.
+- **Alarm Distribution** – A central alarm detector (e.g., a higher-level control system) is connected to three independent control units that are intended to react to the alarm in parallel.
+- **Signal Multiplexing** – A Boolean or value-based signal from a sensor is distributed to multiple actuators or visualizations.
+- **Redundancy Architectures** – The same signal is sent to two or three independent paths to achieve fault tolerance.
 
 ## Comparison with Similar Function Blocks
 
-* **ALR_SPLIT_2** – Distributes a signal to two outputs (identical function, but fewer outputs).
-* **ALR_SPLIT_4** – Distributes one signal to four outputs.
-* **Manual Coupling** – Without the SPLIT function block, the signal would have to be tapped multiple times in the application or distributed via a common line, which reduces clarity and maintainability.
+- **ALR_SPLIT_2** – Distributes a signal to two outputs (identical function, but fewer outputs).
+- **ALR_SPLIT_4** – Distributes one signal to four outputs.
+- **Manual Coupling** – Without the SPLIT function block, the signal would have to be tapped multiple times in the application or distributed via a common line, which reduces clarity and maintainability.
 
 ## Change Detection
 
@@ -75,6 +75,6 @@ The **ALR_SPLIT_3** is a simple yet useful generic function block for multiplyin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

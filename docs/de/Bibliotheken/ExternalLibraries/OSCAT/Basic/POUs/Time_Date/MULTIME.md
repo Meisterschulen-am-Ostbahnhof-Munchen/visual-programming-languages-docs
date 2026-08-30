@@ -31,5 +31,4 @@ multiplies a time by a real number and returns a time
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
-
+- [Uebung_020c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)

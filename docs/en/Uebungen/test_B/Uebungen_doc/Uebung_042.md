@@ -17,11 +17,11 @@ Using the function block `SCALE`. In automation technology, raw values (e.g., 4-
 
 ![Uebung_042_network](./Uebung_042_network.svg)
 
-* **`SCALE`**: The conversion block.
-* **Parameters**:
-* `MIN_IN` / `MAX_IN`: The source range (here 4.0 to 20.0).
-* `MIN_OUT` / `MAX_OUT`: The target range (here 0.0 to 100.0).
-* `IN`: The current input value (here fixed at 10.0).
+- **`SCALE`**: The conversion block.
+- **Parameters**:
+- `MIN_IN` / `MAX_IN`: The source range (here 4.0 to 20.0).
+- `MIN_OUT` / `MAX_OUT`: The target range (here 0.0 to 100.0).
+- `IN`: The current input value (here fixed at 10.0).
 
 -----
 

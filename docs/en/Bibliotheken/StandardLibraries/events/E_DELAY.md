@@ -2,7 +2,7 @@
 
 ## 🎧 Podcast
 
-* [E_DELAY in IEC 61499: Precise, Cancelable Time Delay in Control Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_DELAY-in-IEC-61499-Przise--Abbrechbare-Zeitverzgerung-in-Steuerungssystemen-e3674le)
+- [E_DELAY in IEC 61499: Precise, Cancelable Time Delay in Control Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_DELAY-in-IEC-61499-Przise--Abbrechbare-Zeitverzgerung-in-Steuerungssystemen-e3674le)
 ## Introduction
 
 The **E_DELAY** is a key functional block in the IEC 61499 standard for industrial control systems. As an event-driven timer, it enables the delayed triggering of events with a configurable duration and the option to cancel. This block is widely used in time-controlled automation processes.
@@ -64,16 +64,16 @@ The **E_DELAY** is a key functional block in the IEC 61499 standard for industri
 
 ## 🛠️ Related exercises
 
-* [Uebung_018](../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
-* [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
-* [Uebung_020b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
-* [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
-* [Uebung_020d_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
-* [Uebung_024](../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
-* [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
-* [Uebung_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
-* [Uebung_160b](../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
-* [Exercise_160b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+- [Uebung_018](../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+- [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+- [Uebung_020b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+- [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
+- [Uebung_020d_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
+- [Uebung_024](../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
+- [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+- [Uebung_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
+- [Uebung_160b](../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
+- [Exercise_160b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
 ## Conclusion
 

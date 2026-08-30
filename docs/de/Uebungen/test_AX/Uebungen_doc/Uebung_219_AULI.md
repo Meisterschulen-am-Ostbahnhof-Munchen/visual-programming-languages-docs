@@ -69,19 +69,19 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 
 ## Programmablauf und Verbindungen
 
-1. **Initialisierung**:  
+1. **Initialisierung**:
    Beim Start wird durch das Ereignis `Input_LD.INITO` der Baustein `AULI_ULINT_TO_ULI` getriggert. Dieser liefert den festen Preset‑Wert 10 (ULINT) an den Dateneingang `PV` des Zählers.
 
-2. **Zähler laden**:  
+2. **Zähler laden**:
    Ein positiver Flanke am digitalen Eingang `Input_I2` (LD) lädt den Zähler mit dem Preset‑Wert. Der aktuelle Zählerstand wird auf 10 gesetzt.
 
-3. **Rückwärts zählen**:  
+3. **Rückwärts zählen**:
    Jeder positive Flanke am digitalen Eingang `Input_I1` (CD) verringert den Zählerstand um 1, solange der Stand größer als 0 ist.
 
-4. **Ausgabe des Zählerstandes**:  
+4. **Ausgabe des Zählerstandes**:
    Der aktuelle Zählerstand (`CV`) wird über die Konvertierungskette `AULI_TO_AUDI` → `Q_NumericValue_AUDI` auf das Terminal ausgegeben (Objekt `OutputNumber_N1`).
 
-5. **Signal bei Null**:  
+5. **Signal bei Null**:
    Sobald der Zählerstand den Wert 0 erreicht, setzt der CTD‑Baustein den Ausgang `Q` auf TRUE. Dies schaltet den digitalen Ausgang `Output_Q1` ein.
 
 **Zusammenfassung der Verbindungen (Adapter‑ und Ereignis‑Connections):**
@@ -105,7 +105,7 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 - Konvertierung von Datentypen für die Kommunikation zwischen Bausteinen.
 - Ausgabe von Prozesswerten auf einem Terminal (isobus‑basiert).
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 
 **Vorkenntnisse**: Grundlagen der 4diac‑IDE, Umgang mit logiBUS‑I/O‑Bausteinen, einfache Datenkonvertierung.
 
@@ -119,4 +119,4 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

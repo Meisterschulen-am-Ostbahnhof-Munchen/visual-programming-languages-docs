@@ -19,21 +19,21 @@ Die SubApp `Uebung_011b1_AUDI` enthält sechs Funktionsbausteine, die über Adap
 - **Parameter**:
     - `QI` = `TRUE`
     - `u16ObjId` = `InputNumber_I1` bzw. `InputNumber_I2`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Diese Bausteine stellen den Zugriff auf zwei ISOBUS‑NumericValue‑Eingangsobjekte dar. Sie liefern an ihrem Ausgangsadapter `IN` einen numerischen Wert (ganze Zahl) vom ISOBUS‑Datentyp. Der Parameter `u16ObjId` definiert die Kennung des jeweiligen Eingangsobjekts.
 
 ### Sub-Bausteine: `AD_TO_AUDI_1` und `AD_TO_AUDI_2`
 
 - **Typ**: `adapter::conversion::unidirectional::AD_TO_AUDI`
 - **Parameter**: keine
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Diese Bausteine konvertieren einen Eingangswert vom Adaptertyp `AD` (der von den vorherigen NumericValue‑Bausteinen bereitgestellt wird) in den Adaptertyp `AUDI`. Die Umwandlung erfolgt unidirektional und dient der Anpassung an den nachfolgenden Additionsbaustein, der nur den `AUDI`‑Typ akzeptiert.
 
 ### Sub-Baustein: `AX_ADD_2`
 
 - **Typ**: `adapter::iec61131::arithmetic::AUDI_ADD_2`
 - **Parameter**: keine
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Dieser Baustein führt eine Addition zweier `AUDI`‑Eingangswerte durch. Die Eingänge `IN1` und `IN2` werden über Adapterverbindungen mit den konvertierten Werten versorgt. Der Ausgang `OUT` liefert das Ergebnis als `AUDI`‑Summe.
 
 ### Sub-Baustein: `Q_NumericValue_AUDI`
@@ -41,7 +41,7 @@ Die SubApp `Uebung_011b1_AUDI` enthält sechs Funktionsbausteine, die über Adap
 - **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**:
     - `u16ObjId` = `OutputNumber_N1`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Dieser Baustein nimmt über den Adaptereingang `u32NewValue` den berechneten Summenwert (als `AUDI`‑Typ) entgegen und schreibt ihn als ISOBUS‑Ausgangsobjekt mit der Kennung `OutputNumber_N1`. Er fungiert somit als Ausgabe‑Schnittstelle zur angeschlossenen ISOBUS‑Steuerung.
 
 ## Programmablauf und Verbindungen
@@ -56,11 +56,11 @@ Die gesamte Datenverarbeitung erfolgt in einem Zyklus ohne zusätzliche Ereignis
 
 ## Zusammenfassung
 
-Die Übung zeigt eine vollständige Verarbeitungskette für zwei numerische ISOBUS‑Eingangswerte:  
+Die Übung zeigt eine vollständige Verarbeitungskette für zwei numerische ISOBUS‑Eingangswerte:
 
-- Einlesen über standardisierte ISOBUS‑Bausteine (`NumericValue_IDA`),  
-- Typkonvertierung mittels Adapter‑Bausteinen (`AD_TO_AUDI`),  
-- arithmetische Addition (`AUDI_ADD_2`),  
+- Einlesen über standardisierte ISOBUS‑Bausteine (`NumericValue_IDA`),
+- Typkonvertierung mittels Adapter‑Bausteinen (`AD_TO_AUDI`),
+- arithmetische Addition (`AUDI_ADD_2`),
 - und Ausgabe über einen ISOBUS‑Ausgangsbaustein (`Q_NumericValue_AUDI`).
 
 Sie vermittelt grundlegende Kenntnisse im Umgang mit Adapterschnittstellen und der Datenflussprogrammierung in 4diac für industrielle ISOBUS‑Anwendungen (z. B. Landmaschinensteuerungen).
@@ -69,4 +69,4 @@ Sie vermittelt grundlegende Kenntnisse im Umgang mit Adapterschnittstellen und d
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

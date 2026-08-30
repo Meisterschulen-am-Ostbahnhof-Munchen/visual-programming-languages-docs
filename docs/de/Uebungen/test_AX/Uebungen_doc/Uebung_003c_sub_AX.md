@@ -25,7 +25,7 @@ Diese Sub-Applikation besteht intern aus zwei Hauptkomponenten, die über Adapte
     - **Bausteinname**: `IX`
         - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
         - **Beschreibung**: Dient als Schnittstelle für den digitalen Eingang.
-        - **Parameter**: 
+        - **Parameter**:
             - `QI` = `TRUE` (Baustein ist aktiv)
             - `PARAMS` = `` (Unsichtbar/Leer)
         - **Datenausgang/-eingang**:
@@ -36,7 +36,7 @@ Diese Sub-Applikation besteht intern aus zwei Hauptkomponenten, die über Adapte
     - **Bausteinname**: `QX`
         - **Typ**: `isobus::UT::io::Auxiliary::OUT::Aux_QXA`
         - **Beschreibung**: Repräsentiert den Auxiliary-Ausgang.
-        - **Parameter**: 
+        - **Parameter**:
             - `QI` = `TRUE` (Baustein ist aktiv)
         - **Datenausgang/-eingang**:
             - `iInpNr`: Empfängt die Index-Nummer von der Sub-Applikation (`iInpNr`).
@@ -66,4 +66,4 @@ Die `Uebung_003c_sub_AX` ist ein wiederverwendbares Modul (SubApp), das einen di
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

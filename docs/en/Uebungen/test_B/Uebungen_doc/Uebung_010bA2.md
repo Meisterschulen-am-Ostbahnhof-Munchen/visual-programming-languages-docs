@@ -9,7 +9,7 @@ This article describes the logiBUS® exercise `Uebung_010bA2`. It covers the int
 
 ![Uebung_010bA2_network](./Uebung_010bA2_network.svg)
 
-* For a **momentary operator** (non-latched), the event is sent only once when pressed.
-* With a **latched operator**, the event is repeated cyclically as long as the switch is active.
+- For a **momentary operator** (non-latched), the event is sent only once when pressed.
+- With a **latched operator**, the event is repeated cyclically as long as the switch is active.
 
 This illustrates how the software reacts to the hardware characteristics of the joystick being used.

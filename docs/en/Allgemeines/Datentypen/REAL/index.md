@@ -20,8 +20,8 @@ When used as a literal, a prefix can be used, e.g., `REAL#...`.
 
 ## 🛠️ Related exercises
 
-* [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
-* [Uebung_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Uebung_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Uebung_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Uebung_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Uebung_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Uebung_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)

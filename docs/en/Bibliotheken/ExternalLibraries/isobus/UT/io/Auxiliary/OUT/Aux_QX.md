@@ -59,7 +59,7 @@ Compared to simple Boolean output blocks, Aux_QX offers extended service functio
 ...
 ## 🛠️ Related Exercises
 
-* [Exercise_003c_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003c_sub.md)
+- [Exercise_003c_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003c_sub.md)
 
 ## Conclusion
 

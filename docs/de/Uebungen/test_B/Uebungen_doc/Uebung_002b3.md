@@ -13,7 +13,7 @@ Diese Übung demonstriert die Verarbeitung digitaler Eingangssignale und deren l
 ### DigitalInput_I1, DigitalInput_I2, DigitalInput_I3
 
 - **Typ**: logiBUS_IX
-- **Parameter**: 
+- **Parameter**:
   - QI = TRUE
   - Input = logiBUS_DI::Input_I1 (bzw. I2, I3)
 - **Funktionsweise**: Lesen der digitalen Eingangssignale von den entsprechenden Hardware-Eingängen
@@ -64,7 +64,7 @@ Q1 = (I1 UND I2) ODER I3
 - Aufbau von kombinatorischen Schaltungen
 - Ereignisgesteuerte Datenverarbeitung
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Benötigte Vorkenntnisse**: Grundlagen der Digitaltechnik, Basiswissen 4diac-IDE
 
 **Start der Übung**: Die Übung wird in der 4diac-IDE geladen und auf ein kompatibles Steuerungssystem deployt. Die digitalen Eingänge I1, I2 und I3 können getestet werden, um die Funktionalität der Schaltung zu überprüfen.
@@ -77,4 +77,4 @@ Diese Übung zeigt eine grundlegende kombinatorische Logikschaltung, die digital
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -31,16 +31,16 @@ This exercise implements a standard-compliant IEC 61131-3 up/down counter with t
 2. **Data Chaining**
 
 - The digital input signals (IN) are connected directly to the corresponding counter inputs:
-* Input_CU.IN → FB_CTUD_LINT.CU
-* Input_CD.IN → FB_CTUD_LINT.CD
-* Input_R.IN → FB_CTUD_LINT.R
-* Input_LD.IN → FB_CTUD_LINT.LD
+- Input_CU.IN → FB_CTUD_LINT.CU
+- Input_CD.IN → FB_CTUD_LINT.CD
+- Input_R.IN → FB_CTUD_LINT.R
+- Input_LD.IN → FB_CTUD_LINT.LD
 - The counter outputs:
-* FB_CTUD_LINT.QU → Output_QU.OUT (Switches output Q1)
-* FB_CTUD_LINT.QD → Output_QD.OUT (Switches output Q2)
+- FB_CTUD_LINT.QU → Output_QU.OUT (Switches output Q1)
+- FB_CTUD_LINT.QD → Output_QD.OUT (Switches output Q2)
 - The current counter reading (CV, LINT) is converted to LREAL via the converter:
-* FB_CTUD_LINT.CV → F_LINT_TO_LREAL.IN
-* F_LINT_TO_LREAL.OUT → Q_NumericValue_PHYS_LREAL.lrPhys
+- FB_CTUD_LINT.CV → F_LINT_TO_LREAL.IN
+- F_LINT_TO_LREAL.OUT → Q_NumericValue_PHYS_LREAL.lrPhys
 - The terminal thus displays the counter reading as a decimal floating-point number.
 3. **Learning Objectives**
 - Understanding the IEC 61131-3 CTUD function block (LINT).
@@ -64,6 +64,6 @@ Exercise 222b demonstrates a complete IEC 61131-3 compliant forward/down counter
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -15,36 +15,36 @@ Der Funktionsblock `sequence_E_04_loop` implementiert eine zyklische Sequenz mit
 
 ### **Ereignis-Eingänge**
 
-*   **`START_S1`**: Wechselt vom initialen `START`-Zustand in den ersten aktiven Zustand `State_01`.
-*   **`S1_S2`**: Wechselt von `State_01` zu `State_02`.
-*   **`S2_S3`**: Wechselt von `State_02` zu `State_03`.
-*   **`S3_S4`**: Wechselt von `State_03` zu `State_04`.
-*   **`S4_S1`**: Wechselt von `State_04` zurück zu `State_01` und schließt damit den Zyklus.
-*   **`RESET`**: Setzt den Baustein von jedem beliebigen aktiven Zustand (`State_01` bis `State_04`) zurück in den initialen `START`-Zustand.
+-   **`START_S1`**: Wechselt vom initialen `START`-Zustand in den ersten aktiven Zustand `State_01`.
+-   **`S1_S2`**: Wechselt von `State_01` zu `State_02`.
+-   **`S2_S3`**: Wechselt von `State_02` zu `State_03`.
+-   **`S3_S4`**: Wechselt von `State_03` zu `State_04`.
+-   **`S4_S1`**: Wechselt von `State_04` zurück zu `State_01` und schließt damit den Zyklus.
+-   **`RESET`**: Setzt den Baustein von jedem beliebigen aktiven Zustand (`State_01` bis `State_04`) zurück in den initialen `START`-Zustand.
 
 ### **Ereignis-Ausgänge**
 
-*   **`CNF`**: Wird bei jedem Zustandswechsel ausgelöst und bestätigt die Ausführung. Transportiert den aktuellen Zustandscode über `STATE_NR`.
-*   **`EO_S1`**: Wird beim Eintritt in `State_01` ausgelöst. Transportiert den Wert `TRUE` für `DO_S1`.
-*   **`EO_S2`**: Wird beim Eintritt in `State_02` ausgelöst. Transportiert den Wert `TRUE` für `DO_S2`.
-*   **`EO_S3`**: Wird beim Eintritt in `State_03` ausgelöst. Transportiert den Wert `TRUE` für `DO_S3`.
-*   **`EO_S4`**: Wird beim Eintritt in `State_04` ausgelöst. Transportiert den Wert `TRUE` für `DO_S4`.
+-   **`CNF`**: Wird bei jedem Zustandswechsel ausgelöst und bestätigt die Ausführung. Transportiert den aktuellen Zustandscode über `STATE_NR`.
+-   **`EO_S1`**: Wird beim Eintritt in `State_01` ausgelöst. Transportiert den Wert `TRUE` für `DO_S1`.
+-   **`EO_S2`**: Wird beim Eintritt in `State_02` ausgelöst. Transportiert den Wert `TRUE` für `DO_S2`.
+-   **`EO_S3`**: Wird beim Eintritt in `State_03` ausgelöst. Transportiert den Wert `TRUE` für `DO_S3`.
+-   **`EO_S4`**: Wird beim Eintritt in `State_04` ausgelöst. Transportiert den Wert `TRUE` für `DO_S4`.
 
 ### **Daten-Eingänge**
 
-*   Dieser Funktionsblock besitzt keine Dateneingänge.
+-   Dieser Funktionsblock besitzt keine Dateneingänge.
 
 ### **Daten-Ausgänge**
 
-*   **`STATE_NR`** (SINT): Gibt die Nummer des aktuellen Zustands aus. Die Kodierung lautet: START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4.
-*   **`DO_S1`** (BOOL): Ist `TRUE`, wenn der Zustand `State_01` aktiv ist.
-*   **`DO_S2`** (BOOL): Ist `TRUE`, wenn der Zustand `State_02` aktiv ist.
-*   **`DO_S3`** (BOOL): Ist `TRUE`, wenn der Zustand `State_03` aktiv ist.
-*   **`DO_S4`** (BOOL): Ist `TRUE`, wenn der Zustand `State_04` aktiv ist.
+-   **`STATE_NR`** (SINT): Gibt die Nummer des aktuellen Zustands aus. Die Kodierung lautet: START = 0, State_01 = 1, State_02 = 2, State_03 = 3, State_04 = 4.
+-   **`DO_S1`** (BOOL): Ist `TRUE`, wenn der Zustand `State_01` aktiv ist.
+-   **`DO_S2`** (BOOL): Ist `TRUE`, wenn der Zustand `State_02` aktiv ist.
+-   **`DO_S3`** (BOOL): Ist `TRUE`, wenn der Zustand `State_03` aktiv ist.
+-   **`DO_S4`** (BOOL): Ist `TRUE`, wenn der Zustand `State_04` aktiv ist.
 
 ### **Adapter**
 
-*   Dieser Funktionsblock verwendet keine Adapter.
+-   Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 
@@ -60,9 +60,9 @@ Ein `RESET`-Ereignis führt immer in den `sRESET`-Zustand, wo alle Ausgänge (`D
 
 ## Technische Besonderheiten
 
-*   **Ereignisgesteuerte Transitionen**: Im Gegensatz zu zeit- oder bedingungsgesteuerten Sequenzern erfolgen alle Zustandsübergänge nur bei Eintreffen des spezifischen Ereignisses. Es gibt keine automatischen oder zeitgesteuerten Weiter schaltungen.
-*   **Explizite Reset-Logik**: Der Reset-Vorgang ist als eigener Zustand (`sRESET`) modelliert, der alle Ausgänge sauber zurücksetzt, bevor der Startzustand wieder erreicht wird.
-*   **Zustandskodierung**: Die Verwendung der Konstanten aus `sequence::State_xx` für die Zuweisung an `STATE_NR` erhöht die Wartbarkeit und Lesbarkeit des Codes.
+-   **Ereignisgesteuerte Transitionen**: Im Gegensatz zu zeit- oder bedingungsgesteuerten Sequenzern erfolgen alle Zustandsübergänge nur bei Eintreffen des spezifischen Ereignisses. Es gibt keine automatischen oder zeitgesteuerten Weiter schaltungen.
+-   **Explizite Reset-Logik**: Der Reset-Vorgang ist als eigener Zustand (`sRESET`) modelliert, der alle Ausgänge sauber zurücksetzt, bevor der Startzustand wieder erreicht wird.
+-   **Zustandskodierung**: Die Verwendung der Konstanten aus `sequence::State_xx` für die Zuweisung an `STATE_NR` erhöht die Wartbarkeit und Lesbarkeit des Codes.
 
 ## Zustandsübersicht
 
@@ -77,9 +77,9 @@ Die erlaubten Übergänge sind: `START -> S1 -> S2 -> S3 -> S4 -> (S1)` sowie vo
 
 ## Anwendungsszenarien
 
-*   **Schrittkettensteuerungen**: Steuerung von Maschinenabläufen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben werden muss (z.B. manuelle Bestückungsstationen).
-*   **Taktgesteuerte Prozesse**: In Produktionslinien, wo ein zentraler Taktgeber (`Sx_Sy`-Ereignisse) den Fortschritt der Baugruppe von Station zu Station signalisiert.
-*   **Test- und Inbetriebnahmesequenzen**: Strukturierte Abfolge von Tests, die vom Bediener bestätigt werden müssen.
+-   **Schrittkettensteuerungen**: Steuerung von Maschinenabläufen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben werden muss (z.B. manuelle Bestückungsstationen).
+-   **Taktgesteuerte Prozesse**: In Produktionslinien, wo ein zentraler Taktgeber (`Sx_Sy`-Ereignisse) den Fortschritt der Baugruppe von Station zu Station signalisiert.
+-   **Test- und Inbetriebnahmesequenzen**: Strukturierte Abfolge von Tests, die vom Bediener bestätigt werden müssen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

@@ -17,15 +17,15 @@ Das Netzwerk ist als SubAppType realisiert und kann in übergeordnete Applikatio
 #### DigitalInput_I1 / DigitalInput_I2 (je `logiBUS::io::DI::logiBUS_IXA`)
 
 - **Typ**: logiBUS Digital Input Adapter
-- **Parameter**:  
-  - `QI` = TRUE  
+- **Parameter**:
+  - `QI` = TRUE
   - `Input` = `Input_I1` (bzw. `Input_I2`)
 - **Funktionsweise**: Stellt den physikalischen digitalen Eingang als Adapter-Socket zur Verfügung. Die eingehenden Signale werden über die logiBUS-Hardware gelesen und stehen über den Ausgang `IN` für weitere Verbindungen bereit.
 
 #### ILOCK_AX (`logiBUS::signalprocessing::interlock::ILOCK_BLOCK_PROTECT_AX`)
 
 - **Typ**: Interlock-Block mit Schutzzeit (Adapter)
-- **Parameter**:  
+- **Parameter**:
   - `DT_PROTECT` = `T#1s` (Schutzzeit 1 Sekunde)
 - **Verwendete interne FBs**: Keine (Blackbox)
 - **Funktionsweise**: Realisiert eine gegenseitige Verriegelung zweier Eingänge (`UP_IN`, `DOWN_IN`) und gibt die entsprechenden Ausgänge (`UP_OUT`, `DOWN_OUT`) frei. Die Schutzzeit verhindert ein ungewolltes schnelles Umschalten. Bei Aktivierung der Schutzzeit wird zudem ein Ereignis am Ausgang `timeOut` ausgelöst.
@@ -33,8 +33,8 @@ Das Netzwerk ist als SubAppType realisiert und kann in übergeordnete Applikatio
 #### DigitalOutput_Q1 / DigitalOutput_Q2 (je `logiBUS::io::DQ::logiBUS_QXA`)
 
 - **Typ**: logiBUS Digital Output Adapter
-- **Parameter**:  
-  - `QI` = TRUE  
+- **Parameter**:
+  - `QI` = TRUE
   - `Output` = `Output_Q1` (bzw. `Output_Q2`)
 - **Funktionsweise**: Nimmt das Signal am Eingang `OUT` entgegen und gibt es über den logiBUS-Ausgangskanal an die angeschlossene Hardware weiter.
 
@@ -56,19 +56,19 @@ Die SubApp ist wie folgt verschaltet:
 
 3. **Ausgänge**: Die freigegebenen Signale werden über Adapterverbindungen zu den logiBUS-Digital-Output-Adaptern geführt:
    - `ILOCK_AX.UP_OUT` → `DigitalOutput_Q1.OUT`
-   - `ILOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`  
+   - `ILOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`
    Die Ausgänge `Output_Q1` und `Output_Q2` steuern die angeschlossenen Aktoren.
 
 4. **Timer**: Das Timeout-Ereignis des Interlock-Blocks (`ILOCK_AX.timeOut`) ist mit dem Socket `E_TimeOut.TimeOutSocket` verbunden. Der Timer kann in einer übergeordneten Applikation genutzt werden, um eine Fehler- oder Quittierungsmeldung zu generieren.
 
 **Lernziele der Übung**:
 
-- Verständnis des Interlock-Konzepts mit Schutzzeit  
-- Einsatz von logiBUS-IO-Adaptern in 4diac  
-- Verwendung von Ereignis-Timern (`E_TimeOut`)  
-- Fehlersuche und Analyse von Zeitproblemen in Steuerungen  
+- Verständnis des Interlock-Konzepts mit Schutzzeit
+- Einsatz von logiBUS-IO-Adaptern in 4diac
+- Verwendung von Ereignis-Timern (`E_TimeOut`)
+- Fehlersuche und Analyse von Zeitproblemen in Steuerungen
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlegende Bedienung der 4diac-IDE, Kenntnisse der logiBUS-Hardware, Umgang mit Funktionsbausteinen und Adaptern.
 
 ## Zusammenfassung
@@ -79,4 +79,4 @@ Die Übung `Uebung_202_AX` veranschaulicht eine industrietypische Verriegelungss
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

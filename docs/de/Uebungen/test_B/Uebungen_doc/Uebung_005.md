@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_005`. Hier wird demonstri
 
 ![Uebung_005_network](./Uebung_005_network.svg)
 
-* [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
+- [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----
 
@@ -24,9 +24,9 @@ Verständnis der Flankenauswertung unter Verwendung von Ereignisweichen. Es wird
 
 ### Funktionsbausteine (FBs)
 
-  * **`DigitalInput_I1`**: Typ `logiBUS_IX`. Liefert ein Ereignis bei jeder Pegeländerung (Drücken und Loslassen).
-  * **`E_SWITCH`**: Dient als Gatter, um nur eine der beiden Flanken durchzulassen.
-  * **`E_T_FF`**: Das Toggle-Flip-Flop.
+  - **`DigitalInput_I1`**: Typ `logiBUS_IX`. Liefert ein Ereignis bei jeder Pegeländerung (Drücken und Loslassen).
+  - **`E_SWITCH`**: Dient als Gatter, um nur eine der beiden Flanken durchzulassen.
+  - **`E_T_FF`**: Das Toggle-Flip-Flop.
 
 -----
 

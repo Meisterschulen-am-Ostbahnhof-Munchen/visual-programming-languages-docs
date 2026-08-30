@@ -41,14 +41,14 @@ Der Baustein besitzt keine klassischen ereignis- oder datenbasierten Ein- und Au
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster Summand für die Additionsoperation.
-*   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter Summand für die Additionsoperation.
-*   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter Summand für die Additionsoperation.
-*   **IN4** (Typ: `adapter::types::unidirectional::AI`): Vierter Summand für die Additionsoperation.
+-   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster Summand für die Additionsoperation.
+-   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter Summand für die Additionsoperation.
+-   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter Summand für die Additionsoperation.
+-   **IN4** (Typ: `adapter::types::unidirectional::AI`): Vierter Summand für die Additionsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AI`): Ausgangsadapter, der das Ergebnis der Addition (`IN1 + IN2 + IN3 + IN4`) bereitstellt.
+-   **OUT** (Typ: `adapter::types::unidirectional::AI`): Ausgangsadapter, der das Ergebnis der Addition (`IN1 + IN2 + IN3 + IN4`) bereitstellt.
 
 ## Funktionsweise
 
@@ -60,8 +60,8 @@ Das Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergeben, und das 
 
 ## Technische Besonderheiten
 
-*   **Generisches Design:** Der Baustein nutzt das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AI_ADD'`. Er ist dadurch hochflexibel und kann auf unterschiedliche numerische Datentypen angewendet werden, sofern die verwendeten Adapter dies unterstützen.
-*   **Unidirektionale Adapter:** Durch die Verwendung von `unidirectional::AI`-Adaptern wird der Verdrahtungsaufwand im Funktionsplan drastisch reduziert, da Daten und Trigger-Ereignisse in einer einzigen Verbindung gebündelt sind.
+-   **Generisches Design:** Der Baustein nutzt das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AI_ADD'`. Er ist dadurch hochflexibel und kann auf unterschiedliche numerische Datentypen angewendet werden, sofern die verwendeten Adapter dies unterstützen.
+-   **Unidirektionale Adapter:** Durch die Verwendung von `unidirectional::AI`-Adaptern wird der Verdrahtungsaufwand im Funktionsplan drastisch reduziert, da Daten und Trigger-Ereignisse in einer einzigen Verbindung gebündelt sind.
 
 ## Zustandsübersicht
 
@@ -73,9 +73,9 @@ Der Baustein verhält sich rein reaktiv (ereignisgesteuert):
 
 ## Anwendungsszenarien
 
-*   **Messwert-Agggregation:** Summierung von Strömen, Leistungen oder Durchflussmengen aus vier verschiedenen Quellen oder Sensoren.
-*   **Mittelwertvorbereitung:** Zusammenführung von vier analogen Messwerten zur anschließenden Division (z. B. zur gleitenden Mittelwertbildung oder Redundanzprüfung).
-*   **Sollwert-Offset-Berechnung:** Addition von Basis-Sollwerten, Korrekturwerten und Benutzer-Offsets in verfahrenstechnischen Anlagen.
+-   **Messwert-Agggregation:** Summierung von Strömen, Leistungen oder Durchflussmengen aus vier verschiedenen Quellen oder Sensoren.
+-   **Mittelwertvorbereitung:** Zusammenführung von vier analogen Messwerten zur anschließenden Division (z. B. zur gleitenden Mittelwertbildung oder Redundanzprüfung).
+-   **Sollwert-Offset-Berechnung:** Addition von Basis-Sollwerten, Korrekturwerten und Benutzer-Offsets in verfahrenstechnischen Anlagen.
 
 ## Vergleich mit ähnlichen Bausteinen
 

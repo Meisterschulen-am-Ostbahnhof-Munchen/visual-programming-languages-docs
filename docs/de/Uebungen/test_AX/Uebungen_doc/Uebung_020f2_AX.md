@@ -20,9 +20,9 @@ Die Subapplikation `Uebung_020f2_AX.SUB` nutzt einen `E_CYCLE` Baustein, um den 
 
 ![Uebung_020f2_AX_network](./Uebung_020f2_AX_network.svg)
 
-  * **`AX_FB_TP`**: Der Impuls-Timer mit Adapter-Schnittstellen. Er reagiert auf die steigende Flanke am Eingang und hält den Ausgang für die Zeit `PT` auf TRUE.
-  * **`E_CYCLE`**: Erzeugt alle 500ms ein Ereignis, um den Timer zu aktualisieren.
-  * **`AX_SWITCH`**: Überwacht den Status, um den Taktgeber bei Bedarf zu starten oder zu stoppen.
+  - **`AX_FB_TP`**: Der Impuls-Timer mit Adapter-Schnittstellen. Er reagiert auf die steigende Flanke am Eingang und hält den Ausgang für die Zeit `PT` auf TRUE.
+  - **`E_CYCLE`**: Erzeugt alle 500ms ein Ereignis, um den Timer zu aktualisieren.
+  - **`AX_SWITCH`**: Überwacht den Status, um den Taktgeber bei Bedarf zu starten oder zu stoppen.
 
 -----
 

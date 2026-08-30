@@ -29,12 +29,12 @@ The function block `ALI_DIV_2` is a generic arithmetic function block for IEC 61
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALI`): The dividend (numerator) of the division.
-* **IN2** (Type: `adapter::types::unidirectional::ALI`): The divisor (denominator) of the division.
+- **IN1** (Type: `adapter::types::unidirectional::ALI`): The dividend (numerator) of the division.
+- **IN2** (Type: `adapter::types::unidirectional::ALI`): The divisor (denominator) of the division.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALI`): The result of the mathematical division ($OUT = IN1 / IN2$).
+- **OUT** (Type: `adapter::types::unidirectional::ALI`): The result of the mathematical division ($OUT = IN1 / IN2$).
 
 ## Functionality
 
@@ -46,9 +46,9 @@ Because it is a generic function block (`GEN_ALI_DIV`), the block can flexibly w
 
 ... ## Technical Features
 
-* **Generic Implementation:** By assigning it to the generic class `GEN_ALI_DIV`, the function block is not limited to a fixed data type (such as `REAL` or `INT`). It dynamically adapts to the type definitions of the connected adapters.
-* **Adapter Encapsulation:** The use of unidirectional `ALI` adapters drastically reduces cabling in the 4diac IDE, as data and associated trigger events are bundled and transmitted in a single connection.
-* * **Division by Zero:** During implementation and in the runtime environment, care must be taken to handle the value of `0` at input `IN2` to prevent system crashes (e.g., by default returning `NaN`, infinity, or by intercepting the error via adapter error handling).
+- **Generic Implementation:** By assigning it to the generic class `GEN_ALI_DIV`, the function block is not limited to a fixed data type (such as `REAL` or `INT`). It dynamically adapts to the type definitions of the connected adapters.
+- **Adapter Encapsulation:** The use of unidirectional `ALI` adapters drastically reduces cabling in the 4diac IDE, as data and associated trigger events are bundled and transmitted in a single connection.
+- * **Division by Zero:** During implementation and in the runtime environment, care must be taken to handle the value of `0` at input `IN2` to prevent system crashes (e.g., by default returning `NaN`, infinity, or by intercepting the error via adapter error handling).
 
 ## State Overview
 
@@ -62,9 +62,9 @@ Since `ALI_DIV_2` is a data- and event-driven block, it does not have a complex 
 
 ## Application Scenarios
 
-* **Signal Normalization and Scaling:** Division of sensor values by constant factors for unit conversion within an adapter-based control architecture.
-* **Ratio Calculation:** Determination of ratios (e.g., fuel-air mixture, flow ratios) in process engineering plants.
-* **Distributed Control Systems:** Use in complex IEC 61499 applications where a clean, modular signal flow is enforced via adapters.
+- **Signal Normalization and Scaling:** Division of sensor values by constant factors for unit conversion within an adapter-based control architecture.
+- **Ratio Calculation:** Determination of ratios (e.g., fuel-air mixture, flow ratios) in process engineering plants.
+- **Distributed Control Systems:** Use in complex IEC 61499 applications where a clean, modular signal flow is enforced via adapters.
 
 ## Comparison with Similar Function Blocks
 

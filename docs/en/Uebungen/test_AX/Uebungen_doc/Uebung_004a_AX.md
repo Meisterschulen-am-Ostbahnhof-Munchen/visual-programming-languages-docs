@@ -17,9 +17,9 @@ The objective is to understand the difference between state-oriented (level) and
 
 ![Uebung_004a_AX_network](./Uebung_004a_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Type `logiBUS_IE` (Input Event). [cite_start]Unlike `IXA` (Input Extended Adapter), this block does not provide a continuous `BOOL` signal, but rather fires a single event (`IND`) when a specific condition is met. Here it is configured as `BUTTON_SINGLE_CLICK`[cite: 1].
-* **`E_T_FF`**: Type `AX_T_FF` (Adapter Toggle Flip-Flop). [cite_start]This component has a clock input (`CLK`). With each received event, it toggles its internal state and outputs it via the adapter output `Q`[cite: 1].
-* **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. [cite_start]Switches the physical output `Q1` based on the flip-flop's state[cite: 1].
+- **`DigitalInput_CLK_I1`**: Type `logiBUS_IE` (Input Event). [cite_start]Unlike `IXA` (Input Extended Adapter), this block does not provide a continuous `BOOL` signal, but rather fires a single event (`IND`) when a specific condition is met. Here it is configured as `BUTTON_SINGLE_CLICK`[cite: 1].
+- **`E_T_FF`**: Type `AX_T_FF` (Adapter Toggle Flip-Flop). [cite_start]This component has a clock input (`CLK`). With each received event, it toggles its internal state and outputs it via the adapter output `Q`[cite: 1].
+- **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. [cite_start]Switches the physical output `Q1` based on the flip-flop's state[cite: 1].
 
 -----
 

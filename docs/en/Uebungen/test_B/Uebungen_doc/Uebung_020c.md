@@ -17,8 +17,8 @@ Using the standardized timer block `E_TON`.
 
 ![Uebung_020c_network](./Uebung_020c_network.svg)
 
-* **`E_TON`**: Timer ON-Delay (Event-based).
-* **Parameter `PT`**: Preset Time (here 5 seconds).
+- **`E_TON`**: Timer ON-Delay (Event-based).
+- **Parameter `PT`**: Preset Time (here 5 seconds).
 
 -----
 
@@ -26,9 +26,9 @@ Using the standardized timer block `E_TON`.
 
 This function block significantly simplifies the setup from Exercise 020b:
 
-* Input `I1` becomes TRUE ➡️ Timer starts.
-* After 5 seconds, output `Q` becomes TRUE.
-* Input `I1` becomes FALSE ➡️ Timer stops, output immediately becomes FALSE.
+- Input `I1` becomes TRUE ➡️ Timer starts.
+- After 5 seconds, output `Q` becomes TRUE.
+- Input `I1` becomes FALSE ➡️ Timer stops, output immediately becomes FALSE.
 
 This is the standard way to implement delays in 4diac.
 
@@ -36,6 +36,6 @@ This is the standard way to implement delays in 4diac.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

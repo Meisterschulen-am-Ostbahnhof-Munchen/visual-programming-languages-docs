@@ -13,32 +13,32 @@ The raw integer value (UINT) is converted into a real numerical value (e.g., m/s
 
 ### Sub-Blocks: I_WBSD
 
-* **Type**: `isobus::tecu::I_WBSD`
-* **Internal FBs Used**: (none)
-* **Parameters**:
-* `QI` = `TRUE` (activates the block)
-* **Event Output/Input**:
-* Event output `IND` – reports a new valid value
-* **Data Output/Input**:
-* Data output `WHEELBASEDMACHINESPEED` (UINT) – raw value of the wheel speed
-* **Functionality**:
+- **Type**: `isobus::tecu::I_WBSD`
+- **Internal FBs Used**: (none)
+- **Parameters**:
+- `QI` = `TRUE` (activates the block)
+- **Event Output/Input**:
+- Event output `IND` – reports a new valid value
+- **Data Output/Input**:
+- Data output `WHEELBASEDMACHINESPEED` (UINT) – raw value of the wheel speed
+- **Functionality**:
 
 The block reads the current value of the wheel-based machine speed (WBSD) via the ISOBUS fieldbus. The event `IND` is triggered when a new, valid measurement is obtained.
 
 ### Sub-Blocks: FIELDBUS_UINT_TO_SIGNAL_SCALED
 
-* **Type**: `logiBUS::signalprocessing::fieldbus::FIELDBUS_UINT_TO_SIGNAL_SCALED`
-* **Internal Function Blocks Used**: (none)
-* **Parameters**:
-* `SCALE` = `0.001`
-* `OFFSET` = `0`
-* **Event Input/Output**:
-* Event input `REQ` – starts the conversion
-* Event output `CNF` – confirms completion
-* **Data Input/Output**:
-* Data input `IN` (UINT) – raw value
-* Data output `OUT` (REAL) – Converted Scaled Value
-* **How it Works**:
+- **Type**: `logiBUS::signalprocessing::fieldbus::FIELDBUS_UINT_TO_SIGNAL_SCALED`
+- **Internal Function Blocks Used**: (none)
+- **Parameters**:
+- `SCALE` = `0.001`
+- `OFFSET` = `0`
+- **Event Input/Output**:
+- Event input `REQ` – starts the conversion
+- Event output `CNF` – confirms completion
+- **Data Input/Output**:
+- Data input `IN` (UINT) – raw value
+- Data output `OUT` (REAL) – Converted Scaled Value
+- **How it Works**:
 
 This module converts an unsigned 16-bit integer (UINT) into a real number. The conversion formula is:
 
@@ -48,15 +48,15 @@ For example, mm/s is converted to m/s using `SCALE = 0.001` and `OFFSET = 0`.
 
 ### Sub-Blocks: Q_NumericValue
 
-* **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
-* **Internal Function Blocks Used**: (none)
-* **Parameters**:
-* `stObj` = `NumberVariable_Wheel_based_machine_speed` (reference to the object definition in the UT pool)
-* **Event Input/Output**:
-* Event input `REQ` – updates the value on the UT
-* **Data Input/Output**:
-* Data input `rPhys` (REAL) – physical value displayed on the UT
-* **Functionality**:
+- **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
+- **Internal Function Blocks Used**: (none)
+- **Parameters**:
+- `stObj` = `NumberVariable_Wheel_based_machine_speed` (reference to the object definition in the UT pool)
+- **Event Input/Output**:
+- Event input `REQ` – updates the value on the UT
+- **Data Input/Output**:
+- Data input `rPhys` (REAL) – physical value displayed on the UT
+- **Functionality**:
 
 The block displays the passed physical value (REAL) on the Universal Terminal via the ISOBUS UT standard. The specific representation (e.g., unit, decimal places) is determined by the object definition `NumberVariable_Wheel_based_machine_speed` referenced in the pool.
 
@@ -100,6 +100,6 @@ Exercise **Exercise_070c** demonstrates a complete data path from fieldbus data 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -19,21 +19,21 @@ Generation of time-delayed pulses based on the GBSD distance value.
 
 All modules react to the same distance value from the radar (`I_GBSD`). However, they differ in the parameter **`DIST_OFF`** (offset):
 
-* `Q1`: Offset 0 mm.
-* `Q2`: Offset 1000 mm.
-* `Q3`: Offset 2000 mm.
-* `Q4`: Offset 3000 mm.
+- `Q1`: Offset 0 mm.
+- `Q2`: Offset 1000 mm.
+- `Q3`: Offset 2000 mm.
+- `Q4`: Offset 3000 mm.
 
 This creates a "wandering pattern": As the machine moves, the outputs switch on and off sequentially, each one meter offset from the distance traveled.
 
-* `Q1`: Offset 0 mm.
-* `Q2`: Offset 1000 mm.
-* `Q3`: Offset 2000 mm.
-* `Q4`: Offset 3000 mm.
+- `Q1`: Offset 0 mm.
+- `Q2`: Offset 1000 mm.
+- `Q3`: Offset 2000 mm.
+- `Q4`: Offset 3000 mm.
 
 This results in a "wandering pattern": As the machine moves, the outputs switch on and off sequentially, each one meter offset from the distance traveled.
 
-* ![Uebung_072b_network](./Uebung_072b_network.svg): Offset 0 mm ... -----
+- ![Uebung_072b_network](./Uebung_072b_network.svg): Offset 0 mm ... -----
 
 ## Application Example
 

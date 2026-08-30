@@ -31,4 +31,4 @@ As soon as an event (`E1`) arrives at `AD_IN` along with data (`D1`), the DWORD 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_011_AUDI](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_011_AUDI.md)
+- [Exercise_011_AUDI](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_011_AUDI.md)

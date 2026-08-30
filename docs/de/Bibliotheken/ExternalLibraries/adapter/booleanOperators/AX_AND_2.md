@@ -67,9 +67,9 @@ Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.m
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
 
 ## Änderungserkennung
 

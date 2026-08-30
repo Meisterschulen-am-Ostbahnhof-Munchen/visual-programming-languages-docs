@@ -48,7 +48,7 @@ In this way, the event streams are merged while preserving information about the
 
 ## 🛠️ Related Exercises
 
-* [Exercise_173](../../../Uebungen/test_B/Uebungen_doc/Uebung_173.md)
+- [Exercise_173](../../../Uebungen/test_B/Uebungen_doc/Uebung_173.md)
 
 ## Conclusion
 

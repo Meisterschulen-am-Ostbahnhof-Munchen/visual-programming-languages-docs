@@ -52,8 +52,8 @@ Der Baustein implementiert eine endliche Zustandsmaschine (ECC) mit folgenden Al
 
 Ablauf:
 
-1. **Ereignis `CU`** (und `CV < 65535`): Übergang in Zustand `CU`. Es wird der Zähler inkrementiert, `Q` neu berechnet und `CV.E1` sowie das Ereignis `CUO` ausgegeben.  
-   - Wenn sich `Q` gegenüber dem letztgespeicherten Wert (`Q_OLD`) geändert hat, wechselt der Zustand nach `EMIT_Q`.  
+1. **Ereignis `CU`** (und `CV < 65535`): Übergang in Zustand `CU`. Es wird der Zähler inkrementiert, `Q` neu berechnet und `CV.E1` sowie das Ereignis `CUO` ausgegeben.
+   - Wenn sich `Q` gegenüber dem letztgespeicherten Wert (`Q_OLD`) geändert hat, wechselt der Zustand nach `EMIT_Q`.
    - Andernfalls kehrt der Baustein in den Zustand `START` zurück.
 
 2. **Ereignis `R`**: Übergang in Zustand `R`. Der Zähler wird zurückgesetzt, `Q` neu berechnet und `CV.E1` sowie `RO` ausgegeben. Anschließend wird analog zu `CU` entschieden, ob `EMIT_Q` erreicht wird oder zurück nach `START`.
@@ -79,11 +79,11 @@ Ablauf:
 | `UPDATE_PV` | Neuberechnung nach PV-Änderung | `UPDATE`-Algorithmus | `[Q != Q_OLD]` → `EMIT_Q`, `[Q == Q_OLD]` → `START` |
 | `EMIT_Q` | Emission des Q-Ereignisses | `SAVE_Q`-Algorithmus, sende `Q.E1` | 1 → `START` |
 
-Die Transitionen sind durch Bedingungen ausgelöst:  
+Die Transitionen sind durch Bedingungen ausgelöst:
 
-- `CU[CV.D1 < 65535]`: Ereignis CU, wenn Zähler nicht am Maximum.  
-- `R`: Ereignis R, immer möglich.  
-- `PV.E1`: Ereignis vom Adapter PV.  
+- `CU[CV.D1 < 65535]`: Ereignis CU, wenn Zähler nicht am Maximum.
+- `R`: Ereignis R, immer möglich.
+- `PV.E1`: Ereignis vom Adapter PV.
 - `[Q.D1 <> Q_OLD]` / `[Q.D1 = Q_OLD]`: Vergleich des aktuellen Q mit dem gespeicherten vorherigen Wert.
 
 ## Anwendungsszenarien
@@ -113,4 +113,4 @@ Der `AUI_CTU` ist ein moderner, adapterbasierter Aufwärtszähler, der sich durc
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

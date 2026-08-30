@@ -17,10 +17,10 @@ Combination of individual outputs and a collective message.
 
 ![Uebung_160_AX_network](./Uebung_160_AX_network.svg)
 
-* **`I1`**: Pushbutton for Left (`Q5`).
-* **`I2`**: Button for right (`Q6`).
-* **`AX_OR_2`**: Combines both signals.
-* **`Q56`**: A third output.
+- **`I1`**: Pushbutton for Left (`Q5`).
+- **`I2`**: Button for right (`Q6`).
+- **`AX_OR_2`**: Combines both signals.
+- **`Q56`**: A third output.
 
 -----
 

@@ -18,11 +18,11 @@ Die Subapplikation `Uebung_020c3_AX.SUB` nutzt einen `E_CYCLE` Baustein, um den 
 
 ![Uebung_020c3_AX_network](./Uebung_020c3_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Liest den Eingangszustand über einen AX-Adapter ein.
-  * **`AX_FB_TON`**: Der Einschaltverzögerungs-Timer mit Adapter-Schnittstellen. Er benötigt zyklische Ereignisse am `REQ`-Eingang.
-  * **`E_CYCLE`**: Erzeugt alle 500ms ein Ereignis, solange der Eingang `I1` aktiv ist.
-  * **`AX_SWITCH`**: Startet und stoppt den `E_CYCLE` basierend auf dem Eingangszustand.
-  * **`DigitalOutput_Q1`**: Gibt das verzögerte Signal über einen AX-Adapter aus.
+  - **`DigitalInput_I1`**: Liest den Eingangszustand über einen AX-Adapter ein.
+  - **`AX_FB_TON`**: Der Einschaltverzögerungs-Timer mit Adapter-Schnittstellen. Er benötigt zyklische Ereignisse am `REQ`-Eingang.
+  - **`E_CYCLE`**: Erzeugt alle 500ms ein Ereignis, solange der Eingang `I1` aktiv ist.
+  - **`AX_SWITCH`**: Startet und stoppt den `E_CYCLE` basierend auf dem Eingangszustand.
+  - **`DigitalOutput_Q1`**: Gibt das verzögerte Signal über einen AX-Adapter aus.
 
 -----
 

@@ -68,7 +68,7 @@ The **AD_D_FF** is a lightweight, adapter-based D flip-flop device for the 4diac
 
 The **AD_D_FF** is a lightweight, adapter-based D flip-flop device for the 4diac IDE. ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

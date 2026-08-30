@@ -72,8 +72,8 @@ Compared to simple digital input blocks, Funk_IXA offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
-* [Exercise_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
+- [Exercise_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
+- [Exercise_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
 
 ## Conclusion
 

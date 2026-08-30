@@ -10,20 +10,20 @@ The OFFSET function block is used to determine and apply an offset value. When a
 
 ### **Event Inputs**
 
-* **REQ**: Starts the normal execution of the block. Linked to the data input `IN`.
+- **REQ**: Starts the normal execution of the block. Linked to the data input `IN`.
 
 ### **Event Outputs**
 
-* **CNF**: Signals the completion of the calculation. Linked to the data outputs `OUT` and `FIRST`.
+- **CNF**: Signals the completion of the calculation. Linked to the data outputs `OUT` and `FIRST`.
 
 ### **Data Inputs**
 
-* **IN** (DINT): The input value. On the first call where this value is greater than 0, it is stored as the reference value (`FIRST`). Initial value is 0.
+- **IN** (DINT): The input value. On the first call where this value is greater than 0, it is stored as the reference value (`FIRST`). Initial value is 0.
 
 ### **Data Outputs**
 
-* **OUT** (DINT): The result of the calculation `IN - FIRST`. Initial value is 0.
-* **FIRST** (DINT): The reference value stored on the first relevant call. Initial value is 0.
+- **OUT** (DINT): The result of the calculation `IN - FIRST`. Initial value is 0.
+- **FIRST** (DINT): The reference value stored on the first relevant call. Initial value is 0.
 
 ### **Adapters**
 
@@ -41,27 +41,27 @@ Upon each occurrence of a `REQ` event, the algorithm `REQ` is executed:
 
 ## Technical Features
 
-* The reference value `FIRST` is set exactly once, specifically during the first `REQ` event where the data input `IN` has a value greater than 0. As long as `IN` is 0 or less during the initial calls, `FIRST` remains 0.
-* Once `FIRST` has been set, it remains unchanged for the entire duration of the function block's runtime.
-* The calculation `OUT = IN - FIRST` occurs with *every* call, even if `FIRST` is still 0. This means that `OUT` remains identical to `IN` until the reference value is set.
+- The reference value `FIRST` is set exactly once, specifically during the first `REQ` event where the data input `IN` has a value greater than 0. As long as `IN` is 0 or less during the initial calls, `FIRST` remains 0.
+- Once `FIRST` has been set, it remains unchanged for the entire duration of the function block's runtime.
+- The calculation `OUT = IN - FIRST` occurs with *every* call, even if `FIRST` is still 0. This means that `OUT` remains identical to `IN` until the reference value is set.
 
 ## State Overview
 
 The function block has a single, eponymous state:
 
-* **REQ:** This state is always active. Every incoming `REQ` event triggers the execution of the associated algorithm and immediately triggers the `CNF` event. There are no internal state transitions.
+- **REQ:** This state is always active. Every incoming `REQ` event triggers the execution of the associated algorithm and immediately triggers the `CNF` event. There are no internal state transitions.
 
 ## Application Scenarios
 
-* **Incremental Path or Position Measurement:** Setting a zero point (`FIRST`) after a reference run and subsequent measurement of the relative movement (`OUT`).
-* **Compensation for Base Loads or Zero Deviations:** Capture an initial base value (e.g., sensor base load) and calculate the pure change relative to this base value.
-* **Relative Time Measurement:** Store a start time and calculate the elapsed time since that start.
+- **Incremental Path or Position Measurement:** Setting a zero point (`FIRST`) after a reference run and subsequent measurement of the relative movement (`OUT`).
+- **Compensation for Base Loads or Zero Deviations:** Capture an initial base value (e.g., sensor base load) and calculate the pure change relative to this base value.
+- **Relative Time Measurement:** Store a start time and calculate the elapsed time since that start.
 
 ## ⚖️ Comparison with Similar Function Blocks
 
-* **SUB / DINT_SUB:** A simple subtractor always calculates the difference between two current input values. OFFSET, on the other hand, stores one of the values internally as a constant reference point.
-* **DELAY / TON:** Time delay functions operate on the time axis. OFFSET works with data values and has no time-based behavior.
-* **SR / RS:** Memory functions (Set/Reset) hold a binary state. OFFSET stores an integer value (`DINT`) and uses it for an arithmetic operation.
+- **SUB / DINT_SUB:** A simple subtractor always calculates the difference between two current input values. OFFSET, on the other hand, stores one of the values internally as a constant reference point.
+- **DELAY / TON:** Time delay functions operate on the time axis. OFFSET works with data values and has no time-based behavior.
+- **SR / RS:** Memory functions (Set/Reset) hold a binary state. OFFSET stores an integer value (`DINT`) and uses it for an arithmetic operation.
 
 ## Conclusion
 

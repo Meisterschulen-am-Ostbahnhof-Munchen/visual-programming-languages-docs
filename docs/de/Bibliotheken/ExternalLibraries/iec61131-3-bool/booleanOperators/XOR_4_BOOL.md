@@ -13,22 +13,22 @@ Der Funktionsblock `XOR_4_BOOL` ist ein Standardbaustein zur Berechnung der logi
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der XOR-Verknüpfung aus. Es ist mit allen vier Dateneingängen (`IN1` bis `IN4`) verknüpft.
+-   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der XOR-Verknüpfung aus. Es ist mit allen vier Dateneingängen (`IN1` bis `IN4`) verknüpft.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
+-   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
 
-*   **IN1** (BOOL): XOR-Eingang 1.
-*   **IN2** (BOOL): XOR-Eingang 2.
-*   **IN3** (BOOL): XOR-Eingang 3.
-*   **IN4** (BOOL): XOR-Eingang 4.
+-   **IN1** (BOOL): XOR-Eingang 1.
+-   **IN2** (BOOL): XOR-Eingang 2.
+-   **IN3** (BOOL): XOR-Eingang 3.
+-   **IN4** (BOOL): XOR-Eingang 4.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (BOOL): Ergebnis der XOR-Verknüpfung aller aktiven Eingänge.
+-   **OUT** (BOOL): Ergebnis der XOR-Verknüpfung aller aktiven Eingänge.
 
 ### **Adapter**
 
@@ -40,9 +40,9 @@ Bei Eintreffen des Ereignisses `REQ` liest der Baustein die Werte aller vier boo
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist mit dem Attribut `eclipse4diac::core::GenericClassName` als `'GEN_XOR'` gekennzeichnet. Dies ermöglicht eine flexible Instanziierung und Wiederverwendung innerhalb der 4diac-IDE.
-*   **Ereignisgesteuerte Ausführung:** Die Funktionalität ist streng ereignisgesteuert. Eine Berechnung findet nur bei einem eingehenden `REQ`-Ereignis statt.
-*   **Vier Eingänge:** Im Gegensatz zu einem einfachen 2-Eingang-XOR bietet dieser Baustein die direkte Verarbeitung von bis zu vier Signalen ohne zusätzliche Verschachtelung.
+-   **Generischer Baustein:** Der Block ist mit dem Attribut `eclipse4diac::core::GenericClassName` als `'GEN_XOR'` gekennzeichnet. Dies ermöglicht eine flexible Instanziierung und Wiederverwendung innerhalb der 4diac-IDE.
+-   **Ereignisgesteuerte Ausführung:** Die Funktionalität ist streng ereignisgesteuert. Eine Berechnung findet nur bei einem eingehenden `REQ`-Ereignis statt.
+-   **Vier Eingänge:** Im Gegensatz zu einem einfachen 2-Eingang-XOR bietet dieser Baustein die direkte Verarbeitung von bis zu vier Signalen ohne zusätzliche Verschachtelung.
 
 ## Zustandsübersicht
 
@@ -50,15 +50,15 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 
 ## Anwendungsszenarien
 
-*   **Paritätsprüfung:** Erkennung, ob eine ungerade Anzahl von Bedingungen (z.B. Fehlermeldungen, Grenzwertüberschreitungen) in einer Gruppe von vier Signalen aktiv ist.
-*   **Steuerungslogik:** Implementierung von Sicherheitsschaltungen, bei denen genau eine von mehreren möglichen Eingangskombinationen eine Aktion auslösen darf.
-*   **Verschachtelte Logikvereinfachung:** Ersetzung mehrerer hintereinandergeschalteter 2-Eingang-XOR-Bausteine durch einen einzigen `XOR_4_BOOL`-Block für bessere Übersichtlichkeit im Funktionsplan (FBD).
+-   **Paritätsprüfung:** Erkennung, ob eine ungerade Anzahl von Bedingungen (z.B. Fehlermeldungen, Grenzwertüberschreitungen) in einer Gruppe von vier Signalen aktiv ist.
+-   **Steuerungslogik:** Implementierung von Sicherheitsschaltungen, bei denen genau eine von mehreren möglichen Eingangskombinationen eine Aktion auslösen darf.
+-   **Verschachtelte Logikvereinfachung:** Ersetzung mehrerer hintereinandergeschalteter 2-Eingang-XOR-Bausteine durch einen einzigen `XOR_4_BOOL`-Block für bessere Übersichtlichkeit im Funktionsplan (FBD).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Standard XOR (2 Eingänge):** Ein klassischer XOR-Baustein mit nur zwei Eingängen. Der `XOR_4_BOOL` konsolidiert die Funktion mehrerer solcher Blöcke. Siehe: [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)
-*   **OR_4_BOOL / AND_4_BOOL:** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung über vier Eingänge. Die XOR-Verknüpfung unterscheidet sich fundamental, da sie den Fall, dass alle Eingänge `TRUE` sind, als `FALSE` bewertet.
-*   **Parity-Check Blöcke:** Spezialisierte Blöcke zur Paritätsberechnung existieren oft für Datenworte (BYTE, WORD). `XOR_4_BOOL` bietet diese Funktion für einzelne Bits/Bool-Werte.
+-   **Standard XOR (2 Eingänge):** Ein klassischer XOR-Baustein mit nur zwei Eingängen. Der `XOR_4_BOOL` konsolidiert die Funktion mehrerer solcher Blöcke. Siehe: [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)
+-   **OR_4_BOOL / AND_4_BOOL:** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung über vier Eingänge. Die XOR-Verknüpfung unterscheidet sich fundamental, da sie den Fall, dass alle Eingänge `TRUE` sind, als `FALSE` bewertet.
+-   **Parity-Check Blöcke:** Spezialisierte Blöcke zur Paritätsberechnung existieren oft für Datenworte (BYTE, WORD). `XOR_4_BOOL` bietet diese Funktion für einzelne Bits/Bool-Werte.
 
 ## Fazit
 
@@ -68,4 +68,4 @@ Der `XOR_4_BOOL` ist ein nützlicher und effizienter Standardbaustein für die I
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

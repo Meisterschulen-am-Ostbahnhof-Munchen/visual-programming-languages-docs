@@ -20,4 +20,4 @@ When used as a literal, a prefix can be used, e.g., `SINT#...`.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_039_sub_NumbDisplay](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
+- [Exercise_039_sub_NumbDisplay](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)

@@ -74,4 +74,4 @@ The NVS_AR2 function block offers a clean, adapter-based interface for asynchron
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

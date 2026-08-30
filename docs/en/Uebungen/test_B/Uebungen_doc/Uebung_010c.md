@@ -6,7 +6,7 @@ This article describes the logiBUS® exercise `Uebung_010c`. Previously, the key
 
 ![Uebung_010c_network](./Uebung_010c_network.svg)
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -22,9 +22,9 @@ Feedback to the operator through a color change of the virtual key.
 
 ### Function Blocks (FBs)
 
-* **`SoftKey_F1`**: Input block.
-* **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. [cite_start]It changes the background of the softkey on the terminal (green when activated, white when idle)[cite: 1].
-* **`DigitalOutput_Q1`**: The physical output.
+- **`SoftKey_F1`**: Input block.
+- **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. [cite_start]It changes the background of the softkey on the terminal (green when activated, white when idle)[cite: 1].
+- **`DigitalOutput_Q1`**: The physical output.
 
 -----
 

@@ -16,5 +16,4 @@ Dies wird in der Übung 006a3 genutzt, um einen Motor bei jedem Startvorgang aut
 
 ![Uebung_006a3_sub_network](./Uebung_006a3_sub_network.svg)
 
-* [Uebung_006a3](Uebung_006a3.md)
-
+- [Uebung_006a3](Uebung_006a3.md)

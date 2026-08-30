@@ -53,7 +53,7 @@ The function block has no internal state. The conversion occurs immediately upon
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

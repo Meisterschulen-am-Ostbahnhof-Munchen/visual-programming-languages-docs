@@ -13,26 +13,26 @@ Der Funktionsblock `OR_8_BOOL` ist ein standardisierter Baustein zur Berechnung 
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden alle acht Daten-Eingänge (`IN1` bis `IN8`) ausgelesen und die ODER-Operation berechnet.
+-   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden alle acht Daten-Eingänge (`IN1` bis `IN8`) ausgelesen und die ODER-Operation berechnet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
+-   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
 
-*   **IN1** (BOOL): ODER-Eingang 1.
-*   **IN2** (BOOL): ODER-Eingang 2.
-*   **IN3** (BOOL): ODER-Eingang 3.
-*   **IN4** (BOOL): ODER-Eingang 4.
-*   **IN5** (BOOL): ODER-Eingang 5.
-*   **IN6** (BOOL): ODER-Eingang 6.
-*   **IN7** (BOOL): ODER-Eingang 7.
-*   **IN8** (BOOL): ODER-Eingang 8.
+-   **IN1** (BOOL): ODER-Eingang 1.
+-   **IN2** (BOOL): ODER-Eingang 2.
+-   **IN3** (BOOL): ODER-Eingang 3.
+-   **IN4** (BOOL): ODER-Eingang 4.
+-   **IN5** (BOOL): ODER-Eingang 5.
+-   **IN6** (BOOL): ODER-Eingang 6.
+-   **IN7** (BOOL): ODER-Eingang 7.
+-   **IN8** (BOOL): ODER-Eingang 8.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (BOOL): Ergebnis der ODER-Verknüpfung aller acht Eingänge. Der Ausgang ist `TRUE` (1), wenn mindestens einer der Eingänge `IN1` bis `IN8` den Wert `TRUE` hat. Andernfalls ist der Ausgang `FALSE` (0).
+-   **OUT** (BOOL): Ergebnis der ODER-Verknüpfung aller acht Eingänge. Der Ausgang ist `TRUE` (1), wenn mindestens einer der Eingänge `IN1` bis `IN8` den Wert `TRUE` hat. Andernfalls ist der Ausgang `FALSE` (0).
 
 ### **Adapter**
 
@@ -49,9 +49,9 @@ Die Funktionsweise ist ereignisgesteuert und folgt einem einfachen Request-Confi
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist als generischer Baustein (`GEN_OR`) gekennzeichnet, was bedeutet, dass er als Basis für die Erstellung ähnlicher ODER-Bausteine mit einer anderen Anzahl von Eingängen dienen kann.
-*   **Standardkonform:** Er ist gemäß der Norm IEC 61131-3 klassifiziert und implementiert eine standardisierte boolesche Funktion.
-*   **Deterministisches Verhalten:** Die Ausführung ist deterministisch und führt zu keiner internen Zustandsspeicherung zwischen den Aufrufen.
+-   **Generischer Baustein:** Der Block ist als generischer Baustein (`GEN_OR`) gekennzeichnet, was bedeutet, dass er als Basis für die Erstellung ähnlicher ODER-Bausteine mit einer anderen Anzahl von Eingängen dienen kann.
+-   **Standardkonform:** Er ist gemäß der Norm IEC 61131-3 klassifiziert und implementiert eine standardisierte boolesche Funktion.
+-   **Deterministisches Verhalten:** Die Ausführung ist deterministisch und führt zu keiner internen Zustandsspeicherung zwischen den Aufrufen.
 
 ## Zustandsübersicht
 
@@ -61,15 +61,15 @@ Der Funktionsblock `OR_8_BOOL` ist zustandslos (kombinatorische Logik). Er besit
 
 Typische Anwendungen sind:
 
-*   **Überwachungslogik:** Zusammenfassen mehrerer Fehler- oder Warnsignale (z.B. von verschiedenen Sensoren oder Teilsystemen) zu einem gemeinsamen Alarmausgang.
-*   **Freigabelogik:** Prüfen, ob mindestens eine von mehreren möglichen Freigabebedingungen (z.B. "Manuell freigegeben" ODER "Automatik freigegeben") erfüllt ist.
-*   **Verknüpfung von Tastereingaben:** In Bedienpanels, um eine Aktion auszulösen, wenn einer von mehreren Tastern gedrückt wird.
+-   **Überwachungslogik:** Zusammenfassen mehrerer Fehler- oder Warnsignale (z.B. von verschiedenen Sensoren oder Teilsystemen) zu einem gemeinsamen Alarmausgang.
+-   **Freigabelogik:** Prüfen, ob mindestens eine von mehreren möglichen Freigabebedingungen (z.B. "Manuell freigegeben" ODER "Automatik freigegeben") erfüllt ist.
+-   **Verknüpfung von Tastereingaben:** In Bedienpanels, um eine Aktion auszulösen, wenn einer von mehreren Tastern gedrückt wird.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`OR_2_BOOL`, `OR_4_BOOL`:** Dies sind baugleiche Funktionsblöcke, die jedoch nur zwei bzw. vier Eingänge verknüpfen. `OR_8_BOOL` bietet eine höhere Eingangsanzahl, ohne mehrere Instanzen von Blöcken mit weniger Eingängen kaskadieren zu müssen. Siehe: [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)
-*   **`AND_n_BOOL`:** Führt die logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits ein einziger `TRUE`-Eingang ausreicht.
-*   **`XOR_n_BOOL`:** Führt die exklusive ODER-Verknüpfung (XOR) durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist, was sich von der inklusiven ODER-Logik unterscheidet.
+-   **`OR_2_BOOL`, `OR_4_BOOL`:** Dies sind baugleiche Funktionsblöcke, die jedoch nur zwei bzw. vier Eingänge verknüpfen. `OR_8_BOOL` bietet eine höhere Eingangsanzahl, ohne mehrere Instanzen von Blöcken mit weniger Eingängen kaskadieren zu müssen. Siehe: [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)
+-   **`AND_n_BOOL`:** Führt die logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits ein einziger `TRUE`-Eingang ausreicht.
+-   **`XOR_n_BOOL`:** Führt die exklusive ODER-Verknüpfung (XOR) durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist, was sich von der inklusiven ODER-Logik unterscheidet.
 
 ## Fazit
 

@@ -52,9 +52,9 @@ Often, a function like `DINT_TO_TIME` is sought to convert a numerical value (e.
 
 Use the function block **`F_MULTIME`** (from the category `arithmetic`) for this:
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with similar function blocks
 

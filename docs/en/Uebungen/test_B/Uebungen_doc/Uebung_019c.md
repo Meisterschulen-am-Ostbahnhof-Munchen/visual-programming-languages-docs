@@ -17,9 +17,9 @@ Implementation of conditional navigation control. Switching between screen pages
 
 ![Uebung_019c_network](./Uebung_019c_network.svg)
 
-* **`Alarmeingang`**: A physical sensor (`I3`). As long as this sensor is in `TRUE`, an alarm state is in effect.
-* **`E_SWITCH` (various)**: Check whether the alarm input is active before each action.
-* **`ACK`**: A physical acknowledge button (`I4`) instead of a softkey.
+- **`Alarmeingang`**: A physical sensor (`I3`). As long as this sensor is in `TRUE`, an alarm state is in effect.
+- **`E_SWITCH` (various)**: Check whether the alarm input is active before each action.
+- **`ACK`**: A physical acknowledge button (`I4`) instead of a softkey.
 
 -----
 
@@ -29,8 +29,8 @@ The switches block the normal navigation commands:
 
 1. If the user presses `I1` (Mask 1), the event is first sent to `E_SWITCH`.
 2. The switch checks `Alarmeingang`.
-* If **no** alarm is present (`G=FALSE`), the event is passed to `EO0` ➡️ `F_SEL_E_4`. The page changes.
-* If an alarm is active (`G=TRUE`), the event lands at `EO1` (not connected). The page change is **ignored**.
+- If **no** alarm is present (`G=FALSE`), the event is passed to `EO0` ➡️ `F_SEL_E_4`. The page changes.
+- If an alarm is active (`G=TRUE`), the event lands at `EO1` (not connected). The page change is **ignored**.
 3. If an alarm occurs, the system immediately switches to the alarm screen and activates the horn.
 4. Only when the alarm sensor (`I3`) is FALSE **AND** the user presses the acknowledge button (`I4`) is the memory reset and navigation enabled again.
 

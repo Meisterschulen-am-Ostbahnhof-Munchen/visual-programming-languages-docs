@@ -66,8 +66,8 @@ When such an event occurs, the corresponding input variable (`IN0`, `IN1`, or `I
 
 ## 🛠️ Related Exercises
 
-* [Exercise_015a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
-* [Exercise_016a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
+- [Exercise_015a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+- [Exercise_016a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Conclusion
 
@@ -77,4 +77,4 @@ The `F_SEL_E_3` is an efficient and flexible component for applications that req
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

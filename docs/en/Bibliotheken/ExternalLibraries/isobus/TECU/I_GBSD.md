@@ -93,11 +93,11 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65097) for precise mot
 
 ## 🛠️ Related exercises
 
-* [Exercise_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
-* [Exercise_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Exercise_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
-* [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
+- [Exercise_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Exercise_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

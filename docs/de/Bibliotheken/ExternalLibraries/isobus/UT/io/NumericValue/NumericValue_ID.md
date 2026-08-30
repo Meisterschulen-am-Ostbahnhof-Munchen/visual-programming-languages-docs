@@ -78,16 +78,16 @@ Im Vergleich zu einfachen Eingabeblöcken bietet NumericValue_ID erweiterte Serv
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)
-* [Uebung_012](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
-* [Uebung_012a_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
-* [Uebung_012b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
-* [Uebung_012c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
-* [Uebung_020c2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
-* [Uebung_034a1_Q1](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
-* [Uebung_034a1_Q2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
-* [Uebung_034a1_Q4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
-* [Uebung_103](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Uebung_011](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)
+- [Uebung_012](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+- [Uebung_012a_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
+- [Uebung_012b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
+- [Uebung_012c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
+- [Uebung_020c2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+- [Uebung_034a1_Q1](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
+- [Uebung_034a1_Q2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
+- [Uebung_034a1_Q4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
+- [Uebung_103](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
 
 ## Fazit
 

@@ -60,7 +60,7 @@ The internal logic of the function block (as of `events-3.0.0`) is incorrect and
 
 ## 🛠️ Related Exercises
 
-* [Exercise_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Exercise_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Conclusion
 

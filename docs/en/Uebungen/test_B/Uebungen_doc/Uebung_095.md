@@ -15,8 +15,8 @@ Use of the function block `E_SELECT`. This acts as a switch for incoming events 
 
 ![Uebung_095_network](./Uebung_095_network.svg)
 
-* Switch **I1** acts as a selector (`G`).
-* If **I1** is set to `FALSE`, only the event from button **I2** (`EI0`) is passed to the output.
-* If **I1** is set to `TRUE`, only the event from button **I3** (`EI1`) is passed to the output.
+- Switch **I1** acts as a selector (`G`).
+- If **I1** is set to `FALSE`, only the event from button **I2** (`EI0`) is passed to the output.
+- If **I1** is set to `TRUE`, only the event from button **I3** (`EI1`) is passed to the output.
 
 This allows a common function (here, switching `Q1`) to be triggered selectively by different sources, with the controller actively determining which source is currently "listening."

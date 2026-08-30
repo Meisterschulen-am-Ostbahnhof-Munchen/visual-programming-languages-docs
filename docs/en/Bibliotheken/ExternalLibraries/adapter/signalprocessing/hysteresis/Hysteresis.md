@@ -12,25 +12,25 @@ The function block `Hysteresis` serves as an analog-to-digital converter with an
 
 ### **Event Inputs**
 
-* **INIT**: Initializes the function block. Updates the output qualifier `QO` based on `QI`.
-* **REQ**: Triggers a calculation of the hysteresis state based on the current input values.
+- **INIT**: Initializes the function block. Updates the output qualifier `QO` based on `QI`.
+- **REQ**: Triggers a calculation of the hysteresis state based on the current input values.
 
 ### **Event Outputs**
 
-* **INITO**: Confirms completion of initialization or deinitialization.
-* **CNF**: Confirms execution of the calculation and signals that an updated output value is available.
+- **INITO**: Confirms completion of initialization or deinitialization.
+- **CNF**: Confirms execution of the calculation and signals that an updated output value is available.
 
 ### **Data Inputs**
 
-* **QI** (BOOL): Input event qualifier. Controls the validity of the input data and the activation of the function block.
-* **INPUT** (REAL): The analog input signal to be monitored.
-* **THRESHOLD** (REAL, default value: `0.0`): The midpoint of the hysteresis band (setpoint).
-* **HYSTERESIS** (REAL, default value: `0.1`): The total width of the hysteresis band.
+- **QI** (BOOL): Input event qualifier. Controls the validity of the input data and the activation of the function block.
+- **INPUT** (REAL): The analog input signal to be monitored.
+- **THRESHOLD** (REAL, default value: `0.0`): The midpoint of the hysteresis band (setpoint).
+- **HYSTERESIS** (REAL, default value: `0.1`): The total width of the hysteresis band.
 
 ### **Data Outputs**
 
-* **QO** (BOOL): Output event qualifier (indicates whether the function block is active and ready for operation).
-* **OUTPUT** (BOOL): The digital output signal of the hysteresis element.
+- **QO** (BOOL): Output event qualifier (indicates whether the function block is active and ready for operation).
+- **OUTPUT** (BOOL): The digital output signal of the hysteresis element.
 
 ### **Adapters**
 
@@ -43,8 +43,8 @@ The function block operates with a symmetrical hysteresis band around the define
 
 The switching thresholds are calculated as follows:
 
-* **Switch-on point:** $THRESHOLD + \frac{|HYSTERESIS|}{2.0}$
-* **Switch-off point:** $THRESHOLD - \frac{|HYSTERESIS|}{2.0}$
+- **Switch-on point:** $THRESHOLD + \frac{|HYSTERESIS|}{2.0}$
+- **Switch-off point:** $THRESHOLD - \frac{|HYSTERESIS|}{2.0}$
 
 ### Switching logic:
 
@@ -59,9 +59,9 @@ $$\text{INPUT} < \text{THRESHOLD} - \frac{|\text{HYSTERESIS}|}{2.0}$$
 * * * * * * * * * *
 ## Technische Besonderheiten
 
-*   **Schwingungsschutz:** Die Ausschaltbedingung verwendet eine strikte Ungleichung ($<$), während die Einschaltbedingung inklusiv ist ($\ge$). Dies verhindert Oszillationen exakt an den Grenzen des Hysteresebands.
-*   **Sicherheitsverriegelung über QI:** Der Ausgang `OUTPUT` kann nur dann den Zustand `TRUE` annehmen, wenn der Eingangs-Qualifier `QI` auf `TRUE` gesetzt ist. Ist `QI` im Zustand `FALSE`, bleibt der Ausgang gesperrt (`FALSE`).
-*   **Robustheit:** Durch die Verwendung von `ABS(HYSTERESIS)` im Algorithmus führt die Eingabe einer negativen Hysterese nicht zu einem Fehlverhalten des Bausteins.
+-   **Schwingungsschutz:** Die Ausschaltbedingung verwendet eine strikte Ungleichung ($<$), während die Einschaltbedingung inklusiv ist ($\ge$). Dies verhindert Oszillationen exakt an den Grenzen des Hysteresebands.
+-   **Sicherheitsverriegelung über QI:** Der Ausgang `OUTPUT` kann nur dann den Zustand `TRUE` annehmen, wenn der Eingangs-Qualifier `QI` auf `TRUE` gesetzt ist. Ist `QI` im Zustand `FALSE`, bleibt der Ausgang gesperrt (`FALSE`).
+-   **Robustheit:** Durch die Verwendung von `ABS(HYSTERESIS)` im Algorithmus führt die Eingabe einer negativen Hysterese nicht zu einem Fehlverhalten des Bausteins.
 * * * * * * * * * *
 ## Zustandsübersicht
 
@@ -75,9 +75,9 @@ Der Funktionsbaustein ist als Basic-FB mit einer Execution Control Chart (ECC) r
 * * * * * * * * * *
 ## Anwendungsszenarien
 
-*   **Zweipunktregler:** Temperaturregelung (z. B. Heizung ein bei $< 19^\circ\text{C}$, aus bei $> 21^\circ\text{C}$ with a threshold of $20^\circ\text{C}$ and a hysteresis of $2^\circ\text{C}$).
-* **Level Monitoring:** Activates a pump when a maximum level is reached and deactivates it when the minimum level is reached.
-* **Noise Reduction:** Digitizes noisy analog sensor signals (e.g., pressure or brightness sensors) to eliminate fluctuating signal levels at the output.
+-   **Zweipunktregler:** Temperaturregelung (z. B. Heizung ein bei $< 19^\circ\text{C}$, aus bei $> 21^\circ\text{C}$ with a threshold of $20^\circ\text{C}$ and a hysteresis of $2^\circ\text{C}$).
+- **Level Monitoring:** Activates a pump when a maximum level is reached and deactivates it when the minimum level is reached.
+- **Noise Reduction:** Digitizes noisy analog sensor signals (e.g., pressure or brightness sensors) to eliminate fluctuating signal levels at the output.
 * * * * * * * * * * *
 ## Comparison with Similar Components
 

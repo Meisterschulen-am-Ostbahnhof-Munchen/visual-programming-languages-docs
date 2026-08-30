@@ -28,10 +28,10 @@ Der Funktionsblock `AS_TO_AI` ist ein Composite-Funktionsblock, der einen AS-Ada
 
 ### **Adapter**
 
-- **AS_IN** (Socket, Typ: `adapter::types::unidirectional::AS`)  
+- **AS_IN** (Socket, Typ: `adapter::types::unidirectional::AS`)
   Erwartet einen SINT-Wert und ein zugehöriges Ereignis E1.
 
-- **AI_OUT** (Plug, Typ: `adapter::types::unidirectional::AI`)  
+- **AI_OUT** (Plug, Typ: `adapter::types::unidirectional::AI`)
   Stellt einen INT-Wert und ein Ereignis E1 bereit.
 
 ## Funktionsweise
@@ -50,14 +50,14 @@ Da es sich um einen Composite-Funktionsblock handelt, besitzt `AS_TO_AI` keine e
 
 ## Anwendungsszenarien
 
-- Ein Sensor liefert Daten über einen AS-Adapter (SINT), aber die angeschlossene Verarbeitungskomponente erwartet einen AI-Adapter (INT).  
-- Migration von 8‑Bit‑ zu 16‑Bit‑Datenpfaden, ohne die Quell‑ oder Zielkomponente zu ändern.  
+- Ein Sensor liefert Daten über einen AS-Adapter (SINT), aber die angeschlossene Verarbeitungskomponente erwartet einen AI-Adapter (INT).
+- Migration von 8‑Bit‑ zu 16‑Bit‑Datenpfaden, ohne die Quell‑ oder Zielkomponente zu ändern.
 - Prototyping und Systemintegration, wenn unterschiedliche Adapterversionen aufeinandertreffen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AI_TO_AS**: Führt die umgekehrte Konvertierung (INT → SINT) durch.  
-- **AI_TO_AD** o. Ä.: Konvertiert zwischen anderen ganzzahligen Datentypen (z. B. INT nach DINT).  
+- **AI_TO_AS**: Führt die umgekehrte Konvertierung (INT → SINT) durch.
+- **AI_TO_AD** o. Ä.: Konvertiert zwischen anderen ganzzahligen Datentypen (z. B. INT nach DINT).
 - Im Gegensatz zu diesen Bausteinen arbeitet `AS_TO_AI` verlustfrei, da der Zieltyp (INT) den Quelltyp (SINT) vollständig abbilden kann.
 
 ## Fazit
@@ -68,4 +68,4 @@ Der `AS_TO_AI`-Funktionsblock ist ein einfaches, aber effektives Werkzeug zur Si
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

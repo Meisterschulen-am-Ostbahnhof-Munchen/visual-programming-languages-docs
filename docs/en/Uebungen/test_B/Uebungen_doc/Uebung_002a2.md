@@ -15,9 +15,9 @@ The objective is to understand the use of generic function blocks (F-FBs) in IEC
 
 ![Uebung_002a2_network](./Uebung_002a2_network.svg)
 
-* **`DigitalInput_I1` & `DigitalInput_I2`**: Standard input blocks of type `logiBUS_IX`[cite: 1].
-* **`F_AND`**: A generic function block of type `F_AND`. [cite_start]It calculates the logical AND operation on its inputs `IN1` and `IN2` as soon as it receives an event at input `REQ`, and outputs the result at output `OUT` as well as an acknowledgment event at port `CNF`[cite: 1].
-* **`DigitalOutput_Q1`**: Standard output block of type `logiBUS_QX`[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Standard input blocks of type `logiBUS_IX`[cite: 1].
+- **`F_AND`**: A generic function block of type `F_AND`. [cite_start]It calculates the logical AND operation on its inputs `IN1` and `IN2` as soon as it receives an event at input `REQ`, and outputs the result at output `OUT` as well as an acknowledgment event at port `CNF`[cite: 1].
+- **`DigitalOutput_Q1`**: Standard output block of type `logiBUS_QX`[cite: 1].
 
 -----
 

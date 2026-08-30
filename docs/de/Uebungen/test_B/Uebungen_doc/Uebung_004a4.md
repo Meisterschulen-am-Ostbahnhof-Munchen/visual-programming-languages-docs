@@ -20,10 +20,10 @@ Das Ziel ist das Verständnis der sequenziellen Ereignis-Verarbeitung. Der `E_SP
 
 ![Uebung_004a4_network](./Uebung_004a4_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Der Event-Generator (Klick-Taster).
-  * **`E_SPLIT`**: Ein Ereignis-Verteiler. Er hat einen Eingang `EI` und zwei Ausgänge `EO1` und `EO2`.
-  * **`E_T_FF_Q1` & `E_T_FF_Q2`**: Zwei unabhängige Flip-Flops.
-  * **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Zwei physische Ausgänge.
+  - **`DigitalInput_CLK_I1`**: Der Event-Generator (Klick-Taster).
+  - **`E_SPLIT`**: Ein Ereignis-Verteiler. Er hat einen Eingang `EI` und zwei Ausgänge `EO1` und `EO2`.
+  - **`E_T_FF_Q1` & `E_T_FF_Q2`**: Zwei unabhängige Flip-Flops.
+  - **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Zwei physische Ausgänge.
 
 -----
 

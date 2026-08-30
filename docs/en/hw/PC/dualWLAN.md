@@ -37,8 +37,8 @@ These adapters are tested under both Windows 10 and Ubuntu 22.04 LTS to evaluate
 
 ### Table
 
-* Works under Windows 10 without driver installation
-* Works under Ubuntu 22.04 LTS without driver installation
+- Works under Windows 10 without driver installation
+- Works under Ubuntu 22.04 LTS without driver installation
 
 | Type | Link | Windows 10 | Ubuntu 22.04 LTS | CCI.OS-2.0.3 | CCI.OS-3.3.0 |
 | --- | --- | --- | --- | --- | --- |

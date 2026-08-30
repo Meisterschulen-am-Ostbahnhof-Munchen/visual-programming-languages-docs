@@ -13,25 +13,25 @@ Der Funktionsblock `XOR_7_BOOL` ist ein generischer Baustein zur Berechnung der 
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Normal Execution Request):** Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden alle sieben Daten-Eingänge (`IN1` bis `IN7`) ausgelesen und die XOR-Berechnung durchgeführt.
+-   **REQ (Normal Execution Request):** Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden alle sieben Daten-Eingänge (`IN1` bis `IN7`) ausgelesen und die XOR-Berechnung durchgeführt.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Execution Confirmation):** Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Datenausgang `OUT` ausgegeben.
+-   **CNF (Execution Confirmation):** Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Datenausgang `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
 
-*   **IN1 (XOR input 1):** Boolescher Eingang 1.
-*   **IN2 (XOR input 2):** Boolescher Eingang 2.
-*   **IN3 (XOR input 3):** Boolescher Eingang 3.
-*   **IN4 (XOR input 4):** Boolescher Eingang 4.
-*   **IN5 (XOR input 5):** Boolescher Eingang 5.
-*   **IN6 (XOR input 6):** Boolescher Eingang 6.
-*   **IN7 (XOR input 7):** Boolescher Eingang 7.
+-   **IN1 (XOR input 1):** Boolescher Eingang 1.
+-   **IN2 (XOR input 2):** Boolescher Eingang 2.
+-   **IN3 (XOR input 3):** Boolescher Eingang 3.
+-   **IN4 (XOR input 4):** Boolescher Eingang 4.
+-   **IN5 (XOR input 5):** Boolescher Eingang 5.
+-   **IN6 (XOR input 6):** Boolescher Eingang 6.
+-   **IN7 (XOR input 7):** Boolescher Eingang 7.
 
 ### **Daten-Ausgänge**
 
-*   **OUT (XOR result):** Boolesches Ergebnis der XOR-Verknüpfung aller sieben Eingänge.
+-   **OUT (XOR result):** Boolesches Ergebnis der XOR-Verknüpfung aller sieben Eingänge.
 
 ### **Adapter**
 
@@ -47,9 +47,9 @@ Unmittelbar nach der Berechnung wird das Abschlussereignis `CNF` zusammen mit de
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist als generischer Funktionsblock (`GEN_XOR`) implementiert, was eine flexible Wiederverwendung in verschiedenen Kontexten ermöglicht.
-*   **Feste Eingangsanzahl:** Im Gegensatz zu Bausteinen mit variabler Eingangsanzahl besitzt dieser Block exakt sieben fest definierte Eingänge.
-*   **Ereignisgesteuerte Ausführung:** Die Operation wird ausschließlich durch ein eingehendes Ereignis (`REQ`) getriggert, was eine deterministische und energieeffiziente Abarbeitung im Echtzeitsystem ermöglicht.
+-   **Generischer Baustein:** Der Block ist als generischer Funktionsblock (`GEN_XOR`) implementiert, was eine flexible Wiederverwendung in verschiedenen Kontexten ermöglicht.
+-   **Feste Eingangsanzahl:** Im Gegensatz zu Bausteinen mit variabler Eingangsanzahl besitzt dieser Block exakt sieben fest definierte Eingänge.
+-   **Ereignisgesteuerte Ausführung:** Die Operation wird ausschließlich durch ein eingehendes Ereignis (`REQ`) getriggert, was eine deterministische und energieeffiziente Abarbeitung im Echtzeitsystem ermöglicht.
 
 ## Zustandsübersicht
 
@@ -57,15 +57,15 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Anwendungsszenarien
 
-*   **Paritätsprüfung:** Überwachung, ob eine ungerade Anzahl von Sensoren (z.B. Grenztaster, Lichtschranken) in einem bestimmten Zustand (`TRUE`) ist.
-*   **Sicherheitskritische Verknüpfungen:** In Sicherheitsschaltungen, wo eine Antivalenz-Bedingung über mehrere Sicherheitseinrichtungen erforderlich ist.
-*   **Steuerungslogik:** Implementierung von speziellen logischen Verknüpfungen in Ablaufsteuerungen oder Verknüpfungssteuerungen, die eine XOR-Funktion mit genau sieben Operanden benötigen.
+-   **Paritätsprüfung:** Überwachung, ob eine ungerade Anzahl von Sensoren (z.B. Grenztaster, Lichtschranken) in einem bestimmten Zustand (`TRUE`) ist.
+-   **Sicherheitskritische Verknüpfungen:** In Sicherheitsschaltungen, wo eine Antivalenz-Bedingung über mehrere Sicherheitseinrichtungen erforderlich ist.
+-   **Steuerungslogik:** Implementierung von speziellen logischen Verknüpfungen in Ablaufsteuerungen oder Verknüpfungssteuerungen, die eine XOR-Funktion mit genau sieben Operanden benötigen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`XOR` (2 Eingänge):** Der Standard-XOR-Baustein verknüpft nur zwei Eingänge. Für eine Verknüpfung von sieben Signalen müsste dieser Block mehrfach verschachtelt werden, was die Lesbarkeit des Programms verringert. `XOR_7_BOOL` bietet eine direkte und übersichtliche Lösung. Siehe: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
-*   **`GEN_XOR` (Generisch, n Eingänge):** Der zugrundeliegende generische Baustein `GEN_XOR` kann mit einer variablen Anzahl von Eingängen instanziiert werden. `XOR_7_BOOL` ist eine spezifische, vorkonfigurierte Instanz mit sieben Eingängen, die direkt verwendet werden kann, ohne die Anzahl der Eingänge parametrieren zu müssen.
-*   **`PARITY_CHECK`:** Ein reiner Paritätsprüfblock könnte ähnliche Ergebnisse liefern, ist aber konzeptionell oft auf die Fehlererkennung in Datenströmen ausgelegt, während `XOR_7_BOOL` als allgemeiner logischer Operator in der Steuerungslogik dient.
+-   **`XOR` (2 Eingänge):** Der Standard-XOR-Baustein verknüpft nur zwei Eingänge. Für eine Verknüpfung von sieben Signalen müsste dieser Block mehrfach verschachtelt werden, was die Lesbarkeit des Programms verringert. `XOR_7_BOOL` bietet eine direkte und übersichtliche Lösung. Siehe: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
+-   **`GEN_XOR` (Generisch, n Eingänge):** Der zugrundeliegende generische Baustein `GEN_XOR` kann mit einer variablen Anzahl von Eingängen instanziiert werden. `XOR_7_BOOL` ist eine spezifische, vorkonfigurierte Instanz mit sieben Eingängen, die direkt verwendet werden kann, ohne die Anzahl der Eingänge parametrieren zu müssen.
+-   **`PARITY_CHECK`:** Ein reiner Paritätsprüfblock könnte ähnliche Ergebnisse liefern, ist aber konzeptionell oft auf die Fehlererkennung in Datenströmen ausgelegt, während `XOR_7_BOOL` als allgemeiner logischer Operator in der Steuerungslogik dient.
 
 ## Fazit
 

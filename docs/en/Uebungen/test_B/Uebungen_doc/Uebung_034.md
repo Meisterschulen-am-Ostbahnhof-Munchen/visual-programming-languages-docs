@@ -17,9 +17,9 @@ Connecting an analog input (`logiBUS_AI`) to a PWM output (`logiBUS_QD_PWM`). It
 
 ![Uebung_034_network](./Uebung_034_network.svg)
 
-* **`AnalogInput_I7`**: Reads the voltage at the input.
-* **`F_SHL`**: A shift register (Shift Left). [cite_start]It is used here for scaling by shifting the input value one bit to the left (corresponding to multiplication by 2)[cite: 1].
-* **`PWMOutput_Q4`**: A pulse-width modulated output for power control.
+- **`AnalogInput_I7`**: Reads the voltage at the input.
+- **`F_SHL`**: A shift register (Shift Left). [cite_start]It is used here for scaling by shifting the input value one bit to the left (corresponding to multiplication by 2)[cite: 1].
+- **`PWMOutput_Q4`**: A pulse-width modulated output for power control.
 
 -----
 
@@ -42,4 +42,4 @@ By turning a physical potentiometer (`I7`), the operator can continuously adjust
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

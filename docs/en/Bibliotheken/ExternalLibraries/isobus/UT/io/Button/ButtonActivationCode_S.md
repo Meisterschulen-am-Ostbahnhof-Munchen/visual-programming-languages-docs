@@ -28,14 +28,14 @@ The following fields form the internal structure of the data type `ButtonActivat
 
 The structure `ButtonActivationCode_S` serves as a container for configuration data.
 
-* The field `code` uniquely identifies the button within the system. The default value of 255 can be interpreted as an inactive or undefined state.
-* The field `bCyclic` determines the timing behavior when the button is continuously pressed. With `TRUE` (default), the corresponding event is repeatedly triggered at a fixed interval (e.g., every 200 ms). With `FALSE`, the event is triggered only once when the button is pressed (and possibly released), even if the button is held down.
+- The field `code` uniquely identifies the button within the system. The default value of 255 can be interpreted as an inactive or undefined state.
+- The field `bCyclic` determines the timing behavior when the button is continuously pressed. With `TRUE` (default), the corresponding event is repeatedly triggered at a fixed interval (e.g., every 200 ms). With `FALSE`, the event is triggered only once when the button is pressed (and possibly released), even if the button is held down.
 *
 ## Technical Features
 
-* **Initial Values:** Both fields of the structure have predefined initial values, ensuring reliable initialization.
-* **Comment:** The field `bCyclic` contains a helpful comment that explains the specific effect (`do not repeat every 200ms`) directly in the declaration.
-* **Type Hash:** The data type contains an attribute (`eclipse4diac::core::TypeHash`) used for type checking and versioning within the 4diac environment.
+- **Initial Values:** Both fields of the structure have predefined initial values, ensuring reliable initialization.
+- **Comment:** The field `bCyclic` contains a helpful comment that explains the specific effect (`do not repeat every 200ms`) directly in the declaration.
+- **Type Hash:** The data type contains an attribute (`eclipse4diac::core::TypeHash`) used for type checking and versioning within the 4diac environment.
 
 ## State Overview
 
@@ -45,9 +45,9 @@ The structure `ButtonActivationCode_S` serves as a container for configuration d
 
 This struct is typically used as an input or configuration parameter for function blocks that process button inputs, e.g.:
 
-* In a human-machine interface (HMI) for configuring softkeys.
-* * In machine controls for parameterizing physical control buttons.
-* Wherever a distinction needs to be made between a single and repeated action upon button press.
+- In a human-machine interface (HMI) for configuring softkeys.
+- * In machine controls for parameterizing physical control buttons.
+- Wherever a distinction needs to be made between a single and repeated action upon button press.
 
 ## ⚖️ Comparison with similar function blocks
 
@@ -61,4 +61,4 @@ The data type `ButtonActivationCode_S` is a simple yet essential structure for t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

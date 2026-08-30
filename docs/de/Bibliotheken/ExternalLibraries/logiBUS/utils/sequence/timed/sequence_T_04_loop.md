@@ -15,35 +15,35 @@ Der Funktionsblock `sequence_T_04_loop` ist ein zeitgesteuerter Sequenzer mit vi
 
 ### **Ereignis-Eingänge**
 
-*   **`START_S1`**: Startet die Sequenz. Der Übergang erfolgt vom initialen `START`-Zustand in `State_01`. Das Ereignis ist mit den vier Zeitdaten-Eingängen verknüpft.
-*   **`RESET`**: Setzt die Sequenz von jedem beliebigen aktiven Zustand zurück in den initialen `START`-Zustand.
+-   **`START_S1`**: Startet die Sequenz. Der Übergang erfolgt vom initialen `START`-Zustand in `State_01`. Das Ereignis ist mit den vier Zeitdaten-Eingängen verknüpft.
+-   **`RESET`**: Setzt die Sequenz von jedem beliebigen aktiven Zustand zurück in den initialen `START`-Zustand.
 
 ### **Ereignis-Ausgänge**
 
-*   **`CNF`**: Ausführungsbestätigung (Confirmation). Wird bei jedem Zustandswechsel ausgelöst und liefert die aktuelle Zustandsnummer.
-*   **`EO_S1`**: Wird beim Eintritt in `State_01` ausgelöst und liefert den zugehörigen Datenausgang `DO_S1`.
-*   **`EO_S2`**: Wird beim Eintritt in `State_02` ausgelöst und liefert den zugehörigen Datenausgang `DO_S2`.
-*   **`EO_S3`**: Wird beim Eintritt in `State_03` ausgelöst und liefert den zugehörigen Datenausgang `DO_S3`.
-*   **`EO_S4`**: Wird beim Eintritt in `State_04` ausgelöst und liefert den zugehörigen Datenausgang `DO_S4`.
+-   **`CNF`**: Ausführungsbestätigung (Confirmation). Wird bei jedem Zustandswechsel ausgelöst und liefert die aktuelle Zustandsnummer.
+-   **`EO_S1`**: Wird beim Eintritt in `State_01` ausgelöst und liefert den zugehörigen Datenausgang `DO_S1`.
+-   **`EO_S2`**: Wird beim Eintritt in `State_02` ausgelöst und liefert den zugehörigen Datenausgang `DO_S2`.
+-   **`EO_S3`**: Wird beim Eintritt in `State_03` ausgelöst und liefert den zugehörigen Datenausgang `DO_S3`.
+-   **`EO_S4`**: Wird beim Eintritt in `State_04` ausgelöst und liefert den zugehörigen Datenausgang `DO_S4`.
 
 ### **Daten-Eingänge**
 
-*   **`DT_S1_S2`** (`TIME`): Zeitverzögerung für den Übergang von `State_01` zu `State_02`. Initialwert: `NO_TIME`.
-*   **`DT_S2_S3`** (`TIME`): Zeitverzögerung für den Übergang von `State_02` zu `State_03`. Initialwert: `NO_TIME`.
-*   **`DT_S3_S4`** (`TIME`): Zeitverzögerung für den Übergang von `State_03` zu `State_04`. Initialwert: `NO_TIME`.
-*   **`DT_S4_S1`** (`TIME`): Zeitverzögerung für den Übergang von `State_04` zurück zu `State_01` (Schleife). Initialwert: `NO_TIME`.
+-   **`DT_S1_S2`** (`TIME`): Zeitverzögerung für den Übergang von `State_01` zu `State_02`. Initialwert: `NO_TIME`.
+-   **`DT_S2_S3`** (`TIME`): Zeitverzögerung für den Übergang von `State_02` zu `State_03`. Initialwert: `NO_TIME`.
+-   **`DT_S3_S4`** (`TIME`): Zeitverzögerung für den Übergang von `State_03` zu `State_04`. Initialwert: `NO_TIME`.
+-   **`DT_S4_S1`** (`TIME`): Zeitverzögerung für den Übergang von `State_04` zurück zu `State_01` (Schleife). Initialwert: `NO_TIME`.
 
 ### **Daten-Ausgänge**
 
-*   **`STATE_NR`** (`SINT`): Aktuelle Zustandsnummer. `0` = START, `1` = State_01, `2` = State_02, `3` = State_03, `4` = State_04.
-*   **`DO_S1`** (`BOOL`): Ist `TRUE`, wenn `State_01` aktiv ist.
-*   **`DO_S2`** (`BOOL`): Ist `TRUE`, wenn `State_02` aktiv ist.
-*   **`DO_S3`** (`BOOL`): Ist `TRUE`, wenn `State_03` aktiv ist.
-*   **`DO_S4`** (`BOOL`): Ist `TRUE`, wenn `State_04` aktiv ist.
+-   **`STATE_NR`** (`SINT`): Aktuelle Zustandsnummer. `0` = START, `1` = State_01, `2` = State_02, `3` = State_03, `4` = State_04.
+-   **`DO_S1`** (`BOOL`): Ist `TRUE`, wenn `State_01` aktiv ist.
+-   **`DO_S2`** (`BOOL`): Ist `TRUE`, wenn `State_02` aktiv ist.
+-   **`DO_S3`** (`BOOL`): Ist `TRUE`, wenn `State_03` aktiv ist.
+-   **`DO_S4`** (`BOOL`): Ist `TRUE`, wenn `State_04` aktiv ist.
 
 ### **Adapter**
 
-*   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Ein Zeitgeber-Adapter, der für die zeitgesteuerten Zustandsübergänge verwendet wird. Der FB startet den Timer beim Eintritt in einen Zustand und reagiert auf dessen `TimeOut`-Ereignis.
+-   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Ein Zeitgeber-Adapter, der für die zeitgesteuerten Zustandsübergänge verwendet wird. Der FB startet den Timer beim Eintritt in einen Zustand und reagiert auf dessen `TimeOut`-Ereignis.
 
 ## Funktionsweise
 
@@ -62,9 +62,9 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 
 ## Technische Besonderheiten
 
-*   **Zeitsteuerung**: Die Übergänge sind rein zeitgesteuert. Es gibt keine ereignisgesteuerten Übergänge zwischen den Hauptzuständen.
-*   **Initialwerte**: Die Zeitdaten-Eingänge sind standardmäßig mit `NO_TIME` vorbelegt. Dies muss für einen funktionierenden Ablauf angepasst werden.
-*   **Konstanten**: Der FB verwendet Konstanten aus der Bibliothek `logiBUS::utils::sequence::const::sequence` (z.B. für Zustandsnummern) und `logiBUS::utils::sequence::const::sequence::NO_TIME`.
+-   **Zeitsteuerung**: Die Übergänge sind rein zeitgesteuert. Es gibt keine ereignisgesteuerten Übergänge zwischen den Hauptzuständen.
+-   **Initialwerte**: Die Zeitdaten-Eingänge sind standardmäßig mit `NO_TIME` vorbelegt. Dies muss für einen funktionierenden Ablauf angepasst werden.
+-   **Konstanten**: Der FB verwendet Konstanten aus der Bibliothek `logiBUS::utils::sequence::const::sequence` (z.B. für Zustandsnummern) und `logiBUS::utils::sequence::const::sequence::NO_TIME`.
 
 ## Zustandsübersicht
 
@@ -77,19 +77,19 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 
 ## Anwendungsszenarien
 
-*   Steuerung zyklischer Prozesse mit festen Zeitschritten, z.B. in Verpackungsmaschinen, Waschanlagen oder automatisierten Montagelinien.
-*   Ansteuerung von Aktoren in einer festen, zeitlich getakteten Reihenfolge.
-*   Als zentraler Taktgeber für übergeordnete Steuerungsabläufe.
+-   Steuerung zyklischer Prozesse mit festen Zeitschritten, z.B. in Verpackungsmaschinen, Waschanlagen oder automatisierten Montagelinien.
+-   Ansteuerung von Aktoren in einer festen, zeitlich getakteten Reihenfolge.
+-   Als zentraler Taktgeber für übergeordnete Steuerungsabläufe.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Einfache Timer (TON)**: Einzelne Timer bieten keine integrierte Sequenzlogik. `sequence_T_04_loop` kapselt die komplette Zustandsmaschine mit vier Schritten.
-*   **Ereignisgesteuerte Sequenzer**: Im Gegensatz zu ereignisgesteuerten Sequenzern (z.B. `sequence_E_04_loop`) erfolgen die Übergänge hier ausschließlich zeitbasiert, nicht durch externe Ereignisse.
-*   **SPS-Zyklus**: Die zeitgesteuerte Ablaufkontrolle ist präziser und unabhängig vom SPS-Zyklus, da sie auf dem `ATimeOut`-Adapter basiert.
+-   **Einfache Timer (TON)**: Einzelne Timer bieten keine integrierte Sequenzlogik. `sequence_T_04_loop` kapselt die komplette Zustandsmaschine mit vier Schritten.
+-   **Ereignisgesteuerte Sequenzer**: Im Gegensatz zu ereignisgesteuerten Sequenzern (z.B. `sequence_E_04_loop`) erfolgen die Übergänge hier ausschließlich zeitbasiert, nicht durch externe Ereignisse.
+-   **SPS-Zyklus**: Die zeitgesteuerte Ablaufkontrolle ist präziser und unabhängig vom SPS-Zyklus, da sie auf dem `ATimeOut`-Adapter basiert.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
+- [Uebung_035a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
 
 ## Fazit
 

@@ -53,7 +53,7 @@ The function block has no internal states. The conversion is re-executed with ea
 
 ## 🛠️ Related Exercises
 
-* [Exercise_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
+- [Exercise_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Conclusion
 

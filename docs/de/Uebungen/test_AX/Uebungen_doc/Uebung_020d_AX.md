@@ -20,11 +20,11 @@ Das Ziel dieser Übung ist die Analyse der Ausschaltverzögerung auf Logikebene.
 
 ### Funktionsbausteine (FBs)
 
-  * **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Signaleingang.
-  * **`AX_SWITCH`**: [cite_start]Trennt steigende (`EO1`) und fallende (`EO0`) Flanken[cite: 1].
-  * **`AX_RS`**: Der Ergebnisspeicher.
-  * **`E_DELAY`**: [cite_start]Verzögert das Rücksetz-Ereignis um 2 Sekunden (`DT = T#2S`)[cite: 1].
-  * **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
+  - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Signaleingang.
+  - **`AX_SWITCH`**: [cite_start]Trennt steigende (`EO1`) und fallende (`EO0`) Flanken[cite: 1].
+  - **`AX_RS`**: Der Ergebnisspeicher.
+  - **`E_DELAY`**: [cite_start]Verzögert das Rücksetz-Ereignis um 2 Sekunden (`DT = T#2S`)[cite: 1].
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Signalausgang.
 
 -----
 

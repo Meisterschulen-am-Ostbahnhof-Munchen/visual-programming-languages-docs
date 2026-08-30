@@ -70,21 +70,21 @@ The inputs I1 and I2 are read via the `logiBUS_IXA` function blocks and passed o
 - The output of DigitalInput_I1 is fed to the first input (IN1) of `AX_AND_2_Q1`.
 - The output of DigitalInput_I2 is fed to the second input (IN2) of `AX_AND_2_Q2`.
 - The AND gates each receive the second input from the *output of the other* D flip-flop:
-* `AX_AND_2_Q1.IN2` is connected to the output `Q` of `AX_D_FF_Q2`.
-* `AX_AND_2_Q2.IN1` is connected to the output `Q` of `AX_D_FF_Q1`.
+- `AX_AND_2_Q1.IN2` is connected to the output `Q` of `AX_D_FF_Q2`.
+- `AX_AND_2_Q2.IN1` is connected to the output `Q` of `AX_D_FF_Q1`.
 
 This cross-connection means that output Q1 can only be active when flip-flop Q2 is inactive (and vice versa). This creates a mutual interlock.
 
 3. **Signal Distribution and Negation**
 
 - The outputs of the AND gates are split into two paths by the `AX_SPLIT_2` function blocks:
-* One path goes directly to the digital outputs:
+- One path goes directly to the digital outputs:
 
 AX_SPLIT_2_Q1.OUT1` → `DigitalOutput_Q1.OUT`
 
 AX_SPLIT_2_Q2.OUT2` → `DigitalOutput_Q2.OUT`
 
-* The other path goes via negation (`AX_NOT_INIT`) to the D flip-flops:
+- The other path goes via negation (`AX_NOT_INIT`) to the D flip-flops:
 
 AX_SPLIT_2_Q1.OUT2` → `AX_NOT_INIT_Q1.IN` → `AX_D_FF_Q1.I`
 

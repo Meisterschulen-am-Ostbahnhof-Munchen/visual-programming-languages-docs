@@ -17,17 +17,17 @@ Implementation of a circuit with separate pushbuttons for "On" and "Off".
 
 ![Uebung_006_AX_network](./Uebung_006_AX_network.svg)
 
-* **`I1` (Set)**: Push button to turn on.
-* **`I2` (Reset)**: Push button to turn off.
-* **`AX_SR`**: An SR flip-flop (Set is dominant if simultaneous, but separated here by events).
+- **`I1` (Set)**: Push button to turn on.
+- **`I2` (Reset)**: Push button to turn off.
+- **`AX_SR`**: An SR flip-flop (Set is dominant if simultaneous, but separated here by events).
 
 -----
 
 ## Functionality
 
-* A click on `I1` sends an event to `S` -> output `Q` becomes TRUE.
-* * A click on `I2` sends an event to `R` -> output `Q` becomes FALSE.
-* Repeatedly pressing `I1` has no effect if it is already on.
+- A click on `I1` sends an event to `S` -> output `Q` becomes TRUE.
+- * A click on `I2` sends an event to `R` -> output `Q` becomes FALSE.
+- Repeatedly pressing `I1` has no effect if it is already on.
 
 -----
 

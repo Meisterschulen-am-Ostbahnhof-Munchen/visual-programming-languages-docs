@@ -64,13 +64,13 @@ The sub-application tastend_TON_5s provides a compact solution for time-delayed 
 
 # Summary of the sub-application ## 🛠️ Related Exercises
 
-* [Exercise_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
+- [Exercise_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

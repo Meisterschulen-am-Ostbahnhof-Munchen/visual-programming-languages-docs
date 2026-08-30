@@ -104,10 +104,10 @@ Nicht zutreffend für einen Datentyp.
 
 ## Technische Besonderheiten
 
-*   **Strukturierte Daten:** Definiert eine feste Anordnung von 64 BOOL-Variablen.
-*   **Benannte Felder:** Jedes Bit hat einen eindeutigen Namen (`X_00` bis `X_09` und `B_10` bis `B_63`), was die Lesbarkeit des Codes im Vergleich zu rein numerischen Indizes verbessert.
-*   **Größe:** Repräsentiert 64 Bits, was in der Regel 8 Bytes Speicherplatz belegt (abhängig von der Compiler-Implementierung und Padding).
-*   **Paketinformation:** Der Datentyp ist im Paket `logiBUS::utils::conversion::types` angesiedelt, was auf seine Rolle in Hilfsprogrammen oder Konvertierungen hindeutet.
+-   **Strukturierte Daten:** Definiert eine feste Anordnung von 64 BOOL-Variablen.
+-   **Benannte Felder:** Jedes Bit hat einen eindeutigen Namen (`X_00` bis `X_09` und `B_10` bis `B_63`), was die Lesbarkeit des Codes im Vergleich zu rein numerischen Indizes verbessert.
+-   **Größe:** Repräsentiert 64 Bits, was in der Regel 8 Bytes Speicherplatz belegt (abhängig von der Compiler-Implementierung und Padding).
+-   **Paketinformation:** Der Datentyp ist im Paket `logiBUS::utils::conversion::types` angesiedelt, was auf seine Rolle in Hilfsprogrammen oder Konvertierungen hindeutet.
 
 ## Zustandsübersicht
 
@@ -115,18 +115,18 @@ Nicht zutreffend für einen Datentyp, da er keine interne Logik oder Zustandsmas
 
 ## Anwendungsszenarien
 
-*   **Bit-Felder und Flags:** Ideal zur Darstellung einer großen Anzahl von binären Statusflags, Schalterstellungen oder Konfigurationsoptionen, die in einem zusammenhängenden Block organisiert werden sollen.
-*   **Hardware-Schnittstellen:** Kann zur Abbildung von Registern oder E/A-Ports verwendet werden, bei denen einzelne Bits spezifische Funktionen oder Zustände repräsentieren.
-*   **Kompakte Datenübertragung:** Wenn eine große Menge von BOOL-Werten effizient übermittelt werden muss, kann dieser Typ eine kompakte Darstellung bieten.
-*   **Abstrakte Zustände:** Darstellung komplexer Zustände, die sich aus der Kombination von 64 binären Merkmalen ergeben.
+-   **Bit-Felder und Flags:** Ideal zur Darstellung einer großen Anzahl von binären Statusflags, Schalterstellungen oder Konfigurationsoptionen, die in einem zusammenhängenden Block organisiert werden sollen.
+-   **Hardware-Schnittstellen:** Kann zur Abbildung von Registern oder E/A-Ports verwendet werden, bei denen einzelne Bits spezifische Funktionen oder Zustände repräsentieren.
+-   **Kompakte Datenübertragung:** Wenn eine große Menge von BOOL-Werten effizient übermittelt werden muss, kann dieser Typ eine kompakte Darstellung bieten.
+-   **Abstrakte Zustände:** Darstellung komplexer Zustände, die sich aus der Kombination von 64 binären Merkmalen ergeben.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Da `ST64X` ein Datentyp ist, vergleicht man ihn nicht direkt mit Funktionsblöcken, sondern mit anderen Möglichkeiten zur Strukturierung von BOOL-Werten:
 
-*   **`ARRAY OF BOOL`:** Ein `ARRAY[0..63] OF BOOL` würde ebenfalls 64 BOOL-Werte speichern. Der Hauptunterschied besteht im Zugriff: `ST64X` verwendet benannte Felder (z.B. `MyVar.X_00`), was oft lesbarer ist, wenn jedes Bit eine spezifische Bedeutung hat. Arrays verwenden Indizes (z.B. `MyArray[0]`), was flexibler für Schleifen und dynamischen Zugriff ist, aber weniger aussagekräftig, wenn die Bedeutung der einzelnen Indizes nicht offensichtlich ist.
-*   **Einzelne `BOOL`-Variablen:** Man könnte auch 64 separate `BOOL`-Variablen deklarieren. Dies würde jedoch zu einer unübersichtlichen Liste von Variablen führen und die Zusammengehörigkeit der Bits verdecken. `ST64X` gruppiert sie logisch.
-*   **Integer-Datentypen (z.B. `LWORD`):** Ein `LWORD` (64-Bit-Ganzzahl) könnte ebenfalls 64 Bits speichern. Der Zugriff auf einzelne Bits würde jedoch Bit-Operationen (AND, OR, SHIFT) erfordern, was komplexer und fehleranfälliger sein kann als der direkte Feldzugriff einer Struktur. `ST64X` bietet direkten, symbolischen Bit-Zugriff.
+-   **`ARRAY OF BOOL`:** Ein `ARRAY[0..63] OF BOOL` würde ebenfalls 64 BOOL-Werte speichern. Der Hauptunterschied besteht im Zugriff: `ST64X` verwendet benannte Felder (z.B. `MyVar.X_00`), was oft lesbarer ist, wenn jedes Bit eine spezifische Bedeutung hat. Arrays verwenden Indizes (z.B. `MyArray[0]`), was flexibler für Schleifen und dynamischen Zugriff ist, aber weniger aussagekräftig, wenn die Bedeutung der einzelnen Indizes nicht offensichtlich ist.
+-   **Einzelne `BOOL`-Variablen:** Man könnte auch 64 separate `BOOL`-Variablen deklarieren. Dies würde jedoch zu einer unübersichtlichen Liste von Variablen führen und die Zusammengehörigkeit der Bits verdecken. `ST64X` gruppiert sie logisch.
+-   **Integer-Datentypen (z.B. `LWORD`):** Ein `LWORD` (64-Bit-Ganzzahl) könnte ebenfalls 64 Bits speichern. Der Zugriff auf einzelne Bits würde jedoch Bit-Operationen (AND, OR, SHIFT) erfordern, was komplexer und fehleranfälliger sein kann als der direkte Feldzugriff einer Struktur. `ST64X` bietet direkten, symbolischen Bit-Zugriff.
 
 ## Fazit
 
@@ -136,4 +136,4 @@ Der Datentyp `ST64X` ist ein nützliches Konstrukt in 4diac-ide zur Definition e
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

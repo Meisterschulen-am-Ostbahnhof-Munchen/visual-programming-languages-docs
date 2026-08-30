@@ -17,10 +17,10 @@ Demonstration of the interaction between complex event logic (`E_REND`) and a fl
 
 ![Uebung_004a7_network](./Uebung_004a7_network.svg)
 
-* **`I1` & `I2`**: Inputs for rendezvous (arming).
-* **`I3`**: Central reset input.
-* **`E_REND`**: Synchronizes the events of `I1` and `I2`.
-* **`E_T_FF_SR`**: A toggle flip-flop that also has a `R` (reset) input to set the state to `FALSE`.
+- **`I1` & `I2`**: Inputs for rendezvous (arming).
+- **`I3`**: Central reset input.
+- **`E_REND`**: Synchronizes the events of `I1` and `I2`.
+- **`E_T_FF_SR`**: A toggle flip-flop that also has a `R` (reset) input to set the state to `FALSE`.
 
 -----
 
@@ -38,8 +38,8 @@ Demonstration of the interaction between complex event logic (`E_REND`) and a fl
 
 1. To toggle the light (`Q1`), both buttons `I1` and `I2` must be pressed. The rendezvous then fires the clock signal (`CLK`) for the flip-flop.
 2. The button `I3` acts as an **all-off button**:
-* It immediately resets the flip-flop `E_T_FF_SR` (output becomes `FALSE`).
-* It simultaneously clears the memory of `E_REND`. Therefore, if only one button (`I1` or `I2`) was pressed, this partial information is deleted.
+- It immediately resets the flip-flop `E_T_FF_SR` (output becomes `FALSE`).
+- It simultaneously clears the memory of `E_REND`. Therefore, if only one button (`I1` or `I2`) was pressed, this partial information is deleted.
 
 -----
 

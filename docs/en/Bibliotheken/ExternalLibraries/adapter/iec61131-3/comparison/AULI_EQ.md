@@ -12,21 +12,21 @@ The function block has no direct event or data inputs and outputs, but communica
 
 ### **Event Inputs**
 
-* **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
-* **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
+- **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
+- **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
 
 ### **Event Outputs**
 
-* **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
+- **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
 
 ### **Data Inputs**
 
-* **IN1.D1**: First value to be compared (data type `ULINT`, 64-bit unsigned integer).
-* **IN2.D1**: Second value to be compared (data type same as IN1).
+- **IN1.D1**: First value to be compared (data type `ULINT`, 64-bit unsigned integer).
+- **IN2.D1**: Second value to be compared (data type same as IN1).
 
 ### **Data Outputs**
 
-* **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 = IN2`, otherwise `FALSE`.
+- **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 = IN2`, otherwise `FALSE`.
 
 ### **Adapters**
 

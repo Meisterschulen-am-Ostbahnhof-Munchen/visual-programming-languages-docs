@@ -20,7 +20,7 @@ Verarbeitung von Auxiliary Inputs (z.B. Joystick-Tasten).
 
 ![Uebung_010b1_AX_network](./Uebung_010b1_AX_network.svg)
 
-  * **`AuxFunction2_X1`**: Typ `isobus::UT::io::Auxiliary::IN::Aux_IXA`. Dieser Baustein lauscht auf ISOBUS AUX-Nachrichten für die definierte Funktion.
+  - **`AuxFunction2_X1`**: Typ `isobus::UT::io::Auxiliary::IN::Aux_IXA`. Dieser Baustein lauscht auf ISOBUS AUX-Nachrichten für die definierte Funktion.
 
 -----
 

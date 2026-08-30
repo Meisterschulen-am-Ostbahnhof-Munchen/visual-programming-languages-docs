@@ -65,7 +65,7 @@ The `ADI_SPLIT_7` is a simple yet powerful component for distributing a unidirec
 
 ---
 
-* [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
 
 ## Technical Features
 

@@ -4,8 +4,8 @@
 
 ![E_SWITCH_ecc](./E_SWITCH_ecc.svg)
 
-* [E_SWITCH: Die Weiche der Automatisierung – Warum Einfachheit IEC 61499 revolutioniert](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_SWITCH-Die-Weiche-der-Automatisierung--Warum-Einfachheit-IEC-61499-revolutioniert-e3681fl)
-* [E_SWITCH: The Unsung Hero of Industrial Automation's Modular Design](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_SWITCH-The-Unsung-Hero-of-Industrial-Automations-Modular-Design-e367npq)
+- [E_SWITCH: Die Weiche der Automatisierung – Warum Einfachheit IEC 61499 revolutioniert](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_SWITCH-Die-Weiche-der-Automatisierung--Warum-Einfachheit-IEC-61499-revolutioniert-e3681fl)
+- [E_SWITCH: The Unsung Hero of Industrial Automation's Modular Design](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_SWITCH-The-Unsung-Hero-of-Industrial-Automations-Modular-Design-e367npq)
 
 ## Einleitung
 
@@ -60,28 +60,28 @@ Das Ereignis am Eingang `EI` wird also immer an genau einen der beiden Ausgänge
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)
-* [Uebung_004b2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b2.md)
-* [Uebung_004b3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b3.md)
-* [Uebung_005](../../../Uebungen/test_B/Uebungen_doc/Uebung_005.md)
-* [Uebung_006a3_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3_sub.md)
-* [Uebung_007a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_007a3.md)
-* [Uebung_008](../../../Uebungen/test_B/Uebungen_doc/Uebung_008.md)
-* [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
-* [Uebung_019c](../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
-* [Uebung_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
-* [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
-* [Uebung_020c3](../../../Uebungen/test_B/Uebungen_doc/Uebung_020c3.md)
-* [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
-* [Uebung_020e2](../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)
-* [Uebung_020f2](../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
-* [Uebung_020i](../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
-* [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
-* [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
-* [Uebung_086](../../../Uebungen/test_B/Uebungen_doc/Uebung_086.md)
-* [Uebung_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
-* [Uebung_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
+- [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)
+- [Uebung_004b2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b2.md)
+- [Uebung_004b3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b3.md)
+- [Uebung_005](../../../Uebungen/test_B/Uebungen_doc/Uebung_005.md)
+- [Uebung_006a3_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3_sub.md)
+- [Uebung_007a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_007a3.md)
+- [Uebung_008](../../../Uebungen/test_B/Uebungen_doc/Uebung_008.md)
+- [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
+- [Uebung_019c](../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
+- [Uebung_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
+- [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+- [Uebung_020c3](../../../Uebungen/test_B/Uebungen_doc/Uebung_020c3.md)
+- [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
+- [Uebung_020e2](../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)
+- [Uebung_020f2](../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
+- [Uebung_020i](../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
+- [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+- [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
+- [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_086](../../../Uebungen/test_B/Uebungen_doc/Uebung_086.md)
+- [Uebung_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Uebung_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
 
 ## Fazit
 

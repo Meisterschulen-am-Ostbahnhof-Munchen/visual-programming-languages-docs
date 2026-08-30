@@ -63,9 +63,9 @@ Da die Schnittstellen als unidirektionale `AUDI`-Adapter ausgeführt sind, trigg
 
 ## Technische Besonderheiten
 
-* **Generischer Typ:** Der Baustein ist über das Attribut `eclipse4diac::core::GenericClassName` als `GEN_AUDI_DIV` deklariert. Dies ermöglicht eine automatische Typanpassung an die konkret verwendeten Datenstrukturen innerhalb der `AUDI`-Adapter.
-* **Saubere Verdrahtung:** Durch die Kapselung von Daten- und Event-Signalen in Adaptern wird das visuelle "Spaghetticode"-Problem in 4diac-ide minimiert.
-* **Fehlerbehandlung (Division durch Null):** Da es sich um eine generische Division handelt, fängt die zugrundeliegende Laufzeitumgebung (z.B. forte) eine Division durch Null ab, um einen Absturz der Steuerung zu verhindern. In einem solchen Fall wird der Ausgang typischerweise auf einen Standardwert (z.B. `0` oder `NaN`/`Infinity` je nach Datentyp) gesetzt.
+- **Generischer Typ:** Der Baustein ist über das Attribut `eclipse4diac::core::GenericClassName` als `GEN_AUDI_DIV` deklariert. Dies ermöglicht eine automatische Typanpassung an die konkret verwendeten Datenstrukturen innerhalb der `AUDI`-Adapter.
+- **Saubere Verdrahtung:** Durch die Kapselung von Daten- und Event-Signalen in Adaptern wird das visuelle "Spaghetticode"-Problem in 4diac-ide minimiert.
+- **Fehlerbehandlung (Division durch Null):** Da es sich um eine generische Division handelt, fängt die zugrundeliegende Laufzeitumgebung (z.B. forte) eine Division durch Null ab, um einen Absturz der Steuerung zu verhindern. In einem solchen Fall wird der Ausgang typischerweise auf einen Standardwert (z.B. `0` oder `NaN`/`Infinity` je nach Datentyp) gesetzt.
 
 ---
 
@@ -109,9 +109,9 @@ Die Ausführung folgt einem einfachen, ereignisgesteuerten Schema:
 
 ## Anwendungsszenarien
 
-* **Skalierungs- und Normierungsaufgaben:** Division von Messwerten, die in standardisierten `AUDI`-Datenstrukturen übertragen werden.
-* **Verhältnisberechnungen:** Bestimmung von Verhältnissen in der Prozessindustrie (z.B. Durchflussverhältnisse zweier Medien).
-* **Signalverarbeitung:** Modularer Einsatz in Steuerungsarchitekturen, bei denen eine strikte Trennung durch Adapterstrukturen gefordert ist.
+- **Skalierungs- und Normierungsaufgaben:** Division von Messwerten, die in standardisierten `AUDI`-Datenstrukturen übertragen werden.
+- **Verhältnisberechnungen:** Bestimmung von Verhältnissen in der Prozessindustrie (z.B. Durchflussverhältnisse zweier Medien).
+- **Signalverarbeitung:** Modularer Einsatz in Steuerungsarchitekturen, bei denen eine strikte Trennung durch Adapterstrukturen gefordert ist.
 
 ---
 

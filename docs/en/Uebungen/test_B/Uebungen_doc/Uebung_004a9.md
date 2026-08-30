@@ -17,10 +17,10 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ![Uebung_004a9_network](./Uebung_004a9_network.svg)
 
-* **`DigitalInput_CLK_I1`**: The central trigger (pushbutton).
-* **`E_SPLIT_3`**: Distributes the input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
-* **`E_T_FF_Q1`, `Q2`, `Q3`**: Three independent flip-flops.
-* **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three physical lamps.
+- **`DigitalInput_CLK_I1`**: The central trigger (pushbutton).
+- **`E_SPLIT_3`**: Distributes the input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
+- **`E_T_FF_Q1`, `Q2`, `Q3`**: Three independent flip-flops.
+- **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three physical lamps.
 
 -----
 

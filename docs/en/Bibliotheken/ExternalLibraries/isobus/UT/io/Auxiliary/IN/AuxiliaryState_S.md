@@ -28,9 +28,9 @@ This data type serves as a container for information about an auxiliary input. T
 
 ## Technical Features
 
-* **ISOBUS Context:** This data type is specifically designed for ISOBUS communication (package `isobus::UT::io::Auxiliary::IN`).
-* **Cycle Control:** The integrated cyclic control (`bCyclic`) is a characteristic feature that takes bus communication efficiency into account.
-* **Initial Values:** Both fields have defined initial values (`value=255`, `bCyclic=TRUE`), ensuring deterministic initialization.
+- **ISOBUS Context:** This data type is specifically designed for ISOBUS communication (package `isobus::UT::io::Auxiliary::IN`).
+- **Cycle Control:** The integrated cyclic control (`bCyclic`) is a characteristic feature that takes bus communication efficiency into account.
+- **Initial Values:** Both fields have defined initial values (`value=255`, `bCyclic=TRUE`), ensuring deterministic initialization.
 
 ## State Overview
 
@@ -40,9 +40,9 @@ This data type serves as a container for information about an auxiliary input. T
 
 This struct is typically used as a data input or output in function blocks (FBs) that process or control ISOBUS auxiliary inputs. Examples include:
 
-* Function blocks (FBs) for reading the state of switches, potentiometers, or sensors configured as auxiliary inputs.
-* FBs that process auxiliary input values and forward them to other system components.
-* FBs that determine whether a value needs to be updated and sent based on the `bCyclic` flag.
+- Function blocks (FBs) for reading the state of switches, potentiometers, or sensors configured as auxiliary inputs.
+- FBs that process auxiliary input values and forward them to other system components.
+- FBs that determine whether a value needs to be updated and sent based on the `bCyclic` flag.
 
 ## ⚖️ Comparison with similar function blocks
 

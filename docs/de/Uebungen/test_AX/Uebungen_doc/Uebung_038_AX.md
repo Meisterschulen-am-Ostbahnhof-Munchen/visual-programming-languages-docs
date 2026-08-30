@@ -20,10 +20,10 @@ Realisierung einer automatischen Abfolge von 8 Schritten.
 
 ![Uebung_038_AX_network](./Uebung_038_AX_network.svg)
 
-  * **`sequence_T_08_loop_AX`**: Ein komplexer Baustein, der 8 Zustände (`S1` bis `S8`) verwaltet. Der Übergang zwischen den Zuständen erfolgt zeitgesteuert.
-  * **Parameter `DT_S1_S2` etc.**: Definieren die Verweildauer in jedem Schritt (z.B. 200ms oder 100ms).
-  * **`Q_NumericValue`**: Zeigt die aktuelle Schrittnummer auf dem ISOBUS-Terminal an.
-  * **`E_TimeOut`**: Überwacht die Sequenz (Watchdog).
+  - **`sequence_T_08_loop_AX`**: Ein komplexer Baustein, der 8 Zustände (`S1` bis `S8`) verwaltet. Der Übergang zwischen den Zuständen erfolgt zeitgesteuert.
+  - **Parameter `DT_S1_S2` etc.**: Definieren die Verweildauer in jedem Schritt (z.B. 200ms oder 100ms).
+  - **`Q_NumericValue`**: Zeigt die aktuelle Schrittnummer auf dem ISOBUS-Terminal an.
+  - **`E_TimeOut`**: Überwacht die Sequenz (Watchdog).
 
 -----
 

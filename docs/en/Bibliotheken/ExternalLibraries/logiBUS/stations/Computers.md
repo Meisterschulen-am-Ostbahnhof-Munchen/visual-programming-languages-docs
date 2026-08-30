@@ -25,10 +25,10 @@ The constants are defined when the project is compiled. Each constant is assigne
 
 ## Technical Specifications
 
-* **Type:** All constants are of type `WSTRING`, which supports Unicode strings.
-* **Scope:** As global constants, they are available within the declared package (`logiBUS::stations`).
-* **Initialization:** The values are assigned directly upon declaration and are read-only at runtime.
-* **Usage:** They are typically intended for configuring communication modules (e.g., `PUBLISH`, `SUBSCRIBE`, `CLIENT`, `SERVER`) where the address of the communication partner is required.
+- **Type:** All constants are of type `WSTRING`, which supports Unicode strings.
+- **Scope:** As global constants, they are available within the declared package (`logiBUS::stations`).
+- **Initialization:** The values are assigned directly upon declaration and are read-only at runtime.
+- **Usage:** They are typically intended for configuring communication modules (e.g., `PUBLISH`, `SUBSCRIBE`, `CLIENT`, `SERVER`) where the address of the communication partner is required.
 
 ## State Overview
 
@@ -41,9 +41,9 @@ The constants are defined when the project is compiled. Each constant is assigne
 
 ## ⚖️ Comparison with similar components
 
-* **`VAR_GLOBAL` (Global variables):** Unlike global variables, constants (`CONSTANT`) cannot be changed after initialization. They therefore offer greater program security.
-* **`VAR_CONFIG` (Configuration variables):** Configuration variables are also constants, but they can be configured per resource. The global constants defined here have a fixed, project-wide value.
-* **Direct Value Specification:** While it's possible to directly use string literals in the code, this leads to poorer maintainability and a higher susceptibility to errors compared to using central constants.
+- **`VAR_GLOBAL` (Global variables):** Unlike global variables, constants (`CONSTANT`) cannot be changed after initialization. They therefore offer greater program security.
+- **`VAR_CONFIG` (Configuration variables):** Configuration variables are also constants, but they can be configured per resource. The global constants defined here have a fixed, project-wide value.
+- **Direct Value Specification:** While it's possible to directly use string literals in the code, this leads to poorer maintainability and a higher susceptibility to errors compared to using central constants.
 
 ## Conclusion
 
@@ -53,4 +53,4 @@ The global constants `Computers` are a simple yet extremely useful tool for stru
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

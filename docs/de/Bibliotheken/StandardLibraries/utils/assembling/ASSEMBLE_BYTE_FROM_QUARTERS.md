@@ -2,9 +2,9 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ![ASSEMBLE_BYTE_FROM_QUARTERS](https://github.com/user-attachments/assets/0c4e652e-a741-472a-b8d9-d7721c16cc9a)
 
@@ -65,7 +65,7 @@ Der Funktionsblock nimmt vier Quarter-Bytes entgegen und kombiniert sie zu einem
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
+- [Uebung_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 

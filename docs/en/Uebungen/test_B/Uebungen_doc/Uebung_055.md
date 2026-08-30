@@ -17,9 +17,9 @@ Understanding extended signal states. In professional control systems, a simple 
 
 ![Uebung_055_network](./Uebung_055_network.svg)
 
-* **`BOOL_TO_Q`**: Converts a standard bit into a 2-bit quarter.
-* **`Q_TO_BOOL`**: Extracts the main signal (On/Off) from the quarter.
-* **`QUARTER_TO_STR_STATUS`**: Converts the 2-bit code into readable text (e.g., "STATUS_OFF", "STATUS_ON").
+- **`BOOL_TO_Q`**: Converts a standard bit into a 2-bit quarter.
+- **`Q_TO_BOOL`**: Extracts the main signal (On/Off) from the quarter.
+- **`QUARTER_TO_STR_STATUS`**: Converts the 2-bit code into readable text (e.g., "STATUS_OFF", "STATUS_ON").
 
 -----
 

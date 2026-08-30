@@ -35,7 +35,7 @@ Die gesamte Schaltung besteht aus einem SubApp‑Typ (SubAppType) mit der Bezeic
   - `Q` (BOOL) → wird `TRUE`, wenn der Zählerstand 0 erreicht hat
   - `CV` (INT) → aktueller Zählerstand
 
-**Funktionsweise**:  
+**Funktionsweise**:
 Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zähler um 1 herunter. Ein positiver Flanke an `LD` setzt den Zähler zurück auf den Wert von `PV`. Der Ausgang `Q` ist `TRUE`, solange der Zählerstand = 0 ist. Der aktuelle Zählerstand wird über `CV` ausgegeben.
 
 #### `Input_CD` (Typ: `logiBUS::io::DI::logiBUS_IX`)
@@ -92,19 +92,19 @@ Der Baustein zählt bei jedem positiven Flankenwechsel an `CD` den internen Zäh
 
 Der Ablauf der Übung wird durch die Ereignis‑ und Datenverbindungen im FBNetzwerk bestimmt:
 
-1. **Ereignisauslösung**  
-   - Die beiden Digitaleingänge `Input_CD` und `Input_LD` erzeugen bei einem Signalwechsel das Ereignis `IND`.  
+1. **Ereignisauslösung**
+   - Die beiden Digitaleingänge `Input_CD` und `Input_LD` erzeugen bei einem Signalwechsel das Ereignis `IND`.
    - Beide Ereignisse werden auf den **gleichen** Ereigniseingang `REQ` des Zählers `FB_CTD` geschaltet. Das bedeutet: Jeder Tastendruck (egal ob CD oder LD) triggert eine Neuberechnung des Zählers.
 
-2. **Datenkopplung**  
-   - Der **Zählimpuls** (`CD`) wird direkt vom Ausgang `IN` des Eingangsbausteins `Input_CD` an den Dateneingang `FB_CTD.CD` geführt.  
-   - Der **Ladeimpuls** (`LD`) wird vom Ausgang `IN` des `Input_LD` an `FB_CTD.LD` angeschlossen.  
-   - Der **Zählerausgang Q** wird an den Ausgabebaustein `Output_Q1.OUT` weitergegeben.  
+2. **Datenkopplung**
+   - Der **Zählimpuls** (`CD`) wird direkt vom Ausgang `IN` des Eingangsbausteins `Input_CD` an den Dateneingang `FB_CTD.CD` geführt.
+   - Der **Ladeimpuls** (`LD`) wird vom Ausgang `IN` des `Input_LD` an `FB_CTD.LD` angeschlossen.
+   - Der **Zählerausgang Q** wird an den Ausgabebaustein `Output_Q1.OUT` weitergegeben.
    - Der **aktuelle Zählerstand `CV`** wird über den Konvertierungsbaustein `F_INT_TO_UDINT` an das Terminal `Q_NumericValue.u32NewValue` gesendet.
 
-3. **Terminal‑Aktualisierung**  
-   - Sobald die Berechnung des Zählers abgeschlossen ist, wird das Ereignis `CNF` von `FB_CTD` ausgelöst.  
-   - Dieses Ereignis triggert sowohl den Ausgabebaustein `Output_Q1` als auch den Konvertierungsbaustein `F_INT_TO_UDINT`.  
+3. **Terminal‑Aktualisierung**
+   - Sobald die Berechnung des Zählers abgeschlossen ist, wird das Ereignis `CNF` von `FB_CTD` ausgelöst.
+   - Dieses Ereignis triggert sowohl den Ausgabebaustein `Output_Q1` als auch den Konvertierungsbaustein `F_INT_TO_UDINT`.
    - Nach der Konvertierung feuert `F_INT_TO_UDINT.CNF` und aktualisiert die numerische Anzeige auf dem Terminal.
 
 **Lernziele dieser Übung**:
@@ -114,10 +114,10 @@ Der Ablauf der Übung wird durch die Ereignis‑ und Datenverbindungen im FBNetz
 - Ausgabe eines Zählerwerts auf einem Terminal mithilfe eines isobus‑Bausteins.
 - Verständnis der Ereignis‑ und Datenflusssteuerung in einer SubApplikation.
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Benötigte Vorkenntnisse**: Grundlegende Bedienung der 4diac‑IDE, Verständnis von IEC 61131‑3 Funktionbausteinen.
 
-**Starten der Übung**:  
+**Starten der Übung**:
 Laden Sie die Übung `Uebung_215` aus dem Paket `Uebungen` in ein leeres Projekt. Verbinden Sie die Hardwareeingänge `Input_I1` (CD) und `Input_I2` (LD) mit Tastern und den Ausgang `Output_Q1` mit einer Anzeige (z.B. Lampe). Das Terminal‑Objekt `OutputNumber_N1` muss im Pool konfiguriert sein.
 
 ---
@@ -130,4 +130,4 @@ In dieser Übung wurde ein vollständiger Rückwärtszähler gemäß IEC 61131�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

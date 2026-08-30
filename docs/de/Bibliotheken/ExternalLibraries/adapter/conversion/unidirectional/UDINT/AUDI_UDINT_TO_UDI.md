@@ -34,5 +34,4 @@ Der Funktionsblock empfängt einen UDINT-Wert am Daten-Eingang OUT und wandelt d
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
-
+- [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)

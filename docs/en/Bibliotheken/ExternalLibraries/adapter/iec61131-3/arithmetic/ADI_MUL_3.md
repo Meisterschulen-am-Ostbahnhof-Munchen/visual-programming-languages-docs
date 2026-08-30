@@ -33,17 +33,17 @@ Because it is an adapter-based function block, the `ADI_MUL_3` does not have any
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ADI`)
-* First multiplicand for the calculation operation.
-* **IN2** (Type: `adapter::types::unidirectional::ADI`)
-* Second multiplicand for the calculation operation.
-* **IN3** (Type: `adapter::types::unidirectional::ADI`)
-* Third multiplicand for the calculation operation.
+- **IN1** (Type: `adapter::types::unidirectional::ADI`)
+- First multiplicand for the calculation operation.
+- **IN2** (Type: `adapter::types::unidirectional::ADI`)
+- Second multiplicand for the calculation operation.
+- **IN3** (Type: `adapter::types::unidirectional::ADI`)
+- Third multiplicand for the calculation operation.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ADI`)
-* Output adapter that provides the mathematical product of the three input values.
+- **OUT** (Type: `adapter::types::unidirectional::ADI`)
+- Output adapter that provides the mathematical product of the three input values.
 
 ## Functionality
 
@@ -55,10 +55,10 @@ The calculated result is immediately passed to the output adapter `OUT`, and a c
 
 ## Technical Features
 
-* **Generic Type:** The function block is based on the generic class `'GEN_ADI_MUL'`. This allows for flexible handling of different numeric data types (e.g., `INT`, `UINT`, `REAL`, `LREAL`), depending on how the underlying ADI adapters are implemented.
+- **Generic Type:** The function block is based on the generic class `'GEN_ADI_MUL'`. This allows for flexible handling of different numeric data types (e.g., `INT`, `UINT`, `REAL`, `LREAL`), depending on how the underlying ADI adapters are implemented.
 
 
-* **Generic Type:** The function block is based on the generic class `'GEN_ADI_MUL'`. This enables flexible handling of different numeric data types (e.g., `INT`, `UINT`, `REAL`, `LREAL`). * **Unidirectional Adapters:** Using the type `unidirectional::ADI` ensures a clear, one-way data flow, minimizing coupling between program components and increasing system stability.
+- **Generic Type:** The function block is based on the generic class `'GEN_ADI_MUL'`. This enables flexible handling of different numeric data types (e.g., `INT`, `UINT`, `REAL`, `LREAL`). * **Unidirectional Adapters:** Using the type `unidirectional::ADI` ensures a clear, one-way data flow, minimizing coupling between program components and increasing system stability.
 
 ## State Overview
 
@@ -66,9 +66,9 @@ The function block is designed as a purely mathematical, stateless block. It doe
 
 ## Application Scenarios
 
-* **Volume Calculations:** Calculating the volume from three dimensions (length × width × height).
-* **Three-Phase Measurements:** Power or energy calculations where several factors (e.g., current, voltage, and a scaling/correction factor) need to be multiplied together.
-* **Multi-Level Scaling:** Reading a sensor value that needs to be multiplied by a calibration value and an additional gain factor.
+- **Volume Calculations:** Calculating the volume from three dimensions (length × width × height).
+- **Three-Phase Measurements:** Power or energy calculations where several factors (e.g., current, voltage, and a scaling/correction factor) need to be multiplied together.
+- **Multi-Level Scaling:** Reading a sensor value that needs to be multiplied by a calibration value and an additional gain factor.
 
 ## Comparison with Similar Blocks
 

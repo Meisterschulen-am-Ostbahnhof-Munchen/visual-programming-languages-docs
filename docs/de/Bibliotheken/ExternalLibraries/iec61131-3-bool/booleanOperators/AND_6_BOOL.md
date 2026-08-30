@@ -13,24 +13,24 @@ Der Funktionsblock `AND_6_BOOL` ist ein Standardbaustein zur Berechnung der logi
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der UND-Verknüpfung aus. Beim Eintreffen von `REQ` werden die Werte aller sechs Daten-Eingänge (`IN1` bis `IN6`) ausgelesen und verarbeitet.
+-   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der UND-Verknüpfung aus. Beim Eintreffen von `REQ` werden die Werte aller sechs Daten-Eingänge (`IN1` bis `IN6`) ausgelesen und verarbeitet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
+-   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
 
-*   **IN1** (BOOL): UND-Eingang 1.
-*   **IN2** (BOOL): UND-Eingang 2.
-*   **IN3** (BOOL): UND-Eingang 3.
-*   **IN4** (BOOL): UND-Eingang 4.
-*   **IN5** (BOOL): UND-Eingang 5.
-*   **IN6** (BOOL): UND-Eingang 6.
+-   **IN1** (BOOL): UND-Eingang 1.
+-   **IN2** (BOOL): UND-Eingang 2.
+-   **IN3** (BOOL): UND-Eingang 3.
+-   **IN4** (BOOL): UND-Eingang 4.
+-   **IN5** (BOOL): UND-Eingang 5.
+-   **IN6** (BOOL): UND-Eingang 6.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (BOOL): Ergebnis der UND-Verknüpfung. Der Ausgang ist nur `TRUE`, wenn **alle** sechs Eingänge (`IN1` bis `IN6`) den Wert `TRUE` haben. In allen anderen Fällen ist der Ausgang `FALSE`.
+-   **OUT** (BOOL): Ergebnis der UND-Verknüpfung. Der Ausgang ist nur `TRUE`, wenn **alle** sechs Eingänge (`IN1` bis `IN6`) den Wert `TRUE` haben. In allen anderen Fällen ist der Ausgang `FALSE`.
 
 ### **Adapter**
 
@@ -43,9 +43,9 @@ Die Funktionsweise ist deterministisch und einfach: Bei jedem Eintreffen des Ere
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist als generischer Baustein (`GEN_AND`) implementiert, was bedeutet, dass er eine spezifische Instanz einer allgemeineren UND-Funktionsblockfamilie ist.
-*   **Feste Eingangsanzahl:** Im Gegensatz zu Bausteinen mit variabler Eingangsanzahl besitzt dieser Block genau sechs fest definierte Eingänge.
-*   **Ereignisgesteuert:** Die Operation wird ausschließlich durch ein eingehendes Ereignis (`REQ`) ausgeführt, was typisch für die Funktionsbaustein-Architektur (FB) in 4diac ist.
+-   **Generischer Baustein:** Der Block ist als generischer Baustein (`GEN_AND`) implementiert, was bedeutet, dass er eine spezifische Instanz einer allgemeineren UND-Funktionsblockfamilie ist.
+-   **Feste Eingangsanzahl:** Im Gegensatz zu Bausteinen mit variabler Eingangsanzahl besitzt dieser Block genau sechs fest definierte Eingänge.
+-   **Ereignisgesteuert:** Die Operation wird ausschließlich durch ein eingehendes Ereignis (`REQ`) ausgeführt, was typisch für die Funktionsbaustein-Architektur (FB) in 4diac ist.
 
 ## Zustandsübersicht
 
@@ -55,15 +55,15 @@ Der Baustein besitzt keinen internen Zustand oder Speicher. Sein Verhalten ist r
 
 Typische Anwendungen sind Sicherheits- und Freigabeketten in Steuerungslogik, bei denen mehrere Bedingungen gleichzeitig erfüllt sein müssen, bevor eine Aktion ausgeführt wird.
 
-*   **Maschinenstart:** Starten einer Maschine nur, wenn alle Schutztüren geschlossen (`TRUE`) und alle Not-Aus-Taster nicht gedrückt (`TRUE`) sind.
-*   **Prozessfreigabe:** Freigabe eines Prozessschritts nur, wenn alle vorgelagerten Schritte erfolgreich abgeschlossen (`TRUE`) und alle erforderlichen Ressourcen verfügbar (`TRUE`) sind.
-*   **Mehrfachsensor-Abfrage:** Auswertung mehrerer Sensoren, die alle ein Signal geben müssen, um eine Position oder einen Zustand zu bestätigen.
+-   **Maschinenstart:** Starten einer Maschine nur, wenn alle Schutztüren geschlossen (`TRUE`) und alle Not-Aus-Taster nicht gedrückt (`TRUE`) sind.
+-   **Prozessfreigabe:** Freigabe eines Prozessschritts nur, wenn alle vorgelagerten Schritte erfolgreich abgeschlossen (`TRUE`) und alle erforderlichen Ressourcen verfügbar (`TRUE`) sind.
+-   **Mehrfachsensor-Abfrage:** Auswertung mehrerer Sensoren, die alle ein Signal geben müssen, um eine Position oder einen Zustand zu bestätigen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **AND (mit 2 Eingängen):** Der Standard-`AND`-Block hat typischerweise nur zwei Eingänge. `AND_6_BOOL` bietet eine spezialisierte, kompaktere Darstellung für Anwendungen mit genau sechs Eingängen, ohne dass mehrere Blöcke verkettet werden müssen. Siehe: [AND_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_6.md)
-*   **GEN_AND (Generischer UND-Baustein):** `AND_6_BOOL` ist eine konkrete Instanz dieses generischen Typs. Andere Instanzen könnten eine andere Anzahl von Eingängen haben (z.B. `AND_4_BOOL`).
-*   **OR_6_BOOL:** Ein ähnlicher Baustein, der jedoch eine logische ODER-Verknüpfung durchführt, bei der das Ergebnis `TRUE` ist, wenn mindestens ein Eingang `TRUE` ist.
+-   **AND (mit 2 Eingängen):** Der Standard-`AND`-Block hat typischerweise nur zwei Eingänge. `AND_6_BOOL` bietet eine spezialisierte, kompaktere Darstellung für Anwendungen mit genau sechs Eingängen, ohne dass mehrere Blöcke verkettet werden müssen. Siehe: [AND_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_6.md)
+-   **GEN_AND (Generischer UND-Baustein):** `AND_6_BOOL` ist eine konkrete Instanz dieses generischen Typs. Andere Instanzen könnten eine andere Anzahl von Eingängen haben (z.B. `AND_4_BOOL`).
+-   **OR_6_BOOL:** Ein ähnlicher Baustein, der jedoch eine logische ODER-Verknüpfung durchführt, bei der das Ergebnis `TRUE` ist, wenn mindestens ein Eingang `TRUE` ist.
 
 ## Fazit
 
@@ -73,4 +73,4 @@ Der `AND_6_BOOL`-Funktionsblock ist ein zuverlässiger und einfach anzuwendender
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,8 +4,8 @@
 
 ![E_REND_ecc](./E_REND_ecc.svg)
 
-* [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_REND-Ereignissynchronisation-in-IEC-61499-e368co9)
-* [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_REND-Event-Synchronization-in-IEC-61499-e368cv2)
+- [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_REND-Ereignissynchronisation-in-IEC-61499-e368co9)
+- [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_REND-Event-Synchronization-in-IEC-61499-e368cv2)
 ## Introduction
 
 The `E_REND` (Event Rendezvous) is a function block according to IEC 61499 that serves as a synchronization point for two different event streams. It only fires an output event when it has received at least one event from each of its inputs. This corresponds to a logical AND operation over time.
@@ -47,12 +47,12 @@ The `E_REND` (Event Rendezvous) is a function block according to IEC 61499 that 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a6](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a6.md)
-* [Exercise_004a6_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a6_AX.md)
-* [Exercise_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
-* [Exercise_004a7_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
-* [Exercise_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
-* [Exercise_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
+- [Exercise_004a6](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a6.md)
+- [Exercise_004a6_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a6_AX.md)
+- [Exercise_004a7](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a7.md)
+- [Exercise_004a7_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+- [Exercise_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+- [Exercise_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
 
 ## Conclusion
 

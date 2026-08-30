@@ -105,7 +105,7 @@ just on the actual limit transition.
 
 ## 🛠️ Related Exercises
 
-* No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
+- No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
   `4diac_training1`).
 
 ## Conclusion

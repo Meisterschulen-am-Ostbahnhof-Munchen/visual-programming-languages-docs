@@ -19,8 +19,8 @@ Two central function blocks are used in the subapplication:
 
 ![Uebung_001c_AX_network](./Uebung_001c_AX_network.svg)
 
-* **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]In addition to the standard function, the event output `INITO` (Initialization Output) is used here to trigger a one-time query at startup[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block receives the initially requested value via the adapter connection and sets the output `Output_Q1` accordingly[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]In addition to the standard function, the event output `INITO` (Initialization Output) is used here to trigger a one-time query at startup[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block receives the initially requested value via the adapter connection and sets the output `Output_Q1` accordingly[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 
@@ -62,6 +62,6 @@ Imagine a controller that operates a ventilation flap based on the position of a
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -73,7 +73,7 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_093](../../../Uebungen/test_B/Uebungen_doc/Uebung_093.md)
+- [Uebung_093](../../../Uebungen/test_B/Uebungen_doc/Uebung_093.md)
 
 ## Fazit
 

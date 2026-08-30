@@ -7,7 +7,7 @@
 
 The F_ACOS function block calculates the principal value of the arccosine of a numerical input. It implements the mathematical function for determining the angle whose cosine corresponds to the input value. The block belongs to the category of standard functions for numeric variables according to IEC 61131-3.
 
-* ![F_ACOS](F_ACOS.svg)
+- ![F_ACOS](F_ACOS.svg)
 
 ## Interface Structure
 

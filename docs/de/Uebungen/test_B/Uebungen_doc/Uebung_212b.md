@@ -46,36 +46,36 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
 
 ### Ereignisverbindungen
 
-- `Input_CU.IND` → `FB_CTU_LINT.REQ`  
+- `Input_CU.IND` → `FB_CTU_LINT.REQ`
   Bei einer positiven Flanke des Digitaleingangs I1 wird der Zähler zum Hochzählen angestoßen.
 
-- `Input_R.IND` → `FB_CTU_LINT.REQ`  
+- `Input_R.IND` → `FB_CTU_LINT.REQ`
   Bei einer positiven Flanke des Digitaleingangs I2 wird der Zähler zurückgesetzt.
 
-- `FB_CTU_LINT.CNF` → `Output_Q1.REQ`  
+- `FB_CTU_LINT.CNF` → `Output_Q1.REQ`
   Nach Abschluss einer Zähleroperation (egal ob Zählen oder Reset) wird der Ausgang aktualisiert.
 
-- `FB_CTU_LINT.CNF` → `F_LINT_TO_LREAL.REQ`  
+- `FB_CTU_LINT.CNF` → `F_LINT_TO_LREAL.REQ`
   Gleichzeitig wird die Typkonvertierung des aktuellen Zählerwerts angestoßen.
 
-- `F_LINT_TO_LREAL.CNF` → `Q_NumericValue_PHYS_LREAL.REQ`  
+- `F_LINT_TO_LREAL.CNF` → `Q_NumericValue_PHYS_LREAL.REQ`
   Nach der Konvertierung wird der Wert an das Terminal gesendet.
 
 ### Datenverbindungen
 
-- `Input_CU.IN` → `FB_CTU_LINT.CU`  
+- `Input_CU.IN` → `FB_CTU_LINT.CU`
   Der Zustand von Eingang I1 steuert den Zählimpuls (positive Flanke).
 
-- `Input_R.IN` → `FB_CTU_LINT.R`  
+- `Input_R.IN` → `FB_CTU_LINT.R`
   Der Zustand von Eingang I2 steuert den Reset (positive Flanke).
 
-- `FB_CTU_LINT.Q` → `Output_Q1.OUT`  
+- `FB_CTU_LINT.Q` → `Output_Q1.OUT`
   Der Ausgang Q des Zählers (TRUE wenn CV >= PV) wird an den Digitalausgang Q1 weitergegeben.
 
-- `FB_CTU_LINT.CV` → `F_LINT_TO_LREAL.IN`  
+- `FB_CTU_LINT.CV` → `F_LINT_TO_LREAL.IN`
   Der aktuelle Zählerwert (LINT) gelangt in den Konverter.
 
-- `F_LINT_TO_LREAL.OUT` → `Q_NumericValue_PHYS_LREAL.lrPhys`  
+- `F_LINT_TO_LREAL.OUT` → `Q_NumericValue_PHYS_LREAL.lrPhys`
   Der konvertierte LREAL-Wert wird dem Terminal-Baustein übergeben.
 
 ### Funktionsweise
@@ -85,14 +85,14 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
 3. Erreicht der Zählerstand den voreingestellten Wert PV (hier 5) oder mehr, wird der Ausgang Q auf TRUE gesetzt. Ein weiteres Zählen ist dann nicht mehr möglich, bis ein Reset erfolgt.
 4. Nach jedem Zähl- oder Reset-Vorgang wird der aktuelle CV-Wert auf dem Terminal (LogiBUS Utility) in physikalischer LREAL-Darstellung ausgegeben.
 
-**Lernziele:**  
+**Lernziele:**
 
-- Verwendung eines IEC 61131-3 Zählers (FB_CTU_LINT)  
-- Parametrierung von Voreinstellwerten  
-- Ereignis- und Datenfluss zwischen Funktionsbausteinen  
-- Typkonvertierung (LINT → LREAL) und Terminalausgabe  
+- Verwendung eines IEC 61131-3 Zählers (FB_CTU_LINT)
+- Parametrierung von Voreinstellwerten
+- Ereignis- und Datenfluss zwischen Funktionsbausteinen
+- Typkonvertierung (LINT → LREAL) und Terminalausgabe
 
-**Schwierigkeitsgrad:** Fortgeschrittene Grundlagen  
+**Schwierigkeitsgrad:** Fortgeschrittene Grundlagen
 **Vorkenntnisse:** Grundverständnis der 4diac-IDE, Umgang mit digitalen Ein-/Ausgängen, Ereignisverkettung.
 
 ## Zusammenfassung
@@ -103,4 +103,4 @@ Die Übung 212b zeigt die Kombination eines IEC 61131-3 Vorwärtszählers (FB_CT
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

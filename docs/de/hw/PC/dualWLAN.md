@@ -39,8 +39,8 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 
 ### Tabelle
 
-*   läuft unter Windows 10 ohne Treiberinstallation
-*   läuft unter Ubuntu 22.04 LTS ohne Treiberinstallation
+-   läuft unter Windows 10 ohne Treiberinstallation
+-   läuft unter Ubuntu 22.04 LTS ohne Treiberinstallation
 
 | Typ | Link | Windows 10 | Ubuntu 22.04 LTS | CCI.OS-2.0.3 | CCI.OS-3.3.0 |
 | --- | --- | --- | --- | --- | --- |

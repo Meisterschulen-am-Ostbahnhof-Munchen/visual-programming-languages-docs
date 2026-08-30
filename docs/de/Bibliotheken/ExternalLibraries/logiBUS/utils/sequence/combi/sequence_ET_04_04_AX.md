@@ -13,28 +13,28 @@ Der Funktionsblock `sequence_ET_04_04_AX` ist die adapterbasierte Variante des `
 
 ### **Ereignis-Eingänge**
 
-*   **`EI1`**: Allgemeines Eingangsereignis.
-*   **`START_S1`**: Startet die Sequenz oder springt innerhalb der Phasen zurück.
-*   **`S4_S5`**: Manueller Übergang von Zustand 4 zu 5.
-*   **`EI_RESET`**: Globaler Reset der Sequenz.
+-   **`EI1`**: Allgemeines Eingangsereignis.
+-   **`START_S1`**: Startet die Sequenz oder springt innerhalb der Phasen zurück.
+-   **`S4_S5`**: Manueller Übergang von Zustand 4 zu 5.
+-   **`EI_RESET`**: Globaler Reset der Sequenz.
 
 ### **Ereignis-Ausgänge**
 
-*   **`CNF`**: Ausführungsbestätigung mit aktueller `STATE_NR`.
-*   *(Hinweis: Die zustandsspezifischen Ereignisse EO_Sx entfallen hier, da sie in den Adaptern enthalten sind)*
+-   **`CNF`**: Ausführungsbestätigung mit aktueller `STATE_NR`.
+-   *(Hinweis: Die zustandsspezifischen Ereignisse EO_Sx entfallen hier, da sie in den Adaptern enthalten sind)*
 
 ### **Daten-Eingänge**
 
-*   **`DT_S1_S2`** bis **`DT_S8_START`** (TIME): Zeitverzögerungen für automatische Übergänge.
+-   **`DT_S1_S2`** bis **`DT_S8_START`** (TIME): Zeitverzögerungen für automatische Übergänge.
 
 ### **Daten-Ausgänge**
 
-*   **`STATE_NR`** (SINT): Aktuelle Zustandsnummer (0-8).
+-   **`STATE_NR`** (SINT): Aktuelle Zustandsnummer (0-8).
 
 ### **Adapter**
 
-*   **`DO_S1` bis `DO_S8`** (Plug, Typ: `adapter::types::unidirectional::AX`): Adapter-Ausgänge für die Zustände 1 bis 8. Jedes Betreten oder Verlassen eines Zustands löst das Ereignis `E1` am entsprechenden Adapter aus und setzt `D1` auf `TRUE` bzw. `FALSE`.
-*   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Schnittstelle zum externen Timer.
+-   **`DO_S1` bis `DO_S8`** (Plug, Typ: `adapter::types::unidirectional::AX`): Adapter-Ausgänge für die Zustände 1 bis 8. Jedes Betreten oder Verlassen eines Zustands löst das Ereignis `E1` am entsprechenden Adapter aus und setzt `D1` auf `TRUE` bzw. `FALSE`.
+-   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Schnittstelle zum externen Timer.
 
 ## Funktionsweise
 
@@ -52,7 +52,7 @@ Siehe `sequence_ET_04_04`.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **sequence_ET_04_04**: Die Variante mit klassischen BOOL-Ausgängen und EO-Events.
+-   **sequence_ET_04_04**: Die Variante mit klassischen BOOL-Ausgängen und EO-Events.
 
 ## Fazit
 

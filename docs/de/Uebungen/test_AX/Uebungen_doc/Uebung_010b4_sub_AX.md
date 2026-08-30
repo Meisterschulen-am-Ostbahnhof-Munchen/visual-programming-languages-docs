@@ -19,24 +19,24 @@ In dieser Übung wird eine Sub-Applikation definiert, die intern zwei spezialisi
 - **Verwendete interne FBs**:
 
     - **IXA**: `isobus::UT::io::Softkey::Softkey_IXA`
-        - **Parameter**: 
+        - **Parameter**:
             - `QI` = `TRUE` (Baustein ist aktiv)
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `u16ObjId` (Verbunden mit der Schnittstelle `u16ObjId`)
-        - **Adapterausgang**: 
+        - **Adapterausgang**:
             - `IN` (Verbunden mit `QXA.OUT`)
-    
+
     - **QXA**: `logiBUS::io::DQ::logiBUS_QXA`
-        - **Parameter**: 
+        - **Parameter**:
             - `QI` = `TRUE` (Baustein ist aktiv)
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `Output` (Verbunden mit der Schnittstelle `Output`)
-        - **Adaptereingang**: 
+        - **Adaptereingang**:
             - `OUT` (Verbunden mit `IXA.IN`)
 
 - **Funktionsweise**:
-    Dieser Sub-Baustein fungiert als Brücke. Er nimmt eine Objekt-ID (`u16ObjId`) entgegen, die einen Softkey auf einem ISOBUS-Universal-Terminal (UT) identifiziert. Gleichzeitig nimmt er eine Ausgangskonfiguration (`Output`, Typ `logiBUS_DO_S`) entgegen, die bestimmt, welcher physische Ausgang geschaltet werden soll. 
-    
+    Dieser Sub-Baustein fungiert als Brücke. Er nimmt eine Objekt-ID (`u16ObjId`) entgegen, die einen Softkey auf einem ISOBUS-Universal-Terminal (UT) identifiziert. Gleichzeitig nimmt er eine Ausgangskonfiguration (`Output`, Typ `logiBUS_DO_S`) entgegen, die bestimmt, welcher physische Ausgang geschaltet werden soll.
+
     Innerhalb des Netzwerks wird der Softkey-Status über den Baustein `IXA` erfasst. Anstatt diskrete Events und Booleans zu verdrahten, nutzt diese Implementierung eine **Adapter-Verbindung**. Der Adapter-Port `IN` des Softkey-Bausteins (`IXA`) ist direkt mit dem Adapter-Port `OUT` des Ausgangs-Bausteins (`QXA`) verbunden. Dies ermöglicht eine direkte Durchleitung des Zustands (z.B. Tastendruck) auf den Hardware-Ausgang.
 
 ## Programmablauf und Verbindungen
@@ -44,18 +44,18 @@ In dieser Übung wird eine Sub-Applikation definiert, die intern zwei spezialisi
 Das Netzwerk innerhalb der Sub-Applikation ist minimal gehalten und verlässt sich auf die Abstraktion durch Adapter.
 
 1.  **Schnittstellen-Eingänge**:
-    *   **u16ObjId (UINT)**: Hier wird die ID des Softkeys übergeben (Initialwert: `ID_NULL`). Diese Variable wird intern an `IXA.u16ObjId` weitergeleitet.
-    *   **Output (logiBUS_DO_S)**: Hier wird der Ziel-Ausgang definiert (z.B. Output_Q1..Q8). Diese Variable wird intern an `QXA.Output` weitergeleitet.
+    -   **u16ObjId (UINT)**: Hier wird die ID des Softkeys übergeben (Initialwert: `ID_NULL`). Diese Variable wird intern an `IXA.u16ObjId` weitergeleitet.
+    -   **Output (logiBUS_DO_S)**: Hier wird der Ziel-Ausgang definiert (z.B. Output_Q1..Q8). Diese Variable wird intern an `QXA.Output` weitergeleitet.
 
 2.  **Interne Logik**:
-    *   Der Baustein `IXA` initialisiert die Kommunikation mit dem Softkey unter der angegebenen ID.
-    *   Der Baustein `QXA` initialisiert die Ansteuerung des gewählten digitalen Ausgangs.
-    *   Die Verbindung zwischen Eingabe und Ausgabe erfolgt nicht über klassische `AND`/`OR` Logik oder Event-Trigger (`INIT`, `REQ`, `CNF`), sondern über die **Adapter-Verbindung** (`Connection Source="IXA.IN" Destination="QXA.OUT"`). Dies abstrahiert den Signalfluss und sorgt dafür, dass der Ausgang dem logischen Zustand des Eingangsadapters folgt.
+    -   Der Baustein `IXA` initialisiert die Kommunikation mit dem Softkey unter der angegebenen ID.
+    -   Der Baustein `QXA` initialisiert die Ansteuerung des gewählten digitalen Ausgangs.
+    -   Die Verbindung zwischen Eingabe und Ausgabe erfolgt nicht über klassische `AND`/`OR` Logik oder Event-Trigger (`INIT`, `REQ`, `CNF`), sondern über die **Adapter-Verbindung** (`Connection Source="IXA.IN" Destination="QXA.OUT"`). Dies abstrahiert den Signalfluss und sorgt dafür, dass der Ausgang dem logischen Zustand des Eingangsadapters folgt.
 
 **Anwendungshinweise:**
 
-*   Dieser Baustein ist als generisches Modul gedacht. Er kann mehrfach im Hauptprogramm instanziiert werden, um verschiedene Tasten auf verschiedene Ausgänge zu legen, ohne die interne Logik neu programmieren zu müssen.
-*   Es werden keine expliziten Events nach außen geführt; die Steuerung erfolgt rein intern über die Bus-Treiber.
+-   Dieser Baustein ist als generisches Modul gedacht. Er kann mehrfach im Hauptprogramm instanziiert werden, um verschiedene Tasten auf verschiedene Ausgänge zu legen, ohne die interne Logik neu programmieren zu müssen.
+-   Es werden keine expliziten Events nach außen geführt; die Steuerung erfolgt rein intern über die Bus-Treiber.
 
 ## Zusammenfassung
 

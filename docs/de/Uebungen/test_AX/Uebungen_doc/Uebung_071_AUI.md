@@ -11,26 +11,26 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 
 ### Haupt-FBs (auf oberster Ebene)
 
-- **IA_WBSD**: `isobus::tecu::IA_WBSD`  
+- **IA_WBSD**: `isobus::tecu::IA_WBSD`
   ISOBUS-Adapter-Baustein für die Wheel Based Machine Speed. Parameter: `QI` = TRUE (aktiviert).
 
-- **Q_NumericValue_WBSD**: `isobus::UT::Q::Q_NumericValue_AUDI`  
+- **Q_NumericValue_WBSD**: `isobus::UT::Q::Q_NumericValue_AUDI`
   Baustein zum Senden eines numerischen Werts (Speed) an den UT. Parameter: `u16ObjId` = `NumberVariable_Wheel_based_machine_speed` (Objektreferenz aus konstantem Pool).
 
-- **DigitalOutput_Q1**: `logiBUS::io::DQ::logiBUS_QXA`  
+- **DigitalOutput_Q1**: `logiBUS::io::DQ::logiBUS_QXA`
   Digitalausgangsbaustein für den logiBUS. Parameter: `QI` = TRUE, `Output` = `Output_Q1` (definierte Konstante für den Ausgang).
 
-- **CONV_AUI_AUDI**: `adapter::conversion::unidirectional::AUI_TO_AUDI`  
+- **CONV_AUI_AUDI**: `adapter::conversion::unidirectional::AUI_TO_AUDI`
   Konvertiert einen AUI-Adapter (unidirektional) in einen AUDI-Adapter (unidirektional) – vermutlich zur Anpassung der Schnittstelle.
 
-- **AUI_SPLIT_2**: `adapter::events::unidirectional::AUI_SPLIT_2`  
+- **AUI_SPLIT_2**: `adapter::events::unidirectional::AUI_SPLIT_2`
   Verteilt ein eingehendes AUI-Ereignis auf zwei Ausgänge (OUT1, OUT2) – hier für parallele Weiterleitung der Geschwindigkeitsdaten.
 
 ### Sub-Bausteine: `AX_GT_0_UINT`
 
 - **Typ**: `MyLib::sys::AX_GT_0_UINT` (benutzerdefinierte SubApp)
 - **Verwendete interne FBs**: (Details liegen nicht vor, da die SubApp extern definiert ist. Sie enthält vermutlich einen Vergleichsbaustein für unsigned integer.)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Diese SubApp prüft, ob der eingehende Wert (vom Typ UINT) größer als 0 ist. Trifft dies zu, wird der Ausgangsadapter `AX_OUT` aktiviert. Dieser Ausgang steuert anschließend den digitalen Ausgang Q1 (über den Adapterverbund mit `DigitalOutput_Q1.OUT`).
 
 ## Programmablauf und Verbindungen
@@ -42,11 +42,11 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 3. Der SubApp `AX_GT_0_UINT` aktiviert bei positiver Prüfung den Ausgangsadapter `AX_OUT`.
 4. Der Adapterausgang `AX_OUT` speist den Eingang `OUT` des Digitalausgangsbausteins `DigitalOutput_Q1`, sodass Q1 (z. B. ein Relais oder eine Lampe) eingeschaltet wird, solange die Geschwindigkeit größer als 0 ist.
 
-**Lernziele**:  
+**Lernziele**:
 
-- Verwendung von ISOBUS- und logiBUS-Bausteinen in 4diac.  
-- Arbeiten mit Adaptern (AUI/AUDI) und Adapter-Splittern.  
-- Einbindung einer selbst erstellten SubApp (AX_GT_0_UINT) in ein größeres Netzwerk.  
+- Verwendung von ISOBUS- und logiBUS-Bausteinen in 4diac.
+- Arbeiten mit Adaptern (AUI/AUDI) und Adapter-Splittern.
+- Einbindung einer selbst erstellten SubApp (AX_GT_0_UINT) in ein größeres Netzwerk.
 - Praxisnahe Automatisierungsaufgabe: Geschwindigkeitsausgabe und Schwellwertüberwachung.
 
 **Schwierigkeitsgrad**: Fortgeschritten (Grundkenntnisse in IEC 61499 und Adapterkonzepten erforderlich).
@@ -61,4 +61,4 @@ Die Übung `Uebung_071_AUI` zeigt eine typische landwirtschaftliche Automatisier
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

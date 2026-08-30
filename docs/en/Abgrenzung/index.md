@@ -28,9 +28,9 @@ B --> C#
 
 Typical examples are:
 
-* **C / C++:** Low-level programming, high performance.
-* **Python:** Very popular for data science and automation due to its simple syntax.
-* **Java / C#:** Object-oriented languages, widely used in enterprise software.
+- **C / C++:** Low-level programming, high performance.
+- **Python:** Very popular for data science and automation due to its simple syntax.
+- **Java / C#:** Object-oriented languages, widely used in enterprise software.
 
 ### Visual Programming Languages
 
@@ -74,10 +74,10 @@ G --> EEC
 
 IEC 61131-3 is the globally established standard for programmable logic controllers (PLCs). It offers both textual and visual languages:
 
-* **LD (Ladder Diagram):** Based on electrical circuit diagrams.
-* **FBD (Function Block Diagram):** Representation of logic as linked blocks.
-* **SFC (Sequential Function Chart):** Modeling of sequences of steps.
-* **ST (Structured Text) & IL (Instruction List):** The textual representatives within the standard.
+- **LD (Ladder Diagram):** Based on electrical circuit diagrams.
+- **FBD (Function Block Diagram):** Representation of logic as linked blocks.
+- **SFC (Sequential Function Chart):** Modeling of sequences of steps.
+- **ST (Structured Text) & IL (Instruction List):** The textual representatives within the standard.
 
 ### IEC 61499 (The Standard for Distributed Systems)
 
@@ -96,6 +96,6 @@ IEC 61131-3 is the globally established standard for programmable logic controll
 
 ### Literature and Sources
 
-* [Wikipedia: Visual Programming Language](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
-* [YouTube: Visual vs. Textual Programming (Concise Summary)](https://www.youtube.com/watch?v=MxJcdqOX9V0)
-* [Comparison using Print2Forms](https://wiki.print2forms.de/doku.php?id=print2forms:skripte:textuellvsvisuell)
+- [Wikipedia: Visual Programming Language](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
+- [YouTube: Visual vs. Textual Programming (Concise Summary)](https://www.youtube.com/watch?v=MxJcdqOX9V0)
+- [Comparison using Print2Forms](https://wiki.print2forms.de/doku.php?id=print2forms:skripte:textuellvsvisuell)

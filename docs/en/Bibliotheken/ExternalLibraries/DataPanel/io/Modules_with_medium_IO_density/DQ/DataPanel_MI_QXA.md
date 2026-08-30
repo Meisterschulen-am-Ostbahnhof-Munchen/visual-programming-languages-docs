@@ -71,9 +71,9 @@ Compared to simple digital output function blocks, DataPanel_MI_QXA offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003b2_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
-* [Exercise_003b3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
-* [Exercise_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
+- [Exercise_003b2_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
+- [Exercise_003b3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
+- [Exercise_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
 
 ## Conclusion
 

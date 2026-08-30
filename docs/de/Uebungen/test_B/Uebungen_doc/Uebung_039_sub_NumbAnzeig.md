@@ -48,13 +48,13 @@ Der Ablauf innerhalb dieses Sub-Bausteins ist streng linear und ereignisgesteuer
 3.  **Anzeige-Update**:
     Sobald die Konvertierung bestätigt ist (Event `CNF` von `F_SINT_TO_UINT`), wird der Baustein `Q_NumericValue` aktiviert.
 
-    *   Er übernimmt den konvertierten Wert am Eingang `u32NewValue`.
-    *   Der Parameter `u16ObjId` ist fest auf `OutputNumber_N1` eingestellt, was bedeutet, dass genau dieses Feld auf der Benutzeroberfläche aktualisiert wird.
+    -   Er übernimmt den konvertierten Wert am Eingang `u32NewValue`.
+    -   Der Parameter `u16ObjId` ist fest auf `OutputNumber_N1` eingestellt, was bedeutet, dass genau dieses Feld auf der Benutzeroberfläche aktualisiert wird.
 
 **Verbindungsübersicht:**
 
-*   **Event**: `CNF` (Input) &rarr; `F_SINT_TO_UINT.REQ` &rarr; `F_SINT_TO_UINT.CNF` &rarr; `Q_NumericValue.REQ`.
-*   **Daten**: `STATE_NR` (Input) &rarr; `F_SINT_TO_UINT.IN` &rarr; `F_SINT_TO_UINT.OUT` &rarr; `Q_NumericValue.u32NewValue`.
+-   **Event**: `CNF` (Input) &rarr; `F_SINT_TO_UINT.REQ` &rarr; `F_SINT_TO_UINT.CNF` &rarr; `Q_NumericValue.REQ`.
+-   **Daten**: `STATE_NR` (Input) &rarr; `F_SINT_TO_UINT.IN` &rarr; `F_SINT_TO_UINT.OUT` &rarr; `Q_NumericValue.u32NewValue`.
 
 ## Zusammenfassung
 
@@ -62,6 +62,5 @@ Die Übung **Uebung_039_sub_NumbAnzeig** demonstriert die Kapselung von Logik in
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039](Uebung_039.md)
-* [Uebung_039a](Uebung_039a.md)
-
+- [Uebung_039](Uebung_039.md)
+- [Uebung_039a](Uebung_039a.md)

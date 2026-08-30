@@ -85,7 +85,7 @@ The **F_DIV** is a standards-compliant function block for dividing numeric value
 
 ## 🛠️ Related Exercises
 
-* [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
+- [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Conclusion
 

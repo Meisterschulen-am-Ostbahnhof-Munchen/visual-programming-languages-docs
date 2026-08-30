@@ -22,10 +22,10 @@ In der Subapplikation werden folgende Komponenten instanziiert:
 
 ![Uebung_002b3_AX_network](./Uebung_002b3_AX_network.svg)
 
-  * **`DigitalInput_I1`, `I2`, `I3`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Sie liefern die Eingangssignale für die Logikkette[cite: 1].
-  * **`AND_2_BOOL`**: Eine Instanz des Typs `AX_AND_2`. [cite_start]Verknüpft die Eingänge `I1` und `I2`[cite: 1].
-  * **`OR_2_BOOL`**: Eine Instanz des Typs `AX_OR_2`. [cite_start]Verknüpft das Ergebnis des UND-Bausteins mit dem dritten Eingang `I3`[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Gibt das Endergebnis der kombinatorischen Logik an den Hardware-Ausgang aus[cite: 1].
+  - **`DigitalInput_I1`, `I2`, `I3`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Sie liefern die Eingangssignale für die Logikkette[cite: 1].
+  - **`AND_2_BOOL`**: Eine Instanz des Typs `AX_AND_2`. [cite_start]Verknüpft die Eingänge `I1` und `I2`[cite: 1].
+  - **`OR_2_BOOL`**: Eine Instanz des Typs `AX_OR_2`. [cite_start]Verknüpft das Ergebnis des UND-Bausteins mit dem dritten Eingang `I3`[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Gibt das Endergebnis der kombinatorischen Logik an den Hardware-Ausgang aus[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 

@@ -17,9 +17,9 @@ Understanding edge detection. It shows how to implement behavior using an event 
 
 ![Uebung_020a_network](./Uebung_020a_network.svg)
 
-* **`DigitalInput_I1`**: Standard input. Provides an event on every change.
-* **`E_SWITCH`**: Forwards the event to either `S` or `R`, depending on the level.
-* **`E_RS`**: The event memory.
+- **`DigitalInput_I1`**: Standard input. Provides an event on every change.
+- **`E_SWITCH`**: Forwards the event to either `S` or `R`, depending on the level.
+- **`E_RS`**: The event memory.
 
 -----
 

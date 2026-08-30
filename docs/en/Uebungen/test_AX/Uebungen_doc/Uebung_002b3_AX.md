@@ -19,10 +19,10 @@ The following components are instantiated in the subapplication:
 
 ![Uebung_002b3_AX_network](./Uebung_002b3_AX_network.svg)
 
-* **`DigitalInput_I1`, `I2`, `I3`**: Instances of type `logiBUS_IXA`. [cite_start]They provide the input signals for the logic chain[cite: 1].
-* **`AND_2_BOOL`**: An instance of type `AX_AND_2`. [cite_start]Combines the inputs `I1` and `I2`[cite: 1].
-* **`OR_2_BOOL`**: An instance of type `AX_OR_2`. [cite_start]Combines the result of the AND gate with the third input `I3`[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]Outputs the final result of the combinational logic to the hardware output[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Instances of type `logiBUS_IXA`. [cite_start]They provide the input signals for the logic chain[cite: 1].
+- **`AND_2_BOOL`**: An instance of type `AX_AND_2`. [cite_start]Combines the inputs `I1` and `I2`[cite: 1].
+- **`OR_2_BOOL`**: An instance of type `AX_OR_2`. [cite_start]Combines the result of the AND gate with the third input `I3`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]Outputs the final result of the combinational logic to the hardware output[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 

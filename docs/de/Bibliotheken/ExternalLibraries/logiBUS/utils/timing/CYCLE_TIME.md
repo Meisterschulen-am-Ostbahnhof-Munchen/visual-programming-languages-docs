@@ -13,20 +13,20 @@ Der Funktionsblock `CYCLE_TIME` dient zur Berechnung der verstrichenen Zeit zwis
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Startet die Berechnung der Zykluszeit. Bei diesem Ereignis wird der Algorithmus ausgeführt.
+-   **REQ**: Startet die Berechnung der Zykluszeit. Bei diesem Ereignis wird der Algorithmus ausgeführt.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Wird ausgelöst, sobald die Berechnung abgeschlossen ist. Dieses Ereignis bestätigt die Ausführung und liefert die berechneten Werte an die Datenausgänge.
+-   **CNF**: Wird ausgelöst, sobald die Berechnung abgeschlossen ist. Dieses Ereignis bestätigt die Ausführung und liefert die berechneten Werte an die Datenausgänge.
 
 ### **Daten-Eingänge**
 
-*   **TM** (DINT): Stellt den aktuellen Zeitstempel zum Zeitpunkt des Aufrufs bereit. Dieser Wert wird typischerweise von einer Systemuhr oder einem Timer-Baustein geliefert. Initialwert ist `0`.
+-   **TM** (DINT): Stellt den aktuellen Zeitstempel zum Zeitpunkt des Aufrufs bereit. Dieser Wert wird typischerweise von einer Systemuhr oder einem Timer-Baustein geliefert. Initialwert ist `0`.
 
 ### **Daten-Ausgänge**
 
-*   **CYCLE** (DINT): Enthält die berechnete Zykluszeit, also die Differenz zwischen dem aktuellen (`TM`) und dem vorherigen Zeitstempel (`LAST`). Initialwert ist `0`.
-*   **LAST** (DINT): Speichert den Zeitstempel des letzten Aufrufs (`TM`). Dieser Wert wird für die nächste Berechnung verwendet. Initialwert ist `0`.
+-   **CYCLE** (DINT): Enthält die berechnete Zykluszeit, also die Differenz zwischen dem aktuellen (`TM`) und dem vorherigen Zeitstempel (`LAST`). Initialwert ist `0`.
+-   **LAST** (DINT): Speichert den Zeitstempel des letzten Aufrufs (`TM`). Dieser Wert wird für die nächste Berechnung verwendet. Initialwert ist `0`.
 
 ### **Adapter**
 
@@ -43,9 +43,9 @@ Unmittelbar nach der Ausführung des Algorithmus wird das `CNF`-Ereignis mit den
 
 ## Technische Besonderheiten
 
-*   Der Baustein ist ein **Simple Function Block (Basic FB)** gemäß IEC 61499.
-*   Die verwendeten Datentypen (`DINT`) sind vorzeichenbehaftete 32-Bit-Integer, die für die Darstellung großer Zeitwerte (z.B. in Millisekunden oder Mikrosekunden) geeignet sind.
-*   Die Initialwerte von `TM`, `CYCLE` und `LAST` sind auf `0` gesetzt. Der erste gültige `CYCLE`-Wert nach dem Start ergibt sich daher aus der Differenz `TM - 0`. Dies sollte bei der Initialisierungslogik der Anwendung berücksichtigt werden.
+-   Der Baustein ist ein **Simple Function Block (Basic FB)** gemäß IEC 61499.
+-   Die verwendeten Datentypen (`DINT`) sind vorzeichenbehaftete 32-Bit-Integer, die für die Darstellung großer Zeitwerte (z.B. in Millisekunden oder Mikrosekunden) geeignet sind.
+-   Die Initialwerte von `TM`, `CYCLE` und `LAST` sind auf `0` gesetzt. Der erste gültige `CYCLE`-Wert nach dem Start ergibt sich daher aus der Differenz `TM - 0`. Dies sollte bei der Initialisierungslogik der Anwendung berücksichtigt werden.
 
 ## Zustandsübersicht
 
@@ -53,10 +53,10 @@ Der Baustein besitzt einen einzigen Execution Control State (EC-State) mit dem N
 
 ## Anwendungsszenarien
 
-*   **Zykluszeitüberwachung**: Kontinuierliche Messung der Ausführungszeit eines Programms oder eines bestimmten Programmteils.
-*   **Performance-Monitoring**: Identifikation von Engpässen oder ungewöhnlich langen Zykluszeiten in einer Steuerungsapplikation.
-*   **Diagnose**: Protokollierung von Zykluszeiten zu Analysezwecken oder zur Erstellung von Systemlaufzeitstatistiken.
-*   **Adaptive Steuerung**: Bereitstellung der aktuellen Zykluszeit für Algorithmen, deren Verhalten von der verfügbaren Rechenzeit abhängen soll.
+-   **Zykluszeitüberwachung**: Kontinuierliche Messung der Ausführungszeit eines Programms oder eines bestimmten Programmteils.
+-   **Performance-Monitoring**: Identifikation von Engpässen oder ungewöhnlich langen Zykluszeiten in einer Steuerungsapplikation.
+-   **Diagnose**: Protokollierung von Zykluszeiten zu Analysezwecken oder zur Erstellung von Systemlaufzeitstatistiken.
+-   **Adaptive Steuerung**: Bereitstellung der aktuellen Zykluszeit für Algorithmen, deren Verhalten von der verfügbaren Rechenzeit abhängen soll.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -64,7 +64,7 @@ Im Vergleich zu generischen Zeitmessbausteinen (wie `E_DELAY` oder `E_CYCLE`) is
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 

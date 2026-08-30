@@ -32,14 +32,14 @@ Der Funktionsbaustein `ADI_MUL_4` ist ein generischer, adapterbasierter Baustein
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Faktor für die Multiplikation.
-*   **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Faktor für die Multiplikation.
-*   **IN3** (Typ: `adapter::types::unidirectional::ADI`): Dritter Faktor für die Multiplikation.
-*   **IN4** (Typ: `adapter::types::unidirectional::ADI`): Vierter Faktor für die Multiplikation.
+-   **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Faktor für die Multiplikation.
+-   **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Faktor für die Multiplikation.
+-   **IN3** (Typ: `adapter::types::unidirectional::ADI`): Dritter Faktor für die Multiplikation.
+-   **IN4** (Typ: `adapter::types::unidirectional::ADI`): Vierter Faktor für die Multiplikation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::ADI`): Ergebnis der Multiplikation ($OUT = IN1 \times IN2 \times IN3 \times IN4$).
+-   **OUT** (Typ: `adapter::types::unidirectional::ADI`): Ergebnis der Multiplikation ($OUT = IN1 \times IN2 \times IN3 \times IN4$).
 
 ## Funktionsweise
 
@@ -51,8 +51,8 @@ Das berechnete Ergebnis wird zusammen mit dem entsprechenden Trigger-Ereignis ü
 
 ## Technische Besonderheiten
 
-*   **Generischer Typ (`GEN_ADI_MUL`):** Der Baustein ist intern als generischer Baustein deklariert. Dies ermöglicht eine flexible Handhabung verschiedener Datentypen (z.B. `INT`, `REAL`, `LREAL`), je nach Spezifikation der verbundenen ADI-Adapter.
-*   **Kapselung durch Adapter:** Da sowohl Daten als auch Ereignisse über unidirektionale Adapter (`ADI`) geführt werden, verringert sich die Anzahl der sichtbaren Verbindungslinien in der 4diac-IDE drastisch. Dies erhöht die Übersichtlichkeit komplexer Steuerungsanwendungen.
+-   **Generischer Typ (`GEN_ADI_MUL`):** Der Baustein ist intern als generischer Baustein deklariert. Dies ermöglicht eine flexible Handhabung verschiedener Datentypen (z.B. `INT`, `REAL`, `LREAL`), je nach Spezifikation der verbundenen ADI-Adapter.
+-   **Kapselung durch Adapter:** Da sowohl Daten als auch Ereignisse über unidirektionale Adapter (`ADI`) geführt werden, verringert sich die Anzahl der sichtbaren Verbindungslinien in der 4diac-IDE drastisch. Dies erhöht die Übersichtlichkeit komplexer Steuerungsanwendungen.
 
 ## Zustandsübersicht
 
@@ -60,14 +60,14 @@ Der Funktionsbaustein `ADI_MUL_4` ist ein **zustandsloser (stateless)** Rechenba
 
 ## Anwendungsszenarien
 
-*   **Physikalische Berechnungen:** Berechnung von Volumina ($V = l \times b \times h$) mit einem zusätzlichen Skalierungs- oder Korrekturfaktor.
-*   **Messwertskalierung:** Mehrstufige Gewichtung oder Skalierung von analogen Sensorwerten über mehrere Faktoren hinweg.
-*   **Leistungsberechnungen:** Multiplikation von verschiedenen elektrischen oder mechanischen Kenngrößen zur Ermittlung von Gesamtleistungen oder Wirkungsgraden in der Prozessautomatisierung.
+-   **Physikalische Berechnungen:** Berechnung von Volumina ($V = l \times b \times h$) mit einem zusätzlichen Skalierungs- oder Korrekturfaktor.
+-   **Messwertskalierung:** Mehrstufige Gewichtung oder Skalierung von analogen Sensorwerten über mehrere Faktoren hinweg.
+-   **Leistungsberechnungen:** Multiplikation von verschiedenen elektrischen oder mechanischen Kenngrößen zur Ermittlung von Gesamtleistungen oder Wirkungsgraden in der Prozessautomatisierung.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard `MUL`-Baustein (IEC 61131-3):** Klassische Multiplizierer nutzen direkte Daten- und Ereignispins. `ADI_MUL_4` hingegen nutzt Adapter, was das Routing vereinfacht, jedoch eine entsprechende Adapter-Infrastruktur im Projekt voraussetzt.
-*   **ADI_MUL_2 / ADI_MUL_3:** Ähnliche Bausteine mit weniger Eingängen. `ADI_MUL_4` eignet sich speziell dann, wenn exakt vier Faktoren miteinander multipliziert werden müssen, ohne mehrere 2-fach-Multiplizierer kaskadieren zu müssen.
+-   **Standard `MUL`-Baustein (IEC 61131-3):** Klassische Multiplizierer nutzen direkte Daten- und Ereignispins. `ADI_MUL_4` hingegen nutzt Adapter, was das Routing vereinfacht, jedoch eine entsprechende Adapter-Infrastruktur im Projekt voraussetzt.
+-   **ADI_MUL_2 / ADI_MUL_3:** Ähnliche Bausteine mit weniger Eingängen. `ADI_MUL_4` eignet sich speziell dann, wenn exakt vier Faktoren miteinander multipliziert werden müssen, ohne mehrere 2-fach-Multiplizierer kaskadieren zu müssen.
 
 ## Änderungserkennung
 

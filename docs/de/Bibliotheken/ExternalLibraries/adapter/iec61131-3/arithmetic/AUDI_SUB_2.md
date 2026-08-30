@@ -32,15 +32,15 @@ Da der Baustein vollständig auf Adaptern basiert, besitzt er keine klassischen,
 
 #### **Sockets (Eingangs-Adapter / Steckdosen)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AUDI`):
-    *   Erster Eingang der Subtraktion (Minuend).
-*   **IN2** (Typ: `adapter::types::unidirectional::AUDI`):
-    *   Zweiter Eingang der Subtraktion (Subtrahend).
+-   **IN1** (Typ: `adapter::types::unidirectional::AUDI`):
+    -   Erster Eingang der Subtraktion (Minuend).
+-   **IN2** (Typ: `adapter::types::unidirectional::AUDI`):
+    -   Zweiter Eingang der Subtraktion (Subtrahend).
 
 #### **Plugs (Ausgangs-Adapter / Stecker)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AUDI`):
-    *   Ausgang des Bausteins, der das Ergebnis der Subtraktion (Differenz) bereitstellt.
+-   **OUT** (Typ: `adapter::types::unidirectional::AUDI`):
+    -   Ausgang des Bausteins, der das Ergebnis der Subtraktion (Differenz) bereitstellt.
 
 ---
 
@@ -56,8 +56,8 @@ Sobald sich Werte an den Eingangs-Adaptern `IN1` oder `IN2` ändern und ein ents
 
 ## Technische Besonderheiten
 
-*   **Generische Implementierung:** Durch das Attribut `eclipse4diac::core::GenericClassName = 'GEN_AUDI_SUB'` ist der Baustein flexibel einsetzbar. Je nach Implementierung des zugrundeliegenden Adapters kann er verschiedene Datentypen unterstützen.
-*   **Kapselung durch Adapter:** Die Verwendung des unidirektionalen Adapters `AUDI` bündelt Daten- und Eventleitungen. Dies erhöht die Übersichtlichkeit im 4diac-Applikationseditor erheblich, da weniger Linien gezogen werden müssen.
+-   **Generische Implementierung:** Durch das Attribut `eclipse4diac::core::GenericClassName = 'GEN_AUDI_SUB'` ist der Baustein flexibel einsetzbar. Je nach Implementierung des zugrundeliegenden Adapters kann er verschiedene Datentypen unterstützen.
+-   **Kapselung durch Adapter:** Die Verwendung des unidirektionalen Adapters `AUDI` bündelt Daten- und Eventleitungen. Dies erhöht die Übersichtlichkeit im 4diac-Applikationseditor erheblich, da weniger Linien gezogen werden müssen.
 
 ---
 
@@ -69,15 +69,15 @@ Der Baustein verhält sich wie ein zustandsloser (stateless) mathematischer Oper
 
 ## Anwendungsszenarien
 
-*   **Signalverarbeitung:** Subtraktion von Sensorwerten (z. B. Offset-Kompensation oder Berechnung von Differenzdrücken/-temperaturen) in Systemen, die konsequent auf der `AUDI`-Adapterarchitektur aufbauen.
-*   **Regelungstechnik:** Berechnung der Regeldifferenz ($e = w - x$) durch Subtraktion des Istwerts vom Sollwert.
+-   **Signalverarbeitung:** Subtraktion von Sensorwerten (z. B. Offset-Kompensation oder Berechnung von Differenzdrücken/-temperaturen) in Systemen, die konsequent auf der `AUDI`-Adapterarchitektur aufbauen.
+-   **Regelungstechnik:** Berechnung der Regeldifferenz ($e = w - x$) durch Subtraktion des Istwerts vom Sollwert.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard SUB-Baustein (IEC 61131-3 / IEC 61499):** Ein klassischer `SUB`-Baustein besitzt dedizierte Daten-Eingänge (`IN1`, `IN2`), einen Daten-Ausgang (`OUT`) sowie Event-Eingänge und -Ausgänge (z.B. `REQ` / `CNF`). Der `AUDI_SUB_2` hingegen bündelt diese Signale in Adaptern, was die Wiederverwendbarkeit und Modularität in komplexen Architekturen verbessert.
-*   **AUDI_ADD_2:** Das Gegenstück für die Addition. Verwendet dieselbe Adapter-Schnittstelle, addiert jedoch die Eingangswerte ($IN1 + IN2$).
+-   **Standard SUB-Baustein (IEC 61131-3 / IEC 61499):** Ein klassischer `SUB`-Baustein besitzt dedizierte Daten-Eingänge (`IN1`, `IN2`), einen Daten-Ausgang (`OUT`) sowie Event-Eingänge und -Ausgänge (z.B. `REQ` / `CNF`). Der `AUDI_SUB_2` hingegen bündelt diese Signale in Adaptern, was die Wiederverwendbarkeit und Modularität in komplexen Architekturen verbessert.
+-   **AUDI_ADD_2:** Das Gegenstück für die Addition. Verwendet dieselbe Adapter-Schnittstelle, addiert jedoch die Eingangswerte ($IN1 + IN2$).
 
 ---
 

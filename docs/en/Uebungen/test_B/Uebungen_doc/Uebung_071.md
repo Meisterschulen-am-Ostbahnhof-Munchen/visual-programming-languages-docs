@@ -17,9 +17,9 @@ Implementation of threshold logic based on TECU data. The output should be activ
 
 ![Uebung_071_network](./Uebung_071_network.svg)
 
-* **`I_WBSD`**: Returns the current speed.
-* **`F_GT`**: A comparison block (Greater Than). It checks if the input value is greater than 0.
-* **`DigitalOutput_Q1`**: The hardware output.
+- **`I_WBSD`**: Returns the current speed.
+- **`F_GT`**: A comparison block (Greater Than). It checks if the input value is greater than 0.
+- **`DigitalOutput_Q1`**: The hardware output.
 
 -----
 

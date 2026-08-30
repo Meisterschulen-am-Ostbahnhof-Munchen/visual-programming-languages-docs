@@ -16,11 +16,11 @@ The subapplication `Uebung_020c3_AX.SUB` uses a `E_CYCLE` function block to gene
 
 ![Uebung_020c3_AX_network](./Uebung_020c3_AX_network.svg)
 
-* **`DigitalInput_I1`**: Reads the input state via an AX adapter.
-* **`AX_FB_TON`**: The power-on delay timer with adapter interfaces. It requires cyclic events at the `REQ` input.
-* **`E_CYCLE`**: Generates an event every 500 ms as long as the `I1` input is active.
-* **`AX_SWITCH`**: Starts and stops `E_CYCLE` based on the input state.
-* **`DigitalOutput_Q1`**: Outputs the delayed signal via an AX adapter.
+- **`DigitalInput_I1`**: Reads the input state via an AX adapter.
+- **`AX_FB_TON`**: The power-on delay timer with adapter interfaces. It requires cyclic events at the `REQ` input.
+- **`E_CYCLE`**: Generates an event every 500 ms as long as the `I1` input is active.
+- **`AX_SWITCH`**: Starts and stops `E_CYCLE` based on the input state.
+- **`DigitalOutput_Q1`**: Outputs the delayed signal via an AX adapter.
 
 -----
 

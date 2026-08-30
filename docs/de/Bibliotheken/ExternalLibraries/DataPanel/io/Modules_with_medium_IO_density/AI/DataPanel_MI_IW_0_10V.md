@@ -49,13 +49,13 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 
-1. **Initialisierung (`INIT`)**  
+1. **Initialisierung (`INIT`)**
    Der Baustein wird mit den Parametern `PARAMS`, der Knotenadresse `u8SAMember`, dem ausgewählten Eingang `Input` und der Hysterese `AnalogInput_hysteresis` konfiguriert. Bei erfolgreicher Initialisierung wird der Ausgang `INITO` mit `QO = TRUE` und einem positiven `STATUS` gesendet.
 
-2. **Messwertabfrage (`REQ`)**  
+2. **Messwertabfrage (`REQ`)**
    Durch Anlegen eines Ereignisses an `REQ` wird eine neue Messung angefordert. Das Ergebnis steht am Ausgang `IN` zur Verfügung, sobald das Ereignis `CNF` ausgelöst wird. Der Qualifizierer `QO` und der `STATUS` geben die Gültigkeit des Werts an.
 
-3. **Asynchrone Anzeige (`IND`)**  
+3. **Asynchrone Anzeige (`IND`)**
    Der Baustein kann auch ohne explizite Anforderung von der Hardware ein Ereignis `IND` empfangen (z. B. bei einer spontanen Wertänderung oder einem periodischen Update). Auch hier werden `IN`, `QO` und `STATUS` aktualisiert.
 
 Der digitalisierte Analogwert wird als 16‑Bit‑Wort (`WORD`) auf dem Ausgang `IN` bereitgestellt. Die Skalierung (z. B. 0 V → 0, 10 V → 65535) ist abhängig von der angeschlossenen Hardware und muss applikativ interpretiert werden.
@@ -101,4 +101,4 @@ Der **DataPanel_MI_IW_0_10V**‑Funktionsblock stellt eine robuste und flexibel 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

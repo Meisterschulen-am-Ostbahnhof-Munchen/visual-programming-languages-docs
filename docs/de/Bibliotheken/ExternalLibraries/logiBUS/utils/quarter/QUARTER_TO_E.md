@@ -4,9 +4,9 @@
 
 ![QUARTER_TO_E_ecc](./QUARTER_TO_E_ecc.svg)
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 <img width="1487" height="288" alt="image" src="https://github.com/user-attachments/assets/b4e62664-7544-420c-a039-36905d34d735" />
 
@@ -21,23 +21,23 @@ Der Funktionsblock `QUARTER_TO_E` dient dazu, einen 2-Bit-Zustandswert (ein soge
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Startet die Verarbeitung. Bei diesem Ereignis wird der aktuelle Wert am Daten-Eingang `IB` ausgewertet.
+-   **REQ**: Startet die Verarbeitung. Bei diesem Ereignis wird der aktuelle Wert am Daten-Eingang `IB` ausgewertet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Signalisiert die erfolgreiche Beendigung der Verarbeitung, unabhängig vom erkannten Zustand. Wird immer nach der Ausgabe eines der spezifischen Ereignisse generiert.
-*   **S** (Enabled): Wird ausgelöst, wenn der Zustand "aktiviert" oder "eingeschaltet" erkannt wird.
-*   **R** (Disabled): Wird ausgelöst, wenn der Zustand "deaktiviert" oder "ausgeschaltet" erkannt wird.
-*   **ERR** (Error): Wird ausgelöst, wenn ein Fehlerzustand erkannt wird.
-*   **NONE** (Not available): Wird ausgelöst, wenn der Zustand "nicht verfügbar" oder "nicht installiert" erkannt wird.
+-   **CNF**: Signalisiert die erfolgreiche Beendigung der Verarbeitung, unabhängig vom erkannten Zustand. Wird immer nach der Ausgabe eines der spezifischen Ereignisse generiert.
+-   **S** (Enabled): Wird ausgelöst, wenn der Zustand "aktiviert" oder "eingeschaltet" erkannt wird.
+-   **R** (Disabled): Wird ausgelöst, wenn der Zustand "deaktiviert" oder "ausgeschaltet" erkannt wird.
+-   **ERR** (Error): Wird ausgelöst, wenn ein Fehlerzustand erkannt wird.
+-   **NONE** (Not available): Wird ausgelöst, wenn der Zustand "nicht verfügbar" oder "nicht installiert" erkannt wird.
 
 ### **Daten-Eingänge**
 
-*   **IB** (BYTE): Enthält den zu interpretierenden 2-Bit-Zustandswert. Der Initialwert ist auf `quarter::COMMAND_DISABLE` gesetzt. Die tatsächliche Interpretation erfolgt anhand der definierten Konstanten aus dem `quarter`-Paket.
+-   **IB** (BYTE): Enthält den zu interpretierenden 2-Bit-Zustandswert. Der Initialwert ist auf `quarter::COMMAND_DISABLE` gesetzt. Die tatsächliche Interpretation erfolgt anhand der definierten Konstanten aus dem `quarter`-Paket.
 
 ### **Daten-Ausgänge**
 
-*   **Q** (BOOL): Ein boolescher Ausgang, dessen Wert je nach erkanntem Zustand gesetzt wird. Er dient als einfache, binäre Repräsentation des Hauptzustands (aktiviert/deaktiviert).
+-   **Q** (BOOL): Ein boolescher Ausgang, dessen Wert je nach erkanntem Zustand gesetzt wird. Er dient als einfache, binäre Repräsentation des Hauptzustands (aktiviert/deaktiviert).
 
 ### **Adapter**
 
@@ -49,9 +49,9 @@ Der `QUARTER_TO_E` ist ein Basic Function Block mit einem internen Zustandsautom
 
 ## Technische Besonderheiten
 
-*   Der Block nutzt Konstanten aus dem Paket `logiBUS::utils::quarter::const::quarter` (`STATUS_ENABLED`, `STATUS_DISABLED`, `STATUS_ERROR`, `STATUS_NOT_AVAILABLE`). Diese müssen im Projekt verfügbar sein.
-*   Der Ausgang `Q` wird nur in den Zuständen `SET` (auf TRUE), `RESET` (auf FALSE) und `ERROR` (auf FALSE) verändert. Im Zustand `NONE` wird `Q` explizit nicht verändert ("Don't care").
-*   Die Ausgabe des `CNF`-Ereignisses erfolgt immer, unabhängig davon, welcher spezifische Zustand erkannt wurde. Dies ermöglicht eine einheitliche Ablaufsteuerung in der Applikation.
+-   Der Block nutzt Konstanten aus dem Paket `logiBUS::utils::quarter::const::quarter` (`STATUS_ENABLED`, `STATUS_DISABLED`, `STATUS_ERROR`, `STATUS_NOT_AVAILABLE`). Diese müssen im Projekt verfügbar sein.
+-   Der Ausgang `Q` wird nur in den Zuständen `SET` (auf TRUE), `RESET` (auf FALSE) und `ERROR` (auf FALSE) verändert. Im Zustand `NONE` wird `Q` explizit nicht verändert ("Don't care").
+-   Die Ausgabe des `CNF`-Ereignisses erfolgt immer, unabhängig davon, welcher spezifische Zustand erkannt wurde. Dies ermöglicht eine einheitliche Ablaufsteuerung in der Applikation.
 
 ## Zustandsübersicht
 
@@ -64,14 +64,14 @@ Der `QUARTER_TO_E` ist ein Basic Function Block mit einem internen Zustandsautom
 
 ## Anwendungsszenarien
 
-*   **Interpretation von Gerätestatus**: Ein Antriebsmeldet seinen Status nicht nur als EIN/AUS, sondern auch als "Fehler" oder "Nicht bereit". Dieser Block wandelt den Gerätestatus in separate, leicht verarbeitbare Ereignisse um.
-*   **Vereinfachung der Logik**: Anstatt in nachfolgenden Blöcken ständig den Byte-Wert abfragen zu müssen, können direkt auf die spezifischen Ereignisse (`S`, `R`, `ERR`) reagiert werden.
-*   **Abstraktion**: Dient als Adapter zwischen Bausteinen, die einen Quarter-Byte-Status liefern, und einer Logik, die mit klassischen Ereignis-/Boolsignalen arbeitet.
+-   **Interpretation von Gerätestatus**: Ein Antriebsmeldet seinen Status nicht nur als EIN/AUS, sondern auch als "Fehler" oder "Nicht bereit". Dieser Block wandelt den Gerätestatus in separate, leicht verarbeitbare Ereignisse um.
+-   **Vereinfachung der Logik**: Anstatt in nachfolgenden Blöcken ständig den Byte-Wert abfragen zu müssen, können direkt auf die spezifischen Ereignisse (`S`, `R`, `ERR`) reagiert werden.
+-   **Abstraktion**: Dient als Adapter zwischen Bausteinen, die einen Quarter-Byte-Status liefern, und einer Logik, die mit klassischen Ereignis-/Boolsignalen arbeitet.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **E_DEMUX / E_SELECT**: Diese Blöcke leiten ein Eingangsereignis basierend auf einem Steuerwert an einen von mehreren Ausgängen weiter. `QUARTER_TO_E` ist spezialisierter: Er übersetzt einen spezifischen Datenwert (`IB`) nicht nur in eine Auswahl, sondern löst auch unterschiedliche *inhaltliche* Ereignisse aus und berechnet zusätzlich einen booleschen Wert (`Q`).
-*   **BYTE_TO_E**: Ein generischer Block, der jedes Bit eines Bytes in ein separates Ereignis umwandeln könnte. `QUARTER_TO_E` ist semantisch reicher, da er spezifische, vordefinierte Zustände (Enabled, Disabled, Error, None) und deren Bedeutung kennt und ausgibt.
+-   **E_DEMUX / E_SELECT**: Diese Blöcke leiten ein Eingangsereignis basierend auf einem Steuerwert an einen von mehreren Ausgängen weiter. `QUARTER_TO_E` ist spezialisierter: Er übersetzt einen spezifischen Datenwert (`IB`) nicht nur in eine Auswahl, sondern löst auch unterschiedliche *inhaltliche* Ereignisse aus und berechnet zusätzlich einen booleschen Wert (`Q`).
+-   **BYTE_TO_E**: Ein generischer Block, der jedes Bit eines Bytes in ein separates Ereignis umwandeln könnte. `QUARTER_TO_E` ist semantisch reicher, da er spezifische, vordefinierte Zustände (Enabled, Disabled, Error, None) und deren Bedeutung kennt und ausgibt.
 
 ## Fazit
 

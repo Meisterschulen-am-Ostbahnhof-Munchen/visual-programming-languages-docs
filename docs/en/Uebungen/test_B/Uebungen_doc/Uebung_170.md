@@ -25,10 +25,10 @@ This exercise uses an instance of an event block from the standard library.
 
 Currently, the network for this exercise consists only of the instance `ARTimeOut_1`.
 
-* **Connections**: No connections (neither data nor events) are defined in the current configuration. The block is isolated in the network.
-* **How the Exercise Works**:
-* Since no connections are present, this exercise is likely intended to allow you to manually test the `E_RTimeOut` function block in debug mode or to serve as a starting point for a more complex circuit where connections will need to be added.
-* The user can manually trigger the function block's input events to observe when and how the timeout event is triggered.
+- **Connections**: No connections (neither data nor events) are defined in the current configuration. The block is isolated in the network.
+- **How the Exercise Works**:
+- Since no connections are present, this exercise is likely intended to allow you to manually test the `E_RTimeOut` function block in debug mode or to serve as a starting point for a more complex circuit where connections will need to be added.
+- The user can manually trigger the function block's input events to observe when and how the timeout event is triggered.
 
 ## Summary
 
@@ -38,6 +38,6 @@ The `Uebung_170` provides a minimal configuration containing only the `E_RTimeOu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

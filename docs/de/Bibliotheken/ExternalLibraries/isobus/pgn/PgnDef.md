@@ -37,10 +37,10 @@ Nicht vorhanden. Dies ist eine Konstantendefinition.
 
 ## Technische Besonderheiten
 
-*   **Umfangreiche Abdeckung:** Die Sammlung enthält PGNs aus einer Vielzahl von Standards, einschließlich ISO 11783 (ISOBUS, Teile 3-7, 12, 13), SAE J1939 (71, 73, 75) und NMEA 2000.
-*   **Organisierte Struktur:** Die Konstanten sind in logischen Gruppen kommentiert (PDU1/Group Functions, PDU2, J1939-71, ISO 11783-7, Diagnose (J1939-73), Generator Sets (J1939-75), NMEA).
-*   **Datentyp:** Alle PGNs sind als `UDINT` (32-Bit, vorzeichenlos) definiert, was dem adressierbaren Bereich der Protokolle entspricht.
-*   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was eine klare Namensraumtrennung ermöglicht.
+-   **Umfangreiche Abdeckung:** Die Sammlung enthält PGNs aus einer Vielzahl von Standards, einschließlich ISO 11783 (ISOBUS, Teile 3-7, 12, 13), SAE J1939 (71, 73, 75) und NMEA 2000.
+-   **Organisierte Struktur:** Die Konstanten sind in logischen Gruppen kommentiert (PDU1/Group Functions, PDU2, J1939-71, ISO 11783-7, Diagnose (J1939-73), Generator Sets (J1939-75), NMEA).
+-   **Datentyp:** Alle PGNs sind als `UDINT` (32-Bit, vorzeichenlos) definiert, was dem adressierbaren Bereich der Protokolle entspricht.
+-   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was eine klare Namensraumtrennung ermöglicht.
 
 ## Zustandsübersicht
 
@@ -48,17 +48,17 @@ Nicht zutreffend, da es sich um eine statische Konstantendeklaration handelt.
 
 ## Anwendungsszenarien
 
-*   **ISOBUS-ECU-Entwicklung:** Bei der Entwicklung von Steuergeräten (ECUs) für Traktoren oder Anbaugeräte, die über ein ISOBUS-Netzwerk kommunizieren.
-*   **NMEA-2000-Integration:** In maritimen Anwendungen zur Integration von Schiffselektronik wie GPS-Empfängern, Tiefenmessern oder Motorensteuerungen.
-*   **Protokoll-Implementierung:** Als Grundlage für die Implementierung von Protokoll-Stacks (z.B. für Transportprotokolle wie TP/CM oder ETP/CM).
-*   **Nachrichtenfilterung:** In Gateway- oder Bridge-Funktionsblöcken, um eingehende Nachrichten anhand ihrer PGN zu filtern und weiterzuleiten.
-*   **Diagnose-Tools:** In Applikationen zur Diagnose und Überwachung von Fahrzeugnetzwerken, um empfangene Nachrichten korrekt zu benennen und anzuzeigen.
+-   **ISOBUS-ECU-Entwicklung:** Bei der Entwicklung von Steuergeräten (ECUs) für Traktoren oder Anbaugeräte, die über ein ISOBUS-Netzwerk kommunizieren.
+-   **NMEA-2000-Integration:** In maritimen Anwendungen zur Integration von Schiffselektronik wie GPS-Empfängern, Tiefenmessern oder Motorensteuerungen.
+-   **Protokoll-Implementierung:** Als Grundlage für die Implementierung von Protokoll-Stacks (z.B. für Transportprotokolle wie TP/CM oder ETP/CM).
+-   **Nachrichtenfilterung:** In Gateway- oder Bridge-Funktionsblöcken, um eingehende Nachrichten anhand ihrer PGN zu filtern und weiterzuleiten.
+-   **Diagnose-Tools:** In Applikationen zur Diagnose und Überwachung von Fahrzeugnetzwerken, um empfangene Nachrichten korrekt zu benennen und anzuzeigen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Einfache `VAR_GLOBAL CONSTANT`-Deklarationen:** `PgnDef` bietet gegenüber manuell im Funktionsblock deklarierten Konstanten den Vorteil der Zentralisierung, Wiederverwendbarkeit und Vermeidung von Redundanz und Tippfehlern.
-*   **Enumerations (ENUM):** Während ENUMs in IEC 61499 für geordnete Listen verwendet werden können, ist `PgnDef` als Sammlung diskreter, nicht notwendigerweise aufeinanderfolgender Werte besser geeignet. Konstanten bieten zudem mehr Flexibilität bei der Wertzuweisung (hexadezimal).
-*   **Spezifische Protokoll-FBs:** Im Gegensatz zu Funktionsblöcken, die eine bestimmte Protokollfunktion implementieren (z.B. ein `ADDRESS_CLAIM`-FB), ist `PgnDef` ein reines Hilfsmittel zur Referenzierung und enthält keine aktive Logik.
+-   **Einfache `VAR_GLOBAL CONSTANT`-Deklarationen:** `PgnDef` bietet gegenüber manuell im Funktionsblock deklarierten Konstanten den Vorteil der Zentralisierung, Wiederverwendbarkeit und Vermeidung von Redundanz und Tippfehlern.
+-   **Enumerations (ENUM):** Während ENUMs in IEC 61499 für geordnete Listen verwendet werden können, ist `PgnDef` als Sammlung diskreter, nicht notwendigerweise aufeinanderfolgender Werte besser geeignet. Konstanten bieten zudem mehr Flexibilität bei der Wertzuweisung (hexadezimal).
+-   **Spezifische Protokoll-FBs:** Im Gegensatz zu Funktionsblöcken, die eine bestimmte Protokollfunktion implementieren (z.B. ein `ADDRESS_CLAIM`-FB), ist `PgnDef` ein reines Hilfsmittel zur Referenzierung und enthält keine aktive Logik.
 
 ## Fazit
 
@@ -68,4 +68,4 @@ Die `PgnDef`-Konstantensammlung ist ein wesentliches Hilfsmittel für die Entwic
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

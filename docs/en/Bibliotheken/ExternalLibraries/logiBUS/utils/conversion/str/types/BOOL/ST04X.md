@@ -31,10 +31,10 @@ Not applicable to a data type.
 
 The ST04X structure consists of the following four Boolean fields:
 
-* **X_00** (Type: BOOL, Comment: BIT 00)
-* **X_01** (Type: BOOL, Comment: BIT 01)
-* **X_02** (Type: BOOL, Comment: BIT 02)
-* **X_03** (Type: BOOL, Comment: BIT 03)
+- **X_00** (Type: BOOL, Comment: BIT 00)
+- **X_01** (Type: BOOL, Comment: BIT 01)
+- **X_02** (Type: BOOL, Comment: BIT 02)
+- **X_03** (Type: BOOL, Comment: BIT 03)
 
 ## Functionality
 
@@ -42,9 +42,9 @@ As a data type, ST04X does not have an active "function" in the sense of a funct
 
 ## Technical Features
 
-* **Compactness**: Groups four individual BOOL values, which can enable more efficient data storage or transmission in some systems.
-* **Structuring**: Improves code structure and readability by grouping related bits under a common name.
-* **Use in Function Blocks**: This data type can be used as an input or output parameter for function blocks or as an internal variable within a function block to manage groupings of four bits.
+- **Compactness**: Groups four individual BOOL values, which can enable more efficient data storage or transmission in some systems.
+- **Structuring**: Improves code structure and readability by grouping related bits under a common name.
+- **Use in Function Blocks**: This data type can be used as an input or output parameter for function blocks or as an internal variable within a function block to manage groupings of four bits.
 
 ## State Overview
 
@@ -52,9 +52,9 @@ Not applicable to a data type. A data type represents a data structure, not a st
 
 ## Application Scenarios
 
-* **Status Register**: Mapping of a small status register or group of flags where each bit indicates a specific state or property.
-* **Binary Inputs/Outputs**: Grouping of four digital inputs or outputs of a hardware interface.
-* **Bit Fields**: When a compact representation of four independent binary pieces of information is required, for example, when processing serial data protocols or device configurations.
+- **Status Register**: Mapping of a small status register or group of flags where each bit indicates a specific state or property.
+- **Binary Inputs/Outputs**: Grouping of four digital inputs or outputs of a hardware interface.
+- **Bit Fields**: When a compact representation of four independent binary pieces of information is required, for example, when processing serial data protocols or device configurations.
 
 ## ⚖️ Comparison with Similar Components
 
@@ -62,9 +62,9 @@ ST04X is a data type and therefore cannot be directly compared to function block
 
 A comparison would be more feasible with other data types, for example:
 
-* **BOOL**: A single Boolean value. ST04X groups four of them.
-* **BYTE**: An 8-bit integer. ST04X provides a structured view of 4 bits, while a BYTE is typically treated as an unstructured 8-bit number. The individual bits of a BYTE would have to be accessed via bitmasks or bitwise operations, whereas with ST04X, each bit is directly accessible by its name (e.g., `myST04X.X_00`).
-* **BYTE**: An 8-bit integer. * **Array of BOOL**: An array of BOOLs (`ARRAY[0..3] OF BOOL`) also provides grouping, but access is via indices (`myArray[0]`), whereas ST04X allows access via named fields (`myST04X.X_00`), which can improve readability.
+- **BOOL**: A single Boolean value. ST04X groups four of them.
+- **BYTE**: An 8-bit integer. ST04X provides a structured view of 4 bits, while a BYTE is typically treated as an unstructured 8-bit number. The individual bits of a BYTE would have to be accessed via bitmasks or bitwise operations, whereas with ST04X, each bit is directly accessible by its name (e.g., `myST04X.X_00`).
+- **BYTE**: An 8-bit integer. * **Array of BOOL**: An array of BOOLs (`ARRAY[0..3] OF BOOL`) also provides grouping, but access is via indices (`myArray[0]`), whereas ST04X allows access via named fields (`myST04X.X_00`), which can improve readability.
 
 ## Conclusion
 
@@ -74,6 +74,6 @@ ST04X is a useful structured data type in 4diac that simplifies the management a
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

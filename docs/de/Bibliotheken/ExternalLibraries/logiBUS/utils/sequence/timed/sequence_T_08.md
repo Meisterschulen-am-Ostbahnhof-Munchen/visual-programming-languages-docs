@@ -15,26 +15,26 @@ Der Funktionsblock `sequence_T_08` ist ein zeitgesteuerter Sequenzer mit acht Au
 
 ### **Ereignis-Eingänge**
 
-*   `START_S1`: Startet die Sequenz. Ein Ereignis an diesem Eingang bewirkt den Übergang vom `START`-Zustand in den ersten aktiven Zustand `State_01`. Es werden alle acht Zeitdaten-Eingänge mitgelesen.
-*   `RESET`: Setzt die Sequenz sofort zurück. Ein Ereignis an diesem Eingang führt von jedem beliebigen Zustand zum `START`-Zustand und deaktiviert alle Ausgänge.
+-   `START_S1`: Startet die Sequenz. Ein Ereignis an diesem Eingang bewirkt den Übergang vom `START`-Zustand in den ersten aktiven Zustand `State_01`. Es werden alle acht Zeitdaten-Eingänge mitgelesen.
+-   `RESET`: Setzt die Sequenz sofort zurück. Ein Ereignis an diesem Eingang führt von jedem beliebigen Zustand zum `START`-Zustand und deaktiviert alle Ausgänge.
 
 ### **Ereignis-Ausgänge**
 
-*   `CNF`: Bestätigungsereignis (Execution Confirmation). Wird bei jedem Zustandswechsel ausgelöst und liefert die neue Zustandsnummer `STATE_NR`.
-*   `EO_S1` bis `EO_S8`: Zustandsereignisse. Jedes dieser Ereignisse wird beim Eintritt in den entsprechenden Zustand (`State_01` bis `State_08`) ausgelöst und liefert den zugehörigen booleschen Datenausgangswert (`DO_S1` bis `DO_S8`).
+-   `CNF`: Bestätigungsereignis (Execution Confirmation). Wird bei jedem Zustandswechsel ausgelöst und liefert die neue Zustandsnummer `STATE_NR`.
+-   `EO_S1` bis `EO_S8`: Zustandsereignisse. Jedes dieser Ereignisse wird beim Eintritt in den entsprechenden Zustand (`State_01` bis `State_08`) ausgelöst und liefert den zugehörigen booleschen Datenausgangswert (`DO_S1` bis `DO_S8`).
 
 ### **Daten-Eingänge**
 
-*   `DT_S1_S2` bis `DT_S8_START` (Typ `TIME`): Definieren die Verweilzeit für jeden Zustand. Der Wert legt fest, wie lange der FB im jeweiligen Zustand verbleibt, bevor der automatische Übergang zum nächsten Zustand erfolgt. Der Standardwert `NO_TIME` deaktiviert den zeitgesteuerten Übergang, sodass der FB im Zustand verharrt, bis ein `RESET` erfolgt.
+-   `DT_S1_S2` bis `DT_S8_START` (Typ `TIME`): Definieren die Verweilzeit für jeden Zustand. Der Wert legt fest, wie lange der FB im jeweiligen Zustand verbleibt, bevor der automatische Übergang zum nächsten Zustand erfolgt. Der Standardwert `NO_TIME` deaktiviert den zeitgesteuerten Übergang, sodass der FB im Zustand verharrt, bis ein `RESET` erfolgt.
 
 ### **Daten-Ausgänge**
 
-*   `STATE_NR` (Typ `SINT`): Gibt die aktuelle Zustandsnummer aus. `0` entspricht dem `START`-Zustand, `1` bis `8` entsprechen den aktiven Zuständen `State_01` bis `State_08`.
-*   `DO_S1` bis `DO_S8` (Typ `BOOL`): Die physischen Ausgangssignale der Sequenz. Jeder Ausgang wird auf `TRUE` gesetzt, wenn der entsprechende Zustand aktiv ist, andernfalls ist er `FALSE`.
+-   `STATE_NR` (Typ `SINT`): Gibt die aktuelle Zustandsnummer aus. `0` entspricht dem `START`-Zustand, `1` bis `8` entsprechen den aktiven Zuständen `State_01` bis `State_08`.
+-   `DO_S1` bis `DO_S8` (Typ `BOOL`): Die physischen Ausgangssignale der Sequenz. Jeder Ausgang wird auf `TRUE` gesetzt, wenn der entsprechende Zustand aktiv ist, andernfalls ist er `FALSE`.
 
 ### **Adapter**
 
-*   `timeOut` (Typ `iec61499::events::ATimeOut`): Ein Steckadapter, der die Zeitsteuerung bereitstellt. Der FB nutzt die Schnittstelle, um einen Timer zu starten (`timeOut.START`) und auf dessen Ablauf zu warten (`timeOut.TimeOut`). Die jeweilige Zeitdauer wird über `timeOut.DT` übergeben.
+-   `timeOut` (Typ `iec61499::events::ATimeOut`): Ein Steckadapter, der die Zeitsteuerung bereitstellt. Der FB nutzt die Schnittstelle, um einen Timer zu starten (`timeOut.START`) und auf dessen Ablauf zu warten (`timeOut.TimeOut`). Die jeweilige Zeitdauer wird über `timeOut.DT` übergeben.
 
 ## Funktionsweise
 
@@ -48,25 +48,25 @@ Der Übergang zum nächsten Zustand erfolgt ausschließlich, wenn der Timer abge
 
 ## Technische Besonderheiten
 
-*   **Flexible Zeitsteuerung**: Jeder Zustandsübergang kann individuell und zur Laufzeit über die `DT_`-Eingänge konfiguriert werden. Der Wert `NO_TIME` erlaubt es, die Sequenz an einer bestimmten Stelle anzuhalten.
-*   **Sofortiger Reset**: Der `RESET`-Eingang hat jederzeit Priorität und unterbricht die laufende Zeitsteuerung sofort.
-*   **Zustandsrückmeldung**: Die aktuelle Position in der Sequenz ist über den `STATE_NR`-Ausgang stets nachvollziehbar.
-*   **Ereignisgesteuerte Ausgänge**: Neben den kontinuierlichen Datenausgängen (`DO_Sx`) bietet der FB für jeden Zustand ein separates Ereignis (`EO_Sx`), was die Ansteuerung nachgelagerter, ereignisgesteuerter FB erleichtert.
+-   **Flexible Zeitsteuerung**: Jeder Zustandsübergang kann individuell und zur Laufzeit über die `DT_`-Eingänge konfiguriert werden. Der Wert `NO_TIME` erlaubt es, die Sequenz an einer bestimmten Stelle anzuhalten.
+-   **Sofortiger Reset**: Der `RESET`-Eingang hat jederzeit Priorität und unterbricht die laufende Zeitsteuerung sofort.
+-   **Zustandsrückmeldung**: Die aktuelle Position in der Sequenz ist über den `STATE_NR`-Ausgang stets nachvollziehbar.
+-   **Ereignisgesteuerte Ausgänge**: Neben den kontinuierlichen Datenausgängen (`DO_Sx`) bietet der FB für jeden Zustand ein separates Ereignis (`EO_Sx`), was die Ansteuerung nachgelagerter, ereignisgesteuerter FB erleichtert.
 
 ## Zustandsübersicht
 
 Die ECC umfasst folgende Zustände:
 
-*   **xSTART / sState_00**: Inaktiver Start- und Endzustand. `STATE_NR = 0`, alle Ausgänge sind `FALSE`.
-*   **sState_01 bis sState_08**: Die acht aktiven Sequenzzustände. `STATE_NR = 1` bis `8`. Der entsprechende Ausgang `DO_Sx` ist `TRUE`.
-*   **sRESET**: Interner Reset-Zustand. Deaktiviert alle Ausgänge und führt zurück zu `sState_00`.
+-   **xSTART / sState_00**: Inaktiver Start- und Endzustand. `STATE_NR = 0`, alle Ausgänge sind `FALSE`.
+-   **sState_01 bis sState_08**: Die acht aktiven Sequenzzustände. `STATE_NR = 1` bis `8`. Der entsprechende Ausgang `DO_Sx` ist `TRUE`.
+-   **sRESET**: Interner Reset-Zustand. Deaktiviert alle Ausgänge und führt zurück zu `sState_00`.
 
 ## Anwendungsszenarien
 
-*   **Steuerung von Zyklusabläufen**: In Maschinen, bei denen verschiedene Aktoren (Ventile, Motoren, Heizungen) nacheinander für eine bestimmte Zeit ein- und ausgeschaltet werden müssen.
-*   **Batch-Prozesse**: Für die Reihensteuerung von Prozessschritten in der Lebensmittel- oder Chemieindustrie, z.B. Füllen, Erhitzen, Rühren, Abkühlen.
-*   **Teststände**: Automatisierte Abfolge von Prüf- und Messschritten an einem Bauteil.
-*   **Sicherheitssequenzen**: Geordnetes An- und Abfahren einer Anlage, bei dem Schritte erst nach einer Wartezeit ausgelöst werden dürfen.
+-   **Steuerung von Zyklusabläufen**: In Maschinen, bei denen verschiedene Aktoren (Ventile, Motoren, Heizungen) nacheinander für eine bestimmte Zeit ein- und ausgeschaltet werden müssen.
+-   **Batch-Prozesse**: Für die Reihensteuerung von Prozessschritten in der Lebensmittel- oder Chemieindustrie, z.B. Füllen, Erhitzen, Rühren, Abkühlen.
+-   **Teststände**: Automatisierte Abfolge von Prüf- und Messschritten an einem Bauteil.
+-   **Sicherheitssequenzen**: Geordnetes An- und Abfahren einer Anlage, bei dem Schritte erst nach einer Wartezeit ausgelöst werden dürfen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -80,4 +80,4 @@ Der `sequence_T_08` ist ein robuster und einfach zu konfigurierender Funktionsbl
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

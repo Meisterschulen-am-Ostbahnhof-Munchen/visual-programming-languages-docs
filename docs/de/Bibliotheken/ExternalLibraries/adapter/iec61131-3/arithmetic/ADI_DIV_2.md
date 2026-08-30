@@ -30,11 +30,11 @@ Da dieser Funktionsbaustein vollständig adapterbasiert arbeitet, verfügt er au
 
 ### **Adapter**
 
-*   **Sockets (Eingangs-Adapter):**
-    *   **`IN1`** (Typ: `adapter::types::unidirectional::ADI`): Erster Eingangswert (Dividend / Zähler) für die Division.
-    *   **`IN2`** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Eingangswert (Divisor / Nenner) für die Division.
-*   **Plugs (Ausgangs-Adapter):**
-    *   **`OUT`** (Typ: `adapter::types::unidirectional::ADI`): Das berechnete Ergebnis (Quotient) der Division.
+-   **Sockets (Eingangs-Adapter):**
+    -   **`IN1`** (Typ: `adapter::types::unidirectional::ADI`): Erster Eingangswert (Dividend / Zähler) für die Division.
+    -   **`IN2`** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Eingangswert (Divisor / Nenner) für die Division.
+-   **Plugs (Ausgangs-Adapter):**
+    -   **`OUT`** (Typ: `adapter::types::unidirectional::ADI`): Das berechnete Ergebnis (Quotient) der Division.
 
 ## Funktionsweise
 
@@ -46,9 +46,9 @@ Die Berechnung wird getriggert, sobald an den Eingangs-Adaptern entsprechende Ak
 
 ## Technische Besonderheiten
 
-*   **Generische Instanziierung:** Der Baustein nutzt das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_ADI_DIV'`. Dies erlaubt eine flexible Typisierung je nach verwendetem Adaptersubtyp zur Laufzeit.
-*   **Kapselung durch Adapter:** Daten und die dazugehörigen Trigger-Ereignisse sind im Adaptertyp `ADI` gebündelt, was eine lose Kopplung der Softwarekomponenten begünstigt.
-*   **Division durch Null:** Bei der Implementierung und Anwendung muss darauf geachtet werden, dass der Wert am Adapter `IN2` (Divisor) ungleich Null ist. Eine Division durch Null muss anwendungsorientiert vor dem Baustein abgefangen werden, um Laufzeitfehler zu vermeiden.
+-   **Generische Instanziierung:** Der Baustein nutzt das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_ADI_DIV'`. Dies erlaubt eine flexible Typisierung je nach verwendetem Adaptersubtyp zur Laufzeit.
+-   **Kapselung durch Adapter:** Daten und die dazugehörigen Trigger-Ereignisse sind im Adaptertyp `ADI` gebündelt, was eine lose Kopplung der Softwarekomponenten begünstigt.
+-   **Division durch Null:** Bei der Implementierung und Anwendung muss darauf geachtet werden, dass der Wert am Adapter `IN2` (Divisor) ungleich Null ist. Eine Division durch Null muss anwendungsorientiert vor dem Baustein abgefangen werden, um Laufzeitfehler zu vermeiden.
 
 ## Zustandsübersicht
 
@@ -59,15 +59,15 @@ Der Funktionsbaustein verhält sich zustandslos (bzw. rein reaktiv):
 
 ## Anwendungsszenarien
 
-*   **Messwertskalierung:** Normierung von analogen Sensorwerten (z. B. Division eines Rohwerts durch einen Skalierungsfaktor).
-*   **Berechnung von Verhältnissen:** Bestimmung von Mischungsverhältnissen oder Prozentwerten in verfahrenstechnischen Anlagen.
-*   **Mittelwertberechnungen:** Division einer Summe durch die Anzahl der erfassten Werte in einfachen mathematischen Berechnungsnetzwerken.
+-   **Messwertskalierung:** Normierung von analogen Sensorwerten (z. B. Division eines Rohwerts durch einen Skalierungsfaktor).
+-   **Berechnung von Verhältnissen:** Bestimmung von Mischungsverhältnissen oder Prozentwerten in verfahrenstechnischen Anlagen.
+-   **Mittelwertberechnungen:** Division einer Summe durch die Anzahl der erfassten Werte in einfachen mathematischen Berechnungsnetzwerken.
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen, standardmäßigen `DIV`-Funktionsbaustein (nach IEC 61131-3), der mit diskreten Daten-Pins (`IN1`, `IN2`, `OUT`) und expliziten Event-Pins (`REQ`, `CNF`) arbeitet:
-*   **Vorteile von `ADI_DIV_2`:** Deutlich aufgeräumteres Erscheinungsbild im Funktionsplan (FBD) von 4diac. Datenkonsistenz wird durch die Kopplung im Adapter direkt erzwungen.
-*   **Nachteile:** Ein direkter Einsatz mit Standard-Datenströmen ohne Adapter-Kapselung ist nicht möglich. Es müssen dedizierte Konverterbausteine verwendet werden, falls die Signalquelle keine Adapter unterstützt.
+-   **Vorteile von `ADI_DIV_2`:** Deutlich aufgeräumteres Erscheinungsbild im Funktionsplan (FBD) von 4diac. Datenkonsistenz wird durch die Kopplung im Adapter direkt erzwungen.
+-   **Nachteile:** Ein direkter Einsatz mit Standard-Datenströmen ohne Adapter-Kapselung ist nicht möglich. Es müssen dedizierte Konverterbausteine verwendet werden, falls die Signalquelle keine Adapter unterstützt.
 
 ## Änderungserkennung
 

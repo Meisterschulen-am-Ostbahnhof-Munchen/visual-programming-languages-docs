@@ -93,7 +93,7 @@ The function block has no internal state. Each event immediately triggers its co
 
 ## 🛠️ Related Exercises
 
-* [Exercise_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
+- [Exercise_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
 
 ## Conclusion
 

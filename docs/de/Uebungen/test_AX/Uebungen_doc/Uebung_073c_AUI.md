@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Diese Übung demonstriert die Ausgabe der Geschwindigkeitssignale **Ground Based Speed (GBSD)** und **Vehicle/Drive Speed (VDS)** auf einem Universal Terminal (UT) unter Verwendung physikalischer Adressen (PHYS). Die Signale werden über ISOBUS-Adapter (IA) empfangen, skaliert und mittels der `Q_NumericValue_PHYSA`-Bausteine auf dem UT dargestellt.  
+Diese Übung demonstriert die Ausgabe der Geschwindigkeitssignale **Ground Based Speed (GBSD)** und **Vehicle/Drive Speed (VDS)** auf einem Universal Terminal (UT) unter Verwendung physikalischer Adressen (PHYS). Die Signale werden über ISOBUS-Adapter (IA) empfangen, skaliert und mittels der `Q_NumericValue_PHYSA`-Bausteine auf dem UT dargestellt.
 Die Übung vermittelt den Umgang mit Signal-Skalierung und dem Adapter-Konzept (*AUI*) in 4diac IDE.
 
 > **Hinweis:** Derzeit wird als Zielobjekt für die Navigationsgeschwindigkeit ersatzweise `NumberVariable_Wheel_based_machine_speed` verwendet. Für die endgültige Umsetzung sollte `NumberVariable_Navigation_based_vehicle_speed` im Object Pool angelegt und der entsprechende Parameter gesetzt werden.
@@ -31,15 +31,15 @@ Die Übung besteht aus sechs Funktionsbausteinen, die alle innerhalb der SubApp 
 
 Die Verbindungen zwischen den Bausteinen erfolgen über **Adapter (AUI)**. Der Datenfluss ist wie folgt:
 
-1. **GBSD**  
-   - `IA_GBSD` empfängt über den ISOBUS die rohe Geschwindigkeit (UINT).  
-   - Der Ausgang `SPEED` wird über eine Adapterverbindung an den Eingang `IN` von `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` geleitet.  
-   - Dieser Baustein skaliert den Wert mit `SCALE = 0.001` und gibt das Ergebnis als REAL am Ausgang `OUT` aus.  
+1. **GBSD**
+   - `IA_GBSD` empfängt über den ISOBUS die rohe Geschwindigkeit (UINT).
+   - Der Ausgang `SPEED` wird über eine Adapterverbindung an den Eingang `IN` von `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` geleitet.
+   - Dieser Baustein skaliert den Wert mit `SCALE = 0.001` und gibt das Ergebnis als REAL am Ausgang `OUT` aus.
    - Der skalierte Wert wird an den Eingang `rPhys` von `Q_NumericValue_GBSD` übergeben und auf dem UT angezeigt.
 
-2. **VDS**  
-   - `IA_VDS` liefert die Navigationsgeschwindigkeit als UINT am Ausgang `NAV_SPEED`.  
-   - Dieser Wert wird über eine Adapterverbindung an den skalierenden Baustein `FIELDBUS_UINT_TO_SIGNAL_SCALED_VDS` weitergegeben.  
+2. **VDS**
+   - `IA_VDS` liefert die Navigationsgeschwindigkeit als UINT am Ausgang `NAV_SPEED`.
+   - Dieser Wert wird über eine Adapterverbindung an den skalierenden Baustein `FIELDBUS_UINT_TO_SIGNAL_SCALED_VDS` weitergegeben.
    - Nach der gleichen Skalierung (0.001) wird das Signal an den Eingang `rPhys` von `Q_NumericValue_VDS` geschickt und auf dem UT dargestellt.
 
 Die Skalierung mit `0.001` wandelt die typischerweise ganzzahligen CAN-Bus-Werte (z. B. 0–65535) in physikalische Einheiten (z. B. m/s oder km/h) um. Der Offset ist hier auf 0 gesetzt.
@@ -56,4 +56,4 @@ Die Übung **Uebung_073c_AUI** zeigt, wie zwei Geschwindigkeitssignale (GBSD und
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

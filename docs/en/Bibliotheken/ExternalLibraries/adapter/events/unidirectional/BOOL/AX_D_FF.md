@@ -70,7 +70,7 @@ Compare with [E_D_FF](../../../../../StandardLibraries/events/E_D_FF.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_170_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_170_AX.md)
+- [Exercise_170_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_170_AX.md)
 
 ## Conclusion
 
@@ -80,4 +80,4 @@ The AX_D_FF offers a simple and effective solution for basic data storage tasks 
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

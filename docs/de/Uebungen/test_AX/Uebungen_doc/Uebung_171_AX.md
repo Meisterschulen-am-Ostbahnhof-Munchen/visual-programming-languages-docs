@@ -59,24 +59,24 @@ In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-K
 Der Ablauf der Übung gestaltet sich wie folgt:
 
 1.  **Eingabeerfassung**:
-    *   Der Baustein `DigitalInput_CLK_I1` überwacht den Eingang `I1`. Bei einem Klick wird das Ereignis `IND` ausgelöst.
-    *   Der Baustein `DigitalInput_CLK_I2` überwacht den Eingang `I2`. Bei einem Klick wird das Ereignis `IND` ausgelöst.
+    -   Der Baustein `DigitalInput_CLK_I1` überwacht den Eingang `I1`. Bei einem Klick wird das Ereignis `IND` ausgelöst.
+    -   Der Baustein `DigitalInput_CLK_I2` überwacht den Eingang `I2`. Bei einem Klick wird das Ereignis `IND` ausgelöst.
 
 2.  **Signalverarbeitung und Konvertierung**:
-    *   Das `IND`-Ereignis von `DigitalInput_CLK_I1` ist mit dem Eingang `SET` des Bausteins `ASR_2EVENTS_TO_SR` verbunden.
-    *   Das `IND`-Ereignis von `DigitalInput_CLK_I2` ist mit dem Eingang `RESET` des Bausteins `ASR_2EVENTS_TO_SR` verbunden.
-    *   Der Baustein `ASR_2EVENTS_TO_SR` wandelt diese Ereignisse in Befehle auf der Adapter-Leitung `ASR_OUT` um.
+    -   Das `IND`-Ereignis von `DigitalInput_CLK_I1` ist mit dem Eingang `SET` des Bausteins `ASR_2EVENTS_TO_SR` verbunden.
+    -   Das `IND`-Ereignis von `DigitalInput_CLK_I2` ist mit dem Eingang `RESET` des Bausteins `ASR_2EVENTS_TO_SR` verbunden.
+    -   Der Baustein `ASR_2EVENTS_TO_SR` wandelt diese Ereignisse in Befehle auf der Adapter-Leitung `ASR_OUT` um.
 
 3.  **Logik und Ausgabe**:
-    *   Die Adapter-Verbindung führt von `ASR_2EVENTS_TO_SR.ASR_OUT` zu `ASR_AX_SR_1.S_R`. Hier wird der Zustand gespeichert (Setzen oder Rücksetzen).
-    *   Der resultierende Zustand wird über die Adapter-Verbindung `ASR_AX_SR_1.Q` an den Ausgangsbaustein `DigitalOutput_Q1.OUT` weitergegeben.
-    *   Dies bewirkt, dass der physische Ausgang `Q1` aktiviert wird, wenn `I1` gedrückt wurde, und deaktiviert wird, wenn `I2` gedrückt wurde.
+    -   Die Adapter-Verbindung führt von `ASR_2EVENTS_TO_SR.ASR_OUT` zu `ASR_AX_SR_1.S_R`. Hier wird der Zustand gespeichert (Setzen oder Rücksetzen).
+    -   Der resultierende Zustand wird über die Adapter-Verbindung `ASR_AX_SR_1.Q` an den Ausgangsbaustein `DigitalOutput_Q1.OUT` weitergegeben.
+    -   Dies bewirkt, dass der physische Ausgang `Q1` aktiviert wird, wenn `I1` gedrückt wurde, und deaktiviert wird, wenn `I2` gedrückt wurde.
 
 **Lernziele:**
 
-*   Verständnis des Adapter-Konzepts in IEC 61499 / 4diac.
-*   Umwandlung von Event-basierter Logik in Adapter-basierte Logik.
-*   Realisierung einer Speicherfunktion (SR) mittels Adapter-Bausteinen.
+-   Verständnis des Adapter-Konzepts in IEC 61499 / 4diac.
+-   Umwandlung von Event-basierter Logik in Adapter-basierte Logik.
+-   Realisierung einer Speicherfunktion (SR) mittels Adapter-Bausteinen.
 
 ## Zusammenfassung
 
@@ -86,4 +86,4 @@ Die Übung `Uebung_171_AX` zeigt eine moderne Implementierung einer klassischen 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

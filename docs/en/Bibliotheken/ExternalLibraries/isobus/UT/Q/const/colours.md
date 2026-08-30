@@ -36,10 +36,10 @@ The `colours` package declares 16 constants of data type `USINT`. Each constant 
 
 ## Technical Details
 
-* **Data Type:** All constants are of type `USINT` (Unsigned Short Integer), an unsigned 8-bit data type.
-* **Value Range:** The defined values range from 0 to 15 and thus fit well within the value range of the `USINT` type.
-* **Naming Convention:** The constant names follow the convention `COLOR_<FARBNAME>` (e.g., `COLOR_GREEN`), making them easily identifiable.
-* **Compilation:** Values declared as `CONSTANT` are set at compile time and cannot be changed at runtime.
+- **Data Type:** All constants are of type `USINT` (Unsigned Short Integer), an unsigned 8-bit data type.
+- **Value Range:** The defined values range from 0 to 15 and thus fit well within the value range of the `USINT` type.
+- **Naming Convention:** The constant names follow the convention `COLOR_<FARBNAME>` (e.g., `COLOR_GREEN`), making them easily identifiable.
+- **Compilation:** Values declared as `CONSTANT` are set at compile time and cannot be changed at runtime.
 
 ## State Overview
 
@@ -49,9 +49,9 @@ The `colours` package declares 16 constants of data type `USINT`. Each constant 
 
 This constant package is particularly useful in applications that require a limited color palette for user interfaces, visual status indicators (e.g., on HMIs or operator terminals), or for indicating process states. Typical use cases include:
 
-* **Visualization:** Assigning colors to different machine states (e.g., Green = Operation, Red = Fault, Yellow = Warning).
-* **ISOBUS-compliant applications (UT/Universal Terminal):** Standardizing color values in agricultural applications that use the ISOBUS protocol to ensure consistent display across different terminal devices.
-* **Code improvement:** Replacing opaque numerical values in algorithms or configurations with self-explanatory identifiers.
+- **Visualization:** Assigning colors to different machine states (e.g., Green = Operation, Red = Fault, Yellow = Warning).
+- **ISOBUS-compliant applications (UT/Universal Terminal):** Standardizing color values in agricultural applications that use the ISOBUS protocol to ensure consistent display across different terminal devices.
+- **Code improvement:** Replacing opaque numerical values in algorithms or configurations with self-explanatory identifiers.
 
 ## ⚖️ Comparison with similar building blocks
 

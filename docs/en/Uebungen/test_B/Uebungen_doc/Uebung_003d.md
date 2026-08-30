@@ -17,8 +17,8 @@ The objective is to review direct I/O linking using event and data connections. 
 
 ![Uebung_003d_network](./Uebung_003d_network.svg)
 
-* **`DigitalInput_I1`** ➡️ **`DigitalOutput_Q1`**
-* **`DigitalInput_I2`** ➡️ **`DigitalOutput_Q2`**
+- **`DigitalInput_I1`** ➡️ **`DigitalOutput_Q1`**
+- **`DigitalInput_I2`** ➡️ **`DigitalOutput_Q2`**
 
 The block types are `logiBUS_IX` (input) and `logiBUS_QX` (output).
 

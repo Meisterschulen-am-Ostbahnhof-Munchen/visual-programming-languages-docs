@@ -67,7 +67,7 @@ Compared to [AX_TON](../../events/unidirectional/BOOL/timers/AX_TON.md), AX_FB_T
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c3_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
+- [Exercise_020c3_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
 
 ## Conclusion
 

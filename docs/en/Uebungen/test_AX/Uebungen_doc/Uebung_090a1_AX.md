@@ -17,10 +17,10 @@ Selecting a signal from multiple sources (switch).
 
 ![Uebung_090a1_AX_network](./Uebung_090a1_AX_network.svg)
 
-* **`I1` & `I2`**: The two signal sources.
-* **`I4`**: The selector switch.
-* **`F_MUX_2`**: The multiplexer.
-* **`F_BOOL_TO_UINT`**: Auxiliary module for conversion.
+- **`I1` & `I2`**: The two signal sources.
+- **`I4`**: The selector switch.
+- **`F_MUX_2`**: The multiplexer.
+- **`F_BOOL_TO_UINT`**: Auxiliary module for conversion.
 
 ----
 
@@ -30,8 +30,8 @@ The multiplexer expects an integer (UINT) at input `K` to determine which input 
 
 Since `I4` provides a Boolean signal, it is converted as follows:
 
-* `I4 = FALSE` -> `K = 0` -> `MUX` switches `IN1` (`I1`) to the output.
-* `I4 = TRUE` -> `K = 1` -> `MUX` switches `IN2` (`I2`) to the output.
+- `I4 = FALSE` -> `K = 0` -> `MUX` switches `IN1` (`I1`) to the output.
+- `I4 = TRUE` -> `K = 1` -> `MUX` switches `IN2` (`I2`) to the output.
 
 The output `Q1` follows either `I1` or `I2`, depending on the position of `I4`.
 
@@ -41,8 +41,8 @@ The output `Q1` follows either `I1` or `I2`, depending on the position of `I4`.
 
 **Manual/Automatic Switching**:
 
-* `I1`: Signal from the automatic control.
-* `I2`: Signal from the manual switch.
-* `I4`: Key switch "Manual/Auto".
+- `I1`: Signal from the automatic control.
+- `I2`: Signal from the manual switch.
+- `I4`: Key switch "Manual/Auto".
 
 The output (`Q1`) is controlled either automatically or manually, depending on the operating mode.

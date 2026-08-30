@@ -15,7 +15,7 @@ Use of the function block `E_TONOF`, which provides both an on and off delay in 
 
 ![Uebung_020g_network](./Uebung_020g_network.svg)
 
-* Switch to `TRUE`: The output only becomes active after `PT_ON` (5 seconds) has elapsed.
-* Switch to `FALSE`: The output remains active for `PT_OFF` (5 seconds).
+- Switch to `TRUE`: The output only becomes active after `PT_ON` (5 seconds) has elapsed.
+- Switch to `FALSE`: The output remains active for `PT_OFF` (5 seconds).
 
 This completely filters out short pulses (interference) at the input and simultaneously ensures a defined delay.

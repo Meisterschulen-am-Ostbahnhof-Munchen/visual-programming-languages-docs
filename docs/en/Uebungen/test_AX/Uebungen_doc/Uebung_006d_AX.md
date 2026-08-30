@@ -17,16 +17,16 @@ Combining input events and memory elements.
 
 ![Uebung_006d_AX_network](./Uebung_006d_AX_network.svg)
 
-* **`I1` (Set)**: Configured on `BUTTON_DOUBLE_CLICK`.
-* **`I2` (Reset)**: Configured to `BUTTON_SINGLE_CLICK`.
-* **`AX_SR`**: Memory.
+- **`I1` (Set)**: Configured on `BUTTON_DOUBLE_CLICK`.
+- **`I2` (Reset)**: Configured to `BUTTON_SINGLE_CLICK`.
+- **`AX_SR`**: Memory.
 
 ----
 
 ## Functionality
 
-* To **turn on**, the button `I1` must be **double-clicked**.
-* To **turn off**, a **single** click on `I2` is sufficient.
+- To **turn on**, the button `I1` must be **double-clicked**.
+- To **turn off**, a **single** click on `I2` is sufficient.
 
 -----
 

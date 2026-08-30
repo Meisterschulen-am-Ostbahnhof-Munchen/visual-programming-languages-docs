@@ -8,4 +8,4 @@
 
 ![Uebung_003b_sub_network](./Uebung_003b_sub_network.svg)
 
-* [Exercise_003b](Uebung_003b.md)
+- [Exercise_003b](Uebung_003b.md)

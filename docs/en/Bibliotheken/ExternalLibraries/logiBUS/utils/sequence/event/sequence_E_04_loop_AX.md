@@ -11,31 +11,31 @@ sequence_E_04_loop_AX` is a variant of `sequence_E_04_loop` that additionally us
 
 ### **Event Inputs**
 
-* **START_S1**: Starts the sequence at State_01.
-* **S1_S2**: Transition State_01 -> State_02.
-* **S2_S3**: Transition State_02 -> State_03.
-* **S3_S4**: Transition State_03 -> State_04.
-* **S4_S1**: Transition State_04 -> State_01 (Loop).
-* **RESET**: Resets the sequence.
+- **START_S1**: Starts the sequence at State_01.
+- **S1_S2**: Transition State_01 -> State_02.
+- **S2_S3**: Transition State_02 -> State_03.
+- **S3_S4**: Transition State_03 -> State_04.
+- **S4_S1**: Transition State_04 -> State_01 (Loop).
+- **RESET**: Resets the sequence.
 
 ### **Event Outputs**
 
-* **CNF**: Acknowledges execution.
+- **CNF**: Acknowledges execution.
 
 ### **Data Inputs**
 
-* None.
+- None.
 
 ### **Data Outputs**
 
-* **STATE_NR** (SINT): Current state number.
+- **STATE_NR** (SINT): Current state number.
 
 ### **Adapters**
 
-* **DO_S1** (adapter::types::unidirectional::AX): Output adapter for State_01.
-* **DO_S2** (adapter::types::unidirectional::AX): Output adapter for State_02.
-* **DO_S3** (adapter::types::unidirectional::AX): Output adapter for State_03.
-* **DO_S4** (adapter::types::unidirectional::AX): Output adapter for State_04.
+- **DO_S1** (adapter::types::unidirectional::AX): Output adapter for State_01.
+- **DO_S2** (adapter::types::unidirectional::AX): Output adapter for State_02.
+- **DO_S3** (adapter::types::unidirectional::AX): Output adapter for State_03.
+- **DO_S4** (adapter::types::unidirectional::AX): Output adapter for State_04.
 
 ## Functionality
 
@@ -43,7 +43,7 @@ Corresponds to `sequence_E_04_loop`, but uses adapters for the outputs.
 
 ## Technical Features
 
-* Uses `adapter::types::unidirectional::AX`.
+- Uses `adapter::types::unidirectional::AX`.
 
 ## State Overview
 
@@ -55,7 +55,7 @@ For cyclic event-driven sequences with adapter connectivity.
 
 ## ⚖️ Comparison with Similar Function Blocks
 
-* **sequence_E_04_loop**: Standard version without adapters.
+- **sequence_E_04_loop**: Standard version without adapters.
 
 ## Conclusion
 

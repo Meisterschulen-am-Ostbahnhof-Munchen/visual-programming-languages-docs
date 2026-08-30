@@ -68,7 +68,7 @@ The **E_RDELAY** (Reloadable Delay) is an extended delay function block accordin
 
 ## 🛠️ Related Exercises
 
-* [Exercise_018a](../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
+- [Exercise_018a](../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Conclusion
 

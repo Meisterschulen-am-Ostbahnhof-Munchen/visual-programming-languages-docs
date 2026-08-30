@@ -40,7 +40,7 @@ Railway crossings, warning signals.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035a3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+- [Exercise_035a3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
 
 ## Conclusion
 

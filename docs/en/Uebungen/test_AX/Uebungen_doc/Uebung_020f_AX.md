@@ -17,9 +17,9 @@ The objective of this exercise is to use the `AX_TP` function block. A pulse ele
 
 ![Uebung_020f_AX_network](./Uebung_020f_AX_network.svg)
 
-* **`DigitalInput_I1`**: Type `logiBUS_IXA`. The trigger.
-* **`AX_TP`**: [cite_start]Generates a pulse of length `PT` (here 5 seconds) at the output `Q`[cite: 1] on a rising edge at the input.
-* **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. The actuator.
+- **`DigitalInput_I1`**: Type `logiBUS_IXA`. The trigger.
+- **`AX_TP`**: [cite_start]Generates a pulse of length `PT` (here 5 seconds) at the output `Q`[cite: 1] on a rising edge at the input.
+- **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. The actuator.
 
 -----
 

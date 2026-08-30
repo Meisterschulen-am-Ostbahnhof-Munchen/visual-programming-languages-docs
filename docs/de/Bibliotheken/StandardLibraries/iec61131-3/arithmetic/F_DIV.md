@@ -89,7 +89,7 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
+- [Uebung_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Fazit
 

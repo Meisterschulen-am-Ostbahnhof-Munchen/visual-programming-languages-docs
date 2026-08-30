@@ -4,7 +4,7 @@
 
 ![E_CTD_ecc](./E_CTD_ecc.svg)
 
-* [E_CTD: Event-Driven Down Counter according to IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTD-Ereignisgesteuerter-Abwrtszhler-nach-IEC-61499-e368lli)
+- [E_CTD: Event-Driven Down Counter according to IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTD-Ereignisgesteuerter-Abwrtszhler-nach-IEC-61499-e368lli)
 ## Introduction
 
 The **E_CTD** (Event-Driven Down Counter) is an event-driven down counter according to the IEC 61499 standard. This function block is used in industrial control systems to implement counting operations that are triggered by events.
@@ -70,7 +70,7 @@ The **E_CTD** (Event-Driven Down Counter) is an event-driven down counter accord
 
 ## 🛠️ Related Exercises
 
-* [Exercise_081](../../../Uebungen/test_B/Uebungen_doc/Uebung_081.md)
+- [Exercise_081](../../../Uebungen/test_B/Uebungen_doc/Uebung_081.md)
 
 ## Conclusion
 
@@ -80,4 +80,4 @@ The **E_CTD** block is an essential element in IEC 61499, providing a reliable a
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

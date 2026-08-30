@@ -19,13 +19,13 @@ Da es sich um einen Datentyp handelt, existieren keine direkten Ausgänge. Die S
 
 ### **Strukturierte Elemente**
 
-*   **`Picture`** (`logiBUS::utils::sequence::schieber::SchieberStruct`):
-    *   **Kommentar:** `u16ObjId for Picture`
-    *   **Beschreibung:** Enthält die Kennung (Object ID) für das anzuzeigende Bild des Hilfselements. Der zugrundeliegende Typ `SchieberStruct` stellt vermutlich die notwendigen Informationen zur Referenzierung und Handhabung des Bildobjekts bereit.
+-   **`Picture`** (`logiBUS::utils::sequence::schieber::SchieberStruct`):
+    -   **Kommentar:** `u16ObjId for Picture`
+    -   **Beschreibung:** Enthält die Kennung (Object ID) für das anzuzeigende Bild des Hilfselements. Der zugrundeliegende Typ `SchieberStruct` stellt vermutlich die notwendigen Informationen zur Referenzierung und Handhabung des Bildobjekts bereit.
 
-*   **`u8Colour`** (`logiBUS::utils::sequence::schieber::SchieberColorStruct`):
-    *   **Kommentar:** `Background Color of the AUX`
-    *   **Beschreibung:** Definiert die Hintergrundfarbe des Hilfselements. Der Typ `SchieberColorStruct` spezifiziert die verwendete Farbe, wahrscheinlich in einem für das Zielsystem (z.B. ein HMI) geeigneten Format.
+-   **`u8Colour`** (`logiBUS::utils::sequence::schieber::SchieberColorStruct`):
+    -   **Kommentar:** `Background Color of the AUX`
+    -   **Beschreibung:** Definiert die Hintergrundfarbe des Hilfselements. Der Typ `SchieberColorStruct` spezifiziert die verwendete Farbe, wahrscheinlich in einem für das Zielsystem (z.B. ein HMI) geeigneten Format.
 
 ## Funktionsweise
 
@@ -33,8 +33,8 @@ Der Datentyp `SchieberAuxInStruct` ist eine passive Datenstruktur. Seine Funktio
 
 ## Technische Besonderheiten
 
-*   **Namespaces:** Der Datentyp und seine Komponenten sind im Paket `logiBUS::utils::sequence::schieber` definiert, was auf eine spezifische Anwendung in der Steuerungstechnik für Landmaschinen (Agrartechnik) hindeutet.
-*   **Typisierung:** Die Verwendung spezifischer, benutzerdefinierter Typen (`SchieberStruct`, `SchieberColorStruct`) für die Mitglieder fördert die Typsicherheit und Wiederverwendbarkeit im gesamten Projekt.
+-   **Namespaces:** Der Datentyp und seine Komponenten sind im Paket `logiBUS::utils::sequence::schieber` definiert, was auf eine spezifische Anwendung in der Steuerungstechnik für Landmaschinen (Agrartechnik) hindeutet.
+-   **Typisierung:** Die Verwendung spezifischer, benutzerdefinierter Typen (`SchieberStruct`, `SchieberColorStruct`) für die Mitglieder fördert die Typsicherheit und Wiederverwendbarkeit im gesamten Projekt.
 
 ## Zustandsübersicht
 
@@ -44,9 +44,9 @@ Als reiner Datentyp besitzt `SchieberAuxInStruct` keinen internen Zustand oder Z
 
 Dieser Datentyp wird typischerweise in SPS-Steuerungen (speicherprogrammierbare Steuerungen) für mobile Arbeitsmaschinen verwendet, insbesondere in:
 
-*   **HMI-Konfiguration:** Zur Definition des Erscheinungsbildes von Bedien- oder Anzeigeelementen (z.B. Schieber, Taster, Statusleuchten) auf einem Bedienpanel.
-*   **Sequenzsteuerungen:** Innerhalb von Ablaufsteuerungen, bei denen sich die Darstellung eines Elements (Farbe, Bild) in Abhängigkeit vom Prozesszustand ändern soll.
-*   **Datenkapselung:** Vereinfachung der Parametrisierung von Funktionsblöcken, die das Aussehen eines "AUX"-Elements steuern, indem alle visuellen Parameter in einer einzigen Variable übergeben werden können.
+-   **HMI-Konfiguration:** Zur Definition des Erscheinungsbildes von Bedien- oder Anzeigeelementen (z.B. Schieber, Taster, Statusleuchten) auf einem Bedienpanel.
+-   **Sequenzsteuerungen:** Innerhalb von Ablaufsteuerungen, bei denen sich die Darstellung eines Elements (Farbe, Bild) in Abhängigkeit vom Prozesszustand ändern soll.
+-   **Datenkapselung:** Vereinfachung der Parametrisierung von Funktionsblöcken, die das Aussehen eines "AUX"-Elements steuern, indem alle visuellen Parameter in einer einzigen Variable übergeben werden können.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

@@ -123,19 +123,19 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 
 ## Programmablauf und Verbindungen
 
-1. **Initialisierung**  
+1. **Initialisierung**
    Nach dem Start des Systems wird der Baustein `Input_LD` initialisiert. Dabei erzeugt er ein `INITO`‑Ereignis, das den Baustein `AUDI_UDINT_TO_UDI` anstößt (`REQ`). Dieser gibt den festen Wert **UDINT#10** an den Preset‑Eingang des Zählers weiter.
 
-2. **Zählbetrieb**  
-   - Jedes positive Signal an **Input_I1** (→ `Input_CD`) erzeugt ein **CD**‑Ereignis am Zähler → Zählerstand wird um 1 dekrementiert.  
-   - Ein Signal an **Input_I2** (→ `Input_LD`) erzeugt ein **LD**‑Ereignis → Zähler wird auf den zuletzt geladenen Preset‑Wert (initial 10) zurückgesetzt.  
+2. **Zählbetrieb**
+   - Jedes positive Signal an **Input_I1** (→ `Input_CD`) erzeugt ein **CD**‑Ereignis am Zähler → Zählerstand wird um 1 dekrementiert.
+   - Ein Signal an **Input_I2** (→ `Input_LD`) erzeugt ein **LD**‑Ereignis → Zähler wird auf den zuletzt geladenen Preset‑Wert (initial 10) zurückgesetzt.
 
-3. **Ausgaben**  
-   - Der Zähler‑Ausgang **Q** wird über einen Adapter mit dem digitalen Ausgang **Output_Q1** verbunden. Somit leuchtet die Ausgangslampe, wenn der Zähler ≤ 0 ist.  
+3. **Ausgaben**
+   - Der Zähler‑Ausgang **Q** wird über einen Adapter mit dem digitalen Ausgang **Output_Q1** verbunden. Somit leuchtet die Ausgangslampe, wenn der Zähler ≤ 0 ist.
    - Der aktuelle Zählerstand **CV** wird über `AUDI_TO_ALR` in einen LREAL‑Wert gewandelt und von `Q_NumericValue_PHYSA_LREAL` auf dem Terminal (OutputNumber_N3) ausgegeben.
 
-4. **Hinweise aus den Kommentaren**  
-   - *„Hier sind negative Werte möglich!“* – Der Zähler kann bei fortgesetzten CD‑Ereignissen unter Null gehen. Die Terminalausgabe stellt auch negative LREAL‑Werte dar.  
+4. **Hinweise aus den Kommentaren**
+   - *„Hier sind negative Werte möglich!“* – Der Zähler kann bei fortgesetzten CD‑Ereignissen unter Null gehen. Die Terminalausgabe stellt auch negative LREAL‑Werte dar.
    - *„Hier gegebenenfalls einen AX_D_FF einbauen, damit die Events reduziert werden.“* – Bei sehr schnellen Impulsen kann ein vorgeschalteter Flip‑Flop‑Baustein die Ereignisrate dämpfen und unerwünschte Zählungen verhindern.
 
 **Verbindungsübersicht (Auszug aus dem Netzwerk):**
@@ -160,11 +160,11 @@ Die **Uebung_218b_ALR** vermittelt den Umgang mit einem **IEC‑61131‑3 Rückw
 - Datenkonvertierung (UDINT → LREAL) für Ausgabezwecke
 - Erkennung von Problemen bei hohen Ereignisraten und Lösungsansätze (AX_D_FF)
 
-**Schwierigkeitsgrad:** Mittel  
+**Schwierigkeitsgrad:** Mittel
 **Vorkenntnisse:** Grundlagen der 4diac‑IDE, Umgang mit IEC‑Bausteinen und Adapterverbindungen.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

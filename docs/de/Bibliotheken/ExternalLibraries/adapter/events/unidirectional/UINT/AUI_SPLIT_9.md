@@ -31,12 +31,12 @@ Nicht vorhanden.
 
 **Socket (Eingang):**
 
-- `IN` – Typ: `adapter::types::unidirectional::AUI`  
+- `IN` – Typ: `adapter::types::unidirectional::AUI`
   Empfängt das zu verteilende AUI-Signal.
 
 **Plugs (Ausgänge):**
 
-- `OUT1` bis `OUT9` – jeweils Typ: `adapter::types::unidirectional::AUI`  
+- `OUT1` bis `OUT9` – jeweils Typ: `adapter::types::unidirectional::AUI`
   Neun identische Ausgänge, die das eingehende AUI-Signal unverändert weiterleiten.
 
 Der FB ist ein reiner Adapter-Splitter ohne zusätzliche Logik und arbeitet unidirektional. Alle Plugs sind vom gleichen Typ wie der Socket.
@@ -81,4 +81,4 @@ Der **AUI_SPLIT_9** ist ein einfacher, aber effektiver Funktionsbaustein zur Meh
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

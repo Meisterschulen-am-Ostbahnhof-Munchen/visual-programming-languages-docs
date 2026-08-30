@@ -34,14 +34,14 @@ Der Baustein basiert vollständig auf einer adapterbasierten Kommunikation.
 
 #### Sockets (Steckdosen / Eingänge)
 
-* **IN1** (Typ: `adapter::types::unidirectional::AS`): Erster Multiplikand (Eingang 1).
-* **IN2** (Typ: `adapter::types::unidirectional::AS`): Zweiter Multiplikand (Eingang 2).
-* **IN3** (Typ: `adapter::types::unidirectional::AS`): Dritter Multiplikand (Eingang 3).
-* **IN4** (Typ: `adapter::types::unidirectional::AS`): Vierter Multiplikand (Eingang 4).
+- **IN1** (Typ: `adapter::types::unidirectional::AS`): Erster Multiplikand (Eingang 1).
+- **IN2** (Typ: `adapter::types::unidirectional::AS`): Zweiter Multiplikand (Eingang 2).
+- **IN3** (Typ: `adapter::types::unidirectional::AS`): Dritter Multiplikand (Eingang 3).
+- **IN4** (Typ: `adapter::types::unidirectional::AS`): Vierter Multiplikand (Eingang 4).
 
 #### Plugs (Stecker / Ausgänge)
 
-* **OUT** (Typ: `adapter::types::unidirectional::AS`): Ergebnis der Multiplikation (`IN1 * IN2 * IN3 * IN4`).
+- **OUT** (Typ: `adapter::types::unidirectional::AS`): Ergebnis der Multiplikation (`IN1 * IN2 * IN3 * IN4`).
 
 ---
 
@@ -57,33 +57,33 @@ Das Ergebnis sowie das zugehörige Ausgangsereignis werden anschließend über d
 
 ## Technische Besonderheiten
 
-* **Generischer Charakter:** Durch die Zuordnung zur generischen Klasse `GEN_AS_MUL` kann sich der Baustein flexibel an verschiedene numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`) anpassen, sofern die angeschlossenen Adapter vom Typ `AS` denselben Datentyp führen.
-* **Unidirektionale Adapter:** Die Verwendung des Typs `adapter::types::unidirectional::AS` stellt sicher, dass der Datenfluss klar und gerichtet von den Eingängen zum Ausgang verläuft.
-* **Kompaktes Design:** Durch das Kapseln von Daten- und Event-Kanälen in Adaptern bleibt das Anwendungsdiagramm in 4diac übersichtlich.
+- **Generischer Charakter:** Durch die Zuordnung zur generischen Klasse `GEN_AS_MUL` kann sich der Baustein flexibel an verschiedene numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`) anpassen, sofern die angeschlossenen Adapter vom Typ `AS` denselben Datentyp führen.
+- **Unidirektionale Adapter:** Die Verwendung des Typs `adapter::types::unidirectional::AS` stellt sicher, dass der Datenfluss klar und gerichtet von den Eingängen zum Ausgang verläuft.
+- **Kompaktes Design:** Durch das Kapseln von Daten- und Event-Kanälen in Adaptern bleibt das Anwendungsdiagramm in 4diac übersichtlich.
 
 ---
 
 ## Zustandsübersicht
 
-Da es sich bei `AS_MUL_4` um einen mathematischen, zustandslosen Funktionsbaustein handelt, existiert kein komplexes internes Zustandsdiagramm (ECC). 
+Da es sich bei `AS_MUL_4` um einen mathematischen, zustandslosen Funktionsbaustein handelt, existiert kein komplexes internes Zustandsdiagramm (ECC).
 
-* **Bereit / Idle:** Der Baustein wartet auf eingehende Ereignisse an den Sockets `IN1` bis `IN4`.
-* **Berechnung:** Bei einem eingehenden Trigger-Ereignis werden die Werte aktualisiert, multipliziert und direkt an `OUT` übergeben.
+- **Bereit / Idle:** Der Baustein wartet auf eingehende Ereignisse an den Sockets `IN1` bis `IN4`.
+- **Berechnung:** Bei einem eingehenden Trigger-Ereignis werden die Werte aktualisiert, multipliziert und direkt an `OUT` übergeben.
 
 ---
 
 ## Anwendungsszenarien
 
-* **Skalierung von Messwerten:** Multiplikation eines Sensorwerts mit mehreren Kalibrierungs- und Korrekturfaktoren.
-* **Volumenberechnungen:** Berechnung eines Volumens aus drei Dimensionen (Länge × Breite × Höhe) multipliziert mit einem Dichtefaktor.
-* **Kaskadierte Verstärkungsglieder:** Berechnung von Gesamtkreisverstärkungen in der Regelungstechnik, bei denen vier unterschiedliche Verstärkungsfaktoren (Gains) multipliziert werden müssen.
+- **Skalierung von Messwerten:** Multiplikation eines Sensorwerts mit mehreren Kalibrierungs- und Korrekturfaktoren.
+- **Volumenberechnungen:** Berechnung eines Volumens aus drei Dimensionen (Länge × Breite × Höhe) multipliziert mit einem Dichtefaktor.
+- **Kaskadierte Verstärkungsglieder:** Berechnung von Gesamtkreisverstärkungen in der Regelungstechnik, bei denen vier unterschiedliche Verstärkungsfaktoren (Gains) multipliziert werden müssen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Standard-`MUL`-Baustein (IEC 61131-3):** Dieser benötigt für jeden Wert separate Datenleitungen und mindestens ein Trigger-Ereignis (REQ/CNF). `AS_MUL_4` vereinfacht dies durch die Nutzung von Adaptern auf nur fünf Verbindungen (4 Eingangs-Adapter, 1 Ausgangs-Adapter).
-* **`AS_MUL_2` / `AS_MUL_3`:** Bieten dieselbe adapterbasierte Funktionalität, sind jedoch auf zwei bzw. drei Eingangswerte begrenzt. `AS_MUL_4` spart bei der Verknüpfung von vier Faktoren zusätzliche Zwischenschritte und temporäre Hilfsvariablen.
+- **Standard-`MUL`-Baustein (IEC 61131-3):** Dieser benötigt für jeden Wert separate Datenleitungen und mindestens ein Trigger-Ereignis (REQ/CNF). `AS_MUL_4` vereinfacht dies durch die Nutzung von Adaptern auf nur fünf Verbindungen (4 Eingangs-Adapter, 1 Ausgangs-Adapter).
+- **`AS_MUL_2` / `AS_MUL_3`:** Bieten dieselbe adapterbasierte Funktionalität, sind jedoch auf zwei bzw. drei Eingangswerte begrenzt. `AS_MUL_4` spart bei der Verknüpfung von vier Faktoren zusätzliche Zwischenschritte und temporäre Hilfsvariablen.
 
 ---
 

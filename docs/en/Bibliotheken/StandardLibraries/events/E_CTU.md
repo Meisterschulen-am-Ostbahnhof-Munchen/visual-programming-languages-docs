@@ -4,13 +4,13 @@
 
 ![E_CTU_ecc](./E_CTU_ecc.svg)
 
-* [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
+- [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
 ## 🎧 Podcast
 
-* [The E_CTU in IEC 61499: Event-driven counting and why the minimalist solution is convincing in mechanical engineering](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
-* [The E_CTU component: Event-driven incrementing in industry according to IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-Baustein-Ereignisgesteuertes-Hochzhlen-in-der-Industrie-nach-IEC-61499-e36846t)
-* [E_CTUD: Bidirectional counter in IEC 61499 systems](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
-* [Master knowledge 61499: The event-driven upcounter (E_CTU) – Robust counting in Agricultural Machinery Controls ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Meisterwissen-61499-Der-Ereignisgesteuerte-Aufwrtszhler-E_CTU--Robustes-Zhlen-in-Landmaschinen-Steuerungen-e3a9q5n)
+- [The E_CTU in IEC 61499: Event-driven counting and why the minimalist solution is convincing in mechanical engineering](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
+- [The E_CTU component: Event-driven incrementing in industry according to IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-Baustein-Ereignisgesteuertes-Hochzhlen-in-der-Industrie-nach-IEC-61499-e36846t)
+- [E_CTUD: Bidirectional counter in IEC 61499 systems](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
+- [Master knowledge 61499: The event-driven upcounter (E_CTU) – Robust counting in Agricultural Machinery Controls ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Meisterwissen-61499-Der-Ereignisgesteuerte-Aufwrtszhler-E_CTU--Robustes-Zhlen-in-Landmaschinen-Steuerungen-e3a9q5n)
 
 ----
 
@@ -77,15 +77,15 @@ If `CV >= PV` is the current value, the output `Q` is set to `TRUE`; otherwise, 
 
 ## 🛠️ Related exercises
 
-* [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Uebung_040_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Uebung_041](../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
-* [Uebung_080](../../../Uebungen/test_B/Uebungen_doc/Uebung_080.md)
-* [Uebung_080b](../../../Uebungen/test_B/Uebungen_doc/Uebung_080b.md)
-* [Uebung_080c](../../../Uebungen/test_B/Uebungen_doc/Uebung_080c.md)
-* [Uebung_084](../../../Uebungen/test_B/Uebungen_doc/Uebung_084.md)
-* [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
+- [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Uebung_040_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Uebung_041](../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Uebung_080](../../../Uebungen/test_B/Uebungen_doc/Uebung_080.md)
+- [Uebung_080b](../../../Uebungen/test_B/Uebungen_doc/Uebung_080b.md)
+- [Uebung_080c](../../../Uebungen/test_B/Uebungen_doc/Uebung_080c.md)
+- [Uebung_084](../../../Uebungen/test_B/Uebungen_doc/Uebung_084.md)
+- [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Conclusion
 
@@ -95,4 +95,4 @@ The `E_CTU` is a basic and versatile counter module for event-driven systems acc
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Module on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Module on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

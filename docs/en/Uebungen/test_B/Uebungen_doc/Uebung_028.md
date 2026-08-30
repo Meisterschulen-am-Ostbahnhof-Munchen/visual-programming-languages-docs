@@ -17,10 +17,10 @@ Using the function block `logiBUS_AI_ID`. It demonstrates how analog voltage val
 
 ![Uebung_028_network](./Uebung_028_network.svg)
 
-* **`AnalogInput_I4` & `I7`**: Type `logiBUS_AI_ID`. [cite_start]These blocks represent the analog hardware inputs. They convert the electrical voltage into a numerical digital value.[cite: 1]
-* **Parameter `AnalogInput_hysteresis`**: Determines how much the value must change before a new event (`IND`) is triggered (here, 50 units). This suppresses noise.
-* **`F_DWORD_TO_UDINT`**: Converts the raw value into an integer data type for further processing.
-* -----
+- **`AnalogInput_I4` & `I7`**: Type `logiBUS_AI_ID`. [cite_start]These blocks represent the analog hardware inputs. They convert the electrical voltage into a numerical digital value.[cite: 1]
+- **Parameter `AnalogInput_hysteresis`**: Determines how much the value must change before a new event (`IND`) is triggered (here, 50 units). This suppresses noise.
+- **`F_DWORD_TO_UDINT`**: Converts the raw value into an integer data type for further processing.
+- -----
 
 ## Functionality
 

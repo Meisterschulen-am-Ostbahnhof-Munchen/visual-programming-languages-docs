@@ -76,6 +76,6 @@ The **AS_SPLIT_7** is a simple yet useful function block for passively distribut
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
 
 ]

@@ -39,9 +39,9 @@ The initial value of 255 for `Pin` indicates that the pin is not yet configured.
 
 ## Technical Features
 
-* **Typing:** Using a structured data type instead of a simple `USINT` increases type safety and application readability. It is clear that the value represents a logiBUS output pin.
-* **Initial Value:** The initial value of 255 serves as a "Safe State" indicator. Before the structure is correctly configured, this value indicates an inactive or faulty state.
-* **Package Assignment:** The struct is part of the `logiBUS::io::DQ` package, indicating its membership in the digital input/output (Digital I/O) of the logiBUS framework.
+- **Typing:** Using a structured data type instead of a simple `USINT` increases type safety and application readability. It is clear that the value represents a logiBUS output pin.
+- **Initial Value:** The initial value of 255 serves as a "Safe State" indicator. Before the structure is correctly configured, this value indicates an inactive or faulty state.
+- **Package Assignment:** The struct is part of the `logiBUS::io::DQ` package, indicating its membership in the digital input/output (Digital I/O) of the logiBUS framework.
 
 ## State Overview
 
@@ -55,27 +55,27 @@ Since it is a passive data type, `logiBUS_DO_S` does not have an internal state 
 
 ## ⚖️ Comparison with Similar Building Blocks
 
-* **Simple `USINT`:** Directly using a `USINT` value for the pin number is possible, but offers less semantic clarity and type safety. The `logiBUS_DO_S` makes the purpose of the data element explicit.
-* **`logiBUS_DI_S`:** This is the structural counterpart for digital inputs (DIs). It has an identical structure (a `USINT` field `Pin`), but conceptually belongs to the input side. Separating DO and DI structs improves code readability and maintainability.
+- **Simple `USINT`:** Directly using a `USINT` value for the pin number is possible, but offers less semantic clarity and type safety. The `logiBUS_DO_S` makes the purpose of the data element explicit.
+- **`logiBUS_DI_S`:** This is the structural counterpart for digital inputs (DIs). It has an identical structure (a `USINT` field `Pin`), but conceptually belongs to the input side. Separating DO and DI structs improves code readability and maintainability.
 *
 ## 🛠️ Related exercises
 
-* [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
-* [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
-* [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
-* [Uebung_010b4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
-* [Uebung_010b4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
-* [Uebung_010b5_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
-* [Uebung_010b5_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
-* [Uebung_010c2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
-* [Uebung_010c3_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Uebung_010c3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
-* [Uebung_010c4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Uebung_010c4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
-* [Uebung_026_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Uebung_039a_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
+- [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
+- [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
+- [Uebung_010b4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
+- [Uebung_010b4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
+- [Uebung_010b5_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
+- [Uebung_010b5_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
+- [Uebung_010c2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+- [Uebung_010c2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
+- [Uebung_010c3_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+- [Uebung_010c3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
+- [Uebung_010c4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+- [Uebung_010c4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
+- [Uebung_026_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
+- [Uebung_039_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Uebung_039a_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 
 ## Conclusion
 
@@ -85,4 +85,4 @@ The The `logiBUS_DO_S` struct is a simple yet essential helper element in the lo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

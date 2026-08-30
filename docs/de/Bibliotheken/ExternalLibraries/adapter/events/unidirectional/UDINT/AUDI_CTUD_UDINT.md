@@ -56,8 +56,8 @@ Der Zählwert wird über den `CV`-Adapter als `AUDI`-Signal ausgegeben. Die Ausg
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
+- [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
 
 
 
@@ -65,4 +65,4 @@ Der Zählwert wird über den `CV`-Adapter als `AUDI`-Signal ausgegeben. Die Ausg
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

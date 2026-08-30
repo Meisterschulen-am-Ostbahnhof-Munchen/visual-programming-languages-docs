@@ -25,5 +25,5 @@ The use of **AX adapters** between the sequencer and the output sub-applications
 
 ## 🛠️ Related exercises
 
-* [Uebung_039_sub_Outputs_AX](Uebung_039_sub_Outputs_AX.md)
-* [Uebung_039_sub_NumbAnAnzeige_AX](Uebung_039_sub_NumbAnzeig_AX.md)
+- [Uebung_039_sub_Outputs_AX](Uebung_039_sub_Outputs_AX.md)
+- [Uebung_039_sub_NumbAnAnzeige_AX](Uebung_039_sub_NumbAnzeig_AX.md)

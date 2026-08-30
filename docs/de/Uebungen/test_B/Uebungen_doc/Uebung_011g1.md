@@ -14,19 +14,19 @@ Diese Übung demonstriert den parallelen Einsatz mehrerer `IOObserver` für eine
 
 Die SubApp besteht direkt aus folgenden Funktionsbausteinen:
 
-- **`NumericValue_ID`** (Typ: `isobus::UT::io::NumericValue::NumericValue_ID`)  
-  - **Parametrierung**:  
-    - `QI` = `TRUE` (Aktivierung)  
-    - `u16ObjId` = `InputNumber_I1` (Identifikator der numerischen Eingabe)  
-  - **Ereignisse**:  
-    - Ereignisausgang `IND` – signalisiert, dass ein neuer Wert anliegt  
+- **`NumericValue_ID`** (Typ: `isobus::UT::io::NumericValue::NumericValue_ID`)
+  - **Parametrierung**:
+    - `QI` = `TRUE` (Aktivierung)
+    - `u16ObjId` = `InputNumber_I1` (Identifikator der numerischen Eingabe)
+  - **Ereignisse**:
+    - Ereignisausgang `IND` – signalisiert, dass ein neuer Wert anliegt
   - **Datenausgang**: `IN` (Typ `DWORD`) – aktueller Wert der beobachteten Objektinstanz
 
-- **`F_DWORD_TO_UDINT`** (Typ: `iec61131::conversion::F_DWORD_TO_UDINT`)  
-  - **Keine weiteren Parameter**  
-  - **Ereigniseingang**: `REQ` – startet die Konvertierung  
-  - **Dateneingang**: `IN` vom Typ `DWORD`  
-  - **Datenausgang**: `OUT` vom Typ `UDINT` (unsigned double integer)  
+- **`F_DWORD_TO_UDINT`** (Typ: `iec61131::conversion::F_DWORD_TO_UDINT`)
+  - **Keine weiteren Parameter**
+  - **Ereigniseingang**: `REQ` – startet die Konvertierung
+  - **Dateneingang**: `IN` vom Typ `DWORD`
+  - **Datenausgang**: `OUT` vom Typ `UDINT` (unsigned double integer)
   - **Funktion**: Wandelt einen 32‑Bit DWORD‑Wert in einen vorzeichenlosen 32‑Bit‑Integer um.
 
 Im Netzwerk sind drei identische Paare dieser Bausteine vorhanden:
@@ -39,16 +39,16 @@ Im Netzwerk sind drei identische Paare dieser Bausteine vorhanden:
 
 ## Programmablauf und Verbindungen
 
-1. **Ereignisverbindungen** (EventConnections):  
+1. **Ereignisverbindungen** (EventConnections):
    Jeder Observer (`IND`) ist je mit dem Konverter (`REQ`) verbunden. Sobald ein neuer Wert vom ISOBUS‑Gateway eintrifft, wird genau der zugehörige Konvertierungsvorgang ausgelöst.
 
-2. **Datenverbindungen** (DataConnections):  
+2. **Datenverbindungen** (DataConnections):
    Der Datenausgang `IN` jedes Observers ist direkt mit dem Dateneingang `IN` des zugehörigen Konverters verbunden. Die drei Datenpfade sind vollständig voneinander isoliert; jeder Konverter arbeitet mit dem Wert des ihm zugeordneten Observers.
 
-3. **Gemeinsame Quelle**:  
+3. **Gemeinsame Quelle**:
    Alle drei `NumericValue_ID`‑Bausteine beziehen ihre Daten vom selben ISOBUS‑Objekt (`InputNumber_I1`). Die Observer können unabhängig voneinander arbeiten, da jeder eine eigene Kopie des aktuellen Werts erhält.
 
-4. **Konvertierung**:  
+4. **Konvertierung**:
    Die Ausgänge `OUT` der drei `F_DWORD_TO_UDINT`‑Bausteine stellen das gleiche numerische Signal als `UDINT` dar – für unterschiedliche Verbraucher innerhalb der Anwendung.
 
 ### Lernziele
@@ -59,7 +59,7 @@ Im Netzwerk sind drei identische Paare dieser Bausteine vorhanden:
 
 ### Schwierigkeitsgrad
 
-Einfach – grundlegende Funktionsbausteine und einfache Verdrahtung.  
+Einfach – grundlegende Funktionsbausteine und einfache Verdrahtung.
 Vorausgesetzt werden Basiskenntnisse in 4diac und im Umgang mit ISOBUS‑Datenobjekten.
 
 ## Zusammenfassung
@@ -70,4 +70,4 @@ Die Übung `Uebung_011g1` zeigt ein Muster, bei dem ein einzelner numerischer Ei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

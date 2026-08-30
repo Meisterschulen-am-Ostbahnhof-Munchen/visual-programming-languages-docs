@@ -15,34 +15,34 @@ Der Funktionsblock `sequence_ET_08` ist ein Sequenzer mit acht Ausgängen. Er er
 
 ### **Ereignis-Eingänge**
 
-*   `START_S1`: Springt vom `START`-Zustand in den Zustand `State_01`. Überträgt alle Zeitdaten (`DT_S1_S2` bis `DT_S8_START`).
-*   `S1_S2`: Springt von `State_01` zu `State_02`.
-*   `S2_S3`: Springt von `State_02` zu `State_03`.
-*   `S3_S4`: Springt von `State_03` zu `State_04`.
-*   `S4_S5`: Springt von `State_04` zu `State_05`.
-*   `S5_S6`: Springt von `State_05` zu `State_06`.
-*   `S6_S7`: Springt von `State_06` zu `State_07`.
-*   `S7_S8`: Springt von `State_07` zu `State_08`.
-*   `S8_START`: Springt von `State_08` zurück in den `START`-Zustand.
-*   `RESET`: Setzt den Baustein aus jedem beliebigen Zustand zurück in den `START`-Zustand.
+-   `START_S1`: Springt vom `START`-Zustand in den Zustand `State_01`. Überträgt alle Zeitdaten (`DT_S1_S2` bis `DT_S8_START`).
+-   `S1_S2`: Springt von `State_01` zu `State_02`.
+-   `S2_S3`: Springt von `State_02` zu `State_03`.
+-   `S3_S4`: Springt von `State_03` zu `State_04`.
+-   `S4_S5`: Springt von `State_04` zu `State_05`.
+-   `S5_S6`: Springt von `State_05` zu `State_06`.
+-   `S6_S7`: Springt von `State_06` zu `State_07`.
+-   `S7_S8`: Springt von `State_07` zu `State_08`.
+-   `S8_START`: Springt von `State_08` zurück in den `START`-Zustand.
+-   `RESET`: Setzt den Baustein aus jedem beliebigen Zustand zurück in den `START`-Zustand.
 
 ### **Ereignis-Ausgänge**
 
-*   `CNF`: Ausführungsbestätigung. Wird bei jedem Zustandswechsel gesetzt und überträgt die aktuelle Zustandsnummer (`STATE_NR`).
-*   `EO_S1` bis `EO_S8`: Zustands-spezifische Ereignisausgänge. Werden beim Eintritt in den entsprechenden Zustand (`State_01` bis `State_08`) ausgelöst und übertragen den jeweiligen booleschen Datenausgang (`DO_S1` bis `DO_S8`).
+-   `CNF`: Ausführungsbestätigung. Wird bei jedem Zustandswechsel gesetzt und überträgt die aktuelle Zustandsnummer (`STATE_NR`).
+-   `EO_S1` bis `EO_S8`: Zustands-spezifische Ereignisausgänge. Werden beim Eintritt in den entsprechenden Zustand (`State_01` bis `State_08`) ausgelöst und übertragen den jeweiligen booleschen Datenausgang (`DO_S1` bis `DO_S8`).
 
 ### **Daten-Eingänge**
 
-*   `DT_S1_S2` bis `DT_S8_START` (Typ `TIME`): Definieren die Zeitdauer für den automatischen Übergang vom aktuellen zum nächsten Zustand. Wenn der Wert auf `NO_TIME` gesetzt ist, ist der zeitgesteuerte Übergang für diesen Schritt deaktiviert und ein Ereignis ist erforderlich.
+-   `DT_S1_S2` bis `DT_S8_START` (Typ `TIME`): Definieren die Zeitdauer für den automatischen Übergang vom aktuellen zum nächsten Zustand. Wenn der Wert auf `NO_TIME` gesetzt ist, ist der zeitgesteuerte Übergang für diesen Schritt deaktiviert und ein Ereignis ist erforderlich.
 
 ### **Daten-Ausgänge**
 
-*   `STATE_NR` (Typ `SINT`): Gibt die aktuelle Zustandsnummer aus (`START = 0`, `State_01 = 1`, ..., `State_08 = 8`).
-*   `DO_S1` bis `DO_S8` (Typ `BOOL`): Logische Ausgänge, die `TRUE` sind, solange sich der Baustein im entsprechenden Zustand (`State_01` bis `State_08`) befindet.
+-   `STATE_NR` (Typ `SINT`): Gibt die aktuelle Zustandsnummer aus (`START = 0`, `State_01 = 1`, ..., `State_08 = 8`).
+-   `DO_S1` bis `DO_S8` (Typ `BOOL`): Logische Ausgänge, die `TRUE` sind, solange sich der Baustein im entsprechenden Zustand (`State_01` bis `State_08`) befindet.
 
 ### **Adapter**
 
-*   `timeOut` (Typ `iec61499::events::ATimeOut`): Ein Zeitgeber-Adapter, der für die Realisierung der zeitgesteuerten Zustandsübergänge verwendet wird.
+-   `timeOut` (Typ `iec61499::events::ATimeOut`): Ein Zeitgeber-Adapter, der für die Realisierung der zeitgesteuerten Zustandsübergänge verwendet wird.
 
 ## Funktionsweise
 
@@ -63,10 +63,10 @@ Das `RESET`-Ereignis führt in einen dedizierten Reset-Zustand (`sRESET`), der a
 
 ## Technische Besonderheiten
 
-*   **Hybride Transitionen:** Jeder Schritt bietet zwei parallele Übergangsbedingungen (Ereignis ODER Zeit), was maximale Flexibilität bietet.
-*   **Sichere Zustandsbehandlung:** Beim Zustandswechsel wird der Zeitgeber immer gestoppt, und die Ausgänge werden durch definierte Exit-Algorithmen sauber deaktiviert.
-*   **Konfigurierbare Zeiten:** Die Zeit für jeden Schritt kann individuell eingestellt oder durch `NO_TIME` deaktiviert werden.
-*   **Explizite Zustandsrückmeldung:** Der Ausgang `STATE_NR` erlaubt eine einfache externe Überwachung der aktuellen Schrittposition.
+-   **Hybride Transitionen:** Jeder Schritt bietet zwei parallele Übergangsbedingungen (Ereignis ODER Zeit), was maximale Flexibilität bietet.
+-   **Sichere Zustandsbehandlung:** Beim Zustandswechsel wird der Zeitgeber immer gestoppt, und die Ausgänge werden durch definierte Exit-Algorithmen sauber deaktiviert.
+-   **Konfigurierbare Zeiten:** Die Zeit für jeden Schritt kann individuell eingestellt oder durch `NO_TIME` deaktiviert werden.
+-   **Explizite Zustandsrückmeldung:** Der Ausgang `STATE_NR` erlaubt eine einfache externe Überwachung der aktuellen Schrittposition.
 
 ## Zustandsübersicht
 
@@ -77,10 +77,10 @@ Das `RESET`-Ereignis führt in einen dedizierten Reset-Zustand (`sRESET`), der a
 
 ## Anwendungsszenarien
 
-*   Steuerung von zyklischen Prozessen in Verpackungs- oder Fertigungsmaschinen.
-*   Schrittkette für einen automatisierten Test- oder Kalibrierablauf.
-*   Steuerung einer Belichtungs- oder Spülsequenz in der Halbleiterfertigung.
-*   Allgemeine Zustandsautomaten, bei denen Schritte sowohl durch Sensorik (Ereignis) als auch durch feste Zeiten vorangetrieben werden können.
+-   Steuerung von zyklischen Prozessen in Verpackungs- oder Fertigungsmaschinen.
+-   Schrittkette für einen automatisierten Test- oder Kalibrierablauf.
+-   Steuerung einer Belichtungs- oder Spülsequenz in der Halbleiterfertigung.
+-   Allgemeine Zustandsautomaten, bei denen Schritte sowohl durch Sensorik (Ereignis) als auch durch feste Zeiten vorangetrieben werden können.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -94,4 +94,4 @@ Der `sequence_ET_08` ist ein robuster und einfach zu konfigurierender Sequenzer-
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

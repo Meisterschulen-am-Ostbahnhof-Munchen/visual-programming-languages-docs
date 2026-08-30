@@ -52,13 +52,13 @@ Der Funktionsblock **DataPanel_MI_IW_4_20mA** ist ein Service-Interface-Funktion
 
 Der Funktionsblock realisiert eine asynchrone Kommunikation mit einem Slave‑Gerät (z. B. einem Analog‑Eingangsmodul mit 4‑20 mA Schnittstelle) über einen proprietären Bus.
 
-1. **Initialisierung** (`INIT`):  
+1. **Initialisierung** (`INIT`):
    Die Parameter `PARAMS` (z. B. Baudrate, Protokoll‑Einstellungen), die Knotenadresse (`u8SAMember`) und der konkrete analoge Eingangskanal (`Input`) werden gesetzt. Eine Hysterese (`AnalogInput_hysteresis`) kann zur Stabilisierung des Rohwerts angegeben werden. Nach erfolgreicher Verbindung wird `INITO` mit `QO = TRUE` gesendet.
 
-2. **Messwertanforderung** (`REQ`):  
+2. **Messwertanforderung** (`REQ`):
    Der Baustein fordert den aktuellen Messwert des konfigurierten Kanals an. Die Antwort wird asynchron über den Ausgang `CNF` (bei erfolgreicher Anforderung) oder ggf. über `IND` (bei spontanen Wertänderungen oder zyklischen Meldungen des Slaves) geliefert. Der gelesene Wert erscheint in der Ausgangsvariablen `IN` als 16‑Bit‑Rohwert.
 
-3. **Asynchrone Indikation** (`IND`):  
+3. **Asynchrone Indikation** (`IND`):
    Falls das Slave‑Gerät selbstständig (z. B. bei Überschreitung einer Schwelle) Daten sendet, wird `IND` ausgelöst. Dadurch können auch nicht angeforderte Messwerte erfasst werden.
 
 Die Ausgänge `QO` und `STATUS` geben Aufschluss über den Erfolg der Operationen (z. B. Initialisierungsfehler, Kommunikationsfehler).
@@ -112,4 +112,4 @@ Der Funktionsblock **DataPanel_MI_IW_4_20mA** stellt eine robuste und kompakte L
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -20,11 +20,11 @@ Das Hauptziel ist die Demonstration der Interoperabilität. Während spezialisie
 
 ![Uebung_002a2_AX_network](./Uebung_002a2_AX_network.svg)
 
-  * **`AX_X_TO_BOOL_1` & `_2`**: Wandeln das Adapter-Signal (`Event + Data`) in ein explizites Ereignis `CNF` und einen booleschen Wert `IN` um.
-  * **`F_AND`**: Ein klassisches bitweises UND-Gatter aus der IEC 61131 Bibliothek.
-  * **`AX_BOOL_TO_X`**: Wandelt das Ergebnis der Logik wieder in ein Adapter-Signal um.
-  * **`DigitalInput_I1` & `I2`**: Eingänge.
-  * **`DigitalOutput_Q1`**: Ausgang.
+  - **`AX_X_TO_BOOL_1` & `_2`**: Wandeln das Adapter-Signal (`Event + Data`) in ein explizites Ereignis `CNF` und einen booleschen Wert `IN` um.
+  - **`F_AND`**: Ein klassisches bitweises UND-Gatter aus der IEC 61131 Bibliothek.
+  - **`AX_BOOL_TO_X`**: Wandelt das Ergebnis der Logik wieder in ein Adapter-Signal um.
+  - **`DigitalInput_I1` & `I2`**: Eingänge.
+  - **`DigitalOutput_Q1`**: Ausgang.
 
 -----
 

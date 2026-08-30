@@ -72,11 +72,11 @@ The **F_MOVE** is a universal function block for type-safe data transfer, develo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
-* [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
-* [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
-* [Exercise_171](../../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
+- [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
+- [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
+- [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
+- [Exercise_171](../../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
 
 ## Conclusion
 

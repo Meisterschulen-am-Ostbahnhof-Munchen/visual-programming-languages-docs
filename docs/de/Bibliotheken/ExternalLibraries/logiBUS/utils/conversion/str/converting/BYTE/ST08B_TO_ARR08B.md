@@ -13,19 +13,19 @@ Der Funktionsblock `ST08B_TO_ARR08B` dient der Konvertierung eines 8-Byte-Strukt
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Ein Ereignis-Eingang, der die Ausführung der Konvertierung auslöst. Dieses Ereignis ist mit dem Daten-Eingang `IN` verknüpft, um sicherzustellen, dass die Konvertierung mit den aktuellen Eingangsdaten erfolgt.
+-   **REQ**: Ein Ereignis-Eingang, der die Ausführung der Konvertierung auslöst. Dieses Ereignis ist mit dem Daten-Eingang `IN` verknüpft, um sicherzustellen, dass die Konvertierung mit den aktuellen Eingangsdaten erfolgt.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Ein Ereignis-Ausgang, der signalisiert, dass die Konvertierung erfolgreich abgeschlossen wurde und die Ausgabe `OUT` aktualisiert ist. Dieses Ereignis ist mit dem Daten-Ausgang `OUT` verknüpft.
+-   **CNF**: Ein Ereignis-Ausgang, der signalisiert, dass die Konvertierung erfolgreich abgeschlossen wurde und die Ausgabe `OUT` aktualisiert ist. Dieses Ereignis ist mit dem Daten-Ausgang `OUT` verknüpft.
 
 ### **Daten-Eingänge**
 
-*   **IN**: Ein Daten-Eingang vom Typ `logiBUS::utils::conversion::types::ST08B`. Dieser Eingang erwartet eine Struktur, die aus 8 Bytes besteht (z.B. `B_00` bis `B_07`).
+-   **IN**: Ein Daten-Eingang vom Typ `logiBUS::utils::conversion::types::ST08B`. Dieser Eingang erwartet eine Struktur, die aus 8 Bytes besteht (z.B. `B_00` bis `B_07`).
 
 ### **Daten-Ausgänge**
 
-*   **OUT**: Ein Daten-Ausgang vom Typ `BYTE` als Array mit der Größe `0..7`. Dieses Array enthält die 8 Bytes, die aus der Eingangsstruktur konvertiert wurden.
+-   **OUT**: Ein Daten-Ausgang vom Typ `BYTE` als Array mit der Größe `0..7`. Dieses Array enthält die 8 Bytes, die aus der Eingangsstruktur konvertiert wurden.
 
 ### **Adapter**
 
@@ -36,17 +36,17 @@ Dieser Funktionsblock verwendet keine Adapter.
 Die Funktionsweise des `ST08B_TO_ARR08B` ist direkt und unkompliziert. Beim Empfang eines `REQ`-Ereignisses werden die einzelnen Byte-Elemente der Eingangsstruktur `IN` direkt den entsprechenden Elementen des Ausgangsarrays `OUT` zugewiesen. Jedes Element `B_xx` der Struktur `IN` wird dem Element `OUT[xx]` des Arrays zugewiesen.
 Konkret erfolgt die Zuweisung wie folgt:
 
-*   `OUT[0]` wird `IN.B_00` zugewiesen.
-*   `OUT[1]` wird `IN.B_01` zugewiesen.
-*   ...
-*   `OUT[7]` wird `IN.B_07` zugewiesen.
+-   `OUT[0]` wird `IN.B_00` zugewiesen.
+-   `OUT[1]` wird `IN.B_01` zugewiesen.
+-   ...
+-   `OUT[7]` wird `IN.B_07` zugewiesen.
 Nach Abschluss dieser Zuweisungen wird das `CNF`-Ereignis ausgelöst, um den Abschluss der Operation zu signalisieren.
 
 ## Technische Besonderheiten
 
-*   **Datentypen:** Der Funktionsblock arbeitet mit einem spezifischen benutzerdefinierten Strukturtyp `ST08B` und einem Standard `BYTE`-Array.
-*   **Direkte Zuordnung:** Es findet keine komplexe Logik, Transformation oder Berechnung statt, sondern eine direkte 1:1-Zuordnung der Bytes.
-*   **Transparenz:** Die Implementierung in ST (Strukturierter Text) ist klar und leicht nachvollziehbar, was eine hohe Transparenz der Funktion gewährleistet.
+-   **Datentypen:** Der Funktionsblock arbeitet mit einem spezifischen benutzerdefinierten Strukturtyp `ST08B` und einem Standard `BYTE`-Array.
+-   **Direkte Zuordnung:** Es findet keine komplexe Logik, Transformation oder Berechnung statt, sondern eine direkte 1:1-Zuordnung der Bytes.
+-   **Transparenz:** Die Implementierung in ST (Strukturierter Text) ist klar und leicht nachvollziehbar, was eine hohe Transparenz der Funktion gewährleistet.
 
 ## Zustandsübersicht
 
@@ -54,10 +54,10 @@ Der Funktionsblock `ST08B_TO_ARR08B` ist ein reiner Datenkonvertierungsbaustein 
 
 ## Anwendungsszenarien
 
-*   **Datenvorbereitung für Kommunikation:** Um strukturierte Daten für serielle Kommunikationsprotokolle (z.B. Modbus RTU, SPI, I2C), Ethernet-Frames oder andere byteorientierte Schnittstellen vorzubereiten.
-*   **Anbindung externer Geräte:** Wenn externe Geräte oder Bibliotheken Daten als reines Byte-Array erwarten, kann dieser Baustein interne strukturierte Daten passend umwandeln.
-*   **Typumwandlung und Interoperabilität:** Verbesserung der Kompatibilität zwischen verschiedenen Teilen einer Anwendung oder zwischen verschiedenen Systemen, die unterschiedliche Datenrepräsentationen verwenden.
-*   **Archivierung und Logging:** Speicherung von strukturierten Daten in einem generischen Byte-Format für Archivierungs- oder Logging-Zwecke.
+-   **Datenvorbereitung für Kommunikation:** Um strukturierte Daten für serielle Kommunikationsprotokolle (z.B. Modbus RTU, SPI, I2C), Ethernet-Frames oder andere byteorientierte Schnittstellen vorzubereiten.
+-   **Anbindung externer Geräte:** Wenn externe Geräte oder Bibliotheken Daten als reines Byte-Array erwarten, kann dieser Baustein interne strukturierte Daten passend umwandeln.
+-   **Typumwandlung und Interoperabilität:** Verbesserung der Kompatibilität zwischen verschiedenen Teilen einer Anwendung oder zwischen verschiedenen Systemen, die unterschiedliche Datenrepräsentationen verwenden.
+-   **Archivierung und Logging:** Speicherung von strukturierten Daten in einem generischen Byte-Format für Archivierungs- oder Logging-Zwecke.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -71,4 +71,4 @@ Der `ST08B_TO_ARR08B` ist ein einfacher, aber effektiver Funktionsblock zur Konv
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

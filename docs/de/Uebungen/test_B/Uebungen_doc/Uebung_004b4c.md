@@ -48,7 +48,7 @@ Die drei Bausteine sind hintereinandergeschaltet:
   - `Uebung_004b3b_sub2` verbindet seinen `PLUG` mit dem `SOCKET` von `Uebung_004b3b_sub3` (Stufe 3).
   - Dadurch entsteht eine logische Kette: Stufe 1 gibt ihren Zustand an Stufe 2 weiter, Stufe 2 an Stufe 3. Die bidirektionale Natur der Adapter ermöglicht es, dass sowohl Vorwärts‑ als auch Rückwärtssignale (z. B. Verriegelung) über ein einziges Kabelpaar ausgetauscht werden. Ein Kommentar im Netzwerk lautet: *„durch den Einsatz eines Bidirektionalen Adapters: 1 Verbindung REICHT!“*
 
-Der Ablauf:  
+Der Ablauf:
 Beim Drücken von Taster I1 wird Stufe 1 aktiviert (sofern keine andere aktiv ist). Der Zustand wandert dann bei weiteren Tastendrücken (I2 oder I3) entlang der Kette weiter. Nur ein Ausgang kann gleichzeitig TRUE sein – die Verriegelung verhindert mehrere aktive Stufen.
 
 ## Zusammenfassung
@@ -59,4 +59,4 @@ Die Übung **Uebung_004b4c** veranschaulicht die Realisierung einer gegenseitig 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

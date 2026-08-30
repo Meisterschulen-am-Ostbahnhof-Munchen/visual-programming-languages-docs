@@ -28,9 +28,9 @@ The structure `SoftKeyActivationCode_S` serves as a container for configuration 
 
 ## Technical Features
 
-* **Initial Values:** Both fields have predefined initial values. The default value `255` for `code` can be interpreted as "invalid" or "unconfigured" code.
-* **ISOBUS Context:** This data type is part of the `isobus::UT::io::Softkey` package, indicating its use in ISOBUS Virtual Terminal (VT) or similar I/O contexts.
-* **Cycle Control:** Precise control of the repetition rate via `bCyclic` is crucial for user-friendly and reliable keyboard input, especially with long data fields or list controls.
+- **Initial Values:** Both fields have predefined initial values. The default value `255` for `code` can be interpreted as "invalid" or "unconfigured" code.
+- **ISOBUS Context:** This data type is part of the `isobus::UT::io::Softkey` package, indicating its use in ISOBUS Virtual Terminal (VT) or similar I/O contexts.
+- **Cycle Control:** Precise control of the repetition rate via `bCyclic` is crucial for user-friendly and reliable keyboard input, especially with long data fields or list controls.
 
 ## State Overview
 
@@ -48,8 +48,8 @@ This data structure is typically used as an input or configuration parameter for
 
 Unlike a function block (FB), `SoftKeyActivationCode_S` is a pure **data type** (struct). It does not contain any algorithms or event-driven logic.
 
-* **Similarity to `E_SR` or `E_RS`:** These are function blocks with memory functionality and internal state logic. `SoftKeyActivationCode_S`, on the other hand, is a pure data carrier.
-* **Comparison with simple data types:** Unlike atomic types such as `INT` or `BOOL`, this struct combines two logically related pieces of information (`code` and behavior `bCyclic`) into a single, reusable unit.
+- **Similarity to `E_SR` or `E_RS`:** These are function blocks with memory functionality and internal state logic. `SoftKeyActivationCode_S`, on the other hand, is a pure data carrier.
+- **Comparison with simple data types:** Unlike atomic types such as `INT` or `BOOL`, this struct combines two logically related pieces of information (`code` and behavior `bCyclic`) into a single, reusable unit.
 
 ## Conclusion
 

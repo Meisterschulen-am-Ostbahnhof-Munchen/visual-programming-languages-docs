@@ -9,9 +9,9 @@ Die Übung `Uebung_006a5_AX` zeigt, wie sich mit **einem einzigen physischen Tas
 
 Damit lässt sich mit einem einzigen Taster ein Ausgang:
 
-* **fest einschalten** (Halten/lange drücken → *rastend* wie ein Schalter),
-* **fest ausschalten** (Loslassen nach langem Drücken),
-* **umschalten** (kurzer Klick → *tastend* wie ein klassischer Taster).
+- **fest einschalten** (Halten/lange drücken → *rastend* wie ein Schalter),
+- **fest ausschalten** (Loslassen nach langem Drücken),
+- **umschalten** (kurzer Klick → *tastend* wie ein klassischer Taster).
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -84,4 +84,4 @@ Die Übung `Uebung_006a5_AX` zeigt, wie der Alles-Könner-Baustein `AX_T_FF_SR` 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

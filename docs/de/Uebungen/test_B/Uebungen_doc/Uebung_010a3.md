@@ -24,8 +24,8 @@ Ein "Latching Button" ist im ISOBUS-Objektpool so definiert, dass er seinen Zust
 
 ![Uebung_010a3_network](./Uebung_010a3_network.svg)
 
-*   Erster Klick: Button rastet visuell ein, sendet dauerhaft `TRUE`.
-*   Zweiter Klick: Button springt zurück, sendet dauerhaft `FALSE`.
+-   Erster Klick: Button rastet visuell ein, sendet dauerhaft `TRUE`.
+-   Zweiter Klick: Button springt zurück, sendet dauerhaft `FALSE`.
 
 Daher wird, wie im Kommentar vermerkt, **kein Software-Flip-Flop** (T_FF) in 4diac benötigt. Die Speicherfunktion wird vollständig vom ISOBUS-Terminal übernommen.
 
@@ -33,4 +33,4 @@ Daher wird, wie im Kommentar vermerkt, **kein Software-Flip-Flop** (T_FF) in 4di
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

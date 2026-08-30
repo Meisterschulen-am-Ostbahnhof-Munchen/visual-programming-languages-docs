@@ -20,8 +20,8 @@ Demonstration der "Fan-Out"-Fähigkeit von Ereignisverbindungen in 4diac. Ein ei
 
 ![Uebung_004a5_network](./Uebung_004a5_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Taster.
-  * **`E_T_FF_Q1` & `Q2`**: Zwei unabhängige Flip-Flops.
+  - **`DigitalInput_CLK_I1`**: Taster.
+  - **`E_T_FF_Q1` & `Q2`**: Zwei unabhängige Flip-Flops.
 
 -----
 
@@ -40,8 +40,8 @@ Wenn `I1` ein Ereignis feuert, wird dieses an alle verbundenen Ziele verteilt. D
 
 **Wann nutzt man was?**
 
-*   Nutzen Sie **direkte Verbindungen (Fan-Out)**, wenn die Reihenfolge der Abarbeitung keine Rolle spielt (wie hier beim gleichzeitigen Toggelt zweier Lampen).
-*   Nutzen Sie einen **`E_SPLIT` Baustein**, wenn eine exakte Abfolge (zuerst A, dann B) technisch zwingend erforderlich ist.
+-   Nutzen Sie **direkte Verbindungen (Fan-Out)**, wenn die Reihenfolge der Abarbeitung keine Rolle spielt (wie hier beim gleichzeitigen Toggelt zweier Lampen).
+-   Nutzen Sie einen **`E_SPLIT` Baustein**, wenn eine exakte Abfolge (zuerst A, dann B) technisch zwingend erforderlich ist.
 
 -----
 
@@ -53,4 +53,4 @@ Gleiches Beispiel wie zuvor (Zentral-Aus), jedoch platzsparender implementiert. 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

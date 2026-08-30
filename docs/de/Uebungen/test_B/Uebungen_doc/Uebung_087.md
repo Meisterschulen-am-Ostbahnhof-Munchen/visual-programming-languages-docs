@@ -20,10 +20,10 @@ Verwendung des `E_DEMUX` (Event Demultiplexer). Es wird gezeigt, wie ein zentral
 
 ![Uebung_087_network](./Uebung_087_network.svg)
 
-  * **`I1` (Trigger)**: Das Ereignis, das verteilt werden soll.
-  * **`I2`, `I3`, `I4` (Selector)**: Bestimmen das Ziel.
-  * **`ADD_3`**: Summiert die Zustände der Taster 2, 3 und 4 auf.
-  * **`E_DEMUX`**: Leitet das Event von `I1` an den Ausgang weiter, dessen Nummer der berechneten Summe entspricht.
+  - **`I1` (Trigger)**: Das Ereignis, das verteilt werden soll.
+  - **`I2`, `I3`, `I4` (Selector)**: Bestimmen das Ziel.
+  - **`ADD_3`**: Summiert die Zustände der Taster 2, 3 und 4 auf.
+  - **`E_DEMUX`**: Leitet das Event von `I1` an den Ausgang weiter, dessen Nummer der berechneten Summe entspricht.
 
 -----
 
@@ -31,10 +31,10 @@ Verwendung des `E_DEMUX` (Event Demultiplexer). Es wird gezeigt, wie ein zentral
 
 Die Anzahl der gedrückten "Wahl-Taster" bestimmt, welche Lampe beim Klick auf **I1** toggelt:
 
-*   Kein Wahl-Taster gedrückt ➡️ Summe = 0 ➡️ Klick auf I1 toggelt **Q1**.
-*   Ein Wahl-Taster gedrückt ➡️ Summe = 1 ➡️ Klick auf I1 toggelt **Q2**.
-*   Zwei Wahl-Taster gedrückt ➡️ Summe = 2 ➡️ Klick auf I1 toggelt **Q3**.
-*   Alle drei Wahl-Taster gedrückt ➡️ Summe = 3 ➡️ Klick auf I1 toggelt **Q4**.
+-   Kein Wahl-Taster gedrückt ➡️ Summe = 0 ➡️ Klick auf I1 toggelt **Q1**.
+-   Ein Wahl-Taster gedrückt ➡️ Summe = 1 ➡️ Klick auf I1 toggelt **Q2**.
+-   Zwei Wahl-Taster gedrückt ➡️ Summe = 2 ➡️ Klick auf I1 toggelt **Q3**.
+-   Alle drei Wahl-Taster gedrückt ➡️ Summe = 3 ➡️ Klick auf I1 toggelt **Q4**.
 
 -----
 

@@ -73,10 +73,10 @@ Der `FB_RS` wertet die Eingänge bei `REQ` aus:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e2.md)
-* [Uebung_006e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e2_AX.md)
-* [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
-* [Uebung_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Uebung_006e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e2.md)
+- [Uebung_006e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e2_AX.md)
+- [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
+- [Uebung_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Fazit
 

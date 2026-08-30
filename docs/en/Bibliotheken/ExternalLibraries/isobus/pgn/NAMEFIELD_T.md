@@ -39,9 +39,9 @@ The `NAMEFIELD_T` data type is a passive data structure. Its primary function is
 
 ## Technical Features
 
-* **Bit-accurate mapping:** The structure directly maps the binary layout of the ISO NAME field, enabling efficient serialization and deserialization for communication via the CAN bus protocol.
-* **Initial values:** The selected initial values (maximum values for the respective data types) clearly indicate an uninitialized or placeholder state.
-* **ISOBUS compliance:** The naming and division of the fields strictly adhere to the ISO 11783-5 specification and the extended IFM conventions.
+- **Bit-accurate mapping:** The structure directly maps the binary layout of the ISO NAME field, enabling efficient serialization and deserialization for communication via the CAN bus protocol.
+- **Initial values:** The selected initial values (maximum values for the respective data types) clearly indicate an uninitialized or placeholder state.
+- **ISOBUS compliance:** The naming and division of the fields strictly adhere to the ISO 11783-5 specification and the extended IFM conventions.
 
 ## State overview
 
@@ -51,17 +51,17 @@ Since this is a data type and not a function block, there is no state machine. T
 
 The data type `NAMEFIELD_T` is primarily used in ISOBUS-compliant control applications, for example, in agricultural and forestry technology or construction machinery.
 
-* **Device Identification:** As part of messages (e.g., in the Address Claim process) to identify a participant in the network.
-* **Data Storage:** For storing the device's own identity within ECU software.
-* **Filtering:** For configuring message filters based on device class, function, or manufacturer.
-* **Diagnostics:** For uniquely identifying devices in diagnostic and configuration tools.
+- **Device Identification:** As part of messages (e.g., in the Address Claim process) to identify a participant in the network.
+- **Data Storage:** For storing the device's own identity within ECU software.
+- **Filtering:** For configuring message filters based on device class, function, or manufacturer.
+- **Diagnostics:** For uniquely identifying devices in diagnostic and configuration tools.
 *
 ## ⚖️ Comparison with Similar Function Blocks
 
 Unlike function blocks (FBs) such as `E_SR` or `E_CYCLE`, `NAMEFIELD_T` is a pure **data type** (structured data type). It contains no algorithms, events, or executed code.
 
-* **Similarity to other STRUCTs:** It is comparable to other structured data types in 4diac (e.g., for complex measured values), but is specifically designed for the ISOBUS protocol.
-* **Difference to Basic Data Types:** While basic types such as `INT` or `BOOL` hold individual values, `NAMEFIELD_T` groups several logically related values into a single unit.
+- **Similarity to other STRUCTs:** It is comparable to other structured data types in 4diac (e.g., for complex measured values), but is specifically designed for the ISOBUS protocol.
+- **Difference to Basic Data Types:** While basic types such as `INT` or `BOOL` hold individual values, `NAMEFIELD_T` groups several logically related values into a single unit.
 *
 ## Conclusion
 
@@ -71,6 +71,6 @@ The data type `NAMEFIELD_T` is an essential tool for developing ISOBUS-compliant
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

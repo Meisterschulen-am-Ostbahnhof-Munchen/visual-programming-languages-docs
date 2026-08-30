@@ -58,7 +58,7 @@ The function block has no internal states. Selection and routing occur immediate
 
 ## 🛠️ Related Exercises
 
-* [Exercise_090a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
+- [Exercise_090a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
 
 ## Conclusion
 

@@ -5,8 +5,8 @@
 * * * * * * * * * *
 ## Einleitung
 
-Diese Übung demonstriert das Durchschalten eines digitalen Eingangssignals (Input_I1) auf einen digitalen Ausgang (Output_Q1).  
-Dabei kommen **Adapterbausteine** (Plug-and-Socket) zum Einsatz, um die Ereignis- und Datenflüsse zwischen den Funktionsbausteinen zu koppeln.  
+Diese Übung demonstriert das Durchschalten eines digitalen Eingangssignals (Input_I1) auf einen digitalen Ausgang (Output_Q1).
+Dabei kommen **Adapterbausteine** (Plug-and-Socket) zum Einsatz, um die Ereignis- und Datenflüsse zwischen den Funktionsbausteinen zu koppeln.
 Das Ziel ist es, die grundlegende Verwendung von Adapterverbindungen in der 4diac-IDE zu verstehen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -17,7 +17,7 @@ Das Ziel ist es, die grundlegende Verwendung von Adapterverbindungen in der 4dia
 - **Verwendete Parameter**:
   - `QI` = `TRUE` (Freigabe aktiv)
   - `Input` = `Input_I1` (physischer Eingang)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der Baustein liest den Zustand des angeschlossenen digitalen Eingangs **Input_I1**. Bei einer Signaländerung wird ein Ereignis über den **Adapterausgang `IN`** ausgegeben. Der Parameter `QI` muss gesetzt sein, damit der Baustein arbeitet.
 
 ### DigitalOutput_Q1
@@ -26,19 +26,19 @@ Das Ziel ist es, die grundlegende Verwendung von Adapterverbindungen in der 4dia
 - **Verwendete Parameter**:
   - `QI` = `TRUE` (Freigabe aktiv)
   - `Output` = `Output_Q1` (physischer Ausgang)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der Baustein empfängt ein Ereignis über den **Adaptereingang `OUT`** und setzt den angeschlossenen digitalen Ausgang **Output_Q1** entsprechend. Der Ausgang wird aktiv, sobald ein Ereignis eintrifft.
 
 ### AX_SPLIT_2
 
 - **Typ**: `adapter::events::unidirectional::AX_SPLIT_2`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Dieser Adapterbaustein verteilt ein eingehendes Ereignis auf **zwei identische Ausgänge** (`OUT1` und `OUT2`). Er dient als **Splitte**r, um das Signal parallel an mehrere nachfolgende Bausteine weiterzuleiten.
 
 ### AX_AND_2
 
 - **Typ**: `adapter::booleanOperators::AX_AND_2`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Dieser Adapterbaustein führt eine **logische UND-Verknüpfung** auf zwei Ereigniseingängen (`IN1`, `IN2`) durch. Nur wenn an beiden Eingängen gleichzeitig ein Ereignis anliegt, wird ein Ereignis am Ausgang `OUT` ausgegeben.
 
 ## Programmablauf und Verbindungen
@@ -47,7 +47,7 @@ Der Signalfluss in der Sub-Applikation erfolgt ausschließlich über **Adapterve
 
 1. Der Digitaleingang **DigitalInput_I1** erkennt eine Änderung an `Input_I1` und sendet ein Ereignis auf seinem Adapterausgang `IN`.
 2. Dieses Ereignis wird zum **AX_SPLIT_2**-Baustein geleitet, der es auf seine beiden Ausgänge `OUT1` und `OUT2` vervielfältigt.
-3. Beide Ausgänge sind mit den Eingängen des **AX_AND_2**-Bausteins verbunden (`IN1` und `IN2`).  
+3. Beide Ausgänge sind mit den Eingängen des **AX_AND_2**-Bausteins verbunden (`IN1` und `IN2`).
    Da beide Eingänge dasselbe Ereignis gleichzeitig erhalten, führt die UND-Verknüpfung immer zu einem Ereignis am Ausgang `OUT`.
 
 4. Das Ausgangsereignis von `AX_AND_2` wird an den Adaptereingang `OUT` des **DigitalOutput_Q1**-Bausteins übertragen, der daraufhin den physischen Ausgang **Output_Q1** setzt.
@@ -56,11 +56,11 @@ Im Ergebnis wird der Digitaleingang **I1** direkt auf den Digitalausgang **Q1** 
 
 ## Zusammenfassung
 
-Die Übung `Uebung_001d_AX` zeigt, wie man mit **Plug-and-Socket-Verbindungen** (Adapterbausteine) Ereignisse zwischen Funktionsbausteinen koppelt, ohne direkte Datenleitungen zu verwenden.  
+Die Übung `Uebung_001d_AX` zeigt, wie man mit **Plug-and-Socket-Verbindungen** (Adapterbausteine) Ereignisse zwischen Funktionsbausteinen koppelt, ohne direkte Datenleitungen zu verwenden.
 Durch die Kombination von Splitter- (`AX_SPLIT_2`) und UND-Baustein (`AX_AND_2`) wird ein einfaches Durchschalten realisiert. Dies vermittelt ein grundlegendes Verständnis für die ereignisgesteuerte Kommunikation in der 4diac-IDE und die Verwendung von Adaptern in der Automatisierungstechnik.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

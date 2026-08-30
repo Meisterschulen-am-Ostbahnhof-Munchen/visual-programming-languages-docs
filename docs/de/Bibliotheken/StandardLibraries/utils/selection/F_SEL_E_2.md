@@ -67,8 +67,8 @@ Der Funktionsblock `F_SEL_E_2` wählt zwischen zwei Eingangsvariablen basierend 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_019](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
-* [Uebung_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
+- [Uebung_019](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
+- [Uebung_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
 
 ## Fazit
 

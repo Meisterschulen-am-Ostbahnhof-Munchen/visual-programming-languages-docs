@@ -17,7 +17,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsbaustein `AUI_ADD_4` ist ein generischer Arithmetik-Baustein für die Entwicklungsumgebung 4diac-IDE. Er dient zur Addition von bis zu vier numerischen Eingangswerten, die über standardisierte, unidirektionale Adapter vom Typ `AUI` (Analog Universal Interface) bereitgestellt werden. Das berechnete Summengebnis wird über einen entsprechenden Ausgangs-Adapter ausgegeben. 
+Der Funktionsbaustein `AUI_ADD_4` ist ein generischer Arithmetik-Baustein für die Entwicklungsumgebung 4diac-IDE. Er dient zur Addition von bis zu vier numerischen Eingangswerten, die über standardisierte, unidirektionale Adapter vom Typ `AUI` (Analog Universal Interface) bereitgestellt werden. Das berechnete Summengebnis wird über einen entsprechenden Ausgangs-Adapter ausgegeben.
 
 Durch die Verwendung von Adaptern wird die Anzahl der sichtbaren Verbindungen im Steuerungsdiagramm minimiert, was zu einer übersichtlicheren und modulareren Applikationsarchitektur führt.
 
@@ -43,18 +43,18 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Die Datenausgabe ist im Ausgan
 
 #### **Sockets (Eingangs-Schnittstellen)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN1** (Typ: `adapter::types::unidirectional::AUI`):
   Erster Summand der Additionsoperation.
-* **IN2** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN2** (Typ: `adapter::types::unidirectional::AUI`):
   Zweiter Summand der Additionsoperation.
-* **IN3** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN3** (Typ: `adapter::types::unidirectional::AUI`):
   Dritter Summand der Additionsoperation.
-* **IN4** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN4** (Typ: `adapter::types::unidirectional::AUI`):
   Vierter Summand der Additionsoperation.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUI`): 
+- **OUT** (Typ: `adapter::types::unidirectional::AUI`):
   Ausgangs-Adapter, der das mathematische Ergebnis der Addition bereitstellt.
 
 ## Funktionsweise
@@ -68,9 +68,9 @@ Der Funktionsbaustein arbeitet nach den Prinzipien der IEC 61499 für daten- und
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_AUI_ADD`):** Dank der generischen Definition ist der Baustein flexibel einsetzbar. Die genaue Datentyp-Auflösung (z. B. `INT`, `REAL`, `LREAL`) erfolgt dynamisch zur Laufzeit oder während der Instanziierung in der 4diac-IDE, passend zur Konfiguration des `AUI`-Adapters.
-* **Kapselung durch Adapter:** Durch die Verwendung von Adaptern anstelle von einzelnen Event-/Data-Pins wird die visuelle Komplexität im Funktionsplan drastisch reduziert ("Clean Design").
-* **Unidirektionaler Datenfluss:** Die Nutzung von unidirektionalen Adaptern stellt sicher, dass Daten und Ereignisse streng gerichtet von den Eingängen zum Ausgang fließen, was unbeabsichtigte Rückkopplungsschleifen verhindert.
+- **Generischer Typ (`GEN_AUI_ADD`):** Dank der generischen Definition ist der Baustein flexibel einsetzbar. Die genaue Datentyp-Auflösung (z. B. `INT`, `REAL`, `LREAL`) erfolgt dynamisch zur Laufzeit oder während der Instanziierung in der 4diac-IDE, passend zur Konfiguration des `AUI`-Adapters.
+- **Kapselung durch Adapter:** Durch die Verwendung von Adaptern anstelle von einzelnen Event-/Data-Pins wird die visuelle Komplexität im Funktionsplan drastisch reduziert ("Clean Design").
+- **Unidirektionaler Datenfluss:** Die Nutzung von unidirektionalen Adaptern stellt sicher, dass Daten und Ereignisse streng gerichtet von den Eingängen zum Ausgang fließen, was unbeabsichtigte Rückkopplungsschleifen verhindert.
 
 ## Zustandsübersicht
 
@@ -89,14 +89,14 @@ Der Baustein besitzt eine einfache, ereignisgesteuerte Ausführungslogik (Execut
 
 ## Anwendungsszenarien
 
-* **Sensordaten-Fusion:** Aufsummierung von bis zu vier analogen Messwerten (z. B. Erfassung des Gesamtvolumenstroms aus vier einzelnen Teilströmen).
-* **Leistungsberechnung:** Addition der Wirkleistungen von vier separaten Verbrauchern zur Ermittlung der Gesamtleistung in einem Energiemonitorsystem.
-* **Sollwert-Generierung:** Zusammenführung eines Basis-Sollwerts mit bis zu drei Korrektur- oder Offsetwerten in Regelungssystemen.
+- **Sensordaten-Fusion:** Aufsummierung von bis zu vier analogen Messwerten (z. B. Erfassung des Gesamtvolumenstroms aus vier einzelnen Teilströmen).
+- **Leistungsberechnung:** Addition der Wirkleistungen von vier separaten Verbrauchern zur Ermittlung der Gesamtleistung in einem Energiemonitorsystem.
+- **Sollwert-Generierung:** Zusammenführung eines Basis-Sollwerts mit bis zu drei Korrektur- oder Offsetwerten in Regelungssystemen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Vergleich mit Standard-`ADD` (IEC 61131-3):** Klassische `ADD`-Bausteine arbeiten mit expliziten Daten- und Event-Pins. `AUI_ADD_4` bündelt diese Signale in Adaptern, was die Verkabelung vereinfacht und standardisiert.
-* **Vergleich mit `AUI_ADD_2`:** Für die Addition von drei oder vier Werten müssten bei einem 2-fach-Addierer mehrere Bausteine kaskadiert werden. `AUI_ADD_4` spart hierdurch Systemressourcen, verringert die Latenzzeit und sorgt für ein saubereres Applikationslayout.
+- **Vergleich mit Standard-`ADD` (IEC 61131-3):** Klassische `ADD`-Bausteine arbeiten mit expliziten Daten- und Event-Pins. `AUI_ADD_4` bündelt diese Signale in Adaptern, was die Verkabelung vereinfacht und standardisiert.
+- **Vergleich mit `AUI_ADD_2`:** Für die Addition von drei oder vier Werten müssten bei einem 2-fach-Addierer mehrere Bausteine kaskadiert werden. `AUI_ADD_4` spart hierdurch Systemressourcen, verringert die Latenzzeit und sorgt für ein saubereres Applikationslayout.
 
 ## Änderungserkennung
 

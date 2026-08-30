@@ -9,25 +9,25 @@ Composite-Funktionsblock zur Konvertierung eines AR-Adapters (REAL) in einen ALR
 
 ## Schnittstellenstruktur
 
-### **Ereignis-Eingänge**  
+### **Ereignis-Eingänge**
 
 | Name | Beschreibung |
 |------|--------------|
 | **E1** (von AR_IN) | Ereignis zur Auslösung der Datenübergabe |
 
-### **Ereignis-Ausgänge**  
+### **Ereignis-Ausgänge**
 
 | Name | Beschreibung |
 |------|--------------|
 | **E1** (von ALR_OUT) | Ereignis, das nach erfolgreicher Konvertierung ausgegeben wird |
 
-### **Daten-Eingänge**  
+### **Daten-Eingänge**
 
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | **D1** (von AR_IN) | REAL | 32‑Bit Gleitkommazahl |
 
-### **Daten-Ausgänge**  
+### **Daten-Ausgänge**
 
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
@@ -35,8 +35,8 @@ Composite-Funktionsblock zur Konvertierung eines AR-Adapters (REAL) in einen ALR
 
 ### **Adapter**
 
-- **ALR_OUT** (Plug): Typ `adapter::types::unidirectional::ALR` – LREAL‑Ausgangsadapter  
-- **AR_IN** (Socket): Typ `adapter::types::unidirectional::AR` – REAL‑Eingangsadapter  
+- **ALR_OUT** (Plug): Typ `adapter::types::unidirectional::ALR` – LREAL‑Ausgangsadapter
+- **AR_IN** (Socket): Typ `adapter::types::unidirectional::AR` – REAL‑Eingangsadapter
 
 ## Funktionsweise
 
@@ -44,9 +44,9 @@ Der Baustein verbindet die Adapterschnittstellen direkt. Ein eingehendes Ereigni
 
 ## Technische Besonderheiten
 
-- Composite‑FB ohne eigene Logik (kein ECC)  
-- Verwendung unidirektionaler Adapter gemäß IEC 61499‑2  
-- Automatische Typumwandlung durch die 4diac‑Laufzeit (z. B. 4diac‑ide)  
+- Composite‑FB ohne eigene Logik (kein ECC)
+- Verwendung unidirektionaler Adapter gemäß IEC 61499‑2
+- Automatische Typumwandlung durch die 4diac‑Laufzeit (z. B. 4diac‑ide)
 - Paket: `adapter::conversion::unidirectional`
 
 ## Zustandsübersicht
@@ -55,9 +55,9 @@ Keine Zustände vorhanden – der FB besitzt keinen Ausführungs-Zustandsautomat
 
 ## Anwendungsszenarien
 
-- Anschluss eines REAL‑liefernden Sensors an eine Komponente, die LREAL erwartet  
-- Migration bestehender REAL‑Adapter auf LREAL mit höherer Genauigkeit  
-- Schnittstellenanpassung in heterogenen Automatisierungssystemen  
+- Anschluss eines REAL‑liefernden Sensors an eine Komponente, die LREAL erwartet
+- Migration bestehender REAL‑Adapter auf LREAL mit höherer Genauigkeit
+- Schnittstellenanpassung in heterogenen Automatisierungssystemen
 
 ## Vergleich mit ähnlichen Bausteinen
 
@@ -71,4 +71,4 @@ Der `AR_TO_ALR`‑Baustein ermöglicht eine einfache und effiziente Umwandlung v
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -14,21 +14,21 @@ Der Baustein besitzt keine direkten Ereignis- oder Dateneingänge und -ausgänge
 
 ### **Ereignis-Eingänge**
 
-* **IN1.E1**: Ereignisseingang des Socket-Adapters IN1 – löst den Vergleich aus.
-* **IN2.E1**: Ereignisseingang des Socket-Adapters IN2 – ebenfalls als Trigger für den Vergleich.
+- **IN1.E1**: Ereignisseingang des Socket-Adapters IN1 – löst den Vergleich aus.
+- **IN2.E1**: Ereignisseingang des Socket-Adapters IN2 – ebenfalls als Trigger für den Vergleich.
 
 ### **Ereignis-Ausgänge**
 
-* **OUT.E1**: Ereignisausgang des Plug-Adapters OUT – signalisiert, dass das Vergleichsergebnis am Datenausgang anliegt.
+- **OUT.E1**: Ereignisausgang des Plug-Adapters OUT – signalisiert, dass das Vergleichsergebnis am Datenausgang anliegt.
 
 ### **Daten-Eingänge**
 
-* **IN1.D1**: Erster zu vergleichender Wert (Datentyp `LREAL`, 64-Bit-Gleitkommazahl (doppelte Genauigkeit)).
-* **IN2.D1**: Zweiter zu vergleichender Wert (Datentyp wie IN1).
+- **IN1.D1**: Erster zu vergleichender Wert (Datentyp `LREAL`, 64-Bit-Gleitkommazahl (doppelte Genauigkeit)).
+- **IN2.D1**: Zweiter zu vergleichender Wert (Datentyp wie IN1).
 
 ### **Daten-Ausgänge**
 
-* **OUT.D1**: Boolesches Ergebnis des Vergleichs – `TRUE`, wenn `IN1 <= IN2`, sonst `FALSE`.
+- **OUT.D1**: Boolesches Ergebnis des Vergleichs – `TRUE`, wenn `IN1 <= IN2`, sonst `FALSE`.
 
 ### **Adapter**
 

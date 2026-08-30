@@ -49,8 +49,8 @@ flowchart TD
     ANY_MAG_DURATION --> LTIME
 ```
 
-* **ANY_NUM**: Numeric types (integers and floating-point numbers).
-* **ANY_DURATION**: Duration types (`TIME`, `LTIME`).
+- **ANY_NUM**: Numeric types (integers and floating-point numbers).
+- **ANY_DURATION**: Duration types (`TIME`, `LTIME`).
 
 #### ANY_BIT (Bit String Types)
 

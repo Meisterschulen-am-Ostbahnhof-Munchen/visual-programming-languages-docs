@@ -72,7 +72,7 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_174](../../../Uebungen/test_B/Uebungen_doc/Uebung_174.md)
+- [Uebung_174](../../../Uebungen/test_B/Uebungen_doc/Uebung_174.md)
 
 ## Fazit
 

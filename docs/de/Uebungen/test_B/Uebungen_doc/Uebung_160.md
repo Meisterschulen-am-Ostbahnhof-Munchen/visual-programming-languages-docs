@@ -20,20 +20,20 @@ Realisierung einer Steuerung für Linkslauf, Rechtslauf und ein Summensignal (Mo
 
 ![Uebung_160_network](./Uebung_160_network.svg)
 
-  * **`I1`**: Taster für Linkslauf.
-  * **`I2`**: Taster für Rechtslauf.
-  * **`OR_2_BOOL`**: Logische ODER-Verknüpfung.
-  * **`Q5`**: Ausgang Linkslauf.
-  * **`Q6`**: Ausgang Rechtslauf.
-  * **`Q56`**: Ausgang "Motor läuft" (Summe).
+  - **`I1`**: Taster für Linkslauf.
+  - **`I2`**: Taster für Rechtslauf.
+  - **`OR_2_BOOL`**: Logische ODER-Verknüpfung.
+  - **`Q5`**: Ausgang Linkslauf.
+  - **`Q6`**: Ausgang Rechtslauf.
+  - **`Q56`**: Ausgang "Motor läuft" (Summe).
 
 -----
 
 ## Funktionsweise
 
-*   Drückt der Nutzer **I1**, wird der Ausgang `Q5` aktiv.
-*   Drückt der Nutzer **I2**, wird der Ausgang `Q6` aktiv.
-*   Über das ODER-Gatter wird der Ausgang `Q56` immer dann aktiv, wenn **entweder I1 ODER I2** (oder beide) gedrückt werden.
+-   Drückt der Nutzer **I1**, wird der Ausgang `Q5` aktiv.
+-   Drückt der Nutzer **I2**, wird der Ausgang `Q6` aktiv.
+-   Über das ODER-Gatter wird der Ausgang `Q56` immer dann aktiv, wenn **entweder I1 ODER I2** (oder beide) gedrückt werden.
 
 Diese Schaltung demonstriert die Kombination von direkter Signalweiterleitung und logischer Vorverarbeitung für Anzeige-Zwecke.
 

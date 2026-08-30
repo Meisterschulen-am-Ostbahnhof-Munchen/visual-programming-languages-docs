@@ -32,13 +32,13 @@ Der Funktionsbaustein `ADI_ADD_3` ist ein generischer arithmetischer Baustein, d
 
 #### **Sockets (Eingangs-Schnittstellen)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Eingangssummand für die Addition.
-* **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Eingangssummand für die Addition.
-* **IN3** (Typ: `adapter::types::unidirectional::ADI`): Dritter Eingangssummand für die Addition.
+- **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Eingangssummand für die Addition.
+- **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Eingangssummand für die Addition.
+- **IN3** (Typ: `adapter::types::unidirectional::ADI`): Dritter Eingangssummand für die Addition.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::ADI`): Ausgang für das berechnete Additionsergebnis ($OUT = IN1 + IN2 + IN3$).
+- **OUT** (Typ: `adapter::types::unidirectional::ADI`): Ausgang für das berechnete Additionsergebnis ($OUT = IN1 + IN2 + IN3$).
 
 ---
 
@@ -54,8 +54,8 @@ Das berechnete Ergebnis sowie das zugehörige Aktualisierungsereignis werden ans
 
 ## Technische Besonderheiten
 
-* **Generischer Baustein (Generic FB):** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `GEN_ADI_ADD` verhält sich dieser Baustein polymorph. Er ist nicht auf einen festen Datentyp (wie z. B. `INT` oder `REAL`) fixiert, sondern passt sich flexibel an den im Adapter definierten Datentyp an.
-* **Adapterbasierte Architektur:** Die Kapselung von Daten und Events in den `ADI`-Adaptern reduziert das "Kabelgewirr" in der 4diac-ide erheblich, da keine separaten Event- und Datenleitungen für jeden Summanden gezogen werden müssen.
+- **Generischer Baustein (Generic FB):** Durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `GEN_ADI_ADD` verhält sich dieser Baustein polymorph. Er ist nicht auf einen festen Datentyp (wie z. B. `INT` oder `REAL`) fixiert, sondern passt sich flexibel an den im Adapter definierten Datentyp an.
+- **Adapterbasierte Architektur:** Die Kapselung von Daten und Events in den `ADI`-Adaptern reduziert das "Kabelgewirr" in der 4diac-ide erheblich, da keine separaten Event- und Datenleitungen für jeden Summanden gezogen werden müssen.
 
 ---
 
@@ -69,16 +69,16 @@ Der Funktionsbaustein verhält sich rein zustandslos (reaktiv):
 
 ## Anwendungsszenarien
 
-* **Sensor-Konsolidierung:** Aufsummierung von drei verschiedenen physikalischen Größen (z. B. drei Teilströme in einer Anlage zur Ermittlung des Gesamtstroms).
-* **Sollwert-Offset-Berechnung:** Kombination aus einem Hauptsollwert, einem Korrekturwert und einem zusätzlichen Toleranz- oder Offsetwert.
-* **Prozesswert-Kalkulation:** Bilanzierung von Zuflüssen an drei verschiedenen Messstellen in der Verfahrenstechnik.
+- **Sensor-Konsolidierung:** Aufsummierung von drei verschiedenen physikalischen Größen (z. B. drei Teilströme in einer Anlage zur Ermittlung des Gesamtstroms).
+- **Sollwert-Offset-Berechnung:** Kombination aus einem Hauptsollwert, einem Korrekturwert und einem zusätzlichen Toleranz- oder Offsetwert.
+- **Prozesswert-Kalkulation:** Bilanzierung von Zuflüssen an drei verschiedenen Messstellen in der Verfahrenstechnik.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Standard `ADD` (IEC 61131-3):** Der klassische ADD-Baustein verwendet direkte Pins für Daten und Events. `ADI_ADD_3` ist durch die Verwendung von unidirektionalen Adaptern besser für modular aufgebaute und hierarchische Architekturen in IEC 61499 geeignet.
-* **Zwei-Wege-Addierer (z.B. `ADI_ADD_2`):** Während für die Addition von drei Werten mit Standardbausteinen zwei Bausteine kaskadiert werden müssten, erledigt `ADI_ADD_3` diese Aufgabe in einem einzigen Schritt, was Ressourcen schont und die Übersichtlichkeit erhöht.
+- **Standard `ADD` (IEC 61131-3):** Der klassische ADD-Baustein verwendet direkte Pins für Daten und Events. `ADI_ADD_3` ist durch die Verwendung von unidirektionalen Adaptern besser für modular aufgebaute und hierarchische Architekturen in IEC 61499 geeignet.
+- **Zwei-Wege-Addierer (z.B. `ADI_ADD_2`):** Während für die Addition von drei Werten mit Standardbausteinen zwei Bausteine kaskadiert werden müssten, erledigt `ADI_ADD_3` diese Aufgabe in einem einzigen Schritt, was Ressourcen schont und die Übersichtlichkeit erhöht.
 
 ---
 

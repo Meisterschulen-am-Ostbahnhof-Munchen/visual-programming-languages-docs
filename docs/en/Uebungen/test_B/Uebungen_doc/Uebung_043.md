@@ -17,10 +17,10 @@ Using the function block `SCALE_LIM`. Unlike the simpler `SCALE`, this block off
 
 ![Uebung_043_network](./Uebung_043_network.svg)
 
-* **`SCALE_LIM`**: Scaling with saturation.
-* **Parameters**:
-* `MIN_IN_LIM` / `MAX_IN_LIM`: Define the range in which the input value is "valid".
-* `MIN_OUT_FIX` / `MAX_OUT_FIX`: Hard limits for the output. No matter what is calculated, the output will never fall below or exceed these values.
+- **`SCALE_LIM`**: Scaling with saturation.
+- **Parameters**:
+- `MIN_IN_LIM` / `MAX_IN_LIM`: Define the range in which the input value is "valid".
+- `MIN_OUT_FIX` / `MAX_OUT_FIX`: Hard limits for the output. No matter what is calculated, the output will never fall below or exceed these values.
 
 -----
 

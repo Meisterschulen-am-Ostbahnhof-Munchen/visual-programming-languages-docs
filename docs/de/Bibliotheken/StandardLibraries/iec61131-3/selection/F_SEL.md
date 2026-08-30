@@ -75,9 +75,9 @@ Im Vergleich zu anderen Selektionsbausteinen bietet F_SEL:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Uebung_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
-* [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Uebung_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+- [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 

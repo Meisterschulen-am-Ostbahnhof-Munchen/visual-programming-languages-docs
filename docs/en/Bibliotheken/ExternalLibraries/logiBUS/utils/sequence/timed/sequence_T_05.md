@@ -13,17 +13,17 @@ The function block `sequence_T_05` is a time-controlled sequencer with five outp
 
 ### **Event Inputs**
 
-* **`START_S1`**: Starts the sequence. The block transitions from the start state (`START` or `State_00`) to the first active state, `State_01`. This event is linked to the five time data inputs.
-* **`RESET`**: Resets the sequence from any state back to the inactive start state (`State_00`). All outputs are disabled.
+- **`START_S1`**: Starts the sequence. The block transitions from the start state (`START` or `State_00`) to the first active state, `State_01`. This event is linked to the five time data inputs.
+- **`RESET`**: Resets the sequence from any state back to the inactive start state (`State_00`). All outputs are disabled.
 
 ### **Event Outputs**
 
-* **`CNF`**: Confirmation. Triggered on every state transition, it returns the new state number (`STATE_NR`).
-* **`EO_S1`**: Triggered upon entering state `State_01` and outputs the corresponding data output `DO_S1`.
-* **`EO_S2`**: Triggered upon entering state `State_02` and outputs the corresponding data output `DO_S2`.
-* **`EO_S3`**: Triggered upon entering state `State_03` and outputs the corresponding data output `DO_S3`.
-* **`EO_S4`**: Triggered upon entering state `State_04`, this output provides the corresponding data output `DO_S4`.
-* **`EO_S5`**: Triggered upon entering state `State_05`, this output provides the corresponding data output `DO_S5`.
+- **`CNF`**: Confirmation. Triggered on every state transition, it returns the new state number (`STATE_NR`).
+- **`EO_S1`**: Triggered upon entering state `State_01` and outputs the corresponding data output `DO_S1`.
+- **`EO_S2`**: Triggered upon entering state `State_02` and outputs the corresponding data output `DO_S2`.
+- **`EO_S3`**: Triggered upon entering state `State_03` and outputs the corresponding data output `DO_S3`.
+- **`EO_S4`**: Triggered upon entering state `State_04`, this output provides the corresponding data output `DO_S4`.
+- **`EO_S5`**: Triggered upon entering state `State_05`, this output provides the corresponding data output `DO_S5`.
 
 ### **Data Inputs**
 
@@ -31,23 +31,23 @@ All time data inputs are of type `TIME` and have the initial value `NO_TIME`. Th
 
 ** ... * **`DT_S1_S2`**: Retention time in `State_01` before the transition to `State_02`.
 
-* **`DT_S2_S3`**: Retention time in `State_02` before the transition to `State_03`.
-* **`DT_S3_S4`**: Retention time in `State_03` before the transition to `State_04`.
-* **`DT_S4_S5`**: Retention time in `State_04` before the transition to `State_05`.
-* **`DT_S5_START`**: Dwell time in `State_05` before transitioning back to the start state `State_00`.
+- **`DT_S2_S3`**: Retention time in `State_02` before the transition to `State_03`.
+- **`DT_S3_S4`**: Retention time in `State_03` before the transition to `State_04`.
+- **`DT_S4_S5`**: Retention time in `State_04` before the transition to `State_05`.
+- **`DT_S5_START`**: Dwell time in `State_05` before transitioning back to the start state `State_00`.
 
 ### **Data Outputs**
 
-* **`STATE_NR`** (SINT): Outputs the current state number. `0` = `START`/`State_00`, `1` = `State_01`, ..., `5` = `State_05`.
-* **`DO_S1`** (BOOL): Is `TRUE` when state `State_01` is active.
-* **`DO_S2`** (BOOL): Is `TRUE` when state `State_02` is active.
-* **`DO_S3`** (BOOL): Is `TRUE` when state `State_03` is active.
-* **`DO_S4`** (BOOL): Is `TRUE` when state `State_04` is active.
-* **`DO_S5`** (BOOL): Is `TRUE` when state `State_05` is active.
+- **`STATE_NR`** (SINT): Outputs the current state number. `0` = `START`/`State_00`, `1` = `State_01`, ..., `5` = `State_05`.
+- **`DO_S1`** (BOOL): Is `TRUE` when state `State_01` is active.
+- **`DO_S2`** (BOOL): Is `TRUE` when state `State_02` is active.
+- **`DO_S3`** (BOOL): Is `TRUE` when state `State_03` is active.
+- **`DO_S4`** (BOOL): Is `TRUE` when state `State_04` is active.
+- **`DO_S5`** (BOOL): Is `TRUE` when state `State_05` is active.
 
 ### **Adapter**
 
-* **`timeOut`** (Plug, Type: `iec61499::events::ATimeOut`): A timeout adapter used for timed state transitions. The block starts (`START`) the timer when entering an active state and stops (`STOP`) it when leaving.
+- **`timeOut`** (Plug, Type: `iec61499::events::ATimeOut`): A timeout adapter used for timed state transitions. The block starts (`START`) the timer when entering an active state and stops (`STOP`) it when leaving.
 
 ## Functionality
 
@@ -55,10 +55,10 @@ The block operates as a Basic Function Block with a defined Execution Control Ch
 
 ## Technical Features
 
-* **State Handling**: Each active state (`State_01` to `State_05`) has separate algorithms for entry (`_E`), acknowledgment (`_C`), and exit (`_X`). This allows for a clear separation of logic.
-* **Timer Integration**: The timing control is completely outsourced to the adapter `ATimeOut`, which increases reusability and maintainability.
-* **Constants**: The block imports constants from `logiBUS::utils::sequence::const::sequence` (for state numbers) and `::NO_TIME` for the initial duration values.
-* **Initial State**: The actual inactive sleep state after a reset or sequence completion is `sState_00`. `xSTART` is the initial ECC state during the first boot.
+- **State Handling**: Each active state (`State_01` to `State_05`) has separate algorithms for entry (`_E`), acknowledgment (`_C`), and exit (`_X`). This allows for a clear separation of logic.
+- **Timer Integration**: The timing control is completely outsourced to the adapter `ATimeOut`, which increases reusability and maintainability.
+- **Constants**: The block imports constants from `logiBUS::utils::sequence::const::sequence` (for state numbers) and `::NO_TIME` for the initial duration values.
+- **Initial State**: The actual inactive sleep state after a reset or sequence completion is `sState_00`. `xSTART` is the initial ECC state during the first boot.
 
 ## State Overview
 
@@ -68,10 +68,10 @@ The block operates as a Basic Function Block with a defined Execution Control Ch
 
 ## Application Scenarios
 
-* **Batch Process Control**: Sequentially activated steps such as filling, heating, stirring, cooling, and emptying with adjustable step times.
-* **Sequence Controls in Machines**: Time-controlled sequence of cylinder movements or tool changes in an automated system.
-* **Test Sequences**: Automated test sequences in which various signals are applied sequentially for a specific duration, and the results are evaluated.
-* **Lighting Control**: Time-controlled choreographies for advertising or decorative lighting.
+- **Batch Process Control**: Sequentially activated steps such as filling, heating, stirring, cooling, and emptying with adjustable step times.
+- **Sequence Controls in Machines**: Time-controlled sequence of cylinder movements or tool changes in an automated system.
+- **Test Sequences**: Automated test sequences in which various signals are applied sequentially for a specific duration, and the results are evaluated.
+- **Lighting Control**: Time-controlled choreographies for advertising or decorative lighting.
 
 ## ⚖️ Comparison with Similar Function Blocks
 

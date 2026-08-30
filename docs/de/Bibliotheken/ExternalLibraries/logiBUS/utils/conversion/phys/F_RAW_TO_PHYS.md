@@ -5,7 +5,7 @@
 * * * * * * * * * *
 ## Einleitung
 
-Der Funktionsbaustein **F_RAW_TO_PHYS** konvertiert einen ISOBUS‑Rohwert vom Typ `UDINT` in einen physikalischen `REAL`-Wert. Die Umrechnung erfolgt nach der standardisierten ISOBUS‑Formel:  
+Der Funktionsbaustein **F_RAW_TO_PHYS** konvertiert einen ISOBUS‑Rohwert vom Typ `UDINT` in einen physikalischen `REAL`-Wert. Die Umrechnung erfolgt nach der standardisierten ISOBUS‑Formel:
 
 `display = (raw + offset) * scale`
 
@@ -53,12 +53,12 @@ Der Baustein führt bei einem Ereignis am **REQ**‑Eingang folgende Berechnung 
 
 Ergebnis: `REAL := (LINT(UDINT(u32Raw)) + LINT(stObj.i32Offset)) * stObj.r32Scale`
 
-**Beispiel (aus der Quelltext‐Dokumentation):**  
+**Beispiel (aus der Quelltext‐Dokumentation):**
 
-- Rohwert = 50000  
-- Skalierung = 0,01  
-- Offset = -100000  
-- Rechnung: `(50000 + (-100000)) * 0,01 = (-50000) * 0,01 = -500,0`  
+- Rohwert = 50000
+- Skalierung = 0,01
+- Offset = -100000
+- Rechnung: `(50000 + (-100000)) * 0,01 = (-50000) * 0,01 = -500,0`
 
 Das Ergebnis steht nach dem Ereignis **CNF** am Datenausgang zur Verfügung.
 
@@ -80,8 +80,8 @@ Der Funktionsbaustein besitzt **keine** internen Zustände oder Speicher. Jeder 
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **F_RAW_TO_PHYS** ist speziell auf die ISOBUS‑Formel `(raw + offset) * scale` ausgelegt und verwendet die dort üblichen Datentypen (`UDINT`, `DINT`).  
-- Allgemeine Konverter‑Bausteine (z. B. `LREAL_TO_REAL`) bieten keine Offset‑Skalierungslogik und müssen daher manuell um diese Berechnung ergänzt werden.  
+- **F_RAW_TO_PHYS** ist speziell auf die ISOBUS‑Formel `(raw + offset) * scale` ausgelegt und verwendet die dort üblichen Datentypen (`UDINT`, `DINT`).
+- Allgemeine Konverter‑Bausteine (z. B. `LREAL_TO_REAL`) bieten keine Offset‑Skalierungslogik und müssen daher manuell um diese Berechnung ergänzt werden.
 - Andere ISOBUS‑spezifische Bausteine wie `F_PHYS_TO_RAW` kehren die Operation um (Rückrechnung von physikalischem Wert auf Rohwert).
 
 ## Fazit
@@ -92,4 +92,4 @@ Der **F_RAW_TO_PHYS** Baustein ist eine nützliche und sauber implementierte Kom
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

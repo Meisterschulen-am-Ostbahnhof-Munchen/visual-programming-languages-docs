@@ -41,7 +41,7 @@ Der Baustein besitzt keine direkten Ereignisausgänge. Der ausgehende Ereignisfl
 
 Der Baustein ist als reine Verdrahtung (Composite) realisiert. Intern werden folgende Verbindungen hergestellt:
 
-- Ereignis: `AB_IN.E1` → `AL_OUT.E1`  
+- Ereignis: `AB_IN.E1` → `AL_OUT.E1`
 - Daten: `AB_IN.D1` → `AL_OUT.D1`
 
 Sobald am Socket-Adapter `AB_IN` ein Ereignis eintrifft, wird der zugehörige BYTE-Wert (`D1`) an den Datenausgang `AL_OUT.D1` weitergegeben und gleichzeitig das Ereignis an `AL_OUT.E1` weitergeleitet. Dabei findet eine implizite Typkonvertierung von BYTE (8 Bit) nach LWORD (64 Bit) statt – die oberen 56 Bit werden mit Nullen aufgefüllt. Der Baustein besitzt keine eigene Zustandslogik oder Verzögerung.
@@ -75,4 +75,4 @@ Es existieren weitere Adapter-Konvertierungsbausteine wie `WORD_TO_DWORD`, `ARRA
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -11,22 +11,22 @@ Der Funktionsblock **ALI_TO_AL** ist ein Composite-Baustein, der einen **ALI-Ada
 
 ### **Ereignis-Eingänge**
 
-- **Keine direkten Ereigniseingänge**  
+- **Keine direkten Ereigniseingänge**
   Ereignisse werden ausschließlich über den Socket-Adapter **ALI_IN** empfangen.
 
 ### **Ereignis-Ausgänge**
 
-- **Keine direkten Ereignisausgänge**  
+- **Keine direkten Ereignisausgänge**
   Ausgangsereignisse werden ausschließlich über den Plug-Adapter **AL_OUT** gesendet.
 
 ### **Daten-Eingänge**
 
-- **Keine direkten Dateneingänge**  
+- **Keine direkten Dateneingänge**
   Eingangsdaten (LINT) werden über den Socket-Adapter **ALI_IN** (Datenpunkt D1) bereitgestellt.
 
 ### **Daten-Ausgänge**
 
-- **Keine direkten Datenausgänge**  
+- **Keine direkten Datenausgänge**
   Ausgangsdaten (LWORD) werden über den Plug-Adapter **AL_OUT** (Datenpunkt D1) abgegeben.
 
 ### **Adapter**
@@ -74,4 +74,4 @@ Der Composite-FB **ALI_TO_AL** ermöglicht eine saubere und standardkonforme Umw
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

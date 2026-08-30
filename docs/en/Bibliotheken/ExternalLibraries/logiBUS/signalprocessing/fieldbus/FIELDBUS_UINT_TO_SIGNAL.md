@@ -65,7 +65,7 @@ Unlike simple pass-through blocks (e.g., `MOVE`), `FIELDBUS_UINT_TO_SIGNAL` perf
 
 The FIELDBUS_UINT_TO_SIGNAL function block provides a simple and efficient way to check the validity of fieldbus signals and either pass them through or discard them. Its clear interface and the use of configurable constants make it versatile for use in IEC 61499 automation applications.
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

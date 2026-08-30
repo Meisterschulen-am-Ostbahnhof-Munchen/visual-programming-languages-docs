@@ -8,10 +8,10 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_035`. Hier wird die Steue
 
 ![Uebung_035_network](./Uebung_035_network.svg)
 
-* [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
-* [Infineon CAN-Transceiver TLE9250V versus TLE9351VSJ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-CAN-Transceiver-TLE9250V-versus-TLE9351VSJ-e3b8nan)
-* [Infineon TLE9351VSJ der unsichtbare Auto-Bodyguard](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-TLE9351VSJ-der-unsichtbare-Auto-Bodyguard-e3b8nhl)
-* [JBCs Löt-Geheimnis: 350 Grad in 2 Sekunden und warum die Spitze über Effizienz und Lebensdauer entscheidet](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBCs-Lt-Geheimnis-350-Grad-in-2-Sekunden-und-warum-die-Spitze-ber-Effizienz-und-Lebensdauer-entscheidet-e39arff)
+- [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
+- [Infineon CAN-Transceiver TLE9250V versus TLE9351VSJ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-CAN-Transceiver-TLE9250V-versus-TLE9351VSJ-e3b8nan)
+- [Infineon TLE9351VSJ der unsichtbare Auto-Bodyguard](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-TLE9351VSJ-der-unsichtbare-Auto-Bodyguard-e3b8nhl)
+- [JBCs Löt-Geheimnis: 350 Grad in 2 Sekunden und warum die Spitze über Effizienz und Lebensdauer entscheidet](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBCs-Lt-Geheimnis-350-Grad-in-2-Sekunden-und-warum-die-Spitze-ber-Effizienz-und-Lebensdauer-entscheidet-e39arff)
 
 ----
 
@@ -27,10 +27,10 @@ Verwendung des Bausteins `sequence_ET_04`. Es wird gezeigt, wie ein Prozess in v
 
 ### Funktionsbausteine (FBs)
 
-  * **`sequence_04`**: Der Sequenzer-Baustein. Er verwaltet die Logik der Schritte.
-  * **Parameter `DT_S1_S2` etc.**: Definieren die maximale Verweildauer in einem Schritt (hier jeweils 2 Sekunden).
-  * **`Q_NumericValue`**: Zeigt den aktuellen Schritt (1-4) auf dem Terminal an.
-  * **`E_TimeOut`**: Überwacht den Ablauf.
+  - **`sequence_04`**: Der Sequenzer-Baustein. Er verwaltet die Logik der Schritte.
+  - **Parameter `DT_S1_S2` etc.**: Definieren die maximale Verweildauer in einem Schritt (hier jeweils 2 Sekunden).
+  - **`Q_NumericValue`**: Zeigt den aktuellen Schritt (1-4) auf dem Terminal an.
+  - **`E_TimeOut`**: Überwacht den Ablauf.
 
 -----
 
@@ -57,4 +57,4 @@ Ein Knopfdruck startet das Programm:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)
+- [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)

@@ -87,17 +87,17 @@ Comparison with [E_SR](../../../../../StandardLibraries/events/E_SR.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
-* [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
-* [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
-* [Exercise_006_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006_AX.md)
-* [Exercise_006d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006d_AX.md)
-* [Exercise_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
-* [Exercise_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
-* [Exercise_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Exercise_013_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_013_AX.md)
-* [Exercise_160b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
-* [Exercise_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
+- [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+- [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+- [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+- [Exercise_006_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006_AX.md)
+- [Exercise_006d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006d_AX.md)
+- [Exercise_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
+- [Exercise_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
+- [Exercise_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Exercise_013_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_013_AX.md)
+- [Exercise_160b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+- [Exercise_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Conclusion
 

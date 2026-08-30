@@ -116,7 +116,7 @@ Ereignissen erhalten, jedes Navigations-Event ändert ihn schrittweise oder spri
 
 ## 🛠️ Zugehörige Übungen
 
-* Kein eigenständiges Übungsbeispiel — siehe `Workspace_Scroll/SCROLL_KONZEPT.md` (Projekt
+- Kein eigenständiges Übungsbeispiel — siehe `Workspace_Scroll/SCROLL_KONZEPT.md` (Projekt
   `4diac_training1`) für die vollständige Herleitung anhand eines realen Pools.
 
 ## Fazit

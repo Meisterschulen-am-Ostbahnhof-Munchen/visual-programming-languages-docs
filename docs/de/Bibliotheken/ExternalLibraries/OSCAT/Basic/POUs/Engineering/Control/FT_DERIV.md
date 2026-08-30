@@ -39,6 +39,5 @@ Calculate derivative over signal 'in' with Factor 'K'
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_151](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Uebung_151_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-
+- [Uebung_151](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Uebung_151_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)

@@ -59,20 +59,20 @@ The block uses a **socket** of type `ATimeOut`. Since this is a socket, the sign
 
 ## 🛠️ Related exercises
 
-* [Uebung_035](../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
-* [Uebung_035a](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
-* [Uebung_035a1_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1_AX.md)
-* [Uebung_035a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
-* [Uebung_035a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
-* [Uebung_035a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
-* [Uebung_035a3_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
-* [Uebung_035c](../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
-* [Exercise_036](../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
-* [Exercise_037](../../../Uebungen/test_B/Uebungen_doc/Uebung_037.md)
-* [Exercise_038](../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
-* [Exercise_038_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
-* [Exercise_039](../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
-* [Exercise_039a](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
+- [Uebung_035](../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
+- [Uebung_035a](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
+- [Uebung_035a1_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1_AX.md)
+- [Uebung_035a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
+- [Uebung_035a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+- [Uebung_035a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Uebung_035a3_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+- [Uebung_035c](../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
+- [Exercise_036](../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
+- [Exercise_037](../../../Uebungen/test_B/Uebungen_doc/Uebung_037.md)
+- [Exercise_038](../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
+- [Exercise_038_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
+- [Exercise_039](../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
+- [Exercise_039a](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
 
 ## Conclusion
 

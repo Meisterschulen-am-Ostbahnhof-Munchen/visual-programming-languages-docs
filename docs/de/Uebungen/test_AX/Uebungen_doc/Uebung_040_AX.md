@@ -22,8 +22,8 @@ Um nicht 8 Taster zu benötigen, wurde eine Logik mit Zählern (`E_CTU`) und Dem
 
 ![Uebung_040_AX_network](./Uebung_040_AX_network.svg)
 
-*   **Taster `I2`**: Steuert die Schritte 1-4. Jeder Klick erhöht den Zähler `E_CTU_0`. Der Demultiplexer leitet das Event dann an den korrekten Transitions-Eingang (`S1_S2`, `S2_S3`...).
-*   **Taster `I3`**: Steuert analog die Schritte 5-8.
+-   **Taster `I2`**: Steuert die Schritte 1-4. Jeder Klick erhöht den Zähler `E_CTU_0`. Der Demultiplexer leitet das Event dann an den korrekten Transitions-Eingang (`S1_S2`, `S2_S3`...).
+-   **Taster `I3`**: Steuert analog die Schritte 5-8.
 
 -----
 
@@ -46,4 +46,4 @@ Dies simuliert eine Maschine, bei der der Bediener jeden Schritt manuell freigeb
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

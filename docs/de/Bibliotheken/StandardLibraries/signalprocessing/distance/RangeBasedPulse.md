@@ -60,8 +60,8 @@ Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
 
 ## Fazit
 

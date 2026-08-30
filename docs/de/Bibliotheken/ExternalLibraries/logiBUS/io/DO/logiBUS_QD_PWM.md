@@ -74,13 +74,13 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet `logiBUS_QD_PWM` erwe
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
-* [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
-* [Uebung_034a1_Q2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
-* [Uebung_034a1_Q4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
-* [Uebung_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
-* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
+- [Uebung_034a1_Q2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
+- [Uebung_034a1_Q4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
+- [Uebung_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
+- [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
 
@@ -90,4 +90,4 @@ Der `logiBUS_QD_PWM` Funktionsblock stellt eine leistungsstarke Schnittstelle f�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

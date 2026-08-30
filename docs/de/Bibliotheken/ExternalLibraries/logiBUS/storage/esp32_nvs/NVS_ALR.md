@@ -46,27 +46,27 @@ Der Funktionsbaustein **NVS_ALR** dient zum Laden und Speichern von Werten des T
 
 ## Funktionsweise
 
-1. **Initialisierung**  
+1. **Initialisierung**
    Nach einem Ereignis am **INIT**-Eingang wird der interne Baustein `NVS` mit dem angegebenen Schlüssel (`KEY`), dem Default-Wert (`DEFAULT_VALUE`) und der Aktivierung (`QI`) aufgerufen. Der Initialisierungsvorgang öffnet den NVS-Bereich und liest sofort den vorhandenen Wert aus. Dieser Wert wird über den **ALR_OUT**-Adapter als Ereignis mit dem zugehörigen Datenwert (`D1`) ausgegeben. Gleichzeitig wird der **INITO**-Ereignisausgang mit den Quittungen (`QO`, `STATUS`) ausgelöst.
 
-2. **Schreiben über ALR_IN**  
+2. **Schreiben über ALR_IN**
    Ein Ereignis am **ALR_IN.E1**-Eingang (verbunden mit dem Socket) löst einen **SET**-Vorgang aus. Der mitgelieferte Datenwert (`ALR_IN.D1`) wird in den NVS unter dem zuvor gespeicherten Schlüssel geschrieben. Nach erfolgreichem Schreiben wird das Ereignis an **ALR_OUT.E1** weitergegeben und der geschriebene Wert dort ausgegeben.
 
-3. **Lesen über ALR_IN?**  
+3. **Lesen über ALR_IN?**
    Im vorliegenden Netzwerk wird nach der Initialisierung automatisch ein **GET**-Befehl ausgelöst. Ein expliziter Leseaufruf über den Adapter ist im Entwurf nicht vorgesehen; der Baustein gibt den aktuellen Wert immer nach jeder NVS-Operation (INIT, SET) über **ALR_OUT** aus.
 
 ## Technische Besonderheiten
 
-- **Adapterinterface**  
+- **Adapterinterface**
   Die Kommunikation mit der Außenwelt erfolgt ausschließlich über den unidirektionalen ALR-Adapter. Dadurch wird der Baustein besonders geeignet für modulare Architekturen, bei denen Datenflüsse über standardisierte Schnittstellen abgewickelt werden.
 
-- **Interner NVS-Baustein**  
+- **Interner NVS-Baustein**
   Im Netzwerk wird der FB `NVS` (aus der Bibliothek `logiBUS::storage::esp32_nvs`) verwendet. Dieser kapselt die eigentliche Lese- und Schreiblogik auf dem ESP32-NVS.
 
-- **Automatischer Lesevorgang**  
+- **Automatischer Lesevorgang**
   Nach der Initialisierung wird sofort ein GET ausgeführt, sodass der Anwender unmittelbar den aktuellen Wert (Standardwert oder gespeicherten Wert) erhält.
 
-- **Fehlerbehandlung**  
+- **Fehlerbehandlung**
   Die Ausgänge `QO` und `STATUS` erlauben eine einfache Prüfung des Initialisierungserfolgs. Fehler werden als String gemeldet.
 
 ## Zustandsübersicht
@@ -80,24 +80,24 @@ Der Baustein durchläuft keine explizit modellierten Zustände, sondern ist erei
 
 ## Anwendungsszenarien
 
-- **ESP32-Konfigurationsparameter**  
+- **ESP32-Konfigurationsparameter**
   Speicherung von LREAL-Werten wie Kalibrierungsfaktoren, Schwellwerten oder PID-Parametern, die nach einem Neustart erhalten bleiben sollen. Der ALR-Adapter ermöglicht die einfache Integration mit anderen Bausteinen, die denselben Adaptertyp verwenden.
 
-- **Gekapselter Datenzugriff**  
+- **Gekapselter Datenzugriff**
   Wenn ein Baustein LREAL-Werte aus dem NVS lesen und schreiben muss, aber die direkte Verwendung des NVS-Bausteins zu komplex erscheint, bietet NVS_ALR eine abstrahierte Schnittstelle.
 
-- **Modulare Automatisierung**  
+- **Modulare Automatisierung**
   Einsatz in Industrie 4.0-Anwendungen, bei denen Geräte über standardisierte Adapterdienste kommunizieren (z. B. über eine ALR-Konfigurationsschicht).
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **NVS (direkt)**  
+- **NVS (direkt)**
   Der Baustein `NVS` bietet mehr Flexibilität (z. B. wahlfreier Zugriff, unterschiedliche Datentypen), erfordert aber eine aufwändigere Verkabelung und explizite GET/SET-Aufrufe. NVS_ALR reduziert die Komplexität auf eine Adapterschnittstelle.
 
-- **BOOL_NVS, INT_NVS (hypothetisch)**  
+- **BOOL_NVS, INT_NVS (hypothetisch)**
   Analoge Bausteine für andere Datentypen. NVS_ALR ist speziell auf LREAL zugeschnitten und nutzt den ALR-Adapter, der typischerweise für LREAL-Daten vorgesehen ist.
 
-- **Remanente Variablen**  
+- **Remanente Variablen**
   In manchen Systemen können remanente Variablen direkt im FB-Modell verwendet werden. NVS_ALR ist jedoch explizit für den Einsatz mit einem externen Flash-Speicher (NVS) konzipiert und daher portabler.
 
 ## Fazit
@@ -108,4 +108,4 @@ Der **NVS_ALR**-Funktionsbaustein bietet eine kompakte und benutzerfreundliche M
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

@@ -13,27 +13,27 @@ Der Funktionsblock `NmGetCfInfo` dient innerhalb eines ISOBUS-Netzwerks dazu, In
 
 ### **Ereignis-Eingänge**
 
-*   **INIT (Typ: EInit)**: Initialisiert den Dienst. Bei Auslösung werden die konfigurierten Daten-Eingänge übernommen und der Initialisierungsprozess gestartet.
-*   **RSP (Typ: Event)**: Bestätigt den Empfang einer Indikation (`IND`). Dieses Ereignis signalisiert dem Baustein, dass eine zuvor gesendete Indikation verarbeitet wurde.
+-   **INIT (Typ: EInit)**: Initialisiert den Dienst. Bei Auslösung werden die konfigurierten Daten-Eingänge übernommen und der Initialisierungsprozess gestartet.
+-   **RSP (Typ: Event)**: Bestätigt den Empfang einer Indikation (`IND`). Dieses Ereignis signalisiert dem Baustein, dass eine zuvor gesendete Indikation verarbeitet wurde.
 
 ### **Ereignis-Ausgänge**
 
-*   **INITO (Typ: EInit)**: Bestätigt den erfolgreichen Abschluss der Initialisierung.
-*   **IND (Typ: Event)**: Wird ausgelöst, um eine empfangene Netzwerkindikation (z.B. gefundene Kommunikationspartner) an die Anwendung weiterzugeben.
+-   **INITO (Typ: EInit)**: Bestätigt den erfolgreichen Abschluss der Initialisierung.
+-   **IND (Typ: Event)**: Wird ausgelöst, um eine empfangene Netzwerkindikation (z.B. gefundene Kommunikationspartner) an die Anwendung weiterzugeben.
 
 ### **Daten-Eingänge**
 
-*   **u8CanIdx (Typ: USINT, Initialwert: ISO_CAN_NODE::INVALID)**: Identifiziert den verwendeten CAN-Knoten (CAN-Controller-Index).
-*   **member (Typ: SINT, Initialwert: ISOUSERHOME_e::notdef)**: Definiert die Mitgliedschaft oder Rolle des anfragenden Teilnehmers im Netzwerk.
-*   **address (Typ: isobus::pgn::NAMEFIELD_T)**: Die Adresse des anderen Netzwerkteilnehmers, für den Informationen abgerufen werden sollen.
-*   **mask (Typ: isobus::pgn::NAMEFIELD_T)**: Eine Bitmaske, die angibt, welche Teile der Adresse bei der Suche berücksichtigt werden sollen. Nur gesetzte Bits (1) werden ausgewertet.
+-   **u8CanIdx (Typ: USINT, Initialwert: ISO_CAN_NODE::INVALID)**: Identifiziert den verwendeten CAN-Knoten (CAN-Controller-Index).
+-   **member (Typ: SINT, Initialwert: ISOUSERHOME_e::notdef)**: Definiert die Mitgliedschaft oder Rolle des anfragenden Teilnehmers im Netzwerk.
+-   **address (Typ: isobus::pgn::NAMEFIELD_T)**: Die Adresse des anderen Netzwerkteilnehmers, für den Informationen abgerufen werden sollen.
+-   **mask (Typ: isobus::pgn::NAMEFIELD_T)**: Eine Bitmaske, die angibt, welche Teile der Adresse bei der Suche berücksichtigt werden sollen. Nur gesetzte Bits (1) werden ausgewertet.
 
 ### **Daten-Ausgänge**
 
-*   **bwaitingForRSP (Typ: BOOL)**: Zeigt an, ob der Funktionsblock aktuell auf eine Antwort (`RSP`) auf eine gesendete Indikation wartet.
-*   **sNetEv (Typ: isobus::pgn::ISONETEVENT_T)**: Enthält Details zum aufgetretenen Netzwerkereignis (z.B. Fehler oder Status).
-*   **sCfInfo (Typ: isobus::pgn::CF_INFO_T)**: Die abgerufenen Informationen über den gefundenen Kommunikationspartner (CF = Communication Function).
-*   **sNameField (Typ: isobus::pgn::NAMEFIELD_T)**: Der ISOBUS-Name des gefundenen Kommunikationspartners.
+-   **bwaitingForRSP (Typ: BOOL)**: Zeigt an, ob der Funktionsblock aktuell auf eine Antwort (`RSP`) auf eine gesendete Indikation wartet.
+-   **sNetEv (Typ: isobus::pgn::ISONETEVENT_T)**: Enthält Details zum aufgetretenen Netzwerkereignis (z.B. Fehler oder Status).
+-   **sCfInfo (Typ: isobus::pgn::CF_INFO_T)**: Die abgerufenen Informationen über den gefundenen Kommunikationspartner (CF = Communication Function).
+-   **sNameField (Typ: isobus::pgn::NAMEFIELD_T)**: Der ISOBUS-Name des gefundenen Kommunikationspartners.
 
 ### **Adapter**
 
@@ -47,9 +47,9 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Technische Besonderheiten
 
-*   Der Baustein implementiert ein Request-Response-Protokoll (`IND`/`RSP`) für zuverlässige Kommunikation.
-*   Die Verwendung einer Bit-`mask` ermöglicht flexible Suchanfragen, z.B. nach Teilnehmern einer bestimmten Geräteklasse.
-*   Die Datentypen (`ISONETEVENT_T`, `CF_INFO_T`, `NAMEFIELD_T`) sind spezifisch für die ISOBUS-PGN-Kommunikation und enthalten strukturierte Informationen gemäß dem ISO 11783-Standard.
+-   Der Baustein implementiert ein Request-Response-Protokoll (`IND`/`RSP`) für zuverlässige Kommunikation.
+-   Die Verwendung einer Bit-`mask` ermöglicht flexible Suchanfragen, z.B. nach Teilnehmern einer bestimmten Geräteklasse.
+-   Die Datentypen (`ISONETEVENT_T`, `CF_INFO_T`, `NAMEFIELD_T`) sind spezifisch für die ISOBUS-PGN-Kommunikation und enthalten strukturierte Informationen gemäß dem ISO 11783-Standard.
 
 ## Zustandsübersicht
 
@@ -59,9 +59,9 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Anwendungsszenarien
 
-*   **Netzwerk-Discovery**: Beim Start eines Geräts, um alle aktiven Teilnehmer im ISOBUS-Netzwerk zu identifizieren.
-*   **Diagnose und Monitoring**: Zur Überwachung, ob bestimmte erwartete Steuergeräte (z.B. eines Anbaugeräts) verbunden und erreichbar sind.
-*   **Dynamische Konfiguration**: Um Informationen über neu hinzugekommene Geräte zu erhalten und die Applikation entsprechend anzupassen.
+-   **Netzwerk-Discovery**: Beim Start eines Geräts, um alle aktiven Teilnehmer im ISOBUS-Netzwerk zu identifizieren.
+-   **Diagnose und Monitoring**: Zur Überwachung, ob bestimmte erwartete Steuergeräte (z.B. eines Anbaugeräts) verbunden und erreichbar sind.
+-   **Dynamische Konfiguration**: Um Informationen über neu hinzugekommene Geräte zu erhalten und die Applikation entsprechend anzupassen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -69,24 +69,24 @@ Im Gegensatz zu einfachen Lese- oder Abfrage-Bausteinen ist `NmGetCfInfo` spezie
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
-* [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
-* [Uebung_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
-* [Uebung_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
-* [Uebung_123](../../../../Uebungen/test_B/Uebungen_doc/Uebung_123.md)
-* [Uebung_124](../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
-* [Uebung_125](../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
-* [Uebung_126](../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)
-* [Uebung_126b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b.md)
-* [Uebung_126b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2.md)
-* [Uebung_127](../../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
-* [Uebung_128](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
-* [Uebung_128b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
-* [Uebung_130](../../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)
-* [Uebung_131](../../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)
-* [Uebung_132](../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
-* [Uebung_133](../../../../Uebungen/test_B/Uebungen_doc/Uebung_133.md)
-* [Uebung_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
+- [Uebung_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
+- [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+- [Uebung_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+- [Uebung_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
+- [Uebung_123](../../../../Uebungen/test_B/Uebungen_doc/Uebung_123.md)
+- [Uebung_124](../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
+- [Uebung_125](../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
+- [Uebung_126](../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)
+- [Uebung_126b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b.md)
+- [Uebung_126b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2.md)
+- [Uebung_127](../../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
+- [Uebung_128](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
+- [Uebung_128b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
+- [Uebung_130](../../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)
+- [Uebung_131](../../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)
+- [Uebung_132](../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
+- [Uebung_133](../../../../Uebungen/test_B/Uebungen_doc/Uebung_133.md)
+- [Uebung_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 
 ## Fazit
 

@@ -112,7 +112,7 @@ change, never maintained separately.
 
 ## 🛠️ Related Exercises
 
-* No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
+- No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
   `4diac_training1`) for the full derivation against a real pool.
 
 ## Conclusion

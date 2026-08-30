@@ -40,33 +40,33 @@ Keine direkten Daten-Ausgänge. Der aktuelle Zustand wird über die Adapter verf
 
 Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-Funktion. Der Ablauf gliedert sich in Initialisierung und Betrieb:
 
-1. **Initialisierung (START → Init)**  
-   Nach dem Systemstart befindet sich der FB im Zustand START. Sobald am Adapter `Q_INIT` das Ereignis `EI1` eintrifft, wechselt er in den Zustand Init. Dort wird der über `Q_INIT.DI1` bereitgestellte Initialwert ausgelesen.  
+1. **Initialisierung (START → Init)**
+   Nach dem Systemstart befindet sich der FB im Zustand START. Sobald am Adapter `Q_INIT` das Ereignis `EI1` eintrifft, wechselt er in den Zustand Init. Dort wird der über `Q_INIT.DI1` bereitgestellte Initialwert ausgelesen.
 
-   - Ist der Initialwert FALSE, wird anschließend der Zustand RESET eingenommen.  
-   - Ist der Initialwert TRUE, wird der Zustand SET eingenommen.  
+   - Ist der Initialwert FALSE, wird anschließend der Zustand RESET eingenommen.
+   - Ist der Initialwert TRUE, wird der Zustand SET eingenommen.
    In beiden Fällen wird der entsprechende Ausgang `Q.D1` und der Ausgang `Q_INIT.DO1` auf den Initialwert gesetzt.
 
-2. **Betrieb (SET ↔ RESET)**  
-   Ausgehend von SET oder RESET wird bei jedem Ereignis an den Eingängen S, R oder CLK umgeschaltet:  
+2. **Betrieb (SET ↔ RESET)**
+   Ausgehend von SET oder RESET wird bei jedem Ereignis an den Eingängen S, R oder CLK umgeschaltet:
 
-   - **S** → wechselt in SET (setzt Q = TRUE)  
-   - **R** → wechselt in RESET (setzt Q = FALSE)  
-   - **CLK** → toggelt den Zustand (von SET nach RESET oder umgekehrt)  
+   - **S** → wechselt in SET (setzt Q = TRUE)
+   - **R** → wechselt in RESET (setzt Q = FALSE)
+   - **CLK** → toggelt den Zustand (von SET nach RESET oder umgekehrt)
    Bei jeder Zustandsänderung werden die Ausgangsdaten über die Adapter aktualisiert und das Ereignis `Q.E1` sowie `Q_INIT.EO1` ausgegeben.
 
 ## Technische Besonderheiten
 
-- **Adapter-basierte Ein-/Ausgabe**  
+- **Adapter-basierte Ein-/Ausgabe**
   Statt klassischer DataInputs/DataOutputs verwendet der Baustein Adapter-Schnittstellen. Dies ermöglicht eine flexible Kopplung mit anderen Bausteinen oder Systemkomponenten, die ebenfalls das Adapterprotokoll unterstützen.
 
-- **Symmetrisches Startverhalten**  
+- **Symmetrisches Startverhalten**
   Über den bidirektionalen Adapter `Q_INIT` kann der Anfangszustand sowohl extern vorgegeben als auch nach der Initialisierung ausgelesen werden. Dadurch wird ein deterministisches Wiederanlaufverhalten sichergestellt – besonders wichtig bei sicherheitskritischen oder zustandsbehafteten Anwendungen.
 
-- **Toggle-Funktion (CLK)**  
+- **Toggle-Funktion (CLK)**
   Neben den klassischen Setz- und Rücksetzereignissen erlaubt der Takt-Eingang CLK das einfache Umschalten des Ausgangs, ohne dass hierfür ein separates Set/Reset-Signal benötigt wird.
 
-- **Keine Daten-Ein-/Ausgänge**  
+- **Keine Daten-Ein-/Ausgänge**
   Diese funktionale Reduktion vereinfacht die Schnittstelle und vermeidet Verwechslungen mit den Adaptern.
 
 ## Zustandsübersicht
@@ -88,27 +88,27 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
 
 ## Anwendungsszenarien
 
-- **Speicherung von Maschinenzuständen**  
+- **Speicherung von Maschinenzuständen**
   In Fertigungsanlagen kann dieser Baustein den aktuellen Betriebsmodus (z.B. „Ein“ oder „Aus“) speichern und beim Neustart wiederherstellen.
 
-- **Initialisierung von Steuerungssequenzen**  
+- **Initialisierung von Steuerungssequenzen**
   Szenarien, bei denen ein definierter Startwert erforderlich ist (z.B. Ventilstellung zu Beginn einer Charge), profitieren vom symmetrischen INIT-Verhalten.
 
-- **Ereignisgesteuerte Toggle-Funktionen**  
+- **Ereignisgesteuerte Toggle-Funktionen**
   Zum Beispiel das Umschalten einer Signalleuchte bei jedem Tastendruck, ohne dass separate Ein- und Aus-Befehle nötig sind.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **Standard E_SR (E_R-SET)**  
+- **Standard E_SR (E_R-SET)**
   Einfaches Set-Reset-Flipflop ohne Toggle und ohne symmetrische Startinitialisierung. Der Anfangszustand ist meist undefiniert oder muss extern gesetzt werden.
 
-- **E_RS**  
+- **E_RS**
   Bietet Priorisierung von Reset, aber ebenfalls keine Toggle- oder INIT-Funktion.
 
-- **Toggle-Bausteine (z.B. E_Toggle)**  
+- **Toggle-Bausteine (z.B. E_Toggle)**
   Reine Toggle-FBs besitzen meist nur einen Takt-Eingang und keinen bidirektionalen Adapter für die Initialisierung. Der AX_T_FF_SR_SYM_STORE vereint alle drei Funktionen in einem Baustein.
 
-- **Adapter-basierte FBs**  
+- **Adapter-basierte FBs**
   Wenige FBs in der 4diac-Bibliothek verwenden Adapter für die Zustandsausgabe. Dieses Design ermöglicht eine saubere Trennung von Ereignis- und Datenpfaden und erleichtert die Wiederverwendung in komplexen Systemen.
 
 ## Fazit
@@ -119,4 +119,4 @@ Der `AX_T_FF_SR_SYM_STORE` ist ein leistungsfähiger und flexibler Funktionsbloc
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

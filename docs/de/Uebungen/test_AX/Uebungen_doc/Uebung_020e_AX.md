@@ -20,8 +20,8 @@ Kennenlernen des Timer-Bausteins `AX_TOF`.
 
 ![Uebung_020e_AX_network](./Uebung_020e_AX_network.svg)
 
-  * **`AX_TOF`**: Timer Off-Delay.
-  * **Parameter `PT`**: Preset Time (hier 5 Sekunden).
+  - **`AX_TOF`**: Timer Off-Delay.
+  - **Parameter `PT`**: Preset Time (hier 5 Sekunden).
 
 -----
 

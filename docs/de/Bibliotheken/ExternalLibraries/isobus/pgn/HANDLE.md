@@ -42,10 +42,10 @@ Diese Konstanten werden typischerweise in den Datenverbindungen oder internen Lo
 
 ## Technische Besonderheiten
 
-*   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was ihren Einsatzbereich in der ISOBUS-PGN-Kommunikation klar definiert.
-*   **Typisierung:** Beide Konstanten sind vom Typ `INT` (Integer).
-*   **Initialisierung:** Die Werte werden direkt bei der Deklaration zugewiesen (`InitialValue`).
-*   **Sichtbarkeit:** Als globale Konstanten (`GLOBALCONSTANTS`) sind sie innerhalb des definierten Pakets (`isobus::pgn`) für alle darin enthaltenen Funktionsblöcke sichtbar und verwendbar.
+-   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was ihren Einsatzbereich in der ISOBUS-PGN-Kommunikation klar definiert.
+-   **Typisierung:** Beide Konstanten sind vom Typ `INT` (Integer).
+-   **Initialisierung:** Die Werte werden direkt bei der Deklaration zugewiesen (`InitialValue`).
+-   **Sichtbarkeit:** Als globale Konstanten (`GLOBALCONSTANTS`) sind sie innerhalb des definierten Pakets (`isobus::pgn`) für alle darin enthaltenen Funktionsblöcke sichtbar und verwendbar.
 
 ## Zustandsübersicht
 
@@ -53,15 +53,15 @@ Da es sich um eine statische Konstantendefinition handelt, gibt es keine Zustand
 
 ## Anwendungsszenarien
 
-*   **Initialisierung von Handles:** Beim Start eines Systems können Kommunikationshandles mit dem Wert `UNVALID` initialisiert werden, um ihren "leeren" Zustand zu kennzeichnen.
-*   **Fehlerbehandlung:** Funktionsblöcke, die Handles zurückgeben (z.B. nach dem Öffnen einer Verbindung), können `UNVALID` zurückgeben, um einen Fehler anzuzeigen.
-*   **Broadcast-Kommunikation:** Ein Senderblock kann den `GLOBAL`-Handle verwenden, um eine Nachricht an alle Teilnehmer im ISOBUS-Netzwerk zu adressieren, anstatt an einen spezifischen Empfänger.
-*   **Vergleiche:** Die Lesbarkeit von Bedingungen wie `IF currentHandle = UNVALID THEN ...` oder `IF targetHandle = GLOBAL THEN ...` wird deutlich verbessert.
+-   **Initialisierung von Handles:** Beim Start eines Systems können Kommunikationshandles mit dem Wert `UNVALID` initialisiert werden, um ihren "leeren" Zustand zu kennzeichnen.
+-   **Fehlerbehandlung:** Funktionsblöcke, die Handles zurückgeben (z.B. nach dem Öffnen einer Verbindung), können `UNVALID` zurückgeben, um einen Fehler anzuzeigen.
+-   **Broadcast-Kommunikation:** Ein Senderblock kann den `GLOBAL`-Handle verwenden, um eine Nachricht an alle Teilnehmer im ISOBUS-Netzwerk zu adressieren, anstatt an einen spezifischen Empfänger.
+-   **Vergleiche:** Die Lesbarkeit von Bedingungen wie `IF currentHandle = UNVALID THEN ...` oder `IF targetHandle = GLOBAL THEN ...` wird deutlich verbessert.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`CONSTANT`-Funktionsblock:** Ein generischer `CONSTANT`-Block kann einen festen Wert ausgeben, ist aber eine Instanz innerhalb eines Funktionsblocknetzwerks. Die `HANDLE`-Globalkonstante ist eine zentrale, paketweite Definition, die nicht instanziiert werden muss und direkt über ihren Namen referenziert wird.
-*   **Direkte Werteingabe:** Anstatt `UNVALID` oder `GLOBAL` zu verwenden, könnten die numerischen Werte (`-1`, `32767`) direkt in die Blöcke eingegeben werden. Die Verwendung der Konstanten ist jedoch die deutlich bessere Praxis, da sie den Code selbsterklärender und änderungsresistenter macht (Änderungen nur an einer Stelle).
+-   **`CONSTANT`-Funktionsblock:** Ein generischer `CONSTANT`-Block kann einen festen Wert ausgeben, ist aber eine Instanz innerhalb eines Funktionsblocknetzwerks. Die `HANDLE`-Globalkonstante ist eine zentrale, paketweite Definition, die nicht instanziiert werden muss und direkt über ihren Namen referenziert wird.
+-   **Direkte Werteingabe:** Anstatt `UNVALID` oder `GLOBAL` zu verwenden, könnten die numerischen Werte (`-1`, `32767`) direkt in die Blöcke eingegeben werden. Die Verwendung der Konstanten ist jedoch die deutlich bessere Praxis, da sie den Code selbsterklärender und änderungsresistenter macht (Änderungen nur an einer Stelle).
 
 ## Fazit
 
@@ -71,4 +71,4 @@ Die `HANDLE`-Globalkonstante ist ein einfaches aber wesentliches Hilfselement f�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

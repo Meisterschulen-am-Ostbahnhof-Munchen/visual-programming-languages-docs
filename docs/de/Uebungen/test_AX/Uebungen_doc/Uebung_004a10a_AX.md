@@ -52,10 +52,10 @@ Diese Übung realisiert ein Toggle-Flip-Flop (T-FF) mit einem Initialwert von `F
 
 5. **Ausgangszustand**: Nach einem Systemstart oder RESET bleibt der Ausgang auf dem initialen Wert `FALSE` (0). Bei jedem weiteren Tastendruck wechselt der Ausgang zwischen `TRUE` (1) und `FALSE` (0).
 
-**Hinweise zur praktischen Durchführung**:  
+**Hinweise zur praktischen Durchführung**:
 
-- Die Übung setzt voraus, dass ein logiBUS-IO-Modul mit einem Taster an `Input_I1` und einer Anzeige (z. B. LED) an `Output_Q1` angeschlossen ist.  
-- Das Verhalten ist entprellt, da das Ereignis `BUTTON_SINGLE_CLICK` bereits eine gefilterte Flanke liefert.  
+- Die Übung setzt voraus, dass ein logiBUS-IO-Modul mit einem Taster an `Input_I1` und einer Anzeige (z. B. LED) an `Output_Q1` angeschlossen ist.
+- Das Verhalten ist entprellt, da das Ereignis `BUTTON_SINGLE_CLICK` bereits eine gefilterte Flanke liefert.
 - Die Bausteine sind so konfiguriert, dass sie automatisch aktiv sind (`QI = TRUE`).
 
 ## Zusammenfassung
@@ -66,4 +66,4 @@ Die Übung demonstriert die einfache Realisierung eines Toggle-Flip-Flops mit ha
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

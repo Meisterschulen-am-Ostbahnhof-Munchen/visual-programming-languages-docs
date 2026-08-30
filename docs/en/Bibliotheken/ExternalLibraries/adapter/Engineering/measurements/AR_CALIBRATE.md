@@ -51,17 +51,17 @@ The FB has no direct data outputs. The calculated values are provided via the ad
 
 The function block operates with three basic algorithms, which are executed in the states `REQ`, `CO`, and `CS`:
 
-* **REQ** (Normal Operation):
+- **REQ** (Normal Operation):
 
 Y.D1 := (X.D1 + OFFSET.DI1) * SCALE.DI1`
 The output value is calculated from the input, the current offset, and the scale factor.
 
-* **CO** (Offset Calibration):
+- **CO** (Offset Calibration):
 
 OFFSET.DO1 := Y_Offset - X.D1`
 The offset is determined as the difference between the reference value `Y_Offset` and the current input value.
 
-* * **CS** (Scale Calibration):
+- * **CS** (Scale Calibration):
 
 SCALE.DO1 := Y_Scale / (X.D1 + OFFSET.DI1)`
 
@@ -86,10 +86,10 @@ The transitions between the states are defined as follows:
 
 ## Technical Features
 
-* **Adapter-based communication**: All inputs and outputs (except reference values) are implemented via adapters. This allows for flexible coupling with various analog input modules.
-* **Bidirectional calibration adapters**: The adapters `OFFSET` and `SCALE` are bidirectional, meaning they can be written to by the calibration function block and read by external modules.
-* **Two-Stage Calibration**: Offset and scaling are calibrated sequentially. The scaling factor already uses the determined offset to ensure correct linear correction.
-* **No Own Event Output**: The function block does not generate its own events but triggers them via the adapter events (e.g., `Y.E1` after each calculation).
+- **Adapter-based communication**: All inputs and outputs (except reference values) are implemented via adapters. This allows for flexible coupling with various analog input modules.
+- **Bidirectional calibration adapters**: The adapters `OFFSET` and `SCALE` are bidirectional, meaning they can be written to by the calibration function block and read by external modules.
+- **Two-Stage Calibration**: Offset and scaling are calibrated sequentially. The scaling factor already uses the determined offset to ensure correct linear correction.
+- **No Own Event Output**: The function block does not generate its own events but triggers them via the adapter events (e.g., `Y.E1` after each calculation).
 
 ## State Overview
 
@@ -101,9 +101,9 @@ The transitions between the states are defined as follows:
 
 ## Application Scenarios
 
-* **Industrial Data Processing**: Calibration of pressure sensors, temperature sensors, or other analog encoders where offset and gain need to be readjusted.
-* **Measuring Chain Alignment**: After connecting a sensor, the entire chain can be linearized by applying a known zero point (offset) and a known measured value (scaling).
-* **Automatic Recalibration**: Drift effects can be compensated for by cyclically triggering the calibration adapters.
+- **Industrial Data Processing**: Calibration of pressure sensors, temperature sensors, or other analog encoders where offset and gain need to be readjusted.
+- **Measuring Chain Alignment**: After connecting a sensor, the entire chain can be linearized by applying a known zero point (offset) and a known measured value (scaling).
+- **Automatic Recalibration**: Drift effects can be compensated for by cyclically triggering the calibration adapters.
 *
 ## Comparison with Similar Function Blocks
 

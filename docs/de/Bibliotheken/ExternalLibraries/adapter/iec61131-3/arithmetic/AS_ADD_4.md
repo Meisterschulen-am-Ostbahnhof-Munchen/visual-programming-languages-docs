@@ -32,14 +32,14 @@ Der Funktionsbaustein `AS_ADD_4` ist ein generischer Funktionsbaustein (FB), der
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AS`): Erster Eingangswert (Summand 1) für die Addition.
-*   **IN2** (Typ: `adapter::types::unidirectional::AS`): Zweiter Eingangswert (Summand 2) für die Addition.
-*   **IN3** (Typ: `adapter::types::unidirectional::AS`): Dritter Eingangswert (Summand 3) für die Addition.
-*   **IN4** (Typ: `adapter::types::unidirectional::AS`): Vierter Eingangswert (Summand 4) für die Addition.
+-   **IN1** (Typ: `adapter::types::unidirectional::AS`): Erster Eingangswert (Summand 1) für die Addition.
+-   **IN2** (Typ: `adapter::types::unidirectional::AS`): Zweiter Eingangswert (Summand 2) für die Addition.
+-   **IN3** (Typ: `adapter::types::unidirectional::AS`): Dritter Eingangswert (Summand 3) für die Addition.
+-   **IN4** (Typ: `adapter::types::unidirectional::AS`): Vierter Eingangswert (Summand 4) für die Addition.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AS`): Ausgangsadapter zur Ausgabe des berechneten Additionsergebnisses.
+-   **OUT** (Typ: `adapter::types::unidirectional::AS`): Ausgangsadapter zur Ausgabe des berechneten Additionsergebnisses.
 
 ---
 
@@ -55,8 +55,8 @@ Die Berechnung wird typischerweise getriggert, sobald an einem oder mehreren der
 
 ## Technische Besonderheiten
 
-*   **Generischer Charakter:** Der Baustein ist als generischer Baustein (`GEN_AS_ADD`) deklariert. Dies ermöglicht eine flexible Handhabung unterschiedlicher Datentypen (z. B. `INT`, `REAL`, `DINT`), je nachdem, wie die zugrundeliegenden Adaptertypen definiert sind.
-*   **Adapter-Kopplung:** Durch die Nutzung von unidirektionalen Adaptern wird das Risiko von fehlerhafter Pin-Verdrahtung in der 4diac-IDE reduziert, da Daten und Ereignisse in einer einzigen Verbindunglinie gebündelt übertragen werden.
+-   **Generischer Charakter:** Der Baustein ist als generischer Baustein (`GEN_AS_ADD`) deklariert. Dies ermöglicht eine flexible Handhabung unterschiedlicher Datentypen (z. B. `INT`, `REAL`, `DINT`), je nachdem, wie die zugrundeliegenden Adaptertypen definiert sind.
+-   **Adapter-Kopplung:** Durch die Nutzung von unidirektionalen Adaptern wird das Risiko von fehlerhafter Pin-Verdrahtung in der 4diac-IDE reduziert, da Daten und Ereignisse in einer einzigen Verbindunglinie gebündelt übertragen werden.
 
 ---
 
@@ -71,17 +71,17 @@ Da es sich um einen algorithmischen Baustein zur Berechnung handelt, arbeitet de
 
 ## Anwendungsszenarien
 
-*   **Messwert-Summierung:** Zusammenfassung von vier analogen Sensorwerten (z. B. Durchflussmengen oder Leistungen) zu einem Gesamtwert.
-*   **Sollwert-Generierung:** Addition von Basis-Sollwerten mit verschiedenen Korrektur- oder Offset-Werten in einer Kaskadenregelung.
-*   **Strukturierte Signalverarbeitung:** Einsatz in komplexen Steuerungsarchitekturen, bei denen eine strikte Trennung von Logik und Datenfluss durch Adapter-Strukturen gefordert ist.
+-   **Messwert-Summierung:** Zusammenfassung von vier analogen Sensorwerten (z. B. Durchflussmengen oder Leistungen) zu einem Gesamtwert.
+-   **Sollwert-Generierung:** Addition von Basis-Sollwerten mit verschiedenen Korrektur- oder Offset-Werten in einer Kaskadenregelung.
+-   **Strukturierte Signalverarbeitung:** Einsatz in komplexen Steuerungsarchitekturen, bei denen eine strikte Trennung von Logik und Datenfluss durch Adapter-Strukturen gefordert ist.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen, standardmäßigen `ADD`-Baustein (nach IEC 61131-3):
-*   **Vorteil:** Weniger Verdrahtungsaufwand in der grafischen Oberfläche, da keine separaten Event- und Datenlinien gezogen werden müssen.
-*   **Nachteil:** Erfordert die Definition und Verwendung des spezifischen Adaptertyps `adapter::types::unidirectional::AS`. Ein direkter Anschluss von Standard-Datentypen (wie einfachen `REAL`- oder `INT`-Variablen) ohne Adapter ist nicht möglich.
+-   **Vorteil:** Weniger Verdrahtungsaufwand in der grafischen Oberfläche, da keine separaten Event- und Datenlinien gezogen werden müssen.
+-   **Nachteil:** Erfordert die Definition und Verwendung des spezifischen Adaptertyps `adapter::types::unidirectional::AS`. Ein direkter Anschluss von Standard-Datentypen (wie einfachen `REAL`- oder `INT`-Variablen) ohne Adapter ist nicht möglich.
 
 ---
 

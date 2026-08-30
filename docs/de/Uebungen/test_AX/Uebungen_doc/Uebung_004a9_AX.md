@@ -20,10 +20,10 @@ Demonstration der Skalierbarkeit von Event-Verteilern. Mit `E_SPLIT_3` können d
 
 ![Uebung_004a9_AX_network](./Uebung_004a9_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Taster.
-  * **`E_SPLIT_3`**: Verteilt Eingang `EI` sequenziell auf `EO1`, `EO2` und `EO3`.
-  * **`AX_T_FF_Q1`, `Q2`, `Q3`**: Drei Flip-Flops.
-  * **`DigitalOutput_Q1`, `Q2`, `Q3`**: Drei Lampen.
+  - **`DigitalInput_CLK_I1`**: Taster.
+  - **`E_SPLIT_3`**: Verteilt Eingang `EI` sequenziell auf `EO1`, `EO2` und `EO3`.
+  - **`AX_T_FF_Q1`, `Q2`, `Q3`**: Drei Flip-Flops.
+  - **`DigitalOutput_Q1`, `Q2`, `Q3`**: Drei Lampen.
 
 -----
 

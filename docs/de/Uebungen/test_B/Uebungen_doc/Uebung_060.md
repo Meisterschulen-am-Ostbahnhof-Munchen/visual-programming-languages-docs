@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_060`. Dies ist eine High-
 
 ![Uebung_060_network](./Uebung_060_network.svg)
 
-* [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
+- [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----
 
@@ -24,10 +24,10 @@ Anbindung an einen ISOBUS Task Controller (TC). Es wird demonstriert, wie die au
 
 ### Funktionsbausteine (FBs)
 
-  * **`TC_ID`**: Empfängt Befehle vom Task Controller des Traktors (z.B. "Schalte Teilbreite 5 ein").
-  * **`TC_QD`**: Meldet Daten an den Task Controller zurück (z.B. "Teilbreite 5 ist jetzt tatsächlich aktiv").
-  * **Quarter-Logik**: Die Zustände der Teilbreiten werden als Quartale (2-Bit) übertragen, um auch Fehlerzustände (z.B. Kabelbruch am Ventil) an den TC melden zu können.
-  * **DDI (Data Dictionary Identifier)**: Spezifische Codes (z.B. `SETPOINT_CONDENSED_WORK_STATE`), die definieren, welche Information gerade übertragen wird.
+  - **`TC_ID`**: Empfängt Befehle vom Task Controller des Traktors (z.B. "Schalte Teilbreite 5 ein").
+  - **`TC_QD`**: Meldet Daten an den Task Controller zurück (z.B. "Teilbreite 5 ist jetzt tatsächlich aktiv").
+  - **Quarter-Logik**: Die Zustände der Teilbreiten werden als Quartale (2-Bit) übertragen, um auch Fehlerzustände (z.B. Kabelbruch am Ventil) an den TC melden zu können.
+  - **DDI (Data Dictionary Identifier)**: Spezifische Codes (z.B. `SETPOINT_CONDENSED_WORK_STATE`), die definieren, welche Information gerade übertragen wird.
 
 -----
 

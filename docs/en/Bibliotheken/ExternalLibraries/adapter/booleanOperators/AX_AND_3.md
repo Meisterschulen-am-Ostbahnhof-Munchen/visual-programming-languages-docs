@@ -72,7 +72,7 @@ Comparison with [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/A
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
+- [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Change Detection
 

@@ -10,33 +10,33 @@ The function block `AlPgnTxNew8B_REQ` is used to configure and control the trans
 
 ### **Event Inputs**
 
-* **INIT**: Initializes the function block. Must be triggered before first use.
-* **install**: Triggers the installation of a new Transmit PGN (TX). The installation is configured with the data parameters bound to this event (`u32Pgn`, `NmDestin`, `u16DaSize`, `u8Priority`).
+- **INIT**: Initializes the function block. Must be triggered before first use.
+- **install**: Triggers the installation of a new Transmit PGN (TX). The installation is configured with the data parameters bound to this event (`u32Pgn`, `NmDestin`, `u16DaSize`, `u8Priority`).
 
 ### **Event Outputs**
 
-* **INITO**: Confirms successful initialization of the function block.
-* **installO**: Signals completion of the installation request. Returns the assigned `PGN_handle` or, in case of an error, an invalid handle.
-* **CNF**: Confirms that data was successfully sent. Typically triggered via the callback adapter.
-* **dataERR**: Indicates an error related to the data being sent. Returns an error code via `dataERRC`.
-* **pgnERR**: Indicates an error related to PGN configuration or management. Returns an error code via `pgnERRC`.
+- **INITO**: Confirms successful initialization of the function block.
+- **installO**: Signals completion of the installation request. Returns the assigned `PGN_handle` or, in case of an error, an invalid handle.
+- **CNF**: Confirms that data was successfully sent. Typically triggered via the callback adapter.
+- **dataERR**: Indicates an error related to the data being sent. Returns an error code via `dataERRC`.
+- **pgnERR**: Indicates an error related to PGN configuration or management. Returns an error code via `pgnERRC`.
 
 ### **Data Inputs**
 
-* **u32Pgn** (UDINT): The parameter group number (PGN) to be installed. Valid range: 0 to 0x3FFFF (decimal 262143).
-* **NmDestin** (isobus::pgn::ISONETEVENT_T): Defines the communication partner (destination address) for the PGN. The exact type is defined by the ISOBUS library.
-* **u16DaSize** (UINT): The length of the payload for this PGN in bytes. Valid range: 0 to 8.
-* **u8Priority** (USINT): The default priority for this PGN. Valid range: 0 (highest) to 7 (lowest). Initial value: 7.
+- **u32Pgn** (UDINT): The parameter group number (PGN) to be installed. Valid range: 0 to 0x3FFFF (decimal 262143).
+- **NmDestin** (isobus::pgn::ISONETEVENT_T): Defines the communication partner (destination address) for the PGN. The exact type is defined by the ISOBUS library.
+- **u16DaSize** (UINT): The length of the payload for this PGN in bytes. Valid range: 0 to 8.
+- **u8Priority** (USINT): The default priority for this PGN. Valid range: 0 (highest) to 7 (lowest). Initial value: 7.
 
 ### **Data Outputs**
 
-* **PGN_handle** (INT): A handle (identifier) for the installed PGN. If the installation is successful, it contains a valid, positive value. In case of an error, an invalid handle (e.g., `HANDLE_UNVALID`) is output.
-* **dataERRC** (INT): The specific error code when a `dataERR` event occurs.
-* **pgnERRC** (INT): The specific error code when a `pgnERR` event occurs.
+- **PGN_handle** (INT): A handle (identifier) for the installed PGN. If the installation is successful, it contains a valid, positive value. In case of an error, an invalid handle (e.g., `HANDLE_UNVALID`) is output.
+- **dataERRC** (INT): The specific error code when a `dataERR` event occurs.
+- **pgnERRC** (INT): The specific error code when a `pgnERR` event occurs.
 
 ### **Adapter**
 
-* **CB** (Type: `isobus::pgn::tx::Callback`): A socket adapter that provides a callback interface. Asynchronous feedback (such as the `CNF` event) is reported from the underlying ISOBUS driver system to the function block via this adapter. The function block must be connected to a corresponding plug adapter to receive the feedback.
+- **CB** (Type: `isobus::pgn::tx::Callback`): A socket adapter that provides a callback interface. Asynchronous feedback (such as the `CNF` event) is reported from the underlying ISOBUS driver system to the function block via this adapter. The function block must be connected to a corresponding plug adapter to receive the feedback.
 
 ## Operation
 
@@ -47,10 +47,10 @@ The function block `AlPgnTxNew8B_REQ` is used to configure and control the trans
 
 ## Technical Features
 
-* This module is specific to ISOBUS/J1939 networks and uses type-safe data structures (`isobus::pgn::ISONETEVENT_T`).
-* Error handling is divided into `dataERR` (data error) and `pgnERR` (PGN configuration error), enabling precise error diagnosis.
-* Communication with the actual network stack occurs via a callback interface (`CB` adapter), which allows for loose coupling and asynchronous notification.
-* `PGN_handle` serves as an abstract reference to the internally managed PGN instance.
+- This module is specific to ISOBUS/J1939 networks and uses type-safe data structures (`isobus::pgn::ISONETEVENT_T`).
+- Error handling is divided into `dataERR` (data error) and `pgnERR` (PGN configuration error), enabling precise error diagnosis.
+- Communication with the actual network stack occurs via a callback interface (`CB` adapter), which allows for loose coupling and asynchronous notification.
+- `PGN_handle` serves as an abstract reference to the internally managed PGN instance.
 
 ## State Overview
 
@@ -63,18 +63,18 @@ The component implicitly passes through the following main states:
 
 ## Application Scenarios
 
-* **Agricultural Machinery Control**: Integrating a new control unit into an ISOBUS network that needs to regularly send operating data (e.g., engine speed, temperature).
-* **Implements**: Dynamic configuration of communication between a tractor and a specific implement that requires an individual PGN for its data.
-* **Diagnostic Tools**: A diagnostic tool that temporarily installs a PGN on the network to request specific data or send commands.
+- **Agricultural Machinery Control**: Integrating a new control unit into an ISOBUS network that needs to regularly send operating data (e.g., engine speed, temperature).
+- **Implements**: Dynamic configuration of communication between a tractor and a specific implement that requires an individual PGN for its data.
+- **Diagnostic Tools**: A diagnostic tool that temporarily installs a PGN on the network to request specific data or send commands.
 
 ## ⚖️ Comparison with Similar Blocks
 
-* **`E_SEND` / `E_RCV` (Standard 61499)**: These generic communication blocks are protocol-independent. In contrast, `AlPgnTxNew8B_REQ` is specialized for ISOBUS/J1939 and handles the protocol-specific configuration (PGN, priority, destination address) that would have to be manually defined in the data parameters of the standard blocks.
-* **Simple TX Blocks**: Other ISOBUS transmit blocks often expect a pre-configured `PGN_handle`. `AlPgnTxNew8B_REQ` is the upstream component that provides precisely this handle by installing a new PGN.
+- **`E_SEND` / `E_RCV` (Standard 61499)**: These generic communication blocks are protocol-independent. In contrast, `AlPgnTxNew8B_REQ` is specialized for ISOBUS/J1939 and handles the protocol-specific configuration (PGN, priority, destination address) that would have to be manually defined in the data parameters of the standard blocks.
+- **Simple TX Blocks**: Other ISOBUS transmit blocks often expect a pre-configured `PGN_handle`. `AlPgnTxNew8B_REQ` is the upstream component that provides precisely this handle by installing a new PGN.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_125](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
+- [Exercise_125](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
 
 ## Conclusion
 
@@ -84,6 +84,6 @@ These features, along with the ability to use a callback adapter, make it robust
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

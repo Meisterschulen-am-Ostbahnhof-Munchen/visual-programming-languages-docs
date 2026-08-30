@@ -11,8 +11,8 @@ Since `ST02B` is a data type and not a function block, it has no interfaces in t
 
 The structure `ST02B` consists of the following two byte variables:
 
-* **B_00** (Type: `BYTE`): The first byte of the structure (BYTE 00).
-* **B_01** (Type: `BYTE`): The second byte of the structure (BYTE 01).
+- **B_00** (Type: `BYTE`): The first byte of the structure (BYTE 00).
+- **B_01** (Type: `BYTE`): The second byte of the structure (BYTE 01).
 
 ## Functionality
 
@@ -24,14 +24,14 @@ ST02B` is defined as `StructuredType` and consists of two consecutive `BYTE` var
 
 ## Application Scenarios
 
-* **Data Transfer**: Bundling 2 bytes that should be treated as a single unit.
-* **Register Mapping**: Representation of a 2-byte register (similar to a WORD, but with explicit byte access).
-* **Small Data Packets**: Simplified handling of small, predefined data packets.
+- **Data Transfer**: Bundling 2 bytes that should be treated as a single unit.
+- **Register Mapping**: Representation of a 2-byte register (similar to a WORD, but with explicit byte access).
+- **Small Data Packets**: Simplified handling of small, predefined data packets.
 
 ## ⚖️ Comparison with Similar Building Blocks
 
-* **Array of Bytes (ARRAY OF BYTE [2])**: An array of 2 bytes serves the same purpose. However, `ST02B` offers the advantage of named fields (B_00, B_01).
-* **`WORD`**: Also represents 2 bytes. `ST02B` is more flexible if the individual bytes need to be manipulated independently.
+- **Array of Bytes (ARRAY OF BYTE [2])**: An array of 2 bytes serves the same purpose. However, `ST02B` offers the advantage of named fields (B_00, B_01).
+- **`WORD`**: Also represents 2 bytes. `ST02B` is more flexible if the individual bytes need to be manipulated independently.
 
 ## Conclusion
 
@@ -41,4 +41,4 @@ ST02B` is a simple, useful structured data type for managing two bytes as a cohe
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

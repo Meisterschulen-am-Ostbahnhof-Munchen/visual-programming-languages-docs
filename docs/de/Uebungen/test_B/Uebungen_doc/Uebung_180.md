@@ -64,20 +64,20 @@ Die Schaltung realisiert eine logische UND-Verknüpfung auf zeitlicher Ebene (Sy
 
 1.  **Eingabeerfassung**: Die drei Eingangsbausteine `DigitalInput_CLK_I1`, `_I2` und `_I3` senden bei Betätigung (Single Click) ein `IND`-Event.
 2.  **Rendezvous (Synchronisation)**: Diese drei Events werden an den Baustein `E_REND_3` geleitet.
-    *   Der Baustein speichert intern, welche Eingänge bereits betätigt wurden.
-    *   Erst wenn **alle drei** Eingänge (I1, I2 und I3) mindestens einmal ein Signal gesendet haben, wird das Ausgangsevent `EO` des `E_REND_3` ausgelöst.
+    -   Der Baustein speichert intern, welche Eingänge bereits betätigt wurden.
+    -   Erst wenn **alle drei** Eingänge (I1, I2 und I3) mindestens einmal ein Signal gesendet haben, wird das Ausgangsevent `EO` des `E_REND_3` ausgelöst.
 3.  **Verarbeitung (Toggle)**: Das `EO`-Event des Rendezvous-Bausteins triggert den `CLK`-Eingang des `E_T_FF_SR`.
-    *   Das Flip-Flop wechselt seinen Zustand (von FALSE auf TRUE oder umgekehrt).
-    *   Der neue Zustand `Q` wird an den Ausgang `DigitalOutput_Q1` übergeben, wodurch die Lampe (Q1) an- oder ausgeht.
+    -   Das Flip-Flop wechselt seinen Zustand (von FALSE auf TRUE oder umgekehrt).
+    -   Der neue Zustand `Q` wird an den Ausgang `DigitalOutput_Q1` übergeben, wodurch die Lampe (Q1) an- oder ausgeht.
 4.  **Reset**: Der Eingang `DigitalInput_R_I4` ist mit den Reset-Eingängen (`R`) sowohl des `E_REND_3` als auch des `E_T_FF_SR` verbunden.
-    *   Ein Signal an I4 löscht den internen Speicher des Rendezvous-Bausteins (es müssen erneut alle 3 Taster gedrückt werden).
-    *   Gleichzeitig wird das Flip-Flop zurückgesetzt, wodurch der Ausgang Q1 sofort auf `FALSE` (Aus) schaltet.
+    -   Ein Signal an I4 löscht den internen Speicher des Rendezvous-Bausteins (es müssen erneut alle 3 Taster gedrückt werden).
+    -   Gleichzeitig wird das Flip-Flop zurückgesetzt, wodurch der Ausgang Q1 sofort auf `FALSE` (Aus) schaltet.
 
 **Lernziele:**
 
-*   Verständnis des `E_REND`-Musters (Warten auf mehrere Ereignisse).
-*   Kombination von Ereignissteuerung und Zustandsspeicherung (Flip-Flop).
-*   Implementierung einer zentralen Reset-Logik.
+-   Verständnis des `E_REND`-Musters (Warten auf mehrere Ereignisse).
+-   Kombination von Ereignissteuerung und Zustandsspeicherung (Flip-Flop).
+-   Implementierung einer zentralen Reset-Logik.
 
 ## Zusammenfassung
 

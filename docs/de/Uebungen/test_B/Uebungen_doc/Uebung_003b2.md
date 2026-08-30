@@ -20,9 +20,9 @@ Das Ziel dieser Übung ist die effiziente Verwaltung einer großen Anzahl von Ha
 
 [cite_start]Dieser Baustein dient als universeller "Kanal-Treiber" für die Funk-zu-CAN-Kommunikation[cite: 2]. Er verfügt über folgende Parameter:
 
-  * **`Input`**: Der Name der Funk-Taste (z.B. `Key_01`, `START`, `STOP`).
-  * **`u8SAMember`**: Die CAN-Adresse des DataPanels (hier fest auf `MI_00` gesetzt).
-  * **`Output`**: Der Name des physischen Ausgangs am DataPanel (z.B. `DigitalOutput_1A`).
+  - **`Input`**: Der Name der Funk-Taste (z.B. `Key_01`, `START`, `STOP`).
+  - **`u8SAMember`**: Die CAN-Adresse des DataPanels (hier fest auf `MI_00` gesetzt).
+  - **`Output`**: Der Name des physischen Ausgangs am DataPanel (z.B. `DigitalOutput_1A`).
 
 Intern enthält der Baustein einen `Funk_IX` zum Empfangen der Funksignale und einen `DataPanel_MI_QX` zum Senden der CAN-Nachrichten.
 
@@ -30,9 +30,9 @@ Intern enthält der Baustein einen `Funk_IX` zum Empfangen der Funksignale und e
 
 In `Uebung_003b2` sind die Zuweisungen klar definiert:
 
-*   `F1`: `STOP` ➡️ `Output_1A`
-*   `F2`: `START` ➡️ `Output_1B`
-*   `F3` bis `F15`: `Key_01` bis `Key_13` ➡️ `Output_2A` bis `Output_8A`
+-   `F1`: `STOP` ➡️ `Output_1A`
+-   `F2`: `START` ➡️ `Output_1B`
+-   `F3` bis `F15`: `Key_01` bis `Key_13` ➡️ `Output_2A` bis `Output_8A`
 
 -----
 

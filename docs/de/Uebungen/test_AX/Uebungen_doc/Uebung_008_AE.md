@@ -83,7 +83,7 @@ Der Blinker arbeitet ereignisgesteuert nach folgendem Schema:
 3. **Schalter**: Der Ausgang `AX_AE_MERGE.OUT` wird an den Eingang `G` des `AX_SWITCH` gelegt. Der Schalter wertet den ankommenden Adapterzustand aus:
    - Bei Zustand `false` (Flipflop zurückgesetzt) wird ein Ereignis an `EO0` ausgegeben.
    - Bei Zustand `true` (Flipflop gesetzt) wird ein Ereignis an `EO1` ausgegeben.
-4. **SR-Flipflop**: 
+4. **SR-Flipflop**:
    - Ein Ereignis von `AX_SWITCH.EO0` gelangt an den Setzeingang `S` des `AX_SR`. Damit wird der Flipflop gesetzt → Ausgang `Q` wird `true`.
    - Ein Ereignis von `AX_SWITCH.EO1` gelangt an den Rücksetzeingang `R` des `AX_SR`. Damit wird der Flipflop zurückgesetzt → Ausgang `Q` wird `false`.
 5. **Ausgabe**: Über `AX_SPLIT_2` wird der Zustand `Q` auf zwei Pfade verteilt:
@@ -100,4 +100,4 @@ Die Übung „Uebung_008_AE" zeigt den Aufbau eines Blinkers mit Hilfe von 4diac
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -13,23 +13,23 @@ Der Funktionsblock `hsv2rgb` ist ein Hilfsbaustein zur Farbraumkonvertierung. Er
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Service Request):** Löst die Konvertierungsberechnung aus. Bei diesem Ereignis werden die aktuellen Werte an den Daten-Eingängen `hue`, `saturation` und `value` übernommen.
+-   **REQ (Service Request):** Löst die Konvertierungsberechnung aus. Bei diesem Ereignis werden die aktuellen Werte an den Daten-Eingängen `hue`, `saturation` und `value` übernommen.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Confirmation of Requested Service):** Wird ausgelöst, sobald die Konvertierung abgeschlossen ist. Dieses Ereignis liefert die berechneten RGB-Werte an den Daten-Ausgängen `r`, `g` und `b`.
+-   **CNF (Confirmation of Requested Service):** Wird ausgelöst, sobald die Konvertierung abgeschlossen ist. Dieses Ereignis liefert die berechneten RGB-Werte an den Daten-Ausgängen `r`, `g` und `b`.
 
 ### **Daten-Eingänge**
 
-*   **hue (UDINT):** Der Farbton (Hue) im HSV-Modell. Der Wertebereich ist nicht im Baustein vordefiniert, typischerweise wird jedoch ein Bereich von 0-360° oder 0-65535 verwendet.
-*   **saturation (UDINT):** Die Sättigung (Saturation) im HSV-Modell. Typischer Wertebereich: 0-100% oder 0-255.
-*   **value (UDINT):** Die Helligkeit (Value) im HSV-Modell. Typischer Wertebereich: 0-100% oder 0-255.
+-   **hue (UDINT):** Der Farbton (Hue) im HSV-Modell. Der Wertebereich ist nicht im Baustein vordefiniert, typischerweise wird jedoch ein Bereich von 0-360° oder 0-65535 verwendet.
+-   **saturation (UDINT):** Die Sättigung (Saturation) im HSV-Modell. Typischer Wertebereich: 0-100% oder 0-255.
+-   **value (UDINT):** Die Helligkeit (Value) im HSV-Modell. Typischer Wertebereich: 0-100% oder 0-255.
 
 ### **Daten-Ausgänge**
 
-*   **r (UDINT):** Der berechnete Rot-Anteil (Red) im RGB-Modell.
-*   **g (UDINT):** Der berechnete Grün-Anteil (Green) im RGB-Modell.
-*   **b (UDINT):** Der berechnete Blau-Anteil (Blue) im RGB-Modell.
+-   **r (UDINT):** Der berechnete Rot-Anteil (Red) im RGB-Modell.
+-   **g (UDINT):** Der berechnete Grün-Anteil (Green) im RGB-Modell.
+-   **b (UDINT):** Der berechnete Blau-Anteil (Blue) im RGB-Modell.
 
 ### **Adapter**
 
@@ -41,9 +41,9 @@ Der Baustein arbeitet ereignisgesteuert. Bei Eintreffen des `REQ`-Ereignisses st
 
 ## Technische Besonderheiten
 
-*   **Datentyp:** Alle Eingangs- und Ausgangsdaten sind vom Typ `UDINT` (unsigned double integer, 32-bit). Dies ermöglicht eine hohe Auflösung und Genauigkeit bei der Farbdarstellung.
-*   **Wertebereich:** Der Baustein selbst definiert keine Skalierung oder Begrenzung der Wertebereiche für HSV oder RGB. Die Interpretation der Zahlenwerte (z.B. 0-360 für Hue, 0-255 für RGB) liegt in der Verantwortung der anbindenden Applikation. Der Konvertierungsalgorithmus muss entsprechend auf den erwarteten Eingabebereich ausgelegt sein.
-*   **Deterministisches Verhalten:** Die Ausführung ist deterministisch und liefert für identische Eingabewerte stets die gleichen RGB-Ausgabewerte.
+-   **Datentyp:** Alle Eingangs- und Ausgangsdaten sind vom Typ `UDINT` (unsigned double integer, 32-bit). Dies ermöglicht eine hohe Auflösung und Genauigkeit bei der Farbdarstellung.
+-   **Wertebereich:** Der Baustein selbst definiert keine Skalierung oder Begrenzung der Wertebereiche für HSV oder RGB. Die Interpretation der Zahlenwerte (z.B. 0-360 für Hue, 0-255 für RGB) liegt in der Verantwortung der anbindenden Applikation. Der Konvertierungsalgorithmus muss entsprechend auf den erwarteten Eingabebereich ausgelegt sein.
+-   **Deterministisches Verhalten:** Die Ausführung ist deterministisch und liefert für identische Eingabewerte stets die gleichen RGB-Ausgabewerte.
 
 ## Zustandsübersicht
 
@@ -55,9 +55,9 @@ Der Funktionsblock besitzt einen einfachen, zustandslosen Ablauf:
 
 ## Anwendungsszenarien
 
-*   **Farbsteuerung von RGB-LEDs:** Benutzerfreundliche Farbauswahl über HSV-Parameter (z.B. via Drehgeber oder Touch-Oberfläche) mit anschließender Umrechnung für die LED-Ansteuerung.
-*   **Visualisierungs-Systeme:** Konvertierung von in HSV definierten Alarm- oder Statusfarben für die Darstellung auf RGB-Monitoren oder -Panels.
-*   **Industrielle Beleuchtung:** Dynamische Lichtsteuerung in Produktions- oder Logistikumgebungen, bei der Farbübergänge intuitiv über Helligkeit und Sättigung definiert werden.
+-   **Farbsteuerung von RGB-LEDs:** Benutzerfreundliche Farbauswahl über HSV-Parameter (z.B. via Drehgeber oder Touch-Oberfläche) mit anschließender Umrechnung für die LED-Ansteuerung.
+-   **Visualisierungs-Systeme:** Konvertierung von in HSV definierten Alarm- oder Statusfarben für die Darstellung auf RGB-Monitoren oder -Panels.
+-   **Industrielle Beleuchtung:** Dynamische Lichtsteuerung in Produktions- oder Logistikumgebungen, bei der Farbübergänge intuitiv über Helligkeit und Sättigung definiert werden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -65,7 +65,7 @@ Im Gegensatz zu universellen Rechenbausteinen (wie `MUL`, `ADD`) oder Skalierern
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)
+- [Uebung_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)
 
 ## Fazit
 
@@ -75,4 +75,4 @@ Der `hsv2rgb`-Funktionsblock ist ein nützliches und spezialisiertes Werkzeug f�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

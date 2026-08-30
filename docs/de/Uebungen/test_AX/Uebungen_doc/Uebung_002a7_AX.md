@@ -22,9 +22,9 @@ Das Hauptziel dieser Übung ist die Demonstration der XOR-Logik bei mehr als zwe
 
 Folgende Bausteine werden eingesetzt:
 
-  * **`DigitalInput_I1`, `I2`, `I3`**: Drei Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese erfassen die Hardware-Eingänge `Input_I1` bis `Input_I3`[cite: 1].
-  * **`AX_XOR_3`**: Eine Instanz des Typs `AX_XOR_3`. [cite_start]Dieser Baustein führt die exklusive ODER-Operation auf drei Adapter-Eingängen (`IN1`, `IN2`, `IN3`) aus und stellt das Ergebnis am Adapter-Ausgang `OUT` bereit[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`[cite: 1].
+  - **`DigitalInput_I1`, `I2`, `I3`**: Drei Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese erfassen die Hardware-Eingänge `Input_I1` bis `Input_I3`[cite: 1].
+  - **`AX_XOR_3`**: Eine Instanz des Typs `AX_XOR_3`. [cite_start]Dieser Baustein führt die exklusive ODER-Operation auf drei Adapter-Eingängen (`IN1`, `IN2`, `IN3`) aus und stellt das Ergebnis am Adapter-Ausgang `OUT` bereit[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein steuert den Hardware-Ausgang `Output_Q1`[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 
@@ -49,9 +49,9 @@ Die Logik wird durch die Verschaltung der Eingangsbausteine mit dem XOR-Logik-Ba
 
 Die XOR-Logik mit drei Eingängen verhält sich wie folgt:
 
-*   Der Ausgang ist **TRUE**, wenn genau **ein** Eingang aktiv ist.
-*   Der Ausgang ist **TRUE**, wenn alle **drei** Eingänge aktiv sind.
-*   Der Ausgang ist **FALSE**, wenn kein Eingang oder genau zwei Eingänge aktiv sind.
+-   Der Ausgang ist **TRUE**, wenn genau **ein** Eingang aktiv ist.
+-   Der Ausgang ist **TRUE**, wenn alle **drei** Eingänge aktiv sind.
+-   Der Ausgang ist **FALSE**, wenn kein Eingang oder genau zwei Eingänge aktiv sind.
 
 Dies entspricht der mathematischen Definition der XOR-Verknüpfung als ungerade Parität.
 

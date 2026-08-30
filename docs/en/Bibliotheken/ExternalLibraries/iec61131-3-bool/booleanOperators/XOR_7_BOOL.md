@@ -10,25 +10,25 @@ The function block `XOR_7_BOOL` is a generic block for calculating the logical e
 
 ### **Event Inputs**
 
-* **REQ (Normal Execution Request):** This event triggers the execution of the function block. Upon its arrival, all seven data inputs (`IN1` to `IN7`) are read and the XOR calculation is performed.
+- **REQ (Normal Execution Request):** This event triggers the execution of the function block. Upon its arrival, all seven data inputs (`IN1` to `IN7`) are read and the XOR calculation is performed.
 
 ### **Event Outputs**
 
-* **CNF (Execution Confirmation):** This event signals the completion of the calculation. It is output along with the calculated data output `OUT`.
+- **CNF (Execution Confirmation):** This event signals the completion of the calculation. It is output along with the calculated data output `OUT`.
 
 ### **Data Inputs**
 
-* **IN1 (XOR input 1):** Boolean input 1.
-* **IN2 (XOR input 2):** Boolean input 2.
-* **IN3 (XOR input 3):** Boolean input 3.
-* **IN4 (XOR input 4):** Boolean input 4.
-* **IN5 (XOR input 5):** Boolean input 5.
-* **IN6 (XOR input 6):** Boolean input 6.
-* **IN7 (XOR input 7):** Boolean input 7.
+- **IN1 (XOR input 1):** Boolean input 1.
+- **IN2 (XOR input 2):** Boolean input 2.
+- **IN3 (XOR input 3):** Boolean input 3.
+- **IN4 (XOR input 4):** Boolean input 4.
+- **IN5 (XOR input 5):** Boolean input 5.
+- **IN6 (XOR input 6):** Boolean input 6.
+- **IN7 (XOR input 7):** Boolean input 7.
 
 ### **Data Outputs**
 
-* **OUT (XOR result):** Boolean result of the XOR operation of all seven inputs.
+- **OUT (XOR result):** Boolean result of the XOR operation of all seven inputs.
 
 ### **Adapters**
 
@@ -44,9 +44,9 @@ Immediately after the calculation, the completion event `CNF` is triggered along
 
 ## Technical Features
 
-* **Generic Block:** The block is implemented as a generic function block (`GEN_XOR`), which allows for flexible reuse in different contexts.
-* **Fixed Number of Inputs:** Unlike blocks with a variable number of inputs, this block has exactly seven fixed inputs.
-* **Event-Driven Execution:** The operation is triggered exclusively by an incoming event (`REQ`), which enables deterministic and energy-efficient processing in the real-time system.
+- **Generic Block:** The block is implemented as a generic function block (`GEN_XOR`), which allows for flexible reuse in different contexts.
+- **Fixed Number of Inputs:** Unlike blocks with a variable number of inputs, this block has exactly seven fixed inputs.
+- **Event-Driven Execution:** The operation is triggered exclusively by an incoming event (`REQ`), which enables deterministic and energy-efficient processing in the real-time system.
 
 ## State Overview
 
@@ -54,15 +54,15 @@ The function block does not have an internal state in the sense of a memory. Its
 
 ## Application Scenarios
 
-* **Parity Check:** Monitoring whether an odd number of sensors (e.g., limit switches, light barriers) are in a specific state (``TRUE``).
-* **Safety-Critical Logic:** In safety circuits where an antivalence condition across multiple safety devices is required.
-* **Control Logic:** Implementation of special logic operations in sequence controls or logic controllers that require an XOR function with exactly seven operands.
+- **Parity Check:** Monitoring whether an odd number of sensors (e.g., limit switches, light barriers) are in a specific state (``TRUE``).
+- **Safety-Critical Logic:** In safety circuits where an antivalence condition across multiple safety devices is required.
+- **Control Logic:** Implementation of special logic operations in sequence controls or logic controllers that require an XOR function with exactly seven operands.
 
 ## ⚖️ Comparison with similar building blocks
 
-* **`XOR` (2 inputs):** The standard XOR block only combines two inputs. To combine seven signals, this block would have to be nested multiple times, which reduces program readability. `XOR_7_BOOL` offers a direct and clear solution. See: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
-* **`GEN_XOR` (Generic, n inputs):** The underlying generic block `GEN_XOR` can be instantiated with a variable number of inputs. `XOR_7_BOOL` is a specific, pre-configured instance with seven inputs that can be used directly without having to parameterize the number of inputs.
-* **`PARITY_CHECK`:** A pure parity check block could deliver similar results, but is often conceptually designed for error detection in data streams, whereas `XOR_7_BOOL` serves as a general-purpose logical operator in control logic.
+- **`XOR` (2 inputs):** The standard XOR block only combines two inputs. To combine seven signals, this block would have to be nested multiple times, which reduces program readability. `XOR_7_BOOL` offers a direct and clear solution. See: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
+- **`GEN_XOR` (Generic, n inputs):** The underlying generic block `GEN_XOR` can be instantiated with a variable number of inputs. `XOR_7_BOOL` is a specific, pre-configured instance with seven inputs that can be used directly without having to parameterize the number of inputs.
+- **`PARITY_CHECK`:** A pure parity check block could deliver similar results, but is often conceptually designed for error detection in data streams, whereas `XOR_7_BOOL` serves as a general-purpose logical operator in control logic.
 
 ## Conclusion
 

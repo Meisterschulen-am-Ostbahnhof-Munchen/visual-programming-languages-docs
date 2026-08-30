@@ -17,7 +17,7 @@ Working with latching buttons.
 
 ![Uebung_010a3_AX_network](./Uebung_010a3_AX_network.svg)
 
-* **`Button_L1`**: A button defined as "latching" in the ISOBUS pool.
+- **`Button_L1`**: A button defined as "latching" in the ISOBUS pool.
 
 -----
 

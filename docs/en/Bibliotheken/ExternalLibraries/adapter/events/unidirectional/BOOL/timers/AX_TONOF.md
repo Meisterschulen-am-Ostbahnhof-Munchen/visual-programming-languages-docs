@@ -69,7 +69,7 @@ Comparison with [E_TONOF](../../../../../../StandardLibraries/events/timers/E_TO
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020g_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020g_AX.md)
+- [Exercise_020g_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020g_AX.md)
 
 ## Conclusion
 

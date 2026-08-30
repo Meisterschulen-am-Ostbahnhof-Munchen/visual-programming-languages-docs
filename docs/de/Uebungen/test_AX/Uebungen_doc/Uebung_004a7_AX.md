@@ -20,10 +20,10 @@ Demonstration der Interaktion zwischen Ereignis-Logik (`E_REND`) und Zustands-Lo
 
 ![Uebung_004a7_AX_network](./Uebung_004a7_AX_network.svg)
 
-  * **`I1` & `I2`**: Eingänge für das Rendezvous.
-  * **`I3`**: Reset-Eingang.
-  * **`E_REND`**: Synchronisiert `I1` und `I2`.
-  * **`AX_T_FF_SR`**: Ein Toggle-Flip-Flop, das zusätzlich einen `R` (Reset) Eingang hat, um den Ausgang definiert auf FALSE zu setzen.
+  - **`I1` & `I2`**: Eingänge für das Rendezvous.
+  - **`I3`**: Reset-Eingang.
+  - **`E_REND`**: Synchronisiert `I1` und `I2`.
+  - **`AX_T_FF_SR`**: Ein Toggle-Flip-Flop, das zusätzlich einen `R` (Reset) Eingang hat, um den Ausgang definiert auf FALSE zu setzen.
 
 -----
 
@@ -43,8 +43,8 @@ Demonstration der Interaktion zwischen Ereignis-Logik (`E_REND`) und Zustands-Lo
 
 1.  Um die Lampe (`Q1`) einzuschalten (oder umzuschalten), müssen `I1` und `I2` gedrückt werden (Rendezvous -> `CLK`).
 2.  Der Taster `I3` ist der "Not-Aus" oder "Alles Löschen". Er ist verbunden mit:
-    *   `E_REND.R`: Löscht eventuell halb-fertige Rendezvous-Zustände.
-    *   `AX_T_FF_SR.R`: Setzt das Flip-Flop hart auf FALSE zurück (Lampe aus).
+    -   `E_REND.R`: Löscht eventuell halb-fertige Rendezvous-Zustände.
+    -   `AX_T_FF_SR.R`: Setzt das Flip-Flop hart auf FALSE zurück (Lampe aus).
 
 -----
 

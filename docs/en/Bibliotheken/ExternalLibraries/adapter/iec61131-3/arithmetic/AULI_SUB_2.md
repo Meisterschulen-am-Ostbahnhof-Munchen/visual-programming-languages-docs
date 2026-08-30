@@ -31,15 +31,15 @@ The function block `AULI_SUB_2` is a generic function block (Generic FB) designe
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AULI`):
-* Description: The first input (minuend) for subtraction.
-* **IN2** (Type: `adapter::types::unidirectional::AULI`):
-* Description: The second input (subtrahend) for subtraction.
+- **IN1** (Type: `adapter::types::unidirectional::AULI`):
+- Description: The first input (minuend) for subtraction.
+- **IN2** (Type: `adapter::types::unidirectional::AULI`):
+- Description: The second input (subtrahend) for subtraction.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AULI`):
-* Description: The output (difference) of arithmetic subtraction.
+- **OUT** (Type: `adapter::types::unidirectional::AULI`):
+- Description: The output (difference) of arithmetic subtraction.
 
 ---
 
@@ -53,8 +53,8 @@ Since this is a generic function block (`GEN_AULI_SUB`), the specific data type 
 
 ## Technical Features
 
-* **Generic Block:** The attribute `GenericClassName` with the value `'GEN_AULI_SUB'` allows the block to be used flexibly for various data types, provided the adapters used support this.
-* **Unidirectional Adapters:** Using the type `AULI` ensures a clear separation of signal flow directions (unidirectional) and drastically reduces the wiring effort in the 4diac editor.
+- **Generic Block:** The attribute `GenericClassName` with the value `'GEN_AULI_SUB'` allows the block to be used flexibly for various data types, provided the adapters used support this.
+- **Unidirectional Adapters:** Using the type `AULI` ensures a clear separation of signal flow directions (unidirectional) and drastically reduces the wiring effort in the 4diac editor.
 
 --
 
@@ -72,17 +72,17 @@ The block behaves purely combinatorially or event-driven:
 
 ## Application Scenarios
 
-* **Target-Actual Value Comparison:** Calculation of control deviations in process engineering (e.g., `Regeldifferenz = Sollwert - Istwert`).
-* **Offset Compensation:** Subtraction of zero-point errors or offsets from analog sensor values.
-* **Cascaded Calculations:** Mathematical calculations in modular plant control systems where measured values are transported in a structured manner via adapters.
+- **Target-Actual Value Comparison:** Calculation of control deviations in process engineering (e.g., `Regeldifferenz = Sollwert - Istwert`).
+- **Offset Compensation:** Subtraction of zero-point errors or offsets from analog sensor values.
+- **Cascaded Calculations:** Mathematical calculations in modular plant control systems where measured values are transported in a structured manner via adapters.
 
 ---
 
 ## Comparison with Similar Function Blocks
 
 Compared to a standard subtraction function block (e.g., `SUB` from the IEC 61131-3 standard library), `AULI_SUB_2` offers the following advantages:
-* **Reduced Complexity:** Instead of separate lines for event (REQ/CNF) and data (IN1, IN2, OUT), the `AULI` adapters bundle all relevant information into a single connection.
-* **Modularity:** The design is ideally suited for service-oriented architectures in distributed systems.
+- **Reduced Complexity:** Instead of separate lines for event (REQ/CNF) and data (IN1, IN2, OUT), the `AULI` adapters bundle all relevant information into a single connection.
+- **Modularity:** The design is ideally suited for service-oriented architectures in distributed systems.
 
 --
 

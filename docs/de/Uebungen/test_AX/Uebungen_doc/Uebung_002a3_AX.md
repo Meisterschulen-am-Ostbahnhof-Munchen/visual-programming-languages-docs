@@ -22,9 +22,9 @@ Folgende Bausteine werden verwendet:
 
 ![Uebung_002a3_AX_network](./Uebung_002a3_AX_network.svg)
 
-  * **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese Bausteine erfassen die Zustände der physischen Eingänge `Input_I1` und `Input_I2`[cite: 1].
-  * **`AX_OR_2`**: Eine Instanz des Typs `AX_OR_2`. [cite_start]Dieser Baustein führt die logische ODER-Operation auf Adapter-Ebene aus. Er besitzt zwei Adapter-Eingänge (`IN1`, `IN2`) und einen Adapter-Ausgang (`OUT`)[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein setzt den physischen Ausgang `Output_Q1` basierend auf dem Ergebnis der ODER-Verknüpfung[cite: 1].
+  - **`DigitalInput_I1` & `DigitalInput_I2`**: Instanzen des Typs `logiBUS_IXA`. [cite_start]Diese Bausteine erfassen die Zustände der physischen Eingänge `Input_I1` und `Input_I2`[cite: 1].
+  - **`AX_OR_2`**: Eine Instanz des Typs `AX_OR_2`. [cite_start]Dieser Baustein führt die logische ODER-Operation auf Adapter-Ebene aus. Er besitzt zwei Adapter-Eingänge (`IN1`, `IN2`) und einen Adapter-Ausgang (`OUT`)[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein setzt den physischen Ausgang `Output_Q1` basierend auf dem Ergebnis der ODER-Verknüpfung[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 

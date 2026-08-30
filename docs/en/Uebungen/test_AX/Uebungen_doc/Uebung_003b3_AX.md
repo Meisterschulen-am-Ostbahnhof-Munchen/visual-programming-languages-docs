@@ -21,12 +21,12 @@ The objective is maximum reusability and clarity. By using typed sub-application
 
 The assignment is clearly readable in the file:
 
-* **`F1`**: `STOP` -> `Output_1A` (Note: Check the logic to ensure that STOP is inverted or handled specially)
-* **`F2`**: `START` -> `Output_1B`
-* **`F3`**: `Key_01` -> `Output_2A`
-* **`F4`**: `Key_02` -> `Output_2B`
-* ...
-* **`F15`**: `Key_13` -> `Output_8A`
+- **`F1`**: `STOP` -> `Output_1A` (Note: Check the logic to ensure that STOP is inverted or handled specially)
+- **`F2`**: `START` -> `Output_1B`
+- **`F3`**: `Key_01` -> `Output_2A`
+- **`F4`**: `Key_02` -> `Output_2B`
+- ...
+- **`F15`**: `Key_13` -> `Output_8A`
 
 All instances use `MI_00` as `u8SAMember` (address of the DataPanel).
 

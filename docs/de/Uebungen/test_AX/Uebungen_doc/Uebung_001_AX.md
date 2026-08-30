@@ -26,15 +26,15 @@ In der Subapplikation werden zwei zentrale Funktionsbausteine instanziiert:
 
 ![Uebung_001_AX_network](./Uebung_001_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. Dieser Baustein repräsentiert einen physischen digitalen Eingang. [cite\_start]Über den Parameter `Input` wird er fest mit dem Hardware-Eingang `logiBUS_DI::Input_I1` verdrahtet[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein repräsentiert einen physischen digitalen Ausgang. [cite\_start]Sein Parameter `Output` verweist auf den Hardware-Ausgang `logiBUS_DO::Output_Q1`[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. Dieser Baustein repräsentiert einen physischen digitalen Eingang. [cite\_start]Über den Parameter `Input` wird er fest mit dem Hardware-Eingang `logiBUS_DI::Input_I1` verdrahtet[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. Dieser Baustein repräsentiert einen physischen digitalen Ausgang. [cite\_start]Sein Parameter `Output` verweist auf den Hardware-Ausgang `logiBUS_DO::Output_Q1`[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 
 Die Verbindung zwischen den beiden Bausteinen wird durch den Adapter-Typ `AX` realisiert. [cite\_start]Es handelt sich um eine unidirektionale (einseitig gerichtete) Schnittstelle, die definiert ist, um genau ein Ereignis und einen dazugehörigen booleschen Datenwert zu übertragen[cite: 2].
 
-  * [cite\_start]**Event `E1`**: Ein Ereignis, das eine Zustandsänderung signalisiert[cite: 2].
-  * [cite\_start]**Variable `D1` (BOOL)**: Der boolesche Wert (wahr/falsch), der mit dem Ereignis `E1` gesendet wird[cite: 2].
+  - [cite\_start]**Event `E1`**: Ein Ereignis, das eine Zustandsänderung signalisiert[cite: 2].
+  - [cite\_start]**Variable `D1` (BOOL)**: Der boolesche Wert (wahr/falsch), der mit dem Ereignis `E1` gesendet wird[cite: 2].
 
 -----
 
@@ -65,7 +65,7 @@ Im Ergebnis spiegelt der **digitale Ausgang Q1** exakt und in Echtzeit den Zusta
 
 Diese Konfiguration ist die einfachste Form einer Steuerungsanwendung und dient oft als "Hallo Welt"-Beispiel für die Hardware-Anbindung in logiBUS®. Ein praktischer Anwendungsfall wäre ein einfacher **Funktionstest** für die Verdrahtung:
 
-  * An `Input_I1` wird ein Schalter angeschlossen.
-  * An `Output_Q1` wird eine Lampe angeschlossen.
+  - An `Input_I1` wird ein Schalter angeschlossen.
+  - An `Output_Q1` wird eine Lampe angeschlossen.
 
 Wird der Schalter betätigt, muss die Lampe sofort aufleuchten. Dies bestätigt, dass sowohl der Eingangs- als auch der Ausgangskanal korrekt konfiguriert und verdrahtet sind.

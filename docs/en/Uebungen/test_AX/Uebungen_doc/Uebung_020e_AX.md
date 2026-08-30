@@ -17,8 +17,8 @@ To become familiar with the timer block `AX_TOF`.
 
 ![Uebung_020e_AX_network](./Uebung_020e_AX_network.svg)
 
-* **`AX_TOF`**: Timer Off-Delay.
-* **Parameter `PT`**: Preset Time (here 5 seconds).
+- **`AX_TOF`**: Timer Off-Delay.
+- **Parameter `PT`**: Preset Time (here 5 seconds).
 
 -----
 

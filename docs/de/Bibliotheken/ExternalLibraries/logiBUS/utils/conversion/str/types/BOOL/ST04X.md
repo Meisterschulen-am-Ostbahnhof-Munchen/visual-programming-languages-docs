@@ -32,10 +32,10 @@ Nicht zutreffend für einen Datentyp.
 **Struktur-Elemente:**
 Die Struktur ST04X besteht aus den folgenden vier booleschen Feldern:
 
-*   **X_00** (Typ: BOOL, Kommentar: BIT 00)
-*   **X_01** (Typ: BOOL, Kommentar: BIT 01)
-*   **X_02** (Typ: BOOL, Kommentar: BIT 02)
-*   **X_03** (Typ: BOOL, Kommentar: BIT 03)
+-   **X_00** (Typ: BOOL, Kommentar: BIT 00)
+-   **X_01** (Typ: BOOL, Kommentar: BIT 01)
+-   **X_02** (Typ: BOOL, Kommentar: BIT 02)
+-   **X_03** (Typ: BOOL, Kommentar: BIT 03)
 
 ## Funktionsweise
 
@@ -43,9 +43,9 @@ Als Datentyp hat ST04X keine aktive "Funktionsweise" im Sinne eines Funktionsbau
 
 ## Technische Besonderheiten
 
-*   **Kompaktheit**: Bündelt vier individuelle BOOL-Werte, was in manchen Systemen eine effizientere Datenhaltung oder -übertragung ermöglichen kann.
-*   **Strukturierung**: Verbessert die Code-Struktur und -Lesbarkeit, indem verwandte Bits unter einem gemeinsamen Namen zusammengefasst werden.
-*   **Verwendung in FBs**: Dieser Datentyp kann als Ein- oder Ausgangsparameter für Funktionsblöcke oder als interne Variable innerhalb eines Funktionsblocks verwendet werden, um Gruppierungen von vier Bits zu verwalten.
+-   **Kompaktheit**: Bündelt vier individuelle BOOL-Werte, was in manchen Systemen eine effizientere Datenhaltung oder -übertragung ermöglichen kann.
+-   **Strukturierung**: Verbessert die Code-Struktur und -Lesbarkeit, indem verwandte Bits unter einem gemeinsamen Namen zusammengefasst werden.
+-   **Verwendung in FBs**: Dieser Datentyp kann als Ein- oder Ausgangsparameter für Funktionsblöcke oder als interne Variable innerhalb eines Funktionsblocks verwendet werden, um Gruppierungen von vier Bits zu verwalten.
 
 ## Zustandsübersicht
 
@@ -53,18 +53,18 @@ Nicht zutreffend für einen Datentyp. Ein Datentyp repräsentiert eine Datenstru
 
 ## Anwendungsszenarien
 
-*   **Statusregister**: Abbildung eines kleinen Statusregisters oder einer Gruppe von Flags, bei denen jedes Bit einen bestimmten Zustand oder eine Eigenschaft anzeigt.
-*   **Binäreingänge/-ausgänge**: Gruppierung von vier digitalen Ein- oder Ausgängen einer Hardware-Schnittstelle.
-*   **Bitfelder**: Wenn eine kompakte Darstellung von vier unabhängigen binären Informationen erforderlich ist, z.B. bei der Verarbeitung von seriellen Datenprotokollen oder Gerätekonfigurationen.
+-   **Statusregister**: Abbildung eines kleinen Statusregisters oder einer Gruppe von Flags, bei denen jedes Bit einen bestimmten Zustand oder eine Eigenschaft anzeigt.
+-   **Binäreingänge/-ausgänge**: Gruppierung von vier digitalen Ein- oder Ausgängen einer Hardware-Schnittstelle.
+-   **Bitfelder**: Wenn eine kompakte Darstellung von vier unabhängigen binären Informationen erforderlich ist, z.B. bei der Verarbeitung von seriellen Datenprotokollen oder Gerätekonfigurationen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 ST04X ist ein Datentyp und kann daher nicht direkt mit Funktionsblöcken (Bausteinen) verglichen werden.
 Ein Vergleich wäre eher mit anderen Datentypen möglich, z.B.:
 
-*   **BOOL**: Ein einzelner Boolescher Wert. ST04X bündelt vier davon.
-*   **BYTE**: Ein 8-Bit-Integer. ST04X bietet eine strukturierte Sicht auf 4 Bits, während ein BYTE in der Regel als eine unstrukturierte 8-Bit-Zahl behandelt wird. Die einzelnen Bits eines BYTE müssten über Bitmasken oder Bit-Operationen angesprochen werden, während bei ST04X jedes Bit direkt über seinen Namen zugänglich ist (z.B. `myST04X.X_00`).
-*   **Array von BOOL**: Ein Array von BOOLs (`ARRAY[0..3] OF BOOL`) bietet ebenfalls die Gruppierung, der Zugriff erfolgt jedoch über Indizes (`myArray[0]`), wohingegen ST04X den Zugriff über benannte Felder (`myST04X.X_00`) ermöglicht, was die Lesbarkeit verbessern kann.
+-   **BOOL**: Ein einzelner Boolescher Wert. ST04X bündelt vier davon.
+-   **BYTE**: Ein 8-Bit-Integer. ST04X bietet eine strukturierte Sicht auf 4 Bits, während ein BYTE in der Regel als eine unstrukturierte 8-Bit-Zahl behandelt wird. Die einzelnen Bits eines BYTE müssten über Bitmasken oder Bit-Operationen angesprochen werden, während bei ST04X jedes Bit direkt über seinen Namen zugänglich ist (z.B. `myST04X.X_00`).
+-   **Array von BOOL**: Ein Array von BOOLs (`ARRAY[0..3] OF BOOL`) bietet ebenfalls die Gruppierung, der Zugriff erfolgt jedoch über Indizes (`myArray[0]`), wohingegen ST04X den Zugriff über benannte Felder (`myST04X.X_00`) ermöglicht, was die Lesbarkeit verbessern kann.
 
 ## Fazit
 
@@ -74,4 +74,4 @@ ST04X ist ein nützlicher strukturierter Datentyp in 4diac, der die Verwaltung u
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

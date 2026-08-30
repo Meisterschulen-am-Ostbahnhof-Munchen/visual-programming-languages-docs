@@ -31,13 +31,13 @@ The block uses an adapter-based interface design. It does not have direct, tradi
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AI`): First analog input value for the addition operation.
-* **IN2** (Type: `adapter::types::unidirectional::AI`): Second analog input value for the addition operation.
-* **IN3** (Type: `adapter::types::unidirectional::AI`): Third analog input value for the addition operation.
+- **IN1** (Type: `adapter::types::unidirectional::AI`): First analog input value for the addition operation.
+- **IN2** (Type: `adapter::types::unidirectional::AI`): Second analog input value for the addition operation.
+- **IN3** (Type: `adapter::types::unidirectional::AI`): Third analog input value for the addition operation.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AI`): Output adapter that provides the calculated result of the addition.
+- **OUT** (Type: `adapter::types::unidirectional::AI`): Output adapter that provides the calculated result of the addition.
 
 ---
 
@@ -55,9 +55,9 @@ After successful calculation, the result value is passed to the output plug `OUT
 
 ## Technical Features
 
-* **Generic Function Block (FB):** The function block is internally typed as `GEN_AI_ADD`. This allows for flexible adaptation to different numeric data types (e.g., `INT`, `REAL`, `LREAL`), depending on the specific type defined by the connected adapters.
-* **Adapter Coupling:** By using unidirectional adapters (`unidirectional::AI`), signal routing in the application diagram is greatly simplified. Data and trigger events are bundled in a single connection line.
-* **Adapter Coupling:** The use of unidirectional adapters (`unidirectional::AI`) greatly simplifies signal routing in the application diagram. ---
+- **Generic Function Block (FB):** The function block is internally typed as `GEN_AI_ADD`. This allows for flexible adaptation to different numeric data types (e.g., `INT`, `REAL`, `LREAL`), depending on the specific type defined by the connected adapters.
+- **Adapter Coupling:** By using unidirectional adapters (`unidirectional::AI`), signal routing in the application diagram is greatly simplified. Data and trigger events are bundled in a single connection line.
+- **Adapter Coupling:** The use of unidirectional adapters (`unidirectional::AI`) greatly simplifies signal routing in the application diagram. ---
 
 ## State Overview
 
@@ -71,9 +71,9 @@ The function block operates purely event-driven:
 
 ## Application Scenarios
 
-* **Sensor Data Fusion:** Combining and summing three analog measured values (e.g., determining a total volume flow from three individual partial flows).
-* **Setpoint Calculation:** Calculation of an overall setpoint consisting of a base setpoint and two correction or offset values.
-* **Mixing Processes:** Weighting and combining analog control signals in process automation.
+- **Sensor Data Fusion:** Combining and summing three analog measured values (e.g., determining a total volume flow from three individual partial flows).
+- **Setpoint Calculation:** Calculation of an overall setpoint consisting of a base setpoint and two correction or offset values.
+- **Mixing Processes:** Weighting and combining analog control signals in process automation.
 
 ---
 

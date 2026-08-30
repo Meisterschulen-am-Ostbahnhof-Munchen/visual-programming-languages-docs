@@ -71,7 +71,7 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_095](../../../Uebungen/test_B/Uebungen_doc/Uebung_095.md)
+- [Uebung_095](../../../Uebungen/test_B/Uebungen_doc/Uebung_095.md)
 
 ## Fazit
 

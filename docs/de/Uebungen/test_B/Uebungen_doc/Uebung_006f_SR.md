@@ -49,7 +49,7 @@ Die folgenden Ereignis- und Datenverbindungen definieren den Ablauf der Übung:
 
 **Ereignisverbindungen:**
 
-- Die Ereignisausgänge der drei digitalen Eingänge (DigitalInput_S.IND, DigitalInput_R.IND, DigitalInput_CLK.IND) sind alle mit dem Ereigniseingang des Flipflops (SR_T_FF.REQ) verbunden.  
+- Die Ereignisausgänge der drei digitalen Eingänge (DigitalInput_S.IND, DigitalInput_R.IND, DigitalInput_CLK.IND) sind alle mit dem Ereigniseingang des Flipflops (SR_T_FF.REQ) verbunden.
   *Hinweis:* Dies bedeutet, dass jede Änderung an einem der Eingänge (S, R oder CLK) die Verarbeitung des Flipflops auslöst. In der Praxis sollte der Takt (CLK) den Hauptauslöser darstellen; die gleichzeitige Verknüpfung aller drei Eingänge ist hier als vereinfachte Übung gewählt.
 
 - Das Bestätigungsereignis des Flipflops (SR_T_FF.CNF) ist mit dem Ereigniseingang des Ausgangsbausteins (DigitalOutput_Q1.REQ) verbunden, sodass nach jeder Flipflop-Berechnung der Ausgang aktualisiert wird.
@@ -90,4 +90,4 @@ Die Übung *Uebung_006f_SR* vermittelt die praktische Anwendung eines set-domina
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

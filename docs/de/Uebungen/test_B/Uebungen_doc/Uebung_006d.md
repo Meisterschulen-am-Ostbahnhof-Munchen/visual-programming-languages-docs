@@ -20,16 +20,16 @@ Kombination von komplexen Eingangsereignissen (Doppelklick) mit Speicherbaustein
 
 ![Uebung_006d_network](./Uebung_006d_network.svg)
 
-  * **`I1` (Set)**: Konfiguriert auf `BUTTON_DOUBLE_CLICK`.
-  * **`I2` (Reset)**: Konfiguriert auf `BUTTON_SINGLE_CLICK`.
-  * **`E_SR`**: Der Speicherbaustein.
+  - **`I1` (Set)**: Konfiguriert auf `BUTTON_DOUBLE_CLICK`.
+  - **`I2` (Reset)**: Konfiguriert auf `BUTTON_SINGLE_CLICK`.
+  - **`E_SR`**: Der Speicherbaustein.
 
 -----
 
 ## Funktionsweise
 
-*   **Einschalten**: Erfordert eine bewusste Handlung des Nutzers (Doppelklick auf `I1`). Ein einfaches Berühren reicht nicht aus.
-*   **Ausschalten**: Muss im Bedarfsfall schnell und einfach gehen (einfacher Klick auf `I2`).
+-   **Einschalten**: Erfordert eine bewusste Handlung des Nutzers (Doppelklick auf `I1`). Ein einfaches Berühren reicht nicht aus.
+-   **Ausschalten**: Muss im Bedarfsfall schnell und einfach gehen (einfacher Klick auf `I2`).
 
 Das Flip-Flop speichert den Zustand zwischen diesen Ereignissen.
 

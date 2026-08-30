@@ -19,9 +19,9 @@ The main objective of this exercise is to demonstrate XOR logic with more than t
 
 The following blocks are used:
 
-* **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the hardware inputs `Input_I1` to `Input_I3`[cite: 1].
-* **`AX_XOR_3`**: An instance of type `AX_XOR_3`. [cite_start]This block performs the exclusive OR operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and outputs the result to the adapter output `OUT`[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This block controls the hardware output `Output_Q1`[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the hardware inputs `Input_I1` to `Input_I3`[cite: 1].
+- **`AX_XOR_3`**: An instance of type `AX_XOR_3`. [cite_start]This block performs the exclusive OR operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and outputs the result to the adapter output `OUT`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This block controls the hardware output `Output_Q1`[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 
@@ -43,9 +43,9 @@ The logic is defined by connecting the input blocks with the XOR logic block in 
 
 The three-input XOR logic behaves as follows:
 
-* The output is **TRUE** if exactly **one** input is active.
-* The output is **TRUE** if all **three** inputs are active.
-* The output is **FALSE** if no input or exactly two inputs are active.
+- The output is **TRUE** if exactly **one** input is active.
+- The output is **TRUE** if all **three** inputs are active.
+- The output is **FALSE** if no input or exactly two inputs are active.
 
 This corresponds to the mathematical definition of the XOR operation as odd parity.
 

@@ -32,14 +32,14 @@ Der Funktionsbaustein `AUI_SUB_2` dient zur Durchführung einer arithmetischen S
 
 #### **Sockets (Steckdosen / Eingänge)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN1** (Typ: `adapter::types::unidirectional::AUI`):
   Erster Eingangsadapter für die Subtraktion. Dieser repräsentiert den Minuenden (Wert, von dem subtrahiert wird).
-* **IN2** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN2** (Typ: `adapter::types::unidirectional::AUI`):
   Zweiter Eingangsadapter für die Subtraktion. Dieser repräsentiert den Subtrahenden (Wert, der subtrahiert wird).
 
 #### **Plugs (Stecker / Ausgänge)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUI`): 
+- **OUT** (Typ: `adapter::types::unidirectional::AUI`):
   Ausgangsadapter, der das Ergebnis der Subtraktion (die Differenz) zur weiteren Verwendung bereitstellt.
 
 ---
@@ -56,8 +56,8 @@ Sobald an den Eingangs-Adaptern `IN1` oder `IN2` eine Wertänderung signalisiert
 
 ## Technische Besonderheiten
 
-* **Generischer Typ:** Der Baustein basiert auf der generischen Klasse `GEN_AUI_SUB`. Dies erlaubt eine flexible Handhabung unterschiedlicher Datentypen, sofern diese vom zugrundeliegenden Adaptertyp `AUI` (Analog User Interface / Unidirectional) unterstützt werden.
-* **Kapselung:** Durch die Verwendung von unidirektionalen Adaptern werden Signalflüsse und die dazugehörigen Trigger-Events sauber gebündelt. Dies vereinfacht das Applikationsdesign in der 4diac IDE signifikant und reduziert die Anzahl der sichtbaren Verbindungslinien.
+- **Generischer Typ:** Der Baustein basiert auf der generischen Klasse `GEN_AUI_SUB`. Dies erlaubt eine flexible Handhabung unterschiedlicher Datentypen, sofern diese vom zugrundeliegenden Adaptertyp `AUI` (Analog User Interface / Unidirectional) unterstützt werden.
+- **Kapselung:** Durch die Verwendung von unidirektionalen Adaptern werden Signalflüsse und die dazugehörigen Trigger-Events sauber gebündelt. Dies vereinfacht das Applikationsdesign in der 4diac IDE signifikant und reduziert die Anzahl der sichtbaren Verbindungslinien.
 
 ---
 
@@ -73,9 +73,9 @@ Der Baustein selbst verwaltet keinen komplexen internen Zustand (zustandslos im 
 
 ## Anwendungsszenarien
 
-* **Differenzdruck- / Differenztemperaturmessung:** Berechnung der Abweichung zwischen zwei analogen Sensoren, deren Werte bereits als strukturierte Adapter-Signale vorliegen.
-* **Soll-Ist-Wert-Vergleich:** Subtraktion eines Istwerts von einem Sollwert zur Ermittlung der Regeldifferenz in Regelungskreisen.
-* **Nullpunktkompensation (Offset-Berechnung):** Abzug eines statischen oder dynamischen Offset-Wertes (über `IN2`) von einem Rohsignal (über `IN1`).
+- **Differenzdruck- / Differenztemperaturmessung:** Berechnung der Abweichung zwischen zwei analogen Sensoren, deren Werte bereits als strukturierte Adapter-Signale vorliegen.
+- **Soll-Ist-Wert-Vergleich:** Subtraktion eines Istwerts von einem Sollwert zur Ermittlung der Regeldifferenz in Regelungskreisen.
+- **Nullpunktkompensation (Offset-Berechnung):** Abzug eines statischen oder dynamischen Offset-Wertes (über `IN2`) von einem Rohsignal (über `IN1`).
 
 ---
 

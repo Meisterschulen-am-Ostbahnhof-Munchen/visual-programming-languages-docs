@@ -17,9 +17,9 @@ Dynamic adjustment of timer times at runtime.
 
 ![Uebung_020c2_network](./Uebung_020c2_network.svg)
 
-* **`Uebung_020c2_sub`**: A memory sub-app (as in Exercise 012a) that manages the numeric value entered by the user.
-* **`F_MULTIME`**: Multiplies a time value. Here, the numeric value (e.g., "5") is multiplied by the unit `T#1s` to create the data type `TIME` for the timer (e.g., 5 seconds).
-* **`E_TON`**: The actual delay block.
+- **`Uebung_020c2_sub`**: A memory sub-app (as in Exercise 012a) that manages the numeric value entered by the user.
+- **`F_MULTIME`**: Multiplies a time value. Here, the numeric value (e.g., "5") is multiplied by the unit `T#1s` to create the data type `TIME` for the timer (e.g., 5 seconds).
+- **`E_TON`**: The actual delay block.
 
 -----
 

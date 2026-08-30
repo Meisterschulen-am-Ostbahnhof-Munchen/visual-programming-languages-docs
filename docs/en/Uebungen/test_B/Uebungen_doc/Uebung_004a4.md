@@ -17,10 +17,10 @@ The objective is to understand sequential event processing. The `E_SPLIT` functi
 
 ![Uebung_004a4_network](./Uebung_004a4_network.svg)
 
-* **`DigitalInput_CLK_I1`**: The event generator (click button).
-* **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
-* **`E_T_FF_Q1` & `E_T_FF_Q2`**: Two independent flip-flops.
-* **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Two physical outputs.
+- **`DigitalInput_CLK_I1`**: The event generator (click button).
+- **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
+- **`E_T_FF_Q1` & `E_T_FF_Q2`**: Two independent flip-flops.
+- **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Two physical outputs.
 
 -----
 

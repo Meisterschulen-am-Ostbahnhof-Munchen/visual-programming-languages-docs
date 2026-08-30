@@ -60,12 +60,12 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_087](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
-* [Uebung_087a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
-* [Uebung_090a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
-* [Uebung_090a1_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
-* [Uebung_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
-* [Uebung_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
+- [Uebung_087](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Uebung_087a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Uebung_090a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
+- [Uebung_090a1_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
+- [Uebung_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
+- [Uebung_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 
 ## Fazit
 

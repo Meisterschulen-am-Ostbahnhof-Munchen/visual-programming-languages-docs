@@ -36,25 +36,25 @@ The data type `CF_INFO_T` is a passive data storage structure. It is used to sto
 
 ## Technical Features
 
-* **Typedef for ISOBUS:** Specifically designed for use in ISO 11783 environments (agricultural machinery).
-* **State Flags:** Contains several Boolean flags (`bIsAnnounced`, `bIsActive`) that represent the lifecycle and operating state of a function block.
-* **Initial Values:** Critical identifiers such as `s16Handle` and `u8SourceAddress` are initialized with defined constants (`UNVALID`, `NULL_A`) to ensure an invalid output state.
-* **Integration:** Uses the user-defined type `isobus::pgn::CF_NAME_T` to map the 64-bit ISOBUS name.
+- **Typedef for ISOBUS:** Specifically designed for use in ISO 11783 environments (agricultural machinery).
+- **State Flags:** Contains several Boolean flags (`bIsAnnounced`, `bIsActive`) that represent the lifecycle and operating state of a function block.
+- **Initial Values:** Critical identifiers such as `s16Handle` and `u8SourceAddress` are initialized with defined constants (`UNVALID`, `NULL_A`) to ensure an invalid output state.
+- **Integration:** Uses the user-defined type `isobus::pgn::CF_NAME_T` to map the 64-bit ISOBUS name.
 
 ## State Overview
 
 Since this is a data type and not an active function block, there is no state machine. The "state" is described by the combination of the included data fields, in particular by the flags:
 
-* **Invalid/Inactive:** `s16Handle == UNVALID`, `bIsAnnounced == FALSE`
-* **Valid & Active:** `s16Handle != UNVALID`, `bIsAnnounced == TRUE`, `bIsActive == TRUE`
-* **Valid & Faulty/Inactive:** `s16Handle != UNVALID`, `bIsActive == FALSE`
+- **Invalid/Inactive:** `s16Handle == UNVALID`, `bIsAnnounced == FALSE`
+- **Valid & Active:** `s16Handle != UNVALID`, `bIsAnnounced == TRUE`, `bIsActive == TRUE`
+- **Valid & Faulty/Inactive:** `s16Handle != UNVALID`, `bIsActive == FALSE`
 
 ## Application Scenarios
 
-* **Participant Management:** In an ISOBUS manager block that manages a list of all known network participants (`CF_INFO_T[]`).
-* **Diagnostics and Display:** Forwarding participant information to a diagnostic or display system to show the network status.
-* **Command Forwarding:** As a parameter for communication blocks to specifically address messages to a particular CF (identified by `u8SourceAddress` and `au8Name`).
-* **Filtering:** Logic blocks can use the fields `eIsoUserFunct` or `bExternalCf` to decide whether messages from a specific CF should be processed.
+- **Participant Management:** In an ISOBUS manager block that manages a list of all known network participants (`CF_INFO_T[]`).
+- **Diagnostics and Display:** Forwarding participant information to a diagnostic or display system to show the network status.
+- **Command Forwarding:** As a parameter for communication blocks to specifically address messages to a particular CF (identified by `u8SourceAddress` and `au8Name`).
+- **Filtering:** Logic blocks can use the fields `eIsoUserFunct` or `bExternalCf` to decide whether messages from a specific CF should be processed.
 
 ## ⚖️ Comparison with Similar Blocks
 
@@ -68,6 +68,6 @@ The data type `CF_INFO_T` is a fundamental and essential component for implement
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

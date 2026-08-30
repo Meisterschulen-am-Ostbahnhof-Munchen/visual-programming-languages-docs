@@ -24,16 +24,16 @@ This sub-application primarily uses an instance of a standard library function b
 
 The network for this exercise is designed as a **task (TODO)**.
 
-* **Network Status**:
-* The function block `E_TABLE_CTRL_1` has been placed in the network at coordinates `x=-3000, y=-1000`.
-* There are currently **no connections** (neither data nor events) between function blocks or interfaces.
-* A large comment block with the content **"TODO"** (at `x=-3100, y=-100`) indicates that the actual implementation of the control logic still needs to be completed.
-* **Learning Objectives**:
-* Understanding the interfaces of `E_TABLE_CTRL`.
-* Interconnecting events and data to implement sequence control.
-* **Procedure**:
+- **Network Status**:
+- The function block `E_TABLE_CTRL_1` has been placed in the network at coordinates `x=-3000, y=-1000`.
+- There are currently **no connections** (neither data nor events) between function blocks or interfaces.
+- A large comment block with the content **"TODO"** (at `x=-3100, y=-100`) indicates that the actual implementation of the control logic still needs to be completed.
+- **Learning Objectives**:
+- Understanding the interfaces of `E_TABLE_CTRL`.
+- Interconnecting events and data to implement sequence control.
+- **Procedure**:
 1. Analyze the required inputs and outputs of `E_TABLE_CTRL`.
-* 2. Connect the necessary event and data lines according to the task description (implicitly given here by the "TODO").
+- 2. Connect the necessary event and data lines according to the task description (implicitly given here by the "TODO").
 3. Configure the function block's parameters, if necessary.
 
 ## Summary

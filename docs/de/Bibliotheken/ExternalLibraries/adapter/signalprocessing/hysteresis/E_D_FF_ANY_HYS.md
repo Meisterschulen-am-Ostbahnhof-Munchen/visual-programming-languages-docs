@@ -13,24 +13,24 @@ Der Funktionsbaustein `E_D_FF_ANY_HYS` ist ein flankengetriggertes D-Flip-Flop (
 
 ### **Ereignis-Eingänge**
 
-*   **CLK**: Takt-Eingang (Clock). Bei Eintreffen dieses Ereignisses wird geprüft, ob sich der Eingangswert `D` im Vergleich zum aktuellen Ausgangswert `Q` um mindestens den Wert von `HYSTERESIS` geändert hat.
+-   **CLK**: Takt-Eingang (Clock). Bei Eintreffen dieses Ereignisses wird geprüft, ob sich der Eingangswert `D` im Vergleich zum aktuellen Ausgangswert `Q` um mindestens den Wert von `HYSTERESIS` geändert hat.
 
 ### **Ereignis-Ausgänge**
 
-*   **EO**: Ereignis-Ausgang (Event Out). Wird ausgelöst, wenn ein Takt-Ereignis (`CLK`) zu einer tatsächlichen Wertänderung und Aktualisierung des Ausgangs `Q` geführt hat.
+-   **EO**: Ereignis-Ausgang (Event Out). Wird ausgelöst, wenn ein Takt-Ereignis (`CLK`) zu einer tatsächlichen Wertänderung und Aktualisierung des Ausgangs `Q` geführt hat.
 
 ### **Daten-Eingänge**
 
-*   **D** (`ANY_NUM`): Der aktuelle, einzulesende Datenwert.
-*   **HYSTERESIS** (`ANY_NUM`): Das Hysterese-Band. Gibt die Mindestdifferenz an, die zwischen `D` und `Q` liegen muss, damit der Ausgang aktualisiert wird.
+-   **D** (`ANY_NUM`): Der aktuelle, einzulesende Datenwert.
+-   **HYSTERESIS** (`ANY_NUM`): Das Hysterese-Band. Gibt die Mindestdifferenz an, die zwischen `D` und `Q` liegen muss, damit der Ausgang aktualisiert wird.
 
 ### **Daten-Ausgänge**
 
-*   **Q** (`ANY_NUM`): Der gespeicherte (gelatchte) Wert.
+-   **Q** (`ANY_NUM`): Der gespeicherte (gelatchte) Wert.
 
 ### **Adapter**
 
-*   *Keine Adapter vorhanden.*
+-   *Keine Adapter vorhanden.*
 
 ## Funktionsweise
 
@@ -44,8 +44,8 @@ Der Funktionsbaustein arbeitet intern mit einer Execution Control Chart (ECC) un
 
 ## Technische Besonderheiten
 
-*   **Generischer Datentyp**: Durch die Verwendung des Datentyps `ANY_NUM` für die Ein- und Ausgänge ist der Baustein hochgradig wiederverwendbar und kann mit verschiedenen numerischen Datentypen (z. B. `INT`, `REAL`, `LREAL`) verschaltet werden.
-*   **Effiziente Differenzberechnung**: Die Differenzermittlung über `SUB(MAX(D, Q), MIN(D, Q))` stellt sicher, dass immer ein positiver Absolutwert für den Vergleich mit der Hysterese herangezogen wird, unabhängig davon, ob der neue Wert größer oder kleiner als der alte Wert ist.
+-   **Generischer Datentyp**: Durch die Verwendung des Datentyps `ANY_NUM` für die Ein- und Ausgänge ist der Baustein hochgradig wiederverwendbar und kann mit verschiedenen numerischen Datentypen (z. B. `INT`, `REAL`, `LREAL`) verschaltet werden.
+-   **Effiziente Differenzberechnung**: Die Differenzermittlung über `SUB(MAX(D, Q), MIN(D, Q))` stellt sicher, dass immer ein positiver Absolutwert für den Vergleich mit der Hysterese herangezogen wird, unabhängig davon, ob der neue Wert größer oder kleiner als der alte Wert ist.
 
 ## Zustandsübersicht
 
@@ -55,18 +55,18 @@ Der Funktionsbaustein arbeitet intern mit einer Execution Control Chart (ECC) un
                             +--( CLK [Differenz >= HYSTERESIS] )--> (erneuter Aufruf von SET)
 ```
 
-*   **START**: Wartezustand vor dem ersten Takt.
-*   **SET**: Zustand, in dem der Eingangswert übernommen und ausgegeben wird. Wird bei jedem gültigen Takt (unter Berücksichtigung der Hysterese) zyklisch wieder aufgerufen.
+-   **START**: Wartezustand vor dem ersten Takt.
+-   **SET**: Zustand, in dem der Eingangswert übernommen und ausgegeben wird. Wird bei jedem gültigen Takt (unter Berücksichtigung der Hysterese) zyklisch wieder aufgerufen.
 
 ## Anwendungsszenarien
 
-*   **Rauschfilterung für analoge Sensorwerte**: Reduzierung von Event-Fluten in verteilten Systemen. Wenn ein Sensor (z. B. Temperatursensor) kontinuierlich leicht schwankende Werte liefert, verhindert die Hysterese, dass bei minimalen Änderungen ständig neue Steuerungsereignisse im System verteilt werden.
-*   **Grenzwertüberwachung mit Totband**: Vermeidung von prellenden Signalen bei der Übertragung von Prozesswerten an Visualisierungen (HMI) oder Datenbanken.
+-   **Rauschfilterung für analoge Sensorwerte**: Reduzierung von Event-Fluten in verteilten Systemen. Wenn ein Sensor (z. B. Temperatursensor) kontinuierlich leicht schwankende Werte liefert, verhindert die Hysterese, dass bei minimalen Änderungen ständig neue Steuerungsereignisse im System verteilt werden.
+-   **Grenzwertüberwachung mit Totband**: Vermeidung von prellenden Signalen bei der Übertragung von Prozesswerten an Visualisierungen (HMI) oder Datenbanken.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **E_D_FF**: Das Standard-D-Flip-Flop reagiert meist auf boolescher Ebene oder speichert Werte bei jedem Takt bedingungslos ab. `E_D_FF_ANY_HYS` filtert die Werte zusätzlich durch die Hysterese-Bedingung.
-*   **Hysterese-Bausteine (z.B. mit booleschem Ausgang)**: Typische Hysterese-Bausteine vergleichen einen Wert mit festen Schwellenwerten und liefern ein `BOOL`-Signal (z. B. Schwellwertschalter). `E_D_FF_ANY_HYS` hingegen gibt den numerischen Wert selbst weiter, sobald dieser sich signifikant geändert hat.
+-   **E_D_FF**: Das Standard-D-Flip-Flop reagiert meist auf boolescher Ebene oder speichert Werte bei jedem Takt bedingungslos ab. `E_D_FF_ANY_HYS` filtert die Werte zusätzlich durch die Hysterese-Bedingung.
+-   **Hysterese-Bausteine (z.B. mit booleschem Ausgang)**: Typische Hysterese-Bausteine vergleichen einen Wert mit festen Schwellenwerten und liefern ein `BOOL`-Signal (z. B. Schwellwertschalter). `E_D_FF_ANY_HYS` hingegen gibt den numerischen Wert selbst weiter, sobald dieser sich signifikant geändert hat.
 
 ## Fazit
 

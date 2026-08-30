@@ -6,7 +6,7 @@ This article describes the logiBUS® exercise `Uebung_094`. Here, a protection f
 
 ![Uebung_094_network](./Uebung_094_network.svg)
 
-* [Constitutional Art 1946: Bavaria's Educational Mission between Patriotism, Democracy, and Reconciliation between Nations ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verfassungskunst-1946-Bayerns-Bildungsauftrag-zwischen-Heimatliebe--Demokratie-und-Vlkervershnung-e38dj0l)
+- [Constitutional Art 1946: Bavaria's Educational Mission between Patriotism, Democracy, and Reconciliation between Nations ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verfassungskunst-1946-Bayerns-Bildungsauftrag-zwischen-Heimatliebe--Demokratie-und-Vlkervershnung-e38dj0l)
 
 ----
 
@@ -20,8 +20,8 @@ Using the building block `E_PERMIT`. The objective is to make the execution of a
 
 [cite_start]The subapplication `Uebung_094.SUB` uses a switch to enable a push button[cite: 1].
 
-* Push button **I2** provides the trigger pulse.
-* Switch **I1** provides the enable signal (`PERMIT`).
-* Only when **I1** is set to `TRUE` does the function block forward the click from **I2** to the flip-flop. If the switch is off, the event is ignored.
+- Push button **I2** provides the trigger pulse.
+- Switch **I1** provides the enable signal (`PERMIT`).
+- Only when **I1** is set to `TRUE` does the function block forward the click from **I2** to the flip-flop. If the switch is off, the event is ignored.
 
 This is a simple but effective method for implementing interlocks.

@@ -20,17 +20,17 @@ Realisierung einer Schaltung mit getrennten Tastern für "Ein" und "Aus".
 
 ![Uebung_006_AX_network](./Uebung_006_AX_network.svg)
 
-  * **`I1` (Set)**: Taster zum Einschalten.
-  * **`I2` (Reset)**: Taster zum Ausschalten.
-  * **`AX_SR`**: Ein SR-Flip-Flop (Set dominant, falls gleichzeitig, aber hier durch Events getrennt).
+  - **`I1` (Set)**: Taster zum Einschalten.
+  - **`I2` (Reset)**: Taster zum Ausschalten.
+  - **`AX_SR`**: Ein SR-Flip-Flop (Set dominant, falls gleichzeitig, aber hier durch Events getrennt).
 
 -----
 
 ## Funktionsweise
 
-*   Ein Klick auf `I1` sendet ein Event an `S` -> Ausgang `Q` wird TRUE.
-*   Ein Klick auf `I2` sendet ein Event an `R` -> Ausgang `Q` wird FALSE.
-*   Mehrmaliges Drücken von `I1` ändert nichts, wenn es schon an ist.
+-   Ein Klick auf `I1` sendet ein Event an `S` -> Ausgang `Q` wird TRUE.
+-   Ein Klick auf `I2` sendet ein Event an `R` -> Ausgang `Q` wird FALSE.
+-   Mehrmaliges Drücken von `I1` ändert nichts, wenn es schon an ist.
 
 -----
 

@@ -32,18 +32,18 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Die Ausgabe des berechneten We
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster Multiplikand.
-*   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter Multiplikand.
-*   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter Multiplikand.
-*   **IN4** (Typ: `adapter::types::unidirectional::AI`): Vierter Multiplikand.
+-   **IN1** (Typ: `adapter::types::unidirectional::AI`): Erster Multiplikand.
+-   **IN2** (Typ: `adapter::types::unidirectional::AI`): Zweiter Multiplikand.
+-   **IN3** (Typ: `adapter::types::unidirectional::AI`): Dritter Multiplikand.
+-   **IN4** (Typ: `adapter::types::unidirectional::AI`): Vierter Multiplikand.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AI`): Produkt der Multiplikation aller vier Eingänge ($OUT = IN1 \cdot IN2 \cdot IN3 \cdot IN4$).
+-   **OUT** (Typ: `adapter::types::unidirectional::AI`): Produkt der Multiplikation aller vier Eingänge ($OUT = IN1 \cdot IN2 \cdot IN3 \cdot IN4$).
 
 ## Funktionsweise
 
-Sobald an einem der Eingangs-Adapter (`IN1` bis `IN4`) ein neues Ereignis signalisiert, dass sich die Daten aktualisiert haben, liest der Funktionsbaustein die analogen Werte der vier Adapter aus. 
+Sobald an einem der Eingangs-Adapter (`IN1` bis `IN4`) ein neues Ereignis signalisiert, dass sich die Daten aktualisiert haben, liest der Funktionsbaustein die analogen Werte der vier Adapter aus.
 
 Die Berechnung erfolgt nach der Formel:
 $$\text{Ergebnis} = \text{Wert}(IN1) \cdot \text{Wert}(IN2) \cdot \text{Wert}(IN3) \cdot \text{Wert}(IN4)$$
@@ -52,9 +52,9 @@ Das Ergebnis dieser Berechnung wird an den Ausgangs-Adapter `OUT` übergeben, un
 
 ## Technische Besonderheiten
 
-*   **Generische Klasse:** Der Baustein basiert intern auf der generischen Klasse `GEN_AI_MUL`. Dies ermöglicht eine flexible Verarbeitung der Datenströme unabhängig von spezifischen Hardware-Implementierungen.
-*   **Unidirektionale Adapter:** Durch die Verwendung des Typs `adapter::types::unidirectional::AI` fließen Daten und Trigger-Signale in nur eine Richtung (vom Sender zum Empfänger). Das vereinfacht das Signal-Design und vermeidet Rückkopplungsschleifen.
-*   **Kompakte Struktur:** Durch die Verarbeitung von vier Eingängen in einem einzigen Baustein wird das Kaskadieren mehrerer Multiplikationsbausteine überflüssig.
+-   **Generische Klasse:** Der Baustein basiert intern auf der generischen Klasse `GEN_AI_MUL`. Dies ermöglicht eine flexible Verarbeitung der Datenströme unabhängig von spezifischen Hardware-Implementierungen.
+-   **Unidirektionale Adapter:** Durch die Verwendung des Typs `adapter::types::unidirectional::AI` fließen Daten und Trigger-Signale in nur eine Richtung (vom Sender zum Empfänger). Das vereinfacht das Signal-Design und vermeidet Rückkopplungsschleifen.
+-   **Kompakte Struktur:** Durch die Verarbeitung von vier Eingängen in einem einzigen Baustein wird das Kaskadieren mehrerer Multiplikationsbausteine überflüssig.
 
 ## Zustandsübersicht
 
@@ -65,14 +65,14 @@ Da es sich bei `AI_MUL_4` um einen rein mathematischen, daten- und ereignisgeste
 
 ## Anwendungsszenarien
 
-*   **Skalierung und Kalibrierung:** Berechnung von zusammengesetzten Korrekturfaktoren für analoge Sensorwerte (z. B. Sensorwert $\cdot$ Kalibrierungsfaktor $\cdot$ Temperaturkompensation $\cdot$ Einheitenumrechnung).
-*   **Physikalische Berechnungen:** Berechnung von Werten, die von mehreren analogen Faktoren abhängen, wie beispielsweise Volumenströme oder elektrische Leistungen unter Einbeziehung verschiedener Wirkungsgrade.
-*   **Kaskadierte Verstärkungsglieder:** Einsatz in Regelungskreisen, bei denen mehrere Verstärkungsfaktoren (Gains) nacheinander auf ein analoges Signal angewendet werden müssen.
+-   **Skalierung und Kalibrierung:** Berechnung von zusammengesetzten Korrekturfaktoren für analoge Sensorwerte (z. B. Sensorwert $\cdot$ Kalibrierungsfaktor $\cdot$ Temperaturkompensation $\cdot$ Einheitenumrechnung).
+-   **Physikalische Berechnungen:** Berechnung von Werten, die von mehreren analogen Faktoren abhängen, wie beispielsweise Volumenströme oder elektrische Leistungen unter Einbeziehung verschiedener Wirkungsgrade.
+-   **Kaskadierte Verstärkungsglieder:** Einsatz in Regelungskreisen, bei denen mehrere Verstärkungsfaktoren (Gains) nacheinander auf ein analoges Signal angewendet werden müssen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard-MUL (IEC 61131-3):** Klassische Multiplikationsbausteine arbeiten meist nur mit elementaren Datentypen (z. B. `REAL`, `INT`) und benötigen separate Event-Leitungen (`REQ` / `CNF`). Zudem unterstützen sie oft standardmäßig nur zwei Eingänge. `AI_MUL_4` hingegen verarbeitet vier Eingänge direkt und nutzt Adapter zur Kapselung, was das Netzwerklayout übersichtlicher macht.
-*   **AI_MUL_2:** Ein ähnlicher adapterbasierter Baustein, jedoch nur für zwei Eingänge. `AI_MUL_4` spart bei komplexeren Berechnungen mit bis zu vier Faktoren zusätzlichen Verdrahtungsaufwand und Baustein-Instanzen.
+-   **Standard-MUL (IEC 61131-3):** Klassische Multiplikationsbausteine arbeiten meist nur mit elementaren Datentypen (z. B. `REAL`, `INT`) und benötigen separate Event-Leitungen (`REQ` / `CNF`). Zudem unterstützen sie oft standardmäßig nur zwei Eingänge. `AI_MUL_4` hingegen verarbeitet vier Eingänge direkt und nutzt Adapter zur Kapselung, was das Netzwerklayout übersichtlicher macht.
+-   **AI_MUL_2:** Ein ähnlicher adapterbasierter Baustein, jedoch nur für zwei Eingänge. `AI_MUL_4` spart bei komplexeren Berechnungen mit bis zu vier Faktoren zusätzlichen Verdrahtungsaufwand und Baustein-Instanzen.
 
 ## Änderungserkennung
 

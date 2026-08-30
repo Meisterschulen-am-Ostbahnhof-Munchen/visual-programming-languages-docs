@@ -16,7 +16,7 @@ Diese Übung demonstriert die Steuerung eines PWM-Ausgangs (logiBUS Output Q4) d
 - **Parameter**:
   - `QI` = `TRUE`
   - `u16ObjId` = `InputNumber_PWM_Value` (verweist auf eine im Projekt definierte Numeric-Value-Instanz)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der FB liest den vom Benutzer eingegebenen numerischen Wert (z. B. aus einem HMI-Eingabefeld) und stellt diesen über seine Adapter-Schnittstelle (`IN`) bereit. Die Ausgabe erfolgt erst, nachdem die Eingabe mit „OK“ bestätigt wurde. Die Ereignissteuerung wird implizit über den Adapter abgewickelt.
 
 ### Sub-Bausteine: `PWMOutput_Q4`
@@ -26,7 +26,7 @@ Diese Übung demonstriert die Steuerung eines PWM-Ausgangs (logiBUS Output Q4) d
 - **Parameter**:
   - `QI` = `TRUE`
   - `Output` = `Output_Q4` (logischer Name des physikalischen PWM-Ausgangs am logiBUS-Modul)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der FB empfängt über seinen Adapter-Eingang (`OUT`) den aktuellen Sollwert (z. B. eine Zahl von 0 bis 1000 o. ä.) und stellt diesen als PWM-Signal am spezifizierten Kanal `Output_Q4` zur Verfügung. Der Wert entspricht dem Tastverhältnis der PWM.
 
 ## Programmablauf und Verbindungen
@@ -38,7 +38,7 @@ Der Netzwerkablauf besteht aus zwei Funktionsbausteinen, die ausschließlich üb
 
 Die Adapter-Verbindung überträgt den numerischen Wert einschließlich der zugehörigen Ereignissteuerung. Sobald der Benutzer im HMI den Wert bestätigt, wird das Ereignis über den Adapter an den PWM-Ausgangsbaustein weitergeleitet, der daraufhin das PWM-Signal aktualisiert.
 
-**Hinweis** (aus dem Kommentar im Netzwerk):  
+**Hinweis** (aus dem Kommentar im Netzwerk):
 Das Ereignis wird erst dann über den Adapter gesendet, wenn die numerische Eingabe mit „OK“ quittiert wird – nicht bereits bei einem Tastendruck oder einer Änderung des Eingabefeldes. Dies ist bei der Planung der Bedienoberfläche zu berücksichtigen.
 
 | Verbindung | Von | Nach |
@@ -53,4 +53,4 @@ Die Übung `Uebung_034a1_Q4_AX` verbindet einen numerischen Eingabe-FB (`Numeric
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

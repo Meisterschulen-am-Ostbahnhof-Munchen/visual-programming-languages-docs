@@ -70,19 +70,19 @@ These modules process the signals logically.
 The circuit implements a classic reversing contactor control with a special feature in the switching mechanism using push-button interlocking and a time delay.
 
 1. **Start Direction 1 (Q5):**
-* The signal from **Input_I1** sets the memory **AX_SR_A**.
-* The output of **AX_SR_A** is routed directly to **Output_Q5** via a splitter (**AX_SPLIT_2_A**). The motor runs in direction 1.
+- The signal from **Input_I1** sets the memory **AX_SR_A**.
+- The output of **AX_SR_A** is routed directly to **Output_Q5** via a splitter (**AX_SPLIT_2_A**). The motor runs in direction 1.
 2. **Switching / Start Direction 2 (Q6):**
-* The signal from **Input_I2** is routed to a splitter (**AX_SPLIT_2**).
-* **Branch 1:** The signal immediately resets the memory **AX_SR_A**. This immediately switches off **Output_Q5**.
-* **Branch 2:** The signal starts the timer **AX_TON**. After 50 ms (parameter `PT`), the memory **AX_SR_B** is set.
-* The output of **AX_SR_B** activates **Output_Q6** via **AX_SPLIT_2_B**. The motor now runs in direction 2.
-* *Note:* The 50ms delay serves as a locking time to prevent a short circuit between the phases during direct switching.
+- The signal from **Input_I2** is routed to a splitter (**AX_SPLIT_2**).
+- **Branch 1:** The signal immediately resets the memory **AX_SR_A**. This immediately switches off **Output_Q5**.
+- **Branch 2:** The signal starts the timer **AX_TON**. After 50 ms (parameter `PT`), the memory **AX_SR_B** is set.
+- The output of **AX_SR_B** activates **Output_Q6** via **AX_SPLIT_2_B**. The motor now runs in direction 2.
+- *Note:* The 50ms delay serves as a locking time to prevent a short circuit between the phases during direct switching.
 3. **Stop Direction 2:**
-* The signal from **Input_I3** resets the memory **AX_SR_B**, which switches off **Output_Q6**.
+- The signal from **Input_I3** resets the memory **AX_SR_B**, which switches off **Output_Q6**.
 4. **Operating Indicator (Q56):**
-* The signals from both directions of rotation (coming from splitters A and B) are combined in the **AX_OR_2** function block.
-* As soon as either Q5 or Q6 is active, **Output_Q56** is activated. This serves as an indicator that the motor is running.
+- The signals from both directions of rotation (coming from splitters A and B) are combined in the **AX_OR_2** function block.
+- As soon as either Q5 or Q6 is active, **Output_Q56** is activated. This serves as an indicator that the motor is running.
 *
 ## Summary
 
@@ -92,6 +92,6 @@ The `Uebung_160b2_AX` demonstrates advanced motor control using adapter blocks. 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

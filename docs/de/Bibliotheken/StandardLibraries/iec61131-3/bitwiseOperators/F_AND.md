@@ -61,8 +61,8 @@ Der `F_AND`-Block führt eine bitweise UND-Verknüpfung zwischen den Eingangsvar
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a2.md)
-* [Uebung_002a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
+- [Uebung_002a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a2.md)
+- [Uebung_002a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
 
 ## Fazit
 

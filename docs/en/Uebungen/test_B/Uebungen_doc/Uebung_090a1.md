@@ -17,15 +17,15 @@ Using the function block `F_MUX_2` (multiplexer). It shows how to switch between
 
 ![Uebung_090a1_network](./Uebung_090a1_network.svg)
 
-* **`I1` & `I2` (Sources)**: The data sources.
-* **`I4` (Selector)**: Determines which source is enabled.
-* **`F_MUX_2`**: The multiplexer block.
+- **`I1` & `I2` (Sources)**: The data sources.
+- **`I4` (Selector)**: Determines which source is enabled.
+- **`F_MUX_2`**: The multiplexer block.
 
 -----
 
 ## Functionality
 
-* If button **I4** is not pressed (K=0) ➡️ The state of **I1** is passed to output `Q1`.
-* If button **I4** is pressed (K=1) ➡️ The state of **I2** is passed to output `Q1`.
+- If button **I4** is not pressed (K=0) ➡️ The state of **I1** is passed to output `Q1`.
+- If button **I4** is pressed (K=1) ➡️ The state of **I2** is passed to output `Q1`.
 
 This allows switching between operating responsibilities (e.g., between local and remote control).

@@ -63,7 +63,7 @@ Ideal for simple linear scaling without additional logic.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_042](../../../Uebungen/test_B/Uebungen_doc/Uebung_042.md)
+- [Exercise_042](../../../Uebungen/test_B/Uebungen_doc/Uebung_042.md)
 
 ## Conclusion
 

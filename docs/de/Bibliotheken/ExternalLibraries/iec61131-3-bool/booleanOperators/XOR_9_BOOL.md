@@ -13,27 +13,27 @@ Der Funktionsblock verfügt über ein einfaches ereignisgesteuertes Interface mi
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Normal Execution Request):** Dieses Ereignis löst die Berechnung der XOR-Funktion aus. Es ist mit allen neun Dateneingängen (`IN1` bis `IN9`) verknüpft.
+-   **REQ (Normal Execution Request):** Dieses Ereignis löst die Berechnung der XOR-Funktion aus. Es ist mit allen neun Dateneingängen (`IN1` bis `IN9`) verknüpft.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Execution Confirmation):** Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
+-   **CNF (Execution Confirmation):** Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Datenausgang `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
 
-*   **IN1 (XOR input 1):** Boolescher Eingang 1.
-*   **IN2 (XOR input 2):** Boolescher Eingang 2.
-*   **IN3 (XOR input 3):** Boolescher Eingang 3.
-*   **IN4 (XOR input 4):** Boolescher Eingang 4.
-*   **IN5 (XOR input 5):** Boolescher Eingang 5.
-*   **IN6 (XOR input 6):** Boolescher Eingang 6.
-*   **IN7 (XOR input 7):** Boolescher Eingang 7.
-*   **IN8 (XOR input 8):** Boolescher Eingang 8.
-*   **IN9 (XOR input 9):** Boolescher Eingang 9.
+-   **IN1 (XOR input 1):** Boolescher Eingang 1.
+-   **IN2 (XOR input 2):** Boolescher Eingang 2.
+-   **IN3 (XOR input 3):** Boolescher Eingang 3.
+-   **IN4 (XOR input 4):** Boolescher Eingang 4.
+-   **IN5 (XOR input 5):** Boolescher Eingang 5.
+-   **IN6 (XOR input 6):** Boolescher Eingang 6.
+-   **IN7 (XOR input 7):** Boolescher Eingang 7.
+-   **IN8 (XOR input 8):** Boolescher Eingang 8.
+-   **IN9 (XOR input 9):** Boolescher Eingang 9.
 
 ### **Daten-Ausgänge**
 
-*   **OUT (XOR result):** Boolesches Ergebnis der n-stelligen XOR-Verknüpfung aller aktiven Eingänge.
+-   **OUT (XOR result):** Boolesches Ergebnis der n-stelligen XOR-Verknüpfung aller aktiven Eingänge.
 
 ### **Adapter**
 
@@ -47,9 +47,9 @@ Die mathematische Beschreibung lautet: `OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der FB ist als generische Funktion (`GEN_XOR`) gekennzeichnet, was bedeutet, dass er als Basis für die Ableitung spezifischer XOR-Bausteine mit einer festen Anzahl von Eingängen dienen kann.
-*   **Fest verdrahtete Logik:** Die Verknüpfung erfolgt über alle neun Eingänge. Für Anwendungen mit weniger benötigten Eingängen müssen die nicht genutzten Eingänge auf einen definierten Wert (typischerweise `FALSE`) gesetzt werden.
-*   **Ereignisgesteuerte Ausführung:** Die Berechnung erfolgt nur bei Auftreten des `REQ`-Ereignisses, was eine ressourcenschonende und deterministische Abarbeitung ermöglicht.
+-   **Generischer Baustein:** Der FB ist als generische Funktion (`GEN_XOR`) gekennzeichnet, was bedeutet, dass er als Basis für die Ableitung spezifischer XOR-Bausteine mit einer festen Anzahl von Eingängen dienen kann.
+-   **Fest verdrahtete Logik:** Die Verknüpfung erfolgt über alle neun Eingänge. Für Anwendungen mit weniger benötigten Eingängen müssen die nicht genutzten Eingänge auf einen definierten Wert (typischerweise `FALSE`) gesetzt werden.
+-   **Ereignisgesteuerte Ausführung:** Die Berechnung erfolgt nur bei Auftreten des `REQ`-Ereignisses, was eine ressourcenschonende und deterministische Abarbeitung ermöglicht.
 
 ## Zustandsübersicht
 
@@ -57,17 +57,17 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Anwendungsszenarien
 
-*   **Paritätsprüfung:** Überwachung, ob eine ungerade Anzahl von Sensoren (z.B. Grenzwertüberwachungen, Sicherheitsschaltern) einen Alarmzustand meldet.
-*   **Auswahl- oder Wechsellogik:** Steuerung, bei der eine Aktion genau dann ausgeführt werden soll, wenn sich der Zustand einer ungeraden Anzahl von Bedingungen geändert hat.
-*   **Fehlererkennung in redundanten Systemen:** Einfache Plausibilitätskontrolle bei Systemen mit mehreren redundanten Kanälen.
-*   **Verschlüsselungs- und Codierungsverfahren:** Als grundlegende Komponente in einfachen kryptografischen oder fehlerkorrigierenden Codes.
+-   **Paritätsprüfung:** Überwachung, ob eine ungerade Anzahl von Sensoren (z.B. Grenzwertüberwachungen, Sicherheitsschaltern) einen Alarmzustand meldet.
+-   **Auswahl- oder Wechsellogik:** Steuerung, bei der eine Aktion genau dann ausgeführt werden soll, wenn sich der Zustand einer ungeraden Anzahl von Bedingungen geändert hat.
+-   **Fehlererkennung in redundanten Systemen:** Einfache Plausibilitätskontrolle bei Systemen mit mehreren redundanten Kanälen.
+-   **Verschlüsselungs- und Codierungsverfahren:** Als grundlegende Komponente in einfachen kryptografischen oder fehlerkorrigierenden Codes.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Standard XOR-Bausteine (z.B., XOR, E_XOR):** Diese haben typischerweise nur zwei Eingänge. `XOR_9_BOOL` erweitert diese Funktion auf bis zu neun Eingänge in einem einzigen Baustein.
-*   **ODER-Bausteine (OR) / UND-Bausteine (AND):** Liefern ein `TRUE`, wenn mindestens ein bzw. alle Eingänge `TRUE` sind. Die XOR-Logik ist spezifischer (ungerade Anzahl).
-*   **Paritätsbausteine:** Spezialisierte Blöcke zur Paritätsberechnung, die oft direkt für Datenworte (BYTE, WORD) arbeiten. `XOR_9_BOOL` arbeitet auf einzelnen Booleschen Bits und ist flexibler in der Eingangsanzahl.
-*   **Kombinatorische Logikbausteine (GEN_AND, GEN_OR):** Ähnliche generische Bausteine für andere logische Grundverknüpfungen.
+-   **Standard XOR-Bausteine (z.B., XOR, E_XOR):** Diese haben typischerweise nur zwei Eingänge. `XOR_9_BOOL` erweitert diese Funktion auf bis zu neun Eingänge in einem einzigen Baustein.
+-   **ODER-Bausteine (OR) / UND-Bausteine (AND):** Liefern ein `TRUE`, wenn mindestens ein bzw. alle Eingänge `TRUE` sind. Die XOR-Logik ist spezifischer (ungerade Anzahl).
+-   **Paritätsbausteine:** Spezialisierte Blöcke zur Paritätsberechnung, die oft direkt für Datenworte (BYTE, WORD) arbeiten. `XOR_9_BOOL` arbeitet auf einzelnen Booleschen Bits und ist flexibler in der Eingangsanzahl.
+-   **Kombinatorische Logikbausteine (GEN_AND, GEN_OR):** Ähnliche generische Bausteine für andere logische Grundverknüpfungen.
 
 ## Fazit
 

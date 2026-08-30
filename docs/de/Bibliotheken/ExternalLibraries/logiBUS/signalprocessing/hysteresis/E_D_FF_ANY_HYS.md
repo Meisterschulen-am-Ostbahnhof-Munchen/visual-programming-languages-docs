@@ -47,17 +47,17 @@ In jedem weiteren Aufruf von `CLK` im Zustand `SET` wird geprüft, ob die absolu
 
 `GE(SUB(MAX(D, Q), MIN(D, Q)), HYSTERESIS)`
 
-*   `MAX(D, Q)` und `MIN(D, Q)` liefern die größere bzw. kleinere der beiden Zahlen.
-*   `SUB(...)` berechnet die positive Differenz (Betrag).
-*   `GE(...)` prüft, ob diese Differenz ≥ `HYSTERESIS` ist.
+-   `MAX(D, Q)` und `MIN(D, Q)` liefern die größere bzw. kleinere der beiden Zahlen.
+-   `SUB(...)` berechnet die positive Differenz (Betrag).
+-   `GE(...)` prüft, ob diese Differenz ≥ `HYSTERESIS` ist.
 
 Nur wenn diese Bedingung **wahr** ist, wird der Algorithmus `LATCH` erneut ausgeführt (Q := D) und `EO` gesendet. Ist die Bedingung falsch, bleibt `Q` unverändert und es wird kein Ereignis ausgegeben. Der Zustand bleibt in beiden Fällen `SET`.
 
 ## Technische Besonderheiten
 
-*   **Generischer Datentyp:** Die Ein- und Ausgänge `D`, `HYSTERESIS` und `Q` sind als `ANY_NUM` deklariert. Der Baustein kann daher mit beliebigen numerischen IEC-61499-Typen (z. B. `INT`, `REAL`, `LREAL`) verwendet werden, solange alle drei Größen den gleichen konkreten Typ besitzen.
-*   **Hysterese-Funktion:** Die Hysterese wird als Betrag der Differenz zwischen altem und neuem Wert realisiert. Dadurch ist die Schaltrichtung egal – ein Überschreiten des Schwellwerts in beide Richtungen löst eine Übernahme aus.
-*   **Initialverhalten:** Beim ersten `CLK` nach dem Start wird der Wert immer übernommen (keine Hysterese-Prüfung). Dies entspricht einer Initialisierung des Ausgangs.
+-   **Generischer Datentyp:** Die Ein- und Ausgänge `D`, `HYSTERESIS` und `Q` sind als `ANY_NUM` deklariert. Der Baustein kann daher mit beliebigen numerischen IEC-61499-Typen (z. B. `INT`, `REAL`, `LREAL`) verwendet werden, solange alle drei Größen den gleichen konkreten Typ besitzen.
+-   **Hysterese-Funktion:** Die Hysterese wird als Betrag der Differenz zwischen altem und neuem Wert realisiert. Dadurch ist die Schaltrichtung egal – ein Überschreiten des Schwellwerts in beide Richtungen löst eine Übernahme aus.
+-   **Initialverhalten:** Beim ersten `CLK` nach dem Start wird der Wert immer übernommen (keine Hysterese-Prüfung). Dies entspricht einer Initialisierung des Ausgangs.
 
 ## Zustandsübersicht
 
@@ -70,17 +70,17 @@ Der Funktionsblock enthält einen sehr einfachen Automaten mit zwei Zuständen:
 
 **Transitionen:**
 
-*   `START` → `SET` : bei jedem `CLK` (ohne Bedingung).
-*   `SET` → `SET` : bei `CLK` **und** erfüllter Hysterese-Bedingung (d. h. `GE(SUB(MAX(D,Q), MIN(D,Q)), HYSTERESIS) == true`). Dann wird `LATCH` ausgeführt und `EO` ausgegeben.
-*   `SET` → `SET` : bei `CLK` **ohne** erfüllte Bedingung: Es findet kein Algorithmus statt, kein Ereignis.
+-   `START` → `SET` : bei jedem `CLK` (ohne Bedingung).
+-   `SET` → `SET` : bei `CLK` **und** erfüllter Hysterese-Bedingung (d. h. `GE(SUB(MAX(D,Q), MIN(D,Q)), HYSTERESIS) == true`). Dann wird `LATCH` ausgeführt und `EO` ausgegeben.
+-   `SET` → `SET` : bei `CLK` **ohne** erfüllte Bedingung: Es findet kein Algorithmus statt, kein Ereignis.
 
 Es gibt keinen Übergang zurück nach `START` – der Automat bleibt nach dem ersten `CLK` dauerhaft in `SET`.
 
 ## Anwendungsszenarien
 
-*   **Stabilisierung von Sensorsignalen:** Wenn ein analoger Sensor (z. B. Temperatur, Druck, Füllstand) durch Rauschen oder kleine Schwankungen unruhige Werte liefert, kann der Baustein die Ausgabe glätten. Beispiel: Füllstandsmessung mit einem Abstandssensor, bei dem kleinere Wellen auf der Flüssigkeitsoberfläche ignoriert werden sollen.
-*   **Schalthysterese in Regelungen:** In Zweipunktreglern oder Vergleichern kann dieser Baustein genutzt werden, um ein ständiges Ein-/Ausschalten (Flattern) zu verhindern. Der `HYSTERESIS`-Wert definiert die tote Zone.
-*   **Wertübernahme mit Totband:** In der MES-/SCADA-Ebene können überwachte Prozesswerte nur dann aktualisiert werden, wenn sich der Wert signifikant ändert – das reduziert Datenverkehr und Alarmflut.
+-   **Stabilisierung von Sensorsignalen:** Wenn ein analoger Sensor (z. B. Temperatur, Druck, Füllstand) durch Rauschen oder kleine Schwankungen unruhige Werte liefert, kann der Baustein die Ausgabe glätten. Beispiel: Füllstandsmessung mit einem Abstandssensor, bei dem kleinere Wellen auf der Flüssigkeitsoberfläche ignoriert werden sollen.
+-   **Schalthysterese in Regelungen:** In Zweipunktreglern oder Vergleichern kann dieser Baustein genutzt werden, um ein ständiges Ein-/Ausschalten (Flattern) zu verhindern. Der `HYSTERESIS`-Wert definiert die tote Zone.
+-   **Wertübernahme mit Totband:** In der MES-/SCADA-Ebene können überwachte Prozesswerte nur dann aktualisiert werden, wenn sich der Wert signifikant ändert – das reduziert Datenverkehr und Alarmflut.
 
 ## Vergleich mit ähnlichen Bausteinen
 

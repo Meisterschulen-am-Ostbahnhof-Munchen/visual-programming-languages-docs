@@ -61,9 +61,9 @@ The function block has no internal states. Selection and transmission occur imme
 
 ## 🛠️ Related Exercises
 
-* [Exercise_019a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
-* [Exercise_019b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
-* [Exercise_019c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
+- [Exercise_019a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
+- [Exercise_019b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+- [Exercise_019c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
 
 ## Conclusion
 

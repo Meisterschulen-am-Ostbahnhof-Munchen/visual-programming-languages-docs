@@ -15,7 +15,7 @@ Diese Übung demonstriert die Verwendung des Multiplexer-Funktionsbausteins F_MU
 ### F_MUX_3
 
 - **Typ**: Multiplexer mit 3 Eingängen
-- **Parameter**: 
+- **Parameter**:
   - IN3 = BOOL#FALSE (fester Wert für dritten Eingang)
 
 ### DigitalInput_I1, DigitalInput_I2, DigitalInput_I4
@@ -65,4 +65,4 @@ Diese Übung veranschaulicht die grundlegende Verwendung eines Multiplexers in 4
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

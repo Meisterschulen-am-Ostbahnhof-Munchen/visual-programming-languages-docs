@@ -20,10 +20,10 @@ Aufbau einer Steuerung für Vorwärts- und Rückwärtslauf mit Software-Verriege
 
 ![Uebung_006a3_network](./Uebung_006a3_network.svg)
 
-  * **`E_T_FF_SR`**: Bestimmt, ob der Motor läuft (Ein/Aus).
-  * **`LinksRechts_T_FF` (SubApp)**: Ein interner Merker, der bei jedem Start die Richtung wechselt.
-  * **2x `AND_2_BOOL`**: Verknüpfen das "Ein"-Signal mit der gewählten Richtung.
-  * **`Q1` (Linkslauf) & `Q2` (Rechtslauf)**: Die Hardware-Ausgänge.
+  - **`E_T_FF_SR`**: Bestimmt, ob der Motor läuft (Ein/Aus).
+  - **`LinksRechts_T_FF` (SubApp)**: Ein interner Merker, der bei jedem Start die Richtung wechselt.
+  - **2x `AND_2_BOOL`**: Verknüpfen das "Ein"-Signal mit der gewählten Richtung.
+  - **`Q1` (Linkslauf) & `Q2` (Rechtslauf)**: Die Hardware-Ausgänge.
 
 -----
 

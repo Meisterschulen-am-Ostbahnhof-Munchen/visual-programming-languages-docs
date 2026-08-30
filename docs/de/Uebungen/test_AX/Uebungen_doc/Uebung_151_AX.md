@@ -20,8 +20,8 @@ Berechnung einer zeitlichen Änderung (Differenzialquotient) aus Impulswerten.
 
 ![Uebung_151_AX_network](./Uebung_151_AX_network.svg)
 
-  * **`logiBUS_PI_ID`**: Liefert den aktuellen Zählerstand.
-  * **`FT_DERIV`**: Ein Baustein aus der **OSCAT** Bibliothek zur Berechnung der Ableitung (Änderungsrate).
+  - **`logiBUS_PI_ID`**: Liefert den aktuellen Zählerstand.
+  - **`FT_DERIV`**: Ein Baustein aus der **OSCAT** Bibliothek zur Berechnung der Ableitung (Änderungsrate).
 
 -----
 

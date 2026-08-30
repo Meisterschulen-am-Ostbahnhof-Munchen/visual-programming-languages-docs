@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b2_AX`.
 
 ![Uebung_010b2_AX_network](./Uebung_010b2_AX_network.svg)
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -24,8 +24,8 @@ Verwendung von `Softkey_IE` (Event) anstelle von `Softkey_IXA` (Zustand).
 
 ### Funktionsbausteine (FBs)
 
-  * **`SoftKey_UP_F1`**: Typ `isobus::UT::io::Softkey::Softkey_IE`.
-  * **InputEvent**: `SK_RELEASED`.
+  - **`SoftKey_UP_F1`**: Typ `isobus::UT::io::Softkey::Softkey_IE`.
+  - **InputEvent**: `SK_RELEASED`.
 
 -----
 

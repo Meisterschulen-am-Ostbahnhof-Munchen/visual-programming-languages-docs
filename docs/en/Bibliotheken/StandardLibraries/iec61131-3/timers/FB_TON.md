@@ -65,8 +65,8 @@ The FB_TON starts the time measurement when the IN input changes from FALSE to T
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020c3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c3.md)
-* [Exercise_020c3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
+- [Exercise_020c3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c3.md)
+- [Exercise_020c3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
 
 ## Conclusion
 

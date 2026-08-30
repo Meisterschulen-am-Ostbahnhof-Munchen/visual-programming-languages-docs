@@ -19,9 +19,9 @@ The following blocks are used:
 
 ![Uebung_002a6_AX_network](./Uebung_002a6_AX_network.svg)
 
-* **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the states of the physical inputs `Input_I1` to `Input_I3`[cite: 1].
-* **`AX_AND_3`**: An instance of type `AX_AND_3`. [cite_start]This function block performs the logical AND operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and provides the result at the adapter output `OUT`[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block controls the hardware output `Output_Q1`[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the states of the physical inputs `Input_I1` to `Input_I3`[cite: 1].
+- **`AX_AND_3`**: An instance of type `AX_AND_3`. [cite_start]This function block performs the logical AND operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and provides the result at the adapter output `OUT`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block controls the hardware output `Output_Q1`[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 

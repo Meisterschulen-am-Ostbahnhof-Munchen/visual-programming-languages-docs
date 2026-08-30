@@ -13,4 +13,4 @@ It provides parameters for selecting the input button (`Input`), the color (`Col
 
 ![Uebung_033_sub_network](./Uebung_033_sub_network.svg)
 
-* [Exercise_033](Uebung_033.md)
+- [Exercise_033](Uebung_033.md)

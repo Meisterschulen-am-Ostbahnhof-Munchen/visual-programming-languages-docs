@@ -20,11 +20,11 @@ Das Hauptziel dieser Übung ist die hierarchische Verknüpfung von Logikbaustein
 
 ![Uebung_002b2_network](./Uebung_002b2_network.svg)
 
-  * **`DigitalInput_I1` bis `I3`**: Drei Instanzen des Typs `logiBUS_IX`. [cite_start]Sie liefern die Eingangssignale für die Logikkette[cite: 1].
-  * **`AND_2`**: Eine Instanz des Typs `AND_2`. [cite_start]Verknüpft die Eingänge `I1` und `I2`[cite: 1].
-  * **`F_MOVE`**: Ein Datentransfer-Baustein. [cite_start]Er nimmt den Wert am Eingang `IN` entgegen und gibt ihn beim Ereignis `REQ` unverändert am Ausgang `OUT` wieder aus[cite: 1]. Er dient hier als Puffer zwischen den Logikstufen.
-  * **`OR_2`**: Eine Instanz des Typs `OR_2`. [cite_start]Verknüpft das (gepufferte) Ergebnis des UND-Bausteins mit dem dritten Eingang `I3`[cite: 1].
-  * **`DigitalOutput_Q1`**: Gibt das Endergebnis der Logik an den Hardware-Ausgang aus.
+  - **`DigitalInput_I1` bis `I3`**: Drei Instanzen des Typs `logiBUS_IX`. [cite_start]Sie liefern die Eingangssignale für die Logikkette[cite: 1].
+  - **`AND_2`**: Eine Instanz des Typs `AND_2`. [cite_start]Verknüpft die Eingänge `I1` und `I2`[cite: 1].
+  - **`F_MOVE`**: Ein Datentransfer-Baustein. [cite_start]Er nimmt den Wert am Eingang `IN` entgegen und gibt ihn beim Ereignis `REQ` unverändert am Ausgang `OUT` wieder aus[cite: 1]. Er dient hier als Puffer zwischen den Logikstufen.
+  - **`OR_2`**: Eine Instanz des Typs `OR_2`. [cite_start]Verknüpft das (gepufferte) Ergebnis des UND-Bausteins mit dem dritten Eingang `I3`[cite: 1].
+  - **`DigitalOutput_Q1`**: Gibt das Endergebnis der Logik an den Hardware-Ausgang aus.
 
 -----
 

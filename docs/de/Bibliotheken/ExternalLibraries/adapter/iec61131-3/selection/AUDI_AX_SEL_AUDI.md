@@ -50,8 +50,8 @@ Der Baustein enthält intern eine Instanz des IEC‑61131‑Funktionsbausteins `
 
 1. **Triggerung**: Ein Ereignis am **G.E1** (über den Selektordapter) startet die Verarbeitung.
 2. **Datensammlung**: Die anliegenden Werte von **IN0.D1**, **IN1.D1** und **G.D1** werden an den `F_SEL`-Baustein weitergeleitet.
-3. **Auswahl**: `F_SEL` prüft den Wert von **G.D1**. Typische Semantik (abhängig vom Datentyp `AX`):  
-   - Ist der Selektorfeld **False** (oder 0), wird **IN0** ausgewählt.  
+3. **Auswahl**: `F_SEL` prüft den Wert von **G.D1**. Typische Semantik (abhängig vom Datentyp `AX`):
+   - Ist der Selektorfeld **False** (oder 0), wird **IN0** ausgewählt.
    - Ist das Selektorfeld **True** (oder ungleich 0), wird **IN1** ausgewählt.
 4. **Ausgabe**: Das ausgewählte Signal wird an **OUT.D1** weitergegeben. Gleichzeitig wird ein Ereignis an **OUT.E1** gesendet, um die nachgeschaltete Verarbeitung zu informieren.
 
@@ -102,4 +102,4 @@ Der **AUDI_AX_SEL_AUDI** ist ein spezialisierter binärer Selektor, der die Vort
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

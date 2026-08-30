@@ -41,9 +41,9 @@ The adapters of type `AS` each provide one event input/output (E1) and one data 
 
 After successful initialization (INIT with a valid `Tmin`), the block operates like a clocked D flip-flop with a time filter:
 
-* An event at the adapter input **I.E1** is interpreted as a clock signal (CLK).
-* The data value **I.D1** is adopted upon the arrival of I.E1, **provided the time interval to the last CLK event is at least `Tmin`**. Otherwise, the event is ignored.
-* If the adoption is successful, the stored value is output at data output **Q.D1**, and an event **Q.E1** is triggered.
+- An event at the adapter input **I.E1** is interpreted as a clock signal (CLK).
+- The data value **I.D1** is adopted upon the arrival of I.E1, **provided the time interval to the last CLK event is at least `Tmin`**. Otherwise, the event is ignored.
+- If the adoption is successful, the stored value is output at data output **Q.D1**, and an event **Q.E1** is triggered.
 
 Time filtering is implemented by the internally used block `E_D_FF_ANY_TMIN`, which delays or discards the clock event if the minimum time is not met.
 

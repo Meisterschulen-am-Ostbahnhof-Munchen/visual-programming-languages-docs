@@ -51,13 +51,13 @@ Keine Adapter vorhanden.
 
 Der Baustein arbeitet als zustandsgesteuerter Service-Interface-Block:
 
-1. **Initialisierung (INIT)**:  
+1. **Initialisierung (INIT)**:
    Über das INIT‑Ereignis wird der Funktionsblock konfiguriert. Die Eingänge `PARAMS`, `u8SAMember`, `Input` und `AnalogInput_hysteresis` legen die Bus‑/Knotenadresse, den analogen Kanal und die Hysterese fest. Der `QI`-Eingang muss auf TRUE gesetzt sein, um die Initialisierung zu starten. Nach erfolgreicher Konfiguration wird das INITO‑Ereignis mit `QO = TRUE` und `STATUS = "OK"` (o. ä.) ausgegeben.
 
-2. **Messwertanforderung (REQ)**:  
+2. **Messwertanforderung (REQ)**:
    Mit dem REQ‑Ereignis wird eine neue Messung des Sensors angefordert. Der Baustein wertet die Hardware aus und liefert das Ergebnis über das CNF‑Ereignis am Ausgang `IN` zurück. Auch hier zeigt `QO` die Gültigkeit des Wertes an.
 
-3. **Indikation (IND)**:  
+3. **Indikation (IND)**:
    Falls die Hardware asynchrone Ereignisse (z. B. zyklische Aktualisierungen) unterstützt, wird das IND‑Ereignis verwendet, um den aktuellen Messwert unaufgefordert zu melden.
 
 Der Messwert wird als 16‑Bit‑Wort (WORD) im ratiometrischen Format ausgegeben. Dies bedeutet, dass der digitale Wert direkt proportional zum Verhältnis der gemessenen Spannung zur Referenzspannung ist.
@@ -105,4 +105,4 @@ Der `DataPanel_MI_IW_Ratio` ist ein spezialisierter Service-Interface-Funktionsb
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

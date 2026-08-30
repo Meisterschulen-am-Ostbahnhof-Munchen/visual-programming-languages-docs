@@ -14,30 +14,30 @@ Der Funktionsbaustein `DualHysteresis_AR_AX` dient der zweitwegigen (dualen) Ana
 
 ### **Ereignis-Eingänge**
 
-*   `INIT` (Typ: `EInit`): Initialisierungsanfrage. Startet oder stoppt den Baustein in Abhängigkeit des Daten-Eingangs `QI`.
+-   `INIT` (Typ: `EInit`): Initialisierungsanfrage. Startet oder stoppt den Baustein in Abhängigkeit des Daten-Eingangs `QI`.
 
 ### **Ereignis-Ausgänge**
 
-*   `INITO` (Typ: `EInit`): Initialisierungsbestätigung. Signalisiert den erfolgreichen Übergang in den initialisierten bzw. deinitialisierten Zustand.
+-   `INITO` (Typ: `EInit`): Initialisierungsbestätigung. Signalisiert den erfolgreichen Übergang in den initialisierten bzw. deinitialisierten Zustand.
 
 ### **Daten-Eingänge**
 
-*   `QI` (Typ: `BOOL`): Eingangshilfsvariable (Input Event Qualifier). Bestimmt, ob der Baustein aktiv arbeiten soll (`TRUE`) oder in den sicheren Deinitialisierungszustand versetzt wird (`FALSE`).
+-   `QI` (Typ: `BOOL`): Eingangshilfsvariable (Input Event Qualifier). Bestimmt, ob der Baustein aktiv arbeiten soll (`TRUE`) oder in den sicheren Deinitialisierungszustand versetzt wird (`FALSE`).
 
 ### **Daten-Ausgänge**
 
-*   `QO` (Typ: `BOOL`): Ausgangshilfsvariable (Output Event Qualifier). Spiegelt den aktuellen Status und die Betriebsbereitschaft des Bausteins wider.
+-   `QO` (Typ: `BOOL`): Ausgangshilfsvariable (Output Event Qualifier). Spiegelt den aktuellen Status und die Betriebsbereitschaft des Bausteins wider.
 
 ### **Adapter**
 
-*   **Plugs (Stecker):**
-    *   `DO_UP` (Typ: `adapter::types::unidirectional::AX`): Ausgangsadapter für die Aufwärtsbewegung / den oberen Schwellwert (UP).
-    *   `DO_DOWN` (Typ: `adapter::types::unidirectional::AX`): Ausgangsadapter für die Abwärtsbewegung / den unteren Schwellwert (DOWN).
-*   **Sockets (Buchsen):**
-    *   `INPUT` (Typ: `adapter::types::unidirectional::AR`): Der aktuelle analoge Mess- oder Eingangswert.
-    *   `MI` (Typ: `adapter::types::unidirectional::AR`): Der Mittelpunkt bzw. Sollwert der Regelung (Center Point, z. B. `0.5` für 50%).
-    *   `DEAD` (Typ: `adapter::types::unidirectional::AR`): Das Totband um den Mittelpunkt (Absolutwert). Definiert die Ausschaltpunkte.
-    *   `HYSTERESIS` (Typ: `adapter::types::unidirectional::AR`): Die Hysterese (Absolutwert). Definiert zusammen mit dem Totband die Einschaltpunkte.
+-   **Plugs (Stecker):**
+    -   `DO_UP` (Typ: `adapter::types::unidirectional::AX`): Ausgangsadapter für die Aufwärtsbewegung / den oberen Schwellwert (UP).
+    -   `DO_DOWN` (Typ: `adapter::types::unidirectional::AX`): Ausgangsadapter für die Abwärtsbewegung / den unteren Schwellwert (DOWN).
+-   **Sockets (Buchsen):**
+    -   `INPUT` (Typ: `adapter::types::unidirectional::AR`): Der aktuelle analoge Mess- oder Eingangswert.
+    -   `MI` (Typ: `adapter::types::unidirectional::AR`): Der Mittelpunkt bzw. Sollwert der Regelung (Center Point, z. B. `0.5` für 50%).
+    -   `DEAD` (Typ: `adapter::types::unidirectional::AR`): Das Totband um den Mittelpunkt (Absolutwert). Definiert die Ausschaltpunkte.
+    -   `HYSTERESIS` (Typ: `adapter::types::unidirectional::AR`): Die Hysterese (Absolutwert). Definiert zusammen mit dem Totband die Einschaltpunkte.
 
 ---
 
@@ -47,19 +47,19 @@ Die Zustandsumschaltung erfolgt ereignisgesteuert über den Eingang `INPUT.E1`. 
 
 Die logischen Schwellenwerte verhalten sich wie folgt:
 
-*   **Einschalten UP (Wechsel nach UP):**
+-   **Einschalten UP (Wechsel nach UP):**
     $$INPUT \ge MI + |DEAD| + |HYSTERESIS|$$
     *(Ausgänge: `DO_UP.D1` = `TRUE`, `DO_DOWN.D1` = `FALSE`)*
 
-*   **Ausschalten UP (Wechsel zurück nach Neutral):**
+-   **Ausschalten UP (Wechsel zurück nach Neutral):**
     $$INPUT < MI + |DEAD|$$
     *(Ausgänge: `DO_UP.D1` = `FALSE`, `DO_DOWN.D1` = `FALSE`)*
 
-*   **Einschalten DOWN (Wechsel nach DOWN):**
+-   **Einschalten DOWN (Wechsel nach DOWN):**
     $$INPUT \le MI - |DEAD| - |HYSTERESIS|$$
     *(Ausgänge: `DO_UP.D1` = `FALSE`, `DO_DOWN.D1` = `TRUE`)*
 
-*   **Ausschalten DOWN (Wechsel zurück nach Neutral):**
+-   **Ausschalten DOWN (Wechsel zurück nach Neutral):**
     $$INPUT > MI - |DEAD|$$
     *(Ausgänge: `DO_UP.D1` = `FALSE`, `DO_DOWN.D1` = `FALSE`)*
 
@@ -67,9 +67,9 @@ Die logischen Schwellenwerte verhalten sich wie folgt:
 
 ## Technische Besonderheiten
 
-*   **Fehlersicherheit durch Absolutwerte:** Die Schwellenwertberechnungen nutzen explizit die `ABS`-Funktion für die Parameter `DEAD` und `HYSTERESIS`. Dies verhindert Fehlverhalten bei versehentlich negativ parametrisierten Werten.
-*   **Sicherer Zustand:** Im deinitialisierten Zustand (`QI` = `FALSE`) oder im Zustand `Neutral` werden beide Digitalausgänge (`DO_UP.D1` und `DO_DOWN.D1`) zwingend auf `FALSE` gesetzt.
-*   **Adapter-Anbindung:** Die Verwendung von `AR` (Analog Receiver) und `AX` (Digital Actuator) Adaptern sorgt für eine standardisierte, saubere Kapselung der Signalwege innerhalb der 4diac-IDE.
+-   **Fehlersicherheit durch Absolutwerte:** Die Schwellenwertberechnungen nutzen explizit die `ABS`-Funktion für die Parameter `DEAD` und `HYSTERESIS`. Dies verhindert Fehlverhalten bei versehentlich negativ parametrisierten Werten.
+-   **Sicherer Zustand:** Im deinitialisierten Zustand (`QI` = `FALSE`) oder im Zustand `Neutral` werden beide Digitalausgänge (`DO_UP.D1` und `DO_DOWN.D1`) zwingend auf `FALSE` gesetzt.
+-   **Adapter-Anbindung:** Die Verwendung von `AR` (Analog Receiver) und `AX` (Digital Actuator) Adaptern sorgt für eine standardisierte, saubere Kapselung der Signalwege innerhalb der 4diac-IDE.
 
 ---
 
@@ -88,9 +88,9 @@ Der Baustein basiert auf einer Zustandsmaschine (ECC) mit folgenden Zuständen:
 
 ## Anwendungsszenarien
 
-*   **Dreipunktregler:** Temperaturregelungen (z. B. Heizen / Neutral / Kühlen) oder Füllstandsregelungen (z. B. Zulaufventil öffnen / Neutral / Ablaufventil öffnen).
-*   **Spurführungs- und Lenksysteme:** Automatische Lenkungen in der Landtechnik oder Logistik, bei denen eine Abweichung von der Spurmitte (`MI`) nach links (`DOWN`) oder rechts (`UP`) korrigiert werden muss.
-*   **Sollwert-Bandüberwachung:** Überwachung physikalischer Größen, bei denen erst bei signifikanten Abweichungen (Totband + Hysterese) ein Aktor angesteuert werden soll, um ständiges "Flattern" des Aktors zu vermeiden.
+-   **Dreipunktregler:** Temperaturregelungen (z. B. Heizen / Neutral / Kühlen) oder Füllstandsregelungen (z. B. Zulaufventil öffnen / Neutral / Ablaufventil öffnen).
+-   **Spurführungs- und Lenksysteme:** Automatische Lenkungen in der Landtechnik oder Logistik, bei denen eine Abweichung von der Spurmitte (`MI`) nach links (`DOWN`) oder rechts (`UP`) korrigiert werden muss.
+-   **Sollwert-Bandüberwachung:** Überwachung physikalischer Größen, bei denen erst bei signifikanten Abweichungen (Totband + Hysterese) ein Aktor angesteuert werden soll, um ständiges "Flattern" des Aktors zu vermeiden.
 
 ---
 

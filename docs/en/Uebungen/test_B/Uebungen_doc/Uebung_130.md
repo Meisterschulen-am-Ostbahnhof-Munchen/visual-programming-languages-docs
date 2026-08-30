@@ -17,9 +17,9 @@ Using the function block `AlPgnRxNew8B`. It demonstrates how to listen for a spe
 
 ![Uebung_130_network](./Uebung_130_network.svg)
 
-* **`NmGetCfInfo_1`**: Identifies the message sender (source).
-* **`AlPgnRxNew8B`**: The receive block. It filters all CAN messages and only allows the matching PGN to pass through.
-* **`STRUCT_DEMUX`**: Splits the received 8-byte message back into individual signals.
+- **`NmGetCfInfo_1`**: Identifies the message sender (source).
+- **`AlPgnRxNew8B`**: The receive block. It filters all CAN messages and only allows the matching PGN to pass through.
+- **`STRUCT_DEMUX`**: Splits the received 8-byte message back into individual signals.
 
 -----
 

@@ -20,9 +20,9 @@ Steuerung eines Taktgebers über Start- und Stopp-Ereignisse.
 
 ![Uebung_007a1_network](./Uebung_007a1_network.svg)
 
-  * **`START` (I1)**: Sendet ein Ereignis an `E_CYCLE.START`.
-  * **`STOP` (I2)**: Sendet ein Ereignis an `E_CYCLE.STOP`.
-  * **`E_CYCLE`**: Startet oder stoppt die Generierung von Takt-Events.
+  - **`START` (I1)**: Sendet ein Ereignis an `E_CYCLE.START`.
+  - **`STOP` (I2)**: Sendet ein Ereignis an `E_CYCLE.STOP`.
+  - **`E_CYCLE`**: Startet oder stoppt die Generierung von Takt-Events.
 
 -----
 

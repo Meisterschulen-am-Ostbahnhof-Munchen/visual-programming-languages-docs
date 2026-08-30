@@ -15,12 +15,12 @@ Dieses umfassende Lehrbuch widmet sich der IEC 61499 Norm und ihrer Anwendung in
 
 ### Links und Ressourcen
 
-* [Offizielle Produktseite (ISA)](https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing)
-* [Amazon](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
-* [Vorschau auf Yumpu](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
-* [FB61499 Projektseite](https://www.fb61499.com/IEC61499German.html)
-* [Musterseiten Preview (PDF)](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
-* [Direkt bestellen](https://www.isa.org/IEC61499German)
+- [Offizielle Produktseite (ISA)](https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing)
+- [Amazon](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
+- [Vorschau auf Yumpu](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
+- [FB61499 Projektseite](https://www.fb61499.com/IEC61499German.html)
+- [Musterseiten Preview (PDF)](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
+- [Direkt bestellen](https://www.isa.org/IEC61499German)
 
 ---
 
@@ -36,4 +36,4 @@ Das Werk wurde von Experten aus dem Bereich der Automatisierungstechnik verfasst
 
 ### Links und Ressourcen
 
-* [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)
+- [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)

@@ -23,24 +23,24 @@ Die Übung vermittelt den Umgang mit speziellen Interlock-Bausteinen, die in der
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI` = TRUE, `Output` = `Output_Q1` (Lampe/Signal 1) |
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QX` | `QI` = TRUE, `Output` = `Output_Q2` (Lampe/Signal 2) |
 
-**Erläuterung der Interlock-Bausteine**  
+**Erläuterung der Interlock-Bausteine**
 `ILOCK_FB_RS` ist ein reset-dominantes RS-Latch mit einer zusätzlichen Adapterschnittstelle (`ILOCK_IN`, `ILOCK_OUT`). Über diese Adapterverbindung können mehrere solche Bausteine gekoppelt werden: Wird ein Latch gesetzt, sendet es ein Signal auf dem `ILOCK_OUT`-Adapter, das den anderen Baustein über `ILOCK_IN` in den Reset-Zustand zwingt. Somit ist zu jedem Zeitpunkt maximal einer der beiden Ausgänge `Q1` aktiv.
 
 ## Programmablauf und Verbindungen
 
 Das System ist **ereignisgesteuert** aufgebaut:
 
-1. **Eingangssignal**  
+1. **Eingangssignal**
    Ein Signal auf einem Digitaleingang (z. B. `Input_I1` für Setzen von Latch 1) erzeugt ein Ereignis `IND` am entsprechenden `DigitalInput`-FB.
 
-2. **Ablauf im Latch**  
-   Dieses Ereignis wird auf den `REQ`-Eingang des zugehörigen `ILOCK_RS`-Bausteins weitergeleitet. Gleichzeitig werden die Datenwerte (`S` und `R1`) aus dem Digitaleingang an den Latch übergeben.  
+2. **Ablauf im Latch**
+   Dieses Ereignis wird auf den `REQ`-Eingang des zugehörigen `ILOCK_RS`-Bausteins weitergeleitet. Gleichzeitig werden die Datenwerte (`S` und `R1`) aus dem Digitaleingang an den Latch übergeben.
    Der Baustein verarbeitet die Signale (Reset dominant) und gibt bei Abschluss ein `CNF`-Ereignis aus.
 
-3. **Ausgang**  
+3. **Ausgang**
    Das `CNF`-Ereignis aktiviert den `DigitalOutput`-Baustein, der den aktuellen Zustand des Latches auf den physikalischen Ausgang (z. B. `Output_Q1`) legt.
 
-4. **Verriegelung**  
+4. **Verriegelung**
    Der Adapterausgang `ILOCK_RS_1.ILOCK_OUT` ist mit dem Adaptereingang `ILOCK_RS_2.ILOCK_IN` verbunden. Wenn Latch 1 gesetzt wird, erhält Latch 2 über die Adapterleitung ein aktives Signal, das ihn zurücksetzt (und umgekehrt). Dadurch kann nie gleichzeitig `Q1` und `Q2` HIGH sein.
 
 **Verbindungsübersicht:**
@@ -76,4 +76,4 @@ Nach erfolgreicher Durchführung kann der Anwender solche Verriegelungen in eige
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

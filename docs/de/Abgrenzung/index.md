@@ -28,9 +28,9 @@ B --> C#
 
 Typische Vertreter sind:
 
-*   **C / C++:** Systemnahe Programmierung, hohe Performance.
-*   **Python:** Sehr beliebt für Data Science und Automatisierung durch einfache Syntax.
-*   **Java / C#:** Objektorientierte Sprachen, weit verbreitet in der Unternehmenssoftware.
+-   **C / C++:** Systemnahe Programmierung, hohe Performance.
+-   **Python:** Sehr beliebt für Data Science und Automatisierung durch einfache Syntax.
+-   **Java / C#:** Objektorientierte Sprachen, weit verbreitet in der Unternehmenssoftware.
 
 ### Visuelle Programmiersprachen
 
@@ -74,10 +74,10 @@ G --> EEC
 
 Die IEC 61131-3 ist der weltweit etablierte Standard für speicherprogrammierbare Steuerungen (SPS). Sie bietet sowohl textuelle als auch visuelle Sprachen an:
 
-*   **LD (Ladder Diagram / Kontaktplan):** Angelehnt an Stromlaufpläne.
-*   **FBD (Function Block Diagram / Funktionsbausteinsprache):** Darstellung von Logik als verknüpfte Blöcke.
-*   **SFC (Sequential Function Chart / Ablaufsprache):** Modellierung von Schrittketten.
-*   **ST (Structured Text) & IL (Instruction List):** Die textuellen Vertreter innerhalb der Norm.
+-   **LD (Ladder Diagram / Kontaktplan):** Angelehnt an Stromlaufpläne.
+-   **FBD (Function Block Diagram / Funktionsbausteinsprache):** Darstellung von Logik als verknüpfte Blöcke.
+-   **SFC (Sequential Function Chart / Ablaufsprache):** Modellierung von Schrittketten.
+-   **ST (Structured Text) & IL (Instruction List):** Die textuellen Vertreter innerhalb der Norm.
 
 ### IEC 61499 (Der Standard für verteilte Systeme)
 
@@ -96,6 +96,6 @@ Die **IEC 61499** geht einen Schritt weiter. Sie nutzt das Konzept der **Functio
 
 ### Literatur und Quellen
 
-*   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
-*   [YouTube: Visual vs. Textual Programming (Prägnante Zusammenfassung)](https://www.youtube.com/watch?v=MxJcdqOX9V0)
-*   [Vergleich bei Print2Forms](https://wiki.print2forms.de/doku.php?id=print2forms:skripte:textuellvsvisuell)
+-   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
+-   [YouTube: Visual vs. Textual Programming (Prägnante Zusammenfassung)](https://www.youtube.com/watch?v=MxJcdqOX9V0)
+-   [Vergleich bei Print2Forms](https://wiki.print2forms.de/doku.php?id=print2forms:skripte:textuellvsvisuell)

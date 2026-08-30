@@ -20,7 +20,7 @@ Konfiguration eines n-fach Klicks.
 
 ![Uebung_004c6_AX_network](./Uebung_004c6_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE2`. Dieser Typ hat den zusätzlichen Eingang `arg`.
+  - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE2`. Dieser Typ hat den zusätzlichen Eingang `arg`.
 
 -----
 

@@ -20,13 +20,13 @@ The function block outputs the event **E1** via the **AL_OUT** plug after the co
 
 The data input is provided exclusively via the socket:
 
-* **AUI_IN.D1** (Type: UINT) – The value to be converted.
+- **AUI_IN.D1** (Type: UINT) – The value to be converted.
 
 ### **Data Outputs**
 
 The data output is provided via the plug:
 
-* **AL_OUT.D1** (Type: LWORD) – The converted value (LWORD).
+- **AL_OUT.D1** (Type: LWORD) – The converted value (LWORD).
 
 ### **Adapter**
 
@@ -80,6 +80,6 @@ The **AUI_TO_AL** function block provides a clean, standardized solution for con
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -57,22 +57,22 @@ This exercise uses specific function blocks for input processing, adapter conver
 The exercise proceeds as follows:
 
 1. **Input Acquisition**:
-* The function block `DigitalInput_CLK_I1` monitors the input `I1`. A click triggers the event `IND`.
-* The function block `DigitalInput_CLK_I2` monitors the input `I2`. A click triggers the event `IND`.
+- The function block `DigitalInput_CLK_I1` monitors the input `I1`. A click triggers the event `IND`.
+- The function block `DigitalInput_CLK_I2` monitors the input `I2`. A click triggers the event `IND`.
 2. **Signal Processing and Conversion**:
-* The `IND` event of `DigitalInput_CLK_I1` is connected to the input `SET` of the function block `ASR_2EVENTS_TO_SR`.
-* The `IND` event from `DigitalInput_CLK_I2` is connected to the input `RESET` of the function block `ASR_2EVENTS_TO_SR`.
-* The function block `ASR_2EVENTS_TO_SR` converts these events into commands on the adapter line `ASR_OUT`.
+- The `IND` event of `DigitalInput_CLK_I1` is connected to the input `SET` of the function block `ASR_2EVENTS_TO_SR`.
+- The `IND` event from `DigitalInput_CLK_I2` is connected to the input `RESET` of the function block `ASR_2EVENTS_TO_SR`.
+- The function block `ASR_2EVENTS_TO_SR` converts these events into commands on the adapter line `ASR_OUT`.
 3. **Logic and Output**:
-* The adapter connection runs from `ASR_2EVENTS_TO_SR.ASR_OUT` to `ASR_AX_SR_1.S_R`. The state is stored here (set or reset).
-* The resulting state is passed on to the output function block `DigitalOutput_Q1.OUT` via the adapter connection `ASR_AX_SR_1.Q`.
-* This causes the physical output `Q1` to be activated when `I1` is pressed and deactivated when `I2` is pressed.
+- The adapter connection runs from `ASR_2EVENTS_TO_SR.ASR_OUT` to `ASR_AX_SR_1.S_R`. The state is stored here (set or reset).
+- The resulting state is passed on to the output function block `DigitalOutput_Q1.OUT` via the adapter connection `ASR_AX_SR_1.Q`.
+- This causes the physical output `Q1` to be activated when `I1` is pressed and deactivated when `I2` is pressed.
 
 **Learning Objectives:**
 
-* Understanding the adapter concept in IEC 61499/4diac.
-* Converting event-based logic to adapter-based logic.
-* Implementing a memory function (SR) using adapter blocks.
+- Understanding the adapter concept in IEC 61499/4diac.
+- Converting event-based logic to adapter-based logic.
+- Implementing a memory function (SR) using adapter blocks.
 
 ## Summary
 
@@ -82,6 +82,6 @@ The exercise `Uebung_171_AX` demonstrates a modern implementation of a classic m
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

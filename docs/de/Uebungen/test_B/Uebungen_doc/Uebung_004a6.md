@@ -20,10 +20,10 @@ Erlernen des Umgangs mit dem `E_REND` Baustein. Dieser fungiert wie ein "Gedäch
 
 ### Funktionsbausteine (FBs)
 
-  * **`DigitalInput_CLK_I1` & `I2`**: Die beiden Taster für die Synchronisation.
-  * **`DigitalInput_CLK_I3`**: Ein Reset-Taster zum Löschen der Vorbedingungen.
-  * **`E_REND`**: Der Rendezvous-Baustein mit Eingängen `EI1`, `EI2` und einem Reset-Eingang `R`.
-  * **`E_T_FF`**: Das Flip-Flop zur Zustandsspeicherung.
+  - **`DigitalInput_CLK_I1` & `I2`**: Die beiden Taster für die Synchronisation.
+  - **`DigitalInput_CLK_I3`**: Ein Reset-Taster zum Löschen der Vorbedingungen.
+  - **`E_REND`**: Der Rendezvous-Baustein mit Eingängen `EI1`, `EI2` und einem Reset-Eingang `R`.
+  - **`E_T_FF`**: Das Flip-Flop zur Zustandsspeicherung.
 
 -----
 
@@ -49,7 +49,7 @@ Der funktionale Ablauf:
 3.  Das Flip-Flop toggelt den Ausgangszustand.
 4.  Danach setzt sich `E_REND` automatisch zurück und wartet erneut auf beide Eingänge.
 
-*   Der Reset-Taster (`I3`) kann jederzeit genutzt werden, um die internen Merker von `E_REND` zu löschen (Abbruch der Sequenz).
+-   Der Reset-Taster (`I3`) kann jederzeit genutzt werden, um die internen Merker von `E_REND` zu löschen (Abbruch der Sequenz).
 
 -----
 

@@ -42,8 +42,8 @@ Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinan
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a8](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a8.md)
-* [Uebung_004a8_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
+- [Uebung_004a8](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a8.md)
+- [Uebung_004a8_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
 
 ## Fazit
 
@@ -53,4 +53,4 @@ Der `E_SPLIT_2`-Baustein ist ein nützliches Werkzeug, um aus einem einzelnen Tr
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

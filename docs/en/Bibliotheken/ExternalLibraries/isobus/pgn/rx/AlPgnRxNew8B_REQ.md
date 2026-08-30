@@ -10,33 +10,33 @@ The function block `AlPgnRxNew8B_REQ` is used to request data via an ISOBUS netw
 
 ### **Event Inputs**
 
-* **INIT**: Initializes the function block.
-* **install**: Installs a receive parameter set (RX PGN) for subsequent data requests. Triggered with the data `u32Pgn`, `NmSource`, `u16DaSize`, and `u8Priority`.
-* **REQ**: Triggers a one-time request for the previously installed RX PGN.
+- **INIT**: Initializes the function block.
+- **install**: Installs a receive parameter set (RX PGN) for subsequent data requests. Triggered with the data `u32Pgn`, `NmSource`, `u16DaSize`, and `u8Priority`.
+- **REQ**: Triggers a one-time request for the previously installed RX PGN.
 
 ### **Event Outputs**
 
-* **INITO**: Confirms successful initialization.
-* **installO**: Confirms successful installation of a PGN. Returns the assigned `PGN_handle`.
-* **CNF**: Confirms successful transmission of the request to the network.
-* **IND**: Triggered when the requested data message is received. Returns `Data` and `s32TimeStamp`.
-* **dataERR**: Signals a data processing error. Returns the error code `dataERRC`.
-* **pgnERR**: Signals an error in PGN processing (e.g., during installation). Returns the error code `pgnERRC`.
+- **INITO**: Confirms successful initialization.
+- **installO**: Confirms successful installation of a PGN. Returns the assigned `PGN_handle`.
+- **CNF**: Confirms successful transmission of the request to the network.
+- **IND**: Triggered when the requested data message is received. Returns `Data` and `s32TimeStamp`.
+- **dataERR**: Signals a data processing error. Returns the error code `dataERRC`.
+- **pgnERR**: Signals an error in PGN processing (e.g., during installation). Returns the error code `pgnERRC`.
 
 ### **Data Inputs**
 
-* **u32Pgn** (UDINT): The parameter Group Number (PGN) in the range 0 to 0x3FFFF.
-* **NmSource** (isobus::pgn::ISONETEVENT_T): Defines the communication partner in the network.
-* **u16DaSize** (UINT): The expected data length of the PGN (0-8 bytes).
-* **u8Priority** (USINT): The default priority of this PGN (0..7, where 0 is the highest priority). Initial value is 7.
+- **u32Pgn** (UDINT): The parameter Group Number (PGN) in the range 0 to 0x3FFFF.
+- **NmSource** (isobus::pgn::ISONETEVENT_T): Defines the communication partner in the network.
+- **u16DaSize** (UINT): The expected data length of the PGN (0-8 bytes).
+- **u8Priority** (USINT): The default priority of this PGN (0..7, where 0 is the highest priority). Initial value is 7.
 
 ### **Data Outputs**
 
-* **PGN_handle** (INT): A handle to identify the successfully installed PGN. In case of an error, an invalid handle value (`HANDLE_UNVALID`) is returned.
-* **dataERRC** (INT): Error code set when the `dataERR` event is triggered.
-* **pgnERRC** (INT): Error code set when the `pgnERR` event is triggered.
-* **s32TimeStamp** (DINT): Timestamp of the received message in milliseconds. Initial value is -1.
-* **Data** (isobus::pgn::CAN_MSG): The buffer containing the received CAN message data.
+- **PGN_handle** (INT): A handle to identify the successfully installed PGN. In case of an error, an invalid handle value (`HANDLE_UNVALID`) is returned.
+- **dataERRC** (INT): Error code set when the `dataERR` event is triggered.
+- **pgnERRC** (INT): Error code set when the `pgnERR` event is triggered.
+- **s32TimeStamp** (DINT): Timestamp of the received message in milliseconds. Initial value is -1.
+- **Data** (isobus::pgn::CAN_MSG): The buffer containing the received CAN message data.
 
 ### **Adapter**
 
@@ -53,10 +53,10 @@ Errors during installation (e.g., invalid PGN) result in the `pgnERR` output. Er
 
 ## Technical Specifications
 
-* This block is designed to process PGNs with a data length of up to 8 bytes (`u16DaSize` 0..8).
-* Priority management (`u8Priority`) follows the ISOBUS standard.
-* Data is provided in a type-safe buffer (`CAN_MSG`).
-* Error handling is structured via dedicated event outputs (`pgnERR`, `dataERR`).
+- This block is designed to process PGNs with a data length of up to 8 bytes (`u16DaSize` 0..8).
+- Priority management (`u8Priority`) follows the ISOBUS standard.
+- Data is provided in a type-safe buffer (`CAN_MSG`).
+- Error handling is structured via dedicated event outputs (`pgnERR`, `dataERR`).
 
 ## Status Overview
 
@@ -70,9 +70,9 @@ Errors during installation (e.g., invalid PGN) result in the `pgnERR` output. Er
 
 Typical applications are in agricultural or mobile machinery control (ISO 11783 / ISOBUS):
 
-* Querying machine parameters (e.g., speed, temperature) from an implement.
-* Requesting configuration data once from a control unit on the network.
-* Implementing diagnostic or service tools that need to query specific PGNs.
+- Querying machine parameters (e.g., speed, temperature) from an implement.
+- Requesting configuration data once from a control unit on the network.
+- Implementing diagnostic or service tools that need to query specific PGNs.
 
 ## ⚖️ Comparison with Similar Blocks
 
@@ -80,7 +80,7 @@ Compared to generic CAN receive blocks, `AlPgnRxNew8B_REQ` is specifically tailo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
+- [Exercise_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
 
 ## Conclusion
 

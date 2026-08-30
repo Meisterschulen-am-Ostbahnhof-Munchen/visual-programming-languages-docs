@@ -37,9 +37,9 @@ The data type `logiBUS_2_CAN_DI_S` functions as a configuration container. The v
 
 ## Technical Features
 
-* **Data type `USINT`:** The use of `USINT` (0 to 255) for the pin suggests that the logiBUS hardware can theoretically address up to 256 digital inputs per configuration structure. The value 255 is reserved as the default initial value.
-* **Initial value 255:** This value serves as an indicator for an inactive or undefined configuration. It should be replaced with a valid pin number in the application.
-* **Package name:** The data type is organized in the package `logiBUS::io::DI_CAN`, which clearly indicates its association with logiBUS CAN input communication.
+- **Data type `USINT`:** The use of `USINT` (0 to 255) for the pin suggests that the logiBUS hardware can theoretically address up to 256 digital inputs per configuration structure. The value 255 is reserved as the default initial value.
+- **Initial value 255:** This value serves as an indicator for an inactive or undefined configuration. It should be replaced with a valid pin number in the application.
+- **Package name:** The data type is organized in the package `logiBUS::io::DI_CAN`, which clearly indicates its association with logiBUS CAN input communication.
 *
 ## State Overview
 
@@ -49,9 +49,9 @@ The data type `logiBUS_2_CAN_DI_S` functions as a configuration container. The v
 
 This structure type is used in scenarios where digital signals (e.g., switches, limit switches, sensor contacts) are to be read into a controller (e.g., an IEC 61499-based application in 4diac) via a CAN-based logiBUS network. Typical applications include:
 
-* Machine controllers with decentralized, CAN-networked sensors.
-* Mobile applications (vehicles, robots) with a robust bus system.
-* Systems where digital input signals are distributed over long distances.
+- Machine controllers with decentralized, CAN-networked sensors.
+- Mobile applications (vehicles, robots) with a robust bus system.
+- Systems where digital input signals are distributed over long distances.
 *
 ## ⚖️ Comparison with Similar Function Blocks
 
@@ -65,6 +65,6 @@ The `logiBUS_2_CAN_DI_S` data type is an essential and streamlined configuration
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

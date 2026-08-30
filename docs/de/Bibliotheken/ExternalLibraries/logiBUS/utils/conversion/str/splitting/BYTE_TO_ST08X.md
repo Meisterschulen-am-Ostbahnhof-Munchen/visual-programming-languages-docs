@@ -13,19 +13,19 @@ Dieser Funktionsblock (FB) dient dazu, einen einzelnen Byte-Wert in eine Struktu
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Ein Ereigniseingang, der die Ausführung des Funktionsblocks triggert. Er ist mit dem Dateneingang `IN` assoziiert.
+-   **REQ**: Ein Ereigniseingang, der die Ausführung des Funktionsblocks triggert. Er ist mit dem Dateneingang `IN` assoziiert.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Ein Ereignisausgang, der signalisiert, dass die Konvertierung abgeschlossen ist. Er ist mit dem Datenausgang `OUT` assoziiert.
+-   **CNF**: Ein Ereignisausgang, der signalisiert, dass die Konvertierung abgeschlossen ist. Er ist mit dem Datenausgang `OUT` assoziiert.
 
 ### **Daten-Eingänge**
 
-*   **IN**: Typ `BYTE`. Dies ist der Byte-Wert, dessen acht Bits in einzelne Boolesche Werte aufgeteilt werden sollen.
+-   **IN**: Typ `BYTE`. Dies ist der Byte-Wert, dessen acht Bits in einzelne Boolesche Werte aufgeteilt werden sollen.
 
 ### **Daten-Ausgänge**
 
-*   **OUT**: Typ `logiBUS::utils::conversion::types::ST08X`. Dies ist eine Struktur, die acht BOOL-Werte (benannt X_00 bis X_07) enthält. Jedes dieser Felder repräsentiert ein Bit des Eingangsbytes.
+-   **OUT**: Typ `logiBUS::utils::conversion::types::ST08X`. Dies ist eine Struktur, die acht BOOL-Werte (benannt X_00 bis X_07) enthält. Jedes dieser Felder repräsentiert ein Bit des Eingangsbytes.
 
 ### **Adapter**
 
@@ -37,18 +37,18 @@ Der `BYTE_TO_ST08X` Funktionsblock konvertiert ein einzelnes 8-Bit-Byte in eine 
 
 Bei einem `REQ`-Ereignis wird der Wert des `IN`-Bytes gelesen. Anschließend wird jedes Bit des `IN`-Bytes dem entsprechenden BOOL-Feld in der `OUT`-Struktur zugewiesen:
 
-*   `OUT.X_00` wird Bit 0 von `IN` zugewiesen.
-*   `OUT.X_01` wird Bit 1 von `IN` zugewiesen.
-*   ...
-*   `OUT.X_07` wird Bit 7 von `IN` zugewiesen.
+-   `OUT.X_00` wird Bit 0 von `IN` zugewiesen.
+-   `OUT.X_01` wird Bit 1 von `IN` zugewiesen.
+-   ...
+-   `OUT.X_07` wird Bit 7 von `IN` zugewiesen.
 
 Nach der Zuweisung wird ein `CNF`-Ereignis ausgelöst, um den Abschluss der Operation zu signalisieren.
 
 ## Technische Besonderheiten
 
-*   **Direkte Bit-Extraktion:** Die Konvertierung erfolgt durch eine direkte Zuweisung der einzelnen Bits des Bytes (z.B. `IN.0`) zu den BOOL-Feldern der Zielstruktur (z.B. `OUT.X_00`).
-*   **Verwendung von `ST08X`:** Der Funktionsblock nutzt die spezifische Datentyp-Struktur `logiBUS::utils::conversion::types::ST08X`, die explizit für die Aufnahme von acht Booleschen Werten vorgesehen ist. Diese Struktur muss im System bekannt sein.
-*   **Ereignisgesteuert:** Die Operation wird durch ein Eingangserreignis `REQ` ausgelöst und signalisiert ihren Abschluss durch ein Ausgangsereignis `CNF`. Dies gewährleistet eine kontrollierte Datenflusssteuerung im 4diac-System.
+-   **Direkte Bit-Extraktion:** Die Konvertierung erfolgt durch eine direkte Zuweisung der einzelnen Bits des Bytes (z.B. `IN.0`) zu den BOOL-Feldern der Zielstruktur (z.B. `OUT.X_00`).
+-   **Verwendung von `ST08X`:** Der Funktionsblock nutzt die spezifische Datentyp-Struktur `logiBUS::utils::conversion::types::ST08X`, die explizit für die Aufnahme von acht Booleschen Werten vorgesehen ist. Diese Struktur muss im System bekannt sein.
+-   **Ereignisgesteuert:** Die Operation wird durch ein Eingangserreignis `REQ` ausgelöst und signalisiert ihren Abschluss durch ein Ausgangsereignis `CNF`. Dies gewährleistet eine kontrollierte Datenflusssteuerung im 4diac-System.
 
 ## Zustandsübersicht
 
@@ -56,10 +56,10 @@ Dieser Funktionsblock ist ein reiner Datenkonverter ohne interne Zustände. Sein
 
 ## Anwendungsszenarien
 
-*   **Hardware-Interfacing:** Wenn von externen Geräten (z.B. über Feldbusse wie Modbus, CANopen) ein Byte empfangen wird, das den Zustand von acht diskreten digitalen Eingängen oder Ausgängen darstellt, kann dieser FB verwendet werden, um die einzelnen Zustände für die Weiterverarbeitung im Steuerungsprogramm zu isolieren.
-*   **Protokoll-Parsing:** Zerlegung von Status-Bytes in Kommunikationsprotokollen, bei denen jedes Bit eine spezifische Flag oder einen Zustand anzeigt.
-*   **Logische Verknüpfungen:** Vorbereitung von Daten für logische Operationen, die einzelne BOOL-Werte erfordern.
-*   **Visualisierung:** Darstellung einzelner Bits eines Byte-Wertes auf einer Benutzeroberfläche.
+-   **Hardware-Interfacing:** Wenn von externen Geräten (z.B. über Feldbusse wie Modbus, CANopen) ein Byte empfangen wird, das den Zustand von acht diskreten digitalen Eingängen oder Ausgängen darstellt, kann dieser FB verwendet werden, um die einzelnen Zustände für die Weiterverarbeitung im Steuerungsprogramm zu isolieren.
+-   **Protokoll-Parsing:** Zerlegung von Status-Bytes in Kommunikationsprotokollen, bei denen jedes Bit eine spezifische Flag oder einen Zustand anzeigt.
+-   **Logische Verknüpfungen:** Vorbereitung von Daten für logische Operationen, die einzelne BOOL-Werte erfordern.
+-   **Visualisierung:** Darstellung einzelner Bits eines Byte-Wertes auf einer Benutzeroberfläche.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -73,4 +73,4 @@ Der `BYTE_TO_ST08X` Funktionsblock ist ein nützliches Werkzeug zur effizienten 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

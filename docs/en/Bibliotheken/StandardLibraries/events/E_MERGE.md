@@ -70,8 +70,8 @@ These building blocks allow for the easy merging of up to four event sources int
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
-* [Exercise_004a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
+- [Exercise_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
+- [Exercise_004a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
 
 ## Conclusion
 

@@ -94,8 +94,8 @@ START --> RESET: RESET
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
-* [Exercise_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+- [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
+- [Exercise_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Conclusion
 
@@ -118,4 +118,4 @@ Ideal for:
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

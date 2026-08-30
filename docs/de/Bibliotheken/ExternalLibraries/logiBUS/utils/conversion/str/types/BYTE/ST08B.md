@@ -35,9 +35,9 @@ Als strukturierter Datentyp (STRUCT) fungiert `ST08B` als zusammengesetzter Beh�
 
 ## Technische Besonderheiten
 
-*   **Feste Größe:** Die Struktur hat eine fest definierte und vorhersehbare Größe von genau 8 Bytes, was für Speicherallokation und Kommunikationsprotokolle vorteilhaft ist.
-*   **Sequenzielle Anordnung:** Die Bytes sind in der Reihenfolge `B_00` bis `B_07` angeordnet. Diese Reihenfolge ist für die Interpretation der Daten, z.B. bei der Konvertierung in größere Datentypen wie `WORD`, `DWORD` oder `LWORD`, entscheidend.
-*   **TypeHash-Attribut:** Der Datentyp enthält das Attribut `eclipse4diac::core::TypeHash` mit einem leeren Wert (`''`). Dies weist darauf hin, dass für diesen benutzerdefinierten Typ (noch) keine typsichere Prüfung via Hash-Wert konfiguriert wurde.
+-   **Feste Größe:** Die Struktur hat eine fest definierte und vorhersehbare Größe von genau 8 Bytes, was für Speicherallokation und Kommunikationsprotokolle vorteilhaft ist.
+-   **Sequenzielle Anordnung:** Die Bytes sind in der Reihenfolge `B_00` bis `B_07` angeordnet. Diese Reihenfolge ist für die Interpretation der Daten, z.B. bei der Konvertierung in größere Datentypen wie `WORD`, `DWORD` oder `LWORD`, entscheidend.
+-   **TypeHash-Attribut:** Der Datentyp enthält das Attribut `eclipse4diac::core::TypeHash` mit einem leeren Wert (`''`). Dies weist darauf hin, dass für diesen benutzerdefinierten Typ (noch) keine typsichere Prüfung via Hash-Wert konfiguriert wurde.
 
 ## Zustandsübersicht
 
@@ -52,9 +52,9 @@ Da es sich um einen passiven Datentyp und nicht um einen aktiven Funktionsblock 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Einfache BYTE-Array:** Ein Array von 8 `BYTE` (`ARRAY[0..7] OF BYTE`) könnte eine ähnliche Funktion erfüllen. `ST08B` bietet jedoch den Vorteil der benannten Zugriffspfade (`B_01`), die im Gegensatz zu Index-basiertem Zugriff (`Array[1]`) die Code-Lesbarkeit und Wartbarkeit verbessern.
-*   **LWORD:** Der Datentyp `LWORD` repräsentiert ebenfalls 8 Bytes (64 Bit), jedoch als einen einzigen, ununterteilten numerischen Wert. `ST08B` erlaubt den gezielten Zugriff auf jedes einzelne Byte innerhalb dieser 64 Bit.
-*   **Andere STRUCT-Typen:** Ähnliche strukturierte Typen wie `ST04B` (4 Bytes) oder `ST16B` (16 Bytes) dienen demselben Zweck, aber für unterschiedliche Datenmengen. `ST08B` füllt die Lücke für 8-Byte-strukturierte Daten.
+-   **Einfache BYTE-Array:** Ein Array von 8 `BYTE` (`ARRAY[0..7] OF BYTE`) könnte eine ähnliche Funktion erfüllen. `ST08B` bietet jedoch den Vorteil der benannten Zugriffspfade (`B_01`), die im Gegensatz zu Index-basiertem Zugriff (`Array[1]`) die Code-Lesbarkeit und Wartbarkeit verbessern.
+-   **LWORD:** Der Datentyp `LWORD` repräsentiert ebenfalls 8 Bytes (64 Bit), jedoch als einen einzigen, ununterteilten numerischen Wert. `ST08B` erlaubt den gezielten Zugriff auf jedes einzelne Byte innerhalb dieser 64 Bit.
+-   **Andere STRUCT-Typen:** Ähnliche strukturierte Typen wie `ST04B` (4 Bytes) oder `ST16B` (16 Bytes) dienen demselben Zweck, aber für unterschiedliche Datenmengen. `ST08B` füllt die Lücke für 8-Byte-strukturierte Daten.
 
 ## Fazit
 
@@ -64,4 +64,4 @@ Der `ST08B` ist ein einfacher, aber äußerst nützlicher strukturierter Datenty
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

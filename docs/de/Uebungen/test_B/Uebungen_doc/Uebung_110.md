@@ -20,9 +20,9 @@ Verständnis der Begrenzung von Datentypen. Es wird gezeigt, was passiert, wenn 
 
 ![Uebung_110_network](./Uebung_110_network.svg)
 
-  * **`ADD_2`**: Addiert zwei Werte.
-  * **Parameter**: `IN1 = 200`, `IN2 = 200`.
-  * **`F_GT`**: Prüft, ob das Ergebnis größer als 200 ist.
+  - **`ADD_2`**: Addiert zwei Werte.
+  - **Parameter**: `IN1 = 200`, `IN2 = 200`.
+  - **`F_GT`**: Prüft, ob das Ergebnis größer als 200 ist.
 
 -----
 

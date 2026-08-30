@@ -20,7 +20,7 @@ Nutzung des Ereignisses `BUTTON_DOUBLE_CLICK`.
 
 ![Uebung_004c1_AX_network](./Uebung_004c1_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Konfiguriert mit `InputEvent = BUTTON_DOUBLE_CLICK`.
+  - **`DigitalInput_CLK_I1`**: Konfiguriert mit `InputEvent = BUTTON_DOUBLE_CLICK`.
 
 -----
 

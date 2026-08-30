@@ -46,20 +46,20 @@ Keine Adapter vorhanden.
 
 Der **E_RS_SYM_INIT** arbeitet als Zustandsautomat mit fünf Zuständen: **START**, **Init**, **DeInit**, **SET** und **RESET**.
 
-*   **Startverhalten**: Nach einem initialen Ereignis **INIT** mit **QI=TRUE** wird der Block in den Zustand **Init** überführt. Abhängig vom Wert **Q_INIT** wechselt er entweder nach **SET** (**Q** = TRUE) oder nach **RESET** (**Q** = FALSE). Der Ausgangsqualifizierer **QO** übernimmt dabei den Wert von **QI** (also TRUE) und wird über **INITO** ausgegeben.
-*   **Setzen und Rücksetzen**:
-    *   Im Zustand **SET** führt ein **R**-Ereignis in den Zustand **RESET**; die Aktion setzt **Q** auf FALSE (wenn **QI=TRUE**).
-    *   Im Zustand **RESET** führt ein **S**-Ereignis in den Zustand **SET**; die Aktion setzt **Q** auf TRUE (wenn **QI=TRUE**).
-    *   Bei jeder Zustandsänderung wird **QO** auf den aktuellen Wert von **QI** gesetzt und das Ereignis **EO** ausgegeben.
-*   **Deinitialisierung**: Sobald ein **INIT**-Ereignis eintritt, während **QI=FALSE** ist (z. B. Deinitialisierung), wechselt der Block aus **SET** oder **RESET** in den Zustand **DeInit**. Dort wird **QO** auf FALSE gesetzt, und der Block kehrt über **INITO** in den **START**-Zustand zurück. Das Flipflop wird dabei nicht zurückgesetzt – **Q** behält seinen bisherigen Wert.
-*   **Qualifizierer QI**: Die tatsächliche Änderung von **Q** erfolgt nur, wenn **QI=TRUE** ist. Ist **QI=FALSE**, werden die Setz- und Rücksetzsignale ignoriert, aber **QO** gibt dennoch den Wert von **QI** weiter. Dies ermöglicht ein bedingtes Verhalten, z. B. für gültige/ungültige Freigaben.
+-   **Startverhalten**: Nach einem initialen Ereignis **INIT** mit **QI=TRUE** wird der Block in den Zustand **Init** überführt. Abhängig vom Wert **Q_INIT** wechselt er entweder nach **SET** (**Q** = TRUE) oder nach **RESET** (**Q** = FALSE). Der Ausgangsqualifizierer **QO** übernimmt dabei den Wert von **QI** (also TRUE) und wird über **INITO** ausgegeben.
+-   **Setzen und Rücksetzen**:
+    -   Im Zustand **SET** führt ein **R**-Ereignis in den Zustand **RESET**; die Aktion setzt **Q** auf FALSE (wenn **QI=TRUE**).
+    -   Im Zustand **RESET** führt ein **S**-Ereignis in den Zustand **SET**; die Aktion setzt **Q** auf TRUE (wenn **QI=TRUE**).
+    -   Bei jeder Zustandsänderung wird **QO** auf den aktuellen Wert von **QI** gesetzt und das Ereignis **EO** ausgegeben.
+-   **Deinitialisierung**: Sobald ein **INIT**-Ereignis eintritt, während **QI=FALSE** ist (z. B. Deinitialisierung), wechselt der Block aus **SET** oder **RESET** in den Zustand **DeInit**. Dort wird **QO** auf FALSE gesetzt, und der Block kehrt über **INITO** in den **START**-Zustand zurück. Das Flipflop wird dabei nicht zurückgesetzt – **Q** behält seinen bisherigen Wert.
+-   **Qualifizierer QI**: Die tatsächliche Änderung von **Q** erfolgt nur, wenn **QI=TRUE** ist. Ist **QI=FALSE**, werden die Setz- und Rücksetzsignale ignoriert, aber **QO** gibt dennoch den Wert von **QI** weiter. Dies ermöglicht ein bedingtes Verhalten, z. B. für gültige/ungültige Freigaben.
 
 ## Technische Besonderheiten
 
-*   **Symmetrisches Startverhalten**: Der initiale Zustand von **Q** wird explizit über den Parameter **Q_INIT** festgelegt. Dies unterscheidet den Baustein von einem normalen RS-Flipflop, dessen Startzustand undefiniert ist.
-*   **INIT als Ereignis mit Parametern**: Der INIT-Ereigniseingang trägt gleichzeitig die Werte **QI** und **Q_INIT**, sodass Initialisierung und Deinitialisierung klar getrennt sind.
-*   **QC (Event-Qualifier) wird durchgeschliffen**: Bei jeder gültigen Operation (Set, Reset oder INIT) wird **QO** auf den Wert von **QI** gesetzt, sodass die aufrufende Applikation die Gültigkeit der Operation erkennen kann.
-*   **Zustandsmaschine mit fünf Zuständen**: Die Trennung von Start-, Initialisierungs- und Deinitialisierungszuständen ermöglicht ein robustes Verhalten, insbesondere in Automatisierungssystemen mit zyklischen Neustarts.
+-   **Symmetrisches Startverhalten**: Der initiale Zustand von **Q** wird explizit über den Parameter **Q_INIT** festgelegt. Dies unterscheidet den Baustein von einem normalen RS-Flipflop, dessen Startzustand undefiniert ist.
+-   **INIT als Ereignis mit Parametern**: Der INIT-Ereigniseingang trägt gleichzeitig die Werte **QI** und **Q_INIT**, sodass Initialisierung und Deinitialisierung klar getrennt sind.
+-   **QC (Event-Qualifier) wird durchgeschliffen**: Bei jeder gültigen Operation (Set, Reset oder INIT) wird **QO** auf den Wert von **QI** gesetzt, sodass die aufrufende Applikation die Gültigkeit der Operation erkennen kann.
+-   **Zustandsmaschine mit fünf Zuständen**: Die Trennung von Start-, Initialisierungs- und Deinitialisierungszuständen ermöglicht ein robustes Verhalten, insbesondere in Automatisierungssystemen mit zyklischen Neustarts.
 
 ## Zustandsübersicht
 
@@ -73,21 +73,21 @@ Der **E_RS_SYM_INIT** arbeitet als Zustandsautomat mit fünf Zuständen: **START
 
 **Übergänge:**
 
-*   START → Init: INIT ∧ (QI = TRUE)
-*   Init → SET: Q_INIT = TRUE
-*   Init → RESET: Q_INIT = FALSE
-*   SET → RESET: R
-*   RESET → SET: S
-*   SET → DeInit: INIT ∧ (QI = FALSE)
-*   RESET → DeInit: INIT ∧ (QI = FALSE)
-*   DeInit → START: 1 (immer)
+-   START → Init: INIT ∧ (QI = TRUE)
+-   Init → SET: Q_INIT = TRUE
+-   Init → RESET: Q_INIT = FALSE
+-   SET → RESET: R
+-   RESET → SET: S
+-   SET → DeInit: INIT ∧ (QI = FALSE)
+-   RESET → DeInit: INIT ∧ (QI = FALSE)
+-   DeInit → START: 1 (immer)
 
 ## Anwendungsszenarien
 
-*   **Steuerungen mit definiertem Einschaltverhalten**: Wenn nach einem Neustart der Automatisierungsanlage ein bestimmter Startwert für einen Merker oder ein Ausgang benötigt wird (z. B. TRUE für „Anlage läuft“ oder FALSE für „stillgelegt“), kann **Q_INIT** entsprechend gesetzt werden.
-*   **Sichere Resets bei Störungen**: Durch die Deinitialisierung (INIT mit QI=FALSE) kann der Baustein in einen definierten „Ausgangszustand“ versetzt werden, ohne den aktuellen Wert von **Q** zu löschen. Dies ist nützlich, um z. B. einen „Wiederanlauf nach Störung“ zu realisieren.
-*   **Qualifizierte Setz- und Rücksetzoperationen**: Über **QI** kann eine übergeordnete Bedingung (z. B. „Freigabe aktiver Betrieb“) geschaltet werden. Nur wenn **QI** = TRUE, haben Setzen und Rücksetzen tatsächlich Auswirkung auf **Q**.
-*   **Initialisierung von Zustandsautomaten**: Der Baustein eignet sich hervorragend als Grundbaustein für eigene Zustandsautomaten, die bei INIT einen bestimmten Anfangszustand einnehmen sollen.
+-   **Steuerungen mit definiertem Einschaltverhalten**: Wenn nach einem Neustart der Automatisierungsanlage ein bestimmter Startwert für einen Merker oder ein Ausgang benötigt wird (z. B. TRUE für „Anlage läuft“ oder FALSE für „stillgelegt“), kann **Q_INIT** entsprechend gesetzt werden.
+-   **Sichere Resets bei Störungen**: Durch die Deinitialisierung (INIT mit QI=FALSE) kann der Baustein in einen definierten „Ausgangszustand“ versetzt werden, ohne den aktuellen Wert von **Q** zu löschen. Dies ist nützlich, um z. B. einen „Wiederanlauf nach Störung“ zu realisieren.
+-   **Qualifizierte Setz- und Rücksetzoperationen**: Über **QI** kann eine übergeordnete Bedingung (z. B. „Freigabe aktiver Betrieb“) geschaltet werden. Nur wenn **QI** = TRUE, haben Setzen und Rücksetzen tatsächlich Auswirkung auf **Q**.
+-   **Initialisierung von Zustandsautomaten**: Der Baustein eignet sich hervorragend als Grundbaustein für eigene Zustandsautomaten, die bei INIT einen bestimmten Anfangszustand einnehmen sollen.
 
 ## Vergleich mit ähnlichen Bausteinen
 

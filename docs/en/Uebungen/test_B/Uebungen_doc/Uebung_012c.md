@@ -15,8 +15,8 @@ Handling the data type `STRING` during storage.
 
 ### Function Blocks (FBs)
 
-* **`INI`**: Configured here for the data type `STRING`.
-* **`Q_StringValue`**: An ISOBUS output module specifically designed for displaying text (instead of numbers).
+- **`INI`**: Configured here for the data type `STRING`.
+- **`Q_StringValue`**: An ISOBUS output module specifically designed for displaying text (instead of numbers).
 
 -----
 

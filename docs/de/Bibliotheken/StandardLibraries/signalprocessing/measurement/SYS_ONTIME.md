@@ -82,7 +82,7 @@ Im Vergleich zu anderen Service Interface Funktionsblöcken bietet SYS_ONTIME ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_140](../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)
+- [Uebung_140](../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)
 
 ## Fazit
 

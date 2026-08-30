@@ -15,8 +15,8 @@ Encapsulation of the logiBUS I/O logic. By creating a custom type, the complexit
 
 ### Internal Function Blocks (FBs)
 
-* **`IX`**: Type `logiBUS_IX`. Reads the hardware pin assigned via the parameter `Input`.
-* **`QX`**: Type `logiBUS_QX`. Switches the hardware pin assigned via the parameter `Output`.
+- **`IX`**: Type `logiBUS_IX`. Reads the hardware pin assigned via the parameter `Input`.
+- **`QX`**: Type `logiBUS_QX`. Switches the hardware pin assigned via the parameter `Output`.
 
 -----
 
@@ -24,11 +24,11 @@ Encapsulation of the logiBUS I/O logic. By creating a custom type, the complexit
 
 [cite_start]The block has two configuration inputs[cite: 1]:
 
-* **`Input`**: Expects a constant of type `logiBUS_DI_S` (e.g., `Input_I1`). ...07qz**: Type `logiBUS_QX`. Switches the hardware pin assigned via the parameter `Output`.
-* * **`Output`**: Expects a constant of type `logiBUS_DO_S` (e.g., `Output_Q1`).
+- **`Input`**: Expects a constant of type `logiBUS_DI_S` (e.g., `Input_I1`). ...07qz**: Type `logiBUS_QX`. Switches the hardware pin assigned via the parameter `Output`.
+- * **`Output`**: Expects a constant of type `logiBUS_DO_S` (e.g., `Output_Q1`).
 
 Internally, the event ports (`IND -> REQ`) and the data ports (`IN -> OUT`) are hard-coded. Once this type is placed in a project, it operates completely independently on the assigned hardware channel.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003a](Uebung_003a.md)
+- [Exercise_003a](Uebung_003a.md)

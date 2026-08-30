@@ -100,13 +100,13 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_070](../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
-* [Uebung_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
-* [Uebung_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
-* [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
-* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Uebung_070](../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
+- [Uebung_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
+- [Uebung_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+- [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
+- [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010a`.
 
 ![Uebung_010a_network](./Uebung_010a_network.svg)
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -24,8 +24,8 @@ Erweiterung der ISOBUS-Steuerung auf mehrere Kanäle.
 
 ### Funktionsbausteine (FBs)
 
-  * **`SoftKey_F1`** ➡️ **`DigitalOutput_Q1`**
-  * **`SoftKey_F2`** ➡️ **`DigitalOutput_Q2`**
+  - **`SoftKey_F1`** ➡️ **`DigitalOutput_Q1`**
+  - **`SoftKey_F2`** ➡️ **`DigitalOutput_Q2`**
 
 Beide Signalpfade nutzen die ereignisbasierte `IND -> REQ` Verbindung.
 
@@ -39,4 +39,4 @@ Dies demonstriert, dass das UT-Interface beliebig skaliert werden kann. Jeder So
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

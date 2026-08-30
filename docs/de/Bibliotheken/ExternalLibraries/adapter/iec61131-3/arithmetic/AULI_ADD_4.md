@@ -32,14 +32,14 @@ Der Funktionsbaustein `AULI_ADD_4` ist ein generischer Funktionsbaustein (FB), d
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Summand für die Additionsoperation.
-*   **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Summand für die Additionsoperation.
-*   **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Summand für die Additionsoperation.
-*   **IN4** (Typ: `adapter::types::unidirectional::AULI`): Vierter Summand für die Additionsoperation.
+-   **IN1** (Typ: `adapter::types::unidirectional::AULI`): Erster Summand für die Additionsoperation.
+-   **IN2** (Typ: `adapter::types::unidirectional::AULI`): Zweiter Summand für die Additionsoperation.
+-   **IN3** (Typ: `adapter::types::unidirectional::AULI`): Dritter Summand für die Additionsoperation.
+-   **IN4** (Typ: `adapter::types::unidirectional::AULI`): Vierter Summand für die Additionsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AULI`): Enthält das Ergebnis der Addition (`IN1 + IN2 + IN3 + IN4`) sowie das dazugehörige Ausgabe-Ereignis.
+-   **OUT** (Typ: `adapter::types::unidirectional::AULI`): Enthält das Ergebnis der Addition (`IN1 + IN2 + IN3 + IN4`) sowie das dazugehörige Ausgabe-Ereignis.
 
 ## Funktionsweise
 
@@ -51,9 +51,9 @@ Das berechnete Ergebnis wird an den Ausgangs-Adapter `OUT` übergeben und gleich
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der FB basiert auf der generischen Klasse `GEN_AULI_ADD`. Das bedeutet, dass er flexibel auf verschiedene Datentypen innerhalb der `AULI`-Adapterstruktur reagieren kann.
-*   **Unidirektionale Adapter:** Es werden unidirektionale Adapter (`unidirectional::AULI`) verwendet. Dies vereinfacht den Datenfluss, da die Informationen und Ereignisse ausschließlich in eine Richtung (von den Eingängen zum Ausgang) fließen.
-*   **Reduzierter Verdrahtungsaufwand:** Durch die Verwendung von Adaptern müssen Ereignis- und Datenleitungen nicht einzeln gezogen werden. Ein einziger Adapter-Kanal bündelt alle relevanten Signale.
+-   **Generischer Baustein:** Der FB basiert auf der generischen Klasse `GEN_AULI_ADD`. Das bedeutet, dass er flexibel auf verschiedene Datentypen innerhalb der `AULI`-Adapterstruktur reagieren kann.
+-   **Unidirektionale Adapter:** Es werden unidirektionale Adapter (`unidirectional::AULI`) verwendet. Dies vereinfacht den Datenfluss, da die Informationen und Ereignisse ausschließlich in eine Richtung (von den Eingängen zum Ausgang) fließen.
+-   **Reduzierter Verdrahtungsaufwand:** Durch die Verwendung von Adaptern müssen Ereignis- und Datenleitungen nicht einzeln gezogen werden. Ein einziger Adapter-Kanal bündelt alle relevanten Signale.
 
 ## Zustandsübersicht
 
@@ -64,14 +64,14 @@ Der Funktionsbaustein verhält sich ereignisgesteuert und zustandslos (bzw. besi
 
 ## Anwendungsszenarien
 
-*   **Messwert-Summierung:** Zusammenfassung von vier einzelnen Sensorwerten (z. B. Energiemessungen von vier Verbrauchern, Durchflussmengen von vier Rohren) zu einem Gesamtwert.
-*   **Mittelwertvorbereitung:** Vorsummierung von vier Datenpunkten vor einer anschließenden Division zur Mittelwertbildung.
-*   **Modulare Steuerungsarchitekturen:** Einsatz in komplexen Systemen, in denen Signale bereits standardisiert als `AULI`-Adapter vorliegen.
+-   **Messwert-Summierung:** Zusammenfassung von vier einzelnen Sensorwerten (z. B. Energiemessungen von vier Verbrauchern, Durchflussmengen von vier Rohren) zu einem Gesamtwert.
+-   **Mittelwertvorbereitung:** Vorsummierung von vier Datenpunkten vor einer anschließenden Division zur Mittelwertbildung.
+-   **Modulare Steuerungsarchitekturen:** Einsatz in komplexen Systemen, in denen Signale bereits standardisiert als `AULI`-Adapter vorliegen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard-ADD-Bausteine (z. B. `ADD` aus der IEC 61131-3):** Diese nutzen direkte Daten- und Ereignisports (wie `REQ`, `CNF`, `IN1`, `IN2`). `AULI_ADD_4` hingegen kapselt diese Schnittstellen vollständig in Adaptern, was zu einem aufgeräumteren Control-Flow-Diagramm führt.
-*   **AULI_ADD_2:** Ein ähnlicher Baustein, der jedoch nur zwei Eingänge besitzt. `AULI_ADD_4` spart bei der Addition von vier Werten die Kaskadierung mehrerer einzelner Additions-Bausteine ein.
+-   **Standard-ADD-Bausteine (z. B. `ADD` aus der IEC 61131-3):** Diese nutzen direkte Daten- und Ereignisports (wie `REQ`, `CNF`, `IN1`, `IN2`). `AULI_ADD_4` hingegen kapselt diese Schnittstellen vollständig in Adaptern, was zu einem aufgeräumteren Control-Flow-Diagramm führt.
+-   **AULI_ADD_2:** Ein ähnlicher Baustein, der jedoch nur zwei Eingänge besitzt. `AULI_ADD_4` spart bei der Addition von vier Werten die Kaskadierung mehrerer einzelner Additions-Bausteine ein.
 
 ## Änderungserkennung
 

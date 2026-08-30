@@ -17,7 +17,7 @@ Using a `Button_IX` function block.
 
 ![Uebung_010a2_network](./Uebung_010a2_network.svg)
 
-* **`Button_A1`**: Type `isobus::UT::io::Button::Button_IX`. References the object `Button_A1` in the pool.
+- **`Button_A1`**: Type `isobus::UT::io::Button::Button_IX`. References the object `Button_A1` in the pool.
 
 -----
 

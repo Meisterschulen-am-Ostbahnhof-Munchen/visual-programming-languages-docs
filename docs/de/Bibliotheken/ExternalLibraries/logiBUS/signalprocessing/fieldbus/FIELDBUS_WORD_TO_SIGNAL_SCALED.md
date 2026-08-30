@@ -46,20 +46,20 @@ Keine Adapter vorhanden.
 
 Der Baustein arbeitet zustandsgesteuert:
 
-1. **INIT‑Zustand**:  
+1. **INIT‑Zustand**:
    Nach dem Eintreten des `INIT`-Ereignisses wird der Initialisierungsalgorithmus (leer) ausgeführt und das Ereignis `INITO` ausgegeben. Die Skalierungsfaktoren werden dabei an den Eingängen `SCALE` und `OFFSET` übernommen (die Werte liegen bereits an den Eingängen an).
 
-2. **REQ‑Zustand** (Hauptlogik):  
+2. **REQ‑Zustand** (Hauptlogik):
    Bei jedem `REQ`-Ereignis wird folgender Algorithmus durchlaufen:
 
    - Der eingehende `IN` (WORD) wird zunächst in `UINT` konvertiert.
    - Liegt dieser Wert **kleiner oder gleich** dem in der globalen Konstanten `VALID_SIGNAL_W` definierten Grenzwert (ebenfalls als WORD/UINT), gilt das Signal als **gültig**.
-   - Bei Gültigkeit:  
-     `OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`  
+   - Bei Gültigkeit:
+     `OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`
      `VALID = TRUE`
 
-   - Bei Ungültigkeit:  
-     `OUT = 0.0`  
+   - Bei Ungültigkeit:
+     `OUT = 0.0`
      `VALID = FALSE`
 
    - Anschließend wird das `CNF`-Ereignis ausgelöst, das die aktualisierten Ausgänge `OUT` und `VALID` begleitet.
@@ -106,4 +106,4 @@ Der Funktionsblock bietet eine kompakte und robuste Lösung zur Aufbereitung von
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -45,16 +45,16 @@ Der Funktionsblock `NVS_AIS` dient zum Speichern und Laden von Zeichenketten (ST
 
 ## Funktionsweise
 
-1. **Initialisierung**  
+1. **Initialisierung**
    Ein Ereignis am `INIT`-Eingang startet die interne Logik. Der Baustein ruft den eingebetteten `NVS`‑Funktionsblock auf, der den nichtflüchtigen Speicher vorbereitet. Die mitgelieferten Daten (`QI`, `KEY`, `DEFAULT_VALUE`) werden an den internen Baustein weitergeleitet.
 
-2. **Lesevorgang**  
+2. **Lesevorgang**
    Nach erfolgreicher INIT‑Phase (Ereignis `INITO` des internen NVS) wird automatisch der `GET`‑Ereigniseingang des internen NVS aktiviert. Der gelesene Wert (oder der `DEFAULT_VALUE`, falls kein Eintrag existiert) wird über den `AIS_OUT`‑Adapter als `E1`‑Ereignis und `D1`‑Daten ausgegeben.
 
-3. **Schreibvorgang**  
+3. **Schreibvorgang**
    Über den `AIS_IN`‑Adapter kann ein neuer Wert empfangen werden. Das assoziierte `SET`‑Ereignis (E1) wird auf den internen NVS‑Baustein geleitet, der den empfangenen Wert (D1) unter dem zuvor gesetzten `KEY` speichert. Die Bestätigung (`SETO`) wird wiederum über den `AIS_OUT`‑Adapter gesendet.
 
-4. **Rückmeldung**  
+4. **Rückmeldung**
    Sowohl nach dem Lesen als auch nach dem Schreiben gibt der Baustein den Status (`QO`, `STATUS`) sowie das `INITO`-Ereignis aus. Der Status kann für Fehlerdiagnosen genutzt werden.
 
 ## Technische Besonderheiten
@@ -87,5 +87,5 @@ Der Baustein `NVS_AIS` selbst besitzt keine explizite Zustandsmaschine. Sein Ver
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

@@ -87,10 +87,10 @@ Comparison with [E_RS](../../../../../StandardLibraries/events/E_RS.md)
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006b_AX.md)
-* [Exercise_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)
-* [Exercise_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
-* [Exercise_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
+- [Exercise_006b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006b_AX.md)
+- [Exercise_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)
+- [Exercise_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+- [Exercise_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
 
 ## Conclusion
 
@@ -100,6 +100,6 @@ The AX_RS function block provides a simple and efficient implementation of an RS
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

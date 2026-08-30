@@ -72,22 +72,22 @@ Diese Bausteine verarbeiten die Signale logisch.
 Die Schaltung realisiert eine klassische Wendeschützsteuerung mit einer Besonderheit in der Umschaltung durch Tasterverriegelung und Zeitverzögerung.
 
 1.  **Start Drehrichtung 1 (Q5):**
-    *   Das Signal von **Input_I1** setzt den Speicher **AX_SR_A**.
-    *   Der Ausgang von **AX_SR_A** wird über einen Splitter (**AX_SPLIT_2_A**) direkt auf **Output_Q5** geleitet. Der Motor läuft in Richtung 1.
+    -   Das Signal von **Input_I1** setzt den Speicher **AX_SR_A**.
+    -   Der Ausgang von **AX_SR_A** wird über einen Splitter (**AX_SPLIT_2_A**) direkt auf **Output_Q5** geleitet. Der Motor läuft in Richtung 1.
 
 2.  **Umschaltung / Start Drehrichtung 2 (Q6):**
-    *   Das Signal von **Input_I2** gelangt auf einen Splitter (**AX_SPLIT_2**).
-    *   **Zweig 1:** Das Signal resettet sofort den Speicher **AX_SR_A**. Damit wird **Output_Q5** unverzüglich abgeschaltet.
-    *   **Zweig 2:** Das Signal startet den Timer **AX_TON**. Nach Ablauf von 50ms (Parameter `PT`) wird der Speicher **AX_SR_B** gesetzt.
-    *   Der Ausgang von **AX_SR_B** aktiviert über **AX_SPLIT_2_B** den **Output_Q6**. Der Motor läuft nun in Richtung 2.
-    *   *Hinweis:* Die 50ms Verzögerung dient als Verriegelungszeit, um einen Kurzschluss zwischen den Phasen bei direkter Umschaltung zu verhindern.
+    -   Das Signal von **Input_I2** gelangt auf einen Splitter (**AX_SPLIT_2**).
+    -   **Zweig 1:** Das Signal resettet sofort den Speicher **AX_SR_A**. Damit wird **Output_Q5** unverzüglich abgeschaltet.
+    -   **Zweig 2:** Das Signal startet den Timer **AX_TON**. Nach Ablauf von 50ms (Parameter `PT`) wird der Speicher **AX_SR_B** gesetzt.
+    -   Der Ausgang von **AX_SR_B** aktiviert über **AX_SPLIT_2_B** den **Output_Q6**. Der Motor läuft nun in Richtung 2.
+    -   *Hinweis:* Die 50ms Verzögerung dient als Verriegelungszeit, um einen Kurzschluss zwischen den Phasen bei direkter Umschaltung zu verhindern.
 
 3.  **Stopp Drehrichtung 2:**
-    *   Das Signal von **Input_I3** resettet den Speicher **AX_SR_B**, wodurch **Output_Q6** abschaltet.
+    -   Das Signal von **Input_I3** resettet den Speicher **AX_SR_B**, wodurch **Output_Q6** abschaltet.
 
 4.  **Betriebsanzeige (Q56):**
-    *   Die Signale der beiden Drehrichtungen (von den Splittern A und B kommend) werden im Baustein **AX_OR_2** zusammengeführt.
-    *   Sobald entweder Q5 oder Q6 aktiv ist, wird **Output_Q56** angesteuert. Dies dient als Indikator, dass der Motor in Betrieb ist.
+    -   Die Signale der beiden Drehrichtungen (von den Splittern A und B kommend) werden im Baustein **AX_OR_2** zusammengeführt.
+    -   Sobald entweder Q5 oder Q6 aktiv ist, wird **Output_Q56** angesteuert. Dies dient als Indikator, dass der Motor in Betrieb ist.
 
 ## Zusammenfassung
 
@@ -97,4 +97,4 @@ Die `Uebung_160b2_AX` demonstriert eine fortgeschrittene Motorsteuerung unter Ve
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

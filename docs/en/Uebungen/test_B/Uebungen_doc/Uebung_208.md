@@ -32,7 +32,7 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 
 *This prevents both function blocks from simultaneously setting `Q1` = TRUE.
 
-* ... - **DigitalOutput_Q1, DigitalOutput_Q2**
+- ... - **DigitalOutput_Q1, DigitalOutput_Q2**
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
 - `QI` = `TRUE` (Internally enabled)
@@ -48,10 +48,10 @@ Each DigitalInput FB (logiBUS_IX) waits for a signal change at its associated ha
 2. **Interlock Logic**
 - The event `IND` of the respective input is directly forwarded to the `REQ` input of the associated `ILOCK_FB_SR`.
 - Simultaneously, the data value `IN` is applied to the corresponding set or reset input of the ILOCK:
-* `DigitalInput_S1.IN` → `ILOCK_SR_1.S1`
-* `DigitalInput_R1.IN` → `ILOCK_SR_1.R`
-* `DigitalInput_S2.IN` → `ILOCK_SR_2.S1`
-* `DigitalInput_R2.IN` → `ILOCK_SR_2.R`
+- `DigitalInput_S1.IN` → `ILOCK_SR_1.S1`
+- `DigitalInput_R1.IN` → `ILOCK_SR_1.R`
+- `DigitalInput_S2.IN` → `ILOCK_SR_2.S1`
+- `DigitalInput_R2.IN` → `ILOCK_SR_2.R`
 - The two ILOCK modules are interlocked via their adapter connections:
 
 ILOCK_SR_1.ILOCK_OUT` → `ILOCK_SR_2.ILOCK_IN`
@@ -61,8 +61,8 @@ This means that `ILOCK_SR_2` can only set its output `Q1` to TRUE if `ILOCK_SR_1
 3. **Output**
 - After processing, the ILOCK block generates the event `CNF`. This triggers the associated DigitalOutput FB (logiBUS_QX) via its `REQ` input.
 - Simultaneously, the result `Q1` of the ILOCK is passed to the data output `OUT` of the DigitalOutput:
-* `ILOCK_SR_1.Q1` → `DigitalOutput_Q1.OUT`
-* `ILOCK_SR_2.Q1` → `DigitalOutput_Q2.OUT`
+- `ILOCK_SR_1.Q1` → `DigitalOutput_Q1.OUT`
+- `ILOCK_SR_2.Q1` → `DigitalOutput_Q2.OUT`
 
 **Learning Objectives:**
 
@@ -86,6 +86,6 @@ In this exercise, a mutual interlock of two outputs was implemented using the fu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -20,9 +20,9 @@ Kapselung der Ausgangs-Logik. Der Baustein trennt die Ablauf-Logik (wann muss wa
 
 ![Uebung_026_sub_network](./Uebung_026_sub_network.svg)
 
-  * **`E_SR`**: Speichert, ob der Aktor gerade aktiv sein soll.
-  * **`QX`**: Typ `logiBUS_QX`. Steuert den physischen Port an.
-  * **`E_SWITCH`**: Dient als Rückmelde-Gatter. [cite_start]Nur wenn der Speicher tatsächlich auf TRUE steht, wird das Bestätigungs-Event am Ausgang `EO1` weitergegeben[cite: 1].
+  - **`E_SR`**: Speichert, ob der Aktor gerade aktiv sein soll.
+  - **`QX`**: Typ `logiBUS_QX`. Steuert den physischen Port an.
+  - **`E_SWITCH`**: Dient als Rückmelde-Gatter. [cite_start]Nur wenn der Speicher tatsächlich auf TRUE steht, wird das Bestätigungs-Event am Ausgang `EO1` weitergegeben[cite: 1].
 
 -----
 
@@ -30,13 +30,12 @@ Kapselung der Ausgangs-Logik. Der Baustein trennt die Ablauf-Logik (wann muss wa
 
 [cite_start]Der Baustein bietet eine klare Event-Schnittstelle[cite: 1]:
 
-*   **`SET`**: Schaltet den Aktor ein.
-*   **`RESET`**: Schaltet den Aktor aus.
-*   **`EO1`**: Meldet den erfolgreichen Vollzug des Einschaltbefehls zurück (Quittierung).
+-   **`SET`**: Schaltet den Aktor ein.
+-   **`RESET`**: Schaltet den Aktor aus.
+-   **`EO1`**: Meldet den erfolgreichen Vollzug des Einschaltbefehls zurück (Quittierung).
 
 In der Hauptanwendung ermöglicht dieser Typ eine sehr übersichtliche Verschaltung der Phasenübergänge, da die Details der Speicherverwaltung und Hardware-Adressierung im Inneren verborgen bleiben.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_026](Uebung_026.md)
-
+- [Uebung_026](Uebung_026.md)

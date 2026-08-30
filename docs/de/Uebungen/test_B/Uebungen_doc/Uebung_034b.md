@@ -20,11 +20,11 @@ Kombination von repetierenden Ereignissen (`HOLD`) und Zählern zur Steuerung ei
 
 ![Uebung_034b_network](./Uebung_034b_network.svg)
 
-  * **`IE_SPEED_UP`**: Sendet alle 200ms ein Event, solange Taster **I1** gehalten wird.
-  * **`IE_SPEED_DOWN`**: Sendet alle 200ms ein Event, solange Taster **I2** gehalten wird.
-  * **`E_CTUD_UDINT`**: Speichert den aktuellen "Leistungs-Zählerstand".
-  * **`F_MUL`**: Skaliert den Zählerstand (hier Faktor 8) auf den Zielbereich für den PWM-Baustein.
-  * **`PWMOutput_Q1`**: Der Leistungsausgang.
+  - **`IE_SPEED_UP`**: Sendet alle 200ms ein Event, solange Taster **I1** gehalten wird.
+  - **`IE_SPEED_DOWN`**: Sendet alle 200ms ein Event, solange Taster **I2** gehalten wird.
+  - **`E_CTUD_UDINT`**: Speichert den aktuellen "Leistungs-Zählerstand".
+  - **`F_MUL`**: Skaliert den Zählerstand (hier Faktor 8) auf den Zielbereich für den PWM-Baustein.
+  - **`PWMOutput_Q1`**: Der Leistungsausgang.
 
 -----
 
@@ -41,5 +41,5 @@ Dies ermöglicht eine sehr feinfühlige Steuerung von Antrieben oder Beleuchtung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

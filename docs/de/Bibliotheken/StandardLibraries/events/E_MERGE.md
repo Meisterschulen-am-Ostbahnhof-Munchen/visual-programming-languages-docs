@@ -74,8 +74,8 @@ Diese Bausteine erlauben die einfache Zusammenführung von bis zu vier Ereignisq
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
-* [Uebung_004a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
+- [Uebung_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
+- [Uebung_004a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
 
 ## Fazit
 

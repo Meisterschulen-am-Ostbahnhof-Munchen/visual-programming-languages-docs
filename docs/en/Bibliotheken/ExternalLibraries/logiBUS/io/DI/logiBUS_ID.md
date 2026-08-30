@@ -75,7 +75,7 @@ Compared to standard digital input blocks, logiBUS_ID:
 
 ## 🛠️ Related exercises
 
-* [Exercise_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
+- [Exercise_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
 
 ## Conclusion
 
@@ -85,4 +85,4 @@ The logiBUS_ID function block represents a specialized interface for logiBUS inp
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

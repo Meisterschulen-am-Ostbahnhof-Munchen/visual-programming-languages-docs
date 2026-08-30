@@ -15,10 +15,10 @@ The sub-application `Uebung_020e2_AX.SUB` uses a `E_CYCLE` block for clocking.
 
 ![Uebung_020e2_AX_network](./Uebung_020e2_AX_network.svg)
 
-* **`AX_FB_TOF`**: The off-delay timer.
-* **`E_CYCLE`**: Provides the clock signal (500 ms) for the timer.
-* **`AX_SWITCH_I1`**: Starts the clock signal when the input is activated.
-* **`AX_SWITCH_Q1`**: Stops the clock signal only when the timer output has also dropped out (run-on timer complete).
+- **`AX_FB_TOF`**: The off-delay timer.
+- **`E_CYCLE`**: Provides the clock signal (500 ms) for the timer.
+- **`AX_SWITCH_I1`**: Starts the clock signal when the input is activated.
+- **`AX_SWITCH_Q1`**: Stops the clock signal only when the timer output has also dropped out (run-on timer complete).
 
 -----
 

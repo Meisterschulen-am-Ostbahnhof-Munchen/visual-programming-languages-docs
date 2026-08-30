@@ -56,7 +56,7 @@ This mechanism reduces the number of events in the system by reacting only to ac
 
 ## 🛠️ Related Exercises
 
-* [Exercise_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
+- [Exercise_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
 
 ## Conclusion
 

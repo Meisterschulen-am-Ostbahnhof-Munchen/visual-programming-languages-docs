@@ -13,35 +13,35 @@ The function block `sequence_ET_08` is a sequencer with eight outputs. It allows
 
 ### **Event Inputs**
 
-* `START_S1`: Jumps from state `START` to state `State_01`. Transfers all timestamps (`DT_S1_S2` to `DT_S8_START`).
-* `S1_S2`: Jumps from `State_01` to `State_02`.
-* `S2_S3`: Jumps from `State_02` to `State_03`.
-* `S3_S4`: Jumps from `State_03` to `State_04`.
-* `S4_S5`: Jumps from `State_04` to `State_05`.
-* `S5_S6`: Jumps from `State_05` to `State_06`.
-* `S6_S7`: Jumps from `State_06` to `State_07`.
-* `S7_S8`: Jumps from `State_07` to `State_08`.
-* `S8_START`: Jumps from `State_08` back to `START`.
-* `RESET`: Resets the function block from any state back to `START`.
+- `START_S1`: Jumps from state `START` to state `State_01`. Transfers all timestamps (`DT_S1_S2` to `DT_S8_START`).
+- `S1_S2`: Jumps from `State_01` to `State_02`.
+- `S2_S3`: Jumps from `State_02` to `State_03`.
+- `S3_S4`: Jumps from `State_03` to `State_04`.
+- `S4_S5`: Jumps from `State_04` to `State_05`.
+- `S5_S6`: Jumps from `State_05` to `State_06`.
+- `S6_S7`: Jumps from `State_06` to `State_07`.
+- `S7_S8`: Jumps from `State_07` to `State_08`.
+- `S8_START`: Jumps from `State_08` back to `START`.
+- `RESET`: Resets the function block from any state back to `START`.
 
 ### **Event Outputs**
 
-* `CNF`: Execution confirmation. Set with every state change and transmits the current state number (`STATE_NR`).
-* `EO_S1` to `EO_S8`: State-specific event outputs. These inputs are triggered upon entering the corresponding state (`State_01` to `State_08`) and transmit the respective Boolean data output (`DO_S1` to `DO_S8`).
+- `CNF`: Execution confirmation. Set with every state change and transmits the current state number (`STATE_NR`).
+- `EO_S1` to `EO_S8`: State-specific event outputs. These inputs are triggered upon entering the corresponding state (`State_01` to `State_08`) and transmit the respective Boolean data output (`DO_S1` to `DO_S8`).
 
 ### **Data Inputs**
 
-* `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the duration for the automatic transition from the current to the next state. If the value is set to `NO_TIME`, the timed transition for this step is disabled, and an event is required.
+- `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the duration for the automatic transition from the current to the next state. If the value is set to `NO_TIME`, the timed transition for this step is disabled, and an event is required.
 
 *
 ### **Data Outputs**
 
-* `STATE_NR` (Type `SINT`): Outputs the current state number (`START = 0`, `State_01 = 1`, ..., `State_08 = 8`).
-* `DO_S1` to `DO_S8` (Type `BOOL`): Logical outputs that are `TRUE` as long as the function block is in the corresponding state (`State_01` to `State_08`).
+- `STATE_NR` (Type `SINT`): Outputs the current state number (`START = 0`, `State_01 = 1`, ..., `State_08 = 8`).
+- `DO_S1` to `DO_S8` (Type `BOOL`): Logical outputs that are `TRUE` as long as the function block is in the corresponding state (`State_01` to `State_08`).
 
 ### **Adapter**
 
-* `timeOut` (Type `iec61499::events::ATimeOut`): A timer adapter used to implement timed state transitions.
+- `timeOut` (Type `iec61499::events::ATimeOut`): A timer adapter used to implement timed state transitions.
 
 ## Functionality
 
@@ -62,10 +62,10 @@ The `RESET` event leads to a dedicated reset state (`sRESET`), which switches of
 
 ## Technical Features
 
-* **Hybrid Transitions:** Each step offers two parallel transition conditions (event OR time), providing maximum flexibility.
-* **Safe State Handling:** The timer is always stopped during a state change, and the outputs are cleanly deactivated by defined exit algorithms.
-* **Configurable Times:** The time for each step can be set individually or deactivated using `NO_TIME`.
-* **Explicit State Feedback:** The output `STATE_NR` allows for easy external monitoring of the current step position.
+- **Hybrid Transitions:** Each step offers two parallel transition conditions (event OR time), providing maximum flexibility.
+- **Safe State Handling:** The timer is always stopped during a state change, and the outputs are cleanly deactivated by defined exit algorithms.
+- **Configurable Times:** The time for each step can be set individually or deactivated using `NO_TIME`.
+- **Explicit State Feedback:** The output `STATE_NR` allows for easy external monitoring of the current step position.
 
 ## State Overview
 
@@ -76,10 +76,10 @@ The `RESET` event leads to a dedicated reset state (`sRESET`), which switches of
 
 ## Application Scenarios
 
-* Control of cyclic processes in packaging or manufacturing machines.
-* Step sequence for an automated test or calibration process.
-* Control of an exposure or rinsing sequence in semiconductor manufacturing.
-* General state machines where steps can be triggered by both sensor input (events) and fixed time intervals.
+- Control of cyclic processes in packaging or manufacturing machines.
+- Step sequence for an automated test or calibration process.
+- Control of an exposure or rinsing sequence in semiconductor manufacturing.
+- General state machines where steps can be triggered by both sensor input (events) and fixed time intervals.
 
 ## ⚖️ Comparison with similar components
 
@@ -94,4 +94,4 @@ The `sequence_ET_08` is a robust and easy-to-configure sequencer block for IEC 6
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter block on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter block on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

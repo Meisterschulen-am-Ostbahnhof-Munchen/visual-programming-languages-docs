@@ -17,8 +17,8 @@ Two pairs of input and output blocks are used:
 
 ![Uebung_003_network](./Uebung_003_network.svg)
 
-* **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (Channel 1). [cite_start]Connects hardware input `I1` with hardware output `Q1`[cite: 1].
-* **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (Channel 2). [cite_start]Connects hardware input `I2` with hardware output `Q2`[cite: 1].
+- **`DigitalInput_I1` & `DigitalOutput_Q1`**: The first pair (Channel 1). [cite_start]Connects hardware input `I1` with hardware output `Q1`[cite: 1].
+- **`DigitalInput_I2` & `DigitalOutput_Q2`**: The second pair (Channel 2). [cite_start]Connects hardware input `I2` with hardware output `Q2`[cite: 1].
 
 -----
 
@@ -56,6 +56,6 @@ Two independent electric motors are controlled in an agricultural machine. Switc
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

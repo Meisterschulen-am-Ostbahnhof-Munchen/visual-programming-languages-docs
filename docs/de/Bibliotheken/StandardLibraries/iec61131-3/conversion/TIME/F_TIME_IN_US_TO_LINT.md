@@ -59,9 +59,9 @@ Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen We
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
 
-*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
-*   **Beispiel:** `500 * T#1ms = T#500ms`
-*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+-   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+-   **Beispiel:** `500 * T#1ms = T#500ms`
+-   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

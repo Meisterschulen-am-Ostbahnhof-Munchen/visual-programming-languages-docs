@@ -13,20 +13,20 @@ Der Funktionsblock `OR_2_BOOL` führt eine logische ODER-Verknüpfung (Disjunkti
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden die an den Daten-Eingängen `IN1` und `IN2` anliegenden Werte gelesen und die ODER-Operation durchgeführt.
+-   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden die an den Daten-Eingängen `IN1` und `IN2` anliegenden Werte gelesen und die ODER-Operation durchgeführt.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Execution Confirmation): Dieses Ereignis wird nach Abschluss der Berechnung erzeugt. Es signalisiert, dass das Ergebnis an den Daten-Ausgang `OUT` ausgegeben wurde und gültig ist.
+-   **CNF** (Execution Confirmation): Dieses Ereignis wird nach Abschluss der Berechnung erzeugt. Es signalisiert, dass das Ergebnis an den Daten-Ausgang `OUT` ausgegeben wurde und gültig ist.
 
 ### **Daten-Eingänge**
 
-*   **IN1** (BOOL): Erster Operand für die ODER-Operation.
-*   **IN2** (BOOL): Zweiter Operand für die ODER-Operation.
+-   **IN1** (BOOL): Erster Operand für die ODER-Operation.
+-   **IN2** (BOOL): Zweiter Operand für die ODER-Operation.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (BOOL): Ergebnis der logischen ODER-Verknüpfung von `IN1` und `IN2`. Der Ausgangswert ist `TRUE`, wenn mindestens einer der beiden Eingänge `TRUE` ist. Andernfalls ist er `FALSE`.
+-   **OUT** (BOOL): Ergebnis der logischen ODER-Verknüpfung von `IN1` und `IN2`. Der Ausgangswert ist `TRUE`, wenn mindestens einer der beiden Eingänge `TRUE` ist. Andernfalls ist er `FALSE`.
 
 ### **Adapter**
 
@@ -53,9 +53,9 @@ Die Wahrheitstabelle der Operation lautet:
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist als generischer Baustein (`GEN_OR`) gekennzeichnet, was bedeutet, dass er als Basis für die Ableitung ähnlicher Bausteine mit anderen Datentypen dienen kann.
-*   **Einfache Laufzeit:** Die Ausführungszeit ist konstant und sehr kurz, da es sich um eine einfache logische Operation handelt.
-*   **Kein interner Zustand:** Der Block ist zustandslos (kombinatorisch). Das Ergebnis hängt ausschließlich von den aktuellen Eingangswerten zum Zeitpunkt der `REQ`-Anforderung ab.
+-   **Generischer Baustein:** Der Block ist als generischer Baustein (`GEN_OR`) gekennzeichnet, was bedeutet, dass er als Basis für die Ableitung ähnlicher Bausteine mit anderen Datentypen dienen kann.
+-   **Einfache Laufzeit:** Die Ausführungszeit ist konstant und sehr kurz, da es sich um eine einfache logische Operation handelt.
+-   **Kein interner Zustand:** Der Block ist zustandslos (kombinatorisch). Das Ergebnis hängt ausschließlich von den aktuellen Eingangswerten zum Zeitpunkt der `REQ`-Anforderung ab.
 
 ## Zustandsübersicht
 
@@ -63,24 +63,24 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 
 ## Anwendungsszenarien
 
-*   **Logische Verknüpfungen in Steuerungslogik:** Kombination von zwei Bedingungen, bei der eine Aktion ausgeführt werden soll, wenn mindestens eine der Bedingungen erfüllt ist (z.B. "Motor starten, wenn Taster gedrückt ODER Fernbedienungssignal empfangen wird").
-*   **Fehleraggregation:** Zusammenfassung mehrerer Fehlersignale zu einem gemeinsamen Fehlerstatus. Liegt mindestens ein Fehler vor (`TRUE`), wird der Gesamtfehlerstatus aktiviert.
-*   **Freigabelogik:** Erzeugen einer Freigabe, wenn eine von mehreren möglichen Quellen aktiv ist.
-*   **Grundbaustein in komplexeren logischen Schaltungen:** Als Teil von UND-ODER-Verknüpfungen (SOP - Sum of Products) zur Realisierung von Schaltfunktionen.
+-   **Logische Verknüpfungen in Steuerungslogik:** Kombination von zwei Bedingungen, bei der eine Aktion ausgeführt werden soll, wenn mindestens eine der Bedingungen erfüllt ist (z.B. "Motor starten, wenn Taster gedrückt ODER Fernbedienungssignal empfangen wird").
+-   **Fehleraggregation:** Zusammenfassung mehrerer Fehlersignale zu einem gemeinsamen Fehlerstatus. Liegt mindestens ein Fehler vor (`TRUE`), wird der Gesamtfehlerstatus aktiviert.
+-   **Freigabelogik:** Erzeugen einer Freigabe, wenn eine von mehreren möglichen Quellen aktiv ist.
+-   **Grundbaustein in komplexeren logischen Schaltungen:** Als Teil von UND-ODER-Verknüpfungen (SOP - Sum of Products) zur Realisierung von Schaltfunktionen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **AND_2_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **beide** Eingänge `TRUE` sind.
-*   **XOR_2_BOOL:** Führt eine exklusive ODER-Verknüpfung (Antivalenz) durch. Das Ergebnis ist `TRUE`, wenn genau **ein** Eingang `TRUE` ist.
-*   **NOT_BOOL:** Führt eine logische NICHT-Verknüpfung (Negation) auf einem einzelnen Eingang durch.
-*   **OR_n_BOOL:** Ein generischer ODER-Baustein, der eine variable Anzahl von Eingängen (n) verknüpfen kann, während `OR_2_BOOL` genau zwei feste Eingänge besitzt. Siehe: [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
+-   **AND_2_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **beide** Eingänge `TRUE` sind.
+-   **XOR_2_BOOL:** Führt eine exklusive ODER-Verknüpfung (Antivalenz) durch. Das Ergebnis ist `TRUE`, wenn genau **ein** Eingang `TRUE` ist.
+-   **NOT_BOOL:** Führt eine logische NICHT-Verknüpfung (Negation) auf einem einzelnen Eingang durch.
+-   **OR_n_BOOL:** Ein generischer ODER-Baustein, der eine variable Anzahl von Eingängen (n) verknüpfen kann, während `OR_2_BOOL` genau zwei feste Eingänge besitzt. Siehe: [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002b3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b3.md)
-* [Uebung_160](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160.md)
-* [Uebung_160b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
-* [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
+- [Uebung_002b3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b3.md)
+- [Uebung_160](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160.md)
+- [Uebung_160b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
+- [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
 
 ## Fazit
 
@@ -90,4 +90,4 @@ Der `OR_2_BOOL` ist ein fundamentaler, zuverlässiger und einfach zu verwendende
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -108,17 +108,17 @@ As a pure data type, `ST64B` has no states in the sense of a state machine or a 
 
 ST64B` is ideally suited for the following application scenarios:
 
-* **Communication Buffer:** As a standard buffer for messages or packets with a fixed size of 64 bytes, e.g., in CAN bus messages (when multiple frames are needed), serial communication, or other protocols.
-* **Hardware Register Map:** Mapping of a 64-byte range of hardware registers, where each byte variable corresponds to a specific register.
-* **Data Serialization:** Storing raw data before serialization or after deserialization, especially when data is transmitted without explicit type information.
-* **Generic Data Blocks:** Handling generic, fixed-size data blocks that can be interpreted flexibly, e.g., as part of larger protocols or data structures.
+- **Communication Buffer:** As a standard buffer for messages or packets with a fixed size of 64 bytes, e.g., in CAN bus messages (when multiple frames are needed), serial communication, or other protocols.
+- **Hardware Register Map:** Mapping of a 64-byte range of hardware registers, where each byte variable corresponds to a specific register.
+- **Data Serialization:** Storing raw data before serialization or after deserialization, especially when data is transmitted without explicit type information.
+- **Generic Data Blocks:** Handling generic, fixed-size data blocks that can be interpreted flexibly, e.g., as part of larger protocols or data structures.
 
 ## ⚖️ Comparison with Similar Building Blocks
 
 ST64B` is a basic data type and cannot be directly compared to function blocks. Within the data types, it is comparable to:
 
-* **Other structured data types:** `ST64B` is a specific instance of `StructuredType`. There are similar structures with different numbers or types of elements (e.g., structures with 8, 16, or 32 bytes, or those containing integers, booleans, etc.). `ST64B` is characterized by its purely byte-wise division.
-* **Arrays of BYTE:** An array of type `ARRAY[0..63] OF BYTE` would also store 64 bytes. The difference lies in the access method: `ST64B` uses named members (e.g., `myST64B.B_10`), while an array uses an index (e.g., `myArray[10]`). Named members can be advantageous in certain contexts for improved code readability or for directly addressing specific byte positions.
+- **Other structured data types:** `ST64B` is a specific instance of `StructuredType`. There are similar structures with different numbers or types of elements (e.g., structures with 8, 16, or 32 bytes, or those containing integers, booleans, etc.). `ST64B` is characterized by its purely byte-wise division.
+- **Arrays of BYTE:** An array of type `ARRAY[0..63] OF BYTE` would also store 64 bytes. The difference lies in the access method: `ST64B` uses named members (e.g., `myST64B.B_10`), while an array uses an index (e.g., `myArray[10]`). Named members can be advantageous in certain contexts for improved code readability or for directly addressing specific byte positions.
 
 ## Conclusion
 

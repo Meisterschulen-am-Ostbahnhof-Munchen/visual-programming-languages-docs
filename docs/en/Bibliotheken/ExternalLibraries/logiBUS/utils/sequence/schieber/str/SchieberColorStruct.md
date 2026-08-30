@@ -35,9 +35,9 @@ The ``SchieberColorStruct`` is a pure data type. It serves as a container to gro
 
 ## Technical Details
 
-* **Imported Constant:** The structure depends on the externally defined constant ``COLOR_WHITE``, which is provided via the compiler import ``isobus::UT::Q::const::colours::COLOR_WHITE``. This ensures that a consistent, project-wide shade of white is used.
-* **Type Safety:** Using a structured type instead of five individual variables improves code readability and maintainability and reduces the likelihood of errors.
-* **Hash Attribute:** The structure contains the attribute ``eclipse4diac::core::TypeHash`` with an empty value. This is used by the 4diac system for type identification and management.
+- **Imported Constant:** The structure depends on the externally defined constant ``COLOR_WHITE``, which is provided via the compiler import ``isobus::UT::Q::const::colours::COLOR_WHITE``. This ensures that a consistent, project-wide shade of white is used.
+- **Type Safety:** Using a structured type instead of five individual variables improves code readability and maintainability and reduces the likelihood of errors.
+- **Hash Attribute:** The structure contains the attribute ``eclipse4diac::core::TypeHash`` with an empty value. This is used by the 4diac system for type identification and management.
 
 ## State Overview
 
@@ -45,9 +45,9 @@ Because it is a static data type, ``SchieberColorStruct`` itself does not have a
 
 ## Application Scenarios
 
-* **Visualization in HMIs:** Passing the color configuration to visualization components to correctly display the state of a slider using color (e.g., red for "Closed," green for "Open").
-* **Function Block Configuration:** A function block that controls a physical slider can have an instance of this type as a configurable input to enable user-defined colors for state feedback.
-* **Data Encapsulation:** Bundling all state-related color information into a single parameter that can be exchanged between different software modules (e.g., controller and visualization).
+- **Visualization in HMIs:** Passing the color configuration to visualization components to correctly display the state of a slider using color (e.g., red for "Closed," green for "Open").
+- **Function Block Configuration:** A function block that controls a physical slider can have an instance of this type as a configurable input to enable user-defined colors for state feedback.
+- **Data Encapsulation:** Bundling all state-related color information into a single parameter that can be exchanged between different software modules (e.g., controller and visualization).
 *
 ## ⚖️ Comparison with Similar Building Blocks
 
@@ -61,6 +61,6 @@ The `SchieberColorStruct` is a simple yet useful structured data type that stand
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

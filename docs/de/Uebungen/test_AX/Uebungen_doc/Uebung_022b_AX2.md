@@ -14,55 +14,55 @@ Diese Übung realisiert eine **Spiegelabfolge** für zwei pneumatische Zylinder 
 
 Die Übung besteht aus fünf Funktionsbausteinen, die im SubApp‑Netzwerk verdrahtet sind:
 
-1. **SoftKey_UP_F1**  
-   - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`  
+1. **SoftKey_UP_F1**
+   - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`
    - **Parameter**:
-     - `QI` = `TRUE`  
-     - `u16ObjId` = `SoftKey_F1`  
-     - `InputEvent` = `SK_RELEASED` (Ereignis bei Loslassen der Taste F1)  
+     - `QI` = `TRUE`
+     - `u16ObjId` = `SoftKey_F1`
+     - `InputEvent` = `SK_RELEASED` (Ereignis bei Loslassen der Taste F1)
    - **Ereignisausgang**: `IND` (wird bei Betätigung der Taste ausgelöst)
 
-2. **SoftKey_F2_DOWN**  
-   - **Typ**: `Softkey_IE`  
+2. **SoftKey_F2_DOWN**
+   - **Typ**: `Softkey_IE`
    - **Parameter**:
-     - `QI` = `TRUE`  
-     - `u16ObjId` = `SoftKey_F2`  
-     - `InputEvent` = `SK_PRESSED` (Ereignis beim Drücken der Taste F2)  
+     - `QI` = `TRUE`
+     - `u16ObjId` = `SoftKey_F2`
+     - `InputEvent` = `SK_PRESSED` (Ereignis beim Drücken der Taste F2)
    - **Ereignisausgang**: `IND`
 
-3. **SoftKey_F3_DOWN**  
-   - **Typ**: `Softkey_IE`  
+3. **SoftKey_F3_DOWN**
+   - **Typ**: `Softkey_IE`
    - **Parameter**:
-     - `QI` = `TRUE`  
-     - `u16ObjId` = `SoftKey_F3`  
-     - `InputEvent` = `SK_PRESSED` (Ereignis beim Drücken der Taste F3)  
+     - `QI` = `TRUE`
+     - `u16ObjId` = `SoftKey_F3`
+     - `InputEvent` = `SK_PRESSED` (Ereignis beim Drücken der Taste F3)
    - **Ereignisausgang**: `IND`
 
-4. **AX_SR_Ausfahren_Cyl_1**  
-   - **Typ**: `adapter::events::unidirectional::AX_SR` (Set‑Reset‑Funktionsbaustein)  
-   - **Adapter**: unidirektional, Ausgang `Q` liefert `TRUE`, wenn gesetzt  
+4. **AX_SR_Ausfahren_Cyl_1**
+   - **Typ**: `adapter::events::unidirectional::AX_SR` (Set‑Reset‑Funktionsbaustein)
+   - **Adapter**: unidirektional, Ausgang `Q` liefert `TRUE`, wenn gesetzt
    - **Ereigniseingänge**:
-     - `S` – Setzen (Ausgang Q = TRUE)  
-     - `R` – Rücksetzen (Ausgang Q = FALSE)  
+     - `S` – Setzen (Ausgang Q = TRUE)
+     - `R` – Rücksetzen (Ausgang Q = FALSE)
 
-5. **AX_SR_Ausfahren_Cyl_2**  
-   - **Typ**: `AX_SR` (baugleich zu Cyl_1)  
+5. **AX_SR_Ausfahren_Cyl_2**
+   - **Typ**: `AX_SR` (baugleich zu Cyl_1)
    - **Ereigniseingänge**:
-     - `S` – Setzen  
-     - `R` – Rücksetzen  
+     - `S` – Setzen
+     - `R` – Rücksetzen
 
-6. **DigitalOutput_Q1**  
-   - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
+6. **DigitalOutput_Q1**
+   - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
    - **Parameter**:
-     - `QI` = `TRUE` (Ausgang freigegeben)  
-     - `Output` = `Output_Q1` (physischer Ausgang)  
+     - `QI` = `TRUE` (Ausgang freigegeben)
+     - `Output` = `Output_Q1` (physischer Ausgang)
    - **Adaptereingang**: `OUT` – steuert den Ausgang bei `TRUE`
 
-7. **DigitalOutput_Q2**  
-   - **Typ**: `logiBUS_QXA`  
+7. **DigitalOutput_Q2**
+   - **Typ**: `logiBUS_QXA`
    - **Parameter**:
-     - `QI` = `TRUE`  
-     - `Output` = `Output_Q2`  
+     - `QI` = `TRUE`
+     - `Output` = `Output_Q2`
    - **Adaptereingang**: `OUT`
 
 ### Sub‑Bausteine
@@ -75,16 +75,16 @@ Keine separaten Unter‑Bausteine vorhanden. Die gesamte Logik ist direkt im Sub
 
 Die Steuerung folgt einer festen Abfolge:
 
-1. **Taste F1 loslassen** → Ereignis von `SoftKey_UP_F1.IND`  
+1. **Taste F1 loslassen** → Ereignis von `SoftKey_UP_F1.IND`
    → Setzt `AX_SR_Ausfahren_Cyl_1.S` → **Zylinder 1 fährt aus** (DigitalOutput_Q1 = TRUE).
 
-2. **Taste F2 drücken** → Ereignis von `SoftKey_F2_DOWN.IND`  
-   → Wird an zwei Ziele verteilt:  
+2. **Taste F2 drücken** → Ereignis von `SoftKey_F2_DOWN.IND`
+   → Wird an zwei Ziele verteilt:
 
-   - `AX_SR_Ausfahren_Cyl_1.R` → **Zylinder 1 fährt ein** (Q1 = FALSE).  
+   - `AX_SR_Ausfahren_Cyl_1.R` → **Zylinder 1 fährt ein** (Q1 = FALSE).
    - `AX_SR_Ausfahren_Cyl_2.S` → **Zylinder 2 fährt aus** (Q2 = TRUE).
 
-3. **Taste F3 drücken** → Ereignis von `SoftKey_F3_DOWN.IND`  
+3. **Taste F3 drücken** → Ereignis von `SoftKey_F3_DOWN.IND`
    → Setzt `AX_SR_Ausfahren_Cyl_2.R` → **Zylinder 2 fährt ein** (Q2 = FALSE).
 
 Die Verbindungen im Detail:
@@ -126,10 +126,10 @@ stateDiagram-v2
 - Steuerung von Digitalausgängen über Adapter.
 - Erstellen einer einfachen Ablaufsteuerung mit Tasteneingaben.
 
-**Schwierigkeitsgrad:** Einfach  
+**Schwierigkeitsgrad:** Einfach
 **Vorkenntnisse:** Grundlagen der IEC 61499, Umgang mit dem 4diac‑IDE
 
-**Hinweise zum Starten:**  
+**Hinweise zum Starten:**
 Die Übung ist als SubApp‑Typ vorgefertigt. Einbinden in ein geeignetes Projekt und mit einem Laufzeitsystem (z. B. FORTE) ausführen. Die physischen Ausgänge Q1 und Q2 müssen entsprechend den verwendeten Komponenten (z. B. Ventile) angeschlossen sein.
 
 * * * * * * * * * *
@@ -142,4 +142,4 @@ Die Übung **Uebung_022b_AX2** demonstriert eine zweistufige Ablaufsteuerung fü
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

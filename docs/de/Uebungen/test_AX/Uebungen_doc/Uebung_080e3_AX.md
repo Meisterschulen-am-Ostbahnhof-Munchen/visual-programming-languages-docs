@@ -29,43 +29,43 @@ Die Übung verwendet ausschließlich primitive Funktionsbausteine (keine Sub-App
 
 Der Ablauf lässt sich in mehrere Schritte gliedern:
 
-1. **Eingangssignale erfassen**  
+1. **Eingangssignale erfassen**
    Die beiden digitalen Eingänge `DigitalInput_CLK_I1` und `DigitalInput_RST_I2` wandeln die physikalischen Signale in Adapterdaten um. Die nachgeschalteten Konverter `X_TO_B_I1` und `X_TO_B_I2` stellen daraus Boolesche Werte bereit (Ereignisausgang `CNF`).
 
-2. **Taktgenerierung starten/stoppen**  
-   - Das Taktsignal `CLK_I1` (über `X_TO_B_I1.CNF`) startet den zyklischen Taktgeber `E_CYCLE` (`START`-Ereignis).  
+2. **Taktgenerierung starten/stoppen**
+   - Das Taktsignal `CLK_I1` (über `X_TO_B_I1.CNF`) startet den zyklischen Taktgeber `E_CYCLE` (`START`-Ereignis).
    - Das Rücksetzsignal `RST_I2` (über `X_TO_B_I2.CNF`) beendet den Taktgeber (`STOP`-Ereignis) und setzt gleichzeitig den Zähler `E_CTU` zurück (`R`-Ereignis).
 
-3. **Zähler inkrementieren**  
+3. **Zähler inkrementieren**
    Der Taktgeber erzeugt alle 1 ms ein `EO`-Ereignis, das den Zähler `E_CTU` am Eingang `CU` (Count Up) erhöht.
 
-4. **Ausgabe des Zählerstands**  
-   - Der aktuelle Zählerstand (`CV`) wird dem Baustein `AUI_D_FF_HYS` übergeben. Dieses D-Flipflop mit Hysterese (Hysteresewert = 25) stabilisiert den Wert und gibt ihn an den Konverter `UI_TO_UDI_N1` weiter.  
+4. **Ausgabe des Zählerstands**
+   - Der aktuelle Zählerstand (`CV`) wird dem Baustein `AUI_D_FF_HYS` übergeben. Dieses D-Flipflop mit Hysterese (Hysteresewert = 25) stabilisiert den Wert und gibt ihn an den Konverter `UI_TO_UDI_N1` weiter.
    - Der konvertierte Wert gelangt schließlich an `Q_NumericValue` und wird als numerischer Ausgang zur Verfügung gestellt.
 
-5. **Überlauf signalisieren**  
+5. **Überlauf signalisieren**
    Wenn der Zähler seinen Maximalwert erreicht (Überlauf, Ereignisausgang `Q`), wird das D-Flipflop `AX_D_FF` gesetzt. Dessen Ausgang `Q` schaltet den digitalen Ausgang `DigitalOutput_Q1` ein.
 
-**Verbindungsübersicht (grafisch)**  
+**Verbindungsübersicht (grafisch)**
 *Das Bildmaterial kann aus der 4diac-IDE exportiert werden.*
 
 ## Zusammenfassung
 
-Die Übung veranschaulicht die Kopplung eines zyklischen Taktgebers mit einem Aufwärtszähler, einer **Ereignisbremse** (zur Vermeidung von schnellen Zustandswechseln) sowie einer **Hysterese** zur Glättung des Zählerstands.  
-Nach Abschluss dieser Übung sind Sie in der Lage:  
+Die Übung veranschaulicht die Kopplung eines zyklischen Taktgebers mit einem Aufwärtszähler, einer **Ereignisbremse** (zur Vermeidung von schnellen Zustandswechseln) sowie einer **Hysterese** zur Glättung des Zählerstands.
+Nach Abschluss dieser Übung sind Sie in der Lage:
 
-- den Baustein `E_CTU` zu parametrieren und in eine Steuerungslogik einzubinden,  
-- D-Flipflops zur Zustandsspeicherung zu verwenden,  
-- eine Hysterese zur Stabilisierung von Zählerwerten anzuwenden,  
+- den Baustein `E_CTU` zu parametrieren und in eine Steuerungslogik einzubinden,
+- D-Flipflops zur Zustandsspeicherung zu verwenden,
+- eine Hysterese zur Stabilisierung von Zählerwerten anzuwenden,
 - und die Verbindung von Adapter-Bausteinen in der 4diac-IDE nachzuvollziehen.
 
-**Lernziele**: Ereignisgesteuerte Zähler, Zustandsautomaten, Hysteresefilter.  
-**Voraussetzungen**: Grundlegende Bedienung der 4diac-IDE, Verständnis von Ereignis- und Datenflüssen.  
+**Lernziele**: Ereignisgesteuerte Zähler, Zustandsautomaten, Hysteresefilter.
+**Voraussetzungen**: Grundlegende Bedienung der 4diac-IDE, Verständnis von Ereignis- und Datenflüssen.
 **Schwierigkeitsgrad**: Mittel
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

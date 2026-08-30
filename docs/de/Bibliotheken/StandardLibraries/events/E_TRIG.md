@@ -50,7 +50,7 @@ Angenommen, mehrere Funktionsbausteine in einer Ressource haben einen unverbunde
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_176](../../../Uebungen/test_B/Uebungen_doc/Uebung_176.md)
+- [Uebung_176](../../../Uebungen/test_B/Uebungen_doc/Uebung_176.md)
 
 ## Fazit
 
@@ -60,4 +60,4 @@ Der `E_TRIG`-Baustein ist ein Werkzeug für fortgeschrittene Anwendungsfälle un
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

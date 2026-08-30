@@ -17,7 +17,7 @@ The objective is to place and parameterize a standard function block from the IE
 
 ![Uebung_000_AX_network](./Uebung_000_AX_network.svg)
 
-* **`ADD_2`**: Type `iec61131::arithmetic::ADD_2`. [cite_start]Adds two integers (`IN1` and `IN2`)[cite: 1].
+- **`ADD_2`**: Type `iec61131::arithmetic::ADD_2`. [cite_start]Adds two integers (`IN1` and `IN2`)[cite: 1].
 
 ----
 

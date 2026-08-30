@@ -5,16 +5,16 @@ Visual programming languages (VPLs) allow programs to be created by graphically 
 
 These languages often serve as an introduction to the logic of programming. They abstract complex syntax rules into colored blocks that are assembled like puzzle pieces.
 
-* **Scratch:** Probably the best-known language for children and teenagers. It playfully teaches concepts such as loops, conditions, and variables.
-* **Blockly (Google):** A library that translates visual blocks into textual code (e.g., Python or JavaScript).
-* **M5Stack / UIFlow:** An industrial application of Blockly. Here, microcontrollers (ESP32) are programmed visually, which greatly accelerates prototyping.
-* ---
+- **Scratch:** Probably the best-known language for children and teenagers. It playfully teaches concepts such as loops, conditions, and variables.
+- **Blockly (Google):** A library that translates visual blocks into textual code (e.g., Python or JavaScript).
+- **M5Stack / UIFlow:** An industrial application of Blockly. Here, microcontrollers (ESP32) are programmed visually, which greatly accelerates prototyping.
+- ---
 
 ## 2. Visual Modeling in Computer Science
 
 Before writing code, computer scientists often use graphical models to plan architectures.
 
-* **UML (Unified Modeling Language):** A standard for visualizing software systems. Class diagrams and state diagrams are the most well-known tools.
+- **UML (Unified Modeling Language):** A standard for visualizing software systems. Class diagrams and state diagrams are the most well-known tools.
 
 --
 
@@ -22,7 +22,7 @@ Before writing code, computer scientists often use graphical models to plan arch
 
 In measurement and control engineering, visual languages play a dominant role because they intuitively represent the flow of signals and data.
 
-* **LabVIEW (National Instruments):** A powerful environment in which "Virtual Instruments" (VIs) are created by wiring up functional blocks. It is used worldwide in laboratories and test benches.
+- **LabVIEW (National Instruments):** A powerful environment in which "Virtual Instruments" (VIs) are created by wiring up functional blocks. It is used worldwide in laboratories and test benches.
 
 --
 
@@ -55,15 +55,15 @@ The automation pyramid shows that real-time capability and clear diagnostics are
 
 ### Further Resources
 
-* [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
-* [Wikipedia: Visual Programming Language](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
-* [M5Stack UIFlow Documentation](https://m5stack.github.io/UIFlow_doc/en/)
+- [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
+- [Wikipedia: Visual Programming Language](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
+- [M5Stack UIFlow Documentation](https://m5stack.github.io/UIFlow_doc/en/)
 
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
 
 *

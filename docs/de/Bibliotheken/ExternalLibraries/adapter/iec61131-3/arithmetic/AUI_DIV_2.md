@@ -39,29 +39,29 @@ Der Funktionsbaustein `AUI_DIV_2` ist ein generischer Funktionsbaustein zur Durc
 
 #### **Sockets (Eingangs-Schnittstellen)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN1** (Typ: `adapter::types::unidirectional::AUI`):
   Der erste Eingang-Adapter. Er liefert den Dividenden (Zähler) für die Divisionsoperation sowie die zugehörigen Triggereignisse.
-* **IN2** (Typ: `adapter::types::unidirectional::AUI`): 
+- **IN2** (Typ: `adapter::types::unidirectional::AUI`):
   Der zweite Eingang-Adapter. Er liefert den Divisor (Nenner) für die Divisionsoperation sowie die zugehörigen Triggereignisse.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUI`): 
+- **OUT** (Typ: `adapter::types::unidirectional::AUI`):
   Der Ausgangs-Adapter. Er gibt das Ergebnis der Division (Quotient) und das entsprechende Berechnungsereignis aus.
 
 ## Funktionsweise
 
-Der Baustein führt die mathematische Operation `OUT = IN1 / IN2` aus. 
+Der Baustein führt die mathematische Operation `OUT = IN1 / IN2` aus.
 
-Sobald an den Eingangs-Adaptern (`IN1` oder `IN2`) ein entsprechendes Trigger-Ereignis registriert wird, liest der Baustein die aktuellen Werte aus den Adaptern aus, berechnet den Quotienten und gibt diesen zusammen mit einem Ausgangsereignis über den Adapter `OUT` weiter. 
+Sobald an den Eingangs-Adaptern (`IN1` oder `IN2`) ein entsprechendes Trigger-Ereignis registriert wird, liest der Baustein die aktuellen Werte aus den Adaptern aus, berechnet den Quotienten und gibt diesen zusammen mit einem Ausgangsereignis über den Adapter `OUT` weiter.
 
 Da es sich um einen generischen Funktionsbaustein (`GEN_AUI_DIV`) handelt, kann sich der Baustein je nach Implementierung und Systemkonfiguration an unterschiedliche numerische Datentypen (z. B. INT, REAL, LREAL) anpassen, sofern die zugrundeliegenden Adapter denselben Datentyp unterstützen.
 
 ## Technische Besonderheiten
 
-* **Generischer Typ:** Durch das Attribut `GenericClassName` mit dem Wert `'GEN_AUI_DIV'` ist der Baustein flexibel einsetzbar und nicht auf einen festen Datentyp fixiert.
-* **Schnittstellen-Kapselung:** Die Verwendung von unidirektionalen Adaptern (`AUI`) reduziert den Verdrahtungsaufwand in der 4diac-IDE erheblich, da Event- und Datenleitungen in einer einzigen Verbindung gebündelt werden.
-* **Division durch Null:** Bei der Verwendung dieses Bausteins muss anwendungstechnisch sichergestellt werden, dass der Wert von `IN2` ungleich Null ist, um Laufzeitfehler oder unendliche Werte (NaN/Inf) im Steuerungssystem zu vermeiden.
+- **Generischer Typ:** Durch das Attribut `GenericClassName` mit dem Wert `'GEN_AUI_DIV'` ist der Baustein flexibel einsetzbar und nicht auf einen festen Datentyp fixiert.
+- **Schnittstellen-Kapselung:** Die Verwendung von unidirektionalen Adaptern (`AUI`) reduziert den Verdrahtungsaufwand in der 4diac-IDE erheblich, da Event- und Datenleitungen in einer einzigen Verbindung gebündelt werden.
+- **Division durch Null:** Bei der Verwendung dieses Bausteins muss anwendungstechnisch sichergestellt werden, dass der Wert von `IN2` ungleich Null ist, um Laufzeitfehler oder unendliche Werte (NaN/Inf) im Steuerungssystem zu vermeiden.
 
 ## Zustandsübersicht
 
@@ -71,9 +71,9 @@ Da es sich um einen generischen Funktionsbaustein (`GEN_AUI_DIV`) handelt, kann 
 
 ## Anwendungsszenarien
 
-* **Skalierung von Sensorwerten:** Division von Rohwerten durch Skalierungsfaktoren in modular aufgebauten Steuerungsarchitekturen.
-* **Berechnung von Mittelwerten:** Einsatz in mathematischen Berechnungsnetzwerken, bei denen Datenströme strukturiert über Adapter übertragen werden.
-* **Signalverarbeitung:** Reduzierung von Signalstärken oder Frequenzteilungen in verteilten Systemen.
+- **Skalierung von Sensorwerten:** Division von Rohwerten durch Skalierungsfaktoren in modular aufgebauten Steuerungsarchitekturen.
+- **Berechnung von Mittelwerten:** Einsatz in mathematischen Berechnungsnetzwerken, bei denen Datenströme strukturiert über Adapter übertragen werden.
+- **Signalverarbeitung:** Reduzierung von Signalstärken oder Frequenzteilungen in verteilten Systemen.
 
 ## Vergleich mit ähnlichen Bausteinen
 

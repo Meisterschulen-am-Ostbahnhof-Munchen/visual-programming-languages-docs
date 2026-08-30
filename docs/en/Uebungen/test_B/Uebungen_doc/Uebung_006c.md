@@ -17,9 +17,9 @@ To learn about addressed event distribution. Instead of running a separate line 
 
 ![Uebung_006c_network](./Uebung_006c_network.svg)
 
-* **`logiBUS_IB`**: A special input block for "Input Byte". It provides a numerical value (0-255), usually from a multi-function control element (e.g., an ISOBUS joystick with many buttons).
-* **`E_DEMUX_8`**: An event demultiplexer. It has an event input `EI` and a data input `K` (selector). Depending on the value of `K`, it forwards the event to one of eight outputs `EO1` to `EO8`.
-* **8x `E_SR`**: Memory for outputs `Q1` to `Q8`.
+- **`logiBUS_IB`**: A special input block for "Input Byte". It provides a numerical value (0-255), usually from a multi-function control element (e.g., an ISOBUS joystick with many buttons).
+- **`E_DEMUX_8`**: An event demultiplexer. It has an event input `EI` and a data input `K` (selector). Depending on the value of `K`, it forwards the event to one of eight outputs `EO1` to `EO8`.
+- **8x `E_SR`**: Memory for outputs `Q1` to `Q8`.
 
 -----
 

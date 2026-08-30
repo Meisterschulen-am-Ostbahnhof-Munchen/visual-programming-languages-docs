@@ -16,4 +16,4 @@ Additionally, the function block provides an input `REQ` to trigger an external 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_012a](Uebung_012a.md)
+- [Exercise_012a](Uebung_012a.md)

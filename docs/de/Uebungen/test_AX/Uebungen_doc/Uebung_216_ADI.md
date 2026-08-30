@@ -60,19 +60,19 @@ Die Übung zeigt den Einsatz von Adapter-Schnittstellen zur Verbindung verschied
 
 Die Steuerung erfolgt über Ereignis- und Adapterverbindungen:
 
-1. **Initialisierung des Vorgabewerts**:  
+1. **Initialisierung des Vorgabewerts**:
    Der Ereignisausgang `INITO` des Bausteins `Input_LD` triggert den Baustein `ADI_DINT_TO_DI`. Dadurch wird die Konstante `DINT#10` einmalig in den `ADI_FB_CTD` geladen (über die Adapterverbindung `ADI_DINT_TO_DI.ADI_OUT` → `ADI_FB_CTD.PV`).
 
-2. **Zählimpulse (CD)**:  
+2. **Zählimpulse (CD)**:
    Der Adapterausgang `Input_CD.IN` ist mit dem Adaptereingang `ADI_FB_CTD.CD` verbunden. Jede positive Flanke am Eingang I1 zählt den Zählerstand um eins herunter.
 
-3. **Ladesignal (LD)**:  
+3. **Ladesignal (LD)**:
    Der Adapterausgang `Input_LD.IN` ist mit dem Adaptereingang `ADI_FB_CTD.LD` verbunden. Ein Signal an I2 lädt den Zähler mit dem aktuellen Vorgabewert (10).
 
-4. **Zählerende (Q)**:  
+4. **Zählerende (Q)**:
    Der Adapterausgang `ADI_FB_CTD.Q` führt zum Adaptereingang `Output_Q1.OUT`. Bei Erreichen von Null wird der Ausgang Q1 aktiviert.
 
-5. **Ausgabe des Zählerstands**:  
+5. **Ausgabe des Zählerstands**:
    Der Adapterausgang `ADI_FB_CTD.CV` (aktueller Zählerstand) wird über `ADI_TO_AUDI` konvertiert und an den Terminal-Baustein `Q_NumericValue_AUDI` weitergeleitet. Der Zählerstand erscheint auf dem Terminal.
 
 **Hinweis**: Der Kommentar im Netzwerk weist darauf hin, dass der Baustein `ADI_TO_AUDI` keine negativen Zahlen verarbeiten kann. Da der Rückwärtszähler nur bis Null zählt, tritt dieser Fall in der Übung nicht auf. Für erweiterte Anwendungen müsste eine geeignetere Konvertierung gewählt werden.
@@ -92,4 +92,4 @@ Der Aufbau ist als Subapplikation realisiert und kann direkt in eine 4diac-IDE-U
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

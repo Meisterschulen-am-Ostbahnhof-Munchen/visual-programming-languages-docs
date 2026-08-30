@@ -17,9 +17,9 @@ To become familiar with type-specific splitter function blocks. While `E_SPLIT` 
 
 ![Uebung_004a8_network](./Uebung_004a8_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Pushbutton.
-* **`E_SPLIT_2`**: Distributes the input `EI` sequentially to `EO1` and `EO2`.
-* **`E_T_FF_Q1` & `Q2`**: Two flip-flops.
+- **`DigitalInput_CLK_I1`**: Pushbutton.
+- **`E_SPLIT_2`**: Distributes the input `EI` sequentially to `EO1` and `EO2`.
+- **`E_T_FF_Q1` & `Q2`**: Two flip-flops.
 
 -----
 

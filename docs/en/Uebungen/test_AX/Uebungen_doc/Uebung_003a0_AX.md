@@ -17,18 +17,18 @@ The main objective of this exercise is to demonstrate methods for structuring ap
 
 Unlike typed subapplications, which are based on an external definition, the logic of these containers exists only within this specific instance.
 
-* Contains the logic for channel 2.
-* Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
+- Contains the logic for channel 2.
+- Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
 2. **Container `SubApp_1`**:
-* Contains the logic for channel 1.
-* Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`[cite: 1].
+- Contains the logic for channel 1.
+- Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`[cite: 1].
 
 ### Function Blocks (FBs)
 
 The following familiar function blocks are used within the containers:
 
-* **`logiBUS_IXA`**: For reading signals.
-* **`logiBUS_QXA`**: For outputting signals.
+- **`logiBUS_IXA`**: For reading signals.
+- **`logiBUS_QXA`**: For outputting signals.
 
 -----
 

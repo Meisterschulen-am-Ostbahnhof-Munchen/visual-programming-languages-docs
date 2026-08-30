@@ -13,28 +13,28 @@ Der Funktionsblock `logiBUS_PI_ID` ist ein Eingabeservice-Interface-Baustein fü
 
 ### **Ereignis-Eingänge**
 
-*   **`INIT`**: Initialisiert den Service. Begleitet von den Daten `QI`, `PARAMS`, `Input`, `ImpulseDelta` und `TimeDelta`.
-*   **`REQ`**: Löst eine zyklische Abfrage (Polling) des Eingangswerts aus. Begleitet von dem Daten `QI`.
+-   **`INIT`**: Initialisiert den Service. Begleitet von den Daten `QI`, `PARAMS`, `Input`, `ImpulseDelta` und `TimeDelta`.
+-   **`REQ`**: Löst eine zyklische Abfrage (Polling) des Eingangswerts aus. Begleitet von dem Daten `QI`.
 
 ### **Ereignis-Ausgänge**
 
-*   **`INITO`**: Bestätigt die Initialisierung. Liefert die Daten `QO` und `STATUS`.
-*   **`CNF`**: Bestätigt eine angeforderte Abfrage (`REQ`). Liefert die Daten `QO`, `STATUS` und den aktuellen Eingangswert `IN`.
-*   **`IND`**: Zeigt eine ereignisgesteuerte Statusänderung (Interrupt) an. Liefert die Daten `QO`, `STATUS` und den neuen Eingangswert `IN`.
+-   **`INITO`**: Bestätigt die Initialisierung. Liefert die Daten `QO` und `STATUS`.
+-   **`CNF`**: Bestätigt eine angeforderte Abfrage (`REQ`). Liefert die Daten `QO`, `STATUS` und den aktuellen Eingangswert `IN`.
+-   **`IND`**: Zeigt eine ereignisgesteuerte Statusänderung (Interrupt) an. Liefert die Daten `QO`, `STATUS` und den neuen Eingangswert `IN`.
 
 ### **Daten-Eingänge**
 
-*   **`QI` (BOOL)**: Qualifiziert den zugehörigen Ereigniseingang. Bei `TRUE` wird der Service aktiviert/ausgeführt, bei `FALSE` deaktiviert.
-*   **`PARAMS` (STRING)**: Enthält service-spezifische Parameter für die Initialisierung (z.B. Hardware-Adresse, Kanal-Konfiguration).
-*   **`Input` (logiBUS_PI_S)**: Identifiziert den konkreten physischen Eingang (z.B. I1..I8). Der Initialwert ist `logiBUS_PI::Invalid`.
-*   **`ImpulseDelta` (DWORD)**: Definiert, nach wie vielen aufeinanderfolgenden Zustandsänderungen (Impulsen) ein `IND`-Ereignis generiert werden soll.
-*   **`TimeDelta` (DWORD)**: Definiert das Zeitintervall in Millisekunden, nach dem ein `IND`-Ereignis generiert werden soll, wenn sich der Wert geändert hat.
+-   **`QI` (BOOL)**: Qualifiziert den zugehörigen Ereigniseingang. Bei `TRUE` wird der Service aktiviert/ausgeführt, bei `FALSE` deaktiviert.
+-   **`PARAMS` (STRING)**: Enthält service-spezifische Parameter für die Initialisierung (z.B. Hardware-Adresse, Kanal-Konfiguration).
+-   **`Input` (logiBUS_PI_S)**: Identifiziert den konkreten physischen Eingang (z.B. I1..I8). Der Initialwert ist `logiBUS_PI::Invalid`.
+-   **`ImpulseDelta` (DWORD)**: Definiert, nach wie vielen aufeinanderfolgenden Zustandsänderungen (Impulsen) ein `IND`-Ereignis generiert werden soll.
+-   **`TimeDelta` (DWORD)**: Definiert das Zeitintervall in Millisekunden, nach dem ein `IND`-Ereignis generiert werden soll, wenn sich der Wert geändert hat.
 
 ### **Daten-Ausgänge**
 
-*   **`QO` (BOOL)**: Zeigt den Status der Serviceausführung an. `TRUE` bedeutet erfolgreich, `FALSE` signalisiert einen Fehler.
-*   **`STATUS` (STRING)**: Liefert eine detaillierte Status- oder Fehlermeldung vom Service.
-*   **`IN` (DWORD)**: Enthält den aktuellen, vom physischen Eingang gelesenen 32-Bit-Wert.
+-   **`QO` (BOOL)**: Zeigt den Status der Serviceausführung an. `TRUE` bedeutet erfolgreich, `FALSE` signalisiert einen Fehler.
+-   **`STATUS` (STRING)**: Liefert eine detaillierte Status- oder Fehlermeldung vom Service.
+-   **`IN` (DWORD)**: Enthält den aktuellen, vom physischen Eingang gelesenen 32-Bit-Wert.
 
 ### **Adapter**
 
@@ -51,10 +51,10 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 
 ## Technische Besonderheiten
 
-*   **Datentyp**: Verarbeitet 32-Bit-Eingabedaten (`DWORD`).
-*   **Strukturierter Eingang**: Der Eingang wird nicht über einen einfachen Index, sondern über einen strukturierten Datentyp (`logiBUS_PI_S`) identifiziert, was eine typsichere und eindeutige Adressierung ermöglicht.
-*   **Flexible Ereignisauslösung**: Die Bedingungen für die automatische Ereignisgenerierung (`IND`) können sowohl impuls- als auch zeitbasiert konfiguriert werden.
-*   **Service-Interface**: Folgt dem typischen Muster eines 4diac-Service-Interface-FBs mit `QI`/`QO` und `STATUS`-Variablen für einheitliches Fehlerhandling.
+-   **Datentyp**: Verarbeitet 32-Bit-Eingabedaten (`DWORD`).
+-   **Strukturierter Eingang**: Der Eingang wird nicht über einen einfachen Index, sondern über einen strukturierten Datentyp (`logiBUS_PI_S`) identifiziert, was eine typsichere und eindeutige Adressierung ermöglicht.
+-   **Flexible Ereignisauslösung**: Die Bedingungen für die automatische Ereignisgenerierung (`IND`) können sowohl impuls- als auch zeitbasiert konfiguriert werden.
+-   **Service-Interface**: Folgt dem typischen Muster eines 4diac-Service-Interface-FBs mit `QI`/`QO` und `STATUS`-Variablen für einheitliches Fehlerhandling.
 
 ## Zustandsübersicht
 
@@ -65,24 +65,24 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 
 ## Anwendungsszenarien
 
-*   **Einlesen von Zählersignalen**: Erfassung von Impulsen eines Drehgebers oder Encoders, wobei `ImpulseDelta` für eine Vorverarbeitung (z.B. jede 10. Umdrehung melden) genutzt wird.
-*   **Überwachung von Statusgruppen**: Lesen eines 32-Bit-Statusworts eines angeschlossenen Geräts, wobei Änderungen nur in bestimmten Zeitabständen (`TimeDelta`) gemeldet werden müssen, um die CPU-Last zu reduzieren.
-*   **Zyklische Abfrage von Schalterbänken**: Polling mehrerer digitaler Eingänge, die zu einem DWORD zusammengefasst sind, über regelmäßige `REQ`-Ereignisse.
+-   **Einlesen von Zählersignalen**: Erfassung von Impulsen eines Drehgebers oder Encoders, wobei `ImpulseDelta` für eine Vorverarbeitung (z.B. jede 10. Umdrehung melden) genutzt wird.
+-   **Überwachung von Statusgruppen**: Lesen eines 32-Bit-Statusworts eines angeschlossenen Geräts, wobei Änderungen nur in bestimmten Zeitabständen (`TimeDelta`) gemeldet werden müssen, um die CPU-Last zu reduzieren.
+-   **Zyklische Abfrage von Schalterbänken**: Polling mehrerer digitaler Eingänge, die zu einem DWORD zusammengefasst sind, über regelmäßige `REQ`-Ereignisse.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Gegenüber `E_DEMUX` oder `E_SELECT`**: Diese Bausteine leiten Ereignisse weiter oder selektieren Daten. `logiBUS_PI_ID` ist spezifisch für die Hardware-Kommunikation und beinhaltet Treiberlogik sowie Initialisierung.
-*   **Gegenüber generischen I/O-FBs (z.B. `WAGO_750_5xx_DI`)**: Ähnliche Funktion, aber herstellerspezifisch (hier logiBUS). Die Konfiguration erfolgt über den strukturierten `Input`-Parameter und `PARAMS` anstelle fester Kanalnummern.
-*   **Gegenüber einfacheren Eingabeblöcken**: Bietet erweiterte Funktionen wie filternde Ereignisgenerierung (`IND`) über `ImpulseDelta`/`TimeDelta`, die in einfachen "Read"-Blöcken typischerweise nicht vorhanden sind.
+-   **Gegenüber `E_DEMUX` oder `E_SELECT`**: Diese Bausteine leiten Ereignisse weiter oder selektieren Daten. `logiBUS_PI_ID` ist spezifisch für die Hardware-Kommunikation und beinhaltet Treiberlogik sowie Initialisierung.
+-   **Gegenüber generischen I/O-FBs (z.B. `WAGO_750_5xx_DI`)**: Ähnliche Funktion, aber herstellerspezifisch (hier logiBUS). Die Konfiguration erfolgt über den strukturierten `Input`-Parameter und `PARAMS` anstelle fester Kanalnummern.
+-   **Gegenüber einfacheren Eingabeblöcken**: Bietet erweiterte Funktionen wie filternde Ereignisgenerierung (`IND`) über `ImpulseDelta`/`TimeDelta`, die in einfachen "Read"-Blöcken typischerweise nicht vorhanden sind.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_150](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_150.md)
-* [Uebung_150_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_150_AX.md)
-* [Uebung_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Uebung_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_150](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_150.md)
+- [Uebung_150_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_150_AX.md)
+- [Uebung_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Uebung_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
 
@@ -92,4 +92,4 @@ Der `logiBUS_PI_ID`-Funktionsblock ist ein leistungsfähiges und flexibles Inter
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

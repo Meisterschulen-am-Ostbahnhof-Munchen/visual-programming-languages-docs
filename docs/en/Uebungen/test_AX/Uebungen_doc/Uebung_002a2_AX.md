@@ -17,11 +17,11 @@ The main objective is to demonstrate interoperability. While specialized blocks 
 
 ![Uebung_002a2_AX_network](./Uebung_002a2_AX_network.svg)
 
-* **`AX_X_TO_BOOL_1` & `_2`**: Convert the adapter signal (`Event + Data`) into an explicit event `CNF` and a Boolean value `IN`.
-* **`F_AND`**: A classic bitwise AND gate from the IEC 61131 library.
-* **`AX_BOOL_TO_X`**: Converts the logic output back into an adapter signal.
-* **`DigitalInput_I1` & `I2`**: Inputs.
-* **`DigitalOutput_Q1`**: Output.
+- **`AX_X_TO_BOOL_1` & `_2`**: Convert the adapter signal (`Event + Data`) into an explicit event `CNF` and a Boolean value `IN`.
+- **`F_AND`**: A classic bitwise AND gate from the IEC 61131 library.
+- **`AX_BOOL_TO_X`**: Converts the logic output back into an adapter signal.
+- **`DigitalInput_I1` & `I2`**: Inputs.
+- **`DigitalOutput_Q1`**: Output.
 
 -----
 

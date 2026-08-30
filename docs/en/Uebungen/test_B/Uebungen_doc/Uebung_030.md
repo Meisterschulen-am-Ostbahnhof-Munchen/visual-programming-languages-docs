@@ -6,10 +6,10 @@ This article describes the logiBUS® exercise `Uebung_030`. It demonstrates the 
 
 ![Uebung_030_network](./Uebung_030_network.svg)
 
-* [3000 Watt Lie: The TVS Diode Decoded] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/3000-Watt-Lge-Die-TVS-Diode-entschlsselt-e3aun8t)
-* [The BTS7030-2EPA Intelligent Car Power Monitor] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Der-BTS7030-2EPA-intelligenter-Auto-Stromwchter-e3b8n3s)
-* [The Intelligent Circuit Breaker: How the Infineon BTS7030 Replaces Relays and Fuses in Cars] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Der-Intelligente-Leistungsschalter-Wie-der-Infineon-BTS7030-Relais-und-Sicherungen-im-Auto-ersetzt-e39av14)
-* [Infineon BTS7030-2EPA: Intelligent High-Side Circuit Breaker] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-BTS7030-2EPA-Intelligenter-High-Side-Leistungsschalter-e368fl3)
+- [3000 Watt Lie: The TVS Diode Decoded] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/3000-Watt-Lge-Die-TVS-Diode-entschlsselt-e3aun8t)
+- [The BTS7030-2EPA Intelligent Car Power Monitor] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Der-BTS7030-2EPA-intelligenter-Auto-Stromwchter-e3b8n3s)
+- [The Intelligent Circuit Breaker: How the Infineon BTS7030 Replaces Relays and Fuses in Cars] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Der-Intelligente-Leistungsschalter-Wie-der-Infineon-BTS7030-Relais-und-Sicherungen-im-Auto-ersetzt-e39av14)
+- [Infineon BTS7030-2EPA: Intelligent High-Side Circuit Breaker] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-BTS7030-2EPA-Intelligenter-High-Side-Leistungsschalter-e368fl3)
 
 ----
 
@@ -25,11 +25,11 @@ Using the building block `logiBUS_LED_PWM_QX`. This demonstrates how to create s
 
 ### Function Blocks (FBs)
 
-* **`logiBUS_LED_PWM_QX`**: This block uses the PWM hardware to display not only ON/OFF, but also brightness gradients.
-* **Parameter `FREQ`**:
-* `LED_05HZ`: A very slow "breathing" effect (pulsing of brightness).
-* `LED_1HZ` & `LED_5HZ`: Classic blinking frequencies.
-* `LED_ON`: Constant brightness (100%).
+- **`logiBUS_LED_PWM_QX`**: This block uses the PWM hardware to display not only ON/OFF, but also brightness gradients.
+- **Parameter `FREQ`**:
+- `LED_05HZ`: A very slow "breathing" effect (pulsing of brightness).
+- `LED_1HZ` & `LED_5HZ`: Classic blinking frequencies.
+- `LED_ON`: Constant brightness (100%).
 
 -----
 
@@ -37,9 +37,9 @@ Using the building block `logiBUS_LED_PWM_QX`. This demonstrates how to create s
 
 Each button activates a different instance of the PWM module, all of which affect the same physical output `Output_Q1`.
 
-* **Button I3** ➡️ Activates the 0.5 Hz breathing effect. The LED gradually brightens and dims.
-* **Buttons I1 & I2** ➡️ Activate fast or slow flashing.
-* **Button I4** ➡️ Switches the LED to continuous light.
+- **Button I3** ➡️ Activates the 0.5 Hz breathing effect. The LED gradually brightens and dims.
+- **Buttons I1 & I2** ➡️ Activate fast or slow flashing.
+- **Button I4** ➡️ Switches the LED to continuous light.
 
 -----
 
@@ -53,7 +53,7 @@ Instead of harsh flashing, a gentle pulsing of the LED is used to indicate a "st
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Diode & Semiconductor Basics on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
-* [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Diode & Semiconductor Basics on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
+- [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

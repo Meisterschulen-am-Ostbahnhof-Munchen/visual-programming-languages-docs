@@ -53,7 +53,7 @@ The function block has no internal states. Execution occurs immediately upon rec
 
 ## 🛠️ Related Exercises
 
-* [Exercise_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
+- [Exercise_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
 
 ## Conclusion
 

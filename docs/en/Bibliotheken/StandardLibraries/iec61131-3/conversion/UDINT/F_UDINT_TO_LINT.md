@@ -54,7 +54,7 @@ The function block has no internal states. The conversion occurs immediately upo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

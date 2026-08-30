@@ -75,30 +75,30 @@ The core logic of the controller.
 The network implements motor control with the following properties:
 
 1. **Start Direction A (Q5):**
-* When `Input_I1` (click) is activated, `DigitalInput_CLK_I1` sends an event to the set input (S) of `E_SR_A`.
+- When `Input_I1` (click) is activated, `DigitalInput_CLK_I1` sends an event to the set input (S) of `E_SR_A`.
 
-* `E_SR_A` sets its output Q to TRUE, thereby activating `DigitalOutput_Q5`.
+- `E_SR_A` sets its output Q to TRUE, thereby activating `DigitalOutput_Q5`.
 
 2. **Switching / Stop A & Start B (Q6):**
-* When `Input_I2` is pressed, two things happen simultaneously:
-* An event is sent to the reset input (R) of `E_SR_A`. This immediately switches off `DigitalOutput_Q5`.
-* An event starts the timer `E_DELAY`.
-* After 50 ms (`DT=T#50ms`), `E_DELAY` sends an event to the set input (S) of `E_SR_B`.
-* * `E_SR_B` sets its output Q to TRUE, thereby activating `DigitalOutput_Q6`.
-* *Note:* I2 here acts as a switch from A to B with a short dead time.
+- When `Input_I2` is pressed, two things happen simultaneously:
+- An event is sent to the reset input (R) of `E_SR_A`. This immediately switches off `DigitalOutput_Q5`.
+- An event starts the timer `E_DELAY`.
+- After 50 ms (`DT=T#50ms`), `E_DELAY` sends an event to the set input (S) of `E_SR_B`.
+- * `E_SR_B` sets its output Q to TRUE, thereby activating `DigitalOutput_Q6`.
+- *Note:* I2 here acts as a switch from A to B with a short dead time.
 3. **Stop towards B (Q6):**
-* When `Input_I3` is pressed (push), `DigitalInput_CLK_I3` sends an event to the reset input (R) of `E_SR_B`.
-* `DigitalOutput_Q6` is switched off.
+- When `Input_I3` is pressed (push), `DigitalInput_CLK_I3` sends an event to the reset input (R) of `E_SR_B`.
+- `DigitalOutput_Q6` is switched off.
 4. **Operating Indicator (Q56):**
-* The data outputs (Q) of `E_SR_A` and `E_SR_B` are connected to the inputs of the `OR_2_BOOL` block.
-* As soon as one of the two SR memories is active (motor running left or right), `OR_2_BOOL` activates `DigitalOutput_Q56`.
+- The data outputs (Q) of `E_SR_A` and `E_SR_B` are connected to the inputs of the `OR_2_BOOL` block.
+- As soon as one of the two SR memories is active (motor running left or right), `OR_2_BOOL` activates `DigitalOutput_Q56`.
 
 **Learning Objectives:**
 
-* Use of bistable flip-flops (SR latches) for state storage.
-* Implementation of a time-delay switching logic (E_DELAY) to prevent abrupt load changes or short circuits.
-* Processing of different push-button events (single click vs. press-down).
-* Logical combination of states (OR) to control a summary display.
+- Use of bistable flip-flops (SR latches) for state storage.
+- Implementation of a time-delay switching logic (E_DELAY) to prevent abrupt load changes or short circuits.
+- Processing of different push-button events (single click vs. press-down).
+- Logical combination of states (OR) to control a summary display.
 
 ## Summary
 

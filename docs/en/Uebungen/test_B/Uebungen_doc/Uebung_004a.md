@@ -18,9 +18,9 @@ The objective is to understand the difference between state-oriented (level) and
 
 ![Uebung_004a_network](./Uebung_004a_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Type `logiBUS_IE` (Input Event). [cite_start]Unlike the standard input, this block does not provide a continuous signal but fires a single event (`IND`) when a specific condition is met. Here, it is configured to `BUTTON_SINGLE_CLICK`[cite: 1].
-* **`E_T_FF`**: Type `E_T_FF` (standard IEC event block). [cite_start]This block has a clock input (`CLK`). Upon receiving an event, it changes its internal state and outputs it via the data output `Q` and an acknowledgment event `EO`[cite: 1].
-* **`DigitalOutput_Q1`**: Type `logiBUS_QX`. [cite_start]Switches the physical output `Q1` based on the flip-flop's state[cite: 1].
+- **`DigitalInput_CLK_I1`**: Type `logiBUS_IE` (Input Event). [cite_start]Unlike the standard input, this block does not provide a continuous signal but fires a single event (`IND`) when a specific condition is met. Here, it is configured to `BUTTON_SINGLE_CLICK`[cite: 1].
+- **`E_T_FF`**: Type `E_T_FF` (standard IEC event block). [cite_start]This block has a clock input (`CLK`). Upon receiving an event, it changes its internal state and outputs it via the data output `Q` and an acknowledgment event `EO`[cite: 1].
+- **`DigitalOutput_Q1`**: Type `logiBUS_QX`. [cite_start]Switches the physical output `Q1` based on the flip-flop's state[cite: 1].
 
 -----
 

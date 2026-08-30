@@ -67,8 +67,8 @@ highByte := temp AND WORD#16#00FF;
 lowByte := IN AND WORD#16#00FF;
 OUT := UINT_TO_REAL(WORD_TO_UINT(highByte)) * SCALE_HIGH
 
-+ UINT_TO_REAL(WORD_TO_UINT(lowByte)) * SCALE_LOW
-+ DINT_TO_REAL(OFFSET);
+- UINT_TO_REAL(WORD_TO_UINT(lowByte)) * SCALE_LOW
+- DINT_TO_REAL(OFFSET);
 VALID := BOOL#TRUE;
 ELSE
 OUT := REAL#0.0;
@@ -112,6 +112,6 @@ The **FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** function block is a specialized t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

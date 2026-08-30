@@ -54,11 +54,11 @@ Mnemonic devices work best when they link an abstract fact (a
 
 ## Further Information
 
-* [Tractor Encyclopedia: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
-* [Tractor Encyclopedia: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
+- [Tractor Encyclopedia: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
+- [Tractor Encyclopedia: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
 
 ---
 
 ### 🌐 Relevant Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -74,7 +74,7 @@ Compared to Funk_IX offers simple digital input blocks with enhanced service fun
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
+- [Exercise_003b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
 
 ## Conclusion
 
@@ -84,4 +84,4 @@ The Funk_IX Function Block provides a powerful and flexible solution for integra
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

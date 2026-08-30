@@ -26,13 +26,13 @@ Die Hardware-Anbindung erfolgt über zwei digitale Eingänge (I1, I2) und einen 
 
 ### Ereignissteuerung
 
-1. **Ereignisquelle:**  
-   - `Input_CD.IND` (Signal von Taster I1) wird mit `FB_CTD_UDINT.REQ` verbunden.  
+1. **Ereignisquelle:**
+   - `Input_CD.IND` (Signal von Taster I1) wird mit `FB_CTD_UDINT.REQ` verbunden.
    - `Input_LD.IND` (Signal von Taster I2) wird ebenfalls mit `FB_CTD_UDINT.REQ` verbunden.
 
-2. **Ereignissenke:**  
-   - `FB_CTD_UDINT.CNF` (Bestätigung des Zählers) löst zwei Aktionen aus:  
-     - `Output_Q1.REQ` (Aktualisierung des digitalen Ausgangs Q1).  
+2. **Ereignissenke:**
+   - `FB_CTD_UDINT.CNF` (Bestätigung des Zählers) löst zwei Aktionen aus:
+     - `Output_Q1.REQ` (Aktualisierung des digitalen Ausgangs Q1).
      - `Q_NumericValue.REQ` (Aktualisierung der Terminal‑Anzeige).
 
 ### Datenflüsse
@@ -55,9 +55,9 @@ Die Hardware-Anbindung erfolgt über zwei digitale Eingänge (I1, I2) und einen 
 
 - **Schwierigkeitsgrad:** Einfach
 - **Vorkenntnisse:** Grundkenntnisse in IEC 61131‑3 und Umgang mit der 4diac IDE.
-- **Lernziele:**  
-  - Verwendung des Standard‑Rückwärtszählers `FB_CTD_UDINT`.  
-  - Anbindung digitaler Ein‑/Ausgänge und einer Terminal‑Ausgabe.  
+- **Lernziele:**
+  - Verwendung des Standard‑Rückwärtszählers `FB_CTD_UDINT`.
+  - Anbindung digitaler Ein‑/Ausgänge und einer Terminal‑Ausgabe.
   - Verständnis von Ereignis‑ und Datenverbindungen in 4diac.
 
 ## Zusammenfassung
@@ -68,4 +68,4 @@ Die Übung 218 realisiert einen vollständigen Rückwärtszähler mit IEC 61131�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

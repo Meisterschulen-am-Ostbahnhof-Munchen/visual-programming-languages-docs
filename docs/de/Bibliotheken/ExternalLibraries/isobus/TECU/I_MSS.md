@@ -102,7 +102,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

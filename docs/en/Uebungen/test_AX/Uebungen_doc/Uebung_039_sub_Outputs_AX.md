@@ -52,15 +52,15 @@ This function block consistently uses **AX adapters** to bundle event and data f
 The flow within the sub-application is greatly simplified by the AX adapter connections:
 
 1. **Initialization**:
-* The object ID for the softkey (`u16ObjId`) and the hardware address (`Output`) are passed to the corresponding function blocks.
+- The object ID for the softkey (`u16ObjId`) and the hardware address (`Output`) are passed to the corresponding function blocks.
 2. **Logical Link (AX_OR)**:
-* The function block `AX_OR` bundles the logic:
-* `IN1`: Softkey status.
-* `IN2`: External adapter input `OUT` (e.g., from a step sequence).
-* An external event `REQ` can additionally trigger the logic.
+- The function block `AX_OR` bundles the logic:
+- `IN1`: Softkey status.
+- `IN2`: External adapter input `OUT` (e.g., from a step sequence).
+- An external event `REQ` can additionally trigger the logic.
 3. **Output and Feedback**:
-* The output of `AX_OR` is directly connected to the hardware output `QX`.
-* In parallel, it controls the background of the softkey via `GreenWhiteBackground`.
+- The output of `AX_OR` is directly connected to the hardware output `QX`.
+- In parallel, it controls the background of the softkey via `GreenWhiteBackground`.
 
 ## Summary
 
@@ -68,4 +68,4 @@ Uebung_039_sub_Outputs_AX` is the AX-optimized version of the output control. Th
 
 ## 🛠️ Related Exercises
 
-* [Exercise_039_AX](Uebung_039_AX.md)
+- [Exercise_039_AX](Uebung_039_AX.md)

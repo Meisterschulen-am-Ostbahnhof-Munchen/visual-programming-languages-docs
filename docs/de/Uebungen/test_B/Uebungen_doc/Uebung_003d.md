@@ -20,8 +20,8 @@ Das Ziel ist die Wiederholung der direkten I/O-Verknüpfung mittels Ereignis- un
 
 ![Uebung_003d_network](./Uebung_003d_network.svg)
 
-  * **`DigitalInput_I1`** ➡️ **`DigitalOutput_Q1`**
-  * **`DigitalInput_I2`** ➡️ **`DigitalOutput_Q2`**
+  - **`DigitalInput_I1`** ➡️ **`DigitalOutput_Q1`**
+  - **`DigitalInput_I2`** ➡️ **`DigitalOutput_Q2`**
 
 Die Bausteintypen sind `logiBUS_IX` (Eingang) und `logiBUS_QX` (Ausgang).
 
